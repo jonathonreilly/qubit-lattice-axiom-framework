@@ -1,0 +1,34 @@
+{
+ "task": "R:record_formation_three_route_decision_probes_2026_07_13",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/record_formation_three_route_decision_probes_2026_07_13.py",
+ "seed": 53328,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174208Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=71 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f729842339697c35e3029061a405e7a80e24d6a1432bdfd651e443f3c45862b7",
+ "stdout_tail": "lue is obtained\nPASS coherent global access reverses the record-writing interaction\nPASS relational readability is compatible with branch weight p=0.1\nPASS relational readability is compatible with branch weight p=0.5\nPASS relational readability is compatible with branch weight p=0.9\nPASS the same relational record is not permanent for the larger coherent-access algebra\n\n===============================================================================\nCross-route finite-probe scorecard\n===============================================================================\nR1 objective commit: can output one branch, but must supply a selection/weight law and its conservation/covariance controls.\nR2 invariant sector: can make a locally readable value exact against the declared admissible local operations; fixed sectors alone do not create a finite-time formation event, choose a sector, supply weights, or set a clock metric.\nR3 relational record: preserves global coherence while giving a restricted observer a definite record; permanence is then explicitly access-relative, not the current axiom's unrestricted permanence.\nR2 discriminator: derive the admissible-change/continuation relation from Admissibility, or expose its still-composite candidate constitutional content and test each residual atom separately.\n\n===============================================================================\nTOTAL: PASS=71 FAIL=0\n===============================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174208Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

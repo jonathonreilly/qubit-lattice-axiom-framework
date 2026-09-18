@@ -1,0 +1,35 @@
+{
+ "task": "R:domain_wall_edge_content_vs_sm_chiral_map_2026_07_05",
+ "type": "runner-reexecution",
+ "lane": "domain",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/domain_wall_edge_content_vs_sm_chiral_map_2026_07_05.py",
+ "seed": 52220,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172340Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7c42c4dd0c80c0c85b6f1ffc10e0cddfec5efe1a7694a81646f79a77e7143ddd",
+ "stdout_tail": ", 1/6:6}\nSM states missing from scaled 6+2 surface={-2/3:3, 1/3:3, 1:1}\nextra states in scaled surface relative to SM={}\nPASS - MATCH: scaled 6+2 Y surface equals the SM Q_L + L_L hypercharge multiset  ({-1/2:2, 1/6:6})\nPASS - MATCH: the map reuses only the scale-free 1:(-3) ratio before convention fixing  (absolute factor 1/2 is the SM convention bridge, not derived here)\nPASS - GAP: scaled 6+2 surface is not the full SM 15-plet  (surface_dim=8 sm_dim=15 missing={-2/3:3, 1/3:3, 1:1})\nPASS - GAP: domain-wall edge spinor is not directly the C^8 taste cube  (edge_spin_dim=2 taste_dim=8)\nPASS - GAP: edge spinor tensor taste cube gives 16 states, not the target 15-plet\nPASS - ROUTE-NO-GO: H_unit singlet cannot derive an SU(2) doublet by a nonzero equivariant map  (Hom_SU(2)(1,2)=0)\n\n============================================================================================\n5. Anomaly cross-check for the identified subcontent\n============================================================================================\nidentified 6+2 subcontent anomaly sums: sum_Y=0, sum_Y3=-2/9, su2_su2_Y=0, su3_su3_Y=1/6\nPASS - identified 6+2 subcontent has vanishing linear trace and SU(2)^2-U(1)  (sum_Y=0, sum_Y3=-2/9, su2_su2_Y=0, su3_su3_Y=1/6)\nPASS - PRECISE NO-GO: identified 6+2 subcontent is not anomaly-complete by itself  (sum_Y3=-2/9 su3_su3_Y=1/6)\nPASS - PRECISE GAP: the missing singlet charges are exactly the SM anomaly-completing 7 states  ({-2/3:3, 1/3:3, 1:1})\n\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172341Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

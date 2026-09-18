@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.py",
+ "seed": 53292,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174132Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "834196630a8b9a5097a7344a8caaf7775cbc053fa3f15228df9e0d41803e8938",
+ "stdout_tail": "PASS: TOTAL23 = original14 exact geometry/OU +8 scalar supplement +1 resource guard.\nTOTAL: PASS=23 FAIL=0\nper_element: no individual-element dynamical simulation or finite-beta accuracy is certified.\nper_site: the fixed16vertex32edge22face geometry is supplied, not a thermodynamic limit.\nper_mode: covariance and invariant oscillator modes concern the central source space.\nper_block: repeated compressed-source powers are an additional composition contract, not a longer microscopic slab.\nlattice_wide: polynomial sequence108 has unspecified constants/onset and selects no physical time or coupling.\nsource_sha256=79d5dad29a3b3f71ecb0182bd8af7db260b3728c05eac57227f16263086df48a\nResources: 0.551234s; 63.422 MiB; limits180s/180MiB.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174133Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_cube_slab_anisotropic_uniform_limit_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

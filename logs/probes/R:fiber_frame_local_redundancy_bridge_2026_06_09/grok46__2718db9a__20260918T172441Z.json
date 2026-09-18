@@ -1,0 +1,35 @@
+{
+ "task": "R:fiber_frame_local_redundancy_bridge_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "fiber",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/fiber_frame_local_redundancy_bridge_2026_06_09.py",
+ "seed": 52281,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172441Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "124eb250a699e4558e3328bd6d3b5ffd366cec1c6af48c65df1369f6f1b41ed4",
+ "stdout_tail": "su(2) generators  (G_x = I_weak tensor u_x)\n  [PASS] weak central-sector projectors are fixed by fibre-frame rotations\n  [PASS] finite Record-sector scalar additivity is unchanged on these projectors  (rank(P_up)+rank(P_down)=rank(I))\n\nPart 2. No fibre-basis vector is selected by the current U(3)-invariant surface\n  [PASS] only scalar fibre operators commute with the full local U(3) frame group  (invariant fibre-operator dimension=1)\n  [PASS] a candidate colour/fibre basis projector is not U(3)-invariant  (basis colour labels would add extra structure)\n\nPart 3. The retained U=I hopping is a flat trivialization, not a local-frame invariant\n  [PASS] local basis changes rewrite the identity link as g_x g_y^dag, generally not I\n  [PASS] same local basis change maps H[U=I] to H[U'=g_x g_y^dag]\n  [PASS] global fibre rotations leave the flat identity link fixed\n\nPart 4. General link transporters are the coordinate form of cross-site comparison\n  [PASS] transformed link remains unitary\n  [PASS] passive frame covariance: G H[U] G^dag = H[g_x U g_y^dag]\n  [PASS] the check is nontrivial: the sampled local frames are not equal\n  [PASS] sampled link differs from identity\n\nPart 5. Guardrails\n  [PASS] source note disclaims gauge action or dynamics\n  [PASS] source note disclaims physical SU(3)_c identification\n  [PASS] source note leaves future colour-readout theorems outside this bridge\n  [PASS] source note limits bridge role to the minimal-coupling kinematic target\n\nSummary\nPASS=18 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172441Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

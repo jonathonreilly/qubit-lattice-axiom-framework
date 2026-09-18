@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py",
+ "seed": 53199,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173959Z",
+ "elapsed_s": 93.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1836cfa2b05dc876f0ca083fb525baf55f38e252117e235df1e63f842fc2f033",
+ "stdout_tail": "1; p=1/2: q_E=['+0.988', '+0.874', '+0.081'], N25 gap=1.794, span=0.907; p=3/4: q_E=['+1.106', '+0.879', '+0.929'], N25 gap=0.946, span=0.228; p=1: q_E=['+2.708', '+1.054', '+0.981'], N25 gap=0.894, span=1.727\n[PASS] I4 (mechanism check): the non-fixed interpolants inherit sign/near-zero denominator sensitivity rather than a stable E-center source primitive\n       p=1/4 signs=['-', '+', '-'], min|beta_E(shell)|=9.56e-07; p=1/2 signs=['-', '+', '+'], min|beta_E(shell)|=1.12e-05; p=3/4 signs=['-', '+', '-'], min|beta_E(shell)|=1.48e-06; p=1 signs=['-', '-', '+'], min|beta_E(shell)|=3.58e-07\n[PASS] I5 (bounded verdict): within this rational exponent grid, the best largest-box q_E is still far from 15/8, so the interpolation-family rescue is pruned\n       best N=25 entry: p=1, q_E=+0.981191, gap to 15/8=0.893809; bounded to this p-grid and N-grid\n\nTOTAL: PASS=5 FAIL=0\nVERDICT: bounded no-go/support boundary.  The N=15 q_E ~= 15/8 coincidence is common to the interpolation family because all paths have r_15=4.25, but the sampled rational exponent paths p in {0,1/4,1/2,3/4,1} do not carry that value toward a stable large-box target.  The p=0 endpoint runs negative, p=1 tends toward (q_T,q_E) near (1,1), and the interior paths are dominated by beta_E(shell) sign/near-zero sensitivity.  This prunes the finite box-path interpolation rescue of the Route-2 E-center lift; it does not derive beta_E/alpha_E=21/4 and does not rule out a genuinely new source-domain or readout-map primitive.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174132Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.txt against the .txt beside this log"
+  ]
+ }
+}

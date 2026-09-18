@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_alpha_s_sommer_static_potential_root_kernel_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_alpha_s_sommer_static_potential_root_kernel_2026_06_18.py",
+ "seed": 52534,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172854Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f751e8f6efeb8d757f4e98799085de474573e6666184b97bd3a134e6a44c3fe7",
+ "stdout_tail": "cks ===\n[PASS] certificate authority is Wilson-loop/static-potential\n[PASS] scale-setting mode is fixed-g_bare global Sommer fit\n[PASS] Cornell fit uses 12 finite static-potential points\n[PASS] Cornell string coefficient sigma is positive :: sigma=0.054485636694192\n[PASS] Cornell Coulomb coefficient e lies inside the Sommer target :: e=0.284764583881128\n\n=== Sommer root algebra ===\n[PASS] r0/a recomputed from sqrt((1.65 - e)/sigma) matches fit field :: computed=5.005676254205751\n[PASS] r0/a recomputed from fit matches global certificate field :: global=5.005676254205751\n[PASS] Sommer force equation sigma*(r0/a)^2 + e = 1.65 closes :: value=1.650000000000000\n\n=== Finite-certificate diagnostics ===\n[PASS] three finite-volume r0/a diagnostics are present\n[PASS] finite-volume diagnostics are positive\n[PASS] finite-volume r0/a diagnostic spread is below 11 percent :: spread=0.099142\n\n=== Physical-anchor separation ===\n[PASS] physical a_fm is a downstream conversion using r0_anchor_fm :: a_fm=0.099886603649188\n[PASS] changing the physical anchor changes a_fm but not dimensionless r0/a\n[PASS] runner never reads alpha_s(M_Z) result for the root theorem\n\n=== Falsifiers ===\n[PASS] falsifier detects omitting the Coulomb e term :: wrong=5.503018299432378\n[PASS] falsifier detects the wrong force-sign convention :: wrong=1.080470832237744\n[PASS] falsifier detects using the wrong Sommer target :: wrong=3.623126441193114\n[PASS] domain guard rejects nonpositive sigma\n\nSUMMARY: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172854Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

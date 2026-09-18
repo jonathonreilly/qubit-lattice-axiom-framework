@@ -1,0 +1,6 @@
+PASS: 973017 exact signed subsets; unique degree-five cap, four rational controls.
+N5: Actual two-slice cube Wilson/Haar source compression, supplied action and embedding.
+N5: Center flux is a necessary selection rule; source proof supplies actual Haar contraction.
+N5: Anisotropic and isotropic tiny positive points are derived rational corollaries.
+N5: Positive normalization preserves mixing; no beta6, dressed-map or continuum identification.
+N5: Runtime file inputs none; source SHA ebf3d31389104dd701d490c23824b36a37f1f26aff1088355a98fc1f7c138257

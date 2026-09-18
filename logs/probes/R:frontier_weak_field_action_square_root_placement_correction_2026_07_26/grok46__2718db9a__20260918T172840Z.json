@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_weak_field_action_square_root_placement_correction_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_weak_field_action_square_root_placement_correction_2026_07_26.py",
+ "seed": 52520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172840Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e12c4445461d4b5c87b3c9f008bb2226be8e06d2b26a853adf69901a4f183b24",
+ "stdout_tail": "Weak-field action correction: square-root placement and leading order\n==============================================================================\n[PASS] leading normalized-depth orders distinguish the two square-root placements  --  p[linear]=1.000000000, p[L*sqrt(1-f)]=1.000000000, p[L*(1-sqrt(f))]=0.500000000, stated depth/f=0.500000000\n[PASS] the reviewed probe source evaluates valley_sqrt as L*(1-sqrt(f))  --  source-derived order=0.500000000\n[PASS] L*sqrt(1-f) gives an order-one response on the reviewed fixed family  --  Born=2.504e-15, gravity=+0.000072090, TOWARD=7/7, F~M=0.999998032\n[PASS] the geometric spent-delay depth has leading order one-half  --  order=0.499993360, depth/sqrt(2*epsilon)=0.999977640\n[PASS] exact depth formulas and the f^2/8 coefficient agree independently  --  worst direct mismatch=5.551e-17, second coefficient=0.125015627\n==============================================================================\n5 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172844Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

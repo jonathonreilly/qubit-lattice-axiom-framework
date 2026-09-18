@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_a1prime_debt_and_data_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_a1prime_debt_and_data_2026_05_30.py",
+ "seed": 52281,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172441Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3fabdf6fd212e58938e67f00b78f2f61e1b870ad95f71a36693b27645195a6a2",
+ "stdout_tail": "[PASS] A1 real R[Z3] tracial group-element basis has Gram=I\n       This is a finite basis calculation, not a physical measure ranking.\n[PASS] A2 J-I=g+g^2 occupies two real group-element directions\n       coeffs=[0, 1, 1]; support_count=2\n[PASS] A3 fixed C^3=I carrier has only cube-root phases in this finite model\n       A continuous U(1) doublet phase is extra to this finite carrier model.\n[PASS] A4 signed Hermitian Q is delta-independent in the supplied model\n       Q_signed=1/3 + 2*b_sym**2/(3*a_sym**2)\n[PASS] B1 supplied mass comparators put leptons near c^2=2 and quarks above\n       lep=2.000, up=3.094, down=2.389\n[PASS] B2 supplied (c,b,t) comparator is cross-sector, not a within-sector C3 closure\n       (c,b,t) c^2=2.017\n[PASS] B3 supplied normal-ordering neutrino sweep stays below Q=2/3\n       max Q_nu(NO)=0.585\n[PASS] B4 supplied CKM angle inventory is 1.31-2.85x Cabibbo\n       required=17-37 deg; ratios=1.31-2.85x\n[PASS] source guards keep axiom status, normalization, and comparator bridges open\n\nSCORECARD PASS=9 FAIL=0\nVERDICT: bounded support for finite R[Z3] support-count algebra and\nexternal comparator stress tests only. The packet does not prove a\nnative r/Q normalization law, does not globally forbid every complex\norder-three representation, and does not certify the embedded mass or\nangle data as framework-derived inputs.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172441Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

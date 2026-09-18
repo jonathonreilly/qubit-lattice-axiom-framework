@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_dirac_local_density_readout_bridge_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/staggered_dirac_local_density_readout_bridge_2026_06_17.py",
+ "seed": 53057,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173737Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3487e12ff803175b6c7f45c1182c0f65902ac79ace358efb767315bb86e6d6a5",
+ "stdout_tail": "local density/readout bridge\n========================================================================\n\n=== One-site CAR density ===\n[PASS] single-mode CAR: a^2=0 and {a,a^dag}=I\n[PASS] rho = a^dag a is Hermitian\n[PASS] rho is a projection, rho^2=rho\n[PASS] rho has spectrum {0,1}  [spectrum=[0.0, 1.0]]\n[PASS] rho generates local U(1): [rho,a]=-a and [rho,a^dag]=a^dag\n\n=== Unique normalized onsite U(1) generator ===\n[PASS] linear commutator equations have a unique normalized solution  [solution=[{r00: 0, r01: 0, r10: 0, r11: 1}]]\n\n=== Finite-lattice CAR density ===\n[PASS] Jordan-Wigner operators satisfy finite CAR for all sites\n[PASS] local densities commute\n[PASS] each local density remains a projection\n[PASS] Q=sum_x rho_x generates global U(1) on all a_x, a_x^dag\n[PASS] number-conserving bilinears E_xy=a_x^dag a_y are U(1)-neutral\n[PASS] [E_xy,rho_p] equals the matrix-unit density commutator\n\n=== Source-status firewall ===\n[PASS] bridge note declares positive-theorem source status\n[PASS] bridge note proves density as local number projection\n[PASS] bridge note excludes full realization-gate claims\n[PASS] Noether note cites the density bridge\n[PASS] Noether note no longer keeps the realization gate as markdown dependency repair link\n[PASS] Noether note keeps KS carrier as supplied exhibit, not status promotion\n\n========================================================================\nTOTAL: PASS=18 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_kappa_formation_weight_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_kappa_formation_weight_2026_07_12.py",
+ "seed": 53196,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173956Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c97eeed85aec4ab61ae87fda15f7c3eb1b1a27f588513ce2f85ffbf3705891f6",
+ "stdout_tail": "neral registration odds still square exactly\n[PASS] (16) general odds identification reproduces r_prime = kappa*r^2\n[PASS] (17) the general-kappa registration weight is equal-cell on its fixed graph\n[PASS] (18) q=w plus the relocation dictionary forces only the direct coefficient\n[PASS] (19) direct and fixed-surface kappa coordinates overlap only at the derived equal-cell weight\n[PASS] (20) the overlap point is stationary under direct same-weight composition\n[PASS] (21) the carrier-share image is kappa=1 only on the fixed graph, not under direct composition\n[PASS] (22) every derivation-path expression is exact (no SymPy Float atoms)\n\nVERDICT: PASS \u2014 the fixed-surface coordinate identity and its direct-composition limitation are exact.\nT3 EXACT SURVIVING BRIDGE: i.i.d. composition of the same formation weights plus the relocation dictionary gives only r -> 2*r^2; a general kappa requires separately supplied odds (1-q)/q = kappa*r, while kappa = 2*w/(1-w) is the positive fixed-surface coordinate.\nCHECK COUNT: 22 numbered exact checks\nPROPOSED CLAIM_SCOPE: bounded_theorem \u2014 conditional coordinate identity and residual consolidation on the positive interior fixed-point surface; direct i.i.d. bridge restricted to the kappa=2 member.\nHOSTILE-AUDIT UNCERTAINTIES: the energy dictionary remains at Residual Atom 2 grade; the independence atom, SOCMLC-conditional menu classification, fixed-point applicability, and member-selection conditionals remain undischarged.\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173956Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

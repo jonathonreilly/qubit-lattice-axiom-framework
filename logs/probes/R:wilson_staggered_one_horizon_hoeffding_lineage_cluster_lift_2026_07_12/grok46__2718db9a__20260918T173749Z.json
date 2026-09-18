@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_one_horizon_hoeffding_lineage_cluster_lift_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/wilson_staggered_one_horizon_hoeffding_lineage_cluster_lift_2026_07_12.py",
+ "seed": 53069,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173749Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6c8dbff3987abd7cffb17ad9c15cb76d7941cc1296314226187634bd4dd625ad",
+ "stdout_tail": "x residual=3.495e-16; epsilon norm^2=6, projector-idempotence residual=0.000e+00, Haar U11 U22 U33 epsilon coefficient=0.166666666667\nPASS decorated_factor_collection_evaluation: decorated_sum=0.023500000000000, direct_weight=0.023500000000000\nPASS decorated_hard_core_log_evaluation: nonzero_decorations=3, power_errors=[3.469446951953614e-18, 1.0842021724855044e-19, 6.776263578034403e-21, 1.5881867761018131e-22], log_partial=0.023228124713318\nPASS tagged_residual_activity_point: q_hop=6.350016695825048e-03, K_I=2.438980005374748e-09, K_S=9.942623258493337e-07, K=9.967013058547084e-07, margin=9.990032986941454e-04\nPASS strict_nonzero_beta_interval: beta_ceiling=1.747690723278375e-09, beta_probe=1.730213816045591e-09, K_probe=9.900099595330247e-04<c\nPASS tagged_marked_constants: tau=3.670317404266788e-04, A_att=7.342847163210340e-04, q_centered=8.232289647729789e-02, q_split=0.606530659713, B_tag=1.117432197578131e-04\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_GAUSSIAN_ADAPTED_BEREZIN_HANDOFF_AND_SHORTEST_QUADRATIC_CENTER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173749Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/wilson_staggered_one_horizon_hoeffding_lineage_cluster_lift_2026_07_12.txt against the .txt beside this log"
+  ]
+ }
+}

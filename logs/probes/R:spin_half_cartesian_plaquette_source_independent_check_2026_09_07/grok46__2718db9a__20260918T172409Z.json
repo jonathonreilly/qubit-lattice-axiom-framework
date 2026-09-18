@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cartesian_plaquette_source_independent_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py",
+ "seed": 52249,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172409Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=55 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ff7bd910c523e959dbfcc90749bbd997a822398019d605668a2f34d529bfcb3f",
+ "stdout_tail": "5616\n    },\n    \"cartesian_curl\": {\n      \"-4\": 1216,\n      \"0\": 8973184,\n      \"4\": 1216\n    }\n  },\n  \"matrix_checks\": {\n    \"occupation_sign\": {\n      \"hermitian_residual\": 0.0,\n      \"imaginary_transpose_residual\": 0.0,\n      \"trace_H4_at_theta_0p37_V1\": 8975616.0\n    },\n    \"cartesian_curl\": {\n      \"hermitian_residual\": 0.0,\n      \"imaginary_transpose_residual\": 0.0,\n      \"trace_H4_at_theta_0p37_V1\": 8973404.513390698\n    }\n  },\n  \"all_root_orientation_algebra\": {\n    \"2\": {\n      \"checked\": 48,\n      \"failures\": 0\n    },\n    \"4\": {\n      \"checked\": 384,\n      \"failures\": 0\n    },\n    \"6\": {\n      \"checked\": 1296,\n      \"failures\": 0\n    },\n    \"8\": {\n      \"checked\": 3072,\n      \"failures\": 0\n    },\n    \"10\": {\n      \"checked\": 6000,\n      \"failures\": 0\n    },\n    \"12\": {\n      \"checked\": 10368,\n      \"failures\": 0\n    },\n    \"3\": {\n      \"checked\": 162,\n      \"failures\": 90\n    }\n  },\n  \"quantized_uniform_source\": {\n    \"theta\": 1.5707963267948966,\n    \"matrix_rotation_residual\": 5.878304635907301e-15,\n    \"energy_difference\": 5.440092820663267e-15\n  },\n  \"ritz_separation_scope\": \"sampled pair only; no minimum-gap certification\",\n  \"bound_inputs_sha256\": {\n    \"docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md\": \"80ab2512f0f7706be19b87a2db8da34aa287be103715fdce9130072d6c4ce360\",\n    \"docs/MINIMAL_AXIOMS_2026-06-29.md\": \"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\"\n  },\n  \"checks_passed\": 55,\n  \"checks_failed\": 0\n}\nTOTAL: PASS=55 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172409Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

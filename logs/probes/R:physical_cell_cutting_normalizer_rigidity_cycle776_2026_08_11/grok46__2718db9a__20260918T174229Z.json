@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.py",
+ "seed": 53349,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174229Z",
+ "elapsed_s": 19.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1e5a4358015eb9d2189b34186d5bed4d28e4a9d1b4d0d7b564df3cb8857224ac",
+ "stdout_tail": "entral flip moves the pieces and permutes the 96 tables, an involution with 0 fixed; the 16 variants of the four parts are distinct\nPASS G16 the 4 specified partner variants share the profile; 2 lie in the row census; this four-set differs from the image-label set\nPASS G17 all 48 census members carry the declared 32-entry two-field profile 9/9/9/6/9/6/6/6/9/6/6/6/6/6/6/0; the field profiles agree entrywise: yes\nPASS G18 the weight-one image label selects 4 of 48: 2 partner pairs without fixed members, including both 2 central-map members\nPASS G19 the 11 low-weight ranks select 48 of 48; their conjunction with the weight-one image label selects the same 4\nPASS G20 over 3072 table, pattern, prime checks a partner block is its block times the weight parity, 0 outside: 0:96/0 1:0/96 2:96/0 3:0/96 4:96/96\nPASS G21 moving the pieces by a map permutes the 96 tables only for the 2 central maps; 382 of the other 382 return none, 14 of them flips\nPASS G22 the partner image of the incidence is its piece image under the central flip and equally its transversal relabelling\nPASS G23 the 48x48 relabelling table is Latin with identity/inverses, matches N_G(H)/H, and acts on all 48 images (2304 products)\nPASS G24 the ladder: 3321960 members; label 30720; row-transversal 48; both 4; signed-coordinate row map 2\nPASS G25 row census 48: central-map members 2, other equivariant relabellings 46; the central pair has equal profiles and labels\nelapsed 18 s, peak resident 261 MB\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174248Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

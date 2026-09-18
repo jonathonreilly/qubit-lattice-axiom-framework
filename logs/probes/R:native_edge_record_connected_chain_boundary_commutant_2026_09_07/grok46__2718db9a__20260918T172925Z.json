@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_connected_chain_boundary_commutant_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+ "seed": 52565,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172925Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0fa027d39ba39654a205f37247635342467a51d760a56d31b0f646c9d884dca7",
+ "stdout_tail": "PASS connected-chain boundary commutants: 369 actual exact assertion calls\nPREFIX 1 CUT None rank 28 nullity 4 basis_sha256 d36c375f7bac5290a13ec658adf22ea34357c0500136b73e2be669dd7963565d\nPREFIX 2 CUT None rank 124 nullity 4 basis_sha256 d36c375f7bac5290a13ec658adf22ea34357c0500136b73e2be669dd7963565d\nPREFIX 3 CUT None rank 508 nullity 4 basis_sha256 d36c375f7bac5290a13ec658adf22ea34357c0500136b73e2be669dd7963565d\nPREFIX 4 CUT None rank 1804 nullity 244 basis_sha256 2bfbb8283de0d521d7e1e718378db3e15e2a6556b52b6841f19179eda4cd74f9\nPREFIX 1 CUT 0 rank 24 nullity 8 basis_sha256 6b47f9e29b6fc2fd08fc5dbf0e3f515a165db5ef171c64e26a2b9beb31600db8\nPREFIX 2 CUT 1 rank 100 nullity 28 basis_sha256 a9ed79b653645925ce37edf1d2b1d995677ea9b4b676743a28e77b181f3d25b6\nPREFIX 3 CUT 2 rank 464 nullity 48 basis_sha256 0f27a7004084e449b5321fe834d9d7b43429ff36af5abcf99d6ea6e07d9f8ebe\nper_element: exact full Pauli commutator equations, battery projectors and nonzero hopping control\nper_site: four fixed chain sites; proper prefixes1,2,3 and each severed contrast\nper_mode: fullFock evenCAR operators with finite fourlevel battery; no fixedN compression\nper_block: all exact nullspace bases and fullsupport contrast, source and basis hashes\nlattice_wide: checked and not executed -- no arbitrarygraph/fuelswitch theorem or radius-error lower bound\nSOURCE_SHA256 0bcac059998ae8b818c50f1ef18504b550e5766513c75fc391a9d9e21412b0a0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

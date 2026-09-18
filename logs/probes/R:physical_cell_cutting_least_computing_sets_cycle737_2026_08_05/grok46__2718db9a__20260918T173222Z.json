@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_least_computing_sets_cycle737_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+ "seed": 52742,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173222Z",
+ "elapsed_s": 407.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=41 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "199253528fb5a49086d2258073eec141bd1f41841db0c6d22b196ff65ed6d757",
+ "stdout_tail": "arried 6 times, [(6, 32)]\nPASS geo.even.d  the pairs zero octets share run over all 120 corner pairs, distances [(1, 288), (2, 144), (3, 96), (4, 120)], and at each distance a single multiplicity: 9, 3, 3 and 15\nPASS geo.even.x  distance against corners covered, for the zero octets: [((1, 12), 96), ((1, 16), 192), ((2, 10), 144), ((3, 10), 96), ((4, 12), 24), ((4, 16), 96)]\nPASS hostile.support  deleting one piece from a certified zero octet destroys the full-table identity\nPASS hostile.dependency  a failed direct-dependency receipt cannot satisfy the acceptance predicate\nPASS hostile.sample_geometry  sample-disjoint declared pieces can overlap, so the exact separator gate is load-bearing\n\nper_element: checked -- all 192 used pieces enter the exact incidence, response, support-search, orbit, and corner-geometry censuses\nper_site: checked -- one supplied 16-corner coordinate cell only; no physical assembly-cell or framework site identification is executed\nper_mode: checked and not executed -- the finite cutting incidence system has no field, spectral, or momentum-mode decomposition\nper_block: checked -- all 15,800 geometric cuttings and every used-piece support of cardinality at most eight under the certified split search\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, thermodynamic, boundary, or continuum negative is asserted\nRECEIPT outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=41 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173910Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

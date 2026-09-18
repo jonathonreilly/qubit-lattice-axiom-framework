@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
+ "seed": 53149,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173909Z",
+ "elapsed_s": 46.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "022ab7f0dbbe795e924807d991bd84dbea8fcf4bb56495143b727c29427e9092",
+ "stdout_tail": "ripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py\", \"scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py\", \"scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py\", \"scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py\", \"scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py\", \"scripts/frontier_full128_code_projectors_2026_07_24.py\", \"scripts/frontier_full128_cycle_encoder_2026_07_24.py\", \"docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md\", \"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md\", \"scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py\"], \"temporary_or_external_sources\": 0}, \"status\": \"bounded-fixed-law-compositional-induction-certificate\", \"supplied\": [\"the Cycle655 repo-native full128 combined word and its finite matrix table\", \"the 3908 fixed station records, cassette orientation and selector-before-shift order\", \"the station-zero live-token position and E_full packet placement\", \"B/vacuum plus zero flag, scratch and bypass genesis\", \"the exact controlled one-M2 lifts, Fredkin bypass and routed selector library\", \"the enormous but finite Q, R and A_auto circuit blueprints\", \"the proper-cubic rotated cassette family, mode labels, couplings and factor order\"], \"terminal\": \"FULL128_TWO_RAIL_FIXED_LAW_CYCLE656_CERTIFICATE\", \"tests_failed\": 0, \"tests_passed\": 7}\nRESULT FULL128_TWO_RAIL_FIXED_LAW_CYCLE656_CERTIFICATE\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173955Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+[PASS] R1 r=1 endpoint gives eigenvalues {0,0,3a}, the rank-one/democratic point
+       eig=[-0. -0.  3.]
+[PASS] R2 a scalar generation U(1) action commutes with C and cannot orient the doublet
+       [iI,C]=0; this is conditional on the physical charge acting scalar on generation
+[PASS] R3 C^3=I blocks continuous C rephasing except the discrete C3 phases
+       generic alpha fails order three
+[PASS] R4 embedded mass comparator orders charged sectors leptons < down < up < rank-one
+       leptons=0.6667, down=0.7314, up=0.8490; empirical comparator only
+[PASS] R5 neutrino positive-root normal-ordering comparator stays below 2/3 in the tested range
+       max Q_nu=0.5850 < 2/3
+[PASS] R6 source boundary guard: no physical gauge-action or sector-ordering theorem promoted
+       the packet closes only finite/conditional route pruning
+
+SCORECARD PASS=6 FAIL=0
+VERDICT: bounded-support route pruning. Scalar generation charge cannot orient
+the doublet, and continuous C rephasing is blocked by C^3=I. The mass table is
+comparator evidence only; this runner does not derive a physical det_C/det_R selector.

@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_logdet_form_under_record_axiom_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_logdet_form_under_record_axiom_2026_06_04.py",
+ "seed": 52281,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172441Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e5715f3a391c361f32d1993913950b4d62242808da5a76b6329c2836ae430d89",
+ "stdout_tail": "[PASS] det is multiplicative on sampled invertible matrices; trace is not\n[PASS] sample determinant powers multiply, illustrating the separate det-character family\n       uniqueness of this family is cited from the separate det-character note, not proved here\n[PASS] det(A (+) B) = det(A) det(B) over disjoint blocks\n[PASS] raw |det|^p multiplies across blocks, while log |det| is additive\n       Record supplies only the additivity rule for an already specified scalar record functional\n[PASS] log |det| additivity holds over three disjoint blocks\n[PASS] log |det H| equals sum_modes log |lambda| for a finite Hermitian example\n\nSCORECARD PASS=6 FAIL=0\nCONDITIONAL FORM: once a finite scalar record surface and separate det-character\nauthority are supplied, Record-compatible additivity selects W = c log |det|.\nRecord alone supplies no log-det, source/action, Born weight, value, or bounded status.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172442Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

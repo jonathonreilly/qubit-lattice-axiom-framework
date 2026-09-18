@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle754_composed_four_flag_acceptance_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle754_composed_four_flag_acceptance_2026_07_28.py",
+ "seed": 52856,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173416Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2c14fd74808f9ee99225b736cbc3e4d998734543371d3dcafc27dd2db54df3b6",
+ "stdout_tail": "ware_API_boundary :: {\"common_event_map_claimed\": false, \"framework_admissibility_claimed\": false, \"framework_binder_claimed\": false, \"framework_law_claimed\": false, \"objective_actuality_claimed\": false, \"physical_occurrence_claimed\": false, \"record_claimed\": false, \"retained_grade_claimed\": false}\nPASS H_runtime_within_declared_timeout :: {\"runtime_sec\": 0.121613, \"timeout_sec\": 900}\n{\"boundary\":{\"common_event_map_claimed\":false,\"framework_admissibility_claimed\":false,\"framework_binder_claimed\":false,\"framework_law_claimed\":false,\"objective_actuality_claimed\":false,\"physical_occurrence_claimed\":false,\"record_claimed\":false,\"retained_grade_claimed\":false},\"bounded\":true,\"checks\":{\"A_exact_note_contract\":true,\"B_declared_mutable_input_closure\":true,\"C_exact_cartesian_domain\":true,\"D_current_dependency_API_values\":true,\"E_exact_lower_case_status_census\":true,\"F_runtime_repository_imports_are_declared\":true,\"G_honest_software_API_boundary\":true,\"H_runtime_within_declared_timeout\":true},\"checks_failed\":0,\"checks_passed\":8,\"claim\":\"finite receiver/endpoint lower-case API composition\",\"cycle\":754,\"pass\":true,\"result\":{\"binder_values\":[1,1,1,1],\"endpoint_rows\":4,\"input_rows_by_endpoint\":[64,64,64,64],\"receiver_successes_by_endpoint\":[1,1,1,1],\"rows\":256,\"status_counts\":{\"admitted\":4,\"refused_supplied\":252}},\"runtime_sec\":0.121613,\"supplied_one_bits\":{\"actuality\":1,\"certificate\":1,\"law_domain\":1},\"terminal\":\"CYCLE754_FINITE_API_COMPOSITION_PASS\"}\nCYCLE754_FINITE_API_COMPOSITION_PASS\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173417Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle754_composed_four_flag_acceptance_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

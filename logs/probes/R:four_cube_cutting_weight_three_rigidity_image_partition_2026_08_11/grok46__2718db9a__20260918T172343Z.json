@@ -1,0 +1,35 @@
+{
+ "task": "R:four_cube_cutting_weight_three_rigidity_image_partition_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "four",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/four_cube_cutting_weight_three_rigidity_image_partition_2026_08_11.py",
+ "seed": 52223,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172343Z",
+ "elapsed_s": 41.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ab10f4f5183831cad5de24d4a288423287e0665608519ccfa2dc00dd51e1e20e",
+ "stdout_tail": "e both pair-count histograms across all 18336 pairs\nPASS F27 the 4 weight-3 common images each have dimension 6 and jointly have rank 24\nPASS F28 the incidence class multiset has 30720 family members; comparator and incidence class sets are disjoint\nPASS F29 the 16 flips fix 0 pieces bar the identity, giving 12 piece orbits of 16; on covers, 24 orbits of 8, every stabiliser of order 2\nPASS F30 over the 24 cover orbits the stabiliser masks are the 4 single-axis masks [1, 2, 4, 8], each carried by 6 orbits\nPASS F31 the cover-side block dimension by weight is 24/18/12/6/0, six times four less the weight, its rank at both primes and the span of all 96\nboth sides sum to 192 over the 16 patterns: 192 of cover side, 16 times 12 of piece side\nPASS F32 at F_1000003 all 1536 table-pattern images lie in the corresponding cover block; exceptions 0\nPASS F33 ceiling 12/12/12/6/0 against measured 12/12/10/6/0 leaves 0/0/2/0/0, weighting to 156 against 144, a deficit of 12 wholly at weight 2\nthe cover-side ceiling is zero at weight 4; common-image span attains dimension 6 at weight 3\nPASS F34 control: table profile 12/12/10/6/0, cover dimensions 24/18/12/6/0, sub-ceiling weights 0/1/2\nin orbit order 4/3/3/1/0 tables saturate it; the dimension bound alone allows 2/2/2/1/0, recording the finite saturation profile\ntop-weight finite profiles place excess 39 at weights 0 to 2; the incidence image-class multiset has 30720 of 3321960 members\nelapsed 41 s, peak resident 139 MB\nTOTAL: PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172424Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/four_cube_cutting_weight_three_rigidity_image_partition_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

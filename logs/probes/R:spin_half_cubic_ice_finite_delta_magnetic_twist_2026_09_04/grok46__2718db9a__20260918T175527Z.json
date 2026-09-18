@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+ "seed": 54127,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T175527Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f1c3224e55531b7e817ea5c36f96b72276bfe2a30d504a0797aea44e9bf67f1a",
+ "stdout_tail": "d without validating its unsafe sample execution\n[PASS] 02 compiled post-burn core returns exactly 1 samples at burn 0\n[PASS] 03 compiled post-burn core returns exactly 2 samples at burn 1\n[PASS] 04 compiled post-burn core returns exactly 3 samples at burn 3\n[PASS] 05 actual plaquette 2 follows the Cartesian electric-update convention\n[PASS] 06 actual plaquette 3 follows the Cartesian electric-update convention\n[PASS] 07 actual plaquette 4 follows the Cartesian electric-update convention\n[PASS] 08 actual plaquette 5 follows the Cartesian electric-update convention\n[PASS] 09 occupation-sign source differs at opposite root parities from a uniform Cartesian source\n[PASS] 10 continuation-radius combination retains the actual shared-zero covariance\n[PASS] 11 the supplied real-angle occupation-sign matrix is Hermitian on the finite component\nSOURCE_RESPONSE {\"U_charge\": 0.160609, \"U_charge_reported_error\": 0.015345, \"U_flux\": 0.162638, \"U_flux_error\": null, \"central_product\": 0.012289089918, \"historical_response_reported_error\": 0.000915, \"occupation_sign_response\": 0.075561, \"physical_Maxwell_target\": false, \"product_error\": null, \"reason\": \"U_flux has no matched uncertainty here; magnetic summary omits shared-zero covariance and its producer has the disclosed sampling bug\", \"response_error\": null}\nSCOPE: corrected tiny sampler and finite source algebra only; long magnetic production held; uniform stiffness, magnetic-sector energy and physical UK unavailable\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T175530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

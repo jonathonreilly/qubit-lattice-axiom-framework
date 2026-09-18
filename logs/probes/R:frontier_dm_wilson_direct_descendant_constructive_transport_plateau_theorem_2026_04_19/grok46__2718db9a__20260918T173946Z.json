@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_constructive_transport_plateau_theorem_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_theorem_2026_04_19.py",
+ "seed": 53186,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173946Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "907262eb58393f6f2f779ce30872ecb9ffb0a2b416952be70ab675d6840affd4",
+ "stdout_tail": "=================================================================\n  [PASS] Constructive-sign transport extremality therefore does not uniquely canonicalize the endpoint  (multiple distinct constructive witnesses attain the same extremal eta_1)\n  [PASS] So the canonical path law still needs extra selector content beyond transport extremality  (transport picks a plateau, not a unique constructive endpoint)\n\n  W0:\n    x      = [1.174162 0.462544 0.053294]\n    y      = [0.758741 0.026904 0.134354]\n    delta  = 1.882595756164\n    eta    = [0.929321 1.05222  0.80149 ]\n    triplet= (0.150147244666, 0.296562850784, 1.986407435174)\n  W1:\n    x      = [0.905339 0.341085 0.443576]\n    y      = [0.775621 0.0043   0.140079]\n    delta  = 2.248936000000\n    eta    = [0.745697 1.05222  0.879573]\n    triplet= (0.098758874797, 0.122043673033, 1.345447439635)\n  W2:\n    x      = [1.108615 0.419912 0.161473]\n    y      = [0.834433 0.003722 0.081846]\n    delta  = 1.480589000000\n    eta    = [0.82166  1.05222  0.692877]\n    triplet= (0.090366396107, 0.242890637537, 1.999429075982)\n  W3:\n    x      = [1.132103 0.528258 0.029639]\n    y      = [0.484235 0.185501 0.250264]\n    delta  = 2.930589000000\n    eta    = [1.014053 1.05222  1.035028]\n    triplet= (0.059339947995, 0.391399371840, 1.311532356132)\n\n========================================================================================\nSUMMARY: PASS=18 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173949Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle977_witness_family_independent_check_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle977_witness_family_independent_check_2026_08_10.py",
+ "seed": 52470,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172750Z",
+ "elapsed_s": 21.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=6 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "57db9abaae7b4e7a6e927d68219f29c55663670c958e18c9c68de9352d8519ce",
+ "stdout_tail": "44/59520; legacy_plus_added=6+15\nPASS R2_REFUTE_CLASSES_AND_COVARIANCE :: classes=[('CNOT(+x->C)', 'x XOR n_+x', 6), ('TOF(+x,+y->C)', 'x XOR n_+x AND n_+y', 12), ('TOF(+x,-x->C)', 'x XOR n_+x AND n_-x', 3)]; rotation_failures=0/476160; translation_failures=0/119040; non_covariant_witnesses=[]\nPASS R3_PRIMARY_RECEIPT_CACHE_BINDING :: primary_source_receipt_cache_bound=True; canonical_cache_header=True; primary_sha256=1422b48e9c5088dc205200d4dc1ba4982b823457542fb5352641640c1c5ff8a7; primary_science_digest=bc684f5218ce1e593f1d63676bd66a89a2340f11a33a611ec31eec3455d36929\nPASS R4_ACTIVE_CORRUPTION_PROBES :: active_corruptions_rejected=6/6; probes={'family_size_plus_one': True, 'witness_count_minus_one': True, 'representative_law_erased': True, 'class_count_plus_one': True, 'covariance_flag_flipped': True, 'undercount_cause_shifted': True}\nPASS R5_CONTROLS :: literal_reads=3<=6; input_sha256={\"logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt\":\"8da5ab8c20a3fe2b7e14eb8ac1e7166fa8668a865bb8f5f62b972fa4dbd70a79\",\"outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json\":\"3647438738d6bd0f4fa5e0f623fa2275d0c0cdf13856fdef800285ae1e21b9ef\",\"scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py\":\"1422b48e9c5088dc205200d4dc1ba4982b823457542fb5352641640c1c5ff8a7\"}; determinism_replay=True; runtime_s=21.501997<timeout_s=300; stdout_upper_bound=3414<6000<150000\nVERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172812Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

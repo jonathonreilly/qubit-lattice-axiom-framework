@@ -1,0 +1,35 @@
+{
+ "task": "R:native_positive_ward_scalar_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/native_positive_ward_scalar_2026_09_13.py",
+ "seed": 53339,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174219Z",
+ "elapsed_s": 5.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=252 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "af619ed3e8298848b49bdf9dbc7e15356c80183c5f0234242d8dbf06b955ad0d",
+ "stdout_tail": "  \"absolute_error\": 5.10702591327572e-14\n      },\n      {\n        \"name\": \"O_nonflat_geometry_swap_rejected\",\n        \"difference\": 0.039701363591989614\n      },\n      {\n        \"name\": \"O_finite_determinant\",\n        \"L\": 8,\n        \"s\": 2.0,\n        \"absolute_error\": 4.518607710224387e-13\n      },\n      {\n        \"name\": \"O_finite_determinant\",\n        \"L\": 8,\n        \"s\": 4.0,\n        \"absolute_error\": 2.091660178393795e-13\n      },\n      {\n        \"name\": \"independent_small_Fock_minimum\",\n        \"exact\": \"sqrt6-2\",\n        \"wrong_half_energy_rejected\": true\n      }\n    ],\n    \"half_bond_reversal_mutant_rejected\": true,\n    \"seconds\": 0.1269994170870632,\n    \"source_sha256\": \"62a4cabac0858920289a7b6328fe33d36c8224183020b04f541be07cae0b93d1\",\n    \"scope\": \"finite native determinant/Fock normalization checks; no extrapolated infinite gap\"\n  },\n  \"seconds\": 5.4988964590011165\n}\nper_element: Every needed CAR moment and trial polynomial is derived from the displayed covariance table.\nper_site: Actual native center and signed neighboring legs are used in both pair geometries.\nper_mode: The finite Fourier/Fock source span checks all44 moments without truncating their required derivatives.\nper_block: All90 ordered signed kernels and separate-source error terms are retained in the rational certificate.\nlattice_wide: checked and not executed \u2014 infinite statements follow from the analytical return bounds and Gaussian form limit, not a full-lattice simulation.\nTOTAL: PASS=252 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174225Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_positive_ward_scalar_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

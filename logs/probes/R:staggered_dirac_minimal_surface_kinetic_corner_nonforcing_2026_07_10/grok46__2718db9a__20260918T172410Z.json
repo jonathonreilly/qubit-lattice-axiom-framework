@@ -1,0 +1,34 @@
+{
+ "task": "R:staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10.py",
+ "seed": 52250,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172410Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=27 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2affa5c46c6182f0a0060c266f07377db91c4576ffe2e1b10071be73c1292567",
+ "stdout_tail": "r counts taken at TOL = 1e-09, and the corner eigenvalues are exact integers.\nScope: the six [S] checks are substring tests against the axiom note on disk and resolve nothing quantitative -- they record only that the Qubit axiom supplies the one-site M_2(C), that the Lattice axiom supplies Z^3, and that Admissibility chooses no Hamiltonian or transfer operator. The remaining twenty-one checks carry every result certified above.\nDeterminism: no RNG, optimizer, root-finding, Monte Carlo, or flow integration appears in this runner. The single scan is a fixed momentum grid of 17 points per axis at spacing 2*pi/17 swept over all three axes; following the scan rule this certificate names that grid size and spacing and interpolates no scan-derived momentum or symbol value. Site and cube enumerations run in fixed nested-loop order, edge sets are stored as sorted index pairs, and the corner eigenvalues are reported above in sorted form, so no traversal or solver ordering can affect a verdict.\n\n==============================================================================\nTOTAL: PASS=27 FAIL=0\nVERDICT: exact kinetic/corner non-forcing countermodel VERIFIED.\n         Current A_min admits a nonzero, local, translation/proper-\n         cubic-invariant qubit-exchange interaction whose infinite-Z^3\n         one-particle Bloch symbol is the graph-Laplacian symbol,\n         not staggered Dirac, and its zero set is {k=0}.\n         Flux class and finite wrap holonomy remain additional choices.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172410Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:non_abelian_gauss_law_no_record_pattern_solutions_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "non",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/non_abelian_gauss_law_no_record_pattern_solutions_check_2026_09_03.py",
+ "seed": 53327,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174207Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "175be301cdf5aa8a574035432dd2e230679e4b1c726e940778758f1ada5786ad",
+ "stdout_tail": "cal zero\nPASS F2a [negative control, 1e-10] changing an interior eigenvalue by1/8 fails full reflection\nPASS F3 [numerical, 1e-10] the DECLARED one-sided variant sum_e sum_a (E^a_{e,i})^2, supplied only because the symmetric term is inert, is nonconstant and commutes with all twelve G_v^a exactly; it gives E_0 = -5.126268164739 at g^2 = 1. It breaks link-reversal symmetry: a supplied crutch, not a result\nper_element: checked exact sparse generator entries and nonzero supports on this supplied finite carrier\nper_site: checked local matter/link factors in the supplied model; physical site encoding and formation not derived\nper_mode: checked eight declared Jordan-Wigner modes; no universal claim about alternative mode or readout encodings\nper_block: checked one four-corner plaquette and its specified Gauss/readable algebra; numerical cuts labelled separately\nlattice_wide: checked and not executed \u2014 no larger-block, infinite-lattice, SU(3), continuum or confinement claim tested\nSUMMARY: on one plaquette with a designed fermion doublet per corner and the minimal u(2) quantum link, the gauge algebra is exact and the holonomy carries a colour part, while the non-abelian Gauss law has no record-pattern solutions: 0 of 65536, against 1312 for the abelian law on the same supplied carrier and basis. Invariant diagonal data include occupations, Casimirs and centre parity; fixed-basis probabilities do not determine singlet membership. No physical readout is derived.\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174208Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

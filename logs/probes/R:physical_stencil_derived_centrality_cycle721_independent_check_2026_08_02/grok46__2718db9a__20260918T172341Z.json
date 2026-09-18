@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02.py",
+ "seed": 52221,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172341Z",
+ "elapsed_s": 6.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bed27b5f2bd05b96482f194f9d3ce109370e0c2f7f84c22c4fb23e0c3a3e80cd",
+ "stdout_tail": " independent.tick_fixed folded=12 tick_fixed_unsigned=6\nPASS independent.fold_coset unsigned=6 sign_reversed=6\nPASS independent.tick_fixed_determinants split=3+3\nPASS independent.determinants split=6+6\nPASS independent.subgroup product and inverse closure\nPASS independent.sextet indices=(1, 4, 9, 15, 18, 23)\nPASS independent.cosets count=4 sizes=[6]\nPASS independent.slots.L3 slots=98 distinct=48\nPASS independent.action.L3 forward=0 reverse=175104\nPASS independent.centrality.L3 central_residual=0 mixed_noncommuters=32\nPASS independent.closed_form.L3 mismatches=0\nPASS independent.slots.L5 slots=604 distinct=48\nPASS independent.action.L5 forward=0 reverse=1094400\nPASS independent.centrality.L5 central_residual=0 mixed_noncommuters=32\nPASS independent.closed_form.L5 mismatches=0\nPASS independent.assembly_group.L3 measured=12 exact=12\nPASS independent.assembly_margin.L3 inside=1.243e-10 tolerance=2.945e-07 outside=4.000000\nPASS independent.frame_cosets.L3 classes=4 sizes=[6]\nPASS independent.assembly_group.L4 measured=12 exact=12\nPASS independent.assembly_margin.L4 inside=1.243e-10 tolerance=2.945e-07 outside=4.000000\nPASS independent.frame_cosets.L4 classes=4 sizes=[6]\nPASS independent.assembly_group.L5 measured=12 exact=12\nPASS independent.assembly_margin.L5 inside=1.243e-10 tolerance=2.945e-07 outside=4.000000\nPASS independent.frame_cosets.L5 classes=4 sizes=[6]\nPASS independent.primary_receipt primary finite anchors agree after independent reconstruction\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172348Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

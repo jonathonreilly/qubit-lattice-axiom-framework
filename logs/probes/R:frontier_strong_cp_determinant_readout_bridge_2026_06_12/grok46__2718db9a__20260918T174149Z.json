@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_strong_cp_determinant_readout_bridge_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_strong_cp_determinant_readout_bridge_2026_06_12.py",
+ "seed": 53309,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174149Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ef5d9cccf4325fe7a8cdfac64d2ac7496e69c9867379cfa0be38f32c3450a6b0",
+ "stdout_tail": "Strong-CP determinant-readout bridge verifier\n========================================================================\nPASS bridge note exists and declares bounded theorem\nPASS bridge names the theta P2/K-CPT row it feeds\nPASS bridge is explicitly mass-determinant-channel only\nPASS bridge does not claim action/gauge theta closure\nPASS Record boundary remains supplied-context only\nPASS strong-CP parent is cited but not promoted\nPASS U(1) character k=-3 is multiplicative over determinant products\nPASS U(1) character k=-2 is multiplicative over determinant products\nPASS U(1) character k=-1 is multiplicative over determinant products\nPASS U(1) character k=0 is multiplicative over determinant products\nPASS U(1) character k=1 is multiplicative over determinant products\nPASS U(1) character k=2 is multiplicative over determinant products\nPASS U(1) character k=3 is multiplicative over determinant products\nPASS K/CPT invariance leaves only k=0 among sampled determinant phase characters -- [0]\nPASS hostile cos(arg det) probe is K-even\nPASS hostile cos(arg det) probe violates independent-block multiplicativity -- gap=0.305042\nPASS direct-sum determinant product law represented on supplied determinants\nPASS K/CPT conjugation reverses determinant phase -- phi=0.400000\nPASS theta note wires this bridge without claiming gauge/action closure\n========================================================================\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174149Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/local_reference_fermion_encoding_obstructions_and_constructive_graph_isometries_2026_09_14.py",
+ "seed": 52559,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172919Z",
+ "elapsed_s": 5.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "95a204d8e445ff5572d7c1d914efd8498176f4e4128ab43b8a94629b1c6e88e8",
+ "stdout_tail": " 12, \"deleted_edge_maps_detected\": 12, \"incidence_CZ_gates\": 6, \"logical_qubits\": 48, \"max_incidence_inversions_at_vertex\": 2, \"maximum_controlled_Pauli_weight\": 12, \"new_qubits\": 168, \"old_qubits\": 156, \"orientation_Z_gates\": 0, \"returned_plus_inputs\": 12}, {\"cells\": 27, \"colors_used\": 54, \"deleted_edge_maps_detected\": 54, \"incidence_CZ_gates\": 36, \"logical_qubits\": 162, \"max_incidence_inversions_at_vertex\": 3, \"maximum_controlled_Pauli_weight\": 13, \"new_qubits\": 594, \"old_qubits\": 540, \"orientation_Z_gates\": 0, \"returned_plus_inputs\": 54}, {\"cells\": 64, \"colors_used\": 81, \"deleted_edge_maps_detected\": 144, \"incidence_CZ_gates\": 108, \"logical_qubits\": 384, \"max_incidence_inversions_at_vertex\": 3, \"maximum_controlled_Pauli_weight\": 13, \"new_qubits\": 1440, \"old_qubits\": 1296, \"orientation_Z_gates\": 0, \"returned_plus_inputs\": 144}]}\nPASS: check_signed_local_Clifford_graph_isometries\nper_element: exact CAR, Pauli, controlled-Clifford and norm identities test the supplied operator conventions\nper_site: all local reference columns and disjoint mode-five loaders expose the specified encoding hypothesis\nper_mode: every logical X/Z and stream word is compared through signed loop/D stabilizer groups on held graphs\nper_block: closed six-port exchange paths and matched one-particle or stationary-spectator histories test actual statistics\nlattice_wide: grid and edge-addition proofs carry the stated family bounds; finite checks establish no native phase or axiom wall\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172925Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

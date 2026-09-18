@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cartesian_plaquette_source_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/spin_half_cartesian_plaquette_source_2026_09_07.py",
+ "seed": 53056,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173736Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5499d91e06b246dbd2fc08b8bb38c95b8d7c1b474371d4e9f84fa1fb374edb72",
+ "stdout_tail": "xation=0.228211931179\n[PASS] V=1.00, cartesian_curl: positive finite curvature; independent finite differences converge quadratically\nRESPONSE V=1.00 source=cartesian_curl curvature=0.285050028242 bare=0.333333333333 relaxation=0.048283305092\n[PASS] V=0.95, occupation_sign: positive finite curvature; independent finite differences converge quadratically\nRESPONSE V=0.95 source=occupation_sign curvature=0.107539111729 bare=0.337754496718 relaxation=0.230215384989\n[PASS] V=0.95, cartesian_curl: positive finite curvature; independent finite differences converge quadratically\nRESPONSE V=0.95 source=cartesian_curl curvature=0.286566088925 bare=0.337754496718 relaxation=0.051188407793\n[PASS] V=0.90, occupation_sign: positive finite curvature; independent finite differences converge quadratically\nRESPONSE V=0.90 source=occupation_sign curvature=0.109734422219 bare=0.341812867273 relaxation=0.232078445054\n[PASS] V=0.90, cartesian_curl: positive finite curvature; independent finite differences converge quadratically\nRESPONSE V=0.90 source=cartesian_curl curvature=0.287751063895 bare=0.341812867273 relaxation=0.054061803378\n[PASS] ground-state residuals and finite component gaps justify the response calculation\nBOUND_INPUTS_SHA256 {\"docs/MINIMAL_AXIOMS_2026-06-29.md\": \"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\", \"docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md\": \"80ab2512f0f7706be19b87a2db8da34aa287be103715fdce9130072d6c4ce360\"}\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173737Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

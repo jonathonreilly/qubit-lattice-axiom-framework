@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+ "seed": 52322,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172522Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "26e00f96af0d641303d2790d63c3dbfda16a4e859b709c9cb5a79226934e3e6c",
+ "stdout_tail": "[PASS] 01 historical fifteen-check receipt is intact, with no current production certificate\n[PASS] 02 declared directed path ((0, 1),) leaves exactly the two endpoint charges\n[PASS] 03 declared directed path ((0, 2), (1, 1)) leaves exactly the two endpoint charges\n[PASS] 04 declared directed path ((1, 2), (2, 1)) leaves exactly the two endpoint charges\n[PASS] 05 finite periodic Coulomb plus harmonic coordinate respects the tested symmetries\n[PASS] 06 the declared 508-state component retains its finite Perron mixed-estimator identity\n[PASS] 07 final health aggregation rejects a later charge-control violation\n[PASS] 08 charge uncertainty remains paired with charge value; unreported flux error is unavailable\nHISTORICAL_CHARGE {\"U_charge\": 0.160609, \"U_charge_reported_error\": 0.015345, \"U_flux\": 0.162638, \"U_flux_error\": null, \"central_product\": 0.012289089918, \"historical_response_reported_error\": 0.000915, \"occupation_sign_response\": 0.075561, \"physical_Maxwell_target\": false, \"product_error\": null, \"reason\": \"U_flux has no matched uncertainty here; magnetic summary omits shared-zero covariance and its producer has the disclosed sampling bug\", \"response_error\": null}\nSCOPE: exact supplied finite component and receipt diagnostics; historical late-control health unknown; corrected long production held; physical Maxwell=False\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172524Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

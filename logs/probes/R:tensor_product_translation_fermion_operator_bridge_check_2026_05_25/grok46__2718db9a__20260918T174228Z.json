@@ -1,0 +1,35 @@
+{
+ "task": "R:tensor_product_translation_fermion_operator_bridge_check_2026_05_25",
+ "type": "runner-reexecution",
+ "lane": "tensor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
+ "seed": 53348,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174228Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=131 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "459964decccf912289565ac7da42785d81943679e7d4b6ffb7ca373659d3e921",
+ "stdout_tail": "T3) T_3 a_2^\u2020 T_3^\u2020 = a_1^\u2020  [N=4]\n  [PASS (C)] (T3) T_3 a_3 T_3^\u2020 = a_2  [N=4]\n  [PASS (C)] (T3) T_3 a_3^\u2020 T_3^\u2020 = a_2^\u2020  [N=4]\n  [PASS (C)] (T4) [T_0, Q_total] = 0  [N=4]\n  [PASS (C)] (T4) [T_1, Q_total] = 0  [N=4]\n  [PASS (C)] (T4) [T_2, Q_total] = 0  [N=4]\n  [PASS (C)] (T4) [T_3, Q_total] = 0  [N=4]\n\n----------------------------------------------------------------------------------------\n2D 2\u00d72: independent axis translations and joint covariance\n----------------------------------------------------------------------------------------\n  [PASS (C)] (T1) T_x T_x^\u2020 = I  [Lx=2,Ly=2]\n  [PASS (C)] (T1) T_y T_y^\u2020 = I  [Lx=2,Ly=2]\n  [PASS (C)] (T2) T_x T_y = T_y T_x  [Lx=2,Ly=2]\n  [PASS (C)] (T2) T_x T_y = T_{(1,1)}  [Lx=2,Ly=2]\n  [PASS (C)] (T3) T_x a_{0,0} T_x^\u2020 = a_{1,0}  [Lx=2,Ly=2]\n  [PASS (C)] (T3) T_y a_{0,0} T_y^\u2020 = a_{0,1}  [Lx=2,Ly=2]\n  [PASS (C)] (T3) T_x a_{0,1} T_x^\u2020 = a_{1,1}  [Lx=2,Ly=2]\n  [PASS (C)] (T3) T_y a_{0,1} T_y^\u2020 = a_{0,0}  [Lx=2,Ly=2]\n  [PASS (C)] (T3) T_x a_{1,0} T_x^\u2020 = a_{0,0}  [Lx=2,Ly=2]\n  [PASS (C)] (T3) T_y a_{1,0} T_y^\u2020 = a_{1,1}  [Lx=2,Ly=2]\n  [PASS (C)] (T3) T_x a_{1,1} T_x^\u2020 = a_{0,1}  [Lx=2,Ly=2]\n  [PASS (C)] (T3) T_y a_{1,1} T_y^\u2020 = a_{1,0}  [Lx=2,Ly=2]\n  [PASS (C)] (T4) [T_x, Q_total] = 0  [Lx=2,Ly=2]\n  [PASS (C)] (T4) [T_y, Q_total] = 0  [Lx=2,Ly=2]\n\n========================================================================================\nPASS=131 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174229Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_both_readings_charge_selects_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_both_readings_charge_selects_2026_05_30.py",
+ "seed": 52303,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172503Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2fef568605c87b94c0d3a915a31552d0698329ef2c4dbe1c43e35249d9afc329",
+ "stdout_tail": "[PASS] R1 r=1 endpoint gives eigenvalues {0,0,3a}, the rank-one/democratic point\n       eig=[-0. -0.  3.]\n[PASS] R2 a scalar generation U(1) action commutes with C and cannot orient the doublet\n       [iI,C]=0; this is conditional on the physical charge acting scalar on generation\n[PASS] R3 C^3=I blocks continuous C rephasing except the discrete C3 phases\n       generic alpha fails order three\n[PASS] R4 embedded mass comparator orders charged sectors leptons < down < up < rank-one\n       leptons=0.6667, down=0.7314, up=0.8490; empirical comparator only\n[PASS] R5 neutrino positive-root normal-ordering comparator stays below 2/3 in the tested range\n       max Q_nu=0.5850 < 2/3\n[PASS] R6 source boundary guard: no physical gauge-action or sector-ordering theorem promoted\n       the packet closes only finite/conditional route pruning\n\nSCORECARD PASS=6 FAIL=0\nVERDICT: bounded-support route pruning. Scalar generation charge cannot orient\nthe doublet, and continuous C rephasing is blocked by C^3=I. The mass table is\ncomparator evidence only; this runner does not derive a physical det_C/det_R selector.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172504Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+PASS: actual commutant and reduced generator control | (15, 10)
+PASS: same marginal predicate on classical and coherent operands | Matrix([[0, -1], [-1, 0]])
+TOTAL: 2 passed, 0 failed
+per_element: exact finite matrix, coefficient or probability predicates named above were executed.
+per_site: supplied six-neighbor condition identities only; no generated physical-site update executed.
+per_mode: checked and not executed — no universal momentum or dynamical mode campaign is claimed.
+per_block: finite conditional source, carrier or channel scope is exactly the named predicates above.
+lattice_wide: checked and not executed — no whole-stencil dynamics, infinite history or physical selection is claimed.

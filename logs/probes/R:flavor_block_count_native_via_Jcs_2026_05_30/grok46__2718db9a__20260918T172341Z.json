@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_block_count_native_via_Jcs_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_block_count_native_via_Jcs_2026_05_30.py",
+ "seed": 52221,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172341Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1c9c70d919401a766cf658613eae431656c21192a73585bcf44984fdd5423f1b",
+ "stdout_tail": "[PASS] V1 qubit i = Cl(3) pseudoscalar = i*I2; on generations = i*I3 (generation-blind)\n[PASS] V2 J_cs=(C-C^2)/sqrt3: real antisym, C3-equivariant, eigs {0,+i,-i}, != i*I3, native\n       doublet = one complex line; singlet real; built from real C so C^3=I cannot forbid it\n[PASS] V3 CORRECTION: C^3=I kills U(1)_b SYMMETRY (quantized) but NOT the native J_cs MEASURE\n       block-count uses J_cs (Schur/FS structure), not the U(1)_b symmetry -> Q=2/3 reading is AVAILABLE\n[PASS] V4 real-dim & trace -> (1,2)->Q=1; real-BLOCK K0(R[Z3])=Z^2 -> (1,1)->Q=2/3\n       'real dimension' != 'real block' (doublet=ONE Wedderburn block)\n\nSCORECARD PASS=4 FAIL=0\nVERDICT: the Q=2/3 block-count reading is NATIVELY AVAILABLE via J_cs=(C-C^2)/sqrt3 (C3-equivariant,\nNOT forbidden by C^3=I -- correcting the prior overstatement). BOTH Q=2/3 (K0-real/block/coherent-\nstate, native J_cs) and Q=1 (K0-complex/dimension/trace, privileged only by unaudited PRR) are\nnative readings; NEITHER is forced. The slot is a free reality-structure bit. Converges with this\nsession's Build C (trace needs PRR) + the parallel worker's K-theory framing + PR #2412.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172341Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

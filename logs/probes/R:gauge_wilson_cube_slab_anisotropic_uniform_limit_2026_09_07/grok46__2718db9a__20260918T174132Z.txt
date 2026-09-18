@@ -1,0 +1,9 @@
+PASS: TOTAL23 = original14 exact geometry/OU +8 scalar supplement +1 resource guard.
+TOTAL: PASS=23 FAIL=0
+per_element: no individual-element dynamical simulation or finite-beta accuracy is certified.
+per_site: the fixed16vertex32edge22face geometry is supplied, not a thermodynamic limit.
+per_mode: covariance and invariant oscillator modes concern the central source space.
+per_block: repeated compressed-source powers are an additional composition contract, not a longer microscopic slab.
+lattice_wide: polynomial sequence108 has unspecified constants/onset and selects no physical time or coupling.
+source_sha256=79d5dad29a3b3f71ecb0182bd8af7db260b3728c05eac57227f16263086df48a
+Resources: 0.551234s; 63.422 MiB; limits180s/180MiB.

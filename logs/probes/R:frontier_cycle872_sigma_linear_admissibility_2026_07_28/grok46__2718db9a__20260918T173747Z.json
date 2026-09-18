@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle872_sigma_linear_admissibility_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle872_sigma_linear_admissibility_2026_07_28.py",
+ "seed": 53067,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173747Z",
+ "elapsed_s": 53.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "362d1ba6e0c10895ba0411b6ce8236816fa797cdae9951d3fcf91231e8f1b65c",
+ "stdout_tail": "blob\":\"c155a2dafaccde60c17047303c6de358445711c3\",\"git_blob_exact\":true,\"path\":\"scripts/frontier_cycle868_response_sign_census_2026_07_28.py\",\"required_markers\":[\"adjoint_pullback\",\"census_certificate\",\"grading_operator\",\"response_objects\",\"stipulated_ledger\",\"verdict_certificate\"],\"required_markers_present\":true,\"sha256\":\"dca6b71b9dec65adbacff348e75085bf2c24fe96f621b949a4c8fb96f74cf89a\",\"sha256_exact\":true},{\"access\":\"TEXT_ONLY_PINNED_STDOUT\",\"exists_worktree_relative\":true,\"git_blob\":\"38a0ecf77aaef1b37d1c9fcca49bbd74edd40796\",\"git_blob_exact\":true,\"path\":\"logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt\",\"required_markers\":[],\"required_markers_present\":true,\"sha256\":\"efb45439065ca7c92db20e29a1f261cfeaec71f96ae21d5774e617dfdc295c55\",\"sha256_exact\":true}],\"sources_pass\":true,\"stdout_bytes\":37405,\"stdout_limit_bytes\":150000,\"stdout_under_limit\":true}\nFINAL {\"checks\":{\"A_GRAMMAR\":true,\"B_LINEAGE_CONSTRAINTS\":true,\"C_CONTAINMENT_OF_868\":true,\"D_ADMISSIBILITY\":true,\"E_DECLARED_FAMILY_CLASSIFICATION\":true,\"F_ALGEBRA_CLOSURE\":true,\"G_ESCAPE_B\":true,\"H_CALIBRATION\":true,\"I_VERDICT\":true,\"J_CONTROLS\":true},\"escape_b_shaped_objects\":180,\"generators_admissible\":344,\"generators_declared\":384,\"pairs_classified\":470592,\"random_algebra_elements_sensitive\":0,\"runtime_seconds\":53.25672,\"sigma_sensitive_pairs\":0,\"stdout_bytes\":37405,\"terminal\":\"CYCLE872_SIGMA_ADMISSIBILITY_CLASSIFICATION_COMPLETE\",\"verdict\":\"OUTCOME_B_CONSTRUCTOR_ALGEBRA_BLIND_ESCAPE_B_SHAPED_BUT_VOID\"}\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173841Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

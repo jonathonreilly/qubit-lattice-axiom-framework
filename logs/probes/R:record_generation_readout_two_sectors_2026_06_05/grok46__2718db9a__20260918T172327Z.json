@@ -1,0 +1,35 @@
+{
+ "task": "R:record_generation_readout_two_sectors_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/record_generation_readout_two_sectors_2026_06_05.py",
+ "seed": 52207,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172327Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d2c7dd1f330a2bc103a76d4f2109a73faf7b31e86c7b4f5df9d5bc1c0a5f52e2",
+ "stdout_tail": "he 2x2 rotation is the irreducible real DOUBLET block\n[PASS] 5.4 the real doublet block has NO real eigenvalue (irreducible over R) and splits over C into {omega, omega^2}\n       eig(rotation) = [-1/2 - sqrt(3)*I/2, -1/2 + sqrt(3)*I/2] = {omega, omega^2}\n[PASS] 5.5 K/CPT-orbit count (=2) EQUALS real Wedderburn block count (=2)\n       the fixed K/CPT conjugation in the readout context IS the real-structure fusion C[Z3]=C^3 -> R[Z3]=R\u2295C\n\n========================================================================================\nX \u2014 independent numpy (float) cross-check of the K-orbit / sector count\n========================================================================================\n[PASS] X1 numpy: exactly chi_0 is K-fixed\n       K-fixed = [0]\n[PASS] X2 numpy: exactly {chi_1, chi_2} are K-swapped\n       K-swapped pairs = [(1, 2)]\n[PASS] X3 numpy: K/CPT-orbit sector count = 2 (1 fixed + 1 swapped pair)\n       #sectors = 2\n[PASS] X4 numpy: FS = (+1, 0, 0)\n       nu = (1.000, -0.000, 0.000)\n[PASS] X5 numpy: regular-rep eigenvalues = {1, omega, omega^2} (1 real singlet + 1 conjugate doublet pair)\n       eig(P) = [-0.5+0.866j -0.5-0.866j  1. +0.j   ]\n\n========================================================================================\nRESULT\n========================================================================================\nPASS=32 FAIL=0\nALL CHECKS PASSED\nGeneration readout resolves exactly TWO K/CPT-orbit sectors: SINGLET (chi_0, dim 1) + DOUBLET ({chi_1,chi_2}, dim 2).\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172327Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

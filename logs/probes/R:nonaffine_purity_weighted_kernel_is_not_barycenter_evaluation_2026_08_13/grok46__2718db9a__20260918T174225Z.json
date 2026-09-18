@@ -1,0 +1,35 @@
+{
+ "task": "R:nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "nonaffine",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_2026_08_13.py",
+ "seed": 53345,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174225Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b32f14b52ec470364290b67f4ff1d8be4f62a330ad4f9989c48379fd25d62e31",
+ "stdout_tail": "s (9/50)/(13/25)=9/26\nPASS: theorem-3-born barycenter evaluation at the biased state is Tr(rho E0)=3/10\nPASS: theorem-3-disagree 9/26=45/130 and 3/10=39/130, so K is not Tr(rho E)\nPASS: theorem-4-atoms pure atoms give K(P(z),E0)=1/2 and K(P(-z),E0)=0\nPASS: theorem-4-not-affine affine mix of the atoms is 3/10, not the barycenter value 9/26\nPASS: restriction-hostile restriction of E0 on M_A recomputes as 25/142, which is not K(I/2,E0)=1/4\nPASS: mutation-born-fails replacing K by Tr(rho E) yields 3/10, not 9/26\nPASS: theorem-5-scope Theorem 5 separates August 9 pointwise trace form from August 12 mu-affinity\nPASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold\nPASS: n5-length each N5 resolution line is at least 40 characters\nper_element: E0 at I/2 and diag(3/5,2/5) with values 1/4, 9/26, 3/10, and control 25/142\nPASS: n5-length each N5 resolution line is at least 40 characters\nper_site: the exhibit is one M_2(C) density-body site; no composite carrier is claimed\nPASS: n5-length each N5 resolution line is at least 40 characters\nper_mode: the diagonal family P(z), P(-z), I/2 is checked; no spectral-mode exhaustion\nPASS: n5-length each N5 resolution line is at least 40 characters\nper_block: August 9 pointwise trace form is separated from August 12 preparation affinity\nPASS: n5-length each N5 resolution line is at least 40 characters\nlattice_wide: checked and not executed \u2014 no lattice-wide Born no-go or uniqueness denial\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174225Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

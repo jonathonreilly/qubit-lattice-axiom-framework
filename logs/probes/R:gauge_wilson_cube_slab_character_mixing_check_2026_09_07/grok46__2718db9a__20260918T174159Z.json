@@ -1,0 +1,34 @@
+{
+ "task": "R:gauge_wilson_cube_slab_character_mixing_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/gauge_wilson_cube_slab_character_mixing_check_2026_09_07.py",
+ "seed": 53319,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174159Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1f4e2b0d49b594b3897f7d32efa9551ce88a8f38e5fa8739e0b0a1b64a6354f8",
+ "stdout_tail": "PASS: 973017 exact signed subsets; unique degree-five cap, four rational controls.\nN5: Actual two-slice cube Wilson/Haar source compression, supplied action and embedding.\nN5: Center flux is a necessary selection rule; source proof supplies actual Haar contraction.\nN5: Anisotropic and isotropic tiny positive points are derived rational corollaries.\nN5: Positive normalization preserves mixing; no beta6, dressed-map or continuum identification.\nN5: Runtime file inputs none; source SHA ebf3d31389104dd701d490c23824b36a37f1f26aff1088355a98fc1f7c138257\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174200Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

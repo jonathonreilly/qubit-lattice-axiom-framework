@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_many_body_nested_commutator_lightcone_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/microcausality_many_body_nested_commutator_lightcone_2026_07_18.py",
+ "seed": 52565,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172925Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1e80ffee024050fd9e4bcd3cca531b895c4c281484154ae58dbe46efb9808102",
+ "stdout_tail": "PASS: L1a a bond not touching the support commutes exactly\nPASS: L1b the first adjoint step stays inside the one-neighborhood\nPASS: L1c the first adjoint step is itself nonzero\nPASS: T1a k=0 commutator vanishes below the cone\nPASS: T1b k=1 commutator vanishes below the cone\nPASS: T1c k=2 commutator is nonzero at the cone distance\nPASS: T1d disconnected site-3 component stays unreachable through k=8\nPASS: T2a commuting chain first step is nonzero\nPASS: T2b commuting chain never reaches the cone at k=2 (any site-3 probe)\nPASS: T2c commuting chain never reaches the cone at k=3 (any site-3 probe)\nPASS: T2d the stall mechanism: the two bonds commute exactly\nPASS: T2e full-H adjoints equal near-bond adjoints through k=8\nPASS: T3a factorial domination on exact grid 0<=d<=8 and d<=k<=16\nPASS: T3b exact partial-tail instance is dominated by the closed form\nPASS: T3c commutator norm-bound instance ||[P,Q]||^2 <= 4||P||^2||Q||^2\nPASS: T3d rebuilt chain: triangle plus submultiplicativity on the instance\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172925Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

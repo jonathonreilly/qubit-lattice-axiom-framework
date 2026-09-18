@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_statistics_product_instance_criterion_bridge_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py",
+ "seed": 53234,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174034Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2b2baaeb2964f76b4a464876daa99f9e2eeefa749e5fea8e0ab13112672b802d",
+ "stdout_tail": "md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)', '[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)', '[`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`](PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md)', '[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)']\n\n========================================================================================\ngit diff --stat\n========================================================================================\n(computed without invoking git, per the no-git rule)\n docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md | 175 +\n docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 255 +\n scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py | 355 +\n 3 files changed, 785 insertions(+)\n\nSUMMARY:\nProduct-effect criterion, product-to-quotient implication, quotient cumulant criterion, same-marginal control, and textual status firewalls verified.\nPhysical repeated-registration independence remains an open premise outside this bridge.\nTOTAL: PASS=14 FAIL=0\nCHAIN: {'pauli_ansatz': True, 'product_effect_criterion': True, 'product_implies_quotient': True, 'quotient_factorization': True, 'same_marginal_control': True}\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174035Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

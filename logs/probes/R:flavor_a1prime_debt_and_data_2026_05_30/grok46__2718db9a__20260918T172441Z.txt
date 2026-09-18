@@ -1,0 +1,24 @@
+[PASS] A1 real R[Z3] tracial group-element basis has Gram=I
+       This is a finite basis calculation, not a physical measure ranking.
+[PASS] A2 J-I=g+g^2 occupies two real group-element directions
+       coeffs=[0, 1, 1]; support_count=2
+[PASS] A3 fixed C^3=I carrier has only cube-root phases in this finite model
+       A continuous U(1) doublet phase is extra to this finite carrier model.
+[PASS] A4 signed Hermitian Q is delta-independent in the supplied model
+       Q_signed=1/3 + 2*b_sym**2/(3*a_sym**2)
+[PASS] B1 supplied mass comparators put leptons near c^2=2 and quarks above
+       lep=2.000, up=3.094, down=2.389
+[PASS] B2 supplied (c,b,t) comparator is cross-sector, not a within-sector C3 closure
+       (c,b,t) c^2=2.017
+[PASS] B3 supplied normal-ordering neutrino sweep stays below Q=2/3
+       max Q_nu(NO)=0.585
+[PASS] B4 supplied CKM angle inventory is 1.31-2.85x Cabibbo
+       required=17-37 deg; ratios=1.31-2.85x
+[PASS] source guards keep axiom status, normalization, and comparator bridges open
+
+SCORECARD PASS=9 FAIL=0
+VERDICT: bounded support for finite R[Z3] support-count algebra and
+external comparator stress tests only. The packet does not prove a
+native r/Q normalization law, does not globally forbid every complex
+order-three representation, and does not certify the embedded mass or
+angle data as framework-derived inputs.

@@ -1,0 +1,34 @@
+{
+ "task": "R:physical_operational_source_response_readout_chain_cycle700_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_operational_source_response_readout_chain_cycle700_2026_07_25.py",
+ "seed": 52856,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173416Z",
+ "elapsed_s": 45.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=127 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "97319f6605ac6b791143f361dd535b7c4d42f775f721553fabada3103a22a12f",
+ "stdout_tail": "os\":[4.108829315471547,4.043199039322248,4.0192785181748585],\"Fprime_sample_min\":0.5497026561038232,\"R_dyn_ladder\":[-4.112204466641254,-3.938488211332885,-3.9169789686578382],\"R_hold\":[-4.209568736178572,-4.150939492487698,-4.121308954024253,-4.1145788661621125],\"R_mut\":-4.0411929130059585,\"R_pred\":-3.913233185406517,\"R_pred_dipole\":4.171385155033825,\"R_pred_split\":-3.9132331854898643,\"R_static19\":-3.9169789686578382,\"adiabatic_err\":[0.09736426953731847,0.03873502584644406,0.009104487382999515,0.0023743995208587165],\"adiabatic_p\":1.939015084370029,\"eps_absmax_L3\":1.5536772720022372,\"k4_axis\":\"2/5\",\"min_len_L3\":-0.44222284059860884,\"n_cert_L3\":8,\"n_cert_L6\":0,\"pd_fail_L3\":6,\"pd_first_failures\":[[0,1,1],[1,0,1],[1,1,0],[1,1,2],[1,2,1],[2,1,1]],\"quad_rel_gap\":6.7335860338863246e-15,\"range_ratio\":33.161007665936864,\"range_sep\":0.12421394434812028,\"reversal_err\":2.9163158319439864e-16,\"s_action_onset_ratio\":[1.5188364977482702,1.5188364977948363],\"s_big_mpl\":0.2682107764363385,\"s_len\":0.6933741248924751,\"s_pd\":0.422836427078498,\"s_star\":0.422836427078498,\"seq3\":[0.021985800935773472,0.020922081579336727,0.02031327472048794,0.02012429974455543],\"srca_relerr\":[0.050845751277167235,0.006453749298802439,0.0009572093135901125],\"srcb_relerr\":[0.016237162153723828,0.006315817465289612,0.0022096148890556606],\"t_lin\":1.2860516741743042,\"t_quad\":1.2860516741742956,\"uQu\":-0.486253095196506,\"ubs\":0.6253466071498996},\"cycle\":700,\"elapsed_sec\":44.428,\"fail\":0,\"pass\":127}\nTOTAL: PASS=127 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173501Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

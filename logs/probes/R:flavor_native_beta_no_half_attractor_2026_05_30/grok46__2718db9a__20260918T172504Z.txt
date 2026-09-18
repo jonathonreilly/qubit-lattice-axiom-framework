@@ -1,0 +1,15 @@
+============================================================================
+Flavor supplied tanh^4 flow transit check
+============================================================================
+Claim boundary: supplied r(t)=tanh^4(t) path only; no native-beta exhaustion.
+
+  [PASS] r(0) = 0  (r(0)=0.000000000000)
+  [PASS] r(t) approaches 1 at large t  (r(20)=1.000000000000)
+  [PASS] beta_r(t)>0 at sample finite t=0.5  (beta=0.310446047891)
+  [PASS] beta_r(t)>0 at sample finite t=2.5  (beta=0.102154360791)
+  [PASS] t_star solves r(t_star)=1/2  (t_star=1.224226223839)
+  [PASS] beta_r(t_star)>0, so r=1/2 is transit not fixed  (beta_star=0.696621399498)
+
+============================================================================
+PASS=6 FAIL=0
+============================================================================

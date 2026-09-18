@@ -1,0 +1,34 @@
+{
+ "task": "R:independent_admissibility_d4_record_past_nondisturbing_causal_preparation_gate_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "independent",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/independent_admissibility_d4_record_past_nondisturbing_causal_preparation_gate_2026_08_29.py",
+ "seed": 53320,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174200Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8a5e32ab7b8ab9537a10df2995995576f21d4452b730ec788c910cf4ffe0542f",
+ "stdout_tail": "PASS: actual commutant and reduced generator control | (15, 10)\nPASS: same marginal predicate on classical and coherent operands | Matrix([[0, -1], [-1, 0]])\nTOTAL: 2 passed, 0 failed\nper_element: exact finite matrix, coefficient or probability predicates named above were executed.\nper_site: supplied six-neighbor condition identities only; no generated physical-site update executed.\nper_mode: checked and not executed \u2014 no universal momentum or dynamical mode campaign is claimed.\nper_block: finite conditional source, carrier or channel scope is exactly the named predicates above.\nlattice_wide: checked and not executed \u2014 no whole-stencil dynamics, infinite history or physical selection is claimed.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174200Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

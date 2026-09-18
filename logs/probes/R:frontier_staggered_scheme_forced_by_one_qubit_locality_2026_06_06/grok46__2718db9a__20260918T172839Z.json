@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_staggered_scheme_forced_by_one_qubit_locality_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_staggered_scheme_forced_by_one_qubit_locality_2026_06_06.py",
+ "seed": 52519,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172839Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d84644d876d3a8daf3d92c826ebc2714d6d6310ee4e282f457b40d5bf62ac5b4",
+ "stdout_tail": "Wilson/naive need per-site dim 16 = FOUR qubits/site -> contradicts one-qubit/site\n  [PASS] overlap/domain-wall is nonlocal (or needs a 5th dimension) -> contradicts Locality\n  [PASS] => the staggered (KS) carrier is FORCED, not admitted, by {Quantum, Locality}  --  completes substep-1: fermionic-vs-bosonic -> staggered-vs-all-schemes\n\n[BLOCK 4] Counterfactual output: the gate is a 4-substep chain, not a wall\n  [PASS] substep-1 Grassmann + STAGGERED-scheme forcing  --  qubit dim 2 + Locality (this note completes it)\n  [PASS] substep-2 Kahler-Dirac equivalence  --  staggered ~= Kahler-Dirac (known math fact; unaudited)\n  [PASS] substep-3 BZ-corner / species reduction  --  retained / retained_bounded\n  [PASS] substep-4 species-label  --  = AC_phi_lambda (outside this carrier note)\n  [PASS] the species-label residual remains outside this carrier note\n  [PASS] => this note narrows the gate to a carrier result; residuals remain substep-2, substep-4, and continuum  --  not a monolithic wall\n\n[BLOCK 5] Scope\n  [PASS] forces the staggered CARRIER (one Grassmann/site); Dirac operator/hopping = substep-2\n  [PASS] Kogut-Susskind phases + Kahler-Dirac equivalence + continuum limit NOT claimed here\n  [PASS] no new axiom; dim counting = representation theory; locality = the Locality axiom\n\n====================================================================================\nSCORECARD:  PASS = 20   FAIL = 0\n====================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172839Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

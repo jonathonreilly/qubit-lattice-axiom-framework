@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_additive_reading_space_cycle762_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_cell_cutting_additive_reading_space_cycle762_2026_08_09.py",
+ "seed": 52698,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173138Z",
+ "elapsed_s": 44.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "74eb78e48750c5eee372977de2952beeabd51a18df56163333d840a193931bc9",
+ "stdout_tail": "uct builds agree; its kernel annihilates all cutting rows; 400-row and 800-row ranks are 88\nPASS TABLE-RANKS  cutting rank/kernel 88/104; cover rank/kernel 105/87; both satisfy rank-nullity in 192 columns\nPASS CONSTANT-DIRECTION  normalized constants read 1 on every cutting and cover; column sums are 1975 and 8\nPASS READING-DIMENSIONS  equal-cutting-reading dimension 105; equal-cover-reading dimension 88; constants lie outside both kernels\nPASS CUTTING-READINGS  equal-cutting-reading and cover-row spaces each have dimension 105 and joint rank 105\nPASS COVER-READINGS  equal-cover-reading and cutting-row spaces each have dimension 88 and joint rank 88\nPASS SPAN-INTERSECTION  row spaces have joint rank 192 and intersection dimension 1; constants occur through column sums 1975 and 8\nPASS COMMON-TOTALS  3 nonzero-sum elements per space give totals sum/8 and sum/24; 15800 equals 8 times 1975\nPASS COVER-CONTROL  a cover lies in the dimension-105 space; its cover-side readings are 0, 1, 2, 4, 8\nPASS ZERO-CONTROL  replacing the constant target by zero gives kernel dimensions 104 and 87\nPASS SHIFT-CONTROL  cyclic shift keeps rank 105 and marginal sums 8; joint rank with the dimension-105 space is 191\nPASS DIMENSION-CHECK  105=192-88+1; 88=192-105+1; 88+105=192+1\nPASS SOURCE-HYGIENE  no per-cent character or long dash; every source character is plain ASCII\nPASS RESOURCE-BOUND  elapsed under 300 seconds and peak resident memory under 1500 MB\nstdout characters: 1910\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173222Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

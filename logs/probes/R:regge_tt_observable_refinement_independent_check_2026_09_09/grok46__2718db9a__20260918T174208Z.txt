@@ -1,0 +1,7 @@
+PASS literal-input-closure: inputs=6
+PASS independent-negative-fixed-schur: identity=1.80e-16; generalized=1.57e-16
+PASS shared-definition-affine-lift-fiber: fixtures=32; target=1.97e-15; gauge=5.41e-15
+PASS shared-definition-raw-versus-metric-refinement: comparisons=12; raw=3.00e-15; metric=5.12e-02
+PASS primary-cache-and-scope-binding: primary=8/0; bounded finite scope; physical/audit authority absent
+CHECKER_JSON: {"audit_status": "unset", "claim_type": "bounded_theorem", "metric_gauge_fixtures": 32, "negative_fixed_schur": true, "physical_law_selected": false, "refinement_comparisons": 12}
+TOTAL: PASS=5 FAIL=0

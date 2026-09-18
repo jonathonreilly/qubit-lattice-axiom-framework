@@ -1,0 +1,35 @@
+{
+ "task": "R:no_readable_shear_diagonal_pairs_frozen_read_shear_slaved_check_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "no",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/no_readable_shear_diagonal_pairs_frozen_read_shear_slaved_check_2026_09_05.py",
+ "seed": 52570,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172930Z",
+ "elapsed_s": 127.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b3e718852dee268bbe488e405fab1a8d7f20e97b8d38095901d5ef4346eb590b",
+ "stdout_tail": "d flat complex and finite xx-amplitude calibration mismatch | the selected sea's joint-occupation values are uniform -- axis 0.21034, face diagonals 0.25 exactly, site spread <= 6.7e-16 -- so a uniform read metric (isotropic, 1.02:1.03:1.09, or sheared) is flat: |Q(0) M_AM(0) h| <= 2.5e-15. Body-diagonal read/predicted per unit h_xx: sea m=0 1.9e-18/5.9e-03; sea m=1 4.3e-02/9.8e-02; multiplet 1.2e-01/9.1e-02; zero flux 2.3e-02/5.3e-02; rotated 6.2e-04/5.5e-03 -- the seventh statistic contradicts the metric the six define by 26-100 %\nSUPPLIED, not derived: the fermion law; the pi-flux sea, its KS signs, twist rule and m; beta = 1 (supplied) and the endpoint-mean rule; the joint-occupation reading and its unit per-class coefficient; the star tick, tau = 0.5 and its order family; the Lueders clause; the period-2 coupling and kappa; the wall, the multiplet, v0; the Regge action and G; the TT conventions.\nPASS C1 full occupied law retains the certain site and conditional determinant ratios | trace=(2+0j) K00=(1+0j) max joint ratio error=5.551115123125783e-17; complex projector\nPASS C2 impossible or invalid conditional events reject instead of zero fill | rejected=4/4\nPASS C3 axis cross response is zero and invalid read-map domains reject | axis TT sv=[0.28899003283174324, 0.0]; domain rejections=3/3\nPASS C4 full occupied kernel derivative agrees with independent central difference | finite-difference error=4.1633392480061586e-11; certain-site derivative zero\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173137Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

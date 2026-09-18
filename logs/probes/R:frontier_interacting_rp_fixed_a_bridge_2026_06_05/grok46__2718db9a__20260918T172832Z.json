@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_interacting_rp_fixed_a_bridge_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_interacting_rp_fixed_a_bridge_2026_06_05.py",
+ "seed": 52512,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172832Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=40 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b3290fc0b3a1e56c5fb3cbd3e1066ecbfe08b2dfb1173d07bb788c4e46e5eded",
+ "stdout_tail": "orm / transfer assumption)\n----------------------------------------------------------------------------\n  [u1] direct PI RP Gram: nt=2 Ls=2 nc=1 basis=12 cfg=4000\n        herm err = 2.78e-17; >>> DIRECT RP GRAM min eig = 1.612888e-02\n  [PASS] u1 DIRECT path-integral RP Gram PSD  min eig 1.613e-02 (genuine path integral, no operator assumption)\n  [su2] direct PI RP Gram: nt=1 Ls=2 nc=2 basis=12 cfg=3000\n        herm err = 6.61e-18; >>> DIRECT RP GRAM min eig = 2.137804e-01\n  [PASS] su2 DIRECT path-integral RP Gram PSD  min eig 2.138e-01 (genuine path integral, no operator assumption)\n  [su3] direct PI RP Gram: nt=1 Ls=2 nc=3 basis=18 cfg=2500\n        herm err = 6.51e-18; >>> DIRECT RP GRAM min eig = 1.763921e-01\n  [PASS] su3 DIRECT path-integral RP Gram PSD  min eig 1.764e-01 (genuine path integral, no operator assumption)\n  (teeth for the DIRECT object: the SAME det-weighted Haar path-integral\n   Gram with the WRONG single-step reflection is NON-PSD -- see\n   C-wrong-reflection-B above: U(1) -0.29, SU(3) -0.41, and the fixed-U\n   single-step no-go C-single-step -0.80.  So the direct PI PSD result is\n   specifically contingent on the correct 2-step OS reflection.)\n============================================================================\nSCORECARD PASS=40 FAIL=0\nPEAK RSS = 0.073 GB\n============================================================================\n\n[wrote log to /private/tmp/ai-probes-grok-wt/logs/runner-cache/frontier_interacting_rp_fixed_a_bridge_2026_06_05.txt]\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172836Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

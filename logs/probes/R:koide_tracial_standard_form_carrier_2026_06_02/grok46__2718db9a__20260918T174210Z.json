@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_tracial_standard_form_carrier_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/koide_tracial_standard_form_carrier_2026_06_02.py",
+ "seed": 53330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174210Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "190a781388900058831b4bcea04f224cbd27940cee4ea56b5df8792623fa03db",
+ "stdout_tail": "[PASS] C1 tracial GNS standard form reproduces tau and has Omega=e cyclic+separating\n[PASS] C2 C.Omega (+) Omega^perp gives the group-element (1,N-1) split without diagonalization\n[PASS] C3 idempotent singlet is democratic and misaligned with Omega\n       <Omega,democratic>=sqrt(3)/3\n[PASS] C4 Aut(Z_3) fixes e and permutes non-identity elements\n       units=[1, 2]\n[PASS] C5 Hilbert-Schmidt channel scoring gives r=1/(N-1)\n       N=3 r=1/2\n[PASS] C6 finite Koide coordinate gives Q=2/3 after supplied r=1/2\n[PASS] C7 residual options remain expressible: direction-count r=1, idempotent r=17/2-6sqrt2\n       direction=1; idempotent=17/2 - 6*sqrt(2)\n[PASS] C8 Kahler identity is algebraic corroborator only\n[PASS] C9 r=1/2 circulant point commutes with C3 shift\n[PASS] C10 source guards keep this as supplied-carrier bounded support\n\nSCORECARD PASS=10 FAIL=0\nANSWER: the supplied tracial standard-form carrier distinguishes the\n(1,N-1) group-element split via Omega=e. Equal channel scoring then\ngives r=1/(N-1), but scoring and physical carrier selection remain\noutside the current axioms. This is bounded support, not an axiom\nproposal or unbounded Koide-value derivation.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174210Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

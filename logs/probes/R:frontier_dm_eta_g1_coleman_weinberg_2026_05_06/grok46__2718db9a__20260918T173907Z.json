@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_eta_g1_coleman_weinberg_2026_05_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_dm_eta_g1_coleman_weinberg_2026_05_06.py",
+ "seed": 53147,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173907Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "254566db76023c8c105ad38af7588cf23d40c0a205fbb0f8853cfc0da023981e",
+ "stdout_tail": "   Forward + backward Wilson hop pair:      Sigma_dir = 2 * C_F = 8/3\n    Algebraic identity: 2 * C_F = 2 * (N^2-1)/(2N) = (N^2-1)/N = 8/3.\n\n  The two readings of 8/3 (per-row trace and 2*C_F) are algebraically\n  equivalent (Test 13). The per-row trace makes the generator count\n  manifest; the 2*C_F view makes the chiral-cube geometry\n  (forward + backward Wilson hops per direction) manifest.\n\n  HONEST RESIDUAL: the standard one-loop CW Casimir for a color-\n  fundamental gives C_F = 4/3 PER SINGLE Wilson link. The chiral-cube\n  geometry (forward + backward links per direction) doubles this to\n  8/3 = 2 * C_F. This depends on counting the Wilson hopping pair as\n  TWO independent gauge-link insertions in the loop, which is the\n  natural reading of the staggered chiral-cube Wilson kernel.\n\n  Fierz diagnostics confirm (Tests 9, 10, 12):\n    - Each T^a is traceless: P_sing @ T^a = 0 EXACTLY\n    - Linear combinations Sigma_a alpha_a T^a stay in adjoint span\n    - The scalar self-energy C_F I lives in the singlet channel\n\n  Composition with bare Wilson kinetic mass (cited Origin B):\n    m_DM = rho_{adj/c} * (2 r * hw_dark * v) = (8/3) * 6 v = 16 v\n\n  STATUS: BOUNDED SUPPORT\n  The former bridge proof V1 (PR #618) is superseded where it\n  claimed adjoint-channel selection of the scalar self-energy.\n  This V1 supplies the corrected Wilson-link CW scalar-trace\n  calculation. Downstream status remains independent-audit\n  authority; the parent lane still carries inherited bounded inputs.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173908Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+[PASS] 01 historical fifteen-check receipt is intact, with no current production certificate
+[PASS] 02 declared directed path ((0, 1),) leaves exactly the two endpoint charges
+[PASS] 03 declared directed path ((0, 2), (1, 1)) leaves exactly the two endpoint charges
+[PASS] 04 declared directed path ((1, 2), (2, 1)) leaves exactly the two endpoint charges
+[PASS] 05 finite periodic Coulomb plus harmonic coordinate respects the tested symmetries
+[PASS] 06 the declared 508-state component retains its finite Perron mixed-estimator identity
+[PASS] 07 final health aggregation rejects a later charge-control violation
+[PASS] 08 charge uncertainty remains paired with charge value; unreported flux error is unavailable
+HISTORICAL_CHARGE {"U_charge": 0.160609, "U_charge_reported_error": 0.015345, "U_flux": 0.162638, "U_flux_error": null, "central_product": 0.012289089918, "historical_response_reported_error": 0.000915, "occupation_sign_response": 0.075561, "physical_Maxwell_target": false, "product_error": null, "reason": "U_flux has no matched uncertainty here; magnetic summary omits shared-zero covariance and its producer has the disclosed sampling bug", "response_error": null}
+SCOPE: exact supplied finite component and receipt diagnostics; historical late-control health unknown; corrected long production held; physical Maxwell=False
+TOTAL: PASS=8 FAIL=0

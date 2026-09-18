@@ -1,0 +1,34 @@
+{
+ "task": "R:native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.py",
+ "seed": 52569,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172929Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9aff3af25d1e7e1dc0bfb4abbb564bdbeda7e82b5a647d58ac3ee8402616b1ab",
+ "stdout_tail": "0.24131970596313465, \"coefficient_acceptance_checked\": true, \"denominator_first_error\": -0.001631590722695364, \"order\": 512, \"relative_alternative_error\": 1.003916568097197, \"relative_coefficient_error\": 0.003916568097197005, \"scaled_first_correction\": 0.005386354578643449, \"second_order_residual\": 0.06505911056489211, \"value\": 0.016227188617744394}], \"p\": 31, \"q\": 47, \"wrong_coefficient_without_denominator\": -0.010899108214868766, \"x\": 1.0, \"y\": 1.5}], \"rss_MiB\": 85.9375, \"scope\": \"Actual full scaled torus numerical quadrature; convergence support not rigorous integral enclosure. Frozen beta128,256,512,1024 are diagnostics, not the theorem threshold2048.\", \"seconds\": 0.3068685419857502, \"source_sha256\": \"0964be30e2570d0c3d6d4f509269028e654390e611ef00a7fbb326344ae9c321\"}\nper_element: exact sine-symbol and Weyl-alternant integrands; no Gaussian replacement.\nper_site: rho-shifted integer endpoints in the frozen compact window.\nper_mode: denominator -1 correction and quarter-W coefficient comparisons checked on converged GL384/512; GL256 retained as coarse diagnostic.\nper_block: four frozen beta128/256/512/1024 cases; actual values and 28 finite comparison assertions retained; coefficient unchanged.\nlattice_wide: numerical convergence only; no certified enclosure, theorem proof or spectral inference.\nSOURCE_SHA256 0964be30e2570d0c3d6d4f509269028e654390e611ef00a7fbb326344ae9c321\nDEPENDENCIES {}\nRESOURCES 0.3068685419857502 85.9375 seconds/MiB;180 limits, BLAS1\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172929Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

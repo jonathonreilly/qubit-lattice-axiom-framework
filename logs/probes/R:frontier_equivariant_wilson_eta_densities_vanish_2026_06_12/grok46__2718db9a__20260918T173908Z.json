@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_equivariant_wilson_eta_densities_vanish_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py",
+ "seed": 53148,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173908Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d3b7742cfff892a657c3ab725bb3a8debf36e8610ffe65df667f7cdcddc986af",
+ "stdout_tail": "e] PASS - The next paths\n[B07_no_delta_sentence] PASS - No delta appears anywhere as an input on this surface\n[B08_firewall_r_never_fixed] PASS - r is never fixed\n[B09_no_readings_cells] PASS - No readings/cells are introduced\n[B10_forbidden_phrases_absent] PASS - absent=[]\n[B11_link_inventory_exactly_two] PASS - links=[('`HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md`', 'HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md'), ('`MINIMAL_AXIOMS_2026-06-05.md`', 'MINIMAL_AXIOMS_2026-06-05.md')]\n[B12_companions_backticked] PASS - context companions are backticked\n[B13_no_promotion] PASS - No-promotion statement present\n[B14_status_authority] PASS - standard status-authority line present\n[B15_claim_type] PASS - bounded theorem claim type\n[B16_source_disclaimer] PASS - source-note proposal disclaimer present\n[B17_memory_budget] PASS - memory budget text present\n[B18_both_variants] PASS - both Wilson variants documented\n[B19_zero_crossing_scoped] PASS - finite zero-crossing tail scoped honestly\n[B20_no_go_discipline_gate] PASS - N1-N8 gate present and scoped to the free-bulk boundary\n\ngit diff --stat (not executed; no-git/no-network rule honored)\n  docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md | 152 lines | 9922 bytes\n  scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py | 386 lines | 15323 bytes\n\nSUMMARY: PASS=29 FAIL=0\nVERDICT: bounded theorem checks pass on the tested window.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173909Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

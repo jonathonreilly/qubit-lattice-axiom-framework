@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_kernel_induced_representation_central_complex_structure_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/kcpt_kernel_induced_representation_central_complex_structure_2026_07_18.py",
+ "seed": 53320,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174200Z",
+ "elapsed_s": 9.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=93 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6ad9f14c1712ea760d443faba2c68656ad709ae8c3cfc777d414760a730afe8e",
+ "stdout_tail": "n G\n[B6.3b] PASS wrong-axis word J'' (complex axis x3) fails to commute with some g in G\n[B6.4] PASS law rejector: stab bits all-zero, t=(1,0,0) violates the stab law and does not commute\n== B7 verbatim quote gates ==\n[B7.1] PASS verbatim fragment present in source AND in the new note\n[B7.2] PASS verbatim fragment present in source AND in the new note\n[B7.3] PASS verbatim fragment present in source AND in the new note\n[B7.4] PASS verbatim fragment present in source AND in the new note\n[B7.5] PASS verbatim fragment present in source AND in the new note\n[B7.6] PASS verbatim fragment present in source AND in the new note\n== B8 sharded-ledger existence ==\n[B8.1] PASS ledger shard exists and json-parses: kcpt_corner_carrier_lattice_delivery_hw1_doublet_pair_polarization_bounded_theorem_note_2026-07-17.json\n[B8.2] PASS ledger shard exists and json-parses: kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_bounded_theorem_note_2026-07-16.json\n[B8.3] PASS ledger shard exists and json-parses: minimal_axioms.json\n== B9 note hygiene ==\n[B9.1] PASS forbidden route/status strings absent (found: [])\n[B9.2] PASS no bare-decimal literal [0-9].[0-9] in note (match: None)\n[B9.3a] PASS exactly 3 authorities and 2 paired artifacts; every target resolves and is tracked\n[B9.3b] PASS STAGGERED_DIRAC handle appears backticked and NOT as a link\n[B9.4] PASS required strings present (missing: [])\n[B9.5] PASS PRESERVE-VERBATIM math strings present (missing: [])\nTOTAL: PASS=93 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174210Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

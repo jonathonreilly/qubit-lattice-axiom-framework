@@ -1,0 +1,8 @@
+CYCLE980_WITNESS_ORBIT_MULTIPLICITY_INDEPENDENT_CHECK
+R0_PRIMARY_AST_TEXT_AND_PINS PASS :: source_reads=4<=6; sha_pins=True; primary_executed=false
+R1_INDEPENDENT_ORBIT_CENSUS PASS :: orbit_size_stabilizer=[[6,4],[12,2],[3,8]]; witnesses=21
+R2_INVARIANT_AND_ALPHABET PASS :: J_constant=True; J_distinct=True; alphabet_classes={"CNOT":1,"CNOT+TOF":3,"I_ONLY":0,"TOF":2,"X":0,"X+CNOT":1,"X+CNOT+TOF":3,"X+TOF":2}
+R3_RECEIPT_CACHE_BINDING PASS :: primary_source_receipt_cache_bound=True
+R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=10/10
+R5_CONTROLS PASS :: determinism=True; runtime_s=0.555<300; stdout_bytes=644<6000<150000
+TOTAL: PASS=6 FAIL=0

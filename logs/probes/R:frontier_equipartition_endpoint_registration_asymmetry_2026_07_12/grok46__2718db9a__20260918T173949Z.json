@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_equipartition_endpoint_registration_asymmetry_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_equipartition_endpoint_registration_asymmetry_2026_07_12.py",
+ "seed": 53189,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173949Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7dc446f55c8531a69000e4d44fcd474b7597aaa3a374363cd6d672540a1e261e",
+ "stdout_tail": "orst-phase zero is a=2|b| (the all-phase threshold)\n[12] [PASS] the best-phase zero is a=|b| (the open-window threshold)\n[13] [PASS] r=0 is the all-positive but fully degenerate special case\n[14] [PASS] r=1/2 has exact half-width pi/12\n[15] [PASS] the r=1/2 boundary has one exact zero and no negative eigenvalue\n[16] [PASS] the spectrum is distinct iff |b|>0 and sin(3*theta)!=0\n[17] [PASS] r=1/2 pins Q=2/3 on the positive branch\n[18] [PASS] r=1 has only the zero-width phase set and spectrum (3*a,0,0)\n[19] [PASS] r=1 positive-branch registration is doublet-degenerate\n[20] [PASS] sign branch at theta=pi/6 gives the exact supervisor spectrum\n[21] [PASS] theta=pi/6 is non-degenerate and Q=9/(13+4*sqrt(3))\n[22] [PASS] theta=pi/12 is a second exact non-degenerate sign-branch point\n[23] [PASS] the two non-degenerate sign-branch points have different exact Q\nRESIDUAL (declared-open): m_k=lambda_k^2 is this note's unadopted bridge element.\nRESIDUAL (declared-open): lambda_k>=0 is the positive-branch convention.\nRESIDUAL (declared-open): the three-distinct-value comparator is named, not thresholded.\nRESIDUAL (declared-open): the equipartition/dial law still selects neither endpoint.\nTOTAL: PASS=23 FAIL=0\nVERDICT: exact tied-section asymmetry verified conditionally: r=1 has no non-degenerate positive-branch registration, r=1/2 has an open one with Q=2/3, and the sign branch restores non-degeneracy at r=1 only by making Q phase-dependent. No premise is adopted and no audit status is set.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173950Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

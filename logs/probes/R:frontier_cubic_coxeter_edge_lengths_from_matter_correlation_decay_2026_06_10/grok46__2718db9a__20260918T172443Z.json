@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cubic_coxeter_edge_lengths_from_matter_correlation_decay_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cubic_coxeter_edge_lengths_from_matter_correlation_decay_2026_06_10.py",
+ "seed": 52283,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172443Z",
+ "elapsed_s": 44.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f88b13b1f8029958d8408b7f2bf1979199f621f7afbda34e2bb0bd9dc5bc5b55",
+ "stdout_tail": "rd clock-rate no-go + the registered scale-reference primitive -- ratios only here).\n       linearized DOF dictionary supplied here; dynamics provenance = named open (cited rows)\n\nTOTAL: PASS=9 FAIL=0\nVERDICT: the edge-length degrees of freedom of the geometric (Regge) rows admit a linearized\nratios-only matter-correlation dictionary on the framework's own complex, with\nell_hat(v) = Lambda(v)/kappa built on the ANALYTIC decay exponent (certified two-sidedly, no\nfits): (i) it calibrates in closed form to the landed flat assignment {1, sqrt2, sqrt3, 2} as\nm -> 0 with an O(m^2) deviation law; (ii) it responds to the landed s-form metric family by the\nEXACT law Lambda(v;h) = 2k asinh(m/(2 sqrt(k + v^T h v))) -- certified for all 15 classes x 10\ncomponents at finite h -- whose linearization is EXACTLY the geometric metric map (factor 1/2\nincluded) as m -> 0; (iii) the response lands exactly on the Regge metric sector (rank 10 ->\nim(M0)), the breathing directions unpopulated in the limit; (iv) the tick enters on equal\nfooting (c_t = c_s); (v) RATIOS ONLY -- the absolute scale kappa is the located clock-rate /\nscale residual, untouched. In this linearized dictionary the Regge rows' edge fields are\nrepresented by the matter sector's per-edge correlation structure. Remaining of the gap: the\ndynamics' embedding-independence provenance (the matter-induced action is not the H-action --\nlanded; the H-class selection theorem is landed) and the nonlinear completion.\nNo external-data value.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172527Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_epsstar_curve_pt_boundary_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_epsstar_curve_pt_boundary_2026_06_12.py",
+ "seed": 52493,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172813Z",
+ "elapsed_s": 18.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8eba185c2b19298d9afc3ffda94521cf576b91589ed1e31bacf93dbf24a3b84f",
+ "stdout_tail": "ad=1.297701724708e-02\nPASS: S2 collapse spread at T=0.20 is below frozen 2% :: spread=1.298e-02, tol=2.0e-02\nCOLLAPSE T=0.300 eps*(T)^2=2.746624424577 eps*(T)=1.657294308376 rel_spread=1.328682851331e-02\nPASS: S2 collapse spread at T=0.30 is below frozen 2% :: spread=1.329e-02, tol=2.0e-02\nCOLLAPSE T=0.400 eps*(T)^2=2.889531148609 eps*(T)=1.699862096939 rel_spread=1.531136135401e-02\nPASS: S2 collapse spread at T=0.40 is below frozen 2% :: spread=1.531e-02, tol=2.0e-02\nS2 measured max per-T spread=1.531136135401e-02; frozen bound=2.0e-02\n\nS3 EPSSTAR CURVE CHARACTERIZATION\nEPS_TABLE T=0.150 eps*(T)=1.612643530678 collapse_spread=1.250315999131e-02\nEPS_TABLE T=0.200 eps*(T)=1.624656494801 collapse_spread=1.297701724708e-02\nEPS_TABLE T=0.300 eps*(T)=1.657294308376 collapse_spread=1.328682851331e-02\nEPS_TABLE T=0.400 eps*(T)=1.699862096939 collapse_spread=1.531136135401e-02\nPASS: S3 eps*(T) is strictly increasing on T={0.15,0.2,0.3,0.4} :: eps*(T)=1.612643530678, 1.624656494801, 1.657294308376, 1.699862096939\nREGRESSION linear_eps: a=1.556668656138 b=0.350268386898 max_rel_residual=2.688034230500e-03\nREGRESSION eps2_T2: c=2.555130272657 d=2.098439570228 max_rel_residual=9.592103586251e-04\nREGRESSION better_characterization=eps*(T)^2 = c + d*T^2\nPASS: S3 better fixed-form regression characterization has max relative residual below 2e-3 :: better=eps*(T)^2 = c + d*T^2, best_residual=9.592e-04, linear_residual=2.688e-03, eps2_T2_residual=9.592e-04, tol=2.0e-03\n\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172832Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_epsstar_curve_pt_boundary_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

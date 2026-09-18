@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cost_identity_indicator_certificate_cycle731_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py",
+ "seed": 52461,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172741Z",
+ "elapsed_s": 310.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=45 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "929541c6cdd9e2acb1b709e93f24dc7b9aaf33b5947edbac7d4c0ed34f77217d",
+ "stdout_tail": "ctions\": 38, \"six_seed_cover\": [12, 13, 45, 50, 53, 56], \"slack_spectrum\": [0, 216], \"stored_forced_completion_five_cover_count\": 0, \"support_orbits\": 38, \"support_pieces\": 1792, \"value\": 23328}, \"gates\": {\"fail\": 0, \"pass\": 45}, \"identity\": {\"all_dissections_in_declared_class\": true, \"exhibited_costs\": [108, 114, 108, 128], \"exhibited_off_support_counts\": [0, 6, 0, 20], \"formula\": \"cost equals 108 plus off-support piece count\"}, \"local_sweep\": {\"declared_invariants\": [\"body-diagonal pairs\", \"largest spatial gap\", \"least spatial gap\", \"orbit size\", \"tick differences\", \"zero-gap pairs\"], \"scope\": \"the six named scalar invariants on the 57 carried piece orbits only\", \"separating_invariants\": []}, \"no_go_discipline\": {\"n5_certificate\": \"five resolution lines in primary cached stdout\", \"no_universal_no_go_claim_shipped\": true, \"scope\": \"fixed incidence-certificate family and six named invariants only\", \"status\": \"PASS\"}, \"row_census\": {\"charge_combinations\": {\"-2\": 22, \"0\": 136, \"2\": 26, \"4\": 1}, \"five_class_supports_swept\": 1906884, \"minimal_dependencies\": 185, \"row_classes\": 49, \"row_span\": 13}, \"schema\": \"physical-cost-identity-indicator-certificate-cycle731-v2\", \"status\": \"pass\", \"supplied_model\": {\"charge\": \"all corner pairs with spatial L1 separation greater than one\", \"physical_assembly_cell_simplex_bridge\": \"open\", \"physical_tick_admissibility_bridge\": \"open\", \"piece_class\": \"five-corner normalized-volume-one simplices only\", \"shape\": [1, 1, 1, 1]}}\nTOTAL: PASS=45 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173252Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

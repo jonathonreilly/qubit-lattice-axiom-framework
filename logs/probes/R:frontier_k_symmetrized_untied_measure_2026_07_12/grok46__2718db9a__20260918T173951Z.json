@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_k_symmetrized_untied_measure_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_k_symmetrized_untied_measure_2026_07_12.py",
+ "seed": 53191,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173951Z",
+ "elapsed_s": 23.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b4ec7409e9f987ef1f4a5b4d121970091895b096e441f8bbcef4e656a9b1d557",
+ "stdout_tail": "N DOMAIN, INDEFINITE ON ANOTHER NONEMPTY OPEN DOMAIN (MIXED-DOMAIN BOUNDED THEOREM).  Both required exact complex untied probes are PD; iI and 2P1 have exact negative principal minors; no global six-dimensional boundary claimed.\nT1: theta exchanges mu_W and mu_Wdag, so mu_sym and its raw Gram are exactly reflection-invariant/Hermitian; normalization exists only where Z_sym=Re Z_W is nonzero.\nT3: the prescription is one fixed non-Gaussian Berezin weight and a formal orbit ensemble, but its K-to-measure licensing and annealed-versus-quenched many-slice law remain first-class open residuals.\nT4: W direct-sum Wdag is a (3,3)-signature conjugation-closed carrier, but its K-paired Gaussian gives product rather than sum correlators; the natural K-real form is closed while the linear positive J half is not.\nDOUBLED-CARRIER COUNTING RESULT: uniform doubling doubles singlet and doublet alike, preserves the count-once fork comparator, and does not reinstall count-twice without an extra asymmetric grain rule.\nCHECK COUNT: PASS=19 FAIL=0\nPROPOSED CLAIM_SCOPE: bounded_theorem -- two-slice C3 circulant, registrable 5-element spanning set, exact mixed signature, with K-orbit-average licensing and many-slice transfer explicitly open.\nHOSTILE-AUDIT UNCERTAINTIES: full PSD-domain boundary; whether supplied readout K may act on the weight; law-versus-ensemble physical status; annealed/quenched extension; exclusive-sector transfer realization; equipartition/formation grain.\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174014Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_k_symmetrized_untied_measure_2026_07_12.txt against the .txt beside this log"
+  ]
+ }
+}

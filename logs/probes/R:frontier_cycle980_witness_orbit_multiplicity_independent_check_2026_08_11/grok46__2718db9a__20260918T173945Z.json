@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11.py",
+ "seed": 53185,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T173945Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e999debc11f5b05ec07c9cd9b4595f820a480184c9c3f0f8d74758fc6efe80fa",
+ "stdout_tail": "CYCLE980_WITNESS_ORBIT_MULTIPLICITY_INDEPENDENT_CHECK\nR0_PRIMARY_AST_TEXT_AND_PINS PASS :: source_reads=4<=6; sha_pins=True; primary_executed=false\nR1_INDEPENDENT_ORBIT_CENSUS PASS :: orbit_size_stabilizer=[[6,4],[12,2],[3,8]]; witnesses=21\nR2_INVARIANT_AND_ALPHABET PASS :: J_constant=True; J_distinct=True; alphabet_classes={\"CNOT\":1,\"CNOT+TOF\":3,\"I_ONLY\":0,\"TOF\":2,\"X\":0,\"X+CNOT\":1,\"X+CNOT+TOF\":3,\"X+TOF\":2}\nR3_RECEIPT_CACHE_BINDING PASS :: primary_source_receipt_cache_bound=True\nR4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=10/10\nR5_CONTROLS PASS :: determinism=True; runtime_s=0.555<300; stdout_bytes=644<6000<150000\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T173946Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

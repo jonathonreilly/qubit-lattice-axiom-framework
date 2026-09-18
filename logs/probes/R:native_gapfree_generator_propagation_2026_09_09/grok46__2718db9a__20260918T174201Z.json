@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gapfree_generator_propagation_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/native_gapfree_generator_propagation_2026_09_09.py",
+ "seed": 53321,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174201Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8751096d76359a1d77491f4c7d29d214d003bc885e509e5b10a5a93c0214f10e",
+ "stdout_tail": "TOTAL: PASS=44 FAIL=0\nper_element: small rational generator, local-resolvent and sign identities executed; no native operator evaluation\nper_site: analytical local-source construction only; no sitewise native array execution\nper_mode: Poisson sufficient-condition arithmetic executed; full native propagation remains uncomputed\nper_block: finite synthetic first-action Gram control executed; physical leakage is an uncomputed hypothesis\nlattice_wide: uniform analytical propagation statement is conditional on the stated ORIGINAL-domain leakage bound\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174202Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

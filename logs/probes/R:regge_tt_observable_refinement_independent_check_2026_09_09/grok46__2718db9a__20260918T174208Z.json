@@ -1,0 +1,35 @@
+{
+ "task": "R:regge_tt_observable_refinement_independent_check_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "regge",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/regge_tt_observable_refinement_independent_check_2026_09_09.py",
+ "seed": 53328,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174208Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "194497f0b43f92458e1066d9d1a66424b0ceaa5dbb218febe03d15de1c97b892",
+ "stdout_tail": "PASS literal-input-closure: inputs=6\nPASS independent-negative-fixed-schur: identity=1.80e-16; generalized=1.57e-16\nPASS shared-definition-affine-lift-fiber: fixtures=32; target=1.97e-15; gauge=5.41e-15\nPASS shared-definition-raw-versus-metric-refinement: comparisons=12; raw=3.00e-15; metric=5.12e-02\nPASS primary-cache-and-scope-binding: primary=8/0; bounded finite scope; physical/audit authority absent\nCHECKER_JSON: {\"audit_status\": \"unset\", \"claim_type\": \"bounded_theorem\", \"metric_gauge_fixtures\": 32, \"negative_fixed_schur\": true, \"physical_law_selected\": false, \"refinement_comparisons\": 12}\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_native_beta_no_half_attractor_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_native_beta_no_half_attractor_2026_05_30.py",
+ "seed": 52304,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172504Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "71358b644528acde3c1ad2aeb7c903ba0bbf75929dcc92ae452497ad08d80261",
+ "stdout_tail": "============================================================================\nFlavor supplied tanh^4 flow transit check\n============================================================================\nClaim boundary: supplied r(t)=tanh^4(t) path only; no native-beta exhaustion.\n\n  [PASS] r(0) = 0  (r(0)=0.000000000000)\n  [PASS] r(t) approaches 1 at large t  (r(20)=1.000000000000)\n  [PASS] beta_r(t)>0 at sample finite t=0.5  (beta=0.310446047891)\n  [PASS] beta_r(t)>0 at sample finite t=2.5  (beta=0.102154360791)\n  [PASS] t_star solves r(t_star)=1/2  (t_star=1.224226223839)\n  [PASS] beta_r(t_star)>0, so r=1/2 is transit not fixed  (beta_star=0.696621399498)\n\n============================================================================\nPASS=6 FAIL=0\n============================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172504Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

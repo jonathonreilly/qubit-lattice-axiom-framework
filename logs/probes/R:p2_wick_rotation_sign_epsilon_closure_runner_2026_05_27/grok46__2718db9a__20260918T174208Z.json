@@ -1,0 +1,35 @@
+{
+ "task": "R:p2_wick_rotation_sign_epsilon_closure_runner_2026_05_27",
+ "type": "runner-reexecution",
+ "lane": "p2",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/p2_wick_rotation_sign_epsilon_closure_runner_2026_05_27.py",
+ "seed": 53328,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T174208Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=60 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3daf31c19cb11cdf3f50c56712d8558cd6b0c9611b630e22b31cc12af8d7cb43",
+ "stdout_tail": "ocs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md)\n  [PASS (A)] Composition (C-Sc) present at docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md  (docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)\n  [PASS (A)] Composition (C-Aft) present at docs/ANOMALY_FORCES_TIME_THEOREM.md  (docs/ANOMALY_FORCES_TIME_THEOREM.md)\n  [PASS (A)] Composition (C-RP) present at docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)\n  [PASS (A)] Composition (C-Ext-runner) present at scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py  (scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py)\n  [PASS (A)] (P2 bridge) current C-Sc finite transfer-to-unitary bridge present  (checks R-STONE/RP transfer, U(t), and T^n = U(-in\u03c4))\n  [PASS (A)] Self-existence: P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md  (docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md)\n\n========================================================================================\nTOTAL: PASS=60 FAIL=0\nVERDICT: bounded P2 sign-`\u03b5` closure narrow theorem verified;\n         (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) plus finite spectral bridge \u2192 \u03b5 = -1\n         (Lorentzian Cl(3, 1) on the reconstructed real-time side).\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T174208Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

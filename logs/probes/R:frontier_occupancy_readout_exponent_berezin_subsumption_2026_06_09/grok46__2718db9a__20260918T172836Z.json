@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_occupancy_readout_exponent_berezin_subsumption_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_occupancy_readout_exponent_berezin_subsumption_2026_06_09.py",
+ "seed": 52516,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172836Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "83e39e6bad86e6a2707b97059e47a27edf307e21af2a36d4f9840c6e0149ddf9",
+ "stdout_tail": "ancy factor 2^(1-FS) = 4 -- a REGISTERED kill condition nobody chose (any quaternionic readout context must show factor 4 or the subsumption dies)  --  FS(Q_8) = -1.0; factor = 4\n  [PASS] named negative: Jones-index sqrt(2) matches NEITHER cell (|sqrt(2)-1| and |sqrt(2)-2| both >> the 2.2e-5 admixture bound) -- registered, not re-walkable\n\n----------------------------------------------------------------------------------------\nB9: net\n----------------------------------------------------------------------------------------\n  [PASS] No additional premise: the occupancy exponent is conditional under {open matter-realization gate, K/CPT-covariant registration}; MAXENT-R is not consumed; Jaynes-vs-Liouville is moot in the Berezin realization because the functional has no measure freedom\n  [PASS] #3400 independence INTACT: it governs the UNCONDITIONAL surface; this subsumption is conditional, not an unconditional derivation\n  [PASS] falsifiers: (i) a quaternionic readout context with factor != 4; (ii) staggered-gate closure contradicting the complex-mode realization; (iii) the earlier neutrino kill conditions where independently relevant\n  [PASS] what was NOT shown: an unconditional derivation (impossible); any change to the promotion of the open gate to a premise; any audit status\n\n========================================================================================\nSUMMARY: PASS=20 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172837Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

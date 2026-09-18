@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gleason_qubit_lattice_projection_narrow_2026_07_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py",
+ "seed": 52512,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2718db9a",
+ "started_utc": "20260918T172832Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "020e3430c135b86e6389b5eaa9e1ccd10864526d545da96a647df448381725df",
+ "stdout_tail": "[PASS] A1 raw trace-form needle\n[PASS] A1 physical Born/readout identification remains outside the claim\n[PASS] A2 finite-region Hilbert-space needle\n[PASS] A3 unique trace-form representation needle\n[PASS] A4 live axiom-memo link present\n[PASS] A4 historical axiom-memo link absent\n[PASS] A5 joint-presentation tensor-substrate bridge link present\n[PASS] A5 linked tensor-substrate dependency resolves with its bounded input surface\n[PASS] A6 forbidden readout vocabulary absent\n[PASS] A7 independent-audit status present\n[PASS] A7 retained status absent\n[PASS] B1 dimension threshold and load-bearing region restriction\n[PASS] B2 exact positive density matrix on C^4\n[PASS] B2 measure normalization\n[PASS] B2 exact orthogonal-resolution additivity\n[PASS] B2 pairwise projection additivity\n[PASS] B3 rank-1 projections span the full Hermitian space\n[PASS] B4 commuting-only span deficiency detected\n[PASS] B5 non-positive trace-one matrix violates measure positivity\nTOTAL: PASS=19 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172832Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

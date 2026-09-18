@@ -1,0 +1,16 @@
+[PASS] admission registry is absent
+[PASS] decision history is explicitly non-authoritative
+[PASS] historical admission count is zero
+[PASS] historical admission ids are empty
+[PASS] historical derivation-target map is empty
+[PASS] retired governance registry is absent
+[PASS] exact AC and theta obligations are live
+[PASS] foundation contains axiom plus three approved primitives
+[PASS] accepted ids equal foundation ids
+[PASS] open obligations are not supplied premises
+TOTAL: PASS=10 FAIL=0
+[PASS] historical note: Premise weight:** none
+[PASS] historical note: former governance-only premise channel is withdrawn
+[PASS] historical note: AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md
+[PASS] historical note: AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md
+HISTORICAL NOTE: PASS=4 FAIL=0

@@ -1,0 +1,42 @@
+PR #8147 head 9c364d1d6f; cache 36 stdout lines; statement sections: claim_scope, Theorem T1, Theorem T2, Theorem T3, Theorem T4, Theorem T5
+[DEFINITION] gain | claim_scope | the gain | declared under Premises and declared objects
+[EXCLUDED] halfspace | claim_scope,Theorem T1 | structural: the half-space, level 0 and level t >= 1
+[CACHE] T1 | Theorem T1 | T1 (B1) | cache stdout line 12: PASS: B1 T1: on the 5x5 transverse torus with 6 levels the covariance recursion equals the directed-path kernel formula at every pair of sit
+[DERIVED] T1prob | claim_scope,Theorem T1 | T1 level sums | sum over a level of G(x, z) = w^n sum_d n!/d! = (3w)^n = g^n (multinomial theorem, n <= 8): a probability kernel iff g = 1
+[CACHE] B1exec | Theorem T1 | B1 executed | cache stdout line 12: PASS: B1 T1: on the 5x5 transverse torus with 6 levels the covariance recursion equals the directed-path kernel formula at every pair of sit
+[DERIVED] T2var | claim_scope,Theorem T2 | T2's series | sum_z G(x, z)^2 on the level n below x = w^(2n) sum_a (n!/a!)^2 = g^(2n) P_n (exact, n <= 7); Var = sigma^2 sum_(n<t) g^(2n) P_n
+[DERIVED] T2a | claim_scope,Theorem T2 | T2(a) | sum_n g^(2n) P_n <= sum_n g^(2n) = 1/(1 - g^2) (P_n <= 1); P_n(d) = 0 for n < |d|_inf (difference walks enumerated for n <= 5), so Cov <= sum_(n >= m) g^(2n) = g^(2m)/(1 - g^2) (sympy)
+[CACHE] T2a-x | Theorem T2 | T2(a) executed (C3) | cache stdout line 16: PASS: C3 T2(a): at g = 1/2 the variance series is <= 4/3 and stationary to 20 digits between t = 100 and 200 (1.097378); the equal-level cov
+[CACHE] T2down | Theorem T2 | T2(a) downstream (C4) | cache stdout line 17: PASS: C4 T2(a): on the torus at g = 1/2 the covariance between level 6 and level 6+s is bounded by g^s times the largest variance for s = 1.
+[DERIVED] T2b | claim_scope,Theorem T2 | T2(b) constants | (2 pi)^-2 int_R2 e^(-(4n/(9 pi^2))|k|^2) dk = 9 pi/(16 n) (sympy); |phi|^2 <= 1 - (4/(9 pi^2))|k|^2 on a 201^2 grid; exactly for n <= 300: 1/(36 n) <= P_n <= 9 pi/(16 n) (largest n P_n/(9 pi/16) = 0.2338, smallest 36 n P_n = 12.000); (2R + 1)^2 <= 9n with R = (8n/9)^(1/2) for n < 10^4; summing with P_0 = 1 gives the variance bounds
+[CACHE] T2b-x | claim_scope | T2(b) executed (C1) | cache stdout line 14: PASS: C1 T2(b): 1/(36n) <= P_n <= 2/n for 1 <= n <= 200 (P_0 = 1); n P_n at n = 10, 100, 200: 0.403432, 0.412465, 0.412980
+[DERIVED] T2c | claim_scope,Theorem T2 | T2(c) | keep the last term of the variance series: Var >= sigma^2 g^(2(t-1)) P_(t-1) >= sigma^2 g^(2(t-1))/(36(t-1)) by T2(b)'s lower bound
+[CACHE] lev200 | claim_scope | executed to 200 | cache stdout line 15: PASS: C2 T2(b): at g = 1 the variance series (sigma^2 = 1) satisfies H_t/36 <= Var_t <= 1 + 2 H_{t-1} for t <= 200, and exceeds 3 at t = 200
+[CACHE] T2exec | Theorem T2 | C1 executed | cache stdout line 14: PASS: C1 T2(b): 1/(36n) <= P_n <= 2/n for 1 <= n <= 200 (P_0 = 1); n P_n at n = 10, 100, 200: 0.403432, 0.412465, 0.412980
+[DERIVED] pi2 | Theorem T2 | 9 pi/16 < 2 | 9 pi/16 = 1.767... < 2 (pi < 3.1416)
+[CACHE] T2exec2 | Theorem T2 | C2 executed | cache stdout line 15: PASS: C2 T2(b): at g = 1 the variance series (sigma^2 = 1) satisfies H_t/36 <= Var_t <= 1 + 2 H_{t-1} for t <= 200, and exceeds 3 at t = 200
+[CACHE] T2exec3 | Theorem T2 | C3 executed | cache stdout line 16: PASS: C3 T2(a): at g = 1/2 the variance series is <= 4/3 and stationary to 20 digits between t = 100 and 200 (1.097378); the equal-level cov
+[DERIVED] T3prec | Theorem T3 | precision | v = A v + xi with Cov(xi) = sigma^2 I gives Cov(v) = sigma^2 (I - A)^-1 (I - A)^-T, precision sigma^-2 (I - A)^T (I - A) (sympy)
+[CACHE] T3sym | claim_scope,Theorem T3 | T3(i) (D1) | cache stdout line 18: PASS: D1 T3(i): |1 - w sum e^{-ik_j}|^2 = 1 - 2w sum cos k_j + w^2 (3 + 2 sum_{i<j} cos(k_i - k_j)): block 09's axial + face-diagonal graph
+[DERIVED] T3coef | Theorem T3 | T3(i) coefficients | expanding |1 - w sum e^{-ik_j}|^2: constant 1 + 3w^2, coefficient -2w of each cos k_j and +2w^2 of each cos(k_i - k_j) (sympy); as precision-matrix entries these are -w on each axial neighbour and +w^2 on each face-diagonal x +- (e_i - e_j)
+[CACHE] T3ii | claim_scope,Theorem T3 | T3(ii) (D2) | cache stdout line 19: PASS: D2 T3(ii): at g = 1 the symbol along (u,u,u) is u^2 = K^2/9 and on the transverse plane it is |k|^4/36 + O(k^6) (quartic): parabolic
+[CACHE] T3iii | claim_scope,Theorem T3 | T3(iii) (D3) | cache stdout line 20: PASS: D3 T3(iii): the number of returning simple-random-walk paths of 2n steps equals C(2n,n) * sum_a (n!/a!)^2 for n <= 6 (odd lengths neve
+[DERIVED] T3green | Theorem T3 | the Green function's diagonal bound | (1/6)(1 + sum_(n>=1) (sqrt3/2)(2n+1)^(-1/2) 9 pi/(16n)) = 0.586111 < oo (terms ~ n^(-3/2)); C(2n,n)/4^n <= (sqrt3/2)(2n+1)^(-1/2) is T4's upper bound, P_n <= 9 pi/(16n) is T2(b)
+[EXCLUDED] T3last | Theorem T3 | by T2(a)/(b) (sourced above); 1/(4 pi r) is the standard far field of the lattice Green function (named, not claimed)
+[CACHE] T3exec | Theorem T3 | D4 executed | cache stdout line 21: PASS: D4 T3(iii): the static series 1 + sum_{n<=200} C(2n,n)/4^n P_n = 1.4834 < 152/100 (its sixth is the Green function's diagonal partial 
+[CACHE] T3exec2 | Theorem T3 | D3 executed | cache stdout line 20: PASS: D3 T3(iii): the number of returning simple-random-walk paths of 2n steps equals C(2n,n) * sum_a (n!/a!)^2 for n <= 6 (odd lengths neve
+[DERIVED] T4 | claim_scope,Theorem T4 | T4 | the projected difference walk is lazy: P_n = sum_k (C(n,k)/2^n)^2 = C(2n,n)/4^n (Vandermonde, exact n < 40); 4n a_n^2 increases and (2n+1) a_n^2 decreases (exact n < 60) from 1 and 3/4 at n = 1: 1/(4n) <= P_n^2 <= 3/(4(2n+1)); hence Var >= sum (2 sqrt n)^-1
+[CACHE] T4x | Theorem T4 | E1 | cache stdout line 22: PASS: E1 T4: 1/(4n) <= (C(2n,n)/4^n)^2 <= 3/(4(2n+1)) for n <= 400: square-root growth in one transverse dimension
+[DERIVED] T4var | Theorem T4 | T4 variance | the projected difference walk is lazy: P_n = sum_k (C(n,k)/2^n)^2 = C(2n,n)/4^n (Vandermonde, exact n < 40); 4n a_n^2 increases and (2n+1) a_n^2 decreases (exact n < 60) from 1 and 3/4 at n = 1: 1/(4n) <= P_n^2 <= 3/(4(2n+1)); hence Var >= sum (2 sqrt n)^-1
+[DEFINITION] T4g | Theorem T4 | the Z^2 gain | inline in the statement
+[DERIVED] T5a | claim_scope,Theorem T5 | T5(a) | w sum(a_i + c) = w sum a_i + c for all c forces 3w = 1, i.e. g = 1
+[EXCLUDED] T5cond | Theorem T5 | conditions on f
+[CACHE] T5b | claim_scope,Theorem T5 | T5(b) (E2) | cache stdout line 23: PASS: E2 T5(b): log f(s.a) = log f(1) - kappa |theta - phi|^2 + O(3) with kappa = f'(1)/(2f(1)): 1/4 for the Born overlap (variance 2/3 at g
+[DERIVED] T5bvar | claim_scope,Theorem T5 | T5(b) variance | the form -kappa sum_i |theta - theta_i|^2 has Hessian -6 kappa I: minimizer the average (gain one), variance 1/(6 kappa) = f(1)/(3 f'(1)); Born: kappa = 1/4, variance 2/3; e^{beta t}: kappa = beta/2, variance 1/(3 beta) (sympy)
+[CACHE] T5c | claim_scope,Theorem T5 | T5(c) (E3) | cache stdout line 24: PASS: E3 T5(c): block 07's real instance (P_xx = 3, edges -1/2) gives weight 1/6 per recorded neighbour and gain 1/2 with three predecessors
+[CACHE] T5c2 | claim_scope,Theorem T5 | T5(c) (E4) | cache stdout line 25: PASS: E4 T5(c): the six-neighbour precision 3I - sum S_j needed for the massless formation rule has symbol -3 at k = 0 (no static law), whil
+[EXCLUDED] refs | claim_scope,Theorem T3,Theorem T5 | references and names
+[EXCLUDED] words | claim_scope,Theorem T2,Theorem T3,Theorem T4,Theorem T5 | wording and conditions (number words; the level-0 plane)
+[CONTROL] T2's Reading paragraph (interpretation, outside the statement text) quotes the g = 1 variance 2.040, 2.714, 3.002, 3.289 at t = 10, 50, 100, 200; the exact series sum_(n<t) P_n gives t=10: 2.04033, t=50: 2.71406, t=100: 3.00171, t=200: 3.28884; the runner's C2 prints 2.040, 2.714, 3.001, 3.288
+[COVERAGE] 191 numeric tokens in the statement text; uncovered 0
+SUMMARY: 38 items over claim_scope + 5 theorem sections (191 numeric tokens, 0 uncovered): cache-sourced 18, runner-checked (not printed) 0, derived here from the note's formulas 13, definitions 2, excluded 5; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none

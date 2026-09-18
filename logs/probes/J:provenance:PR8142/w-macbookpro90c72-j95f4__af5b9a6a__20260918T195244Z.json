@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8142",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block11-three-",
+ "worker": "w-macbookpro90c72-j95f4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8142/provenance.py",
+ "seed": 61164,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "af5b9a6a",
+ "started_utc": "20260918T195244Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "20 theorem numbers, 0 unsourced"
+ },
+ "review": "20 theorem numbers sourced in cache, runner, or note; cubics isolate t* in (4,5) and rho in (6,7); sextic sign-changes in (1,2) and (6,7); no HIT",
+ "what": "PR #8142 ([physics-loop] admissibility-induced-law block11 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915; git show origin/physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915:<note>. Create probes/work/pr8142/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8142/<script>.py\"",
+ "stdout_sha256": "78a79cb433d11b2f6ec7d110fe145f33f9bffd2671122e4398d3d57a2b018aa9",
+ "stdout_tail": "e: \"On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r): (X1) the two-body no | OK\n(1,2) | isolating interval of sigma_1 | cache: PASS: C3 X3: s has exactly two positive roots, in (1,2) and (6,7), and the exact enclosure of psi over each refined isolating interval lies  | OK\n8/85 | leading coefficient of psi | note: `p \u2261 \u03c8(q) := \u2212(8/85) q\u2075 + (116/255) q\u2074 + (196/255) q\u00b3 + (82/85) q\u00b2 + (121/255) q + 356/255 (mod s(q))`, | OK\n356/255 | constant term of psi | note: `p \u2261 \u03c8(q) := \u2212(8/85) q\u2075 + (116/255) q\u2074 + (196/255) q\u00b3 + (82/85) q\u00b2 + (121/255) q + 356/255 (mod s(q))`, | OK\n10^{-30} | refined isolating width | cache: per_block: executed \u2014 the lex Groebner basis, the factorization of h, the sextic's isolating intervals refined to 10^-30, the exchange psi(s | OK\nV_1 | p^3+q^3+4r^3 | cache: PASS: B1 the five pattern values V_1..V_5 match the definition; Z_3 takes 5 distinct values over the 216 triples | OK\nV_5 | 3r^2(p+q) | cache: PASS: B1 the five pattern values V_1..V_5 match the definition; Z_3 takes 5 distinct values over the 216 triples | OK\n8(t-1)^3 | E_1 factor on p=q | cache: PASS: B4 X2a: on p = q, E_1 = -8(t-1)^3(t^3-3t^2-6t-1), E_2 = 0, W_2^3 - W_1 W_3^2 = 8(t-1)^3(t^3-3t^2-6t-1); the cubic has three real roots | OK\nIDENTITY | cubic_t(4)=-9 cubic_t(5)=19 | OK\nIDENTITY | cubic_rho(6)=-1 cubic_rho(7)=72 | OK\nIDENTITY | sextic(1)=18 sextic(2)=-137 sextic(6)=-3137 sextic(7)=10818 | OK\nSUMMARY: 20 theorem numbers, 0 unsourced\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j95f4",
+  "at_utc": "20260918T195244Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

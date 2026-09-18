@@ -1,0 +1,170 @@
+[
+ {
+  "id": "S:tight-sibling-violation",
+  "type": "search",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "default_box": "6x6x8",
+  "command": "python3 probes/lib/violate.py {SEED} {SECONDS} {A} {B} {L} A",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "max cost = \\((?:[1-9]|\\d\\d+), ",
+  "parse": {
+   "best": "done best=(.*)"
+  },
+  "what": "seeded climb from the extremal realization Z_A for a processed site whose cheapest tree costs more than 0 at c = 1 (unrooted, rooted). A HIT refutes block 32's conjecture c* = 1 and raises the tree route's floor. Vary --seed, --box (5x5x8 .. 8x8x10), --minutes (20-120). To start from Z_B, use S:tight-sibling-violation-B."
+ },
+ {
+  "id": "S:tight-sibling-violation-B",
+  "type": "search",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "default_box": "6x6x9",
+  "command": "python3 probes/lib/violate.py {SEED} {SECONDS} {A} {B} {L} B",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "max cost = \\((?:[1-9]|\\d\\d+), ",
+  "parse": {
+   "best": "done best=(.*)"
+  },
+  "what": "as S:tight-sibling-violation, seeded from Z_B."
+ },
+ {
+  "id": "S:tight-sibling-pairs",
+  "type": "search",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "default_box": "5x5x8",
+  "command": "python3 probes/lib/tightpairs.py {SEED} {SECONDS} {A} {B} {L}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "min\\(v\\) = 0:",
+  "parse": {
+   "best": "done restarts=\\d+ best=(.*)"
+  },
+  "what": "random-start climb maximizing min(v(w1), v(w2)) over sibling processed predecessors of a processed site; a HIT (value 0) is a tight sibling pair, the open case of block 33's lemma; then run S:tight-sibling-violation from it. Vary seed, box, minutes."
+ },
+ {
+  "id": "S:structural-duplication",
+  "type": "search",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "default_box": "7x7x8",
+  "command": "python3 probes/lib/structural.py {SEED} {SECONDS} {A} {B} {L} A",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "\\(hard, vmax, tight\\) = \\((?:[1-9]|\\d\\d+), |\\(hard, vmax, tight\\) = \\(\\d+, (?:[1-9]|\\d\\d+),",
+  "parse": {
+   "best": "done best=(.*)"
+  },
+  "what": "climb with duplication moves (a band of marks copied beside itself) for a processed site with all predecessors tight (hard > 0) or a rooted value above 0 (vmax > 0); either is a HIT."
+ },
+ {
+  "id": "S:family-constant-climb",
+  "type": "search",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "default_box": "5x5x8",
+  "command": "python3 probes/lib/climb_cstar.py {SEED} {SECONDS} {A} {B} {L}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "c\\* (?:[2-9]\\b|1\\d\\b|\\d+/\\d+ = 1\\.[0-9]*[1-9])",
+  "parse": {
+   "best": "done restarts=\\d+ best=(.*)"
+  },
+  "what": "hill-climb on the family's constant c*(config) (block 32); a HIT is any value above 1 (e.g. '5/4 = 1.250'). Vary seed, box up to 7x7x10, minutes 30-180."
+ },
+ {
+  "id": "S:restricted-admissibility",
+  "type": "search",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "default_box": "5x5x8",
+  "command": "python3 probes/lib/restricted_admissibility.py {SEED} 300 {A} {B} {L}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?m)^HIT:",
+  "parse": {
+   "summary": "SUMMARY: (.*)"
+  },
+  "what": "random realizations: is there one where every tree with the budget c = 2 has a node with two processed children (restricted minimum > 0 while the unrestricted is <= 0)? A HIT kills block 33's p >= 2921 route. 300 realizations per run; vary seed and box."
+ },
+ {
+  "id": "X:sixaxis-formation-threshold",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/scan_formation_sixaxis.py 256 4000 {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "parse": {
+   "lines": "(?m)^ *p=.*$"
+  },
+  "what": "block 28's memory scan of the six-axis formation law at (p,1,2): pass the p values with --extra '9 10 10.5 11 11.5 12'; the memory fraction at T locates the strength (block 28: p in (10.5, 11)). Extend to larger L (512), longer T, and other lines by editing q, r in the script header (record the edit in the log's command)."
+ },
+ {
+  "id": "X:sixaxis-static-threshold",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/scan_static_sixaxis.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "parse": {
+   "lines": "(?m)^ *p=.*$"
+  },
+  "what": "block 28's static six-axis scan (arguments as the script header states); located p in (3.6, 3.7) at (p,1,2); extend sizes and lines."
+ },
+ {
+  "id": "X:sphere-static-threshold",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/scan_static_sphere.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "parse": {
+   "lines": "(?m)^ *beta=.*$"
+  },
+  "what": "block 28's static sphere scan; located beta in (0.66, 0.72); extend sizes."
+ },
+ {
+  "id": "X:sphere-torus-memory",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_torus_msd.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "parse": {
+   "ratios": "ratio to sigma\\^2/L\\^2: ([0-9.]+)"
+  },
+  "what": "block 34's angular-diffusion estimator: --extra 'beta L T seeds' (e.g. '6 32 100000 8'); reports D_1/(sigma^2/L^2) at several lags (block 34: 1.34, 1.14, 1.06, 1.02 at beta 6/12/24/48, ~1/|m|^2). Fill the (beta, L) table: beta in {3,4,6,8,12,16,24,48}, L in {16,32,64}."
+ },
+ {
+  "id": "X:sphere-kernel",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_kernel.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "parse": {
+   "shells": "mean ratio ([0-9.]+)"
+  },
+  "what": "block 35's kernel measurement: --extra 'beta L T T0 seed' (e.g. '12 256 4000 2000 7'); the equal-level structure factor over the linearized kernel by |k| shell (normalization c(beta): 0.83-0.97 at beta 6-24) and the cross-level ratios against phi(k)^s. Extend to beta in {3,4,8,16,48}, L = 512, longer T0."
+ },
+ {
+  "id": "X:sphere-plane-decay",
+  "type": "scan",
+  "lane": "admissibility-induced-law",
+  "tier": 1,
+  "command": "python3 probes/lib/sphere_plane_decay.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "parse": {
+   "last": "t= *\\d+ +\\|m\\|=[0-9.]+ +m_z=[-0-9.]+"
+  },
+  "what": "block 26's nonlinear plane run: --extra 'beta L T' (e.g. '6 512 40000'); records |m| along the run; the question is a plateau (none seen to 2e4 levels at beta <= 24); extend T to 1e5-4e5 and L to 1024 at beta 12, 24, 48; log the full table."
+ }
+]

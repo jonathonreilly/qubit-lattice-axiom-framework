@@ -1,0 +1,30 @@
+[
+ {
+  "id": "J:falsifier-implementation",
+  "type": "judgment",
+  "lane": "any",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "For a chosen note under docs/ with a '## Falsifiers' section: implement ONE falsifier as an independent script (floating point allowed, a different method from the runner), put it under probes/work/<note-stub>/, and run it through run_probe with --extra 'python3 probes/work/<stub>/<script>.py'. Print a line 'HIT: ...' if the falsifier fires and a final 'SUMMARY: ...' line. Never edit the note or the runner. Choose notes from open science PRs first."
+ },
+ {
+  "id": "J:refuting-reimplementation",
+  "type": "judgment",
+  "lane": "any",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "For a chosen note: reimplement its central computation from the note's statement alone, without reading the runner, in a different method; compare the numbers; print 'HIT: ...' on disagreement and a 'SUMMARY: ...' line; run through run_probe with --extra as above. Disagreement is reported, not resolved."
+ }
+]

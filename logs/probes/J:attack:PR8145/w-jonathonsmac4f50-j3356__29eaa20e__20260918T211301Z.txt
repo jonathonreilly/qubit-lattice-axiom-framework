@@ -1,0 +1,13 @@
+[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=2: done  (0s)
+[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=3: done  (0s)
+[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=4: done  (0s)
+[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=5: done  (0s)
+[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=6: done  (0s)
+[box 3x2x2] V=12, E=20, P=11, cycle coordinates 9; N=2: done  (0s)
+[box 3x2x2] V=12, E=20, P=11, cycle coordinates 9; N=3: done  (1s)
+[box 3x2x2] V=12, E=20, P=11, cycle coordinates 9; N=4: done  (15s)
+[box 3x3x2] V=18, E=33, P=20, cycle coordinates 16; N=2: done  (28s)
+[(1)] fiber representation vs direct link sums: 1080225 (box, N, beta, J) values, largest relative difference 1.33e-15 (orientation included)
+[(2)] 391837608 (K, S) comparisons over one- and two-plaquette chains: largest W(J)/(R(S) W(K)) = 1.000000, largest W(K)/(R(S) W(J)) = 1.000000 (both must be <= 1); smallest conserved W(J) = 5.810e-10
+[time] 28s
+SUMMARY: attack pattern (f) NORMALIZATION - Part II's current representation (1) recomputed by brute force (tree-gauge link sums with an N-ary FFT against the enumerated plaquette-current fibers) on the cube (N = 2..6), 2x1x1 (N = 2..4) and 2x2x1 (N = 2) at three couplings: largest difference 1.3e-15; comparison (2) at 391837608 (K, S) pairs, tightest ratios 1.0000 and 1.0000 (<= 1); all conserved W(J) > 0; 0 failures; attack does not fire

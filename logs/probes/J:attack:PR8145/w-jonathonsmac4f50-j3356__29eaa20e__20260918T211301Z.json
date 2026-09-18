@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8145",
+ "type": "judgment",
+ "lane": "clock-history-field-20260915",
+ "worker": "w-jonathonsmac4f50-j3356",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8145/attack_fourier_current_normalization.py",
+ "seed": 65981,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29eaa20e",
+ "started_utc": "20260918T211301Z",
+ "elapsed_s": 28.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (f) NORMALIZATION - Part II's current representation (1) recomputed by brute force (tree-gauge link sums with an N-ary FFT against the enumerated plaquette-current fibers) on the cube (N = 2..6), 2x1x1 (N = 2..4) and 2x2x1 (N = 2) at three couplings: largest difference 1.3e-15; comparison (2) at 391837608 (K, S) pairs, tightest ratios 1.0000 and 1.0000 (<= 1); all conserved W(J) > 0; 0 failures; attack does not fire"
+ },
+ "review": "Attack pattern (f) normalization on Part II's positive current representation: W(J) = Z_J/Z_0 recomputed by brute force as tree-gauge link-clock sums (all conserved currents at once by an N-ary FFT) against the enumerated plaquette-current fibers with Poisson-summed Fourier coefficients, on the cube (N = 2..6), the 2x1x1 box (N = 2..4) and the 2x2x1 slab (N = 2) at beta = 0.4, 0.8, 1.6: the two agree to 1.3e-15 over 1,080,225 values (orientation symmetry included), the comparison R(S)^-1 W(K) <= W(J) <= R(S) W(K) holds at 391,837,608 (K, S) pairs over all one-plaquette chains with coefficients -2..2 and all two-plaquette chains (tightest ratio exactly 1, attained), and every conserved W(J) is positive (smallest 5.8e-10); no normalization defect found; the history and charge-floor parts are not re-tested here.",
+ "what": "PR #8145 ([physics-loop] clock-history-field: bounded_theorem, bounded): attack FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/clock-history-field-20260915; git show origin/physics-loop/clock-history-field-20260915:<note>. Create probes/work/pr8145/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8145/<script>.py\"",
+ "stdout_sha256": "59c949e052c33bdb9b0840c5f46e31e6f665f86dfde96665f1fd437642c691ff",
+ "stdout_tail": "[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=2: done  (0s)\n[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=3: done  (0s)\n[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=4: done  (0s)\n[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=5: done  (0s)\n[box 2x2x2] V=8, E=12, P=6, cycle coordinates 5; N=6: done  (0s)\n[box 3x2x2] V=12, E=20, P=11, cycle coordinates 9; N=2: done  (0s)\n[box 3x2x2] V=12, E=20, P=11, cycle coordinates 9; N=3: done  (1s)\n[box 3x2x2] V=12, E=20, P=11, cycle coordinates 9; N=4: done  (15s)\n[box 3x3x2] V=18, E=33, P=20, cycle coordinates 16; N=2: done  (28s)\n[(1)] fiber representation vs direct link sums: 1080225 (box, N, beta, J) values, largest relative difference 1.33e-15 (orientation included)\n[(2)] 391837608 (K, S) comparisons over one- and two-plaquette chains: largest W(J)/(R(S) W(K)) = 1.000000, largest W(K)/(R(S) W(J)) = 1.000000 (both must be <= 1); smallest conserved W(J) = 5.810e-10\n[time] 28s\nSUMMARY: attack pattern (f) NORMALIZATION - Part II's current representation (1) recomputed by brute force (tree-gauge link sums with an N-ary FFT against the enumerated plaquette-current fibers) on the cube (N = 2..6), 2x1x1 (N = 2..4) and 2x2x1 (N = 2) at three couplings: largest difference 1.3e-15; comparison (2) at 391837608 (K, S) pairs, tightest ratios 1.0000 and 1.0000 (<= 1); all conserved W(J) > 0; 0 failures; attack does not fire\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3356",
+  "at_utc": "20260918T211338Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

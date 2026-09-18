@@ -1,0 +1,35 @@
+{
+ "task": "R:probe_hk_cube_perron_l2_2026_05_06",
+ "type": "runner-reexecution",
+ "lane": "probe",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/probe_hk_cube_perron_l2_2026_05_06.py",
+ "seed": 73265,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2774fc2",
+ "started_utc": "20260918T231425Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8956bedc0c243af7a80c717bfaa17a5b3ac77e2ddf7c9504235ca784d2cfbc55",
+ "stdout_tail": " inverse-closed: ((1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (-1, 0))\n[PASS] N=6 definitions, symmetry, positivity, eigenpair and invariances: none\n[PASS] N=6 binary64 agrees with stored high-precision estimate: P_N=0.5223243115373621; residual=1.428e-15; gap=4.959281438651\n[PASS] N=7 definitions, symmetry, positivity, eigenpair and invariances: none\n[PASS] N=7 binary64 agrees with stored high-precision estimate: P_N=0.5223243150756923; residual=1.980e-15; gap=4.959281441341\n[PASS] N=8 definitions, symmetry, positivity, eigenpair and invariances: none\n[PASS] N=8 binary64 agrees with stored high-precision estimate: P_N=0.5223243151037391; residual=6.852e-16; gap=4.959281441355\n[PASS] twelve-decimal N=6,7,8 stability claim is false: rounded values=[0.522324311537, 0.522324315076, 0.522324315104]\n[PASS] normal scalar is sign and scale invariant: quadratic expectation divides by the squared norm\n[PASS] normal reconstruction cannot read answer keys: reachable readers=[]\n[PASS] high-precision import path has no module-scope NumPy dependency: module-scope NumPy import lines=[]\n[PASS] source/import firewall: repo-local imports=[]\n[PASS] note has no source-note dependency links: non-runner markdown targets=[]\n[PASS] no literal True is used as check evidence: offending lines=[]\n[PASS] finite theorem has no physical/action/thermodynamic conclusion: forbidden theorem terms=[]\n[PASS] claim-surface tags are formal only: no action, topology, or limiting tag supplied\nSUMMARY: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/probe_hk_cube_perron_l2_2026_05_06.txt against the .txt beside this log"
+  ]
+ }
+}

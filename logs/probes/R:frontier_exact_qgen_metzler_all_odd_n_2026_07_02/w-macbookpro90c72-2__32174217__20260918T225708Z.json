@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_exact_qgen_metzler_all_odd_n_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_exact_qgen_metzler_all_odd_n_2026_07_02.py",
+ "seed": 72228,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225708Z",
+ "elapsed_s": 29.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=109 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "71882fb2e890557437ab33c8e6819142d8310f1b5d93a403613661901fe0c8fa",
+ "stdout_tail": "ASS even_closed_form_N12_j7: direct-minus-closed=0\nPASS even_closed_form_N12_j8: direct-minus-closed=0\nPASS even_closed_form_N12_j9: direct-minus-closed=0\nPASS even_closed_form_N12_j10: direct-minus-closed=0\nPASS even_closed_form_N12_j11: direct-minus-closed=0\nPASS even_closed_form_N14_j1: direct-minus-closed=0\nPASS even_closed_form_N14_j2: direct-minus-closed=0\nPASS even_closed_form_N14_j3: direct-minus-closed=0\nPASS even_closed_form_N14_j4: direct-minus-closed=0\nPASS even_closed_form_N14_j5: direct-minus-closed=0\nPASS even_closed_form_N14_j6: direct-minus-closed=0\nPASS even_closed_form_N14_j7: direct-minus-closed=0\nPASS even_closed_form_N14_j8: direct-minus-closed=0\nPASS even_closed_form_N14_j9: direct-minus-closed=0\nPASS even_closed_form_N14_j10: direct-minus-closed=0\nPASS even_closed_form_N14_j11: direct-minus-closed=0\nPASS even_closed_form_N14_j12: direct-minus-closed=0\nPASS even_closed_form_N14_j13: direct-minus-closed=0\nPASS even_j2_metzler_violation_N6: L_2=-2/3 < 0\nPASS even_j2_metzler_violation_N8: L_2=-1 < 0\nPASS even_j2_metzler_violation_N10: L_2=-1 - sqrt(5)/5 < 0\nPASS even_j2_metzler_violation_N12: L_2=-2 < 0\nPASS even_j2_metzler_violation_N14: L_2=-1/(2*sin(pi/7)**2) < 0\nSUMMARY PASS=109 FAIL=0 TOTAL=109\nSUMMARY ODD_CLOSED_FORM verified_N=5,7,9,11,13 all_j; odd_j2_negative_N=5..41\nSUMMARY EVEN_SCOPE convention=residues_-N/2+1..N/2; closed_form_verified_N=6,8,10,12,14 all_j; sampled_j2_negative_N=6,8,10,12,14; theorem=even_N>=4_j2_negative_under_this_convention\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

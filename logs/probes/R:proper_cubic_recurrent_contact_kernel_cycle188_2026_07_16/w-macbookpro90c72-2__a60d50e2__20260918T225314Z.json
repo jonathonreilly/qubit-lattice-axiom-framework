@@ -1,0 +1,32 @@
+{
+ "task": "R:proper_cubic_recurrent_contact_kernel_cycle188_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "proper",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/proper_cubic_recurrent_contact_kernel_cycle188_2026_07_16.py",
+ "seed": 71994,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a60d50e2",
+ "started_utc": "20260918T225314Z",
+ "elapsed_s": 13.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6a1bf05f363b73e2f30a2d5769b62f03b60d6c44ccc588adf8f0f623c25f918f",
+ "stdout_tail": "AUTHORITY AND PREDECESSOR\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/proper_cubic_recurrent_contact_kernel_cycle188_2026_07_16.py\", line 908, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/proper_cubic_recurrent_contact_kernel_cycle188_2026_07_16.py\", line 659, in main\n    and sha256(CYCLE187_NOTE) == FROZEN_CYCLE187_NOTE_SHA,\n        ~~~~~~^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/proper_cubic_recurrent_contact_kernel_cycle188_2026_07_16.py\", line 86, in sha256\n    return hashlib.sha256(path.read_bytes()).hexdigest()\n                          ~~~~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/REACHABLE_RECURRENT_CONTACT_CRITICAL_PAIR_CYCLE187_NOTE_2026-07-16.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225328Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

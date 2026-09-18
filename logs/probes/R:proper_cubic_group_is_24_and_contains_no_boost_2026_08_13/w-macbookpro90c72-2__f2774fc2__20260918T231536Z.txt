@@ -1,0 +1,33 @@
+external_scientific_inputs: only the current minimal-axiom Lattice sentence is source-bound; no fitted, observational, or literature values are used
+package_local_integrity_reads: the proposed note is read only for claim, trace, and no-go-discipline consistency
+measure_boundary: exact integer and rational finite-dimensional linear algebra only
+negative_scope: only canonical diag(1,R) embeddings are excluded from the declared nontrivial time-space-mixing boost class
+PASS: source-lattice current minimal axioms supply the cubic fixed-site symmetry sentence
+PASS: source-scope the note fixes a site, displacement action, and affine action about that site
+PASS: signed-census the signed-permutation enumeration has 48 unique matrices
+PASS: neighbor-characterization every enumerated signed permutation preserves the six-neighbor set
+PASS: proper-count the determinant-plus-one point group has order 24
+PASS: group-identity the identity is in the proper point group
+PASS: group-closure all 24 squared products remain in the group
+PASS: group-inverses every transpose is an in-group two-sided inverse
+PASS: euclidean-form every proper cubic matrix satisfies R^T R=I_3
+PASS: indefinite-intersection exactly 8 elements preserve diag(1,1,-1) and 16 do not
+PASS: indefinite-witnesses identity preserves D while the displayed proper y-rotation does not
+PASS: embedded-lorentz all canonical embeddings preserve eta and have determinant one
+PASS: embedded-time-axis all canonical embeddings fix time and have zero time-space mixing
+PASS: universal-no-boost none of the 24 canonical embeddings is a nontrivial declared boost
+PASS: boost2-lorentz the exact rational 1+1 block preserves diag(1,-1)
+PASS: boost2-proper-time-oriented the exact rational block has determinant one and positive time component
+PASS: boost4-classification the 3+1 extension is a nontrivial boost under the declared predicate
+PASS: boost-outside-point-group the exact boost lies outside all zero-mixing canonical embeddings
+PASS: no-go-packet the landed note contains the complete N1-N8 discipline record
+PASS: n5-certificate-source the note carries the exact five forensic resolution lines
+PASS: trace-contract the machine trace uses frontier discovery, null target, and a next action
+PASS: claim-boundary the note excludes an embedding-free or dynamical Lorentz no-go
+PASS: claim-type the source uses the bounded-theorem claim type without authoring an audit verdict
+per_element: all 24 proper-cubic matrices and their canonical spacetime embeddings are checked exactly
+per_site: the point action is proved at one arbitrary fixed lattice site and transported by the supplied translations
+per_mode: every canonical embedding fixes the displayed time axis, while no momentum or dynamical mode is asserted
+per_block: one exact rational boost block is Lorentzian and lies outside the zero-mixing embedded point group
+lattice_wide: checked and not executed — no lattice-wide dynamics, continuum limit, or Lorentz restoration is claimed
+TOTAL: PASS=23 FAIL=0

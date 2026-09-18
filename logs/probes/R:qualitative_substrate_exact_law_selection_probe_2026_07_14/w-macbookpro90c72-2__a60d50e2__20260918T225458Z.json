@@ -1,0 +1,31 @@
+{
+ "task": "R:qualitative_substrate_exact_law_selection_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "qualitative",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/qualitative_substrate_exact_law_selection_probe_2026_07_14.py",
+ "seed": 72098,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a60d50e2",
+ "started_utc": "20260918T225458Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e9afafe886be0d7df11d7af3c4e7fae6c237a9d0fd751806a61dfa642c21cac9",
+ "stdout_tail": "\nPASS basis neutrality theta=1.04719755 sample=3\nPASS partial-swap prediction theta=1.04719755\nPASS unitarity and covariance leave a continuous physical angle\nPASS three-qubit local generator Hermitian eta=0.0\nPASS equivalent-neighbour covariance eta=0.0\nPASS three-qubit basis neutrality eta=0.0 sample=0\nPASS three-qubit basis neutrality eta=0.0 sample=1\nPASS three-qubit basis neutrality eta=0.0 sample=2\nPASS three-qubit basis neutrality eta=0.0 sample=3\nPASS three invariant spectral levels eta=0.0\nPASS positive ordered gaps eta=0.0\nPASS three-qubit local generator Hermitian eta=0.3333333333333333\nPASS equivalent-neighbour covariance eta=0.3333333333333333\nPASS three-qubit basis neutrality eta=0.3333333333333333 sample=0\nPASS three-qubit basis neutrality eta=0.3333333333333333 sample=1\nPASS three-qubit basis neutrality eta=0.3333333333333333 sample=2\nPASS three-qubit basis neutrality eta=0.3333333333333333 sample=3\nPASS three invariant spectral levels eta=0.3333333333333333\nPASS positive ordered gaps eta=0.3333333333333333\nPASS eta zero has scale-free gap ratio two\nPASS eta one-third has scale-free gap ratio one\nPASS clock rescaling and energy shift cannot remove interaction ratio\nPASS deterministic identity unique successor initial=0\nPASS deterministic toggle unique successor initial=0\nPASS deterministic identity unique successor initial=1\nPASS deterministic toggle unique successor initial=1\nPASS determinism removes sampling but not exact-law identity\nRESULT PASS=402 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225458Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

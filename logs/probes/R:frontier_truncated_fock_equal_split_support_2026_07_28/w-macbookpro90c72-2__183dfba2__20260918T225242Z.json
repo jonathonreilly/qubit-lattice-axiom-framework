@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_truncated_fock_equal_split_support_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_truncated_fock_equal_split_support_2026_07_28.py",
+ "seed": 71962,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "183dfba2",
+ "started_utc": "20260918T225242Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "90ea4b58e61fe28f5328d98a052997fbe7ad4cd3a6407dba2e03adfd0a7ed110",
+ "stdout_tail": "ing mutation is detected :: {'source_number': 2, 'target_number': 1, 'number_commutator_frobenius': 1.4142135623730951}\nPASS the certificate distinguishes the truncated slice from complete Fock space :: {'truncated_columns': 6776, 'complete_columns': 57344, 'complete_number_layers': (0, 1, 2, 3, 4, 5, 6)}\nFINAL_JSON {\"audit_input_paths\": [\"scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py\"], \"certificate_failures\": [], \"claim_scope\": \"two-cell n_left,n_right<=2 conditional bookkeeping support\", \"equal_split\": {\"status\": \"supplied_not_derived\", \"weights\": [1.0, 1.0]}, \"full_fock_claim\": false, \"layer_rows\": [{\"active_channels\": 0, \"dimension\": 7, \"mask_count\": 1, \"maximum_off_layer_amplitude\": 0.0, \"number\": 0, \"transpose_residual\": 0.0, \"unitarity_residual\": 0.0, \"weight_max\": 0.0, \"weight_min\": 0.0}, {\"active_channels\": 6, \"dimension\": 42, \"mask_count\": 6, \"maximum_off_layer_amplitude\": 0.0, \"number\": 1, \"transpose_residual\": 0.0, \"unitarity_residual\": 0.0, \"weight_max\": 0.12589921612871377, \"weight_min\": 0.12589921612871377}, {\"active_channels\": 24, \"dimension\": 105, \"mask_count\": 15, \"maximum_off_layer_amplitude\": 0.0, \"number\": 2, \"transpose_residual\": 0.0, \"unitarity_residual\": 2.0396099332657776e-16, \"weight_max\": 0.12042616790869441, \"weight_min\": 0.12042616790869441}], \"note_path\": \"docs/TRUNCATED_FOCK_EQUAL_SPLIT_SUPPORT_NOTE_2026-07-28.md\", \"runtime_seconds\": 0.091047, \"summary\": {\"fail\": 0, \"pass\": 10}, \"support_certificate_passed\": true}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225243Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'FINAL_JSON {\"audit_input_paths\": [\"scripts/frontier_truncated_fock_equal_split_i' vs cache 'FINAL_JSON {\"audit_input_paths\": [\"scripts/frontier_truncated_fock_equal_split_i'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_truncated_fock_equal_split_support_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "pure",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04.py",
+ "seed": 72018,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a60d50e2",
+ "started_utc": "20260918T225338Z",
+ "elapsed_s": 76.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "18aa7a517d0b375c7b0fe89677533458192ffa8119f7bbb3855ce9335eb00ec0",
+ "stdout_tail": "es to 1/L^2 (0.31, naive fixed-reference ratio 2.2, also not calibrated sigma), and the quoted E(2)/E(1) = 4.1(9) at L = 6 is numerically close to 4; confinement is not decided\nPASS F3 [historical arithmetic only] QUOTED ELECTRIC STRUCTURE FACTORS. The quoted largest S_T(k) over the zone FALLS from 1.49 at L = 4 to 1.08 at L = 12, a factor 1.38, compared arithmetically to site factor 27; this is not a plaquette-order measurement; the per-site measure at (0,pi,pi) falls 0.0152 -> 0.0005, factor 30.4 against the 1/N_s factor 27.0 of a liquid; quoted max_k S_L(k) <= 4e-32\nPASS F4 [historical arithmetic only] QUOTED TRANSVERSE FORM COMPARISON. The quoted S_T(k_min) = 0.35, 0.30, 0.29, 0.34, 0.38 (two components) is FLAT from k = pi/2 to pi/6, varying 25 per cent with no trend, where S_T proportional to omega_k = c|k| would fall by a factor 2.73 (lattice 2 sin(k/2)); with omega = 0.77 k^2 and the exact S_L = 0 of A and C these are finite arithmetic values, not a proof of the z=2 phase or a Maxwell exclusion; the quantum/readout bridge is not supplied\nSUMMARY: finite supplied-model censuses and spectra; only the 4x2x2 zero-winding class has the stated connectivity. Complete Python reptation path certificates do not certify every embedded C update. The executed finite sampler witnesses retain their protocol; all larger production rows are unverified historical arithmetic. No thermodynamic gap, confinement, order, stiffness or Maxwell conclusion follows.\nTOTAL: PASS=28 FAIL=0 SKIP=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225455Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "task": "R:protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10",
+ "type": "runner-reexecution",
+ "lane": "protocol",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py",
+ "seed": 72015,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a60d50e2",
+ "started_utc": "20260918T225335Z",
+ "elapsed_s": 3.5,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8dfbbe45feec07b58feac159f08abea941e2d58bf588ad130ab55eeb4a1065a0",
+ "stdout_tail": "ect, and is dispersive  --  support=(1, 1, 1) disp=1.05e+01 defect=0.00e+00\n  [PASS] identity flat, single mover dispersive, and dropping the anticommutation sign is detectable  --  id=0.00e+00 s1=11.995 reorder_gap=2.00\n  [PASS] the three filters jointly retain the four-member necessary-condition survivor set  --  survivors=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']\n  [PASS] ordered filters attribute each rejection to its first-failing stage (defect/support/dispersion)  --  defect=['P_MIX4', 'P_PAIRFLAT', 'P_STAIR'] support=['P_AXIS', 'P_DIAG'] dispersion=['P_CANCEL']\n\nSource-note quote pins and claim-boundary checks\n================================================================================================\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py\", line 1002, in <module>\n    parent_norm = _norm(_read(parent_path))\n                        ~~~~~^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py\", line 996, in _read\n    with open(path, encoding=\"utf-8\") as handle:\n         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225338Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=30 FAIL=0' and this run printed none",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

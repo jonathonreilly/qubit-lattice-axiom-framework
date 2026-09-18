@@ -1,0 +1,37 @@
+{
+ "task": "R:frontier_fierz_singlet_selector_weight_not_partition_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_fierz_singlet_selector_weight_not_partition_2026_06_08.py",
+ "seed": 72288,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225808Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=14, FAIL=0",
+   "PASS=14 FAIL=0"
+  ],
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f500a66b0dc3a9feb91a268bc7725a81ae78a574b48fd5faffa582c0b3413b50",
+ "stdout_tail": " 1.\nper_block: checked \u2014 the candidate register-not-read partition is built block by block as P_1 = diag(1,0,0), P_2 = diag(0,1,1); D = sum_k P_k M P_k preserves each diagonal block verbatim, and each block projector fails to commute with the generator basis (commutator dev > 0.1, Schur).\nlattice_wide: checked and not executed \u2014 this runner is finite algebra on one internal SU(3) color factor with N_c = 3; it builds no lattice, no volume and no extent over which a lattice-wide statement could be taken, and the whole demotion is carried by PASS=14, FAIL=0 at that scale.\n==============================================================================\nTOTAL: PASS=14 FAIL=0\n==============================================================================\nSCOPE (narrow route-demote): the kappa_EW = 0 route VIA register-not-read on the\n  color trace is demoted on three finite-algebra route grounds: the singlet\n  projector is a CONTINUOUS twirl (not a central-sector partition map; the\n  only such partition on the irreducible triplet is trivial), kappa_EW is a\n  WITHIN-CHANNEL WEIGHT (weight-leak, the r-dial move), and the channel\n  lives on the same-site current trace, not the gauge\n  link (category).  The kappa_EW gate itself REMAINS OPEN (other routes are not\n  foreclosed); the exact Fierz algebra is untouched; ADM-1 is untouched; this note\n  sits beside (does not duplicate) the existing retained_no_go family and the rconn\n  open-gate note.  No new axiom/import; no PDG value consumed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225810Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

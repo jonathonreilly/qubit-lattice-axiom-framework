@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.py",
+ "seed": 71955,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "183dfba2",
+ "started_utc": "20260918T225235Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4eee402edd862599dd3f7adad16b1fb3177ed746e771fe0fc73dc4f18119c10f",
+ "stdout_tail": "al section for every gauge background)\nRESIDUAL (declared-open): NOT discharged and explicitly out of scope: the gauge-side residual theta_gauge (winding/multi-plaquette account) is untouched; beyond-bilinear matter terms; the rotation-channel coupling's gauge-covariant dressing (not constructed); and the discrete orientation bit itself. The theta(b) admitted content after this block is: the K-reality premise (shared with AC_phi_lambda) + the orientation bit, at the bilinear matter level.\nRESIDUAL (declared-open): gauge-group generality: the identity chain det M = det(eps M eps) = det(M+) = conj(det M) is exact for any matrix satisfying the premise, and the premise was verified on U(1), SU(2), and SU(3) seeded backgrounds; the exact argument is still the epsilon-Hermiticity premise, not a gauge-group-specific numerical fit.\n\nTOTAL: PASS=10 FAIL=0\nVERDICT: at the bilinear matter level the determinant-readout bridge discharges on the staggered realization: the matter measure's only phase object is arg det (first-power Berezin, reproven), and eps-Hermiticity makes det(D(U)+A) REAL for every tested gauge background in the enumerated epsilon-graded K-real bilinear classes (site-diagonal hw-mixing classes and anti-Hermitian one-link taste classes), with both violation classes computed to phase. The mass-side strong-CP admission reduces, at this level, to the K-reality premise (shared with AC_phi_lambda) plus the discrete orientation bit. Nothing is retired; no audit status is set.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225235Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_theta_mass_side_epsilon_hermiticity_reality_2026_06_11.txt against the .txt beside this log"
+  ]
+ }
+}

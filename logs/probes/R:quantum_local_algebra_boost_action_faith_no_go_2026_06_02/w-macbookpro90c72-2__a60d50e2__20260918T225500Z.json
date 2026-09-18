@@ -1,0 +1,35 @@
+{
+ "task": "R:quantum_local_algebra_boost_action_faith_no_go_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "quantum",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py",
+ "seed": 72100,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a60d50e2",
+ "started_utc": "20260918T225500Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6e44a42750557a1ee3e22663609c2d589bbd36840abe80a05836bc2695998c02",
+ "stdout_tail": "]=0 -> dynamics does NOT pick out the faithful boost\n[PASS] C.2a scalar boost S(eta)=e^{eta c} I_2 is a valid 1-param rep on the qubit vector space (S(a)S(b)=S(a+b))\n[PASS] C.2b scalar boost is non-faithful; local algebra alone cannot pick faithful-vs-scalar\n[PASS] C.3a spin-1/2 numerator m I - i sigma.p has NONZERO traceless part (irreducibly spin-1/2, not a disguised scalar)\n[PASS] C.3b FAITHFUL boost S=exp(eta.sigma/2) covaries the spin-1/2 kernel: S^dag (p.sigmabar) S = (Lp).sigmabar\n[PASS] C.3c SCALAR boost S=I FAILS to covary the spin-1/2 kernel (the kernel excludes the scalar)\n[PASS] C.4 Quantum gives local algebra and no-scalar-IF-operator-frame, but not boost-action faith by itself\n\n======================================================================\nSCORECARD: PASS=18 FAIL=0\nper_element: PASS | the executed Pauli generators satisfy every local Clifford relation and give a faithful irreducible real-rank-eight image\nper_site: PASS | the executed orbital-times-spin site Hamiltonian commutes with all three onsite bivector boosts and therefore selects none\nper_mode: PASS | both faithful Weyl chirality modes close while the scalar K=0 mode fails in both Lorentzian and Euclidean signatures\nper_block: PASS | the relativistic kinetic-kernel block covaries under the faithful boost and fails under the scalar boost\nlattice_wide: PASS | checked and not executed \u2014 the complete local C2 and two-orbital operator blocks were tested, but no spatial lattice boost action was defined\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225501Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

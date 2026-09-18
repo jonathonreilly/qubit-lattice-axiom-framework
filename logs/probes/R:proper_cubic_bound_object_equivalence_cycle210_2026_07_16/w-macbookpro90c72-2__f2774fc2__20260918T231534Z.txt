@@ -1,0 +1,35 @@
+PASS note preserves attribution, conditions, and scope :: ()
+PASS scalar-band perturbation gives m_disp = -3 tan(beta/2) exactly :: -3*tan(beta/2)
+PASS one momentum derivative couples the scalar only to the vector sector with norm 1/3 :: 0.3333333333333334
+PASS held-out beta obeys the analytic curvature formula :: {'numeric': 0.5304263738731437, 'analytic': 0.5304258513857456}
+PASS scalar/even/vector projectors are orthogonal and complete :: 
+PASS beta=-0.2 SU(6) rest phase equals analytic dispersion mass :: {'alpha': -0.6030120487690547, 'rest_phase': 0.3010040162563516, 'dispersion_mass': 0.3010048750541433, 'hessian': [[3.322205329114869, -8.326672684688674e-11, 0.0], [-8.326672684688674e-11, 3.3222053293924247, 2.7755575615628914e-11], [0.0, 2.7755575615628914e-11, 3.3222053288928244]]}
+PASS beta=-0.2 molecular coin and contact correction are unitary :: 
+PASS beta=-0.3 SU(6) rest phase equals analytic dispersion mass :: {'alpha': -0.9102169625246557, 'rest_phase': 0.4534056541748852, 'dispersion_mass': 0.4534062488564741, 'hessian': [[2.205527609211444, 8.326672684688674e-11, -4.163336342344337e-11], [8.326672684688674e-11, 2.205527608933888, -8.326672684688674e-11], [-4.163336342344337e-11, -8.326672684688674e-11, 2.205527609211444]]}
+PASS beta=-0.3 molecular coin and contact correction are unitary :: 
+PASS beta=-0.4 SU(6) rest phase equals analytic dispersion mass :: {'alpha': -1.224390319578052, 'rest_phase': 0.6081301065260174, 'dispersion_mass': 0.6081305771788832, 'hessian': [[1.6443836858837102, -1.3877787807814457e-10, 8.326672684688674e-11], [-1.3877787807814457e-10, 1.644383685439621, 5.551115123125783e-11], [8.326672684688674e-11, 5.551115123125783e-11, 1.6443836863277994]]}
+PASS beta=-0.4 molecular coin and contact correction are unitary :: 
+PASS there are exactly 24 proper-cubic frames :: 24
+PASS stream, molecular coin, and two-body contact law are exact in all cubic frames :: 2.993591951565353e-16
+PASS coin-basis representation changes neither molecular phases nor contact spectrum :: 
+PASS coin-then-stream and its time-origin cyclic schedule have identical quasiphases :: 
+PASS the cubic construction retains generic complex non-Clifford phases :: (0.73, 1.11, -0.6030120487690547, -0.2, 0.3010040162563516, -0.9102169625246557, -0.3, 0.4534056541748852, -1.224390319578052, -0.4, 0.6081301065260174)
+PASS the onsite collision gives an exact law-derived persistent object :: {'norm': 1.0000000000000027, 'contact': 1.0000000000000058, 'close': 1.0000000000000058, 'variance': 0.0, 'boundary': 0.0}
+PASS interaction deletion disperses the same prepared pair :: {'norm': 1.0000000000000004, 'contact': 0.06195374719625834, 'close': 0.21251195627381356, 'variance': 26.93577812630389, 'boundary': 0.44434649417132216}
+PASS one strict update moves each carrier by one edge and relative support by at most two :: [[0, 0, 0], [0, 0, 2], [0, 0, -2], [0, 1, 1], [0, 1, -1], [0, 2, 0], [0, -2, 0], [0, -1, 1], [0, -1, -1], [1, 0, 1], [1, 0, -1], [1, 1, 0], [1, -1, 0], [2, 0, 0], [-2, 0, 0], [-1, 0, 1], [-1, 0, -1], [-1, 1, 0], [-1, -1, 0]]
+PASS the full six-dimensional equal-direction domain, not one prepared vector, stays bound :: {'norm': 0.9999999999999998, 'contact': 0.9999999999999999, 'close': 0.9999999999999999, 'variance': 0.0, 'boundary': 0.0}
+PASS beta=-0.2 forced inertia recovers the independent curvature mass :: Response(beta=-0.2, force=2e-05, acceleration=-6.615316205366018e-05, measured_mass=0.30232870779142784, expected_mass=0.3010040162563516, norm=1.000000000000006, band_probability=0.9999996758786694, boundary=4.516013494972448e-13, displacement=-0.2091850956397785)
+PASS beta=-0.3 forced inertia recovers the independent curvature mass :: Response(beta=-0.3, force=2e-05, acceleration=-4.4039482657555494e-05, measured_mass=0.4541379415266307, expected_mass=0.4534056541748852, norm=1.0000000000000027, band_probability=0.9999999813422457, boundary=4.3554246010262777e-13, displacement=-0.1408159569051044)
+PASS beta=-0.4 forced inertia recovers the independent curvature mass :: Response(beta=-0.4, force=2e-05, acceleration=-3.295130059119063e-05, measured_mass=0.6069563155679174, expected_mass=0.6081301065260174, norm=1.0000000000000175, band_probability=0.9999999982770125, boundary=4.301146015381231e-13, displacement=-0.10518108291124406)
+PASS pre/post/symmetric force schedules share the weak-force mass limit :: {'pre': 0.6070369898878416, 'post': 0.6068756639743144, 'symmetric': 0.6069563155679174}
+PASS force deletion removes acceleration without deleting the molecular band :: Response(beta=-0.4, force=0.0, acceleration=2.1404826325044655e-18, measured_mass=inf, expected_mass=0.6081301065260174, norm=1.0000000000000178, band_probability=1.0000000000000362, boundary=4.3008912725927293e-13, displacement=-7.105427357601002e-15)
+PASS one rest-phase scalar gives species-independent weak-lapse acceleration :: [0.9956299185669313, 0.998391812330302, 1.0019360053695798]
+PASS beta=-0.2 held-out two-molecule composition adds rest phase and inertia :: {'rest': 0.6020080325127032, 'mass': 0.6020084615189608}
+PASS beta=-0.3 held-out two-molecule composition adds rest phase and inertia :: {'rest': 0.9068113083497704, 'mass': 0.9068116040839699}
+PASS beta=-0.4 held-out two-molecule composition adds rest phase and inertia :: {'rest': 1.2162602130520348, 'mass': 1.2162604466725166}
+PASS one or two decoupled spectator records leave molecular mass data unchanged :: 
+PASS source charge follows the local rest generator rather than archive multiplicity :: [0.3010040162563516, 0.4534056541748852, 0.6081301065260174]
+PASS the internal excitation gap remains distinct from the aligned rest/inertial scalar :: {'gaps': [0.2, 0.3, 0.4], 'masses': [0.3010040162563516, 0.4534056541748852, 0.6081301065260174]}
+PASS cubic locality and unitarity do not force the rest/inertial alignment :: [(-0.2, -0.6030120487690547, 0.3010040162563516), (-0.3, -0.9102169625246557, 0.4534056541748852), (-0.4, -1.224390319578052, 0.6081301065260174)]
+PASS 33 FAIL 0
+RESULT PROPER_CUBIC_BOUND_OBJECT_CONDITIONAL_EQUIVALENCE

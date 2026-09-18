@@ -1,0 +1,51 @@
+
+Protocol-realization model: six decorated movers and cubic rotations
+================================================================================================
+  [PASS] six decorated movers unitary at site (64) and across the Bloch grid  --  site=0.00e+00 bloch=2.22e-16
+  [PASS] cross-axis letters anticommute at site level (including inverse letters)  --  max|{S_a,S_b}|=0.00e+00
+  [PASS] S_i^2 equals the independently built cell translation, which is central  --  square=0.00e+00 central=0.00e+00
+  [PASS] forward mover unitary and the inverse letter equals its adjoint  --  unit=0.00e+00 adjoint=0.00e+00
+  [PASS] twenty-four proper cubic rotations, closed, transitive on the six NN offsets  --  |G|=24 orbit=[0, 1, 2, 3, 4, 5] distinct=24
+
+Factor covariance modulo local frames implies zero modulus defect
+================================================================================================
+  [PASS] decorated mover is a local-frame conjugate of the exactly covariant bare shift, is not itself translation-covariant, and has zero modulus defect  --  bare_cov=0.00e+00 recon=0.00e+00 dec_noncov_gap=2.00 modulus_defect=0.00e+00
+  [PASS] an arbitrary local-frame decoration preserves zero modulus defect  --  defect=3.33e-16
+  [PASS] the frame decoration is modulus-blind (|F| equals |F0| entrywise)  --  max||F|-|F0||=2.22e-16
+  [PASS] a site-dependent axis-1 Givens rotation is unitary and NN-supported but has positive modulus defect  --  unit=1.11e-16 support=(0, 1, 0) defect=0.783
+  [PASS] a covariant-modulus diagonal that translations sign-flip has zero defect but is not frame-covariant  --  defect=0.00e+00 frame_inv=2.22e-16 flip=0.00e+00 gap=2.00
+  [PASS] the undecorated bare shift also has zero modulus defect (the functional is not spuriously positive)  --  defect=0.00e+00
+
+Rotation transitivity and the axis-faithful condition force all-axis support
+================================================================================================
+  [PASS] the parity availability rule B is rotation-covariant and varies at slot 0  --  covariant=True slot0_in_V=True
+  [PASS] rotation transport carries slot 0 to all six NN directions, and the covariant parity rule varies on exactly that orbit  --  orbit0=[0, 1, 2, 3, 4, 5] V(B)=[0, 1, 2, 3, 4, 5]
+  [PASS] control: a single-slot rule varies only at slot 0 and is NOT rotation-covariant  --  V(B')=[0] covariant=False
+  [PASS] the all-axis mover set (S_1,S_2,S_3) has full constituent-factor support  --  support=(1, 1, 1)
+  [PASS] a same-axis mover pair (S_1,S_1) supports only its own axis  --  support=(1, 0, 0)
+
+Decorated-word normal form, support law, and dispersiveness dichotomy
+================================================================================================
+  [PASS] exact normal form W = sigma * prod T_cell^m * residual movers (all 9330 words, len<=5)  --  words=9330 mismatches=0
+  [PASS] a wrong central exponent m_i is caught on L=12 but aliases to identity on L=4 (m_i is load-bearing)  --  caught_on_L12=True aliases_on_L4=True
+  [PASS] support law on the aliasing-free L=6 ring: axis-i occupied iff net_i != 0 (all 9330 words)  --  mismatches=0
+  [PASS] dispersiveness dichotomy: Bloch char-poly flat (<1e-8) iff net displacement is (0,0,0) (all 9330 words)  --  anomalies=0
+  [PASS] five named length-6 witnesses: exact normal form, net, sign, and +-I / dispersive value  --  failed_witnesses=0
+  [PASS] P_CANCEL separates the filters: zero modulus defect, full support, composite identity, flat  --  defect=0.00e+00 support=(1, 1, 1) identity=0.00e+00 disp=2.84e-14
+  [PASS] P_WEIGHT (net (2,1,1)) has full support, zero modulus defect, and is dispersive  --  support=(1, 1, 1) disp=1.05e+01 defect=0.00e+00
+  [PASS] identity flat, single mover dispersive, and dropping the anticommutation sign is detectable  --  id=0.00e+00 s1=11.995 reorder_gap=2.00
+  [PASS] the three filters jointly retain the four-member necessary-condition survivor set  --  survivors=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']
+  [PASS] ordered filters attribute each rejection to its first-failing stage (defect/support/dispersion)  --  defect=['P_MIX4', 'P_PAIRFLAT', 'P_STAIR'] support=['P_AXIS', 'P_DIAG'] dispersion=['P_CANCEL']
+
+Source-note quote pins and claim-boundary checks
+================================================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py", line 1002, in <module>
+    parent_norm = _norm(_read(parent_path))
+                        ~~~~~^^^^^^^^^^^^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py", line 996, in _read
+    with open(path, encoding="utf-8") as handle:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md'

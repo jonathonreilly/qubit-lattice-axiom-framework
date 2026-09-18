@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_exercise_spin_statistics_fs_admission_located_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py",
+ "seed": 72258,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225738Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 17   FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "30d2e240ac22868c688cd5fe26130643b9969191b6bec9cbd131771122d83107",
+ "stdout_tail": "ing, Record silent on sign\n  [PASS] source requires a separate bridge from formal F=(-1)^Q to a physical central-sector datum  --  formal grading and physical central-sector interpretation are distinguished\n  [PASS] exchange sign is guarded as within-sector data; Record supplies no within-sector data\n  [PASS] source states this is a location theorem/boundary, not global route closure  --  prevents runner from hard-coding global FS closure\n\n[BLOCK 4] Literature comparator + route-boundary guards\n  [PASS] literature is labeled comparison, not independently rederived theorem step  --  avoids hard-coded literature closure\n  [PASS] multi-loop graded-net route remains live/open in the source boundary  --  the unrefuted opening must not be converted into a closed no-go\n  [PASS] continuum migration remains separate frontier rather than current-surface closure  --  emergent Lorentz route is not consumed as a static-baseline proof\n  [PASS] no new axiom and no audit verdict are asserted\n\n[BLOCK 5] Source-scope guards: route map is non-closing\n  [PASS] source note limits load-bearing scope to checked Cl(3), topology, and Record-boundary facts\n  [PASS] source note says route portfolio is not a closure theorem\n  [PASS] source note forbids CAR/spin-statistics closure and new axioms\n\n========================================================================================\nSCORECARD:  PASS = 17   FAIL = 0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

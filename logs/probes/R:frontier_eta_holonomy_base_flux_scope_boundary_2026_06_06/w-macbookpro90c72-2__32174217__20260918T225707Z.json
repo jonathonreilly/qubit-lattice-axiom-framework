@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py",
+ "seed": 72227,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225707Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ff35ada3cdbb6a0b803adb0ded46d398bfe44d71c797d106629614552a1adca5",
+ "stdout_tail": "SS] curvature is invariant under deterministic Z_2 gauge in plane 12 -- values=[-1]\n[PASS] uniform eta curvature in plane 13 -- values=[-1]\n[PASS] curvature is invariant under deterministic Z_2 gauge in plane 13 -- values=[-1]\n[PASS] uniform eta curvature in plane 23 -- values=[-1]\n[PASS] curvature is invariant under deterministic Z_2 gauge in plane 23 -- values=[-1]\nC. rectangular base-loop area law\n[PASS] holonomy equals (-1)^area in plane 12 -- 1x1:-1, 1x2:1, 2x3:1, 3x3:-1, 4x4:1\n[PASS] holonomy equals (-1)^area in plane 13 -- 1x1:-1, 1x2:1, 2x3:1, 3x3:-1, 4x4:1\n[PASS] holonomy equals (-1)^area in plane 23 -- 1x1:-1, 1x2:1, 2x3:1, 3x3:-1, 4x4:1\n[PASS] 1x1 and 1x2 base loops have different eta holonomy -- 1x1=-1, 1x2=1\nD. scope boundary for the old braid-invariant no-go\n[PASS] unit plaquette boundary is a closed 1-cycle in the base graph -- boundary over GF(2) is zero\n[PASS] nearest-neighbor Z^3 graph supplies no plaquette 2-cell by itself -- C2(graph)=0 unless a cubical/fillable complex is added\n[PASS] runner does not assert the compared detour swaps are the same B_2(Z^3) class -- that remains an explicit UD_2 homotopy bridge obligation\n[PASS] conditional implication is isolated -- if a future UD_2 bridge identifies different-area swaps, eta holonomy cannot be a braid-class character\n\nSCORECARD: PASS=18 FAIL=0\nVERDICT: exact support for the base eta Z_2 area-flux theorem; the closed PR2207 braid-invariant no-go remains unsupported without an explicit UD_2 homotopy bridge.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225708Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

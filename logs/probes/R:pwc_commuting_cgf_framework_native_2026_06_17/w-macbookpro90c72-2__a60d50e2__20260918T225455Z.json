@@ -1,0 +1,35 @@
+{
+ "task": "R:pwc_commuting_cgf_framework_native_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "pwc",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/pwc_commuting_cgf_framework_native_2026_06_17.py",
+ "seed": 72095,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a60d50e2",
+ "started_utc": "20260918T225455Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "239965469afb4b04d5a35befc5a0c917df914cff229c553e80bc52af581816af",
+ "stdout_tail": "finite state\n[PASS] first derivative carries the fixed source sign: d_x W(0) = -E[X]\n       d_x=-46/17, -E[X]=-46/17\n[PASS] first derivative in second source: d_y W(0) = -E[Y]\n       d_y=-36/17, -E[Y]=-36/17\n[PASS] second mixed derivative gives connected covariance\n       d_xy=673/289, cov=673/289\n[PASS] second same-source derivative gives variance\n       d_xx=604/289, var=604/289\n[PASS] third derivative has (-1)^3 cumulant sign\n       d_xxx=11334/4913, -kappa=11334/4913\n[PASS] third mixed derivative has (-1)^3 connected cumulant sign\n       d_xxy=-1137/4913, -kappa=-1137/4913\n\n[B] trace form equals the joint spectral-measure form\n[PASS] commuting trace formula reduces exactly to the joint spectral measure\n[PASS] normalized and unnormalized formulas differ only by the -log Tr(rho) shift\n\n[C] falsifiers: the logarithm and connected form are load-bearing\n[PASS] dropping log gives the raw moment, not the connected covariance\n       raw d_xy=137/17, E[XY]=137/17, connected=673/289\n[PASS] moving log inside/linearizing loses the connected second cumulant\n       linearized d_xy=0, connected=673/289\n\n[D] source-boundary checks\n[PASS] source note cites this finite proof runner\n[PASS] source note makes textbook references parallel, not load-bearing\n[PASS] source note keeps rho_ref and noncommuting ordering out of scope\n\n========================================================================\nTOTAL: PASS=14 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225456Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

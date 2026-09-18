@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_exercise_staggered_dirac_reassessment_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_exercise_staggered_dirac_reassessment_2026_06_06.py",
+ "seed": 72258,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225738Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 18   FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4dec45ff7ae6c30f6ef02ec28b1ebdac6af63dcb918c7c9903dce080eb3456f3",
+ "stdout_tail": "ma_nu} = -2 delta (Clifford)\n  [PASS] Hamming-degree grading of the cube-forms = 1,3,3,1 (= substep-3 taste/doubler pattern)  --  {0: 1, 1: 3, 2: 3, 3: 1}\n  [PASS] => the Dirac/gamma structure is the qubit's OWN geometric-algebra action (not imported)\n\n[BLOCK 4] Route portfolio (synthesis)\n  [PASS] route: R1 chirality-selector enumerator (open atom)  --  one-link enumerator over on-site sign omega(x): >=2 survivors => eps free selector (admission); =1 => forcing lemma\n  [PASS] route: R2 FS statistics admission  --  record fermion-parity grading as a Tier-A `FS` candidate (substep-1 retained_no_go); seek a derived graded-locality/spin-statistics selector\n  [PASS] route: R3 signature/time hidden import  --  name the Euclidean-signature/Hodge-metric input the Kahler-Dirac d-delta consumes; not in {Lattice,Quantum,Record}\n  [PASS] route: R4 eta-cohomology forcing (verified lead 1)  --  ship the Z2-1-cochain/Clifford-2-cocycle uniqueness as the eta-forcing (cohomological)\n  [PASS] route: R5 Kahler-Dirac = Cl(3) action (verified lead 2)  --  ship the qubit-as-Cl(3)-spinor-module Dirac-structure reproof\n  [PASS] NO route requires a new axiom (forbidden outcome avoided)\n  [PASS] highest-value first artifact = R1 chirality-selector enumerator (decides eps: selector vs forced)\n\n========================================================================================\nSCORECARD:  PASS = 18   FAIL = 0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

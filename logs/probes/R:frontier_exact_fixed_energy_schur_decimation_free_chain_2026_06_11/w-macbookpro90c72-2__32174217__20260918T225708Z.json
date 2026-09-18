@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_exact_fixed_energy_schur_decimation_free_chain_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_exact_fixed_energy_schur_decimation_free_chain_2026_06_11.py",
+ "seed": 72228,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225708Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5a63c966733cbcbb5302cf44837a76f51c9b0194bfb964bc42424c3d738a9d72",
+ "stdout_tail": "ge sectors, continuum limits, c-functions.\nStatuses are pipeline-derived; the audit lane grades.\nD1 EXACTNESS: PASS max retained-resolvent error=7.216e-16; m=0,E=0 singular: zero-mode-projected Moore-Penrose check\nD2 FORM CLOSURE: PASS nonzero structure at E=0 is diagonal + coarse NN only for m!=0; h_eff diag=m+2t^2/m, coarse NN=t^2/m, so hopping convention gives t'=-t^2/m; m=0.3: diag=6.96666666666667, NN=3.33333333333333, NNN=0.000e+00 | m=1.5: diag=2.83333333333333, NN=0.666666666666667, NNN=0.000e+00; projected m=0 ranges={}\nD3 ONE-STEP MAP: PASS validated exact forms on disjoint grids: uniform=m+2t^2/m, NN=t^2/m, staggered m'=0; same-form Hamiltonian representation uses t'=-t^2/m and E'=-m-2t^2/m. Fixed diagnostics: m=0 is singular critical with m'=0 regulator/projected checks (0.000e+00,0.000e+00); m->inf gives |NN/diag|->0 with derivative 1.000e-06. errors infer=2.220e-16, validate=1.776e-15\nD4 OBSERVABLE INVARIANCE: PASS G[0,2](0) retained-site invariance max error=8.327e-17; samples=(t=0.481997,m=1.80166,err=3.5e-18); (t=0.761784,m=0.834218,err=8.3e-17); (t=0.940235,m=1.78603,err=0.0e+00); (t=1.77274,m=0.871243,err=8.3e-17); (t=1.24102,m=1.67166,err=1.4e-17)\nD5 ITERATION CONSISTENCY: PASS two-step vs direct-by-4: h error=5.551e-17, resolvent error=2.082e-17\nD6 CONTROLS: PASS m=0 preserves zero staggered component in projected E=0 and finite-E regulator; drop-Schur-control retained-resolvent error=2.739e+00 (>1e-6 means control fails as intended)\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225708Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

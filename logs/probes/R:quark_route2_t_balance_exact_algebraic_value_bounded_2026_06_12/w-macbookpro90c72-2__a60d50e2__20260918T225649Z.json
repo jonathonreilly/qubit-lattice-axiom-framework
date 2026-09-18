@@ -1,0 +1,35 @@
+{
+ "task": "R:quark_route2_t_balance_exact_algebraic_value_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "quark",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/quark_route2_t_balance_exact_algebraic_value_bounded_2026_06_12.py",
+ "seed": 72209,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a60d50e2",
+ "started_utc": "20260918T225649Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bdf40590156b8daea30c8d52db591aebcc7e0c1835a497e8a6cf2c5a3d2e3f77",
+ "stdout_tail": "is common to center and shell endpoints -- anchor drift = 1.9943192e-91\nPASS: exact-sum reduced-shell anchor agrees with the tracked shell-law constant -- anchor = 0.0814354029959012027063775747854\nPASS: comparison authority supplies the admitted endpoint support gap 1/6 -- 1/6 is consumed from the comparison authority, not rederived here\nPASS: t_balance near-miss remains positive in the exact-sum active branch -- |t_balance - 1| = 3.08094850684e-5\n\nExact affine gamma assembly\n  beta_E(delta) = -0.0000163731721029935923155957 + (-0.0000860816776174933604396063) delta_A1\n  beta_T(delta) = 0.0000328344893188385998612452 + (-0.0000328355009325469958669404) delta_A1\n  common anchor A = 0.0814354029959012027063775747854\n  gamma_E(delta) = -0.000201057175388665847480882 + (-0.00105705472620828085655326) delta_A1\n  gamma_T(delta) = 0.00040319674381044349450291 + (-0.000403209166094501534003488) delta_A1\n  |b_T/a_T| = |6(beta_T(center)-beta_T(shell))/beta_T(shell)|\nPASS: nsimplify finds no expression in sqrt2/sqrt3/sqrt6 and the pi/7 cosine basis -- returned the high-precision Float, not a closed expression\nPASS: PSLQ finds no minimal-polynomial relation through degree 6 with coefficients <= 1e7 -- none\nPASS: no rational, quadratic-surd, or low-degree algebraic closed form is accepted by this runner -- exact finite algebraic sum is the source representation; recognition remains open\n==============================================================================\nTOTAL: PASS=14, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225656Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

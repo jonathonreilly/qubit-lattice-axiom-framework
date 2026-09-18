@@ -1,0 +1,35 @@
+{
+ "task": "R:projective_history_local_copy_record_process_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "projective",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/projective_history_local_copy_record_process_2026_09_13.py",
+ "seed": 73265,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2774fc2",
+ "started_utc": "20260918T231425Z",
+ "elapsed_s": 25.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b902c108b4b87024c48c40c6d428d8c6fd31e8a837fe5f78bda9a4e6703441b2",
+ "stdout_tail": "\n    },\n    {\n      \"name\": \"nonselected_neighbor_contamination_rejected\"\n    },\n    {\n      \"name\": \"all_twenty_four_proper_cubic_frames\"\n    },\n    {\n      \"name\": \"unique_recoverable_marker_frame\"\n    },\n    {\n      \"name\": \"transported_physical_content_law_covariance\",\n      \"cases\": 720\n    }\n  ],\n  \"seconds\": 24.59995050006546,\n  \"source_sha256\": \"949790105dc4d6ed4c9ff0f5ca57a11f15fa095eaa2e9bc13c3fd62663d28d54\",\n  \"derivation_sha256\": \"cd462bedb8c56f7faf78e1d2b85513e16061acd31eadcc7479394a6255a56e33\",\n  \"scope\": \"Exact finite density/ensemble checks and physical geometry for a separately written all-N conditional trace-history embedding. Trace weights, preparation, projective calibration and nonlocal occurrence remain supplied. Fixed final registers repeat outcomes first committed at outcome-dependent sites. No independent source review or axiom no-go.\"\n}\nper_element: Exact projector identities, trace updates, zero branches and empirical multiplicities are checked.\nper_site: Actual six-neighbor formation measures, permanent support and fixed terminal contents are checked.\nper_mode: Two programs per wing with noncommuting complex projectors are checked; no field-mode claim.\nper_block: Two-round density, pure-ensemble and physical-Record reconstructions agree on the supported fixture.\nlattice_wide: checked and not executed \u2014 the finite-preparation all-N result follows from the written geometry and trace induction, not a thermodynamic extrapolation.\nTOTAL: PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231450Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/projective_history_local_copy_record_process_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

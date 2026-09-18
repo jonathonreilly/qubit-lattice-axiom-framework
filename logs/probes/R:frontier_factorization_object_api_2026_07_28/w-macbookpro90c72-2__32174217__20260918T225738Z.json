@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_factorization_object_api_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_factorization_object_api_2026_07_28.py",
+ "seed": 72258,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225738Z",
+ "elapsed_s": 29.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f30dc8ea60ec0fff76ff016f6bf5d17e8f76f771ce365b28866e71642345761b",
+ "stdout_tail": "nate\": 0,\n        \"phase_formula\": 0,\n        \"source_association\": 0,\n        \"zero_center_dual\": 0\n      },\n      \"dictionary_rows\": 780,\n      \"digest\": \"5850eff1c1053f6290f97da45eeefe4b3116bc3adc95fd2a4c269b380b58389b\",\n      \"expected_dictionary_rows\": 780,\n      \"expected_digest\": \"5850eff1c1053f6290f97da45eeefe4b3116bc3adc95fd2a4c269b380b58389b\",\n      \"gauge_count\": 38,\n      \"logical_count\": 107,\n      \"physical_coordinate_failures\": 0,\n      \"physical_qubits\": 162,\n      \"runtime_sec\": 5.727693,\n      \"shape\": [\n        3,\n        3,\n        2\n      ],\n      \"target_coordinate_failures\": 0\n    },\n    {\n      \"center_count\": 31,\n      \"contract_failures\": {\n        \"cross_frame_phase\": 0,\n        \"dictionary_count\": 0,\n        \"gauge_coordinate\": 0,\n        \"logical_coordinate\": 0,\n        \"mask_or_phase_range\": 0,\n        \"parity_coordinate\": 0,\n        \"phase_formula\": 0,\n        \"source_association\": 0,\n        \"zero_center_dual\": 0\n      },\n      \"dictionary_rows\": 1316,\n      \"digest\": \"f8558593050632725da0d78cd540a7ebda74fb4c67649428844551181096bec9\",\n      \"expected_dictionary_rows\": 1316,\n      \"expected_digest\": \"f8558593050632725da0d78cd540a7ebda74fb4c67649428844551181096bec9\",\n      \"gauge_count\": 60,\n      \"logical_count\": 179,\n      \"physical_coordinate_failures\": 0,\n      \"physical_qubits\": 270,\n      \"runtime_sec\": 20.090754,\n      \"shape\": [\n        5,\n        3,\n        2\n      ],\n      \"target_coordinate_failures\": 0\n    }\n  ],\n  \"status\": \"PASS\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225808Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_factorization_object_api_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

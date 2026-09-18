@@ -1,0 +1,31 @@
+{
+ "task": "R:prebind_unary_role_history_census_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "prebind",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/prebind_unary_role_history_census_2026_07_15.py",
+ "seed": 73197,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2774fc2",
+ "started_utc": "20260918T231317Z",
+ "elapsed_s": 64.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4f6fc265ed1090788acb1fe57419038ac8b8d1a4e9e47ec72b35df8b5fb4a390",
+ "stdout_tail": " 'R_C20', 'R_C21', 'R_C22', 'R_C23', 'R_C30', 'R_C32', 'R_C33', 'R_C40', 'R_C41', 'R_LB', 'TZ', 'T_G0', 'T_G1', 'T_H1', 'T_H2', 'T_H3', 'T_N0', 'T_N1', 'T_N2', 'U', 'W1', 'W3', 'W6', 'Y2', 'YG0')\nCLEAN_ROLES 44 ('ALL', 'B1', 'BTQ', 'COMP6', 'D0', 'D1', 'DONE', 'E', 'F', 'FP', 'G1', 'I1', 'I2', 'J6', 'JOIN', 'L12', 'L4', 'L5', 'L7', 'L8', 'L9', 'M', 'P3', 'PAIR', 'R1', 'R2', 'RING', 'R_A02', 'R_A12', 'R_A13', 'R_A21', 'R_A22', 'R_LA', 'S7', 'S8', 'START', 'TJ', 'TY', 'W2', 'W4', 'W5', 'X_B', 'Z0', 'Z_A')\nROLE J3 EVENTS (('J3', (5, 4, 0), 'R_B41', 147573952589676412928, 1589515010590002225560151916544), ('J3', (4, 5, 0), 'AUX', 147573952589676412928, 160708034370174793547776), ('J3', (5, 4, 0), None, 0, 0))\nROLE J6 EVENTS ()\nROLE R_A13 EVENTS ()\nROLE R_C13 EVENTS (('R_C13', (-8, 2, 0), 'R_C41', 144115188075855872, 144137453253427200), ('R_C13', (-7, 3, 0), None, 144115188075855872, 144115188075855872), ('R_C13', (-4, 2, 0), 'R_C41', 332306998946228968225951765070086144, 332358338950280716427384915912294400))\nROLE R_C40 EVENTS (('R_C40', (-6, 1, 4), None, 1180591620717411303424, 1180591620717411303424), ('R_C40', (-7, 1, 3), 'J2', 1180591620717411303424, 1181763684719457730560), ('R_C40', (-10, 1, 4), None, 512, 512), ('R_C40', (-2, 1, 4), None, 2722258935367507707706996859454145691648, 2722258935367507707706996859454145691648), ('R_C40', (-3, 1, 3), 'J2', 2722258935367507707706996859454145691648, 2724961530952977486400564588780317573120))\nRESULT EXACT_PREBIND_UNARY_CLEAN_ROLES\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

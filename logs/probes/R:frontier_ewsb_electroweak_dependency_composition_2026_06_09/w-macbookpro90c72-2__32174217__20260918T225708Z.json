@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_ewsb_electroweak_dependency_composition_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_ewsb_electroweak_dependency_composition_2026_06_09.py",
+ "seed": 72228,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225708Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=56 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6c6865337c024db8721a5d7ab600407f7e4417a129647dc726a8699b7d1d59d3",
+ "stdout_tail": " MW^2/MZ^2 = 1 - e^2/g^2  (g2=100,gp2=1)\nPASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=7/11,gp2=13/17)\nPASS: node child A: 1/e^2 = 1/g^2 + 1/g'^2  (g2=7/11,gp2=13/17)\nPASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=7/11,gp2=13/17)\nPASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=7/11,gp2=13/17)\nPASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=7/11,gp2=13/17)\nPASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=7/11,gp2=13/17)\nPASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=7/11,gp2=13/17)\nPASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=3,gp2=5)\nPASS: node child A: 1/e^2 = 1/g^2 + 1/g'^2  (g2=3,gp2=5)\nPASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=3,gp2=5)\nPASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=3,gp2=5)\nPASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=3,gp2=5)\nPASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=3,gp2=5)\nPASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=3,gp2=5)\nPASS: node child A: e^2 = g^2 sin^2 = g'^2 cos^2  (g2=1,gp2=0)\nPASS: node child B: MW^2/MZ^2 = cos^2 th_W  (g2=1,gp2=0)\nPASS: node child B: rho = (MW^2/MZ^2)/cos^2 = 1  (g2=1,gp2=0)\nPASS: edge: sin^2 + cos^2 = 1 (shared th_W)  (g2=1,gp2=0)\nPASS: COMPOSITION: e^2/g^2 + MW^2/MZ^2 = 1  (g2=1,gp2=0)\nPASS: COMPOSITION sibling: MW^2/MZ^2 = 1 - e^2/g^2  (g2=1,gp2=0)\nPASS: cross-node demo: sin^2=3/8 -> cos^2 (=MW^2/MZ^2) = 5/8\nPASS: cross-node demo: e^2/g^2 + MW^2/MZ^2 = 1 at sin^2=3/8\nPASS: negative control: spurious MW^2/MZ^2 breaks the composition\n\nTOTAL: PASS=56 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225708Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

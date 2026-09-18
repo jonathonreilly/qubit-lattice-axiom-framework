@@ -1,0 +1,35 @@
+{
+ "task": "R:principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "principal",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/principal_flux_positive_gaussian_transfer_and_hamiltonian_limit_2026_09_14.py",
+ "seed": 73262,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2774fc2",
+ "started_utc": "20260918T231422Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1f989fc6ca767ae93ec0f18ac34766bc3fe82e10b5baa4b7d568ece65823c9c2",
+ "stdout_tail": "product_error\": 0.0006596314025374859}]\nPASS potential-jump and commutator bound: {\"actual_jump\": 3.8999999999999995, \"commutator_norm\": 9.514495599757796, \"cubic_bound\": 20.0, \"row_bound\": 65.51999999999998}\nPASS rejected row normalization and mismatch-scale controls: {\"row_normalization_changes_target_diagonal\": 9.251273402830671, \"wrong_mu_scale_generator_difference\": 4.061103467514296}\nPASS exact physical strip counterexample and independent Laurent convolution: {\"exact_form\": \"-901886967/55267035185152\", \"laurent_coefficient_count\": 621, \"link_lift_count\": 59049, \"minimum_numeric_eigenvalue\": -6.230003144031828e-07, \"norm_squared\": 36, \"physical_dimension\": 27, \"polynomial_coefficients_checked\": 11, \"two_step_minimum_numeric_eigenvalue\": 7.168015212465696e-14}\nper_element: checked individual integer lifts, reversal, mismatch scaling and the fixed electric diagonal; no physical phase was inferred.\nper_site: checked all physical one-cube flux states and their exact current continuity; native site-law selection was not executed.\nper_mode: checked finite transfer eigenvalues and a rational negative physical quadratic form; no infinite-volume excitation spectrum was computed.\nper_block: checked full-to-physical square reduction, cubic time limits and the exact three-square certificate by two arithmetic routes.\nlattice_wide: checked and not executed \u2014 infinite-volume phase and anisotropic state bounds require an additional proof beyond these finite tests.\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

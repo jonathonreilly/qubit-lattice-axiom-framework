@@ -1,0 +1,31 @@
+{
+ "task": "R:proper_cubic_bound_object_equivalence_cycle210_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "proper",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+ "seed": 73334,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2774fc2",
+ "started_utc": "20260918T231534Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "11e1985bcf1f96d3c2cf01c8fad6be24e480df2a44b44c01d77f693ce149d4db",
+ "stdout_tail": "ce=0.0, acceleration=2.1404826325044655e-18, measured_mass=inf, expected_mass=0.6081301065260174, norm=1.0000000000000178, band_probability=1.0000000000000362, boundary=4.3008912725927293e-13, displacement=-7.105427357601002e-15)\nPASS one rest-phase scalar gives species-independent weak-lapse acceleration :: [0.9956299185669313, 0.998391812330302, 1.0019360053695798]\nPASS beta=-0.2 held-out two-molecule composition adds rest phase and inertia :: {'rest': 0.6020080325127032, 'mass': 0.6020084615189608}\nPASS beta=-0.3 held-out two-molecule composition adds rest phase and inertia :: {'rest': 0.9068113083497704, 'mass': 0.9068116040839699}\nPASS beta=-0.4 held-out two-molecule composition adds rest phase and inertia :: {'rest': 1.2162602130520348, 'mass': 1.2162604466725166}\nPASS one or two decoupled spectator records leave molecular mass data unchanged :: \nPASS source charge follows the local rest generator rather than archive multiplicity :: [0.3010040162563516, 0.4534056541748852, 0.6081301065260174]\nPASS the internal excitation gap remains distinct from the aligned rest/inertial scalar :: {'gaps': [0.2, 0.3, 0.4], 'masses': [0.3010040162563516, 0.4534056541748852, 0.6081301065260174]}\nPASS cubic locality and unitarity do not force the rest/inertial alignment :: [(-0.2, -0.6030120487690547, 0.3010040162563516), (-0.3, -0.9102169625246557, 0.4534056541748852), (-0.4, -1.224390319578052, 0.6081301065260174)]\nPASS 33 FAIL 0\nRESULT PROPER_CUBIC_BOUND_OBJECT_CONDITIONAL_EQUIVALENCE\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231534Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

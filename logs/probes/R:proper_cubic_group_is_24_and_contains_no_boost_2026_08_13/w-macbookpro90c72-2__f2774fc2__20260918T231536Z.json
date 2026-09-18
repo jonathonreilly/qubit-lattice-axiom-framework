@@ -1,0 +1,35 @@
+{
+ "task": "R:proper_cubic_group_is_24_and_contains_no_boost_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "proper",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/proper_cubic_group_is_24_and_contains_no_boost_2026_08_13.py",
+ "seed": 73336,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2774fc2",
+ "started_utc": "20260918T231536Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3524e1403cfb5ee5d9fac001b1c45af3b85e04fcfe961eaa87bc83c106ebf3d1",
+ "stdout_tail": "ing\nPASS: universal-no-boost none of the 24 canonical embeddings is a nontrivial declared boost\nPASS: boost2-lorentz the exact rational 1+1 block preserves diag(1,-1)\nPASS: boost2-proper-time-oriented the exact rational block has determinant one and positive time component\nPASS: boost4-classification the 3+1 extension is a nontrivial boost under the declared predicate\nPASS: boost-outside-point-group the exact boost lies outside all zero-mixing canonical embeddings\nPASS: no-go-packet the landed note contains the complete N1-N8 discipline record\nPASS: n5-certificate-source the note carries the exact five forensic resolution lines\nPASS: trace-contract the machine trace uses frontier discovery, null target, and a next action\nPASS: claim-boundary the note excludes an embedding-free or dynamical Lorentz no-go\nPASS: claim-type the source uses the bounded-theorem claim type without authoring an audit verdict\nper_element: all 24 proper-cubic matrices and their canonical spacetime embeddings are checked exactly\nper_site: the point action is proved at one arbitrary fixed lattice site and transported by the supplied translations\nper_mode: every canonical embedding fixes the displayed time axis, while no momentum or dynamical mode is asserted\nper_block: one exact rational boost block is Lorentzian and lies outside the zero-mixing embedded point group\nlattice_wide: checked and not executed \u2014 no lattice-wide dynamics, continuum limit, or Lorentz restoration is claimed\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231536Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

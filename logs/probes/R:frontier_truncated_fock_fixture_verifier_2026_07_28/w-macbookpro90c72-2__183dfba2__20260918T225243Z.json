@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_truncated_fock_fixture_verifier_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_truncated_fock_fixture_verifier_2026_07_28.py",
+ "seed": 71963,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "183dfba2",
+ "started_utc": "20260918T225243Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "35f801a204115db474a704502c98cd1b8f00a2528fa92c8ea545f0b517bc0387",
+ "stdout_tail": ", \"uncertified_layer\": \"REJECT\"}, \"note_path\": \"docs/TRUNCATED_FOCK_FIXTURE_VERIFIER_NOTE_2026-07-28.md\", \"record\": {\"contract\": {\"certified_layers\": [{\"active_channels\": 0, \"number\": 0}, {\"active_channels\": 6, \"number\": 1}, {\"active_channels\": 24, \"number\": 2}], \"claim_scope\": \"two-cell n_left,n_right<=2 conditional bookkeeping support\", \"complete_columns\": 57344, \"complete_number_layers\": [0, 1, 2, 3, 4, 5, 6], \"component_labels\": [\"matter\", \"component_1\", \"component_2\"], \"component_labels_construct_degrees_of_freedom\": false, \"equal_split\": {\"status\": \"supplied_not_derived\", \"weights\": [1.0, 1.0]}, \"full_fock_claim\": false, \"omitted_number_layers\": [3, 4, 5, 6], \"truncated_columns\": 6776}, \"dependency_pins\": {\"source\": {\"actual\": \"05853a493ddc083ba3a4f63f7d41d80b97e7d6d9a2b57be83145407fd5f501d0\", \"expected\": \"05853a493ddc083ba3a4f63f7d41d80b97e7d6d9a2b57be83145407fd5f501d0\", \"verified\": true}, \"source_checker\": {\"actual\": \"dd0f66f4b44008df5b38fe0d5908753caa3257f7528d868ad8705b1af39bcffc\", \"expected\": \"dd0f66f4b44008df5b38fe0d5908753caa3257f7528d868ad8705b1af39bcffc\", \"verified\": true}}, \"source_checker_run\": {\"final\": \"ALL_PASS\", \"returncode\": 0, \"stderr_empty\": true, \"summary\": {\"fail\": 0, \"pass\": 7}}, \"source_run\": {\"returncode\": 0, \"stderr_empty\": true, \"summary\": {\"fail\": 0, \"pass\": 10}, \"support_certificate_passed\": true, \"terminal_count\": 1}}, \"runtime_seconds\": 0.593091, \"tool_role\": \"non-authoritative fixed-pin truncated-fixture verification\", \"verdict\": \"ACCEPT\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225244Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'FINAL_JSON {\"checks\": {\"fail\": 0, \"pass\": 5}, \"contract\": {\"certified_layers\": [' vs cache 'FINAL_JSON {\"checks\": {\"fail\": 0, \"pass\": 5}, \"contract\": {\"certified_layers\": ['",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_truncated_fock_fixture_verifier_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

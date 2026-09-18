@@ -1,0 +1,8 @@
+PASS C1 exact proper cubic rotation group :: {'signed_permutations': 48, 'proper_rotations': 24, 'closed': True}
+PASS C2 nearest-neighbour orbit decomposition :: {'points': 7, 'proper_orbits': 2, 'trivial_group_orbits': 7, 'face_orbit_size': 6}
+PASS C3 Burnside orbit count equals independently solved exact nullity :: {1: {'points': 7, 'burnside_orbits': 2, 'exact_nullity': 2}, 2: {'points': 19, 'burnside_orbits': 3, 'exact_nullity': 3}, 3: {'points': 27, 'burnside_orbits': 4, 'exact_nullity': 4}, 4: {'points': 33, 'burnside_orbits': 5, 'exact_nullity': 5}, 5: {'points': 57, 'burnside_orbits': 6, 'exact_nullity': 6}, 6: {'points': 81, 'burnside_orbits': 7, 'exact_nullity': 7}}
+PASS C4 range-one invariant kernels are exactly span{I, Delta} :: {'dimension': 2, 'basis_coordinates': [('1', '0'), ('6', '1')], 'anisotropic_forward_difference_in_span': False}
+PASS C5 constant-annihilation leaves the Laplacian line only at range one :: {'range_one_zero_sum_dimension': 1, 'range_two_zero_sum_dimension': 2, 'laplacian_sum': '0'}
+SUMMARY_JSON {"audit": "unset", "authority": "none", "claim_type": "bounded_theorem", "fail_count": 0, "pass": true, "pass_count": 5, "table": {"1": {"burnside_orbits": 2, "exact_nullity": 2, "points": 7}, "2": {"burnside_orbits": 3, "exact_nullity": 3, "points": 19}, "3": {"burnside_orbits": 4, "exact_nullity": 4, "points": 27}, "4": {"burnside_orbits": 5, "exact_nullity": 5, "points": 33}, "5": {"burnside_orbits": 6, "exact_nullity": 6, "points": 57}, "6": {"burnside_orbits": 7, "exact_nullity": 7, "points": 81}}}
+RESULT 5 0
+RESULT PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_PASSES

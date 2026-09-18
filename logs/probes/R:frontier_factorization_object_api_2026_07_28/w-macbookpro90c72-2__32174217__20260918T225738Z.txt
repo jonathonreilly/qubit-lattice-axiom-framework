@@ -1,0 +1,431 @@
+check() PASS (2, 1, 1) digest equals landed Cycle-720 digest
+check() PASS (2, 1, 1) dimensions and counts equal the landed report
+check() PASS (2, 1, 1) dictionary coordinates replay every signed row
+check() PASS (2, 1, 1) source pairing and cross-frame contract are exact
+check() PASS (2, 1, 1) exposed value graph rejects nested field assignment
+check() PASS (2, 1, 1) two independent builds are deeply identical
+check() PASS (3, 1, 1) digest equals landed Cycle-720 digest
+check() PASS (3, 1, 1) dimensions and counts equal the landed report
+check() PASS (3, 1, 1) dictionary coordinates replay every signed row
+check() PASS (3, 1, 1) source pairing and cross-frame contract are exact
+check() PASS (3, 1, 1) exposed value graph rejects nested field assignment
+check() PASS (3, 1, 1) two independent builds are deeply identical
+check() PASS (2, 2, 1) digest equals landed Cycle-720 digest
+check() PASS (2, 2, 1) dimensions and counts equal the landed report
+check() PASS (2, 2, 1) dictionary coordinates replay every signed row
+check() PASS (2, 2, 1) source pairing and cross-frame contract are exact
+check() PASS (2, 2, 1) exposed value graph rejects nested field assignment
+check() PASS (2, 2, 1) two independent builds are deeply identical
+check() PASS (2, 2, 2) digest equals landed Cycle-720 digest
+check() PASS (2, 2, 2) dimensions and counts equal the landed report
+check() PASS (2, 2, 2) dictionary coordinates replay every signed row
+check() PASS (2, 2, 2) source pairing and cross-frame contract are exact
+check() PASS (2, 2, 2) exposed value graph rejects nested field assignment
+check() PASS (2, 2, 2) two independent builds are deeply identical
+check() PASS (3, 2, 2) digest equals landed Cycle-720 digest
+check() PASS (3, 2, 2) dimensions and counts equal the landed report
+check() PASS (3, 2, 2) dictionary coordinates replay every signed row
+check() PASS (3, 2, 2) source pairing and cross-frame contract are exact
+check() PASS (3, 2, 2) exposed value graph rejects nested field assignment
+check() PASS (3, 2, 2) two independent builds are deeply identical
+check() PASS (3, 3, 2) digest equals landed Cycle-720 digest
+check() PASS (3, 3, 2) dimensions and counts equal the landed report
+check() PASS (3, 3, 2) dictionary coordinates replay every signed row
+check() PASS (3, 3, 2) source pairing and cross-frame contract are exact
+check() PASS (3, 3, 2) exposed value graph rejects nested field assignment
+check() PASS (3, 3, 2) two independent builds are deeply identical
+check() PASS (5, 3, 2) digest equals landed Cycle-720 digest
+check() PASS (5, 3, 2) dimensions and counts equal the landed report
+check() PASS (5, 3, 2) dictionary coordinates replay every signed row
+check() PASS (5, 3, 2) source pairing and cross-frame contract are exact
+check() PASS (5, 3, 2) exposed value graph rejects nested field assignment
+check() PASS (5, 3, 2) two independent builds are deeply identical
+{
+  "audit": "unset",
+  "authority": "none",
+  "checks": [
+    {
+      "label": "(2, 1, 1) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) two independent builds are deeply identical",
+      "pass": true
+    }
+  ],
+  "claim_ceiling": "exact_support",
+  "pass": true,
+  "runtime_sec": 29.161583,
+  "scope": {
+    "bounded_local_compiler": "not_constructed",
+    "changes_landed_claim": false,
+    "derives_new_physics": false,
+    "role": "exact finite-box support contract"
+  },
+  "shapes": [
+    {
+      "center_count": 1,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 76,
+      "digest": "3cb9e9c14de10b3cab61c029d2f599d320233c82a26fc7d060eab7e5dcf204f3",
+      "expected_dictionary_rows": 76,
+      "expected_digest": "3cb9e9c14de10b3cab61c029d2f599d320233c82a26fc7d060eab7e5dcf204f3",
+      "gauge_count": 6,
+      "logical_count": 11,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 18,
+      "runtime_sec": 0.042224,
+      "shape": [
+        2,
+        1,
+        1
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 1,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 116,
+      "digest": "6abf5c5f2c4d009b38405c4cad1d6801f925b1c9525cb42e8c41f7a876b6f44f",
+      "expected_dictionary_rows": 116,
+      "expected_digest": "6abf5c5f2c4d009b38405c4cad1d6801f925b1c9525cb42e8c41f7a876b6f44f",
+      "gauge_count": 9,
+      "logical_count": 17,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 27,
+      "runtime_sec": 0.092242,
+      "shape": [
+        3,
+        1,
+        1
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 2,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 160,
+      "digest": "9157f2b7bf8230ba3b20fb343d2a50929ded4f20fb6fdbf9350377eab23ca126",
+      "expected_dictionary_rows": 160,
+      "expected_digest": "9157f2b7bf8230ba3b20fb343d2a50929ded4f20fb6fdbf9350377eab23ca126",
+      "gauge_count": 11,
+      "logical_count": 23,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 36,
+      "runtime_sec": 0.182985,
+      "shape": [
+        2,
+        2,
+        1
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 6,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 336,
+      "digest": "e83b7b242297a8e613073dc1984a17ee07d632708676f4ff786c9bca943fcd0b",
+      "expected_dictionary_rows": 336,
+      "expected_digest": "e83b7b242297a8e613073dc1984a17ee07d632708676f4ff786c9bca943fcd0b",
+      "gauge_count": 19,
+      "logical_count": 47,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 72,
+      "runtime_sec": 0.854877,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 10,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 512,
+      "digest": "10ec1180a23dd781c406fca7a9a6f0b2d5bf75da74fd1712849904bdc2197a47",
+      "expected_dictionary_rows": 512,
+      "expected_digest": "10ec1180a23dd781c406fca7a9a6f0b2d5bf75da74fd1712849904bdc2197a47",
+      "gauge_count": 27,
+      "logical_count": 71,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 108,
+      "runtime_sec": 2.170751,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 17,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 780,
+      "digest": "5850eff1c1053f6290f97da45eeefe4b3116bc3adc95fd2a4c269b380b58389b",
+      "expected_dictionary_rows": 780,
+      "expected_digest": "5850eff1c1053f6290f97da45eeefe4b3116bc3adc95fd2a4c269b380b58389b",
+      "gauge_count": 38,
+      "logical_count": 107,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 162,
+      "runtime_sec": 5.727693,
+      "shape": [
+        3,
+        3,
+        2
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 31,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 1316,
+      "digest": "f8558593050632725da0d78cd540a7ebda74fb4c67649428844551181096bec9",
+      "expected_dictionary_rows": 1316,
+      "expected_digest": "f8558593050632725da0d78cd540a7ebda74fb4c67649428844551181096bec9",
+      "gauge_count": 60,
+      "logical_count": 179,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 270,
+      "runtime_sec": 20.090754,
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "target_coordinate_failures": 0
+    }
+  ],
+  "status": "PASS"
+}

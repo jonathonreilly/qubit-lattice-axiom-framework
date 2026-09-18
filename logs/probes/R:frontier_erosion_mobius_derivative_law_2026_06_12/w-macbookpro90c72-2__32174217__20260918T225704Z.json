@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_erosion_mobius_derivative_law_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_erosion_mobius_derivative_law_2026_06_12.py",
+ "seed": 72224,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225704Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7e0184db8c00b991da1049a21c0107cb8421d0a6f971d5522b46c69b633c3cf4",
+ "stdout_tail": "r=1.110e-16\neps=0.4, word=+--   : period_rate=0.4285714285714287, det/lambda^2=0.4285714285714285, err=1.665e-16\neps=0.4, word=+++-  : period_rate=0.1836734693877552, det/lambda^2=0.183673469387755, err=1.943e-16\neps=0.4, word=++--  : period_rate=1, det/lambda^2=1, err=2.220e-16\neps=0.4, word=+-++-+: period_rate=0.1836734693877552, det/lambda^2=0.183673469387755, err=2.220e-16\nPASS: I3 numeric: periodic per-word erosion rate equals det(M_w)/lambda_max(M_w)^2 :: max_err=8.882e-16, worst=eps=0.1, word=++-, tol=1.0e-10\n==============================================================================\nI4 special cases recovered\n==============================================================================\nuniform T=1 matrix law max_err=3.331e-16\nPASS: I4 uniform T=1 gives det/lambda^2 = (1-eps)/(1+eps) :: max_err=3.331e-16, tol=1.0e-15\nalternating matrix residual: Matrix([[0, 0], [0, 0]]), numeric_rate_err=0.000e+00\nPASS: I4 alternating matrix identity M_- M_+ = (1-eps^2) I gives rate 1 :: entries_zero=True, numeric_err=0.000e+00\n==============================================================================\nI5 parabolic/edge-case census\n==============================================================================\nfixed-set census: parabolic_or_scalar_cases=8, hyperbolic_cases=20, min_hyperbolic_trace_gap=3.920e-02\nPASS: I5 fixed set contains the frozen scalar-edge cases and hyperbolic cases clear trace^2 > 4 det :: parabolic=8, hyperbolic=20, min_gap=3.920e-02\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225704Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

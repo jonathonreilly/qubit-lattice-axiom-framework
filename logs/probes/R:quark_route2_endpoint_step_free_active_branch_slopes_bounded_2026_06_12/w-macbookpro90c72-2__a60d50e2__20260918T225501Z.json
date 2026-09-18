@@ -1,0 +1,35 @@
+{
+ "task": "R:quark_route2_endpoint_step_free_active_branch_slopes_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "quark",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/quark_route2_endpoint_step_free_active_branch_slopes_bounded_2026_06_12.py",
+ "seed": 72101,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a60d50e2",
+ "started_utc": "20260918T225501Z",
+ "elapsed_s": 10.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b38a59cb188dcb1f786b3ccdcae43ee912a5c8f6099100d56447c20930d2317a",
+ "stdout_tail": "elta_A1\n  gamma_T(delta) = +4.031967438131e-04 + (-4.032091661207e-04) delta_A1\n  |b_E/b_T| = 2.621603909403\n  |a_T/a_E| = 2.005383508612\n  |b_T/a_T| = 1.000030809544\n  mpmath30 final-assembly drift <= 4.441e-16\nPASS: center endpoint active max is unique -- active=probe0:xx, abs_gap=3.504e-05, rel_gap=5.000e-01\nPASS: shell endpoint active max is unique -- active=probe0:xx, abs_gap=1.209e-05, rel_gap=2.623e-01\nPASS: module-step argmax stability for q=center/e0, dir=E_x -- minus=probe0:xx, base=probe0:xx, plus=probe0:xx\nPASS: module-step argmax stability for q=center/e0, dir=T1x -- minus=probe0:xx, base=probe0:xx, plus=probe0:xx\nPASS: module-step argmax stability for q=shell/s_sqrt6, dir=E_x -- minus=probe0:xx, base=probe0:xx, plus=probe0:xx\nPASS: module-step argmax stability for q=shell/s_sqrt6, dir=T1x -- minus=probe0:xx, base=probe0:xx, plus=probe0:xx\nPASS: one-sided FD slopes at eps=1e-3 and 5e-4 bracket each active-branch derivative -- all four endpoint-direction probes bracketed at both requested steps\nPASS: central FD cross-checks stay within the observed tensor-stencil roundoff envelope -- max |central_fd-beta| = 3.341e-11\nPASS: endpoint support gap is the admitted 1/6 support scalar -- endpoint_gap = 1.666666666667e-01\nPASS: active-branch t_balance lies in the finite-difference stable band -- t_balance=1.000030809544, band=[1.0000260, 1.0000319]\nPASS: 30-digit mpmath final assembly agrees with double final assembly -- max ratio drift = 4.441e-16\nTOTAL: PASS=11, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225511Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/quark_route2_endpoint_step_free_active_branch_slopes_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

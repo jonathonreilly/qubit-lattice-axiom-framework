@@ -1,0 +1,35 @@
+{
+ "task": "R:projective_history_local_program_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "projective",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/projective_history_local_program_2026_09_13.py",
+ "seed": 73290,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2774fc2",
+ "started_utc": "20260918T231450Z",
+ "elapsed_s": 43.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=107 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7b40c9b3a647f75c07d06336464bcf55ff6ec10c6db19be688d6d27d8ebeccdf",
+ "stdout_tail": "muting_repeated_quantum_history_initial_frame\"\n    },\n    {\n      \"name\": \"noncommuting_repeated_quantum_history_normalization\"\n    },\n    {\n      \"name\": \"noncommuting_repeated_quantum_history_tree_vs_physical_cylinders\"\n    },\n    {\n      \"name\": \"repeated_B_Record_zero_children\"\n    },\n    {\n      \"name\": \"noncommuting_complex_program_actually_present\"\n    },\n    {\n      \"name\": \"zero_branches_exercised\",\n      \"program_appends\": 5818,\n      \"data_appends\": 561,\n      \"affected_support_conditions\": 13319,\n      \"zero_branches\": 29,\n      \"decoded_prefixes\": 561\n    }\n  ],\n  \"stats\": {\n    \"program_appends\": 5818,\n    \"data_appends\": 561,\n    \"affected_support_conditions\": 13319,\n    \"zero_branches\": 29,\n    \"decoded_prefixes\": 561\n  },\n  \"seconds\": 43.033209291053936,\n  \"runner_sha256\": \"7c9e2fb963ceff15d60921d1f480224232c1f7ac625e2fe723270f3594f636cc\"\n}\nper_element: Exact matrix program decoding, malformed inputs and probability measures are checked.\nper_site: Actual complete nearest-neighbor content laws and permanent Record support are checked.\nper_mode: Two quantum wings with complex noncommuting programs and repeated-projector zeros are checked.\nper_block: Full finite data cylinders match independent amplitude sums and Record-only transition reconstruction.\nlattice_wide: checked and not executed \u2014 the all-finite-horizon result follows from the written geometry and induction; no infinite finite-resource apparatus or physical selector is claimed.\nTOTAL: PASS=107 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T231534Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/projective_history_local_program_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

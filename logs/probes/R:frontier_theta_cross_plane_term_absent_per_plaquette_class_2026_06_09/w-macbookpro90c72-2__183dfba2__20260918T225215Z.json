@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py",
+ "seed": 71935,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "183dfba2",
+ "started_utc": "20260918T225215Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b594ac5558fea1222b1909ba695844b8babf4e373d9f0997bc2de4bd84c7b8f0",
+ "stdout_tail": "-------------------------\nSource-note scope checks\n----------------------------------------------------------------------------------------\n  [PASS] source note contains required boundary: This is a theorem about the supplied action class, not a derivation of that class.\n  [PASS] source note contains required boundary: does not set `theta_QCD = 0` in the full framework\n  [PASS] source note contains required boundary: Multi-plaquette terms, clover products, or any other action term with cross-plane support are outside this theorem\n  [PASS] source note contains required boundary: PASS for the narrowed conditional class theorem\n  [PASS] source note contains required boundary: FAIL for any reading that treats this note as a derivation of per-plaquette support\n  [PASS] source note excludes overclaim phrase: last premise\n  [PASS] source note excludes overclaim phrase: theta admission's surviving content\n  [PASS] source note excludes overclaim phrase: entire live candidate class\n  [PASS] source note excludes overclaim phrase: theta_bare = 0 automatically\n  [PASS] source note excludes overclaim phrase: P2 already discharged\n  [PASS] source note excludes overclaim phrase: no numeric or CP-specific content survives\n  [PASS] source note excludes overclaim phrase: owner/audit lane's call\n\n========================================================================================\nSUMMARY: PASS=18 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225216Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

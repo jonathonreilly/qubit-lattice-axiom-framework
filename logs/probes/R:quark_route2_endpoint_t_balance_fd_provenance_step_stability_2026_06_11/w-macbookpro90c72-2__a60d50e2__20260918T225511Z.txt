@@ -1,0 +1,37 @@
+Endpoint t_balance: FD provenance + step stability
+========================================================================
+
+Part 1: finite-difference provenance of the current live ratios
+------------------------------------------------------------------------
+FAIL: current live slope_ratio = 2.621602843782 reproduced at module step EPS=0.005
+    recomputed 2.621602261038; |diff| = 5.83e-07
+FAIL: current live shell_ratio = 2.005383530819 reproduced at module step EPS=0.005
+    recomputed 2.005383140217; |diff| = 3.91e-07
+PASS: current live t_balance = 1.000030814262 reproduced at module step EPS=0.005
+    recomputed 1.000030814262; |diff| = 3.66e-13
+
+Part 2: step-stability of the t_balance near-miss (stable window)
+------------------------------------------------------------------------
+  eps        |b_E/b_T|        |a_T/a_E|        |b_T/a_T|
+  2.0e-03  2.621604914263  2.005382281432  1.000030760877
+  1.0e-03  2.621615773727  2.005383262949  1.000028330080
+  5.0e-04  2.621596357851  2.005384143482  1.000030750055
+  2.0e-04  2.621583528917  2.005399375554  1.000030438902
+PASS: t_balance stays inside the narrow band over the stable window
+    band [1.0000259, 1.0000319]; observed [1.000028330, 1.000030761]
+  Richardson extrapolants (leading O(eps^2) cancellation model):
+    from eps=2e-03: t_balance -> 1.000027519814
+    from eps=1e-03: t_balance -> 1.000031556713
+PASS: Richardson extrapolants stay inside the same band
+    extrapolants ['1.000027520', '1.000031557']
+PASS: the band excludes t_balance = 1 by more than six times the observed spread
+    min(t_balance) - 1 = 2.83e-05; window spread = 2.43e-06
+
+Part 3: small-step noise floor (bounds the honest FD precision)
+------------------------------------------------------------------------
+  eps=1.0e-04: t_balance = 0.999941294367
+  eps=5.0e-05: t_balance = 0.999996341542
+PASS: below eps ~ 1e-4 the chain leaves the stable band (internal noise floor)
+    max |drift from 1.0000308| = 8.95e-05; the exact slope needs the symbolic (Hellmann-Feynman) route, not smaller FD steps
+
+TOTAL: PASS=5, FAIL=2

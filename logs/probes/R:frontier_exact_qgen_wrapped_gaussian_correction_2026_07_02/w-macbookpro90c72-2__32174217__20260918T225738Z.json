@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.py",
+ "seed": 72258,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32174217",
+ "started_utc": "20260918T225738Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "606c97fb65a02e294bf6729afb1a7844e061280749eee5d541c4d10f76ddea4b",
+ "stdout_tail": "SUMMARY PASS=37 FAIL=0 TOTAL=37\nSUMMARY T1_T2 exact_Qgen_not_positive N5:k=2,t0=1/2000,entry_upper=-69/2000000;N7:k=2,t0=1/5000,entry_upper=-233/6250000\nSUMMARY T3 wrapped_gaussian_N5 t=1/5,n=1:neglog[2.601180228207E-2,2.601180228207E-2],quad[1.000000000000E-1,1.000000000000E-1],diff[-7.398819771793E-2,-7.398819771793E-2]|t=1/5,n=2:neglog[6.958658342420E-2,6.958658342420E-2],quad[4.000000000000E-1,4.000000000000E-1],diff[-3.304134165758E-1,-3.304134165758E-1]|t=1,n=1:neglog[4.994544967071E-1,4.994544967071E-1],quad[5.000000000000E-1,5.000000000000E-1],diff[-5.455032929034E-4,-5.455032929034E-4]|t=1,n=2:neglog[1.921117718830E+0,1.921117718830E+0],quad[2.000000000000E+0,2.000000000000E+0],diff[-7.888228117042E-2,-7.888228117042E-2]|t=2,n=1:neglog[9.999996941255E-1,9.999996941255E-1],quad[1.000000000000E+0,1.000000000000E+0],diff[-3.058744984565E-7,-3.058744984565E-7]|t=2,n=2:neglog[3.993284651539E+0,3.993284651539E+0],quad[4.000000000000E+0,4.000000000000E+0],diff[-6.715348461342E-3,-6.715348461342E-3];max_tail_bound=2.000000000000E-95;status=PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04.py",
+ "seed": 71945,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "183dfba2",
+ "started_utc": "20260918T225225Z",
+ "elapsed_s": 9.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=7 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "00810b7b3e236a11e83cef0c944e30564c94644ef1f56049d5f4882dc347dc3e",
+ "stdout_tail": "A PASS explicit SU(2)^3 paths endpoint/unitarity worst_err=6.281e-16\nB PASS N=24 T=6 sectors=[-3, -2, -1, 0, 1, 2, 3] min_link_weight=6.738e-03 adjacent=(-3, -2) conjugation_pairing=True\nC FAIL admitted_thetas_from_positive_masses=[0.0] (360-point grid) fake_recovered_thetas=[] nonreal_fake=True\nD PASS mixed_parity=True even_sector=-2 odd_sector=-3 native_mass=2.245830e-12 pi_weighted_value=-2.245830e-12\nH PASS relative_even=[0.0, 3.14159265359] relative_odd=[0.0, 3.14159265359] relative_mixed=[0.0] exact_odd=[0.0] singleton_all_alias=True\nE PASS coarse_nonnegative=True coarse_equals_fine=True weak_T_windows=[[-1, 0, 1], [-2, -1, 0, 1, 2], [-3, -2, -1, 0, 1, 2, 3]] tv_to_delta0=['1.350e-04', '7.842e-06', '4.049e-07']\nF PASS N=6 links=3 ticks=3 min_plaquette=2.466e-01 min_transfer=1.320e-01 conjugation=True sectors=[-3, -2, -1, 0, 1, 2, 3]\nG PASS missing=[] banned=[] bad_md_targets=[]\nSUMMARY PASS=7 FAIL=1\nDONE\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225234Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=7 FAIL=1' vs cache 'PASS=8 FAIL=0'"
+  ]
+ }
+}

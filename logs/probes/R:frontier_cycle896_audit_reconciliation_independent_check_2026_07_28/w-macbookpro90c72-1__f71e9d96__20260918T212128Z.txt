@@ -1,0 +1,2 @@
+[PASS] degree4 invariant harmonic dimension from monomial traces
+TOTAL: PASS=1 FAIL=0

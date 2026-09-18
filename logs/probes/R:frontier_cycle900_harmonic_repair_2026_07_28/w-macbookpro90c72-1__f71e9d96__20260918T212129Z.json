@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle900_harmonic_repair_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle900_harmonic_repair_2026_07_28.py",
+ "seed": 66489,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212129Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6484771603ac8f8863e899d38e5a510450df77b2bd92eeaf87747bf6cb88afd3",
+ "stdout_tail": "act_root\": true,\n    \"coarse_enclosure\": [\n      \"-3/20\",\n      \"1/10\"\n    ],\n    \"enclosure_sign\": null,\n    \"exact_zero\": false,\n    \"rational_basis_coefficients\": [\n      \"-7/5\",\n      \"1\"\n    ],\n    \"returned_object\": \"unresolved bracket\",\n    \"test_element\": \"sqrt(2)-7/5\"\n  },\n  \"normalization_scope\": {\n    \"fixed_kernel_raw_sum_changes_under_this_map\": false,\n    \"independent_kernel_amplitude_rescaling_changes_raw_sums\": true,\n    \"product_is_symbolically_fixed\": true,\n    \"product_stabilizer_map\": \"(lambda,sigma)->(t lambda,sigma/t), t!=0\",\n    \"scope\": \"nonzero t, amplitude, and ratio denominator\",\n    \"shape_ratio_is_symbolically_amplitude_invariant\": true\n  },\n  \"withdrawn_historical_inferences\": [\n    \"a physically forced or unique harmonic repair\",\n    \"selection of zero-exterior rather than periodic boundary conditions\",\n    \"infinite-lattice existence, convergence, transcendence, or exact asymptotics\",\n    \"TOWARD or source-action sign from Green-function positivity\",\n    \"the 37-row consumer census and complete physical patch-list verdict\",\n    \"chart dimension reductions as complete physical dimension counts\"\n  ]\n}\nPASS basic_norm_corrected\nPASS corrected_primary_gcd_is_one\nPASS independent_resultant_gcd_is_one\nPASS finite_screened_origin_identity_exact\nPASS finite_screened_tested_G0_positive\nPASS finite_screened_tested_equivalence\nPASS ambiguous_interval_not_exact_root\nPASS product_stabilizer_scope_correct\nPASS independent_checker_passes\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212130Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

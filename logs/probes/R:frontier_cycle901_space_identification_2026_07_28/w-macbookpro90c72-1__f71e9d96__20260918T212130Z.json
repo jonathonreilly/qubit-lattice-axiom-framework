@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle901_space_identification_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle901_space_identification_2026_07_28.py",
+ "seed": 66490,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212130Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fdb152cb2236f4bb95f70f1e81cbb0a86f1119a4c59543fdc3be0da0cb304abc",
+ "stdout_tail": ", 0, 0], [0, -1, 0], [0, 0, -1]], [[1, 0, 0], [0, 1, 0], [0, 0, 1]]], \"normal_plane_value\": null, \"order\": 12, \"reason\": \"no rotation axis: common fixed locus has dimension 0, not 1\"}, {\"class\": \"O_full\", \"fixed_dimension\": 0, \"matrices\": [[[-1, 0, 0], [0, -1, 0], [0, 0, 1]], [[-1, 0, 0], [0, 0, -1], [0, -1, 0]], [[-1, 0, 0], [0, 0, 1], [0, 1, 0]], [[-1, 0, 0], [0, 1, 0], [0, 0, -1]], [[0, -1, 0], [-1, 0, 0], [0, 0, -1]], [[0, -1, 0], [0, 0, -1], [1, 0, 0]], [[0, -1, 0], [0, 0, 1], [-1, 0, 0]], [[0, -1, 0], [1, 0, 0], [0, 0, 1]], [[0, 0, -1], [-1, 0, 0], [0, 1, 0]], [[0, 0, -1], [0, -1, 0], [-1, 0, 0]], [[0, 0, -1], [0, 1, 0], [1, 0, 0]], [[0, 0, -1], [1, 0, 0], [0, -1, 0]], [[0, 0, 1], [-1, 0, 0], [0, -1, 0]], [[0, 0, 1], [0, -1, 0], [1, 0, 0]], [[0, 0, 1], [0, 1, 0], [-1, 0, 0]], [[0, 0, 1], [1, 0, 0], [0, 1, 0]], [[0, 1, 0], [-1, 0, 0], [0, 0, 1]], [[0, 1, 0], [0, 0, -1], [-1, 0, 0]], [[0, 1, 0], [0, 0, 1], [1, 0, 0]], [[0, 1, 0], [1, 0, 0], [0, 0, -1]], [[1, 0, 0], [0, -1, 0], [0, 0, -1]], [[1, 0, 0], [0, 0, -1], [0, 1, 0]], [[1, 0, 0], [0, 0, 1], [0, -1, 0]], [[1, 0, 0], [0, 1, 0], [0, 0, 1]]], \"normal_plane_value\": null, \"order\": 24, \"reason\": \"no rotation axis: common fixed locus has dimension 0, not 1\"}]}\n[PASS] anchor and scope do not select a unique count function\n[PASS] trace restriction equals actual normal-plane determinant on every subgroup\n[PASS] all cubic subgroup domain rows\n[PASS] finite seven-form filter\n[PASS] actual scope distinction\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212131Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

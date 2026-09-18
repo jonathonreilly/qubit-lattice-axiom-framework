@@ -1,0 +1,3 @@
+[PASS] opposite parity seeds allow lengths3and4
+[PASS] theta-free measured mass can coexist with motion
+TOTAL: PASS=2 FAIL=0

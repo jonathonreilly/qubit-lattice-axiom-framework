@@ -1,0 +1,2 @@
+[PASS] anchor and scope do not select a unique count function
+TOTAL: PASS=1 FAIL=0

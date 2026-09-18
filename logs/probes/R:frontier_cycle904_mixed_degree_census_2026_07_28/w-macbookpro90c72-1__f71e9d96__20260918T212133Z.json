@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle904_mixed_degree_census_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle904_mixed_degree_census_2026_07_28.py",
+ "seed": 66493,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212133Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0beecaa910d35845dba95b06a474273fa297f229507eddbbe6c1ef2243c307c1",
+ "stdout_tail": "egree homogeneous (scaling covaria\n  CLOSED                           degree-0 rational functionals (ratios / co\n  CLOSED                           subdivision-intensive readouts\n  CLOSED                           multiplicative anchor libraries\n  PRICED                           mixed-degree, zero constant term (the {0, \n  PRICED                           bilinear record-size relation I(R1) I(R2) \n  CROSS-BRANCH HANDOFF             M4\n  CROSS-BRANCH HANDOFF             M2 involutions\n  CROSS-BRANCH HANDOFF             M3\n  CROSS-BRANCH HANDOFF             non-involution mixed-degree (handoff row: \n  PRICED -- CLOSED FOR SELECTION   non-involution mixed-degree (the last unpr\n\n  C26: the old assembled shape rows are historical labels, including\n  unverified cross-branch material. Their count is not complete proof\n  coverage or closure of physical scale selection. Only the current finite\n  supplied-model results and explicit counterexamples are asserted.\n\n------------------------------------------------------------------------------\nSIBLING (CYCLE 898) HANDOFF -- CROSS-BRANCH, NOT VERIFIED HERE\n------------------------------------------------------------------------------\n  files scanned 0, bytes 0\n\n==============================================================================\nCYCLE 904 CERTIFICATES: ALL PASS\n==============================================================================\n\ncontrols: deterministic=True runtime_under_limit=True stdout=22369B cache=f15f47c1aa67a2a3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212134Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

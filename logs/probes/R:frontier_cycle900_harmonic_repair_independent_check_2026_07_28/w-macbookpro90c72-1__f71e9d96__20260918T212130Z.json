@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle900_harmonic_repair_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle900_harmonic_repair_independent_check_2026_07_28.py",
+ "seed": 66490,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212130Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "97e9e4a3e0c932a07cbbf117dd2ea24a7349d78daf95a3e295e5e996210ff283",
+ "stdout_tail": ",\n          \"16430\",\n          \"643483/4\",\n          \"2303405/2\",\n          \"12480301/2\",\n          \"104418625/4\",\n          \"681160865/8\",\n          \"1733625205/8\",\n          \"3409763091/8\",\n          \"1261980485/2\",\n          \"42202351303/64\",\n          \"3163783975/8\",\n          \"-1195083117/32\",\n          \"-331190100\",\n          \"-20147887941/64\",\n          \"-512135185/4\",\n          \"21047655/16\",\n          \"41352175/2\",\n          \"88831775/16\"\n        ],\n        \"norm_degree\": 20\n      },\n      {\n        \"axis_pair\": [\n          1,\n          4\n        ],\n        \"epsilon_one_tenth_is_root\": false,\n        \"field_primes\": [\n          2,\n          17\n        ],\n        \"norm_coefficients_high_to_low\": [\n          \"1\",\n          \"50\",\n          \"1142\",\n          \"15790\",\n          \"590275/4\",\n          \"1969785/2\",\n          \"4829262\",\n          \"70360355/4\",\n          \"378928721/8\",\n          \"734226705/8\",\n          \"947169739/8\",\n          \"300139615/4\",\n          \"-2767480577/64\",\n          \"-1178629185/8\",\n          \"-4508007329/32\",\n          \"-202490415/4\",\n          \"1003773611/64\",\n          \"80189085/4\",\n          \"82111275/16\",\n          \"-325125/2\",\n          \"-1625625/16\"\n        ],\n        \"norm_degree\": 20\n      }\n    ]\n  }\n}\nPASS correct_basic_field_norm\nPASS corrected_screened_pair_norms_have_unit_common_gcd\nPASS ambiguous_interval_not_called_exact_root\nPASS product_stabilizer_keeps_raw_sum\nPASS shape_ratios_cancel_independent_amplitude\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212130Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

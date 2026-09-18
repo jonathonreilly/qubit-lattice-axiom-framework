@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle906_orbit_constant_mass_dimension_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py",
+ "seed": 66844,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212724Z",
+ "elapsed_s": 9.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "de5a6182ff96cf8adb0ee5aecc5878ed01897946e25f571a63deaeb509f37d09",
+ "stdout_tail": "LITY\nCERTIFICATE SELF_CONTAINMENT PASS canonical_json_sha256=cba12217d7bfe443ece446cb9b91b83840893399fbf6eeb8aa9abd1bbbb6b002\nCERTIFICATE GROUP_STRUCTURE PASS canonical_json_sha256=75453cae78595a9649e696d1ea9fc527ea6a2cb7e9050f06ef4a120a5179b50b\nCERTIFICATE DIMENSION_LAWS PASS canonical_json_sha256=e5eabd00cad8f80596f171ec5a03549668fe2f0acdee0b383944700e5a86be43\nCERTIFICATE SUPPORT_CONTAINMENT PASS canonical_json_sha256=f70ec40ba9f6ccde997503aa567199ca6fec3ddc68f31f44a8e0b71a7f45548c\nCERTIFICATE EXTREME_POINTS PASS canonical_json_sha256=441c3941f41bcc16f2adc4d7fffc068b63e97e8342b67670a2e76a37d356e6ae\nCERTIFICATE NON_NEGATIVE_WITNESSES PASS canonical_json_sha256=593837b75ca2471f719c82c1b0887aa0411b9658fa211d9498877abcf419c276\nCERTIFICATE LARGE_DECLARED_INSTANCES PASS canonical_json_sha256=9762997a6fc5cc6ddb768fbdbaa3bfae344c49a53682d0ff4c1eec49306257c0\nCERTIFICATE ROUTE_INVENTORY PASS canonical_json_sha256=10eff14b772658856bc01a11d273998e7abe8a0ff17894d2679b6fd5e8496ec7\nCERTIFICATE MUTATION_TEETH PASS canonical_json_sha256=bb10c063c155c76527320ba5d2de46bbe454a218d660c880ecc6126ae251e1b3\nCERTIFICATE CLAIM_TEXT PASS canonical_json_sha256=1f06839fe4cd0ad7503475bf836ce2c458a01ce371a94178873e060aaed406c9\nCERTIFICATE SUMMARY PASS canonical_json_sha256=0a2ceda4dd56e1de8318a50ff88532bd8c520518e535926b272826b58c951e61\nRECEIPT outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json canonical_json_sha256=cce831995d5cc15c\nVERDICT ALL_CERTIFICATES_PASS\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212733Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

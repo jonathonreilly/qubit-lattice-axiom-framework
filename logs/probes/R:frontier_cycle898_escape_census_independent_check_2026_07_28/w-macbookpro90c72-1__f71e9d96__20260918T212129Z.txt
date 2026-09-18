@@ -1,0 +1,4 @@
+[PASS] negative quadratic constant rejected over reals
+[PASS] nonunital multiplicative library omits1
+[PASS] nonhomogeneous relation can select nonzero scale
+TOTAL: PASS=3 FAIL=0

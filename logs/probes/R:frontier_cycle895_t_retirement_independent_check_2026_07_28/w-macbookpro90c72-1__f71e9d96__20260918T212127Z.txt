@@ -1,0 +1,7 @@
+{"details": {"actual_receipt_controls": {"baseline": true, "changed_classification_rejected": true, "changed_count_rejected": true, "changed_state_rejected": true}, "actual_terminal_controls": {"clean": true, "empty": false, "failed": false, "refuted": false}, "partition_counts": {"all": 6, "never": 1146}, "root_counts": {"-1": 30, "0": 84, "1": 30}, "threshold_rows": [{"above_0_7": true, "deleted_norm2": "8", "full_norm2": "0", "nonzero": true, "t": "0"}, {"above_0_7": false, "deleted_norm2": "1/125000", "full_norm2": "0", "nonzero": true, "t": "999/1000"}, {"above_0_7": false, "deleted_norm2": "0", "full_norm2": "0", "nonzero": false, "t": "1"}, {"above_0_7": true, "deleted_norm2": "8", "full_norm2": "0", "nonzero": true, "t": "2"}]}, "refutations": []}
+[PASS] independent_s_coordinate_matches_all_supports
+[PASS] exact_partition_counts
+[PASS] actual_threshold_differs_from_nonzero
+[PASS] clean_baseline_and_changed_operands
+[PASS] actual_terminal_rejects_failure_empty_refutation
+TOTAL: PASS=5 FAIL=0

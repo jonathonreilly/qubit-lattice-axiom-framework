@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle904_mixed_degree_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle904_mixed_degree_independent_check_2026_07_28.py",
+ "seed": 66494,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212134Z",
+ "elapsed_s": 4.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e6eefb796a39091cee1b45f3a91d7e9a8fb9b02b5cde10ad51c8bb78a4268c80",
+ "stdout_tail": " exactly\n  CD_HEIGHT_BOUND                        H REFUTED AS A UNIVERSAL BOUND -- native evaluations above H exist at higher matrix powers and they reach values the primary's set does not contain\n  CE_V3_THEOREM                          V3 CLAIMS NOT REFUTED -- the core claims survive and every numeric gap disagreement falls on a row the primary correctly marked bound-relative\n  CF_FIDELITY                            FIDELITY ADJUDICATION UPHELD -- the hit survives two extra scopes (n = 5, 6), the competing-family count survives with a different alphabet, and no target literal appears anywhere in the census machinery outside the declared constants and the declared plants\n  CG_MINIMALITY                          MINIMALITY CLAIMS NOT REFUTED -- every one recomputed to the primary's published value\n  CH_TEETH                               8/8 teeth bit\n\n  Current consistency is determined by all required computed checks.\n  Wider-alphabet and height disagreements are explicitly different supplied\n  protocols. Exact inclusion preserves the original candidates only when the\n  full-set tests succeed; finite profiles and competing formulas imply no\n  physical no-go or probability.\n\n==============================================================================\nCHECKER COMPLETE -- required consistency/control failures return nonzero\n==============================================================================\n\ncontrols: refuted=2 teeth_bit=8/8 stdout=9755B receipt=d24342505a088c17\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212138Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'controls: refuted=2 teeth_bit=8/8 stdout=9755B receipt=d24342505a088c17' vs cache 'controls: refuted=2 teeth_bit=8/8 stdout=9755B receipt=55463d251d551560'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle904_mixed_degree_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,3 @@
+[PASS] skipped-pivot rank-deficient control
+[PASS] squared-amplitude cancellation endpoint
+TOTAL: PASS=2 FAIL=0

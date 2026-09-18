@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle905_weighting_exact_algebra_independent_check_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle905_weighting_exact_algebra_independent_check_2026_08_08.py",
+ "seed": 66735,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212535Z",
+ "elapsed_s": 108.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b5a31ff09daa7eeefc0aa8880ccf9cfaf7e113f0f3fac0b7377cf6fbc916e7ac",
+ "stdout_tail": ",{\"detected\":true,\"gate\":\"gate_per_family_digests\",\"mutation\":\"one per-family differing-cell-set digest is altered\",\"tooth\":\"tampered_per_family_digest\"},{\"detected\":true,\"gate\":\"gate_statements (verbatim rebuild)\",\"mutation\":\"one certified-statement text is replaced by false prose\",\"tooth\":\"tampered_statement_text\"}],\"teeth_count\":14,\"teeth_that_bit\":14}\nCERTIFICATE I_RUNTIME PASS {\"budget_sec\":900,\"certificate\":\"I_RUNTIME\",\"elapsed_sec\":107.621,\"pass\":true,\"within_budget\":true}\nCLAIM_SURVIVAL {\"base_rank\":true,\"certified_statements_text\":true,\"coefficient_identity_and_residual_set\":true,\"difference_support_cardinalities\":true,\"difference_support_sets\":true,\"event_space_digest\":true,\"everywhere_positive_min_mass\":true,\"lattice_factorizations\":true,\"mass_lattices\":true,\"min_event_numerators_rebuilt\":true,\"nonsingular_minor_rebuilt_at_worlds\":true,\"per_family_differing_cell_sets\":true,\"per_family_differing_cells\":true,\"total_factorizations_rebuilt\":true,\"totals_rebuilt\":true,\"zero_carrying_supports_identical\":true,\"zero_carrying_triple_rank\":true,\"zero_counts\":true,\"zero_set_identities_incl_M5\":true}\nSUMMARY_JSON {\"base_rank\":5,\"checker_verdict\":\"CORROBORATES\",\"checks\":{\"A_PINS\":true,\"B_INDEPENDENT_CENSUS\":true,\"C_INDEPENDENT_RANK\":true,\"D_ZERO_SETS_AND_POSITIVITY\":true,\"E_DIFFERENCE_SUPPORTS\":true,\"F_MASS_LATTICES\":true,\"G_CERTIFIED_STATEMENTS\":true,\"H_TEETH\":true,\"I_RUNTIME\":true},\"cycle\":905,\"elapsed_sec\":107.621,\"pass\":true}\nCYCLE905_SALVAGE_INDEPENDENT_CHECK_CORROBORATES\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212724Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle905_weighting_exact_algebra_independent_check_2026_08_08.txt against the .txt beside this log"
+  ]
+ }
+}

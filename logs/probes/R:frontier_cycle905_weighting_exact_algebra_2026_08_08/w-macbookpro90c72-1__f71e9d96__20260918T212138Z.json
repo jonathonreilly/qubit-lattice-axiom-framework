@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle905_weighting_exact_algebra_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle905_weighting_exact_algebra_2026_08_08.py",
+ "seed": 66498,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212138Z",
+ "elapsed_s": 236.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f3d1688f1ceabceaa2d541b58550c0176ab2777cd1f51b199f20c14e5557bda4",
+ "stdout_tail": " events)\nSTATEMENT difference_support_statement all ten candidate pairs differ somewhere; the three zero-carrying pairs differ on IDENTICALLY the same 19172 events (the formed-world block) and the same cells of every declared family, while the exact fraction values at those events differ -- an equal-support fact, not equality of weightings\nSTATEMENT mass_lattice_statement the totals and exact subset-mass lattices factor as recorded, with every factorization machine-verified; divisibility of a demanded denominator into the lattice is a NECESSARY condition only, and no subset realizability is decided\nSTATEMENT one_way_positivity_lemma CONDITIONAL, ONE-WAY: if a weighting's event masses are strictly positive on every event, then every NONEMPTY subset of events carries strictly positive total mass; hence such a weighting cannot satisfy any constraint that would require zero total mass on some nonempty subset.  On this model the hypothesis holds for M1 and M2 (minimum event numerators 1 and 8320).\nSUMMARY_JSON {\"checks\":{\"A_SOURCE_CONTROLS\":true,\"B_MODEL_BUILD\":true,\"C_RANK\":true,\"D_COEFFICIENT_IDENTITY\":true,\"E_ZERO_SETS\":true,\"F_DIFFERENCE_SUPPORTS\":true,\"G_MASS_LATTICES\":true,\"H_FALSIFIERS\":true,\"I_DOUBLE_BUILD\":true,\"J_RUNTIME\":true},\"cycle\":905,\"elapsed_sec\":235.933,\"pass\":true,\"rank\":5,\"zero_weight_events\":{\"M1_COUNTING\":0,\"M2_PER_WORLD_UNIFORM\":0,\"M3_OCCUPATION_WEIGHTED\":73088,\"M4_FORMATION_LIFETIME\":73088,\"M5_FORMATION_MOMENT\":76184}}\nCYCLE905_WEIGHTING_EXACT_ALGEBRA_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212535Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle905_weighting_exact_algebra_2026_08_08.txt against the .txt beside this log"
+  ]
+ }
+}

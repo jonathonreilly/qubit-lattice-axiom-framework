@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle902_p2_kernel_attack_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py",
+ "seed": 66491,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212131Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c1ba8ba988604d348ddecedd393faca62fbeb2930d9950ebf4db68ef660165b1",
+ "stdout_tail": "1, -2, -1], [-1, -2, 1], [-1, -1, 0], [-1, 0, -1]]}], \"linear_content\": 13, \"seed_support_mass\": \"1\", \"spectrum_rank\": 2, \"systems\": {\"all\": {\"augmented_rank\": 36, \"canonical_residual_nonzero\": 1, \"consistent\": false, \"equations\": 50, \"nullity\": 25, \"rank\": 35, \"unknowns\": 60}, \"bridge\": {\"augmented_rank\": 35, \"canonical_residual_nonzero\": 0, \"consistent\": true, \"equations\": 45, \"nullity\": 25, \"rank\": 35, \"unknowns\": 60}, \"bridge_content\": {\"augmented_rank\": 36, \"canonical_residual_nonzero\": 1, \"consistent\": false, \"equations\": 50, \"nullity\": 25, \"rank\": 35, \"unknowns\": 60}, \"bridge_null\": {\"augmented_rank\": 35, \"canonical_residual_nonzero\": 0, \"consistent\": true, \"equations\": 45, \"nullity\": 25, \"rank\": 35, \"unknowns\": 60}, \"theta_free\": {\"augmented_rank\": 56, \"canonical_residual_nonzero\": 8, \"consistent\": false, \"equations\": 93, \"nullity\": 5, \"rank\": 55, \"unknowns\": 60}}}}, \"realized_span_rank\": 5, \"spectrum_rows\": 108}\n[PASS] skipped-pivot rank-deficient control\n[PASS] squared-amplitude cancellation endpoint\n[PASS] independent DFS spectra give modular lower bound five and rational upper bound five\n[PASS] conditional content-identification consistency matches independently computed seed mass\n[PASS] original rank and separating evaluation\n[PASS] canonical full-grid reconstruction\n[PASS] original conditional linear consistency table\n[PASS] canonical bridge and null equations hold\n[PASS] single canonical content rows hold with fixed-normalizer nullity zero\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212132Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

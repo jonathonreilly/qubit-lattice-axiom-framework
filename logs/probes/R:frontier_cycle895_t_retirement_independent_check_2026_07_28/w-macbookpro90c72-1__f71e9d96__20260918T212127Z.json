@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle895_t_retirement_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle895_t_retirement_independent_check_2026_07_28.py",
+ "seed": 66487,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212127Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "045e879761fbcf6329c9bd6470822312dd58c4dc90c622dc27e0687d8634d158",
+ "stdout_tail": "{\"details\": {\"actual_receipt_controls\": {\"baseline\": true, \"changed_classification_rejected\": true, \"changed_count_rejected\": true, \"changed_state_rejected\": true}, \"actual_terminal_controls\": {\"clean\": true, \"empty\": false, \"failed\": false, \"refuted\": false}, \"partition_counts\": {\"all\": 6, \"never\": 1146}, \"root_counts\": {\"-1\": 30, \"0\": 84, \"1\": 30}, \"threshold_rows\": [{\"above_0_7\": true, \"deleted_norm2\": \"8\", \"full_norm2\": \"0\", \"nonzero\": true, \"t\": \"0\"}, {\"above_0_7\": false, \"deleted_norm2\": \"1/125000\", \"full_norm2\": \"0\", \"nonzero\": true, \"t\": \"999/1000\"}, {\"above_0_7\": false, \"deleted_norm2\": \"0\", \"full_norm2\": \"0\", \"nonzero\": false, \"t\": \"1\"}, {\"above_0_7\": true, \"deleted_norm2\": \"8\", \"full_norm2\": \"0\", \"nonzero\": true, \"t\": \"2\"}]}, \"refutations\": []}\n[PASS] independent_s_coordinate_matches_all_supports\n[PASS] exact_partition_counts\n[PASS] actual_threshold_differs_from_nonzero\n[PASS] clean_baseline_and_changed_operands\n[PASS] actual_terminal_rejects_failure_empty_refutation\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212128Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

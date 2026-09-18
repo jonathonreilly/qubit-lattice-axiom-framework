@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle903_sigma_theta_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle903_sigma_theta_2026_07_28.py",
+ "seed": 66492,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f71e9d96",
+ "started_utc": "20260918T212132Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b72dfd6a487dec453bc75b5fa4941cdcd7a890ef0ffed566ecf88c2736aec492",
+ "stdout_tail": "\", \"0\", \"100\", \"0\", \"0\"], \"theta_dependent\": true, \"two_lengths_in_window\": true, \"window_size\": 78}, {\"configuration\": \"sparse_b\", \"contains_support\": true, \"mass_samples\": [\"1111\", \"1223\", \"989647/841\", \"33391/25\", \"6363143/5329\", \"3646607/3721\"], \"no_positive_length_motion\": false, \"same_seed_parity\": true, \"sample_moves\": true, \"seeds\": [[-1, 0, -1]], \"spectrum\": [\"1167\", \"0\", \"200\", \"0\", \"0\"], \"theta_dependent\": true, \"two_lengths_in_window\": true, \"window_size\": 65}, {\"configuration\": \"offcentre_ball\", \"contains_support\": true, \"mass_samples\": [\"0\", \"0\", \"0\", \"0\", \"0\", \"0\"], \"no_positive_length_motion\": true, \"same_seed_parity\": true, \"sample_moves\": false, \"seeds\": [[2, -1, 1]], \"spectrum\": [\"0\", \"0\", \"0\", \"0\", \"0\"], \"theta_dependent\": false, \"two_lengths_in_window\": false, \"window_size\": 33}], \"theta_moving\": [\"single\", \"pair\", \"Lshape\", \"plane_square\", \"chain\", \"sparse_a\", \"sparse_b\"]}], \"measured_core\": [], \"mixed_seed_control\": {\"counts\": [0, 0, 0, 1, 1], \"depth\": 4, \"lengths\": [3, 4], \"mass_theta0\": \"1\", \"mass_theta1\": \"1/2\", \"radius\": 3, \"seeds\": [[-1, 0, 0], [0, 0, 0]], \"target\": [[3, 0, 0]]}}}\n[PASS] opposite parity seeds allow lengths3and4\n[PASS] theta-free measured mass can coexist with motion\n[PASS] DFS reproduces all layers on156barrier/configuration fixtures\n[PASS] positive cross-term criterion matches exact six-sample masses\n[PASS] actual mixed-seed masses\n[PASS] original finite incidence\n[PASS] product action and involution property\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212133Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

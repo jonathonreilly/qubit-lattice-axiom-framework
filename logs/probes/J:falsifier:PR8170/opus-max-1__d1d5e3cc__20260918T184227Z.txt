@@ -1,0 +1,23 @@
+== (1) exact P_k for k = 1..2000 (P_k = 9^-k sum_j C(k,j)^2 C(2j,j)); c0 = 3 sqrt3/(4 pi) in [0.413496671566344, 0.413496671566344]
+[1] lower bound violated at 0 k; upper bound violated at 0 k; S_t < c0 H_t - 1/4 at 0 t; S_t < c0 H_t - 6/25 at 0 t <= 150; undecided by the enclosures: 0 []   (39s)
+[1] min over t <= 2000 of S_t - c0 H_t = -0.140106 (bounds: -6/25 = -0.24 for t <= 150, -1/4 beyond)
+[1]   k =     1: k^2 (P_k - c0/k) = -0.080163; S_k - c0 H_k = -0.080163
+[1]   k =     2: k^2 (P_k - c0/k) = -0.086253; S_k - c0 H_k = -0.101726
+[1]   k =    10: k^2 (P_k - c0/k) = -0.100646; S_k - c0 H_k = -0.130441
+[1]   k =   150: k^2 (P_k - c0/k) = -0.103201; S_k - c0 H_k = -0.139472
+[1]   k =   500: k^2 (P_k - c0/k) = -0.103322; S_k - c0 H_k = -0.139951
+[1]   k =  1000: k^2 (P_k - c0/k) = -0.103348; S_k - c0 H_k = -0.140055
+[1]   k =  2000: k^2 (P_k - c0/k) = -0.103361; S_k - c0 H_k = -0.140106
+== (2) P_k by the periodic trapezoid rule for k up to 1000000 (aliasing bounded by Hoeffding)
+[2] k =     2000: M =   2001, P_k = 2.067224954725e-04 (error <= 4.3e-16); k^2 (P_k - c0/k) = -0.103361; margins in units of 1/k^2: lower +0.8966, upper +6748.4195  (0s)
+[2] k =     3000: M =   3001, P_k = 1.378207387941e-04 (error <= 4.3e-16); k^2 (P_k - c0/k) = -0.103366; margins in units of 1/k^2: lower +0.8966, upper +3625.0809  (0s)
+[2] k =     5000: M =   4306, P_k = 8.269519955332e-05 (error <= 4.2e-16); k^2 (P_k - c0/k) = -0.103369; margins in units of 1/k^2: lower +0.8966, upper +1052.5268  (0s)
+[2] k =    10000: M =   6064, P_k = 4.134863344080e-05 (error <= 4.2e-16); k^2 (P_k - c0/k) = -0.103372; margins in units of 1/k^2: lower +0.8966, upper +89.5909  (0s)
+[2] k =    20000: M =   8549, P_k = 2.067457514613e-05 (error <= 4.2e-16); k^2 (P_k - c0/k) = -0.103373; margins in units of 1/k^2: lower +0.8966, upper +27.7763  (1s)
+[2] k =    50000: M =  13480, P_k = 8.269892081873e-06 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103374; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (2s)
+[2] k =   100000: M =  19037, P_k = 4.134956378273e-06 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103374; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (3s)
+[2] k =   200000: M =  26896, P_k = 2.067480773476e-06 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103374; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (6s)
+[2] k =   500000: M =  42490, P_k = 8.269929296380e-07 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103374; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (17s)
+[2] k =  1000000: M =  60064, P_k = 4.134965681940e-07 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103372; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (33s)
+[time] 100s
+SUMMARY: T3 return sums: exact k <= 2000: 0 lower and 0 upper violations, harmonic bound violated at 0 t (6/25 version at 0 t <= 150); trapezoid k up to 1000000: 0 violations; k^2 (P_k - c0/k) tends to about -0.1034 (the bounds allow [-1, 27]); falsifier does not fire

@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8170",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block26-unsold",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8170/t3_return_sums_beyond_150.py",
+ "seed": 56947,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1d5e3cc",
+ "started_utc": "20260918T184227Z",
+ "elapsed_s": 100.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "T3 return sums: exact k <= 2000: 0 lower and 0 upper violations, harmonic bound violated at 0 t (6/25 version at 0 t <= 150); trapezoid k up to 1000000: 0 violations; k^2 (P_k - c0/k) tends to about -0.1034 (the bounds allow [-1, 27]); falsifier does not fire"
+ },
+ "review": "T3's two-sided bounds on the return sums hold exactly for every k <= 2000 (P_k = 9^-k sum_j C(k,j)^2 C(2j,j), rational enclosures, no undecided case) and at k = 2000..10^6 by the trapezoid rule with aliasing and rounding bounds (margins 0.90 and >= 27.1 in units of 1/k^2), the harmonic bounds S_t >= c0 H_t - 6/25 (t <= 150) and - 1/4 (t <= 2000) hold exactly (min S_t - c0 H_t = -0.1401), and k^2 (P_k - c0/k) tends to -0.1034, inside the [-1, 27] the bounds require; the D falsifier does not fire.",
+ "what": "PR #8170 ([physics-loop] admissibility-induced-law block26 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916; git show origin/physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916:<note>. Create probes/work/pr8170/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8170/<script>.py\"",
+ "stdout_sha256": "7cb9a51d6db043446b88441bfd0673b145c9a85f3bac714df7ab7a882a425dc0",
+ "stdout_tail": "2: lower +0.8966, upper +1052.5268  (0s)\n[2] k =    10000: M =   6064, P_k = 4.134863344080e-05 (error <= 4.2e-16); k^2 (P_k - c0/k) = -0.103372; margins in units of 1/k^2: lower +0.8966, upper +89.5909  (0s)\n[2] k =    20000: M =   8549, P_k = 2.067457514613e-05 (error <= 4.2e-16); k^2 (P_k - c0/k) = -0.103373; margins in units of 1/k^2: lower +0.8966, upper +27.7763  (1s)\n[2] k =    50000: M =  13480, P_k = 8.269892081873e-06 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103374; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (2s)\n[2] k =   100000: M =  19037, P_k = 4.134956378273e-06 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103374; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (3s)\n[2] k =   200000: M =  26896, P_k = 2.067480773476e-06 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103374; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (6s)\n[2] k =   500000: M =  42490, P_k = 8.269929296380e-07 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103374; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (17s)\n[2] k =  1000000: M =  60064, P_k = 4.134965681940e-07 (error <= 4.1e-16); k^2 (P_k - c0/k) = -0.103372; margins in units of 1/k^2: lower +0.8966, upper +27.1034  (33s)\n[time] 100s\nSUMMARY: T3 return sums: exact k <= 2000: 0 lower and 0 upper violations, harmonic bound violated at 0 t (6/25 version at 0 t <= 150); trapezoid k up to 1000000: 0 violations; k^2 (P_k - c0/k) tends to about -0.1034 (the bounds allow [-1, 27]); falsifier does not fire\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T184424Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -10,7 +10,30 @@
   "parse": {
    "lines": "(?m)^ *p=.*$"
   },
-  "what": "the six-axis formation law's memory scan on OTHER weight lines: --extra '<p values> --qr q r', e.g. '4 5 6 7 8 --qr 1 1' (block 28 located p in (10.5, 11) at (p,1,2); the lines (p,1,1), (p,2,4), (p,1,3) are unlocated). Report the p where the memory fraction at T crosses 1/2 and where it reaches 0; then refine with a finer p grid and L = 512."
+  "what": "the six-axis formation law's memory scan on OTHER weight lines: --extra '<p values> --qr q r', e.g. '4 5 6 7 8 --qr 1 1' (block 28 located p in (10.5, 11) at (p,1,2); the lines (p,1,1), (p,2,4), (p,1,3) are unlocated). Report the p where the memory fraction at T crosses 1/2 and where it reaches 0; then refine with a finer p grid and L = 512. GRID UNITS: the 7 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+  "grid": [
+   {
+    "extra": "4 6 8 10 12 14 16 20 24 32 --qr 1 1"
+   },
+   {
+    "extra": "4 6 8 10 12 14 16 20 24 32 --qr 1 3"
+   },
+   {
+    "extra": "4 6 8 10 12 14 16 20 24 32 --qr 2 4"
+   },
+   {
+    "extra": "4 6 8 10 12 14 16 20 24 32 --qr 1 4"
+   },
+   {
+    "extra": "4 6 8 10 12 14 16 20 24 32 --qr 2 3"
+   },
+   {
+    "extra": "4 6 8 10 12 14 16 20 24 32 --qr 3 5"
+   },
+   {
+    "extra": "10.5 10.6 10.7 10.8 10.9 11 --qr 1 2"
+   }
+  ]
  },
  {
   "id": "X:sixaxis-static-threshold-lines",
@@ -23,7 +46,30 @@
   "parse": {
    "lines": "(?m)^ *p=.*$"
   },
-  "what": "the six-axis STATIC law on other weight lines: --extra '<p values> --qr q r' (block 28: p in (3.6, 3.7) at (p,1,2) on L = 24 with 400 sweeps); locate the crossing on (p,1,1), (p,2,4), (p,1,3); then L = 32."
+  "what": "the six-axis STATIC law on other weight lines: --extra '<p values> --qr q r' (block 28: p in (3.6, 3.7) at (p,1,2) on L = 24 with 400 sweeps); locate the crossing on (p,1,1), (p,2,4), (p,1,3); then L = 32. GRID UNITS: the 7 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+  "grid": [
+   {
+    "extra": "2 2.5 3 3.5 4 4.5 5 6 7 8 --qr 1 1"
+   },
+   {
+    "extra": "2 2.5 3 3.5 4 4.5 5 6 7 8 --qr 1 3"
+   },
+   {
+    "extra": "2 2.5 3 3.5 4 4.5 5 6 7 8 --qr 2 4"
+   },
+   {
+    "extra": "2 2.5 3 3.5 4 4.5 5 6 7 8 --qr 1 4"
+   },
+   {
+    "extra": "2 2.5 3 3.5 4 4.5 5 6 7 8 --qr 2 3"
+   },
+   {
+    "extra": "2 2.5 3 3.5 4 4.5 5 6 7 8 --qr 3 5"
+   },
+   {
+    "extra": "3.55 3.6 3.65 3.7 3.75 --qr 1 2"
+   }
+  ]
  },
  {
   "id": "X:sphere-torus-memory-grid",
@@ -37,7 +83,117 @@
    "ratios": "ratio to sigma\\^2/L\\^2: ([0-9.]+)",
    "mabs": "mean \\|m\\| in the stationary regime ([0-9.]+)"
   },
-  "what": "the (beta, L) grid for the 1/|m|^2 law of block 34: one point per run, --extra 'beta L T seeds' with T >= 3 * 3 beta L^2 / A(3 beta) (A(k) = coth k - 1/k) and seeds >= 8; grid beta in {3, 4, 6, 8, 12, 16, 24, 48}, L in {16, 24, 32, 48, 64}. The log's ratios and |m| fill the table D_1/(sigma^2/L^2) vs 1/|m|^2; a systematic deviation from 1/|m|^2 beyond 10 % at any point is worth an issue."
+  "what": "the (beta, L) grid for the 1/|m|^2 law of block 34: one point per run, --extra 'beta L T seeds' with T >= 3 * 3 beta L^2 / A(3 beta) (A(k) = coth k - 1/k) and seeds >= 8; grid beta in {3, 4, 6, 8, 12, 16, 24, 48}, L in {16, 24, 32, 48, 64}. The log's ratios and |m| fill the table D_1/(sigma^2/L^2) vs 1/|m|^2; a systematic deviation from 1/|m|^2 beyond 10 % at any point is worth an issue. GRID UNITS: the 36 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+  "grid": [
+   {
+    "extra": "3 16 8000 8"
+   },
+   {
+    "extra": "3 24 18000 8"
+   },
+   {
+    "extra": "3 32 32000 8"
+   },
+   {
+    "extra": "3 48 70000 8"
+   },
+   {
+    "extra": "3 64 125000 8"
+   },
+   {
+    "extra": "4 16 11000 8"
+   },
+   {
+    "extra": "4 24 23000 8"
+   },
+   {
+    "extra": "4 32 41000 8"
+   },
+   {
+    "extra": "4 48 91000 8"
+   },
+   {
+    "extra": "4 64 161000 8"
+   },
+   {
+    "extra": "6 16 15000 8"
+   },
+   {
+    "extra": "6 24 33000 8"
+   },
+   {
+    "extra": "6 32 59000 8"
+   },
+   {
+    "extra": "6 48 132000 8"
+   },
+   {
+    "extra": "6 64 235000 8"
+   },
+   {
+    "extra": "8 16 20000 8"
+   },
+   {
+    "extra": "8 24 44000 8"
+   },
+   {
+    "extra": "8 32 77000 8"
+   },
+   {
+    "extra": "8 48 174000 8"
+   },
+   {
+    "extra": "8 64 308000 8"
+   },
+   {
+    "extra": "12 16 29000 8"
+   },
+   {
+    "extra": "12 24 64000 8"
+   },
+   {
+    "extra": "12 32 114000 8"
+   },
+   {
+    "extra": "12 48 256000 8"
+   },
+   {
+    "extra": "12 64 456000 8"
+   },
+   {
+    "extra": "16 16 38000 8"
+   },
+   {
+    "extra": "16 24 85000 8"
+   },
+   {
+    "extra": "16 32 151000 8"
+   },
+   {
+    "extra": "16 48 339000 8"
+   },
+   {
+    "extra": "24 16 57000 8"
+   },
+   {
+    "extra": "24 24 127000 8"
+   },
+   {
+    "extra": "24 32 225000 8"
+   },
+   {
+    "extra": "24 48 505000 8"
+   },
+   {
+    "extra": "48 16 112000 8"
+   },
+   {
+    "extra": "48 24 251000 8"
+   },
+   {
+    "extra": "48 32 446000 8"
+   }
+  ]
  },
  {
   "id": "X:sphere-kernel-grid",
@@ -51,7 +207,153 @@
    "shells": "mean ratio ([0-9.]+)",
    "mabs": "mean \\|m\\| = ([0-9.]+)"
   },
-  "what": "the normalization c(beta, |k|) of block 35 on a grid: --extra 'beta L T T0 seed' with L in {128, 256, 512}, beta in {3, 4, 6, 8, 12, 16, 24, 48}, T0 >= 2000, T - T0 >= 2000. Report the shell ratios; the questions are whether c depends on L at fixed beta (block 35: 0.83 at |k| < 0.3 for L = 256, beta = 6) and how c(beta) approaches 1."
+  "what": "the normalization c(beta, |k|) of block 35 on a grid: --extra 'beta L T T0 seed' with L in {128, 256, 512}, beta in {3, 4, 6, 8, 12, 16, 24, 48}, T0 >= 2000, T - T0 >= 2000. Report the shell ratios; the questions are whether c depends on L at fixed beta (block 35: 0.83 at |k| < 0.3 for L = 256, beta = 6) and how c(beta) approaches 1. GRID UNITS: the 48 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+  "grid": [
+   {
+    "extra": "3 128 6000 2000 1"
+   },
+   {
+    "extra": "3 128 6000 2000 2"
+   },
+   {
+    "extra": "3 256 6000 2000 1"
+   },
+   {
+    "extra": "3 256 6000 2000 2"
+   },
+   {
+    "extra": "3 512 6000 2000 1"
+   },
+   {
+    "extra": "3 512 6000 2000 2"
+   },
+   {
+    "extra": "4 128 6000 2000 1"
+   },
+   {
+    "extra": "4 128 6000 2000 2"
+   },
+   {
+    "extra": "4 256 6000 2000 1"
+   },
+   {
+    "extra": "4 256 6000 2000 2"
+   },
+   {
+    "extra": "4 512 6000 2000 1"
+   },
+   {
+    "extra": "4 512 6000 2000 2"
+   },
+   {
+    "extra": "6 128 6000 2000 1"
+   },
+   {
+    "extra": "6 128 6000 2000 2"
+   },
+   {
+    "extra": "6 256 6000 2000 1"
+   },
+   {
+    "extra": "6 256 6000 2000 2"
+   },
+   {
+    "extra": "6 512 6000 2000 1"
+   },
+   {
+    "extra": "6 512 6000 2000 2"
+   },
+   {
+    "extra": "8 128 6000 2000 1"
+   },
+   {
+    "extra": "8 128 6000 2000 2"
+   },
+   {
+    "extra": "8 256 6000 2000 1"
+   },
+   {
+    "extra": "8 256 6000 2000 2"
+   },
+   {
+    "extra": "8 512 6000 2000 1"
+   },
+   {
+    "extra": "8 512 6000 2000 2"
+   },
+   {
+    "extra": "12 128 6000 2000 1"
+   },
+   {
+    "extra": "12 128 6000 2000 2"
+   },
+   {
+    "extra": "12 256 6000 2000 1"
+   },
+   {
+    "extra": "12 256 6000 2000 2"
+   },
+   {
+    "extra": "12 512 6000 2000 1"
+   },
+   {
+    "extra": "12 512 6000 2000 2"
+   },
+   {
+    "extra": "16 128 6000 2000 1"
+   },
+   {
+    "extra": "16 128 6000 2000 2"
+   },
+   {
+    "extra": "16 256 6000 2000 1"
+   },
+   {
+    "extra": "16 256 6000 2000 2"
+   },
+   {
+    "extra": "16 512 6000 2000 1"
+   },
+   {
+    "extra": "16 512 6000 2000 2"
+   },
+   {
+    "extra": "24 128 6000 2000 1"
+   },
+   {
+    "extra": "24 128 6000 2000 2"
+   },
+   {
+    "extra": "24 256 6000 2000 1"
+   },
+   {
+    "extra": "24 256 6000 2000 2"
+   },
+   {
+    "extra": "24 512 6000 2000 1"
+   },
+   {
+    "extra": "24 512 6000 2000 2"
+   },
+   {
+    "extra": "48 128 6000 2000 1"
+   },
+   {
+    "extra": "48 128 6000 2000 2"
+   },
+   {
+    "extra": "48 256 6000 2000 1"
+   },
+   {
+    "extra": "48 256 6000 2000 2"
+   },
+   {
+    "extra": "48 512 6000 2000 1"
+   },
+   {
+    "extra": "48 512 6000 2000 2"
+   }
+  ]
  },
  {
   "id": "X:sphere-plane-decay-long",
@@ -64,7 +366,27 @@
   "parse": {
    "last": "t= *\\d+ +\\|m\\|=[0-9.]+ +m_z=[-0-9.]+"
   },
-  "what": "block 26's open question on the infinite plane: does |m| ever plateau? --extra 'beta L T' with L >= 1024 and T >= 100000 at beta in {12, 24, 48} (block 26: no plateau to 2e4 levels at L = 512). Log the whole table; a plateau (|m| flat over a decade of t while L^2 >> t) is a HIT-worthy observation to report by issue even though no pattern is set."
+  "what": "block 26's open question on the infinite plane: does |m| ever plateau? --extra 'beta L T' with L >= 1024 and T >= 100000 at beta in {12, 24, 48} (block 26: no plateau to 2e4 levels at L = 512). Log the whole table; a plateau (|m| flat over a decade of t while L^2 >> t) is a HIT-worthy observation to report by issue even though no pattern is set. GRID UNITS: the 6 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+  "grid": [
+   {
+    "extra": "12 1024 100000"
+   },
+   {
+    "extra": "12 2048 100000"
+   },
+   {
+    "extra": "24 1024 100000"
+   },
+   {
+    "extra": "24 2048 100000"
+   },
+   {
+    "extra": "48 1024 100000"
+   },
+   {
+    "extra": "48 2048 100000"
+   }
+  ]
  },
  {
   "id": "S:construction-children",

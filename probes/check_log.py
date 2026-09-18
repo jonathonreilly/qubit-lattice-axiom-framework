@@ -10,6 +10,7 @@ committed: fix the cause (re-run with the right arguments, or complete the scrip
 
 Exit code 0 = PASS, 1 = FAIL."""
 import argparse, json, os, re, subprocess, sys, datetime, hashlib
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def git(*args):
@@ -30,6 +31,8 @@ def cache_stdout(runner_name):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("log"); ap.add_argument("--reviewer", default=""); ap.add_argument("--review", default="", help="add or replace the review sentence in the log before checking")
+    ap.add_argument("--triage-note", default="", help="the reader's sentence for a triage; the finder's review sentence is kept")
+    ap.add_argument("--verdict", default="", choices=["", "science", "false-positive", "machine"], help="triage of a hit or a failed check by a reader: science (open ONE issue per task), false-positive (the task's pattern is wrong: no issue), machine (missing package, timeout: no issue)")
     a = ap.parse_args()
     findings, ok = [], True
     def fail(msg):
@@ -53,7 +56,8 @@ def main():
         else:
             note("stdout file matches its hash")
     tasks = {t["id"]: t for t in json.load(open(os.path.join(ROOT, "probes", "TASKS.json")))}
-    task = tasks.get(log.get("task"))
+    import tasklib
+    task = tasks.get(log.get("task")) or tasklib.synth(str(log.get("task")), list(tasks))
     if not task:
         fail(f"unknown task id {log.get('task')!r} (regenerate TASKS.json or fix the id)")
     for k in ("worker", "command", "git_sha", "started_utc", "returncode"):
@@ -73,12 +77,16 @@ def main():
     if task:
         # re-derive hit and parse fields from the saved stdout
         hit = bool(task.get("hit_pattern")) and re.search(task["hit_pattern"], stdout) is not None
-        if hit != bool(log.get("hit")):
+        if hit != bool(log.get("hit")) and (a.verdict or log.get("triage", {}).get("verdict")) == "false-positive":
+            note(f"hit field {log.get('hit')} was a false positive of an earlier pattern (triaged); the current pattern gives {hit}")
+        elif hit != bool(log.get("hit")):
             fail(f"hit field {log.get('hit')} disagrees with the task's hit pattern on the stdout ({hit})")
         else:
             note(f"hit field consistent ({hit})")
         for name, pat in task.get("parse", {}).items():
-            if not re.findall(pat, stdout):
+            if not re.findall(pat, stdout) and (a.verdict or log.get("triage", {}).get("verdict")) == "false-positive":
+                note(f"parse field {name!r} not found (log written under an earlier task definition; triaged)")
+            elif not re.findall(pat, stdout):
                 fail(f"parse field {name!r} found nothing in the stdout: the run may not have reached its summary")
         if task.get("expect_pattern") and not re.search(task["expect_pattern"], stdout):
             fail("expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)")
@@ -130,6 +138,8 @@ def main():
         fail("no `review` sentence in the log: re-run with --review \"<one sentence: what the output shows and whether it matches the task's description>\" or add it now with --reviewer")
     if a.reviewer and not log.get("review"):
         pass
+    if a.verdict:
+        log["triage"] = {"verdict": a.verdict, "note": a.triage_note, "by": a.reviewer or log.get("worker"), "at_utc": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")}
     log["checked"] = {"by": a.reviewer or log.get("worker"), "at_utc": datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ"), "result": "PASS" if ok else "FAIL", "findings": findings}
     json.dump(log, open(a.log, "w"), indent=1)
     for f in findings: print(f)

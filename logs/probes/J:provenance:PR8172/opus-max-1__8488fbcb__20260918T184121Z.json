@@ -21,12 +21,19 @@
  "stdout_sha256": "67319ced7d76b99d304636d3e0e3f4431f6ff8fbce8d32e1bab0b37937765ecd",
  "stdout_tail": ", no derivation in this note; printed by supervisor_control_block28_scan_static_sixaxis.out.txt lines 22,23,29,30; control brackets of the order: stat_sixaxis_L16.txt: (3.5, 4.0); stat_sixaxis_L24.txt: (3.5, 4.0); stat_sixaxis_L24_fine.txt: (3.6, 3.7); stat_sixaxis_L32_fine.txt: (3.6, 3.7); single-site proposals (refuter, L=16): (3.6, 3.8); runs at p = 3.7: stat_sixaxis_L24_fine.txt, stat_sixaxis_L32_fine.txt only (none on 16^3, none with single-site proposals): MISMATCH with the stated run list '16^3, 24^3, 32^3 ... heat bath and single-site proposals' for the bracket (3.6, 3.7)\nHIT: exec-sphere | claim_scope | executed-not-claimed: static sphere bracket | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block28_scan_static_sphere.out.txt lines 6,14,18,19,20,21; control |m| on 24^3 fine: 0.66: 0.0676, 0.68: 0.1144, 0.70: 0.2534, 0.72: 0.3607\nHIT: exec-third | claim_scope | executed-not-claimed: static/formation ratio | not printed by the runner (cache), no derivation in this note; printed by no other file of the PR\n[COVERAGE] 90 numeric tokens in the statement text; uncovered 0\nSUMMARY: 35 items over claim_scope + 3 theorem sections (90 numeric tokens, 0 uncovered): cache-sourced 13, derived here from the note's formulas 4, definitions 2, excluded 10; unsourced 6 = 0 in the proved statements (none) + 6 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: exec-T2-405, exec-static\n",
  "checked": {
-  "by": "opus-max-1",
-  "at_utc": "20260918T184132Z",
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203605Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8488fbcb differs from the current HEAD edf8e572 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203605Z",
+  "note": "supervisor triage: real, executed numbers only. T2's parenthetical pairs the runner's 120 islands with the spec's ratio from 200 islands. No proved statement affected. Corrigendum owed on PR 8172."
  }
 }

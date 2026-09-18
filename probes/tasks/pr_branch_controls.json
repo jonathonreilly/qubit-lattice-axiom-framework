@@ -36,12 +36,30 @@
   "tier": 1,
   "command": "python3 probes/lib/block29_kernel.py {L} {EXTRA}",
   "cwd": ".",
-  "timeout_s": 14400,
+  "timeout_s": 21600,
   "hit_pattern": "(?!x)x",
   "parse": {
    "m": "beta=\\s*([0-9.]+): m = ([0-9.]+)",
    "kernel": "n  beta E\\(k\\) S_perp\\(k\\): (.*)"
   },
-  "what": "block 29's kernel normalization measurement in the ordered sphere static law on the L^3 torus: beta E(k) S_perp(k) against the bounds (m^2/3)^2 .. 1 (block 19). Fill the grid L in {8, 12, 16, 24}, beta in {0.8, 1.0, 1.5, 2.0, 3.0, 6.0}; run e.g. --L 16 --extra '4000 1000 1.0 2.0 3.0' (sweeps, thermalisation, betas). Value: the table; no hit pattern (a value above 1 is reported to the reviewer as a HIT by hand)."
+  "what": "block 29's kernel normalization measurement in the ordered sphere static law on the L^3 torus: beta E(k) S_perp(k) against the bounds (m^2/3)^2 .. 1 (block 19). Fill the grid L in {8, 12, 16, 24}, beta in {0.8, 1.0, 1.5, 2.0, 3.0, 6.0}; run e.g. --L 16 --extra '4000 1000 1.0 2.0 3.0' (sweeps, thermalisation, betas). Value: the table; no hit pattern (a value above 1 is reported to the reviewer as a HIT by hand). GRID UNITS: the 4 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+  "grid": [
+   {
+    "extra": "4000 1000 0.8 1.0 1.5 2.0 3.0 6.0",
+    "box": "0x0x8"
+   },
+   {
+    "extra": "4000 1000 0.8 1.0 1.5 2.0 3.0 6.0",
+    "box": "0x0x12"
+   },
+   {
+    "extra": "4000 1000 0.8 1.0 1.5 2.0 3.0 6.0",
+    "box": "0x0x16"
+   },
+   {
+    "extra": "8000 2000 0.8 1.0 1.5 2.0 3.0 6.0",
+    "box": "0x0x24"
+   }
+  ]
  }
 ]

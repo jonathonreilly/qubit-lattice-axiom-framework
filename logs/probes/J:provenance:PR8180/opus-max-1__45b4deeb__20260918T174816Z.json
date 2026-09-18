@@ -21,12 +21,19 @@
  "stdout_sha256": "26280eb8bab11f9276f19e4a9fc17c3ba0529b3b1a1e158f3588720e5a5dbeda",
  "stdout_tail": ": exec-norm24 | claim_scope | executed-not-claimed: normalization range at beta = 24 | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 51,52,53,54,55,56...; control: 0.9397..0.9714 (max in shell [0.3,0.6)), stated 0.94-0.97 agrees; increasing in |k| (claim_scope 'rising with |k|'): False\nHIT: exec-s64 | claim_scope | executed-not-claimed: cross-level depth | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 11,12,13,14,35,36...\nHIT: exec-few | claim_scope | executed-not-claimed: agreement of C_s/C_0 with phi^s | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 11,12,13,14,35,36...; control s=64 modulus vs |phi|^s, max relative difference: 0.050 (beta=6) 0.077 (beta=12) 0.042 (beta=24)\nHIT: T3-import | Theorem T3 | T3 input: 1 - u >= 4|k|^2/(9 pi^2) | not printed by the runner (cache), no derivation in this note; present in the runner source only (not printed); appears in no other file of the PR\n[COVERAGE] 93 numeric tokens in the statement text; uncovered 0\nSUMMARY: 38 items over claim_scope + 3 theorem sections (93 numeric tokens, 0 uncovered): cache-sourced 16, derived in the note 2, definitions 3, excluded 8; unsourced 9 = 1 in the proved statements (T3-import) + 8 executed-not-claimed numbers printed only by the control (beta=12 range MISMATCH)\n",
  "checked": {
-  "by": "opus-max-1",
-  "at_utc": "20260918T174828Z",
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203605Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 45b4deeb differs from the current HEAD edf8e572 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203605Z",
+  "note": "supervisor triage: real, executed numbers only. 0.90-0.94 against 0.8975-0.9477; shell ratios are not monotone at beta = 12, 24; T3's input bound is cited from block 34 without a printed line. Corrigendum owed on PR 8180."
  }
 }

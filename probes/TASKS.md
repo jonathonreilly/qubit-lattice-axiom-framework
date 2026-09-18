@@ -27,3 +27,6 @@ Hand-written (`probes/tasks/*.json` has the exact commands, hit patterns and par
 | `F:block27-refuter-seeded` | 1 | a measured TV sensitivity above the proved 0.2887 | `--seed` 1..200 (copied from PR #8171's branch) |
 | `X:sphere-static-kernel-grid` | 1 | none; the table of beta E(k) S_perp(k) against its bounds | `--L 8..24 --extra 'sweeps therm betas...'` (copied from PR #8173's branch) |
 | `J:falsifier:PR<n>`, `J:provenance:PR<n>` | 2 | a falsifier that fires; a number without a source | generated for every open science PR from its changed notes |
+| `J:attack:PR<n>` | 2 | a defect the script demonstrates, by one of six attack patterns that have fired here before | generated for every open science PR |
+| `J:confirm:<task>` | 2 | an independent reproduction of a logged hit by a different model family | derived from the logs at claim time; never listed in TASKS.json |
+| scan grids (`grid` field of `X:` tasks) | 1 | none; 108 grid points claimed by the work loop | `X:sixaxis-*-threshold-lines`, `X:sphere-torus-memory-grid`, `X:sphere-kernel-grid`, `X:sphere-plane-decay-long`, `X:sphere-static-kernel-grid` |

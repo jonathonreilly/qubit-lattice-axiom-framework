@@ -28,5 +28,21 @@
  },
  "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
  "stdout_sha256": "7d9e6bd3effb88d9227d251f78dfdee665af421f5616b75192c93d829c8df489",
- "stdout_tail": "PR #8026: [physics-loop] spatial-area block36 conditional-support\nbranch codex/spatial-area-block36-20260907 (base codex/local-observable-block35-20260907)\nrunners in the PR: 2\n== scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py: rc=0 no TOTAL line\nPASS gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py\nper_element: 1 checks; actual 192-face projection chain map\nper_site: 2 checks; projected rank and constant-sheet kernel\nper_mode: 4 checks; four frozen affine filling cases\nper_block: 8 checks; four minima and four actual lifted boundaries\nlattice_wide: 4 checks; three adverse controls and positive resources; no polymer proof\nTOTAL: 19\nseconds: 0.002714875037781894; rss_MiB: 21.703125\nsource_sha256: f171aa356f6e7d07992dc28c48f2ee96c65873c709d1d22c0f3dbc1506070d69\n\n== scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py: rc=0 no TOTAL line\nPASS gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py\nper_element: 4 checks; finite Haar-index/arithmetic controls; analytic Haar identity is imported\nper_site: 3 checks; actual two-cube graph and shared link\nper_mode: 4 checks; orders zero to two center census\nper_block: 4 checks; two coefficients, wrong denominator and normalization\nlattice_wide: 18 checks; ten planar, seven periodic and one resource controls; no uniform analytic radius\nTOTAL: 33\nseconds: 0.00541787501424551; rss_MiB: 22.171875\nsource_sha256: d80f58cfe852b06ab3c298fe29d3784f6371576710806a5488363c642a1645cf\n"
+ "stdout_tail": "PR #8026: [physics-loop] spatial-area block36 conditional-support\nbranch codex/spatial-area-block36-20260907 (base codex/local-observable-block35-20260907)\nrunners in the PR: 2\n== scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py: rc=0 no TOTAL line\nPASS gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py\nper_element: 1 checks; actual 192-face projection chain map\nper_site: 2 checks; projected rank and constant-sheet kernel\nper_mode: 4 checks; four frozen affine filling cases\nper_block: 8 checks; four minima and four actual lifted boundaries\nlattice_wide: 4 checks; three adverse controls and positive resources; no polymer proof\nTOTAL: 19\nseconds: 0.002714875037781894; rss_MiB: 21.703125\nsource_sha256: f171aa356f6e7d07992dc28c48f2ee96c65873c709d1d22c0f3dbc1506070d69\n\n== scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py: rc=0 no TOTAL line\nPASS gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py\nper_element: 4 checks; finite Haar-index/arithmetic controls; analytic Haar identity is imported\nper_site: 3 checks; actual two-cube graph and shared link\nper_mode: 4 checks; orders zero to two center census\nper_block: 4 checks; two coefficients, wrong denominator and normalization\nlattice_wide: 18 checks; ten planar, seven periodic and one resource controls; no uniform analytic radius\nTOTAL: 33\nseconds: 0.00541787501424551; rss_MiB: 22.171875\nsource_sha256: d80f58cfe852b06ab3c298fe29d3784f6371576710806a5488363c642a1645cf\n",
+ "triage": {
+  "verdict": "false-positive",
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203545Z",
+  "note": "supervisor triage: the runners exit 0 with a count-only or JSON verdict; the old script demanded a TOTAL: PASS/FAIL line; fixed in bddd02a2bc"
+ },
+ "checked": {
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203545Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 7f0ede5a differs from the current HEAD edf8e572 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field True was a false positive of an earlier pattern (triaged); the current pattern gives False"
+  ]
+ }
 }

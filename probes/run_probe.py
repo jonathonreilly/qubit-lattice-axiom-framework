@@ -12,6 +12,7 @@ after looking at the output — run once without it to see the output, then re-r
 The worker commits ONLY files under logs/probes/ (and, for judgment tasks, probes/work/) and pushes to ai/probes (pull --rebase first).
 Nothing here modifies notes, runners or packs."""
 import argparse, json, os, subprocess, sys, time, datetime, hashlib, shlex, re
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def git_sha():
@@ -55,9 +56,10 @@ def main():
     ap.add_argument("--box", default=""); ap.add_argument("--extra", default=""); ap.add_argument("--review", default="")
     args = ap.parse_args()
     tasks = load_tasks()
-    if args.task_id not in tasks:
+    import tasklib
+    task = tasks.get(args.task_id) or tasklib.synth(args.task_id, list(tasks))
+    if not task:
         print("unknown task; see probes/TASKS.json"); return 2
-    task = tasks[args.task_id]
     if task.get("direct"):
         print("this task runs through its own script:"); print("   " + task["command"].replace("{EXTRA}", args.extra) + f" --worker {args.worker}" + (f" --model {args.model}" if args.model else "") + (f' --review "{args.review}"' if args.review else ""))
         return 3

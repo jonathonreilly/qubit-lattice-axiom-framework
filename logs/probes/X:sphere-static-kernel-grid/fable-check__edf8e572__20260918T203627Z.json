@@ -1,0 +1,65 @@
+{
+ "task": "X:sphere-static-kernel-grid",
+ "type": "scan",
+ "lane": "admissibility-block29",
+ "worker": "fable-check",
+ "model": "",
+ "command": "python3 probes/lib/block29_kernel.py 8 4000 1000 0.8 1.0 1.5 2.0 3.0 6.0",
+ "seed": 63787,
+ "minutes": 10,
+ "box": "0x0x8",
+ "git_sha": "edf8e572",
+ "started_utc": "20260918T203627Z",
+ "elapsed_s": 6.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "m": [
+   [
+    "0.80",
+    "0.5712"
+   ],
+   [
+    "1.00",
+    "0.7067"
+   ],
+   [
+    "1.50",
+    "0.8275"
+   ],
+   [
+    "2.00",
+    "0.8758"
+   ],
+   [
+    "3.00",
+    "0.9204"
+   ],
+   [
+    "6.00",
+    "0.9614"
+   ]
+  ],
+  "kernel": [
+   "0.890 0.910 0.921 0.954",
+   "0.953 0.972 0.961 0.901",
+   "0.910 0.947 0.969 0.977",
+   "1.009 0.971 0.975 0.943",
+   "0.920 0.968 0.997 0.984",
+   "0.957 0.985 1.019 0.968"
+  ]
+ },
+ "review": "grid point L = 8 run as the loop would run it: beta E S_perp between its bounds at every beta, largest value below 1",
+ "what": "block 29's kernel normalization measurement in the ordered sphere static law on the L^3 torus: beta E(k) S_perp(k) against the bounds (m^2/3)^2 .. 1 (block 19). Fill the grid L in {8, 12, 16, 24}, beta in {0.8, 1.0, 1.5, 2.0, 3.0, 6.0}; run e.g. --L 16 --extra '4000 1000 1.0 2.0 3.0' (sweeps, thermalisation, betas). Value: the table; no hit pattern (a value above 1 is reported to the reviewer as a HIT by hand). GRID UNITS: the 4 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "a1e9216ba2c5592ad1db0a90f057bded29333f8e5f82b16031ac4e40c97c4fae",
+ "stdout_tail": "sphere static law, L=8, sweeps=4000 (thermalisation 1000); k = 2 pi n/L along e_1; E(k) = 2(1 - cos k)\n  beta=0.80: m = 0.5712, m^2 = 0.3263, (m^2/3)^2 = 0.0118   (1s)\n    n  beta E(k) S_perp(k): 0.890 0.910 0.921 0.954\n    T(r) r=0..8: 0.2634 0.0673 0.0191 0.0044 0.0012\n  beta=1.00: m = 0.7067, m^2 = 0.4994, (m^2/3)^2 = 0.0277   (1s)\n    n  beta E(k) S_perp(k): 0.953 0.972 0.961 0.901\n    T(r) r=0..8: 0.2122 0.0547 0.0149 0.0022 -0.0010\n  beta=1.50: m = 0.8275, m^2 = 0.6847, (m^2/3)^2 = 0.0521   (1s)\n    n  beta E(k) S_perp(k): 0.910 0.947 0.969 0.977\n    T(r) r=0..8: 0.1437 0.0367 0.0099 0.0017 -0.0003\n  beta=2.00: m = 0.8758, m^2 = 0.7669, (m^2/3)^2 = 0.0654   (1s)\n    n  beta E(k) S_perp(k): 1.009 0.971 0.975 0.943\n    T(r) r=0..8: 0.1092 0.0283 0.0078 0.0012 -0.0004\n  beta=3.00: m = 0.9204, m^2 = 0.8472, (m^2/3)^2 = 0.0797   (1s)\n    n  beta E(k) S_perp(k): 0.920 0.968 0.997 0.984\n    T(r) r=0..8: 0.0733 0.0190 0.0053 0.0012 0.0001\n  beta=6.00: m = 0.9614, m^2 = 0.9244, (m^2/3)^2 = 0.0949   (1s)\n    n  beta E(k) S_perp(k): 0.957 0.985 1.019 0.968\n    T(r) r=0..8: 0.0371 0.0097 0.0028 0.0006 0.0001\n",
+ "checked": {
+  "by": "fable-check",
+  "at_utc": "20260918T203633Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

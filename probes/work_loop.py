@@ -59,6 +59,7 @@ def inner(a):
                     cmd = [sys.executable, "probes/run_probe.py", r["task"], "--worker", worker, "--review", review]
                     if "seed" in r: cmd += ["--seed", str(r["seed"])]
                     if r.get("box"): cmd += ["--box", r["box"]]
+                    if r.get("extra"): cmd += ["--extra", r["extra"]]
                     if r.get("minutes"): cmd += ["--minutes", str(r["minutes"])]
                 if a.model: cmd += ["--model", a.model]
                 p = subprocess.run(cmd, cwd=root, text=True, capture_output=True); out = p.stdout + p.stderr; ran += 1

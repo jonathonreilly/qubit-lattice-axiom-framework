@@ -21,12 +21,19 @@
  "stdout_sha256": "c08ae84b2eada36fe63e5e8fcaa65e171f362699ccbc5c56aee1ad2846e0efd8",
  "stdout_tail": "parator_111  T-a separable: False   T-b separable: False   T-c plane factor x propagator^tau: True\n[DEC] exact closed forms verified on all L = 4, 6 modes: True; exact identity 1/G^ = 3(1/C^ + 1 - u): True\n[DEC] representations in which the formation kernel has the product form and the comparator lacks it: none\nHIT: T3/D2 - the note's own test (plane x axis separability in full momentum, exact cross-ratios) finds the formation kernel's spectral density 1/|1 - phi e^(iw)|^2 non-product in 8721/9555 quadruples (L = 4: R = 4 at q = 2pi(0, 1)/4, q' = 2pi(0, 2)/4, w = 2pi*0/4, w' = 2pi*1/4), as it finds 1/E (7072/9555 along e3, 8567/9555 along (1,1,1))\nHIT: T3/D2 - in the mixed (q, tau) representation the comparator's Z^3 Green function is (plane factor) x (propagator)^tau along (1,1,1) [r = conj(phi)/(1 + sqrt(1-u)), C0 = 1/(6 sqrt(1-u))] and along e3 [r = lambda(k_perp)]: max |r_tau/r_0 - 1| = 1.7e-10 / 8.3e-11 over 9215 modes, tau <= 64 (formation: 1.9e-10); closed forms exact on all L = 4, 6 grid modes\n[time] 61.4s\nSUMMARY: T3/D2 product-form test on both kernels - T-a full-momentum separability: formation non-product 8721/9555, comparator 7072/9555 (e3) and 8567/9555 (1,1,1); T-b (q, tau) separability: formation 11366/11718, comparator 11366/11718 non-product; T-c propagator form holds for both (max dev 1.9e-10 formation, 1.7e-10 (1,1,1), 8.3e-11 e3; L = 96, M = 131072, tau <= 64); distinguishing representations: none; exact identity 1/G^ = 3(1/C^ + 1 - u) on all grid points\n",
  "checked": {
-  "by": "opus-max-1",
-  "at_utc": "20260918T171707Z",
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203604Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 984cc2bb differs from the current HEAD edf8e572 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203604Z",
+  "note": "supervisor triage: real. The product-structure separation of T3/D2 is representation-dependent; both kernels are plane factor x propagator^tau in level time and both fail the full-momentum test. The true separation is the per-level decay (|q|^2 against |q|) and the identity E = 3(|1 - phi e^{iw}|^2 + 1 - u). Corrigendum owed on PR 8180."
  }
 }

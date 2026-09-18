@@ -63,5 +63,21 @@
  },
  "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
  "stdout_sha256": "3a6b4949c39de69a09d17c8647d34035bd51a4b2f06ebdaec5439912fc086a31",
- "stdout_tail": "ectrum_2026_09_07.py: rc=0 TOTAL: PASS=28 FAIL=0\n== scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py: rc=0 no TOTAL line\nPASS: TOTAL16 exact checks (word2, arithmetic10, adverse4).\nN5: Fixed finite-character windows of the actual bare-Haar cube slab.\nN5: Exact word/arithmetic support; analytical concentration and character proof remain load bearing.\nN5: Side-removal control changes both slice copies, not the theorem fixture.\nN5: No high-label uniformity, spectral-gap or physical coupling selection.\nN5: No runtime file inputs; source SHA 6106a45ec14c0676dd7047c13156b6e4eaf4a13674d4a5e2b9e4983538155e0b\nResources: 0.007801s; 21.453 MiB; limits 180s/180MiB.\n\n== scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py: rc=0 no TOTAL line\nPASS: exact compact Wilson Hamiltonian algebra support\nper_element: eight trace-normalized generators; fundamental kinetic coefficient4/a\nper_site: cube incidence verifies twelve physical links and six closed faces\nper_mode: covariance3 and radial Gaussian moments are finite algebra checks\nper_block: exact nonlinear compact potential and transfer scalar retained\nlattice_wide: fixed cube only; no numerical certification of strong convergence or continuum limit\nTOTAL: 31\nresources: seconds=0.155630 RSS_MiB=60.531250 limits180/180\nsource_sha256: c4ba66af265f24ea4090186e278f2588a378d16fca3469f0cc2a24f96f076b00\n\n== scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py: rc=0 TOTAL: PASS=31 FAIL=0"
+ "stdout_tail": "ectrum_2026_09_07.py: rc=0 TOTAL: PASS=28 FAIL=0\n== scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py: rc=0 no TOTAL line\nPASS: TOTAL16 exact checks (word2, arithmetic10, adverse4).\nN5: Fixed finite-character windows of the actual bare-Haar cube slab.\nN5: Exact word/arithmetic support; analytical concentration and character proof remain load bearing.\nN5: Side-removal control changes both slice copies, not the theorem fixture.\nN5: No high-label uniformity, spectral-gap or physical coupling selection.\nN5: No runtime file inputs; source SHA 6106a45ec14c0676dd7047c13156b6e4eaf4a13674d4a5e2b9e4983538155e0b\nResources: 0.007801s; 21.453 MiB; limits 180s/180MiB.\n\n== scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py: rc=0 no TOTAL line\nPASS: exact compact Wilson Hamiltonian algebra support\nper_element: eight trace-normalized generators; fundamental kinetic coefficient4/a\nper_site: cube incidence verifies twelve physical links and six closed faces\nper_mode: covariance3 and radial Gaussian moments are finite algebra checks\nper_block: exact nonlinear compact potential and transfer scalar retained\nlattice_wide: fixed cube only; no numerical certification of strong convergence or continuum limit\nTOTAL: 31\nresources: seconds=0.155630 RSS_MiB=60.531250 limits180/180\nsource_sha256: c4ba66af265f24ea4090186e278f2588a378d16fca3469f0cc2a24f96f076b00\n\n== scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py: rc=0 TOTAL: PASS=31 FAIL=0",
+ "triage": {
+  "verdict": "false-positive",
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203545Z",
+  "note": "supervisor triage: the runners exit 0 with a count-only or JSON verdict; the old script demanded a TOTAL: PASS/FAIL line; fixed in bddd02a2bc"
+ },
+ "checked": {
+  "by": "fable-supervisor",
+  "at_utc": "20260918T203545Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 5687ef8d differs from the current HEAD edf8e572 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field True was a false positive of an earlier pattern (triaged); the current pattern gives False"
+  ]
+ }
 }

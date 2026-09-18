@@ -13,13 +13,17 @@ from claims: a unit is done when its logs are on ai/probes.  Claims are released
 Mechanical units (P, R, M, F, S) are claimed and run by probes/work_loop.py; nobody claims those by hand."""
 import argparse, datetime, glob, json, os, random, re, secrets, socket, subprocess, sys, time
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try: import tasklib
+except ImportError: tasklib = None      # a boot copy of claim.py alone: fetched below when needed
 NS = "refs/probes/claims/"
 LEASE_H = 8.0          # a claim older than this is expired
 FRESH_DAYS = 7         # P, R, M units are re-done weekly; F, S, J units once
 R_SHARD = 20           # runner re-executions per unit
 F_SEEDS, F_BLOCK = 200, 20
 S_SEEDS, S_BOXES, S_MINUTES = 200, ["", "5x5x8"], 30
-PRIORITY = ["P", "R", "M", "F", "S"]      # the loop's order; J is claimed by hand
+PRIORITY = ["P", "R", "M", "F", "X", "S"]      # the loop's order; J is claimed by hand
+J_ORDER = ["J-confirm", "J-attack", "J-falsifier", "J-provenance"]      # inside kind J: confirmations of hits first
 
 GIT_CWD = ROOT if os.path.exists(os.path.join(ROOT, ".git")) else os.getcwd()
 def git(*a, cwd=None, check=True, env=None, quiet=False):
@@ -45,8 +49,8 @@ def parse_utc(s):
 
 # ---- units -------------------------------------------------------------------------------------------------------------
 def load_tasks(root=ROOT): return json.load(open(os.path.join(root, "probes", "TASKS.json")))
-def units(tasks):
-    out = []
+def units(tasks, idx=None):
+    out = []; idx = idx or {}
     for t in tasks:
         if t["id"].startswith("P:"): out.append({"unit": "P-" + t["id"][2:], "kind": "P", "runs": [{"task": t["id"], "pr": t["id"][2:]}], "fresh": True})
     R = [t["id"] for t in tasks if t["id"].startswith("R:")]
@@ -65,23 +69,39 @@ def units(tasks):
                 for s in range(1, S_SEEDS + 1):
                     out.append({"unit": "S-" + safe(t["id"][2:]) + f"-s{s:03d}" + (f"-b{box}" if box else ""), "kind": "S", "fresh": False,
                                 "runs": [{"task": t["id"], "seed": s, "box": box, "minutes": S_MINUTES}]})
+    for t in tasks:      # scans with a declared grid: one unit per grid point
+        for g, point in enumerate(t.get("grid", [])):
+            out.append({"unit": "X-" + safe(t["id"][2:]) + f"-g{g+1:02d}", "kind": "X", "fresh": False, "runs": [{"task": t["id"], "extra": point["extra"], "box": point.get("box", "")}]})
     for t in tasks:
         if t["id"].startswith("J:") and ":PR" in t["id"]: out.append({"unit": "J-" + safe(t["id"][2:]), "kind": "J", "runs": [{"task": t["id"]}], "fresh": False})
+    # derived units: every hit on a judgment or search task that no reader has triaged as a false positive gets ONE independent confirmation
+    for tid, logs in idx.items():
+        if tid and tid[:2] in ("J:", "S:") and not tid.startswith("J:confirm:"):
+            hits = [l for l in logs if l.get("hit") and l.get("verdict") != "false-positive"]
+            if hits: out.append({"unit": "J-confirm-" + safe(tid), "kind": "J", "fresh": False, "runs": [{"task": "J:confirm:" + safe(tid)}], "finder_families": sorted({fam(l.get("model")) for l in hits} - {""})})
     return out
+def fam(model):
+    import re as _re
+    m = _re.search(r"[a-z]+", (model or "").lower()); f = m.group(0) if m else ""
+    return {"opus": "claude", "sonnet": "claude", "haiku": "claude", "fable": "claude", "mythos": "claude", "o": "gpt", "chatgpt": "gpt", "codex": "gpt"}.get(f, f)
 
 # ---- completion, read from the logs on the branch ------------------------------------------------------------------------
+def entry(L, when):
+    verdict = L.get("triage", {}).get("verdict", "")
+    ok = (L.get("checked", {}).get("result") == "PASS" if "checked" in L else L.get("returncode") == 0) and (not L.get("hit") or verdict == "false-positive")
+    return {"when": when, "worker": L.get("worker"), "ok": ok, "seed": L.get("seed"), "box": L.get("box") or "", "hit": bool(L.get("hit")), "model": L.get("model", ""), "verdict": verdict, "command": L.get("command", "")}
 def log_index(root=ROOT):
     idx = {}
     for f in glob.glob(os.path.join(root, "logs", "probes", "*", "*.json")):
         try: L = json.load(open(f))
         except Exception: continue
         when = parse_utc(L.get("started_utc", "")) or parse_utc(os.path.basename(f).split("__")[-1][:-5])
-        ok = (L.get("checked", {}).get("result") == "PASS" if "checked" in L else L.get("returncode") == 0) and not L.get("hit")
-        idx.setdefault(L.get("task"), []).append({"when": when, "worker": L.get("worker"), "ok": ok, "seed": L.get("seed"), "box": L.get("box") or ""})
+        idx.setdefault(L.get("task"), []).append(entry(L, when))
     return idx
 def run_done(run, idx, fresh):
     logs = idx.get(run["task"], [])
     if "seed" in run: logs = [l for l in logs if l["seed"] == run["seed"] and l["box"] == run.get("box", "")]
+    if "extra" in run: logs = [l for l in logs if run["extra"] in l.get("command", "") and (not run.get("box") or l["box"] == run["box"])]
     if fresh:
         cut = now() - datetime.timedelta(days=FRESH_DAYS); logs = [l for l in logs if l["when"] and l["when"] > cut]
         return any(l["ok"] for l in logs) or len({l["worker"] for l in logs}) >= 2      # a failing task gets one second opinion, not endless re-runs
@@ -130,13 +150,17 @@ def log_names_at(ref):
     for line in git("ls-tree", "-r", "--name-only", ref, "logs/probes/").stdout.splitlines():
         parts = line.strip('"').split("/")
         if len(parts) == 4 and parts[3].endswith(".json"):
-            w = parts[3][:-5].split("__"); idx.setdefault(parts[2], []).append({"when": parse_utc(w[-1]), "worker": w[0], "ok": True, "seed": None, "box": ""})
+            w = parts[3][:-5].split("__")
+            if parts[2][:2] in ("J:", "S:"):
+                try: idx.setdefault(parts[2], []).append(entry(json.loads(git("show", f"{ref}:{line.strip(chr(34))}").stdout), parse_utc(w[-1]))); continue
+                except Exception: pass
+            idx.setdefault(parts[2], []).append({"when": parse_utc(w[-1]), "worker": w[0], "ok": True, "seed": None, "box": "", "hit": False, "model": "", "verdict": "", "command": ""})
     return idx
-def pick_and_claim(worker, kinds, tasks, idx, exclude=()):
+def pick_and_claim(worker, kinds, tasks, idx, exclude=(), model=""):
     """Claim one free unit: the first kind in `kinds` that has free units, a random unit inside it (random, so that many
     workers starting together do not all race for the same ref)."""
     claims = remote_claims(worker)
-    us = [u for u in units(tasks) if u["kind"] in kinds and u["unit"] not in exclude]
+    us = [u for u in units(tasks, idx) if u["kind"] in kinds and u["unit"] not in exclude and not (model and fam(model) in u.get("finder_families", []))]
     for kind in kinds:
         free = []
         for u in (x for x in us if x["kind"] == kind):
@@ -145,6 +169,7 @@ def pick_and_claim(worker, kinds, tasks, idx, exclude=()):
             if unit_done(u, idx): continue
             free.append((u, c[0] if c else ""))
         random.shuffle(free)
+        if kind == "J": free.sort(key=lambda fe: next((i for i, pre in enumerate(J_ORDER) if fe[0]["unit"].startswith(pre)), len(J_ORDER)))
         for u, expect in free[:6]:
             sha = try_claim(u["unit"], worker, expect)
             if sha: return u, sha
@@ -168,7 +193,7 @@ def main():
     a = ap.parse_args(); worker = "w-" + machine_id() + "-j"
     if a.cmd == "status":
         git("fetch", "--quiet", "origin", "ai/probes"); tasks = load_tasks(); idx = log_index(); claims = remote_claims(worker); rows = {}
-        for u in units(tasks):
+        for u in units(tasks, idx):
             r = rows.setdefault(u["kind"], [0, 0, 0]); r[0] += 1
             if unit_done(u, idx): r[1] += 1
             elif u["unit"] in claims and claims[u["unit"]][1] < LEASE_H: r[2] += 1
@@ -178,12 +203,15 @@ def main():
         forget_seen(worker); return 0
     if a.cmd == "next":
         worker = worker + secrets.token_hex(2); ref = fetch_branch(worker); tasks = tasks_at(ref); idx = log_names_at(ref)
-        u, sha = pick_and_claim(worker, [a.kind], tasks, idx); forget_seen(worker)
+        u, sha = pick_and_claim(worker, [a.kind], tasks, idx, model=a.model); forget_seen(worker)
         if not u: git("update-ref", "-d", ref, check=False); print("no free unit of kind", a.kind); return 0
         wt = os.path.join(base_dir(), u["unit"])
         if not os.path.exists(wt): git("worktree", "add", "--quiet", "--detach", wt, ref)
         git("update-ref", "-d", ref, check=False)
-        remember(u["unit"], sha, {"worktree": wt, "worker": worker}); t = {x["id"]: x for x in tasks}[u["runs"][0]["task"]]
+        remember(u["unit"], sha, {"worktree": wt, "worker": worker}); tid = u["runs"][0]["task"]
+        if tid.startswith("J:confirm:"):
+            sys.path.insert(0, os.path.join(wt, "probes")); import importlib; tl = importlib.import_module("tasklib"); t = tl.synth(tid, [x["id"] for x in tasks])
+        else: t = {x["id"]: x for x in tasks}[tid]
         print(f"UNIT {u['unit']}\nTASK {t['id']}\nWORKER {worker}   <- pass this as --worker\nWORKTREE {wt}   <- cd there; do ALL work for this unit in that directory and nowhere else\n\n{t['what']}\n\nRead probes/README.md sections 0, 1 and 4 in that directory. When the log says CHECK PASS: git add logs/probes probes/work; git commit -m 'probe: {u['unit']}'; python3 probes/claim.py finish {u['unit']}")
         return 0
     h = held(a.unit)

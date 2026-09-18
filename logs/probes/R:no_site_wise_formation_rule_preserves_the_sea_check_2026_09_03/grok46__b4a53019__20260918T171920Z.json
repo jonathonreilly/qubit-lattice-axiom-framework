@@ -1,0 +1,35 @@
+{
+ "task": "R:no_site_wise_formation_rule_preserves_the_sea_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "no",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/no_site_wise_formation_rule_preserves_the_sea_check_2026_09_03.py",
+ "seed": 51960,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a53019",
+ "started_utc": "20260918T171920Z",
+ "elapsed_s": 43.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0089eeea4c769ec6b115cd5797d3b3ce39780c3da53e2144f1da5b90e40cbf8d",
+ "stdout_tail": "0 at step 1, then 8.4/8.4/10.4/5.0/8.7 with greedy odds 0.440/0.466/0.611/0.311/0.579 at steps 2-6, the parallel z-edges (0,1)(3,4)(6,7)(9,10) first (a matching); A2v forms the degree-4 corners' middle edges (1,4)(7,10)(1,7) first and is worst at six records (0.4089 = max of 0.373/0.212/0.389/0.409/0.343/0.317/0.316).\nPASS B6 [1e-11] T6 tau=0: rule E on the sea forms (0,3)(0,6)(0,1)(1,2)(2,5)(2,8) = star(0) then star(2), best residuals 0.5638/0.5210/0.2071/0.5210/0.5638/0.0000; each degree-3 star alone leaves 0.207107=(sqrt2-1)/2 (0.207107/0.207107); the pair star(0) u star(2) restores the eigenvector property exactly: residual max 2.1e-15 over its 64 outcomes; control full-law TV <= 0.0e+00.\nPASS B7 [1e-11] T6 the six-record JOINT tick on star(0) u star(2) at tau=0.5: residual max 2.1e-15 (64 outcomes), diagonal displaced max 4.0e-16, full-law TV 3.6e-16, support 411648; the same six sites one at a time with tau=0.5 ticks (rule C): 0.3156. D star(4) then star(7): full-law TV 2.4e-16/3.3e-16 at 4/8 records, residual max 2.7e-15/3.9e-15, support 411648.\nPASS B8 [timing] cube 124 trees 2 s, slab sea 14 s, nine slab trees to 6 records 24 s, total 43 s < 150 s; no dense object above 4096 x 4096, no seed.\nPASS Q1 all actual 24 fixed-order census rows at all four declared dwells\nPASS Q2 unrestricted non-eigenvector constant-diagonal witness: residual 0.500000, change 2.22e-16\nPASS Q0 current own-note/memo and declared proof inputs match their literal bindings\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172003Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/no_site_wise_formation_rule_preserves_the_sea_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

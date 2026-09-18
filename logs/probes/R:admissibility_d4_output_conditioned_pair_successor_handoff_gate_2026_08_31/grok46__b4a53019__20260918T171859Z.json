@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_output_conditioned_pair_successor_handoff_gate_2026_08_31",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_d4_output_conditioned_pair_successor_handoff_gate_2026_08_31.py",
+ "seed": 51939,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a53019",
+ "started_utc": "20260918T171859Z",
+ "elapsed_s": 2.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "baeb8e17bfe7826472ef0d9abb8bb34859b0327a0e508872942669d982f7d595",
+ "stdout_tail": "PASS current_source_and_note_inputs\nPASS 192_routes_common160_carrier_and_failed_four_step\nPASS two_route_chiralities\nTERMINAL: BLOCK30-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED\nTOTAL: PASS=3 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171901Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

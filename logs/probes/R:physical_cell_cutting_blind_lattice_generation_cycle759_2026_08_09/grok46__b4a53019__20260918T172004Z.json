@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_blind_lattice_generation_cycle759_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_cell_cutting_blind_lattice_generation_cycle759_2026_08_09.py",
+ "seed": 52004,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a53019",
+ "started_utc": "20260918T172004Z",
+ "elapsed_s": 17.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "038f859c7fd76692f0573a910c16b4607341e742f46bc35f0f12833f564fade7",
+ "stdout_tail": "every prime: a determinant one minor stays invertible, and prime field rank never exceeds rational rank\nthe row lattice plus its integer kernel has quotient index 2^114 x 3 x 5^30, agreeing three ways and from two certified basis pairs\nPASS C13  unit-minor certificates make both selected row sets integer bases, and the stacked determinant gives the quotient index\none finite group of piece labels modulo the two lattices from the 88 by 88 row, the 104 by 104 kernel and the 192 by 192 stacked matrices\nit has 42 cyclic parts, of order:count 2:12 10:8 20:2 40:2 80:8 160:8 320:1 960:1\nPASS C14  the two Gram presentations and the stacked presentation have the same nontrivial invariant factors\nthe parts divide one another in turn and multiply to the index above, so the largest is the exponent: 960, which is 5 times the 192 pieces\nPASS C15  the largest invariant factor is the exponent of the finite quotient\ncontrols fixed in advance: the chains 2 and 2 6 12 are their own diagonals, while 1 6 and 2 12 are not the diagonals 2 3 and 4 6 they came from\nPASS C16  the routine returns the true chain and not the entries it was handed, so a chain of ones is information\ncontrol in the integer plane: stacked determinant 2, and the two inner product determinants 2 and 2\nPASS C17  the hand-computed index-two example exercises all three index presentations\nelapsed under 30 s and peak memory under 500 MB, both measured in this run\nPASS C18  inside its time and memory allowance\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172021Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_blind_lattice_generation_cycle759_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:independent_admissibility_d4_outcome_typed_generated_front_two_step_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "independent",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/independent_admissibility_d4_outcome_typed_generated_front_two_step_2026_08_29.py",
+ "seed": 51870,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a53019",
+ "started_utc": "20260918T171750Z",
+ "elapsed_s": 51.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fd386997f612be246a4fff7a52e95dec317ce3c860387c3786649b20a1d90f2b",
+ "stdout_tail": " 84 mixed code states are distinct, covariant, full rank, content-invertible, and not perfectly one-site distinguishable\nPASS C_independent_decoder_and_law: fresh algebra gives rank nine, 84 decoders, 336 covariance cases, exact law invariance, source, and universal floors\nPASS D_independent_physical_domain: fresh exact target and 512-vertex scans reproduce the encoded strict domain and literal-pure failure counts\nPASS E_independent_lattice_transport: an explicit lattice dictionary swaps arbitrary backgrounds and reconstructs all 1176 successors without touching the prior trail\nPASS F_independent_prefix_invariant: symbolic telescoping and exact normalization give conditional cylinders with one tip and a fixed five-cell packet\nPASS G_independent_collision_readout_boundary: a radius-two Record and an overlapping second front falsify autonomy, while full-rank code states name the microscopic readout wall\nPASS H_independent_scope: the note limits the result to a collision-free effective kernel with zero TOE movement and a landed N1-N8 packet\nMUTATION_BASELINE: clean=true; failures=none\nCONTROL_KIND: changed_object; detected=0/0\nCONTROL_KIND: assertion_guard; detected=30/30\nCONTROL_KIND: syntax_guard; detected=3/3\nCONTROL_KIND: scope_guard; detected=7/7\nMUTATIONS: rejected=40/40\nINDEPENDENT VERDICT: OUTCOME-TYPED-TWO-STEP on a collision-free straight corridor\nINDEPENDENT BOUNDARY: autonomous_background=false; microscopic_POVM=false; collision_controller=false\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

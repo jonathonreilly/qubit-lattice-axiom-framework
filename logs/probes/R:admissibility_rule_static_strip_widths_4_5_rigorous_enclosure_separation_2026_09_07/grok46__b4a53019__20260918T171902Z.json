@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py",
+ "seed": 51942,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a53019",
+ "started_utc": "20260918T171902Z",
+ "elapsed_s": 111.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 6/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7aa1233f50c5dbbc7383967c54aca78f60b1ee440a4db37b6261f216181386c8",
+ "stdout_tail": "150 (rounded up; bounds the executed ratio, not the true lambda_2/lambda_1)\nPASS: F1 the note carries the three fence sentences verbatim\nPASS: F2 the note contains no forbidden phrase (hits: [])\nPASS: F3 runner source: no floating-point literal, conversion, evaluation call or array library (0 hits)\nPASS: F4 classical names only in Prior art and Imports (offenders: [])\nPASS: F5 every decimal label in this stdout came from the integer-arithmetic dec() (32 labels; stray: [])\nper_element: executed \u2014 every row state of the width-2, 3, 4, 5 strips enters the orbit reduction, the quotients and the full-state checks, both triples, exact\nper_site: executed \u2014 the edge pair (0, 1) and the innermost pair of every row; the external adjacent-row records on every site at both ends of the free strip in the boundary check\nper_mode: executed \u2014 the Perron root by the ratio bounds, every other eigenvalue by the trace bound, the Perron vector by the residual-gap bound, the Krylov degree exactly; minimal polynomials where the degree allows\nper_block: executed \u2014 the finite-n center rows for n in {3,5,9,17,33,65} in the sector and {3,5,7} (width 4) and {3,5} (width 5) on the full state; the characteristic polynomial at width 4\nlattice_wide: checked and not executed \u2014 strips of widths 2 to 5 only; the plane and wider strips are named, not computed, and no monotonicity in the width is stated\nPASS: G1 the five N5 resolution lines are printed (each >= 40 characters)\nelapsed_s: 110\nTOTAL: PASS=34 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172054Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

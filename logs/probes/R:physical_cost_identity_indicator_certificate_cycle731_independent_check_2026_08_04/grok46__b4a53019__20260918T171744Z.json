@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cost_identity_indicator_certificate_cycle731_independent_check_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_cost_identity_indicator_certificate_cycle731_independent_check_2026_08_04.py",
+ "seed": 51864,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a53019",
+ "started_utc": "20260918T171744Z",
+ "elapsed_s": 201.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "137c5c8fc36bf1de0d9ef84a6fd661c9637790139369dcc9a9d07c52b7fe8333",
+ "stdout_tail": "y\": {\"detail\": \"value=384 slacks=[0, 2, 3, 4] residual=0 charge_combo=-2\", \"ok\": true}, \"independent cell census\": {\"detail\": \"subsets=4368 minimal=2672 volumes=[(0, 1360), (1, 2672), (2, 320), (3, 16)]\", \"ok\": true}, \"independent cost identity and hostile support mutation\": {\"detail\": \"all 38 reconstructed floor completions satisfy the identity; an orbit flip breaks it\", \"ok\": true}, \"independent exact row-span reconstruction\": {\"detail\": \"row_rank=13 constant_augmented_rank=13\", \"ok\": true}, \"independent floor-indicator reconstruction\": {\"detail\": \"value=23328 slacks=[0, 216] support=1792/38\", \"ok\": true}, \"independent forced ceiling-tight completions\": {\"detail\": \"valid cost-128 dissections=4/4\", \"ok\": true}, \"independent generic incidence reconstruction\": {\"detail\": \"points=2736 scale=12810 boundary=0\", \"ok\": true}, \"independent stored-completion covering census\": {\"detail\": \"six named completions cover all 38; zero of 501942 stored-completion five-subsets do\", \"ok\": true}, \"independent support-orbit completion reconstruction\": {\"detail\": \"valid exact dissection completions=38/38\", \"ok\": true}}, \"schema\": \"physical-cost-identity-indicator-certificate-cycle731-independent-v1\", \"scope\": \"supplied one-cell minimal-piece model and fixed generic-incidence certificate family only; no physical or arbitrary-domain conclusion\", \"status\": \"pass\", \"supplied_model\": {\"carried_action_order\": 48, \"minimal_pieces\": 2672, \"piece_orbits\": 57, \"sample_points\": 2736}}\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172106Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

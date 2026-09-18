@@ -1,0 +1,34 @@
+{
+ "task": "R:p2_kcpt_orbit_temporal_factor_no_go_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "p2",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/p2_kcpt_orbit_temporal_factor_no_go_2026_06_06.py",
+ "seed": 52003,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a53019",
+ "started_utc": "20260918T172003Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=26 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "61fba0e10cba82636a7c449eba835caf3c108082867b54324ae32f6d86ca18be",
+ "stdout_tail": "onent 8 x L_t, and the runner exercises it at L_t = 1 and 2 on a random 4 x 4 stand-in rather than on any actual lattice determinant; no volume, no sequence and no continuum limit is taken. The note is explicit that the Euclidean route is not foreclosed and that the Wick rotation P2 remains the open primitive, so the global derivation is absent by the note's own statement.\n  scope: three checks are algebraic or literal identities dressed as tests. det(D) det(D^-1) = 1 holds for every invertible D, so sampling it 200 times confirms numerical linear algebra rather than the Keldysh cancellation; the Euclidean scaling check asks whether |det|^2 / |det| equals |det|, which is automatic; and the exponent check evaluates the constant expression 8 * 2 == 16.\n  scope: one check asserts a hand-encoded Python constant. The claim that the record axiom disclaims the occupancy and weighting rule is carried by a variable set to True beside a comment quoting the axiom text; no file is read and no string is matched, so that leg is a transcription rather than a verification.\n  scope: the seeded stream (seed 20260606) supplies the antilinearity vectors and the 200-sample Keldysh and Euclidean operator batches. Two back-to-back runs are byte-identical, and no sampled quantity is quoted above. Note that the leg asserting the Euclidean magnitude differs from 1 is a property of the draw - it records that no sampled determinant landed within 1e-6 of unity - and not a theorem.\n\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172004Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

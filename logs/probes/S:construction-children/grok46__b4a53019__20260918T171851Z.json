@@ -1,0 +1,32 @@
+{
+ "task": "S:construction-children",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "cd probes/lib && python3 construction_children.py 101 4000",
+ "seed": 101,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4a53019",
+ "started_utc": "20260918T171851Z",
+ "elapsed_s": 8.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "line": "seed 101: 3088 trees; nodes with >= 2 processed children by kind: {'seed': 4, 'amp': 0, 'proc': 1}; with 3: 0"
+ },
+ "review": "seed 101 4000 random cones: HIT if a node has three processed children",
+ "what": "block 30's construction on random cones: nodes receiving arrows from two or three processed poles, by kind (block 33 addendum: two happens about once per thousand trees, three never). A HIT is a node with three processed children (it would matter for the count). Vary the seed; 4000 cones per run.",
+ "stdout_sha256": "fef2b32f92d9fb4fe70366945c4158afede050fe86b0329cbcdb8468bf1f6a01",
+ "stdout_tail": "seed 101: 3088 trees; nodes with >= 2 processed children by kind: {'seed': 4, 'amp': 0, 'proc': 1}; with 3: 0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171859Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

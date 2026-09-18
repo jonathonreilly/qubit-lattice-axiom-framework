@@ -1,0 +1,17 @@
+[ok] events: RESULT 189, EVENTS.ndjson 189 lines, acceptance schema 189 (note: 189)
+[ok] six files: 6 retained outputs: EVENTS.ndjson, PARTIAL.json, RESULT.json, STARTED.json, TABLES.json, WORKER_COMPLETE.json (note: six)
+[ok] eight intervals: 8 intervals: classes ['O', 'P'], orders [7, 8, 9, 10] (note: eight new P/O intervals, orders 7-10)
+[ok] pilot flags: both rows CERTIFIED_PILOT_WIDTH with width_gate
+[ok] pilot target: target_full_width 1/1000000 (note: 10^-6)
+[ok] widths from endpoints: every reported width equals (hi - lo)/2^256 of its integer-grid interval; imaginary parts exactly 0
+[ok] largest width: largest reported width 1.847845e-19 (O, order 10) (note: about 1.848e-19); all widths below 1e-6: True
+[ok] oracle calls / first order: native_oracle_calls 0, first_order 7, lower moments not recomputed (note: only orders seven through ten evaluated)
+[ok] high resources: external 3.87 s, RSS 68,386,816 B, tree peak 119,685,120 B; protocol 60 s / 384 MiB = 402,653,184 B (note: 3.87 s, 68,386,816 B, 119,685,120 B)
+[ok] omega nodes: nodes 1742, endpoint oracles reused 3484, new oracle calls 0 (note: 1742, 3484, zero)
+[ok] omega tails: tail terms 40, new exact moments [44, 45] (note: 40-term tails, M44/M45)
+[ok] omega targets: omega7: width 9.226e-28 = hi - lo, target 1e-22; omega9: width 7.639e-27 = hi - lo, target 1e-20 (note: 1e-22 and 1e-20 met)
+[ok] omega resources: external 9.79 s, tree peak 166,625,280 B; the reviewed protocol 30 s / 384 MiB (note: 9.79 s)
+[ok] note text: the figures checked above are the ones printed in the note
+[ok] Euler recurrence: n Z_n = sum_(j=1..n) j l_j Z_(n-j) for Z = exp(sum l_j t^j), n <= 10 (sympy)
+[ok] coefficient recurrence: sum A_n t^n = e^(t h0) e^(-t(h0+V)) to 3.2e-13 at t = 0.05; the linear-order recurrence gives -ad_(h0)^(n-1)(V)/n! to 3.6e-16 (n <= 10) and is the V-linear part of the full recurrence to 5.2e-08 (Richardson difference quotient, n <= 7); Tr(P L_n)/(|L_n| d) at most 1.4e-16 for n >= 2 with [P, h0] = 0 (8 x 8 random Hermitian)
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - the note's executed figures against the retained evidence at the PR head: 189 events, six files, eight P/O intervals (orders 7-10), widths exactly (hi - lo)/2^256 with the largest 1.8478e-19 (O, order 10) and all below the 1e-6 target, 1742 nodes / 3484 endpoint evaluations / zero oracle calls / 40-term tails / M44-M45, omega7 and omega9 widths 9.23e-28 and 7.64e-27 under 1e-22 and 1e-20, 3.87 s / 68,386,816 B / 119,685,120 B within 60 s / 384 MiB and 9.79 s within 30 s / 384 MiB; the Euler and coefficient recurrences hold; 0 mismatches; attack does not fire

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8082",
+ "type": "judgment",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "w-jonathonsmac4f50-j4337",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8082/executed_numbers_against_evidence.py",
+ "seed": 65765,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210925Z",
+ "elapsed_s": 35.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (c) EXECUTED NUMBERS - the note's executed figures against the retained evidence at the PR head: 189 events, six files, eight P/O intervals (orders 7-10), widths exactly (hi - lo)/2^256 with the largest 1.8478e-19 (O, order 10) and all below the 1e-6 target, 1742 nodes / 3484 endpoint evaluations / zero oracle calls / 40-term tails / M44-M45, omega7 and omega9 widths 9.23e-28 and 7.64e-27 under 1e-22 and 1e-20, 3.87 s / 68,386,816 B / 119,685,120 B within 60 s / 384 MiB and 9.79 s within 30 s / 384 MiB; the Euler and coefficient recurrences hold; 0 mismatches; attack does not fire"
+ },
+ "review": "Attack pattern (c) executed numbers: every executed figure of the moment-jet note checked against the retained evidence at the PR head (high and omega RESULT/ROOT_ACCEPTANCE/EVENTS files and the two protocols): 189 events (also the EVENTS.ndjson line count), six retained files, eight P/O intervals of orders 7-10 both CERTIFIED_PILOT_WIDTH, every reported width equal to (hi - lo)/2^256 of its integer-grid endpoints with the largest 1.8478e-19 (O, order 10) as stated, 1742 nodes/3484 endpoint evaluations/zero oracle calls/40-term tails/M44-M45, omega7 and omega9 widths 9.2e-28 and 7.6e-27 under their 1e-22 and 1e-20 targets, and 3.87 s/68,386,816 B/119,685,120 B within 60 s/384 MiB and 9.79 s within 30 s/384 MiB all match; the stated Euler and coefficient recurrences and the vanishing projected one-defect traces also hold on random finite matrices; no mismatch; the native computations themselves are not replayed.",
+ "what": "PR #8082 ([physics-loop] Gaussian local moment jets (conditional-suppo): attack NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin codex/native-gaussian-moment-jet-20260910; git show origin/codex/native-gaussian-moment-jet-20260910:<note>. Create probes/work/pr8082/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8082/<script>.py\"",
+ "stdout_sha256": "5f4fccb6242ab60308878a690c7d42c0a705fce88ef71d6b9e9cdd1238145426",
+ "stdout_tail": "zero)\n[ok] omega tails: tail terms 40, new exact moments [44, 45] (note: 40-term tails, M44/M45)\n[ok] omega targets: omega7: width 9.226e-28 = hi - lo, target 1e-22; omega9: width 7.639e-27 = hi - lo, target 1e-20 (note: 1e-22 and 1e-20 met)\n[ok] omega resources: external 9.79 s, tree peak 166,625,280 B; the reviewed protocol 30 s / 384 MiB (note: 9.79 s)\n[ok] note text: the figures checked above are the ones printed in the note\n[ok] Euler recurrence: n Z_n = sum_(j=1..n) j l_j Z_(n-j) for Z = exp(sum l_j t^j), n <= 10 (sympy)\n[ok] coefficient recurrence: sum A_n t^n = e^(t h0) e^(-t(h0+V)) to 3.2e-13 at t = 0.05; the linear-order recurrence gives -ad_(h0)^(n-1)(V)/n! to 3.6e-16 (n <= 10) and is the V-linear part of the full recurrence to 5.2e-08 (Richardson difference quotient, n <= 7); Tr(P L_n)/(|L_n| d) at most 1.4e-16 for n >= 2 with [P, h0] = 0 (8 x 8 random Hermitian)\nSUMMARY: attack pattern (c) EXECUTED NUMBERS - the note's executed figures against the retained evidence at the PR head: 189 events, six files, eight P/O intervals (orders 7-10), widths exactly (hi - lo)/2^256 with the largest 1.8478e-19 (O, order 10) and all below the 1e-6 target, 1742 nodes / 3484 endpoint evaluations / zero oracle calls / 40-term tails / M44-M45, omega7 and omega9 widths 9.23e-28 and 7.64e-27 under 1e-22 and 1e-20, 3.87 s / 68,386,816 B / 119,685,120 B within 60 s / 384 MiB and 9.79 s within 30 s / 384 MiB; the Euler and coefficient recurrences hold; 0 mismatches; attack does not fire\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4337",
+  "at_utc": "20260918T211009Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

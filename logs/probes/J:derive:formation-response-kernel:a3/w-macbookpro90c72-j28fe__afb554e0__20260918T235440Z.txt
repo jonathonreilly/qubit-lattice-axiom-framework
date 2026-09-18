@@ -1,0 +1,16 @@
+F2 E-identity in level coordinates k=(q1+w, q2+w, w):
+  True (alg=0 pts=True)
+F1 L=4 (I-P)^{-1} vs DFT of 1/(1-phi); geometric R at z=i:
+  real-space err=0.000e+00 ok=True; geometric tail=6.526e-11 ok=True
+F3 L=32 torus wake (downstream |m|√n slowly varying; anti-diagonal decays):
+  |m|(n,n) ['0.417', '0.370', '0.334', '0.305', '0.280', '0.258', '0.239', '0.222', '0.207']; |m|(n,-n) ['4.867e-02', '7.765e-02', '1.021e-01', '1.188e-01', '1.253e-01', '1.196e-01', '9.997e-02', '6.503e-02', '1.584e-02']; spread |m|√n=1.16 vs |m|n=1.49; ok=True
+F4 eight-corner average vs 1/E; axis limit 3/2:
+  lim k->0 R8(k,0,0) = 3/2; is 3/2: True
+  k=(0.05, 0.0, 0.0): Re R8=1.5000 1/E=400.0833 |Im|=1.8e-15
+  k=(0.1, 0.2, 0.3): Re R8=12.4277 1/E=7.1847 |Im|=1.1e-16
+  k=(0.3, 0.3, 0.3): Re R8=2.9884 1/E=3.7316 |Im|=0.0e+00
+  k=(0.2, 0.1, 0.05): Re R8=7.7258 1/E=19.0993 |Im|=1.6e-15
+F5 static chi vs variance at phi=(1+i)/3:
+  1/(1-|phi|^2)=9/7, 1/(1-phi) complex and not a real multiple: True
+HIT: linear formation response R(k,w)=1/(1-phi e^{iw}) with static 1/(1-phi); E(k)=3(|1-phi e^{iw}|^2+1-u) in level coordinates so 1/E is not the response; no 1/r channel (2D convection-diffusion wake ~1/sqrt(r) downstream, exponential upstream; 8-corner average -> 3/2 along an axis, not 1/k^2); regression C_s=C_0 phi^s holds, equilibrium FR fails
+SUMMARY: PARTIAL - exact linear response and the replacement of 1/r by a directed 2D convection-diffusion kernel; 1/E is a modulus identity, not a channel of the formation law

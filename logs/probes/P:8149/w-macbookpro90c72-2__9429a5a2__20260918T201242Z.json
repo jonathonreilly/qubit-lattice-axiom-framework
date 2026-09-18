@@ -1,0 +1,28 @@
+{
+ "task": "P:8149",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8149",
+ "pr": 8149,
+ "branch": "physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915",
+ "git_sha": "9429a5a2",
+ "started_utc": "20260918T201242Z",
+ "elapsed_s": 1061.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=18 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "5f1673bdff5a05644ceff85a76ac1b130a22ea2de2b6742acc738f18afc2b334",
+ "stdout_tail": "PR #8149: [physics-loop] admissibility-induced-law block15 \u2014 bounded_theorem \u2014 bounded-support: the formation-unit clause witness \u2014 sequential formation of a unit reproduces its joint law iff no site records an inside neighbour with a second; the isolated star does not separate the readings, an environment always does\nbranch physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py: rc=0 TOTAL: PASS=18 FAIL=0\n   mutation reconstruction_wrong: expected B observed B ok\n   mutation normalizer_lemma_wrong: expected B observed B ok\n   mutation criterion_mismatch_isolated: expected C observed C ok\n   mutation criterion_mismatch_environment: expected C observed C ok\n   mutation star_separates_in_isolation_claimed: expected D observed D ok\n   mutation star_class_tv_forged: expected D observed D ok\n   mutation plaquette_order_equals_joint_claimed: expected D observed D ok\n   mutation class_ratios_not_monotone_claimed: expected D observed D ok\n   mutation environment_unit_agrees_claimed: expected E observed E ok\n   mutation single_site_differs_claimed: expected E observed E ok\n   mutation claim_unit_clause_adopted: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok"
+}

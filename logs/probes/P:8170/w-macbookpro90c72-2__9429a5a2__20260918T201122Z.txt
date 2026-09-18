@@ -1,0 +1,18 @@
+PR #8170: [physics-loop] admissibility-induced-law block26 — bounded_theorem — bounded-support: the unsoldered formation law in level time — gain-one spin waves with the local-limit constant, finite planes forget, and the simulated algebraic decay of the initial plane's memory (the reading decides memory for the sphere menu)
+branch physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation kernel_mean_wrong: expected B observed B ok
+   mutation second_moment_wrong: expected B observed B ok
+   mutation langevin_bound_wrong: expected B observed B ok
+   mutation gain_wrong: expected C observed C ok
+   mutation path_identity_wrong: expected D observed D ok
+   mutation return_constant_wrong: expected D observed D ok
+   mutation return_lower_bound_wrong: expected D observed D ok
+   mutation harmonic_bound_wrong: expected D observed D ok
+   mutation one_site_chain_wrong: expected E observed E ok
+   mutation minorization_wrong: expected E observed E ok
+   mutation exponent_wrong: expected E observed E ok
+   mutation sixaxis_deviation_wrong: expected E observed E ok
+   mutation claim_order_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

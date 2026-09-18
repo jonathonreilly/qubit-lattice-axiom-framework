@@ -1,0 +1,17 @@
+PR #8154: [physics-loop] admissibility-induced-law block20 — bounded_theorem — bounded-support: the unsoldered sphere static law has no long-range order on any coordinate plane or line; the Green-function channel needs the third dimension
+branch physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py: rc=0 TOTAL: PASS=20 FAIL=0
+   mutation shell_count_wrong: expected B observed B ok
+   mutation dyadic_bound_wrong: expected B observed B ok
+   mutation line_floor_bound_wrong: expected B observed B ok
+   mutation cosine_identity_wrong: expected C observed C ok
+   mutation small_k_term_wrong: expected C observed C ok
+   mutation final_algebra_wrong: expected C observed C ok
+   mutation generator_identity_wrong: expected D observed D ok
+   mutation second_derivative_identity_wrong: expected D observed D ok
+   mutation root_simplification_wrong: expected D observed D ok
+   mutation bond_count_wrong: expected D observed D ok
+   mutation parseval_wrong: expected D observed D ok
+   mutation claim_order_on_planes_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

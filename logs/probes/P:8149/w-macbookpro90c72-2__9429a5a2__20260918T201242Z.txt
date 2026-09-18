@@ -1,0 +1,16 @@
+PR #8149: [physics-loop] admissibility-induced-law block15 — bounded_theorem — bounded-support: the formation-unit clause witness — sequential formation of a unit reproduces its joint law iff no site records an inside neighbour with a second; the isolated star does not separate the readings, an environment always does
+branch physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py: rc=0 TOTAL: PASS=18 FAIL=0
+   mutation reconstruction_wrong: expected B observed B ok
+   mutation normalizer_lemma_wrong: expected B observed B ok
+   mutation criterion_mismatch_isolated: expected C observed C ok
+   mutation criterion_mismatch_environment: expected C observed C ok
+   mutation star_separates_in_isolation_claimed: expected D observed D ok
+   mutation star_class_tv_forged: expected D observed D ok
+   mutation plaquette_order_equals_joint_claimed: expected D observed D ok
+   mutation class_ratios_not_monotone_claimed: expected D observed D ok
+   mutation environment_unit_agrees_claimed: expected E observed E ok
+   mutation single_site_differs_claimed: expected E observed E ok
+   mutation claim_unit_clause_adopted: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

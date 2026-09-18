@@ -1,0 +1,21 @@
+{
+ "task": "P:8160",
+ "type": "pr-reexecution",
+ "lane": "toe-interacting-scale-20260916",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8160",
+ "pr": 8160,
+ "branch": "physics-loop/toe-interacting-scale-20260916",
+ "git_sha": "9429a5a2",
+ "started_utc": "20260918T201224Z",
+ "elapsed_s": 3.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "b379a4191bb13250675364a492f66c1f35b081e34d6d1ecedcfe3e52ef6e9ef6",
+ "stdout_tail": "PR #8160: Joint weak-coupling and volume limit for charged rotor fields and matter\nbranch physics-loop/toe-interacting-scale-20260916 (base main)\nrunners in the PR: 0"
+}

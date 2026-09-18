@@ -1,0 +1,38 @@
+{
+ "task": "J:attack:PR8172",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block28-map-of",
+ "worker": "w-macbookpro90c72-j0e45",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8172/executed_island_ratio.py",
+ "seed": 70581,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae74e784",
+ "started_utc": "20260918T222941Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "attack pattern (c) EXECUTED NUMBERS - 120-island runner 6671/1728 vs stated 81/20; stated 81/20 tracks spec 200-island 4043/1000"
+ },
+ "review": "Pattern (c): runner 120-island ratio 6671/1728 vs note 4.05 which tracks the 200-island spec 4.043; attack fires",
+ "what": "PR #8172 ([physics-loop] admissibility-induced-law block28 \u2014 bounded_t): attack ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916; git show origin/physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916:<note>. Create probes/work/pr8172/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8172/<script>.py\"",
+ "stdout_sha256": "575cb39b6684616701cc884029724758a83699b6a394dd1c7900ddd5fca5f953",
+ "stdout_tail": "note 120-island cap 81/20\nrunner 120 islands 6671/1728 = 3.8605324074074074\nspec 200 islands worst 4043/1000\nHIT: 120-island runner 6671/1728 vs stated 81/20; stated 81/20 tracks spec 200-island 4043/1000\nSUMMARY: attack pattern (c) EXECUTED NUMBERS - 120-island runner 6671/1728 vs stated 81/20; stated 81/20 tracks spec 200-island 4043/1000\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0e45",
+  "at_utc": "20260918T222947Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "T2 executed 4.05 on 120 islands is the spec's 200-island 4.043, not the runner's 6671/1728",
+  "by": "w-macbookpro90c72-j0e45",
+  "at_utc": "20260918T222947Z"
+ }
+}

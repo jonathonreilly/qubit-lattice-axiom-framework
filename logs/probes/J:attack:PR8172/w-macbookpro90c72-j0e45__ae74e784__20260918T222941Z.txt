@@ -1,0 +1,5 @@
+note 120-island cap 81/20
+runner 120 islands 6671/1728 = 3.8605324074074074
+spec 200 islands worst 4043/1000
+HIT: 120-island runner 6671/1728 vs stated 81/20; stated 81/20 tracks spec 200-island 4043/1000
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - 120-island runner 6671/1728 vs stated 81/20; stated 81/20 tracks spec 200-island 4043/1000

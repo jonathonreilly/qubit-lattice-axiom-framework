@@ -65,7 +65,7 @@ finding exactly two values.
 
 **Step 6 — the exact certificates (CHECKED as E2–E4, fractions throughout).** `check.py` evaluates `κ` through the plan
 of step 2 (cost divided by `ρ`), an upper bound on the transport ratio, so every certified `κ̄` below is an upper bound on
-the true one and `3κ̄ < 1` is certified with room to spare only in that direction. At `α = 5/4`:
+the true one, and `3κ̄ < 1` for the certified value implies it for the true value. At `α = 5/4`:
 
 | `p` | 3.7 | 3.8 | 3.9 | 4.0 | 4.2 | 4.4 | 4.6 | 4.8 | 5.0 | 5.1 |
 |---|---|---|---|---|---|---|---|---|---|---|

@@ -1,0 +1,38 @@
+{
+ "task": "J:attack:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-jonathonsmac4f50-jfd41",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8149/star_equivariant_environment.py",
+ "seed": 72964,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2aaed46b",
+ "started_utc": "20260918T230924Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "attack pattern (d) QUANTIFIER SCOPE - U2's 'every environment' and U4's 'every connected unit in a recorded environment differs under every order' tested against an adversarially constructed environment: sigma = -rho cycles the six directions and acts freely on the star's 18 outside sites, so sigma-equivariant environments exist; in all 216 of them the centre-first star's sequential law equals its joint law exactly at all 5 rules (1080/1080 exact constancy checks; full-law TV <= 9e-17), while the note's all-+x environment differs (TV 0.4029); 1 failures; attack FIRES"
+ },
+ "review": "Adversarial environment for U2/U4: sigma = -rho cycles the six directions in one six-cycle and acts freely on the star's 18 outside sites, so sigma-equivariant recorded environments exist, and in all 216 of them the star formed centre first has the product of its six leaves' integer normalizers constant in the centre value (1080/1080 exact checks over five rules incl. the executed (3,1,2)) and full-law TV(sequential, joint) <= 9e-17 on all 6^7 configurations, although every leaf records the centre together with five outside records; so U2's only-if direction and U4 ('every connected unit in a recorded environment differs under every order') fail as stated, the proof's all-equal-b pattern being unavailable when the fixed outside records span all six directions (the note's all-+x environment does differ, TV 0.4029).",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "d5d6fa2d2546d81d0df444b69edbe176b5a2c65bf7d2ccae9c9605cbaa2ac35c",
+ "stdout_tail": "-17; in the note's all-+x environment at (3,1,2): TV = 0.402900 (product of normalizers [918885693020585536, 16003770060096064, 169604594650054656]... not constant); leaf-first order in the equivariant environment: product over the other five leaves [5819345141760, 4849454284800, 5819345141760, 4849454284800, 5677409894400, 4952634163200] (constant: False)  (1s)\nHIT: U2 (only-if) and U4 fail: in every sigma-equivariant recorded environment (216 choices of the three orbit records) the star formed centre first has sequential law equal to its joint law at every tested rule, including the executed (3,1,2) (exact: the product of the six leaves' normalizers is constant in the centre value; full-law TV 9e-17), although every leaf records the centre together with five outside records; U2's proof pattern (all recorded values equal to one b) is unavailable because the fixed outside records span all six directions\nSUMMARY: attack pattern (d) QUANTIFIER SCOPE - U2's 'every environment' and U4's 'every connected unit in a recorded environment differs under every order' tested against an adversarially constructed environment: sigma = -rho cycles the six directions and acts freely on the star's 18 outside sites, so sigma-equivariant environments exist; in all 216 of them the centre-first star's sequential law equals its joint law exactly at all 5 rules (1080/1080 exact constancy checks; full-law TV <= 9e-17), while the note's all-+x environment differs (TV 0.4029); 1 failures; attack FIRES\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jfd41",
+  "at_utc": "20260918T230935Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "U2 (only-if) and U4 are false as stated: in any sigma-equivariant recorded environment (sigma = -rho, a six-cycle on directions acting freely on the 18 outside sites) the centre-first star's sequential law equals its joint law exactly for every rule (exact normalizer-product constancy, 1080/1080; TV <= 9e-17), though every leaf records the centre plus five outside records; the proof's all-equal-b comparison is unavailable with fixed mixed outside records.",
+  "by": "w-jonathonsmac4f50-jfd41",
+  "at_utc": "20260918T230935Z"
+ }
+}

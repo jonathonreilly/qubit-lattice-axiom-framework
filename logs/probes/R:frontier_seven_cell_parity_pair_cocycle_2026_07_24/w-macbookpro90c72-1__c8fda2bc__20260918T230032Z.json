@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_seven_cell_parity_pair_cocycle_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_seven_cell_parity_pair_cocycle_2026_07_24.py",
+ "seed": 72432,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230032Z",
+ "elapsed_s": 10.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f4c16225dffb168cc62fd8d4fd01365063f9357bc5873ddc4f29d20f616cc21c",
+ "stdout_tail": "}, \"neighbor_odd_pairs_always_commuting\": 15, \"observed_anticommuting_term_pairs\": 1200, \"parity_sign_mismatches\": 74400, \"term_pair_cases\": 83244}, {\"Cycle330_total_number_boundary\": 2, \"L\": 6, \"ambiguous_center_arm_odd_pairs\": 6, \"by_pair_class\": {\"arm_arm\": {\"anticommuting\": 0, \"cases\": 59460, \"mismatches\": 54000}, \"center_arm\": {\"anticommuting\": 1200, \"cases\": 23784, \"mismatches\": 20400}}, \"neighbor_odd_pairs_always_commuting\": 15, \"observed_anticommuting_term_pairs\": 1200, \"parity_sign_mismatches\": 74400, \"term_pair_cases\": 83244}], \"resources\": {\"carrier_radius\": 7, \"cell_parity_M2\": 7, \"conditional_projectors\": 21, \"elapsed_seconds\": 9.828036208986305, \"maximum_projector_L1_diameter\": 7, \"maximum_projector_support_M2\": 4, \"ordered_pair_register_M2\": 42, \"peak_rss_mb\": 99.90625, \"semantic_M2\": 49}, \"status\": \"bounded-seven-cell-parity-pair-cocycle-discriminator\", \"supplied\": [\"one local center-plus-six-neighbor chart and its seven cell-parity controls\", \"42 ordered-pair M2 sites and the conditional antisymmetric pair state\", \"21 rank-four static conditional projectors\", \"the standard local S7 relabeling action and proper-cubic coordinate subgroup\", \"the landed Cycle-311/315/330 branch grammar for the physical residual comparator\", \"isolated-star pitch 15 and numerical tolerance 2e-12\"], \"terminal\": \"ABSTRACT_PARITY_COCYCLE_CLOSED_PHYSICAL_ORDER_ROLE_NOT_RETIRED\", \"tests_failed\": 0, \"tests_passed\": 8}\nRESULT ABSTRACT_PARITY_COCYCLE_CLOSED_PHYSICAL_ORDER_ROLE_NOT_RETIRED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230042Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

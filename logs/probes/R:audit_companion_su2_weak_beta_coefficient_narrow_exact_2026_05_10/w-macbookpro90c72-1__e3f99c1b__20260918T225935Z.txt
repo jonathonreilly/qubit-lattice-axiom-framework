@@ -1,0 +1,97 @@
+========================================================================================
+Audit companion (exact-symbolic) for
+SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10
+Goal: sympy verification of b_2 = 19/6 closed form
+Inputs and explicit conditions:
+  (X0) linked native_gauge_closure + graph_first_su3_integration sources
+  (X1) explicit supplied LH inventory N_W=(N_color+1)*N_gen
+  (X2) linked three_generation_observable_count_corollary source
+  (X3) explicit one-Higgs-doublet inventory
+  (X4a) linked yang_mills_coupling_marginality_forces_d_four source
+  (X4b) explicit d=4 background-field coefficient kernel
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: symbolic setup (positive integers)
+----------------------------------------------------------------------------------------
+  symbolic N_pair  = N_pair
+  symbolic N_color = N_color
+  symbolic N_gen   = N_gen
+  (X1) N_W = (N_color + 1) * N_gen = N_gen*(N_color + 1)
+  (X3) n_H^complex_doublets = 1
+  (X4a) d = 4 Yang-Mills marginal tangent supplied upstream
+
+----------------------------------------------------------------------------------------
+Part 1: SU(2) trace data used by the explicit X4' coefficient kernel
+----------------------------------------------------------------------------------------
+  [PASS (A)] SU(2) fundamental trace normalization Tr_F(T_a T_b) = (1/2) delta_ab  (T(F) = 1/2 for Weyl and scalar fundamental doublets)
+  [PASS (A)] SU(2) adjoint Casimir sum_a ad(T_a)^2 = 2 I_adj  (Casimir matrix = Matrix([[2, 0, 0], [0, 2, 0], [0, 0, 2]]))
+  [BOUNDARY] X4' spin-sector rational table is an explicit bounded d=4 QFT kernel, not derived here  (gauge+ghost: 11/3, Weyl: -2/3, complex scalar multiplet: -1/3; convention b>0 = asymptotic freedom)
+
+----------------------------------------------------------------------------------------
+Part 2: (P1) symbolic closed form for b_2 parametric in (N_pair, N_color, N_gen)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P1) X4'-kernel-applied b_2 = (11/3) N_pair - (1/3) (N_color + 1) N_gen - 1/6  (b_2_native - b_2_claimed_P1 = 0)
+  [PASS (A)] (P1') factored: b_2 = (22 N_pair - 2 (N_color + 1) N_gen - 1) / 6  (diff = 0)
+
+----------------------------------------------------------------------------------------
+Part 3: (P2) framework instance (N_pair, N_color, N_gen) = (2, 3, 3) -> 19/6
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P2) framework instance: b_2 = 19/6 at (N_pair, N_color, N_gen) = (2, 3, 3)  (b_2 = 19/6)
+  [PASS (A)] (P2 alt) factored form at framework counts also equals 19/6  (b_2_factored = 19/6)
+
+----------------------------------------------------------------------------------------
+Part 4: (P3) per-sector decomposition
+----------------------------------------------------------------------------------------
+  [PASS (A)] (P3) gauge boson + ghost contribution at framework counts is +22/3  (+ (11/3) * 2 = 22/3)
+  [PASS (A)] (P3) LH SU(2) Weyl-doublet matter contribution at framework counts is -4  (- (1/3) * 4 * 3 = -4)
+  [PASS (A)] (P3) 1-Higgs-doublet scalar contribution is -1/6  (- (1/3) * (1/2) * 1 = -1/6)
+  [PASS (A)] (P3) per-sector sum: +22/3 + (-4) + (-1/6) = 19/6  (22/3 - 4 - 1/6 = 19/6)
+
+----------------------------------------------------------------------------------------
+Part 5: (C1)-(C4) corollaries
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) per-sector decomposition equals 19/6 by exact Rational arithmetic  (22/6 + (-24/6) + (-1/6) form: (44 - 24 - 1)/6 = 19/6)
+  [PASS (A)] (C2) symbolic identity: -6 * b_2 = 2 (N_color + 1) N_gen - 22 N_pair + 1  (sympy.simplify(-6*b_2 - (2(N_c+1)N_g - 22 N_p + 1)) = 0)
+  [PASS (A)] (C2) framework instance: ratio b_2 : (-1/6) = -19 at (2, 3, 3)  (-6 * b_2 = -19; 2(N_c+1)N_g - 22 N_p + 1 = -19)
+  [PASS (A)] (C3) matter sector alone at framework: -(N_color+1) * N_gen / 3 = -4  (-(3+1)*3/3 = -4)
+  [PASS (A)] (C4) symmetric point N_color = N_gen recovers parent broad-note form b_2 = (22 N_pair - 2 N_color (N_color + 1) - 1) / 6  (diff = 0)
+
+----------------------------------------------------------------------------------------
+Part 6: counterfactual at (N_pair, N_color, N_gen) = (2, 4, 3)
+----------------------------------------------------------------------------------------
+  [PASS (A)] counterfactual (2, 4, 3): b_2 = 13/6 (confirms parametric form)  (b_2 = 13/6)
+  [PASS (A)] counterfactual (3, 3, 3): b_2 = 41/6 (confirms N_pair dependence)  (b_2 = 41/6)
+
+----------------------------------------------------------------------------------------
+Part 7: factored-form sympy simplify roundtrip
+----------------------------------------------------------------------------------------
+  [PASS (A)] sympy.simplify(X4' coefficient kernel - factored P1') == 0  (simplify result: 0)
+  [PASS (A)] sympy.simplify(X4' coefficient kernel - unfactored P1) == 0  (simplify result: 0)
+
+----------------------------------------------------------------------------------------
+Part 8: Rational-arithmetic sanity check on the framework instance
+----------------------------------------------------------------------------------------
+  [PASS (A)] framework instance via direct Rational arithmetic equals 19/6  (22/3 - 4 - 1/6 = 19/6)
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision:
+    (X4') SU(2) trace data: Tr_F(T_a T_b)=delta_ab/2 and C_2(adj)=2
+    (X4') d=4 spin-sector coefficient kernel recorded as explicit boundary
+    (P1) parametric closed form for b_2 in (N_pair, N_color, N_gen)
+    (P1') factored form (22 N_pair - 2 (N_color+1) N_gen - 1) / 6
+    (P2) framework instance b_2 = 19/6 at (2, 3, 3)
+    (P3) per-sector additive decomposition (+22/3) + (-4) + (-1/6) = 19/6
+    (C1) per-sector decomposition exact Rational arithmetic
+    (C3) matter sector alone is -4 at framework counts
+    (C4) symmetric point N_color = N_gen recovers parent broad-note form
+    Counterfactual (2, 4, 3) -> 13/6 confirming N_color dependence
+    Counterfactual (3, 3, 3) -> 41/6 confirming N_pair dependence
+    sympy.simplify roundtrip on both unfactored and factored forms
+    Direct Rational-arithmetic framework instance reproduces 19/6
+
+========================================================================================
+TOTAL: PASS=20, FAIL=0
+========================================================================================

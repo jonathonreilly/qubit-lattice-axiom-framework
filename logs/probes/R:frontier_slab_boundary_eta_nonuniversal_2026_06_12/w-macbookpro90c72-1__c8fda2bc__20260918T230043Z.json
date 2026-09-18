@@ -1,0 +1,39 @@
+{
+ "task": "R:frontier_slab_boundary_eta_nonuniversal_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_slab_boundary_eta_nonuniversal_2026_06_12.py",
+ "seed": 72443,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230043Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=27 FAIL=0",
+   "PASS=27 FAIL=0",
+   "PASS=27 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a19a668e0585b6b4094ddd1f60a7aee69de017d7ea6914d9faff8e35d3c36d14",
+ "stdout_tail": "etic, not evidence\n\n============================================================================================\nS5 trivial control and structural source hygiene\n============================================================================================\n  [PASS] [S5] r=0, m0=4 trivial control has no per-edge or total remainder  (L=32: edge=(3.66e-15,3.66e-15), total=0.00e+00; L=64: edge=(1.69e-14,1.69e-14), total=0.00e+00; L=128: edge=(1.55e-15,1.55e-15), total=0.00e+00)\n  [PASS] [S5] no-delta structural check: no such Python variable or symbol  (offenders = [])\n\n============================================================================================\nB-checks: note wiring, firewall, links, and map\n============================================================================================\n  [PASS] [B1] edge-engine note pins the real Wilson-cylinder phrase\n  [PASS] [B2] firewall and WALLS-MOVE sentences are present\n  [PASS] [B3] forbidden positive-closure phrases are absent\n  [PASS] [B4] dependency markdown link inventory is exactly two  (links = 2)\n  [PASS] [B5] context names are backticked\n  [PASS] [B6] No-promotion statement present\n  [PASS] [B7] standard status-authority lines present\n  [PASS] [B8] five-wall map paragraph and two surviving mechanism classes present\n  [PASS] [B9] dependencies are the requested two markdown links\n  [PASS] [B10] primary runner and runner cache links are present\n\nSUMMARY/TOTAL: PASS=27 FAIL=0\nSUMMARY: PASS=27 FAIL=0\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230046Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_slab_boundary_eta_nonuniversal_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_slow_variables_derived_one_body_closure_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_slow_variables_derived_one_body_closure_2026_06_09.py",
+ "seed": 72447,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230047Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "23789cd27e20effc91e7abb9351aaaa883fbe5968eb2d10a22996c11db57286a",
+ "stdout_tail": " (consistent with the campaign's vacuous-link-generator result).\n==============================================================================\nPart 4  (T4) teeth: a non-quadratic (quartic) term breaks the one-body closure\n==============================================================================\n  [PASS] with a quartic term, a_0^dag a_3 (t) LEAVES the bilinear span (closure broken: residual O(1)) -- the closure is a property of the named quadratic hopping  (projection residual 0.232)\n==============================================================================\nTOTAL: PASS=8 FAIL=0\n==============================================================================\nSCOPE (retire-mode): the route-(i) 'added slow variables' promotion premise is\n  retired as a source proposal -- the closing variable set is DERIVED, not admitted:\n  the one-body bilinear algebra closes under the named quadratic hopping at the\n  OPERATOR level (state-independent), the campaign's record channels act by exact\n  one-body rules (closure survives), and the composite link is a nonlinear lossy\n  COORDINATE of this closed flow (the induced-trajectory Sylvester law is\n  re-derived from it; its non-autonomy = coordinate non-autonomy).  A quartic\n  term breaks the closure --\n  the result is conditional on the named quadratic generator (realization gate a\n  separate lane) + the supplied C^3 carrier.  Does NOT touch the pointer-frame\n  admission {P_r} or the stratification theorem; the audit lane grades status.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230047Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_slow_variables_derived_one_body_closure_2026_06_09.txt against the .txt beside this log"
+  ]
+ }
+}

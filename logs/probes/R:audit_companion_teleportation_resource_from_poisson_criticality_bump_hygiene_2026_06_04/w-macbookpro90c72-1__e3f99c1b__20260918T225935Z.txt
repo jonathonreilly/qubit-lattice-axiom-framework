@@ -1,0 +1,45 @@
+========================================================================================
+AUDIT COMPANION: TELEPORTATION RESOURCE FROM POISSON
+CRITICALITY-BUMP AUDIT-READINESS HYGIENE (open_gate parent)
+========================================================================================
+
+Companion target:
+  teleportation_resource_from_poisson_note
+
+Question:
+  Has the parent note's substance changed since the prior
+  clean snapshot, or is the criticality-bump invalidation
+  a queue-priority signal only?
+
+Answer:
+  The substance is unchanged. The invalidation is a
+  queue-priority bump (criticality_increased: leaf -> medium),
+  not a content-change flag. The open_gate admission
+  (native preparation/readout theorem selecting the last KS
+  taste bit as a deterministic physical carrier) is unchanged
+  and remains admitted, not-derived.
+
+----------------------------------------------------------------------------------------
+(R1) Presence checks for parent note and parent runner
+----------------------------------------------------------------------------------------
+  [PASS] parent note file exists on disk  (path=docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)
+  [PASS] parent runner file exists on disk  (path=scripts/frontier_teleportation_resource_from_poisson.py)
+
+----------------------------------------------------------------------------------------
+(R2) Note-hash invariance against current ledger row
+----------------------------------------------------------------------------------------
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_teleportation_resource_from_poisson_criticality_bump_hygiene_2026_06_04.py", line 402, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_teleportation_resource_from_poisson_criticality_bump_hygiene_2026_06_04.py", line 387, in main
+    part_R2_note_hash_invariance()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_teleportation_resource_from_poisson_criticality_bump_hygiene_2026_06_04.py", line 171, in part_R2_note_hash_invariance
+    row = load_ledger_row()
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_teleportation_resource_from_poisson_criticality_bump_hygiene_2026_06_04.py", line 147, in load_ledger_row
+    with open(ROOT / LEDGER_REL, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/audit/data/audit_ledger.json'

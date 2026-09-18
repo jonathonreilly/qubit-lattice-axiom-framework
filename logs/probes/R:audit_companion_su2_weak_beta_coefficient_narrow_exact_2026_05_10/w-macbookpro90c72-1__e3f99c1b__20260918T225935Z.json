@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py",
+ "seed": 72375,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e3f99c1b",
+ "started_utc": "20260918T225935Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9801625d65f0b7925ae6819d192f2bd570ba8600aeba2baaad0d661169dca5a1",
+ "stdout_tail": "k on the framework instance\n----------------------------------------------------------------------------------------\n  [PASS (A)] framework instance via direct Rational arithmetic equals 19/6  (22/3 - 4 - 1/6 = 19/6)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (X4') SU(2) trace data: Tr_F(T_a T_b)=delta_ab/2 and C_2(adj)=2\n    (X4') d=4 spin-sector coefficient kernel recorded as explicit boundary\n    (P1) parametric closed form for b_2 in (N_pair, N_color, N_gen)\n    (P1') factored form (22 N_pair - 2 (N_color+1) N_gen - 1) / 6\n    (P2) framework instance b_2 = 19/6 at (2, 3, 3)\n    (P3) per-sector additive decomposition (+22/3) + (-4) + (-1/6) = 19/6\n    (C1) per-sector decomposition exact Rational arithmetic\n    (C3) matter sector alone is -4 at framework counts\n    (C4) symmetric point N_color = N_gen recovers parent broad-note form\n    Counterfactual (2, 4, 3) -> 13/6 confirming N_color dependence\n    Counterfactual (3, 3, 3) -> 41/6 confirming N_pair dependence\n    sympy.simplify roundtrip on both unfactored and factored forms\n    Direct Rational-arithmetic framework instance reproduces 19/6\n\n========================================================================================\nTOTAL: PASS=20, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225935Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py",
+ "seed": 72378,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e3f99c1b",
+ "started_utc": "20260918T225938Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "172de5d8a4241cc9478bccd8311d835d597a6264366b66b141d82f72969727b8",
+ "stdout_tail": "sion\n  [PASS (A)] A2 supplied packet satisfies Hermiticity and the half-Gram relation\n  [PASS (A)] A3 assembled A is Hermitian\n  [PASS (A)] A4 Gram contraction gives Tr(A^2)=F2/2  (f1**2/2 + f2**2/2 + f3**2/2)\n  [PASS (A)] A5 D(0)=0\n  [PASS (A)] A6 D'(0)=0\n  [PASS (A)] A7 D''(0)=Tr(A^2)/n=F2/(2n)  (f1**2/4 + f2**2/4 + f3**2/4)\n  [PASS (A)] A8 [x^2]D=D''(0)/2=F2/(4n)  (f1**2/8 + f2**2/8 + f3**2/8)\n  [PASS (A)] A9 the scalar deficit has fourth derivative -cos(y)\n  [PASS (A)] A10 the fourth derivative is globally bounded by one on the real line  (1-cos(y)^2=sin(y)^2>=0)\n  [PASS (A)] A11 the spectral fourth moment equals Tr(A^4)\n  [PASS (A)] A12 zero A saturates the identities and bound at zero\n  [PASS (A)] A13 n=1 is allowed when the supplied Gram relation holds\n  [PASS (A)] A14 tracelessness is unnecessary for the real deficit derivative  (Tr(A)=1, D'(0)=0)\n  [PASS (A)] A15 the n=1 packet has D''(0)=1 and [x^2]D=1/2\n  [PASS (A)] A16 its complex deficit retains the nonzero linear coefficient -i  (-I)\n  [PASS (A)] A17 extracting x^2*F2 after substitution in w D(sx) gives w*s^2/(4n)  (term=F2*s**2*w*x**2/(4*n), coefficient=s**2*w/(4*n))\n  [PASS (A)] A18 scalar rescaling is quadratic in s\n\n================================================================================================\nTOTAL: PASS=18 FAIL=0\n================================================================================================\nVERDICT: native matrix Taylor, global remainder, and rescaling theorem verified.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225939Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

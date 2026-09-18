@@ -1,0 +1,62 @@
+==============================================================================
+g_* Higgs-sector count reconciliation runner (2026-05-29)
+==============================================================================
+
+[1] high-T relativistic dof census: one vs two EWSB doublets
+  [PASS] gluon dof = dim adj(SU(3)) * 2 = 16  (16)
+  [PASS] SU(2)_L dof = dim adj(SU(2)) * 2 = 6  (6)
+  [PASS] U(1)_Y dof = 1 * 2 = 2  (2)
+  [PASS] gauge bosonic subtotal = 24  (24)
+  [PASS] one complex SU(2)_L doublet -> 2 complex * 2 real = 4 scalar dof  (2 * 2 = 4)
+  [PASS] per-generation fermionic dof = 30  (30)
+  [PASS] N_fermions = 3 * 30 = 90  (90)
+  [PASS] single-doublet N_bosons = 28  (28)
+  [PASS] single-doublet g_* = 28 + (7/8)*90 = 427/4 = 106.75  (427/4 = 106.75)
+  [PASS] two-doublet N_bosons = 32  (32)
+  [PASS] two-doublet g_* = 32 + (7/8)*90 = 110.75  (443/4 = 110.75)
+  [PASS] g_* shift from a second thermalized doublet = +4 (one boson per scalar dof)  (4)
+  [PASS] the shift equals the 4 added scalar dof (bosonic, weight 1)
+
+[2] retained-bounded inventory premise and native bridge boundary
+  [PASS] D17: H_unit (1,1) scalar singlet on Q_L has Z^2 = 6
+  [PASS] D17: no second (1,1) composite scalar -> alternatives Z^2 in {8, 9/2, 24} != 6  ((1,8)=8, (3,1)=9/2, (8,3)=24)
+  [PASS] note claim type is bounded_theorem over retained-bounded declared inventory
+  [PASS] SM DOF inventory note supplies the one-complex-doublet declared premise
+  [PASS] note keeps H_unit -> EWSB doublet as separate native science, not load-bearing
+  [PASS] note states g_* = 106.75 under retained-bounded declared inventory
+  [PASS] H_unit representation no-go note exists
+  [PASS] H_unit direct full-doublet bridge is marked representation-forbidden
+  [PASS] SM note consumes accepted inventory premise without new axiom or audit verdict
+  [PASS] H_unit supplied-doublet radial/orbit support note exists
+  [PASS] radial/orbit support is cited as support only, not field-content authority
+  [PASS] radial/orbit support keeps the one-doublet inventory premise load-bearing
+
+[3] note + authority cross-checks
+  [PASS] authority exists: YT_WARD_IDENTITY_DERIVATION_THEOREM.md
+  [PASS] authority exists: HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md
+  [PASS] authority exists: SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md
+  [PASS] authority exists: EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
+  [PASS] authority exists: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
+  [INFO] prior-cycle R-HIGGS note present on this branch: True (lands via PR #2223; soft check)
+  [PASS] note file exists  (docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
+  [PASS] note records load-bearing token: '106.75'
+  [PASS] note records load-bearing token: '110.75'
+  [PASS] note records load-bearing token: 'bounded_theorem'
+  [PASS] note records load-bearing token: 'retained-bounded declared-inventory premise'
+  [PASS] note records load-bearing token: 'R-HIGGS'
+  [PASS] note records load-bearing token: 'H_unit'
+  [PASS] forbidden-import disclaimer paragraph present in §1
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'monte carlo'
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'fitted selector'
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'best fit'
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'chi-squared fit'
+  [PASS] no forbidden load-bearing import string outside disclaimer: 'pdg fit'
+  [PASS] no new-vocabulary token: 'two-class framing'
+  [PASS] no new-vocabulary token: 'g-star landing class'
+  [PASS] no new-vocabulary token: 'thermal dof framing'
+  [PASS] no new-vocabulary token: 'ewsb-flavor class'
+  [PASS] no new-vocabulary token: 'algebraic universality'
+
+==============================================================================
+PASS=48 FAIL=0
+==============================================================================

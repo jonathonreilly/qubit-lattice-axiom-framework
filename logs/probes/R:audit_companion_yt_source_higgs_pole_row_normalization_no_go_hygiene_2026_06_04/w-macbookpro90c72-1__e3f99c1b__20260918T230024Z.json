@@ -1,0 +1,40 @@
+{
+ "task": "R:audit_companion_yt_source_higgs_pole_row_normalization_no_go_hygiene_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_yt_source_higgs_pole_row_normalization_no_go_hygiene_2026_06_04.py",
+ "seed": 72424,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e3f99c1b",
+ "started_utc": "20260918T230024Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=50 FAIL=0",
+   "PASS=50 FAIL=0",
+   "PASS=50 FAIL=0' line2='RESULT: PASS=50 FAIL=0",
+   "PASS=60 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "795f5e8157f5ddbf5cf5337dbd2a61c132d8cbf8c398acd35b0f817e3f532631",
+ "stdout_tail": "ion'\n  PASS parent_note_positive_closure_phrase::source/action :: phrase 'source/action'\n  PASS parent_note_positive_closure_phrase::W/Z :: phrase 'W/Z'\n\n========================================================================\nBLOCK 11: Companion-only metadata sanity\n========================================================================\n  PASS companion_note_claim_type_meta :: looking for explicit claim_type meta declaration\n  PASS companion_note_type_is_meta_audit_companion :: looking for 'meta (audit-companion' framing\n  PASS companion_note_status_companion_only :: looking for 'companion-only' status framing\n  PASS companion_note_no_forbidden_status::audit_clean_field :: count=0\n  PASS companion_note_no_forbidden_status::audit_conditional_field :: count=0\n  PASS companion_note_no_forbidden_status::audit_clean_grade_field :: count=0\n  PASS companion_note_no_forbidden_status::audit_bounded_grade_field :: count=0\n  PASS companion_note_no_forbidden_status::effective_clean_grade_field :: count=0\n  PASS companion_note_no_forbidden_status::effective_bounded_grade_field :: count=0\n  PASS companion_note_no_forbidden_status::effective_clean_field :: count=0\n  PASS companion_runner_no_write_to::audit_ledger.json :: write-mention lines=0\n  PASS companion_runner_no_write_to::audit_queue.json :: write-mention lines=0\n\n========================================================================\nSUMMARY: PASS=60 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

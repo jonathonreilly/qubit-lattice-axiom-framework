@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_slab_bridge_spatial_Tx_real_2026_05_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py",
+ "seed": 72446,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230046Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ea931ba2c1e2a25613c4b08aa0d5ed982cb98310427d113feda3f457f76528cb",
+ "stdout_tail": "e precision (Lemma 3.1 prediction) ...\n    PASS \u2014 \u03c4=4.0, N_max=4; \u0394_\u03c4 = 8.8888888888888884e-01, \u0394_x = 8.8888888888888884e-01; |\u0394_x \u2212 \u0394_\u03c4| / \u0394_\u03c4 = 0.000e+00 (tol 1e-10).\n\n[V7] Spatial-slab Leg A composition: det(D_x + m I) > 0 (Lemma 4.2) ...\n    PASS \u2014 Sampled N=30 random SU(3) configs at m=0.5; min det(D_x + m I) = 1.250000e-01, max = 1.250000e-01; margin threshold = 1.562500e-04. All real-positive.\n\n[V8] Slab-bridge bound (S) at d \u2208 {0, 1, 2} (\u00a75 discharge) ...\n    PASS \u2014 Slab-bridge bound (S) check via single-link transfer-operator spectral correlator on the (1,0)+(0,1) subspace; \u0394_x = 2\u03c4/9 = 8.888889e-01; d=0: |C(d)| = 5.000000e-01, \u2016A\u2016\u2016B\u2016 exp(-d \u0394_x) = 5.000000e-01, OK: YES; d=1: |C(d)| = 2.055561e-01, \u2016A\u2016\u2016B\u2016 exp(-d \u0394_x) = 2.055561e-01, OK: YES; d=2: |C(d)| = 8.450666e-02, \u2016A\u2016\u2016B\u2016 exp(-d \u0394_x) = 8.450666e-02, OK: YES\n\n==============================================================================\nPASS=8  FAIL=0  (runtime: 0.20 s)\n==============================================================================\n  [PASS] V1 Wilson axis-permutation invariance of S_W\n  [PASS] V2 T_x kernel = T_\u03c4 kernel under axis-swap\n  [PASS] V3 T_x kernel strictly positive on SU(3) (axis-relabeled)\n  [PASS] V4 T_x trace-class convergence via character series\n  [PASS] V5 \u0394_x > 0 from T_x spectrum\n  [PASS] V6 \u0394_x = \u0394_\u03c4 to machine precision\n  [PASS] V7 Spatial-slab fermion det positivity (Lemma 4.2)\n  [PASS] V8 slab-bridge bound (S) at d \u2208 {0, 1, 2}\n\nAll verifications passed; runner exits cleanly.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230047Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_slab_bridge_spatial_Tx_real_2026_05_19.txt against the .txt beside this log"
+  ]
+ }
+}

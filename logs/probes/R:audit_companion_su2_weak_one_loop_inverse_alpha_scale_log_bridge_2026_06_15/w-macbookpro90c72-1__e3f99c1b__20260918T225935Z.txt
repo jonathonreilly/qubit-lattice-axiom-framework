@@ -1,0 +1,26 @@
+========================================================================================
+SU2 weak one-loop inverse-alpha and scale-log bridge
+No audit verdicts are produced or edited by this runner.
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: source packet checks
+----------------------------------------------------------------------------------------
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py", line 251, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py", line 73, in main
+    values_text = USABLE_VALUES.read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md'

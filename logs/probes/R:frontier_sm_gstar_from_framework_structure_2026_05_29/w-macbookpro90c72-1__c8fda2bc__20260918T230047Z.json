@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_sm_gstar_from_framework_structure_2026_05_29",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_sm_gstar_from_framework_structure_2026_05_29.py",
+ "seed": 72447,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230047Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=117 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "054dff54ca3c77a511fbed812a035847ce2f6cee68a9c2ee1f3bf079e74de543",
+ "stdout_tail": "ent: 'g-star landing class'\n  [PASS] forbidden vocabulary absent: 'g_* landing class'\n  [PASS] forbidden vocabulary absent: 'thermal dof framing'\n  [PASS] forbidden vocabulary absent: 'two-class framing'\n  [PASS] forbidden vocabulary absent: 'algebraic universality'\n  [PASS] forbidden vocabulary absent: 'lattice-realization-invariant'\n  [PASS] forbidden vocabulary absent: 'new theory class'\n\n----------------------------------------------------------------------------------------\nalignment with the import note being retired\n----------------------------------------------------------------------------------------\n  [PASS] import note contains: g_bosonic = 16 + 6 + 2 + 4 = 28\n  [PASS] import note contains: g_fermionic = 72 + 12 + 6 = 90\n  [PASS] import note contains: 106.75\n  [PASS] import note states the blocker (no framework derivation of the inventory)\n\n----------------------------------------------------------------------------------------\nrunner-note self-consistency\n----------------------------------------------------------------------------------------\n  [PASS] runner path cited in note\n\nTOTAL: PASS=117 FAIL=0\nSUMMARY: bounded theorem passes; g_* = 106.75 is assembled from framework gauge+generation structure (retained core sourced from retained authorities) with named residuals (R-U1Y, R-POL, R-HIGGS, R-MATTER, R-FSB, R-SPIN) and honest imports (I11, I12). The monolithic external SM-census import status is retired; effective status is owned by the independent audit lane.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230047Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

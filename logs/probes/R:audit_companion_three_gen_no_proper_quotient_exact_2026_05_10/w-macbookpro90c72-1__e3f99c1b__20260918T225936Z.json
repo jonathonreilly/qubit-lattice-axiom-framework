@@ -1,0 +1,32 @@
+{
+ "task": "R:audit_companion_three_gen_no_proper_quotient_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_three_gen_no_proper_quotient_exact_2026_05_10.py",
+ "seed": 72376,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e3f99c1b",
+ "started_utc": "20260918T225936Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "18781a031620f38771297f092a71d1236fc1bcf6572122133168217a5213a12e",
+ "stdout_tail": "----------------------------------------------------------------\nPart 7: cited dependency ledger row visibility\n----------------------------------------------------------------------------------------\n  [FAIL (A)] audit_ledger.json accessible for graph-visibility check  (could not load ledger: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/audit/data/audit_ledger.json')\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision on `hw=1` triplet H \u2245 \u2102\u00b3:\n    D_3 = \u2102-span(P_1, P_2, P_3) \u2014 orthogonal, complete, rank 3\n    C_3 cycle e_1 \u2192 e_2 \u2192 e_3 \u2192 e_1 with C_3\u00b3 = I_3\n    Matrix-unit generation: C_3 \u00b7 P_i and C_3\u00b2 \u00b7 P_i give all 6\n    off-diagonal E_{ij} for i \u2260 j\n    {E_{ij}}_{i,j=1,2,3} span M_3(\u2102) (rank 9)\n    {P_i, C_3 P_i, C_3\u00b2 P_i} span M_3(\u2102) (rank 9 generator check)\n    No-proper-quotient: 6 nontrivial subspaces each fail\n    C_3-invariance (orbit-enumeration over basis-aligned subspaces)\n    Cited deps: site_phase_cube_shift_intertwiner_note,\n    s3_taste_cube_decomposition_note, s3_mass_matrix_no_go_note,\n    z2_hw1_mass_matrix_parametrization_note all graph-visible\n\n========================================================================================\nTOTAL: PASS=29, FAIL=1\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225936Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

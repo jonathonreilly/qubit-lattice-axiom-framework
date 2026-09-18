@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_yt_qubit_neutral_higgs_carrier_ray_bridge_record_axiom_invariance_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_yt_qubit_neutral_higgs_carrier_ray_bridge_record_axiom_invariance_2026_06_04.py",
+ "seed": 72380,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e3f99c1b",
+ "started_utc": "20260918T225940Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ff66b1ef94f29625a706d7676bd329a69962a5eaf59eadfdd3d7159f035b4486",
+ "stdout_tail": "================================================\n  PASS indep_sigma_z_decomp :: sigma_z - (P_+ - P_-) = Matrix([[0, 0], [0, 0]])\n  PASS indep_Q_H_diagonal_1_0 :: Q_H = [[1, 0], [0, 0]]\n  PASS indep_Pm_H0_equals_H0 :: Pm H_0 - H_0 = [[0], [0]]\n  PASS indep_Pp_H0_equals_zero :: Pp H_0 = [[0], [0]]\n  PASS indep_Q_H_H0_equals_zero :: Q_H H_0 = [[0], [0]]\n  PASS indep_exp_identity_symbolic :: max symbolic diff entry = [0, 0, 0, 0]\n\n========================================================================\nTOTAL PASS: 68\nTOTAL FAIL: 0\n========================================================================\n\nCompanion conclusion (audit-friendly evidence only):\n  The load-bearing carrier-ray identification of\n  YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md\n  (sigma_z = P_+ - P_-; sigma_z source <-> P_- occupation source;\n   P_- H_0 = H_0; Q_H H_0 = 0; radial tangent neutral;\n   sqrt(2) y_t / g_2 cancels v'(s)) uses ONLY one-qubit Pauli\n  content (Quantum axiom), stipulated C^2/lower-ray bookkeeping, and\n  elementary calculus. The Record axiom (additive scalar\n  record-readout functional) is neither used nor invoked.\n  Numeric output is bit-identical under both 'Record axiom\n  asserted' and 'Record axiom not asserted' outer scopes. This\n  runner does not re-apply the prior audit verdict; it records\n  that the arithmetic checked here is unchanged by the\n  2026-06-04 axiom-set adoption.\n\nThe audit lane decides how to treat the parent on the new\nminimal_axioms premise hash.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225940Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_yt_qubit_neutral_higgs_carrier_ray_bridge_record_axiom_invariance_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

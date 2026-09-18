@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_single_clock_apbc_axis_label_bridge_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py",
+ "seed": 72442,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230042Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "37bf0dfffe8d5e64ae5c122f56191b29f5f7f06067cb63d26db1d46c6830f048",
+ "stdout_tail": "ASS] [B] temporal APBC hop sector has trivial kernel -- ker tau=0\n  [PASS] [B] periodic x_1 hop sector has nonzero kernel -- ker x1=32\n  [PASS] [B] kernel dimension separates tau from x_1 invariantly\n\nC. symmetric APBC falsifier\n  [PASS] [C] APBC on both tau and x_1 restores W-invariance\n  [PASS] [C] symmetric APBC makes tau and x_1 kernel dimensions match again -- ker tau=0, ker x1=0\n  [PASS] [C] therefore the selecting input is BC asymmetry, not APBC alone\n\nD. boundary-datum automorphism group\n  [PASS] [D] APBC/PBC boundary vector has exactly S_3 residual symmetry -- |Aut(bc)|=6\n  [PASS] [D] every boundary-datum automorphism fixes the APBC axis\n  [PASS] [D] spatial axes remain permutable under the residual S_3\n  [PASS] [D] tau<->x_1 exchange changes the datum rather than preserving it\n\nE. composition and source-scope guards\n  [PASS] [E] source note states supplied-datum conditionality\n  [PASS] [E] source note refuses to derive the BC datum\n  [PASS] [E] source note leaves B-AXIS.1 and B-AXIS.3 untouched\n  [PASS] [E] source note excludes audit-data/status edits\n  [PASS] [E] target single-clock note cites the bridge without promoting status\n  [PASS] [E] target note still says B-AXIS remains live unless the datum is supplied\n\nTOTAL: PASS=21 FAIL=0\nVERDICT: Given a supplied APBC-on-axis/PBC-on-others boundary datum, the axis-label component of B-AXIS.2 is selected exactly. The datum, the time step, the transfer construction, and the no-second-clock premise are not derived here.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230042Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

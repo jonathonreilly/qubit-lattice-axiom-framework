@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_wolfenstein_lambda_a_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_wolfenstein_lambda_a_exact_2026_05_10.py",
+ "seed": 72379,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e3f99c1b",
+ "started_utc": "20260918T225939Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "63c745caca130c8e2838292985c5bfdf7f1f62813ba5dc695b3f9e96b5bfdac7",
+ "stdout_tail": "] (CV2-q) at (3,4,12): |V_ub|_0^2 == alpha_s^3 / 432  (got alpha_s**3/432)\n\n----------------------------------------------------------------------------------------\nPart 7: derivable corollaries\n----------------------------------------------------------------------------------------\n  [PASS (A)] corollary: (A^2 lambda^2) / lambda^2 == A^2  (parametric)  (diff = 0)\n  [PASS (A)] corollary: |V_cb|^2 / lambda^2 == alpha_s / c  (parametric)  (diff = 0)\n  [PASS (A)] corollary: |V_us|_0^2 / |V_cb|^2 == c / alpha_s  (parametric)  (diff = 0)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (W1), (W2) tautological identities\n    (W3) n_pair cancellation parametric in p, c\n    (W3) simplified form independent of p (free-symbol check)\n    (CV1) parametric in p, c\n    (CV1-q) under q = p c\n    (CV2) parametric in p, c, q with abstract rho^2+eta^2\n    (CV2-q) at rho^2+eta^2 = 1/q and q = p c reduces to alpha_s^3/(p^3 c^2)\n    All identities specialise correctly at (p, c, q) = (2, 3, 6)\n    Non-framework (3, 4, 12) reproduces the corresponding closed forms\n    Three derivable corollary identities hold parametrically\n\n========================================================================================\nTOTAL: PASS=22, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225939Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

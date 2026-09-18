@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_semigroup_closure_quadratic_condition_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_semigroup_closure_quadratic_condition_2026_07_02.py",
+ "seed": 72431,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230031Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "785e23e8d901ba3733ddc495b08f38fa74f7b5e27c6a4b8a903be5ad515097bb",
+ "stdout_tail": "SUMMARY PASS=39 FAIL=0 TOTAL=39\nSUMMARY witness=Z5 theta0=2*pi/5; samples=0,1/5,1/3,1,2; max_tail_bound=1/2339156220921416425433982723137305638710159048527684172354379085667968314244637382602691650390625\nSUMMARY status=PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230031Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

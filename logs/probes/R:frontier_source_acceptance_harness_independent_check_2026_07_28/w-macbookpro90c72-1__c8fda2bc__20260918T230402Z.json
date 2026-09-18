@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_source_acceptance_harness_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_source_acceptance_harness_independent_check_2026_07_28.py",
+ "seed": 72642,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230402Z",
+ "elapsed_s": 183.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=0 FAIL=4",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "259c6dbb558aeb1f82be4137f10e479f550d3ba350324f31a38f008b77dc36a1",
+ "stdout_tail": "upted\": \"REJECT\", \"malformed_nonobject\": \"REJECT\", \"malformed_outcome\": \"REJECT\", \"nonfinite_nested\": \"REJECT\", \"tampered_record_pin\": \"DRIFT\", \"wrong_pin\": \"DRIFT\"}}}\nFAIL discipline :: {\"closure_ok\": false, \"independent_input_count\": 44, \"input_port_ast_sha256\": {\"recoil\": \"bb39686051fa163179f18804eb1462f8afdf375dea353140ff54b4bb4c738891\", \"tensor_lift\": \"1c3b6d09de792b9faed11f4ae7d80ea90684bcd97bc678ca3c1c43de83a3e0fd\"}, \"landed_module_attribute_writes\": [], \"main_input_count\": 43, \"pin_init_args\": [\"self\"], \"predicate_mapping_exact\": true, \"recoil_accept_args\": [\"self\", \"fixture_selector\"], \"tensor_accept_args\": [\"self\", \"source_vector\"], \"verdict_structure_exact\": false}\n{\n  \"checks\": {\n    \"fail\": 4,\n    \"pass\": 0\n  },\n  \"digest_agreement\": {\n    \"recoil\": true,\n    \"tensor_lift\": true,\n    \"typed_bridge\": false\n  },\n  \"discipline\": {\n    \"api_ok\": false,\n    \"closure_ok\": false,\n    \"independent_input_count\": 44,\n    \"input_port_structure_exact\": false,\n    \"main_input_count\": 43,\n    \"module_writes\": [],\n    \"predicate_mapping_exact\": true,\n    \"verdict_structure_exact\": false\n  },\n  \"frozen_record_digests\": {\n    \"recoil\": \"f0700d2a13aaabc3817d422876d76682c2ed6c393f796f58c9f16f83428f2530\",\n    \"tensor_lift\": \"7ceadfe93210f0e16b523cc525987b490ed5ed67451a6a3f283c670858d4cc56\",\n    \"typed_bridge\": \"dbda46063afcd1d3d7092079f090907f23fbbf0786c2fa8164be1efee16fd40b\"\n  },\n  \"runtime_seconds\": 182.727466,\n  \"verdict_agreement\": false\n}\nSUMMARY PASS=0 FAIL=4 RUNTIME=182.727s\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230706Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=0 FAIL=4' vs cache 'PASS=4 FAIL=0'"
+  ]
+ }
+}

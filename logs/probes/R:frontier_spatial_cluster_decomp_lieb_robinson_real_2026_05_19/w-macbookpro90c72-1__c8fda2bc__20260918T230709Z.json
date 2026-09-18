@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.py",
+ "seed": 72829,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230709Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 9, FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "204345313811621dcbe89da3ae3224d1479ca958081c25b9684fa209c479c2f3",
+ "stdout_tail": "58515497\n  xi_cluster_SU3: 7437.219082663948\n  num_eigenvalues_used: 3136\n\n[V7 \u2014 Structural SU(3) transfer-spectrum exponential sequence]\n  N_max: 4\n  tau: 1.0\n  lam0: 1.0\n  lam1: 0.8007374029168081\n  Delta_H: 0.2222222222222222\n  R_0: 2.0\n  Rs: [1, 2, 3, 4, 5, 6]\n  predicted_decay: [0.8948393168143698, 0.8007374029168081, 0.7165313105737893, 0.6411803884299546, 0.5737534207374329, 0.513417119032592]\n  log_predicted: [-0.11111111111111109, -0.2222222222222222, -0.3333333333333333, -0.44444444444444436, -0.5555555555555555, -0.6666666666666666]\n  slope_fit: -0.11111111111111113\n  xi_cluster_extracted: 8.999999999999998\n  xi_cluster_expected: 9.0\n\n[V8 \u2014 Anti-overclaim: finite-\u039b scope verification]\n  N4_E0: -1.6160254037844388\n  N4_E1: -0.9571067811865478\n  N4_Delta: 0.658918622597891\n  N4_xi_extracted: inf\n  N6_E0: -2.4935771338879262\n  N6_E1: -2.0019953568985334\n  N6_Delta: 0.49158177698939287\n  N6_xi_extracted: 5.43738268236824\n  rel_diff_gap_N4_vs_N6: 0.25395677079021706\n\n[V9 \u2014 Inclusive branching guard for repeated chains]\n  minimal_count_n3: 2\n  minimal_N_X: 1\n  minimal_D_exclusive: 1\n  minimal_D_plus: 2\n  minimal_exclusive_bound: 1\n  minimal_inclusive_bound: 4\n  bond_graph_N_X: 1\n  bond_graph_D_plus: 3\n  n1_count: 0\n  n1_inclusive_bound: 1\n  n2_count: 0\n  n2_inclusive_bound: 3\n  n3_count: 0\n  n3_inclusive_bound: 9\n  n4_count: 0\n  n4_inclusive_bound: 27\n  n5_count: 1\n  n5_inclusive_bound: 81\n  n6_count: 5\n  n6_inclusive_bound: 243\n  n7_count: 19\n  n7_inclusive_bound: 729\n\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230709Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_spatial_cluster_decomp_lieb_robinson_real_2026_05_19.txt against the .txt beside this log"
+  ]
+ }
+}

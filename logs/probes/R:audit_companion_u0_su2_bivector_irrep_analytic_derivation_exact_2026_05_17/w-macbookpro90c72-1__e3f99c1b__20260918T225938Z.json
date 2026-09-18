@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
+ "seed": 72378,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e3f99c1b",
+ "started_utc": "20260918T225938Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d536ad4b0a708bb7bff2c50785592cd84fb02579f3bd1739eb39c07167afbaf7",
+ "stdout_tail": "--------------------------------------------------------\nPart 12: roundtrip L\u00fcscher form (X3) \u2194 fourth-root (T6)\n----------------------------------------------------------------------------------------\n  [PASS (A)] (roundtrip) (X3) at G=SU(2) and (T6) coincide as P_SU2^(1/4)  (diff = 0)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (X1)-grounded Cl(3,0) anticommutation on Pauli realization (9 identities)\n    (X2)-grounded bivector subalgebra Cl(3,0)^+ contains Spin(3) = SU(2)\n    (S1) N_SU(2) = dim_C(fundamental of SU(2)) = 2 forced by (X2)\n    (U1) L\u00fcscher convention at G = SU(2): u_0(SU(2)) = \u27e8(1/2) Re Tr U_p\u27e9^(1/4)\n    (U2) fourth-root recovery: u_0(SU(2)) = P_SU2^(1/4) matches (T6)\n    (C1) 1-dim faithful complex Cl(3) irrep impossible\n    (C2) squared tadpole u_0(SU(2))^2 = P_SU2^(1/2)\n    (C3) forward chain alpha_2(v) = alpha_2_bare / P_SU2^(1/2)\n    (C4) SU(3) structural comparison: 1/N_SU(2) = 1/2 \u2260 1/3 = 1/N_SU(3)\n    Free-action sanity (P_SU2 = 1) \u2192 u_0(SU(2)) = 1 matches (T4)\n    Matrix-trace sanity: Re Tr \u03c3_i = 0, Re Tr I_2 = 2 = N_SU(2)\n    Roundtrip (X3) at G=SU(2) \u2194 (T6) generic form\n\n========================================================================================\nTOTAL: PASS=35, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

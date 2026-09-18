@@ -1,0 +1,95 @@
+audit_companion_yt_source_covariance_normalization_support_dep_resolution_2026_06_04
+parent runner   : scripts/frontier_yt_source_covariance_normalization_support.py
+parent note     : docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md
+companion       : docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_RUNNER_HASH_HYGIENE_COMPANION_NOTE_2026-06-04.md
+no-go dep       : yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23
+source-pkt dep  : yt_source_action_support_packet_note_2026-05-22
+expected runner SHA-256: 2874560a7d1ba1cbce2cc9fd0085dcbe8e8f3bdc9bf4a1a2f4f23d0aadf91c5b
+
+================================================================================
+Block 1: Re-execute parent runner
+================================================================================
+[PASS] parent runner exists
+[PASS] parent runner subprocess returns nonempty stdout
+[FAIL] parent runner reports PASS=33 (matches both prior clean snapshots): 2
+[FAIL] parent runner reports FAIL=0 (no ledger-grade watcher exists): 2
+[FAIL] parent runner subprocess returns exit code 0: 1
+[FAIL] parent runner RESULT line is exactly PASS=33 FAIL=0
+
+================================================================================
+Block 2: Independent FH covariance identity check
+================================================================================
+[PASS] independent gradient: d log Z / dh equals source expectation: 1.5474260761649816e-11
+[PASS] independent Hessian: d2 log Z / dhdh equals connected covariance: 9.739623219040539e-09
+[PASS] independent covariance matrix is symmetric: 0.0
+[PASS] independent diagonal connected variances are strictly positive
+[PASS] independent covariance respects Cauchy-Schwarz off-diagonals: 0.0
+[PASS] centered second-moment identity matches connected covariance: 1.1102230246251565e-16
+
+================================================================================
+Block 3: Uniform-origin zero-mean + origin score (no dep grade)
+================================================================================
+[PASS] uniform reference has zero signed-record mean per site: 0.0
+[PASS] site 0 origin score equals epsilon for every record: 0.0
+[PASS] site 1 origin score equals epsilon for every record: 0.0
+[PASS] site 2 origin score equals epsilon for every record: 0.0
+[PASS] uniform-origin connected covariance equals identity: 0.0
+
+================================================================================
+Block 4: Source-rescaling boundary (no dep grade)
+================================================================================
+[PASS] test rescaling lambda is nontrivial: 1.7
+[PASS] rescaled insertion changes fixed-h origin score (nontrivial): [0.7, 0.7, 0.7, 0.7]
+[PASS] source rescaling absorbable into h-coordinate redefinition: 0.0
+[PASS] joint substitution invariance for record (-1, -1): 0.0
+[PASS] joint substitution invariance for record (-1, 1): 0.0
+[PASS] joint substitution invariance for record (1, -1): 0.0
+[PASS] joint substitution invariance for record (1, 1): 0.0
+
+================================================================================
+Block 5: Static scan of parent runner for grade-field reads
+================================================================================
+[PASS] parent runner has zero matches for ledger-read pattern 1: 0
+[PASS] parent runner has zero matches for ledger-read pattern 2: 0
+[PASS] parent runner has zero matches for ledger-read pattern 3: 0
+[PASS] parent runner has zero matches for ledger-read pattern 4: 0
+[PASS] parent runner has zero matches for ledger-read pattern 5: 0
+[PASS] parent runner has zero matches for ledger-read pattern 6: 0
+[PASS] parent runner has zero matches for ledger-read pattern 7: 0
+[PASS] parent runner has zero matches for ledger-read pattern 8: 0
+[PASS] parent runner has no ledger row access for grade field audit_state_field: 0
+[PASS] parent runner has no ledger row access for grade field effective_state_field: 0
+[PASS] parent runner has no ledger row access for grade field intrinsic_state_field: 0
+[PASS] parent runner has no ledger row access for grade field bounded_grade_field: 0
+[PASS] parent runner has no ledger row access for grade field clean_verdict_field: 0
+[PASS] parent runner has no ledger row access for grade field conditional_verdict_field: 0
+[PASS] parent runner LEDGER references confined to a single Path anchor (+ one assignment): 2
+[PASS] parent runner uses LEDGER only via path-existence check
+
+================================================================================
+Block 6: Static scan of parent note for grade-dependence claims
+================================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_yt_source_covariance_normalization_support_dep_resolution_2026_06_04.py", line 981, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_yt_source_covariance_normalization_support_dep_resolution_2026_06_04.py", line 965, in main
+    block6_note_grade_scan()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_yt_source_covariance_normalization_support_dep_resolution_2026_06_04.py", line 633, in block6_note_grade_scan
+    note_src = read_text(PARENT_NOTE)
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/audit_companion_yt_source_covariance_normalization_support_dep_resolution_2026_06_04.py", line 155, in read_text
+    return path.read_text(encoding="utf-8")
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md'

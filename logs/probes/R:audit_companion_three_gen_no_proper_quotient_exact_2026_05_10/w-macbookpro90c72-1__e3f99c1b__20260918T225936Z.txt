@@ -1,0 +1,88 @@
+========================================================================================
+Audit companion (exact-symbolic) for
+three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02
+Goal: sympy-symbolic verification of D_3 + C_3 = M_3(ℂ) algebra-generation
+and the no-proper-quotient corollary at exact rational precision
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: setup — hw=1 triplet basis (X_1, X_2, X_3)
+----------------------------------------------------------------------------------------
+  [PASS (A)] basis vectors e_1, e_2, e_3 orthonormal
+
+----------------------------------------------------------------------------------------
+Part 1: diagonal subalgebra D_3 from sector projectors
+----------------------------------------------------------------------------------------
+  [PASS (A)] P_1 = diag(1, 0, 0) exact
+  [PASS (A)] P_2 = diag(0, 1, 0) exact
+  [PASS (A)] P_3 = diag(0, 0, 1) exact
+  [PASS (A)] P_i² = P_i (idempotent) for i = 1, 2, 3
+  [PASS (A)] P_i P_j = 0 for i ≠ j (mutual orthogonality)
+  [PASS (A)] P_1 + P_2 + P_3 = I_3 (completeness)
+  [PASS (A)] P_1, P_2, P_3 linearly independent over ℂ (rank 3 in M_3(ℂ))
+
+----------------------------------------------------------------------------------------
+Part 2: C_3[111] cycle e_1 → e_2 → e_3 → e_1
+----------------------------------------------------------------------------------------
+  [PASS (A)] C_3 e_1 = e_2 exact (basis cycle 1 → 2)
+  [PASS (A)] C_3 e_2 = e_3 exact (basis cycle 2 → 3)
+  [PASS (A)] C_3 e_3 = e_1 exact (basis cycle 3 → 1)
+  [PASS (A)] C_3 is a permutation matrix (binary entries, single 1 per row/col)
+  [PASS (A)] C_3³ = I_3 (order 3)
+  [PASS (A)] C_3 · C_3² = I_3 (inverse identity)
+
+----------------------------------------------------------------------------------------
+Part 3: matrix-unit generation — D_3 + C_3 generates M_3(ℂ)
+----------------------------------------------------------------------------------------
+  [PASS (A)] C_3 · P_1 = E_{21} exact (off-diagonal matrix unit)
+  [PASS (A)] C_3² · P_1 = E_{31} exact
+  [PASS (A)] C_3 · P_2 = E_{32} exact
+  [PASS (A)] C_3² · P_2 = E_{12} exact
+  [PASS (A)] C_3 · P_3 = E_{13} exact
+  [PASS (A)] C_3² · P_3 = E_{23} exact
+
+----------------------------------------------------------------------------------------
+Part 4: 9 matrix units span M_3(ℂ) — linear independence
+----------------------------------------------------------------------------------------
+  [PASS (A)] 9 matrix units {E_{ij}}_{i,j=1,2,3} have rank 9 in M_3(ℂ)  (rank = 9 (span dim 9 = full M_3(ℂ)))
+
+----------------------------------------------------------------------------------------
+Part 5: no-proper-quotient — enumerate 6 nontrivial subspaces
+----------------------------------------------------------------------------------------
+  [PASS (A)] V = span(e_1): C_3 e_1 = e_2 ∉ V — fails C_3-invariance  (C_3 e_1 = Matrix([[0, 1, 0]]), not parallel to e_1)
+  [PASS (A)] V = span(e_2): C_3 e_2 = e_3 ∉ V — fails C_3-invariance
+  [PASS (A)] V = span(e_3): C_3 e_3 = e_1 ∉ V — fails C_3-invariance
+  [PASS (A)] V = span(e_1, e_2): C_3 (1, 1, 0)^T = (0, 1, 1)^T ∉ V — fails C_3-invariance  (C_3 (1, 1, 0)^T = Matrix([[0, 1, 1]]) has nonzero third entry)
+  [PASS (A)] V = span(e_2, e_3): C_3 (0, 1, 1)^T = (1, 0, 1)^T ∉ V — fails C_3-invariance
+  [PASS (A)] V = span(e_1, e_3): C_3 (1, 0, 1)^T = (1, 1, 0)^T ∉ V — fails C_3-invariance
+  [PASS (A)] {0} and ℂ³ are the only common D_3 + C_3 invariant subspaces  (follows from S ⊂ {1,2,3} being C_3-invariant ⇒ S ∈ {∅, {1,2,3}})
+
+----------------------------------------------------------------------------------------
+Part 6: D_3 + C_3 generators rank check on 9-dim flattening
+----------------------------------------------------------------------------------------
+  [PASS (A)] {P_i, C_3 P_i, C_3² P_i : i = 1, 2, 3} spans M_3(ℂ) (rank 9)  (rank = 9, span dim = 9 = dim M_3(ℂ))
+
+----------------------------------------------------------------------------------------
+Part 7: cited dependency ledger row visibility
+----------------------------------------------------------------------------------------
+  [FAIL (A)] audit_ledger.json accessible for graph-visibility check  (could not load ledger: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/audit/data/audit_ledger.json')
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+  Verified at exact sympy precision on `hw=1` triplet H ≅ ℂ³:
+    D_3 = ℂ-span(P_1, P_2, P_3) — orthogonal, complete, rank 3
+    C_3 cycle e_1 → e_2 → e_3 → e_1 with C_3³ = I_3
+    Matrix-unit generation: C_3 · P_i and C_3² · P_i give all 6
+    off-diagonal E_{ij} for i ≠ j
+    {E_{ij}}_{i,j=1,2,3} span M_3(ℂ) (rank 9)
+    {P_i, C_3 P_i, C_3² P_i} span M_3(ℂ) (rank 9 generator check)
+    No-proper-quotient: 6 nontrivial subspaces each fail
+    C_3-invariance (orbit-enumeration over basis-aligned subspaces)
+    Cited deps: site_phase_cube_shift_intertwiner_note,
+    s3_taste_cube_decomposition_note, s3_mass_matrix_no_go_note,
+    z2_hw1_mass_matrix_parametrization_note all graph-visible
+
+========================================================================================
+TOTAL: PASS=29, FAIL=1
+========================================================================================

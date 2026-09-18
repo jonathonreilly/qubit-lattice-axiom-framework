@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_sm_gstar_higgs_sector_count_2026_05_29",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py",
+ "seed": 72447,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8fda2bc",
+ "started_utc": "20260918T230047Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=48 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "af7525ae20b5d17504fb0bdde1471c754c1166c2dea2115ebec72cf2c91d8bb3",
+ "stdout_tail": "OUNT_IMPORT_NOTE_2026-05-17.md\n  [INFO] prior-cycle R-HIGGS note present on this branch: True (lands via PR #2223; soft check)\n  [PASS] note file exists  (docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)\n  [PASS] note records load-bearing token: '106.75'\n  [PASS] note records load-bearing token: '110.75'\n  [PASS] note records load-bearing token: 'bounded_theorem'\n  [PASS] note records load-bearing token: 'retained-bounded declared-inventory premise'\n  [PASS] note records load-bearing token: 'R-HIGGS'\n  [PASS] note records load-bearing token: 'H_unit'\n  [PASS] forbidden-import disclaimer paragraph present in \u00a71\n  [PASS] no forbidden load-bearing import string outside disclaimer: 'monte carlo'\n  [PASS] no forbidden load-bearing import string outside disclaimer: 'fitted selector'\n  [PASS] no forbidden load-bearing import string outside disclaimer: 'best fit'\n  [PASS] no forbidden load-bearing import string outside disclaimer: 'chi-squared fit'\n  [PASS] no forbidden load-bearing import string outside disclaimer: 'pdg fit'\n  [PASS] no new-vocabulary token: 'two-class framing'\n  [PASS] no new-vocabulary token: 'g-star landing class'\n  [PASS] no new-vocabulary token: 'thermal dof framing'\n  [PASS] no new-vocabulary token: 'ewsb-flavor class'\n  [PASS] no new-vocabulary token: 'algebraic universality'\n\n==============================================================================\nPASS=48 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T230047Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

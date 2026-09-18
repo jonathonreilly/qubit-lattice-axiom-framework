@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-provenance-PR8178",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j8d9f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/pr8178/lag25_d1.py",
+ "seed": 68022,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4044701",
+ "started_utc": "20260918T214702Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed executed-number mismatch: (12, 32) stated 1.18 vs lag-25 1.165; linear ratios 0.960..1.014 vs stated 0.97-1.01"
+ },
+ "review": "Independent Decimal parse: (12,32) lag-25 D1 is 1.165 vs stated 1.18; linear ratios 0.960-1.014 vs 0.97-1.01; finder HIT confirmed",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:provenance:PR8178/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "3349afe118a9538d0226dbad6f06a9e5535c6b0fc4f929be253c175798af92c0",
+ "stdout_tail": "D1 lag25 (6, 16): stated 1.34 control 1.344\nD1 lag25 (12, 16): stated 1.14 control 1.139\nD1 lag25 (24, 16): stated 1.06 control 1.061\nD1 lag25 (48, 16): stated 1.02 control 1.024\nD1 lag25 (6, 32): stated 1.42 control 1.416\nD1 lag25 (12, 32): stated 1.18 control 1.165\nlinear ratios min 0.960 (beta=12 L=32 lag=1000) max 1.014 (beta=12 L=16 lag=1000)\nstated linear range 0.97-1.01\nHIT: confirmed - (12, 32) stated 1.18 vs lag-25 1.165; linear ratios 0.960..1.014 vs stated 0.97-1.01\nSUMMARY: confirmed executed-number mismatch: (12, 32) stated 1.18 vs lag-25 1.165; linear ratios 0.960..1.014 vs stated 0.97-1.01\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8d9f",
+  "at_utc": "20260918T214709Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent Decimal parse of torus_msd: (12,32) lag-25 D1=1.165 vs stated 1.18; linear ratios 0.960-1.014 vs 0.97-1.01",
+  "by": "w-macbookpro90c72-j8d9f",
+  "at_utc": "20260918T214709Z"
+ }
+}

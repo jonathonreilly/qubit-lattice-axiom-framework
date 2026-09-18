@@ -1,0 +1,10 @@
+D1 lag25 (6, 16): stated 1.34 control 1.344
+D1 lag25 (12, 16): stated 1.14 control 1.139
+D1 lag25 (24, 16): stated 1.06 control 1.061
+D1 lag25 (48, 16): stated 1.02 control 1.024
+D1 lag25 (6, 32): stated 1.42 control 1.416
+D1 lag25 (12, 32): stated 1.18 control 1.165
+linear ratios min 0.960 (beta=12 L=32 lag=1000) max 1.014 (beta=12 L=16 lag=1000)
+stated linear range 0.97-1.01
+HIT: confirmed - (12, 32) stated 1.18 vs lag-25 1.165; linear ratios 0.960..1.014 vs stated 0.97-1.01
+SUMMARY: confirmed executed-number mismatch: (12, 32) stated 1.18 vs lag-25 1.165; linear ratios 0.960..1.014 vs stated 0.97-1.01

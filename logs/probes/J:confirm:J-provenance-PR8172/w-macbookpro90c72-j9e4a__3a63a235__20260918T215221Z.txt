@@ -1,0 +1,5 @@
+note 120-island cap: 81/20 (match=True)
+runner 120 islands largest ratio 6671/1728 = 3.860532
+spec 200 islands worst 4043/1000
+HIT: confirmed - 120-island runner ratio 6671/1728 != stated 81/20; stated 81/20 matches spec's 200-island worst 4043/1000, not the runner's 120
+SUMMARY: confirmed pairing mismatch: runner 120 islands give 6671/1728; claim_scope 4.05 tracks the spec's 200-island worst 4043/1000

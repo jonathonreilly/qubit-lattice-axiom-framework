@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-provenance-PR8172",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j9e4a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/pr8172/island_ratio.py",
+ "seed": 68341,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3a63a235",
+ "started_utc": "20260918T215221Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed pairing mismatch: runner 120 islands give 6671/1728; claim_scope 4.05 tracks the spec's 200-island worst 4043/1000"
+ },
+ "review": "Independent Fraction parse: runner 120 islands largest ratio 6671/1728; note states 4.05 which tracks the spec's 200-island worst 4.043; finder HIT confirmed",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:provenance:PR8172/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "2aae8beee3d04cc416a9d97133505b830391e1907f607630e144ecd4fd3fca10",
+ "stdout_tail": "note 120-island cap: 81/20 (match=True)\nrunner 120 islands largest ratio 6671/1728 = 3.860532\nspec 200 islands worst 4043/1000\nHIT: confirmed - 120-island runner ratio 6671/1728 != stated 81/20; stated 81/20 matches spec's 200-island worst 4043/1000, not the runner's 120\nSUMMARY: confirmed pairing mismatch: runner 120 islands give 6671/1728; claim_scope 4.05 tracks the spec's 200-island worst 4043/1000\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9e4a",
+  "at_utc": "20260918T215232Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Runner 120-island ratio is 6671/1728; note's 4.05 tracks the 200-island spec worst 4.043, not the runner",
+  "by": "w-macbookpro90c72-j9e4a",
+  "at_utc": "20260918T215232Z"
+ }
+}

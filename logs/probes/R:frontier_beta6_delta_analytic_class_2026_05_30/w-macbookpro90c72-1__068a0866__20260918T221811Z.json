@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta6_delta_analytic_class_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_beta6_delta_analytic_class_2026_05_30.py",
+ "seed": 69891,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T221811Z",
+ "elapsed_s": 62.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6bc61ec34db42105d5735d4381270e23658de06be650ced0c3a90739e0101f68",
+ "stdout_tail": "ls D=30..60: 3.27e-11, 3.88e-18, 5.03e-26, 1.07e-34\n[PASS] beta=6 is INSIDE the single-plaquette analyticity radius (6/|beta_c|<1)  -- 6/|beta_c|=0.731242\n\n=== D. Series-asymptotic class discriminant from d5,d6,d7 ===\n[PASS] shape invariant u = c2/c1^2 = 20/49  -- u=20/49\n[PASS] divergent algebraic branch point: c2/c1^2 = (g+1)/(2g)  -- u_sym=(g + 1)/(2*g)\n[PASS] (g+1)/(2g) > 1/2 for ALL g>0 (so any positive-real divergent branch pt has u>1/2)\n[PASS] observed u = 20/49 < 1/2  => positive-real divergent algebraic branch point EXCLUDED on (0,6]  -- 20/49=0.4082 < 0.5\n[PASS] [0/2] Pade denominator b^2-coeff (c1^2 - c2) = 29/144  -- c1^2-c2=29/144\n[PASS] [0/2] Pade discriminant = -3 c1^2 + 4 c2 = -67/144 < 0 => COMPLEX-CONJUGATE PAIR  -- disc=-67/144\n[PASS] disc < 0 <=> u < 3/4 (and u=20/49<3/4): complex pair is the u<3/4 regime\n[PASS] [0/2] complex-pair |beta_c| = 2.2283 (under-converged TYPE discriminator, NOT physical 5.7)  -- |beta_c|_[0/2]=2.22834 (NOT to be read as ~5.7)\n[PASS] single-real-pole / geometric FALSIFIED (u != 1)  -- u=20/49 != 1\n\n=== E. d-log-Pade activation arithmetic (rank constraint) ===\n[PASS] H=(log h)' from 3 coeffs gives exactly 2 coeffs (H0,H1)  -- H0=c1=7/12, H1=2c2-c1^2=-1/16\n[PASS] [1/1] d-log-Pade needs 3 coeffs of H; only 2 available from d5..d7  -- need=3, have=2\n[PASS] => activation requires d5..d8 (= beta^8); proving the class adds NO coefficients  -- beta^8 is a class-INDEPENDENT rank floor (matches harness threshold)\n\nSUMMARY  PASS=33  FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T221914Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

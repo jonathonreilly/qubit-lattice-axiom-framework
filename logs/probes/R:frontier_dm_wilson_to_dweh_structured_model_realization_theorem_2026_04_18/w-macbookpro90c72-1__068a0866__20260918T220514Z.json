@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_to_dweh_structured_model_realization_theorem_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_wilson_to_dweh_structured_model_realization_theorem_2026_04_18.py",
+ "seed": 69114,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T220514Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5d63f7f9ddad75b85743e7bcde318d5ff9d0771e3d44548d77c442be3ced970c",
+ "stdout_tail": "ermitian family preserves Jordan products on the basis  (defect=3.48e-16)\n  [PASS] The model Hermitian family preserves Lie products on the basis  (defect=4.24e-16)\n\n========================================================================================\nPART 4: THE ADJACENT-CHAIN NORMAL FORM IS POSITIVELY INHABITED\n========================================================================================\n  [PASS] The model class contains explicit adjacent-chain generators  (chain products recover the long corner inside the model family)\n  [PASS] So the local chain attack is not only admissible but explicitly realized inside the model class  (Phi_chain is inhabited whenever the structured model family is realized)\n\n========================================================================================\nPART 5: WHAT STILL REMAINS OPEN\n========================================================================================\n  [PASS] This construction does not derive the model family from the current-bank Wilson parent  (it proves nonempty constructive realization, not the final Wilson-native bridge)\n  [PASS] So the remaining positive problem is Wilson-native realization rather than algebraic existence  (derive a current-bank Wilson parent whose compression matches the model class)\n\n========================================================================================\nSUMMARY: PASS=21 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220514Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_to_dweh_structured_model_realization_theorem_2026_04_18.txt against the .txt beside this log"
+  ]
+ }
+}

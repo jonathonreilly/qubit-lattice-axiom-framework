@@ -1,0 +1,8 @@
+FAIL 1/5 contract_and_source_pins :: CertificateError: one or more declared runtime inputs are absent
+PASS 2/5 exact_projector_oracle :: vectors=102; maximum_entry_error=2.78e-17
+PASS 3/5 schema_and_refusal_boundary :: landed ValueError=3/3; Boolean landed-returned; schema/registry provenance=12/12
+FAIL 4/5 hermetic_primary_and_sandbox :: CertificateError: primary clean exit=1
+FAIL 5/5 independent_comparator_adversaries :: CertificateError: primary hermetic run must precede comparator inspection
+SUMMARY 2/5 FAIL
+RUNTIME 3.697114s
+RESULT BORN_PROJECTOR_FIXTURE_INDEPENDENT_CHECK_GREEN

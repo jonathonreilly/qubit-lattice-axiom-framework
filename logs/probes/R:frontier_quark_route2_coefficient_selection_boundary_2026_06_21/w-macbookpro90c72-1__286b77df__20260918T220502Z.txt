@@ -1,0 +1,40 @@
+Route-2 coefficient-selection boundary
+========================================================================================
+[PASS] granted T-side algebra gives q_T=5/6 and leaves rho_E as the only E-row slope
+       rho_T=-1, s_TE=-2, q_T=5/6
+[PASS] target chain is exactly rho_E=21/4 <-> q_E=15/8 <-> c_TE=-8/9 <-> lambda=9/4
+       q_E=15/8, c_TE=-8/9, lambda=9/4
+[PASS] positivity/admissibility gives an interval rho_E>-6, not a selected point
+       samples=[(Fraction(-5, 1), Fraction(1, 6), Fraction(1, 5)), (Fraction(-1, 1), Fraction(5, 6), Fraction(1, 1)), (Fraction(0, 1), Fraction(1, 1), Fraction(6, 5)), (Fraction(1, 1), Fraction(7, 6), Fraction(7, 5)), (Fraction(21, 4), Fraction(15, 8), Fraction(9, 4)), (Fraction(6, 1), Fraction(2, 1), Fraction(12, 5))]
+[PASS] E-center-blind data are identical across distinct rho_E choices
+       blind_signature=(q_T=5/6, s_TE=-2); q_E varies
+[PASS] ordinary target-free selectors do not pick rho_E=21/4; only inverse-square weighting lands
+       selector_values={'minimal slope / no E-center lift': (Fraction(0, 1), Fraction(1, 1), Fraction(6, 5)), 'same E and T center/shell lift': (Fraction(-1, 1), Fraction(5, 6), Fraction(1, 1)), 'single reciprocal projector-weight lift': (Fraction(3, 2), Fraction(5, 4), Fraction(3, 2)), 'inverse-square projector-weight lift': (Fraction(21, 4), Fraction(15, 8), Fraction(9, 4))}
+[PASS] a quadratic variational selector picks the target only if its coefficient ratio imports q_E=15/8
+       For F(q)=A q^2+B q+C, q*=15/8 requires B/A=-15/4
+[PASS] target-free quadratic anchors land at q_E in {1,5/6,5/4}, not 15/8
+       anchors={'q*=1 (no lift)': Fraction(1, 1), 'q*=q_T': Fraction(5, 6), 'q*=kappa*q_T': Fraction(5, 4)}
+[PASS] free quadratic/readout coefficient ratios can realize target and non-target values in the same algebraic class
+       ratios_to_rho=[(Fraction(1, 1), Fraction(-1, 1)), (Fraction(3, 2), Fraction(3, 2)), (Fraction(9, 4), Fraction(21, 4)), (Fraction(4, 3), Fraction(2, 3))]
+[PASS] projector-weight power law selects the endpoint only after the exponent is set to n=2
+       rho(n)={0: Fraction(-1, 1), 1: Fraction(3, 2), 2: Fraction(21, 4)}
+
+========================================================================================
+N5 EXECUTION CERTIFICATE
+========================================================================================
+per_element: each scalar entry of the reduced readout row is evaluated on its own as an exact Fraction -- the granted T-side entries rho_T=-1 and s_TE=-2 give q_T=5/6, and for every one of the 6 admissible slopes rho_E in {-5, -1, 0, 1, 21/4, 6} the runner forms q_E and lambda separately, obtaining six distinct pairs with no averaging anywhere.
+per_site: checked and not executed -- the only lattice-derived numbers entering this file are the imported projector weights w_E=1/3 and w_T=1/2, hence kappa=3/2; no star, arm, coordinate or neighbor list is constructed, so there is nothing in the runner that could carry a site index for the E-row slope it is trying to select.
+per_mode: the two readout channels are separated and treated differently -- the T mode is fully pinned at q_T=5/6 with s_TE=-2, while the E mode survives only as the projective direction ell_E ~ (1, rho_E) on rho_E > -6; the blind signature (q_T, s_TE) is byte-identical across all six samples whereas q_E takes six different values, which is exactly how the residual is localized to one mode.
+per_block: checked, but only inventories and exact values are resolved and no matrix sub-block amplitude is evaluated -- the runner enumerates four candidate selector banks (4 named selectors, 3 target-free quadratic anchors at q_E in {1, 5/6, 5/4}, four free coefficient ratios, and 3 power-law exponents), yet P_R itself is never instantiated in code, so its center/excess 2x2 blocks are never formed or compared.
+lattice_wide: checked and not executed -- no box, no site count and no limit of any kind is taken in this runner, and the global statement that would be needed is the note's own missing theorem: a rule fixing the exponent n=2 in lambda=kappa^n, which alone moves rho_E from 3/2 at n=1 to 21/4; the runner supplies the exponent by hand and certifies nothing beyond that.
+
+========================================================================================
+PASS=9 FAIL=0
+
+VERDICT: no-go boundary for target-free coefficient selection. The reduced
+Route-2 endpoint algebra leaves rho_E as a positive projective slope.
+Common target-free selectors pick rho_E=-1,0,3/2 or leave the slope free.
+General quadratic/variational selectors can hit 21/4 only by inserting
+the target-equivalent coefficient ratio B/A=-15/4. The inverse-square
+projector-weight rule lands exactly, but selecting that rule or exponent
+n=2 is the missing theorem content, not a current derivation.

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_dual_frame_compliance_conditional_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_dual_frame_compliance_conditional_2026_06_21.py",
+ "seed": 69105,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "286b77df",
+ "started_utc": "20260918T220505Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "365548881f34831f990ce3843538fb0aacec6211807ba9929300ecfba5dba7f6",
+ "stdout_tail": "E=3/2, center T/E=-4/3\n    two-sided-dual: p=+2, lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9\n     primal-square: p=-2, lambda=4/9, q_E=10/27, rho_E=-34/9, center T/E=-9/2\nPASS: only the two-sided-dual control lands rho_E=21/4\nPASS: one-sided dual gives p=1 and misses the endpoint\n      rho_E=3/2\nPASS: ordinary projector-square scaling gives the wrong channel direction\n      rho_E=-34/9\n\nPART 4: note and status firewall\nPASS: note contains marker: **Actual current-surface status:** conditional support\nPASS: note contains marker: two-sided canonical-dual Schur compliance\nPASS: note contains marker: new source/readout premise\nPASS: note contains marker: This is not an audit verdict\nPASS: note contains marker: does not close the parent\nPASS: note contains marker: does not derive the T-side candidates\nPASS: note avoids overclaim marker: legacy source-status certificate\nPASS: note avoids overclaim marker: parent-closure phrase\nPASS: note avoids overclaim marker: current-surface endpoint-derivation phrase\nPASS: note avoids overclaim marker: audit-ratification phrase\nPASS: note avoids overclaim marker: branch-local status-promotion phrase\nPASS: note avoids overclaim marker: future-retention phrase\nPASS: note avoids overclaim marker: promotion-to-retention phrase\n\nTOTAL: PASS=22, FAIL=0\nVERDICT: conditional-support. A two-sided canonical-dual Schur compliance premise gives p=2 and therefore rho_E=21/4 exactly, but that premise is new and remains the open source/readout theorem.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220506Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

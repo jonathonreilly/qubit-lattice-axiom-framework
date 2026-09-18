@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py",
+ "seed": 69124,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T220524Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0bb5ce6a9b80a6fe0eef82c5acb18df19edd8746a83d8e4cffe847b06130e584",
+ "stdout_tail": "--------------------------------------------------\n  nk=8: |Sigma_t - Sigma_s| = 4.337e-19\n  nk=10: |Sigma_t - Sigma_s| = 4.337e-19\n  nk=12: |Sigma_t - Sigma_s| = 0.000e+00\n  [PASS] B4-symmetric self-energy coefficients agree to machine precision  --  max diff=4.337e-19\n  [PASS] representation factors cannot produce a marginal species velocity difference from a zero spacetime difference  --  max Casimir-weighted species gap=1.446e-18\n\n----------------------------------------------------------------------------------------\nForm-equality gate\n----------------------------------------------------------------------------------------\n  [PASS] isotropic naive and Wilson forms keep the B4 equality  --  naive=1.735e-18, Wilson=4.337e-19\n  [PASS] an explicit temporal/spatial form break reintroduces the marginal anisotropy  --  r_t=2, r_s=1 diff=3.091e-04\n\n----------------------------------------------------------------------------------------\nDimension-6 residual scale\n----------------------------------------------------------------------------------------\n  [PASS] the first lattice dispersion correction is dimension-6  --  k^4 coefficient=-a**2/3\n  [PASS] using the scale-reference primitive as units conversion makes the 1 GeV dimension-6 estimate tiny  --  (1/3)(1 GeV/M_Pl)^2=2.240e-39\n\n========================================================================================\nSUMMARY: PASS=8 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220525Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
+ "seed": 69124,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T220524Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "39e2432663e10e567b05dad9d38c1f07a7449d461b6a96bfe166386c3ae4a319",
+ "stdout_tail": " bridges and forbids axiom/admission changes  --  audit-facing boundary is explicit in the source row\n\n----------------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------------\n  A  interacting velocity RG: eta=v_F/v_b -> 1 ATTRACTIVE (eigenvalue -(C_F+C_B N_f)alpha < 0);\n     the marginal speed-difference operator is IR-IRRELEVANT (Lorentz emerges dynamically).\n  B  O_h keeps the spatial split a SINGLE scalar c_s (invariant dim 1; 3 axes stay equal).\n  C  canonical continuous time FIXES c_t (CAR preserved by Stone) -> Collins' 2-parameter gate\n     reduces to ONE number c_s; with A, c_s flows to the canonical c_t=1.\n  D  HONEST residual: the power-divergent UV regeneration of c_s (Collins) is loop- but NOT\n     Planck-suppressed and unprotected by CPT/O_h/gauge-Ward; the supplied-model hierarchy\n     damping factor is illustrative/non-closing until physical gamma and coefficient are retained.\n  NET: inside the supplied one-loop/structural packet, the residual is organized from\n       '2-parameter O(1) wall' to 'ONE conditional IR-attractive scalar'. No new axiom.\n       Source title/scope is conditional algebra over supplied one-loop dynamics.\n\n==============================================================================================\nTOTAL: PASS=18 FAIL=0\n==============================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220524Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,39 @@
+Route-2 color-ray adjoint-line selector boundary
+==============================================================================
+[EXACT] PASS: Gell-Mann half-generators have Tr(t_a t_b)=delta_ab/2
+    standard SU(3) adjoint coordinate normalization
+[CONDITIONAL] PASS: a supplied color ray produces a nonzero traceless adjoint element
+    H_psi=diag(-1/3,-1/3,2/3), Tr(H_psi^2)=2/3
+[CONDITIONAL] PASS: the color-ray adjoint line is a rank-one projector in the adjoint coordinate space
+    rank(P_line)=1, trace(P_line)=1
+[CONDITIONAL] PASS: the orthogonal complement has rank 7 and normalized fraction 7/8
+    rank(P_comp)=7, trace(P_comp)/8=7/8
+[CONDITIONAL] PASS: reading the color-ray complement as E-center excess gives the Route-2 endpoint triple
+    e_E=7/8, q_E=15/8, rho_E=21/4, c_TE=-8/9
+[FIREWALL] PASS: the color-ray adjoint line is gauge-covariant but not gauge-invariant
+    SU(3) rotation determinant=1, rank(P_rot-P_line)=2
+[FIREWALL] PASS: the selected H_psi line is moved by an adjoint generator
+    commutator [t_4,H_psi] is nonzero, so the line is not fixed by SU(3)
+[FIREWALL] PASS: no nonzero SU(3)-invariant traceless adjoint vector exists
+    linear system rank=9, traceless invariant dimension=0
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py", line 310, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py", line 185, in main
+    route2_rconn = read("docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md")
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py", line 50, in read
+    return (ROOT / rel).read_text(encoding="utf-8")
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md'

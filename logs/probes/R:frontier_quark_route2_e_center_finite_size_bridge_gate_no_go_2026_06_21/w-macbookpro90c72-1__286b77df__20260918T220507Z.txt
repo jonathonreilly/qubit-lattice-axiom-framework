@@ -1,0 +1,36 @@
+========================================================================================
+ROUTE-2 E-CENTER FINITE-SIZE BRIDGE ADMISSIBILITY GATE
+========================================================================================
+
+A. Authority anchors
+------------------------------------------------------------------------
+PASS: frontier_quark_route2_qe_box_size_scan_2026_06_10.txt exists -- logs/runner-cache/frontier_quark_route2_qe_box_size_scan_2026_06_10.txt
+FAIL: QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md exists -- docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md
+FAIL: QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md exists -- docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md
+FAIL: QUARK_ROUTE2_E_CENTER_FINITE_SIZE_BRIDGE_ADMISSIBILITY_GATE_NO_GO_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_E_CENTER_FINITE_SIZE_BRIDGE_ADMISSIBILITY_GATE_NO_GO_NOTE_2026-06-21.md
+PASS: box_scan_cache_status_ok
+PASS: box_scan_cache_has_anchor
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.py", line 278, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.py", line 164, in main
+    check("measured_note_names_box_size_discriminator", "box-size scan and extrapolation" in read(DOCS / "QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md"))
+                                                                                             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_quark_route2_e_center_finite_size_bridge_gate_no_go_2026_06_21.py", line 94, in read
+    return path.read_text(encoding="utf-8")
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md'

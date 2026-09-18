@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.py",
+ "seed": 69105,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "286b77df",
+ "started_utc": "20260918T220505Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=36, FAIL=16",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "106b0bc19d716098f1284e573e067a43afa02ba62ddec6cadf4215870553dd9d",
+ "stdout_tail": "constructed in this file at all, since the channel leverage enters rho_from_p as the hard-coded Fraction 2/3 rather than being rebuilt from a star, so there is no arm, no center, no coordinate and consequently no object that a site-resolved gate statement could be attached to.\nper_mode: resolved, but only through the single E-over-T ratio the law is written in -- the T channel is held at q_T=5/6 while the E channel receives q_E=q_T*(w_E/w_T)^(-p), so the two bright channels are distinguished exactly once per exponent and no separate per-channel amplitude, norm or direction is ever evaluated on either of them.\nper_block: checked, and what is resolved here is an inventory rather than any amplitude -- the bank is partitioned into 6 named classes (definition_only, endpoint_fitted_membership, free_reduced_matrix_element, new_premise, norm_or_bound, wrong_exponent_control), four current-authority classes are each paired with one named blocker, and the closure query returns an empty current-authority list against the single new-premise entry dual_compliance_p2.\nlattice_wide: checked and not executed -- this gate never constructs a lattice, a volume or a limit, and its widest statement is a text-marker sweep across five authority documents plus the companion note; the whole-surface theorem that would be needed is the one the note names as still owed, a same-domain dual-compliance p=2 source/readout law.\n\nTOTAL: PASS=36, FAIL=16\nVERDICT: current primitive-bank p=2 gate checks failed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220505Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=36, FAIL=16' vs cache 'TOTAL: PASS=52, FAIL=0'"
+  ]
+ }
+}

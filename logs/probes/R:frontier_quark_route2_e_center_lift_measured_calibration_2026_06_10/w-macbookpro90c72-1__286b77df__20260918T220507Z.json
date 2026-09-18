@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py",
+ "seed": 69107,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "286b77df",
+ "started_utc": "20260918T220507Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9c7e4d04839bc73bb92595b966be74c5f12047555715d786bff300228db1ef69",
+ "stdout_tail": " 6.2e-06, q_E gap = 6.6e-04\n[PASS] C6 (the naturality no-go is respected and STANDS): nothing here selects 21/4 from carrier naturality -- the restricted readout class still leaves rho_E free. What changes is the pin's location: from 'free parameter with no stack-native anchor' to 'the measured value of a specific stack functional (the Lambda_R shell-response E-center lift on the canonical source-family endpoints), whose exact infinite-volume identification with 15/8 is the open theorem'. No observed mass, fitted value, or live-target selection is consumed.\n       pin relocated; exact identification (and the box-size discriminator) named open\n\nTOTAL: PASS=6 FAIL=0\nVERDICT: the open gate's missing E-channel entry is not structureless: the stack's OWN landed\ncalibration (the Lambda_R shell-response endpoints on the canonical source-family endpoints,\nfrom the SHA-pinned center-excess cache) matches the target chain within finite-box tolerances -- q_T to ~7e-6, q_E to\n~7e-4, and rho_E = 21/4 to ~1.4e-3 -- and the pin reformulates EXACTLY as the single\ncross-channel covariance q_E = (9/4) q_T. The naturality no-go stands (no derivation is\nclaimed); the pin is RELOCATED to a sharp open theorem: prove (or refute) that the\ninfinite-volume E-center lift of the stack's shell response equals 15/8, with the box-size\nscan as the named decisive discriminator (the two-orders deviation hierarchy between the\nchannels is the honest warning that 15/8 could fail). No PDG/fitted value consumed.\n\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220507Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

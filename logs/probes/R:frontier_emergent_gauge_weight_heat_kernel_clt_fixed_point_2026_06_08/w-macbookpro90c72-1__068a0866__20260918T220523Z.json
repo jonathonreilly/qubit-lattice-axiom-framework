@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_emergent_gauge_weight_heat_kernel_clt_fixed_point_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_emergent_gauge_weight_heat_kernel_clt_fixed_point_2026_06_08.py",
+ "seed": 69123,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T220523Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "acd338b673efc0ba2ca5433bfd808a96f326c3f0690c7b7dc2f8cbe370b29658",
+ "stdout_tail": "id (the law U->gUg^dag is measure-blind)\n  [PASS] the drifted step is NON-bi-invariant AND does NOT flow to the heat kernel (Part 3)  (drift Fourier-dev 0.489)\n  [PASS] => ADM-1 (static frame redundancy / gauge-covariance) does NOT imply ADM-2 (bi-invariant step measure): ADM-2 is STRICTLY STRONGER -- the gates are NOT unified  (ST1 (ADM-1) and ST2 (ADM-2) are DISTINCT open premises)\n==============================================================================\nTOTAL: PASS=17 FAIL=0\n==============================================================================\nSCOPE: Within the supplied discrete i.i.d. emergent-time gauge-link model, the\n  heat-kernel gauge weight is the UNIVERSAL convolution-CLT fixed point of\n  bi-invariant dynamics: ANY bi-invariant per-step kernel\n  (Wilson/HK/Manton/...) flows to the SAME heat kernel under emergent-time coarse-\n  graining (the microscopic action-form ambiguity washes out).  So ST2's action-form\n  reduces to ADM-2 = bi-invariance of the step measure -- a DYNAMICAL premise that is\n  STRICTLY STRONGER than, and NOT implied by, the STATIC fibre-frame redundancy ADM-1\n  (Part 6: gauge-covariance is measure-blind).  The gates are NOT unified (an earlier\n  version's 'one premise' claim was refuted by the find-the-escape panel).  Does NOT\n  derive ADM-2 (Record supplies no continuous generator -- retained boundary), the\n  discrete i.i.d. walk/stationarity premise, the rate (g_bare convention), or the\n  inter-link coupling.  No new axiom/import.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220524Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

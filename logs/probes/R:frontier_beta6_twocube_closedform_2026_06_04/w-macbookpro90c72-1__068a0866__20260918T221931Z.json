@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta6_twocube_closedform_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_beta6_twocube_closedform_2026_06_04.py",
+ "seed": 69971,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T221931Z",
+ "elapsed_s": 54.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e871f2896b1255b498724398ed16f8a5f501d9b9ad45595e7115f7971bf5768",
+ "stdout_tail": "nal in J): value stable across J truncations N=50,75,100\n         1080 K''(K')^9 at beta=6 = 0.03007958721 (N=50: 0.03007958721, N=100: 0.03007958721)\n     P_1plaq(6) = K'(6) = 0.42253174  (established 0.422532)\n     Delta_cube(6) = 72 K''(K')^5 = 0.062913415  (established 0.062913)\n     candidate weight-10 two-cube 1080 K''(K')^9 at beta=6 = 0.030079587\n     non-cube remainder 0.10796 -> 0.07788041 (shrunk by the candidate expression)\n     <P>-model(6): 0.485445 -> 0.51552459 ; gap to 0.5934 comparator: 0.107955 -> 0.0778754 (0.594 is a comparator, NOT input)\n\n==============================================================================\nWEIGHT-10 TWO-CUBE CLASS -- EXACT COEFFICIENTS + ZERO-PARAM CANDIDATE:\n   weight-10[9] = 5/16529940864 = 3.02481421e-10  (= 1080 K''(K')^9 [b^9])\n   weight-10[10] = 55/198359290368 = 2.77274636e-10  (= 1080 K''(K')^9 [b^10])\n   candidate: Delta_2cube^(w10)(beta) = 1080 K''(K')^9 = (60 configs)*18*K''(K')^(F-1), F=10\n   beta=6 value = 0.030079587  (converges; J-zero 8.2052 > 6)\n==============================================================================\nSCORECARD: PASS=11 FAIL=0   (54.2s)\n==============================================================================\nThis is bounded finite-order support for a zero-parameter candidate.\nIt is NOT an all-order proof or a beta=6 closure: weights 11, 12 and higher\nclusters remain, and the retained infinite-hierarchy obstruction stands.\n0.594 is a Monte-Carlo comparator, never a derivation input.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222026Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_beta6_twocube_closedform_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

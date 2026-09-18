@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_born_acceptance_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_born_acceptance_independent_check_2026_07_28.py",
+ "seed": 70028,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T222028Z",
+ "elapsed_s": 3.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ea05d5034adabbfddb308862aa009044dd6234a648b1b9132038abb3cd58e411",
+ "stdout_tail": "FAIL 1/5 contract_and_source_pins :: CertificateError: one or more declared runtime inputs are absent\nPASS 2/5 exact_projector_oracle :: vectors=102; maximum_entry_error=2.78e-17\nPASS 3/5 schema_and_refusal_boundary :: landed ValueError=3/3; Boolean landed-returned; schema/registry provenance=12/12\nFAIL 4/5 hermetic_primary_and_sandbox :: CertificateError: primary clean exit=1\nFAIL 5/5 independent_comparator_adversaries :: CertificateError: primary hermetic run must precede comparator inspection\nSUMMARY 2/5 FAIL\nRUNTIME 3.697114s\nRESULT BORN_PROJECTOR_FIXTURE_INDEPENDENT_CHECK_GREEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222032Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_born_acceptance_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

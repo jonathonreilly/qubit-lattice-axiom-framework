@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_coefficient_selection_boundary_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_coefficient_selection_boundary_2026_06_21.py",
+ "seed": 69102,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "286b77df",
+ "started_utc": "20260918T220502Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e95e888eb2181204badfa6d81824a76fb68d185556ea82f5639b6d6e79a658c4",
+ "stdout_tail": "l six samples whereas q_E takes six different values, which is exactly how the residual is localized to one mode.\nper_block: checked, but only inventories and exact values are resolved and no matrix sub-block amplitude is evaluated -- the runner enumerates four candidate selector banks (4 named selectors, 3 target-free quadratic anchors at q_E in {1, 5/6, 5/4}, four free coefficient ratios, and 3 power-law exponents), yet P_R itself is never instantiated in code, so its center/excess 2x2 blocks are never formed or compared.\nlattice_wide: checked and not executed -- no box, no site count and no limit of any kind is taken in this runner, and the global statement that would be needed is the note's own missing theorem: a rule fixing the exponent n=2 in lambda=kappa^n, which alone moves rho_E from 3/2 at n=1 to 21/4; the runner supplies the exponent by hand and certifies nothing beyond that.\n\n========================================================================================\nPASS=9 FAIL=0\n\nVERDICT: no-go boundary for target-free coefficient selection. The reduced\nRoute-2 endpoint algebra leaves rho_E as a positive projective slope.\nCommon target-free selectors pick rho_E=-1,0,3/2 or leave the slope free.\nGeneral quadratic/variational selectors can hit 21/4 only by inserting\nthe target-equivalent coefficient ratio B/A=-15/4. The inverse-square\nprojector-weight rule lands exactly, but selecting that rule or exponent\nn=2 is the missing theorem content, not a current derivation.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220502Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py",
+ "seed": 69104,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "286b77df",
+ "started_utc": "20260918T220504Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6817d2aef03855b25ec4253c0b3e1cbde263fc4162371f1d37aab98ba0082416",
+ "stdout_tail": "---------------------\nExact signed-axis group and representation\n------------------------------------------------------------------------------\nPASS the full signed-axis group has 48 unique elements, closure, and 24+24 determinant split\nPASS the induced six-arm permutation matrices form an exact representation\nPASS the antipodal-pair action is transitive on all six arms\n\n------------------------------------------------------------------------------\nExact orthogonal projector decomposition\n------------------------------------------------------------------------------\nPASS A1, E, and T1 are mutually orthogonal projectors summing to identity\nPASS projector ranks and traces are exactly 1, 2, and 3\nPASS all diagonal weights are exactly 1/6, 1/3, and 1/2\nPASS pair parity gives P_even=P_A1+P_E and P_T1=I-P_even\nPASS the six displayed orthogonal basis vectors determine the projectors uniquely\n\n------------------------------------------------------------------------------\nInteger monomial and affine arithmetic\n------------------------------------------------------------------------------\nPASS for u=1/3 and v=1/2, lambda_p=(u/v)^p is exact for negative powers\nPASS the 2-adic certificate proves lambda_p=9/4 iff p=-2 over every integer\nPASS the independent 3-adic certificate gives the same unique exponent\nPASS the supplied affine example gives q'=15/8 and rho=21/4 exactly\n\nSUMMARY: MODE=normal PASS=16 FAIL=0\nTHEOREM_SCOPE=DEFINED_SIX_ARM_PROJECTORS_INTEGER_MONOMIAL_AND_AFFINE_ARITHMETIC\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220505Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

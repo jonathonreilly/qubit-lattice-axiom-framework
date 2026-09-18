@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_brannen_circulant_forced_c3_covariant_form_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_brannen_circulant_forced_c3_covariant_form_2026_06_15.py",
+ "seed": 70033,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T222033Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fd4dd5a11abc283a9e97da72aa9f98fec168c60714a74408fe67b9f29248198d",
+ "stdout_tail": "SUMMARY: PASS - C is the 3x3 cyclic shift with C^3 = I\nSUMMARY: PASS - Hermitian real basis has dimension 9\nSUMMARY: PASS - dim_R{Hermitian H : [H,C]=0} is computed by rank/nullspace and equals exactly 3 -- rank=6 nullity=3\nSUMMARY: PASS - random (a in R, b in C) Brannen operators are Hermitian, C3-covariant, and reconstruct\nSUMMARY: PASS - each computed commutant nullspace basis vector reconstructs as aI+bC+conj(b)C^T\nSUMMARY: PASS - general commuting Hermitian operators reconstruct as Brannen circulants\nSUMMARY: PASS - numpy eigvalsh(H) matches a+2|b|cos(delta+2pi k/3) -- a=3, |b|=0.4, delta=0.2, r_label=0.0177777777778; a=2.5, |b|=0.9, delta=-0.7, r_label=0.1296; a=5, |b|=1.1, delta=1.3, r_label=0.0484\nSUMMARY: PASS - [H,S]=0 for Brannen circulant H and S=C+C^2\nSUMMARY: PASS - S=C+C^2 has the 2-sector record spectrum {2,-1,-1}\nSUMMARY: PASS - range-<=1 displacement operators on the 3-cycle are exactly {I,C,C^2}\nSUMMARY: PASS - {I,C,C^2} are independent and span the complex C3 commutant -- complex_commutant_dim=3, local_span_rank=3\nSUMMARY: PASS - control c1: diag(1,2,3) fails C3 covariance -- norm=2.44948974278\nSUMMARY: PASS - control c1: diag(1,2,3) does not commute with pointer S -- norm=3.46410161514\nSUMMARY: PASS - control c2: a generic non-C3 nonnormal operator has Hermitian commutant dimension < 3 -- rank=8 nullity=1\nSUMMARY: PASS - dial non-collapse: different supplied couplings give different (r,delta) labels -- (0.0625, 0.1) vs (0.16, -0.4)\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222033Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

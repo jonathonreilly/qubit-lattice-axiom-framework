@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dynamics_coupling_residual_classifier_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dynamics_coupling_residual_classifier_2026_06_06.py",
+ "seed": 69114,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T220514Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aeec3bdc0529e721d0566d0cd4ef1807d71ce17d5d8e9569a13972713fa9b291",
+ "stdout_tail": "m while preserving records\n\n========================================================================\nBoundary certificate\n========================================================================\n[PASS] B1 record preservation can force a commutant/class condition, not coupling values\n[PASS] B2 nontriviality is not forced because H=0 passes the gate\n[PASS] B3 rate/coupling split needs an extra clock/action premise\n[PASS] B4 coefficient ratios need an extra variational/minimality/normalization premise\n\n========================================================================\nScorecard\n========================================================================\nPASS=18 FAIL=0\nFINDING: record preservation constrains an allowed dynamics class, but leaves coupling magnitude, coefficient ratios, nontriviality, and clock-rate normalization open.\nper_element: PASS | the two exact record atoms resolve identity and each commutes with the symbolic one-parameter Hamiltonian H(g)\nper_site: PASS | all three executed local Hamiltonian choices g=0,1,2 preserve the same pair of record projectors\nper_mode: PASS | the two distinct coupling-clock modes (g,a)=(1,2) and (2,1) produce the same exact transfer operator\nper_block: PASS | the four-atom block preserves every projector while retaining both independent symbolic coefficients x and y\nlattice_wide: PASS | checked and not executed \u2014 this classifier exhausts finite two-atom and four-atom record algebras and defines no spatial lattice coupling family\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220515Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

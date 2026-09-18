@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta6_d7_maxorder7_packet_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py",
+ "seed": 69507,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T221148Z",
+ "elapsed_s": 235.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "53f05f57c1e8585e8cac17f6a0e7d8cb3308cfea0851ce19edc578800541878d",
+ "stdout_tail": "nuation pattern\n\nV6. SU(3) Haar Monte-Carlo validation of the exact integrator (CHECK, not input)\n  [PASS] MC <|TrU|^2> = 1 (fundamental character orthonormality)\n         MC=1.0004\n  [PASS] MC <(TrU)^3> = 1 (baryon singlet, epsilon sector)\n         MC=(0.9972938417009111+0.0008771456016019207j)\n  [PASS] MC <|TrU|^4> = 2 (two singlets in 3^2 x 3bar^2)\n         MC=1.9864\n  [PASS] exact integrator: <X_p0^2>*36 = 2 (= <|TrU|^2> + <(TrU)^2>conj-cross)\n         36*<X_p0^2> = 2\n  [PASS] optimized Fraction integrator agrees with sympy on <X_p0^2>, <X_p0^3>\n         Fraction <X_p0^2> = 1/18, <X_p0^3> = 1/108\n\n==============================================================================\nEXACT CONNECTED COEFFICIENTS OF Delta(beta) = P_full - P_1plaq:\n   d_5 = 1/472392 = 2.11688598e-06\n   d_6 = 7/5668704 = 1.23485015e-06\n   d_7 = 5/17006112 = 2.94011941e-07\n   per-order ratios: d_6/d_5 = 7/12, d_7/d_6 = 5/21  (NOT constant => no single geometric tail)\n==============================================================================\nSCORECARD: PASS=22 FAIL=0   (235.3s)\n==============================================================================\nThis is an exact strong-coupling series coefficient (bounded result).\nIt does NOT close beta=6. The exact d_7 falsifies the single-ratio\ntadpole/geometric ansatz (d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop\n{6:7/5668704, 7:5/17006112} into the harness\nscripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py for the\nSUPPORT/FALSIFY scorecard line.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T221543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_beta6_d7_maxorder7_packet_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

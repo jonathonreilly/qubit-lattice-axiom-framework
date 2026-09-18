@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_doped_flux_response_alternation_fate_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_doped_flux_response_alternation_fate_2026_06_12.py",
+ "seed": 69114,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T220514Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0bc3d0c108deef305d2a644c33be1d62ff3b8663f637bbb0a4282258b8fab26f",
+ "stdout_tail": "d each of the N bonds is written individually, and the two site-resolved gauge constructions are compared directly: the uniform gauge spreads phi/N over every bond while the boundary gauge loads the entire phase onto the single bond (N-1, 0), agreeing to 1e-10.\nper_mode: checked \u2014 eigh resolves all N single-particle levels individually, each level gets its own Fermi occupation at the given (T, mu_ch), and the response is then a double sum over ordered level pairs. That per-mode resolution is what makes the result analytic rather than differenced, and it is validated against finite differencing at two instances to relative tolerance 1e-4.\nper_block: checked \u2014 the staggered mass partitions the ring into two interleaved sublattice blocks on even and odd sites, and the entire grid is run at both m=0.0, where those blocks are degenerate, and m=0.4, where they are split. The alternation-fate table is classified separately for each, and the two disagree at tested points: at T=0.3, mu_ch=0.25 the m=0.0 pattern is -+--+ while the m=0.4 pattern is -+-++.\nlattice_wide: checked and executed only as a finite-N statement \u2014 the ring size is swept over N in (8, 10, 12, 14, 16) at every one of the 16 (m, T, mu_ch) combinations, and the absence of any uniform-sign N-sequence is asserted across that whole tested grid. No thermodynamic or continuum limit is taken anywhere; the note names that extrapolation as an explicit follow-on, so no asymptotic claim is certified here.\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220514Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

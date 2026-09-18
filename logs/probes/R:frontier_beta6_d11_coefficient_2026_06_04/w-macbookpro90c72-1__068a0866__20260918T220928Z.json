@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta6_d11_coefficient_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_beta6_d11_coefficient_2026_06_04.py",
+ "seed": 69368,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T220928Z",
+ "elapsed_s": 139.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1430927f85886b4d882f42db5ac63578881d47e183b4c34d8a815fc21f110f9c",
+ "stdout_tail": "he d_5..d_10 [2/3]=0.590, so d_11 pulls the estimate DOWN; the continuation is AMBIGUOUS, NOT a clean convergence to 0.5934\n   the spread does NOT include the 0.5934 lattice comparator\n  [PASS] the d_5..d_11 Pade approximants all return real, finite <P>(6) in the physical window [0.40,0.70] (a regular analytic continuation under the estimated R<6 off-real-axis branch-pair evidence). HONEST: they do NOT converge cleanly onto 0.5934 -- adding d_11 pulls the new high-order values down to ~0.51-0.54 (the d_5..d_10 [2/3] was ~0.59), so the continuation spread is AMBIGUOUS and NOT a closure\n         values ['0.5379037', '0.5140324', '0.5283162', '0.5190854', '0.5898583']\n\n   d-log-Pade complex-pair locator (nearest singularity of Delta):\n     [2/2] (d_5..d_10): R=5.38609, arg=-1.23374 rad, root=1.78123-5.08303i\n     [2/3] (d_5..d_11, NEW): R=5.527986, arg=0.0 rad, root=5.52799+0.0i\n     [3/2] (d_5..d_11, NEW): R=5.352041, arg=-1.03465 rad, root=2.73397-4.60106i\n\n==============================================================================\nd_11 = -13/3967185807360 = -3.27688206e-12  (sign -, d_11/d_10 = 52/31449)\nPIECES: cube(11) = -221/1322395269120 ; weight10(11) = 5/44079842304 ; weight11(11) = 5/99179645184 ; weight12(11) = 0\n0.5934 is a Monte-Carlo comparator, NEVER a derivation input.\n==============================================================================\nSCORECARD: PASS=9 FAIL=0   (138.6s)\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T221147Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_beta6_d11_coefficient_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

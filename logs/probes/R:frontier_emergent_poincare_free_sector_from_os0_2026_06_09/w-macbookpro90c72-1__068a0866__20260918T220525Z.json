@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_emergent_poincare_free_sector_from_os0_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_emergent_poincare_free_sector_from_os0_2026_06_09.py",
+ "seed": 69125,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T220525Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "603ce8048c63a86119cdd789952125195878ef55af25dfbac670ff568d83464a",
+ "stdout_tail": "d mass shell p^0=+sqrt(p^2+m^2) stays in the forward cone under all boosts (H>=0 survives)  --  W2 spectrum condition is boost-invariant\n\n----------------------------------------------------------------------------------------\nPart 5: boundary checklist + honest residual\n----------------------------------------------------------------------------------------\n  [PASS] kinetic_isotropy_primitive supplies only the structural c_t=c_s premise\n  [PASS] free-continuum SO(4) two-point covariance is checked here, not granted by the primitive alone\n  [PASS] reflection positivity is cited from its own row; not ratified here\n  [PASS] standard OS reconstruction theorem is an external theorem/context, not machine-proved here\n  [PASS] single-clock/Wightman-structure context remains governed by its own row\n  [PASS] boost/rotation conclusion remains conditional on the supplied OS/Wightman hypotheses\n  -- honest residual (NOT delivered by this assembly):\n  [PASS] residual flagged: G1: lattice-measure -> continuum-measure bridge beyond the 2-point (and 1+1d->4D arena) -- NOT supplied\n  [PASS] residual flagged: interacting continuum-existence (constructive-QFT class) -- NOT supplied; free Gaussian sector only\n  [PASS] residual flagged: RP not newly ratified here; statistics-selection still gated\n\n========================================================================================\nSUMMARY: PASS=19 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T220526Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_emergent_poincare_free_sector_from_os0_2026_06_09.txt against the .txt beside this log"
+  ]
+ }
+}

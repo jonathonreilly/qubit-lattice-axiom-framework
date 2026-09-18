@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_born_acceptance_harness_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_born_acceptance_harness_2026_07_28.py",
+ "seed": 70026,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "068a0866",
+ "started_utc": "20260918T222026Z",
+ "elapsed_s": 2.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b179fe03c370d042724dadf85c4c8f6564689d1cfbc08f2ec706ad11c2287456",
+ "stdout_tail": "\":{\"feed_keyset\":true,\"matrix_nonfinite\":true,\"matrix_oversized_integer\":true,\"matrix_type\":true,\"matrix_value\":true,\"origin\":true,\"outer_extra_key\":true,\"outer_missing_key\":true,\"reject_exception_type\":true,\"reject_extra_key\":true,\"reject_message\":true,\"reject_missing_key\":true,\"status\":true,\"summary_extra_key\":true,\"summary_hermitian_residual\":true,\"summary_idempotence_residual\":true,\"summary_maximum_eigenvalue\":true,\"summary_minimum_eigenvalue\":true,\"summary_shape\":true,\"summary_trace_imag\":true,\"summary_trace_real\":true,\"tolerance_exceeded\":true},\"oversized_integer_live_drift\":true,\"pass\":true,\"within_bound_accepted\":true},\"driver_ast_sha256\":\"9f75ac2ff05a69034f93011afcdf6d9ec8d48bd39d92db16bd16dae2242e14ba\",\"probe_census\":[{\"frozen_match\":true,\"probe_id\":\"axis_plus_x\",\"verdict\":\"ACCEPT\"},{\"frozen_match\":true,\"probe_id\":\"axis_minus_x\",\"verdict\":\"ACCEPT\"},{\"frozen_match\":true,\"probe_id\":\"axis_plus_y\",\"verdict\":\"ACCEPT\"},{\"frozen_match\":true,\"probe_id\":\"axis_plus_z\",\"verdict\":\"ACCEPT\"},{\"frozen_match\":true,\"probe_id\":\"wrong_arity\",\"verdict\":\"REJECT\"},{\"frozen_match\":true,\"probe_id\":\"non_normalized\",\"verdict\":\"REJECT\"},{\"frozen_match\":true,\"probe_id\":\"out_of_domain_value\",\"verdict\":\"REJECT\"},{\"frozen_match\":true,\"probe_id\":\"boolean_type_violation\",\"verdict\":\"REJECT\"}],\"runtime_seconds\":2.16735,\"scope\":{\"broader_ternary_surface_tested\":false,\"fixture\":\"projector_bloch_four_axes_only\",\"physics_claim\":false}}\nSUMMARY PASS 4 FAIL 2\nRESULT BORN_PROJECTOR_FIXTURE_ACCEPTANCE_GREEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T222028Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_born_acceptance_harness_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

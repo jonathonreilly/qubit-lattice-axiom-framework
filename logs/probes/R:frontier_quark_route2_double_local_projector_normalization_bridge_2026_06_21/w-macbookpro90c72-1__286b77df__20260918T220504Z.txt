@@ -1,0 +1,37 @@
+Exact signed-axis projector decomposition and integer-monomial theorem
+MODE=normal
+
+------------------------------------------------------------------------------
+Source and implementation boundary
+------------------------------------------------------------------------------
+PASS source note declares a dependency-free positive theorem
+PASS source note denies exponent, normalization, source, and endpoint selection
+PASS implementation uses no numerical-array or float-recovery path
+PASS formal APIs expose no physical selection inputs
+
+------------------------------------------------------------------------------
+Exact signed-axis group and representation
+------------------------------------------------------------------------------
+PASS the full signed-axis group has 48 unique elements, closure, and 24+24 determinant split
+PASS the induced six-arm permutation matrices form an exact representation
+PASS the antipodal-pair action is transitive on all six arms
+
+------------------------------------------------------------------------------
+Exact orthogonal projector decomposition
+------------------------------------------------------------------------------
+PASS A1, E, and T1 are mutually orthogonal projectors summing to identity
+PASS projector ranks and traces are exactly 1, 2, and 3
+PASS all diagonal weights are exactly 1/6, 1/3, and 1/2
+PASS pair parity gives P_even=P_A1+P_E and P_T1=I-P_even
+PASS the six displayed orthogonal basis vectors determine the projectors uniquely
+
+------------------------------------------------------------------------------
+Integer monomial and affine arithmetic
+------------------------------------------------------------------------------
+PASS for u=1/3 and v=1/2, lambda_p=(u/v)^p is exact for negative powers
+PASS the 2-adic certificate proves lambda_p=9/4 iff p=-2 over every integer
+PASS the independent 3-adic certificate gives the same unique exponent
+PASS the supplied affine example gives q'=15/8 and rho=21/4 exactly
+
+SUMMARY: MODE=normal PASS=16 FAIL=0
+THEOREM_SCOPE=DEFINED_SIX_ARM_PROJECTORS_INTEGER_MONOMIAL_AND_AFFINE_ARITHMETIC

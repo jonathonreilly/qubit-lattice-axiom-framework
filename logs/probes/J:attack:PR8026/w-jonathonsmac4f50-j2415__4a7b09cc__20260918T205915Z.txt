@@ -1,0 +1,8 @@
+[setup] irreps p + q <= 2 per link, 18 CG isometries, worst intertwining defect on random SU(3) 2.5e-15
+[route 1] one face: c1 = 0.006944444444444 vs 1/144 = 0.006944444444444; psi1 = S/96 to 0.0e+00
+[route 1] two adjacent faces: first-order 0.00e+00; <psi1, W_C psi1> = 2.411265432098764e-05 vs 1/41472 = 2.411265432098765e-05; 2Re<0, W_C psi2> = 3.215020576131688e-05 vs 1/31104 = 3.215020576131688e-05; I = int W_C S^2 = 96^2 <psi1,W_C psi1> = 0.222222222222222 vs 2/9; c2 = 5.626286008230451e-05 vs 7/124416 = 5.626286008230453e-05; psi1 = S/96 to 0.0e+00
+[route 2] Lanczos ground states at u = [0.04, 0.02, 0.01, 0.005]: omega(W_p)/u = 0.0069487854, 0.0069466148, 0.0069455296, 0.0069449870 -> Richardson 0.006944444444 (1/144 = 0.006944444444); omega(W_C)/u^2 = 5.6334658999e-05, 5.6298750778e-05, 5.6280803238e-05, 5.6271831112e-05 -> Richardson 5.626286008231e-05 (7/124416 = 5.626286008230e-05)
+[control] replacing the rectangle energy 24 by 16 would give 7.233796e-05 = 1/13824 (the note: a different, incorrect coefficient)
+[census] two-cube open graph: 12 vertices, 20 links, 11 faces; rectangle with 6 links; centre-charge survivors at orders 0/1/2/3: 0/0/4/12 (order-2 survivors all the planar pair: True)
+[time] 7s
+SUMMARY: attack pattern (f) NORMALIZATION - the open-geometry coefficients recomputed by brute force in an explicit Peter-Weyl basis of the 4-link and 7-link graphs: one face c1 = 0.006944444444 (route 1) / 0.0069444444 (route 2, Lanczos + Richardson) vs 1/144 = 0.006944444444; two faces c2 = 5.626286008230e-05 / 5.6262860082e-05 vs 7/124416 = 5.626286008230e-05, with 1/41472, 1/31104, I = 2/9 and psi1 = S/96 reproduced; census 0/0/4 at orders 0/1/2 (12 at order 3); 0 defects; attack does not fire

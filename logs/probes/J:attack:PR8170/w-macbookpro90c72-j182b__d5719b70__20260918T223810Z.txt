@@ -1,0 +1,13 @@
+large-L fit rows: 6
+beta=12 L=512 sim_b12_L512_T20000.txt: exp 0.0120 0.0154 0.0145; gamma=0.01116696
+beta=24 L=512 sim_b24_L512_T20000.txt: exp 0.0055 0.0071 0.0066; gamma=0.00566325
+beta=3 L=512 sim_b3_L512_T20000.txt: exp 0.1181 0.2629 0.1864; gamma=0.04083918
+beta=6 L=256 sim_b6_L256_T20000.txt: exp 0.0358 0.0399 0.0324; gamma=0.02169581
+beta=6 L=512 sim_b6_L512_T20000.txt: exp 0.0275 0.0498 0.0395; gamma=0.02169581
+beta=12 L=512 ref_sphere_b12_L512.txt: exp 0.0132 0.0076 0.0103; gamma=0.01116696
+N5 per_block token 3; D3 token 6/25
+HIT: sim_b24_L512_T20000.txt beta=24 L=512 exp[500,5000]=0.0055 < gamma=0.00566325
+HIT: ref_sphere_b12_L512.txt beta=12 L=512 exp[5000,T]=0.0076 < gamma=0.01116696
+HIT: ref_sphere_b12_L512.txt beta=12 L=512 exp[500,T]=0.0103 < gamma=0.01116696
+HIT: N5 per_block prints H_t - 3 against D3 H_t - 6/25
+SUMMARY: pattern (c) EXECUTED NUMBERS; sim_b24_L512_T20000.txt beta=24 L=512 exp[500,5000]=0.0055 < gamma=0.00566325; ref_sphere_b12_L512.txt beta=12 L=512 exp[5000,T]=0.0076 < gamma=0.01116696; ref_sphere_b12_L512.txt beta=12 L=512 exp[500,T]=0.0103 < gamma=0.01116696; N5 per_block prints H_t - 3 against D3 H_t - 6/25

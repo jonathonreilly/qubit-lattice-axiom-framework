@@ -1,0 +1,15 @@
+[Z^3] k=0..24: row-sum bound True; vanishing True; Green at 19648 sites True; no exit (Z^3); tightest Green (8, 8, 8) d=24 sum=0.00000000 bound=0.79766443
+[multinomial] DP vs extra-round-trip formula at 7 sites, n<=12: True
+[7^3 box] k=0..24: row-sum bound True; vanishing True; Green at 342 sites True; first exit k=4; tightest Green (6, 6, 6) d=9 sum=0.00050305 bound=3.87420489
+[W4] L=1 ell=0: min walk Delta_ell -> inner boundary = 1 (stated L-ell=1)
+[W4] L=2 ell=0: min walk Delta_ell -> inner boundary = 2 (stated L-ell=2)
+[W4] L=2 ell=1: min walk Delta_ell -> inner boundary = 1 (stated L-ell=1)
+[W4] L=3 ell=0: min walk Delta_ell -> inner boundary = 3 (stated L-ell=3)
+[W4] L=3 ell=1: min walk Delta_ell -> inner boundary = 2 (stated L-ell=2)
+[W4] L=3 ell=2: min walk Delta_ell -> inner boundary = 1 (stated L-ell=1)
+[W4] L=4 ell=0: min walk Delta_ell -> inner boundary = 4 (stated L-ell=4)
+[W4] L=4 ell=1: min walk Delta_ell -> inner boundary = 3 (stated L-ell=3)
+[W4] L=4 ell=2: min walk Delta_ell -> inner boundary = 2 (stated L-ell=2)
+[W4] L=4 ell=3: min walk Delta_ell -> inner boundary = 1 (stated L-ell=1)
+[W5] neighbour step on 6016 sites, k<= 16: tightest (5, 5, -6) d=16 min_k=15 lhs=0.00000013 bound=0.30883670; ok=True
+SUMMARY: pattern (g) PROOF STEP BY BRUTE FORCE on the W3/W5 walk bound - (C^k)_{xy}=c^k #NN-walks, row sum <= alpha^k, vanishing for k<|x|_1, and sum_k (C^k)_{0x} <= alpha^{|x|_1}/(1-alpha) hold by exact walk counts on Z^3 and the 7^3 box at alpha=9/10 (n<=24); W4 min length Delta_ell -> inner boundary is L-ell for L<=4; W5 neighbour step holds; multinomial cross-check holds; the step holds as written

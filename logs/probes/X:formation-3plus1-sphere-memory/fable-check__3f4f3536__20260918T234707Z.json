@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-sphere-memory",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "fable-check",
+ "model": "",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 1 32 1500 750 1",
+ "seed": 75226,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3f4f3536",
+ "started_utc": "20260918T234707Z",
+ "elapsed_s": 6.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.0 L=32 T=1500 plateau_|m|=0.0155 lowk_ratio=0.1419 seconds=6"
+ },
+ "review": "first look, a point outside the grid; plateau read from the SUMMARY line",
+ "what": "NEW PHYSICS, 3+1. The sphere formation law on the event lattice Z^4 in level order (three-dimensional level planes, four predecessors). Linear theory predicts what 2+1 lacks: the plane walk is transient, so an aligned start keeps a positive magnetization at strong coupling. The table |m|(level) by beta and L locates the coupling where memory appears and the plateau's height. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 20 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "c22d492ea22c65b101502ee9a39a74fb3867927d5e61f4cda0add843e5b7e9c1",
+ "stdout_tail": " 5  0.4684  +0.4683\n         6  0.4308  +0.4307\n         8  0.3782  +0.3781\n        11  0.3078  +0.3077\n        16  0.2323  +0.2322\n        21  0.1831  +0.1824\n        29  0.1281  +0.1269\n        39  0.0855  +0.0824\n        53  0.0454  +0.0450\n        71  0.0233  +0.0160\n        97  0.0056  -0.0021\n       131  0.0061  -0.0050\n       178  0.0122  +0.0029\n       241  0.0176  +0.0004\n       327  0.0111  -0.0030\n       443  0.0169  -0.0061\n       601  0.0132  +0.0129\n       815  0.0121  -0.0073\n      1106  0.0120  +0.0020\n      1500  0.0102  +0.0012\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.1419 (n=18)\n   |k| in [0.3,0.6): 0.4038 (n=104)\n   |k| in [0.6,1.0): 0.7012 (n=392)\n   |k| in [1.0,1.5): 0.9443 (n=1348)\n   |k| in [1.5,2.2): 1.0888 (n=4024)\n   |k| in [2.2,3.2): 1.1679 (n=12063)\n   |k| in [3.2,6.0): 1.1922 (n=14818)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.045106  +0.077689  0.581  +0.07769\n     2  +0.009503  +0.034230  0.278  +0.06846\n     3  +0.002462  +0.019776  0.124  +0.05933\n     4  +0.000737  +0.012715  0.058  +0.05086\n     6  +0.000057  +0.005803  0.010  +0.03482\n     8  -0.000140  +0.002497  -0.056  +0.01997\n    12  -0.000001  -0.000373  0.003  -0.00447\n    16  -0.000055  -0.001089  0.051  -0.01742\nSUMMARY: dim=3 menu=sphere beta=1.0 L=32 T=1500 plateau_|m|=0.0155 lowk_ratio=0.1419 seconds=6\n",
+ "checked": {
+  "by": "fable-check",
+  "at_utc": "20260918T234713Z",
+  "result": "FAIL",
+  "findings": [
+   "FAIL: stdout file does not match the log's stdout_sha256 (edited after the run?)",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

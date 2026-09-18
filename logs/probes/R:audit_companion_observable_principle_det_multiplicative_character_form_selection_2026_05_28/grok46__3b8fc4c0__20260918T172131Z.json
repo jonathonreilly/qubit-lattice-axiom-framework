@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_observable_principle_det_multiplicative_character_form_selection_2026_05_28",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/audit_companion_observable_principle_det_multiplicative_character_form_selection_2026_05_28.py",
+ "seed": 52091,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b8fc4c0",
+ "started_utc": "20260918T172131Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "075f23cbb40a0062110939f670aae6408ea99e70c85bbecb92457bbf31652a19",
+ "stdout_tail": " additive form of the character is c.log (Cauchy ODE) ===\n[PASS] Cauchy ODE r W'(r)=c solves to W = const + c.log(r)  [dsolve -> Eq(W(r), C1 + c*log(r))]\n[PASS] c.log(r1 r2) == c.log(r1) + c.log(r2) (functional equation)\n[PASS] log(|det|^k) == k . log|det| (character power absorbed into scale c)\n[PASS] log|det(A (+) B)| == log|det A| + log|det B| (additive over sectors)\n\n=== Part 7: Pattern-L guard \u2014 det-vs-tr selection does NOT use the direct-sum-additivity axis ===\n[PASS] tr(A (+) B) == tr(A) + tr(B) (tr PASSES direct-sum additivity)  [=> direct-sum axis cannot exclude tr; not the axis used here]\n[PASS] det(A (+) B) == det(A).det(B) (direct-sum multiplicativity; the old-campaign axis)  [the |det|^p family lives here; exponent unfixed on this axis]\n[PASS] CONTRAST: on composition axis tr FAILS while det passes (re-assert)  [composition axis does the det-vs-tr work the direct-sum axis cannot]\n[PASS] Pattern-L guard: tr separates the two axes (fails composition-character, passes direct-sum-additivity)  [documented: det-vs-tr selection rides on composition-character only]\n\n======================================================================\nTOTAL: 30 PASS / 0 FAIL  (out of 30 checks)\n======================================================================\n\nAll checks passed: det is the unique algebraic/rational multiplicative character generator (tr / tr(M^s) / e_{1..n-1} all fail); additive form is c.log|det|; Pattern-L direct-sum axis is documented as NOT the selection axis.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172136Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+ "seed": 52096,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b8fc4c0",
+ "started_utc": "20260918T172136Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=64  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes [batch 5/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5d769309703038e6987a746c11d413a08ab8563f40c0c3331d8b27420a5a12f7",
+ "stdout_tail": "zero-rep))\n  [PASS (C)] enumeration row k=1: dim_C = 2k = 2 via (n_+,n_-)=(1,0)  (declared bounded (P-QBIT) carrier; conditional C1 on abstract surface)\n  [PASS (C)] enumeration row k=2: dim_C = 2k = 4 via (n_+,n_-)=(2,0)  (counter-example to Cl(3)-algebra-only closure)\n  [PASS (C)] enumeration row k=3: dim_C = 2k = 6 via (n_+,n_-)=(3,0)  (counter-example to Cl(3)-algebra-only closure)\n  [PASS (C)] enumeration row k=4: dim_C = 2k = 8 via (n_+,n_-)=(4,0)  (counter-example to Cl(3)-algebra-only closure)\n\n----------------------------------------------------------------------------------------\nPart 9: Final consistency \u2014 current surface vs abstract surface\n----------------------------------------------------------------------------------------\n  [PASS (A)] Current Qubit-surface (Q1) is pinned to the declared bounded carrier premise  (source guard, not a hard-coded physical-dimension check)\n  [PASS (A)] Abstract conditional (C1) verified: k=1 \u21d2 dim_C = 2  (closed on retained Cl(3) classification)\n  [PASS (A)] Cl(3) algebra alone does not select k=1 (counter-examples k>=2 admissible)  (multi-copy reps reappear when (P-QBIT) is removed)\n  [PASS (B)] Remaining open gates are realization gates beyond the single-module carrier  (Grassmann/JW/Kawamoto-Smit/physical-species rows remain separate)\n\n========================================================================================\nPASS=64  FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172138Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

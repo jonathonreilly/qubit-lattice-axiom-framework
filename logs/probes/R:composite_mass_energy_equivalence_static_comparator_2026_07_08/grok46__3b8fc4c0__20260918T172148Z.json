@@ -1,0 +1,35 @@
+{
+ "task": "R:composite_mass_energy_equivalence_static_comparator_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "composite",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/composite_mass_energy_equivalence_static_comparator_2026_07_08.py",
+ "seed": 52108,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b8fc4c0",
+ "started_utc": "20260918T172148Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=2 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3571e7f3c51d8e73588cd1883a81a44faeb395f9c953e9c01dc90d8a2b9b4b33",
+ "stdout_tail": "esid=6.217e-15,edge2nd=7.776e-08,sumM=1.000e+00,bandM_ctx=1.000e+00;m=0.5,w=0.0,U=0.6,EB=4.239e-02,first_resid=1.243e-14,edge2nd=1.967e-06,sumM=1.000e+00,bandM_ctx=1.000e+00;m=0.5,w=2.0,U=0.2,EB=4.215e-02,first_resid=1.044e-14,edge2nd=1.030e-08,sumM=1.000e+00,bandM_ctx=1.000e+00;m=0.5,w=2.0,U=0.6,EB=2.137e-01,first_resid=1.754e-14,edge2nd=1.809e-07,sumM=1.000e+00,bandM_ctx=1.000e+00;m=1.0,w=0.0,U=0.2,EB=9.607e-03,first_resid=5.218e-15,edge2nd=3.012e-07,sumM=2.000e+00,bandM_ctx=2.000e+00;m=1.0,w=0.0,U=0.6,EB=8.000e-02,first_resid=8.549e-15,edge2nd=7.091e-06,sumM=2.000e+00,bandM_ctx=2.005e+00;m=1.0,w=2.0,U=0.2,EB=6.000e-02,first_resid=8.105e-15,edge2nd=3.163e-08,sumM=2.000e+00,bandM_ctx=2.000e+00;m=1.0,w=2.0,U=0.6,EB=2.725e-01,first_resid=8.216e-15,edge2nd=5.411e-07,sumM=2.000e+00,bandM_ctx=2.000e+00 | COSINE(variable-curvature control) rows=m=0.5,w=0.0,U=0.2,EB=4.997e-03,M=1.001e+00,dM=1.249e-03,dM_over_EB=2.500e-01;m=0.5,w=0.0,U=0.6,EB=4.475e-02,M=1.011e+00,dM=1.119e-02,dM_over_EB=2.500e-01;m=0.5,w=2.0,U=0.2,EB=4.234e-02,M=1.006e+00,dM=6.071e-03,dM_over_EB=1.434e-01;m=0.5,w=2.0,U=0.6,EB=2.155e-01,M=1.022e+00,dM=2.198e-02,dM_over_EB=1.020e-01;m=1.0,w=0.0,U=0.2,EB=9.975e-03,M=2.010e+00,dM=9.975e-03,dM_over_EB=1.000e+00;m=1.0,w=0.0,U=0.6,EB=8.806e-02,M=2.088e+00,dM=8.806e-02,dM_over_EB=1.000e+00;m=1.0,w=2.0,U=0.2,EB=6.039e-02,M=2.028e+00,dM=2.800e-02,dM_over_EB=4.636e-01;m=1.0,w=2.0,U=0.6,EB=2.758e-01,M=2.091e+00,dM=9.141e-02,dM_over_EB=3.314e-01\nTOTAL: PASS=2 FAIL=0 FLAGS=none\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172150Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_stencil_derived_centrality_cycle721_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_stencil_derived_centrality_cycle721_2026_08_02.py",
+ "seed": 52112,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b8fc4c0",
+ "started_utc": "20260918T172152Z",
+ "elapsed_s": 9.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=49 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d960dc8b49afda9ea177a068c1bc6eaf8d2ce883091d08717edccd3c0a015327",
+ "stdout_tail": "ith 24 distinct class tuples\n-- E  the derived group predicts, and tracks mutilated stencils --\nPASS E1.L3.derived_predicts_measured slots 98 agreement 48 of 48 invariant 12\nPASS E2.L3.separation within 1.243450e-10 floor outside 4.000000e+00 entry max 2.945214e+01\nPASS E3.L3.label_is_the_coset_count measured classes 4 matching the derived cosets, block size [6]\nPASS E1.L4.derived_predicts_measured slots 279 agreement 48 of 48 invariant 12\nPASS E2.L4.separation within 1.243450e-10 floor outside 4.000000e+00 entry max 2.945214e+01\nPASS E3.L4.label_is_the_coset_count measured classes 4 matching the derived cosets, block size [6]\nPASS E1.L5.derived_predicts_measured slots 604 agreement 48 of 48 invariant 12\nPASS E2.L5.separation within 1.243450e-10 floor outside 4.000000e+00 entry max 2.945214e+01\nPASS E3.L5.label_is_the_coset_count measured classes 4 matching the derived cosets, block size [6]\n-- E4  mutilated stencils: derived and measured groups move together --\nPASS E4.full templates 24 derived 12 measured 12 floor 1.007048e+01\nPASS E4.single_a templates 1 derived 1 measured 1 floor 1.221442e+00\nPASS E4.single_b templates 1 derived 1 measured 1 floor 2.500719e+00\nPASS E4.orbit templates 12 derived 12 measured 12 floor 5.001437e+00\nPASS E4.half templates 12 derived 2 measured 2 floor 1.116895e+01\nPASS E4.pair templates 2 derived 1 measured 1 floor 3.141593e+00\nPASS E5.stencil_tracking mutilated stencils whose measured group equals the derived one 6 of 6\nTOTAL: PASS=49 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172202Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

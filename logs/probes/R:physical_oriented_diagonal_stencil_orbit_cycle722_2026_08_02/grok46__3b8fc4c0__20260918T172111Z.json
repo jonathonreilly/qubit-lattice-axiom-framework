@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_oriented_diagonal_stencil_orbit_cycle722_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/physical_oriented_diagonal_stencil_orbit_cycle722_2026_08_02.py",
+ "seed": 52071,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b8fc4c0",
+ "started_utc": "20260918T172111Z",
+ "elapsed_s": 40.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=58 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a08a33ea724da74e2a08f8342a6e812d8c3dd42af4c8ff6ba079655fee0b265b",
+ "stdout_tail": " temporal classes leaves the stencils separated floor = 1.000000\n[PASS] LT=4: the tick fold identifies them where dropping does not dev < 1.0e-09\n[PASS] LT=5: dropping temporal classes leaves the stencils separated floor = 1.000000\nTemporal-class dropping identifies only at tick length 2; the fold identifies\nat each declared tick length.  The supplied static form applies both projections.\n\n-- Diagonal-orientation reversal and tick sense --\n[PASS] LT=2: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer translations = 6, with reversal = 12\n[PASS] LT=3: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer translations = 6, with reversal = 12\n[PASS] LT=4: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer translations = 6, with reversal = 12\n[PASS] LT=5: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer translations = 6, with reversal = 12\n\n-- Stencil edge-slot inventory versus nearest-neighbour adjacency --\n[PASS] the stencil carries 240 edge slots, 120 of them spatial total = 240, spatial = 120\n[PASS] a large share of the spatial slots are not nearest-neighbour steps 72 on the six axis directions, 48 not\n\n-- Static projection reproduction of the four-label census --\n[PASS] static form at LT=2 carries 4 frame labels labels = 4\n[PASS] static form at LT=3 carries 4 frame labels labels = 4\n\nTOTAL: PASS=58 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T172152Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

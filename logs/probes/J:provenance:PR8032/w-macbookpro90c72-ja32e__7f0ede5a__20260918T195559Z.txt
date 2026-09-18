@@ -1,0 +1,20 @@
+4d/a | full-unitary trial cost and kinetic identity (3) | cache_r1: lattice_wide: 3 checks; failed crude sufficient budget, failed exact-four transfer and distant vacuum normalization adverse; one plaquette o | OK
+40 | geometry/shell/compression helper checks | cache: TOTAL: 40 | OK
+22 | R1 Haar-contraction charged-energy checks | cache_r1: TOTAL: 22 | OK
+8v | per-link kinetic budget E_e <= 8v | note: E_e:=<Omega,K_e Omega> <=8v.                 (1) | OK
+32v | four-link face budget E_face <= 32v | note: Thus E_path<=8vd for d distinct path links, and E_face<=32v for a four-link face. No ambient-volume norm appears. The replacement need not i | OK
+8/3 | Casimir sum_A T_A^2 = (8/3)I | note: Haar is normalized, a>0,v>=0, and Hermitian generators satisfy Tr(T_A T_B)=delta_AB, sum_A T_A^2=(8/3)I. Full-irrep projection preserves bot | OK
+e_R | R^2-floor(R^2/4)+3R over a | note: For e_R=[R^2-floor(R^2/4)+3R]/a, define | OK
+8d/3 | row-operator square of D_eA W | note: sum_(e,A)(D_eA W)(D_eA W)^*=(8d/3)I. | OK
+4d | at most 4d touching faces | note: There are at most4d distinct touching faces; double-counting them only weakens the bound. Neither (6) nor (7) uses a total-volume magnetic n | OK
+theta_0 | 8avd/h_R | note: This is exactly a finite charged trial energy bound, not merely a vector approximation. A completely explicit sufficient version follows fro | OK
+1/100 | fixture t | runner_r1: 'fixture':'actual four-link SU3 plaquette, complete PW R1, a=1,t=1/100', | OK
+1/18 | B-J-A magnetic entry | note: [[0,1/18,1/54],[1/18,0,1/54],[1/54,1/54,0]]. | OK
+1/54 | B-J-C magnetic entry; 36/1944 | note: [[0,1/18,1/54],[1/18,0,1/54],[1/54,1/54,0]]. | OK
+16 | electric energies 0,16,16 of the character basis | note: Take four independent Haar SU3 links around one elementary plaquette, complete PW cutoff R=1, and a=1. Write U for the path link and M for t | OK
+4.01 | R1 trial excess strictly between 4 and 4.01 | note: The [actual R1 helper](../scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py) independently computes22 exact Haar-c | OK
+1/50 | rational enclosure sqrt(theta) | note: The actual local kinetic budgets are E_path=8t^2/N and E_face=32t^2/N, with e_R=4. The norm loss is14t^2/(9N), bounded by theta=E_path/e_R.  | OK
+3/100 | rational enclosures of sqrt(E_path) and sqrt(E_face/e_R) | note: The actual local kinetic budgets are E_path=8t^2/N and E_face=32t^2/N, with e_R=4. The norm loss is14t^2/(9N), bounded by theta=E_path/e_R.  | OK
+IDENTITY | 36/1944 = 1/54 | OK
+IDENTITY | e_R numerator at R=1 is 4 (note uses e_R=4 at a=1) | OK
+SUMMARY: 17 theorem numbers, 0 unsourced

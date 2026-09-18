@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8168",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block25-format",
+ "worker": "w-jonathonsmac4f50-j5659",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8168/explanation_tree_adversarial.py",
+ "seed": 67092,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1cd10dc8",
+ "started_utc": "20260918T213132Z",
+ "elapsed_s": 20.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (e) SAMPLED EVIDENCE - T4's refinement procedure re-implemented from the note and driven by hill-climbing over noise configurations in backward cones of depth 4-12 (plus the exhaustive depth-2 cone): 18949 configurations, 18618 with eta_x = 1; largest edges/(n-1) = 3.1000 (bound 4; the note observed below 3), largest arrows/(n-1) = 2.1000 (bound 3), most refinements 23; 0 failures of the procedure or of its asserted properties; attack does not fire"
+ },
+ "review": "Attack pattern (e) sampled evidence on T4: the explanation-tree refinement (clusters of the arrow graph, cause graph with one fork per adjacent pair, T3's minimal subtree and poles, excuses, kept poles and arrows) re-implemented from the note's text and driven by hill-climbing over noise configurations in backward cones of depth 4-12 plus the exhaustive depth-2 cone (18,949 configurations, 18,618 with eta_x = 1): the procedure never fails, the excuse and spanning identities hold at every refinement, the result is always a tree of 1-sites with at most one arrow to a predecessor per node, the arrow-free nodes are exactly the noise sites, forks = n - 1, and the adversarial maxima are edges/(n-1) = 3.1 and arrows/(n-1) = 2.1, within the proven 4 and 3 (above the note's remark that the largest ratio observed at random was below 3); no defect found.",
+ "what": "PR #8168 ([physics-loop] admissibility-induced-law block25 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916; git show origin/physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916:<note>. Create probes/work/pr8168/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8168/<script>.py\"",
+ "stdout_sha256": "23c55b3449cea0dc1d7dbe2d466c0252e7a28b34374162d238a1b2a279c36bd7",
+ "stdout_tail": "refinements 7; failures 0  (3s)\n[adversarial] depth 6: 11860 configurations so far; largest edges/(n-1) 2.8000, arrows/(n-1) 1.8000, most refinements 10; failures 0  (5s)\n[adversarial] depth 7: 13468 configurations so far; largest edges/(n-1) 3.0000, arrows/(n-1) 2.0000, most refinements 12; failures 0  (7s)\n[adversarial] depth 8: 15076 configurations so far; largest edges/(n-1) 3.0000, arrows/(n-1) 2.0000, most refinements 15; failures 0  (9s)\n[adversarial] depth 9: 16684 configurations so far; largest edges/(n-1) 3.0000, arrows/(n-1) 2.0000, most refinements 15; failures 0  (13s)\n[adversarial] depth 10: 17439 configurations so far; largest edges/(n-1) 3.1000, arrows/(n-1) 2.1000, most refinements 23; failures 0  (15s)\n[adversarial] depth 11: 18194 configurations so far; largest edges/(n-1) 3.1000, arrows/(n-1) 2.1000, most refinements 23; failures 0  (17s)\n[adversarial] depth 12: 18949 configurations so far; largest edges/(n-1) 3.1000, arrows/(n-1) 2.1000, most refinements 23; failures 0  (20s)\n[time] 20s\nSUMMARY: attack pattern (e) SAMPLED EVIDENCE - T4's refinement procedure re-implemented from the note and driven by hill-climbing over noise configurations in backward cones of depth 4-12 (plus the exhaustive depth-2 cone): 18949 configurations, 18618 with eta_x = 1; largest edges/(n-1) = 3.1000 (bound 4; the note observed below 3), largest arrows/(n-1) = 2.1000 (bound 3), most refinements 23; 0 failures of the procedure or of its asserted properties; attack does not fire\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5659",
+  "at_utc": "20260918T213153Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

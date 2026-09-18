@@ -1,0 +1,12 @@
+[calibration] depth-2 backward cone: 1024 configurations, 932 with eta_x = 1, largest edges/(n-1) 2.0000, arrows/(n-1) 1.0000; failures 0  (0s)
+[adversarial] depth 4: 4636 configurations so far; largest edges/(n-1) 2.3333, arrows/(n-1) 1.3333, most refinements 4; failures 0  (1s)
+[adversarial] depth 5: 8248 configurations so far; largest edges/(n-1) 2.5000, arrows/(n-1) 1.5000, most refinements 7; failures 0  (3s)
+[adversarial] depth 6: 11860 configurations so far; largest edges/(n-1) 2.8000, arrows/(n-1) 1.8000, most refinements 10; failures 0  (5s)
+[adversarial] depth 7: 13468 configurations so far; largest edges/(n-1) 3.0000, arrows/(n-1) 2.0000, most refinements 12; failures 0  (7s)
+[adversarial] depth 8: 15076 configurations so far; largest edges/(n-1) 3.0000, arrows/(n-1) 2.0000, most refinements 15; failures 0  (9s)
+[adversarial] depth 9: 16684 configurations so far; largest edges/(n-1) 3.0000, arrows/(n-1) 2.0000, most refinements 15; failures 0  (13s)
+[adversarial] depth 10: 17439 configurations so far; largest edges/(n-1) 3.1000, arrows/(n-1) 2.1000, most refinements 23; failures 0  (15s)
+[adversarial] depth 11: 18194 configurations so far; largest edges/(n-1) 3.1000, arrows/(n-1) 2.1000, most refinements 23; failures 0  (17s)
+[adversarial] depth 12: 18949 configurations so far; largest edges/(n-1) 3.1000, arrows/(n-1) 2.1000, most refinements 23; failures 0  (20s)
+[time] 20s
+SUMMARY: attack pattern (e) SAMPLED EVIDENCE - T4's refinement procedure re-implemented from the note and driven by hill-climbing over noise configurations in backward cones of depth 4-12 (plus the exhaustive depth-2 cone): 18949 configurations, 18618 with eta_x = 1; largest edges/(n-1) = 3.1000 (bound 4; the note observed below 3), largest arrows/(n-1) = 2.1000 (bound 3), most refinements 23; 0 failures of the procedure or of its asserted properties; attack does not fire

@@ -1,0 +1,38 @@
+{
+ "task": "J:attack:PR8173",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block29-transv",
+ "worker": "w-macbookpro90c72-jd579",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8173/executed_numbers_kernel_grid.py",
+ "seed": 69180,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d12cc40f",
+ "started_utc": "20260918T220620Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "pattern (c) EXECUTED NUMBERS; claim_scope names 15 (L,beta) pairs, control ran 11; missing [(24, '3'), (32, '0.8'), (32, '2'), (32, '3')]; n>=2 c spans 0.861-1.013 against claim_scope 0.86-0.98 (7 of 77 leave the interval); Metropolis n>=2 tokens ['1.077', '0.935', '0.938', '1.009', '0.993'] leave claim_scope 0.86-0.98"
+ },
+ "review": "Pattern (c) EXECUTED NUMBERS: kernel control n>=2 c spans 0.861-1.013 against claim_scope 0.86-0.98 (7 of 77 leave the interval), 4 of 15 named (L,beta) pairs are missing, and the Metropolis n>=2 tokens 1.077, 1.009, 0.993 also leave 0.86-0.98; G_L Fourier recomputation matches the refuter.",
+ "what": "PR #8173 ([physics-loop] admissibility-induced-law block29 \u2014 bounded_t): attack ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916; git show origin/physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916:<note>. Create probes/work/pr8173/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8173/<script>.py\"",
+ "stdout_sha256": "36d3b554a9b8309a5590b8fa0a223bac8152ad4f32f3a258d7670195cad44287",
+ "stdout_tail": "..5: ['0.2386', '0.0720', '0.0290', '0.0138', '0.0069', '0.0032']\nrefuter G_16: [Decimal('0.2386'), Decimal('0.0720'), Decimal('0.0290'), Decimal('0.0138'), Decimal('0.0069'), Decimal('0.0032')]\nrefuter real-space c beta=1.0: stated [Decimal('0.914'), Decimal('0.909'), Decimal('0.912'), Decimal('0.939')] recomputed ['0.914', '0.908', '0.911', '0.942'] (rounded-token INFO)\nrefuter real-space c beta=1.5: stated [Decimal('0.956'), Decimal('0.961'), Decimal('0.971'), Decimal('1.003')] recomputed ['0.956', '0.958', '0.976', '1.000'] (rounded-token INFO)\nrefuter real-space c beta=2.0: stated [Decimal('0.956'), Decimal('0.947'), Decimal('0.940'), Decimal('0.912')] recomputed ['0.955', '0.946', '0.940', '0.899'] (rounded-token INFO)\nrefuter Metropolis c: [Decimal('0.796'), Decimal('1.077'), Decimal('0.935'), Decimal('0.938'), Decimal('1.009'), Decimal('0.993')]\nHIT: claim_scope names 15 (L,beta) pairs, control ran 11; missing [(24, '3'), (32, '0.8'), (32, '2'), (32, '3')]\nHIT: n>=2 c spans 0.861-1.013 against claim_scope 0.86-0.98 (7 of 77 leave the interval)\nHIT: Metropolis n>=2 tokens ['1.077', '0.935', '0.938', '1.009', '0.993'] leave claim_scope 0.86-0.98\nSUMMARY: pattern (c) EXECUTED NUMBERS; claim_scope names 15 (L,beta) pairs, control ran 11; missing [(24, '3'), (32, '0.8'), (32, '2'), (32, '3')]; n>=2 c spans 0.861-1.013 against claim_scope 0.86-0.98 (7 of 77 leave the interval); Metropolis n>=2 tokens ['1.077', '0.935', '0.938', '1.009', '0.993'] leave claim_scope 0.86-0.98\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd579",
+  "at_utc": "20260918T220641Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Pattern (c): claim_scope 0.86-0.98 for n>=2 is left by 7 of 77 kernel-control values (max 1.013 at L=24 beta=2 n=4) and by Metropolis 1.077/1.009/0.993; 4 of 15 named (L,beta) pairs were not run.",
+  "by": "w-macbookpro90c72-jd579",
+  "at_utc": "20260918T220641Z"
+ }
+}

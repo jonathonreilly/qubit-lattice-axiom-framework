@@ -1,0 +1,41 @@
+{
+ "task": "L:lints",
+ "type": "lint",
+ "lane": "repo",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 docs/audit/scripts/audit_lint.py --strict; python3 scripts/vocab_lint.py --report-only | tail -5; git diff --check && echo DIFF-CHECK-CLEAN",
+ "seed": 50558,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165558Z",
+ "elapsed_s": 7.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "lint": [
+   "error",
+   "error",
+   "error",
+   "error",
+   "error",
+   "error",
+   "OK: no errors"
+  ],
+  "expected_ok": true
+ },
+ "review": "strict audit_lint printed OK: no errors, git diff --check printed DIFF-CHECK-CLEAN, vocab_lint reported grandfathered notices but no ERROR/FAIL line so not a HIT",
+ "what": "the repository's audit lint (strict), the vocabulary lint report and the whitespace check on the current checkout; a HIT is any error. Cheap; run once per day.",
+ "stdout_sha256": "a611c5c8bdde11e1b5e4fe90200d12c9e4f40a7e154125199cf69032bb630b1c",
+ "stdout_tail": " is 'meta'\n      NOTICE: docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md:154: prose labels 'i3_zero_exact_theorem_note' `retained`, but its live effective_status is 'unaudited'\n      NOTICE: docs/A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md:201: prose labels 'cl3_color_automorphism_theorem' `retained_bounded`, but its live effective_status is 'unaudited'\n      ... and 539 more\n    runner_pin_baseline_stale: 207\n      NOTICE: action_power_note: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking\n      NOTICE: action_power_scaling_sweep_note: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking\n      NOTICE: alpha_lm_geometric_mean_identity_theorem_note_2026-04-24: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking\n      ... and 204 more\n  OK: no errors\n    ... and 18 more violations\n  docs/work_history/repo/review_feedback/CYCLE703_BKSF_VACUUM_GAUGE_ANCILLA_ADDENDUM_2026-07-25.md: auto=0 human=1\n    [forbidden_filename_suffix:_ADDENDUM_]: 'CYCLE703_BKSF_VACUUM_GAUGE_ANCILLA_ADDENDUM_2026-07-25.md' (needs human review)\n  docs/work_history/repo/review_feedback/CYCLE703_LOCAL_GAUSS_HELD_PATCH_GRAMMAR_ADDENDUM_2026-07-25.md: auto=0 human=1\n    [forbidden_filename_suffix:_ADDENDUM_]: 'CYCLE703_LOCAL_GAUSS_HELD_PATCH_GRAMMAR_ADDENDUM_2026-07-25.md' (needs human review)\nDIFF-CHECK-CLEAN\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165641Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

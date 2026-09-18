@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8174",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block30-six-ax",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8174/falsifier_ceiling.py",
+ "seed": 50931,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170211Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "ceiling falsifier did not fire: max (v-1)/v^3=4/27, max t^2(4/27-t)=256/531441, d3(4150)=8311/17230811 > bound > d3(4165)=8341/17355566"
+ },
+ "review": "Independent Fraction check: max (v-1)/v^3=4/27, max t^2(4/27-t)=256/531441, d3(4150)>bound>d3(4165); T5 ceiling falsifier did not fire",
+ "what": "PR #8174 ([physics-loop] admissibility-induced-law block30 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916; git show origin/physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916:<note>. Create probes/work/pr8174/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8174/<script>.py\"",
+ "stdout_sha256": "78e70cb1d4eedc9f511795ab8f78c10070b233e28dc05f91fab8c36bd3e1bfba",
+ "stdout_tail": "d3(4150,1,2) = 8311/17230811\nd3(4165,1,2) = 8341/17355566\n256/531441   = 256/531441\nSUMMARY: ceiling falsifier did not fire: max (v-1)/v^3=4/27, max t^2(4/27-t)=256/531441, d3(4150)=8311/17230811 > bound > d3(4165)=8341/17355566\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170355Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

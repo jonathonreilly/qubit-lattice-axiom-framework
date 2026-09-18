@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_rule_infinite_strip_row_sweep_formation_versus_static_law_2026_09_06",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_rule_infinite_strip_row_sweep_formation_versus_static_law_2026_09_06.py",
+ "seed": 50712,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165832Z",
+ "elapsed_s": 54.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=39 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "182c8cf8853050ead94252a905bf06ccf1c18f5e394c7fbad38bb99dbd488d97",
+ "stdout_tail": "9 finite-n center-row values n = 3..13: distance to the enclosure strictly decreasing, final < 10^-6\nPASS: E10 second eigenvalue: all charpoly roots real; every non-Perron root in [-m, m] with rational m < lam_1 (Sturm)\nPASS: E11 boundary independence: end records P(e_y) on both end rows, n = 13 center-row value within 10^-6 of the enclosure, W = 2, 3, both triples\nPASS: F1 the note carries the four fence sentences verbatim\nPASS: F2 the note contains no forbidden phrase (hits: [])\nPASS: F3 runner source: no floating-point literal, conversion or evaluation call (0 hits)\nper_element: executed \u2014 every row state of the width-2, 3 and 4 strips, every configuration of the cube and plaquette sub-window checks, both triples, exact\nper_site: executed \u2014 the sub-window conditional at every site class (face, edge, site) of the cube and the plaquette; every column of every row of the strip pair laws\nper_mode: executed \u2014 the quotient transfer matrix's characteristic polynomial, its Perron root, eigenvector and second-eigenvalue bound, all exact (Sturm, resultant, Q(lam_1))\nper_block: executed \u2014 the row-to-row kernel block by block for widths 2, 3, 4; the finite-n center-row values for n = 3..13; the cube's three-neighbor witness\nlattice_wide: checked and not executed \u2014 strips of widths 2 and 3 only for the static law; the plane and the cubic lattice's infinite-volume law are named, not computed\nPASS: G1 the five N5 resolution lines are printed (each >= 40 characters)\nTOTAL: PASS=39 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165927Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

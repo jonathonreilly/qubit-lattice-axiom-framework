@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep1_jw_bridge_2026_05_17.py",
+ "seed": 50770,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165930Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "59f4c6de080750b1926445fec92e4178c2471d4c3991949f9e7454f859b177b2",
+ "stdout_tail": "aic level\n----------------------------------------------------------------------------------------\n  [PASS (A)] Ordering pi_0 satisfies (J1)-(J2) CAR exactly at N = 3  (pi = {0: 0, 1: 1, 2: 2})\n  [PASS (A)] Ordering pi_1 satisfies (J1)-(J2) CAR exactly at N = 3  (pi = {0: 2, 1: 0, 2: 1})\n\n----------------------------------------------------------------------------------------\nPart 10: Counter-example check (JW string is load-bearing)\n----------------------------------------------------------------------------------------\n  [PASS (A)] Counter-example: without JW string, {sigma_+^(0), sigma_+^(1)} != 0 at N = 2  (confirms JW string is load-bearing for cross-site anticommutation)\n  [PASS (A)] With JW string, {c_0, c_1} = 0 at N = 2 (confirms fix)\n\n----------------------------------------------------------------------------------------\nPart 11: (J3) CAR-algebra dimension count\n----------------------------------------------------------------------------------------\n  [PASS (A)] (J3) abstract CAR(2N) basis count = 4^N = 4 at N = 1  (matches dim_C End(H_Lambda) = 4)\n  [PASS (A)] (J3) abstract CAR(2N) basis count = 4^N = 16 at N = 2  (matches dim_C End(H_Lambda) = 16)\n  [PASS (A)] (J3) abstract CAR(2N) basis count = 4^N = 64 at N = 3  (matches dim_C End(H_Lambda) = 64)\n\n========================================================================================\nAudit-companion result: PASS=44 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165930Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_asymmetry_2over9_forced_weight_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_asymmetry_2over9_forced_weight_2026_05_31.py",
+ "seed": 50918,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170158Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4e7bc3aa4edcf4e4161ef475f2a1322decd2ce6e81f3ec4031250645b3062e81",
+ "stdout_tail": "[PASS] A2/A3 L_3(1,2)=2/9 (forced); (1,1)/(2,2)=1/9; (1,2) is the UNIQUE trace-free pair\n       (1,2) = regular-rep complement of the C3 singlet (trace-free 2-plane) -> weight FORCED\n[PASS] A4 four guises all=2/9 at d=3 but are DIFFERENT functions (triple-crossing, not one invariant)\n       2/d^2=(d^2-1)/12d real root: d=3 only -> corroboration at forced d=3, not a shared invariant\n[PASS] GAP 2/9 is the WEIGHT-density, NOT the eta integer (eta in Z[zeta_3]; 2/9 minpoly 9x-2)\n       operator-realization bridge (Dirac op -> fixed-point denominator) = open_gate; radian 2/9 = separate object\n\nSCORECARD PASS=3 FAIL=0\nVERDICT: 2/9 is a FORCED cohomological transverse-weight DENSITY at the forced d=3, with the (1,2)\nweight now ALSO forced (unique trace-free regular-rep complement) -- DERIVED-MODULO-OPERATOR-\nREALIZATION. It is the closest the campaign has to a topological prediction of a charged-lepton\ndatum. Remaining: ONE named bridge (framework Dirac op -> APS fixed-point denominator), same class\nas the chirality gate. NOT overclaimed: 2/9 is the weight not the eta-integer; guises corroborate\n(not one invariant); radian-2/9 (CP) is separate. A live route, not a closed no-go.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170158Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

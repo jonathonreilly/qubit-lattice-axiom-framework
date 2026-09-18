@@ -1,0 +1,35 @@
+{
+ "task": "R:DM_EFFECTIVE_PARENT_one_clock_transfer_boundary_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "DM",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/DM_EFFECTIVE_PARENT_one_clock_transfer_boundary_2026_04_18.py",
+ "seed": 50601,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165641Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 SUPPORT=2 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "TOTAL PASS=8 SUPPORT=2 FAIL=0 matches the pinned cache and stdout is identical, so not a HIT",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3f261e737927155b65174c62b4dd9fec0f48f2d69b27772e53015c3390b587bd",
+ "stdout_tail": " [PASS] [THEOREM] the same toy determinant has an exact one-clock transfer trace on a 4-state auxiliary space\n         max direct-vs-transfer error = 8.882e-16\n\n========================================================================================\nPART 3: POSITIVITY DOES NOT FORCE SCALAR EDGE FACTORIZATION\n========================================================================================\n  positive determinant cube min/max       = 4.614645000000, 4.833190000000\n  mixed third difference of log(det)      = 1.376697348365e-03\n  best additive fit residual              = 1.644492210552e-03\n  [PASS] [THEOREM] the toy determinant remains strictly positive on the audited edge cube\n         min determinant = 4.614645\n  [PASS] [THEOREM] a nonzero mixed third edge-difference of log(det) rules out exact edge-additive factorization on that cube\n         mixed third difference = 1.376697e-03\n  [PASS] [SUPPORT] the toy transfer witness is only an auxiliary-space transfer, not a scalar one-step edge product\n         exact one-clock transfer survives while log(det) is still not edge-additive\n  [PASS] [SUPPORT] least-squares fitting also fails to compress the toy log(det) to a constant plus one independent term per edge\n         max additive-fit residual = 1.644492e-03\n\n========================================================================================\nSUMMARY: THEOREM PASS=8 SUPPORT=2 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165701Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

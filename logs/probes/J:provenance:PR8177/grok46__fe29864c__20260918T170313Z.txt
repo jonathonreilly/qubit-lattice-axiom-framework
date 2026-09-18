@@ -1,0 +1,27 @@
+4165 | block 30 region restated | cache: PASS: D3 T3: with the full up-factor the same code is block 25/30's recursion and block 30's certificate at (4165,1,2) passes it; the same t | OK
+453 | unit-budget region restated | NOT IN CACHE | UNSOURCED
+140 | tiny realizations | cache: PASS: B1 T1 (extension lemma, instances): on 140 tiny realizations, v(z) <= 1 + v(u) for every 1-predecessor u of every non-seed site (357 p | OK
+357 | extension pairs | cache: B-diagnostics: ext_ok=True seed_ok=True ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0 | OK
+121 | amplified sites | cache: B-diagnostics: ext_ok=True seed_ok=True ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0 | OK
+15 | single-seed lemma cases | cache: B-diagnostics: ext_ok=True seed_ok=True ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0 | OK
+78 | double-seed lemma cases | cache: B-diagnostics: ext_ok=True seed_ok=True ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0 | OK
+788 | sites with (H) | cache: B-diagnostics: ext_ok=True seed_ok=True ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0 | OK
+2921 | restricted c=2 (p,1,2) | cache: PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) wi | OK
+1464 | restricted c=2 (p,1,1) | cache: PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) wi | OK
+5841 | restricted c=2 (p,2,4) | cache: PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) wi | OK
+4380 | restricted c=2 (p,1,3) | cache: PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) wi | OK
+405 | restricted c=1 (p,1,2) | cache: PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) wi | OK
+208 | restricted c=1 (p,1,1) | cache: PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) wi | OK
+810 | restricted c=1 (p,2,4) | cache: PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) wi | OK
+605 | restricted c=1 (p,1,3) | cache: PASS: D2 T3: the rational triples are exact super-solutions of the restricted recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) wi | OK
+60 | tiny restriction cases / 2 | cache: PASS: E1 T4 (executed): on 60 tiny realizations at c = 1 and 2, whenever a tree with the budget exists (120 cases) a tree with at most one p | OK
+120 | tiny restriction cases | cache: PASS: E1 T4 (executed): on 60 tiny realizations at c = 1 and 2, whenever a tree with the budget exists (120 cases) a tree with at most one p | OK
+125 | shape-survey realizations | NOT IN CACHE | UNSOURCED
+-61 | W3 restricted min c=2 | NOT IN CACHE | UNSOURCED
+-62 | W3 unrestricted min c=2 | NOT IN CACHE | UNSOURCED
+2887 | at-most-two-children count | NOT IN CACHE | UNSOURCED
+18 | checks | cache: TOTAL: PASS=18 FAIL=0 | OK
+7 | mutations | NOT IN CACHE | UNSOURCED
+10^4 | climb realizations | NOT IN CACHE | UNSOURCED
+SUMMARY: 25 numbers, 7 unsourced
+HIT: unsourced numbers

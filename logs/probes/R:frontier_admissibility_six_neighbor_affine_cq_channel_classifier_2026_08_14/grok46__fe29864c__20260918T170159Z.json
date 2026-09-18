@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_admissibility_six_neighbor_affine_cq_channel_classifier_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_admissibility_six_neighbor_affine_cq_channel_classifier_2026_08_14.py",
+ "seed": 50919,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170159Z",
+ "elapsed_s": 28.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a6cd9eb26608155e9e7d25b1f04bb6fa80b8ed8349880ea071a27a29d3cf7439",
+ "stdout_tail": "705a3a2b39a9ec5cf8fd1a4e5ebea7659452218b; historical Block85=5ba5aa1c65bef9142428653e3ccd8ad0186283fb\nper_element: checked 64 occupancy inputs, 26 nonzero differences, two affine CPTP response values, two exact ensembles, and two joint laws\nper_site: checked all six nearest-neighbour slots, actual M2 output channels, and the nondemolition Choi/CNOT boundary; no formation rule or physical site rate is adopted\nper_mode: checked diagonal-soldered, independent-internal, content-sensitive, spectral, axis-slot, product, and shared-latent conditional-copula modes\nper_block: checked exact intertwiner, positivity, covariance, barycenter, support, and correlation boundaries beyond Block85\nlattice_wide: checked and not executed \u2014 arbitrary finite-map iteration, scheduler genesis, physical time, source/gravity composition, adoption, and retention remain open\nRESULT: a supplied soldering plus affine covariance derives the d carrier but CP leaves alpha free; full-domain pointwise nondemolition access is constant unless a classical/commuting interface is supplied; conditional ensemble-lift and copula alternatives survive\nDECISION_CUT: conditional on formation, the one-step hierarchy is Q_R -> J -> alpha -> mu_d -> C_R plus eligibility and cadence; formation hazard, initial law, and physical rate remain external; Q_R placement remains an owner decision\nTOE: this source claims zero obligation retirement and no percentage movement; no current audit count or grade assigned\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170228Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

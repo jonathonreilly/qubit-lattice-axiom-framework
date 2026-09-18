@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_equal_channel_energy_equipartition_reduction_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_equal_channel_energy_equipartition_reduction_2026_07_02.py",
+ "seed": 51021,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170341Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4c5c8c7af4fca5089ed3b7fd4021932467d41bf70bfe1f807c7a75e0815a282c",
+ "stdout_tail": "CHECKS: PASS=16 FAIL=0\nVALUES: component r=1/2 Q=2/3; slot r=1 Q=1; S3 outside=True\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170341Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

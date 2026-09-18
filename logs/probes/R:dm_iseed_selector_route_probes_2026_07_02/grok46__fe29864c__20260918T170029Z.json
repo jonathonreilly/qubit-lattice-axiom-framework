@@ -1,0 +1,35 @@
+{
+ "task": "R:dm_iseed_selector_route_probes_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "dm",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/dm_iseed_selector_route_probes_2026_07_02.py",
+ "seed": 50829,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170029Z",
+ "elapsed_s": 10.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "26e56021fdb74ca85a0fa8cc0ffdef02a151cf08ddd68e9266796e3e4d4b0ed3",
+ "stdout_tail": "PROBE 2: weighting-principle dependence of the I_seed argmin\n========================================================================================\n[PASS] Uniform vs modality-weighted minimum-information argmins disagree\n       witness: |bank|=191 off-seed sources (seed excluded) | uniform-argmin idx=71 (x=[0.498593, 0.822041, 0.369367], y=[0.306667, 0.306667, 0.306667], delta=0, I_seed=0.055557445) | modality-weighted (wx,wy)=(2,0.5) argmin idx=8 (x=[0.563333, 0.563333, 0.563333], y=[0.271423, 0.447501, 0.201075], delta=0, I_seed^w=0.027778722) | (1,1) reproduces note info_cost=True | both minima strictly positive proper costs=True | argmins differ=True\n\n========================================================================================\nPROBE 3: constraint independence of eta_{i_*}/eta_obs = 1\n========================================================================================\n[PASS] A model meeting all other premises has eta_(i_*)/eta_obs != 1\n       witness: off-seed model (x=[0.940049, 0.283137, 0.466814], y=[0.166053, 0.451379, 0.302568], delta=0.4): on_surface=True, positive=True, off_seed=True, i_*=0, eta_(i_*)/eta_obs=0.908774422 (deviation from 1 = -0.091225578) | the other tested premises hold with ratio != 1 ==> equality is an independent imposed constraint\n\n========================================================================================\nTOTAL: PASS=3 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_eta_g1_bridge_proof_2026_05_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_dm_eta_g1_bridge_proof_2026_05_06.py",
+ "seed": 51018,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170338Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "08e657870422ec3b0d4cfc741e7f06eacb8a5e032216753a72a76d61d6b855cb",
+ "stdout_tail": "the 1D SU(3)_c-trivial subspace. By\n  CL3_COLOR_AUTOMORPHISM B + CL3_SU3_SYMMETRIC_BASE_COMMUTANT...,\n  SU(3)_c trivial = lepton-block carrier\n  (verified Test 11b: T^a annihilates lepton vecs).\n\n  Carrier orthogonality is preserved: the dark state has no lepton\n  block component. This does not imply that the scalar self-energy\n  projects through the adjoint Fierz channel.\n\n  The Fierz diagnostic is narrow (Test 11c): P_sing^F annihilates\n  traceless T^a, while identity matrices are singlet. Per-row scalar\n  trace density:\n      rho_{adj/c} = 2 * sum_a Tr[T^a T^a] / N_c = (N_c^2-1)/N_c = 8/3.\n\n  This is STRUCTURAL SUPPORT -- not a new dynamical mechanism.\n  It uses only cited primitives: (base x fiber) decomposition\n  (CL3_COLOR_AUTOMORPHISM B), Y eigenvalue spectrum\n  (CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM...), SU(3)_c on sym base\n  (CL3_COLOR_AUTOMORPHISM B + CL3_SU3_SYMMETRIC_BASE_COMMUTANT...), Fierz completeness\n  (CL3_COLOR_AUTOMORPHISM D), Cl(3) chiral cube (CL3_TASTE_GENERATION),\n  bare Wilson kinetic mass (DM_ETA_FREEZEOUT_BYPASS Origin B). NO new\n  axioms, NO new dynamical mechanisms, NO new combinatorial inputs.\n\n  Composition with bare Wilson 2 r * hw_dark = 6 v gives:\n      m_DM = (8/3) * 6 v = 16 v = N_sites * v exactly.\n\n  STATUS: BOUNDED SUPPORT. The DM-eta G1 dynamical step has\n  runner-backed carrier/scalar-trace support via cited primitives.\n  The parent DM-eta freezeout-bypass lane remains bounded by inherited inputs\n  (A0, x_F, Sommerfeld, alpha_X choice).\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170338Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

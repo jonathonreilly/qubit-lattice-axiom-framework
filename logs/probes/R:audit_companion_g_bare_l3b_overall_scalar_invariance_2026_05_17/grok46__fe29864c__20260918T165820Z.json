@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_g_bare_l3b_overall_scalar_invariance_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/audit_companion_g_bare_l3b_overall_scalar_invariance_2026_05_17.py",
+ "seed": 50700,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165820Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "17af52b817930c20431e26d5870105ae5acf8d8f6a345ad312ef30b40548515d",
+ "stdout_tail": "F = 1/2 recovers L3a V_3 canonical-matching beta = 6  (L3b(N_F=1/2) = 6, L3a V_3 = 6)\n  [PASS (A)] 2026-05-03 rescaling consistency: beta ratio = c^2 (canonical N_F=1/2 -> N_F=1)  (beta(1/2) / beta(1) = 2; (c^2)_rel = 2)\n  [PASS (A)] L3a binary {V_3, V} embeds as L3b N_F \u2208 {1/2, 1} (2-point subset)  (L3a binary is a structural-Cl(3)+Z^3-specialization of the L3b orbit)\n\n================================================================================\nSECTION H \u2014 Parent-row consistency checks\n================================================================================\n  [PASS (A)] Parent runner: beta = 2 N_c / g_bare^2 = 6 at canonical (N_F=1/2, g_bare=1)  (beta_canonical_parent = 6)\n  [PASS (A)] L3b at canonical (N_F=1/2, g_bare=1) matches parent: beta = 6  (beta_l3b(N_F=1/2, g_bare=1) = 6)\n  [PASS (A)] L3b at (N_F=1, g_bare=1): beta_canonical = N_c / N_F = 3  (beta(N_F=1) = 3)\n  [PASS (A)] L3b orbit invariant N_c = dim(V_3) = 3 (structural, NOT fitted)  (N_c = 3, dim(V_3) = 3)\n\n================================================================================\nSCORECARD\n================================================================================\nPASS = 65\nFAIL = 0\nTOTAL = 65\n\nVERDICT: all class (A) algebraic + numerical checks PASS.\n  The L3b continuous overall-scalar admission N_F in R_{>0} is\n  physically inert for g_bare: every N_F yields g_bare = 1 at the\n  canonical-matching surface, differing only in the conventional\n  beta value (beta_canonical(N_F) = N_c / N_F).\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

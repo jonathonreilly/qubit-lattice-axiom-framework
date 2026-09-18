@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_normalized_record_pair_source_gravity_pincer_gate_2026_08_31",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_d4_normalized_record_pair_source_gravity_pincer_gate_2026_08_31.py",
+ "seed": 50660,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165740Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f311dd1761cb17d20e697b8814fbbfd6c12f1853396185e5bd8c3167ab131d65",
+ "stdout_tail": "PASS current_source_and_note_inputs\nPASS actual_lateral_moments\nPASS homogeneous_ray\nPASS actual_debit_and_count_once\nPASS nonzero_Ward_and_changed_sign\nPASS reference_score_Fisher_orbits\nPASS conditional_absolute_target\nTERMINAL: BLOCK34-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

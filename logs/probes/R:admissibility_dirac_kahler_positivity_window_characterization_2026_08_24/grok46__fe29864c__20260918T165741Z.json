@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_positivity_window_characterization_2026_08_24",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.py",
+ "seed": 50661,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165741Z",
+ "elapsed_s": 38.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f396e07b4efcad9140af43db022870ba43c66b3d0c88cc7128ad06c9fe3f7644",
+ "stdout_tail": "8153604ce7c341496654fd709ed8873302a33', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/audit/data/axiom_premise_nodes.json': '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37'}\n[PASS] B-fixture-control: the parameter chart rebuilds the corrected Block 185 finite fixture\n[PASS] C-fresh-mass-samples: five primary-reproduced mass points retain their exact sign vectors; four other old checker-cited masses remain historical\n[PASS] D-delta8-bracket: exact bisection brackets a Delta_8 sign change; this is not asserted to be the full positive-definite boundary\n[PASS] E-jacobi-and-simple-root: the complementary 24x24 interpolation and seven direct Jacobi checks give the reduced Delta_8 factorization and one simple B_+ root in the stated bracket\n[PASS] F-shear-and-nonproduct-samples: sampled first-failing indices are 8, 7 and 6 at selected points; they are diagnostics, while the positive legs and failing crosspoint prove only non-product structure\n[PASS] G-nonsingular-chart-and-local-openness: 33 exact determinant samples establish the degree-32 identity; strict finite Gram inequalities therefore give local open neighborhoods at each positive sample\n[PASS] H-bounded-scope-and-volume-controls: two exact nonzero-volume controls are positive; they do not give a volume interval, lower-minor interval certificate, global boundary curve, connectivity, curvature, or monotone mass/shear theorem\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

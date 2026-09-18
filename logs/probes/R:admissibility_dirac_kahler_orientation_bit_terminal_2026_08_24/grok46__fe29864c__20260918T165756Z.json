@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_orientation_bit_terminal_2026_08_24",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_dirac_kahler_orientation_bit_terminal_2026_08_24.py",
+ "seed": 50676,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165756Z",
+ "elapsed_s": 22.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4c7c71d1722cfbdc72d03d4d9088be80024ff1530a7f4456e478fe701f2831e6",
+ "stdout_tail": "0a33b90efcd2f6e11b73d52cd2', 'scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py': '4299d645f687bec12d945598cca1df5c13a73c871a9e6ad1459e7e6b17c5bab5', 'scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py': '5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445'}\n[PASS] B-two-fixture-joint-flip: joint flip closes on both even fixtures; the two single flips and self-map have the displayed finite defects\n[PASS] C-specified-conjugate-channels: similarity, determinant, characteristic polynomial, inverse covariance, and trace-square controls only\n[PASS] D-complex-bilinear-witt-cells: four exact eigenlines; reflected anti-diagonal entry 875/1462, isotropic lines, and cell determinant -(875/1462)^2\n[PASS] E-six-antiunitary-candidates: six named placement defects=(360, 336, 336, 336, 360, 360); the displayed unitary class-swap control closes\n[PASS] F-determinant-and-conditional-slot-arithmetic: multiplicity-two determinant factor plus the separately supplied r=n/2, Q=(1+2r)/3 arithmetic; no slot or physical interpretation\n[PASS] G-sigma-fixed-slice-and-complex-gaussian: Fix(sigma) is real two-dimensional; Q restricts to 2(a+id)I, giving coordinate pi/[2(a+id)] and induced-area pi/(a+id), while the slice is not Q-invariant\n[PASS] H-exact-bounded-scope: supplied finite matrices and named controls only; no observable-algebra, corepresentation, physical-slot, or reality classification\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

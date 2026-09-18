@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_ba_ratio_bound_hs_equipartition_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/flavor_ba_ratio_bound_hs_equipartition_2026_05_30.py",
+ "seed": 50953,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170233Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "69b7b97619b7cfd48149f75884197934d854a92fe47faebf969968ae5be83519",
+ "stdout_tail": "[PASS] eigenvalues are a+2b and a-b doublet\n       eig=[1.4 1.4 2.3], expected=[1.4 1.4 2.3]\n[PASS] PSD with a>0 iff -1/2 <= b/a <= 1\n[PASS] HS equipartition gives b/a=1/sqrt(2)\n       Tr(I^2)=3.0, Tr((J-I)^2)=6.0, ratio=0.7071067811865476\n[PASS] symmetric-form spectral Koide readout derives Q=1/3+(2/3)(b/a)^2\n       Q_spectral=(a**2 + 2*b**2)/(3*a**2)\n[PASS] formal HS Gaussian variance ratio gives Q=2/3\n       <b^2>/<a^2>=0.5, Q=0.6666666666666667\nSCORECARD PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170234Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

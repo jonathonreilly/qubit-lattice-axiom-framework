@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_null_model_corner_theorem_2026_08_21",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_dirac_kahler_null_model_corner_theorem_2026_08_21.py",
+ "seed": 50662,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165742Z",
+ "elapsed_s": 7.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ff12f802dbf7a0e8ff00e920ce283235de7c4809729de9ee7ea508865fd9f09e",
+ "stdout_tail": "ned without a universal exclusion; {'8x4': ((1, 0, 0, True, 4, (4, 0, 4)), (1, 1/2, 0, True, 4, (4, 0, 4)), (1, 0, 3/5, True, 4, (4, 0, 4)), (1, 1/2, 3/5, True, 4, (4, 0, 4)), (1, -1/2, 3/5, True, 4, (4, 0, 4)), (1/3, 1/4, -2/5, True, 4, (4, 0, 4)), (3, 3/4, 1/5, True, 4, (4, 0, 4)), (0, 1/8, 3/5, True, 4, (4, 0, 4))), '12x4': ((1, 0, 0, True, 4, (4, 0, 4)), (1, 1/2, 0, True, 4, (4, 0, 4)), (1, 0, 3/5, True, 4, (4, 0, 4)), (1, 1/2, 3/5, True, 4, (4, 0, 4)), (1, -1/2, 3/5, True, 4, (4, 0, 4)), (1/3, 1/4, -2/5, True, 4, (4, 0, 4)), (3, 3/4, 1/5, True, 4, (4, 0, 4)), (0, 1/8, 3/5, True, 4, (4, 0, 4)))}\n[PASS] F-generator-scope: hop-free 2J3 has zero C1 rank and remains PSD; hop-carrying rows are only a finite table; {'8x4': (('E_t', True, 4, (5, 0, 3)), ('E_t+E_t^T', True, 4, (5, 0, 3)), ('E_t+2J3', True, 4, (5, 0, 3)), ('E_t+I', True, 4, (5, 0, 3)), ('E_tE_t^T+E_t', True, 4, (5, 0, 3)), ('i(E_t-E_t^T)', True, 4, (5, 0, 3)), ('2J3 (hop-free)', False, 0, (4, 4, 0))), '12x4': (('E_t', True, 4, (4, 0, 4)), ('E_t+E_t^T', True, 4, (4, 0, 4)), ('E_t+2J3', True, 4, (4, 0, 4)), ('E_t+I', True, 4, (4, 0, 4)), ('E_tE_t^T+E_t', True, 4, (4, 0, 4)), ('i(E_t-E_t^T)', True, 4, (4, 0, 4)), ('2J3 (hop-free)', False, 0, (4, 4, 0)))}\n[PASS] G-recomputed-action-control: control trace is recomputed from the outgoing action block; {'8x4': 153/2048, '12x4': 153/2048}\n[PASS] H-exact-bounded-scope: two finite extents; no framework adoption, all-carrier theorem, or physical closure\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165749Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

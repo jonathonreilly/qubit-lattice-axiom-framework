@@ -1,0 +1,14 @@
+[PASS] A2/A3 L_3(1,2)=2/9 (forced); (1,1)/(2,2)=1/9; (1,2) is the UNIQUE trace-free pair
+       (1,2) = regular-rep complement of the C3 singlet (trace-free 2-plane) -> weight FORCED
+[PASS] A4 four guises all=2/9 at d=3 but are DIFFERENT functions (triple-crossing, not one invariant)
+       2/d^2=(d^2-1)/12d real root: d=3 only -> corroboration at forced d=3, not a shared invariant
+[PASS] GAP 2/9 is the WEIGHT-density, NOT the eta integer (eta in Z[zeta_3]; 2/9 minpoly 9x-2)
+       operator-realization bridge (Dirac op -> fixed-point denominator) = open_gate; radian 2/9 = separate object
+
+SCORECARD PASS=3 FAIL=0
+VERDICT: 2/9 is a FORCED cohomological transverse-weight DENSITY at the forced d=3, with the (1,2)
+weight now ALSO forced (unique trace-free regular-rep complement) -- DERIVED-MODULO-OPERATOR-
+REALIZATION. It is the closest the campaign has to a topological prediction of a charged-lepton
+datum. Remaining: ONE named bridge (framework Dirac op -> APS fixed-point denominator), same class
+as the chirality gate. NOT overclaimed: 2/9 is the weight not the eta-integer; guises corroborate
+(not one invariant); radian-2/9 (CP) is separate. A live route, not a closed no-go.

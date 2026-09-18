@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_noether_abstract_bilinear_continuity_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/audit_companion_noether_abstract_bilinear_continuity_2026_06_06.py",
+ "seed": 50837,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170037Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1eeef1f0be081194bd76a3b5bb3b89cc58a63bdfd8d14a3c48e193d5b1d0e9c2",
+ "stdout_tail": "number charge Q commutes with arbitrary H\n  [PASS] i[H,rho_p] equals sum_q J_{p<-q} for every p\n  [PASS] d rho_p/dt + (div J)_p = 0 with outflow divergence\n  [PASS] sum_p d rho_p/dt vanishes exactly\n\n[Part 2] support envelope, orientation, and sign teeth\n  [PASS] J_{p<-q} = -J_{q<-p} orientation antisymmetry\n  [PASS] pair current depends only on c_pq and c_qp\n  [PASS] pair current vanishes when c_pq=c_qp=0\n  [PASS] finite graph coefficient support gives the same finite current support\n  [PASS] flipped continuity sign fails generically  (nonzero_terms=6)\n\n[Part 3] diagonal terms do not create oriented currents\n  [PASS] pure diagonal H gives d rho_p/dt = 0 for every p\n\n==============================================================================\nSUMMARY\n==============================================================================\n  PASS [E_ij,E_pq] structure constants hold in concrete Mat_4 (bad_cells=0)\n  PASS global number charge Q commutes with arbitrary H\n  PASS i[H,rho_p] equals sum_q J_{p<-q} for every p\n  PASS d rho_p/dt + (div J)_p = 0 with outflow divergence\n  PASS sum_p d rho_p/dt vanishes exactly\n  PASS J_{p<-q} = -J_{q<-p} orientation antisymmetry\n  PASS pair current depends only on c_pq and c_qp\n  PASS pair current vanishes when c_pq=c_qp=0\n  PASS finite graph coefficient support gives the same finite current support\n  PASS flipped continuity sign fails generically (nonzero_terms=6)\n  PASS pure diagonal H gives d rho_p/dt = 0 for every p\n\nTOTAL: 11 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170038Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

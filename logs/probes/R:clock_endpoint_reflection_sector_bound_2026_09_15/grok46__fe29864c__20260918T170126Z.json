@@ -1,0 +1,35 @@
+{
+ "task": "R:clock_endpoint_reflection_sector_bound_2026_09_15",
+ "type": "runner-reexecution",
+ "lane": "clock",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/clock_endpoint_reflection_sector_bound_2026_09_15.py",
+ "seed": 50886,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170126Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e1592e67278c4ca2b24ac1d8185f75e0e875de81a1f4e6ffd1798e54fd70550",
+ "stdout_tail": "12929640356\n      },\n      {\n        \"beta\": 0.7,\n        \"h\": 1,\n        \"minimum_sampled_reflection_form\": 9.73755635101722\n      },\n      {\n        \"beta\": 2,\n        \"h\": 0,\n        \"minimum_sampled_reflection_form\": 26.231648855958717\n      },\n      {\n        \"beta\": 2,\n        \"h\": 0.3,\n        \"minimum_sampled_reflection_form\": 28.291353519755194\n      },\n      {\n        \"beta\": 2,\n        \"h\": 1,\n        \"minimum_sampled_reflection_form\": 97.78362776231793\n      }\n    ],\n    \"wrong_hopping_sign_reflection_form\": -1.36829887200859,\n    \"scope\": \"nine-dimensional finite matrix probes of the reflection functional and Cauchy-Schwarz\"\n  }\n}\nper_element: executed original clock moves, independent curl/divergence identities, endpoint isometry and exact unit-shift transitions.\nper_site: executed local charge multiplicities and physical endpoint constraints; the variational local defect bound is checked and not executed, using the written operator proof.\nper_mode: executed the complete 81-dimensional single-plaquette spectrum at four harmonic weights; many-body photon spectra are not computed.\nper_block: executed projected reflection functionals, wrong-sign controls, winding constraints and dyadic dissemination geometry on the specified finite fixtures.\nlattice_wide: checked and not executed: the all-volume physical reflection cone, sector chessboard inequality and thermodynamic ground-energy limits are written analytic proofs awaiting independent review.\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170127Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

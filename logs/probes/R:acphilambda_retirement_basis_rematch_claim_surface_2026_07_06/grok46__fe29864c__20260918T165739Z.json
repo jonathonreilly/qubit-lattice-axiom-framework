@@ -1,0 +1,35 @@
+{
+ "task": "R:acphilambda_retirement_basis_rematch_claim_surface_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py",
+ "seed": 50659,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165739Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 3/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "90e82a1873d6d8f72b2b2117fa2c06db42fc5c5646c140cb60c0f4ba9330bd89",
+ "stdout_tail": "[PASS] exact two AC obligations\n[PASS] obligations are not supplied premises\n[PASS] historical live admissions remain empty\n[PASS] old governance registry absent\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

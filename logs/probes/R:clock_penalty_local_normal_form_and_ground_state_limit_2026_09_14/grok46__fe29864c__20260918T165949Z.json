@@ -1,0 +1,35 @@
+{
+ "task": "R:clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "clock",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.py",
+ "seed": 50789,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165949Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6506147e14b8a0f90529e445bb2d91360169d3bc55f139539ab89730b38fa95d",
+ "stdout_tail": "ound\": 0.24524660454612635, \"conditional_expectation_tail\": 6.666668983117315e-13, \"radius\": 3}], \"iteration_majorants\": [\"1/7\", \"3/7\"], \"lie_schwinger_integral\": [{\"integral_identity_error\": 3.2176154796243776e-15, \"penalty\": 8.0, \"remainder_norm\": 0.03315050177570044, \"unitary_commutator_bound\": 0.05934298125730842}, {\"integral_identity_error\": 1.41746903758966e-14, \"penalty\": 16.0, \"remainder_norm\": 0.01649924500901367, \"unitary_commutator_bound\": 0.02967149062865421}, {\"integral_identity_error\": 1.2493722451576658e-14, \"penalty\": 32.0, \"remainder_norm\": 0.008230123726132643, \"unitary_commutator_bound\": 0.014835745314327105}], \"local_change_bound\": 0.0059672987905650815, \"local_conjugation_change\": 0.0019999993333335003}\nper_element: checked original signed clock updates, integer charge grades and branch-mismatch weights; no native action is selected.\nper_site: checked all periodic link-star support counts and complete one-cube gauge fibers; individual-site bounds require the stated symmetry.\nper_mode: checked finite operator spectra, second-order signs and four finite normal-form iterations; no thermodynamic photon spectrum is inferred.\nper_block: checked two-cube charge migration, exact Ising-chain ground energies and independent Lie-Schwinger remainder identities.\nlattice_wide: checked and not executed \u2014 the uniform normal-form and simultaneous-limit statements rely on analytic proofs, while fixed-penalty phase and native-law selection remain open.\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/clock_penalty_local_normal_form_and_ground_state_limit_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

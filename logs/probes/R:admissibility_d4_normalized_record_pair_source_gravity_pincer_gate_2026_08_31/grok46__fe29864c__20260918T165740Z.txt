@@ -1,0 +1,9 @@
+PASS current_source_and_note_inputs
+PASS actual_lateral_moments
+PASS homogeneous_ray
+PASS actual_debit_and_count_once
+PASS nonzero_Ward_and_changed_sign
+PASS reference_score_Fisher_orbits
+PASS conditional_absolute_target
+TERMINAL: BLOCK34-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED
+TOTAL: PASS=7 FAIL=0

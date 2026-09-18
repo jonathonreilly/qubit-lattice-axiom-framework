@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8174",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block30-six-ax",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8174/provenance.py",
+ "seed": 50993,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170313Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "25 numbers, 5 unsourced"
+ },
+ "review": "HIT: 285718, 10.5, 4290, 69, 380 appear in Result up front / T4-T5 prose but not in this runner-cache (placement/narrative factors, not executed lines)",
+ "what": "PR #8174 ([physics-loop] admissibility-induced-law block30 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916; git show origin/physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916:<note>. Create probes/work/pr8174/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8174/<script>.py\"",
+ "stdout_sha256": "f64b867f1408149985e173d3c8e717358b12b9fa217e28a934254920839cd1ba",
+ "stdout_tail": "4165,1,2), (2085,1,1), (8330,2,4), (6247,1,3) with t = 99/1000, 49/500, 99/1000, 99/1000 the rational triples are super- | OK\n4290 | construction configs | NOT IN CACHE | UNSOURCED\n932 | depth-2 cones | cache: PASS: C2 T2: on all 1024 noise configurations of the depth-2 cone (932 explained, 438 with amplified nodes) the extended construction builds | OK\n2321 | depth-3 <=4 noise | cache: PASS: C3 T2: every depth-3 configuration with at most four noise sites (2321 explained) and 1200 random cones of depth 3-8 (843 explained, 6 | OK\n2/3 | max executed (E-3(|S|-1))/|A| | cache: PASS: C1 T2.2: an amplified site's excuse (its single predecessor v - e_j) raises the charges k != j by 1/3 and lowers the charge j by 2/3,  | OK\n20 | checks | cache: TOTAL: PASS=20 FAIL=0 | OK\n11 | mutations / located strength | cache: PASS: B2 T1(b): at the four thresholds and at (11, 1, 2): d_1 <= max(d_2, d_3); a site whose three predecessors equal a dissents with probab | OK\n69 | factor below block 25 | NOT IN CACHE | UNSOURCED\n380 | remaining factor to p\u224811 | NOT IN CACHE | UNSOURCED\n8311/17230811 | d3(4150,1,2) | cache: PASS: E2 T5: d_3(4150, 1, 2) = 8311/17230811 exceeds 256/531441 while d_3(4165, 1, 2) = 8341/17355566 is below it: the route's ceiling on (p | OK\n8341/17355566 | d3(4165,1,2) | cache: PASS: E2 T5: d_3(4150, 1, 2) = 8311/17230811 exceeds 256/531441 while d_3(4165, 1, 2) = 8341/17355566 is below it: the route's ceiling on (p | OK\nSUMMARY: 25 numbers, 5 unsourced\nHIT: unsourced numbers\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170354Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

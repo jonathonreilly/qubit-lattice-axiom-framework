@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py",
+ "seed": 50785,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165945Z",
+ "elapsed_s": 178.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=41 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 1/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "53b5601be9cbc6fb94b43ab4e664108fcb50bbdd780aa42e56fdf56278d41ef6",
+ "stdout_tail": "ed only\nPASS: E1 I: sum_y N_n(0,y) = 6^n on Z^3, n = 1..4, by walk enumeration\nPASS: E2 I: table alpha^L/(1-alpha), L = 1..12, exact at the four region triples\nPASS: E3 I: least L with alpha^L/(1-alpha) < 10^-3 (>= at L-1): L=119, L=39, L=8, L=4\nPASS: E4 region: 6c_1 < 1 at the region triples and the line points; >= 1 at (3,1,2), (5,2,4)\nPASS: F1 the note carries the four fence sentences verbatim\nPASS: F2 the note contains no forbidden phrase (hits: [])\nPASS: F3 the criterion's author is named only in the Prior art and Imports sections (violations: [])\nPASS: F4 runner source: no floating-point literal or conversion call (0 hits)\nper_element: executed \u2014 all 7776 x 15 pattern-and-pair choices at every triple, grid point, scan point and endpoint (252 multisets x 15 pairs in the certificates); every plaquette pair\nper_site: executed \u2014 the flipped neighbor in each of six directions; the plaquette inequality at each site; the 3x3 row sums and center marginals\nper_mode: executed \u2014 D = (I - C)^{-1} exactly with the damped iterates; Sturm isolation of each threshold as the unique positive root\nper_block: executed \u2014 the 3x3 window by integer row transfer under two exterior assignments; walk counts n <= 4; the table alpha^L/(1-alpha)\nlattice_wide: proved, not executed \u2014 uniqueness on Z^3 where 6c_1 < 1 is the corollary of the window and walk-count bounds; the silent triples are named, not decided\nPASS: G1 the five N5 resolution lines are printed (each >= 40 chars)\nTOTAL: PASS=41 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170244Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

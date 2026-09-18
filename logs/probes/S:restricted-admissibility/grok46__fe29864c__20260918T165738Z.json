@@ -1,0 +1,32 @@
+{
+ "task": "S:restricted-admissibility",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/restricted_admissibility.py 19 300 5 5 8",
+ "seed": 19,
+ "minutes": 10.0,
+ "box": "5x5x8",
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165738Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "realizations=300 hits=0 max_restricted_minus_unrestricted=0 elapsed=4"
+ },
+ "review": "300 realizations seed 19 box 5x5x8 in 4.6s: hits=0, restricted and unrestricted minima never split, so the c=2 one-processed-child restriction was admissible on this sample (not a HIT)",
+ "what": "random realizations: is there one where every tree with the budget c = 2 has a node with two processed children (restricted minimum > 0 while the unrestricted is <= 0)? A HIT kills block 33's p >= 2921 route. 300 realizations per run; vary seed and box.",
+ "stdout_sha256": "c36e1f04698e88181778d6bd3cc9ff3b2a95eda56995a974f3becd9759f3355f",
+ "stdout_tail": "SUMMARY: realizations=300 hits=0 max_restricted_minus_unrestricted=0 elapsed=4\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170210Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

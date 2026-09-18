@@ -1,0 +1,13 @@
+PASS current_source_and_note_inputs
+PASS reached_STATUS_sampling
+PASS 28_clean_76_borrowed
+PASS 56_macro_864_primitive_schedule
+PASS QND_and_symbolic_cleanup
+PASS complete256_truth
+PASS covariance
+PASS logical_side_exchange
+PASS abstract_totalization_only
+PASS token_route_correspondence
+PASS actual_Toffoli_CNOT_deletion
+TERMINAL: BLOCK31-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED
+TOTAL: PASS=11 FAIL=0

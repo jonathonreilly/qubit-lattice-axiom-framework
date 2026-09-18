@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_interleaved_mean_map_peripheral_count_collapse_relaxation_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_interleaved_mean_map_peripheral_count_collapse_relaxation_2026_06_10.py",
+ "seed": 51022,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170342Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "605fd2e7670bf635f36c0d8785665609a0cf98362d1623f8773cb0798c64b07f",
+ "stdout_tail": " step-measure delivery (no measure on SU(3); convergence to a\n  state-dependent limit is the OPPOSITE of the CLT spread).  The interleaved\n  mean map (named one-body flow + named record channel) has DERIVED structure: peripheral\n  space = EXACTLY the 3 conserved color counts (the 9->3 collapse = the new\n  content); per-step damping gap (instance-labeled); count-form relaxation\n  (sharp-count color-marginal form); the induced curvature/orientation CONVERGES\n  on deflated signal -- the record-free almost-periodicity sub-obstruction is\n  REMOVED at the mean level. The\n  convergent object = the orientation of the VANISHING transient; the fixed point\n  carries NO link; state-dependent limit, separate selector clause).  HONEST\n  LIMITS: the mean map is DISCRETE-time (no continuous generator claimed; the\n  boundaries record_classical_semigroup / record_markov_generator_embeddability\n  are untouched); mean relaxation is NOT the CLT step-measure (no measure on\n  SU(3) delivered; the i.i.d.-central-step premise remains open).  DOORS NAMED:\n  the stochastic unraveling (needs outcome-weight/Born structure), structured/\n  frame-naming instruments (= the {P_r} root), interactions (non-quadratic terms).  The\n  polar-invariance shortcut is exhibited FALSE (M2).  Conditional on the supplied\n  C^3 carrier + the named hopping + the named instrument classes (instrument\n  existence and lambda/tau are supplied parameters).  No new\n  axiom/primitive/measure/weight; r untouched.  Audit lane grades.\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170344Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_interleaved_mean_map_peripheral_count_collapse_relaxation_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

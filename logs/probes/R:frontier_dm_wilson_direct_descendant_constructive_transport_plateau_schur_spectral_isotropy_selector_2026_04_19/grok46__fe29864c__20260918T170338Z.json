@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_constructive_transport_plateau_schur_spectral_isotropy_selector_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_schur_spectral_isotropy_selector_2026_04_19.py",
+ "seed": 51018,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170338Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e24303275ac36df8695c462cb11c4576626a0ee571122aa95116bb864e8ddf8b",
+ "stdout_tail": "sitive-branch, and locally full-rank  (deriv=0.755728, pack=[1.       0.121678 0.113364 1.201336 0.020218], min singulars=(6.906412e-03,6.909143e-03))\n  [PASS] The isotropy-selected root is distinct from the earlier hand-chosen canonical-path root  (distance=0.584317157499)\n\n========================================================================================\nPART 5: BOTTOM LINE\n========================================================================================\n  [PASS] The first concrete science that closes the current certified plateau issue is a coefficient-free normalized Schur spectral-isotropy law  (it selects the endpoint W1 from source-side data alone)\n  [PASS] Combined with the unique seed -> W1 exact crossing, that law yields a fully specified constructive selector candidate  (endpoint law = spectral isotropy on H_e(L_e); closure law = unique eta_1 = 1 crossing on the aligned-seed -> W1 segment)\n\n  normalized Schur spectra (descending):\n    W0: [0.928978 0.069853 0.001169]\n    W1: [0.84665  0.118979 0.034371]\n    W2: [0.935587 0.052597 0.011816]\n    W3: [0.854455 0.145497 0.000048]\n\n  isotropy-selected endpoint witness = W1\n  aligned-seed -> W1 root lambda = 0.904931446681\n  selected root observable pack       = [1.       0.121678 0.113364 1.201336 0.020218]\n\n========================================================================================\nSUMMARY: PASS=11 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170341Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_schur_spectral_isotropy_selector_2026_04_19.txt against the .txt beside this log"
+  ]
+ }
+}

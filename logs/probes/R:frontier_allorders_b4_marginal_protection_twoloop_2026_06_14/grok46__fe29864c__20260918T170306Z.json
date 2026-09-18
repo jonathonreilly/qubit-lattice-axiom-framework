@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_allorders_b4_marginal_protection_twoloop_2026_06_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/frontier_allorders_b4_marginal_protection_twoloop_2026_06_14.py",
+ "seed": 50986,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T170306Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 4/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7bc61fda20dc1bbcc6f486f2bf87e2f90fb7c4537127d5fac0403937ea61b7b1",
+ "stdout_tail": "zero) at xi=1 and breaks at xi!=1 (not a numerical artifact)  --  xi=1 -> 3.9e-16 (machine zero), xi=2 -> 7.1e-05 (nonzero): the zero tracks B4, not the grid\n  [PASS] the first surviving (B4-invariant) lattice anisotropy is the dimension-6 hypercubic term, not the marginal dim-4  --  k^4 dispersion coefficient = -a**2/3 (dimension-6, Planck-suppressed)\n\n  ALL-ORDERS EFFECTIVE-ACTION ARGUMENT (Ward-style, made explicit):\n    (i)   Part A: the regulated action S and the hypercubic measure are EXACTLY B4-invariant.\n    (ii)  Hence Z[J] with B4-covariant sources is B4-invariant, so the effective action\n          Gamma[phi] inherits B4-invariance ORDER BY ORDER in the loop expansion (a symmetry\n          of the regulator is a symmetry of every Gamma^(L)).\n    (iii) Part B: the only B4-invariant diagonal marginal kinetic form has c_t = c_s.\n          Therefore the coefficient of the B4-NON-invariant marginal operator\n          (c_t p_t^2 + c_s p_s^2, c_t != c_s) is forced to ZERO in Gamma to ALL orders.\n    (iv)  Parts C (1-loop, 2 channels) and D (2-loop, genuine 8D) confirm the prediction;\n          Part E falsifies it under a deliberate B4 break -> the zero IS the symmetry.\n    This is NOT order-by-order cancellation; it is one symmetry constraint holding at every order.\n\n============================================================================================\nSUMMARY: PASS=21 FAIL=0\n============================================================================================\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T170312Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

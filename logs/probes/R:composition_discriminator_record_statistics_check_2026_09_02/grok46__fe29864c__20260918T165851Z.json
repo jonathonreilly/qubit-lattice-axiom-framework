@@ -1,0 +1,35 @@
+{
+ "task": "R:composition_discriminator_record_statistics_check_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "composition",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/composition_discriminator_record_statistics_check_2026_09_02.py",
+ "seed": 50731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe29864c",
+ "started_utc": "20260918T165851Z",
+ "elapsed_s": 4.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon, Python 3.13.5 numpy 2.4.4, re-exec vs logs/runner-cache on ai/probes@fe29864c [batch 2/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1cc1c619ce48f7a93f136b6791c4f10804f55179c7678e1c34d9c6846c29181b",
+ "stdout_tail": "bond-preserving site permutations of grid2x3 N=2, cube N=4, grid3x3 N=3 act by U_sigma|S> = sgn_S(sigma)|sigma S>, a signed permutation commuting with H(1,V) for symbolic V in both compositions; sigma -> U_sigma a homomorphism of image order 4, 48, 8\nPASS free-point-symmetry-zeros [exact]: each U_sigma acts on the exact graded ground vector as a scalar chi in {+1,-1}, verified on every pattern; the predicted set {S : sigma S = S, chi sgn_S = -1} lies inside the exact zero set, 3 of 3 (vertical pairs), 12 of 12 (faces, disjoint adjacent pairs), 4 of 8 (lines through the centre)\nPASS ungraded-symmetry-contrast [exact/numerical]: U_sigma is unsigned; the computed strictly positive ground vector (smallest entry 4.50e-02, float) is invariant under all 4,48,8 automorphisms, giving chi=+1 and an empty forced-zero set\nPASS sampled-symmetry-persistence [numerical]: at g in {0,+-0.25,+-0.4,0.5,0.75,1,2} the graded ground state stays simple (smallest gap 0.534) and its zero set below 1e-12 contains the predicted set, whose intersection over the nine couplings it equals: 3, 12, 4 (float)\nSUMMARY: the declared nonzero-hopping subfamily has identical chain matrices; on the named two- and three-dimensional cases its ungraded ground vectors are strictly positive, while exact graded g=0 distributions contain 3, 12, and 8 zeros, of which 3, 12, and 4 are symmetry-forced at g=0; nine-coupling persistence and finite-window L1 separation >= 0.258 are numerical observations.\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T165855Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

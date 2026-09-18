@@ -1,0 +1,23 @@
+1/(2 sqrt3) = 0.2886751346 (stated 0.2887)
+control max 0.2499 bound 0.2887
+quadrature small-|V| TV/|V| = 0.250062 (stated 1/4)
+refuter max 0.2509 bound 0.2887
+beta=0.3: A(3beta) printed 0.2850 recomputed 0.284956
+  t=1 m=0.2852 (sqrt3 beta)^t=0.5196
+  t=2 m=0.0802 (sqrt3 beta)^t=0.2700
+  t=3 m=0.0252 (sqrt3 beta)^t=0.1403
+  t=4 m=0.0078 (sqrt3 beta)^t=0.0729
+  t=5 m=-0.0026 (sqrt3 beta)^t=0.0379
+  t=6 m=0.0022 (sqrt3 beta)^t=0.0197
+  t=7 m=0.0012 (sqrt3 beta)^t=0.0102
+  t=8 m=0.0019 (sqrt3 beta)^t=0.0053
+beta=0.5: A(3beta) printed 0.4381 recomputed 0.438125
+  t=1 m=0.4382 (sqrt3 beta)^t=0.8660
+  t=2 m=0.1995 (sqrt3 beta)^t=0.7500
+  t=3 m=0.0953 (sqrt3 beta)^t=0.6495
+  t=4 m=0.0443 (sqrt3 beta)^t=0.5625
+  t=5 m=0.0179 (sqrt3 beta)^t=0.4871
+  t=6 m=0.0105 (sqrt3 beta)^t=0.4219
+  t=7 m=0.0022 (sqrt3 beta)^t=0.3654
+  t=8 m=-0.0003 (sqrt3 beta)^t=0.3164
+SUMMARY: pattern (c) EXECUTED NUMBERS; control max 0.2499, bound 0.2887, small-|V| 1/4, A(3beta) and m_t <= (sqrt3 beta)^t all match the controls and exact recomputation

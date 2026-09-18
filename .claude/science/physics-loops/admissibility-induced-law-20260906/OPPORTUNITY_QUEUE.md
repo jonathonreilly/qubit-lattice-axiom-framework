@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 35 opening (2026-09-18)
+
+Block 35 opened for review (independent PR against main): the gravity node's kernel under the axiom's reading given exactly for the linearized field and shown not to be the comparator's. The queue now runs through the probe tasking on `ai/probes` (the owner assigns workers; hits become blocks). Ranked next for a supervisor block:
+
+1. **The gravity lane's construction with the level-time kernel** — what the gravity node gives when its input is `σ²φ(k)^s/(1 − |φ|²)` instead of `1/(βE(k))` (a gravity-lane obligation; the campaign supplies the kernel).
+2. **Spin-wave theory as a theorem** — the normalization `c(β)` (0.83–0.97) and the `1/|m|²` law as second-order targets.
+3. **The tight-sibling lemma; the restricted-tree existence** — unchanged; the searches run on `ai/probes`.
+4. **The infinite-plane loss of memory; a count that is not a union bound** — hard; unchanged.

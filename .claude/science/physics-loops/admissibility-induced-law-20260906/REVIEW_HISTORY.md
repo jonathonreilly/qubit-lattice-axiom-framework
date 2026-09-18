@@ -199,3 +199,9 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 35 — supervisor control, primary, refuting pass and fold (2026-09-18)
+Lens: block 19's kernel is a comparator object; the axiom's kernel for the linear part follows from block 34's modes as the full space-time covariance. Control: block 26's sampler with FFT accumulation of the structure factor and cross-level products on a `256 × 256` plane at `β = 6, 12, 24` (`supervisor_control_block35_kernel_sim.py`); a factor-`L` slip in the real-space structure function caught by its ratio to the linear value being `≈ 256c(β)`, corrected. Lens pass on the contract: exact sentences confined to the linearized field; no gravity kernel derived or claimed; the comparator described through `E(k)` only. Primary: T1 (space-time covariance; exact cross-level recursions on tiny tori), T2 (small-k forms and symmetry groups), T3 (diffusive bound, drift, the comparator's non-product form); runner 15 checks, 7 mutations. Refuting pass (`CHECKER_block35_findings.md`): nothing refuted on four items. Fold: the terms of art "Green function" and "Newtonian" removed from the runner's name scan. Census 7/7 in-family.
+
+## block 35 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-18)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `9a3ffc8d91`; blocks 19/26/34 restated. 2 cache/execution: PASS. 3 claim-scope honesty: PASS — exact for the linearized field; the nonlinear comparison executed and unclaimed; no gravity kernel derived. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

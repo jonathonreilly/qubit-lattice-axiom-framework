@@ -1,0 +1,16 @@
+== (1): cross-level covariances on L = 8 (floating point) vs phi(k)^s
+largest |cross/var - phi^s| over all nonzero modes and s <= 16: 2.19e-15
+== (2): small-k forms
+  eps=0.3: (1-u)/(k^T M k) = 0.99052; arg phi / ((k1+k2)/3) = 1.00032
+  eps=0.1: (1-u)/(k^T M k) = 0.99894; arg phi / ((k1+k2)/3) = 1.00004
+  eps=0.03: (1-u)/(k^T M k) = 0.99990; arg phi / ((k1+k2)/3) = 1.00000
+  eps=0.01: (1-u)/(k^T M k) = 0.99999; arg phi / ((k1+k2)/3) = 1.00000
+== (3): rotating-frame measurement at beta = 12, L = 128
+  |k| in [0,0.3): rotating-frame ratio 0.8394 (control, fixed frame at L=256: 0.898 / 0.934 / 0.936 / 0.938)
+  |k| in [0.6,1.0): rotating-frame ratio 0.9417 (control, fixed frame at L=256: 0.898 / 0.934 / 0.936 / 0.938)
+  |k| in [1.5,2.2): rotating-frame ratio 0.9476 (control, fixed frame at L=256: 0.898 / 0.934 / 0.936 / 0.938)
+  |k| in [3.2,5.0): rotating-frame ratio 0.9490 (control, fixed frame at L=256: 0.898 / 0.934 / 0.936 / 0.938)
+  (5s)
+== (4): the comparator's mixed derivative of log E at random points
+  d^2 log E / dk1 dk3 at five random points: -0.0734, -0.2407, -0.1287, -0.1558, -0.0704
+== verdict: consistent

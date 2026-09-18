@@ -108,7 +108,7 @@ source_review_correction:
 # ---------------------------------------------------------------- block 35 close (2026-09-18)
 # block: 35
 # branch: physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918 (independent; base origin/main 9a3ffc8d91)
-# pr_status: opened for review — PR pending at this commit (recorded in the close-out commit); hand-off; never merged by the campaign; not a main landing
+# pr_status: opened for review — PR #8180 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8180); hand-off; never merged by the campaign; not a main landing
 # final_certificate: "TOTAL: PASS=15 FAIL=0; 7 mutations, census 7/7 in-family; refuting pass consistent on four items; gates: see HANDOFF.md"
 # seats: "supervisor-run: lens (the comparator's kernel located; the axiom's kernel from block 34's modes) -> control (sampler with FFT accumulation; a factor-L scaling slip caught and corrected) -> contract -> primary (T1-T3) -> refuting pass (floating cross-level recursion; small-k forms; rotating frame; mixed derivative) -> fold (name scan) -> census"
 # review_findings: "under the formation reading the linearized kernel is sigma^2 phi(k)^s/(1 - |phi|^2): plane Green function x level-time heat kernel, diffusive, drifting, three-fold symmetric; the comparator's 1/E(k) has no product structure; nonlinear normalization c(beta) = 0.83-0.97 at beta 6-24; cross-level ratios follow phi^s"

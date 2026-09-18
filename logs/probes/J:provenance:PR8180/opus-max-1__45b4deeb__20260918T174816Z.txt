@@ -1,0 +1,48 @@
+PR #8180 head 7c844adf75; note docs/ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMAT...; cache 25 stdout lines
+[EXCLUDED] ref-block26 | claim_scope | reference (block 26 = PR #8170)
+[EXCLUDED] ref-block19 | claim_scope | reference (block 19)
+[DEFINITION] sigma2-def | claim_scope | noise variance of the linearized law (block 26) | declared under 'Premises and declared objects'
+[CACHE] T1-cov | claim_scope | T1 mode covariance | cache stdout line 9: PASS: B1 T1: for a mode with multiplier phi driven by white noise, Cov(theta^_k(t), theta^_k(t+s)) = phi^s Var(theta^_k(t)) = sigma^2 phi^s (1 - u^t)/
+[DEFINITION] phi-def | claim_scope | multiplier of a mode | declared under 'Premises and declared objects'
+[EXCLUDED] u-lt-1 | claim_scope | structural: the condition u < 1 off the zero mode
+[CACHE] T1-kernel-op | claim_scope,Theorem T1 | T1 stationary kernel as an operator | cache stdout line 9: PASS: B1 T1: for a mode with multiplier phi driven by white noise, Cov(theta^_k(t), theta^_k(t+s)) = phi^s Var(theta^_k(t)) = sigma^2 phi^s (1 - u^t)/
+[CACHE] T1-tori | claim_scope | T1 exact recursions: torus sides | cache stdout line 10: PASS: B2 T1: on the tori L = 3, 4 the exact rational cross-level covariance Sigma_{t,t+s} = Sigma_t (P^s)^T gives, for every cosine character of a non
+[CACHE] T2-form | claim_scope,Theorem T2 | T2 small-k form and M | cache stdout line 11: PASS: C1 T2: 1 - u(k) = k^T M k + O(k^4) with M = (1/9)[[2,-1],[-1,2]], eigenvalues 1/9 (along (1,1)) and 1/3 (along (1,-1)): an anisotropic two-dimen
+[CACHE] T2-eig | claim_scope,Theorem T2 | T2 eigenvalues and eigenvectors | cache stdout line 11: PASS: C1 T2: 1 - u(k) = k^T M k + O(k^4) with M = (1/9)[[2,-1],[-1,2]], eigenvalues 1/9 (along (1,1)) and 1/3 (along (1,-1)): an anisotropic two-dimen
+[CACHE] T2-order6 | claim_scope,Theorem T2 | T2 symmetry group order | cache stdout line 12: PASS: C2 T2: u(k) is invariant under k1 <-> k2 and (k1, k2) -> (k1 - k2, -k2), which generate a group of order 6 permuting {k1, k2, k1 - k2} (the thre
+[CACHE] T2-three-dirs | claim_scope,Theorem T2 | T2 the permuted set | cache stdout line 12: PASS: C2 T2: u(k) is invariant under k1 <-> k2 and (k1, k2) -> (k1 - k2, -k2), which generate a group of order 6 permuting {k1, k2, k1 - k2} (the thre
+[CACHE] T2-E | claim_scope,Theorem T2 | T2 comparator's small-k form | cache stdout line 11: PASS: C1 T2: 1 - u(k) = k^T M k + O(k^4) with M = (1/9)[[2,-1],[-1,2]], eigenvalues 1/9 (along (1,1)) and 1/3 (along (1,-1)): an anisotropic two-dimen
+[CACHE] T2-48 | claim_scope,Theorem T2 | T2 comparator's symmetry group order | cache stdout line 12: PASS: C2 T2: u(k) is invariant under k1 <-> k2 and (k1, k2) -> (k1 - k2, -k2), which generate a group of order 6 permuting {k1, k2, k1 - k2} (the thre
+[CACHE] T3-bound | claim_scope,Theorem T3 | T3 diffusive decay bound, rate 2/(9 pi^2) | cache stdout line 13: PASS: D1 T3: for every nonzero mode |C_s(k)|/C_0(k) = |phi(k)|^s <= exp(-(1 - u) s/2) <= exp(-2|k|^2 s/(9 pi^2)) on the square (log(1 - y) <= -y): the
+[CACHE] T3-phis | Theorem T3 | T3 |phi|^s = u^{s/2} | cache stdout line 13: PASS: D1 T3: for every nonzero mode |C_s(k)|/C_0(k) = |phi(k)|^s <= exp(-(1 - u) s/2) <= exp(-2|k|^2 s/(9 pi^2)) on the square (log(1 - y) <= -y): the
+[CACHE] T3-scale | claim_scope,Theorem T3 | T3 diffusive in-plane scale | cache stdout line 13: PASS: D1 T3: for every nonzero mode |C_s(k)|/C_0(k) = |phi(k)|^s <= exp(-(1 - u) s/2) <= exp(-2|k|^2 s/(9 pi^2)) on the square (log(1 - y) <= -y): the
+[CACHE] T3-drift | claim_scope,Theorem T3 | T3 drift | cache stdout line 13: PASS: D1 T3: for every nonzero mode |C_s(k)|/C_0(k) = |phi(k)|^s <= exp(-(1 - u) s/2) <= exp(-2|k|^2 s/(9 pi^2)) on the square (log(1 - y) <= -y): the
+[EXCLUDED] inv-E | claim_scope,Theorem T3 | structural: the comparator's kernel 1/E(k) (block 19's object, declared)
+[EXCLUDED] T1-cond | Theorem T1 | structural: initial condition and index ranges
+[CACHE] T1-var | Theorem T1 | T1 variance (s = 0 of B1's formula) | cache stdout line 9: PASS: B1 T1: for a mode with multiplier phi driven by white noise, Cov(theta^_k(t), theta^_k(t+s)) = phi^s Var(theta^_k(t)) = sigma^2 phi^s (1 - u^t)/
+[DERIVED] T1-stationary | Theorem T1 | T1 stationary mode kernel | note: 'sums geometrically' | t -> oo of the cache's B1 formula sigma^2 phi^s (1 - u^t)/(1 - u) gives sigma^2 phi^s/(1 - u) (sympy limit at u = 1/3: 3/2 = 1/(1 - u))
+[EXCLUDED] T3-square | Theorem T3 | structural: the domain of k
+[CACHE] T3-log | Theorem T3 | T3 elementary inequality | cache stdout line 13: PASS: D1 T3: for every nonzero mode |C_s(k)|/C_0(k) = |phi(k)|^s <= exp(-(1 - u) s/2) <= exp(-2|k|^2 s/(9 pi^2)) on the square (log(1 - y) <= -y): the
+[DERIVED] T3-onethird | Theorem T3 | T3 drift per level | note: 'drifts by one third of a step' | phi = 1 + i(k1 + k2)/3 + O(k^2) (cache D1) puts 1/3 of a step on each predecessor direction; sympy series re-derived
+[CACHE] T3-mixed | Theorem T3 | T3/D2 non-product criterion | cache stdout line 14: PASS: D2 T3: the comparator's 1/E(k) is not of the product form (plane factor) x (cross-plane factor) — its logarithm has a non-vanishing mixed deriva
+[EXCLUDED] dims | claim_scope | structural: dimension of the named objects
+[DEFINITION] gain-one | claim_scope | gain one: P is an average (weights sum to one), block 26/34's linearization | declared under 'Premises and declared objects'
+[EXCLUDED] zero-mode | claim_scope,Theorem T1,Theorem T3 | structural: the name of the k = 0 mode
+[CONTROL] beta=6: control shell ratios 0.8304..0.8873 over 7 shells (rounded 0.83-0.89; stated 0.83-0.89: agrees); increasing in |k| across shells: True
+[CONTROL] beta=6: s=64 modulus of C_s/C_0 vs |phi|^s at the printed modes: max relative difference 0.050
+[CONTROL] beta=12: control shell ratios 0.8975..0.9477 over 7 shells (rounded 0.90-0.95; stated 0.90-0.94: MISMATCH); increasing in |k| across shells: False
+[CONTROL] beta=12: s=64 modulus of C_s/C_0 vs |phi|^s at the printed modes: max relative difference 0.077
+[CONTROL] beta=24: control shell ratios 0.9397..0.9714 over 7 shells (rounded 0.94-0.97; stated 0.94-0.97: agrees); increasing in |k| across shells: False
+[CONTROL] beta=24: s=64 modulus of C_s/C_0 vs |phi|^s at the printed modes: max relative difference 0.042
+[INFO] T3-import checked here (not a source): min over a 2001^2 grid of the square of (1 - u)/|k|^2 = 0.045031637174 at k = (-3.1416, -3.1416); 4/(9 pi^2) = 0.045031637174; exact value at k = (pi, pi): (1 - 1/9)/(2 pi^2) = 4/(9*pi**2) (equality: True)
+HIT: exec-plane | claim_scope | executed-not-claimed: plane size | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 1,25,49, supervisor_control_block35_refuter.out.txt lines 9,10,11,12
+HIT: exec-betas | claim_scope | executed-not-claimed: couplings | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 1,25,49
+HIT: exec-lin | claim_scope | executed-not-claimed: the linear kernel | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 2,26,50
+HIT: exec-norm6 | claim_scope | executed-not-claimed: normalization range at beta = 6 | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 3,4,5,6,7,8...; control: 0.8304..0.8873 (max in shell [3.2,5.0)), stated 0.83-0.89 agrees; increasing in |k| (claim_scope 'rising with |k|'): True
+HIT: exec-norm12 | claim_scope | executed-not-claimed: normalization range at beta = 12 | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 27,28,29,30,31,32...; control: 0.8975..0.9477 (max in shell [0.3,0.6)), stated 0.90-0.94 MISMATCH; increasing in |k| (claim_scope 'rising with |k|'): False
+HIT: exec-norm24 | claim_scope | executed-not-claimed: normalization range at beta = 24 | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 51,52,53,54,55,56...; control: 0.9397..0.9714 (max in shell [0.3,0.6)), stated 0.94-0.97 agrees; increasing in |k| (claim_scope 'rising with |k|'): False
+HIT: exec-s64 | claim_scope | executed-not-claimed: cross-level depth | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 11,12,13,14,35,36...
+HIT: exec-few | claim_scope | executed-not-claimed: agreement of C_s/C_0 with phi^s | not printed by the runner (cache), no derivation in this note; appears in supervisor_control_block35_kernel_sim.out.txt lines 11,12,13,14,35,36...; control s=64 modulus vs |phi|^s, max relative difference: 0.050 (beta=6) 0.077 (beta=12) 0.042 (beta=24)
+HIT: T3-import | Theorem T3 | T3 input: 1 - u >= 4|k|^2/(9 pi^2) | not printed by the runner (cache), no derivation in this note; present in the runner source only (not printed); appears in no other file of the PR
+[COVERAGE] 93 numeric tokens in the statement text; uncovered 0
+SUMMARY: 38 items over claim_scope + 3 theorem sections (93 numeric tokens, 0 uncovered): cache-sourced 16, derived in the note 2, definitions 3, excluded 8; unsourced 9 = 1 in the proved statements (T3-import) + 8 executed-not-claimed numbers printed only by the control (beta=12 range MISMATCH)

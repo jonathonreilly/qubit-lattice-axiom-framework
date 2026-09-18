@@ -1,0 +1,31 @@
+{
+ "task": "R:bare_metal_record_final_probes_2026_07_13",
+ "type": "runner-reexecution",
+ "lane": "bare",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/bare_metal_record_final_probes_2026_07_13.py",
+ "seed": 68028,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "045328d4",
+ "started_utc": "20260918T214708Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e2015503a43ab1a5880fe0b1c8ec29d6ab797cc86d0727f54ad8976d62c62f58",
+ "stdout_tail": "n append-only archive grows source strength unless separately charged\nPASS archive sourcing leaves a distinct field at an abandoned position :: contrast=1.645161\nPASS multiple normalized monotone throughput laws survive the same resource story\nPASS the source field does not select a unique potential-to-clock map\nPASS universal redshift requires the same response law for distinct clock species\nPASS a conserved storage ledger makes each permanent append consume finite free capacity\n\n==============================================================================\nF8 - Coherent propagation and thermalization survive only with separate laws\n==============================================================================\nPASS every-step position commits change coherent matter propagation :: variances=117.595,20.000\nPASS a final sparse read preserves the pre-read position statistics\nPASS the uncommitted coherent walk reverses exactly\nPASS local detailed balance produces the supplied-beta Gibbs state\nPASS relative entropy to Gibbs decreases under the detailed-balance kernel\nPASS the same record-transition grammar admits a different temperature\nPASS equal record counts can carry unequal ensemble entropy\n\n==============================================================================\nSCORECARD\n==============================================================================\nTOTAL: PASS=64 FAIL=0\nINTERPRETATION: passing a toy check narrows language; it does not derive a physical formation law.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T214709Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

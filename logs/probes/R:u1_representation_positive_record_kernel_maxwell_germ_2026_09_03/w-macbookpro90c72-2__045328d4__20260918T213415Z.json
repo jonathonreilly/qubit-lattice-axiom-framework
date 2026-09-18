@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_representation_positive_record_kernel_maxwell_germ_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/u1_representation_positive_record_kernel_maxwell_germ_2026_09_03.py",
+ "seed": 67255,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "045328d4",
+ "started_utc": "20260918T213415Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8b13f5cab6552dd6ded88479bf76778c980a63ba33a07b1c1f935ac1f68c7f3d",
+ "stdout_tail": " probability gives an additive negative-log action\n[PASS] 21 Record-induced potentials converge at second order to their Maxwell actions\n[PASS] 22 Record-induced exact equations converge at second order to the Maxwell operator\n[PASS] 23 curvature normalization converges independently of the microscopic Record-kernel choice\n[PASS] 24 Record-induced smooth branch inherits the exact zero-monopole Bianchi identity\n[PASS] 25 orientation-completed Record germ has the isotropic Maxwell Hessian spectrum\n[PASS] 26 orientation-completed Record germ preserves the exact gauge-null direction\n[PASS] 27 orientation completion leaves exactly two transverse local modes\n[PASS] 28 temporal Record kernel alone lacks the two magnetic restoring directions\n[PASS] 29 unequal spatial completion changes the infrared cone\n[PASS] 30 binary partition choice changes normalization but not sourceless Maxwell equations\nper_element: each U1 character coefficient and each three-mode Lueders Kraus weight is checked in the induced kernel\nper_site: shifted neighbor-conditioned densities and additive negative-log transition factors are checked explicitly\nper_mode: every nonzero Fourier momentum on L=3,4,5 is checked after the orientation-completed quadratic germ\nper_block: temporal-only, isotropic-completed, anisotropic, constant, and negative-character blocks are contrasted\nlattice_wide: fixed-volume action/operator refinements and zero-monopole cube identities run on periodic four-lattices\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213416Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

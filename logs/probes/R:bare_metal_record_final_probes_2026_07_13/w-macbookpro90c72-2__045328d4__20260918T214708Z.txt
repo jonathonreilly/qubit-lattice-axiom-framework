@@ -1,0 +1,104 @@
+BARE-METAL RECORD FORMATION - FINAL MINIMUM VIABLE PROBES
+Finite discriminators only; no axiom, primitive, registry, or audit status is changed.
+
+==============================================================================
+F1 - Permanence depends on the allowed-operation scope
+==============================================================================
+PASS the untouched witness carries a nontrivial outcome register
+PASS the local repacking map is unitary
+PASS source coherence can be restored locally by moving branch information
+PASS that local restoration does not revoke the untouched witness
+PASS no unitary disjoint from witness 2 can restore the complete initial state :: the untouched reduced state is invariant under operations on the other tensor factor
+PASS coherent access to the complete write support reverses it
+PASS tracing an exported ledger produces a mixed visible state
+PASS including that ledger restores global reversibility
+PASS a record flip is excluded only after a record-charge algebra is imposed
+PASS an operation in that restricted algebra preserves record sectors
+
+==============================================================================
+F2 - Selective commit laws: ensemble, signaling, energy, and covariance
+==============================================================================
+PASS two operational ensembles represent the same local density matrix
+PASS Born-linear weights are ensemble-independent in this steering control
+PASS the normalized power-2 rule is ensemble-dependent :: difference=0.100324
+PASS the deterministic-max rule is ensemble-dependent :: difference=0.200000
+PASS a uniform rule avoids this signal but fails eigenstate certainty
+PASS Born, power-2, and max candidates all satisfy this binary eigenstate-certainty check
+PASS the nonselective Lueders channel preserves trace and positivity
+PASS the same channel changes a noncommuting X-energy expectation
+PASS a commuting pointer eigenstate is unchanged
+PASS simultaneous conjugation leaves the candidate event weight invariant
+PASS a fixed pointer channel is not covariant under arbitrary pointer rotation
+
+==============================================================================
+F3 - Two-register tomography and PREP-FRAME falsifier
+==============================================================================
+PASS the full two-register Pauli table reconstructs the prepared state
+PASS pointer agreement data cannot see the prepared relative phase
+PASS phase-sensitive tomography rejects the pointer-dephased frame :: Frobenius distance=0.674537
+PASS independently counted synthetic trials recover the prepared frame :: Frobenius error=0.004375
+PASS the same counts strongly reject the agreement-only frame :: error ratio=154.2
+PASS explicit null trials close the frequency denominator
+PASS conditioning away nulls changes the reported frequency
+PASS Born-linear weight of a shared projector survives a context change
+PASS normalized power weights fail the same shared-projector test
+
+==============================================================================
+F4 - A clock can timestamp a joint commit; it does not supply the commit
+==============================================================================
+PASS the joint read-and-timestamp map is unitary
+PASS the complete outcome-and-time tag reverses exactly
+PASS the timestamp is the same for both possible outcomes
+PASS a separately supplied joint commit blocks coherent source restoration
+PASS repeated coincidence records determine a relative clock calibration
+PASS a monotone reparameterization preserves event order while changing intervals
+PASS a periodic phase alone aliases distinct event times
+
+==============================================================================
+F5 - Local causal schedules: spacelike consistency and overlap laws
+==============================================================================
+PASS spacelike disjoint writes commute
+PASS overlapping controlled copies do not define a schedule-free rule
+PASS a nontrivial overlapping diagonal rule can be schedule-independent
+PASS disjoint local commits are order-independent on a causal diamond
+PASS unitary causal order reverses by reversing the local order
+PASS inserting a commit is the time-asymmetric ingredient in this circuit
+
+==============================================================================
+F6 - Permanent-record capacity under site, edge, frontier, and sparse models
+==============================================================================
+PASS one permanent site record per event saturates after N events
+PASS moving the record to finite ring edges changes identity but not finite capacity
+PASS the already-infinite lattice permits a fresh nonrecurrent frontier without lattice growth
+PASS a recurrent observed process needs exported fresh memory after local sites fill
+PASS a reversible working pattern can propagate through reused sites without appending records
+PASS sparse commits reduce but do not remove unbounded archive growth
+PASS a reusable periodic clock state is finite but is not a permanent event ledger
+
+==============================================================================
+F7 - Storage, throughput, moving sources, and universal clock response
+==============================================================================
+PASS the moving active load conserves total source strength
+PASS an append-only archive grows source strength unless separately charged
+PASS archive sourcing leaves a distinct field at an abandoned position :: contrast=1.645161
+PASS multiple normalized monotone throughput laws survive the same resource story
+PASS the source field does not select a unique potential-to-clock map
+PASS universal redshift requires the same response law for distinct clock species
+PASS a conserved storage ledger makes each permanent append consume finite free capacity
+
+==============================================================================
+F8 - Coherent propagation and thermalization survive only with separate laws
+==============================================================================
+PASS every-step position commits change coherent matter propagation :: variances=117.595,20.000
+PASS a final sparse read preserves the pre-read position statistics
+PASS the uncommitted coherent walk reverses exactly
+PASS local detailed balance produces the supplied-beta Gibbs state
+PASS relative entropy to Gibbs decreases under the detailed-balance kernel
+PASS the same record-transition grammar admits a different temperature
+PASS equal record counts can carry unequal ensemble entropy
+
+==============================================================================
+SCORECARD
+==============================================================================
+TOTAL: PASS=64 FAIL=0
+INTERPRETATION: passing a toy check narrows language; it does not derive a physical formation law.

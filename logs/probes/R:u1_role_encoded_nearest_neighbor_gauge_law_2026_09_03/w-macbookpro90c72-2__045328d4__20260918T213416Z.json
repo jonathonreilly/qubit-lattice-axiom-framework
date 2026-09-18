@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_role_encoded_nearest_neighbor_gauge_law_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/u1_role_encoded_nearest_neighbor_gauge_law_2026_09_03.py",
+ "seed": 67256,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "045328d4",
+ "started_utc": "20260918T213416Z",
+ "elapsed_s": 12.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9822a58e6ebb32f63debaa4271ce8b9104fec1cd1fcf4a408469dd938cc7b72b",
+ "stdout_tail": " fields\n[PASS] 13 the face branch is normalized, strictly supported, and varies with four neighbors\n[PASS] 14 all 3072 supported edge contexts are uniform or fixed by adjacent faces\n[PASS] 15 all 64 sector-field pairs preserve every face curl under two local gauges\n[PASS] 16 all 512 sector-translation pairs covary and permute the eight sectors transitively\n[PASS] 17 all 24 proper cubic rotations covary every role in all eight sectors\n[PASS] 18 all 192 sector-rotation pairs preserve the complete even gauge product\n[PASS] 19 every face auxiliary label covaries under every proper cubic rotation\n[PASS] 20 all 262144 role shells have either one supported role or the total fallback\n[PASS] 21 a uniform covariant fallback makes the rule total off the joint support\n[PASS] 22 all role and payload labels inject distinctly into the one-site M2(C) domain\n[PASS] 23 fully orthogonal role-payload readout has the explicit 6,10,14,18-qubit costs\nper_element: every finite role label, Z4 face boundary, and auxiliary label is checked under its declared transformations\nper_site: all 512 supported physical shells and all 3072 edge masks use only six nearest neighbors\nper_mode: checked and not executed \u2014 the compiler preserves but does not recompute the parent photon Hessian\nper_block: all eight L4 role sectors, 64 translations, and 24 proper cubic rotations are checked\nlattice_wide: four full link fields per sector are marginalized and compared across the 4x4x4 physical torus\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213428Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

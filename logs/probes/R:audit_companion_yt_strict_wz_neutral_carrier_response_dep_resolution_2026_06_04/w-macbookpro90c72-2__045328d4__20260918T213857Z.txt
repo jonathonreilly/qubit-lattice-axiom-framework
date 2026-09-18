@@ -1,0 +1,42 @@
+========================================================================
+YT strict W/Z neutral-carrier response dependency-surface hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md
+Parent runner: scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py
+Scope: meta evidence only; no theorem claim, no audit verdict, no direct status change.
+FAIL parent_runner_exit_zero :: returncode=1
+FAIL parent_runner_summary_present
+FAIL parent_runner_pass_count_forty_seven :: pass_count=-1
+FAIL parent_runner_fail_count_zero :: fail_count=-1
+FAIL parent_runner_transcript_contains_neutral_ray
+FAIL parent_runner_transcript_contains_q_neutral_tangent
+FAIL parent_runner_transcript_contains_wz_ratio_jacobian_cancel
+FAIL parent_runner_transcript_contains_yt_closure_not_allowed
+FAIL parent_runner_transcript_contains_top_response_absent
+PASS algebraic_blocks_no_grade_field_token_0
+PASS algebraic_blocks_no_grade_field_token_1
+PASS algebraic_blocks_no_grade_field_token_2
+PASS algebraic_blocks_no_grade_field_token_3
+PASS algebraic_blocks_no_grade_field_token_4
+PASS algebraic_blocks_no_grade_field_token_5
+PASS algebraic_blocks_no_grade_field_token_6
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/audit_companion_yt_strict_wz_neutral_carrier_response_dep_resolution_2026_06_04.py", line 138, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/audit_companion_yt_strict_wz_neutral_carrier_response_dep_resolution_2026_06_04.py", line 95, in main
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/audit/data/audit_ledger.json'

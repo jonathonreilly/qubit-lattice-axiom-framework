@@ -1,0 +1,32 @@
+{
+ "task": "R:autonomous_homogeneous_binary_nucleation_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "autonomous",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/autonomous_homogeneous_binary_nucleation_probe_2026_07_14.py",
+ "seed": 67544,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "045328d4",
+ "started_utc": "20260918T213904Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "295f61b7512db7fa72a21994fa74a5e2081420d063259b8d3ffee4dbe8b972b4",
+ "stdout_tail": "s_homogeneous_binary_nucleation_probe_2026_07_14.py\", line 1047, in main\n    source_contract()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/autonomous_homogeneous_binary_nucleation_probe_2026_07_14.py\", line 673, in source_contract\n    note = \" \".join(NOTE.read_text(encoding=\"utf-8\").lower().replace(\"*\", \"\").replace(\"`\", \"\").split())\n                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 546, in read_text\n    return PathBase.read_text(self, encoding, errors, newline)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 632, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/AUTONOMOUS_HOMOGENEOUS_BINARY_NUCLEATION_NOTE_2026-07-14.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213904Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

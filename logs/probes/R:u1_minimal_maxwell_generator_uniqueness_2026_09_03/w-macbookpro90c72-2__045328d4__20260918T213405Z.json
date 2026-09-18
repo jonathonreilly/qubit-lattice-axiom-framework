@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_minimal_maxwell_generator_uniqueness_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/u1_minimal_maxwell_generator_uniqueness_2026_09_03.py",
+ "seed": 67245,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "045328d4",
+ "started_utc": "20260918T213405Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0b258007c6d15c4264691dbe4cd2e1a6c9425d99dcd5c7e7db1192c6856968e3",
+ "stdout_tail": "r is speed sqrt(alpha beta)\n[PASS] 15 positive field rescaling normalizes the positive-orientation family to one Yee speed\n[PASS] 16 negative coupling preserves gauge and energy; magnetic reversal, not positive scaling alone, fixes its orientation\n[PASS] 17 the classified generator has exactly the two Maxwell branches on every tested mode\n[PASS] 18 orientation-dependent coefficients violate cubic degeneracy\n[PASS] 19 using the same adjoint sign violates conservative skewness\n[PASS] 20 a diffusive damping term lies outside the conservative class\n[PASS] 21 deleting one orientation exits the cubic class and loses one branch\n[PASS] 22 the explicit one-step Euler map is local but not exactly norm preserving\n[PASS] 23 the exact Cayley tick is norm preserving but spreads beyond one physical star\n[PASS] 24 the two-reflection sampler lift exits the minimal E-plus-B payload class\n[PASS] 25 supplied reciprocal coefficients give unit speed; the conservative gauge class also permits other speeds\nper_element: all 625 small face stencils and every exact gauge constraint row are classified\nper_site: the full L3 role geometry excludes same-role neighbors and leaves four edge-face couplings\nper_mode: every momentum on L=3,4,5,7 is checked for the unique two-branch spectrum\nper_block: gauge, cubic, energy-adjoint, field-rescaling, Euler, and Cayley blocks are contrasted\nlattice_wide: the global 81-by-81 curl and 162-variable generator are assembled from the unique stencil\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213405Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

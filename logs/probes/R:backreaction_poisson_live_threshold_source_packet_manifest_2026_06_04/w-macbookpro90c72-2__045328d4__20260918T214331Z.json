@@ -1,0 +1,35 @@
+{
+ "task": "R:backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "backreaction",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.py",
+ "seed": 67811,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "045328d4",
+ "started_utc": "20260918T214331Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c520147d275c887e01a6c6f672127d0bb064a305df69ee22fd3d8b1c033a0e7a",
+ "stdout_tail": "son_helper_source:def _self_field_from_amplitude: def _self_field_from_amplitude present\n[PASS] source_marker:poisson_helper_source:def _propagate: def _propagate present\n[PASS] source_marker:poisson_helper_source:EXT_STRENGTH = 0.004: EXT_STRENGTH = 0.004 present\n[PASS] cache_runner_matches:packet_cache: scripts/backreaction_poisson_live_threshold_check.py == scripts/backreaction_poisson_live_threshold_check.py\n[PASS] cache_sha_fresh:packet_cache: b56df20cdc1cd7ebc0ad58d2a7799b2cc5ce10efc39153ec29e7af944988517c == b56df20cdc1cd7ebc0ad58d2a7799b2cc5ce10efc39153ec29e7af944988517c\n[PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS\n[PASS] cache_runner_matches:poisson_helper_cache: scripts/backreaction_poisson.py == scripts/backreaction_poisson.py\n[PASS] cache_sha_fresh:poisson_helper_cache: 17244ab7bd6fd3a37f01f805f4f63eb772ace7a3013e3b750772b13a242beb16 == 17244ab7bd6fd3a37f01f805f4f63eb772ace7a3013e3b750772b13a242beb16\n[PASS] cache_exit_ok:poisson_helper_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:poisson_helper_cache: POISSON SELF-GRAVITY: |psi|^2 generates 1/r field\n========================================================================================\nSUMMARY: POISSON BACKREACTION SOURCE PACKET PASS=27 FAIL=0\n========================================================================================\nOutput written: outputs/backreaction_poisson_live_threshold_source_packet_manifest_2026_06_04.json\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T214331Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

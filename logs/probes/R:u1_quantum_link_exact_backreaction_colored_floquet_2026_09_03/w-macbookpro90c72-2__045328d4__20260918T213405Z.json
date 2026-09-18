@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_quantum_link_exact_backreaction_colored_floquet_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/u1_quantum_link_exact_backreaction_colored_floquet_2026_09_03.py",
+ "seed": 67245,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "045328d4",
+ "started_utc": "20260918T213405Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "08c169821101559f84043d36928c73c54ca03f3e0c1c48bcdb3a1a6c8bbf2d27",
+ "stdout_tail": " adjacent-bond layer closes charge and opposite electric work exactly\n[PASS] 14 the palindromic adjacent-bond tick is exactly Gauss preserving and reversible\n[PASS] 15 the unsplit two-bond exponential exactly conserves the summed Hamiltonian\n[PASS] 16 a nonpalindromic two-color product has a quadratic one-tick energy drift\n[PASS] 17 the palindromic two-color product suppresses summed-energy drift to cubic order\n[PASS] 18 Lie and palindromic products approach the exact joint flow at orders two and three\n[PASS] 19 the principal palindromic Floquet generator is Hermitian and exactly conserved\n[PASS] 20 the conserved Floquet generator differs from the summed Hamiltonian at quadratic order\n[PASS] 21 the exact Floquet energy acquires resolved cross-bond entries at quadratic order\n[PASS] 22 disjoint colored bonds commute and conserve the summed energy exactly\n[PASS] 23 shared matter makes neighboring bond energies noncommute and exposes the splitting residual\nper_element: finite flux raising, matter transfer, current, and anticommutator work are checked\nper_site: both endpoint Gauss generators and the shared middle-vertex generator are checked\nper_mode: instantaneous-current and Lie/Strang/Floquet refinement orders are resolved\nper_block: one-bond exact backreaction and two-bond overlapping/disjoint controls are checked\nlattice_wide: colored local layers preserve Gauss by composition; exact summed energy versus Floquet energy remains the global schedule choice\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213406Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

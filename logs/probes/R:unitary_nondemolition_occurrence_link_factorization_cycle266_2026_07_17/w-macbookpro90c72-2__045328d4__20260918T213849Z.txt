@@ -1,0 +1,25 @@
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/unitary_nondemolition_occurrence_link_factorization_cycle266_2026_07_17.py", line 728, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/unitary_nondemolition_occurrence_link_factorization_cycle266_2026_07_17.py", line 713, in main
+    source_and_note_contract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/unitary_nondemolition_occurrence_link_factorization_cycle266_2026_07_17.py", line 60, in source_and_note_contract
+    sources = {name: normalized(path) for name, path in SOURCES.items()}
+                     ~~~~~~~~~~^^^^^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/unitary_nondemolition_occurrence_link_factorization_cycle266_2026_07_17.py", line 52, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/INTRINSIC_FSWAP_OCCURRENCE_LINK_TOURNAMENT_CYCLE262_NOTE_2026-07-17.md'

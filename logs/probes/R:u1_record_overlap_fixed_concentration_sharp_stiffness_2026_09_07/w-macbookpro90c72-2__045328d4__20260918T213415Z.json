@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/u1_record_overlap_fixed_concentration_sharp_stiffness_2026_09_07.py",
+ "seed": 67255,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "045328d4",
+ "started_utc": "20260918T213415Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c5e709c85b8188f8e0368f729e2d45a12b78013170a164573da200cc6d35bffe",
+ "stdout_tail": "PASS: 15 exact assertions\nper_element: symbolic integrals check profile mass, concentration, derivative energy and supported-profile second derivative\nper_site: checked and not executed \u2014 this circle-profile variational theorem has no spatial lattice-site model\nper_mode: first and second cosine harmonics checked for equal concentration and fourfold derivative-energy penalty\nper_block: both profile branches satisfy threshold matching; supported endpoint value and first derivative vanish\nlattice_wide: checked and not executed \u2014 no lattice-wide dynamics or physical profile-selection law is simulated\nsource_sha256: c86d7d0ebb13ac29ddc5f415c8481f8fd26b0190a7296f11064a585e0c733ba7\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T213415Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

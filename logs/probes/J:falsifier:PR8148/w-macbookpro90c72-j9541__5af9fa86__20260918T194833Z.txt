@@ -1,0 +1,9 @@
+Z1=12 p+q+4r=12
+path3: n=3 edges=2 TV(seeded,static)=0
+path4: n=4 edges=3 TV(seeded,static)=0
+path5: n=5 edges=4 TV(seeded,static)=0
+star4: n=5 edges=4 TV(seeded,static)=0
+star5: n=6 edges=5 TV(seeded,static)=0
+Y4: n=4 edges=3 TV(seeded,static)=0
+G(p,d) strictly increasing on sampled (p,d) pairs
+SUMMARY: PR8148 seeded-tree/G falsifier did not fire: TV=0 on trees beyond the note (path3:0, path4:0, path5:0, star4:0, star5:0, Y4:0); G strictly increasing

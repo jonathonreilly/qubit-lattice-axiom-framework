@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8083",
+ "type": "judgment",
+ "lane": "native-quartic-ward-20260910",
+ "worker": "w-macbookpro90c72-j8ad0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8083/executed_numbers_against_evidence.py",
+ "seed": 71434,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ea317c9d",
+ "started_utc": "20260918T224354Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (c) EXECUTED NUMBERS; 1.72s / 54951936 RSS / 101793792 peak / 97 events / 8 files / 60 candidates and the 4-dp E/F/alpha table all match the packet"
+ },
+ "review": "Pattern (c) EXECUTED NUMBERS: 1.72s, 54951936 RSS, 101793792 peak, 97 events, 8 files, 60 candidates and the 4-dp E/F/alpha table all match the packet; no executed-number defect.",
+ "what": "PR #8083 ([physics-loop] Quartic Ward error bounds (conditional-suppor): attack NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin codex/native-quartic-ward-20260910; git show origin/codex/native-quartic-ward-20260910:<note>. Create probes/work/pr8083/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8083/<script>.py\"",
+ "stdout_sha256": "d96bd08f7f8cdefd60b0768589c506de1387d211e4f2b505c73bc01226c3726b",
+ "stdout_tail": "[ok] seconds: 1.72 (note: 1.72)\n[ok] rss: 54951936 (note: 54,951,936)\n[ok] peak: 101793792 (note: 101,793,792)\n[ok] events: RESULT 97 schema 97\n[ok] eight_files: 8 hashes\n[ok] candidates: 60 (note: 60=15*2*2)\n[ok] oracle: 0\n[ok] fifteen_pairs: 15 unordered pairs with repetition\n[ok] sixty: 15*2 modes*2 P/O\n[ok] residual E: 1.3838 vs 1.3838\n[ok] residual F: 66.6052 vs 66.6052\n[ok] residual alpha: [-465.2922,609.3813] vs [-465.2922,609.3813]\n[ok] residual status: INDETERMINATE_SIGN\n[ok] residual X2: table row\n[ok] variational E: 1.1428 vs 1.1428\n[ok] variational F: 66.7061 vs 66.7061\n[ok] variational alpha: [-468.7459,629.7689] vs [-468.7459,629.7689]\n[ok] variational status: INDETERMINATE_SIGN\n[ok] variational X2: table row\nSUMMARY: pattern (c) EXECUTED NUMBERS; 1.72s / 54951936 RSS / 101793792 peak / 97 events / 8 files / 60 candidates and the 4-dp E/F/alpha table all match the packet\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8ad0",
+  "at_utc": "20260918T224354Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

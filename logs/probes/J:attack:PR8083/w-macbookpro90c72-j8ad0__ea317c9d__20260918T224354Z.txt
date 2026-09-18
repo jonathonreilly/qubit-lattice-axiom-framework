@@ -1,0 +1,20 @@
+[ok] seconds: 1.72 (note: 1.72)
+[ok] rss: 54951936 (note: 54,951,936)
+[ok] peak: 101793792 (note: 101,793,792)
+[ok] events: RESULT 97 schema 97
+[ok] eight_files: 8 hashes
+[ok] candidates: 60 (note: 60=15*2*2)
+[ok] oracle: 0
+[ok] fifteen_pairs: 15 unordered pairs with repetition
+[ok] sixty: 15*2 modes*2 P/O
+[ok] residual E: 1.3838 vs 1.3838
+[ok] residual F: 66.6052 vs 66.6052
+[ok] residual alpha: [-465.2922,609.3813] vs [-465.2922,609.3813]
+[ok] residual status: INDETERMINATE_SIGN
+[ok] residual X2: table row
+[ok] variational E: 1.1428 vs 1.1428
+[ok] variational F: 66.7061 vs 66.7061
+[ok] variational alpha: [-468.7459,629.7689] vs [-468.7459,629.7689]
+[ok] variational status: INDETERMINATE_SIGN
+[ok] variational X2: table row
+SUMMARY: pattern (c) EXECUTED NUMBERS; 1.72s / 54951936 RSS / 101793792 peak / 97 events / 8 files / 60 candidates and the 4-dp E/F/alpha table all match the packet

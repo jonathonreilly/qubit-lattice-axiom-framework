@@ -1,0 +1,10 @@
+Z^3 origin: 6 neighbors, adjacent neighbor-pairs 0 (want 0; cubic is bipartite)
+plaquette embedding edges [(0, 1), (0, 2), (1, 3), (2, 3)] (want (0,1),(0,2),(1,3),(2,3) = a-b,a-c,b-d,c-d)
+non-edges {b,c}={1,2} and {a,d}={0,3} are face diagonals, not NN
+plaquette configs 1296 (stated 1296)
+witness ('-x', '+y', '+z', '-y'): exp Phi_bc=12/13 (12/13), Phi_ab=3 (3), Phi_bd=3/4 (3/4)
+  Phi_ad=1, Phi_bcd=1, Phi_abcd=1 (stated 1,1,1)
+exp Phi_ad != 1 on 0 of 1296 (stated 0)
+star embedding edges [(0, 1), (0, 2), (0, 3)] (want the three spokes from origin)
+star leaves (-x,-x,+y): exp Phi=165/169 (165/169)
+SUMMARY: pattern (a) WITNESS REALIZABILITY; plaquette and 3-star embed in Z^3 with co-recorded pairs non-adjacent; T6 ratios 12/13, 3, 3/4, 165/169 and Phi_ad=1 on 1296 all match the formation-law canonical potential

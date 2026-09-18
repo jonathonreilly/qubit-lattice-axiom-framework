@@ -1,0 +1,48 @@
+PR #8145 head c5580db2eb; cache 7 stdout lines; statement sections: claim_scope, Part I, Part I 1, Part I 2, Part I 3, Part I 4, Part II, Part II 1, Part II 2, Part II 3, Part III, Part III 1, Part III 2, Part III 3, EVIDENCE
+[EXCLUDED] labels | Part I 1,Part I 3,Part II 1,Part II 2,Part II 3,Part III 1,Part III 2 | equation labels (1)-(4), also where glued to a word ('preserve(2)', 'Equation(2)')
+[EXCLUDED] beta0 | claim_scope | condition: beta > 0
+[DEFINITION] wpos | Part III | the temporal weight (a sum of Gaussians) | inline in the statement
+[DEFINITION] charkernel | Part III 1 | the charge-projected kernel | inline in the statement
+[EXCLUDED] words | Part I 1,Part I 3,Part I 4,Part II 2,Part II 3,Part III 1 | wording (number words)
+[EXCLUDED] inverse | Part I 3,Part II 1 | notation: the inverse
+[DEFINITION] def-words | Part I 1 | the history words (1) | inline in the statement
+[CACHE-JSON] norm1 | Part I 1,Part I 3 | word norm (executed on 27 words) | EVIDENCE_JSON history_reconstruction: 27 words, largest norm_squared 1.0000000000000022 (<= 1 within 1e-12)
+[EXCLUDED] vac0 | Part I 1 | definition: the vacuum carries charge 0
+[EXCLUDED] fourdim | Part I 1,Part I 4 | wording (number words)
+[CACHE-JSON] S01 | Part I 2,Part I 3 | 0 <= S <= I (executed Gram forms) | EVIDENCE_JSON gram_lower_eigenvalues (gram, positive_transfer, contractive_form) at least -7.83e-16 in the 3 square systems
+[DERIVED] ineq2 | Part I 3 | Part I (2) | tau^n tau^-1 tau^n = tau^(2n-1) with 2n - 1 >= 1, so <phi, tau^(2n-1) phi> <= ||phi||^2 <= 1 by 0 <= tau <= 1
+[CACHE-JSON] ineq2x | Part I 3 | inverse moments (executed) | EVIDENCE_JSON: inverse_moment <= K_final_insertion for all 27 words (largest ratio 1.000000)
+[DERIVED] K0 | Part I 3 | K(0) = 1 | U_0 = I, so U_0* tau^-1 U_0 = tau^-1 = 1 * tau^-1: the comparison constant is 1 at j0 = 0
+[DEFINITION] cutoff | Part I 3 | the cutoff functions | inline in the statement
+[DERIVED] atom | Part I 3 | no atom at 0 | a finite measure with finite inverse moment int lambda^-1 dmu <= K(j0) has mu({0}) = 0
+[CACHE] ck | Part II 1 | positive Fourier coefficients (per_element) | cache stdout line 2: per_element: positive local Fourier coefficients and temporal strip ratios are directly evaluated at finite N and beta.
+[CACHE-JSON] fiber2 | Part II 1 | Part II (2) (executed on the N = 2, 3 cubes) | EVIDENCE_JSON cube_current_fibers: R^-1 W(K) <= W(J) <= R W(K) at all 6 comparisons (N = 2, 3 cubes)
+[DEFINITION] times0 | Part II 2 | the history's times | inline in the statement
+[CACHE-JSON] len2L | Part II 2 | Part II (3) with the 2L shift (executed on 108 rows) | EVIDENCE_JSON history_comparisons: R^-2 <= F_w(n)/W(2L + n) <= R^2 at all 108 rows; omitting the 2L shift changes the reference in 56 rows with L > 0
+[DERIVED] shift2L | Part II 3 | the rate | (2L + n)/n -> 1 (sympy): a fixed shift 2L of the time interval leaves the exponential rate unchanged
+[DERIVED] N2 | Part III,Part III 2 | N >= 2 | Z_1 has one element, so every charge is 0 mod 1: no nontrivial charge profile exists at N = 1
+[DEFINITION] delta | Part III | delta and r | inline in the statement
+[CACHE-JSON] delta01 | Part III | 0 < delta < 1 (executed m/M) | EVIDENCE_JSON charge_floor: m/M = 0.2776, 0.2734, 0.0386 (N = 2, 3, 4), all in (0, 1)
+[DERIVED] exp6 | Part III,Part III 1 | the exponent 6 | a site of Z^3 has 2d = 6 nearest neighbours (enumerated); a box site has at most 6
+[DERIVED] mixture | Part III 1 | the mixture | p(eta) >= delta/N for all N values gives p = delta*uniform + (1 - delta)*p', p' = (p - delta/N)/(1 - delta) >= 0 of mass 1
+[DERIVED] avg0 | Part III 1 | character average | x = e^{2 pi i q/N}, q != 0 mod N: x^N = 1 (sympy) and x != 1, so sum_k x^k = (x^N - 1)/(x - 1) = 0 (and the sum is below 1e-40 at 50 digits for N <= 12): the uniform component averages a nontrivial character to 0
+[CACHE-JSON] harm | Part III 1 | conditional harmonic <= r (executed) | EVIDENCE_JSON: maximum nontrivial conditional harmonic <= r at N = 2, 3, 4 (0.8569 <= 0.9229, 0.8049 <= 0.9253, 0.7804 <= 0.9985)
+[RUNNER] kernel2 | Part III 1 | Part III (2) (asserted on the square, not printed) | present and checked in the runner source (not printed)
+[DEFINITION] Vhalf | Part III 2 | T_rho | inline in the statement
+[CACHE-JSON] form | Part III 2 | Part III (3) (executed) | EVIDENCE_JSON: 0 < transfer_ratio <= r^|A| (kernel_ratio_bound) in all 12 charge cases
+[CACHE-JSON] floor4 | Part III 2 | Part III (4) (executed; the 6-floor recomputed) | EVIDENCE_JSON: energy >= degree2_floor >= cubic_degree6_floor = -|A| log(1 - (m/M)^6) in all 12 charge cases (the 6-floor recomputed from the printed m/M)
+[DERIVED] below6 | Part III 2 | degrees below 6 | for 0 < m/M < 1, (m/M)^d = (m/M)^(d+1)/(m/M) decreases in d, so degrees below 6 give a larger delta and a smaller r
+[DERIVED] ceil | Part III 2 | ceil(s/2) | the larger parity class of any charged set in Z^3 is independent and has at least ceil(s/2) points (2000 random sets checked)
+[CACHE-JSON] pair | Part III 2 | pairs (executed) | EVIDENCE_JSON: the separated pair (charges at opposite corners 0, 2; current [1,1,0,0]) has an independent set of size 2 and the adjacent pair (corners 0, 1; current [1,0,0,0]) size 1, in 3 + 3 cases (N = 2, 3, 4)
+[DERIVED] pair-d | Part III 2 | pairs | a nonadjacent pair is itself independent (size 2); of an adjacent pair only one vertex can be kept (size 1)
+[CACHE-JSON] alias | Part III 2 | aliases (executed) | EVIDENCE_JSON: the alias current [N,0,0,0] has charge 0 mod N, energy 3.8e-15 and transfer ratio 1 at N = 2, 3, 4
+[DERIVED] tends0 | Part III 3 | weak-coupling limit | m/M <= w(theta*)/w(0) with |theta*| >= pi/2 for N >= 2 and w(0) >= 1, bounded by 2e^{-beta pi^2/8}/(1 - e^{-beta pi^2/2}) -> 0 as beta -> oo (sympy): the floor tends to 0 at weak coupling
+[DERIVED] zero-sector | Part III 3 | the neutral sector | rho = 0 has no charged vertex: |A| = 0 and the bound |A|(-log(1 - (m/M)^6)) is 0
+[CACHE-JSON] ev-fam | EVIDENCE | evidence: three families | EVIDENCE_JSON has 3 families: charge_floor, endpoint_comparison, history_reconstruction
+[CACHE-JSON] ev-27 | EVIDENCE | evidence: 27 words | EVIDENCE_JSON history_reconstruction: N = [2, 3, 4], 27 history words
+[CACHE-JSON] ev-108 | EVIDENCE | evidence: 108 comparisons | EVIDENCE_JSON endpoint_comparison: 108 history comparisons
+[CACHE-JSON] ev-cubes | EVIDENCE | evidence: two cubes | EVIDENCE_JSON cube_current_fibers: link_assignments [4096, 531441]
+[CACHE-JSON] ev-12-29 | EVIDENCE | evidence: 12 cases, 29 distributions | EVIDENCE_JSON charge_floor: 12 charged/alias cases, 29 conditional distributions
+[CACHE-JSON] ev-300 | EVIDENCE | evidence: timeout | cache header timeout_sec: 300
+[COVERAGE] 108 numeric tokens in the statement text; uncovered 0
+SUMMARY: 45 items over claim_scope + 13 sections of Parts I-III + the evidence section (108 numeric tokens, 0 uncovered): cache-sourced 18 (printed lines and the printed EVIDENCE_JSON), runner-asserted (not printed) 1, derived here from the note's steps 13, definitions 7, excluded 6; unsourced 0 (none)

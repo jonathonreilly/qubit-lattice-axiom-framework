@@ -1,0 +1,673 @@
+[
+ {
+  "id": "X:formation-3plus1-sphere-memory",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 0.4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 0.4 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 0.5 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 0.6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 0.6 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 0.75 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 1 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 1.5 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 6 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 12 64 2000 1000 1"
+   }
+  ],
+  "what": "NEW PHYSICS, 3+1. The sphere formation law on the event lattice Z^4 in level order (three-dimensional level planes, four predecessors). Linear theory predicts what 2+1 lacks: the plane walk is transient, so an aligned start keeps a positive magnetization at strong coupling. The table |m|(level) by beta and L locates the coupling where memory appears and the plateau's height. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 20 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:formation-2plus1-sphere-memory",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 sphere 0.4 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 0.5 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 0.6 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 0.75 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 1 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 1.5 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 2 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 3 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 6 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 12 256 4000 2000 1"
+   }
+  ],
+  "what": "The side-by-side comparison for the 3+1 table: the same law on Z^3 (two-dimensional level planes), where block 26 found no plateau at any coupling. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 10 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:formation-3plus1-kernel",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 3 48 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 3 48 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 3 64 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 3 64 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 3 96 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 3 96 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 6 48 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 6 48 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 6 64 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 6 64 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 6 96 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 6 96 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 12 48 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 12 48 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 12 64 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 12 64 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 12 96 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 12 96 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 24 48 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 24 48 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 24 64 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 24 64 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 24 96 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 24 96 1500 500 2"
+   }
+  ],
+  "what": "NEW PHYSICS, 3+1. The equal-level transverse structure factor of the ordered sphere formation law on three-dimensional level planes against the linear kernel sigma^2/(1 - |phi(k)|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, whose small-k form is a three-dimensional Green function (a 1/r covariance at equal level). The shells give the normalization c(beta, |k|); the covariance column gives the 1/r law at finite L. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:formation-linear-calibration",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 linear 6 128 3000 1000 1"
+   },
+   {
+    "extra": "3 linear 6 48 2000 800 1"
+   },
+   {
+    "extra": "3 linear 6 64 1500 600 1"
+   }
+  ],
+  "what": "Calibration of the estimator on the Gaussian gain-one model (expected shell ratios 1 within sampling error) in 2+1 and 3+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 3 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:menu-size-threshold",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 axes6 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 12 128 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 12 32 3000 1500 1"
+   }
+  ],
+  "what": "NEW PHYSICS. Finite menus of unit vectors with the covariant weight exp(beta s.S): six axes, eight corners, twelve edge midpoints, and 20, 50, 100, 200 near-uniform points. Question: how does the coupling at which memory appears grow with the menu's size in 2+1 (where the sphere never keeps memory), and does it stay bounded in 3+1 (where the linear theory says the sphere does)? One run per (dim, menu, beta). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 140 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ }
+]

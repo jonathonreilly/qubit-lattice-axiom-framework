@@ -55785,6 +55785,246 @@
   "what": "block 26's nonlinear plane run: --extra 'beta L T' (e.g. '6 512 40000'); records |m| along the run; the question is a plateau (none seen to 2e4 levels at beta <= 24); extend T to 1e5-4e5 and L to 1024 at beta 12, 24, 48; log the full table."
  },
  {
+  "id": "C:linear-kernel-3plus1:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "linear-kernel-3plus1",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The linear kernel of the 3+1 formation law, exactly. phi(k) = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, u = |phi|^2. (1) With sympy: 1 - u = k^T M k + O(k^4); give M, its eigenvalues and eigenvectors (expected: 1/16 along (1,1,1) and 1/4 twice), and the O(k^4) term. (2) Find the group of linear maps k -> A k (integer matrices) with u(Ak) = u(k) by exhaustive search over entries in {-1,0,1}; give its order and show that the metric M is, up to scale, the unique invariant quadratic form (so the kernel is isotropic in the level plane's natural geometry). (3) The equal-level covariance of the linear model is C(x) = sigma^2 (2 pi)^-3 Int e^{ik.x}/(1-u): derive its large-|x| form c/sqrt(x^T M^-1 x) with the exact constant c = sigma^2/(4 pi sqrt(det M)); (4) check it numerically: FFT at L = 64 and 128, table of C(x) sqrt(x^T M^-1 x) along three directions. Expectation: a plateau at c. DELIVERABLE in your unit worktree: probes/work/compute/linear-kernel-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/linear-kernel-3plus1/<name>/run.py\""
+ },
+ {
+  "id": "C:linear-kernel-3plus1:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "linear-kernel-3plus1",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The linear kernel of the 3+1 formation law, exactly. phi(k) = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, u = |phi|^2. (1) With sympy: 1 - u = k^T M k + O(k^4); give M, its eigenvalues and eigenvectors (expected: 1/16 along (1,1,1) and 1/4 twice), and the O(k^4) term. (2) Find the group of linear maps k -> A k (integer matrices) with u(Ak) = u(k) by exhaustive search over entries in {-1,0,1}; give its order and show that the metric M is, up to scale, the unique invariant quadratic form (so the kernel is isotropic in the level plane's natural geometry). (3) The equal-level covariance of the linear model is C(x) = sigma^2 (2 pi)^-3 Int e^{ik.x}/(1-u): derive its large-|x| form c/sqrt(x^T M^-1 x) with the exact constant c = sigma^2/(4 pi sqrt(det M)); (4) check it numerically: FFT at L = 64 and 128, table of C(x) sqrt(x^T M^-1 x) along three directions. Expectation: a plateau at c. DELIVERABLE in your unit worktree: probes/work/compute/linear-kernel-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/linear-kernel-3plus1/<name>/run.py\""
+ },
+ {
+  "id": "C:zero-mode-sum-3plus1:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "zero-mode-sum-3plus1",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The return sum that decides memory in 3+1. G := (2 pi)^-3 Int d^3k 1/(1 - |phi(k)|^2), phi = (1 + sum_j e^{ik_j})/4. (1) Show 1/(1-u) = sum_n u^n and that Int u^n is the probability that the difference of two independent plane walks (steps 0, e1, e2, e3 with probability 1/4 each) is at the origin after n steps; compute these probabilities exactly (rational arithmetic) for n <= 400. (2) Bound the tail rigorously by a local-limit estimate you verify numerically, and give a two-sided bracket for G. (3) Spin-wave prediction for the plateau of the sphere law: |m| ~ 1 - sigma^2 G with sigma^2 = A(4 beta)/(4 beta), A(k) = coth k - 1/k; tabulate for beta in {1, 1.5, 2, 3, 6, 12} and compare with the logs under logs/probes/X:formation-3plus1-sphere-memory/ when present. Expectation: G finite (it diverges logarithmically with L in 2+1) and agreement within a few percent at beta >= 6. For contrast give the same sum on the L x L plane of 2+1 for L = 16..512 and its log L growth. DELIVERABLE in your unit worktree: probes/work/compute/zero-mode-sum-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/zero-mode-sum-3plus1/<name>/run.py\""
+ },
+ {
+  "id": "C:zero-mode-sum-3plus1:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "zero-mode-sum-3plus1",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The return sum that decides memory in 3+1. G := (2 pi)^-3 Int d^3k 1/(1 - |phi(k)|^2), phi = (1 + sum_j e^{ik_j})/4. (1) Show 1/(1-u) = sum_n u^n and that Int u^n is the probability that the difference of two independent plane walks (steps 0, e1, e2, e3 with probability 1/4 each) is at the origin after n steps; compute these probabilities exactly (rational arithmetic) for n <= 400. (2) Bound the tail rigorously by a local-limit estimate you verify numerically, and give a two-sided bracket for G. (3) Spin-wave prediction for the plateau of the sphere law: |m| ~ 1 - sigma^2 G with sigma^2 = A(4 beta)/(4 beta), A(k) = coth k - 1/k; tabulate for beta in {1, 1.5, 2, 3, 6, 12} and compare with the logs under logs/probes/X:formation-3plus1-sphere-memory/ when present. Expectation: G finite (it diverges logarithmically with L in 2+1) and agreement within a few percent at beta >= 6. For contrast give the same sum on the L x L plane of 2+1 for L = 16..512 and its log L growth. DELIVERABLE in your unit worktree: probes/work/compute/zero-mode-sum-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/zero-mode-sum-3plus1/<name>/run.py\""
+ },
+ {
+  "id": "C:response-to-a-pinned-record:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "response-to-a-pinned-record",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Response against fluctuation in level time. In the linear gain-one formation model on Z^(d+1) (d = 2 and 3) pin one record at the origin to theta = 1 and propagate the MEAN: theta(x) = average of the d+1 predecessors. (1) Show the response at x = (a_0, ..., a_d) >= 0 is the multinomial probability (sum a)!/(prod a_i!) (d+1)^-(sum a); verify by direct propagation on a box. (2) Asymptotics: along the axis (1,..,1) the response decays like n^(-d/2) (n the level), with Gaussian width ~ sqrt n across it: give the exact constants for d = 2, 3. (3) Compare with the COVARIANCE of block 35: sigma^2 phi^s/(1-u) at equal level is a Green function of the d-dimensional plane (log in d = 2, 1/r in d = 3). State precisely how the two differ (support: forward cone against the whole plane; decay law; symmetry) and check numerically that no constant makes response = constant x covariance (the equilibrium fluctuation-response relation fails). Expectation: it fails. DELIVERABLE in your unit worktree: probes/work/compute/response-to-a-pinned-record/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/response-to-a-pinned-record/<name>/run.py\""
+ },
+ {
+  "id": "C:response-to-a-pinned-record:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "response-to-a-pinned-record",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Response against fluctuation in level time. In the linear gain-one formation model on Z^(d+1) (d = 2 and 3) pin one record at the origin to theta = 1 and propagate the MEAN: theta(x) = average of the d+1 predecessors. (1) Show the response at x = (a_0, ..., a_d) >= 0 is the multinomial probability (sum a)!/(prod a_i!) (d+1)^-(sum a); verify by direct propagation on a box. (2) Asymptotics: along the axis (1,..,1) the response decays like n^(-d/2) (n the level), with Gaussian width ~ sqrt n across it: give the exact constants for d = 2, 3. (3) Compare with the COVARIANCE of block 35: sigma^2 phi^s/(1-u) at equal level is a Green function of the d-dimensional plane (log in d = 2, 1/r in d = 3). State precisely how the two differ (support: forward cone against the whole plane; decay law; symmetry) and check numerically that no constant makes response = constant x covariance (the equilibrium fluctuation-response relation fails). Expectation: it fails. DELIVERABLE in your unit worktree: probes/work/compute/response-to-a-pinned-record/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/response-to-a-pinned-record/<name>/run.py\""
+ },
+ {
+  "id": "C:tight-sibling-exhaustive:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "tight-sibling-exhaustive",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Finite cases of the open tight-sibling lemma (README section 8; PR #8177). Use probes/lib/family.py (automaton, kinds) and probes/lib/rooted.py (the rooted value v by integer programming). Enumerate EXHAUSTIVELY every mark configuration with at most 6 marks on the cone of depth 3 below a root (then depth 4 with at most 5 marks if time allows), run the two-level automaton, and for every processed 1-site compute v and list the sites all of whose 1-predecessors are processed and tight (v = 0). Report: how many configurations, how many processed sites, how many have all 1-predecessors tight, and the largest v found among those. Expectation: v <= 0 everywhere. Any site with v > 0 is a counterexample to the lemma: print it as HIT with the marks. DELIVERABLE in your unit worktree: probes/work/compute/tight-sibling-exhaustive/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/tight-sibling-exhaustive/<name>/run.py\""
+ },
+ {
+  "id": "C:tight-sibling-exhaustive:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "tight-sibling-exhaustive",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Finite cases of the open tight-sibling lemma (README section 8; PR #8177). Use probes/lib/family.py (automaton, kinds) and probes/lib/rooted.py (the rooted value v by integer programming). Enumerate EXHAUSTIVELY every mark configuration with at most 6 marks on the cone of depth 3 below a root (then depth 4 with at most 5 marks if time allows), run the two-level automaton, and for every processed 1-site compute v and list the sites all of whose 1-predecessors are processed and tight (v = 0). Report: how many configurations, how many processed sites, how many have all 1-predecessors tight, and the largest v found among those. Expectation: v <= 0 everywhere. Any site with v > 0 is a counterexample to the lemma: print it as HIT with the marks. DELIVERABLE in your unit worktree: probes/work/compute/tight-sibling-exhaustive/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/tight-sibling-exhaustive/<name>/run.py\""
+ },
+ {
+  "id": "C:chessboard-orbits-and-bond-reflections:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "chessboard-orbits-and-bond-reflections",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Data for repairing block 17 (PR #8151; README section 8). (1) On the tori (Z/4)^2, (Z/6)^2, (Z/8)^2, (Z/4)^3, (Z/6)^3 compute the orbit of one direction-1 bond under the group generated by reflections through SITE planes, then through BOND planes (x_i -> 2k+1 - x_i), then both; table of orbit sizes against the number of direction-1 bonds. Expectation: site planes reach 1/2 (2D) and 1/4 (3D) of them; bond planes reach all. (2) Reflection positivity through a bond plane needs the 6 x 6 weight matrix W of the six-axis rule (W = p on the diagonal, q between opposite axes, r otherwise) to be positive semidefinite: compute its eigenvalues symbolically (expected p+q+4r, p-q three times, p+q-2r twice) and state the region; check on the line (p,1,2). (3) Verify reflection positivity through a bond plane NUMERICALLY for the static six-axis law on the 4 x 2 and 4 x 4 torus at three weight triples inside and one outside that region: the matrix of <F theta(G)> over a basis of half-torus functions must be positive semidefinite inside. DELIVERABLE in your unit worktree: probes/work/compute/chessboard-orbits-and-bond-reflections/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/chessboard-orbits-and-bond-reflections/<name>/run.py\""
+ },
+ {
+  "id": "C:chessboard-orbits-and-bond-reflections:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "chessboard-orbits-and-bond-reflections",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Data for repairing block 17 (PR #8151; README section 8). (1) On the tori (Z/4)^2, (Z/6)^2, (Z/8)^2, (Z/4)^3, (Z/6)^3 compute the orbit of one direction-1 bond under the group generated by reflections through SITE planes, then through BOND planes (x_i -> 2k+1 - x_i), then both; table of orbit sizes against the number of direction-1 bonds. Expectation: site planes reach 1/2 (2D) and 1/4 (3D) of them; bond planes reach all. (2) Reflection positivity through a bond plane needs the 6 x 6 weight matrix W of the six-axis rule (W = p on the diagonal, q between opposite axes, r otherwise) to be positive semidefinite: compute its eigenvalues symbolically (expected p+q+4r, p-q three times, p+q-2r twice) and state the region; check on the line (p,1,2). (3) Verify reflection positivity through a bond plane NUMERICALLY for the static six-axis law on the 4 x 2 and 4 x 4 torus at three weight triples inside and one outside that region: the matrix of <F theta(G)> over a basis of half-torus functions must be positive semidefinite inside. DELIVERABLE in your unit worktree: probes/work/compute/chessboard-orbits-and-bond-reflections/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/chessboard-orbits-and-bond-reflections/<name>/run.py\""
+ },
+ {
+  "id": "C:six-axis-noise-map-3plus1:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "six-axis-noise-map-3plus1",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Block 12's exact noise map, for four predecessors. The six-axis record at a site with four recorded predecessors takes axis a with probability proportional to prod_j W(a, s_j) (W = p same axis, q opposite, r orthogonal). (1) Enumerate the predecessor patterns up to the cube group (unanimous; 3-1 with the odd one opposite or orthogonal; 2-2 in its variants; 2-1-1; 1-1-1-1) and give for each the exact law of the record as rational functions of (p,q,r). (2) Give the two domination parameters of block 30 in this setting: the probability of leaving a unanimous neighbourhood, and of following the minority in a 3-1 neighbourhood; evaluate on (p,1,2) and on (e^b, e^-b, 1). (3) Tie cases (2-2): state the law exactly; this is where four predecessors differ from three. Expectation: the probability of leaving a unanimous neighbourhood is (q^4 + 4 r^4)/(p^4 + q^4 + 4 r^4); check every formula against brute-force enumeration at three random rational weights. DELIVERABLE in your unit worktree: probes/work/compute/six-axis-noise-map-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/six-axis-noise-map-3plus1/<name>/run.py\""
+ },
+ {
+  "id": "C:six-axis-noise-map-3plus1:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "six-axis-noise-map-3plus1",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Block 12's exact noise map, for four predecessors. The six-axis record at a site with four recorded predecessors takes axis a with probability proportional to prod_j W(a, s_j) (W = p same axis, q opposite, r orthogonal). (1) Enumerate the predecessor patterns up to the cube group (unanimous; 3-1 with the odd one opposite or orthogonal; 2-2 in its variants; 2-1-1; 1-1-1-1) and give for each the exact law of the record as rational functions of (p,q,r). (2) Give the two domination parameters of block 30 in this setting: the probability of leaving a unanimous neighbourhood, and of following the minority in a 3-1 neighbourhood; evaluate on (p,1,2) and on (e^b, e^-b, 1). (3) Tie cases (2-2): state the law exactly; this is where four predecessors differ from three. Expectation: the probability of leaving a unanimous neighbourhood is (q^4 + 4 r^4)/(p^4 + q^4 + 4 r^4); check every formula against brute-force enumeration at three random rational weights. DELIVERABLE in your unit worktree: probes/work/compute/six-axis-noise-map-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/six-axis-noise-map-3plus1/<name>/run.py\""
+ },
+ {
+  "id": "C:menu-threshold-table:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "menu-threshold-table",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Turn the scan logs into the result. Read every log under logs/probes/X:menu-size-threshold/ and logs/probes/X:formation-3plus1-sphere-memory/ and logs/probes/X:formation-2plus1-sphere-memory/ (the .txt files hold the memory tables). For each (dim, menu): tabulate the plateau |m| against beta, bracket the coupling where the plateau crosses one half of its large-beta value, and mark runs whose |m| is still drifting at the end (compare the last two table rows). Then plot or tabulate the bracket against the menu size N for dim = 2 and dim = 3. Expectation: in 2+1 the bracket moves up without bound as N grows; in 3+1 it approaches the sphere's bracket. Say plainly if the data do not show that. If fewer than half the grid points are logged, report what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/menu-threshold-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/menu-threshold-table/<name>/run.py\""
+ },
+ {
+  "id": "C:menu-threshold-table:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "menu-threshold-table",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Turn the scan logs into the result. Read every log under logs/probes/X:menu-size-threshold/ and logs/probes/X:formation-3plus1-sphere-memory/ and logs/probes/X:formation-2plus1-sphere-memory/ (the .txt files hold the memory tables). For each (dim, menu): tabulate the plateau |m| against beta, bracket the coupling where the plateau crosses one half of its large-beta value, and mark runs whose |m| is still drifting at the end (compare the last two table rows). Then plot or tabulate the bracket against the menu size N for dim = 2 and dim = 3. Expectation: in 2+1 the bracket moves up without bound as N grows; in 3+1 it approaches the sphere's bracket. Say plainly if the data do not show that. If fewer than half the grid points are logged, report what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/menu-threshold-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/menu-threshold-table/<name>/run.py\""
+ },
+ {
+  "id": "C:heat-kernel-in-3plus1:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "heat-kernel-in-3plus1",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The space-time covariance in 3+1. For the linear model Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi(k)^s/(1-u) (block 35's T1 with four predecessors). (1) Re-derive it for d = 3 from the recursion and verify exactly on L = 3, 4 tori by propagating the covariance matrix with rational arithmetic. (2) Real space: at lag s the covariance is the equal-level kernel convolved with the s-step walk; show the drift (1,1,1)/4 per level and the Gaussian spreading; in the co-moving frame give the large-distance form. (3) The decay rate of a mode per level is -log|phi(k)| ~ k^T M k / 2: diffusive, against the comparator's (static law's) rate ~ |k| (README section 8, the probe's identity E(k) = 3(|1 - phi e^{iw}|^2 + 1 - u) has a four-predecessor analogue: find it and verify it symbolically). DELIVERABLE in your unit worktree: probes/work/compute/heat-kernel-in-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/heat-kernel-in-3plus1/<name>/run.py\""
+ },
+ {
+  "id": "C:heat-kernel-in-3plus1:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "heat-kernel-in-3plus1",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The space-time covariance in 3+1. For the linear model Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi(k)^s/(1-u) (block 35's T1 with four predecessors). (1) Re-derive it for d = 3 from the recursion and verify exactly on L = 3, 4 tori by propagating the covariance matrix with rational arithmetic. (2) Real space: at lag s the covariance is the equal-level kernel convolved with the s-step walk; show the drift (1,1,1)/4 per level and the Gaussian spreading; in the co-moving frame give the large-distance form. (3) The decay rate of a mode per level is -log|phi(k)| ~ k^T M k / 2: diffusive, against the comparator's (static law's) rate ~ |k| (README section 8, the probe's identity E(k) = 3(|1 - phi e^{iw}|^2 + 1 - u) has a four-predecessor analogue: find it and verify it symbolically). DELIVERABLE in your unit worktree: probes/work/compute/heat-kernel-in-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/heat-kernel-in-3plus1/<name>/run.py\""
+ },
+ {
   "id": "J:derive:tight-sibling-lemma:a1",
   "type": "judgment",
   "lane": "derivation",
@@ -55894,7 +56134,7 @@
   },
   "problem": "chessboard-repair",
   "title": "Repair block 17's chessboard step and find the true constant",
-  "what": "DERIVATION, independent attempt 1 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\""
+  "what": "DERIVATION, independent attempt 1 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. COMPUTED LEAD for (ii): reflection positivity through a bond plane needs the 6 x 6 weight matrix W (p same axis, q opposite, r orthogonal) positive semidefinite; its eigenvalues are p+q+4r, p-q (three times), p+q-2r (twice), so the condition is p >= q and p + q >= 2r: on the line (p,1,2) that is p >= 3, the whole regime of interest; bond reflections move the parity that site reflections preserve. Verify this before relying on it. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\""
  },
  {
   "id": "J:derive:chessboard-repair:a2",
@@ -55910,7 +56150,7 @@
   },
   "problem": "chessboard-repair",
   "title": "Repair block 17's chessboard step and find the true constant",
-  "what": "DERIVATION, independent attempt 2 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\""
+  "what": "DERIVATION, independent attempt 2 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. COMPUTED LEAD for (ii): reflection positivity through a bond plane needs the 6 x 6 weight matrix W (p same axis, q opposite, r orthogonal) positive semidefinite; its eigenvalues are p+q+4r, p-q (three times), p+q-2r (twice), so the condition is p >= q and p + q >= 2r: on the line (p,1,2) that is p >= 3, the whole regime of interest; bond reflections move the parity that site reflections preserve. Verify this before relying on it. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\""
  },
  {
   "id": "J:derive:chessboard-repair:a3",
@@ -55926,7 +56166,7 @@
   },
   "problem": "chessboard-repair",
   "title": "Repair block 17's chessboard step and find the true constant",
-  "what": "DERIVATION, independent attempt 3 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\""
+  "what": "DERIVATION, independent attempt 3 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. COMPUTED LEAD for (ii): reflection positivity through a bond plane needs the 6 x 6 weight matrix W (p same axis, q opposite, r orthogonal) positive semidefinite; its eigenvalues are p+q+4r, p-q (three times), p+q-2r (twice), so the condition is p >= q and p + q >= 2r: on the line (p,1,2) that is p >= 3, the whole regime of interest; bond reflections move the parity that site reflections preserve. Verify this before relying on it. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\""
  },
  {
   "id": "J:derive:chessboard-repair:a4",
@@ -55942,7 +56182,7 @@
   },
   "problem": "chessboard-repair",
   "title": "Repair block 17's chessboard step and find the true constant",
-  "what": "DERIVATION, independent attempt 4 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\""
+  "what": "DERIVATION, independent attempt 4 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. COMPUTED LEAD for (ii): reflection positivity through a bond plane needs the 6 x 6 weight matrix W (p same axis, q opposite, r orthogonal) positive semidefinite; its eigenvalues are p+q+4r, p-q (three times), p+q-2r (twice), so the condition is p >= q and p + q >= 2r: on the line (p,1,2) that is p >= 3, the whole regime of interest; bond reflections move the parity that site reflections preserve. Verify this before relying on it. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\""
  },
  {
   "id": "J:derive:formation-response-kernel:a1",
@@ -56375,6 +56615,837 @@
   "problem": "formation-clauses-in-level-time",
   "title": "How records form: what each rate and unit clause does to the three-dimensional law",
   "what": "DERIVATION, independent attempt 3 of 3: How records form: what each rate and unit clause does to the three-dimensional law. THE AXIOM-LEVEL OPEN QUESTION. 'Records form' is fixed; HOW (order, unit, rate) is not. Blocks 14, 15, 24 (PRs #8148, #8149, #8158) recorded clause candidates with finite witnesses (rate: clocks and the jump chain; unit: sequential against joint formation of connected units; unrecorded sites: free window against integrated exterior), and block 12 (PR #8146) computed the level automaton's exact noise map for the monotone level order. TASK: for each recorded clause candidate, derive the law it induces on Z^3 in the strong-coupling regime and compare: (a) does the law still reduce to a north-east-centre noisy majority automaton in level time, and with which noise parameters (eps_1, eps_2 as functions of (p,q,r))? (b) does the clause change the six invariant laws or the ordering threshold's leading behaviour? (c) is there a clause under which the induced law is independent of the order chosen (an order-independence principle would select the clause)? Deliver exact finite computations on the 2x2x2 cube and the 3x3x2 slab for each clause, and the general statement you can prove from them. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-clauses-in-level-time/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-clauses-in-level-time/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-in-3plus1:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-in-3plus1",
+  "title": "Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel",
+  "what": "DERIVATION, independent attempt 1 of 6: Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel. LEAD (executed on small lattices on 2026-09-18, not proved). The campaign studied the formation law on Z^3 in level order: two-dimensional level planes, where the sphere menu loses its memory (block 26, PR #8170) and the equal-level kernel is a plane Green function, logarithmic (block 35, PR #8180). On the event lattice Z^4 (a record at x formed from x - e_1, ..., x - e_4; level planes three-dimensional) the linear theory changes character: the plane walk is transient, the zero-mode sum (2 pi)^-3 Int 1/(1 - |phi|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, is finite, and the equal-level transverse covariance sigma^2/(1 - |phi(k)|^2) ~ sigma^2/(k^T M k) is a THREE-dimensional Green function: a 1/r law at equal level, the kernel the gravity node asks for, now under the axiom's own reading. Simulation (probes/lib/formation_levelplane.py): at beta = 6 the 3+1 sphere law holds |m| = 0.93 and its structure factor matches the linear kernel within a few percent. TASK: theorems. (a) Long-range order: prove that the sphere formation law on Z^4 in level order, started from an aligned plane, keeps liminf_t E[m_t . e] > 0 for beta large (routes: a comparison of the transverse field with the linear model using block 27's sign lemma, A(kappa)/kappa decreasing; an energy-entropy or chessboard argument in level time; a Lyapunov function for the plane average). (b) The kernel: two-sided bounds on the equal-level transverse structure factor of the form c_1 sigma^2/(1-u) <= S(k) <= c_2 sigma^2/(1-u) at small k. (c) The dichotomy: for which event-lattice dimensions does a continuous menu keep memory under formation, and is 3+1 the lowest? (d) What the drift (1,1,1)/4 per level and the non-equilibrium response (a forward-cone multinomial, not the covariance) mean for a node that reads the kernel. State exactly what you prove and what stays executed only. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-in-3plus1:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-in-3plus1",
+  "title": "Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel",
+  "what": "DERIVATION, independent attempt 2 of 6: Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel. LEAD (executed on small lattices on 2026-09-18, not proved). The campaign studied the formation law on Z^3 in level order: two-dimensional level planes, where the sphere menu loses its memory (block 26, PR #8170) and the equal-level kernel is a plane Green function, logarithmic (block 35, PR #8180). On the event lattice Z^4 (a record at x formed from x - e_1, ..., x - e_4; level planes three-dimensional) the linear theory changes character: the plane walk is transient, the zero-mode sum (2 pi)^-3 Int 1/(1 - |phi|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, is finite, and the equal-level transverse covariance sigma^2/(1 - |phi(k)|^2) ~ sigma^2/(k^T M k) is a THREE-dimensional Green function: a 1/r law at equal level, the kernel the gravity node asks for, now under the axiom's own reading. Simulation (probes/lib/formation_levelplane.py): at beta = 6 the 3+1 sphere law holds |m| = 0.93 and its structure factor matches the linear kernel within a few percent. TASK: theorems. (a) Long-range order: prove that the sphere formation law on Z^4 in level order, started from an aligned plane, keeps liminf_t E[m_t . e] > 0 for beta large (routes: a comparison of the transverse field with the linear model using block 27's sign lemma, A(kappa)/kappa decreasing; an energy-entropy or chessboard argument in level time; a Lyapunov function for the plane average). (b) The kernel: two-sided bounds on the equal-level transverse structure factor of the form c_1 sigma^2/(1-u) <= S(k) <= c_2 sigma^2/(1-u) at small k. (c) The dichotomy: for which event-lattice dimensions does a continuous menu keep memory under formation, and is 3+1 the lowest? (d) What the drift (1,1,1)/4 per level and the non-equilibrium response (a forward-cone multinomial, not the covariance) mean for a node that reads the kernel. State exactly what you prove and what stays executed only. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-in-3plus1:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-in-3plus1",
+  "title": "Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel",
+  "what": "DERIVATION, independent attempt 3 of 6: Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel. LEAD (executed on small lattices on 2026-09-18, not proved). The campaign studied the formation law on Z^3 in level order: two-dimensional level planes, where the sphere menu loses its memory (block 26, PR #8170) and the equal-level kernel is a plane Green function, logarithmic (block 35, PR #8180). On the event lattice Z^4 (a record at x formed from x - e_1, ..., x - e_4; level planes three-dimensional) the linear theory changes character: the plane walk is transient, the zero-mode sum (2 pi)^-3 Int 1/(1 - |phi|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, is finite, and the equal-level transverse covariance sigma^2/(1 - |phi(k)|^2) ~ sigma^2/(k^T M k) is a THREE-dimensional Green function: a 1/r law at equal level, the kernel the gravity node asks for, now under the axiom's own reading. Simulation (probes/lib/formation_levelplane.py): at beta = 6 the 3+1 sphere law holds |m| = 0.93 and its structure factor matches the linear kernel within a few percent. TASK: theorems. (a) Long-range order: prove that the sphere formation law on Z^4 in level order, started from an aligned plane, keeps liminf_t E[m_t . e] > 0 for beta large (routes: a comparison of the transverse field with the linear model using block 27's sign lemma, A(kappa)/kappa decreasing; an energy-entropy or chessboard argument in level time; a Lyapunov function for the plane average). (b) The kernel: two-sided bounds on the equal-level transverse structure factor of the form c_1 sigma^2/(1-u) <= S(k) <= c_2 sigma^2/(1-u) at small k. (c) The dichotomy: for which event-lattice dimensions does a continuous menu keep memory under formation, and is 3+1 the lowest? (d) What the drift (1,1,1)/4 per level and the non-equilibrium response (a forward-cone multinomial, not the covariance) mean for a node that reads the kernel. State exactly what you prove and what stays executed only. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-in-3plus1:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-in-3plus1",
+  "title": "Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel",
+  "what": "DERIVATION, independent attempt 4 of 6: Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel. LEAD (executed on small lattices on 2026-09-18, not proved). The campaign studied the formation law on Z^3 in level order: two-dimensional level planes, where the sphere menu loses its memory (block 26, PR #8170) and the equal-level kernel is a plane Green function, logarithmic (block 35, PR #8180). On the event lattice Z^4 (a record at x formed from x - e_1, ..., x - e_4; level planes three-dimensional) the linear theory changes character: the plane walk is transient, the zero-mode sum (2 pi)^-3 Int 1/(1 - |phi|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, is finite, and the equal-level transverse covariance sigma^2/(1 - |phi(k)|^2) ~ sigma^2/(k^T M k) is a THREE-dimensional Green function: a 1/r law at equal level, the kernel the gravity node asks for, now under the axiom's own reading. Simulation (probes/lib/formation_levelplane.py): at beta = 6 the 3+1 sphere law holds |m| = 0.93 and its structure factor matches the linear kernel within a few percent. TASK: theorems. (a) Long-range order: prove that the sphere formation law on Z^4 in level order, started from an aligned plane, keeps liminf_t E[m_t . e] > 0 for beta large (routes: a comparison of the transverse field with the linear model using block 27's sign lemma, A(kappa)/kappa decreasing; an energy-entropy or chessboard argument in level time; a Lyapunov function for the plane average). (b) The kernel: two-sided bounds on the equal-level transverse structure factor of the form c_1 sigma^2/(1-u) <= S(k) <= c_2 sigma^2/(1-u) at small k. (c) The dichotomy: for which event-lattice dimensions does a continuous menu keep memory under formation, and is 3+1 the lowest? (d) What the drift (1,1,1)/4 per level and the non-equilibrium response (a forward-cone multinomial, not the covariance) mean for a node that reads the kernel. State exactly what you prove and what stays executed only. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-in-3plus1:a5",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-in-3plus1",
+  "title": "Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel",
+  "what": "DERIVATION, independent attempt 5 of 6: Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel. LEAD (executed on small lattices on 2026-09-18, not proved). The campaign studied the formation law on Z^3 in level order: two-dimensional level planes, where the sphere menu loses its memory (block 26, PR #8170) and the equal-level kernel is a plane Green function, logarithmic (block 35, PR #8180). On the event lattice Z^4 (a record at x formed from x - e_1, ..., x - e_4; level planes three-dimensional) the linear theory changes character: the plane walk is transient, the zero-mode sum (2 pi)^-3 Int 1/(1 - |phi|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, is finite, and the equal-level transverse covariance sigma^2/(1 - |phi(k)|^2) ~ sigma^2/(k^T M k) is a THREE-dimensional Green function: a 1/r law at equal level, the kernel the gravity node asks for, now under the axiom's own reading. Simulation (probes/lib/formation_levelplane.py): at beta = 6 the 3+1 sphere law holds |m| = 0.93 and its structure factor matches the linear kernel within a few percent. TASK: theorems. (a) Long-range order: prove that the sphere formation law on Z^4 in level order, started from an aligned plane, keeps liminf_t E[m_t . e] > 0 for beta large (routes: a comparison of the transverse field with the linear model using block 27's sign lemma, A(kappa)/kappa decreasing; an energy-entropy or chessboard argument in level time; a Lyapunov function for the plane average). (b) The kernel: two-sided bounds on the equal-level transverse structure factor of the form c_1 sigma^2/(1-u) <= S(k) <= c_2 sigma^2/(1-u) at small k. (c) The dichotomy: for which event-lattice dimensions does a continuous menu keep memory under formation, and is 3+1 the lowest? (d) What the drift (1,1,1)/4 per level and the non-equilibrium response (a forward-cone multinomial, not the covariance) mean for a node that reads the kernel. State exactly what you prove and what stays executed only. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:formation-in-3plus1:a6",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-in-3plus1",
+  "title": "Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel",
+  "what": "DERIVATION, independent attempt 6 of 6: Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel. LEAD (executed on small lattices on 2026-09-18, not proved). The campaign studied the formation law on Z^3 in level order: two-dimensional level planes, where the sphere menu loses its memory (block 26, PR #8170) and the equal-level kernel is a plane Green function, logarithmic (block 35, PR #8180). On the event lattice Z^4 (a record at x formed from x - e_1, ..., x - e_4; level planes three-dimensional) the linear theory changes character: the plane walk is transient, the zero-mode sum (2 pi)^-3 Int 1/(1 - |phi|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, is finite, and the equal-level transverse covariance sigma^2/(1 - |phi(k)|^2) ~ sigma^2/(k^T M k) is a THREE-dimensional Green function: a 1/r law at equal level, the kernel the gravity node asks for, now under the axiom's own reading. Simulation (probes/lib/formation_levelplane.py): at beta = 6 the 3+1 sphere law holds |m| = 0.93 and its structure factor matches the linear kernel within a few percent. TASK: theorems. (a) Long-range order: prove that the sphere formation law on Z^4 in level order, started from an aligned plane, keeps liminf_t E[m_t . e] > 0 for beta large (routes: a comparison of the transverse field with the linear model using block 27's sign lemma, A(kappa)/kappa decreasing; an energy-entropy or chessboard argument in level time; a Lyapunov function for the plane average). (b) The kernel: two-sided bounds on the equal-level transverse structure factor of the form c_1 sigma^2/(1-u) <= S(k) <= c_2 sigma^2/(1-u) at small k. (c) The dichotomy: for which event-lattice dimensions does a continuous menu keep memory under formation, and is 3+1 the lowest? (d) What the drift (1,1,1)/4 per level and the non-equilibrium response (a forward-cone multinomial, not the covariance) mean for a node that reads the kernel. State exactly what you prove and what stays executed only. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:re-recording:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "re-recording",
+  "title": "If records re-form: the stationary law of re-recording with the covariant rule",
+  "what": "DERIVATION, independent attempt 1 of 4: If records re-form: the stationary law of re-recording with the covariant rule. AXIOM-ADJACENT, derive consequences only; nothing here assumes re-recording is admissible. The campaign's formation law writes each record once. Suppose instead a site's record is re-drawn from the covariant rule K(s | neighbours) prop. to exp(beta s.S), S the sum of the CURRENT records of its six neighbours on Z^3. (a) Asynchronous re-recording (one site at a time, any clock rates): show by exact detailed balance on finite windows that the stationary law is the static law exp(beta sum s.s') -- so the 'frozen' comparator of blocks 01-24 would be the equilibrium of a universe in which records keep re-forming, and block 19's Green-function kernel its equal-time covariance. (b) Synchronous re-recording (all sites at once): show the chain is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|), Z the normalizer of the rule (the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') is the key), a Gibbs law with a many-body interaction; compute its small-window marginals exactly for the six-axis menu and compare with the static law; decide whether it orders and what its transverse kernel is at large beta (sphere menu: expand log Z(beta|S|)). (c) Which of the programme's results (uniqueness regions, the ordered side, the kernel, the menus) transfer to each case. Deliver exact finite checks for every identity. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/re-recording/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/re-recording/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:re-recording:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "re-recording",
+  "title": "If records re-form: the stationary law of re-recording with the covariant rule",
+  "what": "DERIVATION, independent attempt 2 of 4: If records re-form: the stationary law of re-recording with the covariant rule. AXIOM-ADJACENT, derive consequences only; nothing here assumes re-recording is admissible. The campaign's formation law writes each record once. Suppose instead a site's record is re-drawn from the covariant rule K(s | neighbours) prop. to exp(beta s.S), S the sum of the CURRENT records of its six neighbours on Z^3. (a) Asynchronous re-recording (one site at a time, any clock rates): show by exact detailed balance on finite windows that the stationary law is the static law exp(beta sum s.s') -- so the 'frozen' comparator of blocks 01-24 would be the equilibrium of a universe in which records keep re-forming, and block 19's Green-function kernel its equal-time covariance. (b) Synchronous re-recording (all sites at once): show the chain is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|), Z the normalizer of the rule (the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') is the key), a Gibbs law with a many-body interaction; compute its small-window marginals exactly for the six-axis menu and compare with the static law; decide whether it orders and what its transverse kernel is at large beta (sphere menu: expand log Z(beta|S|)). (c) Which of the programme's results (uniqueness regions, the ordered side, the kernel, the menus) transfer to each case. Deliver exact finite checks for every identity. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/re-recording/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/re-recording/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:re-recording:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "re-recording",
+  "title": "If records re-form: the stationary law of re-recording with the covariant rule",
+  "what": "DERIVATION, independent attempt 3 of 4: If records re-form: the stationary law of re-recording with the covariant rule. AXIOM-ADJACENT, derive consequences only; nothing here assumes re-recording is admissible. The campaign's formation law writes each record once. Suppose instead a site's record is re-drawn from the covariant rule K(s | neighbours) prop. to exp(beta s.S), S the sum of the CURRENT records of its six neighbours on Z^3. (a) Asynchronous re-recording (one site at a time, any clock rates): show by exact detailed balance on finite windows that the stationary law is the static law exp(beta sum s.s') -- so the 'frozen' comparator of blocks 01-24 would be the equilibrium of a universe in which records keep re-forming, and block 19's Green-function kernel its equal-time covariance. (b) Synchronous re-recording (all sites at once): show the chain is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|), Z the normalizer of the rule (the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') is the key), a Gibbs law with a many-body interaction; compute its small-window marginals exactly for the six-axis menu and compare with the static law; decide whether it orders and what its transverse kernel is at large beta (sphere menu: expand log Z(beta|S|)). (c) Which of the programme's results (uniqueness regions, the ordered side, the kernel, the menus) transfer to each case. Deliver exact finite checks for every identity. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/re-recording/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/re-recording/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:re-recording:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "re-recording",
+  "title": "If records re-form: the stationary law of re-recording with the covariant rule",
+  "what": "DERIVATION, independent attempt 4 of 4: If records re-form: the stationary law of re-recording with the covariant rule. AXIOM-ADJACENT, derive consequences only; nothing here assumes re-recording is admissible. The campaign's formation law writes each record once. Suppose instead a site's record is re-drawn from the covariant rule K(s | neighbours) prop. to exp(beta s.S), S the sum of the CURRENT records of its six neighbours on Z^3. (a) Asynchronous re-recording (one site at a time, any clock rates): show by exact detailed balance on finite windows that the stationary law is the static law exp(beta sum s.s') -- so the 'frozen' comparator of blocks 01-24 would be the equilibrium of a universe in which records keep re-forming, and block 19's Green-function kernel its equal-time covariance. (b) Synchronous re-recording (all sites at once): show the chain is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|), Z the normalizer of the rule (the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') is the key), a Gibbs law with a many-body interaction; compute its small-window marginals exactly for the six-axis menu and compare with the static law; decide whether it orders and what its transverse kernel is at large beta (sphere menu: expand log Z(beta|S|)). (c) Which of the programme's results (uniqueness regions, the ordered side, the kernel, the menus) transfer to each case. Deliver exact finite checks for every identity. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/re-recording/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/re-recording/<name>/check.py\""
+ },
+ {
+  "id": "X:formation-3plus1-sphere-memory",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 0.4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 0.4 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 0.5 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 0.6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 0.6 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 0.75 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 1 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 1.5 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 6 64 2000 1000 1"
+   },
+   {
+    "extra": "3 sphere 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 12 64 2000 1000 1"
+   }
+  ],
+  "what": "NEW PHYSICS, 3+1. The sphere formation law on the event lattice Z^4 in level order (three-dimensional level planes, four predecessors). Linear theory predicts what 2+1 lacks: the plane walk is transient, so an aligned start keeps a positive magnetization at strong coupling. The table |m|(level) by beta and L locates the coupling where memory appears and the plateau's height. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 20 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:formation-2plus1-sphere-memory",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 sphere 0.4 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 0.5 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 0.6 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 0.75 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 1 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 1.5 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 2 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 3 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 6 256 4000 2000 1"
+   },
+   {
+    "extra": "2 sphere 12 256 4000 2000 1"
+   }
+  ],
+  "what": "The side-by-side comparison for the 3+1 table: the same law on Z^3 (two-dimensional level planes), where block 26 found no plateau at any coupling. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 10 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:formation-3plus1-kernel",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 3 48 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 3 48 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 3 64 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 3 64 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 3 96 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 3 96 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 6 48 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 6 48 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 6 64 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 6 64 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 6 96 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 6 96 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 12 48 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 12 48 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 12 64 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 12 64 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 12 96 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 12 96 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 24 48 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 24 48 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 24 64 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 24 64 1500 500 2"
+   },
+   {
+    "extra": "3 sphere 24 96 1500 500 1"
+   },
+   {
+    "extra": "3 sphere 24 96 1500 500 2"
+   }
+  ],
+  "what": "NEW PHYSICS, 3+1. The equal-level transverse structure factor of the ordered sphere formation law on three-dimensional level planes against the linear kernel sigma^2/(1 - |phi(k)|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, whose small-k form is a three-dimensional Green function (a 1/r covariance at equal level). The shells give the normalization c(beta, |k|); the covariance column gives the 1/r law at finite L. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:formation-linear-calibration",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 linear 6 128 3000 1000 1"
+   },
+   {
+    "extra": "3 linear 6 48 2000 800 1"
+   },
+   {
+    "extra": "3 linear 6 64 1500 600 1"
+   }
+  ],
+  "what": "Calibration of the estimator on the Gaussian gain-one model (expected shell ratios 1 within sampling error) in 2+1 and 3+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 3 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:menu-size-threshold",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 21600,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 axes6 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 corners8 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 edges12 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib20 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib50 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib100 12 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 0.75 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 fib200 12 128 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 corners8 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 edges12 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib20 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib50 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib100 12 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 0.75 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 fib200 12 32 3000 1500 1"
+   }
+  ],
+  "what": "NEW PHYSICS. Finite menus of unit vectors with the covariant weight exp(beta s.S): six axes, eight corners, twelve edge midpoints, and 20, 50, 100, 200 near-uniform points. Question: how does the coupling at which memory appears grow with the menu's size in 2+1 (where the sphere never keeps memory), and does it stay bounded in 3+1 (where the linear theory says the sphere does)? One run per (dim, menu, beta). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 140 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
  },
  {
   "id": "J:falsifier-implementation",

@@ -1,0 +1,19 @@
+dim=3 (event lattice Z^4) menu=linear beta=6.0 L=24 T=400 T0=200 seed=3; predecessors n=4; sigma^2=0.039931
+memory table: level, |m|, m.e0
+equal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:
+   |k| in [0,0.3): 1.0111 (n=6)
+   |k| in [0.3,0.6): 0.9380 (n=50)
+   |k| in [0.6,1.0): 1.0004 (n=194)
+   |k| in [1.0,1.5): 0.9975 (n=500)
+   |k| in [1.5,2.2): 0.9943 (n=1766)
+   |k| in [2.2,3.2): 0.9988 (n=5109)
+   |k| in [3.2,6.0): 0.9993 (n=6198)
+site covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)
+     1  +0.015603  +0.015925  0.980  +0.01592
+     2  +0.006498  +0.006685  0.972  +0.01337
+     3  +0.003491  +0.003620  0.964  +0.01086
+     4  +0.001970  +0.002134  0.923  +0.00853
+     6  +0.000586  +0.000709  0.827  +0.00425
+     8  +0.000193  +0.000072  2.681  +0.00058
+    12  -0.000062  -0.000309  0.202  -0.00371
+SUMMARY: dim=3 menu=linear beta=6.0 L=24 T=400 plateau_|m|=nan lowk_ratio=1.0111 seconds=0

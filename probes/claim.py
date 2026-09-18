@@ -7,7 +7,8 @@ claim time; a claim older than LEASE_H hours is expired and may be taken over by
 from claims: a unit is done when its logs are on ai/probes.  Claims are released after the logs are pushed.
 
     python3 probes/claim.py status                      units by kind: total / done / claimed / free
-    python3 probes/claim.py next --kind J [--model M]   claim one judgment unit, create its private worktree, print the task
+    python3 probes/claim.py next --kind J [--model M]   claim one judgment unit (confirmations, derivations, attacks ...), create its private worktree, print the task
+    python3 probes/claim.py next --kind C [--model M]   the same for a worked computation (high-thinking workers)
     python3 probes/claim.py finish <unit>               push that worktree's commits, release the claim, remove the worktree
     python3 probes/claim.py release <unit>              give a claim back without finishing
 Mechanical units (P, R, M, F, S) are claimed and run by probes/work_loop.py; nobody claims those by hand."""
@@ -75,6 +76,8 @@ def units(tasks, idx=None):
             out.append({"unit": "X-" + safe(t["id"][2:]) + f"-g{g+1:02d}", "kind": "X", "fresh": False, "runs": [{"task": t["id"], "extra": point["extra"], "box": point.get("box", "")}]})
     for t in tasks:
         if t["id"].startswith("J:") and (":PR" in t["id"] or t["id"].startswith(("J:note:", "J:derive:"))): out.append({"unit": "J-" + safe(t["id"][2:]), "kind": "J", "runs": [{"task": t["id"]}], "fresh": False})
+    for t in tasks:      # worked computations (kind C): two independent runs each, for high-thinking workers
+        if t["id"].startswith("C:"): out.append({"unit": "C-" + safe(t["id"][2:]), "kind": "C", "runs": [{"task": t["id"]}], "fresh": False})
     # derived units: every hit on a judgment or search task that no reader has triaged as a false positive gets ONE independent confirmation
     def defect_class(tid):      # executed-number defects are found by provenance audits AND by attack pattern (c): one confirmation per PR is enough
         revs = " ".join(l.get("review", "") for l in idx.get(tid, []) if l.get("hit"))

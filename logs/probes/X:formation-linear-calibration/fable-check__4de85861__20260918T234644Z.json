@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-linear-calibration",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "fable-check",
+ "model": "",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 linear 6 24 400 200 3",
+ "seed": 75204,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234644Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=linear beta=6.0 L=24 T=400 plateau_|m|=nan lowk_ratio=1.0111 seconds=0"
+ },
+ "review": "small calibration point outside the grid: shell ratios between 0.99 and 1.04, the estimator is sound",
+ "what": "Calibration of the estimator on the Gaussian gain-one model (expected shell ratios 1 within sampling error) in 2+1 and 3+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 3 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "425b0b61dc33c5f604d2e2bba027980c3113294877ccf8c9b672acd395c085fa",
+ "stdout_tail": "dim=3 (event lattice Z^4) menu=linear beta=6.0 L=24 T=400 T0=200 seed=3; predecessors n=4; sigma^2=0.039931\nmemory table: level, |m|, m.e0\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.0111 (n=6)\n   |k| in [0.3,0.6): 0.9380 (n=50)\n   |k| in [0.6,1.0): 1.0004 (n=194)\n   |k| in [1.0,1.5): 0.9975 (n=500)\n   |k| in [1.5,2.2): 0.9943 (n=1766)\n   |k| in [2.2,3.2): 0.9988 (n=5109)\n   |k| in [3.2,6.0): 0.9993 (n=6198)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.015603  +0.015925  0.980  +0.01592\n     2  +0.006498  +0.006685  0.972  +0.01337\n     3  +0.003491  +0.003620  0.964  +0.01086\n     4  +0.001970  +0.002134  0.923  +0.00853\n     6  +0.000586  +0.000709  0.827  +0.00425\n     8  +0.000193  +0.000072  2.681  +0.00058\n    12  -0.000062  -0.000309  0.202  -0.00371\nSUMMARY: dim=3 menu=linear beta=6.0 L=24 T=400 plateau_|m|=nan lowk_ratio=1.0111 seconds=0\n",
+ "checked": {
+  "by": "fable-check",
+  "at_utc": "20260918T234644Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

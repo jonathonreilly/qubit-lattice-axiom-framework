@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-falsifier-PR8158",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j8b95",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/confirm/pr8158/q4a_triangle.py",
+ "seed": 68148,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "50ad2af9",
+ "started_utc": "20260918T214908Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed Q4(a) witness is not a Z^3 window (triangle); L-path of three corners plus the fourth unrecorded is a triangle-free Z^3 window"
+ },
+ "review": "Independent graph check: Q4(a) extra vertex on two adjacent plaquette corners makes a triangle; Z^3 has no such common neighbor; L-path analogue is a Z^3 window; finder HIT confirmed",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:falsifier:PR8158/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "604bab0535afb1f2ee6e5808cbb054bc44cce87fccd3fa5b743da73b648693fd",
+ "stdout_tail": "Q4(a) triangles: [((0, 0, 0), (1, 0, 0), 'x')]\nZ^3 common neighbors of adjacent corners c0,c1: []\ncommon neighbors other than each other: []\nL-path sites [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)] is Z^3 window: True\nL-path triangles: []\n[-1,1]^3 as Z^3 window: True\nHIT: confirmed - Q4(a)'s extra site on two adjacent plaquette corners makes the triangle c0-c1-x; adjacent Z^3 vertices have no third common neighbor, so that graph is not a window of Z^3; the L-path analogue is\nSUMMARY: confirmed Q4(a) witness is not a Z^3 window (triangle); L-path of three corners plus the fourth unrecorded is a triangle-free Z^3 window\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8b95",
+  "at_utc": "20260918T214916Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Q4(a) extra site on two adjacent plaquette corners forms a triangle; Z^3 is triangle-free so the witness is not a window; L-path analogue is",
+  "by": "w-macbookpro90c72-j8b95",
+  "at_utc": "20260918T214916Z"
+ }
+}

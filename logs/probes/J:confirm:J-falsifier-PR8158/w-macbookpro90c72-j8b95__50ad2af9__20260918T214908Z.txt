@@ -1,0 +1,8 @@
+Q4(a) triangles: [((0, 0, 0), (1, 0, 0), 'x')]
+Z^3 common neighbors of adjacent corners c0,c1: []
+common neighbors other than each other: []
+L-path sites [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)] is Z^3 window: True
+L-path triangles: []
+[-1,1]^3 as Z^3 window: True
+HIT: confirmed - Q4(a)'s extra site on two adjacent plaquette corners makes the triangle c0-c1-x; adjacent Z^3 vertices have no third common neighbor, so that graph is not a window of Z^3; the L-path analogue is
+SUMMARY: confirmed Q4(a) witness is not a Z^3 window (triangle); L-path of three corners plus the fourth unrecorded is a triangle-free Z^3 window

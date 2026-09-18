@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-PR8180",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j6638",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8180/shell_ratios_independent_chain.py",
+ "seed": 70544,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c3d5c4d1",
+ "started_utc": "20260918T222904Z",
+ "elapsed_s": 146.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed in part - reproduced at the claim's two-decimal precision: beta = 12: the control's shell [0.3, 0.6) mean 0.9477 rounds to 0.95, outside the claim_scope's 0.90-0.94 (executed range at two decimals 0.90-0.95); beta = 12: the control's shell means are not rising with |k| at the claim's precision ([0.3,0.6) 0.95 then 0.93); my independent chain at beta = 12 gives the control-|k| shell [0.3, 0.6) 0.9295+-0.0020 against 0.9351 for the larger shells (-2.5 s.e.); the first shell's dip is the linearized model's own finite-level factor (0.972 expected, 0.960 simulated for the linear model); not reproduced: beta = 24 range: at two decimals the control spans 0.94-0.97 = the stated range | beta = 24 'not rising': at two decimals the control's shells are non-decreasing (0.94 then 0.97 throughout); the finder's dips are 0.001-0.004, below the claim's precision"
+ },
+ "review": "At the claim's two-decimal precision the control's beta = 12 shell [0.3, 0.6) (0.9477 -> 0.95) lies outside the claim_scope's 0.90-0.94 and breaks 'rising with |k|' (0.95 then 0.93), so those two parts are confirmed, but my independent three-replica chain (Householder vMF, other seeds, same 256^2 plane and levels) gives that shell 0.9295 +- 0.0020 and monotone shells 0.91-0.94, i.e. the control's bump is not reproduced and the claim_scope describes my chain better than its own control; the beta = 24 parts are rounding (0.9397 and 0.9714 round into 0.94-0.97, shells non-decreasing at two decimals); extra facts: the control's '|k|' is the [0, 2 pi)^2 representative (counts 132/363/... match exactly, 32735 modes with minimal-image |k| < 5 fall in no shell) and the first shell's dip matches the linearized model's finite-level factor (0.972 expected).",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack:PR8180/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "27f904d97f56caaa2028995bb51d68a1e38103c861624ebe3af58818aa944a7f",
+ "stdout_tail": " control-|k| shells at two decimals [0.91, 0.93, 0.93, 0.93, 0.94, 0.94, 0.94]: shell [0.3, 0.6) minus the mean of the larger shells = -0.0056 (-2.5 standard errors); minimal-image shells at two decimals [0.91, 0.93, 0.93, 0.93, 0.94, 0.94, 0.94]; the first shell divided by its transient factor 0.9401 against the raw 0.9113\nHIT: confirmed - beta = 12: the control's shell [0.3, 0.6) mean 0.9477 rounds to 0.95, outside the claim_scope's 0.90-0.94 (executed range at two decimals 0.90-0.95)\nHIT: confirmed - beta = 12: the control's shell means are not rising with |k| at the claim's precision ([0.3,0.6) 0.95 then 0.93)\nSUMMARY: confirmed in part - reproduced at the claim's two-decimal precision: beta = 12: the control's shell [0.3, 0.6) mean 0.9477 rounds to 0.95, outside the claim_scope's 0.90-0.94 (executed range at two decimals 0.90-0.95); beta = 12: the control's shell means are not rising with |k| at the claim's precision ([0.3,0.6) 0.95 then 0.93); my independent chain at beta = 12 gives the control-|k| shell [0.3, 0.6) 0.9295+-0.0020 against 0.9351 for the larger shells (-2.5 s.e.); the first shell's dip is the linearized model's own finite-level factor (0.972 expected, 0.960 simulated for the linear model); not reproduced: beta = 24 range: at two decimals the control spans 0.94-0.97 = the stated range | beta = 24 'not rising': at two decimals the control's shells are non-decreasing (0.94 then 0.97 throughout); the finder's dips are 0.001-0.004, below the claim's precision\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6638",
+  "at_utc": "20260918T223146Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed in part: the claim_scope's beta=12 normalization 0.90-0.94 (rising with |k|) disagrees with its control output at the claim's precision (shell [0.3,0.6) = 0.9477 -> 0.95, then 0.93); an independent 3-replica chain does not reproduce that bump (0.9295+-0.0020, monotone 0.91-0.94), so the record disagrees with its control while the law's description matches the independent chain; beta=24 parts not reproduced (rounding).",
+  "by": "w-jonathonsmac4f50-j6638",
+  "at_utc": "20260918T223146Z"
+ }
+}

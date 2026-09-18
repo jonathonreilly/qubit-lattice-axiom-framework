@@ -1,0 +1,22 @@
+4/a | charged free floor and bound (1) prefactor | runner: ck(f'target{target}_minimum_energy4d',min(weights)*4==4*d) | OK
+3u/4 | r=3u/4 and cell perturbation norm | note: There are positive constants delta,c depending on the fixed cell interaction geometry but not R,G,d or endpoint location, such that, with u= | OK
+3cr | kappa=3cr | note: There are positive constants delta,c depending on the fixed cell interaction geometry but not R,G,d or endpoint location, such that, with u= | OK
+(1-kappa)d | bound (1) and resolvent radius | note: E_xy,R-E_0,R >= (4/a)(1-kappa)d.             (1) | OK
+gap 1 | cell vacuum gap exactly 1 for every R>=1 | note: Group three outgoing finite link carriers into each cubic cell z. Set h_(z,R)=(a/4)sum_(e tail z)K_e,R. The unique cell vacuum is unchanged  | OK
+4d/a | charged free floor | note: Thus every nonzero charged label block connects x to y with occupied links. It contains at leastd occupied links, each of energy at least4/a | OK
+9 | endpoint source dimension | note: Tensor with the9-dimensional endpoint space. Expanding one coefficient vector in an orthonormal source basis and applying (2), triangle ineq | OK
+sqrt9 | factor 3=sqrt(9) independent of irrep dim | note: The factor3=sqrt9 is independent of every link representation dimension. For coefficient norm ||w||_1=sum_I||w_I||, since H_(I,0)>=|I|, | OK
+h_R | R²-floor(R²/4)+3R | note: h_R=R²-floor(R²/4)+3R, theta_bar=8ud/h_R. | OK
+8ud | theta_bar=8ud/h_R | note: h_R=R²-floor(R²/4)+3R, theta_bar=8ud/h_R. | OK
+sqrt(8u) | upper envelope (4) | note: <= [1+sqrt(theta_bar)(1+sqrt(8u)+2u) | OK
+32u | 2u sqrt(32u/h_R) in (4) | note: +2u sqrt(32u/h_R)]/(1-theta_bar).  (4) | OK
+18 | exact helper controls | cache: TOTAL: 18 | OK
+243 | R1 center flows per cube endpoint pair | cache: per_element: 8 checks; two actual cube endpoint pairs: all243 center flows, connectivity and minimal occupied energies | OK
+2 | two cube endpoint pairs | cache: per_element: 8 checks; two actual cube endpoint pairs: all243 center flows, connectivity and minimal occupied energies | OK
+3Delta | K_e=-3 Delta_e/(2a) | note: On the FULL tensor carrier put H_R=K_R+sum_f P_R V_f P_R, with K_e=-3Delta_e/(2a), V_f=v[1-ReTr(U_f)/3], a>0,v>=0. Tr(T_A T_B)=delta_AB, so  | OK
+p²+pq+q²+3p+3q | one-link electric energies /a | note: On the FULL tensor carrier put H_R=K_R+sum_f P_R V_f P_R, with K_e=-3Delta_e/(2a), V_f=v[1-ReTr(U_f)/3], a>0,v>=0. Tr(T_A T_B)=delta_AB, so  | OK
+(8)-(15) | Yarotsky 0411042 Section 2 equations | note: The mathematical input is Yarotsky, arXiv:math-ph/0411042, Section2 equations(8)–(15), not merely its unlabelled spectral circles. The paper | OK
+IDENTITY | h_R=R^2-floor(R^2/4)+3R positive increasing R=1..20 | OK
+IDENTITY | 3=sqrt(9) | OK
+IDENTITY | 243=3^5 | OK
+SUMMARY: 18 theorem numbers, 0 unsourced

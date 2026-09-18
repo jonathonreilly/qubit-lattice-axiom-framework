@@ -1,0 +1,36 @@
+R1 Hölder (dot-product phi, all tuples k=1..6):
+  (3, 1, 2): bound True, equality=functions coincide True, strict k>=2 True
+  (5, 2, 4): bound True, equality=functions coincide True, strict k>=2 True
+  (7, 3, 5): bound True, equality=functions coincide True, strict k>=2 True
+  (1, 3, 2): bound True, equality=functions coincide True, strict k>=2 True
+  (2, 2, 1): bound True, equality=functions coincide True, strict k>=2 True
+R2 AM-GM k=2 identity on nonnegative integers: xy <= (x^2+y^2)/2:
+  2xy <= x^2+y^2 on {0..7}^2: True (iff (x-y)^2 >= 0)
+R3 windows: Z brute-force Python int; D forward subset-DP; orders cross-check n<=8; cycle min max k:
+  plaquette  n=4 |E|=4 (3, 1, 2): Z=20784 D=22464 D_orders=22464 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  plaquette  n=4 |E|=4 (5, 2, 4): Z=280086 D=295182 D_orders=295182 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  plaquette  n=4 |E|=4 (7, 3, 5): Z=810768 D=853200 D_orders=853200 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  plaquette  n=4 |E|=4 (1, 3, 2): Z=20784 D=22464 D_orders=22464 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  plaquette  n=4 |E|=4 (2, 2, 1): Z=4128 D=4608 D_orders=4608 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  rect2x3    n=6 |E|=7 (3, 1, 2): Z=6000000 D=7008768 D_orders=7008768 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  rect2x3    n=6 |E|=7 (5, 2, 4): Z=568472046 D=631394298 D_orders=631394298 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  rect2x3    n=6 |E|=7 (7, 3, 5): Z=3651973440 D=4044168000 D_orders=4044168000 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  rect2x3    n=6 |E|=7 (1, 3, 2): Z=6000000 D=7008768 D_orders=7008768 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  rect2x3    n=6 |E|=7 (2, 2, 1): Z=355200 D=442368 D_orders=442368 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  cube       n=8 |E|=12 (3, 1, 2): Z=6982520832 D=10933678080 D_orders=10933678080 min_maxk=3 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  cube       n=8 |E|=12 (5, 2, 4): Z=17002040556294 D=22841951518746 D_orders=22841951518746 min_maxk=3 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  cube       n=8 |E|=12 (7, 3, 5): Z=412507735200000 D=555911333280000 D_orders=555911333280000 min_maxk=3 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  cube       n=8 |E|=12 (1, 3, 2): Z=6982520832 D=10933678080 D_orders=10933678080 min_maxk=3 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  cube       n=8 |E|=12 (2, 2, 1): Z=56074752 D=106168320 D_orders=106168320 min_maxk=3 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  sq3x3      n=9 |E|=12 (3, 1, 2): Z=41671876608 D=56855126016 D_orders=56855126016 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  sq3x3      n=9 |E|=12 (2, 2, 1): Z=328977408 D=509607936 D_orders=509607936 min_maxk=2 Z<D=True Z==D=False cycle_lemma=True stated_row=True
+  path3      n=3 |E|=2 (3, 1, 2): Z=864 D=864 D_orders=864 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True
+  path3      n=3 |E|=2 (5, 2, 4): Z=3174 D=3174 D_orders=3174 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True
+  path3      n=3 |E|=2 (7, 3, 5): Z=5400 D=5400 D_orders=5400 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True
+  path3      n=3 |E|=2 (1, 3, 2): Z=864 D=864 D_orders=864 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True
+  path3      n=3 |E|=2 (2, 2, 1): Z=384 D=384 D_orders=384 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True
+R4 Step 1 on the plaquette, value-dependent greedy policy:
+  (3,1,2): sim=Σ ρ μ_σ on 1296 patterns: True; constant mass 3/832
+  constant mass 3/832 <= p^|E|/D = 3/832: True
+HIT: confirmed - the claim survives; independently: Hölder Σ_s Π φ(s,a_i) <= N_k on all M^k for k<=6 at five rules (equality iff the functions φ(·,a_i) coincide, which is aligned tuples, or one antipodal pair when p=q); AM-GM k=2 as (x-y)^2>=0; Z < D and every order has a site with k>=2 on plaquette/2x3/cube/3x3; Z=D and some order with all k<=1 on the path of 3; μ_σ(constant)=p^|E|/D_σ by multiplying r(b|A) along a min-D order; Step 1 identity μ_S(v)=Σ_σ ρ(σ|v) μ_σ(v) on all 6^4 plaquette patterns for a value-dependent policy, with constant mass <= p^|E|/D; author's table rows recomputed (dot-product phi, Python int Z, forward subset DP)
+SUMMARY: confirmed - static law is not in the hull of adapted formation laws on a cyclic window; f=1[constant] separates; Z<D by Hölder+cycle; independent checks hold

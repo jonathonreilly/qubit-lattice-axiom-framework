@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-static-law-in-the-hull-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j5dc2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/static-law-in-the-hull/referee_w-macbookpro90c72-j5dc2/check.py",
+ "seed": 74731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9bf7c9f2",
+ "started_utc": "20260918T233851Z",
+ "elapsed_s": 15.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - static law is not in the hull of adapted formation laws on a cyclic window; f=1[constant] separates; Z<D by H\u00f6lder+cycle; independent checks hold"
+ },
+ "review": "referee confirms: Step 1-7 hold; independent H\u00f6lder on all M^k k<=6, Z<D on plaquette/2x3/cube/3x3, Z=D on path3, Step 1 identity on 6^4 plaquette patterns; f=1[constant] separates; no failing step",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:static-law-in-the-hull:a1/; its files are probes/work/derive/static-law-in-the-hull/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/static-law-in-the-hull/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ac36081c4f75f53dc2b0ee457d93720d4c2e1b2f801bf5bfd687029a9b3590e4",
+ "stdout_tail": "tated_row=True\n  path3      n=3 |E|=2 (5, 2, 4): Z=3174 D=3174 D_orders=3174 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True\n  path3      n=3 |E|=2 (7, 3, 5): Z=5400 D=5400 D_orders=5400 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True\n  path3      n=3 |E|=2 (1, 3, 2): Z=864 D=864 D_orders=864 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True\n  path3      n=3 |E|=2 (2, 2, 1): Z=384 D=384 D_orders=384 min_maxk=1 Z<D=False Z==D=True cycle_lemma=True stated_row=True\nR4 Step 1 on the plaquette, value-dependent greedy policy:\n  (3,1,2): sim=\u03a3 \u03c1 \u03bc_\u03c3 on 1296 patterns: True; constant mass 3/832\n  constant mass 3/832 <= p^|E|/D = 3/832: True\nHIT: confirmed - the claim survives; independently: H\u00f6lder \u03a3_s \u03a0 \u03c6(s,a_i) <= N_k on all M^k for k<=6 at five rules (equality iff the functions \u03c6(\u00b7,a_i) coincide, which is aligned tuples, or one antipodal pair when p=q); AM-GM k=2 as (x-y)^2>=0; Z < D and every order has a site with k>=2 on plaquette/2x3/cube/3x3; Z=D and some order with all k<=1 on the path of 3; \u03bc_\u03c3(constant)=p^|E|/D_\u03c3 by multiplying r(b|A) along a min-D order; Step 1 identity \u03bc_S(v)=\u03a3_\u03c3 \u03c1(\u03c3|v) \u03bc_\u03c3(v) on all 6^4 plaquette patterns for a value-dependent policy, with constant mass <= p^|E|/D; author's table rows recomputed (dot-product phi, Python int Z, forward subset DP)\nSUMMARY: confirmed - static law is not in the hull of adapted formation laws on a cyclic window; f=1[constant] separates; Z<D by H\u00f6lder+cycle; independent checks hold\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5dc2",
+  "at_utc": "20260918T233917Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "independent referee confirms the derivation: f=1[constant] separates the static law from every adapted formation law on a cyclic window; H\u00f6lder, Z<D, Step 1 and the forest control all hold",
+  "by": "w-macbookpro90c72-j5dc2",
+  "at_utc": "20260918T233917Z"
+ }
+}

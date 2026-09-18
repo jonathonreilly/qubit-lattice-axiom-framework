@@ -1,0 +1,31 @@
+{
+ "task": "R:native_same_hamiltonian_ramp_jets_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_same_hamiltonian_ramp_jets_2026_09_08.py",
+ "seed": 64116,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204156Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0299fb9d3840e1280fda9919f1c13351b8c950b41f5c401dba79b5109c430839",
+ "stdout_tail": "ent\": \"-1/2\",\n          \"powers\": [\n            1,\n            0,\n            0,\n            0,\n            0,\n            0\n          ]\n        }\n      ],\n      []\n    ],\n    \"2\": [\n      [\n        {\n          \"coefficient\": \"1/4\",\n          \"powers\": [\n            0,\n            1,\n            0,\n            0,\n            0,\n            0\n          ]\n        }\n      ],\n      [],\n      []\n    ],\n    \"3\": [\n      [],\n      [\n        {\n          \"coefficient\": \"1/8\",\n          \"powers\": [\n            0,\n            0,\n            1,\n            0,\n            0,\n            0\n          ]\n        },\n        {\n          \"coefficient\": \"1/6\",\n          \"powers\": [\n            3,\n            0,\n            0,\n            0,\n            0,\n            0\n          ]\n        }\n      ],\n      []\n    ],\n    \"4\": [\n      [\n        {\n          \"coefficient\": \"-1/16\",\n          \"powers\": [\n            0,\n            0,\n            0,\n            1,\n            0,\n            0\n          ]\n        },\n        {\n          \"coefficient\": \"-1/3\",\n          \"powers\": [\n            2,\n            1,\n            0,\n            0,\n            0,\n            0\n          ]\n        }\n      ],\n      [],\n      []\n    ]\n  },\n  \"rss_mib\": 24.96875,\n  \"scope\": \"Exact finite jet and full graph support controls; no dynamical simulation or volume-uniform proof inferred from controls.\",\n  \"seconds\": 0.015358916018158197,\n  \"source_sha256\": \"0b4ffeacbe2365b82b6b3652cdf9183bced0c727e054c1d2a1370ebb2e87ff57\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204156Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

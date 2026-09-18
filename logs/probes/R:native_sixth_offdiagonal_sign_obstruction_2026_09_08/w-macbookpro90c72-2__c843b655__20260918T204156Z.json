@@ -1,0 +1,35 @@
+{
+ "task": "R:native_sixth_offdiagonal_sign_obstruction_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_sixth_offdiagonal_sign_obstruction_2026_09_08.py",
+ "seed": 64116,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204156Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3700 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9e44ac64e81ca69321b44d6c2022e28511d4335f8f502886dc77a400d2d02819",
+ "stdout_tail": "cefc3dc7d52c70\",\n    \"docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md\": \"a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47\",\n    \"scripts/native_sixth_coefficients_2026_09_08.py\": \"17b1c7386b01e3699d481100218d47ba3d72b5768d683170eddadf9558f5cea0\",\n    \"scripts/native_sixth_normalization_2026_09_08.py\": \"a0010f1e5362855693951ee60fd7f14e16825ad500edea763590ccb55b3fa697\",\n    \"scripts/native_sixth_l4_2026_09_08.py\": \"1bf5e4fbfd2b673998a8782ef8fabe408935188544d118f3efa1102017577d5f\",\n    \"scripts/native_sixth_l6_2026_09_08.py\": \"7e36b6d4d1aefc9f805caa6d1cba22e6bf3a2c6240e15b72439e06f077a989d6\",\n    \"scripts/native_sixth_seed_component_2026_09_08.py\": \"747d8367f23db2be682ca212bb668fb94a60dd529f3f758fefd2b00b68f4a93a\"\n  },\n  \"scope\": \"Exact finite canonical H6 and diagonal-phase obstruction; no arbitrary basis, phase, thermodynamic radius or audit verdict.\"\n}\nper_element: exact canonical rank-two sixth coefficients and all720 cycle orders.\nper_site: all delivered L4/L6 ice states and local face supports.\nper_mode: wave-operator metric and generic noncommuting normalization.\nper_block: full signed histories and negative four-step product.\nlattice_wide: finite coefficient and delivered-state controls executed; the global norm remainder and finite-volume sign window are analytical, not executed tests. No thermodynamic or arbitrary-basis claim.\nTOTAL: PASS=3700 FAIL=0\nResources: 0.388712s, 25.406MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204157Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_sixth_offdiagonal_sign_obstruction_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

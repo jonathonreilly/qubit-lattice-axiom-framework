@@ -1,0 +1,35 @@
+{
+ "task": "R:native_star_infrared_spectral_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_star_infrared_spectral_2026_09_13.py",
+ "seed": 64118,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204158Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2ecad4988278f4325cae020292d01361b91f2a1913d3d18f6bd17648be0c275f",
+ "stdout_tail": "958ef5e392\",\n  \"derivation_sha256\": \"d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c\",\n  \"parent_arithmetic\": {\n    \"coarse_interval\": [\n      \"7\",\n      \"330\"\n    ],\n    \"source_sha256\": \"fb2f42a6c4d84a17c677676ff8a7c815eef2ac9f41fd7a431796cec78f44f101\",\n    \"dependencies_sha256\": {\n      \"kept/pr8086-ward-WITNESS-dda1191fa385b3b9.json\": \"3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c\",\n      \"kept/pr8086-ward-MOMENT_FORMULAS-e5533e9eb9859404.json\": \"e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5\",\n      \"kept/pr8086-ward-TRIAL_FORMULAS-1e477e0a5d21e13c.json\": \"7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a\"\n    }\n  },\n  \"scope\": \"exact arithmetic/native cell checks and a distinct shifted finite-Fock comparator; no native spectral fit, infinite proof by enumeration or independent source review\"\n}\nper_element: Exact native cell entries, signed local fields and the complete half-Ward pairing are checked.\nper_site: Native reflection gauges are checked against literal nearest-neighbor entries; local labels are explicit.\nper_mode: Four positive native bands set the DOS normalization; the shifted Fock comparator is separately identified.\nper_block: Full three-annihilator words and ordered factorial moments retain all remaining sectors.\nlattice_wide: checked and not executed \u2014 infinite estimates follow from the number-domain, resolvent and spectral proofs, not a lattice-size extrapolation.\nTOTAL: PASS=34 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204158Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_star_infrared_spectral_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

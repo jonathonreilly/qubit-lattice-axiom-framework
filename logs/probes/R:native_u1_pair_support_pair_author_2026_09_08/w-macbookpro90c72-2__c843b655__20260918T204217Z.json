@@ -1,0 +1,31 @@
+{
+ "task": "R:native_u1_pair_support_pair_author_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_u1_pair_support_pair_author_2026_09_08.py",
+ "seed": 64137,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204217Z",
+ "elapsed_s": 12.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cd1e6bec3edbac71cf1954348453d7c165627fd5ac55b1fd3ddfce6769588a75",
+ "stdout_tail": "    10,\n      12,\n      12\n    ],\n    [\n      10,\n      12,\n      14\n    ],\n    [\n      12,\n      10,\n      8\n    ],\n    [\n      12,\n      10,\n      10\n    ],\n    [\n      12,\n      10,\n      12\n    ],\n    [\n      12,\n      12,\n      10\n    ],\n    [\n      12,\n      12,\n      12\n    ],\n    [\n      12,\n      12,\n      14\n    ],\n    [\n      12,\n      14,\n      12\n    ],\n    [\n      12,\n      14,\n      14\n    ],\n    [\n      12,\n      14,\n      16\n    ],\n    [\n      14,\n      12,\n      10\n    ],\n    [\n      14,\n      12,\n      12\n    ],\n    [\n      14,\n      12,\n      14\n    ],\n    [\n      14,\n      14,\n      12\n    ],\n    [\n      14,\n      14,\n      14\n    ],\n    [\n      14,\n      14,\n      16\n    ],\n    [\n      14,\n      16,\n      14\n    ],\n    [\n      14,\n      16,\n      16\n    ],\n    [\n      14,\n      16,\n      18\n    ],\n    [\n      16,\n      14,\n      12\n    ],\n    [\n      16,\n      14,\n      14\n    ],\n    [\n      16,\n      14,\n      16\n    ],\n    [\n      16,\n      16,\n      14\n    ],\n    [\n      16,\n      16,\n      16\n    ],\n    [\n      16,\n      16,\n      18\n    ],\n    [\n      16,\n      18,\n      16\n    ],\n    [\n      16,\n      18,\n      18\n    ],\n    [\n      16,\n      18,\n      20\n    ],\n    [\n      64,\n      62,\n      60\n    ],\n    [\n      64,\n      62,\n      62\n    ]\n  ],\n  \"seconds\": 12.254559875000268,\n  \"rss_MiB\": 21.625,\n  \"scope\": \"Direct native Pauli phases versus projected two-species CAR; selected full L4 columns, not a census.\",\n  \"executed_predicates\": 111203\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204229Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

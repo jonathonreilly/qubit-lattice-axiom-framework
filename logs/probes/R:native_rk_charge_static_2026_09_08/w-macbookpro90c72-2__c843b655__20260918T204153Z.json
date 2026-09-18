@@ -1,0 +1,31 @@
+{
+ "task": "R:native_rk_charge_static_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_rk_charge_static_2026_09_08.py",
+ "seed": 64113,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204153Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d074c5bbfcec8285149fbe72e683455a2cd41dbd773c237c774ad12b57b7dc96",
+ "stdout_tail": "{\n  \"checks\": 414211,\n  \"graphs\": [\n    {\n      \"extents\": [\n        4,\n        4,\n        4\n      ],\n      \"vertices\": 64,\n      \"edges\": 192,\n      \"deterministic_legal_ring_flips\": 54,\n      \"two_orientations\": [\n        {\n          \"pairs\": 4032,\n          \"maximum_constructed_path_length\": 7\n        },\n        {\n          \"pairs\": 4032,\n          \"maximum_constructed_path_length\": 6\n        }\n      ]\n    },\n    {\n      \"extents\": [\n        4,\n        4,\n        6\n      ],\n      \"vertices\": 96,\n      \"edges\": 288,\n      \"deterministic_legal_ring_flips\": 79,\n      \"two_orientations\": [\n        {\n          \"pairs\": 9120,\n          \"maximum_constructed_path_length\": 7\n        },\n        {\n          \"pairs\": 9120,\n          \"maximum_constructed_path_length\": 8\n        }\n      ]\n    },\n    {\n      \"extents\": [\n        8,\n        8,\n        8\n      ],\n      \"vertices\": 512,\n      \"edges\": 1536,\n      \"deterministic_legal_ring_flips\": 430,\n      \"two_orientations\": [\n        {\n          \"pairs\": 512,\n          \"maximum_constructed_path_length\": 12\n        },\n        {\n          \"pairs\": 512,\n          \"maximum_constructed_path_length\": 12\n        }\n      ]\n    }\n  ],\n  \"seconds\": 1.8371085410472006,\n  \"rss_mib\": 22.203125,\n  \"source_sha256\": \"053c37bcaeaffd5533e09a302c81e45471ffa0648b34558007064e94e9fddb2a\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204155Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

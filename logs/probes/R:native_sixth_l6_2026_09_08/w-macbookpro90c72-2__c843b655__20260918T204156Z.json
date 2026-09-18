@@ -1,0 +1,31 @@
+{
+ "task": "R:native_sixth_l6_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_sixth_l6_2026_09_08.py",
+ "seed": 64116,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204156Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dbee1f95e625f4eb2706f55003540f08d0f44788873e02c710056725458e4aba",
+ "stdout_tail": "{'corner': (1, 1, 1), 'face_order': (0, 2, 1), 'faces': [[109, 128, 112, 110], [3, 112, 21, 4], [18, 128, 21, 20]], 'six_cycle': [3, 110, 109, 18, 20, 4], 'native_B_phases': [-1, 1, 1, -1], 'effective_edge_signs': [-1, 1, 1, 1], 'closed_product': -1}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204156Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

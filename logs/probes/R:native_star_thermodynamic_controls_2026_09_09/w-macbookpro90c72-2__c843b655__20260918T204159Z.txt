@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checks": 267,
+  "physical_runs": 0,
+  "scope": "finite-hop locality, exact CAR and weighted coefficient tails"
+}

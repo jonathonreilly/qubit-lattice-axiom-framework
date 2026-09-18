@@ -1,0 +1,31 @@
+{
+ "task": "R:native_sixth_normalization_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_sixth_normalization_2026_09_08.py",
+ "seed": 64116,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204156Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "12c55363e73bd3aff6caea8b3df67864c33ea730c693600b4c65fa87616a063e",
+ "stdout_tail": "{\"checks\": 4, \"HB2\": [[\"-3/2\", \"-1/2\"], [\"-1/2\", \"-1/2\"]], \"HB4\": [[\"2\", \"3/4\"], [\"1/2\", \"1/4\"]], \"M2\": [[\"5/4\", \"1/4\"], [\"1/4\", \"1/4\"]], \"commutator\": [[\"0\", \"-1/4\"], [\"1/4\", \"0\"]], \"forward4\": [[\"2\", \"5/8\"], [\"5/8\", \"1/4\"]], \"reverse4\": [[\"2\", \"7/8\"], [\"3/8\", \"1/4\"]], \"scope\": \"Generic real rank-two finite model, used only to discriminate canonical metric direction; not native H6 evidence.\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204156Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

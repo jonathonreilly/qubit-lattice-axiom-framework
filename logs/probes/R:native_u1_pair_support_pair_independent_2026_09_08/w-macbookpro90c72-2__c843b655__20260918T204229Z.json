@@ -1,0 +1,31 @@
+{
+ "task": "R:native_u1_pair_support_pair_independent_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_u1_pair_support_pair_independent_2026_09_08.py",
+ "seed": 64149,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204229Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "75cbedf5316f1d44f191934bb9a6287e2e4e8c1fe556d8159460fd9ecf59c942",
+ "stdout_tail": "{\n  \"configurations\": 22,\n  \"D_sectors\": [\n    0,\n    2,\n    4,\n    6,\n    8,\n    10,\n    12,\n    14,\n    16,\n    64\n  ],\n  \"allowed_columns\": 3692,\n  \"forbidden_columns\": 532,\n  \"pair_columns\": 3292,\n  \"hop_columns\": 400,\n  \"automatic_adjoint_checks\": 3692,\n  \"missing_pair_minus_failures\": 3292,\n  \"local_no_double_columns\": 18,\n  \"noninvolution_witness\": [\n    \"6159754651310718302939216725882956173511351337149203963243\",\n    186\n  ],\n  \"seconds\": 0.9744511250173673,\n  \"rss_mib\": 19.09375,\n  \"executed_predicates\": 33957\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204230Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

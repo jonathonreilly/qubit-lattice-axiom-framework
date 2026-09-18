@@ -1,0 +1,35 @@
+{
+ "task": "R:native_u1_pair_and_all_low_support_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_u1_pair_and_all_low_support_2026_09_08.py",
+ "seed": 64123,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204203Z",
+ "elapsed_s": 13.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=152273 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8da867559bd0745bb710d14f766783d97c0e5954876fae8955304496ef8e2d49",
+ "stdout_tail": "a9a5f7ff7d96a3e5e77df93e9a550984ddc47\",\n    \"scripts/native_u1_pair_support_pair_author_2026_09_08.py\": \"48a7ffb91f2599c0026d405cf2f001082923b0677eb1e65b2688d013dc81a5ff\",\n    \"scripts/native_u1_pair_support_pair_independent_2026_09_08.py\": \"3f884fe0bcbf5995baf4f65246da66ece11ca360b4651a5c51d6dd0b29218b45\",\n    \"scripts/native_u1_pair_support_support_author_2026_09_08.py\": \"840890644a0bd30732683a3d31f80cb864929d2a346ff49dc230161a8f89178e\",\n    \"scripts/native_u1_pair_support_support_independent_2026_09_08.py\": \"0adfbc7f3af3d0a6f14ec42abf53f88c67015ae4554a8ff121f2841e3c8092a9\",\n    \"docs/work_history/repo/review_feedback/pr8043-native-u1-pair-evidence/inputs/GLOBAL_D4_SEED.json\": \"f8684324f4dc90e3d334a170f42b6a91accbf3b8166cbfcb3dfd99b7bbf6738e\"\n  },\n  \"scope\": \"Selected exact operator columns and constructive routes; general proofs conditional, no physics selection or audit verdict.\"\n}\nper_element: oriented native A and signed pair/hopping CAR columns, including forbidden toggles.\nper_site: no-double and integer Gauss support on both sublattices.\nper_mode: explicit two-species adjoint and off-D block-phase comparisons.\nper_block: actual L4 composed paths and independent relabeled native columns.\nlattice_wide: executed selected constructive low-domain paths on L4 and K6,6, with closed minus witnesses; analytical general support proof checked and not executed as an exhaustive orientation census.\nTOTAL: PASS=152273 FAIL=0\nResources: 13.401108s, 24.516MiB; timeout180s RSS384MiB.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204217Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_u1_pair_and_all_low_support_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

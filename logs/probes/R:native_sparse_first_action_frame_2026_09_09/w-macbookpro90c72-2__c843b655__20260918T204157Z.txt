@@ -1,0 +1,7 @@
+{"alpha_computed": false, "checks": 95, "native_arrays_replayed": false, "native_leakage_computed": false, "propagation_computed": false, "scope": "conditional analytical closure; finite supporting controls only", "status": "PASS_SMALL_EXACT_SUPPORT"}
+TOTAL: PASS=95 FAIL=0
+per_element: exact small paired-projection, Gram and signed-source predicates executed; no native arrays replayed
+per_site: seven-site synthetic source identities executed; full physical source assembly not executed
+per_mode: formal rank-two action and Gamma identities checked; native propagation remains uncomputed
+per_block: five declared source patterns and sparse census checked; original domain remains distinct from DATA
+lattice_wide: analytical closure only; no uniform physical leakage or thermodynamic computation performed

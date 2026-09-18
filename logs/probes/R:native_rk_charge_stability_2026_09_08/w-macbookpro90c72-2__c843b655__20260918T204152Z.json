@@ -1,0 +1,35 @@
+{
+ "task": "R:native_rk_charge_stability_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_rk_charge_stability_2026_09_08.py",
+ "seed": 64112,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204152Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=419017 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5e21fd13d3b5e6a79aed445fac3f5a138b032feb3f4d3aefcad3389064c88239",
+ "stdout_tail": "ddce9cee30a673e0f93d925d83242425c95f1cd9\",\n    \"docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"scripts/native_rk_charge_static_2026_09_08.py\": \"053c37bcaeaffd5533e09a302c81e45471ffa0648b34558007064e94e9fddb2a\",\n    \"scripts/native_rk_charge_mobile_2026_09_08.py\": \"6239837346ccfb17a55637e9cb36c13ede3b1cbb7f4d2931689e495978591511\",\n    \"scripts/native_rk_charge_ordered_holes_2026_09_08.py\": \"3a881f6d5e47e45b25f0c2ab71b83865c185c64c5cc628705af6613d3fbf6482\",\n    \"scripts/native_rk_charge_counting_2026_09_08.py\": \"5910b1483c44c11ad6628b53b13be45e049270bfcf1f1ea3bc5f8d5880c9ce8a\"\n  },\n  \"scope\": \"Finite static support and signed native hopping controls; operator theorem is in the note. No spectral census, physical mass or neutral gap.\"\n}\nper_element: exact alternating-plaquette matrix and actual native hopping phase conjugation.\nper_site: all thirty charged degree patterns have four possible source edges.\nper_mode: no spectral modes diagonalized; charged-sector estimate follows from the proved operator inequality.\nper_block: declared finite pair-support fixtures and bounded L4 hopping neighborhoods; repeated rows disclosed.\nlattice_wide: checked and not executed \u2014 analytical proof covers finite even cubic tori with extents at least four and supplied low-charge dynamics; no lattice-wide numerical census.\nTOTAL: PASS=419017 FAIL=0\nResources: 1.701900s, 24.391MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204153Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_rk_charge_stability_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:native_star_low_energy_operator_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_star_low_energy_operator_2026_09_13.py",
+ "seed": 64118,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204158Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=69 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e740389fe23f01950e8fab919269c0eb0b230ea7acca5b8d628e0b9f70b9e52f",
+ "stdout_tail": "c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c\",\n    \"parent_arithmetic\": {\n      \"coarse_interval\": [\n        \"7\",\n        \"330\"\n      ],\n      \"source_sha256\": \"fb2f42a6c4d84a17c677676ff8a7c815eef2ac9f41fd7a431796cec78f44f101\",\n      \"dependencies_sha256\": {\n        \"kept/pr8086-ward-WITNESS-dda1191fa385b3b9.json\": \"3036111cb7c0ca9f822e9d7fc7cbcff33e18543b0413640458ffc64cc9a8540c\",\n        \"kept/pr8086-ward-MOMENT_FORMULAS-e5533e9eb9859404.json\": \"e2a69025d5ab751296c8aac92cd79b249e03b9b88b2c107ab53ecb7e8cf5e6b5\",\n        \"kept/pr8086-ward-TRIAL_FORMULAS-1e477e0a5d21e13c.json\": \"7adcc182763758154e69cc7037375d3341f0e6c370a721ee69890d9d1167df8a\"\n      }\n    },\n    \"scope\": \"exact arithmetic/native cell checks and a distinct shifted finite-Fock comparator; no native spectral fit, infinite proof by enumeration or independent source review\"\n  }\n}\nper_element: The real high/low field split, graded defect terms and inverse derivative signs are checked.\nper_site: Center/neighbor orthogonality and native cutoff normalization are explicit; the finite comparator is separately labelled.\nper_mode: Low-field energy support and CAR norm isometry are checked on all three soft modes.\nper_block: Complete soft-Fock operators and a three-particle input challenge the analytical compression estimate.\nlattice_wide: checked and not executed \u2014 the infinite operator statement follows from the analytical split and positive-gap expansion, not a size extrapolation.\nTOTAL: PASS=69 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204159Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_star_low_energy_operator_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

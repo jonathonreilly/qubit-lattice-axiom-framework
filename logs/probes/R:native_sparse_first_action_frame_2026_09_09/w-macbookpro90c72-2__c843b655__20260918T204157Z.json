@@ -1,0 +1,35 @@
+{
+ "task": "R:native_sparse_first_action_frame_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_sparse_first_action_frame_2026_09_09.py",
+ "seed": 64117,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204157Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=95 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "493eb718fd521cc5b986a08e7f892825f790de633983ce8789d121c4c5f826fa",
+ "stdout_tail": "{\"alpha_computed\": false, \"checks\": 95, \"native_arrays_replayed\": false, \"native_leakage_computed\": false, \"propagation_computed\": false, \"scope\": \"conditional analytical closure; finite supporting controls only\", \"status\": \"PASS_SMALL_EXACT_SUPPORT\"}\nTOTAL: PASS=95 FAIL=0\nper_element: exact small paired-projection, Gram and signed-source predicates executed; no native arrays replayed\nper_site: seven-site synthetic source identities executed; full physical source assembly not executed\nper_mode: formal rank-two action and Gamma identities checked; native propagation remains uncomputed\nper_block: five declared source patterns and sparse census checked; original domain remains distinct from DATA\nlattice_wide: analytical closure only; no uniform physical leakage or thermodynamic computation performed\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204158Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

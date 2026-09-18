@@ -1,0 +1,31 @@
+{
+ "task": "R:native_sixth_seed_component_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_sixth_seed_component_2026_09_08.py",
+ "seed": 64117,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204157Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "51a8a392671e15af46bbf537fe8935c293af0da8677706c71d742d4084b8f95a",
+ "stdout_tail": "{\n  \"L\": 6,\n  \"checks\": 16,\n  \"zero_prep_complete\": true,\n  \"one_prep_attempts\": 324,\n  \"cube_order_trials\": 226421,\n  \"one_flip_failed\": true,\n  \"two_prep_attempts\": 127,\n  \"preparation_faces\": [\n    6,\n    258\n  ],\n  \"preparation_edges\": [\n    [\n      18,\n      127,\n      36,\n      19\n    ],\n    [\n      126,\n      236,\n      129,\n      128\n    ]\n  ],\n  \"cube_root\": [\n    0,\n    1,\n    0\n  ],\n  \"corner\": [\n    0,\n    0,\n    0\n  ],\n  \"face_order\": [\n    6,\n    438,\n    222\n  ],\n  \"face_edges\": [\n    [\n      18,\n      127,\n      36,\n      19\n    ],\n    [\n      19,\n      38,\n      22,\n      20\n    ],\n    [\n      18,\n      128,\n      21,\n      20\n    ]\n  ],\n  \"six_cycle\": [\n    21,\n    128,\n    127,\n    36,\n    38,\n    22\n  ],\n  \"native_B_phases\": [\n    -1,\n    -1,\n    1,\n    1\n  ],\n  \"effective_sign_product\": -1,\n  \"seconds\": 0.2705392090138048,\n  \"rss_mib\": 20.609375\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204157Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:native_third_order_star_vertex_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_third_order_star_vertex_2026_09_08.py",
+ "seed": 64120,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c843b655",
+ "started_utc": "20260918T204200Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=40 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5e563822844be3cfe5cf659d3eb6fc5adf9a7dccb81f49d16bcbc263255238f8",
+ "stdout_tail": "o/review_feedback/pr8058-evidence/kept/pr8058-INPUTS-746fd36863573c71.json\": \"d747898bd6f2783ceca4542d39a28d1ee2ffbc2cf71ac21d33cf32d1e4c68ac4\",\n    \"docs/work_history/repo/review_feedback/pr8058-evidence/kept/pr8058-RESULT-8a461aeeaa3aae41.json\": \"66fe5f59eb4ba9c1382966d3d3f829f9eed0fc4f4860c607eea41c87e70d87b2\",\n    \"docs/work_history/repo/review_feedback/pr8058-evidence/kept/pr8058-SOLVE_VECTORS-8740fc5cfce5142d.json\": \"13aadfc2e7940e0bb635868f0309a83252f4a24be66e6060bbff4024636e41e9\",\n    \"docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md\": \"0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270\"\n  },\n  \"source_sha256\": \"17b2d3a3b4367dd98547426720c39f523a19a3e9b54a23ab5ad1559b1746bcd1\",\n  \"seconds\": 3.148284041089937,\n  \"rss_bytes\": 24920064,\n  \"scope\": \"39 helper predicate groups plus1 cross-path comparison; no new physical solve, bulk or full-sixth inference\"\n}\nper_element: exact saved rational residuals reconstructed from literal ordered CAR actions; no new physical solves.\nper_site: the delivered one-star L4 active space and its recorded source/neighbor geometry are replayed.\nper_mode: four quadratic-field inverse cases and two absolute coefficients are executed as declared.\nper_block: thirty saved residual vectors, decomposition, singleton normalization and cross-path equality are checked.\nlattice_wide: only the declared local L4 channel is replayed; general reconstruction is analytical, with no full-sixth or bulk conclusion.\nTOTAL: PASS=40 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T204203Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_third_order_star_vertex_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

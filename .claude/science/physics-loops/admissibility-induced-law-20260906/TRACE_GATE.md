@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 34, at PR opening (2026-09-17)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 26's queue: the torus memory time of the sphere formation law (read as 'of order beta L^2' from the gain-one linearization)"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the linearized torus memory time exact (tau_L = 3 beta L^2 / A(3 beta); exponential decay at the zero-mode rate; stationary modes bracketed); the nonlinear law's angular diffusion measured at 1/|m|^2 times the zero-mode value. Next: spin-wave theory as a theorem with the 1/|m|^2 factor as target; the infinite-plane loss of memory. Consumers: the campaign's decision record; block 26's open items"
+```

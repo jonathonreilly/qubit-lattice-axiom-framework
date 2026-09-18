@@ -1,0 +1,7 @@
+[1] closed form: sum_n P_2n = u = 1.51638605915197801815601215968, so 3G(0) = u/2 = 0.758193029575989009078006079841
+[2] Bessel integral: 3G(0) = 3 int_0^oo e^(-6t) I_0(2t)^3 dt = 0.758193029575989009078006079744; |difference| = 9.6862e-29
+[3] V2 at every n <= 2000 (exact P_2n, right side with pi <= 3.1416): 0 failures; largest ratio P_2n / right side = 0.87748006 at n = 2000 (141s)
+[INFO] n^(3/2) P_2n at n = 2000: 0.2332467789; local-limit constant 2 (3/(4 pi))^(3/2) = 0.2332905149; V2's constant (36/11)^(3/2)/(4 pi^(3/2)) = 0.2658152683
+[4] V3 recomputed: S_1000/2 = 0.75081850092216793238 > 75/100: True; with the tail bound (1/2) sum_(n>1000) rhs <= 0.0090078854: upper bound 0.759826386273 < 76/100: True
+[time] 141s
+SUMMARY: 3G(0) = 0.75819302957598900908 by the Gamma closed form and 0.75819302957598900908 by the Bessel integral (both in (75/100, 76/100)); V2 holds at every n <= 2000 (largest ratio 0.87748 at n = 2000); the recomputed certificate gives 0.7508185009 < 3G(0) < 0.7598263863; falsifier does not fire

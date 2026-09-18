@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8156",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8156/three_g_zero_disjoint_routes.py",
+ "seed": 58226,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e690d4e0",
+ "started_utc": "20260918T190346Z",
+ "elapsed_s": 141.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "3G(0) = 0.75819302957598900908 by the Gamma closed form and 0.75819302957598900908 by the Bessel integral (both in (75/100, 76/100)); V2 holds at every n <= 2000 (largest ratio 0.87748 at n = 2000); the recomputed certificate gives 0.7508185009 < 3G(0) < 0.7598263863; falsifier does not fire"
+ },
+ "review": "Two routes disjoint from the note's certificate give 3G(0) = 0.75819302957598900908 (Glasser-Zucker Gamma closed form; the Bessel integral 3 int e^{-6t} I_0(2t)^3 dt agrees to 1e-28), inside (75/100, 76/100); V2's tail bound holds at every n <= 2000 with exact P_2n (largest ratio 0.8775 at n = 2000, tending to the local-limit ratio 0.2333/0.2658); the recomputed certificate gives 0.7508 < 3G(0) < 0.7598; the falsifier does not fire.",
+ "what": "PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915; git show origin/physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915:<note>. Create probes/work/pr8156/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8156/<script>.py\"",
+ "stdout_sha256": "51216af88e840d84e353875c210c38250c06fb434054d7b78033ab9a34e30f47",
+ "stdout_tail": "[1] closed form: sum_n P_2n = u = 1.51638605915197801815601215968, so 3G(0) = u/2 = 0.758193029575989009078006079841\n[2] Bessel integral: 3G(0) = 3 int_0^oo e^(-6t) I_0(2t)^3 dt = 0.758193029575989009078006079744; |difference| = 9.6862e-29\n[3] V2 at every n <= 2000 (exact P_2n, right side with pi <= 3.1416): 0 failures; largest ratio P_2n / right side = 0.87748006 at n = 2000 (141s)\n[INFO] n^(3/2) P_2n at n = 2000: 0.2332467789; local-limit constant 2 (3/(4 pi))^(3/2) = 0.2332905149; V2's constant (36/11)^(3/2)/(4 pi^(3/2)) = 0.2658152683\n[4] V3 recomputed: S_1000/2 = 0.75081850092216793238 > 75/100: True; with the tail bound (1/2) sum_(n>1000) rhs <= 0.0090078854: upper bound 0.759826386273 < 76/100: True\n[time] 141s\nSUMMARY: 3G(0) = 0.75819302957598900908 by the Gamma closed form and 0.75819302957598900908 by the Bessel integral (both in (75/100, 76/100)); V2 holds at every n <= 2000 (largest ratio 0.87748 at n = 2000); the recomputed certificate gives 0.7508185009 < 3G(0) < 0.7598263863; falsifier does not fire\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T190617Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

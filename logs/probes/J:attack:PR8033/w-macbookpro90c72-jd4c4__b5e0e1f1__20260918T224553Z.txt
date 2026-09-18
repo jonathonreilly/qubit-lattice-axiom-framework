@@ -1,0 +1,4 @@
+243=3^5 True
+h_R R=1..20 [4, 9, 16, 24, 34, 45, 58, 72, 88, 105, 124, 144, 166, 189, 214, 240, 268, 297, 328, 360]
+cache TOTAL 18 stated 18
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - 243=3^5, h_R increasing, cache TOTAL 18; does not fire

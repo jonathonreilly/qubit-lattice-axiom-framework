@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_closed_helical_defect_history_ward_neutral_ir_regge_response_boundary_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_closed_helical_defect_history_ward_neutral_ir_regge_response_boundary_2026_08_10.py",
+ "seed": 64566,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T204926Z",
+ "elapsed_s": 56.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7c6030268024bc55847815ff77a5e927a24c9e3030965a4027198d2e1a8111fd",
+ "stdout_tail": "ing-line-pole-convergence: halving transverse momentum reduces every moving-line pole-coefficient error\n[PASS] open-transverse-green-tail: the moving line pole has the regulated three-transverse-dimensional 1/(4 pi r_perp) Green shape\n[PASS] theorem-source-surface: the note states the closed action, telescoping Ward identity, neutral pair, inventories, pole, Umklapp boundary, and axiom map\n[PASS] no-go-discipline-source-surface: the note carries N1 through N8 and rejects a universal body-diagonal, dynamics, mass, or new-axiom reading\n[PASS] boundary-source-surface: the note preserves Euclidean/Lorentzian, selection, positivity, coupling, nonlinear, Born, and realized-history boundaries\n[PASS] canonical-axiom-nonmutation: the canonical memo contains none of the helical-history or neutral-pair amendment wording\nper_element: checked the actual tick and tick-space face-diagonal line derivatives, rank-one metric map, and body-diagonal rejector\nper_site: checked closed L-edge helices and one disjoint transverse signed pair for every L=3 through L=8\nper_mode: checked 1,281 fixed-global-mode positive-line sources and all 1,088 neutral-pair sources against the complete Regge null space\nper_block: checked static-member inheritance through exact moving Ward identity, neutral infrared cancellation, unprojected pole, and open transverse Green tail\nlattice_wide: checked all 8,755 Fourier modes on six four-tori and solved every sourced edge equation without projection\nTOTAL: PASS=29 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

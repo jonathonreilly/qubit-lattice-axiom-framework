@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_cycle713_record_stress_block44_ir_reflected_carrier_boundary_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_cycle713_record_stress_block44_ir_reflected_carrier_boundary_2026_08_13.py",
+ "seed": 64695,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205135Z",
+ "elapsed_s": 7.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "654ba23fdb4f459575272a91a562cb8ff3783b3c9698cae5936a7dc7e6c6880f",
+ "stdout_tail": "...\n       neutral p=0 norm=0.0e+00; lone-line full-edge residual=7.784571..7.784571\n[PASS] J-no-go-discipline-and-scope-boundary: the surviving routes force partial narrowing and keep every law-bearing wall explicit\n       broad gravity no-go forbidden; cadence, normalization, common metric, transfer, nonlinear law, adoption, and retention remain open\nN5_CERTIFICATE: ten source coordinates, six signed directions, two continuum momentum regimes, complete original-edge stationary elimination, all 22 reflected edge classes, and every Fourier mode on L=3..8 for six neutral line pairs are resolved\nper_element: every symmetric coordinate multiplicity, Record sign, edge orientation, gauge column, source row, and compact zero-mode contribution is tested explicitly\nper_sample: generic off-shell, gravity-null-shell, static, full-zone finite-frequency, and all 6528 nonzero neutral direction-mode source samples are checked\nper_block: Block67 Record stress, Block44 conditional Einstein response, Block47 full-edge Schur elimination, and Block48 reflected union meet at typed interfaces\nlattice_wide: exact closed neutral sources cover all six signed velocities on periodic L=3..8 tori; no arbitrary-volume, net-positive compact source, or nonlinear law is inferred\nscope_boundary: conditional IR source and finite-frequency carrier theorem only; not source normalization, common-metric selection, Record cadence, physical transfer, axiom amendment, retention, or TOE closure\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205142Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

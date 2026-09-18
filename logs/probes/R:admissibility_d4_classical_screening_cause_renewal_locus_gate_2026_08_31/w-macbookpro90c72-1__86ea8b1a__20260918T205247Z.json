@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_classical_screening_cause_renewal_locus_gate_2026_08_31",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_classical_screening_cause_renewal_locus_gate_2026_08_31.py",
+ "seed": 64767,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205247Z",
+ "elapsed_s": 4.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aea3591d96ceb6a246658a09119c99624d8c67b5232724398079d1e95949ac48",
+ "stdout_tail": "PASS current_source_and_note_inputs\nPASS spectrum_ranks\nPASS four_cause_per_law\nPASS fixed_five_library\nPASS finite_cause_covariance_SOS\nPASS existential_frozen_locus\nPASS Markov_and_hidden_memory\nPASS binary_event_distinction\nPASS fixed_isometry_and_supplied_banks\nPASS coherent_control\nPASS actual4096_three_use_and_changed_epsilon_axis\nTERMINAL: BLOCK33-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205252Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

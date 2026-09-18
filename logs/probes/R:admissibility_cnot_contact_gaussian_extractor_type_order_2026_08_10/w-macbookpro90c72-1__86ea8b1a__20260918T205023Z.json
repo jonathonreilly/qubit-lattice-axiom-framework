@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_cnot_contact_gaussian_extractor_type_order_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_cnot_contact_gaussian_extractor_type_order_2026_08_10.py",
+ "seed": 64623,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205023Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0addb768ba00c98f181d5f17f597c073a09e7cb59f9784c2695d26e86e63f9fe",
+ "stdout_tail": " the two controls\nPASS: xor-dependence-formula the exact marginal response gap is |1-2p| on representative rational target mixtures\nPASS: construction-source-surface the source states the type, equivariance, fixed-effect, and supplied-mixture results\nPASS: boundary-source-surface the source preserves the bounded route and governance limits\nPASS: machine-status-contract the source carries the complete bounded upstream-support trace contract\nPASS: canonical-nonmutation the CNOT/extractor bridge notation is absent from the canonical axiom memo\nPASS: no-go-gate all N1-N8 sections, source matching, primitive scan, and global-negative rejection are visible\nper_element: all four XOR rows, five exact matrix fixtures, four lambda members, fixed and transported effects, and five target mixtures are checked\nper_site: one target plus one basis-control neighbour is executed at blank, Pz, and X-transported conditions; no autonomous site/program selection is asserted\nper_mode: conditioned conjugation, spectrum preservation, random-control reduction, and fixed-versus-transported effect modes are checked exactly\nper_block: the Gaussian extractor/CNOT carrier chain is checked through state typing, contact equivariance, supplied mixing, and the preparation-quotient boundary\nlattice_wide: checked and not executed \u2014 the landed Cycle 972 theorem supplies a finite covariant direction orbit, while this theorem rederives one-edge algebra and claims no global continuous compiler\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205023Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

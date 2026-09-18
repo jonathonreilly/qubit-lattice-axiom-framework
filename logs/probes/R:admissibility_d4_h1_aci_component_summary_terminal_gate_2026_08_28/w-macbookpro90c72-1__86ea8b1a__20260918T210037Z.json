@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_h1_aci_component_summary_terminal_gate_2026_08_28",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_h1_aci_component_summary_terminal_gate_2026_08_28.py",
+ "seed": 65237,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T210037Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "695540115af62ae84c4d64ebafec93cb61e6aab93c2663c663b82dd73192f053",
+ "stdout_tail": "0 terminal_normals=19 correct_normals=1\nA1_PEAK source=(15, 3, 7, 15) terminal=(64, 3, 7, 15) merge01=(15, 15, 7, 15) common_descendants=0\nA1_RANK transition_non_decreases=0 termination_pass=true confluence_fail=true\nSTEELMAN_NEIGHBOR_GUARD states=33 transitions=52 normals=((64, 15, 15, 15),) status=outside_frozen_Block230\nDECISION_CLASS scoped-summary-rank-or-confluence-failure\nNO_GO_STATUS partial-attempt-with-named-untested-routes\nNEXT_ROUTE preregister_neighbor_readiness_guard_then_prove_arbitrary_tree_and_CP_absorption\nSCOPE frozen_self-summary_terminal_guard_only ACI_core_live stronger_local_guard_live distributed_incidence_Haar_serial_coherent_live\nAUDIT_INPUT_SHA256 bf8622b9967d2eb468bd8f384d1f22ed2b57cee5ea1d97368b203ba2c12dd96d\nper_element: checked \u2014 all 1,024 Boolean-union products and all 32,768 associativity triples pass exactly.\nper_site: checked \u2014 the central writer terminal-versus-incident-merge peak is reachable and has no common descendant.\nper_mode: checked and not executed \u2014 parity carrier rays, labelled projectors, and Lindblad modes are downstream of Stage A1.\nper_block: checked \u2014 the complete four-site typed Y graph has 51 states and 19 distinct terminal normal forms.\nlattice_wide: checked and not executed \u2014 the frozen compiler already fails a finite subgraph, while broader ACI and physics routes remain live.\nTOE zero obligation retirement; zero axiom retirement; zero TOE percentage movement; no established TOE result is supplied.\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210037Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

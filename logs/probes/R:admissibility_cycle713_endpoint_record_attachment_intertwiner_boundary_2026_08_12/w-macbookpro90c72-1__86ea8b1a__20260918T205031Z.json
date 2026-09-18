@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_cycle713_endpoint_record_attachment_intertwiner_boundary_2026_08_12",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_cycle713_endpoint_record_attachment_intertwiner_boundary_2026_08_12.py",
+ "seed": 64631,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205031Z",
+ "elapsed_s": 25.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "05b9b64febcfdae5f7a847a0a70adab0c7dee883a704b3afa3f96c85f0fc749d",
+ "stdout_tail": "tor norm 2 forbids an unchanged-number claim\nPASS F-internal-controlled-X-Block65-instrument-intertwiner: 256/256 full branch/matrix-unit outputs intertwine with max residual 0.0e+00; full spatial 24/576 endpoint-frame covariance remains open\nPASS G-conditional-Block65-Block64-history-continuation: all three decoded-input formation branches continue conditionally for 64 outcomes through 567 microsteps and 191 permanent Records\nPASS H-oriented-endpoint-selection-fork: same literal menu gives right=(Fraction(0, 1), Fraction(1, 2), Fraction(1, 2), Fraction(0, 1)) versus left=(Fraction(0, 1), Fraction(0, 1), Fraction(1, 5), Fraction(4, 5)); the internal endpoint transform is fixed but its signed spatial-frame realization is physical law data\nPASS I-owner-interface-and-no-go-boundary: the decoded logical factor is literal, while one-site physical locality, spatial frame action, orientation, context, occurrence, source disposition, law adoption, and retention remain explicit\nMETRICS cycle713_rows=4096 matrix_units=16 routed_right_left=17820/17820 number_commutator=2 instrument_matrix_units=256 continuation_microsteps=567 records_N64=191\nBOUNDARY: Cycle 713 supplies an exact decoded P-tensor-M logical factor after an oriented two-CNOT basis change; the internal controlled-X instrument intertwiner is exact, but the signed 24-frame endpoint action, one-site physical implementation, transformed source disposition, context, occurrence, and law selection remain open\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205056Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py", line 1051, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py", line 894, in main
+    authority = authority_certificate(mutation)
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py", line 142, in authority_certificate
+    mismatches = tuple(
+        path
+        for path in frozen
+        if git_worktree_path_blob(path) != git_commit_path_blob(PARENT_COMMIT, path)
+    )
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py", line 145, in <genexpr>
+    if git_worktree_path_blob(path) != git_commit_path_blob(PARENT_COMMIT, path)
+                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py", line 110, in git_commit_path_blob
+    return subprocess.run(
+           ~~~~~~~~~~~~~~^
+        ("git", "rev-parse", f"{commit}:{path}"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        text=True,
+        ^^^^^^^^^^
+    ).stdout.strip()
+    ^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '('git', 'rev-parse', '6d4ceb046de25664ae65836a1127348fc4a9c81c:.claude/science/physics-loops/backlog-dk-os-6377-correction-20260908/provenance/docs/ADMISSIBILITY_LOCAL_SHADOW_ENERGY_FLUX_LAPSE_TRANSLATION_JOINT_ACTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md')' returned non-zero exit status 128.

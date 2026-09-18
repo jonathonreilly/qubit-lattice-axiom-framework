@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_h1_static_record_joint_law_curl_gate_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_h1_static_record_joint_law_curl_gate_2026_08_29.py",
+ "seed": 65237,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T210037Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f218dde0d20f1de85136d73a99acfab0d0f695b39d522f922a859f1c9f601cc2",
+ "stdout_tail": "PASS A_conditional_square_curl: nonneutral odds fail 4032/6144 squares; histogram={0: 2112, 1: 1152, -1: 1152, -2: 864, 2: 864}\nPASS B_neutral_exception: t=1 closes every square and is explicitly excluded from the obstruction\nPASS C_compatible_space: compatible log-odds form the four-dimensional constant-plus-axis-count space\nPASS D_active_pinning: equal active values kill all three axis slopes, leaving constants\nPASS E_germ_scope: the parent cubic coefficient is supplied and implies only a local punctured condition\nCURL: squares=6144; failing=4032; histogram={0: 2112, 1: 1152, -1: 1152, -2: 864, 2: 864}.\nCOMPATIBLE: raw_rank=60/64; active_pinned_rank=63/64.\nDOMAIN: obstruction requires positive t!=1; supplied cubic gives only a sufficiently small punctured germ.\nMUTATION_CREDIT: none claimed; no mutation sweep executed.\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210039Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_covariant_q8_conditional_law_pair_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_covariant_q8_conditional_law_pair_2026_08_13.py",
+ "seed": 64627,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205027Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e372cb56397ea58214f6d30438c5d199159f18d36f13d1d06e78e1f7e71e3089",
+ "stdout_tail": "n and odd shell conditions\nPASS: law-covariance both conditional laws obey the exact pushforward covariance equation\nPASS: laws-distinct the odd-shell outputs are different normalized measures\nPASS: internal-pi-over-four-image the rotated +x atom has two nonzero components and leaves the six-axis support\nPASS: central-full-conjugation central matrices commute with every internal SU(2) element\nPASS: mutation-first-slot-condition-breaks-covariance a direction-privileging shell rule is rejected by the rotation test\nPASS: mutation-anisotropic-axis-breaks-covariance an unequal axis weighting is rejected by the proper-cubic invariance test\nPASS: record-semantics-absent the repaired theorem restores none of the retired scalar Record semantics\nPASS: physical-boundary the exact finite pair is separated from every downstream physical selection claim\nPASS: review-record the source records why the original negative theorem was replaced\nper_element: executed \u2014 all eight Q8 support labels and the declared internal rotation image are checked exactly\nper_site: executed \u2014 one six-neighbor shell is checked under every proper cubic direction permutation\nper_mode: checked and not executed \u2014 the theorem has no spectral, momentum, or normal-mode decomposition\nper_block: executed \u2014 both central and axis conditional-law branches are normalized, varied, and compared\nlattice_wide: checked and not executed \u2014 the theorem proves a translation-reused local rule, not a global history\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205027Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_gapped_record_cap_safe_front_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_gapped_record_cap_safe_front_2026_08_29.py",
+ "seed": 64788,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205308Z",
+ "elapsed_s": 448.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c8715892cd32f2f1f775de6d7cc17a36d54d9397734fdc0c3ac6e7ed8eadd0ba",
+ "stdout_tail": "632 maps preserve the cap and obstacles or construct the exact clear successor\nPASS G_blocked_capped_frontier: all 2976 capped trail/obstacle components have zero local continuation without global absorption\nPASS H_probability_and_open_dynamics: continue or local STOP carries mass one while site/rate/clock/concurrency/control remain open\nPASS I_registered_adjudication: the supplied capped target reaches GAPPED-CAP-SAFE-FRONT\nPASS J_scope: the note and N1--N8 sidecar keep cap generation, microscopic control, gravity, audit, and TOE open\nMUTATION_BASELINE: clean=true; failures=none\nCONTROL_KIND: changed_object; detected=8/8\nCONTROL_KIND: assertion_guard; detected=24/24\nCONTROL_KIND: syntax_guard; detected=8/8\nCONTROL_KIND: scope_guard; detected=11/11\nMUTATIONS: rejected=51/51\nper_element: checked all 84 arbitrary cap-content controls, each source/destination state, and every occupied-Record identity\nper_site: checked complete frontiers for 8064 capped trails and 2976 blocked capped components\nper_mode: checked six signed fronts, 24 cubic frames, fourteen outcomes, and the unchanged nine-coordinate carrier; no continuum claim\nper_block: checked 37632 guarded maps, including 1176 clear and 36456 blocked cases\nlattice_wide: checked and not executed; the cap is supplied, and unrelated/concurrent fronts, scheduling, rate/time, and gravity remain open\nVERDICT: GAPPED-CAP-SAFE-FRONT; one supplied gapped axial Record cap removes reflection without content readout\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210037Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

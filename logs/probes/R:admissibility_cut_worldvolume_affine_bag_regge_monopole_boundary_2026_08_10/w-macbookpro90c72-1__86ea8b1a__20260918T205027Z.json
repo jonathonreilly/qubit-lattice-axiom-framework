@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_cut_worldvolume_affine_bag_regge_monopole_boundary_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_cut_worldvolume_affine_bag_regge_monopole_boundary_2026_08_10.py",
+ "seed": 64627,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205027Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "039584bdd6a81a951c17315c20f2edc01bd7f75ff1d6bd40690d2f07cf3a6887",
+ "stdout_tail": "e-boundary: the nonzero bag source overlaps the 11-dimensional k=0 Regge null space, so the bare finite periodic linear equation has no solution\n       null overlap=1.802776; solve residual=1.802776\n[PASS] theorem-source-surface: the paired note states the worldvolume action, derived pressure, tick source, Regge pole, radial consequence, axiom amendment, and N1-N8 packet\n[PASS] boundary-source-surface: the note preserves governance, finite-lattice, physical-selection, infrared, live-route, no-go, and percentage boundaries\n[PASS] canonical-axiom-nonmutation: the canonical memo still contains none of the worldvolume, pressure, Regge, or candidate-amendment wording\n[PASS] proper-cubic-monopole-covariance: all 24 proper spatial cubic rotations leave the derived flat tick-only source invariant\nper_element: checked exact simplex-volume derivatives and cancellation of every diagonal-edge derivative in each complete Kuhn cover\nper_site: checked one static cell worldtube, its six boundary faces, centered volume improvement, and unique affine pressure coefficient\nper_mode: checked plane and generic mixed Fourier modes against Regge gauge, extra-null, metric-source, and response equations\nper_block: checked the positive worldvolume family through affine bag source, Regge metric projection, lapse pole, and radial Green tail\nlattice_wide: checked the finite periodic k=0 incompatibility and kept open-boundary, constrained-zero-mode, and dynamical completions explicit\nTOTAL: PASS=29 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205031Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

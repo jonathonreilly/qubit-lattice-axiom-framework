@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_affine_lineage_binary_record_join_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_affine_lineage_binary_record_join_2026_08_29.py",
+ "seed": 64767,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205247Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8433e4aa23c37bc54a337d7930fcba20f9b900a5f8a8bfabca0b2d7ad2e69ecf",
+ "stdout_tail": "PASS A_supplied_active_domain: active=24 with weight census {2: 12, 4: 12}; action/decoder selection remains supplied\nPASS B_effect_root_channel: symbolic projector roots are exact, effects complete, and active cross-effect is (1-u^2)I/4\nPASS C_solution_family: different u have different effect spectra; inactive zero-detector blocks retain I/4 cross-effect\nPASS D_conditional_positivity_bound: supplied resolvent estimates give final bound=2193749493000038667200/177556693536960624997803 < supplied gap 1/71\nPASS E_scope: parent response, physical realization, global uniqueness, and audit remain explicitly outside the result\nACTIVE: count=24; weights={2: 12, 4: 12}; supplied_action=true.\nLAW: domain=0<u<=1; spectral_family=inequivalent; active_repeatability=u=1; inactive_cross=I/4.\nBOUND: endpoint=1e-9; exact=2193749493000038667200/177556693536960624997803; baseline_norms=supplied.\nMUTATION_CREDIT: none claimed; no mutation sweep executed.\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205247Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

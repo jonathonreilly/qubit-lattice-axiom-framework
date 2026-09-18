@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_covariant_conditional_cap_packet_instrument_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_covariant_conditional_cap_packet_instrument_2026_08_29.py",
+ "seed": 64772,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205252Z",
+ "elapsed_s": 14.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fd592c5adc0a57eb52ed88a3f0a0f7ea4b9643788bcbd4bcd91b763fe47823a2",
+ "stdout_tail": "ed and product laws share all one-site marginals but differ on valid joint writers\nPASS I_registered_adjudication: the fixed target reaches COVARIANT-CONDITIONAL-CAP-PACKET-INSTRUMENT\nPASS J_scope: the note and N1--N8 sidecar keep atomicity, center/occurrence, locality, time, gravity, and TOE open\nMUTATION_BASELINE: clean=true; failures=none\nCONTROL_KIND: changed_object; detected=14/14\nCONTROL_KIND: assertion_guard; detected=18/18\nCONTROL_KIND: syntax_guard; detected=10/10\nCONTROL_KIND: scope_guard; detected=16/16\nMUTATIONS: rejected=58/58\nper_element: checked all 43 block sites, six branch masks, exact Record/source density matrices, and every occupied-site identity\nper_site: checked 144 rotated branch geometries, 55 occupied controls, 90 generated frontiers, and 5166 generated blocked-frontier candidates\nper_mode: checked six signed-axis outcomes, 24 proper cubic frames, blank/write/STOP sectors, and correlated/product laws\nper_block: checked one total 43-site instrument on a 73-site controller extension, 2688 composed controller maps, and 186 generated plus 2976 inherited blocked components\nlattice_wide: checked and not executed \u2014 the centered radius-three write is atomic, while overlaps, occurrence/rate/time, and gravity remain open\nVERDICT: COVARIANT-CONDITIONAL-CAP-PACKET-INSTRUMENT; one common blank input generates six covariant capped live branches\nMODEL_PAIR: same one-site marginals; correlated valid=1; product valid=30517578125/101559956668416\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205307Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

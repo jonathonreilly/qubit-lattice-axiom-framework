@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_2026_08_10.py",
+ "seed": 64623,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205023Z",
+ "elapsed_s": 3.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5497dd5266f0d66d11b2ef123fe0448f4fd4138bef12ea8f13dfd8c40b6acbda",
+ "stdout_tail": "stream,A,B]=-sqrt(2)/4,0,3*sqrt(2)/4\n[PASS] minimal-three-channel-kkt-construction\n       equation=3.433e-15; constraint=8.491e-16\n[PASS] four-channel-sector-separated-kkt-construction\n       equation=2.867e-15; constraint=8.718e-16\n[PASS] full-eleven-channel-unique-kkt-construction\n       KKT rank=26; max residual=1.499e-15\n[PASS] one-source-aligned-channel-control\n       one scalar channel suffices for one fixed source only when aligned to its full null projection\n[PASS] rank-two-reaction-negative-control\n       omitting the third combined-family reaction leaves null residual=2.000000\n[PASS] all-binary-history-reaction-span\n       histories=504; worst span residual=1.710e-15\n[PASS] theorem-source-surface\n[PASS] no-go-discipline-source-surface\n[PASS] canonical-axiom-nonmutation\n[PASS] fixed-rubric-boundary\nper_element: checked all fifteen actual-edge rays, all eight future-temporal rays, and the exact extra-branch covector\nper_site: checked all 504 binary bundle histories through their compact mean sources and common two-reaction span\nper_mode: checked the actual compact k=0 Hessian with eleven null directions and no source projection in the KKT equation\nper_block: checked the general reaction-rank lower bound, exact rank ladder, constructive three/four/eleven-channel completions, and axiom boundary\nlattice_wide: checked the complete declared compact source families; open, curved, nonlinear, alternate-carrier, and background routes remain outside scope\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205026Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

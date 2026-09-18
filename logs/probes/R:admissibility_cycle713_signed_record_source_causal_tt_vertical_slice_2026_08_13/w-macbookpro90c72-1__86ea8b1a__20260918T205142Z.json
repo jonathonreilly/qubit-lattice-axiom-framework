@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_cycle713_signed_record_source_causal_tt_vertical_slice_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_cycle713_signed_record_source_causal_tt_vertical_slice_2026_08_13.py",
+ "seed": 64702,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205142Z",
+ "elapsed_s": 64.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "80c7df56981d58d524b0dce5ffb1eb1c6348e128024106e41ce64f19af53be0b",
+ "stdout_tail": "ling controls, and the full 17-cubed momentum sample are resolved\nper_element: each P-tensor-M matrix unit, joint branch effect, successor carrier field, source-current component, symmetric-tensor coordinate, and TT quotient coordinate is checked explicitly\nper_site: the bootstrap root pair and head frontier are decoded from each whole configuration; all 576 finalize moves and the alternate append ledger are checked on the L=5 incidence carrier\nper_mode: every point of the declared 17-by-17-by-17 Brillouin-zone sample is checked for depth-two symplecticity, positive shadow energy, unit-circle stability, and the unit group cone\nper_block: Cycle713 decoding, physical P--M placement, sharp instrument refinement, signed event-pair attachment, arbitrary-horizon head-source induction, and conditional TT projection are checked at typed boundaries\nlattice_wide: the declared single-front head-source current is translation/frame covariant for arbitrary finite horizon, but its physical source identity is conditional and no multi-front law, edge-stress Fourier map, selected cadence, metrology, nonlinear law, or retained theorem is inferred\nscope_boundary: conditional signed event-pair interface, conserved arbitrary-length single-front head-source worldline candidate, sharp-menu discriminator, and immediate-registration contract test; not a compiled physical matter identity, Block52-to-Block44 source/Bianchi intertwiner, axiom update, retained theory, or TOE closure\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205247Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

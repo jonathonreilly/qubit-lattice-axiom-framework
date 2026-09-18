@@ -1,0 +1,12 @@
+PASS: actual Boolean interpolation and all64 evaluations | 64
+PASS: actual TT nullspace column | (0, sqrt(3)/4 + 3/4, -sqrt(3)/4 - 1/4, -1/2, 0, 0, 0, -sqrt(3)/2, 0, 1)
+PASS: all 64 supplied affine masks | 64
+PASS: source subspace separation | (3, 4)
+PASS: native mass/occupation witness | 10
+PASS: all 48 invertible cubic/reflection images | 48
+TOTAL: 6 passed, 0 failed
+per_element: exact finite matrix, coefficient or probability predicates named above were executed.
+per_site: supplied six-neighbor condition identities only; no generated physical-site update executed.
+per_mode: checked and not executed — no universal momentum or dynamical mode campaign is claimed.
+per_block: finite conditional source, carrier or channel scope is exactly the named predicates above.
+lattice_wide: checked and not executed — no whole-stencil dynamics, infinite history or physical selection is claimed.

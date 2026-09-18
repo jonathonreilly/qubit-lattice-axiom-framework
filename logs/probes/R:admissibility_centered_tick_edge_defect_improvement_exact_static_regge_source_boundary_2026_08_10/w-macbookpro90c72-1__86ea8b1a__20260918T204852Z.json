@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_centered_tick_edge_defect_improvement_exact_static_regge_source_boundary_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_centered_tick_edge_defect_improvement_exact_static_regge_source_boundary_2026_08_10.py",
+ "seed": 64532,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T204852Z",
+ "elapsed_s": 33.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e338c5185d2e732083977027d541940a5450203adad18494a283879d7e80ff42",
+ "stdout_tail": "ull overlap=1.802776; solve residual=1.802776\n[PASS] dynamic-history-control: a tick-dependent Fourier mode is not covered: the fixed vertical line then has nonzero gauge and extra-null overlap\n       gauge=7.947e-01; separated extra-null overlap=6.607e-03\n[PASS] proper-cubic-source-covariance: all 24 proper spatial cubic rotations preserve both the range-one neighbor class and the tick-only source\n[PASS] theorem-source-surface: the note states the local correction, exact line source, exhaustive scope, unprojected pole, axiom map, and N1-N8 packet\n[PASS] boundary-source-surface: the note preserves action-selection, physical-mass, periodic, dynamic-history, no-go, governance, and percentage boundaries\n[PASS] canonical-axiom-nonmutation: the canonical memo contains none of the tick-edge defect improvement or candidate-amendment wording\nper_element: checked the actual axial tick-edge metric derivative, unique coefficient two, and exact static gauge factor\nper_site: checked all 128 range-one neighborhoods, isolated bag-to-line replacement, complement covariance, and plane nonactivation\nper_mode: checked every nonzero static Fourier mode on L=3 through L=8 tori against gauge, full null space, and edge solvability\nper_block: checked local counter-improvement through unprojected Regge lapse pole, convergence, and regulated radial Green tail\nlattice_wide: checked 1,281 nonzero periodic modes and separately retained the incompatible nonzero total-charge k=0 mode\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T204926Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

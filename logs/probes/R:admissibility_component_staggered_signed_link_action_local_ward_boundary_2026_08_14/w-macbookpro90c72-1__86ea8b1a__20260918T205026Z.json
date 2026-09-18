@@ -1,0 +1,32 @@
+{
+ "task": "R:admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py",
+ "seed": 64626,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ea8b1a",
+ "started_utc": "20260918T205026Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fb744224e2ff38ac73fe7d78438b7a38ce020725aa9ee77f819dd6036e6a4840",
+ "stdout_tail": "smatches = tuple(\n        path\n        for path in frozen\n        if git_worktree_path_blob(path) != git_commit_path_blob(PARENT_COMMIT, path)\n    )\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py\", line 145, in <genexpr>\n    if git_worktree_path_blob(path) != git_commit_path_blob(PARENT_COMMIT, path)\n                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py\", line 110, in git_commit_path_blob\n    return subprocess.run(\n           ~~~~~~~~~~~~~~^\n        (\"git\", \"rev-parse\", f\"{commit}:{path}\"),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n        text=True,\n        ^^^^^^^^^^\n    ).stdout.strip()\n    ^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py\", line 577, in run\n    raise CalledProcessError(retcode, process.args,\n                             output=stdout, stderr=stderr)\nsubprocess.CalledProcessError: Command '('git', 'rev-parse', '6d4ceb046de25664ae65836a1127348fc4a9c81c:.claude/science/physics-loops/backlog-dk-os-6377-correction-20260908/provenance/docs/ADMISSIBILITY_LOCAL_SHADOW_ENERGY_FLUX_LAPSE_TRANSLATION_JOINT_ACTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md')' returned non-zero exit status 128.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T205026Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:record_density_ruler_kappa_nu_sea_supplies_zero_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_density_ruler_kappa_nu_sea_supplies_zero_check_2026_09_03.py",
+ "seed": 66448,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T212048Z",
+ "elapsed_s": 4.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c08bd86e4d7cb574709ac0888fb36f540fcf6f21672998800e0f951ce287448d",
+ "stdout_tail": "roportional to the supplied source -Delta Phi vanishes there; this does not exclude all local laws, propagated fields or formation dynamics.\nPASS E1 [finite dressing comparison] Valid power bases: two scales give residuals 0.000265/0.000100/0.000570/0.000198/0.000050 and quadratic ratios 4.12/4.00/4.12/3.98/4.00; off-product control 8.757e-03. This tests the declared nonlinear dressing, not a derived density law.\nPASS Q4 [nonlinear domain and conservative propagation bound] {'linear_family_bound': np.float64(8.298), 'actual_row_bound': 8.907846834600473, 'used_bound': 8.957846834600474, 'invalid_power_rejected': True, 'pass': True}\nPASS E2 [finite acceleration ratios] Stipulated (-1,-1) dressing gives massive -4.04465/massless -8.11811/ratio 2.0071; (2,1) -4.02984/-8.01583/1.9891; (1,1) -4.01067/-4.00966/0.9997. Central differences and width extrapolation have uncertified residual errors; ratios are not ray curvature.\nPASS E3 [finite nonlinearity] At kappa=-8, max |kappa Phi| 0.77 versus |Phi| 0.10, acceleration ratio 2.1877 (massive -4.08729, massless -8.94179); at smaller g, -4.04457/-8.06461/ratio 1.9939. Parameters and old finite targets are retained.\nSUMMARY: pointwise dressing gives alpha=1+kappa*nu under stated regularity; the supplied uniform toy has a global 1/8 slope bound. Gapped massless occupations are flat, but massive near-zero fitted slope coexists with nonzero local response. Physical readout, formation and gravity remain supplied/open.\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212052Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

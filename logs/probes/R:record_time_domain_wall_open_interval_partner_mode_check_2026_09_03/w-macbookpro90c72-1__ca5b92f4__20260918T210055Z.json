@@ -1,0 +1,35 @@
+{
+ "task": "R:record_time_domain_wall_open_interval_partner_mode_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+ "seed": 65255,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca5b92f4",
+ "started_utc": "20260918T210055Z",
+ "elapsed_s": 60.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b3a269fdabde2855f035d098718949ad0734e7dcb40c856f671868ea06d2be4",
+ "stdout_tail": "rrow, record-production dynamics, physical persistence dynamics, time metric, and local observability of records\" outside axiom content\nPASS E4 [exact diagonal comparison] the companion spatial-wall model is DIFFERENT, with no common physical no-go inferred: there eps_{v+e_x} = -eps_v at residual 0.0, so a supplied sign flip is a one-site translation of the alternating pattern and min|m(x)| = 1.0 -- no plane carries a vanishing mass -- while here tau steps 1 -> 0 across the wall and the light states are finite low levels, not generic exact zeros\nPASS F1 [exact determinant/Decimal bounds] declared finite hard/free bidiagonal diagonals are nonzero; intended rational splitting has positive inverse-norm bounds below 1e-20, not exact zero\nPASS F2 [actual finite flux matrices] square identity and positive endpoint gaps .00407991368,1.60326484 exclude continuous zero crossings; window switches span an AVOIDED gap\nPASS F3 [finite cutoff counterexamples] all four near-boundary Ns48 fixtures have 20 |E|<.30 states on BOTH sides of bulk window\nPASS F4 [actual withdrawal] remaining4x4 spatial Wilson block differs from separate naive2x2; full removed Gamma_s term norm equals K term, not ||Gamma_s||=2\nSUMMARY: supplied finite boundary-localized low spaces, balanced chiral pairing, full finite cutoff census and signed window diagnostics across an avoided gap. No exact generic finite zero, anomaly inflow, independent-wall count or physical Record-time/readout supplier.\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210156Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

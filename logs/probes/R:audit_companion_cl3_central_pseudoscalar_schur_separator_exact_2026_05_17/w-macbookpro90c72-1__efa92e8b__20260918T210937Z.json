@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_cl3_central_pseudoscalar_schur_separator_exact_2026_05_17.py",
+ "seed": 65777,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210937Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=42, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b34599c17f2a2381fb899d1b568cc2a6f688d21b56db0fc91b706a87accbdb7e",
+ "stdout_tail": "erification\n----------------------------------------------------------------------------------------\n  [PASS (A)] (S3-bd1) e_+ on rho_+ \u2295 rho_- = diag(I_2, 0)  (e_+ projects onto the +i-chirality summand)\n  [PASS (A)] (S3-bd2) e_- on rho_+ \u2295 rho_- = diag(0, I_2)  (e_- projects onto the -i-chirality summand)\n  [PASS (A)] (S3-bd3) e_+ + e_- = I_4 on rho_+ \u2295 rho_-\n  [PASS (A)] (S3-bd4) e_+ * e_- = 0 on rho_+ \u2295 rho_-\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (S1) chi(rho_+) = +i and chi(rho_-) = -i; chi^2 = -1 in both\n    (S1) Schur scalar property: only scalar matrices commute with all sigma_i\n    (S2) Intertwiner of rho_+ and rho_- with chi != chi' forces U = 0\n    (S3) Idempotent factorisation: e_+ -> I, e_- -> 0 on rho_+\n    (S3) Idempotent factorisation: e_+ -> 0, e_- -> I on rho_-\n    (S3) Idempotent algebra e_+ + e_- = I, e_+ e_- = 0, e_+^2 = e_+, e_-^2 = e_-\n    (C1) chi map is a bijection {rho_+, rho_-} -> {+i, -i}\n    (C2) Block-diagonal omega on rho_+ \u2295 rho_-\n    (C3) dim_C V = 2 in both summands (chirality-independent)\n    (CF) Schur dichotomy is sharp: chi^2 = -1 forces chi in {+i, -i}\n\n========================================================================================\nTOTAL: PASS=42, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210937Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

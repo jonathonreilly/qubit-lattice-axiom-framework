@@ -1,0 +1,37 @@
+FAIL the Cycle-283 note exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/REDUNDANT_ARCHIVE_PERMANENCE_HISTORY_CYCLE283_NOTE_2026-07-17.md
+PASS Cycle-278 contact-active Walsh effect is used exactly as the archive input :: {'rank_Q': Fraction(57, 1), 'Walsh_terms': 64, 'beta': -0.3, 'contact_coupling': 0.37}
+PASS archive redundancy preserves all Cycle-278 weights across training L/depth and held-out size L=6/depth 5 :: [(3, 1, 'uniform', '57/64'), (3, 1, 'B0_plus', '13/16'), (3, 1, 'B0_minus', '31/32'), (3, 2, 'uniform', '57/64'), (3, 2, 'B0_plus', '13/16'), (3, 2, 'B0_minus', '31/32'), (3, 3, 'uniform', '57/64'), (3, 3, 'B0_plus', '13/16'), (3, 3, 'B0_minus', '31/32'), (3, 5, 'uniform', '57/64'), (3, 5, 'B0_plus', '13/16'), (3, 5, 'B0_minus', '31/32'), (4, 1, 'uniform', '57/64'), (4, 1, 'B0_plus', '13/16'), (4, 1, 'B0_minus', '31/32'), (4, 2, 'uniform', '57/64'), (4, 2, 'B0_plus', '13/16'), (4, 2, 'B0_minus', '31/32'), (4, 3, 'uniform', '57/64'), (4, 3, 'B0_plus', '13/16'), (4, 3, 'B0_minus', '31/32'), (4, 5, 'uniform', '57/64'), (4, 5, 'B0_plus', '13/16'), (4, 5, 'B0_minus', '31/32'), (5, 1, 'uniform', '57/64'), (5, 1, 'B0_plus', '13/16'), (5, 1, 'B0_minus', '31/32'), (5, 2, 'uniform', '57/64'), (5, 2, 'B0_plus', '13/16'), (5, 2, 'B0_minus', '31/32'), (5, 3, 'uniform', '57/64'), (5, 3, 'B0_plus', '13/16'), (5, 3, 'B0_minus', '31/32'), (5, 5, 'uniform', '57/64'), (5, 5, 'B0_plus', '13/16'), (5, 5, 'B0_minus', '31/32'), (6, 1, 'uniform', '57/64'), (6, 1, 'B0_plus', '13/16'), (6, 1, 'B0_minus', '31/32'), (6, 2, 'uniform', '57/64'), (6, 2, 'B0_plus', '13/16'), (6, 2, 'B0_minus', '31/32'), (6, 3, 'uniform', '57/64'), (6, 3, 'B0_plus', '13/16'), (6, 3, 'B0_minus', '31/32'), (6, 5, 'uniform', '57/64'), (6, 5, 'B0_plus', '13/16'), (6, 5, 'B0_minus', '31/32')]
+PASS redundant valid/value archives close after uncompute at training and held-out depth :: [{'depth': 1, 'close': 0.9999999999999998, 'pointer_after_uncompute': 0.0, 'all_valid': 0.9999999999999998, 'all_values_one': 0.4999999999999999, 'inverse_residual': 0.0}, {'depth': 2, 'close': 0.9999999999999998, 'pointer_after_uncompute': 0.0, 'all_valid': 0.9999999999999998, 'all_values_one': 0.4999999999999999, 'inverse_residual': 0.0}, {'depth': 3, 'close': 0.9999999999999998, 'pointer_after_uncompute': 0.0, 'all_valid': 0.9999999999999998, 'all_values_one': 0.4999999999999999, 'inverse_residual': 0.0}, {'depth': 5, 'close': 0.9999999999999998, 'pointer_after_uncompute': 0.0, 'all_valid': 0.9999999999999998, 'all_values_one': 0.4999999999999999, 'inverse_residual': 0.0}]
+PASS unrestricted local reversible reconnection erases every redundant archive exactly :: 0.0
+PASS whole-instrument, close, uncompute, and middle-link deletions have exact causal dispositions :: {'whole_close': 0.0, 'close_deleted': 0.0, 'uncompute_deleted': 0.0, 'middle_link_deleted': 0.0}
+PASS Cycle-279 split data-coupling deletion still false-closes through redundant archives :: (0.9999999999999998, 0.9999999999999998)
+PASS archive consistency rejects one local value fault but not an all-correlated value fault :: (0.0, 0.9999999999999998, 0.9999999999999998, 0.4999999999999998)
+PASS fresh append-only cylinders are normalized, strongly positive, and projectively consistent through held-out depth 5 :: {'rows': [{'family': 'uniform', 'weight_one': '57/64', 'held_histories': ('00000', '11111'), 'held_normalization': '1'}, {'family': 'B0_plus', 'weight_one': '13/16', 'held_histories': ('00000', '11111'), 'held_normalization': '1'}, {'family': 'B0_minus', 'weight_one': '31/32', 'held_histories': ('00000', '11111'), 'held_normalization': '1'}], 'minimum_decoherence_eigenvalue': '1/32'}
+PASS fresh-capacity growth is linear and capacity exhaustion cannot be hidden as append :: {'capacity': 5, 'fresh_history': (1, 1, 1, 1, 1), 'reuse_history': (0, 1, 1, 1, 1), 'logical_archive_bits_per_redundancy_depth': 2}
+PASS one normalized history measure admits distinct actual-history annotations :: ((0, 0, 0, 0, 0), (1, 1, 1, 1, 1), {(0, 0, 0, 0, 0): Fraction(1, 2), (1, 1, 1, 1, 1): Fraction(1, 2)})
+PASS archive ladder is covariant under all 24 proper-cubic frames and full 27-element translation group :: {'rows': [{'depth': 1, 'routed_role_sites': 8, 'formula': 8, 'NN_edges': 8, 'radius': 2}, {'depth': 2, 'routed_role_sites': 11, 'formula': 11, 'NN_edges': 13, 'radius': 3}, {'depth': 3, 'routed_role_sites': 14, 'formula': 14, 'NN_edges': 18, 'radius': 4}, {'depth': 5, 'routed_role_sites': 20, 'formula': 20, 'NN_edges': 28, 'radius': 6}], 'combined_tests': 2592}
+PASS lawful domain rejects nonpositive archive depth :: 2
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/redundant_archive_permanence_history_cycle283_2026_07_17.py", line 647, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/redundant_archive_permanence_history_cycle283_2026_07_17.py", line 627, in main
+    lawful_and_semantic_controls()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/redundant_archive_permanence_history_cycle283_2026_07_17.py", line 608, in lawful_and_semantic_controls
+    text = normalized(NOTE)
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/redundant_archive_permanence_history_cycle283_2026_07_17.py", line 58, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/REDUNDANT_ARCHIVE_PERMANENCE_HISTORY_CYCLE283_NOTE_2026-07-17.md'

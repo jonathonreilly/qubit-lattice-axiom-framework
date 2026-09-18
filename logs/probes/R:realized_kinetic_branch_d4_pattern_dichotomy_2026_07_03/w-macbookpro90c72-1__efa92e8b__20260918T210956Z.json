@@ -1,0 +1,35 @@
+{
+ "task": "R:realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03",
+ "type": "runner-reexecution",
+ "lane": "realized",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/realized_kinetic_branch_d4_pattern_dichotomy_2026_07_03.py",
+ "seed": 65796,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210956Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8eaef09a885c001e5bb2f060e3e0385b0f0018a25a593dc37c9fa61fcab6df38",
+ "stdout_tail": "] (count 2), unfiltered count=8, max dim deviation=0\n[PASS] [T7]  7. non-covariant symbol B_1=sigma_3,B_2=B_3=0 has dims [2,1,1]; no unitary implements C4z covariance (floor > 0.5)  |  mixed dims=[2, 1, 1], min covariance defect over 200 unitaries=1.733\n[PASS] [T8]  8. Fourier orthogonality extracts Hermitian coefficients (reconstruction exact); a non-Hermitian coefficient breaks K(p)=K(p)^dag  |  max coeff Herm defect=0.00e+00, reconstruction defect=1.07e-15, non-Herm symbol defect=1.414\n[PASS] [T9]  9. guard: flipping one eta0 link sign breaks the clean anticommutation of the blocked family  |  perturbed anticommutation norm=4.000, clean anticommutation norm=0.00e+00\n\nTOTAL: PASS=9 FAIL=0\n\nSUMMARY: On the parent two-flux-class kinetic surface, the D4 per-direction algebra-dimension\n         discriminator is a BINARY CLASS INVARIANT on the covariant surface: for Hermitian\n         nearest-neighbor symbols on the one-site C^2 carrier covariant under the proper cubic\n         rotations the per-direction unital star-algebra dimension is CONSTANT across the three\n         directions, and on the one-coefficient-per-direction representatives it lies in {1,2},\n         realizing exactly [1,1,1] (K0 class) and [2,2,2] (K1 class). Off-surface Hermitian\n         symbols realize dim 4 and non-covariant symbols realize direction-mixed patterns, so\n         both hypotheses are load-bearing. The selector bit is not decided here, and the\n         Admissibility reading is not decided here.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210957Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

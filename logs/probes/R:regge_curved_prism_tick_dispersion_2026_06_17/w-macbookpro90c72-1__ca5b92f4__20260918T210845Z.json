@@ -1,0 +1,35 @@
+{
+ "task": "R:regge_curved_prism_tick_dispersion_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "regge",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/regge_curved_prism_tick_dispersion_2026_06_17.py",
+ "seed": 65725,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca5b92f4",
+ "started_utc": "20260918T210845Z",
+ "elapsed_s": 16.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1a128cc00eeec2af1b94a50cefeeea3291a47b5a225f4c7f46434f38633713d0",
+ "stdout_tail": "; max channel-weight change = 1.78e-15\n[PASS] C3 off-round transport: a generic off-round spatial deformation (break S_5 by perturbing three spatial edge classes incommensurately) lifts the round-locus channel degeneracy to a per-k_tau spectrum with no exact degenerate complement (min eigenvalue gap > 1e-6, near-simple), confining the frame-ambiguity to the symmetric locus (consistent with the landed PL_S3 off-round result). Built via the exact Fourier-block extractor on a deformed assemble_full\n       round-locus min distinct eigenvalues over k_tau = 8/25 (degenerate: True); off-round (k_tau, #distinct, min-gap): (0.000: 25/25, gap 1.96e-01); (0.600: 25/25, gap 1.95e-01); (2.094: 25/25, gap 1.01e-01)\n[PASS] [TAUT] C1/C2 are AUTOMATIC: a RANDOM Hermitian matrix group-averaged by the same S_5 action satisfies C1's commutation to machine zero (so C1/C2 carry no prism-specific / connection content)\n       random-matrix S_5-average commutator = 1.67e-15 (passes C1 with ZERO geometry)\n[PASS] [DISP] (the substantive NEW result): the canonical channel weights DISPERSE in tick momentum k_tau (e.g. h1 varies materially across the sweep) -- real 3+1 structure absent from the static 3D round-S^3 slice; this is what the curved 3+1 prism build adds beyond the retained spatial result\n       h1 dispersion (max-min over k_tau sweep) = 3.538; weights (k_tau,h1,h4,h5): (0.00:-5.11,+7.36,+5.54); (0.30:-5.02,+7.34,+5.54); (2.09:-2.16,+6.58,+5.58); (1.10:-4.03,+7.08,+5.56)\n\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210901Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

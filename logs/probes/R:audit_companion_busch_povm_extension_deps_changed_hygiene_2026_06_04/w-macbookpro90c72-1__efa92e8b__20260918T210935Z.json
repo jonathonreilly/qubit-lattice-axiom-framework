@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_busch_povm_extension_deps_changed_hygiene_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_busch_povm_extension_deps_changed_hygiene_2026_06_04.py",
+ "seed": 65775,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210935Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f7245efbd82af0aa84f9036d44dc290fb7203dee66ce1fa67348fffe1e8082b4",
+ "stdout_tail": "===========================================================\n  PASS route1_direct_trace :: route1 = Tr(sigma E) = 0.369700054911128\n  PASS route2_eigendecomposition :: route2 = Sigma p_a <a|E|a> = 0.369700054911127\n  PASS route3_pauli_string_basis :: route3 = (1/d) c(sigma).c(E) = 0.369700054911127\n  PASS route4_povm_partition_complement :: route4 = 1 - Tr(sigma (I-E)) = 0.369700054911128\n  PASS all_four_routes_agree :: max pairwise diff = 2.220e-16\n\n========================================================================\nTOTAL PASS: 56\nTOTAL FAIL: 0\n========================================================================\n\nCompanion conclusion (audit-friendly evidence only):\n  The load-bearing chain of\n  BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md\n  (m(E) = Tr(sigma * E) on the qubit-lattice effect algebra\n  E(H_Lambda)) uses ONLY Lattice + Quantum axiom content plus the\n  cited Busch 2003 / CFMR 2004 textbook POVM-additive extension\n  theorem and finite-dim Riesz representation.\n  The Record axiom (additive scalar record-readout functional)\n  is neither used nor invoked. Numeric output is identical under\n  both 'Record axiom included' and 'Record axiom not included'\n  outer scopes. This runner does not re-apply the prior audit\n  verdict; it records that the arithmetic checked here is\n  unchanged by the 2026-06-04 axiom-set adoption.\n\nThe audit lane decides its independent handling of the\narchived snapshot under the new minimal_axioms premise hash.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210935Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_busch_povm_extension_deps_changed_hygiene_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

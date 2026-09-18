@@ -1,0 +1,35 @@
+{
+ "task": "R:record_density_slows_lr_front_optical_metric_toy_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_density_slows_lr_front_optical_metric_toy_2026_06_09.py",
+ "seed": 66452,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T212052Z",
+ "elapsed_s": 12.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dec8351661d1805d99a079b1d73c4092d36974ba1b34756fee27eebc93d6a7b4",
+ "stdout_tail": "occupation amplitude is registered into a frozen environment qubit, the local front\nspeed v_eff strictly DECREASES with record density n -- monotonically across\nn in {0, 1/8, 1/4, 1/2, 1} -- verified by two independent methods (exact Bloch/\ntransfer-matrix frequency domain; exact wave-packet and propagator-cone time domain)\nthat agree to within a few percent, with the per-record Wigner delay positive across\nthe inner band |E| < sqrt(2) t (sign structure at the band edges verified exactly;\nthe front-speed statement is carrier-independent). The mechanism: registration\ndwell, quantified exactly. A smooth record-density\nbump n(x) yields the explicit optical-metric potential Phi(x) = (v_eff^2 - v_bare^2)/\n(2 v_bare^2) <= 0 whose eikonal (null-geodesic) time matches the exact packet arrival.\nControls: gauge-invariant; n -> 0 and g -> 0 restore the bare cone; at the pointer\nenergy full records close the cone (gap/antiresonance); the supplied-clock rescaling\nleaves Phi(x) invariant (conformal class only -- the clock-rate no-go boundary is\nrespected, the scale is NOT derived). Honest class finding: a projective pointer-copy\nrecord attenuates instead of delaying -- the slowing built here is a property of the\namplitude-registration coupling class, reported as such. This is a TOY: the hopping\nand registration couplings are supplied model dynamics; nothing here derives the\nmetric from the axioms, fixes the conformal/clock normalization, or touches Einstein\ndynamics. Sets no audit status.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212105Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/record_density_slows_lr_front_optical_metric_toy_2026_06_09.txt against the .txt beside this log"
+  ]
+ }
+}

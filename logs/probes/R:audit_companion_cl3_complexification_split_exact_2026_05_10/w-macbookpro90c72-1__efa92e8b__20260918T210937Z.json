@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_cl3_complexification_split_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
+ "seed": 65777,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210937Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "123fef08842d534db7f71195938dd994758c9cd8156c2d2e08cf1ac71d3c943a",
+ "stdout_tail": "----------------------------------------------------------------------------------\nPart 6 (K4): two-dim irrep dimensional readout\n----------------------------------------------------------------------------------------\n  [PASS (A)] (K4a) Schur's lemma: only scalars commute with all three \u03c3_i  (solution: [{a: d, b: 0, c: 0}])\n  [PASS (A)] (K4b) Casimir C_2 = \u03c3_1\u00b2 + \u03c3_2\u00b2 + \u03c3_3\u00b2 = 3 I (Schur scalar)\n  [PASS (A)] (K4c) dim_C V = 2 for the Pauli realisation\n\n----------------------------------------------------------------------------------------\nPart 7: counter-example \u2014 no faithful 1\u00d71 complex Cl(3)-irrep\n----------------------------------------------------------------------------------------\n  [PASS (A)] (K4d) No faithful 1\u00d71 complex Cl(3) irrep exists (computed: the scalar Clifford system has no solution)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    Cl(3,0) anticommutation {\u03c3_i, \u03c3_j} = 2 \u03b4_{ij} I\n    (K1) \u03c9\u00b2 = -1 and \u03c9 central\n    (K2) Cl(3,0) real-dim = 8 = real-dim of M_2(C)\n    (K3) e_\u00b1 idempotent identities (both realisations and abstract)\n    (K4) Schur scalar property + dim_C V = 2 + 1\u00d71 no-go\n\n========================================================================================\nTOTAL: PASS=38, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

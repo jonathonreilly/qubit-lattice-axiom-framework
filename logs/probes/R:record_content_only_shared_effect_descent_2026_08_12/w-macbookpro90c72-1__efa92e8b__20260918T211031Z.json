@@ -1,0 +1,35 @@
+{
+ "task": "R:record_content_only_shared_effect_descent_2026_08_12",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_content_only_shared_effect_descent_2026_08_12.py",
+ "seed": 65831,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T211031Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7d715a01a2f4b80ea150ef241c7194196f5c6dbf3f0f438c3633ac375a98b150",
+ "stdout_tail": "tent-only sentences\nPASS: note-preserves-restriction-fractions the note records the recomputed restriction values 25/142 and 2/11\nPASS: note-links-parents the note links the axiom memo, Aug 10 type-separation note, and Aug 12 barycenter note\nPASS: claim-type-contract the author hint uses the exact bounded-theorem enum\nPASS: machine-status-contract the source uses the controlled bounded-support fields\nPASS: post-simplification-note-contract the note disclaims removed Record premises and preserves the direct-value hypothesis\nPASS: no-go-discipline-contract the source carries N1 through N8 and the narrow gate disposition\nPASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, and executor-name rhetoric\nPASS: canonical-nonmutation the menu-context encoding is absent from the canonical axiom file\nPASS: parent-objects-bound the Aug 10 parent still names the shared effect and both menus\nper_element: exact shared effect E0 is checked under identical Phi_eff content and distinct Phi_ctx content\nper_site: one-site same-content substitution is checked; formation probabilities remain outside the direct-readout target\nper_mode: checked and not executed \u2014 no spectral-mode or mode-exhaustion conclusion is part of the theorem\nper_block: exactly two declared menus and the direct-readout identification are tested; other content maps remain live\nlattice_wide: checked and not executed \u2014 no multi-site dynamics, formation law, or Born uniqueness is claimed\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T211031Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

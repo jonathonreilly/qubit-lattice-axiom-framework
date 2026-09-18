@@ -1,0 +1,41 @@
+external_scientific_inputs: the current Record boundary and bounded Newton kernel/non-claims are source-bound; the finite-additive functional is an explicit conditional model; no observation or fit is used
+package_local_integrity_reads: the note, current minimal axiom, and Newton parent are read; no cache or governance surface is written
+negative_scope: only recovery of a two-body product from one pooled scalar is rejected on the stated free model; separate evaluation and response-law composition remain live
+PASS: audit-input-paths declared inputs are exactly the note, current axiom, and Newton parent
+PASS: current-record-boundary the approved authority states content-only readability and unreadability at absence
+PASS: finite-additivity-excluded the authority explicitly excludes finite additivity, named I, and I(empty)=0
+PASS: removed-record-premise-absent the superseded finite-additivity sentence is absent
+PASS: newton-nonclaims the Newton parent leaves both test response and the physical product open
+PASS: conditional-empty the supplied model has I(empty)=0
+PASS: conditional-additivity the weighted model is finite-additive on disjoint collections
+PASS: disjoint-domain the constructed union refuses overlapping labels
+PASS: pooled-collision (2,0), (1,1), and (0,2) all expose pooled value 2
+PASS: product-separation their separately evaluated products are 0, 1, 0
+PASS: arbitrary-function-rejector one function of the common pooled input cannot return both 0 and 1
+PASS: named-pooled-trials identity, constant, and nonlinear pooled trials each miss the product triple
+PASS: diagonal-escape on m_s=m_t the product is (sigma/2)^2
+PASS: diagonal-escape on m_s=m_t the product is (sigma/2)^2
+PASS: diagonal-escape on m_s=m_t the product is (sigma/2)^2
+PASS: fixed-test-escape with externally fixed m_t, the product is m_t(sigma-m_t)
+PASS: fixed-test-escape with externally fixed m_t, the product is m_t(sigma-m_t)
+PASS: fixed-test-escape with externally fixed m_t, the product is m_t(sigma-m_t)
+PASS: second-statistic-escape sigma and delta recover the product as (sigma^2-delta^2)/4
+PASS: second-statistic-escape sigma and delta recover the product as (sigma^2-delta^2)/4
+PASS: second-statistic-escape sigma and delta recover the product as (sigma^2-delta^2)/4
+PASS: separate-product-definition separate evaluation gives B_I(S,T)=I(S)I(T)
+PASS: separate-additivity-source B_I is additive in the source argument
+PASS: separate-additivity-test B_I is additive in the test argument
+PASS: source-linear-kernel the parent kernel gives |grad phi|=m_source/(4 pi r^2)
+PASS: conditional-test-response supplying test response produces the two-mass product
+PASS: note-claim-contract the note states the conditional theorem, escape, and physical residual
+PASS: note-dependency-contract frontmatter names only the current axiom boundary and Newton parent
+PASS: note-machine-contract the note uses controlled bounded-support fields
+PASS: note-no-go-contract the note records all eight stress-test sections
+PASS: forbidden-broad-rhetoric the source avoids the rejected broad claims
+PASS: newton-parent-contract the cited parent retains its exact source-linear algebra
+per_element: checked — each atom weight and every rejector scalar is evaluated exactly over the rationals
+per_site: checked and not executed — the conditional collection model carries labels but asserts no site-local physical readout
+per_mode: checked and not executed — no spectral or Fourier decomposition is used or excluded
+per_block: checked — pooled and separately accessible two-collection interfaces are evaluated independently
+lattice_wide: checked and not executed — no lattice dynamics, two-body response, or gravity closure is claimed
+TOTAL: PASS=32 FAIL=0

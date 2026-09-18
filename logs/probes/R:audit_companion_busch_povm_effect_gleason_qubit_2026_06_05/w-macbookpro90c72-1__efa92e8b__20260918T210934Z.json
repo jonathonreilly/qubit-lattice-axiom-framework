@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_busch_povm_effect_gleason_qubit_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
+ "seed": 65774,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210934Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "457c14dc47846f4435b1c886406ead39cb185be1574159e29f2487cf16564756",
+ "stdout_tail": "\n[PASS] d2 guard: g_bad is NOT affine in n (differs from trace form on a generic direction)  [|g_bad - g_affine| = 1.102e-02]\n[PASS] d2 guard: trine POVM {E_k=(2/3)P_k} sums to I (valid 3-outcome POVM)\n[PASS] d2 guard: trace-form measure obeys POVM-additivity (sum=1 on trine)  [sum = 1.000000]\n[PASS] d2 guard: non-affine g_bad VIOLATES POVM-additivity on the trine (sum != 1) -- so (M3) selects the trace form where projective does not  [g_bad POVM sum = 1.250000 (deviation 2.500e-01)]\n\n========================================================================\nTOTAL: 40 PASS / 0 FAIL  (out of 40 checks)\n========================================================================\n\nAll checks passed: the LOAD-BEARING direction of the Busch 2003 / CFMR 2004 effect-valued (POVM) Gleason theorem is reproven from finite operator-algebra primitives on the qubit M_2(C) (and M_2 (x) M_2): an additive [steps A], nonnegative, normalized effect-functional m on E(M_2) with the parent note's POVM-additivity hypotheses (M1)-(M3) is forced to m(E) = Tr(sigma . E) [linearity (B) -> linear extension (C) -> Riesz/trace form (D)], with sigma a unique density matrix [Tr sigma = 1 from m(I)=1, sigma >= 0 from m>=0 on projectors (E)]. The dim-2 guard shows the projective (Gleason) constraint alone underdetermines sigma while POVM-additivity selects it -- the reason Busch's theorem reaches dim 2. Busch (2003), Caves-Fuchs-Manne-Renes (2004), Gleason (1957) are named comparators only, not derivation inputs.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210935Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

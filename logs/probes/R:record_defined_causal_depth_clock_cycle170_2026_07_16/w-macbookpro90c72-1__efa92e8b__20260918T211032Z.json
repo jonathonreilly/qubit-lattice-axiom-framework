@@ -1,0 +1,32 @@
+{
+ "task": "R:record_defined_causal_depth_clock_cycle170_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_defined_causal_depth_clock_cycle170_2026_07_16.py",
+ "seed": 65832,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T211032Z",
+ "elapsed_s": 616.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6a12ca42567be1b043d5db4ec308eee0f83a3f78e6250f30f060ec0912fd4349",
+ "stdout_tail": " records but not depth :: (61662, 4106, 44, 0)\n\nABSTRACT SERIAL COMPOSITION AND EXACT PHYSICAL SEAM\nPASS all 16 abstract serial DAGs have additive depth :: {'failures': [], 'depths': {((0, 0), (0, 0)): 8072, ((0, 0), (0, 1)): 8072, ((0, 0), (1, 0)): 8142, ((0, 0), (1, 1)): 8142, ((0, 1), (0, 0)): 8072, ((0, 1), (0, 1)): 8072, ((0, 1), (1, 0)): 8142, ((0, 1), (1, 1)): 8142, ((1, 0), (0, 0)): 8142, ((1, 0), (0, 1)): 8142, ((1, 0), (1, 0)): 8212, ((1, 0), (1, 1)): 8212, ((1, 1), (0, 0)): 8142, ((1, 1), (0, 1)): 8142, ((1, 1), (1, 0)): 8212, ((1, 1), (1, 1)): 8212}}\nPASS zero-cost rigid serial gluing fails for this exact source/output seam :: {'source_delta': (480, 0, 0), 'output_delta': (320, -70, 80), 'norms': (230400, 113700), 'matches': 0}\n\nSCOPE AND NO-GO DISCIPLINE\nFAIL the Cycle-170 note states every required scope boundary :: ('operational commit depth', 'dimensionless relative duration', 'not a continuous rate', 'not metric time', 'not a lorentz or lapse result', 'no axiom conclusion follows', 'abstract dependency composition', 'zero-cost serial gluing', '122,816 declared dynamic edges', 'status: **pass for the exact seam exclusion; fail for a general serial no-go.**', '### n1 \u2014 alternative routes', '### n2 \u2014 wall independence', '### n3 \u2014 hidden-condition scan', '### n4 \u2014 residual matching', '### n5 \u2014 rhetoric audit', '### n6 \u2014 partial closure and axiom classification', '### n7 \u2014 strongest hostile steelman', '### n8 \u2014 cross-cycle echo')\n\nTOTAL\nPASS 21 FAIL 1\nRESULT OPEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212048Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

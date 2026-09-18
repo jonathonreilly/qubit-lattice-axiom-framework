@@ -1,0 +1,35 @@
+{
+ "task": "R:record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+ "seed": 65316,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca5b92f4",
+ "started_utc": "20260918T210156Z",
+ "elapsed_s": 8.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "de1f6202335d834f2ed7b2d3f9a1779eb38f0e0a3f2c36ac072ae8b5b08e3308",
+ "stdout_tail": "numerical] two minima of the RESOLVED w=3 crossing, not a complete plane/line mode census -- |E| = 6.5e-05 at the node, 0.099958 at k_z - pi = 0.1\nPASS E4 [numerical] the line does bind: the band density is enhanced 11.2-fold within 1.5 coarse sites of the four intersection lines (L = 32), 17.5 per cent on 16 of 1024 cells\nPASS Q1 [1e-12] actual transverse square identity; q spans TWO coarse sites (FOUR fine), no physical time calibration\nPASS Q2 [finite tail fits] energy-dependent sharp recurrence 2/asinh(m), distinct from zero-energy kernel; actual fitted tails agree within 1e-4 relative\nPASS Q3 [complete finite spectra] resolved |E|<m counts 24 and 72; selected eight are incomplete and sampled mass/low energy are nonzero\nPASS Q4 [actual counterexample] anticommuting W/X have simultaneous means 1/sqrt2; actual X exits selected light spaces instead of swapping walls\nPASS Q5 [1e-12] each summed coarse-x-plane projector compression is scalar on each selected SHARP wall space; identical x marginals after summing four transverse-cell coordinates, not vertex densities\nPASS Q6 [1e-12/1e-7] actual arbitrary-profile line square identity; original band has opposite NONZERO off-node velocities about +/-0.24383155\nSUMMARY: supplied finite sharp/selected resolved wall bands, distinct tail scales and cell units; directly checked projections and paired sharp taste coefficients; a massive dispersing line. No physical readout, formation, exact-zero or anomaly theorem.\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210205Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+ "seed": 65799,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210959Z",
+ "elapsed_s": 31.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0d6ce306f8c8d26ff648460ea55da8235304808ba3b652d7b23a4e5aa350ef92",
+ "stdout_tail": "16 | 128: -5.9999 -6.0015 -0.2109 | 256: -6.0000 -6.0004 -0.1055\nPASS E2 [numerical finite g samples] the t^2/V exchange is sector-INDEPENDENT (above): g E_0 -> -6 in both sectors, g^2 (E_0(-) - E_0(+)) -> 0\n   E3 cube g^3 dE: 64:-26.9815477888 128:-26.9953982475 256:-26.9988502688 512:-26.9997126114; exponents 2.99926 2.99982 2.99995; Richardson limit -26.9999999999\nPASS E3 [numerical, mpmath 60 digits] the surviving difference is order t^4/V^3 (above): E_0(-) - E_0(+) = -27 t^4/V^3 leading coefficient on the cube, independently certified by the full two-state matrix R4\n   E4 2x2x3 g^3 dE: 16:-12.12629 32:-11.92143 64:-11.86931 128:-11.85622 256:-11.85295\nPASS E4 [numerical finite g samples] 2x2x3 finite samples (above), ending near -11.8529; historical -320/27 guess unproved, only the negative sampled sign is shared\nPASS R4 [exact rational] cube K2=-6I, K3=0, full fourth-order diagonal/tunnelling matrices; ground split -27=-12-15\n   R4 actual fourth-order matrices: +:Matrix([[17/2, 13/2], [13/2, 17/2]]) ; -:Matrix([[-7/2, -43/2], [-43/2, -7/2]])\nPASS R1 [exact] actual edge-star product is identity: only even-N Fock sectors have this carrier interpretation\nSUMMARY: with this interaction present the staggered sector stays the unique many-body ground sector at half filling on both exhaustive clusters at every repulsive coupling tested, the cube fourth-order difference including both diagonal and tunnelling terms; no physical sector-selection law derived.\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T211031Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

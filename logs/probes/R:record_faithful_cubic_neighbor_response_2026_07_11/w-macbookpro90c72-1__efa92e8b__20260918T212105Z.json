@@ -1,0 +1,35 @@
+{
+ "task": "R:record_faithful_cubic_neighbor_response_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_faithful_cubic_neighbor_response_2026_07_11.py",
+ "seed": 66465,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T212105Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "740ddff53d7dde67d91e16ab1a36461eac4fac2489a134eae51735c7664b964f",
+ "stdout_tail": " even anisotropy mode is killed\nPASS C01: Pauli response coefficients satisfy Cl(3) exactly\nPASS C02: symbolic vector response squares to its scalar norm\nPASS C03: symbolic vector eigenvalues are plus/minus the response norm\nPASS C04: nonzero exact vector has two rank-one spectral projectors\nPASS C05: sampled odd response agrees with the exact scalar-square identity\nPASS K01: odd Clifford symbol vanishes at all eight corners\nPASS K02: graph Laplacian has one null corner\nPASS K03: oriented links obey A_minus=A_plus^dagger\nPASS K04: oriented links reconstruct the Hermitian cosine-plus-sine symbol\nPASS K05: reconstructed nearest-neighbor symbol is Hermitian\nPASS K06: the one-excitation-sector I-SWAP restriction (cubic graph Laplacian) is the b=0 scalar-even normal form\nPASS F01a: the response eigenvalue-gap discriminant is exactly 4 b^2 |directed difference|^2\nPASS F01b: at b=0 the response is degenerate for every input, so no nontrivial rank-one spectral projector exists\nPASS F02: a nonzero vector response has two simple rank-one spectral projectors, constructed from the response itself\nPASS F03: the discriminant separates balanced inputs from directed inputs at nonzero b\nBOUNDARY: F01-F03 exclude b=0 only if spectral record-faithfulness is separately supplied.\nBOUNDARY: K03-K06 use a separately supplied oriented-link response-to-symbol realization.\nBOUNDARY: current Admissibility does not identify availability projectors with these response coefficients.\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212106Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py",
+ "seed": 65778,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210938Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bac3c8cd3cddf5c13817cedbb73a40a63074dc4cba9b8ca8436cc60ed279ce0d",
+ "stdout_tail": " reducible (two invariant 2-dim subspaces)  (block-diagonal structure)\n  [PASS (A)] (D2d) \u03c1_+ \u2295 \u03c1_- has \u03c9 = diag(+i I, -i I) on C^4\n  [PASS (A)] (D2e) \u03c1_+ \u2295 \u03c1_- decomposes as one \u03c1_+ + one \u03c1_- (n_+ = n_- = 1)  (block-diagonal split into the two chirality summands)\n\n----------------------------------------------------------------------------------------\nPart 6: no faithful odd-dim irrep counter-example\n----------------------------------------------------------------------------------------\n  [PASS (A)] (D2f) n=1 faithful Cl(3) irrep impossible (anticommutator forces 0)\n  [PASS (A)] (D2g-counter) C^3 '\u03c3_i \u2295 0' fails \u03b3_i\u00b2 = I (third entry = 0 \u2260 1)  (confirms 3-dim faithful Cl(3) rep does not exist via this naive lift)\n  [PASS (A)] (D2h) No faithful 3-dim complex Cl(3) irrep\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    Both \u00b1-chirality realisations are 2-dim faithful Cl(3) irreps\n    Central pseudoscalar \u03c9 distinguishes the two chiralities\n    Schur scalar property forces irrep dim = 2\n    Direct-sum decomposition reproduces dim 2(n_+ + n_-)\n    No faithful odd-dim Cl(3) irrep (n = 1 and n = 3 checks)\n\n========================================================================================\nTOTAL: PASS=37, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

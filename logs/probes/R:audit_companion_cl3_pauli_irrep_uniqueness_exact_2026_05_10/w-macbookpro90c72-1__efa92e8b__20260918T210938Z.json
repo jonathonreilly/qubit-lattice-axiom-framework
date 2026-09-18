@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+ "seed": 65778,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210938Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=51, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c2eb206ec12daa0fc7a900bbdcc63d1dc5516057cd9e1e05673d2ffec01ac7bb",
+ "stdout_tail": "itnesses=0; all five route families are ATTEMPTED in this execution.\nN5_RESOLUTION per_element: both irreducible complex actions have computed opposite-ideal kernel dimensions (4,4).\nN5_RESOLUTION per_site: one abstract real Cl(3,0) copy has exact image ranks (8,8); no physical site is identified.\nN5_RESOLUTION per_mode: the central-action solve has exactly 2 characters and a simple module selects one.\nN5_RESOLUTION per_block: central-block dimensions are (4,4); stacked rank is 8, while each irrep kills the other block.\nN5_RESOLUTION lattice_wide: NOT TESTED and outside this abstract one-algebra theorem; no lattice-wide negative assertion is made.\nN6_DISPOSITION partial_closures=faithful_reducible_direct_sum,Hermitian_same_sign_unitary_refinement; neither changes the exact irreducible complex kernel boundary.\nN7_STEELMAN_ARGUMENT stack rho_plus and rho_minus to obtain a faithful complex representation, apparently defeating nonfaithfulness.\nN7_STEELMAN_RESOLUTION combined_rank=8; faithful=true; reducible=true; invariant_summand_dimensions=2,2; each irreducible kernel_dimension=4.\nN8_DISPOSITION prior_witnesses=0; local analogous controls closed=2; repository echo indexing remains audit-orchestrator-owned.\nCERTIFIED split=M2(C)+M2(C) irreps=2 dimensions=2,2\nCERTIFIED real_ranks=8,8 complex_kernel_dimensions=4,4\n========================================================================\nTOTAL: PASS=51, FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210940Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:recurrent_post_oz_payload_prototype_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "recurrent",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/recurrent_post_oz_payload_prototype_2026_07_15.py",
+ "seed": 65518,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca5b92f4",
+ "started_utc": "20260918T210518Z",
+ "elapsed_s": 108.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a4f756fedc454d937acf3a2fd4c92e9f1c8403c8f6f350eca744560c04372faa",
+ "stdout_tail": "RAIL_OUTPUTS 133\nRELAYS ((-4, 1, -1), (-8, 1, -1))\nPAYLOADS ((-4, 1, -2), (-8, 1, -2))\nTERMINALS ((-4, 1, -3), (-8, 1, -3))\nRELAY_LOCALS ((((-1, 0, 0), 'W3'), ((0, -1, 0), 'OZ'), ((0, 0, 1), 'R_C23'), ((0, 1, 0), 'GY'), ((1, 0, 0), 'GU')), (((-1, 0, 0), 'W3'), ((0, -1, 0), 'OZ'), ((0, 0, 1), 'R_C23'), ((0, 1, 0), 'GY'), ((1, 0, 0), 'GU')))\nPAYLOAD_LOCALS ((((0, 0, 1), 'R_LB'),), (((0, 0, 1), 'R_LB'),))\nTERMINAL_LOCALS ((((0, 0, 1), 'R_C22'),), (((0, 0, 1), 'R_C22'),))\nROW_SIZES 24 8360\nINHERITED_PAYLOAD_ROW frozenset({'R_C22'})\nINHERITED_TERMINAL_ROW frozenset({'J1'})\nSINGLE_VALUED True\nRELAY_SAME True\nPAYLOAD_SAME True\nGRAPH {'states': 2240, 'edges': 6245, 'terminals': 1, 'max_frontier': 4, 'diamond_pairs': 6374}\nBAD ()\nDIAMOND_FAILURES ()\nREACHED 139 139\nUNEXPECTED ((-9, 1, -2), (-8, 0, -2), (-8, 2, -2), (-7, 1, -2), (-5, 1, -2)) 8\nWRONG (((-10, 0, 2), ((-10, 1, 2),), ((-10, 0, 1), (-10, 0, 3), (-10, 1, 2), (-9, 0, 2)), ('R_B21',)), ((-10, 1, 0), ((-10, 0, 0), (-10, 1, -1)), ((-10, 0, 0), (-10, 1, -1), (-10, 1, 1), (-10, 2, 0), (-9, 1, 0)), ('JOINT',)), ((-10, 1, 1), ((-10, 1, 2),), ((-10, 0, 1), (-10, 1, 0), (-10, 1, 2), (-10, 2, 1), (-9, 1, 1)), ('R_B21',))) 116\nCAUSAL_CERTIFICATES 116 0 8 0\nCORRUPTION 2142 0 () 72 (('payload', (-4, 1, -2), (-4, 1, -1), 'ALL', frozenset({'R1'})), ('payload', (-4, 1, -2), (-4, 1, -1), 'BTQ', frozenset({'TJ'})), ('payload', (-4, 1, -2), (-4, 1, -1), 'COMP6', frozenset({'S7'}))) 0 ()\nRESULT TWO_RECURRENT_INHERITED_PAYLOADS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210706Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

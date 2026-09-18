@@ -1,0 +1,34 @@
+PASS record-clause quotations: C1 occurs verbatim in the flattened memo
+PASS record-clause quotations: C2 occurs verbatim in the flattened memo
+PASS record-clause quotations: C3 occurs verbatim in the flattened memo
+FAIL record-clause quotations: C4 occurs verbatim in the flattened memo
+PASS pointer non-demolition block solve: four independent blank-input constraints
+PASS pointer non-demolition block solve: exactly two conditional register vectors
+PASS pointer non-demolition block solve: surviving parameters are precisely v_0 and v_1
+PASS pointer non-demolition block solve: zero off-diagonal pointer blocks
+PASS rank-one Kraus/isometry classification: completeness reduces to two conditional norms
+PASS rank-one Kraus/isometry classification: trace preservation fixes both norms
+PASS rank-one Kraus/isometry classification: C1 gives orthogonal register vectors
+PASS rank-one Kraus/isometry classification: the C1 register frame is normalized
+PASS rank-one Kraus/isometry classification: controlled-copy block is an isometry
+PASS rank-one Kraus/isometry classification: common-vector completeness is identity
+PASS rank-one Kraus/isometry classification: declared family is exactly the V channel
+PASS rank-one Kraus/isometry classification: weaker constraints admit dephasing
+PASS written-projector permanence: a trace-preserving repeat extension exists
+PASS written-projector permanence: repeat application fixes the P_0 record
+PASS written-projector permanence: repeat application fixes the P_1 record
+PASS written-projector permanence: classical mixtures are idempotently stable
+PASS written-projector permanence: C2 leaves no cross-record component
+PASS written-projector permanence: normalized Kraus amplitudes fix the content projector
+PASS written-projector permanence: reset-to-blank control is normalized
+PASS written-projector permanence: reset overwrites P_1 but leaves coincident P_0 fixed
+PASS register-unitary orbit: the general record-frame matrix is unitary
+PASS register-unitary orbit: conjugation preserves the controlled-copy class
+PASS register-unitary orbit: canonical labels map to the general pair
+PASS named negative controls: non-correlating write is rejected by C1
+PASS named negative controls: pointer-demolishing write is rejected by C3
+PASS named negative controls: reset of P_1 to blank is rejected by C2
+PASS named negative controls: non-isometric contraction fails normalization
+PASS dependency-scope quotations: controlled-copy write-isometry surface
+PASS dependency-scope quotations: projective extracted-block form
+TOTAL: PASS=32 FAIL=1

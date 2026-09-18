@@ -1,0 +1,7 @@
+CHECK 1 PASS: text needles and absence guards (40/40)
+CHECK 2 PASS: Result F Model B: supported mutually exclusive outcomes (14/14)
+CHECK 3 PASS: Global agreement and union claims are rejected (7/7)
+CHECK 4 PASS: One supplied immutable history remains internally compatible (5/5)
+CHECK 5 PASS: Result A3/non-goal: influence order without global totality (10/10)
+CHECK 6 PASS: smoke rejectors fail the required surfaces (not same-verifier mutations) (6/6)
+TOTAL: PASS=82 FAIL=0

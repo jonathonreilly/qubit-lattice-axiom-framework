@@ -1,0 +1,35 @@
+{
+ "task": "R:realized_kinetic_branch_selection_frame_class_transport_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "realized",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/realized_kinetic_branch_selection_frame_class_transport_2026_07_02.py",
+ "seed": 65798,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210958Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f712683218309d33170edb5a2643cc0e2b5d395e3d43f77224b422d284378735",
+ "stdout_tail": "[1, 1, 1]\n[PASS] [T1] 11. K1 discriminator tuple invariant under random local U(1) frame, L=6, seed=11  |  dims=[2, 2, 2]\n[PASS] [T1] 12. K1 discriminator tuple invariant under random local U(1) frame, L=6, seed=23  |  dims=[2, 2, 2]\n[PASS] [T1] 13. K1 discriminator tuple invariant under random local U(1) frame, L=6, seed=37  |  dims=[2, 2, 2]\n[PASS] [T2] 14. random framed flux(-1) member absorbs back to eta0 and constant Gamma_mu, L=4  |  eta error=8.89e-16, scalarization=1.27e-15, spread=1.26e-15\n[PASS] [T2] 15. random framed flux(-1) member absorbs back to eta0 and constant Gamma_mu, L=6  |  eta error=1.33e-15, scalarization=1.93e-15, spread=1.88e-15\n[PASS] [T3] 16. variation premise selects the flux(-1) class after local U(1) transport  |  K0 remains neighbor-constant; K1 remains direction-tagged varying\n[PASS] [T3] 17. Dirac-square carrier transports through the recovered absorbing frame  |  max checked square error below 1e-10\n[PASS] [T4] 18. raw per-link phases change under an allowed frame while discriminators remain fixed  |  max raw change=2.000\n[PASS] [T4] 19. illegal sub-region SU2 frame makes the K1 edge coefficient family nonuniform  |  coefficient spread=1.021\n[PASS] [T4] 20. local U(1) frames applied to flux(+1) members never produce flux(-1)  |  plaquette flux stays +1 on all sampled K0 frames\n\nSUMMARY: class-function transport on the local U(1) frame orbits of the licensed two-flux-class surface; gauge-link backgrounds remain separate.\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210958Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

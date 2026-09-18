@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_ckm_cp_phase_structural_identity_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_ckm_cp_phase_structural_identity_exact_2026_05_10.py",
+ "seed": 65777,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210937Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "783e8fbf01c6d11ef532d22879eefd4634d8cbc91efb4481724664cf8fd6feeb",
+ "stdout_tail": "got sqrt(11)*alpha_s**3/432)\n\n----------------------------------------------------------------------------------------\nPart 9: derivable corollaries\n----------------------------------------------------------------------------------------\n  [PASS (A)] corollary: tan^2(delta) * eta^2 / rho^2 == (q - 1)^2  (parametric)  (got (q - 1)**2)\n  [PASS (A)] corollary: cos^2(delta) * q == 1  (parametric)  (diff = 0)\n  [PASS (A)] corollary: J_0 / alpha_s^3 == sqrt(pc-1) / (p^3 c^2)  (under q=pc)  (got sqrt(c*p - 1)/(c**2*p**3))\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    PSUM tautology w_A1 + w_perp = 1\n    (C1) rho parametric in q\n    (C2) eta parametric in q\n    (C3) rho^2 + eta^2 = 1/q parametric in q\n    (C4),(C5) cos^2 and sin^2 of delta_CKM parametric in q\n    cos^2 + sin^2 = 1 trigonometric identity preserved\n    (C6) tan^2(delta) = q - 1 parametric in q\n    (J) J_0 parametric in (p, c, q); (Jq) under q = p c\n    All identities specialise correctly at (p, c, q) = (2, 3, 6)\n    Non-framework (3, 4, 12) reproduces the corresponding closed forms\n    Three derivable corollary identities hold parametrically\n\n========================================================================================\nTOTAL: PASS=26, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210937Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

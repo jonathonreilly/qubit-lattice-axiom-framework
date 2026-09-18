@@ -1,0 +1,34 @@
+{
+ "task": "R:record_comparability_import_discipline_support_fork_arrow_2026_07_07",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py",
+ "seed": 65799,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210959Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=82 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bc4898c924ce861101dfb9cb35ae4078e6d1aadf9dea5dec35f18cb710501187",
+ "stdout_tail": "CHECK 1 PASS: text needles and absence guards (40/40)\nCHECK 2 PASS: Result F Model B: supported mutually exclusive outcomes (14/14)\nCHECK 3 PASS: Global agreement and union claims are rejected (7/7)\nCHECK 4 PASS: One supplied immutable history remains internally compatible (5/5)\nCHECK 5 PASS: Result A3/non-goal: influence order without global totality (10/10)\nCHECK 6 PASS: smoke rejectors fail the required surfaces (not same-verifier mutations) (6/6)\nTOTAL: PASS=82 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210959Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:realized_kinetic_branch_conditional_record_registration_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "realized",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py",
+ "seed": 65796,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "efa92e8b",
+ "started_utc": "20260918T210956Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=15 FAIL=8",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cfb16d1fbc26e4c05aea5a2cb0b4adad71b057fb6dec9a0a2a4edca3ae122c78",
+ "stdout_tail": ", 2, 2]\n[PASS] [T-C] 10. pointwise realized record stack with a neighbor-conditioned qubit record registers K1  |  branch=K1, anticommutator=0.00e+00, Dirac-square error=6.29e-16\n[PASS] [T-D] 11. attempted covariant neighbor-conditioned K0 map has zero-dimensional difference space  |  difference-space dim=0, conditioned maps=0\n[PASS] [T-E] 12. external conditioned basis map on K0 exists but is a frame artifact, not C I data  |  conditioned gap=1.414, frame violation=1.000\n[PASS] [T-F] 13. one-link-flipped mixed-flux object degrades the K1 direction-tagged structure  |  + fluxes=4, - fluxes=20, anticommutator=4.000, single-generator dims=[2, 2, 2]\n[FAIL] [SRC] 14. source note exists  |  docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md\n[FAIL] [SRC] 15. source declares bounded_theorem claim type\n[PASS] [SRC] 16. legacy positive_theorem source metadata absent\n[FAIL] [SRC] 17. status authority remains audit-lane only\n[FAIL] [SRC] 18. source preserves conditional-only boundary\n[FAIL] [SRC] 19. source preserves no record-formation claim\n[FAIL] [SRC] 20. source preserves selector/admissibility open boundaries\n[PASS] [SRC] 21. source does not claim a missing cache\n[FAIL] [SRC] 22. source links runner cache\n[FAIL] [SRC] 23. source keeps sibling dependency linked\n\nSUMMARY: representative-level conditional record registration on the two-flux-class surface; selector bit NOT forced here; Admissibility reading not decided.\nTOTAL: PASS=15 FAIL=8\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T210956Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=15 FAIL=8' vs cache 'TOTAL: PASS=23 FAIL=0'"
+  ]
+ }
+}

@@ -23,14 +23,21 @@
  "stdout_tail": "26-06-17.md`](STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md)', '[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)']\nPASS: B11 context and companion names are backticked only\n      missing=[]; linked=[]\nPASS: B12 No-promotion statement present\nPASS: B13 Date and supplied-outcome bounded_theorem claim type present\nPASS: B14 K1-K4 check tags present\nPASS: B15 outcome-factorization premise is named but not discharged\nPASS: B16 source does not call the outcome-factorization premise retained\n\n========================================================================================\ngit diff --stat\n========================================================================================\n(computed without invoking git, per the no-git rule)\n docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 255 +\n docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md | 175 +\n scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py | 459 +\n 3 files changed, 889 insertions(+)\n\nSUMMARY:\nK1-K4 verified symbolically; note firewall, dependency links, supplied-outcome-factorization boundary, product-instance bridge, companion no-go, backticked context, and No-promotion statement verified.\nThe only non-retained ingredient isolated by the computation is the named outcome-factorization premise.\nTOTAL: PASS=30 FAIL=1\nCHAIN: {'k1': True, 'k2': True, 'k3': True, 'k4': True}\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T231019Z",
+  "at_utc": "20260918T231507Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha bbaee0a1 differs from the current HEAD 01df3b91 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=30 FAIL=1' vs cache 'TOTAL: PASS=31 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, text level: B3 (runner lines 272-294) requires 'Reading off Born form `p(P) = Tr(\u03c3 P)` as the unique probability measure on the qubit-lattice projection lattice.' in docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md; 6111b54e6a (2026-07-10, 'separate Gleason trace form from physical Born bridge') rewrote it to 'Deriving the unique trace-form representation `m(P) = Tr(\u03c3 P)` for measures satisfying the stated mathematical hypotheses.' The cache (2026-06-20, PASS=31 FAIL=0) predates the rewrite. PASS=30 FAIL=1.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231507Z"
  }
 }

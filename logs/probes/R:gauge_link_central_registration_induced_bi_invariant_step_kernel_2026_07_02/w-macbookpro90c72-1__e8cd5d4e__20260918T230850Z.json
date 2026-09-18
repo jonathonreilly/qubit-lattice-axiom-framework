@@ -23,14 +23,21 @@
  "stdout_tail": "g absent needle='closes the route'\nPASS: F runner forbidden string absent needle='closes the route'\nPASS: F note forbidden string absent needle='covariance implies the step-measure premise'\nPASS: F runner forbidden string absent needle='covariance implies the step-measure premise'\nPASS: F note forbidden string absent needle='# Gauge-Link Record Step: Central Registration Induces Bi-Invariant Step Kernels'\nPASS: F runner forbidden string absent needle='# Gauge-Link Record Step: Central Registration Induces Bi-Invariant Step Kernels'\nPASS: F note forbidden string absent needle='## Theorem 2 (central registration induces bi-invariant positive step kernels)'\nPASS: F runner forbidden string absent needle='## Theorem 2 (central registration induces bi-invariant positive step kernels)'\nPASS: F note forbidden string absent needle='## Theorem 4 (registration softness sets the step size; derived rates)'\nPASS: F runner forbidden string absent needle='## Theorem 4 (registration softness sets the step size; derived rates)'\nPASS: F note forbidden string absent needle='Each registration channel therefore has a derived rate'\nPASS: F runner forbidden string absent needle='Each registration channel therefore has a derived rate'\nPASS: F note forbidden string absent needle='the load-bearing input is registration-centrality, not kinematic covariance'\nPASS: F runner forbidden string absent needle='the load-bearing input is registration-centrality, not kinematic covariance'\nTOTAL: PASS=105 FAIL=22\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T230851Z",
+  "at_utc": "20260918T231508Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e8cd5d4e differs from the current HEAD 01df3b91 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=105 FAIL=22' vs cache 'TOTAL: PASS=127 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'F source note exists docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md' - the note is at archive/notes/docs/; the other FAIL lines are its text checks.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231508Z"
  }
 }

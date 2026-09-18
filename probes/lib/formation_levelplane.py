@@ -1,4 +1,5 @@
-"""formation_levelplane.py dim menu beta L T T0 seed
+"""formation_levelplane.py dim menu beta L T T0 seed      (dim = 2, 3, 4 ...; append s, e.g. 3s, for the symmetric light-cone neighbourhood:
+the record at (t+1, x) formed from (t, x) and (t, x +- e_j), n = 2 dim + 1 predecessors, phi(k) = (1 + 2 sum_j cos k_j)/n real, no drift)
 
 The formation law in level order on the event lattice Z^(dim+1): the record at x is drawn given its dim+1 recorded predecessors
 (the same plane site one level down and its dim backward neighbours), with weight exp(beta s.S), S the sum of the predecessors'
@@ -11,8 +12,8 @@ Prints the memory table (levels, |m|, projection on the initial direction), then
 structure factor against sigma^2/(1 - |phi(k)|^2), phi = (1 + sum_j e^{i k_j})/n, by |k| shell, and the structure function D(r)."""
 import numpy as np, sys, time
 def A(k): return 1.0 / np.tanh(k) - 1.0 / k
-dim = int(sys.argv[1]); menu = sys.argv[2]; beta = float(sys.argv[3]); L = int(sys.argv[4]); T = int(sys.argv[5]); T0 = int(sys.argv[6]); seed = int(sys.argv[7])
-n = dim + 1; shape = (L,) * dim; N = L ** dim; rng = np.random.default_rng(seed); sigma2 = A(n * beta) / (n * beta)
+sym = sys.argv[1].endswith("s"); dim = int(sys.argv[1].rstrip("s")); menu = sys.argv[2]; beta = float(sys.argv[3]); L = int(sys.argv[4]); T = int(sys.argv[5]); T0 = int(sys.argv[6]); seed = int(sys.argv[7])
+n = (2 * dim + 1) if sym else (dim + 1); shape = (L,) * dim; N = L ** dim; rng = np.random.default_rng(seed); sigma2 = A(n * beta) / (n * beta)
 def menu_vectors(name):
     if name == "axes6": M = [(0, 0, 1), (0, 0, -1), (1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0)]
     elif name == "corners8": M = [(a, b, c) for c in (1, -1) for a in (1, -1) for b in (1, -1)]
@@ -23,7 +24,7 @@ def menu_vectors(name):
     else: raise SystemExit("unknown menu " + name)
     M = np.array(M, dtype=float); return M / np.linalg.norm(M, axis=1)[:, None]
 grids = np.meshgrid(*([2 * np.pi * np.arange(L) / L] * dim), indexing="ij")
-phi = (1 + sum(np.exp(1j * g) for g in grids)) / n; u = np.abs(phi) ** 2; kk = np.sqrt(sum(np.minimum(g, 2 * np.pi - g) ** 2 for g in grids))
+phi = ((1 + sum(2 * np.cos(g) for g in grids)) / n + 0j) if sym else (1 + sum(np.exp(1j * g) for g in grids)) / n; u = np.abs(phi) ** 2; kk = np.sqrt(sum(np.minimum(g, 2 * np.pi - g) ** 2 for g in grids))
 mask = np.ones(shape, dtype=bool); mask[(0,) * dim] = False
 discrete = menu not in ("sphere", "linear")
 if menu == "linear": theta = np.zeros(shape + (2,))
@@ -36,10 +37,10 @@ print(f"dim={dim} (event lattice Z^{dim+1}) menu={menu} beta={beta} L={L} T={T} 
 print("memory table: level, |m|, m.e0")
 for t in range(1, T + 1):
     if menu == "linear":
-        theta = (theta + sum(np.roll(theta, 1, axis=j) for j in range(dim))) / n + rng.normal(0.0, np.sqrt(sigma2), shape + (2,))
+        theta = (theta + sum(np.roll(theta, 1, axis=j) + (np.roll(theta, -1, axis=j) if sym else 0) for j in range(dim))) / n + rng.normal(0.0, np.sqrt(sigma2), shape + (2,))
         fx, fy = theta[..., 0], theta[..., 1]
     else:
-        S = s + sum(np.roll(s, 1, axis=j) for j in range(dim))
+        S = s + sum(np.roll(s, 1, axis=j) + (np.roll(s, -1, axis=j) if sym else 0) for j in range(dim))
         if discrete:
             idx = np.argmax(beta * (S @ M.T) + rng.gumbel(size=shape + (len(M),)), axis=-1); s = M[idx]
         else:

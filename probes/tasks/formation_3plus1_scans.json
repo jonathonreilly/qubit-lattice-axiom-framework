@@ -669,5 +669,516 @@
    }
   ],
   "what": "NEW PHYSICS. Finite menus of unit vectors with the covariant weight exp(beta s.S): six axes, eight corners, twelve edge midpoints, and 20, 50, 100, 200 near-uniform points. Question: how does the coupling at which memory appears grow with the menu's size in 2+1 (where the sphere never keeps memory), and does it stay bounded in 3+1 (where the linear theory says the sphere does)? One run per (dim, menu, beta). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 140 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:formation-3plus1-threshold-fine",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 1.0 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.0 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.1 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.1 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.2 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.2 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.3 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.3 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.4 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.4 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.5 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.5 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.6 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.6 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.7 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.7 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.8 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.8 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.9 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.9 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 2.0 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 2.0 48 4000 2000 1"
+   }
+  ],
+  "what": "Locate the coupling where the 3+1 sphere formation law starts to keep memory (first look: between beta = 1 and 2). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 22 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-3plus1-finite-size",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 2 16 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 16 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 16 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 24 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 24 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 24 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 32 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 32 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 48 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 48 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 48 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 64 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 64 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 64 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 96 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 96 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 96 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 16 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 16 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 16 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 24 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 24 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 24 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 32 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 32 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 48 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 48 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 48 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 64 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 64 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 64 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 96 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 96 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 96 3000 1500 3"
+   }
+  ],
+  "what": "The test of long-range order in 3+1: the plateau |m| against the plane's side L at fixed coupling; a positive limit as L grows is memory, a decay to zero is not. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 36 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-3plus1-long",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 2 48 20000 10000 1"
+   },
+   {
+    "extra": "3 sphere 2 48 20000 10000 2"
+   },
+   {
+    "extra": "3 sphere 2 48 20000 10000 3"
+   },
+   {
+    "extra": "3 sphere 2 48 20000 10000 4"
+   },
+   {
+    "extra": "3 sphere 1.5 48 20000 10000 1"
+   },
+   {
+    "extra": "3 sphere 1.5 48 20000 10000 2"
+   }
+  ],
+  "what": "Drift check in 3+1: twenty thousand levels at the smallest coupling that showed memory. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 6 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-3plus1-kernel-large",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 6 128 1000 400 1"
+   },
+   {
+    "extra": "3 sphere 6 128 1000 400 2"
+   },
+   {
+    "extra": "3 linear 6 128 1000 400 1"
+   }
+  ],
+  "what": "The 1/r law at equal level on a large three-dimensional plane (covariance column r * C(r)). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 3 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-sixaxis-3plus1-against-2plus1",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 axes6 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.7 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.9 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.6 128 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.7 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.9 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.6 32 3000 1500 1"
+   }
+  ],
+  "what": "The six-axis menu with the covariant weight on the line (e^beta, e^-beta, 1): where memory appears in 3+1 against 2+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-by-dimension",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "1 sphere 2 4096 4000 2000 1"
+   },
+   {
+    "extra": "1 sphere 6 4096 4000 2000 1"
+   },
+   {
+    "extra": "1 sphere 12 4096 4000 2000 1"
+   },
+   {
+    "extra": "1 sphere 24 4096 4000 2000 1"
+   },
+   {
+    "extra": "4 sphere 0.5 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.5 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.75 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.75 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 1 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 1 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 1.5 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 1.5 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 2 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 2 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 3 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 3 16 2000 1000 1"
+   }
+  ],
+  "what": "The dichotomy by event-lattice dimension: the sphere law in 1+1 (never), 2+1 (never), 3+1, 4+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 16 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-lightcone-sphere",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3s sphere 0.3 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.3 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.4 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.4 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.5 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.5 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.6 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.6 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.75 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.75 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 1 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 1 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 1.5 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 1.5 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 2 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 2 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 3 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 3 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 6 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 6 64 2500 1200 1"
+   },
+   {
+    "extra": "2s sphere 1 256 4000 2000 1"
+   },
+   {
+    "extra": "2s sphere 2 256 4000 2000 1"
+   },
+   {
+    "extra": "2s sphere 3 256 4000 2000 1"
+   },
+   {
+    "extra": "2s sphere 6 256 4000 2000 1"
+   },
+   {
+    "extra": "2s sphere 12 256 4000 2000 1"
+   },
+   {
+    "extra": "3s linear 6 48 2000 800 1"
+   }
+  ],
+  "what": "NEW PHYSICS. The symmetric light-cone event lattice in 3+1: the record at (t+1, x) formed from (t, x) and its six neighbours (t, x +- e_j). No drift; phi(k) = 1 - E(k)/7 with E the lattice Laplacian symbol, so the linear equal-time kernel is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k) (1 - E(k)/14)): the comparator's Green-function kernel 1/E(k) up to a bounded factor, under the formation reading. Memory table and kernel normalization by beta and L; the 2+1 version (2s) for contrast. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 26 points of the `grid` field are claimed and run by the work loop."
  }
 ]

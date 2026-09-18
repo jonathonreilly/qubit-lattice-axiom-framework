@@ -238,5 +238,185 @@
   },
   "problem": "heat-kernel-in-3plus1",
   "what": "WORKED COMPUTATION (independent run 2 of 2): The space-time covariance in 3+1. For the linear model Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi(k)^s/(1-u) (block 35's T1 with four predecessors). (1) Re-derive it for d = 3 from the recursion and verify exactly on L = 3, 4 tori by propagating the covariance matrix with rational arithmetic. (2) Real space: at lag s the covariance is the equal-level kernel convolved with the s-step walk; show the drift (1,1,1)/4 per level and the Gaussian spreading; in the co-moving frame give the large-distance form. (3) The decay rate of a mode per level is -log|phi(k)| ~ k^T M k / 2: diffusive, against the comparator's (static law's) rate ~ |k| (README section 8, the probe's identity E(k) = 3(|1 - phi e^{iw}|^2 + 1 - u) has a four-predecessor analogue: find it and verify it symbolically). DELIVERABLE in your unit worktree: probes/work/compute/heat-kernel-in-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/heat-kernel-in-3plus1/<name>/run.py\""
+ },
+ {
+  "id": "C:lightcone-kernel-exact:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-kernel-exact",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The light-cone formation kernel, exactly. Event lattice in 3+1 with symmetric predecessors: the record at (t+1, x) is formed from (t, x) and (t, x +- e_j), seven predecessors. Linear gain-one model: theta_{t+1} = P theta_t + noise, phi(k) = (1 + 2 sum_j cos k_j)/7. (1) Show phi = 1 - E(k)/7 with E(k) = 2 sum_j (1 - cos k_j) and the stationary equal-time covariance sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k) (1 - E(k)/14)), sigma^2 = A(7 beta)/(7 beta): the lattice Green-function kernel 1/E(k) times a factor between 1 and 7 on the Brillouin zone (give its exact range; note phi = -5/7 at the zone corner). (2) Real space: C(x) = (7 sigma^2/2) G(x) + correction, G the Z^3 lattice Green function; bound the correction's decay (it is short-ranged: show exponential or 1/r^3 and say which). (3) The space-time covariance sigma^2 phi^s/(1 - phi^2): no drift, decay rate E(k)/7 per level. (4) Verify (1) and (3) exactly on L = 3, 4 tori by propagating the covariance with rational arithmetic, and (2) numerically by FFT at L = 64, 128. Expectation: all four hold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-kernel-exact/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-kernel-exact/<name>/run.py\""
+ },
+ {
+  "id": "C:lightcone-kernel-exact:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-kernel-exact",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The light-cone formation kernel, exactly. Event lattice in 3+1 with symmetric predecessors: the record at (t+1, x) is formed from (t, x) and (t, x +- e_j), seven predecessors. Linear gain-one model: theta_{t+1} = P theta_t + noise, phi(k) = (1 + 2 sum_j cos k_j)/7. (1) Show phi = 1 - E(k)/7 with E(k) = 2 sum_j (1 - cos k_j) and the stationary equal-time covariance sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k) (1 - E(k)/14)), sigma^2 = A(7 beta)/(7 beta): the lattice Green-function kernel 1/E(k) times a factor between 1 and 7 on the Brillouin zone (give its exact range; note phi = -5/7 at the zone corner). (2) Real space: C(x) = (7 sigma^2/2) G(x) + correction, G the Z^3 lattice Green function; bound the correction's decay (it is short-ranged: show exponential or 1/r^3 and say which). (3) The space-time covariance sigma^2 phi^s/(1 - phi^2): no drift, decay rate E(k)/7 per level. (4) Verify (1) and (3) exactly on L = 3, 4 tori by propagating the covariance with rational arithmetic, and (2) numerically by FFT at L = 64, 128. Expectation: all four hold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-kernel-exact/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-kernel-exact/<name>/run.py\""
+ },
+ {
+  "id": "C:meanfield-threshold-by-dimension:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "meanfield-threshold-by-dimension",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Where memory should appear, by dimension, in the simplest approximations. For the sphere formation law with n predecessors (n = d + 1 backward, or 2d + 1 light-cone): (1) mean field: m' = A(n beta m) with A(k) = coth k - 1/k; threshold n beta/3 = 1; table for d = 1..4 and both neighbourhoods. (2) Gaussian (spin-wave) correction: m ~ 1 - sigma^2 G_d with G_d the plane return sum (infinite for d <= 2, finite for d >= 3: compute G_3 for both neighbourhoods numerically to 4 digits by FFT extrapolation in L, and with rigorous brackets if you can). (3) Compare with the executed thresholds and plateaus in logs/probes/X:formation-*/ when present (first look, 3+1 backward: no memory at beta <= 1, |m| = 0.74 at beta = 2, 0.92 at beta = 6; light-cone: 0.77 at beta = 1 on a 16^3 plane). Expectation: mean field underestimates the threshold; the spin-wave plateau is accurate to a few percent at beta >= 6. DELIVERABLE in your unit worktree: probes/work/compute/meanfield-threshold-by-dimension/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/meanfield-threshold-by-dimension/<name>/run.py\""
+ },
+ {
+  "id": "C:meanfield-threshold-by-dimension:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "meanfield-threshold-by-dimension",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Where memory should appear, by dimension, in the simplest approximations. For the sphere formation law with n predecessors (n = d + 1 backward, or 2d + 1 light-cone): (1) mean field: m' = A(n beta m) with A(k) = coth k - 1/k; threshold n beta/3 = 1; table for d = 1..4 and both neighbourhoods. (2) Gaussian (spin-wave) correction: m ~ 1 - sigma^2 G_d with G_d the plane return sum (infinite for d <= 2, finite for d >= 3: compute G_3 for both neighbourhoods numerically to 4 digits by FFT extrapolation in L, and with rigorous brackets if you can). (3) Compare with the executed thresholds and plateaus in logs/probes/X:formation-*/ when present (first look, 3+1 backward: no memory at beta <= 1, |m| = 0.74 at beta = 2, 0.92 at beta = 6; light-cone: 0.77 at beta = 1 on a 16^3 plane). Expectation: mean field underestimates the threshold; the spin-wave plateau is accurate to a few percent at beta >= 6. DELIVERABLE in your unit worktree: probes/work/compute/meanfield-threshold-by-dimension/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/meanfield-threshold-by-dimension/<name>/run.py\""
+ },
+ {
+  "id": "C:lro-finite-size-analysis:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lro-finite-size-analysis",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Does the 3+1 plateau survive the large-plane limit? Read the logs under logs/probes/X:formation-3plus1-finite-size/ and X:formation-3plus1-long/ (the .txt files hold the memory tables). For beta = 2 and 3: plateau |m| against L for the three seeds; fit m(L) = m_inf + a/L and m(L) = m_inf + a/L^2 by least squares with the seed scatter as error; report m_inf with its uncertainty under both forms, and whether the long runs still drift (compare |m| over the last three table rows). Expectation: m_inf > 0 by many standard errors. If the data say otherwise, print HIT with the numbers. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/lro-finite-size-analysis/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lro-finite-size-analysis/<name>/run.py\""
+ },
+ {
+  "id": "C:lro-finite-size-analysis:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lro-finite-size-analysis",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Does the 3+1 plateau survive the large-plane limit? Read the logs under logs/probes/X:formation-3plus1-finite-size/ and X:formation-3plus1-long/ (the .txt files hold the memory tables). For beta = 2 and 3: plateau |m| against L for the three seeds; fit m(L) = m_inf + a/L and m(L) = m_inf + a/L^2 by least squares with the seed scatter as error; report m_inf with its uncertainty under both forms, and whether the long runs still drift (compare |m| over the last three table rows). Expectation: m_inf > 0 by many standard errors. If the data say otherwise, print HIT with the numbers. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/lro-finite-size-analysis/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lro-finite-size-analysis/<name>/run.py\""
+ },
+ {
+  "id": "C:formation-kernel-against-gravity-node:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-kernel-against-gravity-node",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): What the gravity node needs from a kernel, checked against the formation kernels. Read on main (docs/) the notes of the gravity lane that state the node's input: search for the lattice Green function, 1/E(k), 'Green-function kernel', 'generator kernel'. List PRECISELY, with file and line, each property of the kernel that is used (positivity, the 1/E(k) form or only its small-k limit, normalization, treatment of the zero mode, symmetry under the cube group, static against time-dependent). Then check each property for three candidates: (i) the comparator's static kernel 1/(beta E(k)); (ii) the backward 3+1 formation kernel sigma^2/(1 - |phi|^2), phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M, drift); (iii) the light-cone 3+1 kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)). Deliver the table property x candidate with yes/no/partly and the reason. No physics verdict: a checklist. DELIVERABLE in your unit worktree: probes/work/compute/formation-kernel-against-gravity-node/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/formation-kernel-against-gravity-node/<name>/run.py\""
+ },
+ {
+  "id": "C:formation-kernel-against-gravity-node:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-kernel-against-gravity-node",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): What the gravity node needs from a kernel, checked against the formation kernels. Read on main (docs/) the notes of the gravity lane that state the node's input: search for the lattice Green function, 1/E(k), 'Green-function kernel', 'generator kernel'. List PRECISELY, with file and line, each property of the kernel that is used (positivity, the 1/E(k) form or only its small-k limit, normalization, treatment of the zero mode, symmetry under the cube group, static against time-dependent). Then check each property for three candidates: (i) the comparator's static kernel 1/(beta E(k)); (ii) the backward 3+1 formation kernel sigma^2/(1 - |phi|^2), phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M, drift); (iii) the light-cone 3+1 kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)). Deliver the table property x candidate with yes/no/partly and the reason. No physics verdict: a checklist. DELIVERABLE in your unit worktree: probes/work/compute/formation-kernel-against-gravity-node/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/formation-kernel-against-gravity-node/<name>/run.py\""
+ },
+ {
+  "id": "C:synchronous-rerecording-small-windows:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "synchronous-rerecording-small-windows",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Exact finite checks for the re-recording derivation (README section 8). Six-axis menu, weights W(a,b) = p, q, r (same, opposite, orthogonal). (1) Asynchronous single-site re-recording with the covariant rule on the 2x2 torus and the 2x2x2 torus: build the transition matrix exactly (rational weights (3,1,2), (5,2,4)) and verify detailed balance with the static law. (2) Synchronous re-recording (every site re-drawn at once from its neighbours' current records): build the chain on the 2x2 torus (6^4 states) exactly, compute its stationary law, and test the claim pi(s) prop. to prod_x Z_x(s), Z_x the normalizer of the rule at x; if the torus is bipartite note the two-sublattice structure. (3) Total-variation distance between that law and the static law. Expectation: (1) holds; (2) holds; (3) is not zero. DELIVERABLE in your unit worktree: probes/work/compute/synchronous-rerecording-small-windows/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/synchronous-rerecording-small-windows/<name>/run.py\""
+ },
+ {
+  "id": "C:synchronous-rerecording-small-windows:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "synchronous-rerecording-small-windows",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Exact finite checks for the re-recording derivation (README section 8). Six-axis menu, weights W(a,b) = p, q, r (same, opposite, orthogonal). (1) Asynchronous single-site re-recording with the covariant rule on the 2x2 torus and the 2x2x2 torus: build the transition matrix exactly (rational weights (3,1,2), (5,2,4)) and verify detailed balance with the static law. (2) Synchronous re-recording (every site re-drawn at once from its neighbours' current records): build the chain on the 2x2 torus (6^4 states) exactly, compute its stationary law, and test the claim pi(s) prop. to prod_x Z_x(s), Z_x the normalizer of the rule at x; if the torus is bipartite note the two-sublattice structure. (3) Total-variation distance between that law and the static law. Expectation: (1) holds; (2) holds; (3) is not zero. DELIVERABLE in your unit worktree: probes/work/compute/synchronous-rerecording-small-windows/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/synchronous-rerecording-small-windows/<name>/run.py\""
+ },
+ {
+  "id": "C:two-point-function-response-table:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-point-function-response-table",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Response against correlation, executed. Use probes/lib/formation_levelplane.py as a starting point (copy it into your work directory; do not edit probes/lib). For the sphere law in 3+1 at beta = 3 on a 32^3 plane: (1) measure the equal-level covariance C(x) along three directions; (2) measure the RESPONSE: run pairs of chains with the same random numbers, one with a small field h = 0.05 along a transverse direction applied at ONE site at every level, and record the mean transverse displacement field at later levels (average 200 pairs); (3) compare the shape of the response (a forward cone along (1,1,1) for the backward lattice; symmetric for 3s) with C(x). Expectation: backward lattice: the response is one-sided and is not proportional to C; light-cone lattice: the response is symmetric and, at stationarity, close to proportional to C. DELIVERABLE in your unit worktree: probes/work/compute/two-point-function-response-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-point-function-response-table/<name>/run.py\""
+ },
+ {
+  "id": "C:two-point-function-response-table:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-point-function-response-table",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Response against correlation, executed. Use probes/lib/formation_levelplane.py as a starting point (copy it into your work directory; do not edit probes/lib). For the sphere law in 3+1 at beta = 3 on a 32^3 plane: (1) measure the equal-level covariance C(x) along three directions; (2) measure the RESPONSE: run pairs of chains with the same random numbers, one with a small field h = 0.05 along a transverse direction applied at ONE site at every level, and record the mean transverse displacement field at later levels (average 200 pairs); (3) compare the shape of the response (a forward cone along (1,1,1) for the backward lattice; symmetric for 3s) with C(x). Expectation: backward lattice: the response is one-sided and is not proportional to C; light-cone lattice: the response is symmetric and, at stationarity, close to proportional to C. DELIVERABLE in your unit worktree: probes/work/compute/two-point-function-response-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-point-function-response-table/<name>/run.py\""
  }
 ]

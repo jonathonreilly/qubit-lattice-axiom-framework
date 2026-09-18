@@ -56025,6 +56025,186 @@
   "what": "WORKED COMPUTATION (independent run 2 of 2): The space-time covariance in 3+1. For the linear model Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi(k)^s/(1-u) (block 35's T1 with four predecessors). (1) Re-derive it for d = 3 from the recursion and verify exactly on L = 3, 4 tori by propagating the covariance matrix with rational arithmetic. (2) Real space: at lag s the covariance is the equal-level kernel convolved with the s-step walk; show the drift (1,1,1)/4 per level and the Gaussian spreading; in the co-moving frame give the large-distance form. (3) The decay rate of a mode per level is -log|phi(k)| ~ k^T M k / 2: diffusive, against the comparator's (static law's) rate ~ |k| (README section 8, the probe's identity E(k) = 3(|1 - phi e^{iw}|^2 + 1 - u) has a four-predecessor analogue: find it and verify it symbolically). DELIVERABLE in your unit worktree: probes/work/compute/heat-kernel-in-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/heat-kernel-in-3plus1/<name>/run.py\""
  },
  {
+  "id": "C:lightcone-kernel-exact:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-kernel-exact",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The light-cone formation kernel, exactly. Event lattice in 3+1 with symmetric predecessors: the record at (t+1, x) is formed from (t, x) and (t, x +- e_j), seven predecessors. Linear gain-one model: theta_{t+1} = P theta_t + noise, phi(k) = (1 + 2 sum_j cos k_j)/7. (1) Show phi = 1 - E(k)/7 with E(k) = 2 sum_j (1 - cos k_j) and the stationary equal-time covariance sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k) (1 - E(k)/14)), sigma^2 = A(7 beta)/(7 beta): the lattice Green-function kernel 1/E(k) times a factor between 1 and 7 on the Brillouin zone (give its exact range; note phi = -5/7 at the zone corner). (2) Real space: C(x) = (7 sigma^2/2) G(x) + correction, G the Z^3 lattice Green function; bound the correction's decay (it is short-ranged: show exponential or 1/r^3 and say which). (3) The space-time covariance sigma^2 phi^s/(1 - phi^2): no drift, decay rate E(k)/7 per level. (4) Verify (1) and (3) exactly on L = 3, 4 tori by propagating the covariance with rational arithmetic, and (2) numerically by FFT at L = 64, 128. Expectation: all four hold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-kernel-exact/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-kernel-exact/<name>/run.py\""
+ },
+ {
+  "id": "C:lightcone-kernel-exact:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-kernel-exact",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The light-cone formation kernel, exactly. Event lattice in 3+1 with symmetric predecessors: the record at (t+1, x) is formed from (t, x) and (t, x +- e_j), seven predecessors. Linear gain-one model: theta_{t+1} = P theta_t + noise, phi(k) = (1 + 2 sum_j cos k_j)/7. (1) Show phi = 1 - E(k)/7 with E(k) = 2 sum_j (1 - cos k_j) and the stationary equal-time covariance sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k) (1 - E(k)/14)), sigma^2 = A(7 beta)/(7 beta): the lattice Green-function kernel 1/E(k) times a factor between 1 and 7 on the Brillouin zone (give its exact range; note phi = -5/7 at the zone corner). (2) Real space: C(x) = (7 sigma^2/2) G(x) + correction, G the Z^3 lattice Green function; bound the correction's decay (it is short-ranged: show exponential or 1/r^3 and say which). (3) The space-time covariance sigma^2 phi^s/(1 - phi^2): no drift, decay rate E(k)/7 per level. (4) Verify (1) and (3) exactly on L = 3, 4 tori by propagating the covariance with rational arithmetic, and (2) numerically by FFT at L = 64, 128. Expectation: all four hold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-kernel-exact/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-kernel-exact/<name>/run.py\""
+ },
+ {
+  "id": "C:meanfield-threshold-by-dimension:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "meanfield-threshold-by-dimension",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Where memory should appear, by dimension, in the simplest approximations. For the sphere formation law with n predecessors (n = d + 1 backward, or 2d + 1 light-cone): (1) mean field: m' = A(n beta m) with A(k) = coth k - 1/k; threshold n beta/3 = 1; table for d = 1..4 and both neighbourhoods. (2) Gaussian (spin-wave) correction: m ~ 1 - sigma^2 G_d with G_d the plane return sum (infinite for d <= 2, finite for d >= 3: compute G_3 for both neighbourhoods numerically to 4 digits by FFT extrapolation in L, and with rigorous brackets if you can). (3) Compare with the executed thresholds and plateaus in logs/probes/X:formation-*/ when present (first look, 3+1 backward: no memory at beta <= 1, |m| = 0.74 at beta = 2, 0.92 at beta = 6; light-cone: 0.77 at beta = 1 on a 16^3 plane). Expectation: mean field underestimates the threshold; the spin-wave plateau is accurate to a few percent at beta >= 6. DELIVERABLE in your unit worktree: probes/work/compute/meanfield-threshold-by-dimension/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/meanfield-threshold-by-dimension/<name>/run.py\""
+ },
+ {
+  "id": "C:meanfield-threshold-by-dimension:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "meanfield-threshold-by-dimension",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Where memory should appear, by dimension, in the simplest approximations. For the sphere formation law with n predecessors (n = d + 1 backward, or 2d + 1 light-cone): (1) mean field: m' = A(n beta m) with A(k) = coth k - 1/k; threshold n beta/3 = 1; table for d = 1..4 and both neighbourhoods. (2) Gaussian (spin-wave) correction: m ~ 1 - sigma^2 G_d with G_d the plane return sum (infinite for d <= 2, finite for d >= 3: compute G_3 for both neighbourhoods numerically to 4 digits by FFT extrapolation in L, and with rigorous brackets if you can). (3) Compare with the executed thresholds and plateaus in logs/probes/X:formation-*/ when present (first look, 3+1 backward: no memory at beta <= 1, |m| = 0.74 at beta = 2, 0.92 at beta = 6; light-cone: 0.77 at beta = 1 on a 16^3 plane). Expectation: mean field underestimates the threshold; the spin-wave plateau is accurate to a few percent at beta >= 6. DELIVERABLE in your unit worktree: probes/work/compute/meanfield-threshold-by-dimension/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/meanfield-threshold-by-dimension/<name>/run.py\""
+ },
+ {
+  "id": "C:lro-finite-size-analysis:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lro-finite-size-analysis",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Does the 3+1 plateau survive the large-plane limit? Read the logs under logs/probes/X:formation-3plus1-finite-size/ and X:formation-3plus1-long/ (the .txt files hold the memory tables). For beta = 2 and 3: plateau |m| against L for the three seeds; fit m(L) = m_inf + a/L and m(L) = m_inf + a/L^2 by least squares with the seed scatter as error; report m_inf with its uncertainty under both forms, and whether the long runs still drift (compare |m| over the last three table rows). Expectation: m_inf > 0 by many standard errors. If the data say otherwise, print HIT with the numbers. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/lro-finite-size-analysis/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lro-finite-size-analysis/<name>/run.py\""
+ },
+ {
+  "id": "C:lro-finite-size-analysis:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lro-finite-size-analysis",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Does the 3+1 plateau survive the large-plane limit? Read the logs under logs/probes/X:formation-3plus1-finite-size/ and X:formation-3plus1-long/ (the .txt files hold the memory tables). For beta = 2 and 3: plateau |m| against L for the three seeds; fit m(L) = m_inf + a/L and m(L) = m_inf + a/L^2 by least squares with the seed scatter as error; report m_inf with its uncertainty under both forms, and whether the long runs still drift (compare |m| over the last three table rows). Expectation: m_inf > 0 by many standard errors. If the data say otherwise, print HIT with the numbers. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/lro-finite-size-analysis/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lro-finite-size-analysis/<name>/run.py\""
+ },
+ {
+  "id": "C:formation-kernel-against-gravity-node:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-kernel-against-gravity-node",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): What the gravity node needs from a kernel, checked against the formation kernels. Read on main (docs/) the notes of the gravity lane that state the node's input: search for the lattice Green function, 1/E(k), 'Green-function kernel', 'generator kernel'. List PRECISELY, with file and line, each property of the kernel that is used (positivity, the 1/E(k) form or only its small-k limit, normalization, treatment of the zero mode, symmetry under the cube group, static against time-dependent). Then check each property for three candidates: (i) the comparator's static kernel 1/(beta E(k)); (ii) the backward 3+1 formation kernel sigma^2/(1 - |phi|^2), phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M, drift); (iii) the light-cone 3+1 kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)). Deliver the table property x candidate with yes/no/partly and the reason. No physics verdict: a checklist. DELIVERABLE in your unit worktree: probes/work/compute/formation-kernel-against-gravity-node/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/formation-kernel-against-gravity-node/<name>/run.py\""
+ },
+ {
+  "id": "C:formation-kernel-against-gravity-node:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "formation-kernel-against-gravity-node",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): What the gravity node needs from a kernel, checked against the formation kernels. Read on main (docs/) the notes of the gravity lane that state the node's input: search for the lattice Green function, 1/E(k), 'Green-function kernel', 'generator kernel'. List PRECISELY, with file and line, each property of the kernel that is used (positivity, the 1/E(k) form or only its small-k limit, normalization, treatment of the zero mode, symmetry under the cube group, static against time-dependent). Then check each property for three candidates: (i) the comparator's static kernel 1/(beta E(k)); (ii) the backward 3+1 formation kernel sigma^2/(1 - |phi|^2), phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M, drift); (iii) the light-cone 3+1 kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)). Deliver the table property x candidate with yes/no/partly and the reason. No physics verdict: a checklist. DELIVERABLE in your unit worktree: probes/work/compute/formation-kernel-against-gravity-node/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/formation-kernel-against-gravity-node/<name>/run.py\""
+ },
+ {
+  "id": "C:synchronous-rerecording-small-windows:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "synchronous-rerecording-small-windows",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Exact finite checks for the re-recording derivation (README section 8). Six-axis menu, weights W(a,b) = p, q, r (same, opposite, orthogonal). (1) Asynchronous single-site re-recording with the covariant rule on the 2x2 torus and the 2x2x2 torus: build the transition matrix exactly (rational weights (3,1,2), (5,2,4)) and verify detailed balance with the static law. (2) Synchronous re-recording (every site re-drawn at once from its neighbours' current records): build the chain on the 2x2 torus (6^4 states) exactly, compute its stationary law, and test the claim pi(s) prop. to prod_x Z_x(s), Z_x the normalizer of the rule at x; if the torus is bipartite note the two-sublattice structure. (3) Total-variation distance between that law and the static law. Expectation: (1) holds; (2) holds; (3) is not zero. DELIVERABLE in your unit worktree: probes/work/compute/synchronous-rerecording-small-windows/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/synchronous-rerecording-small-windows/<name>/run.py\""
+ },
+ {
+  "id": "C:synchronous-rerecording-small-windows:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "synchronous-rerecording-small-windows",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Exact finite checks for the re-recording derivation (README section 8). Six-axis menu, weights W(a,b) = p, q, r (same, opposite, orthogonal). (1) Asynchronous single-site re-recording with the covariant rule on the 2x2 torus and the 2x2x2 torus: build the transition matrix exactly (rational weights (3,1,2), (5,2,4)) and verify detailed balance with the static law. (2) Synchronous re-recording (every site re-drawn at once from its neighbours' current records): build the chain on the 2x2 torus (6^4 states) exactly, compute its stationary law, and test the claim pi(s) prop. to prod_x Z_x(s), Z_x the normalizer of the rule at x; if the torus is bipartite note the two-sublattice structure. (3) Total-variation distance between that law and the static law. Expectation: (1) holds; (2) holds; (3) is not zero. DELIVERABLE in your unit worktree: probes/work/compute/synchronous-rerecording-small-windows/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/synchronous-rerecording-small-windows/<name>/run.py\""
+ },
+ {
+  "id": "C:two-point-function-response-table:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-point-function-response-table",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Response against correlation, executed. Use probes/lib/formation_levelplane.py as a starting point (copy it into your work directory; do not edit probes/lib). For the sphere law in 3+1 at beta = 3 on a 32^3 plane: (1) measure the equal-level covariance C(x) along three directions; (2) measure the RESPONSE: run pairs of chains with the same random numbers, one with a small field h = 0.05 along a transverse direction applied at ONE site at every level, and record the mean transverse displacement field at later levels (average 200 pairs); (3) compare the shape of the response (a forward cone along (1,1,1) for the backward lattice; symmetric for 3s) with C(x). Expectation: backward lattice: the response is one-sided and is not proportional to C; light-cone lattice: the response is symmetric and, at stationarity, close to proportional to C. DELIVERABLE in your unit worktree: probes/work/compute/two-point-function-response-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-point-function-response-table/<name>/run.py\""
+ },
+ {
+  "id": "C:two-point-function-response-table:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "two-point-function-response-table",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Response against correlation, executed. Use probes/lib/formation_levelplane.py as a starting point (copy it into your work directory; do not edit probes/lib). For the sphere law in 3+1 at beta = 3 on a 32^3 plane: (1) measure the equal-level covariance C(x) along three directions; (2) measure the RESPONSE: run pairs of chains with the same random numbers, one with a small field h = 0.05 along a transverse direction applied at ONE site at every level, and record the mean transverse displacement field at later levels (average 200 pairs); (3) compare the shape of the response (a forward cone along (1,1,1) for the backward lattice; symmetric for 3s) with C(x). Expectation: backward lattice: the response is one-sided and is not proportional to C; light-cone lattice: the response is symmetric and, at stationarity, close to proportional to C. DELIVERABLE in your unit worktree: probes/work/compute/two-point-function-response-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-point-function-response-table/<name>/run.py\""
+ },
+ {
   "id": "J:derive:tight-sibling-lemma:a1",
   "type": "judgment",
   "lane": "derivation",
@@ -56777,6 +56957,150 @@
   "what": "DERIVATION, independent attempt 4 of 4: If records re-form: the stationary law of re-recording with the covariant rule. AXIOM-ADJACENT, derive consequences only; nothing here assumes re-recording is admissible. The campaign's formation law writes each record once. Suppose instead a site's record is re-drawn from the covariant rule K(s | neighbours) prop. to exp(beta s.S), S the sum of the CURRENT records of its six neighbours on Z^3. (a) Asynchronous re-recording (one site at a time, any clock rates): show by exact detailed balance on finite windows that the stationary law is the static law exp(beta sum s.s') -- so the 'frozen' comparator of blocks 01-24 would be the equilibrium of a universe in which records keep re-forming, and block 19's Green-function kernel its equal-time covariance. (b) Synchronous re-recording (all sites at once): show the chain is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|), Z the normalizer of the rule (the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') is the key), a Gibbs law with a many-body interaction; compute its small-window marginals exactly for the six-axis menu and compare with the static law; decide whether it orders and what its transverse kernel is at large beta (sphere menu: expand log Z(beta|S|)). (c) Which of the programme's results (uniqueness regions, the ordered side, the kernel, the menus) transfer to each case. Deliver exact finite checks for every identity. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/re-recording/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/re-recording/<name>/check.py\""
  },
  {
+  "id": "J:derive:lightcone-formation:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-formation",
+  "title": "Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order",
+  "what": "DERIVATION, independent attempt 1 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:lightcone-formation:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-formation",
+  "title": "Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order",
+  "what": "DERIVATION, independent attempt 2 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:lightcone-formation:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-formation",
+  "title": "Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order",
+  "what": "DERIVATION, independent attempt 3 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:lightcone-formation:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-formation",
+  "title": "Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order",
+  "what": "DERIVATION, independent attempt 4 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:lightcone-formation:a5",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-formation",
+  "title": "Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order",
+  "what": "DERIVATION, independent attempt 5 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:lightcone-formation:a6",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-formation",
+  "title": "Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order",
+  "what": "DERIVATION, independent attempt 6 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:kernel-normalization-in-3plus1:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "kernel-normalization-in-3plus1",
+  "title": "The normalization of the equal-level kernel in the ordered 3+1 formation law",
+  "what": "DERIVATION, independent attempt 1 of 3: The normalization of the equal-level kernel in the ordered 3+1 formation law. Executed (first look): in the ordered sphere formation law on three-dimensional level planes the low-k structure factor is 0.96-0.97 of the linear kernel sigma^2/(1 - |phi|^2) at beta = 2 and 6; in 2+1 block 35 (PR #8180) found 0.83-0.97 rising with beta. TASK: derive the leading correction: S(k) (1 - |phi(k)|^2)/sigma^2 = 1 - a/beta + O(1/beta^2) as k -> 0, with a explicit (expected to involve the plateau |m|^2 and the return sum G_3 = (2 pi)^-3 Int 1/(1 - |phi|^2)); route: expand the one-step map of the transverse field to third order in the fluctuations (the record is a von Mises-Fisher draw about S/|S| with concentration beta |S|), close the hierarchy at Gaussian order, and compare with the simulator's shells (probes/lib/formation_levelplane.py) at beta = 3, 6, 12, 24. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/kernel-normalization-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/kernel-normalization-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:kernel-normalization-in-3plus1:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "kernel-normalization-in-3plus1",
+  "title": "The normalization of the equal-level kernel in the ordered 3+1 formation law",
+  "what": "DERIVATION, independent attempt 2 of 3: The normalization of the equal-level kernel in the ordered 3+1 formation law. Executed (first look): in the ordered sphere formation law on three-dimensional level planes the low-k structure factor is 0.96-0.97 of the linear kernel sigma^2/(1 - |phi|^2) at beta = 2 and 6; in 2+1 block 35 (PR #8180) found 0.83-0.97 rising with beta. TASK: derive the leading correction: S(k) (1 - |phi(k)|^2)/sigma^2 = 1 - a/beta + O(1/beta^2) as k -> 0, with a explicit (expected to involve the plateau |m|^2 and the return sum G_3 = (2 pi)^-3 Int 1/(1 - |phi|^2)); route: expand the one-step map of the transverse field to third order in the fluctuations (the record is a von Mises-Fisher draw about S/|S| with concentration beta |S|), close the hierarchy at Gaussian order, and compare with the simulator's shells (probes/lib/formation_levelplane.py) at beta = 3, 6, 12, 24. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/kernel-normalization-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/kernel-normalization-in-3plus1/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:kernel-normalization-in-3plus1:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "kernel-normalization-in-3plus1",
+  "title": "The normalization of the equal-level kernel in the ordered 3+1 formation law",
+  "what": "DERIVATION, independent attempt 3 of 3: The normalization of the equal-level kernel in the ordered 3+1 formation law. Executed (first look): in the ordered sphere formation law on three-dimensional level planes the low-k structure factor is 0.96-0.97 of the linear kernel sigma^2/(1 - |phi|^2) at beta = 2 and 6; in 2+1 block 35 (PR #8180) found 0.83-0.97 rising with beta. TASK: derive the leading correction: S(k) (1 - |phi(k)|^2)/sigma^2 = 1 - a/beta + O(1/beta^2) as k -> 0, with a explicit (expected to involve the plateau |m|^2 and the return sum G_3 = (2 pi)^-3 Int 1/(1 - |phi|^2)); route: expand the one-step map of the transverse field to third order in the fluctuations (the record is a von Mises-Fisher draw about S/|S| with concentration beta |S|), close the hierarchy at Gaussian order, and compare with the simulator's shells (probes/lib/formation_levelplane.py) at beta = 3, 6, 12, 24. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/kernel-normalization-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/kernel-normalization-in-3plus1/<name>/check.py\""
+ },
+ {
   "id": "X:formation-3plus1-sphere-memory",
   "type": "scan",
   "lane": "formation-3plus1",
@@ -57446,6 +57770,517 @@
    }
   ],
   "what": "NEW PHYSICS. Finite menus of unit vectors with the covariant weight exp(beta s.S): six axes, eight corners, twelve edge midpoints, and 20, 50, 100, 200 near-uniform points. Question: how does the coupling at which memory appears grow with the menu's size in 2+1 (where the sphere never keeps memory), and does it stay bounded in 3+1 (where the linear theory says the sphere does)? One run per (dim, menu, beta). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 140 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it."
+ },
+ {
+  "id": "X:formation-3plus1-threshold-fine",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 1.0 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.0 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.1 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.1 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.2 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.2 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.3 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.3 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.4 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.4 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.5 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.5 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.6 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.6 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.7 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.7 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.8 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.8 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.9 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 1.9 48 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 2.0 32 4000 2000 1"
+   },
+   {
+    "extra": "3 sphere 2.0 48 4000 2000 1"
+   }
+  ],
+  "what": "Locate the coupling where the 3+1 sphere formation law starts to keep memory (first look: between beta = 1 and 2). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 22 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-3plus1-finite-size",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 2 16 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 16 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 16 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 24 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 24 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 24 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 32 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 32 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 48 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 48 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 48 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 64 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 64 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 64 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 2 96 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 2 96 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 2 96 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 16 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 16 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 16 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 24 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 24 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 24 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 32 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 32 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 48 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 48 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 48 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 64 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 64 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 64 3000 1500 3"
+   },
+   {
+    "extra": "3 sphere 3 96 3000 1500 1"
+   },
+   {
+    "extra": "3 sphere 3 96 3000 1500 2"
+   },
+   {
+    "extra": "3 sphere 3 96 3000 1500 3"
+   }
+  ],
+  "what": "The test of long-range order in 3+1: the plateau |m| against the plane's side L at fixed coupling; a positive limit as L grows is memory, a decay to zero is not. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 36 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-3plus1-long",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 2 48 20000 10000 1"
+   },
+   {
+    "extra": "3 sphere 2 48 20000 10000 2"
+   },
+   {
+    "extra": "3 sphere 2 48 20000 10000 3"
+   },
+   {
+    "extra": "3 sphere 2 48 20000 10000 4"
+   },
+   {
+    "extra": "3 sphere 1.5 48 20000 10000 1"
+   },
+   {
+    "extra": "3 sphere 1.5 48 20000 10000 2"
+   }
+  ],
+  "what": "Drift check in 3+1: twenty thousand levels at the smallest coupling that showed memory. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 6 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-3plus1-kernel-large",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 sphere 6 128 1000 400 1"
+   },
+   {
+    "extra": "3 sphere 6 128 1000 400 2"
+   },
+   {
+    "extra": "3 linear 6 128 1000 400 1"
+   }
+  ],
+  "what": "The 1/r law at equal level on a large three-dimensional plane (covariance column r * C(r)). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 3 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-sixaxis-3plus1-against-2plus1",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 axes6 0.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.6 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.7 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.8 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 0.9 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.1 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.2 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.3 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.4 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.5 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6 1.6 128 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.6 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.7 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.8 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 0.9 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.1 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.2 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.3 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.4 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.5 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6 1.6 32 3000 1500 1"
+   }
+  ],
+  "what": "The six-axis menu with the covariant weight on the line (e^beta, e^-beta, 1): where memory appears in 3+1 against 2+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-by-dimension",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "1 sphere 2 4096 4000 2000 1"
+   },
+   {
+    "extra": "1 sphere 6 4096 4000 2000 1"
+   },
+   {
+    "extra": "1 sphere 12 4096 4000 2000 1"
+   },
+   {
+    "extra": "1 sphere 24 4096 4000 2000 1"
+   },
+   {
+    "extra": "4 sphere 0.5 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.5 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.75 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 0.75 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 1 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 1 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 1.5 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 1.5 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 2 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 2 16 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 3 12 2000 1000 1"
+   },
+   {
+    "extra": "4 sphere 3 16 2000 1000 1"
+   }
+  ],
+  "what": "The dichotomy by event-lattice dimension: the sphere law in 1+1 (never), 2+1 (never), 3+1, 4+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 16 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:formation-lightcone-sphere",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3s sphere 0.3 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.3 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.4 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.4 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.5 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.5 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.6 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.6 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.75 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 0.75 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 1 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 1 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 1.5 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 1.5 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 2 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 2 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 3 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 3 64 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 6 32 2500 1200 1"
+   },
+   {
+    "extra": "3s sphere 6 64 2500 1200 1"
+   },
+   {
+    "extra": "2s sphere 1 256 4000 2000 1"
+   },
+   {
+    "extra": "2s sphere 2 256 4000 2000 1"
+   },
+   {
+    "extra": "2s sphere 3 256 4000 2000 1"
+   },
+   {
+    "extra": "2s sphere 6 256 4000 2000 1"
+   },
+   {
+    "extra": "2s sphere 12 256 4000 2000 1"
+   },
+   {
+    "extra": "3s linear 6 48 2000 800 1"
+   }
+  ],
+  "what": "NEW PHYSICS. The symmetric light-cone event lattice in 3+1: the record at (t+1, x) formed from (t, x) and its six neighbours (t, x +- e_j). No drift; phi(k) = 1 - E(k)/7 with E the lattice Laplacian symbol, so the linear equal-time kernel is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k) (1 - E(k)/14)): the comparator's Green-function kernel 1/E(k) up to a bounded factor, under the formation reading. Memory table and kernel normalization by beta and L; the 2+1 version (2s) for contrast. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 26 points of the `grid` field are claimed and run by the work loop."
  },
  {
   "id": "J:falsifier-implementation",

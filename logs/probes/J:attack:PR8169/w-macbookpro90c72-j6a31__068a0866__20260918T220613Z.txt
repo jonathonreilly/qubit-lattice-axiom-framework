@@ -1,0 +1,3 @@
+copy α=1/3 stated 1/3; flip γ=1/6 stated 1/6; 2α+2γ=1
+Born values [Fraction(1, 1), Fraction(1, 2), Fraction(0, 1), Fraction(1, 2)] sum 2
+SUMMARY: attack pattern (c) EXECUTED NUMBERS on four-point masses - α=1/3, γ=1/6, Born (1,1/2,0,1/2) sums to 2; does not fire

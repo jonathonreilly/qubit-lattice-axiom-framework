@@ -1,0 +1,6 @@
+proper octahedral matrices: 24
+e1 (6-axis pole): orbit 6
+111 (body diagonal): orbit 8
+110 (face diagonal): orbit 12
+generic 123: orbit 24
+SUMMARY: attack pattern (a) WITNESS REALIZABILITY on M3 cube orbits - |G|=24; poles 6, 8, 12, generic 24; six-axis is smallest nontrivial; does not fire

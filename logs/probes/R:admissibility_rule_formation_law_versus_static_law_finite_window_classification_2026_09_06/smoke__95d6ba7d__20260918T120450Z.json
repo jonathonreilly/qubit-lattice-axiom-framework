@@ -1,0 +1,22 @@
+{
+ "task": "R:admissibility_rule_formation_law_versus_static_law_finite_window_classification_2026_09_06",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "smoke",
+ "model": "fable",
+ "command": "python3 scripts/admissibility_rule_formation_law_versus_static_law_finite_window_classification_2026_09_06.py",
+ "seed": 33090,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "95d6ba7d",
+ "started_utc": "20260918T120450Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=53 FAIL=0",
+  "expected_ok": true
+ },
+ "stdout_sha256": "2b6d87a7e4fd6257198987f2d690ba5306ed4ab9360f3a456b52382175c4c397",
+ "stdout_tail": "c^2,c^2) forces a=b=c; reduced 3 eqs give p=q=r; verified\nPASS: E4c route 4 factorized: rank Z_2 = [4, 6] at (3,1,2),(5,2,4); det Phi = (p+q+4r)(p+q-2r)^2(p-q)^3; minors symbolic: rank >= 2 unless p=q=r\nPASS: E5 route 5 cycle4 mixture: max |avg - mu| = 899/2341664 (3,1,2), 3478458125/23066700436908 (5,2,4); control (2,3,5) 1585133/10007780364\nPASS: E6a route 6: static one-neighbor conditional = rule on path3, not on cycle4 (219/866, 71/866, 72/433 x4 vs 1/4, 1/12, 1/6 x4)\nPASS: E6b route 6 chain rule on cycle4: given all earlier records mu_sigma = mu for 24/24 orders; given recorded neighbors only 0/24\nPASS: F1 the note carries the four fence sentences verbatim\nPASS: F2 the note contains no forbidden phrase (hits: [])\nPASS: F3 runner source: no floating-point literal or conversion call (0 hits)\nper_element: executed \u2014 every menu value, every configuration of path3/P4/star4/cycle4, every order, both triples, exact\nper_site: executed \u2014 the full conditional at every site of every declared window; cube8 on the declared configuration family\nper_mode: checked and not executed \u2014 no spectral decomposition in the theorem; det Phi factorization is symbolic\nper_block: executed \u2014 every order's normalizer history block by block; cube8: 40320 orders combinatorially, six exactly\nlattice_wide: checked and not executed \u2014 finite windows only; the infinite-volume specification is named, not computed\nPASS: G1 the five N5 resolution lines are printed (each >= 40 characters)\nTOTAL: PASS=53 FAIL=0\n"
+}

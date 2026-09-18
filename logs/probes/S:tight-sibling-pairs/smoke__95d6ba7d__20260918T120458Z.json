@@ -1,0 +1,21 @@
+{
+ "task": "S:tight-sibling-pairs",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "smoke",
+ "model": "fable",
+ "command": "python3 probes/lib/tightpairs.py 5 60 4 4 6",
+ "seed": 5,
+ "minutes": 1.0,
+ "box": "4x4x6",
+ "git_sha": "95d6ba7d",
+ "started_utc": "20260918T120458Z",
+ "elapsed_s": 61.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "-5"
+ },
+ "stdout_sha256": "16b4b40d53bf2e6ac180ad18b0ce9a03cad226b11329a8d0bf269e39e75c6860",
+ "stdout_tail": "seed 5: max over sibling processed pred pairs of min(v) = -7: detail ((2, 2, 2), (1, 2, 2), -7, (2, 2, 1), -7, -7); H3 violation: None; ones=23; zeta=[(0, 0, 3), (0, 1, 0), (0, 2, 1), (0, 2, 2), (0, 3, 2), (1, 1, 1), (1, 1, 2), (1, 3, 3), (1, 3, 5), (2, 0, 0), (2, 1, 5), (2, 2, 0), (2, 3, 1), (2, 3, 3), (3, 0, 1), (3, 2, 4), (3, 3, 4)]\nseed 5: max over sibling processed pred pairs of min(v) = -6: detail ((2, 2, 2), (1, 2, 2), -6, (2, 2, 1), -6, -6); H3 violation: None; ones=25; zeta=[(0, 0, 3), (0, 1, 0), (0, 2, 1), (0, 2, 2), (0, 3, 5), (1, 1, 1), (1, 1, 2), (1, 1, 5), (1, 3, 3), (1, 3, 5), (2, 0, 0), (2, 0, 4), (2, 1, 5), (2, 2, 0), (2, 3, 1), (2, 3, 3), (3, 0, 1), (3, 2, 4), (3, 3, 3), (3, 3, 4)]\nseed 5: max over sibling processed pred pairs of min(v) = -5: detail ((2, 2, 2), (1, 2, 2), -5, (2, 2, 1), -5, -14); H3 violation: None; ones=44; zeta=[(0, 0, 0), (0, 0, 2), (0, 0, 3), (0, 1, 0), (0, 2, 1), (0, 2, 2), (0, 2, 5), (0, 3, 3), (0, 3, 4), (0, 3, 5), (1, 1, 1), (1, 1, 5), (1, 2, 1), (1, 3, 4), (1, 3, 5), (2, 0, 0), (2, 0, 4), (2, 0, 5), (2, 1, 5), (2, 2, 0), (2, 3, 1), (3, 0, 1), (3, 0, 3), (3, 0, 4), (3, 0, 5), (3, 1, 2), (3, 2, 5), (3, 3, 3), (3, 3, 4)]\nseed 5: done restarts=1 best=-5\n"
+}

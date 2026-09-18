@@ -50,3 +50,7 @@ docs/audit/data/static_pipeline_checkpoint.json
 docs/audit/data/static_pipeline_checkpoint.lock
 docs/audit/data/static_pipeline_receipt_*.json
 docs/audit/AUDIT_LEDGER.md
+
+# ai/probes branch: probe logs are committed by workers (this branch never merges into main)
+!logs/probes/
+!logs/probes/**

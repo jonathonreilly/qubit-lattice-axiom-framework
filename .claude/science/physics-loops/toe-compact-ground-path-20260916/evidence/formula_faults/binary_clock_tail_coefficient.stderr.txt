@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.py", line 173, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.py", line 166, in main
+    moments=moments_and_clock_control())
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.py", line 155, in moments_and_clock_control
+    assert abs(bad/(4*g**8)-1)<mp.mpf('.001')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

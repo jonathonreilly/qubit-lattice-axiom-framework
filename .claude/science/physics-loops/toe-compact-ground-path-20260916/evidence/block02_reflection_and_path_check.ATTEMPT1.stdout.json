@@ -1,0 +1,240 @@
+{
+  "constrained_kernel": {
+    "conclusion": "Positive path kernel can have a negative eigenvalue; use the Hilbert-Schmidt even-power bound.",
+    "even_power_checks": [
+      {
+        "even_m": 2,
+        "norm_HS_bound": 0.7359844125860407,
+        "trace_power": 0.7359844125860409
+      },
+      {
+        "even_m": 4,
+        "norm_HS_bound": 0.5362161295526151,
+        "trace_power": 0.5308691519306763
+      },
+      {
+        "even_m": 6,
+        "norm_HS_bound": 0.3906709607912699,
+        "trace_power": 0.3867356686070765
+      },
+      {
+        "even_m": 10,
+        "norm_HS_bound": 0.20737368481663507,
+        "trace_power": 0.2052845595922129
+      }
+    ],
+    "kernel": [
+      [
+        0.19978820044686396,
+        0.4323323583816937
+      ],
+      [
+        0.43233235838169365,
+        0.5676676416183064
+      ]
+    ],
+    "spectrum": [
+      -0.08610725103633347,
+      0.8535630931015039
+    ]
+  },
+  "elapsed_seconds": 0.039868124993517995,
+  "moments": {
+    "finite_clock_countercontrol": [
+      {
+        "binary_bad_probability": "0.00000003999999520000063999991040001290239810764828114939782759037271967134661",
+        "g": ".1",
+        "leading_polynomial": "0.00000004"
+      },
+      {
+        "binary_bad_probability": "0.000000000002624399999979337573920180754903346179693910804436770281742665628114306",
+        "g": ".03",
+        "leading_polynomial": "0.0000000000026244"
+      },
+      {
+        "binary_bad_probability": "0.00000000000000039999999999999952000000000000063999999999999910400000000000129024",
+        "g": ".01",
+        "leading_polynomial": "0.0000000000000004"
+      }
+    ],
+    "free_circle": [
+      {
+        "chord_fourth": "0.0000000000000002999999975000000131249999468750001776041661588541679364389573345159645",
+        "ratio_to_x_squared": "2.999999975000000131249999468750001776041661588541679364389573345159645",
+        "variance": "0.00000001"
+      },
+      {
+        "chord_fourth": "0.000002997501311968927553398111483053315114161649813440629427449116570632922",
+        "ratio_to_x_squared": "2.997501311968927553398111483053315114161649813440629427449116570632922",
+        "variance": "0.001"
+      },
+      {
+        "chord_fourth": "0.1019407477836020161748733747241591743163189625784167833277621268055486",
+        "ratio_to_x_squared": "2.548518694590050404371834368103979357907974064460419583194053170138716",
+        "variance": "0.2"
+      },
+      {
+        "chord_fourth": "1.418425288772157994957602710015525179279918007921656117473180475427695",
+        "ratio_to_x_squared": "1.418425288772157994957602710015525179279918007921656117473180475427695",
+        "variance": "1.0"
+      },
+      {
+        "chord_fourth": "5.946096428129623508104027268546693366320845272532773867755763133363021",
+        "ratio_to_x_squared": "0.05946096428129623508104027268546693366320845272532773867755763133363021",
+        "variance": "10.0"
+      }
+    ],
+    "interacting_single_rotor": [
+      {
+        "bound": 1.9200000000000003e-06,
+        "g": 0.2,
+        "ground_correlations": [
+          0.999801011490092,
+          0.9992042835074313
+        ],
+        "h": 0.01,
+        "moment32": 4.750941160480693e-07,
+        "moment48": 4.750941262621211e-07,
+        "ratio": 0.24744485742818803
+      },
+      {
+        "bound": 0.00019200000000000003,
+        "g": 0.2,
+        "ground_correlations": [
+          0.9980980895245946,
+          0.9924140342585929
+        ],
+        "h": 0.1,
+        "moment32": 4.335232041907666e-05,
+        "moment48": 4.3352320429290714e-05,
+        "ratio": 0.22579333556922243
+      },
+      {
+        "bound": 0.019200000000000002,
+        "g": 0.2,
+        "ground_correlations": [
+          0.9874109427517352,
+          0.9505869340097605
+        ],
+        "h": 1.0,
+        "moment32": 0.001886326005628991,
+        "moment48": 0.001886326005638983,
+        "ratio": 0.09824614612703035
+      },
+      {
+        "bound": 7.5e-05,
+        "g": 0.5,
+        "ground_correlations": [
+          0.9987568037222647,
+          0.9950364804302263
+        ],
+        "h": 0.01,
+        "moment32": 1.8531082336181726e-05,
+        "moment48": 1.8531082334849458e-05,
+        "ratio": 0.24708109779799278
+      },
+      {
+        "bound": 0.0075000000000000015,
+        "g": 0.5,
+        "ground_correlations": [
+          0.9881566067946784,
+          0.9534614185165363
+        ],
+        "h": 0.1,
+        "moment32": 0.0016699826756449987,
+        "moment48": 0.0016699826756452207,
+        "ratio": 0.22266435675269605
+      },
+      {
+        "bound": 0.75,
+        "g": 0.5,
+        "ground_correlations": [
+          0.9230404019689885,
+          0.725952570167308
+        ],
+        "h": 1.0,
+        "moment32": 0.06758192458270829,
+        "moment48": 0.06758192458270784,
+        "ratio": 0.09010923277694378
+      },
+      {
+        "bound": 0.0012,
+        "g": 1.0,
+        "ground_correlations": [
+          0.9950332220425131,
+          0.9802804123599002
+        ],
+        "h": 0.01,
+        "moment32": 0.0002950483796948511,
+        "moment48": 0.0002950483796955172,
+        "ratio": 0.24587364974626438
+      },
+      {
+        "bound": 0.12000000000000002,
+        "g": 1.0,
+        "ground_correlations": [
+          0.9531628765082825,
+          0.8254105957981381
+        ],
+        "h": 0.1,
+        "moment32": 0.025518179530012564,
+        "moment48": 0.02551817953001656,
+        "ratio": 0.2126514960834713
+      },
+      {
+        "bound": 12.0,
+        "g": 1.0,
+        "ground_correlations": [
+          0.7120430298902347,
+          0.2604431193979743
+        ],
+        "h": 1.0,
+        "moment32": 0.8245419996740712,
+        "moment48": 0.8245419996740709,
+        "ratio": 0.06871183330617257
+      }
+    ],
+    "scope": "Single-rotor moments test constants. Binary-clock probabilities must not be assigned Brownian exponential estimates."
+  },
+  "reflection": {
+    "model": "Four-plaquette 12-binary-link periodic strip, all half-link indicators",
+    "rows": [
+      {
+        "RP_matrix_dimension": 128,
+        "RP_min_eigenvalue": -3.4161199606813838e-18,
+        "dense_bad_probability": 0.04012102139576708,
+        "full_to_reduced_max_error": 9.853229343548264e-16,
+        "ground_energy": 1.1357762795893254,
+        "jump_rate": 0.7,
+        "magnetic_coefficient": 0.3,
+        "max_chessboard_ratio": 1.0,
+        "residual": 1.697681091944902e-14
+      },
+      {
+        "RP_matrix_dimension": 128,
+        "RP_min_eigenvalue": -1.0520182059395296e-17,
+        "dense_bad_probability": 0.00012819343287462685,
+        "full_to_reduced_max_error": 5.440092820663267e-15,
+        "ground_energy": 1.9669893333625073,
+        "jump_rate": 0.2,
+        "magnetic_coefficient": 1.1,
+        "max_chessboard_ratio": 1.0,
+        "residual": 1.062967181046726e-14
+      },
+      {
+        "RP_matrix_dimension": 128,
+        "RP_min_eigenvalue": -4.043734476574999e-18,
+        "dense_bad_probability": 0.0113455266531817,
+        "full_to_reduced_max_error": 3.191891195797325e-15,
+        "ground_energy": 6.482290037263561,
+        "jump_rate": 1.3,
+        "magnetic_coefficient": 2.0,
+        "max_chessboard_ratio": 1.0,
+        "residual": 3.120168374211733e-14
+      }
+    ]
+  },
+  "scope": "Independent finite challenges for reflection/path steps in Blocks01-03.\n\nThe 12-link binary-clock strip tests the reflection/chessboard ALGEBRA only.\nIt cannot validate the Brownian exp(-constant/g^2) estimate. A separate\nclock countercontrol illustrates that limitation. Fourth moments are\nchecked in a genuine compact single-rotor Schr\u00f6dinger ground process.\n",
+  "source_sha256": "0a75dbec9e63ebfae36cc629b6ca308ab46abd194cdefbe8a6238ae51ca2aa04",
+  "status": "PERSONAL_CHECKS_COMPLETED"
+}

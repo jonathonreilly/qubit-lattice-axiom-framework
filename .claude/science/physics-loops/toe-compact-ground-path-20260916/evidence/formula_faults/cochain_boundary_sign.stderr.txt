@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.py", line 185, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.py", line 170, in main
+    cochains=integer_currents(),edge_geometry=edge_dissemination(),constants=constants())
+             ~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.py", line 56, in integer_currents
+    assert all(v%Q==0 for v in dF.values())
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

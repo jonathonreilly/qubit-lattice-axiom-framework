@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.py", line 244, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.py", line 237, in main
+    geometry=geometry(),parameters=trial_and_parameters(),rotor=rotor_checks())
+                                                                ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/toe-compact-ground-path-20260916/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.py", line 215, in rotor_checks
+    assert abs(fd[-1]-f64) < 2e-5
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

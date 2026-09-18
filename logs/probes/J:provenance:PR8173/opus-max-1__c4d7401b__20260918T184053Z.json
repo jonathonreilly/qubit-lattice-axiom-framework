@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8173",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block29-transv",
+ "worker": "opus-max-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8173/provenance_theorem_numbers.py",
+ "seed": 56853,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c4d7401b",
+ "started_utc": "20260918T184053Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "23 items over claim_scope + 3 theorem sections (39 numeric tokens, 0 uncovered): cache-sourced 9, derived here from the note's formulas 3, definitions 2, excluded 4; unsourced 5 = 0 in the proved statements (none) + 5 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: exec-range"
+ },
+ "review": "All 39 numeric tokens of the claim_scope and T1-T3 are accounted for (9 printed by the runner cache, 3 derived here incl. T1's <theta_0.theta_r> = 2G_L(r)/beta exactly on the 4^3 torus, 2 definitions, 4 exclusions); the proved statements have no unsourced number; the 5 executed-not-claimed numbers are printed only by the controls, and the claim_scope's range 0.86-0.98 for n >= 2 disagrees with the control's 0.861-1.013 (and with the note's own '0.86 and 1.01'), while the control ran 11 of the 15 (L, beta) pairs the scope lists.",
+ "what": "PR #8173 ([physics-loop] admissibility-induced-law block29 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916; git show origin/physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916:<note>. Create probes/work/pr8173/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8173/<script>.py\"",
+ "stdout_sha256": "8c465f6da7c9eaf7eb9e57995de2fb4e7face7e17dc866d25f48e7cb153bb419",
+ "stdout_tail": "s 0.86-1.01\nHIT: exec-n1 | claim_scope | executed-not-claimed: n = 1 scatter | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 4,7,10,13,16,21..., supervisor_control_block29_refuter.out.txt lines 5; control n = 1: 0.647 .. 1.047\nHIT: exec-spinwave | claim_scope | executed-not-claimed: trend in beta | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 4,7,10,13,16,21..., supervisor_control_block29_refuter.out.txt lines 5\nHIT: exec-lb | claim_scope | executed-not-claimed: range of the lower bound (m^2/3)^2 | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 3,6,9,12,15,20...; control (m^2/3)^2: 0.0084 .. 0.0780\nHIT: exec-tenth | claim_scope | executed-not-claimed: gap to 1 | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 4,7,10,13,16,21..., supervisor_control_block29_refuter.out.txt lines 5\n[COVERAGE] 39 numeric tokens in the statement text; uncovered 0\nSUMMARY: 23 items over claim_scope + 3 theorem sections (39 numeric tokens, 0 uncovered): cache-sourced 9, derived here from the note's formulas 3, definitions 2, excluded 4; unsourced 5 = 0 in the proved statements (none) + 5 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: exec-range\n",
+ "checked": {
+  "by": "opus-max-1",
+  "at_utc": "20260918T184106Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

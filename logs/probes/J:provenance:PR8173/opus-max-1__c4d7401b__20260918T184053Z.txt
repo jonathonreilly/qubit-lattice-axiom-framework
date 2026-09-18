@@ -1,0 +1,28 @@
+PR #8173 head e5b3aa3168; cache 24 stdout lines; statement sections: claim_scope, Theorem T1, Theorem T2, Theorem T3
+[EXCLUDED] ref-b19 | claim_scope | reference (block 19's bounds)
+[DEFINITION] T1-model | claim_scope | the quadratic transverse model | declared under Premises and declared objects
+[CACHE] T1-var | claim_scope,Theorem T1 | T1 mode variance | cache stdout line 10: PASS: B2 T1: for the Gaussian transverse model with precision beta Lap on the 4-ring the k-modes n = 1, 2 have variance 1/(beta E(k)) = 1/(2
+[CACHE] T1-E | claim_scope | T1 plane-wave eigenvalue | cache stdout line 9: PASS: B1 T1: on the periodic 4^3 lattice the plane waves e^{ik.x} are eigenvectors of the graph Laplacian with eigenvalue E(k) = 2 sum_j (1 
+[CACHE] T1-norm | claim_scope,Theorem T1 | T1 spin-wave value | cache stdout line 10: PASS: B2 T1: for the Gaussian transverse model with precision beta Lap on the 4-ring the k-modes n = 1, 2 have variance 1/(beta E(k)) = 1/(2
+[CACHE] T1-ring | claim_scope | T1 route | cache stdout line 10: PASS: B2 T1: for the Gaussian transverse model with precision beta Lap on the 4-ring the k-modes n = 1, 2 have variance 1/(beta E(k)) = 1/(2
+[DERIVED] T1-real | Theorem T1 | T1 real-space correlation | exact on the 4^3 torus (beta = 1): <theta_0.theta_r> from the pseudo-inverse of the Laplacian equals 2 G_L(r) for r = 0, 1, 2 (r=0: 2G_L = 1517/3840; r=1: 2G_L = 257/3840; r=2: 2G_L = 29/3840)
+[EXCLUDED] T1-k0 | claim_scope,Theorem T1 | structural: the nonzero modes
+[EXCLUDED] T2-field | claim_scope,Theorem T2 | structural: the field's sign and axis
+[CACHE] T2-rule | claim_scope,Theorem T2 | T2 sum rule | cache stdout line 12: PASS: C2 T2: the rotation generator about e_2 sends s^1 to s^3 and s^3 to -s^1; the surface integral of L(s^1 s^3) vanishes (the integration
+[CACHE] T2-onesite | claim_scope | T2 one-site instance | cache stdout line 11: PASS: C1 T2: single site in a field: kappa E[(s^1)^2] = E[s^3] for the exponential law with concentration kappa = beta h (the transverse sum
+[DERIVED] T2-response | claim_scope,Theorem T2 | T2 k = 0 response | N<(m^1)^2> = <m^3>/(beta h) by dividing the printed sum rule (cache C2) by beta h > 0 (sympy)
+[EXCLUDED] T2-limit | Theorem T2 | structural: the h -> 0 limit statement
+[CACHE] T3-modesum | claim_scope,Theorem T3 | T3 mode sum (Parseval) | cache stdout line 13: PASS: D1 T3: Parseval on a 4-site ring with rational data: N^{-1} sum_k |f_hat(k)|^2 = sum_x f_x^2, so the transverse structure factor's ave
+[DERIVED] T3-local | Theorem T3 | T3 local transverse moment | |s^perp|^2 = 1 - (s.u)^2 for unit s, two transverse components -> the '/2' per component (sympy)
+[DEFINITION] exec-c-def | claim_scope | normalization (declared) | declared under Premises and declared objects
+[CACHE] exec-grid | claim_scope | executed: lattices (the runner prints a descriptive N5 line) | cache stdout line 20: per_mode: executed — Parseval on rational data; the measured normalization c(beta, k) for k along an axis on 16^3, 24^3, 32^3 (control), by 
+[CACHE] exec-betas | claim_scope | executed: couplings (the runner prints a descriptive N5 line) | cache stdout line 21: per_block: executed — the placement of c(beta, k) between (m^2/3)^2 and 1 at beta = 0.8, 1, 1.5, 2, 3 (control and refuter outputs)
+[CONTROL] normalization range n >= 2: control (n >= 2, 77 values over 11 (L, beta) runs): 0.861 (L=24, beta=1.0, n=2) .. 1.013 (L=24, beta=2.0, n=4): stated 0.86-0.98 MISMATCH; the note's own 'What the runs say (i)' gives 0.86-1.01
+[CONTROL] grid actually run: control grid: 11 of the 15 (L, beta) pairs, missing [(24, 3.0), (32, 0.8), (32, 2.0), (32, 3.0)]
+HIT: exec-range | claim_scope | executed-not-claimed: normalization range, n >= 2 | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 4,7,10,13,16,21..., supervisor_control_block29_refuter.out.txt lines 5; control (n >= 2, 77 values over 11 (L, beta) runs): 0.861 (L=24, beta=1.0, n=2) .. 1.013 (L=24, beta=2.0, n=4): stated 0.86-0.98 MISMATCH; the note's own 'What the runs say (i)' gives 0.86-1.01
+HIT: exec-n1 | claim_scope | executed-not-claimed: n = 1 scatter | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 4,7,10,13,16,21..., supervisor_control_block29_refuter.out.txt lines 5; control n = 1: 0.647 .. 1.047
+HIT: exec-spinwave | claim_scope | executed-not-claimed: trend in beta | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 4,7,10,13,16,21..., supervisor_control_block29_refuter.out.txt lines 5
+HIT: exec-lb | claim_scope | executed-not-claimed: range of the lower bound (m^2/3)^2 | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 3,6,9,12,15,20...; control (m^2/3)^2: 0.0084 .. 0.0780
+HIT: exec-tenth | claim_scope | executed-not-claimed: gap to 1 | not printed by the runner (cache), no derivation in this note; printed by supervisor_control_block29_kernel.out.txt lines 4,7,10,13,16,21..., supervisor_control_block29_refuter.out.txt lines 5
+[COVERAGE] 39 numeric tokens in the statement text; uncovered 0
+SUMMARY: 23 items over claim_scope + 3 theorem sections (39 numeric tokens, 0 uncovered): cache-sourced 9, derived here from the note's formulas 3, definitions 2, excluded 4; unsourced 5 = 0 in the proved statements (none) + 5 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: exec-range

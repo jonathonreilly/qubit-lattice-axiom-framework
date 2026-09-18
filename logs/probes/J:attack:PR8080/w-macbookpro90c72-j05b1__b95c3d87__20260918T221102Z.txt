@@ -1,0 +1,24 @@
+[ok] events: RESULT 588, acceptance 588 (note: 588; EVENTS.ndjson hashed, not stored)
+[ok] choices: RESULT 2 (note: both / two choices)
+[ok] oracle: native_oracle_calls 0 (note: no sign)
+[ok] external_seconds: ROOT_ACCEPTANCE external_seconds 1.87 (note: 1.87)
+[ok] peak_bytes: sampled_whole_tree_peak 122683392 (note: 122,683,392)
+[ok] resource_ceiling: peak 122683392 <= 384MiB=402653184, 1.87s <= 30 (note: 30s/384MiB)
+[ok] status: acceptance ACCEPTED_NEW_SPECTRAL_RESIDUAL_ESTIMATOR_ONCE; row status ['INDETERMINATE_SIGN', 'INDETERMINATE_SIGN'] (note: ACCEPTED, BOTH INDETERMINATE_SIGN)
+[ok] residual formula(1): error_upper 6243.66910340 vs 6[E(a+chi)+min(...)] 6243.66910340
+[ok] residual chi: chi=11.451147083603358 min(X,a+E)=11.451147083603358
+[ok] residual psi: psi=87.30719684225271 min(V,b+F)=87.30719684225271
+[ok] residual stated: 6243.67 vs note ~6243.67
+[ok] residual contains0: alpha [-734.7677,826.1495]
+[ok] residual X_upper: X_upper^2=240.0 vs 15/delta^2=240.0 (enclosure)
+[ok] residual V_upper: V_upper^2=30720.0 vs j^2 15/delta^4=30720.0 (enclosure)
+[ok] variational formula(1): error_upper 6511.71857664 vs 6[E(a+chi)+min(...)] 6511.71857664
+[ok] variational chi: chi=12.547479688922342 min(X,a+E)=12.547479688922342
+[ok] variational psi: psi=86.16717740229515 min(V,b+F)=86.16717740229515
+[ok] variational stated: 6511.72 vs note ~6511.72
+[ok] variational contains0: alpha [-737.7048,890.2249]
+[ok] variational X_upper: X_upper^2=240.0 vs 15/delta^2=240.0 (enclosure)
+[ok] variational V_upper: V_upper^2=30720.0 vs j^2 15/delta^4=30720.0 (enclosure)
+[ok] ninety_terms: degree20-ward ordered_words [90, 90] status ['INDETERMINATE_SIGN', 'INDETERMINATE_SIGN'] (note: ninety ordered terms, both inconclusive)
+[ok] compact_28: COMPACT_OUTPUT checks=28 outcome=ACCEPTED_EXECUTION_BOTH_INDETERMINATE_SIGN
+SUMMARY: pattern (c) EXECUTED NUMBERS; spectral 1.87s / 122683392 B / 588 events, error bounds 6243.67 and 6511.72, formula (1), X=sqrt(15)/delta, V=j sqrt(15)/delta^2, ninety ordered_words and both INDETERMINATE_SIGN all match the PR-head evidence

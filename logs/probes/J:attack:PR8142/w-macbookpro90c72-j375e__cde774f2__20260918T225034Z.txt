@@ -1,0 +1,4 @@
+cubic_t(4)=-9 cubic_t(5)=19
+cubic_rho(6)=-1 cubic_rho(7)=72
+sextic(1)=18 sextic(2)=-137 sextic(6)=-3137 sextic(7)=10818
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - t* in (4,5), rho in (6,7), sextic in (1,2) and (6,7); does not fire

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py",
+ "seed": 69436,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "50ad2af9",
+ "started_utc": "20260918T221036Z",
+ "elapsed_s": 228.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b05d8f30713255dc5280ed4551cc2091d9faf7f765211ec8e85642002f166b62",
+ "stdout_tail": ",\n      \"Kraus_completeness_residual\": 6.280369834735101e-16,\n      \"corrected_branch_identity_residual\": 1.5700924586837752e-16,\n      \"expected_even_rank\": 3,\n      \"expected_outcomes\": 4,\n      \"fixed_sector_dimension\": 2,\n      \"generator_rank\": 3,\n      \"modes\": 2\n    },\n    {\n      \"Bell_basis_orthonormality_residual\": 0.0,\n      \"Bell_outcomes\": 16,\n      \"Kraus_completeness_residual\": 0.0,\n      \"corrected_branch_identity_residual\": 0.0,\n      \"expected_even_rank\": 5,\n      \"expected_outcomes\": 16,\n      \"fixed_sector_dimension\": 4,\n      \"generator_rank\": 5,\n      \"modes\": 3\n    }\n  ],\n  \"frame_products\": {\n    \"atlas_key_product_failures\": 0,\n    \"coframe_origin_blocks\": 4608,\n    \"ordered_frame_products\": 576,\n    \"private_correction_word_product_failures\": 0,\n    \"returned_route_product_failures\": 0,\n    \"signed_Choi_tableau_image_product_failures\": 0,\n    \"stabilizer_row_product_failures\": 0,\n    \"tree_plaquette_schedule_product_failures\": 0\n  },\n  \"input_Bell_measurement_physical_M2_compiled\": false,\n  \"open\": \"autonomous sector and genesis selection; collision-free merge of preparation, Bell, correction, and recurrent-G epochs; sector-summed live E; downstream time/source/Record/Born acceptance harnesses\",\n  \"status\": \"PASS\",\n  \"supplied\": \"common fixed parity/center sector; one-time locally pumped Choi resource; mixed gauge reference; retained Bell/syndrome banks; finite 64-port-environment correction atlas; finite layer colors; coframe-origin gauge sector\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T221425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

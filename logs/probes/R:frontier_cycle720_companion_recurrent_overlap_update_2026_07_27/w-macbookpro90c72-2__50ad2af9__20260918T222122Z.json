@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_recurrent_overlap_update_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py",
+ "seed": 70082,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "50ad2af9",
+ "started_utc": "20260918T222122Z",
+ "elapsed_s": 196.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f6a61b4c4291d4856abae275a4d542c9e3917bc5c93057d896874344173e5fb6",
+ "stdout_tail": "ht-origin local-constraint code\", \"the fixed four-layer local update schedule and within-edge factor-group order\", \"Cycle219 coin and Cycle230 contact parameters\"], \"update_covariance\": [{\"affine_translation_parities\": 8, \"coframe_origin_sectors\": 8, \"frame_origin_contexts\": 1536, \"maximum_coin_frame_covariance_residual\": 0.0, \"operator_family_binary_multiset_failures\": 0, \"operator_family_signed_multiset_failures\": 0, \"per_context_digest\": \"9ed3fb59e99784f0158845186cbcc7589dfe60ad40beb703376302a0b8b223a9\", \"proper_cubic_frames\": 24, \"seam_block_factor_order_covariance_failures\": 0, \"shape\": [3, 2, 2]}, {\"affine_translation_parities\": 8, \"coframe_origin_sectors\": 8, \"frame_origin_contexts\": 1536, \"maximum_coin_frame_covariance_residual\": 0.0, \"operator_family_binary_multiset_failures\": 0, \"operator_family_signed_multiset_failures\": 0, \"per_context_digest\": \"9ed3fb59e99784f0158845186cbcc7589dfe60ad40beb703376302a0b8b223a9\", \"proper_cubic_frames\": 24, \"seam_block_factor_order_covariance_failures\": 0, \"shape\": [3, 3, 2]}, {\"affine_translation_parities\": 8, \"coframe_origin_sectors\": 8, \"frame_origin_contexts\": 1536, \"maximum_coin_frame_covariance_residual\": 0.0, \"operator_family_binary_multiset_failures\": 0, \"operator_family_signed_multiset_failures\": 0, \"per_context_digest\": \"9ed3fb59e99784f0158845186cbcc7589dfe60ad40beb703376302a0b8b223a9\", \"proper_cubic_frames\": 24, \"seam_block_factor_order_covariance_failures\": 0, \"shape\": [5, 3, 2]}]}\nRECURRENT_OVERLAP_COMPANION_UPDATE_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T222438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

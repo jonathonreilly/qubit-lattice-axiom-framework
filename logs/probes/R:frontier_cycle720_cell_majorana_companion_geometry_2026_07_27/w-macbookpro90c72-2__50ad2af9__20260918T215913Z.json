@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_cell_majorana_companion_geometry_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
+ "seed": 68753,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "50ad2af9",
+ "started_utc": "20260918T215913Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "99de6201db38b01d46e7a2c6523930bd59ea548a02295fb7c3c3baa138c63bdb",
+ "stdout_tail": "_imports\": \"three companion qubits/cell and a within-cell companion order are explicit\", \"N4_residual_matching\": \"Gram, rank, phase, centralizer, and radius-local span tests are separately exposed\", \"N5_resolution\": \"2x2x2 through held 5x3x2 without refit\", \"N6_partial_closure\": \"local algebra can close even if state code does not\", \"N7_steelman\": \"a different commuting gauge completion could turn the positive companion algebra into a local subsystem code\", \"N8_cross_cycle_echo\": \"tests the endpoint-incidence insight with factor-private half-edge companions rather than copied rays\", \"gate\": \"FAIL_for_broad_no_go__single_companion_geometry_only\"}, \"open\": [\"construct and execute an explicit state isometry/gauge-fixing circuit for the local subsystem code\", \"compose and route the full free/seam/contact update on literal M2\", \"coherent transport between parity superselection sectors\", \"proper-cubic transformed-code covariance and autonomous gauge repair\"], \"pass\": true, \"report_sha256\": \"10ae3a2648bff7aac4d09d38fad0daeace5ed2a9de59063b36bcf17e915b69ce\", \"runtime_parity_queries\": 0, \"runtime_parity_service\": false, \"status\": \"cycle720-positive-cell-Majorana-companion-local-subsystem-sector-code\", \"supplied\": [\"one fixed total-parity superselection label (+ or -) at genesis\", \"a gauge-center sector/vacuum representative; autonomous preparation remains unexecuted\", \"one within-cell order of the six companion Majoranas\"]}\nCELL_MAJORANA_COMPANION_LOCAL_SUBSYSTEM_SECTOR_CODE_POSITIVE\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T215917Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

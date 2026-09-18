@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27.py",
+ "seed": 70038,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "50ad2af9",
+ "started_utc": "20260918T222038Z",
+ "elapsed_s": 43.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "987439036f0d7ba7b5c1eccdf401a8a4b8da55e4e0f0b5b5372671e3547baa69",
+ "stdout_tail": "ells\": 27, \"cycle_rank\": 55, \"edges\": 81, \"frame_incidence_failures\": 0, \"frame_plaquette_span_failures\": 0, \"frame_product_permutation_failures\": 0, \"local_plaquette_rank\": 52, \"noncontractible_Z2_holonomy_rank\": 3, \"ordered_frame_products\": 576, \"proper_cubic_frames\": 24, \"rail_constraint_rank\": 107, \"rail_solution_dimension\": 55, \"single_odd_charge_rejected\": true, \"topological_sector_policy\": \"all rail-loop sectors are summed; fixing a flat Wilson sector would import three bits, but this tensor fixes none\", \"topology\": \"periodic_3x3x3\", \"zero_charge_contradictions\": 0}, \"rail_contraction_theorem\": \"For each projector selection, the cell odd-parity charges are an even vector. Half-edge equality and cell Gauss equations therefore have exactly 2^(E-N+1) solutions, independent of the selection. Summing all rail solutions multiplies every signed projector term by the same factor, removed by Choi normalization.\", \"report_sha256\": \"ac204eefebc201cb13304dd7b3a7a8bc6d717f3f5c1adf5a172a1b17ce897549\", \"status\": \"cycle720-positive-local-Z2-parity-rail__M2-Stinespring-and-active-content-covariance-open\", \"supplied\": [\"the parity-superselected law domain; parity-off-diagonal coherences remain erased\", \"local phase orientations of the already existing R2 companion-center constraints\", \"maximally mixed gauge/reference preparation from the parent channel\", \"the fixed local matter/companion port convention\"]}\nLOCAL_Z2_PARITY_RAIL_POSITIVE__M2_STINESPRING_AND_SIGNED_CONTENT_COVARIANCE_OPEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T222122Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

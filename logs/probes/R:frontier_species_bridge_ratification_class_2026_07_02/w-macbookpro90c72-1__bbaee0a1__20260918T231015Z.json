@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_species_bridge_ratification_class_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_species_bridge_ratification_class_2026_07_02.py",
+ "seed": 73015,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bbaee0a1",
+ "started_utc": "20260918T231015Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=20 FAIL=4",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2feab7f517cbe08fc4f74bb2c5f7e6c079680964da2fce8164b0a849da1ac2ef",
+ "stdout_tail": "3 orbit-average equalizes (spread = 0), Havg = 3*I, commutes with C3 -- exact\nCHECK 22: FAIL -- Historical Grade Scope: note preserves the bracketed above-grade content, former sub-admissions, and owner-class proposal as provenance\nCHECK 23: FAIL -- Historical governance map: note preserves owner-decision proposal tokens and the repair tokens as provenance\nCHECK 24: FAIL -- Historical governance map: note records the former two-part owner proposal and the extended scientific residue\n\nDECLARED-OPEN RESIDUE (conserved; owner surface, nothing adopted here):\n  RESIDUE: the AC_phi_lambda(iii) identification -- open scientific dependency; historical owner proposal is provenance only\n  RESIDUE: the bracketed above-C3-grade content (taste/Dirac/chirality; hw=1 vs hw=2 beyond C3)\n  RESIDUE: historical sub-admission (i) wording -- current occupancy obligation remains open\n  RESIDUE: historical sub-admission (ii) wording -- current R-eta obligation remains open\n  RESIDUE: adjacent review-pending K-arc PRs #4831/#4835/#4837/#4840/#4845 (non-overlapping)\n  RESIDUE: adjacent note-level two-cell family PR #4853 (context only)\n  RESIDUE: audit statuses of all cited notes -- owned by the independent audit lane\n  RESIDUE: the parent's separate CKM/PMNS across-fermion-type alignment residual -- not addressed here\n  RESIDUE: the parent's proof-strength gap: contentlessness argued/strongly-supported, not exhaustively proven (uncomputed C3/epsilon invariant functional ring)\n\nTOTAL: PASS=20 FAIL=4\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231016Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=20 FAIL=4' vs cache 'TOTAL: PASS=24 FAIL=0'"
+  ]
+ }
+}

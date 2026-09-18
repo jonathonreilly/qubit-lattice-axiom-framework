@@ -1,0 +1,47 @@
+========================================================================================
+Defined four-bit periodic difference operator: exact certificate
+mode: normal
+========================================================================================
+
+Part 1: defined finite periodic operator and exact blocking
+-----------------------------------------------------------
+  [PASS (A)] the block labels are exactly the 16 elements of {0,1}^4
+  [PASS (A)] the Hamming grading is (1,4,6,4,1), without assigning module roles  (observed=(1, 4, 6, 4, 1))
+  [PASS (A)] eta_mu(2y+b)=eta_mu(b) on every even periodic block
+  [PASS (A)] the symbolic finite Fourier fibers equal the coefficients from the two site shifts  (entries=64)
+  [PASS (A)] the diagonal rephasing proves all four Laurent-polynomial blocking identities  (directions=[True, True, True, True])
+  [PASS (A)] the full finite fiber has the exact reduced Laurent-polynomial form
+  [PASS (A)] on t=exp(i x), the Laurent coefficient is exactly i sin(x)
+
+Part 2: exact Clifford algebra checks
+-------------------------------------
+  [PASS (A)] each alpha_mu is a real symmetric involution
+  [PASS (A)] the four alpha_mu satisfy every Clifford relation
+  [PASS (A)] the 16 alpha words are linearly independent  (exact rank=16)
+  [PASS (A)] the exact word character is (16,0,...,0)  (character=(16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+  [PASS (A)] the alpha words are Hilbert-Schmidt orthogonal
+
+Part 3: explicit unitary four-copy certificate
+----------------------------------------------
+  [PASS (A)] the suffix-sign beta generators commute with every alpha and satisfy Clifford
+  [PASS (A)] Q_01 and Q_23 are commuting Hermitian involutions
+  [PASS (A)] their four joint projectors are orthogonal rank-4 projectors summing to I_16
+  [PASS (A)] the four vectors in the ++ projector form an exact orthonormal basis
+  [PASS (A)] the computed 4x4 restrictions equal the displayed gamma matrices
+  [PASS (A)] the displayed gamma matrices satisfy every Clifford relation
+  [PASS (A)] the gamma words span M_4(C), proving the 4-dimensional module irreducible  (exact rank=16)
+  [PASS (A)] the constructed 16x16 intertwiner U is exactly unitary
+  [PASS (A)] U^dagger alpha_mu U = gamma_mu tensor I_4 for every mu  (directions=(True, True, True, True))
+  [PASS (A)] the explicit similarity certifies four copies, independently of 16=4*4 prose
+
+Part 4: exact inverse and hypothesis firewall
+---------------------------------------------
+  [PASS (A)] the defined kinetic matrix squares to (sum_mu s_mu^2) I_16
+  [PASS (A)] the scalar-denominator numerator identity is exact
+  [PASS (A)] the displayed inverse is exact on its nonzero-denominator domain
+  [PASS (A)] the zero-parameter singular matrix is excluded from the inverse domain
+  [PASS (A)] the formal hypotheses contain none of the four required physical bridges  (formal hypotheses=['defined_block_map', 'defined_shift_operator', 'defined_sign_coefficients', 'finite_complex_linear_algebra', 'finite_periodic_set'])
+
+========================================================================================
+TOTAL: PASS=27, FAIL=0
+========================================================================================

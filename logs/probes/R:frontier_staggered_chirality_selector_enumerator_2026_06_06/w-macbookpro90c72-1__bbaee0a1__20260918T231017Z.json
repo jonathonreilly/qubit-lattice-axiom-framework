@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_staggered_chirality_selector_enumerator_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_staggered_chirality_selector_enumerator_2026_06_06.py",
+ "seed": 73017,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bbaee0a1",
+ "started_utc": "20260918T231017Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 17   FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3c25a97c3adf03676bf05f3e2c22fecff28c3ce754e38f992af71984dd0c0e47",
+ "stdout_tail": " ['+-+-+-+-', '-+-+-+-+']\n  [PASS] => on the bipartite Z^3, the constraint forces omega(x) = +-(-1)^{sum x} = eps(x) up to global gauge  --  unique 2-coloring of the connected bipartite graph\n\n[BLOCK 4] The pivot + downstream (eta) + teeth\n  [PASS] PIVOT: eps forced  <=>  chiral anticommutation {D,gamma5}=0 is required\n  [PASS] framework does NOT currently require it: chirality 'out of scope'; spin-statistics UNAUDITED  --  so eps is a free selector on the current surface\n  [PASS] downstream: once eps is fixed, eta_mu(x) follow deterministically (spin-diag) -> NOT a separate atom\n  [PASS] TEETH: the trivial gamma5=I survivor = non-chiral (vector-like) matter, admissible on the bare surface  --  SM matter is chiral, so physics needs eps -- but that need is the admission, not a derivation\n\n[BLOCK 5] Synthesis: route R1 resolved\n  [PASS] VERDICT: eps(x) is a FREE SELECTOR on {Lattice,Quantum,Record} (a 2nd staggered admission)  --  the chirality H_staggered_chirality, beyond AC_phi_lambda\n  [PASS] precisely located: the admission IS the chiral anticommutation {D,gamma5}=0 (chiral symmetry)\n  [PASS] conditional forcing: eps = (-1)^{sum x} up to gauge IFF a retained spin-statistics/chirality theorem supplies {D,gamma5}=0  --  retirement path = audit that theorem; no new axiom\n\n======================================================================================\nSCORECARD:  PASS = 17   FAIL = 0\n======================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231017Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

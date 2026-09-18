@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_su3_4d_plaquette_fss_data_2026_05_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_su3_4d_plaquette_fss_data_2026_05_05.py",
+ "seed": 73019,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bbaee0a1",
+ "started_utc": "20260918T231019Z",
+ "elapsed_s": 107.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c09a2f83dc1f40e16c1a03f4971d04364923c13675d49a4bd6ae6bd7c6c1f04e",
+ "stdout_tail": "=0.269 t=5s\n    therm   240: P=0.6009 acc=0.52 eps=0.255 t=7s\n    therm   300: P=0.5726 acc=0.54 eps=0.255 t=9s\nfrozen epsilon=0.2554\n    measure   150 (n=75): P=0.6052 acc=0.51 t=4s\n    measure   300 (n=150): P=0.6197 acc=0.51 t=8s\n    measure   450 (n=225): P=0.6242 acc=0.51 t=13s\n    measure   600 (n=300): P=0.6391 acc=0.51 t=17s\nsummary L=3: mean P = 0.6014, naive_se = 0.0008, n_samples = 300\nwrote artifact: outputs/su3_plaquette_fss_2026_05_05/L3_seed42_beta6.json\n\n=== L = 4 ===\nsites=256, links=1024, plaquettes=1536\nprotocol: therm=300, measure=600, sample_every=2, hits/link=3, target_acc=0.5\n    therm    60: P=0.5954 acc=0.49 eps=0.270 t=5s\n    therm   120: P=0.5977 acc=0.48 eps=0.270 t=10s\n    therm   180: P=0.6129 acc=0.50 eps=0.270 t=15s\n    therm   240: P=0.5941 acc=0.49 eps=0.270 t=20s\n    therm   300: P=0.6074 acc=0.48 eps=0.270 t=25s\nfrozen epsilon=0.2702\n    measure   150 (n=75): P=0.5963 acc=0.49 t=14s\n    measure   300 (n=150): P=0.6051 acc=0.49 t=27s\n    measure   450 (n=225): P=0.5897 acc=0.49 t=41s\n    measure   600 (n=300): P=0.5985 acc=0.49 t=56s\nsummary L=4: mean P = 0.5971, naive_se = 0.0004, n_samples = 300\nwrote artifact: outputs/su3_plaquette_fss_2026_05_05/L4_seed42_beta6.json\n\n==============================================================================\nDATA GENERATION COMPLETE\n==============================================================================\nRun the verifier next:\n  python3 scripts/frontier_su3_4d_plaquette_fss_verify_2026_05_05.py\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231207Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

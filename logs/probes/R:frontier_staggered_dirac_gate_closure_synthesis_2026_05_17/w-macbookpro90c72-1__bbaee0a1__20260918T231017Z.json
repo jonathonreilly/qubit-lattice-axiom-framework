@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_staggered_dirac_gate_closure_synthesis_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py",
+ "seed": 73017,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bbaee0a1",
+ "started_utc": "20260918T231017Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "98d23223617fe334d11f1ffd99c2c3422afcabcedd6034ea3dce79ee2f9c33d3",
+ "stdout_tail": "ming-weight decomposition 1+3+3+1=8\n       Hamming-weight decomposition: [1, 3, 3, 1] (sum=8); expected [1,3,3,1] sum=8.\n[PASS] Pauli chirality sigma_1 sigma_2 sigma_3 = i*I\n       sigma_1 sigma_2 sigma_3 = i*I_2: diag entries 1j, 1j; expected 1j.\n[PASS] Orthogonality from distinct joint eigenvalues\n       Orthogonality from spectral theorem: joint chars [(-1, 1, 1), (1, -1, 1), (1, 1, -1)]; all pairwise distinct -> 3 orthogonal eigenstates.\n[PASS] C_3[111] is 3-cycle on hw=1 corners\n       C_3[111] 3-cycle: orbit [(1, 0, 0), (0, 0, 1), (0, 1, 0)] -> (1, 0, 0); closes=True, visits_all=True.\n[PASS] No forbidden imports\n       Forbidden-imports check: PDG=0, MC=0, fitted=0, new axioms=0. All zero.\n\n========================================================================\nSUMMARY: PASS=18 FAIL=0 (total=18)\n========================================================================\n\nBounded synthesis (T6) \u2014 Staggered-Dirac Gate Closure Synthesis \u2014 verified.\n\nOn the repo baseline + 18 cited retained/support/admissible authorities + admissible standard math:\n  * substeps 1, 2, 3 chain as bounded forcing of kinetic-and-algebra surface\n  * substep 4 residual carried as named admitted-context (AC_phi, AC_phi_lambda)\n  * inherited S2 re-audit dependency carried forward\n\nSynthesis is bounded_theorem; parent realization gate remains open_gate at\nthe positive-theorem tier (species-label identification still admitted).\n\nNo PDG values, no MC measurements, no fitted coefficients, no new axioms.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231017Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

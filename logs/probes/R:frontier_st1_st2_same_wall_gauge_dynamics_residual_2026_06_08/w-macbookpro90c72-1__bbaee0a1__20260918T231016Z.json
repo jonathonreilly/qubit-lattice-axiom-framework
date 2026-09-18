@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_st1_st2_same_wall_gauge_dynamics_residual_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_st1_st2_same_wall_gauge_dynamics_residual_2026_06_08.py",
+ "seed": 73016,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bbaee0a1",
+ "started_utc": "20260918T231016Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "32960a4abd7978ea0141c59985f9ededad34752034d740244ee9ec20e2dd7e31",
+ "stdout_tail": "tice + Quantum + Record baseline does\n     not supply it) + R2 (mixing/ergodicity -> i.i.d.-central steps: OPEN) +\n     (H_cov-as-connection: currently conditional on ADM-1, PR #3332).\n   R1, R2 and ADM-1 collapse in this route map to ONE undelivered package: continuous-\n     time gauge-link / color-einselection dynamics (generator + rate + local transporter\n     reading + mixing regime).  => ST1 and ST2 sit at the SAME wall.\n   ST2 RELOCATED/RELABELED ADM-1's open input; it did NOT weaken it.\n   (corrected finding: ST1 == ST2 wall; ST2 NOT ahead; only the equivariance brick is free.)\n==============================================================================\nTOTAL: PASS=9 FAIL=0\n==============================================================================\nSCOPE: HONEST CAPSTONE of the ADM-1/ADM-2 investigation.  The ONE genuine brick: the\n  gauge force's color-equivariance is FREE (retained global SU(3) commutant).  It does\n  NOT discharge ADM-2' (equivariance is vacuous as dynamics -- holds even for F=0), is\n  NOT rankable vs ADM-1 (global != local, a category error), and the 'annealed' demo is\n  a Schur twirl, NOT the i.i.d.-central CLT premise (per-step non-central, increments\n  correlated).  CORRECTED FINDING: ST2's residual (R1 generator + R2 mixing) and ST1's\n  ADM-1 collapse in this route map to ONE undelivered continuous-time gauge-link/color-\n  einselection dynamics package -- ST1 and ST2 sit at the SAME wall here. No new axiom,\n  primitive, or import is added.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T231017Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_st1_st2_same_wall_gauge_dynamics_residual_2026_06_08.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -5,14 +5,22 @@ mutation censuses, refuter re-runs, searches for counterexamples, parameter scan
 implementations. The owner assigns workers (any model, any number); each worker runs tasks, checks its own log, and pushes it.
 Nothing here changes notes, runners or packs, and nothing here is a claim. Logs are evidence addresses for later blocks.
 
-## Kickoff (your prompt gave you only a worker number N, 1 to 40)
-Your worker name is `wN` (worker 7 is `w7`); pass your model in `--model`. Read sections 0 and 1, then do these steps in order, committing and pushing after each (section 0). The review sentence of a batch states your machine and Python version.
-1. Runner re-executions, your shard: `python3 probes/run_batch.py --type R --shard N/40 --worker wN --model <model> --review "..." --skip-done 7`
-2. Mutation censuses, your shard: the same command with `--type M`.
-3. Seeded refuter controls: `python3 probes/run_batch.py --type F --shard 1/1 --seed N --worker wN --model <model> --review "..."`
-4. Open PRs whose number leaves the same remainder as N when divided by 40: `python3 probes/run_pr_branch.py <pr> --worker wN --review "<what the output showed>"` (list them with `gh pr list --state open`).
-5. Searches, for as long as you run: `python3 probes/run_batch.py --type S --shard 1/1 --seed N --minutes 30 --worker wN --model <model> --review "..."`, then again with seeds N+40, N+80, and so on.
-Any `hit: true` or `CHECK FAIL` you cannot explain: stop that step, open the issue of section 1.6, continue with the next step. Judgment tasks (`J:`) are only for workers whose prompt says so.
+## Kickoff: you were pointed at this branch and told nothing else
+You need no number, no name and no task list, and you must not pick tasks by hand: work is checked out in units through an atomic claim on the remote (`probes/claim.py`), so any number of workers can run at once without doing the same thing twice. **Do not run `git checkout`, `git pull` or `git commit` in the directory you were started in** (other workers may share it); everything below happens in private directories the tools create for you.
+
+**A. Any thinking setting up to high: run the mechanical worker.** One line, from anywhere inside any checkout or clone of this repository:
+```
+git fetch origin ai/probes && B=$(mktemp -d ~/.probe-workers-boot.XXXXXX) && for f in claim work_loop; do git show FETCH_HEAD:probes/$f.py > $B/$f.py; done && (nohup python3 $B/work_loop.py --model <your-model-name> > $B/loop.log 2>&1 &) ; echo "log: $B/loop.log"
+```
+It takes a free slot on the machine, makes its own private worktree (`~/.probe-workers/<repo>/slot-<k>`, about half a gigabyte), and then repeats: claim a unit, run it through `run_probe.py` (every log self-checked), commit the logs, push every ten minutes, release the claims. Units in priority order: re-execution of every open PR's runners, runner re-executions against the pinned caches, mutation censuses, seeded refuter controls, counterexample searches (thousands of half-hour units: it will not run out). Leave it running. Look at the log every 10 to 15 minutes. A line starting `ATTENTION` names a log with a HIT or a failed self-check: read that log and the `.txt` beside it (inside the slot worktree), decide whether it is the machine (a missing package, a timeout) or the science, and for the science open the issue of section 1.6. Fix nothing. The loop commits failing logs on purpose: that is how a failing runner becomes visible, and it gets exactly one second opinion from another worker.
+
+**B. Maximum (extended) thinking: work judgment units instead.**
+```
+git fetch origin ai/probes && B=$(mktemp -d ~/.probe-workers-boot.XXXXXX) && git show FETCH_HEAD:probes/claim.py > $B/claim.py && python3 $B/claim.py next --kind J
+```
+This claims one judgment unit (a falsifier implementation or a provenance audit for one open PR), creates a private worktree for it and prints `UNIT`, `TASK`, `WORKER`, `WORKTREE` and the task. `cd` to that worktree and do everything there, following sections 0, 1 and 4; when the log says `CHECK PASS`, commit `logs/probes` and `probes/work` and run `python3 probes/claim.py finish <unit>` (it pushes, releases the claim and removes the worktree). Then claim the next one. If you cannot finish, `python3 probes/claim.py release <unit>`. If you do not know your thinking setting, do A.
+
+**Owner's view:** `python3 probes/claim.py status` in an up-to-date `ai/probes` checkout prints units by kind (total, done, claimed, free) and every live claim with its holder and age. A claim expires after 8 hours, so a dead worker blocks nothing for long. Hand-running `P:`, `R:`, `M:`, `F:`, `S:` or per-PR `J:` tasks outside the claim tools is what causes duplicate work: do not. Scans (`X:`) and the generic `J:` tasks are still run by hand (sections 1 and 4); duplicates there are harmless.
 
 ## 0. Where your work lands (read this twice)
 - **Branch:** `ai/probes` only. It is cut from `main` and never merged into `main`. Never push to any other branch.
@@ -58,7 +66,7 @@ Create `probes/work/<stub>/<script>.py`; it must print a final line starting wit
 ## 6. Extending the catalog
 Add a task to `probes/tasks/<file>.json` (id, type, lane, tier, command with `{SEED} {SECONDS} {A} {B} {L} {EXTRA}` placeholders, `hit_pattern`, `parse`, `what`), then `python3 probes/generate_tasks.py`. Controls of a lane that live on a PR branch: `git show origin/<branch>:<path> > probes/lib/<name>.py`, make it self-contained, and reference it. Counts at the last generation are printed by the generator.
 
-## 7. Batch mode (tier 0 at volume)
+## 7. Batch mode (a manual tool; the work loop of the Kickoff section replaces it for normal operation)
 One command runs a shard of the mechanical tasks and writes one checked log per task:
 `python3 probes/run_batch.py --type R --shard 3/40 --worker <name> --review "<sentence about the shard: machine, python version>" --skip-done 7`.
 Shard `k/n` takes every n-th task of that type; `--skip-done D` skips tasks with a passing, hit-free log younger than D days by any worker, so many workers can share the 3177 re-executions without coordination (pick distinct shards, or the same shard on a different day). The last line is `BATCH: ran= pass= fail= hits= skipped=`; commit `logs/probes` when it finishes. `--type M` runs the mutation censuses the same way; `--type F --seed <s>` the seeded refuter controls.

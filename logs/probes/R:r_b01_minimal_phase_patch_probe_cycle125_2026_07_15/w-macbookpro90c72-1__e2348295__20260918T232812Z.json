@@ -20,13 +20,20 @@
  "stdout_tail": ", 0), 'H0'), ((0, 0, -1), 'H0'))->frozenset({'H1'})\nPASS A06 R_C01 phase label removes the old R_B00 completion collision\n\n===============================================================================\nB - Full-table and subset failure\n===============================================================================\nPASS B01 thirteen explicit rows quotient to twelve canonical / 159 raw :: canonical=12 raw=159\nPASS B02 8,903-row union is single-valued\nPASS B03 translated tail creates the empty local rule -> R_B41 :: frozenset({'R_B41'})\nPASS B04 candidate also contributes thirty unary raw signatures :: [((((1, 0, 0), 'R_B01'),), frozenset({'H1'}))]\nPASS B05 full subset compilation exposes 130 unexpected targets :: [(-2, 5, 3)]\nPASS B06 asynchronous graph is bad at source before any candidate write :: ((0, (5, 4, 2), frozenset({'R_B41'})),)\nPASS B07 intended R_B01 completion is unreachable\n\n===============================================================================\nC - Scope and no-go-discipline boundary\n===============================================================================\nFAIL C01 note names exact bounded negative\nFAIL C02 note names exact next repair target\nFAIL C03 note carries refreshed N1-N8 discipline\nFAIL C04 note denies broad writer or recurrence no-go\nFAIL C05 note makes no axiom addition\nPASS C06 Cycle 125 writes only runner and review note\n\nCANDIDATE_CANONICAL=12 CANDIDATE_RAW=159 UNION_RAW=8903\nUNEXPECTED=130 STATES=1 EDGES=0\nPASS=13 FAIL=6\nRESULT=FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T232910Z",
+  "at_utc": "20260918T234201Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e2348295 differs from the current HEAD 4de85861 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL A01 Cycle 125 note exists' (PASS=13 FAIL=6); repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234201Z"
  }
 }

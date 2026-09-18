@@ -20,13 +20,20 @@
  "stdout_tail": "OPEN\nPASS B b target input contains its COMMIT\n\n===============================================================================\nC - Exhaustive asynchronous graph\n===============================================================================\nPASS C graph has exact reachable-state census :: 71425\nPASS C graph has exact directed-edge census :: 405708\nPASS C every schedule joins one complete terminal :: Counter({52: 1})\nPASS C graph has no parasite write :: []\nPASS C graph has no output conflict\nPASS C q VALUE never precedes OPEN or COMMIT\nPASS C a VALUE never precedes OPEN or COMMIT\nPASS C b VALUE never precedes OPEN or COMMIT\n\n===============================================================================\nD - Quiescence, recurrence, and the state-zero blocker\n===============================================================================\nPASS D conditional terminal is quiescent under its own table\nPASS D no reservation-rule recurrence through 108 more rail writes\nPASS D state-zero installation has the exact two known support leaks :: [((1, 0, 2), 'START'), ((1, 2, 0), 'START')]\nPASS D conditional table is therefore not a live state-zero closure\n\n===============================================================================\nTOTAL\n===============================================================================\nPASS=35 FAIL=1\nRESULT: FAIL\nBOUNDARY: q/a/b OPEN--COMMIT--VALUE is schedule-safe only after Cycle57 plus eight rail slices; a state-zero completion gate and c remain open\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T231624Z",
+  "at_utc": "20260918T234202Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6e4c7db4 differs from the current HEAD 4de85861 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL A note exists' (PASS=35 FAIL=1); repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234202Z"
  }
 }

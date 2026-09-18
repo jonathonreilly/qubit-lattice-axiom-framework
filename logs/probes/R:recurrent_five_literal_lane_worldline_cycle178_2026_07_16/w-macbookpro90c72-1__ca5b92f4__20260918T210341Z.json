@@ -20,13 +20,20 @@
  "stdout_tail": "ilures': (), 'generation_depths': (0, 19, 71, 123, 175), 'depth_increments': (19, 52, 52, 52), 'displacement': (4, 4, 4, 4), 'startup_ratio': Fraction(4, 19), 'steady_ratios': (Fraction(1, 13), Fraction(1, 13), Fraction(1, 13))}}\n\nFIVE-LANE ALL-32 BUNDLE\nPASS all 32 five-bit words close on five independent recurrent lanes :: (Counter({(1521, 3455, 18, 16, 0, 10): 32}), ())\nPASS the encoded word has five disjoint payload lineages and five endpoints :: ((), ((-26, 3, -1), (-26, 203, -1), (-26, 403, -1), (-26, 603, -1), (-26, 803, -1)), ())\nPASS the literal word is conserved without any 32-valued payload record :: set()\n\nDECODER-FACING PORT CONTRACT\nPASS the five seed and endpoint sites are disjoint and ordered :: (((-8, 3, -1), (-8, 203, -1), (-8, 403, -1), (-8, 603, -1), (-8, 803, -1)), ((-24, 3, -1), (-24, 203, -1), (-24, 403, -1), (-24, 603, -1), (-24, 803, -1)), ((-26, 3, -1), (-26, 203, -1), (-26, 403, -1), (-26, 603, -1), (-26, 803, -1)))\n\nSCOPE\nFAIL review note states the five-rail cost and physical scope :: \n\nACCOUNTING\nBIT_ROLES ('H0', 'H1')\nLANE_SPACING 200\nSEED_SITES ((-8, 3, -1), (-8, 203, -1), (-8, 403, -1), (-8, 603, -1), (-8, 803, -1))\nG4_SITES ((-24, 3, -1), (-24, 203, -1), (-24, 403, -1), (-24, 603, -1), (-24, 803, -1))\nENDPOINT_SITES ((-26, 3, -1), (-26, 203, -1), (-26, 403, -1), (-26, 603, -1), (-26, 803, -1))\nPROPAGATION_DIRECTION (-1, 0, 0)\nBIT_CARRIER 12 288 101996\nBUNDLE_SHAPES Counter({(1521, 3455, 18, 16, 0, 10): 32})\nPASS 8 FAIL 2\nRESULT CYCLE178_OPEN\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T210511Z",
+  "at_utc": "20260918T212442Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ca5b92f4 differs from the current HEAD f71e9d96 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL Cycle-178 review note exists ::'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T212442Z"
  }
 }

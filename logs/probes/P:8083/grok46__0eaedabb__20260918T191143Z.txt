@@ -1,0 +1,4 @@
+PR #8083: [physics-loop] Quartic Ward error bounds (conditional-support)
+branch codex/native-quartic-ward-20260910 (base codex/native-gaussian-moment-jet-20260910)
+runners in the PR: 1
+== scripts/native_quartic_ward_2026_09_10.py: rc=0 TOTAL: PASS=444 FAIL=0

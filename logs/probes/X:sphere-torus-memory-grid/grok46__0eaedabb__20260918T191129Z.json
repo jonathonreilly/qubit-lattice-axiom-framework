@@ -1,0 +1,40 @@
+{
+ "task": "X:sphere-torus-memory-grid",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/sphere_torus_msd.py 12 16 8000 4",
+ "seed": 58689,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0eaedabb",
+ "started_utc": "20260918T191129Z",
+ "elapsed_s": 4.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "ratios": [
+   "1.125",
+   "1.147",
+   "1.149",
+   "1.098",
+   "1.098",
+   "1.012"
+  ],
+  "mabs": "0.9248"
+ },
+ "review": "beta=12 L=16 T=8000 seeds=4: D1 ratios ~1.10-1.01 vs linearized; |m|=0.925. Scan table, not a HIT",
+ "what": "the (beta, L) grid for the 1/|m|^2 law of block 34: one point per run, --extra 'beta L T seeds' with T >= 3 * 3 beta L^2 / A(3 beta) (A(k) = coth k - 1/k) and seeds >= 8; grid beta in {3, 4, 6, 8, 12, 16, 24, 48}, L in {16, 24, 32, 48, 64}. The log's ratios and |m| fill the table D_1/(sigma^2/L^2) vs 1/|m|^2; a systematic deviation from 1/|m|^2 beyond 10 % at any point is worth an issue.",
+ "stdout_sha256": "7cf462c25713139aceaf58a6295e209ee24f26fdde9ca42f8b77b4b99addd8c1",
+ "stdout_tail": "beta=12.0 L=16 T=8000 seeds=4 (4s): sigma^2/L^2 = 1.0549e-04; memory time 9479; mean |m| in the stationary regime 0.9248\n  lag    25: nonlinear MSD 5.9327e-03 -> D_1 = 1.1865e-04 (ratio to sigma^2/L^2: 1.125 +- 0.030); linear model MSD 5.4785e-03 (ratio 1.039 +- 0.014)\n  lag    50: nonlinear MSD 1.2099e-02 -> D_1 = 1.2099e-04 (ratio to sigma^2/L^2: 1.147 +- 0.027); linear model MSD 1.0731e-02 (ratio 1.017 +- 0.020)\n  lag   100: nonlinear MSD 2.4240e-02 -> D_1 = 1.2120e-04 (ratio to sigma^2/L^2: 1.149 +- 0.040); linear model MSD 2.1721e-02 (ratio 1.030 +- 0.020)\n  lag   200: nonlinear MSD 4.6335e-02 -> D_1 = 1.1584e-04 (ratio to sigma^2/L^2: 1.098 +- 0.031); linear model MSD 4.2173e-02 (ratio 0.999 +- 0.042)\n  lag   400: nonlinear MSD 9.2665e-02 -> D_1 = 1.1583e-04 (ratio to sigma^2/L^2: 1.098 +- 0.035); linear model MSD 8.2768e-02 (ratio 0.981 +- 0.091)\n  lag  1000: nonlinear MSD 2.1354e-01 -> D_1 = 1.0677e-04 (ratio to sigma^2/L^2: 1.012 +- 0.041); linear model MSD 1.7155e-01 (ratio 0.813 +- 0.163)\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191213Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

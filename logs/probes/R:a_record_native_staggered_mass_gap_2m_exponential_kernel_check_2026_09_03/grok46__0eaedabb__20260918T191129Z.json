@@ -1,0 +1,35 @@
+{
+ "task": "R:a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "a",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 scripts/a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03.py",
+ "seed": 58689,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0eaedabb",
+ "started_utc": "20260918T191129Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "TOTAL: PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "Apple Silicon Python 3.13.5, R shard 9/40 vs runner-cache [batch 9/40]",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "39d30fdcebc35a2002385e4a15e5a3f4537907c78bdd6d2c693a240595110c03",
+ "stdout_tail": "2.00  -1.498100480  -1.568652661  -0.070552181  -0.375000000\n     8.00  -4.177961582  -4.182659218  -0.004697636  -0.005859375\n    50.00  -25.029955185  -25.029979032  -0.000023847  -0.000024000\nPASS G3 [numerical] KS lower than plain at m={0,.5,1,2,8,50} on200^3; -3/m^3 only a comparison\nPASS G4 [numerical moments, tolerance as stated] both sectors share <E_0^2> = 6.000000/6.000000, the coordination 6, and differ at the fourth, 42.0000 vs 90.0000\nPASS H1 [exact/1e-11] 8^3, m = 0.25, 0.5, 1: eps(M+mEps)eps = -(M-mEps) (0.0e+00), so P -> eps(I-P)eps maps the mass-m sea onto the mass-(-m) sea (1.4e-15), spectra equal, <n_v>(-m) = 1-<n_v>(m), C(-m) = -C(m) (1.4e-14)\nPASS C5 [balanced SVD control] full signed spectrum at m=-.7,0,.7; eps H(m) eps=-H(-m), not -H(m); an unbalanced three-site graph need not have equal sign multiplicities\nPASS D6 [finite band control] noncommuting flavor artifacts mix the chosen basis while the full massive cell bands remain fourfold (spin2 x flavor2), not four tastes\nPASS G5 [moment inference counterexample] equal mean, smaller second moment does not order E sqrt(X+m^2): m=1/4, XA={0,2}, XB={1/2,5}\nPASS H2 [fixed-label control] equal mass-sign spectra but site occupancies differ by 0.274774; equivalence needs a simultaneous observable/state relabeling\nSUMMARY: supplied diagonal parity model; balanced node gap2|m|, two flavors with fourfold bands, finite kernel fits and KS/plain comparisons; physical Record/time bridge unproved.\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191132Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "P:8083",
+ "type": "pr-reexecution",
+ "lane": "native-quartic-ward-20260910",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/run_pr_branch.py 8083",
+ "pr": 8083,
+ "branch": "codex/native-quartic-ward-20260910",
+ "git_sha": "0eaedabb",
+ "started_utc": "20260918T191143Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/native_quartic_ward_2026_09_10.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=444 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 8083 isolated worktree: == scripts/native_quartic_ward_2026_09_10.py: rc=0 TOTAL: PASS=444 FAIL=0, not a HIT",
+ "stdout_sha256": "8f893ca1af00435d7402e5c2b4e69b047a5971ffef935a5ecc299277ca2121f2",
+ "stdout_tail": "PR #8083: [physics-loop] Quartic Ward error bounds (conditional-support)\nbranch codex/native-quartic-ward-20260910 (base codex/native-gaussian-moment-jet-20260910)\nrunners in the PR: 1\n== scripts/native_quartic_ward_2026_09_10.py: rc=0 TOTAL: PASS=444 FAIL=0",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191213Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

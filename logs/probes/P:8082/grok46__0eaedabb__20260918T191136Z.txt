@@ -1,0 +1,4 @@
+PR #8082: [physics-loop] Gaussian local moment jets (conditional-support)
+branch codex/native-gaussian-moment-jet-20260910 (base codex/native-correlated-ward-20260910)
+runners in the PR: 1
+== scripts/native_gaussian_moment_jet_2026_09_10.py: rc=0 TOTAL: PASS=325 FAIL=0

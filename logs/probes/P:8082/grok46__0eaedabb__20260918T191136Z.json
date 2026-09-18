@@ -1,0 +1,36 @@
+{
+ "task": "P:8082",
+ "type": "pr-reexecution",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/run_pr_branch.py 8082",
+ "pr": 8082,
+ "branch": "codex/native-gaussian-moment-jet-20260910",
+ "git_sha": "0eaedabb",
+ "started_utc": "20260918T191136Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/native_gaussian_moment_jet_2026_09_10.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=325 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 8082 isolated worktree: == scripts/native_gaussian_moment_jet_2026_09_10.py: rc=0 TOTAL: PASS=325 FAIL=0, not a HIT",
+ "stdout_sha256": "abf2b04c67e21baaac92124815d2fd04b4b8a8a72e4ccb6e76923ff4b87382ce",
+ "stdout_tail": "PR #8082: [physics-loop] Gaussian local moment jets (conditional-support)\nbranch codex/native-gaussian-moment-jet-20260910 (base codex/native-correlated-ward-20260910)\nrunners in the PR: 1\n== scripts/native_gaussian_moment_jet_2026_09_10.py: rc=0 TOTAL: PASS=325 FAIL=0",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T191213Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8171",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block27-unsold",
+ "worker": "w-jonathonsmac4f50-j4e2a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/pr8171/t1c_series_step_literal.py",
+ "seed": 73421,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8be5c64b",
+ "started_utc": "20260918T231701Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (g) PROOF STEP BY BRUTE FORCE on T1(c) - the three displayed power series and the difference formula hold coefficient by coefficient to k^80 from the exponential series, the listed coefficients are 0, 0, 2/45, 2/315, every coefficient is >= 0, each link of the chain holds at 402 points to 50 digits, 1 - 3A/k - A^2 <= 0 and A/k decreases and stays <= 1/3 on (0, 60], and the consequence TV/|dV| peaks at 0.2500 (<= 1/(2 sqrt3) = 0.2887); 0 failures; the step holds as written"
+ },
+ "review": "Pattern (g) on T1(c), verified literally: the Taylor coefficients of 2 sinh^2 k, (k/2) sinh 2k and their difference built exactly from the exponential series match the displayed series and the formula sum_(m>=2) (2^(2m)/(2m)!)(m/2 - 1) k^(2m) to k^80, the listed coefficients are exactly 0, 0, 2/45, 2/315 and all are >= 0, every link of the chain (the identity 1 - 3A/k - A^2 = (kA' - A)/k and both multiplied forms) holds at 402 points of (0, 60] to 50 digits with 1 - 3A/k - A^2 <= 0 and A/k decreasing and <= 1/3, and the consequence TV/|dV| peaks at 0.2500 at V = 0 by quadrature against the bound 0.2887; the step holds as written.",
+ "what": "PR #8171 ([physics-loop] admissibility-induced-law block27 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916; git show origin/physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916:<note>. Create probes/work/pr8171/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8171/<script>.py\"",
+ "stdout_sha256": "072c0f6f062e36db36723ad2aff79d602f1f95fb5011fe754960efdc785ff360",
+ "stdout_tail": "series] exact coefficients from e^(+-2k) to k^80: 2 sinh^2 k = sum (2k)^(2m)/(2m)!, (k/2) sinh 2k = sum (2k)^(2m)(m/2)/(2m)!, difference = sum_(m>=2) (2^(2m)/(2m)!)(m/2 - 1) k^(2m): True; odd coefficients vanish: True; coefficients of k^2, k^4, k^6, k^8 = ['0', '0', '2/45', '2/315'] (listed 0, 0, 2/45, 2/315: True); every coefficient >= 0: True\n[chain] at 402 points of (0, 60], 50 digits: max |(1 - 3A/k - A^2) - (kA' - A)/k| = 3.57e-46; k sinh^2 k * kA' vs sinh^2 k - k^2: 4.19e-51 (relative); k sinh^2 k * A vs k sinh k cosh k - sinh^2 k: 6.81e-51 (relative); truncated series (k < 8) vs closed form: 1.16e-30 relative; max of 1 - 3A/k - A^2: -4.4444e-8 (must be <= 0); A/k decreasing on the grid: True; A/k <= 1/3: True\n[consequence] TV(K_V, K_V+h d)/h by quadrature (400 x 800 nodes) at kappa = 0 ... 20, three directions, h = 1e-3, 0.05: max 0.250001 at (kappa, d, h) = (0.0, (np.float64(0.0), np.float64(0.0), np.float64(1.0)), 0.001); the bound 1/(2 sqrt3) = 0.288675; the Reading's 1/4 at V = 0\nSUMMARY: pattern (g) PROOF STEP BY BRUTE FORCE on T1(c) - the three displayed power series and the difference formula hold coefficient by coefficient to k^80 from the exponential series, the listed coefficients are 0, 0, 2/45, 2/315, every coefficient is >= 0, each link of the chain holds at 402 points to 50 digits, 1 - 3A/k - A^2 <= 0 and A/k decreases and stays <= 1/3 on (0, 60], and the consequence TV/|dV| peaks at 0.2500 (<= 1/(2 sqrt3) = 0.2887); 0 failures; the step holds as written\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4e2a",
+  "at_utc": "20260918T231702Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -20,13 +20,20 @@
  "stdout_tail": " :: \nPASS 480 five-parent rows compile all state/gate contexts :: Counter({5: 480})\nPASS transition grammar has 11,520 covariant raw rows :: \nPASS transition rows are disjoint from the Cycle-145 merged law :: (12860, 11520, 24380)\nPASS every transition output equals the Cycle-48 matrix image :: \n\nRECURRENT TWO-OPERATION MACHINE\nPASS all 3,840 two-operation transcripts reach the exact terminal :: (11040, 7200, {39}, [])\nPASS reject is terminal while every valid output is reusable :: \n\nPREPARATION-TO-DYNAMICS BIND\nPASS port decoder retains 126 five-parent rows :: Counter({5: 126})\nPASS bound+decoder+transition union is 24,380-row single-valued :: \nPASS Cycle-144 terminal gains no decoder/transition front :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\nPASS all 12,288 rotated preparation/operation histories are exact :: (97536, 85248, {69}, [])\nPASS valid preparation writes the exact next state and invalid preparation never transitions :: \nPASS deleting any direct transition parent suppresses that transition output :: (2400, ())\n\nSCOPE\nFAIL note contains: preparation-to-clifford record machine :: \nFAIL note contains: operation bits remain supplied event records :: \nFAIL note contains: does not derive born probabilities :: \nFAIL note contains: engineered finite transition table :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 16 FAIL 8\nRESULT FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T222817Z",
+  "at_utc": "20260918T225053Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 390b7301 differs from the current HEAD 02043145 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL review note exists ::'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225053Z"
  }
 }

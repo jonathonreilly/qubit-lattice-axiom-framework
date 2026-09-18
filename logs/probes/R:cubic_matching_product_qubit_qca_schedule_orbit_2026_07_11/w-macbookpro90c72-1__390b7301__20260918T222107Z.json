@@ -23,14 +23,21 @@
  "stdout_tail": "jugacy orbit of all eight products\nPASS I09: every iSWAP macro-tick moves a computational-basis local Z support by exact graph distance six\nPASS I10: reversing all six layers with the same iSWAP gate gives the exact inverse because the six global parity factors cancel\nPASS I11: reversing the schedule with gatewise iSWAP-dagger is the general adjoint construction and also gives the inverse\nPASS I12: L=4 collapses all eight orientations and is an explicit finite-size artifact\nPASS Z01: all 720 CZ schedules are the same exact qubit unitary\nPASS Z02: omitting one CZ layer fails the all-edge product mutation control\nPASS Z03: the all-edge CZ circuit is invariant under unit translations\nPASS Z04: the all-edge CZ circuit is invariant under all 24 proper cubic rotations\nPASS Z05: CZ conjugates a local X only onto its radius-one neighbor star\nFAIL N01: source note exists\nFAIL N02: source contains boundary marker: genuine one-qubit-site circuit\nFAIL N03: source contains boundary marker: does not select iSWAP or CZ\nFAIL N04: source contains boundary marker: does not classify arbitrary qubit QCAs\nFAIL N05: source contains boundary marker: does not establish that an axiom update is necessary\nBOUNDARY: the six-layer macro-tick, gate choice, even periodic torus, supplied quasi-local extension, and schedule semantics are conditional inputs.\nBOUNDARY: CZ closes schedule dependence conditionally; iSWAP leaves eight symmetry-related ticks and no one-site-invariant member.\nTOTAL: PASS=21 FAIL=5\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260918T222108Z",
+  "at_utc": "20260918T225053Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 390b7301 differs from the current HEAD 02043145 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=21 FAIL=5' vs cache 'TOTAL: PASS=26 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL N01: source note exists' (TOTAL: PASS=21 FAIL=5); repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T225053Z"
  }
 }

@@ -20,13 +20,20 @@
  "stdout_tail": "E_REL_TOL': 1e-09, 'stages_passing_only_relatively': {'L3': [], 'L6': ['K', 'eps'], 'L7': []}, 'per_size_seconds': {'L3': 1.01, 'L6': 1.5, 'L7': 3.57}}\nSUMMARY_JSON {\"Q_dims\": {\"L3\": 98, \"L6\": 1115, \"L7\": 1854}, \"achievable_covariance_scope\": {\"L3\": 6, \"L6\": 6, \"L7\": 6}, \"audit\": \"unset\", \"authority\": \"none\", \"coframe_pd_min\": {\"L3\": -0.07267785900170046, \"L6\": -317.6051887324568, \"L7\": -0.5882227237266037}, \"complex_stabilizer_order\": 3, \"conditional_rows_not_counted\": 7, \"cycle_claim\": null, \"failures\": 15, \"kuhn_cube_stabilizer_order\": 6, \"landed_ceiling_max_order\": 12, \"null_dims\": {\"L3\": 0, \"L6\": 0, \"L7\": 0}, \"p_certified_drive\": {\"L3\": 0.007213349987101292, \"L6\": 0.0, \"L7\": 0.15012829569994057}, \"passes\": 26, \"periodic_anchor_defect\": {\"L3\": 7.000456303529745e-07, \"L6\": 7.000456339056882e-07, \"L7\": 7.000456943018207e-07}, \"probe_boundary_gap\": {\"L3\": 0.02189170896974546, \"L6\": 0.02141360667829878, \"L7\": 0.02062162261398498}, \"products_executed_past_c1\": {\"L3\": 36, \"L6\": 36, \"L7\": 36}, \"resources\": {\"elapsed_seconds\": 6.332486541941762, \"peak_rss_mb\": 764.609375}, \"response_amplitude\": 1.0, \"sites_certified\": {\"L3\": 8, \"L6\": 0, \"L7\": 103}, \"sites_not_pd\": {\"L3\": 6, \"L6\": 196, \"L7\": 66}, \"sizes_run\": [3, 6, 7], \"thinned_run\": false}\nGATE_TALLY passes=26 failures=15 conditional_not_counted=7\nRESULT OPEN_COFRAME_K_ENDPOINT_JOINED_COMPILER_CONDITIONAL_ON_CLIP_7_ROWS_TOURNAMENT_FAILED outputs/physical_open_coframe_k_endpoint_joined_compiler_tournament_receipt_2026_07_23.json\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260918T222920Z",
+  "at_utc": "20260918T225323Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 2875d031 differs from the current HEAD a60d50e2 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: beyond the 12 failing rows recorded in the committed receipt (29/41, the tournament's own outcome, all reproduced), the pin check fails because the Cycle-690 ceiling runner was changed by bb3a2acdec on 2026-07-27 (22 added compute-scope print lines, no computation change; sha256 9abedad0 pinned -> 4f5cca00 now), and the pin, paired-note and (7a) rows also fail because the paired note and the Cycle-690 note were moved to archive/notes/ (#8198).",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260918T225323Z"
  }
 }

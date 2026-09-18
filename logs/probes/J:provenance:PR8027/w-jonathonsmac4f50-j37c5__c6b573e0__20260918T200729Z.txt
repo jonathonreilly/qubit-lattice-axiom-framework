@@ -1,0 +1,38 @@
+PR #8027 head ca0eebe4df; cache 9 stdout lines; statement sections: claim_scope, EVIDENCE, Covariant carrier and free minimum, Exact first-order plaquette matrix, Planar displacement: exact flip spectrum, Scope and unresolved extension
+[EXCLUDED] links | EVIDENCE | link targets (file names carrying dates)
+[EXCLUDED] stamp | EVIDENCE | a time stamp of the derivation record
+[EXCLUDED] cite | EVIDENCE | prior-art citation
+[CACHE-JSON] ev34 | EVIDENCE | evidence: 34 checks | runner stdout: PASS TOTAL=34 unique named checks
+[CACHE-JSON] ev37 | EVIDENCE | evidence: 37 checks (helper) | cube helper stdout (its own cache): PASS TOTAL=37 unique named checks
+[CACHE-JSON] evres | EVIDENCE | evidence: one resource control each | both caches print 'lattice_wide: PASS 1 resource guard'
+[EXCLUDED] zero-rest | EVIDENCE | declared probes (zero rest/kinetic energy is part of the supplied source model)
+[DERIVED] casimir | Covariant carrier and free minimum | the link energy | E(p, q) = p^2 + pq + q^2 + 3p + 3q over all labels p, q <= 40 other than (0, 0): minimum 4, attained exactly at (1, 0) and (0, 1); integer valued (the runner asserts E(1,0) = E(0,1) = 4 and the positive increments)
+[DERIVED] triality | Covariant carrier and free minimum | triality | triality (p - q) mod 3 is +1 for the fundamental (1, 0) and -1 = 2 mod 3 for the antifundamental (0, 1)
+[DERIVED] K4L | Covariant carrier and free minimum | K >= 4L/a | a component joining x and y has at least L occupied links, each with E >= 4: K >= 4L/a, equality iff exactly L links all at 4/a
+[EXCLUDED] words1 | Covariant carrier and free minimum,Exact first-order plaquette matrix,Planar displacement: exact flip spectrum | wording (number words; the proofs' counting is sourced by the enumeration items)
+[DERIVED] norm1 | Covariant carrier and free minimum,Exact first-order plaquette matrix | norm 1 | Tr(U_P^dagger U_P)/3 = Tr(I_3)/3 = 1 for unitary U_P (the carrier's normalized inner product)
+[DERIVED] multinomial | Covariant carrier and free minimum | path count | the shortest paths are the words with letter counts (n1, n2, n3): enumerated count = L!/(n1! n2! n3!) for all n_i <= 3
+[CACHE-JSON] multinomial-x | Covariant carrier and free minimum | path counts (executed) | runner DATA: path counts C(L, R) for (R, S) = (1,1): 2, (1,2): 3, (2,2): 6, (1,3): 4, (2,3): 10; helper DATA geodesics [1, 1, 0]: 2, [2, 1, 0]: 3, [2, 2, 0]: 6, [2, 1, 1]: 12 = L!/(n1!n2!n3!)
+[DERIVED] gap | Covariant carrier and free minimum | the isolation gap | all label energies are integers (in units 1/a), so the ground level 4L/a is separated from the next level by at least 1/a
+[DERIVED] center | Covariant carrier and free minimum | orthogonality | w = e^{2 pi i/3} I is central in SU(3) (det = w^3 = 1) and the Haar measure is invariant under U -> wU, so int U_ab = w int U_ab forces int U_ab = 0 (w != 1): a nontrivial fundamental matrix integrates to zero
+[DERIVED] haar0 | Exact first-order plaquette matrix | Haar integrals (Weyl formula) | Weyl integration over SU(3): int 1 = 1.000000000000000, int |chi|^2 = 1.000000000000000, int chi^2 = 1.6e-16, int chi = 2.5e-16 (so <P|J_f|P> = int Re chi/3 = 0 and the flip element keeps one conjugate term)
+[RUNNER] haar-r | Exact first-order plaquette matrix | the runner's Haar checks | present and checked in the runner source (not printed)
+[CACHE-JSON] coeff | Exact first-order plaquette matrix | the flip element 1/18 (printed) | runner DATA plaquette_flip_coefficient = 1/18
+[DERIVED] coeff-d | Exact first-order plaquette matrix | no factor 2 | int [conj(chi)/3][chi + conj(chi)]/6 = (1/18)(int|chi|^2 + int conj(chi)^2) = (1/18)(1 + 0) = 1/18: one conjugate term, no factor 2
+[RUNNER] trace13 | Exact first-order plaquette matrix | the source normalization (asserted: 1/6 != 1/18) | present and checked in the runner source (not printed)
+[DERIVED] coeffs | Exact first-order plaquette matrix | flip geometry (enumerated) | all ordered geodesic pairs in the boxes (1,1,0), (2,1,0), (2,2,0), (2,1,1), (2,2,1) (enumerated here): coefficients of P - Q in {-1, 0, 1}; a face survives mod 3 only when P - Q = -+ boundary f exactly, i.e. exactly for the 144 adjacent swaps of unequal letters, one face each
+[DERIVED] mod3 | Exact first-order plaquette matrix | mod 3 | |c| <= 2 and c = 0 mod 3 force c = 0
+[EXCLUDED] u0 | Exact first-order plaquette matrix | condition: the expansion point u = v = 0
+[DERIVED] PT | Exact first-order plaquette matrix | first order | degenerate first-order theory: the lowest eigenvalue of P_geo(F - S)P_geo = F - A/18 is F - rho/18 (checked on the (2,2) adjacency: F - sqrt5/18); subtracting the vacuum's uF and dividing by a with u = av gives 4L/a - v rho/18 (sympy)
+[DERIVED] rho0 | Exact first-order plaquette matrix | unique geodesic | a unique geodesic gives the 1 x 1 zero adjacency: rho = 0
+[DEFINITION] planar | Planar displacement: exact flip spectrum | the planar case and the hopping matrix | inline in the statement
+[EXCLUDED] dir2 | Planar displacement: exact flip spectrum | notation: the direction label 2
+[CACHE-JSON] amp1 | Planar displacement: exact flip spectrum | amplitude 1 (printed adjacencies) | runner DATA: every adjacency entry is 0 or 1 (the flip moves a particle with amplitude 1)
+[DERIVED] modes | Planar displacement: exact flip spectrum | the planar spectrum (enumerated) | for all planar (r, s) with L = r + s <= 8 (44 cases, enumerated here): the sine modes are normalized eigenvectors with 2cos(pi k/(L+1)); the flip adjacency's whole spectrum is the sums of s distinct lambda_k; its top is 2 sum_(k<=s) cos(pi k/(L+1)), symmetric in r <-> s and 0 when r = 0 or s = 0
+[CACHE-JSON] examples | Planar displacement: exact flip spectrum | the examples (printed spectra) | runner DATA fermion eigenvalues: top = 2 sum_(k<=s) cos(pi k/(L+1)) in all 5 rows; rho_(1,1) = 1, rho_(1,2) = sqrt2 (= rho_(2,1)), rho_(2,2) = sqrt5 printed
+[DERIVED] derivs | Planar displacement: exact flip spectrum | the derivatives | rho_(1,1) = 2cos(pi/3) = 1, rho_(2,1) = 2cos(pi/4) = sqrt2, rho_(2,2) = 2(cos(pi/5) + cos(2pi/5)) = sqrt5; derivatives -rho/18
+[EXCLUDED] eta | Planar displacement: exact flip spectrum | condition: eta in [0, 1]
+[DERIVED] riemann | Planar displacement: exact flip spectrum | the asymptotic | rho/L = (2/L) sum_(k <= eta L) cos(pi k/(L+1)) -> 2 int_0^eta cos(pi x) dx = (2/pi) sin(pi eta) (sympy; L = 2e5 within 1e-4)
+[DERIVED] naive | Planar displacement: exact flip spectrum | the naive claim | for r, s > 0 the top rho_(r,s) > 0 (checked r, s < 8), so the first-order shift -v rho/18 is nonzero: 4L/a is not kept
+[COVERAGE] 92 numeric tokens in the statement text; uncovered 0
+SUMMARY: 35 items over claim_scope + 4 body sections + the evidence paragraphs (92 numeric tokens, 0 uncovered): cache-sourced 7 (printed lines and the printed DATA of the runner and the cube helper), runner-asserted (not printed) 2, derived here from the note's steps 17, definitions 1, excluded 8; unsourced 0 (none)

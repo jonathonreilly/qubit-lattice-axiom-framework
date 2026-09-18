@@ -37,12 +37,14 @@ def main():
         hit = False; results = []
         for r in runners:
             rc1, o1 = sh(f"python3 {r}", cwd=wt, timeout=1800)
-            total = re.findall(r"TOTAL: PASS=\d+ FAIL=\d+", o1)
-            tline = total[-1] if total else "no TOTAL line"
+            total = re.findall(r"PASS\s*=\s*\d+[^\n]{0,40}FAIL\s*=\s*\d+", o1)
+            tline = total[-1] if total else "no PASS/FAIL count line (verdict by exit code)"
+            failing_count = bool(total) and not re.search(r"FAIL\s*=\s*0\b", tline)
+            failing_line = bool(re.search(r"(?m)^\\s*(?:\\[FAIL\\]|FAIL\\b(?!\\s*[=:]\\s*0\\b)(?!ED\\s*[=:]?\\s*0\\b))", o1))
             res = {"runner": r, "returncode": rc1, "total": tline}
             lines.append(f"== {r}: rc={rc1} {tline}")
-            if rc1 != 0 or not total or "FAIL=0" not in tline:
-                hit = True; lines.append(o1[-1500:])
+            if rc1 != 0 or failing_count or failing_line:      # runners of other lanes print JSON or count-only verdicts and raise on failure: exit code 0 is their pass
+                hit = True; lines.append(f"HIT: {r}: rc={rc1}, {tline}" + (", a failing check line" if failing_line else "")); lines.append(o1[-1500:])
             if not a.no_census and "--list-mutations" in open(os.path.join(wt, r), encoding="utf-8", errors="ignore").read():
                 rc2, muts = sh(f"python3 {r} --list-mutations", cwd=wt)
                 bad = []
@@ -53,6 +55,7 @@ def main():
                     lines.append(f"   mutation {m}: expected {exp[-1] if exp else '?'} observed {obs[-1] if obs else '?'} {'ok' if okm else 'MISMATCH'}")
                     if not okm: bad.append(m); hit = True
                 res["census_mismatches"] = bad
+                if bad: lines.append(f"HIT: {r}: mutation census mismatch: {' '.join(bad)}")
             results.append(res)
     finally:
         sh(f"git worktree remove --force {wt}"); shutil.rmtree(wt, ignore_errors=True)
@@ -67,7 +70,9 @@ def main():
            "stdout_sha256": hashlib.sha256(stdout.encode()).hexdigest(), "stdout_tail": stdout[-1500:]}
     json.dump(log, open(os.path.join(d, basename + ".json"), "w"), indent=1)
     open(os.path.join(d, basename + ".txt"), "w").write(stdout)
-    print(stdout[-2000:]); print(f"log: logs/probes/{task_id}/{basename}.json  hit={hit}")
+    print(stdout[-2000:]); print(json.dumps({"task": task_id, "hit": hit}, indent=1)); print(f"log: logs/probes/{task_id}/{basename}.json")
+    chk = subprocess.run([sys.executable, os.path.join(ROOT, "probes", "check_log.py"), os.path.join(d, basename + ".json")], text=True, capture_output=True)
+    print("self-check:"); print(chk.stdout.strip())
     return 0
 
 if __name__ == "__main__":

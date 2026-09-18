@@ -1,0 +1,41 @@
+{
+ "task": "P:8027",
+ "type": "pr-reexecution",
+ "lane": "static-geodesic-block37-20260907",
+ "worker": "fable-check",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 8027",
+ "pr": 8027,
+ "branch": "codex/static-geodesic-block37-20260907",
+ "git_sha": "b266abed",
+ "started_utc": "20260918T201936Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "re-run after the verdict fix: both runners exit 0 with a count-only verdict",
+ "stdout_sha256": "e381dda8378a56276f7488739f1d3f7eeb9c90dc333161fa3f608a8021595bcc",
+ "stdout_tail": "PR #8027: [physics-loop] static-geodesic block37 conditional-support\nbranch codex/static-geodesic-block37-20260907 (base codex/spatial-area-block36-20260907)\nrunners in the PR: 2\n== scripts/gauge_wilson_static_source_geodesic_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "fable-check",
+  "at_utc": "20260918T201938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

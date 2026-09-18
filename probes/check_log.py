@@ -90,7 +90,7 @@ def main():
                 note("no pinned cache for this runner (nothing to compare)")
             else:
                 same_runner = (csha == rsha)
-                VERDICT = r"(?:TOTAL: |SUMMARY:[^\n]*?|SCORECARD )?PASS=\d+[^\n]{0,40}FAIL=\d+"
+                VERDICT = r"(?:TOTAL: |SUMMARY:[^\n]*?|SCORECARD )?PASS\s*=\s*\d+[^\n]{0,40}FAIL\s*=\s*\d+"
                 cache_total = re.findall(VERDICT, cbody)
                 run_total = re.findall(VERDICT, stdout)
                 if cache_total and run_total and cache_total[-1] != run_total[-1]:

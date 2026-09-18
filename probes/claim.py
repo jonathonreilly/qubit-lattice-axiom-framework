@@ -194,8 +194,10 @@ def main():
             dirty = git("status", "--porcelain", "--", "logs/probes", "probes/work", cwd=wt).stdout.strip()
             if dirty: print("uncommitted work in", wt, "— commit logs/probes and probes/work first:\n" + dirty); return 1
             if not push(wt): print("push failed; try again"); return 1
-            main = os.path.dirname(git("rev-parse", "--path-format=absolute", "--git-common-dir").stdout.strip())
-            if git("worktree", "remove", wt, cwd=main, check=False).returncode != 0: print("note: worktree left in place (it has untracked files):", wt)
+            print("released" if release(a.unit, h["sha"]) else "claim was already gone (expired and taken over?)"); forget(a.unit)
+            main = os.path.dirname(git("rev-parse", "--path-format=absolute", "--git-common-dir").stdout.strip()); os.chdir(main)
+            if subprocess.run(["git", "worktree", "remove", wt], cwd=main, capture_output=True).returncode != 0: print("note: worktree left in place (it has untracked files):", wt)
+            return 0
     print("released" if release(a.unit, h["sha"]) else "claim was already gone (expired and taken over?)"); forget(a.unit); return 0
 if __name__ == "__main__":
     sys.exit(main())

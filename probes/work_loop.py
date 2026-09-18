@@ -7,7 +7,7 @@ It takes a free slot on this machine (a file lock), creates or reuses a PRIVATE 
 under ~/.probe-workers/<repo>/slot-<k> (so workers never share a checkout), and then repeats: claim a free unit atomically
 (probes/claim.py), run its tasks through run_probe.py (every log self-checked), commit the logs, push every few minutes, release
 the claims.  It stops when no unit is free or after --hours.  Lines starting with ATTENTION name logs that need a reader."""
-import argparse, fcntl, os, platform, random, shutil, subprocess, sys, time
+import argparse, fcntl, json, os, platform, random, shutil, subprocess, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import claim as C
 PUSH_EVERY = 600
@@ -62,7 +62,10 @@ def inner(a):
                     if r.get("minutes"): cmd += ["--minutes", str(r["minutes"])]
                 if a.model: cmd += ["--model", a.model]
                 p = subprocess.run(cmd, cwd=root, text=True, capture_output=True); out = p.stdout + p.stderr; ran += 1
-                good = "CHECK PASS" in out; hit = '"hit": true' in out or "HIT" in out.split("self-check")[0].upper().replace("\"HIT\": FALSE", "")
+                good = "CHECK PASS" in out; hit = False
+                lp = [l[5:].split()[0] for l in out.splitlines() if l.startswith("log: ")]
+                try: hit = bool(json.load(open(os.path.join(root, lp[-1]))).get("hit"))
+                except Exception: hit = '"hit": true' in out
                 ok += good; hits += bool(hit)
                 if hit or not good:
                     logline = [l for l in out.splitlines() if l.startswith("log: ")]

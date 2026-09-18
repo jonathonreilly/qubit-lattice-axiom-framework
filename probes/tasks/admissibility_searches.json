@@ -68,7 +68,7 @@
   "command": "python3 probes/lib/climb_cstar.py {SEED} {SECONDS} {A} {B} {L}",
   "cwd": ".",
   "timeout_s": 14400,
-  "hit_pattern": "c\\* (?:[2-9]\\b|1\\d\\b|\\d+/\\d+ = 1\\.[0-9]*[1-9])",
+  "hit_pattern": "c\\* (?:[2-9]|[1-9]\\d+) = |c\\* \\d+/\\d+ = (?:[2-9]|[1-9]\\d+|1\\.\\d*[1-9])",
   "parse": {
    "best": "done restarts=\\d+ best=(.*)"
   },

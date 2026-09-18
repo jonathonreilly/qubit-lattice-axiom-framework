@@ -1,0 +1,18 @@
+PR #8027: [physics-loop] static-geodesic block37 conditional-support
+branch codex/static-geodesic-block37-20260907 (base codex/spatial-area-block36-20260907)
+runners in the PR: 2
+== scripts/gauge_wilson_static_source_geodesic_2026_09_07.py: rc=0 no TOTAL line
+ 1, 0, 1], [0, 0, 0, 0, 1, 0]], "characteristic_polynomial": "z**6 - 6*z**4 + 5*z**2", "fermion_eigenvalues": ["sqrt(5)", "1", "0", "0", "-1", "-sqrt(5)"], "length": 4, "paths": [[1, 1, 0, 0], [1, 0, 1, 0], [1, 0, 0, 1], [0, 1, 1, 0], [0, 1, 0, 1], [0, 0, 1, 1]]}, {"R": 1, "S": 3, "adjacency": [[0, 1, 0, 0], [1, 0, 1, 0], [0, 1, 0, 1], [0, 0, 1, 0]], "characteristic_polynomial": "z**4 - 3*z**2 + 1", "fermion_eigenvalues": ["1/2 + sqrt(5)/2", "-1/2 + sqrt(5)/2", "1/2 - sqrt(5)/2", "-sqrt(5)/2 - 1/2"], "length": 4, "paths": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]}, {"R": 2, "S": 3, "adjacency": [[0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 1, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 1, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, 1, 1, 0, 0], [0, 0, 0, 1, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1, 1, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]], "characteristic_polynomial": "z**10 - 12*z**8 + 39*z**6 - 40*z**4 + 12*z**2", "fermion_eigenvalues": ["1 + sqrt(3)", "sqrt(3)", "-1 + sqrt(3)", "0", "1", "0", "1 - sqrt(3)", "-1", "-sqrt(3)", "-sqrt(3) - 1"], "length": 5, "paths": [[1, 1, 0, 0, 0], [1, 0, 1, 0, 0], [1, 0, 0, 1, 0], [1, 0, 0, 0, 1], [0, 1, 1, 0, 0], [0, 1, 0, 1, 0], [0, 1, 0, 0, 1], [0, 0, 1, 1, 0], [0, 0, 1, 0, 1], [0, 0, 0, 1, 1]]}]}
+RESOURCE: seconds=0.3007630000356585 rss_MiB=62.859375 limits=180sec/180MiB
+SOURCE_SHA256: 3e66256f8b201a3ac8b2391060d50f38158e09640b3d3d6623ede5ed6081b564
+
+== scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py: rc=0 no TOTAL line
+PASS TOTAL=37 unique named checks
+per_element: PASS 7 path-count and actual4096-support census checks
+per_site: PASS 12 actual three-dimensional edge-charge/face-flip geometry checks
+per_mode: PASS 12 planar exterior-spectrum, finite-label and straight-path controls
+per_block: PASS 5 source/Haar normalization and adverse-factor checks
+lattice_wide: PASS 1 resource guard; all-representation proof remains analytical
+DATA: [{"dimensions": [1, 1, 0], "faces": 1, "flip_edges": 1, "geodesics": 2, "links": 4, "vertices": 4}, {"dimensions": [2, 1, 0], "faces": 2, "flip_edges": 2, "geodesics": 3, "links": 7, "vertices": 6}, {"dimensions": [2, 2, 0], "faces": 4, "flip_edges": 6, "geodesics": 6, "links": 12, "vertices": 9}, {"dimensions": [2, 1, 1], "faces": 11, "flip_edges": 15, "geodesics": 12, "links": 20, "vertices": 12}]
+RESOURCE: seconds=0.2241480000084266 rss_MiB=61.09375 limits=180sec/180MiB
+SOURCE_SHA256: 9c1e841acaa716a88efc0de18221fc06d9b5c8a279aa0151d859f486a92d3b83

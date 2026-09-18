@@ -1,0 +1,3 @@
+PR #8159: Personal TOE derivation milestone: rotor limits, native response, and open bridges
+branch physics-loop/toe-fixed-clock-field-20260915 (base main)
+runners in the PR: 0

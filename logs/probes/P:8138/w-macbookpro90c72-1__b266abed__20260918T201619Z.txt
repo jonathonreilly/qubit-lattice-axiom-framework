@@ -1,0 +1,30 @@
+PR #8138: [physics-loop] admissibility-induced-law block08 — bounded_theorem — bounded-support: the three-dimensional monotone formation law — plane chain, three-body term, and the coupling region containing the silent triples
+branch physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py: rc=0 TOTAL: PASS=33 FAIL=0
+   mutation extensions_recorded_sets_wrong: expected B observed B ok
+   mutation pair_type_constancy_broken: expected B observed B ok
+   mutation axis_symmetry_broken: expected B observed B ok
+   mutation downset_marginal_forged: expected B observed B ok
+   mutation product_form_wrong: expected B observed B ok
+   mutation three_body_ratio_forged: expected B observed B ok
+   mutation transfer_invariance_claimed: expected C observed C ok
+   mutation transfer_tv_literal_off: expected C observed C ok
+   mutation constant_control_broken: expected C observed C ok
+   mutation sub_rectangle_consistency_broken: expected C observed C ok
+   mutation boundary_pair_claim_wrong: expected C observed C ok
+   mutation transfer_row_sums_off: expected D observed D ok
+   mutation orbit_count_wrong: expected D observed D ok
+   mutation stationary_solve_forged: expected D observed D ok
+   mutation coordinate_line_pair_wrong: expected D observed D ok
+   mutation stationary_tv_literal_off: expected D observed D ok
+   mutation sensitivity_literal_off: expected E observed E ok
+   mutation region_membership_flipped: expected E observed E ok
+   mutation influence_bound_reversed: expected E observed E ok
+   mutation rectangle_influence_bound_off: expected E observed E ok
+   mutation sector_contraction_forged: expected E observed E ok
+   mutation covariance_bound_denied: expected E observed E ok
+   mutation two_dimensional_region_off: expected E observed E ok
+   mutation claim_for_every_coupling: expected F observed F ok
+   mutation claim_physical_order: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

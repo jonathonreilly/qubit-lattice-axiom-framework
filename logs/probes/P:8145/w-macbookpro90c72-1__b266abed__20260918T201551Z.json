@@ -1,0 +1,27 @@
+{
+ "task": "P:8145",
+ "type": "pr-reexecution",
+ "lane": "clock-history-field-20260915",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8145",
+ "pr": 8145,
+ "branch": "physics-loop/clock-history-field-20260915",
+ "git_sha": "b266abed",
+ "started_utc": "20260918T201551Z",
+ "elapsed_s": 4.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+    "returncode": 0,
+    "total": "TOTAL: PASS=3 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "97a14475342e6d954b22b4cf3c76e3cef4b93c9f1769815804dac10e9225990e",
+ "stdout_tail": "PR #8145: [physics-loop] clock-history-field: bounded_theorem, bounded-support\nbranch physics-loop/clock-history-field-20260915 (base physics-loop/static-charge-transfer-sector-20260915)\nrunners in the PR: 1\n== scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py: rc=0 TOTAL: PASS=3 FAIL=0"
+}

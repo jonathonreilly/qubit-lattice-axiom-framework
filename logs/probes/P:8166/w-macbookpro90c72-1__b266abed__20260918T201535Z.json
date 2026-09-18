@@ -1,0 +1,21 @@
+{
+ "task": "P:8166",
+ "type": "pr-reexecution",
+ "lane": "toe-compact-response-20260916",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8166",
+ "pr": 8166,
+ "branch": "physics-loop/toe-compact-response-20260916",
+ "git_sha": "b266abed",
+ "started_utc": "20260918T201535Z",
+ "elapsed_s": 4.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "6e89a3dc246d4091c76d1f2a5ccc882fcc5910ea2f0178cdf0bc0d83803a8814",
+ "stdout_tail": "PR #8166: [physics-loop] compact-response bounded_theorem conditional-support\nbranch physics-loop/toe-compact-response-20260916 (base main)\nrunners in the PR: 0"
+}

@@ -1,0 +1,4 @@
+PR #8145: [physics-loop] clock-history-field: bounded_theorem, bounded-support
+branch physics-loop/clock-history-field-20260915 (base physics-loop/static-charge-transfer-sector-20260915)
+runners in the PR: 1
+== scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py: rc=0 TOTAL: PASS=3 FAIL=0

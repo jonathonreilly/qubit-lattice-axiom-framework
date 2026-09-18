@@ -1,0 +1,3 @@
+PR #8166: [physics-loop] compact-response bounded_theorem conditional-support
+branch physics-loop/toe-compact-response-20260916 (base main)
+runners in the PR: 0

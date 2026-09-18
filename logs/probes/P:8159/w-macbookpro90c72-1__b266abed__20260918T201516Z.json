@@ -1,0 +1,21 @@
+{
+ "task": "P:8159",
+ "type": "pr-reexecution",
+ "lane": "toe-fixed-clock-field-20260915",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8159",
+ "pr": 8159,
+ "branch": "physics-loop/toe-fixed-clock-field-20260915",
+ "git_sha": "b266abed",
+ "started_utc": "20260918T201516Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "ca49a9eb1d367ff9b4f0a9dc69e5f51097c78a6074a1fcb0b30efbc5ed91ee36",
+ "stdout_tail": "PR #8159: Personal TOE derivation milestone: rotor limits, native response, and open bridges\nbranch physics-loop/toe-fixed-clock-field-20260915 (base main)\nrunners in the PR: 0"
+}

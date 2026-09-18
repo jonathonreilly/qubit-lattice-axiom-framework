@@ -1,0 +1,32 @@
+{
+ "task": "P:8027",
+ "type": "pr-reexecution",
+ "lane": "static-geodesic-block37-20260907",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8027",
+ "pr": 8027,
+ "branch": "codex/static-geodesic-block37-20260907",
+ "git_sha": "b266abed",
+ "started_utc": "20260918T201503Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+    "returncode": 0,
+    "total": "no TOTAL line"
+   },
+   {
+    "runner": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+    "returncode": 0,
+    "total": "no TOTAL line"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "be86a79ed506b10ba5538b53196bb4e8bb35617e8a68f9ffed8634cd6c62b399",
+ "stdout_tail": "rt(3)\", \"0\", \"1\", \"0\", \"1 - sqrt(3)\", \"-1\", \"-sqrt(3)\", \"-sqrt(3) - 1\"], \"length\": 5, \"paths\": [[1, 1, 0, 0, 0], [1, 0, 1, 0, 0], [1, 0, 0, 1, 0], [1, 0, 0, 0, 1], [0, 1, 1, 0, 0], [0, 1, 0, 1, 0], [0, 1, 0, 0, 1], [0, 0, 1, 1, 0], [0, 0, 1, 0, 1], [0, 0, 0, 1, 1]]}]}\nRESOURCE: seconds=0.3007630000356585 rss_MiB=62.859375 limits=180sec/180MiB\nSOURCE_SHA256: 3e66256f8b201a3ac8b2391060d50f38158e09640b3d3d6623ede5ed6081b564\n\n== scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py: rc=0 no TOTAL line\nPASS TOTAL=37 unique named checks\nper_element: PASS 7 path-count and actual4096-support census checks\nper_site: PASS 12 actual three-dimensional edge-charge/face-flip geometry checks\nper_mode: PASS 12 planar exterior-spectrum, finite-label and straight-path controls\nper_block: PASS 5 source/Haar normalization and adverse-factor checks\nlattice_wide: PASS 1 resource guard; all-representation proof remains analytical\nDATA: [{\"dimensions\": [1, 1, 0], \"faces\": 1, \"flip_edges\": 1, \"geodesics\": 2, \"links\": 4, \"vertices\": 4}, {\"dimensions\": [2, 1, 0], \"faces\": 2, \"flip_edges\": 2, \"geodesics\": 3, \"links\": 7, \"vertices\": 6}, {\"dimensions\": [2, 2, 0], \"faces\": 4, \"flip_edges\": 6, \"geodesics\": 6, \"links\": 12, \"vertices\": 9}, {\"dimensions\": [2, 1, 1], \"faces\": 11, \"flip_edges\": 15, \"geodesics\": 12, \"links\": 20, \"vertices\": 12}]\nRESOURCE: seconds=0.2241480000084266 rss_MiB=61.09375 limits=180sec/180MiB\nSOURCE_SHA256: 9c1e841acaa716a88efc0de18221fc06d9b5c8a279aa0151d859f486a92d3b83\n"
+}

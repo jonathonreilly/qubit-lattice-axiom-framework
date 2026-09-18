@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-PR8158",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-jd529",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8158/q4a_embedding_and_realizable_witnesses.py",
+ "seed": 71461,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "897f6eef",
+ "started_utc": "20260918T224421Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - Q4(a) is a non-Z^3 graph in a note whose sites are declared as the Z^3 nearest-neighbour graph; the qualitative conclusion it illustrates survives on Z^3 windows: the cube witness Q4(b) recomputes to the stated 9778807/1312253264 and the two-site bridge over an edge gives TV = 0.002905, 0.001224, 0.000371 at (3,1,2), (5,2,4), (2,1,2)"
+ },
+ "review": "Exhaustive Z^3 search (three plaquette orientations, box [-2,3]^3) finds no site adjacent to two corners of a plaquette, the runner's Q4(a) bond list is the four-cycle plus c0-x and c1-x with c0 ~ c1 (a triangle, no parity 2-colouring), and Q1's product form on that triangle graph reproduces the stated 78621/4563820, 675203620/64463986907, 221667/30063356 exactly, so Q4(a) is not a window of the note's declared Z^3 setting (finder confirmed); the separation itself survives on Z^3: the cube witness Q4(b) recomputes to the stated 9778807/1312253264 and a two-site bridge stacked over an edge gives TV 78621/27062500 (0.0029) at (3,1,2).",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack:PR8158/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "6fba5040a674039be9224463bd2152079686dd5ff56b96066b8ad966ffb6c6e4",
+ "stdout_tail": "ee orientations: 0 (none: True); the runner's Q4(a) graph has a proper 2-colouring (every induced subgraph of Z^3 has one, by the parity of x_1 + x_2 + x_3): False\n[values] product-form TV on the triangle graph at (3,1,2), (5,2,4), (2,1,2): ['78621/4563820', '675203620/64463986907', '221667/30063356']; equal to Q4(a)'s stated values: True; the Z^3 bridge x = (0,0,1), y = (1,0,1) over the edge c0-c1 (its induced Z^3 graph is the four-cycle plus c0-x, x-y, y-c1: True): TV = ['78621/27062500', '5414568900/4422807263221', '490620/1322243321'] = ['0.002905', '0.001224', '0.000371']; the cube with its top face unrecorded at (3,1,2): 9778807/1312253264 (stated 9778807/1312253264: True)\nHIT: confirmed - Q4(a)'s configuration is not a window of the declared setting: no site of Z^3 is adjacent to two corners of a plaquette (exhaustive search, three orientations), the runner's Q4(a) graph (four-cycle plus c0-x, c1-x with c0 ~ c1) contains the triangle c0-c1-x and has no parity 2-colouring, and the stated values 78621/4563820, 675203620/64463986907, 221667/30063356 are exactly that triangle graph's (recomputed through Q1's product form)\nSUMMARY: confirmed - Q4(a) is a non-Z^3 graph in a note whose sites are declared as the Z^3 nearest-neighbour graph; the qualitative conclusion it illustrates survives on Z^3 windows: the cube witness Q4(b) recomputes to the stated 9778807/1312253264 and the two-site bridge over an edge gives TV = 0.002905, 0.001224, 0.000371 at (3,1,2), (5,2,4), (2,1,2)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd529",
+  "at_utc": "20260918T224421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: Q4(a) (plaquette plus one site on two adjacent corners) is not a window of the declared setting (Z^3 nearest-neighbour graph): no Z^3 site touches two plaquette corners, the runner's graph has the triangle c0-c1-x, and the stated TVs are that triangle graph's; the separation survives on Z^3 (Q4(b) cube recomputed exactly; two-site bridge TV 0.0029 at (3,1,2)).",
+  "by": "w-jonathonsmac4f50-jd529",
+  "at_utc": "20260918T224421Z"
+ }
+}

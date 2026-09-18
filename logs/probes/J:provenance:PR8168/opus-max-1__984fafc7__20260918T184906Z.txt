@@ -1,0 +1,53 @@
+PR #8168 head c3bbf3758e; cache 35 stdout lines; statement sections: claim_scope, Theorem T0, Theorem T1, Theorem T2, Theorem T3, Theorem T4, Theorem T5, Theorem T6, Theorem T7
+[EXCLUDED] ref | claim_scope,Theorem T7 | reference (blocks 08, 12, 17)
+[EXCLUDED] Z3Z2 | claim_scope,Theorem T7 | structural: the lattices
+[DEFINITION] preds | claim_scope | the three predecessors | declared under Premises and declared objects
+[DEFINITION] levels0 | claim_scope | initial condition | declared under Premises and declared objects
+[DEFINITION] arrows-forks | claim_scope | the graph G | declared under Premises and declared objects
+[CACHE] edges4 | claim_scope,Theorem T4 | T4 edge bound | cache stdout line 18: PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and 
+[CACHE] forks-n1 | claim_scope,Theorem T4 | T4 fork count | cache stdout line 18: PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and 
+[CACHE] arrows3 | claim_scope,Theorem T4 | T4 arrow bound | cache stdout line 18: PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and 
+[DEFINITION] Mk | claim_scope | the functionals | declared under Premises and declared objects
+[CACHE] span-one | claim_scope | T4 span increment | cache stdout line 18: PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and 
+[CACHE] one-arrow | claim_scope,Theorem T4,Theorem T5 | T4 arrow condition | cache stdout line 18: PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and 
+[EXCLUDED] n-ge-1 | Theorem T4 | structural
+[CACHE] cones | claim_scope,Theorem T4 | T4 executed cones | cache stdout line 18: PASS: D1 T4: on all 1024 noise configurations of the depth-2 backward cone (932 with a one at x) the refinement builds a tree of arrows and 
+[CACHE] ratio3 | Theorem T4 | T4 executed ratio | cache stdout line 19: PASS: D2 T4: every depth-3 configuration with at most four noise sites (2321 explained) and 1200 random cones of depth 3-7 (907 explained) p
+[DEFINITION] twelve | claim_scope | the typed tree | declared under Premises and declared objects
+[CACHE] tsvals | claim_scope,Theorem T5 | T5 point | cache stdout line 22: PASS: E1 T5-T6: at (t, s) = (91/1000, 1000/107653) the rational triple (D-bar, U-bar, F-bar) is a super-solution of the recursion (three exa
+[CACHE] sum391 | claim_scope,Theorem T5 | T5 bound | cache stdout line 22: PASS: E1 T5-T6: at (t, s) = (91/1000, 1000/107653) the rational triple (D-bar, U-bar, F-bar) is a super-solution of the recursion (three exa
+[CACHE] trees66103 | claim_scope,Theorem T5 | T5 executed count | cache stdout line 21: PASS: D4 T5: the subtrees of G containing the origin with at most four edges and at most one arrow to a predecessor at each node number 6610
+[CACHE] three-term | claim_scope | T5 recursion | cache stdout line 21: PASS: D4 T5: the subtrees of G containing the origin with at most four edges and at most one arrow to a predecessor at each node number 6610
+[RUNNER] bars | Theorem T5 | T5 super-solution (hard-coded and checked in the runner's E1, not printed) | present and checked in the runner source (not printed)
+[DERIVED] super | Theorem T5 | T5 the three inequalities | exact: the three super-solution inequalities (True, True, True); Rbar = 3.907324951 < 391/100: True
+[CACHE] Rbar | Theorem T5 | T5 Rbar | cache stdout line 22: PASS: E1 T5-T6: at (t, s) = (91/1000, 1000/107653) the rational triple (D-bar, U-bar, F-bar) is a super-solution of the recursion (three exa
+[CACHE] T5-exec | Theorem T5 | T5 executed comparison | cache stdout line 21: PASS: D4 T5: the subtrees of G containing the origin with at most four edges and at most one arrow to a predecessor at each node number 6610
+[CACHE] T6 | claim_scope,Theorem T6 | T6 bound | cache stdout line 22: PASS: E1 T5-T6: at (t, s) = (91/1000, 1000/107653) the rational triple (D-bar, U-bar, F-bar) is a super-solution of the recursion (three exa
+[CACHE] eps0 | claim_scope,Theorem T6,Theorem T7 | T6/T7 eps_0 | cache stdout line 23: PASS: E2 T7(b): the least integers p with epsilon(p, q, r) <= epsilon_0 = 7/10^6 are 285718 at (1,2), 142861 at (1,1), 571436 at (2,4), 4285
+[DERIVED] eps0-arith | Theorem T6 | T6 arithmetic | t^3 s = (753571/10^9)(1000/107653) = 7/10^6 (753571 = 7 x 107653); (391/100)(7/10^6) = 2737/10^8 < 3/10^5 (exact)
+[DERIVED] T0-closed | Theorem T0 | T0(a) closed forms | the three normalizers summed over the six values (a, -a, and the four orthogonal) reproduce the stated closed forms (sympy)
+[CACHE] T0-devs | Theorem T0 | T0(a) deviations | cache stdout line 12: PASS: B1 T0(a): the three-predecessor conditional of block 01's rule at the unanimous, orthogonal 2:1 and antipodal 2:1 patterns has the sta
+[CACHE] eps-def | claim_scope | T7 eps closed form | cache stdout line 14: PASS: B3 T0(a): epsilon(p, q, r) as the exact maximum over all triples with at least two entries a equals max(d1, d2, d3) at (3,1,2), (10,1,
+[DERIVED] T0-decr | claim_scope,Theorem T0 | T0(b) | numerator of d_1'(p) = -3*p**2*(q**3 + 4*r**3) < 0 (the runner's B2 prints the other two)
+[CACHE] T0-216 | Theorem T0 | T0 executed triples | cache stdout line 30: per_site: executed — the coupling inequality at all 216 triples with two entries a; the exact least couplings p_0 at four weight pairs
+[CACHE] T0-couplings | Theorem T0 | T0 executed couplings | cache stdout line 14: PASS: B3 T0(a): epsilon(p, q, r) as the exact maximum over all triples with at least two entries a equals max(d1, d2, d3) at (3,1,2), (10,1,
+[CACHE] p0-12 | claim_scope,Theorem T7 | T7(b) threshold | cache stdout line 23: PASS: E2 T7(b): the least integers p with epsilon(p, q, r) <= epsilon_0 = 7/10^6 are 285718 at (1,2), 142861 at (1,1), 571436 at (2,4), 4285
+[CACHE] p0-others | Theorem T7 | T7(b) other lines | cache stdout line 23: PASS: E2 T7(b): the least integers p with epsilon(p, q, r) <= epsilon_0 = 7/10^6 are 285718 at (1,2), 142861 at (1,1), 571436 at (2,4), 4285
+[DERIVED] p0-exact | Theorem T7 | T7(b) recomputed | closed forms of the note's T0 evaluated exactly: (p,1,2): eps(285718) <= eps_0 < eps(285717): True; (p,1,1): eps(142861) <= eps_0 < eps(142860): True; (p,2,4): eps(571436) <= eps_0 < eps(571435): True; (p,1,3): eps(428576) <= eps_0 < eps(428575): True
+[CACHE] six | claim_scope,Theorem T7 | T7(c) six laws | cache stdout line 6: scope: the three-dimensional formation law's ordered phase — the noisy level automaton's explanation trees executed exhaustively on small co
+[CACHE] one-per-value | claim_scope,Theorem T7 | T7(c) | cache stdout line 6: scope: the three-dimensional formation law's ordered phase — the noisy level automaton's explanation trees executed exhaustively on small co
+[CACHE] T7a | claim_scope,Theorem T7 | T7(a) | cache stdout line 22: PASS: E1 T5-T6: at (t, s) = (91/1000, 1000/107653) the rational triple (D-bar, U-bar, F-bar) is a super-solution of the recursion (three exa
+[CACHE] mu-bound | Theorem T7 | T7(c) | cache stdout line 22: PASS: E1 T5-T6: at (t, s) = (91/1000, 1000/107653) the rational triple (D-bar, U-bar, F-bar) is a super-solution of the recursion (three exa
+[DERIVED] thousand | Theorem T7 | T7 placement | eps_0/(1/(2 * 96^4)) = 1189.1 > 1000 (the first count's threshold 1/(2*96^4), Prior art)
+[EXCLUDED] eta-values | claim_scope,Theorem T0,Theorem T4,Theorem T6 | structural: the value 1 of the 0/1 automaton
+[EXCLUDED] names | claim_scope,Theorem T0 | names of the objects
+[EXCLUDED] pronoun | Theorem T1,Theorem T2,Theorem T3,Theorem T4,Theorem T7 | wording
+[EXCLUDED] b08-region | Theorem T7 | reference: block 08's criterion
+[EXCLUDED] zero-one | Theorem T1,Theorem T2,Theorem T3,Theorem T4 | structural: names of objects
+[CACHE] T2-third | Theorem T2 | T2(a) | cache stdout line 16: PASS: C1 T2(a): M_k(x - e_j) - M_k(x) = 1/3 - delta_jk; sum_k M_k = 0 on the depth-3 cone; every pair of indices contains one differing from
+[CACHE] T2-span1 | Theorem T2 | T2(a) sum | cache stdout line 16: PASS: C1 T2(a): M_k(x - e_j) - M_k(x) = 1/3 - delta_jk; sum_k M_k = 0 on the depth-3 cone; every pair of indices contains one differing from
+[CACHE] T2-size1 | Theorem T2 | T2(b) | cache stdout line 17: PASS: C2 T2(b): every fork pair has Size = 1 and every assignment of its two points as poles has Span <= 1
+[EXCLUDED] T1-levels | Theorem T1 | structural: levels
+[EXCLUDED] T3-poles | Theorem T2,Theorem T3 | structural: pole labels
+[COVERAGE] 169 numeric tokens in the statement text; uncovered 0
+SUMMARY: 50 items over claim_scope + 8 theorem sections (169 numeric tokens, 0 uncovered): cache-sourced 28, runner-checked (not printed) 1, derived here from the note's formulas 6, definitions 5, excluded 10; unsourced 0 = 0 in the proved statements (none) + 0 executed-not-claimed numbers printed only by controls; stated values disagreeing with the control output: none

@@ -1,0 +1,39 @@
+{
+ "task": "X:sixaxis-formation-threshold",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "grok46",
+ "model": "grok-4.6",
+ "command": "python3 probes/lib/scan_formation_sixaxis.py 256 4000 9 10 10.5 11 11.5 12",
+ "seed": 51335,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d304a4e2",
+ "started_utc": "20260918T170855Z",
+ "elapsed_s": 156.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "lines": [
+   "  p=   9.0: memory mean 0.1664  final 0.1672   (26s)",
+   "  p=  10.0: memory mean 0.1679  final 0.1684   (27s)",
+   "  p=  10.5: memory mean 0.1689  final 0.1655   (27s)",
+   "  p=  11.0: memory mean 0.8376  final 0.8277   (29s)",
+   "  p=  11.5: memory mean 0.9064  final 0.9093   (23s)",
+   "  p=  12.0: memory mean 0.9320  final 0.9319   (25s)"
+  ]
+ },
+ "review": "L=256 T=4000 (p,1,2): memory stays ~0.17 at p=9,10,10.5 and jumps to 0.84 at p=11, matching block 28's (10.5,11) location. Scan table, not a HIT",
+ "what": "block 28's memory scan of the six-axis formation law at (p,1,2): pass the p values with --extra '9 10 10.5 11 11.5 12'; the memory fraction at T locates the strength (block 28: p in (10.5, 11)). Extend to larger L (512), longer T, and other lines by editing q, r in the script header (record the edit in the log's command).",
+ "stdout_sha256": "cea19274a304064d65528a38829ccff3fc0bd4f3b60d271a666a77edfb7925e8",
+ "stdout_tail": "six-axis formation law at (p,1,2), L=256, T=4000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T\n  p=   9.0: memory mean 0.1664  final 0.1672   (26s)\n  p=  10.0: memory mean 0.1679  final 0.1684   (27s)\n  p=  10.5: memory mean 0.1689  final 0.1655   (27s)\n  p=  11.0: memory mean 0.8376  final 0.8277   (29s)\n  p=  11.5: memory mean 0.9064  final 0.9093   (23s)\n  p=  12.0: memory mean 0.9320  final 0.9319   (25s)\n",
+ "checked": {
+  "by": "grok46",
+  "at_utc": "20260918T171227Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

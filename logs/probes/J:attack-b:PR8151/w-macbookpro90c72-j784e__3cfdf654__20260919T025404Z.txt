@@ -1,0 +1,11 @@
+(4, 4): |bonds|=32 |WP|=8 |W+|=12 |W-|=12
+(4, 4): partition and θ-bijection W+↔W-: True
+(6, 6): |bonds|=72 |WP|=12 |W+|=30 |W-|=30
+(6, 6): partition and θ-bijection W+↔W-: True
+(8, 8): |bonds|=128 |WP|=16 |W+|=56 |W-|=56
+(8, 8): partition and θ-bijection W+↔W-: True
+(4, 4, 4): |bonds|=192 |WP|=64 |W+|=64 |W-|=64
+(4, 4, 4): partition and θ-bijection W+↔W-: True
+(6, 6, 6): |bonds|=648 |WP|=144 |W+|=252 |W-|=252
+(6, 6, 6): partition and θ-bijection W+↔W-: True
+SUMMARY: pattern has no purchase on this note: W+ and W- have equal cardinality, are disjoint from each other and from W_P, cover the nn bonds with W_P, and are swapped by θ on even tori (2d and 3d)

@@ -1,0 +1,6 @@
+path3: |V|=3 |E|=2 triangles=0
+star4: |V|=5 |E|=4 triangles=0
+plaquette: |V|=4 |E|=4 triangles=0
+grid2x3: |V|=6 |E|=7 triangles=0
+cube: |V|=8 |E|=12 triangles=0
+SUMMARY: pattern has no purchase on this note — path of 3, four-leaf star, plaquette, 2x3 grid and cube all exist as triangle-free induced nn subgraphs of Z^3

@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_dual_patch_pullback_section_frame_2026_08_24",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_dual_patch_pullback_section_frame_2026_08_24.py",
+ "seed": 8425,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T090025Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d439df4807d0204d59bac6422127f3208102f1ca29b83a35a09b8d54f26add22",
+ "stdout_tail": "10.py': '8d2e071da05f0e540c8ec061b5dbea6cb996040a33b90efcd2f6e11b73d52cd2', 'scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py': '4299d645f687bec12d945598cca1df5c13a73c871a9e6ad1459e7e6b17c5bab5', 'scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py': '5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445'}\n[PASS] B-patch-pullback-identities: the halved four-chart graph section is an isometry and exactly pulls back D, H, and the symbolic-mass completion\n[PASS] C-grade-cotransport: the exterior grade raises d_00 by one; the repeated canonical patch grade fails with rank 48, while the cotransported grade closes\n[PASS] D-signed-shift-controls: the displayed signed lifts anticommute and have the stated two-step and rank controls; no complex-gauge or Ward interpretation is made\n[PASS] E-hodge-shift-and-shear-flip: the current overlap Hodge is plain-shift covariant; the signed temporal lift implements the displayed shear flip, with both omitted controls rank 32\n[PASS] F-periodic-antiperiodic-comparison: the two supplied dimension-16 operators have ranks 6 and 8 and differ in 32 entries, only four on the temporal seam; this bars similarity but does not isolate a causal twist\n[PASS] G-bounded-finite-scope: exact supplied matrices only; the rank contrast, pullbacks, grades, and shift identities do not establish gravity, a Ward contraction, or an exhaustive boundary classification\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T090027Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

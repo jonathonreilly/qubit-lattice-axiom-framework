@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_joint_pin_order_extended_alphabet_2026_08_27",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_joint_pin_order_extended_alphabet_2026_08_27.py",
+ "seed": 8854,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T090734Z",
+ "elapsed_s": 53.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "50ed0942ab62343bc915ed5a11960defe8d8010873c1e00ed6aa24e8562d1b1f",
+ "stdout_tail": "lk rather than by a text search -- so every decimal in this note is display-only and no verdict predicate anywhere in this file consumes anything but an exact rational\nGATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS\nN5: per_element: THE STRUCTURAL DOUBLE-RECORD ACTION IS ONE SIMULTANEOUS DICTIONARY SUBSTITUTION; REVERSING INSERTION ORDER CHANGES ZERO OF SIXTEEN SUBSTITUTED MATRICES.\nper_site: THE TWO PROPOSED CHAIN-RULE FACTORIZATION ARRAYS ARE COMPONENTWISE NONNEGATIVE, EACH SUMS EXACTLY TO ONE, AND THEY DIFFER IN SIXTEEN OF SIXTEEN WEIGHTS; THEIR MIXTURE RESIDUALS ARE NONZERO IN FOUR OF FOUR COMPONENTS.\nper_mode: IN THE STATED l1 COMPARISON, THE SLOT-4 SINGLE PIN ALREADY CARRIES ALL BUT A SUB-PERCENT EXCESS OF THE TWO-PIN RESIDUAL; THE SINGLE-READOUT SIXTEEN-WEIGHT RESTORING SYSTEM IS REAL-AFFINE SOLVABLE BECAUSE rank(A) = rank([A|b]) = 4, AND NONNEGATIVITY AND MULTI-CONTEXT EXCLUSION REMAIN OPEN.\nper_block: THE SIX-CONTEXT TWENTY-OUTCOME STACK IS INCONSISTENT AT RANKS (12, 13), REPRODUCING THE FINITE SERIES (4, 5), (8, 9), (12, 13); SIX EXACT NORMALIZATION-ROW RELATIONS CAP COEFFICIENT RANK AT 19, SO NO OUTCOME-COUNT THRESHOLD IS CLAIMED.\nlattice_wide: THE THREE FIXED-ROW-COORDINATE EUCLIDEAN RESIDUALS ARE PAIRWISE NONPROPORTIONAL, REFUTING ONLY THE DECLARED REPRESENTATIVE-LEVEL INVARIANCE CONJECTURE; THIS IS NOT A REPRESENTATION-INVARIANT OBSTRUCTION, UNIVERSAL DEPENDENCY-ORDER THEOREM, CLASSICAL NO-GO, CONTINUUM RESULT, DYNAMICS, OR GRAVITY.\nTOTAL: PASS=29 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T090828Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_dirac_kahler_joint_pin_order_extended_alphabet_2026_08_27.txt against the .txt beside this log"
+  ]
+ }
+}

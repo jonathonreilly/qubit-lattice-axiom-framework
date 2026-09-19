@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_interpretation_discriminators_2026_08_21",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_interpretation_discriminators_2026_08_21.py",
+ "seed": 8853,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T090733Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e6761bc065a97faa58cb47c1fd8cefafd418f36a11f3a73ddc8755a2aaac064d",
+ "stdout_tail": "445', 'docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md': '9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/audit/data/axiom_premise_nodes.json': '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37'}\n[PASS] B-pairing-action-and-metric-scope: free shears are invisible to this s_t=0 pairing but live in the full action and metric; the zero action block uses the stated three-link pin, while the off-region control is metric\n[PASS] C-hollow-corner-and-margin: the full displayed 12-by-4 pencil has blocks B, s_t C1, s_t C1*, 0; its raw Schur coefficient is 57/160 and normalized coefficient is 1/8\n[PASS] D-stipulated-Hermitian-block-pencil: the stipulated Hermitian block pencil matches the displayed fixture on its real-g slice and has a negative-definite Schur complement for every nonzero scalar; it is not identified with a general complex connection\n[PASS] E-wrap-linear-branch-and-chart-order: the displayed 8-by-4 E-live corner has a linear first-order split; b is exact in sigma only through -nu sigma/(1-sigma^2)\n[PASS] F-flip-scope: the block-signature flip congruence holds at s_t=0 and fails at the named nonzero-coupling point\n[PASS] G-exact-bounded-disposition: finite supplied carriers only; no two-cone, Page-Wootters, or global off-region conclusion\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T090734Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

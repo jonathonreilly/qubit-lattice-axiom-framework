@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py",
+ "seed": 8378,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T085938Z",
+ "elapsed_s": 4.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5d24d7926343a1f3db8aca0ab6a83221fb7cb87441c27104120e3954d48297d9",
+ "stdout_tail": "=e2; Schur_elimination=NOT_PERFORMED\nGROUPED_FULL: count=16; shape=8x8; rank3=4; rank4=12; embedded_e2_zero=10; embedded_e2_nonzero=6\nCOUNTEREXAMPLE: origin=(1,0); direction=+2; step=1; start=1; G*(e2,0)=(0,0,0,0,9/80,0,0,0)\nN5: per_element: checked \u2014 two displayed 16x16 physical matrices differ at entry (10,11) by exact -89/140; no transition equivalence is tested\nper_site: checked \u2014 the doubled alternating form represents one complex Grassmann mode and its conjugate at each of 16 physical sites, not two site modes\nper_mode: checked \u2014 rank[Q_alt,Sx\u2295Sx]=32 for each displayed matrix, so this spatial-shift eigenspace reduction is not invariant; other spectral descriptions are open\nper_block: checked \u2014 eight raw framed distance-two 4x4 blocks have rank3 and kernel e2; sixteen full adjacent 8x8 maps have ranks3/4, and the embedded e2 witness fails in six\nlattice_wide: checked and not executed \u2014 no common differential, transition law, true Schur elimination, descriptor evolution, direct Gram OS proof, ADM/history transporter, joint gravity, Records, or TOE closure is constructed\nRESULT: exact finite matrix boundary only; no transition inequivalence, global-action no-go, evolution no-go, or universal dependency order\nOPEN: common descent; transition law; true Schur or descriptor formulation; constraints; enlarged state; direct Gram OS; other groupings; other curved fixtures\nAUDIT: none; formal audit deferred; zero obligation retirement; no TOE percentage moves\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T085943Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

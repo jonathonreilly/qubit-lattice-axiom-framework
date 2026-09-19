@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_duality_covariance_locus_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py",
+ "seed": 8428,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T090028Z",
+ "elapsed_s": 144.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2c8ec2f65f889545b86f3f8e8fcce8cd7b04c55cb43ab2bd74d7132dfba513e5",
+ "stdout_tail": "ne = the star line) IFF its two-offset face-sign products (P_tx, P_ty, P_xy) follow the star's pair signs (+, -, +) on (tx, ty, xy) up to a global sign; exactly 16 cells do\n[PASS] H-1: SCOUT-GRADE FENCE, inherited verbatim from Blocks 211, 213 and 214\n[PASS] H-2: THE INSTANCE SCOPE IS ENUMERATED: six restrictions\n[PASS] I-1: THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY\n[PASS] I-2: NO nsimplify, NO float literal, NO float call in this runner's source\nGATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS\nN5: The corrected Block 215 claim is finite exact covariance algebra on one supplied cell family: 24 proper signed rotations, 30 subgroups in 11 conjugacy classes, the exterior-star line D16 = D34 = -D25, strict and sign-twisted linear loci, and a 16-cell star-pattern census. Covariance means only (E_R L) H (E_R L)^T = H. No inheritance from the Admissibility axiom, premise adoption, subgroup selection, assembly choice, physical metric, action, spacetime, continuum, or dynamics is claimed; superseded parent assurances are historical only.\nTOTAL: PASS=31 FAIL=0\n\n[stderr]\n[phase] authority: 2 ms\n[phase] group: 15337 ms\n[phase] star: 134 ms\n[census] gauge class (1, 1)\n[census] gauge class (1, -1)\n[census] gauge class (-1, 1)\n[census] gauge class (-1, -1)\n[phase] census: 35858 ms\n[overlap] gauge class (1, 1)\n[overlap] gauge class (1, -1)\n[overlap] gauge class (-1, 1)\n[overlap] gauge class (-1, -1)\n[phase] overlap: 55283 ms\n[phase] controls: 37790 ms\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T090252Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

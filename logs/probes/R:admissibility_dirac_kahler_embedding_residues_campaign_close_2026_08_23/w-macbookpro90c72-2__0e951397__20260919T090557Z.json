@@ -1,0 +1,34 @@
+{
+ "task": "R:admissibility_dirac_kahler_embedding_residues_campaign_close_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_embedding_residues_campaign_close_2026_08_23.py",
+ "seed": 8757,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T090557Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3063f30ec6e06e9fe4f19384daa88546ef6778c54fa7f26cf17c0cc2b7b1b29c",
+ "stdout_tail": "PASS: finite three-cycle orbit :: U E=E P3 on the chosen three-site orbit\nPASS: conjugate-character scalar indifference :: betas=(3193/2240,3193/2240), restriction=Matrix([[3193/2240, 0, 0], [0, 3193/2240, 0], [0, 0, 3193/2240]])\nPASS: commutation differs from metric preservation :: 2I is invertible and commutes with cI but is not an R-isometry; P3 is unitary\nPASS: historical matrix witness is not a basis change :: rank(e0 e1^T)=1\nPASS: twelve-copy finite ledger :: levels={0: 3193/2240, 1: 43/35, 2: 3193/2240, 3: 1817/1120, 4: 1817/1120, 5: 1817/1120}, offdiagonal_gram_entries=36\nPASS: supplied additive count leaves multiplicity open :: one selected copy and all twelve copies give different supplied arithmetic\nPASS: literal input closure and pending-fiber fence :: float_literals=0, inputs_bound=True, open_obligations=6\nper_element: a scalar orbit metric commutes with every matrix but is preserved only by unitary basis changes\nper_site: one chosen three-site orbit carries an exact C3 module map\nper_mode: conjugate characters have different translation eigenvalues and equal values only for the tested scalar restriction\nper_block: multiplicity, six bridge supplies, and the historical fiber-response interpretation remain open\nlattice_wide: no physical carrier equivalence, orientation elimination, campaign-close theorem, premise, axiom, audit, or TOE conclusion follows\nTOTAL: 7/7 PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T090600Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

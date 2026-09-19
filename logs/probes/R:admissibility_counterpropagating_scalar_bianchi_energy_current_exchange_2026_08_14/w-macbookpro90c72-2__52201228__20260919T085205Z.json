@@ -1,0 +1,32 @@
+{
+ "task": "R:admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py",
+ "seed": 7925,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "52201228",
+ "started_utc": "20260919T085205Z",
+ "elapsed_s": 0.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "77ff630a1fee39b8f5c6c601ce480f75ebac2f5c1f066d29852368b0554ac301",
+ "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py\", line 993, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py\", line 852, in main\n    authority = authority_certificate(mutation)\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py\", line 133, in authority_certificate\n    parent = block96.authority_certificate(\"\")\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py\", line 145, in authority_certificate\n    path for path in parent[\"loaded_missing\"] if path != RUNNER_RELATIVE\n                     ~~~~~~^^^^^^^^^^^^^^^^^^\nKeyError: 'loaded_missing'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T085206Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

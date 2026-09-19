@@ -1,0 +1,34 @@
+{
+ "task": "R:admissibility_dirac_kahler_conditional_symmetric_power_theorem_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_conditional_symmetric_power_theorem_2026_08_23.py",
+ "seed": 8148,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T085548Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "99f81da86fe76550191f30a58f7b70256c5b571ea222722a1edefaff2c4c8630",
+ "stdout_tail": " action_inertia=(5, 3, 0), covariance_inertia=(6, 2, 0), raw_covariance_hermitian=False\nPASS: 12x4 dial 0 exact candidate construction :: action_inertia=(4, 0, 4), covariance_inertia=(4, 4, 0), raw_covariance_hermitian=False\nPASS: 12x4 dial 1/4 exact candidate construction :: action_inertia=(4, 4, 0), covariance_inertia=(4, 4, 0), raw_covariance_hermitian=False\nPASS: finite action-side inertia ledger :: measured={('8x4', 0): (4, 0, 4), ('8x4', 1/4): (5, 3, 0), ('12x4', 0): (4, 0, 4), ('12x4', 1/4): (4, 4, 0)}\nPASS: finite covariance-side inertia ledger :: measured={('8x4', 0): (6, 2, 0), ('8x4', 1/4): (6, 2, 0), ('12x4', 0): (4, 4, 0), ('12x4', 1/4): (4, 4, 0)}\nPASS: 8x4 action region is PSD :: inertia=(4, 0, 4)\nPASS: 12x4 action region is PSD :: inertia=(4, 0, 4)\nPASS: normalized symmetric vacuum :: Sym^0 coefficient is one; an unnormalized Gaussian prefactor is separate\nPASS: literal input closure and bounded note :: float_literals=0, inputs_bound=True\nper_element: the permanent minor uses |r|^2 and is negative only under its mixed-kernel hypotheses\nper_site: action-side and covariance-side candidates are reconstructed on two supplied covers\nper_mode: at s_t=0 the action-side form is PSD while the covariance candidate remains mixed\nper_block: the normalized vacuum is one; any dial-sensitive Gaussian prefactor is an extra convention\nlattice_wide: no physical source grading, unique readout, continuum theorem, premise, axiom, audit, or TOE conclusion follows\nTOTAL: 13/13 PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T085551Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

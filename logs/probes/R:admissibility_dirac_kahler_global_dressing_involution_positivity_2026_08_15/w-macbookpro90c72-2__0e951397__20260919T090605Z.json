@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_global_dressing_involution_positivity_2026_08_15",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_global_dressing_involution_positivity_2026_08_15.py",
+ "seed": 8765,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T090605Z",
+ "elapsed_s": 87.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "01394ba53930198571653e01f9b91b122cb82537a94ee899c0839b493039c4b8",
+ "stdout_tail": "ote; axiom_sha256=93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753; registry_sha256=615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37; supplier_note_sha256=9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33\nper_element: exact feasibility, involution, classification, fiber, and invisibility identities are checked\nper_site: one Grassmann mode per fine site on the antiperiodic reflection torus\nper_mode: both shear fixtures certify the same 132-dimensional linear space and anti-diagonal classification; the positive fiber is executed only at c=5/13\nper_block: the exact involution occupies every slice at magnitude one while its central window block vanishes\nlattice_wide: checked and not executed \u2014 the joint involution-positivity variety on the full 132-dimensional space, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open\nRESULT: in the chosen finite fixture, the displayed class contains an exact window-invisible dressed-reflection involution; its anti-diagonal involutions are indefinite, while a separate exact positive fiber is certified only at c=5/13\nDECISION_CUT: the mixed full 132-dimensional involution-positivity variety and any action-derived physical seam selection remain open\nTOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T090733Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py", line 993, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py", line 852, in main
+    authority = authority_certificate(mutation)
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py", line 133, in authority_certificate
+    parent = block96.authority_certificate("")
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py", line 145, in authority_certificate
+    path for path in parent["loaded_missing"] if path != RUNNER_RELATIVE
+                     ~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'loaded_missing'

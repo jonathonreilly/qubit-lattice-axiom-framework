@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_cutting_strata_completion_2026_08_20",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_cutting_strata_completion_2026_08_20.py",
+ "seed": 8387,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T085947Z",
+ "elapsed_s": 2.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a7f419c8ab1ae3d1837d3ec922ee01fb4b4cb21b4b5803adf1e1be8d9a45cd49",
+ "stdout_tail": "rue, \"pairs\": 276, \"separated_pairs\": 276}\nPASS existing supplier witness W6: {\"C4_TC_MC\": [169, 41, 48], \"charge_trace_agrees\": true, \"distinct_cells\": 24, \"eight_valid_facet_traces\": true, \"pairs\": 276, \"separated_pairs\": 276}\nPASS direct per-piece bound counterexample: min(C4-TC+MC)=3 at (0, 1, 6, 10, 14); histogram=((3, 48), (4, 304), (5, 192), (6, 304), (7, 48), (8, 336), (9, 672), (10, 624), (11, 96), (12, 48)); only the uniform lower bound 7 is refuted\nPASS incompatible boundary diagonals: {(0, 0): (((1, 4, 5, 6, 8), (2, 5, 6, 7, 10)), ((4, 5, 6), (5, 6, 7)), (5, 6)), (1, 1): (((4, 5, 7, 8, 13), (4, 6, 7, 8, 12)), ((4, 5, 7), (4, 6, 7)), (4, 7))}; cost 156 partner is geometrically verified above\nPASS overlap control: identical simplex has no nonzero separating normal\nHISTORICAL_UNVERIFIED: higher-stratum censuses, exact minima/exclusions, law sweep, CSP count and checker narratives are archived; none supplies a passing predicate here\nper_element: all 2672 supplied unit-determinant cells enumerated with integer charge formulas\nper_site: checked and not executed \u2014 physical sites are not defined by this finite corner-simplex model\nper_mode: checked and not executed \u2014 no physical momentum or mode decomposition is claimed\nper_block: seven original and five supplier dissections checked by exact separation and boundary traces\nlattice_wide: checked and not executed \u2014 no infinite lattice, physical realization or exhaustive higher-stratum search is claimed\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T085950Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

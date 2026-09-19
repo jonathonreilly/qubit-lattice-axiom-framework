@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.py",
+ "seed": 8383,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T085943Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c34129c7b65864a54a9b3c553fcb86f37fae063018ed63062235da556ccd2233",
+ "stdout_tail": "ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md': '9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/audit/data/axiom_premise_nodes.json': '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37'}\n[PASS] B-finite-carrier: the 32-dimensional supplied carrier has the exact grading split and a 72-entry reflection-odd glue\n[PASS] C-flat-calibration: the flat finite calibration is Hermitian and has signs (1, 1, 1, 1, 1, 1, 1, 1)\n[PASS] D-covariance-and-reality: real transpose covariance implies Hermiticity for this invertible supplied action\n[PASS] E-reality-is-load-bearing: the one-dimensional complex control satisfies transpose covariance but has a non-Hermitian paired inverse\n[PASS] F-enumerated-seam-controls: zero, near, far, and both-seam sign vectors are ((0, 0, 0, 0, 0, 0, 0, 0), (1, 1, 1, 1, -1, 1, -1, 1), (1, 1, 1, 1, 0, 0, 0, 0), (1, 1, 1, 1, 1, 1, 1, 1))\n[PASS] G-five-point-window: five explicitly constructed points give three positive Grams; signs={'base': (1, 1, 1, 1, 1, 1, 1, 1), 'mass_1_3': (1, 1, 1, 1, 1, 1, 1, 1), 'mass_2': (1, 1, 1, 1, 1, -1, 1, -1), 'constant_c_3_5': (1, 1, 1, 1, 1, 1, 1, 1), 'x_alternating_c_3_5': (1, 1, 1, 1, 1, 1, -1, -1)}\n[PASS] H-bounded-scope: the result concerns only the five listed points and seam variants; the unrun (1/3,3/5) crosspoint remains open\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T085947Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

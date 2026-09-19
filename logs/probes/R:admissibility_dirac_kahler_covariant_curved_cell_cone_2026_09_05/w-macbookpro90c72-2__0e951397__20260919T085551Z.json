@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05.py",
+ "seed": 8151,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e951397",
+ "started_utc": "20260919T085551Z",
+ "elapsed_s": 227.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a393cc2d83e38ee1729e9420f09895f0266ba0de13c5c733694711dc9a2ca567",
+ "stdout_tail": "ltiples of both line-generator squares. The displayed squared-pencil rows have four branch slots counted with repetition and three distinct values at the named D07 = 0 points. No all-moduli necessity, cell or assembly selection, premise adoption, physical metric, light cone, action, spacetime, continuum, or dynamics is claimed.\nTOTAL: PASS=27 FAIL=0\n\n[stderr]\n[phase] authority: 2 ms\n[phase] group: 14799 ms\n[phase] census: 1614 ms\n[phase] covariance: 7323 ms\n[union] W1 moduli at cell 2\n[union] W1 moduli at cell 5\n[union] W1 moduli at cell 11\n[union] W1 moduli at cell 12\n[union] W1 moduli at cell 16\n[union] W1 moduli at cell 23\n[union] W1 moduli at cell 25\n[union] W1 moduli at cell 30\n[union] W1 moduli at cell 33\n[union] W1 moduli at cell 38\n[union] W1 moduli at cell 40\n[union] W1 moduli at cell 47\n[union] W1 moduli at cell 51\n[union] W1 moduli at cell 52\n[union] W1 moduli at cell 58\n[union] W1 moduli at cell 61\n[union] W1 moduli at cell 0\n[union] curve moduli at cell 2\n[union] curve moduli at cell 11\n[union] curve moduli at cell 16\n[union] curve moduli at cell 25\n[union] curve moduli at cell 38\n[union] curve moduli at cell 47\n[union] curve moduli at cell 52\n[union] curve moduli at cell 61\n[phase] union: 72893 ms\n[phase] witness: 4955 ms\n[branches] L+- symbolic line multiple\n[branches] L+- line 1/4\n[branches] L+- line 1/4 + D07 1/4\n[branches] L-+ symbolic line multiple\n[branches] L-+ line 1/4\n[branches] L-+ line 1/4 + D07 1/4\n[phase] branches: 120135 ms\n[phase] symbol: 5266 ms\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T085938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

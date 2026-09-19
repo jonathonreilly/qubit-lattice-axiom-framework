@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-chessboard-repair-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j966c",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/chessboard-repair/referee_w-jonathonsmac4f50-j966c/check.py",
+ "seed": 78987,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "97737925",
+ "started_utc": "20260919T004947Z",
+ "elapsed_s": 13.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 6 - the 3D no-go marked PROVED ('CS cannot beat 6(m/p)^(3/4)', 'stays 1296m') is not proved: it gives no lower bound on the class event's mass, and the sharp exponent 3/4 does not exclude 216m because (1/216)^(3/4) < 1/36 (R5); only the counting factor 6 does, and it is not shown to be necessary. Steps 1-4 survive and were re-verified independently (R1 orbits in 2D and 3D, R2 the lemma over six letters, R3 the 2D lower bound min = N by exact min-plus transfer, sharp patterns): 2D p >= 216m and 3D p >= 1296m hold. Step 5 is idle: it bounds the intersection over classes, while the chessboard factor is the class event itself, already bounded by step 4"
+ },
+ "review": "Referee of chessboard-repair a4 (grok-4.6): independent checks pass 5 of 5 (site-reflection orbits in 2D and 3D, the line lemma over six letters, the 2D lower bound min = N on 4x4/4x6/4x8 tori by exact min-plus transfer, sharp patterns, (1/216)^(3/4) < 1/36), so steps 1-4 hold (2D p >= 216m, 3D p >= 1296m), step 5 bounds an event the chain never uses, and the attempt fails at step 6: its 3D no-go is read off an upper bound and is not proved; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:chessboard-repair:a4/; its files are probes/work/derive/chessboard-repair/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/chessboard-repair/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "4e310e4af03150c8481d2828690e8665f538a84fb72d7ad01d8bc1d8baad9d9d",
+ "stdout_tail": "x, 6^4 row states, 4x4 torus; numbers, not claims): (p,q,r)=(216,1,1): mu(class)^(1/N)=0.007852 vs step-4 bound 0.02483; mu(all rows)^(1/N)=0.006193; (p,q,r)=(216,1,2): mu(class)^(1/N)=0.01504 vs step-4 bound 0.04967; mu(all rows)^(1/N)=0.01183; (p,q,r)=(30,1,2): mu(class)^(1/N)=0.1104 vs step-4 bound 0.3576; mu(all rows)^(1/N)=0.08634; (p,q,r)=(10,1,1): mu(class)^(1/N)=0.1798 vs step-4 bound 0.5364; mu(all rows)^(1/N)=0.1408 [bound respected, intersection < class at every point]\nPASS: R5 step 6: 36^4 = 1679616 < 216^3 = 10077696, i.e. (1/216)^(3/4) < 1/36: at p = 216m the sharp exponent 3/4 alone gives (m/p)^(3/4) = 0.0178 < 1/36 = 0.0278, so the only thing excluding 216m in 3D is the factor 6 from counting all 6^N patterns (step 4); 216^(4/3) = 1296 (the author's arithmetic) also holds\nTOTAL: PASS=5 FAIL=0\nSUMMARY: fails at step 6 - the 3D no-go marked PROVED ('CS cannot beat 6(m/p)^(3/4)', 'stays 1296m') is not proved: it gives no lower bound on the class event's mass, and the sharp exponent 3/4 does not exclude 216m because (1/216)^(3/4) < 1/36 (R5); only the counting factor 6 does, and it is not shown to be necessary. Steps 1-4 survive and were re-verified independently (R1 orbits in 2D and 3D, R2 the lemma over six letters, R3 the 2D lower bound min = N by exact min-plus transfer, sharp patterns): 2D p >= 216m and 3D p >= 1296m hold. Step 5 is idle: it bounds the intersection over classes, while the chessboard factor is the class event itself, already bounded by step 4\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j966c",
+  "at_utc": "20260919T005008Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

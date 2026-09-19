@@ -1,0 +1,6 @@
+n_ones=1204 n_none=0 n_pos=0 values=[(Fraction(-6, 1), 90), (Fraction(-5, 1), 178), (Fraction(-4, 1), 226), (Fraction(-3, 1), 352), (Fraction(-2, 1), 222), (Fraction(-1, 1), 88), (Fraction(0, 1), 48)]
+CHECK E1: PASS n_pos=0
+CHECK E2: PASS
+CHECK E3: PASS
+HIT: on the isolated 2x2x2 cube, brute_min(c=1) at every 1-site over all 256 noise patterns is in [Fraction(-6, 1), Fraction(-5, 1), Fraction(-4, 1), Fraction(-3, 1), Fraction(-2, 1), Fraction(-1, 1), Fraction(0, 1)] (n_ones=1204, n_none=0), never positive. So v<=0 holds for every site on this cone (a local potential bound), not only at successors of processed pairs. The lemma on Z^3 is not proved.
+SUMMARY: PARTIAL 2x2x2 cube potential-style bound: v<=0 at every 1-site in all 256 patterns (values [Fraction(-6, 1), Fraction(-5, 1), Fraction(-4, 1), Fraction(-3, 1), Fraction(-2, 1), Fraction(-1, 1), Fraction(0, 1)]); infinite-lattice lemma open.

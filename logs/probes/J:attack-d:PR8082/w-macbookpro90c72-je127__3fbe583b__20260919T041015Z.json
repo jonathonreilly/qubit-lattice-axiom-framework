@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8082",
+ "type": "judgment",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "w-macbookpro90c72-je127",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8082/quantifier_recurrence_extra_n.py",
+ "seed": 91015,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3fbe583b",
+ "started_utc": "20260919T041015Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - n A_n=[h0,A_{n-1}]-A_{n-1}V matches the truncated series of U through n=14 on the 2x2 pair and n=10 on a 3x3 pair"
+ },
+ "review": "Recurrence n A_n=[h0,A_{n-1}]-A_{n-1}V matches U through n=14 on 2x2 and n=10 on 3x3; no in-range failure.",
+ "what": "PR #8082 ([physics-loop] Gaussian local moment jets (conditional-suppo): attack NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-gaussian-moment-jet-20260910; git show origin/codex/native-gaussian-moment-jet-20260910:<note>. Create probes/work/pr8082/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8082/<script>.py\"",
+ "stdout_sha256": "36c1514878a34cf91b219ac5b1784a3668af53e44144571992cbf036f9c67c4d",
+ "stdout_tail": "2x2 N=14: recurrence vs U fails at [] count=0\n3x3 N=10: recurrence vs U fails at [] count=0\nSUMMARY: pattern has no purchase on this note - n A_n=[h0,A_{n-1}]-A_{n-1}V matches the truncated series of U through n=14 on the 2x2 pair and n=10 on a 3x3 pair\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je127",
+  "at_utc": "20260919T041015Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

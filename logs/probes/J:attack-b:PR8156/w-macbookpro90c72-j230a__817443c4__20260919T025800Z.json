@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8156",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "w-macbookpro90c72-j230a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8156/attack_b_even_odd_walks.py",
+ "seed": 86680,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "817443c4",
+ "started_utc": "20260919T025800Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (b) SAME TEST BOTH SIDES \u2014 closed Z^3 walks vanish at odd length and not even; 3G(0) sits in (3/4, 76/100) so the sharpened 0.76 bound is a live split from 3/4; attack does not fire"
+ },
+ "review": "Pattern (b): odd vs even closed walks split (0 vs 6,90); 3G(0) in (3/4, 76/100); attack does not fire",
+ "what": "PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915; git show origin/physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915:<note>. Create probes/work/pr8156/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8156/<script>.py\"",
+ "stdout_sha256": "e5fbc018e619b4547a3dba5ed896ac31777a6b2c4ae9804b8469fac435c9e0f3",
+ "stdout_tail": "OK: same closed-walk test: even n have returns {0: 1, 2: 6, 4: 90}; odd n=1,3 have 0 (bipartite)\nOK: same 3G(0) compared to both 3/4 and 76/100: 3/4 < 0.758193029575989 < 76/100 \u2014 the sharpened threshold is a live split\nSUMMARY: pattern (b) SAME TEST BOTH SIDES \u2014 closed Z^3 walks vanish at odd length and not even; 3G(0) sits in (3/4, 76/100) so the sharpened 0.76 bound is a live split from 3/4; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j230a",
+  "at_utc": "20260919T025801Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-menus",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 2s fib50 3 128 3000 1500 1",
+ "seed": 15082,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c67c8362",
+ "started_utc": "20260919T105122Z",
+ "elapsed_s": 46.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=2 menu=fib50 beta=3.0 L=128 T=3000 plateau_|m|=0.8933 lowk_ratio=nan seconds=46"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Finite menus under light-cone formation in 3+1 and 2+1: six axes, eight corners, twelve edges, 20 to 200 near-uniform points. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 140 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "7688efb576b67b38b749ac22654b72f3a7c3641315e8884b9b74429d7b748f09",
+ "stdout_tail": "dim=2 (event lattice Z^3) menu=fib50 beta=3.0 L=128 T=3000 T0=1500 seed=1; predecessors n=5; sigma^2=0.062222\nmemory table: level, |m|, m.e0\n         1  0.9436  +0.9436\n         2  0.9280  +0.9278\n         3  0.9204  +0.9201\n         4  0.9152  +0.9148\n         5  0.9122  +0.9116\n         7  0.9079  +0.9069\n        10  0.9034  +0.9020\n        14  0.9000  +0.8977\n        20  0.8949  +0.8922\n        28  0.8919  +0.8880\n        39  0.8900  +0.8847\n        55  0.8895  +0.8805\n        76  0.8877  +0.8772\n       107  0.8870  +0.8734\n       149  0.8907  +0.8716\n       208  0.8891  +0.8594\n       290  0.8933  +0.8596\n       405  0.8931  +0.8548\n       566  0.8946  +0.8610\n       790  0.8927  +0.8572\n      1103  0.8943  +0.8528\n      1539  0.8917  +0.8568\n      2149  0.8951  +0.8639\n      3000  0.8931  +0.8603\nSUMMARY: dim=2 menu=fib50 beta=3.0 L=128 T=3000 plateau_|m|=0.8933 lowk_ratio=nan seconds=46\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T105208Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

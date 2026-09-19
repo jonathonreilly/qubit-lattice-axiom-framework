@@ -1,0 +1,7 @@
+Jordan sin x - 2x/π min on 400-grid [0,π/2] = 0.0
+g(u)=π²(1-cos u)-2u² min on 800-grid [0,π] = 0.0
+g(0)=0.0 g(π)=0.0
+critical points of g: 2
+  u=0.000000000000 g=0.0
+  u=2.113224621811 g=6.03302777491743
+SUMMARY: SAMPLED EVIDENCE (PR #8153): C1's 1-cos u≥2u²/π² is a proved Jordan consequence (equality at 0 and π), not a never/always from random samples; grid and critical-point scan of π²(1-cos u)-2u² stay nonnegative on [0,π]; pattern has purchase and does not fire

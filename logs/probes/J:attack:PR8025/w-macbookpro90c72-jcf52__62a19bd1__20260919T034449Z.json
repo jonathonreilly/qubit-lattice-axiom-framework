@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8025",
+ "type": "judgment",
+ "lane": "local-observable-block35-20260907",
+ "worker": "w-macbookpro90c72-jcf52",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8025/executed_DR_schmidt.py",
+ "seed": 89489,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034449Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (c) EXECUTED NUMBERS - D_R closed form matches sum dim(p,q)^2 for R=0..8; Schmidt I/9; 4 plaquettes/link; Theta_0(0)=1; pattern has no purchase"
+ },
+ "review": "D_R closed form matches sum dim^2 for R=0..8, Schmidt I/9, 4 plaquettes per link, and Theta_0(0)=1, so the executed numbers hold and pattern (c) has no purchase",
+ "what": "PR #8025 ([physics-loop] local-observable block35 conditional-support): attack GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin codex/local-observable-block35-20260907; git show origin/codex/local-observable-block35-20260907:<note>. Create probes/work/pr8025/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8025/<script>.py\"",
+ "stdout_sha256": "61dc1f0c8bbed5c5a937c1253beb304247915eae6466ea7a5f7242bdb1407432",
+ "stdout_tail": "R=0: sum dim^2=1 closed=1\nR=1: sum dim^2=19 closed=19\nR=2: sum dim^2=155 closed=155\nR=3: sum dim^2=805 closed=805\nR=4: sum dim^2=3136 closed=3136\nR=5: sum dim^2=9996 closed=9996\nR=6: sum dim^2=27468 closed=27468\nR=7: sum dim^2=67320 closed=67320\nR=8: sum dim^2=150645 closed=150645\nSchmidt single-link reduced = I/9: (1/3)^2=1/9\ncubic link in at most 4 plaquettes; face 4 links\nTheta_0(0)=1\nTheta_d(0)=0 for d>=1 (empty tail)\nJ_p=ReTr/3, |J|<=1 so ||Phi_p||<=v\nSUMMARY: attack pattern (c) EXECUTED NUMBERS - D_R closed form matches sum dim(p,q)^2 for R=0..8; Schmidt I/9; 4 plaquettes/link; Theta_0(0)=1; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcf52",
+  "at_utc": "20260919T034449Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

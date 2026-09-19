@@ -1,0 +1,15 @@
+R=0: sum dim^2=1 closed=1
+R=1: sum dim^2=19 closed=19
+R=2: sum dim^2=155 closed=155
+R=3: sum dim^2=805 closed=805
+R=4: sum dim^2=3136 closed=3136
+R=5: sum dim^2=9996 closed=9996
+R=6: sum dim^2=27468 closed=27468
+R=7: sum dim^2=67320 closed=67320
+R=8: sum dim^2=150645 closed=150645
+Schmidt single-link reduced = I/9: (1/3)^2=1/9
+cubic link in at most 4 plaquettes; face 4 links
+Theta_0(0)=1
+Theta_d(0)=0 for d>=1 (empty tail)
+J_p=ReTr/3, |J|<=1 so ||Phi_p||<=v
+SUMMARY: attack pattern (c) EXECUTED NUMBERS - D_R closed form matches sum dim(p,q)^2 for R=0..8; Schmidt I/9; 4 plaquettes/link; Theta_0(0)=1; pattern has no purchase

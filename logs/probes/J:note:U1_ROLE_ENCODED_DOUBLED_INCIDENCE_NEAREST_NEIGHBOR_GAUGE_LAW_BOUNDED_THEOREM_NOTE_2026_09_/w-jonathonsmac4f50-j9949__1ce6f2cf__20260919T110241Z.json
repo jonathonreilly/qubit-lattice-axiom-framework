@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEAREST_NEIGHBOR_GAUGE_LAW_BOUNDED_THEOREM_NOTE_2026_09_",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j9949",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEARES/role_rank_shells_and_literal_conditionals.py",
+ "seed": 15761,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1ce6f2cf",
+ "started_utc": "20260919T110241Z",
+ "elapsed_s": 8.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "of the 262144 role shells exactly 8 admit a central role and none admits two; the GF(2) solution count is 8 on every all-even torus with sides 2..8 and 0 whenever a side is odd; the face sum recovers T(Phi) for every boundary with N = 2..8, the curl is gauge invariant for N = 2..6, and the square symmetries keep every factor for N = 2..4; on a 6x6x6 physical torus with N = 3 and 4 the joint-law conditional over the full one-site alphabet (257 and 785 labels) equals the rule at all 600 sampled sites; no falsifier fires"
+ },
+ "review": "Read the script and its output: of all 262144 role shells exactly 8 admit a central role and none admits two; the GF(2) solution count of the role equations is 8 on every all-even torus with sides 2..8 and 0 whenever a side is odd (343 tori); the face sum recovers T(Phi) for every boundary with N = 2..8, the curl is gauge invariant for N = 2..6, and the square symmetries induced by proper cubic rotations (quarter turn and normal-flipping half turn, with orientation signs) keep every factor for N = 2..4; on a 6x6x6 physical torus with N = 3 and 4 the joint-law conditional over the full one-site alphabet (257 and 785 labels) equals the rule at all 600 sampled sites; no falsifier fires.",
+ "what": "Note on main: docs/U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEAREST_NEIGHBOR_GAUGE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEARES/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEARES/<script>.py\"",
+ "stdout_sha256": "e8d93a24f5541ccc19ade2649e789086d9754c72dd2eeedfe2b5716f42b25f54",
+ "stdout_tail": "1. role shells: {0: 262136, 1: 8, 'more': 0} (shells with exactly one central role, zero, more)\n2. role fields by GF(2) rank on 343 tori L_i = 2..8: 8 on every all-even torus and 0 otherwise: True; e.g. {'(2, 2, 2)': 8, '(4, 6, 8)': 8, '(8, 8, 8)': 8, '(3, 4, 4)': 0, '(5, 5, 5)': 0}\n3. face sum = T(Phi) and gauge invariance of the curl (exhaustive): {2: (True, True), 3: (True, True), 4: (True, True), 5: (True, True), 6: (True, True), 7: (True, None), 8: (True, None)}; square symmetries keep every factor (N = 2..4): {2: True, 3: True, 4: True}\n4. literal full conditionals on the 6x6x6 torus (agree, sites checked, alphabet size, sector): {3: (True, 300, 257, (1, 0, 0)), 4: (True, 300, 785, (1, 0, 1))}\nSUMMARY: of the 262144 role shells exactly 8 admit a central role and none admits two; the GF(2) solution count is 8 on every all-even torus with sides 2..8 and 0 whenever a side is odd; the face sum recovers T(Phi) for every boundary with N = 2..8, the curl is gauge invariant for N = 2..6, and the square symmetries keep every factor for N = 2..4; on a 6x6x6 physical torus with N = 3 and 4 the joint-law conditional over the full one-site alphabet (257 and 785 labels) equals the rule at all 600 sampled sites; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9949",
+  "at_utc": "20260919T110300Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

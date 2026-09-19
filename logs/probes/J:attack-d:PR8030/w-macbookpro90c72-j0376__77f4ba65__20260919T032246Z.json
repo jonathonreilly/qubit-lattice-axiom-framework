@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8030",
+ "type": "judgment",
+ "lane": "continuum-boundary-block40-20260907",
+ "worker": "w-macbookpro90c72-j0376",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8030/quantifier_extra_n.py",
+ "seed": 88166,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "77f4ba65",
+ "started_utc": "20260919T032246Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 xy-plaquette link disjointness holds at extra n=2,3 as well as the executed n=6 spacing-2 and n=4 spacing-3"
+ },
+ "review": "Link disjointness holds at extra n=2,3 as well as executed n=4,6; no quantifier-scope defect",
+ "what": "PR #8030 ([physics-loop] continuum-boundary block40 conditional-suppor): attack GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/continuum-boundary-block40-20260907; git show origin/codex/continuum-boundary-block40-20260907:<note>. Create probes/work/pr8030/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8030/<script>.py\"",
+ "stdout_sha256": "f403e7aa250531e2239b188c7b1b13984d6ae1aad8d1b1cc10e25f8b61c8ac38",
+ "stdout_tail": "spacing=2 n=2: plaquettes=8 shared-pairs=0\nspacing=2 n=3: plaquettes=27 shared-pairs=0\nspacing=2 n=6: plaquettes=216 shared-pairs=0\nspacing=3 n=2: plaquettes=8 shared-pairs=0\nspacing=3 n=3: plaquettes=27 shared-pairs=0\nspacing=3 n=4: plaquettes=64 shared-pairs=0\nSUMMARY: pattern has no purchase on this note \u2014 xy-plaquette link disjointness holds at extra n=2,3 as well as the executed n=6 spacing-2 and n=4 spacing-3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0376",
+  "at_utc": "20260919T032246Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,7 @@
+spacing=2 n=2: plaquettes=8 shared-pairs=0
+spacing=2 n=3: plaquettes=27 shared-pairs=0
+spacing=2 n=6: plaquettes=216 shared-pairs=0
+spacing=3 n=2: plaquettes=8 shared-pairs=0
+spacing=3 n=3: plaquettes=27 shared-pairs=0
+spacing=3 n=4: plaquettes=64 shared-pairs=0
+SUMMARY: pattern has no purchase on this note — xy-plaquette link disjointness holds at extra n=2,3 as well as the executed n=6 spacing-2 and n=4 spacing-3

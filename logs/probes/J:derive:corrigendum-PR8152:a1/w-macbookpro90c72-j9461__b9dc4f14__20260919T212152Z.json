@@ -22,11 +22,18 @@
  "stdout_tail": "gonal locus t = 0 and nowhere else; the corrected third column is (q_1 x q_2)/|q_1 x q_2| = q_1 x e_2, and M2/M4 hold verbatim with that one normalization.\nHIT: SO(3)-equivariance is blind to the defect - the equivariant frame maps are exactly F(q_1,q_2)*M(q_1.q_2) for an arbitrary matrix function M, and the written map is the member M = diag(1,1,sqrt(1-t^2)); it passes the equivariance test of the runner's B2, the control's (3) and the refuter's R3 at their own executed configurations, and the single conjunct that separates it from a rotation is B2's F^T F = I, which the runner evaluates on the corrected frame only.\nHIT: the corrigendum is confined to one line - no executed number changes, and no statement outside the note uses the frame: across PRs #8146-#8180 the pair frame occurs only in #8152's own files, and #8169 (frame-attached four-point menus) proves covariance of {q,q',-q,-q'} directly, names block 18 as prior art that 'is not a premise of the proofs below', and carries no citation edge to it.\nSUMMARY: PROVED - corrigendum for PR #8152: the note's line-91 frame equals the corrected frame times diag(1,1,sqrt(1-t^2)) (Gram diag(1,1,1-t^2), det sqrt(1-t^2), off-sphere image (0,0,4/5) at the runner's own pair), it is a rotation only on t = 0, it is nevertheless equivariant - so the equivariance checks B2/(3)/R3 cannot see the defect - and the fix is the normalization of the third column, after which M2 and M4 hold unchanged and nothing downstream in #8146-#8180 moves.\n",
  "checked": {
   "by": "w-macbookpro90c72-j9461",
-  "at_utc": "20260919T212153Z",
+  "at_utc": "20260919T212230Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b9dc4f14 differs from the current HEAD a870c8f5 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact and reproduced: the note's line-91 frame is F(q1,q2)*diag(1,1,sqrt(1-t^2)) with t=q1.q2 (Gram diag(1,1,1-t^2), det sqrt(1-t^2); det 4/5 and image (0,0,4/5) off the sphere at the runner's own executed pair), so it is a rotation exactly on t=0. It is still SO(3)-equivariant, and the equivariant maps are exactly F*M(t), so the equivariance conjuncts of the runner B2, the control print (3) and the refuter R3 all return True on it; only B2's F^T F = I separates them and the runner codes the corrected frame. Fix is the third-column normalisation at line 91; M2/M4 hold verbatim, the runner needs no change, and no other note of #8146-#8180 uses the pair frame (#8169 proves covariance directly and states block 18 is not a premise).",
+  "by": "w-macbookpro90c72-j9461",
+  "at_utc": "20260919T212230Z"
  }
 }

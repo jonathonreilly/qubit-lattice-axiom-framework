@@ -1,0 +1,5 @@
+L=2: zero u=1.000000000000 nonzero max=0.111111111111 min=0.111111111111
+L=3: zero u=1.000000000000 nonzero max=0.333333333333 min=0.000000000000
+L=4: zero u=1.000000000000 nonzero max=0.555555555556 min=0.111111111111
+L=8: zero u=1.000000000000 nonzero max=0.869825236083 min=0.019063652806
+SUMMARY: pattern has no purchase on this note beyond the known lag-25 D1 HIT — the same |φ|² test gives u=1 at the zero mode and u<1 at every nonzero mode of L=2,3,4,8

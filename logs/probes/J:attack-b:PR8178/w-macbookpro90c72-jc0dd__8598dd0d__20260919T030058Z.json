@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8178",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block34-sphere",
+ "worker": "w-macbookpro90c72-jc0dd",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8178/same_test_zero_vs_nonzero_u.py",
+ "seed": 86858,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8598dd0d",
+ "started_utc": "20260919T030058Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known lag-25 D1 HIT \u2014 the same |\u03c6|\u00b2 test gives u=1 at the zero mode and u<1 at every nonzero mode of L=2,3,4,8"
+ },
+ "review": "Same |phi|^2 test: u=1 only at zero mode on L=2,3,4,8; no new defect beyond known D1 HIT",
+ "what": "PR #8178 (ail34: the torus memory time of the sphere formation law \u2014 t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917; git show origin/physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917:<note>. Create probes/work/pr8178/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8178/<script>.py\"",
+ "stdout_sha256": "ade2e3e3dc2addbb2417df1e42c249cd4ca5cc5e7e9d5cfdf6b4dd5017e28691",
+ "stdout_tail": "L=2: zero u=1.000000000000 nonzero max=0.111111111111 min=0.111111111111\nL=3: zero u=1.000000000000 nonzero max=0.333333333333 min=0.000000000000\nL=4: zero u=1.000000000000 nonzero max=0.555555555556 min=0.111111111111\nL=8: zero u=1.000000000000 nonzero max=0.869825236083 min=0.019063652806\nSUMMARY: pattern has no purchase on this note beyond the known lag-25 D1 HIT \u2014 the same |\u03c6|\u00b2 test gives u=1 at the zero mode and u<1 at every nonzero mode of L=2,3,4,8\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc0dd",
+  "at_utc": "20260919T030059Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

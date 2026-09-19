@@ -1,0 +1,3 @@
+P<=4A for all 1<=l,w<=30: True
+4×4 on 5×5 torus: area 16, complement 9: True
+SUMMARY: pattern has no purchase on this note: P<=4A holds on integer rectangles and the 4×4-in-5×5 complement example is 9 as written

@@ -1,0 +1,7 @@
+unordered pairs with repetition: 15
+2 modes × 2 P/O × 15 pairs = 60 candidates: True
+12 P + 3 O channels exist as a K6 1-factor plus the rest: True
+Q_{t,u}(x)-x^{-2} = P(x)(Ax+B)/x^2 identically: True
+all 15 schedule pairs give positive A,B at δ=1/4: True
+trial-norm caps X=4√15 and V=32√30 exist: True
+SUMMARY: pattern has no purchase on this note: the 15-pair schedule, 60 candidates, 12+3 channel split, quartic envelope identity, and δ=1/4 with positive A,B all exist as written

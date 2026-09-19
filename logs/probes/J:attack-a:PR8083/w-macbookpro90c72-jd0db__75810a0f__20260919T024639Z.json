@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8083",
+ "type": "judgment",
+ "lane": "native-quartic-ward-20260910",
+ "worker": "w-macbookpro90c72-jd0db",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8083/witness_schedule_channels.py",
+ "seed": 85999,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "75810a0f",
+ "started_utc": "20260919T024639Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the 15-pair schedule, 60 candidates, 12+3 channel split, quartic envelope identity, and \u03b4=1/4 with positive A,B all exist as written"
+ },
+ "review": "15-pair schedule, 60 candidates, 12+3 channels and quartic envelope identity exist as stated; pattern has no purchase",
+ "what": "PR #8083 ([physics-loop] Quartic Ward error bounds (conditional-suppor): attack NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-quartic-ward-20260910; git show origin/codex/native-quartic-ward-20260910:<note>. Create probes/work/pr8083/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8083/<script>.py\"",
+ "stdout_sha256": "083c6205c601c7f7d3415d4ad186bb22590559f6e300c66ae2fd91ae9a1afc2c",
+ "stdout_tail": "unordered pairs with repetition: 15\n2 modes \u00d7 2 P/O \u00d7 15 pairs = 60 candidates: True\n12 P + 3 O channels exist as a K6 1-factor plus the rest: True\nQ_{t,u}(x)-x^{-2} = P(x)(Ax+B)/x^2 identically: True\nall 15 schedule pairs give positive A,B at \u03b4=1/4: True\ntrial-norm caps X=4\u221a15 and V=32\u221a30 exist: True\nSUMMARY: pattern has no purchase on this note: the 15-pair schedule, 60 candidates, 12+3 channel split, quartic envelope identity, and \u03b4=1/4 with positive A,B all exist as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd0db",
+  "at_utc": "20260919T024639Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

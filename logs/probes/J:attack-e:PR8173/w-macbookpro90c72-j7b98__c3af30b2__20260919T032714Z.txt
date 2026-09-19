@@ -1,0 +1,34 @@
+T1 exact: beta*E(k)*<(theta_hat)^2> = 1 (Gaussian, not sampled)
+T2 one-site form is kappa E[(s^1)^2] = E[s^3] (kappa=kappa); exact Ward, not sampled
+claim_scope n>=2 interval: 0.86-0.98
+known executed-numbers HIT (do not re-find): n>=2 tokens leave 0.86-0.98
+sampling-language paragraphs: 19
+  LANG: --- claim_id: admissibility_rule_transverse_kernel_normalization_in_the_ordered_sphere_static_law_measured_between_the_bounds_with_the_transverse_sum_rule_and_the_spin_wave_reference_bounded_theorem_note_2026-09-16 claim…
+  LANG: # The transverse kernel's normalization in the ordered sphere static law: measured between the bounds, with the transverse sum rule and the spin-wave reference
+  LANG: **Date:** 2026-09-16 **Type:** bounded_theorem (T1–T3); frontier discovery for the measured normalization **Status:** bounded-support (exact; conditional on the named supplied readings; the normalization measured on fini…
+  LANG: Blocks 19–23 placed the gravity node's Green-function kernel in the transverse channel of the ordered sphere static law: for `β > 76/100` and every fixed `k ≠ 0`, the transverse structure factor lies between `(M²/3)²/(βE…
+  LANG: ```yaml actual_current_surface_status: bounded-support target_claim_type: bounded_theorem trace_class: frontier_discovery target_claim_id: null target_blocker_text: "the campaign queue's item 'the kernel's normalization …
+  LANG: The infrared bound and the Bogoliubov-type lower bound for the transverse channel of the classical Heisenberg model are the Fröhlich–Simon–Spencer and Dyson–Lieb–Simon route, carried for this lane in block 19; the linear…
+  LANG: **Statement.** For the sphere static law on any finite torus with field `h > 0` along `e_3`, `βh · N ⟨(m̂¹)²⟩ = ⟨m̂³⟩`. In particular the transverse response at `k = 0`, `N⟨(m̂¹)²⟩`, equals `⟨m̂³⟩/(βh)` and grows without…
+  LANG: *Reading.* At `k = 0` the transverse kernel's normalization is not measured but fixed: `⟨m̂³⟩/(βh)`, the magnetization over the field. This is the exact end of the kernel at long wavelength.
+  LANG: *Reading.* With block 19's upper bound this is that block's sum rule; here it is the check that the measured structure factor integrates to the measured local transverse moment.
+  LANG: ## Executed: the normalization measured (frontier discovery, not proved)
+  LANG: Control `specs/supervisor_control_block29_kernel.py` (heat-bath checkerboard sweeps with the exact conditional from an aligned start; every second sweep after thermalisation: `m̂`, the transverse components in the instan…
+  LANG: What the runs say. (i) For the modes `n ≥ 2` the normalization lies between `0.86` and `1.01` at every lattice size and coupling, with no trend in `k`; the averages over `n = 2 … 8` are about `0.91` at `β = 0.8`–`1`, `0.…
+table L=16 beta=0.8 n>=2 avg=0.9157 min=0.89 max=0.95
+table L=16 beta=1.0 n>=2 avg=0.9129 min=0.87 max=0.95
+table L=16 beta=1.5 n>=2 avg=0.9586 min=0.92 max=1.01
+table L=16 beta=2.0 n>=2 avg=0.9543 min=0.91 max=0.98
+table L=16 beta=3.0 n>=2 avg=0.9757 min=0.94 max=1.00
+table L=24 beta=0.8 n>=2 avg=0.9014 min=0.86 max=0.93
+table L=24 beta=1.0 n>=2 avg=0.8957 min=0.86 max=0.94
+table L=24 beta=1.5 n>=2 avg=0.9286 min=0.90 max=0.96
+table L=24 beta=2.0 n>=2 avg=0.9557 min=0.92 max=1.01
+table L=32 beta=1.0 n>=2 avg=0.9271 min=0.88 max=0.97
+table L=32 beta=1.5 n>=2 avg=0.9329 min=0.88 max=0.98
+table n>=2 span 0.86-1.01 (claim_scope 0.86-0.98 is the known HIT)
+T1-T3: exact identities (Gaussian, Ward, Parseval); no never/always sampler
+falsifier 'outside [(m^2/3)^2, 1] beyond scatter' is a measurement check,
+already covered by the known executed-numbers range defect
+T1 Laplacian E(2pi/4,0,0) = 2 exactly 2; plane-wave, not sampled
+SUMMARY: SAMPLED EVIDENCE (PR #8173): the only sampling language is the executed c(beta,k) table / claim_scope 0.86-0.98 for n>=2, already a known HIT; T1-T3 are exact (c=1 Gaussian, Ward, Parseval) and the 'from below' / 'no trend in k' lines are measurement summaries of that same table, not a remaining never/always conjecture to hill-climb; pattern has no purchase beyond the known HIT

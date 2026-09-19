@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8173",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block29-transv",
+ "worker": "w-macbookpro90c72-j7b98",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8173/sampled_evidence_no_remaining.py",
+ "seed": 88434,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c3af30b2",
+ "started_utc": "20260919T032714Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8173): the only sampling language is the executed c(beta,k) table / claim_scope 0.86-0.98 for n>=2, already a known HIT; T1-T3 are exact (c=1 Gaussian, Ward, Parseval) and the 'from below' / 'no trend in k' lines are measurement summaries of that same table, not a remaining never/always conjecture to hill-climb; pattern has no purchase beyond the known HIT"
+ },
+ "review": "pattern (e) has no purchase: T1-T3 are exact Gaussian/Ward/Parseval identities and the only sampling language is the executed n>=2 c range 0.86-0.98 already listed as a known HIT, with no remaining never/always conjecture to hill-climb",
+ "what": "PR #8173 ([physics-loop] admissibility-induced-law block29 \u2014 bounded_t): attack ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916; git show origin/physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916:<note>. Create probes/work/pr8173/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8173/<script>.py\"",
+ "stdout_sha256": "a8a1cdc7b10cc965c0157ae2a5b549f1ade2f59f6ff444f3b19062f194815d3c",
+ "stdout_tail": "e normalization lies between `0.86` and `1.01` at every lattice size and coupling, with no trend in `k`; the averages over `n = 2 \u2026 8` are about `0.91` at `\u03b2 = 0.8`\u2013`1`, `0.\u2026\ntable L=16 beta=0.8 n>=2 avg=0.9157 min=0.89 max=0.95\ntable L=16 beta=1.0 n>=2 avg=0.9129 min=0.87 max=0.95\ntable L=16 beta=1.5 n>=2 avg=0.9586 min=0.92 max=1.01\ntable L=16 beta=2.0 n>=2 avg=0.9543 min=0.91 max=0.98\ntable L=16 beta=3.0 n>=2 avg=0.9757 min=0.94 max=1.00\ntable L=24 beta=0.8 n>=2 avg=0.9014 min=0.86 max=0.93\ntable L=24 beta=1.0 n>=2 avg=0.8957 min=0.86 max=0.94\ntable L=24 beta=1.5 n>=2 avg=0.9286 min=0.90 max=0.96\ntable L=24 beta=2.0 n>=2 avg=0.9557 min=0.92 max=1.01\ntable L=32 beta=1.0 n>=2 avg=0.9271 min=0.88 max=0.97\ntable L=32 beta=1.5 n>=2 avg=0.9329 min=0.88 max=0.98\ntable n>=2 span 0.86-1.01 (claim_scope 0.86-0.98 is the known HIT)\nT1-T3: exact identities (Gaussian, Ward, Parseval); no never/always sampler\nfalsifier 'outside [(m^2/3)^2, 1] beyond scatter' is a measurement check,\nalready covered by the known executed-numbers range defect\nT1 Laplacian E(2pi/4,0,0) = 2 exactly 2; plane-wave, not sampled\nSUMMARY: SAMPLED EVIDENCE (PR #8173): the only sampling language is the executed c(beta,k) table / claim_scope 0.86-0.98 for n>=2, already a known HIT; T1-T3 are exact (c=1 Gaussian, Ward, Parseval) and the 'from below' / 'no trend in k' lines are measurement summaries of that same table, not a remaining never/always conjecture to hill-climb; pattern has no purchase beyond the known HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7b98",
+  "at_utc": "20260919T032715Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

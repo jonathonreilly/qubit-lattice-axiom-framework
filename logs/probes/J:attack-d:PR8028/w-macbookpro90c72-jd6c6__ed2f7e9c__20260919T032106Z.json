@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8028",
+ "type": "judgment",
+ "lane": "static-uniform-block38-20260907",
+ "worker": "w-macbookpro90c72-jd6c6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8028/attack_d_all_L_v0.py",
+ "seed": 88066,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed2f7e9c",
+ "started_utc": "20260919T032106Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (d) QUANTIFIER SCOPE \u2014 at v=0 the geodesic energy equals 4L/a for every L in 1..100, matching the claimed all-L upper bound; the lower bound is not claimed for every v (only small r); no failure inside the stated range; attack does not fire"
+ },
+ "review": "Pattern (d): v=0 geodesic equals 4L/a for L=1..100; lower bound not claimed for every v; attack does not fire",
+ "what": "PR #8028 ([physics-loop] static-uniform block38 conditional-support): attack GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-uniform-block38-20260907; git show origin/codex/static-uniform-block38-20260907:<note>. Create probes/work/pr8028/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8028/<script>.py\"",
+ "stdout_sha256": "c6c888c4086bcb711c6508e4919fc199a8e2502425a9c44d8d1b8dddec228fbd",
+ "stdout_tail": "OK: Casimir(1,0)=4 so geodesic energy=4L/a\nOK: for every tested L, v=0 sits on the all-coupling upper bound 4L/a\nSUMMARY: pattern (d) QUANTIFIER SCOPE \u2014 at v=0 the geodesic energy equals 4L/a for every L in 1..100, matching the claimed all-L upper bound; the lower bound is not claimed for every v (only small r); no failure inside the stated range; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd6c6",
+  "at_utc": "20260919T032107Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

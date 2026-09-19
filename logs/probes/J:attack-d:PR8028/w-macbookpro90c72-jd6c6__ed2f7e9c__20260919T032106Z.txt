@@ -1,0 +1,3 @@
+OK: Casimir(1,0)=4 so geodesic energy=4L/a
+OK: for every tested L, v=0 sits on the all-coupling upper bound 4L/a
+SUMMARY: pattern (d) QUANTIFIER SCOPE — at v=0 the geodesic energy equals 4L/a for every L in 1..100, matching the claimed all-L upper bound; the lower bound is not claimed for every v (only small r); no failure inside the stated range; attack does not fire

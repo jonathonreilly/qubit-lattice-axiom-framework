@@ -1,0 +1,8 @@
+T_4^3 Haar: EX=6 EX^2=42 E cos^2=1/2
+T_8^3 Haar: EX=6 EX^2=42 E cos^2=1/2
+(2/π)∫ a^3/(a+t^2) dt at a=1: 1 vs a^{5/2}=1
+(2/π)∫ a^3/(a+t^2) dt at a=4: 32 vs a^{5/2}=32
+(2/π)∫ a^3/(a+t^2) dt at a=9: 243 vs a^{5/2}=243
+control: (1/π)∫dt/(1+t^2)=1/2 (would be 1/2, not 1)
+low-piece ∫_0^ε (42-6t^2+t^4)dt = eps**5/5 - 2*eps**3 + 42*eps
+SUMMARY: pattern has no purchase on this note - Haar E[cos^2]=1/2 and (EX,EX^2)=(6,42) on T_4^3 and T_8^3; ω5's 2/π reproduces a^{5/2} at a=1,4,9; low-piece integral is 42ε-2ε^3+ε^5/5

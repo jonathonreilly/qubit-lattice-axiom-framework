@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8079",
+ "type": "judgment",
+ "lane": "native-finite-moment-ward-20260910",
+ "worker": "w-macbookpro90c72-ja186",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8079/normalization_two_pi.py",
+ "seed": 87830,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "19084a66",
+ "started_utc": "20260919T031710Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - Haar E[cos^2]=1/2 and (EX,EX^2)=(6,42) on T_4^3 and T_8^3; \u03c95's 2/\u03c0 reproduces a^{5/2} at a=1,4,9; low-piece integral is 42\u03b5-2\u03b5^3+\u03b5^5/5"
+ },
+ "review": "Haar E[cos^2]=1/2 and (EX,EX^2)=(6,42) on T_4^3 and T_8^3, \u03c95's 2/\u03c0 reproduces a^{5/2} at a=1,4,9, and the low-piece 1/3 integral matches, so the normalization factors hold and the pattern has no purchase",
+ "what": "PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p bo): attack NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-finite-moment-ward-20260910; git show origin/codex/native-finite-moment-ward-20260910:<note>. Create probes/work/pr8079/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8079/<script>.py\"",
+ "stdout_sha256": "ceb7c64102f47e54cb0164f70dc3f79c51a7ae989b9da891a164ac5198e73482",
+ "stdout_tail": "T_4^3 Haar: EX=6 EX^2=42 E cos^2=1/2\nT_8^3 Haar: EX=6 EX^2=42 E cos^2=1/2\n(2/\u03c0)\u222b a^3/(a+t^2) dt at a=1: 1 vs a^{5/2}=1\n(2/\u03c0)\u222b a^3/(a+t^2) dt at a=4: 32 vs a^{5/2}=32\n(2/\u03c0)\u222b a^3/(a+t^2) dt at a=9: 243 vs a^{5/2}=243\ncontrol: (1/\u03c0)\u222bdt/(1+t^2)=1/2 (would be 1/2, not 1)\nlow-piece \u222b_0^\u03b5 (42-6t^2+t^4)dt = eps**5/5 - 2*eps**3 + 42*eps\nSUMMARY: pattern has no purchase on this note - Haar E[cos^2]=1/2 and (EX,EX^2)=(6,42) on T_4^3 and T_8^3; \u03c95's 2/\u03c0 reproduces a^{5/2} at a=1,4,9; low-piece integral is 42\u03b5-2\u03b5^3+\u03b5^5/5\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja186",
+  "at_utc": "20260919T031711Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

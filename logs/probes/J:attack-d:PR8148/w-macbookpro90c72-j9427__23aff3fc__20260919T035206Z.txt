@@ -1,0 +1,4 @@
+kernel sums to 1 on 8 triples x 3 pred types
+plaquette orders 4!=24
+spatial 4-cycle exists, NN edges
+SUMMARY: pattern has no purchase on this note - the six-axis kernel sums to 1 for every tested positive triple including constant and non-constant rules; 24 plaquette orders; a Z^3 4-cycle exists (not the known R3 TV-distance HIT)

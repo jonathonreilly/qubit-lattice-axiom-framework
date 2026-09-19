@@ -1,0 +1,32 @@
+{
+ "task": "M:admissibility_dirac_kahler_joint_pin_order_extended_alphabet_2026_08_27",
+ "type": "mutation-census",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "for m in $(python3 scripts/admissibility_dirac_kahler_joint_pin_order_extended_alphabet_2026_08_27.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/admissibility_dirac_kahler_joint_pin_order_extended_alphabet_2026_08_27.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 5139,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "92192c32",
+ "started_utc": "20260919T080539Z",
+ "elapsed_s": 1710.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "31e1a8d6af81c24c460dcb9bd7a072f982377f9410dbf1adbb0cf2f23318e2d9",
+ "stdout_tail": "laim_objects_registered\nTOTAL: PASS=27 FAIL=2\n== claim_gravity_supplied\nTOTAL: PASS=28 FAIL=1\n== claim_joint_is_measurement\nTOTAL: PASS=28 FAIL=1\n== claim_order_is_quantum_signature\nTOTAL: PASS=28 FAIL=1\n== claim_extended_alphabet_complete\nTOTAL: PASS=28 FAIL=1\n== claim_classical_no_go\nTOTAL: PASS=28 FAIL=1\n== claim_readings_licensed\nTOTAL: PASS=28 FAIL=1\n== break_joint_instrument\nTOTAL: PASS=28 FAIL=1\n== break_joint_normalisation\nTOTAL: PASS=28 FAIL=1\n== break_joint_nonnegativity\nTOTAL: PASS=28 FAIL=1\n== break_two_pin_identity\nTOTAL: PASS=28 FAIL=1\n== break_compounding\nTOTAL: PASS=28 FAIL=1\n== break_order_dependence\nTOTAL: PASS=28 FAIL=1\n== break_structural_commutation\nTOTAL: PASS=28 FAIL=1\n== break_order_residual_split\nTOTAL: PASS=28 FAIL=1\n== break_single_readout_solvability\nTOTAL: PASS=28 FAIL=1\n== break_extended_alphabet\nTOTAL: PASS=28 FAIL=1\n== break_extended_stack_inconsistency\nTOTAL: PASS=28 FAIL=1\n== break_exclusion_series\nTOTAL: PASS=28 FAIL=1\n== break_conjecture_refutation\nTOTAL: PASS=28 FAIL=1\n== claim_reading_identified\nTOTAL: PASS=28 FAIL=1\n== claim_noncommutativity_is_nonclassical\nTOTAL: PASS=28 FAIL=1\n== claim_order_axis_is_new\nTOTAL: PASS=28 FAIL=1\n== claim_alphabet_exhaustive\nTOTAL: PASS=28 FAIL=1\n== claim_rank_law\nTOTAL: PASS=28 FAIL=1\n== claim_bound_violated\nTOTAL: PASS=28 FAIL=1\n== break_instance_scope\nTOTAL: PASS=28 FAIL=1\n== drop_n5_fence\nTOTAL: PASS=28 FAIL=1\n== break_nsimplify_absence\nTOTAL: PASS=28 FAIL=1\n== break_float_absence\nTOTAL: PASS=28 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T083409Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+  ]
+ }
+}

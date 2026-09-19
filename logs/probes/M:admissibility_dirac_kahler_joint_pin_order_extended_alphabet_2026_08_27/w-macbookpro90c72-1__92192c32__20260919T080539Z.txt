@@ -1,0 +1,64 @@
+== stale_main_authority
+TOTAL: PASS=28 FAIL=1
+== stale_parent_authority
+TOTAL: PASS=28 FAIL=1
+== claim_objects_registered
+TOTAL: PASS=27 FAIL=2
+== claim_gravity_supplied
+TOTAL: PASS=28 FAIL=1
+== claim_joint_is_measurement
+TOTAL: PASS=28 FAIL=1
+== claim_order_is_quantum_signature
+TOTAL: PASS=28 FAIL=1
+== claim_extended_alphabet_complete
+TOTAL: PASS=28 FAIL=1
+== claim_classical_no_go
+TOTAL: PASS=28 FAIL=1
+== claim_readings_licensed
+TOTAL: PASS=28 FAIL=1
+== break_joint_instrument
+TOTAL: PASS=28 FAIL=1
+== break_joint_normalisation
+TOTAL: PASS=28 FAIL=1
+== break_joint_nonnegativity
+TOTAL: PASS=28 FAIL=1
+== break_two_pin_identity
+TOTAL: PASS=28 FAIL=1
+== break_compounding
+TOTAL: PASS=28 FAIL=1
+== break_order_dependence
+TOTAL: PASS=28 FAIL=1
+== break_structural_commutation
+TOTAL: PASS=28 FAIL=1
+== break_order_residual_split
+TOTAL: PASS=28 FAIL=1
+== break_single_readout_solvability
+TOTAL: PASS=28 FAIL=1
+== break_extended_alphabet
+TOTAL: PASS=28 FAIL=1
+== break_extended_stack_inconsistency
+TOTAL: PASS=28 FAIL=1
+== break_exclusion_series
+TOTAL: PASS=28 FAIL=1
+== break_conjecture_refutation
+TOTAL: PASS=28 FAIL=1
+== claim_reading_identified
+TOTAL: PASS=28 FAIL=1
+== claim_noncommutativity_is_nonclassical
+TOTAL: PASS=28 FAIL=1
+== claim_order_axis_is_new
+TOTAL: PASS=28 FAIL=1
+== claim_alphabet_exhaustive
+TOTAL: PASS=28 FAIL=1
+== claim_rank_law
+TOTAL: PASS=28 FAIL=1
+== claim_bound_violated
+TOTAL: PASS=28 FAIL=1
+== break_instance_scope
+TOTAL: PASS=28 FAIL=1
+== drop_n5_fence
+TOTAL: PASS=28 FAIL=1
+== break_nsimplify_absence
+TOTAL: PASS=28 FAIL=1
+== break_float_absence
+TOTAL: PASS=28 FAIL=1

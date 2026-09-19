@@ -1,0 +1,2 @@
+8 corners, 4 D-sets, 8 groupings
+SUMMARY: pattern has no purchase on this note: R3(a) holds on all 8 corners: D_kappa = D_{-kappa} (4 distinct D-sets of size 6), groupings of kappa and -kappa differ, and all 8 groupings T_kappa are pairwise distinct

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8139",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block09-z3-mar",
+ "worker": "w-macbookpro90c72-j9c90",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8139/r3a_dependency_sets.py",
+ "seed": 83436,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cdcf86cb",
+ "started_utc": "20260919T020356Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: R3(a) holds on all 8 corners: D_kappa = D_{-kappa} (4 distinct D-sets of size 6), groupings of kappa and -kappa differ, and all 8 groupings T_kappa are pairwise distinct"
+ },
+ "review": "R3(a) holds: 4 D-sets paired by +/- kappa, 8 distinct groupings; pattern has no purchase",
+ "what": "PR #8139 ([physics-loop] admissibility-induced-law block09 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915; git show origin/physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915:<note>. Create probes/work/pr8139/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8139/<script>.py\"",
+ "stdout_sha256": "8939e5210116eb2d5e5b876055b21bba0239bfc9d48b8220f4ec177895d566cb",
+ "stdout_tail": "8 corners, 4 D-sets, 8 groupings\nSUMMARY: pattern has no purchase on this note: R3(a) holds on all 8 corners: D_kappa = D_{-kappa} (4 distinct D-sets of size 6), groupings of kappa and -kappa differ, and all 8 groupings T_kappa are pairwise distinct\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9c90",
+  "at_utc": "20260919T020356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

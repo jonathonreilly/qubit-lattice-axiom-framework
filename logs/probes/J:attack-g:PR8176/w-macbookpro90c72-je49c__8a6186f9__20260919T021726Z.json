@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8176",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block32-minima",
+ "worker": "w-macbookpro90c72-je49c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8176/za_census_and_t12.py",
+ "seed": 84246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8a6186f9",
+ "started_utc": "20260919T021726Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - Z_A has 20 marks, 46 ones, component 42 with unique seed (0,0,0); T1.2 holds on a fully enumerated tiny one-seed component (not a re-check of the T4 4/729 floor)"
+ },
+ "review": "Z_A census 20/46/42/one-seed and T1.2 on a tiny enumerated component both hold; pattern has no purchase",
+ "what": "PR #8176 (ail32: the minimal marked tree \u2014 the counted family's consta): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917; git show origin/physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917:<note>. Create probes/work/pr8176/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8176/<script>.py\"",
+ "stdout_sha256": "d39561817b4dd15a372a152fae3f9abd722692b91889b65d140964801d1c5702",
+ "stdout_tail": "Z_A marks 20 stated 20\nones 46 stated 46; comp 42 stated 42\nseeds in comp [(0, 0, 0)]\ntiny ones 4 comp 4 seeds [(0, 0, 0)] kinds {(1, 0, 0): 'amp', (0, 0, 0): 'seed', (1, 1, 0): 'proc', (0, 1, 0): 'amp'}\nT1.2 node sets containing root: 3 of 8\nSUMMARY: pattern has no purchase on this note - Z_A has 20 marks, 46 ones, component 42 with unique seed (0,0,0); T1.2 holds on a fully enumerated tiny one-seed component (not a re-check of the T4 4/729 floor)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je49c",
+  "at_utc": "20260919T021726Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

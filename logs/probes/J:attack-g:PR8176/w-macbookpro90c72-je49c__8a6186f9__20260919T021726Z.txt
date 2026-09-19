@@ -1,0 +1,6 @@
+Z_A marks 20 stated 20
+ones 46 stated 46; comp 42 stated 42
+seeds in comp [(0, 0, 0)]
+tiny ones 4 comp 4 seeds [(0, 0, 0)] kinds {(1, 0, 0): 'amp', (0, 0, 0): 'seed', (1, 1, 0): 'proc', (0, 1, 0): 'amp'}
+T1.2 node sets containing root: 3 of 8
+SUMMARY: pattern has no purchase on this note - Z_A has 20 marks, 46 ones, component 42 with unique seed (0,0,0); T1.2 holds on a fully enumerated tiny one-seed component (not a re-check of the T4 4/729 floor)

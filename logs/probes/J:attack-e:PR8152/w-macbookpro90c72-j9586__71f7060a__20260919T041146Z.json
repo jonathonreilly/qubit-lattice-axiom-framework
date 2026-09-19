@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8152",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block18-menus-",
+ "worker": "w-macbookpro90c72-j9586",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8152/adversarial_so2_finite_orbit.py",
+ "seed": 91106,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "71f7060a",
+ "started_utc": "20260919T041146Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - adversarial extra rational rotations about z (5/13, 8/17, 7/25 plus the executed 3/5) keep 24 distinct images of a non-polar unit point; M1's infinite-orbit claim is not a sampled never; not the known frame-normalization HIT"
+ },
+ "review": "Extra rational rotations about z keep 24 distinct images of a non-polar point; M1 is not a sampled never. Not the known frame-normalization HIT.",
+ "what": "PR #8152 ([physics-loop] admissibility-induced-law block18 \u2014 bounded_t): attack ADMISSIBILITY_RULE_MENUS_NEIGHBOUR_GENERATED_SUPPORTS_UNSOLDERED_AND_CUBE_ORBIT_MENUS_SOLDERED_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915; git show origin/physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915:<note>. Create probes/work/pr8152/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8152/<script>.py\"",
+ "stdout_sha256": "ae9aba5124c799e09ad9b6774e1e2328f2ed6c6077af64d0279baddc7b3a77b4",
+ "stdout_tail": "c=3/5: 24 distinct images in 24 steps; cycle=False\nc=5/13: 24 distinct images in 24 steps; cycle=False\nc=8/17: 24 distinct images in 24 steps; cycle=False\nc=7/25: 24 distinct images in 24 steps; cycle=False\nSUMMARY: pattern has no purchase on this note - adversarial extra rational rotations about z (5/13, 8/17, 7/25 plus the executed 3/5) keep 24 distinct images of a non-polar unit point; M1's infinite-orbit claim is not a sampled never; not the known frame-normalization HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9586",
+  "at_utc": "20260919T041146Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

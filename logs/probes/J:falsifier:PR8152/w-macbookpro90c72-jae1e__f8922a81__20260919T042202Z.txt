@@ -1,0 +1,19 @@
+q=(Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0
+  off-axis Born=1/2 (not in {0,1} is allowed)
+q=(Fraction(0, 1), Fraction(1, 1), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0
+q=(Fraction(3, 5), Fraction(4, 5), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0
+  off-axis Born=1/2 (not in {0,1} is allowed)
+q=(Fraction(5, 13), Fraction(12, 13), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0
+  off-axis Born=1/2 (not in {0,1} is allowed)
+q=(Fraction(8, 17), Fraction(15, 17), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0
+  off-axis Born=1/2 (not in {0,1} is allowed)
+q=(Fraction(7, 25), Fraction(24, 25), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0
+  off-axis Born=1/2 (not in {0,1} is allowed)
+D1 path length 12 (note executed 5)
+D1: all 12 path records in {s0,-s0}
+|O+|=24 (stated 24)
+orbit of (Fraction(1, 1), Fraction(1, 1), Fraction(2, 1)): 24
+orbit of (Fraction(1, 1), Fraction(2, 1), Fraction(3, 1)): 24
+orbit of (Fraction(2, 1), Fraction(3, 1), Fraction(6, 1)): 24
+orbit of (Fraction(1, 1), Fraction(4, 1), Fraction(8, 1)): 24
+SUMMARY: falsifier D1/D2/C1 did not fire — Born is 1 and 0 on antipodes for six rational q (including 5-12-13, 8-15-17, 7-24-25), a 12-site path stays in {s0,-s0}, extra orbits of (1,1,2) and (1,2,3) have size 24; not a re-find of the unnormalized-frame HIT

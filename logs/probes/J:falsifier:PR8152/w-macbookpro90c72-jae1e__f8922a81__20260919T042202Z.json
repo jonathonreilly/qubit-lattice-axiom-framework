@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8152",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block18-menus-",
+ "worker": "w-macbookpro90c72-jae1e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8152/falsifier_d2_born_long_path.py",
+ "seed": 91722,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f8922a81",
+ "started_utc": "20260919T042202Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier D1/D2/C1 did not fire \u2014 Born is 1 and 0 on antipodes for six rational q (including 5-12-13, 8-15-17, 7-24-25), a 12-site path stays in {s0,-s0}, extra orbits of (1,1,2) and (1,2,3) have size 24; not a re-find of the unnormalized-frame HIT"
+ },
+ "review": "falsifier D1/D2/C1 did not fire: Born 1 and 0 on antipodes for six rational q, 12-site path stays in {s0,-s0}, extra orbits size 24; not a re-find of the unnormalized-frame HIT",
+ "what": "PR #8152 ([physics-loop] admissibility-induced-law block18 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_MENUS_NEIGHBOUR_GENERATED_SUPPORTS_UNSOLDERED_AND_CUBE_ORBIT_MENUS_SOLDERED_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915; git show origin/physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915:<note>. Create probes/work/pr8152/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8152/<script>.py\"",
+ "stdout_sha256": "a2cc8067cc42f3b23de6fd9ae4b2ad4a79e16eb6605c9ce329f63950c8f2627b",
+ "stdout_tail": "q=(Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0\n  off-axis Born=1/2 (not in {0,1} is allowed)\nq=(Fraction(0, 1), Fraction(1, 1), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0\nq=(Fraction(3, 5), Fraction(4, 5), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0\n  off-axis Born=1/2 (not in {0,1} is allowed)\nq=(Fraction(5, 13), Fraction(12, 13), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0\n  off-axis Born=1/2 (not in {0,1} is allowed)\nq=(Fraction(8, 17), Fraction(15, 17), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0\n  off-axis Born=1/2 (not in {0,1} is allowed)\nq=(Fraction(7, 25), Fraction(24, 25), Fraction(0, 1)): Born(q,q)=1 Born(-q,q)=0\n  off-axis Born=1/2 (not in {0,1} is allowed)\nD1 path length 12 (note executed 5)\nD1: all 12 path records in {s0,-s0}\n|O+|=24 (stated 24)\norbit of (Fraction(1, 1), Fraction(1, 1), Fraction(2, 1)): 24\norbit of (Fraction(1, 1), Fraction(2, 1), Fraction(3, 1)): 24\norbit of (Fraction(2, 1), Fraction(3, 1), Fraction(6, 1)): 24\norbit of (Fraction(1, 1), Fraction(4, 1), Fraction(8, 1)): 24\nSUMMARY: falsifier D1/D2/C1 did not fire \u2014 Born is 1 and 0 on antipodes for six rational q (including 5-12-13, 8-15-17, 7-24-25), a 12-site path stays in {s0,-s0}, extra orbits of (1,1,2) and (1,2,3) have size 24; not a re-find of the unnormalized-frame HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jae1e",
+  "at_utc": "20260919T042202Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

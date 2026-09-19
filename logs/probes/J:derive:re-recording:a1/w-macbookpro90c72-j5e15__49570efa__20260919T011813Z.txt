@@ -1,0 +1,20 @@
+CHECK PASS: A.1 async heat-bath DB on C4 Ising t=2  bad=0
+CHECK PASS: A.2 DB is independent of the clock rates (any positive rates, same pi)
+CHECK PASS: S.1 6-neighbour bilinear identity on (Z/4Z)^3  4608=4608
+CHECK PASS: S.2 6-stencil is undirected  n=384
+CHECK PASS: G.1 6-stencil multiplier = 6-E
+CHECK PASS: G.2 even Laplacian eigenvalue of Gamma_6 is E
+CHECK PASS: G.3 odd Laplacian eigenvalue of Gamma_6 is 12-E
+CHECK PASS: G.4 12-E in [0,12] for E in [0,12]
+CHECK PASS: G.5 7-stencil odd mode is 14-E, 6-stencil odd mode is 12-E (no self-loop)
+CHECK PASS: G.6 1/E + 1/(12-E) = 12/(E(12-E))
+CHECK PASS: C.1 cube has 12 edges, degree 3
+CHECK PASS: C.2 static P(all +x) = p^{12}/Z_st  59049/775835648
+CHECK PASS: C.3 sync P(all +x) = Z1^8 / Z_sy with Z1=p^6+q^6+4 r^6  3489597637546254592801/31238481641953905892567296
+CHECK PASS: C.4 static != sync on the cube  59049/775835648 vs 3489597637546254592801/31238481641953905892567296
+CHECK PASS: C.5 Z_st and Z_sy positive  Zst=6982520832 Zsy=7997051300340199908497227776
+CHECK PASS: B.1 log(sinh k / k) = k^2/6 + O(k^4)
+CHECK PASS: B.2 small-beta quadratic form of sync has symbol (6-E)^2, not E  2*cos(k1) + 2*cos(k2) + 2*cos(k3)
+CHECKS: PASS=17 FAIL=0
+SUMMARY: PARTIAL async 6-neighbour re-recording is the static nn heat-bath (DB on C4 Ising, rates drop out); sync 6-neighbour chain is reversible w.r.t. prod_x Z(S_x) by the undirected 6-stencil bilinear identity; the doubled graph Gamma_6 has Laplacian spectrum {E, 12-E} (no self-loop, unlike the 7-stencil {E, 14-E}); on the 2x2x2 cube at (3,1,2) static and sync all-+x probabilities differ; small-beta sync interaction is (6-E)^2 not the static E. Uniqueness/LRO of sync pi transfer from FSS on Gamma_6 with odd mass 12-E; async transfers block 19's kernel. Nothing here assumes re-recording is admissible.
+HIT: 6-neighbour async re-recording is reversible w.r.t. the static nn law (heat-bath DB, any rates); 6-neighbour sync re-recording is reversible w.r.t. prod_x Z(S_x^{nn-6}) by bilinear symmetry of the 6-stencil; Gamma_6 (two copies of Z^3, edges (x,sigma)--(y,s) for y nn x, no self-loop) has Laplacian symbols {E, 12-E}; static and sync disagree on the cube all-+x event at (3,1,2). Block 19 G1-G5 apply to async (the static law) and to sync after doubling, with 12-E in place of the 7-stencil's 14-E.

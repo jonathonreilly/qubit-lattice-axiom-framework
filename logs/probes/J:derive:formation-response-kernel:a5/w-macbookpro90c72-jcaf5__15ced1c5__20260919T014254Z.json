@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-response-kernel:a5",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jcaf5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-response-kernel/w-macbookpro90c72-jcaf5/check.py",
+ "seed": 82174,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "15ced1c5",
+ "started_utc": "20260919T014254Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL linear response is 1/(1-phi e^{iw}), static chi=3/2 at (pi,0) vs 1/E=1/4 and C=9/8; FDR fails; 4-corner average is still 3/2; no 1/r in 3D from this 2D level-plane law."
+ },
+ "review": "Linear response R=1/(1-phi e^{iw}); at (pi,0) chi=3/2 vs C=9/8 vs 1/E=1/4 so FDR fails and no corner average is 1/E; truncated L=4 sum is 40/27.",
+ "what": "DERIVATION, independent attempt 5 of 6: What replaces the Green-function kernel when records form: the response of the formation law to a source. THE PROGRAM'S OPEN PHYSICS QUESTION after block 35 (PR #8180; setting in blocks 13, 26, 34: PRs #8147, #8170, #8178). The gravity lane takes as input a lattice Green-function kernel 1/E(k), E(k) = 2 sum_j (1 - cos k_j). Block 19 found that kernel only in the static (equilibrium comparator) law. The axiom says records FORM: the sphere formation law in level time, linearized about an aligned plane, is theta_{t+1} = P theta_t + noise with phi(k) = (1 + e^{i k_1} + e^{i k_2})/3, u = |phi|^2, and its covariance is sigma^2 phi^s/(1 - u): a plane Green function times a level-time heat kernel, diffusive and drifting. A probe added the exact identity E(k) = 3(|1 - phi e^{i w}|^2 + 1 - u) in level coordinates. TASK: derive the object a gravity-type node would actually see under the formation reading: the linear RESPONSE of the formation law to a persistent localized source (a site whose record is pinned, or a small bias field h at one site acting at every level). (a) Compute the response function exactly for the linear model: R(k, w) = 1/(1 - phi(k) e^{i w}) and its static limit; (b) find its real-space form at long distance on the level planes and along the level direction (saddle point, with the drift removed by the co-moving frame x -> x - t(1,1)/3), with exact constants; (c) decide whether any channel (the static response, the time-integrated covariance, the response in the co-moving frame, a symmetrized combination over the eight corner orders of block 09) decays like 1/r in three dimensions, and if none does, state precisely what decay law replaces it; (d) check the fluctuation-response relation: is the response proportional to the covariance (it is in equilibrium; level time is not equilibrium)? Verify every closed form against exact finite-L sums. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-response-kernel/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-response-kernel/<name>/check.py\"",
+ "stdout_sha256": "44602542a01adfee52992b6408467112fa331e48831e8b17e6baf7e6118929c5",
+ "stdout_tail": "CHECK E0a: PASS\nCHECK E0b: PASS phi(pi,0)=1/3\nCHECK E0c: PASS\nCHECK E0d: PASS\nCHECK E0e: PASS chi/C=4/3 != 1\nCHECK E1a: PASS\nCHECK E1b: PASS\nCHECK E1c: PASS\nCHECK E2a: PASS [1/3, 1/3, 1/3, 1/3]\nCHECK E2b: PASS\nCHECK E3a: PASS\nCHECK E4a: PASS\nCHECK E4b: PASS trunc=40/27\nHIT: linear formation response R=1/(1-phi e^{iw}) has static limit chi=1/(1-phi); at k=(pi,0), chi=3/2 while C=9/8 and 1/E=1/4, so FDR fails (chi/C=4/3) and no channel is 1/E. All four in-plane corner orders give the same chi=3/2 at (pi,0). Truncated L=4 geometric sum is 40/27. The object a gravity node would see is not 1/E(k); it is 1/(1-phi), a directed resolvent with a 2D (log) equal-level kernel.\nSUMMARY: PARTIAL linear response is 1/(1-phi e^{iw}), static chi=3/2 at (pi,0) vs 1/E=1/4 and C=9/8; FDR fails; 4-corner average is still 3/2; no 1/r in 3D from this 2D level-plane law.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcaf5",
+  "at_utc": "20260919T014300Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Linear response chi=3/2 at (pi,0) vs 1/E=1/4; FDR fails; 4-corner average still 3/2.",
+  "by": "w-macbookpro90c72-jcaf5",
+  "at_utc": "20260919T014300Z"
+ }
+}

@@ -1,0 +1,15 @@
+CHECK E0a: PASS
+CHECK E0b: PASS phi(pi,0)=1/3
+CHECK E0c: PASS
+CHECK E0d: PASS
+CHECK E0e: PASS chi/C=4/3 != 1
+CHECK E1a: PASS
+CHECK E1b: PASS
+CHECK E1c: PASS
+CHECK E2a: PASS [1/3, 1/3, 1/3, 1/3]
+CHECK E2b: PASS
+CHECK E3a: PASS
+CHECK E4a: PASS
+CHECK E4b: PASS trunc=40/27
+HIT: linear formation response R=1/(1-phi e^{iw}) has static limit chi=1/(1-phi); at k=(pi,0), chi=3/2 while C=9/8 and 1/E=1/4, so FDR fails (chi/C=4/3) and no channel is 1/E. All four in-plane corner orders give the same chi=3/2 at (pi,0). Truncated L=4 geometric sum is 40/27. The object a gravity node would see is not 1/E(k); it is 1/(1-phi), a directed resolvent with a 2D (log) equal-level kernel.
+SUMMARY: PARTIAL linear response is 1/(1-phi e^{iw}), static chi=3/2 at (pi,0) vs 1/E=1/4 and C=9/8; FDR fails; 4-corner average is still 3/2; no 1/r in 3D from this 2D level-plane law.

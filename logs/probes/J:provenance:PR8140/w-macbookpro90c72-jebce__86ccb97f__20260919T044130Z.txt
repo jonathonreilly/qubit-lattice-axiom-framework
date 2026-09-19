@@ -1,0 +1,5 @@
+17/24 | P_e and <a,Q^{-1}a> | cache: "electric_energy": "17/24", | OK
+51/8 | phase exp[2 pi i 51/8] | cache: "phase_turns": "51/8", | OK
+7/24 | ||P_perp k||^2 = 9*(7/24) | NOT IN CACHE | UNSOURCED
+SUMMARY: 3 numbers, 1 unsourced
+HIT: unsourced numbers

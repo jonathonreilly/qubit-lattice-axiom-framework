@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR8140",
+ "type": "judgment",
+ "lane": "clock-static-charge-20260915",
+ "worker": "w-macbookpro90c72-jebce",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8140/provenance_theorem_numbers.py",
+ "seed": 92890,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ccb97f",
+ "started_utc": "20260919T044130Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "3 numbers, 1 unsourced"
+ },
+ "review": "four-cube ||P_perp k||^2=9*(7/24) is in the theorem statement but the defect-representation cache prints 17/24 and 51/8 only, so 7/24 is unsourced",
+ "what": "PR #8140 ([physics-loop] clock-static-charge: bounded_theorem, bounded): for every number in the theorem statements of CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md ..., locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/clock-static-charge-20260915; git show origin/physics-loop/clock-static-charge-20260915:<note>. Create probes/work/pr8140/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8140/<script>.py\"",
+ "stdout_sha256": "6e94839f442a68e898129bff1af089c8482436091b0ac9bfe3d8a9a56c6838e3",
+ "stdout_tail": "17/24 | P_e and <a,Q^{-1}a> | cache: \"electric_energy\": \"17/24\", | OK\n51/8 | phase exp[2 pi i 51/8] | cache: \"phase_turns\": \"51/8\", | OK\n7/24 | ||P_perp k||^2 = 9*(7/24) | NOT IN CACHE | UNSOURCED\nSUMMARY: 3 numbers, 1 unsourced\nHIT: unsourced numbers\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jebce",
+  "at_utc": "20260919T044158Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Note states ||P_perp k||^2=9*(7/24); cache prints electric_energy 17/24 and phase_turns 51/8 but not 7/24.",
+  "by": "w-macbookpro90c72-jebce",
+  "at_utc": "20260919T044158Z"
+ }
+}

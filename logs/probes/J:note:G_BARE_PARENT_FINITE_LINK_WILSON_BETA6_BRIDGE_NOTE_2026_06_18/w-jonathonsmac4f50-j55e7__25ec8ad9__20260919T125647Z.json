@@ -1,0 +1,36 @@
+{
+ "task": "J:note:G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026_06_18",
+ "type": "judgment",
+ "lane": "g",
+ "worker": "w-jonathonsmac4f50-j55e7",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_B/exact_series_plaquette_split_pin.py",
+ "seed": 22607,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "25ec8ad9",
+ "started_utc": "20260919T125647Z",
+ "elapsed_s": 3.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "T1-T3 exact series: N_c=2: exponent a^1=0, a^2=iF[C;1] failures 0, span failures 0, Wilson a^4 = F^aF^a/(4N_c) failures 0, split failures 0, max |a^3 exponent coefficient| 7.136; N_c=3: exponent a^1=0, a^2=iF[C;1] failures 0, span failures 0, Wilson a^4 = F^aF^a/(4N_c) failures 0, split failures 0, max |a^3 exponent coefficient| 13.681; N_c=4: exponent a^1=0, a^2=iF[C;1] failures 0, span failures 0, Wilson a^4 = F^aF^a/(4N_c) failures 0, split failures 0, max |a^3 exponent coefficient| 10.188",
+   "P pin: gamma*(beta) = 1 on the grid only at beta = 2N_c (N_c=2: ['4'], N_c=3: ['6'], N_c=4: ['8'], N_c=5: ['10'], N_c=6: ['12']); beta = 24 exhibit gamma*^2 = 1/4, gamma* = 1/2: True",
+   "hits=0; runtime 3s"
+  ]
+ },
+ "review": "Output matches the task. Exact formal power series in a with Q(i) matrix coefficients (disjoint from the runner's numerical exponentials and Richardson extrapolation) give, for SU(2), SU(3) and SU(4) on 3 random exact configurations each: the log U_P a^1 coefficient vanishes and the a^2 coefficient equals i F[C;1] = i(D1 - D2 + i[A,B]) with unit weights and traceless Hermitian F; the Wilson density 1 - Re Tr U_P/N_c vanishes through a^3 with a^4 coefficient Tr F^2/(2N_c) = F^aF^a/(4N_c); the split (gamma, C/gamma) leaves links and gamma F[C/gamma;gamma] = F[C;1] unchanged for 6 exact gamma; on beta = k/10 (k <= 400) the positive root equals s = 1 only at beta = 2N_c for N_c = 2..6; and the beta = 24 exhibit gives gamma*^2 = 1/4 and gamma* = 1/2. No falsifier fired.",
+ "what": "Note on main: docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_B/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_B/<script>.py\"",
+ "stdout_sha256": "aa5c2e56a3eb45335b25ec509c957c564ed02bdeaae0af7c9351463fb67e6c01",
+ "stdout_tail": "gamma x link and field strength) failures 0; max |a^3 coefficient of log U_P| = 13.6812\n  N_c=4: 3 exact instances; log U_P a^1 = 0 and a^2 = i F[C;1] failures 0; F traceless Hermitian failures 0; Wilson density a^0..a^3 = 0 and a^4 = Tr F^2/(2N_c) = F^aF^a/(4N_c) failures 0; split identities (6 gamma x link and field strength) failures 0; max |a^3 coefficient of log U_P| = 10.1875\nSUMMARY: T1-T3 exact series: N_c=2: exponent a^1=0, a^2=iF[C;1] failures 0, span failures 0, Wilson a^4 = F^aF^a/(4N_c) failures 0, split failures 0, max |a^3 exponent coefficient| 7.136; N_c=3: exponent a^1=0, a^2=iF[C;1] failures 0, span failures 0, Wilson a^4 = F^aF^a/(4N_c) failures 0, split failures 0, max |a^3 exponent coefficient| 13.681; N_c=4: exponent a^1=0, a^2=iF[C;1] failures 0, span failures 0, Wilson a^4 = F^aF^a/(4N_c) failures 0, split failures 0, max |a^3 exponent coefficient| 10.188\n==============================================================================\nP  pin equivalence and the beta = 24 exhibit\n  beta = k/10, k = 1..400: equality points {2: ['4'], 3: ['6'], 4: ['8'], 5: ['10'], 6: ['12']}; W-PHYS relation failures 0; beta = 24: gamma*^2 = 1/4, gamma* = 1/2, 24 * 1/4 = 6: True\nSUMMARY: P pin: gamma*(beta) = 1 on the grid only at beta = 2N_c (N_c=2: ['4'], N_c=3: ['6'], N_c=4: ['8'], N_c=5: ['10'], N_c=6: ['12']); beta = 24 exhibit gamma*^2 = 1/4, gamma* = 1/2: True\n==============================================================================\nSUMMARY: hits=0; runtime 3s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j55e7",
+  "at_utc": "20260919T125700Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

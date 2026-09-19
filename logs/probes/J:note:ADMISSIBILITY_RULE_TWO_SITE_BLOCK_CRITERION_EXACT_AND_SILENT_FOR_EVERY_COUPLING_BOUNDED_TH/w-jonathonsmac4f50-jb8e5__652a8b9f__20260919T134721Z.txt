@@ -1,0 +1,21 @@
+==============================================================================
+S  exhaustive suprema (vectorized float search + exact candidates)
+  (3, 1, 2): c_1 270/989 rho 2168397/7948400 rho' 1350/26077 sigma 15220386/48008647; literals match: True; sigma < rho+rho' and sigma <= rho(1+c_1) as scoped: True; rho/c_1 0.9993; B_V = 10 sigma = 3.1703 (> 2); exact candidates checked 24/12/12 (0.1s)
+  (5, 2, 4): c_1 8650000/40615109 rho 271059507090000/1298168979740633 rho' 1915425000/55627392667 sigma 24971992461/111254785334; literals match: True; sigma < rho+rho' and sigma <= rho(1+c_1) as scoped: True; rho/c_1 0.9804; B_V = 10 sigma = 2.2446 (> 2); exact candidates checked 6/6/6 (0.1s)
+  (7, 3, 5): c_1 6391462/29948925 rho 239957740750/1121635870169 rho' 856455908/27833079009 sigma 1462764714390/6157201570091; literals match: True; sigma < rho+rho' and sigma <= rho(1+c_1) as scoped: True; rho/c_1 1.0025; B_V = 10 sigma = 2.3757 (> 2); exact candidates checked 48/24/12 (0.1s)
+  (2, 1, 2): c_1 2/13 rho 67715/446034 rho' 4/191 sigma 14803/90094; literals match: True; sigma < rho+rho' and sigma <= rho(1+c_1) as scoped: True; rho/c_1 0.9868; B_V = 10 sigma = 1.6431 (< 2); exact candidates checked 30/60/180 (0.1s)
+  (3, 2, 2): c_1 2079/15566 rho 1471549788/11145302999 rho' 3605040/211495159 sigma 31495356/211495159; literals match: True; sigma < rho+rho' and sigma <= rho(1+c_1) as scoped: True; rho/c_1 0.9886; B_V = 10 sigma = 1.4892 (< 2); exact candidates checked 30/30/30 (0.1s)
+  (5, 4, 4): c_1 4000000/61385721 rho 81847628000000/1305850357630907 rho' 16000000000000/3917551072892721 sigma 261542884000000/3917551072892721; literals match: True; sigma < rho+rho' and sigma <= rho(1+c_1) as scoped: True [sigma = rho + rho' exactly here: the two marginal maximizers coincide]; rho/c_1 0.9619; B_V = 10 sigma = 0.6676 (< 2); exact candidates checked 30/30/30 (0.1s)
+SUMMARY: S exhaustive suprema over 476,280 instances (float) + exact candidates: (3, 1, 2): sigma 0.317034, B_V 3.1703, rho/c_1 0.9993; (5, 2, 4): sigma 0.224458, B_V 2.2446, rho/c_1 0.9804; (7, 3, 5): sigma 0.237570, B_V 2.3757, rho/c_1 1.0025; (2, 1, 2): sigma 0.164306, B_V 1.6431, rho/c_1 0.9868; (3, 2, 2): sigma 0.148918, B_V 1.4892, rho/c_1 0.9886; (5, 4, 4): sigma 0.066762, B_V 0.6676, rho/c_1 0.9619; every c_1/rho/rho'/sigma literal reproduced exactly; sigma < rho + rho' strictly at the three silent triples, sigma = rho + rho' exactly at (5, 4, 4) (a region triple; rho' there is not a note literal)
+==============================================================================
+L  Theorem N' by linear programming over all couplings
+  1800 one-slot x-changes over the six triples: max |LP min E d_H - (TV(m_x) + TV(m_y))| = 2.22e-16; max |TV(block) - TV(m_x)| = 1.11e-16
+SUMMARY: L transport LP over all couplings on 1800 random one-slot changes: min E d_H = TV(m_x) + TV(m_y) to 2.2e-16; Theorem O to 1.1e-16
+==============================================================================
+D  the scans along (t,1,1) and (t,t,1)
+  t11: 6c_1 crosses 1 in [('8/5', '33/20')]; 5 rho(1+c_1) in [('8/5', '33/20')]; rho/c_1 > 1 from t = 39/20 (and at every later point: True)
+  tt1: 6c_1 crosses 1 in [('29/20', '3/2')]; 5 rho(1+c_1) in [('29/20', '3/2')]; rho/c_1 > 1 from t = 3/2 (and at every later point: True)
+  (t,1,1): at t = 8/5 sequential 0.9366 vs 6c_1 0.9828; at t = 39/20 1.6123 vs 1.5343 (note 0.9366/0.9828, 1.6123/1.5343)
+SUMMARY: D scans: (t,1,1) crossings [('8/5', '33/20')]/[('8/5', '33/20')], rho > c_1 from 39/20; (t,t,1) crossings [('29/20', '3/2')]/[('29/20', '3/2')], rho > c_1 from 3/2; quoted values 0.9366, 0.9828, 1.6123, 1.5343
+==============================================================================
+SUMMARY: hits=0; runtime 25s

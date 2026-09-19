@@ -1,0 +1,37 @@
+{
+ "task": "J:note:ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITERION_EXACT_AND_SILENT_FOR_EVERY_COUPLING_BOUNDED_TH",
+ "type": "judgment",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-jb8e5",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITER/vectorized_suprema_exact_candidates_and_lp_couplings.py",
+ "seed": 25641,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "652a8b9f",
+ "started_utc": "20260919T134721Z",
+ "elapsed_s": 25.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "S exhaustive suprema over 476,280 instances (float) + exact candidates: (3, 1, 2): sigma 0.317034, B_V 3.1703, rho/c_1 0.9993; (5, 2, 4): sigma 0.224458, B_V 2.2446, rho/c_1 0.9804; (7, 3, 5): sigma 0.237570, B_V 2.3757, rho/c_1 1.0025; (2, 1, 2): sigma 0.164306, B_V 1.6431, rho/c_1 0.9868; (3, 2, 2): sigma 0.148918, B_V 1.4892, rho/c_1 0.9886; (5, 4, 4): sigma 0.066762, B_V 0.6676, rho/c_1 0.9619; every c_1/rho/rho'/sigma literal reproduced exactly; sigma < rho + rho' strictly at the three silent triples, sigma = rho + rho' exactly at (5, 4, 4) (a region triple; rho' there is not a note literal)",
+   "L transport LP over all couplings on 1800 random one-slot changes: min E d_H = TV(m_x) + TV(m_y) to 2.2e-16; Theorem O to 1.1e-16",
+   "D scans: (t,1,1) crossings [('8/5', '33/20')]/[('8/5', '33/20')], rho > c_1 from 39/20; (t,t,1) crossings [('29/20', '3/2')]/[('29/20', '3/2')], rho > c_1 from 3/2; quoted values 0.9366, 0.9828, 1.6123, 1.5343",
+   "hits=0; runtime 25s"
+  ]
+ },
+ "review": "Output matches the task. A vectorized float search over all 476,280 boundary instances at each of the six triples, with every near-maximal candidate re-evaluated in exact rationals, reproduces every c_1, rho, rho' and sigma literal exactly. B_V = 10 sigma is 3.1703, 2.2446 and 2.3757 (> 2) at the silent triples and 1.6431, 1.4892 and 0.6676 (< 2) at the region triples; sigma < rho + rho' holds strictly at the silent triples and the rho/c_1 ordering matches. As a number outside the note's literals: at the region triple (5,4,4), sigma = rho + rho' exactly, with rho' = 16000000000000/3917551072892721. Theorem N' holds as the optimum of the full transport LP (1296 couplings variables, disjoint from the note's explicit coupling): min E d_H = TV(m_x) + TV(m_y) to 2e-16 on 1800 random one-slot changes, with Theorem O to 1e-16. Both scans cross in the declared cells (8/5, 33/20) and (29/20, 3/2), rho/c_1 > 1 from 39/20 and 3/2, and the quoted values 0.9366, 0.9828, 1.6123 and 1.5343 reproduce. No falsifier fired.",
+ "what": "Note on main: docs/ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITERION_EXACT_AND_SILENT_FOR_EVERY_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-07.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITER/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITER/<script>.py\"",
+ "stdout_sha256": "8c9e49c0aedaaafbe8bb2fe33efb21f9c00f7f707aac34401489cec51eeaea3f",
+ "stdout_tail": "a 0.066762, B_V 0.6676, rho/c_1 0.9619; every c_1/rho/rho'/sigma literal reproduced exactly; sigma < rho + rho' strictly at the three silent triples, sigma = rho + rho' exactly at (5, 4, 4) (a region triple; rho' there is not a note literal)\n==============================================================================\nL  Theorem N' by linear programming over all couplings\n  1800 one-slot x-changes over the six triples: max |LP min E d_H - (TV(m_x) + TV(m_y))| = 2.22e-16; max |TV(block) - TV(m_x)| = 1.11e-16\nSUMMARY: L transport LP over all couplings on 1800 random one-slot changes: min E d_H = TV(m_x) + TV(m_y) to 2.2e-16; Theorem O to 1.1e-16\n==============================================================================\nD  the scans along (t,1,1) and (t,t,1)\n  t11: 6c_1 crosses 1 in [('8/5', '33/20')]; 5 rho(1+c_1) in [('8/5', '33/20')]; rho/c_1 > 1 from t = 39/20 (and at every later point: True)\n  tt1: 6c_1 crosses 1 in [('29/20', '3/2')]; 5 rho(1+c_1) in [('29/20', '3/2')]; rho/c_1 > 1 from t = 3/2 (and at every later point: True)\n  (t,1,1): at t = 8/5 sequential 0.9366 vs 6c_1 0.9828; at t = 39/20 1.6123 vs 1.5343 (note 0.9366/0.9828, 1.6123/1.5343)\nSUMMARY: D scans: (t,1,1) crossings [('8/5', '33/20')]/[('8/5', '33/20')], rho > c_1 from 39/20; (t,t,1) crossings [('29/20', '3/2')]/[('29/20', '3/2')], rho > c_1 from 3/2; quoted values 0.9366, 0.9828, 1.6123, 1.5343\n==============================================================================\nSUMMARY: hits=0; runtime 25s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb8e5",
+  "at_utc": "20260919T134757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

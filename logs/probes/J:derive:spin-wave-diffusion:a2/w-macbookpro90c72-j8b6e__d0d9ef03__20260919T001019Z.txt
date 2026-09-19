@@ -1,0 +1,17 @@
+T0 cosine identity 1-|phi|^2 = (6-2c1-2c2-2c12)/9:
+  True
+T1 G_L = N^{-1} sum_{k!=0} 1/(1-u(k)):
+  L=4 exact 189/128 = 1.47656250; float 1.47656250; modes 15
+  L=8: G=2.06668527 modes=63
+  L=16: G=2.64427100 modes=255
+T2 expansion 1/(1-x)^2 = 1+2x+3x^2 at x=sigma^2 G_L:
+  L=16 beta=6: sigma^2 G=0.13874 pred=1.34814 series=1.33523 aligned 1/A^2=1.12111
+  L=16 beta=12: sigma^2 G=0.071412 pred=1.15972 series=1.15812 aligned 1/A^2=1.05796
+  L=16 beta=24: sigma^2 G=0.036216 pred=1.07657 series=1.07637 aligned 1/A^2=1.02837
+  L=16 beta=48: sigma^2 G=0.018235 pred=1.03749 series=1.03747 aligned 1/A^2=1.01403
+T3 beta->infty first correction 2 sigma^2 G_L at fixed L=16:
+  beta=24: 2 sigma^2 G=0.072432 pred-1=0.076566
+  beta=48: 2 sigma^2 G=0.036471 pred-1=0.037493
+  beta=96: 2 sigma^2 G=0.018299 pred-1=0.018553
+HIT: G_L is the mode sum N^{-1} sum_{k!=0} 1/(1-|phi|^2) (G_4=189/128 exact); linearized |M|=1-sigma^2 G_L+O(sigma^4); Jacobian then gives D_1 L^2/sigma^2 = 1/(1-sigma^2 G_L)^2 -> 1 at fixed L as beta->infty with first correction 2 sigma^2 G_L; G_16=2.64427
+SUMMARY: PARTIAL - spin-wave insertion of block 34's G_L into the Jacobian: the ratio is 1/(1-sigma^2 G_L)^2 at fixed L, G_L computed exactly on L=4 and numerically on 8,16

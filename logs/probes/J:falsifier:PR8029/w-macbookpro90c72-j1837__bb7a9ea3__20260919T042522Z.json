@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8029",
+ "type": "judgment",
+ "lane": "infinite-static-block39-20260907",
+ "worker": "w-macbookpro90c72-j1837",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8029/falsifier_casimir_path.py",
+ "seed": 91922,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bb7a9ea3",
+ "started_utc": "20260919T042522Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier (charged-sector floor 4d/a) did not fire \u2014 Q(1,0)=Q(0,1)=4, Tr(U^H U)/3=1 on I, 3-cycle and diag(w,w\u0304,1), and 4d holds for d=1..100"
+ },
+ "review": "falsifier did not fire: Q(1,0)=4, Tr(U^H U)/3=1 on I/3-cycle/diag phases, 4d floor for d=1..100",
+ "what": "PR #8029 ([physics-loop] infinite-static block39 conditional-support): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/infinite-static-block39-20260907; git show origin/codex/infinite-static-block39-20260907:<note>. Create probes/work/pr8029/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8029/<script>.py\"",
+ "stdout_sha256": "f061df0a80e219486ade5e031c6aacafa789988f0dca87de62d20f02bdb55565",
+ "stdout_tail": "Q(1,0)=4 Q(0,1)=4 Q(0,0)=0\nI: U^H U=I? True; Tr(U^H U)/3=1\n3-cycle: U^H U=I? True; Tr(U^H U)/3=1\ndiag(w, wbar, 1): U^H U=I? True; Tr(U^H U)/3=1\nv=0 geodesic floor 4d/a for d=1..100\nSUMMARY: falsifier (charged-sector floor 4d/a) did not fire \u2014 Q(1,0)=Q(0,1)=4, Tr(U^H U)/3=1 on I, 3-cycle and diag(w,w\u0304,1), and 4d holds for d=1..100\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1837",
+  "at_utc": "20260919T042523Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

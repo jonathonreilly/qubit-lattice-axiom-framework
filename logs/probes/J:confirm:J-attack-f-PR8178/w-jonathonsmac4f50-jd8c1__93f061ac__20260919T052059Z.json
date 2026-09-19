@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-f-PR8178",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-jd8c1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8178/t11_declared_dft_multiplier.py",
+ "seed": 95259,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "93f061ac",
+ "started_utc": "20260919T052059Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - T1.1 states phi = (1 + e^(ik1) + e^(ik2))/3 against a declared e^(-ik.x) transform; the declared multiplier is its conjugate (presentation: declare the + transform or state phi with e^(-ik)); no effect on the |phi|^2 results"
+ },
+ "review": "Finder's script re-run (stated phi mismatches on 16 modes of L=2..4, the e^{-ik} multiplier on none); own route: the symbolic shift rule on L=5 and an exact Gaussian-rational diagonalization F P F^-1 on L=4 with the declared F = L^-1 e^{-ik.x} give conj(phi) on 16/16 modes and the stated phi only on the 6 real-phi modes (n=(0,1): 2/3+i/3 stated vs 2/3-i/3), while T1.2 and the T1.3 mode variances (exact covariance recursion, t<=6) hold: HIT confirmed, presentation-level.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-f:PR8178/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "128b3fb69ba26483eae0f0fce8dea38d8c4a22a3ea681f6301e5a06d040425fe",
+ "stdout_tail": "1. shift rule under the declared transform (L = 5, every mode, symbolic field): sum e^(-ik.x) theta_(x-e) = e^(-ik.e) theta^: True\n2. L = 4, F P F^-1 with the declared F (Gaussian rationals): off-diagonal nonzeros 0; diagonal = stated phi on 6/16 modes, = conj(phi) on 16/16; phi non-real on 10 modes; witness n = (0, 1): stated phi = 2/3+1/3i, declared-transform multiplier = 2/3+-1/3i\n3. T1.2 identity (uses |phi|^2 only): True; T1.3 mode variances sigma^2 (1-u^t)/(1-u), t <= 6, all 16 modes, from the exact covariance recursion in the declared transform: True\nHIT: confirmed - under the declared theta^_k = L^-1 sum e^(-ik.x) theta_x the three-predecessor P multiplies by (1 + e^(-ik1) + e^(-ik2))/3 = conj(phi): exact on L = 4 (16/16 modes conj(phi), 6/16 the stated phi = exactly the 6 modes where phi is real; e.g. n = (0, 1): stated 2/3+1/3i vs 2/3+-1/3i); T1.1's statement holds only in the conjugate transform its proof mentions; |phi|^2 is unchanged, so T1.2 and T1.3 stand (checked exactly)\nSUMMARY: confirmed - T1.1 states phi = (1 + e^(ik1) + e^(ik2))/3 against a declared e^(-ik.x) transform; the declared multiplier is its conjugate (presentation: declare the + transform or state phi with e^(-ik)); no effect on the |phi|^2 results\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd8c1",
+  "at_utc": "20260919T052100Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Block 34 T1.1 states (P theta)^_k = phi(k) theta^_k with phi = (1+e^{ik1}+e^{ik2})/3 against its declared theta^_k = L^-1 sum e^{-ik.x} theta_x; with P the x, x-e1, x-e2 average the declared multiplier is conj(phi) (exact on L=4: 16/16 modes; differs on the 10 modes with non-real phi, e.g. n=(0,1)); the proof itself says 'the conjugate convention gives the stated phi'. Presentation fix (declare the + transform or write e^{-ik}); |phi|^2 results T1.2-T1.3 unaffected (checked).",
+  "by": "w-jonathonsmac4f50-jd8c1",
+  "at_utc": "20260919T052100Z"
+ }
+}

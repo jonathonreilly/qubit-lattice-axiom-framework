@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8148",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block14-format",
+ "worker": "w-macbookpro90c72-jf045",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8148/provenance_theorem_numbers.py",
+ "seed": 92530,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c9b16742",
+ "started_utc": "20260919T043530Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROVENANCE (PR #8148): all listed theorem numbers (2x3 TVs, plaquette TVs, d_same=72/13 derived, G 1/4 1/6 1/36, R3 1/216 and 56059/3369600) have CACHE and/or DERIVED sources (16 cache hits); the known R3 metric HIT is sourced at D2 not unsourced; no provenance HIT"
+ },
+ "review": "all listed theorem TVs, d_same=72/13 (derived from 1/K_2), G factors, and R3 1/216 and 56059/3369600 are CACHE- or DERIVED-sourced; the known R3 metric HIT is printed at D2 not unsourced; no provenance HIT",
+ "what": "PR #8148 ([physics-loop] admissibility-induced-law block14 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915:<note>. Create probes/work/pr8148/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8148/<script>.py\"",
+ "stdout_sha256": "522ac5b43ee614ca5f83e8cef0b9750e8bf07c5eb59cb3055bf3a2cf2f9d6caf",
+ "stdout_tail": "cache stdout lines=36 runner bytes=29857\nderived d_same=72/13 d_anti=72/11 d_orth=6\n[DERIVED] d_same=72/13 d_anti=72/11 d_orth=6 from 1/K_2 at (3,1,2)\n[DERIVED] G(1/2, 72/13)=150/169 from the stated formula\n[CACHE+NOTE] R2 2x3 uniform TV: 372254646387017/12790481418000000\n[CACHE+NOTE] R2 2x3 seeded TV: 5951761987229/292725576000000\n[CACHE+NOTE] R2 2x3 attracting TV: 32318135184155791/1253467178964000000\n[CACHE+NOTE] R2 plaquette uniform TV: 262271/15806232\n[CACHE+NOTE] R2 plaquette seeded TV: 30457/2431728\n[CACHE+NOTE] R2 plaquette attracting TV: 591377/39515580\n[CACHE+NOTE] R2 plaquette parallel TV: 2239744469/137703893184\n[CACHE+NOTE] R3 path3 uniform TV (known metric dispute): 1/216\n[CACHE+NOTE] R3 star4 uniform TV (known metric dispute): 56059/3369600\n[CACHE+NOTE] R4 d_same: 72/13\n[CACHE+NOTE] R4 d_anti: 72/11\n[CACHE+NOTE] R4 d_orth: d_orth = 6\n[CACHE+NOTE] R4 G formula 1/6: 1/6\n[RUNNER] R4 G formula 1/36: d^2/36\n[CACHE] R4 G formula 1/4: (1/4) sum_s G\n[CACHE+NOTE] R4 uniform ratios: 152/169\n[CACHE+NOTE] R4 P3 ratio: 136/121\n[NOTE+RUNNER] executed (3,1,2): (3, 1, 2)\nclaim_scope present=True\nSUMMARY: PROVENANCE (PR #8148): all listed theorem numbers (2x3 TVs, plaquette TVs, d_same=72/13 derived, G 1/4 1/6 1/36, R3 1/216 and 56059/3369600) have CACHE and/or DERIVED sources (16 cache hits); the known R3 metric HIT is sourced at D2 not unsourced; no provenance HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf045",
+  "at_utc": "20260919T043530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

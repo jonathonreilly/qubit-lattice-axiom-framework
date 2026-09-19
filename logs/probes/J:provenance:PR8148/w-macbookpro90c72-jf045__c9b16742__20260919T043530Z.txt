@@ -1,0 +1,24 @@
+cache stdout lines=36 runner bytes=29857
+derived d_same=72/13 d_anti=72/11 d_orth=6
+[DERIVED] d_same=72/13 d_anti=72/11 d_orth=6 from 1/K_2 at (3,1,2)
+[DERIVED] G(1/2, 72/13)=150/169 from the stated formula
+[CACHE+NOTE] R2 2x3 uniform TV: 372254646387017/12790481418000000
+[CACHE+NOTE] R2 2x3 seeded TV: 5951761987229/292725576000000
+[CACHE+NOTE] R2 2x3 attracting TV: 32318135184155791/1253467178964000000
+[CACHE+NOTE] R2 plaquette uniform TV: 262271/15806232
+[CACHE+NOTE] R2 plaquette seeded TV: 30457/2431728
+[CACHE+NOTE] R2 plaquette attracting TV: 591377/39515580
+[CACHE+NOTE] R2 plaquette parallel TV: 2239744469/137703893184
+[CACHE+NOTE] R3 path3 uniform TV (known metric dispute): 1/216
+[CACHE+NOTE] R3 star4 uniform TV (known metric dispute): 56059/3369600
+[CACHE+NOTE] R4 d_same: 72/13
+[CACHE+NOTE] R4 d_anti: 72/11
+[CACHE+NOTE] R4 d_orth: d_orth = 6
+[CACHE+NOTE] R4 G formula 1/6: 1/6
+[RUNNER] R4 G formula 1/36: d^2/36
+[CACHE] R4 G formula 1/4: (1/4) sum_s G
+[CACHE+NOTE] R4 uniform ratios: 152/169
+[CACHE+NOTE] R4 P3 ratio: 136/121
+[NOTE+RUNNER] executed (3,1,2): (3, 1, 2)
+claim_scope present=True
+SUMMARY: PROVENANCE (PR #8148): all listed theorem numbers (2x3 TVs, plaquette TVs, d_same=72/13 derived, G 1/4 1/6 1/36, R3 1/216 and 56059/3369600) have CACHE and/or DERIVED sources (16 cache hits); the known R3 metric HIT is sourced at D2 not unsourced; no provenance HIT

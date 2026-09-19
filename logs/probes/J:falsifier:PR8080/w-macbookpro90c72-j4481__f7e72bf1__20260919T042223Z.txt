@@ -1,0 +1,3 @@
+symbolic residual = 0
+grid 903 points: Q-1/λ² ≥ 0 and matches factorization
+SUMMARY: Q_tau falsifier did not fire: Q_τ(λ)-λ^{-2} matches the displayed factorization identically and is nonnegative on a 903-point Fraction grid with λ up to 10^4, beyond the note's checks

@@ -1,0 +1,2 @@
+no L, N, 2 pi, or conjugation Fourier sum-rule in the jet recurrences
+SUMMARY: pattern has no purchase on this note — moment-jet recurrences are local exact identities, not Fourier normalizations

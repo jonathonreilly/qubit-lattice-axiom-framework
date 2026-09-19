@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8082",
+ "type": "judgment",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "w-macbookpro90c72-j711c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8082/normalization_no_purchase.py",
+ "seed": 87730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "19084a66",
+ "started_utc": "20260919T031530Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 moment-jet recurrences are local exact identities, not Fourier normalizations"
+ },
+ "review": "Pattern (f) has no purchase: moment-jet recurrences are local, not Fourier sum rules",
+ "what": "PR #8082 ([physics-loop] Gaussian local moment jets (conditional-suppo): attack NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-gaussian-moment-jet-20260910; git show origin/codex/native-gaussian-moment-jet-20260910:<note>. Create probes/work/pr8082/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8082/<script>.py\"",
+ "stdout_sha256": "9ff4ec272d73b2a17c3d3d4ef8e49943b12e2a5416c99bd308f2ae88b000566c",
+ "stdout_tail": "no L, N, 2 pi, or conjugation Fourier sum-rule in the jet recurrences\nSUMMARY: pattern has no purchase on this note \u2014 moment-jet recurrences are local exact identities, not Fourier normalizations\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j711c",
+  "at_utc": "20260919T031530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

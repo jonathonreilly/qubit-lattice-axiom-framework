@@ -1,0 +1,40 @@
+{
+ "task": "J:note:U1_ROLE_COMPILED_YEE_MAXWELL_GENERATOR_AND_TIME_SELECTION_FORK_BOUNDED_THEOREM_NOTE_2026_0",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j52af",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_ROLE_COMPILED_YEE_MAXWELL_GENERATOR_A/realspace_complex_ranks_symmetries_lyapunov.py",
+ "seed": 20385,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1031b90d",
+ "started_utc": "20260919T121945Z",
+ "elapsed_s": 73.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "R1/R2 exact: C d0 = 0 and d2 C = 0 with distance-1 entries only (counts 2/4/4/6) on tori (2, 2, 2), (3, 3, 3), (4, 4, 4), (5, 5, 5), (6, 6, 6), (2, 3, 4), (3, 4, 5), (2, 5, 7), (7, 7, 7), (8, 8, 8), (4, 6, 8), (10, 10, 10); GF(p) ranks (two primes) (2, 2, 2): d0 7, C 14, d2 7, [C;d0^T] 21, C-without-yz 11; (3, 3, 3): d0 26, C 52, d2 26, [C;d0^T] 78, C-without-yz 44; (4, 4, 4): d0 63, C 126, d2 63, [C;d0^T] 189, C-without-yz 111; (5, 5, 5): d0 124, C 248, d2 124, [C;d0^T] 372, C-without-yz 224; (6, 6, 6): d0 215, C 430, d2 215, [C;d0^T] 645, C-without-yz 395; (2, 3, 4): d0 23, C 46, d2 23, [C;d0^T] 69, C-without-yz 35; (3, 4, 5): d0 59, C 118, d2 59, [C;d0^T] 177, C-without-yz 99; (2, 5, 7): d0 69, C 138, d2 69, [C;d0^T] 207, C-without-yz 104; (7, 7, 7): d0 342, C 684, d2 342, [C;d0^T] 1026, C-without-yz 636; (8, 8, 8): d0 511, C 1022, d2 511, [C;d0^T] 1533, C-without-yz 959; (4, 6, 8): d0 191, C 382, d2 191, [C;d0^T] 573, C-without-yz 335; (10, 10, 10): d0 999, C 1998, d2 999, [C;d0^T] 2997, C-without-yz 1899 all equal N-1, 2N-2, N-1, 3N-3, 2(N-LyLz)+LyLz-1: True",
+   "R3 real-space spectra on 9 tori up to 8^3 (C^T C 1536x1536): max |eig - {0,|s|^2,|s|^2}| = 6.8e-14; Yee iG up to 6^3 (1296x1296) max dev 3.9e-14, positive branches 2(N-1)",
+   "R4 real-space cubic action: L=2: proper 24/24, improper 24/24 fix (d0,C,d2); L=3: proper 24/24, improper 24/24 fix (d0,C,d2); L=4: proper 24/24, improper 24/24 fix (d0,C,d2); L=5: proper 24/24, improper 24/24 fix (d0,C,d2)",
+   "R5 exp(tG) on 6^3 (1296 fields), t<=5: energy drift 1.2e-16, Gauss changes 4.7e-14/2.4e-14",
+   "R6 OU on H (real space, L=4,5; kappa 0.37,1,2.9,11): Lyapunov vs (1/kappa)(C^TC|_H)^-1 rel dev 3.9e-15; kappa*Sigma spectrum vs 1/|s|^2 rel dev 1.1e-14; harmonic zero modes L=4: 3 in ker d0^T (dim 129), 0 in H (dim 126), L=5: 3 in ker d0^T (dim 251), 0 in H (dim 248)",
+   "R7 omega/|k| at L=4096 (100,111,123) = 0.999999902, 0.999999902, 0.9999993137; two-reflection block exact to 3.7e-41; (|s|-Omega)/|s|^3 -> 0.020833333 (1/48); L=16 zone max |Omega - omega| = 0.772558, fraction gap>1e-3 = 1.0000; lift speed at tau 1/8,1/2,2 = 0.5, 1.0, 2.0",
+   "hits=0; runtime 73s"
+  ]
+ },
+ "review": "Output matches the task: on an independently built real-space doubled complex (cubic tori L=2..8,10 and anisotropic (2,3,4),(3,4,5),(2,5,7),(4,6,8)), C d0 = 0 and d2 C = 0 exactly with only distance-1 entries; GF(p) ranks give rank C = 2N-2, rank [C;d0^T] = 3N-3 (three harmonic modes, no other zero mode) and the missing-yz-face rank 2(N-LyLz)+LyLz-1; real-space spectra match {0,|s|^2,|s|^2} per momentum to 7e-14 up to 8^3 with 2(N-1) positive Yee frequencies; all 24 proper (and 24 improper) signed permutations fix d0, C, d2 in real space; energy and Gauss rows are conserved to 5e-14 under exp(tG) on 6^3; the real-space Lyapunov covariance on H equals (1/kappa)(C^TC|_H)^-1 to 4e-15 at four curvatures; the matched tau=1/2 lift differs from |s| at every nonzero L=16 momentum (max 0.7726 at the corner) with (|s|-Omega)/|s|^3 -> 1/48; no falsifier fired.",
+ "what": "Note on main: docs/U1_ROLE_COMPILED_YEE_MAXWELL_GENERATOR_AND_TIME_SELECTION_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_ROLE_COMPILED_YEE_MAXWELL_GENERATOR_A/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_ROLE_COMPILED_YEE_MAXWELL_GENERATOR_A/<script>.py\"",
+ "stdout_sha256": "92db57e084920d8a3c6d586d91abca9f6945ae4e8566579fa74af4940fc3285e",
+ "stdout_tail": "\n  L=5: Lyapunov Sigma vs (1/kappa)(C^T C|_H)^-1 over kappa=(0.37, 1.0, 2.9, 11.0): max rel dev 3.93e-15; spectrum of kappa*Sigma vs 1/|s|^2 (two per nonzero k): max rel dev 1.12e-14\nSUMMARY: R6 OU on H (real space, L=4,5; kappa 0.37,1,2.9,11): Lyapunov vs (1/kappa)(C^TC|_H)^-1 rel dev 3.9e-15; kappa*Sigma spectrum vs 1/|s|^2 rel dev 1.1e-14; harmonic zero modes L=4: 3 in ker d0^T (dim 129), 0 in H (dim 126), L=5: 3 in ker d0^T (dim 251), 0 in H (dim 248)\n==============================================================================\nR7  unit speed, two-reflection block, whole-zone comparison\n  omega/|k| at L=4096 along (100),(111),(123): 0.999999901954, 0.999999901954, 0.99999931368\n  two-reflection block, 201 lambdas in [0,1]: max |W^T W - I|, |cos,sin - (2 arccos)| = 3.73e-41\n  (|s| - Omega)/|s|^3 at |s| = 0.1, 0.01, 0.001: 0.02083203067, 0.02083332031, 0.0208333332 (1/48 = 0.0208333)\n  L=16 zone: max |Omega - omega| = 0.772558 at |s|^2 = 12.0000 (corner: omega = 3.464102, Omega = 2.691544); fraction of nonzero momenta with gap > 1e-3: 1.0000\n  lift speed at tau = 1/8, 1/2, 2: 0.5, 1.0, 2.0\nSUMMARY: R7 omega/|k| at L=4096 (100,111,123) = 0.999999902, 0.999999902, 0.9999993137; two-reflection block exact to 3.7e-41; (|s|-Omega)/|s|^3 -> 0.020833333 (1/48); L=16 zone max |Omega - omega| = 0.772558, fraction gap>1e-3 = 1.0000; lift speed at tau 1/8,1/2,2 = 0.5, 1.0, 2.0\n==============================================================================\nSUMMARY: hits=0; runtime 73s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j52af",
+  "at_utc": "20260919T122107Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

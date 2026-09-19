@@ -1,0 +1,55 @@
+==============================================================================
+R1/R2  exact chain identities, locality, ranks over GF(p)
+  torus (2, 2, 2): N=8; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [7, 14, 7, 21, 11] expected [7, 14, 7, 21, 11]
+  torus (3, 3, 3): N=27; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [26, 52, 26, 78, 44] expected [26, 52, 26, 78, 44]
+  torus (4, 4, 4): N=64; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [63, 126, 63, 189, 111] expected [63, 126, 63, 189, 111]
+  torus (5, 5, 5): N=125; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [124, 248, 124, 372, 224] expected [124, 248, 124, 372, 224]
+  torus (6, 6, 6): N=216; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [215, 430, 215, 645, 395] expected [215, 430, 215, 645, 395]
+  torus (2, 3, 4): N=24; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [23, 46, 23, 69, 35] expected [23, 46, 23, 69, 35]
+  torus (3, 4, 5): N=60; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [59, 118, 59, 177, 99] expected [59, 118, 59, 177, 99]
+  torus (2, 5, 7): N=70; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [69, 138, 69, 207, 104] expected [69, 138, 69, 207, 104]
+  torus (7, 7, 7): N=343; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [342, 684, 342, 1026, 636] expected [342, 684, 342, 1026, 636]
+  torus (8, 8, 8): N=512; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [511, 1022, 511, 1533, 959] expected [511, 1022, 511, 1533, 959]
+  torus (4, 6, 8): N=192; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [191, 382, 191, 573, 335] expected [191, 382, 191, 573, 335]
+  torus (10, 10, 10): N=1000; C d0 = 0: True, d2 C = 0: True; distance-1 entries only: True; counts 2/4/4/6: True; ranks d0,C,d2,[C;d0^T],C-no-yz = [999, 1998, 999, 2997, 1899] expected [999, 1998, 999, 2997, 1899]
+SUMMARY: R1/R2 exact: C d0 = 0 and d2 C = 0 with distance-1 entries only (counts 2/4/4/6) on tori (2, 2, 2), (3, 3, 3), (4, 4, 4), (5, 5, 5), (6, 6, 6), (2, 3, 4), (3, 4, 5), (2, 5, 7), (7, 7, 7), (8, 8, 8), (4, 6, 8), (10, 10, 10); GF(p) ranks (two primes) (2, 2, 2): d0 7, C 14, d2 7, [C;d0^T] 21, C-without-yz 11; (3, 3, 3): d0 26, C 52, d2 26, [C;d0^T] 78, C-without-yz 44; (4, 4, 4): d0 63, C 126, d2 63, [C;d0^T] 189, C-without-yz 111; (5, 5, 5): d0 124, C 248, d2 124, [C;d0^T] 372, C-without-yz 224; (6, 6, 6): d0 215, C 430, d2 215, [C;d0^T] 645, C-without-yz 395; (2, 3, 4): d0 23, C 46, d2 23, [C;d0^T] 69, C-without-yz 35; (3, 4, 5): d0 59, C 118, d2 59, [C;d0^T] 177, C-without-yz 99; (2, 5, 7): d0 69, C 138, d2 69, [C;d0^T] 207, C-without-yz 104; (7, 7, 7): d0 342, C 684, d2 342, [C;d0^T] 1026, C-without-yz 636; (8, 8, 8): d0 511, C 1022, d2 511, [C;d0^T] 1533, C-without-yz 959; (4, 6, 8): d0 191, C 382, d2 191, [C;d0^T] 573, C-without-yz 335; (10, 10, 10): d0 999, C 1998, d2 999, [C;d0^T] 2997, C-without-yz 1899 all equal N-1, 2N-2, N-1, 3N-3, 2(N-LyLz)+LyLz-1: True
+==============================================================================
+R3  full real-space spectra against the per-momentum formula
+  torus (3, 3, 3): C^T C (81x81) max |eig - formula| = 1.07e-14; Yee iG (162) max dev 7.11e-15, positive branches 52 = 2(N-1) = 52
+  torus (4, 4, 4): C^T C (192x192) max |eig - formula| = 1.95e-14; Yee iG (384) max dev 1.20e-14, positive branches 126 = 2(N-1) = 126
+  torus (5, 5, 5): C^T C (375x375) max |eig - formula| = 3.02e-14; Yee iG (750) max dev 2.66e-14, positive branches 248 = 2(N-1) = 248
+  torus (6, 6, 6): C^T C (648x648) max |eig - formula| = 4.09e-14; Yee iG (1296) max dev 3.11e-14, positive branches 430 = 2(N-1) = 430
+  torus (7, 7, 7): C^T C (1029x1029) max |eig - formula| = 5.15e-14; Yee iG (2058) max dev 3.91e-14, positive branches 684 = 2(N-1) = 684
+  torus (8, 8, 8): C^T C (1536x1536) max |eig - formula| = 6.75e-14
+  torus (2, 3, 4): C^T C (72x72) max |eig - formula| = 1.78e-14; Yee iG (144) max dev 7.33e-15, positive branches 46 = 2(N-1) = 46
+  torus (3, 4, 5): C^T C (180x180) max |eig - formula| = 1.78e-14; Yee iG (360) max dev 1.73e-14, positive branches 118 = 2(N-1) = 118
+  torus (2, 5, 7): C^T C (210x210) max |eig - formula| = 1.95e-14; Yee iG (420) max dev 1.95e-14, positive branches 138 = 2(N-1) = 138
+SUMMARY: R3 real-space spectra on 9 tori up to 8^3 (C^T C 1536x1536): max |eig - {0,|s|^2,|s|^2}| = 6.8e-14; Yee iG up to 6^3 (1296x1296) max dev 3.9e-14, positive branches 2(N-1)
+==============================================================================
+R4  real-space action of the 48 signed permutations on d0, C, d2
+  L=2: proper rotations fixing (d0, C, d2): 24/24; improper (2-form face signs, cube sign det): 24/24
+  L=3: proper rotations fixing (d0, C, d2): 24/24; improper (2-form face signs, cube sign det): 24/24
+  L=4: proper rotations fixing (d0, C, d2): 24/24; improper (2-form face signs, cube sign det): 24/24
+  L=5: proper rotations fixing (d0, C, d2): 24/24; improper (2-form face signs, cube sign det): 24/24
+SUMMARY: R4 real-space cubic action: L=2: proper 24/24, improper 24/24 fix (d0,C,d2); L=3: proper 24/24, improper 24/24 fix (d0,C,d2); L=4: proper 24/24, improper 24/24 fix (d0,C,d2); L=5: proper 24/24, improper 24/24 fix (d0,C,d2)
+==============================================================================
+R5  energy and Gauss rows under exp(tG), real space
+  L=6, alpha=0.37, beta=1/alpha, t in [0,5.0]: relative energy drift 1.16e-16; electric Gauss change 4.68e-14; magnetic Gauss change 2.43e-14
+SUMMARY: R5 exp(tG) on 6^3 (1296 fields), t<=5: energy drift 1.2e-16, Gauss changes 4.7e-14/2.4e-14
+==============================================================================
+R6  OU sampler on the mean-zero transverse space, real-space Lyapunov
+  L=4: dim ker d0^T = 129 with 3 zero modes of C^T C (harmonic); dim H = 126 (2N-2 = 126) with 0 zero modes
+  L=4: Lyapunov Sigma vs (1/kappa)(C^T C|_H)^-1 over kappa=(0.37, 1.0, 2.9, 11.0): max rel dev 2.34e-15; spectrum of kappa*Sigma vs 1/|s|^2 (two per nonzero k): max rel dev 6.22e-15
+  L=5: dim ker d0^T = 251 with 3 zero modes of C^T C (harmonic); dim H = 248 (2N-2 = 248) with 0 zero modes
+  L=5: Lyapunov Sigma vs (1/kappa)(C^T C|_H)^-1 over kappa=(0.37, 1.0, 2.9, 11.0): max rel dev 3.93e-15; spectrum of kappa*Sigma vs 1/|s|^2 (two per nonzero k): max rel dev 1.12e-14
+SUMMARY: R6 OU on H (real space, L=4,5; kappa 0.37,1,2.9,11): Lyapunov vs (1/kappa)(C^TC|_H)^-1 rel dev 3.9e-15; kappa*Sigma spectrum vs 1/|s|^2 rel dev 1.1e-14; harmonic zero modes L=4: 3 in ker d0^T (dim 129), 0 in H (dim 126), L=5: 3 in ker d0^T (dim 251), 0 in H (dim 248)
+==============================================================================
+R7  unit speed, two-reflection block, whole-zone comparison
+  omega/|k| at L=4096 along (100),(111),(123): 0.999999901954, 0.999999901954, 0.99999931368
+  two-reflection block, 201 lambdas in [0,1]: max |W^T W - I|, |cos,sin - (2 arccos)| = 3.73e-41
+  (|s| - Omega)/|s|^3 at |s| = 0.1, 0.01, 0.001: 0.02083203067, 0.02083332031, 0.0208333332 (1/48 = 0.0208333)
+  L=16 zone: max |Omega - omega| = 0.772558 at |s|^2 = 12.0000 (corner: omega = 3.464102, Omega = 2.691544); fraction of nonzero momenta with gap > 1e-3: 1.0000
+  lift speed at tau = 1/8, 1/2, 2: 0.5, 1.0, 2.0
+SUMMARY: R7 omega/|k| at L=4096 (100,111,123) = 0.999999902, 0.999999902, 0.9999993137; two-reflection block exact to 3.7e-41; (|s|-Omega)/|s|^3 -> 0.020833333 (1/48); L=16 zone max |Omega - omega| = 0.772558, fraction gap>1e-3 = 1.0000; lift speed at tau 1/8,1/2,2 = 0.5, 1.0, 2.0
+==============================================================================
+SUMMARY: hits=0; runtime 73s

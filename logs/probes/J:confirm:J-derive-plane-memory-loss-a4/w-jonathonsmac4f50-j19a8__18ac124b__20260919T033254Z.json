@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-plane-memory-loss-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j19a8",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/plane-memory-loss/referee_w-jonathonsmac4f50-j19a8/check.py",
+ "seed": 88774,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "18ac124b",
+ "started_utc": "20260919T033254Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 4 - steps 1-3 hold (A(k)/k < 1/3 via q = (3+k^2) sinh k - 3k cosh k, A increasing, the mean-field map A(3 beta m) forgets iff beta <= 1), but step 4's 'triangle |S| >= |ES| = 3|m|' is false pointwise when m is the magnetization (records (+z,+z,-z) give |S| = 1 < 3A(3) = 2.01) and an identity with no sign when m is the realized average, so the route-(ii) no-go is not established; and step 5's 'the linear model conserves the uniform mode, so cannot supply the decay' is false: phi(0) = 1 conserves the mode's mean while its variance grows (per-site 0.4135 sigma^2 log t, s q_s -> 3 sqrt3/(4 pi)), so the linear model does forget (the point recorded against a1)"
+ },
+ "review": "Plane-memory-loss a4's steps 1-3 reproduce (A/k < 1/3 via q, A increasing, mean-field forgets iff beta <= 1), but step 4's |S| >= 3|m| fails pointwise for the magnetization (records +z,+z,-z give |S| = 1 < 3A(3) = 2.01) and step 5's 'linear model cannot forget' is false (s q_s -> 3sqrt3/(4pi) = 0.4135, variance grows like log t), so the claim fails at step 4 with no HIT.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:plane-memory-loss:a4/; its files are probes/work/derive/plane-memory-loss/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/plane-memory-loss/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "960042a6ec478773ed1f13795fb80cad9b10b8bdc11c2d9d91dc414f43f7a016",
+ "stdout_tail": "PASS M1: (k/3 - A) 3k sinh k = q (True); q' = k(k cosh k - sinh k) (True); (k cosh k - sinh k)' = k sinh k (True); A/k = 1/3 - k**2/45 + O(k^4)\nPASS M2: A' = 1/k^2 - csch^2 k, positive since sinh k > k\nPASS M3: beta 0.9: m_3000 = 0.0000; beta 1.0: m_3000 = 0.0167; beta 1.2: fixed point 0.50205; beta 2.0: fixed point 0.78889\nPASS M4: records (+z, +z, -z) give |S| = 1 < 3 A(3) = 2.0149 at beta = 1: '|S| >= 3|m|' is false pointwise for the magnetization; for the realized average it is an identity with no sign\nPASS M5: s = 25: s q_s = 0.40940; s = 50: s q_s = 0.41144; s = 100: s q_s = 0.41247; s = 200: s q_s = 0.41298; s = 400: s q_s = 0.41324 -> 3 sqrt3/(4 pi) = 0.41350: the per-site variance grows like 0.4135 sigma^2 log t, so the linear model's projection on the initial direction decays\nSUMMARY: fails at step 4 - steps 1-3 hold (A(k)/k < 1/3 via q = (3+k^2) sinh k - 3k cosh k, A increasing, the mean-field map A(3 beta m) forgets iff beta <= 1), but step 4's 'triangle |S| >= |ES| = 3|m|' is false pointwise when m is the magnetization (records (+z,+z,-z) give |S| = 1 < 3A(3) = 2.01) and an identity with no sign when m is the realized average, so the route-(ii) no-go is not established; and step 5's 'the linear model conserves the uniform mode, so cannot supply the decay' is false: phi(0) = 1 conserves the mode's mean while its variance grows (per-site 0.4135 sigma^2 log t, s q_s -> 3 sqrt3/(4 pi)), so the linear model does forget (the point recorded against a1)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j19a8",
+  "at_utc": "20260919T033256Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,6 @@
+OK | 4^3 | NOTE: claim_scope: "For the static law of the exponential zonal rule on the pure-state sphere under the unsoldered reading — the torus law proport
+OK | 2(1-cos | NOTE: `E(k) = Σ_{i=1}^{3} 2(1 − cos k_i)`; the long-range-order parameter
+OK | 2π | NOTE: transform `ŝ(k) = N^{−1/2} Σ_x e^{ik·x} s_x`, `k ∈ (π/L) Z³` modulo `2π`;
+OK | 3G(0) | NOTE: `M² ≥ 1 − 3G(0)/β`, `G(0) ≤ √3π/8` (G3);
+DERIVED | 4^3 torus N=64, 3N=192 bonds; G_2 = 29/192 (29/192)
+SUMMARY: provenance OK — 4^3, E=2(1-cos), 2π, 3G(0) sourced in the note; N=64, 3N=192 and G_2=29/192 derived exactly

@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8153",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block19-sphere",
+ "worker": "w-macbookpro90c72-ja672",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8153/provenance_theorem_numbers.py",
+ "seed": 92750,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5f524f77",
+ "started_utc": "20260919T043910Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "provenance OK \u2014 4^3, E=2(1-cos), 2\u03c0, 3G(0) sourced in the note; N=64, 3N=192 and G_2=29/192 derived exactly"
+ },
+ "review": "provenance: 4^3, E=2(1-cos), 2pi, 3G(0) sourced in the note; N=64, 3N=192 and G_2=29/192 derived exactly; none unsourced",
+ "what": "PR #8153 ([physics-loop] admissibility-induced-law block19 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915; git show origin/physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915:<note>. Create probes/work/pr8153/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8153/<script>.py\"",
+ "stdout_sha256": "6965df1efcbe67ef62977ce0c90fc0931307718a8b88813e4cacced955199d16",
+ "stdout_tail": "OK | 4^3 | NOTE: claim_scope: \"For the static law of the exponential zonal rule on the pure-state sphere under the unsoldered reading \u2014 the torus law proport\nOK | 2(1-cos | NOTE: `E(k) = \u03a3_{i=1}^{3} 2(1 \u2212 cos k_i)`; the long-range-order parameter\nOK | 2\u03c0 | NOTE: transform `\u015d(k) = N^{\u22121/2} \u03a3_x e^{ik\u00b7x} s_x`, `k \u2208 (\u03c0/L) Z\u00b3` modulo `2\u03c0`;\nOK | 3G(0) | NOTE: `M\u00b2 \u2265 1 \u2212 3G(0)/\u03b2`, `G(0) \u2264 \u221a3\u03c0/8` (G3);\nDERIVED | 4^3 torus N=64, 3N=192 bonds; G_2 = 29/192 (29/192)\nSUMMARY: provenance OK \u2014 4^3, E=2(1-cos), 2\u03c0, 3G(0) sourced in the note; N=64, 3N=192 and G_2=29/192 derived exactly\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja672",
+  "at_utc": "20260919T043911Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

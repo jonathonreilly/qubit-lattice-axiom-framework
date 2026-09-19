@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-lightcone-sixaxis-order-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j58b1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-sixaxis-order/referee_w-jonathonsmac4f50-j58b1/check.py",
+ "seed": 90186,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2f9b0a4c",
+ "started_utc": "20260919T035626Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed with a corrected argument for 'not pairwise' and '7-body'; block 17's pair RP does not transfer, as stated"
+ },
+ "review": "Lightcone-sixaxis-order a1's cross-ratio 128925/96721 reproduces and shows pi is not the nearest-neighbour pair law; its 'not pairwise, 7-body' claim is true but needs higher differences, which hold (third-order 940662585/932487161, a mixed seventh-order 1.0265, both != 1), so HIT confirmed with that corrected argument.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-sixaxis-order:a1/; its files are probes/work/derive/lightcone-sixaxis-order/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-sixaxis-order/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "47437bbe6e95ce5972f85465990da87cb47f6a70fa0448ac61ce24b7bb491023",
+ "stdout_tail": "PASS Y1: cross-ratio = 128925/96721 = 1.33296, the attempt's closed form\nPASS Y2: a single pair term between the two opposite sites gives the same cross-ratio: the test separates pi from the nearest-neighbour pair law (those sites are not neighbours), not from pairwise interactions in general\nPASS Y3: third-order mixed difference Z0 Z2^3/(Z1^3 Z3) = 940662585/932487161 = 1.008767 != 1: a genuine three-body term\nPASS Y4: +-z sector: Z_k = Z_(7-k) (True) so the seventh difference is 1 (True); mixed switches (-z x3, +x x4): 1.02646 != 1 - a genuine seven-body term\nHIT: confirmed - lightcone-sixaxis-order a1: pi's interaction log Z_x is not the nearest-neighbour pair law (cross-ratio of the two opposite stencil sites (p^7+q^7+4r^7)(p^5q^2+p^2q^5+4r^7)/(p^6q+pq^6+4r^7)^2 = 128925/96721 at (3,1,2)), and it is genuinely many-body: the third-order mixed difference is 940662585/932487161 and a seventh-order one is 1.0265, both != 1. Correction: the attempt's cross-ratio alone shows only a distance-2 coupling (a pair term would reproduce it); 'not pairwise' and '7-body' need the higher differences checked here, and in the +-z sector the odd full-order differences vanish by symmetry\nSUMMARY: confirmed with a corrected argument for 'not pairwise' and '7-body'; block 17's pair RP does not transfer, as stated\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j58b1",
+  "at_utc": "20260919T035626Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok lightcone-sixaxis-order a1): pi's log Z interaction is not the nearest-neighbour pair law (cross-ratio 128925/96721 at (3,1,2)) and is genuinely many-body (third-order mixed difference 940662585/932487161, a seventh-order one 1.0265); correction: the attempt's two-site cross-ratio alone cannot distinguish a distance-2 pair term.",
+  "by": "w-jonathonsmac4f50-j58b1",
+  "at_utc": "20260919T035626Z"
+ }
+}

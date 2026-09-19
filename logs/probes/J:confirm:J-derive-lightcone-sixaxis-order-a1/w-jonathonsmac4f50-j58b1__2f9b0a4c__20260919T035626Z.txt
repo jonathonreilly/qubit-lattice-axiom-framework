@@ -1,0 +1,6 @@
+PASS Y1: cross-ratio = 128925/96721 = 1.33296, the attempt's closed form
+PASS Y2: a single pair term between the two opposite sites gives the same cross-ratio: the test separates pi from the nearest-neighbour pair law (those sites are not neighbours), not from pairwise interactions in general
+PASS Y3: third-order mixed difference Z0 Z2^3/(Z1^3 Z3) = 940662585/932487161 = 1.008767 != 1: a genuine three-body term
+PASS Y4: +-z sector: Z_k = Z_(7-k) (True) so the seventh difference is 1 (True); mixed switches (-z x3, +x x4): 1.02646 != 1 - a genuine seven-body term
+HIT: confirmed - lightcone-sixaxis-order a1: pi's interaction log Z_x is not the nearest-neighbour pair law (cross-ratio of the two opposite stencil sites (p^7+q^7+4r^7)(p^5q^2+p^2q^5+4r^7)/(p^6q+pq^6+4r^7)^2 = 128925/96721 at (3,1,2)), and it is genuinely many-body: the third-order mixed difference is 940662585/932487161 and a seventh-order one is 1.0265, both != 1. Correction: the attempt's cross-ratio alone shows only a distance-2 coupling (a pair term would reproduce it); 'not pairwise' and '7-body' need the higher differences checked here, and in the +-z sector the odd full-order differences vanish by symmetry
+SUMMARY: confirmed with a corrected argument for 'not pairwise' and '7-body'; block 17's pair RP does not transfer, as stated

@@ -1,0 +1,48 @@
+CHECK H(3, 1, 2): PASS Hoelder bound+strict True True
+CHECK H(5, 2, 4): PASS Hoelder bound+strict True True
+CHECK H(7, 3, 5): PASS Hoelder bound+strict True True
+ROW plaquette (3, 1, 2): n=4 |E|=4 Z=20784 D=22464 Z<D=True mu_stat(const)=27/6928 mu_form<=3/832 Ef_gap=315/180128
+CHECK ltplaquette(3, 1, 2): PASS
+CHECK gapplaquette(3, 1, 2): PASS
+CHECK Zplaquette(3, 1, 2): PASS Z=20784
+CHECK Dplaquette(3, 1, 2): PASS D=22464
+ROW plaquette (5, 2, 4): n=4 |E|=4 Z=280086 D=295182 Z<D=True mu_stat(const)=625/280086 mu_form<=625/295182 Ef_gap=1572500/2296565157
+CHECK ltplaquette(5, 2, 4): PASS
+CHECK gapplaquette(5, 2, 4): PASS
+ROW plaquette (7, 3, 5): n=4 |E|=4 Z=810768 D=853200 Z<D=True mu_stat(const)=343/115824 mu_form<=2401/853200 Ef_gap=75803/85782150
+CHECK ltplaquette(7, 3, 5): PASS
+CHECK gapplaquette(7, 3, 5): PASS
+ROW rect2x3 (3, 1, 2): n=6 |E|=7 Z=6000000 D=7008768 Z<D=True mu_stat(const)=729/2000000 mu_form<=27/86528 Ef_gap=212787/676000000
+CHECK ltrect2x3(3, 1, 2): PASS
+CHECK gaprect2x3(3, 1, 2): PASS
+CHECK Zrect2x3(3, 1, 2): PASS Z=6000000
+CHECK Drect2x3(3, 1, 2): PASS D=7008768
+ROW rect2x3 (5, 2, 4): n=6 |E|=7 Z=568472046 D=631394298 Z<D=True mu_stat(const)=78125/568472046 mu_form<=78125/631394298 Ef_gap=819300156250/9970278011577603
+CHECK ltrect2x3(5, 2, 4): PASS
+CHECK gaprect2x3(5, 2, 4): PASS
+CHECK Zrect2x3(5, 2, 4): PASS Z=568472046
+CHECK Drect2x3(5, 2, 4): PASS D=631394298
+ROW rect2x3 (7, 3, 5): n=6 |E|=7 Z=3651973440 D=4044168000 Z<D=True mu_stat(const)=823543/3651973440 mu_form<=823543/4044168000 Ef_gap=42055870381/320512025236500
+CHECK ltrect2x3(7, 3, 5): PASS
+CHECK gaprect2x3(7, 3, 5): PASS
+CHECK Zrect2x3(7, 3, 5): PASS Z=3651973440
+CHECK Drect2x3(7, 3, 5): PASS D=4044168000
+ROW cube (3, 1, 2): n=8 |E|=12 Z=6982520832 D=10933678080 Z<D=True mu_stat(const)=59049/775835648 mu_form<=2187/44994560 Ef_gap=351610551/2130638648320
+CHECK ltcube(3, 1, 2): PASS
+CHECK gapcube(3, 1, 2): PASS
+CHECK Zcube(3, 1, 2): PASS Z=6982520832
+CHECK Dcube(3, 1, 2): PASS D=10933678080
+ROW cube (5, 2, 4): n=8 |E|=12 Z=17002040556294 D=22841951518746 Z<D=True mu_stat(const)=244140625/17002040556294 mu_form<=244140625/22841951518746 Ef_gap=79208861795410156250/3595923945431674259345253
+CHECK ltcube(5, 2, 4): PASS
+CHECK gapcube(5, 2, 4): PASS
+CHECK Zcube(5, 2, 4): PASS Z=17002040556294
+CHECK Dcube(5, 2, 4): PASS D=22841951518746
+ROW cube (7, 3, 5): n=8 |E|=12 Z=412507735200000 D=555911333280000 Z<D=True mu_stat(const)=13841287201/412507735200000 mu_form<=13841287201/555911333280000 Ef_gap=172299512732817029/3317675420476637550000
+CHECK ltcube(7, 3, 5): PASS
+CHECK gapcube(7, 3, 5): PASS
+CHECK Zcube(7, 3, 5): PASS Z=412507735200000
+CHECK Dcube(7, 3, 5): PASS D=555911333280000
+ROW path3 (3, 1, 2): n=3 |E|=2 Z=864 D=864 Z<D=False mu_stat(const)=1/96 mu_form<=1/96 Ef_gap=0
+CHECK pathZD: PASS path Z=864 D=864
+HIT: on the 2x3 rectangle and the cube, at (p,q,r)=(3,1,2),(5,2,4),(7,3,5), independent brute-force Z and all-order D give Z < D with exact values matching the constant-pattern separator: mu_S(v^b) <= p^{|E|}/D < p^{|E|}/Z = mu_stat(v^b) for every adapted scheme (mu_S(v^b)=sum_sigma rho(sigma|v^b) p^{|E|}/D_sigma); the path of 3 is the negative control Z=D. Hoelder sum_s prod phi(s,a_i) <= N_k holds by full enumeration of M^k for k<=6 at the three rules, strict on an orthogonal pair.
+SUMMARY: PARTIAL independent brute-force/all-order census confirms Z<D on 2x3 and cube at (3,1,2),(5,2,4),(7,3,5) with separator f=1[constant] and positive exact margins; path-of-3 has Z=D; Hoelder enumerated on M^k, k<=6.

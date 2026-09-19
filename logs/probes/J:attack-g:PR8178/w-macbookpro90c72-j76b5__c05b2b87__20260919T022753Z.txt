@@ -1,0 +1,8 @@
+9|φ|² = 3+2cos k1+2cos k2+2cos(k1-k2)
+1-|φ|² = (4/9)[sin²(k1/2)+sin²(k2/2)+sin²((k1-k2)/2)]
+L=2: all 4 modes identity ok; zero mode u=1
+L=3: all 9 modes identity ok; zero mode u=1
+L=4: all 16 modes identity ok; zero mode u=1
+L=8: all 64 modes identity ok; zero mode u=1
+modes checked 93; extra u=1 nonzero 0
+SUMMARY: pattern has no purchase on this note beyond the known lag-25 D1 HIT — T1.2 1-|φ(k)|²=(4/9)[sin²(k1/2)+sin²(k2/2)+sin²((k1-k2)/2)] holds symbolically and on every mode of the L=2,3,4,8 tori, with |φ|=1 only at the zero mode

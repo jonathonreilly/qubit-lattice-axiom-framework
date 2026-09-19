@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8178",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block34-sphere",
+ "worker": "w-macbookpro90c72-j76b5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8178/t1_phi_multiplier_identity.py",
+ "seed": 84873,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c05b2b87",
+ "started_utc": "20260919T022753Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known lag-25 D1 HIT \u2014 T1.2 1-|\u03c6(k)|\u00b2=(4/9)[sin\u00b2(k1/2)+sin\u00b2(k2/2)+sin\u00b2((k1-k2)/2)] holds symbolically and on every mode of the L=2,3,4,8 tori, with |\u03c6|=1 only at the zero mode"
+ },
+ "review": "T1.2 multiplier identity holds symbolically and on every mode of L=2,3,4,8; |phi|=1 only at the zero mode; no new defect beyond known lag-25 D1 HIT",
+ "what": "PR #8178 (ail34: the torus memory time of the sphere formation law \u2014 t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917; git show origin/physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917:<note>. Create probes/work/pr8178/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8178/<script>.py\"",
+ "stdout_sha256": "73eca3020927892f7ba8933d164b47fa8a03ba12e1e2b90381939c81583f40d3",
+ "stdout_tail": "9|\u03c6|\u00b2 = 3+2cos k1+2cos k2+2cos(k1-k2)\n1-|\u03c6|\u00b2 = (4/9)[sin\u00b2(k1/2)+sin\u00b2(k2/2)+sin\u00b2((k1-k2)/2)]\nL=2: all 4 modes identity ok; zero mode u=1\nL=3: all 9 modes identity ok; zero mode u=1\nL=4: all 16 modes identity ok; zero mode u=1\nL=8: all 64 modes identity ok; zero mode u=1\nmodes checked 93; extra u=1 nonzero 0\nSUMMARY: pattern has no purchase on this note beyond the known lag-25 D1 HIT \u2014 T1.2 1-|\u03c6(k)|\u00b2=(4/9)[sin\u00b2(k1/2)+sin\u00b2(k2/2)+sin\u00b2((k1-k2)/2)] holds symbolically and on every mode of the L=2,3,4,8 tori, with |\u03c6|=1 only at the zero mode\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j76b5",
+  "at_utc": "20260919T022754Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

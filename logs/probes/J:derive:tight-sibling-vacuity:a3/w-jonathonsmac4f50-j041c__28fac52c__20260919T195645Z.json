@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:tight-sibling-vacuity:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j041c",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/tight-sibling-vacuity/w-jonathonsmac4f50-j041c/check.py",
+ "seed": 47805,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "28fac52c",
+ "started_utc": "20260919T195645Z",
+ "elapsed_s": 35.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL (Vac) at a processed z holds whenever the depth-2 cone below z is in one of the 1107 of 1844 classes (6196 of 10272 local configurations) certified by safe local trees under (H) alone, whatever lies below; adding (Vac) at lower levels as an induction hypothesis certifies 66 of the 267 remaining classes with at most 4 bottom 1-sites, and 6 more once the unseen bottom must be realizable from a level -4 layer; the lemma on Z^3 is reduced, not proved: 195 of these small classes stay open at depth 2"
+ },
+ "review": "check.py verifies L1 and C1-C3 exactly (the node-sum cost and the disjoint-fork bookkeeping, the exhaustive depth-2 census: 10272 local configurations in 1844 classes with 6196 in 1107 classes certified by safe local trees under (H) alone, the (H)+(Vac) adversarial check certifying 66 plus 6 of the 267 remaining classes with at most 4 bottom 1-sites, and an explicit open planar class), which answers the task's question only partially: the vacuity is reduced, neither proved nor refuted.",
+ "what": "DERIVATION, independent attempt 3 of 4: Is the tight-sibling lemma's hypothesis ever satisfied?. GIVEN (refereed censuses): on every small window examined (2x2x2, 3x2x2, the isolated depth-2 cone, the named witnesses) a processed site never has ALL its 1-predecessors tight; the lemma's conclusion was therefore never tested. CAUTION from the referee: probes/lib/family.py's brute_min omits the definition's level restriction (nodes at levels <= level(z)); use probes/lib/rooted.py or restrict it yourself, and for windows with several seeds the single-seed dynamic program gives only upper bounds. TASK: prove or refute: a processed site with at least two processed 1-predecessors cannot have all of them tight (rooted value 0). If true the open lemma of block 33 (PR #8177) is vacuous-true and the unit budget c* = 1 follows (threshold 453 by that route; note the refinement-history route already gives 84). Route: a tight processed site forces a specific local pattern of marks below it (characterize all tight sites at depth <= 3 exhaustively with the correct definition), and two such patterns cannot share the cone of a common successor. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/tight-sibling-vacuity/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/tight-sibling-vacuity/<name>/check.py\"",
+ "stdout_sha256": "93038f623fb913f0cabf5a2923d7980c1e0224747a0c55426314adc4b41f0f0d",
+ "stdout_tail": "ll in the plane x1 = 0), z's 1-predecessors [(0, 0, -1), (0, -1, 0)]; adversary: {(0, -3, 0): 's', (0, -2, -1): 'p0', (0, -1, -2): 'p1', (0, 0, -3): 'p0'}, lowered []; no safe local tree of cost <= -1 at either 1-predecessor.  Confined to the plane (all marks with x1 = 0) the assignment is impossible: level -4 sites [(0, -3, -1)] must be 1 for a processed bottom site and 0 for a seed\n==========================================================================================\nSUMMARY: PARTIAL (Vac) at a processed z holds whenever the depth-2 cone below z is in one of the 1107 of 1844 classes (6196 of 10272 local configurations) certified by safe local trees under (H) alone, whatever lies below; adding (Vac) at lower levels as an induction hypothesis certifies 66 of the 267 remaining classes with at most 4 bottom 1-sites, and 6 more once the unseen bottom must be realizable from a level -4 layer; the lemma on Z^3 is reduced, not proved: 195 of these small classes stay open at depth 2\nHIT: (Vac) at a processed z holds whenever the depth-2 cone below z is in one of the 1107 of 1844 classes (6196 of 10272 local configurations) certified by safe local trees under (H) alone, whatever lies below; adding (Vac) at lower levels as an induction hypothesis certifies 66 of the 267 remaining classes with at most 4 bottom 1-sites, and 6 more once the unseen bottom must be realizable from a level -4 layer; the lemma on Z^3 is reduced, not proved: 195 of these small classes stay open at depth 2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j041c",
+  "at_utc": "20260919T195735Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "claim for referee: the safe-local-tree bounds (one open end O0/O1/O2) and the exact depth-2 census (1107 of 1844 classes certified under (H) alone, whatever lies below) plus the (Vac)-strengthened adversarial reduction (195 small classes left open); no counterexample and no proof of the tight-sibling vacuity; same-model-family disclosure: the round-1 tight-sibling-lemma referee reports are claude-opus-5",
+  "by": "w-jonathonsmac4f50-j041c",
+  "at_utc": "20260919T195735Z"
+ }
+}

@@ -1,0 +1,5 @@
+(3, 1, 2): pendant constant=True value=12; bridge constant=False nvals=3
+(5, 2, 4): pendant constant=True value=23; bridge constant=False nvals=3
+(1, 1, 1): pendant constant=True value=6; bridge constant=True nvals=1
+(2, 2, 2): pendant constant=True value=12; bridge constant=True nvals=1
+SUMMARY: pattern has no purchase on this note beyond the known Q4(a) triangle HIT — the same constancy test on F_C separates one-attachment (constant at every triple) from two-attachment (nonconstant iff not p=q=r) at (3,1,2), (5,2,4) and the constant rule

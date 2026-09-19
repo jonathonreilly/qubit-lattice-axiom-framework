@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8158",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block24-unreco",
+ "worker": "w-macbookpro90c72-j3c1a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8158/same_test_one_vs_two_attachment.py",
+ "seed": 86095,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f7a745",
+ "started_utc": "20260919T024815Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known Q4(a) triangle HIT \u2014 the same constancy test on F_C separates one-attachment (constant at every triple) from two-attachment (nonconstant iff not p=q=r) at (3,1,2), (5,2,4) and the constant rule"
+ },
+ "review": "Same constancy test separates one-attachment (always constant) from two-attachment (nonconstant unless p=q=r); no new defect beyond known Q4(a) HIT",
+ "what": "PR #8158 ([physics-loop] admissibility-induced-law block24 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915; git show origin/physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915:<note>. Create probes/work/pr8158/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8158/<script>.py\"",
+ "stdout_sha256": "acda7c0203f7d1c4e8b6c25e8e38732665a017886b24e99009a5c51c2e09224f",
+ "stdout_tail": "(3, 1, 2): pendant constant=True value=12; bridge constant=False nvals=3\n(5, 2, 4): pendant constant=True value=23; bridge constant=False nvals=3\n(1, 1, 1): pendant constant=True value=6; bridge constant=True nvals=1\n(2, 2, 2): pendant constant=True value=12; bridge constant=True nvals=1\nSUMMARY: pattern has no purchase on this note beyond the known Q4(a) triangle HIT \u2014 the same constancy test on F_C separates one-attachment (constant at every triple) from two-attachment (nonconstant iff not p=q=r) at (3,1,2), (5,2,4) and the constant rule\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3c1a",
+  "at_utc": "20260919T024815Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+L=1: whole-group 0 (want 0), individual 0 (want 0), diff 0 (want 0)
+L=2: whole-group 3 (want 3), individual 6 (want 6), diff 3 (want 3)
+L=3: whole-group 24 (want 24), individual 36 (want 36), diff 12 (want 12)
+L=4: whole-group 81 (want 81), individual 108 (want 108), diff 27 (want 27)
+L=5: whole-group 192 (want 192), individual 240 (want 240), diff 48 (want 48)
+L=6: whole-group 375 (want 375), individual 450 (want 450), diff 75 (want 75)
+L=7: whole-group 648 (want 648), individual 756 (want 756), diff 108 (want 108)
+L=8: whole-group 1029 (want 1029), individual 1176 (want 1176), diff 147 (want 147)
+C(1,0)=8/3 C(0,1)=8/3 quad(1,0)=4
+HIT: stated C(p,q)=(2/3)(p^2+pq+q^2+3p+3q) 'at least 4 with equality only at (1,0) and (0,1)' fails: C(1,0)=8/3 != 4 (the unscaled quadratic equals 4; E=(quad)/a = 4/a)
+unscaled quadratic =4 at [(0, 1), (1, 0)]; <4 []
+Casimir strictly increasing in each coordinate: True
+SUMMARY: whole-group vs individual plaquette counts hold on L=1..8, but the stated Casimir floor C>=4 with equality at (1,0),(0,1) fails: C(1,0)=C(0,1)=8/3; the unscaled quadratic in E is 4 at those labels

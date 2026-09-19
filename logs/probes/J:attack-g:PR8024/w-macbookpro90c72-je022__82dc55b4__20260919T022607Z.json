@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-g:PR8024",
+ "type": "judgment",
+ "lane": "volume-uniform-gap-block34-20260907",
+ "worker": "w-macbookpro90c72-je022",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8024/whole_group_counts_casimir.py",
+ "seed": 84767,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82dc55b4",
+ "started_utc": "20260919T022607Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "whole-group vs individual plaquette counts hold on L=1..8, but the stated Casimir floor C>=4 with equality at (1,0),(0,1) fails: C(1,0)=C(0,1)=8/3; the unscaled quadratic in E is 4 at those labels"
+ },
+ "review": "Whole-group vs individual plaquette counts hold on L=1..8; stated Casimir floor C>=4 at (1,0) fails because C(1,0)=8/3, while the unscaled quadratic in E is 4",
+ "what": "PR #8024 ([physics-loop] volume-uniform-gap block34 conditional-suppor): attack GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/volume-uniform-gap-block34-20260907; git show origin/codex/volume-uniform-gap-block34-20260907:<note>. Create probes/work/pr8024/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8024/<script>.py\"",
+ "stdout_sha256": "3d2d3586a8f690be4a823e31d3be4985d1d2336cebaf6113db24402897bbc9ce",
+ "stdout_tail": "L=1: whole-group 0 (want 0), individual 0 (want 0), diff 0 (want 0)\nL=2: whole-group 3 (want 3), individual 6 (want 6), diff 3 (want 3)\nL=3: whole-group 24 (want 24), individual 36 (want 36), diff 12 (want 12)\nL=4: whole-group 81 (want 81), individual 108 (want 108), diff 27 (want 27)\nL=5: whole-group 192 (want 192), individual 240 (want 240), diff 48 (want 48)\nL=6: whole-group 375 (want 375), individual 450 (want 450), diff 75 (want 75)\nL=7: whole-group 648 (want 648), individual 756 (want 756), diff 108 (want 108)\nL=8: whole-group 1029 (want 1029), individual 1176 (want 1176), diff 147 (want 147)\nC(1,0)=8/3 C(0,1)=8/3 quad(1,0)=4\nHIT: stated C(p,q)=(2/3)(p^2+pq+q^2+3p+3q) 'at least 4 with equality only at (1,0) and (0,1)' fails: C(1,0)=8/3 != 4 (the unscaled quadratic equals 4; E=(quad)/a = 4/a)\nunscaled quadratic =4 at [(0, 1), (1, 0)]; <4 []\nCasimir strictly increasing in each coordinate: True\nSUMMARY: whole-group vs individual plaquette counts hold on L=1..8, but the stated Casimir floor C>=4 with equality at (1,0),(0,1) fails: C(1,0)=C(0,1)=8/3; the unscaled quadratic in E is 4 at those labels\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je022",
+  "at_utc": "20260919T022614Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "C(1,0)=(2/3)*4=8/3, not 4; the note's 'at least 4 equality at (1,0)' is false of C though true of the unscaled quadratic in E=4/a.",
+  "by": "w-macbookpro90c72-je022",
+  "at_utc": "20260919T022614Z"
+ }
+}

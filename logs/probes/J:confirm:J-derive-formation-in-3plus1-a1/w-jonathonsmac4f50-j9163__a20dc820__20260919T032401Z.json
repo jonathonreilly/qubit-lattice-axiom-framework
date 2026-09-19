@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-in-3plus1-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j9163",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-in-3plus1/referee_w-jonathonsmac4f50-j9163/check.py",
+ "seed": 88241,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a20dc820",
+ "started_utc": "20260919T032401Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the linear dichotomy and drift hold; no failing step in what is claimed"
+ },
+ "review": "Formation-in-3plus1 a1's linear dichotomy reproduces independently (Hessian eigenvalues 1/8, 1/2, 1/2 with the Cauchy identity, positive-definite Hessians for d = 1..5, integral test finite iff d > 2, d = 2 eigenvalues 2/9, 2/3, drift (1,1,1)/4; return sums grow 0.573 per doubling in d = 2 and level off in d = 3), so HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-in-3plus1:a1/; its files are probes/work/derive/formation-in-3plus1/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-in-3plus1/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "140a05958303f298f284d585e3e833ca3b18789cd802863bf34fd720f1616777",
+ "stdout_tail": "PASS L1: H = (1/8)[[3,-1,-1],...], eigenvalues {1/8: 1, 1/2: 2}; k^T M k = (4|k|^2 - (1.k)^2)/16 = (|k|^2 + sum (k_i - k_j)^2)/16; grad phi(0) = [I/4, I/4, I/4]; kernel mean displacement [Fraction(1, 4), Fraction(1, 4), Fraction(1, 4)]\nPASS L2: Hessians positive definite: d = 1: {1/2: 1}; d = 2: {2/3: 1, 2/9: 1}; d = 3: {1/8: 1, 1/2: 2}; d = 4: {2/25: 1, 2/5: 3}; d = 5: {1/18: 1, 1/3: 4}; on (Z/4)^d, d <= 4, |phi|^2 = 1 only at k = 0\nPASS L3: int_0^1 k^(d-3) dk = {1: oo, 2: oo, 3: 1}; d = 2 Hessian eigenvalues {2/3: 1, 2/9: 1}\nINFO I1: d = 2 return sums [(8, 2.0667), (16, 2.6443), (32, 3.2186), (64, 3.7921), (128, 4.3654)], increments per doubling [0.5776, 0.5743, 0.5735, 0.5733] (log growth); d = 3 [(8, 1.6098), (16, 1.7016), (32, 1.7473), (64, 1.7701)], increments [0.0918, 0.0457, 0.0228] (levelling off); G_4 = 1913/1344\nHIT: confirmed - formation-in-3plus1 a1: 1 - |phi|^2 = k^T M k + O(k^4) with M = (1/16)(4I - 11^T) positive definite (eigenvalues 1/16, 1/4, 1/4; 4|k|^2 - (1.k)^2 = |k|^2 + sum (k_i - k_j)^2), positive-definite Hessians for d = 1..5 with |phi| = 1 only at k = 0, the integral test (finite zero-mode sum iff d > 2; d = 2 logarithmic with eigenvalues 2/9, 2/3), drift (1,1,1)/4; recomputed independently, with the return sums growing like log L in d = 2 and levelling off in d = 3. The attempt correctly leaves nonlinear LRO open\nSUMMARY: confirmed - the linear dichotomy and drift hold; no failing step in what is claimed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9163",
+  "at_utc": "20260919T032402Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok formation-in-3plus1 a1): linear formation on a d-dimensional level plane has a finite zero-mode sum iff d > 2 (M positive definite, integral test), so 3+1 is the lowest dimension with a 1/r equal-level linear kernel; drift (1,1,1)/4; numerics show log growth in d = 2 and saturation in d = 3.",
+  "by": "w-jonathonsmac4f50-j9163",
+  "at_utc": "20260919T032402Z"
+ }
+}

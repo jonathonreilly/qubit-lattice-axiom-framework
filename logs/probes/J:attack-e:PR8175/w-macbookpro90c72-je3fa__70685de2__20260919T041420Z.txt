@@ -1,0 +1,4 @@
+W1: E=16 sharp=10 E>sharp True loose=20 E<=loose True
+W2: E=20 sharp=12 E>sharp True loose=24 E<=loose True
+W3: E=23 sharp=15 E>sharp True loose=27 E<=loose True
+SUMMARY: pattern has no purchase on this note - the sharper-budget refutation is already an explicit adversarial construction (W1/W2/W3 ratios 8/5, 5/3, 23/12), not a sampled never; extra sampling is not the load-bearing claim

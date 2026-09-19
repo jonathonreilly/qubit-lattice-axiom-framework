@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8175",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block31-sharpe",
+ "worker": "w-macbookpro90c72-je3fa",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8175/sampled_evidence_no_purchase.py",
+ "seed": 91260,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "70685de2",
+ "started_utc": "20260919T041420Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the sharper-budget refutation is already an explicit adversarial construction (W1/W2/W3 ratios 8/5, 5/3, 23/12), not a sampled never; extra sampling is not the load-bearing claim"
+ },
+ "review": "The note already supplies explicit adversarial witnesses W1/W2/W3 against the sharper budget; pattern (e) has no further purchase. Not the grok provenance HIT.",
+ "what": "PR #8175 (ail31: the sharper bad-pair budget is false for the extended): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916; git show origin/physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916:<note>. Create probes/work/pr8175/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8175/<script>.py\"",
+ "stdout_sha256": "7d36908e86f1eb097765876c3d170f69de7942c06e8f44273bc7b4e642eb17e7",
+ "stdout_tail": "W1: E=16 sharp=10 E>sharp True loose=20 E<=loose True\nW2: E=20 sharp=12 E>sharp True loose=24 E<=loose True\nW3: E=23 sharp=15 E>sharp True loose=27 E<=loose True\nSUMMARY: pattern has no purchase on this note - the sharper-budget refutation is already an explicit adversarial construction (W1/W2/W3 ratios 8/5, 5/3, 23/12), not a sampled never; extra sampling is not the load-bearing claim\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je3fa",
+  "at_utc": "20260919T041420Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

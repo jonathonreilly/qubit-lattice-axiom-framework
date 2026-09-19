@@ -1,0 +1,5 @@
+never/always-observed/MC paragraphs: 0
+E J^2 = (0+2+0)/36 = 1/18
+E X^2 = 18 * 1/18 = 1
+Haar contact second moment is exact, not a sample
+SUMMARY: pattern has no purchase on this note — Haar E J^2=1/18 and the Gaussian-contact CLT are exact characteristic-function identities, not sampled never/always observations

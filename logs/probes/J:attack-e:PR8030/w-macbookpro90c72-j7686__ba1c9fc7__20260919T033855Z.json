@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8030",
+ "type": "judgment",
+ "lane": "continuum-boundary-block40-20260907",
+ "worker": "w-macbookpro90c72-j7686",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8030/sampled_evidence_no_purchase.py",
+ "seed": 89135,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ba1c9fc7",
+ "started_utc": "20260919T033855Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 Haar E J^2=1/18 and the Gaussian-contact CLT are exact characteristic-function identities, not sampled never/always observations"
+ },
+ "review": "pattern (e) has no purchase: Haar E J^2=1/18 and the Gaussian-contact CLT are exact characteristic-function identities, not sampled never/always observations",
+ "what": "PR #8030 ([physics-loop] continuum-boundary block40 conditional-suppor): attack GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/continuum-boundary-block40-20260907; git show origin/codex/continuum-boundary-block40-20260907:<note>. Create probes/work/pr8030/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8030/<script>.py\"",
+ "stdout_sha256": "cf9fe7c52739a556c8fd9b5b0c88ffb9730b5c9d548150300e9fc9d3b1dd679d",
+ "stdout_tail": "never/always-observed/MC paragraphs: 0\nE J^2 = (0+2+0)/36 = 1/18\nE X^2 = 18 * 1/18 = 1\nHaar contact second moment is exact, not a sample\nSUMMARY: pattern has no purchase on this note \u2014 Haar E J^2=1/18 and the Gaussian-contact CLT are exact characteristic-function identities, not sampled never/always observations\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7686",
+  "at_utc": "20260919T033855Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

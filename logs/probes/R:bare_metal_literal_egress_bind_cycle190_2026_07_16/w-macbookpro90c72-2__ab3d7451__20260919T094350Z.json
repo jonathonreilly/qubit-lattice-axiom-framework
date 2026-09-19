@@ -1,0 +1,32 @@
+{
+ "task": "R:bare_metal_literal_egress_bind_cycle190_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "bare",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/bare_metal_literal_egress_bind_cycle190_2026_07_16.py",
+ "seed": 11030,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab3d7451",
+ "started_utc": "20260919T094350Z",
+ "elapsed_s": 226.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "23412f8e985450a93172482aa081c70168f3b3181af83bf2c5ccfa45b899a515",
+ "stdout_tail": " full-history closure under both schedules :: (Counter({(2289, 4232, 18, 16, 0, 10): 32}), ())\nPASS all 32 histories realize exactly the intended ancestry :: ()\n\nALL-24 PROPER-CUBIC COVARIANCE OF THE NEW EGRESS\nPASS the completed-boundary egress closes in all 24 proper-cubic orientations :: (Counter({(769, 772, 6, 6, 0): 16, (769, 772, 10, 6, 0): 4, (769, 772, 6, 10, 0): 4}), ())\nPASS whole-history rotated schedule sensitivity is exactly inherited from Cycle-178 :: Counter({'discovery-alias': 9, 'replay-alias': 8, 'pass': 7})\n\n320 ENDPOINT DELETION / ABSENCE CONTROLS\nPASS all 160 local endpoint-edge deletions are exact :: (160, ())\nPASS all 160 complete-boundary endpoint absences are exact :: (160, ())\n\nACCOUNTING\nNEW_ROLES ('EGRESS_CAP', 'MEMBER5')\nSUPPLIED_RECORDS 3016 Counter({'MARK': 2517, 'P0': 465, 'EGRESS_CAP': 34})\nEXTENSION_DYNAMIC_RECORDS 768\nCABLE_DYNAMIC_RECORDS 465\nTERMINAL_BIT_RECORDS 5\nSTATUS_DYNAMIC_RECORDS 293\nCONSUMER_RECORDS 5\nCOMPILED_CANONICAL_ROWS 16 Counter({'status-tree': 6, 'recurrent-adapter': 4, 'terminal-egress': 2, 'status-conversion': 2, 'consumer': 2})\nNEW_RAW_ROWS 342\nFULL_RAW_ROWS 102338\nALL32_SHAPES Counter({(2289, 4232, 18, 16, 0, 10): 32})\nCOVARIANCE_SHAPES Counter({(769, 772, 6, 6, 0): 16, (769, 772, 10, 6, 0): 4, (769, 772, 6, 10, 0): 4})\nJ01 (-56, 9, 0) J23 (-56, 33, 0) J0123 (-66, 21, 0) JFINAL (-76, 40, 0)\nCONSUMER_SITES ((-89, 3, -30), (-89, 15, -30), (-89, 27, -30), (-89, 39, -30), (-89, 51, -30))\nPASS 12 FAIL 1\nRESULT CYCLE190_OPEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T094736Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

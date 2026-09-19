@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.py",
+ "seed": 10759,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab3d7451",
+ "started_utc": "20260919T093919Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aeb24082cb7eaee189748db42db375d9d69bac085bb2e4398df6d3632d63a15a",
+ "stdout_tail": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10' is retained-grade in the ledger  --  ledger_effective_status:unaudited\n[PASS] g_bare=1 convention 'g_bare_rigidity_theorem_note' is historical and not retained-grade supply  --  historical conventions=True, ledger_effective_status:unaudited\n[PASS] Source note exposes G_BARE_RIGIDITY_THEOREM_NOTE.md as a one-hop convention dependency  --  the re-audit blocker requested the retained convention/rigidity edge\n[PASS] Source note preserves the finite-link scope boundary for the rigidity dependency  --  prevents using rigidity as a Wilson/beta or measured-coupling theorem\n[PASS] Target row 'yt_ward_identity_derivation_theorem' is NOT retained-grade (so it must be backticked, not linked)  --  ledger_effective_status:unaudited\n\n========================================================================\nBLOCK 10: Re-audit CASE arithmetic (no status is written)\n========================================================================\n[PASS] Open Dep 1 and non-retained convention keep the bounded row pending-chain  --  resolved = retained_pending_chain (published compute_effective_status rule)\n[PASS] Linking another conditional target also leaves the row pending-chain  --  resolved = retained_pending_chain (this is why the note backticks the target row)\n\n========================================================================\nTOTAL: 32 PASS / 1 FAIL\n========================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T093919Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'TOTAL: 32 PASS / 1 FAIL' vs cache 'TOTAL: 33 PASS / 0 FAIL'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,45 @@
+--- A: the bottleneck is DAG-drain (not blockers / broken edges) ---
+  total rows=4880  need-audit=4880  blocking(unaud & non-ready-eff)=4504
+  missing dep edges (broken wiring)=0   rows with a recorded blocker=0
+PASS: a large unaudited backlog exists (need-audit > 1000)
+PASS: NO broken dependency edges (the backlog is not a wiring bug)
+PASS: almost no rows carry a recorded blocker (backlog is DAG-drain, not blocked-by-physics)
+--- B: ready-now vs waiting-on-deps ---
+  READY-now (deps all retained-grade, auditable immediately)=1748
+  waiting SOLELY on unaudited deps (unlock as DAG drains)=2756
+FAIL: only a minority of blocked rows are ready-now (most wait on the DAG)
+PASS: the overwhelming majority of not-ready rows wait SOLELY on unaudited deps (=> draining the DAG in keystone order unlocks them)
+--- C: keystone priority (audit these READY rows first for max cascade) ---
+  TOP READY KEYSTONES (downstream blocked rows unlocked | criticality | id):
+     1587  critical   cl3_complexification_split_narrow_theorem_note_2026-05-10
+     1580  critical   cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10
+     1417  critical   graph_first_su3_integration_note
+     1383  critical   fermion_parity_z2_grading_theorem_note_2026-05-02
+     1263  critical   z2_hw1_mass_matrix_parametrization_note
+     1258  critical   s3_mass_matrix_conditional_degeneracy_note_2026-07-11
+     1256  critical   site_phase_cube_shift_intertwiner_note
+     1249  critical   s3_taste_cube_decomposition_note
+     1120  critical   spin_statistics_berezin_determinant_narrow_theorem_note_20
+     1115  critical   plaquette_self_consistency_note
+     1110  critical   tensor_product_translation_fermion_operator_bridge_narrow_
+     1105  critical   abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18
+  => the TOP-5 ready keystones together gate 1760 distinct blocked rows (39% of the backlog)
+PASS: a top ready keystone exists that unlocks >= 500 downstream blocked rows
+FAIL: the top-5 ready keystones together gate a large majority (>= 60%) of the blocked backlog
+PASS: the top ready keystones are critical-criticality (foundational)
+--- D: dependency cycles (Tarjan SCCs) -- KEYSTONE cycles block the top keystones ---
+  cyclic SCCs (mutual-dependency clusters; NONE become 'ready' until broken)=11
+    [KEYSTONE, max-fanout  599, size 2] quark_cp_carrier_slot_minimality <-> quark_cp_carrier_completion_note
+    [KEYSTONE, max-fanout  559, size 105] strong_cp_gauge_theta_not_forced <-> strong_cp_theta_zero_audited_sco <-> newphysics_np_strong_cp_theta_no...
+    [minor, max-fanout   27, size 2] area_law_native_car_semantics_ti <-> area_law_primitive_car_edge_iden
+    [minor, max-fanout   15, size 2] hubble_lane5_cosmic_history_rati <-> hubble_lane5_eta_retirement_gate
+    [minor, max-fanout    9, size 2] route_a_radius_one_parity_even_c <-> route_a_fixed_type_atlas_correct
+    [minor, max-fanout    2, size 2] staggered_gbare_trace_surface_br <-> gbare_root_su2_scale_transport_b
+PASS: cyclic SCCs exist (mutual-dep clusters that never become 'ready' until broken)
+PASS: at least one KEYSTONE cycle exists (a top keystone trapped in a cycle => break-first)
+FAIL: the highest-fanout keystones are TRAPPED in cycles (RP / observable-principle / staggered) -> breaking these cycles is the PREREQUISITE for the keystone unlock
+--- D2: gated sources (secondary) ---
+  gated/dropped sources (excluded from audit; review for ungating)=1134
+PASS: gated sources exist and are a (secondary) unlock target (review for ungating)
+
+TOTAL: PASS=9 FAIL=3

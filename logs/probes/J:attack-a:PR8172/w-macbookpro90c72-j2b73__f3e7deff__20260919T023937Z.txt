@@ -1,0 +1,4 @@
+3c(37/10)=406962630/413162167 <1? True
+3c(19/5)=871815/862244 >1? True
+singleton island D=0 (stated D=0 for side-1)
+SUMMARY: pattern has no purchase on this note - 3c(37/10)<1 and 3c(19/5)>1 as named rationals, and a D=0 island exists; not a re-find of the 6671/1728 island-ratio HIT

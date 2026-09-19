@@ -1,0 +1,7 @@
+L=2 N=8 nonzero modes=7  G_L=N^{-1}Σ 1/E = 29/192
+  wrong 1/L convention would give 29/48
+  L=2 expected Σ1/E=29/24 G=29/192
+L=3 N=27 nonzero modes=26  G_L=N^{-1}Σ 1/E = 44/243
+  wrong 1/L convention would give 44/27
+at u=π: 1-cos=2 equals 2(u/π)^2=2 (chord bound saturates)
+SUMMARY: pattern (f) NORMALIZATION — G_L=N^{{-1}}Σ_{k≠0} 1/E(k) with N=L^3 and k=2π n/L recomputes exactly on L=2 (Σ1/E=29/24, G=29/192) and L=3 (G=44/243); the 1/L convention disagrees; attack does not fire

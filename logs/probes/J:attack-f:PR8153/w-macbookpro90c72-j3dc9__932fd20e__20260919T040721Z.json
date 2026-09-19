@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8153",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block19-sphere",
+ "worker": "w-macbookpro90c72-j3dc9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8153/normalization_green_torus.py",
+ "seed": 90841,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "932fd20e",
+ "started_utc": "20260919T040721Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (f) NORMALIZATION \u2014 G_L=N^{{-1}}\u03a3_{k\u22600} 1/E(k) with N=L^3 and k=2\u03c0 n/L recomputes exactly on L=2 (\u03a31/E=29/24, G=29/192) and L=3 (G=44/243); the 1/L convention disagrees; attack does not fire"
+ },
+ "review": "pattern (f) does not fire: G_L=N^{-1} sum_{k!=0} 1/E(k) is exact on L=2 (G=29/192) and L=3 (G=44/243); a 1/L convention disagrees",
+ "what": "PR #8153 ([physics-loop] admissibility-induced-law block19 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915; git show origin/physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915:<note>. Create probes/work/pr8153/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8153/<script>.py\"",
+ "stdout_sha256": "999b9bf679d05fda8ed8e6e9ec6439faeddc770b7948d2d25ba87653b4bcdfda",
+ "stdout_tail": "L=2 N=8 nonzero modes=7  G_L=N^{-1}\u03a3 1/E = 29/192\n  wrong 1/L convention would give 29/48\n  L=2 expected \u03a31/E=29/24 G=29/192\nL=3 N=27 nonzero modes=26  G_L=N^{-1}\u03a3 1/E = 44/243\n  wrong 1/L convention would give 44/27\nat u=\u03c0: 1-cos=2 equals 2(u/\u03c0)^2=2 (chord bound saturates)\nSUMMARY: pattern (f) NORMALIZATION \u2014 G_L=N^{{-1}}\u03a3_{k\u22600} 1/E(k) with N=L^3 and k=2\u03c0 n/L recomputes exactly on L=2 (\u03a31/E=29/24, G=29/192) and L=3 (G=44/243); the 1/L convention disagrees; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3dc9",
+  "at_utc": "20260919T040721Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

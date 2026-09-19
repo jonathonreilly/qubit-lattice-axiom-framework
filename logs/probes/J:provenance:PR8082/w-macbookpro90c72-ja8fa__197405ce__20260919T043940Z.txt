@@ -1,0 +1,7 @@
+[DERIVED] 67*26= 1742 stated 1742 True
+[DERIVED] 1742*2= 3484 stated 3484 True
+[DEFINITION] 1/2 in log Z = (1/2) Tr log(I+P(U-I))
+[DEFINITION] orders 7,8,9,10 certified local moments
+[DEFINITION] n A_n = [h0, A_{n-1}] - A_{n-1} V
+[EXCLUDED] 10^{-6} pilot width; 1.848e-19 largest width (executed RSS)
+SUMMARY: 6 theorem numbers: 1742=67*26 and 3484=1742*2 derived; 1/2 log-det, orders 7-10, A_n recurrence definitions; executed widths excluded as RSS; unsourced 0

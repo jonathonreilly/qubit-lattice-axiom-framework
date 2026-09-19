@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8082",
+ "type": "judgment",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "w-macbookpro90c72-ja8fa",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8082/provenance_theorem_numbers.py",
+ "seed": 92780,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "197405ce",
+ "started_utc": "20260919T043940Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "6 theorem numbers: 1742=67*26 and 3484=1742*2 derived; 1/2 log-det, orders 7-10, A_n recurrence definitions; executed widths excluded as RSS; unsourced 0"
+ },
+ "review": "1742=67*26 and 3484=1742*2 derived; 1/2 log-det and A_n recurrence defined; unsourced 0. No HIT.",
+ "what": "PR #8082 ([physics-loop] Gaussian local moment jets (conditional-suppo): for every number in the theorem statements of NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/native-gaussian-moment-jet-20260910; git show origin/codex/native-gaussian-moment-jet-20260910:<note>. Create probes/work/pr8082/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8082/<script>.py\"",
+ "stdout_sha256": "e4f04a8945f28bece0a040e43f40e9afdae0ce21232cf5112940441fe832dbd6",
+ "stdout_tail": "[DERIVED] 67*26= 1742 stated 1742 True\n[DERIVED] 1742*2= 3484 stated 3484 True\n[DEFINITION] 1/2 in log Z = (1/2) Tr log(I+P(U-I))\n[DEFINITION] orders 7,8,9,10 certified local moments\n[DEFINITION] n A_n = [h0, A_{n-1}] - A_{n-1} V\n[EXCLUDED] 10^{-6} pilot width; 1.848e-19 largest width (executed RSS)\nSUMMARY: 6 theorem numbers: 1742=67*26 and 3484=1742*2 derived; 1/2 log-det, orders 7-10, A_n recurrence definitions; executed widths excluded as RSS; unsourced 0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja8fa",
+  "at_utc": "20260919T043941Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

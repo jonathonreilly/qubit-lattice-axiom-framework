@@ -1,0 +1,45 @@
+==============================================================================
+S1  monomial lemma (B1-B4): exhaustive enumeration over (1/D)Z[i]
+  r=1 D= 5: unimodular found =   36 (expected monomials (2r+1)*12 = 36), non-monomial = 0, search nodes = 3605, 0.0s
+  r=2 D= 5: unimodular found =   60 (expected monomials (2r+1)*12 = 60), non-monomial = 0, search nodes = 192478, 0.1s
+  r=3 D= 5: unimodular found =   84 (expected monomials (2r+1)*12 = 84), non-monomial = 0, search nodes = 6185239, 7.6s
+  r=4 D= 5: unimodular found =  108 (expected monomials (2r+1)*12 = 108), non-monomial = 0, search nodes = 136121200, 341.2s
+  r=1 D=25: unimodular found =   60 (expected monomials (2r+1)*20 = 60), non-monomial = 0, search nodes = 1939773, 0.2s
+  r=2 D=10: unimodular found =   60 (expected monomials (2r+1)*12 = 60), non-monomial = 0, search nodes = 11011030, 1.6s
+SUMMARY: S1 monomial lemma exhaustive: r=1,D=5: 36 unimodular, all monomial=True, count==(2r+1)*units: True; r=2,D=5: 60 unimodular, all monomial=True, count==(2r+1)*units: True; r=3,D=5: 84 unimodular, all monomial=True, count==(2r+1)*units: True; r=4,D=5: 108 unimodular, all monomial=True, count==(2r+1)*units: True; r=1,D=25: 60 unimodular, all monomial=True, count==(2r+1)*units: True; r=2,D=10: 60 unimodular, all monomial=True, count==(2r+1)*units: True
+==============================================================================
+S2  exact P3 radius-1 two-band family z^-1 W (Q1 + P1 z)(Q2 + P2 z)
+  W in SU(2) over (1/5)Z[i]: 248; rank-one projectors: 50; instances: 620000
+  exact failures: paraunitarity 0, det=1 0, real trace 0, D2 bound 0; winding-cell instances 136, cell-structure failures 0
+  distinct trace classes (beta, gamma): 27019; cell 12, touching boundary |beta|+2g=2 off the cell 198, interior 26809; tracking 8.3s
+  two-loop branch degree: cell classes [-2, 2]; off-cell classes with nonzero degree 0; non-integer degrees 0
+  cell |v| range [0.999999999999, 1.000000000001]; max |v| off the cell 0.996281
+  touching-boundary classes: max g = 0.987200 (sqrt = 0.993579); max |tracked v - sqrt(g)| = 1.18e-07
+  interior classes: max S = |beta|/2 + g = 0.999963 (bound sup v^2 <= S^2)
+  tracked max v^2 / bound: interior (S^2) max 1.000000; touching boundary (g) in [0.9999996, 1.0000000]
+  direct eigenvalues vs characteristic-polynomial roots (300 instances x 64 k): max dev 2.8e-12
+SUMMARY: S2 exact P3 radius-1 family: 620000 instances (248 W x 50^2 projector pairs), paraunitary/det=1/real-trace exact: all; D2 bound violations 0; winding-cell instances 136 (all of the form diag-shift c z P + conj(c) z^-1 (1-P): True); 27019 trace classes tracked: winding only in the cell (12 classes, two-loop degree [-2, 2], |v|=1 to 9.7e-13); max |v| off the cell 0.996281
+==============================================================================
+S3  D6d dichotomy on the exact rational (beta, g) grid, denominator 60
+  grid points (beta,g) != (0,1) with |beta| + 2g <= 2: 7380; interior 7260, touching boundary 120
+  exact: interior max S^2 = 14161/14400 = 0.983403 < 1; boundary max g = 59/60 = 0.983333 < 1; failures 0
+  numeric sup v^2 minus exact bound on sampled points: max 1.11e-16 (<= 0 up to grid error)
+SUMMARY: S3 D6d exact rational grid (den 60): 7380 points off (0,1): interior 7260 with sup v^2 <= S^2 <= 0.983403, touching boundary 120 with sup v^2 = g <= 0.983333; numeric excess over bound 1.1e-16
+==============================================================================
+S4  Part C: Fourier amplitudes of exp(i x cos k), x = a*kappa
+  A_2 series coefficients (x^m): x^2: -1/8, x^4: 1/96, x^6: -1/3072, x^8: 1/184320, x^10: -1/17694720, x^12: 1/2477260800
+  series at x=0.3: -0.011165861949063963939;  -J_2(0.3) = -0.01116586194906396404
+  zero 1 of A_2: x = 5.13562230184; |A_3| = 0.33966874; weight beyond radius 1 = 0.75175243
+  zero 2 of A_2: x = 8.4172441404; |A_3| = 0.27138259; weight beyond radius 1 = 0.84854498
+  zero 3 of A_2: x = 11.6198411721; |A_3| = 0.23244313; weight beyond radius 1 = 0.89033975
+  small x: weight / (x^4/32) = 1.000000 at x=0.001, 0.999986 at x=0.01, 0.998612 at x=0.1
+  min over x in [0.5, 40] (2000 samples) of the weight beyond radius 1: 0.0019
+SUMMARY: S4 Part C: A_2 = -x^2/8 + x^4/96 - x^6/3072 + ... exact (= -J_2(x)); A_2 vanishes at x = 5.135622302, 8.41724414, 11.61984117 where |A_3| = 0.339669, 0.271383, 0.232443 (weight beyond radius 1 there 0.751752, 0.848545, 0.89034); min sampled weight beyond radius 1 on [0.5,40] = 0.0019, small-x weight/(x^4/32) = 1.000000 at x=0.001
+==============================================================================
+S5  E2 witness U(k) = S_+ C(theta): branch velocities by direct eigen-tracking
+  theta=0.6: tracked |v| in [0.087332, 0.912668]; (1 -+ cos theta)/2 = [0.087332, 0.912668]; two-loop degree 1.000000
+  theta=0.3: tracked |v| in [0.022332, 0.977668]; (1 -+ cos theta)/2 = [0.022332, 0.977668]; two-loop degree 1.000000
+  theta=1.0: tracked |v| in [0.229849, 0.770151]; (1 -+ cos theta)/2 = [0.229849, 0.770151]; two-loop degree 1.000000
+SUMMARY: S5 E2 S_+C(0.6): tracked branch |v| range [0.087332, 0.912668] = [(1-cos0.6)/2, (1+cos0.6)/2] = [0.0873322, 0.9126678] (note [0.087, 0.913]); two-loop degree 1.0000; theta=0.3 -> [0.0223, 0.9777], theta=1.0 -> [0.2298, 0.7702]
+==============================================================================
+SUMMARY: hits=0; runtime 362s

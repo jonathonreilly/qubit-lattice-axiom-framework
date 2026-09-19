@@ -1,0 +1,39 @@
+{
+ "task": "J:note:KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026_06_09",
+ "type": "judgment",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-j1c84",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHI/exhaustive_monomial_and_exact_two_band_family.py",
+ "seed": 19457,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5354c6fa",
+ "started_utc": "20260919T120417Z",
+ "elapsed_s": 362.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "S1 monomial lemma exhaustive: r=1,D=5: 36 unimodular, all monomial=True, count==(2r+1)*units: True; r=2,D=5: 60 unimodular, all monomial=True, count==(2r+1)*units: True; r=3,D=5: 84 unimodular, all monomial=True, count==(2r+1)*units: True; r=4,D=5: 108 unimodular, all monomial=True, count==(2r+1)*units: True; r=1,D=25: 60 unimodular, all monomial=True, count==(2r+1)*units: True; r=2,D=10: 60 unimodular, all monomial=True, count==(2r+1)*units: True",
+   "S2 exact P3 radius-1 family: 620000 instances (248 W x 50^2 projector pairs), paraunitary/det=1/real-trace exact: all; D2 bound violations 0; winding-cell instances 136 (all of the form diag-shift c z P + conj(c) z^-1 (1-P): True); 27019 trace classes tracked: winding only in the cell (12 classes, two-loop degree [-2, 2], |v|=1 to 9.7e-13); max |v| off the cell 0.996281",
+   "S3 D6d exact rational grid (den 60): 7380 points off (0,1): interior 7260 with sup v^2 <= S^2 <= 0.983403, touching boundary 120 with sup v^2 = g <= 0.983333; numeric excess over bound 1.1e-16",
+   "S4 Part C: A_2 = -x^2/8 + x^4/96 - x^6/3072 + ... exact (= -J_2(x)); A_2 vanishes at x = 5.135622302, 8.41724414, 11.61984117 where |A_3| = 0.339669, 0.271383, 0.232443 (weight beyond radius 1 there 0.751752, 0.848545, 0.89034); min sampled weight beyond radius 1 on [0.5,40] = 0.0019, small-x weight/(x^4/32) = 1.000000 at x=0.001",
+   "S5 E2 S_+C(0.6): tracked branch |v| range [0.087332, 0.912668] = [(1-cos0.6)/2, (1+cos0.6)/2] = [0.0873322, 0.9126678] (note [0.087, 0.913]); two-loop degree 1.0000; theta=0.3 -> [0.0223, 0.9777], theta=1.0 -> [0.2298, 0.7702]",
+   "hits=0; runtime 362s"
+  ]
+ },
+ "review": "Output matches the task: exhaustive exact enumeration finds only monomials among unimodular Laurent polynomials (36/60/84/108 at degree 1-4 over (1/5)Z[i], 60 at degree 1 over (1/25)Z[i], 60 at degree 2 over (1/10)Z[i]), beyond the runner's degree-1 case analysis; in an exact 620000-member P3 radius-1 two-band family (z^-1 W(Q1+P1 z)(Q2+P2 z)), |beta|+2|gamma|<=2 holds everywhere and branch tracking finds winding only in the 12 trace classes with (beta,|gamma|)=(0,1), where |v|=1 to 1e-12, with max |v| 0.996281 elsewhere; D6d holds on a 7380-point exact rational grid; the distance-2 amplitude -J_2(a kappa) vanishes at a kappa=5.1356, 8.4172, 11.6198, where |A_3|=0.3397, 0.2714, 0.2324 keep the tick beyond radius 1; the E2 range is [0.0873322, 0.9126678], matching the note's rounded [0.087, 0.913]; no falsifier fired.",
+ "what": "Note on main: docs/KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHI/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHI/<script>.py\"",
+ "stdout_sha256": "683a7b94cfcc399cb4a1e2425aa9dbe19a38265ee1fa470533858b03688f4c4d",
+ "stdout_tail": "259; weight beyond radius 1 = 0.84854498\n  zero 3 of A_2: x = 11.6198411721; |A_3| = 0.23244313; weight beyond radius 1 = 0.89033975\n  small x: weight / (x^4/32) = 1.000000 at x=0.001, 0.999986 at x=0.01, 0.998612 at x=0.1\n  min over x in [0.5, 40] (2000 samples) of the weight beyond radius 1: 0.0019\nSUMMARY: S4 Part C: A_2 = -x^2/8 + x^4/96 - x^6/3072 + ... exact (= -J_2(x)); A_2 vanishes at x = 5.135622302, 8.41724414, 11.61984117 where |A_3| = 0.339669, 0.271383, 0.232443 (weight beyond radius 1 there 0.751752, 0.848545, 0.89034); min sampled weight beyond radius 1 on [0.5,40] = 0.0019, small-x weight/(x^4/32) = 1.000000 at x=0.001\n==============================================================================\nS5  E2 witness U(k) = S_+ C(theta): branch velocities by direct eigen-tracking\n  theta=0.6: tracked |v| in [0.087332, 0.912668]; (1 -+ cos theta)/2 = [0.087332, 0.912668]; two-loop degree 1.000000\n  theta=0.3: tracked |v| in [0.022332, 0.977668]; (1 -+ cos theta)/2 = [0.022332, 0.977668]; two-loop degree 1.000000\n  theta=1.0: tracked |v| in [0.229849, 0.770151]; (1 -+ cos theta)/2 = [0.229849, 0.770151]; two-loop degree 1.000000\nSUMMARY: S5 E2 S_+C(0.6): tracked branch |v| range [0.087332, 0.912668] = [(1-cos0.6)/2, (1+cos0.6)/2] = [0.0873322, 0.9126678] (note [0.087, 0.913]); two-loop degree 1.0000; theta=0.3 -> [0.0223, 0.9777], theta=1.0 -> [0.2298, 0.7702]\n==============================================================================\nSUMMARY: hits=0; runtime 362s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1c84",
+  "at_utc": "20260919T121036Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

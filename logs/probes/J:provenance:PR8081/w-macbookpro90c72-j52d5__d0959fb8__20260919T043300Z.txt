@@ -1,0 +1,13 @@
+note 9307 chars; runner 721 chars; cache 0 chars
+[DERIVED] NN*=4I+J6: True; T eigenvalues [(6, 1), (1, 9), (-3, 5)]
+[DERIVED] T spectrum 6,-3,1 multiplicities 1,5,9
+[CACHE/RUNNER/NOTE] 15 channels
+[CACHE/RUNNER/NOTE] six labels
+[CACHE/RUNNER/NOTE] delta=1/4
+[CACHE/RUNNER/NOTE] W=8 alpha
+[CACHE/RUNNER/NOTE] 2E boundary
+[CACHE/RUNNER/NOTE] 4E boundary
+[DERIVED] L branches agree at F=2E: True; F=4E: True
+[DEFINITION] delta=1/4 common channel gap
+[DEFINITION] 15=C(6,2) two-neighbor channels
+SUMMARY: 9 theorem numbers: derived K6 NN*/spectrum/L-join; sourced 6/6 needles in runner/cache/note; unsourced 0

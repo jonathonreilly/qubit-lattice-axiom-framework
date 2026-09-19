@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8171",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block27-unsold",
+ "worker": "w-macbookpro90c72-j4ba9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8171/quantifier_every_kappa.py",
+ "seed": 88941,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a45057b8",
+ "started_utc": "20260919T033541Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - series coefficients (m/2-1) stay \u22650 through m=60; A/\u03ba\u22641/3 and the sign lemma hold on a grid of \u03ba\u2208(0,40]; 5773/10^4 sits below 1/\u221a3 and 5774/10^4 above"
+ },
+ "review": "series coefficients stay nonnegative through m=60, A/\u03ba\u22641/3 on (0,40], and 5773/10^4 < 1/\u221a3 < 5774/10^4, so T1/T2 universals hold on the stated range and the pattern has no purchase",
+ "what": "PR #8171 ([physics-loop] admissibility-induced-law block27 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916; git show origin/physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916:<note>. Create probes/work/pr8171/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8171/<script>.py\"",
+ "stdout_sha256": "dbeaf961b96d730e3933b6b91873aea22f18ed0ded65c90bbd04ce774556a087",
+ "stdout_tail": "series (m/2-1)\u22650 for m=2..60: True\nA/\u03ba\u22641/3 and sign lemma on 230 points: True\n\u03b2=5773/10^4: \u03b2\u00b2=33327529/100000000 vs 1/3=1/3  \u03b2\u00b2<1/3 True\n\u03b2=5774/10^4: \u03b2\u00b2=8334769/25000000 vs 1/3=1/3  \u03b2\u00b2<1/3 False\nSUMMARY: pattern has no purchase on this note - series coefficients (m/2-1) stay \u22650 through m=60; A/\u03ba\u22641/3 and the sign lemma hold on a grid of \u03ba\u2208(0,40]; 5773/10^4 sits below 1/\u221a3 and 5774/10^4 above\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4ba9",
+  "at_utc": "20260919T033541Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

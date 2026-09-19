@@ -1,0 +1,9 @@
+L=3 modes=8 t=1..6 s=1..3  ratio-slots=144
+P f = phi f on every (mode,t) check: 48/48
+Sigma (P^s)^T Rayleigh / Var  == phi^s : 48/144
+Sigma (P^s)^T Rayleigh / Var  == conj(phi)^s : 144/144
+cosine Cov/Var == Re(phi^s) : 144/144
+witness: t=1 s=1 k=2pi(0,1)/3  phi^s=(1/2 + 1/6*i*sqrt(3))  conj(phi)^s=(1/2 + -1/6*i*sqrt(3))  operator-ratio=(1/2 + -1/6*i*sqrt(3))
+  P-multiplier=(1/2 + 1/6*i*sqrt(3))  P^T-multiplier=(1/2 + -1/6*i*sqrt(3))
+HIT: T1 equates C_s(k)=sigma^2 phi(k)^s/(1-|phi|^2) with the operator C_s=sigma^2 (I-PP*)^{-1} P*^s; on the L=3 torus, for every nonzero mode and every t<=6, s<=3, the Rayleigh quotient of the written real-space identity Sigma_t (P^s)^T on the Fourier mode of the recursion (P f = phi f) is conj(phi)^s, not phi^s (144/144 slots). The runner's cosine check is blind to this (Re(phi^s)=Re(conj(phi)^s); cosine identity held in 144/144 slots).
+SUMMARY: PROOF STEP BY BRUTE FORCE on T1's identification of the mode kernel phi^s/(1-|phi|^2) with (I-PP*)^{-1} P*^s (PR #8180): the two formulas differ by complex conjugation on every nonzero mode of the L=3 torus (exact Q(i sqrt(3))); cosine characters hide it.

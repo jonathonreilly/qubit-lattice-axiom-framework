@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-g:PR8180",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block35-gravit",
+ "worker": "w-macbookpro90c72-jb5ae",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8180/t1_operator_vs_mode_multiplier.py",
+ "seed": 84259,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4682f432",
+ "started_utc": "20260919T021739Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROOF STEP BY BRUTE FORCE on T1's identification of the mode kernel phi^s/(1-|phi|^2) with (I-PP*)^{-1} P*^s (PR #8180): the two formulas differ by complex conjugation on every nonzero mode of the L=3 torus (exact Q(i sqrt(3))); cosine characters hide it."
+ },
+ "review": "T1 equates C_s(k)=phi^s/(1-|phi|^2) with (I-PP*)^{-1}P*^s; on L=3 every nonzero mode has Sigma (P^s)^T Rayleigh conj(phi)^s not phi^s (144/144), cosine Re(phi^s) hides it.",
+ "what": "PR #8180 (ail35: the gravity node's kernel under the axiom's reading \u2014): attack ADMISSIBILITY_RULE_GRAVITY_NODE_KERNEL_UNDER_THE_FORMATION_READING_A_HEAT_KERNEL_IN_LEVEL_TIME_TIMES_A_PLANE_GREEN_FUNCTION_NOT_THE_COMPARATORS_THREE_DIMENSIONAL_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-18.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918; git show origin/physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918:<note>. Create probes/work/pr8180/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8180/<script>.py\"",
+ "stdout_sha256": "24ead38c847940b63cc493a93ab633c505c7fda920c1031a0b1726c1a942348f",
+ "stdout_tail": "L=3 modes=8 t=1..6 s=1..3  ratio-slots=144\nP f = phi f on every (mode,t) check: 48/48\nSigma (P^s)^T Rayleigh / Var  == phi^s : 48/144\nSigma (P^s)^T Rayleigh / Var  == conj(phi)^s : 144/144\ncosine Cov/Var == Re(phi^s) : 144/144\nwitness: t=1 s=1 k=2pi(0,1)/3  phi^s=(1/2 + 1/6*i*sqrt(3))  conj(phi)^s=(1/2 + -1/6*i*sqrt(3))  operator-ratio=(1/2 + -1/6*i*sqrt(3))\n  P-multiplier=(1/2 + 1/6*i*sqrt(3))  P^T-multiplier=(1/2 + -1/6*i*sqrt(3))\nHIT: T1 equates C_s(k)=sigma^2 phi(k)^s/(1-|phi|^2) with the operator C_s=sigma^2 (I-PP*)^{-1} P*^s; on the L=3 torus, for every nonzero mode and every t<=6, s<=3, the Rayleigh quotient of the written real-space identity Sigma_t (P^s)^T on the Fourier mode of the recursion (P f = phi f) is conj(phi)^s, not phi^s (144/144 slots). The runner's cosine check is blind to this (Re(phi^s)=Re(conj(phi)^s); cosine identity held in 144/144 slots).\nSUMMARY: PROOF STEP BY BRUTE FORCE on T1's identification of the mode kernel phi^s/(1-|phi|^2) with (I-PP*)^{-1} P*^s (PR #8180): the two formulas differ by complex conjugation on every nonzero mode of the L=3 torus (exact Q(i sqrt(3))); cosine characters hide it.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb5ae",
+  "at_utc": "20260919T021804Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "T1 writes C_s(k)=phi^s/(1-|phi|^2) i.e. C_s=(I-PP*)^{-1}P*^s; exact L=3 Fourier Rayleigh of Sigma (P^s)^T is conj(phi)^s on 144/144 nonzero-mode slots, not phi^s. Cosine Re(phi^s) cannot see it. Not a listed known HIT.",
+  "by": "w-macbookpro90c72-jb5ae",
+  "at_utc": "20260919T021804Z"
+ }
+}

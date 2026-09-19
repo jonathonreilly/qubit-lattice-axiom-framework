@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_observable_principle_record_scalar_map_no_go_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py",
+ "seed": 99275,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062755Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6b74cb75bf7820610a0b22639c4d3d2f01040a3d2104a1d4e12c893b5b6aa359",
+ "stdout_tail": ": Record supports additive scalar readout after the scalar is supplied\n[PASS] note contains boundary marker: Gate result:\n[PASS] note contains boundary marker: N1 - Alternative Route Enumeration\n[PASS] note contains boundary marker: N8 - Cross-Cycle Echo\n[PASS] note omits forbidden marker: audited_clean\n[PASS] note omits forbidden marker: audited_conditional\n[PASS] note omits forbidden marker: effective_status\n[PASS] note omits forbidden marker: audit_status\n[PASS] note omits forbidden marker: retained_bounded\n[PASS] note omits forbidden marker: retained_no_go\n[PASS] note omits forbidden marker: Generated with\n[PASS] note omits forbidden marker: Claude\n[PASS] note omits forbidden marker: /Users/\n[PASS] note omits forbidden marker: /tmp/\n\nSCORECARD PASS=25 FAIL=0\nper_element: PASS | the executed power-family element is multiplicative for arbitrary exponent and therefore is not itself the supplied additive scalar\nper_site: PASS | checked and not executed \u2014 Record supplies finite scalar additivity only after a scalar is chosen, and this runner defines no spatial site observable\nper_mode: PASS | the normalized gradient readout is identical for every nonzero power exponent in the executed symbolic mode family\nper_block: PASS | the logarithmic coordinate is exactly additive across the executed independent branch block\nlattice_wide: PASS | all twenty-five executed finite-word concatenations have additive count length, but no probability or lattice-wide scalar identification follows\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062755Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

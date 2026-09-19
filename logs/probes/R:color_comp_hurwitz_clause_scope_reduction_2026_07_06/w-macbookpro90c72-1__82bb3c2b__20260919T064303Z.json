@@ -1,0 +1,34 @@
+{
+ "task": "R:color_comp_hurwitz_clause_scope_reduction_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "color",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py",
+ "seed": 183,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T064303Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "47721dd001034c196542e746973bb0691a4c02fd95e5a5a53424b9f487ab559b",
+ "stdout_tail": "[PASS] su(3) basis count: explicit traceless Hermitian 3x3 basis has real dimension 8\n[PASS] Hurwitz unit-sphere dimensions: 8 is disjoint from {0, 1, 3, 7}\n[PASS] octonion table from Cayley-Dickson doubling: exact integer structure constants: e_i^2 = -1 and imaginary units anticommute; no multiplication-table convention trusted from memory\n[PASS] octonion norm control (redundant numerical check): 200 seeded random unit pairs preserve norm under the CD product\n[PASS] octonion associator: (e1*e2)*e4 - e1*(e2*e4) is nonzero\n[PASS] color carrier dimension: dim_R(C^3) = 6 is not in {1, 2, 4, 8}\n[PASS] graph-first commutant sanity: selected-axis finite matrices give su(2), Comm(su(2)) dim 16 = gl(4), residual 3+1 split, and joint commutant dimension 10 = gl(3)+gl(1), for all three axes\n[PASS] self-scan: no file writes, no network/subprocess imports in this runner: AST walk of the runner's own source: write-mode open calls = 0, forbidden imports = none\n[PASS] declared scope (stipulation, not a check): no color derived; PR #4209 text used as closed historical reference only; Hurwitz classification cited external: declarations mirrored in the note's honest-boundary section\nTOTAL: 9 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

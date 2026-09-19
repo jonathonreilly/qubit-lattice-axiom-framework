@@ -1,0 +1,35 @@
+{
+ "task": "R:color_base_covariance_nc_equals_d_support_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "color",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/color_base_covariance_nc_equals_d_support_2026_06_08.py",
+ "seed": 183,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T064303Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "800a5df1515e575e8fe191952caa2a38ce18d10163e66e529f8b26e55a10a5b7",
+ "stdout_tail": "Sym^2(C^2)=3 for all d' reading equals the construction ONLY at d=3 (fixed exponent 2 vs the construction's exponent d-1); they DIVERGE for every d != 3\n       construction Sym^(d-1) dims [2, np.int64(3), np.int64(4), np.int64(5), np.int64(6)] vs campaign's fixed-Sym^2 [3, 3, 3, 3, 3] -> agree only at d=3\n[PASS] support 4: d=3 cross-check vs GRAPH_FIRST_SU3_INTEGRATION_NOTE -- base dim 4, commutant of the residual swap = gl(3)+gl(1) dim 10, symmetric/antisymmetric block dims 3/1\n       base_dim=4, comm(tau) dim=10 (=gl(3)+gl(1)=10), sym block dim=3, antisym dim=1\n\nSCORECARD PASS=4 FAIL=0\nrunner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}\nVERDICT (counterfactual support, under an assumed Z^d taste-cube family with one selected weak\naxis): the residual base is Sym^{d-1}(C^2) with dim = d; the S_{d-1} commutant on the symmetric\nisotype is gl(d) = End(Sym^{d-1}(C^2)); identifying its traceless part as physical color su(d)\nwith N_c = d is a candidate carrier reading (not a forced selection) in this counterfactual family. At the\nZ^3 baseline this gives N_c = 3, CONSISTENT with the retained graph-first SU(3) / CL3_COLOR_AUTO-\nMORPHISM result on the live d=3 surface. This is SUPPORT (it shows N_c tracks dim along the\nassumed family, addressing a matched-pair-coincidence worry); it is NOT a from-axioms derivation\n(the Z^d family, the taste-cube, and the weak-axis selection are assumed, not supplied by\n{Lattice, Qubit, Admissibility, Record}). Audit lane sets the status.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

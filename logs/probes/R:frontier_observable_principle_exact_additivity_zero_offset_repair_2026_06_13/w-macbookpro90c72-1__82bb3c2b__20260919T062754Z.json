@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_observable_principle_exact_additivity_zero_offset_repair_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_observable_principle_exact_additivity_zero_offset_repair_2026_06_13.py",
+ "seed": 99274,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062754Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a0aaacf95c1ef1fe29ed60722713c212c2ec511af78e1b8dc139357091e7d21b",
+ "stdout_tail": "=========================================================================\nPASS: W_b(r)=c log r+b has exact-additivity defect -b\n      defect=-b\nPASS: exact additivity forces b=0\n      solutions=[0]\n\n==============================================================================\nUnit argument\n==============================================================================\nPASS: setting r1=r2=1 gives residual -b\n      W(1)-2W(1)=-b\n\n==============================================================================\nShifted composition law is distinct\n==============================================================================\nPASS: shifted family satisfies the shifted law\n      shifted_defect=0\nPASS: shifted law differs from exact additivity when b is nonzero\n      exact_defect=-b\n\n==============================================================================\nRational witnesses\n==============================================================================\nPASS: nonzero rational offset fails exact additivity\n      c=3/2, b=5/7, r1=2, r2=3, defect=-5/7\nPASS: the same rational offset is compatible only with shifted additivity\n      shifted_defect=0\n\n==============================================================================\nSource-note guardrails\n==============================================================================\nPASS: note contains required boundary strings\n      missing=[]\nPASS: note avoids audit/status overclaim strings\n      present_forbidden=[]\n\nTOTAL: PASS=9, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062754Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

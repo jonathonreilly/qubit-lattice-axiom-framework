@@ -1,0 +1,32 @@
+{
+ "task": "R:clean_row_alphabet_component_replacement_cycle175_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "clean",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/clean_row_alphabet_component_replacement_cycle175_2026_07_16.py",
+ "seed": 99375,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062935Z",
+ "elapsed_s": 745.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d88d3d4fecd1884d07e992987e54b841967e962f34c6f5a99e4c40a6d111af6b",
+ "stdout_tail": "overlap': 1536, 'removed_signatures': 8094, 'added_signatures': 8094, 'changed_at_same_signature': 1032, 'unchanged_signatures': 23994, 'missing': 0, 'remainder': 68588, 'affected_by_component': {'cycle149_tableau_row_gate': 1056, 'cycle151_commuting_multiplier': 2988, 'cycle152_pivot_router': 1008, 'cycle153_row_literal_fanout': 210, 'cycle155_ported_row_reader': 672, 'cycle158_two_port_row_reader': 672, 'cycle162_row_transport': 336, 'cycle163_mux_gate': 840, 'cycle163_mux_join': 168, 'cycle163_mux_terminal': 168, 'cycle165_payload_tap': 168, 'cycle166_row_splitter': 168, 'cycle166_integrated_gate': 840, 'cycle167_sign_reader': 168}, 'mapped_sizes': {'cycle149_tableau_row_gate': 3072, 'cycle151_commuting_multiplier': 6528, 'cycle152_pivot_router': 4896, 'cycle153_row_literal_fanout': 960, 'cycle155_ported_row_reader': 3072, 'cycle158_two_port_row_reader': 3072, 'cycle162_row_transport': 1536, 'cycle163_mux_gate': 3840, 'cycle163_mux_join': 768, 'cycle163_mux_terminal': 768, 'cycle165_payload_tap': 768, 'cycle166_row_splitter': 768, 'cycle166_integrated_gate': 3840, 'cycle167_sign_reader': 768}, 'candidate_size': 101708, 'conflicts': {}}\nFIXTURE_ROWS (((0, 0, 1, 0, 0), (0, 0, 0, 1, 0), (0, 0, 1, 1, 0)), ((0, 0, 1, 0, 0), (0, 0, 0, 1, 0), (0, 1, 0, 0, 0)), ((0, 0, 1, 0, 0), (0, 0, 0, 1, 0), (1, 0, 0, 0, 0)), ((0, 0, 1, 0, 0), (0, 0, 0, 1, 0), (1, 1, 0, 0, 0))) ((0, 1, 0, 0, 0), (1, 0, 0, 0, 1), (1, 1, 0, 0, 1))\nCARRIER 132 3168 104876 32 0\nPASS 10 FAIL 2\nRESULT CYCLE175_OPEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064201Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

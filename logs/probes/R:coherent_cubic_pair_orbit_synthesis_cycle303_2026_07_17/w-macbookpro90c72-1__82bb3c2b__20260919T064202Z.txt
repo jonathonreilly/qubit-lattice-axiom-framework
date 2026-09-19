@@ -1,0 +1,29 @@
+CYCLE 303: COHERENT PROPER-CUBIC PAIR-ORBIT SYNTHESIS
+authority=none; audit=unset
+FAIL the Cycle-303 synthesis note exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/COHERENT_CUBIC_PAIR_ORBIT_SYNTHESIS_CYCLE303_NOTE_2026-07-17.md
+PASS the independently reviewed coherent-orbit route cold-passes :: {'returncode': 0, 'observed': (9, 0)}
+PASS the result is one common linear fixed-anchor orbit rather than selected rays :: 
+PASS physical action and support retain their reviewed narrow semantics :: 
+PASS the orbit keeps reference, coin, position, Fock, and semantics explicit :: 
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/coherent_cubic_pair_orbit_synthesis_cycle303_2026_07_17.py", line 284, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/coherent_cubic_pair_orbit_synthesis_cycle303_2026_07_17.py", line 274, in main
+    n1_exact_marker_control()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/coherent_cubic_pair_orbit_synthesis_cycle303_2026_07_17.py", line 153, in n1_exact_marker_control
+    lines = NOTE.read_text(encoding="utf-8").splitlines()
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/COHERENT_CUBIC_PAIR_ORBIT_SYNTHESIS_CYCLE303_NOTE_2026-07-17.md'

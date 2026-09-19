@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py",
+ "seed": 99272,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062752Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5445e4c46953f7de84d7a90f2cb6af21745cc582dbc8acbf6ac838bbf9b2a058",
+ "stdout_tail": "iene (targets=['../scripts/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.py', '../logs/runner-cache/frontier_neutrino_gamma1_wsource_application_bridge_2026_07_09.txt', 'OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md', 'OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md'])\nGroup B \u2014 construction\n[PASS] B1 Y**2 == 0\n[PASS] B2 Hermitian completion\n[PASS] B3 {gamma_5, Gamma_1} == 0\n[PASS] B4 exact trace norms (Tr(Gamma_1.H*Gamma_1)=16, Tr(Y.H*Y)=8)\nGroup C \u2014 W identities\n[PASS] C1 det(mI+jY) == m**16\n[PASS] C2 det(mI+jGamma_1) == (m**2-j**2)**8\n[PASS] C3 eigenvalue multiset (eigenvals={-1: 8, 1: 8})\n[PASS] C4 exact-rational W identity (m=3, j=1/2)\n[PASS] C5 direct-sum W additivity\nGroup D \u2014 quadratic response and normalization\n[PASS] D1 exact symbolic second response (W''(0)=-16/m**2)\n[PASS] D2 finite-difference Richardson convergence (values=[-16.003200853589234, -16.000800053338267, -16.000200003330786, -16.00005000020801], error-ratios=[4.000800241853489, 4.000200072286305, 4.000049974749601])\n[PASS] D3 per-mode identity chain (response=1, trace=1)\n[PASS] D4 chiral-half and HS-norm ratios (trace-ratio=1/2, HS-ratio=sqrt(2)/2)\nGroup E \u2014 REJECTORS\n[PASS] E1 non-nilpotent perturbation breaks selection (det difference=j*m**15/7)\n[PASS] E2 rescaled-source normalization discriminator (coefficient=4)\n[PASS] E3 cross-block coupling breaks direct-sum additivity (exp(W_X)=16777216/43046721, exp(2W)=5070942774902496337890625/7958661109946400884391936)\nTOTAL: PASS=21 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062753Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

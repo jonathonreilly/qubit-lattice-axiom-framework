@@ -1,0 +1,39 @@
+CHECK 01: PASS -- shared occupancy bridge sentence is present verbatim
+CHECK 02: PASS -- 2026-07-01 pairing formula source fragment is present verbatim -- det(M_KS + m I) = (prod over positive lambda of (m^2 + lambda^2)) * m^(2z) >= 0 for every real m of either sign.
+CHECK 03: PASS -- 2026-06-12 conditional sentence is present verbatim -- The statement is deliberately conditional on the supplied mass determinant channel.
+CHECK 04: PASS -- reimplemented M_KS matrices are exactly real antisymmetric
+CHECK 05: PASS -- reimplemented M_KS matrices obey exact bipartite grading
+CHECK 06: PASS -- det(M_KS + m I) >= 0 on the signed 2026-07-01 mass grid -- minimum determinant = 0.016258
+CHECK 07: PASS -- det(M_KS + m I) is exactly even on the signed mass grid
+CHECK 08: PASS -- pairing formula det = prod(m^2 + lambda^2) * m^(2z) holds exactly -- positive lambdas=[Fraction(1, 2), Fraction(3, 2), Fraction(5, 2)], 2z=2
+CHECK 09: PASS -- pairing formula is nonnegative for zero and both mass signs
+CHECK 10: PASS -- Hermitian Brannen flavor tensor determinant factorizes exactly -- det(M_KS x I_3 + I x A) = product_k det(M_KS + a_k I)
+CHECK 11: PASS -- signed-Brannen exact dials stay on the zero branch -- 3 dials contain a negative root; largest |det|=3358997906234133322056573361/1000000000000000000000000
+CHECK 12: PASS -- phase characters compose exactly on explicit independent blocks
+CHECK 13: PASS -- K/CPT equality exp(i k phi) = exp(-i k phi) leaves only k=0 -- sampled integer characters with formal all-phi guard: [0]
+CHECK 14: PASS -- hostile guard stays excluded: cos(phi+psi) violates block multiplication -- cos(2*pi/3)=-1/2, cos(pi/3)^2=1/4
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_theta_mass_side_composition_close_2026_07_03.py", line 460, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_theta_mass_side_composition_close_2026_07_03.py", line 443, in main
+    test_composition_count()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_theta_mass_side_composition_close_2026_07_03.py", line 418, in test_composition_count
+    and source_contains(NOTE_FILE, "Closing the former does not close the latter.")
+        ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_theta_mass_side_composition_close_2026_07_03.py", line 71, in source_contains
+    return normalize(expected) in normalize(Path(path).read_text(encoding="utf-8"))
+                                            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'docs/THETA_MASS_SIDE_COMPOSITION_CLOSE_ON_SHARED_OCCUPANCY_BRIDGE_BOUNDED_NOTE_2026-07-03.md'

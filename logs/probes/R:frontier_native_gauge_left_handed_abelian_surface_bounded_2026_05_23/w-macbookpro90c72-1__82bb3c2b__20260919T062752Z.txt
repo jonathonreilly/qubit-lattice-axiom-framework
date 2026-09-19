@@ -1,0 +1,23 @@
+============================================================================
+NATIVE GAUGE LEFT-HANDED ABELIAN SURFACE BOUNDED RUNNER
+============================================================================
+Excluded: anomaly-complete U(1)_Y, EW matching, matter labels,
+          electric charge, and downstream phenomenology.
+
+GRAPH-FIRST SELECTED-AXIS DEPENDENCY SURFACE
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py", line 156, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py", line 143, in main
+    verify_dependency_surface()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py", line 68, in verify_dependency_surface
+    with LEDGER_PATH.open("r", encoding="utf-8") as handle:
+         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/audit/data/audit_ledger.json'

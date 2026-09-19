@@ -1,0 +1,32 @@
+{
+ "task": "R:coherent_gamma_parity_sector_doubling_cycle264_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "coherent",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/coherent_gamma_parity_sector_doubling_cycle264_2026_07_17.py",
+ "seed": 166,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T064246Z",
+ "elapsed_s": 8.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fd7f19c43ff965febb898fc5ea092328f5bbada0e23df3982a2cbe13c107c00e",
+ "stdout_tail": "': 3, 'base_Wilson_increment': 3, 'reference_Wilson_increment': 3, 'cell_torus_diameter': 3, 'equality_cat_causal_depth_lower_bound': 2}, {'L': 4, 'base_Wilson_increment': 3, 'reference_Wilson_increment': 3, 'cell_torus_diameter': 6, 'equality_cat_causal_depth_lower_bound': 3}, {'L': 5, 'base_Wilson_increment': 3, 'reference_Wilson_increment': 3, 'cell_torus_diameter': 6, 'equality_cat_causal_depth_lower_bound': 3}, {'L': 6, 'base_Wilson_increment': 3, 'reference_Wilson_increment': 3, 'cell_torus_diameter': 9, 'equality_cat_causal_depth_lower_bound': 5}], 'bounded_preparation': False, 'reason': 'the displayed equality carriers require system-spanning cat coherence, and both gamma codes retain three Wilson logicals before nonlocal sector fixing', 'arbitrary_full_Fock_input': 'not encoded by a bounded local circuit', 'coherent_even_odd_superpositions': 'not prepared'}\nPASS actual Cycle-230 gates and mass/rank-73 seam synthesis remain gated by the missing common physical E :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'common_full_Fock_E': False, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'mass_and_rank73_seam_intertwining': 'not claimed'}\nPASS carrier fanout and stabilizer schedules are not physical time or Records :: {'compiler_layers_are_not_physical_time': True, 'label_and_reference_modes': 'coherent code carriers, not Records', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 16 FAIL 1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064255Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

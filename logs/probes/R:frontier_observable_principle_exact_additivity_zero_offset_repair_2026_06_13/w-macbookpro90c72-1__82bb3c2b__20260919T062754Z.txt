@@ -1,0 +1,42 @@
+# Observable-principle exact-additivity zero-offset repair runner
+# Source note: docs/OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md
+
+==============================================================================
+Symbolic exact-additivity defect
+==============================================================================
+PASS: W_b(r)=c log r+b has exact-additivity defect -b
+      defect=-b
+PASS: exact additivity forces b=0
+      solutions=[0]
+
+==============================================================================
+Unit argument
+==============================================================================
+PASS: setting r1=r2=1 gives residual -b
+      W(1)-2W(1)=-b
+
+==============================================================================
+Shifted composition law is distinct
+==============================================================================
+PASS: shifted family satisfies the shifted law
+      shifted_defect=0
+PASS: shifted law differs from exact additivity when b is nonzero
+      exact_defect=-b
+
+==============================================================================
+Rational witnesses
+==============================================================================
+PASS: nonzero rational offset fails exact additivity
+      c=3/2, b=5/7, r1=2, r2=3, defect=-5/7
+PASS: the same rational offset is compatible only with shifted additivity
+      shifted_defect=0
+
+==============================================================================
+Source-note guardrails
+==============================================================================
+PASS: note contains required boundary strings
+      missing=[]
+PASS: note avoids audit/status overclaim strings
+      present_forbidden=[]
+
+TOTAL: PASS=9, FAIL=0

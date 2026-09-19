@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_owned_seam_direct_port_refresh_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_owned_seam_direct_port_refresh_2026_07_25.py",
+ "seed": 99276,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062756Z",
+ "elapsed_s": 87.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3de973eaff65d026ff8d336422d3b566750ff1e689c3ff566482083533bcb69e",
+ "stdout_tail": "t': 'held-no-refit', 'branch_history_cases': 952561, 'full_union_conflict_signatures': 16, 'full_union_conflict_classes': {(1, 24): 1, (2, 23): 1, (1, 26): 1, (2, 25): 1, (1, 28): 1, (2, 27): 1, (1, 30): 1, (2, 29): 1, (6, 15): 1, (5, 16): 1, (8, 17): 1, (7, 18): 1, (10, 19): 1, (9, 20): 1, (12, 21): 1, (11, 22): 1}, 'multiple_active_candidate_histories': 1088, 'owned_seams': 11, 'owner_formula_mismatches': (20000, 0, 4000, 4000, 4000, 4000, 0, 4000, 4000, 4000, 4000), 'owner_truth_ambiguities_by_port_word': (8, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2), 'owner_formula_ambiguities_by_port_word': (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), 'conflict_signatures_needed_by_one_owned_seam': 16, 'first_needed_conflict': {'port_word_sha256': 'aa2ea3b4bb3801f29e78edccb4343fa954c45d468000aa80190544b53f956afe', 'feature_class': (1, 24), 'owners': (0,)}, 'first_formula_mismatch': {'label': (0, 18), 'active_cells': (0, 3), 'owner_edge': 7, 'owner_edge_data': (1, 2, 8, 3), 'truth': 0, 'derived': 1, 'global_feature_code': 0, 'port_word': 3105036184601417870297958976925005110513772034233393222278104076081585986816886589403023044374856991011235201966805257112161750102942144534678822717462738556574467507918501324032465087667304295136109643403664669010009906638923759616, 'active_candidate_edges': (7,)}, 'whitener_used': False, 'global_selector_used': False, 'seam_map_constructed': False, 'route_specific_failure_only': True, 'shared_obstruction_claimed': False}\nDIRECT_22_PORT_SAME_E_SEAM_GATE_FAILED_ROUTE_SPECIFIC\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

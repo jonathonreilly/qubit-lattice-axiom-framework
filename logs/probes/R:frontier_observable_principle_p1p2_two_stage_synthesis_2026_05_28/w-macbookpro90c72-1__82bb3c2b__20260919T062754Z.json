@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28.py",
+ "seed": 99274,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062754Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4acde0ac4059bc9aea22befe2d96a7b74f964bf20655fc0db668c016e2d90a9f",
+ "stdout_tail": "t demand, not on Tr rho = 1\n  [PASS] W = log Z: cross-block d^2W/dj_A dj_B = 0 (locality-of-source/additivity)\n         the bare-gradient=<O> selector is additivity in differential form (Pattern-L)\n  [PASS] W = Z^p (p=1.7): cross-block d^2W != 0 (multiplicative, disconnected piece)\n         => whether P-cal is a genuine primitive or relocated additivity remains unresolved\n  [PASS] Z[J_A(+)J_B] = Z_A Z_B is the F_p property (4) for EVERY p (qubit additivity step is circular)\n         factorization is multiplicative; the additive 'log' step is the imported choice\n\n==============================================================================\nNOTE: honest-scope and boundary strings\n==============================================================================\n  [PASS] required honest-scope strings present\n         all present\n  [PASS] forbidden status-promotion strings absent\n         none present\n\n==============================================================================\nPASS=22 FAIL=0\n==============================================================================\n\nSUMMARY (no parent additivity closure claimed):\n  STAGE 1 collapses the F_p function space to a single real scale c\n  (GL_2(C) characters); STAGE 2 fixes c=1 by the Gibbs-expectation\n  identity + normalized trace; P2 dissolves under positivity (mass-like\n  sources). The residual is ONE premise P-cal replacing {P1,P2,P4};\n  whether P-cal is a genuine approved primitive or relocated additivity\n  remains unresolved.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062755Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_observable_principle_p1p2_two_stage_synthesis_2026_05_28.txt against the .txt beside this log"
+  ]
+ }
+}

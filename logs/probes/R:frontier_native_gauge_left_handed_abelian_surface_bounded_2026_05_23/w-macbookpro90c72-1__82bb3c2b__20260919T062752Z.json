@@ -1,0 +1,44 @@
+{
+ "task": "R:frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py",
+ "seed": 99272,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062752Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "51f3ab3109b0c09e0fb944ed04adf514431e379e98d08dd4508a4dc3d52aca2f",
+ "stdout_tail": "================\nNATIVE GAUGE LEFT-HANDED ABELIAN SURFACE BOUNDED RUNNER\n============================================================================\nExcluded: anomaly-complete U(1)_Y, EW matching, matter labels,\n          electric charge, and downstream phenomenology.\n\nGRAPH-FIRST SELECTED-AXIS DEPENDENCY SURFACE\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py\", line 156, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py\", line 143, in main\n    verify_dependency_surface()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py\", line 68, in verify_dependency_surface\n    with LEDGER_PATH.open(\"r\", encoding=\"utf-8\") as handle:\n         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/audit/data/audit_ledger.json'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062752Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'PASS=40 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonreilly/.probe-workers/Physics/slot-1/docs/audit/data/audit_ledger.json, which is not in the tree at that path",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062752Z"
+ }
+}

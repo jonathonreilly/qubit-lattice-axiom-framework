@@ -1,0 +1,38 @@
+{
+ "task": "R:collision_safe_physical_catchup_synthesis_cycle299_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "collision",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/collision_safe_physical_catchup_synthesis_cycle299_2026_07_17.py",
+ "seed": 183,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T064303Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "39f1c2160753fc4a6b48acc5af8a467335c6ff226cf82e47163cc82b64b3944f",
+ "stdout_tail": "/jonreilly/.probe-workers/Physics/slot-1/scripts/collision_safe_physical_catchup_synthesis_cycle299_2026_07_17.py\", line 46, in note_contract\n    text = normalized(NOTE)\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/collision_safe_physical_catchup_synthesis_cycle299_2026_07_17.py\", line 39, in normalized\n    text = path.read_text(encoding=\"utf-8\").lower()\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 546, in read_text\n    return PathBase.read_text(self, encoding, errors, newline)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 632, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/COLLISION_SAFE_PHYSICAL_CATCHUP_SYNTHESIS_CYCLE299_NOTE_2026-07-17.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064303Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/COLLISION_SAFE_PHYSICAL_CATCHUP_SYNTHESIS_CYCLE299_NOTE_2026-07-17.md, which is not in the tree at that path",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064303Z"
+ }
+}

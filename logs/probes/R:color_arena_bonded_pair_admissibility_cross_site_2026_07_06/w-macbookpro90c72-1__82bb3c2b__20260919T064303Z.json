@@ -1,0 +1,32 @@
+{
+ "task": "R:color_arena_bonded_pair_admissibility_cross_site_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "color",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py",
+ "seed": 183,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T064303Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7cbc00a2af45692e9813a4b7fc2bc0c91e47970a94bc1a2b1770c716d34d52fc",
+ "stdout_tail": "2\n[PASS] control: Sym projector stable for seeded SU(2) sample 2\n[PASS] control: SWAP commutes with seeded SU(2) sample 3\n[PASS] control: Sym projector stable for seeded SU(2) sample 3\n[PASS] frame-relativity exhibit: an independent one-site change (g tensor 1) fails to commute with S and moves the split\n[PASS] frame-relativity control: the same g applied diagonally (g tensor g) preserves the split\n[PASS] Sym basis is orthonormal\n[PASS] Sym basis lies in +1 SWAP eigenspace\n[PASS] Sym restriction has spin-1 Casimir J^2=2I\n[PASS] Spin generators preserve the Sym block\n[PASS] Spin-axis negative control commutant has complex dimension 1 (numerical)\n[PASS] EXACT: commutant of the integer vector rep of so(3) on C^3 has complex dimension 1 (Gaussian elimination over Q[i], no tolerances)\n[PASS] witness: rotation matrix is a proper cubic rotation (integer, det +1, order 4)\n[PASS] witness: the rotation permutes the six incident edges\n[PASS] witness: the Sym/Anti split is preserved edgewise under relabeling with trivial internal action\n[PASS] Text audit: Admissibility sentence present\n[PASS] Text audit: June-8 re-opening residual present\n[PASS] Text audit: June-8 N6 baseline sentence present\n[PASS] AST self-scan: no network/subprocess imports\n[PASS] AST self-scan: no write-mode open calls\n[PASS] AST self-scan: no Path write helpers\nTOTAL: 33 PASS / 0 FAIL\nDECLARATION: bounded bonded-pair arena verified; no color, carrier, transport, dynamics, or global obstruction discharge is claimed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

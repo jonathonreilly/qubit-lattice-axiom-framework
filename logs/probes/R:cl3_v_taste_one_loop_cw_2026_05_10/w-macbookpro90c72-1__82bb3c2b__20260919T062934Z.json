@@ -1,0 +1,35 @@
+{
+ "task": "R:cl3_v_taste_one_loop_cw_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "cl3",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/cl3_v_taste_one_loop_cw_2026_05_10.py",
+ "seed": 99374,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062934Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eaf254b1b5901be4f44558a768c04868a6a336469dec27cf7ae4f2871bb04586",
+ "stdout_tail": "at mu = M_Pl                     0.366564       \n  lambda_CW (mu = v)                            4.724077       \n  lambda_total at mu = v                        5.022756       \n  ------------------------------------------------------------\n  m_H_tree (HIGGS_MASS_FROM_AXIOM)              140.30     GeV (+12.0%)\n  m_H_PDG comparator                            125.25     GeV  (anchor)\n\n  Honest verdict: BOUNDED SUPPORT, not closure.\n\n  The 1-loop scalar CW correction supplies the missing 1/(16 pi^2)\n  loop factor (the Gap #2 probe's named pathway), but the symmetric-\n  point m_H readout applied to V_total = V_taste + V_CW does NOT\n  close the +12% gap. The gap closure additionally requires:\n    - the FULL SM 1-loop CW (top + gauge + scalar contributions),\n    - curvature evaluation at the BROKEN-PHASE minimum (post-EWSB),\n    - proper RGE running mu = M_Pl -> v.\n\n  This is consistent with HIGGS_MASS_FROM_AXIOM Step 7's authority\n  delegation of the +12% gap to bounded sister authorities, and\n  with HIGGS_MASS_12PCT_GAP_DECOMPOSITION Section 5 (T3) finding\n  that the four sub-corrections (Wilson, CW, lattice, Buttazzo)\n  are NOT mutually independent. The present note adds explicit\n  structural support for the CW row of that decomposition.\n  PASS  summary table generated and R_conn absent from m_H readout\n\n========================================================================\n=== TOTAL: PASS=16, FAIL=0 ===\n========================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062935Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

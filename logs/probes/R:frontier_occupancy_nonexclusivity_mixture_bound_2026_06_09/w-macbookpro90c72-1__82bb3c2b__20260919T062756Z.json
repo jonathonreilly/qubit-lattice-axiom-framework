@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_occupancy_nonexclusivity_mixture_bound_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_occupancy_nonexclusivity_mixture_bound_2026_06_09.py",
+ "seed": 99276,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062756Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d6522008b993cbcc460dedb6eadfc005db5938e81670bbf61104922d4287352c",
+ "stdout_tail": "pton orbit-cell case and the conditional K-fixed sector-cell case without adding per-context freedom\n  [PASS] predictivity preserved: the principle leaves NO free choice per context (availability is a structural fact, decided by K-fixedness) -- unlike 'each context picks freely', which would be unfalsifiable\n  [PASS] named derivation target: derive the preference for the coarser cell from record dynamics (coarser outcome <-> more durable registration) -- the measurement/record-production gates; flagged as open, NOT derived here\n\n----------------------------------------------------------------------------------------\nHonesty\n----------------------------------------------------------------------------------------\n  [PASS] availability preference is candidate wording for the open program, not an axiom, primitive, admission, or new derivation\n  [PASS] the mixture-linearity assumption is flagged; the sign conclusion (any admixture pushes up) is aggregation-independent\n  [PASS] within-context exclusivity is empirical (1e-5), not axiomatically forbidden -- a future context could in principle show a genuine mixture; that would be a discovery about its record statistics, not a contradiction\n  [PASS] comparators are used only for the charged-lepton empirical bound; sets no audit status\n\n========================================================================================\nSUMMARY: PASS=16 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

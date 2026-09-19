@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py",
+ "seed": 99275,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062755Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f623ff2f18a173fb1f6db29640cd52a379ad4acdd39630eeb98e336409c08eb",
+ "stdout_tail": "ise that is not derivable from the minimal axioms, and this runner's role is to supply countermodels against its being forced - it exhibits what does not follow, and cannot exhibit the derivation that is absent.\n  scope: the second independence check in T2 cannot fail as written. It asks whether c log(4) - log(4) - epsilon simplifies to zero while c and epsilon are free symbols, so the inequality is automatic; the substantive separation is carried entirely by the equal-determinant witness of T1, which is what the check's own detail string points at.\n  scope: the disjoint-record section is not a computation. It builds a hand-written dictionary that maps both blocks to the same record label and then reports set-disjointness and string inequality on it. That does establish the intended point - the implication is not a truth of pure logic - but it evaluates no source, no determinant and no readout.\n  scope: 7 of the 20 checks are substring scans over the parent note, the minimal-axiom memo and this note, certifying guardrail prose rather than any quantity. The countermodel family is carried symbolically in a nonzero epsilon and never instantiated numerically, which is a strength of the argument rather than a gap. The runner is fully deterministic: no RNG stream and no optimizer, exact SymPy throughout.\n==============================================================================\nTOTAL: PASS=20 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:collapse_merger_toy_engine_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "collapse",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/collapse_merger_toy_engine_2026_07_08.py",
+ "seed": 181,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T064301Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "76ce17553bae17738aa8d09872bf7e5270a05bd8d6427090e617a625e8ce681b",
+ "stdout_tail": "200,1:0:200,10:17:200,100:142:200,500:279:200,1000:333:200,2000:399:200]\nCHECK-02 IMPOSED BIAS RESPONSE: PASS accepted gradient-entry flux patch=29.25+/-3.60 (t_df19=8.13,toward) null=0.40+/-3.56 (t_df19=0.11); seeds=20,steps=200,sign-exact=True\nCHECK-03 IMPOSED DEPOSITION RESPONSE: PASS pinned-hops-off=60/10 active-fill=0.80 first-0.8-step=31 parcel-free-control=0.00 | CHECK-04 SUPPLIED-CROWDING CHOKE: PASS fit slopes offered=-0.6986,empirical=-1.2283; offered-rate=0.6000->0.1271/step\nCHECK-05 BLOCKED-SITE SOFTWARE: PASS inside-max=0 transmission=0 blocked-hops=1167 deposition=off; boundary-profile offsets[-12..-1],last50mean=[4.44,5.38,6.16,6.24,6.18,6.30,6.18,6.34,7.04,7.02,8.38,14.16]\nCHECK-06 DETERMINISM: PASS full state+clock+RNG hash identical across same-seed reruns (kappa=0.002:734dbb7b88de6578,kappa=0.01:2c7ff9076795c80b)\nTOTAL: ENGINE-VALID; flags(L=400,parcels=200,A=[2.1, 1.1, 0.10000000000000009],N=A/A0,beta=0.6,clip=0.45,kappa=(0.002, 0.01),dt=1.0;sign=pR-pL=clip(beta*(N_L-N_R)/2,[-clip,clip]);lower-probe-target-favored,blocked-hop=wait,displacement=nearest-post-open/tie-seeded-binomial/terminal-refuge); SPEC-NOTE: p_deposit=kappa*parcels*A/A0*dt on open parcel-bearing sites; fall bias, parcel model, availability, deposition, and kappa are supplied; deposition displacement conserves but relocates parcels; the last-open refuge is part of that imposed rule; parcels are indistinguishable multi-occupancy counts; software validation only, no physics or audit result.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

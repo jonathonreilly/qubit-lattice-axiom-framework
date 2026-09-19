@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_nn_formation_selector_two_model_kill_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+ "seed": 99273,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062753Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6f7c2777135c602b157d77b7e9238fb02da38acc4fafb6020dc82196472a6c88",
+ "stdout_tail": "r TOE promotion\nMETRICS formation_primitives=53 complete_primitives=73 support_sites=15 readiness_query_primitives=78 atomic_cases=192 markov_samples=1001 kernel_cases=3072 hazards=('1', '1/2')\nBOUNDARY: a 73-primitive NN packet word, 78-primitive readiness query, and exact compatible atomic star coupling are now explicit; arbitrary gate execution, clean-input creation/debit, the live-M2/Record controller bridge, physical hazard/site selection, global overlap confluence, source normalization, gravity, audit retention, obligation retirement, and TOE percentage movement remain open\nper_element: checked 29 formation gates, 23 readiness gates, every routed macro basis state, four exact branch weights, and the analytic 2a(1-a) product bound\nper_site: checked the 15-site compact route, arbitrary factor permutation, three final Record targets, every NN edge under 24 proper-cubic rotations, and the four-site visible-tag escape\nper_mode: checked both matter labels, four (m,b) branches, both marker orientations, 24 frames, two normalized support kernels, and hazards q=1 and q=1/2\nper_block: checked Block71 receipt, 73-primitive packet compilation, 78-primitive readiness query, clean-resource deficit, atomic coupling, controller collision, and selector nonuniqueness\nlattice_wide: checked and not executed \u2014 finite candidate words and isolated-star probability models do not constitute a homogeneous full-Z3 controller, supplied dynamics, or overlap-confluence theorem\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062753Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_nn_formation_selector_two_model_kill_2026_08_14.txt against the .txt beside this log"
+  ]
+ }
+}

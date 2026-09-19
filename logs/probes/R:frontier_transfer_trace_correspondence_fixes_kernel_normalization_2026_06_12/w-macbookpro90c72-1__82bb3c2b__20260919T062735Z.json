@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_transfer_trace_correspondence_fixes_kernel_normalization_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_transfer_trace_correspondence_fixes_kernel_normalization_2026_06_12.py",
+ "seed": 99255,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T062735Z",
+ "elapsed_s": 3.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=19 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6287375c33690023c54907fec43e16713f93586900068e5a7ec5734f73af730d",
+ "stdout_tail": "=lambda**4; extracted k=4; rank=4\nPASS A7 T3b over lambda>0 equality forces lambda=1: Eq(lambda**4*(15/2 - 5*sqrt(5)/2), 15/2 - 5*sqrt(5)/2); positive real solutions=[1]\nPASS A8 T3c numeric witness lambda=2 breaks equality by predicted factor: lambda=2 factor=16; scaled/op ratio=16\nPASS A9 T4 tie-in det(lambda K)=lambda^k det(K) uses same exponent: rank=4; determinant scaling exponent=4\nPASS A10 robustness Tr Gamma(t)=det(1+t), L_s=3: residual=0; Fock dim=8\nPASS A10b robustness Tr Gamma(t)^2=det(1+t^2), L_s=3: residual=0; Fock dim=8\nPASS A10c robustness genuine Berezin expansion equals trace, L_s=3: Berezin residual=0; pairs=6; terms=216\nFAIL B11 source grep retained RP and substep1 phrases: RP terms=['2-step blocked transfer matrix', 'B^dag B', 'E(p) = arcsinh']; substep1 terms=['det(M)', 'single-pair']\nPASS B12 note firewall present and closing language absent: firewall=True; forbidden_absent=True\nPASS B13 link inventory exactly two load-bearing links: links=['AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md', 'STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md']; resolve=True; W4 backticked only=True\nPASS B14 no-promotion statement present: No-promotion statement present\n======================================================================================\nSUMMARY: PASS=19 FAIL=1\nNo-promotion statement: this runner does not promote, demote, or set audit/retention status for any note; it checks only the bounded surface.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T062739Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=19 FAIL=1' vs cache 'SUMMARY: PASS=20 FAIL=0'"
+  ]
+ }
+}

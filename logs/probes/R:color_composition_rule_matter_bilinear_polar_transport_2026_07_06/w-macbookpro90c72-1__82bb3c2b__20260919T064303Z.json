@@ -1,0 +1,35 @@
+{
+ "task": "R:color_composition_rule_matter_bilinear_polar_transport_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "color",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/color_composition_rule_matter_bilinear_polar_transport_2026_07_06.py",
+ "seed": 183,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82bb3c2b",
+ "started_utc": "20260919T064303Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cf9c2f91e82fefe047c9badb652137f58dcc05cd1f6c4bc2ccbab11dd288e999",
+ "stdout_tail": "[PASS] exact_polar_witness_signed_perm_times_rational_diagonal rank=3 detD=8\n[PASS] exact_covariance_signed_permutation_frames\n[PASS] exact_det_and_z3_bookkeeping_on_polar_unitaries det(polarU)=1 exact; odd-permutation case det=-1 reduced exactly on the rational Z_3 branch; ambiguity = cube roots of unity\n[PASS] exact_path_ordered_wilson_invariance W=0\n[PASS] exact_rank_exhibits_and_boundary_discontinuity polar factors COMPUTED exactly at eps=1/2,1/4,1/8,1/64: constant I vs constant diag(1,1,-1); divergent at the rank-2 limit\n[PASS] seeded_numeric_covariance_controls max_dev=1.20e-14 min_gap=3.34e-01\n[PASS] seeded_numeric_wilson_invariance dev=4.34e-16 min_gap=3.28e-01\n[PASS] text_audit_june8_routing_quotes quotes=3\n[PASS] text_audit_june8_non_autonomy_quotes quotes=2\n[PASS] ast_self_scan_no_network_no_subprocess\nDECLARATION premise=SUPPLIED-C3; untouched_walls=ST1/ST2_generator_rate_action,graded_constraint_port3_port4; no_dynamics_no_weights_no_probabilities\nEXACT polar_witness=Fractions signed_permutation_x_diag; covariance=signed_permutation_frames; wilson=path_ordered_trace\nTOTAL PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-beyond-the-union-bound-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j10d4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/beyond-the-union-bound/referee_w-jonathonsmac4f50-j10d4/check.py",
+ "seed": 90404,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3b90617a",
+ "started_utc": "20260919T040004Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the y = 0 domain statement, the ceiling arithmetic and the set-count no-go survive; the y > 0 step needs a larger D than stated (D = 80 works)"
+ },
+ "review": "Beyond-the-union-bound a4 reproduces independently (diamond-free system matches brute-force tree counts 1,3,12,55,270,1386,7344; super-solution (12/25,1/5,2/25) at x=3/20 with exact margins; ceiling 1/2000 first met at p=4004; set-product fails on the diamond animal), with one correction: the ASSUMED y>0 step needs D larger than 72 (relative margin 3.1e-4 < 6yR 3.3e-4; D=80 works), so HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:beyond-the-union-bound:a4/; its files are probes/work/derive/beyond-the-union-bound/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/beyond-the-union-bound/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "5d8a771519195094386a7310efa9c3ef56956737381679b03e449ce2382e1712",
+ "stdout_tail": "e\nPASS X3: U = 78/25; margins 3/250, 107/62500, 508933/125000000; D margin 6937/312500; R = 8254954121/78125000 = 105.663413\nPASS X4: max t^2(3/20 - t) on a 1/1000 grid = 1/2000 at t = 1/10; eps2(4003) = 8017/16032026, eps2(4004) = 729/1458185; t + eps2/t^2 = 437437/2916370; eps1 R = 5.4320e-08\nPASS X5: w(S) = 1587/3696187 > product 4761/933119209\nPASS X6: at p = 4004, t = 1/10, y = 5.141e-07: D = 72 relative margin 3.083e-04 < 6 y R = 3.259e-04; (a1, a2, a3) = (12/25, 1/5, 2/25), D = 80, F = 120 is a super-solution at x = 3/20 with the (1 + yF)^6 and (1 + yF)^5 factors: True\nHIT: confirmed - beyond-the-union-bound a4: the diamond-free lift is valid (every injective lattice tree is diamond-free) and its U-system (48 allowed pairs, 216 allowed triples) reproduces the brute-force diamond-free tree counts for n <= 7; (12/25, 1/5, 2/25) is an exact super-solution at x = 3/20 > 4/27 with U = 78/25, D = 72, R = 8254954121/78125000; the ceiling becomes eps2 < 1/2000, first met on (p,1,2) at p = 4004 (eps2 = 729/1458185); the overlapping-cone product fails on the diamond animal (1587/3696187 > 4761/933119209 at p = 14). Correction to the ASSUMED y > 0 step: D = 72's relative margin 3.1e-4 is below 6yR = 3.3e-4 at p = 4004, so the stated certificate does not carry over as is; D = 80, F = 120 with the same (a1, a2, a3) does\nSUMMARY: confirmed - the y = 0 domain statement, the ceiling arithmetic and the set-count no-go survive; the y > 0 step needs a larger D than stated (D = 80 works)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j10d4",
+  "at_utc": "20260919T040005Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok beyond-the-union-bound a4): the diamond-free thinning of block 30's tree count is valid and has an exact super-solution at x = 3/20 > 4/27 (ceiling eps2 < 1/2000, p >= 4004 on (p,1,2) at y = 0), and the overlapping-cone set product is refuted on the diamond; correction: the ASSUMED y > 0 extension fails with the stated D = 72 but holds with D = 80, F = 120.",
+  "by": "w-jonathonsmac4f50-j10d4",
+  "at_utc": "20260919T040005Z"
+ }
+}

@@ -1,0 +1,8 @@
+PASS X1: allowed pairs 48/64, triples 216/512
+PASS X2: series U = [1, 3, 12, 55, 270, 1386, 7344] = diamond-free counts [1, 3, 12, 55, 270, 1386, 7344]; all [1, 3, 12, 55, 273, 1428, 7752], injective [1, 3, 12, 55, 270, 1386, 7329]; every injective tree is diamond-free
+PASS X3: U = 78/25; margins 3/250, 107/62500, 508933/125000000; D margin 6937/312500; R = 8254954121/78125000 = 105.663413
+PASS X4: max t^2(3/20 - t) on a 1/1000 grid = 1/2000 at t = 1/10; eps2(4003) = 8017/16032026, eps2(4004) = 729/1458185; t + eps2/t^2 = 437437/2916370; eps1 R = 5.4320e-08
+PASS X5: w(S) = 1587/3696187 > product 4761/933119209
+PASS X6: at p = 4004, t = 1/10, y = 5.141e-07: D = 72 relative margin 3.083e-04 < 6 y R = 3.259e-04; (a1, a2, a3) = (12/25, 1/5, 2/25), D = 80, F = 120 is a super-solution at x = 3/20 with the (1 + yF)^6 and (1 + yF)^5 factors: True
+HIT: confirmed - beyond-the-union-bound a4: the diamond-free lift is valid (every injective lattice tree is diamond-free) and its U-system (48 allowed pairs, 216 allowed triples) reproduces the brute-force diamond-free tree counts for n <= 7; (12/25, 1/5, 2/25) is an exact super-solution at x = 3/20 > 4/27 with U = 78/25, D = 72, R = 8254954121/78125000; the ceiling becomes eps2 < 1/2000, first met on (p,1,2) at p = 4004 (eps2 = 729/1458185); the overlapping-cone product fails on the diamond animal (1587/3696187 > 4761/933119209 at p = 14). Correction to the ASSUMED y > 0 step: D = 72's relative margin 3.1e-4 is below 6yR = 3.3e-4 at p = 4004, so the stated certificate does not carry over as is; D = 80, F = 120 with the same (a1, a2, a3) does
+SUMMARY: confirmed - the y = 0 domain statement, the ceiling arithmetic and the set-count no-go survive; the y > 0 step needs a larger D than stated (D = 80 works)

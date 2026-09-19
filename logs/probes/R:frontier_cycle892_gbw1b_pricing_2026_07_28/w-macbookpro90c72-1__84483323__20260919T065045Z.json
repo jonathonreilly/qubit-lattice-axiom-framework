@@ -22,14 +22,21 @@
  "stdout_tail": "\n[stderr]\nINPUT_DRIFT: outputs/window_freedom_cycle887_receipt_2026_07_28.json\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T065046Z",
+  "at_utc": "20260919T065412Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 84483323 differs from the current HEAD 7a6d4923 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '' vs cache 'elapsed_sec: 30.392'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle892_gbw1b_pricing_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Slot pollution (#8213 class), not a failure on main: the run stops at its input pin check with 'INPUT_DRIFT: outputs/window_freedom_cycle887_receipt_2026_07_28.json'. Every CURRENT_INPUT_SHA256 pin (12 files) matches main byte for byte, including that receipt (548acca5237f\u2026). Earlier in the same unit (R-054of153, 06:49:33Z) the cycle887 primary runner rewrote that tracked receipt (runner line 1973), so this later run read a runtime-rewritten file. The keeper restored the rewritten files at 06:51Z.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065412Z"
  }
 }

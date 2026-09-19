@@ -20,13 +20,20 @@
  "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py\", line 841, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py\", line 762, in main\n    raise RuntimeError(\"Cycle883 input pin drift: \" + repr(pin_failures))\nRuntimeError: Cycle883 input pin drift: {'docs/MINIMAL_AXIOMS_2026-06-29.md': {'expected': 'fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697', 'observed': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753'}}\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T064754Z",
+  "at_utc": "20260919T065411Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 84483323 differs from the current HEAD 7a6d4923 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, stale byte pin: the runner exits 1 before executing any check with 'RuntimeError: Cycle883 input pin drift' because EXPECTED_SHA256 pins docs/MINIMAL_AXIOMS_2026-06-29.md at fc4d60cc... (the memo as of c62dce4792, 2026-07-11) while main has 93af34cf... (574346c636, 2026-08-13); the other 7 pinned inputs match. The runner was authored 2026-08-03 but landed in 99135f72a2 (2026-08-09) onto a main whose memo was already 53175250... after three 2026-08-05 axiom edits (82f7b0754a, a51da47645, fb5e056ddf), so the pin was stale on main from landing; the primary and independent receipts committed with it record fc4d60cc... . The memo is hashed, not read, by this runner and its core.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065411Z"
  }
 }

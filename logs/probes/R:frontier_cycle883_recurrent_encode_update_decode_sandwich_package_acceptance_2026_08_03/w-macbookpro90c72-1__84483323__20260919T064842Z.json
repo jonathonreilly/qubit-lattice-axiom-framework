@@ -20,13 +20,20 @@
  "stdout_tail": "5dbe8ce6263ed8274a9b8c4a40d87e3791\",\n      \"returncode\": 1,\n      \"semantic_pass\": true,\n      \"source\": \"scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py\",\n      \"source_sha256\": \"053b0886a5de2b204bc004b0bd30b47e47fd0049ba80f11a8d9b7b4b24e04aa0\",\n      \"stdout_matches_receipt\": false\n    },\n    {\n      \"executed\": true,\n      \"expected_receipt_sha256\": \"b78d209e50fb7b60c5072e140f5debfae4a629de8776fa20b07b5db400c7cbc3\",\n      \"expected_source_sha256\": \"89b23e73d815c4c1c4c9ebc5a16b260331e153bd6267fed1289aa5b4ecaae5ba\",\n      \"name\": \"independent\",\n      \"receipt\": \"outputs/cycle883_recurrent_encode_update_decode_sandwich_independent_receipt_2026_08_03.json\",\n      \"receipt_sha256\": \"ab3adc3b22a90663a905622f7600bc7d47ff42ad6e3a4c74a83ca7f789f14c41\",\n      \"returncode\": 0,\n      \"semantic_pass\": true,\n      \"source\": \"scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03.py\",\n      \"source_sha256\": \"89b23e73d815c4c1c4c9ebc5a16b260331e153bd6267fed1289aa5b4ecaae5ba\",\n      \"stdout_matches_receipt\": true\n    }\n  ],\n  \"static_audit_helper_modules\": [\n    \"frontier_cycle883_recurrent_encode_update_decode_sandwich_core_2026_08_03\",\n    \"frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03\",\n    \"frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03\"\n  ],\n  \"status\": \"fail\",\n  \"this_source_sha256\": \"b6f68d26814c86af8e74c66035721a4d973855fba2ac4e198ea50ad0a0d4c010\"\n}\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T064931Z",
+  "at_utc": "20260919T065411Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 84483323 differs from the current HEAD 7a6d4923 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (False)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, same stale memo pin as the cycle883 primary runner: failures are primary:exit=1 and primary:stdout-receipt (the primary runner stops on 'Cycle883 input pin drift' for docs/MINIMAL_AXIOMS_2026-06-29.md, pinned fc4d60cc... from c62dce4792 vs 93af34cf... on main since 574346c636), and independent:receipt-pin (the independent check exits 0 and rewrites its receipt; the rewritten JSON differs from the committed b78d209e... receipt only in source_sha256['docs/MINIMAL_AXIOMS_2026-06-29.md'], fc4d60cc... -> 93af34cf..., giving ab3adc3b...). All source pins match; the package landed in 99135f72a2 (2026-08-09) after the memo had already changed on 2026-08-05.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065411Z"
  }
 }

@@ -1,0 +1,30 @@
+== B2 Lemma closed form beyond k=2..6 ==
+  (3, 1, 2) k=2: anti 1/36 vs 1/36; orth 1/72 vs 1/72
+  (3, 1, 2) k=3: anti 1/108 vs 1/108; orth 1/216 vs 1/216
+  (3, 1, 2) k=6: anti 121/746496 vs 121/746496; orth 121/1492992 vs 121/1492992
+  (3, 1, 2) k=7: anti 91/2239488 vs 91/2239488; orth 91/4478976 vs 91/4478976
+  (3, 1, 2) k=12: anti 88573/2229025112064 vs 88573/2229025112064; orth 88573/4458050224128 vs 88573/4458050224128
+  (5, 2, 4) k=2: anti 9/529 vs 9/529; orth 5/529 vs 5/529
+  (5, 2, 4) k=6: anti 9279/148035889 vs 9279/148035889; orth 4085/148035889 vs 4085/148035889
+  (5, 2, 4) k=7: anti 46683/3404825447 vs 46683/3404825447; orth 19593/3404825447 vs 19593/3404825447
+  (5, 2, 4) k=12: anti 146478231/21914624432020321 vs 146478231/21914624432020321; orth 53018333/21914624432020321 vs 53018333/21914624432020321
+  (2, 1, 2) k=2: anti 1/121 vs 1/121; orth 1/121 vs 1/121
+  (2, 1, 2) k=6: anti 31/1771561 vs 31/1771561; orth 31/1771561 vs 31/1771561
+  (2, 1, 2) k=7: anti 63/19487171 vs 63/19487171; orth 63/19487171 vs 63/19487171
+  (2, 1, 2) k=12: anti 2047/3138428376721 vs 2047/3138428376721; orth 2047/3138428376721 vs 2047/3138428376721
+  (2, 2, 1) k=2: anti 0 vs 0; orth 1/32 vs 1/32
+  (2, 2, 1) k=6: anti 0 vs 0; orth 31/131072 vs 31/131072
+  (2, 2, 1) k=7: anti 0 vs 0; orth 63/1048576 vs 63/1048576
+  (2, 2, 1) k=12: anti 0 vs 0; orth 2047/34359738368 vs 2047/34359738368
+  (7, 3, 5) k=2: anti 4/225 vs 4/225; orth 2/225 vs 2/225
+  (7, 3, 5) k=6: anti 4141/45562500 vs 4141/45562500; orth 4141/91125000 vs 4141/91125000
+  (7, 3, 5) k=7: anti 2923/136687500 vs 2923/136687500; orth 2923/273375000 vs 2923/273375000
+  (7, 3, 5) k=12: anti 494287399/33215062500000000 vs 494287399/33215062500000000; orth 494287399/66430125000000000 vs 494287399/66430125000000000
+  (4, 4, 1) k=2: anti 0 vs 0; orth 1/8 vs 1/8
+  (4, 4, 1) k=6: anti 0 vs 0; orth 341/165888 vs 341/165888
+  (4, 4, 1) k=7: anti 0 vs 0; orth 455/663552 vs 455/663552
+  (4, 4, 1) k=12: anti 0 vs 0; orth 1398101/495338913792 vs 1398101/495338913792
+== U1 reconstruction on four sites (beyond executed three) ==
+  6^4=1296 configs, mismatches=0, Z=45036
+  Brook–Besag recovers the four-site law exactly
+SUMMARY: FALSIFIER (PR #8149): B2 Lemma anti/orth closed forms hold for k=2..12 at six triples including beyond executed k<=6; U1 Brook–Besag reconstructs a non-product positive law on all 6^4 four-site configs (beyond executed three sites); not the 216-env HIT; falsifier does not fire

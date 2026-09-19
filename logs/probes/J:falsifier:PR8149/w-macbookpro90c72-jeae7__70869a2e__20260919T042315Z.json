@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-jeae7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8149/lemma_k_beyond_and_u1_four.py",
+ "seed": 91795,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "70869a2e",
+ "started_utc": "20260919T042315Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "FALSIFIER (PR #8149): B2 Lemma anti/orth closed forms hold for k=2..12 at six triples including beyond executed k<=6; U1 Brook\u2013Besag reconstructs a non-product positive law on all 6^4 four-site configs (beyond executed three sites); not the 216-env HIT; falsifier does not fire"
+ },
+ "review": "B2 Lemma anti/orth closed forms hold for k=2..12 at six triples (beyond executed k<=6); U1 Brook-Besag reconstructs a non-product law on all 1296 four-site configs (beyond three sites); not the 216-env HIT; falsifier does not fire",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "f8c1c542362534237acb124954f9abad0c2d88805b639912394e014c7655bfee",
+ "stdout_tail": " 2) k=7: anti 63/19487171 vs 63/19487171; orth 63/19487171 vs 63/19487171\n  (2, 1, 2) k=12: anti 2047/3138428376721 vs 2047/3138428376721; orth 2047/3138428376721 vs 2047/3138428376721\n  (2, 2, 1) k=2: anti 0 vs 0; orth 1/32 vs 1/32\n  (2, 2, 1) k=6: anti 0 vs 0; orth 31/131072 vs 31/131072\n  (2, 2, 1) k=7: anti 0 vs 0; orth 63/1048576 vs 63/1048576\n  (2, 2, 1) k=12: anti 0 vs 0; orth 2047/34359738368 vs 2047/34359738368\n  (7, 3, 5) k=2: anti 4/225 vs 4/225; orth 2/225 vs 2/225\n  (7, 3, 5) k=6: anti 4141/45562500 vs 4141/45562500; orth 4141/91125000 vs 4141/91125000\n  (7, 3, 5) k=7: anti 2923/136687500 vs 2923/136687500; orth 2923/273375000 vs 2923/273375000\n  (7, 3, 5) k=12: anti 494287399/33215062500000000 vs 494287399/33215062500000000; orth 494287399/66430125000000000 vs 494287399/66430125000000000\n  (4, 4, 1) k=2: anti 0 vs 0; orth 1/8 vs 1/8\n  (4, 4, 1) k=6: anti 0 vs 0; orth 341/165888 vs 341/165888\n  (4, 4, 1) k=7: anti 0 vs 0; orth 455/663552 vs 455/663552\n  (4, 4, 1) k=12: anti 0 vs 0; orth 1398101/495338913792 vs 1398101/495338913792\n== U1 reconstruction on four sites (beyond executed three) ==\n  6^4=1296 configs, mismatches=0, Z=45036\n  Brook\u2013Besag recovers the four-site law exactly\nSUMMARY: FALSIFIER (PR #8149): B2 Lemma anti/orth closed forms hold for k=2..12 at six triples including beyond executed k<=6; U1 Brook\u2013Besag reconstructs a non-product positive law on all 6^4 four-site configs (beyond executed three sites); not the 216-env HIT; falsifier does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jeae7",
+  "at_utc": "20260919T042315Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

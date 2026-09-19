@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8153",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block19-sphere",
+ "worker": "w-macbookpro90c72-jc66d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8153/falsifier_laplacian_beyond_4.py",
+ "seed": 92346,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f3a565dc",
+ "started_utc": "20260919T043226Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "FALSIFIER (PR #8153): plane waves are Laplacian eigenfunctions with E(k)=\u03a3 2(1-cos k_i) on L=2 d=1,3 (4\u00b3) and L=3 d=1,2 (beyond); 1-cos u \u2265 2u\u00b2/\u03c0\u00b2 on 400-point grid with equality at \u03c0; does not fire"
+ },
+ "review": "B2: plane waves are Laplacian eigenfunctions with E(k)=\u03a3 2(1-cos k_i) on the executed 4\u00b3 torus and beyond on L=3 d=1,2; C1 1-cos u\u22652u\u00b2/\u03c0\u00b2 on a 400-point grid with equality at \u03c0; falsifier does not fire",
+ "what": "PR #8153 ([physics-loop] admissibility-induced-law block19 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915; git show origin/physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915:<note>. Create probes/work/pr8153/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8153/<script>.py\"",
+ "stdout_sha256": "f162fc67fda92c454e373c9195bad9e5c58b0a4bc2ee3cfe083223d3829bdcc7",
+ "stdout_tail": "L=2 d=1: N=4 modes=4 mismatches=0\nL=2 d=3: N=64 modes=64 mismatches=0\nL=3 d=1: N=6 modes=6 mismatches=0\nL=3 d=2: N=36 modes=36 mismatches=0\n== C1 1-cos u >= 2u\u00b2/\u03c0\u00b2 on a dense grid beyond samples ==\n  worst gap 0 at n=400/400; negatives=0\n  g(0+)=0 g(\u03c0)=0 (want 0 at \u03c0)\nSUMMARY: FALSIFIER (PR #8153): plane waves are Laplacian eigenfunctions with E(k)=\u03a3 2(1-cos k_i) on L=2 d=1,3 (4\u00b3) and L=3 d=1,2 (beyond); 1-cos u \u2265 2u\u00b2/\u03c0\u00b2 on 400-point grid with equality at \u03c0; does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc66d",
+  "at_utc": "20260919T043226Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+L=2 d=1: N=4 modes=4 mismatches=0
+L=2 d=3: N=64 modes=64 mismatches=0
+L=3 d=1: N=6 modes=6 mismatches=0
+L=3 d=2: N=36 modes=36 mismatches=0
+== C1 1-cos u >= 2u²/π² on a dense grid beyond samples ==
+  worst gap 0 at n=400/400; negatives=0
+  g(0+)=0 g(π)=0 (want 0 at π)
+SUMMARY: FALSIFIER (PR #8153): plane waves are Laplacian eigenfunctions with E(k)=Σ 2(1-cos k_i) on L=2 d=1,3 (4³) and L=3 d=1,2 (beyond); 1-cos u ≥ 2u²/π² on 400-point grid with equality at π; does not fire

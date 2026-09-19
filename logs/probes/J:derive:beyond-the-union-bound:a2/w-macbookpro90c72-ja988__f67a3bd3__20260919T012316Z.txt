@@ -1,0 +1,15 @@
+PASS: A0 on (p,1,2): d1=33/(p^3+33), d2=(p+32)/(p(p+1)+32), d3=(2p+11)/(p^2+2p+11)
+PASS: A1 the three predecessors of a site are pairwise fork-adjacent, so P(N>=2)<=3 r
+PASS: A2 d2-d3 = p^2(21-p)/[(p^2+p+32)(p^2+2p+11)]; at p=11, d2=43/164>d3=3/14 so eps2=d2
+PASS: B1 isolated pair: unique majority child w, four amp children all fork-adjacent to w, 3 amp-amp forks, 7 descendant fork-pairs
+PASS: B2 P(at least one descendant pair | isolated pair) = 1-(1-eps2)^4; E[# descendant pairs] = 4 eps2 + 3 eps2^2
+PASS: B3 at eps2=1/5: exact 16-config enumeration matches 1-(4/5)^4=369/625 and mean 23/25
+PASS: C1 3 e^2 + 4 e - 1 = 3 (e - (-2+sqrt(7))/3) (e - (-2-sqrt(7))/3); mean < 1 for e > 0 iff e < (-2+sqrt(7))/3
+PASS: C2 on (p,1,2) eps2=d2 for p<=21; d2(12)=55/235 mean>1; d2(13)=45/214 mean<1; d2(21)=d3(21)=53/494; first integer with isolated-pair mean < 1 is p=13
+PASS: D1 5-pred atom-sum r-coefficient Ar>1 at p=200,84,13,11: p=200 Ar=10.1; p=84 Ar=10.25; p=13 Ar=12.18; p=11 Ar=12.74
+PASS: D2 depth-2 64-mask atom-sum r-coefficient CR>1 at p=84,13,11: p=84 CR=33.16; p=13 CR=40.4; p=11 CR=41.99
+PASS: E1 eps=0 2-step eroder on the depth-2 cone: each of 9 isolated base fork-pairs produces exactly one mid-level 1 and top=0
+PASS: E2 eps=0 depth-2 cone: 32 of 64 base masks force the top; none of those is an isolated 2-hot fork-pair (the eroder: pairs do not survive two steps)
+TOTAL: PASS=12 FAIL=0
+HIT: new exact partial: an isolated fork-pair of the two-level automaton has unique majority child and four amp children; P(regenerates a descendant fork-pair) = 1-(1-eps2)^4 and E[# descendant pairs] = 4 eps2 + 3 eps2^2, which is <1 iff eps2 < (-2+sqrt(7))/3; on (p,1,2) that first holds at p=13 (d2(12)=55/235 > threshold > d2(13)=45/214). The 2-step eroder (eps=0: isolated pair -> singleton -> 0) holds on all 9 base pairs of the depth-2 cone. Atom-sum (q,r) closures of r' have r-coefficient >10 (5-pred, p=200) and >33 (depth-2 masks), so this linear two-scale does not produce a super-solution
+SUMMARY: PARTIAL isolated-pair regeneration kernel 1-(1-eps2)^4 and mean 4 eps2+3 eps2^2 with exact threshold (-2+sqrt(7))/3 (p>=13 on (p,1,2)); ROUTE FAILS AT step 5 of the (q,r) atom-sum closure (r-coefficient >1 at every p); 4/27 is not replaced; located strength 10.5-11 is not reached

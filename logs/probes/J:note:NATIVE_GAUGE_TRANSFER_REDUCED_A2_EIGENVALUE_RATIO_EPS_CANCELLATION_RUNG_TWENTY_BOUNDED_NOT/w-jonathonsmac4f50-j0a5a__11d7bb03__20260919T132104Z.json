@@ -1,0 +1,37 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_REDUCED_A2_EIGENVALUE_RATIO_EPS_CANCELLATION_RUNG_TWENTY_BOUNDED_NOT",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j0a5a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_EIGENVA/converged_lambda_fits_heat_term_and_identities.py",
+ "seed": 24064,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "11d7bb03",
+ "started_utc": "20260919T132104Z",
+ "elapsed_s": 172.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "E exact: R H, R Q, R[H e^-Q] = P_1 e^-Q, R(QH e^-Q) = (3uH + Q P_1) e^-Q hold; P_1(1,2) = -41/2, P_2(1,2) = 135/2, 3uH(1,2) = 27, degrees A1 1 vs A2 3; <v|[C,T0]|v> relative 1.9e-16",
+   "W converged exact-Wilson rows to beta = 960: beta(c_J - c_D) = 1.65731, 1.65968, 1.66083, 1.66151, 1.66219, 1.66286, 1.66339, 1.66376 at beta = 60, 90, 120, 150, 200, 300, 500, 960; Hellmann identity to 1.7e-08; fit (note's betas) b = -8.19e-04, a_2 = 1.6769; (all eight) b = -3.66e-04, a_2 = 1.6720; (+beta^-2) b = +2.17e-05, a_2 = 1.6636; forced b = 0 a_2 = 1.6640; Richardson 1.6642",
+   "H lattice heat piece (beta^2/4)(||(J-I)v1||^2 - ||(J-I)v0||^2) = 0.9816 (beta=60), 0.9882 (beta=90), 0.9915 (beta=120), 0.9935 (beta=150), 0.9956 (beta=200), 0.9976 (beta=300), 0.9993 (beta=500), 1.0004 (beta=960); note's reduced a_2^heat ~ 1.0",
+   "hits=0; runtime 172s"
+  ]
+ },
+ "review": "Output matches the task. The exact identities hold (R H, R Q, R[H e^-Q] = P_1 e^-Q, R(QH e^-Q) = (3uH + Q P_1)e^-Q; P_1(1,2) = -41/2, P_2(1,2) = 135/2, 3uH = 27, degrees 1 vs 3, <v|[C,T0]|v> at 2e-16). Radius-converged walk-sum rows (disjoint from the runner's Bessel determinants) give Lambda to beta = 960. Fitting L_inf + b beta^-1/2 + a_2/beta + a_3 beta^-3/2 on the note's betas gives b = -8.2e-4 and a_2 = 1.6769; on all eight betas b = -3.7e-4 and a_2 = 1.6720; with a beta^-2 term b = +2.2e-5 and a_2 = 1.6636; forced b = 0 gives 1.6640, and the Richardson value is 1.66417. All satisfy |b| < 0.02 and a_2 in (1.55, 1.75). The Hellmann identity c_J - c_D = -beta dLambda/dbeta holds to 2e-8 (five-point stencil). The lattice heat piece (beta^2/4)(||(J-I)v1||^2 - ||(J-I)v0||^2) rises 0.9816 -> 1.0004 from beta = 60 to 960, matching the note's a_2^heat ~ 1.0 by an independent route and leaving about 0.66, not 0.85, for the rest of a_2. No falsifier fired.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_EIGENVALUE_RATIO_EPS_CANCELLATION_RUNG_TWENTY_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_EIGENVA/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_EIGENVA/<script>.py\"",
+ "stdout_sha256": "9cd3a6d5bf7a7cd23a9846cdf0cf43e0ad8d03949990076dde58e1ac1d080367",
+ "stdout_tail": "= 1.66401; beta(c_J - c_D) Richardson (500, 960): 1.66417\nSUMMARY: W converged exact-Wilson rows to beta = 960: beta(c_J - c_D) = 1.65731, 1.65968, 1.66083, 1.66151, 1.66219, 1.66286, 1.66339, 1.66376 at beta = 60, 90, 120, 150, 200, 300, 500, 960; Hellmann identity to 1.7e-08; fit (note's betas) b = -8.19e-04, a_2 = 1.6769; (all eight) b = -3.66e-04, a_2 = 1.6720; (+beta^-2) b = +2.17e-05, a_2 = 1.6636; forced b = 0 a_2 = 1.6640; Richardson 1.6642\n==============================================================================\nH  the heat piece a_2^heat from lattice eigenvectors, L ~ beta (J - I)\n  beta=60: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.981587\n  beta=90: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.988163\n  beta=120: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.991505\n  beta=150: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.993527\n  beta=200: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.995563\n  beta=300: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.997611\n  beta=500: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.999260\n  beta=960: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 1.000449\nSUMMARY: H lattice heat piece (beta^2/4)(||(J-I)v1||^2 - ||(J-I)v0||^2) = 0.9816 (beta=60), 0.9882 (beta=90), 0.9915 (beta=120), 0.9935 (beta=150), 0.9956 (beta=200), 0.9976 (beta=300), 0.9993 (beta=500), 1.0004 (beta=960); note's reduced a_2^heat ~ 1.0\n==============================================================================\nSUMMARY: hits=0; runtime 172s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0a5a",
+  "at_utc": "20260919T132406Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

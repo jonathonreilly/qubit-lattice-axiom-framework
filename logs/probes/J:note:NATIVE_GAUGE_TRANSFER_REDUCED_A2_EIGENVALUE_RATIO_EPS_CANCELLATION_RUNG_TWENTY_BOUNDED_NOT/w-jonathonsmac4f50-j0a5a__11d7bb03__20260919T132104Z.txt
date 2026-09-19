@@ -1,0 +1,30 @@
+==============================================================================
+E  exact identities and table values
+  identities {'R H': True, 'R Q': True, 'R[H e^-Q] = P_1 e^-Q': True, 'R(Q H e^-Q)': True}; values {'P_1(1,2)': '-41/2', 'P_2(1,2)': '135/2', '3uH(1,2)': '27', 'A1 degree': '1', 'A2 2H degree': '3'}; max |<v|[C,T0]|v>|/||[C,T0]|| 1.9e-16
+SUMMARY: E exact: R H, R Q, R[H e^-Q] = P_1 e^-Q, R(QH e^-Q) = (3uH + Q P_1) e^-Q hold; P_1(1,2) = -41/2, P_2(1,2) = 135/2, 3uH(1,2) = 27, degrees A1 1 vs A2 3; <v|[C,T0]|v> relative 1.9e-16
+==============================================================================
+W  exact-Wilson witness rows (converged regions)
+  beta=  60: sector dim   850: Lambda -1.613218552023 (radius change 3.5e-14), c_J - c_D 0.0276218692, beta(c_J - c_D) 1.65731215
+  beta=  90: sector dim  1189: Lambda -1.622432441616 (radius change 8.7e-15), c_J - c_D 0.0184408462, beta(c_J - c_D) 1.65967616
+  beta= 120: sector dim  1524: Lambda -1.627044260659 (radius change 4.6e-14), c_J - c_D 0.0138402527, beta(c_J - c_D) 1.66083033
+  beta= 150: sector dim  1851: Lambda -1.629812881411 (radius change 4.7e-14), c_J - c_D 0.0110767558, beta(c_J - c_D) 1.66151337
+  beta= 200: sector dim  2384: Lambda -1.632582634497 (radius change 2.0e-13), c_J - c_D 0.0083109455, beta(c_J - c_D) 1.66218909
+  beta= 300: sector dim  3437: Lambda -1.635353507549 (radius change 8.2e-13), c_J - c_D 0.0055428577, beta(c_J - c_D) 1.66285730
+  beta= 500: sector dim  5499: Lambda -1.637571003858 (radius change 4.2e-12), c_J - c_D 0.0033267727, beta(c_J - c_D) 1.66338633
+  beta= 960: sector dim  7989: Lambda -1.639165263374 (radius change 0.0e+00), c_J - c_D 0.0017330877, beta(c_J - c_D) 1.66376422
+  Hellmann c_J - c_D vs -beta dLambda/dbeta: beta=30: 0.0549950284 vs 0.0549950118, beta=120: 0.0138402527 vs 0.0138402527, beta=300: 0.0055428577 vs 0.0055428577
+  fit on the note's betas: b = -8.193e-04, a_2 = 1.67687; on all eight: b = -3.659e-04, a_2 = 1.67196; with a beta^-2 term: b = +2.165e-05, a_2 = 1.66355; forced b = 0: a_2 = 1.66401; beta(c_J - c_D) Richardson (500, 960): 1.66417
+SUMMARY: W converged exact-Wilson rows to beta = 960: beta(c_J - c_D) = 1.65731, 1.65968, 1.66083, 1.66151, 1.66219, 1.66286, 1.66339, 1.66376 at beta = 60, 90, 120, 150, 200, 300, 500, 960; Hellmann identity to 1.7e-08; fit (note's betas) b = -8.19e-04, a_2 = 1.6769; (all eight) b = -3.66e-04, a_2 = 1.6720; (+beta^-2) b = +2.17e-05, a_2 = 1.6636; forced b = 0 a_2 = 1.6640; Richardson 1.6642
+==============================================================================
+H  the heat piece a_2^heat from lattice eigenvectors, L ~ beta (J - I)
+  beta=60: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.981587
+  beta=90: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.988163
+  beta=120: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.991505
+  beta=150: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.993527
+  beta=200: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.995563
+  beta=300: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.997611
+  beta=500: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 0.999260
+  beta=960: (beta^2/4)(||(J-I)v_1||^2 - ||(J-I)v_0||^2) = 1.000449
+SUMMARY: H lattice heat piece (beta^2/4)(||(J-I)v1||^2 - ||(J-I)v0||^2) = 0.9816 (beta=60), 0.9882 (beta=90), 0.9915 (beta=120), 0.9935 (beta=150), 0.9956 (beta=200), 0.9976 (beta=300), 0.9993 (beta=500), 1.0004 (beta=960); note's reduced a_2^heat ~ 1.0
+==============================================================================
+SUMMARY: hits=0; runtime 172s

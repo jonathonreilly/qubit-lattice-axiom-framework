@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8175",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block31-sharpe",
+ "worker": "w-macbookpro90c72-j24cd",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8175/attack_a_witness_windows.py",
+ "seed": 85566,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c70a1a95",
+ "started_utc": "20260919T023926Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (a) WITNESS REALIZABILITY \u2014 W1/W2/W3 marks lie in the stated Z^3 windows [0,4)^2\u00d7[0,7) and [0,5)^2\u00d7[0,9); the NN graph of each window is triangle-free (Z^3 bipartite); roots are 1 under the one-sided automaton; W1's 11 marks are exactly its seed and ten amplified 1-sites; stated (E,|A|,|S|) give ratios 8/5, 5/3, 5/3 inside block 30's budget and above the sharper one; 0 failures; attack does not fire"
+ },
+ "review": "Pattern (a): W1/W2/W3 marks sit in the stated Z^3 windows, NN graphs are triangle-free, roots are 1, W1 is self-contained (11=1+10), ratios 8/5 and 5/3 refute the sharper budget inside block 30's; attack does not fire",
+ "what": "PR #8175 (ail31: the sharper bad-pair budget is false for the extended): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916; git show origin/physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916:<note>. Create probes/work/pr8175/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8175/<script>.py\"",
+ "stdout_sha256": "2f75cc590e8c4bc4d6ffc28c133c53a363414a117c7623482841a94a73d62f0d",
+ "stdout_tail": "OK: W1 root (3, 3, 4) in window (4, 4, 7), 11 marks inside, eta[root]=1, seed=1 amp=10 proc=25, (E,A,S)=(16, 10, 1) ratio 8/5, sharp=False proved=True\nOK: W2 root (3, 3, 6) in window (4, 4, 7), 40 marks inside, eta[root]=1, seed=5 amp=15 proc=36, (E,A,S)=(20, 12, 1) ratio 5/3, sharp=False proved=True\nOK: W3 root (4, 4, 5) in window (5, 5, 9), 74 marks inside, eta[root]=1, seed=11 amp=34 proc=64, (E,A,S)=(23, 12, 2) ratio 5/3, sharp=False proved=True\nSUMMARY: pattern (a) WITNESS REALIZABILITY \u2014 W1/W2/W3 marks lie in the stated Z^3 windows [0,4)^2\u00d7[0,7) and [0,5)^2\u00d7[0,9); the NN graph of each window is triangle-free (Z^3 bipartite); roots are 1 under the one-sided automaton; W1's 11 marks are exactly its seed and ten amplified 1-sites; stated (E,|A|,|S|) give ratios 8/5, 5/3, 5/3 inside block 30's budget and above the sharper one; 0 failures; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j24cd",
+  "at_utc": "20260919T023926Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

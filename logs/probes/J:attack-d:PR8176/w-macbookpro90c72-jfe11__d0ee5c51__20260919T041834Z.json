@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8176",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block32-minima",
+ "worker": "w-macbookpro90c72-jfe11",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8176/quantifier_floor_every_t.py",
+ "seed": 91514,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0ee5c51",
+ "started_utc": "20260919T041834Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - t(4/27-t)<=4/729 for every tested t in [0,4/27] with equality only at t=2/27; not the known 4165 provenance HIT"
+ },
+ "review": "t(4/27-t)<=4/729 for extra t in [0,4/27] with equality at t=2/27. Not the known 4165 provenance HIT. No HIT.",
+ "what": "PR #8176 (ail32: the minimal marked tree \u2014 the counted family's consta): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917; git show origin/physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917:<note>. Create probes/work/pr8176/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8176/<script>.py\"",
+ "stdout_sha256": "65623d9ea687933b2329d88a29eeaf379f36c83e83356651af9f065d66978903",
+ "stdout_tail": "/270 f=13/2700 <=4/729 True inside=True\nt=7/135 f=91/18225 <=4/729 True inside=True\nt=1/18 f=5/972 <=4/729 True inside=True\nt=8/135 f=32/6075 <=4/729 True inside=True\nt=17/270 f=391/72900 <=4/729 True inside=True\nt=1/15 f=11/2025 <=4/729 True inside=True\nt=19/270 f=133/24300 <=4/729 True inside=True\nt=2/27 f=4/729 <=4/729 True inside=True\nt=7/90 f=133/24300 <=4/729 True inside=True\nt=11/135 f=11/2025 <=4/729 True inside=True\nt=23/270 f=391/72900 <=4/729 True inside=True\nt=4/45 f=32/6075 <=4/729 True inside=True\nt=5/54 f=5/972 <=4/729 True inside=True\nt=13/135 f=91/18225 <=4/729 True inside=True\nt=1/10 f=13/2700 <=4/729 True inside=True\nt=14/135 f=28/6075 <=4/729 True inside=True\nt=29/270 f=319/72900 <=4/729 True inside=True\nt=1/9 f=1/243 <=4/729 True inside=True\nt=31/270 f=31/8100 <=4/729 True inside=True\nt=16/135 f=64/18225 <=4/729 True inside=True\nt=11/90 f=77/24300 <=4/729 True inside=True\nt=17/135 f=17/6075 <=4/729 True inside=True\nt=7/54 f=7/2916 <=4/729 True inside=True\nt=2/15 f=4/2025 <=4/729 True inside=True\nt=37/270 f=37/24300 <=4/729 True inside=True\nt=19/135 f=19/18225 <=4/729 True inside=True\nt=13/90 f=13/24300 <=4/729 True inside=True\nt=4/27 f=0 <=4/729 True inside=True\nt=1/1000 f=3973/27000000 <=4/729 True inside=True\nt=1/100 f=373/270000 <=4/729 True inside=True\nt=1/10 f=13/2700 <=4/729 True inside=True\nSUMMARY: pattern has no purchase on this note - t(4/27-t)<=4/729 for every tested t in [0,4/27] with equality only at t=2/27; not the known 4165 provenance HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jfe11",
+  "at_utc": "20260919T041835Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

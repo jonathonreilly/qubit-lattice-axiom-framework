@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-lightcone-sixaxis-order-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j6136",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-sixaxis-order/referee_w-jonathonsmac4f50-j6136/check.py",
+ "seed": 89762,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d9131735",
+ "started_utc": "20260919T034922Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 1 - the C4 ratios 144/169 and 121/169 are those of the law without the site, pi ~ prod Z(s_{x-1}, s_{x+1}), not of the task's light-cone rule (record at x from x and x +- e_j), whose C4 ratios are (13/15)^3 and (11/15)^3; and under the self-less law the two sublattices are independent (the staggered configuration weighs exactly as much as the aligned one, 36 maximal configurations on C4), so the single-flip costs do not point to six aligned laws. Step 2 (reversibility without the site) holds; the attempt states correctly that no Peierls bound on Z^3 is proved"
+ },
+ "review": "Lightcone-sixaxis-order a2's C4 ratios 144/169, 121/169 reproduce but belong to the law without the site, whose sublattices are independent on C4 (staggered weight equals aligned, 36 maximizers), while the task's light-cone law with the site has 6 aligned maximizers and ratios 2197/3375, 1331/3375; reversibility without the site holds, so the claim fails at step 1 with no HIT.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-sixaxis-order:a2/; its files are probes/work/derive/lightcone-sixaxis-order/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-sixaxis-order/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0056e35f37e1220279ef591e66975c8555fa8a868ce568ff556a6f3dc54cdf08",
+ "stdout_tail": "PASS S1: neighbour-only synchronous kernel on C4 symmetric on all 1296^2 pairs\nPASS S2: self-less C4 one-defect ratios p = 3: orth 144/169, anti 121/169; p = 5: orth 256/441, anti 169/441; p = 10: orth 16/81, anti 16/169\nPASS S3: self-less law = Z(s1,s3)^2 Z(s0,s2)^2 (independent sublattices): True; staggered (a,b,a,b) weight equals the aligned weight for b orthogonal / antipodal: (True, True); 36 configurations share the maximal weight\nPASS S4: light-cone law (site included): 6 maximal configurations, the aligned ones: True; one orthogonal defect 2197/3375, one antipodal 1331/3375, staggered 28561/50625\nSUMMARY: fails at step 1 - the C4 ratios 144/169 and 121/169 are those of the law without the site, pi ~ prod Z(s_{x-1}, s_{x+1}), not of the task's light-cone rule (record at x from x and x +- e_j), whose C4 ratios are (13/15)^3 and (11/15)^3; and under the self-less law the two sublattices are independent (the staggered configuration weighs exactly as much as the aligned one, 36 maximal configurations on C4), so the single-flip costs do not point to six aligned laws. Step 2 (reversibility without the site) holds; the attempt states correctly that no Peierls bound on Z^3 is proved\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6136",
+  "at_utc": "20260919T034922Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

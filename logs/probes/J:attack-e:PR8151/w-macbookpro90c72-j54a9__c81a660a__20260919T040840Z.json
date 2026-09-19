@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8151",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block17-static",
+ "worker": "w-macbookpro90c72-j54a9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8151/sampled_evidence_no_purchase.py",
+ "seed": 90920,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c81a660a",
+ "started_utc": "20260919T040840Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known chessboard-orbit HIT \u2014 RP/chessboard/Peierls are exact, not sampled never/always observations"
+ },
+ "review": "pattern (e) has no purchase beyond the known chessboard-orbit HIT: RP/chessboard/Peierls are exact identities, not sampled never/always observations",
+ "what": "PR #8151 ([physics-loop] admissibility-induced-law block17 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915; git show origin/physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915:<note>. Create probes/work/pr8151/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8151/<script>.py\"",
+ "stdout_sha256": "abc37f6da0a84852f04934d514245d219c3a5b9857e640fc0b4a02e02fa62e29",
+ "stdout_tail": "SUMMARY: pattern has no purchase on this note beyond the known chessboard-orbit HIT \u2014 RP/chessboard/Peierls are exact, not sampled never/always observations\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j54a9",
+  "at_utc": "20260919T040840Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

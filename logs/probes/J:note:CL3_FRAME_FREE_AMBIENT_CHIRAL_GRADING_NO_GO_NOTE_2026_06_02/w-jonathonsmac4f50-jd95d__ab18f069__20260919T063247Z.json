@@ -1,0 +1,32 @@
+{
+ "task": "J:note:CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026_06_02",
+ "type": "judgment",
+ "lane": "cl3",
+ "worker": "w-jonathonsmac4f50-jd95d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO/equivariant_maps_full_algebra.py",
+ "seed": 99567,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab18f069",
+ "started_utc": "20260919T063247Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the falsifiers do not fire: over the whole 8-dim algebra the equivariant real-linear maps (Spin(3) adjoint: dimension 8; Pin(3) automorphisms: 4; Pin(3) twisted adjoint: 8; from four exact rational rotors) all have scalar grade-1 blocks and none anticommutes with Gamma_chi; the seven table rows computed from their definitions (the last as the three coordinate generators [b_k,-]) equal the note's matrices and none anticommutes with Gamma_chi; beyond the table: the anticommutant of Gamma_chi has dimension 4 = L4 (symmetric, 2) + the bivector commutators [b,-] with c1+c2+c3 = 0 (antisymmetric, 2); analogue outside the note's scope: at n = 2 the SO(2) commutant has dimension 2 with 1 direction anticommuting with Gamma_2, O(2) dimension 1; at n = 4, 5, 6 SO(n) dimension 1, 1, 1"
+ },
+ "review": "Output matches the task (falsifiers implemented with disjoint exact machinery): over the whole 8-dim Cl(3,0) algebra the maps equivariant under four exact rational rotors (Spin(3) adjoint dim 8, Pin(3) automorphisms dim 4, Pin(3) twisted adjoint dim 8) all have scalar grade-1 blocks and none anticommutes with Gamma_chi, and the seven table rows recomputed from their definitions equal the note's matrices, so no falsifier fires; beyond the table the anticommutant of Gamma_chi has dimension 4 = L4 (symmetric, 2) + bivector commutators [b,-] with c1+c2+c3 = 0 (antisymmetric, 2, e.g. [b1-b2,-], eigenvalues 0 and +-2sqrt2 i), and at n = 2 the SO(2) commutant has dimension 2 with one direction anticommuting with Gamma_2 (O(2): 1).",
+ "what": "Note on main: docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO/<script>.py\"",
+ "stdout_sha256": "b4bb9b5be18923d25bd5b061571f849d7e3047928f79bde135e282dd5b4aebaf",
+ "stdout_tail": "or -2*sqrt(2)*I: True; there sum|x|^2/|sum x|^2 = 2/3, sum x^2/(sum x)^2 = 0\n   L4 family: {H, Gamma_chi} = 0 for every h with sum 0: True; nonzero eigenvectors (eigen, Q): [(True, 2/3), (True, 2/3)]; a I + b vv^T commutes with Gamma_chi: True\n4. analogue outside the note's scope, grade 1 of Cl(n,0), Gamma_n = (2/n)J - I, four exact Cayley rotations (+ one reflection): n=2: SO(n) commutant dim 2, anticommuting 1; O(n) commutant dim 1, anticommuting 0; n=4: SO(n) commutant dim 1, anticommuting 0; O(n) commutant dim 1, anticommuting 0; n=5: SO(n) commutant dim 1, anticommuting 0; O(n) commutant dim 1, anticommuting 0; n=6: SO(n) commutant dim 1, anticommuting 0; O(n) commutant dim 1, anticommuting 0\nSUMMARY: the falsifiers do not fire: over the whole 8-dim algebra the equivariant real-linear maps (Spin(3) adjoint: dimension 8; Pin(3) automorphisms: 4; Pin(3) twisted adjoint: 8; from four exact rational rotors) all have scalar grade-1 blocks and none anticommutes with Gamma_chi; the seven table rows computed from their definitions (the last as the three coordinate generators [b_k,-]) equal the note's matrices and none anticommutes with Gamma_chi; beyond the table: the anticommutant of Gamma_chi has dimension 4 = L4 (symmetric, 2) + the bivector commutators [b,-] with c1+c2+c3 = 0 (antisymmetric, 2); analogue outside the note's scope: at n = 2 the SO(2) commutant has dimension 2 with 1 direction anticommuting with Gamma_2, O(2) dimension 1; at n = 4, 5, 6 SO(n) dimension 1, 1, 1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd95d",
+  "at_utc": "20260919T063304Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+== H2(c) / C1: adversarial g(u)=2(1-cos u)-u², not samples ==
+  sin u - u = -u**7/5040 + u**5/120 - u**3/6
+  leading u^3 coeff=-1/6 (want -1/6)
+  g(0)=0 g'(0)=0
+  t - sin t = t**7/5040 - t**5/120 + t**3/6
+  2(1-cos u)-4 sin²(u/2) = 0
+  worst grid 2(1-cos)-u² ≈ -0.000123702998216205357186702736744 at n/L=1/16
+== Parseval on adversarial fields, not a random field ==
+  L=2 d=1 ones: Σ|ŝ|²=4 Σ|s|²=4
+  L=2 d=1 delta: Σ|ŝ|²=1 Σ|s|²=1
+  L=2 d=1 alt: Σ|ŝ|²=4 Σ|s|²=4
+  L=2 d=2 ones: Σ|ŝ|²=16 Σ|s|²=16
+  L=2 d=2 delta: Σ|ŝ|²=1 Σ|s|²=1
+  L=2 d=2 alt: Σ|ŝ|²=16 Σ|s|²=16
+  L=2 d=2 checker: Σ|ŝ|²=16 Σ|s|²=16
+== H2(a) adversarial |n|² vs 2j² on every shell, L=2..24 ==
+  L=2: max |n|²-2j²=0 (claimed ≤0)
+  L=12: max |n|²-2j²=0 (claimed ≤0)
+  L=24: max |n|²-2j²=0 (claimed ≤0)
+SUMMARY: SAMPLED EVIDENCE (PR #8154): C1's sample-point inequality 2(1-cos u)≤u² is the Taylor-controlled g(u)≤0 with unique critical point u=0; adversarial Parseval holds on ones/delta/alt/checker fields at L=2; every shell of L=2..24 has |n|²≤2j²; pattern has purchase and does not fire

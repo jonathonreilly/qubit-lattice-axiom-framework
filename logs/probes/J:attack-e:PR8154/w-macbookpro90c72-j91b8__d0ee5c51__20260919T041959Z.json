@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8154",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block20-unsold",
+ "worker": "w-macbookpro90c72-j91b8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8154/adversarial_trig_not_samples.py",
+ "seed": 91599,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0ee5c51",
+ "started_utc": "20260919T041959Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8154): C1's sample-point inequality 2(1-cos u)\u2264u\u00b2 is the Taylor-controlled g(u)\u22640 with unique critical point u=0; adversarial Parseval holds on ones/delta/alt/checker fields at L=2; every shell of L=2..24 has |n|\u00b2\u22642j\u00b2; pattern has purchase and does not fire"
+ },
+ "review": "instead of C1 sample points and a random Parseval field: g(u)=2(1-cos u)-u\u00b2 has unique critical point u=0 with g\u22640, half-angle identity holds, adversarial Parseval matches on ones/delta/alt/checker at L=2, shells L=2..24 have |n|\u00b2\u22642j\u00b2; pattern has purchase and does not fire",
+ "what": "PR #8154 ([physics-loop] admissibility-induced-law block20 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915; git show origin/physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915:<note>. Create probes/work/pr8154/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8154/<script>.py\"",
+ "stdout_sha256": "293378e7de57c6e9ba0642fbf4d8a8947906a55def39496104fbe7b8e94777c1",
+ "stdout_tail": "== H2(c) / C1: adversarial g(u)=2(1-cos u)-u\u00b2, not samples ==\n  sin u - u = -u**7/5040 + u**5/120 - u**3/6\n  leading u^3 coeff=-1/6 (want -1/6)\n  g(0)=0 g'(0)=0\n  t - sin t = t**7/5040 - t**5/120 + t**3/6\n  2(1-cos u)-4 sin\u00b2(u/2) = 0\n  worst grid 2(1-cos)-u\u00b2 \u2248 -0.000123702998216205357186702736744 at n/L=1/16\n== Parseval on adversarial fields, not a random field ==\n  L=2 d=1 ones: \u03a3|\u015d|\u00b2=4 \u03a3|s|\u00b2=4\n  L=2 d=1 delta: \u03a3|\u015d|\u00b2=1 \u03a3|s|\u00b2=1\n  L=2 d=1 alt: \u03a3|\u015d|\u00b2=4 \u03a3|s|\u00b2=4\n  L=2 d=2 ones: \u03a3|\u015d|\u00b2=16 \u03a3|s|\u00b2=16\n  L=2 d=2 delta: \u03a3|\u015d|\u00b2=1 \u03a3|s|\u00b2=1\n  L=2 d=2 alt: \u03a3|\u015d|\u00b2=16 \u03a3|s|\u00b2=16\n  L=2 d=2 checker: \u03a3|\u015d|\u00b2=16 \u03a3|s|\u00b2=16\n== H2(a) adversarial |n|\u00b2 vs 2j\u00b2 on every shell, L=2..24 ==\n  L=2: max |n|\u00b2-2j\u00b2=0 (claimed \u22640)\n  L=12: max |n|\u00b2-2j\u00b2=0 (claimed \u22640)\n  L=24: max |n|\u00b2-2j\u00b2=0 (claimed \u22640)\nSUMMARY: SAMPLED EVIDENCE (PR #8154): C1's sample-point inequality 2(1-cos u)\u2264u\u00b2 is the Taylor-controlled g(u)\u22640 with unique critical point u=0; adversarial Parseval holds on ones/delta/alt/checker fields at L=2; every shell of L=2..24 has |n|\u00b2\u22642j\u00b2; pattern has purchase and does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j91b8",
+  "at_utc": "20260919T042003Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

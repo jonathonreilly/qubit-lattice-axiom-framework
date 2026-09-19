@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:plane-memory-loss:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jddd3",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/plane-memory-loss/w-macbookpro90c72-jddd3/check.py",
+ "seed": 81642,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "59181689",
+ "started_utc": "20260919T013402Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL uniform-twist relative entropy is kappa A(kappa)(1-cos theta) per site (exact Fisher identity) and cannot vanish by plane-walk recurrence"
+ },
+ "review": "Exact Fisher KL=kappa A(kappa)(1-cos theta) for a uniform twist is extensive; 2D recurrence cannot cancel it. HIT is a no-go for uniform route (i), not a forgetting proof.",
+ "what": "DERIVATION, independent attempt 2 of 4: The sphere formation law forgets its initial plane on the infinite lattice. Block 26 (PR #8170): executed, not proved: starting from an aligned plane the magnetization of the sphere formation law decays with no plateau for beta = 3..24 (exponents at or above gamma(beta) = c_0 A(3 beta)/(3 beta), c_0 = 3 sqrt 3/(4 pi)); the equilibrium twist argument fails in level time (recorded there under N1). Block 27 (PR #8171) proves uniqueness only for beta < 1/sqrt 3. TASK: prove that for every beta the law reached from an aligned plane has m_t -> 0 on the infinite plane (or for beta in an explicit larger range), or find the obstruction. Routes: (i) a relative-entropy argument in path space: compare the path measure with its image under a slowly varying rotation field theta(x, t); the cost per level is a Dirichlet form of the plane walk P and the benefit is the rotation of the mean; the two-dimensional recurrence of P is what should make the cost vanish; (ii) a comparison with the linear model using the monotonicity of A(kappa)/kappa (block 27's sign lemma); (iii) an O(3)-invariance plus ergodicity argument for the level automaton. State exactly which step fails if the route fails. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/plane-memory-loss/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/plane-memory-loss/<name>/check.py\"",
+ "stdout_sha256": "9a847248125e273c0a398164107d66560d9f8c67d6a61da03b4a1ca910688246",
+ "stdout_tail": "CHECKED E1.KL-formula\nCHECKED E1.KL-zero-at-0\nCHECKED E1.A-limit-0: ser0=0\nCHECKED E1.A-leading\nCHECKED E2.uniform-Dirichlet-zero: constant theta has |P theta - theta|=0\nCHECKED E2.uniform-KL-extensive: KL = N k A(k)(1-cos theta) per level\nCHECKED E3.numeric-pos: 3 A(3)=-1 + 3/tanh(3)\nCHECKS ok=7 fail=0\nHIT: PARTIAL: route (i) with a spatially uniform rotation has exact Fisher KL = kappa A(kappa)(1-cos theta) per site per level; the cost is extensive in volume and time, so 2D recurrence of P (which shrinks Dirichlet forms of slowly varying fields) cannot cancel it. A constant twist has Dirichlet 0 and still pays the on-site KL. Route (i) can only work for a non-constant theta(x) with vanishing Dirichlet; the uniform case is a no-go.\nSUMMARY: PARTIAL uniform-twist relative entropy is kappa A(kappa)(1-cos theta) per site (exact Fisher identity) and cannot vanish by plane-walk recurrence\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jddd3",
+  "at_utc": "20260919T013409Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Uniform-twist Fisher KL is extensive; recurrence cannot cancel it. No-go for uniform route (i).",
+  "by": "w-macbookpro90c72-jddd3",
+  "at_utc": "20260919T013409Z"
+ }
+}

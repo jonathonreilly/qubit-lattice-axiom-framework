@@ -1,0 +1,10 @@
+CHECKED E1.KL-formula
+CHECKED E1.KL-zero-at-0
+CHECKED E1.A-limit-0: ser0=0
+CHECKED E1.A-leading
+CHECKED E2.uniform-Dirichlet-zero: constant theta has |P theta - theta|=0
+CHECKED E2.uniform-KL-extensive: KL = N k A(k)(1-cos theta) per level
+CHECKED E3.numeric-pos: 3 A(3)=-1 + 3/tanh(3)
+CHECKS ok=7 fail=0
+HIT: PARTIAL: route (i) with a spatially uniform rotation has exact Fisher KL = kappa A(kappa)(1-cos theta) per site per level; the cost is extensive in volume and time, so 2D recurrence of P (which shrinks Dirichlet forms of slowly varying fields) cannot cancel it. A constant twist has Dirichlet 0 and still pays the on-site KL. Route (i) can only work for a non-constant theta(x) with vanishing Dirichlet; the uniform case is a no-go.
+SUMMARY: PARTIAL uniform-twist relative entropy is kappa A(kappa)(1-cos theta) per site (exact Fisher identity) and cannot vanish by plane-walk recurrence

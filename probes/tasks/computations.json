@@ -508,5 +508,185 @@
   },
   "problem": "static-against-lightcone-kernel",
   "what": "WORKED COMPUTATION (independent run 2 of 2): The comparator and the formation kernel side by side. For the sphere menu at matched magnetization: run probes/lib/block29_kernel.py (static law, heat bath on L^3; arguments L sweeps therm betas) at L = 16 for beta in {1.0, 1.5, 2.0, 3.0} and probes/lib/formation_levelplane.py in light-cone mode (3s sphere beta 16 T T0 seed) at couplings chosen so the magnetizations match within 0.01 (bisect on beta). Compare beta_static E(k) S_static(k) with S_formation(k) (1 - phi^2)/sigma^2 shell by shell. Expectation: both close to 1 at small k with corrections of the same sign; report the numbers, not a verdict. DELIVERABLE in your unit worktree: probes/work/compute/static-against-lightcone-kernel/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-against-lightcone-kernel/<name>/run.py\""
+ },
+ {
+  "id": "C:lightcone-reversibility-exact:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-reversibility-exact",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Is light-cone formation reversible? The record at (t+1, x) is drawn with probability prop. to exp(beta s.S_x), S_x the sum of the level-t records at x and its neighbours (the site ITSELF included). Claim to test: the synchronous chain is reversible with respect to pi(s) prop. to prod_x Z(S_x(s)), Z(S) = sum over the menu of exp(beta s.S), because sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') for a symmetric neighbourhood. (1) Prove the symmetry identity and the detailed-balance equation on paper (three lines). (2) Verify exactly on the periodic 4-cycle and the 2x2 torus for the six-axis menu with exp(beta s.s') weights at beta = 1/2, 1 (rational arithmetic with e^beta replaced by a rational t: weights t, 1/t, 1): full transition matrix, stationary law, detailed balance. (3) Show the BACKWARD neighbourhood {x, x - e_j} fails detailed balance with any product-form pi on the same windows. (4) For the general six-axis weights (p,q,r), which are not of the form exp(beta s.s') unless q = 1/p... state what replaces s.S and whether reversibility survives. Expectation: (1)-(3) hold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-reversibility-exact/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-reversibility-exact/<name>/run.py\""
+ },
+ {
+  "id": "C:lightcone-reversibility-exact:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-reversibility-exact",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Is light-cone formation reversible? The record at (t+1, x) is drawn with probability prop. to exp(beta s.S_x), S_x the sum of the level-t records at x and its neighbours (the site ITSELF included). Claim to test: the synchronous chain is reversible with respect to pi(s) prop. to prod_x Z(S_x(s)), Z(S) = sum over the menu of exp(beta s.S), because sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') for a symmetric neighbourhood. (1) Prove the symmetry identity and the detailed-balance equation on paper (three lines). (2) Verify exactly on the periodic 4-cycle and the 2x2 torus for the six-axis menu with exp(beta s.s') weights at beta = 1/2, 1 (rational arithmetic with e^beta replaced by a rational t: weights t, 1/t, 1): full transition matrix, stationary law, detailed balance. (3) Show the BACKWARD neighbourhood {x, x - e_j} fails detailed balance with any product-form pi on the same windows. (4) For the general six-axis weights (p,q,r), which are not of the form exp(beta s.s') unless q = 1/p... state what replaces s.S and whether reversibility survives. Expectation: (1)-(3) hold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-reversibility-exact/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-reversibility-exact/<name>/run.py\""
+ },
+ {
+  "id": "C:pi-spin-wave-check:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pi-spin-wave-check",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The reversible law's spin waves reproduce the formation kernel. For the sphere menu Z(S) = 4 pi sinh(beta|S|)/(beta|S|), so pi(s) prop. to exp(sum_x log Z(S_x)). (1) Expand sum_x log Z(S_x) to second order in transverse fluctuations about the aligned configuration for a symmetric predecessor set of size n: show the quadratic form has symbol beta' n (1 - phi(k)^2) with beta' = A(n beta) (coth - 1/x) up to the terms you find, and hence the Gaussian covariance sigma^2/(1 - phi^2) with sigma^2 = A(n beta)/(n beta) or state the exact coefficient you get. (2) Do it with sympy for n = 7 on a small torus by explicit Hessian computation at beta = 2, 6 (numerical Hessian of -log pi at the aligned point, transverse directions only) and compare its inverse with the claimed kernel mode by mode. Expectation: agreement to the accuracy of the expansion; report the ratio per mode. DELIVERABLE in your unit worktree: probes/work/compute/pi-spin-wave-check/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/pi-spin-wave-check/<name>/run.py\""
+ },
+ {
+  "id": "C:pi-spin-wave-check:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pi-spin-wave-check",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The reversible law's spin waves reproduce the formation kernel. For the sphere menu Z(S) = 4 pi sinh(beta|S|)/(beta|S|), so pi(s) prop. to exp(sum_x log Z(S_x)). (1) Expand sum_x log Z(S_x) to second order in transverse fluctuations about the aligned configuration for a symmetric predecessor set of size n: show the quadratic form has symbol beta' n (1 - phi(k)^2) with beta' = A(n beta) (coth - 1/x) up to the terms you find, and hence the Gaussian covariance sigma^2/(1 - phi^2) with sigma^2 = A(n beta)/(n beta) or state the exact coefficient you get. (2) Do it with sympy for n = 7 on a small torus by explicit Hessian computation at beta = 2, 6 (numerical Hessian of -log pi at the aligned point, transverse directions only) and compare its inverse with the claimed kernel mode by mode. Expectation: agreement to the accuracy of the expansion; report the ratio per mode. DELIVERABLE in your unit worktree: probes/work/compute/pi-spin-wave-check/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/pi-spin-wave-check/<name>/run.py\""
+ },
+ {
+  "id": "C:event-lattice-geometry:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "event-lattice-geometry",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The geometry of the level planes. The level planes of Z^(d+1) in level order are the root lattice A_d (triangular for d = 2, face-centred cubic for d = 3), with plane coordinates the first d components. (1) Compute the Gram matrix G of the projected basis vectors e_j - (1,..,1)/(d+1), j = 1..d. (2) Show that the small-k metric M of 1 - |phi|^2 (phi = (1 + sum_j e^{ik_j})/(d+1)) satisfies M = c G for a constant c, i.e. the kernel is isotropic in the plane's Euclidean geometry: give c for d = 2, 3, 4. (3) Hence the equal-level kernel in 3+1 backward formation is c'/|x|_Euclid on the FCC plane: give c' exactly and confirm numerically at L = 64 (FFT) along three inequivalent FCC directions. (4) The drift in Euclidean terms: zero within the plane? (the drift (1,..,1)/(d+1) per level in coordinates is a displacement of the plane's origin, not a physical in-plane velocity: decide this carefully). Expectation: isotropy holds and the drift is a coordinate artefact; if the drift is physical, print HIT. DELIVERABLE in your unit worktree: probes/work/compute/event-lattice-geometry/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/event-lattice-geometry/<name>/run.py\""
+ },
+ {
+  "id": "C:event-lattice-geometry:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "event-lattice-geometry",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The geometry of the level planes. The level planes of Z^(d+1) in level order are the root lattice A_d (triangular for d = 2, face-centred cubic for d = 3), with plane coordinates the first d components. (1) Compute the Gram matrix G of the projected basis vectors e_j - (1,..,1)/(d+1), j = 1..d. (2) Show that the small-k metric M of 1 - |phi|^2 (phi = (1 + sum_j e^{ik_j})/(d+1)) satisfies M = c G for a constant c, i.e. the kernel is isotropic in the plane's Euclidean geometry: give c for d = 2, 3, 4. (3) Hence the equal-level kernel in 3+1 backward formation is c'/|x|_Euclid on the FCC plane: give c' exactly and confirm numerically at L = 64 (FFT) along three inequivalent FCC directions. (4) The drift in Euclidean terms: zero within the plane? (the drift (1,..,1)/(d+1) per level in coordinates is a displacement of the plane's origin, not a physical in-plane velocity: decide this carefully). Expectation: isotropy holds and the drift is a coordinate artefact; if the drift is physical, print HIT. DELIVERABLE in your unit worktree: probes/work/compute/event-lattice-geometry/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/event-lattice-geometry/<name>/run.py\""
+ },
+ {
+  "id": "C:lightcone-uniqueness-region:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-uniqueness-region",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): The no-memory region under light-cone formation. With n = 7 predecessors and block 27's sensitivity bound (PR #8171: total-variation distance between the sphere rule at fields V and V' is at most |V - V'|/(2 sqrt 3), so one predecessor's change moves the field by at most 2 beta): (1) derive the coupling bound: uniqueness and exponential forgetting when n beta/sqrt 3 < 1, i.e. beta < sqrt 3/7; re-prove the sensitivity bound numerically at 40 random field pairs; (2) the six-axis menu on the line (e^b, e^-b, 1): compute the exact one-predecessor total-variation sensitivity with 7 predecessors by enumeration over the other six (worst case), and the b below which 7 x sensitivity < 1; (3) compare with the executed thresholds in logs/probes/X:lightcone-threshold-fine/ when present. Expectation: the proved region ends well below the executed threshold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-uniqueness-region/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-uniqueness-region/<name>/run.py\""
+ },
+ {
+  "id": "C:lightcone-uniqueness-region:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "lightcone-uniqueness-region",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): The no-memory region under light-cone formation. With n = 7 predecessors and block 27's sensitivity bound (PR #8171: total-variation distance between the sphere rule at fields V and V' is at most |V - V'|/(2 sqrt 3), so one predecessor's change moves the field by at most 2 beta): (1) derive the coupling bound: uniqueness and exponential forgetting when n beta/sqrt 3 < 1, i.e. beta < sqrt 3/7; re-prove the sensitivity bound numerically at 40 random field pairs; (2) the six-axis menu on the line (e^b, e^-b, 1): compute the exact one-predecessor total-variation sensitivity with 7 predecessors by enumeration over the other six (worst case), and the b below which 7 x sensitivity < 1; (3) compare with the executed thresholds in logs/probes/X:lightcone-threshold-fine/ when present. Expectation: the proved region ends well below the executed threshold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-uniqueness-region/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-uniqueness-region/<name>/run.py\""
+ },
+ {
+  "id": "C:threshold-and-plateau-tables:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "threshold-and-plateau-tables",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Turn the 3+1 scan logs into tables. Read logs/probes/X:formation-3plus1-threshold-fine/, X:lightcone-threshold-fine/, X:formation-3plus1-seeds/, X:formation-by-dimension/, X:lightcone-by-dimension/ (.txt files: memory tables and SUMMARY lines). Produce: (1) plateau |m| against beta for each lattice (3 backward, 3s light-cone) and L, with seed scatter where available; (2) the bracket of the coupling where memory appears (largest beta with plateau < 0.1, smallest with plateau > 0.5 and not drifting over the last three table rows); (3) the dichotomy table by dimension (1, 2, 3, 4; backward and light-cone): memory yes/no/undecided; (4) the kernel normalization (lowk_ratio) against beta. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/threshold-and-plateau-tables/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/threshold-and-plateau-tables/<name>/run.py\""
+ },
+ {
+  "id": "C:threshold-and-plateau-tables:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "threshold-and-plateau-tables",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Turn the 3+1 scan logs into tables. Read logs/probes/X:formation-3plus1-threshold-fine/, X:lightcone-threshold-fine/, X:formation-3plus1-seeds/, X:formation-by-dimension/, X:lightcone-by-dimension/ (.txt files: memory tables and SUMMARY lines). Produce: (1) plateau |m| against beta for each lattice (3 backward, 3s light-cone) and L, with seed scatter where available; (2) the bracket of the coupling where memory appears (largest beta with plateau < 0.1, smallest with plateau > 0.5 and not drifting over the last three table rows); (3) the dichotomy table by dimension (1, 2, 3, 4; backward and light-cone): memory yes/no/undecided; (4) the kernel normalization (lowk_ratio) against beta. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/threshold-and-plateau-tables/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/threshold-and-plateau-tables/<name>/run.py\""
+ },
+ {
+  "id": "C:dispersion-under-positive-weights:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "dispersion-under-positive-weights",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): Can a formation law carry waves? In a linear gain-one formation model the record at level t+1 is a POSITIVE-weight average of records at earlier levels: theta_{t+1} = sum_{j>=0} sum_p w_{j,p} theta_{t-j}(x+p) + noise, w >= 0, sum w = 1. (1) For one level of memory (j = 0): the mode multiplier is phi(k), |phi| <= 1, and 1 - |phi| = O(k^2): diffusive. (2) For two levels (j = 0, 1) with weights a and 1 - a: solve lambda^2 - a phi(k) lambda - (1-a) psi(k) = 0 for symmetric sets; compute |lambda(k)| at small k for a in {0.25, 0.5, 0.75} and several predecessor sets: is there ANY positive-weight choice with |lambda(k)| = 1 - O(k^4) and arg lambda = c|k| (a propagating wave)? (3) Prove or find numerically the obstruction: with positive weights the root near 1 satisfies lambda = 1 - D k^2 + i v.k + ..., with D > 0 unless the weights are degenerate. Expectation: no waves; diffusion is forced by positivity. A counterexample is a HIT. DELIVERABLE in your unit worktree: probes/work/compute/dispersion-under-positive-weights/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/dispersion-under-positive-weights/<name>/run.py\""
+ },
+ {
+  "id": "C:dispersion-under-positive-weights:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "dispersion-under-positive-weights",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): Can a formation law carry waves? In a linear gain-one formation model the record at level t+1 is a POSITIVE-weight average of records at earlier levels: theta_{t+1} = sum_{j>=0} sum_p w_{j,p} theta_{t-j}(x+p) + noise, w >= 0, sum w = 1. (1) For one level of memory (j = 0): the mode multiplier is phi(k), |phi| <= 1, and 1 - |phi| = O(k^2): diffusive. (2) For two levels (j = 0, 1) with weights a and 1 - a: solve lambda^2 - a phi(k) lambda - (1-a) psi(k) = 0 for symmetric sets; compute |lambda(k)| at small k for a in {0.25, 0.5, 0.75} and several predecessor sets: is there ANY positive-weight choice with |lambda(k)| = 1 - O(k^4) and arg lambda = c|k| (a propagating wave)? (3) Prove or find numerically the obstruction: with positive weights the root near 1 satisfies lambda = 1 - D k^2 + i v.k + ..., with D > 0 unless the weights are degenerate. Expectation: no waves; diffusion is forced by positivity. A counterexample is a HIT. DELIVERABLE in your unit worktree: probes/work/compute/dispersion-under-positive-weights/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/dispersion-under-positive-weights/<name>/run.py\""
  }
 ]

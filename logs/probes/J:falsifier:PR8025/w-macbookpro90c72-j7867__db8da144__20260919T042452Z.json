@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8025",
+ "type": "judgment",
+ "lane": "local-observable-block35-20260907",
+ "worker": "w-macbookpro90c72-j7867",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8025/falsifier_ball_bound_beyond.py",
+ "seed": 91892,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db8da144",
+ "started_utc": "20260919T042452Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "geometry falsifier did not fire: |B_r|\u22643(2r+1)^3 for r=0..8 around an interior link on the L=8 cube (beyond small-r), no link meets >4 plaquettes, Theta_d(z)\u2264exp(ez-d) at extra (d,z)"
+ },
+ "review": "Geometry falsifier did not fire: |B_r|\u22643(2r+1)^3 for r=0..8, \u22644 plaquettes/link, Theta tail bound holds.",
+ "what": "PR #8025 ([physics-loop] local-observable block35 conditional-support): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/local-observable-block35-20260907; git show origin/codex/local-observable-block35-20260907:<note>. Create probes/work/pr8025/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8025/<script>.py\"",
+ "stdout_sha256": "3c29593b37e2bc08845542a315bcef7d307113fbbd967ea856950e98ca45b0fb",
+ "stdout_tail": "box L=8: 1944 links, 1728 faces, >4-meet=0\n  r=0: |B_r|=1 cap=3(2r+1)^3=3\n  r=1: |B_r|=13 cap=3(2r+1)^3=81\n  r=2: |B_r|=63 cap=3(2r+1)^3=375\n  r=3: |B_r|=173 cap=3(2r+1)^3=1029\n  r=4: |B_r|=361 cap=3(2r+1)^3=2187\n  r=5: |B_r|=620 cap=3(2r+1)^3=3993\n  r=6: |B_r|=924 cap=3(2r+1)^3=6591\n  r=7: |B_r|=1228 cap=3(2r+1)^3=10125\n  r=8: |B_r|=1493 cap=3(2r+1)^3=14739\nTheta_d(z)<=exp(e z-d) holds at d=0..11, z in {1/2,1,2} (partial sum n<40)\nSUMMARY: geometry falsifier did not fire: |B_r|\u22643(2r+1)^3 for r=0..8 around an interior link on the L=8 cube (beyond small-r), no link meets >4 plaquettes, Theta_d(z)\u2264exp(ez-d) at extra (d,z)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7867",
+  "at_utc": "20260919T042457Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+CHECK L1_bond: OK (one-bond swap identity)
+CHECK L2a_7_diff: OK (den-num 7-stencil = (p - q)**2*(p + q)*(p**2 - p*q + q**2)*(p**2 + p*q + q**2))
+CHECK L2b_6_diff: OK
+CHECK L2c_sign: OK (den>=num iff p>=q, independent of r)
+CHECK L2d_312_7: OK (rho7(3,1,2)=281399112371155271/63844929217529296875)
+CHECK L2e_312_6: OK (rho6(3,1,2)=250058907189001/14357588953446649)
+CHECK L2f_p_eq_q: OK (p=q => rho=1 (independent of r))
+CHECK L2g_local_max: OK (pi(one flip)/pi(aligned) = rho < 1 iff p>q)
+CHECK L3_Z: OK
+SUMMARY: PARTIAL for six-axis light-cone pi ~ prod Z_x, a single flipped spin has exact ratio (num/den)^n with n=7 (self included) or 6 (not); den-num=(p-q)(p^{n-1}-q^{n-1}), so the aligned configuration is a strict local maximum of pi iff p>q, independent of r; at (3,1,2) both ratios are <1. Memory of an aligned start is at least a local trap of pi. (9/9 checks passed)
+HIT: one-flip pi ratio is [(p^{n-1} q + p q^{n-1} + 4 r^n)/(p^n + q^n + 4 r^n)]^n for n=6,7; aligned is a strict local max of pi iff p>q

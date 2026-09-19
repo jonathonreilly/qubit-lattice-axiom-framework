@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-sixaxis-order:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j7b47",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/lightcone-sixaxis-order/w-macbookpro90c72-j7b47/check.py",
+ "seed": 82177,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "72cf4da6",
+ "started_utc": "20260919T014257Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL for six-axis light-cone pi ~ prod Z_x, a single flipped spin has exact ratio (num/den)^n with n=7 (self included) or 6 (not); den-num=(p-q)(p^{n-1}-q^{n-1}), so the aligned configuration is a strict local maximum of pi iff p>q, independent of r; at (3,1,2) both ratios are <1. Memory of an aligned start is at least a local trap of pi. (9/9 checks passed)"
+ },
+ "review": "One-flip pi ratio is exact [(p^{n-1}q+p q^{n-1}+4 r^n)/(p^n+q^n+4 r^n)]^n for n=6,7; aligned is a strict local max of pi iff p>q, independent of r (9/9 exact checks).",
+ "what": "DERIVATION, independent attempt 4 of 4: The ordered side of the six-axis law under light-cone formation, by equilibrium methods. Under backward formation the six-axis law's ordered phase needed a Toom-type stability proof with a threshold thousands of times above the executed one (blocks 25, 30: PRs #8168, #8174). Under light-cone formation (record at (t+1, x) from (t, x) and (t, x +- e_j)) the symmetric majority rule is NOT an eroder, so that route is closed; but if the automaton is reversible with respect to pi(s) prop. to prod_x Z_x(s) (Z_x the normalizer of the rule at x), the ordered phase is a statement about a Gibbs law on Z^3 and a Peierls or chessboard argument applies. TASK: (a) settle reversibility for six-axis weights (p, q, r) (it holds when the weight is a symmetric function W(s, s') and the neighbourhood is symmetric: check whether the site itself must be included); (b) write pi's interaction explicitly and prove at least two (six) stationary laws for p large by a contour argument, with the threshold you can prove on the line (p,1,2); (c) compare with the static law's threshold (block 17, PR #8151, whose constant is under repair) and the executed thresholds; (d) say what 'memory of the initial plane' means for a reversible automaton (the six laws are stationary; convergence to them from an aligned start). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-sixaxis-order/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-sixaxis-order/<name>/check.py\"",
+ "stdout_sha256": "68f28a56b1ca0e613763bf0831e3d3d6e4bde85a80cb2fbe1bfd5eb2dba1b3ee",
+ "stdout_tail": "CHECK L1_bond: OK (one-bond swap identity)\nCHECK L2a_7_diff: OK (den-num 7-stencil = (p - q)**2*(p + q)*(p**2 - p*q + q**2)*(p**2 + p*q + q**2))\nCHECK L2b_6_diff: OK\nCHECK L2c_sign: OK (den>=num iff p>=q, independent of r)\nCHECK L2d_312_7: OK (rho7(3,1,2)=281399112371155271/63844929217529296875)\nCHECK L2e_312_6: OK (rho6(3,1,2)=250058907189001/14357588953446649)\nCHECK L2f_p_eq_q: OK (p=q => rho=1 (independent of r))\nCHECK L2g_local_max: OK (pi(one flip)/pi(aligned) = rho < 1 iff p>q)\nCHECK L3_Z: OK\nSUMMARY: PARTIAL for six-axis light-cone pi ~ prod Z_x, a single flipped spin has exact ratio (num/den)^n with n=7 (self included) or 6 (not); den-num=(p-q)(p^{n-1}-q^{n-1}), so the aligned configuration is a strict local maximum of pi iff p>q, independent of r; at (3,1,2) both ratios are <1. Memory of an aligned start is at least a local trap of pi. (9/9 checks passed)\nHIT: one-flip pi ratio is [(p^{n-1} q + p q^{n-1} + 4 r^n)/(p^n + q^n + 4 r^n)]^n for n=6,7; aligned is a strict local max of pi iff p>q\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7b47",
+  "at_utc": "20260919T014312Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact one-flip pi ratio; aligned is a strict local max iff p>q.",
+  "by": "w-macbookpro90c72-j7b47",
+  "at_utc": "20260919T014312Z"
+ }
+}

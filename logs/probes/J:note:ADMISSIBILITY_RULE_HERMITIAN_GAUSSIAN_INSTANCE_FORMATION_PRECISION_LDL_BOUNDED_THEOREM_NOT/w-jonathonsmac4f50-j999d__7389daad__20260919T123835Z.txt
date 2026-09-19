@@ -1,0 +1,55 @@
+==============================================================================
+K1  all 720 orders of 2x3 (and all orders of the path and plaquette)
+  1x3 declared: 6 orders, recorded-set classes 4, distinct laws 4; failures: sequential form vs formula 0, det vs prod P_kk 0, law not constant on a class 0
+  1x3 real    : 6 orders, recorded-set classes 4, distinct laws 4; failures: sequential form vs formula 0, det vs prod P_kk 0, law not constant on a class 0
+  2x2 declared: 24 orders, recorded-set classes 14, distinct laws 14; failures: sequential form vs formula 0, det vs prod P_kk 0, law not constant on a class 0
+  2x2 real    : 24 orders, recorded-set classes 14, distinct laws 14; failures: sequential form vs formula 0, det vs prod P_kk 0, law not constant on a class 0
+  2x3 declared: 720 orders, recorded-set classes 98, distinct laws 98; failures: sequential form vs formula 0, det vs prod P_kk 0, law not constant on a class 0
+  2x3 real    : 720 orders, recorded-set classes 98, distinct laws 98; failures: sequential form vs formula 0, det vs prod P_kk 0, law not constant on a class 0
+SUMMARY: K1 all orders, exact Q(i): 1x3 declared: classes 4, distinct laws 4, failures 0; 1x3 real: classes 4, distinct laws 4, failures 0; 2x2 declared: classes 14, distinct laws 14, failures 0; 2x2 real: classes 14, distinct laws 14, failures 0; 2x3 declared: classes 98, distinct laws 98, failures 0; 2x3 real: classes 98, distinct laws 98, failures 0
+==============================================================================
+K2  G3 on every acyclic orientation (= recorded-set class)
+  1x3 declared: acyclic orientations 4 (1 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  1x3 real    : acyclic orientations 4 (1 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  2x2 declared: acyclic orientations 14 (14 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  2x2 real    : acyclic orientations 14 (14 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  2x3 declared: acyclic orientations 98 (98 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  2x3 real    : acyclic orientations 98 (98 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  1x6 declared: acyclic orientations 32 (26 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  1x6 real    : acyclic orientations 32 (26 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  2x4 declared: acyclic orientations 686 (686 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  2x4 real    : acyclic orientations 686 (686 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  3x3 declared: acyclic orientations 2398 (2398 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  3x3 real    : acyclic orientations 2398 (2398 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0; sequential form != formula: 0
+  3x4 declared: acyclic orientations 58670 (58670 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0 (formula only)
+  3x4 real    : acyclic orientations 58670 (58670 with a site recording two); P_sigma = P for none: True; support changed with all |A|<=1: 0; support kept with a site recording two: 0; fill-in off distance two: 0 (formula only)
+SUMMARY: K2 acyclic-orientation census (G3): 1x3 declared: 4 classes (1 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 1x3 real: 4 classes (1 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x2 declared: 14 classes (14 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x2 real: 14 classes (14 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x3 declared: 98 classes (98 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x3 real: 98 classes (98 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 1x6 declared: 32 classes (26 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 1x6 real: 32 classes (26 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x4 declared: 686 classes (686 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x4 real: 686 classes (686 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 3x3 declared: 2398 classes (2398 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 3x3 real: 2398 classes (2398 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 3x4 declared: 58670 classes (58670 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 3x4 real: 58670 classes (58670 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0
+==============================================================================
+K3  literal numbers of the note
+  path end-to-end corrections [5/48, 5/48, 0] (note [5/48, 5/48, 0])
+  path endpoints-first: fill-in at the end pair (-1/16+1/12i) (nonzero)
+  2x3 monotone corrections [5/24, 5/24, 5/48, 5/48, 5/48, 0]; fill-in pairs [((0, 1), (1, 0)), ((0, 2), (1, 1))]
+  formation row-1 diagonal [149/48, 149/48, 3] (note 149/48, 149/48, 3)
+  orders with the monotone recorded sets: 5 (note 5); snake equal: False, mirror equal: False
+  C6 plaquette witness: sites recording two = 2, support kept = True, fill (a,d) = 0
+  C6 K3 witness: P_sigma(0,1) = 7/12 vs P(0,1) = 1/2 (fill-in on an edge)
+  C6 lost-entry witness: P_sigma(0,1) = 0 (P(0,1) = 1/4)
+  C7: P_sigma = [[5/2, -1], [-1, 2]]; static cov [[2/3, 1/3], [1/3, 2/3]]; records-only cov [[1/2, 1/4], [1/4, 5/8]]
+  E3: herm(Q^-1) = [[1/2, 0], [0, 1/2]], (herm Q)^-1 = [[1, 0], [0, 1]]
+SUMMARY: K3 literals: path [5/48,5/48,0], 2x3 corrections [5/24, 5/24, 5/48, 5/48, 5/48, 0], fill-in [((0, 1), (1, 0)), ((0, 2), (1, 1))], row-1 diagonal [149/48, 149/48, 3], 5 monotone orders one law, snake/mirror differ, C6 witnesses and C7/E3 reproduce: True
+==============================================================================
+K4  Hadamard (G4) and the read-slice covariances (G5)
+  det P / prod P_kk on 12 (window, instance) cases: max 0.944444 (< 1), all real positive
+  2x3 declared last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['149/432', '5569/15552', '356941/995328']
+  2x3 real     last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['37/108', '343/972', '1831/5184']
+  2x4 declared last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['149/432', '5569/15552', '356941/995328', '28913971/80621568']
+  2x4 real     last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['37/108', '343/972', '1831/5184', '222473/629856']
+  3x3 declared last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['21481/62208', '356941/995328', '12869401/35831808']
+  3x3 real     last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['1333/3888', '1831/5184', '49483/139968']
+SUMMARY: K4 Hadamard det P/prod P_kk max 0.944444 on 12 cases; read slices pairwise different: 2x3 declared: True; 2x3 real: True; 2x4 declared: True; 2x4 real: True; 3x3 declared: True; 3x3 real: True
+==============================================================================
+K5  sampler of the formation law (monotone order of 2x3, declared instance)
+  N=2000000: max |emp - P_sigma^-1| = 4.59e-04; max |emp - P^-1| = 3.19e-02; max |P_sigma^-1 - P^-1| = 3.17e-02; statistical scale ~ 2.5e-04
+SUMMARY: K5 sampler 2e6 draws: |emp - P_sigma^-1| 4.6e-04, |emp - P^-1| 3.2e-02 (gap 3.2e-02, scale 3e-04)
+==============================================================================
+SUMMARY: hits=0; runtime 33s

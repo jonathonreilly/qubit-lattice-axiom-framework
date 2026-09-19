@@ -1,0 +1,39 @@
+{
+ "task": "J:note:ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOT",
+ "type": "judgment",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-j999d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_IN/orientation_census_exact_qi_and_sampler.py",
+ "seed": 21515,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7389daad",
+ "started_utc": "20260919T123835Z",
+ "elapsed_s": 32.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "K1 all orders, exact Q(i): 1x3 declared: classes 4, distinct laws 4, failures 0; 1x3 real: classes 4, distinct laws 4, failures 0; 2x2 declared: classes 14, distinct laws 14, failures 0; 2x2 real: classes 14, distinct laws 14, failures 0; 2x3 declared: classes 98, distinct laws 98, failures 0; 2x3 real: classes 98, distinct laws 98, failures 0",
+   "K2 acyclic-orientation census (G3): 1x3 declared: 4 classes (1 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 1x3 real: 4 classes (1 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x2 declared: 14 classes (14 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x2 real: 14 classes (14 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x3 declared: 98 classes (98 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x3 real: 98 classes (98 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 1x6 declared: 32 classes (26 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 1x6 real: 32 classes (26 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x4 declared: 686 classes (686 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 2x4 real: 686 classes (686 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 3x3 declared: 2398 classes (2398 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 3x3 real: 2398 classes (2398 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 3x4 declared: 58670 classes (58670 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0; 3x4 real: 58670 classes (58670 with a site recording two), never P True, support-kept-with-two 0, fill-off-distance-2 0",
+   "K3 literals: path [5/48,5/48,0], 2x3 corrections [5/24, 5/24, 5/48, 5/48, 5/48, 0], fill-in [((0, 1), (1, 0)), ((0, 2), (1, 1))], row-1 diagonal [149/48, 149/48, 3], 5 monotone orders one law, snake/mirror differ, C6 witnesses and C7/E3 reproduce: True",
+   "K4 Hadamard det P/prod P_kk max 0.944444 on 12 cases; read slices pairwise different: 2x3 declared: True; 2x3 real: True; 2x4 declared: True; 2x4 real: True; 3x3 declared: True; 3x3 real: True",
+   "K5 sampler 2e6 draws: |emp - P_sigma^-1| 4.6e-04, |emp - P^-1| 3.2e-02 (gap 3.2e-02, scale 3e-04)",
+   "hits=0; runtime 33s"
+  ]
+ },
+ "review": "Output matches the task: with a self-written exact Q(i) class, the literal conditional-product quadratic form equals the L^H D L / G3 formula with det = prod P_kk and one law per recorded-set class on all 720 orders of 2x3 (98 classes, 98 distinct laws; plaquette 14 as stated); on every acyclic orientation of 1x3, 2x2, 2x3, 1x6, 2x4, 3x3 (exact) and 3x4 (58670, formula), both declared instances give P_sigma != P, support kept whenever all |A_k| <= 1, nonzero fill-in whenever a site records two, and fill-in only at distance two; the note's literals (5/48 corrections, [5/24,5/24,5/48,5/48,5/48,0], fill pairs ((0,1),(1,0)), ((0,2),(1,1)), 149/48, 5 monotone orders, C6, C7, E3) reproduce; Hadamard det P/prod P_kk <= 0.9444 on 12 cases; the three read-slice covariances differ on 2x3, 2x4 and 3x3; 2e6 sequential draws match P_sigma^-1 to 4.6e-4 against a 3.2e-2 gap to P^-1; no falsifier fired.",
+ "what": "Note on main: docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_IN/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_IN/<script>.py\"",
+ "stdout_sha256": "1c1d71032f83397def166c20d50cadc2c2fe2c078e8373bf9954607077a6a6ca",
+ "stdout_tail": "False, pinned==formation False; formation diag ['37/108', '343/972', '1831/5184']\n  2x4 declared last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['149/432', '5569/15552', '356941/995328', '28913971/80621568']\n  2x4 real     last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['37/108', '343/972', '1831/5184', '222473/629856']\n  3x3 declared last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['21481/62208', '356941/995328', '12869401/35831808']\n  3x3 real     last-row read slice: static==pinned False, static==formation False, pinned==formation False; formation diag ['1333/3888', '1831/5184', '49483/139968']\nSUMMARY: K4 Hadamard det P/prod P_kk max 0.944444 on 12 cases; read slices pairwise different: 2x3 declared: True; 2x3 real: True; 2x4 declared: True; 2x4 real: True; 3x3 declared: True; 3x3 real: True\n==============================================================================\nK5  sampler of the formation law (monotone order of 2x3, declared instance)\n  N=2000000: max |emp - P_sigma^-1| = 4.59e-04; max |emp - P^-1| = 3.19e-02; max |P_sigma^-1 - P^-1| = 3.17e-02; statistical scale ~ 2.5e-04\nSUMMARY: K5 sampler 2e6 draws: |emp - P_sigma^-1| 4.6e-04, |emp - P^-1| 3.2e-02 (gap 3.2e-02, scale 3e-04)\n==============================================================================\nSUMMARY: hits=0; runtime 33s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j999d",
+  "at_utc": "20260919T123918Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-order-independence-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jacb3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-order-independence/referee_w-jonathonsmac4f50-jacb3/check.py",
+ "seed": 89996,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d39f6f3e",
+ "started_utc": "20260919T035316Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step; the smallest example and the event-lattice reading are stated correctly"
+ },
+ "review": "Order-independence a4 reproduces with exact full joint laws (all linear extensions equal on the V, diamond, five-site DAG and a 3x3 level window; 2-site edge TV 0; child-first V TV = 1/72 with P(all +x) 1/104 vs 1/96), so HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-order-independence:a4/; its files are probes/work/derive/formation-order-independence/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-order-independence/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "541dbcfb7e576693795c9af223d710386fa74184c83876d6762d82f6b87decc4",
+ "stdout_tail": "PASS P1: V: 2 extensions; diamond: 2 extensions; five: 5 extensions - identical full joint laws\nPASS P2: 2-site edge: TV = 0, P(equal) = 1/4; V causal vs child-first: TV = 1/72, P(all +x) 1/104 vs 1/96\nPASS P3: 3x3 level-ordered window: 60 random linear extensions give the identical 512-cell law\nHIT: confirmed - formation-order-independence a4: on a finite predecessor DAG every linear extension gives the same joint law prod_v r(s_v | s_parents) (full laws on the V, the diamond, a five-site DAG and a 3x3 level window, covariant and non-covariant kernels); the 2-site edge is order-free for the symmetric rule (TV 0, P(equal) = 1/4) and the smallest violation is the 3-site V formed child-first, TV = 1/72 at (3,1,2) (P(all +x) 1/104 vs 1/96); recomputed independently\nSUMMARY: confirmed - no failing step; the smallest example and the event-lattice reading are stated correctly\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jacb3",
+  "at_utc": "20260919T035316Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok formation-order-independence a4): on a finite predecessor DAG the formation law is the product of kernels for every linear extension; the 2-site edge is order-free for symmetric weights and the smallest violation is the 3-site V formed child-first (TV = 1/72 at (3,1,2)).",
+  "by": "w-jonathonsmac4f50-jacb3",
+  "at_utc": "20260919T035316Z"
+ }
+}

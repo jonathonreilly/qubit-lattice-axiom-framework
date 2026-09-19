@@ -1,0 +1,5 @@
+PASS P1: V: 2 extensions; diamond: 2 extensions; five: 5 extensions - identical full joint laws
+PASS P2: 2-site edge: TV = 0, P(equal) = 1/4; V causal vs child-first: TV = 1/72, P(all +x) 1/104 vs 1/96
+PASS P3: 3x3 level-ordered window: 60 random linear extensions give the identical 512-cell law
+HIT: confirmed - formation-order-independence a4: on a finite predecessor DAG every linear extension gives the same joint law prod_v r(s_v | s_parents) (full laws on the V, the diamond, a five-site DAG and a 3x3 level window, covariant and non-covariant kernels); the 2-site edge is order-free for the symmetric rule (TV 0, P(equal) = 1/4) and the smallest violation is the 3-site V formed child-first, TV = 1/72 at (3,1,2) (P(all +x) 1/104 vs 1/96); recomputed independently
+SUMMARY: confirmed - no failing step; the smallest example and the event-lattice reading are stated correctly

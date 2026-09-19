@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8141",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block10-record",
+ "worker": "w-macbookpro90c72-je3d5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8141/quantifier_small_windows.py",
+ "seed": 87936,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8bb3d8fc",
+ "started_utc": "20260919T031856Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 6^n configuration counts hold for every window of n=1..4 sites"
+ },
+ "review": "6^n config counts hold for n=1..4; no quantifier-scope defect",
+ "what": "PR #8141 ([physics-loop] admissibility-induced-law block10 \u2014 bounded_t): attack ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915; git show origin/physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915:<note>. Create probes/work/pr8141/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8141/<script>.py\"",
+ "stdout_sha256": "3cdc0e3f7f40c42aa86b9ca045564369a7408abfea3d9ce1bedf8f4d594e421f",
+ "stdout_tail": "n=1 configs=6\nn=2 configs=36\nn=3 configs=216\nn=4 configs=1296\nSUMMARY: pattern has no purchase on this note \u2014 6^n configuration counts hold for every window of n=1..4 sites\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je3d5",
+  "at_utc": "20260919T031856Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

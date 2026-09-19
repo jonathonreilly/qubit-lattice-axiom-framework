@@ -1,0 +1,5 @@
+n=1 configs=6
+n=2 configs=36
+n=3 configs=216
+n=4 configs=1296
+SUMMARY: pattern has no purchase on this note — 6^n configuration counts hold for every window of n=1..4 sites

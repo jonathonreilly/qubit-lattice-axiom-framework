@@ -1,0 +1,15 @@
+E(k)=6(1-φ(k)) identically
+3G(0)=(1/2) Σ P because G=(1/6)Σ P
+closed walks n=0: 1
+  P_0 form=1 count/6^0=1
+closed walks n=1: 0
+closed walks n=2: 6
+  P_2 form=1/6 count/6^2=1/6
+closed walks n=3: 0
+closed walks n=4: 90
+  P_4 form=5/72 count/6^4=5/72
+L=2 mean φ^0=1  P_0=1 (finite-L, not the integral)
+L=2 mean φ^2=1/3  P_2=1/6 (finite-L, not the integral)
+L=2 mean φ^4=7/27  P_4=5/72 (finite-L, not the integral)
+(1-cos) - (u^2/2 - u^4/24) series to u^7: u**6/720
+SUMMARY: pattern (f) NORMALIZATION — E=6(1-φ), 3G(0)=(1/2)Σ P from G=(1/6)Σ P, P_{2n}=closed/6^{2n} matching C(2n,n)Σ C(n,a)^2 C(2(n-a),n-a) at n=0,1,2 (walks 1,6,90), odd closed=0; attack does not fire

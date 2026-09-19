@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8156",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "w-macbookpro90c72-jca95",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8156/normalization_two_pi_half.py",
+ "seed": 90355,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab30151c",
+ "started_utc": "20260919T035915Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (f) NORMALIZATION \u2014 E=6(1-\u03c6), 3G(0)=(1/2)\u03a3 P from G=(1/6)\u03a3 P, P_{2n}=closed/6^{2n} matching C(2n,n)\u03a3 C(n,a)^2 C(2(n-a),n-a) at n=0,1,2 (walks 1,6,90), odd closed=0; attack does not fire"
+ },
+ "review": "pattern (f) does not fire: E=6(1-phi) identically, 3G(0)=(1/2)Sigma P from G=(1/6)Sigma P, and P_{2n} matches closed-walk/6^{2n} at n=0,1,2 (1,6,90)",
+ "what": "PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915; git show origin/physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915:<note>. Create probes/work/pr8156/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8156/<script>.py\"",
+ "stdout_sha256": "29c48d84afe35cd78bd2ac5f424c67e8e0351b641305c2009c45eb691f1848f3",
+ "stdout_tail": "E(k)=6(1-\u03c6(k)) identically\n3G(0)=(1/2) \u03a3 P because G=(1/6)\u03a3 P\nclosed walks n=0: 1\n  P_0 form=1 count/6^0=1\nclosed walks n=1: 0\nclosed walks n=2: 6\n  P_2 form=1/6 count/6^2=1/6\nclosed walks n=3: 0\nclosed walks n=4: 90\n  P_4 form=5/72 count/6^4=5/72\nL=2 mean \u03c6^0=1  P_0=1 (finite-L, not the integral)\nL=2 mean \u03c6^2=1/3  P_2=1/6 (finite-L, not the integral)\nL=2 mean \u03c6^4=7/27  P_4=5/72 (finite-L, not the integral)\n(1-cos) - (u^2/2 - u^4/24) series to u^7: u**6/720\nSUMMARY: pattern (f) NORMALIZATION \u2014 E=6(1-\u03c6), 3G(0)=(1/2)\u03a3 P from G=(1/6)\u03a3 P, P_{2n}=closed/6^{2n} matching C(2n,n)\u03a3 C(n,a)^2 C(2(n-a),n-a) at n=0,1,2 (walks 1,6,90), odd closed=0; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jca95",
+  "at_utc": "20260919T035915Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

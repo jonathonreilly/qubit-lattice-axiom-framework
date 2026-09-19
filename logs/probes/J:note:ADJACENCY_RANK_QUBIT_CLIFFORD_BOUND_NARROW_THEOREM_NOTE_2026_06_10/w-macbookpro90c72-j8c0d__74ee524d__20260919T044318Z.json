@@ -1,0 +1,32 @@
+{
+ "task": "J:note:ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026_06_10",
+ "type": "judgment",
+ "lane": "adjacency",
+ "worker": "w-macbookpro90c72-j8c0d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/note_ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARR/t1_no_fourth_pauli.py",
+ "seed": 92998,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "74ee524d",
+ "started_utc": "20260919T044318Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "T1 no 4th anticommuting element of M_2(C): Pauli frame anticommutes, the 8-real-parameter map to three anticommutators has full rank 8; hostile (s1+s2)/sqrt2 does not anticommute with s1; falsifier does not fire"
+ },
+ "review": "T1: Pauli frame anticommutes; the 8-real-parameter anticommutator map has full rank 8; no 4th element. Falsifier does not fire.",
+ "what": "Note on main: docs/ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026-06-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARR/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARR/<script>.py\"",
+ "stdout_sha256": "aebe8d312ce5b57e6fac4af763f371b5034f2fb7073ba339b403904833777143",
+ "stdout_tail": "{s1,s2} maxabs=0.0\n{s1,s3} maxabs=0.0\n{s2,s3} maxabs=0.0\nmap R^8->R^12 singular values [3.46410162 3.46410162 2.         2.         2.         2.\n 2.         2.        ]\nrank ~ 8 / 8\nhostile (s1+s2)/sqrt2: {g,s1} maxabs=1.414213562373095\nSUMMARY: T1 no 4th anticommuting element of M_2(C): Pauli frame anticommutes, the 8-real-parameter map to three anticommutators has full rank 8; hostile (s1+s2)/sqrt2 does not anticommute with s1; falsifier does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8c0d",
+  "at_utc": "20260919T044319Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

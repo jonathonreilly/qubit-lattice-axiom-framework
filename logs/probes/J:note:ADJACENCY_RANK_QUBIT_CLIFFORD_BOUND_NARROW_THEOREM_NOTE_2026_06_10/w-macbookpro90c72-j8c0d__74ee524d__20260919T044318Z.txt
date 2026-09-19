@@ -1,0 +1,8 @@
+{s1,s2} maxabs=0.0
+{s1,s3} maxabs=0.0
+{s2,s3} maxabs=0.0
+map R^8->R^12 singular values [3.46410162 3.46410162 2.         2.         2.         2.
+ 2.         2.        ]
+rank ~ 8 / 8
+hostile (s1+s2)/sqrt2: {g,s1} maxabs=1.414213562373095
+SUMMARY: T1 no 4th anticommuting element of M_2(C): Pauli frame anticommutes, the 8-real-parameter map to three anticommutators has full rank 8; hostile (s1+s2)/sqrt2 does not anticommute with s1; falsifier does not fire

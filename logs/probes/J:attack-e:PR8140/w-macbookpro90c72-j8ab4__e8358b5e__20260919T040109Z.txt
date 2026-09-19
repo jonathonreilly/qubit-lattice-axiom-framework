@@ -1,0 +1,8 @@
+cube |V|=8 |E|=12
+4R+4 at R=0: 4
+4R+4 at R=1: 8
+4R+4 at R=2: 12
+4R+4 at R=3: 16
+4R+4 at R=4: 20
+4R+4 at R=5: 24
+SUMMARY: pattern has no purchase on this note — cube census and 4R+4 cancellation are exact identities, not sampled never/always observations

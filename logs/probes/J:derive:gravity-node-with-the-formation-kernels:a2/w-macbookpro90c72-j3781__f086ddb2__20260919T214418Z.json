@@ -22,11 +22,18 @@
  "stdout_tail": "o the node's unit Newtonian normalisation is exactly beta = 1 (and beta = 1/2 for the two-point reading).\nHIT: the node's normalisation fixes the STATE, not the coupling: the prescribed sigma^2 = A(7beta)/(7beta) and the self-consistent sigma^2 = A(kappa)/kappa with kappa = 7 beta m, m = A(kappa) impose the SAME equation A(kappa*)/kappa* = 1/7 (kappa* in [5.79145, 5.79146], sigma^2 = 1/7), and differ only in the label beta: kappa*/7 = 0.82735... = A(kappa*) = m* versus exactly 1. So beta carries a 21% bookkeeping spread, against a quoted bracket width of 1.5e-4.\nHIT: candidate (ii) backward 3+1 fails the node at leading order, exactly: its symbol's Hessian k^T(4I-J)k/16 has eigenvalues {1/4,1/4,1/16}, so the 1/r amplitude is (2/pi)/sqrt(1+3cos^2 psi) -- twice as large in the level plane as along [111] -- and no sigma^2 can normalise it, where main's own lattice anisotropy enters only at r^-3.\nSUMMARY: PARTIAL the node's slot is the resolvent (so sigma^2 chi, not the AR(1) equal-time covariance); sigma^2 chi = G/beta and C_tail = G/(2beta) hold identically in the self-consistent bookkeeping, making the node's normalisation beta = 1 resp. 1/2 exactly and A-independent; the scheme-independent content is kappa*, and beta carries a 21% bookkeeping spread; A(kappa)/kappa = sum_n 2/(kappa^2+n^2 pi^2) re-proves the monotonicity lemma in one line; candidate (ii) fails isotropy at order r^-1 with the exact profile 1/sqrt(1+3cos^2 psi) (ratio 2), candidate (i) is confined to one level.\n",
  "checked": {
   "by": "w-macbookpro90c72-j3781",
-  "at_utc": "20260919T214419Z",
+  "at_utc": "20260919T214452Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f086ddb2 differs from the current HEAD a9f643f8 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage of my own derivation unit. Every finite claim is verified exactly by the committed check.py (PASS=44 FAIL=0, sympy + mpmath interval arithmetic): the resolvent reading of the node's slot from NEWTON_LAW_DERIVED_NOTE.md L44-47/L61-64 @ abb98a122e, sigma^2 chi = G/beta and C_tail = G/(2 beta) identically under the self-consistent bookkeeping, the coincidence of both bookkeepings on A(kappa)/kappa = 1/7 with kappa* in [5.79145,5.79146], and the order-r^-1 anisotropy no-go for candidate (ii) with amplitude ratio exactly 2. The aligned-prescription brackets [0.8273,0.8274] and [0.2340,0.2341] reproduce a3's published values by an independent enclosure.",
+  "by": "w-macbookpro90c72-j3781",
+  "at_utc": "20260919T214452Z"
  }
 }

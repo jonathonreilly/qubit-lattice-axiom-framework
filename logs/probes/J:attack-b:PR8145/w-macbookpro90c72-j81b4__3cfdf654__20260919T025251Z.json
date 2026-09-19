@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8145",
+ "type": "judgment",
+ "lane": "clock-history-field-20260915",
+ "worker": "w-macbookpro90c72-j81b4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8145/same_test_N2_vs_N3_fibers.py",
+ "seed": 86371,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3cfdf654",
+ "started_utc": "20260919T025251Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the same N^{12} test on the 12-edge cube separates N=2 (4096) from N=3 (531441) as stated"
+ },
+ "review": "N^12 on 12 edges separates 2^12=4096 from 3^12=531441; no defect",
+ "what": "PR #8145 ([physics-loop] clock-history-field: bounded_theorem, bounded): attack FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/clock-history-field-20260915; git show origin/physics-loop/clock-history-field-20260915:<note>. Create probes/work/pr8145/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8145/<script>.py\"",
+ "stdout_sha256": "9a8d14d40024343de8d5e1929f6cfdb70e123c12637c948b6f7607d8cbbb53ae",
+ "stdout_tail": "2^12=4096 3^12=531441\nSUMMARY: pattern has no purchase on this note \u2014 the same N^{12} test on the 12-edge cube separates N=2 (4096) from N=3 (531441) as stated\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j81b4",
+  "at_utc": "20260919T025251Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,2 @@
+2^12=4096 3^12=531441
+SUMMARY: pattern has no purchase on this note — the same N^{12} test on the 12-edge cube separates N=2 (4096) from N=3 (531441) as stated

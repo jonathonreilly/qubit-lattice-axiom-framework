@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_MINIMAL_PHYSICAL_NEIGHBOR_CONSERVATIVE_GAUGE_DYNAMICS_UNIQUELY_MAXWELL_BOUNDED_THEOREM_",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j2062",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_MINIMAL_PHYSICAL_NEIGHBOR_CONSERVATIV/bruteforce_generator_classification.py",
+ "seed": 17072,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "be325071",
+ "started_utc": "20260919T112432Z",
+ "elapsed_s": 5.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "a brute-force classification of every real local linear generator on the Lp = 4 and 6 role lattices under the M1-M6 equations has a one-dimensional solution space at each of three energy-weight pairs, equal to the curl coupling with reverse block -(w_B/w_E) q C^T and no onsite term; one-face gauge stencils with entries in -4..4 are all multiples of (1,1,-1,-1); no same-role edge or face pair exists up to Lp = 10; the curl symbol has singular values (|s|, |s|, 0) identically and at every nonzero momentum to coarse L = 12; on the 384-variable Lp = 8 block Euler fails norm preservation by 4.00e-02 while Cayley is orthogonal with every row spread over at least 319 sites; no falsifier fires"
+ },
+ "review": "Read the script and its output: a brute-force classification of every real local linear generator on the Lp = 4 (240 coefficients) and Lp = 6 (810 coefficients) role lattices under translation-by-2, proper-rotation, gauge, magnetic-Gauss and energy equations has a one-dimensional solution space for each of three energy-weight pairs, equal (one sign per face row, zero off the pattern) to the curl coupling with reverse block -(w_B/w_E) q C^T and no onsite term; gauge-invariant one-face stencils with entries -4..4 are all multiples of (1,1,-1,-1); no same-role edge or face pair exists up to Lp = 10; [s]x^T[s]x = |s|^2 I - s s^T exactly and the curl has singular values (|s|,|s|,0) at every nonzero momentum to coarse L = 12; on the 384-variable Lp = 8 block Euler has norm defect 0.04 and Cayley is orthogonal with every row spread over at least 319 sites; no falsifier fires.",
+ "what": "Note on main: docs/U1_MINIMAL_PHYSICAL_NEIGHBOR_CONSERVATIVE_GAUGE_DYNAMICS_UNIQUELY_MAXWELL_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_MINIMAL_PHYSICAL_NEIGHBOR_CONSERVATIV/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_MINIMAL_PHYSICAL_NEIGHBOR_CONSERVATIV/<script>.py\"",
+ "stdout_sha256": "c26d2e5cde9ee37e938d69c90a9af347724769998d103628ad1deb959470d197",
+ "stdout_tail": "= 6: 810 unknown local coefficients, 4698 symmetry/gauge/Gauss equations; solution dimension with energy weights [(1.0, 1.0), (2.0, 0.5), (0.3, 3.0)]: [1, 1, 1]; the solution is a curl multiple (one sign per face row, zero off the curl pattern) with reverse block -(w_B/w_E) q C^T and no onsite terms: [np.True_, np.True_, np.True_]\n2. one-face gauge stencils with entries -4..4: every solution is a multiple of (1,1,-1,-1): True (9 solutions)\n3. same-role nearest-neighbour pairs among edge or face roles: {4: 0, 6: 0, 8: 0, 10: 0}\n4. [s]x^T [s]x = |s|^2 I - s s^T exactly: True; singular values (|s|, |s|, 0) at every nonzero momentum of coarse L = 3..12: True\n5. Lp = 8 block (384 variables): Euler norm defect 4.000e-02 > 0; Cayley orthogonality 5.2e-15; smallest Cayley row support 319 > 10\nSUMMARY: a brute-force classification of every real local linear generator on the Lp = 4 and 6 role lattices under the M1-M6 equations has a one-dimensional solution space at each of three energy-weight pairs, equal to the curl coupling with reverse block -(w_B/w_E) q C^T and no onsite term; one-face gauge stencils with entries in -4..4 are all multiples of (1,1,-1,-1); no same-role edge or face pair exists up to Lp = 10; the curl symbol has singular values (|s|, |s|, 0) identically and at every nonzero momentum to coarse L = 12; on the 384-variable Lp = 8 block Euler fails norm preservation by 4.00e-02 while Cayley is orthogonal with every row spread over at least 319 sites; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2062",
+  "at_utc": "20260919T112448Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

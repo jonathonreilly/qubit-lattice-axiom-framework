@@ -1,0 +1,15 @@
+executed pair: q1=(1, 0, 0) q2=(3/5, 4/5, 0) q1·q2=3/5
+|q1×q2|^2 = 16/25 stated unit iff 1
+note F (q1×q2): col-norms^2=[1, 1, 16/25] det=4/5 F^T F=
+Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 16/25]])
+runner F (e1×e2): col-norms^2=[1, 1, 1] det=1 F^T F=
+Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
+HIT: note's third column q1×q2 has |·|^2=16/25 != 1 at the executed pair q1·q2=3/5; det F=4/5 != 1, so F is not a rotation matrix
+orthogonal control q2=(0,1,0): note==runner True
+note F at orthogonal pair: col-norms^2=[1, 1, 1] det=1 F^T F=
+Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
+note F at (1,0,0)×(3/5,0,4/5): col-norms^2=[1, 1, 16/25] det=4/5 F^T F=
+Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 16/25]])
+INFO: extra pair also has |q1×q2|^2=16/25 det=4/5
+M5 Born (1+s·q)/2: at q -> 1, at -q -> 0
+SUMMARY: attack pattern (f) NORMALIZATION - the written frame F=(q1, Gram-Schmidt(q2), q1×q2) is claimed to be a rotation matrix but at the executed pair q1=(1,0,0), q2=(3/5,4/5,0) the unnormalized third column has length 4/5 and det F=4/5; the runner's B2 passes only because it crosses the already-normalized second column (note's third column q1×q2 has |·|^2=16/25 != 1 at the executed pair q1·q2=3/5; det F=4/5 != 1, so F is not a rotation matrix)

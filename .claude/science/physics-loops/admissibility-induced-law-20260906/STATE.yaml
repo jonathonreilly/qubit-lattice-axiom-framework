@@ -105,3 +105,13 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+# ---------------------------------------------------------------- block 27 close (2026-09-16)
+# block: 27
+# branch: physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-26 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170)
+# pr_status: opened for review — PR #8171 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8171); hand-off; never merged by the campaign; not a main landing
+# final_certificate: "TOTAL: PASS=16 FAIL=0; 10 mutations, census 10/10 in-family; refuting pass consistent on four routes; gates: see HANDOFF.md"
+# seats: "supervisor-run: exploration (naive coupling fails; TV route) -> control -> contract with a lens pass -> primary (T1-T4, runner) -> refuting pass (maximal coupling of two runs; Monte-Carlo sensitivity; one-site chains; the reach) -> fold (the refuter's sampler fixed at zero concentration)"
+# review_findings: "the sphere formation law is ergodic for beta < 1/sqrt3 with rate sqrt3 beta: TV sensitivity <= |V - V'|/(2 sqrt3) via the sign lemma A(kappa)/kappa decreasing; one rotation-invariant law; m_t <= (sqrt3 beta)^t; the route's reach beta < 1; the uniqueness table (03, 08, 21, 27) complete"
+# strongest_unresolved_proof_obligation: "a proof of the loss of memory at strong coupling (block 26's executed sentence); the band between 1/sqrt3 and there"
+# next_exact_action: "queue refresh 2026-09-16 (block 27 opening): a dynamical proof at strong coupling; the six-axis memory time on a torus; the intermediate band; normalization; X4"
+# lock: held (owner: keep running the campaign for 12 more hours from 2026-09-16 ~09:50)

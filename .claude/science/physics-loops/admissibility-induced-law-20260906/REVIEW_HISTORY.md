@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 27 — V1-V5 (supervisor, 2026-09-16)
+- V1: the last empty cell of the campaign's table of explicit weak-coupling uniqueness regions (blocks 03, 08, 21); the weak-coupling side of the sphere formation law after block 26.
+- V2: the lens pass in `GOAL_block27.md` ("block 08's argument with a different kernel" — the kernel's sensitivity is the content and needed the sign lemma; "is `1/√3` sharp" — no, the route's ceiling is `β = 1`, its total-variation version `2/3`, block 26 loses memory at every coupling; names only in the allowed sections).
+- V3: T1–T4 proved; the skeleton executed exactly (16 checks, 10 mutations); the refuting pass agreed on four routes; one tooling slip in the refuter folded.
+- V4: no reading, menu, rule or coupling selected; `1/√3` stated as the route's constant, not a threshold.
+- V5: consumers named — the campaign's decision record (the complete uniqueness table); #8093's assembly; the queue.
+
+## block 27 — supervisor controls, primary, refuting pass and fold (2026-09-16)
+Exploration: the naive coupling (shared uniforms, rotated frames) has sensitivity of order one because nearly cancelling predecessors make the mean direction unstable; the total-variation route removes the direction from the estimate. Control (`supervisor_control_block27.py`): the series coefficients `0, 0, 2/45, 2/315, …`; the identities symbolically; quadrature `0.2499` per unit against `0.2887`; the magnetization at `β = 0.3, 0.5` inside `(√3β)^t`. Primary: the note and the runner (16 checks, 10 mutations; "converge" and a named author removed from the theorem sections at the scan). Refuting pass (`CHECKER_block27_findings.md`): the maximal coupling of two runs contracts by about `1.1β`; Monte-Carlo sensitivity `0.2509`; the one-site chain; the reach at `V = 0` — the refuter's sampler at exactly zero concentration fixed after the `V = 0` check exposed it. Author checks only; independent review pending.
+
+## block 27 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-16)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `6dda46fc1a`; the declared objects restated from block 26 (open PR, evidence address; the two facts used re-checked in B4, C2). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the constant named as the route's; the standard facts at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.

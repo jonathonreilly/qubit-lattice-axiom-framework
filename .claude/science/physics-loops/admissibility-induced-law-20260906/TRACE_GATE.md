@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 27, at PR opening (2026-09-16)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the campaign's table of explicit uniqueness regions across readings and menus (blocks 03, 08, 21); the weak-coupling side of the sphere formation law"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the fourth cell filled: the sphere formation law is ergodic for beta < 1/sqrt3 with rate sqrt3 beta, m_t <= (sqrt3 beta)^t; the route's reach beta < 1. Next: a proof at strong coupling; the six-axis memory time on a torus. Consumers: the campaign's decision record; #8093's assembly"
+```

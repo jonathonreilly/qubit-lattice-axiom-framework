@@ -1,0 +1,6 @@
+  scanned connected E of size 1, running bridging pairs=171
+  scanned connected E of size 2, running bridging pairs=1131
+  scanned connected E of size 3, running bridging pairs=6153
+  sanity size-1 opposite: unique F values=3 (want >1)
+bridging windows enumerated=6153 constant=0
+SUMMARY: SAMPLED EVIDENCE (PR #8158): Q5's 'never R1=R2 on a two-attachment window' was executed on three geometries and the checker used random components; exhaustive Z^3 search of every connected unrecorded E of size 1..3 in [0,2]^3 with exactly two recorded attachments (6153 bridging pairs) at (3,1,2) has F_C nonconstant on all of them (not the Q4(a) triangle); pattern has purchase and does not fire

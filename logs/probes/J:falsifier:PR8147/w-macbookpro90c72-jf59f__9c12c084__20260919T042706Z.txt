@@ -1,0 +1,8 @@
+n=0: formula=1 triple=1 P=1/6^0
+n=1: formula=6 triple=6 P=6/6^2
+n=2: formula=90 triple=90 P=90/6^4
+n=3: formula=1860 triple=1860 P=1860/6^6
+n=4: formula=44730 triple=44730 P=44730/6^8
+n=5: formula=1172556 triple=1172556 P=1172556/6^10
+n=6: formula=32496156 triple=32496156 P=32496156/6^12
+SUMMARY: P_{2n} falsifier did not fire: Vandermonde and triple counts agree for n=0..6 (not the known T3(ii) u^2 HIT)

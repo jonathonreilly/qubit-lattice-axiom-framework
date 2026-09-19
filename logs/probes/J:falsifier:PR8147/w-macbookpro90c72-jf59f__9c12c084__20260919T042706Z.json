@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8147",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block13-causal",
+ "worker": "w-macbookpro90c72-jf59f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8147/falsifier_pn_srw.py",
+ "seed": 92026,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c12c084",
+ "started_utc": "20260919T042706Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "P_{2n} falsifier did not fire: Vandermonde and triple counts agree for n=0..6 (not the known T3(ii) u^2 HIT)"
+ },
+ "review": "Vandermonde and triple closed-walk counts agree for n=0..6, so the P_{2n} falsifier did not fire",
+ "what": "PR #8147 ([physics-loop] admissibility-induced-law block13 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915; git show origin/physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915:<note>. Create probes/work/pr8147/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8147/<script>.py\"",
+ "stdout_sha256": "ab1ef0ca091a84ccd624ad1108bd1c5e77bba463af46856ad3b9a6866eedfbe6",
+ "stdout_tail": "n=0: formula=1 triple=1 P=1/6^0\nn=1: formula=6 triple=6 P=6/6^2\nn=2: formula=90 triple=90 P=90/6^4\nn=3: formula=1860 triple=1860 P=1860/6^6\nn=4: formula=44730 triple=44730 P=44730/6^8\nn=5: formula=1172556 triple=1172556 P=1172556/6^10\nn=6: formula=32496156 triple=32496156 P=32496156/6^12\nSUMMARY: P_{2n} falsifier did not fire: Vandermonde and triple counts agree for n=0..6 (not the known T3(ii) u^2 HIT)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf59f",
+  "at_utc": "20260919T042707Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

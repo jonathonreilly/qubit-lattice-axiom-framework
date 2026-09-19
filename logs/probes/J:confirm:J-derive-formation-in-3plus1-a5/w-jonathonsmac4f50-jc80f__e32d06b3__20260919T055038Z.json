@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-in-3plus1-a5",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jc80f",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-in-3plus1/referee_w-jonathonsmac4f50-jc80f/check.py",
+ "seed": 97038,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e32d06b3",
+ "started_utc": "20260919T055038Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the task-(d) partial survives; correction: 'the causal response is O(1/|k|)' holds off the plane k1+k2+k3 = 0 only: on that plane 1 - phi = t^2/8 + O(t^3), so |R| ~ 8/|k|^2 and R/C -> 2 (real) at small k; sphere LRO and S(k) bounds are not claimed, as the attempt says"
+ },
+ "review": "DAG, phi(pi/2,0,0) = (3+i)/4, |phi|^2 = 5/8, C = 8/3, R = 2(1+i), R/C = (3/4)(1+i), the iff 'R/C real iff phi real' on 215 modes of (2pi/6)Z^3, the symmetric 7-stencil 5/7, 7/2, 49/24, 12/7 = 1+phi_s and the drift i(1,1,1)/4 all re-derive exactly; correction: 'R = O(1/|k|)' fails on the plane k1+k2+k3 = 0 where 1-phi = t^2/8 and R/C -> 2: HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-in-3plus1:a5/; its files are probes/work/derive/formation-in-3plus1/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-in-3plus1/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "33e6d283172853e378d2754827d34e962751ad90943dc55bb691723b5276c8f1",
+ "stdout_tail": "V1 backward 4-predecessor relation on a 3^4 box: no 2-cycles and every edge lowers the level by 1: True\nV2 k=(pi/2,0,0): phi = 3/4 + I/4; |phi|^2 = 5/8; C = 8/3; R = 2 + 2*I; R/C = 3/4 + 3*I/4; cosine identity for |phi|^2: True\nV3 'R/C real iff phi real' on 215 modes of (2 pi/6)Z^3 (zero mode and |phi| = 1 excluded): mismatches 0\nV4 symmetric 7-stencil at (pi/2,0,0): phi_s = 5/7, R_s = 7/2, C_s = 49/24, R_s/C_s = 12/7 = 1 + phi_s: True\nV5 grad phi(0) = [I/4, I/4, I/4]; grad(1 - |phi|^2)(0) = [0, 0, 0]\nV6 along (1,1,1)/sqrt3: 1 - phi = t*(t - 2*sqrt(3)*I)/8 + O(t^3) (so |R| ~ 1/t); along (1,-1,0)/sqrt2: 1 - phi = t**2/8 + O(t^3), 1 - |phi|^2 = t**2/4, R/C -> 2 (so |R| ~ 8/t^2 there)\nHIT: confirmed - the backward 4-predecessor stencil is a DAG; at k = (pi/2,0,0) phi = (3+i)/4, |phi|^2 = 5/8, C = 8/3, R = 2(1+i), R/C = (3/4)(1+i); on all 215 modes of (2 pi/6)Z^3 R/C is real exactly where phi is real; the symmetric 7-stencil gives 5/7, 7/2, 49/24, 12/7 = 1 + phi_s; drift grad phi(0) = i(1,1,1)/4 with grad(1 - |phi|^2)(0) = 0; all exact\nSUMMARY: confirmed - the task-(d) partial survives; correction: 'the causal response is O(1/|k|)' holds off the plane k1+k2+k3 = 0 only: on that plane 1 - phi = t^2/8 + O(t^3), so |R| ~ 8/|k|^2 and R/C -> 2 (real) at small k; sphere LRO and S(k) bounds are not claimed, as the attempt says\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc80f",
+  "at_utc": "20260919T055040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms formation-in-3plus1 a5's task-(d) partial: the backward 4-predecessor stencil is a DAG; at k=(pi/2,0,0) C = 8/3 and R = 2(1+i), R/C = (3/4)(1+i) not real; R/C real iff phi real (215 modes checked); symmetric 7-stencil R/C = 1+phi_s = 12/7; drift (1,1,1)/4. Correction: the causal response is O(1/|k|) only off k1+k2+k3 = 0 (on it |R| ~ 8/|k|^2, R/C -> 2).",
+  "by": "w-jonathonsmac4f50-jc80f",
+  "at_utc": "20260919T055040Z"
+ }
+}

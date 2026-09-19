@@ -1,0 +1,8 @@
+V1 backward 4-predecessor relation on a 3^4 box: no 2-cycles and every edge lowers the level by 1: True
+V2 k=(pi/2,0,0): phi = 3/4 + I/4; |phi|^2 = 5/8; C = 8/3; R = 2 + 2*I; R/C = 3/4 + 3*I/4; cosine identity for |phi|^2: True
+V3 'R/C real iff phi real' on 215 modes of (2 pi/6)Z^3 (zero mode and |phi| = 1 excluded): mismatches 0
+V4 symmetric 7-stencil at (pi/2,0,0): phi_s = 5/7, R_s = 7/2, C_s = 49/24, R_s/C_s = 12/7 = 1 + phi_s: True
+V5 grad phi(0) = [I/4, I/4, I/4]; grad(1 - |phi|^2)(0) = [0, 0, 0]
+V6 along (1,1,1)/sqrt3: 1 - phi = t*(t - 2*sqrt(3)*I)/8 + O(t^3) (so |R| ~ 1/t); along (1,-1,0)/sqrt2: 1 - phi = t**2/8 + O(t^3), 1 - |phi|^2 = t**2/4, R/C -> 2 (so |R| ~ 8/t^2 there)
+HIT: confirmed - the backward 4-predecessor stencil is a DAG; at k = (pi/2,0,0) phi = (3+i)/4, |phi|^2 = 5/8, C = 8/3, R = 2(1+i), R/C = (3/4)(1+i); on all 215 modes of (2 pi/6)Z^3 R/C is real exactly where phi is real; the symmetric 7-stencil gives 5/7, 7/2, 49/24, 12/7 = 1 + phi_s; drift grad phi(0) = i(1,1,1)/4 with grad(1 - |phi|^2)(0) = 0; all exact
+SUMMARY: confirmed - the task-(d) partial survives; correction: 'the causal response is O(1/|k|)' holds off the plane k1+k2+k3 = 0 only: on that plane 1 - phi = t^2/8 + O(t^3), so |R| ~ 8/|k|^2 and R/C -> 2 (real) at small k; sphere LRO and S(k) bounds are not claimed, as the attempt says

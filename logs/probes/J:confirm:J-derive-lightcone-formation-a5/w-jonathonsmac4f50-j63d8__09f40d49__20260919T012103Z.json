@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-lightcone-formation-a5",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j63d8",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-formation/referee_w-jonathonsmac4f50-j63d8/check.py",
+ "seed": 80863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "09f40d49",
+ "started_utc": "20260919T012103Z",
+ "elapsed_s": 4.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 5 - ||Cov_vMF|| <= 1/3 (steps 1-4, re-verified) makes the MEAN map (beta/3)-Lipschitz, but the Dobrushin/Wasserstein influence of a predecessor is the W1-Lipschitz constant of S -> vMF(beta S), i.e. sup over chord-1-Lipschitz f of Cov(f, u.s), which the covariance does not control: at kappa = 3, f = -|s - n| gives 0.1136 > A'(3) = 0.1011. The threshold beta < 3/7 is therefore not proved; a numerical LP finds the W1 rates at or below 1/3 for kappa in [0, 3] (maximal at kappa = 0), so the claim is not contradicted, and the missing lemma is sup_{u, f} Cov_kappa(f, u.s) <= 1/3. Step 6's envelope of the linear kernel holds"
+ },
+ "review": "Referee of lightcone-formation a5 (grok-4.6): independent checks pass 4 of 4 (the vMF covariance bounds A' < 1/3 and A/kappa <= 1/3 symbolically and on 400 points at 30 digits, the mean-map Jacobian, the witness f = -|s - n| with Cov = 0.1136 > A'(3) = 0.1011 at kappa = 3, the linear envelope) plus an LP showing W1 rates at or below 1/3, so steps 1-4 and 6 hold but the attempt fails at step 5: a (beta/3)-Lipschitz mean map is not a Wasserstein-1 influence bound, so beta < 3/7 is not proved (missing lemma sup_f Cov(f, u.s) <= 1/3); this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-formation:a5/; its files are probes/work/derive/lightcone-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "c83ababf68dc1b0fa2d2dcfdd8cfeb5f9542aa2cf31eb2a9ed275f6c3f77f7c4",
+ "stdout_tail": "64611 > A'(3) = 0.10114677: the Wasserstein-1 rate of the kernel in the longitudinal direction exceeds the covariance eigenvalue, so the mean map's Lipschitz constant beta/3 does not bound the W1 influence of a predecessor (W1 >= |difference of means|, not <=)\nINFO: L4 (numerical LP, 300 points; not a claim) W1 rates per unit of the natural parameter: kappa=0.0: longitudinal 0.3339, transverse 0.3340; kappa=0.5: longitudinal 0.3198, transverse 0.3286; kappa=1.0: longitudinal 0.2828, transverse 0.3137; kappa=2.0: longitudinal 0.1903, transverse 0.2693; kappa=3.0: longitudinal 0.1216, transverse 0.2245; maximum 0.3340 (1/3 up to discretization, at kappa = 0)\nPASS: L5 step 6: 1/(1 - phi^2) = 49/(E(14 - E)) with phi = 1 - E/7, between 49/(14E) and 49/(2E) on a grid of (0, 12], and E <= 12 on Z^3 (attained at (pi, pi, pi))\nTOTAL: PASS=4 FAIL=0\nSUMMARY: fails at step 5 - ||Cov_vMF|| <= 1/3 (steps 1-4, re-verified) makes the MEAN map (beta/3)-Lipschitz, but the Dobrushin/Wasserstein influence of a predecessor is the W1-Lipschitz constant of S -> vMF(beta S), i.e. sup over chord-1-Lipschitz f of Cov(f, u.s), which the covariance does not control: at kappa = 3, f = -|s - n| gives 0.1136 > A'(3) = 0.1011. The threshold beta < 3/7 is therefore not proved; a numerical LP finds the W1 rates at or below 1/3 for kappa in [0, 3] (maximal at kappa = 0), so the claim is not contradicted, and the missing lemma is sup_{u, f} Cov_kappa(f, u.s) <= 1/3. Step 6's envelope of the linear kernel holds\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j63d8",
+  "at_utc": "20260919T012107Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle871_source_action_bridge_pricing_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle871_source_action_bridge_pricing_2026_07_28.py",
+ "seed": 19406,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T120326Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8755ba9fdcf81af7cd0fed4cf7d7f9f42a7eda70203cda13dd5a59b102c8c088",
+ "stdout_tail": "dim GB-S2 phase-propagation kernel and detector-window readout\n  4 larger-model-dim GB-S3 label/offset generated-connectivity family\n  1 equal-model-dim signed-gravity locked source-action term (scale plus locked orientation)\n  2 larger-model-dim h-class/h-unit density-to-angle readout identity\nOBLIGATION_TALLY {\"equal-model-dim\":3,\"larger-model-dim\":4,\"smaller-model-dim\":1}\nAST_NAME_PRESENCE path=scripts/gate_b_weak_field_source_action_interface_2026_06_16.py only=True functions=4\nRESULT finite-map dimension=1 on 16 declared nonempty transitive patches\nRESULT product-one stabilizer exact; parameter spaces are not identified\nRESULT physical source-action bridge remains open\nPASS CERT-PROV/pinned-inputs paths=8 sha_exact=8 blob_exact=8 blocklist_leaks=[]\nPASS CERT-QUOTE/integrity rows=24 byte_recovered=24 deterministic=True\nPASS CERT-FINITE-MAP/exact-contract patches=16/16 identities=True structural=True full_routes=7/7 full_ok=True ablation=True prices=True monotone=True\nPASS CERT-PRODUCT/stabilizer-determined grid_pairs=100 invariant=10 moving=90 sampled_product_one_exact=True; full Q* group follows algebraically from t -> (t, 1/t)\nPASS CERT-OBLIGATION-MODELS/computed clauses=8 pure_function_replay=True all_dims_computed=True\nPASS CERT-AST/name-presence-only functions=4 gate_b_action=True gate_b_phi=True\nPASS CERT-DETERMINISM/section-replay sections_replayed=4 all_stream_sha_stable=True\nPASS CERT-RUNTIME/budget elapsed_s=0.2 budget_s=1400\n\nTOTAL: PASS=8 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T120326Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

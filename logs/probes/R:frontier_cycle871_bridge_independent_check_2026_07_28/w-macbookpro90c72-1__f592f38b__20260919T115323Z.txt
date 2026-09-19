@@ -1,0 +1,51 @@
+CYCLE 871 — INDEPENDENT REFUTATION CHECKER
+EVIDENCE paths=8 primary_executions=1 blocklist_leaks=[]
+PRIMARY_CONTRACT patches=16 maps=8 quotes=8 scalars=100,10,0,1
+FINITE_MAP_BRUTE dims p solutions implied primary off_shape
+  (2,) 2 2 1 1 0
+  (2,) 3 3 1 1 0
+  (2,) 5 5 1 1 0
+  (2,) 7 7 1 1 0
+  (3,) 2 2 1 1 0
+  (3,) 3 3 1 1 0
+  (4,) 2 2 1 1 0
+  (2, 2) 2 2 1 1 0
+FINITE_MAP_STRUCTURAL rows=16 refutations=0
+PRODUCT_STABILIZER trials=4000 larger=0 broken=0 separating=0
+STABILIZER_HEADLINES {"grid_pairs":100,"invariant_pairs":10,"scale_free_dim":1,"separating":0}
+OBLIGATION_MODELS independent primary clause
+  0 0 GB-S1a linear test-action shape
+  1 1 GB-S1b source-strength normalization (absorbs 1/(4 pi) and any unit conversion)
+  1 1 physical Newton constant / SI normalization
+  5 5 finite-core scalar 1/(r+0.1) vs the exact periodic graph-Laplacian Green solution
+  8 8 GB-S2 phase-propagation kernel and detector-window readout
+  4 4 GB-S3 label/offset generated-connectivity family
+  1 1 signed-gravity locked source-action term (scale plus locked orientation)
+  2 2 h-class/h-unit density-to-angle readout identity
+QUOTE_REPLAY checked=8 refutations=0
+HOSTILE_MUTATIONS
+  KILLED claimed-dimension-off-by-one
+  KILLED obligation-model-count-off-by-one
+  KILLED quoted-byte-changed
+  KILLED action-product-dependence-changed
+  KILLED required-row-omitted
+  KILLED duplicate-row
+  KILLED large-patch-claim-corrupted
+  KILLED stabilizer-headline-corrupted
+MUTATION_KILLS 8/8
+REFUTATIONS none
+PASS CERT-PROV/pinned-evidence paths=8 sha_exact=8 blob_exact=8 missing_markers=[] blocklist_leaks=[]
+PASS CERT-PRIMARY/fresh-execution returncode=0 stdout_bytes=4518 stderr_bytes=0
+PASS CERT-MUTATION/hostile-controls killed=8/8 names=['claimed-dimension-off-by-one', 'obligation-model-count-off-by-one', 'quoted-byte-changed', 'action-product-dependence-changed', 'required-row-omitted', 'duplicate-row', 'large-patch-claim-corrupted', 'stabilizer-headline-corrupted']
+PASS CERT-PRIMARY-CONTRACT/exact patches=16/16 maps=8/8 quotes=8/8 refutations=0
+PASS CERT-FINITE-MAP/independent brute_models=8 structural_models=16 refutations=0
+PASS CERT-PRODUCT-STABILIZER/randomized trials=4000 larger=0 broken=0 separating=0
+PASS CERT-STABILIZER-HEADLINES/exact independent={"grid_pairs":100,"invariant_pairs":10,"scale_free_dim":1,"separating":0}
+PASS CERT-OBLIGATION-MODELS/orbit-recount models=8 refutations=0
+PASS CERT-QUOTE-REPLAY/exact quotes_checked=8 refutations=0
+PASS CERT-DETERMINISM/hunt-replay hunt_sha_first=2a08979e80022521 hunt_sha_second=2a08979e80022521
+PASS CERT-RUNTIME/budget elapsed_s=0.7 budget_s=1400
+
+REFUTATIONS FOUND: 0
+TOTAL: PASS=11 FAIL=0
+VERDICT: PASS

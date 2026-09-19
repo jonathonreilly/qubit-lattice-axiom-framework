@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle871_openreference_endpoint_packet_bridge_2026_08_02.py",
+ "seed": 18804,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T115324Z",
+ "elapsed_s": 220.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1991c22bfcca9f405429e4cfbca338930be22aadb7617c18da7411acbb5d9045",
+ "stdout_tail": "    \"scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py\",\n      \"scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py\"\n    ],\n    \"pinned_input_failures\": {},\n    \"unpinned_declared_inputs\": []\n  },\n  \"runner_sha256\": \"6645156635b4354d937759a28e71215121a19cefcc2f294a2791e6a84cf1423b\",\n  \"semantic\": {\n    \"FSWAP_phase_failures\": 0,\n    \"OR_Toffoli_deletion_detected_moving_cases\": 6144,\n    \"coherent_FSWAP_vs_SWAP_residuals\": [\n      1.414213562373095,\n      1.414213562373095,\n      1.414213562373095\n    ],\n    \"contact_false_positives\": 0,\n    \"independent_orientation_outputs_bitset\": 2,\n    \"inverse_failures\": 0,\n    \"minimum_coherent_FSWAP_vs_SWAP_residual\": 1.414213562373095,\n    \"negative_frame_half_swap_deletion_undetected\": 0,\n    \"normalized_mask_failures\": 0,\n    \"packet_projection_failures\": 0,\n    \"packet_work_return_failures\": 0,\n    \"positive_axis_raw_masks\": [\n      0,\n      66,\n      264,\n      1056\n    ],\n    \"predicate_failures\": 0,\n    \"prewrite_deletion_detected_moving_cases\": 3072,\n    \"proper_frame_rows\": 72,\n    \"raw_mask_failures\": 0,\n    \"scratch_cleanup_failures\": 0,\n    \"signed_normalization_failures\": 0,\n    \"signed_orientation_failures\": 0,\n    \"transported_nonzero_raw_masks\": [\n      66,\n      129,\n      264,\n      516,\n      1056,\n      2064\n    ],\n    \"two_cell_columns\": 12288\n  },\n  \"status\": \"pass\",\n  \"validation_failures\": []\n}\nCYCLE871_OPENREFERENCE_ENDPOINT_PACKET_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T115704Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

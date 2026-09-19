@@ -1,0 +1,59 @@
+{
+  "status": "fail",
+  "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+  "expected_base_is_ancestor_of_head": false,
+  "receipt": "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json",
+  "failures": [
+    "expected base is not an ancestor of HEAD"
+  ],
+  "fixtures": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "V": 8,
+      "E": 12,
+      "P": 6,
+      "cycle_rank": 5,
+      "plaquette_rank": 5,
+      "fixed_divergence_dimension": 1419857,
+      "plus_one_dimension": 1,
+      "star_support": 72,
+      "plaquette_radius": 10
+    },
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "V": 27,
+      "E": 54,
+      "P": 36,
+      "cycle_rank": 28,
+      "plaquette_rank": 28,
+      "fixed_divergence_dimension": 28351092476867700887730107366063041,
+      "plus_one_dimension": 1,
+      "star_support": 126,
+      "plaquette_radius": 10
+    },
+    {
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "V": 12,
+      "E": 20,
+      "P": 11,
+      "cycle_rank": 9,
+      "plaquette_rank": 9,
+      "fixed_divergence_dimension": 118587876497,
+      "plus_one_dimension": 1,
+      "star_support": 90,
+      "plaquette_radius": 10
+    }
+  ]
+}

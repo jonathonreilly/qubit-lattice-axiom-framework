@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle870_openreference_native_recurrent_update_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py",
+ "seed": 18306,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T114506Z",
+ "elapsed_s": 50.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a58de20358ae8b8c38b9589c5e39c93129e9001c9ea7b0d61632194688bfe4d9",
+ "stdout_tail": "penreference_physical_m2_placement_2026_08_02.py\", \"source_sha256\": \"64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2\"}, \"shared_stars\": {\"cells_per_star\": [7, 7], \"central_shared_seam_factor_count\": 1, \"central_shared_seam_rotation_count\": 4, \"common_global_constraint_bank\": 189, \"induced_global_only_carriers\": 12, \"maximal_stars\": 2, \"shared_address_coordinate_failures\": 0, \"shared_edge_addresses\": 38, \"star_cell_intersection\": 2, \"star_union_cells\": 12, \"subview_to_union_coordinate_failures\": 0, \"two_subview_carriers_subset_global\": true, \"union_carrier_M2\": 261, \"view_rule\": \"both stars are views of one global graph/register bank; cropped boundary A/B rebuilds are not substituted\"}, \"source_pins\": {\"Cycle219_coin_sha256\": \"ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a\", \"Cycle230_contact_sha256\": \"b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae\", \"Cycle703_OpenReferenceGraph_sha256\": \"833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245\", \"Cycle706_covariance_sha256\": \"71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69\", \"Cycle707_placement_routing_sha256\": \"b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480\", \"this_source_sha256\": \"687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237\"}, \"status\": \"pass\"}\nRECEIPT /Users/jonreilly/.probe-workers/Physics/slot-1/outputs/cycle870_openreference_native_recurrent_update_receipt_2026_08_02.json\nOPENREFERENCE_NATIVE_UPDATE_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T114557Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

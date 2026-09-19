@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py",
+ "seed": 18227,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T114347Z",
+ "elapsed_s": 78.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "01a2c3fe49eda06e3612debb3fc3e898ed6c35747c813b4bd6bb0df9193b283d",
+ "stdout_tail": "em executes one whole returned-route factor macro serially; disjoint items in a color run in lockstep with identity padding\", \"macros_in_repeated_color_groups\": 4014, \"maximum_normalized_template_coordinate_span\": 31, \"maximum_single_factor_routed_depth\": 4236, \"modulus\": 4, \"radius_one_cell_neighbor_signatures_present\": 27, \"repeated_active_color_groups\": 1527, \"rotation_rows_scanned\": 22200, \"same_color_route_footprint_collisions\": 0, \"same_residue_owner_separation\": 64, \"seams\": 300, \"stress_fixture_tightened_routed_depth_upper_bound\": 3037184, \"template_envelope_separation_failures\": 0}, \"source_pins\": {\"native_update_receipt_sha256\": \"b1c812afbf25b84b99a5d171cf7925ffc86272e52c252c5f7ee68cb9f5a76807\", \"native_update_source\": \"scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py\", \"native_update_source_sha256\": \"687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237\", \"root_placement_receipt_sha256\": \"ab2d980726e336221e49808b6edcfaaae802173ee2f00fe96d8d55a4f2c6899d\", \"root_placement_source\": \"scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py\", \"root_placement_source_sha256\": \"64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2\", \"this_source_sha256\": \"1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd\"}, \"status\": \"pass\"}\nRECEIPT /Users/jonreilly/.probe-workers/Physics/slot-1/outputs/cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json\nOPENREFERENCE_JOINED_CUBE_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T114506Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

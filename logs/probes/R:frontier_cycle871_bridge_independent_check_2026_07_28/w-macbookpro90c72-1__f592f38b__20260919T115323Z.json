@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle871_bridge_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle871_bridge_independent_check_2026_07_28.py",
+ "seed": 18803,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T115323Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "373834c333dbe1e21b42ecee454b47ba968a503d8e67b2234d84cc7a838ccb91",
+ "stdout_tail": "ATIONS\n  KILLED claimed-dimension-off-by-one\n  KILLED obligation-model-count-off-by-one\n  KILLED quoted-byte-changed\n  KILLED action-product-dependence-changed\n  KILLED required-row-omitted\n  KILLED duplicate-row\n  KILLED large-patch-claim-corrupted\n  KILLED stabilizer-headline-corrupted\nMUTATION_KILLS 8/8\nREFUTATIONS none\nPASS CERT-PROV/pinned-evidence paths=8 sha_exact=8 blob_exact=8 missing_markers=[] blocklist_leaks=[]\nPASS CERT-PRIMARY/fresh-execution returncode=0 stdout_bytes=4518 stderr_bytes=0\nPASS CERT-MUTATION/hostile-controls killed=8/8 names=['claimed-dimension-off-by-one', 'obligation-model-count-off-by-one', 'quoted-byte-changed', 'action-product-dependence-changed', 'required-row-omitted', 'duplicate-row', 'large-patch-claim-corrupted', 'stabilizer-headline-corrupted']\nPASS CERT-PRIMARY-CONTRACT/exact patches=16/16 maps=8/8 quotes=8/8 refutations=0\nPASS CERT-FINITE-MAP/independent brute_models=8 structural_models=16 refutations=0\nPASS CERT-PRODUCT-STABILIZER/randomized trials=4000 larger=0 broken=0 separating=0\nPASS CERT-STABILIZER-HEADLINES/exact independent={\"grid_pairs\":100,\"invariant_pairs\":10,\"scale_free_dim\":1,\"separating\":0}\nPASS CERT-OBLIGATION-MODELS/orbit-recount models=8 refutations=0\nPASS CERT-QUOTE-REPLAY/exact quotes_checked=8 refutations=0\nPASS CERT-DETERMINISM/hunt-replay hunt_sha_first=2a08979e80022521 hunt_sha_second=2a08979e80022521\nPASS CERT-RUNTIME/budget elapsed_s=0.7 budget_s=1400\n\nREFUTATIONS FOUND: 0\nTOTAL: PASS=11 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T115324Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

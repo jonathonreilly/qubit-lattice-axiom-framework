@@ -1,0 +1,70 @@
+CYCLE 871 — CONDITIONAL SOURCE-ACTION FINITE MODEL
+PROVENANCE paths=8 blocklist_leaks=[]
+QUOTE_REPLAY blockers=8 lanes={"gravity":6,"mass":1,"readout":1}
+  docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md:104 [gravity] sha256=e246730a8081
+    VERBATIM LINE | source normalization, propagation/readout, and generated-connectivity
+  docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md:247 [gravity] sha256=af7bbdfda883
+    VERBATIM LINE | This repair takes route (2). The source-action term is classified as an
+  docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md:527 [gravity] sha256=af7bbdfda883
+    VERBATIM LINE | proved, this row should be re-audited as an open-gate source-action proposal
+  docs/SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md:205 [gravity] sha256=cb19cb344113
+    VERBATIM LINE | source-action premise until derived from retained APS/Wald/Gauss structure.
+  docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md:92 [gravity] sha256=5de15beb514f
+    VERBATIM LINE |   but it is a new source-action premise until derived from retained
+  docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md:472 [gravity] sha256=5de15beb514f
+    VERBATIM LINE | - status is conditional only: this is a new source-action premise unless a
+  docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md:96 [mass] sha256=ef5e0280ab8b
+    VERBATIM LINE | measurement theorem alone does not supply that source-action premise.
+  docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md:21 [readout] sha256=4d742bcc68a1
+    VERBATIM LINE | A closing theorem must provide a physical carrier/source-action bridge and
+MODEL clauses=empty-set-vanishing,nonempty-disjoint-additivity,translation-invariance
+PATCH_ROWS patch sites unknowns rank full_dim structural_dim agree
+  (2,) 2 4 3 1 1 True
+  (3,) 3 8 7 1 1 True
+  (4,) 4 16 15 1 1 True
+  (5,) 5 32 31 1 1 True
+  (6,) 6 64 63 1 1 True
+  (2, 2) 4 16 15 1 1 True
+  (2, 3) 6 64 63 1 1 True
+  (7,) 7 0 0 -1 1 None
+  (8,) 8 0 0 -1 1 None
+  (10,) 10 0 0 -1 1 None
+  (12,) 12 0 0 -1 1 None
+  (3, 3) 9 0 0 -1 1 None
+  (2, 2, 2) 8 0 0 -1 1 None
+  (2, 2, 3) 12 0 0 -1 1 None
+  (4, 4) 16 0 0 -1 1 None
+  (3, 3, 3) 27 0 0 -1 1 None
+MARGINAL patch=(3,) empty=1 nonempty_disjoint=2 translation=2 residual=1
+MARGINAL patch=(4,) empty=1 nonempty_disjoint=4 translation=3 residual=1
+MARGINAL patch=(2, 2) empty=1 nonempty_disjoint=5 translation=3 residual=1
+grid pairs tested: 100
+pairs acting trivially: 10
+separating lambda from sigma: 0
+free dimension of the scale itself: 1
+PRODUCT_STABILIZER full={(t, 1/t): t in Q*} sampled_exact=True
+OBLIGATION_ROWS free_dim model_dim_vs_bridge clause
+  0 smaller-model-dim GB-S1a linear test-action shape
+  1 equal-model-dim GB-S1b source-strength normalization (absorbs 1/(4 pi) and any unit conversion)
+  1 equal-model-dim physical Newton constant / SI normalization
+  5 larger-model-dim finite-core scalar 1/(r+0.1) vs the exact periodic graph-Laplacian Green solution
+  8 larger-model-dim GB-S2 phase-propagation kernel and detector-window readout
+  4 larger-model-dim GB-S3 label/offset generated-connectivity family
+  1 equal-model-dim signed-gravity locked source-action term (scale plus locked orientation)
+  2 larger-model-dim h-class/h-unit density-to-angle readout identity
+OBLIGATION_TALLY {"equal-model-dim":3,"larger-model-dim":4,"smaller-model-dim":1}
+AST_NAME_PRESENCE path=scripts/gate_b_weak_field_source_action_interface_2026_06_16.py only=True functions=4
+RESULT finite-map dimension=1 on 16 declared nonempty transitive patches
+RESULT product-one stabilizer exact; parameter spaces are not identified
+RESULT physical source-action bridge remains open
+PASS CERT-PROV/pinned-inputs paths=8 sha_exact=8 blob_exact=8 blocklist_leaks=[]
+PASS CERT-QUOTE/integrity rows=24 byte_recovered=24 deterministic=True
+PASS CERT-FINITE-MAP/exact-contract patches=16/16 identities=True structural=True full_routes=7/7 full_ok=True ablation=True prices=True monotone=True
+PASS CERT-PRODUCT/stabilizer-determined grid_pairs=100 invariant=10 moving=90 sampled_product_one_exact=True; full Q* group follows algebraically from t -> (t, 1/t)
+PASS CERT-OBLIGATION-MODELS/computed clauses=8 pure_function_replay=True all_dims_computed=True
+PASS CERT-AST/name-presence-only functions=4 gate_b_action=True gate_b_phi=True
+PASS CERT-DETERMINISM/section-replay sections_replayed=4 all_stream_sha_stable=True
+PASS CERT-RUNTIME/budget elapsed_s=0.2 budget_s=1400
+
+TOTAL: PASS=8 FAIL=0
+VERDICT: PASS

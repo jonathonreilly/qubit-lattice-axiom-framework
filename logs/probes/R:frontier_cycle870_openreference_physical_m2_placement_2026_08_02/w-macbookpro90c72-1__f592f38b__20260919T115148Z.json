@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle870_openreference_physical_m2_placement_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py",
+ "seed": 18708,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T115148Z",
+ "elapsed_s": 81.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3a87f577d908102f8bdbca44adb4e0db7fd59daeef2bfc901e4f84d7840bd79a",
+ "stdout_tail": "_status\": \"supplied and transported\", \"frame_injectivity_failures\": 0, \"ordered_products\": 576, \"product_diagram_failures\": 0, \"proper_cubic_frames\": 24}, \"encoder_chronology\": [\"triangle_syndrome\", \"triangle_correction\", \"coarse_syndrome\", \"coarse_echo_correction_ack\", \"bond_syndrome\", \"bond_correction\", \"logical_load\"], \"expected_abstract_edges\": 2850, \"expected_physical_carrier_M2\": 3150, \"interaction_counts\": {\"controller\": 1456, \"corrections\": 4050, \"loader\": 14950, \"syndrome\": 23365}, \"persistent_auxiliary_slots\": 4500, \"physical_carrier_M2\": 3150, \"routes\": {\"first_swap_deletion_detected_macros\": 42971, \"fixed_role_parity_colors\": 3262, \"interaction_count\": 43821, \"maximum_route_distance\": 42, \"non_NN_failures\": 0, \"operand_order_failures\": 0, \"route_return_failures\": 0, \"routed_gate_count\": 984495, \"same_color_route_collisions\": 0}, \"shape\": [5, 5, 5]}\nSEMANTIC_COVARIANCE {\"ordered_products\": 576, \"port_order_gauge_status\": \"signed local chart gauge included\", \"product_edge_failures\": 0, \"product_generator_failures\": 0, \"product_site_failures\": 0, \"proper_cubic_frames\": 24, \"semantic_generator_rows\": 340, \"shape\": [3, 2, 2], \"single_frame_edge_type_failures\": 0, \"single_frame_generator_failures\": 0, \"single_frame_placement_failures\": 0}\nRECEIPT /Users/jonreilly/.probe-workers/Physics/slot-1/outputs/cycle870_openreference_physical_m2_placement_receipt_2026_08_02.json 174c7b22af7af4389fbc4b7923857e1c751b62fd95c21e8fcb6dddfa62069736\nOPENREFERENCE_PHYSICAL_PLACEMENT_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T115310Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

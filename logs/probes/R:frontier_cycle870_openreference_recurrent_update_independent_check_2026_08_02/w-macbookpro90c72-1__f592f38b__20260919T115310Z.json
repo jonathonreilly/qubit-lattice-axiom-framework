@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle870_openreference_recurrent_update_independent_check_2026_08_02.py",
+ "seed": 18790,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T115310Z",
+ "elapsed_s": 13.2,
+ "returncode": 1,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9299bb4d1d187651d4aa138378a15cb961ad71f630af44936ce29255ee9bfedc",
+ "stdout_tail": "  \"double_occupation_phase\": -1,\n      \"logical_columns_checked\": 4096,\n      \"maximum_column_residual\": 0.0,\n      \"modes_swapped\": [\n        1,\n        6\n      ],\n      \"truth_table_failures\": 0\n    }\n  },\n  \"two_cell_order_attack\": {\n    \"canonical_factor_count\": 59,\n    \"canonical_operator_order\": \"contact @ seam @ reverse @ coin\",\n    \"canonical_stage_order\": [\n      \"coin\",\n      \"reverse\",\n      \"seam\",\n      \"contact\"\n    ],\n    \"canonical_word_target_residual\": 5.41173990010552e-15,\n    \"canonical_word_unitarity_residual\": 5.159306330283335e-15,\n    \"contact_before_seam_counterfactual_target_residual\": 1.645267812776578,\n    \"contact_seam_commutator_norm\": 1.6452678127765774,\n    \"exact_basis_dimension\": 79,\n    \"independent_runner_composes_extracted_target_stage_word\": true,\n    \"joined_scratch_checks_factor_stage_order\": true,\n    \"logical_modes\": 12,\n    \"maximum_contact_before_seam_entry_residual\": 0.16076946380252435,\n    \"number_sector_cutoff\": 2,\n    \"target_emitted_order_target_residual\": 5.41173990010552e-15,\n    \"target_emitted_stage_runs\": [\n      \"onsite_coin_mass\",\n      \"onsite_reverse_fswap\",\n      \"directed_seam_fswap\",\n      \"onsite_contact\"\n    ],\n    \"target_emitted_stage_runs_normalized\": [\n      \"coin\",\n      \"reverse\",\n      \"seam\",\n      \"contact\"\n    ],\n    \"target_unknown_stage_names\": 0\n  },\n  \"validation_failures\": [\n    \"expected base is not an ancestor\"\n  ]\n}\nINDEPENDENT_OPENREFERENCE_RECONSTRUCTION_FAIL\nJOINED_SCRATCH_ORDER_GAP_DETECTED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T115323Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

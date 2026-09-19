@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle871_selected_openreference_seam_cycle714_packet_bridge_check_2026_08_02.py",
+ "seed": 19363,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T120243Z",
+ "elapsed_s": 42.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a35e2e10e71ff41b34864e2872165c06965a7fedba999a8aa73d2d33e0d71f79",
+ "stdout_tail": "first\": \"admitted\",\n      \"inverted_refusal\": \"refused_inverted\",\n      \"no_endpoint_status\": \"no_opportunity\"\n    },\n    \"Cycle612_unchanged_harness_failures\": false,\n    \"Cycle704_packet_projection_failures\": 0,\n    \"Cycle704_packet_statuses\": [\n      \"admitted\",\n      \"admitted\"\n    ],\n    \"generated_orientations\": [\n      -1,\n      1\n    ],\n    \"no_pointer_Cycle610_status\": \"no_opportunity\",\n    \"no_pointer_Cycle704_status\": \"no_opportunity\",\n    \"packet_orientation_bits\": [\n      0,\n      1\n    ],\n    \"supplied_orientation_bits\": [\n      0,\n      1\n    ]\n  }\n}\nCHECK direct_dependencies_are_byte_pinned: PASS\nCHECK selected_landed_seams_equal_signed_logical_FSWAPs: PASS\nCHECK seam_term_and_rotation_deletions_are_active: PASS\nCHECK all_4096_rows_on_all_three_axes_close_exactly: PASS\nCHECK both_declared_orientation_inputs_project_exactly: PASS\nCHECK coherent_phase_pointer_and_scratch_are_exact: PASS\nCHECK all_262144_primary_liveness_rows_close_exactly: PASS\nCHECK composed_inverse_and_59_M2_packet_inverse_are_exact: PASS\nCHECK every_named_bridge_mutation_is_detected: PASS\nCHECK unchanged_Cycle704_610_612_acceptance_is_preserved: PASS\nCHECK L2_L3_bridge_geometry_and_returned_routes_close: PASS\nCHECK 24_frame_576_product_bridge_covariance_is_exact: PASS\nCHECK deterministic_receipt_matches: PASS\nRECEIPT_SHA256 e8ceb57382957f08b523e96e617153ea9fd6807cc756bc6f5568ccdf67d52cdf\nRUNTIME_SECONDS 42.279359375010245\nCYCLE871_SELECTED_OPENREFERENCE_SEAM_CYCLE714_PACKET_BRIDGE_CHECK_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T120326Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

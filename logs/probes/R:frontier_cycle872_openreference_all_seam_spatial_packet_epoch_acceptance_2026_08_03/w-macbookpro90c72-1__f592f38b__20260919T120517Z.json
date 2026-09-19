@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_acceptance_2026_08_03.py",
+ "seed": 19517,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f592f38b",
+ "started_utc": "20260919T120517Z",
+ "elapsed_s": 58.3,
+ "returncode": 1,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5955217173e3781c2431ca0293728db887b6263357db47662741d00941d1d7c5",
+ "stdout_tail": "CYCLE872_ALL_SEAM_SPATIAL_PACKET_PACKAGE_ACCEPTANCE_FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T120616Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

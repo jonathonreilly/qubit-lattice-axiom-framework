@@ -1,0 +1,3 @@
+K6: equal 15 disjoint 90 intersecting 120
+INFO K7: T^2 diagonal (degrees) = [10] (K6 was 6; C(5,2)=10)
+SUMMARY: T^2 weights on K6 2-subsets are 6/1/3 as stated (15 equal, 90 disjoint, 120 intersecting); K7 degrees are 10 as expected; falsifier does not fire

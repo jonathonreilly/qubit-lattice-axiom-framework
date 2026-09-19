@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8081",
+ "type": "judgment",
+ "lane": "native-correlated-ward-20260910",
+ "worker": "w-macbookpro90c72-jd396",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8081/t_square_weights_beyond_k6.py",
+ "seed": 92126,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3968b352",
+ "started_utc": "20260919T042846Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "T^2 weights on K6 2-subsets are 6/1/3 as stated (15 equal, 90 disjoint, 120 intersecting); K7 degrees are 10 as expected; falsifier does not fire"
+ },
+ "review": "Independent common-neighbor count: K6 T^2 weights are 6/1/3 on equal/disjoint/intersecting 2-subsets; K7 degrees 10. Falsifier does not fire.",
+ "what": "PR #8081 ([physics-loop] Correlated native Ward bounds (conditional-su): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/native-correlated-ward-20260910; git show origin/codex/native-correlated-ward-20260910:<note>. Create probes/work/pr8081/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8081/<script>.py\"",
+ "stdout_sha256": "8321cabeb203c15b5ed619be4ac6fcb1f886ea4432af06a8c3e0f62adb75d810",
+ "stdout_tail": "K6: equal 15 disjoint 90 intersecting 120\nINFO K7: T^2 diagonal (degrees) = [10] (K6 was 6; C(5,2)=10)\nSUMMARY: T^2 weights on K6 2-subsets are 6/1/3 as stated (15 equal, 90 disjoint, 120 intersecting); K7 degrees are 10 as expected; falsifier does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd396",
+  "at_utc": "20260919T042846Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-formation-clauses-in-level-time-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j8228",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-clauses-in-level-time/referee_w-jonathonsmac4f50-j8228/check.py",
+ "seed": 96285,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dd659ec1",
+ "started_utc": "20260919T053805Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 4 - two same-level sites are never nearest neighbours on Z^3 (the fork offset e_i - e_j has squared length 2), so the rule puts no phi factor between them: joint formation of a same-level pair (or of a whole level, which has no internal bond) is exactly the NEC product (TV 0, P(both +x) = 81/400); the attempt's 2187/7876 and 360383/3544200 reproduce only with an added phi(s_u, s_v) bond, so 'joint units fail (N1)' is not shown by the fork pair (joint units fail only when they contain a bond, i.e. span two levels); the other finite facts re-derive: noise map (11/20, 17/26, 35/44; 33/1033), the four cube numbers as stated (Z = 6982520832), TV(monotone, joint) = 0.0505159881, block 24's 26/22/24 and 1/72, the slab histograms and probabilities as stated"
+ },
+ "review": "Noise map, the four cube all-+x probabilities (Z = 6982520832), TV(monotone, joint) = 0.0505159881, block 24's 26/22/24 and 1/72, and the slab histograms/probabilities all re-derive, but step 4's fork pair z-e1, z-e2 is not a Z^3 bond (squared distance 2): joint formation of a same-level pair or a whole level is exactly the NEC product (TV 0, 81/400), and the attempt's 2187/7876 and 360383/3544200 come back only with an added phi(s_u,s_v) bond: fails at step 4.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-clauses-in-level-time:a3/; its files are probes/work/derive/formation-clauses-in-level-time/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-clauses-in-level-time/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e2b7e20f686453feff8607ea9d548de696d9bbd9fb37c888598c4a7717996116",
+ "stdout_tail": "3 fork pair u = z - e1, v = z - e2: |u - v|^2 = 2 (not a bond); joint formation under the rule's bonds = NEC product, P(both +x) = 81/400, TV(joint, NEC) = 0; with an added phi(s_u, s_v) bond: P(both +x) = 2187/7876, TV = 360383/3544200 (the attempt's 2187/7876 and 360383/3544200); bonds inside level 1 of the cube: 0\nC4 block 24's M at (3,1,2): values [22, 24, 26]; TV(uniform, M/sum M) = 1/72\nC5 slab 3x3x2: monotone connected order from a corner has k-histogram {0: 1, 1: 5, 2: 8, 3: 4}, P(all +x) = 94143178827/68428452520263680000; an order planting a second seed with histogram (0:2, 1:3, 2:9, 3:4) found: [(2, 0, 1), (2, 2, 1), (2, 1, 1)]...; its P(all +x) = 282429536481/222392470690856960000; smaller: True\nSUMMARY: fails at step 4 - two same-level sites are never nearest neighbours on Z^3 (the fork offset e_i - e_j has squared length 2), so the rule puts no phi factor between them: joint formation of a same-level pair (or of a whole level, which has no internal bond) is exactly the NEC product (TV 0, P(both +x) = 81/400); the attempt's 2187/7876 and 360383/3544200 reproduce only with an added phi(s_u, s_v) bond, so 'joint units fail (N1)' is not shown by the fork pair (joint units fail only when they contain a bond, i.e. span two levels); the other finite facts re-derive: noise map (11/20, 17/26, 35/44; 33/1033), the four cube numbers as stated (Z = 6982520832), TV(monotone, joint) = 0.0505159881, block 24's 26/22/24 and 1/72, the slab histograms and probabilities as stated\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8228",
+  "at_utc": "20260919T053807Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

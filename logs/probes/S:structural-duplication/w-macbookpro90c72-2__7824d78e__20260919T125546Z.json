@@ -1,0 +1,32 @@
+{
+ "task": "S:structural-duplication",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/structural.py 163 1800 5 5 8 A",
+ "seed": 163,
+ "minutes": 30.0,
+ "box": "5x5x8",
+ "git_sha": "7824d78e",
+ "started_utc": "20260919T125546Z",
+ "elapsed_s": 1800.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "(0, 0, 2)"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "climb with duplication moves (a band of marks copied beside itself) for a processed site with all predecessors tight (hard > 0) or a rooted value above 0 (vmax > 0); either is a HIT.",
+ "stdout_sha256": "5156a859ca3cb3b675633b74a0442230e047987dc4ff5e84c9e37bce0cfdef19",
+ "stdout_tail": "seed 163 5x5x8 from Z_A: start (0, 0, 1)\nseed 163: (hard, vmax, tight) = (0, 0, 2); detail None; zeta=[(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (0, 4, 4), (1, 0, 0), (1, 0, 2), (1, 0, 5), (1, 2, 0), (1, 2, 5), (1, 3, 1), (2, 0, 0), (2, 1, 3), (2, 2, 3), (2, 3, 3), (2, 3, 6), (2, 3, 7), (3, 0, 1), (3, 0, 2), (3, 1, 0), (3, 1, 3), (3, 3, 5), (3, 3, 6), (4, 2, 1)]\nseed 163: done best=(0, 0, 2)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T132546Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

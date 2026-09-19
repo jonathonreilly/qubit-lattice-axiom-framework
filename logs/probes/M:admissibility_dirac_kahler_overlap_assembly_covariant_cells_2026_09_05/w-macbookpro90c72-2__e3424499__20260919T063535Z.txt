@@ -1,0 +1,224 @@
+== stale_main_authority
+TOTAL: PASS=29 FAIL=1
+== stale_parent_authority
+TOTAL: PASS=29 FAIL=1
+== claim_objects_registered
+TOTAL: PASS=29 FAIL=1
+== claim_gravity_supplied
+TOTAL: PASS=29 FAIL=1
+== claim_covariance_inherited
+TOTAL: PASS=29 FAIL=1
+== claim_assembly_decided
+TOTAL: PASS=29 FAIL=1
+== claim_cell_selected
+TOTAL: PASS=29 FAIL=1
+== claim_metric_supplied
+TOTAL: PASS=29 FAIL=1
+== break_cell_census
+TOTAL: PASS=29 FAIL=1
+== break_witness_reproduction
+TOTAL: PASS=29 FAIL=1
+== break_fold_sees_sum
+TOTAL: PASS=29 FAIL=1
+== break_flat_control
+TOTAL: PASS=29 FAIL=1
+== break_union_locus_s
+TOTAL: PASS=29 FAIL=1
+== break_strict_stabiliser
+TOTAL: PASS=29 FAIL=1
+== break_twisted_stabiliser
+TOTAL: PASS=29 FAIL=1
+== break_shear_relation
+TOTAL: PASS=29 FAIL=1
+== claim_curve_satisfies_shear_relation
+TOTAL: PASS=29 FAIL=1
+== break_overlap_cone_pair
+TOTAL: PASS=29 FAIL=1
+== claim_overlap_cone_is_onsite_cone
+TOTAL: PASS=29 FAIL=1
+== break_overlap_cone_symbolic_s
+TOTAL: PASS=29 FAIL=1
+== break_bench_multisets
+TOTAL: PASS=29 FAIL=1
+== break_bloch_equals_direct
+TOTAL: PASS=29 FAIL=1
+== break_bench_control
+TOTAL: PASS=29 FAIL=1
+== break_bench_reads_principal_part
+TOTAL: PASS=29 FAIL=1
+== break_bloch_fold_sees_parameters
+TOTAL: PASS=29 FAIL=1
+== break_scout_grade_fence
+TOTAL: PASS=29 FAIL=1
+== break_instance_scope
+TOTAL: PASS=29 FAIL=1
+== drop_n5_fence
+TOTAL: PASS=29 FAIL=1
+== break_float_absence
+TOTAL: PASS=29 FAIL=1
+
+[stderr]
+loci] witness W1
+[loci] witness flat
+[phase] loci: 46151 ms
+[cone] witness 2
+[cone] witness 11
+[cone] witness 16
+[cone] witness 25
+[cone] witness 38
+[cone] witness 47
+[cone] witness 52
+[cone] witness 61
+[cone] witness W1
+[cone] witness flat
+[phase] cone: 37676 ms
+[bench] witness line onsite form
+[bench] witness line onsite pencil
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] W1 line onsite form
+[bench] W1 line onsite pencil
+[bench] W1 line overlap form
+[bench] W1 line overlap pencil
+[bench] flat line onsite form
+[bench] flat line onsite pencil
+[bench] flat line overlap form
+[bench] flat line overlap pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] W1 zero overlap form
+[bench] W1 zero overlap pencil
+[phase] bench: 4875 ms
+[phase] smallk: 1336 ms
+[phase] authority: 5 ms
+[phase] group: 14880 ms
+[phase] census: 1642 ms
+[phase] fold: 66 ms
+[loci] witness 2
+[loci] witness 11
+[loci] witness 16
+[loci] witness 25
+[loci] witness 38
+[loci] witness 47
+[loci] witness 52
+[loci] witness 61
+[loci] witness W1
+[loci] witness flat
+[phase] loci: 46515 ms
+[cone] witness 2
+[cone] witness 11
+[cone] witness 16
+[cone] witness 25
+[cone] witness 38
+[cone] witness 47
+[cone] witness 52
+[cone] witness 61
+[cone] witness W1
+[cone] witness flat
+[phase] cone: 37880 ms
+[bench] witness line onsite form
+[bench] witness line onsite pencil
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] W1 line onsite form
+[bench] W1 line onsite pencil
+[bench] W1 line overlap form
+[bench] W1 line overlap pencil
+[bench] flat line onsite form
+[bench] flat line onsite pencil
+[bench] flat line overlap form
+[bench] flat line overlap pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] W1 zero overlap form
+[bench] W1 zero overlap pencil
+[phase] bench: 4924 ms
+[phase] smallk: 1429 ms
+[phase] authority: 5 ms
+[phase] group: 15112 ms
+[phase] census: 1704 ms
+[phase] fold: 68 ms
+[loci] witness 2
+[loci] witness 11
+[loci] witness 16
+[loci] witness 25
+[loci] witness 38
+[loci] witness 47
+[loci] witness 52
+[loci] witness 61
+[loci] witness W1
+[loci] witness flat
+[phase] loci: 50319 ms
+[cone] witness 2
+[cone] witness 11
+[cone] witness 16
+[cone] witness 25
+[cone] witness 38
+[cone] witness 47
+[cone] witness 52
+[cone] witness 61
+[cone] witness W1
+[cone] witness flat
+[phase] cone: 38348 ms
+[bench] witness line onsite form
+[bench] witness line onsite pencil
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] W1 line onsite form
+[bench] W1 line onsite pencil
+[bench] W1 line overlap form
+[bench] W1 line overlap pencil
+[bench] flat line onsite form
+[bench] flat line onsite pencil
+[bench] flat line overlap form
+[bench] flat line overlap pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] W1 zero overlap form
+[bench] W1 zero overlap pencil
+[phase] bench: 5294 ms
+[phase] smallk: 1430 ms
+[phase] authority: 4 ms
+[phase] group: 15238 ms
+[phase] census: 1691 ms
+[phase] fold: 68 ms
+[loci] witness 2
+[loci] witness 11
+[loci] witness 16
+[loci] witness 25
+[loci] witness 38
+[loci] witness 47
+[loci] witness 52
+[loci] witness 61
+[loci] witness W1
+[loci] witness flat
+[phase] loci: 48235 ms
+[cone] witness 2
+[cone] witness 11
+[cone] witness 16
+[cone] witness 25
+[cone] witness 38
+[cone] witness 47
+[cone] witness 52
+[cone] witness 61
+[cone] witness W1
+[cone] witness flat
+[phase] cone: 38129 ms
+[bench] witness line onsite form
+[bench] witness line onsite pencil
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] W1 line onsite form
+[bench] W1 line onsite pencil
+[bench] W1 line overlap form
+[bench] W1 line overlap pencil
+[bench] flat line onsite form
+[bench] flat line onsite pencil
+[bench] flat line overlap form
+[bench] flat line overlap pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] W1 zero overlap form
+[bench] W1 zero overlap pencil
+[phase] bench: 4892 ms
+[phase] smallk: 1377 ms

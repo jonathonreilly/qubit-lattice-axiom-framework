@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-in-3plus1-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jff50",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-in-3plus1/referee_w-jonathonsmac4f50-jff50/check.py",
+ "seed": 83378,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "df3fedf6",
+ "started_utc": "20260919T020258Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "attempt jb4a1 confirmed; attempt j4249 fails at step 4 - its chessboard no-go rests on the claim that the formation law is not a Gibbs measure, which is false (a finite-window formation law is a product of positive local factors, block 10), and it does not examine whether some reflection makes the law reflection positive; its steps 1-3 hold"
+ },
+ "review": "Referee of formation-in-3plus1 a3 (two grok-4.6 attempts): independent checks pass 6 of 6 (h'''' = -u sinh u and the monotonicity identity, beta_c = 3/4 with a unique root, the four-predecessor covariance with eigenvalues 1/16, 1/4, 1/4 and det 1/256, G_2 = 25/24 by Fourier and by real-space Lyapunov, the prefactor 4/pi, and a small window showing the formation law is Gibbs), so attempt jb4a1 is confirmed and attempt j4249's steps 1-3 hold, while j4249 fails at step 4 (its chessboard no-go assumes the formation law is not Gibbs); this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-in-3plus1:a3/; its files are probes/work/derive/formation-in-3plus1/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-in-3plus1/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "cbac7804a7f4900c3486f5f8422f35d4640197c0d3507f4fcd39479fd7310906",
+ "stdout_tail": "^T/16 with eigenvalues 1/16 (once) and 1/4 (twice), det 1/256; 1 - |phi|^2 = k^T Cov k + O(k^4) along (1,0,0), (1,1,1), (1,-2,3); hence 4/|k|^2 <= 1/(k^T M k) <= 16/|k|^2\nPASS: F4 G_2 = 25/24 (Fourier on (Z/2)^3) = 25/24 (real-space Lyapunov)\nPASS: F5 1/(4 pi sqrt(det M)) = 4/pi\nPASS: F6 on a small binary formation window (three level-0 sites, two level-1 records, one level-2 record) the joint law is a product of positive local factors, and the one-site conditional of a level-0 site does not depend on a record outside its recorded-set neighbourhood: the formation law is a Gibbs measure (block 10), so 'not the marginal of a Gibbs measure' is not the obstruction to a chessboard argument\nHIT: confirmed - attempt jb4a1 survives: G_2 = 25/24 (Fourier and real space), the four-predecessor covariance with eigenvalues 1/16, 1/4, 1/4 and det 1/256, 1 - |phi|^2 = k^T M k + O(k^4), and the continuum prefactor 1/(4 pi sqrt(det M)) = 4/pi (the Fourier transform assumed as stated); attempt j4249's steps 1-3 also hold (A(k)/k decreasing via h'''' = -u sinh u, beta_c = 3/4 with a unique positive mean-field root, the envelope 4..16 sigma^2/|k|^2)\nSUMMARY: attempt jb4a1 confirmed; attempt j4249 fails at step 4 - its chessboard no-go rests on the claim that the formation law is not a Gibbs measure, which is false (a finite-window formation law is a product of positive local factors, block 10), and it does not examine whether some reflection makes the law reflection positive; its steps 1-3 hold\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jff50",
+  "at_utc": "20260919T020258Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of attempt jb4a1's exact partial (G_2 = 25/24, det M = 1/256, continuum prefactor 4/pi for the 3+1 formation law's linearization); attempt j4249 fails at its chessboard no-go",
+  "by": "w-jonathonsmac4f50-jff50",
+  "at_utc": "20260919T020258Z"
+ }
+}

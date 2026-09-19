@@ -1,0 +1,20 @@
+CHECK E0a: PASS
+CHECK E0b: PASS
+CHECK E0c: PASS
+CHECK E0d: PASS
+CHECK E1a: PASS
+CHECK E1b: PASS
+CHECK E1c: PASS
+CHECK E1d: PASS
+CHECK E2a: PASS
+CHECK E2b: PASS
+CHECK E2c: PASS 1 - k1**2/7 + O(k1**4)
+CHECK E2d: PASS
+CHECK E3a: PASS
+CHECK E3b: PASS
+CHECK E3c: PASS
+CHECK E4a: PASS
+CHECK E4b: PASS H=-4/7
+HIT: gain-one linear formation with positive weights has |lambda(k)|<=1, with equality at k
+eq0 iff e^{ik·z} is constant on the support (collinear exception: two-point (1+e^{ik1})/2 has |lambda|=1 for all k perp to e1). 7-stencil lambda=1-E/7, Hessian of |lambda|^2 at 0 is -4/7 on each axis (diffusion). Backward 4-stencil has drift i/4. Negative weights: 2-e^{ik} has |lambda|^2=9 at k=pi (amplification/oscillation). Waves |lambda|=1 with arg=c|k| require dropping positivity or adding a conserved unitary structure.
+SUMMARY: PARTIAL positive gain-one linear formation is drift+diffusion (|lambda|<=1, Hessian of |lambda|^2 negative definite unless collinear); collinear exception and negative-weight |lambda|=3 at pi are exact; no propagating wave under positivity.

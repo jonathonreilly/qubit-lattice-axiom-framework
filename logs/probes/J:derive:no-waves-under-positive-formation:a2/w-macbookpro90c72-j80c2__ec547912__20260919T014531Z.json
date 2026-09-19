@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:no-waves-under-positive-formation:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j80c2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/no-waves-under-positive-formation/w-macbookpro90c72-j80c2/check.py",
+ "seed": 82331,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec547912",
+ "started_utc": "20260919T014531Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL positive gain-one linear formation is drift+diffusion (|lambda|<=1, Hessian of |lambda|^2 negative definite unless collinear); collinear exception and negative-weight |lambda|=3 at pi are exact; no propagating wave under positivity."
+ },
+ "review": "Positive gain-one linear formation is drift+diffusion with |lambda|<=1; collinear exception |lambda|=1 on a plane; 7-stencil Hessian -4/7; negative weights give |lambda|=3 at pi.",
+ "what": "DERIVATION, independent attempt 2 of 4: Diffusion is forced: no propagating mode in any positive-weight formation law, or the exception. Every linear kernel found so far under the formation reading is diffusive: a mode decays per level like 1 - D k^2, against the comparator's Green function whose transfer along a direction decays like |k| (README section 8; block 35, PR #8180). A theory of gravity and light needs propagating, not only diffusing, disturbances. TASK: for gain-one linear formation models with positive weights over finitely many earlier levels and a finite predecessor set, prove that the multiplier lambda(k) nearest 1 has the form 1 + i v.k - D(k) with D a positive-definite quadratic form (so: drift plus diffusion, never a wave |lambda| = 1 with arg lambda = c|k|), or exhibit the exception; then identify the weakest change that WOULD give waves (a record formed from two earlier levels with a negative weight is excluded by positivity; a complex or spinor-valued record with unitary overlap weights; a conserved quantity), and state what each costs in terms of the axiom (positivity of overlap weights, the menu, the record being real). Deliver the theorem with its hypotheses and the exact finite checks of the dispersion relations used. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/no-waves-under-positive-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/no-waves-under-positive-formation/<name>/check.py\"",
+ "stdout_sha256": "60812b0adad1ac7ccfd43fe998b34382487d28fc2cb0e863d198e753993fa0ec",
+ "stdout_tail": "CHECK E0a: PASS\nCHECK E0b: PASS\nCHECK E0c: PASS\nCHECK E0d: PASS\nCHECK E1a: PASS\nCHECK E1b: PASS\nCHECK E1c: PASS\nCHECK E1d: PASS\nCHECK E2a: PASS\nCHECK E2b: PASS\nCHECK E2c: PASS 1 - k1**2/7 + O(k1**4)\nCHECK E2d: PASS\nCHECK E3a: PASS\nCHECK E3b: PASS\nCHECK E3c: PASS\nCHECK E4a: PASS\nCHECK E4b: PASS H=-4/7\nHIT: gain-one linear formation with positive weights has |lambda(k)|<=1, with equality at k\neq0 iff e^{ik\u00b7z} is constant on the support (collinear exception: two-point (1+e^{ik1})/2 has |lambda|=1 for all k perp to e1). 7-stencil lambda=1-E/7, Hessian of |lambda|^2 at 0 is -4/7 on each axis (diffusion). Backward 4-stencil has drift i/4. Negative weights: 2-e^{ik} has |lambda|^2=9 at k=pi (amplification/oscillation). Waves |lambda|=1 with arg=c|k| require dropping positivity or adding a conserved unitary structure.\nSUMMARY: PARTIAL positive gain-one linear formation is drift+diffusion (|lambda|<=1, Hessian of |lambda|^2 negative definite unless collinear); collinear exception and negative-weight |lambda|=3 at pi are exact; no propagating wave under positivity.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j80c2",
+  "at_utc": "20260919T014538Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Positive gain-one linear formation is drift+diffusion; collinear exception; negative-weight |lambda|=3 at pi.",
+  "by": "w-macbookpro90c72-j80c2",
+  "at_utc": "20260919T014538Z"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:corrigendum-PR8180:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-jb8bf",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/corrigendum-PR8180/w-jonathonsmac4f50-jb8bf/check.py",
+ "seed": 37778,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9165dc56",
+ "started_utc": "20260919T170938Z",
+ "elapsed_s": 6.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (ATTEMPT.md S1-S9; finite facts CHECKED here) corrigendum for PR #8180: T1's display Cov(theta^_k(t), theta^_k(t+s)) = phi^s Var holds exactly with block 34's transform L^-1 sum e^(-ik.x) theta_x and the pairing E[X conj Y] of the note's own executed observable, and C_s = sigma^2 (I - PP*)^-1 P*^s has eigenvalue sigma^2 phi^s/(1 - u) on e^(ik.x); the proof's line theta^_k(t+s) = phi^s theta^_k(t) + noise is false in that transform (the multiplier is conj(phi), as in block 34 T1.1, same slip); in the conjugate readings (the +ik transform with E[X conj Y], or the Fourier coefficient of the forward correlation) the kernel is conj(phi)^s/(1 - u); all readings agree exactly where phi^s is real (8 of 24 (mode, s) pairs on L = 3, 19 of 45 on L = 4); convention-free: c'Sc + s'Ss = Re(phi^s) W, c'Ss - s'Sc = Im(phi^s) W. T3/D2: the mixed-derivative test calls both kernels non-products (lattice and level frames); in (k, tau) both are a positive plane factor times the same phase conj(phi)^tau times exp(-|tau| rho), rho_F = -(1/2) log(1 - y^2) ~ y^2/2 against rho_C = artanh y ~ y, y = sqrt(1 - u); G^/C^ = y/(6 sigma^2 (1 + y)^|tau|); E = 3 sigma^2/S_F + 3(1 - u)"
+ },
+ "review": "check.py prints 13 ok lines and SUMMARY: PROVED - exact on the L = 3, 4 tori in Q(sqrt3, i) with the runner's own covariance recursion, block 35's T1 display and operator gloss agree under block 34's transform and the executed observable's pairing E[X conj Y], while the proof's multiplier line and block 34 T1.1 need conj(phi) (the readings differ on 16/24 and 26/45 (mode, s) pairs, exactly where phi^s is not real); symbolically E = 3 sigma^2/S_F + 3(1 - u), the runner's mixed-derivative test flags both kernels, and in (k, tau) the two kernels share the phase conj(phi)^tau with rates -(1/2)log(1 - y^2) against artanh y (quadrature cross-check to 7e-32); this matches the task's (a)-(c) deliverable.",
+ "what": "DERIVATION, independent attempt 2 of 2: Corrigendum packet for PR #8180. A probe found and another model family confirmed this defect in PR #8180: T1: phi^s/(1 - |phi|^2) against (I - PP*)^-1 P*^s differ by complex conjugation on every nonzero mode (cosine characters hid it); and T3/D2's product-structure separation is representation-dependent. TASK: (a) the minimal corrected statement (the largest domain on which the original holds, or the corrected formula), proved; (b) every later statement in that note AND in other notes of the campaign that uses the defective one (search the PR branches of blocks 12-35: PRs #8146-#8180), with a verdict for each: unaffected / holds on the corrected domain / needs its own repair; (c) the exact lines of the note and runner that must change. check.py verifies the corrected statement exactly and exhibits the original's failure. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/corrigendum-PR8180/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/corrigendum-PR8180/<name>/check.py\"",
+ "stdout_sha256": "fbd3b45b12c695b5de0c910ac1cf123cfd2920c4a34eb2d328f725d4165db546",
+ "stdout_tail": "c'Ss - s'Sc = Im(phi^s) W. T3/D2: the mixed-derivative test calls both kernels non-products (lattice and level frames); in (k, tau) both are a positive plane factor times the same phase conj(phi)^tau times exp(-|tau| rho), rho_F = -(1/2) log(1 - y^2) ~ y^2/2 against rho_C = artanh y ~ y, y = sqrt(1 - u); G^/C^ = y/(6 sigma^2 (1 + y)^|tau|); E = 3 sigma^2/S_F + 3(1 - u)\nHIT: corrigendum for PR #8180: T1's display Cov(theta^_k(t), theta^_k(t+s)) = phi^s Var holds exactly with block 34's transform L^-1 sum e^(-ik.x) theta_x and the pairing E[X conj Y] of the note's own executed observable, and C_s = sigma^2 (I - PP*)^-1 P*^s has eigenvalue sigma^2 phi^s/(1 - u) on e^(ik.x); the proof's line theta^_k(t+s) = phi^s theta^_k(t) + noise is false in that transform (the multiplier is conj(phi), as in block 34 T1.1, same slip); in the conjugate readings (the +ik transform with E[X conj Y], or the Fourier coefficient of the forward correlation) the kernel is conj(phi)^s/(1 - u); all readings agree exactly where phi^s is real (8 of 24 (mode, s) pairs on L = 3, 19 of 45 on L = 4); convention-free: c'Sc + s'Ss = Re(phi^s) W, c'Ss - s'Sc = Im(phi^s) W. T3/D2: the mixed-derivative test calls both kernels non-products (lattice and level frames); in (k, tau) both are a positive plane factor times the same phase conj(phi)^tau times exp(-|tau| rho), rho_F = -(1/2) log(1 - y^2) ~ y^2/2 against rho_C = artanh y ~ y, y = sqrt(1 - u); G^/C^ = y/(6 sigma^2 (1 + y)^|tau|); E = 3 sigma^2/S_F + 3(1 - u)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb8bf",
+  "at_utc": "20260919T171006Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "claim for referee: corrigendum packet for PR #8180 - corrected T1' (conventions pinned; proof line and block 34 T1.1 carry the conj slip; convention-free sine-cosine form; reading-independent exactly where phi^s is real) and T3' (both kernels non-products in (k, w); both propagator forms in (k, tau) with a common phase; separation = rates y^2/2 vs artanh y and plane factors), verdict tables for the note, its pack files and six other campaign notes, exact note and runner lines; not independent of the T1/T3 findings (same model family found T3/D2 and confirmed #8412)",
+  "by": "w-jonathonsmac4f50-jb8bf",
+  "at_utc": "20260919T171006Z"
+ }
+}

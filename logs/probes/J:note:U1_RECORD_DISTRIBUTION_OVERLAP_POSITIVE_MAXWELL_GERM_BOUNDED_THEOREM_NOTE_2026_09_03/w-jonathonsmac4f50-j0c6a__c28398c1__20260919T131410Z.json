@@ -1,0 +1,38 @@
+{
+ "task": "J:note:U1_RECORD_DISTRIBUTION_OVERLAP_POSITIVE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026_09_03",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j0c6a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_RECORD_DISTRIBUTION_OVERLAP_POSITIVE_/exact_overlaps_histograms_and_blocks.py",
+ "seed": 23650,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c28398c1",
+ "started_utc": "20260919T131410Z",
+ "elapsed_s": 22.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "A 62 exact nonnegative densities (62 with negative/complex coefficients): overlap coefficients real modulus squares (failures 0), C <= C(0) on 721 points (failures 0), kappa = ||p'||^2/||p||^2 exact (failures 0), kappa > 0 (failures 0), 50-digit finite difference agrees to 4.1e-12; kappa in [0.0689, 4.9579]; uniform gives C = 1, kappa = 0",
+   "B equal-bin histograms: |C_N - C(pi/4)| = 0.000283 (N=16) ... 4.33e-9 (N=4096), ratios -> 4.0 (N^-2), exact sinc^2 bin identity to 2.7e-51; unequal 1:2 bins give N sum f^2 = 1.168055 vs C(0) = 1.05125",
+   "C example: C = 1 + 9/50 cos, V''(0) = 9/59, raw -log p curvature -3/2",
+   "D blocks at k_0 = 0: temporal-only rank 1 with zero static transverse energy (0), isotropic rank 3 with transverse energy k_t*(s1**2 + s2**2 + s3**2); 2982 momenta on L = 4..10: failures 0",
+   "hits=0; runtime 22s"
+  ]
+ },
+ "review": "Output matches the task. On 62 exact nonnegative densities p = |q|^2/||q||^2 (all with negative or complex Fourier coefficients, including the note's example and an asymmetric sine density), the overlap coefficients from the defining convolution are real modulus squares, C <= C(0) holds on 721 points, and kappa = ||p'||^2/||p||^2 exactly and > 0 (range 0.069-4.958); a 50-digit finite difference of -log C agrees to 4e-12. Exact equal-bin Record histograms converge to C at rate N^-2 up to N = 4096 (the runner stops at 256), matching an exact sinc^2 bin identity to 3e-51, while unequal 1:2 bins tend to (10/9) C(0). The sec. 4 values C = 1 + 9/50 cos, V''(0) = 9/59 and raw curvature -3/2 reproduce. The static temporal-only block has rank 1 with zero transverse stiffness, and the isotropic block has rank 3 with spectrum {0, |s|^2 x3} at all 2982 static momenta on L = 4..10. No falsifier fired.",
+ "what": "Note on main: docs/U1_RECORD_DISTRIBUTION_OVERLAP_POSITIVE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_RECORD_DISTRIBUTION_OVERLAP_POSITIVE_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_RECORD_DISTRIBUTION_OVERLAP_POSITIVE_/<script>.py\"",
+ "stdout_sha256": "f8d7cf608751450f9d642f9e0a46b1857fe3daac10b54bda690c427f18e14b50",
+ "stdout_tail": "048: 1.73e-8/8.73e-8, N=4096: 4.33e-9/2.18e-8\n  successive error ratios at pi/4: ['3.9846', '3.9961', '3.999', '3.9998', '3.9999', '4.0', '4.0', '4.0'] (-> 4 for N^-2); sinc^2 identity max dev 2.67e-51\n  unequal 1:2 bins, N sum f_i^2 at zero shift: N=64: 1.167905786, N=256: 1.16804618, N=1024: 1.16805497 vs C(0) = 1.05125\nSUMMARY: B equal-bin histograms: |C_N - C(pi/4)| = 0.000283 (N=16) ... 4.33e-9 (N=4096), ratios -> 4.0 (N^-2), exact sinc^2 bin identity to 2.7e-51; unequal 1:2 bins give N sum f^2 = 1.168055 vs C(0) = 1.05125\n==============================================================================\nC  the sec. 4 example\n  C = 1 + 9/50 cos(delta); V''(0) = 9/59 = 0.18/1.18; raw curvature -3/2\nSUMMARY: C example: C = 1 + 9/50 cos, V''(0) = 9/59, raw -log p curvature -3/2\n==============================================================================\nD  sec. 6 quadratic gauge blocks\n  k_0 = 0 symbolic: temporal-only rank 1, isotropic rank 3, gauge (0, s) null: True; static transverse energy: temporal-only 0, isotropic k_t*(s1**2 + s2**2 + s3**2) per unit norm\n  2982 static momenta on L = 4..10: temporal-only rank 1, isotropic rank 3 with spectrum {0, |s|^2 x3}: failures 0\nSUMMARY: D blocks at k_0 = 0: temporal-only rank 1 with zero static transverse energy (0), isotropic rank 3 with transverse energy k_t*(s1**2 + s2**2 + s3**2); 2982 momenta on L = 4..10: failures 0\n==============================================================================\nSUMMARY: hits=0; runtime 22s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0c6a",
+  "at_utc": "20260919T131442Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

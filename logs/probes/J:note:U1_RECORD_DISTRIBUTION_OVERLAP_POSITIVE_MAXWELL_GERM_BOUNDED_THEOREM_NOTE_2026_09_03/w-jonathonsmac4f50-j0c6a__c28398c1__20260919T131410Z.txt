@@ -1,0 +1,22 @@
+==============================================================================
+A  autocorrelation theorem on exact nonnegative densities
+  62 densities (62 with negative or complex nonzero Fourier coefficients): overlap coefficient not a real modulus square: 0; C(delta) > C(0) somewhere: 0; kappa != ||p'||^2/||p||^2: 0; kappa <= 0: 0; max |finite-difference V''(0) - kappa| 4.12e-12; kappa range [0.0689, 4.9579]
+  uniform density: C = 1 (no nonzero coefficient), kappa = 0
+SUMMARY: A 62 exact nonnegative densities (62 with negative/complex coefficients): overlap coefficients real modulus squares (failures 0), C <= C(0) on 721 points (failures 0), kappa = ||p'||^2/||p||^2 exact (failures 0), kappa > 0 (failures 0), 50-digit finite difference agrees to 4.1e-12; kappa in [0.0689, 4.9579]; uniform gives C = 1, kappa = 0
+==============================================================================
+B  Record histograms: equal bins, the sinc^2 identity, unequal bins
+  equal bins |C_N - C| at delta = pi/4 and 0: N=16: 0.000283/0.00141, N=32: 7.09e-5/0.000356, N=64: 1.77e-5/8.93e-5, N=128: 4.44e-6/2.23e-5, N=256: 1.11e-6/5.58e-6, N=512: 2.77e-7/1.4e-6, N=1024: 6.93e-8/3.49e-7, N=2048: 1.73e-8/8.73e-8, N=4096: 4.33e-9/2.18e-8
+  successive error ratios at pi/4: ['3.9846', '3.9961', '3.999', '3.9998', '3.9999', '4.0', '4.0', '4.0'] (-> 4 for N^-2); sinc^2 identity max dev 2.67e-51
+  unequal 1:2 bins, N sum f_i^2 at zero shift: N=64: 1.167905786, N=256: 1.16804618, N=1024: 1.16805497 vs C(0) = 1.05125
+SUMMARY: B equal-bin histograms: |C_N - C(pi/4)| = 0.000283 (N=16) ... 4.33e-9 (N=4096), ratios -> 4.0 (N^-2), exact sinc^2 bin identity to 2.7e-51; unequal 1:2 bins give N sum f^2 = 1.168055 vs C(0) = 1.05125
+==============================================================================
+C  the sec. 4 example
+  C = 1 + 9/50 cos(delta); V''(0) = 9/59 = 0.18/1.18; raw curvature -3/2
+SUMMARY: C example: C = 1 + 9/50 cos, V''(0) = 9/59, raw -log p curvature -3/2
+==============================================================================
+D  sec. 6 quadratic gauge blocks
+  k_0 = 0 symbolic: temporal-only rank 1, isotropic rank 3, gauge (0, s) null: True; static transverse energy: temporal-only 0, isotropic k_t*(s1**2 + s2**2 + s3**2) per unit norm
+  2982 static momenta on L = 4..10: temporal-only rank 1, isotropic rank 3 with spectrum {0, |s|^2 x3}: failures 0
+SUMMARY: D blocks at k_0 = 0: temporal-only rank 1 with zero static transverse energy (0), isotropic rank 3 with transverse energy k_t*(s1**2 + s2**2 + s3**2); 2982 momenta on L = 4..10: failures 0
+==============================================================================
+SUMMARY: hits=0; runtime 22s

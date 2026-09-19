@@ -1,0 +1,1 @@
+SUMMARY: SAMPLED EVIDENCE (PR #8168): the load-bearing cone checks are exhaustive (1024 depth-2) or censused, not a never/always-observed sampler; pattern has no purchase

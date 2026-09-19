@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-chessboard-repair-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j507f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/chessboard-repair/referee_w-macbookpro90c72-j507f/check.py",
+ "seed": 76136,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "615f181e",
+ "started_utc": "20260919T000216Z",
+ "elapsed_s": 66.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - block 17 repaired: site reflections give 216m in 2D and 1296m in 3D; bond-plane RP when phi PSD restores 216m in 3D as stated"
+ },
+ "review": "referee confirms the chessboard repair: orbit is one parity class, lemma and sharpness hold for 2L>=4, phi PSD spectrum and ring RP hold, 216m restored via bond-plane RP; author's 4x2 min=8 is false on a degenerate torus and unused",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:chessboard-repair:a1/; its files are probes/work/derive/chessboard-repair/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/chessboard-repair/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "286c4e89d20cc74e3319192ff4edae256e409ef5ce7793017c614264633e2971",
+ "stdout_tail": "regular)\n  2D side 4: sharpness pattern bad=16 N=16 dN=32 equal N: True\n  2D side 6: sharpness pattern bad=36 N=36 dN=72 equal N: True\n  3D side 4: sharpness bad=48 3N/4=48 dN=192 equal: True\n  3D side 6: sharpness bad=162 3N/4=162 dN=648 equal: True\nC eigenvalues of phi:\n  True {'p + q + 4*r': 1, 'p + q - 2*r': 2, 'p - q': 3}\nC ring RP quadratic form:\n  (5, 2, 4): eigmin=-368 eigmax=8221\n  (1, 3, 2): eigmin=-136 eigmax=629\n  (3, 1, 2): eigmin=-1.051e-13 eigmax=629\n  (216, 1, 1): eigmin=4.622e+04 eigmax=2.177e+09\n  (5, 2, 4) rounded-evec Q=-7808\n  (1, 3, 2) rounded-evec Q=-3168\n  (3, 1, 2) rounded-evec Q=57\nE arithmetic 216^{4/3}=1296 and p>=216m => PSD:\n  True\nE 4x2 mu(E)^{1/N} vs 6m/p at (216,1,1) (degenerate graph, not a proof obligation):\n  mu=5.121340e-13 root=0.029085 bound=0.027778 le=False (expected fail: min b < N)\nHIT: confirmed - the claim survives; independently: site-reflection orbit on (Z/4)^2 is one transverse-parity class of size N/2; lemma bad(s)+2 bad(s,a)>=n at n=4,6; sharpness patterns attain exactly N bad bonds in 2D and 3N/4 in 3D on sides 4 and 6; phi eigenvalues p+q+4r, p-q (x3), p+q-2r (x2); four-site ring form is indefinite iff not PSD; 216^{4/3}=6^4=1296 and p>=216m implies PSD. Author's 4x2 enumeration (min=8) is false on that degenerate graph (min=6, not 4-regular) and is not used by the 2L>=4 argument\nSUMMARY: confirmed - block 17 repaired: site reflections give 216m in 2D and 1296m in 3D; bond-plane RP when phi PSD restores 216m in 3D as stated\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j507f",
+  "at_utc": "20260919T000336Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "confirms chessboard repair of block 17: 216m restored via bond-plane RP when phi PSD; site-reflection route is 216m in 2D and 1296m in 3D; author's 4x2 min=8 is a false check on a degenerate torus",
+  "by": "w-macbookpro90c72-j507f",
+  "at_utc": "20260919T000336Z"
+ }
+}

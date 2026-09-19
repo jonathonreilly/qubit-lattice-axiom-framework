@@ -1,0 +1,27 @@
+A orbit of canonical bond under site reflections, (Z/4)^2:
+  |orbit|=8 dir0=8 parities={0} N=16 N/2=8
+B one-line lemma exhaustive n=4,6:
+  n=4: True
+  n=6: True
+B-iii sharpness patterns (proper tori 2L>=4) and degenerate 4x2:
+  4x2 (degenerate, unique bonds=12<16): min bad in event=6 (author claimed 8=N; this graph is not 4-regular)
+  2D side 4: sharpness pattern bad=16 N=16 dN=32 equal N: True
+  2D side 6: sharpness pattern bad=36 N=36 dN=72 equal N: True
+  3D side 4: sharpness bad=48 3N/4=48 dN=192 equal: True
+  3D side 6: sharpness bad=162 3N/4=162 dN=648 equal: True
+C eigenvalues of phi:
+  True {'p + q + 4*r': 1, 'p + q - 2*r': 2, 'p - q': 3}
+C ring RP quadratic form:
+  (5, 2, 4): eigmin=-368 eigmax=8221
+  (1, 3, 2): eigmin=-136 eigmax=629
+  (3, 1, 2): eigmin=-1.051e-13 eigmax=629
+  (216, 1, 1): eigmin=4.622e+04 eigmax=2.177e+09
+  (5, 2, 4) rounded-evec Q=-7808
+  (1, 3, 2) rounded-evec Q=-3168
+  (3, 1, 2) rounded-evec Q=57
+E arithmetic 216^{4/3}=1296 and p>=216m => PSD:
+  True
+E 4x2 mu(E)^{1/N} vs 6m/p at (216,1,1) (degenerate graph, not a proof obligation):
+  mu=5.121340e-13 root=0.029085 bound=0.027778 le=False (expected fail: min b < N)
+HIT: confirmed - the claim survives; independently: site-reflection orbit on (Z/4)^2 is one transverse-parity class of size N/2; lemma bad(s)+2 bad(s,a)>=n at n=4,6; sharpness patterns attain exactly N bad bonds in 2D and 3N/4 in 3D on sides 4 and 6; phi eigenvalues p+q+4r, p-q (x3), p+q-2r (x2); four-site ring form is indefinite iff not PSD; 216^{4/3}=6^4=1296 and p>=216m implies PSD. Author's 4x2 enumeration (min=8) is false on that degenerate graph (min=6, not 4-regular) and is not used by the 2L>=4 argument
+SUMMARY: confirmed - block 17 repaired: site reflections give 216m in 2D and 1296m in 3D; bond-plane RP when phi PSD restores 216m in 3D as stated

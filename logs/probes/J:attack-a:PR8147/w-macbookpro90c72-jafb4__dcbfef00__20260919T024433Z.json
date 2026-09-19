@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8147",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block13-causal",
+ "worker": "w-macbookpro90c72-jafb4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8147/directed_path_witness.py",
+ "seed": 85873,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dcbfef00",
+ "started_utc": "20260919T024433Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - monotone directed-path counts n!/d! are positive on small displacements; not a re-find of T3(ii) u^2"
+ },
+ "review": "Directed-path counts n!/d! positive on small d; pattern has no purchase; not the T3(ii) u^2 HIT",
+ "what": "PR #8147 ([physics-loop] admissibility-induced-law block13 \u2014 bounded_t): attack ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915; git show origin/physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915:<note>. Create probes/work/pr8147/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8147/<script>.py\"",
+ "stdout_sha256": "284c4367175eed2087f781a55513433c57f56cd72292d2fbd3186fa3d8fcb1d2",
+ "stdout_tail": "d=(1, 0, 0) n=1 paths=1\nd=(1, 1, 0) n=2 paths=2\nd=(2, 1, 0) n=3 paths=3\nd=(1, 1, 1) n=3 paths=6\nZ^3 NN triangle-free; 5x5 torus of Z^2 exists\nSUMMARY: pattern has no purchase on this note - monotone directed-path counts n!/d! are positive on small displacements; not a re-find of T3(ii) u^2\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jafb4",
+  "at_utc": "20260919T024433Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

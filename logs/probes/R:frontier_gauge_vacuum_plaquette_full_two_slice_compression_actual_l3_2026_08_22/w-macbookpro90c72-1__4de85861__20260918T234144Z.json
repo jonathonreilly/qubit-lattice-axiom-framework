@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22.py",
+ "seed": 74904,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234144Z",
+ "elapsed_s": 217.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6f182a4b7f36220754e3afb660af8de94f525cf6cccee60a91107fdb4cf1fc28",
+ "stdout_tail": "8; max|coordinate|/SE=17.73; null=0.0e+00\n  largest discrepancy: Re C[(0, 1),(0, 1)]: measured/model=+0.451465/+0.373961; SE=4.37e-03; z=17.73\n  [PASS] shared forward covariance resolves its symmetry-supported sector; rank=15, PSD=True\n  null-centered stratified block bootstrap: exceedances=0/4096; rank_failures=0; p=0.000244081; one-sided 95% upper=0.000731113\n  [PASS] predeclared static-rho forward identification is rejected; predeclared p floor=0.001\nB_2 forward residual (rank-limited diagnostic, not a gate)\n  cov rank=50/80; chi2/rank=9979805.58/50; p_support=0; max|coordinate|/SE=17.73\nDirect inverse diagnostic only (never a gate)\n  B_2 cond(D)cond(M)^2=1.092e+10; paired B_2->B_1 vs B_1 max|difference|/JK-SE=21.34; cov rank=15\nper_element: checked and executed \u2014 the normalized shared 4x4 character matrix is tested coordinatewise and in its covariance-supported subspace\nper_site: checked and not executed \u2014 all 81 translated/oriented plaquettes are symmetry-averaged, so no individual-face equality is tested or claimed\nper_mode: checked and partially executed \u2014 B_1 is the physics surface, B_2 is sampled, and auxiliary models run through B_4; no B_5 or infinite-character claim is tested\nper_block: checked and executed \u2014 48 leave-one-block transforms per independent ensemble supply the combined covariance\nlattice_wide: checked and partially executed \u2014 the result is only for the finite periodic L_s=3 Wilson lattice at beta=6; no volume sequence is tested\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234522Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,49 @@
+==============================================================================
+GAUGE WILSON ISOTROPY BOUNDARY CHECKS
+==============================================================================
+
+Part 1: Cl(3) Pauli-irrep checks
+  [PASS] {G_1, G_1} = 2 delta_11
+  [PASS] {G_1, G_2} = 2 delta_12
+  [PASS] {G_1, G_3} = 2 delta_13
+  [PASS] {G_2, G_1} = 2 delta_21
+  [PASS] {G_2, G_2} = 2 delta_22
+  [PASS] {G_2, G_3} = 2 delta_23
+  [PASS] {G_3, G_1} = 2 delta_31
+  [PASS] {G_3, G_2} = 2 delta_32
+  [PASS] {G_3, G_3} = 2 delta_33
+  [PASS] Cl(3) pseudoscalar squares to -I
+  [PASS] pseudoscalar commutes with G_1
+  [PASS] pseudoscalar does not anticommute with G_1
+         max |{I_cl3, G_1}| = 2
+  [PASS] pseudoscalar commutes with G_2
+  [PASS] pseudoscalar does not anticommute with G_2
+         max |{I_cl3, G_2}| = 2
+  [PASS] pseudoscalar commutes with G_3
+  [PASS] pseudoscalar does not anticommute with G_3
+         max |{I_cl3, G_3}| = 2
+  [PASS] pseudoscalar is not a standalone fourth Clifford generator for Cl(3,1)
+         it is central in odd-dimensional Cl(3)
+
+Part 2: staggered eta-product orientation check
+  xy values: [-1]
+  xz values: [-1]
+  xt values: [-1]
+  yz values: [-1]
+  yt values: [-1]
+  zt values: [-1]
+  [PASS] all six staggered plaquette orientation products have the same sign
+         orientation value sets = {(0, 1): {-1}, (0, 2): {-1}, (0, 3): {-1}, (1, 2): {-1}, (1, 3): {-1}, (2, 3): {-1}}
+  [PASS] the eta orientation signature has no anisotropic component or spatial/temporal split
+         E = {(0, 1): -1, (0, 2): -1, (0, 3): -1, (1, 2): -1, (1, 3): -1, (2, 3): -1}; 3(mean_spatial - mean_temporal) = 0
+
+N5 execution certificate -- what this runner resolves
+  per_element: checked -- each generator pair is tested on its own: all nine anticommutators {G_i, G_j} against 2 delta_ij, and the pseudoscalar is taken against each G_i separately, commuting exactly while its anticommutator reaches max magnitude 2.
+  per_site: checked -- the eta plaquette product is evaluated at every one of the 16 sites of the 2^4 corner set, separately for each of the six orientations, and each orientation's value set collapses to the single value -1 across all those sites.
+  per_mode: checked and not executed -- no spectrum, propagator or momentum variable is formed anywhere: Part 1 works in the 2-dimensional Qubit carrier M_2(C) of the Cl(3) Pauli irrep and Part 2 in integer signs, so there is no mode to resolve.
+  per_block: checked -- the six orientations are split into the spatial block {xy, xz, yz} and the temporal block {xt, yt, zt}, and the block contrast 3(mean_spatial - mean_temporal) is computed and comes out exactly 0, so no spatial/temporal split is created.
+  lattice_wide: checked -- staggered_eta depends on the coordinates only through their parities, so the 16 enumerated sites exhaust every parity class of the 4d lattice; the uniform value -1 on all six orientations is therefore lattice-wide, needing no volume limit.
+
+==============================================================================
+SUMMARY: PASS=19 FAIL=0
+==============================================================================

@@ -1,0 +1,35 @@
+{
+ "task": "R:rp_trace_gibbs_radon_nikodym_certificate_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "rp",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py",
+ "seed": 74759,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233919Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ccb5eedeb2cb79b704723c852287d1819e6848411566eb03134513c57b305471",
+ "stdout_tail": "reference note is not a markdown load-bearing dependency\n[PASS] d=2: exp(-H) positive and Z_H=tau(exp(-H)) positive\n       min_eig(exp(-H))=2.004e-01, Z_H=4.03050163478+0j\n[PASS] d=2: D_H positive with tau(D_H)=1\n       min_eig(D_H)=4.972e-02, tau(D_H)=1+0j\n[PASS] d=2: omega_H(O)=tau(D_H O) is positive on sampled O>=0\n       2.591721e+00; 1.007605e+00; 2.265301e+00\n[PASS] d=2: normalized-trace formula equals density-matrix formula\n       max_diff=2.475e-16\n[PASS] d=4: exp(-H) positive and Z_H=tau(exp(-H)) positive\n       min_eig(exp(-H))=1.356e-01, Z_H=2.0540998341+1.38777878078e-17j\n[PASS] d=4: D_H positive with tau(D_H)=1\n       min_eig(D_H)=6.603e-02, tau(D_H)=1+3.85185988877e-34j\n[PASS] d=4: omega_H(O)=tau(D_H O) is positive on sampled O>=0\n       4.658735e+00; 1.805356e+01; 1.170425e+01\n[PASS] d=4: normalized-trace formula equals density-matrix formula\n       max_diff=5.325e-16\n[PASS] d=8: exp(-H) positive and Z_H=tau(exp(-H)) positive\n       min_eig(exp(-H))=1.123e-02, Z_H=7.34657952514+6.93889390391e-18j\n[PASS] d=8: D_H positive with tau(D_H)=1\n       min_eig(D_H)=1.529e-03, tau(D_H)=1-1.92592994439e-34j\n[PASS] d=8: omega_H(O)=tau(D_H O) is positive on sampled O>=0\n       1.239524e+01; 1.320524e+01; 1.268172e+01\n[PASS] d=8: normalized-trace formula equals density-matrix formula\n       max_diff=1.828e-15\n\nSCORECARD PASS=14 FAIL=0\nFINDING: finite Gibbs Radon-Nikodym density closes relative to tau_Lambda.\nrho_ref and Wilson/RP carrier bridges are explicitly out of scope.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233919Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py",
+ "seed": 75402,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260918T235002Z",
+ "elapsed_s": 8.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=11 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "81e1eb697f85a7d037a64720f7dfdddaa4178e2e46ecc8574d1b3829be95fed1",
+ "stdout_tail": "e layers\nPASS independent.two_three_cube_metric  inside and cross-component count layers are exact, disjoint, and all 576 maxima cross\nPASS independent.control  all 768 declared cyclic control sets are rejected by the constructive recognizer\nPASS independent.corner_incidence_boundary  shared cell-corner count is necessary on joins but fails as their converse on 2016 farther pairs\nFAIL independent.primary_contract  the Cycle 750 primary receipt equals the independent graph and metric reconstruction\nPASS hostile.primary_status  a failing primary receipt is rejected\nPASS hostile.shape_count  a changed four-cube count is rejected\nPASS hostile.distance_layer  a changed antipodal count is rejected\nPASS hostile.cross_layer  a cross/inside layer collision is rejected\nPASS hostile.cycle749  a changed predecessor family census is rejected\nper_element: checked -- all 192 pieces enter the independent streamed pair-count and graph calculations\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked and not executed -- this finite binary incidence object has no modal decomposition\nper_block: checked -- every one of the 15800 cutting rows contributes to the streamed pair-count matrix\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, continuum, or physical-metric claim\nRECEIPT outputs/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=11 FAIL=3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T235011Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=11 FAIL=3' vs cache 'TOTAL: PASS=14 FAIL=0'"
+  ]
+ }
+}

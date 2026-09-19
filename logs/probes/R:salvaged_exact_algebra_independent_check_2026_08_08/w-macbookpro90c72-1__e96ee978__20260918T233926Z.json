@@ -1,0 +1,34 @@
+{
+ "task": "R:salvaged_exact_algebra_independent_check_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "salvaged",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/salvaged_exact_algebra_independent_check_2026_08_08.py",
+ "seed": 74766,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233926Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "55d69dcf754c40e9a6ea8be432117f628b3834b7aeea9fe642267589275fff94",
+ "stdout_tail": "s_exactly_the_averaged_out_vectors\nPASS interp.interpolated_A_B_match_the_definitional_A_B\nPASS interp.affine_law_holds_at_two_fresh_probe_points\nPASS interp.ledger_trace_recomputed_componentwise_equals_A\nPASS character.omega_is_a_primitive_cube_root_of_unity\nPASS character.multiplicities_over_C_are_1_1_1\nPASS character.conjugate_characters_fuse_to_the_pair_1_2_over_Q\nPASS polyid.five_forms_equal_(n-1)/n^2_as_rational_functions\nPASS polyid.pairwise_family_difference_has_root_set_{3}_on_2_to_200\nPASS laplacian.pseudoinverse_trace_gives_(N^2-1)/12_for_N_2_to_12\nPASS laplacian.pseudoinverse_witness_L_Lplus_is_I_minus_J_over_N\nPASS bivar.step_equals_(1_minus_m_G0)/6_as_a_polynomial_identity\nPASS bivar.six_step_minus_one_is_minus_m_G0_identically\nPASS bivar.on_G0_positive_step_one_sixth_iff_m_zero\nPASS circulant.equal_diagonal_and_trace_route_gives_(n-1)/n_over_n^2\nPASS circulant.ratio_at_n_3_is_2/27\nPASS edge_removal.matches_the_neighbour_pair_formula_on_all_1024\nPASS edge_removal.matches_on_200_seeded_8_vertex_graphs\nPASS edge_removal.six_vertex_census_recomputed_independently\nPASS receipt.primary_receipt_file_exists\nPASS receipt.primary_digest_recomputes\nPASS receipt.full_payload_matches_the_canonical_expected_record\nPASS tamper.unrehashed_tamper_breaks_the_digest\nPASS tamper.rehashed_semantic_tamper_is_rejected\nPASS gate.check_count_matches_the_declared_census\nTOTAL: PASS=27 FAIL=0\nVERDICT: PASS\nreceipt: outputs/salvaged_exact_algebra_independent_check_receipt_2026_08_08.json\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233927Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

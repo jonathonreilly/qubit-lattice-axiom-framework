@@ -1,0 +1,31 @@
+{
+ "task": "R:salvaged_circulant_spectral_fold_independent_check_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "salvaged",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/salvaged_circulant_spectral_fold_independent_check_2026_08_09.py",
+ "seed": 74765,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233925Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bc16e7a6f16fb19c5eb2474d71a8667857bc4773d94bfbd6bebde0520194075f",
+ "stdout_tail": "MINUS_ONE\nPASS THE_PLANE_RESTRICTION_SATISFIES_R_SQUARED_PLUS_R_PLUS_IDENTITY\nPASS THE_ROTATION_ANGLE_FOLLOWS_FROM_THE_RESTRICTION_TRACE\nPASS THE_RESTRICTION_MATRIX_REBUILT_FROM_THE_IMAGES_IS_THE_STATED_ONE\n\n-- an independent pi enclosure, the separation, the functional --\nPASS THE_INDEPENDENT_PI_ENCLOSURE_OVERLAPS_THE_PRIMARY_ONE\nPASS THE_INDEPENDENT_ENCLOSURE_REPRODUCES_THE_PUBLISHED_SEPARATION_BOUND\nPASS COORDINATE_SUMMATION_REPRODUCES_THE_FUNCTIONAL_AND_ITS_COMPARATOR_MEMBER\n\n-- fresh primary execution --\nPASS THE_PRIMARY_EXECUTES_FRESHLY_AND_EXITS_ZERO\nPASS THE_FRESH_PRIMARY_PAYLOAD_IS_PRESENT_AND_PARSEABLE\n\n-- the measured scan by bisection --\nPASS BISECTION_METHOD_REPRODUCES_ALL_EIGHT_MEASURED_VALUES\nPASS THE_INDEPENDENT_ORDERING_MATCHES_THE_PRIMARY_ORDERING\n\n-- fresh-payload verification --\nPASS THE_FRESH_PAYLOAD_PINS_THE_PRIMARY_SOURCE_ON_DISK\nPASS THE_STORED_PAYLOAD_DIGEST_MATCHES_A_RECOMPUTED_DIGEST\nPASS THE_FRESH_PAYLOAD_MATCHES_THE_CANONICAL_EXPECTED_SUMMARY\nPASS EVERY_PRIMARY_CHECK_PASSED_AND_THE_COUNT_IS_CONSISTENT\nPASS A_BYTE_TAMPER_BREAKS_THE_STORED_DIGEST\nPASS A_REHASHED_CANONICAL_SUMMARY_TAMPER_IS_STILL_REJECTED\n\n-- scope discipline over the remaining package surfaces --\nPASS BOTH_SOURCE_SCAN_EXEMPTIONS_ARE_THE_SAME_BOUNDED_TOKEN_TABLE\nPASS NO_OVERCLAIM_VOCABULARY_ON_THE_REMAINING_PACKAGE_SURFACES\nPASS CHECK_COUNT_MATCHES_THE_DECLARED_TOTAL\n\nTOTAL: PASS=35 FAIL=0\nVERDICT: PASS\npayload_sha256: c17c3695310287812f8f155470d2c2cd37fc5e14b935a586f49c34e2a39d437f\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233926Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

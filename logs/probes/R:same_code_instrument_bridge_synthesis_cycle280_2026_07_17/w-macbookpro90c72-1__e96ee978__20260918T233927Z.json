@@ -1,0 +1,32 @@
+{
+ "task": "R:same_code_instrument_bridge_synthesis_cycle280_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "same",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/same_code_instrument_bridge_synthesis_cycle280_2026_07_17.py",
+ "seed": 74767,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233927Z",
+ "elapsed_s": 59.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a12e79832f6f5139dbfa0c0d0f27fa4cb300a47fee50d6c40a1fd1340ac5fd57",
+ "stdout_tail": "=False, fault_faithful_close=False, permanent_record=False), Route(name='Cycle 279 close tournament', same_physical_code=False, bounded_instrument=True, explicit_input_states=True, actual_process_compatibility=False, occurrence=False, fault_faithful_close=False, permanent_record=False))\nPASS the synthesis forbids splicing Cycle-251 update claims to Cycle-275 states :: distinct physical codes require a new explicit common intertwiner\nPASS only the operational lane moves because only its typed connector changed :: {'operational quantum / Records': ((42, 18, 63), (46, 21, 68))}\nPASS all score axes remain ordered strict <= integrated <= conditional :: {'operational quantum / Records': (46, 21, 68), 'causal time / clock': (32, 17, 58), 'inertia / matter': (58, 24, 77), 'gravity / source / resource': (34, 12, 58), 'Born / probability / realized history': (30, 14, 74)}\nFAIL all load-bearing same-code and predecessor certificates rerun cold :: [('rough_terminal_same_code_local_instrument_cycle277_2026_07_17.py', False, (11, 1)), ('connected_edge_same_code_local_instrument_cycle278_2026_07_17.py', True, (11, 0)), ('local_instrument_to_record_close_tournament_cycle279_2026_07_17.py', False, None), ('rough_terminal_subsystem_gauge_factorization_cycle251_2026_07_17.py', False, None), ('contractible_lightcone_wilson_quotient_cycle271_2026_07_17.py', False, (15, 1)), ('locally_matched_wilson_sector_states_cycle275_2026_07_17.py', False, (13, 1))]\nSUMMARY PASS 6 FAIL 2\nRESULT CYCLE280_OPEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234027Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

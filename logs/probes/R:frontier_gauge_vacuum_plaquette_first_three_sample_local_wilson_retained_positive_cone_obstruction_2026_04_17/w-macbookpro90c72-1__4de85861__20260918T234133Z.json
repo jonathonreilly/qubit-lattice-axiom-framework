@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+ "seed": 74893,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234133Z",
+ "elapsed_s": 9.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 SUPPORT=4 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0eb63130dccc07ca855ddf471469d1d2bca54dde4b268c241329a59ffe40421b",
+ "stdout_tail": "e, not places, so no site index, link label or lattice spacing occurs anywhere in the file; the first-symmetric qualifier refers to a character-channel ordering rather than to any position on a lattice\n  per_mode: the SU(3) partition normalization at beta = 6 is assembled one representation mode at a time - each mode contributes the determinant of a 3x3 Bessel matrix, modes enter in signed pairs -m and +m, and the sum halts at the first mode whose strip contribution drops below MODE_TOL = 1e-15 relative to the running total, under a hard ceiling MAX_MODE = 120, with the cutoff actually reached reported next to the partition value\n  per_block: the cone test is applied channel by channel and exactly one channel breaks it - the three reconstructed retained coordinates are examined separately against a plus-or-minus 1e-12 band, the singlet and fundamental channels come out strictly positive and the adjoint channel strictly negative, and the minimal repair is read off that one failing block rather than off any aggregate norm\n  lattice_wide: checked and not executed - this obstruction is deliberately local and the runner's own fourth support check records exactly why, since the full-slice rim-lift note still lists the explicit closed-form B_6(W) as open, so the nonlocal completion a whole-lattice statement would need does not yet exist; everything evaluated here is the one-plaquette normalization, with no sum over plaquettes, no volume and no limit\n\nTHEOREM PASS=6 SUPPORT=4 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234142Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

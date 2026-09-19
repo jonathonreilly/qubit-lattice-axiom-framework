@@ -1,0 +1,38 @@
+{
+ "task": "R:physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py",
+ "seed": 76119,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260919T000159Z",
+ "elapsed_s": 1.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2a809d4ec682d17d0f4c3d0d4d7db6d367cbc4e32cf6695f1109df23282107d9",
+ "stdout_tail": "PASS independent.population  opposite-pivot reconstruction gives 15800 rows, 192 columns, weights 24 and 1975\nPASS independent.targets  the reconstructed four target and its complement reproduce the landed target identity\nPASS independent.all_marked  exact clique enumeration reproduces all 192 landed all-marked carriers\nFAIL independent.symmetry_actions  all 48 geometric maps and both extra generators preserve the incidence rows and four target\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py\", line 513, in <module>\n    group = closure(generators)\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py\", line 465, in closure\n    product = tuple(int(value) for value in generator[element_array])\n                                            ~~~~~~~~~^^^^^^^^^^^^^^^\nIndexError: index 0 is out of bounds for axis 0 with size 0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T000201Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=23 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.txt against the .txt beside this log"
+  ]
+ }
+}

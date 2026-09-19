@@ -1,0 +1,56 @@
+==============================================================================
+CONDITIONAL STATIC-RECURRENCE POSITIVITY + FINITE CONJUGATION INVARIANCE
+==============================================================================
+INPUT FIREWALL: h^dag=-h and the alternating recurrence are supplied.
+No axiom-to-carrier, quantum-transfer, second-quantization, RP, P2, or
+AC_phi_lambda identification is tested or claimed.
+
+MODAL 2 BY 2 FORMULA
+    max spectral residual = 1.421e-14
+    max Hermiticity error = 0.000e+00
+    max |det-1|           = 4.441e-15
+    minimum eigenvalue    = 2.565791e-02
+    modal transfer formula: PASS
+
+IDENTITY-LINK SPECIALIZATION OF THE SAME SUPPLIED RECURRENCE
+    length=3: position/Fourier residual=1.388e-15, min eig=1.715729e-01
+    length=4: position/Fourier residual=2.665e-15, min eig=1.458980e-01
+    length=6: position/Fourier residual=2.665e-15, min eig=1.715729e-01
+    identity-link specialization: PASS
+
+SAMPLED SU(3) STATIC-LINK MATRIX EXHIBIT
+    supplied link lists    = 200
+    max ||h+h^dag||        = 0.000e+00
+    max ||C-C^dag||        = 0.000e+00
+    max ||C-T_even^dag T_even|| = 0.000e+00
+    max modal residual     = 1.155e-14
+    min eig(C)             = 1.458981e-01
+    failed lists           = 0 / 200
+    sampled SU(3) matrix positivity: PASS
+
+SAMPLED U(1) STATIC-LINK MATRIX EXHIBIT
+    supplied link lists    = 200
+    max ||h+h^dag||        = 0.000e+00
+    max ||C-C^dag||        = 0.000e+00
+    max ||C-T_even^dag T_even|| = 0.000e+00
+    max modal residual     = 8.882e-15
+    min eig(C)             = 1.458988e-01
+    failed lists           = 0 / 200
+    sampled U(1) matrix positivity: PASS
+
+FINITE PERMUTATION-CONJUGATION INVARIANCE
+    permutations tested    = 6 (all of S_3)
+    |det(M)| baseline      = 7.41590041
+    Tr(exp(-beta H))       = 9.31710117
+    max determinant dev    = 2.809e-15
+    max spectrum dev       = 6.661e-16
+    max exp-trace dev      = 8.882e-15
+    determinant invariance: PASS
+    spectrum invariance: PASS
+    exponential-trace invariance: PASS
+
+==============================================================================
+SCORECARD: PASS=7 FAIL=0
+  claim surface: conditional finite-matrix theorem only
+  excluded: quantum transfer, Gamma/Fock map, U integration, RP, P2, AC_phi_lambda
+==============================================================================

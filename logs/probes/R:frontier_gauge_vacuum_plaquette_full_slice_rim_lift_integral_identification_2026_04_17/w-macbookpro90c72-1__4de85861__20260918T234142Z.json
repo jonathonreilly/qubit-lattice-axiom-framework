@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py",
+ "seed": 74902,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234142Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=2 SUPPORT=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a54168eaeaa958951c355b14c60b61f21e9600ec20cb34094c1ffe2dc6c7962b",
+ "stdout_tail": "ift note declares supplied-partition safe narrow and open SU(3) slab partition\nsample        Re Tr U           B(U)           F(U)            B*F         psi(U)    |psi-B*F|/psi\n  0         -0.970725   2.401193e+01   4.886941e+00   1.173449e+02   1.176798e+02        2.846e-03\n  1         +0.691420   2.388375e+01   4.868277e+00   1.162727e+02   1.170498e+02        6.639e-03\n  2         -0.046920   2.376884e+01   4.867750e+00   1.157008e+02   1.148116e+02        7.744e-03\n\n  [PASS] [SUPPORT] Upstream transfer packet records eta_beta(W) in the target boundary-state identity\n  [PASS] [SUPPORT] Rim-lift note records the load-bearing rim integral identification\n  [PASS] [SUPPORT] Rim-lift note records the compressed descendant eta = P_cls B\n  [PASS] [SUPPORT] Compressed-rim-uniqueness note records that the full slice lift B_beta(W) is the remaining open object\n  [PASS] [THEOREM] Joint slice marginal factorises as rim integral times beyond-rim slice factor on all U samples (Fubini)\n         max |psi(U) - B(U)*F(U)| / psi(U) = 7.744e-03  (tol = 1.0e-02)\n  [PASS] [SUPPORT] Toy single-link slice: B(U) and F(U) variances are at MC precision (slice-link absorbed by Haar)\n         std(B)/mean(B) = 0.004156, std(F)/mean(F) = 0.001831  (MC 5 sigma = 0.006455)\n  [PASS] [THEOREM] Rim integrand uses local Wilson action coupling beta/3 on the rim plaquette holonomies\n         rim weight constructed as exp[(beta/3) (Re Tr V_r1 + Re Tr V_r2)] per the note's A^rim\n\nTHEOREM PASS=2 SUPPORT=6 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

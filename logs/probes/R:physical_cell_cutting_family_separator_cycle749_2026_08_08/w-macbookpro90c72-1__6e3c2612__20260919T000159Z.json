@@ -1,0 +1,38 @@
+{
+ "task": "R:physical_cell_cutting_family_separator_cycle749_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_family_separator_cycle749_2026_08_08.py",
+ "seed": 76119,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260919T000159Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "05b3f087641cb1f902cc008d3b6a63f0ff5a87f125f454fcce544698c789f20c",
+ "stdout_tail": "FAIL dependency.cycle748  current primary and independent Cycle 748 certificates bind all 15800 rows and 132 carriers\nPASS hostile.cycle748_inventory  a predecessor receipt reverting to the half-row pair inventory is rejected\nPASS hostile.cycle748_census  a predecessor receipt losing one of the 132 carriers is rejected\nPASS hostile.cycle748_independent  a failing independent predecessor certificate is rejected\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T000159Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=42 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_family_separator_cycle749_2026_08_08.txt against the .txt beside this log"
+  ]
+ }
+}

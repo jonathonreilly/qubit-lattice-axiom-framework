@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.py",
+ "seed": 76090,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260919T000130Z",
+ "elapsed_s": 16.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8865d84658b89de3b24207ff2980191ac5eb8541da3d861ea3748768ae75e60b",
+ "stdout_tail": "map and its column map are each determined\nPASS H12 the row census keeps 48 members and the column census 16; the 16 images of the piece relabellings are 16 four-table sets, difference 0\nPASS H13 row 48, column 16, crossing 2; row-only 46, column-only 14, neither condition implies the other; the two are 0/1/2/3 76/77/91/95\nPASS H14 768 pairs from 48 cover and 16 piece maps; 2 intertwine; row/crossing label differences 0/0\nPASS H15 the 2 cover maps and 2 piece maps are maps of the cell in the centre of size 2; the cover pair is closed under composition with a unit\nPASS H16 the cycle 773 twin 4/5/6/7 sits in neither census, tested against the row census of 48 and the column census of 16\nPASS H17 of the 16 partner-swap variants of the incidence's four tables, 16 distinct, 2 sit in the row census and 2 in the column census\nPASS H18 the block profile 9/9/6/6/0 of the incidence is carried by every column-census member at both primes: 16 of 16 and 16 of 16\nPASS H19 the sixteen block ranks recompose to 105 = rank 105 at the first prime and 105 = rank 105 at the second\nPASS H21 the ladder: 3321960 members, the row condition leaves 48, the column condition leaves 16, their crossing leaves 2\nPASS H22 the central map carries the 2 crossing members entrywise; they form one orbit under its relabelling\nPASS H23 two members sum to row sums 16, not 8, so the sum leaves the family and neither census is linear; both ranks 105 match; tags unique\nresource: 16 s, 144 MB peak\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T000147Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

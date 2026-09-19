@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
+ "seed": 74863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234104Z",
+ "elapsed_s": 9.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d51073756ac624256432078b28a244543e4d85caea6b78065b1f0f8b1da61e7f",
+ "stdout_tail": "econstruction gap                          = 1.665335e-16\n\n  [PASS] The completed packet satisfies the source theorem's supplied nonnegative swap-symmetric diagonal interface\n  [PASS] The completion producers return one finite four-coefficient vector and one finite three-sample target\n  [PASS] Normalizing by the supplied trivial-channel coefficient defines a finite packet with rho_(0,0)=1  (rho_packet=[1.0, 0.2671395653, 0.2671395653, 0.0])\n  [PASS] The supplied packet is conjugation-symmetric on the first-symmetric sector  (|rho_(1,0)-rho_(0,1)|=0.000e+00)\n  [PASS] The supplied three-sample triple reconstructs to floating-point tolerance from (z00_min, rho_packet)  (||z_recon-Z_min||=1.665e-16)\n  [PASS] The reconstructed finite packet composes with the supplied-diagonal source interface  (z00_min=0.349607)\n\n================================================================================================================\nRESULT\n================================================================================================================\n  Conditional finite-packet refinement:\n    - the completed first-sector triple already determines one explicit\n      supplied diagonal coefficient packet on the first-symmetric sector\n    - namely one overall scale z00_min together with one normalized\n      conjugation-symmetric coefficient packet rho_packet\n    - Wilson residual diagonality/identification and full-weight extension\n      remain open; this runner proves neither\n\nPASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234113Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

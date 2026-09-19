@@ -1,0 +1,32 @@
+{
+ "task": "R:rough_terminal_same_code_local_instrument_cycle277_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "rough",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/rough_terminal_same_code_local_instrument_cycle277_2026_07_17.py",
+ "seed": 74731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233851Z",
+ "elapsed_s": 3.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b977892b7f8fdaa71bd2bb5186e0b4fbd7d1db31c1dcdea4792a8c1dc9f7e708",
+ "stdout_tail": " deleting one physical Q factor causes code leakage, while deleting the pointer coupling erases distinguishability :: {'rows': [{'L': 3, 'internal_A_anticommutators': 0, 'boundary_stream_A_anticommutators': 6, 'one_physical_factor_deleted_check_leakage': 5}, {'L': 4, 'internal_A_anticommutators': 0, 'boundary_stream_A_anticommutators': 6, 'one_physical_factor_deleted_check_leakage': 5}, {'L': 5, 'internal_A_anticommutators': 0, 'boundary_stream_A_anticommutators': 6, 'one_physical_factor_deleted_check_leakage': 5}, {'L': 6, 'internal_A_anticommutators': 0, 'boundary_stream_A_anticommutators': 6, 'one_physical_factor_deleted_check_leakage': 5}], 'coupled_pointer_overlap': 0, 'identity_coupling_pointer_overlap': 1, 'unconditional_pointer_trace': 'dephasing channel only; no selected outcome'}\nPASS the lawful domain and category firewalls are explicit :: {'included': 'one scalar cell-parity instrument in either fixed common-parity Cycle-251 sector', 'pointer_preparation': 'supplied |0>', 'pointer_readout': 'supplied Z effects', 'pointer_trace': 'supplied ordinary quantum partial trace', 'conditional_selection': 'supplied instrument outcome label and normalization', 'Cycle271_states_imported': False, 'coherent_correlation_is_occurrence': False, 'pointer_is_Record': False, 'compiler_depth_is_physical_time': False, 'matrix_phase_is_energy': False, 'generator_is_rate': False, 'route_independent_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 11 FAIL 1\nRESULT CYCLE277_OPEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233855Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

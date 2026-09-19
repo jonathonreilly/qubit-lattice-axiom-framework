@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_census_families_cycle748_independent_check_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_census_families_cycle748_independent_check_2026_08_08.py",
+ "seed": 75565,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260918T235245Z",
+ "elapsed_s": 7.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=15 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dc42f3a2bd80720117dcc9f3a99f2ab3028531026c2a4cba5dba8ff362c75f11",
+ "stdout_tail": "t.weight_eighteen_boundary  the weight-16 lower bound and system-wide overlap cap imply only the conditional k<=4 shape bound\nFAIL independent.dependencies  exact current primary and independent receipts from landed Cycles 746 and 747 are bound fail-closed\nFAIL independent.primary_contract  the primary receipt equals the independent census, family, overlap, and conditional-bound derivat...\nPASS hostile.primary_status  a failing primary receipt is rejected\nPASS hostile.generator  a changed symmetry generator is rejected\nPASS hostile.census  a changed census carrier is rejected\nPASS hostile.twenty  a changed weight-twenty family digest is rejected\nPASS hostile.shape_boundary  a false weight-eighteen resolution is rejected\nPASS hostile.predecessor_inventory  a predecessor receipt reverting to the half-row inventory is rejected\nPASS hostile.predecessor_completeness  a predecessor receipt losing anchored completeness is rejected\nper_element: checked -- all 192 columns enter the independent incidence, group, census, and overlap calculations\nper_site: checked and not executed -- one supplied coordinate four-cube only\nper_mode: checked and not executed -- the finite binary object has no modes\nper_block: checked -- all 15800 rows and the exact landed anchored search are bound\nlattice_wide: checked and not executed -- no multicell or continuum claim\nRECEIPT outputs/physical_cell_cutting_census_families_cycle748_independent_check_2026_08_08_receipt_2026-08-08.json\nTOTAL: PASS=15 FAIL=2\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T235252Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=15 FAIL=2' vs cache 'TOTAL: PASS=17 FAIL=0'"
+  ]
+ }
+}

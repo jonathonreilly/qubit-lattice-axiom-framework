@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_generation_moduli_selector_exact_constraints_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_generation_moduli_selector_exact_constraints_2026_07_02.py",
+ "seed": 75123,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234523Z",
+ "elapsed_s": 17.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dc92eb36aeacd2a9e9d7f36c6efbb96c0de429fd77e56a3981f0481c5dcf1a9e",
+ "stdout_tail": "PASS 19\nFAIL 0\nTOTAL 19\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234540Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

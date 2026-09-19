@@ -1,0 +1,34 @@
+================================================================================================================
+GAUGE-VACUUM PLAQUETTE FIRST-SECTOR SUPPLIED COEFFICIENT PACKET
+================================================================================================================
+
+Question:
+  Does the completed first-sector triple determine one supplied finite
+  coefficient packet, without identifying it as a physical Wilson
+  residual or environment operator?
+
+  v_min                                       = [0.349606952458, 0.093393849311, 0.093393849311, 0.0]
+  z00_min                                     = 0.349606952458
+  rho_packet                                  = [1.0, 0.267139565315, 0.267139565315, 0.0]
+  reconstructed sample triple                 = [0.135165279562, 0.374012880009, 0.543843858544]
+  reconstruction gap                          = 1.665335e-16
+
+  [PASS] The completed packet satisfies the source theorem's supplied nonnegative swap-symmetric diagonal interface
+  [PASS] The completion producers return one finite four-coefficient vector and one finite three-sample target
+  [PASS] Normalizing by the supplied trivial-channel coefficient defines a finite packet with rho_(0,0)=1  (rho_packet=[1.0, 0.2671395653, 0.2671395653, 0.0])
+  [PASS] The supplied packet is conjugation-symmetric on the first-symmetric sector  (|rho_(1,0)-rho_(0,1)|=0.000e+00)
+  [PASS] The supplied three-sample triple reconstructs to floating-point tolerance from (z00_min, rho_packet)  (||z_recon-Z_min||=1.665e-16)
+  [PASS] The reconstructed finite packet composes with the supplied-diagonal source interface  (z00_min=0.349607)
+
+================================================================================================================
+RESULT
+================================================================================================================
+  Conditional finite-packet refinement:
+    - the completed first-sector triple already determines one explicit
+      supplied diagonal coefficient packet on the first-symmetric sector
+    - namely one overall scale z00_min together with one normalized
+      conjugation-symmetric coefficient packet rho_packet
+    - Wilson residual diagonality/identification and full-weight extension
+      remain open; this runner proves neither
+
+PASS=6 FAIL=0

@@ -1,0 +1,72 @@
+all numbers below are exact computational identities; no floating point enters any gate
+PASS C0 object/certs 2672/400/15800/192; constructor checks yes
+PASS C1 group 384; products 147456; bijective/transitive yes
+PASS C2 orbit counts piece/cover/cell 104/120/96; sweep yes
+PASS C3 ranks/kernels cutting 88/104, cover 105/87; certificates yes
+PASS C4 orbit bases 104/96; equivariance 40; cover-orbit sum 4
+PASS C5 structure constants max 2; representatives/products/guard yes
+PASS C6 centre rank 84 exact; dimension 20; 10816 constraints; guard yes
+PASS C7 central separator trial 2; 20 simple parts; 3 product checks
+PASS C8 dimension sums module/commutant/map 192/104/96
+PASS C9 dual dimension sums 120/192/87
+PASS C10 20 parts, dims sorted: 1,1,1,1,3,3,3,3,4,4,8,8,8,8,12,12,24,24,32,32
+PASS C11 rank/blind bounds 144/48; sum 192
+PASS C12 cover rank/blind 105/87; bound gaps 39/39
+PASS C13 exact equivariant witness rank 144; blind 48
+PASS C14 block excess zero/positive 12/8; mc>=m split 6/2; mc0 checks yes
+PASS C15 excess d/m/mc/blind/forced 1 to 4: 2/2/2/2/0 4/2/3/4/0 6/2/3/6/0 8/4/6/8/0
+PASS C16 excess d/m/mc/blind/forced 5 to 8: 6/4/3/12/6 6/2/3/6/0 6/4/3/12/6 1/1/1/1/0
+PASS C17 even subgroup 192, index 2; piece/cover classes 96+96
+PASS C18 class sums [0]; cover profile [(4, 192)]
+PASS C19 self-dual profiles [(4, 192)]/[(4, 192)]; totals 768/768
+PASS C20 cover stabilizer sign/fixes/cycles 1/0/[2, 2, 2, 2]; class kept
+PASS C21 sign diagnostic: flip parity -1, product character -1
+PASS C22 split-count identity: 9 cases give 768; mean 4
+PASS C23 label diagnostics parity/determinant 96/96; values [-1, 1]
+PASS C24 product-character checks 73728; misses 0
+PASS C25 sorted-order diagnostic unequal/equal-elements 36864/4
+PASS C26 source hygiene ASCII/tab/remainder/dash/barred checks clean
+PASS C27 resource envelope: wall under declared timeout and peak resident under 2500 MB
+PASS C28 two-prime block rebuilds: rows/separation/factors/active/coefficient map yes
+PASS C29 small-block five-condition passes 20/20; zero cover multiplicity 5
+PASS C30 orbit coefficient maps: widths 96/96, ranks 96/96 at the two primes
+PASS C31 block/full rank checks 62/62; cover rank/blind 105/87
+PASS C32 8 drop blocks have unique ordinal/value/hash ids; hashes ad9 9 9 91a,8a2a0644,54a6d07a,5b08ea4b,9c5db65b,31e2a61b,6a2e89a5,5feceb66
+PASS C33 internal block accounting: 8 drops sum to 39; blind = d(m-rank) on all 20
+PASS C34 incidence singleton ranks: 4 copies of exact 144; modular agrees
+PASS C35 singleton block checks 60; short count 0
+PASS C36 pairs 72,93,117,129,144,144; triples 114,130,142,142; four give 105, below every triple
+PASS C37 first-short level pair for 8 blocks; singleton short count 0
+PASS C38 recoverable blocks: 3 short on a pair and full on the incidence quartet; 3/1/3 4/2/1 8/4/2
+PASS C39 second-prime level checks 15; differences 0; short sub-sums 30
+PASS C40 one-swap 368: range 72..144, ceiling 53, rank-105 1, lower 9
+PASS C41 exchange slot/orbit 0/5; exact rank 105->144
+PASS C42 blind meet/span 12/123; four-plus-one rank 144
+PASS C43 96 sum to J rank 1
+PASS C44 96 ok 0 off 384 ones
+PASS C45 cmpl 105 144 72,93,117,129,144,144
+PASS C46 empty 0 full 1
+PASS C47 192 of 5 corners top 4
+PASS C48 36864 cells 0 vary
+PASS C49 25 strata 2:12 4:7 6:4 8:1 12:1
+PASS C50 B 83 vals finer 1975 on 4
+PASS C51 stratum max/ceiling/min-blind/incidence 143/144/49/105
+PASS C52 19 lift slot 0 orb 5 str 23
+PASS C53 0 all 10 none 15 mixed
+PASS C54 stab 2 fix 0 4 pairs
+PASS C55 partners 2 2 2 2
+PASS C56 least pair 2 2 rank 72
+PASS C57 row-pair checks covers/fixed/misses/pairs/reject 192/0/0/96/1
+PASS C58 one cover: 8 blocks, 4 incidence labels, multiplicity two
+PASS C59 complement spaces sets/right/left/different/reject/blind 16/0/0/16/1/87
+PASS C60 exact all-ones row/column checks 16; misses 0; top rank 144
+PASS C61 singleton cycle/rank: 48x4, orbits 96, rank 144, misses 0
+PASS C62 F_1000003 pairs: 4560, 13 values 48..144, ceiling 960, <=105 1104; 25 full-table checks, second-prime misses 0; complements size 94
+PASS C63 F_1000003 triples: 142880, 18 values 64..144, ceiling 60960, <=105 1472; 15 full-table checks; complements size 93
+PASS C64 F_1000003 pair aggregation: degree 75 on all 96; 313 of 325 stratum fibres contain multiple ranks, maximum 13
+PASS C65 mutations 13/13 reject: object/group/orbit/rank/block/drop/p2/incidence/exact/cycle/pair/triple/degree
+PASS C66 gate labels sequential: 67
+PASS C67 closing source checks clean: 3
+PASS C68 budget: declared wall/RSS limits and prospective complete stdout under 6000
+stdout characters before trailer: 4555
+TOTAL: PASS=69 FAIL=0

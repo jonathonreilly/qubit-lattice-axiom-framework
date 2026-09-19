@@ -1,0 +1,35 @@
+{
+ "task": "R:rp_p2_gauge_extension_and_labeling_indifference_2026_05_28",
+ "type": "runner-reexecution",
+ "lane": "rp",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/rp_p2_gauge_extension_and_labeling_indifference_2026_05_28.py",
+ "seed": 74758,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233918Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "90b4e8615e71ee5128f87d9ad34c27a546aa385f3240c025d93f49b18e570168",
+ "stdout_tail": "esidual=2.665e-15, min eig=1.715729e-01\n    identity-link specialization: PASS\n\nSAMPLED SU(3) STATIC-LINK MATRIX EXHIBIT\n    supplied link lists    = 200\n    max ||h+h^dag||        = 0.000e+00\n    max ||C-C^dag||        = 0.000e+00\n    max ||C-T_even^dag T_even|| = 0.000e+00\n    max modal residual     = 1.155e-14\n    min eig(C)             = 1.458981e-01\n    failed lists           = 0 / 200\n    sampled SU(3) matrix positivity: PASS\n\nSAMPLED U(1) STATIC-LINK MATRIX EXHIBIT\n    supplied link lists    = 200\n    max ||h+h^dag||        = 0.000e+00\n    max ||C-C^dag||        = 0.000e+00\n    max ||C-T_even^dag T_even|| = 0.000e+00\n    max modal residual     = 8.882e-15\n    min eig(C)             = 1.458988e-01\n    failed lists           = 0 / 200\n    sampled U(1) matrix positivity: PASS\n\nFINITE PERMUTATION-CONJUGATION INVARIANCE\n    permutations tested    = 6 (all of S_3)\n    |det(M)| baseline      = 7.41590041\n    Tr(exp(-beta H))       = 9.31710117\n    max determinant dev    = 2.809e-15\n    max spectrum dev       = 6.661e-16\n    max exp-trace dev      = 8.882e-15\n    determinant invariance: PASS\n    spectrum invariance: PASS\n    exponential-trace invariance: PASS\n\n==============================================================================\nSCORECARD: PASS=7 FAIL=0\n  claim surface: conditional finite-matrix theorem only\n  excluded: quantum transfer, Gamma/Fock map, U integration, RP, P2, AC_phi_lambda\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233919Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:ruler_rate_is_star_tick_rate_class_tick_no_newtonian_potential_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "ruler",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/ruler_rate_is_star_tick_rate_class_tick_no_newtonian_potential_check_2026_09_04.py",
+ "seed": 74761,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233921Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "47a45f1f778fd089702df015b6337f9b3f0a7985995fe799807aca1179421923",
+ "stdout_tail": "12^3 44.78/6.692\n[PASS] D2 G1's record-site profile lies in the incidence range and least squares recovers the star rates modulo that mode: a (pi,pi,pi) clock modulation changes no record site\n       range residual 1.1e-14; recovery 1.2e-14; rank 511 = N - 1\n[PASS] D3 the class map R^8 -> R^N is a scaled isometry (Gram = (N/8) I, condition 1, rank 8) whose left inverse is the class mean; it loses everything but eight means\n       ||Phi - P_class Phi||/||Phi|| = 0.99752 on 8^3; lost N - 8 = 504\n[PASS] E1 the 4^3 torus in its declared (1,1,1) sector is flat, h^2 = 6I, so a single corner IS stationary in this tested flat example; no classification of other geometries\n       |h^2 - 6I| 0.0e+00; single-corner residual 1.8e-14\n[PASS] E2 named conditional stationary-branch residuals carry no event-rate parameter: a single corner and a class minus one corner have the same residual; the declared whole-class patterns pass\n       6^3 corner 0.3572, class (27 corners) 5.0e-14, class minus one 0.3572; 8^3 corner 0.3798, class (64 corners) 1.1e-13, class minus one 0.3798\n[PASS] F1 normalized class indicators and the spectral bounds underlying N^(-4/3)\n       Gram(C)=(N/8)I; 16|n|^2/L^2 <= khat^2 <= 4pi^2|n|^2/L^2; summable |n|^-4 in dimension3\n[PASS] F2 a fixed conditional disturbance can have an arbitrarily small averaged rate effect\n       conditional trace norm=2; averaged trace norms=[2.0, 0.19999999999999998, 0.002000000000000001]; no physical event law supplied\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233925Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

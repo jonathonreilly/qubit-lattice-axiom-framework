@@ -1,0 +1,31 @@
+{
+ "task": "R:salvaged_circulant_spectral_fold_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "salvaged",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/salvaged_circulant_spectral_fold_2026_08_09.py",
+ "seed": 74765,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233925Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a0999ac1f0fa572d9116dd73a3bd7b9abb947dbf4eb03330ed3644f4a6949c3a",
+ "stdout_tail": "VES_THE_COEFFICIENTS\n\n-- 5. the 3-cycle permutation matrix --\nPASS THE_CYCLE_MATRIX_IS_ORTHOGONAL_AND_FIXES_THE_ALL_ONES_LINE\nPASS THE_FIXED_SUBSPACE_IS_EXACTLY_THE_ALL_ONES_LINE\nPASS THE_SUM_ZERO_PLANE_IS_INVARIANT_WITH_TRACE_MINUS_ONE_AND_DET_ONE\nPASS THE_PLANE_RESTRICTION_MATRIX_IS_EXACTLY_THE_STATED_ONE\nPASS THE_NORMAL_PLANE_ROTATION_ANGLE_IS_TWO_PI_OVER_THREE\n\n-- 6. the equal-coefficient functional --\nPASS EQUAL_COEFFICIENT_FUNCTIONAL_AT_THE_ALL_ONES_VECTOR_IS_THREE_ALPHA\nPASS THE_FUNCTIONAL_VALUE_IS_INJECTIVE_IN_ALPHA\nPASS EXACTLY_ONE_MEMBER_REACHES_THE_STIPULATED_COMPARATOR_TWO_NINTHS\n\n-- 7. bounded exact separation from multiples of 2 pi --\nPASS THE_IN_FILE_PI_ENCLOSURE_IS_VALID_AND_NARROW\nPASS EVERY_RATIONAL_IN_THE_DECLARED_FAMILY_MEETS_THE_PUBLISHED_SEPARATION_BOUND\n\n-- 8. MEASURED SUPPORT ONLY: the signed-root scan --\nPASS THE_FLOAT_INVERSION_REPRODUCES_A_STIPULATED_FOLDED_ARGUMENT\nPASS ALL_EIGHT_SIGNED_ROOT_ASSIGNMENTS_WERE_EVALUATED\nPASS THE_PUBLISHED_TABLE_IS_THE_FULL_ORDERED_DISTANCE_LIST\nPASS THE_SMALLEST_DISTANCE_BELONGS_TO_THE_ALL_POSITIVE_ASSIGNMENT\nPASS THE_SIGN_ASSIGNMENT_CHANGES_THE_MEASURED_VALUE\n\n-- 9. scope discipline --\nPASS THE_SOURCE_SCAN_EXEMPTION_IS_EXACTLY_THE_TOKEN_TABLE\nPASS NO_OVERCLAIM_VOCABULARY_ON_THE_SCANNED_PACKAGE_SURFACES\nPASS EVERY_SECTION_DECLARES_WHAT_IT_DOES_NOT_ESTABLISH\nPASS CHECK_COUNT_MATCHES_THE_DECLARED_TOTAL\n\nTOTAL: PASS=45 FAIL=0\nVERDICT: PASS\npayload_sha256: f2771a843bcac343fd1536bdd257ad8e538a842102150a224911861484767714\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233925Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

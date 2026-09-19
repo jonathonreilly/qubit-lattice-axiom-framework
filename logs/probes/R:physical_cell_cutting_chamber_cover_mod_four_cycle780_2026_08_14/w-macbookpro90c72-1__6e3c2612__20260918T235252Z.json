@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_chamber_cover_mod_four_cycle780_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_chamber_cover_mod_four_cycle780_2026_08_14.py",
+ "seed": 75572,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260918T235252Z",
+ "elapsed_s": 13.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7b878f3f4cfb0e55e50e3644b846cfbfd8d83f5b594735e17c68e1dc6b40970a",
+ "stdout_tail": "rmula L = sign(b) s1 s3 eta_b2 eta_b4 on all 192 times 8 = 1536 incident piece and chamber pairs, failures 0\nPASS K5 geometry: 192 exact sample points, offsets 8/20 6/20 4/20 2/20 from the centre, each strictly inside exactly 8 of 192 pieces, mismatches 0\nPASS K6 partition at a point: on all 192 times 15800 = 3033600 chamber and cutting pairs the meeting is exactly 1 piece, exceptions 0\nPASS K7 the eight-piece clique enumeration returns 192 covers of 8; the sorted cover sets equal the 192 distinct chamber piece-sets: yes\nPASS K8 corner-parity certificate on 192 pieces and 8 chambers each modulo 2, failures 0\nPASS K9 order-parity certificate on 192 pieces and 8 chambers each modulo 2, for 4 axes: 768 checks, failures 0\nPASS K10 even chamber totals over 192: g_corner 96; g_order,j by axis 24 24 24 24\nPASS K11 on 15800: S=24-2N_order-2N_corner+4N_joint; failures 0, odd N_order 0, odd N_corner 0\nPASS K12 S divisible by 4 on 15800 of 15800 cuttings, exceptions 0; census -8:120 -4:2832 0:9896 4:2832 8:120, sum 15800\nPASS K13 flipping one g_corner value breaks 8 holder pieces; negating one piece label breaks 1975 cuttings\nPASS K14 boundary: 8 diagonals, max |D_w| 4, sum-|D_w| census 0:9320 4:6096 8:384, max 8; N_corner mod 4 zero on 15800\nPASS K15 exact geometry: 15168 simplex pairs separated by 80 ternary normals; 24 unimodular-simplex volumes sum to cube volume\nresource: under 60 s of the 300 s budget, under 250 MB of the 2500 MB budget, 1789 gate characters\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T235305Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py",
+ "seed": 76121,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260919T000201Z",
+ "elapsed_s": 412.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=43 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "35aec1ab236335fc59a704ff884c8fedb94c811aaf6e2ad4783634d7706c3905",
+ "stdout_tail": "ows, th...\nPASS G31  the flip partner forces an even total, carries nothing at sixteen or ...\nPASS hostile.pair_inventory  the submitted half-width chunk loop is detected as 7900 rather than 1...\nPASS hostile.cycle745_status  a failing Cycle 745 receipt is rejected\nPASS hostile.cycle746_parity  a weakened predecessor parity identity is rejected\nPASS hostile.cycle745_support  a changed predecessor carrier support is rejected\nPASS hostile.anchor_generators  omitting b0 and b1 leaves four geometric orbits and cannot license an...\nelapsed under 500 s peak memory under 2500 MB\nPASS G32  the whole runner finishes under 900 seconds inside the printed 2500 MB\nPASS G33  its complete output stays under 6000 characters\n\nper_element: checked -- all 192 support columns enter the incidence, clique, symmetry, carrier, overlap, and search calculations\nper_site: checked and not executed -- one supplied coordinate four-cube only; no framework cell or site is identified\nper_mode: checked and not executed -- these finite binary targets have no field or momentum-mode decomposition\nper_block: checked -- all 15800 cutting rows, four 48-piece quarters, eight 24-piece eighths, all exact searches through weight 16, and the declared weight-18 residue\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, boundary, thermodynamic, or continuum statement\nRECEIPT outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08_receipt_2026-08-08.json\nTOTAL: PASS=43 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T000854Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_generation_prior_stability_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_generation_prior_stability_2026_06_05.py",
+ "seed": 75140,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234540Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d7b6c626cc44fec347f45f0c6f47b1d84f62a35e05b61135b64a1dd3b44e7418",
+ "stdout_tail": "an returns Born, not equal-letter\n       argmax-ent with E=2/3 is (0.3333,0.6667) = Born\n[PASS] E1 Polya reinforcement gives a prior-dependent RANDOM limit, not a fixed equal-letter point\n       asymmetric-seed limits span 0.039..0.495 (no convergence to 1/2)\n[PASS] E2 Polya hits 1/2 only under a symmetric seed prior, i.e. equal-letter imposed by hand (circular)\n       symmetric seed = the equal-letter assumption itself; it cannot non-circularly SELECT it\n\n=== Verdict synthesis ===\n[PASS] V1 equal-letter is stable only as the support count (degenerate: discards frequency)\n       the SET of realized letters stops changing once both appear; this is not value-selection\n[PASS] V2 the firewall's post-record count DYNAMICS favors Born / r=1, not equal-letter / r=1/2\n       token frequency -> (1/3,2/3); the dynamics does not stabilize the equal-letter side\n[PASS] V3 no non-circular post-record dynamics SELECTS equal-letter (separatrix/urn/maxent all fail or import it)\n       VERDICT = CLARIFIES-GRAMMAR-SELECTION-OPEN: dial is legitimate, side not forced\n\n=== Scorecard ===\nPASS=23 FAIL=0\nVERDICT: CLARIFIES-GRAMMAR-SELECTION-OPEN. Token counting (firewall count dynamics) -> Born (1/3,2/3) -> r=1; equal-letter (1/2,1/2) -> r=1/2 is the TYPE/support count, a dynamics-free prior that no non-circular post-record dynamics selects. The dial r=|b|^2/a^2 is a PRE-record operator property. This does NOT derive the equal-letter prior, does NOT force the dial, and does NOT derive a Koide value.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234541Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

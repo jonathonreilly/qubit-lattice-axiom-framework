@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+ "seed": 74873,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234113Z",
+ "elapsed_s": 10.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0cd5789586424144084d4966d0e7d2646296211a433f31ea987bb0ddc1b16c53",
+ "stdout_tail": "]\n  factorized operator symmetry / swap errors  = 2.220e-16 / 6.661e-16\n  min eigenvalue(T_ext)                       = -3.069e-16\n  supplied-packet reconstruction gap           = 1.665e-16\n\n  [PASS] The local factor times the zero-extended packet satisfies the source theorem's supplied diagonal interface\n  [PASS] The completion producers supply one finite four-coefficient packet with nonzero trivial component\n  [PASS] Extending rho_packet by zero outside the first-symmetric weights gives a nonnegative conjugation-symmetric finite sequence  (nonzero count=3)\n  [PASS] The zero-extension yields a self-adjoint swap-symmetric positive-semidefinite supplied-diagonal operator M D_loc diag(rho_ext) M  ((sym,swap,eig_min)=(2.220e-16,6.661e-16,-3.069e-16))\n  [PASS] The extended packet reproduces the supplied three-sample data to floating-point tolerance  (||z_recon-Z_min||=1.665e-16)\n  [PASS] The supplied zero-extension has proper support and reconstructs the finite packet  (z00_min=0.349607, nonzero count=3)\n\n================================================================================================================\nRESULT\n================================================================================================================\n  Bounded supplied-packet result:\n    - the supplied first-sector vector has a minimal-support zero extension\n    - the resulting finite diagonal model is PSD and swap-symmetric\n    - no physical Wilson residual identification follows\n\nPASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234123Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.txt against the .txt beside this log"
+  ]
+ }
+}

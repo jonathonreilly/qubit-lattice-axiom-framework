@@ -1,0 +1,34 @@
+{
+ "task": "R:physical_cell_cutting_charge_space_cycle736_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+ "seed": 75586,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260918T235306Z",
+ "elapsed_s": 22.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8a62c8a7ab54be00000a0ff6bbd597ad26542efb8082bd4c03b55a4b411c6874",
+ "stdout_tail": "4,119808,281376],\"sizes\":[4,5,6,7,8,9,10]},\"no_go_discipline\":{\"checklist\":\"No-Go Discipline Gate section in the Cycle 736 note\",\"n5_certificate\":\"five resolution lines in primary stdout and canonical cache\",\"negative_assertion_class\":\"derived_no_go_boundary\",\"status\":\"PASS\"},\"population\":{\"geometric_cuttings\":15800,\"geometric_orbit_representatives\":391,\"geometric_pair_checks\":107916,\"minimum_cost\":6,\"minimum_pieces\":400,\"pieces_per_cutting\":24,\"search_nodes\":502838,\"unit_volume_pieces\":2672,\"used_pieces\":192},\"responses\":{\"charge_table\":{\"four\":{\"flip_counts\":[0,9504,26880,32640,48960,124224],\"rigid_side\":10136,\"split\":[5664,10136]},\"seven\":{\"flip_counts\":[46128,9504,0,21312,102336,183744],\"rigid_side\":8376,\"split\":[7424,8376]},\"six\":{\"flip_counts\":[46128,0,26880,28608,87552,190848],\"rigid_side\":7704,\"split\":[7704,8096]}},\"constant_charge_count\":2,\"induced_charge_count\":8,\"induced_charge_rank\":3,\"joint_six_seven_weight_dimension\":105,\"multiple_pattern_subsets\":[[[4],2],[[4,6],2],[[4,7],2]],\"population_difference_rank\":87,\"population_span_rank\":88,\"smallest_move_weight_dimension\":107},\"runner_sha256\":\"ba85245a332b3b68984c7d4759f637be296bcf3b4a9bb8742008ae9e3d446d36\",\"schema\":\"physical-cell-cutting-charge-space-cycle736-v2\",\"status\":\"pass\",\"supplied_model\":\"one unit four-cube with three labelled spatial columns and one labelled tick column, normalized-volume-one corner 4-simplices, four-coordinate L1 pair charge, and the declared 48-element spatial-rotation/tick-flip action\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T235328Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

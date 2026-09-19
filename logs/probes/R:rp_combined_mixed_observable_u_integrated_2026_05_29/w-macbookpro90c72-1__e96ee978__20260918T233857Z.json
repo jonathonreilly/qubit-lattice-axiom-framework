@@ -1,0 +1,35 @@
+{
+ "task": "R:rp_combined_mixed_observable_u_integrated_2026_05_29",
+ "type": "runner-reexecution",
+ "lane": "rp",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/rp_combined_mixed_observable_u_integrated_2026_05_29.py",
+ "seed": 74737,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233857Z",
+ "elapsed_s": 15.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a35b6ada17bf0ad430efbd683f040c47a326541a398b0675c40a864292f49c4f",
+ "stdout_tail": "5e-17\n  MIXED Gram min eig=-1.286095e-16  max eig=1.1723e+00\n  -> Route T [SU(3)] PSD: PASS\n\n----------------------------------------------------------------------------------\nROUTE C [U(1)]: SAMPLED U-INTEGRATED COMBINED GRAM (real det>0 weight, Haar)\n----------------------------------------------------------------------------------\n  observables=24 (genuinely mixed=15)  configs=4000\n  min det weight=1.3131e+00 (nonpos=0)  max|Im decay|=1.19e-15\n  ||G-G^dag||=4.34e-18  MIXED Gram min eig=-3.275615e-17\n  -> Route C [U(1)] PSD: PASS\n\n----------------------------------------------------------------------------------\nROUTE C [SU(3)]: SAMPLED U-INTEGRATED COMBINED GRAM (real det>0 weight, Haar)\n----------------------------------------------------------------------------------\n  observables=112 (genuinely mixed=81)  configs=3000\n  min det weight=2.6180e+00 (nonpos=0)  max|Im decay|=1.09e-15\n  ||G-G^dag||=5.20e-18  MIXED Gram min eig=-2.787062e-16\n  -> Route C [SU(3)] PSD: PASS\n\n==================================================================================\nSCORECARD: PASS=6 FAIL=0\n  negative control      : single-step naive Lagrangian Gram non-PSD (sanity)\n  R1                    : finite Wilson temporal-gauge transfer PSD checks\n  Route T [U(1)]/[SU(3)]: combined transfer-matrix MIXED Gram PSD (entangled T_full)\n  Route C [U(1)]/[SU(3)]: sampled U-integrated combined MIXED Gram PSD (real det>0)\n==================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233913Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/rp_combined_mixed_observable_u_integrated_2026_05_29.txt against the .txt beside this log"
+  ]
+ }
+}

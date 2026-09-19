@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
+ "seed": 74853,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234053Z",
+ "elapsed_s": 9.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cbded21a0230251af5501adf9b33972721c9aa2a812095e3110b1d995ca38971",
+ "stdout_tail": "t explicit witness-family boundary note only closes the old family ansatz, not existence of a transfer realization itself\n  [PASS] The completed first-sector vector v_min evaluates exactly to Z_min on the retained four-weight first-symmetric sector  (||E_3 v_min - Z_min||=2.483e-16)\n  [PASS] One explicit positive self-adjoint conjugation-symmetric rank-one transfer operator T_min propagates e_0 exactly to v_min at depth 3  ((prop_gap,eig_min)=(1.127e-16,-1.183e-16))\n  [PASS] So existence of a positive class-sector transfer realization for Z_min is now explicit; what remains open is deriving or embedding the right realization from the actual Wilson/Perron framework-point packet  (v_min=[0.3496069525, 0.0933938493, 0.0933938493, 0.0])\n\n================================================================================================================\nRESULT\n================================================================================================================\n  Exact constructive upgrade:\n    - the completed triple Z_min already determines one exact retained\n      first-sector coefficient vector v_min\n    - one explicit positive self-adjoint conjugation-symmetric rank-one\n      transfer operator realizes v_min exactly at depth 3\n    - therefore existence of a class-sector transfer realization for Z_min\n      is no longer open\n    - the remaining honest seam is deriving / embedding the right\n      framework-point Wilson/Perron realization, not bare existence\n\nPASS=5 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234103Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

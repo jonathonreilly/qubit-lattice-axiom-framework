@@ -1,0 +1,101 @@
+
+===============================================================================
+A - Exact local support-law census
+===============================================================================
+PASS A 28 unordered count profiles
+PASS A four self-label-symmetric profiles
+PASS A five forced singleton orbit pairs
+PASS A seven free label orbit pairs
+PASS A all 2187 support tables are distinct
+PASS A free-doubleton histogram is exact
+PASS A 2059 tables retain a continuous local weight slot
+PASS A total free statistical parameter incidences
+
+===============================================================================
+B - Exact append-only continuation census
+===============================================================================
+PASS B quotient cube has eight sites and three distinct neighbors/site
+PASS B every edge is one immutable append
+PASS B reachable-state census :: {0: 1, 1: 16, 2: 112, 3: 448, 4: 1108, 5: 1744, 6: 1736, 7: 1008, 8: 254}
+PASS B reachable-edge census
+PASS B terminal-record census
+PASS B nonvacuous same-site split census
+PASS B every conflicting sibling pair is incompatible
+PASS B L=3 depth-three state census
+PASS B L=3 depth-three edge census
+
+===============================================================================
+C - Two hard-constraint local kernels
+===============================================================================
+PASS C 729 local profiles
+PASS C 24 proper cubic rotations
+PASS C lambda=1 normalized
+PASS C lambda=1 exact support
+PASS C lambda=1 rotation invariant
+PASS C lambda=1 label covariant
+PASS C lambda=2 normalized
+PASS C lambda=2 exact support
+PASS C lambda=2 rotation invariant
+PASS C lambda=2 label covariant
+PASS C kernels disagree with identical support
+PASS C lambda=1 cylinders normalize through length eight
+PASS C lambda=1 prefix consistency
+PASS C lambda=2 cylinders normalize through length eight
+PASS C lambda=2 prefix consistency
+
+===============================================================================
+D - Presentation-independent Gibbs comparator
+===============================================================================
+PASS D lambda=1 all 3^8 cylinders are consistent
+PASS D lambda=1 full-condition Markov locality
+PASS D lambda=2 all 3^8 cylinders are consistent
+PASS D lambda=2 full-condition Markov locality
+PASS D exact partition functions
+PASS D exact nearest-neighbor equality probabilities
+PASS D chosen remote site is not adjacent
+PASS D partial reveal can depend on a remote record
+
+===============================================================================
+E - Schedule and presentation controls
+===============================================================================
+PASS E strict-local schedule equations have uniform solution
+PASS E solution is unique over the reals
+PASS E hard singleton beta=1 conflicts with both equations
+PASS E uniform microcount changes coarse weight
+PASS E inherited weights preserve the coarse cylinder
+PASS E 254 terminal records
+PASS E 4,843,392 complete histories
+PASS E twelve distinct path multiplicities
+PASS E path multiplicities range 456..40320
+
+===============================================================================
+F - Action and full-interface nonuniqueness
+===============================================================================
+PASS F K1 preserves the same equilibrium law
+PASS F K1 obeys detailed balance
+PASS F K2 preserves the same equilibrium law
+PASS F K2 obeys detailed balance
+PASS F same action/equilibrium allows different rates
+PASS F 32 completions share one bare support graph
+PASS F every full-interface signature is distinct
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/route_two_exact_completion_probe_2026_07_14.py", line 458, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/route_two_exact_completion_probe_2026_07_14.py", line 449, in main
+    action_and_interface_controls()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/route_two_exact_completion_probe_2026_07_14.py", line 429, in action_and_interface_controls
+    note = NOTE.read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md'

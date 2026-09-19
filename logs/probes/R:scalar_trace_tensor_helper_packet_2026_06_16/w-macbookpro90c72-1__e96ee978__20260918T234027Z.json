@@ -1,0 +1,35 @@
+{
+ "task": "R:scalar_trace_tensor_helper_packet_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "scalar",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/scalar_trace_tensor_helper_packet_2026_06_16.py",
+ "seed": 74827,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T234027Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1228d7138b3eae9808ea1ead81730da5fccbbdb37e434d2fd496586e1b1f6b8c",
+ "stdout_tail": "ric_ansatz_scan.txt\n[PASS] same-source local O_h source family cache names helper runner -- scripts/frontier_same_source_metric_ansatz_scan.py\n[PASS] same-source local O_h source family cache is SHA-fresh -- cc0e24b12c6e\n[PASS] same-source local O_h source family cache exited cleanly -- status=ok exit=0\n[PASS] same-source local O_h source family cache output is passing\n\ncoarse-grained finite-rank exterior law\n[PASS] scripts/frontier_coarse_grained_exterior_law.py exists\n[PASS] scripts/frontier_coarse_grained_exterior_law.py has substantive source -- lines=247\n[PASS] scripts/frontier_coarse_grained_exterior_law.py exposes `def build_finite_rank_phi_grid`\n[PASS] scripts/frontier_coarse_grained_exterior_law.py exposes `def residual_at_radius`\n[PASS] scripts/frontier_coarse_grained_exterior_law.py exposes `def shell_data`\n    sha256=5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02\n[PASS] coarse-grained finite-rank exterior law cache exists -- logs/runner-cache/frontier_coarse_grained_exterior_law.txt\n[PASS] coarse-grained finite-rank exterior law cache names helper runner -- scripts/frontier_coarse_grained_exterior_law.py\n[PASS] coarse-grained finite-rank exterior law cache is SHA-fresh -- 5d8fe1c6d541\n[PASS] coarse-grained finite-rank exterior law cache exited cleanly -- status=ok exit=0\n[PASS] coarse-grained finite-rank exterior law cache output is passing\n\n========================================================================\nSUMMARY: PASS=33 FAIL=0 TOTAL=33\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234028Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

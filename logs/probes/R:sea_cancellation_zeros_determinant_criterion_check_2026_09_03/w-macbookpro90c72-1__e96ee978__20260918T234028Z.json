@@ -1,0 +1,35 @@
+{
+ "task": "R:sea_cancellation_zeros_determinant_criterion_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "sea",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py",
+ "seed": 74828,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T234028Z",
+ "elapsed_s": 19.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f28ec8878c240cc16f0b6fa2ed4cc6e49cc15b6bd8630d4cd669ee8c30524379",
+ "stdout_tail": "870224102353272e-15, 4.5539755078462684e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (6, 'ball15', 216, 15, 0, 0.002359464139256585, 2.2774085336539212e-15, 5.52994594867228e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (6, 'ball20', 216, 20, 36, 0.00012412091120830987, 2.6446856368558935e-15, 6.034904441618124e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (6, 'column+', 216, 8, 0, 0.08534136846943352, 1.94800937620903e-15, 4.808625384541031e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (8, 'ball7', 512, 7, 0, 0.012165803679591969, 1.4629398050158146e-15, 2.869884976114285e-15, 1.1826173133115145e-13, 3.125461683527829e-14), (8, 'ball10', 512, 10, 0, 0.0075144434228017875, 1.8888899000019294e-15, 4.2926849288522556e-15, 1.1826173133115145e-13, 3.125461683527829e-14), (8, 'ball15', 512, 15, 0, 0.002669553227223653, 2.392802501568312e-15, 6.770621719749125e-15, 1.1826173133115145e-13, 3.125461683527829e-14), (8, 'ball20', 512, 20, 56, 0.00023462874034337666, 3.004372571865215e-15, 6.097641903316359e-15, 1.1826173133115145e-13, 3.125461683527829e-14), (8, 'column+', 512, 10, 0, 0.08589229178601797, 1.7958432808158378e-15, 4.319127034351297e-15, 1.1826173133115145e-13, 3.125461683527829e-14)]\nSUMMARY: a corner set has zero odds for the all-occupied pattern exactly when det P_T = 0, flatness supplies stars but not all minimal supports. The old determinant cutoff flags BALLS20; the separate margin diagnostic is numerical only.\nTOTAL: PASS=39 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234047Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py",
+ "seed": 75411,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260918T235011Z",
+ "elapsed_s": 13.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "05c719b83c2fc7e692aec3646c19b9930422bfe003066c497ea90311f7dca550",
+ "stdout_tail": "\n  quarters even and odd: 2,8,20,40,70,112,168,240\n  quarters odd and even: 2,8,20,40,70,112,168,240\n  quarters odd and odd: 1,5,14,30,55,91,140,204\nPASS G22  of the four parity pairs only the even one reproduces the charge count, so this test rejects a wrong parity instead of holding whatever the parities are\nPASS hostile.pair_inventory  the submitted half-width chunk loop is detected as 7900 rather than 15800 rows\nPASS hostile.dependency  a failing predecessor receipt is rejected\nPASS hostile.target_identity  a changed target function identity is rejected\nPASS hostile.consistency  the exact consistency test distinguishes zero from one-hot\nelapsed under 20 s peak memory under 2500 MB\nPASS G23  it finishes inside its time and memory budget\nPASS G24  its output stays under 6500 characters\n\nper_element: checked -- all 192 support columns enter the incidence, kernel, block, and consistency calculations\nper_site: checked and not executed -- one supplied coordinate four-cube only; no framework cell or site is identified\nper_mode: checked and not executed -- these finite binary targets have no field or momentum-mode decomposition\nper_block: checked -- total, two halves, four quarters, all 17 realizable targets, and the inconsistent control\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, boundary, thermodynamic, or continuum statement\nRECEIPT outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_receipt_2026-08-08.json\nTOTAL: PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T235024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

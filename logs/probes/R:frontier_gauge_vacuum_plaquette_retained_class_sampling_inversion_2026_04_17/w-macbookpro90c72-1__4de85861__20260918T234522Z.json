@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+ "seed": 75122,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234522Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 SUPPORT=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9904d5f41d33c0f33a99f9c65c0a7498e8e2be571f213c9623e92651f588cab7",
+ "stdout_tail": "5\n  3-sample response gap                      = 1.787e-15\n  4-sample response gap                      = 2.008e-02\n\n  [PASS] [SUPPORT] Compressed rim-evaluation note already fixes the retained boundary law as Z_beta^env(W)=<K(W), v_beta>\n  [PASS] [SUPPORT] Compressed rim-functional uniqueness note already fixes the retained left boundary functional as universal and unique\n  [PASS] [SUPPORT] Scalar-value insufficiency note already records that one scalar value cannot determine the full class-sector vector\n  [PASS] [THEOREM] A retained finite-sector sample set defines an exact linear system for the retained coefficient vector\n         shape(E)=(4, 4)\n  [PASS] [THEOREM] A generic full retained sample set is invertible on the witness sector\n         |det E|=1.129e+02, cond(E)=2.150e+02\n  [PASS] [THEOREM] The retained coefficient vector is recovered exactly from full-rank marked-holonomy samples\n         max recovery error=9.369e-15\n  [PASS] [THEOREM] Too few retained samples leave the system underdetermined\n         rank(E_3)=3, null residual=7.338e-15\n  [PASS] [THEOREM] A null direction invisible to three samples becomes visible once a fourth generic sample is added\n         3-sample gap=1.787e-15, 4-sample gap=2.008e-02\n  [PASS] [THEOREM] So retained beta-side coefficient recovery is a finite sampling/inversion problem once the sector is truncated\n         one scalar is not enough, but N generic retained samples recover N retained coefficients\n\nTHEOREM PASS=6 SUPPORT=3 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234523Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py",
+ "seed": 75424,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e3c2612",
+ "started_utc": "20260918T235024Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "89228ad2d00323b8ee07c4b5483249ef0366ce30ca3194acfb80fe492c953b8b",
+ "stdout_tail": " gives rank 88 and nullity 104\nPASS independent.fixed_free  kernel orthogonality independently gives five fixed blocks\nPASS independent.classes  seventeen realizable targets form classes 15 and 2\nPASS independent.total_parity  odd column weight independently identifies total-support parity\nPASS independent.profile_counts  direct four-loop enumeration reproduces both sequences\nPASS independent.odd_sizes  neither realizable class licenses an odd-size profile\nPASS independent.inventory  all split-target pairs through size twenty total 180625\nPASS independent.primary_contract  primary receipt pins current sources and independently reconstructed conclusions\nPASS hostile.realizable_count  promoting odd-ctl to a reading invalidates the contract\nPASS hostile.dependency_status  a failing predecessor is rejected\nPASS hostile.witness  a changed target witness fails semantic identity\nPASS hostile.incidence  one changed incidence bit invalidates the canonical identity\nper_element: checked -- all 192 columns enter opposite-pivot incidence and kernel\nper_site: checked and not executed -- one supplied coordinate four-cube only\nper_mode: checked and not executed -- no field or momentum modes are present\nper_block: checked -- seven blocks, seventeen realizable targets, one control\nlattice_wide: checked and not executed -- no multi-cell or continuum claim\nRECEIPT outputs/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08_receipt_2026-08-08.json\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T235027Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:salvaged_exact_algebra_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "salvaged",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/salvaged_exact_algebra_2026_08_08.py",
+ "seed": 74766,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e96ee978",
+ "started_utc": "20260918T233926Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1ed5dcc819ab9b60ebdf91ec32f22b8833eff282c072778e36dd1f80ec3bc0d3",
+ "stdout_tail": "uniqueness_of_the_constant_part\nPASS split.recoil_ledger_minus2w_w_w_is_trace_free\nPASS split.graded_operator_fixes_exactly_the_trace_free_vectors\nPASS grading.residual_equals_A_plus_tB_on_all_configurations\nPASS grading.raw_ledger_sector_trace_is_identically_A\nPASS grading.B_depends_only_on_the_second_and_third_sector\nPASS grading.configuration_census_is_complete\nPASS module.fixed_subspace_is_the_line_of_1_1_1\nPASS module.complement_is_C_invariant_of_dimension_2\nPASS module.complement_char_poly_is_x2_plus_x_plus_1\nPASS module.complement_irreducible_over_Q_and_over_R\nPASS module.full_char_poly_factors_as_x3_minus_1\nPASS module.dimension_pattern_1_2_over_Q_R_and_1_1_1_over_C\nPASS forms.five_forms_collapse_to_(n-1)/n^2_on_the_locus\nPASS forms.families_coincide_pairwise_exactly_at_N_3\nPASS forms.families_separate_at_N_4\nPASS forms.fixed_locus_sum_equals_(N^2-1)/12_for_N_2_to_12\nPASS forms.evaluation_census_is_complete\nPASS origin.step_equals_(1_minus_m_G0)_over_6_on_the_grid\nPASS origin.step_is_one_sixth_iff_m_times_G0_is_zero\nPASS origin.on_G0_positive_the_massless_slice_is_m_equals_0\nPASS witness.diag_Qp_over_totalsum_J_is_(n-1)/n^3_for_n_2_to_50\nPASS witness.value_at_n_3_is_2/27\nPASS witness.rival_expression_diag_Qp_over_n_is_(n-1)/n^2\nPASS cycle.identity_holds_on_all_32768_graphs_on_6_vertices\nPASS cycle.census_counts_are_real\nPASS gate.check_count_matches_the_declared_census\nTOTAL: PASS=31 FAIL=0\nVERDICT: PASS\nreceipt: outputs/salvaged_exact_algebra_receipt_2026_08_08.json\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T233926Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

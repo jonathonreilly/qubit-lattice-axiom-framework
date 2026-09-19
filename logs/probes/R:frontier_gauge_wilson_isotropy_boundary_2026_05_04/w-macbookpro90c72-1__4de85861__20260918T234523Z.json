@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_gauge_wilson_isotropy_boundary_2026_05_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
+ "seed": 75123,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4de85861",
+ "started_utc": "20260918T234523Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b8d7e6f171c08aae4c13e7cc1051d7aee6668dba7f58967f8fd32a876605f992",
+ "stdout_tail": "n certificate -- what this runner resolves\n  per_element: checked -- each generator pair is tested on its own: all nine anticommutators {G_i, G_j} against 2 delta_ij, and the pseudoscalar is taken against each G_i separately, commuting exactly while its anticommutator reaches max magnitude 2.\n  per_site: checked -- the eta plaquette product is evaluated at every one of the 16 sites of the 2^4 corner set, separately for each of the six orientations, and each orientation's value set collapses to the single value -1 across all those sites.\n  per_mode: checked and not executed -- no spectrum, propagator or momentum variable is formed anywhere: Part 1 works in the 2-dimensional Qubit carrier M_2(C) of the Cl(3) Pauli irrep and Part 2 in integer signs, so there is no mode to resolve.\n  per_block: checked -- the six orientations are split into the spatial block {xy, xz, yz} and the temporal block {xt, yt, zt}, and the block contrast 3(mean_spatial - mean_temporal) is computed and comes out exactly 0, so no spatial/temporal split is created.\n  lattice_wide: checked -- staggered_eta depends on the coordinates only through their parities, so the 16 enumerated sites exhaust every parity class of the 4d lattice; the uniform value -1 on all six orientations is therefore lattice-wide, needing no volume limit.\n\n==============================================================================\nSUMMARY: PASS=19 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260918T234523Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

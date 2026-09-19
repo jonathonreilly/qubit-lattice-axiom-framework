@@ -1,0 +1,13 @@
+kappa=(-1, -1, -1) D=((-1, 1, 0), (-1, 0, 1), (1, -1, 0), (0, -1, 1), (1, 0, -1), (0, 1, -1))
+kappa=(-1, -1, 1) D=((-1, 1, 0), (-1, 0, -1), (1, -1, 0), (0, -1, -1), (1, 0, 1), (0, 1, 1))
+kappa=(-1, 1, -1) D=((-1, -1, 0), (-1, 0, 1), (1, 1, 0), (0, 1, 1), (1, 0, -1), (0, -1, -1))
+kappa=(-1, 1, 1) D=((-1, -1, 0), (-1, 0, -1), (1, 1, 0), (0, 1, -1), (1, 0, 1), (0, -1, 1))
+kappa=(1, -1, -1) D=((1, 1, 0), (1, 0, 1), (-1, -1, 0), (0, -1, 1), (-1, 0, -1), (0, 1, -1))
+kappa=(1, -1, 1) D=((1, 1, 0), (1, 0, -1), (-1, -1, 0), (0, -1, -1), (-1, 0, 1), (0, 1, 1))
+kappa=(1, 1, -1) D=((1, -1, 0), (1, 0, 1), (-1, 1, 0), (0, 1, 1), (-1, 0, -1), (0, -1, -1))
+kappa=(1, 1, 1) D=((1, -1, 0), (1, 0, -1), (-1, 1, 0), (0, 1, -1), (-1, 0, 1), (0, -1, 1))
+proper cubic rotations: 24
+orbit of (1,1,1): [(-1, -1, -1), (-1, -1, 1), (-1, 1, -1), (-1, 1, 1), (1, -1, -1), (1, -1, 1), (1, 1, -1), (1, 1, 1)] size=8
+stabilizer of +++ : 3
+2x2 rectangle degrees {(0, 0): 2, (0, 1): 2, (1, 0): 2, (1, 1): 2}
+SUMMARY: WITNESS REALIZABILITY (PR #8139): all eight corners have |G_kappa(0)|=12 with six l1=2 face-diagonals disjoint from the axial neighbors; 24 proper cubic rotations act transitively with stabilizer 3; the 2x2 rectangle embeds in Z^2; pattern has purchase and the witnesses exist as written

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8139",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block09-z3-mar",
+ "worker": "w-macbookpro90c72-j900e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8139/gkappa_twelve_sites_corners.py",
+ "seed": 85439,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57572c42",
+ "started_utc": "20260919T023719Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "WITNESS REALIZABILITY (PR #8139): all eight corners have |G_kappa(0)|=12 with six l1=2 face-diagonals disjoint from the axial neighbors; 24 proper cubic rotations act transitively with stabilizer 3; the 2x2 rectangle embeds in Z^2; pattern has purchase and the witnesses exist as written"
+ },
+ "review": "Eight corners have |G_kappa|=12 face-diagonals at l1=2 not lattice edges; 24 rotations transitive with stab 3; 2x2 rectangle embeds; witnesses exist as written.",
+ "what": "PR #8139 ([physics-loop] admissibility-induced-law block09 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915; git show origin/physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915:<note>. Create probes/work/pr8139/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8139/<script>.py\"",
+ "stdout_sha256": "f57b1948adc1873304531f8d624960d6c287f8b677bc0d366ddd339e65d6ad0e",
+ "stdout_tail": "kappa=(-1, -1, -1) D=((-1, 1, 0), (-1, 0, 1), (1, -1, 0), (0, -1, 1), (1, 0, -1), (0, 1, -1))\nkappa=(-1, -1, 1) D=((-1, 1, 0), (-1, 0, -1), (1, -1, 0), (0, -1, -1), (1, 0, 1), (0, 1, 1))\nkappa=(-1, 1, -1) D=((-1, -1, 0), (-1, 0, 1), (1, 1, 0), (0, 1, 1), (1, 0, -1), (0, -1, -1))\nkappa=(-1, 1, 1) D=((-1, -1, 0), (-1, 0, -1), (1, 1, 0), (0, 1, -1), (1, 0, 1), (0, -1, 1))\nkappa=(1, -1, -1) D=((1, 1, 0), (1, 0, 1), (-1, -1, 0), (0, -1, 1), (-1, 0, -1), (0, 1, -1))\nkappa=(1, -1, 1) D=((1, 1, 0), (1, 0, -1), (-1, -1, 0), (0, -1, -1), (-1, 0, 1), (0, 1, 1))\nkappa=(1, 1, -1) D=((1, -1, 0), (1, 0, 1), (-1, 1, 0), (0, 1, 1), (-1, 0, -1), (0, -1, -1))\nkappa=(1, 1, 1) D=((1, -1, 0), (1, 0, -1), (-1, 1, 0), (0, 1, -1), (-1, 0, 1), (0, -1, 1))\nproper cubic rotations: 24\norbit of (1,1,1): [(-1, -1, -1), (-1, -1, 1), (-1, 1, -1), (-1, 1, 1), (1, -1, -1), (1, -1, 1), (1, 1, -1), (1, 1, 1)] size=8\nstabilizer of +++ : 3\n2x2 rectangle degrees {(0, 0): 2, (0, 1): 2, (1, 0): 2, (1, 1): 2}\nSUMMARY: WITNESS REALIZABILITY (PR #8139): all eight corners have |G_kappa(0)|=12 with six l1=2 face-diagonals disjoint from the axial neighbors; 24 proper cubic rotations act transitively with stabilizer 3; the 2x2 rectangle embeds in Z^2; pattern has purchase and the witnesses exist as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j900e",
+  "at_utc": "20260919T023719Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-provenance-PR8149",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-jce8e",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8149/star_tvs_sources_and_values.py",
+ "seed": 96885,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4b5188d4",
+ "started_utc": "20260919T054805Z",
+ "elapsed_s": 12.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - two theorem numbers of block 15's U3 are unsourced in the PR (not printed, not derived), though they are right; the fix is to extend the runner's star classes to k = 4, 5 and print their TVs"
+ },
+ "review": "Value-based search of the cache and runner literals confirms U3's k=4,5 star TVs (505/10368, 575/10368) are neither printed nor in the runner (whose star classes are k = 0,1,2,3,6) nor derived in the note; independently computed, all seven TVs 0, 0, 1/72, 5/144, 505/10368, 575/10368, 103375/1492992 are correct (full 6^7 enumeration agreeing for k = 2,3,4): HIT confirmed, numbers right but unsourced.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:provenance:PR8149/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "2462d574cf1258dd4be35b9e031a70dc29f74b5534f4c6e0c3bef29ae96cc760",
+ "stdout_tail": " True\n   k=4: 505/10368: printed in the cache False; a literal in the runner False\n   k=5: 575/10368: printed in the cache False; a literal in the runner False\n   k=6: 103375/1492992: printed in the cache True; a literal in the runner True\n   the runner's star classes (cache C1/D1): k = 0, 1, 2, 3, 6; note proof of U3: '*Proof.* U2 with the star's recorded sets (`A_center` = the leaves before it;...'\n2. the TVs computed independently at (3,1,2)\n   k=0: TV = 0; stated 0; equal True\n   k=1: TV = 0; stated 0; equal True\n   k=2: TV = 1/72 (full 6^7 enumeration 1/72); stated 1/72; equal True\n   k=3: TV = 5/144 (full 6^7 enumeration 5/144); stated 5/144; equal True\n   k=4: TV = 505/10368 (full 6^7 enumeration 505/10368); stated 505/10368; equal True\n   k=5: TV = 575/10368; stated 575/10368; equal True\n   k=6: TV = 103375/1492992; stated 103375/1492992; equal True\nHIT: confirmed - Theorem U3's star TVs for k = 4, 5 (505/10368, 575/10368) are printed by no cache line and are not runner literals: the runner computes and checks only the classes k = 0, 1, 2, 3, 6, and the note's proof of U3 derives no number; recomputed independently here the values are correct (k = 0..6: 0, 0, 1/72, 5/144, 505/10368, 575/10368, 103375/1492992, the full 6^7 enumeration agreeing for k = 2, 3, 4)\nSUMMARY: confirmed - two theorem numbers of block 15's U3 are unsourced in the PR (not printed, not derived), though they are right; the fix is to extend the runner's star classes to k = 4, 5 and print their TVs\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jce8e",
+  "at_utc": "20260919T054818Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Block 15 Theorem U3 states isolated-star sequential-vs-joint TVs for k=4,5 (505/10368, 575/10368) that no runner line prints or checks (the runner's star classes are k = 0,1,2,3,6) and the note does not derive; recomputed independently they are correct (0, 0, 1/72, 5/144, 505/10368, 575/10368, 103375/1492992 at (3,1,2)). Provenance fix: add k=4,5 to the runner's D1.",
+  "by": "w-jonathonsmac4f50-jce8e",
+  "at_utc": "20260919T054818Z"
+ }
+}

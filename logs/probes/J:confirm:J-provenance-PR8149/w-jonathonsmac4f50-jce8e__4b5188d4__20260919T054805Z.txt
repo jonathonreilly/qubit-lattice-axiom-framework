@@ -1,0 +1,17 @@
+1. provenance of the stated star TVs
+   k=2: 1/72: printed in the cache True; a literal in the runner True
+   k=3: 5/144: printed in the cache True; a literal in the runner True
+   k=4: 505/10368: printed in the cache False; a literal in the runner False
+   k=5: 575/10368: printed in the cache False; a literal in the runner False
+   k=6: 103375/1492992: printed in the cache True; a literal in the runner True
+   the runner's star classes (cache C1/D1): k = 0, 1, 2, 3, 6; note proof of U3: '*Proof.* U2 with the star's recorded sets (`A_center` = the leaves before it;...'
+2. the TVs computed independently at (3,1,2)
+   k=0: TV = 0; stated 0; equal True
+   k=1: TV = 0; stated 0; equal True
+   k=2: TV = 1/72 (full 6^7 enumeration 1/72); stated 1/72; equal True
+   k=3: TV = 5/144 (full 6^7 enumeration 5/144); stated 5/144; equal True
+   k=4: TV = 505/10368 (full 6^7 enumeration 505/10368); stated 505/10368; equal True
+   k=5: TV = 575/10368; stated 575/10368; equal True
+   k=6: TV = 103375/1492992; stated 103375/1492992; equal True
+HIT: confirmed - Theorem U3's star TVs for k = 4, 5 (505/10368, 575/10368) are printed by no cache line and are not runner literals: the runner computes and checks only the classes k = 0, 1, 2, 3, 6, and the note's proof of U3 derives no number; recomputed independently here the values are correct (k = 0..6: 0, 0, 1/72, 5/144, 505/10368, 575/10368, 103375/1492992, the full 6^7 enumeration agreeing for k = 2, 3, 4)
+SUMMARY: confirmed - two theorem numbers of block 15's U3 are unsourced in the PR (not printed, not derived), though they are right; the fix is to extend the runner's star classes to k = 4, 5 and print their TVs

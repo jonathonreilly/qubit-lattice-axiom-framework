@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-g-PR8146",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-jbe65",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8146/s1_majority_argmax_region.py",
+ "seed": 91769,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e52ed9b4",
+ "started_utc": "20260919T042249Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the preference sentence of S1 needs p^2 q > r^3 in addition to p > max(q, r) (the proof's 'which holds when p > max(q, r)' step is the gap); the closed forms themselves are not in question here"
+ },
+ "review": "Finder's script re-run (HIT at (5,2,4): p^2 q = 50 < r^3 = 64); own symbolic weights for all 90 ordered 2:1 triples plus an exhaustive integer scan 1..24 find 979 couplings with p > max(q,r) where the antipodal majority is not the strict argmax (smallest (4,1,3)), all with p^2 q <= r^3, zero disagreements with 'p > max(q,r) and p^2 q > r^3', and on (p,1,2) failure for 2 < p <= 2 sqrt 2: HIT confirmed.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-g:PR8146/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "7b4e3bd6b2e4d35c72826a06b64a2dd8fdeef4b253d748c173f8e127e2598b74",
+ "stdout_tail": " P(-a)=3/44; majority strict argmax True\n   (p,q,r)=(5,2,4): p>max(q,r) True; (a,a,-a): P(a)=25/163, P(each orthogonal)=32/163, P(-a)=10/163; majority strict argmax False\n   (p,q,r)=(7,3,5): p>max(q,r) True; (a,a,-a): P(a)=147/710, P(each orthogonal)=25/142, P(-a)=63/710; majority strict argmax True\n   (p,q,r)=(5/2,1,2): p>max(q,r) True; (a,a,-a): P(a)=25/163, P(each orthogonal)=32/163, P(-a)=10/163; majority strict argmax False\n   (p,q,r)=(14/5,1,2): p>max(q,r) True; (a,a,-a): P(a)=98/533, P(each orthogonal)=100/533, P(-a)=35/533; majority strict argmax False\n   on the line (p,1,2) the antipodal majority loses to the orthogonal values exactly for 2 < p <= 2*sqrt(2) (= 2.828427); the runner's B4 tests p > max(q,r) only at (3,1,2), where 9 > 8\nHIT: confirmed - S1's 'the majority value of a 2:1 triple is its most likely output iff p > max(q, r)' is false in the 'if' direction: at (5,2,4) the antipodal triple (a,a,-a) gives P(a) = 25/163 < P(each orthogonal) = 32/163 (weights 50 vs 64); an exhaustive integer scan 1..24 finds 979 couplings with p > max(q,r) where some 2:1 majority is not the strict argmax, all antipodal with p^2 q <= r^3, and none against the corrected condition p > max(q,r) and p^2 q > r^3; on the line (p,1,2) the sentence fails for 2 < p <= 2 sqrt 2\nSUMMARY: confirmed - the preference sentence of S1 needs p^2 q > r^3 in addition to p > max(q, r) (the proof's 'which holds when p > max(q, r)' step is the gap); the closed forms themselves are not in question here\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jbe65",
+  "at_utc": "20260919T042259Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "S1's 'majority of a 2:1 triple is its most likely output iff p > max(q, r)' fails in the 'if' direction for the antipodal triple (a,a,-a): at (5,2,4) P(a) = 25/163 < P(each orthogonal) = 32/163; exact condition is p > max(q,r) and p^2 q > r^3 (0 disagreements over 13824 integer couplings); fails on (p,1,2) for 2 < p <= 2 sqrt 2; runner B4 tests only (3,1,2), (2,1,3), (1,2,1), (2,2,1). Closed forms unaffected.",
+  "by": "w-jonathonsmac4f50-jbe65",
+  "at_utc": "20260919T042259Z"
+ }
+}

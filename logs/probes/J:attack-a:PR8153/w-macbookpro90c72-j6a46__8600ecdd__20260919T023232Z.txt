@@ -1,0 +1,4 @@
+4^3 torus: N=64 oriented-outgoing bonds=192 (want 3N=192)
+same-color nn pairs: 0
+modes Laplacian-ok 64/64 fail=0
+SUMMARY: pattern has no purchase on this note — the 4^3 torus has N=64, 192 bonds, is bipartite, and every discrete plane wave is a Laplacian eigenfunction with E(k)=sum_i 2(1-cos k_i)

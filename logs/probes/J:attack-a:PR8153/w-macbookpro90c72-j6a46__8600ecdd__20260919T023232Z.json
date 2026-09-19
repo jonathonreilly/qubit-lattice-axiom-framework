@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8153",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block19-sphere",
+ "worker": "w-macbookpro90c72-j6a46",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8153/torus4_laplacian_eigen.py",
+ "seed": 85152,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8600ecdd",
+ "started_utc": "20260919T023232Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the 4^3 torus has N=64, 192 bonds, is bipartite, and every discrete plane wave is a Laplacian eigenfunction with E(k)=sum_i 2(1-cos k_i)"
+ },
+ "review": "4^3 torus N=64, 192 bonds, bipartite; all 64 plane-wave modes are Laplacian eigenfunctions with E(k)=sum 2(1-cos k_i); no defect",
+ "what": "PR #8153 ([physics-loop] admissibility-induced-law block19 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915; git show origin/physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915:<note>. Create probes/work/pr8153/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8153/<script>.py\"",
+ "stdout_sha256": "8650add0ceafe9e08e7eb05fd361fbce418e4250c50cf6394c96557655e681dd",
+ "stdout_tail": "4^3 torus: N=64 oriented-outgoing bonds=192 (want 3N=192)\nsame-color nn pairs: 0\nmodes Laplacian-ok 64/64 fail=0\nSUMMARY: pattern has no purchase on this note \u2014 the 4^3 torus has N=64, 192 bonds, is bipartite, and every discrete plane wave is a Laplacian eigenfunction with E(k)=sum_i 2(1-cos k_i)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6a46",
+  "at_utc": "20260919T023232Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-plane-memory-loss-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j8129",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/plane-memory-loss/referee_w-jonathonsmac4f50-j8129/check.py",
+ "seed": 81319,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4c71afc2",
+ "started_utc": "20260919T012839Z",
+ "elapsed_s": 9.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 2 - the identity KL = k A(k)(1 - u.u') and the Theta(T) cost of a twist that is static in level time are right, but they do not close route (i): the task's twist is a space-time field theta(x, t), and for it the order-beta part of the cost has minimum exactly 1/sum_{k<T} P_k -> 0 (recurrence of the walk), so the mechanism step 2 names is not forced; whether the order-one spread part (which grows for the linear-optimal twist, numerical) can also be made small is open, and 'route (i) is closed as a no-go' is not shown. The other identities hold, re-verified: KL, the z-marginal W1 = A(k), the small-field W1 rate 1/3 (with the coupling the attempt omits), P_1..P_4, k P_k -> 3 sqrt3/(4 pi), the mean-field threshold; step 1's monotonicity of A(k)/k is true but its stated polynomial proves A' <= 1/3 instead"
+ },
+ "review": "Referee of plane-memory-loss a3 (grok-4.6): independent checks pass 5 of 5 (A < k/3 and the correct monotonicity polynomial for A/k, the vMF KL identity by quadrature, the exact minimum 1/sum_{k<T} P_k of the order-beta space-time twist cost up to T = 256, the z-marginal W1 = A(k) and the reflection coupling giving the rate 1/3, P_1..P_4 and k P_k -> 3 sqrt3/(4 pi), the mean-field threshold), so its identities and reductions hold, but the attempt fails at step 2: its no-go for route (i) covers only a twist static in level time, and whether space-time twists close the route is left open (their order-one spread part grows, numerically); this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:plane-memory-loss:a3/; its files are probes/work/derive/plane-memory-loss/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/plane-memory-loss/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "18887aaa6d74631ff970307e1a5691eb49853f4bb88c6ddc39e5a112a7eaa295",
+ "stdout_tail": "futes it\nPASS: M4 step 3: the z-marginal W1 between uniform and vMF(k e) equals the difference of means A(k) (k = 0.5, 2, 6), and at k = 0 the reflection coupling transports the signed measure s_1 dsigma/(4 pi) at cost 0.33333333 = 1/3, matched by the test function s_1: the small-field W1 rate is exactly 1/3 (the upper half, which the attempt asserts via A(k)/k -> 1/3, needs this coupling)\nPASS: M5 steps 5-6: P_1..P_4 = 1/3, 5/27, 31/243, 71/729; k P_k at k = 64, 128, 255 = 0.411888, 0.412691, 0.413092 -> 3 sqrt3/(4 pi) = 0.413497; A(3 beta m) <= beta m on a grid; at beta = 2 the mean-field map has the positive fixed point m = 0.788887\nTOTAL: PASS=5 FAIL=0\nSUMMARY: fails at step 2 - the identity KL = k A(k)(1 - u.u') and the Theta(T) cost of a twist that is static in level time are right, but they do not close route (i): the task's twist is a space-time field theta(x, t), and for it the order-beta part of the cost has minimum exactly 1/sum_{k<T} P_k -> 0 (recurrence of the walk), so the mechanism step 2 names is not forced; whether the order-one spread part (which grows for the linear-optimal twist, numerical) can also be made small is open, and 'route (i) is closed as a no-go' is not shown. The other identities hold, re-verified: KL, the z-marginal W1 = A(k), the small-field W1 rate 1/3 (with the coupling the attempt omits), P_1..P_4, k P_k -> 3 sqrt3/(4 pi), the mean-field threshold; step 1's monotonicity of A(k)/k is true but its stated polynomial proves A' <= 1/3 instead\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8129",
+  "at_utc": "20260919T012849Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

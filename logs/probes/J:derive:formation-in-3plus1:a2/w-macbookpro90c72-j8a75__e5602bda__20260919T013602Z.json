@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-in-3plus1:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j8a75",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-in-3plus1/w-macbookpro90c72-j8a75/check.py",
+ "seed": 81762,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e5602bda",
+ "started_utc": "20260919T013602Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL A(kappa)/kappa is strictly decreasing on (0,infty) from 1/3 to 0 (n(u)=u^2+u sinh u-4 cosh u+4 has n(0)=n'=n''=n'''(0)=0 and n''''=u sinh u>=0); MF threshold n beta/3=1 so beta_c^{MF}=3/4 for n=4; 1-|phi|^2 = k^T M k + O(k^4) with M-eigs 1/16, 1/4, 1/4 and drift (1,1,1)/4; G_4=1913/1344 finite. Sphere LRO not proved. (18/18 checks passed)"
+ },
+ "review": "A(kappa)/kappa is strictly decreasing (n''''=u sinh u); MF threshold 3/4; M eigs 1/16 and 1/4; G_4=1913/1344; sphere LRO not proved (18/18 exact checks).",
+ "what": "DERIVATION, independent attempt 2 of 6: Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel. LEAD (executed on small lattices on 2026-09-18, not proved). The campaign studied the formation law on Z^3 in level order: two-dimensional level planes, where the sphere menu loses its memory (block 26, PR #8170) and the equal-level kernel is a plane Green function, logarithmic (block 35, PR #8180). On the event lattice Z^4 (a record at x formed from x - e_1, ..., x - e_4; level planes three-dimensional) the linear theory changes character: the plane walk is transient, the zero-mode sum (2 pi)^-3 Int 1/(1 - |phi|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, is finite, and the equal-level transverse covariance sigma^2/(1 - |phi(k)|^2) ~ sigma^2/(k^T M k) is a THREE-dimensional Green function: a 1/r law at equal level, the kernel the gravity node asks for, now under the axiom's own reading. Simulation (probes/lib/formation_levelplane.py): at beta = 6 the 3+1 sphere law holds |m| = 0.93 and its structure factor matches the linear kernel within a few percent. TASK: theorems. (a) Long-range order: prove that the sphere formation law on Z^4 in level order, started from an aligned plane, keeps liminf_t E[m_t . e] > 0 for beta large (routes: a comparison of the transverse field with the linear model using block 27's sign lemma, A(kappa)/kappa decreasing; an energy-entropy or chessboard argument in level time; a Lyapunov function for the plane average). (b) The kernel: two-sided bounds on the equal-level transverse structure factor of the form c_1 sigma^2/(1-u) <= S(k) <= c_2 sigma^2/(1-u) at small k. (c) The dichotomy: for which event-lattice dimensions does a continuous menu keep memory under formation, and is 3+1 the lowest? (d) What the drift (1,1,1)/4 per level and the non-equilibrium response (a forward-cone multinomial, not the covariance) mean for a node that reads the kernel. State exactly what you prove and what stays executed only. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-in-3plus1/<name>/check.py\"",
+ "stdout_sha256": "ba11508b3fc037cf34dddb492d7aec27ff0d8dbe649c5843a676bd353031d995",
+ "stdout_tail": "CHECK P1a_n0: OK\nCHECK P1b_n4: OK (n'''' = u sinh u >= 0 for u>=0)\nCHECK P1c_n3_0: OK\nCHECK P1d_n2_0: OK\nCHECK P1e_n1_0: OK\nCHECK P1f_df_sign: OK (d/dk (A/k) = -g/k^3 with g = n(2k)/(4 sinh^2 k))\nCHECK P1g_num_vs_n: OK\nCHECK P1h_numg: OK\nCHECK P1i_n_over_4: OK\nCHECK P1j_limit0: OK (A/k = 1/3 + O(k^2))\nCHECK P2a_Aprime0: OK\nCHECK P2b_threshold: OK (MF unstable at 0 iff n beta/3 > 1, i.e. beta > 3/n = 3/4 for n=4)\nCHECK P2c_34: OK (beta_c^{MF} = 3/4)\nCHECK P3a_hessian: OK (H=Matrix([[3/8, -1/8, -1/8], [-1/8, 3/8, -1/8], [-1/8, -1/8, 3/8]]))\nCHECK P3b_eigs: OK (H eigs {1/8: 1, 1/2: 2})\nCHECK P3c_M: OK (M=H/2 has eigs 1/16 (along (1,1,1)) and 1/4 (twice))\nCHECK P3d_drift: OK (Im phi(k1,0,0) = -k1/4 + O(k^3); drift (1,1,1)/4)\nCHECK P4_G4: OK (G_4=1913/1344 finite)\nSUMMARY: PARTIAL A(kappa)/kappa is strictly decreasing on (0,infty) from 1/3 to 0 (n(u)=u^2+u sinh u-4 cosh u+4 has n(0)=n'=n''=n'''(0)=0 and n''''=u sinh u>=0); MF threshold n beta/3=1 so beta_c^{MF}=3/4 for n=4; 1-|phi|^2 = k^T M k + O(k^4) with M-eigs 1/16, 1/4, 1/4 and drift (1,1,1)/4; G_4=1913/1344 finite. Sphere LRO not proved. (18/18 checks passed)\nHIT: A(kappa)/kappa strictly decreasing (comparison lemma); MF threshold 3/4; M eigs 1/16 and 1/4 (twice); G_4=1913/1344\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8a75",
+  "at_utc": "20260919T013607Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "A/kappa strictly decreasing via n''''=u sinh u; MF threshold 3/4; M eigs; G_4=1913/1344.",
+  "by": "w-macbookpro90c72-j8a75",
+  "at_utc": "20260919T013607Z"
+ }
+}

@@ -1,0 +1,20 @@
+CHECK P1a_n0: OK
+CHECK P1b_n4: OK (n'''' = u sinh u >= 0 for u>=0)
+CHECK P1c_n3_0: OK
+CHECK P1d_n2_0: OK
+CHECK P1e_n1_0: OK
+CHECK P1f_df_sign: OK (d/dk (A/k) = -g/k^3 with g = n(2k)/(4 sinh^2 k))
+CHECK P1g_num_vs_n: OK
+CHECK P1h_numg: OK
+CHECK P1i_n_over_4: OK
+CHECK P1j_limit0: OK (A/k = 1/3 + O(k^2))
+CHECK P2a_Aprime0: OK
+CHECK P2b_threshold: OK (MF unstable at 0 iff n beta/3 > 1, i.e. beta > 3/n = 3/4 for n=4)
+CHECK P2c_34: OK (beta_c^{MF} = 3/4)
+CHECK P3a_hessian: OK (H=Matrix([[3/8, -1/8, -1/8], [-1/8, 3/8, -1/8], [-1/8, -1/8, 3/8]]))
+CHECK P3b_eigs: OK (H eigs {1/8: 1, 1/2: 2})
+CHECK P3c_M: OK (M=H/2 has eigs 1/16 (along (1,1,1)) and 1/4 (twice))
+CHECK P3d_drift: OK (Im phi(k1,0,0) = -k1/4 + O(k^3); drift (1,1,1)/4)
+CHECK P4_G4: OK (G_4=1913/1344 finite)
+SUMMARY: PARTIAL A(kappa)/kappa is strictly decreasing on (0,infty) from 1/3 to 0 (n(u)=u^2+u sinh u-4 cosh u+4 has n(0)=n'=n''=n'''(0)=0 and n''''=u sinh u>=0); MF threshold n beta/3=1 so beta_c^{MF}=3/4 for n=4; 1-|phi|^2 = k^T M k + O(k^4) with M-eigs 1/16, 1/4, 1/4 and drift (1,1,1)/4; G_4=1913/1344 finite. Sphere LRO not proved. (18/18 checks passed)
+HIT: A(kappa)/kappa strictly decreasing (comparison lemma); MF threshold 3/4; M eigs 1/16 and 1/4 (twice); G_4=1913/1344

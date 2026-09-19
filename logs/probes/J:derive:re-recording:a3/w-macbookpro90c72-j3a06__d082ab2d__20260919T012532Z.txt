@@ -1,0 +1,15 @@
+CHECKED E0.N36
+CHECKED E1.async-stochastic
+CHECKED E1.async-stationarity
+CHECKED E1.async-DB
+CHECKED E2.sync-stochastic
+CHECKED E2.sync-stationarity
+CHECKED E2.sync-DB
+CHECKED E3.TV-positive: TV=1/12
+E3.TV(static,sync)= 1/12 0.08333333333333333
+CHECKED E4.mu-neq-pi
+CHECKED E5.static-marginal-uniform: 1/6
+CHECKED E5.sync-marginal-uniform: 1/6
+CHECKS ok=11 fail=0
+HIT: PARTIAL: on the two-site edge, exact 36x36 matrices over Q: async heat-bath is reversible w.r.t. the static law (DB and mu P=mu); sync is reversible w.r.t. pi∝Z(s0)Z(s1) (DB and pi P=pi); TV(static,sync)=1/12≠0; one-site marginals are both uniform. Uniqueness/kernel of the static law transfer to async, not to sync. Route: transition matrices, not pairing-only.
+SUMMARY: PARTIAL exact 36-state proof that async re-recording has the static law and sync has pi∝prod Z, with TV=1/12 on the edge; transfer only for async

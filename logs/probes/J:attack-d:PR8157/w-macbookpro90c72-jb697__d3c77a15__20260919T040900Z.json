@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8157",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block23-unsold",
+ "worker": "w-macbookpro90c72-jb697",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8157/quantifier_kappa_every_beta.py",
+ "seed": 90940,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d3c77a15",
+ "started_utc": "20260919T040900Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "QUANTIFIER SCOPE (PR #8157): \u03b3\u221216\u03b2\u03b3\u00b2(8/5)=\u03ba(\u03b2) identically on both branches (every \u03b2>0); \u03a3_{j=1}^R 8j/(1+j)\u00b2 \u2264 8 H_R for R=1..80; \u03ba(5/256)=1/2; pattern has purchase and the inequalities hold in-range"
+ },
+ "review": "QUANTIFIER SCOPE: exponent identity equals \u03ba(\u03b2) on both branches for every \u03b2>0; shell/harmonic bound holds R=1..80.",
+ "what": "PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915; git show origin/physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915:<note>. Create probes/work/pr8157/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8157/<script>.py\"",
+ "stdout_sha256": "81d485be2a9e7e93cdabc64b9e9b087e8bc6afdde1619ce0d08c0e2f6b4a4be2",
+ "stdout_tail": "== exponent identity \u03b3-16\u03b2\u03b3\u00b2(8/5) = \u03ba(\u03b2) on both branches ==\n  large-\u03b2 branch: 5/(512*beta) vs 5/(512*beta) equal=True\n  small-\u03b2 branch: 1 - 128*beta/5 vs 1 - 128*beta/5 equal=True\n  Fraction grid (45 points): exp_lb = \u03ba\n== P2 \u03a3_j 8j/(1+j)\u00b2 \u2264 8 H_R for every R=1..80 ==\n  R=1..80 holds; tightest slack 6 at R=1\n  \u03ba(join)=1/2 \u03ba(join/2)=3/4 \u2265 1/2\nSUMMARY: QUANTIFIER SCOPE (PR #8157): \u03b3\u221216\u03b2\u03b3\u00b2(8/5)=\u03ba(\u03b2) identically on both branches (every \u03b2>0); \u03a3_{j=1}^R 8j/(1+j)\u00b2 \u2264 8 H_R for R=1..80; \u03ba(5/256)=1/2; pattern has purchase and the inequalities hold in-range\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb697",
+  "at_utc": "20260919T040906Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

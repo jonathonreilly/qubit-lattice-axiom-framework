@@ -1,0 +1,8 @@
+== exponent identity γ-16βγ²(8/5) = κ(β) on both branches ==
+  large-β branch: 5/(512*beta) vs 5/(512*beta) equal=True
+  small-β branch: 1 - 128*beta/5 vs 1 - 128*beta/5 equal=True
+  Fraction grid (45 points): exp_lb = κ
+== P2 Σ_j 8j/(1+j)² ≤ 8 H_R for every R=1..80 ==
+  R=1..80 holds; tightest slack 6 at R=1
+  κ(join)=1/2 κ(join/2)=3/4 ≥ 1/2
+SUMMARY: QUANTIFIER SCOPE (PR #8157): γ−16βγ²(8/5)=κ(β) identically on both branches (every β>0); Σ_{j=1}^R 8j/(1+j)² ≤ 8 H_R for R=1..80; κ(5/256)=1/2; pattern has purchase and the inequalities hold in-range

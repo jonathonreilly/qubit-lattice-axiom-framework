@@ -1,0 +1,32 @@
+{
+ "task": "J:note:COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_",
+ "type": "judgment",
+ "lane": "covariant",
+ "worker": "w-jonathonsmac4f50-j852f",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_/subset_dp_minimal_words_submodules.py",
+ "seed": 16550,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "275ce089",
+ "started_utc": "20260919T111550Z",
+ "elapsed_s": 13.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "an exact subset DP over all 2^20 formed-site sets reproduces the note's cube histogram [135128771002368000, 810772626014208000, 1118564273553408000, 350957366673408000, 17478970933248000] over 20! orders (the matching-integral values), E[d] = 12/7 and E[2^-d] = 924167/2598960, and the plane histogram over 9!; for 16 random cube orders all 2^20 coin vectors give 2^(20-d) successes onto the 4096 Gauss patterns uniformly; the minimal Gauss words on Q_3 are exactly the 28 DFS simple cycles and 444 simple paths with endpoint charges, and on the 3x3 grid superlattice the same structure holds (13 cycles, 322 paths); invariant functionals are a r + b sum and the invariant subgroups number 18 and 24 by dimension (slot-only 7 and 8); no falsifier fires"
+ },
+ "review": "Read the script and its output: an exact int64 subset DP over all 2^20 formed-site sets reproduces the cube histogram over 20! orders that the note obtained from the matching integral (135128771002368000 ... 17478970933248000), with E[d] = 12/7 and E[2^-d] = 924167/2598960, and the plane histogram over 9!; for 16 random cube orders all 2^20 coin vectors give 2^(20-d) successes onto the 4096 Gauss patterns with multiplicity 2^(8-d); the minimal Gauss words on Q_3 are exactly the 28 DFS simple cycles and 444 simple paths with endpoint charges, and on the 3x3 grid superlattice (beyond the note) the 13 cycles and 322 charged paths; invariant functionals are a r + b sum and the RREF submodule lattice gives 18 and 24 invariant subgroups (slot-only 7 and 8); no falsifier fires.",
+ "what": "Note on main: docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_/<script>.py\"",
+ "stdout_sha256": "211a3f063eaf48ea0a6609b97fef0ed1743033f83ddf9f7674db90ce91f2802f",
+ "stdout_tail": "tinct Gauss patterns each with multiplicity 2^(8-d): True\n3. Q_3: minimal words - loops by length {4: 6, 6: 16, 8: 6}, charged paths by links {1: 12, 2: 24, 3: 48, 4: 72, 5: 120, 6: 96, 7: 72}; DFS simple cycles {4: 6, 6: 16, 8: 6}, simple paths {1: 12, 2: 24, 3: 48, 4: 72, 5: 120, 6: 96, 7: 72}\n   beyond, 3x3 grid superlattice: minimal loops {4: 4, 6: 4, 8: 5} vs DFS cycles {4: 4, 6: 4, 8: 5}; minimal charged paths {1: 12, 2: 22, 3: 40, 4: 52, 5: 64, 6: 56, 7: 56, 8: 20} vs DFS paths {1: 12, 2: 22, 3: 40, 4: 52, 5: 64, 6: 56, 7: 56, 8: 20}\n4. invariant functionals of form a r + b sum (count), invariant subgroups by dimension 0..7, slot-only: {2: (True, 4, [1, 3, 2, 3, 3, 2, 3, 1], 7), 3: (True, 9, [1, 4, 2, 5, 5, 2, 4, 1], 8)}\nSUMMARY: an exact subset DP over all 2^20 formed-site sets reproduces the note's cube histogram [135128771002368000, 810772626014208000, 1118564273553408000, 350957366673408000, 17478970933248000] over 20! orders (the matching-integral values), E[d] = 12/7 and E[2^-d] = 924167/2598960, and the plane histogram over 9!; for 16 random cube orders all 2^20 coin vectors give 2^(20-d) successes onto the 4096 Gauss patterns uniformly; the minimal Gauss words on Q_3 are exactly the 28 DFS simple cycles and 444 simple paths with endpoint charges, and on the 3x3 grid superlattice the same structure holds (13 cycles, 322 paths); invariant functionals are a r + b sum and the invariant subgroups number 18 and 24 by dimension (slot-only 7 and 8); no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j852f",
+  "at_utc": "20260919T111614Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

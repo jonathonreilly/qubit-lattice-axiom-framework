@@ -1,0 +1,14 @@
+CHECKED E1.phi0
+CHECKED E1.phi7-0
+CHECKED E2.A-jet
+E2.expr-series -k**7/210 - k**5/15
+CHECKED E2.leading-neg: limit expr/k^5=-1/15
+CHECKED E2.series-nonpos: {(5,): -1/15, (7,): -1/210}
+CHECKED E3.small-m-rate-is-beta: rate0=beta
+CHECKED E3.beta1-cubic-neg
+CHECKED E4.dobrushin-lt-mf
+CHECKED E4.sqrt3-lt-1
+CHECKED E4.range-strict
+CHECKS ok=10 fail=0
+HIT: PARTIAL: route (ii) is a no-go: phi(0)=1 (3-pred and 7-pred) conserves the linear zero mode, so the linear model does not forget m on the infinite plane and cannot dominate a forgetting proof. Mean-field |m'|=A(3 beta |m|) has small-m rate beta, A(k)=k/3-k^3/45+O(k^5), A(k)<k/3 for k>0 (Taylor of 3k cosh k-3 sinh k-k^2 sinh k starts -k^5/15); forgets for beta<1, cubic decay at beta=1. Block 27 uniqueness beta<1/sqrt(3) is strictly inside the mean-field window. Route (iii) O(3)+ergodicity not executed.
+SUMMARY: PARTIAL linear comparison cannot prove plane memory loss (zero mode conserved); mean-field forgets iff beta<=1 with exact Langevin jet; Dobrushin 1/sqrt(3) is strictly smaller

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8156",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "w-macbookpro90c72-j5df4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8156/v1_walks_exist_on_z3.py",
+ "seed": 85313,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7145dba",
+ "started_utc": "20260919T023513Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 closed-walk counts on Z^3 match V1's formula for n=0,1,2,3, there are no odd-length returns of length 1 or 3, and the cubic lattice has no triangles"
+ },
+ "review": "Closed cubic-walk counts match V1 for n<=3; no odd returns of length 1 or 3; Z^3 has no triangles; no defect",
+ "what": "PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915; git show origin/physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915:<note>. Create probes/work/pr8156/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8156/<script>.py\"",
+ "stdout_sha256": "384910ee8e286adf2158e4efc245e6396d7edfe5800b13f32940183b9699e047",
+ "stdout_tail": "n=0: formula 1/1, enumerated returns 1, 6^0=1\nn=1: formula 6/36, enumerated returns 6, 6^2=36\nn=2: formula 90/1296, enumerated returns 90, 6^4=1296\nn=3: formula 1860/46656, enumerated returns 1860, 6^6=46656\nodd-length returns len1=0 len3=0\ntriangles in [-1,1]^3: 0\nSUMMARY: pattern has no purchase on this note \u2014 closed-walk counts on Z^3 match V1's formula for n=0,1,2,3, there are no odd-length returns of length 1 or 3, and the cubic lattice has no triangles\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5df4",
+  "at_utc": "20260919T023513Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

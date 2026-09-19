@@ -1,0 +1,18 @@
+CHECK PASS: N.1 NEC |lambda|(0)=1
+CHECK PASS: N.2 NEC H11=H22=-4/9, H12=2/9 (Hessian = -2 Cov)  H11=-4/9 H12=2/9
+CHECK PASS: N.3 NEC Hessian H11  -4/9
+CHECK PASS: N.4 NEC Hessian of |lam|^2 is negative definite at 0  det=4/27 H11=-4/9 H12=2/9
+CHECK PASS: S.1 7-stencil lambda is real (no drift)
+CHECK PASS: S.2 |lambda|(0)=1
+CHECK PASS: S.3 7-stencil |lambda|^2 Hessian H11 < 0  -4/7
+CHECK PASS: S.4 lambda = 1 - E/7
+CHECK PASS: S.5 |lambda|=1 on the torus only at k=0 (E=0 only at 0)
+CHECK PASS: X.1 triangle inequality |lambda| <= 1 for positive gain-one weights, equality iff phases agree
+CHECK PASS: X.2 a single positive predecessor is a drift |lambda|=1, arg=v·k, not a wave arg=c|k|
+CHECK PASS: X.3 |lambda|=1 with arg proportional to |k| is not a Fourier transform of a finite positive measure
+CHECK PASS: C.1 NEC mean is (-1/3,-1/3)  (-0.3333333333333333, -0.3333333333333333)
+CHECK PASS: C.2 NEC Cov PD (det>0)  Cov=[[0.2222222222222222, -0.1111111111111111], [-0.1111111111111111, 0.2222222222222222]] det=0.037037037037037035
+CHECK PASS: C.3 collinear support: Cov singular (det=0), undamped transverse direction  [[0.6666666666666667, 0.0], [0.0, 0.0]]
+CHECKS: PASS=15 FAIL=0
+SUMMARY: PARTIAL gain-one linear formation with finitely many nonnegative predecessor weights has |lambda(k)|<=1 by the triangle inequality, with equality near 0 only at k=0 when the predecessor covariance is positive definite (NEC Cov PD; 7-stencil lambda=1-E/7 real, |lambda|<1 for k!=0). Then lambda = 1 - i m·k - (1/2) k^T M k + O(|k|^3) and |lambda|^2 = 1 - k^T Cov k + O(|k|^4): drift plus diffusion, never a wave |lambda|=1 with arg = c|k|. Exception: collinear support (Cov singular) leaves a transverse undamped direction; a single predecessor is a pure drift arg=v·k. Negative weights can violate |lambda|<=1. Waves would need non-positive overlap, a complex/spinor record with unitary weights, or an extra conserved oscillatory quantity.
+HIT: for gain-one linear formation with nonnegative finite predecessor weights, |lambda(k)|<=1 with equality at k=0 only when Cov of the predecessor measure is PD; then lambda=1-i m·k - D(k)+O(k^3) with D(k)=(1/2)k^T M k, |lambda|^2=1-k^T Cov k+O(k^4), so the mode nearest 1 is drift plus diffusion and not a wave. NEC Cov is PD; 7-stencil lambda=1-E/7. Collinear support is the degenerate exception. A wave |lambda|=1, arg=c|k| is not the Fourier transform of a finite positive measure.

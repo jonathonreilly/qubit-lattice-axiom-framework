@@ -1,0 +1,32 @@
+{
+ "task": "J:note:KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO_GO_NOTE_2026_04_24",
+ "type": "judgment",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-j4e35",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO/marks_on_m_zeta_exact.py",
+ "seed": 253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "52032fc5",
+ "started_utc": "20260919T064413Z",
+ "elapsed_s": 17.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the falsifier does not fire for A = C*(D,U): at L = 3, r = 1 and 57/40, exactly [D,U] = 0, dim ker D = 4 (constant spinors), rank M_zeta = 2 and D, U, U^dag restrict to 0, zeta, zeta_bar times I_2 (so every P_lambda(D) to 0 or 1); outside A, the construction's Clifford volume element Gamma commutes with D and U exactly and restricts to M_zeta with eigenvalues [(-1, 1), (1, 1)] (the sibling/bridge notes' counter-route), while TxTyTz and the hopping sum restrict to scalars; beyond the note's size the rank-two premise holds at L=2,r=1, L=2,r=57/40, L=3,r=1, L=3,r=57/40, L=4,r=57/40, L=5,r=1, L=5,r=57/40, L=6,r=57/40 and fails at L=3,r=1/3: 8; L=4,r=1: 6; L=6,r=1: 8 (accidental Wilson zero modes), where TxTyTz and the hopping sum also split M_zeta"
+ },
+ "review": "Output matches the task (falsifier 1 implemented with exact QQ_I position-space and exact momentum-space machinery): at the note's L = 3, r = 1 and 57/40, [D,U] = 0, dim ker D = 4 and rank M_zeta = 2 hold exactly and D, U, U^dag restrict to 0, zeta, zeta_bar times I_2, so no element of A = C*(D,U) is a non-scalar mark; outside A the Clifford volume element Gamma commutes with D and U exactly and restricts to M_zeta with eigenvalues +1 and -1 (the counter-route the sibling and bridge notes record), and beyond the note's size the rank-two premise fails at L=3 r=1/3 (rank 8), L=4 r=1 (rank 6) and L=6 r=1 (rank 8), where TxTyTz and the hopping sum also split M_zeta.",
+ "what": "Note on main: docs/KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO_GO_NOTE_2026-04-24.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO/<script>.py\"",
+ "stdout_sha256": "2e1268841419329e66e051e1308feb284597ecfb2948cb46cb3a4c0f19ae1363",
+ "stdout_tail": " 6; TxTyTz distinct 3; hopping distinct 2\n   L=4 r=57/40: dim ker D 4; rank M_zeta 2; orbits 1; Gamma=+1 on M_zeta 1 of 2; TxTyTz distinct 1; hopping distinct 1\n   L=5 r=1: dim ker D 4; rank M_zeta 2; orbits 1; Gamma=+1 on M_zeta 1 of 2; TxTyTz distinct 1; hopping distinct 1\n   L=5 r=57/40: dim ker D 4; rank M_zeta 2; orbits 1; Gamma=+1 on M_zeta 1 of 2; TxTyTz distinct 1; hopping distinct 1\n   L=6 r=1: dim ker D 20; rank M_zeta 8; orbits 5; Gamma=+1 on M_zeta 4 of 8; TxTyTz distinct 4; hopping distinct 2\n   L=6 r=57/40: dim ker D 4; rank M_zeta 2; orbits 1; Gamma=+1 on M_zeta 1 of 2; TxTyTz distinct 1; hopping distinct 1\n   momentum-space dim ker D equals the position-space exact rank count at every cross-checked (L, r): True\nSUMMARY: the falsifier does not fire for A = C*(D,U): at L = 3, r = 1 and 57/40, exactly [D,U] = 0, dim ker D = 4 (constant spinors), rank M_zeta = 2 and D, U, U^dag restrict to 0, zeta, zeta_bar times I_2 (so every P_lambda(D) to 0 or 1); outside A, the construction's Clifford volume element Gamma commutes with D and U exactly and restricts to M_zeta with eigenvalues [(-1, 1), (1, 1)] (the sibling/bridge notes' counter-route), while TxTyTz and the hopping sum restrict to scalars; beyond the note's size the rank-two premise holds at L=2,r=1, L=2,r=57/40, L=3,r=1, L=3,r=57/40, L=4,r=57/40, L=5,r=1, L=5,r=57/40, L=6,r=57/40 and fails at L=3,r=1/3: 8; L=4,r=1: 6; L=6,r=1: 8 (accidental Wilson zero modes), where TxTyTz and the hopping sum also split M_zeta\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4e35",
+  "at_utc": "20260919T064438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

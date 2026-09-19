@@ -1,0 +1,32 @@
+{
+ "task": "J:note:ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_N",
+ "type": "judgment",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-j3358",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGI/coefficients_thresholds_and_windows.py",
+ "seed": 13415,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "56b79844",
+ "started_utc": "20260919T102335Z",
+ "elapsed_s": 8.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "all seven literals agree under brute force and a multiset reduction, 6c_1(7,3,5) = 1.2805 > 1, c_1^(4)(2,5,3) > c_1(2,5,3); the r = 4 region on 1..12 is the note's 15-cell diamond (beyond: r = 3 has 6 cells, r = 5 has 26); 6c_1 - 1 changes sign across all six isolating brackets and stays below 1 at 75 interior line points (largest 0.9432); the column-factorised transfer reproduces the 3x3 center TV 691410442136477999520/76730168638463067377251 with bound 1/56, and TV <= (D b)_x holds at every site of the 3x3, 4x4 and 5x5 windows at (2,1,2) and (3,2,2) (largest ratio 0.7713); walk counts hold to n = 8; no falsifier fires"
+ },
+ "review": "Read the script and its output: all seven c_1 literals agree under brute force over 6^5 shells and under a multiset reduction, 6c_1(7,3,5) = 1.2805 and c_1^(4)(2,5,3) > c_1(2,5,3); the r = 4 region on 1..12 is exactly the 15-cell diamond (r = 3: 6 cells, r = 5: 26 cells beyond the note); 6c_1 - 1 changes sign across all six isolating brackets and stays below 1 at 75 interior line points (max 0.9432); a column-factorised exact row transfer reproduces the 3x3 center TV 691410442136477999520/76730168638463067377251 with bound 1/56 and the (3,2,2), (5,4,4), (3,1,2) center values (labels truncated), and TV <= (D b)_x holds at every site of 3x3, 4x4 and 5x5 windows at (2,1,2) and (3,2,2) (max ratio 0.771); walk counts hold to n = 8; an earlier run's HIT came from my rounding tolerance on the note's truncated decimal labels and its unreviewed log was deleted; no falsifier fires.",
+ "what": "Note on main: docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGI/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGI/<script>.py\"",
+ "stdout_sha256": "ce6a48bdf5ebe4f95dfd3f28bf2893b9420b340dcd6e6a29f3cf77d0aa7bcdf1",
+ "stdout_tail": "0.6622280910100754, 'center (TV, bound) L=3': (Fraction(33371823530478793013606992, 4514027923287489693489918949), Fraction(1971216, 114898033))}\n4. ((3, 2, 2), 4): {'c1^(4)': Fraction(1404, 11431), 'max row sum': Fraction(5616, 11431), 'TV <= (Db)_x at every site': True, 'max TV/(Db)': 0.6446283880241139, 'center (TV, bound) L=3': None}\n4. ((3, 2, 2), 5): {'c1^(4)': Fraction(1404, 11431), 'max row sum': Fraction(5616, 11431), 'TV <= (Db)_x at every site': True, 'max TV/(Db)': 0.6287639471364342, 'center (TV, bound) L=3': None}\n4'. 3x3 centers (c_1^(4), row sum, TV): {(3, 2, 2): (Fraction(1404, 11431), Fraction(5616, 11431), 0.007392914731057902), (5, 4, 4): (Fraction(10000, 175641), Fraction(40000, 175641), 0.0016901410547854664), (3, 1, 2): (Fraction(918, 3431), Fraction(3672, 3431), 0.034675398608479714)}\n5. sum_y N_n(0,y) = 6^n for n = 1..8: True\nSUMMARY: all seven literals agree under brute force and a multiset reduction, 6c_1(7,3,5) = 1.2805 > 1, c_1^(4)(2,5,3) > c_1(2,5,3); the r = 4 region on 1..12 is the note's 15-cell diamond (beyond: r = 3 has 6 cells, r = 5 has 26); 6c_1 - 1 changes sign across all six isolating brackets and stays below 1 at 75 interior line points (largest 0.9432); the column-factorised transfer reproduces the 3x3 center TV 691410442136477999520/76730168638463067377251 with bound 1/56, and TV <= (D b)_x holds at every site of the 3x3, 4x4 and 5x5 windows at (2,1,2) and (3,2,2) (largest ratio 0.7713); walk counts hold to n = 8; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3358",
+  "at_utc": "20260919T102355Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-j9e2c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8149/provenance_theorem_numbers.py",
+ "seed": 92384,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0959fb8",
+ "started_utc": "20260919T043304Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "10 numbers, 2 unsourced"
+ },
+ "review": "star TVs 505/10368 and 575/10368 for k=4,5 are in the result-up-front but not printed by the runner cache (which only lists k=2,3,6), so those two theorem numbers are unsourced",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "64f490b8175c906c06d6a1432356f9588cf37710ad23e007f0996480bd94255c",
+ "stdout_tail": "1/72 | star TV k=2 | cache: PASS: D1 U3: isolated star \u2014 sequential equals joint for k = 0, 1 leaves before the center and differs for k = 2, 3, 6 w | OK\n5/144 | star TV k=3 | cache: PASS: D1 U3: isolated star \u2014 sequential equals joint for k = 0, 1 leaves before the center and differs for k = 2, 3, 6 w | OK\n505/10368 | star TV k=4 | NOT IN CACHE | UNSOURCED\n575/10368 | star TV k=5 | NOT IN CACHE | UNSOURCED\n103375/1492992 | star TV k=6 | cache: PASS: D1 U3: isolated star \u2014 sequential equals joint for k = 0, 1 leaves before the center and differs for k = 2, 3, 6 w | OK\n455/31176 | plaquette path-order TV | cache: PASS: D2 U3: isolated plaquette \u2014 every order differs from the joint law (16 at 455/31176, 8 at 37/1299) and the two cla | OK\n37/1299 | plaquette diagonal-first TV | cache: PASS: D2 U3: isolated plaquette \u2014 every order differs from the joint law (16 at 455/31176, 8 at 37/1299) and the two cla | OK\n18 | checks | cache: TOTAL: PASS=18 FAIL=0 | OK\n12 | mutations | cache: PASS: D2 U3: isolated plaquette \u2014 every order differs from the joint law (16 at 455/31176, 8 at 37/1299) and the two cla | OK\n(3, 1, 2) | executed triple | cache: PASS: B2 U2 lemma: K_k(b..b) - K_k(-b,b..b) = ((p-q)/Z_1)[(p/Z_1)^(k-1) - (q/Z_1)^(k-1)] and the orthogonal form, symbol | OK\nSUMMARY: 10 numbers, 2 unsourced\nHIT: unsourced numbers\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9e2c",
+  "at_utc": "20260919T043310Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Result-up-front lists isolated-star sequential-vs-joint TVs 1/72, 5/144, 505/10368, 575/10368, 103375/1492992 for k=2..6; runner-cache D1 only prints 1/72, 5/144, 103375/1492992 (k=2,3,6). 505/10368 and 575/10368 have no cache line.",
+  "by": "w-macbookpro90c72-j9e2c",
+  "at_utc": "20260919T043310Z"
+ }
+}

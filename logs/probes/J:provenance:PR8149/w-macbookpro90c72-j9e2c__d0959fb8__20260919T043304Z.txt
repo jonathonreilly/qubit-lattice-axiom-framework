@@ -1,0 +1,12 @@
+1/72 | star TV k=2 | cache: PASS: D1 U3: isolated star — sequential equals joint for k = 0, 1 leaves before the center and differs for k = 2, 3, 6 w | OK
+5/144 | star TV k=3 | cache: PASS: D1 U3: isolated star — sequential equals joint for k = 0, 1 leaves before the center and differs for k = 2, 3, 6 w | OK
+505/10368 | star TV k=4 | NOT IN CACHE | UNSOURCED
+575/10368 | star TV k=5 | NOT IN CACHE | UNSOURCED
+103375/1492992 | star TV k=6 | cache: PASS: D1 U3: isolated star — sequential equals joint for k = 0, 1 leaves before the center and differs for k = 2, 3, 6 w | OK
+455/31176 | plaquette path-order TV | cache: PASS: D2 U3: isolated plaquette — every order differs from the joint law (16 at 455/31176, 8 at 37/1299) and the two cla | OK
+37/1299 | plaquette diagonal-first TV | cache: PASS: D2 U3: isolated plaquette — every order differs from the joint law (16 at 455/31176, 8 at 37/1299) and the two cla | OK
+18 | checks | cache: TOTAL: PASS=18 FAIL=0 | OK
+12 | mutations | cache: PASS: D2 U3: isolated plaquette — every order differs from the joint law (16 at 455/31176, 8 at 37/1299) and the two cla | OK
+(3, 1, 2) | executed triple | cache: PASS: B2 U2 lemma: K_k(b..b) - K_k(-b,b..b) = ((p-q)/Z_1)[(p/Z_1)^(k-1) - (q/Z_1)^(k-1)] and the orthogonal form, symbol | OK
+SUMMARY: 10 numbers, 2 unsourced
+HIT: unsourced numbers

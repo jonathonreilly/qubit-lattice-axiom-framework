@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-no-waves-under-positive-formation-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j40e2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/no-waves-under-positive-formation/referee_w-jonathonsmac4f50-j40e2/check.py",
+ "seed": 82431,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "032b3f66",
+ "started_utc": "20260919T014711Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step for the one-level statement; the multi-level case is stated as not done, and step 5's list of what would give waves is a reading whose negative-weight example is growth (the wave-equation example is not given)"
+ },
+ "review": "Referee of no-waves a3 (grok-4.6): independent sympy checks pass 5 of 5 (the unimodular set on torus grids, the exact series of lambda with the second moment and of |lambda|^2 with the covariance on NEC and random sets, the NEC Hessian -2 Cov with det 4/27, the 7-stencil lambda = 1 - E/7 in [-5/7, 1), collinear support undamped to all orders), so the one-level drift-plus-diffusion statement survives; the multi-level case is not covered and step 5's negative-weight example is growth, not a wave; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:no-waves-under-positive-formation:a3/; its files are probes/work/derive/no-waves-under-positive-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/no-waves-under-positive-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "20279b08c52219b937f7dd7c6cf0e60253bb5bc682ff5566060f79735684be2f",
+ "stdout_tail": "9, 2/9], [2/9, -4/9]] = -2 Cov, det 4/27\nPASS: V3 7-stencil: lambda = 1 - E/7 identically, real; on a (pi/6) grid of (-pi, pi]^3 minus 0 it lies in [-5/7, 1), so |lambda| < 1; Hessian of |lambda|^2 at 0 = -(4/7) I\nPASS: V4 collinear support {(0,0),(1,1),(2,2)}: det Cov = 0 and |lambda(s, -s)| = 1 identically (undamped to all orders, not only to second); a singleton gives a pure phase\nPASS: V5 step 5: weights (2, -1) give |lambda(pi)| = 3 (growth, not a wave); the gain-one two-level recursion with weight -1 on the earlier level (discrete wave equation, product of roots 1, discriminant <= 0 at c = 1/2) has |z| = 1 and arg z = k/2 + O(k^3): the wave the task names as excluded by positivity, not exhibited by the attempt, whose step 5 is a reading\nHIT: confirmed - a3's one-level statement survives: for a finite nonnegative predecessor measure, |lambda| <= 1 with equality only where the characters coincide, lambda = 1 - i m.k - (1/2) k^T M k + O(k^3) (M the second moment), |lambda|^2 = 1 - k^T Cov k + O(k^4), so with Cov positive definite the mode nearest 1 is drift plus diffusion, never |lambda| = 1 with arg = c|k|; NEC and the 7-stencil values, and the collinear and singleton exceptions (undamped to all orders transversally) re-verified\nSUMMARY: confirmed - no failing step for the one-level statement; the multi-level case is stated as not done, and step 5's list of what would give waves is a reading whose negative-weight example is growth (the wave-equation example is not given)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j40e2",
+  "at_utc": "20260919T014713Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of a derivation's one-level no-wave statement (positive gain-one linear formation is drift plus diffusion; collinear and singleton exceptions)",
+  "by": "w-jonathonsmac4f50-j40e2",
+  "at_utc": "20260919T014713Z"
+ }
+}

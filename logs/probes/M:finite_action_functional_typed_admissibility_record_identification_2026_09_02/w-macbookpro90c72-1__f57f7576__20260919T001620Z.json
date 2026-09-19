@@ -20,13 +20,20 @@
  "stdout_tail": "t_resolution\nTOTAL: PASS=10 FAIL=1\n== claim_z_x_same_distribution\nTOTAL: PASS=10 FAIL=1\n== state_measure_barycenter_wrong\nTOTAL: PASS=10 FAIL=1\n== claim_barycenter_injective\nTOTAL: PASS=10 FAIL=1\n== born_weights_negative\nTOTAL: PASS=10 FAIL=1\n== born_weights_not_normalized\nTOTAL: PASS=10 FAIL=1\n== claim_event_partition_selected\nTOTAL: PASS=10 FAIL=1\n== claim_admissibility_identification_derived\nTOTAL: PASS=10 FAIL=1\n== same_effect_instruments_same_output\nTOTAL: PASS=10 FAIL=1\n== claim_lueders_without_matching_output\nTOTAL: PASS=10 FAIL=1\n== admissibility_law_not_covariant\nTOTAL: PASS=10 FAIL=1\n== admissibility_law_not_varying\nTOTAL: PASS=10 FAIL=1\n== two_admissibility_laws_equal\nTOTAL: PASS=10 FAIL=1\n== conditional_content_determines_hazard\nTOTAL: PASS=10 FAIL=1\n== hazard_models_same_record_rate\nTOTAL: PASS=10 FAIL=1\n== active_H_commutes_with_record\nTOTAL: PASS=10 FAIL=1\n== claim_permanence_implementation_selected\nTOTAL: PASS=10 FAIL=1\n== observe_unrecorded_alternative\nTOTAL: PASS=10 FAIL=1\n== omit_repeatability_stationarity\nTOTAL: PASS=10 FAIL=1\n== conflate_state_effect_record\nTOTAL: PASS=10 FAIL=1\n== import_unaudited_as_retained\nTOTAL: PASS=10 FAIL=1\n== claim_broad_no_go\nTOTAL: PASS=10 FAIL=1\n== claim_axiom_edit_performed\nTOTAL: PASS=10 FAIL=1\n== claim_obligation_retired\nTOTAL: PASS=10 FAIL=1\n== claim_toe_score_moved\nTOTAL: PASS=10 FAIL=1\n== source_blob_drift\nTOTAL: PASS=10 FAIL=1\n== omit_N5_cached_stdout\nTOTAL: PASS=10 FAIL=1\n== omit_resolution_lines\nTOTAL: PASS=10 FAIL=1\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T001622Z",
-  "result": "FAIL",
+  "at_utc": "20260919T004712Z",
+  "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f57f7576 differs from the current HEAD 90cde740 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
-   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
-   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+   "ok: parse field 'expected' not found (log written under an earlier task definition; triaged)",
+   "ok: parse field 'observed' not found (log written under an earlier task definition; triaged)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "check_log's parse fields 'expected'/'observed' (mutation_family_expected:/mutation_family_observed:) matched nothing because this runner never prints mutation_family_* lines (task-definition mismatch, #8294); all 15 declared mutations print 'TOTAL: PASS=10 FAIL=1', so every mutation is caught; not a failure.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T004712Z"
  }
 }

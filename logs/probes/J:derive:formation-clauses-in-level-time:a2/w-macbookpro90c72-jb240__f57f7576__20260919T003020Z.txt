@@ -1,0 +1,29 @@
+S1 noise map vs closed forms:
+  (3, 1, 2): match True; 1-P(aaa)=0.550000=11/20; 1-P(aab)=0.653846; 1-P(aa-a)=0.795455; P(abc a)=1/4 P(-a)=1/12
+  (5, 2, 4): match True; 1-P(aaa)=0.678663=264/389; 1-P(aab)=0.719101; 1-P(aa-a)=0.846626; P(abc a)=5/21 P(-a)=2/21
+  (10, 1, 2): match True; 1-P(aaa)=0.031946=33/1033; 1-P(aab)=0.236641; 1-P(aa-a)=0.295775; P(abc a)=10/33 P(-a)=1/33
+  majority preference p>max(q,r): (3,1,2) P(a)=9/26 P(b)=3/13 pref=True; (1,3,2) pref=False
+Cube: 8 sites, degrees [3, 3, 3, 3, 3, 3, 3, 3]
+  monotone (level then lex) k-seq [0, 1, 1, 1, 2, 2, 2, 3]  (#k=3: 1)
+  opposite-corners-first k-seq [0, 0, 1, 1, 1, 3, 3, 3]  (#k=3: 3)
+  growth orders from origin: 1080
+  growth P(k) k=0:0.125, k=1:0.439, k=2:0.247, k=3:0.189
+  monotone P(k) k=0:0.125, k=1:0.375, k=2:0.375, k=3:0.125
+  uniform-order sample P(k) k=0:0.253, k=1:0.247, k=2:0.249, k=3:0.252
+Cube laws at (3,1,2):
+  joint Z=6982520832 |E|=12
+  TV(monotone sequential, joint)=1182193085/23402354976 = 0.050516
+  TV(opposite-first, joint)=0.082193; TV(opposite, monotone)=0.072496
+  TV(corner 000 vs 100 sequential)=201510245581/4092954053760 = 0.049233 (eight corner laws differ)
+  TV(one growth order, monotone)=0.000000; vs joint 0.050516
+  that growth k-seq [0, 1, 1, 2, 1, 2, 2, 3]
+Slab 3x3x2: 18 sites
+  monotone k histogram {0: 1, 1: 5, 2: 8, 3: 4}; #k=3 4
+  slab growth-sample P(k) k=0:0.056, k=1:0.419, k=2:0.259, k=3:0.179, k=4:0.076, k=5:0.011
+  slab monotone P(k) k=0:0.056, k=1:0.278, k=2:0.444, k=3:0.222
+  cube monotone #NEC-triple sites 1/8
+  cube growth[0] #NEC-triple sites 1/8
+  cube growth mean #NEC-triple 1632/1080/8 = 0.1889
+  slab monotone #NEC-triple 4/18
+HIT: S1 noise map exact (eps_unanimous=1-p^3/(p^3+q^3+4r^3), eps_2:1=1-P(a|aab)); on the 2x2x2 cube at (3,1,2) TV(monotone sequential, joint)=0.05052, TV(two corner orders)=0.04923, TV(opposite-first, joint)=0.08219; 1080 seeded-growth orders have P(k=1)=0.439 vs monotone 0.375 and mean NEC-triples 0.189/site vs 0.125; slab monotone k-hist 4/18 sites with k=3, growth-sample P(k=1)=0.419; the NEC product kernel is the monotone-class law; the whole-window unit is the order-independent clause
+SUMMARY: PARTIAL - exact S1; cube sequential monotone ≠ joint ≠ other corners; seeded rate shifts to k=1 (not majority); slab monotone has 4 of 18 sites at k=3; order-independence selects the joint-window unit clause

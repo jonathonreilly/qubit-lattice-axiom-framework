@@ -1,0 +1,8 @@
+E J     = 7.894919286223e-18  (want 0)
+E J^2   = 5.555555555556e-02  (want 1/18=5.555555555556e-02)
+E χ^2   = 0.000000000000e+00  (want 0)
+E |χ|^2 = 1.000000000000e+00  (want 1)
+E X^2   = 1.000000000000e+00  (want 1)
+B=√18   = 4.242640687119; 1/2 from E(Re χ)² = E|χ|²/2 = 5.000000000000e-01
+|X|≤√18 from |J|≤1: 4.242640687119 == 4.242640687119
+SUMMARY: NORMALIZATION (PR #8030): Weyl quadrature gives E J=0, E J^2=1/18, E|χ|²=1 and E χ²=0 so E(Re χ)²=1/2, X=√18 J has E X^2=1 and |X|≤√18; pattern has purchase and the 1/2 / 1/18 / √18 conventions hold

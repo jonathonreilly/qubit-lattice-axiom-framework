@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8030",
+ "type": "judgment",
+ "lane": "continuum-boundary-block40-20260907",
+ "worker": "w-macbookpro90c72-j795f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8030/haar_EJ_one_over_eighteen.py",
+ "seed": 91274,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8bc8d13c",
+ "started_utc": "20260919T041434Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "NORMALIZATION (PR #8030): Weyl quadrature gives E J=0, E J^2=1/18, E|\u03c7|\u00b2=1 and E \u03c7\u00b2=0 so E(Re \u03c7)\u00b2=1/2, X=\u221a18 J has E X^2=1 and |X|\u2264\u221a18; pattern has purchase and the 1/2 / 1/18 / \u221a18 conventions hold"
+ },
+ "review": "NORMALIZATION: Weyl quadrature recovers E J=0, E J^2=1/18, E|\u03c7|\u00b2=1, E X^2=1; 1/2 and \u221a18 conventions hold.",
+ "what": "PR #8030 ([physics-loop] continuum-boundary block40 conditional-suppor): attack GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/continuum-boundary-block40-20260907; git show origin/codex/continuum-boundary-block40-20260907:<note>. Create probes/work/pr8030/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8030/<script>.py\"",
+ "stdout_sha256": "1300f0bb6b16117b6ec93446f90d543eab6a6509ff85d015c9d5ebef5d775242",
+ "stdout_tail": "E J     = 7.894919286223e-18  (want 0)\nE J^2   = 5.555555555556e-02  (want 1/18=5.555555555556e-02)\nE \u03c7^2   = 0.000000000000e+00  (want 0)\nE |\u03c7|^2 = 1.000000000000e+00  (want 1)\nE X^2   = 1.000000000000e+00  (want 1)\nB=\u221a18   = 4.242640687119; 1/2 from E(Re \u03c7)\u00b2 = E|\u03c7|\u00b2/2 = 5.000000000000e-01\n|X|\u2264\u221a18 from |J|\u22641: 4.242640687119 == 4.242640687119\nSUMMARY: NORMALIZATION (PR #8030): Weyl quadrature gives E J=0, E J^2=1/18, E|\u03c7|\u00b2=1 and E \u03c7\u00b2=0 so E(Re \u03c7)\u00b2=1/2, X=\u221a18 J has E X^2=1 and |X|\u2264\u221a18; pattern has purchase and the 1/2 / 1/18 / \u221a18 conventions hold\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j795f",
+  "at_utc": "20260919T041439Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

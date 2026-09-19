@@ -1,0 +1,6 @@
+path n=3: 6 orders, every edge has a unique later endpoint, bad=0
+path n=4: 24 orders, every edge has a unique later endpoint, bad=0
+path n=5: 120 orders, every edge has a unique later endpoint, bad=0
+path n=6: 720 orders, every edge has a unique later endpoint, bad=0
+path n=7: 5040 orders, every edge has a unique later endpoint, bad=0
+SUMMARY: T1 every path-edge has a unique later endpoint on all orders of paths n=3..7 (beyond the executed plaquette/star); falsifier does not fire

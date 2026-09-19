@@ -1,0 +1,13 @@
+N=2 beta=0.5 K(0)=1.0 scaled=1.0
+N=2 beta=1.0 K(0)=1.0 scaled=1.0
+N=2 beta=2.0 K(0)=1.0 scaled=1.0
+N=3 beta=0.5 K(0)=1.0 scaled=1.0
+N=3 beta=1.0 K(0)=1.0 scaled=1.0
+N=3 beta=2.0 K(0)=1.0 scaled=1.0
+N=4 beta=0.5 K(0)=1.0 scaled=1.0
+N=4 beta=1.0 K(0)=1.0 scaled=1.0
+N=4 beta=2.0 K(0)=1.0 scaled=1.0
+N=6 beta=0.5 K(0)=1.0 scaled=1.0
+N=6 beta=1.0 K(0)=1.0 scaled=1.0
+N=6 beta=2.0 K(0)=1.0 scaled=1.0
+SUMMARY: NORMALIZATION of Villain Fourier c_k (PR #8144): K(j=0)=1 for N=2,3,4,6 and beta in {1/2,1,2}, and the max-ratio is invariant under rescaling c; pattern has purchase and the convention holds as written

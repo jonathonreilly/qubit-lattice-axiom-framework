@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8154",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block20-unsold",
+ "worker": "w-macbookpro90c72-j5e99",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8154/h2_shell_counts.py",
+ "seed": 84349,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e71f57b3",
+ "started_utc": "20260919T021909Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - H2(a) shells have 8j points for j<L and 4L-1 at j=L with |n|^2<=2j^2 for L=2..20, and 2(1-cos u)=4 sin^2(u/2)<=u^2 holds exactly"
+ },
+ "review": "H2(a) shells 8j and 4L-1 and half-angle 2(1-cos u)=4 sin^2(u/2)<=u^2 hold for L=2..20; pattern has no purchase",
+ "what": "PR #8154 ([physics-loop] admissibility-induced-law block20 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915; git show origin/physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915:<note>. Create probes/work/pr8154/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8154/<script>.py\"",
+ "stdout_sha256": "3b5fea6668da2b05f6254c7b242e59f9765995a08cca18cf8ee36dc45b174d7d",
+ "stdout_tail": "2(1-cos u)-4 sin^2(u/2) = 0\n  E vs u^2 at u=pi/2: 2 <= pi**2/4\n  E vs u^2 at u=pi/3: 1 <= pi**2/9\n  E vs u^2 at u=pi/5: 3/2 - sqrt(5)/2 <= pi**2/25\n  E vs u^2 at u=1: 2 - 2*cos(1) <= 1\n  E vs u^2 at u=0: 0 <= 0\nL=2 shells j=1..L-1 all 8j; j=L has 7 (4L-1=7)\nL=3 shells j=1..L-1 all 8j; j=L has 11 (4L-1=11)\nL=4 shells j=1..L-1 all 8j; j=L has 15 (4L-1=15)\nL=5 shells j=1..L-1 all 8j; j=L has 19 (4L-1=19)\nL=6 shells j=1..L-1 all 8j; j=L has 23 (4L-1=23)\nL=7 shells j=1..L-1 all 8j; j=L has 27 (4L-1=27)\nL=8 shells j=1..L-1 all 8j; j=L has 31 (4L-1=31)\nL=9 shells j=1..L-1 all 8j; j=L has 35 (4L-1=35)\nL=10 shells j=1..L-1 all 8j; j=L has 39 (4L-1=39)\nL=11 shells j=1..L-1 all 8j; j=L has 43 (4L-1=43)\nL=12 shells j=1..L-1 all 8j; j=L has 47 (4L-1=47)\nL=13 shells j=1..L-1 all 8j; j=L has 51 (4L-1=51)\nL=14 shells j=1..L-1 all 8j; j=L has 55 (4L-1=55)\nL=15 shells j=1..L-1 all 8j; j=L has 59 (4L-1=59)\nL=16 shells j=1..L-1 all 8j; j=L has 63 (4L-1=63)\nL=17 shells j=1..L-1 all 8j; j=L has 67 (4L-1=67)\nL=18 shells j=1..L-1 all 8j; j=L has 71 (4L-1=71)\nL=19 shells j=1..L-1 all 8j; j=L has 75 (4L-1=75)\nL=20 shells j=1..L-1 all 8j; j=L has 79 (4L-1=79)\nSUMMARY: pattern has no purchase on this note - H2(a) shells have 8j points for j<L and 4L-1 at j=L with |n|^2<=2j^2 for L=2..20, and 2(1-cos u)=4 sin^2(u/2)<=u^2 holds exactly\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5e99",
+  "at_utc": "20260919T021909Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

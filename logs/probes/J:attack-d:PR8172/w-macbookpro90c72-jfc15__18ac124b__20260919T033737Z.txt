@@ -1,0 +1,29 @@
+eps(285710)=571431/81630775531 = 7.000190753e-06  <=7/10^6? False  max di=(Fraction(33, 23322565613411033), Fraction(142871, 40815244921), Fraction(571431, 81630775531))
+eps(285716)=571443/81634204099 = 7.000043748e-06  <=7/10^6? False  max di=(Fraction(33, 23324034987941729), Fraction(71437, 20408479601), Fraction(571443, 81634204099))
+eps(285717)=571445/81634775534 = 7.000019247e-06  <=7/10^6? False  max di=(Fraction(11, 7774759963232282), Fraction(285749, 81634489838), Fraction(571445, 81634775534))
+eps(285718)=571447/81635346971 = 6.999994747e-06  <=7/10^6? True  max di=(Fraction(33, 23324524793166265), Fraction(142875, 40817530637), Fraction(571447, 81635346971))
+eps(285719)=571449/81635918410 = 6.999970248e-06  <=7/10^6? True  max di=(Fraction(33, 23324769698349992), Fraction(285751, 81635632712), Fraction(571449, 81635918410))
+eps(285720)=571451/81636489851 = 6.999945748e-06  <=7/10^6? True  max di=(Fraction(11, 7775004868416011), Fraction(35719, 10204525519), Fraction(571451, 81636489851))
+eps(300000)=600011/90000600011 = 6.666744443e-06  <=7/10^6? True  max di=(Fraction(11, 9000000000000011), Fraction(293, 87890918), Fraction(600011, 90000600011))
+eps(1000000)=2000011/1000002000011 = 2.000007000e-06  <=7/10^6? True  max di=(Fraction(33, 1000000000000000033), Fraction(31251, 31250031251), Fraction(2000011, 1000002000011))
+eps decreasing on 285700..285739: True
+origin: |I|=1 D=0 dead_at=1 counts=[1, 0, 0, 0]
+  |U|=3 vs 18(D+1)^3=18
+pair: |I|=2 D=1 dead_at=2 counts=[2, 1, 0, 0, 0]
+  |U|=25 vs 18(D+1)^3=144
+line6: |I|=6 D=5 dead_at=6 counts=[6, 5, 4, 3, 2, 1, 0, 0, 0]
+  |U|=683 vs 18(D+1)^3=3888
+triangle_s2: |I|=3 D=2 dead_at=3 counts=[3, 3, 1, 0, 0, 0]
+  |U|=76 vs 18(D+1)^3=486
+triangle_s3: |I|=6 D=4 dead_at=5 counts=[6, 7, 6, 3, 1, 0, 0, 0]
+  |U|=350 vs 18(D+1)^3=2250
+triangle_s4: |I|=10 D=6 dead_at=7 counts=[10, 12, 12, 10, 6, 3, 1, 0, 0, 0]
+  |U|=959 vs 18(D+1)^3=6174
+translated_singleton: |I|=1 D=0 dead_at=1 counts=[1, 0, 0, 0]
+  |U|=3 vs 18(D+1)^3=18
+simplex_level0: |I|=10 D=6 dead_at=7 counts=[10, 12, 12, 10, 6, 3, 1, 0, 0, 0]
+  |U|=959 vs 18(D+1)^3=6174
+neg_axis: |I|=3 D=1 dead_at=2 counts=[3, 1, 0, 0, 0]
+  |U|=31 vs 18(D+1)^3=144
+T3 walk support C(t+2,2) for t=0..5
+SUMMARY: pattern has no purchase on this note beyond the known 4.05 island-ratio HIT — ε(p,1,2) is decreasing and ≤7/10^6 at every tested p≥285718 (fails at 285717 as stated); T2's D+1 eroder and |U|≤18(D+1)^3 hold on nine extra islands (triangles s=1..4, line, translated singleton, neg-axis); T3's any-β>0 bound is the solved recursion with Σ p_t=1

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8155",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block21-unsold",
+ "worker": "w-macbookpro90c72-jd528",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8155/adversarial_alpha_threshold.py",
+ "seed": 87809,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ac8943f2",
+ "started_utc": "20260919T031649Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: there is no sampled never/always claim to hill-climb; \u03b1=2\u221a3\u03b2<1 iff \u03b2<\u221a3/6 holds exactly, and this is not the known W5 L=1 torus HIT"
+ },
+ "review": "No sampled never/always claim; \u03b1=2\u221a3\u03b2<1 iff \u03b2<\u221a3/6 holds exactly; not the known W5 L=1 HIT; pattern has no purchase",
+ "what": "PR #8155 ([physics-loop] admissibility-induced-law block21 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915; git show origin/physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915:<note>. Create probes/work/pr8155/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8155/<script>.py\"",
+ "stdout_sha256": "c7cd75382893e18a395a7033832d62a9a48b79d9e5b8544f1c70b0eb2b874334",
+ "stdout_tail": "\u03b1=2\u221a3 \u03b2 equals 1 exactly at \u03b2=\u221a3/6: True\n\u03b2=sqrt(3)/12 \u03b1\u22480.500000000000000 \u03b1<1? True want_strict_below_1=True\n\u03b2=sqrt(3)/6 \u03b1\u22481.00000000000000 \u03b1<1? False want_strict_below_1=False\n\u03b2=sqrt(3)/3 \u03b1\u22482.00000000000000 \u03b1<1? False want_strict_below_1=False\nSUMMARY: pattern has no purchase on this note: there is no sampled never/always claim to hill-climb; \u03b1=2\u221a3\u03b2<1 iff \u03b2<\u221a3/6 holds exactly, and this is not the known W5 L=1 torus HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd528",
+  "at_utc": "20260919T031650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,5 @@
+α=2√3 β equals 1 exactly at β=√3/6: True
+β=sqrt(3)/12 α≈0.500000000000000 α<1? True want_strict_below_1=True
+β=sqrt(3)/6 α≈1.00000000000000 α<1? False want_strict_below_1=False
+β=sqrt(3)/3 α≈2.00000000000000 α<1? False want_strict_below_1=False
+SUMMARY: pattern has no purchase on this note: there is no sampled never/always claim to hill-climb; α=2√3β<1 iff β<√3/6 holds exactly, and this is not the known W5 L=1 torus HIT

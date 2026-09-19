@@ -1,0 +1,32 @@
+{
+ "task": "J:note:REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026_06_11",
+ "type": "judgment",
+ "lane": "realization",
+ "worker": "w-jonathonsmac4f50-jc081",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_REALIZATION_ROW_SIGMA_RECONCILIATION_BOU/walk_family_census_and_sigma_law.py",
+ "seed": 1652,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65f80a2d",
+ "started_utc": "20260919T070732Z",
+ "elapsed_s": 25.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the group-averaged construction reproduces block05's 4 on-site + 12 hop orbits; 4 six-orbit subsets are unitary for all phases, 2 of them flat and 2 dispersive; Part A's factorization holds exactly at 60 rational points for each dispersive subset ((0, 3, 5, 6, 8, 11): -k, (1, 2, 4, 7, 9, 10): k; the '-k' one is the mirror copy), both with k = 0 gradient vectors +-(1,1,1)/6 (True); the exact-coefficient census (600 starts, beyond block05's ~90) found 600 unitaries, 218 dispersive, all 218 inside those subsets ({(1, 2, 4, 7, 9, 10): 112, (0, 3, 5, 6, 8, 11): 106}) and 0 outside, so falsifier 1 does not fire"
+ },
+ "review": "Output matches the task (falsifier 1 plus the Part A proof step, by group averaging, exact QQ_I checks and an exact-Laurent-coefficient census): the averaged basis reproduces the 4 + 12 orbits; of the 4 six-orbit subsets unitary for all phases, 2 are flat and 2 dispersive; Part A's factorization holds exactly at 60 rational points for each dispersive subset (one as written, the other at k -> -k), both with k = 0 gradients +-(1,1,1)/6; the 600-start census found 218 dispersive unitaries, all inside those two subsets (112 + 106) and none outside, so falsifier 1 does not fire.",
+ "what": "Note on main: docs/REALIZATION_ROW_SIGMA_RECONCILIATION_BOUNDED_THEOREM_NOTE_2026-06-11.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_REALIZATION_ROW_SIGMA_RECONCILIATION_BOU/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_REALIZATION_ROW_SIGMA_RECONCILIATION_BOU/<script>.py\"",
+ "stdout_sha256": "0ee60f9e130a03517414eeb88361f36d0743cd57f8a23409726d233babf789a2",
+ "stdout_tail": "entity e3^2 det(mu - sqrt3 U) = 9 Q_A Q_B (X = mu^2/3), exact over QQ_I at 60 random rational points per dispersive subset: {(0, 3, 5, 6, 8, 11): (True, '-k'), (1, 2, 4, 7, 9, 10): (True, 'k')}\n   symmetric-point (k = 0) band gradient vectors at generic phases: {(0, 3, 5, 6, 8, 11): [(np.float64(-0.1667), np.float64(-0.1667), np.float64(-0.1667)), (np.float64(0.1667), np.float64(0.1667), np.float64(0.1667))], (1, 2, 4, 7, 9, 10): [(np.float64(-0.1667), np.float64(-0.1667), np.float64(-0.1667)), (np.float64(0.1667), np.float64(0.1667), np.float64(0.1667))]}\n4. census of the full 16-orbit equivariant licensed family (32 real parameters, 13 Laurent coefficients of U^dag U - I imposed exactly, 600 Levenberg-Marquardt starts): unitary 600, dispersive 218, inside a six-orbit subset 218 (by subset {(1, 2, 4, 7, 9, 10): 112, (0, 3, 5, 6, 8, 11): 106}), dispersive outside 0\nSUMMARY: the group-averaged construction reproduces block05's 4 on-site + 12 hop orbits; 4 six-orbit subsets are unitary for all phases, 2 of them flat and 2 dispersive; Part A's factorization holds exactly at 60 rational points for each dispersive subset ((0, 3, 5, 6, 8, 11): -k, (1, 2, 4, 7, 9, 10): k; the '-k' one is the mirror copy), both with k = 0 gradient vectors +-(1,1,1)/6 (True); the exact-coefficient census (600 starts, beyond block05's ~90) found 600 unitaries, 218 dispersive, all 218 inside those subsets ({(1, 2, 4, 7, 9, 10): 112, (0, 3, 5, 6, 8, 11): 106}) and 0 outside, so falsifier 1 does not fire\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc081",
+  "at_utc": "20260919T070807Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

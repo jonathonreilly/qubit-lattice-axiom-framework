@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8153",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block19-sphere",
+ "worker": "w-macbookpro90c72-j2514",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8153/two_one_minus_cos_bound.py",
+ "seed": 88116,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "88332720",
+ "started_utc": "20260919T032156Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "QUANTIFIER SCOPE on 2(1-cos theta)<=theta^2 on [0,pi] (PR #8153): nonnegative at the tested points and series starts theta^4/12; no in-range failure"
+ },
+ "review": "2(1-cos theta)<=theta^2 holds on tested points in [0,pi]; no in-range failure.",
+ "what": "PR #8153 ([physics-loop] admissibility-induced-law block19 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915; git show origin/physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915:<note>. Create probes/work/pr8153/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8153/<script>.py\"",
+ "stdout_sha256": "9d1299caac80e842d618a42958e96c5badcd97b524ddc0d3f9ac340a3a807804",
+ "stdout_tail": "series theta^2-2(1-cos)=-theta**6/360 + theta**4/12\nf(pi)=5.86960440108935861883449099988\nf(pi/2)=0.467401100272339654708622749969\nf(pi/3)=0.0966227112321509576482767777640\nf(pi/4)=0.0310638374411799624788444117020\nf(pi/6)=0.00620648537691503293951553594688\nf(pi/8)=0.00197163378959474067565530066664\nf(pi/12)=0.000390572030146008352503698068046\nf(1/10)=0.00000833055605153219112397560774059\nf(1)=0.0806046117362794348018732148860\nSUMMARY: QUANTIFIER SCOPE on 2(1-cos theta)<=theta^2 on [0,pi] (PR #8153): nonnegative at the tested points and series starts theta^4/12; no in-range failure\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2514",
+  "at_utc": "20260919T032156Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

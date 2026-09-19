@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8025",
+ "type": "judgment",
+ "lane": "local-observable-block35-20260907",
+ "worker": "w-macbookpro90c72-je296",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8025/provenance_theorem_numbers.py",
+ "seed": 92810,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4a81f8f8",
+ "started_utc": "20260919T044010Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "provenance (PR #8025): all 7 listed theorem tokens appear in the runner cache (29 checks, 4 plaquettes/link, 3|X|(2r+1)^3, 32v); no UNCOVERED"
+ },
+ "review": "Provenance: 7 theorem tokens all in cache (29 checks, 4 plaquettes/link, 32v); no UNCOVERED.",
+ "what": "PR #8025 ([physics-loop] local-observable block35 conditional-support): for every number in the theorem statements of GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/local-observable-block35-20260907; git show origin/codex/local-observable-block35-20260907:<note>. Create probes/work/pr8025/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8025/<script>.py\"",
+ "stdout_sha256": "f5603af368f25f1e9bbdc4af9d167e5b04f8204ac26ae18219f2b951395632a5",
+ "stdout_tail": "29       CACHE  named checks\n4        CACHE  plaquettes per link / crossing at r=0\n3        CACHE  N<=3|X|(2r+1)^3 prefactor\n81       CACHE  cap at r=1\n13       CACHE  |B_1| links\n32       CACHE  32 v in Theta_d(32 v |t|) / retained_faces r=2\n16       CACHE  16v subsequent face weight\nSUMMARY: provenance (PR #8025): all 7 listed theorem tokens appear in the runner cache (29 checks, 4 plaquettes/link, 3|X|(2r+1)^3, 32v); no UNCOVERED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je296",
+  "at_utc": "20260919T044035Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

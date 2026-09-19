@@ -20,13 +20,20 @@
  "stdout_tail": "upplied :: (4540, 409, 409)\nPASS one complete causal schedule reaches only the physical commutation bit :: (410, 1872, 8, 4540, 409)\n\nEXHAUSTIVE VALUES AND SCHEDULES\nPASS all 1,024 row pairs pass the local all-schedule proof :: (Counter({5006: 1024}), [])\nPASS the final record has the exact symplectic truth distribution :: Counter({'H0': 544, 'H1': 480})\nPASS 5,126,144 realizable local histories contain no parasitic write :: 5126144\nPASS the composed proof survives all 24 proper-cubic orientations :: (Counter({5006: 24}), [])\n\nCAUSAL CONTROLS\nPASS deleting the left row suppresses exactly its four first writes :: {(0, 1, -40): frozenset({'H0'}), (0, -1, -40): frozenset({'H0'}), (1, 0, -40): frozenset({'H1'}), (-1, 0, -40): frozenset({'H1'})}\nPASS deleting the right row suppresses exactly its four first writes :: {(-1, 0, 40): frozenset({'H0'}), (0, -1, 40): frozenset({'H1'}), (0, 1, 40): frozenset({'H1'}), (1, 0, 40): frozenset({'H0'})}\nPASS the parity record depends on four products and every product on two cables :: \n\nSCOPE\nFAIL note contains: two row records to one physical commutation record :: \nFAIL note contains: no transition row is added :: \nFAIL note contains: 5,126,144 :: \nFAIL note contains: supplied guide/frame harness :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 14 FAIL 9\nRESULT FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T012500Z",
+  "at_utc": "20260919T013032Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 31f9011d differs from the current HEAD e4bcf539 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL review note exists ::'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T013032Z"
  }
 }

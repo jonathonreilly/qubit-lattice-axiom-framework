@@ -22,13 +22,20 @@
  "stdout_tail": "100104e-15\n  },\n  \"kernel_direct_integral_error\": 1.1102230246251565e-16,\n  \"mutations\": {\n    \"omit_event_wait\": {\n      \"discrepancy\": 0.018462830124623866,\n      \"detected\": true\n    },\n    \"reverse_time_gap\": {\n      \"discrepancy\": 0.0019339723602201375,\n      \"detected\": true\n    },\n    \"double_wait_rates\": {\n      \"discrepancy\": 0.004879916562044512,\n      \"detected\": true\n    },\n    \"fuel_offset_0\": {\n      \"discrepancy\": 4.0,\n      \"detected\": true\n    },\n    \"fuel_offset_2\": {\n      \"discrepancy\": 3.999999999999986,\n      \"detected\": true\n    },\n    \"discard_determinant_phases\": {\n      \"discrepancy\": 33.8880291423753,\n      \"detected\": true\n    },\n    \"replace_battery_kernel_by_one\": {\n      \"discrepancy\": 0.17429019790474187,\n      \"detected\": true\n    },\n    \"omit_input_pulse\": {\n      \"discrepancy\": 0.17010210140260498,\n      \"detected\": true\n    },\n    \"double_path_weight\": {\n      \"discrepancy\": 1.0,\n      \"detected\": true\n    },\n    \"cap_tail_false_zero\": {\n      \"discrepancy\": 0.3647983992500869,\n      \"detected\": true\n    },\n    \"cap_upper_49\": {\n      \"discrepancy\": 15.827182715841872,\n      \"detected\": true\n    },\n    \"reuse_initial_mask\": {\n      \"discrepancy\": 1.0,\n      \"detected\": true\n    },\n    \"N3_input\": {\n      \"discrepancy\": 1.0,\n      \"detected\": true\n    }\n  },\n  \"max_ledger_residual\": 1.7763568394002505e-13,\n  \"max_battery_norm_error\": 3.885780586188048e-15,\n  \"resources\": {\n    \"seconds\": 1.0510529590537772,\n    \"peak_rss_MiB\": 80.1875\n  }\n}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T010136Z",
+  "at_utc": "20260919T013032Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f11fdd9b differs from the current HEAD e4bcf539 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '    \"peak_rss_MiB\": 80.1875' vs cache '    \"peak_rss_MiB\": 89.96875'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_autonomous_head_orbital_check_2026_09_07.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The last-line pattern matched the runner's resource footer: the run's final line is '\"peak_rss_MiB\": 80.1875' against the cache's 89.96875. The only differing lines (687-688) are the machine-dependent 'seconds' and 'peak_rss_MiB' measurements; all other 686 lines are byte-identical to the pinned cache, return code 0. Not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T013032Z"
  }
 }

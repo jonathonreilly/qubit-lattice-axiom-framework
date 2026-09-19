@@ -1,0 +1,6 @@
+Lambda0=((0, 0, 0), (1, 0, 0), (0, 1, 0), (0, 0, 1)) n=4
+plaquette 0<1: verts=[(0, 0, 0), (1, 0, 0), (0, 1, 0), (1, 1, 0)] 4-cycle edges ok, fourth=(1, 1, 0) not a tail cell
+plaquette 0<2: verts=[(0, 0, 0), (1, 0, 0), (0, 0, 1), (1, 0, 1)] 4-cycle edges ok, fourth=(1, 0, 1) not a tail cell
+plaquette 1<2: verts=[(0, 0, 0), (0, 1, 0), (0, 0, 1), (0, 1, 1)] 4-cycle edges ok, fourth=(0, 1, 1) not a tail cell
+Lambda0 is K_{1,3} (no triangles)
+SUMMARY: WITNESS REALIZABILITY (PR #8024): Lambda0={0,e1,e2,e3} is four sites with three outgoing links and three 4-cycle plaquettes whose fourth vertices lie outside the tail cell; no triangles; pattern has purchase and the witnesses exist as written

@@ -1,0 +1,3 @@
+spacing2 n=6: 216 plaquettes, shared-link pairs=0
+spacing3 n=4: 64 plaquettes, shared-link pairs=0
+SUMMARY: pattern has no purchase on this note — the finite xy-plaquette link-disjointness claims (anchors 2k on n=6 and 3k on n=4) hold literally by enumeration of all pairs

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8082",
+ "type": "judgment",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "w-macbookpro90c72-jda3c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8082/sampled_evidence_no_purchase.py",
+ "seed": 87665,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1cbe67d3",
+ "started_utc": "20260919T031425Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 moment-jet statements are exact recurrences, not sampling conjectures"
+ },
+ "review": "Pattern (e) has no purchase: moment-jet statements are exact recurrences, not sampling conjectures",
+ "what": "PR #8082 ([physics-loop] Gaussian local moment jets (conditional-suppo): attack NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-gaussian-moment-jet-20260910; git show origin/codex/native-gaussian-moment-jet-20260910:<note>. Create probes/work/pr8082/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8082/<script>.py\"",
+ "stdout_sha256": "d1ec9cbec2b78463409f6608fb2c0db2cd101f69f6a94663bb342459577978d7",
+ "stdout_tail": "no sampled never/always claim found that is load-bearing\nSUMMARY: pattern has no purchase on this note \u2014 moment-jet statements are exact recurrences, not sampling conjectures\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jda3c",
+  "at_utc": "20260919T031425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

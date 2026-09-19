@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-re-recording-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j86a7",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/re-recording/referee_w-jonathonsmac4f50-j86a7/check.py",
+ "seed": 97409,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d43334bd",
+ "started_utc": "20260919T055649Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the partial survives; corrections: step 4's static number 59049/775835648 is the isolated cube with single bonds, not the async stationary law of the doubled L = 2 stencil used for sync (that one gives 3.1582e-03); and the zone-corner kernel is not an open question: the sync law's stencils see only the other sublattice, so pi factorises over the two sublattices exactly (checked on L = 2) and the staggered channel is uncoupled"
+ },
+ "review": "Async detailed balance (exhaustive C4 Ising and six-axis path), the sync bilinear identity, Gamma_6's spectrum {E,12-E} with two zero modes vs {E,14-E} with the self-loop, the small-beta symbol (6-E)^2 and the sync cube value 3489597637546254592801/31238481641953905892567296 re-derive; corrections: step 4's static comparator is the single-bond cube (matched doubled-stencil static law gives 3.158e-3, still different from sync 1.117e-4), and the zone-corner zero mode is the exact sublattice factorisation of the sync law: HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:re-recording:a1/; its files are probes/work/derive/re-recording/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/re-recording/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "b55378649f90113927281b714761ad0a829c183d8a690a916420c022473380eb",
+ "stdout_tail": "}: True, zero eigenvalues 1 (connected; odd corner eigenvalue 2)\nV4 L = 2 torus, doubled 6-stencil, (3,1,2): stencils see only the other sublattice True (so pi_sync factorises over the two sublattices; the two half-sums agree True); sync P(all +x) = 3489597637546254592801/31238481641953905892567296 = 1.117083e-04; matched static (phi^2 on each pair) P(all +x) = 94143178827/29808744616192 = 3.158240e-03; attempt's comparator (isolated cube, single bonds) = 59049/775835648 = 7.611019e-05\nV5 log(sinh k/k) = -k**4/180 + k**2/6 + ...; |S|^2 symbol (6 - E)^2 on three modes: True\nHIT: confirmed - async re-recording is the heat bath of the static law (exact detailed balance), sync is reversible w.r.t. prod Z (bilinear identity), Gamma_6's spectrum is {E, 12 - E} with the zone-corner zero mode (two zero eigenvalues: Gamma_6 has two components on even tori) against {E, 14 - E} with the self-loop, the small-beta symbol is (6 - E)^2, and the cube conclusion 'static and sync differ' holds against the MATCHED static law (1.1171e-04 vs 3.1582e-03)\nSUMMARY: confirmed - the partial survives; corrections: step 4's static number 59049/775835648 is the isolated cube with single bonds, not the async stationary law of the doubled L = 2 stencil used for sync (that one gives 3.1582e-03); and the zone-corner kernel is not an open question: the sync law's stencils see only the other sublattice, so pi factorises over the two sublattices exactly (checked on L = 2) and the staggered channel is uncoupled\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j86a7",
+  "at_utc": "20260919T055650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms re-recording a1's partial: async 6-neighbour re-recording is the static heat bath; sync is reversible w.r.t. prod Z(S_x); Gamma_6 spectrum {E,12-E} (two zero modes: two components on even tori) vs {E,14-E} with the self-loop; small-beta symbol (6-E)^2. Corrections: the cube static comparator should carry phi^2 per pair (3.158e-3, still != sync 1.117e-4); the zone-corner mode is the exact sublattice factorisation of the sync law (staggered channel uncoupled).",
+  "by": "w-jonathonsmac4f50-j86a7",
+  "at_utc": "20260919T055650Z"
+ }
+}

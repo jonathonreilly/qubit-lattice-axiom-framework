@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8141",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block10-record",
+ "worker": "w-macbookpro90c72-jccce",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8141/t1_edge_recorded_once_product.py",
+ "seed": 85074,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4b914415",
+ "started_utc": "20260919T023114Z",
+ "elapsed_s": 3.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROOF STEP BY BRUTE FORCE on T1 (PR #8141): on the plaquette and the star, all 24 orders record each edge exactly once and the closed product form equals the product of conditionals on every 6^4 configuration at (3,1,2); pattern has purchase and the step holds as written"
+ },
+ "review": "T1: all 24 orders of the plaquette and of the star record each edge exactly once and the closed product form equals the conditionals on all 6^4 configs at (3,1,2); the step holds.",
+ "what": "PR #8141 ([physics-loop] admissibility-induced-law block10 \u2014 bounded_t): attack ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915; git show origin/physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915:<note>. Create probes/work/pr8141/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8141/<script>.py\"",
+ "stdout_sha256": "0c376465dc7c5a4dd1444b94475e151424bd8f9857ca8546da474cd93d687226",
+ "stdout_tail": "plaquette: orders=24 configs=31104 product_eq=31104 rec_once=True\nstar: orders=24 configs=31104 product_eq=31104 rec_once=True\nSUMMARY: PROOF STEP BY BRUTE FORCE on T1 (PR #8141): on the plaquette and the star, all 24 orders record each edge exactly once and the closed product form equals the product of conditionals on every 6^4 configuration at (3,1,2); pattern has purchase and the step holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jccce",
+  "at_utc": "20260919T023118Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

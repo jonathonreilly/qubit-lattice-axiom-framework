@@ -1,0 +1,3 @@
+plaquette: orders=24 configs=31104 product_eq=31104 rec_once=True
+star: orders=24 configs=31104 product_eq=31104 rec_once=True
+SUMMARY: PROOF STEP BY BRUTE FORCE on T1 (PR #8141): on the plaquette and the star, all 24 orders record each edge exactly once and the closed product form equals the product of conditionals on every 6^4 configuration at (3,1,2); pattern has purchase and the step holds as written

@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:uniqueness-region-up:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jcc2b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/uniqueness-region-up/w-macbookpro90c72-jcc2b/check.py",
+ "seed": 80164,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "706afaa5",
+ "started_utc": "20260919T010924Z",
+ "elapsed_s": 38.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL uniqueness on (p,1,2) at p=511/100 by the averaged Wasserstein criterion (independent machinery, building on refereed a2)"
+ },
+ "review": "Independent W_rho machinery certifies 3 kbar=0.99981627<1 at p=511/100 (alpha=5/4), extending the refereed uniqueness grid through 51/10; the criterion fails at p=512/100. HIT is a new exact grid point, not the 10.5-11 threshold.",
+ "what": "DERIVATION, independent attempt 1 of 3: Push the proved no-memory region of the six-axis formation law up toward the located threshold. Blocks 08, 28 (PRs #8138, #8172): the six-axis formation law on Z^3 in level order is unique with exponential decay when the causal coupling contracts, 3c < 1 with c the one-site total-variation sensitivity; on the line (p,1,2) that region ends far below the executed threshold p in (10.5, 11). TASK: enlarge the proved region on (p,1,2). Candidates: (i) a block criterion over two or three levels (couple 2x2 blocks of the level plane jointly; compute the exact block sensitivity with rational arithmetic); (ii) disagreement percolation in level time: the set of sites where two coupled copies differ is dominated by an oriented percolation with an explicit density; uniqueness when it dies out; use rigorous oriented-percolation bounds you re-prove or the elementary path count 3^n q^n < 1 improved by exact small-block enumeration. Report the largest p you prove unique and the exact sensitivity matrices. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/uniqueness-region-up/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/uniqueness-region-up/<name>/check.py\"",
+ "stdout_sha256": "0444469b06257c579ab4124918bff4b2ad23ec0d98247a8b22c29050c2ee5a10",
+ "stdout_tail": "bar=1.14153550 lt1=False\nE3.alpha=1 p=26/5 3kbar=1.14919240 lt1=False\nE3.alpha=6/5 p=51/10 3kbar=1.00309107 lt1=False\nE3.alpha=6/5 p=511/100 3kbar=1.00383822 lt1=False\nE3.alpha=6/5 p=26/5 3kbar=1.02047817 lt1=False\nE3.alpha=8/7 p=51/10 3kbar=1.03747082 lt1=False\nE3.alpha=8/7 p=511/100 3kbar=1.03826254 lt1=False\nE3.alpha=8/7 p=26/5 3kbar=1.04479791 lt1=False\nE3.alpha=4/3 p=51/10 3kbar=0.99827159 lt1=True\nE3.alpha=4/3 p=511/100 3kbar=1.00064630 lt1=False\nE3.alpha=4/3 p=26/5 3kbar=1.02190183 lt1=False\nE3.alpha=3/2 p=51/10 3kbar=0.99991740 lt1=True\nE3.alpha=3/2 p=511/100 3kbar=1.00230637 lt1=False\nE3.alpha=3/2 p=26/5 3kbar=1.02368141 lt1=False\nE3.alpha=7/5 p=51/10 3kbar=0.99892991 lt1=True\nE3.alpha=7/5 p=511/100 3kbar=1.00131033 lt1=False\nE3.alpha=7/5 p=26/5 3kbar=1.02261366 lt1=False\nE4.diag-joints p=51/10 3kbar_2=0.97558727 lt1=True\nCHECKED E4.diag-feasible-p51/10\nE4.diag-joints p=511/100 3kbar_2=0.97629877 lt1=True\nCHECKED E4.diag-feasible-p511/100\nE4.diag-joints p=26/5 3kbar_2=0.98704913 lt1=True\nCHECKED E4.diag-feasible-p26/5\ncertified p beyond 51/10: [Fraction(511, 100)]\nCHECKED E5.new-grid-point: largest new p=511/100\nCHECKS ok=21 fail=0\nHIT: PARTIAL: averaged W_rho contraction (alpha=5/4) extends uniqueness on (p,1,2) to p=511/100 in addition to the refereed grid through 51/10; 3 kbar < 1 exactly at the new points [Fraction(511, 100)]\nSUMMARY: PARTIAL uniqueness on (p,1,2) at p=511/100 by the averaged Wasserstein criterion (independent machinery, building on refereed a2)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcc2b",
+  "at_utc": "20260919T011012Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent W_rho certifies 3 kbar<1 at p=511/100, a new grid point past the refereed 51/10; the criterion fails at 512/100. Not the 10.5-11 threshold.",
+  "by": "w-macbookpro90c72-jcc2b",
+  "at_utc": "20260919T011012Z"
+ }
+}

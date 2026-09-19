@@ -1,0 +1,54 @@
+E0.block08 p=37/10 3c=406962630/413162167 (0.984995)
+CHECKED E0.3c-p37/10
+E0.block08 p=19/5 3c=871815/862244 (1.011100)
+CHECKED E0.3c-p19/5
+CHECKED E1.plan-feasible-51/10
+CHECKED E1.3kbar-51/10-lt1: 3kbar=52187574259076840991934694/52321061656792031643757593 = 0.99744869
+CHECKED E1.all30-pairs-same: all30=0.99744869
+E2.p=511/100 3kbar=641339158597871240931289476511219280500203/641457015620770188990330181460632729109801 = 0.99981627 lt1=True
+CHECKED E2.feasible-p511/100
+CHECKED E2.3kbar-lt1-p511/100: 0.99981627
+E2.p=128/25 3kbar=12743089065207719366356849753502/12715352035643818318598084610009 = 1.00218138 lt1=False
+CHECKED E2.feasible-p128/25
+CHECKED E2.3kbar-ge1-p128/25: 1.00218138
+E2.p=513/100 3kbar=4575254153786917505122252193057346601643/4554558160742604002476508495001304788681 = 1.00454402 lt1=False
+CHECKED E2.feasible-p513/100
+CHECKED E2.3kbar-ge1-p513/100: 1.00454402
+E2.p=257/50 3kbar=808378345331819069173764772363724979/802835438091168839283118363564696043 = 1.00690416 lt1=False
+CHECKED E2.feasible-p257/50
+CHECKED E2.3kbar-ge1-p257/50: 1.00690416
+E2.p=103/20 3kbar=1655494101813045191299858669/1640301942894069984670775903 = 1.00926181 lt1=False
+CHECKED E2.feasible-p103/20
+CHECKED E2.3kbar-ge1-p103/20: 1.00926181
+E2.p=26/5 3kbar=44935900309510333227/44011136461229370389 = 1.02101204 lt1=False
+CHECKED E2.feasible-p26/5
+CHECKED E2.3kbar-ge1-p26/5: 1.02101204
+E3.alpha=1 p=51/10 3kbar=1.14061006 lt1=False
+E3.alpha=1 p=511/100 3kbar=1.14153550 lt1=False
+E3.alpha=1 p=26/5 3kbar=1.14919240 lt1=False
+E3.alpha=6/5 p=51/10 3kbar=1.00309107 lt1=False
+E3.alpha=6/5 p=511/100 3kbar=1.00383822 lt1=False
+E3.alpha=6/5 p=26/5 3kbar=1.02047817 lt1=False
+E3.alpha=8/7 p=51/10 3kbar=1.03747082 lt1=False
+E3.alpha=8/7 p=511/100 3kbar=1.03826254 lt1=False
+E3.alpha=8/7 p=26/5 3kbar=1.04479791 lt1=False
+E3.alpha=4/3 p=51/10 3kbar=0.99827159 lt1=True
+E3.alpha=4/3 p=511/100 3kbar=1.00064630 lt1=False
+E3.alpha=4/3 p=26/5 3kbar=1.02190183 lt1=False
+E3.alpha=3/2 p=51/10 3kbar=0.99991740 lt1=True
+E3.alpha=3/2 p=511/100 3kbar=1.00230637 lt1=False
+E3.alpha=3/2 p=26/5 3kbar=1.02368141 lt1=False
+E3.alpha=7/5 p=51/10 3kbar=0.99892991 lt1=True
+E3.alpha=7/5 p=511/100 3kbar=1.00131033 lt1=False
+E3.alpha=7/5 p=26/5 3kbar=1.02261366 lt1=False
+E4.diag-joints p=51/10 3kbar_2=0.97558727 lt1=True
+CHECKED E4.diag-feasible-p51/10
+E4.diag-joints p=511/100 3kbar_2=0.97629877 lt1=True
+CHECKED E4.diag-feasible-p511/100
+E4.diag-joints p=26/5 3kbar_2=0.98704913 lt1=True
+CHECKED E4.diag-feasible-p26/5
+certified p beyond 51/10: [Fraction(511, 100)]
+CHECKED E5.new-grid-point: largest new p=511/100
+CHECKS ok=21 fail=0
+HIT: PARTIAL: averaged W_rho contraction (alpha=5/4) extends uniqueness on (p,1,2) to p=511/100 in addition to the refereed grid through 51/10; 3 kbar < 1 exactly at the new points [Fraction(511, 100)]
+SUMMARY: PARTIAL uniqueness on (p,1,2) at p=511/100 by the averaged Wasserstein criterion (independent machinery, building on refereed a2)

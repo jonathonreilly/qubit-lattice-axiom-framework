@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-tight-sibling-lemma-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j862c",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/tight-sibling-lemma/referee_w-jonathonsmac4f50-j862c/check.py",
+ "seed": 95485,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "99d42e57",
+ "started_utc": "20260919T052445Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 1 - the census is of family.py's brute_min, which omits the definition's level restriction (nodes at levels <= level(z)); with it removed my code reproduces the author's counts exactly ({-6: 90, -5: 178, -4: 226, -3: 352, -2: 222, -1: 88, 0: 48}), but that family is larger, so brute_min <= v and 'brute_min never positive, so v <= 0' does not follow; the rooted value itself, recomputed with the restriction, is also never positive on the isolated cube (1204 evaluations, values {-6: 78, -5: 124, -4: 130, -3: 300, -2: 258, -1: 106, 0: 208}), with 208 tight sites (all {'seed': 208}) rather than 48 and no tight processed sibling (0); scope remains the isolated cube"
+ },
+ "review": "Own automaton and family enumeration without the level cap reproduce the author's census exactly ({-6:90,...,0:48}), showing it is family.py's uncapped brute_min, a lower bound on v, so 'never positive, so v <= 0' does not follow; with the definition's cap (levels <= level(z)) the rooted value is also never positive on the isolated cube (1204 evaluations, {-6:78,-5:124,-4:130,-3:300,-2:258,-1:106,0:208}) but with 208 tight sites, all seeds, not 48; the top-site census (32 patterns, -4/-1) is unaffected: fails at step 1.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:tight-sibling-lemma:a2/; its files are probes/work/derive/tight-sibling-lemma/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/tight-sibling-lemma/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "2bab481d7deb690ce230c37afb9584ec8e9dffefaa7cde1800c6f45194806ab7",
+ "stdout_tail": " level restriction (other nodes at any level, as family.py's brute_min enumerates): 1204 evaluations, n_none = 0, values {-6: 90, -5: 178, -4: 226, -3: 352, -2: 222, -1: 88, 0: 48}; equals the author's census {-6: 90, -5: 178, -4: 226, -3: 352, -2: 222, -1: 88, 0: 48}: True\nR1 WITH the task's definition (all nodes at levels <= level(z)): 1204 evaluations over 256 patterns; n_none = 0; values {-6: 78, -5: 124, -4: 130, -3: 300, -2: 258, -1: 106, 0: 208}; tight (0): 208; positive: 0\nR2 tight sites under the definition, by kind: {'seed': 208}; tight processed siblings of a processed successor: 0\nR3 top-site census (processed top, >= 2 processed 1-preds): {-4: 16, -1: 16} over 32 patterns; same without the restriction: True (the level cap is vacuous at the top, which is why attempt a4's census agreed)\nSUMMARY: fails at step 1 - the census is of family.py's brute_min, which omits the definition's level restriction (nodes at levels <= level(z)); with it removed my code reproduces the author's counts exactly ({-6: 90, -5: 178, -4: 226, -3: 352, -2: 222, -1: 88, 0: 48}), but that family is larger, so brute_min <= v and 'brute_min never positive, so v <= 0' does not follow; the rooted value itself, recomputed with the restriction, is also never positive on the isolated cube (1204 evaluations, values {-6: 78, -5: 124, -4: 130, -3: 300, -2: 258, -1: 106, 0: 208}), with 208 tight sites (all {'seed': 208}) rather than 48 and no tight processed sibling (0); scope remains the isolated cube\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j862c",
+  "at_utc": "20260919T052445Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

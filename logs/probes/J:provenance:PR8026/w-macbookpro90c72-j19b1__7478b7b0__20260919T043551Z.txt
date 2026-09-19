@@ -1,0 +1,8 @@
+1/144 | omega_u(W_square) leading | NOT IN CACHE | UNSOURCED
+7/124416 | two-adjacent-faces u^2 | NOT IN CACHE | UNSOURCED
+19 | chain helper checks | cache: per_element: 1 checks; actual 192-face projection chain map | OK
+33 | coefficient helper checks | cache: TOTAL: 33 | OK
+4/a | first positive electric energy | NOT IN CACHE | UNSOURCED
+2ce | Part I C_0 reserve | NOT IN CACHE | UNSOURCED
+SUMMARY: 6 numbers, 4 unsourced
+HIT: unsourced numbers

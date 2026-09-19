@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR8026",
+ "type": "judgment",
+ "lane": "spatial-area-block36-20260907",
+ "worker": "w-macbookpro90c72-j19b1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8026/provenance_theorem_numbers.py",
+ "seed": 92551,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7478b7b0",
+ "started_utc": "20260919T043551Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "6 numbers, 4 unsourced"
+ },
+ "review": "1/144 and 7/124416 (and 4/a, 2ce) are in the theorem statements but the coefficient/chain caches only print TOTAL 33/19 without those values, so they are unsourced",
+ "what": "PR #8026 ([physics-loop] spatial-area block36 conditional-support): for every number in the theorem statements of GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/spatial-area-block36-20260907; git show origin/codex/spatial-area-block36-20260907:<note>. Create probes/work/pr8026/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8026/<script>.py\"",
+ "stdout_sha256": "2a9cac8da6586d4dbb562ed1d3dba463cca5a88af53ed78425279c89f4525b21",
+ "stdout_tail": "1/144 | omega_u(W_square) leading | NOT IN CACHE | UNSOURCED\n7/124416 | two-adjacent-faces u^2 | NOT IN CACHE | UNSOURCED\n19 | chain helper checks | cache: per_element: 1 checks; actual 192-face projection chain map | OK\n33 | coefficient helper checks | cache: TOTAL: 33 | OK\n4/a | first positive electric energy | NOT IN CACHE | UNSOURCED\n2ce | Part I C_0 reserve | NOT IN CACHE | UNSOURCED\nSUMMARY: 6 numbers, 4 unsourced\nHIT: unsourced numbers\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j19b1",
+  "at_utc": "20260919T043606Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Theorem coefficients 1/144 and 7/124416, plus 4/a and 2ce, are in the note statements; chain/coefficient caches print TOTAL 19 and 33 but not those values.",
+  "by": "w-macbookpro90c72-j19b1",
+  "at_utc": "20260919T043606Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8146",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block12-strong",
+ "worker": "w-macbookpro90c72-j5529",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8146/normalization_kernel_Z.py",
+ "seed": 90554,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "935675e8",
+ "started_utc": "20260919T040234Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - six-axis K sums to 1, Z1=p+q+4r=12 at (3,1,2), TV 1/2; not the known 2:1 majority HIT"
+ },
+ "review": "six-axis K sums to 1, Z1=12 at (3,1,2), TV 1/2, so the normalization holds and the pattern has no purchase",
+ "what": "PR #8146 ([physics-loop] admissibility-induced-law block12 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915; git show origin/physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915:<note>. Create probes/work/pr8146/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8146/<script>.py\"",
+ "stdout_sha256": "2774b0bb2fbc4aa3664fadb7e9e6dc28f5352ccbcc04e5da6a4dcb10ae4d4356",
+ "stdout_tail": "Z(aaa)=60 sum K=1\nZ1=12\nTV(e0,e1)=1\nSUMMARY: pattern has no purchase on this note - six-axis K sums to 1, Z1=p+q+4r=12 at (3,1,2), TV 1/2; not the known 2:1 majority HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5529",
+  "at_utc": "20260919T040234Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+Z(aaa)=60 sum K=1
+Z1=12
+TV(e0,e1)=1
+SUMMARY: pattern has no purchase on this note - six-axis K sums to 1, Z1=p+q+4r=12 at (3,1,2), TV 1/2; not the known 2:1 majority HIT

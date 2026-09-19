@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8146",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block12-strong",
+ "worker": "w-macbookpro90c72-j1a37",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8146/adversarial_eroder_islands.py",
+ "seed": 90776,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "53bcb79e",
+ "started_utc": "20260919T040616Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - adversarial islands (line12, triangle21, 3-cube, diagonal rod, L, greedy climb) all die within M1+M2+M3-t0+1; not the known S1 iff HIT"
+ },
+ "review": "Adversarial islands (line12, triangle21, 3-cube, diagonal rod, L, greedy climb) all die within the S2 bound; not the known S1 iff HIT. No HIT.",
+ "what": "PR #8146 ([physics-loop] admissibility-induced-law block12 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915; git show origin/physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915:<note>. Create probes/work/pr8146/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8146/<script>.py\"",
+ "stdout_sha256": "eab5543fc15b99fe6850f66ae7efa8ca84b6687ee5b0136b476a6f009a397411",
+ "stdout_tail": "origin: |I|=1 bound=1 dead_at=1 counts=[1, 0, 0]\nline12: |I|=12 bound=12 dead_at=1 counts=[12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\ntriangle21: |I|=21 bound=11 dead_at=6 counts=[21, 15, 10, 6, 3, 1, 0, 0, 0, 0, 0, 0, 0]\ncube3: |I|=27 bound=7 dead_at=5 counts=[27, 20, 11, 4, 1, 0, 0, 0, 0]\ndiag_rod: |I|=8 bound=15 dead_at=1 counts=[8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nL_shape: |I|=15 bound=15 dead_at=2 counts=[15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nclimb add (0, 0, 1) |I|=5 gap=-2\nclimbed: |I|=5 bound=5 dead_at=3 counts=[5, 3, 1, 0, 0, 0, 0]\nSUMMARY: pattern has no purchase on this note - adversarial islands (line12, triangle21, 3-cube, diagonal rod, L, greedy climb) all die within M1+M2+M3-t0+1; not the known S1 iff HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1a37",
+  "at_utc": "20260919T040616Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

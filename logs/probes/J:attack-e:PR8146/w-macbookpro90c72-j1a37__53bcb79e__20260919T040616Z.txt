@@ -1,0 +1,9 @@
+origin: |I|=1 bound=1 dead_at=1 counts=[1, 0, 0]
+line12: |I|=12 bound=12 dead_at=1 counts=[12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+triangle21: |I|=21 bound=11 dead_at=6 counts=[21, 15, 10, 6, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+cube3: |I|=27 bound=7 dead_at=5 counts=[27, 20, 11, 4, 1, 0, 0, 0, 0]
+diag_rod: |I|=8 bound=15 dead_at=1 counts=[8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+L_shape: |I|=15 bound=15 dead_at=2 counts=[15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+climb add (0, 0, 1) |I|=5 gap=-2
+climbed: |I|=5 bound=5 dead_at=3 counts=[5, 3, 1, 0, 0, 0, 0]
+SUMMARY: pattern has no purchase on this note - adversarial islands (line12, triangle21, 3-cube, diagonal rod, L, greedy climb) all die within M1+M2+M3-t0+1; not the known S1 iff HIT

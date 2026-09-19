@@ -1,0 +1,32 @@
+{
+ "task": "J:note:CHANNEL_SURFACE_CN_GROUNDING_PERIPHERAL_UNITARY_SUMMAND_BOUNDED_THEOREM_NOTE_2026_06_11",
+ "type": "judgment",
+ "lane": "channel",
+ "worker": "w-jonathonsmac4f50-j6926",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_CHANNEL_SURFACE_CN_GROUNDING_PERIPHERAL_/adversarial_unital_and_peripheral.py",
+ "seed": 16739,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e4da7966",
+ "started_utc": "20260919T111859Z",
+ "elapsed_s": 5.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "HS operator norms of unital CPTP maps are exactly 1 (Werner-Holevo n = 3..7, Sinkhorn-scaled random maps n = 2..6, and an adversarial hill climb at n = 3, 4 reaching 1.000000000000) while the TP-non-unital and unital-non-TP witnesses exceed 1; an adversarial climb over norm-1 contractions with a unimodular eigenvector keeps |T^dag v - conj(lam) v| at 5e-08; conjugation in the spectral frame reverses every random unitary to 1e-14; the non-peripheral content stays within ||C^n||; no falsifier fires"
+ },
+ "review": "Read the script and its output: the HS operator norm of every tested unital CPTP map is 1 to 1e-12 (Werner-Holevo n = 3..7, which is not mixed-unitary at n = 3; converged operator-Sinkhorn maps n = 2..6; an adversarial hill climb at n = 3, 4), while the TP non-unital (1.144) and unital non-TP (1.080) witnesses exceed 1; an adversarial climb over norm-1 contractions with T e_1 = lam e_1 leaves |T^dag e_1 - conj(lam) e_1| at the sqrt(2 x 1e-15) scale of the norm tolerance; conjugation in the spectral frame gives Theta U Theta^-1 = U^-1 to 1e-14 for n = 2..8; the non-peripheral content stays within ||C^n||; no falsifier fires.",
+ "what": "Note on main: docs/CHANNEL_SURFACE_CN_GROUNDING_PERIPHERAL_UNITARY_SUMMAND_BOUNDED_THEOREM_NOTE_2026-06-11.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_CHANNEL_SURFACE_CN_GROUNDING_PERIPHERAL_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_CHANNEL_SURFACE_CN_GROUNDING_PERIPHERAL_/<script>.py\"",
+ "stdout_sha256": "67cbca05954b0b434607b65bd7249cb522264eb3b6bb029f1769a993fbe3c048",
+ "stdout_tail": " 4: (np.float64(1.0), 2.2e-16), 5: (np.float64(1.0), 0.0), 6: (np.float64(1.0), 1.1e-16), 7: (np.float64(1.0), 2.2e-16)}; Sinkhorn unital maps, max over 20 per n {2: (np.float64(1.0), 8.6e-14), 3: (np.float64(1.0), 1.1e-13), 4: (np.float64(1.0), 8.9e-14), 5: (np.float64(1.0), 1.1e-13), 6: (np.float64(1.0), 1.2e-13)}; adversarial hill climb {3: (np.float64(1.0), 8.5e-14), 4: (np.float64(1.0), 7.7e-14)}; hostile witnesses {'amplitude damping (TP, not unital), gamma = 1/2': np.float64(1.1441228056353685), 'sum K K^dag = I but not TP': (np.float64(1.0800000000000003), 0.0800000000000003)}\n2. joint T^dag property: adversarial climb max |T^dag v - conj(lam) v| over norm-1 contractions with T v = lam v {2: 5e-08, 3: 5.5e-08, 5: 4.6e-08}; random W(U + C)W^dag, n = 4, 6, 8: max 2.9e-15\n3. Theta U Theta^-1 = U^-1 for random unitaries n = 2..8: max error 1.2e-14\n4. non-peripheral content ||T^n - U^n (+) 0|| against ||C^n|| (rho_cnu = 0.8, n = 5..40): within bound True; largest 6.4e-01\nSUMMARY: HS operator norms of unital CPTP maps are exactly 1 (Werner-Holevo n = 3..7, Sinkhorn-scaled random maps n = 2..6, and an adversarial hill climb at n = 3, 4 reaching 1.000000000000) while the TP-non-unital and unital-non-TP witnesses exceed 1; an adversarial climb over norm-1 contractions with a unimodular eigenvector keeps |T^dag v - conj(lam) v| at 5e-08; conjugation in the spectral frame reverses every random unitary to 1e-14; the non-peripheral content stays within ||C^n||; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6926",
+  "at_utc": "20260919T111914Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

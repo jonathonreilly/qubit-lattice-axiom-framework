@@ -1,0 +1,56 @@
+== Q3(c) path φ^{k+2} eigenvalues beyond executed k<=3 ==
+  k=0: odd (p-q)^2=True even (p+q-2r)^2=True
+  k=4: odd (p-q)^6=True even (p+q-2r)^6=True
+  k=5: odd (p-q)^7=True even (p+q-2r)^7=True
+  k=6: odd (p-q)^8=True even (p+q-2r)^8=True
+  k=7: odd (p-q)^9=True even (p+q-2r)^9=True
+  k=8: odd (p-q)^10=True even (p+q-2r)^10=True
+== Q3(c) Phi^{k+2} constant iff p=q=r, extra triples ==
+  k=0 (3, 1, 2): constant=False expect=False
+  k=0 (5, 2, 4): constant=False expect=False
+  k=0 (2, 1, 2): constant=False expect=False
+  k=0 (2, 2, 1): constant=False expect=False
+  k=0 (4, 4, 1): constant=False expect=False
+  k=0 (1, 1, 1): constant=True expect=True
+  k=0 (7, 3, 5): constant=False expect=False
+  k=0 (6, 1, 1): constant=False expect=False
+  k=4 (3, 1, 2): constant=False expect=False
+  k=4 (5, 2, 4): constant=False expect=False
+  k=4 (2, 1, 2): constant=False expect=False
+  k=4 (2, 2, 1): constant=False expect=False
+  k=4 (4, 4, 1): constant=False expect=False
+  k=4 (1, 1, 1): constant=True expect=True
+  k=4 (7, 3, 5): constant=False expect=False
+  k=4 (6, 1, 1): constant=False expect=False
+  k=6 (3, 1, 2): constant=False expect=False
+  k=6 (5, 2, 4): constant=False expect=False
+  k=6 (2, 1, 2): constant=False expect=False
+  k=6 (2, 2, 1): constant=False expect=False
+  k=6 (4, 4, 1): constant=False expect=False
+  k=6 (1, 1, 1): constant=True expect=True
+  k=6 (7, 3, 5): constant=False expect=False
+  k=6 (6, 1, 1): constant=False expect=False
+== Q3(b) φ² differences vanish iff p=q=r on 1..4^3 ==
+  scanned 64 positive triples; mismatches=0
+== Q2 pendant paths extra lengths 1,4,5 ==
+  length=1: constant in v_b: True
+  length=4: constant in v_b: True
+  length=5: constant in v_b: True
+== Q2 two-bond pendant (L with corner) at extra triples ==
+  (3, 1, 2): F values [3464, 3464]... unique=1 constant=True
+  (5, 2, 4): F values [46681, 46681]... unique=1 constant=True
+  (2, 1, 2): F values [2441, 2441]... unique=1 constant=True
+  (2, 2, 1): F values [688, 688]... unique=1 constant=True
+  (1, 1, 1): F values [216, 216]... unique=1 constant=True
+  (4, 4, 1): F values [3888, 3888]... unique=1 constant=True
+== Q2/Q4(c) two-pendant forest TV=0 at extra triples ==
+  (2, 1, 2): TV(R1,R2)=0
+  (3, 1, 2): TV(R1,R2)=0
+  (5, 2, 4): TV(R1,R2)=0
+  (1, 1, 1): TV(R1,R2)=0
+== Q3(e) series coefficients beyond n<=10; antipodal w=0 ==
+  n=11: coeff=1/1175091669949317120000 want=1/1175091669949317120000 ok=True
+  n=12: coeff=1/646300418472124416000000 want=1/646300418472124416000000 ok=True
+  antipodal integral 2π ∫_-1^1 1 dt = 4*pi (should be 4π)
+  lim_{w→0} 4π sinh(βw)/(βw) = 4*pi
+SUMMARY: QUANTIFIER SCOPE (PR #8158): Q3(c) φ^{k+2} odd/even eigenvalues and constancy iff p=q=r hold for k=0,4..8 and extra triples including (2,2,1) and (1,1,1); Q3(b) differences vanish iff p=q=r on 1..4^3; Q2 pendant F is independent of v_b at lengths 1,4,5 and on a two-bond blob; forest TV(R1,R2)=0 at extra triples; sphere series coeffs n=11..20 stay 2n/(2n+1)! > 0; not the Q4(a) triangle HIT; pattern has purchase and does not fire

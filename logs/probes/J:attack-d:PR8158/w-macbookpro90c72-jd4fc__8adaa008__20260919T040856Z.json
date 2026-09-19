@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8158",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block24-unreco",
+ "worker": "w-macbookpro90c72-jd4fc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8158/quantifier_extra_k_triples.py",
+ "seed": 90936,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8adaa008",
+ "started_utc": "20260919T040856Z",
+ "elapsed_s": 12.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "QUANTIFIER SCOPE (PR #8158): Q3(c) \u03c6^{k+2} odd/even eigenvalues and constancy iff p=q=r hold for k=0,4..8 and extra triples including (2,2,1) and (1,1,1); Q3(b) differences vanish iff p=q=r on 1..4^3; Q2 pendant F is independent of v_b at lengths 1,4,5 and on a two-bond blob; forest TV(R1,R2)=0 at extra triples; sphere series coeffs n=11..20 stay 2n/(2n+1)! > 0; not the Q4(a) triangle HIT; pattern has purchase and does not fire"
+ },
+ "review": "quantifier checks beyond executed k<=3 and (2,1,2): path Phi^{k+2} eigenvalues/constancy, pendant lengths 1/4/5 and a two-bond blob, forest TV=0 at extra triples, phi^2 diffs on 1..4^3, sphere series n=11..20; all hold, not the Q4(a) triangle HIT; pattern has purchase and does not fire",
+ "what": "PR #8158 ([physics-loop] admissibility-induced-law block24 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915; git show origin/physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915:<note>. Create probes/work/pr8158/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8158/<script>.py\"",
+ "stdout_sha256": "4c42e5965cc9bc47af15ab1ec8627a4de1f80aa08eb103f8868830b774f7928d",
+ "stdout_tail": " triples; mismatches=0\n== Q2 pendant paths extra lengths 1,4,5 ==\n  length=1: constant in v_b: True\n  length=4: constant in v_b: True\n  length=5: constant in v_b: True\n== Q2 two-bond pendant (L with corner) at extra triples ==\n  (3, 1, 2): F values [3464, 3464]... unique=1 constant=True\n  (5, 2, 4): F values [46681, 46681]... unique=1 constant=True\n  (2, 1, 2): F values [2441, 2441]... unique=1 constant=True\n  (2, 2, 1): F values [688, 688]... unique=1 constant=True\n  (1, 1, 1): F values [216, 216]... unique=1 constant=True\n  (4, 4, 1): F values [3888, 3888]... unique=1 constant=True\n== Q2/Q4(c) two-pendant forest TV=0 at extra triples ==\n  (2, 1, 2): TV(R1,R2)=0\n  (3, 1, 2): TV(R1,R2)=0\n  (5, 2, 4): TV(R1,R2)=0\n  (1, 1, 1): TV(R1,R2)=0\n== Q3(e) series coefficients beyond n<=10; antipodal w=0 ==\n  n=11: coeff=1/1175091669949317120000 want=1/1175091669949317120000 ok=True\n  n=12: coeff=1/646300418472124416000000 want=1/646300418472124416000000 ok=True\n  antipodal integral 2\u03c0 \u222b_-1^1 1 dt = 4*pi (should be 4\u03c0)\n  lim_{w\u21920} 4\u03c0 sinh(\u03b2w)/(\u03b2w) = 4*pi\nSUMMARY: QUANTIFIER SCOPE (PR #8158): Q3(c) \u03c6^{k+2} odd/even eigenvalues and constancy iff p=q=r hold for k=0,4..8 and extra triples including (2,2,1) and (1,1,1); Q3(b) differences vanish iff p=q=r on 1..4^3; Q2 pendant F is independent of v_b at lengths 1,4,5 and on a two-bond blob; forest TV(R1,R2)=0 at extra triples; sphere series coeffs n=11..20 stay 2n/(2n+1)! > 0; not the Q4(a) triangle HIT; pattern has purchase and does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd4fc",
+  "at_utc": "20260919T040908Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-response-kernel-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j7be3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-response-kernel/referee_w-jonathonsmac4f50-j7be3/check.py",
+ "seed": 86769,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "559fd404",
+ "started_utc": "20260919T025929Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed with two corrections (1/E(pi,pi,0) = 1/8; the (l,l,0) slice equals the (l,-l,0) slice); the axis value 3/2 and the planar poles leave no isotropic 1/r"
+ },
+ "review": "Formation-response-kernel a1's claims reproduce independently (G = (3/2)C(n+m,n)/2^(n+m) solves G = PG + delta at 169 points, (pi,0) values chi 3/2, C 9/8, chi/C 4/3, R_8(l,l,0) = 3(3-cos l)/(8(1-cos l)) with l^2 R_8 -> 3/2 and 3/4 at pi), with corrections: 1/E(pi,pi,0) = 1/8 not 1/4, the slice equals the known (l,-l,0) pole, and the attempt's G check is vacuous; HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-response-kernel:a1/; its files are probes/work/derive/formation-response-kernel/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-response-kernel/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0487d3eca39d229e12bf110c8e4c827d05c04f2c418b8734b4c5efe322c4a64f",
+ "stdout_tail": "PASS F1: G(n, m) = (3/2)C(n+m,n)/2^(n+m) satisfies G = PG + delta at all 169 points n, m <= 12 (G = 0 off N^2); the attempt's two formulae are one expression for every N (its E1 is not a test of the equation)\nPASS F2: q = (pi, 0): phi = 1/3, chi = 3/2, C = 9/8, chi/C = 4/3 = 1 + phi, E = 4, 1/E = 1/4\nPASS F3: R_8(l, l, 0) = 3(3 - cos l)/(8(1 - cos l)) = the attempt's form (symbolic True, 19 rational l to 40 digits True); l^2 R_8 -> 3/2; R_8(pi, pi, 0) = 3/4; E(pi, pi, 0) = 8, 1/E = 1/8 (the attempt: 1/4); R_8(l, l, 0) = R_8(l, -l, 0) at all 19 points: True\nPASS F4: R_8(l, 0, 0) = 3/2 at 19 rational l (40 digits): finite on the axes, so no isotropic 1/|k|^2\nHIT: confirmed - formation-response-kernel a1: the quadrant Green function (3/2)C(n+m,n)/2^(n+m) (checked against G = PG + delta here; the attempt's own E1 only compares two forms of one expression), the (pi, 0) numbers chi = 3/2, C = 9/8, chi/C = 4/3 = 1 + phi, 1/E = 1/4, and R_8(l, l, 0) = 3(3 - cos l)/(8(1 - cos l)) with l^2 R_8 -> 3/2 and R_8(pi, pi, 0) = 3/4, recomputed independently. Corrections: 1/E(pi, pi, 0) = 1/8 with the task's E (the attempt writes 1/4); the (l, l, 0) pole is the recorded (k, -k, 0) pole, since R_8 is even in each k_j\nSUMMARY: confirmed with two corrections (1/E(pi,pi,0) = 1/8; the (l,l,0) slice equals the (l,-l,0) slice); the axis value 3/2 and the planar poles leave no isotropic 1/r\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7be3",
+  "at_utc": "20260919T025930Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok formation-response-kernel a1): the quadrant Green function, the (pi,0) FDR numbers and the closed form of R_8 on (l,l,0) survive; corrections recorded: 1/E(pi,pi,0) = 1/8 under the task's E (attempt: 1/4), the (l,l,0) pole equals the known (l,-l,0) pole by the evenness of R_8, and the attempt's own G check compared two forms of one expression.",
+  "by": "w-jonathonsmac4f50-j7be3",
+  "at_utc": "20260919T025930Z"
+ }
+}

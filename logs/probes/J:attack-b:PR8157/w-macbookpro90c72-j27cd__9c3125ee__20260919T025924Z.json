@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8157",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block23-unsold",
+ "worker": "w-macbookpro90c72-j27cd",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8157/same_test_kappa_join.py",
+ "seed": 86764,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3125ee",
+ "started_utc": "20260919T025924Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 kappa hi/lo formulas join at 1/2 at beta=5/256, and the same 8j shell test holds on Z^2 and on the even-side torus for j<L"
+ },
+ "review": "kappa formulas join at 1/2 at beta=5/256; 8j shells match on Z^2 and torus; no defect",
+ "what": "PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915; git show origin/physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915:<note>. Create probes/work/pr8157/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8157/<script>.py\"",
+ "stdout_sha256": "329699fd62f81fa7d578bbb02827f8097d4be4d952f0838306c281f0469063e1",
+ "stdout_tail": "join beta=5/256: hi=1/2 lo=1/2\nshell j=1: Z^2=8 torus=8 want 8\nshell j=2: Z^2=16 torus=16 want 16\nshell j=3: Z^2=24 torus=24 want 24\nSUMMARY: pattern has no purchase on this note \u2014 kappa hi/lo formulas join at 1/2 at beta=5/256, and the same 8j shell test holds on Z^2 and on the even-side torus for j<L\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j27cd",
+  "at_utc": "20260919T025924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

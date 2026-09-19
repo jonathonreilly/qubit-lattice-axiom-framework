@@ -1,0 +1,5 @@
+join beta=5/256: hi=1/2 lo=1/2
+shell j=1: Z^2=8 torus=8 want 8
+shell j=2: Z^2=16 torus=16 want 16
+shell j=3: Z^2=24 torus=24 want 24
+SUMMARY: pattern has no purchase on this note — kappa hi/lo formulas join at 1/2 at beta=5/256, and the same 8j shell test holds on Z^2 and on the even-side torus for j<L

@@ -1,0 +1,32 @@
+{
+ "task": "J:note:STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026_06_09",
+ "type": "judgment",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-jc3fe",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BO/exact_cases_1d_and_3d_drift_census.py",
+ "seed": 17476,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3021604e",
+ "started_utc": "20260919T113116Z",
+ "elapsed_s": 15.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "in 1D the unitarity coefficients of the general period-2 licensed tick contain r s-bar and p q-bar, the four support cases leave only z-independent (flat) ticks or the unit-hop movers [[0,p],[s z,0]] / [[0,q/z],[r,0]] with trace 0, monomial det and eigenvalues squaring to det (slope 1 per site); licensed permutation censuses for periods 2..8 give |drift| in {0, 1} only; beyond the note's 1D scope, the 29585 period-2 site-licensed permutation ticks on Z^3 carry orbit drifts [\"('1', '0', '0')\", \"('1/2', '0', '0')\", \"('1/2', '1/2', '0')\", \"('1/2', '1/4', '0')\", \"('1/2', '1/4', '1/4')\", \"('1/3', '0', '0')\", \"('1/3', '1/3', '0')\", \"('1/3', '1/3', '1/3')\", \"('1/4', '0', '0')\", \"('1/4', '1/4', '0')\", \"('1/4', '1/4', '1/4')\"] - quantized, including the (1/2,1/2,0)-type staircases the landed 3D simultaneous-tick note already records and drifts with l1 speed below 1 such as (1/2,0,0); the note claims nothing in 3D, so no falsifier of its 1D theorem fires"
+ },
+ "review": "Read the script and its output: the Laurent coefficients of the general period-2 licensed tick contain r s-bar and p q-bar, and a sympy case analysis of the four support cases shows each is flat (z-free characteristic polynomial) unless two nonzero live hops force alpha = delta = 0, leaving the unit-hop movers with trace 0 and mu^2 = -det (slope 1 per site); 1D licensed permutation censuses for periods 2..8 give orbit drifts 0 or 1 only; beyond the note's 1D scope, the 29585 period-2 site-licensed permutation ticks on Z^3 have quantized orbit drifts from 1 down to 1/4, including (1/2,1/2,0) staircases (already recorded in the landed 3D simultaneous-tick note) and (1/2,0,0) zigzags; the note claims nothing in 3D (its third falsifier bullet, read literally, is met by these drifts, as the landed 3D note records), so no falsifier of its 1D theorem fires.",
+ "what": "Note on main: docs/STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BO/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BO/<script>.py\"",
+ "stdout_sha256": "ee8199555212427ac378bdef58f66856a545f77ef52314bd66f7a4e92dbd5983",
+ "stdout_tail": "3: ['0', '1'], 4: ['0', '1'], 5: ['0', '1'], 6: ['0', '1'], 7: ['0', '1'], 8: ['0', '1']}\nC. 3D period-2 site-licensed permutation ticks: 29585 bijective of 7^8; orbit drift |v| patterns (sorted components) with counts: {\"('1', '0', '0')\": 20280, \"('1/2', '0', '0')\": 7872, \"('1/2', '1/2', '0')\": 3888, \"('1/3', '1/3', '0')\": 3072, \"('1/3', '0', '0')\": 3072, \"('1/4', '1/4', '0')\": 1056, \"('1/3', '1/3', '1/3')\": 1024, \"('1/4', '0', '0')\": 960, \"('1/4', '1/4', '1/4')\": 384, \"('1/2', '1/4', '0')\": 192, \"('1/2', '1/4', '1/4')\": 96}\nSUMMARY: in 1D the unitarity coefficients of the general period-2 licensed tick contain r s-bar and p q-bar, the four support cases leave only z-independent (flat) ticks or the unit-hop movers [[0,p],[s z,0]] / [[0,q/z],[r,0]] with trace 0, monomial det and eigenvalues squaring to det (slope 1 per site); licensed permutation censuses for periods 2..8 give |drift| in {0, 1} only; beyond the note's 1D scope, the 29585 period-2 site-licensed permutation ticks on Z^3 carry orbit drifts [\"('1', '0', '0')\", \"('1/2', '0', '0')\", \"('1/2', '1/2', '0')\", \"('1/2', '1/4', '0')\", \"('1/2', '1/4', '1/4')\", \"('1/3', '0', '0')\", \"('1/3', '1/3', '0')\", \"('1/3', '1/3', '1/3')\", \"('1/4', '0', '0')\", \"('1/4', '1/4', '0')\", \"('1/4', '1/4', '1/4')\"] - quantized, including the (1/2,1/2,0)-type staircases the landed 3D simultaneous-tick note already records and drifts with l1 speed below 1 such as (1/2,0,0); the note claims nothing in 3D, so no falsifier of its 1D theorem fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc3fe",
+  "at_utc": "20260919T113144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

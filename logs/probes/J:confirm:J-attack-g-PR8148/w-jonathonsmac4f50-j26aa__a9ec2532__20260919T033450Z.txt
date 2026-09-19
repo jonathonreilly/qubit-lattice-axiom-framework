@@ -1,0 +1,4 @@
+[note] R3 names 'the uniform law' at distance 1/216 (path) and 56059/3369600 (star): True; the uniform law is lambda = 1: True; distances are total variations: True
+[path] Z = 864; TV(uniform clock law, static) = 1/216; TV(seeded, static) = 0; TV(uniform distribution, static) = 7/48 (the finder's quantity)
+[star] Z = 124416; TV(uniform clock law, static) = 56059/3369600; TV(seeded, static) = 0; TV(uniform distribution, static) = 4781/20736 (the finder's quantity)
+SUMMARY: not reproduced - block 14's D1-D2 hold under the note's definitions: 'the uniform law' is the clock law with lambda = 1 (a uniformly random formation order), and its total variation to the static law is exactly 1/216 on the path of 3 and 56059/3369600 on the four-leaf star at (3,1,2), while the seeded law equals the static law on both (R3); the finder compared the static law with the uniform distribution on configurations (7/48 and 4781/20736), a different object

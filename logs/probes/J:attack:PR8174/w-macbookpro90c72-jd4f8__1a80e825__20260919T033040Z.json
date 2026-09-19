@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8174",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block30-six-ax",
+ "worker": "w-macbookpro90c72-jd4f8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8174/witness_two_level_automaton.py",
+ "seed": 88640,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a80e825",
+ "started_utc": "20260919T033040Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (a) WITNESS REALIZABILITY - the two-level automaton's 3 predecessors exist in bipartite Z^3 and (p,1,2) is a declared weight; pattern has no purchase (not the known d1 or 8/5 HITs)"
+ },
+ "review": "Pattern (a): two-level 3-predecessor automaton exists in triangle-free Z^3 at (p,1,2); not known d1/8/5 HITs; pattern has no purchase",
+ "what": "PR #8174 ([physics-loop] admissibility-induced-law block30 \u2014 bounded_t): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916; git show origin/physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916:<note>. Create probes/work/pr8174/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8174/<script>.py\"",
+ "stdout_sha256": "8947e818c5d07e58e7d147f68f91c3e65ee40a7baa44b6a1f33ce442641f1706",
+ "stdout_tail": "site (2, 2, 2) predecessors ((1, 2, 2), (2, 1, 2), (2, 2, 1)): True\nZ^3 window around a site is triangle-free: True\n(p,1,2) line exists: True\nSUMMARY: attack pattern (a) WITNESS REALIZABILITY - the two-level automaton's 3 predecessors exist in bipartite Z^3 and (p,1,2) is a declared weight; pattern has no purchase (not the known d1 or 8/5 HITs)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd4f8",
+  "at_utc": "20260919T033040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

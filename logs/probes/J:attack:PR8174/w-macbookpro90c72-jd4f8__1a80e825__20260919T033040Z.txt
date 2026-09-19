@@ -1,0 +1,4 @@
+site (2, 2, 2) predecessors ((1, 2, 2), (2, 1, 2), (2, 2, 1)): True
+Z^3 window around a site is triangle-free: True
+(p,1,2) line exists: True
+SUMMARY: attack pattern (a) WITNESS REALIZABILITY - the two-level automaton's 3 predecessors exist in bipartite Z^3 and (p,1,2) is a declared weight; pattern has no purchase (not the known d1 or 8/5 HITs)

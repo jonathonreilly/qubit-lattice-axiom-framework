@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cubic_ice_forward_length_high_stat_join_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spin_half_cubic_ice_forward_length_high_stat_join_2026_09_04.py",
+ "seed": 3522,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0103dc4d",
+ "started_utc": "20260919T073842Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8ecd53092ee9b477e36004e11d63ca6fd8640583d4b887479078588d224b127a",
+ "stdout_tail": "pass the nominal nonlinear-jackknife Hotelling raw-gap plateau test\n[PASS] 04 each fixed earlier detuned contrast passes its nominal nonlinear-jackknife Student threshold\n[PASS] 05 each long-F raw-gap span is below five percent\n[PASS] 06 the matched squared-gap excess passes the nominal nonlinear-jackknife Hotelling plateau test\n[PASS] 07 each fixed earlier excess contrast passes its nominal nonlinear-jackknife Student threshold\n[PASS] 08 the larger-population high-statistics F=6 gaps reproduce the first paired receipt\nHIGH_STAT_FORWARD_JOIN window=2-6 gap=0.23008033+/-0.00141187 chi2=5.2394 held_out_sigma=F6:0.6464,F8:1.0587,F10:0.1631 long_span_fraction=0.010415 Hotelling95=16.7663 Student95=2.2622\nHIGH_STAT_FORWARD_EXCESS window=2-6 squared_gap_excess=0.02067952+/-0.00068834 chi2=5.2643 held_out_sigma=F6:0.6471,F8:1.0591,F10:0.1621 long_span_fraction=0.053130\nHIGH_STAT_FORWARD_JOIN window=8-14 gap=0.23221616+/-0.00521946 chi2=2.0449 held_out_sigma=F6:0.8464,F8:0.0590,F10:0.5866 long_span_fraction=0.023452 Hotelling95=16.7663 Student95=2.2622\nHIGH_STAT_FORWARD_EXCESS window=8-14 squared_gap_excess=0.02086046+/-0.00271006 chi2=2.0757 held_out_sigma=F6:0.8412,F8:0.0569,F10:0.5850 long_span_fraction=0.120414\nCERTIFICATE: fixed_L=8 high_statistics=True paired_forward_lengths=6,8,10,12,14,16,20 long_forward_set=12,14,16,20 GLS_covariance=True finite_sample_calibration=False historical_nominal_thresholds=True paired_RK_identity=True thermodynamic_limit=False\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

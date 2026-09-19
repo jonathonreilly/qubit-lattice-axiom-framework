@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_piece_taxonomy_count_law_cycle798_2026_08_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_piece_taxonomy_count_law_cycle798_2026_08_15.py",
+ "seed": 3567,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T073927Z",
+ "elapsed_s": 13.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d21fb2cdd2da75ebe1b7b5178db4c701860ceca8b2009151df73cab9b492cddc",
+ "stdout_tail": "acent open question\nG8 detail: witness at hub weight 0: the piece (0, 1, 2, 4, 9) has unit 7 while the piece (0, 1, 2, 8, 12) has unit 14\nPASS G9 the 192 chain words are pairwise distinct and fall into exactly 96 mirror classes of 2, and every cutting carries 24 distinct ones\nG9 detail: the fourth-axis flip pairs each class; fixed-chain and fixed-cutting censuses are 0 among 192 and 15800\nG9 detail: the ascent census inside a cutting is {0: 1, 1: 11, 2: 11, 3: 1} at all 15800 cuttings, so the count law re-derives the one unit profile\nG9 detail: the 15800 cuttings project to 4116 distinct class sets\nG9 detail: the class-set multiplicity census is {2: 2636, 4: 936, 8: 336, 16: 192, 64: 16}\nG9 detail: the 15800 word sets are pairwise distinct, one for each cutting\nPASS G10 the 24 unordered wall edges on the 12 wall letters fall into exactly 2 components of 6, and that splits the 12 pairs at 18\nG10 detail: the components are [0, 4, 7, 10, 11, 14] and [2, 3, 5, 9, 12, 13]\nG10 detail: inside a component every letter has exactly 1 non-neighbour, giving 3 non-adjacent pairs per component\nG10 detail: the 6 within-component pairs at that value are [(0, 7), (2, 13), (3, 5), (4, 11), (9, 12), (10, 14)], each with 4 common neighbours\nG10 detail: the 6 cross-component pairs are [(0, 12), (2, 11), (3, 10), (4, 13), (5, 14), (7, 9)], a perfect matching of all 12 wall letters\nG10 detail: the value census over all 36 cross-component letter pairs is {18: 6, 52: 24, 90: 6}\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073941Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

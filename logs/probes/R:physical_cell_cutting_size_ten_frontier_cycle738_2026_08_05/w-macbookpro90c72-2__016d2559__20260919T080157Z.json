@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py",
+ "seed": 4917,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T080157Z",
+ "elapsed_s": 324.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1f6236d85338d60215b2ec2e933ac7d400bd749e72df417c0fc2d97c0be50e75",
+ "stdout_tail": "reading, reproduce their reading on all 15800 cuttings; 0 mismatched and no reading returned a set twice\nPASS ten.sym  each of the 48 symmetries of the cell permutes the 15800 cuttings among themselves; 8 of the 18 readings are unmoved by all of them, and the sets carrying those map onto one another under the action, in orbits of sizes {'zero at 8': [24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 48, 48, 48, 48, 48], 'one at 8': [24, 24, 48, 48, 48]}\nPASS ten.floor  neither side of any of the three nonconstant readings is carried at two, four, six, eight or ten pieces, and each forces an even total, which bars every odd size: every one of the six nonconstant readings needs at least twelve pieces\nPASS ten.gap  the sets carrying the constant zero reading number 0 below eight pieces, 648 at eight and 0 at ten; those carrying the constant one likewise number 0, 192 and 0\n\nN5 execution certificate\nN5 per_element: checked -- all 192 used piece columns and every exact-weight-ten support\nN5 per_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection\nN5 per_mode: checked and not executed -- no field, spectral, or momentum-mode decomposition\nN5 per_block: checked -- all 15,800 cutting rows and every licensed quarter-split cell\nN5 lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim\nRECEIPT outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T080721Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

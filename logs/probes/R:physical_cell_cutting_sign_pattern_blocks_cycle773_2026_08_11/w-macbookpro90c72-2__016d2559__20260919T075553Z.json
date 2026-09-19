@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11.py",
+ "seed": 4553,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T075553Z",
+ "elapsed_s": 27.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4b17d8c5f43095745f0fa55b64502f71818c646430472e28236be671eda4c8e5",
+ "stdout_tail": "s [3, 3, 4, 0, 0] by weight, weighting to 39 = 144 - 105, and it vanishes in both blocks of weight above 2\nPASS D19 two steps: [2, 2, 2, 2, 0] weighting 30, then [1, 1, 2, -2, 0] weighting 9, together 39; weight 3 rises by 2\nPASS D20 the specified 4-table comparator is zero-one with 0 cover rows; rank 105, drop [3, 3, 4, 0, 0], weight 39\nPASS D21 both kernels have dimension 87 but meet in 33, so the kernel space separates them; swapping one part gives rank 93, drop [3, 3, 4, 3, 0]\nPASS D22 the incidence is the entrywise sum of exactly 4 orbit tables whose common kernel is 12, with per-block dimensions [0, 0, 0, 0, 12]\nPASS D23 the common kernel is the all-axes sign block; incidence and all four parts kill its 12 dimensions, residual entries 0\nPASS D24 incidence-kernel meets with the four part kernels are [12, 12, 12, 20]; beyond the common 12: [0, 0, 0, 8], both fields\nPASS D25 the stack of those 4 parts has rank 180 at both primes, which is 192 - 12\nPASS D26 the 96 tables form 2 kernel-subspace classes of dimension 48, 48 each; both carry per-block profile [0, 0, 2, 6, 12]\nPASS D27 all 96 tables carry the same vector of 16 per-block ranks, 1 distinct in all, so the split is uniform across the family\nPASS D28 support budget: 27 seconds under 300, peak 112 MB under 2500, output 3645 bytes under 6000\n16 blocks of 12: one table 144, incidence 105, drop 39 in weights at most 2; common kernel 12; part meets [12, 12, 12, 20]\nelapsed 27 s, peak resident 112 MB\nTOTAL: PASS=29 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T075621Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

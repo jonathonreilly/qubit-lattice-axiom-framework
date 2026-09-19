@@ -1,0 +1,32 @@
+{
+ "task": "R:spin_half_cubic_ice_infrared_ladder_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+ "seed": 3524,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0103dc4d",
+ "started_utc": "20260919T073844Z",
+ "elapsed_s": 0.3,
+ "returncode": 2,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8d47f5519bdf36b32b7eb1c10a880a42d60b7da80e00706dc46fe777ca03a9f8",
+ "stdout_tail": "EVIDENCE HOLD: no current long production receipt; authorize and bound a corrected production protocol separately.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073844Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 2 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

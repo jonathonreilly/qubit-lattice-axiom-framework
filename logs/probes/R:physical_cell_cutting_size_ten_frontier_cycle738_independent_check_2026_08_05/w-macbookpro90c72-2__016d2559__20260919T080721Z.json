@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.py",
+ "seed": 5241,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T080721Z",
+ "elapsed_s": 295.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "991ab495aeb201c781945e200e4a5f3866e245da0270891dde0c46014b651a4f",
+ "stdout_tail": "PASS independent.population  opposite-pivot exact covers reconstruct 15,800 rows on the 192 used pieces\nPASS independent.dependency  Cycle 737 v2 is pass and binds this exact incidence/order\nPASS independent.targets  all eight Cycle 737 reading identities and upper supports reconstruct exactly\nPASS independent.rank  an independently selected 88-row basis pins every reading\nPASS independent.consistency  each bound reading lies in the reconstructed incidence column space before basis reduction\nPASS independent.ten  independent CNF solver returns UNSAT for all eight exact-weight-ten syndromes\nPASS hostile.sat  a reading planted from ten pieces is recovered as SAT\nPASS hostile.dependency  a failed direct-dependency receipt cannot pass\n\nper_element: checked -- all 192 used piece columns enter each exact-weight-ten CNF\nper_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection\nper_mode: checked and not executed -- no field, spectral, or momentum modes exist\nper_block: checked -- all 15,800 cutting rows through an independent 88-row basis\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim\nRECEIPT outputs/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T081216Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

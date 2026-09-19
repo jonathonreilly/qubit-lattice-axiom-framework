@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cubic_ice_off_axis_high_q_localization_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spin_half_cubic_ice_off_axis_high_q_localization_2026_09_04.py",
+ "seed": 3526,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0103dc4d",
+ "started_utc": "20260919T073846Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4af6c2f92230064bf2c3e4b5b5bfc9625fb7ba75d08a5e580da24868da15f739",
+ "stdout_tail": "y_loss=1.70805461 nominal_three_parameter_cut=7.815\n[PASS] 04 finite leave-one-volume diagnostic omits exactly L=8\nFINITE_VOLUME_INFLUENCE omitted=8 c2=0.03158315 reported_error=0.01502095 cross_subset_significance=unavailable\n[PASS] 05 finite leave-one-volume diagnostic omits exactly L=10\nFINITE_VOLUME_INFLUENCE omitted=10 c2=0.03944477 reported_error=0.00888682 cross_subset_significance=unavailable\n[PASS] 06 finite leave-one-volume diagnostic omits exactly L=12\nFINITE_VOLUME_INFLUENCE omitted=12 c2=0.05317577 reported_error=0.00610452 cross_subset_significance=unavailable\n[PASS] 07 finite leave-one-volume diagnostic omits exactly L=14\nFINITE_VOLUME_INFLUENCE omitted=14 c2=0.06351182 reported_error=0.01283450 cross_subset_significance=unavailable\n[PASS] 08 one nested higher-order fit retains the same response without causal localization\nREFERENCE_STATUS {\"U_charge\": 0.160609, \"U_charge_reported_error\": 0.015345, \"U_flux\": 0.162638, \"U_flux_error\": null, \"central_product\": 0.012289089918, \"historical_response_reported_error\": 0.000915, \"occupation_sign_response\": 0.075561, \"physical_Maxwell_target\": false, \"product_error\": null, \"reason\": \"U_flux has no matched uncertainty here; magnetic summary omits shared-zero covariance and its producer has the disclosed sampling bug\", \"response_error\": null}\nSCOPE: supplied finite-family covariance and model diagnostics only; no physical UK target, inferred cause, isotropy limit or off-axis forward-limit certificate\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073847Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

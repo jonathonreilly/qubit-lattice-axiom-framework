@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_path_handedness_cycle779_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_path_handedness_cycle779_2026_08_11.py",
+ "seed": 3554,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T073914Z",
+ "elapsed_s": 12.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b94617bd8530b15cf7ba44b46e241b6bb55513d778e1858e883fcccd370fd9ab",
+ "stdout_tail": "th holder of order 1\nPASS L9 law checked on all 384 times 192 = 73728 pairs: label of image = label times determinant of map; failures 0\nPASS L10 axis order sign times (-1)^popcount of start corner: single valued on 192 of 192 paths, equals the orbit label on 192 of 192, plus count 96\nPASS L11 of the 192 proper maps, those keeping the axis order sign alone: 96; the start corner parity alone: 96; the product: 192\nPASS L12 every one of the 192 covers splits 4 and 4 by label, and each piece sits in 8 covers, so 192 times 4 = 768 = 96 times 8 forces the 4\nPASS L13 left count census 8:120 10:2832 12:9896 14:2832 16:120, sum 15800, left slots 189600 = 96 times 1975, mean 12, odd 0, range 8 to 16\nPASS L14 cutting orbits 74 under 384 and 119 under proper 192, generators closed; sizes 8:1 24:4 32:1 48:7 64:1 96:11 192:24 384:25; unbalanced 25\nPASS L15 the 240 extremal cuttings form 14 proper orbits of sizes 12:8 24:6, all far below order 192, so one sided cuttings are highly symmetric\nPASS L16 lowest-piece swap: odd in 200/200 sampled and 7900/15800 overall; explicit odd 24-path controls\nPASS L17 closure orders 4,24,192,1920 at n = 2,3,4,5, dets all +1; paths 4,24,192,1920; orbits 4:1 12:2 96:2 1920:1; label exists at n = 3 and 4\nPASS L18 at chance against the label: corner weight parity 96, corner index sum parity 96, sorted corner determinant sign 96, each of 192\nresource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2636 gate characters\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073927Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

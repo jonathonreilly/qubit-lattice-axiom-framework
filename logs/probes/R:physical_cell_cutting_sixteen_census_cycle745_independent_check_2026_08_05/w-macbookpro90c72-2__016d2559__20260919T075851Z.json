@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py",
+ "seed": 4731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T075851Z",
+ "elapsed_s": 185.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "414e4adb83e41ee3e5a337541c07a1deb929c2190ff8a8ff804ea4a1d27e281a",
+ "stdout_tail": "exact cell\nPASS independent.syndrome_dp  independent anchored syndrome DP/MITM exhausts 204 cells and 2004 splits for all six\nPASS hostile.positive_control  the independent search recovers a planted weight-sixteen target\nPASS hostile.inventory  deleting or redirecting one exact split invalidates the independent inventory\nPASS independent.complete  the primary anchored witnesses recheck inside the independent complete census\nPASS independent.census  all 132 witnesses recheck and independently fold 15 ways under 48 and 6 under 384\nPASS independent.controls  all five seeded size-16 controls independently reconstruct and hold the anchor\nPASS hostile.skipped_split  a skipped primary split invalidates the content-bound receipt\nPASS hostile.primary_source  a primary source mutation invalidates its runner hash\nPASS hostile.group  a non-permutation mutation of a seeded map is rejected\nPASS hostile.target  a local target-support mutation changes the exact reading and is rejected\nN5 per_element: checked -- all 192 columns enter each exact syndrome-DP split\nN5 per_site: checked -- one supplied 16-corner coordinate cell only\nN5 per_mode: checked and not executed -- this finite system has no modes\nN5 per_block: checked -- all 15800 rows reduce through an independent rank-88 basis\nN5 lattice_wide: checked and not executed -- no multicell or limiting claim\nRECEIPT outputs/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T080157Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_small_matrix_census_cycle765_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.py",
+ "seed": 5536,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T081216Z",
+ "elapsed_s": 186.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=43 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ee4b994c5635c499d69f7dcbf6bab81cfae7eac0f673fdcda5cf4f38edc0fde4",
+ "stdout_tail": " b 9\nC32 detail i/lambda/d/m/mc/rank/drop/hash: 12/7/6/4/3/2/6/9 c 5 d b 6 5 b 2 4 1 e\nC32 detail i/lambda/d/m/mc/rank/drop/hash: 13/19/6/2/3/1/6/3 1 e 2 a 6 1 b 7 a 1 6\nC32 detail i/lambda/d/m/mc/rank/drop/hash: 15/159/6/4/3/2/6/6 a 2 e 8 9 a 5 e 0 8 7\nC32 detail i/lambda/d/m/mc/rank/drop/hash: 18/635/1/1/1/0/1/5 f e c e b 6 6 f f c 8\nPASS C32 8 positive-drop blocks have unique ordinal/eigenvalue/matrix-hash identifiers\nPASS C33 internal part accounting: 8 drops sum to 39; blind = d(m - rank) on all 20 parts\nPASS C34 two 1x1 parts: 48 plus 48 minus, 1272384 of 3321960 blind, = C(48,2)C(48,2); and 96 plus 0 minus, 0 blind\nPASS C35 census of all 3321960 four-subsets: 79 distinct ranks, least 24, greatest 144 = the ceiling, 511872 attain it\nPASS C36 at or below 105: 106536; equal 105: 24768; below 105: 81768; at the least: 72\nPASS C37 same-implementation check at 1000033: every 16th subset in the first 3.2m; 200000 of 200000 modular ranks agree\nPASS C38 exact rational rank: 0/2/12/14 gives 24, 0/1/2/7 gives 144, the cover table's own 0/1/2/3 gives 105, each the census value\nC39 scope: mod 1000003; <= and < counts bound rational above, top-bin 511872 below; both extrema and cover reference exact\nPASS C40 hygiene: 3 further barred strings absent, no doubled nine, the one bare word only inside a barred pair\nPASS C41 budget: 186 seconds of wall time under 900, peak resident 405 MB under 2500, pre-trailer characters below\nstdout characters before trailer: 5725\nTOTAL: PASS=43 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T081523Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

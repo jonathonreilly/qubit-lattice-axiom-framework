@@ -1,0 +1,33 @@
+rank/profile contract: F_1000003 unless a gate names both fields; F_2 is a comparator
+PASS D0 cell: 2672 unit subsets, 400 at cost 6, 15800 dissections; exact pair census 13632+864+672
+PASS D1 the 192 covers hold 8 pieces each and meet every cutting exactly once, and 8 times 1975 is the cutting count 15800
+PASS D2 the 384 maps close under composition, act transitively on pieces and covers, and freely on the 36864 pairs: 96 orbits of 384
+PASS D3 the 16 flips form a subgroup free on the 192 pieces with 12 orbits; each block has dimension 12, and all 16 stack to 192, both primes
+PASS D4 16 blocks times 12 is 192, the piece count; each block is nonzero in every coordinate; weight 0 is the invariant and weight 4 the sign space
+PASS D5 control: a 48-row coordinate slice has block rank 12, recomposition 192, and actual rank 48
+PASS D6 control: a two-column swap changes 15 of 16 flip holds; rank 105, recomposition 121
+PASS D7 each table is 2 regular with 48 cycles of length 8 on 4 pieces each, and the flips give 12 classes of 4 cycles, on all 96 tables
+PASS D8 each cycle is held by 4 axis-pair flips, simply transitive on its 4 pieces; all 18432 map-cycle checks agree
+PASS D9 the axis maps reach all 6 pairs from one, so each pair takes 2 of 12 classes; every measured fibre is 2, on all 96 tables
+PASS D10 classes whose pair sits inside the pattern: [0, 0, 2, 6, 12] by weight, summing to 48, equal to the per-block kernel of all 96 tables
+PASS D11 control: the pair-meets-pattern rule gives [0, 6, 10, 12, 12] and nullity 144; the contained-pair rule gives 48
+PASS D12 one orbit table has per-block rank [12, 12, 10, 6, 0] by weight, recomposing to its rank 144, and all 96 tables agree
+PASS D13 F_2 comparator: the stacked character bases have rank 12; each enumerated table has rank 144
+PASS D14 the incidence kernel is 87 with per-block dimensions [3, 3, 6, 6, 12] by weight, constant in each class, recomposing to 87 at both primes
+PASS D15 the axis-in-pair part has kernel 78 with per-block [2, 2, 4, 8, 12], and the other part kernel 48 with [0, 0, 2, 6, 12], each recomposing
+PASS D16 the second part is one of the 96 tables and its per-block profile is the single-table one; the first part is the other 3 of the 4 orbits
+PASS D17 per-block ranks by weight: incidence [9, 9, 6, 6, 0] to 105, first part [10, 10, 8, 4, 0] to 114, second part [12, 12, 10, 6, 0] to 144
+PASS D18 single table minus incidence is [3, 3, 4, 0, 0] by weight, weighting to 39 = 144 - 105, and it vanishes in both blocks of weight above 2
+PASS D19 two steps: [2, 2, 2, 2, 0] weighting 30, then [1, 1, 2, -2, 0] weighting 9, together 39; weight 3 rises by 2
+PASS D20 the specified 4-table comparator is zero-one with 0 cover rows; rank 105, drop [3, 3, 4, 0, 0], weight 39
+PASS D21 both kernels have dimension 87 but meet in 33, so the kernel space separates them; swapping one part gives rank 93, drop [3, 3, 4, 3, 0]
+PASS D22 the incidence is the entrywise sum of exactly 4 orbit tables whose common kernel is 12, with per-block dimensions [0, 0, 0, 0, 12]
+PASS D23 the common kernel is the all-axes sign block; incidence and all four parts kill its 12 dimensions, residual entries 0
+PASS D24 incidence-kernel meets with the four part kernels are [12, 12, 12, 20]; beyond the common 12: [0, 0, 0, 8], both fields
+PASS D25 the stack of those 4 parts has rank 180 at both primes, which is 192 - 12
+PASS D26 the 96 tables form 2 kernel-subspace classes of dimension 48, 48 each; both carry per-block profile [0, 0, 2, 6, 12]
+PASS D27 all 96 tables carry the same vector of 16 per-block ranks, 1 distinct in all, so the split is uniform across the family
+PASS D28 support budget: 27 seconds under 300, peak 112 MB under 2500, output 3645 bytes under 6000
+16 blocks of 12: one table 144, incidence 105, drop 39 in weights at most 2; common kernel 12; part meets [12, 12, 12, 20]
+elapsed 27 s, peak resident 112 MB
+TOTAL: PASS=29 FAIL=0

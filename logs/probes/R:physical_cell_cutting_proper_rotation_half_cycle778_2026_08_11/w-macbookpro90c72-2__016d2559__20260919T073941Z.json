@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_proper_rotation_half_cycle778_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_proper_rotation_half_cycle778_2026_08_11.py",
+ "seed": 3581,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T073941Z",
+ "elapsed_s": 14.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "63af1a3a626df9c5eee0053b0fd4d5247cd43b88baf3a0e9e676600ed3776938",
+ "stdout_tail": "ries summing to the all-ones table\nPASS J6 row degree 1 and nonzero column degree 2 measured; row sum 8 over 1 wants 8 labels once, column sum 8 over 2 wants 4 labels twice\nPASS J7 tables split 96 and 96 by target orbit with 2 hits per own-orbit piece; 4 plus 4 unions are 8-regular; 3321960 squared = 11035418241600\nPASS J8 the cover incidence meets exactly 8 of the 192 tables, each met table lies wholly inside it, and the 8 sum back to it\nPASS J9 row census 192, one member for each of the 192 covers, and every member draws 4 tables from each of the two groups\nPASS J10 column census 16 on each piece orbit and 256 in product; each comes from one of the 16 piece columns the piece holder leaves alone\nPASS J11 the row census and the column census cross in exactly 2 members; the cover incidence is in the row census and in the crossing\nPASS J12 equivariant cover maps 192; piece maps 128 = 64 orbit-preserving plus 64 orbit-swapping, gated on 192 maps; orbits alike\nPASS J13 24576 candidate pairs, exactly 2 intertwining, each winner the pair of actions of one of the 2 central maps of the group\nPASS J14 class 12 unsplit, centraliser 32 outside the half, normalizer 16, index 8, fixes 16 pieces as 8+8 and 0 covers; flip 96/0/48\nPASS J15 none constant on an orbit: det sign -1/1 and -1/1, even corners 2/3 and 2/3, index parity 0/1 and 0/1, coordinate parity 0/1 and 0/1\nPASS J16 760 single-table swaps inside the same group tested and 760 rejected by the row census test\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073955Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

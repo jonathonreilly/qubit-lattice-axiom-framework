@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04.py",
+ "seed": 3524,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0103dc4d",
+ "started_utc": "20260919T073844Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "429ce02b0832690874603a7f8a5fa76865359a978703fb20b53c54238afcdc52",
+ "stdout_tail": "c2=-0.00328434+/-0.00113686 q8_z=-2.8889 q8_chi2=0.3557 q8_zero_c2_delta_chi2=8.3460\nRK_WINDOW_LOCALIZATION window=6-12 q6_c2=0.00007516+/-0.00051839 q6_z=0.1450 q6_chi2=0.3697 zero_c2_delta_chi2=0.0210 q8_c2=0.00090529+/-0.00181064 q8_z=0.5000 q8_chi2=0.1407 q8_zero_c2_delta_chi2=0.2500\nRK_WINDOW_LOCALIZATION window=8-14 q6_c2=-0.00001313+/-0.00077901 q6_z=-0.0169 q6_chi2=1.0781 zero_c2_delta_chi2=0.0003 q8_c2=0.00121096+/-0.00201432 q8_z=0.6012 q8_chi2=0.6438 q8_zero_c2_delta_chi2=0.3614\nRK_WINDOW_LOCALIZATION window=10-16 q6_c2=0.00033588+/-0.00115100 q6_z=0.2918 q6_chi2=3.6278 zero_c2_delta_chi2=0.0852 q8_c2=-0.00057420+/-0.00257815 q8_z=-0.2227 q8_chi2=3.4721 q8_zero_c2_delta_chi2=0.0496\nRK_EARLY_LEAVE_ONE_OUT removed_L=8 c2=-0.00256840+/-0.00069627 z=-3.6888 chi2=0.3591\nRK_EARLY_LEAVE_ONE_OUT removed_L=10 c2=-0.00206007+/-0.00051327 z=-4.0136 chi2=0.7956\nRK_EARLY_LEAVE_ONE_OUT removed_L=12 c2=-0.00201126+/-0.00053441 z=-3.7635 chi2=1.9141\nRK_EARLY_LEAVE_ONE_OUT removed_L=14 c2=-0.00160660+/-0.00055654 z=-2.8868 chi2=0.5096\nRK_EARLY_LEAVE_ONE_OUT removed_L=16 c2=-0.00185480+/-0.00051656 z=-3.5907 chi2=1.8917\nRK_EARLY_LEAVE_ONE_OUT removed_L=18 c2=-0.00142927+/-0.00091471 z=-1.5625 chi2=1.7258\n[PASS] 02 all four windows and all six early-window volume removals are reported\n[PASS] 03 every post-result localization diagnostic is finite\nCERTIFICATE: post_result_localization=True stochastic_work=False acceptance_thresholds=False thermodynamic_limit=False\nTOTAL: PASS=3 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073844Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

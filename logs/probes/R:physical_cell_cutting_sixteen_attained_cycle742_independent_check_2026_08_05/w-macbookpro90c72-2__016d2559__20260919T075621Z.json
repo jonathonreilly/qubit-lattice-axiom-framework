@@ -1,0 +1,38 @@
+{
+ "task": "R:physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py",
+ "seed": 4581,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T075621Z",
+ "elapsed_s": 137.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1f0e2c29c27a065f871a7730f66befb7f441696564bd8668f00208a0396b79eb",
+ "stdout_tail": "PASS independent.population  opposite-pivot exact covers reconstruct 15800 rows on 192 used pieces\nFAIL independent.dependencies  Cycles 737, 739 and 741 bind the exact incidence, functions and lower bound\nFAIL receipt.contract  the Cycle 742 verdict, complete traversal, runner and inputs are content-bound\nPASS independent.targets  all eight Cycle 737 function identities and exact upper supports reconstruct\nPASS independent.rank  an independent 88-row basis pins all eight consistent functions\nPASS independent.restrictions  independent single-orbit and six-pair ranks reproduce every finite inconsistency\nPASS independent.sixteen  independent CNF recovers an exact weight-sixteen four-reading carrier\nPASS hostile.sat  a target planted from sixteen columns is recovered as SAT\nPASS hostile.dependency  a failed exact-weight-fourteen predecessor cannot pass\nPASS hostile.dependency_hash  a mutated predecessor input contract is rejected\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py\", line 680, in <module>\n    bad_inventory[\"population\"][\"processed_rows\"] -= 1\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^\nKeyError: 'population'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T075838Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=17 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.txt against the .txt beside this log"
+  ]
+ }
+}

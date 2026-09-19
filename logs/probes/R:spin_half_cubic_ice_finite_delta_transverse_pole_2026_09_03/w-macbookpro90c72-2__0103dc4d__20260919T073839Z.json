@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+ "seed": 3519,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0103dc4d",
+ "started_utc": "20260919T073839Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8c7f4e57de83fc73055969e0c0df4d265466a90cad977c6a77fba1c01ad6238b",
+ "stdout_tail": "[PASS] 01 all fourteen historical gap values and sixteen old checks are preserved\n[PASS] 02 detuning -0.10 retains finite separate diagnostic fits, with no cross-response model selection\nHISTORICAL_FIT_REANALYSIS delta=-0.10 excess_c2=0.03268271 excess_chi2=4.266709 unsubtracted_pure_losses=(239.62025205265104, 49.13919663315856) losses_comparable=False\n[PASS] 03 detuning -0.05 retains finite separate diagnostic fits, with no cross-response model selection\nHISTORICAL_FIT_REANALYSIS delta=-0.05 excess_c2=0.02716205 excess_chi2=0.189582 unsubtracted_pure_losses=(102.79736560682316, 30.75955777860741) losses_comparable=False\n[PASS] 04 joint detuning fit includes the common RK reference covariance\nCORRECTED_SHARED_RK_FIT coefficient=0.36885150 error=0.04964682 chi2=7.79967530 nominal_delta_method_only=True\n[PASS] 05 final returned-control health aggregation rejects a later sector failure\n[PASS] 06 finite supplied-component Green normalization is retained\nSCOPE: finite supplied Green/observable definitions and historical fits; late-control health not reconstructed; long production, asymptotic pole, physical clock and Maxwell matching held\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073840Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

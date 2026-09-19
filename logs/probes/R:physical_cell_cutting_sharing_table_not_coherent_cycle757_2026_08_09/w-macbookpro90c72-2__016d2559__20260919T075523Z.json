@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_sharing_table_not_coherent_cycle757_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_sharing_table_not_coherent_cycle757_2026_08_09.py",
+ "seed": 4523,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T075523Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "04a1cd19657cf0eaf99a3fb197ab4f0b4763799b33022979b4656a58a96b3698",
+ "stdout_tail": "4\npair (0,20) and pair (0,21) both share 0 pieces yet carry 134 and 132\nPASS C7  two entries of the zero-sharing relation carry distinct squared-product values\nA0 . A1 and A1 . A0 differ at entry (0,6): 16 against 15\nPASS C8  the two ordered relation products have distinct entries\ncontrol on the 16 corners of the four cube by differing coordinates: 25 products, one number D1 . D1 on D0 = 4\nPASS C9  the same test finds all 25 products of the control constant on all 5 of its classes\ncontrol with the symmetric pair (0,3) moved from the d 2 class to the d 1 class: product (1,1) takes 3 values on class 1\nPASS C10  the moved-pair control remains a symmetric partition and reports multiple product values\ndeclared pair-colour refinement, classes by round: 5 76 120 120\nfinal classes 120 with sizes 192:48 384:72; the five relations split as 1 100 10 6 3\nPASS C11  the declared refinement stabilizes at 120 classes with the gated split profile\nall 48 declared spatial-rotation/time-flip maps send covers to covers; orbits: 5 of sizes 24 24 48 48 48\nPASS C12  every one of the 48 action elements permutes the 192 covers, producing 5 orbits of covers\ncover differences inside each orbit, orbit size then exact rank: 24:23 48:47 24:23 48:35 48:29; all 192 covers together: 104\nPASS C13  the 192-cover difference rank is 104; each action-orbit rank is smaller\nelapsed under 30 s and peak memory under 500 MB, both measured in this run\nPASS C14  inside its time and memory allowance\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T075526Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

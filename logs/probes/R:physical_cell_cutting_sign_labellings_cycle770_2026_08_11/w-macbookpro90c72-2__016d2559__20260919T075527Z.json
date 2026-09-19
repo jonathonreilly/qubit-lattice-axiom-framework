@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_sign_labellings_cycle770_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_sign_labellings_cycle770_2026_08_11.py",
+ "seed": 4527,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T075527Z",
+ "elapsed_s": 26.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f93c0a3535ea62a9dfbc04e8b6ef2163363db6af03179a4cfa04f5fbcd5cd49c",
+ "stdout_tail": " -1, and all 192 rows lie in its row lattice; blind 87 in every characteristic\nPASS C19 the 2 characters that are -1 on the cover stabiliser element have no cover-side copy: their cover transport conflicts on all 192 covers\nPASS C20 permutation sign: multiplicity 1 on both sides, so its block is one even number, a priori 9 values from -8 to 8, measured 0\nPASS C21 4 one-dimensional sectors: piece multiplicities 1111, cover 1100, ceiling 1+1+0+0=2, rank deficit 0+1+0+0=1\nPASS C22 rejector one: flipping any single one of the 192 labels breaks a cover for each of the 3 labellings; fewest 8, most 8\nPASS C23 rejector two: 72 opposite-label swaps, 24 per labelling, each breaks a cover; fewest 8, most 16\nPASS C24 rejector three: a transposed action breaks the transport exactly when the 2 swapped pieces differ; 16 of 36 break, 8 of 12 transpositions\nPASS C25 all 65536 corner subsets: exactly 2 have cover sum 0 on every cover, both of size 8, the masks 27030 and 38505\nPASS C26 complementing negates the labelling on all 65536 subsets since a piece has 5 corners; subset 27030 gives the flip parity labelling\nPASS C27 subset census: 4 axis histograms -8:24,0:144,8:24; zero orientation matches among 65536 vectors\nPASS C28 support budget: 25 s under 300, 56 MB under 2500, characters under 5200 with 1350 to spare\nPASS C29 source hygiene: ASCII yes, no tab yes, no remainder sign yes, no long dash yes, 41 barred strings absent yes\ncharacters printed before this line: 3748\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T075553Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_sign_labellings_cycle770_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_symmetry_ceiling_cycle764_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_symmetry_ceiling_cycle764_2026_08_09.py",
+ "seed": 5723,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T081523Z",
+ "elapsed_s": 169.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f5565948752a0388e258fb3c2cfa153f75ba553d56a14ae667ec4d70387deae",
+ "stdout_tail": "cess rows d/m/mc/blind/forced 1 to 4: 2/2/2/2/0 4/2/3/4/0 6/2/3/6/0 8/4/6/8/0\nPASS C16 excess rows d/m/mc/blind/forced 5 to 8: 6/4/3/12/6 6/2/3/6/0 6/4/3/12/6 1/1/1/1/0\nPASS C17 even subgroup: order 192, index 2, two piece classes of 96 and 96, two cover classes of 96 and 96\nPASS C18 the class labelling: all 192 cover sums are [0], block split histogram [(4, 192)]\nPASS C19 self-dual: piece side [(4, 192)], cover side [(4, 192)], incidence totals 768 and 768 both equal 96 times 8\nPASS C20 class stabilizer: the non-identity element fixing cover 0 has sign 1, fixes 0 of 8 blocks, cycles [2, 2, 2, 2], preserves the label yes\nPASS C21 character values: on that element flip parity is -1 and its product with permutation sign is -1\nPASS C22 aggregate identity: all 9 split values a give 96a + 96(8 - a) = 768, and 768 over 192 is 4\nPASS C23 geometric labels: corner parity agrees on 96 of 192 pieces, ordered determinant label on 96 of 192, determinant values [-1, 1]\nPASS C24 the determinant tracks the product character: with corners kept in source order it matches on all 73728 element-piece pairs, 0 misses\nPASS C25 sorted-image comparison: 36864 of 73728 pairs differ, with equality for 4 of 384 elements\nPASS C26 source hygiene: pure ASCII yes, no tab yes, no remainder character yes, no long dash yes, 38 barred strings absent yes\nPASS C27 budget: 169 seconds under declared 400, peak resident 171 MB under 2500, stdout characters counted below\nstdout characters: 3310\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T081813Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_symmetry_ceiling_cycle764_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

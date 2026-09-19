@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_sixteen_census_cycle745_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py",
+ "seed": 4718,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "016d2559",
+ "started_utc": "20260919T075838Z",
+ "elapsed_s": 12.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=4 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fd1f22be2ee11446f9fe2923cafb4a6088faa00503fedb0a03c958bd51bc0751",
+ "stdout_tail": "PASS D01  Cycle 737 binds this exact incidence, order, and eight readings\nFAIL D02  Cycle 741 primary and independent receipts bind complete emptiness through weight 14\nPASS ID01  the complete 124812100-pair census pins 46128 four-moves, 31968 six-moves, 120 four-move differences, and exactly the three normalized reading pairs\nPASS ID02  seventeen named targets are realizable; the odd-total synthetic rejector alone is not\nPASS ID03  every realizable target has a directly rechecked exact support witness\nTOTAL: PASS=4 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T075851Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=4 FAIL=1' vs cache 'TOTAL: PASS=42 FAIL=0'"
+  ]
+ }
+}

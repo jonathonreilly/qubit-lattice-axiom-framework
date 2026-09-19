@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8141",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block10-record",
+ "worker": "w-macbookpro90c72-j01de",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8141/plaquette_star_exists.py",
+ "seed": 85720,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "80e0bf9c",
+ "started_utc": "20260919T024200Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the plaquette is a 4-cycle without diagonals and the 6-neighbour star exists in Z^3"
+ },
+ "review": "Plaquette 4-cycle and 6-NN star exist in Z^3; pattern has no purchase",
+ "what": "PR #8141 ([physics-loop] admissibility-induced-law block10 \u2014 bounded_t): attack ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915; git show origin/physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915:<note>. Create probes/work/pr8141/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8141/<script>.py\"",
+ "stdout_sha256": "fb1467f9fca8800843d12a7c733984f6e0c22c80f6d7b537ee5a5070db5af6ae",
+ "stdout_tail": "plaquette 4-cycle NN? True has diagonal NN? False\nstar 6 NN of origin: [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]\nSUMMARY: pattern has no purchase on this note - the plaquette is a 4-cycle without diagonals and the 6-neighbour star exists in Z^3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j01de",
+  "at_utc": "20260919T024200Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

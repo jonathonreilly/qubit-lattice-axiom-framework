@@ -1,0 +1,7 @@
+PASS: A1 L=4: phi=1-E/7; chi=7/E; C=7/(2E(1-E/14)) on all 63 nonzero modes
+PASS: A2 naive FDR fails: chi/C = 1+phi on every nonzero L=4 mode
+PASS: B1 L=4 unlike pins at distance e_1: G(0)=18179/15360, G(e1)=539/15360, energy = 128 a^2/147
+PASS: B2 G(e1)>0 and G(0)>G(e1): like pins (once regularized) would be attractive
+TOTAL: PASS=4 FAIL=0
+HIT: new exact partial: linear 7-neighbour light-cone law has chi=7/E and C=7/(2E(1-E/14)) on every nonzero L=4 mode; naive FDR fails (chi/C=1+phi); unlike-pin Gaussian energy on L=4 at distance e_1 is 128 a^2/147; like pins are IR-divergent on the massless torus; G(e1)>0 so regularized like pins attract
+SUMMARY: PARTIAL linear two-source theory: FDR fails with chi/C=1+phi; unlike energy 128 a^2/147 on L=4; like pins IR-divergent; nonlinear 1/r not claimed

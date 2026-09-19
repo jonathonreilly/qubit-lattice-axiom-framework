@@ -23,14 +23,21 @@
  "stdout_tail": "GATE B SOURCE-PACKET MANIFEST GATE\n========================================================================\n[PASS] note declares open_gate source-index claim type\n[PASS] row-local source-packet manifest section is present\n[FAIL] GB-S1 discloses valley-linear source/action as supplied only\n[FAIL] GB-S2 discloses propagation/readout semantics as supplied only\n[FAIL] GB-S3 discloses generated-connectivity rule as supplied only\n[PASS] manifest preserves no-new-axiom and no-clean-theorem boundary\n[PASS] note blocks solved/physical-gravity overclaims\n\nSUMMARY: PASS=4 FAIL=3\nrunner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}\nVERDICT: the Gate B row exposes the supplied source packet as row-local manifest data and does not promote it to an axiom, primitive, retained premise, physical-gravity bridge, or clean Gate B dynamics theorem.\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T021439Z",
+  "at_utc": "20260919T022040Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b65107d4 differs from the current HEAD b7ea7aad (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=4 FAIL=3' vs cache 'SUMMARY: PASS=7 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, text-guard staleness: the runner and cache date from b74e504ab0 (2026-06-09). Its GB-S1/GB-S2/GB-S3 checks require the disclosure phrases 'not derived from retained primitives', 'not a retained physical-gravity readout bridge' and 'not yet derived from a local retained growth primitive' in docs/GATE_B_DYNAMICS_NOTE.md. Those were removed one each by 2b0645811e (2026-06-16, GB-S1a/b split), e6191e0aa1 (2026-06-18, GB-S2a/b path-sum bridge) and 08238f3042 (2026-06-18, GB-S3a/b local-stencil bridge). The note now gives each row as partly discharged: the a-piece has bounded support and the b-piece remains supplied. So 'supplied only' no longer describes the note. PASS=4 FAIL=3 vs cache PASS=7 FAIL=0.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T022040Z"
  }
 }

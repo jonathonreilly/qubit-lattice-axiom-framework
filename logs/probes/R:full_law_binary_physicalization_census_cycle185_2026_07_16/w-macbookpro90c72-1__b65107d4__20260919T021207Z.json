@@ -20,13 +20,20 @@
  "stdout_tail": "ram bank has 5,711,776 key/output bits :: (713972, 301507)\nPASS the full binary prefix trie shares exact input prefixes :: (1240739, (1, 2, 3, 5, 10, 20, 39, 77, 154), (67312, 67950, 69504, 71860, 74025, 76630, 81174, 95021, 101996))\nPASS Patricia compression remains a six-figure decision object :: (101995, 203991)\nPASS unique prefixes do not replace full exact-neighbour verification :: (11, 48, 40.261)\n\nREPRESENTATION CENSUS\nPASS rotation quotienting materially shrinks but does not trivialize the table :: (4414, 4414, 30898, 12940)\nPASS all serialized rows round-trip within one-byte role codes :: (153, 713972)\nPASS the output census accounts for every row and remains multi-role :: (153, [('YG0', 5808), ('H0', 5064), ('H1', 4842), ('F', 1080), ('AUXY', 1032), ('ARM', 1008), ('I2', 984), ('T_H3', 984), ('T_H1', 960), ('R_B10', 960)])\n\nSCOPE\nFAIL the note distinguishes finite compilation from law selection :: \n\nACCOUNTING\nRAW_ROWS 101996\nCANONICAL_ORBITS 4414\nORBIT_SIZES Counter({24: 4181, 6: 185, 12: 42, 8: 4, 3: 2})\nARITY_HISTOGRAM Counter({5: 86616, 4: 5352, 2: 4518, 3: 4296, 6: 1088, 1: 126})\nINPUT_ROLES 153\nOUTPUT_ROLES 153\nALL_ROLES 153\nPORT_SYMBOLS 154\nINPUT_BITS 48\nOUTPUT_BITS 8\nFLAT_PROGRAM_BITS 5711776\nFULL_TRIE_NODES 1240739\nPATRICIA_TOTAL_NODES 203991\nUNIQUE_PREFIX_LENGTHS (11, 48, 40.26058865053532)\nRAW_SERIAL_BYTES 713972\nRAW_ZLIB_BYTES 301507\nCANONICAL_SERIAL_BYTES 30898\nCANONICAL_ZLIB_BYTES 12940\nOUTPUT_ROLES_USED 153\nPASS 15 FAIL 2\nRESULT CYCLE185_NEEDS_REPAIR\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T021411Z",
+  "at_utc": "20260919T022040Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b65107d4 differs from the current HEAD b7ea7aad (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL Cycle-185 review note exists ::'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T022040Z"
  }
 }

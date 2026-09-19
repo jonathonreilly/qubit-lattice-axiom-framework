@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-beyond-the-union-bound-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j5777",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/beyond-the-union-bound/referee_w-jonathonsmac4f50-j5777/check.py",
+ "seed": 96058,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "487ed5c1",
+ "started_utc": "20260919T053418Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 4 - the no-go for inclusion-exclusion on the CYLINDERS is asserted, not proved: steps 1-3 (disjoint A_h, IE on them vacuous, order-2 truncation a lower bound) hold and the census re-derives (308 patterns, 234 ones, P = 0.19208), but the union bound sums over cylinders, and a valid second-order UPPER bound on them exists (Hunter): on the depth-2 cone it gives 0.23640 against the first-order 0.32810 (exact union 0.19208), so second-order IE on cylinders does cut the count here; whether it moves the 4/27 radius is not decided by the attempt's argument (a constant at one (eps1, eps2) and the claim that the radius 'is independent of those overlaps'); the Chung-Erdos check uses the diagonal-only quotient 9.089, not a bound, and Chung-Erdos is a lower bound in any case; the attempt's order-2 truncation 0.139484 treats a site that is a seed in one cylinder and amplified in another as making the cylinders disjoint (U < eps1 satisfies both), so its overlap sum is too small: with the intersections computed correctly the truncation is 0.007041 on the note's 92 trees (the attempt's own explainer gave 96 keys and S1 = 0.32658)"
+ },
+ "review": "Census re-derived (308 patterns, 234 ones, P = 0.19208) and steps 1-3 hold, but step 4's no-go on cylinder inclusion-exclusion is only asserted: with the note's own construction on the depth-2 cone, Hunter's valid second-order upper bound is 0.2364 against the first-order 0.3281 (exact union 0.19208); the attempt's order-2 truncation 0.1395 wrongly drops seed/amplified-overlapping pairs (correct 0.00704), and its Chung-Erdos number (9.09) is a diagonal-only quotient, not a bound: fails at step 4.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:beyond-the-union-bound:a1/; its files are probes/work/derive/beyond-the-union-bound/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/beyond-the-union-bound/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "4a1cd80d78a9c441961dcdb509a42018ee0b682b7abba460ac857bd8be7f2b5a",
+ "stdout_tail": " C_h) = 0.192080; order-2 truncation S1 - S2 = 0.007041 (lower bound: True); Hunter second-order UPPER bound = 0.236400 (valid: True; 0.721 of S1); P(eta'_x = 1) = 0.192080 <= P(union) True\nR3 (sum w)^2 / sum w^2 (diagonal only) = 9.08896 (not a bound; exceeds 1); the Chung-Erdos LOWER bound with the full double sum = 0.164611 <= P(union) True\nSUMMARY: fails at step 4 - the no-go for inclusion-exclusion on the CYLINDERS is asserted, not proved: steps 1-3 (disjoint A_h, IE on them vacuous, order-2 truncation a lower bound) hold and the census re-derives (308 patterns, 234 ones, P = 0.19208), but the union bound sums over cylinders, and a valid second-order UPPER bound on them exists (Hunter): on the depth-2 cone it gives 0.23640 against the first-order 0.32810 (exact union 0.19208), so second-order IE on cylinders does cut the count here; whether it moves the 4/27 radius is not decided by the attempt's argument (a constant at one (eps1, eps2) and the claim that the radius 'is independent of those overlaps'); the Chung-Erdos check uses the diagonal-only quotient 9.089, not a bound, and Chung-Erdos is a lower bound in any case; the attempt's order-2 truncation 0.139484 treats a site that is a seed in one cylinder and amplified in another as making the cylinders disjoint (U < eps1 satisfies both), so its overlap sum is too small: with the intersections computed correctly the truncation is 0.007041 on the note's 92 trees (the attempt's own explainer gave 96 keys and S1 = 0.32658)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5777",
+  "at_utc": "20260919T053421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8178",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block34-sphere",
+ "worker": "w-macbookpro90c72-jd6f9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8178/quantifier_phi_identity_every_k.py",
+ "seed": 91159,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0ddba73",
+ "started_utc": "20260919T041239Z",
+ "elapsed_s": 8.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "QUANTIFIER SCOPE (PR #8178): T1 1-|\u03c6|\u00b2=(4/9)[sin\u00b2(k1/2)+\u2026] holds identically in real k and on every mode of L=2..16 with |\u03c6|<1 off zero; A(\u03ba)\u2208(0,1) so \u03c4_L=3\u03b2L\u00b2/A(3\u03b2) is finite for every \u03b2>0; pattern has purchase (known \u03c6-conjugation and D1 1.165 not re-claimed)"
+ },
+ "review": "QUANTIFIER SCOPE: T1 1-|\u03c6|\u00b2 identity holds for all real k and every mode L=2..16; A(\u03ba)\u2208(0,1); known conjugation/D1 not re-found.",
+ "what": "PR #8178 (ail34: the torus memory time of the sphere formation law \u2014 t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917; git show origin/physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917:<note>. Create probes/work/pr8178/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8178/<script>.py\"",
+ "stdout_sha256": "6d30427e6b82203e03b642de0d5f32f77c4857a9aca00ba009f5b2e2a4ddd511",
+ "stdout_tail": "also = (2/9)(3-cos k1-cos k2-cos(k1-k2))\n== every mode of L=2..16: |\u03c6|<1 off zero, identity holds ==\n  L=2: nonzero=3 ident_fail=0 max_u=0.111111111111\n  L=3: nonzero=8 ident_fail=0 max_u=0.333333333333\n  L=4: nonzero=15 ident_fail=0 max_u=0.555555555556\n  L=5: nonzero=24 ident_fail=0 max_u=0.692896441944\n  L=6: nonzero=35 ident_fail=0 max_u=0.777777777778\n  L=7: nonzero=48 ident_fail=0 max_u=0.832662134159\n  L=8: nonzero=63 ident_fail=0 max_u=0.869825236083\n  L=9: nonzero=80 ident_fail=0 max_u=0.896019752497\n  L=10: nonzero=99 ident_fail=0 max_u=0.915118664167\n  L=11: nonzero=120 ident_fail=0 max_u=0.929446014592\n  L=12: nonzero=143 ident_fail=0 max_u=0.940455735015\n  L=13: nonzero=168 ident_fail=0 max_u=0.949091566957\n  L=14: nonzero=195 ident_fail=0 max_u=0.955986163512\n  L=15: nonzero=224 ident_fail=0 max_u=0.961575758952\n  L=16: nonzero=255 ident_fail=0 max_u=0.966168681116\n== A(\u03ba)\u2208(0,1) for \u03ba>0 so \u03c4_L finite at every \u03b2>0 ==\n  A(1/100)=0.0033333111113227492064\n  A(1/10)=0.033311132253989610145\n  A(1)=0.31303528549933130364\n  A(3)=0.67163648998035583776\n  A(6)=0.83334562183354314455\n  A(12)=0.91666666674216935755\n  A(24)=0.95833333333333333334\n  A(48)=0.97916666666666666667\n  A(100)=0.99000000000000000000\nSUMMARY: QUANTIFIER SCOPE (PR #8178): T1 1-|\u03c6|\u00b2=(4/9)[sin\u00b2(k1/2)+\u2026] holds identically in real k and on every mode of L=2..16 with |\u03c6|<1 off zero; A(\u03ba)\u2208(0,1) so \u03c4_L=3\u03b2L\u00b2/A(3\u03b2) is finite for every \u03b2>0; pattern has purchase (known \u03c6-conjugation and D1 1.165 not re-claimed)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd6f9",
+  "at_utc": "20260919T041255Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

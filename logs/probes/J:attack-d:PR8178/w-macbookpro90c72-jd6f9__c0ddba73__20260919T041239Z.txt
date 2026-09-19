@@ -1,0 +1,29 @@
+symbolic 1-|φ|² − (4/9)[sin²…] = 0
+  also = (2/9)(3-cos k1-cos k2-cos(k1-k2))
+== every mode of L=2..16: |φ|<1 off zero, identity holds ==
+  L=2: nonzero=3 ident_fail=0 max_u=0.111111111111
+  L=3: nonzero=8 ident_fail=0 max_u=0.333333333333
+  L=4: nonzero=15 ident_fail=0 max_u=0.555555555556
+  L=5: nonzero=24 ident_fail=0 max_u=0.692896441944
+  L=6: nonzero=35 ident_fail=0 max_u=0.777777777778
+  L=7: nonzero=48 ident_fail=0 max_u=0.832662134159
+  L=8: nonzero=63 ident_fail=0 max_u=0.869825236083
+  L=9: nonzero=80 ident_fail=0 max_u=0.896019752497
+  L=10: nonzero=99 ident_fail=0 max_u=0.915118664167
+  L=11: nonzero=120 ident_fail=0 max_u=0.929446014592
+  L=12: nonzero=143 ident_fail=0 max_u=0.940455735015
+  L=13: nonzero=168 ident_fail=0 max_u=0.949091566957
+  L=14: nonzero=195 ident_fail=0 max_u=0.955986163512
+  L=15: nonzero=224 ident_fail=0 max_u=0.961575758952
+  L=16: nonzero=255 ident_fail=0 max_u=0.966168681116
+== A(κ)∈(0,1) for κ>0 so τ_L finite at every β>0 ==
+  A(1/100)=0.0033333111113227492064
+  A(1/10)=0.033311132253989610145
+  A(1)=0.31303528549933130364
+  A(3)=0.67163648998035583776
+  A(6)=0.83334562183354314455
+  A(12)=0.91666666674216935755
+  A(24)=0.95833333333333333334
+  A(48)=0.97916666666666666667
+  A(100)=0.99000000000000000000
+SUMMARY: QUANTIFIER SCOPE (PR #8178): T1 1-|φ|²=(4/9)[sin²(k1/2)+…] holds identically in real k and on every mode of L=2..16 with |φ|<1 off zero; A(κ)∈(0,1) so τ_L=3βL²/A(3β) is finite for every β>0; pattern has purchase (known φ-conjugation and D1 1.165 not re-claimed)

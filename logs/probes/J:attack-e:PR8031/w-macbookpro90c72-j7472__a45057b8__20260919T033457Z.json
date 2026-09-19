@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8031",
+ "type": "judgment",
+ "lane": "finite-transporter-block41-20260907",
+ "worker": "w-macbookpro90c72-j7472",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8031/adversarial_no_sample.py",
+ "seed": 88897,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a45057b8",
+ "started_utc": "20260919T033457Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: unitarity/PW defect bounds are proofs, not sampling conjectures"
+ },
+ "review": "No sampled never/always claim; pattern has no purchase",
+ "what": "PR #8031 ([physics-loop] finite-transporter block41 conditional-suppor): attack GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-transporter-block41-20260907; git show origin/codex/finite-transporter-block41-20260907:<note>. Create probes/work/pr8031/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8031/<script>.py\"",
+ "stdout_sha256": "0828926667f86fd835d098e06d7b10a69e30ee7b355cb123d7954bd63c1b2033",
+ "stdout_tail": "no sampled never/always claim on the finite-transporter PW-defect note\nSUMMARY: pattern has no purchase on this note: unitarity/PW defect bounds are proofs, not sampling conjectures\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7472",
+  "at_utc": "20260919T033457Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

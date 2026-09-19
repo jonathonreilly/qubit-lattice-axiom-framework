@@ -1,0 +1,7 @@
+|I|=1 t0=0 M=(0,0,0) bound=1 dead_at=1 counts=[1, 0, 0, 0]
+|I|=6 t0=0 M=(5,0,0) bound=6 dead_at=1 counts=[6, 0, 0, 0, 0, 0, 0, 0, 0]
+|I|=9 t0=0 M=(2,2,0) bound=5 dead_at=3 counts=[9, 4, 1, 0, 0, 0, 0, 0]
+|I|=8 t0=0 M=(1,1,1) bound=4 dead_at=3 counts=[8, 4, 1, 0, 0, 0, 0]
+|I|=6 t0=5 M=(5,5,0) bound=6 dead_at=6 counts=[6, 5, 4, 3, 2, 1, 0, 0, 0]
+|I|=15 t0=4 M=(4,4,4) bound=9 dead_at=9 counts=[15, 18, 19, 18, 15, 10, 6, 3, 1, 0, 0, 0]
+SUMMARY: pattern has no purchase on this note beyond the known S1 iff HIT — S2's M1+M2+M3-t0+1 bound holds on six extra islands (origin, line, 3x3 square, 2-cube, 6-site level line, 15-site simplex)

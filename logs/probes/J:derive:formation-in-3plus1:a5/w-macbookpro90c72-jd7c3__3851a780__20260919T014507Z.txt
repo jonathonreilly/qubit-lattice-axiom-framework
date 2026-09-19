@@ -1,0 +1,22 @@
+CHECK PASS: U.1a four distinct predecessors
+CHECK PASS: U.1b no reverse edges (DAG: x not a predecessor of any predecessor)
+CHECK PASS: U.1c every predecessor has level(x)-1
+CHECK PASS: F.1 |phi|(0)=1
+CHECK PASS: I.1 cosine identity for |phi|^2
+CHECK PASS: F.2 phi is not real at k=(pi/2,0,0)
+CHECK PASS: F.5 phi(pi/2,0,0)=(3+i)/4
+CHECK PASS: F.3 1/(1-phi) is not real at that mode
+CHECK PASS: F.4 1/(1-|phi|^2) is real and differs from 1/(1-phi)  R=2 + 2*I C=8/3
+CHECK PASS: F.6 C=8/3, R=2(1+i)
+CHECK PASS: F.7 R/C=(3/4)(1+i) is not real  R/C=3/4 + 3*I/4
+CHECK PASS: F.8 Im(R/C) != 0 so R is not a real multiple of C
+CHECK PASS: D.1 d phi/d k_j |0 = i/4 (drift (1,1,1)/4)  [I/4, I/4, I/4]
+CHECK PASS: D.2 centroid of {0,e1,e2,e3} with equal weights is (1,1,1)/4  (1/4, 1/4, 1/4)
+CHECK PASS: I.2a grad(1-|phi|^2)|0 = 0  [0, 0, 0]
+CHECK PASS: I.2b grad(1-phi)|0 = -i(1,1,1)/4 != 0  [-I/4, -I/4, -I/4]
+CHECK PASS: S.1 symmetric 7-stencil phi is real (Im identically 0)
+CHECK PASS: S.2 phi_s(pi/2,0,0)=5/7
+CHECK PASS: S.3 R_s=7/2, C_s=49/24, R/C=12/7=1+phi (real multiple)  R=7/2 C=49/24 R/C=12/7
+CHECKS: PASS=19 FAIL=0
+SUMMARY: PARTIAL the 3+1 backward 4-predecessor kernel is a DAG (not undirected), so phi is not identically real and fluctuation-dissipation fails: at k=(pi/2,0,0), phi=(3+i)/4, |phi|^2=5/8, the static response 1/(1-phi)=2(1+i) is not a real multiple of the covariance 1/(1-|phi|^2)=8/3 (R/C=(3/4)(1+i)). Drift is (1,1,1)/4; grad(1-phi)|0 != 0 while grad(1-|phi|^2)|0 = 0. Contrast: the control's symmetric 7-stencil at the same mode has real phi=5/7 and R/C=12/7=1+phi. Sphere LRO is not proved. This is not the linear dichotomy/Green of grok a1/a4 or the MF 3/4 envelope of a6.
+HIT: 3+1 backward formation is irreversible; at mode (pi/2,0,0) phi=(3+i)/4, covariance symbol 8/3 versus causal response 2(1+i), ratio (3/4)(1+i) not real. A gravity node that reads the covariance sees a 3d Green function at small k; one that reads the linear response sees a complex directed kernel with drift (1,1,1)/4 per level. Symmetric 7-stencil contrast: R/C real. Sphere LRO not proved.

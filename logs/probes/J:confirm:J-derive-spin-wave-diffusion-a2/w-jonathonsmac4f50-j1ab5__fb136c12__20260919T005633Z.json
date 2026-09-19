@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-spin-wave-diffusion-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j1ab5",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/spin-wave-diffusion/referee_w-jonathonsmac4f50-j1ab5/check.py",
+ "seed": 79393,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fb136c12",
+ "started_utc": "20260919T005633Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 3 - step 3 (marked PROVED 'using a3's step 3') needs D_1 L^2/sigma^2 = 1/(E|M|)^2 + o(1) for the nonlinear law, which is a3's step 5, marked not closed by a3 (fluctuating kappa_x, |M| inside 1/|M|^2, Ito terms); a3's step 3 is only the Jacobian of x/|x|. Step 2's identification of the nonlinear |M| with the linearized 1 - sigma^2 G_L is ASSUMED (declared). The stated error terms O(sigma^2 G_L^2, 1/N) are of the order of the claimed first correction at fixed L (V4, V5), so even granted they would not give 'ratio -> 1 with first correction 2 sigma^2 G_L'. Verified independently: G_4 = 189/128 (Fourier and real space), G_8 = 2.06669, G_16 = 2.64427, the predicted ratios; the executed table is at L = 16, where 1 - sigma^2 G_16 is within 0.02 of the measured |m| (evidence, not proof)"
+ },
+ "review": "Referee of spin-wave-diffusion a2 (grok-4.6): independent checks pass 5 of 5 (G_4 = 189/128 by the Fourier sum and by an exact real-space Lyapunov solve, G_8/G_16/G_32/G_64 at 30 digits, the predicted ratios, the error terms against the claimed correction, the exact L = 1 ratio 1/A(3 beta)), so the finite facts hold, but the attempt fails at step 3: it imports a3's unclosed identification D L^2/sigma^2 = 1/(E|M|)^2 as proved, and its error terms are of the order of the first correction it claims; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:spin-wave-diffusion:a2/; its files are probes/work/derive/spin-wave-diffusion/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/spin-wave-diffusion/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "08531ecb3dd5d434f44769c9347c3071d1bd0f54df90578a6aca8f93c3c1db78",
+ "stdout_tail": "io -> 1 nor the coefficient 2 G_L\nPASS: V5 L = 1 (G_1 = 0, so the attempt's formula gives exactly 1): the exact one-step ratio (1 - A(3beta))/sigma^2 equals 1/A(3beta) up to e^{-6beta} and its first correction is sigma^2, not 2 sigma^2 G_1 = 0: the O(1/N) term the statement carries is itself first order in sigma^2. beta=6: ratio = 1.0588235 = 1/A(3beta), (ratio - 1)/sigma^2 = 1.1211; beta=12: ratio = 1.0285714 = 1/A(3beta), (ratio - 1)/sigma^2 = 1.058; beta=24: ratio = 1.0140845 = 1/A(3beta), (ratio - 1)/sigma^2 = 1.0284; beta=48: ratio = 1.006993 = 1/A(3beta), (ratio - 1)/sigma^2 = 1.014; beta=96: ratio = 1.0034843 = 1/A(3beta), (ratio - 1)/sigma^2 = 1.007\nTOTAL: PASS=5 FAIL=0\nSUMMARY: fails at step 3 - step 3 (marked PROVED 'using a3's step 3') needs D_1 L^2/sigma^2 = 1/(E|M|)^2 + o(1) for the nonlinear law, which is a3's step 5, marked not closed by a3 (fluctuating kappa_x, |M| inside 1/|M|^2, Ito terms); a3's step 3 is only the Jacobian of x/|x|. Step 2's identification of the nonlinear |M| with the linearized 1 - sigma^2 G_L is ASSUMED (declared). The stated error terms O(sigma^2 G_L^2, 1/N) are of the order of the claimed first correction at fixed L (V4, V5), so even granted they would not give 'ratio -> 1 with first correction 2 sigma^2 G_L'. Verified independently: G_4 = 189/128 (Fourier and real space), G_8 = 2.06669, G_16 = 2.64427, the predicted ratios; the executed table is at L = 16, where 1 - sigma^2 G_16 is within 0.02 of the measured |m| (evidence, not proof)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1ab5",
+  "at_utc": "20260919T005634Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

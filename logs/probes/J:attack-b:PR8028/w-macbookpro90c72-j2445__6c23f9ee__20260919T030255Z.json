@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8028",
+ "type": "judgment",
+ "lane": "static-uniform-block38-20260907",
+ "worker": "w-macbookpro90c72-j2445",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8028/attack_b_two_sided_bounds.py",
+ "seed": 86975,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6c23f9ee",
+ "started_utc": "20260919T030255Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (b) SAME TEST BOTH SIDES \u2014 v=0 geodesic energy equals the all-coupling upper bound 4L/a and the small-r lower bound at r=0; the same Casimir test gives 0 on the trivial irrep and \u22654/a off it; attack does not fire"
+ },
+ "review": "Pattern (b): v=0 geodesic energy meets both 4L/a sides; Casimir 0 vs \u22654/a; attack does not fire",
+ "what": "PR #8028 ([physics-loop] static-uniform block38 conditional-support): attack GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-uniform-block38-20260907; git show origin/codex/static-uniform-block38-20260907:<note>. Create probes/work/pr8028/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8028/<script>.py\"",
+ "stdout_sha256": "ef1f4193edcc0b2c4484f998980d5210a6cc8cb4712c2509df8c2cd31beee9a8",
+ "stdout_tail": "OK: at v=0 the same 4L/a is both the geodesic energy and the stated upper bound (L=4)\nOK: v=0, r=0: lower=upper=4L/a under the same energy test\nOK: same Casimir test: trivial 0, fundamental 4\u22654, adjoint 9\u22654\nOK: interior Z^3 vertex has 6 NN (cubic graph of the note)\nSUMMARY: pattern (b) SAME TEST BOTH SIDES \u2014 v=0 geodesic energy equals the all-coupling upper bound 4L/a and the small-r lower bound at r=0; the same Casimir test gives 0 on the trivial irrep and \u22654/a off it; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2445",
+  "at_utc": "20260919T030255Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

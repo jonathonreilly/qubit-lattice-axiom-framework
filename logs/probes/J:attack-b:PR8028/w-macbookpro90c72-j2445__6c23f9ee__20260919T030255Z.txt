@@ -1,0 +1,5 @@
+OK: at v=0 the same 4L/a is both the geodesic energy and the stated upper bound (L=4)
+OK: v=0, r=0: lower=upper=4L/a under the same energy test
+OK: same Casimir test: trivial 0, fundamental 4≥4, adjoint 9≥4
+OK: interior Z^3 vertex has 6 NN (cubic graph of the note)
+SUMMARY: pattern (b) SAME TEST BOTH SIDES — v=0 geodesic energy equals the all-coupling upper bound 4L/a and the small-r lower bound at r=0; the same Casimir test gives 0 on the trivial irrep and ≥4/a off it; attack does not fire

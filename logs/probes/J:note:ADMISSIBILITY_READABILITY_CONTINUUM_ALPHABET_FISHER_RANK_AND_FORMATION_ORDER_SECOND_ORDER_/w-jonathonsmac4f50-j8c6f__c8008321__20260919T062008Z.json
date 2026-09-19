@@ -1,0 +1,32 @@
+{
+ "task": "J:note:ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_",
+ "type": "judgment",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-j8c6f",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ADMISSIBILITY_READABILITY_CONTINUUM_ALPH/fisher_theorem1_quadrature_windows.py",
+ "seed": 98808,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8008321",
+ "started_utc": "20260919T062008Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier 'a continuum Fisher entry differs from Theorem 1 on a finite window' does not fire beyond the note's windows: on P4, a plus shape, 3x3, 2x2x3, 3x3x2 and an irregular 3D window the pair-assembled covariance (exact sphere quadrature) equals Theorem 1's closed form to 3.6e-15, with rank 6 on every window"
+ },
+ "review": "Theorem 1 falsifier checked beyond the note's 2x3 and 2x2x2 windows with disjoint machinery (exact product quadrature on S^2, pair-by-pair assembly): on P4, a plus shape, 3x3, 2x2x3, 3x3x2 and an irregular 7-site 3D window the continuum Fisher matrix equals the closed form (|E|/(2i+1), |E|/9, 16n/525) to 3.6e-15, rank 6 everywhere; no fire.",
+ "what": "Note on main: docs/ADMISSIBILITY_READABILITY_CONTINUUM_ALPHABET_FISHER_RANK_AND_FORMATION_ORDER_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-13.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADMISSIBILITY_READABILITY_CONTINUUM_ALPH/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADMISSIBILITY_READABILITY_CONTINUUM_ALPH/<script>.py\"",
+ "stdout_sha256": "734e2098bc925cf726890eb707246813653a8d91fd99d9f02740d139e9e404e8",
+ "stdout_tail": "quadrature: E[x^8] = 1/9 and E[x^4 y^4] = 1/105 to 1e-13: True\nP4: n = 4, |E| = 3, wedges 2: max |I - Theorem 1| = 1.67e-16; rank 6; diag ['1', '3/5', '3/7', '1/3', '1/3', '64/525'], I[P1,S1] = 1/3\nplus5: n = 5, |E| = 4, wedges 6: max |I - Theorem 1| = 2.22e-16; rank 6; diag ['4/3', '4/5', '4/7', '4/9', '4/9', '16/105'], I[P1,S1] = 4/9\n3x3: n = 9, |E| = 12, wedges 22: max |I - Theorem 1| = 8.88e-16; rank 6; diag ['4', '12/5', '12/7', '4/3', '4/3', '48/175'], I[P1,S1] = 4/3\n2x2x3: n = 12, |E| = 20, wedges 48: max |I - Theorem 1| = 1.78e-15; rank 6; diag ['20/3', '4', '20/7', '20/9', '20/9', '64/175'], I[P1,S1] = 20/9\n3x3x2: n = 18, |E| = 33, wedges 92: max |I - Theorem 1| = 3.55e-15; rank 6; diag ['11', '33/5', '33/7', '11/3', '11/3', '96/175'], I[P1,S1] = 11/3\nirregular7: n = 7, |E| = 7, wedges 8: max |I - Theorem 1| = 4.44e-16; rank 6; diag ['7/3', '7/5', '1', '7/9', '7/9', '16/75'], I[P1,S1] = 7/9\nSUMMARY: falsifier 'a continuum Fisher entry differs from Theorem 1 on a finite window' does not fire beyond the note's windows: on P4, a plus shape, 3x3, 2x2x3, 3x3x2 and an irregular 3D window the pair-assembled covariance (exact sphere quadrature) equals Theorem 1's closed form to 3.6e-15, with rank 6 on every window\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8c6f",
+  "at_utc": "20260919T062009Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

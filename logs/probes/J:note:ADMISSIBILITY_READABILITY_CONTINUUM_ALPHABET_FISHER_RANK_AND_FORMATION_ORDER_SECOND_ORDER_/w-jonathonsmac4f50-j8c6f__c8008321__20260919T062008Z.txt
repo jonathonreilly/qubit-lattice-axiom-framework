@@ -1,0 +1,8 @@
+quadrature: E[x^8] = 1/9 and E[x^4 y^4] = 1/105 to 1e-13: True
+P4: n = 4, |E| = 3, wedges 2: max |I - Theorem 1| = 1.67e-16; rank 6; diag ['1', '3/5', '3/7', '1/3', '1/3', '64/525'], I[P1,S1] = 1/3
+plus5: n = 5, |E| = 4, wedges 6: max |I - Theorem 1| = 2.22e-16; rank 6; diag ['4/3', '4/5', '4/7', '4/9', '4/9', '16/105'], I[P1,S1] = 4/9
+3x3: n = 9, |E| = 12, wedges 22: max |I - Theorem 1| = 8.88e-16; rank 6; diag ['4', '12/5', '12/7', '4/3', '4/3', '48/175'], I[P1,S1] = 4/3
+2x2x3: n = 12, |E| = 20, wedges 48: max |I - Theorem 1| = 1.78e-15; rank 6; diag ['20/3', '4', '20/7', '20/9', '20/9', '64/175'], I[P1,S1] = 20/9
+3x3x2: n = 18, |E| = 33, wedges 92: max |I - Theorem 1| = 3.55e-15; rank 6; diag ['11', '33/5', '33/7', '11/3', '11/3', '96/175'], I[P1,S1] = 11/3
+irregular7: n = 7, |E| = 7, wedges 8: max |I - Theorem 1| = 4.44e-16; rank 6; diag ['7/3', '7/5', '1', '7/9', '7/9', '16/75'], I[P1,S1] = 7/9
+SUMMARY: falsifier 'a continuum Fisher entry differs from Theorem 1 on a finite window' does not fire beyond the note's windows: on P4, a plus shape, 3x3, 2x2x3, 3x3x2 and an irregular 3D window the pair-assembled covariance (exact sphere quadrature) equals Theorem 1's closed form to 3.6e-15, with rank 6 on every window

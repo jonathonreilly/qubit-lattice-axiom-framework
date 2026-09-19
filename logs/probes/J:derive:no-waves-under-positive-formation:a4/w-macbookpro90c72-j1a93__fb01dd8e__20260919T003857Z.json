@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:no-waves-under-positive-formation:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j1a93",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/no-waves-under-positive-formation/w-macbookpro90c72-j1a93/check.py",
+ "seed": 78337,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fb01dd8e",
+ "started_utc": "20260919T003857Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL - positive finite-predecessor gain-one linear formation is drift+diffusion, never a c|k| wave; exception is negative or non-real weights"
+ },
+ "review": "PARTIAL: positive gain-one linear formation is drift+diffusion; NEC Sigma matches block 35 M; |lambda|=1 only at k=0; negative weights can oscillate",
+ "what": "DERIVATION, independent attempt 4 of 4: Diffusion is forced: no propagating mode in any positive-weight formation law, or the exception. Every linear kernel found so far under the formation reading is diffusive: a mode decays per level like 1 - D k^2, against the comparator's Green function whose transfer along a direction decays like |k| (README section 8; block 35, PR #8180). A theory of gravity and light needs propagating, not only diffusing, disturbances. TASK: for gain-one linear formation models with positive weights over finitely many earlier levels and a finite predecessor set, prove that the multiplier lambda(k) nearest 1 has the form 1 + i v.k - D(k) with D a positive-definite quadratic form (so: drift plus diffusion, never a wave |lambda| = 1 with arg lambda = c|k|), or exhibit the exception; then identify the weakest change that WOULD give waves (a record formed from two earlier levels with a negative weight is excluded by positivity; a complex or spinor-valued record with unitary overlap weights; a conserved quantity), and state what each costs in terms of the axiom (positivity of overlap weights, the menu, the record being real). Deliver the theorem with its hypotheses and the exact finite checks of the dispersion relations used. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/no-waves-under-positive-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/no-waves-under-positive-formation/<name>/check.py\"",
+ "stdout_sha256": "adc979b537c492e6da2090ccce67eca05d31737368083f123a496aa80d19252e",
+ "stdout_tail": "D1 NEC expansion vs 1 - i mu.k - (1/2) k^T Sigma k:\n  Sigma eigenvalues {1/3: 1, 1/9: 1} (want 1/3 and 1/9)\n  1-|phi|^2 vs k^T Sigma k along e1: t^2 coeff 2/9 vs 2/9 eq True\n  1-|phi|^2 vs k^T Sigma k along diag: t^2 coeff 2/9 vs 2/9 eq True\n  1-|phi|^2 vs k^T Sigma k along anti: t^2 coeff 2/3 vs 2/3 eq True\nD1b |phi|<=1 on a torus grid L=8, equality only at 0:\n  max |phi|=1.000000000000 n_|phi|=1 1 (want 1, the zero mode)\nD2 arg phi is linear in k, not in |k|:\n  |arg+mu.k|/|k|^3 mean 0.0081 max 0.0143\n  |arg|/|k| min 0.0093 max 0.4714 (not constant)\nD3 two-level z^2 = (2/3) e^{-i k} z + 1/3, branch z(0)=1:\n  z(0)=(1+0j)\n  two-level spectral radius max 1.000000000000 (want <=1)\nD4 exception: negative weight (2,-1) on {0,1}:\n  |lambda| min 1.0000 max 2.9997 at k=pi 3.0000\nHIT: gain-one positive one-level formation has lambda(k)=sum w_j e^{-ik.v_j}, |lambda|<=1 with small-k form 1 - i mu.k - (1/2) k^T Sigma k, Sigma=Cov(v) PSD (NEC Sigma=(1/9)[[2,-1],[-1,2]] eigenvalues 1/3,1/9; 1-|phi|^2 = k^T Sigma k + O(k^4)); arg is linear in k not |k|; two-level positive companion has spectral radius <=1; negative weights can give |lambda|=3 at k=pi\nSUMMARY: PARTIAL - positive finite-predecessor gain-one linear formation is drift+diffusion, never a c|k| wave; exception is negative or non-real weights\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1a93",
+  "at_utc": "20260919T003903Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "PARTIAL: positive gain-one linear formation is drift+diffusion, never a c|k| wave",
+  "by": "w-macbookpro90c72-j1a93",
+  "at_utc": "20260919T003903Z"
+ }
+}

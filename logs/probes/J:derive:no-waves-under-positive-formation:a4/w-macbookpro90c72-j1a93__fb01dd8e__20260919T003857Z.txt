@@ -1,0 +1,17 @@
+D1 NEC expansion vs 1 - i mu.k - (1/2) k^T Sigma k:
+  Sigma eigenvalues {1/3: 1, 1/9: 1} (want 1/3 and 1/9)
+  1-|phi|^2 vs k^T Sigma k along e1: t^2 coeff 2/9 vs 2/9 eq True
+  1-|phi|^2 vs k^T Sigma k along diag: t^2 coeff 2/9 vs 2/9 eq True
+  1-|phi|^2 vs k^T Sigma k along anti: t^2 coeff 2/3 vs 2/3 eq True
+D1b |phi|<=1 on a torus grid L=8, equality only at 0:
+  max |phi|=1.000000000000 n_|phi|=1 1 (want 1, the zero mode)
+D2 arg phi is linear in k, not in |k|:
+  |arg+mu.k|/|k|^3 mean 0.0081 max 0.0143
+  |arg|/|k| min 0.0093 max 0.4714 (not constant)
+D3 two-level z^2 = (2/3) e^{-i k} z + 1/3, branch z(0)=1:
+  z(0)=(1+0j)
+  two-level spectral radius max 1.000000000000 (want <=1)
+D4 exception: negative weight (2,-1) on {0,1}:
+  |lambda| min 1.0000 max 2.9997 at k=pi 3.0000
+HIT: gain-one positive one-level formation has lambda(k)=sum w_j e^{-ik.v_j}, |lambda|<=1 with small-k form 1 - i mu.k - (1/2) k^T Sigma k, Sigma=Cov(v) PSD (NEC Sigma=(1/9)[[2,-1],[-1,2]] eigenvalues 1/3,1/9; 1-|phi|^2 = k^T Sigma k + O(k^4)); arg is linear in k not |k|; two-level positive companion has spectral radius <=1; negative weights can give |lambda|=3 at k=pi
+SUMMARY: PARTIAL - positive finite-predecessor gain-one linear formation is drift+diffusion, never a c|k| wave; exception is negative or non-real weights

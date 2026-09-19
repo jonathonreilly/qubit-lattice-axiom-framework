@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-plane-memory-loss-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jda79",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/plane-memory-loss/referee_w-jonathonsmac4f50-jda79/check.py",
+ "seed": 82722,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "187f1757",
+ "started_utc": "20260919T015202Z",
+ "elapsed_s": 5.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 2 - 'a spatially uniform rotation of the whole plane costs N k A(k)(1 - cos theta) per level, extensive in N and T', with 'Dirichlet form 0' for constant theta, does not hold: the kernel is O(3)-covariant, so a rotation constant in space and level time costs N k A(k)(1 - cos theta) once, at the level where it is switched on, and 0 at every later level; a per-level cost needs the angle to change from level to level, which is exactly the level-time Dirichlet form sum ||theta_{t+1} - P theta_t||^2 the step sets to 0. The on-site relative entropy of a twist is that form (to leading order), not a separate cost. Uniform twists are useless on the infinite plane only because N is infinite. Step 1's identity holds"
+ },
+ "review": "Referee of plane-memory-loss a2 (grok-4.6): independent quadrature checks pass 3 of 3 (the vMF relative-entropy identity at three points, the O(3) covariance of the kernel at 20 random points, the single-site chain's path relative entropy constant in T for a constant twist and linear in T for a cumulative one), so step 1 holds but the attempt fails at step 2: a twist constant in space and level time costs once, not per level, and the per-level cost it describes is exactly the level-time Dirichlet form it sets to 0; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:plane-memory-loss:a2/; its files are probes/work/derive/plane-memory-loss/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/plane-memory-loss/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a250f937def018b69d5b3f5d6c2a5606b9f0fdbfca3f7cb4ac2cbc6e10b4d944",
+ "stdout_tail": ".0, 0.25): 0.248700634837\nPASS: Q2 step 2: the rotated vMF law R_* vMF(k u) has the density of vMF(k R u) (20 random points, 20 digits): the kernel K(. | S) = vMF(beta S) is O(3)-covariant, so rotating every record of levels >= 1 by the same R leaves every conditional law of levels >= 2 unchanged; a twist constant in space and level time is paid only where it is switched on\nPASS: Q3 the single-site chain (S = 3s): the path relative entropy of the twist constant in level time is 3 beta A(3 beta)(1 - cos theta) for every T, that of the cumulative twist (theta per level) T times it: beta = 1.0: constant twist 0.24666006 for T = 1, 5, 50; cumulative twist T x 0.24666006; beta = 4.0: constant twist 1.3465918 for T = 1, 5, 50; cumulative twist T x 1.3465918\nSUMMARY: fails at step 2 - 'a spatially uniform rotation of the whole plane costs N k A(k)(1 - cos theta) per level, extensive in N and T', with 'Dirichlet form 0' for constant theta, does not hold: the kernel is O(3)-covariant, so a rotation constant in space and level time costs N k A(k)(1 - cos theta) once, at the level where it is switched on, and 0 at every later level; a per-level cost needs the angle to change from level to level, which is exactly the level-time Dirichlet form sum ||theta_{t+1} - P theta_t||^2 the step sets to 0. The on-site relative entropy of a twist is that form (to leading order), not a separate cost. Uniform twists are useless on the infinite plane only because N is infinite. Step 1's identity holds\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jda79",
+  "at_utc": "20260919T015208Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

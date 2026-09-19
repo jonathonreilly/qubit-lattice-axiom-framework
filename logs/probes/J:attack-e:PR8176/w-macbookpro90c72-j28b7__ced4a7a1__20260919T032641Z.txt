@@ -1,0 +1,11 @@
+chain |ones|=10 seeds=1 A=9 P=0 comp=10 min_cost=-9
+  round 1 |ones|=9 min_cost=-8
+  round 1 |ones|=8 min_cost=-7
+  round 1 |ones|=7 min_cost=-6
+  round 1 |ones|=6 min_cost=-5
+  round 1 |ones|=5 min_cost=-4
+  round 1 |ones|=4 min_cost=-3
+  round 1 |ones|=3 min_cost=-2
+  round 1 |ones|=2 min_cost=-1
+adversarial best min_cost(c=1)=-1 |ones|=2
+SUMMARY: pattern has no purchase on this note - greedy adversarial flips on a 3x3x6 window never produced a single-seed component with min(E-|A|)>0, so they do not refute the sampled c*=1 conjecture

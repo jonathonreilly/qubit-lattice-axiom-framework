@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8176",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block32-minima",
+ "worker": "w-macbookpro90c72-j28b7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8176/adversarial_cstar.py",
+ "seed": 88401,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ced4a7a1",
+ "started_utc": "20260919T032641Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - greedy adversarial flips on a 3x3x6 window never produced a single-seed component with min(E-|A|)>0, so they do not refute the sampled c*=1 conjecture"
+ },
+ "review": "greedy single-site and pairwise adversarial search on a 3x3x6 single-seed window never produced min(E-|A|)>0, so it does not refute the sampled c*=1 conjecture and the pattern has no purchase",
+ "what": "PR #8176 (ail32: the minimal marked tree \u2014 the counted family's consta): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917; git show origin/physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917:<note>. Create probes/work/pr8176/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8176/<script>.py\"",
+ "stdout_sha256": "7e7f4bc491784e3f68ddfc401a9dadf921606c1a5ea687a70aec8e869682e633",
+ "stdout_tail": "chain |ones|=10 seeds=1 A=9 P=0 comp=10 min_cost=-9\n  round 1 |ones|=9 min_cost=-8\n  round 1 |ones|=8 min_cost=-7\n  round 1 |ones|=7 min_cost=-6\n  round 1 |ones|=6 min_cost=-5\n  round 1 |ones|=5 min_cost=-4\n  round 1 |ones|=4 min_cost=-3\n  round 1 |ones|=3 min_cost=-2\n  round 1 |ones|=2 min_cost=-1\nadversarial best min_cost(c=1)=-1 |ones|=2\nSUMMARY: pattern has no purchase on this note - greedy adversarial flips on a 3x3x6 window never produced a single-seed component with min(E-|A|)>0, so they do not refute the sampled c*=1 conjecture\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j28b7",
+  "at_utc": "20260919T032641Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

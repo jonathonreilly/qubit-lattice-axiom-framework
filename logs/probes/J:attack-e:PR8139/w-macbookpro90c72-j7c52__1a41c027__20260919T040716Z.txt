@@ -1,0 +1,1 @@
+SUMMARY: SAMPLED EVIDENCE (PR #8139): eight-corner distinctness and G_κ Markov graph are exact identities/witnesses, not sampled never/always; pattern has no purchase

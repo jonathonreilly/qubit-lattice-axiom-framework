@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_DETERMINANT_MODE_TAIL_RUNG_THIRTEEN_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-jd196",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_DETERMINANT_MODE_T/mp40_peak_and_tail_to_beta4800.py",
+ "seed": 17649,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b946cb7f",
+ "started_utc": "20260919T113409Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "in 40-digit arithmetic the note's cases give g(2) = 2.09e-04..3.78e-04, g(3) = 7.20e-08..1.30e-07, implied rate 1.59..1.60, fixed-window tail 1.6e-02 -> 3.4e-01 and wrong-centre tail 0.27 (as printed); the peak sits EXACTLY at -round((p+2q)/3) on the note's cases (True) and on 48 cases to beta = 4800 (True); every mode term is nonnegative; beyond the note's float64 limit the tail stays uniform: g(2) = 4.47e-04..5.39e-04, g(3) = 1.59e-07..2.29e-07 at beta = 600..4800 (implied rate 1.55..1.59); g(2) rises from the note's ~3e-4 band to a ~5e-4 plateau, so the note-grid spread (1.8x) widens to 2.57x over beta = 48..4800 while staying bounded; no falsifier fires"
+ },
+ "review": "Read the script and its output: 40-digit mpmath determinants reproduce the note's g(2) = 2.09e-4..3.78e-4, g(3) = 7.20e-8..1.30e-7, implied rate 1.59..1.60, fixed-window tail 1.6e-2 -> 3.4e-1 and wrong-centre tail 0.27 vs 3.78e-4; the peak sits exactly at -round((p+2q)/3) on the note's cases (its runner only checks +-1) and on 48 cases to beta = 4800; every mode term is nonnegative; beyond the note's float64 limit the tail stays bounded, with g(2) = 4.5e-4..5.4e-4 and g(3) = 1.6e-7..2.3e-7 at beta = 600..4800 (implied rate 1.55..1.59), g(2) rising from the note's ~3e-4 band to a ~5e-4 plateau; no falsifier fires.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_DETERMINANT_MODE_TAIL_RUNG_THIRTEEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_DETERMINANT_MODE_T/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_DETERMINANT_MODE_T/<script>.py\"",
+ "stdout_sha256": "64c0f262945672888e9bc06880157afd754d58f7cca762624ece9a796fa4856b",
+ "stdout_tail": "232), (192, 14, 14): (-14, -14, 0.000348, 1.2e-07, 0.232), (300, 17, 8): (-11, -11, 0.000367, 1.23e-07, 0.338), (300, 17, 17): (-17, -17, 0.000378, 1.3e-07, 0.339)}\n     peaks exactly at -round((p+2q)/3): True; all mode terms nonnegative: True; g(2) range 2.09e-04..3.78e-04, g(3) 7.20e-08..1.30e-07, implied c 1.585..1.601; fixed-window tail 1.57e-02 -> 3.39e-01; wrong centre at (17,17,300): 0.272 vs 3.78e-04\n3. beyond (beta 600..4800): g(2), g(3) {(600, 24, 12): (0.000471, 1.9e-07), (600, 24, 24): (0.000478, 1.95e-07), (1200, 35, 17): (0.000447, 1.59e-07), (1200, 35, 35): (0.000451, 1.62e-07), (2400, 49, 24): (0.000539, 2.29e-07), (2400, 49, 49): (0.000539, 2.29e-07), (4800, 69, 34): (0.00049, 1.81e-07), (4800, 69, 69): (0.00049, 1.81e-07)}; peaks exact on the 48-case grid beta = 48..4800 (six weights each): True\nSUMMARY: in 40-digit arithmetic the note's cases give g(2) = 2.09e-04..3.78e-04, g(3) = 7.20e-08..1.30e-07, implied rate 1.59..1.60, fixed-window tail 1.6e-02 -> 3.4e-01 and wrong-centre tail 0.27 (as printed); the peak sits EXACTLY at -round((p+2q)/3) on the note's cases (True) and on 48 cases to beta = 4800 (True); every mode term is nonnegative; beyond the note's float64 limit the tail stays uniform: g(2) = 4.47e-04..5.39e-04, g(3) = 1.59e-07..2.29e-07 at beta = 600..4800 (implied rate 1.55..1.59); g(2) rises from the note's ~3e-4 band to a ~5e-4 plateau, so the note-grid spread (1.8x) widens to 2.57x over beta = 48..4800 while staying bounded; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd196",
+  "at_utc": "20260919T113422Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

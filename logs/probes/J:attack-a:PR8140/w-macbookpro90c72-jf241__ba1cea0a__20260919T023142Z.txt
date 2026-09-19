@@ -1,0 +1,6 @@
+4-cube vertices 16 (stated 16 for hypercube)
+edges 32 (32)
+square faces from origin-corners 24 (24)
+spanning tree 15 edges; cotree r=17 (stated 17)
+Z^3 NN is bipartite (no odd cycles / no triangles)
+SUMMARY: pattern has no purchase on this note - the four-cube witness exists: 16 vertices, 32 edges, 24 square faces, spanning-tree cotree r=17

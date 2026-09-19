@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8140",
+ "type": "judgment",
+ "lane": "clock-static-charge-20260915",
+ "worker": "w-macbookpro90c72-jf241",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8140/fourcube_witness.py",
+ "seed": 85102,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ba1cea0a",
+ "started_utc": "20260919T023142Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the four-cube witness exists: 16 vertices, 32 edges, 24 square faces, spanning-tree cotree r=17"
+ },
+ "review": "Four-cube witness exists: 16 verts, 32 edges, 24 faces, cotree r=17; pattern has no purchase",
+ "what": "PR #8140 ([physics-loop] clock-static-charge: bounded_theorem, bounded): attack CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md ... with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/clock-static-charge-20260915; git show origin/physics-loop/clock-static-charge-20260915:<note>. Create probes/work/pr8140/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8140/<script>.py\"",
+ "stdout_sha256": "8e1ab7f6972a784bc5cb319f919367684af7a13fcd103a4601b60ce959920ed9",
+ "stdout_tail": "4-cube vertices 16 (stated 16 for hypercube)\nedges 32 (32)\nsquare faces from origin-corners 24 (24)\nspanning tree 15 edges; cotree r=17 (stated 17)\nZ^3 NN is bipartite (no odd cycles / no triangles)\nSUMMARY: pattern has no purchase on this note - the four-cube witness exists: 16 vertices, 32 edges, 24 square faces, spanning-tree cotree r=17\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf241",
+  "at_utc": "20260919T023142Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,265 @@
+CHECKED E1.E-identity: E(q)=3(|1-phi e^{iw}|^2 + 1-u) with q=(w+k1,w+k2,w)
+CHECKED E1.one-minus-u: 1-u=(6-2cos k1-2cos k2-2cos(k1-k2))/9
+CHECKED E1.3d-embedding: e^{iw} phi = (e^{iq1}+e^{iq2}+e^{iq3})/3
+CHECKED E1.R-3d: R(k,w)=3/(3-sum_j e^{i q_j})
+CHECKED E2.multinomial-t0
+CHECKED E2.multinomial-t1
+CHECKED E2.multinomial-t2
+CHECKED E2.multinomial-t3
+CHECKED E2.multinomial-t5
+CHECKED E2.multinomial-t6
+CHECKED E2.DFT-t0-k00
+CHECKED E2.DFT-t0-k01
+CHECKED E2.DFT-t0-k02
+CHECKED E2.DFT-t0-k03
+CHECKED E2.DFT-t0-k10
+CHECKED E2.DFT-t0-k11
+CHECKED E2.DFT-t0-k12
+CHECKED E2.DFT-t0-k13
+CHECKED E2.DFT-t0-k20
+CHECKED E2.DFT-t0-k21
+CHECKED E2.DFT-t0-k22
+CHECKED E2.DFT-t0-k23
+CHECKED E2.DFT-t0-k30
+CHECKED E2.DFT-t0-k31
+CHECKED E2.DFT-t0-k32
+CHECKED E2.DFT-t0-k33
+CHECKED E2.DFT-t1-k00
+CHECKED E2.DFT-t1-k01
+CHECKED E2.DFT-t1-k02
+CHECKED E2.DFT-t1-k03
+CHECKED E2.DFT-t1-k10
+CHECKED E2.DFT-t1-k11
+CHECKED E2.DFT-t1-k12
+CHECKED E2.DFT-t1-k13
+CHECKED E2.DFT-t1-k20
+CHECKED E2.DFT-t1-k21
+CHECKED E2.DFT-t1-k22
+CHECKED E2.DFT-t1-k23
+CHECKED E2.DFT-t1-k30
+CHECKED E2.DFT-t1-k31
+CHECKED E2.DFT-t1-k32
+CHECKED E2.DFT-t1-k33
+CHECKED E2.DFT-t2-k00
+CHECKED E2.DFT-t2-k01
+CHECKED E2.DFT-t2-k02
+CHECKED E2.DFT-t2-k03
+CHECKED E2.DFT-t2-k10
+CHECKED E2.DFT-t2-k11
+CHECKED E2.DFT-t2-k12
+CHECKED E2.DFT-t2-k13
+CHECKED E2.DFT-t2-k20
+CHECKED E2.DFT-t2-k21
+CHECKED E2.DFT-t2-k22
+CHECKED E2.DFT-t2-k23
+CHECKED E2.DFT-t2-k30
+CHECKED E2.DFT-t2-k31
+CHECKED E2.DFT-t2-k32
+CHECKED E2.DFT-t2-k33
+CHECKED E2.DFT-t3-k00
+CHECKED E2.DFT-t3-k01
+CHECKED E2.DFT-t3-k02
+CHECKED E2.DFT-t3-k03
+CHECKED E2.DFT-t3-k10
+CHECKED E2.DFT-t3-k11
+CHECKED E2.DFT-t3-k12
+CHECKED E2.DFT-t3-k13
+CHECKED E2.DFT-t3-k20
+CHECKED E2.DFT-t3-k21
+CHECKED E2.DFT-t3-k22
+CHECKED E2.DFT-t3-k23
+CHECKED E2.DFT-t3-k30
+CHECKED E2.DFT-t3-k31
+CHECKED E2.DFT-t3-k32
+CHECKED E2.DFT-t3-k33
+CHECKED E2.geom-R: sum_t (phi e^{iw})^t = 1/(1-phi e^{iw})
+CHECKED E3.hhat0
+CHECKED E3.mhat0
+CHECKED E3.hhat-01: G(1,0)
+CHECKED E3.Rstatic-01: got G(3/2,-3/2) want G(3/2,-3/2)
+CHECKED E3.hhat-02: G(1,0)
+CHECKED E3.Rstatic-02: got G(3/2,0) want G(3/2,0)
+CHECKED E3.hhat-03: G(1,0)
+CHECKED E3.Rstatic-03: got G(3/2,3/2) want G(3/2,3/2)
+CHECKED E3.hhat-10: G(1,0)
+CHECKED E3.Rstatic-10: got G(3/2,-3/2) want G(3/2,-3/2)
+CHECKED E3.hhat-11: G(1,0)
+CHECKED E3.Rstatic-11: got G(3/4,-3/4) want G(3/4,-3/4)
+CHECKED E3.hhat-12: G(1,0)
+CHECKED E3.Rstatic-12: got G(9/10,-3/10) want G(9/10,-3/10)
+CHECKED E3.hhat-13: G(1,0)
+CHECKED E3.Rstatic-13: got G(3/2,0) want G(3/2,0)
+CHECKED E3.hhat-20: G(1,0)
+CHECKED E3.Rstatic-20: got G(3/2,0) want G(3/2,0)
+CHECKED E3.hhat-21: G(1,0)
+CHECKED E3.Rstatic-21: got G(9/10,-3/10) want G(9/10,-3/10)
+CHECKED E3.hhat-22: G(1,0)
+CHECKED E3.Rstatic-22: got G(3/4,0) want G(3/4,0)
+CHECKED E3.hhat-23: G(1,0)
+CHECKED E3.Rstatic-23: got G(9/10,3/10) want G(9/10,3/10)
+CHECKED E3.hhat-30: G(1,0)
+CHECKED E3.Rstatic-30: got G(3/2,3/2) want G(3/2,3/2)
+CHECKED E3.hhat-31: G(1,0)
+CHECKED E3.Rstatic-31: got G(3/2,0) want G(3/2,0)
+CHECKED E3.hhat-32: G(1,0)
+CHECKED E3.Rstatic-32: got G(9/10,3/10) want G(9/10,3/10)
+CHECKED E3.hhat-33: G(1,0)
+CHECKED E3.Rstatic-33: got G(3/4,3/4) want G(3/4,3/4)
+E3.m(0,0)= 357/320
+E3.m(1,0)= 111/320
+E3.m(0,1)= 111/320
+E3.m(1,1)= 81/320
+E3.m(2,0)= -3/64
+CHECKED E3.not-isotropic
+CHECKED E3.e1-e2-sym
+CHECKED E3.wake-asymmetric
+CHECKED E4.1-u-quadratic: 1-u = k^T M k + O(k^4), M=(1/9)[[2,-1],[-1,2]]
+CHECKED E4.1-phi-jet: 1-phi = -i(k1+k2)/3 + (k1^2+k2^2)/6 + O(k^3)
+CHECKED E4.phi-cm-quad: 1-Re phi_cm = (k1^2-k1 k2+k2^2)/9 + O(k^3)
+CHECKED E4.walk-cov: C=[[2/9,-1/9],[-1/9,2/9]]
+CHECKED E4.detC
+CHECKED E4.Cinv
+CHECKED E4.gauss-prefactor-algebra: 3 sqrt(3)/(2 pi t) from (2pi)^{-1}(det tC)^{-1/2}
+CHECKED E4.M-eigs: M(1,1)=(1/9)(1,1); M(1,-1)=(1/3)(1,-1)
+CHECKED E5.axial-avg-algebra: avg=3/2
+CHECKED E5.axial-Rsym-is-3/2: R_sym=3/2
+CHECKED E5.not-1-over-E: R_sym * E = 3 - 3*cos(lam)
+CHECKED E5.Gsym-axis-n1
+CHECKED E5.Gsym-axis-n2
+CHECKED E5.Gsym-axis-n3
+CHECKED E5.Gsym-axis-n4
+CHECKED E5.Gsym-axis-n5
+CHECKED E5.Gsym-axis-n6
+CHECKED E5.Gsym-axis-n7
+CHECKED E5.Gsym-axis-n8
+E5.G(n,n,n) n=1 one-corner=2/9 sym=1/36
+CHECKED E5.G-diag-n1
+E5.G(n,n,n) n=2 one-corner=10/81 sym=5/324
+CHECKED E5.G-diag-n2
+E5.G(n,n,n) n=3 one-corner=560/6561 sym=70/6561
+CHECKED E5.G-diag-n3
+E5.G(n,n,n) n=4 one-corner=3850/59049 sym=1925/236196
+CHECKED E5.G-diag-n4
+E5.G(n,n,n) n=5 one-corner=28028/531441 sym=7007/1062882
+CHECKED E5.G-diag-n5
+CHECKED E5.body-diag-limit-finite: limit=7/2
+CHECKED E5.body-diag-not-1k2
+CHECKED E6.sumC-identity: sum_s C_s = 1/|1-phi|^2
+CHECKED E6.ratio-not-constant: ratios 9, 9/2, 9
+E6.E/|1-phi|^2 at (pi/2,0)=9, (pi/2,pi/2)=9/2, (pi,0)=9
+CHECKED E7.not-1-minus-phistar: (1-u)/(1-phi) != 1-phi*; FDR proportionality fails algebraically
+CHECKED E7.|1-phi|^2-vs-1-u
+CHECKED E7.not-real-constant: distinct 1-phi* among modes: 8
+CHECKED E7.abs-chi-over-C-not-const: n distinct=3
+CHECKED E7.P-not-self-adjoint: 10/16 modes have Im phi != 0
+CHECKED E7.chi-not-real: G(3/2,3/2)
+CHECKED E8.gf-identity
+CHECKED E8.gf-half
+CHECKED E8.binoms-k0-n0
+CHECKED E8.binoms-k1-n0
+CHECKED E8.binoms-k1-n1
+CHECKED E8.binoms-k2-n0
+CHECKED E8.binoms-k2-n1
+CHECKED E8.binoms-k2-n2
+CHECKED E8.binoms-k3-n0
+CHECKED E8.binoms-k3-n1
+CHECKED E8.binoms-k3-n2
+CHECKED E8.binoms-k3-n3
+CHECKED E8.binoms-k4-n0
+CHECKED E8.binoms-k4-n1
+CHECKED E8.binoms-k4-n2
+CHECKED E8.binoms-k4-n3
+CHECKED E8.binoms-k4-n4
+CHECKED E8.binoms-k5-n0
+CHECKED E8.binoms-k5-n1
+CHECKED E8.binoms-k5-n2
+CHECKED E8.binoms-k5-n3
+CHECKED E8.binoms-k5-n4
+CHECKED E8.binoms-k5-n5
+CHECKED E8.binoms-k6-n0
+CHECKED E8.binoms-k6-n1
+CHECKED E8.binoms-k6-n2
+CHECKED E8.binoms-k6-n3
+CHECKED E8.binoms-k6-n4
+CHECKED E8.binoms-k6-n5
+CHECKED E8.binoms-k6-n6
+CHECKED E8.binoms-k7-n0
+CHECKED E8.binoms-k7-n1
+CHECKED E8.binoms-k7-n2
+CHECKED E8.binoms-k7-n3
+CHECKED E8.binoms-k7-n4
+CHECKED E8.binoms-k7-n5
+CHECKED E8.binoms-k7-n6
+CHECKED E8.binoms-k7-n7
+CHECKED E8.two-formulae-00
+CHECKED E8.two-formulae-01
+CHECKED E8.two-formulae-02
+CHECKED E8.two-formulae-03
+CHECKED E8.two-formulae-04
+CHECKED E8.two-formulae-05
+CHECKED E8.two-formulae-10
+CHECKED E8.two-formulae-11
+CHECKED E8.two-formulae-12
+CHECKED E8.two-formulae-13
+CHECKED E8.two-formulae-14
+CHECKED E8.two-formulae-15
+CHECKED E8.two-formulae-20
+CHECKED E8.two-formulae-21
+CHECKED E8.two-formulae-22
+CHECKED E8.two-formulae-23
+CHECKED E8.two-formulae-24
+CHECKED E8.two-formulae-25
+CHECKED E8.two-formulae-30
+CHECKED E8.two-formulae-31
+CHECKED E8.two-formulae-32
+CHECKED E8.two-formulae-33
+CHECKED E8.two-formulae-34
+CHECKED E8.two-formulae-35
+CHECKED E8.two-formulae-40
+CHECKED E8.two-formulae-41
+CHECKED E8.two-formulae-42
+CHECKED E8.two-formulae-43
+CHECKED E8.two-formulae-44
+CHECKED E8.two-formulae-45
+CHECKED E8.two-formulae-50
+CHECKED E8.two-formulae-51
+CHECKED E8.two-formulae-52
+CHECKED E8.two-formulae-53
+CHECKED E8.two-formulae-54
+CHECKED E8.two-formulae-55
+CHECKED E8.G-0-0-positive
+E8.G(0,0) closed=3/2 partial_p40=18236498188585393201/12157665459056928801
+CHECKED E8.G-1-0-positive
+E8.G(1,0) closed=3/4 partial_p40=27354747282878089781/36472996377170786403
+CHECKED E8.G-0-1-positive
+E8.G(0,1) closed=3/4 partial_p40=27354747282878089781/36472996377170786403
+CHECKED E8.G-1-1-positive
+E8.G(1,1) closed=3/4 partial_p40=3039416364764232166/4052555153018976267
+CHECKED E8.G-2-0-positive
+E8.G(2,0) closed=3/8 partial_p40=1519708182382116083/4052555153018976267
+CHECKED E8.G-3-1-positive
+E8.G(3,1) closed=3/8 partial_p40=369289088318853899644/984770902183611232881
+CHECKED E8.G-2-2-positive
+E8.G(2,2) closed=9/16 partial_p40=184644544159426949822/328256967394537077627
+CHECKED E8.G00
+CHECKED E8.G10
+CHECKED E8.Gnn-vs-axis: G(2,2)=9/16 vs G(4,0)=3/32; not a function of r
+CHECKED E8.causal-support: G(n,m)=0 for n<0 or m<0 (directed walk)
+CHECKED E8.pin-is-scaled-G: G(1,0)/G(0,0)=1/2 = C(1,0)/2
+CHECKED E8.torus-pin-constant: on a torus the only (I-P)-harmonic is constant; pin=1
+CHECKED E9.Rinv-L3-01
+CHECKED E9.Rinv-L3-02
+CHECKED E9.Rinv-L3-10
+CHECKED E9.Rinv-L3-11
+CHECKED E9.Rinv-L3-12
+CHECKED E9.Rinv-L3-20
+CHECKED E9.Rinv-L3-21
+CHECKED E9.Rinv-L3-22
+CHECKED E10.C0-not-1E: C0/(1/E) values {Fraction(9, 1), Fraction(9, 2), Fraction(27, 4)}
+CHECKED E10.|R|^2-not-1E: |R|^2/(1/E) {Fraction(27, 5), Fraction(9, 1), Fraction(9, 2)}
+CHECKED E10.axial-Rsym-vs-E-n1: R_sym=3/2, 1/E=1/2
+CHECKED E10.axial-Rsym-vs-E-n2: R_sym=3/2, 1/E=1/4
+CHECKED E10.axial-Rsym-vs-E-n3: R_sym=3/2, 1/E=1/2
+CHECKS ok=244 fail=0
+HIT: PARTIAL: R=1/(1-phi e^{iw})=3/(3-sum e^{i q_j}) exact (multinomial DFT, L=3,4 (I-P)^{-1}); E=3(|1-phi e^{iw}|^2+1-u); sum_s C_s=sigma^2/|1-phi|^2; FDR chi/C=(1-u)/(1-phi) is not 1-phi* and not a real constant, P not self-adjoint; infinite-plane static Green G(n,m)=(3/2) C(n+m,n) 2^{-(n+m)} for n,m>=0 (else 0), pin=G/G(0); no isotropic 1/r: static is a causal quadrant with axis exponential 3/2^{n+1} and diagonal ~ r^{-1/2}, C_0 is 2D log, co-moving impulse is 2D heat 3 sqrt(3)/(2 pi t) exp(-3(y1^2+y2^2+y1 y2)/t); 8-corner visit kernel G_sym(n,0,0)=3^{-n}/2 and R_sym(lambda,0,0)=3/2 exactly for all axial lambda (body-diagonal IR limit 7/2), not 1/E ~ 1/lambda^2; one-corner G(n,n,n)=3^{-3n}(3n)!/(n!)^3 ~ sqrt(3)/(2 pi n) along 8 spines only
+SUMMARY: PARTIAL exact linear response R=1/(1-phi e^{iw}) with 3D embedding, E-identity, time-integrated C=sigma^2/|1-phi|^2, FDR failure, plane Green G=(3/2) C(n+m,n) 2^{-(n+m)} on the forward quadrant; no isotropic 1/r (2D wake r^{-1/2} / 2D log / 2D heat / 8-corner axial R_sym=3/2 and G=3^{-n}/2; algebraic 1/r only as heat-kernel peak on the 8 body-diagonal spines)

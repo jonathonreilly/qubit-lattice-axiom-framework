@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-response-kernel:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j88ab",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-response-kernel/w-macbookpro90c72-j88ab/check.py",
+ "seed": 78785,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f57f7576",
+ "started_utc": "20260919T004625Z",
+ "elapsed_s": 3.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL exact linear response R=1/(1-phi e^{iw}) with 3D embedding, E-identity, time-integrated C=sigma^2/|1-phi|^2, FDR failure, plane Green G=(3/2) C(n+m,n) 2^{-(n+m)} on the forward quadrant; no isotropic 1/r (2D wake r^{-1/2} / 2D log / 2D heat / 8-corner axial R_sym=3/2 and G=3^{-n}/2; algebraic 1/r only as heat-kernel peak on the 8 body-diagonal spines)"
+ },
+ "review": "check.py verifies 244 exact identities: R=1/(1-phi e^{iw}) matches L=4 (I-P)^{-1} and L=3 cyclotomic, E-identity and plane Green G=(3/2)C(n+m,n)2^{-(n+m)} hold, FDR fails, 8-corner R_sym=3/2 on every axis; HIT is a new exact partial for the linear response, not a gravity-node construction.",
+ "what": "DERIVATION, independent attempt 2 of 6: What replaces the Green-function kernel when records form: the response of the formation law to a source. THE PROGRAM'S OPEN PHYSICS QUESTION after block 35 (PR #8180; setting in blocks 13, 26, 34: PRs #8147, #8170, #8178). The gravity lane takes as input a lattice Green-function kernel 1/E(k), E(k) = 2 sum_j (1 - cos k_j). Block 19 found that kernel only in the static (equilibrium comparator) law. The axiom says records FORM: the sphere formation law in level time, linearized about an aligned plane, is theta_{t+1} = P theta_t + noise with phi(k) = (1 + e^{i k_1} + e^{i k_2})/3, u = |phi|^2, and its covariance is sigma^2 phi^s/(1 - u): a plane Green function times a level-time heat kernel, diffusive and drifting. A probe added the exact identity E(k) = 3(|1 - phi e^{i w}|^2 + 1 - u) in level coordinates. TASK: derive the object a gravity-type node would actually see under the formation reading: the linear RESPONSE of the formation law to a persistent localized source (a site whose record is pinned, or a small bias field h at one site acting at every level). (a) Compute the response function exactly for the linear model: R(k, w) = 1/(1 - phi(k) e^{i w}) and its static limit; (b) find its real-space form at long distance on the level planes and along the level direction (saddle point, with the drift removed by the co-moving frame x -> x - t(1,1)/3), with exact constants; (c) decide whether any channel (the static response, the time-integrated covariance, the response in the co-moving frame, a symmetrized combination over the eight corner orders of block 09) decays like 1/r in three dimensions, and if none does, state precisely what decay law replaces it; (d) check the fluctuation-response relation: is the response proportional to the covariance (it is in equilibrium; level time is not equilibrium)? Verify every closed form against exact finite-L sums. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-response-kernel/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-response-kernel/<name>/check.py\"",
+ "stdout_sha256": "5ff713bd87183c28087fd874c94ce0a9354b39f49d1345c582bb39cef3c8b161",
+ "stdout_tail": "21\nCHECKED E9.Rinv-L3-22\nCHECKED E10.C0-not-1E: C0/(1/E) values {Fraction(9, 1), Fraction(9, 2), Fraction(27, 4)}\nCHECKED E10.|R|^2-not-1E: |R|^2/(1/E) {Fraction(27, 5), Fraction(9, 1), Fraction(9, 2)}\nCHECKED E10.axial-Rsym-vs-E-n1: R_sym=3/2, 1/E=1/2\nCHECKED E10.axial-Rsym-vs-E-n2: R_sym=3/2, 1/E=1/4\nCHECKED E10.axial-Rsym-vs-E-n3: R_sym=3/2, 1/E=1/2\nCHECKS ok=244 fail=0\nHIT: PARTIAL: R=1/(1-phi e^{iw})=3/(3-sum e^{i q_j}) exact (multinomial DFT, L=3,4 (I-P)^{-1}); E=3(|1-phi e^{iw}|^2+1-u); sum_s C_s=sigma^2/|1-phi|^2; FDR chi/C=(1-u)/(1-phi) is not 1-phi* and not a real constant, P not self-adjoint; infinite-plane static Green G(n,m)=(3/2) C(n+m,n) 2^{-(n+m)} for n,m>=0 (else 0), pin=G/G(0); no isotropic 1/r: static is a causal quadrant with axis exponential 3/2^{n+1} and diagonal ~ r^{-1/2}, C_0 is 2D log, co-moving impulse is 2D heat 3 sqrt(3)/(2 pi t) exp(-3(y1^2+y2^2+y1 y2)/t); 8-corner visit kernel G_sym(n,0,0)=3^{-n}/2 and R_sym(lambda,0,0)=3/2 exactly for all axial lambda (body-diagonal IR limit 7/2), not 1/E ~ 1/lambda^2; one-corner G(n,n,n)=3^{-3n}(3n)!/(n!)^3 ~ sqrt(3)/(2 pi n) along 8 spines only\nSUMMARY: PARTIAL exact linear response R=1/(1-phi e^{iw}) with 3D embedding, E-identity, time-integrated C=sigma^2/|1-phi|^2, FDR failure, plane Green G=(3/2) C(n+m,n) 2^{-(n+m)} on the forward quadrant; no isotropic 1/r (2D wake r^{-1/2} / 2D log / 2D heat / 8-corner axial R_sym=3/2 and G=3^{-n}/2; algebraic 1/r only as heat-kernel peak on the 8 body-diagonal spines)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j88ab",
+  "at_utc": "20260919T004708Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact linear response identities (R, E, plane Green G=(3/2)C(n+m,n)2^{-(n+m)}, 8-corner R_sym=3/2 on every axis, FDR failure) hold in check.py; a new exact partial, not a gravity-node construction.",
+  "by": "w-macbookpro90c72-j88ab",
+  "at_utc": "20260919T004708Z"
+ }
+}

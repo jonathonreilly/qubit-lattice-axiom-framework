@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-two-source-interaction-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jc66e",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/two-source-interaction/referee_w-jonathonsmac4f50-jc66e/check.py",
+ "seed": 80280,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "518455b1",
+ "started_utc": "20260919T011120Z",
+ "elapsed_s": 69.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 5 - the persistent sources of the task (a site pinned at every level) are modelled by conditioning the free stationary Gaussian at one time; the pinned process has stationary mean alpha G(y)/G(0) with G = (I - P)^(-1) (the chi profile; the constant alpha on a torus), while conditioning gives alpha C(y)/C(0), so the two-pin '-log stationary weight' of (c) is the equal-time marginal of the unpinned law, not the interaction of persistent sources; the one-pin profile stated in (b), alpha chi(y)/C(0), is neither and misses the pin value (chi(0)/C(0) = 3034/2597 on L = 4). What holds, re-verified exactly: chi = 7/E, C = 7 sigma^2/(2E(1 - E/14)), chi = C(1 + phi)/sigma^2, the L = 4 values, reversibility of the linear and nonlinear kernels, and the Gaussian two-site algebra"
+ },
+ "review": "Referee of two-source-interaction a2 (grok-4.6): independent real-space exact checks pass 5 of 5 (the L=4 values of chi and C by translation-invariant solves, chi = C + PC, the pinned process's stationary mean = constant on the torus and alpha G/G(0) on a Dirichlet box, the static two-site Gaussian algebra, the nonlinear pairing identity), so the linear symbols, reversibility and chi = C(1+phi)/sigma^2 hold, but the attempt fails at step 5: persistent pins are modelled by conditioning the free stationary law (profile C) while the pinned process has the chi profile, and its one-pin formula alpha chi(y)/C(0) misses the pin value; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:two-source-interaction:a2/; its files are probes/work/derive/two-source-interaction/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/two-source-interaction/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "968e70a6547c215d296c98504027060832c1112ef0b4199f9b3c01f3bb92be6f",
+ "stdout_tail": "not alpha\nPASS: X4 (c) as algebra for the static two-site marginal of the free stationary Gaussian: the like/unlike shifts of (1/2) v^T C2^{-1} v are a^2 (1/(C0 + Cr) - 1/C0) and a^2 (1/(C0 - Cr) - 1/C0), attractive/repulsive exactly when C(r) > 0: r = (1, 0, 0): C(r) = 539/15360, like -84480/3472189, unlike 1408/54537; r = (1, 1, 0): C(r) = 539/15360, like -84480/3472189, unlike 1408/54537; r = (1, 1, 1): C(r) = -637/15360, like 99840/3254041, unlike -520/18179\nPASS: X5 step 6: sum_x s'_x . S_x(s) = sum_x s_x . S_x(s') for the symmetric 7-point stencil (50 random integer configuration pairs on (Z/3)^3), so the synchronous kernel is reversible w.r.t. prod_x Z(beta|S_x|)\nTOTAL: PASS=5 FAIL=0\nSUMMARY: fails at step 5 - the persistent sources of the task (a site pinned at every level) are modelled by conditioning the free stationary Gaussian at one time; the pinned process has stationary mean alpha G(y)/G(0) with G = (I - P)^(-1) (the chi profile; the constant alpha on a torus), while conditioning gives alpha C(y)/C(0), so the two-pin '-log stationary weight' of (c) is the equal-time marginal of the unpinned law, not the interaction of persistent sources; the one-pin profile stated in (b), alpha chi(y)/C(0), is neither and misses the pin value (chi(0)/C(0) = 3034/2597 on L = 4). What holds, re-verified exactly: chi = 7/E, C = 7 sigma^2/(2E(1 - E/14)), chi = C(1 + phi)/sigma^2, the L = 4 values, reversibility of the linear and nonlinear kernels, and the Gaussian two-site algebra\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc66e",
+  "at_utc": "20260919T011229Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

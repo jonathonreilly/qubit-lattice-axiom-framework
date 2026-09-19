@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8168",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block25-format",
+ "worker": "w-macbookpro90c72-j0ae6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8168/one_third_and_t3s.py",
+ "seed": 91427,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f5d715cd",
+ "started_utc": "20260919T041707Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - no Fourier sums; M_k increments are 1/3-\u03b4_jk, t^3 s=7/10^6, (391/100)\u03b50=2737/10^8, and 1/(2*96^4)=1/169869312 recompute exactly"
+ },
+ "review": "No Fourier; 1/3 increments, t^3 s=7/10^6, (391/100)\u03b50 and 1/(2*96^4) recompute exactly. No HIT.",
+ "what": "PR #8168 ([physics-loop] admissibility-induced-law block25 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916; git show origin/physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916:<note>. Create probes/work/pr8168/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8168/<script>.py\"",
+ "stdout_sha256": "c4069f297e11f46f2a3047b75dec942998673134f66619ff049aa9303c4d846d",
+ "stdout_tail": "M_0(x-e_0)-M_0(x)=-2/3 want -2/3\nM_0(x-e_1)-M_0(x)=1/3 want 1/3\nM_0(x-e_2)-M_0(x)=1/3 want 1/3\nM_1(x-e_0)-M_1(x)=1/3 want 1/3\nM_1(x-e_1)-M_1(x)=-2/3 want -2/3\nM_1(x-e_2)-M_1(x)=1/3 want 1/3\nM_2(x-e_0)-M_2(x)=1/3 want 1/3\nM_2(x-e_1)-M_2(x)=1/3 want 1/3\nM_2(x-e_2)-M_2(x)=-2/3 want -2/3\nt^3 s = 7/1000000 stated 7/10^6=7/1000000 eq=True\n(391/100)\u03b50=2737/100000000 stated 2737/10^8\nfirst-count 1/(2*96^4)=1/169869312 = 1/169869312 True\nSUMMARY: pattern has no purchase on this note - no Fourier sums; M_k increments are 1/3-\u03b4_jk, t^3 s=7/10^6, (391/100)\u03b50=2737/10^8, and 1/(2*96^4)=1/169869312 recompute exactly\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0ae6",
+  "at_utc": "20260919T041707Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

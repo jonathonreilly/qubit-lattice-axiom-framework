@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_REDUCED_LIE_TYPE_A2_DIAGONAL_SIMILARITY_SECTOR_CANCELLATION_BOUNDED_",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j70cb",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_LIE_TYPE_A/cancellation_lemma_charpoly_beyond.py",
+ "seed": 98496,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "314988d7",
+ "started_utc": "20260919T061456Z",
+ "elapsed_s": 21.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the proof steps hold beyond the note's sizes with disjoint machinery: identity (1) re-derived, [R, L] = 0 on all 120 monomials of degree <= 14, and mu^(2) = 3 mu for every simple eigenvalue of exact rational realizations of dimension 6, 7, 8 (zero and negative eigenvalues included) by implicit differentiation of det(T(eps) - lambda I); the non-uniform remainder falsifier breaks the relative cancellation as the note says"
+ },
+ "review": "Proof steps verified beyond the note's sizes with disjoint machinery: identity (1) re-derived in sympy, [R,L] = 0 on all 120 monomials of degree <= 14 (note: 8), and mu^(2) = 3 mu with zero first-order coefficient for every eigenvalue of exact rational realizations of dimension 6, 7, 8 (zero and negative eigenvalues) by implicit differentiation of det(T(eps) - lambda I) (Jacobi formula plus exact interpolation, not Rayleigh-Schrodinger); the non-uniform remainder breaks the relative cancellation as stated; no falsifier fires.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_REDUCED_LIE_TYPE_A2_DIAGONAL_SIMILARITY_SECTOR_CANCELLATION_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_LIE_TYPE_A/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_LIE_TYPE_A/<script>.py\"",
+ "stdout_sha256": "306863dc8d87656093bbe7e135b641167a76fa2e6ba4eebd0f37bc753f74855c",
+ "stdout_tail": "P1 R H = G1 and R Q = 3u: True; P2 e^(-Q) = (1/2) R^2 W + 3 W: True; [R, L] = 0 on all 120 monomials of degree <= 14: True\nP2 dimension 6, eigenvalues ['1/2', '-7/2', '0', '7/2', '-1', '4']: first-order coefficient 0 and mu^(2) = 3 mu for every eigenvalue (char-poly implicit differentiation): True; non-uniform remainder breaks the relative cancellation: True\nP2 dimension 7, eigenvalues ['0', '7/2', '-1/2', '9/2', '3', '-7/2', '-3/2']: first-order coefficient 0 and mu^(2) = 3 mu for every eigenvalue (char-poly implicit differentiation): True; non-uniform remainder breaks the relative cancellation: True\nP2 dimension 8, eigenvalues ['0', '-1/2', '2', '7/2', '3', '-4', '-3/2', '-5/2']: first-order coefficient 0 and mu^(2) = 3 mu for every eigenvalue (char-poly implicit differentiation): True; non-uniform remainder breaks the relative cancellation: True\nSUMMARY: the proof steps hold beyond the note's sizes with disjoint machinery: identity (1) re-derived, [R, L] = 0 on all 120 monomials of degree <= 14, and mu^(2) = 3 mu for every simple eigenvalue of exact rational realizations of dimension 6, 7, 8 (zero and negative eigenvalues included) by implicit differentiation of det(T(eps) - lambda I); the non-uniform remainder falsifier breaks the relative cancellation as the note says\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j70cb",
+  "at_utc": "20260919T061518Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

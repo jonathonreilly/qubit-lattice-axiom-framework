@@ -1,0 +1,32 @@
+{
+ "task": "J:note:WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026_06_11",
+ "type": "judgment",
+ "lane": "wir",
+ "worker": "w-jonathonsmac4f50-jef2a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNI/chebyshev_prony_exact_injectivity.py",
+ "seed": 17803,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9cfd1b84",
+ "started_utc": "20260919T113643Z",
+ "elapsed_s": 21.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the integer data C(n) = sum c_j T_n(cos w_j) separates all 19635 in-sector bands with up to three components from N = 5 samples on (collisions at smaller N: {1: 19046, 2: 5692, 3: 7, 4: 7}), exact Chebyshev-Prony recovery over Q returns every one of 300 random bands with up to six components, no Euclidean lift other than E = w enters [0, pi] (145642 lifts), and every positive-weight in-sector Hankel matrix is PSD by exact LDL^T (200 bands); no falsifier fires"
+ },
+ "review": "Read the script and its output: writing the integer data as C(n) = sum c_j T_n(cos w_j), all 19635 rational-cosine in-sector bands with up to three components are separated by C(0..5) (7 collisions remain at N = 3, 4, i.e. below 2J samples); an exact Chebyshev-Prony solve over Q recovers all 300 random bands with up to six components; no lift +-w + 2 pi m (|m| <= 50) other than E = w enters [0, pi] on a 721-point grid; every positive-weight Hankel [g(m+n)] is PSD by exact LDL^T (200 bands); no falsifier fires.",
+ "what": "Note on main: docs/WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-06-11.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNI/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_WIR_CONE_AGREEMENT_FROM_SECTOR_ALIAS_UNI/<script>.py\"",
+ "stdout_sha256": "96242461d39248da207affdfab44623e4c99296e69704bb715bb31d085f3eb09",
+ "stdout_tail": "1. 19635 in-sector bands (J = 1..3, x_j in k/8, c_j in 1..3): collisions by number of samples N = 1..12: {1: 19046, 2: 5692, 3: 7, 4: 7, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0}; collision-free from N = 5\n2. exact Chebyshev-Prony recovery over Q: 300/300 random bands (J up to 6) recovered exactly from C(0..2J+1)\n3. Euclidean lifts E = +-w + 2 pi m (|m| <= 50) on a 721-point grid of [0, pi]: in-sector lifts other than E = w: 0 of 145642\n4. exact LDL^T of Hankel [g(m+n)] for positive-weight rational-rate bands: PSD in 200/200\nSUMMARY: the integer data C(n) = sum c_j T_n(cos w_j) separates all 19635 in-sector bands with up to three components from N = 5 samples on (collisions at smaller N: {1: 19046, 2: 5692, 3: 7, 4: 7}), exact Chebyshev-Prony recovery over Q returns every one of 300 random bands with up to six components, no Euclidean lift other than E = w enters [0, pi] (145642 lifts), and every positive-weight in-sector Hankel matrix is PSD by exact LDL^T (200 bands); no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jef2a",
+  "at_utc": "20260919T113715Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

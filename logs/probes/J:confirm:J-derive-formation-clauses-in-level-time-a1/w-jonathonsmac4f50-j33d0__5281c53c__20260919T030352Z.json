@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-formation-clauses-in-level-time-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j33d0",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-clauses-in-level-time/referee_w-jonathonsmac4f50-j33d0/check.py",
+ "seed": 87032,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5281c53c",
+ "started_utc": "20260919T030352Z",
+ "elapsed_s": 3.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 6 - the finite results hold (the product formula, the cube k-multisets, the four distinct all-+x masses 2187/44994560, 81/2048000, 59049/775835648 (Z = 6982520832) and 338229/7997080000, eps_0 = 11/20 and the 2:1 kernels, the level independent set, the slab histograms and masses), but the order-independence conclusion does not follow: its lemma 'the k-multiset changes unless the order is a linear extension of the same ranked poset' is false (3936 non-ranked orders share the monotone multiset), and the rate clause is never examined (the equal-rate clock law involves no chosen order; unequal rates move it), so 'the unique order-independent clause is joint formation' is not established"
+ },
+ "review": "Formation-clauses a1's finite results reproduce exactly (product formula, cube k-multisets, all-+x masses 2187/44994560, 81/2048000, static 59049/775835648 with Z = 6982520832, uniform clocks 338229/7997080000, eps_0 = 11/20, slab histograms), but step 6's lemma is false (3936 non-ranked orders share the monotone multiset) and the rate clause is never examined (unequal clock rates move the law), so the 'unique order-independent clause = joint' conclusion fails at step 6 with no HIT.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-clauses-in-level-time:a1/; its files are probes/work/derive/formation-clauses-in-level-time/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-clauses-in-level-time/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a2c762c7b60a3a0ea953440dacd7b29fad07fcb807a667ea7c61b69b70056f40",
+ "stdout_tail": "ne 2187/44994560, opposite-first 81/2048000, static 59049/775835648 (Z = 6982520832), uniform clocks 338229/7997080000; pairwise distinct\nPASS K4: eps_0 = 11/20; (+x,+x,+y): P(+x), P(+y) = (Fraction(9, 26), Fraction(3, 13)) at (3,1,2), (Fraction(1, 26), Fraction(1, 13)) at (1,3,2)\nPASS K5: slab 3x3x2: level order k-hist {0: 1, 1: 5, 2: 8, 3: 4}, centre-first {0: 2, 1: 3, 2: 9, 3: 4}; P(all +x) 94143178827/68428452520263680000 vs 282429536481/222392470690856960000\nPASS K6: (a) 4224 orders carry the monotone multiset and the monotone all-+x mass; 3936 of them are linear extensions of no corner ranking (lexicographic order among them); (b) clock law with three random integer rate profiles: P(all +x) = 4.120191e-05, 4.254145e-05, 4.295084e-05 against 4.229406e-05 at equal rates\nSUMMARY: fails at step 6 - the finite results hold (the product formula, the cube k-multisets, the four distinct all-+x masses 2187/44994560, 81/2048000, 59049/775835648 (Z = 6982520832) and 338229/7997080000, eps_0 = 11/20 and the 2:1 kernels, the level independent set, the slab histograms and masses), but the order-independence conclusion does not follow: its lemma 'the k-multiset changes unless the order is a linear extension of the same ranked poset' is false (3936 non-ranked orders share the monotone multiset), and the rate clause is never examined (the equal-rate clock law involves no chosen order; unequal rates move it), so 'the unique order-independent clause is joint formation' is not established\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j33d0",
+  "at_utc": "20260919T030356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

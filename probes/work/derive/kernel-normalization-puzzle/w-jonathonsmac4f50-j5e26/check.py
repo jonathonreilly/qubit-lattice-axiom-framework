@@ -174,8 +174,14 @@ def main():
         se = float(np.sqrt(np.sum((1 + uu) / (1 - uu)) / Wn) / uu.size) if uu.size else float("nan")   # AR(1) |z|^2 autocorrelation u^s
         z = (shells[0] - pred * trans) / (pred * se) if se == se and se > 0 else float("nan")
         zs.append(z)
+        # zero-mode tilt (leading order): the lab-frame power at k != 0 is reduced by E|psi|^2/2 = sigma^2 t/L^3 averaged over the window
+        tbar = (T0 + 1 + T) / 2
+        zm = s2 * tbar / L ** 3
+        res0 = plateau - pred
+        res1 = plateau - pred * (1 - zm)
         rows.append(f"n={nn} beta={beta:g} L={L}: W={W_:.4f}, predicted {pred:.4f}, measured plateau (shells 4-6) {plateau:.4f}, lowest shell {shells[0]:.4f} "
-                    f"(transient factor {trans:.4f}, sampling s.e. {se:.3f}, z = {z:+.1f})")
+                    f"(transient factor {trans:.4f}, sampling s.e. {se:.3f}, z = {z:+.1f}); plateau - predicted = {res0:+.4f} = {res0 / s2 ** 2:+.2f} sigma^4; "
+                    f"zero-mode tilt factor 1 - sigma^2 tbar/L^3 = {1 - zm:.4f}, with it plateau - predicted = {res1:+.4f} = {res1 / s2 ** 2:+.2f} sigma^4")
         agree.append(abs(pred - plateau) < 0.03)
     ok = len(rows) >= 6 and all(agree) and all(abs(z) < 3 for z in zs)
     check("N1", ok, "(numerical, labelled; lattice sums in floating point on the executed tori, plateaus parsed from logs/probes/X:*) " + "; ".join(rows))

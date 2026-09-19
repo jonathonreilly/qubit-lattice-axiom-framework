@@ -29,7 +29,9 @@ The sub-1 values quoted in the task (`0.95–0.99`) are the lowest `|k|` shell o
 - **Fluctuating concentration `β|S_x|`:** `+σ²`, from `E[δ]/n` with `δ = n − |S|`.
 - **Lab-frame projection** (the tilt of the local mean away from `e₃`, the "`sin θ` versus `θ`" effect): `−σ² (W − 1)`.
 - **Gain `g`:** no order-`1/β` term. The Hartree gain is `A(nβ)(1 + σ²) = 1 + O(1/β²)`, which is the GIVEN's cancellation.
-- **Wandering zero mode:** `−σ² t̄/L^d`. It is negligible at `L ≥ 48` and about `−0.02` at `L = 24` for the light-cone at `β = 1`, which is the direction of the measured finite-size drop.
+- **Wandering zero mode:** a factor `1 − σ² t̄/L^d` at leading order, where `σ² t̄/L^d` is half the expected squared tilt of the mean direction, averaged over the measurement window. It is at most `0.0025` in every run except the light-cone run at `β = 1, L = 24`, where it is `0.0199`.
+  - With it, the three light-cone `β = 1` residuals are equal: `+1.84σ⁴` at `L = 24, 48, 96`. Without it they are `+0.40σ⁴, +1.66σ⁴, +1.83σ⁴`.
+  - It is an expectation. A single run's tilt is one sample of a random walk, and at the next order the factor carries `1/|M|²`.
 - **Exchange (Fock) term:** absent for simplex stencils, present for the light-cone.
 
 ## 2. Steps
@@ -63,25 +65,27 @@ The sub-1 values quoted in the task (`0.95–0.99`) are the lowest `|k|` shell o
 
 **N1 (numerical, labelled). Comparison with the executed runs.** `W` and the light-cone covariances are computed in floating point on the executed tori, and the plateaus (shells 4–6) are parsed from the logs.
 
-| run | predicted | measured plateau |
-|---|---|---|
-| backward, `β = 2`, `L = 64` | 1.0251 | 1.0342 |
-| backward, `β = 2`, `L = 48` | 1.0260 | 1.0334 |
-| backward, `β = 6`, `L = 32` | 1.0101 | 1.0103 |
-| backward, `β = 24`, `L = 64` | 1.0024 | 1.0024 |
-| light-cone, `β = 1`, `L = 24` | 1.0805 | 1.0865 |
-| light-cone, `β = 1`, `L = 48` | 1.0785 | 1.1033 |
-| light-cone, `β = 1`, `L = 96` | 1.0775 | 1.1050 |
-| light-cone, `β = 1.5`, `L = 48` | 1.0552 | 1.0649 |
-| light-cone, `β = 2`, `L = 48` | 1.0425 | 1.0474 |
+| run | predicted | measured plateau | residual / σ⁴ (without, with the zero-mode factor) |
+|---|---|---|---|
+| backward, `β = 2`, `L = 64` | 1.0251 | 1.0342 | +0.76, +0.84 |
+| backward, `β = 2`, `L = 48` | 1.0260 | 1.0334 | +0.62, +0.81 |
+| backward, `β = 6`, `L = 32` | 1.0101 | 1.0103 | +0.15, +1.02 |
+| backward, `β = 24`, `L = 64` | 1.0024 | 1.0024 | +0.60, +0.97 |
+| light-cone, `β = 1`, `L = 24` | 1.0805 | 1.0865 | +0.40, +1.84 |
+| light-cone, `β = 1`, `L = 48` | 1.0785 | 1.1033 | +1.66, +1.84 |
+| light-cone, `β = 1`, `L = 96` | 1.0775 | 1.1050 | +1.83, +1.84 |
+| light-cone, `β = 1.5`, `L = 48` | 1.0552 | 1.0649 | +1.30, +1.55 |
+| light-cone, `β = 2`, `L = 48` | 1.0425 | 1.0474 | +1.10, +1.42 |
 
-- Every residual is at most `0.028`, and each is between `0.02σ⁴` and `1.8σ⁴`.
+- Every plateau lies above its prediction, by at most `0.028`.
+- With the zero-mode factor the residual is `+0.81σ⁴` to `+1.02σ⁴` for the backward runs and `+1.42σ⁴` to `+1.84σ⁴` for the light-cone runs. That is the neglected order.
+- The `β = 24` residual is `0.0001`, below the four printed decimals of the logged shells, so its `σ⁴` multiple is not resolved.
 - The lowest shells lie within `|z| ≤ 1.7` of the predicted plateau times the transient factor. The factor is the mean over the shell and the measurement window of `(1 − u^t)`, which is `0.979–1.000`. The sampling s.e. assumes AR(1) autocorrelation `u^s` of `|θ̂_k|²`.
 
 ## 3. Where the route stops
 
 - The one-loop closure (S5) is assumed, not proved.
-- The light-cone residual at `β = 1` (`0.025–0.028`) and the mild rise of `R` with `k` at `β = 2` in the backward runs are order `σ⁴`. They are not computed here.
+- The positive residual (`+0.8σ⁴` to `+1.0σ⁴` backward, `+1.4σ⁴` to `+1.8σ⁴` light-cone, with the zero-mode factor) is order `σ⁴`, and so is the rise of `R` with `k` at `β = 2` in the backward runs. There the logged shells go from `1.0193` (`0.3 ≤ |k| < 0.6`) to `1.0426` (`3.2 ≤ |k| < 6`) at `L = 64`, and from `1.0175` to `1.0416` at `L = 48`, around the flat one-loop `1.025`. Neither is computed here.
 
 ## 4. What would finish it
 

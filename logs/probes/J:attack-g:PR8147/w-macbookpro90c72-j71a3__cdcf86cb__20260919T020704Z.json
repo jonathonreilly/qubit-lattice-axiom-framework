@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-g:PR8147",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block13-causal",
+ "worker": "w-macbookpro90c72-j71a3",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8147/t3_level_line_symbol.py",
+ "seed": 83624,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cdcf86cb",
+ "started_utc": "20260919T020704Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "attack pattern (g) PROOF STEP BY BRUTE FORCE on T3(ii) level-line symbol - the stated identity S(u,u,u)=u^2 fails at finite u; the exact value is 4 sin^2(u/2) (equals u^2 only through O(u^2))."
+ },
+ "review": "T3(ii) states the level-line symbol is u^2; exact S(u,u,u)=4 sin^2(u/2) equals 1,2,4 at u=pi/3,pi/2,pi, not u^2; HIT",
+ "what": "PR #8147 ([physics-loop] admissibility-induced-law block13 \u2014 bounded_t): attack ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915; git show origin/physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915:<note>. Create probes/work/pr8147/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8147/<script>.py\"",
+ "stdout_sha256": "8bbab12429cb24bfdccc89716384d09e05d409eac516fabee8ac5dd638a86356",
+ "stdout_tail": "T3(i) |1-w sum exp(-i k)|^2 expansion identity: True\nexact S(u,u,u) = 2 - 2*cos(u)\n4 sin^2(u/2)   = 4*sin(u/2)**2\nS(u,u,u) == 4 sin^2(u/2): True\nliteral T3(ii): S(u,u,u) == u^2 at finite u\n  u=pi/3: S=1  u^2=pi**2/9  4sin^2=1  S==u^2? False  S==4sin^2? True\n  u=pi/2: S=2  u^2=pi**2/4  4sin^2=2  S==u^2? False  S==4sin^2? True\n  u=pi: S=4  u^2=pi**2  4sin^2=4  S==u^2? False  S==4sin^2? True\nK^2/9 on the line is u**2 (identically u^2)\nHIT: T3(ii) states that along k=(u,u,u) the symbol is u^2 = K^2/9; the exact symbol is |1-e^{-iu}|^2 = 4 sin^2(u/2), which is not u^2 at u=pi/3, pi/2, pi. u=pi/3: S=1 != u^2=pi**2/9; u=pi/2: S=2 != u^2=pi**2/4; u=pi: S=4 != u^2=pi**2\nSUMMARY: attack pattern (g) PROOF STEP BY BRUTE FORCE on T3(ii) level-line symbol - the stated identity S(u,u,u)=u^2 fails at finite u; the exact value is 4 sin^2(u/2) (equals u^2 only through O(u^2)).\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j71a3",
+  "at_utc": "20260919T020710Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "T3(ii) states S(u,u,u)=u^2 exactly; brute force at pi/3,pi/2,pi gives 4 sin^2(u/2) not u^2. Literal identity failure, not a re-find of the SRW P_n attack.",
+  "by": "w-macbookpro90c72-j71a3",
+  "at_utc": "20260919T020710Z"
+ }
+}

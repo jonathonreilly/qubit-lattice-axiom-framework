@@ -1,0 +1,11 @@
+T3(i) |1-w sum exp(-i k)|^2 expansion identity: True
+exact S(u,u,u) = 2 - 2*cos(u)
+4 sin^2(u/2)   = 4*sin(u/2)**2
+S(u,u,u) == 4 sin^2(u/2): True
+literal T3(ii): S(u,u,u) == u^2 at finite u
+  u=pi/3: S=1  u^2=pi**2/9  4sin^2=1  S==u^2? False  S==4sin^2? True
+  u=pi/2: S=2  u^2=pi**2/4  4sin^2=2  S==u^2? False  S==4sin^2? True
+  u=pi: S=4  u^2=pi**2  4sin^2=4  S==u^2? False  S==4sin^2? True
+K^2/9 on the line is u**2 (identically u^2)
+HIT: T3(ii) states that along k=(u,u,u) the symbol is u^2 = K^2/9; the exact symbol is |1-e^{-iu}|^2 = 4 sin^2(u/2), which is not u^2 at u=pi/3, pi/2, pi. u=pi/3: S=1 != u^2=pi**2/9; u=pi/2: S=2 != u^2=pi**2/4; u=pi: S=4 != u^2=pi**2
+SUMMARY: attack pattern (g) PROOF STEP BY BRUTE FORCE on T3(ii) level-line symbol - the stated identity S(u,u,u)=u^2 fails at finite u; the exact value is 4 sin^2(u/2) (equals u^2 only through O(u^2)).

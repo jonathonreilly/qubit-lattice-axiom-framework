@@ -1,0 +1,4 @@
+Q(1,0)=4 Q(0,1)=4
+geodesic x=(0, 0, 0) y=(2, 1, 0) L=3 path=[(0, 0, 0), (1, 0, 0), (2, 0, 0), (2, 1, 0)]
+Z^3 NN triangle-free
+SUMMARY: pattern has no purchase on this note - a Manhattan geodesic of length L exists in Z^3 and the fundamental Casimir Q=4 is realized

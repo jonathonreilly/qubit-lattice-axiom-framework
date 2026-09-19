@@ -1,0 +1,5 @@
+axis (1, 0, 0): path [(0, 0, 0), (1, 0, 0), (2, 0, 0)]
+axis (0, 1, 0): path [(0, 0, 0), (0, 1, 0), (0, 2, 0)]
+axis (0, 0, 1): path [(0, 0, 0), (0, 0, 1), (0, 0, 2)]
+3-site orders 6
+SUMMARY: pattern has no purchase on this note - a collinear 3-site NN path exists on every axis and 3!=6 sequential orders exist

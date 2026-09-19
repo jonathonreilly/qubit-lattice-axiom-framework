@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8158",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block24-unreco",
+ "worker": "w-macbookpro90c72-j5f09",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8158/q4_other_windows_in_z3.py",
+ "seed": 85482,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0ae4b143",
+ "started_utc": "20260919T023802Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known Q4(a) triangle HIT \u2014 the plaquette C4, cube with top face unrecorded, pendant paths of 2 and 3, two-pendant forest, and a length-1 bridging path all exist as triangle-free induced Z^3 windows with the stated attachments"
+ },
+ "review": "Plaquette, cube top-unrecorded, pendants, forest and bridging path exist as triangle-free Z^3 windows; no new defect beyond known Q4(a) triangle HIT",
+ "what": "PR #8158 ([physics-loop] admissibility-induced-law block24 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915; git show origin/physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915:<note>. Create probes/work/pr8158/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8158/<script>.py\"",
+ "stdout_sha256": "fcebc8015fd7fdc9e41e9825d5d043598896b9b2ed60e7d071eed53e83fd7e6c",
+ "stdout_tail": "plaquette C4: |V|=4 triangles=0\ncube: |V|=8 |W|=4 |E|=4 triangles=0\ncube top-unrecorded touches 4 recorded sites {(1, 0, 0), (0, 0, 0), (1, 1, 0), (0, 1, 0)}\npendant k=2: triangles=0 attachments={(0, 0, 0)}\npendant k=3: triangles=0 attachments={(0, 0, 0)}\ntwo pendants: triangles=0 att1={(0, 0, 0)} att2={(2, 0, 0)}\nbridging path: triangles=0 attachments={(0, 0, 0), (2, 0, 0)}\nSUMMARY: pattern has no purchase on this note beyond the known Q4(a) triangle HIT \u2014 the plaquette C4, cube with top face unrecorded, pendant paths of 2 and 3, two-pendant forest, and a length-1 bridging path all exist as triangle-free induced Z^3 windows with the stated attachments\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5f09",
+  "at_utc": "20260919T023802Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

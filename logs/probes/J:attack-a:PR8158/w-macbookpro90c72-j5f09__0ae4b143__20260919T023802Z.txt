@@ -1,0 +1,8 @@
+plaquette C4: |V|=4 triangles=0
+cube: |V|=8 |W|=4 |E|=4 triangles=0
+cube top-unrecorded touches 4 recorded sites {(1, 0, 0), (0, 0, 0), (1, 1, 0), (0, 1, 0)}
+pendant k=2: triangles=0 attachments={(0, 0, 0)}
+pendant k=3: triangles=0 attachments={(0, 0, 0)}
+two pendants: triangles=0 att1={(0, 0, 0)} att2={(2, 0, 0)}
+bridging path: triangles=0 attachments={(0, 0, 0), (2, 0, 0)}
+SUMMARY: pattern has no purchase on this note beyond the known Q4(a) triangle HIT — the plaquette C4, cube with top face unrecorded, pendant paths of 2 and 3, two-pendant forest, and a length-1 bridging path all exist as triangle-free induced Z^3 windows with the stated attachments

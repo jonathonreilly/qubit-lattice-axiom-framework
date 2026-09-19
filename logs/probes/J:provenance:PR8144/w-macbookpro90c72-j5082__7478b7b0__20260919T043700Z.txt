@@ -1,0 +1,22 @@
+N>=1         DEFINITION model domain
+beta>0       DEFINITION model domain
+(1)          EXCLUDED c_k Poisson identity label
+(2)          EXCLUDED K(j) product-of-maxima label
+(3)          EXCLUDED inverse-moment bound label
+(4)          EXCLUDED free-state inverse-moment label
+(5)          EXCLUDED Hamiltonian moment bound label
+8140         EXCLUDED upstream PR
+8133         EXCLUDED upstream PR
+8a71d7fa     EXCLUDED PR8140 pin
+K(j)         DEFINITION definition (2)
+kappa_q      DEFINITION max_k c_k/c_{k+q}
+PASS=4       CACHE    runner TOTAL: ok
+FAIL=0       CACHE    runner TOTAL: ok
+24           CACHE    path-Green grid_side: ok
+40           CACHE    path-Green grid_side: ok
+64           CACHE    path-Green grid_side: ok
+N=2          CACHE    inverse-moment case: ok
+N=3          CACHE    inverse-moment case: ok
+N=4          CACHE    inverse-moment case: ok
+1            DERIVED  K(j=0) or identity factor: K(j=0)=prod 1 = 1
+SUMMARY: provenance (PR #8144): all 21 listed statement tokens sourced (cache 8, derived 1, definition 4, excluded 8); K(j=0)=1 derived; TOTAL PASS=4 in cache; no UNCOVERED

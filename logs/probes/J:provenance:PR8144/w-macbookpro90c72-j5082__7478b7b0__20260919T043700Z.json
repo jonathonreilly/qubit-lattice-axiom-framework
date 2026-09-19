@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8144",
+ "type": "judgment",
+ "lane": "static-charge-transfer-sector-20260915",
+ "worker": "w-macbookpro90c72-j5082",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8144/provenance_theorem_numbers.py",
+ "seed": 92620,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7478b7b0",
+ "started_utc": "20260919T043700Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "provenance (PR #8144): all 21 listed statement tokens sourced (cache 8, derived 1, definition 4, excluded 8); K(j=0)=1 derived; TOTAL PASS=4 in cache; no UNCOVERED"
+ },
+ "review": "Provenance: 21 statement tokens sourced (cache/derived/definition/excluded); no UNCOVERED; TOTAL PASS=4.",
+ "what": "PR #8144 ([physics-loop] static-charge-transfer-sector: bounded_theore): for every number in the theorem statements of FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/static-charge-transfer-sector-20260915; git show origin/physics-loop/static-charge-transfer-sector-20260915:<note>. Create probes/work/pr8144/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8144/<script>.py\"",
+ "stdout_sha256": "4e95cf38e45d4a5531fef9160b781bef39d1785a17418d6131c5c6a08c3cbf4b",
+ "stdout_tail": "N>=1         DEFINITION model domain\nbeta>0       DEFINITION model domain\n(1)          EXCLUDED c_k Poisson identity label\n(2)          EXCLUDED K(j) product-of-maxima label\n(3)          EXCLUDED inverse-moment bound label\n(4)          EXCLUDED free-state inverse-moment label\n(5)          EXCLUDED Hamiltonian moment bound label\n8140         EXCLUDED upstream PR\n8133         EXCLUDED upstream PR\n8a71d7fa     EXCLUDED PR8140 pin\nK(j)         DEFINITION definition (2)\nkappa_q      DEFINITION max_k c_k/c_{k+q}\nPASS=4       CACHE    runner TOTAL: ok\nFAIL=0       CACHE    runner TOTAL: ok\n24           CACHE    path-Green grid_side: ok\n40           CACHE    path-Green grid_side: ok\n64           CACHE    path-Green grid_side: ok\nN=2          CACHE    inverse-moment case: ok\nN=3          CACHE    inverse-moment case: ok\nN=4          CACHE    inverse-moment case: ok\n1            DERIVED  K(j=0) or identity factor: K(j=0)=prod 1 = 1\nSUMMARY: provenance (PR #8144): all 21 listed statement tokens sourced (cache 8, derived 1, definition 4, excluded 8); K(j=0)=1 derived; TOTAL PASS=4 in cache; no UNCOVERED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5082",
+  "at_utc": "20260919T043712Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

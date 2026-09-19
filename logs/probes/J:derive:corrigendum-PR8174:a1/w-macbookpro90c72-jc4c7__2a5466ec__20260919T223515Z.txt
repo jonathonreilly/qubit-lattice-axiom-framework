@@ -1,0 +1,15 @@
+ok   C1 closed forms = menu conditional, 6 rational lines, any b _|_ a
+ok   C2 p*D2-q*D1=(p-q)(q^2(p+q)+4r^3), p*D3-r*D1=r*g: sgn(d2-d1)=sgn(p-q),
+ok   C2b   sgn(d3-d1)=sgn(g); -d(d_i)/dp = pos/pos: all three decrease
+ok   C3 (p,q,r)=(1,2,1): d_1=12/13 > 9/10=max(d_2,d_3); p<q and g=-3<0
+ok   C4 census 1..7: {d_1>max(d_2,d_3)} = {p<q and g<0}, 127 of 343
+ok   C5 dg/dp>0, g(0)<0: p* unique; g(q)=2r(q+2r)(q-r), g(q-2r)=-4r^2(q+r)
+ok   C6 census 1..9 + 2 rational: d_1<=max(d_2,d_3) <=> p>=q or g>=0
+ok   C7 all 19 lines of PRs 8174-8177 have p>=q: eps_2 unmoved
+ok   C8 (1,2,1) 10-site witness: xi=1 > 0=eta' at (1,1,1), P=24/(13^8*1300)
+ok   C9 all of (a,a,a),(a,a,-a),(a,a,b) reach such a site: eps_2 >= max(d_i);
+ok   C9b   eps_2 := max(d_1,d_2,d_3) closes the window [eps_2, d_1) exactly
+ok   C10 off the domain max(d_1,d_2,d_3)=d_1=eps_1: the two levels collapse
+TOTAL: 12/12 exact checks passed
+SUMMARY: PARTIAL - d_1 <= max(d_2,d_3) holds exactly on p >= min(q,p*), p* the unique positive root of g = r p^2 + (q^2+qr+2r^2) p - (q^3+4r^3), and q-2r < p* < q when q > r; off that domain the two-level domination itself fails at an exhibited 10-site configuration of positive probability; eps_2 := max(d_1,d_2,d_3) repairs it and is minimal; every parameter line of PRs 8174-8177 has p >= q, so no number moves.
+HIT: block 30's T1(a) inequality d_1 <= max(d_2,d_3) is false exactly on {p < q and g < 0} (127 of the 343 integer triples in 1..7), and there T1(b)'s coupling xi <= eta' with eps_2 = max(d_2,d_3) fails with positive probability; eps_2 := max(d_1,d_2,d_3) is the minimal repair.

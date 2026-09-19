@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8137",
+ "type": "judgment",
+ "lane": "possibility-symmetric-order-dependence-2",
+ "worker": "w-macbookpro90c72-j7221",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8137/three_site_path.py",
+ "seed": 85654,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0293cc35",
+ "started_utc": "20260919T024054Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - collinear and L-shaped three-site NN paths exist in Z^3"
+ },
+ "review": "Collinear and L-shaped 3-site NN paths exist in Z^3; pattern has no purchase",
+ "what": "PR #8137 ([physics-loop] possibility-symmetric-order-dependence bounde): attack POSSIBILITY_SYMMETRIC_SEQUENTIAL_FORMATION_THAT_VARIES_HAS_ORDER_DEPENDENT_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/possibility-symmetric-order-dependence-20260915; git show origin/physics-loop/possibility-symmetric-order-dependence-20260915:<note>. Create probes/work/pr8137/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8137/<script>.py\"",
+ "stdout_sha256": "900fa344f1607620ad0577f0d022685595329d8b02b16e48067b35e3f726ae9e",
+ "stdout_tail": "collinear path [(0, 0, 0), (1, 0, 0), (2, 0, 0)] NN-path-of-3? True\nL path [(0, 0, 0), (1, 0, 0), (1, 1, 0)] NN-path-of-3? True\ntwo-point menu {+,-}; six-axis orbit size 6\nSUMMARY: pattern has no purchase on this note - collinear and L-shaped three-site NN paths exist in Z^3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7221",
+  "at_utc": "20260919T024054Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

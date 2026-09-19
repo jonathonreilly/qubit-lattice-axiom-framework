@@ -1,0 +1,4 @@
+collinear path [(0, 0, 0), (1, 0, 0), (2, 0, 0)] NN-path-of-3? True
+L path [(0, 0, 0), (1, 0, 0), (1, 1, 0)] NN-path-of-3? True
+two-point menu {+,-}; six-axis orbit size 6
+SUMMARY: pattern has no purchase on this note - collinear and L-shaped three-site NN paths exist in Z^3

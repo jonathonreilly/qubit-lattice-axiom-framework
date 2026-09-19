@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-response-kernel-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j6e02",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-response-kernel/referee_w-jonathonsmac4f50-j6e02/check.py",
+ "seed": 82054,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "15ced1c5",
+ "started_utc": "20260919T014054Z",
+ "elapsed_s": 3.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step; step 9's bullet on the eight-corner symbol is true on the axes and the diagonal and false as a blanket statement, which does not affect its conclusion"
+ },
+ "review": "Referee of formation-response-kernel a2 (grok-4.6): independent checks pass 5 of 5 (R and the E-identity with 1/E = |R|^2/(3(1+(1-u)|R|^2)), the multinomial impulse response and G = (3/2)C(n+m,n)/2^(n+m) with the pin profile, the co-moving Gaussian constants, sum_s C_s = sigma^2/|1-phi|^2 with ratios 9/2, 27/5, 9 on L=4, R_sym = 3/2 on the axis and 7/2 on the diagonal, the 3/(2 pi r) spine, FDR failure), so the partial survives with no failing step (one overstated bullet: R_sym has a 1/k^2 singularity along (kappa,-kappa,0)); this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-response-kernel:a2/; its files are probes/work/derive/formation-response-kernel/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-response-kernel/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "013d266086f1e45844c7a2c2f8457041b408df1474ab7282188b1bb63101dfaa",
+ "stdout_tail": "qrt3/(2 pi t); alpha G/G(0) is harmonic off the pinned site and equals alpha there\nPASS: H3 sum_s C_s = sigma^2/|1 - phi|^2 as an identity in phi; the ratio to 1/E at w = 0 on the nonzero L = 4 modes takes the values [9/2, 27/5, 9]\nPASS: H4 R_sym(lambda, 0, 0) = 3/2 identically; R_sym(lambda, lambda, lambda) -> 7/2; G_sym(n, 0, 0) = 3^-n/2 (four of eight corners reach it with weight 3^-n); n G(n,n,n) at n = 1e2, 1e4, 1e6: 0.27505254, 0.27565832, 0.27566439 -> sqrt3/(2 pi); beyond the attempt, kappa^2 R_sym(kappa, -kappa, 0) -> 3/2: R_sym is singular like 1/k^2 along that direction, so step 9's 'not 1/k^2' holds on the axes and the body diagonal only (the no-isotropic-1/r conclusion stands)\nPASS: H5 10 of the 16 modes of L = 4 have non-real phi; (1 - u)/(1 - phi) takes 8 distinct values, some non-real\nHIT: confirmed - a2's linear-response partial survives: R = 3/(3 - sum e^{i q_j}), the E-identity, G_t multinomial, G = (3/2) C(n+m, n)/2^(n+m) on the forward quadrant with the pin profile alpha G/G(0), sum_s C_s = sigma^2/|1 - phi|^2, FDR failure, R_sym = 3/2 on every axis and 7/2 on the body diagonal, and the one-corner 3/(2 pi r) spine; no isotropic 1/r. One loose phrase: R_sym is singular like 1/k^2 along (kappa, -kappa, 0), so 'not 1/k^2' in step 9 holds only along the directions it names\nSUMMARY: confirmed - no failing step; step 9's bullet on the eight-corner symbol is true on the axes and the diagonal and false as a blanket statement, which does not affect its conclusion\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6e02",
+  "at_utc": "20260919T014057Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of a derivation's exact partial result (linear response of the formation law: quadrant Green function, time-integrated covariance, eight-corner symbol, no isotropic 1/r)",
+  "by": "w-jonathonsmac4f50-j6e02",
+  "at_utc": "20260919T014057Z"
+ }
+}

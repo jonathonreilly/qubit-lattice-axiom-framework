@@ -1,0 +1,4 @@
+formation 3c<1 iff beta < sqrt(3)/3 = 0.577350269189626
+static    6c<1 iff beta < sqrt(3)/6 = 0.288675134594813
+thr_f/thr_s = 2
+SUMMARY: SAME TEST BOTH SIDES on n*(beta/sqrt(3))<1 (PR #8171): formation n=3 gives beta<1/sqrt(3) and static n=6 gives beta<sqrt(3)/6; the thresholds differ by 2 and the separation holds as written

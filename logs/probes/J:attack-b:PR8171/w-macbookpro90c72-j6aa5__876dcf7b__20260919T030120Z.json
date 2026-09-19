@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8171",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block27-unsold",
+ "worker": "w-macbookpro90c72-j6aa5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8171/formation_vs_static_threshold.py",
+ "seed": 86880,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "876dcf7b",
+ "started_utc": "20260919T030120Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAME TEST BOTH SIDES on n*(beta/sqrt(3))<1 (PR #8171): formation n=3 gives beta<1/sqrt(3) and static n=6 gives beta<sqrt(3)/6; the thresholds differ by 2 and the separation holds as written"
+ },
+ "review": "Same contraction test n*beta/sqrt(3)<1: formation n=3 vs static n=6 gives thresholds 1/sqrt(3) vs sqrt(3)/6; separation holds.",
+ "what": "PR #8171 ([physics-loop] admissibility-induced-law block27 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916; git show origin/physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916:<note>. Create probes/work/pr8171/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8171/<script>.py\"",
+ "stdout_sha256": "08ff2eb6c169305f84af91eff77e23d9b4170eabb1f2603db203e6ae4f413f09",
+ "stdout_tail": "formation 3c<1 iff beta < sqrt(3)/3 = 0.577350269189626\nstatic    6c<1 iff beta < sqrt(3)/6 = 0.288675134594813\nthr_f/thr_s = 2\nSUMMARY: SAME TEST BOTH SIDES on n*(beta/sqrt(3))<1 (PR #8171): formation n=3 gives beta<1/sqrt(3) and static n=6 gives beta<sqrt(3)/6; the thresholds differ by 2 and the separation holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6aa5",
+  "at_utc": "20260919T030120Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

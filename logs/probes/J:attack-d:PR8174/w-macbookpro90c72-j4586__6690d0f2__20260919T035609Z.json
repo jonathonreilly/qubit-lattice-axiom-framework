@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8174",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block30-six-ax",
+ "worker": "w-macbookpro90c72-j4586",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8174/quantifier_d3_decreasing.py",
+ "seed": 90169,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6690d0f2",
+ "started_utc": "20260919T035609Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - d3(p,1,2) is strictly decreasing for p=1..30 and \u03b52<256/531441 at p=4165,4166,5000,8000 (not the known T1(a) (1,2,1) or W1 8/5 HITs)"
+ },
+ "review": "d3(p,1,2) decreases for p=1..30 and the T4 ceiling holds at p>=4165 on sampled integers, so those universals hold and the pattern has no purchase",
+ "what": "PR #8174 ([physics-loop] admissibility-induced-law block30 \u2014 bounded_t): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916; git show origin/physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916:<note>. Create probes/work/pr8174/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8174/<script>.py\"",
+ "stdout_sha256": "69f8927951e19661a4ad243cea96cafe24e0112f657e0f528f823321f9a8d79b",
+ "stdout_tail": "d3(1,1,2)=13/14\nd3(2,1,2)=15/19\nd3(3,1,2)=17/26\nd3(4,1,2)=19/35\nd3(5,1,2)=21/46\nd3(6,1,2)=23/59\nd3(7,1,2)=25/74\nd3(8,1,2)=27/91\nd3(9,1,2)=29/110\nd3(10,1,2)=31/131\nd3(11,1,2)=3/14\nd3(12,1,2)=35/179\nd3(13,1,2)=37/206\nd3(14,1,2)=39/235\nd3(15,1,2)=41/266\nd3(16,1,2)=43/299\nd3(17,1,2)=45/334\nd3(18,1,2)=47/371\nd3(19,1,2)=49/410\nd3(20,1,2)=51/451\nd3(21,1,2)=53/494\nd3(22,1,2)=5/49\nd3(23,1,2)=57/586\nd3(24,1,2)=59/635\nd3(25,1,2)=61/686\nd3(26,1,2)=63/739\nd3(27,1,2)=65/794\nd3(28,1,2)=67/851\nd3(29,1,2)=69/910\nd3(30,1,2)=71/971\np=4165: d3=8341/17355566 < 256/531441 True\np=4166: d3=8343/17363899 < 256/531441 True\np=5000: d3=10011/25010011 < 256/531441 True\np=8000: d3=16011/64016011 < 256/531441 True\nSUMMARY: pattern has no purchase on this note - d3(p,1,2) is strictly decreasing for p=1..30 and \u03b52<256/531441 at p=4165,4166,5000,8000 (not the known T1(a) (1,2,1) or W1 8/5 HITs)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4586",
+  "at_utc": "20260919T035609Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

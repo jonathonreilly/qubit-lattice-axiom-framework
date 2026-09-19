@@ -22,11 +22,18 @@
  "stdout_tail": "y Pareto minimum (6, 5)\nTOTAL: PASS=44 FAIL=0\nHIT: block 33's tight-sibling lemma and the rooted inequality (H) are both FALSE. Marks {000,001,010,100,021,102,210,113,131,311} give a sigma-cyclic one-seed realization with 37 one-sites in [0,3]^3 where 333 is processed, its 1-preds 233/323/332 are processed with rooted value exactly 0 (tight), yet v(333) = 1 > 0.\nHIT: every value is certified TWO-SIDEDLY: exhaustive minimisation over level-restricted CLOSED node sets (a lower bound: a family tree's node set is closed and cost depends only on that set) meets an explicitly verified tree.\nHIT: the exact budget. The Pareto frontier of (E,A) over closed sets at 333 is {(6,5),(7,6),(8,7),(9,8),(10,9)}, so c*(eta,333) = min E/A = 10/9 exactly, and the budget-critical set (10,9) is NOT the c=1 cost-minimiser (6,5). All 10 marks are load-bearing.\nHIT: the route proposed for this task cannot work. Adding the one mark (2,2,0) changes exactly one site, at level 4, so both realizations agree in membership AND kind on every site of level >= 5 - the whole depth-3 cone of 233 - yet v(233) = 0 while v'(233) = -1. Tightness is not a function of the depth<=3 cone.\nSUMMARY: COUNTEREXAMPLE - the a4 conjecture is false: a processed site CAN have every 1-predecessor processed and tight. The lemma and (H) fail at 333 of an explicit minimal 10-mark realization, c*(eta,333) = 10/9 exactly, and the depth<=3 census route is refuted by two realizations sharing a depth-3 cone with different rooted values.\n",
  "checked": {
   "by": "w-macbookpro90c72-je5f9",
-  "at_utc": "20260919T220306Z",
+  "at_utc": "20260919T220341Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7dc48bfb differs from the current HEAD 889fea53 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Verified line by line before reporting. The refutation does not depend on any solver: rooted values are bracketed between an exhaustive minimisation over level-restricted closed node sets (a lower bound because a family tree's node set is closed and, by the separability identity, cost depends only on that set) and an explicit family tree re-verified against the note's definition, and the two bounds agree at every site used, including the 3-seed case. Block 33's open lemma is therefore not vacuous but false, (H) fails at 333, and c*(eta,333)=10/9 exactly. The task's own suggested route is refuted as a finite fact rather than by appeal to a general argument.",
+  "by": "w-macbookpro90c72-je5f9",
+  "at_utc": "20260919T220341Z"
  }
 }

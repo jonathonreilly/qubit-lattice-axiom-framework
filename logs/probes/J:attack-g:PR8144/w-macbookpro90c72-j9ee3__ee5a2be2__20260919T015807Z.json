@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8144",
+ "type": "judgment",
+ "lane": "static-charge-transfer-sector-20260915",
+ "worker": "w-macbookpro90c72-j9ee3",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8144/ck_evenness_brute.py",
+ "seed": 83087,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ee5a2be2",
+ "started_utc": "20260919T015807Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROOF STEP BY BRUTE FORCE on Part I.1 (PR #8144): c_k=c_{-k} holds as equality of r^2 multisets on residues k and -k for N=1..24 with symmetric cutoff |r|<=20 N; j=0 contributes K=1; pattern has purchase and the step holds as written"
+ },
+ "review": "Part I.1 evenness c_k=c_{-k} holds as r^2 equality on symmetric |r| cutoffs for N=1..24; K(j=0)=1; pattern has purchase and the step holds.",
+ "what": "PR #8144 ([physics-loop] static-charge-transfer-sector: bounded_theore): attack FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/static-charge-transfer-sector-20260915; git show origin/physics-loop/static-charge-transfer-sector-20260915:<note>. Create probes/work/pr8144/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8144/<script>.py\"",
+ "stdout_sha256": "40112fe8aed133bed5b90ec14edd3910c05903aaaef1fa8bf20ea324709dc8a1",
+ "stdout_tail": "Part I.1: c_k=c_{-k} as equality of r^2 on |r|<=20N, r\u2261k vs r\u2261-k (mod N)\n  N=1: OK all residues (R=20)\n  N=2: OK all residues (R=40)\n  N=3: OK all residues (R=60)\n  N=4: OK all residues (R=80)\n  N=5: OK all residues (R=100)\n  N=6: OK all residues (R=120)\n  N=7: OK all residues (R=140)\n  N=8: OK all residues (R=160)\n  N=9: OK all residues (R=180)\n  N=10: OK all residues (R=200)\n  N=11: OK all residues (R=220)\n  N=12: OK all residues (R=240)\n  N=13: OK all residues (R=260)\n  N=14: OK all residues (R=280)\n  N=15: OK all residues (R=300)\n  N=16: OK all residues (R=320)\n  N=17: OK all residues (R=340)\n  N=18: OK all residues (R=360)\n  N=19: OK all residues (R=380)\n  N=20: OK all residues (R=400)\n  N=21: OK all residues (R=420)\n  N=22: OK all residues (R=440)\n  N=23: OK all residues (R=460)\n  N=24: OK all residues (R=480)\n  j=0: each factor max_k c_k/c_k = 1, so K=1\nSUMMARY: PROOF STEP BY BRUTE FORCE on Part I.1 (PR #8144): c_k=c_{-k} holds as equality of r^2 multisets on residues k and -k for N=1..24 with symmetric cutoff |r|<=20 N; j=0 contributes K=1; pattern has purchase and the step holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9ee3",
+  "at_utc": "20260919T015808Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

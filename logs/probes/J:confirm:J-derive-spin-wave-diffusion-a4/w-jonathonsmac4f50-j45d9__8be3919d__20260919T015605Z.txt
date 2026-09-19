@@ -1,0 +1,5 @@
+PASS: S1 1 - |phi|^2 = (6 - 2 cos k1 - 2 cos k2 - 2 cos(k1 - k2))/9 identically
+PASS: S2 G_2: Fourier 27/32, real space 27/32; G_3: Fourier 11/9, real space 11/9; G_4: Fourier 189/128, real space 189/128 (the author's 27/32, 11/9, 189/128)
+PASS: S3 P is doubly stochastic on the L = 3 torus, and the exact covariance recursion from theta_0 = 0 gives the plane average variance t/N per component at t = 1..6: the linear zero mode diffuses at sigma^2/N per level, D_1 L^2/sigma^2 = 1
+HIT: confirmed - a4's exact partial survives: G_2 = 27/32, G_3 = 11/9, G_4 = 189/128 (Fourier and real-space Lyapunov, exact), the cosine identity, and the linear zero mode's variance sigma^2 t/N (exact covariance recursion on L = 3); the nonlinear statement is not claimed, as the attempt says
+SUMMARY: confirmed - no failing step; scope is the linear law and the exact return sums

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-spin-wave-diffusion-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j45d9",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/spin-wave-diffusion/referee_w-jonathonsmac4f50-j45d9/check.py",
+ "seed": 82965,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8be3919d",
+ "started_utc": "20260919T015605Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step; scope is the linear law and the exact return sums"
+ },
+ "review": "Referee of spin-wave-diffusion a4 (grok-4.6): independent exact checks pass 3 of 3 (the cosine identity; G_2 = 27/32, G_3 = 11/9, G_4 = 189/128 by exact Fourier sums and by real-space Lyapunov solves; the linear zero mode's plane-average variance t/N by an exact covariance recursion on L = 3), so the exact partial survives with no failing step; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:spin-wave-diffusion:a4/; its files are probes/work/derive/spin-wave-diffusion/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/spin-wave-diffusion/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a7f6694026ea3a21f89f9eadf2c876440625a901047f0073093f5445ef602f0c",
+ "stdout_tail": "PASS: S1 1 - |phi|^2 = (6 - 2 cos k1 - 2 cos k2 - 2 cos(k1 - k2))/9 identically\nPASS: S2 G_2: Fourier 27/32, real space 27/32; G_3: Fourier 11/9, real space 11/9; G_4: Fourier 189/128, real space 189/128 (the author's 27/32, 11/9, 189/128)\nPASS: S3 P is doubly stochastic on the L = 3 torus, and the exact covariance recursion from theta_0 = 0 gives the plane average variance t/N per component at t = 1..6: the linear zero mode diffuses at sigma^2/N per level, D_1 L^2/sigma^2 = 1\nHIT: confirmed - a4's exact partial survives: G_2 = 27/32, G_3 = 11/9, G_4 = 189/128 (Fourier and real-space Lyapunov, exact), the cosine identity, and the linear zero mode's variance sigma^2 t/N (exact covariance recursion on L = 3); the nonlinear statement is not claimed, as the attempt says\nSUMMARY: confirmed - no failing step; scope is the linear law and the exact return sums\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j45d9",
+  "at_utc": "20260919T015605Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of exact return sums G_2, G_3, G_4 and the linear zero-mode diffusion rate for the sphere formation law's linearization",
+  "by": "w-jonathonsmac4f50-j45d9",
+  "at_utc": "20260919T015605Z"
+ }
+}

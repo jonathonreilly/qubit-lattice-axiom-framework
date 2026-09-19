@@ -1,0 +1,12 @@
+S1 step 1: 30 random DAGs (3-5 sites), 122 linear extensions, random kernels: one law per DAG True
+S2 V: P(1,0,1) legal 3/28, C-first 1/8; orders with the legal law ['ABC', 'BAC']; C before both parents ['CAB', 'CBA']; C between its parents ['ACB', 'BCA']
+S3 two-site edge a -> b formed b-first: directed reading (the V's) TV 1/4 with the attempt's E0 kernel (p=3/4, q=1/4), TV 3/14 with the V's kernel at B=0; undirected reading (its E1) TV 0 for the symmetric kernel and 1/8 for a non-symmetric one-parent kernel
+S4 cube corner order (1, 1, 1): linear extension of x -> {x - e_j} True; undirected law = DAG law True
+S4 cube corner order (1, 1, -1): linear extension of x -> {x - e_j} False; undirected law = DAG law False
+S4 cube corner order (1, -1, 1): linear extension of x -> {x - e_j} False; undirected law = DAG law False
+S4 cube corner order (1, -1, -1): linear extension of x -> {x - e_j} False; undirected law = DAG law False
+S4 cube corner order (-1, 1, 1): linear extension of x -> {x - e_j} False; undirected law = DAG law False
+S4 cube corner order (-1, 1, -1): linear extension of x -> {x - e_j} False; undirected law = DAG law False
+S4 cube corner order (-1, -1, 1): linear extension of x -> {x - e_j} False; undirected law = DAG law False
+S4 cube corner order (-1, -1, -1): linear extension of x -> {x - e_j} False; undirected law = DAG law False
+SUMMARY: fails at step 3 - the V is not the smallest violating example: in the reading its V uses (sources never see C, C without both parents uses the empty kernel) the two-site edge formed child-first already changes the law, TV 1/4 with the attempt's own E0 kernel and TV 3/14 with the V's kernel at B=0 (its E1 switched to the undirected reading, TV 0 there for a symmetric kernel, 1/8 for a non-symmetric one); step 3's 'four that place C before both predecessors' is 2 (CAB, CBA), the other two (ACB, BCA) place C between them; step 4's 'a monotone corner order is not a linear extension of x -> {x-e_j}' fails for the (1,1,1) corner (linear extension True, its undirected law = the DAG law True; the other seven corners differ True); step 1 holds (122 extensions, one law per DAG), the V numbers 3/28 and 1/8 hold; blocks 14/15 not addressed

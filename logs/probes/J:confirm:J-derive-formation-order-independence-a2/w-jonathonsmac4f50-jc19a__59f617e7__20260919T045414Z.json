@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-formation-order-independence-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jc19a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-order-independence/referee_w-jonathonsmac4f50-jc19a/check.py",
+ "seed": 93654,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "59f617e7",
+ "started_utc": "20260919T045414Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 3 - the V is not the smallest violating example: in the reading its V uses (sources never see C, C without both parents uses the empty kernel) the two-site edge formed child-first already changes the law, TV 1/4 with the attempt's own E0 kernel and TV 3/14 with the V's kernel at B=0 (its E1 switched to the undirected reading, TV 0 there for a symmetric kernel, 1/8 for a non-symmetric one); step 3's 'four that place C before both predecessors' is 2 (CAB, CBA), the other two (ACB, BCA) place C between them; step 4's 'a monotone corner order is not a linear extension of x -> {x-e_j}' fails for the (1,1,1) corner (linear extension True, its undirected law = the DAG law True; the other seven corners differ True); step 1 holds (122 extensions, one law per DAG), the V numbers 3/28 and 1/8 hold; blocks 14/15 not addressed"
+ },
+ "review": "Step 1 holds (122 linear extensions of 30 random DAGs, one law each) and the V numbers 3/28 vs 1/8 recompute, but step 3's 'smallest' fails: in the directed reading its V uses the two-site edge formed child-first changes the law (TV 1/4 with its own E0 kernel, 3/14 with the V kernel at B=0), its E1 having switched to the undirected reading (TV 0 symmetric, 1/8 non-symmetric); only 2 of the 4 violating orders put C before both parents; the (1,1,1) corner IS a linear extension (law = DAG law, other seven differ); blocks 14/15 omitted.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-order-independence:a2/; its files are probes/work/derive/formation-order-independence/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-order-independence/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "166109b89517d97c36c3ad5668a5acfcae97e3c18d3289c82fd59fe60b17c9b6",
+ "stdout_tail": "law False\nS4 cube corner order (1, -1, 1): linear extension of x -> {x - e_j} False; undirected law = DAG law False\nS4 cube corner order (1, -1, -1): linear extension of x -> {x - e_j} False; undirected law = DAG law False\nS4 cube corner order (-1, 1, 1): linear extension of x -> {x - e_j} False; undirected law = DAG law False\nS4 cube corner order (-1, 1, -1): linear extension of x -> {x - e_j} False; undirected law = DAG law False\nS4 cube corner order (-1, -1, 1): linear extension of x -> {x - e_j} False; undirected law = DAG law False\nS4 cube corner order (-1, -1, -1): linear extension of x -> {x - e_j} False; undirected law = DAG law False\nSUMMARY: fails at step 3 - the V is not the smallest violating example: in the reading its V uses (sources never see C, C without both parents uses the empty kernel) the two-site edge formed child-first already changes the law, TV 1/4 with the attempt's own E0 kernel and TV 3/14 with the V's kernel at B=0 (its E1 switched to the undirected reading, TV 0 there for a symmetric kernel, 1/8 for a non-symmetric one); step 3's 'four that place C before both predecessors' is 2 (CAB, CBA), the other two (ACB, BCA) place C between them; step 4's 'a monotone corner order is not a linear extension of x -> {x-e_j}' fails for the (1,1,1) corner (linear extension True, its undirected law = the DAG law True; the other seven corners differ True); step 1 holds (122 extensions, one law per DAG), the V numbers 3/28 and 1/8 hold; blocks 14/15 not addressed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc19a",
+  "at_utc": "20260919T045415Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

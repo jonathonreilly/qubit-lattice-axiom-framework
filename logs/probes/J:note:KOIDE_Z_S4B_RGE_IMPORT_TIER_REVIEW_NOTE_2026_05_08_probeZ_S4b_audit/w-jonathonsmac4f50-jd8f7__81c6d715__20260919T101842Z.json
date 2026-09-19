@@ -1,0 +1,32 @@
+{
+ "task": "J:note:KOIDE_Z_S4B_RGE_IMPORT_TIER_REVIEW_NOTE_2026_05_08_probeZ_S4b_audit",
+ "type": "judgment",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-jd8f7",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_KOIDE_Z_S4B_RGE_IMPORT_TIER_REVIEW_NOTE_/one_loop_replay_semianalytic.py",
+ "seed": 13122,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "81c6d715",
+ "started_utc": "20260919T101842Z",
+ "elapsed_s": 10.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the semi-analytic one-loop replay (closed-form gauge couplings and y_t, 30-digit RK4 for lambda) under the reviewed inputs gives y_t(M_Pl) = 0.4032072, lambda(v) = 0.14060931, m_H = 130.6039 GeV (4.275 % above 125.25), matching the table's 0.140609 / 130.60 / +4.27 %; beyond the table, the runner's y_t band moves the one-loop m_H over [126.52, 134.66] GeV, the reduced Planck mass as boundary scale gives 130.52 GeV, and 1 % in g3 moves it to 132.03/129.18 GeV; the falsifier does not fire"
+ },
+ "review": "Read the script and its output: a semi-analytic one-loop replay under the reviewed inputs (closed-form gauge couplings, closed-form y_t through w = 1/y_t^2 with Gauss-Legendre quadrature, 30-digit RK4 with Richardson for lambda from lambda(M_Pl) = 0) gives y_t(M_Pl) = 0.4032072, g_3(M_Pl) = 0.4892061, lambda(v) = 0.14060931 and m_H = 130.6039 GeV (+4.27 % to 125.25), reproducing the table; the runner's y_t band moves the one-loop m_H over 126.52 to 134.66 GeV, the reduced Planck mass as boundary scale gives 130.52 GeV, and 1 % in g_3 gives 132.03/129.18 GeV; numbers only, the falsifier does not fire.",
+ "what": "Note on main: docs/KOIDE_Z_S4B_RGE_IMPORT_TIER_REVIEW_NOTE_2026-05-08_probeZ_S4b_audit.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_KOIDE_Z_S4B_RGE_IMPORT_TIER_REVIEW_NOTE_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_KOIDE_Z_S4B_RGE_IMPORT_TIER_REVIEW_NOTE_/<script>.py\"",
+ "stdout_sha256": "eac996c7f1f0f3f5796eda540b67978a232a8ab3e91594e9accc89217e1bb76b",
+ "stdout_tail": "1. reviewed inputs: v = 246.28281829 GeV, g(v) = ['0.464', '0.648', '1.1393656'], y_t(v) = 0.9176; ln(M_Pl/v) = 38.44222452\n   one-loop: g(M_Pl) = ['0.61446039', '0.5048656', '0.48920612'], y_t(M_Pl) closed form = 0.4032072405 (runner cache 0.403207, g_3 0.489206); y_t returned to v by RK4: 0.9176\n   lambda(v) = 0.1406093137 (RK4 step-halving change 2.63e-14), m_H = 130.6039 GeV, gap to 125.25: 4.2746 %\n2. one-loop m_H under input variations: {'y_t -1.2147511%': '126.524', 'y_t +1.2147511%': '134.658', 'M_Pl -> 2.435e18 (boundary scale only)': '130.524', 'g1 -1%': '130.766', 'g1 +1%': '130.436', 'g2 -1%': '131.016', 'g2 +1%': '130.177', 'g3 -1%': '132.035', 'g3 +1%': '129.18'}\nSUMMARY: the semi-analytic one-loop replay (closed-form gauge couplings and y_t, 30-digit RK4 for lambda) under the reviewed inputs gives y_t(M_Pl) = 0.4032072, lambda(v) = 0.14060931, m_H = 130.6039 GeV (4.275 % above 125.25), matching the table's 0.140609 / 130.60 / +4.27 %; beyond the table, the runner's y_t band moves the one-loop m_H over [126.52, 134.66] GeV, the reduced Planck mass as boundary scale gives 130.52 GeV, and 1 % in g3 moves it to 132.03/129.18 GeV; the falsifier does not fire\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd8f7",
+  "at_utc": "20260919T101903Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

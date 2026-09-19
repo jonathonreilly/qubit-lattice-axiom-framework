@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8151",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block17-static",
+ "worker": "w-macbookpro90c72-jac4a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8151/t2_site_plane_bond_partition.py",
+ "seed": 83178,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b08c65db",
+ "started_utc": "20260919T015938Z",
+ "elapsed_s": 13.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known T3 chessboard HIT \u2014 T2's finite bond-split (every nn bond in exactly one of W_P, W+, W-; \u03b8 bijection W+ \u2192 W-; W^-(v)=W^+(\u03b8v) on the ring of 4 and the 4\u00d72 torus at (3,1,2) and (5,2,4), 3361824 configs) holds literally by enumeration"
+ },
+ "review": "T2 site-plane bond-split (partition into W_P, W+, W-; \u03b8 bijection; W^-(v)=W^+(\u03b8v) on ring-4 and 4x2 at (3,1,2) and (5,2,4), 3361824 configs) holds; no new defect beyond known T3 chessboard HIT",
+ "what": "PR #8151 ([physics-loop] admissibility-induced-law block17 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915; git show origin/physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915:<note>. Create probes/work/pr8151/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8151/<script>.py\"",
+ "stdout_sha256": "b6a2d8b9d20ff0a80a94d009186c8147ed61add09aca58ea7c4f990a8c9da39c",
+ "stdout_tail": "shape (4,): |B|=4 |W_P|=0 |W+|=2 |W-|=2 leftover=0 double=0 bijection=True partition=True involution=True preserves_B=True\nshape (4, 2): |B|=12 |W_P|=2 |W+|=5 |W-|=5 leftover=0 double=0 bijection=True partition=True involution=True preserves_B=True\nshape (4, 4): |B|=32 |W_P|=8 |W+|=12 |W-|=12 leftover=0 double=0 bijection=True partition=True involution=True preserves_B=True\nshape (6, 2): |B|=18 |W_P|=2 |W+|=8 |W-|=8 leftover=0 double=0 bijection=True partition=True involution=True preserves_B=True\nshape (4, 2, 2): |B|=32 |W_P|=8 |W+|=12 |W-|=12 leftover=0 double=0 bijection=True partition=True involution=True preserves_B=True\nshape (6, 4): |B|=48 |W_P|=8 |W+|=20 |W-|=20 leftover=0 double=0 bijection=True partition=True involution=True preserves_B=True\nshape (8, 2): |B|=24 |W_P|=2 |W+|=11 |W-|=11 leftover=0 double=0 bijection=True partition=True involution=True preserves_B=True\nweight identity (4,) (3, 1, 2): configs=1296 fails=0\nweight identity (4,) (5, 2, 4): configs=1296 fails=0\nweight identity (4, 2) (3, 1, 2): configs=1679616 fails=0\nweight identity (4, 2) (5, 2, 4): configs=1679616 fails=0\nSUMMARY: pattern has no purchase on this note beyond the known T3 chessboard HIT \u2014 T2's finite bond-split (every nn bond in exactly one of W_P, W+, W-; \u03b8 bijection W+ \u2192 W-; W^-(v)=W^+(\u03b8v) on the ring of 4 and the 4\u00d72 torus at (3,1,2) and (5,2,4), 3361824 configs) holds literally by enumeration\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jac4a",
+  "at_utc": "20260919T015951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

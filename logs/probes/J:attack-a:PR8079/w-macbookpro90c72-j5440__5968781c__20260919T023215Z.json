@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8079",
+ "type": "judgment",
+ "lane": "native-finite-moment-ward-20260910",
+ "worker": "w-macbookpro90c72-j5440",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8079/witness_defects_ellipse.py",
+ "seed": 85135,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5968781c",
+ "started_utc": "20260919T023215Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the 15 two-link defects and 90 ordered disjoint pairs exist as C(6,2) with disjointness, T is 6-regular, the rho4 ellipse is a confocal [a,2a] ellipse with Re z>|Im z|, the Gauss-panel census and Haar moments M1=6 M2=42 are realized, and Z^3 is triangle-free"
+ },
+ "review": "15 two-link defects, 90 disjoint pairs, confocal rho4 ellipse, Gauss-panel census and Haar M2=42 are realized in the declared setting; pattern has no purchase",
+ "what": "PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p bo): attack NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-finite-moment-ward-20260910; git show origin/codex/native-finite-moment-ward-20260910:<note>. Create probes/work/pr8079/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8079/<script>.py\"",
+ "stdout_sha256": "1450850b69deffb2922b3f9ddb07052269ea904521fb07315f06b0b8bcda9b5a",
+ "stdout_tail": "two-link defects C(6,2)=15\nordered disjoint pairs 90\nT is 6-regular on 15 vertices (||T||=6 for the 0-1 adjacency): True\nZ^3 (4^3 torus) has no triangles: True\nellipse c^2-p^2-q^2 = 31/128\nrho4 ellipse exists, confocal with [a,2a], Re z>|Im z|: True\n67 panels, Gauss26 deg 51, 1742 nodes, 3484 oracles: True\nEX=6 EX^2=42\nj=2\u221a2, J*J=8h^2; M1=6 M2=42: True\ndyadic panels [2^k, 2^{k+1}] from 2^{-64} to 8 exist: True\nSUMMARY: pattern has no purchase on this note: the 15 two-link defects and 90 ordered disjoint pairs exist as C(6,2) with disjointness, T is 6-regular, the rho4 ellipse is a confocal [a,2a] ellipse with Re z>|Im z|, the Gauss-panel census and Haar moments M1=6 M2=42 are realized, and Z^3 is triangle-free\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5440",
+  "at_utc": "20260919T023215Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

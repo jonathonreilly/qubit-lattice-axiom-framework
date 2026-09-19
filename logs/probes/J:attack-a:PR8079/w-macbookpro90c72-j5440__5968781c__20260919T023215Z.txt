@@ -1,0 +1,11 @@
+two-link defects C(6,2)=15
+ordered disjoint pairs 90
+T is 6-regular on 15 vertices (||T||=6 for the 0-1 adjacency): True
+Z^3 (4^3 torus) has no triangles: True
+ellipse c^2-p^2-q^2 = 31/128
+rho4 ellipse exists, confocal with [a,2a], Re z>|Im z|: True
+67 panels, Gauss26 deg 51, 1742 nodes, 3484 oracles: True
+EX=6 EX^2=42
+j=2√2, J*J=8h^2; M1=6 M2=42: True
+dyadic panels [2^k, 2^{k+1}] from 2^{-64} to 8 exist: True
+SUMMARY: pattern has no purchase on this note: the 15 two-link defects and 90 ordered disjoint pairs exist as C(6,2) with disjointness, T is 6-regular, the rho4 ellipse is a confocal [a,2a] ellipse with Re z>|Im z|, the Gauss-panel census and Haar moments M1=6 M2=42 are realized, and Z^3 is triangle-free

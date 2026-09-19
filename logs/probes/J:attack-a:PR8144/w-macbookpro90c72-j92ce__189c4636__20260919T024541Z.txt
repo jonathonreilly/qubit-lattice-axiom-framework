@@ -1,0 +1,5 @@
+OK: simple length-4 spatial path along e1 exists in Z^3
+OK: two distinct NN paths from (0,0,0) to (2,1,0) exist (path comparison)
+OK: spatial plaquette is a bipartite 4-cycle (no triangles)
+OK: four-edge spatial square exists in a coordinate plane of Z^3
+SUMMARY: pattern (a) WITNESS REALIZABILITY — length-R spatial paths, two distinct equal-endpoint NN paths, a bipartite 4-cycle plaquette (no triangles) and a four-edge spatial square all exist in Z^3; 0 failures; attack does not fire

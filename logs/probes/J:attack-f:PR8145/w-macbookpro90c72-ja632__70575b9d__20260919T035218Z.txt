@@ -1,0 +1,22 @@
+== N=2 exact: c0,c1 and tanh identity ==
+  c0=(w0+w1)/2 c1=(w0-w1)/2 (1/N DFT)
+  N=2 1/N DFT inverts: w0=c0+c1, w1=c0-c1
+== Villain c_k: 1/N DFT vs aliased Poisson, reconstruction, evenness ==
+  N=2 beta=0.5: DFT-vs-Poisson 1.90e-16 rec+ 2.22e-16 rec- 2.22e-16 even 0.00e+00 min_c 4.152e-01 R(0)=1.0
+  N=2 beta=1.0: DFT-vs-Poisson 4.38e-16 rec+ 2.22e-16 rec- 2.22e-16 even 0.00e+00 min_c 4.928e-01 R(0)=1.0
+  N=2 beta=2.0: DFT-vs-Poisson 1.11e-16 rec+ 6.26e-17 rec- 6.26e-17 even 0.00e+00 min_c 4.999e-01 R(0)=1.0
+  N=3 beta=0.5: DFT-vs-Poisson 3.93e-16 rec+ 3.72e-16 rec- 3.72e-16 even 0.00e+00 min_c 2.179e-01 R(0)=1.0
+  N=3 beta=1.0: DFT-vs-Poisson 1.36e-16 rec+ 2.55e-16 rec- 2.55e-16 even 0.00e+00 min_c 2.961e-01 R(0)=1.0
+  N=3 beta=2.0: DFT-vs-Poisson 1.62e-16 rec+ 2.84e-16 rec- 2.84e-16 even 0.00e+00 min_c 3.292e-01 R(0)=1.0
+  N=4 beta=0.5: DFT-vs-Poisson 1.48e-16 rec+ 1.69e-16 rec- 1.69e-16 even 0.00e+00 min_c 2.067e-02 R(0)=1.0
+  N=4 beta=1.0: DFT-vs-Poisson 1.39e-16 rec+ 1.06e-16 rec- 1.06e-16 even 0.00e+00 min_c 1.080e-01 R(0)=1.0
+  N=4 beta=2.0: DFT-vs-Poisson 1.90e-16 rec+ 1.08e-16 rec- 1.08e-16 even 0.00e+00 min_c 2.076e-01 R(0)=1.0
+  N=6 beta=0.5: DFT-vs-Poisson 4.43e-16 rec+ 7.85e-16 rec- 7.85e-16 even 0.00e+00 min_c 1.393e-04 R(0)=1.0
+  N=6 beta=1.0: DFT-vs-Poisson 4.52e-16 rec+ 7.78e-16 rec- 7.78e-16 even 0.00e+00 min_c 8.864e-03 R(0)=1.0
+  N=6 beta=2.0: DFT-vs-Poisson 4.43e-16 rec+ 7.69e-16 rec- 7.69e-16 even 0.00e+00 min_c 5.947e-02 R(0)=1.0
+== C_ρ 1/N^V average and conjugation on the 4-cycle ==
+  N=2 beta=0.8: C0=1.261175e-01 |C-|->=7.722467e-18 |C+|->=7.722467e-18 r2=0.9985 r6=1.0000
+  N=2 beta=1.6: C0=1.250004e-01 |C-|->=7.654068e-18 |C+|->=7.654068e-18 r2=1.0000 r6=1.0000
+  N=3 beta=0.8: C0=5.223391e-02 |C-|->=1.130263e-17 |C+|->=1.130263e-17 r2=0.9698 r6=1.0000
+  N=3 beta=1.6: C0=3.744307e-02 |C-|->=6.129714e-18 |C+|->=6.129714e-18 r2=0.9991 r6=1.0000
+SUMMARY: NORMALIZATION (PR #8145): Villain c_k 1/N DFT matches aliased Poisson (2πβ)^{-1/2} at N=2,3,4,6; reconstruction with e^{±2πi km/N} agrees (c even); K(j=0)=1; C_ρ as 1/N^V average on the 4-cycle obeys |C_ρ|<=r^{|A|} C_0 and C_ρ=C_{-ρ}; pattern has purchase and the 2π / 1/N / conjugation conventions hold as written

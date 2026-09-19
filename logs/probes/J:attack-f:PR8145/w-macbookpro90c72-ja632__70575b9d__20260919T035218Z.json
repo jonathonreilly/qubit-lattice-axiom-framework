@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8145",
+ "type": "judgment",
+ "lane": "clock-history-field-20260915",
+ "worker": "w-macbookpro90c72-ja632",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8145/fourier_ck_and_crho.py",
+ "seed": 89938,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "70575b9d",
+ "started_utc": "20260919T035218Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "NORMALIZATION (PR #8145): Villain c_k 1/N DFT matches aliased Poisson (2\u03c0\u03b2)^{-1/2} at N=2,3,4,6; reconstruction with e^{\u00b12\u03c0i km/N} agrees (c even); K(j=0)=1; C_\u03c1 as 1/N^V average on the 4-cycle obeys |C_\u03c1|<=r^{|A|} C_0 and C_\u03c1=C_{-\u03c1}; pattern has purchase and the 2\u03c0 / 1/N / conjugation conventions hold as written"
+ },
+ "review": "NORMALIZATION: Villain 1/N DFT matches Poisson, e^{\u00b12\u03c0i} reconstruction and C_\u03c1 1/N^V average hold on the 4-cycle; no convention defect.",
+ "what": "PR #8145 ([physics-loop] clock-history-field: bounded_theorem, bounded): attack FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/clock-history-field-20260915; git show origin/physics-loop/clock-history-field-20260915:<note>. Create probes/work/pr8145/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8145/<script>.py\"",
+ "stdout_sha256": "bda8ff787e85d9ee89daa38f9d25cfd606619e38697929f070feab6d2c4d7e08",
+ "stdout_tail": "1.0\n  N=3 beta=2.0: DFT-vs-Poisson 1.62e-16 rec+ 2.84e-16 rec- 2.84e-16 even 0.00e+00 min_c 3.292e-01 R(0)=1.0\n  N=4 beta=0.5: DFT-vs-Poisson 1.48e-16 rec+ 1.69e-16 rec- 1.69e-16 even 0.00e+00 min_c 2.067e-02 R(0)=1.0\n  N=4 beta=1.0: DFT-vs-Poisson 1.39e-16 rec+ 1.06e-16 rec- 1.06e-16 even 0.00e+00 min_c 1.080e-01 R(0)=1.0\n  N=4 beta=2.0: DFT-vs-Poisson 1.90e-16 rec+ 1.08e-16 rec- 1.08e-16 even 0.00e+00 min_c 2.076e-01 R(0)=1.0\n  N=6 beta=0.5: DFT-vs-Poisson 4.43e-16 rec+ 7.85e-16 rec- 7.85e-16 even 0.00e+00 min_c 1.393e-04 R(0)=1.0\n  N=6 beta=1.0: DFT-vs-Poisson 4.52e-16 rec+ 7.78e-16 rec- 7.78e-16 even 0.00e+00 min_c 8.864e-03 R(0)=1.0\n  N=6 beta=2.0: DFT-vs-Poisson 4.43e-16 rec+ 7.69e-16 rec- 7.69e-16 even 0.00e+00 min_c 5.947e-02 R(0)=1.0\n== C_\u03c1 1/N^V average and conjugation on the 4-cycle ==\n  N=2 beta=0.8: C0=1.261175e-01 |C-|->=7.722467e-18 |C+|->=7.722467e-18 r2=0.9985 r6=1.0000\n  N=2 beta=1.6: C0=1.250004e-01 |C-|->=7.654068e-18 |C+|->=7.654068e-18 r2=1.0000 r6=1.0000\n  N=3 beta=0.8: C0=5.223391e-02 |C-|->=1.130263e-17 |C+|->=1.130263e-17 r2=0.9698 r6=1.0000\n  N=3 beta=1.6: C0=3.744307e-02 |C-|->=6.129714e-18 |C+|->=6.129714e-18 r2=0.9991 r6=1.0000\nSUMMARY: NORMALIZATION (PR #8145): Villain c_k 1/N DFT matches aliased Poisson (2\u03c0\u03b2)^{-1/2} at N=2,3,4,6; reconstruction with e^{\u00b12\u03c0i km/N} agrees (c even); K(j=0)=1; C_\u03c1 as 1/N^V average on the 4-cycle obeys |C_\u03c1|<=r^{|A|} C_0 and C_\u03c1=C_{-\u03c1}; pattern has purchase and the 2\u03c0 / 1/N / conjugation conventions hold as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja632",
+  "at_utc": "20260919T035228Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

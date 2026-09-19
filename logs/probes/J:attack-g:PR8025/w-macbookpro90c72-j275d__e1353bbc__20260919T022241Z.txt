@@ -1,0 +1,15 @@
+D_R closed form = sum_{p+q<=R} dim(p,q)^2 for R=0..15: True
+g_R numerator ceil(3(R+1)^2/4)+3(R+1) for R=0..11: True
+Theta_n' = Theta_{n-1} (truncated series n=1..7): True
+integral_0^T Theta_r(c s) ds = Theta_{r+1}(c T)/c : True
+(S) prefactor N/4 from N_cross<=4N: True
+1_{n>=d} <= exp(n-d) on n,d in 0..11: True
+torus 6^3: 648 links, 648 faces, 4+4 incidence: True
+every face has diameter 1: True
+subsequent-face weighted choice sum = 16 (torus): True
+|X|=1 r=0 N=1 bound 3(2r+1)^3=3
+|X|=1 r=1 N=13 bound 3(2r+1)^3=81
+|X|=1 r=2 N=63 bound 3(2r+1)^3=375
+|X|=1 r=3 N=173 bound 3(2r+1)^3=1029
+ball sizes, F<=N, crossing dist>=r for r=0..3: True
+SUMMARY: pattern has no purchase on this note: D_R closed form, g_R numerator, Theta derivative/integral/(S) prefactor, cubic 4+4 incidence, face diameter 1, weighted choice 16, and N<=3(2r+1)^3 with F<=N and crossing dist>=r all hold as written on the enumerated boxes

@@ -1,0 +1,3 @@
+cube orbits: axes 6 corners 8 edges 12
+finite-orbit test: cube=True sphere=False
+SUMMARY: pattern has no purchase on this note - the same finite-orbit test is true of the cube menus (6/8/12) and false of the unsoldered sphere

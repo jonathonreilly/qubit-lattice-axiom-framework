@@ -1,0 +1,1 @@
+SUMMARY: SAMPLED EVIDENCE (PR #8180): the only sampling language is the executed 256x256 kernel_sim table, already a known HIT on shell ranges and non-monotone |k|; no remaining never/always conjecture to hill-climb; pattern has no purchase beyond the known HIT

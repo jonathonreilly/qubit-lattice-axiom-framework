@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-tight-sibling-lemma-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j1376",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/tight-sibling-lemma/referee_w-jonathonsmac4f50-j1376/check.py",
+ "seed": 96749,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "602683ba",
+ "started_utc": "20260919T054550Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the local census survives; its scope is the isolated cone, and the lemma on Z^3 is untouched, as the attempt says (trees may use 1-sites outside the cone)"
+ },
+ "review": "Independent automaton and family enumeration reproduce the census exactly: 512 of 1024 patterns, 1248 processed-predecessor instances with values {-5:240,-6:96,-8:432,-9:144,-11:288,-14:48} (never tight), successor values {-4..-13} as stated; the definition's level cap gives the same values here (the only higher 1-site, z, never lowers a predecessor tree): HIT confirmed, scope the isolated cone.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:tight-sibling-lemma:a3/; its files are probes/work/derive/tight-sibling-lemma/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/tight-sibling-lemma/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "54599b73edd3dedab7f53cda4e008283bee0e7f331143923ae3f2b5f9173d67a",
+ "stdout_tail": "R1 patterns with z processed and >= 2 processed 1-predecessors: 512 of 1024; predecessor instances: 1248\nR2 predecessor rooted values, capped (the definition): {-14: 48, -11: 288, -9: 144, -8: 432, -6: 96, -5: 240}; uncapped: {-14: 48, -11: 288, -9: 144, -8: 432, -6: 96, -5: 240}; author: {-14: 48, -11: 288, -9: 144, -8: 432, -6: 96, -5: 240}; tight: 0\n   successor z values: {-13: 16, -10: 96, -9: 48, -8: 24, -7: 168, -6: 48, -4: 112}; author: {-13: 16, -10: 96, -9: 48, -8: 24, -7: 168, -6: 48, -4: 112}\nHIT: confirmed - on the isolated depth-2 cone of z (marks on 10 sites, automaton on the 20-site depth-3 cone), 512 of 1024 mark patterns make z processed with >= 2 processed 1-predecessors, and all 1248 such predecessors have rooted value in {-5,-6,-8,-9,-11,-14} (never tight), z in {-13..-4}, recomputed with an independent automaton and family enumeration; the values are the same with and without the definition's level cap (the only higher 1-site, z, never lowers a predecessor's tree)\nSUMMARY: confirmed - the local census survives; its scope is the isolated cone, and the lemma on Z^3 is untouched, as the attempt says (trees may use 1-sites outside the cone)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1376",
+  "at_utc": "20260919T054550Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms tight-sibling a3's local census: on the isolated depth-2 cone of z, 512/1024 mark patterns give z processed with >= 2 processed 1-predecessors, and all 1248 such predecessors have rooted value in {-5,-6,-8,-9,-11,-14}, never tight (z never positive); identical with and without the level cap for these roots. Scope: isolated cone only; the Z^3 lemma is untouched.",
+  "by": "w-jonathonsmac4f50-j1376",
+  "at_utc": "20260919T054550Z"
+ }
+}

@@ -1,0 +1,5 @@
+R1 patterns with z processed and >= 2 processed 1-predecessors: 512 of 1024; predecessor instances: 1248
+R2 predecessor rooted values, capped (the definition): {-14: 48, -11: 288, -9: 144, -8: 432, -6: 96, -5: 240}; uncapped: {-14: 48, -11: 288, -9: 144, -8: 432, -6: 96, -5: 240}; author: {-14: 48, -11: 288, -9: 144, -8: 432, -6: 96, -5: 240}; tight: 0
+   successor z values: {-13: 16, -10: 96, -9: 48, -8: 24, -7: 168, -6: 48, -4: 112}; author: {-13: 16, -10: 96, -9: 48, -8: 24, -7: 168, -6: 48, -4: 112}
+HIT: confirmed - on the isolated depth-2 cone of z (marks on 10 sites, automaton on the 20-site depth-3 cone), 512 of 1024 mark patterns make z processed with >= 2 processed 1-predecessors, and all 1248 such predecessors have rooted value in {-5,-6,-8,-9,-11,-14} (never tight), z in {-13..-4}, recomputed with an independent automaton and family enumeration; the values are the same with and without the definition's level cap (the only higher 1-site, z, never lowers a predecessor's tree)
+SUMMARY: confirmed - the local census survives; its scope is the isolated cone, and the lemma on Z^3 is untouched, as the attempt says (trees may use 1-sites outside the cone)

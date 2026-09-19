@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-lightcone-formation-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j4e7c",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-formation/referee_w-jonathonsmac4f50-j4e7c/check.py",
+ "seed": 86109,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4e8fb045",
+ "started_utc": "20260919T024829Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 7 - Gaussian domination on Gamma is proved only for layer-symmetric fields: the theta_Gamma reflections preserve the bipartition A/B of V(Gamma) (layer x spatial parity), vertical edges never cross a plane, and the field 1_A is invariant under the whole group but not constant (D3, D4), so 'invariant => constant' is false and Z(phi) <= Z(0) is not established for layer-antisymmetric phi; the odd-sector bound 2/(beta(14 - E)), the bound (1/(2beta))(1/E + 1/(14-E)) on pi, the LRO threshold 3 sqrt3 pi/16 + 3/4 and the upper side of step 10's sandwich rest on it. Holds: reversibility, the Gibbs / doubled-graph identity, the spectrum {E, 14 - E}, RP for theta_Gamma, the even-sector bound <|s_+(k)|^2> <= 1/(beta E(k)) (D5), the linear prefactor range [7/2, 49/2]; the missing lemma is Z(t 1_A) <= Z(0) (the staggered twist), not violated in the 1D Ising analogue (I1)"
+ },
+ "review": "Lightcone a2's reversibility, doubled graph, spectrum {E, 14-E}, RP for theta_Gamma, Dobrushin beta<1/7 and linear prefactor range reproduce, but step 7's 'invariant field is constant' is false (every theta_Gamma preserves the layer-times-parity bipartition, so 1_A is invariant; vertical edges never cross a plane), leaving Gaussian domination proved only for layer-symmetric fields: the odd-sector and pi bounds and the LRO threshold are unproved (no violation in a 1D Ising analogue), so the claim fails at step 7 with no HIT.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-formation:a2/; its files are probes/work/derive/lightcone-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "094288ed9dfda7e31b566667a8023e0601645bdfdd7ef87c533d7f83d03f7cbd",
+ "stdout_tail": "ue 2 (odd sector, k = (pi,pi,pi))\nPASS D5: (Z/4)^3, all planes: reflected fields phi^+- of layer-symmetric (antisymmetric) fields are layer-symmetric (antisymmetric); on the symmetric class the vertical edges carry no twist and the argument closes, on the antisymmetric class the staggered field 1_A - 1_B remains\nPASS D6: 7/(2(1 - E/14)) increases from 7/2 (E -> 0) to 49/2 (E = 12)\nINFO I1: Ising on the 1D doubled graph (L = 4, 6; beta 0.1..2): largest infrared ratio over even and odd modes 0.7824 < 1, largest staggered-twist ratio Z(t 1_A)/Z(0) 0.9991 < 1 (no violation of the unproved bounds found)\nSUMMARY: fails at step 7 - Gaussian domination on Gamma is proved only for layer-symmetric fields: the theta_Gamma reflections preserve the bipartition A/B of V(Gamma) (layer x spatial parity), vertical edges never cross a plane, and the field 1_A is invariant under the whole group but not constant (D3, D4), so 'invariant => constant' is false and Z(phi) <= Z(0) is not established for layer-antisymmetric phi; the odd-sector bound 2/(beta(14 - E)), the bound (1/(2beta))(1/E + 1/(14-E)) on pi, the LRO threshold 3 sqrt3 pi/16 + 3/4 and the upper side of step 10's sandwich rest on it. Holds: reversibility, the Gibbs / doubled-graph identity, the spectrum {E, 14 - E}, RP for theta_Gamma, the even-sector bound <|s_+(k)|^2> <= 1/(beta E(k)) (D5), the linear prefactor range [7/2, 49/2]; the missing lemma is Z(t 1_A) <= Z(0) (the staggered twist), not violated in the 1D Ising analogue (I1)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4e7c",
+  "at_utc": "20260919T024829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

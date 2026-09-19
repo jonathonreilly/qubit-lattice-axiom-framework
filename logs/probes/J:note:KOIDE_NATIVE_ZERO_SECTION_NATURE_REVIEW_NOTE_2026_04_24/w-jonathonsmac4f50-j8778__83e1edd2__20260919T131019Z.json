@@ -1,0 +1,38 @@
+{
+ "task": "J:note:KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW_NOTE_2026_04_24",
+ "type": "judgment",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-j8778",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW_/exhaustive_z3_primitive_idempotents_and_route.py",
+ "seed": 23419,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "83e1edd2",
+ "started_utc": "20260919T131019Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "A (D1): on 659 rational labels Q = 2/3 and K_TL = 0 hold exactly at z = 0 only (['0'], ['0']); z = -1/3 gives w = 1/3, Q = 1",
+   "B (D2)/(D3) exhaustive over 390625 exact Q(sqrt3) matrices: commutant 625 = {aI + bJ} on the grid, equivariant idempotents 2 = {0, I}, of 162 grid idempotents (160 rank-one) none rank-one commutes with R; 482 rational line projectors: none commutes; no spectator projector on the real primitive: True",
+   "C (D4)/(D5): eta_Z3 = 2/9 exactly in Q(sqrt(-3)); F(0) = 0 gives c = 0 and delta_open = 2/9; unbased c = 1/9 gives 1/3",
+   "D beyond: 2 pi/n rotations n = 3..12 commutant dims [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]; multiplicity-two doublet commutant dim 8 with spectator diag(I,0): True; R^3 permutation rep trivial-line projector equivariant: True; weights-(1,2) eta at odd n: 3: 2/9, 5: 1/5, 7: 1/7, 9: 2/27, 11: 0, 13: -1/13; weights-(1,-1) = (n^2-1)/(12n): True",
+   "hits=0; runtime 0s"
+  ]
+ },
+ "review": "Output matches the task. The review's spectator-projector falsifier is implemented literally with self-written exact Q(sqrt3) and Q(sqrt(-3)) arithmetic (disjoint from the runners' sympy solve). An exhaustive search over all 390625 2x2 matrices with entries (p + q sqrt3)/2, |p|,|q| <= 2, finds the commutant of the 2pi/3 rotation equal to {aI + bJ} (625 members) with equivariant idempotents only 0 and I; none of the grid's 160 rank-one idempotents and none of 482 rational line projectors commutes. The route values hold exactly: Q = 2/3 and K_TL = 0 at z = 0 only among 659 rational labels, z = -1/3 gives Q = 1, eta_Z3 = 2/9, c = 0 gives delta_open = 2/9, and c = 1/9 gives 1/3. As numbers beyond the primitive, the multiplicity-two doublet (commutant dim 8) and the R^3 permutation representation do carry equivariant spectator projectors, so their absence is specific to the single real primitive. No falsifier fired.",
+ "what": "Note on main: docs/KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW_NOTE_2026-04-24.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_KOIDE_NATIVE_ZERO_SECTION_NATURE_REVIEW_/<script>.py\"",
+ "stdout_sha256": "6681d93aa7f512c81026345168a558cb2eafae772068375d88f38ed3875bdb42",
+ "stdout_tail": "============================================\nC  (D4)/(D5) the finite Z3 scalar and the endpoint law\n  omega^3 = 1: True; (w^k - 1)(w^2k - 1) = 3+0sqrt(-3), 3+0sqrt(-3); eta_Z3 = 2/9 + 0 sqrt(-3); delta_open = 2/9; unbased c = 1/9 gives 1/3\nSUMMARY: C (D4)/(D5): eta_Z3 = 2/9 exactly in Q(sqrt(-3)); F(0) = 0 gives c = 0 and delta_open = 2/9; unbased c = 1/9 gives 1/3\n==============================================================================\nD  beyond the single primitive (numbers only)\n  rotations by 2pi/n: commutant dimension n=3: 2, n=4: 2, n=5: 2, n=6: 2, n=7: 2, n=8: 2, n=9: 2, n=10: 2, n=11: 2, n=12: 2\n  R+R on R^4: commutant dimension 8 (M_2(C)); diag(I, 0) is an equivariant idempotent: True; permutation rep on R^3: the trivial-line projector J/3 is equivariant: True\n  eta with weights (1,2), odd n: n=3: 2/9, n=5: 1/5, n=7: 1/7, n=9: 2/27, n=11: 0, n=13: -1/13, n=15: -7/45, n=17: -4/17, n=19: -6/19, n=21: -25/63, n=23: -11/23, n=25: -14/25\n  eta with weights (1,-1) equals (n^2-1)/(12n) for n = 2..30: True (n = 3: 8/36 = 2/9)\nSUMMARY: D beyond: 2 pi/n rotations n = 3..12 commutant dims [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]; multiplicity-two doublet commutant dim 8 with spectator diag(I,0): True; R^3 permutation rep trivial-line projector equivariant: True; weights-(1,2) eta at odd n: 3: 2/9, 5: 1/5, 7: 1/7, 9: 2/27, 11: 0, 13: -1/13; weights-(1,-1) = (n^2-1)/(12n): True\n==============================================================================\nSUMMARY: hits=0; runtime 0s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8778",
+  "at_utc": "20260919T131028Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

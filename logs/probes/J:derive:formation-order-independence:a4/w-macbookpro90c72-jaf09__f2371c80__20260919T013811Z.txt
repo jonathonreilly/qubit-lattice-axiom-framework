@@ -1,0 +1,14 @@
+CHECK PASS: T.1 two topo orders of the V-shape give the same joint
+CHECK PASS: T.2 that joint sums to 1
+CHECK PASS: V.0 2-site edge TV=0 for symmetric phi (not a counterexample)  0
+CHECK PASS: V.1 causal V-shape sums to 1
+CHECK PASS: V.2 anti-causal V-shape sums to 1
+CHECK PASS: V.3 TV(causal, child-first) > 0 on the 3-site V  1/72
+CHECK PASS: V.4 causal 2-site P(equal)=1/4
+CHECK PASS: V.5 child-first is a product of 1-parent kernels, not the 2-parent kernel
+CHECK PASS: V.6 a single V-shape entry differs  1/104 vs 1/96
+CHECK PASS: D.1 diamond topo joint sums to 1
+CHECK PASS: D.2 child-order swap is the same product
+CHECKS: PASS=11 FAIL=0
+SUMMARY: PROVED on finite DAGs: any two topological orders of a finite predecessor DAG give the same joint law, the product of one-site kernels given parents (checked on a V-shape and a diamond). The hypothesis is: every predecessor is recorded before its successor, and no record is re-formed. A 2-site edge is NOT a counterexample for symmetric phi (TV=0). The smallest violation is a 3-site V-shape formed child-first: TV>0 at (3,1,2). Campaign Z^3 order-dependence is because the spatial lattice is not a causal DAG. Event-lattice level order is a topological order, hence order-independent among causal linear extensions.
+HIT: on a finite event DAG, every causal linear extension yields the same joint law prod_v r(s_v | s_{parents(v)}); checked on a V-shape (two topo orders identical) and a diamond. Symmetric phi makes the 2-site edge order-independent (TV=0). The smallest anti-causal counterexample is a 3-site V formed child-first: TV(causal, child-first)>0 at (3,1,2). Z^3 formation-order dependence is the absence of a predecessor DAG on the spatial lattice.

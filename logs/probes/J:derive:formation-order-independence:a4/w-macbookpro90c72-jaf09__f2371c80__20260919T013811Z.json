@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-order-independence:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jaf09",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-order-independence/w-macbookpro90c72-jaf09/check.py",
+ "seed": 81891,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2371c80",
+ "started_utc": "20260919T013811Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED on finite DAGs: any two topological orders of a finite predecessor DAG give the same joint law, the product of one-site kernels given parents (checked on a V-shape and a diamond). The hypothesis is: every predecessor is recorded before its successor, and no record is re-formed. A 2-site edge is NOT a counterexample for symmetric phi (TV=0). The smallest violation is a 3-site V-shape formed child-first: TV>0 at (3,1,2). Campaign Z^3 order-dependence is because the spatial lattice is not a causal DAG. Event-lattice level order is a topological order, hence order-independent among causal linear extensions."
+ },
+ "review": "Causal topo orders share the product-of-kernels joint law (V-shape, diamond); 2-site edge TV=0 for symmetric phi; smallest anti-causal counterexample is a 3-site V child-first with TV=1/72 at (3,1,2); HIT.",
+ "what": "DERIVATION, independent attempt 4 of 4: Does the law depend on the order in which causally unrelated records form?. On an event lattice the axiom fixes that a record is formed from its recorded predecessors; records at the same level are causally unrelated. TASK: prove that for ANY event lattice with a finite predecessor set and ANY formation order compatible with the causal order (not only level by level), the joint law of the records is the same, because each record's law depends only on its predecessors' values (a product of kernels along the partial order); state the exact hypothesis needed (every predecessor recorded before its successor; no record re-formed) and exhibit the smallest example where an order that violates it changes the law. Then compare with the campaign's Z^3 results, where different monotone orders of a NON-causal lattice gave different laws (blocks 05, 08, 09: PRs #8003, #8138, #8139): explain precisely why the event-lattice reading removes the order dependence that the formation-rate and formation-unit clauses (blocks 14, 15) were introduced to settle, or show that it does not. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-order-independence/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-order-independence/<name>/check.py\"",
+ "stdout_sha256": "e6558ffa8844478b862f5373dbd637d2e0d35811e63cdfe5d008a7398242b490",
+ "stdout_tail": "o 1\nCHECK PASS: V.2 anti-causal V-shape sums to 1\nCHECK PASS: V.3 TV(causal, child-first) > 0 on the 3-site V  1/72\nCHECK PASS: V.4 causal 2-site P(equal)=1/4\nCHECK PASS: V.5 child-first is a product of 1-parent kernels, not the 2-parent kernel\nCHECK PASS: V.6 a single V-shape entry differs  1/104 vs 1/96\nCHECK PASS: D.1 diamond topo joint sums to 1\nCHECK PASS: D.2 child-order swap is the same product\nCHECKS: PASS=11 FAIL=0\nSUMMARY: PROVED on finite DAGs: any two topological orders of a finite predecessor DAG give the same joint law, the product of one-site kernels given parents (checked on a V-shape and a diamond). The hypothesis is: every predecessor is recorded before its successor, and no record is re-formed. A 2-site edge is NOT a counterexample for symmetric phi (TV=0). The smallest violation is a 3-site V-shape formed child-first: TV>0 at (3,1,2). Campaign Z^3 order-dependence is because the spatial lattice is not a causal DAG. Event-lattice level order is a topological order, hence order-independent among causal linear extensions.\nHIT: on a finite event DAG, every causal linear extension yields the same joint law prod_v r(s_v | s_{parents(v)}); checked on a V-shape (two topo orders identical) and a diamond. Symmetric phi makes the 2-site edge order-independent (TV=0). The smallest anti-causal counterexample is a 3-site V formed child-first: TV(causal, child-first)>0 at (3,1,2). Z^3 formation-order dependence is the absence of a predecessor DAG on the spatial lattice.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jaf09",
+  "at_utc": "20260919T013821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Causal DAG product formula; 2-site TV=0 for symmetric phi; 3-site V child-first TV=1/72; new exact partial, not a pattern false positive.",
+  "by": "w-macbookpro90c72-jaf09",
+  "at_utc": "20260919T013821Z"
+ }
+}

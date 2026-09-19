@@ -1,0 +1,32 @@
+{
+ "task": "J:note:TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026_07_10",
+ "type": "judgment",
+ "lane": "tick",
+ "worker": "w-jonathonsmac4f50-j2779",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CL/all_rules_frames_and_monomial_census.py",
+ "seed": 16880,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "26d8d29f",
+ "started_utc": "20260919T112120Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "every one of the 81 translation-covariant binary rules, realised by random site-independent assignments and random local frames on rings 4..12, gives M(U) = 0 exactly; the 3 constant rules have empty variation sets (census {(): 3, (-1, 1): 66, (-1,): 6, (1,): 6}); the cumulative-product frame closes and uniformises both mover directions to 5.2e-50 for L = 4..40; among monomial nearest-neighbour unitaries the M = 0 ones are exactly the uniform shifts and diagonals, and the ones not covariant modulo frames are exactly the non-constant diagonals ({4: 252, 6: 4092, 8: 65532} at L = 4, 6, 8, generalising U_alt); the Givens sum is unitary, nearest-neighbour and has M = 0.7833 > 0; no falsifier fires"
+ },
+ "review": "Read the script and its output: all 81 translation-covariant binary availability rules (variation sets: 3 empty, i.e. exactly the constant rules, 66 two-sided, 6 left-only, 6 right-only), each realised by random site-independent Gaussian-rational assignments and random rational local frames on rings 4..12, give M(U) = 0 exactly; the cumulative-product frame closes and uniformises both mover directions to 5e-50 for L = 4..40; among all monomial nearest-neighbour unitaries with entries in {0, +-1, +-i} on L = 4, 6, 8 the M = 0 ones are exactly the uniform shifts and diagonals, and those not covariant modulo frames are exactly the 4^L - 4 non-constant diagonals, generalising U_alt; the Givens sum is unitary, nearest-neighbour and has M = 0.7833; no falsifier fires.",
+ "what": "Note on main: docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CL/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CL/<script>.py\"",
+ "stdout_sha256": "85095bd1167e0e3cbcd50668ba01630e9e59ff597c47ea03e632ab241a27a128",
+ "stdout_tail": "1. 81 translation-covariant binary rules: variation sets {(): 3, (-1, 1): 66, (-1,): 6, (1,): 6}; max M(U) over 81 rules x 5 rings x 5 random (F, frame) = 0\n2. cumulative-product frames close and uniformise both mover directions for L = 4..40: max error 5.22e-50\n3. monomial nearest-neighbour unitaries (entries 0, +-1, +-i): {4: (9, {'unitaries': 2304, 'M=0': 768, 'M=0 and frame-covariant': 516, 'M=0 not covariant': 252}), 6: (20, {'unitaries': 81920, 'M=0': 12288, 'M=0 and frame-covariant': 8196, 'M=0 not covariant': 4092}), 8: (49, {'unitaries': 3211264, 'M=0': 196608, 'M=0 and frame-covariant': 131076, 'M=0 not covariant': 65532})}\n4. Givens direct sum on L = 6: unitarity error 0.0e+00, nearest-neighbour True, M = 0.7833\nSUMMARY: every one of the 81 translation-covariant binary rules, realised by random site-independent assignments and random local frames on rings 4..12, gives M(U) = 0 exactly; the 3 constant rules have empty variation sets (census {(): 3, (-1, 1): 66, (-1,): 6, (1,): 6}); the cumulative-product frame closes and uniformises both mover directions to 5.2e-50 for L = 4..40; among monomial nearest-neighbour unitaries the M = 0 ones are exactly the uniform shifts and diagonals, and the ones not covariant modulo frames are exactly the non-constant diagonals ({4: 252, 6: 4092, 8: 65532} at L = 4, 6, 8, generalising U_alt); the Givens sum is unitary, nearest-neighbour and has M = 0.7833 > 0; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2779",
+  "at_utc": "20260919T112132Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_hypercharge_alpha_scale_freedom_cycle692_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_hypercharge_alpha_scale_freedom_cycle692_2026_07_25.py",
+ "seed": 6864,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "071352a3",
+ "started_utc": "20260919T083424Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c39ee8d34261ed526198493d5a2a8a022ca62b8ff8b9023ca13ef27cd7cafb6e",
+ "stdout_tail": "and the formal alpha*Z generated-subgroup structure -- which carry no selected scale; the auditor's own instruction says the name-free theorem surface is unchanged\", \"supply a genuinely dimensionless derivation of the unit-charge choice from framework content (not classified by this finite enumeration)\", \"register a new explicitly approved dimensionless authority -- which the repository's no-new-axiom / no-new-primitive rule forbids a physics-loop run from doing, and which would require an owner governance decision\"], \"scope\": \"the declared two-block surface V = C^2 (x) (C^2 (x) C^2) with central block-scalar Y; conditions enumerated in this runner only\", \"shared_obstruction\": false, \"statement\": \"tracelessness, generated-subgroup structure, the tested unit normalizations other than beta=-1, the unit quadratic normalization, and the scale-reference primitive do not derive alpha=1/3\"}, \"pass\": true, \"pass_count\": 7, \"resources\": {\"elapsed_seconds\": 0.0007352499524131417}, \"runner_sha256\": \"e4ada00ecbc0290ac1eb43857c31c00d0a7211a2e7d2b8e9fe7d603488807cf2\", \"scale_conditions\": {\"Tr(Y^2) = 1  (24*alpha^2 = 1)\": \"alpha^2 = 1/24\", \"generated-subgroup primitive generator magnitude = 1\": \"alpha^2 = 1\", \"integer spectrum with primitive generator\": \"alpha^2 = 1\", \"symmetric-block charge = +1\": \"alpha = 1\", \"tracelessness alone\": \"alpha free\", \"trivial-block charge = -1\": \"alpha = 1/3\"}}\nRESULT 7 0 elapsed 0.00 s\nRESULT ENUMERATED_HYPERCHARGE_ALPHA_SCALE_MECHANISMS_DO_NOT_FIX_ONE_THIRD\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T083424Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

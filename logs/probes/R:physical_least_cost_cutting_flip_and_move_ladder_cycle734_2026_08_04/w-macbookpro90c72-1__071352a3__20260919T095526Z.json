@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py",
+ "seed": 11726,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "071352a3",
+ "started_utc": "20260919T095526Z",
+ "elapsed_s": 72.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1e641f850e57d005c6648fce1e6f5fbbf0396233000594f878834b6c1e1ae4ab",
+ "stdout_tail": "ions\": 120}, \"gates\": {\"fail\": 0, \"pass\": 31}, \"minimizer_distance\": {\"components_under_cumulative_thresholds_4_to_10\": [349, 349, 157, 61, 61, 13, 1], \"difference_spectrum\": {\"4\": 46128, \"6\": 31968, \"7\": 60096, \"8\": 151704, \"9\": 119808, \"10\": 281376, \"11\": 391488, \"12\": 694528, \"13\": 1023936, \"14\": 1444320, \"15\": 2132160, \"16\": 3658584, \"17\": 4477056, \"18\": 6925856, \"19\": 9543936, \"20\": 11873856, \"21\": 18324864, \"22\": 18353472, \"23\": 16207680, \"24\": 29069284}, \"disjoint_pairs\": 29069284, \"four_piece_moves\": 46128, \"least_difference\": 4, \"pairs\": 124812100}, \"no_go_discipline\": {\"n5_certificate\": \"five resolution lines in primary cached stdout\", \"no_universal_no_go_claim_shipped\": true, \"scope\": \"finite declared-class floor-dissection population only\", \"status\": \"PASS\"}, \"schema\": \"physical-least-cost-cutting-flip-and-move-ladder-cycle734-v2\", \"status\": \"pass\", \"supplied_model\": {\"cost\": \"all corner pairs with four-coordinate L1 separation greater than one\", \"physical_assembly_cell_simplex_bridge\": \"open\", \"physical_tick_admissibility_bridge\": \"open\", \"piece_class\": \"five-corner normalized-volume-one simplices only\", \"shape\": [1, 1, 1, 1]}, \"three_piece_census\": {\"candidate_second_refill_cost_spectrum\": {\"19\": 27264, \"20\": 14592, \"21\": 384}, \"cooccurrence_graph_triangles\": 649600, \"genuine_cooccurring_triples\": 636032, \"least_cost_candidate_second_refills\": 0, \"spurious_pairwise_cliques\": 13568, \"triples_with_incidence_compatible_second_refill\": 40512}}\nTOTAL: PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T095639Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

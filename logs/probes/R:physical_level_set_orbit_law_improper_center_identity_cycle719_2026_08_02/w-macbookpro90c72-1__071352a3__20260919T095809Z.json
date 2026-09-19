@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02.py",
+ "seed": 11889,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "071352a3",
+ "started_utc": "20260919T095809Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "92ee67b441b2bfbce62ae58975617eaea014f9f0e2be84d6f1aa6bd95bcdf56c",
+ "stdout_tail": "sextet + 108 reflection-required, residue 0; overlapping source-stabilizer links 24\n-- L=4 n=279 --\n  [PASS] frame_action_L4 index map homomorphism mismatch 0 anti-homomorphism mismatch 177\n  [PASS] body_diagonal_right_cosets_L4 sextet [1, 4, 9, 15, 18, 23] closed True, four fibre sizes [6, 6, 6, 6], fibres equal right cosets True\n  [PASS] numerical_near_stabilizer_L4 near-stabilizer matches the sextet sextet dev 1.243450e-10 outside dev 4.000000e+00\n  [PASS] finite_body_diagonal_measurability_L4 slots 279 of 279, uniform normalized-source bound 8.581749e-09, seeded spread 2.214548e-10, seeded label gap 5.635424e-03\n  [PASS] broken_operator_control_L4 sextet-breaking control destroys delta-measurability, spread 1.636304e-03\n  [PASS] center_reflection_L4 center reflection involution True assembly dev 1.243450e-10 diag dev 7.638423e-10 a frame False central True\n  [PASS] numerical_near_symmetry_census_L4 48 distinct candidates, near-symmetry count 12 = 6 proper + 6 improper\n  [PASS] slot_level_set_orbit_census_L4 orbits 34 constant to 7.638064e-10 separated by 1.264701e-04 sizes {1: 1, 2: 1, 6: 18, 12: 14}\n  [PASS] axis_face_flip_rejector_L4 8 per-axis face swaps over-merge to 16 orbits, value dev 1.858569e+00\n  [PASS] slot_blindness_transitivity_census_L4 blind slots 19 stabilizer-transitive 19 agreeing 19\n  [PASS] merged_pair_group_census_L4 merged pairs 450 = 174 proper-sextet + 276 reflection-required, residue 0; overlapping source-stabilizer links 70\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T095813Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

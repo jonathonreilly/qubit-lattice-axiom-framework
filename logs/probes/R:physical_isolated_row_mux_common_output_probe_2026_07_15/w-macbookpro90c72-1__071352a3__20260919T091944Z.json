@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_isolated_row_mux_common_output_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_isolated_row_mux_common_output_probe_2026_07_15.py",
+ "seed": 9584,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "071352a3",
+ "started_utc": "20260919T091944Z",
+ "elapsed_s": 73.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c3effb810d81f2df2a943864f387b5f4dcad968aeed8e37cc401840cef6b43a5",
+ "stdout_tail": "TABLE 160 3840 32 768 32 768 91244 96620 0 0 0 0\nGRAPHS 120 5 0\nIDENTITY 160 5 0\nDELETION 0\nRESULT PHYSICAL_ISOLATED_ROW_MUX_COMMON_OUTPUT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T092058Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

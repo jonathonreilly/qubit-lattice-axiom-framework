@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_least_cost_cutting_piece_charge_cycle735_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05.py",
+ "seed": 11858,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "071352a3",
+ "started_utc": "20260919T095738Z",
+ "elapsed_s": 14.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2ec8c750a3453b94b2b1f2f1d2ffecc6421e8b0e7ed73cb1523c5ebe8201d38c",
+ "stdout_tail": " that\n\nthe next move up, and the cuttings that cannot move at all\nPASS six.split  of the 31968 moves on six pieces 21696 stay inside one group of the smallest move, and every one of those joins two cuttings exactly two smallest moves apart; the other 10272 join two different groups\nPASS six.ladder  allowing moves on four up to ten pieces the cuttings join into [349, 349, 157, 61, 61, 13, 1] groups, of which [144, 144, 48, 48, 48, 0, 0] hold a single cutting\nPASS six.frozen  48 cuttings are isolated through size 8, form one orbit, and lie on the smaller charge side; size<=10 degrees on the size-4 isolated set are [(20, 48), (60, 48), (80, 48)]\n\nhostile controls\nPASS hostile.weight  removing one selected piece breaks a required region reversal\nPASS hostile.six  the six-piece keep system is consistent while the reversal mutation is not\nPASS hostile.cover  duplicating one piece is rejected by the exact-cover cardinality\n\nN5 execution certificate\nN5 per_element: checked -- all 192 used pieces and all 120 exact region rows\nN5 per_site: checked -- one supplied 16-corner four-cube; no physical cell selection\nN5 per_mode: checked and not executed -- no field, spectral, or momentum modes\nN5 per_block: checked -- all 15,800 cuttings, 124,812,100 pairs, move graphs, and cubes\nN5 lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim\nRECEIPT outputs/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T095752Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

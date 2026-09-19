@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+ "seed": 8255,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "071352a3",
+ "started_utc": "20260919T085735Z",
+ "elapsed_s": 61.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3568a8586959ea8c6d666eaea12591b98fdb257b8a225b88e2db15b48b613580",
+ "stdout_tail": "rence group displacement; no empirical duration scale', 'C_wrap': 'Route-C tag resets after every transport macro and packet translates rather than returns; noisy/unbounded renewal is open', 'C_int': 'actual Cycle230 free-plus-contact interaction binds one dimer band; no second stable internal transition is certified', 'C_local': 'Route-B uses the accepted local antisymmetric CAR update; Route-C is bounded depth with 72 M2 per cell, all24/all576, but imports 66 rails beyond six-mode matter', 'C_source': 'contact coupling sensitivity g=0.31/0.37/0.43 is visible only as dimensionless source variation; no stress, gravity, redshift, or backreaction law'}}\nPASS the frozen Cycle578 tournament stays below the 360-second and 3-GiB cold caps :: {'elapsed_seconds': 60.547962916083634, 'peak_RSS_bytes': 965951488}\nSUMMARY_JSON {\"audit\": \"unset\", \"authority\": \"none\", \"axiom_pressure\": false, \"elapsed_seconds_internal\": 60.547962916083634, \"firewall_clean\": true, \"maximum_RSS_bytes_internal\": 965951488, \"route_A_exact_nonflat_factorization\": true, \"route_B_all576_failures\": 0, \"route_B_group_displacement\": -0.023781532899391822, \"route_B_maximum_eigen_residual\": 2.197315900183381e-15, \"route_B_packet_displacement\": -0.023549538035457427, \"route_C_all576_failures\": 0, \"route_C_maximum_residual\": 8.215650382226158e-15, \"shared_substrate_obstruction\": false, \"status\": \"cycle578-intrinsic-contact-bound-moving-transition-tournament\", \"tests_failed\": 1, \"tests_passed\": 7}\n\nRESULT pass=7 fail=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T085836Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

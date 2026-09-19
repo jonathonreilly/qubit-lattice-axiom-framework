@@ -1,0 +1,4 @@
+ROLE P0
+TABLE 4 96 83372 0
+PATHS 192 {'straight': [59], 'one_turn': [55], 'two_turn': [55], 'three_axis': [62]} 0
+RESULT PHYSICAL_LITERAL_BIT_CABLE

@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+ "seed": 8316,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "071352a3",
+ "started_utc": "20260919T085836Z",
+ "elapsed_s": 68.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "df4e94467821a2aac5c0ac14348d2b317fa8dbf90737ebdd89648ca4d3c44c75",
+ "stdout_tail": "ips (stroboscopic discreteness signature of the candidate tick law) :: {'rows': 8, 'flips': 3}\nPASS P2 null: the Q=8 rows are exact nulls (alpha wraps to 2*pi exactly) :: {'null_ratios': [1.0, 1.0]}\nPASS comparator map contains only the frozen Q=1, s=+1 near-hit in the 3:4 class; cross-apparatus identification remains outside this runner :: {'near_hits': 1}\nPASS route B: ticks are admitted through the declared opportunity and admission predicates until the finite bank exhausts :: {'admitted': 24, 'post_bank_statuses': ['exhausted', 'exhausted', 'exhausted']}\nPASS route B renewal: one declared finite-bank refill extends the domain :: {'post_refill': 'admitted'}\nPASS additivity: Delta(A,C) = Delta(A,B) + Delta(B,C) decoded from stored chain state across rollover receipts :: {'d_ab': 9, 'd_bc': 12, 'd_ac': 21, 'carries': 2}\nPASS reversal: the decoded interval is orientation-antisymmetric :: {'forward': 9, 'reverse': -9}\nPASS duplicate admission is refused by the derived freshness predicate :: {'status': 'refused_fresh'}\nPASS binder deletion blocks the opportunity; deleting the supplied actuality token blocks admission (the supplied middle is explicit) :: {'no_binder': 'no_opportunity', 'no_actuality': 'refused_supplied'}\nPASS missing event: a lineage gap makes the interval undefined, never zero :: {'removed_identity': 3}\nPASS independent observers: two chains fed by the same tick stream decode identical intervals :: {'observer_a': 8, 'observer_b': 8}\nRESULT 33 3 elapsed 67.51 s\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T085944Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

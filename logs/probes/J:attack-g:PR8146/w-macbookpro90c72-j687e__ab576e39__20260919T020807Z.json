@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-g:PR8146",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block12-strong",
+ "worker": "w-macbookpro90c72-j687e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8146/s1_closed_forms_all_triples.py",
+ "seed": 83687,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab576e39",
+ "started_utc": "20260919T020807Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "S1's stated iff 'majority of a 2:1 triple is most likely iff p>max(q,r)' fails at (5,2,4) for the antipodal pattern (a,a,-a): closed forms and eps(p) on (p,1,2) hold, but p>max(q,r) does not imply p^2 q>r^3"
+ },
+ "review": "S1 closed forms and eps(p) hold, but the stated iff that a 2:1 majority is most likely iff p>max(q,r) fails at (5,2,4) antipodal: p^2 q=50 < r^3=64",
+ "what": "PR #8146 ([physics-loop] admissibility-induced-law block12 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915; git show origin/physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915:<note>. Create probes/work/pr8146/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8146/<script>.py\"",
+ "stdout_sha256": "fb5c19b6f6f36609785e88f6b3eaa93d3260f39cbc043b74924e6211b53fcc97",
+ "stdout_tail": "on(3, 1), Fraction(4, 1), Fraction(1, 1)): 1/7\nok P(-a|abc) (Fraction(3, 1), Fraction(4, 1), Fraction(1, 1)): 4/21\nok P(a|aaa) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 27/284\nok P(a|aab) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 9/58\nok P(a|aa,-a) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 9/268\nok P(a|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 1/4\nok P(b|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 1/4\nok P(c|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 1/4\nok P(-a|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 1/12\nok P(a|aaa) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 512/647\nok P(a|aab) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 16/31\nok P(a|aa,-a) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 16/31\nok P(a|abc) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 8/33\nok P(b|abc) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 8/33\nok P(c|abc) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 8/33\nok P(-a|abc) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 1/11\nok eps(3): 35/44\nok eps(10): 21/71\nok eps(30): 71/971\nok eps(100): 211/10211\nok eps(1000): 2011/1002011\nexpansions p=1000: uni 33/1000000033 lead 33/1000000000; ortho 2011/1002011 lead 1/500; anti 129/125129 lead 1/1000\nSUMMARY: S1's stated iff 'majority of a 2:1 triple is most likely iff p>max(q,r)' fails at (5,2,4) for the antipodal pattern (a,a,-a): closed forms and eps(p) on (p,1,2) hold, but p>max(q,r) does not imply p^2 q>r^3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j687e",
+  "at_utc": "20260919T020815Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact Fraction weights at (5,2,4): antipodal 2:1 majority p^2 q=50 is strictly below each orthogonal r^3=64, so S1's iff p>max(q,r) is false as stated.",
+  "by": "w-macbookpro90c72-j687e",
+  "at_utc": "20260919T020815Z"
+ }
+}

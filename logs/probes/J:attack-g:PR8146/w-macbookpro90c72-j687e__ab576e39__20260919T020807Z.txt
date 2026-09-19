@@ -1,0 +1,85 @@
+ok P(a|aaa) (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): 9/20
+ok P(a|aab) (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): 9/26
+ok P(a|aa,-a) (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): 9/44
+ok P(a|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): 1/4
+ok P(b|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): 1/4
+ok P(c|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): 1/4
+ok P(-a|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): 1/12
+ok P(a|aaa) (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)): 1000/1033
+ok P(a|aab) (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)): 100/131
+ok P(a|aa,-a) (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)): 50/71
+ok P(a|abc) (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)): 10/33
+ok P(b|abc) (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)): 10/33
+ok P(c|abc) (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)): 10/33
+ok P(-a|abc) (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)): 1/33
+ok P(a|aaa) (Fraction(30, 1), Fraction(1, 1), Fraction(2, 1)): 9000/9011
+ok P(a|aab) (Fraction(30, 1), Fraction(1, 1), Fraction(2, 1)): 900/971
+ok P(a|aa,-a) (Fraction(30, 1), Fraction(1, 1), Fraction(2, 1)): 450/481
+ok P(a|abc) (Fraction(30, 1), Fraction(1, 1), Fraction(2, 1)): 10/31
+ok P(b|abc) (Fraction(30, 1), Fraction(1, 1), Fraction(2, 1)): 10/31
+ok P(c|abc) (Fraction(30, 1), Fraction(1, 1), Fraction(2, 1)): 10/31
+ok P(-a|abc) (Fraction(30, 1), Fraction(1, 1), Fraction(2, 1)): 1/93
+ok P(a|aaa) (Fraction(100, 1), Fraction(1, 1), Fraction(2, 1)): 1000000/1000033
+ok P(a|aab) (Fraction(100, 1), Fraction(1, 1), Fraction(2, 1)): 10000/10211
+ok P(a|aa,-a) (Fraction(100, 1), Fraction(1, 1), Fraction(2, 1)): 2500/2533
+ok P(a|abc) (Fraction(100, 1), Fraction(1, 1), Fraction(2, 1)): 100/303
+ok P(b|abc) (Fraction(100, 1), Fraction(1, 1), Fraction(2, 1)): 100/303
+ok P(c|abc) (Fraction(100, 1), Fraction(1, 1), Fraction(2, 1)): 100/303
+ok P(-a|abc) (Fraction(100, 1), Fraction(1, 1), Fraction(2, 1)): 1/303
+ok P(a|aaa) (Fraction(1000, 1), Fraction(1, 1), Fraction(2, 1)): 1000000000/1000000033
+ok P(a|aab) (Fraction(1000, 1), Fraction(1, 1), Fraction(2, 1)): 1000000/1002011
+ok P(a|aa,-a) (Fraction(1000, 1), Fraction(1, 1), Fraction(2, 1)): 125000/125129
+ok P(a|abc) (Fraction(1000, 1), Fraction(1, 1), Fraction(2, 1)): 1000/3003
+ok P(b|abc) (Fraction(1000, 1), Fraction(1, 1), Fraction(2, 1)): 1000/3003
+ok P(c|abc) (Fraction(1000, 1), Fraction(1, 1), Fraction(2, 1)): 1000/3003
+ok P(-a|abc) (Fraction(1000, 1), Fraction(1, 1), Fraction(2, 1)): 1/3003
+ok P(a|aaa) (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): 125/389
+ok P(a|aab) (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): 25/89
+ok P(a|aa,-a) (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): 25/163
+ok P(a|abc) (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): 5/21
+ok P(b|abc) (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): 5/21
+ok P(c|abc) (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): 5/21
+ok P(-a|abc) (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): 2/21
+HIT: S1 iff fails for antipodal 2:1 (a,a,-a) at (p,q,r)=(5,2,4): p=5>max(q,r)=4 but p^2 q=50 < r^3=64, so majority weight 50 is strictly below each of the four orthogonal weights 64
+ok P(a|aaa) (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)): 343/870
+ok P(a|aab) (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)): 49/158
+ok P(a|aa,-a) (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)): 147/710
+ok P(a|abc) (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)): 7/30
+ok P(b|abc) (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)): 7/30
+ok P(c|abc) (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)): 7/30
+ok P(-a|abc) (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)): 1/10
+ok P(a|aaa) (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)): 16/33
+ok P(a|aab) (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)): 8/21
+ok P(a|aa,-a) (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)): 16/33
+ok P(a|abc) (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)): 1/6
+ok P(b|abc) (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)): 1/6
+ok P(c|abc) (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)): 1/6
+ok P(-a|abc) (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)): 1/6
+ok P(a|aaa) (Fraction(3, 1), Fraction(4, 1), Fraction(1, 1)): 27/95
+ok P(a|aab) (Fraction(3, 1), Fraction(4, 1), Fraction(1, 1)): 9/34
+ok P(a|aa,-a) (Fraction(3, 1), Fraction(4, 1), Fraction(1, 1)): 9/22
+ok P(a|abc) (Fraction(3, 1), Fraction(4, 1), Fraction(1, 1)): 1/7
+ok P(b|abc) (Fraction(3, 1), Fraction(4, 1), Fraction(1, 1)): 1/7
+ok P(c|abc) (Fraction(3, 1), Fraction(4, 1), Fraction(1, 1)): 1/7
+ok P(-a|abc) (Fraction(3, 1), Fraction(4, 1), Fraction(1, 1)): 4/21
+ok P(a|aaa) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 27/284
+ok P(a|aab) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 9/58
+ok P(a|aa,-a) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 9/268
+ok P(a|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 1/4
+ok P(b|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 1/4
+ok P(c|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 1/4
+ok P(-a|abc) (Fraction(3, 1), Fraction(1, 1), Fraction(4, 1)): 1/12
+ok P(a|aaa) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 512/647
+ok P(a|aab) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 16/31
+ok P(a|aa,-a) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 16/31
+ok P(a|abc) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 8/33
+ok P(b|abc) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 8/33
+ok P(c|abc) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 8/33
+ok P(-a|abc) (Fraction(8, 1), Fraction(3, 1), Fraction(3, 1)): 1/11
+ok eps(3): 35/44
+ok eps(10): 21/71
+ok eps(30): 71/971
+ok eps(100): 211/10211
+ok eps(1000): 2011/1002011
+expansions p=1000: uni 33/1000000033 lead 33/1000000000; ortho 2011/1002011 lead 1/500; anti 129/125129 lead 1/1000
+SUMMARY: S1's stated iff 'majority of a 2:1 triple is most likely iff p>max(q,r)' fails at (5,2,4) for the antipodal pattern (a,a,-a): closed forms and eps(p) on (p,1,2) hold, but p>max(q,r) does not imply p^2 q>r^3

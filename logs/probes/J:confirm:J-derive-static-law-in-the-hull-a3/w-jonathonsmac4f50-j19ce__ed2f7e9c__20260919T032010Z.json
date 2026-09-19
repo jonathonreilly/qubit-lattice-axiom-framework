@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-static-law-in-the-hull-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j19ce",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/static-law-in-the-hull/referee_w-jonathonsmac4f50-j19ce/check.py",
+ "seed": 88010,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed2f7e9c",
+ "started_utc": "20260919T032010Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step; the table, the negative control and the separator margins reproduce"
+ },
+ "review": "Static-law-in-the-hull a3's census reproduces with new code (Z and min-over-orders D on the 2x3 rectangle and cube at three weights exactly as tabulated, Z < D, path of 3 Z = D = 864, Hoelder on M^k for k <= 6, chain rule p^|E|/D, positive separator margins), so HIT confirmed; the argument is a1's (this referee's family), disclosed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:static-law-in-the-hull:a3/; its files are probes/work/derive/static-law-in-the-hull/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/static-law-in-the-hull/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "73019e412bfdb5776182573dd22aeb45477793ff92a9c1491e78d1dae9b36b44",
+ "stdout_tail": "ASS S2: 2x3 (3, 1, 2): Z = 6000000, D = 7008768, chain rule on the min-D order = p^|E|/D: True; 2x3 (5, 2, 4): Z = 568472046, D = 631394298, chain rule on the min-D order = p^|E|/D: True; 2x3 (7, 3, 5): Z = 3651973440, D = 4044168000, chain rule on the min-D order = p^|E|/D: True; cube (3, 1, 2): Z = 6982520832, D = 10933678080, chain rule on the min-D order = p^|E|/D: True; cube (5, 2, 4): Z = 17002040556294, D = 22841951518746, chain rule on the min-D order = p^|E|/D: True; cube (7, 3, 5): Z = 412507735200000, D = 555911333280000, chain rule on the min-D order = p^|E|/D: True; path of 3: Z = 864, D = 864\nPASS S3: every adapted scheme gives the constant pattern mass <= p^|E|/D < p^|E|/Z; margins of E f, f = 1[constant]: 2x3 (3, 1, 2): 3.148e-04, 2x3 (5, 2, 4): 8.217e-05, 2x3 (7, 3, 5): 1.312e-04, cube (3, 1, 2): 1.650e-04, cube (5, 2, 4): 2.203e-05, cube (7, 3, 5): 5.193e-05\nHIT: confirmed - static-law-in-the-hull a3: on the 2x3 rectangle and the cube at (3,1,2), (5,2,4), (7,3,5), Z and D (minimum over all n! orders) are the attempt's table with Z < D, the path of 3 has Z = D = 864, the Hoelder bound holds on M^k for k <= 6, and the constant-pattern mass of every adapted scheme is at most p^|E|/D < p^|E|/Z, so f = 1[constant] separates the static law from the hull; recomputed with new code. This is the census of a1's argument (this referee's family), as the attempt says\nSUMMARY: confirmed - no failing step; the table, the negative control and the separator margins reproduce\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j19ce",
+  "at_utc": "20260919T032013Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok static-law-in-the-hull a3): the constant-pattern separator census on the 2x3 rectangle and the cube at (3,1,2), (5,2,4), (7,3,5) reproduces (Z < D exactly as tabulated, path-of-3 control Z = D); the argument is a1's, written by this referee's model family and already confirmed by grok.",
+  "by": "w-jonathonsmac4f50-j19ce",
+  "at_utc": "20260919T032013Z"
+ }
+}

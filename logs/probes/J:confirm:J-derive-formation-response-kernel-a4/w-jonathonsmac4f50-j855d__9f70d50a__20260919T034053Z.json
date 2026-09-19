@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-response-kernel-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j855d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-response-kernel/referee_w-jonathonsmac4f50-j855d/check.py",
+ "seed": 89253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9f70d50a",
+ "started_utc": "20260919T034053Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step in (a)-(e); overlaps a2/a6 with the new exact expansions of R_8 on the body and plane diagonals"
+ },
+ "review": "Formation-response-kernel a4 reproduces with independent exact code (resolvent on L = 3, 4 nonzero modes, E-identity, M eigenvalues 1/9, 1/3, R_8 = 3/2 on axes, 7/2 - 27 l^2/4 on the body diagonal, 3/(2 l^2) + 1/2 on (l,-l,0) vs 1/E ~ 1/(2 l^2), FDR fails with 8 ratio values, trinomial occupancy), so HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-response-kernel:a4/; its files are probes/work/derive/formation-response-kernel/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-response-kernel/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ecb79711818c9ec2aa249295e5bd73136db477f776adc94ebae007d5a2d05b28",
+ "stdout_tail": "PASS Q1: 1/(1 - phi) inverts I - P on the 15 nonzero modes of L = 4 (exact Gaussian rationals, with the character check) and the 8 of L = 3; sum_t z^t = 1/(1 - z)\nPASS Q2: E(w+k1, w+k2, w) = 3(|1 - phi e^{iw}|^2 + 1 - u) identically\nPASS Q3: grad phi(0) = [I/3, I/3] (drift (1,1)/3); M = [[2/9, -1/9], [-1/9, 2/9]], eigenvalues {1/3: 1, 1/9: 1}, 1/9 on (1,1)\nPASS Q4: R_8(l,0,0) = 3/2; R_8(l,l,l) = 7/2 - 27*l**2/4 + O(l^3); R_8(l,-l,0) = 3(3 - cos l)/(8(1 - cos l)) (True) = 1/2 + 3/(2*l**2) + O(l^2); 1/E(l,-l,0) = 1/24 + 1/(2*l**2) + O(l^2)\nPASS Q5: C0/R_static takes 8 distinct values on the 15 nonzero L = 4 modes (constant in equilibrium); sum_s C0 phi^s = C0 R_static\nPASS Q6: walks to (n,n,n): [6, 90, 1680, 34650]... = (3n)!/(n!)^3 for n = 1..8\nHIT: confirmed - formation-response-kernel a4: R = 1/(1 - phi e^{iw}) inverts I - P on every nonzero mode of L = 3, 4; the E-identity; drift (1,1)/3 and M = (1/9)[[2,-1],[-1,2]] (1/9, 1/3); R_8 = 3/2 on the axes, 7/2 - 27 l^2/4 on the body diagonal, and R_8(l,-l,0) = 3(3 - cos l)/(8(1 - cos l)) = (3/2)/l^2 + 1/2 + O(l^2) against 1/E ~ 1/(2 l^2); fluctuation-response fails (C0/R takes several values); time-integrated covariance C0 R; trinomial occupancy - all recomputed independently; 'no isotropic 1/r' follows from the axis value\nSUMMARY: confirmed - no failing step in (a)-(e); overlaps a2/a6 with the new exact expansions of R_8 on the body and plane diagonals\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j855d",
+  "at_utc": "20260919T034055Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok formation-response-kernel a4): the linear response, the E-identity, the co-moving metric and the eight-corner symbol (3/2 on axes, 7/2 - 27 l^2/4 on the body diagonal, (3/2)/l^2 + 1/2 on the plane diagonal) hold exactly; no isotropic 1/r; overlaps a2/a6.",
+  "by": "w-jonathonsmac4f50-j855d",
+  "at_utc": "20260919T034055Z"
+ }
+}

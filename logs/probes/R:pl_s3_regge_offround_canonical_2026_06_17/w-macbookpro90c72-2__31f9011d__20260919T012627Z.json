@@ -1,0 +1,35 @@
+{
+ "task": "R:pl_s3_regge_offround_canonical_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "pl",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/pl_s3_regge_offround_canonical_2026_06_17.py",
+ "seed": 81187,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012627Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e5da5ce59c8400a123cc55dd04ed622947b02454d1241988ac1120f63ce11ad4",
+ "stdout_tail": "[R] PASS: round deficit/edge = 2pi - 3 arccos(1/3) (exact positive curvature)  (2.5903)\n[R] PASS: round is an exact Lambda-Regge critical point (EOM residual 0) at Lambda*~7.3265  (Lambda*=7.3265, max|EOM|=0.00e+00)\n[R] PASS: round Hessian H is symmetric (machine zero)\n[R] PASS: round spectrum multiplicity structure = {1,4,5} (the S_5 channels 1+4+5)  (mults=[1, 4, 5])\n[LIFT] PASS: generic off-round probes lift all tested degeneracy -> fully simple 10-dim spectrum (no degenerate complement -> no within-complement frame freedom -> canonical up to signs). The frame-ambiguity-hosting degeneracy is non-generic on this finite Hessian family.  (eps=0.02:#levels=10; eps=0.08:#levels=10)\n[SYMLOCUS] PASS: S_4-symmetric off-round: degeneracy persists as {1,1,3,3,2} (= the S_4 branching of 1+4+5; 4->1+3, 5->2+3) -> residual-symmetry-controlled multiplicity  (mults=[1, 1, 2, 3, 3])\n[VERDICT] PASS: round-S^3 note's 'off-round multiplicities could reappear' residual ANSWERED: generic off-round probes are canonical up to eigenvector signs (simple spectrum); symmetric loci retain controlled multiplicities\n\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012628Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

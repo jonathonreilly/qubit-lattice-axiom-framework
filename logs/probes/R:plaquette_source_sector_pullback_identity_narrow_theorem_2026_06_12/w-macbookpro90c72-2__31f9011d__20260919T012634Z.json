@@ -1,0 +1,34 @@
+{
+ "task": "R:plaquette_source_sector_pullback_identity_narrow_theorem_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "plaquette",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/plaquette_source_sector_pullback_identity_narrow_theorem_2026_06_12.py",
+ "seed": 81194,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012634Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9ffb8365b74409ea5f5a4820d15f7c88145e93ea36ff3fe5b3c26232caf5413d",
+ "stdout_tail": "wn dimension (p+1)(q+1)(p+q+2)/2, and its own local four-link amplitude a_(p,q)(beta)^4 formed by dividing that weight's series by dim * c_(0,0) and taking the fourth power, with the recurrence coupling weights only through the six nearest-neighbour steps at rate 1/6.\n  per_block: resolved by splitting the Hellmann-Feynman total into its named pieces \u2014 the eigenvector recursion is carried in two blocks, the vacuum component that becomes lambda_n and the orthogonal residual that becomes psi_n, and the derivative is then split as H_total = H_mark + H_Dloc; the third named piece H_env is identically absent because the falsifier fixes rho = 1, and H_Dloc is obtained here by subtracting H_mark from H_total rather than by differentiating the a^4 packet directly.\n  lattice_wide: checked and not executed \u2014 the whole falsifier lives on one marked plaquette inside a weight box truncated at NMAX = 10 and a series truncated at beta^10, with the box size justified only as large enough for paths through that order; no all-weight completion, no all-orders statement, no volume and no thermodynamic limit is taken, and the note's own N5 audit states the negative at exactly these two resolutions and no wider.\n\nFINDING: direct dressed local-packet pullback is refuted at beta^5.\nFINDING: the D_loc prime term tracks Delta through beta^8 but leaves a beta^9 residual target.\nNamed residual: physical residual-environment pullback and dressed-multiplier state-shift separation.\n\nTOTAL: PASS=10, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012636Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

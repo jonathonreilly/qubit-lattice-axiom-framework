@@ -1,0 +1,35 @@
+{
+ "task": "R:native_edge_record_autonomous_head_shared_battery_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_autonomous_head_shared_battery_2026_09_07.py",
+ "seed": 79696,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010136Z",
+ "elapsed_s": 4.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ba7a5abc7ed2cd40506f5e4887300e54007f545d9ce8dd75cc7221be1790f1a4",
+ "stdout_tail": "ENCHMARK {\"support_surfaces\": 71, \"density_surfaces\": 0} trajectory_front_pass=24/24 all_pre_support_pass=0/24\nTRAPS [{\"events\": 5, \"count\": 6, \"weight\": \"1/8\"}, {\"events\": 6, \"count\": 12, \"weight\": \"1/8\"}, {\"events\": 7, \"count\": 48, \"weight\": \"11/32\"}, {\"events\": 8, \"count\": 60, \"weight\": \"1/4\"}, {\"events\": 9, \"count\": 60, \"weight\": \"5/32\"}]\nSOURCE_SHA256 23ed8ea52ec84da2785cc9bfb62bc2c64295d122be2af6758be20e27ab622568\nSCOPE Path-conditioned event-epoch mean states; no fixed-time ensemble or every-wait bound. First-four signs are gauge-equivalent nonbridges. Later census is graph-only with complete sign sum.\nUNRESOLVED Supplied carrier, pulse and role scaffold; Spectrally global lift; no local closed-unitary apparatus; Continuous battery coherence and degenerate history memory; External time, Markov reservoir and entropy sink; No replenishment or indefinite renewal\nper_element: checked every live-edge current and selected pre-event edge on all ninety path-prefix surfaces.\nper_site: checked all eight site densities and their fixed-number sum on every reported event-epoch mean state.\nper_mode: checked complete fixed-N spectral resolutions, retaining degenerate and nonstationary energy coherences.\nper_block: checked all forty-five edge prefixes with exact path weights, both timing surfaces and direct battery moments.\nlattice_wide: checked and not executed -- this finite supplied cube generator does not resolve an infinite-lattice formation or renewal law.\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010141Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_autonomous_head_shared_battery_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

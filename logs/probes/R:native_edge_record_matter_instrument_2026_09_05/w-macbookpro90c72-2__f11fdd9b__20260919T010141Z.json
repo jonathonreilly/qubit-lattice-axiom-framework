@@ -1,0 +1,35 @@
+{
+ "task": "R:native_edge_record_matter_instrument_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_matter_instrument_2026_09_05.py",
+ "seed": 79701,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010141Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6366d9953236714de516dbdc5e994102c67117e8d44f60d507c8113ec0cb900b",
+ "stdout_tail": "PASS G0 domains and identity: source=bb5ace7229147ba3 guards=6/6 even_global_parity_only\nPASS G1 Pauli algebra and physical placement: res=0.00e+00 separate_word_comm=0.50 support/radius/diameter=5/2/4\nPASS G2 complete mask-edge census: masks=4096 pairs=24576 bridge/non=16716/7860 fixedN=10199 impossible=358\nPASS G3 faithful physical-to-CAR dictionary: shape=4096x128 all_A/B/T_res=0.00e+00 includes_length6_phase\nPASS G4 no-reset native Record histories: histories=6 final_branches=52 zero/deterministic=4/4 split=4+4 max_res=1.85e-13\nPASS G5 actual uniform-live-edge moments: states=2 max_res=1.35e-13 max_dVar=0.272727 max_<h_e2>=0.666667\nPASS G6 finite open-box sea and tail arithmetic: cube_E0=-6.928203230276 ell4_E0/M=-1.031296109 trace/pair/norm_res=3.55e-15 ell4_K=L/4_tail=0.111111\nPASS G7 apparatus operator identities: fibres=20 defect/telescope/support_res=1.42e-16/6.12e-16/1.11e-16 actual_battery_fixture=checker_scope\nPASS G8 execution envelope: elapsed=3.71s peak_rss=93.3MiB timeout=180s\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_matter_instrument_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

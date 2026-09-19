@@ -1,0 +1,35 @@
+{
+ "task": "R:plaquette_environment_contraction_cost_verification_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "plaquette",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/plaquette_environment_contraction_cost_verification_bounded_2026_06_12.py",
+ "seed": 81191,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012631Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "693deb682875a6ed31f2f0fe97187a3b19bfc723e66494ded8e767dc0dd13a8f",
+ "stdout_tail": "791909 GiB | 1.799e6 entries | True | False\nraw_dense | 3 | 16 | 3.484e41 GiB | 8.057e49 entries | False | True\nsparse_support_est | 3 | 16 | 4.415e40 GiB | 9.381e48 entries | False | estimate (peak_scope=41)\norbit_quotient_diag | 3 | 16 | 0.25 GiB | 5.375e7 entries | True | False\nraw_dense | 4 | 25 | 3.081e49 GiB | 6.790e57 entries | False | True\nsparse_support_est | 4 | 25 | 6.185e48 GiB | 1.142e57 entries | False | estimate (peak_scope=41)\norbit_quotient_diag | 4 | 25 | 3.63798 GiB | 7.633e8 entries | True | False\nPASS: raw dense exact original-graph cells exceed the 4 GiB budget for NMAX=2,3,4\nPASS: sparse support estimates for original graph also exceed the 4 GiB budget\nPASS: orbit quotient diagnostic is not counted as an exact original-graph contraction\n\n====================================================================================================\n6. Bounded caveats\n====================================================================================================\nResult boundary: the raw factor-primal exact original graph remains over budget for all tested NMAX values under the best deterministic order found here.\nOpen targets: a certified lower bound sharper than MMW, a rank-aware contractor using intertwiner gauges rather than support estimates, and an exact symmetry-block construction that acts on the original independent-link state space rather than the orbit-tied quotient.\nPASS: runner reports bounded cost data without computing rho\n\nTOTAL: PASS=17, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012633Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

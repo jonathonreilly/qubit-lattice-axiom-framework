@@ -1,0 +1,35 @@
+{
+ "task": "R:pmns_x6_preimage_localization_outer_frame_certificate_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "pmns",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/pmns_x6_preimage_localization_outer_frame_certificate_2026_06_08.py",
+ "seed": 81210,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012650Z",
+ "elapsed_s": 34.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=2 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9397c6fa4e42406e7caaccab45868401f789e142faa8c9738948ecb865149d07",
+ "stdout_tail": "rip bottom : cells 90x16  certified=2732  failed=0\n    strip top    : cells 90x16  certified=3590  failed=0\n    strip left   : cells 16x90  certified=2847  failed=0\n    strip right  : cells 16x90  certified=2998  failed=0\n[PASS] S1 (outer-frame containment): EVERY shell sub-box's interval image (s12^2,s13^2) is DISJOINT from the NuFit rectangle -> F^{-1}(rect) has no point in the shell -> the Basin-1 component (containing the anchor in B) cannot cross the shell -> Basin-1 preimage \u2282 B. (X6) is CLOSED by interval certificate (modulo the explicit topological separation lemma).\n       shell sub-boxes: certified-disjoint=12167, uncleared=0\n\nTOTAL: PASS=2 FAIL=0\nVERDICT: (X6) preimage-localization is CLOSED -- the outer-frame interval certificate proves the\nBasin-1 chamber-boundary preimage of the entire NuFit rectangle is contained in box B, upgrading\n(X6) from a multistart-fsolve named admission to a 200-bit-rigorous containment. Closing (X6)\nRELOCATES (does not eliminate) the forecast's conditionality. The P1 delta_CP forecast then rests\non: (i) the chart H(m,delta,q) + the chamber-boundary surface q=sqrt(8/3)-delta; (ii) the\nmeasured-theta23 filter distinguishing Basin-1 from the disjoint Basin-0 (m~-0.01, J flips sign,\ndelta_CP~105 deg, predicted s23^2~0.71), as stated in the branch-robustness note; and (iii) the\nnamed-external NuFit input bands. (X6) itself is no longer an open preimage-localization admission.\nrunner_check_breakdown = {A: 2, B: 0, C: 0, D: 0, total_pass: 2}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012724Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

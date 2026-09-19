@@ -1,0 +1,36 @@
+AUTHORITY AND LAW
+FAIL review note exists :: 
+PASS Cycle 156 adds no transition row :: 86444
+PASS retained merged law is deterministic :: 86444
+PASS four-bit spatial permutations are exact :: ((0, 2, 1, 3), (2, 0, 3, 1))
+
+GEOMETRY AND SUPPLIED CONTENT
+PASS eight cable paths are local, disjoint, and reach their exact AND inputs :: (404, 404, [])
+PASS joint guide assignment closes all eight paths :: (1538, frozenset({(1, 0, 0), (-1, 0, 0), (0, -1, 0), (0, 1, 0)}))
+PASS only row/index/operator/guide/frame records are initially supplied :: (4540, 409, 409)
+PASS one complete causal schedule reaches only the physical commutation bit :: (410, 1872, 8, 4540, 409)
+
+EXHAUSTIVE VALUES AND SCHEDULES
+PASS all 1,024 row pairs pass the local all-schedule proof :: (Counter({5006: 1024}), [])
+PASS the final record has the exact symplectic truth distribution :: Counter({'H0': 544, 'H1': 480})
+PASS 5,126,144 realizable local histories contain no parasitic write :: 5126144
+PASS the composed proof survives all 24 proper-cubic orientations :: (Counter({5006: 24}), [])
+
+CAUSAL CONTROLS
+PASS deleting the left row suppresses exactly its four first writes :: {(0, 1, -40): frozenset({'H0'}), (0, -1, -40): frozenset({'H0'}), (1, 0, -40): frozenset({'H1'}), (-1, 0, -40): frozenset({'H1'})}
+PASS deleting the right row suppresses exactly its four first writes :: {(-1, 0, 40): frozenset({'H0'}), (0, -1, 40): frozenset({'H1'}), (0, 1, 40): frozenset({'H1'}), (1, 0, 40): frozenset({'H0'})}
+PASS the parity record depends on four products and every product on two cables :: 
+
+SCOPE
+FAIL note contains: two row records to one physical commutation record :: 
+FAIL note contains: no transition row is added :: 
+FAIL note contains: 5,126,144 :: 
+FAIL note contains: supplied guide/frame harness :: 
+FAIL note contains: does not derive occurrence or equal weights :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 14 FAIL 9
+RESULT FAIL

@@ -1,0 +1,34 @@
+AUTHORITY AND LAW
+FAIL review note exists :: 
+PASS 128 four-parent rows cover 32 rows by four symplectic positions :: Counter({4: 128})
+PASS every canonical output is the exact indexed row bit :: 
+PASS 3,072 two-port rows are disjoint from the Cycle-155 law :: 3072
+PASS the enlarged 89,516-row law is deterministic :: 89516
+PASS deleting any direct two-port parent suppresses its intended bit :: (512, ())
+
+TWO-PORT FOUR-FORK
+PASS all 768 row-orientation four-fork graphs are exact :: ({97}, [])
+PASS one row and no supplied bits drive eight fresh endpoints :: []
+PASS deleting the row source suppresses all derived bits :: []
+
+PREDECESSOR COEXISTENCE
+PASS all 768 one-port row fanout graphs survive the two-port rows :: []
+PASS all 48 supplied-bit fork graphs survive the two-port rows :: []
+PASS all 1,024 Cycle-156 row-pair schedule proofs survive :: (Counter({5006: 1024}), [])
+PASS all 54,000 Cycle-152 router graphs survive the two-port rows :: []
+PASS the enlarged law preserves all 86,640 prior unified histories :: []
+PASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}
+
+SCOPE
+FAIL note contains: physical two-port row four-fork :: 
+FAIL note contains: four recorded parents :: 
+FAIL note contains: 89,516 :: 
+FAIL note contains: no no-go is shipped :: 
+FAIL note contains: compiler content :: 
+FAIL note contains: does not derive occurrence or equal weights :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 14 FAIL 9
+RESULT FAIL

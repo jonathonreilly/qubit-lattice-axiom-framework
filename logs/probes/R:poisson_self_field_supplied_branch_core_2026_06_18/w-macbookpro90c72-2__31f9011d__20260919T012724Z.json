@@ -1,0 +1,35 @@
+{
+ "task": "R:poisson_self_field_supplied_branch_core_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "poisson",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/poisson_self_field_supplied_branch_core_2026_06_18.py",
+ "seed": 81244,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012724Z",
+ "elapsed_s": 65.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "225d08a9a1b7f8763d66736794dd35e022b3837670a5273ebf580207303a222c",
+ "stdout_tail": "===============================\nPOISSON SUPPLIED-BRANCH CORE CERTIFICATE\n========================================================================\nPASS: core note contains firewall phrase: not a retained derivation of gravity\nPASS: core note contains firewall phrase: PDE, source, boundary condition, normalization, physic\nPASS: core note contains firewall phrase: longitudinal falloff remain supplied or imposed\nPASS: core note contains firewall phrase: This split adds no repo-wide axiom\nPASS: parent note cites supplied-branch core split\nPASS: parent note uses current Born cache value\nPASS: parent runner no longer advertises retained parent results\nPASS: longitudinal denominator remains formula-level source\nPASS: finite 2D Poisson residual within declared budget -- max_residual=3.18735706e-05\nPASS: zero transverse Dirichlet boundary remains exact -- max_boundary=0.0e+00\nPASS: Fam1 centroid shift is TOWARD -- delta=+0.002284\nPASS: Fam1 F~M remains near linear -- F~M=0.9997\nPASS: Fam2 centroid shift is TOWARD -- delta=+0.002243\nPASS: Fam2 F~M remains near linear -- F~M=0.9993\nPASS: Fam3 centroid shift is TOWARD -- delta=+0.002173\nPASS: Fam3 F~M remains near linear -- F~M=0.9994\nPASS: Born cancellation is at machine precision on active Poisson branch -- Born |I3|/P=9.84e-16\nPASS: s=0 null branch is exact -- delta=+0.000000e+00\n------------------------------------------------------------------------\nSUMMARY: PASS=18 FAIL=0\nVERDICT: PASS -- bounded supplied-branch core is audit-ready\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

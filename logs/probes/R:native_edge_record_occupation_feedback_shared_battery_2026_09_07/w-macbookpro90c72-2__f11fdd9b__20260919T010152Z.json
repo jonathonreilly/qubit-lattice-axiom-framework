@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_occupation_feedback_shared_battery_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_occupation_feedback_shared_battery_2026_09_07.py",
+ "seed": 79712,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010152Z",
+ "elapsed_s": 14.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1ea2128b78c665a48b550d53b3107d59effe0ed44e0eab51cd188f18a51e8539",
+ "stdout_tail": "ass=0.13330265253619705\nVALIDATION {\"rows\": 45, \"configuration_records\": 292, \"trap_prefixes\": 46, \"maximum_residual\": 7.602807272633072e-13, \"minimum_current_threshold_margin\": 0.0010624033632702298, \"mutations\": {\"missing_row\": true, \"NaN\": true, \"wrong_conditionalQ\": true, \"current_difference\": true, \"lost_dark_mass\": true, \"wrong_CAR_sign\": true, \"wrong_scope\": true, \"bool_threads\": true, \"float_basis\": true, \"missing_time_certificates\": true, \"duplicate_time_certificate\": true, \"invented_time_rate\": true, \"untrue_max_residual\": true, \"terminal_depth12\": true, \"duplicate_terminal\": true, \"omitted_terminal\": true}, \"live_checker_sha256\": \"84338de0461f472ebdba013c2924fb57be918c62e1cab6f73fcda17a6d4cc387\"}\nper_element: checked all live-edge currents on all45 post-event conditioned prefixes.\nper_site: checked all eight densities and fixedN4 on every positive-probability prefix.\nper_mode: checked full fixedN occupation/spectral coherences and all zero-gap rate-tuple terms.\nper_block: checked conditioned totalQ and direct battery energy, all292 exact configuration-prefix records and complete dark/trap census.\nlattice_wide: checked and not executed -- finite supplied feedback law does not resolve infinite-lattice formation, locality, entropy or renewal.\nSOURCE_SHA256 e6710fc3faf6f81110917d0d61251a2d587bcfa989db0608b1c49f59154bd02f\nTIMING {\"seconds\": 14.029910666053183, \"peak_rss_MiB\": 95.484375, \"timeout_seconds\": 180, \"blas_threads\": 1, \"rss_limit_MiB\": 180}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010206Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_occupation_feedback_shared_battery_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

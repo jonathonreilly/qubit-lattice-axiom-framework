@@ -1,0 +1,35 @@
+{
+ "task": "R:plaquette_per_step_per_plaquette_normalization_bridge_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "plaquette",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/plaquette_per_step_per_plaquette_normalization_bridge_2026_06_12.py",
+ "seed": 81193,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012633Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "665d339cfb8f2bd6fe4bdf367d9b0cb0add8ef3f3a37033d0eb7eae6b2c2e64d",
+ "stdout_tail": "220e-16, min_eig=1.325e-19\nPASS: L_t=1: log Tr[T^L_t] equals Perron term plus finite spectral correction\n      lambda0=3.812612153335, correction=3.872919811482e-02, residual=0.000e+00\nPASS: L_t=2: log Tr[T^L_t] equals Perron term plus finite spectral correction\n      lambda0=3.812612153335, correction=1.085071533720e-03, residual=0.000e+00\nPASS: L_t=4: log Tr[T^L_t] equals Perron term plus finite spectral correction\n      lambda0=3.812612153335, correction=1.093484037262e-06, residual=0.000e+00\nPASS: L_t=8: log Tr[T^L_t] equals Perron term plus finite spectral correction\n      lambda0=3.812612153335, correction=1.192155550315e-12, residual=0.000e+00\nPASS: L_t=12: log Tr[T^L_t] equals Perron term plus finite spectral correction\n      lambda0=3.812612153335, correction=1.301661149279e-18, residual=0.000e+00\nPASS: finite spectral correction decreases with L_t on the positive source-sector matrix\n      L_t=4:1.093e-06, L_t=8:1.192e-12, L_t=12:1.302e-18\n\n================================================================================================\nPart 6: bridge formula summary\n================================================================================================\nPASS: per-step trace-positive derivative normalizes by N_step=6 L_s^3\n      L_s=3 N_step=162\nPASS: licensed plaquette readout is the trace-positive per-step derivative after adding back the Wilson constant\n      f'_Wilson = -1 + (1/N_step) d_beta log(lambda0_plus); <P> = 1 + f'_Wilson\n\nTOTAL: PASS=34, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012634Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

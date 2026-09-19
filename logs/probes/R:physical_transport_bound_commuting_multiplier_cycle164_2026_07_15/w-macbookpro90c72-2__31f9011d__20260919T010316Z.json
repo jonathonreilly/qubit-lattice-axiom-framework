@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_transport_bound_commuting_multiplier_cycle164_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_transport_bound_commuting_multiplier_cycle164_2026_07_15.py",
+ "seed": 79796,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T010316Z",
+ "elapsed_s": 164.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e1ed7e407d0f57506bcdb299073fb4cb4ac61d262bf58e3512b2c1b54ea54f3",
+ "stdout_tail": "AUTHORITY AND LAW\nFAIL Cycle-164 review note exists :: \nPASS Cycle 164 adds no row and uses the deterministic Cycle-163 law :: 96620\nPASS all three transport paths are strictly nearest-neighbor :: []\n\nALL COMMUTING ROW PAIRS\nPASS all 544 commuting pairs have one exact schedule graph :: (544, Counter({(42, 66, 1, 2, (), 187): 544}), [])\nPASS every terminal output is the exact signed commuting product :: []\n\nCUBIC COVARIANCE AND CAUSAL CONTROL\nPASS all 24 proper-cubic orientations preserve exact closure :: (Counter({(42, 66, 1, 2, (), 187): 24}), [])\nPASS source deletion suppresses product formation without harming the other input :: []\n\nPROBE AND SCOPE\nLAW 96620 544 60\nGRAPHS 544 {(42, 66, 1, 2, (), 187)} 0\nROTATIONS 24 {(42, 66, 1, 2, (), 187)} 0\nDELETION 0\nRESULT PHYSICAL_TRANSPORT_BOUND_COMMUTING_MULTIPLIER\nPASS the companion composition probe is green :: \nFAIL note contains: all 544 ordered commuting pairs :: \nFAIL note contains: cycle 164 adds no canonical or raw row :: \nFAIL note contains: the product is not a host calculation :: \nFAIL note contains: joint placement rather than a newly identified operation :: \nFAIL note contains: does not claim the full physical pivot is complete :: \nFAIL note contains: no axiom, primitive, registry, policy, or audit edit follows :: \n\nTOTAL\nPASS 7 FAIL 7\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010600Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

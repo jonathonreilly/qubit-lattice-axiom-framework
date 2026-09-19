@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_occupation_feedback_orbital_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_occupation_feedback_orbital_check_2026_09_07.py",
+ "seed": 79706,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010146Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "def016778d1d2f40662063d1be5836c4d1771b168dfafacea281a84ce0e76f8a",
+ "stdout_tail": "OCCUPATION FEEDBACK: Post-event conditional states; all reach/dark/trap mass retained. Headempty dark refers to the TOTAL-ENERGY-FIBER occupation dictionary, not bare physical occupation. Supplied changed law, no optimization or nonnegative battery drift theorem.\nDATA post1 prefixes=3 mass=0.4999999999999995\nDATA post2 prefixes=6 mass=0.3434064769414076\nDATA post3 prefixes=12 mass=0.19580265253619691\nDATA post4 prefixes=24 mass=0.13330265253619702\nVALIDATION {}\nper_element: checked all live-edge currents on all45 post-event conditioned prefixes.\nper_site: checked all eight densities and fixedN4 on every positive-probability prefix.\nper_mode: checked full fixedN occupation/spectral coherences and all zero-gap rate-tuple terms.\nper_block: checked conditioned totalQ and direct battery energy, all292 exact configuration-prefix records and complete dark/trap census.\nlattice_wide: checked and not executed -- finite supplied feedback law does not resolve infinite-lattice formation, locality, entropy or renewal.\nSOURCE_SHA256 84338de0461f472ebdba013c2924fb57be918c62e1cab6f73fcda17a6d4cc387\nTIMING {\"seconds\": 6.2211414580233395, \"peak_rss_MiB\": 81.359375, \"timeout_seconds\": 180, \"blas_threads\": 1, \"rss_limit_MiB\": 180}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010152Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_occupation_feedback_orbital_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

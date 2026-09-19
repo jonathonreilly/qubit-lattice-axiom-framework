@@ -1,0 +1,35 @@
+{
+ "task": "R:pmns_dcp_branch_robustness_pressure_test_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "pmns",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/pmns_dcp_branch_robustness_pressure_test_2026_06_08.py",
+ "seed": 81197,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012637Z",
+ "elapsed_s": 12.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0cc321c2c6eda4e72ef2121e8f4a17ccacc2b7dc2afcf9fcaad06e2095600b9c",
+ "stdout_tail": "robustness -- the fair test): with s23^2 ALSO fixed to its measured value, does EXACTLY ONE basin survive (the Q2 competitor excluded) and is it near-maximal CP (~Q3)?  PASS here = the competing branch is empirically excluded by the measured s23^2 (NOT just an imposed rule); so delta_CP near-maximal is robust given the 3 measured angles, and the prediction can be stated conditional on data, dropping the imposed branch rule. (The exact [251.86,270] bracket is the note's 200-bit interval cert; this loose float scan only checks branch structure, not the bracket.)\n       1 basin(s) match all 3 angles (the Q2 s23^2~0.70 competitor is gone); near-maximal = True\n\n  V2 embedding sensitivity (anchor (m,delta), q = sqrt(8/3) - delta + t):\n    t=-0.10: delta_CP= 243.59 deg  Q3 (180-270)  (s12^2=0.273, s13^2=0.0153)\n    t=-0.05: delta_CP= 252.05 deg  Q3 (180-270)  (s12^2=0.288, s13^2=0.0176)\n    t=+0.00: delta_CP= 258.98 deg  Q3 (180-270)  (s12^2=0.302, s13^2=0.0207)\n    t=+0.05: delta_CP= 264.57 deg  Q3 (180-270)  (s12^2=0.317, s13^2=0.0244)\n    t=+0.10: delta_CP= 269.08 deg  Q3 (180-270)  (s12^2=0.331, s13^2=0.0286)\n[PASS] V2 (embedding sensitivity): how far does delta_CP move as the embedding surface q is perturbed off the chamber boundary by t in +/-0.1?  A large swing means the exact q=sqrt(8/3)-delta surface is load-bearing for the forecast.\n       delta_CP spread over t in [-0.1,0.1] = 25.5 deg\n\nTOTAL: PASS=4 FAIL=0\nrunner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

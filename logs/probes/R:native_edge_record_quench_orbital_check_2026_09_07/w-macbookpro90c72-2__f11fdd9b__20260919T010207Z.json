@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_quench_orbital_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_quench_orbital_check_2026_09_07.py",
+ "seed": 79727,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010207Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fd9f1b17d2aae3bf95de4c8b0f4efcfb487e34623ad3c56053093ff527d85030",
+ "stdout_tail": "PASS independent exterior-spectral quench witness: 32 cut/time rows satisfy echo and energy-defect bounds.\nper_element: six eigenvalues generate all 64 exterior subset products and all-N Hermitian subset sums.\nper_site: six chain modes, five weighted edges and the central seed are explicit; no ambient native-code matrix is simulated.\nper_mode: only 6x6 one-particle exponentials and spectra are used; no full-Fock matrix or primary imports.\nper_block: four whole-hop truncations at eight Fourier times; actual locality orders 1,2,2,infinity are checked.\nlattice_wide: not executed; this finite CAR witness does not simulate a cube device or a local Markov bath.\nSOURCE_SHA256 8b5070cb511dad23814c7b0de65013dd0306f63919df698999d5bc991416ab56\nDEPENDENCIES {}\nRESOURCES {\"blas_threads\": 1, \"rss_MiB\": 60.0, \"rss_limit_MiB\": 180, \"seconds\": 0.2297870001057163, \"timeout_seconds\": 180}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010207Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_quench_orbital_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.py",
+ "seed": 79729,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010209Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "91e30bf16b9bbc99023b3102dea356b3fdf36c1370f037f82b4f963f9427b1d5",
+ "stdout_tail": "689, \"retained_trace_norm_formula\": 1.8132381747158046e-14, \"system_only_bound\": 1.6439163391233515e-28, \"t\": 1.01, \"unfinished_probability\": 8.219581695616757e-29}, {\"t\": 2.0, \"unfinished_probability\": 1.0}], \"rss_MiB\": 121.765625, \"scope\": \"Literal4608-dimensional sparse clock/native matrix, all8readyinput columns; fixedoldr0 folded, not2^27 physical simulation. Recurrence at2, no terminal permanence.\", \"seconds\": 0.9062527080532163, \"source_sha256\": \"15c25d533b55c3d2067af563371cc9fe1f7dec489d99a18050effb4be86c5e22\", \"window_eta_rational_bound\": 0.0004664399092970521}\nper_element: all nine actual native gates and eight identity padding steps are checked.\nper_site:18onehot clock positions, reduced native256-dimensional carrier with oldr0 folded.\nper_mode: original free K retained; all8input columns and144-column gauge intertwiner checked.\nper_block: finite-window completed-clock comparison, peak transfer and recurrence at2 verified.\nlattice_wide: checked and not executed -- no2^27 simulation, universal NN implementation, terminal permanence or physical clock preparation claim.\nSOURCE_SHA256 15c25d533b55c3d2067af563371cc9fe1f7dec489d99a18050effb4be86c5e22\nDEPENDENCIES {\"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py\": \"fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af\", \"scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py\": \"4a10bda8a07b7aaf9afd7b8280f6a66755e17f657a9929ca1e5d072183b21f9c\"}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010210Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

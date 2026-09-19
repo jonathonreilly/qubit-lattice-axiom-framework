@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_autonomous_head_native_ladder_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+ "seed": 79692,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010132Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "86c045ac9121bc9900e89f77a2c776a608953bc191914bb4091e8e87c92c7248",
+ "stdout_tail": "PASS native Pauli/code instrument: 108 legal mask/sign/edge cases, full even-N dictionary\nPASS retained 0..33 ladder: safe Etotal=20, boundary refusal max=1.000000; matrix commutation, joint completion, every energy indicator, head rates\nPASS nonbridge then reachable deterministic bridge; refusal sectors absorbing with unchanged H\nPASS checks=4803 worst=3.023e-14 elapsed=2.479s RSS=90.3MiB\nSCOPE supplied irreversible generator; no local physical or closed-unitary implementation claim\nSOURCE_SHA256 fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010135Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

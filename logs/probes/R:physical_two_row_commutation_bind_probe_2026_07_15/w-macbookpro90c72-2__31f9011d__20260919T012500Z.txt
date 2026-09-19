@@ -1,0 +1,5 @@
+PATH_LENGTHS {('left', 0): 46, ('left', 2): 46, ('left', 1): 46, ('left', 3): 46, ('right', 2): 46, ('right', 0): 62, ('right', 3): 66, ('right', 1): 46}
+PATH_CONTACTS 404 404
+SMOKE True (410, 1872, 8, 4540, 409) EXPECTED H0
+LOCAL_PROOF 5006 0
+RESULT PHYSICAL_TWO_ROW_COMMUTATION_BIND

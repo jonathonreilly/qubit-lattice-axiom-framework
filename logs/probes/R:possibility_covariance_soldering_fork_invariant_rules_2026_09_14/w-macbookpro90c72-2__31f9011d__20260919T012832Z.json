@@ -1,0 +1,35 @@
+{
+ "task": "R:possibility_covariance_soldering_fork_invariant_rules_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "possibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.py",
+ "seed": 81312,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012832Z",
+ "elapsed_s": 15.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=94 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2bb1eaab17476619241068f79b827efea3ef99b9df3f8b75928e7819f3600c58",
+ "stdout_tail": " \"5aa5e8549b928d49025e52ff705a3a2b39a9ec5cf8fd1a4e5ebea7659452218b\", \"docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md\": \"c08d7a351c2ae40d921b0e996ca817b4f789c51072fbf2b6eb9a2de6f6fe8967\", \"docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md\": \"98505590939c9ef2f39560f33dc53698146a34268eaf2dc8bc36ffe630de6e4d\", \"docs/ADMISSIBILITY_SHARP_QUBIT_RECORD_WRITER_ORIENTATION_AXIOM_DECISION_BOUNDED_THEOREM_NOTE_2026-09-01.md\": \"f07c5330951cc181a710e77d3273c2641a0a2292ca01ac61889211fdb4a1c733\", \"docs/ADMISSIBILITY_SIX_NEIGHBOR_AFFINE_CQ_CHANNEL_SOLDER_SUPPORT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md\": \"2610f30a0c0a6821e0d086f3b56785442b97c25c573a485ad290afc8e1772082\", \"docs/COVARIANT_NN_SUPPORT_RULES_GAUSS_LAW_AS_GLUED_SUPPORT_AND_HOLE_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-14.md\": \"52bac50e92369b4f2956befd36f1ff9a3126151201eb216fe3180a34c83dcb63\", \"docs/MINIMAL_AXIOMS_2026-06-29.md\": \"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\", \"docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md\": \"755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563\", \"docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md\": \"0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012848Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/possibility_covariance_soldering_fork_invariant_rules_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

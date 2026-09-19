@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_reduced_cell_autonomous_clock_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_reduced_cell_autonomous_clock_2026_09_07.py",
+ "seed": 79727,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010207Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a794c788b75b90f5cf4e2ee57069c705aa9f9b077c6a6aeb4bdf5ee6e17fc9ea",
+ "stdout_tail": "PASS reduced native autonomous clock:37 clock assertions plus163 separately accounted native isometry assertions\nCERTIFICATE retained trace <1/20; discard clock trace <1/1000; window[.99,1.01]\nper_element: actual nine native unitaries commute original freeK; gauge amplitudes and recurrence checked\nper_site:27 reduced registers, one-hot clock18; no physical parent-register count claim\nper_mode: all8 ready input columns through exact native isometry; reference extension by gauge proof\nper_block:17 links,8 identity padding steps; onehot total norm<33, natural full extension<261\nlattice_wide: checked and not executed -- no2^27 simulation, NN implementation or permanent completion\nSOURCE_SHA256 742461f51e274b440401515d71a6c1e40ae032a8676852fb369b6302b790d129\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010209Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "positive",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_2026_09_14.py",
+ "seed": 81310,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012830Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0b4e885c06b807902d96e108ef8707969fe4ce83f19d564791e6f6426d30b524",
+ "stdout_tail": "mmuting block weighted bounds checked: 12\nlargest ratio 0.8256227057273978\nPASS: check_generator_bound\nphysical dimension 258\n{'M': 1, 'flux_CAR_trace': np.float64(74.30400591915969), 'positive_history_trace': np.float64(74.30400591915988), 'relative_difference': np.float64(2.4862874147864692e-15), 'unfixed_full_history_sum': np.float64(74.30400591915296)}\n{'M': 2, 'flux_CAR_trace': np.float64(74.16252378876247), 'positive_history_trace': np.float64(74.16252378876199), 'relative_difference': np.float64(6.515002940207208e-15)}\nPASS: check_plaquette_trace\n{'fock_antiunitary_square_parity_error': np.float64(0.0), 'normal_antiunitary_error': np.float64(0.0), 'pair_antiunitary_error': np.float64(0.0), 'pair_charge_commutator': np.float64(0.0), 'pair_number_commutator': np.float64(1.8400000000000003)}\nPASS: check_antiunitary_pairing\nper_element: cyclic kernels, finite Fock algebra and noncommuting electric-weight generators are checked\nper_site: opposite charge Gauss projection includes modulo aliases; neutral pairing respects its stated antiunitary\nper_mode: free four-node metrics and a permitted gapping pairing are checked without an interacting phase inference\nper_block: bond and full plaquette projected traces match positive histories, with finite-slice errors disclosed\nlattice_wide: local fixed-time approximation is proved in the note; ground-state and infrared phase limits remain open\nInternal finite assertions: 28918 (not independent scientific results)\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012832Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

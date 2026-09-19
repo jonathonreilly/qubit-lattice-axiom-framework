@@ -1,0 +1,35 @@
+{
+ "task": "R:plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "plaquette",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12.py",
+ "seed": 81193,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012633Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0ef6bb40d282a95b4416d4271bd3be7efed7dc64d1563545baf25eac2ec0d384",
+ "stdout_tail": "presentative with weight |G|/|Stab_G(cell)|.\nNMAX=2: labels=9, self_dual=3, dense_exact_label_orbits=1.228e76, identity_term_floor=1.228e76, link_orbit_tied_diagnostic_cells=2.287e13, dense_exact_orbit_memory=1.831e68 GiB\nPASS: NMAX=2: exact dense label-orbit quotient is not the link-orbit-tied diagnostic quotient\nPASS: NMAX=2: dense exact label-orbit storage estimate exceeds 4 GiB\nNMAX=3: labels=16, self_dual=4, dense_exact_label_orbits=2.135e96, identity_term_floor=2.135e96, link_orbit_tied_diagnostic_cells=7.205e16, dense_exact_orbit_memory=3.183e88 GiB\nPASS: NMAX=3: exact dense label-orbit quotient is not the link-orbit-tied diagnostic quotient\nPASS: NMAX=3: dense exact label-orbit storage estimate exceeds 4 GiB\n\n====================================================================================================\n5. Licensed construction boundary\n====================================================================================================\nThe marked stabilizer equivariance is verified, but the link-orbit diagnostic graph is a fixed/tied diagnostic carrier. The licensed exact quotient must carry complete link-label orbit data plus the stabilizer action on intertwiner blocks. A first rho runner is therefore not licensed by this result.\nOpen target: a rank-aware contractor may still use the same symmetry, but it must keep stabilizer isotypic blocks and prove its support pruning.\nPASS: runner leaves rho computation and status authority untouched\n\nTOTAL: PASS=18, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012633Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

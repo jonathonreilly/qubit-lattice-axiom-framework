@@ -1,0 +1,35 @@
+{
+ "task": "R:plaquette_value_derivation_check_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "plaquette",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/plaquette_value_derivation_check_2026_06_10.py",
+ "seed": 81196,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012636Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2dc67313e08e2b0879e1cc2dfd16d18f73d3fff03cdec41045f6e76022ce8bd9",
+ "stdout_tail": " [PASS][A] remark R1: idealized activity u(6)*e*(Delta+1) exceeds 1 by more than a factor 10  (u(6)*e*(Delta+1) = 24.1198)\n== Part 5: bracket cost budget and cross-note residuals ==\n  [PASS][A] budget: optimal-delta bracket width is 24*sqrt(chi/L) (formula arithmetic)  (chi_proxy = 0.064880483)\n  [PASS][C] a 1e-2-wide rigorous bracket needs certified ln Z_L at L > 1e5  (L(0.05) = 1.495e+4, L(0.01) = 3.737e+5, L(0.002) = 9.343e+6)\n  [PASS][C] at the largest committed MC volume (L=8) the rigorous bracket is vacuous  (width(L=8) = 2.1613 > full observable range 1.5)\n  [PASS][B] admitted reuse constant matches the canonical helper surface (consistency only)  (consumed as admitted comparison/reuse number, never derived here)\n  [PASS][B] admitted 0.5934 lies inside the committed MC-FSS two-sigma bracket [0.59327, 0.59473]  (bracket quoted from PLAQUETTE_4D_MC_FSS_NUMERICAL_THEOREM_NOTE_2026-05-05)\n  [PASS][D] recorded literature singularity modulus ~5.7 lies inside the |beta|=6 disc (context)  (comparator context only; consistent with the KP certificate boundary at beta=6)\n  [PASS][A] paired note declares all required boundaries and non-claims  (all guardrail phrases present)\n\nBreakdown: A=22 B=3 C=6 D=1\nTOTAL: PASS=32 FAIL=0\nSCOPE: <P>(6) = 0.5934 is NOT derived here; B1 stays an admitted reuse number. This runner certifies the specification, the quantitative thermodynamic-limit theorem, the bracket interface with its cost budget, and the scoped KP certificate boundary at beta=6.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

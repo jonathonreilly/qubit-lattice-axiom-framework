@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_autonomous_head_ablation_orbital_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_edge_record_autonomous_head_ablation_orbital_check_2026_09_07.py",
+ "seed": 79691,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f11fdd9b",
+ "started_utc": "20260919T010131Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bbfd26c9961e87294dcd0d973644cec95068c57383f74d361f94ab3dc7ba969e",
+ "stdout_tail": "FROZEN FOUR-ABLATION DIAGNOSIS: C/D formal ideal coherent-reference limit; no finite-energy claim. B/D zero-wait endpoint comparisons; not a new autonomous realization. Mean-current thresholds, no fitted parameters.\nDATA A pre-support counts=[3, 0, 8, 0] trajectory fronts=24/24\nDATA B pre-support counts=[3, 6, 12, 24] trajectory fronts=24/24\nDATA C pre-support counts=[3, 4, 12, 24] trajectory fronts=24/24\nDATA D pre-support counts=[3, 6, 8, 12] trajectory fronts=24/24\nROWS 360 TRAJECTORIES 96\nVALIDATION {}\nSOURCE_SHA256 dfb36654d1e6918ff04a05d1bc475ae23db190aa683dee65da9c51f2f67f86c6\nTIMING {\"seconds\": 0.23511424998287112, \"peak_rss_MiB\": 39.46875, \"timeout_seconds\": 180, \"blas_threads\": 1, \"rss_limit_MiB\": 180}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010132Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_autonomous_head_ablation_orbital_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

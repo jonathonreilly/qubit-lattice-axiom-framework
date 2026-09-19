@@ -1,0 +1,35 @@
+{
+ "task": "R:plaquette_marked_slice_bulk_average_translation_bridge_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "plaquette",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/plaquette_marked_slice_bulk_average_translation_bridge_2026_06_12.py",
+ "seed": 81193,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31f9011d",
+ "started_utc": "20260919T012633Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ad582d52a0935c868dd3eb2a7af48915f6a5b2b256b852e61ab3252b0aaf0995",
+ "stdout_tail": "PASS: L=2 periodic Wilson plaquette count is 6 L^4 -- count=96\nPASS: spatial-spatial class count is 3 L^4 -- count=48\nPASS: spatial-temporal class count is 3 L^4 -- count=48\nPASS: class split is disjoint and exhaustive\nPASS: translations plus spatial cubic permutations cover every spatial plaquette -- orbit=48\nPASS: translations plus spatial cubic permutations cover every temporal plaquette -- orbit=48\nPASS: 4-axis permutations plus translations cover all plaquettes from one spatial mark -- orbit=96\nPASS: a time-space axis swap maps the marked spatial plaquette to temporal class -- ((0, 0, 0, 0), 1, 2) -> ((0, 0, 0, 0), 0, 2)\nPASS: common Wilson coefficient is preserved under the time-space swap -- accepted surface uses one beta coefficient for all six orientations\nPASS: a split beta_s/beta_t surface would not be preserved by that swap -- the equality uses the accepted common-coefficient surface\nPASS: class weights are exactly one half each\nPASS: if E_spatial = E_temporal, all-plaquette average equals marked spatial\nPASS: without across-class equality, all average is the named split -- <P>_all = (E_spatial + E_temporal)/2 on symmetric L^4 counts\nPASS: note delegates audit status to independent audit lane\nPASS: note contains the finite-L within-class theorem\nPASS: note contains the accepted-surface across-class theorem\nPASS: note avoids banned overreach phrases\nTOTAL: PASS=17, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T012633Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

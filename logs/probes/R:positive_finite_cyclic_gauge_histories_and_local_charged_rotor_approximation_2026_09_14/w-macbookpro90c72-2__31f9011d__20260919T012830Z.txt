@@ -1,0 +1,59 @@
+N 3 physical_dimension 6 partition 8.583664042907401
+ slices 1 trace mismatch 1.7763568394002505e-15 trotter error 0.11429228388379897 single phase 2.7379250471752417 wrong temporal phase 6.854475441235883
+ slices 2 trace mismatch 8.881784197001252e-15 trotter error 0.03128186905871466 single phase 2.737925047175242 wrong temporal phase 6.854475441235883
+ slices 3 trace mismatch 7.105427357601002e-15 trotter error 0.01415474399468053 single phase 2.737925047175242 wrong temporal phase 6.8544754412358815
+ slices 4 trace mismatch 1.5987211554602254e-14 trotter error 0.008012948118770069 single phase 2.737925047175243 wrong temporal phase 6.854475441235884
+N 4 physical_dimension 6 partition 9.179418631379054
+ slices 1 trace mismatch 1.7763568394002505e-15 trotter error 0.058431460648026956 single phase 3.1614835260152896 wrong temporal phase 13.2118495416609
+ slices 2 trace mismatch 3.552713678800501e-15 trotter error 0.015867789272803634 single phase 3.1614835260152896 wrong temporal phase 13.211849541660907
+ slices 3 trace mismatch 5.329070518200751e-15 trotter error 0.007170777448671117 single phase 3.1614835260152887 wrong temporal phase 13.211849541660902
+ slices 4 trace mismatch 2.6645352591003757e-14 trotter error 0.004057590351241203 single phase 3.1614835260152914 wrong temporal phase 13.21184954166091
+N 5 physical_dimension 6 partition 9.633494635821688
+ slices 1 trace mismatch 7.105427357601002e-15 trotter error 0.030490280189681584 single phase 3.49851526051328 wrong temporal phase 17.963726092315213
+ slices 2 trace mismatch 1.9539925233402755e-14 trotter error 0.008247671077789676 single phase 3.4985152605132805 wrong temporal phase 17.963726092315216
+ slices 3 trace mismatch 1.0835776720341528e-13 trotter error 0.0037247525266632664 single phase 3.49851526051328 wrong temporal phase 17.96372609231521
+ slices 4 trace mismatch 3.375077994860476e-14 trotter error 0.002107187628578089 single phase 3.498515260513281 wrong temporal phase 17.963726092315223
+PASS: check_positive_trace
+{'M': 1, 'operator_trace': np.float64(5.837792211830401), 'positive_HS_sum': np.float64(5.8377922118304095), 'difference': np.float64(8.881797803169178e-15), 'minimum_weight': np.float64(0.00016831425904726416), 'trotter_error': np.float64(0.06688789406067919)}
+{'M': 2, 'operator_trace': np.float64(5.788640598190968), 'positive_HS_sum': np.float64(5.788640598190934), 'difference': np.float64(3.375078758028008e-14), 'minimum_weight': np.float64(2.3552545496867404e-07), 'trotter_error': np.float64(0.01773628042124642)}
+{'M': 3, 'operator_trace': np.float64(5.77887355259557), 'positive_HS_sum': np.float64(5.778873552595397), 'difference': np.float64(1.7319479308199557e-13), 'minimum_weight': np.float64(4.2227990867429844e-09), 'trotter_error': np.float64(0.007969234825848659)}
+PASS: check_charge_interaction
+reference truncation bound 1.852203401331905e-31
+{'N': 3, 'dimension': 48, 'state_norm_error': 0.4634592984467335, 'N_squared_error': 4.171133686020601, 'modulo_alias_probability': np.float64(0.03164806484876457), 'proved_bound': 2}
+{'N': 5, 'dimension': 80, 'state_norm_error': 0.1715941061206248, 'N_squared_error': 4.28985265301562, 'modulo_alias_probability': np.float64(0.0036345547226120326), 'proved_bound': 2}
+{'N': 7, 'dimension': 112, 'state_norm_error': 0.07195060830353783, 'N_squared_error': 3.525579806873354, 'modulo_alias_probability': np.float64(0.00015920039940660707), 'proved_bound': 2}
+{'N': 9, 'dimension': 144, 'state_norm_error': 0.0433399973231654, 'N_squared_error': 3.5105397831763976, 'modulo_alias_probability': np.float64(3.2686887270158497e-06), 'proved_bound': 2}
+{'N': 13, 'dimension': 208, 'state_norm_error': 0.021403029344906736, 'N_squared_error': 3.6171119592892382, 'modulo_alias_probability': np.float64(1.8013393446366463e-10), 'proved_bound': 0.9932685873066633}
+{'N': 17, 'dimension': 272, 'state_norm_error': 0.012623956162064555, 'N_squared_error': 3.6483233308366563, 'modulo_alias_probability': np.float64(5.516077538499621e-16), 'proved_bound': 0.4010814085883011}
+{'N': 25, 'dimension': 400, 'state_norm_error': 0.005866490408627567, 'N_squared_error': 3.6665565053922293, 'modulo_alias_probability': np.float64(2.592089648578413e-31), 'proved_bound': 0.16142241823547815}
+{'N': 33, 'dimension': 528, 'state_norm_error': 0.0033719433656236057, 'N_squared_error': 3.6720463251641067, 'modulo_alias_probability': np.float64(5.516957175009124e-49), 'proved_bound': 0.09209289407715844}
+{'N': 49, 'dimension': 784, 'state_norm_error': 0.0015308964893298576, 'N_squared_error': 3.675682470880988, 'modulo_alias_probability': np.float64(3.8703089504979426e-88), 'proved_bound': 0.04176151691491459}
+{'N': 65, 'dimension': 1040, 'state_norm_error': 0.0008702728945618284, 'N_squared_error': 3.676902979523725, 'modulo_alias_probability': np.float64(3.3407882303375513e-130), 'proved_bound': 0.023732399407333644}
+PASS: check_clock_rotor
+{'beta_t': 0.05, 'max_matrix_formula_error': np.float64(1.4210854741704373e-14), 'F0': np.float64(257.28266969095324), 'Fpi': np.float64(257.28293742610794), 'first_Fourier_coefficient': -6.693378864196958e-05, 'quadrature_error_estimate': 1.831079301084592e-12, 'small_x_coefficient_ratio': -10.70940618271513}
+{'beta_t': 0.1, 'max_matrix_formula_error': np.float64(1.4210855104252535e-14), 'F0': np.float64(261.1628606180722), 'Fpi': np.float64(261.16719601899285), 'first_Fourier_coefficient': -0.0010838502301257328, 'quadrature_error_estimate': 1.8587090573359536e-12, 'small_x_coefficient_ratio': -10.838502301257327}
+{'beta_t': 0.4, 'max_matrix_formula_error': np.float64(1.4211002960502318e-14), 'F0': np.float64(349.67053620525644), 'Fpi': np.float64(351.074919064457), 'first_Fourier_coefficient': -0.3510956917671474, 'quadrature_error_estimate': 1.8576852458676597e-11, 'small_x_coefficient_ratio': -13.714675459654192}
+{'beta_t': 1.0, 'max_matrix_formula_error': np.float64(3.555354497538402e-14), 'F0': np.float64(1451.4244992112324), 'Fpi': np.float64(1632.4349641210429), 'first_Fourier_coefficient': -45.25003333529047, 'quadrature_error_estimate': 1.0843340489932382e-11, 'small_x_coefficient_ratio': -45.25003333529047}
+{'beta_t': 2.0, 'max_matrix_formula_error': np.float64(7.716948487935403e-13), 'F0': np.float64(51286.78696307981), 'Fpi': np.float64(129716.6626741817), 'first_Fourier_coefficient': -19536.194772813495, 'quadrature_error_estimate': 1.02121699985247e-09, 'small_x_coefficient_ratio': -1221.0121733008434}
+nodes [{'k': [-0.7, 0.0, -0.9272952180016123], 'charge': -1, 'chirality': 1, 'metric': [[0.9999999999575642, 0.0, 0.0], [0.0, 0.9999999999666664, 0.0], [0.0, 0.0, 0.6399999999746346]]}, {'k': [-0.7, 0.0, 0.9272952180016123], 'charge': -1, 'chirality': -1, 'metric': [[0.9999999999575642, 0.0, 0.0], [0.0, 0.9999999999666664, 0.0], [0.0, 0.0, 0.6399999999746346]]}, {'k': [0.7, 0.0, -0.9272952180016123], 'charge': 1, 'chirality': -1, 'metric': [[0.9999999999575642, 0.0, 0.0], [0.0, 0.9999999999666664, 0.0], [0.0, 0.0, 0.6399999999746346]]}, {'k': [0.7, 0.0, 0.9272952180016123], 'charge': 1, 'chirality': 1, 'metric': [[0.9999999999575642, 0.0, 0.0], [0.0, 0.9999999999666664, 0.0], [0.0, 0.0, 0.6399999999746346]]}]
+pairing lower gap 0.23
+PASS: check_fourier_pairing
+{'N': 3, 'full_dimension': 768, 'physical_dimension': 86, 'nonzero_integer_total_charge_states': 16, 'traces': [{'M': 1, 'full_Fock_projected_trace': np.float64(127.91391626466597), 'history_sum': np.float64(127.91391626466606), 'relative_error': np.float64(6.665950774494595e-16)}, {'M': 2, 'full_Fock_projected_trace': np.float64(127.83683310335826), 'history_sum': np.float64(127.83683310335817), 'relative_error': np.float64(6.669891107790342e-16)}, {'M': 3, 'full_Fock_projected_trace': np.float64(127.82198064074049), 'history_sum': np.float64(127.82198064074078), 'relative_error': np.float64(2.2235390767197953e-15)}]}
+{'N': 5, 'full_dimension': 1280, 'physical_dimension': 70, 'nonzero_integer_total_charge_states': 0, 'traces': [{'M': 1, 'full_Fock_projected_trace': np.float64(126.78669563263445), 'history_sum': np.float64(126.78669563263436), 'relative_error': np.float64(6.725087187804414e-16)}, {'M': 2, 'full_Fock_projected_trace': np.float64(126.76499598233457), 'history_sum': np.float64(126.76499598233468), 'relative_error': np.float64(8.968358465289623e-16)}, {'M': 3, 'full_Fock_projected_trace': np.float64(126.76084221804098), 'history_sum': np.float64(126.76084221803866), 'relative_error': np.float64(1.8273540006432978e-14)}]}
+PASS: check_wilson_fock
+noncommuting block weighted bounds checked: 12
+largest ratio 0.8256227057273978
+PASS: check_generator_bound
+physical dimension 258
+{'M': 1, 'flux_CAR_trace': np.float64(74.30400591915969), 'positive_history_trace': np.float64(74.30400591915988), 'relative_difference': np.float64(2.4862874147864692e-15), 'unfixed_full_history_sum': np.float64(74.30400591915296)}
+{'M': 2, 'flux_CAR_trace': np.float64(74.16252378876247), 'positive_history_trace': np.float64(74.16252378876199), 'relative_difference': np.float64(6.515002940207208e-15)}
+PASS: check_plaquette_trace
+{'fock_antiunitary_square_parity_error': np.float64(0.0), 'normal_antiunitary_error': np.float64(0.0), 'pair_antiunitary_error': np.float64(0.0), 'pair_charge_commutator': np.float64(0.0), 'pair_number_commutator': np.float64(1.8400000000000003)}
+PASS: check_antiunitary_pairing
+per_element: cyclic kernels, finite Fock algebra and noncommuting electric-weight generators are checked
+per_site: opposite charge Gauss projection includes modulo aliases; neutral pairing respects its stated antiunitary
+per_mode: free four-node metrics and a permitted gapping pairing are checked without an interacting phase inference
+per_block: bond and full plaquette projected traces match positive histories, with finite-slice errors disclosed
+lattice_wide: local fixed-time approximation is proved in the note; ground-state and infrared phase limits remain open
+Internal finite assertions: 28918 (not independent scientific results)
+TOTAL: PASS=8 FAIL=0

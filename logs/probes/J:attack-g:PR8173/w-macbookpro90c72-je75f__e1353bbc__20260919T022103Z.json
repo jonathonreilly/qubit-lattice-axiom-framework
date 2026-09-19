@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8173",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block29-transv",
+ "worker": "w-macbookpro90c72-je75f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8173/laplacian_plane_wave.py",
+ "seed": 84463,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e1353bbc",
+ "started_utc": "20260919T022103Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - T1 Laplacian identity Delta e^{ik.x}=E(k)e^{ik.x} with E=2 sum(1-cos k_j) holds on every nonzero mode of T_L^3 for L=2,3,4 (not a re-find of the c in 0.86-0.98 HIT)"
+ },
+ "review": "T1 Laplacian plane-wave identity holds on all nonzero modes of T_L^3 for L=2,3,4; pattern has no purchase; not a re-find of the 0.86-0.98 kernel HIT",
+ "what": "PR #8173 ([physics-loop] admissibility-induced-law block29 \u2014 bounded_t): attack ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916; git show origin/physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916:<note>. Create probes/work/pr8173/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8173/<script>.py\"",
+ "stdout_sha256": "8f0f85cf0fc7f27dc29f0f92e69596ad869ecf79edd53ce7bc3de3d7f6c60d8e",
+ "stdout_tail": "L=2: 7 nonzero modes, fails=0\nL=3: 26 nonzero modes, fails=0\nL=4: 63 nonzero modes, fails=0\nSUMMARY: pattern has no purchase on this note - T1 Laplacian identity Delta e^{ik.x}=E(k)e^{ik.x} with E=2 sum(1-cos k_j) holds on every nonzero mode of T_L^3 for L=2,3,4 (not a re-find of the c in 0.86-0.98 HIT)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je75f",
+  "at_utc": "20260919T022103Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

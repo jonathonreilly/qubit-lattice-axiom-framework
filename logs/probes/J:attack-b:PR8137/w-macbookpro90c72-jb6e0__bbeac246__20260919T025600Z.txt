@@ -1,0 +1,7 @@
+indep: TV(ends, chain)=0
+  ends {('+', '+'): Fraction(1, 4), ('+', '-'): Fraction(1, 4), ('-', '+'): Fraction(1, 4), ('-', '-'): Fraction(1, 4)}
+  chain {('+', '+'): Fraction(1, 4), ('+', '-'): Fraction(1, 4), ('-', '+'): Fraction(1, 4), ('-', '-'): Fraction(1, 4)}
+var: TV(ends, chain)=1/18
+  ends {('+', '+'): Fraction(1, 4), ('+', '-'): Fraction(1, 4), ('-', '+'): Fraction(1, 4), ('-', '-'): Fraction(1, 4)}
+  chain {('+', '+'): Fraction(5, 18), ('+', '-'): Fraction(2, 9), ('-', '+'): Fraction(2, 9), ('-', '-'): Fraction(5, 18)}
+SUMMARY: SAME TEST BOTH SIDES on (L,R) under ends-first vs chain (PR #8137): independent kernel TV=0; varying two-state kernel TV>0; the order-dependence separation holds as written

@@ -26,13 +26,20 @@
  "stdout_tail": "py\n[PASS] exists: logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt\n[PASS] exists: logs/runner-cache/axiom_first_rp_two_step_transfer_matrix_positivity.txt\n[FAIL] parent cites bridge note -- RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md\n[PASS] parent names latest blocker -- derive the full Wilson-plaquette gauge-half sesquilinear PSD form\n[FAIL] parent uses corrected Wilson sign -- S_0 := -beta Re Tr[U_+ U_-^dag]\n[FAIL] parent names ferromagnetic weight -- exp(+beta Re Tr[U_+ U_-^dag])\n[FAIL] parent records character positivity route -- powers/fusion products have non-negative multiplicities\n[PASS] parent records Gram factorization -- G = W diag(kappa) W^dag\n[FAIL] parent keeps audit boundary -- any downstream row retained.\n[FAIL] bridge note fixes failed sign root -- S_0 := -beta\n[PASS] bridge note proves exact coefficient positivity -- tensor-power multiplicities\n[PASS] bridge note rejects grid exactness -- finite grid is spectrally-convergent\n[PASS] bridge note has wrong-sign teeth -- antiferromagnetic\n[PASS] bridge note says no new axiom -- introduces **no** new axiom\n[PASS] bridge cache passed -- TOTAL: 17 PASS / 0 FAIL\n[PASS] free two-step cache passed -- PASS=7 FAIL=0\n[FAIL] free two-step cache has BdagB -- T_hat^2 = B^dag B\n[PASS] parent status firewall present: author-applied retained status\n[PASS] parent status firewall present: does not set or predict an audit outcome\nTOTAL: PASS=15 FAIL=7\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T034437Z",
+  "at_utc": "20260919T035014Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 62a19bd1 differs from the current HEAD 41c3673d (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=15 FAIL=7' vs cache 'TOTAL: PASS=22 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, text-guard staleness: runner and cache date from a2f1a67541 (2026-06-07). Five parent-note guards were removed by 6d773aa42a (2026-06-08, parent rerouted to the Wilson temporal-gauge bridge narrow theorem note 2026-06-05; the 06-06 sign-repair packet is now 'historical context only ... not a load-bearing dependency of this parent row'). The bridge-note guard 'S_0 := -beta' was rewritten by e295f4ec6f (2026-07-18, plane coefficient renamed alpha := beta/N). The free two-step cache guard 'T_hat^2 = B^dag B' was removed by 06f5f7dcf3 (2026-07-28, now printed as a residual). PASS=15 FAIL=7 vs cache PASS=22 FAIL=0.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T035014Z"
  }
 }

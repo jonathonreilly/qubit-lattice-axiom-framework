@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8168",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block25-format",
+ "worker": "w-macbookpro90c72-jd7f0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8168/witness_realizability.py",
+ "seed": 84943,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b8282a84",
+ "started_utc": "20260919T022903Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - (t,s) exists in Q>0 with t^3 s=7/10^6, eps0*391/100<=3/10^5, Z^3 NN is triangle-free, and fork displacements e_i-e_j are not nearest-neighbour edges"
+ },
+ "review": "Witnesses (t,s) with t^3 s=7/10^6, eps0*391/100<=3/10^5, Z^3 triangle-free, forks not NN all exist as stated; pattern has no purchase",
+ "what": "PR #8168 ([physics-loop] admissibility-induced-law block25 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916; git show origin/physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916:<note>. Create probes/work/pr8168/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8168/<script>.py\"",
+ "stdout_sha256": "66597f01fa1dcbc8e7b297052a3e47f808d6acf76f3f33d472fa9d91ccae103a",
+ "stdout_tail": "t^3 s = 7/1000000 stated 7/10^6=7/1000000 eq=True\neps0*Rbar=2737/100000000 <= 3/10^5=3/100000? True\nNN-triangle flags 0 (expect 0: Z^3 is bipartite)\ntwo NN of origin are NN of each other? False\nfork displacements [(1, -1, 0), (1, 0, -1), (-1, 1, 0), (0, 1, -1), (-1, 0, 1), (0, -1, 1)]\nSUMMARY: pattern has no purchase on this note - (t,s) exists in Q>0 with t^3 s=7/10^6, eps0*391/100<=3/10^5, Z^3 NN is triangle-free, and fork displacements e_i-e_j are not nearest-neighbour edges\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd7f0",
+  "at_utc": "20260919T022903Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

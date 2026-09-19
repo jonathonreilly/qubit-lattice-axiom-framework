@@ -1,0 +1,6 @@
+t^3 s = 7/1000000 stated 7/10^6=7/1000000 eq=True
+eps0*Rbar=2737/100000000 <= 3/10^5=3/100000? True
+NN-triangle flags 0 (expect 0: Z^3 is bipartite)
+two NN of origin are NN of each other? False
+fork displacements [(1, -1, 0), (1, 0, -1), (-1, 1, 0), (0, 1, -1), (-1, 0, 1), (0, -1, 1)]
+SUMMARY: pattern has no purchase on this note - (t,s) exists in Q>0 with t^3 s=7/10^6, eps0*391/100<=3/10^5, Z^3 NN is triangle-free, and fork displacements e_i-e_j are not nearest-neighbour edges

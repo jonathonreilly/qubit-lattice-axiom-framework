@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-beyond-the-union-bound-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j1634",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/beyond-the-union-bound/referee_w-macbookpro90c72-j1634/check.py",
+ "seed": 79603,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7a526566",
+ "started_utc": "20260919T010003Z",
+ "elapsed_s": 11.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - PARTIAL counting refinement histories instead of explanation trees: P(eta'_x=1) <= eps1 Zbar for super-solutions of Z=1+mu Z/(1-cZ)^3, mu=sigma(2+eps2/sigma)^3, c=6 eps1/sigma (conditional on block 30 T1-T2 and block 25 T3); exact certificates p>=84,44,168,125 on the four lines (block 30: 4165,2085,8330,6247); ceiling eps2<1/27 (p>=58 on (p,1,2)); located strength 10.5-11 not reached"
+ },
+ "review": "independent T2.4 explainer, shape-based GF, and exact Fraction certificates confirm the PARTIAL: P(eta'_x=1)<=eps1 Zbar with p>=84/44/168/125 vs block 30's 4165/2085/8330/6247; cone domination P=6.026e-5 <= union 6.028e-5 <= eps1 Zbar at (84,1,2); ceiling 1/27, located 10.5-11 not reached",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:beyond-the-union-bound:a3/; its files are probes/work/derive/beyond-the-union-bound/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/beyond-the-union-bound/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e2d5ea2335aa575191e6e97827aabc3fbceb09689713437e0aaf4c29b1e68c56",
+ "stdout_tail": "57)=125/3374>1/27>=d3(58)=127/3491; at (11,1,2) max(d2,d3)=43/164 >> 1/27\nTOTAL: PASS=13 FAIL=0\nHIT: confirmed - the claim survives; independently: d1,d2,d3 decrease in p and the 216-triple two-level coupling holds at the four certificate points; a T2.4 explainer written from the notes gives |S|=F+1, R<=F+B, degree-2 Steiner forks, spanning/excuse identities, and seed/bad reconstruction from the abstract encoding on every depth-2 (308) and depth-3 (47952) cone configuration; those sites are 0-pred / 1-pred 1-sites; config-sum P equals an independent level DP and is <= the history union <= eps1 Zbar at (84,1,2) and (44,1,1); the four Steiner shapes of step 6 have generating function W(1+Wa)^3 = W/(1-6fW)^3 matching the functional equation coefficient-wise up to s^3 f^2; realized (R,B,F) never exceed those coefficients; the four rational (sigma,Zbar) are exact super-solutions with eps1 Zbar < 3e-4, strictly beyond the tree-route domain (eps2 > 4/729 > 256/531441); the route's own ceiling is eps2<1/27 (p>=58 on (p,1,2) at eps1->0) and does not reach the located strength 10.5-11\nSUMMARY: confirmed - PARTIAL counting refinement histories instead of explanation trees: P(eta'_x=1) <= eps1 Zbar for super-solutions of Z=1+mu Z/(1-cZ)^3, mu=sigma(2+eps2/sigma)^3, c=6 eps1/sigma (conditional on block 30 T1-T2 and block 25 T3); exact certificates p>=84,44,168,125 on the four lines (block 30: 4165,2085,8330,6247); ceiling eps2<1/27 (p>=58 on (p,1,2)); located strength 10.5-11 not reached\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1634",
+  "at_utc": "20260919T010024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "independent T2.4 explainer, shape-based grammar coefficients, exact Fraction super-solutions and cone domination confirm the author's PARTIAL beyond the 4/27 tree ceiling; p>=84 on (p,1,2) vs 4165; does not reach 10.5-11",
+  "by": "w-macbookpro90c72-j1634",
+  "at_utc": "20260919T010024Z"
+ }
+}

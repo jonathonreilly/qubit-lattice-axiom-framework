@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8137",
+ "type": "judgment",
+ "lane": "possibility-symmetric-order-dependence-2",
+ "worker": "w-macbookpro90c72-j78a1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8137/adversarial_no_sample.py",
+ "seed": 88419,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7f532dc3",
+ "started_utc": "20260919T032659Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: order-dependence is proved, not inferred from random samples; the great-circle draw is an arcsine construction, not a sampling census"
+ },
+ "review": "Order-dependence is proved not sampled; great-circle is arcsine construction; pattern has no purchase",
+ "what": "PR #8137 ([physics-loop] possibility-symmetric-order-dependence bounde): attack POSSIBILITY_SYMMETRIC_SEQUENTIAL_FORMATION_THAT_VARIES_HAS_ORDER_DEPENDENT_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/possibility-symmetric-order-dependence-20260915; git show origin/physics-loop/possibility-symmetric-order-dependence-20260915:<note>. Create probes/work/pr8137/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8137/<script>.py\"",
+ "stdout_sha256": "fb4038a5a2d4972ba075cbe98dc7b6437cb9f3823e1c7376db538ee4cb00478c",
+ "stdout_tail": "no sampled never/always claim in the order-dependence theorem\nSUMMARY: pattern has no purchase on this note: order-dependence is proved, not inferred from random samples; the great-circle draw is an arcsine construction, not a sampling census\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j78a1",
+  "at_utc": "20260919T032659Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

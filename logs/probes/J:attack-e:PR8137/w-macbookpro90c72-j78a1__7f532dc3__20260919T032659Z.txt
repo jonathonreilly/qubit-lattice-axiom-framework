@@ -1,0 +1,2 @@
+no sampled never/always claim in the order-dependence theorem
+SUMMARY: pattern has no purchase on this note: order-dependence is proved, not inferred from random samples; the great-circle draw is an arcsine construction, not a sampling census

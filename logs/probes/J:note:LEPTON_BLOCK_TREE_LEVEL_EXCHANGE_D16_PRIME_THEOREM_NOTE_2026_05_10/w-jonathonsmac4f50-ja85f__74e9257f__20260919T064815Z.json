@@ -1,0 +1,32 @@
+{
+ "task": "J:note:LEPTON_BLOCK_TREE_LEVEL_EXCHANGE_D16_PRIME_THEOREM_NOTE_2026_05_10",
+ "type": "judgment",
+ "lane": "lepton",
+ "worker": "w-jonathonsmac4f50-ja85f",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_LEPTON_BLOCK_TREE_LEVEL_EXCHANGE_D16_PRI/exchange_factors_from_reps_and_anomalies.py",
+ "seed": 495,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "74e9257f",
+ "started_utc": "20260919T064815Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifiers 1-3 do not fire: from explicit generator matrices the gluon and W exchange factors between L_L and e_R are exactly zero and the B charge product is Y_EW(L_L)Y_EW(e_R) = 1/2 (doubled 2), with the hypercharges re-derived by a lex Groebner basis of the anomaly system (unique with Q(u_R) > 0); beyond the note: the product is 1/2 for every Nc = 2..7 and without nu_R, the SU(2)_L doublet count Nc+1 is even only for odd Nc, and with Y(nu_R) = y_nu free the product is [y_nu/4 + 1/2] (1/2 only at y_nu = 0, the cited neutral-singlet input); of the 21 one-generation pairs, 7 have B as their only single-boson exchange"
+ },
+ "review": "Output matches the task (falsifiers 1-3 implemented with explicit generator matrices and a lex Groebner solution of the anomaly system instead of the runner's hard-coded values): the gluon and W exchange factors between L_L and e_R are exactly zero and Y_EW(L_L)Y_EW(e_R) = 1/2 (doubled 2) with the hypercharges uniquely re-derived at Nc = 3, so no falsifier fires; beyond the note the product stays 1/2 for Nc = 2..7 and without nu_R, the SU(2)_L doublet count Nc+1 is even only for odd Nc, and with Y(nu_R) = y_nu free the product is 1/2 + y_nu/4.",
+ "what": "Note on main: docs/LEPTON_BLOCK_TREE_LEVEL_EXCHANGE_D16_PRIME_THEOREM_NOTE_2026-05-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_LEPTON_BLOCK_TREE_LEVEL_EXCHANGE_D16_PRI/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_LEPTON_BLOCK_TREE_LEVEL_EXCHANGE_D16_PRI/<script>.py\"",
+ "stdout_sha256": "7cddfa9f061f014b8a70755362d3f5468d5a845c1d6e384162da4d3a9b664770",
+ "stdout_tail": "lutions 1 with Y_EW(L)Y_EW(e) [1/2] (Y(u_R) [3/2]), without nu_R 1 with [1/2], SU(2)_L doublet count Nc+1 even False; Nc=3: solutions 1 with Y_EW(L)Y_EW(e) [1/2] (Y(u_R) [4/3]), without nu_R 1 with [1/2], SU(2)_L doublet count Nc+1 even True; Nc=4: solutions 1 with Y_EW(L)Y_EW(e) [1/2] (Y(u_R) [5/4]), without nu_R 1 with [1/2], SU(2)_L doublet count Nc+1 even False; Nc=5: solutions 1 with Y_EW(L)Y_EW(e) [1/2] (Y(u_R) [6/5]), without nu_R 1 with [1/2], SU(2)_L doublet count Nc+1 even True; Nc=6: solutions 1 with Y_EW(L)Y_EW(e) [1/2] (Y(u_R) [7/6]), without nu_R 1 with [1/2], SU(2)_L doublet count Nc+1 even False; Nc=7: solutions 1 with Y_EW(L)Y_EW(e) [1/2] (Y(u_R) [8/7]), without nu_R 1 with [1/2], SU(2)_L doublet count Nc+1 even True\n5. Y(nu_R) = y_nu left free at Nc = 3: Y(e_R) on the anomaly-free family [-y_nu - 2]; Y_EW(L_L)Y_EW(e_R) = [y_nu/4 + 1/2]\nSUMMARY: falsifiers 1-3 do not fire: from explicit generator matrices the gluon and W exchange factors between L_L and e_R are exactly zero and the B charge product is Y_EW(L_L)Y_EW(e_R) = 1/2 (doubled 2), with the hypercharges re-derived by a lex Groebner basis of the anomaly system (unique with Q(u_R) > 0); beyond the note: the product is 1/2 for every Nc = 2..7 and without nu_R, the SU(2)_L doublet count Nc+1 is even only for odd Nc, and with Y(nu_R) = y_nu free the product is [y_nu/4 + 1/2] (1/2 only at y_nu = 0, the cited neutral-singlet input); of the 21 one-generation pairs, 7 have B as their only single-boson exchange\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-ja85f",
+  "at_utc": "20260919T064824Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

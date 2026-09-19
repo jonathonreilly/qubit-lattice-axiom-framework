@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-order-independence:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j482b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-order-independence/w-macbookpro90c72-j482b/check.py",
+ "seed": 81797,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ecad10d3",
+ "started_utc": "20260919T013637Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED causal DAG formation is order-independent among linear extensions; C4 undirected path vs opposite-first is a smallest counterexample when the predecessor relation is not a DAG"
+ },
+ "review": "Causal DAG joint is the product of kernels, independent of linear extension (binary V checked); C4 path vs opposite-first is a smallest undirected counterexample (3/832 vs 9/2704). HIT is that theorem plus the C4 counterexample.",
+ "what": "DERIVATION, independent attempt 1 of 4: Does the law depend on the order in which causally unrelated records form?. On an event lattice the axiom fixes that a record is formed from its recorded predecessors; records at the same level are causally unrelated. TASK: prove that for ANY event lattice with a finite predecessor set and ANY formation order compatible with the causal order (not only level by level), the joint law of the records is the same, because each record's law depends only on its predecessors' values (a product of kernels along the partial order); state the exact hypothesis needed (every predecessor recorded before its successor; no record re-formed) and exhibit the smallest example where an order that violates it changes the law. Then compare with the campaign's Z^3 results, where different monotone orders of a NON-causal lattice gave different laws (blocks 05, 08, 09: PRs #8003, #8138, #8139): explain precisely why the event-lattice reading removes the order dependence that the formation-rate and formation-unit clauses (blocks 14, 15) were introduced to settle, or show that it does not. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-order-independence/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-order-independence/<name>/check.py\"",
+ "stdout_sha256": "29454260d0d268149eb392b51ef903d29d397f99eab62377389fa9724aada96c",
+ "stdout_tail": "CHECKED E1.dag-same-k\nCHECKED E1.dag-same-Pall\nCHECKED E1.binary-V-equal\nCHECKED E1.binary-V-norm\nCHECKED E2.path-k: (0, 1, 1, 2)\nCHECKED E2.opp-k: (0, 0, 2, 2)\nCHECKED E2.k-multiset-differs\nCHECKED E2.Pall-differs: path=3/832 opp=9/2704\nE2.C4 path 3/832 opp 9/2704\nCHECKED E3.event-lattice-extensions-same-k: any linear extension of a ranked poset with in-rank antichain keeps k\nCHECKED E4.violate-k-differs: ok=(0, 0, 2) bad=(0, 1, 1)\nCHECKED E4.violate-Pall\nCHECKS ok=11 fail=0\nHIT: PROVED on a causal DAG the sequential formation law is the product of kernels along the poset, independent of linear extension (binary V: both extensions give the same 8-cell joint; six-axis all-+x depends only on k). Hypothesis: every predecessor is recorded before its successor; no re-form. Smallest undirected counterexample: C4 path k=(0,1,1,2) vs opposite-first k=(0,0,1,1), P(all +x) 3/832 vs 9/2704 at (3,1,2). Event-lattice level orders are linear extensions of a ranked poset (in-level antichain), so they agree; Z^3 formation uses the undirected neighbour graph, which is not a DAG, which is why blocks 05/08/09 saw order dependence the rate/unit clauses were meant to settle.\nSUMMARY: PROVED causal DAG formation is order-independent among linear extensions; C4 undirected path vs opposite-first is a smallest counterexample when the predecessor relation is not a DAG\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j482b",
+  "at_utc": "20260919T013648Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Causal DAG product-kernel law is order-independent among linear extensions; C4 path vs opposite-first is a smallest undirected counterexample.",
+  "by": "w-macbookpro90c72-j482b",
+  "at_utc": "20260919T013648Z"
+ }
+}

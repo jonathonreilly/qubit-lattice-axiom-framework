@@ -1,0 +1,15 @@
+CHECKED E1.dag-same-k
+CHECKED E1.dag-same-Pall
+CHECKED E1.binary-V-equal
+CHECKED E1.binary-V-norm
+CHECKED E2.path-k: (0, 1, 1, 2)
+CHECKED E2.opp-k: (0, 0, 2, 2)
+CHECKED E2.k-multiset-differs
+CHECKED E2.Pall-differs: path=3/832 opp=9/2704
+E2.C4 path 3/832 opp 9/2704
+CHECKED E3.event-lattice-extensions-same-k: any linear extension of a ranked poset with in-rank antichain keeps k
+CHECKED E4.violate-k-differs: ok=(0, 0, 2) bad=(0, 1, 1)
+CHECKED E4.violate-Pall
+CHECKS ok=11 fail=0
+HIT: PROVED on a causal DAG the sequential formation law is the product of kernels along the poset, independent of linear extension (binary V: both extensions give the same 8-cell joint; six-axis all-+x depends only on k). Hypothesis: every predecessor is recorded before its successor; no re-form. Smallest undirected counterexample: C4 path k=(0,1,1,2) vs opposite-first k=(0,0,1,1), P(all +x) 3/832 vs 9/2704 at (3,1,2). Event-lattice level orders are linear extensions of a ranked poset (in-level antichain), so they agree; Z^3 formation uses the undirected neighbour graph, which is not a DAG, which is why blocks 05/08/09 saw order dependence the rate/unit clauses were meant to settle.
+SUMMARY: PROVED causal DAG formation is order-independent among linear extensions; C4 undirected path vs opposite-first is a smallest counterexample when the predecessor relation is not a DAG

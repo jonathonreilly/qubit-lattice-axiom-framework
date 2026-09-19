@@ -1,0 +1,10 @@
+n=0 rec=1 exp=1 eq=True
+n=1 rec=1 exp=1 eq=True
+n=6 rec=203/720 exp=203/720 eq=True
+n=7 rec=877/5040 exp=877/5040 eq=True
+n=10 rec=4639/145152 exp=4639/145152 eq=True
+n=15 rec=276591709/261534873600 exp=276591709/261534873600 eq=True
+n=20 rec=263898766507/12412765347840000 exp=263898766507/12412765347840000 eq=True
+OK: Euler Z vs exp(sum ell t^j) through n=20
+ell=2^{-j}: mismatches [] count=0
+SUMMARY: Euler recurrence n Z_n = sum_j j ell_j Z_{n-j} matches exp(sum ell t^j) through n=20 (beyond reused m0..m6) for two ell sequences; falsifier does not fire

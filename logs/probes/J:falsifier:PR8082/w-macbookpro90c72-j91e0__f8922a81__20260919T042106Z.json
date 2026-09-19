@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8082",
+ "type": "judgment",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "w-macbookpro90c72-j91e0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8082/euler_zn_beyond_degree_six.py",
+ "seed": 91666,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f8922a81",
+ "started_utc": "20260919T042106Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "Euler recurrence n Z_n = sum_j j ell_j Z_{n-j} matches exp(sum ell t^j) through n=20 (beyond reused m0..m6) for two ell sequences; falsifier does not fire"
+ },
+ "review": "Independent Euler Z_n vs exp(sum ell t^j) through n=20 (beyond reused m0..m6) matches for two ell sequences; falsifier does not fire.",
+ "what": "PR #8082 ([physics-loop] Gaussian local moment jets (conditional-suppo): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/native-gaussian-moment-jet-20260910; git show origin/codex/native-gaussian-moment-jet-20260910:<note>. Create probes/work/pr8082/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8082/<script>.py\"",
+ "stdout_sha256": "fa0992fc7a6f010b188890ba7e05829c6bfc1c5d2b0890194a0e0d5709e73286",
+ "stdout_tail": "n=0 rec=1 exp=1 eq=True\nn=1 rec=1 exp=1 eq=True\nn=6 rec=203/720 exp=203/720 eq=True\nn=7 rec=877/5040 exp=877/5040 eq=True\nn=10 rec=4639/145152 exp=4639/145152 eq=True\nn=15 rec=276591709/261534873600 exp=276591709/261534873600 eq=True\nn=20 rec=263898766507/12412765347840000 exp=263898766507/12412765347840000 eq=True\nOK: Euler Z vs exp(sum ell t^j) through n=20\nell=2^{-j}: mismatches [] count=0\nSUMMARY: Euler recurrence n Z_n = sum_j j ell_j Z_{n-j} matches exp(sum ell t^j) through n=20 (beyond reused m0..m6) for two ell sequences; falsifier does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j91e0",
+  "at_utc": "20260919T042106Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

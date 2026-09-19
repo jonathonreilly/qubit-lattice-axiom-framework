@@ -1,0 +1,9 @@
+CHECKED E0.n12
+CHECKED E1.4096
+E2.two-proc-sibling-successor cases 4544
+E2.brute_min histogram {Fraction(-8, 1): 16, Fraction(-7, 1): 240, Fraction(-6, 1): 400, Fraction(-5, 1): 1456, Fraction(-4, 1): 512, Fraction(-3, 1): 448, Fraction(-2, 1): 1376, Fraction(-1, 1): 96}
+CHECKED E2.no-tight: n_tight=0 hist={Fraction(-4, 1): 512, Fraction(-1, 1): 96, Fraction(-6, 1): 400, Fraction(-7, 1): 240, Fraction(-3, 1): 448, Fraction(-5, 1): 1456, Fraction(-2, 1): 1376, Fraction(-8, 1): 16}
+CHECKED E2.never-positive: [Fraction(-4, 1), Fraction(-1, 1), Fraction(-6, 1), Fraction(-7, 1), Fraction(-3, 1), Fraction(-5, 1), Fraction(-2, 1), Fraction(-8, 1)]
+CHECKS ok=4 fail=0
+HIT: PARTIAL: exhaustive 3x2x2 (4096 noise patterns): every processed site whose 1-predecessors include a fork-related processed pair has brute_min in [Fraction(-8, 1), Fraction(-7, 1), Fraction(-6, 1), Fraction(-5, 1), Fraction(-4, 1), Fraction(-3, 1), Fraction(-2, 1), Fraction(-1, 1)] at c*=1, never 0 (4544 such successor cases). No local tight-sibling counterexample in this box; lemma still open on Z^3. Independent of a3/a5 windows.
+SUMMARY: PARTIAL no tight processed-sibling successor on the 3x2x2 box (brute_min in [Fraction(-8, 1), Fraction(-7, 1), Fraction(-6, 1), Fraction(-5, 1), Fraction(-4, 1), Fraction(-3, 1), Fraction(-2, 1), Fraction(-1, 1)], never 0); lemma open on the infinite lattice

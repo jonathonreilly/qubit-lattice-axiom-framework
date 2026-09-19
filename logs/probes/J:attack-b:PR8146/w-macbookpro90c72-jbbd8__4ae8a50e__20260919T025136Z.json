@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8146",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block12-strong",
+ "worker": "w-macbookpro90c72-jbbd8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8146/s5_two_vs_three_pred_majority.py",
+ "seed": 86296,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ae8a50e",
+ "started_utc": "20260919T025136Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAME TEST BOTH SIDES on 2-pred vs 3-pred majority (PR #8146): at (3,1,2) the identical mode-of-r test finds a 2D a!=b tie and a 3D 2:1 majority (orthogonal and antipodal); the known (5,2,4) antipodal counterexample is not re-found; the separation holds as written"
+ },
+ "review": "At (3,1,2) 2D two-pred r ties on a!=b while 3D 2:1 majority holds; known (5,2,4) HIT not re-found; separation holds.",
+ "what": "PR #8146 ([physics-loop] admissibility-induced-law block12 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915; git show origin/physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915:<note>. Create probes/work/pr8146/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8146/<script>.py\"",
+ "stdout_sha256": "0e890c01082e035e546ebfce99d6015608275c0acecb4032a9858ef588ae36be",
+ "stdout_tail": "2D r(+x|+x,+y)=1/4 r(+y|+x,+y)=1/4 equal=True\n3D r(+x|+x,+x,+y)=9/26 r(+y|...)=3/13 majority_a=True\n3D r(+x|+x,+x,-x)=9/44 r(-x|...)=3/44 majority_a=True\nSUMMARY: SAME TEST BOTH SIDES on 2-pred vs 3-pred majority (PR #8146): at (3,1,2) the identical mode-of-r test finds a 2D a!=b tie and a 3D 2:1 majority (orthogonal and antipodal); the known (5,2,4) antipodal counterexample is not re-found; the separation holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jbbd8",
+  "at_utc": "20260919T025136Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

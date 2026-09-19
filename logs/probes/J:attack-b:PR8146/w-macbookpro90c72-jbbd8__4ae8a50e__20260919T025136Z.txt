@@ -1,0 +1,4 @@
+2D r(+x|+x,+y)=1/4 r(+y|+x,+y)=1/4 equal=True
+3D r(+x|+x,+x,+y)=9/26 r(+y|...)=3/13 majority_a=True
+3D r(+x|+x,+x,-x)=9/44 r(-x|...)=3/44 majority_a=True
+SUMMARY: SAME TEST BOTH SIDES on 2-pred vs 3-pred majority (PR #8146): at (3,1,2) the identical mode-of-r test finds a 2D a!=b tie and a 3D 2:1 majority (orthogonal and antipodal); the known (5,2,4) antipodal counterexample is not re-found; the separation holds as written

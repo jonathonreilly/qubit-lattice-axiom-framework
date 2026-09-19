@@ -1,0 +1,32 @@
+{
+ "task": "J:note:ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEORE",
+ "type": "judgment",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-jdc8c",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SW/static_strip_rayleigh_enclosure_wider.py",
+ "seed": 1944,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60e5e374",
+ "started_utc": "20260919T071224Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "a variational certificate (weighted self-adjointness, Rayleigh quotient, trace bound on the second eigenvalue, Davis-Kahan angle) encloses the static centre-row pair-parallel probability with angle bounds below 1e-12; at W = 2, 3 the enclosures contain the note's printed values and exclude 1/4 and 5/23 (True); beyond the note, at W = 4 and 5 every enclosure (edge and central pairs) also excludes the formation value (True); edge-pair midpoints by width: W=2 (3, 1, 2): 0.2559430889, W=2 (5, 2, 4): 0.2198741761, W=3 (3, 1, 2): 0.2561109873, W=3 (5, 2, 4): 0.2199151617, W=4 (3, 1, 2): 0.2561162479, W=4 (5, 2, 4): 0.2199158620, W=5 (3, 1, 2): 0.2561164296, W=5 (5, 2, 4): 0.2199158749"
+ },
+ "review": "Output matches the task (F4/F5 falsifiers re-derived by a variational certificate disjoint from the runner's Sturm/algebraic route: weighted self-adjointness of T = V A, Rayleigh quotient, trace bound on the second eigenvalue, Davis-Kahan angle below 1.4e-16): at W = 2, 3 the rigorous enclosures meet the note's printed intervals and exclude 1/4 and 5/23; beyond the note, at W = 4 (38 orbits) and W = 5 (178 orbits) the edge-pair values 0.2561162479, 0.2561164296 (3,1,2) and 0.2199158620, 0.2199158749 (5,2,4) and the central-pair values 0.2562841851, 0.2562896288 and 0.2199567765, 0.2199574884 all exclude the formation values; no falsifier fires.",
+ "what": "Note on main: docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SW/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SW/<script>.py\"",
+ "stdout_sha256": "80e842671d685db4560c06ca4a70eb834fd2e8ae0e1cfb329deb5450751ef25c",
+ "stdout_tail": "/23: False\nW = 5, (p,q,r) = (3, 1, 2): 7776 row states, 178 orbits, weighted self-adjointness True, theta = 4020095.96337, second-eigenvalue bound mu/theta <= 0.0693, angle bound 1.35e-16; pair (0,1): s_inf in [0.25611642960102807431, 0.25611642960102861400], contains formation value 1/4: False; pair central: s_inf in [0.25628962881608148186, 0.25628962881608202156], contains formation value 1/4: False\nW = 5, (p,q,r) = (5, 2, 4): 7776 row states, 178 orbits, weighted self-adjointness True, theta = 1394779038.04, second-eigenvalue bound mu/theta <= 0.0415, angle bound 1.37e-16; pair (0,1): s_inf in [0.21991587485502049901, 0.21991587485502104729], contains formation value 5/23: False; pair central: s_inf in [0.21995748837123530551, 0.21995748837123585378], contains formation value 5/23: False\nSUMMARY: a variational certificate (weighted self-adjointness, Rayleigh quotient, trace bound on the second eigenvalue, Davis-Kahan angle) encloses the static centre-row pair-parallel probability with angle bounds below 1e-12; at W = 2, 3 the enclosures contain the note's printed values and exclude 1/4 and 5/23 (True); beyond the note, at W = 4 and 5 every enclosure (edge and central pairs) also excludes the formation value (True); edge-pair midpoints by width: W=2 (3, 1, 2): 0.2559430889, W=2 (5, 2, 4): 0.2198741761, W=3 (3, 1, 2): 0.2561109873, W=3 (5, 2, 4): 0.2199151617, W=4 (3, 1, 2): 0.2561162479, W=4 (5, 2, 4): 0.2199158620, W=5 (3, 1, 2): 0.2561164296, W=5 (5, 2, 4): 0.2199158749\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdc8c",
+  "at_utc": "20260919T071235Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_RADIUS_ONE_ONSITE_UNITARY_MINIMAL_MAXWELL_TICK_BOUNDED_NO_GO_NOTE_2026_09_03",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j0eb3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_RADIUS_ONE_ONSITE_UNITARY_MINIMAL_MAX/stencil_nullspace_and_column_norms.py",
+ "seed": 4099,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f9694fea",
+ "started_utc": "20260919T074819Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the three falsifiers do not fire on doubled lattices L = 2, 3, 4, 5: no site has a same-role nearest neighbour; over all complex coefficients the gauge-compatible edge->face maps (Q d0 = 0) and the Gauss-preserving face->edge maps (d0^T R = 0) are exactly 3-dimensional, one oriented curl (co-curl) per orientation (True), which contains and extends the runner's 625-stencil integer census; and with independent orientation coefficients the zero-curl constant mode plus the exact column norms force every q_n to 0 (True)"
+ },
+ "review": "Output matches the task (three falsifiers implemented exactly on whole periodic doubled lattices L = 2..5, disjoint from the runner's 625-stencil integer census and Fourier symbol): no site has a same-role nearest neighbour, C d0 = 0, the gauge-compatible edge->face maps and Gauss-preserving face->edge maps over all complex coefficients are exactly 3-dimensional with one oriented curl (co-curl) per orientation, and with independent orientation coefficients the zero-curl constant mode plus the exact (E_a,E_a) column norms |u_a|^2 + 2|q_b|^2 + 2|q_c|^2 force every q_n = 0; no falsifier fires.",
+ "what": "Note on main: docs/U1_RADIUS_ONE_ONSITE_UNITARY_MINIMAL_MAXWELL_TICK_BOUNDED_NO_GO_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_RADIUS_ONE_ONSITE_UNITARY_MINIMAL_MAX/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_RADIUS_ONE_ONSITE_UNITARY_MINIMAL_MAX/<script>.py\"",
+ "stdout_sha256": "35943479515536f94e44c77f4bb6e31fea21033b49126234483978733ce33b65",
+ "stdout_tail": "d0 = 0': True, 'Q constraint rows': 12, 'dim Q': 3, 'Q = curl per orientation': True, 'R constraint rows': 12, 'dim R': 3, 'R = co-curl per orientation': True, 'faces at an edge by normal': {0: 2, 1: 2}, 'edge orientation': 2}\nL = 5 (doubled 10^3): {'roles seen': {0: [1], 1: [0, 2], 2: [1, 3], 3: [2]}, 'same-role neighbour': False, 'C d0 = 0': True, 'Q constraint rows': 12, 'dim Q': 3, 'Q = curl per orientation': True, 'R constraint rows': 12, 'dim R': 3, 'R = co-curl per orientation': True, 'faces at an edge by normal': {0: 2, 1: 2}, 'edge orientation': 2}\ncolumn norms: faces at an edge of orientation 2 by normal {0: 2, 1: 2} (two of each other normal: True); (E_a, E_a) entry = {0: 2*q1*conjugate(q1) + 2*q2*conjugate(q2) + u0*conjugate(u0), 1: 2*q0*conjugate(q0) + 2*q2*conjugate(q2) + u1*conjugate(u1), 2: 2*q0*conjugate(q0) + 2*q1*conjugate(q1) + u2*conjugate(u2)}; with |u_a|^2 = 1 from the zero-curl constant mode, |q_n|^2 = [{Q2_0: 0, Q2_1: 0, Q2_2: 0}]\nSUMMARY: the three falsifiers do not fire on doubled lattices L = 2, 3, 4, 5: no site has a same-role nearest neighbour; over all complex coefficients the gauge-compatible edge->face maps (Q d0 = 0) and the Gauss-preserving face->edge maps (d0^T R = 0) are exactly 3-dimensional, one oriented curl (co-curl) per orientation (True), which contains and extends the runner's 625-stencil integer census; and with independent orientation coefficients the zero-curl constant mode plus the exact column norms force every q_n to 0 (True)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0eb3",
+  "at_utc": "20260919T074819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

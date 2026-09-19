@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8032",
+ "type": "judgment",
+ "lane": "finite-pw-energy-block42-20260907",
+ "worker": "w-macbookpro90c72-j9f18",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8032/attack_b_bound8_vs_bound9.py",
+ "seed": 87066,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f52d8e",
+ "started_utc": "20260919T030426Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (b) SAME TEST BOTH SIDES \u2014 1\u2212\u03b8 test: local \u03b8<1 so bound (8) applies while crude \u03b8\u0304=8v/e_R>1 so (9) does not; excess test: full-unitary 4 vs fixture 454685351/113607549 in (4,4.01); attack does not fire"
+ },
+ "review": "Pattern (b): local \u03b8<1 so (8) applies while crude \u03b8\u0304>1 so (9) does not; excess in (4,4.01) vs full-unitary 4; attack does not fire",
+ "what": "PR #8032 ([physics-loop] finite-pw-energy block42 conditional-support): attack GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-pw-energy-block42-20260907; git show origin/codex/finite-pw-energy-block42-20260907:<note>. Create probes/work/pr8032/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8032/<script>.py\"",
+ "stdout_sha256": "fe3df468e253217372cc424bc0013cbe03fb82b42f9b8517542acd6b95cbbd58",
+ "stdout_tail": "OK: same 1-\u03b8 test: local \u03b8=1/5001<1 so (8) applies; crude \u03b8\u0304=1.9013666072489601>1 so (9) does not\nOK: same excess test: full-unitary 4 vs fixture 4.002245933498662 in (4, 4.01)\nOK: at v=0 the same 4d/a is exact for every R\u22651; at this v>0 the excess is strictly above 4\nSUMMARY: pattern (b) SAME TEST BOTH SIDES \u2014 1\u2212\u03b8 test: local \u03b8<1 so bound (8) applies while crude \u03b8\u0304=8v/e_R>1 so (9) does not; excess test: full-unitary 4 vs fixture 454685351/113607549 in (4,4.01); attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9f18",
+  "at_utc": "20260919T030426Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

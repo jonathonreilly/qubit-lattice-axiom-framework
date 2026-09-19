@@ -1,0 +1,4 @@
+OK: same 1-θ test: local θ=1/5001<1 so (8) applies; crude θ̄=1.9013666072489601>1 so (9) does not
+OK: same excess test: full-unitary 4 vs fixture 4.002245933498662 in (4, 4.01)
+OK: at v=0 the same 4d/a is exact for every R≥1; at this v>0 the excess is strictly above 4
+SUMMARY: pattern (b) SAME TEST BOTH SIDES — 1−θ test: local θ<1 so bound (8) applies while crude θ̄=8v/e_R>1 so (9) does not; excess test: full-unitary 4 vs fixture 454685351/113607549 in (4,4.01); attack does not fire

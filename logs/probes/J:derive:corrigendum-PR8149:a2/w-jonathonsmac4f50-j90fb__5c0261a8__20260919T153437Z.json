@@ -1,0 +1,41 @@
+{
+ "task": "J:derive:corrigendum-PR8149:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j90fb",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/corrigendum-PR8149/w-jonathonsmac4f50-j90fb/check.py",
+ "seed": 32077,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5c0261a8",
+ "started_utc": "20260919T153437Z",
+ "elapsed_s": 102.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": [
+   "executed cases 2331 (C1/C3/C5/D exact, 0 mismatches); star centre first equal to its joint law in 216/216 sigma-equivariant full environments at 8 rules (full-law equality on 6^7 patterns in two); single-factor lemma, tree lemma, and at (3,1,2) no product of 1-5 five-record leaf factors constant",
+   "PROVED (ATTEMPT.md S1-S11, finite facts CHECKED here) corrected U2: mu_sigma = mu_joint iff the normalizer product N_sigma is constant in v_U; a site recording two inside neighbours always separates (Lagrange minor > 0); otherwise equality iff every Phi_y = prod_{dependents} (K H_x) is constant; block 15's criterion is sufficient everywhere and necessary for isolated units and constant environments; corrected U4: in a full environment a connected unit with >= 2 sites agrees under sigma iff it is a tree, sigma a growth order and every Phi_y constant; COUNTEREXAMPLE to block 15's U2 'only if' and U4 as stated: the star, centre first, in the 216 sigma-equivariant full environments, every rule"
+  ]
+ },
+ "review": "Claimed for referee: corrected U2 (equality iff the normalizer product is constant; two inside neighbours always separate by a strict Lagrange minor; otherwise iff every dependents' product Phi_y is constant; block 15's criterion sufficient everywhere, necessary isolated and in constant environments) and corrected U4 (tree + growth order + Phi condition); 26 exact checks pass (2331 executed cases 0 mismatches; centre-first star equal to its joint law in 216/216 equivariant full environments at 8 rules, full-law equality on 6^7 patterns twice; runner's star TVs 0.40289/0.14626 reproduced), plus the verdict table over PRs 8146-8180 and the line list.",
+ "what": "DERIVATION, independent attempt 2 of 2: Corrigendum packet for PR #8149. A probe found and another model family confirmed this defect in PR #8149: U2's 'every environment' and U4's 'every connected unit differs under every order' fail for an adversarially constructed environment (quantifier scope). TASK: (a) the minimal corrected statement (the largest domain on which the original holds, or the corrected formula), proved; (b) every later statement in that note AND in other notes of the campaign that uses the defective one (search the PR branches of blocks 12-35: PRs #8146-#8180), with a verdict for each: unaffected / holds on the corrected domain / needs its own repair; (c) the exact lines of the note and runner that must change. check.py verifies the corrected statement exactly and exhibits the original's failure. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/corrigendum-PR8149/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/corrigendum-PR8149/<name>/check.py\"",
+ "stdout_sha256": "32670bf18a0409b9e35fa732ddf619654fb56b574cdca2b1f79b9be2e9531206",
+ "stdout_tail": " leaf factors constant\nSUMMARY: PROVED (ATTEMPT.md S1-S11, finite facts CHECKED here) corrected U2: mu_sigma = mu_joint iff the normalizer product N_sigma is constant in v_U; a site recording two inside neighbours always separates (Lagrange minor > 0); otherwise equality iff every Phi_y = prod_{dependents} (K H_x) is constant; block 15's criterion is sufficient everywhere and necessary for isolated units and constant environments; corrected U4: in a full environment a connected unit with >= 2 sites agrees under sigma iff it is a tree, sigma a growth order and every Phi_y constant; COUNTEREXAMPLE to block 15's U2 'only if' and U4 as stated: the star, centre first, in the 216 sigma-equivariant full environments, every rule\nHIT: corrigendum for PR #8149 \u2014 corrected U2: mu_sigma = mu_joint iff the normalizer product N_sigma is constant in v_U; a site recording two inside neighbours always separates (Lagrange minor > 0); otherwise equality iff every Phi_y = prod_{dependents} (K H_x) is constant; block 15's criterion is sufficient everywhere and necessary for isolated units and constant environments; corrected U4: in a full environment a connected unit with >= 2 sites agrees under sigma iff it is a tree, sigma a growth order and every Phi_y constant; the original U2 'only if' and U4 fail for the centre-first star in every sigma-equivariant full environment (216, every non-constant rule), at (3,1,2) for a partial-environment domino, and at (4,1,2) for the middle-first path of three\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j90fb",
+  "at_utc": "20260919T153634Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation claim for cross-family referee: check.py verifies the corrected U2/U4 for PR 8149 exactly on 2331 cases and exhibits the original only-if failure (centre-first star, 216 equivariant environments, every tested rule; partial domino at (3,1,2); path of three at (4,1,2)); not a pattern false positive.",
+  "by": "w-jonathonsmac4f50-j90fb",
+  "at_utc": "20260919T153634Z"
+ }
+}

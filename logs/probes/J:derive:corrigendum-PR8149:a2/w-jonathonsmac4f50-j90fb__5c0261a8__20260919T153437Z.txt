@@ -1,0 +1,43 @@
+====================================================================================================
+C/D  the exact criterion, the two-inside lemma, the decomposition, and the domain of the original criterion
+ok   C-sym: Lagrange identity (KDK)_aa (KDK)_cc - (KDK)_ac^2 = 1/2 sum_{s,t} d_s d_t (K_as K_ct - K_at K_cs)^2 for a = +x, c = +y (symbolic in p, q, r, d_0..d_5); its (s,t) = (a,c) and (a,-a) brackets are (p^2 - r^2)/Z1^2 and r(p - q)/Z1^2, so the minor is > 0 for every positive diagonal D unless p = q = r
+ok   C1: equality of the laws (all patterns, exact) iff N_sigma constant: 2331 cases (8 units, 7 environments incl. partial ones, every order, rules (3,1,2), (5,1,2), (2,2,1)), 0 mismatches; 153 equal
+ok   C3: N_sigma constant iff [(i) no site records two inside neighbours and every Phi_y constant]: 0 mismatches
+ok   C5: every case violating (i) differs from the joint law: 1428 such cases, 0 equal
+ok   D-suff: block 15's criterion is sufficient in every executed environment: 0 exceptions
+ok   D-nec: isolated and constant environments: equality iff block 15's criterion: 0 exceptions
+     original 'only if' failures met among these cases (equal although the criterion is violated): 6, e.g. [('(3,1,2)', 'cornerclaw', 'randpart0', ((0, 0, 0), (1, 0, 0), (0, 1, 0), (0, 0, 1))), ('(3,1,2)', 'cornerclaw', 'randpart0', ((0, 0, 0), (1, 0, 0), (0, 0, 1), (0, 1, 0))), ('(3,1,2)', 'cornerclaw', 'randpart0', ((0, 0, 0), (0, 1, 0), (1, 0, 0), (0, 0, 1)))]
+====================================================================================================
+S  the failure of block 15's U2 'only if' and U4: the star, centre first, sigma-equivariant full environments
+ok   S0: sigma = -rho acts on the six values as one six-cycle, preserves equal/opposite/orthogonal, and acts freely on the star's 18 outside sites (3 orbits of 6): 6^3 = 216 equivariant full environments
+ok   S1 (3,1,2): all 216 equivariant environments: Phi_centre = prod over the six leaves of (K H_leaf) is constant (216/216), (i) holds and every leaf records the centre with five outside records (block 15's criterion violated): True
+ok   S1 (5,1,2): all 216 equivariant environments: Phi_centre = prod over the six leaves of (K H_leaf) is constant (216/216), (i) holds and every leaf records the centre with five outside records (block 15's criterion violated): True
+ok   S1 (7,2,3): all 216 equivariant environments: Phi_centre = prod over the six leaves of (K H_leaf) is constant (216/216), (i) holds and every leaf records the centre with five outside records (block 15's criterion violated): True
+ok   S1 (2,2,1): all 216 equivariant environments: Phi_centre = prod over the six leaves of (K H_leaf) is constant (216/216), (i) holds and every leaf records the centre with five outside records (block 15's criterion violated): True
+ok   S1 (4,1,2): all 216 equivariant environments: Phi_centre = prod over the six leaves of (K H_leaf) is constant (216/216), (i) holds and every leaf records the centre with five outside records (block 15's criterion violated): True
+ok   S1 (1,3,2): all 216 equivariant environments: Phi_centre = prod over the six leaves of (K H_leaf) is constant (216/216), (i) holds and every leaf records the centre with five outside records (block 15's criterion violated): True
+ok   S1 (2,1,1): all 216 equivariant environments: Phi_centre = prod over the six leaves of (K H_leaf) is constant (216/216), (i) holds and every leaf records the centre with five outside records (block 15's criterion violated): True
+ok   S1 (1,1,2): all 216 equivariant environments: Phi_centre = prod over the six leaves of (K H_leaf) is constant (216/216), (i) holds and every leaf records the centre with five outside records (block 15's criterion violated): True
+ok   S2 (3,1,2) env#0: sequential (centre first) and joint laws equal on all 279936 patterns (2s)
+ok   S2 (5,1,2) env#137: sequential (centre first) and joint laws equal on all 279936 patterns (2s)
+ok   S3: the leaves-first order in the same environment: the centre records six inside neighbours, so (i) fails and it differs
+ok   S4: centre-first TV = TV of the centre marginals (checked by full enumeration on the two claws); the runner's cached star values reproduced exactly: all+x/k=0 0.40289 = 52714185721813/130837033008291, mixed/k=0 0.14626 (runner: 0.40289, 0.14626)
+====================================================================================================
+L  the single-dependent lemma: when is one factor (K H)(a) constant in a
+ok   L1: (K H) constant iff [p != q: the values are balanced on every axis, and if (p+q-2r)(pq-r^2) != 0 the three axes carry equal counts] / [p = q: equal axis counts]: every multiset of size 1..6 at eight rules (7384 cases), 0 mismatches
+ok   L2: no factor with five outside records is ever constant (every rule): a site whose only dependent is a leaf of a full environment separates the readings
+     constant single factors by size m = 1..6: (3,1,2): 0,3,0,6,0,10; (5,1,2): 0,0,0,0,0,1; (7,2,3): 0,0,0,0,0,1; (2,2,1): 0,0,8,0,0,27; (4,1,2): 0,3,0,6,0,10; (1,3,2): 0,3,0,6,0,10; (2,1,1): 0,0,0,0,0,1; (1,1,2): 0,0,8,0,0,27
+====================================================================================================
+T  the tree / growth-order lemma: in a full environment (i) holds iff the unit is a tree and the order a growth order
+ok   T1: 110 (unit, order) pairs over seven connected units: 0 mismatches
+====================================================================================================
+X  the corrected domain at the executed rule; two further counterexamples to the original 'only if'
+ok   X1: no product of d = 1, 2, 3, 4 five-record leaf factors is constant at (3,1,2), (5,1,2), (7,2,3) (every value multiset): {'(3,1,2)': (0, 0, 0, 0), '(5,1,2)': (0, 0, 0, 0), '(7,2,3)': (0, 0, 0, 0)}
+ok   X2: no product of five five-record leaf factors is constant at (3,1,2) (all 252^5 multiset choices; 86s): the star's one-leaf-first order separates in every full environment at the executed rule
+ok   X3: partial environment: the domino formed left then right, the right site recording its left neighbour with two outside records +y, -y: equal to the joint law at (3,1,2) [True], different at (5,1,2) [True]; block 15's criterion is violated
+ok   X4: full environment: the straight path of three, middle first, leaves seeing {+x,+x,-x,+y,+z} and {+x,-x,-x,-y,-z}: equal to the joint law at (4,1,2) (pq = r^2) [True], different at (3,1,2) [True]; block 15's criterion is violated
+====================================================================================================
+runtime 102s
+SUMMARY: executed cases 2331 (C1/C3/C5/D exact, 0 mismatches); star centre first equal to its joint law in 216/216 sigma-equivariant full environments at 8 rules (full-law equality on 6^7 patterns in two); single-factor lemma, tree lemma, and at (3,1,2) no product of 1-5 five-record leaf factors constant
+SUMMARY: PROVED (ATTEMPT.md S1-S11, finite facts CHECKED here) corrected U2: mu_sigma = mu_joint iff the normalizer product N_sigma is constant in v_U; a site recording two inside neighbours always separates (Lagrange minor > 0); otherwise equality iff every Phi_y = prod_{dependents} (K H_x) is constant; block 15's criterion is sufficient everywhere and necessary for isolated units and constant environments; corrected U4: in a full environment a connected unit with >= 2 sites agrees under sigma iff it is a tree, sigma a growth order and every Phi_y constant; COUNTEREXAMPLE to block 15's U2 'only if' and U4 as stated: the star, centre first, in the 216 sigma-equivariant full environments, every rule
+HIT: corrigendum for PR #8149 — corrected U2: mu_sigma = mu_joint iff the normalizer product N_sigma is constant in v_U; a site recording two inside neighbours always separates (Lagrange minor > 0); otherwise equality iff every Phi_y = prod_{dependents} (K H_x) is constant; block 15's criterion is sufficient everywhere and necessary for isolated units and constant environments; corrected U4: in a full environment a connected unit with >= 2 sites agrees under sigma iff it is a tree, sigma a growth order and every Phi_y constant; the original U2 'only if' and U4 fail for the centre-first star in every sigma-equivariant full environment (216, every non-constant rule), at (3,1,2) for a partial-environment domino, and at (4,1,2) for the middle-first path of three

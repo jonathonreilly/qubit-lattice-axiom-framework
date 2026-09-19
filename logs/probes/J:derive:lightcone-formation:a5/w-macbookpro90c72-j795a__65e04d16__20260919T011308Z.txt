@@ -1,0 +1,25 @@
+CHECK E0a: PASS
+CHECK E0b: PASS
+CHECK E1a: PASS
+CHECK E1b: PASS psi'=-u*exp(u)
+CHECK E1c: PASS
+CHECK E2a: PASS
+CHECK E2b: PASS
+CHECK E2c: PASS
+CHECK E2d: PASS
+CHECK E2e: PASS sampled A' <= 1/3
+CHECK E3a: PASS q'=k*(k*cosh(k) - sinh(k))
+CHECK E3b: PASS r'=k*sinh(k)
+CHECK E3c: PASS
+CHECK E3d: PASS series 1/3 - k**2/45 + O(k**4)
+CHECK E3e: PASS sampled A/k <= 1/3
+CHECK E4a: PASS
+CHECK E4b: PASS
+CHECK E5a: PASS
+CHECK E5b: PASS
+CHECK E5c: PASS
+CHECK E5d: PASS
+CHECK E5e: PASS
+CHECK E5f: PASS
+HIT: sphere 7-stencil PCA has Dobrushin uniqueness for every beta < 3/7: the vMF covariance satisfies ||Cov|| <= 1/3 for every kappa (A'(k)=1/k^2-csch^2(k) <= 1/3 by sinh k < k exp(k^2/6) and e^u(1-u)<=1; A(k)/k <= 1/3 by q=(3+k^2)sinh-3k cosh, q'=k(k cosh-sinh), (k cosh-sinh)'=k sinh>=0); seven stars per past site give coefficient 7 beta/3. Linear equal-time kernel obeys (7/2) sigma^2 / E(k) <= S(k) <= (49/2) sigma^2 / E(k) for E in (0,12].
+SUMMARY: PARTIAL Dobrushin uniqueness of the symmetric 7-stencil sphere PCA for every beta < 3/7 (||Cov_vMF|| <= 1/3 proved, not only linearised); two-sided linear kernel (7/2) sigma^2/E <= S <= (49/2) sigma^2/E on E in (0,12]; LRO at large beta is not claimed.

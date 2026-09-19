@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-formation:a5",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j795a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/lightcone-formation/w-macbookpro90c72-j795a/check.py",
+ "seed": 80388,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65e04d16",
+ "started_utc": "20260919T011308Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL Dobrushin uniqueness of the symmetric 7-stencil sphere PCA for every beta < 3/7 (||Cov_vMF|| <= 1/3 proved, not only linearised); two-sided linear kernel (7/2) sigma^2/E <= S <= (49/2) sigma^2/E on E in (0,12]; LRO at large beta is not claimed."
+ },
+ "review": "Dobrushin uniqueness of the 7-stencil sphere PCA for every beta<3/7 is proved via ||Cov_vMF||<=1/3 (A' and A/k inequalities); linear kernel has two-sided envelope (7/2)sigma^2/E <= S <= (49/2)sigma^2/E; LRO not claimed.",
+ "what": "DERIVATION, independent attempt 5 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\"",
+ "stdout_sha256": "0395f84bdd2a7ddae6cf72bd7dd760d18253a8a00a0b960ade0df31661133f64",
+ "stdout_tail": "CHECK E0a: PASS\nCHECK E0b: PASS\nCHECK E1a: PASS\nCHECK E1b: PASS psi'=-u*exp(u)\nCHECK E1c: PASS\nCHECK E2a: PASS\nCHECK E2b: PASS\nCHECK E2c: PASS\nCHECK E2d: PASS\nCHECK E2e: PASS sampled A' <= 1/3\nCHECK E3a: PASS q'=k*(k*cosh(k) - sinh(k))\nCHECK E3b: PASS r'=k*sinh(k)\nCHECK E3c: PASS\nCHECK E3d: PASS series 1/3 - k**2/45 + O(k**4)\nCHECK E3e: PASS sampled A/k <= 1/3\nCHECK E4a: PASS\nCHECK E4b: PASS\nCHECK E5a: PASS\nCHECK E5b: PASS\nCHECK E5c: PASS\nCHECK E5d: PASS\nCHECK E5e: PASS\nCHECK E5f: PASS\nHIT: sphere 7-stencil PCA has Dobrushin uniqueness for every beta < 3/7: the vMF covariance satisfies ||Cov|| <= 1/3 for every kappa (A'(k)=1/k^2-csch^2(k) <= 1/3 by sinh k < k exp(k^2/6) and e^u(1-u)<=1; A(k)/k <= 1/3 by q=(3+k^2)sinh-3k cosh, q'=k(k cosh-sinh), (k cosh-sinh)'=k sinh>=0); seven stars per past site give coefficient 7 beta/3. Linear equal-time kernel obeys (7/2) sigma^2 / E(k) <= S(k) <= (49/2) sigma^2 / E(k) for E in (0,12].\nSUMMARY: PARTIAL Dobrushin uniqueness of the symmetric 7-stencil sphere PCA for every beta < 3/7 (||Cov_vMF|| <= 1/3 proved, not only linearised); two-sided linear kernel (7/2) sigma^2/E <= S <= (49/2) sigma^2/E on E in (0,12]; LRO at large beta is not claimed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j795a",
+  "at_utc": "20260919T011316Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "New exact partial: Dobrushin uniqueness for beta<3/7 via proved ||Cov_vMF||<=1/3; two-sided linear kernel envelope (7/2)sigma^2/E to (49/2)sigma^2/E.",
+  "by": "w-macbookpro90c72-j795a",
+  "at_utc": "20260919T011316Z"
+ }
+}

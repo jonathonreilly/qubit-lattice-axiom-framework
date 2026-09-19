@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_REDUCED_A2_SUBLEADING_SIGN_RUNG_NINETEEN_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j8042",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_SUBLEAD/expansions_and_converged_margin_ladder.py",
+ "seed": 12533,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0a147fc7",
+ "started_utc": "20260919T100853Z",
+ "elapsed_s": 381.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the note's expansions (d, C2, P_1, P_2, C_4 with no odd heat term, the D-commutators, degrees 2,4 and 1,3,5) and every table value (79/10, 38/5, -41/2, -23/2, -27, 135/2, 39/2, 243/2, 0) hold exactly; the fenced witness, converged to 7.4e-07 in beta*(cJ-cD) between two elliptical regions, gives beta*(cJ-cD) = 1.649851, 1.657312, 1.660830, 1.662524, 1.663353, 1.663763 at beta = 30, 60, 120, 240, 480, 960 and lambda1/lambda0 = 0.204813, 0.199245, 0.196510, 0.195154, 0.194479, 0.194142; c_J - c_D equals -beta dlog(lambda1/lambda0)/dbeta (0.01384025 vs 0.01384049 at beta = 120); successive differences shrink by 0.472, 0.481, 0.490, 0.494 (1/beta corrections), the fitted half-integer coefficient is a = 1.7e-05, and the Richardson limit of beta*(cJ-cD) is 1.66417; both top states are swap-symmetric at every beta (True); these rows are witnesses, not a derivation of the sign"
+ },
+ "review": "Read the script and its output: the note's expansions (d, C2, P_1, P_2, the C_4 heat term with no odd terms, the D-commutators, degrees 2,4 and 1,3,5) and every falsifier-table value hold exactly; the fenced witness, converged to 7e-7 between two elliptical regions on the swap-symmetric sector (both top states symmetric, antisymmetric top about 0.49 lambda_1), gives beta*(c_J - c_D) = 1.649851 ... 1.663763 for beta = 30 ... 960, c_J - c_D equals -beta dlog(lambda_1/lambda_0)/dbeta to 2e-5, successive differences shrink by 0.47 to 0.49 (1/beta corrections, fitted half-integer coefficient 1.7e-5) and the Richardson limit is 1.66417; numbers only, the note's sign step stays underived; no exact falsifier fires.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_SUBLEADING_SIGN_RUNG_NINETEEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_SUBLEAD/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_SUBLEAD/<script>.py\"",
+ "stdout_sha256": "944ff2a278153313cb111c7b1c895f21c781a9571087b557fd1f62fc6a2bf477",
+ "stdout_tail": "ambda_1 = 0.492890; larger region dim 20169: beta*(cJ-cD) 1.66376348 ratio 0.1941420321\nB'. c_J - c_D = -beta d/dbeta log(lambda_1/lambda_0) at beta = 120: 0.0138402527 vs central difference 0.0138404925\nC. beta(cJ-cD) successive differences [0.007461, 0.003518, 0.001694, 0.000829, 0.00041], ratios [0.4715, 0.4814, 0.4896, 0.4945] (1/beta corrections give 1/2, a sqrt(beta) term would give sqrt(2)); Richardson limit from beta = 480, 960: 1.664174; fit a sqrt(beta) + b + c/sqrt(beta) + d/beta: a = 1.73e-05, b = 1.66316; lambda1/lambda0 limit from a log fit 0.193808 (its 1/sqrt(beta) coefficient -7.5e-04)\nSUMMARY: the note's expansions (d, C2, P_1, P_2, C_4 with no odd heat term, the D-commutators, degrees 2,4 and 1,3,5) and every table value (79/10, 38/5, -41/2, -23/2, -27, 135/2, 39/2, 243/2, 0) hold exactly; the fenced witness, converged to 7.4e-07 in beta*(cJ-cD) between two elliptical regions, gives beta*(cJ-cD) = 1.649851, 1.657312, 1.660830, 1.662524, 1.663353, 1.663763 at beta = 30, 60, 120, 240, 480, 960 and lambda1/lambda0 = 0.204813, 0.199245, 0.196510, 0.195154, 0.194479, 0.194142; c_J - c_D equals -beta dlog(lambda1/lambda0)/dbeta (0.01384025 vs 0.01384049 at beta = 120); successive differences shrink by 0.472, 0.481, 0.490, 0.494 (1/beta corrections), the fitted half-integer coefficient is a = 1.7e-05, and the Richardson limit of beta*(cJ-cD) is 1.66417; both top states are swap-symmetric at every beta (True); these rows are witnesses, not a derivation of the sign\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8042",
+  "at_utc": "20260919T101526Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

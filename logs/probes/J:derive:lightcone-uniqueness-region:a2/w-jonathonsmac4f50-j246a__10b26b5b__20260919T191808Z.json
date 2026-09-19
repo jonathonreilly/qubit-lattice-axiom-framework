@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-uniqueness-region:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j246a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-uniqueness-region/w-jonathonsmac4f50-j246a/check.py",
+ "seed": 45488,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "10b26b5b",
+ "started_utc": "20260919T191808Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL for the light-cone sphere formation law (7 predecessors, kernel vMF(beta S)) the chordal W1 influence of the kernel satisfies the exact finite mirror identity W1(mu_V, mu_V') = (A(k)/k)|V - V'| for |V| = |V'| = k (so 1/3 at V = 0 in every direction and A(k)/k perpendicular to V), and ||D_u(V)|| <= |cos al|(A'(k) + I(k)) + |sin al| A(k)/k < 10/21 for |V| <= 21/10 (exact rational sweep); hence the level chain forgets its initial records, m_t <= c^t with c = 7 beta L < 1, and has one invariant law for every beta <= 3/10, beyond ln(4/3) = 0.2877, the ceiling of every TV-Dobrushin argument (block 27's constant gives sqrt3/7 = 0.2474); the W1 route's ceiling is 3/7, reached exactly if the directional lemma ||D_u(V)|| <= A(|V|)/|V| holds (proved perpendicular and at V = 0; LP numerics N1)"
+ },
+ "review": "check.py verifies E1-E5 exactly (the finite mirror identity's ingredients, A/k decreasing by an exact series sign, the relaxed parallel bound R = A' + I with I sinh^2 k = sum d_j k^{2j+1}, d_j > 0 for j <= 30, an exact rational sweep giving sqrt(R^2 + (A/k)^2) <= 0.47580 < 10/21 on [0, 21/10], the TV and W1 ceilings with explicit six-vector configurations) plus labelled LP numerics (N1) and the executed runs (N2); this answers (a)-(c) with the unconditional W1 region beta <= 3/10 (above ln(4/3), the TV ceiling) and the region 3/7 conditional on the directional lemma listed as ASSUMED.",
+ "what": "DERIVATION, independent attempt 2 of 3: The no-memory region under light-cone formation with the true influence constant. GIVEN: two attempts claimed uniqueness for beta < 3/7 from ||Cov_vMF|| <= 1/3; the referee showed the step FAILS: the covariance bound makes the MEAN map (beta/3)-Lipschitz, but the Dobrushin/Wasserstein influence of one predecessor is the W1-Lipschitz constant of S -> vMF(beta S) (the sup over 1-Lipschitz f of Cov(f, u.s)), which the covariance does not control. Block 27 (PR #8171) has the total-variation sensitivity |V - V'|/(2 sqrt 3). TASK: the correct region. (a) Compute or bound the W1 influence of the vMF kernel exactly (at V = 0 the law is uniform: the optimal transport between vMF(V) and vMF(V') is explicit to first order); (b) give the uniqueness region for 7 predecessors by total variation (block 27: 7 beta/sqrt 3 < 1?) and by W1, and say which is larger; (c) compare with the executed onset of memory (between beta = 0.6 and 0.75 on 32^3 planes). Exact finite checks of every constant. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-uniqueness-region/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-uniqueness-region/<name>/check.py\"",
+ "stdout_sha256": "40bf0312152fe420cbf690ba3970d5b9c69f0bda8309a3f9a811c6be9740ccb8",
+ "stdout_tail": " influence of the kernel satisfies the exact finite mirror identity W1(mu_V, mu_V') = (A(k)/k)|V - V'| for |V| = |V'| = k (so 1/3 at V = 0 in every direction and A(k)/k perpendicular to V), and ||D_u(V)|| <= |cos al|(A'(k) + I(k)) + |sin al| A(k)/k < 10/21 for |V| <= 21/10 (exact rational sweep); hence the level chain forgets its initial records, m_t <= c^t with c = 7 beta L < 1, and has one invariant law for every beta <= 3/10, beyond ln(4/3) = 0.2877, the ceiling of every TV-Dobrushin argument (block 27's constant gives sqrt3/7 = 0.2474); the W1 route's ceiling is 3/7, reached exactly if the directional lemma ||D_u(V)|| <= A(|V|)/|V| holds (proved perpendicular and at V = 0; LP numerics N1)\nHIT: for the light-cone sphere formation law (7 predecessors, kernel vMF(beta S)) the chordal W1 influence of the kernel satisfies the exact finite mirror identity W1(mu_V, mu_V') = (A(k)/k)|V - V'| for |V| = |V'| = k (so 1/3 at V = 0 in every direction and A(k)/k perpendicular to V), and ||D_u(V)|| <= |cos al|(A'(k) + I(k)) + |sin al| A(k)/k < 10/21 for |V| <= 21/10 (exact rational sweep); hence the level chain forgets its initial records, m_t <= c^t with c = 7 beta L < 1, and has one invariant law for every beta <= 3/10, beyond ln(4/3) = 0.2877, the ceiling of every TV-Dobrushin argument (block 27's constant gives sqrt3/7 = 0.2474); the W1 route's ceiling is 3/7, reached exactly if the directional lemma ||D_u(V)|| <= A(|V|)/|V| holds (proved perpendicular and at V = 0; LP numerics N1)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j246a",
+  "at_utc": "20260919T191829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "claim for referee: the finite mirror identity W1(mu_V, mu_V') = (A(k)/k)|V - V'| for |V| = |V'| (E1), the relaxed parallel bound (E3) and the rational sweep giving the unconditional W1 uniqueness region beta <= 3/10 for the light-cone sphere law (E4), the TV ceiling ln(4/3) and the W1 ceiling 3/7 (E5); the directional lemma for 3/7 is ASSUMED with LP support only; same-model-family disclosure: the round-1 lightcone-formation referee reports cited in the GIVEN (j63d8, jdb2a) are claude-opus-5",
+  "by": "w-jonathonsmac4f50-j246a",
+  "at_utc": "20260919T191829Z"
+ }
+}

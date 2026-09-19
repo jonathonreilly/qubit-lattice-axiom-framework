@@ -1,0 +1,4 @@
+OK: same Casimir test for R=1..16: trivial 0, every occupied irrep ≥4 with min 4 at (1,0)/(0,1)
+OK: 243=3^5 R=1 tree-gauge states on a cube
+OK: same h_R test: strictly increasing for R=1..16, so the top-shell floor grows with cutoff
+SUMMARY: pattern (b) SAME TEST BOTH SIDES — Casimir floor 4 vs 0 on occupied vs trivial irreps at every R=1..16; h_R increasing; 243=3^5; attack does not fire

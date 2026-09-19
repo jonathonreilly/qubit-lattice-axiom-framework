@@ -20,13 +20,20 @@
  "stdout_tail": "{\n  \"status\": \"fail\",\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"expected_base_is_ancestor_of_head\": false,\n  \"receipt\": \"outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json\",\n  \"failures\": [\n    \"expected base is not an ancestor of HEAD\"\n  ],\n  \"fixtures\": [\n    {\n      \"shape\": [\n        2,\n        2,\n        2\n      ],\n      \"V\": 8,\n      \"E\": 12,\n      \"P\": 6,\n      \"cycle_rank\": 5,\n      \"plaquette_rank\": 5,\n      \"fixed_divergence_dimension\": 1419857,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 72,\n      \"plaquette_radius\": 10\n    },\n    {\n      \"shape\": [\n        3,\n        3,\n        3\n      ],\n      \"V\": 27,\n      \"E\": 54,\n      \"P\": 36,\n      \"cycle_rank\": 28,\n      \"plaquette_rank\": 28,\n      \"fixed_divergence_dimension\": 28351092476867700887730107366063041,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 126,\n      \"plaquette_radius\": 10\n    },\n    {\n      \"shape\": [\n        3,\n        2,\n        2\n      ],\n      \"V\": 12,\n      \"E\": 20,\n      \"P\": 11,\n      \"cycle_rank\": 9,\n      \"plaquette_rank\": 9,\n      \"fixed_divergence_dimension\": 118587876497,\n      \"plus_one_dimension\": 1,\n      \"star_support\": 90,\n      \"plaquette_radius\": 10\n    }\n  ]\n}\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T120635Z",
+  "at_utc": "20260919T120916Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f592f38b differs from the current HEAD bddf5216 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (False)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "This probe clone is shallow, so git history checks cannot see earlier commits: the only failure is 'expected base is not an ancestor of HEAD' (`git merge-base --is-ancestor c73a11d1ea HEAD`); local history from HEAD does not reach c73a11d1ea (2026-08-03), while on GitHub c73a11d1ea is an ancestor of both main and the run's git_sha f592f38b7b.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T120916Z"
  }
 }

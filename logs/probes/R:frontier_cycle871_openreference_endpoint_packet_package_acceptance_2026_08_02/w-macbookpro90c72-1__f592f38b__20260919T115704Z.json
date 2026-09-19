@@ -20,13 +20,20 @@
  "stdout_tail": "CYCLE871_ENDPOINT_PACKET_PACKAGE_ACCEPTANCE_FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T120243Z",
+  "at_utc": "20260919T120915Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f592f38b differs from the current HEAD bddf5216 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (False)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "This probe clone is shallow, so git history checks cannot see earlier commits. The package fails only on its three regression children (cycle713 endpoint, cycle714 packet, cycle718 interval: exit 1, no terminal marker, source pins all match); each gates 'source_closure' on `git merge-base --is-ancestor ebd0553103 HEAD` (cycle713 BASELINE, shared via the cycle714 core provenance_certificate), and local history from HEAD does not reach ebd0553103 (2026-07-26), while on GitHub ebd0553103 is an ancestor of both main and the run's git_sha f592f38b7b. The package does not keep child stdout, so ancestry is the identified cause rather than a proven sole cause. Both cycle871 runners pass with source and receipt pins matching.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T120915Z"
  }
 }

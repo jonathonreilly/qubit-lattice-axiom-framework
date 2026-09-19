@@ -20,13 +20,20 @@
  "stdout_tail": "CYCLE872_ALL_SEAM_SPATIAL_PACKET_PACKAGE_ACCEPTANCE_FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T120616Z",
+  "at_utc": "20260919T120916Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f592f38b differs from the current HEAD bddf5216 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (False)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, package manifest collision with a later lane: the only failure is 'exact thirteen-file package manifest'. package_manifest() lists every top-level docs/scripts/outputs file whose name contains 'cycle872'; the acceptance runner and its PASS receipt (exact_manifest_match true) landed 2026-08-03 (2f270691f1..409aad695a), and the sigma-linear admissibility Cycle 872 lane landed 2026-08-09 (0d4450f42f, 03c7175dfe, 55bb95de7c, e2250947d1) with four more matching files (SIGMA_LINEAR_ADMISSIBILITY_CLASSIFICATION_CYCLE872 note, its receipt, frontier_cycle872_sigma_linear_admissibility and frontier_cycle872_admissibility_independent_check), so the observed manifest is 17 files.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T120916Z"
  }
 }

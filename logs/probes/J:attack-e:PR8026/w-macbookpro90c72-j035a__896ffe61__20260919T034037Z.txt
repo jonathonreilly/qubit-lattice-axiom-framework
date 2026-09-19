@@ -1,0 +1,6 @@
+R=1 S=1: A=1 P=4
+R=1 S=2: A=2 P=6
+R=2 S=3: A=6 P=10
+R=8 S=5: A=40 P=26
+square coeff u/144=1/144; two-adjacent 7/124416=7/124416
+SUMMARY: pattern has no purchase on this note — A=RS, P=2(R+S) and the open-geometry coefficients u/144 and 7/124416 are exact, not sampled never/always observations

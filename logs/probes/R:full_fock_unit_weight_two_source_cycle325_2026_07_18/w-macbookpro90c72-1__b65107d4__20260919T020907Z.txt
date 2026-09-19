@@ -1,0 +1,55 @@
+CYCLE 325: FULL-FOCK UNIT-WEIGHT TWO-SOURCE PROBE
+authority=none; audit=unset
+FAIL the Cycle-325 note exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/FULL_FOCK_UNIT_WEIGHT_MEDIATOR_PAIRED_TWO_SOURCE_CYCLE325_NOTE_2026-07-18.md
+
+LOCAL FULL-FOCK UNIT-WEIGHT SOURCE
+PASS the second-quantized source has exact unit-weight Q/vector/number ledgers on all 64 local masks :: {'local_masks': 64, 'active_dimension': 448, 'exchange_rank': 112, 'unitarity_residual': 1.4412869381271976e-15, 'Q_commutator': 0.0, 'local_number_commutator': 0.0, 'P_commutators': (0.0, 0.0, 0.0), 'maximum_frame_residual': 8.807749891993861e-16, 'unit_weights': (1, 1, 1), 'response_rows': [{'direction': 0, 'emitted_weight': 0.12589921612871374, 'unit_weight_balance': 0.0}, {'direction': 1, 'emitted_weight': 0.1258992161287137, 'unit_weight_balance': 1.1102230246251565e-16}, {'direction': 2, 'emitted_weight': 0.12589921612871374, 'unit_weight_balance': 0.0}, {'direction': 3, 'emitted_weight': 0.1258992161287137, 'unit_weight_balance': 1.1102230246251565e-16}, {'direction': 4, 'emitted_weight': 0.12589921612871374, 'unit_weight_balance': 0.0}, {'direction': 5, 'emitted_weight': 0.1258992161287137, 'unit_weight_balance': 1.1102230246251565e-16}]}
+PASS deleting the auxiliary vector contribution breaks recoil balance :: {'P_without_auxiliary_commutators': (2.823561997406967, 2.8235619974069666, 2.8235619974069666)}
+
+FULL-SEAM NUMBER / CONTACT CONTROLS
+PASS both endpoint source factors commute, preserve their local matter counts, and retain the nontrivial Cycle-315 contact :: {'source_order_commutator': 0.0, 'source_contact_commutator': 7.864478662914329e-17, 'total_number_commutators': {'coin': 0.0, 'FSWAP': 0.0, 'contact': 0.0}, 'contact_nontrivial_columns': 4047}
+PASS the naive one-one carried-source product is not a closed Cycle-315 FSWAP sector :: {'one_one_dimension': 36, 'FSWAP_leakage_opnorm': 1.0, 'full_Fock_source_extension_used': True}
+
+COMMON-CODE PHYSICAL INTERTWINER
+PASS the full-Fock unit-weight pair code obeys joint AB/BA physical EG and inverse EG :: [{'orientation': 'AB', 'EG_residual': 1.389921227961023e-15, 'inverse_residual': 2.535398189957522e-15, 'encoded_norm': 1.000000000000004, 'output_norm': 0.9999999999999993}, {'orientation': 'BA', 'EG_residual': 1.389921227961023e-15, 'inverse_residual': 2.535398189957522e-15, 'encoded_norm': 1.000000000000004, 'output_norm': 0.9999999999999993}]
+PASS the 4,096-column physical seam remains isometric through held L=6 :: [{'L': 3, 'held': False, 'logical_columns': 4096, 'physical_rays': 63488, 'matrix_nonzeros': 65536, 'Gram_opnorm_residual': 0.0, 'Gram_raw_maximum': 1.7763568394002505e-15, 'minimum_Gram_eigenvalue': 0.9999999999999979}, {'L': 4, 'held': False, 'logical_columns': 4096, 'physical_rays': 63488, 'matrix_nonzeros': 65536, 'Gram_opnorm_residual': 0.0, 'Gram_raw_maximum': 1.7763568394002505e-15, 'minimum_Gram_eigenvalue': 0.9999999999999977}, {'L': 6, 'held': True, 'logical_columns': 4096, 'physical_rays': 63488, 'matrix_nonzeros': 65536, 'Gram_opnorm_residual': 0.0, 'Gram_raw_maximum': 1.7763568394002505e-15, 'minimum_Gram_eigenvalue': 0.999999999999998}]
+
+TWO-SOURCE UNIT-WEIGHT RESPONSE
+PASS the paired unit-weight auxiliary has a nonzero symmetric two-source response through held L=6 :: [{'L': 3, 'held_out': False, 'response': [[0.7712291018346235, 2.429213394509795e-05], [2.4292133945097934e-05, 0.7712291018346235]], 'off_diagonal_minimum': 2.4292133945097934e-05, 'reciprocity_residual': 1.6940658945086007e-20, 'diagonal_exchange_residual': 0.0, 'norm_drift': 3.552713678800501e-15}, {'L': 4, 'held_out': False, 'response': [[0.7712291018346235, 2.429213394509795e-05], [2.4292133945097934e-05, 0.7712291018346235]], 'off_diagonal_minimum': 2.4292133945097934e-05, 'reciprocity_residual': 1.6940658945086007e-20, 'diagonal_exchange_residual': 0.0, 'norm_drift': 3.552713678800501e-15}, {'L': 6, 'held_out': True, 'response': [[0.7712291018346235, 2.429213394509795e-05], [2.4292133945097934e-05, 0.7712291018346235]], 'off_diagonal_minimum': 2.4292133945097934e-05, 'reciprocity_residual': 1.6940658945086007e-20, 'diagonal_exchange_residual': 0.0, 'norm_drift': 3.552713678800501e-15}]
+PASS receiver and pair-stream deletions kill transfer while the literal one-carrier catch-up is distinguished :: {'deleted_receiver_A_to_B': 0.0, 'deleted_pair_stream_A_to_B': 0.0, 'literal_matter_carried_response': [[0.7712291018346235, 0.0], [0.0, 0.7712291018346235]], 'literal_matter_carried_norm_drift': 3.552713678800501e-15}
+PASS the coefficient-two and unit-weight pair responses are compared on the same preparation :: {'unit_weight': [{'L': 3, 'held_out': False, 'response': [[0.7712291018346235, 2.429213394509795e-05], [2.4292133945097934e-05, 0.7712291018346235]], 'off_diagonal_minimum': 2.4292133945097934e-05, 'reciprocity_residual': 1.6940658945086007e-20, 'diagonal_exchange_residual': 0.0, 'norm_drift': 3.552713678800501e-15}, {'L': 4, 'held_out': False, 'response': [[0.7712291018346235, 2.429213394509795e-05], [2.4292133945097934e-05, 0.7712291018346235]], 'off_diagonal_minimum': 2.4292133945097934e-05, 'reciprocity_residual': 1.6940658945086007e-20, 'diagonal_exchange_residual': 0.0, 'norm_drift': 3.552713678800501e-15}, {'L': 6, 'held_out': True, 'response': [[0.7712291018346235, 2.429213394509795e-05], [2.4292133945097934e-05, 0.7712291018346235]], 'off_diagonal_minimum': 2.4292133945097934e-05, 'reciprocity_residual': 1.6940658945086007e-20, 'diagonal_exchange_residual': 0.0, 'norm_drift': 3.552713678800501e-15}], 'coefficient_two': [{'L': 3, 'response': [[0.7712291018346235, 0.0006446410419510052], [0.0006446410419510054, 0.7712291018346235]], 'norm_drift': 3.552713678800501e-15}, {'L': 4, 'response': [[0.7712291018346235, 0.0006446410419510052], [0.0006446410419510054, 0.7712291018346235]], 'norm_drift': 3.552713678800501e-15}, {'L': 6, 'response': [[0.7712291018346235, 0.0006446410419510052], [0.0006446410419510054, 0.7712291018346235]], 'norm_drift': 3.552713678800501e-15}], 'same_matter_preparation': True, 'same_two_update_depth': True}
+
+FRAMES / TRANSLATIONS / SUPPORT
+PASS the source/seam family covers all 24 frames including endpoint reversal :: {'inherited_seam': {'proper_cubic_frames': 24, 'endpoint_preserving_frames': 12, 'endpoint_reversing_frames': 12, 'maximum_frame_representation_unitarity': 0.0, 'maximum_update_covariance_residual': 0.0, 'maximum_update_covariance_raw_maximum': 2.1677797545656835e-16, 'edge_role_group_law_tests': 93312, 'edge_role_group_law_failures': 0, 'L3_translation_edge_role_tests': 4374, 'L3_translation_edge_role_failures': 0}, 'maximum_field_coin_frame_residual': 0.0, 'pair_stream_frame_tests': 23328, 'pair_stream_frame_failures': 0}
+PASS the paired auxiliary source family commutes with all L=3 translations :: {'translations': 27, 'maximum_residual': 0.0}
+PASS the full-Fock unit-weight pair lift has bounded constant support :: {'Cycle315_M2_per_cell': 29, 'reservoir_M2_per_cell': 1, 'mediator_M2_per_cell': 6, 'auxiliary_M2_per_cell': 6, 'installed_M2_per_cell': 42, 'Cycle315_edge_patch_M2': 83, 'unit_weight_edge_patch_M2': 111, 'local_source_dimension': 448, 'joint_matter_dimension': 4096, 'lawful_global_Q1_pair_dimension': '2 + 36 L^3'}
+
+CONTACT / MASS / LAWFUL DOMAIN
+PASS the actual Cycle-230 contact and Cycle-219 mass fixture remain firewalled :: {'mass_fixture': 0.4534056541748851, 'two_cell_mass': 0.4534056541748851, 'mass_residual': 3.8571762755144336e-16, 'contact_nontrivial_columns': 4047, 'contact_deletion_opnorm': 1.9911500883709052}
+PASS stale auxiliary placement and malformed size/Q/pair/edge declarations are detected :: {'stale_unpaired_weight': 0.9999999999999998, 'lawful_domain_rejections': 4}
+
+SUPPLIED / DERIVED / OPEN INVENTORY
+PASS the supplied auxiliary content, program, preparation, and open alternatives are explicit :: {'matter code': 'Cycle-315 complete M64 tensor M64 AB/BA seam', 'source law': 'two second-quantized unit-weight direction-reversing vertices', 'source sector': 'global Q=1 reservoir or one mediator-plus-auxiliary pair', 'auxiliary content': 'six direction M2 per cell, unit vector weight, identity coin', 'auxiliary program': 'mediator-paired local constraint and bounded co-stream', 'preparation': 'symmetric one-one matter state, R_A/R_B columns, two updates', 'physical completion': 'Cycle-315 dense edge matrix units and identity completion', 'derived': 'unit-weight ledgers, joint EG, contact, response, covariance, controls', 'route-specific failure': 'literal one-carrier opposite catch-up has zero two-update cross response', 'open': 'matter-carried full-Fock tag, global Q2, alternate mediator/rest, multi-edge', 'interpretation': 'dimensionless occupation response; not energy/stress/gravity/metric/time', 'authority': 'none', 'audit': 'unset'}
+
+EXECUTABLE NO-GO DISCIPLINE
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py", line 1082, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py", line 1072, in main
+    methodology_controls()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py", line 151, in methodology_controls
+    note = NOTE.read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/FULL_FOCK_UNIT_WEIGHT_MEDIATOR_PAIRED_TWO_SOURCE_CYCLE325_NOTE_2026-07-18.md'

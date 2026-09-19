@@ -1,0 +1,38 @@
+{
+ "task": "R:fundamental_one_qubit_qca_compilation_cycle12_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "fundamental",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/fundamental_one_qubit_qca_compilation_cycle12_2026_07_14.py",
+ "seed": 84077,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T021437Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1010fd7f4f685c2963c8db6d595bc6a7e19eff2c27a0df499572bcbbdb592b2e",
+ "stdout_tail": "636, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/fundamental_one_qubit_qca_compilation_cycle12_2026_07_14.py\", line 619, in main\n    source_contract()\n    ~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/fundamental_one_qubit_qca_compilation_cycle12_2026_07_14.py\", line 135, in source_contract\n    note = NOTE.read_text(encoding=\"utf-8\")\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 546, in read_text\n    return PathBase.read_text(self, encoding, errors, newline)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 632, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/FUNDAMENTAL_ONE_QUBIT_QCA_COMPILATION_CYCLE12_NOTE_2026-07-14.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021437Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/FUNDAMENTAL_ONE_QUBIT_QCA_COMPILATION_CYCLE12_NOTE_2026-07-14.md, which is not in the tree at that path",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021437Z"
+ }
+}

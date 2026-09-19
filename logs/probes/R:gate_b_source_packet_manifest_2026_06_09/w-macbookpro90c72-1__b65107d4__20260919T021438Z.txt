@@ -1,0 +1,13 @@
+GATE B SOURCE-PACKET MANIFEST GATE
+========================================================================
+[PASS] note declares open_gate source-index claim type
+[PASS] row-local source-packet manifest section is present
+[FAIL] GB-S1 discloses valley-linear source/action as supplied only
+[FAIL] GB-S2 discloses propagation/readout semantics as supplied only
+[FAIL] GB-S3 discloses generated-connectivity rule as supplied only
+[PASS] manifest preserves no-new-axiom and no-clean-theorem boundary
+[PASS] note blocks solved/physical-gravity overclaims
+
+SUMMARY: PASS=4 FAIL=3
+runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
+VERDICT: the Gate B row exposes the supplied source packet as row-local manifest data and does not promote it to an axiom, primitive, retained premise, physical-gravity bridge, or clean Gate B dynamics theorem.

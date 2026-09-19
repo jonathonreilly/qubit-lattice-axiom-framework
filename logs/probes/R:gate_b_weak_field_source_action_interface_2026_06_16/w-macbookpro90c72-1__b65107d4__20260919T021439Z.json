@@ -1,0 +1,35 @@
+{
+ "task": "R:gate_b_weak_field_source_action_interface_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "gate",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gate_b_weak_field_source_action_interface_2026_06_16.py",
+ "seed": 84079,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T021439Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ed205eecc22b8227b7d881a09e1a75b2d5a5aa155e1c902251fe72d3ea216ad6",
+ "stdout_tail": "[PASS] S=L(1-phi) identity length=1 r=3.0\n       diff=0.000e+00\n[PASS] S=L(1-phi) identity length=1 r=4.0\n       diff=0.000e+00\n[PASS] S=L(1-phi) identity length=1 r=7.5\n       diff=0.000e+00\n[PASS] S=L(1-phi) identity length=2.23607 r=3.0\n       diff=0.000e+00\n[PASS] S=L(1-phi) identity length=2.23607 r=4.0\n       diff=0.000e+00\n[PASS] S=L(1-phi) identity length=2.23607 r=7.5\n       diff=0.000e+00\n[PASS] source perturbation is additive at r=3.0\n       residual=+2.220e-16\n[PASS] source perturbation is additive at r=5.0\n       residual=+0.000e+00\n[PASS] source perturbation is additive at r=10.0\n       residual=+0.000e+00\n[PASS] source/action coefficient normalization remains degenerate\n       base=1.414196315866237e+00 rescaled=1.414196315866237e+00\n[PASS] regularized 1/(r+eps) is far-field close but not identical at r=3.0\n       relative_gap=0.032258\n[PASS] regularized 1/(r+eps) is far-field close but not identical at r=4.0\n       relative_gap=0.024390\n[PASS] regularized 1/(r+eps) is far-field close but not identical at r=5.0\n       relative_gap=0.019608\n[PASS] regularized 1/(r+eps) is far-field close but not identical at r=10.0\n       relative_gap=0.009901\n[PASS] parent still states I_GateB remains conditional after split\n\nTOTAL: PASS=25 FAIL=0\nVERDICT: partial GB-S1 support only. The weak-field interface supports the linear test-action form S=L(1-phi), while the Gate B regularized scalar, normalization, propagation/readout, and generated-connectivity rules remain supplied.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021439Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

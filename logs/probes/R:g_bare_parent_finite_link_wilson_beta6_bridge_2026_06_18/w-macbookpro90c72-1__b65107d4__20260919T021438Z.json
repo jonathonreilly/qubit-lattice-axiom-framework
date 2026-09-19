@@ -1,0 +1,35 @@
+{
+ "task": "R:g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "g",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py",
+ "seed": 84078,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T021438Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=103 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0654cc345697a318c68bb3be1479bc6542e7923eca5d9296adebfcde05d6ca52",
+ "stdout_tail": "ins marker: This note's audited claim surface is exactly\n[PASS] bridge contains marker: 2026-07-11 downstream hygiene.** This note's citable surface is Theorems\n[PASS] bridge contains marker: ## Repair Note\n[PASS] bridge omits forbidden marker: effective_status:\n[PASS] bridge omits forbidden marker: audit_status:\n[PASS] bridge omits forbidden marker: This note proves that the scalar in those two statements\n[PASS] theorem omits forbidden marker: (SD)\n[PASS] theorem omits forbidden marker: A^a := C^a\n[PASS] theorem omits forbidden marker: g_bare := s\n[PASS] theorem omits forbidden marker: At `N_c = 3`, exact rational arithmetic gives `beta = 6`\n[PASS] parent contains marker: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md\n[PASS] parent contains marker: G_BARE_RIGIDITY_THEOREM_NOTE.md\n[PASS] parent contains marker: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md\n[PASS] parent contains marker: No step uses `beta = 6` as a premise for `g_bare = 1`.\n[PASS] parent omits forbidden marker: beta_canonical\n[PASS] rigidity contains marker: finite-link\n[PASS] rigidity contains marker: no independent scalar-normalization freedom\n[PASS] matrix theorem contains marker: [x^2 F2] w D(sx) = w s^2/(4n)\n[PASS] matrix theorem contains marker: Any comparison target\n[PASS] matrix theorem contains marker: requires separate authority\n\nSummary\n------------------------------------------------------------------------------\nTOTAL: PASS=103 FAIL=0\nBridge check passed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

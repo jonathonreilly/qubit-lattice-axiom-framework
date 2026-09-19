@@ -1,0 +1,35 @@
+{
+ "task": "R:gate_b_local_stencil_connectivity_bridge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "gate",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py",
+ "seed": 84078,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T021438Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2f263740feb77c6e483ba6f65cc0b4c1f06c3be63db090fb661184ec9ad3f958",
+ "stdout_tail": ", nearest-neighbor adjacency, and finite-range locality\n[PASS] theorem stencil exactly matches gate_b_connectivity_tolerance fixed adjacency\n       theorem_edges=1444, runner_edges=1444\n[PASS] every edge is finite range with cubic graph distance <= 3\n       min_distance=1, max_distance=3\n[PASS] all edges advance exactly one layer\n       unique_layer_offsets=[1]\n[PASS] transverse offsets are restricted to {-1,0,1}^2\n       unique_offsets=[(1, -1, -1), (1, -1, 0), (1, -1, 1), (1, 0, -1), (1, 0, 0), (1, 0, 1), (1, 1, -1), (1, 1, 0), (1, 1, 1)]\n[PASS] out-degree is bounded by the 9-edge local stencil\n       min_outdegree=4, max_outdegree=9\n[PASS] interior sources all have the same translation-covariant offset set\n       interior_sources=100\n[PASS] finite boundary only clips off-slab stencil targets\n       corner_offsets=[(1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]\n[PASS] terminal layer has no outgoing forward edges\n       terminal_sources=49\n[PASS] note states GB-S3a boundary without claiming Gate B closure\n[PASS] note explicitly includes gate_b_connectivity_tolerance helper source and cache\n[PASS] parent note wires the GB-S3 split and preserves open physical-growth selector\n[PASS] parent note still blocks scalar/readout/physical-gravity overclaims\n\nTOTAL: PASS=13 FAIL=0\nrunner_check_breakdown = {A: 13, B: 0, C: 0, D: 0, total_pass: 13}\nVERDICT: GB-S3a is a finite-range Z^3 local-stencil bridge matching the Gate B runner adjacency; GB-S3b physical selection/readout remains open.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

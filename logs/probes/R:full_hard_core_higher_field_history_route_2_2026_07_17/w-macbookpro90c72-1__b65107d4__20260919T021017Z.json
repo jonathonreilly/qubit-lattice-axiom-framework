@@ -1,0 +1,31 @@
+{
+ "task": "R:full_hard_core_higher_field_history_route_2_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "full",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/full_hard_core_higher_field_history_route_2_2026_07_17.py",
+ "seed": 83817,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T021017Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4a4e5ab72ab3e3ae99481aee17fdb3d156437f7a745a0643f025bff272295411",
+ "stdout_tail": " seam :: {'matter_number_change': 0.0, 'mediator_number_change_after_two_ticks': 0.15248255286188084, 'cumulative_onsite_source_current': 0.15248255286187232, 'missing_local_reservoir_coordinate': -0.15248255286187232}\nPASS vertex deletion returns the bare massive walk and exact field vacuum :: 0.0\nPASS the genuine higher-field update commutes with all 24 proper-cubic frames :: 1.4161124794991424e-16\nPASS held L=5,7 tori reproduce the two-tick infinite sparse history without wrap :: [(5, 0.0), (7, 0.0)]\nPASS the logical-matter/physical-hard-core-field sparse update composes linearly on separated source packets :: 7.989150271662703e-17\nPASS the separate Cycle-230 contact fixture is identity at N_m=1 and the bare mass fixture is retained :: {'bare_analytic_mass': 0.4534056541748852, 'bare_rest_mass': 0.4534056541748851, 'dressed_mass': 'not tested'}\nPASS only after the autonomous history, the same one-field coin retains static 3 L^+ :: 4.330087778348712e-15\nPASS the selected additive Cycle-215 port remains an external comparator, not this history :: {'minus_half_identity_residual': np.float64(2.0653146441376167e-16), 'static_target_residual': np.float64(1.3734550110467953)}\nDIAGNOSTIC {'beta': -0.3, 'charge': 0.4534056541748851, 'mediator_coupling': 0.8, 'angle': 0.3627245233399081, 'matter_representation': 'logical_one_particle_uncompiled', 'physical_field_M2_per_cell': 6, 'update_order': 'matter coin + all-occupancy field coin, vertex, ordinary streams'}\nTOTAL PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

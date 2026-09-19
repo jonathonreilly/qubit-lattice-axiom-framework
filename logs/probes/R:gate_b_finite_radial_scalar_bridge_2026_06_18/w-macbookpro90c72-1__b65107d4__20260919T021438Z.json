@@ -1,0 +1,35 @@
+{
+ "task": "R:gate_b_finite_radial_scalar_bridge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "gate",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
+ "seed": 84078,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T021438Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "21e818280de508b665906472dcd399bfaf1ff2365523592d1135ba5d2ee5a821",
+ "stdout_tail": "iff=0.000e+00\n[PASS] positive strength gives positive finite scalar values\n       min=8.196721e-06, max=5.000000e-04\n[PASS] finite-core regulator is epsilon=0.1 at the mass node\n       phi(mass)=5.000000e-04, inferred_epsilon=0.100000000000\n[PASS] scalar is radially nonincreasing with Euclidean distance from mass\n       nearest=(r=0.000, phi=5.000000e-04), farthest=(r=6.000, phi=8.196721e-06)\n[PASS] scalar field is linear in source strength\n       max_abs_diff=0.000e+00\n[PASS] all site values share one global strength normalization\n       max_abs_ratio_error=2.220e-16\n[PASS] action scalar contribution depends only on product norm*strength\n       S(1,s)=1.749962765957, S(2,s/2)=1.749962765957\n[PASS] nonzero regulator is load-bearing for finite mass-node value\n       without epsilon the mass-node denominator would be zero; with epsilon=0.1 it is finite\n[PASS] checked packet is finite and runner-local\n       nodes=100, field_values=100\n[PASS] note states GB-S1b-a boundary without claiming Gate B closure\n[PASS] note explicitly includes gate_b_connectivity_tolerance helper source and cache\n[PASS] parent note wires the GB-S1b split and preserves open physical normalization\n[PASS] parent note still blocks Poisson/readout/connectivity overclaims\n\nTOTAL: PASS=13 FAIL=0\nrunner_check_breakdown = {A: 13, B: 0, C: 0, D: 0, total_pass: 13}\nVERDICT: GB-S1b-a is exact finite radial scalar algebra matching the Gate B runner helper; GB-S1b-b physical Poisson/source normalization remains open.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

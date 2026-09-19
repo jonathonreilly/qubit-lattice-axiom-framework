@@ -1,0 +1,36 @@
+AUTHORITY AND LAW
+FAIL Cycle-186 review note exists :: 
+PASS the consumed law is the deterministic Cycle-178 union :: (101996, 0)
+
+ADJACENT ARITY-FIVE DOMAIN
+PASS both orientations expose the expected arity-five row population :: (14436, 14436, 132)
+PASS the pair census covers the full oriented Cartesian product :: (208398096, 208398096)
+PASS almost every adjacent arity-five pair mutually disables and none commutes :: Counter({('ABSENT', 'ABSENT'): 208395792, ('SAME', 'ABSENT'): 1152, ('ABSENT', 'SAME'): 1152})
+
+EXACT MUTUAL-DISABLE WITNESS
+PASS one mutual-disable witness exists :: 
+PASS the adjacent arity-five supporting records are geometrically disjoint :: {}
+PASS both writes are enabled on the same initial two-hole record state :: ('F', 'F')
+PASS writing either permanent record disables the other exact event :: (None, None)
+PASS the two maximal local completions are distinct permanent configurations :: (((0, 0, 0), 'F'), ((1, 0, 0), 'F'))
+PASS all 24 proper-cubic images preserve the mutual-disable critical pair :: ()
+
+SCOPE AND INTERPRETATION
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_law_adjacent_critical_pair_actuality_cycle186_2026_07_16.py", line 333, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_law_adjacent_critical_pair_actuality_cycle186_2026_07_16.py", line 297, in main
+    note = NOTE.read_text()
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/FULL_LAW_ADJACENT_CRITICAL_PAIR_ACTUALITY_CYCLE186_NOTE_2026-07-16.md'

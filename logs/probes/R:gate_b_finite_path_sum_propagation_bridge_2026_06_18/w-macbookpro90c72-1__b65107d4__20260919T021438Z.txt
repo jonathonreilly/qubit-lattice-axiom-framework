@@ -1,0 +1,27 @@
+Gate B finite path-sum propagation bridge
+========================================================================
+[PASS] runner recursion equals independently enumerated finite path sum
+       max_abs_diff=4.467e-16
+[PASS] finite layer transfer equals path-sum expansion
+       max_abs_diff=2.225e-16
+[PASS] transfer is linear in initial source amplitudes
+       max_abs_diff=2.371e-16
+[PASS] blocked-node deletion is load-bearing and explicit
+       blocked_nodes=3, changed_terminal_or_bulk_entries=12
+[PASS] blocked nodes carry zero amplitude in the checked transfer
+       blocked_nodes=[21, 22, 23]
+[PASS] terminal detector normalizer returns a probability distribution when intensity is nonzero
+       sum=1.000000000000, min=6.176e-02, max=1.428e-01
+[PASS] readout helper remains a supplied terminal-window functional, not used as proof input
+       sample_gain=6.482e-01
+[PASS] checked packet is finite
+       nodes=36, edges=147, detectors=9
+[PASS] edge kernel has finite nonzero weights on all unblocked traversed edges
+[PASS] note states GB-S2a boundary without claiming Gate B closure
+[PASS] note explicitly includes gate_b_connectivity_tolerance helper source and cache
+[PASS] parent note wires the GB-S2 split and preserves open physical readout semantics
+[PASS] parent note still blocks scalar/connectivity/physical-gravity overclaims
+
+TOTAL: PASS=13 FAIL=0
+runner_check_breakdown = {A: 13, B: 0, C: 0, D: 0, total_pass: 13}
+VERDICT: GB-S2a is exact finite path-sum propagation on the supplied Gate B DAG/kernel; GB-S2b physical readout semantics remain open.

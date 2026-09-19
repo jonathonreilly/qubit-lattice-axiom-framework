@@ -1,0 +1,18 @@
+PASS the note pins the higher-field scope and semantic boundaries :: ()
+PASS the selected hard-core coin and source rotation are exact all-occupancy unitaries :: {'local_dimension': 64, 'ordinary_hard_core_M2': 6}
+PASS the complete local blocks commute with all 24 proper-cubic frames :: 0.0
+PASS the autonomous N_f=0 to N_f=1,2 history has an exact local source/edge ledger :: [{'tick': 1, 'basis_count_after': 42, 'distribution': {0: 0.8741007838712876, 1: 0.12589921612871405}, 'source_sum': 0.12589921612871405, 'discarded_norm': 0.0, 'maximum_ledger_residual': 1.3322676295501878e-15}, {'tick': 2, 'basis_count_after': 7812, 'distribution': {0: 0.8497189211133762, 1: 0.14807960491137348, 2: 0.002201473975253681}, 'source_sum': 0.026583336733158266, 'discarded_norm': 0.0, 'maximum_ledger_residual': 4.773959005888173e-14}]
+PASS the decisive two-tick history uses zero sparse-amplitude pruning :: [0.0, 0.0]
+PASS the second autonomous tick has genuine two-mediator support with no blockade :: {'Nf2_weight': 0.002201473975253681, 'Nf_sector_weights': {0: 0.8497189211133762, 1: 0.14807960491137348, 2: 0.002201473975253681}, 'basis_count': 7812}
+PASS a prepared local scalar mediator undergoes exact autonomous absorption :: {'source_current': -0.12589921612871569, 'expected': np.float64(-0.1258992161287137), 'output_distribution': {0: 0.12589921612871416, 1: 0.8741007838712879}}
+PASS N_f<=2 is not invariant: a local-vacuum N_f=2 state emits a third mediator :: {'Nf3_weight': 0.12589921612871177, 'sin_squared_angle': np.float64(0.1258992161287137)}
+PASS matter count plus mediator count has the quantified repeated-emission seam :: {'matter_number_change': 0.0, 'mediator_number_change_after_two_ticks': 0.15248255286188084, 'cumulative_onsite_source_current': 0.15248255286187232, 'missing_local_reservoir_coordinate': -0.15248255286187232}
+PASS vertex deletion returns the bare massive walk and exact field vacuum :: 0.0
+PASS the genuine higher-field update commutes with all 24 proper-cubic frames :: 1.4161124794991424e-16
+PASS held L=5,7 tori reproduce the two-tick infinite sparse history without wrap :: [(5, 0.0), (7, 0.0)]
+PASS the logical-matter/physical-hard-core-field sparse update composes linearly on separated source packets :: 7.989150271662703e-17
+PASS the separate Cycle-230 contact fixture is identity at N_m=1 and the bare mass fixture is retained :: {'bare_analytic_mass': 0.4534056541748852, 'bare_rest_mass': 0.4534056541748851, 'dressed_mass': 'not tested'}
+PASS only after the autonomous history, the same one-field coin retains static 3 L^+ :: 4.330087778348712e-15
+PASS the selected additive Cycle-215 port remains an external comparator, not this history :: {'minus_half_identity_residual': np.float64(2.0653146441376167e-16), 'static_target_residual': np.float64(1.3734550110467953)}
+DIAGNOSTIC {'beta': -0.3, 'charge': 0.4534056541748851, 'mediator_coupling': 0.8, 'angle': 0.3627245233399081, 'matter_representation': 'logical_one_particle_uncompiled', 'physical_field_M2_per_cell': 6, 'update_order': 'matter coin + all-occupancy field coin, vertex, ordinary streams'}
+TOTAL PASS=16 FAIL=0

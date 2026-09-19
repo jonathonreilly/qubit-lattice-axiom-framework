@@ -1,0 +1,35 @@
+{
+ "task": "R:g_bare_h_unit_same_projected_1pi_residue_exhaustion_named_gap_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "g",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/g_bare_h_unit_same_projected_1pi_residue_exhaustion_named_gap_2026_06_12.py",
+ "seed": 84077,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T021437Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=50, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "200a3ba5d2d7a5ba6b2aaaac41c796b7926807c05f1b208a81417a20cd096ae9",
+ "stdout_tail": "PASS: OGE projected class is parity=even\nPASS: OGE projected class is taste=singlet\nPASS: OGE projected class is charge_conjugation=even\nPASS: OGE projected class is at the same q^-2 residue order\nPASS: OGE projected class is tree order, not a higher-order correction\n\nExact coefficient residual\n--------------------------\nPASS: Rep-A OGE coefficient is g_bare^2 / 6 on Q_L -- R_OGE=g_bare**2/6\nPASS: Rep-B H_unit coefficient is 1/6 on Q_L -- R_H=1/6\nPASS: same-projected residual is (g_bare^2 - 1) / 6 -- Delta=(g_bare - 1)*(g_bare + 1)/6\nPASS: residual is not the zero polynomial in g_bare\nPASS: Delta(1) exact rational sample -- Delta=0\nPASS: Delta(1/2) exact rational sample -- Delta=-1/8\nPASS: Delta(3/2) exact rational sample -- Delta=5/24\nPASS: Delta(2) exact rational sample -- Delta=1/2\nPASS: residual roots are exactly g_bare = -1 and +1 -- roots=[-1, 1]\n\nWard-cancellation gate\n----------------------\nPASS: a structural Ward cancellation would need the residual polynomial to vanish -- nonzero polynomial g_bare**2/6 - 1/6\nPASS: canonical agreement is point equality, not arbitrary-g_bare exhaustion -- Delta(1)=0, Delta(2)=1/2\n\nNo-go discipline visibility\n---------------------------\nPASS: note includes no-go-discipline section 'N1 alternative route enumeration'\nPASS: note includes no-go-discipline section 'N2 wall-independence audit'\nPASS: note includes no-go-discipline section 'N7 steelman'\nPASS: note includes no-go-discipline section 'N8 cross-cycle echo'\n\nTOTAL: PASS=50, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

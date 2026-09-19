@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_yt_tadpole_cancellation_premise_derivation_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_yt_tadpole_cancellation_premise_derivation_2026_06_06.py",
+ "seed": 83746,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T020906Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 22   FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f86232e4babb8aaa5044be794b40d173c31a457b7e6f7d48df6f0b7a2fa5bb4e",
+ "stdout_tail": "ink=1: ratio = y_t_bare/g_bare, u_0-free\n  [PASS] (C2) equal n_link=2: ratio = y_t_bare/g_bare, u_0-free\n  [PASS] (C2) equal n_link=3: ratio = y_t_bare/g_bare, u_0-free\n  [PASS] (C3 TEETH) unequal n_link (g_s:1, y_t:2): u_0 SURVIVES (no cancellation)  --  ratio = y_t_bare/(g_bare*sqrt(u_0))  (carries 1/sqrt(u_0))\n  [PASS] (C4 TEETH) on-site Yukawa n=0 vs gauge n=1: u_0 SURVIVES (no cancellation)  --  ratio = sqrt(u_0)*y_t_bare/g_bare\n\n[BLOCK D] gauge-side grounding: staggered hopping vertex is single-link\n  [PASS] dU/deps|_0 = i a U0 (one power of the link)\n  [PASS] mass term is U-independent -> drops from D' (single-link survives)\n  [PASS] => staggered hopping vertex D' is single-link: n_link(g_s) = 1  --  matches operator-counting lemma S1\n\n[BLOCK E] residual (named) + broken-citation correction\n  [PASS] cited lines 213-256 / 311-312 exceed the 102-line no_go note (citation broken)  --  YT_EW_COLOR_PROJECTION_THEOREM = EW kappa-family NO-GO, not the CMT authority\n  [PASS] cancellation REDUCES to the single equality n_link(y_t) = n_link(g_s)  --  gauge side n_link=1 grounded (Block D); Yukawa side = named residual\n  [PASS] named admissions: LM mean-field scheme (U=u0 V); staggered-Dirac gate; H_unit single-link structure / same-1PI matching  --  framework-canonical; not discharged here\n\n==============================================================================\nSCORECARD:  PASS = 22   FAIL = 0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T020907Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

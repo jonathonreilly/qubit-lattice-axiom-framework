@@ -1,0 +1,28 @@
+CYCLE 305: FULL TWO-PARTICLE FIXED-SEAM SYNTHESIS
+authority=none; audit=unset
+FAIL the Cycle-305 synthesis note exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/FULL_TWO_PARTICLE_FIXED_SEAM_SYNTHESIS_CYCLE305_NOTE_2026-07-17.md
+PASS the corrected Cycle-305 physical route cold-passes :: {'returncode': 0, 'observed': (12, 0)}
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_two_particle_fixed_seam_synthesis_cycle305_2026_07_17.py", line 324, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_two_particle_fixed_seam_synthesis_cycle305_2026_07_17.py", line 313, in main
+    route_boundary_guards()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_two_particle_fixed_seam_synthesis_cycle305_2026_07_17.py", line 143, in route_boundary_guards
+    synthesis = normalized(NOTE)
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/full_two_particle_fixed_seam_synthesis_cycle305_2026_07_17.py", line 75, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/FULL_TWO_PARTICLE_FIXED_SEAM_SYNTHESIS_CYCLE305_NOTE_2026-07-17.md'

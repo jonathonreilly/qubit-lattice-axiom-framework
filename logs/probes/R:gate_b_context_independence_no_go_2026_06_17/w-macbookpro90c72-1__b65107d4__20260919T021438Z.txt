@@ -1,0 +1,28 @@
+Gate B context independence no-go
+========================================================================
+[PASS] base Lattice patch has fixed Z^3 nearest-neighbor adjacency  (|V|=18 |E_nn|=33)
+[PASS] two generated-connectivity completions share the same base lattice patch  (same labels and same underlying Z^3 patch)
+[PASS] generated-connectivity rule is underdetermined by the base lattice  (|G_A|=21 |G_B|=18)
+[PASS] both generated rules are finite and layer-forward supplied structures  (neither rule is selected by nearest-neighbor Z^3 adjacency)
+[PASS] Gate-B scalar normalization/regulator is freely variable over the same base data  (phi_A=0.380952 phi_B=0.618182)
+[PASS] linear weak-field action form does not select the scalar normalization  (S_A=3.095238 S_B=1.909091)
+[PASS] propagation/readout semantics are not fixed by the Lattice axiom  (narrow=1.000000 wide=3.000000)
+[PASS] model-pair contradiction blocks any axiom-only derivation of I_GateB  (same Lattice+Quantum+Record surface, different GB-S1b-b/S2b/S3b)
+[PASS] source note states the negative boundary without claiming Gate B closure  (note wording guard)
+[PASS] Gate B status note cites the independence no-go and stays open-gate  (Gate B status guard)
+[PASS] no new axiom or Tier-A admission is claimed
+[PASS] audit surfaces are read-only
+[PASS] positive Gate B dynamics theorem is explicitly outside this artifact
+[PASS] bounded generated-geometry source index remains useful
+[PASS] terminal closeout markers are declared in the source note
+========================================================================
+N5 execution certificate -- what this runner resolves
+per_element: checked -- elements are enumerated one at a time: every ordered pair of the 18 patch vertices is tested for l1 == 1 to build the 33 nearest-neighbor edges, and each of the 9 layer-0 labels picks its own two nearest layer-1 targets under the rival rule B.
+per_site: checked -- each (x, y) site carries its own amplitude 1/(1 + |x-1| + |y-1|), the offsets (0,0), (1,0), (-1,0) attach edges site by site, and layer-1 positions are displaced per site, so the narrow {(1,1)} and wide readouts differ (1.000000 vs 3.000000).
+per_mode: checked and not executed -- no operator, transfer matrix or spectrum is ever formed here; the three Gate-B pieces compared are connectivity, a scalar normalization and a detector support, all configuration data, so there is no mode decomposition to resolve.
+per_block: checked -- the patch splits into two z-layer blocks of 9 sites and the comparison is layer-forward: layer 0 is held fixed while the rival completions build layer 1 differently, |G_A| = 21 edges by fixed offsets against |G_B| = 18 by nearest-two Euclidean.
+lattice_wide: checked on the finite patch -- the whole base lattice is held identical across both models, |V| = 18 and |E_nn| = 33 fixed Z^3 nearest-neighbor adjacency, which is exactly what makes the model pair a contradiction; no infinite-volume or continuum limit is taken.
+========================================================================
+GATE_B_CONTEXT_INDEPENDENCE_NO_GO=TRUE
+GB_S1BB_S2B_S3B_NOT_DERIVED_FROM_LATTICE=TRUE
+PASS=15 FAIL=0

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8177",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block33-rooted",
+ "worker": "w-macbookpro90c72-jf228",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8177/t31_upfactor_enumeration.py",
+ "seed": 84645,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f433f84d",
+ "started_utc": "20260919T022405Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROOF STEP BY BRUTE FORCE on T3.1 up-factor (PR #8177): enumerating all 3^n successor configs with at most one processed child matches (1+x_A U)^n + n x_P U (1+x_A U)^{n-1} for n=1..6; pattern has purchase and the step holds as written"
+ },
+ "review": "T3.1 up-factor matches enumeration of all 3^n successor configs with at most one processed child for n=1..6; the step holds as written.",
+ "what": "PR #8177 (ail33: the rooted inequality reduces the unit budget to the ): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917; git show origin/physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917:<note>. Create probes/work/pr8177/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8177/<script>.py\"",
+ "stdout_sha256": "1b2f9cc8e6625a4f3222f853f3ec4722d6cf3ae82dcdad5e49d9d8f5173ecdf6",
+ "stdout_tail": "n=1  3^1=3 configs  identity=True\nn=2  3^2=9 configs  identity=True\nn=3  3^3=27 configs  identity=True\nn=4  3^4=81 configs  identity=True\nn=5  3^5=243 configs  identity=True\nn=6  3^6=729 configs  identity=True\nSUMMARY: PROOF STEP BY BRUTE FORCE on T3.1 up-factor (PR #8177): enumerating all 3^n successor configs with at most one processed child matches (1+x_A U)^n + n x_P U (1+x_A U)^{n-1} for n=1..6; pattern has purchase and the step holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf228",
+  "at_utc": "20260919T022405Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

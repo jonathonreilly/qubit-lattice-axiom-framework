@@ -1,0 +1,7 @@
+n=1  3^1=3 configs  identity=True
+n=2  3^2=9 configs  identity=True
+n=3  3^3=27 configs  identity=True
+n=4  3^4=81 configs  identity=True
+n=5  3^5=243 configs  identity=True
+n=6  3^6=729 configs  identity=True
+SUMMARY: PROOF STEP BY BRUTE FORCE on T3.1 up-factor (PR #8177): enumerating all 3^n successor configs with at most one processed child matches (1+x_A U)^n + n x_P U (1+x_A U)^{n-1} for n=1..6; pattern has purchase and the step holds as written

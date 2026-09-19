@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-response-kernel-a5",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j1ab0",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-response-kernel/referee_w-jonathonsmac4f50-j1ab0/check.py",
+ "seed": 89016,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a51b258f",
+ "started_utc": "20260919T033656Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed with a correction to the scope of 'no 1/r' (one momentum; a directed 1/R channel exists)"
+ },
+ "review": "Formation-response-kernel a5's exact claims reproduce (R = 1/(1-phi e^{iw}); at (pi,0) phi 1/3, chi 3/2, C 9/8, 1/E 1/4, chi/C 4/3; four corner chi's 3/2; truncated 40/27; log equal-level kernel), with one correction: a single momentum does not exclude 1/r decay, and the point response has a directed 1/R (n T(n,n,n) -> sqrt3/(2pi)), so HIT confirmed with 'no isotropic 1/r'.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-response-kernel:a5/; its files are probes/work/derive/formation-response-kernel/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-response-kernel/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "93f05f0c645e17193a08cdb712d341df69da83e792e8ffafdf3c21bde5067002",
+ "stdout_tail": "PASS V1: sum_t (phi e^{iw})^t = 1/(1 - phi e^{iw}) for |phi| < 1; chi = R at w = 0\nPASS V2: (pi, 0): phi = 1/3, chi = 3/2, C = 9/8, E = 4, 1/E = 1/4, chi/C = 4/3\nPASS V3: corner phi's at (pi, 0): [1/3, 1/3, 1/3, 1/3]; each chi = 3/2; truncated sum 40/27\nPASS V4: return sums [(8, 2.0667), (16, 2.6443), (32, 3.2186), (64, 3.7921), (128, 4.3654)], increments [0.5776, 0.5743, 0.5735, 0.5733] per doubling: logarithmic\nPASS V5: n T(n,n,n) = 0.2750525 (n = 100), 0.2756032 (n = 1000), 0.2756440 (n = 3000) -> sqrt3/(2 pi) = 0.2756644: a directed 1/R decay along the drift diagonal\nHIT: confirmed - formation-response-kernel a5: R = 1/(1 - phi e^{iw}), chi = 1/(1 - phi); at (pi, 0) phi = 1/3, chi = 3/2, C = 9/8, 1/E = 1/4, chi/C = 4/3 = 1 + phi (fluctuation-response fails); the four in-plane corner orders all give chi = 3/2 there, so no channel equals 1/E; truncated sum 40/27; the equal-level covariance is logarithmic; recomputed independently. Correction: a single momentum shows 'not equal to 1/E', not 'no 1/r decay' - the point response has a directed 1/R along the drift diagonal (n T(n,n,n) -> sqrt3/(2 pi)), so the SUMMARY's 'no 1/r in 3D' should read 'no isotropic 1/r'\nSUMMARY: confirmed with a correction to the scope of 'no 1/r' (one momentum; a directed 1/R channel exists)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1ab0",
+  "at_utc": "20260919T033657Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok formation-response-kernel a5): the (pi,0) values (chi 3/2, C 9/8, 1/E 1/4, chi/C 4/3), the corner-order chi's and the truncated sum 40/27 hold, so no channel equals 1/E; correction: the SUMMARY's 'no 1/r in 3D' holds only as 'no isotropic 1/r' - the point response decays as a directed 1/R along the drift diagonal.",
+  "by": "w-jonathonsmac4f50-j1ab0",
+  "at_utc": "20260919T033657Z"
+ }
+}

@@ -1,0 +1,7 @@
+PASS V1: sum_t (phi e^{iw})^t = 1/(1 - phi e^{iw}) for |phi| < 1; chi = R at w = 0
+PASS V2: (pi, 0): phi = 1/3, chi = 3/2, C = 9/8, E = 4, 1/E = 1/4, chi/C = 4/3
+PASS V3: corner phi's at (pi, 0): [1/3, 1/3, 1/3, 1/3]; each chi = 3/2; truncated sum 40/27
+PASS V4: return sums [(8, 2.0667), (16, 2.6443), (32, 3.2186), (64, 3.7921), (128, 4.3654)], increments [0.5776, 0.5743, 0.5735, 0.5733] per doubling: logarithmic
+PASS V5: n T(n,n,n) = 0.2750525 (n = 100), 0.2756032 (n = 1000), 0.2756440 (n = 3000) -> sqrt3/(2 pi) = 0.2756644: a directed 1/R decay along the drift diagonal
+HIT: confirmed - formation-response-kernel a5: R = 1/(1 - phi e^{iw}), chi = 1/(1 - phi); at (pi, 0) phi = 1/3, chi = 3/2, C = 9/8, 1/E = 1/4, chi/C = 4/3 = 1 + phi (fluctuation-response fails); the four in-plane corner orders all give chi = 3/2 there, so no channel equals 1/E; truncated sum 40/27; the equal-level covariance is logarithmic; recomputed independently. Correction: a single momentum shows 'not equal to 1/E', not 'no 1/r decay' - the point response has a directed 1/R along the drift diagonal (n T(n,n,n) -> sqrt3/(2 pi)), so the SUMMARY's 'no 1/r in 3D' should read 'no isotropic 1/r'
+SUMMARY: confirmed with a correction to the scope of 'no 1/r' (one momentum; a directed 1/R channel exists)

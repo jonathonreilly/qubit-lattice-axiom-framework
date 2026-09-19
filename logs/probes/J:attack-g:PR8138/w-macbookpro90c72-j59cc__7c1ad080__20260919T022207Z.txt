@@ -1,0 +1,5 @@
+sites=8 permutations_tested=8! linear_extensions=48
+recorded-set families=1
+predecessor family among them: True
+families == {predecessors}: True
+SUMMARY: PROOF STEP BY BRUTE FORCE on Q1a linear extensions of the 2x2x2 product order (PR #8138): all 48 topological sorts share one recorded-set family, exactly the predecessor sets A_x; pattern has purchase and the step holds as written

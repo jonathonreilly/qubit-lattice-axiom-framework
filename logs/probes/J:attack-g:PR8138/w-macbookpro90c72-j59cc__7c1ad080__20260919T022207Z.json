@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8138",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block08-z3-for",
+ "worker": "w-macbookpro90c72-j59cc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8138/q1a_linear_extensions_recorded_sets.py",
+ "seed": 84527,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c1ad080",
+ "started_utc": "20260919T022207Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROOF STEP BY BRUTE FORCE on Q1a linear extensions of the 2x2x2 product order (PR #8138): all 48 topological sorts share one recorded-set family, exactly the predecessor sets A_x; pattern has purchase and the step holds as written"
+ },
+ "review": "Q1a 2x2x2 product order has exactly 48 linear extensions and they share one recorded-set family, the predecessor sets; the step holds as written.",
+ "what": "PR #8138 ([physics-loop] admissibility-induced-law block08 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915; git show origin/physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915:<note>. Create probes/work/pr8138/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8138/<script>.py\"",
+ "stdout_sha256": "94f46ca436f01c1ad9c6db89900f0eef86fe193d209a14aa278ad6f1cb0213c8",
+ "stdout_tail": "sites=8 permutations_tested=8! linear_extensions=48\nrecorded-set families=1\npredecessor family among them: True\nfamilies == {predecessors}: True\nSUMMARY: PROOF STEP BY BRUTE FORCE on Q1a linear extensions of the 2x2x2 product order (PR #8138): all 48 topological sorts share one recorded-set family, exactly the predecessor sets A_x; pattern has purchase and the step holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j59cc",
+  "at_utc": "20260919T022207Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

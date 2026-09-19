@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hkd_entry_sum_full_l_closure_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_hkd_entry_sum_full_l_closure_2026_06_12.py",
+ "seed": 14599,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104319Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9189d7404273a9f1d5dc2a8e0d09d36c8bc39534ca4f74a03616339f8f78e4f1",
+ "stdout_tail": ", 0)           0  False   False     False     \n  22  (11, 22, 11)     (1, 0, 1)      660660  True    True      True      \n  24  (12, 24, 12)     (0, 0, 0)           0  False   False     False     \n  26  (13, 26, 13)     (1, 0, 1)     1802892  True    True      True      \n  28  (14, 28, 14)     (0, 0, 0)           0  False   False     False     \n  30  (15, 30, 15)     (1, 0, 1)     4258800  True    True      True      \n  32  (16, 32, 16)     (0, 0, 0)           0  False   False     False     \n  34  (17, 34, 17)     (1, 0, 1)     9030672  True    True      True      \n  36  (18, 36, 18)     (0, 0, 0)           0  False   False     False     \n  38  (19, 38, 19)     (1, 0, 1)    17609580  True    True      True      \n  40  (20, 40, 20)     (0, 0, 0)           0  False   False     False     \nPASS: S2 full-L support criterion has zero counterexamples on every even L in {8,...,40} :: counterexamples=(), frozen=0\nPASS: S2 existence classes are determined by chart-period parity :: classes=(((0, 0, 0), (False,)), ((1, 0, 1), (True,)))\nS3 L=22 combinatorial witness\n  L=22 periods=(11, 22, 11), witness=((0, 0, 0), (0, 1, 6), (0, 1, -5), 0, 1), misaligned_count=660660\nPASS: S3 L=22 witness uses a=(q+1)/2 on an odd axis and is a valid surviving misaligned entry :: left=(0, 0, 0), right=(0, 1, 6), delta=(0, 1, -5), d2_parity=0, chart_pair_parity=1, frozen=((0, 0, 0), (0, 1, 6), (0, 1, -5), 0, 1), count=660660, witness_magnitude_min=1.0e-06 applies only to dense anchors\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104320Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

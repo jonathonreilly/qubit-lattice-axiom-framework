@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py",
+ "seed": 14597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104317Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "be6081f4ce308fe2287b7b9038ac1cfb932f959a38ad7d3389ddbd9f1b51991f",
+ "stdout_tail": "ted at u_0 = 1.0 and no lattice is instantiated, so no site-resolved field or link enters the endpoint-selection question at all.\nper_mode: checked and not executed \u2014 the compression map carries no spectral or mode label, only the block size L; no eigenvalue, Fourier component, or taste index appears, so this runner makes no mode-resolved claim about where a physical selector could be hiding.\nper_block: checked \u2014 the coefficient surface is resolved at each finite block size: A(2)=1/(8 u_0^2)=0.125000000000 and A(4)=1/(7 u_0^2)=0.142857142857, with the exact endpoint ratio A2/A4=0.875000000000 = 7/8 and the induced scale ratio v4/v2=0.967168210134. Each block can be normalized as the reference endpoint without violating the fixed-density algebra, and the 3 resulting readout triples are distinct yet all internally compatible, which is exactly why no block singles itself out as physical.\nlattice_wide: checked \u2014 the L -> infinity endpoint is carried explicitly as A(inf)=1/(4 sqrt(3) u_0^2)=0.144337567297 and enters on the same footing as the finite blocks, with Ainf/A2=1.154700538379 = 2/sqrt(3) and vinf/v2=0.964678629960; the obstruction survives at that endpoint too, since rescaling the fixed density by lambda^4 with lambda=3.7 multiplies every v_i by exactly lambda and leaves all endpoint ratios unchanged. The infinite-L limit itself is consumed from the parent dimensional-compression note rather than taken here.\n\nSUMMARY: HIERARCHY FIXED-DENSITY SELECTOR NO-GO PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104317Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

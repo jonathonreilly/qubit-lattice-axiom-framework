@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_induced_composite_link_trajectory_non_autonomy_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_induced_composite_link_trajectory_non_autonomy_2026_06_08.py",
+ "seed": 14601,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104321Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "566811d262035e49a144523921b6337cdd99d92a147809f4f29fb4af51fad6f6",
+ "stdout_tail": "-autonomy: rho_A, rho_B physical one-body densities (0 < eigs <= 1)  (eigs_A in [0.021,0.769], eigs_B in [0.007,0.788])\n[PASS] non-autonomy: both states carry rank-3 cross-site bilinears (>=3 occupied modes)\n[PASS] non-autonomy: SAME U_eff(0) (exact)  (dev = 1.003e-14)\n[PASS] non-autonomy: SAME local color densities M(x,x), M(y,y) (exact by construction)\n[PASS] non-autonomy: positive parts differ  (|Q_A - Q_B|_F = 0.0236)\n[PASS] non-autonomy [cov]: SAME Mdot(0) (depends only on matched local densities)  (dev = 0.000e+00)\n[PASS] non-autonomy [cov]: dU_eff/dt DIFFERS  (|Omega_A - Omega_B|_F = 1.8058)\n[PASS] non-autonomy [cov]: both increments confirmed by finite differences  (max dev = 4.593e-10)\n[PASS] non-autonomy [free]: SAME Mdot(0) (depends only on matched local densities)  (dev = 0.000e+00)\n[PASS] non-autonomy [free]: dU_eff/dt DIFFERS  (|Omega_A - Omega_B|_F = 1.5236)\n[PASS] non-autonomy [free]: both increments confirmed by finite differences  (max dev = 2.665e-10)\n[PASS] non-autonomy [cov]: induced trajectories with identical U_eff(0) separate  (|U_A - U_B|_F at t=0.25, 0.5 = 0.5163, 0.3608)\n[PASS] minimal-occupancy rigidity: K=3 Schur identity M M(y,y)^{-1} M^dag = M(x,x) (10 draws)  (max dev = 2.270e-14)\n[PASS] minimal-occupancy rigidity: K=3 rigidity Q = (U^dag M(x,x) U) # M(y,y) -- geometric mean forced  (max dev = 6.768e-13)\n[PASS] minimal-occupancy rigidity: K=4 breaks the Schur identity (hidden-Q freedom opens; 10 draws)  (min dev = 1.203)\n\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104321Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_induced_composite_link_trajectory_non_autonomy_2026_06_08.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,100 @@
+
+----------------------------------------------------------------------------------------
+A. Note and scope discipline
+----------------------------------------------------------------------------------------
+  [PASS][A] note contains marker: # Hierarchy DELTA0 S3 Fixed-G Gap-Spectrum No-Go
+  [PASS][A] note contains marker: **Claim type:** bounded_theorem
+  [PASS][A] note contains marker: **Status authority:** independent audit lane only.
+  [PASS][A] note contains marker: This source note does not set or predict an audit outcome
+  [PASS][A] note contains marker: does not eliminate threshold-dependent, EW-driven, or non-NJL transport mechanisms
+  [PASS][A] note contains marker: The DELTA0 gate remains open.
+  [PASS][A] note contains marker: does not modify the route inventory
+  [PASS][A] note contains marker: S3 itself is not globally eliminated
+  [PASS][A] note contains marker: ## No-Go Discipline Gate
+  [PASS][A] note contains marker: N1 -- alternative route enumeration
+  [PASS][A] note contains marker: N2 -- wall independence
+  [PASS][A] note contains marker: N3 -- hidden-wall scan
+  [PASS][A] note contains marker: N4 -- residual matching
+  [PASS][A] note contains marker: N5 -- rhetoric audit
+  [PASS][A] note contains marker: N6 -- partial-closure path scan
+  [PASS][A] note contains marker: N7 -- steelman
+  [PASS][A] note contains marker: N8 -- cross-cycle echo
+  [PASS][A] note contains marker: Gate result: PASS for the narrowed fixed-`G` NJL gap-spectrum no-go
+  [PASS][B] note avoids forbidden/overclaim marker: observed target mass
+  [PASS][B] note avoids forbidden/overclaim marker: promoted to retained
+  [PASS][B] note avoids forbidden/overclaim marker: retained on the actual surface
+  [PASS][B] note avoids forbidden/overclaim marker: source-note proposal
+  [PASS][B] note avoids forbidden/overclaim marker: audit_status
+
+----------------------------------------------------------------------------------------
+B. Generalized NJL active-taste algebra
+----------------------------------------------------------------------------------------
+  [PASS][A] G_crit(1) makes sigma_n^2 vanish  (sigma2=0.000e+00)
+  [PASS][A] G_crit(2) makes sigma_n^2 vanish  (sigma2=0.000e+00)
+  [PASS][A] G_crit(8) makes sigma_n^2 vanish  (sigma2=0.000e+00)
+  [PASS][A] G_crit(16) makes sigma_n^2 vanish  (sigma2=0.000e+00)
+  [PASS][A] gap equation vanishes at sigma_n^2 = n G - 4 u_0^2  (n=11, G=0.9, sigma2=6.818702)
+  [PASS][A] nontrivial root exists iff G > G_crit(n)
+  [PASS][A] alpha constants form the expected hierarchy  (0.0795775 < 0.0906678 < 0.1033038)
+  [PASS][A] alpha_LM = alpha_bare/u_0
+  [PASS][A] alpha_s = alpha_bare/u_0^2
+
+----------------------------------------------------------------------------------------
+C. Leading-order lattice-gauge-only S3 has no threshold spectrum
+----------------------------------------------------------------------------------------
+  [PASS][B] canonical N_c=3 gives G_LO=1/(2 N_c)=1/6
+  [PASS][B] all n=1..16 leading-order sigma_n^2 are negative
+  [PASS][B] largest leading-order root test is n=16  (max_n=16)
+  [PASS][B] sigma_16^2 = 16/6 - 4 u_0^2 is the recorded symmetric-phase value  (sigma16^2=-0.414632)
+  [PASS][B] G_LO is below the n=16 threshold  (G_LO=0.166667, Gcrit16=0.192581)
+  [PASS][B] G_LO is below every active-taste threshold
+  [PASS][B] therefore no adjacent leading-order ratio is constructible
+
+----------------------------------------------------------------------------------------
+D. Fixed-G broken-phase extension cannot supply constant alpha_LM
+----------------------------------------------------------------------------------------
+  [PASS][C] G_star(2) realizes alpha_LM for that one step  (G*=3.107052, ratio=0.0906678)
+  [PASS][C] G_star(3) realizes alpha_LM for that one step  (G*=1.547061, ratio=0.0906678)
+  [PASS][C] G_star(4) realizes alpha_LM for that one step  (G*=1.029945, ratio=0.0906678)
+  [PASS][C] G_star(5) realizes alpha_LM for that one step  (G*=0.771924, ratio=0.0906678)
+  [PASS][C] G_star(6) realizes alpha_LM for that one step  (G*=0.617283, ratio=0.0906678)
+  [PASS][C] G_star(7) realizes alpha_LM for that one step  (G*=0.514260, ratio=0.0906678)
+  [PASS][C] G_star(8) realizes alpha_LM for that one step  (G*=0.440707, ratio=0.0906678)
+  [PASS][C] G_star(9) realizes alpha_LM for that one step  (G*=0.385562, ratio=0.0906678)
+  [PASS][C] G_star(10) realizes alpha_LM for that one step  (G*=0.342682, ratio=0.0906678)
+  [PASS][C] G_star(11) realizes alpha_LM for that one step  (G*=0.308385, ratio=0.0906678)
+  [PASS][C] G_star(12) realizes alpha_LM for that one step  (G*=0.280329, ratio=0.0906678)
+  [PASS][C] G_star(13) realizes alpha_LM for that one step  (G*=0.256952, ratio=0.0906678)
+  [PASS][C] G_star(14) realizes alpha_LM for that one step  (G*=0.237174, ratio=0.0906678)
+  [PASS][C] G_star(15) realizes alpha_LM for that one step  (G*=0.220223, ratio=0.0906678)
+  [PASS][C] G_star(16) realizes alpha_LM for that one step  (G*=0.205533, ratio=0.0906678)
+  [PASS][D] G_star(n) values are unique over n=2..16
+  [PASS][D] G_star decreases with n because alpha_LM^2 != 1
+  [PASS][D] no single fixed G can realize alpha_LM for both n=16 and n=15  (G16=0.205533, G15=0.220223)
+  [PASS][D] full forced-G range is threshold-dependent by more than 10x  (range=15.12x)
+  [PASS][D] low-threshold forced G exceeds leading-order G by O(10)  (G*_2/G_LO=18.64)
+
+----------------------------------------------------------------------------------------
+E. Parent-gate context and residuals
+----------------------------------------------------------------------------------------
+  [PASS][C] parent gate records S3 context handle
+  [PASS][C] parent gate still says the gate is open
+  [PASS][C] note dependencies include route inventory and NJL authorities
+  [PASS][C] note leaves threshold-dependent and EW mechanisms open
+  [PASS][C] no electroweak VEV literal is consumed
+  [PASS][C] runner source does not write audit ledgers
+  RESIDUAL (declared-open): Threshold-dependent G_n or EW-driven gap equations remain open; this runner does not derive or rule them out.
+  RESIDUAL (declared-open): Non-NJL direct transport rules remain open; this runner only prunes the fixed-G NJL gap-spectrum arm of S3.
+
+----------------------------------------------------------------------------------------
+N5 execution certificate: resolution granularity of this gap-spectrum no-go
+----------------------------------------------------------------------------------------
+per_element: checked and not executed — this runner builds no operator, matrix, or algebra carrier, so there is no matrix element to resolve; the gap equation dV/dsigma = 1/G - n/(sigma^2 + C) is a scalar stationarity condition with C = 4 u_0^2 = 3.081298, and its finest resolved object is a per-taste scalar root, reported under per_mode below.
+per_site: checked and not executed — no lattice site is instantiated and no field is evaluated anywhere; the lattice enters only through the single boundary plaquette <P>=0.5934 giving u_0=0.8776814, and the leading-order Kawamoto-Smit coupling G_LO = 1/(2 N_c) = 0.166667 at N_c=3 is a mean-field scalar, so nothing here is site-resolved.
+per_mode: checked — the active taste count is the mode index and all sixteen are swept one at a time: sigma_n^2 = n G - C is negative for every n=1..16 at G_LO (largest at n=16, sigma_16^2=-0.414632), and G_LO=0.166667 sits below every per-taste threshold G_crit(n) = C/n, with the loosest being G_crit(16)=0.192581. No taste mode reaches the broken phase at leading order, so no nontrivial gap root exists for any of them.
+per_block: checked — the adjacent-threshold rungs are resolved rung by rung across n=2..16: each rung admits its own forced coupling G_star(n) that reproduces alpha_LM=0.0906678 for that one step, all 15 of them distinct and strictly decreasing in n, so the n=16 and n=15 rungs already disagree (G16=0.205533 against G15=0.220223) and the full rung range spans 15.12x. A single fixed G therefore cannot hold across more than one rung.
+lattice_wide: checked and not executed — no volume, thermodynamic, or continuum limit is taken; the entire computation sits at one fixed mean-field surface with a leading-order coupling, and the note states in its own scope that S3 is not globally eliminated, that threshold-dependent, EW-driven and non-NJL transport mechanisms stay open (2 residuals declared above), and that the DELTA0 gate remains open.
+
+VERDICT: S3 fixed-G lattice-gauge-only gap-spectrum arm is pruned within stated scope; DELTA0 remains open.
+Breakdown: A=27 B=12 C=21 D=5 RESIDUAL=2
+TOTAL: PASS=65 FAIL=0

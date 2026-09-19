@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_hierarchy_delta0_s3_fixed_gap_spectrum_no_go_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_hierarchy_delta0_s3_fixed_gap_spectrum_no_go_2026_06_18.py",
+ "seed": 14596,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104316Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=65 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b6b1c7f5896db7dd0333783149bee858e00f1c86526ba02c828178b4cc595add",
+ "stdout_tail": "=3 is a mean-field scalar, so nothing here is site-resolved.\nper_mode: checked \u2014 the active taste count is the mode index and all sixteen are swept one at a time: sigma_n^2 = n G - C is negative for every n=1..16 at G_LO (largest at n=16, sigma_16^2=-0.414632), and G_LO=0.166667 sits below every per-taste threshold G_crit(n) = C/n, with the loosest being G_crit(16)=0.192581. No taste mode reaches the broken phase at leading order, so no nontrivial gap root exists for any of them.\nper_block: checked \u2014 the adjacent-threshold rungs are resolved rung by rung across n=2..16: each rung admits its own forced coupling G_star(n) that reproduces alpha_LM=0.0906678 for that one step, all 15 of them distinct and strictly decreasing in n, so the n=16 and n=15 rungs already disagree (G16=0.205533 against G15=0.220223) and the full rung range spans 15.12x. A single fixed G therefore cannot hold across more than one rung.\nlattice_wide: checked and not executed \u2014 no volume, thermodynamic, or continuum limit is taken; the entire computation sits at one fixed mean-field surface with a leading-order coupling, and the note states in its own scope that S3 is not globally eliminated, that threshold-dependent, EW-driven and non-NJL transport mechanisms stay open (2 residuals declared above), and that the DELTA0 gate remains open.\n\nVERDICT: S3 fixed-G lattice-gauge-only gap-spectrum arm is pruned within stated scope; DELTA0 remains open.\nBreakdown: A=27 B=12 C=21 D=5 RESIDUAL=2\nTOTAL: PASS=65 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104316Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

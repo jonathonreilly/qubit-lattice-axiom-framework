@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_value_frontier_probe_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_hierarchy_value_frontier_probe_2026_06_05.py",
+ "seed": 14597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104317Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "666db2ce4921dfe2dae42cafd26674622cb7a9e71955d607817991e085db5709",
+ "stdout_tail": "_bare) rounds to 3\n[PASS] S4.2 [honesty] ladder is LOOSE: q(y_tau|alpha_bare) not within 0.1 of 2\n\n------------------------------------------------------------------------\nSECTION 5  Angle 3: is the framework's 1/alpha~11 the right input?\n------------------------------------------------------------------------\n  single DT (b0=7) reaching v would need 1/alpha = 42.83\n  framework actually has                1/alpha ~ 11.03\n  alpha_s(M_Z)=0.118 run UP to M_Pl (1-loop b0=7): 1/alpha = 52.41\n[PASS] S5.1 single-DT-to-v needs 1/alpha ~ 40-45 (framework has ~11)\n[PASS] S5.2 physical alpha_s(M_Z) run up gives 1/alpha(M_Pl) ~ 50-54\n  => the framework's bare coupling is ~4-5x too STRONG for a single\n     transmutation to span the hierarchy.  The framework instead\n     uses the 16th POWER (Section 2), which DOES span ~17 decades\n     at 1/alpha~11.  So the EW decades are mechanism-supplied (the\n     power-law, bounded); the open gate is the (4pi)^-16 transport\n     origin (DELTA0), not the decade COUNT.\n\n========================================================================\nVERDICT: FRAMEWORK-AVOIDS-PROBLEM; EW ~17 DECADES SUPPLIED BY THE\nalpha_LM^16 POWER-LAW (bounded, P1-P4/DELTA0 open); LEPTON EXTRA\n~2-5.5 DECADES RIDE ON UNDERIVED SMALL YUKAWAS (y_tau lane open).\nBest mechanism-supplied decade count: 16.7 (EW power-law).\nSingle gauge transmutation: only ~4 decades (sister-branch result).\n========================================================================\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104317Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

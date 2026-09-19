@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_hw_equivalence_free_transfer_dynamics_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_hw_equivalence_free_transfer_dynamics_2026_06_12.py",
+ "seed": 14600,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104320Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=16 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cdf0fd0517025e0a3364feb86b483280220c735e51308ea91873aab235d1bda4",
+ "stdout_tail": "k_dim=64\nPASS M1a :: old_to_new=(2, 0, 1); reversal witness (1, 0, 0): (1, 0, 1) != (1, 1, 0)\nPASS M1b :: symbolic multiset and elementary symmetric checks\nPASS M1c :: positivity=[True, True]\nPASS M2a :: kernel multiset equality=[True, True]\nPASS M2b :: dim=64, residuals=[2.5780454860118624e-18, 7.696355957328399e-20]\nPASS M3a :: max trace residual=4.441e-16\nPASS M3b :: dispersion multisets sorted-equal at both points\nPASS M3c :: berezin lambda=2 break residuals=[(109.53830554018582, 109.53830554018583), (92.25326461942703, 92.25326461942704)]\nPASS M3d :: log Tr Gamma(t) residuals=[2.220446049250313e-16, 0.0]\nPASS M4 :: the interacting/gauge level remains the named open\nFAIL B11 :: dependency phrase greps\nPASS B12 :: firewall sentences present\nPASS B13 :: forbidden closing language absent\nPASS B14 :: links=['AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md', 'STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md', 'REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md']\nPASS B15 :: companions are backticked only\nPASS B16 :: No-promotion present\nPASS B17 :: Berezin self-check flag from explicit Grassmann expansion\n\nSUMMARY\nPASS=16 FAIL=1\nM1-M4 assembly: free U=1 corner-transfer registration-equivalence holds on the supplied surface.\nFirewall: no physical species reading selected; r not fixed; occupancy binary untouched.\nNamed open: the interacting/gauge extension remains open and is not supplied here.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104321Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=16 FAIL=1' vs cache 'PASS=17 FAIL=0'"
+  ]
+ }
+}

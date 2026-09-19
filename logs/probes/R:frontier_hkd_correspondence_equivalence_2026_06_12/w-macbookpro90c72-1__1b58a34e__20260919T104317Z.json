@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hkd_correspondence_equivalence_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py",
+ "seed": 14597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104317Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fbbd9d9ac177fac712d36fc092c84242b813c7118257b7846dd692c5f5486bab",
+ "stdout_tail": " S1 zero misaligned survivor entries iff all K-chart periods are even on the grid :: K-periods=(L/2,L,L/2), grid=(8,10,12,14,16,18)\nPASS: S1 protected cases have no nonzero even-d2 survivor entries :: L8=0, L12=0, L16=0\nPASS: S1 unprotected cases have nonzero misaligned even-d2 survivor entries :: L10=5700, L14=43512, L18=197640\nS2 mechanism witness\n  L=10 surviving misaligned entry: left=(0, 2, 0), right=(0, 1, 4), minimal_delta=(0, -1, -1), d2_parity=0, chart_pair_parity=1, magnitude=7.4832497863019298e-01\nPASS: S2 L=10 has a nonzero surviving misaligned entry witness :: left=(0, 2, 0), right=(0, 1, 4), minimal_delta=(0, -1, -1), d2_parity=0, chart_pair_parity=1, magnitude=7.4832497863019298e-01, magnitude_min=1.0e-06\nPASS: S2 L=16 out-of-sample predicted hold has zero misaligned survivors and protected H_kd_after :: misaligned=0, H_kd_after=0.0000000000000000e+00, protection_tol=1.0e-14\nPASS: S2 memory estimate remains below the fixed 2 GB ceiling :: estimated_peak_dense_bytes=85030560, ceiling=2000000000\nS3 source hygiene\nPASS: S3 canonical source metadata is present :: claim_type bounded_theorem; independent audit authority; no-promotion statement\nPASS: S3 runner and cache markdown links are present :: primary runner/cache links seed review discoverability\nPASS: S3 stale predecessor-authority rhetoric is absent :: no sibling branch is cited as settled authority\nPASS: S3 minimal-axiom dependency link is present :: one scope-reference dependency link\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104319Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_hkd_correspondence_equivalence_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

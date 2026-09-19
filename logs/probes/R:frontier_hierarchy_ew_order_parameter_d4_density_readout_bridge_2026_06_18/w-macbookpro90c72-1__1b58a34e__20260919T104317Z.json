@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
+ "seed": 14597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104317Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1a27120365a0179e458f227aa5d36da226bf23393d748b08b800df134105e480",
+ "stdout_tail": " both MISS the same fixed density by a wide margin\n         (A_L/A_ref)^(1/4): residual=0.3061; (A_ref/A_L)^(1/16): residual=0.1053\n\nS3 formal scalar-readout compatibility\n  [PASS] formal rho readout stays exactly one at every coupling pair and every v\n         4x7 cases; sample g=3, gY=4: rho_tree=1\n  [PASS] formal readout ratios carry the same fourth power: (MW2_L/MW2_ref)^2 = A_ref/A_L\n         (MW2_L/MW2_ref)^2=16/81, (MZ2_L/MZ2_ref)^2=16/81, A_ref/A_L=16/81\n  [PASS] that ratio is independent of (g, gY): no coupling-valued prefactor enters\n         identical fourth power 16/81 at all 4 coupling pairs\n\nS4 source firewalls\n  [PASS] bridge carries bounded-support status fields and no retained claim\n  [PASS] bridge markdown-links load-bearing EW and D4 readout authorities\n  [PASS] bridge explicitly leaves endpoint selection and absolute scale open\n  [PASS] parent note cites the bridge while preserving the residual\n\nS5 verification-total consistency\n  [PASS] note Scorecard, note Expected fence, and this runner's check count all agree\n         declared S1=5,S2=4,S3=3,S4=4,S5=1 total=17 | actual S1=5,S2=4,S3=3,S4=4,S5=1 total=17 | note TOTAL lines=2\n\n==============================================================================\nper-section: S1=5  S2=4  S3=3  S4=4  S5=1\nTOTAL: PASS=17 FAIL=0\nVERDICT: bounded support passes for the EW order-parameter D=4 density readout bridge. Endpoint selection, absolute scale, and hierarchy-to-physical-Higgs-density identification remain open.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104317Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

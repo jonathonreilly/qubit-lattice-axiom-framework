@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_index_pairing_not_forced_kinetic_order_selector_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_index_pairing_not_forced_kinetic_order_selector_2026_06_08.py",
+ "seed": 14601,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1b58a34e",
+ "started_utc": "20260919T104321Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a931733e201423b5b9b8df7f5b1e470e3383d5213681b5cb9a35512cb0502e1f",
+ "stdout_tail": "f the Qubit lattice is ever instantiated\n  per_mode: momenta are the resolved label but they are sampled rather than swept - one drawn p carries the orbit sums and the vertex commutator, a second drawn p carries the Laplacian spectator test, and a further two thousand drawn momenta carry the band comparison, all from one seeded generator, so uniformity over the Brillouin zone is inferred from those draws and not from any systematic grid\n  per_block: the representation-theoretic split is where this runner does real work - the conjugation action on the one-site M_2(C) algebra is decomposed into its scalar and vector pieces and the vector-irrep multiplicity is obtained from the exact 24-term class sum for each of the three candidate two-dimensional lifts, returning exactly 1 for the spin lift and exactly 0 for the trivial and E lifts, which is what makes the spin lift unique\n  lattice_wide: checked and not executed - the widest objects the file ever forms are the 24-element proper rotation group and the four cubic shells it generates, both finite symmetry sets rather than extended systems, so no site count, volume or limit exists; the Laplacian's boundedness is correspondingly a symbol-level statement about a sum of three cosines lying in the exact interval from -3 to +3\n\n============================================================================================\nTOTAL: 11 PASS / 0 FAIL\n============================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T104321Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

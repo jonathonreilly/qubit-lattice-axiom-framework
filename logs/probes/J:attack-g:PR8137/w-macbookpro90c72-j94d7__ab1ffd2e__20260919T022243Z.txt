@@ -1,0 +1,32 @@
+two-state p+=0 p-=0: K2diff=0 (p+-p-)^2=0
+two-state p+=0 p-=1/5: K2diff=1/25 (p+-p-)^2=1/25
+two-state p+=0 p-=1/2: K2diff=1/4 (p+-p-)^2=1/4
+two-state p+=0 p-=4/5: K2diff=16/25 (p+-p-)^2=16/25
+two-state p+=0 p-=1: K2diff=1 (p+-p-)^2=1
+two-state p+=1/5 p-=0: K2diff=1/25 (p+-p-)^2=1/25
+two-state p+=1/5 p-=1/5: K2diff=0 (p+-p-)^2=0
+two-state p+=1/5 p-=1/2: K2diff=9/100 (p+-p-)^2=9/100
+two-state p+=1/5 p-=4/5: K2diff=9/25 (p+-p-)^2=9/25
+two-state p+=1/5 p-=1: K2diff=16/25 (p+-p-)^2=16/25
+two-state p+=1/2 p-=0: K2diff=1/4 (p+-p-)^2=1/4
+two-state p+=1/2 p-=1/5: K2diff=9/100 (p+-p-)^2=9/100
+two-state p+=1/2 p-=1/2: K2diff=0 (p+-p-)^2=0
+two-state p+=1/2 p-=4/5: K2diff=9/100 (p+-p-)^2=9/100
+two-state p+=1/2 p-=1: K2diff=1/4 (p+-p-)^2=1/4
+two-state p+=4/5 p-=0: K2diff=16/25 (p+-p-)^2=16/25
+two-state p+=4/5 p-=1/5: K2diff=9/25 (p+-p-)^2=9/25
+two-state p+=4/5 p-=1/2: K2diff=9/100 (p+-p-)^2=9/100
+two-state p+=4/5 p-=4/5: K2diff=0 (p+-p-)^2=0
+two-state p+=4/5 p-=1: K2diff=1/25 (p+-p-)^2=1/25
+two-state p+=1 p-=0: K2diff=1 (p+-p-)^2=1
+two-state p+=1 p-=1/5: K2diff=16/25 (p+-p-)^2=16/25
+two-state p+=1 p-=1/2: K2diff=1/4 (p+-p-)^2=1/4
+two-state p+=1 p-=4/5: K2diff=1/25 (p+-p-)^2=1/25
+two-state p+=1 p-=1: K2diff=0 (p+-p-)^2=0
+Ising (4/5,1/5) K2(+|+)= 17/25 stated 17/25
+P(L=R=+)=17/50 stated 17/50
+six-axis a=1/6 b=1/6 c=1/6: K2same-K2opp=0 (a-b)^2=0
+six-axis a=1/2 b=0 c=1/8: K2same-K2opp=1/4 (a-b)^2=1/4
+quadratic remainder at c=1/12: lhs=1/12 rhs=1/12
+poly identity remainder 0
+SUMMARY: pattern has no purchase on this note - two-state K^2 difference is (pplus-pminus)^2 on a 5x5 grid, Ising 17/25 and 17/50 hold, six-axis same-minus-opposite is (a-b)^2, and (6c-1)^2/3 is the Haar-square remainder

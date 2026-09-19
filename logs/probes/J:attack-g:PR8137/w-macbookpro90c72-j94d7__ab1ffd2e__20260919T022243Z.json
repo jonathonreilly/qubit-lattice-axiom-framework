@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8137",
+ "type": "judgment",
+ "lane": "possibility-symmetric-order-dependence-2",
+ "worker": "w-macbookpro90c72-j94d7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8137/haar_square_identities.py",
+ "seed": 84563,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab1ffd2e",
+ "started_utc": "20260919T022243Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - two-state K^2 difference is (pplus-pminus)^2 on a 5x5 grid, Ising 17/25 and 17/50 hold, six-axis same-minus-opposite is (a-b)^2, and (6c-1)^2/3 is the Haar-square remainder"
+ },
+ "review": "Haar-square identities (pplus-pminus)^2, Ising 17/25, six-axis (a-b)^2 and (6c-1)^2/3 all hold; pattern has no purchase",
+ "what": "PR #8137 ([physics-loop] possibility-symmetric-order-dependence bounde): attack POSSIBILITY_SYMMETRIC_SEQUENTIAL_FORMATION_THAT_VARIES_HAS_ORDER_DEPENDENT_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/possibility-symmetric-order-dependence-20260915; git show origin/physics-loop/possibility-symmetric-order-dependence-20260915:<note>. Create probes/work/pr8137/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8137/<script>.py\"",
+ "stdout_sha256": "4397151e267c56ab18ee727d5060b9100662766ab4111363d09f48b5b4bc5f64",
+ "stdout_tail": "p+=0 p-=1: K2diff=1 (p+-p-)^2=1\ntwo-state p+=1/5 p-=0: K2diff=1/25 (p+-p-)^2=1/25\ntwo-state p+=1/5 p-=1/5: K2diff=0 (p+-p-)^2=0\ntwo-state p+=1/5 p-=1/2: K2diff=9/100 (p+-p-)^2=9/100\ntwo-state p+=1/5 p-=4/5: K2diff=9/25 (p+-p-)^2=9/25\ntwo-state p+=1/5 p-=1: K2diff=16/25 (p+-p-)^2=16/25\ntwo-state p+=1/2 p-=0: K2diff=1/4 (p+-p-)^2=1/4\ntwo-state p+=1/2 p-=1/5: K2diff=9/100 (p+-p-)^2=9/100\ntwo-state p+=1/2 p-=1/2: K2diff=0 (p+-p-)^2=0\ntwo-state p+=1/2 p-=4/5: K2diff=9/100 (p+-p-)^2=9/100\ntwo-state p+=1/2 p-=1: K2diff=1/4 (p+-p-)^2=1/4\ntwo-state p+=4/5 p-=0: K2diff=16/25 (p+-p-)^2=16/25\ntwo-state p+=4/5 p-=1/5: K2diff=9/25 (p+-p-)^2=9/25\ntwo-state p+=4/5 p-=1/2: K2diff=9/100 (p+-p-)^2=9/100\ntwo-state p+=4/5 p-=4/5: K2diff=0 (p+-p-)^2=0\ntwo-state p+=4/5 p-=1: K2diff=1/25 (p+-p-)^2=1/25\ntwo-state p+=1 p-=0: K2diff=1 (p+-p-)^2=1\ntwo-state p+=1 p-=1/5: K2diff=16/25 (p+-p-)^2=16/25\ntwo-state p+=1 p-=1/2: K2diff=1/4 (p+-p-)^2=1/4\ntwo-state p+=1 p-=4/5: K2diff=1/25 (p+-p-)^2=1/25\ntwo-state p+=1 p-=1: K2diff=0 (p+-p-)^2=0\nIsing (4/5,1/5) K2(+|+)= 17/25 stated 17/25\nP(L=R=+)=17/50 stated 17/50\nsix-axis a=1/6 b=1/6 c=1/6: K2same-K2opp=0 (a-b)^2=0\nsix-axis a=1/2 b=0 c=1/8: K2same-K2opp=1/4 (a-b)^2=1/4\nquadratic remainder at c=1/12: lhs=1/12 rhs=1/12\npoly identity remainder 0\nSUMMARY: pattern has no purchase on this note - two-state K^2 difference is (pplus-pminus)^2 on a 5x5 grid, Ising 17/25 and 17/50 hold, six-axis same-minus-opposite is (a-b)^2, and (6c-1)^2/3 is the Haar-square remainder\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j94d7",
+  "at_utc": "20260919T022244Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

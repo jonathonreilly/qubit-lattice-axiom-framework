@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8031",
+ "type": "judgment",
+ "lane": "finite-transporter-block41-20260907",
+ "worker": "w-macbookpro90c72-j3fd0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8031/falsifier_pw_dim_fusion.py",
+ "seed": 92164,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "18786b73",
+ "started_utc": "20260919T042924Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier (PW dim and fusion) did not fire \u2014 R=1 carrier 19, Weyl dim integer, and (1,0) fusion of p+q<=R-1 stays in p+q<=R for R=1..15"
+ },
+ "review": "falsifier did not fire: R=1 PW carrier is 19, Weyl dim is integer, and (1,0) fusion of p+q<=R-1 stays inside p+q<=R for R=1..15",
+ "what": "PR #8031 ([physics-loop] finite-transporter block41 conditional-suppor): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/finite-transporter-block41-20260907; git show origin/codex/finite-transporter-block41-20260907:<note>. Create probes/work/pr8031/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8031/<script>.py\"",
+ "stdout_sha256": "827d2fff040a3de7584355172861b0111c267a5c0fe4799c9e2f7a10116bd928",
+ "stdout_tail": "R=1 dimH=19 (stated 19)\nR=0: n_irreps=1 dimH=1\nR=1: n_irreps=3 dimH=19\nR=2: n_irreps=6 dimH=155\nR=3: n_irreps=10 dimH=805\nR=4: n_irreps=15 dimH=3136\nR=5: n_irreps=21 dimH=9996\nR=6: n_irreps=28 dimH=27468\nR=7: n_irreps=36 dimH=67320\nR=8: n_irreps=45 dimH=150645\nR=9: n_irreps=55 dimH=313027\nR=10: n_irreps=66 dimH=611611\nR=11: n_irreps=78 dimH=1134497\nR=12: n_irreps=91 dimH=2012920\nR=13: n_irreps=105 dimH=3436720\nR=14: n_irreps=120 dimH=5673648\nR=15: n_irreps=136 dimH=9093096\nSUMMARY: falsifier (PW dim and fusion) did not fire \u2014 R=1 carrier 19, Weyl dim integer, and (1,0) fusion of p+q<=R-1 stays in p+q<=R for R=1..15\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3fd0",
+  "at_utc": "20260919T042924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

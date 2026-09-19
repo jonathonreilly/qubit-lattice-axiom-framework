@@ -1,0 +1,18 @@
+R=1 dimH=19 (stated 19)
+R=0: n_irreps=1 dimH=1
+R=1: n_irreps=3 dimH=19
+R=2: n_irreps=6 dimH=155
+R=3: n_irreps=10 dimH=805
+R=4: n_irreps=15 dimH=3136
+R=5: n_irreps=21 dimH=9996
+R=6: n_irreps=28 dimH=27468
+R=7: n_irreps=36 dimH=67320
+R=8: n_irreps=45 dimH=150645
+R=9: n_irreps=55 dimH=313027
+R=10: n_irreps=66 dimH=611611
+R=11: n_irreps=78 dimH=1134497
+R=12: n_irreps=91 dimH=2012920
+R=13: n_irreps=105 dimH=3436720
+R=14: n_irreps=120 dimH=5673648
+R=15: n_irreps=136 dimH=9093096
+SUMMARY: falsifier (PW dim and fusion) did not fire — R=1 carrier 19, Weyl dim integer, and (1,0) fusion of p+q<=R-1 stays in p+q<=R for R=1..15

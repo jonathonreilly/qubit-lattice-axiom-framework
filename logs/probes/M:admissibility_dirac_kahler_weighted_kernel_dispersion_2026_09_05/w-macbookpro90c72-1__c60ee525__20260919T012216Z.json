@@ -20,13 +20,20 @@
  "stdout_tail": "laim_assembly_selected\nTOTAL: PASS=35 FAIL=1\n== claim_readings_licensed\nTOTAL: PASS=35 FAIL=1\n== break_lane_kernel_fidelity\nTOTAL: PASS=35 FAIL=1\n== break_three_direction_shadow\nTOTAL: PASS=35 FAIL=1\n== break_assembler_fidelity\nTOTAL: PASS=35 FAIL=1\n== break_cell_form_reconciliation\nTOTAL: PASS=35 FAIL=1\n== break_flat_cell_identity\nTOTAL: PASS=35 FAIL=1\n== break_flat_symbol_identity\nTOTAL: PASS=35 FAIL=1\n== break_flat_bench_multiset\nTOTAL: PASS=35 FAIL=1\n== break_bloch_bench_agreement\nTOTAL: PASS=35 FAIL=1\n== break_witness_spectra\nTOTAL: PASS=35 FAIL=1\n== break_boundary_edge_case\nTOTAL: PASS=35 FAIL=1\n== break_onsite_cone_lemma\nTOTAL: PASS=35 FAIL=1\n== break_overlap_cone_formula\nTOTAL: PASS=35 FAIL=1\n== break_two_dim_branches\nTOTAL: PASS=35 FAIL=1\n== break_three_dim_branch_identification\nTOTAL: PASS=35 FAIL=1\n== claim_principal_part_scalar\nTOTAL: PASS=35 FAIL=1\n== claim_cone_is_metric_cone\nTOTAL: PASS=34 FAIL=2\n== break_coincidence_census\nTOTAL: PASS=35 FAIL=1\n== break_coincidence_locus\nTOTAL: PASS=35 FAIL=1\n== break_shear_registration\nTOTAL: PASS=35 FAIL=1\n== claim_volume_registration\nTOTAL: PASS=35 FAIL=1\n== drop_tension_record\nTOTAL: PASS=35 FAIL=1\n== break_scout_grade_fence\nTOTAL: PASS=35 FAIL=1\n== claim_assembly_decided\nTOTAL: PASS=35 FAIL=1\n== claim_hodge_reading_selected\nTOTAL: PASS=35 FAIL=1\n== break_instance_scope\nTOTAL: PASS=35 FAIL=1\n== drop_n5_fence\nTOTAL: PASS=35 FAIL=1\n== break_nsimplify_absence\nTOTAL: PASS=35 FAIL=1\n== break_float_absence\nTOTAL: PASS=35 FAIL=1\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T020832Z",
-  "result": "FAIL",
+  "at_utc": "20260919T021042Z",
+  "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c60ee525 differs from the current HEAD e7b01ad0 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
-   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
-   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+   "ok: parse field 'expected' not found (log written under an earlier task definition; triaged)",
+   "ok: parse field 'observed' not found (log written under an earlier task definition; triaged)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "check_log's parse fields 'expected'/'observed' (mutation_family_expected:/mutation_family_observed:) matched nothing because this runner never prints mutation_family_* lines (task-definition mismatch, #8294); all 36 declared mutations end with a TOTAL line with FAIL=1/2 (none survives); not a failure.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021042Z"
  }
 }

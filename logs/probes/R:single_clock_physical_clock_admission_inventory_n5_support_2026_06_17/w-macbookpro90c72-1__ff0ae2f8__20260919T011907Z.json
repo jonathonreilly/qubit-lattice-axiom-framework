@@ -23,14 +23,21 @@
  "stdout_tail": "not admitted -- supplied_as_physical_transfer: anchor not found in source\nPASS: counterfeit rejector: missing packet-consumption criterion is not admitted -- criteria evidence does not cover exactly the four admission criteria\nPASS: counterfeit rejector: evidence outside the enumerated surface is not admitted -- supplied_as_physical_transfer: evidence path outside the enumerated packet surface\nPASS: counterfeit rejector: candidate identity/denominator not named by packet evidence is not admitted -- supplied_as_physical_transfer: anchor not found in source\nPASS: parent grammar: every consumed T_hat^2 transfer/step pair normalizes to (T_hat^2, 2 a_tau) -- pairs=['T_hat^2,2a_tau']\nFAIL: RP2 supplies the two-step transfer\nPASS: RP2 supplies positivity\nFAIL: RP2 excludes the single-step object as the physical positive transfer\nPASS: SC2 supplies the blocked time denominator\nPASS: SC2 supplies corrected log normalization\nPASS: Stone note is transfer-relative\nPASS: Stone uniqueness does not add a transfer\nPASS: post-record rates require supplied clock map\nPASS: post-record layer does not derive a clock\nPASS: mathematical comparator T_A x I is positive\nPASS: mathematical comparator I x T_B is positive\nPASS: mathematical comparator transfers commute -- resid=0.00e+00\nPASS: factor comparator tangent space is two-dimensional -- rank=2\n\nSUMMARY: PASS=47 FAIL=7\nADMITTED_PHYSICAL_CLOCK_TRANSFERS=0\nB_AXIS_DERIVED=FALSE\nMATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE\nAUDIT_LEDGER_WRITTEN=FALSE\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T011908Z",
+  "at_utc": "20260919T021042Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ff0ae2f8 differs from the current HEAD e7b01ad0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=47 FAIL=7' vs cache 'SUMMARY: PASS=54 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, text-guard narrowing by two upstream edits after the runner (a483389e67, 2026-07-19): (1) the RP two-step note lost the anchors '2-step blocked transfer matrix' and 'single-step transfer operator is NOT positive' at 06f5f7dcf3 (2026-07-28), so the supplied_as_physical_transfer evidence no longer resolves and the admission inventory admits 0 clocks instead of T_hat^2 with 2 a_tau (5 FAILs; same narrowing as #8231); (2) the minimal-axioms memo lost the exact dynamics-exclusion sentence and 'Probability, dynamics, readout contexts, and physical observable bridges remain downstream.' at 82f7b0754a (2026-08-05; as #8252) (2 FAILs).",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T021042Z"
  }
 }

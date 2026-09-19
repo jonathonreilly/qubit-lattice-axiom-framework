@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_RECORD_FACE_LIKELIHOOD_SPATIAL_GAUGE_AND_PHOTON_GERM_BOUNDED_THEOREM_NOTE_2026_09_03",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j8124",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_RECORD_FACE_LIKELIHOOD_SPATIAL_GAUGE_/face_hessian_real_space_beyond.py",
+ "seed": 98661,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ea93557f",
+ "started_utc": "20260919T061741Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier 'the orientation-complete Hessian lacks exactly two positive transverse directions at nonzero momentum' does not fire beyond the note's sizes: on L = 6 and 8 the real-space face-incidence Hessian B^T B has spectrum {0 x (L^3+2)} u {E(k) x 2} exactly (to 1e-8), and on L = 6 every one of the 215 nonzero momentum blocks has exactly two positive eigenvalues, both E(k) (so rotor frequencies sqrt(alpha kappa E(k)) on both), with the gauge null vector; dropping or reweighting one orientation breaks this as the note's controls say"
+ },
+ "review": "Transverse-Hessian falsifier checked beyond the note's L = 3,4,5,7 with real-space machinery: the face-link incidence Hessian B^T B on L = 6 and 8 has spectrum {0 x (L^3+2)} u {E(k) x 2} to 1e-13, and all 215 nonzero momentum blocks on L = 6 have exactly two positive eigenvalues equal to E(k) with the gauge null vector q; dropping the (0,1) faces leaves 35 momenta with one positive direction and weighting them 2 splits 210, as the note's controls say; no fire.",
+ "what": "Note on main: docs/U1_RECORD_FACE_LIKELIHOOD_SPATIAL_GAUGE_AND_PHOTON_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_RECORD_FACE_LIKELIHOOD_SPATIAL_GAUGE_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_RECORD_FACE_LIKELIHOOD_SPATIAL_GAUGE_/<script>.py\"",
+ "stdout_sha256": "98e30842e300c28c1035ef85c2ce45e6642d664a521f027fe11e91632c4de68b",
+ "stdout_tail": "1. L=6: real-space B^T B (648 links) spectrum vs {0 x (L^3+2)} u {E(k) x 2}: max deviation 3.73e-14; zero eigenvalues 218 (predicted 218)\n1. L=8: real-space B^T B (1536 links) spectrum vs {0 x (L^3+2)} u {E(k) x 2}: max deviation 6.39e-14; zero eigenvalues 514 (predicted 514)\n2. L=6 momentum blocks from the real-space matrix: 215 of 215 nonzero momenta have exactly two positive directions (0 have one); max |transverse eigenvalue - E(k)| = 7.11e-15; max |block * q|/|q| (gauge null vector) = 1.89e-15\n3. controls on L=6: (0,1) faces dropped -> 35 momenta with one positive direction, 180 with two; (0,1) faces weighted 2 -> 210 momenta with split transverse eigenvalues\nSUMMARY: falsifier 'the orientation-complete Hessian lacks exactly two positive transverse directions at nonzero momentum' does not fire beyond the note's sizes: on L = 6 and 8 the real-space face-incidence Hessian B^T B has spectrum {0 x (L^3+2)} u {E(k) x 2} exactly (to 1e-8), and on L = 6 every one of the 215 nonzero momentum blocks has exactly two positive eigenvalues, both E(k) (so rotor frequencies sqrt(alpha kappa E(k)) on both), with the gauge null vector; dropping or reweighting one orientation breaks this as the note's controls say\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8124",
+  "at_utc": "20260919T061742Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

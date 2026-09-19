@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j068e",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_A/walk_vs_bessel_rows_and_propagation.py",
+ "seed": 3220,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4b6be2fd",
+ "started_utc": "20260919T073340Z",
+ "elapsed_s": 326.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the walk-count route and an mpmath Bessel-determinant evaluation reproduce the note's exact rows and all seven falsifier-table values to 1e-9 relative, the determinant-propagation bound |E_n| <= Had_n Theta_R holds on all 26 window modes (max ratio 1.2e-04; Had_n/|det G_n| 326..466), and the active-grid witness continues beyond the note: sqrt(beta)*max diff = 9.4330e-03, 6.6702e-03, 4.7105e-03 at beta = 384, 768, 1536 (successive ratios 0.704, 0.701, 0.705, 0.707, 0.706, i.e. about 2^(-1/2) per doubling)"
+ },
+ "review": "Output matches the task (the falsifier table, witness rows and determinant-propagation step checked with walk-count Wilson coefficients and a 40-digit mpmath Bessel-determinant sum, disjoint from the runner's scaled scipy Bessel route): the three exact rows and all seven falsifier-table values agree with the note to better than 1e-9 relative, the bound |E_n| <= Had_n Theta_R(t) holds on all 26 window modes at beta = 96 with ratio 1e-4 (Had_n/|det G_n| 326..466), and beyond the note the active-grid witness is 9.433e-3, 6.670e-3, 4.710e-3 at beta = 384, 768, 1536, falling by about 2^(-1/2) per doubling; no falsifier fires.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_A/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_A/<script>.py\"",
+ "stdout_sha256": "6a5234e04df035a20d1a64f92ec7f48609b7632c0a0e4cac04ebb6b747f4874a",
+ "stdout_tail": "tive 7.3e-10); wrong determinant size 2x2: 0.005101635871 (note 0.005101635871, relative 4.2e-11); wrong highest-weight index lambda = (p,q,0): 0.030362625798 (note 0.030362625798, relative 2.4e-12)\n3. determinant propagation at beta = 96 (t = 32), lambda = (11, 5, 0), 26 modes with |k| <= 4 sqrt(t): P_R = 6.792, C_R (window max of t^2 |rho|) = 1.994, Theta_R = 1.5329e-01; max |E_n| / (Had_n Theta_R) = 1.15e-04 (bound holds: True); Had_n / |det G_n| over modes: 326 .. 466\n4. active-grid witness sqrt(beta) * max |beta^(-3/2)(r - saddle)|, A = 1.25: beta=48: cap 8, max at (5, 5), 2.710005629592e-02 (note (5, 5), 2.710005629592e-02); beta=96: cap 12, max at (7, 7), 1.907301888918e-02 (note (7, 7), 1.907301888919e-02); beta=192: cap 17, max at (10, 11), 1.337437050449e-02 (note (10, 11), 1.337437050442e-02); beta=384: cap 24, max at (15, 15), 9.432994188260e-03; beta=768: cap 34, max at (22, 22), 6.670152398031e-03; beta=1536: cap 48, max at (31, 32), 4.710462700300e-03\nSUMMARY: the walk-count route and an mpmath Bessel-determinant evaluation reproduce the note's exact rows and all seven falsifier-table values to 1e-9 relative, the determinant-propagation bound |E_n| <= Had_n Theta_R holds on all 26 window modes (max ratio 1.2e-04; Had_n/|det G_n| 326..466), and the active-grid witness continues beyond the note: sqrt(beta)*max diff = 9.4330e-03, 6.6702e-03, 4.7105e-03 at beta = 384, 768, 1536 (successive ratios 0.704, 0.701, 0.705, 0.707, 0.706, i.e. about 2^(-1/2) per doubling)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j068e",
+  "at_utc": "20260919T073917Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

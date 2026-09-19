@@ -1,0 +1,6 @@
+PASS: A1 h(u)=4 cosh u - 4 - u^2 - u sinh u vanishes to order 3 at 0; h'''' = -u sinh u <= 0, so A(kappa)/kappa is strictly decreasing on (0, inf)
+PASS: A2 A(k)=k/3 - k^3/45 + O(k^5); MF linearization 1=4 beta/3 gives beta_c=3/4
+PASS: B1 linear kernel 1/(k^T M k) obeys 4/|k|^2 <= 1/(k^T M k) <= 16/|k|^2
+TOTAL: PASS=3 FAIL=0
+HIT: new exact partial: A(kappa)/kappa is strictly decreasing (h''''=-u sinh u, first four derivatives of h vanish at 0); mean-field sphere threshold on 3+1 is beta_c=3/4; linearized equal-level kernel is sandwiched 4 sigma^2/|k|^2 <= S_lin <= 16 sigma^2/|k|^2. Chessboard RP does not apply to the causal formation kernel. Sphere LRO not proved
+SUMMARY: PARTIAL MF threshold beta=3/4 via A(kappa)/kappa decreasing; linear IR envelope 4..16; chessboard route to LRO fails (causal kernels are not Gibbs-RP); nonlinear LRO not claimed

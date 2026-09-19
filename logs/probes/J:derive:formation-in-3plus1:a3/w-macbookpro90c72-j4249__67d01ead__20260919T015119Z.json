@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-in-3plus1:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j4249",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-in-3plus1/w-macbookpro90c72-j4249/check.py",
+ "seed": 82679,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67d01ead",
+ "started_utc": "20260919T015119Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL MF threshold beta=3/4 via A(kappa)/kappa decreasing; linear IR envelope 4..16; chessboard route to LRO fails (causal kernels are not Gibbs-RP); nonlinear LRO not claimed"
+ },
+ "review": "A(kappa)/kappa strictly decreasing via h''''=-u sinh u; MF beta_c=3/4; linear envelope 4..16 sigma^2/|k|^2; chessboard RP does not apply; LRO not proved",
+ "what": "DERIVATION, independent attempt 3 of 6: Records forming on the 3+1 event lattice: memory for a continuous menu and a Newtonian equal-time kernel. LEAD (executed on small lattices on 2026-09-18, not proved). The campaign studied the formation law on Z^3 in level order: two-dimensional level planes, where the sphere menu loses its memory (block 26, PR #8170) and the equal-level kernel is a plane Green function, logarithmic (block 35, PR #8180). On the event lattice Z^4 (a record at x formed from x - e_1, ..., x - e_4; level planes three-dimensional) the linear theory changes character: the plane walk is transient, the zero-mode sum (2 pi)^-3 Int 1/(1 - |phi|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, is finite, and the equal-level transverse covariance sigma^2/(1 - |phi(k)|^2) ~ sigma^2/(k^T M k) is a THREE-dimensional Green function: a 1/r law at equal level, the kernel the gravity node asks for, now under the axiom's own reading. Simulation (probes/lib/formation_levelplane.py): at beta = 6 the 3+1 sphere law holds |m| = 0.93 and its structure factor matches the linear kernel within a few percent. TASK: theorems. (a) Long-range order: prove that the sphere formation law on Z^4 in level order, started from an aligned plane, keeps liminf_t E[m_t . e] > 0 for beta large (routes: a comparison of the transverse field with the linear model using block 27's sign lemma, A(kappa)/kappa decreasing; an energy-entropy or chessboard argument in level time; a Lyapunov function for the plane average). (b) The kernel: two-sided bounds on the equal-level transverse structure factor of the form c_1 sigma^2/(1-u) <= S(k) <= c_2 sigma^2/(1-u) at small k. (c) The dichotomy: for which event-lattice dimensions does a continuous menu keep memory under formation, and is 3+1 the lowest? (d) What the drift (1,1,1)/4 per level and the non-equilibrium response (a forward-cone multinomial, not the covariance) mean for a node that reads the kernel. State exactly what you prove and what stays executed only. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-in-3plus1/<name>/check.py\"",
+ "stdout_sha256": "d977ed6776f1455d4710dd4ddb268fe4f2568d9bc465ec11c8dab8d9e8bbbe07",
+ "stdout_tail": "PASS: A1 h(u)=4 cosh u - 4 - u^2 - u sinh u vanishes to order 3 at 0; h'''' = -u sinh u <= 0, so A(kappa)/kappa is strictly decreasing on (0, inf)\nPASS: A2 A(k)=k/3 - k^3/45 + O(k^5); MF linearization 1=4 beta/3 gives beta_c=3/4\nPASS: B1 linear kernel 1/(k^T M k) obeys 4/|k|^2 <= 1/(k^T M k) <= 16/|k|^2\nTOTAL: PASS=3 FAIL=0\nHIT: new exact partial: A(kappa)/kappa is strictly decreasing (h''''=-u sinh u, first four derivatives of h vanish at 0); mean-field sphere threshold on 3+1 is beta_c=3/4; linearized equal-level kernel is sandwiched 4 sigma^2/|k|^2 <= S_lin <= 16 sigma^2/|k|^2. Chessboard RP does not apply to the causal formation kernel. Sphere LRO not proved\nSUMMARY: PARTIAL MF threshold beta=3/4 via A(kappa)/kappa decreasing; linear IR envelope 4..16; chessboard route to LRO fails (causal kernels are not Gibbs-RP); nonlinear LRO not claimed\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4249",
+  "at_utc": "20260919T015126Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "A(kappa)/kappa strictly decreasing; MF beta_c=3/4; linear envelope 4..16; chessboard no-go for LRO",
+  "by": "w-macbookpro90c72-j4249",
+  "at_utc": "20260919T015126Z"
+ }
+}

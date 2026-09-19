@@ -1,0 +1,9 @@
+CHECKED E1.6^4
+E2.P_static(all +x) 27/6928 0.003897228637413395
+E2.P_sync(all +x) 28561/26998416 0.0010578768769249278
+CHECKED E2.differ
+CHECKED E2.both-pos
+CHECKED E3.C4-pairing-rotations
+CHECKS ok=4 fail=0
+HIT: PARTIAL: on C4 at (3,1,2), exact 6^4 enumeration: P_static(all +x)=27/6928, P_sync(all +x)=28561/26998416, distinct; 6-neighbour pairing holds for all 1296 rotations. Async=static still (not re-enumerated; a3/a4). Transfer of uniqueness/kernel only to async. Route: all-+x masses, not full TV or 36x36 matrices.
+SUMMARY: PARTIAL C4 all-+x masses static 27/6928 vs sync 28561/26998416 at (3,1,2); pairing exact; laws distinct

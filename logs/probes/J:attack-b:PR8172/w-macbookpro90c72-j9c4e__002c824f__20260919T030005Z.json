@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8172",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block28-map-of",
+ "worker": "w-macbookpro90c72-j9c4e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8172/same_test_3c_threshold.py",
+ "seed": 86805,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "002c824f",
+ "started_utc": "20260919T030005Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the same TV-max test gives 3c(37/10)=406962630/413162167<1 and 3c(19/5)=871815/862244>1, so the uniqueness criterion separates those two couplings as written"
+ },
+ "review": "Same TV-max test separates p=37/10 (3c<1) from p=19/5 (3c>1) with the stated exact fractions; not the known island-ratio HIT; pattern has no purchase",
+ "what": "PR #8172 ([physics-loop] admissibility-induced-law block28 \u2014 bounded_t): attack ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916; git show origin/physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916:<note>. Create probes/work/pr8172/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8172/<script>.py\"",
+ "stdout_sha256": "647f8eac552ae8addebb3920abee6fbc3855d64ddca022b7b81226efa83c0d7c",
+ "stdout_tail": "3c(37/10)=406962630/413162167 stated 406962630/413162167\n3c(19/5)=871815/862244 stated 871815/862244\nsame test 3c<1: p=37/10 -> True; p=19/5 -> True (3c>1 is True)\nSUMMARY: pattern has no purchase on this note: the same TV-max test gives 3c(37/10)=406962630/413162167<1 and 3c(19/5)=871815/862244>1, so the uniqueness criterion separates those two couplings as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9c4e",
+  "at_utc": "20260919T030005Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

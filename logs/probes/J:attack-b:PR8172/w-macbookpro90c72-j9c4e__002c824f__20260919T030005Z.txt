@@ -1,0 +1,4 @@
+3c(37/10)=406962630/413162167 stated 406962630/413162167
+3c(19/5)=871815/862244 stated 871815/862244
+same test 3c<1: p=37/10 -> True; p=19/5 -> True (3c>1 is True)
+SUMMARY: pattern has no purchase on this note: the same TV-max test gives 3c(37/10)=406962630/413162167<1 and 3c(19/5)=871815/862244>1, so the uniqueness criterion separates those two couplings as written

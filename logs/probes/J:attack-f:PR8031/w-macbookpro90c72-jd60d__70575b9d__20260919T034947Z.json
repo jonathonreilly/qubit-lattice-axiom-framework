@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8031",
+ "type": "judgment",
+ "lane": "finite-transporter-block41-20260907",
+ "worker": "w-macbookpro90c72-jd60d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8031/normalization_pw_dim.py",
+ "seed": 89787,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "70575b9d",
+ "started_utc": "20260919T034947Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (f) NORMALIZATION \u2014 no torus Fourier/2\u03c0; Weyl dim 1/2, d_(R,0)=(R+1)(R+2)/2 = dim(R,0), R=1 carrier 19, and conjugate (0,1) fusion all recompute exactly; attack does not fire"
+ },
+ "review": "pattern (f) does not fire: no torus Fourier/2pi; Weyl dim 1/2, d_(R,0)=dim(R,0), R=1 carrier 19 and conjugate fusion all recompute exactly",
+ "what": "PR #8031 ([physics-loop] finite-transporter block41 conditional-suppor): attack GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-transporter-block41-20260907; git show origin/codex/finite-transporter-block41-20260907:<note>. Create probes/work/pr8031/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8031/<script>.py\"",
+ "stdout_sha256": "d8999b823e063a42081e5868218088c3c598df8c327abe109de7b7a4489c0066",
+ "stdout_tail": "Weyl dim 1/2 exact for p,q=0..5\nR=1 carrier [(0, 0), (0, 1), (1, 0)] dimH=19 (stated 19)\nd_(0,0)=1 = dim(0,0); sqrt prefactor for unit Schur norm\nd_(1,0)=3 = dim(1,0); sqrt prefactor for unit Schur norm\nd_(2,0)=6 = dim(2,0); sqrt prefactor for unit Schur norm\nd_(3,0)=10 = dim(3,0); sqrt prefactor for unit Schur norm\nd_(4,0)=15 = dim(4,0); sqrt prefactor for unit Schur norm\nd_(5,0)=21 = dim(5,0); sqrt prefactor for unit Schur norm\nd_(6,0)=28 = dim(6,0); sqrt prefactor for unit Schur norm\nd_(7,0)=36 = dim(7,0); sqrt prefactor for unit Schur norm\nconjugate fusion of (0,1) keeps p+q<=R-1 inside p+q<=R for R=1..5\nSUMMARY: pattern (f) NORMALIZATION \u2014 no torus Fourier/2\u03c0; Weyl dim 1/2, d_(R,0)=(R+1)(R+2)/2 = dim(R,0), R=1 carrier 19, and conjugate (0,1) fusion all recompute exactly; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd60d",
+  "at_utc": "20260919T034947Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

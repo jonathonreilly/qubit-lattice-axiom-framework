@@ -1,0 +1,12 @@
+Weyl dim 1/2 exact for p,q=0..5
+R=1 carrier [(0, 0), (0, 1), (1, 0)] dimH=19 (stated 19)
+d_(0,0)=1 = dim(0,0); sqrt prefactor for unit Schur norm
+d_(1,0)=3 = dim(1,0); sqrt prefactor for unit Schur norm
+d_(2,0)=6 = dim(2,0); sqrt prefactor for unit Schur norm
+d_(3,0)=10 = dim(3,0); sqrt prefactor for unit Schur norm
+d_(4,0)=15 = dim(4,0); sqrt prefactor for unit Schur norm
+d_(5,0)=21 = dim(5,0); sqrt prefactor for unit Schur norm
+d_(6,0)=28 = dim(6,0); sqrt prefactor for unit Schur norm
+d_(7,0)=36 = dim(7,0); sqrt prefactor for unit Schur norm
+conjugate fusion of (0,1) keeps p+q<=R-1 inside p+q<=R for R=1..5
+SUMMARY: pattern (f) NORMALIZATION — no torus Fourier/2π; Weyl dim 1/2, d_(R,0)=(R+1)(R+2)/2 = dim(R,0), R=1 carrier 19, and conjugate (0,1) fusion all recompute exactly; attack does not fire

@@ -1,0 +1,32 @@
+{
+ "task": "J:note:KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026_06_10",
+ "type": "judgment",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-jd721",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BO/linear_equivariant_census_and_words.py",
+ "seed": 7248,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1cf8ab3f",
+ "started_utc": "20260919T084048Z",
+ "elapsed_s": 271.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifiers 2 and 3 do not fire: the untwisted permutation-equivariant licensed family, solved as one exact quadratic Laurent system from 800 starts, gives 764 unitaries and 0 dispersive, while the same census on the eta-twisted control finds 82 dispersive of 300; the eta-decorated per-axis shifts square to z_i^-1 I, anticommute pairwise, and all 9840 words through length 8 square to a monomial times I (exactly linear bands, no curvature, no dial)"
+ },
+ "review": "Output matches the task (falsifiers 2 and 3 implemented with group-averaged equivariant bases, one exact quadratic Laurent unitarity system without the runner's leaf split, and exact word enumeration): the untwisted permutation-equivariant licensed family gives 764 unitaries from 800 starts and none dispersive, while the identical census on the eta-twisted control finds 83 dispersive of 300 (so the census detects dispersion when present); the eta-decorated per-axis shifts square to z_i^-1 I and anticommute exactly, and all 9840 words through length 8 (beyond the note's six) square to a monomial times I; no falsifier fires.",
+ "what": "Note on main: docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BO/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BO/<script>.py\"",
+ "stdout_sha256": "c58d744b1be601bd40f7ae24220c057e550916f3ba4948f7aaa4cb6705348afe",
+ "stdout_tail": "1. linear (untwisted): group order 6, 4 on-site + 12 hop orbit sums; census over 19 exact Laurent coefficients from 800 starts: unitary 764, dispersive 0\n2. eta-twisted control: group order 6, 4 on-site + 12 hop orbit sums; census over 13 exact Laurent coefficients from 300 starts: unitary 300, dispersive 82 (supports [(4, 7, 9, 10, 12, 15), (5, 6, 8, 11, 13, 14)])\n3. factorized class: S_i^2 = z_i^-1 I exactly: True; pairwise anticommutation exactly: True; words of length 1..8: 9840, all with W^2 = +-(monomial) I: True\nSUMMARY: falsifiers 2 and 3 do not fire: the untwisted permutation-equivariant licensed family, solved as one exact quadratic Laurent system from 800 starts, gives 764 unitaries and 0 dispersive, while the same census on the eta-twisted control finds 82 dispersive of 300; the eta-decorated per-axis shifts square to z_i^-1 I, anticommute pairwise, and all 9840 words through length 8 square to a monomial times I (exactly linear bands, no curvature, no dial)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd721",
+  "at_utc": "20260919T084520Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

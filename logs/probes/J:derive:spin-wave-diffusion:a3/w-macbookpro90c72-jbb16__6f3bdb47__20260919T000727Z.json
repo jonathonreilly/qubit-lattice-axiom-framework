@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:spin-wave-diffusion:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jbb16",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/spin-wave-diffusion/w-macbookpro90c72-jbb16/check.py",
+ "seed": 76447,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6f3bdb47",
+ "started_utc": "20260919T000727Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL - aligned-plane (linearized zero-mode) diffusion ratio is exactly 1/A(3 beta)^2 -> 1; nonlinear enhancement is the Jacobian 1/|M|^2 at the reduced magnetization, remainder by V_L open"
+ },
+ "review": "PARTIAL: aligned-plane D_1 L^2/sigma^2 = 1/A(3 beta)^2 -> 1; vMF variance A/k and Jacobian 1/|M| exact; executed 1.34..1.02 larger due to reduced |M|; V_L remainder open",
+ "what": "DERIVATION, independent attempt 3 of 4: The direction of the sphere formation law diffuses at rate sigma^2/(L^2 |m|^2). Blocks 26, 34 (PRs #8170, #8178): the sphere formation law (record at x drawn with density proportional to e^{beta s.S}, S the sum of the three recorded predecessors) on the periodic L x L level plane. For the LINEARIZED law the zero mode random-walks with variance sigma^2 t/L^2, sigma^2 = A(3 beta)/(3 beta), A(k) = coth k - 1/k (proved). EXECUTED for the nonlinear law: the mean direction diffuses faster by a factor 1.34, 1.14, 1.06, 1.02 at beta = 6, 12, 24, 48, matching 1/|m|^2 with m the magnetization. TASK: prove a statement of that form: e.g. for the nonlinear law at large beta, D_L(beta) L^2/sigma^2 -> 1 as beta -> infinity at fixed L with an explicit error term, or two-sided bounds c_1/|m|^2 <= D L^2/sigma^2 <= c_2/|m|^2. Route: write the one-step map of the plane average exactly (the mean of a von Mises-Fisher draw is A(kappa) S/|S|), expand in the transverse fluctuations, and control the remainder by the stationary variance of the non-zero modes (block 34's V_L). Check each expansion coefficient exactly and compare the final constant with the executed table (probes/lib/sphere_torus_msd.py reproduces it). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/spin-wave-diffusion/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/spin-wave-diffusion/<name>/check.py\"",
+ "stdout_sha256": "f034f39574127eeb23d32af8dce2b088f4002e47ca48de155f00e38b99339971",
+ "stdout_tail": "3695988 vs A/k 0.013695988\n  k=144.0: A=0.993055555556 A'-id 2.12e-30; E[mu^2]-(1-2A/k)=-1.15e-41; trans var 0.0068962191 vs A/k 0.0068962191\nS2 Jacobian of x/|x| at (0,0,m):\n  m=1: Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 0]]) == diag(1/m,1/m,0): True\n  m=1/2: Matrix([[2, 0, 0], [0, 2, 0], [0, 0, 0]]) == diag(1/m,1/m,0): True\n  m=3/4: Matrix([[4/3, 0, 0], [0, 4/3, 0], [0, 0, 0]]) == diag(1/m,1/m,0): True\nS3 1/A(3 beta)^2 at the executed couplings vs the probe ratios:\n  beta=6: A(3b)=0.9444444444 1/A^2=1.12111 1+2/(3b)=1.11111 executed=1.34 (aligned-plane underestimates the table)\n  beta=12: A(3b)=0.9722222222 1/A^2=1.05796 1+2/(3b)=1.05556 executed=1.14 (aligned-plane underestimates the table)\n  beta=24: A(3b)=0.9861111111 1/A^2=1.02837 1+2/(3b)=1.02778 executed=1.06 (aligned-plane underestimates the table)\n  beta=48: A(3b)=0.9930555556 1/A^2=1.01403 1+2/(3b)=1.01389 executed=1.02 (aligned-plane underestimates the table)\nHIT: aligned-plane exact: vMF transverse variance is A(k)/k; one-step plane average has var sigma^2/L^2 per component; Jacobian of M/|M| is (I-nn^T)/|M|, so D_1 L^2/sigma^2 = 1/A(3 beta)^2 on the aligned plane, which tends to 1 as beta->infty (1+2/(3 beta)+O(beta^{-2})); the executed ratios 1.34..1.02 are larger, as expected from |M|<A(3 beta) due to nonzero modes\nSUMMARY: PARTIAL - aligned-plane (linearized zero-mode) diffusion ratio is exactly 1/A(3 beta)^2 -> 1; nonlinear enhancement is the Jacobian 1/|M|^2 at the reduced magnetization, remainder by V_L open\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jbb16",
+  "at_utc": "20260919T000732Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "PARTIAL: aligned-plane diffusion ratio is 1/A(3 beta)^2 -> 1 as beta->infty; nonlinear 1/|M|^2 remainder open",
+  "by": "w-macbookpro90c72-jbb16",
+  "at_utc": "20260919T000732Z"
+ }
+}

@@ -1,0 +1,19 @@
+S1 vMF identities (40 digits):
+  k=1: A=0.313035285499 A'-id 6.97e-27; E[mu^2]-(1-2A/k)=-1.72e-41; trans var 0.31303529 vs A/k 0.31303529
+  k=3: A=0.67163648998 A'-id -6.17e-18; E[mu^2]-(1-2A/k)=1.23e-17; trans var 0.22387883 vs A/k 0.22387883
+  k=6: A=0.833345621834 A'-id -1.54e-18; E[mu^2]-(1-2A/k)=3.08e-18; trans var 0.13889094 vs A/k 0.13889094
+  k=18.0: A=0.944444444444 A'-id -1.35e-29; E[mu^2]-(1-2A/k)=0.0; trans var 0.052469136 vs A/k 0.052469136
+  k=36.0: A=0.972222222222 A'-id -7.95e-31; E[mu^2]-(1-2A/k)=0.0; trans var 0.027006173 vs A/k 0.027006173
+  k=72.0: A=0.986111111111 A'-id 2.72e-30; E[mu^2]-(1-2A/k)=1.15e-41; trans var 0.013695988 vs A/k 0.013695988
+  k=144.0: A=0.993055555556 A'-id 2.12e-30; E[mu^2]-(1-2A/k)=-1.15e-41; trans var 0.0068962191 vs A/k 0.0068962191
+S2 Jacobian of x/|x| at (0,0,m):
+  m=1: Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 0]]) == diag(1/m,1/m,0): True
+  m=1/2: Matrix([[2, 0, 0], [0, 2, 0], [0, 0, 0]]) == diag(1/m,1/m,0): True
+  m=3/4: Matrix([[4/3, 0, 0], [0, 4/3, 0], [0, 0, 0]]) == diag(1/m,1/m,0): True
+S3 1/A(3 beta)^2 at the executed couplings vs the probe ratios:
+  beta=6: A(3b)=0.9444444444 1/A^2=1.12111 1+2/(3b)=1.11111 executed=1.34 (aligned-plane underestimates the table)
+  beta=12: A(3b)=0.9722222222 1/A^2=1.05796 1+2/(3b)=1.05556 executed=1.14 (aligned-plane underestimates the table)
+  beta=24: A(3b)=0.9861111111 1/A^2=1.02837 1+2/(3b)=1.02778 executed=1.06 (aligned-plane underestimates the table)
+  beta=48: A(3b)=0.9930555556 1/A^2=1.01403 1+2/(3b)=1.01389 executed=1.02 (aligned-plane underestimates the table)
+HIT: aligned-plane exact: vMF transverse variance is A(k)/k; one-step plane average has var sigma^2/L^2 per component; Jacobian of M/|M| is (I-nn^T)/|M|, so D_1 L^2/sigma^2 = 1/A(3 beta)^2 on the aligned plane, which tends to 1 as beta->infty (1+2/(3 beta)+O(beta^{-2})); the executed ratios 1.34..1.02 are larger, as expected from |M|<A(3 beta) due to nonzero modes
+SUMMARY: PARTIAL - aligned-plane (linearized zero-mode) diffusion ratio is exactly 1/A(3 beta)^2 -> 1; nonlinear enhancement is the Jacobian 1/|M|^2 at the reduced magnetization, remainder by V_L open

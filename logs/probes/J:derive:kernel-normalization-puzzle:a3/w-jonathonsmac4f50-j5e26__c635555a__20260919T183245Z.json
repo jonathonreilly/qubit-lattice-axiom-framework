@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:kernel-normalization-puzzle:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j5e26",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/kernel-normalization-puzzle/w-jonathonsmac4f50-j5e26/check.py",
+ "seed": 42765,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c635555a",
+ "started_utc": "20260919T183245Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL (one-loop Gaussian closure, ATTEMPT.md S5) to order 1/beta the lab-frame transverse kernel of the sphere formation law is S(k) = sigma^2 [1 + sigma^2 (2 - W)]/(1 - |m(k)|^2): the mean map's order-1/beta corrections cancel (E[delta] = n sigma^2 exactly by the uniform-stencil identity, so g = 1 + O(1/beta^2)), the noise gains sigma^2 from the misalignment of the predecessors and loses sigma^2 (W - 1) to the tilt of the local mean (the lab-frame projection), W the return sum; the exchange term vanishes for the backward simplex stencils (R = 1 + sigma^2 (2 - W), flat in k) and equals (Delta/343) x Laplacian for the light-cone; predicted plateaus 1.025/1.009/1.0024 (backward 3+1, beta 2/6/24) and 1.078/1.055/1.042 (light-cone, beta 1/1.5/2) against the executed plateaus (N1); the sub-1 lowest shells are the finite-level transient from the aligned start plus sampling noise, not the kernel"
+ },
+ "review": "check.py verifies E1-E4 in exact sympy arithmetic (the uniform-stencil identity giving E[delta] = n sigma^2, the cancellation of the order-1/beta gain, the exchange term zero for the simplex stencils and (Delta/343) x Laplacian for the light-cone, the noise factor 1 + sigma^2 (2 - W)), and N1 compares the one-loop plateaus with all nine executed sphere runs at beta >= 1 (every plateau above its prediction by at most 0.028, residual +0.8 to +1.8 sigma^4 with the zero-mode factor, every lowest shell within |z| <= 1.7); this answers the task's question at order 1/beta under the one-loop closure listed as ASSUMED.",
+ "what": "DERIVATION, independent attempt 3 of 3: Why the measured kernel sits below the linear one when the theory says above. GIVEN (refereed): in backward 3+1 the one-step mean map of the transverse field is g phi(k) with g = 1 - 1/(n^2 beta^2) + ..., the O(1/beta) correction vanishes and the return sum drops out; a naive expansion predicted a ratio ABOVE 1. EXECUTED: measured S(k)(1 - |phi|^2)/sigma^2 at small k is 0.95-0.99 at beta = 2..6 and 1.01 at beta = 24 (backward), 1.01-1.09 (light-cone, beta = 1..2). The estimator (probes/lib/formation_levelplane.py) uses LAB-FRAME transverse components s.t1, s.t2 about the INITIAL direction, keeps the zero mode out of the shells, and sigma^2 = A(n beta)/(n beta). TASK: a formula that matches the table. Candidates: the lab-frame component is sin(theta) not theta (factor ~ 1 - <theta^2>); the mean direction wanders on a finite plane so 'transverse to the initial direction' mixes in longitudinal fluctuations; the noise of the record is not sigma^2 but the vMF transverse variance at the fluctuating concentration beta|S_x|; g < 1 shifts the pole. Derive each effect's size at order 1/beta, add them, and compare with the logs under logs/probes/X:formation-3plus1-*/ and X:lightcone-*/. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/kernel-normalization-puzzle/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/kernel-normalization-puzzle/<name>/check.py\"",
+ "stdout_sha256": "287de790316da66da0db218b4d680e5eb716b69b4ef964af4ac5b1ce3d849333",
+ "stdout_tail": "(1/beta^2)), the noise gains sigma^2 from the misalignment of the predecessors and loses sigma^2 (W - 1) to the tilt of the local mean (the lab-frame projection), W the return sum; the exchange term vanishes for the backward simplex stencils (R = 1 + sigma^2 (2 - W), flat in k) and equals (Delta/343) x Laplacian for the light-cone; predicted plateaus 1.025/1.009/1.0024 (backward 3+1, beta 2/6/24) and 1.078/1.055/1.042 (light-cone, beta 1/1.5/2) against the executed plateaus (N1); the sub-1 lowest shells are the finite-level transient from the aligned start plus sampling noise, not the kernel\nHIT: (one-loop Gaussian closure, ATTEMPT.md S5) to order 1/beta the lab-frame transverse kernel of the sphere formation law is S(k) = sigma^2 [1 + sigma^2 (2 - W)]/(1 - |m(k)|^2): the mean map's order-1/beta corrections cancel (E[delta] = n sigma^2 exactly by the uniform-stencil identity, so g = 1 + O(1/beta^2)), the noise gains sigma^2 from the misalignment of the predecessors and loses sigma^2 (W - 1) to the tilt of the local mean (the lab-frame projection), W the return sum; the exchange term vanishes for the backward simplex stencils (R = 1 + sigma^2 (2 - W), flat in k) and equals (Delta/343) x Laplacian for the light-cone; predicted plateaus 1.025/1.009/1.0024 (backward 3+1, beta 2/6/24) and 1.078/1.055/1.042 (light-cone, beta 1/1.5/2) against the executed plateaus (N1); the sub-1 lowest shells are the finite-level transient from the aligned start plus sampling noise, not the kernel\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5e26",
+  "at_utc": "20260919T183259Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "claim for referee: the one-loop lab-frame kernel S(k) = sigma^2 [1 + sigma^2 (2 - W)]/(1 - |m(k)|^2) (E1-E4 exact, closure S5 ASSUMED) and the reading of the sub-1 lowest shells as the transient plus sampling noise (N1, numerical); same-model-family disclosure: the round-1 kernel-normalization-in-3plus1 referee reports this attempt builds on were written by claude-opus-5",
+  "by": "w-jonathonsmac4f50-j5e26",
+  "at_utc": "20260919T183259Z"
+ }
+}

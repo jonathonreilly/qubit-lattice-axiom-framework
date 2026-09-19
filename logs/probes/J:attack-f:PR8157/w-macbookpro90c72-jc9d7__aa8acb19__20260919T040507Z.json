@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8157",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block23-unsold",
+ "worker": "w-macbookpro90c72-jc9d7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8157/normalization_three_halves.py",
+ "seed": 90707,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aa8acb19",
+ "started_utc": "20260919T040507Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (f) NORMALIZATION \u2014 |a+b+c|<=(1/2)(|a+b|+|a+c|+|b+c|) gives the 3/2 in P1, \u222bd\u03c6=2\u03c0 gives d\u03c3 area 4\u03c0, and (t^2/2)cosh t dominates cosh t-1 coefficient-wise; attack does not fire"
+ },
+ "review": "pattern (f) does not fire: the 3/2 in P1 is the 1/2 pairing identity on three pair-sums, d\u03c3 has \u03c6-integral 2\u03c0, and (t^2/2)cosh t dominates cosh t-1 coefficient-wise",
+ "what": "PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915; git show origin/physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915:<note>. Create probes/work/pr8157/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8157/<script>.py\"",
+ "stdout_sha256": "113394e5f68df0d836bb674c64fb69aee3fcdd30bc0a04b071c1ce710907d0b1",
+ "stdout_tail": "(Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)): |sum|=3 <= (1/2) pair-sums=3\n(Fraction(1, 1), Fraction(-1, 1), Fraction(0, 1)): |sum|=0 <= (1/2) pair-sums=1\n(Fraction(2, 1), Fraction(-1, 1), Fraction(-1, 1)): |sum|=0 <= (1/2) pair-sums=2\n(Fraction(3, 1), Fraction(4, 1), Fraction(-5, 1)): |sum|=2 <= (1/2) pair-sums=5\n(Fraction(0, 1), Fraction(0, 1), Fraction(1, 1)): |sum|=1 <= (1/2) pair-sums=1\n\u222b_0^{2\u03c0} d\u03c6 = 2*pi (stated 2\u03c0); sphere area 2*2\u03c0=4*pi=4\u03c0\ncosh t-1 series t**8/40320 + t**6/720 + t**4/24 + t**2/2\n(t^2/2)cosh t series t**8/1440 + t**6/48 + t**4/4 + t**2/2\n  t^2: lhs/rhs = 1 (stated 2/((2k)(2k-1)) <= 1)\n  t^4: lhs/rhs = 1/6 (stated 2/((2k)(2k-1)) <= 1)\n  t^6: lhs/rhs = 1/15 (stated 2/((2k)(2k-1)) <= 1)\n  t^8: lhs/rhs = 1/28 (stated 2/((2k)(2k-1)) <= 1)\nSUMMARY: pattern (f) NORMALIZATION \u2014 |a+b+c|<=(1/2)(|a+b|+|a+c|+|b+c|) gives the 3/2 in P1, \u222bd\u03c6=2\u03c0 gives d\u03c3 area 4\u03c0, and (t^2/2)cosh t dominates cosh t-1 coefficient-wise; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc9d7",
+  "at_utc": "20260919T040507Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

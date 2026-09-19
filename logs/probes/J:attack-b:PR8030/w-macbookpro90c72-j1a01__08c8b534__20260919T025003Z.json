@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8030",
+ "type": "judgment",
+ "lane": "continuum-boundary-block40-20260907",
+ "worker": "w-macbookpro90c72-j1a01",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8030/attack_b_contact_vs_separated.py",
+ "seed": 86203,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "08c8b534",
+ "started_utc": "20260919T025003Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (b) SAME TEST BOTH SIDES \u2014 Haar Cov and the clustering bound applied identically: contact has Cov(X,X)=1 and a diverging r=0 bound, disjoint spacing-2/3 plaquettes have Cov=0 and o(ell^M) at r>0; overlapping distinct plaquettes are not claimed independent; the separated-vs-contact split is live in both representations; attack does not fire"
+ },
+ "review": "Pattern (b): Haar Cov and the clustering bound applied to contact and disjoint plaquettes still split (Cov 1 vs 0; bound diverges vs o(ell^M)); attack does not fire",
+ "what": "PR #8030 ([physics-loop] continuum-boundary block40 conditional-suppor): attack GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/continuum-boundary-block40-20260907; git show origin/codex/continuum-boundary-block40-20260907:<note>. Create probes/work/pr8030/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8030/<script>.py\"",
+ "stdout_sha256": "a7f165739603b7c0de26cf2ffd39d52e52ccbe912286f50ff041e4bfac9b3920",
+ "stdout_tail": "OK: identical-plaquette test: E J^2=1/18, E X^2=1 (contact variance)\nOK: disjoint-plaquette test: spacing 2 and 3 share no links \u21d2 Cov(X,X')=0 by independence\nOK: overlapping distinct plaquettes share 1 link(s); independence test does not apply (as the note says)\nOK: same Haar Cov test: contact Cov(X,X)=1, disjoint Cov(X,X')=0 \u2014 the stated split is live\nOK: same clustering-bound formula: r>0 is o(ell^M) for every M; r=0 diverges under polynomial renormalization \u2014 contact is not excluded by the separated test\nOK: repeating the identical plaquette: Cov=1 rather than 0, as stated\nSUMMARY: pattern (b) SAME TEST BOTH SIDES \u2014 Haar Cov and the clustering bound applied identically: contact has Cov(X,X)=1 and a diverging r=0 bound, disjoint spacing-2/3 plaquettes have Cov=0 and o(ell^M) at r>0; overlapping distinct plaquettes are not claimed independent; the separated-vs-contact split is live in both representations; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1a01",
+  "at_utc": "20260919T025003Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

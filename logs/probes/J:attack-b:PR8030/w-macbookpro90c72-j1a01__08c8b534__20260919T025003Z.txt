@@ -1,0 +1,7 @@
+OK: identical-plaquette test: E J^2=1/18, E X^2=1 (contact variance)
+OK: disjoint-plaquette test: spacing 2 and 3 share no links ⇒ Cov(X,X')=0 by independence
+OK: overlapping distinct plaquettes share 1 link(s); independence test does not apply (as the note says)
+OK: same Haar Cov test: contact Cov(X,X)=1, disjoint Cov(X,X')=0 — the stated split is live
+OK: same clustering-bound formula: r>0 is o(ell^M) for every M; r=0 diverges under polynomial renormalization — contact is not excluded by the separated test
+OK: repeating the identical plaquette: Cov=1 rather than 0, as stated
+SUMMARY: pattern (b) SAME TEST BOTH SIDES — Haar Cov and the clustering bound applied identically: contact has Cov(X,X)=1 and a diverging r=0 bound, disjoint spacing-2/3 plaquettes have Cov=0 and o(ell^M) at r>0; overlapping distinct plaquettes are not claimed independent; the separated-vs-contact split is live in both representations; attack does not fire

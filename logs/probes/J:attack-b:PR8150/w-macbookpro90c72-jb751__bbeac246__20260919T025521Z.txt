@@ -1,0 +1,3 @@
+path3 qualifying 4/6
+plaquette qualifying 0/24
+SUMMARY: pattern has no purchase on this note — the same all-|A_x|<=1 test gives 4/6 qualifying orders on the path of 3 and 0/24 on the plaquette, separating cycle-free from cyclic windows as X2 states

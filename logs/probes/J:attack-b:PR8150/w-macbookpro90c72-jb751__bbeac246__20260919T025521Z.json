@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8150",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block16-static",
+ "worker": "w-macbookpro90c72-jb751",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8150/same_test_qualify_cycle_vs_path.py",
+ "seed": 86521,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bbeac246",
+ "started_utc": "20260919T025521Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the same all-|A_x|<=1 test gives 4/6 qualifying orders on the path of 3 and 0/24 on the plaquette, separating cycle-free from cyclic windows as X2 states"
+ },
+ "review": "Qualifying-order test: path 4/6 vs plaquette 0/24; separates as X2 states; no defect",
+ "what": "PR #8150 ([physics-loop] admissibility-induced-law block16 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915; git show origin/physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915:<note>. Create probes/work/pr8150/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8150/<script>.py\"",
+ "stdout_sha256": "0ce5ab47b1b6579e0303584082c154ea779ee3c9ccded71b69d699271ed55b19",
+ "stdout_tail": "path3 qualifying 4/6\nplaquette qualifying 0/24\nSUMMARY: pattern has no purchase on this note \u2014 the same all-|A_x|<=1 test gives 4/6 qualifying orders on the path of 3 and 0/24 on the plaquette, separating cycle-free from cyclic windows as X2 states\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb751",
+  "at_utc": "20260919T025521Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

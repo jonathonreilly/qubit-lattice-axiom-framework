@@ -1,0 +1,7 @@
+PASS: A1 Bonferroni order 2 equals P(A cup B) for two events and is strictly below P(A)+P(B) whenever the overlap is positive: it is not an upper bound
+PASS: B1 depth-2 cone: 234 configs with eta'_x=1, each maps to exactly one history (96 distinct keys); the map is deterministic (two runs agree)
+PASS: C1 at (1/10,1/5) depth-2: P=0.19208 <= first-order cylinder union 0.32658; order-2 truncation 0.139484 is smaller (a lower bound on P(cup C_h), not an upper bound); 3784 overlapping cylinder pairs
+PASS: C2 Chung-Erdős with only the diagonal of realized cylinders is 9.00642 >= first-order union 0.32658: it does not improve the union bound
+TOTAL: PASS=4 FAIL=0
+HIT: new exact partial / no-go: block 30's histories partition {eta'_x=1} (234/234 depth-2 1-configs, one deterministic key each), so inclusion-exclusion on those events is identical to the first-order sum; Bonferroni order 2 is a lower bound, not an upper bound; Chung-Erdős on realized cylinders does not beat the cylinder union. Candidate (iii) cannot replace the 4/27 grammar radius
+SUMMARY: PARTIAL candidate (iii) fails as an improvement of the union bound: canonical histories are pairwise disjoint (IE vacuous) and Bonferroni order 2 is not an upper bound; 4/27 is not replaced; located strength 10.5-11 not reached

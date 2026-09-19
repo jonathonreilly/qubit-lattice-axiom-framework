@@ -1,0 +1,12 @@
+OK: adjacency degree equals stated Δ=2(d-p)(2p+1) on Z^d for 7 (d,p) pairs
+OK: L∞ diameter of adjacent p-cells is 1 (so ≤ |X|-1); L1 base distance 2 occurs ((1, -1, 0), (1,)); the note's bounding-cube bookkeeping uses side length (L∞), so S-1 still holds
+OK: every (p+1)-cell's 2(p+1) faces are a clique under the note's adjacency
+OK: local-closure lemma: 20 small closed charges have closed components
+OK: cancellation witness: q_01/q_02 formulae match the coboundary; closed connected overlapping polymers; total mass 4R+4; net mass 8; R>=4 net support has 2 components; labeled mixed coefficient -1
+OK: Ursell tree bound |U|≤#spanning trees on complete/path/cycle n=2..6 and on all graphs n≤5; complete U=(-1)^{n-1}(n-1)!; path U=(-1)^{n-1}; three-species xyz coefficient +1
+OK: connected m-sets containing a fixed 1-cell in Z^2: {1: 1, 2: 6, 3: 33, 4: 176} ≤ Δ^{2(m-1)} with Δ=6
+OK: Hodge ||dh||²+||d*h||² equals the stated componentwise Dirichlet form on tori
+OK: u_t=2 e^{-t/2}/(1-e^{-3t/2}) bounds 2 Σ_{n≥1} exp[-(t/2)n²]
+OK: Eulerian polynomial nonnegative, sums to m!, and yields (9a) in Q
+OK: β=100 d=4 constants as written: Δ≤20, t>61.625, r<4.16e-14, R_t<2.267e-13, 4π²C0C1<3.12e12, 10!r/(1-r)^11<1.511e-7, (Δ+1)R_t<5e-12, βε_t<1.1e-5, all follow from π²∈(9.86,10) and e<2.719
+SUMMARY: pattern (g) PROOF STEP BY BRUTE FORCE on CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION §§1,3,7 — local-closure clique, degree Δ=2(d-p)(2p+1) exact on Z^d, Hodge=componentwise Dirichlet, connected-set walk bound, Ursell |U|≤#trees (complete/path/cycle and all graphs n≤5), cancellation witness masses 4R+4 / net 8 / R≥4 two net components / labeled mixed coefficient −1 with q_01,q_02 formulae matching the coboundary, and the β=100 elementary bounds as written; 0 failures; attack does not fire

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8140",
+ "type": "judgment",
+ "lane": "clock-static-charge-20260915",
+ "worker": "w-macbookpro90c72-j2a92",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8140/attack_g_closure_witness_degree.py",
+ "seed": 84813,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8e334aa5",
+ "started_utc": "20260919T022653Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (g) PROOF STEP BY BRUTE FORCE on CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION \u00a7\u00a71,3,7 \u2014 local-closure clique, degree \u0394=2(d-p)(2p+1) exact on Z^d, Hodge=componentwise Dirichlet, connected-set walk bound, Ursell |U|\u2264#trees (complete/path/cycle and all graphs n\u22645), cancellation witness masses 4R+4 / net 8 / R\u22654 two net components / labeled mixed coefficient \u22121 with q_01,q_02 formulae matching the coboundary, and the \u03b2=100 elementary bounds as written; 0 failures; attack does not fire"
+ },
+ "review": "Pattern (g) on convexification \u00a7\u00a71,3,7: degree \u0394, local-closure, Ursell |U|\u2264trees, cancellation witness (masses 4R+4/net 8, q_01/q_02, R\u22654 two components) and \u03b2=100 bounds hold as written; attack does not fire",
+ "what": "PR #8140 ([physics-loop] clock-static-charge: bounded_theorem, bounded): attack CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md ... with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/clock-static-charge-20260915; git show origin/physics-loop/clock-static-charge-20260915:<note>. Create probes/work/pr8140/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8140/<script>.py\"",
+ "stdout_sha256": "4acd03bc93b2f207615a12e8e9a7701ca8d5b2b20f2ac33796a41347adae6c71",
+ "stdout_tail": "r the note's adjacency\nOK: local-closure lemma: 20 small closed charges have closed components\nOK: cancellation witness: q_01/q_02 formulae match the coboundary; closed connected overlapping polymers; total mass 4R+4; net mass 8; R>=4 net support has 2 components; labeled mixed coefficient -1\nOK: Ursell tree bound |U|\u2264#spanning trees on complete/path/cycle n=2..6 and on all graphs n\u22645; complete U=(-1)^{n-1}(n-1)!; path U=(-1)^{n-1}; three-species xyz coefficient +1\nOK: connected m-sets containing a fixed 1-cell in Z^2: {1: 1, 2: 6, 3: 33, 4: 176} \u2264 \u0394^{2(m-1)} with \u0394=6\nOK: Hodge ||dh||\u00b2+||d*h||\u00b2 equals the stated componentwise Dirichlet form on tori\nOK: u_t=2 e^{-t/2}/(1-e^{-3t/2}) bounds 2 \u03a3_{n\u22651} exp[-(t/2)n\u00b2]\nOK: Eulerian polynomial nonnegative, sums to m!, and yields (9a) in Q\nOK: \u03b2=100 d=4 constants as written: \u0394\u226420, t>61.625, r<4.16e-14, R_t<2.267e-13, 4\u03c0\u00b2C0C1<3.12e12, 10!r/(1-r)^11<1.511e-7, (\u0394+1)R_t<5e-12, \u03b2\u03b5_t<1.1e-5, all follow from \u03c0\u00b2\u2208(9.86,10) and e<2.719\nSUMMARY: pattern (g) PROOF STEP BY BRUTE FORCE on CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION \u00a7\u00a71,3,7 \u2014 local-closure clique, degree \u0394=2(d-p)(2p+1) exact on Z^d, Hodge=componentwise Dirichlet, connected-set walk bound, Ursell |U|\u2264#trees (complete/path/cycle and all graphs n\u22645), cancellation witness masses 4R+4 / net 8 / R\u22654 two net components / labeled mixed coefficient \u22121 with q_01,q_02 formulae matching the coboundary, and the \u03b2=100 elementary bounds as written; 0 failures; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2a92",
+  "at_utc": "20260919T022655Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

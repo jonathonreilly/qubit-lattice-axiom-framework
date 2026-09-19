@@ -1,0 +1,4 @@
+spacing=2 n=8: 512 plaquettes, shared-pairs=0
+spacing=3 n=6: 216 plaquettes, shared-pairs=0
+spacing=3 n=7: 343 plaquettes, shared-pairs=0
+SUMMARY: xy-plaquette links remain pairwise disjoint for n=8 spacing 2 and n=6,7 spacing 3 (beyond executed n=6/4); falsifier does not fire

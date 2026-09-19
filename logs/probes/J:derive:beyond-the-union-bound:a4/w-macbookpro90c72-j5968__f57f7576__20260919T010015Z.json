@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:beyond-the-union-bound:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j5968",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/beyond-the-union-bound/w-macbookpro90c72-j5968/check.py",
+ "seed": 79615,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f57f7576",
+ "started_utc": "20260919T010015Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL diamond-free lift of explanation trees is finite at x=3/20>4/27 with exact super-solution (12/25,1/5,2/25), D=72, ceiling \u03b52<1/2000 and p=4004 on (p,1,2); the naive 3-type set-product recursion fails at the overlapping-cone step (w(S)>w(S1)w(S2) on the diamond)."
+ },
+ "review": "Diamond-free U-system has exact super-solution at x=3/20>4/27 giving t-trick ceiling eps2<1/2000 and p=4004 on (p,1,2); naive set-product recursion fails on the diamond (w(S)>w(S1)w(S2)); all finite checks are fractions or integers.",
+ "what": "DERIVATION, independent attempt 4 of 4: Count explanation trees better than the union bound: the 4/27 ceiling. Blocks 25, 30 (PRs #8168, #8174): the ordering proof bounds P(a site is wrong) by a sum over marked explanation trees, P <= eps_1 R(t + eps_2/t^c, eps_1/t^3) with the tree recursion D = (1+xU)^2 (1+3xD)(1+yF)^6, U = (1+xU)^3 (1+yF)^6, F = (1+xU)^3 (1+3xD)(1+yF)^5, R = (1+xU)^3 (1+3xD)(1+yF)^6, whose domain ends at x = 4/27. That ceiling gives p >= 368 at best on (p,1,2), while the executed threshold is p in (10.5, 11). TASK: a provably smaller count. Candidates: (i) many trees explain the same error set: count error SETS (or minimal trees under a canonical order) instead of trees and show the generating function's radius grows; (ii) a two-scale argument: group levels in blocks and iterate the one-block estimate (a renormalization in the style of the multi-scale proofs of stability for cellular automata), giving a threshold independent of 4/27; (iii) inclusion-exclusion to second order with an exact bound on the overlap term. Deliver an exact certificate (rational super-solution) for any new recursion and the threshold it proves; verify the domination of the true error probability on small cones by exhaustive enumeration. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/beyond-the-union-bound/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/beyond-the-union-bound/<name>/check.py\"",
+ "stdout_sha256": "027982875fc9bb50a70036ee7a02ad3a6512312fcb42fa9ab8446c6791be062a",
+ "stdout_tail": "298816e-03\nCHECK E6Asum20: PASS Asum=2442085289179682422853296005/387705473456883610202147074193 Abar=7/1000\nCHECK E6P20: PASS\nCONE p=20 e1=4.108054e-03 e2=1.150442e-01 P_d1=5.514322e-03 P_d2=6.141765e-03 animal_sum=6.298816e-03 Abar=7.000000e-03\nCHECK E6nA50: PASS n_animals=185\nCHECK E6mono50: PASS P_d1=2.975735e-04 P_d2=3.032109e-04 Asum=3.036247e-04\nCHECK E6Asum50: PASS Asum=20649314957999444887876994108202421215/68009334511632507952388147498553318778939 Abar=1/1000\nCHECK E6P50: PASS\nCONE p=50 e1=2.639303e-04 e2=4.251245e-02 P_d1=2.975735e-04 P_d2=3.032109e-04 animal_sum=3.036247e-04 Abar=1.000000e-03\nDF U=78/25 Rbar=8254954121/78125000 e1(4004)*Rbar=24764862363/455910455234375000\nNEW_CEILING 1/2000 p_first=4004 OLD_CEILING 256/531441 p_first=4165\nHIT: diamond-free U-system has rational super-solution (a1,a2,a3)=(12/25, 1/5, 2/25) at x=3/20 > 4/27 with U=78/25, Dbar=72, Rbar=8254954121/78125000; t-trick ceiling \u03b52 < 1/2000, first integer p on (p,1,2) with max(d2,d3)<1/2000 is p=4004 (block 30: p=4165 at 256/531441). Naive set-product A=\u03b51+3\u03b52 A+3A^2+A^3 is not a valid animal bound: on S={0,-e1,-e2,-e1-e2} one has w(S)=\u03b51 \u03b52^2 > (\u03b51 \u03b52)^2 = w(S1)w(S2) (exact at p=14: 1587/3696187 > 4761/933119209).\nSUMMARY: PARTIAL diamond-free lift of explanation trees is finite at x=3/20>4/27 with exact super-solution (12/25,1/5,2/25), D=72, ceiling \u03b52<1/2000 and p=4004 on (p,1,2); the naive 3-type set-product recursion fails at the overlapping-cone step (w(S)>w(S1)w(S2) on the diamond).\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5968",
+  "at_utc": "20260919T010039Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "New exact partial: diamond-free lift of explanation trees has rational super-solution at x=3/20>4/27, t-trick ceiling 1/2000, p=4004 on (p,1,2); set-product route has an exact overlapping-cone counterexample.",
+  "by": "w-macbookpro90c72-j5968",
+  "at_utc": "20260919T010039Z"
+ }
+}

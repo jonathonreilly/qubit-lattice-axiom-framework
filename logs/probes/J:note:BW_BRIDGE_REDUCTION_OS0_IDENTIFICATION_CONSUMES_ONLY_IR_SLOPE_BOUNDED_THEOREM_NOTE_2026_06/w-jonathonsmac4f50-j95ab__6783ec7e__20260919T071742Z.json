@@ -1,0 +1,32 @@
+{
+ "task": "J:note:BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026_06",
+ "type": "judgment",
+ "lane": "bw",
+ "worker": "w-jonathonsmac4f50-j95ab",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_C/strict_tick_vs_nn_exponential.py",
+ "seed": 2262,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6783ec7e",
+ "started_utc": "20260919T071742Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier 3 does not fire in the case T4 concerns: no nearest-neighbour generator at any tau exponentiates to a dispersive (winding) strict tick on any even ring N = 4..16 (z-free Bloch trace vs det U(z) = -q r z^(+-1), exact); for the note's own H = iD, e^(-i tau H) is strictly radius 1 at some tau != 0 only on rings N in [4, 6] (and N <= 3), where it is the identity at tau = 2 pi resp. 4 pi/sqrt3 (True); flat exceptions to the literal wording exist (identity ticks on those rings; dimerized generators, radius 1 at every tau: True)"
+ },
+ "review": "Output matches the task (falsifier 3 implemented by a determinant obstruction and an exact ring classification, disjoint from the runner's sampled leakage): a nearest-neighbour period-2 generator has z-free Bloch trace while every dispersive site shift has det U(z) = -q r z^(+-1), so no generator at any tau exponentiates to a dispersive strict tick on rings N = 4..16; for the note's H = iD, e^(-i tau H) is strictly radius 1 at some tau != 0 only on rings N = 4 and 6 (identity at tau = 2 pi and 4 pi/sqrt3, exact) and leaks for tau in [0.5, 60] on N = 5, 7..16; flat exceptions (those identity ticks, dimerized generators) exist, so no falsifier fires for the dispersive case T4 concerns.",
+ "what": "Note on main: docs/BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_C/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_C/<script>.py\"",
+ "stdout_sha256": "69e663debe415d62d79dfdb35565131b714522b70724c05a83af7fab14235b06",
+ "stdout_tail": "tional tau None (identity tick None), min leakage over tau in [0.5, 60] 0.0306 at tau 0.500; N=12: 2cos(2pi/N) rational False, exceptional tau None (identity tick None), min leakage over tau in [0.5, 60] 0.0306 at tau 0.500; N=13: 2cos(2pi/N) rational False, exceptional tau None (identity tick None), min leakage over tau in [0.5, 60] 0.0306 at tau 0.500; N=14: 2cos(2pi/N) rational False, exceptional tau None (identity tick None), min leakage over tau in [0.5, 60] 0.0306 at tau 0.500; N=15: 2cos(2pi/N) rational False, exceptional tau None (identity tick None), min leakage over tau in [0.5, 60] 0.0306 at tau 0.500; N=16: 2cos(2pi/N) rational False, exceptional tau None (identity tick None), min leakage over tau in [0.5, 60] 0.0306 at tau 0.500\n3. dimerized nearest-neighbour generator on N = 8 (every other bond): e^(-i t H) strictly radius 1 for every t: True; unitary True; generator eigenvalues [-1/2, 1/2] (dimer blocks: flat, no transport)\nSUMMARY: falsifier 3 does not fire in the case T4 concerns: no nearest-neighbour generator at any tau exponentiates to a dispersive (winding) strict tick on any even ring N = 4..16 (z-free Bloch trace vs det U(z) = -q r z^(+-1), exact); for the note's own H = iD, e^(-i tau H) is strictly radius 1 at some tau != 0 only on rings N in [4, 6] (and N <= 3), where it is the identity at tau = 2 pi resp. 4 pi/sqrt3 (True); flat exceptions to the literal wording exist (identity ticks on those rings; dimerized generators, radius 1 at every tau: True)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j95ab",
+  "at_utc": "20260919T071754Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

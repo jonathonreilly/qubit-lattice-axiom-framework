@@ -1,0 +1,3 @@
+box [0,2)^3 has 8 sites (stated 8 for L=2)
+NN triangle in box? False
+SUMMARY: pattern has no purchase on this note - a finite cubic box exists in Z^3 and its NN graph is triangle-free

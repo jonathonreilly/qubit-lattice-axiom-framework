@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8030",
+ "type": "judgment",
+ "lane": "continuum-boundary-block40-20260907",
+ "worker": "w-macbookpro90c72-j13b8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8030/box_exists.py",
+ "seed": 85799,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "404dad44",
+ "started_utc": "20260919T024319Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - a finite cubic box exists in Z^3 and its NN graph is triangle-free"
+ },
+ "review": "Finite cubic box exists and is triangle-free; pattern has no purchase",
+ "what": "PR #8030 ([physics-loop] continuum-boundary block40 conditional-suppor): attack GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/continuum-boundary-block40-20260907; git show origin/codex/continuum-boundary-block40-20260907:<note>. Create probes/work/pr8030/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8030/<script>.py\"",
+ "stdout_sha256": "9c3df721021f2edfc3dc29227a9ec456bf38831ca3b9e33e7a41e8590c00d980",
+ "stdout_tail": "box [0,2)^3 has 8 sites (stated 8 for L=2)\nNN triangle in box? False\nSUMMARY: pattern has no purchase on this note - a finite cubic box exists in Z^3 and its NN graph is triangle-free\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j13b8",
+  "at_utc": "20260919T024319Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8140",
+ "type": "judgment",
+ "lane": "clock-static-charge-20260915",
+ "worker": "w-macbookpro90c72-jaeb9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8140/same_test_cube_faces.py",
+ "seed": 86106,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86f7a745",
+ "started_utc": "20260919T024826Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same face/cotree count separates the 3-cube (6 faces, r=5) from the 4-cube witness (24 faces, r=17)"
+ },
+ "review": "Same cubical count separates 3-cube (6 faces,r=5) from 4-cube (24,r=17); pattern has no purchase",
+ "what": "PR #8140 ([physics-loop] clock-static-charge: bounded_theorem, bounded): attack CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md ... with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/clock-static-charge-20260915; git show origin/physics-loop/clock-static-charge-20260915:<note>. Create probes/work/pr8140/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8140/<script>.py\"",
+ "stdout_sha256": "4a5ffb348e9019f40b5f53746d47f44f27f3995ce13912fb03ec5125cf20b79b",
+ "stdout_tail": "3-cube faces=6 cotree=5; 4-cube faces=24 cotree=17\nSUMMARY: pattern has no purchase on this note - the same face/cotree count separates the 3-cube (6 faces, r=5) from the 4-cube witness (24 faces, r=17)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jaeb9",
+  "at_utc": "20260919T024826Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

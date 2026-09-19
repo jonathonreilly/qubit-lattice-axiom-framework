@@ -1,0 +1,2 @@
+3-cube faces=6 cotree=5; 4-cube faces=24 cotree=17
+SUMMARY: pattern has no purchase on this note - the same face/cotree count separates the 3-cube (6 faces, r=5) from the 4-cube witness (24 faces, r=17)

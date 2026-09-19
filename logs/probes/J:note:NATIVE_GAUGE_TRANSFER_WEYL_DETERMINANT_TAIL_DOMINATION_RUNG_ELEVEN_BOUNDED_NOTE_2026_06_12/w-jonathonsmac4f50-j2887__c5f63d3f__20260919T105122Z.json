@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_TAIL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j2887",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_T/mp40_determinants_and_mode_tail.py",
+ "seed": 15082,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c5f63d3f",
+ "started_utc": "20260919T105122Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "in 40-digit arithmetic every falsifier-table value (exact ratio 0.0782252869712, saddle 0.0797612757431, N_c = 2/4, dimension omitted, 2x2, wrong lambda) agrees with the note to 3e-13 and the walk-sum ratio agrees to 2e-13; the four outside mode masses agree to 4e-13; every mode term is nonnegative; beyond the note the sqrt(t)-window outside mass at a fixed scaled weight is {96: 0.249199, 192: 0.244275, 384: 0.27766, 768: 0.275317, 1536: 0.291459}; no falsifier fires"
+ },
+ "review": "Read the script and its output: in 40-digit mpmath determinants every falsifier-table value at beta = 96, (6,5) (exact ratio 0.0782252869712, saddle N_c = 3, 2, 4, dimension omitted, 2x2, wrong lambda) agrees with the note to 3e-13, the walk-sum recurrence gives the same exact ratio to 2e-13, and the four outside mode masses agree to 4e-13 with the mode sum converged far inside |n| <= 220; every mode determinant is nonnegative; beyond the note the sqrt(t)-window outside mass at the fixed scaled weight (0.6, 0.5) sqrt(beta) stays at 0.249, 0.244, 0.278, 0.275, 0.291 for beta = 96 ... 1536 (numbers only); no falsifier fires.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_TAIL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_T/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_T/<script>.py\"",
+ "stdout_sha256": "4deb528cd1a8d62b020df05449ac80cf0dd0be46d8f9e9a80abf7c7beb17ea8e",
+ "stdout_tail": "led, 40 digits: {'exact': '0.078225286971186', 'saddle Nc3': '0.079761275743095', 'Nc2': '0.1226817588277', 'Nc4': '0.051856618041326', 'dim omitted': '0.0002921658452128', '2x2': '0.0051016358707849', 'lambda (p,q,0)': '0.030362625798074'}; walk-sum exact ratio 0.078225286971; max |diff| to the note 3.3e-13; largest |n| > 200 mode term / c 4.3e-428\n2. outside mode masses (window, mass, |diff| to note, all mode terms nonnegative): {(96, 6, 5, 'sqrt t'): (7, 0.24919918479033623, 3.3623104300772866e-13, True), (192, 10, 8, 'sqrt t'): (10, 0.3441828123186152, 3.8480330033507926e-13, True), (192, 10, 8, 'beta^1/3'): (7, 0.6005711119250638, 6.38378239159465e-14, True), (192, 10, 8, 'sqrt beta'): (17, 0.02687979723773527, 2.647292107749166e-13, True)}\n3. beyond: outside mass at (p,q) ~ (0.6, 0.5) sqrt(beta), W = floor(1.25 sqrt(t)): {96: ((6, 5), 7, 0.249199, True), 192: ((8, 7), 10, 0.244275, True), 384: ((12, 10), 14, 0.27766, True), 768: ((17, 14), 20, 0.275317, True), 1536: ((24, 20), 28, 0.291459, True)}\nSUMMARY: in 40-digit arithmetic every falsifier-table value (exact ratio 0.0782252869712, saddle 0.0797612757431, N_c = 2/4, dimension omitted, 2x2, wrong lambda) agrees with the note to 3e-13 and the walk-sum ratio agrees to 2e-13; the four outside mode masses agree to 4e-13; every mode term is nonnegative; beyond the note the sqrt(t)-window outside mass at a fixed scaled weight is {96: 0.249199, 192: 0.244275, 384: 0.27766, 768: 0.275317, 1536: 0.291459}; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2887",
+  "at_utc": "20260919T105133Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

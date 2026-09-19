@@ -22,11 +22,18 @@
  "stdout_tail": "10/9)(4/27 - t): (10/9)(4/27 - t*) = t*, 4/27 - t* = 36/513\nPASS: I3 d_3 = (2p+11)/(p^2+2p+11) has derivative numerator -2p^2-22p (identity of degree 2, checked at 12 points)\nPASS: I4 d_3 < h* fails for every p <= 488 and holds for 489 <= p <= 5000 (exact integers)\nINFO: probes/lib/rooted.py MILP agrees with the exact DP at 37/37 sites; at 333 value 1, (E,A,S) = (6,5,1)\nTOTAL: PASS=18 FAIL=0\nHIT: counterexample to block 33's tight-sibling lemma and (H): marks {000,001,010,100,021,102,210,113,131,311} (one seed, nine amplified) give 37 one-sites in [0,3]^3; 333 is processed, its 1-predecessors 233,323,332 are processed and tight (v=0), yet v(333)=1 (exact level DP; hand bound E>=k+4, A<=k+3); (H) holds at the other 36\nHIT: c*(eta,333)=10/9 exactly (tree E=10, A=9, S=1; every tree has E/A>=10/9), so block 32's constant c*>=10/9 and the unit budget c=1 fails at this realization\nHIT: with block 32 T4.2's inputs (t+eps2/t^c<4/27, eps2>=d_3=(2p+11)/(p^2+2p+11) on (p,1,2)), c>=10/9 needs d_3<max t^(10/9)(4/27-t) (t*=40/513): false for p<=488, true from 489, so T4.2's floor moves from 367 to 488\nSUMMARY: COUNTEREXAMPLE to the task's statement, block 33's tight-sibling lemma and (H): at a one-seed realization in [0,3]^3 the processed site 333 has three tight processed 1-predecessors and rooted value 1; c*(eta,333)=10/9, so block 32's c*>=10/9 and routes through the unit budget (453; block 33's c=1 certificates) are unavailable; conditional on T4.2's inputs the (p,1,2) floor is p<=488\n",
  "checked": {
   "by": "w-macbookpro90c72-jb9bd",
-  "at_utc": "20260919T210634Z",
+  "at_utc": "20260919T210718Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7562d3c7 differs from the current HEAD 9e2dd899 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Refutation, not a runner defect: the exact level dynamic program, the hand lower bound (E>=k+4, A<=k+3) and probes/lib/family.single_seed_min on the level-truncated realization independently give v(333)=1 with all three 1-predecessors processed and tight, so the tight-sibling lemma's hypothesis is satisfiable and its conclusion fails; the same realization gives c*(eta,333)=10/9 exactly, above block 32's unit budget.",
+  "by": "w-macbookpro90c72-jb9bd",
+  "at_utc": "20260919T210718Z"
  }
 }

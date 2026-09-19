@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8145",
+ "type": "judgment",
+ "lane": "clock-history-field-20260915",
+ "worker": "w-macbookpro90c72-j28c6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8145/villain_current_comparison.py",
+ "seed": 82890,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "36db1713",
+ "started_utc": "20260919T015450Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: Part II.1 inequality (2) holds with equality on the N=2 one-plaquette (W=tanh b = R^{-1}), and holds on N=3,4 one-plaquette complexes at beta=1 (c_k>0, even, R^{-1}<=W<=R); U_l U_k=U_{l+k} and U_{Nl}=I are the clock algebra, not a finite defect"
+ },
+ "review": "Part II.1 Villain inequality (2) holds with equality on N=2 (tanh=coth^{-1}) and holds on N=3,4 one-plaquette at beta=1; pattern has no purchase",
+ "what": "PR #8145 ([physics-loop] clock-history-field: bounded_theorem, bounded): attack FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/clock-history-field-20260915; git show origin/physics-loop/clock-history-field-20260915:<note>. Create probes/work/pr8145/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8145/<script>.py\"",
+ "stdout_sha256": "a6979d0bfbc60282107e1cdbcc2b6f73465bad57c19765c37f7a8139780a171d",
+ "stdout_tail": "PASS: N2 N=2 one plaquette: c0=cosh b, c1=sinh b; W(J=1)=tanh b = R(S)^{-1}=coth^{-1} b; inequality (2) holds with equality on the lower side\nPASS: N3 N=3 one plaquette, beta=1: c_k>0, c_k=c_{-k}, and R^{-1}<=W(q)<=R for every q\nPASS: N4 N=4 one plaquette, beta=1: c_k>0, c_k=c_{-k}, and R^{-1}<=W(q)<=R for every q\nTOTAL: PASS=3 FAIL=0\nSUMMARY: pattern has no purchase on this note: Part II.1 inequality (2) holds with equality on the N=2 one-plaquette (W=tanh b = R^{-1}), and holds on N=3,4 one-plaquette complexes at beta=1 (c_k>0, even, R^{-1}<=W<=R); U_l U_k=U_{l+k} and U_{Nl}=I are the clock algebra, not a finite defect\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j28c6",
+  "at_utc": "20260919T015451Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

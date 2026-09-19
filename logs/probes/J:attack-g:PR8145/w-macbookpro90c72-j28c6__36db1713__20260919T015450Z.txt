@@ -1,0 +1,5 @@
+PASS: N2 N=2 one plaquette: c0=cosh b, c1=sinh b; W(J=1)=tanh b = R(S)^{-1}=coth^{-1} b; inequality (2) holds with equality on the lower side
+PASS: N3 N=3 one plaquette, beta=1: c_k>0, c_k=c_{-k}, and R^{-1}<=W(q)<=R for every q
+PASS: N4 N=4 one plaquette, beta=1: c_k>0, c_k=c_{-k}, and R^{-1}<=W(q)<=R for every q
+TOTAL: PASS=3 FAIL=0
+SUMMARY: pattern has no purchase on this note: Part II.1 inequality (2) holds with equality on the N=2 one-plaquette (W=tanh b = R^{-1}), and holds on N=3,4 one-plaquette complexes at beta=1 (c_k>0, even, R^{-1}<=W<=R); U_l U_k=U_{l+k} and U_{Nl}=I are the clock algebra, not a finite defect

@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-re-recording-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jf4b6",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/re-recording/referee_w-jonathonsmac4f50-jf4b6/check.py",
+ "seed": 80555,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "21dbaefe",
+ "started_utc": "20260919T011555Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 5 - its conclusion 'IR stiffness 2 beta against the static law's beta/2' (repeated in the HIT and SUMMARY lines) does not follow from its own exponents: pi ~ exp(-beta sum E|theta_k|^2) against mu ~ exp(-(beta/2) sum E|theta_k|^2) is a factor 2 (transverse variance 1/(2 beta E) against 1/(beta E)), not 4; and (b)'s 'the chain orders in the same sense as the static law' is not proved (a C4 ratio, Peierls ASSUMED). Everything else survives and was re-verified independently: the pairing identity, asynchronous detailed balance on C4 and the 2x2 torus for both rules, synchronous reversibility w.r.t. prod_x Z_x, the exact TV values 39161524/79474827 and 122900831405716/159789899835723, the spin-wave jet -E + E^2/12, the C4 ratios"
+ },
+ "review": "Referee of re-recording a4 (grok-4.6): independent exact checks pass 6 of 6 (pairing identity on 241056 C4 pairs, asynchronous detailed balance on 124416 cases for both rules, synchronous reversibility on 112320 pairs, the exact TV values, the spin-wave jet -E + E^2/12 and -E/2 by exact series on (Z/4)^3, the C4 ratios), so (a), the reversibility and distinctness in (b) and the 1/E kernel hold, but the attempt fails at step 5: its 'stiffness 2 beta against beta/2' is a factor 4 while its own exponents give 2 (variance 1/(2 beta E) vs 1/(beta E)), and the ordering claim for pi is not proved; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:re-recording:a4/; its files are probes/work/derive/re-recording/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/re-recording/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e3da1cbcb90096779a70a400ae16f2955d9c67b479fd1b793fc33bcdee52b850",
+ "stdout_tail": "s law's quadratic form is TWICE the static one, transverse variance 1/(2 beta E) against block 19's 1/(beta E). The attempt's 'stiffness 2 beta against the static law's beta/2' states a factor 4 and does not match its own exponents (beta vs beta/2)\nPASS: Q6 step 6: the C4 ratios of the all-+z weight to a one-site opposite flip, p = 2: static 16, synchronous 121/64; p = 3: static 81, synchronous 3481/729; p = 5: static 625, synchronous 14641/625; p = 7: static 2401, synchronous 187489/2401 (the author's values); a four-site ratio is not an ordering statement on Z^3, and step 6 marks the Peierls step ASSUMED, so the sentence '(b) ... The chain orders in the same sense as the static law at large beta' is not proved\nTOTAL: PASS=6 FAIL=0\nSUMMARY: fails at step 5 - its conclusion 'IR stiffness 2 beta against the static law's beta/2' (repeated in the HIT and SUMMARY lines) does not follow from its own exponents: pi ~ exp(-beta sum E|theta_k|^2) against mu ~ exp(-(beta/2) sum E|theta_k|^2) is a factor 2 (transverse variance 1/(2 beta E) against 1/(beta E)), not 4; and (b)'s 'the chain orders in the same sense as the static law' is not proved (a C4 ratio, Peierls ASSUMED). Everything else survives and was re-verified independently: the pairing identity, asynchronous detailed balance on C4 and the 2x2 torus for both rules, synchronous reversibility w.r.t. prod_x Z_x, the exact TV values 39161524/79474827 and 122900831405716/159789899835723, the spin-wave jet -E + E^2/12, the C4 ratios\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf4b6",
+  "at_utc": "20260919T011559Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:note:SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026_06_11",
+ "type": "judgment",
+ "lane": "site",
+ "worker": "w-jonathonsmac4f50-j925d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_/symbolic_minors_and_found_unitaries.py",
+ "seed": 15478,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8b1a95d1",
+ "started_utc": "20260919T105758Z",
+ "elapsed_s": 69.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "for the generic licensed matrix with an independent symbol on every entry, every proper principal minor is momentum-free and z det has z-degrees within 0..2 for p = 2..8; 357 licensed unitaries found by least squares from random starts at p = 2..10 all have winding in {-1, 0, 1}, momentum-independent e_1..e_(p-1), vanishing intermediate e_k when w != 0, and bands that are constant (w = 0) or exactly the p-th roots of (-1)^(p+1) det (w != 0), i.e. zero curvature; no falsifier fires"
+ },
+ "review": "Read the script and its output: for the generic licensed Bloch matrix with an independent symbol on every entry, every proper principal minor is momentum-free and z det lies in span{1, z, z^2} for p = 2..8; 357 licensed unitaries found by nonlinear least squares from random starts at p = 2..10 (unitarity re-checked at 64 unseen momenta to 3e-15) all have winding in {-1, 0, 1}, momentum-independent e_1..e_(p-1) (spread below 2e-13), vanishing intermediate e_k when w != 0, and bands that are constant or exactly the p-th roots of (-1)^(p+1) det, i.e. zero curvature; no falsifier fires.",
+ "what": "Note on main: docs/SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_BOUNDED_THEOREM_NOTE_2026-06-11.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_SITE_LICENSE_TICK_DICHOTOMY_ALL_PERIODS_/<script>.py\"",
+ "stdout_sha256": "801213ea34d3bf62ae98f25a40462a9285d28369044de076bbe5b7d0253f2677",
+ "stdout_tail": "ion (flat: from constant, saturating: from p-th roots of det) 4.3e-15; max unitarity error on 64 unseen momenta 4.4e-16\n2. p = 8: 39 unitaries found from 40 starts ({'flat': 38, 'saturating': 1}); windings [-1, 0]; max e-spread over momenta 5.8e-14; max |e_k| for w != 0 8.4e-15; max band deviation (flat: from constant, saturating: from p-th roots of det) 3.2e-15; max unitarity error on 64 unseen momenta 3.3e-15\n2. p = 9: 39 unitaries found from 40 starts ({'flat': 38, 'saturating': 1}); windings [0, 1]; max e-spread over momenta 8.9e-14; max |e_k| for w != 0 7.0e-15; max band deviation (flat: from constant, saturating: from p-th roots of det) 2.8e-15; max unitarity error on 64 unseen momenta 8.9e-16\n2. p = 10: 39 unitaries found from 40 starts ({'flat': 38, 'saturating': 1}); windings [-1, 0]; max e-spread over momenta 1.8e-13; max |e_k| for w != 0 1.2e-14; max band deviation (flat: from constant, saturating: from p-th roots of det) 2.7e-15; max unitarity error on 64 unseen momenta 1.1e-15\nSUMMARY: for the generic licensed matrix with an independent symbol on every entry, every proper principal minor is momentum-free and z det has z-degrees within 0..2 for p = 2..8; 357 licensed unitaries found by least squares from random starts at p = 2..10 all have winding in {-1, 0, 1}, momentum-independent e_1..e_(p-1), vanishing intermediate e_k when w != 0, and bands that are constant (w = 0) or exactly the p-th roots of (-1)^(p+1) det (w != 0), i.e. zero curvature; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j925d",
+  "at_utc": "20260919T105917Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

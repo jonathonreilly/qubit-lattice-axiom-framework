@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-e-PR8174",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j510d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8174/sharper_budget_note_construction.py",
+ "seed": 94914,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "96ca1145",
+ "started_utc": "20260919T051514Z",
+ "elapsed_s": 11.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - block 30's 'E <= 3(|S|-1) + |A| holds on every executed tree (2/3 at most)' is sampled evidence for a false budget; the proved E <= 3(|S|-1) + 2|A| holds on W1 (16 <= 20); same finding as block 31 (PR #8175)"
+ },
+ "review": "The note's own block-30 construction (control core read unmodified from the PR branch) gives W1 (E,|A|,|S|) = (16,10,1), ratio 8/5, with its tree checks passing and seeds/amplified nodes confirmed from the automaton values; note-style random cones top out at ratio 1, while my hill-climb reaches ratios above 1 in 24/24 restarts (best 18/11, E=18, |A|=11, |S|=1), all inside the proved E <= 3(|S|-1) + 2|A|: HIT confirmed.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-e:PR8174/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "9186279a23c30548fc2d163bc1afdbe42972917ad86ea84a1649b7773dfd0f17",
+ "stdout_tail": "loaded the note's own construction from physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_core.py\n1. W1 through the note's construction: {'E': 16, 'nS': 1, 'nA': 10, 'bad': 10, 'refs': 10, 'tree_ok': True, 'own_ok': True, 'ratio': Fraction(8, 5), 'proven': True}\n2. note-style sampling (3000 random backward cones, depth 3-6): max ratio 1\n3. own hill-climb (4x4x6 window, 24 restarts x 500 toggles): best ratios 18/11 (E=18, |A|=11, |S|=1), 14/9 (E=17, |A|=9, |S|=2), 17/11 (E=17, |A|=11, |S|=1), 16/11 (E=16, |A|=11, |S|=1), 16/11 (E=16, |A|=11, |S|=1)\nHIT: confirmed - the note's own extended construction gives W1 (E, |A|, |S|) = (16, 10, 1), ratio 8/5, tree checks passing and seeds/amplified nodes confirmed from the automaton values: the sharper budget E <= 3(|S|-1) + |A| fails (16 > 10) and the executed 2/3 is a sampling maximum (note-style random cones: 1); the hill-climb finds 24 other windows with ratio > 1, best 18/11 (E=18, |A|=11, |S|=1), all within the proved E <= 3(|S|-1) + 2|A|: True\nSUMMARY: confirmed - block 30's 'E <= 3(|S|-1) + |A| holds on every executed tree (2/3 at most)' is sampled evidence for a false budget; the proved E <= 3(|S|-1) + 2|A| holds on W1 (16 <= 20); same finding as block 31 (PR #8175)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j510d",
+  "at_utc": "20260919T051526Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Block 30's sampled evidence 'E <= 3(|S|-1) + |A| holds on every executed tree (2/3 at most)', used to motivate a p ~ 500 route, is a sampling artefact: the note's own construction gives W1 (16,10,1) ratio 8/5 and a hill-climb finds 18/11 (E=18, |A|=11, |S|=1); the sharper budget is false while the proved E <= 3(|S|-1) + 2|A| holds. Same finding as block 31 (PR #8175, witnesses 8/5 and 5/3); 18/11 is a further witness.",
+  "by": "w-jonathonsmac4f50-j510d",
+  "at_utc": "20260919T051526Z"
+ }
+}

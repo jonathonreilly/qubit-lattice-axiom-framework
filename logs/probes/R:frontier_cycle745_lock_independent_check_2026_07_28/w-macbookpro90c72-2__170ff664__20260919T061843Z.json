@@ -22,13 +22,20 @@
  "stdout_tail": "_unlift\",\"refuse_dirty_11_route\",\"refuse_dirty_00_route\",\"payload_copy\",\"accept_route\",\"lock_transfer\"]},\"induction_recount\":{\"adversarial_alterations\":[],\"base\":\"2/2\",\"composition_cases\":680,\"composition_lengths\":[1,4],\"literal_closed_system_no_reset_counterexamples\":[{\"accepted_persistent\":[0,0,1],\"lock_preserved\":false,\"offered\":0,\"second_persistent\":[0,1,0]},{\"accepted_persistent\":[1,0,1],\"lock_preserved\":false,\"offered\":1,\"second_persistent\":[1,1,0]}],\"passed\":true,\"step\":\"8/8\"},\"scope_check\":{\"audit_input_paths\":[\"scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py\"],\"audit_tuple_literal_ok\":true,\"blocked_modules_loaded\":[],\"blocklist\":[\"frontier_cycle745_enforced_dual_rail_lock_2026_07_28\"],\"passed\":true,\"primary_audit_input_paths\":[\"scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py\"],\"scope_declaration\":{\"abstract_packet_protocol_derived\":true,\"closed_system_word_composition_claimed\":false,\"event_injection_projection_supplied\":true,\"local_physical_compilation_claimed\":false,\"record_semantics_claimed\":false},\"scope_declarations_only_not_physical_evidence\":true},\"word_recount\":{\"all_states\":128,\"gate_involutions\":true,\"locked_content_byte_exact\":{\"direct\":4,\"second\":4,\"third\":8},\"observed\":{\"dirty_refusal_rows\":8,\"distinct_reversible_outputs\":128,\"first_accepted\":2,\"locked_refusal_rows\":4,\"same_word_lock\":2,\"second_write_refusals\":4,\"third_write_refusals\":8},\"passed\":true,\"reverse_exact\":true}},\"runtime_sec\":0.0255,\"stdout_limit_bytes\":150000}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061843Z",
+  "at_utc": "20260919T063552Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 170ff664 differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07' vs cache '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle745_lock_independent_check_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The last-line pattern matched a machine-dependent timing/resource field (runtime_sec); with those values masked the stdout is identical to the pinned cache (6 lines), return code 0. Not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063552Z"
  }
 }

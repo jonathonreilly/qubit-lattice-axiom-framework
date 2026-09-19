@@ -20,13 +20,20 @@
  "stdout_tail": "==========================================================================\nPASS D01 injected H0 follows exact STATUS -> AUX -> A_0_0 reject path then quiet :: []\nPASS D02 correct/reject interface is quiet under compatible Cycle-95/Cycle-93 rows :: []\nPASS D03 all eight word flips plus wrong VALID/READY stop before status and payload :: []\nPASS D04 all ten corrupt terminals retain eight exact rail slices :: []\nPASS D05 corrupt graph census is executable and pinned :: [(760, 2274, (29,)), (680, 2022, (28,)), (600, 1770, (27,)), (440, 1186, (26,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]\n\n===============================================================================\nE - Proper-cubic covariance and bounded claim discipline\n===============================================================================\nPASS E01 all 179,904 raw proper-cubic images preserve output :: []\nPASS E02 all positive/fault/corrupt terminal rotations expose only next rail :: []\nFAIL E03 note names exact status-gated substitution\nFAIL E04 note names positive reduced literal-cap cage\nFAIL E05 note carries full N1-N8 discipline\nFAIL E06 note avoids a complete reusable-harness claim\nFAIL E07 note makes no axiom claim\nPASS E08 Cycle 109 writes only runner and review note\n\nGROWN=46 SPINE_JOIN_CANONICAL=17 HANDOFF_CANONICAL=8 UNION_RAW=7496\nLOCAL_STATES=11320 LOCAL_EDGES=54066 PRODUCT_STATES=1098040 PRODUCT_EDGES=6331122\nPASS=26 FAIL=6\nRESULT=FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T062257Z",
+  "at_utc": "20260919T063553Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d0c9746c differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL A01 note exists' (PASS=26 FAIL=6); repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063553Z"
  }
 }

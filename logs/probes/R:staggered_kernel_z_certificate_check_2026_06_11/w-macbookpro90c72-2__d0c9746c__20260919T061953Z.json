@@ -23,14 +23,21 @@
  "stdout_tail": "=============================\n[PASS] 15. [D] weighted witness K1(c=1/2) (off the two-class surface -- anisotropic amplitude -- but inside FSB-K's realized class): zero set still 8 points (counts 8, 8 at L = 4, 8), detector V = diag(2.0000, 2.0000, 1.0000), det = 4: (Z) still HOLDS but with weight sum 8/4 = 2 != 1 -- the machinery tracks cone data quantitatively, it is not a rubber stamp\n[PASS] 16. [D] broken-cone witness K1(c=0): the detector reports V = diag(2.0000, 2.0000, 0.0e+00) SINGULAR (axis-3 speed 0), and the zero set goes extended (16, 32 = 4L at L = 4, 8) -- singular-V detection works on a perturbed kernel\n[PASS] 17. [D] quadratic comparator (scalar NN + on-site -6, off-surface): POINT-LIKE zero set (1, 1, 1) yet all directional speeds < 1e-5 => V = 0 singular -- the two (Z) clauses are detected independently (point-likeness alone does not pass)\n[PASS] 18. [D] non-vacuity of the decision: the (Z) machinery over {K1, K1(c=1/2), K0, K1(c=0), comparator} returns {pass, pass, fail, fail, fail} from computed zero counts and cone speeds ONLY, through one code path -- the flux certificates of check 1 are never read by the decision; no flux label, branch label, count-3, or species input enters it\nRESIDUAL (declared-open): the falsification witnesses K1(c=1/2), K1(c=0), and the comparator are declared OFF the licensed two-class surface (anisotropic amplitude / on-site sector); they exercise the machinery, they are not surface members (boundary B-Z-W)\n\nTOTAL: PASS=17 FAIL=1\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061955Z",
+  "at_utc": "20260919T063553Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d0c9746c differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=17 FAIL=1' vs cache 'TOTAL: PASS=18 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Text-guard staleness on main: check 10 ('[B] definition match (textual)') requires the literal 'is finite, and for each' in docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md; 53fdbad954 (2026-07-10, 'require nonempty Z(h)') rewrote Hypothesis (Z) to 'is finite and nonempty, and for each', after the runner and cache landed (7edaf316b2, 2026-06-11). The other three guarded phrases are still present, and the other 17 checks pass. The hypothesis the certificate matches is now stronger (nonempty zero set), and the kernel's 8 corner zeros are certified by checks 5-8, but the textual definition-match check no longer confirms it.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063553Z"
  }
 }

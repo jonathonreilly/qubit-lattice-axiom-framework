@@ -22,13 +22,20 @@
  "stdout_tail": "ent_cycle332_2026_07_18.py': 'de7883fe45ce248427e8e44294d77fce56394e5ed14724e9056a65b43e0a4415'}, 'all_match': True}\nPASS C Cycle-332 boundary certificate remains the exact five-bit delegate :: {'path': 'scripts/physical_transition_occurrence_close_tournament_cycle332_2026_07_18.py', 'function': 'boundary_certificate', 'exact_delegate': True}\nPASS D complete six-bit receiver table equals the conjunction :: {'rows': 64, 'mismatches': 0, 'certificate_ones': 2, 'receiver_ones': 1, 'single_control_deletion_survivors': 0}\nPASS E Cycle-610 adapter and boundary controls match the named conditions :: {'two_rows': {'0': 'refused_supplied', '1': 'admitted'}, 'supplied_deletions': {'certificate': 'no_opportunity', 'binder': 'no_opportunity', 'actuality': 'refused_supplied', 'law_domain': 'refused_supplied'}, 'exhausted_capacity': 'exhausted', 'repeated_tick': ('admitted', 'refused_fresh'), 'all_match': True}\nPASS F every runtime-loaded repository module is cache-fingerprinted :: {'loaded_repository_modules': 41, 'declared_inputs': 46, 'undeclared': []}\nPASS G runtime remains within the declared audit timeout :: {'runtime_sec': 0.054841, 'timeout_sec': 120}\nSUMMARY_JSON {\"adapter_rows\":{\"0\":\"refused_supplied\",\"1\":\"admitted\"},\"all_pass\":true,\"audit_input_count\":46,\"fail\":0,\"pass\":7,\"receiver_mismatches\":0,\"receiver_rows\":64,\"receiver_successes\":1,\"runtime_loaded_repository_modules\":41,\"runtime_sec\":0.054841,\"scope\":\"finite Boolean receiver-success and conditional Cycle-610 gate adapter\"}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061843Z",
+  "at_utc": "20260919T063552Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 170ff664 differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run 'SUMMARY_JSON {\"adapter_rows\":{\"0\":\"refused_supplied\",\"1\":\"admitted\"},\"all_pass\":' vs cache 'SUMMARY_JSON {\"adapter_rows\":{\"0\":\"refused_supplied\",\"1\":\"admitted\"},\"all_pass\":'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle747_receiver_success_gate_adapter_2026_07_30.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The last-line pattern matched a machine-dependent timing/resource field (runtime_sec); with those values masked the stdout is identical to the pinned cache (8 lines), return code 0. Not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063552Z"
  }
 }

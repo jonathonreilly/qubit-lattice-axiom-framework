@@ -22,13 +22,20 @@
  "stdout_tail": "lsifier\":{\"actual_convention\":\"insert h only at marked edge s=0\",\"examples\":[{\"actual_refs\":[0,0,0,0,0,0,0,0,0,0,0],\"distributed_h_refs\":[0,0,1,0,1,0,1,0,1,0,1],\"distributed_row_fails_marked_law\":true,\"k\":1,\"mask\":1},{\"actual_refs\":[0,1,0,0,0,0,0,0,0,0,0],\"distributed_h_refs\":[0,1,1,0,1,0,1,0,1,0,1],\"distributed_row_fails_marked_law\":true,\"k\":1,\"mask\":2},{\"actual_refs\":[0,1,1,0,0,0,0,0,0,0,0],\"distributed_h_refs\":[0,1,0,0,1,0,1,0,1,0,1],\"distributed_row_fails_marked_law\":true,\"k\":1,\"mask\":4}],\"mismatches_failing_marked_law\":99,\"pass\":true,\"rejected_convention\":\"insert h at every recurrence edge\",\"row_mismatches\":99},\"pass\":true,\"report_sha256\":\"22375660d62265e5ea6d2f0841a01295d19acab7830608ba4fa28950a8e2f8b0\",\"runtime_seconds\":0.309148,\"static_template\":{\"failures\":[],\"gauge_normalized_covariance\":{\"definition\":\"passive A/reference translation; when h=1 toggle reference sites 1..shift; then complement the reference row iff its translated r_0 is one\",\"matches\":2189,\"matches_by_h\":[1100,1089],\"supplied_gauge\":\"r_0 = 0 at the marked cut\",\"total\":2189,\"total_by_h\":[1100,1089]},\"h0_cases\":100,\"h1_cases\":99,\"h1_multitoken_cases\":88,\"literal_passive_covariance_diagnostic\":{\"claimed_as_theorem\":false,\"failures\":1482,\"matches\":707,\"matches_by_h\":[608,99],\"total\":2189,\"total_by_h\":[1100,1089]},\"marked_edge_law_cases\":199,\"pass\":true,\"table_sha256\":\"982a97ba0f0094c47302fb9c5da4e6887bb2d1574a6041bc2667bcbb0db4cd1c\",\"template_cases\":199},\"terminal\":\"CYCLE736_STATIC_TEMPLATE_PREFIX_PASS\"}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061554Z",
+  "at_utc": "20260919T063552Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 170ff664 differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEO' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEO'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle736_pairwise_separated_multisource_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The last line is the runner's JSON report; it differs from the pinned cache only in the machine-dependent timing field (runtime_seconds, seconds) and in report_sha256, which the runner computes over the whole report including that timing field. Recomputed: the run's and the cache's report_sha256 each equal the SHA-256 of their own report, and the two reports are identical once timing and report_sha256 are dropped; all earlier stdout lines match the cache (10 lines), return code 0. Not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063552Z"
  }
 }

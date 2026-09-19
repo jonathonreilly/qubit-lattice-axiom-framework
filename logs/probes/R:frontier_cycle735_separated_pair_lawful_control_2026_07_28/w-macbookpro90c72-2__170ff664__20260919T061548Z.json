@@ -22,13 +22,20 @@
  "stdout_tail": "rce_interpretation\":\"outside this claim\",\"result\":\"externally parameterized joint templates and bare Cycle-719 two-token transport\"},\"guard_specific_adjacent_recount\":{\"distance\":1,\"expected_violation_rows\":22,\"failures\":[],\"pass\":true,\"positions\":11,\"scope\":\"one inherited Cycle-724/734 radius-one guard predicate at step 0\",\"used_as_controller_domain_boundary\":false,\"violation_rows\":22},\"joint_template\":{\"A_deletions\":88,\"cases\":44,\"covariance_failures\":[],\"deletion_cases\":242,\"deletion_failures\":[],\"expected_A_deletions\":88,\"expected_cases\":44,\"expected_deletion_cases\":242,\"expected_reference_deletions\":154,\"expected_translation_covariance_identities\":484,\"expected_unique_unordered_pairs\":44,\"parameters\":{\"distances\":[2,3,4,5],\"orientation\":\"positive-shortest representative\",\"positions\":11,\"ring_stations\":11},\"pass\":true,\"position0_word_sha256_by_distance\":{\"2\":\"40850fdfa465225e247c2880f7960be8875b07a30041a242155bcd4b8f3df070\",\"3\":\"792fdac961816019499c9028c467276f841a0d59a05f293e0e8b36acc98c9c2f\",\"4\":\"53fcb9ea1659b046dd5d01a2a0db7401feaddd27ffae08959f71881e17dba78e\",\"5\":\"e818d775484f3008c7198849e2e985c817e1e8815f2716bd249ba2d006186fd8\"},\"reference_deletions\":154,\"template_failures\":[],\"translation_covariance_identities\":484,\"unique_unordered_pairs\":44,\"word_sizes_by_distance\":{\"2\":4,\"3\":5,\"4\":6,\"5\":7}},\"pass\":true,\"report_sha256\":\"963fc1d0902fd781c4dcb53abaa7eb3137ef8e6971feb44afd6b40005089fc70\",\"runtime_seconds\":0.663755,\"terminal\":\"CYCLE735_BARE_TWO_TOKEN_TRANSPORT_PASS\"}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061549Z",
+  "at_utc": "20260919T063552Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 170ff664 differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle719_two_rail_recurrent_controller_c' vs cache '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle719_two_rail_recurrent_controller_c'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle735_separated_pair_lawful_control_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The last line is the runner's JSON report; it differs from the pinned cache only in the machine-dependent timing field (runtime_seconds, seconds) and in report_sha256, which the runner computes over the whole report including that timing field. Recomputed: the run's and the cache's report_sha256 each equal the SHA-256 of their own report, and the two reports are identical once timing and report_sha256 are dropped; all earlier stdout lines match the cache (8 lines), return code 0. Not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063552Z"
  }
 }

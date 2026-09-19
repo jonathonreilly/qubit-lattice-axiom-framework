@@ -22,13 +22,20 @@
  "stdout_tail": "on_parameter\":10,\"reference_sites\":[0],\"word_sha256\":\"b0c08833e904f97ecdc934310cfa115318867b240f18459b69945235e3140a8b\"}],\"semantic_gates\":3,\"stations\":11},\"pair_word_size\":3,\"pass\":true,\"remaining_supplied_components\":[\"external application-position parameter\",\"finite oriented geometry\",\"program content/order\",\"passive-only covariance\"],\"report_sha256\":\"edc0e90d7070ceba5185c12167eb2b7cba515c95ac8a32a44dd50b8e6dab6052\",\"runtime_seconds\":0.435651,\"source_selection_remains_supplied\":true,\"supplied_position_template_audit\":{\"all_position_words_same_size\":true,\"audit_pass\":true,\"distinguished_site_constants\":[],\"external_position_parameter\":true,\"fixed_unrolling_gate_count\":3,\"gate_census\":{\"CNOT\":0,\"TOF\":0,\"X\":3},\"integer_constants\":[1,1],\"no_hardcoded_absolute_site\":true,\"only_literal_M2_X_gates\":true,\"orientation_remains_supplied\":true,\"position_parameter_loads\":3,\"program_content_order_untouched\":true,\"ring_geometry_remains_supplied\":true,\"runtime_branch_or_iteration_nodes\":[],\"runtime_state_parameters\":[],\"template_function_parameters\":[\"layout\",\"position\"]},\"terminal\":\"CYCLE734_PAIRED_EXCITATION_GENESIS_PASS\",\"translation_covariance\":{\"covariance_kind\":\"exact passive conjugation under supplied oriented ring translation\",\"expected_identities\":121,\"identities_tested\":121,\"identity\":\"T_shift W(position) T_shift^-1 = W(position+shift mod 11)\",\"identity_failures\":[],\"positions\":11,\"shifts_per_position\":11,\"translation_family_exact\":true,\"translation_normalization_failures\":[]}}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061544Z",
+  "at_utc": "20260919T063552Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 170ff664 differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle734_paired_excitation_genesis_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Stale pin on main: all checks pass and every stdout line but the final JSON report matches the pinned cache; the report's input_contract.input_manifest_sha256 (a SHA-256 over the bytes of all 87 declared input paths) is e6434298... in the run vs 67f5615b... in the cache (159d3fc24e, 2026-07-30), because input note FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md gained an 11-line 'Complete authenticated transcript transport (2026-07-29)' section in 9d102042de (2026-07-31) after the cache was generated; report_sha256 and runtime_seconds differ accordingly. The added section states it changes no calculation or claim boundary; the pinned cache records an input digest that no longer matches main.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063552Z"
  }
 }

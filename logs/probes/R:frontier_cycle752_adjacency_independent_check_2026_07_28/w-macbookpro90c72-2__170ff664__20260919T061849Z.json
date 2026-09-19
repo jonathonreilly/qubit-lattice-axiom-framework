@@ -22,13 +22,20 @@
  "stdout_tail": "r_hits_per_class_histogram\":{\"0\":1535,\"1\":511},\"cases_exhausted\":22506,\"classes_passing_all_adjacent_starts\":0,\"compiled_refutation_witness\":{\"allocator_correct\":true,\"clean_return_and_literal_inverse\":true,\"compiled_gate_count\":6668,\"declared_route2_relaxed_invariant_rows\":0,\"edge_orientation_mask\":2,\"fixed_station_Q_order\":[1,0,10,9,8,7,6,5,4,3,2],\"original_six_term_invariant_rows\":22,\"output_sha256\":\"3513b562570c8ee4723fad82900dea66e6df5933fe40ac5e06a85bc513fea213\",\"position\":0,\"refutes_primary_scoped_no_go\":true,\"relaxed_invariant_rows\":0,\"runtime_occupancy_branch\":false,\"strict_invariant_rows\":22,\"strictly_lawful\":false,\"word_multiset_matches_primary\":true},\"declared_relaxed_law_allocator_correct_cases\":511,\"expected_orientation_classes\":2046,\"first_relaxed_allocator_hit\":{\"edge_orientation_mask\":2,\"fixed_station_Q_order\":[1,0,10,9,8,7,6,5,4,3,2],\"output_sha256\":\"3513b562570c8ee4723fad82900dea66e6df5933fe40ac5e06a85bc513fea213\",\"position\":0,\"relaxed_invariant_rows\":0,\"strict_invariant_rows\":22,\"strictly_lawful\":false},\"maximum_allocator_hits_in_any_class\":1,\"model\":\"all acyclic orientations of the 11 adjacent ring edges induced by fixed global station orders\",\"orientation_classes_exhausted\":2046,\"strict_law_cases\":0,\"topological_realization_failures\":0},\"scope\":\"only the enumerated Cycle-752 five-block schedules and fixed-Q-order equivalence classes on the held adjacent two-token ring-11 fixture\",\"v1_missing_premise_claim_refuted\":true,\"witness_verification_pass\":true}}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061935Z",
+  "at_utc": "20260919T063552Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 170ff664 differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle752_adjacency_independent_check_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The last line is the runner's JSON report; it differs from the pinned cache only in the machine-dependent timing field (runtime_seconds, seconds) and in report_sha256, which the runner computes over the whole report including that timing field. Recomputed: the run's and the cache's report_sha256 each equal the SHA-256 of their own report, and the two reports are identical once timing and report_sha256 are dropped; all earlier stdout lines match the cache (12 lines), return code 0. Not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063552Z"
  }
 }

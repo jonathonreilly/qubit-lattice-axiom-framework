@@ -22,13 +22,20 @@
  "stdout_tail": "},\"parent_open_gate_closed\":false,\"physical_or_coherent_channel_constructed\":false,\"relative_phase_parameter\":\"arbitrary\",\"relative_phase_selected\":false,\"sector_intertwining_premises_required\":true,\"sector_isometry_premises_required\":true,\"sector_maps_constructed_here\":false},\"controls\":{\"parity_flip_detected\":true},\"named_checks_passed\":7,\"named_checks_total\":7,\"parent\":{\"current_surface_match\":true,\"dictionary_sha256\":\"dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e\",\"family_counts\":{\"coin\":120,\"contact\":120,\"free\":48,\"reverse\":12,\"seam\":12},\"generator_rows\":312,\"sector_exponent_pair\":[48,47],\"shape\":[2,2,2],\"signed_pullbacks_exact_in_supplied_sectors\":true},\"parity_certificate\":{\"all_preserve_total_matter_parity\":true,\"family_surface_pass_counts\":{\"coin\":{\"companion_physical\":120,\"reference_physical\":120,\"target\":120},\"contact\":{\"companion_physical\":120,\"reference_physical\":120,\"target\":120},\"free\":{\"companion_physical\":48,\"reference_physical\":48,\"target\":48},\"reverse\":{\"companion_physical\":12,\"reference_physical\":12,\"target\":12},\"seam\":{\"companion_physical\":12,\"reference_physical\":12,\"target\":12}},\"matter_qubits\":48,\"parity_failures\":[],\"representatives_tested\":936},\"pass\":true,\"report_sha256\":\"03e025db600dc01e58858640341a5426377fc4a3f48998604ddc8b491868dcd0\",\"runtime_seconds\":0.3752251659752801,\"scope\":{\"finite_dictionary_only\":true,\"shape\":[2,2,2],\"state_space_exhaustion_claimed\":false},\"status\":\"CYCLE733_FINITE_BOX_CONDITIONAL_DIRECT_SUM_LEMMA_PASS\"}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061542Z",
+  "at_utc": "20260919T063552Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 170ff664 differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '{\"boundary\":{\"actual_sector_maps\":\"not_constructed\",\"coherent_channel\":\"open\",\"o' vs cache '{\"boundary\":{\"actual_sector_maps\":\"not_constructed\",\"coherent_channel\":\"open\",\"o'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle733_sector_summed_companion_channel_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The last line is the runner's JSON report; it differs from the pinned cache only in the machine-dependent timing field (runtime_seconds) and in report_sha256, which the runner computes over the whole report including that timing field. Recomputed: the run's and the cache's report_sha256 each equal the SHA-256 of their own report, and the two reports are identical once timing and report_sha256 are dropped; all earlier stdout lines match the cache (10 lines), return code 0. Not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063552Z"
  }
 }

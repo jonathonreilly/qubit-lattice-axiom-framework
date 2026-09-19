@@ -22,13 +22,20 @@
  "stdout_tail": "\":9801,\"exact\":true,\"formula\":[1,27,324,2277,10395,32319,69768,104652,107406,72930,30888,7371,819,27],\"marked_edge_reference_failures\":0,\"n3_multi_token_degenerate\":true,\"total\":439204}},\"3\":{\"bare\":{\"configuration_steps\":12,\"data_changed_configurations\":3,\"exact\":true,\"inverse_failures\":0,\"rail_or_adjacency_failures\":0},\"prefix\":{\"accepts\":4,\"exact\":true,\"failures\":0,\"prefixes\":2,\"refusals\":4,\"reversibility_failures\":0},\"static\":{\"counts\":[1,3],\"covariance_failures\":0,\"covariance_identities\":12,\"exact\":true,\"formula\":[1,3],\"marked_edge_reference_failures\":0,\"n3_multi_token_degenerate\":true,\"total\":4}}},\"gate_export\":{\"command\":[\"/opt/homebrew/opt/python@3.13/bin/python3.13\",\"scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py\",\"--export-gates\"],\"export_sha256\":\"3eb5e45b2587f8c05d06aea357ee0c2852617aa7c08b5b3b3f86d96ac79ff050\",\"returncode\":0,\"stderr\":\"\",\"stdout_bytes\":1100657},\"joint_live_primary\":{\"command\":[\"/opt/homebrew/opt/python@3.13/bin/python3.13\",\"scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py\"],\"report_sha256\":\"538fb2c20f4b774c5908a36e5dbdace56a4ab4a2c773403fccd3fa8a97703e55\",\"returncode\":0,\"stderr\":\"\",\"stdout_bytes\":18879},\"pass\":true,\"report_sha256\":\"dd941931f7dddbe600dcf2ec8b87830de8c92cb8561ea7d970a52c572dc14165\",\"runtime_seconds\":121.61970837495755,\"scope\":\"selected constructor counts and four finite census/static/prefix/bare diagnostics; no framework or controller theorem\",\"terminal\":\"CYCLE737_SELECTED_DIAGNOSTICS_INDEPENDENT_PASS\"}\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T061756Z",
+  "at_utc": "20260919T063552Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 170ff664 differs from the current HEAD e3424499 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle737_ring_family_uniformity_2026_07_' vs cache '{\"AUDIT_INPUT_PATHS\":[\"scripts/frontier_cycle737_ring_family_uniformity_2026_07_'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle737_ring_family_independent_check_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The last line is the check's JSON report; all 8 earlier stdout lines match the pinned cache. The report differs only in machine-dependent fields: command[0] of joint_live_primary and gate_export is sys.executable (/opt/homebrew/opt/python@3.13/bin/python3.13 here vs /usr/local/bin/python3 in the cache), runtime_seconds, joint_live_primary.report_sha256 (the live primary's own report hash, which covers its runtime_seconds; the primary's standalone run is the same timing-only case), and the top-level report_sha256 (recomputed: each equals the SHA-256 of its own report). Return code 0, all checks pass. Not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T063552Z"
  }
 }

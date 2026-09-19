@@ -1,0 +1,96 @@
+== extension_count_wrong
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=38 FAIL=1
+== recorded_set_forged
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=38 FAIL=1
+== nonmonotone_order_accepted
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=38 FAIL=1
+== antidiagonal_sweep_accepted
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=38 FAIL=1
+== bridge_identity_broken
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=38 FAIL=1
+== transpose_symmetry_broken
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=38 FAIL=1
+== product_formula_mismatch
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=38 FAIL=1
+== asymmetric_bridge_symmetry_forged
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=38 FAIL=1
+== column_chain_forged
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== corner_law_wrong_denominator
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== corner_independence_forged
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== diagonal_pair_law_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== row_kernel_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== staircase_claimed_chain
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== mirror_law_equal_claimed
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== corner_order_reversal_broken
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== snake_column_claimed_chain
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== snake_row_kernel_not_invariant
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== minimal_staircase_conditional_off
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== constant_rule_defect_claimed
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== claim_static_equals_formation
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1
+== claim_all_orders_same_law
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1
+== claim_staircases_chains
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1
+== claim_author_in_theorem
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1

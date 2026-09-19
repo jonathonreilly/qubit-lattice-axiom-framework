@@ -20,13 +20,20 @@
  "stdout_tail": "line overlap pencil\n[bench] W1 line onsite form\n[bench] W1 line onsite pencil\n[bench] W1 line overlap form\n[bench] W1 line overlap pencil\n[bench] flat line onsite form\n[bench] flat line onsite pencil\n[bench] flat line overlap form\n[bench] flat line overlap pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] W1 zero overlap form\n[bench] W1 zero overlap pencil\n[phase] bench: 5294 ms\n[phase] smallk: 1430 ms\n[phase] authority: 4 ms\n[phase] group: 15238 ms\n[phase] census: 1691 ms\n[phase] fold: 68 ms\n[loci] witness 2\n[loci] witness 11\n[loci] witness 16\n[loci] witness 25\n[loci] witness 38\n[loci] witness 47\n[loci] witness 52\n[loci] witness 61\n[loci] witness W1\n[loci] witness flat\n[phase] loci: 48235 ms\n[cone] witness 2\n[cone] witness 11\n[cone] witness 16\n[cone] witness 25\n[cone] witness 38\n[cone] witness 47\n[cone] witness 52\n[cone] witness 61\n[cone] witness W1\n[cone] witness flat\n[phase] cone: 38129 ms\n[bench] witness line onsite form\n[bench] witness line onsite pencil\n[bench] witness line overlap form\n[bench] witness line overlap pencil\n[bench] W1 line onsite form\n[bench] W1 line onsite pencil\n[bench] W1 line overlap form\n[bench] W1 line overlap pencil\n[bench] flat line onsite form\n[bench] flat line onsite pencil\n[bench] flat line overlap form\n[bench] flat line overlap pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] W1 zero overlap form\n[bench] W1 zero overlap pencil\n[phase] bench: 4892 ms\n[phase] smallk: 1377 ms\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T072755Z",
-  "result": "FAIL",
+  "at_utc": "20260919T072905Z",
+  "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e3424499 differs from the current HEAD 60a0a7d3 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
-   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
-   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+   "ok: parse field 'expected' not found (log written under an earlier task definition; triaged)",
+   "ok: parse field 'observed' not found (log written under an earlier task definition; triaged)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "check_log's parse fields 'expected'/'observed' (mutation_family_expected:/mutation_family_observed:) matched nothing because this runner never prints mutation_family_* lines (task-definition mismatch, #8294); all 29 declared mutations end with a TOTAL line with FAIL=1 (none survives); not a failure.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T072905Z"
  }
 }

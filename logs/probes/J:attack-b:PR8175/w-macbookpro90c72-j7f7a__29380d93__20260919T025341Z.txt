@@ -1,0 +1,4 @@
+W1: E=16 |A|=10 |S|=1 sharp_rhs=10 hold=False loose_rhs=20 hold=True
+W2: E=20 |A|=12 |S|=1 sharp_rhs=12 hold=False loose_rhs=24 hold=True
+W3: E=23 |A|=12 |S|=2 sharp_rhs=15 hold=False loose_rhs=27 hold=True
+SUMMARY: SAME TEST BOTH SIDES on the two budgets (PR #8175): on W1/W2/W3 the identical E vs rhs test finds the sharper bound false and block 30's E<=3(|S|-1)+2|A| true; the separation holds as written

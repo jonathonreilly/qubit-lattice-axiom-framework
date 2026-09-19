@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-lightcone-formation-a6",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jdb2a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-formation/referee_w-jonathonsmac4f50-jdb2a/check.py",
+ "seed": 82206,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9d21ec55",
+ "started_utc": "20260919T014326Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 5 - its stated range of the kernel prefactor, 7/(2(1 - E/14)) in [7/4, 7/2] on E in (0, 12], is wrong: the prefactor increases from 7/2 to 49/2; and step 6's conditional uniqueness (beta < 3/7 from ||Cov_vMF|| <= 1/3) does not follow, because the Wasserstein influence exceeds the mean map's Lipschitz constant (witness at k = 3), so proving A' <= 1/3 does not close it. What holds, re-verified: the 7-stencil pairing and its failure for the backward stencil, reversibility w.r.t. prod Z, the doubled-graph spectrum {E, 14 - E} (symbolically and on (Z/3)^3), the identity 1/(1 - phi^2) = 49/(E(14 - E)), the linearised coefficient 7 beta/3, and log(sinh k/k) = k^2/6 - k^4/180 + O(k^6)"
+ },
+ "review": "Referee of lightcone-formation a6 (grok-4.6): independent checks pass 5 of 5 (7-stencil pairing and a unit-vector backward counterexample, the doubled-graph spectrum {E, 14-E} symbolically and on (Z/3)^3, the kernel identity with the prefactor range [7/2, 49/2], the mean-map Jacobian and the W1 witness at k=3, the log sinh series), so reversibility, the spectrum and the identity hold, but the attempt fails at step 5 (it states the prefactor range as [7/4, 7/2]) and step 6's conditional uniqueness does not follow from the mean map; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-formation:a6/; its files are probes/work/derive/lightcone-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0d5bc00e8d33967d4fe2f9e0f31227e93974f396fa0706bc67994b948c0fc010",
+ "stdout_tail": "S: K3 1/(1 - phi^2) = 49/(E(14 - E)) = 7/(2E(1 - E/14)); the prefactor 7/(2(1 - E/14)) increases from 7/2 (E -> 0) to 49/2 (E = 12): its range on (0, 12] is [7/2, 49/2], not the stated [7/4, 7/2] (7/4 would need E = -14)\nPASS: K4 A'(0) = 1/3 = lim A(k)/k, so the mean map has Jacobian (beta/3) I at 0, and A' < 1/3, A/k <= 1/3 on (0, 30); but at k = 3 the 1-Lipschitz f = -|s - n| has Cov(f, s.n) = 0.113646 > A'(3) = 0.101147: the Wasserstein influence of a predecessor is not the mean map's Lipschitz constant, so the conditional uniqueness 'for beta < 3/7 under ||Cov|| <= 1/3' and the remark that proving A' <= 1/3 would close it do not follow (A' <= 1/3 is true, and the gap remains)\nPASS: K5 log(sinh k/k) = k**6/2835 - k**4/180 + k**2/6 (series to k^6), i.e. k^2/6 - k^4/180 + O(k^6)\nSUMMARY: fails at step 5 - its stated range of the kernel prefactor, 7/(2(1 - E/14)) in [7/4, 7/2] on E in (0, 12], is wrong: the prefactor increases from 7/2 to 49/2; and step 6's conditional uniqueness (beta < 3/7 from ||Cov_vMF|| <= 1/3) does not follow, because the Wasserstein influence exceeds the mean map's Lipschitz constant (witness at k = 3), so proving A' <= 1/3 does not close it. What holds, re-verified: the 7-stencil pairing and its failure for the backward stencil, reversibility w.r.t. prod Z, the doubled-graph spectrum {E, 14 - E} (symbolically and on (Z/3)^3), the identity 1/(1 - phi^2) = 49/(E(14 - E)), the linearised coefficient 7 beta/3, and log(sinh k/k) = k^2/6 - k^4/180 + O(k^6)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdb2a",
+  "at_utc": "20260919T014326Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

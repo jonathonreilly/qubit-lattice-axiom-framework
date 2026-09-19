@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8027",
+ "type": "judgment",
+ "lane": "static-geodesic-block37-20260907",
+ "worker": "w-macbookpro90c72-j808d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8027/executed_rho_examples.py",
+ "seed": 91260,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8bc8d13c",
+ "started_utc": "20260919T041420Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (c) EXECUTED NUMBERS - rho_(1,1)=1, rho_(2,1)=\u221a2, rho_(2,2)=\u221a5 and path counts 2,3,6 hold; pattern has no purchase"
+ },
+ "review": "rho_(1,1)=1, rho_(2,1)=\u221a2, rho_(2,2)=\u221a5 and path counts 2,3,6 hold, so pattern (c) has no purchase",
+ "what": "PR #8027 ([physics-loop] static-geodesic block37 conditional-support): attack GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin codex/static-geodesic-block37-20260907; git show origin/codex/static-geodesic-block37-20260907:<note>. Create probes/work/pr8027/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8027/<script>.py\"",
+ "stdout_sha256": "3f4dbc0c6bddab09bfd08c0620df1922c732700c774d612b2e5191ef79628015",
+ "stdout_tail": "npaths (1,1,0)=2 (2,1,0)=3 (2,2,0)=6\nrho(1,1)=1 rho(2,1)=sqrt(2) rho(2,2)=sqrt(5)\nSUMMARY: attack pattern (c) EXECUTED NUMBERS - rho_(1,1)=1, rho_(2,1)=\u221a2, rho_(2,2)=\u221a5 and path counts 2,3,6 hold; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j808d",
+  "at_utc": "20260919T041421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

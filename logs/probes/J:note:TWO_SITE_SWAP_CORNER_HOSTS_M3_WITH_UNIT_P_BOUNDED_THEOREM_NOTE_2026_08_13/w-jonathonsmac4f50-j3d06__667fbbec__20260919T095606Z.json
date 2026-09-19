@@ -1,0 +1,32 @@
+{
+ "task": "J:note:TWO_SITE_SWAP_CORNER_HOSTS_M3_WITH_UNIT_P_BOUNDED_THEOREM_NOTE_2026_08_13",
+ "type": "judgment",
+ "lane": "two",
+ "worker": "w-jonathonsmac4f50-j3d06",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_TWO_SITE_SWAP_CORNER_HOSTS_M3_WITH_UNIT_/symmetrizer_corner_ladder.py",
+ "seed": 11766,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "667fbbec",
+ "started_utc": "20260919T095606Z",
+ "elapsed_s": 32.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "on the displayed objects F is Hermitian with F^2 = I and Tr F = 2, p is a rank-3 projection, p != I_4, the 16 compressed units span dimension 9, phi is an algebra isomorphism with phi(I_3) = p and the ON units are *-matrix units summing to p (the three predicates hold as stated); the two-site swap on C^d x C^d has rank d(d+1)/2 for d = 2..8 with corner dimension rank^2 (d <= 4), and the n-site qubit symmetrizer has rank n+1 for n = 2..7 with the Dicke map phi(I) = P_sym and exact matrix-unit tables (n <= 5); no predicate fails"
+ },
+ "review": "Read the script and its output: on the displayed objects F is Hermitian with F^2 = I and trace 2, p is a rank-3 projection different from I_4, the 16 compressed units span dimension 9, the rational map phi is an algebra isomorphism with phi(I_3) = p and the exact ON units are *-matrix units summing to p, so the note's three predicates hold; beyond, the two-site swap on C^d x C^d has rank d(d+1)/2 for d = 2..8 (corner dimension rank^2 for d <= 4) and the n-site qubit symmetrizer has rank n+1 for n = 2..7 with the Dicke map sending the unit to P_sym; no predicate fails.",
+ "what": "Note on main: docs/TWO_SITE_SWAP_CORNER_HOSTS_M3_WITH_UNIT_P_BOUNDED_THEOREM_NOTE_2026-08-13.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_TWO_SITE_SWAP_CORNER_HOSTS_M3_WITH_UNIT_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_TWO_SITE_SWAP_CORNER_HOSTS_M3_WITH_UNIT_/<script>.py\"",
+ "stdout_sha256": "588a723d65b698d290ea4f974395012f374d832b16ebd81cd7e1b9b1b02de076",
+ "stdout_tail": " {'rank': 21, 'expected d(d+1)/2': 21, 'p != I': True, 'idempotent': True}, 7: {'rank': 28, 'expected d(d+1)/2': 28, 'p != I': True, 'idempotent': True}, 8: {'rank': 36, 'expected d(d+1)/2': 36, 'p != I': True, 'idempotent': True}}\n3. n-site qubit symmetrizer: {2: {'rank P_sym': 3, 'expected n+1': 3, 'phi(I) = P_sym': True, 'phi matrix-unit table': True, 'P_sym != I': True}, 3: {'rank P_sym': 4, 'expected n+1': 4, 'phi(I) = P_sym': True, 'phi matrix-unit table': True, 'P_sym != I': True}, 4: {'rank P_sym': 5, 'expected n+1': 5, 'phi(I) = P_sym': True, 'phi matrix-unit table': True, 'P_sym != I': True}, 5: {'rank P_sym': 6, 'expected n+1': 6, 'phi(I) = P_sym': True, 'phi matrix-unit table': True, 'P_sym != I': True}, 6: {'rank P_sym': 7, 'expected n+1': 7, 'phi(I) = P_sym': True, 'phi matrix-unit table': None, 'P_sym != I': True}, 7: {'rank P_sym': 8, 'expected n+1': 8, 'phi(I) = P_sym': True, 'phi matrix-unit table': None, 'P_sym != I': True}}\nSUMMARY: on the displayed objects F is Hermitian with F^2 = I and Tr F = 2, p is a rank-3 projection, p != I_4, the 16 compressed units span dimension 9, phi is an algebra isomorphism with phi(I_3) = p and the ON units are *-matrix units summing to p (the three predicates hold as stated); the two-site swap on C^d x C^d has rank d(d+1)/2 for d = 2..8 with corner dimension rank^2 (d <= 4), and the n-site qubit symmetrizer has rank n+1 for n = 2..7 with the Dicke map phi(I) = P_sym and exact matrix-unit tables (n <= 5); no predicate fails\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3d06",
+  "at_utc": "20260919T095647Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

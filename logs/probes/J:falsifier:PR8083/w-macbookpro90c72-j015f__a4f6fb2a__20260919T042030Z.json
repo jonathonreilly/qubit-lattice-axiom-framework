@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8083",
+ "type": "judgment",
+ "lane": "native-quartic-ward-20260910",
+ "worker": "w-macbookpro90c72-j015f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8083/falsifier_quartic_envelope.py",
+ "seed": 91630,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4f6fb2a",
+ "started_utc": "20260919T042030Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "quartic-envelope falsifier did not fire: Q_{t,u}(x)-x^{-2}=P(Ax+B)/x^2 identically, nonnegative for x\u22651/4 on the 15-pair schedule and on extra (t,u) including 1/2,3,5,32,64 with x up to 10^4"
+ },
+ "review": "Falsifier of Q\u2265x^{-2} did not fire: identity holds on the 15-pair schedule and beyond (extra t,u, x to 10^4).",
+ "what": "PR #8083 ([physics-loop] Quartic Ward error bounds (conditional-suppor): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/native-quartic-ward-20260910; git show origin/codex/native-quartic-ward-20260910:<note>. Create probes/work/pr8083/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8083/<script>.py\"",
+ "stdout_sha256": "e07ab6dd5e90007c054ea3d818440a8036bf06a35794bde61bc8776183ccbca2",
+ "stdout_tail": "symbolic gap (Q-1/x^2 - P(Ax+B)/x^2) = 0\npairs: 15 schedule + 6 beyond\ngrid checks: 567 all nonnegative\nat x=\u03b4, t=1,u=2: gap=0 (want 0)\nSUMMARY: quartic-envelope falsifier did not fire: Q_{t,u}(x)-x^{-2}=P(Ax+B)/x^2 identically, nonnegative for x\u22651/4 on the 15-pair schedule and on extra (t,u) including 1/2,3,5,32,64 with x up to 10^4\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j015f",
+  "at_utc": "20260919T042042Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

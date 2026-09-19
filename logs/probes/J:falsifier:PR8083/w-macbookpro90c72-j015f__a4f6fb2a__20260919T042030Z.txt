@@ -1,0 +1,5 @@
+symbolic gap (Q-1/x^2 - P(Ax+B)/x^2) = 0
+pairs: 15 schedule + 6 beyond
+grid checks: 567 all nonnegative
+at x=δ, t=1,u=2: gap=0 (want 0)
+SUMMARY: quartic-envelope falsifier did not fire: Q_{t,u}(x)-x^{-2}=P(Ax+B)/x^2 identically, nonnegative for x≥1/4 on the 15-pair schedule and on extra (t,u) including 1/2,3,5,32,64 with x up to 10^4

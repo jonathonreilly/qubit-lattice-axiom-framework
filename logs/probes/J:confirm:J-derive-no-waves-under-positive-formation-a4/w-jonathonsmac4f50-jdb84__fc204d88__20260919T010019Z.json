@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-no-waves-under-positive-formation-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jdb84",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/no-waves-under-positive-formation/referee_w-jonathonsmac4f50-jdb84/check.py",
+ "seed": 79619,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fc204d88",
+ "started_utc": "20260919T010019Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 2 - the small-k form claimed in statement (A) and in the HIT line, lambda = 1 - i mu.k - (1/2) k^T Sigma k with Sigma = Cov(v), does not follow from step 2 (whose own quadratic term is the second moment Sigma + mu mu^T) and is false whenever mu != 0 (NEC: -(k1^2 + k2^2)/6 against -(k1^2 - k1 k2 + k2^2)/9); what survives for one level is |lambda| <= 1, |lambda|^2 = 1 - k^T Sigma k + O(k^4), arg lambda = -mu.k + O(k^3) (drift plus diffusion, re-verified); statement (B) is proved only to first order (true in the examples checked, via the renewal variance); (C) exhibits no wave - the negative-weight example is growth |lambda| = 3, while the negative weight on the earlier level (discrete wave equation) gives |z| = 1, arg z = c k + O(k^3)"
+ },
+ "review": "Referee of no-waves a4 (grok-4.6): independent sympy checks pass 5 of 5 (the exact series of lambda on NEC and four random positive weight sets, |lambda|^2 and log lambda to fourth and third order, the unimodular set on torus grids, renewal drift/variance for two- and three-level roots, the discrete wave equation's |z| = 1 and arg z = ck + O(k^3)), so one-level drift plus diffusion holds but the attempt fails at step 2: its stated small-k form uses Cov(v) where the series has the second moment (false whenever mu != 0), (B) is proved only to first order, and (C) exhibits no wave; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:no-waves-under-positive-formation:a4/; its files are probes/work/derive/no-waves-under-positive-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/no-waves-under-positive-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f9f319cd7bf648aa7117e48468821760915f675f06b3fad47884f85d3e7ebdf4",
+ "stdout_tail": " T) = (1, 1), (-1, 2), (0, 3)): drift 1/10, variance rate 27/50. The attempt proves only the first derivative for two levels; the general PSD claim is stated, not proved (its own section (3))\nPASS: N5 (C): the author's example lambda = 2 - e^{-ik} has |lambda(pi)| = 3, growth rather than a wave; the gain-one two-level recursion with the negative weight -1 on the earlier level (the discrete wave equation, weights 2 - 2c^2, c^2, c^2 and -1, sum 1) has roots with product 1 and b^2 - 4 <= 0, so |z| = 1 exactly, and arg z = arccos(1 - 2c^2 sin^2(k/2)) = c k + (c^3 - c) k^3/24 + O(k^5) (checked at c = 1/2): a wave |z| = 1, arg z = c|k|; this is the exception the task names, and the attempt does not exhibit it\nTOTAL: PASS=5 FAIL=0\nSUMMARY: fails at step 2 - the small-k form claimed in statement (A) and in the HIT line, lambda = 1 - i mu.k - (1/2) k^T Sigma k with Sigma = Cov(v), does not follow from step 2 (whose own quadratic term is the second moment Sigma + mu mu^T) and is false whenever mu != 0 (NEC: -(k1^2 + k2^2)/6 against -(k1^2 - k1 k2 + k2^2)/9); what survives for one level is |lambda| <= 1, |lambda|^2 = 1 - k^T Sigma k + O(k^4), arg lambda = -mu.k + O(k^3) (drift plus diffusion, re-verified); statement (B) is proved only to first order (true in the examples checked, via the renewal variance); (C) exhibits no wave - the negative-weight example is growth |lambda| = 3, while the negative weight on the earlier level (discrete wave equation) gives |z| = 1, arg z = c k + O(k^3)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdb84",
+  "at_utc": "20260919T010022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

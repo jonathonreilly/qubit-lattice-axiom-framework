@@ -1,0 +1,13 @@
+====================================================================================================
+G  the layer-symmetric class under the theta_P
+ok   G1: on L = 4, 6: every reflected field h+ / h- of a layer-symmetric field (20 random fields, every plane and direction) is layer-symmetric; every theta_P preserves the classes A, B, and (x,0), (x,1) lie in different classes, so a theta-invariant layer-symmetric field is constant: Gaussian domination holds on the layer-symmetric class
+====================================================================================================
+Q  the two forms on layer-symmetric fields
+ok   Q1: sum_edges (s_u - s_v)(h_u - h_v) = (h, -Delta sigma) with sigma = s_(.,0) + s_(.,1), and sum_edges (h_u - h_v)^2 = 2 (h, -Delta h), exactly on 10 random integer configurations of Gamma_4: hence <|sigma_hat(k)|^2> <= 6N/(beta E(k)) for k != 0
+====================================================================================================
+E  the energy bound and the threshold
+ok   E1: cap area checked; the convexity inequality <H> >= log Z/beta holds on the Ising analogue (numerical, 40 digits); the lower bound on <|m_0|^2> (infinite volume, I_0 <= 0.255485) is positive from beta = 7.0 on the grid of halves: beta=6: -0.0835; beta=7: 0.0491; beta=8: 0.1512; beta=10: 0.2986; beta=20: 0.6145; at beta = 10 on tori: L=24: 0.2796; L=48: 0.2867; L=100: 0.2916
+====================================================================================================
+runtime 0s
+SUMMARY: PARTIAL route (ii) closes without the rung reflection: the layer-symmetric Gaussian domination bounds the sum field sigma = s_0 + s_1 by 6N/(beta E(k)); an energy bound (convexity of log Z, a cap configuration) gives e >= cos 2d + (2/(7 beta)) log((1 - cos d)/2) and the vertical correlation >= 7e - 6; the sum rule and the exchangeability of the layers give <|m_0|^2>_pi >= (1/4)[2 + 2(7e - 6) - (6/beta) G_L], positive for beta >= 7.0 (infinite volume) and on large tori: long-range order of pi at large beta by a second route (threshold about ten times attempt a5's)
+HIT: route (ii) closes without the rung reflection: the layer-symmetric Gaussian domination bounds the sum field sigma = s_0 + s_1 by 6N/(beta E(k)); an energy bound (convexity of log Z, a cap configuration) gives e >= cos 2d + (2/(7 beta)) log((1 - cos d)/2) and the vertical correlation >= 7e - 6; the sum rule and the exchangeability of the layers give <|m_0|^2>_pi >= (1/4)[2 + 2(7e - 6) - (6/beta) G_L], positive for beta >= 7.0 (infinite volume) and on large tori: long-range order of pi at large beta by a second route (threshold about ten times attempt a5's)

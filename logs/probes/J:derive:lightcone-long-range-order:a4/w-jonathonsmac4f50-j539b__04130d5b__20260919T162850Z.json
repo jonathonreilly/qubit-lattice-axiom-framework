@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-long-range-order:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j539b",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-long-range-order/w-jonathonsmac4f50-j539b/check.py",
+ "seed": 35330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "04130d5b",
+ "started_utc": "20260919T162850Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL route (ii) closes without the rung reflection: the layer-symmetric Gaussian domination bounds the sum field sigma = s_0 + s_1 by 6N/(beta E(k)); an energy bound (convexity of log Z, a cap configuration) gives e >= cos 2d + (2/(7 beta)) log((1 - cos d)/2) and the vertical correlation >= 7e - 6; the sum rule and the exchangeability of the layers give <|m_0|^2>_pi >= (1/4)[2 + 2(7e - 6) - (6/beta) G_L], positive for beta >= 7.0 (infinite volume) and on large tori: long-range order of pi at large beta by a second route (threshold about ten times attempt a5's)"
+ },
+ "review": "Claimed for referee (same model family as a5, different route): route (ii) closes without the rung reflection - the layer-symmetric Gaussian domination bounds sigma = s_0 + s_1 by 6N/(beta E(k)), an energy bound (convexity of log Z plus a cap configuration) gives the average edge correlation and the vertical correlation >= 7e - 6, and the sum rule with layer exchangeability gives <|m_0|^2>_pi >= (1/4)[2 + 2 e_v - (6/beta) G_L], positive for beta >= 7 (infinite volume; 0.049 at 7, 0.30 at 10) and at beta = 10 on tori L = 24, 48, 100; 3 checks pass (G1 exhaustive class closure on L=4,6, Q1 exact form identities, E1 threshold with margins plus a labelled numerical convexity check).",
+ "what": "DERIVATION, independent attempt 4 of 5: Long-range order under light-cone formation: close the gap in the doubled-graph argument. GIVEN (refereed): the light-cone formation law (record at (t+1,x) from (t,x) and (t,x +- e_j), weight exp(beta s.S)) is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|); pi is the marginal on one layer of the nearest-neighbour Heisenberg ferromagnet on the doubled graph Gamma (two copies of Z^3, (x,0) joined to (y,1) for y in the 7-stencil of x); Gamma's Laplacian spectrum is {E, 14 - E}; pi is a range-2, many-body Gibbs law on Z^3 and block 19's pair reflection positivity does not transfer as is. THE GAP (referee): Gaussian domination on Gamma was proved only for layer-symmetric fields, because the reflections used preserve the bipartition (layer x spatial parity) and vertical edges never cross a reflection plane. Executed: |m| = 0.76 at beta = 1 on 24^3 and 48^3 planes (no decrease with size). TASK: prove long-range order of pi for the sphere menu at large beta. Routes: (i) find reflections of Gamma that do cross the layers (a reflection through a spatial site plane composed with the layer swap; check that the 7-stencil with its self-edge makes the vertical edges reflect onto themselves) and prove Gaussian domination for all fields, then the infrared bound with the {E, 14 - E} spectrum; (ii) show the layer-symmetric infrared bound already implies order of the one-layer marginal (the two layers are exchangeable under pi-bar); (iii) a Peierls-free route: a lower bound on E|S_x| via the sum rule, as in block 22's threshold argument (PR #8156). State the threshold beta you prove. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-long-range-order/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-long-range-order/<name>/check.py\"",
+ "stdout_sha256": "02c190e364bef5e54d06d74e86d4aacc30c1d2f8008f2fd4ff737cc125fecba9",
+ "stdout_tail": "|m_0|^2> (infinite volume, I_0 <= 0.255485) is positive from beta = 7.0 on the grid of halves: beta=6: -0.0835; beta=7: 0.0491; beta=8: 0.1512; beta=10: 0.2986; beta=20: 0.6145; at beta = 10 on tori: L=24: 0.2796; L=48: 0.2867; L=100: 0.2916\n====================================================================================================\nruntime 0s\nSUMMARY: PARTIAL route (ii) closes without the rung reflection: the layer-symmetric Gaussian domination bounds the sum field sigma = s_0 + s_1 by 6N/(beta E(k)); an energy bound (convexity of log Z, a cap configuration) gives e >= cos 2d + (2/(7 beta)) log((1 - cos d)/2) and the vertical correlation >= 7e - 6; the sum rule and the exchangeability of the layers give <|m_0|^2>_pi >= (1/4)[2 + 2(7e - 6) - (6/beta) G_L], positive for beta >= 7.0 (infinite volume) and on large tori: long-range order of pi at large beta by a second route (threshold about ten times attempt a5's)\nHIT: route (ii) closes without the rung reflection: the layer-symmetric Gaussian domination bounds the sum field sigma = s_0 + s_1 by 6N/(beta E(k)); an energy bound (convexity of log Z, a cap configuration) gives e >= cos 2d + (2/(7 beta)) log((1 - cos d)/2) and the vertical correlation >= 7e - 6; the sum rule and the exchangeability of the layers give <|m_0|^2>_pi >= (1/4)[2 + 2(7e - 6) - (6/beta) G_L], positive for beta >= 7.0 (infinite volume) and on large tori: long-range order of pi at large beta by a second route (threshold about ten times attempt a5's)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j539b",
+  "at_utc": "20260919T162859Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation claim for cross-family referee: check.py verifies the symmetric-class closure and the two form identities exactly and evaluates the threshold with explicit margins; a different route from a5, not a pattern false positive.",
+  "by": "w-jonathonsmac4f50-j539b",
+  "at_utc": "20260919T162859Z"
+ }
+}

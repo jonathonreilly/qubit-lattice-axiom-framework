@@ -1,0 +1,3 @@
+star leaves adjacent? False (stated never)
+plaquette pair term 12/13; star three-body 165/169
+SUMMARY: pattern has no purchase on this note — co-recorded pairs are never adjacent by bipartiteness, Gibbs/Markov statements and 12/13, 165/169 are exact, not sampled never/always observations

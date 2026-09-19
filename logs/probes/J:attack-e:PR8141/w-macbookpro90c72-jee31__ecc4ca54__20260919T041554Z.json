@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8141",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block10-record",
+ "worker": "w-macbookpro90c72-jee31",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8141/sampled_evidence_no_purchase.py",
+ "seed": 91354,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ecc4ca54",
+ "started_utc": "20260919T041554Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 co-recorded pairs are never adjacent by bipartiteness, Gibbs/Markov statements and 12/13, 165/169 are exact, not sampled never/always observations"
+ },
+ "review": "pattern (e) has no purchase: co-recorded pairs are never adjacent by bipartiteness; Gibbs/Markov and 12/13, 165/169 are exact, not sampled never/always",
+ "what": "PR #8141 ([physics-loop] admissibility-induced-law block10 \u2014 bounded_t): attack ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915; git show origin/physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915:<note>. Create probes/work/pr8141/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8141/<script>.py\"",
+ "stdout_sha256": "80cb6f4e182a5836fcaf10ab1680e6a9d398dabd378ae86ac2b61bab6bb5fc47",
+ "stdout_tail": "star leaves adjacent? False (stated never)\nplaquette pair term 12/13; star three-body 165/169\nSUMMARY: pattern has no purchase on this note \u2014 co-recorded pairs are never adjacent by bipartiteness, Gibbs/Markov statements and 12/13, 165/169 are exact, not sampled never/always observations\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jee31",
+  "at_utc": "20260919T041554Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

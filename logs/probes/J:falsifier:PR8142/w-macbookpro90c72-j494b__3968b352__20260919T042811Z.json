@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8142",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block11-three-",
+ "worker": "w-macbookpro90c72-j494b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8142/falsifier_k2_ratios_beyond.py",
+ "seed": 92091,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3968b352",
+ "started_utc": "20260919T042811Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "X1 K2-ratio falsifier did not fire: both mixed-difference ratios equal 1 only on p=q=r, on the 12^3 integer grid and extra rationals beyond the note's two declared triples"
+ },
+ "review": "X1 K2-ratio falsifier did not fire: both ratios=1 only on p=q=r over 12^3 and extra rationals.",
+ "what": "PR #8142 ([physics-loop] admissibility-induced-law block11 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915; git show origin/physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915:<note>. Create probes/work/pr8142/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8142/<script>.py\"",
+ "stdout_sha256": "72943b34a4b7f340b164885ebf350bce96284d34744a9828ae5ffdd568a0bfb6",
+ "stdout_tail": "integer grid 1..12^3: 1728 triples, both ratios=1 only on p=q=r\n  (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): ratio1=169/121 ratio2=169/144\n  (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): ratio1=961/784 ratio2=8649/7744\n  (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)): ratio1=6241/5041 ratio2=6241/5625\n  (Fraction(37, 10), Fraction(1, 1), Fraction(2, 1)): ratio1=116281/67600 ratio2=9418761/7182400\n  (Fraction(11, 1), Fraction(10, 1), Fraction(10, 1)): ratio1=385641/384400 ratio2=385641/384400\n  (Fraction(100, 1), Fraction(1, 1), Fraction(1, 1)): ratio1=11122225/4624 ratio2=11122225/4624\nSUMMARY: X1 K2-ratio falsifier did not fire: both mixed-difference ratios equal 1 only on p=q=r, on the 12^3 integer grid and extra rationals beyond the note's two declared triples\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j494b",
+  "at_utc": "20260919T042816Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

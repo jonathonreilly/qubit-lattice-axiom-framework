@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-sixaxis-order:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jc50a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/lightcone-sixaxis-order/w-macbookpro90c72-jc50a/check.py",
+ "seed": 81121,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5077ddbb",
+ "started_utc": "20260919T012521Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL six-axis (p,q,r) light-cone formation is reversible for any symmetric neighbourhood (6-stencil or 7-stencil) because phi is symmetric: the product identity holds and two-site 7-stencil detailed balance holds at (3,1,2). The site itself need not be included. pi has equal weight on the six constant configs; on the 2x2x2 cube a single antipodal flip and a 4+4 split are strictly lighter than a constant, so a Peierls contour argument has a positive cost already at p=3. A numerical threshold on (p,1,2) matching the executed memory is not proved (L=2 degeneracy; no infinite-volume contour sum)."
+ },
+ "review": "Six-axis (p,q,r) light-cone reversibility for 6- and 7-stencils; two-site DB at (3,1,2); cube Peierls ratios show constants are local maxima at p=3; HIT as a new exact partial.",
+ "what": "DERIVATION, independent attempt 3 of 4: The ordered side of the six-axis law under light-cone formation, by equilibrium methods. Under backward formation the six-axis law's ordered phase needed a Toom-type stability proof with a threshold thousands of times above the executed one (blocks 25, 30: PRs #8168, #8174). Under light-cone formation (record at (t+1, x) from (t, x) and (t, x +- e_j)) the symmetric majority rule is NOT an eroder, so that route is closed; but if the automaton is reversible with respect to pi(s) prop. to prod_x Z_x(s) (Z_x the normalizer of the rule at x), the ordered phase is a statement about a Gibbs law on Z^3 and a Peierls or chessboard argument applies. TASK: (a) settle reversibility for six-axis weights (p, q, r) (it holds when the weight is a symmetric function W(s, s') and the neighbourhood is symmetric: check whether the site itself must be included); (b) write pi's interaction explicitly and prove at least two (six) stationary laws for p large by a contour argument, with the threshold you can prove on the line (p,1,2); (c) compare with the static law's threshold (block 17, PR #8151, whose constant is under repair) and the executed thresholds; (d) say what 'memory of the initial plane' means for a reversible automaton (the six laws are stationary; convergence to them from an aligned start). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-sixaxis-order/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-sixaxis-order/<name>/check.py\"",
+ "stdout_sha256": "b522713ec54fc390fe9f1415befa90d63d529be218414419d34fa32c5a67a29f",
+ "stdout_tail": "ed balance, six-axis (3,1,2)  bad=0\nCHECK PASS: P.1 one-flip / all-+x weight ratio at (3,1,2) < 1  2167007881/207594140625\nCHECK PASS: P.2 ratio is a positive rational\nCHECK PASS: P.3 six constant configs have equal pi-weight  2824295364810000000000000000\nCHECK PASS: P.4 a 4+4 two-axis split has smaller weight than a constant  33661520972420776990867456 vs 2824295364810000000000000000\nCHECKS: PASS=10 FAIL=0\nSUMMARY: PARTIAL six-axis (p,q,r) light-cone formation is reversible for any symmetric neighbourhood (6-stencil or 7-stencil) because phi is symmetric: the product identity holds and two-site 7-stencil detailed balance holds at (3,1,2). The site itself need not be included. pi has equal weight on the six constant configs; on the 2x2x2 cube a single antipodal flip and a 4+4 split are strictly lighter than a constant, so a Peierls contour argument has a positive cost already at p=3. A numerical threshold on (p,1,2) matching the executed memory is not proved (L=2 degeneracy; no infinite-volume contour sum).\nHIT: for six-axis weights (p,q,r) the light-cone automaton is reversible w.r.t. pi prop. to prod_x Z_x on any undirected stencil (checked 6- and 7-neighbour product identity on C4; full DB on the two-site 7-stencil at (3,1,2)); the site itself is optional. pi is permutation-symmetric on the six constants; on the cube at (3,1,2) a one-site antipodal flip is strictly less likely than a constant, so the six aligned laws are local maxima of pi already at the PSD boundary p=3.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc50a",
+  "at_utc": "20260919T012533Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Six-axis reversibility for 6- and 7-stencils; two-site DB; cube constants are local maxima at (3,1,2); new exact partial, not a pattern false positive.",
+  "by": "w-macbookpro90c72-jc50a",
+  "at_utc": "20260919T012533Z"
+ }
+}

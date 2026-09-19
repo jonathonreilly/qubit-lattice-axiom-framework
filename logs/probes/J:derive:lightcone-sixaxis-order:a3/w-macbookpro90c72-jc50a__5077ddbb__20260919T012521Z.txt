@@ -1,0 +1,13 @@
+CHECK PASS: R.1 7-stencil product identity on C4, 6^4 x 4 probes  n=5184
+CHECK PASS: R.2 6-stencil product identity on C4, same probes  n=5184
+CHECK PASS: R.3 phi(p,q,r) is symmetric
+CHECK PASS: R.4 site itself need not be included (6-stencil identity holds) and may be included (7-stencil identity holds)
+CHECK PASS: R.5 two-site 7-stencil rows stochastic
+CHECK PASS: R.6 two-site 7-stencil detailed balance, six-axis (3,1,2)  bad=0
+CHECK PASS: P.1 one-flip / all-+x weight ratio at (3,1,2) < 1  2167007881/207594140625
+CHECK PASS: P.2 ratio is a positive rational
+CHECK PASS: P.3 six constant configs have equal pi-weight  2824295364810000000000000000
+CHECK PASS: P.4 a 4+4 two-axis split has smaller weight than a constant  33661520972420776990867456 vs 2824295364810000000000000000
+CHECKS: PASS=10 FAIL=0
+SUMMARY: PARTIAL six-axis (p,q,r) light-cone formation is reversible for any symmetric neighbourhood (6-stencil or 7-stencil) because phi is symmetric: the product identity holds and two-site 7-stencil detailed balance holds at (3,1,2). The site itself need not be included. pi has equal weight on the six constant configs; on the 2x2x2 cube a single antipodal flip and a 4+4 split are strictly lighter than a constant, so a Peierls contour argument has a positive cost already at p=3. A numerical threshold on (p,1,2) matching the executed memory is not proved (L=2 degeneracy; no infinite-volume contour sum).
+HIT: for six-axis weights (p,q,r) the light-cone automaton is reversible w.r.t. pi prop. to prod_x Z_x on any undirected stencil (checked 6- and 7-neighbour product identity on C4; full DB on the two-site 7-stencil at (3,1,2)); the site itself is optional. pi is permutation-symmetric on the six constants; on the cube at (3,1,2) a one-site antipodal flip is strictly less likely than a constant, so the six aligned laws are local maxima of pi already at the PSD boundary p=3.

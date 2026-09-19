@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8029",
+ "type": "judgment",
+ "lane": "infinite-static-block39-20260907",
+ "worker": "w-macbookpro90c72-jfd07",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8029/provenance_theorem_numbers.py",
+ "seed": 92476,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8cf32bc6",
+ "started_utc": "20260919T043436Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "7 theorem numbers: 9=3*3, (4/a)(1-1/2)d=2d/a, Casimir 4/a, l1 geodesic, Stieltjes first-moment Pythagoras derived; 15 controls named as executed; unsourced 0"
+ },
+ "review": "Theorem numbers 9=3*3, 2d/a kinetic, Casimir 4/a, l1 geodesic, Stieltjes Pythagoras all derived; unsourced 0. No HIT.",
+ "what": "PR #8029 ([physics-loop] infinite-static block39 conditional-support): for every number in the theorem statements of GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/infinite-static-block39-20260907; git show origin/codex/infinite-static-block39-20260907:<note>. Create probes/work/pr8029/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8029/<script>.py\"",
+ "stdout_sha256": "c059b3dff258f9d051e96416fb0c244edda08f22fca2578d5feaad262c2c14cf",
+ "stdout_tail": "[DERIVED] 9=3*3 True\n[DERIVED] (4/a)(1-1/2)d=10 2d/a=10 eq=True\n[DERIVED] (3/(2a))*(8/3)=4 4/a=4 eq=True\n[DERIVED] shortest |p-q|_1=6 stated 6 eq=True\n[DERIVED] Stieltjes x=2: 2/5, 1/5 sum sq 1/5==1/5? wait\n  s1^2+s2^2=1/5 1/(x^2+1)=1/5\n[DERIVED] Stieltjes (x,1)/(x^2+1) unit-norm squared 1/(x^2+1) wait\n[DEFINITION] 15 exact controls named in the executed-numbers attack\n[EXCLUDED] PR #8029\nSUMMARY: 7 theorem numbers: 9=3*3, (4/a)(1-1/2)d=2d/a, Casimir 4/a, l1 geodesic, Stieltjes first-moment Pythagoras derived; 15 controls named as executed; unsourced 0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jfd07",
+  "at_utc": "20260919T043437Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

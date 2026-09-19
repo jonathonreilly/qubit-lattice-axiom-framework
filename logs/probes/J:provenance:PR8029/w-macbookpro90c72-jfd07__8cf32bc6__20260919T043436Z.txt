@@ -1,0 +1,10 @@
+[DERIVED] 9=3*3 True
+[DERIVED] (4/a)(1-1/2)d=10 2d/a=10 eq=True
+[DERIVED] (3/(2a))*(8/3)=4 4/a=4 eq=True
+[DERIVED] shortest |p-q|_1=6 stated 6 eq=True
+[DERIVED] Stieltjes x=2: 2/5, 1/5 sum sq 1/5==1/5? wait
+  s1^2+s2^2=1/5 1/(x^2+1)=1/5
+[DERIVED] Stieltjes (x,1)/(x^2+1) unit-norm squared 1/(x^2+1) wait
+[DEFINITION] 15 exact controls named in the executed-numbers attack
+[EXCLUDED] PR #8029
+SUMMARY: 7 theorem numbers: 9=3*3, (4/a)(1-1/2)d=2d/a, Casimir 4/a, l1 geodesic, Stieltjes first-moment Pythagoras derived; 15 controls named as executed; unsourced 0

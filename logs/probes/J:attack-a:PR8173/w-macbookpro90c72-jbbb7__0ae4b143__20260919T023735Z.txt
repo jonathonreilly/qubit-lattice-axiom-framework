@@ -1,0 +1,4 @@
+L=2: E(0)=0.00e+00 nonzero-mode min E=4.000000
+L=3: E(0)=0.00e+00 nonzero-mode min E=3.000000
+L=4: E(0)=0.00e+00 nonzero-mode min E=2.000000
+SUMMARY: pattern has no purchase on this note - E(k)>=0 on T_L^3 for L=2,3,4 with kernel only at k=0, so G_L is defined; not a re-find of the 0.86-0.98 kernel HIT

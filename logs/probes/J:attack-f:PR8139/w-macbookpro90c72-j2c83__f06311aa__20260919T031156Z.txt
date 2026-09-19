@@ -1,0 +1,1 @@
+SUMMARY: NORMALIZATION (PR #8139): no Fourier sums, structure factors, or 2 pi / L / N / conjugation conventions in the Markov-graph / eight-corner note; pattern has no purchase

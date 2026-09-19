@@ -1,0 +1,3 @@
+kernel sums to 1 on 64 triples in {1..4}^3
+star sites 7
+SUMMARY: pattern has no purchase on this note - six-axis K sums to 1 for every (p,q,r) in {1..4}^3; the 6-neighbor star has 7 sites; not the known 216-env HIT

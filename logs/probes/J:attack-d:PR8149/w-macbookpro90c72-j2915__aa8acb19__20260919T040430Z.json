@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-j2915",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8149/quantifier_every_triple.py",
+ "seed": 90670,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aa8acb19",
+ "started_utc": "20260919T040430Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - six-axis K sums to 1 for every (p,q,r) in {1..4}^3; the 6-neighbor star has 7 sites; not the known 216-env HIT"
+ },
+ "review": "six-axis K sums to 1 on {1..4}^3 and the star has 7 sites, so those universals hold and the pattern has no purchase",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "1b8ce8977c48944bc364903a81ec04d1d739becb682fc406839598f3263b9b26",
+ "stdout_tail": "kernel sums to 1 on 64 triples in {1..4}^3\nstar sites 7\nSUMMARY: pattern has no purchase on this note - six-axis K sums to 1 for every (p,q,r) in {1..4}^3; the 6-neighbor star has 7 sites; not the known 216-env HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2915",
+  "at_utc": "20260919T040430Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

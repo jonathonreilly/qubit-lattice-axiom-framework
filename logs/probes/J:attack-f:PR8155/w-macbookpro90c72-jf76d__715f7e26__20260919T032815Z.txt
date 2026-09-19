@@ -1,0 +1,12 @@
+TV(point,point') = 1 (stated 1/2 convention)
+W5 prefactor 3*2*(α/6)/α = 1
+α=6c=2√3 β identities: 6*(β/√3)=2√3 β
+L=2: n=4 N=64 stated (2L)^3=64
+L=2 Σ α^{d_T}=729/64 closed Π=729/64
+L=2 bound ((1+α)/(1-α))^3=27; brute<=bound True
+L=2 M_N^2 prefactor 27/32
+L=3: n=6 N=216 stated (2L)^3=216
+L=3 Σ α^{d_T}=9261/512 closed Π=9261/512
+L=3 bound ((1+α)/(1-α))^3=27; brute<=bound True
+L=3 M_N^2 prefactor 1/4
+SUMMARY: pattern has no purchase on this note - TV 1/2, W5's 3·2/6, N=(2L)^3, and Σ α^{d_T}=Π_i(1+2Σ α^j+α^L) hold on L=2,3 (not the known L=1 degree-3 HIT)

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8155",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block21-unsold",
+ "worker": "w-macbookpro90c72-jf76d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8155/normalization_torus_sum.py",
+ "seed": 88495,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "715f7e26",
+ "started_utc": "20260919T032815Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - TV 1/2, W5's 3\u00b72/6, N=(2L)^3, and \u03a3 \u03b1^{d_T}=\u03a0_i(1+2\u03a3 \u03b1^j+\u03b1^L) hold on L=2,3 (not the known L=1 degree-3 HIT)"
+ },
+ "review": "TV 1/2, W5's 3\u00b72/6, N=(2L)^3, and the torus geometric sum match on L=2,3, so the normalization factors hold and the pattern has no purchase",
+ "what": "PR #8155 ([physics-loop] admissibility-induced-law block21 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915; git show origin/physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915:<note>. Create probes/work/pr8155/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8155/<script>.py\"",
+ "stdout_sha256": "cc12054e71b29161b50ae35a8a91e7b576197eb79af320344a16cc238904cd01",
+ "stdout_tail": "TV(point,point') = 1 (stated 1/2 convention)\nW5 prefactor 3*2*(\u03b1/6)/\u03b1 = 1\n\u03b1=6c=2\u221a3 \u03b2 identities: 6*(\u03b2/\u221a3)=2\u221a3 \u03b2\nL=2: n=4 N=64 stated (2L)^3=64\nL=2 \u03a3 \u03b1^{d_T}=729/64 closed \u03a0=729/64\nL=2 bound ((1+\u03b1)/(1-\u03b1))^3=27; brute<=bound True\nL=2 M_N^2 prefactor 27/32\nL=3: n=6 N=216 stated (2L)^3=216\nL=3 \u03a3 \u03b1^{d_T}=9261/512 closed \u03a0=9261/512\nL=3 bound ((1+\u03b1)/(1-\u03b1))^3=27; brute<=bound True\nL=3 M_N^2 prefactor 1/4\nSUMMARY: pattern has no purchase on this note - TV 1/2, W5's 3\u00b72/6, N=(2L)^3, and \u03a3 \u03b1^{d_T}=\u03a0_i(1+2\u03a3 \u03b1^j+\u03b1^L) hold on L=2,3 (not the known L=1 degree-3 HIT)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf76d",
+  "at_utc": "20260919T032815Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

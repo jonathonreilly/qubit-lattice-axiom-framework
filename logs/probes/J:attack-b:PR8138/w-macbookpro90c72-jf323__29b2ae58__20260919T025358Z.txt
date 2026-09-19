@@ -1,0 +1,3 @@
+2D matches 16 example [([(1, 0)], [(2, 1)], ((1, 1), (2, 0)))]
+3D matches 0 example []
+SUMMARY: pattern has no purchase on this note — the same successor=predecessor set test has matches on Z^2 (plaquette telescoping) and none on Z^3, as Q2 states

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8138",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block08-z3-for",
+ "worker": "w-macbookpro90c72-jf323",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8138/same_test_succ_pred_2d_vs_3d.py",
+ "seed": 86438,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29b2ae58",
+ "started_utc": "20260919T025358Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the same successor=predecessor set test has matches on Z^2 (plaquette telescoping) and none on Z^3, as Q2 states"
+ },
+ "review": "Successor=predecessor set test matches on Z^2 and not on Z^3, as Q2 states; no defect",
+ "what": "PR #8138 ([physics-loop] admissibility-induced-law block08 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915; git show origin/physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915:<note>. Create probes/work/pr8138/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8138/<script>.py\"",
+ "stdout_sha256": "ee9d0b00b00a81c0a4840f2eb8cff4999ae4cb61ee19ce32784a4b9f93f25569",
+ "stdout_tail": "2D matches 16 example [([(1, 0)], [(2, 1)], ((1, 1), (2, 0)))]\n3D matches 0 example []\nSUMMARY: pattern has no purchase on this note \u2014 the same successor=predecessor set test has matches on Z^2 (plaquette telescoping) and none on Z^3, as Q2 states\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf323",
+  "at_utc": "20260919T025358Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,1 @@
+SUMMARY: SAME TEST BOTH SIDES (PR #8082): P and O are both claimed to meet the 10^{-6} width target (no has/lacks pair); the opposite-class radial shift is a computational extra, not a property the other class lacks; pattern has no purchase on a separation claim

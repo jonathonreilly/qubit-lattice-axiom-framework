@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-kernel-normalization-in-3plus1-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j22de",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/kernel-normalization-in-3plus1/referee_w-jonathonsmac4f50-j22de/check.py",
+ "seed": 93480,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "93202d1f",
+ "started_utc": "20260919T045120Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the mean-map statement survives (K proportional to phi by A3 exchangeability, O(1/beta) cancels, G_3 drops out); the displayed 1 - g = 1/(16 beta^2) is the truncation's value only: the exact map's O(1/beta^2) coefficient beta^2(1-g_full) = -0.15, -0.09, -0.07, -0.06 -- opposite in sign to the truncation's +1/16, so the finite-beta 'Goldstone mass' 1 - g^2 of step 8 is a truncation artefact (the attempt's (3) says the dropped terms are O(1/beta^2)); the noise factor and the task's full a are not derived"
+ },
+ "review": "Every finite fact re-derives independently (vMF moments, A3 six-cosine form, G_4 = 1913/1344, 48 root automorphisms with 4 sending e1 to e1-e2, root covariances 149/1344, C_v = 295/672 = Gamma, H = C_v phi on all 64 modes, cubic jet) and Stein's lemma gives g = 1 - 1/(n beta) + sigma^2 (1 - 1/V) exactly; the untruncated vMF map under the same closure has beta(1-g) = -0.025, -0.008, -0.003, -0.001 at beta = 6..48 (no O(1/beta)), its O(1/beta^2) coefficient about -0.06 vs the truncation's +1/16: HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:kernel-normalization-in-3plus1:a3/; its files are probes/work/derive/kernel-normalization-in-3plus1/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/kernel-normalization-in-3plus1/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "5ccc2679639b7e1fad1e6b8ccb51c7cec699a73477a794269770d805d3a64f82",
+ "stdout_tail": "21; g_poly (cubic map, MC) = 0.999892; truncation formula = 0.999891; beta(1-g_full) = -0.0029; beta^2(1-g_full) = -0.070; naive gain loss beta(1/(4 beta)) = 0.25; samples 2000000\n   beta=48: g_full (exact vMF map, Gaussian closure) = 1.000026; g_poly (cubic map, MC) = 0.999972; truncation formula = 0.999973; beta(1-g_full) = -0.0013; beta^2(1-g_full) = -0.060; naive gain loss beta(1/(4 beta)) = 0.25; samples 2000000\nHIT: confirmed - cubic-Gaussian mean map K = g phi with g = 1 - 1/(n beta) + sigma^2 (1 - 1/V) re-derived by Gaussian integration by parts (exact on L=4), the A3 automorphism group (48, four maps e1 -> e1-e2), equal root-vector covariances 149/1344, C_v = 295/672, H = C_v phi on every mode, G_4 = 1913/1344, the vMF moments and the cubic jet; beyond the truncation, the exact vMF mean map under the same Gaussian closure also gives K = g_full phi with beta(1 - g_full) = -0.0250, -0.0077, -0.0029, -0.0013 at beta = 6, 12, 24, 48: no O(1/beta) term\nSUMMARY: confirmed - the mean-map statement survives (K proportional to phi by A3 exchangeability, O(1/beta) cancels, G_3 drops out); the displayed 1 - g = 1/(16 beta^2) is the truncation's value only: the exact map's O(1/beta^2) coefficient beta^2(1-g_full) = -0.15, -0.09, -0.07, -0.06 -- opposite in sign to the truncation's +1/16, so the finite-beta 'Goldstone mass' 1 - g^2 of step 8 is a truncation artefact (the attempt's (3) says the dropped terms are O(1/beta^2)); the noise factor and the task's full a are not derived\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j22de",
+  "at_utc": "20260919T045134Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms kernel-normalization a3's mean-map partial: cubic Gaussian closure gives K = g phi (A3 exchangeability) with g = 1 - 1/(n beta) + sigma^2(1 - 1/V), so no O(1/beta) mean-map correction and G_3 drops out; verified exactly on L=4 and by Stein's lemma; beyond the truncation the exact vMF map keeps beta(1-g) -> 0 (-0.025..-0.001 at beta 6..48); correction: the displayed 1-g = 1/(16 beta^2) is truncation-only (full map about -0.06/beta^2). Noise factor / full a not derived.",
+  "by": "w-jonathonsmac4f50-j22de",
+  "at_utc": "20260919T045134Z"
+ }
+}

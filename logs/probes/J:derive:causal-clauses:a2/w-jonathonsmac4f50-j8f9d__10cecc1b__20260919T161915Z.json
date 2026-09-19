@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:causal-clauses:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j8f9d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/causal-clauses/w-jonathonsmac4f50-j8f9d/check.py",
+ "seed": 34755,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "10cecc1b",
+ "started_utc": "20260919T161915Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (ATTEMPT.md S1-S8, finite facts CHECKED here) on a causal event lattice (every parent recorded before its child, no record re-formed) every clock law acting on formable sites (any rates, value-dependent included) and every antichain-unit clause finish in the product of one-site kernels given parents; the recorded candidates that change the law are exactly those that let a child form before a parent or condition on unformed sites: block 14's executed clocks (uniform 1/108, seeded 1/72, attracting 7/648 on the V at (3,1,2)), block 15's units with a parent-child pair and the whole-window (static) unit (1/72 on the V), block 24's static exterior (1/72); none re-forms records; on down-closed windows the free window and the integrated exterior coincide, so causality settles block 24's fork"
+ },
+ "review": "Claimed for referee: on a causal event lattice every clock law on formable sites (any rates, value-dependent) and every antichain-unit clause finish in the product of kernels given parents (proof: for fixed values the choice probabilities over formation sequences sum to 1); the recorded candidates that change the law (block 14's executed clocks, block 15's parent-child units and whole-window unit, block 24's static exterior) all act first on 3-site windows, with exact TVs at (3,1,2) on the V of 1/108, 1/72, 7/648, 37/3888, 1/72, 1/72; none re-forms records; on down-closed windows free window = integrated causal exterior, so causality settles block 24's fork; 5 checks pass (A1, A2 with 60 random causal policies, B1, B2, C1), all exact.",
+ "what": "DERIVATION, independent attempt 2 of 3: On a causal event lattice, which formation clauses still matter?. GIVEN (refereed): on a finite causal DAG any two topological orders give the same joint law (product of kernels given parents); hypothesis: every predecessor recorded before its successor, no record re-formed. Referee's remark on a failed clause attempt: on level-ordered Z^3 two same-level sites are never nearest neighbours (the fork offset e_i - e_j has squared length 2), so joint formation of a same-level unit is exactly the product of the one-site kernels. The three clause attempts of round 1 had correct finite computations and FAILED at the interpretive step. TASK: a precise theorem and a precise list. (a) Theorem: for a causal event lattice, every formation-rate clause (clocks of any rates) and every formation-unit clause whose units are antichains induces the same law; prove it. (b) List exactly which clause candidates recorded in blocks 14, 15, 24 (PRs #8148, #8149, #8158) violate causality or re-form records, and for each give the smallest window where it changes the law, with the exact total-variation distance. (c) The unrecorded-site clause (block 24: free window against integrated exterior): does causality settle it? (d) Consequence: state what remains genuinely open about HOW records form once the event lattice is causal. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/causal-clauses/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/causal-clauses/<name>/check.py\"",
+ "stdout_sha256": "037d03e074bfe1637bc5d68d2b64caaa85f1168a48615c1e5579ced3b4ff7689",
+ "stdout_tail": "a causal event lattice (every parent recorded before its child, no record re-formed) every clock law acting on formable sites (any rates, value-dependent included) and every antichain-unit clause finish in the product of one-site kernels given parents; the recorded candidates that change the law are exactly those that let a child form before a parent or condition on unformed sites: block 14's executed clocks (uniform 1/108, seeded 1/72, attracting 7/648 on the V at (3,1,2)), block 15's units with a parent-child pair and the whole-window (static) unit (1/72 on the V), block 24's static exterior (1/72); none re-forms records; on down-closed windows the free window and the integrated exterior coincide, so causality settles block 24's fork\nHIT: on a causal event lattice (every parent recorded before its child, no record re-formed) every clock law acting on formable sites (any rates, value-dependent included) and every antichain-unit clause finish in the product of one-site kernels given parents; the recorded candidates that change the law are exactly those that let a child form before a parent or condition on unformed sites: block 14's executed clocks (uniform 1/108, seeded 1/72, attracting 7/648 on the V at (3,1,2)), block 15's units with a parent-child pair and the whole-window (static) unit (1/72 on the V), block 24's static exterior (1/72); none re-forms records; on down-closed windows the free window and the integrated exterior coincide, so causality settles block 24's fork\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8f9d",
+  "at_utc": "20260919T161929Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation claim for cross-family referee: check.py verifies the theorem on 60 random value-dependent causal policies over six windows and two rules exactly and computes every listed TV exactly; not a pattern false positive.",
+  "by": "w-jonathonsmac4f50-j8f9d",
+  "at_utc": "20260919T161929Z"
+ }
+}

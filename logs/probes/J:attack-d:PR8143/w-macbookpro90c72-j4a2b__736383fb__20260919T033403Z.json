@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8143",
+ "type": "judgment",
+ "lane": "full-domain-projective-corridor-20260915",
+ "worker": "w-macbookpro90c72-j4a2b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8143/quantifier_every_L.py",
+ "seed": 88843,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "736383fb",
+ "started_utc": "20260919T033403Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - |C|=1+5L and the 3L sequence hold for every L=1..20; Z\u22653/4 and \u03bb\u2208[0,1] hold on the tested nonnegative grid (beyond the executed L=5 census)"
+ },
+ "review": "|C|=1+5L and the 3L sequence hold for L=1..20 and Z\u22653/4, \u03bb\u2208[0,1] on a nonnegative grid, so the universals hold beyond the executed L=5 census and the pattern has no purchase",
+ "what": "PR #8143 ([physics-loop] full-domain-projective-corridor: bounded_theo): attack FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/full-domain-projective-corridor-20260915; git show origin/physics-loop/full-domain-projective-corridor-20260915:<note>. Create probes/work/pr8143/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8143/<script>.py\"",
+ "stdout_sha256": "bfe2bb85614698ed9eeee9ff4ed7827685eaaa4dbe0b259914f74bf5e3e05f52",
+ "stdout_tail": "L=1..20: |C|=1+5L and |seq|=3L distinct\nZ>=3/4 on S=0..4 step 1/8\n\u03bb in [0,1] on a=0..4 step 1/8\nSUMMARY: pattern has no purchase on this note - |C|=1+5L and the 3L sequence hold for every L=1..20; Z\u22653/4 and \u03bb\u2208[0,1] hold on the tested nonnegative grid (beyond the executed L=5 census)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4a2b",
+  "at_utc": "20260919T033403Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

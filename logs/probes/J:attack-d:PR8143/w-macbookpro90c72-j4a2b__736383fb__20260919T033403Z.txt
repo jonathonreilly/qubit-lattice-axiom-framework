@@ -1,0 +1,4 @@
+L=1..20: |C|=1+5L and |seq|=3L distinct
+Z>=3/4 on S=0..4 step 1/8
+λ in [0,1] on a=0..4 step 1/8
+SUMMARY: pattern has no purchase on this note - |C|=1+5L and the 3L sequence hold for every L=1..20; Z≥3/4 and λ∈[0,1] hold on the tested nonnegative grid (beyond the executed L=5 census)

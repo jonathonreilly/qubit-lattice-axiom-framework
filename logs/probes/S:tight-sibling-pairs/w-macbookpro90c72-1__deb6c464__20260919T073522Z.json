@@ -1,0 +1,32 @@
+{
+ "task": "S:tight-sibling-pairs",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/tightpairs.py 198 1800 5 5 8",
+ "seed": 198,
+ "minutes": 30.0,
+ "box": "5x5x8",
+ "git_sha": "deb6c464",
+ "started_utc": "20260919T073522Z",
+ "elapsed_s": 1800.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "-2"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "random-start climb maximizing min(v(w1), v(w2)) over sibling processed predecessors of a processed site; a HIT (value 0) is a tight sibling pair, the open case of block 33's lemma; then run S:tight-sibling-violation from it. Vary seed, box, minutes.",
+ "stdout_sha256": "aec624b70dce110b05093e0f5c23cae32dc6a45d95f790afe900d43eb28a0abd",
+ "stdout_tail": "-4, (1, 3, 1), -4, -4); H3 violation: None; ones=52; zeta=[(0, 0, 7), (0, 1, 5), (0, 1, 6), (1, 0, 6), (1, 1, 1), (1, 1, 2), (1, 2, 0), (1, 2, 4), (1, 3, 0), (1, 4, 2), (2, 0, 3), (2, 0, 6), (2, 2, 2), (2, 2, 4), (2, 3, 6), (2, 4, 4), (3, 0, 2), (3, 0, 3), (3, 0, 4), (3, 1, 7), (3, 2, 0), (3, 3, 2), (3, 3, 4), (3, 3, 7), (3, 4, 0), (3, 4, 1), (3, 4, 2), (3, 4, 6), (4, 1, 3), (4, 1, 5), (4, 2, 6), (4, 3, 6), (4, 4, 1), (4, 4, 2)]\nseed 198: max over sibling processed pred pairs of min(v) = -3: detail ((1, 1, 4), (0, 1, 4), -3, (1, 0, 4), -3, -2); H3 violation: None; ones=44; zeta=[(0, 0, 2), (0, 0, 3), (0, 0, 4), (0, 0, 7), (0, 1, 3), (0, 1, 4), (0, 1, 7), (0, 2, 0), (0, 2, 5), (0, 3, 0), (1, 0, 3), (1, 1, 6), (1, 3, 7), (1, 4, 6), (2, 1, 4), (2, 1, 7), (2, 2, 0), (2, 2, 2), (2, 2, 3), (2, 2, 4), (2, 2, 6), (2, 2, 7), (2, 4, 3), (2, 4, 7), (3, 1, 1), (3, 2, 3), (3, 3, 4), (3, 3, 7), (3, 4, 1), (4, 1, 5), (4, 2, 3), (4, 4, 7)]\nseed 198: max over sibling processed pred pairs of min(v) = -2: detail ((1, 1, 4), (0, 1, 4), -2, (1, 0, 4), -2, -1); H3 violation: None; ones=46; zeta=[(0, 0, 3), (0, 0, 4), (0, 0, 7), (0, 1, 3), (0, 1, 4), (0, 1, 7), (0, 2, 0), (0, 2, 5), (0, 3, 0), (0, 4, 7), (1, 0, 3), (1, 1, 6), (1, 3, 5), (1, 3, 7), (1, 4, 6), (2, 1, 4), (2, 1, 7), (2, 2, 3), (2, 2, 4), (2, 2, 6), (2, 2, 7), (2, 4, 3), (2, 4, 7), (3, 0, 6), (3, 1, 1), (3, 2, 3), (3, 3, 4), (3, 3, 7), (3, 4, 1), (4, 1, 1), (4, 1, 5), (4, 2, 2), (4, 2, 3), (4, 4, 7)]\nseed 198: done restarts=30 best=-2\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T080523Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

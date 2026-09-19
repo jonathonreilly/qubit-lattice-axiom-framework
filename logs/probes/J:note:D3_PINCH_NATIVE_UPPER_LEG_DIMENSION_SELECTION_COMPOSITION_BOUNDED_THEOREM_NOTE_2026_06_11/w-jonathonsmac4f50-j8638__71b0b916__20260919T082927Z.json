@@ -1,0 +1,32 @@
+{
+ "task": "J:note:D3_PINCH_NATIVE_UPPER_LEG_DIMENSION_SELECTION_COMPOSITION_BOUNDED_THEOREM_NOTE_2026_06_11",
+ "type": "judgment",
+ "lane": "d3",
+ "worker": "w-jonathonsmac4f50-j8638",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_D3_PINCH_NATIVE_UPPER_LEG_DIMENSION_SELE/pinch_legs_exact_and_extrapolated.py",
+ "seed": 6567,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "71b0b916",
+ "started_utc": "20260919T082927Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the three falsifiers do not fire: M_2(C) admits no 4th anticommuting element (anticommutant dimension 0), and in general M_n(C) holds at most 2k+1 anticommuting involutions (n = 2^k m, m odd; n = 2..8 checked); the d = 1 kernel r(L-r)/(2L) diverges linearly for every L (symbolic), the d = 2 increments tend to ln2/(2 pi) up to L = 2048 (last 0.110318 vs 0.110318), and d = 3 G_L(r) converges to a positive decreasing kernel; beside the falsifiers, G(0) = 0.25273101 exactly (Watson; mpmath quadrature agrees) against the note's printed 0.252734 (difference 3.0e-06, the runner's trapezoid, checked there only to 1e-4), while 4 pi r G(r) at r = 4, 8, 16 agree with the printed four decimals (differences +3.0e-05, +8.0e-06, -1.2e-05) and continue to 1.000245, 1.000061 at r = 32, 64"
+ },
+ "review": "Output matches the task (falsifiers 1-3 implemented exactly or with disjoint numerics beyond the note's sizes): the Pauli triple's anticommutant in M_2(C) is {0} and M_n(C) holds at most 2k+1 anticommuting involutions for n = 2..8; the d = 1 kernel r(L-r)/(2L) is exact for every L; the d = 2 increments reach 0.110318 = ln2/(2 pi) at L = 2048; d = 3 G_L(r) converges to a positive decreasing kernel with 4 pi r G(r) = 1.019830, 1.004108, 1.000988 (matching the note's four decimals) and 1.000245, 1.000061 at r = 32, 64; the note's printed G(0) = 0.252734 differs by 3.0e-6 from the exact 0.25273101 (Watson), a runner-precision digit, not a falsifier.",
+ "what": "Note on main: docs/D3_PINCH_NATIVE_UPPER_LEG_DIMENSION_SELECTION_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-11.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_D3_PINCH_NATIVE_UPPER_LEG_DIMENSION_SELE/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_D3_PINCH_NATIVE_UPPER_LEG_DIMENSION_SELE/<script>.py\"",
+ "stdout_sha256": "3058983ab32d1b46b07959a79bb0f2436a0471db91847d436db5b3490aed4ed3",
+ "stdout_tail": " for every L\n3. d = 2 potential-kernel increments per L-doubling (L = 32..2048): [np.float64(0.111087), np.float64(0.11048), np.float64(0.110357), np.float64(0.110328), np.float64(0.11032), np.float64(0.110318)] vs ln2/(2 pi) = 0.110318\n4. d = 3: G_L(r) at L = 32, 64, 128 converges (successive differences shrink at every r: True); extrapolated G(r) positive and decreasing: True; G(0): Watson closed form 0.252731009859, FFT extrapolation 0.25273089 (stability 8.7e-07), mpmath Bessel integral 0.252731009859; the note prints 0.252734; 4 pi r G(r) by mpmath quadrature: r=4: 1.019830 (note 1.0198), r=8: 1.004108 (note 1.0041), r=16: 1.000988 (note 1.001), r=32: 1.000245 (beyond), r=64: 1.000061 (beyond)\nSUMMARY: the three falsifiers do not fire: M_2(C) admits no 4th anticommuting element (anticommutant dimension 0), and in general M_n(C) holds at most 2k+1 anticommuting involutions (n = 2^k m, m odd; n = 2..8 checked); the d = 1 kernel r(L-r)/(2L) diverges linearly for every L (symbolic), the d = 2 increments tend to ln2/(2 pi) up to L = 2048 (last 0.110318 vs 0.110318), and d = 3 G_L(r) converges to a positive decreasing kernel; beside the falsifiers, G(0) = 0.25273101 exactly (Watson; mpmath quadrature agrees) against the note's printed 0.252734 (difference 3.0e-06, the runner's trapezoid, checked there only to 1e-4), while 4 pi r G(r) at r = 4, 8, 16 agree with the printed four decimals (differences +3.0e-05, +8.0e-06, -1.2e-05) and continue to 1.000245, 1.000061 at r = 32, 64\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8638",
+  "at_utc": "20260919T082930Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

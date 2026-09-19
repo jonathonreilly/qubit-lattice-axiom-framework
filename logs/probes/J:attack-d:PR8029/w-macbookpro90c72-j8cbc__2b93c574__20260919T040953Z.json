@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8029",
+ "type": "judgment",
+ "lane": "infinite-static-block39-20260907",
+ "worker": "w-macbookpro90c72-j8cbc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8029/quantifier_every_R.py",
+ "seed": 90993,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2b93c574",
+ "started_utc": "20260919T040953Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - min Q=4 on every cutoff R=1..12 at (1,0) and (0,1); path energy 4d for every d=1..12"
+ },
+ "review": "min Q=4 on every cutoff R=1..12 and path energy 4d for d=1..12, so the universals hold and the pattern has no purchase",
+ "what": "PR #8029 ([physics-loop] infinite-static block39 conditional-support): attack GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/infinite-static-block39-20260907; git show origin/codex/infinite-static-block39-20260907:<note>. Create probes/work/pr8029/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8029/<script>.py\"",
+ "stdout_sha256": "96da95a8b75829a71d8816b31a4b0454206c2f1edc12b2c88ca27cb9c78f1da2",
+ "stdout_tail": "R=1: min Q=4 n=3\nR=2: min Q=4 n=6\nR=3: min Q=4 n=10\nR=4: min Q=4 n=15\nR=5: min Q=4 n=21\nR=6: min Q=4 n=28\nR=7: min Q=4 n=36\nR=8: min Q=4 n=45\nR=9: min Q=4 n=55\nR=10: min Q=4 n=66\nR=11: min Q=4 n=78\nR=12: min Q=4 n=91\n4d/a coefficient for d=1..12\nSUMMARY: pattern has no purchase on this note - min Q=4 on every cutoff R=1..12 at (1,0) and (0,1); path energy 4d for every d=1..12\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8cbc",
+  "at_utc": "20260919T040953Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

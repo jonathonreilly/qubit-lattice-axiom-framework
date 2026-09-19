@@ -1,0 +1,14 @@
+R=1: min Q=4 n=3
+R=2: min Q=4 n=6
+R=3: min Q=4 n=10
+R=4: min Q=4 n=15
+R=5: min Q=4 n=21
+R=6: min Q=4 n=28
+R=7: min Q=4 n=36
+R=8: min Q=4 n=45
+R=9: min Q=4 n=55
+R=10: min Q=4 n=66
+R=11: min Q=4 n=78
+R=12: min Q=4 n=91
+4d/a coefficient for d=1..12
+SUMMARY: pattern has no purchase on this note - min Q=4 on every cutoff R=1..12 at (1,0) and (0,1); path energy 4d for every d=1..12

@@ -1,0 +1,7 @@
+Q - 1/lam^2 - claimed = 0
+lam=1 tau=1 delta=1 Q-1/lam^2=0
+lam=2 tau=1 delta=1 Q-1/lam^2=7/4
+lam=1/2 tau=3 delta=1/4 Q-1/lam^2=250/27
+lam=10 tau=1/5 delta=1/10 Q-1/lam^2=47777499/100
+lam=1 tau=10 delta=1 Q-1/lam^2=0
+SUMMARY: QUANTIFIER SCOPE on Q_tau(lambda)-lambda^{-2}>=0 for lambda>=delta (PR #8080): the displayed factorization is an identity and the difference is nonnegative at the tested interior points; the forall holds as written

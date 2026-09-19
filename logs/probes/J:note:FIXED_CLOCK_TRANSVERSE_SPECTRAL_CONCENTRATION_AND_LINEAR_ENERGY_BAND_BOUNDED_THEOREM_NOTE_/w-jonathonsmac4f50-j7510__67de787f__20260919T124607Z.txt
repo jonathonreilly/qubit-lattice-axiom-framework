@@ -1,0 +1,55 @@
+==============================================================================
+L  localization identity, constants and the inequality chain
+  12(x-1)^2 identity: True; Phi' = (x-1)(7x+13)/((x+1)^2(x+4)^2): True; Phi(9/10) = 1/931, Phi(11/10) = 1/1071, m = 1/1071, K = 3927; 1 - K eps/(1-eps) = 0.9996073000 > 0.9996: True; reference cancellation 0; |coef| sum 11/3
+  20000 exact random measures: chain failures 0; max chi(I^c)/(K eps_3) = 0.3301
+SUMMARY: L localization: 12(x-1)^2 identity and Phi' exact; m = 1/1071, K = 3927, fraction 0.99960730 > 0.9996; 20000 exact random measures: chain failures 0, max chi(I^c)/(K eps_3) = 0.3301
+==============================================================================
+P  Poisson kernel, reweighting and energy conversion (50 digits)
+  kernel identities (series, two closed forms, u/(u+z) coth(E/2)) and unit integral: max dev 3.59e-47; tanh(E/2) = sqrt(u/(u+4)): 1.34e-51; J_r endpoint/weight conversions: 2.67e-51; slopes ['0.9486832981', '1.048808848'] vs 3/sqrt10, sqrt(11/10)
+SUMMARY: P Poisson kernel = sinh E/(cosh E - cos w) = u/(u+z) coth(E/2), unit integral (dev 3.6e-47); tanh(E/2) = sqrt(u/(u+4)); J_r conversions (dev 2.7e-51); slopes 0.9486833, 1.0488088
+==============================================================================
+M  midpoint magnetic compression from the real-space 4D complex on the 6^4 torus
+  1290 momenta with r > 0: max |[P_e]_BB - r^2/(r^2+w^2) P_T| = 2.19e-15; plane-wave translation consistency 1.6e-14; magnetic block rank 2 at all: True
+SUMMARY: M real-space 6^4 complex, 1290 momenta: max |[P_e]_BB - r^2/(r^2+w^2) P_T| = 2.2e-15, rank 2 at all: True
+==============================================================================
+C  the fixed-parameter certificate (sec. 7)
+  b1 < 31/10: True
+  a(2000) > 253/120: True
+  2000/a(2000) < 1000: True
+  2 pi^2 a > 6236197/150000: True
+  6236197/150000 > 59 (7/10): True
+  S_5, S_6 <= 2q at q = 1/1024: True
+  8765200000/2^59 < 1/50000000: True
+  8503056 + 262144 = 8765200: True
+  256016 * 2^-9000 < 1/50000000: True
+  8 * 16 * 2000 + 16 = 256016: True
+  rational bounds on log3, log4, log2, pi, e hold at 50 digits: True; Eulerian S_5/S_6 vs series 1.34e-51
+  b1 = 3.01272990322; delta(2000) = 4.42434e-10; delta decreasing on [2000, 20000]: True; eta(2000) = 7.65127e-4282; epsilon at beta = beta_d = 2000: 4.42434e-10 <= 1e-7: True
+SUMMARY: C certificate: all 10 rational inequalities hold: True; delta(2000) = 4.424e-10, eta(2000) = 7.651e-4282, epsilon <= 1e-7: True
+==============================================================================
+S  continuous-spectrum control and the scale mixture
+  uniform chi: closed form vs quadrature max 2.21e-47; bound-chain failures 0; h = 1/1000: 4h^2/(81(1-h^2)) = 4.93828e-8 < 1e-7: True, max gap on z in [0, 8] at a = 1: 4.93827e-8
+  scale mixture (1/2, 3/2): variance 1, fourth moment 15/4 (Gaussian 3)
+SUMMARY: S uniform-chi Stieltjes closed form vs quadrature 2.2e-47; atanh chain holds; h = 1/1000 bound 4.938e-8 (< 1e-7) with actual max gap 4.938e-8; scale mixture variance 1, fourth moment 15/4
+==============================================================================
+O  one-plaquette clock: score contact, MGF, Chernoff tail, vbar <= eta, Var(Y)  [120 digits]
+  beta= 0.5 N= 2: vbar =     0.71729836 <= eta =      4.7048457: True; MGF bound True; Chernoff tail True
+  beta= 0.5 N=16: vbar =     0.39405581 <= eta =      4.7048457: True; MGF bound True; Chernoff tail True
+  beta= 0.5 N=64: vbar =     0.39405554 <= eta =      4.7048457: True; MGF bound True; Chernoff tail True
+  beta= 1.0 N= 2: vbar =      0.1399493 <= eta =     0.68291848: True; MGF bound True; Chernoff tail True
+  beta= 1.0 N=16: vbar =    0.051166357 <= eta =     0.68291848: True; MGF bound True; Chernoff tail True
+  beta= 1.0 N=64: vbar =    0.051080214 <= eta =     0.68291848: True; MGF bound True; Chernoff tail True
+  beta= 2.3 N= 2: vbar =   0.0005343003 <= eta =   0.0023255548: True; MGF bound True; Chernoff tail True
+  beta= 2.3 N=16: vbar =  0.00015265081 <= eta =   0.0023255548: True; MGF bound True; Chernoff tail True
+  beta= 2.3 N=64: vbar =  0.00013377531 <= eta =   0.0023255548: True; MGF bound True; Chernoff tail True
+  beta= 5.0 N= 2: vbar =   1.8989473e-9 <= eta =   7.9036351e-9: True; MGF bound True; Chernoff tail True
+  beta= 5.0 N=16: vbar =   6.690165e-10 <= eta =   7.9036351e-9: True; MGF bound True; Chernoff tail True
+  beta= 5.0 N=64: vbar =  3.3312047e-10 <= eta =   7.9036351e-9: True; MGF bound True; Chernoff tail True
+  beta=12.0 N= 2: vbar =  4.5354732e-24 <= eta =  1.8448253e-23: True; MGF bound True; Chernoff tail True
+  beta=12.0 N=16: vbar =  2.4612923e-24 <= eta =  1.8448253e-23: True; MGF bound True; Chernoff tail True
+  beta=12.0 N=64: vbar =  6.7390204e-25 <= eta =  1.8448253e-23: True; MGF bound True; Chernoff tail True
+  all 30 (beta, N): max |E[X|theta] - Y| = 1.76e-96; max |Var Y - (1 - vbar - C_n/beta)| = 2.75e-119; failures []
+  max (E e^(hX) / e^(h^2/2) - 1) over all cases: 9.68e-121 (<= 0 up to 1e-100 rounding; the theta-function ratio differs from 1 by ~exp(-2 pi^2 beta_d))
+SUMMARY: O one-plaquette, N in {2,3,4,7,16,64} x beta in {0.5,1,2.3,5,12}: E[X|theta] = Y to 1.8e-96, Var Y = 1 - vbar - C_n/beta to 2.7e-119, MGF and Chernoff bounds hold, vbar <= eta(beta) with max ratio 0.2458
+==============================================================================
+SUMMARY: hits=0; runtime 5s

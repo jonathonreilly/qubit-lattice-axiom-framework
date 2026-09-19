@@ -1,0 +1,40 @@
+{
+ "task": "J:note:FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_",
+ "type": "judgment",
+ "lane": "fixed",
+ "worker": "w-jonathonsmac4f50-j7510",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTR/stieltjes_steps_realspace_midpoint_and_plaquette_bounds.py",
+ "seed": 21967,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67de787f",
+ "started_utc": "20260919T124607Z",
+ "elapsed_s": 5.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "L localization: 12(x-1)^2 identity and Phi' exact; m = 1/1071, K = 3927, fraction 0.99960730 > 0.9996; 20000 exact random measures: chain failures 0, max chi(I^c)/(K eps_3) = 0.3301",
+   "P Poisson kernel = sinh E/(cosh E - cos w) = u/(u+z) coth(E/2), unit integral (dev 3.6e-47); tanh(E/2) = sqrt(u/(u+4)); J_r conversions (dev 2.7e-51); slopes 0.9486833, 1.0488088",
+   "M real-space 6^4 complex, 1290 momenta: max |[P_e]_BB - r^2/(r^2+w^2) P_T| = 2.2e-15, rank 2 at all: True",
+   "C certificate: all 10 rational inequalities hold: True; delta(2000) = 4.424e-10, eta(2000) = 7.651e-4282, epsilon <= 1e-7: True",
+   "S uniform-chi Stieltjes closed form vs quadrature 2.2e-47; atanh chain holds; h = 1/1000 bound 4.938e-8 (< 1e-7) with actual max gap 4.938e-8; scale mixture variance 1, fourth moment 15/4",
+   "O one-plaquette, N in {2,3,4,7,16,64} x beta in {0.5,1,2.3,5,12}: E[X|theta] = Y to 1.8e-96, Var Y = 1 - vbar - C_n/beta to 2.7e-119, MGF and Chernoff bounds hold, vbar <= eta(beta) with max ratio 0.2458",
+   "hits=0; runtime 5s"
+  ]
+ },
+ "review": "Output matches the task; the conditional covariance input itself is not tested. The steps named in the falsifier list check out: the localization identity (12(x-1)^2 form and Phi') is exact, with m = 1/1071, K = 3927 and a fraction of 0.99960730 > 0.9996, and the chain chi(I^c) m <= combo <= (11/3) eps holds on 20000 exact random atomic measures (max usage 0.33); the Poisson kernel equals u/(u+z) coth(E/2) with unit integral and the J_r/tanh conversions agree to 1e-46; the midpoint magnetic block from a real-space 6^4 cochain complex equals r^2/(r^2+w^2) P_T at all 1290 momenta with r > 0 (2.2e-15, rank 2); all ten sec. 7 rational inequalities hold, with delta(2000) = 4.42e-10 and eta(2000) = 7.7e-4282; the sec. 8 controls reproduce (h = 1/1000 gap 4.94e-8 < 1e-7, mixture moments 1 and 15/4); on the one-plaquette clock for 30 (beta, N) pairs beyond the runner's two, E[X|theta] = Y to 2e-96, Var Y = 1 - vbar - C_n/beta to 3e-119, the MGF and Chernoff bounds hold and vbar <= eta (max ratio 0.246); no falsifier fired.",
+ "what": "Note on main: docs/FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_2026-09-15.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTR/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTR/<script>.py\"",
+ "stdout_sha256": "0d281e475ccb5efa29c6f4f159b0ececf591a0741fcf7fd20d324ec5864d6b52",
+ "stdout_tail": "= eta =   0.0023255548: True; MGF bound True; Chernoff tail True\n  beta= 2.3 N=16: vbar =  0.00015265081 <= eta =   0.0023255548: True; MGF bound True; Chernoff tail True\n  beta= 2.3 N=64: vbar =  0.00013377531 <= eta =   0.0023255548: True; MGF bound True; Chernoff tail True\n  beta= 5.0 N= 2: vbar =   1.8989473e-9 <= eta =   7.9036351e-9: True; MGF bound True; Chernoff tail True\n  beta= 5.0 N=16: vbar =   6.690165e-10 <= eta =   7.9036351e-9: True; MGF bound True; Chernoff tail True\n  beta= 5.0 N=64: vbar =  3.3312047e-10 <= eta =   7.9036351e-9: True; MGF bound True; Chernoff tail True\n  beta=12.0 N= 2: vbar =  4.5354732e-24 <= eta =  1.8448253e-23: True; MGF bound True; Chernoff tail True\n  beta=12.0 N=16: vbar =  2.4612923e-24 <= eta =  1.8448253e-23: True; MGF bound True; Chernoff tail True\n  beta=12.0 N=64: vbar =  6.7390204e-25 <= eta =  1.8448253e-23: True; MGF bound True; Chernoff tail True\n  all 30 (beta, N): max |E[X|theta] - Y| = 1.76e-96; max |Var Y - (1 - vbar - C_n/beta)| = 2.75e-119; failures []\n  max (E e^(hX) / e^(h^2/2) - 1) over all cases: 9.68e-121 (<= 0 up to 1e-100 rounding; the theta-function ratio differs from 1 by ~exp(-2 pi^2 beta_d))\nSUMMARY: O one-plaquette, N in {2,3,4,7,16,64} x beta in {0.5,1,2.3,5,12}: E[X|theta] = Y to 1.8e-96, Var Y = 1 - vbar - C_n/beta to 2.7e-119, MGF and Chernoff bounds hold, vbar <= eta(beta) with max ratio 0.2458\n==============================================================================\nSUMMARY: hits=0; runtime 5s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7510",
+  "at_utc": "20260919T124623Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

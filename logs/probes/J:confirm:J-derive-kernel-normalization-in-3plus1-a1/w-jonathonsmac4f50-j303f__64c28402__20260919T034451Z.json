@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-kernel-normalization-in-3plus1-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j303f",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/kernel-normalization-in-3plus1/referee_w-jonathonsmac4f50-j303f/check.py",
+ "seed": 89491,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034451Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 2 - the vMF tensor, the projector coefficient, G_4 = 1913/1344 and C(0) - C_v = sigma^2 (1 - 1/V) hold, but step 2 writes <A/kappa>/sigma^2 = (1 + sigma^2 c)/A(n beta), which is <1/kappa>/sigma^2 without the -<1/kappa^2> term of the stated truncation A = 1 - 1/kappa (it gives 1/A(n beta), not 1, when |S| does not fluctuate); the consistent expansion gives R_noise = 1 + (2(1 - 1/V) - G_V)/(n beta) + O(1/beta^2), confirmed by a Monte Carlo of the exact conditional variance, so the stated 1 + (3 - G)/(n beta) and 599/552 are wrong; the sign conclusion (R_noise > 1 against the executed 0.9719) survives, since G < 2 (G_4 = 1913/1344, G_64 = 1.77)"
+ },
+ "review": "Kernel-normalization a1's step 2 drops the -<1/kappa^2> term (its |S| factor gives 1/A(n beta), not 1, without fluctuations), so R_noise is 1 + (2c - G_V)/(n beta), not 1 + (3 - G)/(n beta): a Monte Carlo of the exact conditional variance gives 1.00224 at beta 24, G 1.79 against 1.00219 corrected and 1.01260 claimed; the sign conclusion survives since G < 2, so the claim fails at step 2 with no HIT.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:kernel-normalization-in-3plus1:a1/; its files are probes/work/derive/kernel-normalization-in-3plus1/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/kernel-normalization-in-3plus1/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "defaf269ad919d8c75c29a875392ec30f3a2b6e032f8c66b863e7700490e5606",
+ "stdout_tail": "O(1/beta^2) (equal to 1 at c = 0); the attempt's (1 + sigma^2 c)/A(n beta) = 1 + (c + 1)/n/beta + ..., which is beta*n/(beta*n - 1) at c = 0; at beta = 6, n = 4, c = 1: 299/288 against the attempt's 599/552; so R_noise = 1 + (2c - G_V)/(n beta) + O(1/beta^2)\nPASS K4: beta 6, G 1.7900: MC 1.00998, corrected 1.00875, attempt 1.05042; beta 6, G 1.4234: MC 1.02500, corrected 1.02403, attempt 1.06569; beta 12, G 1.7900: MC 1.00458, corrected 1.00438, attempt 1.02521; beta 12, G 1.4234: MC 1.01219, corrected 1.01201, attempt 1.03285; beta 24, G 1.7900: MC 1.00224, corrected 1.00219, attempt 1.01260; beta 24, G 1.4234: MC 1.00604, corrected 1.00601, attempt 1.01642\nPASS K5: G_4 = 1.4234; G_L = [(8, 1.6098), (16, 1.7016), (32, 1.7473), (64, 1.7701)]: all below 2, so 1 + (2 - G)/(n beta) > 1 and the sign conclusion survives\nSUMMARY: fails at step 2 - the vMF tensor, the projector coefficient, G_4 = 1913/1344 and C(0) - C_v = sigma^2 (1 - 1/V) hold, but step 2 writes <A/kappa>/sigma^2 = (1 + sigma^2 c)/A(n beta), which is <1/kappa>/sigma^2 without the -<1/kappa^2> term of the stated truncation A = 1 - 1/kappa (it gives 1/A(n beta), not 1, when |S| does not fluctuate); the consistent expansion gives R_noise = 1 + (2(1 - 1/V) - G_V)/(n beta) + O(1/beta^2), confirmed by a Monte Carlo of the exact conditional variance, so the stated 1 + (3 - G)/(n beta) and 599/552 are wrong; the sign conclusion (R_noise > 1 against the executed 0.9719) survives, since G < 2 (G_4 = 1913/1344, G_64 = 1.77)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j303f",
+  "at_utc": "20260919T034453Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

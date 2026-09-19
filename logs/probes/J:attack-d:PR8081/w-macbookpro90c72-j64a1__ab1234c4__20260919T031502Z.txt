@@ -1,0 +1,10 @@
+E=1 F=0 L_note=-3.000000 gridmin=-3.000000 diff=0.000000
+E=1 F=2 L_note=-9.000000 gridmin=-9.000000 diff=0.000000
+E=1 F=4 L_note=-18.000000 gridmin=-18.000000 diff=0.000000
+E=1 F=6 L_note=-30.000000 gridmin=-30.000000 diff=0.000000
+E=1 F=1 L_note=-6.000000 gridmin=-6.000000 diff=0.000000
+E=1 F=3 L_note=-12.750000 gridmin=-12.749948 diff=0.000052
+E=1 F=8 L_note=-42.000000 gridmin=-42.000000 diff=0.000000
+T^2 <= 3T+18I on K6 disjoint-pair T: True
+five lambda scales lie in [0,4]: True
+SUMMARY: pattern has no purchase on this note: L(E,F) matches the enumerated min on all three F/E regimes, T^2<=3T+18I holds, and the lambda grid sits inside the stated clamp

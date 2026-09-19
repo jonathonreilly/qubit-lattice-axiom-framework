@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8081",
+ "type": "judgment",
+ "lane": "native-correlated-ward-20260910",
+ "worker": "w-macbookpro90c72-j64a1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8081/quantifier_L_branches.py",
+ "seed": 87702,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab1234c4",
+ "started_utc": "20260919T031502Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: L(E,F) matches the enumerated min on all three F/E regimes, T^2<=3T+18I holds, and the lambda grid sits inside the stated clamp"
+ },
+ "review": "L(E,F) matches the min on all three F/E regimes; T^2<=3T+18I; lambda grid in [0,4]; pattern has no purchase",
+ "what": "PR #8081 ([physics-loop] Correlated native Ward bounds (conditional-su): attack NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-correlated-ward-20260910; git show origin/codex/native-correlated-ward-20260910:<note>. Create probes/work/pr8081/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8081/<script>.py\"",
+ "stdout_sha256": "fb626e6393db370e5d877645b71e6dd335a7db798d2e28e5f2adc7ed2c579691",
+ "stdout_tail": "E=1 F=0 L_note=-3.000000 gridmin=-3.000000 diff=0.000000\nE=1 F=2 L_note=-9.000000 gridmin=-9.000000 diff=0.000000\nE=1 F=4 L_note=-18.000000 gridmin=-18.000000 diff=0.000000\nE=1 F=6 L_note=-30.000000 gridmin=-30.000000 diff=0.000000\nE=1 F=1 L_note=-6.000000 gridmin=-6.000000 diff=0.000000\nE=1 F=3 L_note=-12.750000 gridmin=-12.749948 diff=0.000052\nE=1 F=8 L_note=-42.000000 gridmin=-42.000000 diff=0.000000\nT^2 <= 3T+18I on K6 disjoint-pair T: True\nfive lambda scales lie in [0,4]: True\nSUMMARY: pattern has no purchase on this note: L(E,F) matches the enumerated min on all three F/E regimes, T^2<=3T+18I holds, and the lambda grid sits inside the stated clamp\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j64a1",
+  "at_utc": "20260919T031503Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

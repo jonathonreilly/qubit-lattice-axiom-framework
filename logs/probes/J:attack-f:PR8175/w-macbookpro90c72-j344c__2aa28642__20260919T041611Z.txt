@@ -1,0 +1,1 @@
+SUMMARY: NORMALIZATION (PR #8175): no Fourier sums, structure factors, 2 pi, 1/L, 1/N, torus, or conjugation conventions in the sharper-bad-pair budget / two-level-period note; pattern has no purchase

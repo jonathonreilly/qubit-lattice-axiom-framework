@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8175",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block31-sharpe",
+ "worker": "w-macbookpro90c72-j344c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8175/no_fourier_normalization.py",
+ "seed": 91371,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2aa28642",
+ "started_utc": "20260919T041611Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "NORMALIZATION (PR #8175): no Fourier sums, structure factors, 2 pi, 1/L, 1/N, torus, or conjugation conventions in the sharper-bad-pair budget / two-level-period note; pattern has no purchase"
+ },
+ "review": "NORMALIZATION has no purchase: the sharper-budget explanation-tree note has no Fourier/2pi/1/L/1/N conventions.",
+ "what": "PR #8175 (ail31: the sharper bad-pair budget is false for the extended): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916; git show origin/physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916:<note>. Create probes/work/pr8175/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8175/<script>.py\"",
+ "stdout_sha256": "70b96201b85ba540ef41e19f921135571b619c40d45547c626841e45203756ec",
+ "stdout_tail": "SUMMARY: NORMALIZATION (PR #8175): no Fourier sums, structure factors, 2 pi, 1/L, 1/N, torus, or conjugation conventions in the sharper-bad-pair budget / two-level-period note; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j344c",
+  "at_utc": "20260919T041616Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8027",
+ "type": "judgment",
+ "lane": "static-geodesic-block37-20260907",
+ "worker": "w-macbookpro90c72-j4d77",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8027/geodesic_path_count.py",
+ "seed": 85027,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "926d21f6",
+ "started_utc": "20260919T023027Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - shortest-path witnesses exist: word counts equal L!/(n1!n2!n3!) on six small displacements, all stay in the axis-aligned box, and Z^3 NN is triangle-free"
+ },
+ "review": "Shortest-path counts equal L!/(n1!n2!n3!) on six displacements, paths stay in the box, Z^3 NN triangle-free; pattern has no purchase",
+ "what": "PR #8027 ([physics-loop] static-geodesic block37 conditional-support): attack GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-geodesic-block37-20260907; git show origin/codex/static-geodesic-block37-20260907:<note>. Create probes/work/pr8027/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8027/<script>.py\"",
+ "stdout_sha256": "270fa7ccd95eeb3a32c4d45941edb0f79d2f2f5ba25150a5a6131c512c32d30c",
+ "stdout_tail": "Z^3 NN triangle? False\nn=(1, 0, 0) L=1 L!/n!=1 enumerated words=1\nn=(1, 1, 0) L=2 L!/n!=2 enumerated words=2\nn=(2, 1, 0) L=3 L!/n!=3 enumerated words=3\nn=(1, 1, 1) L=3 L!/n!=6 enumerated words=6\nn=(2, 2, 1) L=5 L!/n!=30 enumerated words=30\nn=(3, 1, 1) L=5 L!/n!=20 enumerated words=20\nSUMMARY: pattern has no purchase on this note - shortest-path witnesses exist: word counts equal L!/(n1!n2!n3!) on six small displacements, all stay in the axis-aligned box, and Z^3 NN is triangle-free\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4d77",
+  "at_utc": "20260919T023027Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

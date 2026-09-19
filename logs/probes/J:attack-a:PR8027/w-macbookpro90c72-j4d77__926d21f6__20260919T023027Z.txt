@@ -1,0 +1,8 @@
+Z^3 NN triangle? False
+n=(1, 0, 0) L=1 L!/n!=1 enumerated words=1
+n=(1, 1, 0) L=2 L!/n!=2 enumerated words=2
+n=(2, 1, 0) L=3 L!/n!=3 enumerated words=3
+n=(1, 1, 1) L=3 L!/n!=6 enumerated words=6
+n=(2, 2, 1) L=5 L!/n!=30 enumerated words=30
+n=(3, 1, 1) L=5 L!/n!=20 enumerated words=20
+SUMMARY: pattern has no purchase on this note - shortest-path witnesses exist: word counts equal L!/(n1!n2!n3!) on six small displacements, all stay in the axis-aligned box, and Z^3 NN is triangle-free

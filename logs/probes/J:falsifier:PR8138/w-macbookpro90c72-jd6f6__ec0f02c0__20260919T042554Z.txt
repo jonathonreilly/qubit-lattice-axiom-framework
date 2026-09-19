@@ -1,0 +1,8 @@
+Q1a (2, 2, 2): linear_extensions=48 mismatches=0
+Q1a (2, 2, 3): linear_extensions=2452 mismatches=0
+Q1a (3, 2, 2): linear_extensions=2452 mismatches=0
+Q1e (1, 2, 2): configs=1296 mismatches=0
+Q1e (2, 2, 1): configs=1296 mismatches=0
+Q1e (1, 2, 3): configs=46656 mismatches=0
+Q1e (3, 1, 2): configs=46656 mismatches=0
+SUMMARY: FALSIFIER (PR #8138): Q1a recorded sets equal predecessor sets on every linear extension of 2x2x2, 2x2x3 and 3x2x2; Q1e product form equals conditionals on all configs of 1x2x2, 2x2x1, 1x2x3 and 3x1x2 at (3,1,2); beyond executed sizes; does not fire

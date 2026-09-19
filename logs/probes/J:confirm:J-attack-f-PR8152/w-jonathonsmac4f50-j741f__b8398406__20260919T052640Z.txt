@@ -1,0 +1,6 @@
+1. q1 = e1, q2 = (cos t, sin t, 0), 0 < t < pi: written F^T F = [[1, 0, 0], [0, 1, 0], [0, 0, sin(t)**2]]; det F = sin(t)
+2. q1 = (2/3,2/3,1/3), q2 = (2/7,3/7,6/7), q1.q2 = 16/21: |q1 x q2|^2 = 185/441; written F^T F = [[1, 0, 0], [0, 1, 0], [0, 0, 185/441]]; det F = sqrt(185)/21 = 0.647689
+3. M2 with the written frame: e3 in S_0 maps to a vector of squared length 185/441 (not on S^2)
+4. rational rotation g (det 1): written frame equivariant True; corrected frame (q1, e2, q1 x e2) equivariant True, in SO(3) True
+HIT: confirmed - block 18's written frame F = (q1, GS(q2), q1 x q2) is not a rotation matrix for non-orthogonal pairs: F^T F = diag(1, 1, sin^2 t) and det F = sin t for q2 at angle t from q1 (exact: (2/3,2/3,1/3), (2/7,3/7,6/7) give |q1 x q2|^2 = 185/441, det F = sqrt(185)/21), so M2's F . S_0 leaves S^2 (e3 -> squared length 185/441); the equivariance part holds; the corrected third column q1 x e2 = (q1 x q2)/|q1 x q2| gives an SO(3) frame, which is the one the runner's B2 checks
+SUMMARY: confirmed - the note's frame lacks the 1/|q1 x q2| normalization of its third column (a definition typo; the runner builds the normalized frame, M2 holds with it)

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-f-PR8152",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j741f",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8152/frame_written_vs_rotation.py",
+ "seed": 95600,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b8398406",
+ "started_utc": "20260919T052640Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the note's frame lacks the 1/|q1 x q2| normalization of its third column (a definition typo; the runner builds the normalized frame, M2 holds with it)"
+ },
+ "review": "Finder's script re-run (det F = 4/5 at (1,0,0),(3/5,4/5,0)); own symbolic family q2 at angle t gives the written frame F^T F = diag(1,1,sin^2 t), det F = sin t, and the exact generic pair (2/3,2/3,1/3),(2/7,3/7,6/7) gives |q1 x q2|^2 = 185/441, det sqrt(185)/21, so F.S_0 leaves S^2; equivariance holds, and the normalized frame (q1, e2, q1 x e2) is in SO(3), as the runner's B2 builds: HIT confirmed (definition typo).",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-f:PR8152/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "66a38a0a8b91d4b4f18c808ba8882c456eb1acb81eac0acc79953004c3c0622f",
+ "stdout_tail": "1. q1 = e1, q2 = (cos t, sin t, 0), 0 < t < pi: written F^T F = [[1, 0, 0], [0, 1, 0], [0, 0, sin(t)**2]]; det F = sin(t)\n2. q1 = (2/3,2/3,1/3), q2 = (2/7,3/7,6/7), q1.q2 = 16/21: |q1 x q2|^2 = 185/441; written F^T F = [[1, 0, 0], [0, 1, 0], [0, 0, 185/441]]; det F = sqrt(185)/21 = 0.647689\n3. M2 with the written frame: e3 in S_0 maps to a vector of squared length 185/441 (not on S^2)\n4. rational rotation g (det 1): written frame equivariant True; corrected frame (q1, e2, q1 x e2) equivariant True, in SO(3) True\nHIT: confirmed - block 18's written frame F = (q1, GS(q2), q1 x q2) is not a rotation matrix for non-orthogonal pairs: F^T F = diag(1, 1, sin^2 t) and det F = sin t for q2 at angle t from q1 (exact: (2/3,2/3,1/3), (2/7,3/7,6/7) give |q1 x q2|^2 = 185/441, det F = sqrt(185)/21), so M2's F . S_0 leaves S^2 (e3 -> squared length 185/441); the equivariance part holds; the corrected third column q1 x e2 = (q1 x q2)/|q1 x q2| gives an SO(3) frame, which is the one the runner's B2 checks\nSUMMARY: confirmed - the note's frame lacks the 1/|q1 x q2| normalization of its third column (a definition typo; the runner builds the normalized frame, M2 holds with it)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j741f",
+  "at_utc": "20260919T052641Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Block 18 'Frames': F(q1,q2) = (q1, GS(q2), q1 x q2) is stated to be a rotation matrix but the third column is unnormalized: F^T F = diag(1,1,sin^2 t), det F = sin t (exact at (2/3,2/3,1/3),(2/7,3/7,6/7): 185/441, sqrt(185)/21), so M2's F.S_0 is not in S^2 as written; fix: q1 x e2 (= (q1 x q2)/|q1 x q2|), which is what runner B2 builds; equivariance and M2 hold with the fix.",
+  "by": "w-jonathonsmac4f50-j741f",
+  "at_utc": "20260919T052641Z"
+ }
+}

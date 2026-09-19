@@ -1,0 +1,50 @@
+PASS N1    E(k) = sum(2-2cos k_a) = sum (2 sin(k_a/2))^2
+PASS N2a   Hessian of E at k=0 is the identity: E = |k|^2 + O(k^4)
+PASS N2b   first anisotropy of E is the quartic -(1/12) sum k_a^4 (order r^-3 tail)
+PASS N3    E >= 0 on the BZ with the only zero at k = 0
+PASS N4    max E = 12 at the zone corner
+PASS L1a   7(1 - phi_7) = E exactly
+PASS L1b   7(1 + phi_7) = 14 - E exactly
+PASS L2a   static response chi = 1/(1-phi) = 7/E
+PASS L2b   equal-time covariance C = 49 sigma^2/(E(14-E))
+PASS L2c   C = (7/2) sigma^2 (1/E + 1/(14-E))
+PASS L2d   C/(sigma^2 chi) = 7/(14-E): 1/2 at k->0, 7/2 at the corner
+PASS L3    14 - E >= 2 > 0 on the whole BZ: C is positive, its second term short-range
+PASS S1    SELF-CONSISTENT bookkeeping: sigma^2 = 1/(7 beta) identically, for EVERY A
+PASS S2a   node input sigma^2 chi = G/beta exactly (G = 1/E), A-independent
+PASS S2b   two-point tail coefficient = G/(2 beta) exactly, A-independent
+PASS S3a   unit Newtonian coefficient, response slot  <=>  beta = 1 EXACTLY
+PASS S3b   unit Newtonian coefficient, two-point slot <=>  beta = 1/2 EXACTLY
+PASS S4a   sum_n 2/(n^2 pi^2) = 1/3 exactly: A(kappa)/kappa -> 1/3 as kappa -> 0
+PASS S4a2  every term falls as -4kappa/(...)^2 < 0: A(kappa)/kappa strictly decreasing, root unique
+PASS S4b   A(kappa) = coth kappa - 1/kappa = kappa/3 - kappa^3/45 + ...  (A'(0) = 1/3)
+PASS S4c   sigma^2 = 1/7 < 1/3: the root kappa* of A(kappa)/kappa = 1/7 exists and is unique
+PASS S4d   sigma^2 = 2/7 < 1/3: the root kappa* of A(kappa)/kappa = 2/7 exists and is unique
+PASS S5a   response slot: kappa* in [5.79145, 5.79146]   (A(kappa*)/kappa* = 1/7)
+PASS S5b   two-point slot: kappa* in [1.63831, 1.63832]  (A(kappa*)/kappa* = 2/7)
+PASS S5c   aligned bookkeeping (kappa = 7 beta): beta = kappa*/7 in [0.8273, 0.8274] = m* = A(kappa*)
+PASS S5d   aligned bookkeeping, two-point slot: beta = kappa*/7 in [0.2340, 0.2341] = m*/2
+PASS S5e   the partial-fraction form brackets A(1)/1 to ~2e-7: the Mittag-Leffler route checks out
+PASS S6a   aligned-state threshold beta > 3/7 (from A'(0)=1/3): beta=1 and beta=1/2 clear it
+PASS S6b   the aligned bookkeeping's two-point root 0.2341 < 3/7: no aligned state there
+PASS S8a   self-consistent beta = 1 and aligned beta = kappa*/7 impose the same A(kappa)/kappa = 1/7: same kappa*, same sigma^2, different label
+PASS S8b   self-consistent beta = 1/2 and aligned beta = kappa*/7 impose the same A(kappa)/kappa = 2/7: same kappa*, same sigma^2, different label
+PASS S7    the two exact bookkeepings differ by the factor 1/m* = 1.2087: a 21% spread in beta, against a quoted bracket width of 1.5e-4
+PASS B1    1-|phi_4|^2 = (1/8)[sum(1-cos k_j) + sum_{i<j}(1-cos(k_i-k_j))]: the FCC Laplacian
+PASS B2    its Hessian is k^T(4I - J)k/16, NOT a multiple of |k|^2
+PASS B3a   eigenvalues {1/4, 1/4, 1/16}: ratio 4, two distinct values -> no rotation fixes it
+PASS B3b   det = 1/256, inverse = 4(I + J) exactly
+PASS B4    six nonnegative terms: the symbol vanishes only at k = 0 in the BZ, as the node's does
+PASS B5a   1/r amplitude in the level plane is EXACTLY TWICE the amplitude along [111]
+PASS B5b   angular profile amplitude(psi) = (2/pi) / sqrt(1 + 3 cos^2 psi), psi = angle to [111]
+PASS B6    so NO sigma^2 normalises (ii) to 1/(4 pi r): the needed factor varies by 2 with direction -- an order r^-1 failure, where main's own anisotropy is order r^-3
+PASS I1.0  a symbol independent of the level-time momentum w transforms to delta_{n,0}
+PASS I1.1    ... so the equal-level kernel vanishes off its own level (n=1)
+PASS I1.2    ... so the equal-level kernel vanishes off its own level (n=2)
+PASS I1.3    ... so the equal-level kernel vanishes off its own level (n=3)
+
+TOTAL: PASS=44 FAIL=0
+HIT: the node's slot on main is the RESOLVENT (NEWTON_LAW_DERIVED_NOTE.md L44-47, L61-64 @ abb98a122e), so the light-cone input is sigma^2 chi; in the self-consistent bookkeeping kappa = 7 beta m, m = A(kappa), sigma^2 = A(kappa)/kappa the output is EXACTLY G/beta for every A, so the node's unit Newtonian normalisation is exactly beta = 1 (and beta = 1/2 for the two-point reading).
+HIT: the node's normalisation fixes the STATE, not the coupling: the prescribed sigma^2 = A(7beta)/(7beta) and the self-consistent sigma^2 = A(kappa)/kappa with kappa = 7 beta m, m = A(kappa) impose the SAME equation A(kappa*)/kappa* = 1/7 (kappa* in [5.79145, 5.79146], sigma^2 = 1/7), and differ only in the label beta: kappa*/7 = 0.82735... = A(kappa*) = m* versus exactly 1. So beta carries a 21% bookkeeping spread, against a quoted bracket width of 1.5e-4.
+HIT: candidate (ii) backward 3+1 fails the node at leading order, exactly: its symbol's Hessian k^T(4I-J)k/16 has eigenvalues {1/4,1/4,1/16}, so the 1/r amplitude is (2/pi)/sqrt(1+3cos^2 psi) -- twice as large in the level plane as along [111] -- and no sigma^2 can normalise it, where main's own lattice anisotropy enters only at r^-3.
+SUMMARY: PARTIAL the node's slot is the resolvent (so sigma^2 chi, not the AR(1) equal-time covariance); sigma^2 chi = G/beta and C_tail = G/(2beta) hold identically in the self-consistent bookkeeping, making the node's normalisation beta = 1 resp. 1/2 exactly and A-independent; the scheme-independent content is kappa*, and beta carries a 21% bookkeeping spread; A(kappa)/kappa = sum_n 2/(kappa^2+n^2 pi^2) re-proves the monotonicity lemma in one line; candidate (ii) fails isotropy at order r^-1 with the exact profile 1/sqrt(1+3cos^2 psi) (ratio 2), candidate (i) is confined to one level.

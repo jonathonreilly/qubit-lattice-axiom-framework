@@ -1,0 +1,3 @@
+zero-mode φ=(1+1+1)/3=1.0 |φ|²=1.0
+τ_L=L²/σ² at L=4 σ²=1/2: 32 (exact)
+SUMMARY: SAMPLED EVIDENCE (PR #8178): the only sampling language is the executed D1 / linear-calibrator table, already a known HIT; T1-T3 (zero-mode |φ|=1, τ_L=L²/σ², V_L bracket) are exact; no remaining never/always to hill-climb; not a re-find of D1 1.165 vs 1.18 or the T1.1 conjugation HIT; pattern has no purchase beyond the known HIT

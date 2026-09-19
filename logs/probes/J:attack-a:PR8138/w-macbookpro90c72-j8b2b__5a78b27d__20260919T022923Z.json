@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8138",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block08-z3-for",
+ "worker": "w-macbookpro90c72-j8b2b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8138/z3_windows_no_triangles.py",
+ "seed": 84963,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5a78b27d",
+ "started_utc": "20260919T022923Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the 2x2x2 cube (8 vertices, 12 nn-edges, bipartite), 2x2 cross-section (1296 states) and 2x3 rectangle are induced triangle-free Z^3 windows, a [-2,3]^3 box has no triangles, and no successor triple equals a predecessor triple on integer sites in [-2,4]^3"
+ },
+ "review": "2x2x2 cube, 2x2 (1296 states) and 2x3 windows are triangle-free induced Z^3 graphs; successor triples never equal predecessor triples; no defect",
+ "what": "PR #8138 ([physics-loop] admissibility-induced-law block08 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915; git show origin/physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915:<note>. Create probes/work/pr8138/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8138/<script>.py\"",
+ "stdout_sha256": "fe37fddd57e8a77f12630fd7a918b1d74fb60a77bbfe604d0c47e2b9fb69deec",
+ "stdout_tail": "cube 2x2x2: |V|=8 triangles=0\n2x2 cross-section: |V|=4 states=6^4=1296\n2x3 rectangle: |V|=6 triangles=0\nbox [-2,3]^3: |V|=216 triangles=0\nsuccessor=predecessor triples in box: 0\ncube 2-coloring of nn-edges: True\nSUMMARY: pattern has no purchase on this note \u2014 the 2x2x2 cube (8 vertices, 12 nn-edges, bipartite), 2x2 cross-section (1296 states) and 2x3 rectangle are induced triangle-free Z^3 windows, a [-2,3]^3 box has no triangles, and no successor triple equals a predecessor triple on integer sites in [-2,4]^3\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8b2b",
+  "at_utc": "20260919T022924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

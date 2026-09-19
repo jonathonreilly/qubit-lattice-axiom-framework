@@ -1,0 +1,7 @@
+cube 2x2x2: |V|=8 triangles=0
+2x2 cross-section: |V|=4 states=6^4=1296
+2x3 rectangle: |V|=6 triangles=0
+box [-2,3]^3: |V|=216 triangles=0
+successor=predecessor triples in box: 0
+cube 2-coloring of nn-edges: True
+SUMMARY: pattern has no purchase on this note — the 2x2x2 cube (8 vertices, 12 nn-edges, bipartite), 2x2 cross-section (1296 states) and 2x3 rectangle are induced triangle-free Z^3 windows, a [-2,3]^3 box has no triangles, and no successor triple equals a predecessor triple on integer sites in [-2,4]^3

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8080",
+ "type": "judgment",
+ "lane": "native-stronger-ward-20260910",
+ "worker": "w-macbookpro90c72-j31af",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8080/attack_b_degree_both_inconclusive.py",
+ "seed": 86868,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae0aa0ac",
+ "started_utc": "20260919T030108Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (b) SAME TEST BOTH SIDES \u2014 6 axes give 15 triangle-free two-link channels; Q_tau\u2212\u03bb^{-2} is nonnegative for every \u03bb\u2265\u03b4 by the stated factorization; degree-1 and degree-2 both remain INDETERMINATE_SIGN under the same interval-contains-0 test; attack does not fire"
+ },
+ "review": "Pattern (b): 15 channels are triangle-free 2-stars; Q_tau factorization holds for all tested \u03bb\u2265\u03b4; both polynomial degrees stay INDETERMINATE_SIGN; attack does not fire",
+ "what": "PR #8080 ([physics-loop] Stronger native Ward bounds (conditional-supp): attack NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-stronger-ward-20260910; git show origin/codex/native-stronger-ward-20260910:<note>. Create probes/work/pr8080/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8080/<script>.py\"",
+ "stdout_sha256": "d331b109cada504fad6591ebdbaaafbb1d02f482fa6eab21fb19b29a6a8ce586",
+ "stdout_tail": "OK: six axes, C(6,2)=15 two-link channels, none is a Z^3 triangle\nOK: Q_tau\u2212\u03bb^{-2} \u2265 0 and matches the stated factorization for every tested \u03bb\u2265\u03b4\nOK: degree-1 and degree-2 certificates are both INDETERMINATE_SIGN under the same sign test\nSUMMARY: pattern (b) SAME TEST BOTH SIDES \u2014 6 axes give 15 triangle-free two-link channels; Q_tau\u2212\u03bb^{-2} is nonnegative for every \u03bb\u2265\u03b4 by the stated factorization; degree-1 and degree-2 both remain INDETERMINATE_SIGN under the same interval-contains-0 test; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j31af",
+  "at_utc": "20260919T030109Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

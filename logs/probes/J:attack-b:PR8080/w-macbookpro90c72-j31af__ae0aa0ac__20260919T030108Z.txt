@@ -1,0 +1,4 @@
+OK: six axes, C(6,2)=15 two-link channels, none is a Z^3 triangle
+OK: Q_tau−λ^{-2} ≥ 0 and matches the stated factorization for every tested λ≥δ
+OK: degree-1 and degree-2 certificates are both INDETERMINATE_SIGN under the same sign test
+SUMMARY: pattern (b) SAME TEST BOTH SIDES — 6 axes give 15 triangle-free two-link channels; Q_tau−λ^{-2} is nonnegative for every λ≥δ by the stated factorization; degree-1 and degree-2 both remain INDETERMINATE_SIGN under the same interval-contains-0 test; attack does not fire

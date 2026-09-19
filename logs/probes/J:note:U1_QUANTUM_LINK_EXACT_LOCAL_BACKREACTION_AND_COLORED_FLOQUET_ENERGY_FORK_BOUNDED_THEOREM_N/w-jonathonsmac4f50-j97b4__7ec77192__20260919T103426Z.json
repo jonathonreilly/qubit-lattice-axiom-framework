@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_N",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j97b4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION/bch_orders_and_sector_identities.py",
+ "seed": 14066,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7ec77192",
+ "started_utc": "20260919T103426Z",
+ "elapsed_s": 67.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "for S = 1..6 the hard-cutoff algebra, 2S transfer pairs plus 2 dark states and both Gauss commutators hold exactly, and sector-built 40-digit unitaries give unitarity, current equalities, anticommutator work and opposite hopping work below 1e-30 with Jbar -> i[H,E] at first order; on two adjacent bonds (S = 1, 2, 3) and a three-bond coloured chain every Gauss commutator vanishes exactly, the Lie drift equals (h^2/2)[H,[H_1,H_2]] and the palindromic drift -i h^3 [H,K_2] at leading order (drift ratios 4 and 8; residuals against these predictions shrink by 2 per halving), the principal Floquet generator equals H + h^2 K_2 + O(h^4) with K_2 = [H_1,[H_1,H_2]]/24 + [H_2,[H_1,H_2]]/12 having nonzero entries where H_1 + H_2 vanishes, H_F is Hermitian and conserved, the tick is reversible, and commuting disjoint layers reproduce the unsplit flow; no falsifier fires"
+ },
+ "review": "Read the script and its output: for S = 1..6 the hard-cutoff algebra, the 2S transfer pairs plus two dark states and both one-bond Gauss commutators hold exactly, and sector-built 40-digit unitaries give unitarity, the current equalities, anticommutator work and opposite hopping work below 1e-39; on two adjacent bonds (S = 1, 2, 3) and a three-bond coloured chain every Gauss commutator vanishes exactly, drift ratios are 4 (Lie) and 8 (palindromic), and residuals against the exact BCH predictions (h^2/2)[H,[H_1,H_2]], -i h^3 [H,K_2] and H_F = H + h^2 K_2 shrink by 2, 2 and 4 per halving, with K_2 nonzero at 8/32/72/64 positions where H_1 + H_2 vanishes; H_F is Hermitian and conserved, the tick reversible, and commuting disjoint layers reproduce the unsplit flow; no falsifier fires.",
+ "what": "Note on main: docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION/<script>.py\"",
+ "stdout_sha256": "89ed062ee59895e475488a019a12550592d84dcb974c8d61787fb8de3c2fe6fa",
+ "stdout_tail": "8, 0.000145]; H_F Hermitian 1.2e-13, conserved 1.2e-14; reversible 3.1e-17; K2 entries where H = 0: 72\n2. ('three bonds, layers {e1,e3}|{e2}', 1): Gauss commutators all zero True; |lie coef| 0.343, |pal coef| 0.1118; lie drift ratios [3.969, 3.992, 3.998], pal drift ratios [7.969, 7.991, 7.998]; residuals vs prediction by h: lie [0.133, 0.0667, 0.0334, 0.0167], pal [0.0371, 0.0187, 0.00934, 0.00467], (H_F-H)/h^2-K2 [0.000364, 9.02e-05, 2.25e-05, 5.63e-06]; H_F Hermitian 7.9e-14, conserved 2.5e-15; reversible 2.9e-17; K2 entries where H = 0: 64\n3. disjoint control (e1, e3): drift max 2.2e-16, flow error max 1.7e-16\nSUMMARY: for S = 1..6 the hard-cutoff algebra, 2S transfer pairs plus 2 dark states and both Gauss commutators hold exactly, and sector-built 40-digit unitaries give unitarity, current equalities, anticommutator work and opposite hopping work below 1e-30 with Jbar -> i[H,E] at first order; on two adjacent bonds (S = 1, 2, 3) and a three-bond coloured chain every Gauss commutator vanishes exactly, the Lie drift equals (h^2/2)[H,[H_1,H_2]] and the palindromic drift -i h^3 [H,K_2] at leading order (drift ratios 4 and 8; residuals against these predictions shrink by 2 per halving), the principal Floquet generator equals H + h^2 K_2 + O(h^4) with K_2 = [H_1,[H_1,H_2]]/24 + [H_2,[H_1,H_2]]/12 having nonzero entries where H_1 + H_2 vanishes, H_F is Hermitian and conserved, the tick is reversible, and commuting disjoint layers reproduce the unsplit flow; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j97b4",
+  "at_utc": "20260919T103544Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,2 @@
+1/3 charges; 4/27; max t(4/27-t)=4/729 at t=2/27: True
+SUMMARY: pattern has no purchase on this note: 1/3 in M_k, the 4/27 union ceiling, and max t(4/27-t)=4/729 at t=2/27 recompute; not the known d1 or 8/5 HITs

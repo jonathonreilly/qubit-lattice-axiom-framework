@@ -20,13 +20,20 @@
  "stdout_tail": "contents and H0/H1\nPASS B03 every encoder raw input is single-valued\nPASS B04 encoder has no exact raw-input overlap with lifted live law :: ()\nPASS B05 complete lifted union is output-single-valued\nPASS B06 all eleven states have the exact singleton/quiet frontier :: []\nPASS B07 execution is ten forced permanent appends\n\n===============================================================================\nC - Decoder, causal validation, blockers, and covariance\n===============================================================================\nPASS C01 first eight records decode exactly to R_B11\nPASS C02 word completes before VALID and READY\nPASS C03 VALID forms ninth and READY tenth\nPASS C04 every one-bit causal corruption stops before the next certificate :: []\nPASS C05 every tested extra-neighbour record blocks the exact next write :: []\nPASS C06 all 264 rotated stages have the exact transformed frontier :: []\n\n===============================================================================\nD - Scope, N1-N8, and constitutional disposition\n===============================================================================\nFAIL D01 note exists and carries authority none\nFAIL D02 note pins zero added binary source records\nFAIL D03 note names exact next residual\nFAIL D04 note contains N1-N8\nFAIL D05 note denies foundation and axiom effects\n\nSOURCE=254 CODE_BITS=8 VALID=1 READY=1 APPENDS=10\nENCODER_CANONICAL=9 ENCODER_RAW=204 UNION_RAW=5444\nWORD=10010100 ROLE=R_B11\nSUMMARY: 19 PASS / 5 FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T123813Z",
+  "at_utc": "20260919T131004Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c8125be1 differs from the current HEAD 10690b30 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL D01 note exists and carries authority none'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T131004Z"
  }
 }

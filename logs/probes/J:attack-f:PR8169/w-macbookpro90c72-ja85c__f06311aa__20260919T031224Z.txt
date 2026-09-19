@@ -1,0 +1,4 @@
+OK: Born (1+s·q)/2 on S is (1, 1/2, 0, 1/2), sum 2
+OK: Gibbs 2α+2γ=1 with α=1/3, γ=1/6 at e^{2β}=2
+OK: linear family (1+λ s·(q+q'))/4 is normalized (sum 1 at λ=0)
+SUMMARY: pattern (f) NORMALIZATION — Born (1+s·q)/2 sums to 2; Gibbs 2α+2γ=1 with α=1/3, γ=1/6; linear family /4 sums to 1; attack does not fire

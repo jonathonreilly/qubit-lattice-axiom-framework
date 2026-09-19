@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8169",
+ "type": "judgment",
+ "lane": "frame-attached-four-point-weights-born-a",
+ "worker": "w-macbookpro90c72-ja85c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8169/attack_f_born_gibbs_norm.py",
+ "seed": 87544,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f06311aa",
+ "started_utc": "20260919T031224Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (f) NORMALIZATION \u2014 Born (1+s\u00b7q)/2 sums to 2; Gibbs 2\u03b1+2\u03b3=1 with \u03b1=1/3, \u03b3=1/6; linear family /4 sums to 1; attack does not fire"
+ },
+ "review": "Pattern (f): Born sum 2, Gibbs 2\u03b1+2\u03b3=1 with 1/3 and 1/6, linear /4; attack does not fire",
+ "what": "PR #8169 ([physics-loop] frame-attached four-point weights: Born is no): attack ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916; git show origin/physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916:<note>. Create probes/work/pr8169/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8169/<script>.py\"",
+ "stdout_sha256": "0100009ecb8f6aa558472396e24c54447dcf19dff53cc54dcaf95c6334599976",
+ "stdout_tail": "OK: Born (1+s\u00b7q)/2 on S is (1, 1/2, 0, 1/2), sum 2\nOK: Gibbs 2\u03b1+2\u03b3=1 with \u03b1=1/3, \u03b3=1/6 at e^{2\u03b2}=2\nOK: linear family (1+\u03bb s\u00b7(q+q'))/4 is normalized (sum 1 at \u03bb=0)\nSUMMARY: pattern (f) NORMALIZATION \u2014 Born (1+s\u00b7q)/2 sums to 2; Gibbs 2\u03b1+2\u03b3=1 with \u03b1=1/3, \u03b3=1/6; linear family /4 sums to 1; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja85c",
+  "at_utc": "20260919T031224Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

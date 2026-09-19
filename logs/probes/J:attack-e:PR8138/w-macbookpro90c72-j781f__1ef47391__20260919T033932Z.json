@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8138",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block08-z3-for",
+ "worker": "w-macbookpro90c72-j781f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8138/no_sampled_product_form.py",
+ "seed": 89172,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1ef47391",
+ "started_utc": "20260919T033932Z",
+ "elapsed_s": 9.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8138): B5's 2000-draw cube sample is an executed check of a proved product-form identity; exhaustive integer comparison agrees on all 6^4 configs of 1x2x2, 2x2x1, 2x1x2 and all 6^8 cube configs at (3,1,2) and (2,2,2); the load-bearing 'never' (successor triple vs predecessor triple) is proved not sampled; pattern has purchase and does not fire"
+ },
+ "review": "SAMPLED EVIDENCE: B5's 2000-sample is a check of a proved identity; exhaustive 6^8 cube and 6^4 boxes agree; no defect.",
+ "what": "PR #8138 ([physics-loop] admissibility-induced-law block08 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915; git show origin/physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915:<note>. Create probes/work/pr8138/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8138/<script>.py\"",
+ "stdout_sha256": "dd58c1ad5d36867a436e9ab810a105b873a93ef6f5be3a367f1ada18988973f7",
+ "stdout_tail": "box (1, 2, 2) at (3, 1, 2): 1296 configs, mismatch=False\nbox (2, 2, 1) at (3, 1, 2): 1296 configs, mismatch=False\nbox (2, 1, 2) at (3, 1, 2): 1296 configs, mismatch=False\n  cube (3, 1, 2) scanned 400000\n  cube (3, 1, 2) scanned 800000\n  cube (3, 1, 2) scanned 1200000\n  cube (3, 1, 2) scanned 1600000\ncube 2x2x2 at (3, 1, 2): 1679616 configs, mismatch=False\nbox (1, 2, 2) at (2, 2, 2): 1296 configs, mismatch=False\nbox (2, 2, 1) at (2, 2, 2): 1296 configs, mismatch=False\nbox (2, 1, 2) at (2, 2, 2): 1296 configs, mismatch=False\n  cube (2, 2, 2) scanned 400000\n  cube (2, 2, 2) scanned 800000\n  cube (2, 2, 2) scanned 1200000\n  cube (2, 2, 2) scanned 1600000\ncube 2x2x2 at (2, 2, 2): 1679616 configs, mismatch=False\nSUMMARY: SAMPLED EVIDENCE (PR #8138): B5's 2000-draw cube sample is an executed check of a proved product-form identity; exhaustive integer comparison agrees on all 6^4 configs of 1x2x2, 2x2x1, 2x1x2 and all 6^8 cube configs at (3,1,2) and (2,2,2); the load-bearing 'never' (successor triple vs predecessor triple) is proved not sampled; pattern has purchase and does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j781f",
+  "at_utc": "20260919T033951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

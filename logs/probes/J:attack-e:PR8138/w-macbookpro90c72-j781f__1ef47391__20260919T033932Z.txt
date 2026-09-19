@@ -1,0 +1,17 @@
+box (1, 2, 2) at (3, 1, 2): 1296 configs, mismatch=False
+box (2, 2, 1) at (3, 1, 2): 1296 configs, mismatch=False
+box (2, 1, 2) at (3, 1, 2): 1296 configs, mismatch=False
+  cube (3, 1, 2) scanned 400000
+  cube (3, 1, 2) scanned 800000
+  cube (3, 1, 2) scanned 1200000
+  cube (3, 1, 2) scanned 1600000
+cube 2x2x2 at (3, 1, 2): 1679616 configs, mismatch=False
+box (1, 2, 2) at (2, 2, 2): 1296 configs, mismatch=False
+box (2, 2, 1) at (2, 2, 2): 1296 configs, mismatch=False
+box (2, 1, 2) at (2, 2, 2): 1296 configs, mismatch=False
+  cube (2, 2, 2) scanned 400000
+  cube (2, 2, 2) scanned 800000
+  cube (2, 2, 2) scanned 1200000
+  cube (2, 2, 2) scanned 1600000
+cube 2x2x2 at (2, 2, 2): 1679616 configs, mismatch=False
+SUMMARY: SAMPLED EVIDENCE (PR #8138): B5's 2000-draw cube sample is an executed check of a proved product-form identity; exhaustive integer comparison agrees on all 6^4 configs of 1x2x2, 2x2x1, 2x1x2 and all 6^8 cube configs at (3,1,2) and (2,2,2); the load-bearing 'never' (successor triple vs predecessor triple) is proved not sampled; pattern has purchase and does not fire

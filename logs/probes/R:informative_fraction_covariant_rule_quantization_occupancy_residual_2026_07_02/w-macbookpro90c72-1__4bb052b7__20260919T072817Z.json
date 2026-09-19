@@ -23,14 +23,21 @@
  "stdout_tail": "r axioms no transition-weight values\nPASS: F dep marker axioms no privileged possibility\nPASS: F dep marker rigidity normalization\nPASS: F dep marker semigroup boundary\nFAIL: F note preserve marker: the independent audit lane owns all verdicts\nFAIL: F note preserve marker: recorded-neighborhood baseline\nFAIL: F note preserve marker: quantized\nFAIL: F note preserve marker: k/64\nFAIL: F note preserve marker: off-lattice\nFAIL: F note preserve marker: occupancy residual\nFAIL: F note preserve marker: located, never forced\nFAIL: F note preserve marker: not a citation-graph dependency\nFAIL: F note preserve marker: does not claim:\nFAIL: F note preserve marker: an audit verdict or any effective-status promotion\nFAIL: F note preserve marker: does not derive the admissibility rule\nFAIL: F note preserve marker: does not derive occupancy statistics\nFAIL: F note preserve marker: No possibility is privileged.\nFAIL: F note preserve marker: does not adjudicate whether\nPASS: F forbidden absent from note: audit_status:\nPASS: F forbidden absent from runner: audit_status:\nPASS: F forbidden absent from note: effective_status:\nPASS: F forbidden absent from runner: effective_status:\nPASS: F forbidden absent from note: only route\nPASS: F forbidden absent from runner: only route\nPASS: F forbidden absent from note: exhausted\nPASS: F forbidden absent from runner: exhausted\nPASS: F forbidden absent from note: closes the route\nPASS: F forbidden absent from runner: closes the route\n\nTOTAL: PASS=56 FAIL=15\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T072817Z",
+  "at_utc": "20260919T073623Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 4bb052b7 differs from the current HEAD deb6c464 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=56 FAIL=15' vs cache 'TOTAL: PASS=70 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the densify-freeze migration 0b6129121f (2026-09-04, #8198): 'F files exist: note' fails for docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md (now archive/notes/docs/...), and the 14 'F note preserve marker' failures follow from reading the missing note. All note-independent checks pass (PASS=56, FAIL=15).",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T073623Z"
  }
 }

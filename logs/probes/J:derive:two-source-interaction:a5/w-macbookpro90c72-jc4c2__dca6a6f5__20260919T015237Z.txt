@@ -1,0 +1,10 @@
+C0 18179/15360 C(e1) 539/15360
+chi0 10619/7680 chi(e1) 1799/7680
+CHECKED E1.unlike-128/147: 128/147
+CHECKED E1.like-lt-unlike
+CHECKED E1.C-nn-pos
+CHECKED E1.chi-nn-pos
+CHECKED E2.FDR-mode100: 12/7 vs 12/7
+CHECKS ok=5 fail=0
+HIT: PARTIAL: L=4 Gaussian unlike-pin quadratic 1/(C0-C(e1))=128/147=128/147; like 1/(C0+C(e1))=7680/9359 smaller (attractive when C(e1)>0); C(e1)=539/15360, chi(e1)=1799/7680; FDR fails (chi/C=1+phi on mode (pi/2,0,0)). Linear superposition holds; mass=pin amplitude. Independent short Fourier, not a2's 357-check survey.
+SUMMARY: PARTIAL L=4 unlike-pin energy 128/147 a^2; like attractive; C(e1)=539/15360; naive FDR fails

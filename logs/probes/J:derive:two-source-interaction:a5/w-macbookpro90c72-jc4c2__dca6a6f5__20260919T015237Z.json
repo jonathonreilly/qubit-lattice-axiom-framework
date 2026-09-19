@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:two-source-interaction:a5",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jc4c2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/two-source-interaction/w-macbookpro90c72-jc4c2/check.py",
+ "seed": 82757,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dca6a6f5",
+ "started_utc": "20260919T015237Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL L=4 unlike-pin energy 128/147 a^2; like attractive; C(e1)=539/15360; naive FDR fails"
+ },
+ "review": "L=4 unlike-pin quadratic 128/147; C(e1)=539/15360>0 like attractive; FDR fails 12/7=1+phi. HIT is that exact energy.",
+ "what": "DERIVATION, independent attempt 5 of 5: The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?. Setting: light-cone formation in 3+1 (README section 8, problem lightcone-formation): the record at (t+1, x) formed from (t, x) and (t, x +- e_j) with weight exp(beta s.S); linear equal-time kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)) ~ 1/r. If the automaton is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|), then at stationarity the static linear response to a field equals the covariance (fluctuation-response), and a persistent source sees the Green-function potential. TASK: (a) prove or refute the fluctuation-response statement for this law (reversibility is the hypothesis to check first; for the BACKWARD lattice it fails: the response is a forward-cone multinomial); (b) a persistent source = a site whose record is pinned at every level, or a small field h at one site at every level: derive the mean transverse field around it at stationarity, exactly in the linear model and to leading order in 1/beta in the sphere law; (c) two sources at distance r: the change in -log(stationary weight) as a function of r, its sign for like and unlike pins, and the coefficient of 1/r; (d) what plays the role of mass (the pinned amplitude? the number of pinned records?) and whether the interaction is additive over sources (superposition) at linear order and where it fails. Verify every closed form against exact Gaussian conditioning on L = 8..32 tori. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/two-source-interaction/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/two-source-interaction/<name>/check.py\"",
+ "stdout_sha256": "b2c64ef644e30a5a63d483160ceee7d3a7412f5ff06882aae36841d994db5849",
+ "stdout_tail": "C0 18179/15360 C(e1) 539/15360\nchi0 10619/7680 chi(e1) 1799/7680\nCHECKED E1.unlike-128/147: 128/147\nCHECKED E1.like-lt-unlike\nCHECKED E1.C-nn-pos\nCHECKED E1.chi-nn-pos\nCHECKED E2.FDR-mode100: 12/7 vs 12/7\nCHECKS ok=5 fail=0\nHIT: PARTIAL: L=4 Gaussian unlike-pin quadratic 1/(C0-C(e1))=128/147=128/147; like 1/(C0+C(e1))=7680/9359 smaller (attractive when C(e1)>0); C(e1)=539/15360, chi(e1)=1799/7680; FDR fails (chi/C=1+phi on mode (pi/2,0,0)). Linear superposition holds; mass=pin amplitude. Independent short Fourier, not a2's 357-check survey.\nSUMMARY: PARTIAL L=4 unlike-pin energy 128/147 a^2; like attractive; C(e1)=539/15360; naive FDR fails\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc4c2",
+  "at_utc": "20260919T015244Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "L=4 unlike-pin 128/147; like attractive; FDR fails.",
+  "by": "w-macbookpro90c72-jc4c2",
+  "at_utc": "20260919T015244Z"
+ }
+}

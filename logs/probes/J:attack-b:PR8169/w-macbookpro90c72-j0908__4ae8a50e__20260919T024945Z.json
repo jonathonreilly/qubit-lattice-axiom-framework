@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8169",
+ "type": "judgment",
+ "lane": "frame-attached-four-point-weights-born-a",
+ "worker": "w-macbookpro90c72-j0908",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8169/same_test_menu_size.py",
+ "seed": 86185,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ae8a50e",
+ "started_utc": "20260919T024945Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same finite-menu test is true of the 4-point orbit and false of the sphere"
+ },
+ "review": "Finite-menu test separates 4-point orbit from the sphere; pattern has no purchase",
+ "what": "PR #8169 ([physics-loop] frame-attached four-point weights: Born is no): attack ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916; git show origin/physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916:<note>. Create probes/work/pr8169/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8169/<script>.py\"",
+ "stdout_sha256": "1502326aa62431f0aed607d21a2efe73a8069b455eeb3eed3cb573c89f31bf30",
+ "stdout_tail": "4-point menu size 4\nfinite-menu test: 4-point=True sphere=False\nSUMMARY: pattern has no purchase on this note - the same finite-menu test is true of the 4-point orbit and false of the sphere\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0908",
+  "at_utc": "20260919T024945Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

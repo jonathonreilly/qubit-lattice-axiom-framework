@@ -1,0 +1,32 @@
+{
+ "task": "J:note:PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_",
+ "type": "judgment",
+ "lane": "periodic",
+ "worker": "w-jonathonsmac4f50-j1446",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE/geometry_filling_projectors_certificate.py",
+ "seed": 11275,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48a3d8ed",
+ "started_utc": "20260919T094755Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "107 = 23 + 3 x 28 distance-one edges in Z^4 (torus images {4: 106, 6: 107, 8: 107}); the 32-colouring separates plaquette neighbours with Q_ee = 6 on T_4..T_10; the damping identity holds exactly on all signed sums; the K_1(e) filling satisfies its boundary identity on every edge of boxes to side 4 with at most 3R plaquettes and fills random closed currents within the l1 bound; the exact-projector diagonal and its directional limits 0 and 1 hold; the section-9 certificate holds in interval arithmetic with delta(2000) = 4.42e-10 (the note's bound 1/1000); delta < 1/1000 from beta = 1720.29 and < 1/2 from 1602.57; N >= 12567 suffices at beta = 2000 (note: 16384); no step fails"
+ },
+ "review": "Read the script and its output: exact segment distances give the 107 = 23 + 3 x 28 neighbourhood in Z^4 (torus images 106 at L = 4, 107 at L = 6, 8); the 32-colouring separates plaquette neighbours with Q_ee = 6 on T_4 to T_10; the damping identity (5.1) holds exactly on all 80 signed sums; the K_1(e) filling satisfies its boundary identity on every edge of boxes to side 4 with at most 3R plaquettes (attained) and fills 40 random closed currents within the l1 bound; the projector diagonal and its directional limits hold; the section-9 certificate holds in interval arithmetic with delta(2000) = 4.42e-10, delta < 1/2 from beta = 1602.57 and N >= 12567 at beta = 2000; no step fails.",
+ "what": "Note on main: docs/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE/<script>.py\"",
+ "stdout_sha256": "f6877c057fe09ae12ffda078b6daeb16e6e2e60292c53534f189e2ee8d5dfea3",
+ "stdout_tail": "True; max plaquettes/(3R) 1.000; 40 random closed currents: delta_2 mu = rho, ||mu||_1 <= 3R ||rho||_1, |rho(w)| <= ||mu||_1 max|dw|: True (largest ratio 1.000)\n4. projectors: d^T d = |v|^2 I - v v^T True; diagonal formula True; P_e idempotent True; complex-k check True; P_e,01,01 along axis 2: 0, along axis 0: 1\n5. certificate (interval arithmetic): {'beta_1 < 10/3': True, 'a(2000) > 15/8': True, 'q < exp(-135/4) < 2^-48': True, 'Eulerian closed forms': True, 'S_j <= 2q on [0,1/1024]': True, 'delta(2000) < 1/1000': True, 'N=16384: beta_d > 2000': True}; delta(2000) in [4.42434e-10, 4.42434e-10]; delta decreasing on beta = 1200..3000 grid True; a > 0 needs beta > 1156.89; smallest beta with delta < 1/1000: 1720.285, with delta < 1/2: 1602.569; smallest N with beta_d >= 2000 at beta = 2000: 12567\nSUMMARY: 107 = 23 + 3 x 28 distance-one edges in Z^4 (torus images {4: 106, 6: 107, 8: 107}); the 32-colouring separates plaquette neighbours with Q_ee = 6 on T_4..T_10; the damping identity holds exactly on all signed sums; the K_1(e) filling satisfies its boundary identity on every edge of boxes to side 4 with at most 3R plaquettes and fills random closed currents within the l1 bound; the exact-projector diagonal and its directional limits 0 and 1 hold; the section-9 certificate holds in interval arithmetic with delta(2000) = 4.42e-10 (the note's bound 1/1000); delta < 1/1000 from beta = 1720.29 and < 1/2 from 1602.57; N >= 12567 suffices at beta = 2000 (note: 16384); no step fails\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1446",
+  "at_utc": "20260919T094806Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

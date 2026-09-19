@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8079",
+ "type": "judgment",
+ "lane": "native-finite-moment-ward-20260910",
+ "worker": "w-macbookpro90c72-jc39f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8079/same_test_two_modes.py",
+ "seed": 86294,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4f2ce673",
+ "started_utc": "20260919T025134Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the second-degree exclusion identity is the same for both modes, P/O share m0-m2 and differ at m3/m4 as written, and residual vs variational are distinct Hankel maps on the same moments"
+ },
+ "review": "Same exclusion identity on both modes; P/O share m0-m2 and differ at m3/m4; residual vs variational Hankels distinct as written; pattern has no purchase",
+ "what": "PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p bo): attack NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-finite-moment-ward-20260910; git show origin/codex/native-finite-moment-ward-20260910:<note>. Create probes/work/pr8079/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8079/<script>.py\"",
+ "stdout_sha256": "1d147f1d5e35e17c819eee1cffea0a6c36168574d70ab670c58b5d1824046a78",
+ "stdout_tail": "exclusion |What|-Error \u2264 6[a\u00b2(1+j/\u03b4)-C] is the same formula for both modes\nj/\u03b4=8\u221a2 at h=1 for both modes: True\nP vs O: m0=m1=m2 identical=True; m3 or m4 differ=True\nresidual vs variational: distinct Hankel systems, same moment list: True\nSUMMARY: pattern has no purchase on this note: the second-degree exclusion identity is the same for both modes, P/O share m0-m2 and differ at m3/m4 as written, and residual vs variational are distinct Hankel maps on the same moments\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc39f",
+  "at_utc": "20260919T025134Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

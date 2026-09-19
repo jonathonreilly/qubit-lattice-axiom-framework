@@ -1,0 +1,5 @@
+exclusion |What|-Error ≤ 6[a²(1+j/δ)-C] is the same formula for both modes
+j/δ=8√2 at h=1 for both modes: True
+P vs O: m0=m1=m2 identical=True; m3 or m4 differ=True
+residual vs variational: distinct Hankel systems, same moment list: True
+SUMMARY: pattern has no purchase on this note: the second-degree exclusion identity is the same for both modes, P/O share m0-m2 and differ at m3/m4 as written, and residual vs variational are distinct Hankel maps on the same moments

@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-formation:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j05f1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/lightcone-formation/w-macbookpro90c72-j05f1/check.py",
+ "seed": 81697,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e5602bda",
+ "started_utc": "20260919T013457Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL 7-stencil six-axis product identity holds exhaustively on C3 at (5,1,2); on the 2x2x2 cube, pi-weight ratios of a one-site antipodal or orthogonal flip to a constant are strictly less than 1 at p=3,5,10,20 on (p,1,2) and decrease in p. A Peierls cost is already positive at p=3 (L=2 degenerate stencil). This is not an FSS/LRO proof (those are grok a2) and not a Dobrushin threshold (a5)."
+ },
+ "review": "Peierls route distinct from grok a2/a5/a6: exhaustive C3 product identity; cube one-site defect ratios <1 and decreasing in p at 3,5,10,20 on (p,1,2); HIT as a new exact partial.",
+ "what": "DERIVATION, independent attempt 3 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\"",
+ "stdout_sha256": "c01e1024124092f376dee7e24ad69bd82daffde9c966ce62ac39a54009e5409a",
+ "stdout_tail": "p=3 orthogonal-flip/const < 1  28796658496/207594140625\nCHECK PASS: P.p=5 antipodal-flip/const < 1  7077735687223/341437969896529303\nCHECK PASS: P.p=5 orthogonal-flip/const < 1  715012822753408/341437969896529303\nCHECK PASS: P.p=10 antipodal-flip/const < 1  1019004235114171724416/10002052157906800297137922561\nCHECK PASS: P.p=10 orthogonal-flip/const < 1  131444865500654025571456/10002052157906800297137922561\nCHECK PASS: P.p=20 antipodal-flip/const < 1  1576981986113569947631616/2016798544972570290930750742222331\nCHECK PASS: P.p=20 orthogonal-flip/const < 1  269263346131198743351608450176/2684358863358491057228829237897922561\nCHECK PASS: P.antipodals decrease in p\nCHECK PASS: P.orthogonals decrease in p\nCHECK PASS: P.six constants equal at p=5\nCHECKS: PASS=12 FAIL=0\nSUMMARY: PARTIAL 7-stencil six-axis product identity holds exhaustively on C3 at (5,1,2); on the 2x2x2 cube, pi-weight ratios of a one-site antipodal or orthogonal flip to a constant are strictly less than 1 at p=3,5,10,20 on (p,1,2) and decrease in p. A Peierls cost is already positive at p=3 (L=2 degenerate stencil). This is not an FSS/LRO proof (those are grok a2) and not a Dobrushin threshold (a5).\nHIT: 7-stencil light-cone pi for six-axis (p,1,2) has a strictly positive Peierls cost for a one-site defect on the cube at p=3,5,10,20 (antipodal and orthogonal flips lighter than a constant, ratios decreasing in p); product identity exhaustive on C3. Infinite-volume contour sum and sphere FSS are not claimed here.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j05f1",
+  "at_utc": "20260919T013513Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Peierls defect ratios on the cube at p=3,5,10,20 and exhaustive C3 product identity; distinct from grok FSS/Dobrushin attempts; new exact partial.",
+  "by": "w-macbookpro90c72-j05f1",
+  "at_utc": "20260919T013513Z"
+ }
+}

@@ -1,0 +1,15 @@
+CHECK PASS: I.1 7-stencil product identity exhaustive on C3 six-axis (5,1,2)  n=46656
+CHECK PASS: P.p=3 antipodal-flip/const < 1  2167007881/207594140625
+CHECK PASS: P.p=3 orthogonal-flip/const < 1  28796658496/207594140625
+CHECK PASS: P.p=5 antipodal-flip/const < 1  7077735687223/341437969896529303
+CHECK PASS: P.p=5 orthogonal-flip/const < 1  715012822753408/341437969896529303
+CHECK PASS: P.p=10 antipodal-flip/const < 1  1019004235114171724416/10002052157906800297137922561
+CHECK PASS: P.p=10 orthogonal-flip/const < 1  131444865500654025571456/10002052157906800297137922561
+CHECK PASS: P.p=20 antipodal-flip/const < 1  1576981986113569947631616/2016798544972570290930750742222331
+CHECK PASS: P.p=20 orthogonal-flip/const < 1  269263346131198743351608450176/2684358863358491057228829237897922561
+CHECK PASS: P.antipodals decrease in p
+CHECK PASS: P.orthogonals decrease in p
+CHECK PASS: P.six constants equal at p=5
+CHECKS: PASS=12 FAIL=0
+SUMMARY: PARTIAL 7-stencil six-axis product identity holds exhaustively on C3 at (5,1,2); on the 2x2x2 cube, pi-weight ratios of a one-site antipodal or orthogonal flip to a constant are strictly less than 1 at p=3,5,10,20 on (p,1,2) and decrease in p. A Peierls cost is already positive at p=3 (L=2 degenerate stencil). This is not an FSS/LRO proof (those are grok a2) and not a Dobrushin threshold (a5).
+HIT: 7-stencil light-cone pi for six-axis (p,1,2) has a strictly positive Peierls cost for a one-site defect on the cube at p=3,5,10,20 (antipodal and orthogonal flips lighter than a constant, ratios decreasing in p); product identity exhaustive on C3. Infinite-volume contour sum and sphere FSS are not claimed here.

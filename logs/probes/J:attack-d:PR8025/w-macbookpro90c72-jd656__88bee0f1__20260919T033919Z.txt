@@ -1,0 +1,8 @@
+r=0 N=1 bound=3
+r=1 N=13 bound=81
+r=2 N=63 bound=375
+r=3 N=173 bound=1029
+r=4 N=367 bound=2187
+r=5 N=669 bound=3993
+r=6 N=1103 bound=6591
+SUMMARY: pattern has no purchase on this note: N<=3(2r+1)^3 holds for r=0..6 on the enumerated cubic link ball

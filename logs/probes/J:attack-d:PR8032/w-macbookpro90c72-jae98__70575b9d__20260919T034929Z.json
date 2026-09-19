@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8032",
+ "type": "judgment",
+ "lane": "finite-pw-energy-block42-20260907",
+ "worker": "w-macbookpro90c72-jae98",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8032/quantifier_every_R_v0.py",
+ "seed": 89769,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "70575b9d",
+ "started_utc": "20260919T034929Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - at v=0 the bound is exactly 4d/a for every tested R>=1, d, a; h_R>0 through R=40; whenever theta_0=8avd/h_R<1 the (9) envelope 4d/(1-theta_0) stays >=4d; kinetic 4/a holds at extra a"
+ },
+ "review": "Quantifier-scope check of the v=0 identity 4d/a for extra R,d,a and of bound (9) whenever theta_0<1: h_R>0 through R=40, envelope 4d/(1-theta_0)>=4d on 288 points; no in-range failure.",
+ "what": "PR #8032 ([physics-loop] finite-pw-energy block42 conditional-support): attack GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-pw-energy-block42-20260907; git show origin/codex/finite-pw-energy-block42-20260907:<note>. Create probes/work/pr8032/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8032/<script>.py\"",
+ "stdout_sha256": "cb0f7a7ea1c35dd10db0a82885b2308f529bfd9fe14e9dfcd0d49a3ef2645312",
+ "stdout_tail": "h_1=4 stated 4\nOK: h_R>0 and increasing for R=1..40; h_40=1320\nOK: v=0 gives a Delta_R = 4d exactly for every tested R,d,a\nOK: 288 points with theta_0<1 have 4d/(1-theta0) >= 4d\nOK: kinetic 4/a at extra a\nOK: theta_0 in [0,1) on the sampled physical-ground window\nSUMMARY: pattern has no purchase on this note - at v=0 the bound is exactly 4d/a for every tested R>=1, d, a; h_R>0 through R=40; whenever theta_0=8avd/h_R<1 the (9) envelope 4d/(1-theta_0) stays >=4d; kinetic 4/a holds at extra a\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jae98",
+  "at_utc": "20260919T034929Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

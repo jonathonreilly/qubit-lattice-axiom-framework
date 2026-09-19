@@ -1,0 +1,7 @@
+h_1=4 stated 4
+OK: h_R>0 and increasing for R=1..40; h_40=1320
+OK: v=0 gives a Delta_R = 4d exactly for every tested R,d,a
+OK: 288 points with theta_0<1 have 4d/(1-theta0) >= 4d
+OK: kinetic 4/a at extra a
+OK: theta_0 in [0,1) on the sampled physical-ground window
+SUMMARY: pattern has no purchase on this note - at v=0 the bound is exactly 4d/a for every tested R>=1, d, a; h_R>0 through R=40; whenever theta_0=8avd/h_R<1 the (9) envelope 4d/(1-theta_0) stays >=4d; kinetic 4/a holds at extra a

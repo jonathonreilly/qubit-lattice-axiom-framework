@@ -1,0 +1,37 @@
+{
+ "task": "J:note:C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPPORT_NOTE_2026_05_10_numconv",
+ "type": "judgment",
+ "lane": "c",
+ "worker": "w-jonathonsmac4f50-j3118",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPP/exact_weyl_expansion_refit_and_grid_stability.py",
+ "seed": 26176,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe7e9bcf",
+ "started_utc": "20260919T135616Z",
+ "elapsed_s": 7.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "E exact: beta^4 e^-beta Z = C (1 + a_1/beta + a_2/beta^2), C = 27*sqrt(3)/pi, a_1 = -1, a_2 = -5/3; P_W = 4/beta + c_2/beta^2 + c_3/beta^3 with c_2 = -1 (the note's -1 exactly) and c_3 = -13/3 = -4.333333 (the machinery's fitted -4.328 +- 0.05)",
+   "Q the full-torus trapezoid stabilizes to 8e-14 relative and the runner's windowed scheme agrees with it to 2e-13 at every beta used (12..3000, incl. 24/48/96); (P_W beta - 4) beta = -1.00145 at 3000 = c_2 + c_3/beta (-1.00144), i.e. 0.14% from -1",
+   "F exact weighted refit P_inf = 0.440439 +- 0.000256 (chi^2 2.64/2); corrected xi = 4 value 0.410917 with propagated error 0.000239 (factor 0.93297; the note quotes the unscaled +-0.00026); corrected xi = 4, 8, 16 values 0.41358, 0.39515, 0.27843, spread 32.7%",
+   "hits=0; runtime 7s"
+  ]
+ },
+ "review": "Output matches the task. An exact Gaussian-moment expansion of the Weyl-torus integral gives beta^4 e^-beta Z = C(1 - 1/beta - (5/3)/beta^2 + ...) with C = 27 sqrt3/pi, so P_W = 4/beta + c_2/beta^2 + c_3/beta^3 with c_2 = -1 exactly (the note's value) and c_3 = -13/3 = -4.3333, inside the machinery's fitted -4.328 +- 0.05. The quadrature falsifier does not fire: a full-torus periodic trapezoid stabilizes to 8e-14, and the runner's windowed scheme (re-implemented, ngauss 100-800) agrees to 2e-13 at every beta used (12-3000, including beta_W = 24, 48, 96). (P_W beta - 4) beta = -1.001447 at 3000 matches c_2 + c_3/beta = -1.001444 (0.14% from -1). The exact weighted refit gives P_inf = 0.440439 +- 0.000256 (chi^2 2.64/2), and the xi = 4 corrected value is 0.410917; the propagated error is 0.000239 against the note's unscaled +-0.00026. The xi = 4, 8, 16 corrected values 0.41358, 0.39515 and 0.27843 spread by 32.7% (note: about 35%). No falsifier fired.",
+ "what": "Note on main: docs/C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPPORT_NOTE_2026-05-10_numconv.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPP/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_C_ISO_NUMERICAL_CONVERGENCE_BOUNDED_SUPP/<script>.py\"",
+ "stdout_sha256": "1b2525e549dcab69bf543bff1cbb2d1ad479ea69cad3688e0a1e81173492316b",
+ "stdout_tail": "2897\n  beta_W= 3000: full torus P_W 0.001333222061 (last refinement change 8.3e-14); runner-scheme ngauss 100..800 max rel dev from it 2.5e-13; (P_W beta - 4) beta = -1.001447\n  at beta = 3000: (P_W beta - 4) beta = -1.001447; exact c_2 + c_3/beta = -1.001444; relative distance of the quadrature value from c_2 = -1: 0.14%\nSUMMARY: Q the full-torus trapezoid stabilizes to 8e-14 relative and the runner's windowed scheme agrees with it to 2e-13 at every beta used (12..3000, incl. 24/48/96); (P_W beta - 4) beta = -1.00145 at 3000 = c_2 + c_3/beta (-1.00144), i.e. 0.14% from -1\n==============================================================================\nF  the weighted volume refit and the corrected xi = 4 value\n  P_inf = 0.440439 +- 0.000256 (note 0.44044 +- 0.00026); a = +0.04967, b = -0.04652; chi^2 = 2.637 for 2 dof\n  xi = 4: s_t = 1/8, beta_W = 24, P_HK = 0.1535182751, P_W = 0.1645475942, factor 0.93297186; corrected 0.410917 (note 0.41092); propagated error 0.000239 (note +-0.00026)\n  corrected 4^3 x 16 values: xi=4: 0.41358, xi=8: 0.39515, xi=16: 0.27843; spread (max - min)/max = 32.7% (note about 35%)\nSUMMARY: F exact weighted refit P_inf = 0.440439 +- 0.000256 (chi^2 2.64/2); corrected xi = 4 value 0.410917 with propagated error 0.000239 (factor 0.93297; the note quotes the unscaled +-0.00026); corrected xi = 4, 8, 16 values 0.41358, 0.39515, 0.27843, spread 32.7%\n==============================================================================\nSUMMARY: hits=0; runtime 7s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3118",
+  "at_utc": "20260919T135623Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

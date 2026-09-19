@@ -1,0 +1,26 @@
+==============================================================================
+E  exact 1/beta expansion of the Wilson single plaquette
+  C = 27*sqrt(3)/pi = 14.8858801764; a_1 = -1; a_2 = -5/3; c_2 = a_1 = -1; c_3 = 2 a_2 - a_1^2 = -13/3 = -4.333333
+  machinery's fitted c_3 = -4.328 +- 0.05: exact value inside the band: True
+SUMMARY: E exact: beta^4 e^-beta Z = C (1 + a_1/beta + a_2/beta^2), C = 27*sqrt(3)/pi, a_1 = -1, a_2 = -5/3; P_W = 4/beta + c_2/beta^2 + c_3/beta^3 with c_2 = -1 (the note's -1 exactly) and c_3 = -13/3 = -4.333333 (the machinery's fitted -4.328 +- 0.05)
+==============================================================================
+Q  grid refinement of the Weyl quadrature
+  beta_W=   12: full torus P_W 0.322327962625 (last refinement change 0.0e+00); runner-scheme ngauss 100..800 max rel dev from it 6.9e-16; (P_W beta - 4) beta = -1.584773
+  beta_W=   24: full torus P_W 0.164547594228 (last refinement change 6.7e-16); runner-scheme ngauss 100..800 max rel dev from it 6.7e-16; (P_W beta - 4) beta = -1.220586
+  beta_W=   48: full torus P_W 0.082856262244 (last refinement change 1.3e-15); runner-scheme ngauss 100..800 max rel dev from it 4.0e-15; (P_W beta - 4) beta = -1.099172
+  beta_W=   96: full torus P_W 0.041553032972 (last refinement change 0.0e+00); runner-scheme ngauss 100..800 max rel dev from it 5.3e-15; (P_W beta - 4) beta = -1.047248
+  beta_W=  192: full torus P_W 0.020805580413 (last refinement change 1.1e-14); runner-scheme ngauss 100..800 max rel dev from it 5.3e-15; (P_W beta - 4) beta = -1.023084
+  beta_W=  384: full torus P_W 0.010409807592 (last refinement change 1.1e-14); runner-scheme ngauss 100..800 max rel dev from it 2.1e-14; (P_W beta - 4) beta = -1.011412
+  beta_W=  768: full torus P_W 0.005206628293 (last refinement change 0.0e+00); runner-scheme ngauss 100..800 max rel dev from it 2.1e-14; (P_W beta - 4) beta = -1.005674
+  beta_W= 1500: full torus P_W 0.002666220935 (last refinement change 0.0e+00); runner-scheme ngauss 100..800 max rel dev from it 1.2e-13; (P_W beta - 4) beta = -1.002897
+  beta_W= 3000: full torus P_W 0.001333222061 (last refinement change 8.3e-14); runner-scheme ngauss 100..800 max rel dev from it 2.5e-13; (P_W beta - 4) beta = -1.001447
+  at beta = 3000: (P_W beta - 4) beta = -1.001447; exact c_2 + c_3/beta = -1.001444; relative distance of the quadrature value from c_2 = -1: 0.14%
+SUMMARY: Q the full-torus trapezoid stabilizes to 8e-14 relative and the runner's windowed scheme agrees with it to 2e-13 at every beta used (12..3000, incl. 24/48/96); (P_W beta - 4) beta = -1.00145 at 3000 = c_2 + c_3/beta (-1.00144), i.e. 0.14% from -1
+==============================================================================
+F  the weighted volume refit and the corrected xi = 4 value
+  P_inf = 0.440439 +- 0.000256 (note 0.44044 +- 0.00026); a = +0.04967, b = -0.04652; chi^2 = 2.637 for 2 dof
+  xi = 4: s_t = 1/8, beta_W = 24, P_HK = 0.1535182751, P_W = 0.1645475942, factor 0.93297186; corrected 0.410917 (note 0.41092); propagated error 0.000239 (note +-0.00026)
+  corrected 4^3 x 16 values: xi=4: 0.41358, xi=8: 0.39515, xi=16: 0.27843; spread (max - min)/max = 32.7% (note about 35%)
+SUMMARY: F exact weighted refit P_inf = 0.440439 +- 0.000256 (chi^2 2.64/2); corrected xi = 4 value 0.410917 with propagated error 0.000239 (factor 0.93297; the note quotes the unscaled +-0.00026); corrected xi = 4, 8, 16 values 0.41358, 0.39515, 0.27843, spread 32.7%
+==============================================================================
+SUMMARY: hits=0; runtime 7s

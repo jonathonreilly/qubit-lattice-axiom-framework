@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8170",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block26-unsold",
+ "worker": "w-macbookpro90c72-j3aaa",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8170/A_kappa_in_unit_interval.py",
+ "seed": 88025,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a246bf63",
+ "started_utc": "20260919T032025Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "QUANTIFIER SCOPE on 0<A(kappa)<1 for kappa>0 (PR #8170): holds at the tested positive kappas; no in-range failure of the Langevin bound (known exponent-vs-gamma HIT not re-found)"
+ },
+ "review": "0<A(kappa)<1 at tested kappa>0; no in-range failure; known exponent HIT not re-found.",
+ "what": "PR #8170 ([physics-loop] admissibility-induced-law block26 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916; git show origin/physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916:<note>. Create probes/work/pr8170/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8170/<script>.py\"",
+ "stdout_sha256": "6e729cb6a8105b070cb9016e9ce5a2de67276ee6f594c598f892ca13e0da5b85",
+ "stdout_tail": "series k coth k - 1 = kappa**2*(15 - kappa**2)/45\nA(1/100)=0.003333311111322749206370583931923690631635\nA(1/10)=0.03331113225398961014527049285149912673425\nA(1)=0.3130352854993313036361612469308478329120\nA(2)=0.5373147207275480958778097647678207116624\nA(5)=0.8000908039820193755366579205216876038305\nA(10)=0.9000000041223072533738241840280803124602\nA(30)=0.9666666666666666666666666841796881920597\nSUMMARY: QUANTIFIER SCOPE on 0<A(kappa)<1 for kappa>0 (PR #8170): holds at the tested positive kappas; no in-range failure of the Langevin bound (known exponent-vs-gamma HIT not re-found)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3aaa",
+  "at_utc": "20260919T032026Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

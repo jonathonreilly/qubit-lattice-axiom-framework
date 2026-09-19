@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:corrigendum-PR8146:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-jdc8c",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/corrigendum-PR8146/w-jonathonsmac4f50-jdc8c/check.py",
+ "seed": 40161,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "138d5ecf",
+ "started_utc": "20260919T174921Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (ATTEMPT.md S1-S6; finite facts CHECKED here) corrigendum for PR #8146: S1's last clause is corrected to 'the majority value of every 2:1 triple is its strictly most likely output iff p > max(q, sqrt(r^3/q))' (orthogonal pattern iff p > max(q, r), antipodal iff p > q and p^2 q > r^3); the original holds for every p exactly when q >= r and fails for q < r on r < p <= sqrt(r^3/q) (witness (5,2,4): 25/163 < 32/163; 979 of 13824 integer triples in {1..24}^3; bands (2, 2 sqrt 2] on (p,1,2), (4, 4 sqrt 2] on (p,2,4), (3, 3 sqrt 3] on (p,1,3), none on (p,1,1)); block 12's executed couplings, S3's epsilon, S6's asymptotics and the later blocks (25, 30: closed forms and coupling only) are unaffected; the uses needing repair are block 12's claim_scope, S1 statement and proof, B4, the steelman and the falsifier lines"
+ },
+ "review": "check.py prints 5 ok lines and SUMMARY: PROVED - the exact output weights of both 2:1 patterns, the factored preference differences giving the corrected condition p > max(q, sqrt(r^3/q)) (direct argmax agrees on all 13824 integer triples in {1..24}^3 and a 640-point rational grid), the witness (5,2,4) with 25/163 < 32/163, the failure bands on the four lines, the fact that the runner's B4 points cannot see the band, and the unaffected asymptotics; this matches the task's corrected statement, use verdicts and line list.",
+ "what": "DERIVATION, independent attempt 1 of 2: Corrigendum packet for PR #8146. A probe found and another model family confirmed this defect in PR #8146: S1's iff 'the majority of a 2:1 triple is most likely iff p > max(q,r)' fails at (5,2,4) for the antipodal pattern: p > max(q,r) does not imply p^2 q > r^3. TASK: (a) the minimal corrected statement (the largest domain on which the original holds, or the corrected formula), proved; (b) every later statement in that note AND in other notes of the campaign that uses the defective one (search the PR branches of blocks 12-35: PRs #8146-#8180), with a verdict for each: unaffected / holds on the corrected domain / needs its own repair; (c) the exact lines of the note and runner that must change. check.py verifies the corrected statement exactly and exhibits the original's failure. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/corrigendum-PR8146/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/corrigendum-PR8146/<name>/check.py\"",
+ "stdout_sha256": "68fd5c3f516925a9c01527f4216c98f350c1002c3669e060ec72faeba87288ae",
+ "stdout_tail": "rected to 'the majority value of every 2:1 triple is its strictly most likely output iff p > max(q, sqrt(r^3/q))' (orthogonal pattern iff p > max(q, r), antipodal iff p > q and p^2 q > r^3); the original holds for every p exactly when q >= r and fails for q < r on r < p <= sqrt(r^3/q) (witness (5,2,4): 25/163 < 32/163; 979 of 13824 integer triples in {1..24}^3; bands (2, 2 sqrt 2] on (p,1,2), (4, 4 sqrt 2] on (p,2,4), (3, 3 sqrt 3] on (p,1,3), none on (p,1,1)); block 12's executed couplings, S3's epsilon, S6's asymptotics and the later blocks (25, 30: closed forms and coupling only) are unaffected; the uses needing repair are block 12's claim_scope, S1 statement and proof, B4, the steelman and the falsifier lines\nHIT: corrigendum for PR #8146: S1's last clause is corrected to 'the majority value of every 2:1 triple is its strictly most likely output iff p > max(q, sqrt(r^3/q))' (orthogonal pattern iff p > max(q, r), antipodal iff p > q and p^2 q > r^3); the original holds for every p exactly when q >= r and fails for q < r on r < p <= sqrt(r^3/q) (witness (5,2,4): 25/163 < 32/163; 979 of 13824 integer triples in {1..24}^3; bands (2, 2 sqrt 2] on (p,1,2), (4, 4 sqrt 2] on (p,2,4), (3, 3 sqrt 3] on (p,1,3), none on (p,1,1)); block 12's executed couplings, S3's epsilon, S6's asymptotics and the later blocks (25, 30: closed forms and coupling only) are unaffected; the uses needing repair are block 12's claim_scope, S1 statement and proof, B4, the steelman and the falsifier lines\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdc8c",
+  "at_utc": "20260919T174930Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "claim for referee: corrigendum for PR #8146 - S1's clause corrected to 'majority of every 2:1 triple most likely iff p > max(q, sqrt(r^3/q))' (orthogonal iff p > max(q,r); antipodal iff p > q and p^2 q > r^3); original holds iff q >= r; bands on the lines; uses needing repair are block 12's claim_scope, S1 statement/proof, B4, steelman, falsifier and five pack lines; blocks 25/30 unaffected; I (same family) confirmed the defect as #8413, disclosed",
+  "by": "w-jonathonsmac4f50-jdc8c",
+  "at_utc": "20260919T174930Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8139",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block09-z3-mar",
+ "worker": "w-macbookpro90c72-j82e9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8139/quantifier_every_corner_site.py",
+ "seed": 90018,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "81dbe6bb",
+ "started_utc": "20260919T035338Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (d) QUANTIFIER SCOPE - G_kappa has 12 distinct neighbours (6 axial + 6 face-diagonal, l1=2, not NN) at every tested site and all eight corners; Z^3 NN remains triangle-free"
+ },
+ "review": "Quantifier-scope on R1/R3: G_kappa has 12 neighbours at five extra sites and all eight corners; face-diagonals are l1=2 and not NN; Z^3 NN is triangle-free. No HIT.",
+ "what": "PR #8139 ([physics-loop] admissibility-induced-law block09 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915; git show origin/physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915:<note>. Create probes/work/pr8139/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8139/<script>.py\"",
+ "stdout_sha256": "ee403c8653e2366b06c6fdd937eb717a7a4704e5b52e2f6274924a2c0d2bedb3",
+ "stdout_tail": "|CORNERS|=8 stated 8\nOK x=(0, 0, 0): all 8 corners have |G|=12, |D|=6, D not NN\nOK x=(1, 0, 0): all 8 corners have |G|=12, |D|=6, D not NN\nOK x=(2, -1, 3): all 8 corners have |G|=12, |D|=6, D not NN\nOK x=(-4, 5, 1): all 8 corners have |G|=12, |D|=6, D not NN\nOK x=(7, 7, -7): all 8 corners have |G|=12, |D|=6, D not NN\nOK: 5 sites \u00d7 8 corners\nOK: Z^3 NN triangle-free on the six-star\nSUMMARY: attack pattern (d) QUANTIFIER SCOPE - G_kappa has 12 distinct neighbours (6 axial + 6 face-diagonal, l1=2, not NN) at every tested site and all eight corners; Z^3 NN remains triangle-free\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j82e9",
+  "at_utc": "20260919T035338Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

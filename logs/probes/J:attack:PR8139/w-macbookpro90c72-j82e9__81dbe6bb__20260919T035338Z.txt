@@ -1,0 +1,9 @@
+|CORNERS|=8 stated 8
+OK x=(0, 0, 0): all 8 corners have |G|=12, |D|=6, D not NN
+OK x=(1, 0, 0): all 8 corners have |G|=12, |D|=6, D not NN
+OK x=(2, -1, 3): all 8 corners have |G|=12, |D|=6, D not NN
+OK x=(-4, 5, 1): all 8 corners have |G|=12, |D|=6, D not NN
+OK x=(7, 7, -7): all 8 corners have |G|=12, |D|=6, D not NN
+OK: 5 sites × 8 corners
+OK: Z^3 NN triangle-free on the six-star
+SUMMARY: attack pattern (d) QUANTIFIER SCOPE - G_kappa has 12 distinct neighbours (6 axial + 6 face-diagonal, l1=2, not NN) at every tested site and all eight corners; Z^3 NN remains triangle-free

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8032",
+ "type": "judgment",
+ "lane": "finite-pw-energy-block42-20260907",
+ "worker": "w-macbookpro90c72-j2848",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8032/sampled_evidence_no_purchase.py",
+ "seed": 87863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "73fb94ea",
+ "started_utc": "20260919T031743Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the energy upper bound is an exact operator statement, not a sampling conjecture"
+ },
+ "review": "Pattern (e) has no purchase: energy bound is exact, not a sampling conjecture",
+ "what": "PR #8032 ([physics-loop] finite-pw-energy block42 conditional-support): attack GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-pw-energy-block42-20260907; git show origin/codex/finite-pw-energy-block42-20260907:<note>. Create probes/work/pr8032/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8032/<script>.py\"",
+ "stdout_sha256": "092162142425fda804a7eeaba955d5de3317edde7e0652e2184d7cb5bb4a525d",
+ "stdout_tail": "no sampled never/always claim found that is load-bearing\nSUMMARY: pattern has no purchase on this note \u2014 the energy upper bound is an exact operator statement, not a sampling conjecture\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2848",
+  "at_utc": "20260919T031743Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

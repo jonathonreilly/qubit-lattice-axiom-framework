@@ -1,0 +1,32 @@
+{
+ "task": "J:note:ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_TH",
+ "type": "judgment",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-jdcd9",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_/theorem_b_all_orders_beyond.py",
+ "seed": 97617,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a50836c4",
+ "started_utc": "20260919T060018Z",
+ "elapsed_s": 58.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier 'B1 fails / B2 misclassifies an order' does not fire beyond the note's sizes: every order of P5, star5, C5, C6, the 2x3 grid and a 6-site spider at six triples (36 window-triple pairs, 6^n configurations each, exact integers and a floating direct comparison agreeing) satisfies B1, and mu_sigma = mu exactly when max |A_k| <= 1 (or the rule is constant); cycles and the grid have no coinciding order, trees do"
+ },
+ "review": "Falsifier 'B1 fails / B2 misclassifies an order' does not fire beyond the note's sizes: all orders of P5, star5, C5 (120 each), C6, the 2x3 grid and a 6-site spider (720 each) at (3,1,2), (2,2,1), (2,1,1), (1,2,3), (5,2,4), (2,2,2), full 6^n laws in exact integers and floating point, satisfy B1 with mu_sigma = mu iff max|A_k| <= 1 (P5 16, star5 48, spider 72 coinciding orders; C5, C6, grid 0; all orders at the constant rule).",
+ "what": "Note on main: docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_/<script>.py\"",
+ "stdout_sha256": "514275591b3e38449d1f090448384b00bf56e047efa5982b4daab7cbd9004171",
+ "stdout_tail": "s 0; orders with mu_sigma = mu: 0; distinct formation laws 28\ngrid2x3 (forest False), (p,q,r) = (2, 2, 2): 720 orders; B1 failures 0; B2 failures 0; orders with mu_sigma = mu: 720; distinct formation laws 1\nspider6 (forest True), (p,q,r) = (3, 1, 2): 720 orders; B1 failures 0; B2 failures 0; orders with mu_sigma = mu: 72; distinct formation laws 10\nspider6 (forest True), (p,q,r) = (2, 2, 1): 720 orders; B1 failures 0; B2 failures 0; orders with mu_sigma = mu: 72; distinct formation laws 10\nspider6 (forest True), (p,q,r) = (2, 1, 1): 720 orders; B1 failures 0; B2 failures 0; orders with mu_sigma = mu: 72; distinct formation laws 10\nspider6 (forest True), (p,q,r) = (1, 2, 3): 720 orders; B1 failures 0; B2 failures 0; orders with mu_sigma = mu: 72; distinct formation laws 10\nspider6 (forest True), (p,q,r) = (5, 2, 4): 720 orders; B1 failures 0; B2 failures 0; orders with mu_sigma = mu: 72; distinct formation laws 10\nspider6 (forest True), (p,q,r) = (2, 2, 2): 720 orders; B1 failures 0; B2 failures 0; orders with mu_sigma = mu: 720; distinct formation laws 1\nSUMMARY: falsifier 'B1 fails / B2 misclassifies an order' does not fire beyond the note's sizes: every order of P5, star5, C5, C6, the 2x3 grid and a 6-site spider at six triples (36 window-triple pairs, 6^n configurations each, exact integers and a floating direct comparison agreeing) satisfies B1, and mu_sigma = mu exactly when max |A_k| <= 1 (or the rule is constant); cycles and the grid have no coinciding order, trees do\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdcd9",
+  "at_utc": "20260919T060127Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

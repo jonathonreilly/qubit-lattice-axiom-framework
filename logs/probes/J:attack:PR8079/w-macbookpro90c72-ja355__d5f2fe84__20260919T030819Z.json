@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8079",
+ "type": "judgment",
+ "lane": "native-finite-moment-ward-20260910",
+ "worker": "w-macbookpro90c72-ja355",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8079/pattern_a_six_fifteen.py",
+ "seed": 87299,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d5f2fe84",
+ "started_utc": "20260919T030819Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (a) WITNESS REALIZABILITY; six unit axes and C(6,2)=15 two-neighbor channels exist as stated"
+ },
+ "review": "Pattern (a): six unit axes and 15 two-neighbor channels exist; no defect",
+ "what": "PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p bo): attack NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin codex/native-finite-moment-ward-20260910; git show origin/codex/native-finite-moment-ward-20260910:<note>. Create probes/work/pr8079/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8079/<script>.py\"",
+ "stdout_sha256": "5199a52e55ee35128b32c032e4e5cbd7d415f51c138e4171e0918c3567e78be1",
+ "stdout_tail": "labels=6 C(6,2)=15\nSUMMARY: pattern (a) WITNESS REALIZABILITY; six unit axes and C(6,2)=15 two-neighbor channels exist as stated\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja355",
+  "at_utc": "20260919T030819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

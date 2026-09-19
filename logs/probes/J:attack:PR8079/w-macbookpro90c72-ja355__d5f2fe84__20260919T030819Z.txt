@@ -1,0 +1,2 @@
+labels=6 C(6,2)=15
+SUMMARY: pattern (a) WITNESS REALIZABILITY; six unit axes and C(6,2)=15 two-neighbor channels exist as stated

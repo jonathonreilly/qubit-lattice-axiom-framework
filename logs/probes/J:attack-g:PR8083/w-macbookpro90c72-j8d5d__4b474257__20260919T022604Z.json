@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8083",
+ "type": "judgment",
+ "lane": "native-quartic-ward-20260910",
+ "worker": "w-macbookpro90c72-j8d5d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8083/quartic_schedule_count.py",
+ "seed": 84764,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4b474257",
+ "started_utc": "20260919T022604Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - combinations with repetition of {1,2,4,8,16} number 15, and 2*2*15=60 quartic candidates"
+ },
+ "review": "15 unordered pairs with repetition from {1,2,4,8,16} and 2*2*15=60 hold; pattern has no purchase",
+ "what": "PR #8083 ([physics-loop] Quartic Ward error bounds (conditional-suppor): attack NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-quartic-ward-20260910; git show origin/codex/native-quartic-ward-20260910:<note>. Create probes/work/pr8083/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8083/<script>.py\"",
+ "stdout_sha256": "e4e9c52a7bf182f18314c289e2c2afbe75322a911c4a25bb16cd510cec823a41",
+ "stdout_tail": "unordered pairs with replacement from (1, 2, 4, 8, 16): 15 [(1, 1), (1, 2), (1, 4), (1, 8), (1, 16), (2, 2), (2, 4), (2, 8), (2, 16), (4, 4), (4, 8), (4, 16), (8, 8), (8, 16), (16, 16)]\n2 modes * 2 P/O * 15 = 60 (stated 60)\nSUMMARY: pattern has no purchase on this note - combinations with repetition of {1,2,4,8,16} number 15, and 2*2*15=60 quartic candidates\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8d5d",
+  "at_utc": "20260919T022604Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

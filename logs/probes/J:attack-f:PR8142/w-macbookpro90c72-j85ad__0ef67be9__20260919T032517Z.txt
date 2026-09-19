@@ -1,0 +1,2 @@
+Z1=12 |M|^3=216 den1=22 den2=24
+SUMMARY: pattern has no purchase on this note: Z1=p+q+4r, 216 triples, and the K2 factor-2 denominators recompute as written

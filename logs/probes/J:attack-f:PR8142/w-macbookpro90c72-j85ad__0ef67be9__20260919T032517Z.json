@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8142",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block11-three-",
+ "worker": "w-macbookpro90c72-j85ad",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8142/normalization_z1_216.py",
+ "seed": 88317,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0ef67be9",
+ "started_utc": "20260919T032517Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: Z1=p+q+4r, 216 triples, and the K2 factor-2 denominators recompute as written"
+ },
+ "review": "Z1=p+q+4r, 216 triples and K2 factor-2 denominators recompute as written; pattern has no purchase",
+ "what": "PR #8142 ([physics-loop] admissibility-induced-law block11 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915; git show origin/physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915:<note>. Create probes/work/pr8142/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8142/<script>.py\"",
+ "stdout_sha256": "98b5dfae7e0a2cc0b35e6f4113a1d9c7d953d49564fea9800a1bf0574d3a7765",
+ "stdout_tail": "Z1=12 |M|^3=216 den1=22 den2=24\nSUMMARY: pattern has no purchase on this note: Z1=p+q+4r, 216 triples, and the K2 factor-2 denominators recompute as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j85ad",
+  "at_utc": "20260919T032517Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

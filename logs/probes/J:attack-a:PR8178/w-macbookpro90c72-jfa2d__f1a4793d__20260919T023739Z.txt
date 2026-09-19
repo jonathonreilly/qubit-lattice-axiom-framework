@@ -1,0 +1,21 @@
+L=2: 4 sites, 3-neighbourhood, 4 modes: True
+L=3: 9 sites, 3-neighbourhood, 9 modes: True
+L=4: 16 sites, 3-neighbourhood, 16 modes: True
+L=16: 256 sites, 3-neighbourhood, 256 modes: True
+L=32: 1024 sites, 3-neighbourhood, 1024 modes: True
+L=64: 4096 sites, 3-neighbourhood, 4096 modes: True
+L=2 cos(2π n/L) subset {Fraction(1, 1), Fraction(-1, 1)} (claimed rational)
+L=3 cos(2π n/L) subset {Fraction(-1, 2), Fraction(1, 1)} (claimed rational)
+L=4 cos(2π n/L) subset {Fraction(0, 1), Fraction(1, 1), Fraction(-1, 1)} (claimed rational)
+symmetric box L=2: 4 representatives including 0: True
+symmetric box L=3: 9 representatives including 0: True
+symmetric box L=4: 16 representatives including 0: True
+symmetric box L=5: 25 representatives including 0: True
+symmetric box L=8: 64 representatives including 0: True
+symmetric box L=16: 256 representatives including 0: True
+M eigenvalues {1/9, 1/3}: True
+three predecessors of a site are not a lattice triangle: True
+P is 4x4 row-stochastic circulant (three 1/3s): True
+P is 9x9 row-stochastic circulant (three 1/3s): True
+P is 16x16 row-stochastic circulant (three 1/3s): True
+SUMMARY: pattern has no purchase on this note: LxL tori with the stated 3-neighbourhood, L^2 Fourier modes, rational cosines on L=2,3,4, the symmetric box, M eigenvalues, and the circulant P all exist as written

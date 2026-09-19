@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8174",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block30-six-ax",
+ "worker": "w-macbookpro90c72-j14df",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8174/same_test_ceiling.py",
+ "seed": 87240,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8b93af10",
+ "started_utc": "20260919T030720Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same \u03b52<256/531441 test fails at (4150,1,2) and holds at (4165,1,2), so T5's ceiling separates those couplings as written"
+ },
+ "review": "same \u03b52<256/531441 test fails at (4150,1,2) and holds at (4165,1,2), so T5's ceiling separates those couplings and the pattern has no purchase",
+ "what": "PR #8174 ([physics-loop] admissibility-induced-law block30 \u2014 bounded_t): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916; git show origin/physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916:<note>. Create probes/work/pr8174/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8174/<script>.py\"",
+ "stdout_sha256": "4f23915c9e443cb12bf4c9af8c698bd1f275291c3540323e507009c7d42e9817",
+ "stdout_tail": "d(4150,1,2)=(Fraction(33, 71473375033), Fraction(2091, 8613341), Fraction(8311, 17230811))\nd(4165,1,2)=(Fraction(33, 72251192158), Fraction(4197, 17351422), Fraction(8341, 17355566))\nbound=256/531441\nsame test \u03b52<256/531441: p=4150 -> False; p=4165 -> True\nSUMMARY: pattern has no purchase on this note - the same \u03b52<256/531441 test fails at (4150,1,2) and holds at (4165,1,2), so T5's ceiling separates those couplings as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j14df",
+  "at_utc": "20260919T030721Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,5 @@
+d(4150,1,2)=(Fraction(33, 71473375033), Fraction(2091, 8613341), Fraction(8311, 17230811))
+d(4165,1,2)=(Fraction(33, 72251192158), Fraction(4197, 17351422), Fraction(8341, 17355566))
+bound=256/531441
+same test ε2<256/531441: p=4150 -> False; p=4165 -> True
+SUMMARY: pattern has no purchase on this note - the same ε2<256/531441 test fails at (4150,1,2) and holds at (4165,1,2), so T5's ceiling separates those couplings as written

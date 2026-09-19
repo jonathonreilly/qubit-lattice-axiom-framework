@@ -1,0 +1,15 @@
+E1.orth/all 144/169 0.8520710059171598
+E1.anti/all 121/169 0.7159763313609467
+CHECKED E1.orth-lt1
+CHECKED E1.anti-lt1
+CHECKED E1.anti-lt-orth
+E1.p=3 orth/all=144/169 0.852071
+E1.p=5 orth/all=256/441 0.580499
+CHECKED E1.decreasing-p5
+E1.p=10 orth/all=16/81 0.197531
+CHECKED E1.decreasing-p10
+CHECKED E2.6nn-pairing-no-self: 6-neighbourhood pairing holds without self-loop
+CHECKED E2.self-pairing-symmetric
+CHECKS ok=7 fail=0
+HIT: PARTIAL: C4 sync Peierls ratios at (p,1,2): one orthogonal defect 144/169, one antipodal 121/169, both <1 and decreasing in p=3,5,10; 6-neighbour pairing holds without including the site itself (symmetric W, symmetric neighbourhood). Self-inclusion is not required for reversibility. Stationary six laws: contour cost of a single flip is already <1 on C4 at p=3. Independent of a3 cube census.
+SUMMARY: PARTIAL C4 sync defect ratios orth=144/169 anti=121/169<1 at (3,1,2), decreasing in p; 6-nn pairing needs no self-loop

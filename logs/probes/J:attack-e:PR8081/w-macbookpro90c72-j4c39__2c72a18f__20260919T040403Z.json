@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8081",
+ "type": "judgment",
+ "lane": "native-correlated-ward-20260910",
+ "worker": "w-macbookpro90c72-j4c39",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8081/no_sampled_never.py",
+ "seed": 90643,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2c72a18f",
+ "started_utc": "20260919T040403Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8081): correlated Ward certificates are exact interval/dyadic bounds and a finite Wick census, not a sampled never/always; pattern has no purchase"
+ },
+ "review": "SAMPLED EVIDENCE has no purchase: correlated Ward certificates are exact interval/Wick bounds, not a sampled never/always.",
+ "what": "PR #8081 ([physics-loop] Correlated native Ward bounds (conditional-su): attack NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-correlated-ward-20260910; git show origin/codex/native-correlated-ward-20260910:<note>. Create probes/work/pr8081/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8081/<script>.py\"",
+ "stdout_sha256": "d57e8d2201118c227be3f4aa358b218a78227c5e368541d0d11442bc0c333b12",
+ "stdout_tail": "SUMMARY: SAMPLED EVIDENCE (PR #8081): correlated Ward certificates are exact interval/dyadic bounds and a finite Wick census, not a sampled never/always; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4c39",
+  "at_utc": "20260919T040408Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

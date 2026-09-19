@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8177",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block33-rooted",
+ "worker": "w-macbookpro90c72-j289d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8177/quantifier_certs_and_t11.py",
+ "seed": 88844,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5ab8f752",
+ "started_utc": "20260919T033404Z",
+ "elapsed_s": 5.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "QUANTIFIER SCOPE (PR #8177): T3.3 super-solutions hold at all eight listed couplings and at p in {p0+1, p0+10, 2 p0} with the exhibited triples; T3.1 identity holds for n=1..8; T1.1 holds on Z_A, Z_B, W1, W2 by single-seed DP; 4165/2921 and 2085/1464 lie in [1.42, 1.44]; pattern has purchase and the claimed inequalities hold in-range (known T2 Z_B value-triple is not re-claimed)"
+ },
+ "review": "QUANTIFIER SCOPE: T3.3 triples dominate at all eight listed couplings and at p>p0; T1.1 holds on Z_A/Z_B/W1/W2; no in-range failure (known T2 Z_B not re-found).",
+ "what": "PR #8177 (ail33: the rooted inequality reduces the unit budget to the ): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917; git show origin/physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917:<note>. Create probes/work/pr8177/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8177/<script>.py\"",
+ "stdout_sha256": "3b3e621aebc14be9db645b24c0d9e07dc335d448e8d9a944a2bcc8295fa794d7",
+ "stdout_tail": "22777754651848238503455948835520183330930051660267740323279446226784378206606891336850362753378206507786265467681733768077015511682262527626845055739318720609/295467326656490926838078712391513220458711936850528096080292346084049235268635659038383766036601498330126504164102000000000000000000000000000000000000000000000000000000000000000000\n    p=604 (below): super=False e1R_ok=True\n    p=606 (in-region): super=True e1R_ok=True\n    p=615 (in-region): super=True e1R_ok=True\n    p=1210 (in-region): super=True e1R_ok=True\nlisted failures=0 in-region failures=0 holds-at-p0-1=0\n== T3.3 factor 1.43 vs block 30 on named lines ==\n  (p,1,2) c=2: 4165/2921 = 4165/2921 ~ 1.425882\n  (p,1,1) c=2: 2085/1464 = 695/488 ~ 1.424180\n== T1.1 on named larger realizations (single-seed DP) ==\n  Z_A root=(3, 3, 3) scored=46 skipped_wide=0 multi-seed=0 pairs=86 amp=11 fails=0\n  Z_B root=(4, 4, 4) scored=69 skipped_wide=0 multi-seed=0 pairs=125 amp=16 fails=0\n  W1 root=(3, 3, 4) scored=36 skipped_wide=0 multi-seed=0 pairs=67 amp=10 fails=0\n  W2 root=(3, 3, 6) scored=23 skipped_wide=0 multi-seed=33 pairs=31 amp=9 fails=0\nSUMMARY: QUANTIFIER SCOPE (PR #8177): T3.3 super-solutions hold at all eight listed couplings and at p in {p0+1, p0+10, 2 p0} with the exhibited triples; T3.1 identity holds for n=1..8; T1.1 holds on Z_A, Z_B, W1, W2 by single-seed DP; 4165/2921 and 2085/1464 lie in [1.42, 1.44]; pattern has purchase and the claimed inequalities hold in-range (known T2 Z_B value-triple is not re-claimed)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j289d",
+  "at_utc": "20260919T033421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

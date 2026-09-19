@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8151",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block17-static",
+ "worker": "w-macbookpro90c72-j21ab",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8151/even_tori_exist.py",
+ "seed": 85865,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "95cfeca0",
+ "started_utc": "20260919T024425Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known T3 chessboard HIT \u2014 the ring of 4, 4x2, 4x4, 2x2x2 and 4x4x4 even-side tori exist, are bipartite, and have no nn triangles"
+ },
+ "review": "Even-side ring/4x2/4x4/2x2x2/4x4x4 tori exist, are bipartite, no triangles; no new defect beyond known T3 chessboard HIT",
+ "what": "PR #8151 ([physics-loop] admissibility-induced-law block17 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915; git show origin/physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915:<note>. Create probes/work/pr8151/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8151/<script>.py\"",
+ "stdout_sha256": "9524fe5a17b1abe9cdcb7e085041d45a9fe4c30433c621f5cfdb4fffa07ff023",
+ "stdout_tail": "ring4 shape=(4,) |V|=4 triangles=0 bipartite=True\ntorus4x2 shape=(4, 2) |V|=8 triangles=0 bipartite=True\ntorus4x4 shape=(4, 4) |V|=16 triangles=0 bipartite=True\ntorus2x2x2 shape=(2, 2, 2) |V|=8 triangles=0 bipartite=True\ntorus4x4x4 shape=(4, 4, 4) |V|=64 triangles=0 bipartite=True\nSUMMARY: pattern has no purchase on this note beyond the known T3 chessboard HIT \u2014 the ring of 4, 4x2, 4x4, 2x2x2 and 4x4x4 even-side tori exist, are bipartite, and have no nn triangles\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j21ab",
+  "at_utc": "20260919T024426Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

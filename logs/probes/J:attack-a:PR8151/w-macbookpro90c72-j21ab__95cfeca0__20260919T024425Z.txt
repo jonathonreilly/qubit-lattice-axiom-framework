@@ -1,0 +1,6 @@
+ring4 shape=(4,) |V|=4 triangles=0 bipartite=True
+torus4x2 shape=(4, 2) |V|=8 triangles=0 bipartite=True
+torus4x4 shape=(4, 4) |V|=16 triangles=0 bipartite=True
+torus2x2x2 shape=(2, 2, 2) |V|=8 triangles=0 bipartite=True
+torus4x4x4 shape=(4, 4, 4) |V|=64 triangles=0 bipartite=True
+SUMMARY: pattern has no purchase on this note beyond the known T3 chessboard HIT — the ring of 4, 4x2, 4x4, 2x2x2 and 4x4x4 even-side tori exist, are bipartite, and have no nn triangles

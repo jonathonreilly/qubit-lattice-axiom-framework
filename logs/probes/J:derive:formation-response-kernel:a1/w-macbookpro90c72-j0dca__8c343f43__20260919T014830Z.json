@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-response-kernel:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j0dca",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-response-kernel/w-macbookpro90c72-j0dca/check.py",
+ "seed": 82510,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c343f43",
+ "started_utc": "20260919T014830Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL G(n,m) closed form; FDR fails at (pi,0) with chi=3/2 C=9/8 1/E=1/4; R_8(lam,lam,0) poles as lam->0 and is 3/4 at pi, not 1/E"
+ },
+ "review": "G(n,m) closed form; at (pi,0) chi=3/2 C=9/8 1/E=1/4 so FDR fails; R_8(lam,lam,0) poles as lam->0 and is 3/4 at pi. HIT is those identities, not isotropic 1/r.",
+ "what": "DERIVATION, independent attempt 1 of 6: What replaces the Green-function kernel when records form: the response of the formation law to a source. THE PROGRAM'S OPEN PHYSICS QUESTION after block 35 (PR #8180; setting in blocks 13, 26, 34: PRs #8147, #8170, #8178). The gravity lane takes as input a lattice Green-function kernel 1/E(k), E(k) = 2 sum_j (1 - cos k_j). Block 19 found that kernel only in the static (equilibrium comparator) law. The axiom says records FORM: the sphere formation law in level time, linearized about an aligned plane, is theta_{t+1} = P theta_t + noise with phi(k) = (1 + e^{i k_1} + e^{i k_2})/3, u = |phi|^2, and its covariance is sigma^2 phi^s/(1 - u): a plane Green function times a level-time heat kernel, diffusive and drifting. A probe added the exact identity E(k) = 3(|1 - phi e^{i w}|^2 + 1 - u) in level coordinates. TASK: derive the object a gravity-type node would actually see under the formation reading: the linear RESPONSE of the formation law to a persistent localized source (a site whose record is pinned, or a small bias field h at one site acting at every level). (a) Compute the response function exactly for the linear model: R(k, w) = 1/(1 - phi(k) e^{i w}) and its static limit; (b) find its real-space form at long distance on the level planes and along the level direction (saddle point, with the drift removed by the co-moving frame x -> x - t(1,1)/3), with exact constants; (c) decide whether any channel (the static response, the time-integrated covariance, the response in the co-moving frame, a symmetrized combination over the eight corner orders of block 09) decays like 1/r in three dimensions, and if none does, state precisely what decay law replaces it; (d) check the fluctuation-response relation: is the response proportional to the covariance (it is in equilibrium; level time is not equilibrium)? Verify every closed form against exact finite-L sums. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-response-kernel/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-response-kernel/<name>/check.py\"",
+ "stdout_sha256": "9adb0ed386867ddecb4de90f821667cd8c7361acd868fe7ae4e76dd01ac41fc8",
+ "stdout_tail": "CHECKED E1.G-00\nCHECKED E1.G-01\nCHECKED E1.G-02\nCHECKED E1.G-03\nCHECKED E1.G-04\nCHECKED E1.G-05\nCHECKED E1.G-10\nCHECKED E1.G-11\nCHECKED E1.G-12\nCHECKED E1.G-13\nCHECKED E1.G-14\nCHECKED E1.G-15\nCHECKED E1.G-20\nCHECKED E1.G-21\nCHECKED E1.G-22\nCHECKED E1.G-23\nCHECKED E1.G-24\nCHECKED E1.G-25\nCHECKED E1.G-30\nCHECKED E1.G-31\nCHECKED E1.G-32\nCHECKED E1.G-33\nCHECKED E1.G-34\nCHECKED E1.G-35\nCHECKED E1.G-40\nCHECKED E1.G-41\nCHECKED E1.G-42\nCHECKED E1.G-43\nCHECKED E1.G-44\nCHECKED E1.G-45\nCHECKED E1.G-50\nCHECKED E1.G-51\nCHECKED E1.G-52\nCHECKED E1.G-53\nCHECKED E1.G-54\nCHECKED E1.G-55\nCHECKED E2.chi-pi0\nCHECKED E2.C-pi0\nCHECKED E2.E-pi0\nCHECKED E2.not-FDR\nCHECKED E2.chi-C-ratio: 4/3\nE3.R8(lam,lam,0)= 3*(-sin(lam)**2/2 - 2*cos(lam) + 2)/(4*(cos(lam) - 1)**2)\nE3.limit oo\nCHECKED E3.limit-diverges: limit=oo\nE3.at-pi 3/4\nCHECKED E3.at-pi-ne-1overE\nCHECKED E4.1-phi-not-E/3\nCHECKS ok=44 fail=0\nHIT: PARTIAL: infinite-plane static Green G(n,m)=(3/2)C(n+m,n)2^{-(n+m)}; at k=(pi,0) chi=3/2, C=9/8, 1/E=1/4, chi/C=1+phi=4/3 so FDR fails and none equals 1/E; R_8(lam,lam,0)=3(-sin^2(lam)/2-2cos(lam)+2)/(4(cos(lam)-1)^2) diverges as lam->0 (pole) and equals 3/4 at lam=pi \u2260 1/E=1/4. No isotropic 1/r. Independent of a2 axial-3/2 census and a4 (lam,-lam,0) pole coefficient.\nSUMMARY: PARTIAL G(n,m) closed form; FDR fails at (pi,0) with chi=3/2 C=9/8 1/E=1/4; R_8(lam,lam,0) poles as lam->0 and is 3/4 at pi, not 1/E\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0dca",
+  "at_utc": "20260919T014842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "G closed form; FDR fails at (pi,0); R_8(lam,lam,0) poles. Not isotropic 1/r.",
+  "by": "w-macbookpro90c72-j0dca",
+  "at_utc": "20260919T014842Z"
+ }
+}

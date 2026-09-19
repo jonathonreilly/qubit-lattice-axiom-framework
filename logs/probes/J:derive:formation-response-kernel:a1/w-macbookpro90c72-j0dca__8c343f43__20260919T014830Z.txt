@@ -1,0 +1,50 @@
+CHECKED E1.G-00
+CHECKED E1.G-01
+CHECKED E1.G-02
+CHECKED E1.G-03
+CHECKED E1.G-04
+CHECKED E1.G-05
+CHECKED E1.G-10
+CHECKED E1.G-11
+CHECKED E1.G-12
+CHECKED E1.G-13
+CHECKED E1.G-14
+CHECKED E1.G-15
+CHECKED E1.G-20
+CHECKED E1.G-21
+CHECKED E1.G-22
+CHECKED E1.G-23
+CHECKED E1.G-24
+CHECKED E1.G-25
+CHECKED E1.G-30
+CHECKED E1.G-31
+CHECKED E1.G-32
+CHECKED E1.G-33
+CHECKED E1.G-34
+CHECKED E1.G-35
+CHECKED E1.G-40
+CHECKED E1.G-41
+CHECKED E1.G-42
+CHECKED E1.G-43
+CHECKED E1.G-44
+CHECKED E1.G-45
+CHECKED E1.G-50
+CHECKED E1.G-51
+CHECKED E1.G-52
+CHECKED E1.G-53
+CHECKED E1.G-54
+CHECKED E1.G-55
+CHECKED E2.chi-pi0
+CHECKED E2.C-pi0
+CHECKED E2.E-pi0
+CHECKED E2.not-FDR
+CHECKED E2.chi-C-ratio: 4/3
+E3.R8(lam,lam,0)= 3*(-sin(lam)**2/2 - 2*cos(lam) + 2)/(4*(cos(lam) - 1)**2)
+E3.limit oo
+CHECKED E3.limit-diverges: limit=oo
+E3.at-pi 3/4
+CHECKED E3.at-pi-ne-1overE
+CHECKED E4.1-phi-not-E/3
+CHECKS ok=44 fail=0
+HIT: PARTIAL: infinite-plane static Green G(n,m)=(3/2)C(n+m,n)2^{-(n+m)}; at k=(pi,0) chi=3/2, C=9/8, 1/E=1/4, chi/C=1+phi=4/3 so FDR fails and none equals 1/E; R_8(lam,lam,0)=3(-sin^2(lam)/2-2cos(lam)+2)/(4(cos(lam)-1)^2) diverges as lam->0 (pole) and equals 3/4 at lam=pi ≠ 1/E=1/4. No isotropic 1/r. Independent of a2 axial-3/2 census and a4 (lam,-lam,0) pole coefficient.
+SUMMARY: PARTIAL G(n,m) closed form; FDR fails at (pi,0) with chi=3/2 C=9/8 1/E=1/4; R_8(lam,lam,0) poles as lam->0 and is 3/4 at pi, not 1/E

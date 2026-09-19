@@ -1,0 +1,39 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-jf17d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOC/miller_recurrence_bound_and_derivation_steps.py",
+ "seed": 21218,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d95bada4",
+ "started_utc": "20260919T123338Z",
+ "elapsed_s": 5.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "V Miller-recurrence e^-t I_k(t) (50 digits): stability 1.7e-50, vs mpmath.besseli 6.9e-48, vs quadrature of the integral representation 2.6e-51",
+   "B 413 t-values in [1,1e6] (fine grid on [1,3], integers <= 200, 10^(m/4) to 1e6), every k <= 15 sqrt t + 10 (96064 pairs): max absolute-bound usage 0.00705486 at t=2.31, k=0 (empirical C_0 need 0.12754 vs C_0 = 18.07783498); max relative-bound usage 0.00705486",
+   "P t^2 R_2 -> He_8/1152 + He_6/720: a=0.0: limit 0.0703125, value at the largest t 0.070312679; a=1.0: limit -0.092361111, value at the largest t -0.092361313; a=2.0: limit 0.20086806, value at the largest t 0.20086835; a=3.0: limit -0.58125, value at the largest t -0.58125068; a=0.5: limit 0.0045281304, value at the largest t 0.0045281165",
+   "S derivation steps: cosine bounds failures 0; core integrand bound usage max 0.999998019 (< 1; tight only as s -> 0 where both sides ~ s^6/(720 t^2)); cos1 = 0.54030231 <= 13/24; t-tail sup 5.703746359 = (60/(11e))^(5/2) 5.703746408; Gaussian-tail usage 0.2791; theta-tail usage 0.9908; moments give C_0 to 0.0 with pieces ['0.13482963', '0.020833333', '3.625', '14.297172']",
+   "F P_1(0) = 0.125, P_1(2) = -0.208333, wrong-scaling exp(-32) vs exp(-1/2), fixed-index factor -1 + 1/(8t) < 0",
+   "hits=0; runtime 6s"
+  ]
+ },
+ "review": "Output matches the task: 50-digit Miller-recurrence values of e^-t I_k(t) (stable to 2e-50, agreeing with mpmath.besseli and with quadrature of the integral representation) over 413 t-values in [1, 1e6] with every k <= 15 sqrt t + 10 (96064 pairs) use at most 0.00705 of the derived absolute bound C_0/(sqrt(2 pi t) t^2) (max at t=2.31, k=0; empirical constant 0.1275 vs C_0 = 18.0778), the same for the relative form; t^2 R_2 tends to He_8/1152 + He_6/720 at a = 0, 1/2, 1, 2, 3, consistent with P_1; every pointwise step of the derivation holds (core-integrand bound usage 0.999998, tight only as s -> 0), and the Gaussian moments reproduce C_0 exactly; the falsifier numbers P_1(0) = 1/8, P_1(2) = -5/24, exp(-32) vs exp(-1/2) and -1 + 1/(8t) reproduce; no falsifier fired.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOC/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOC/<script>.py\"",
+ "stdout_sha256": "ed600f93e1424f52e8bd67659f1b2475a4f7b696b4f21e9cca3ef05c6725c0c3",
+ "stdout_tail": "s each)\n  (iii) cos 1 = 0.540302305868 <= 13/24 = 0.541666666667: True\n  (iv) max t^(5/2) e^(-11t/24) on [1,21] = 5.70374635884 vs (60/(11e))^(5/2) = 5.70374640835\n  (v) Gaussian tail / t^-2 (3 + 5/8) sqrt(pi/2): max 0.279138; (vi) theta tail ratios max 0.990847\n  (vii) sqrt(2/pi) B_abs by quadrature = 18.077834982215542392; closed-form C_0 = 18.077834982215542392; |diff| = 0.0; pieces ['0.1348296304', '0.02083333333', '3.625', '14.29717202']\nSUMMARY: S derivation steps: cosine bounds failures 0; core integrand bound usage max 0.999998019 (< 1; tight only as s -> 0 where both sides ~ s^6/(720 t^2)); cos1 = 0.54030231 <= 13/24; t-tail sup 5.703746359 = (60/(11e))^(5/2) 5.703746408; Gaussian-tail usage 0.2791; theta-tail usage 0.9908; moments give C_0 to 0.0 with pieces ['0.13482963', '0.020833333', '3.625', '14.297172']\n==============================================================================\nF  falsifier numbers\n  wrong scaling a=1,t=64: exp(-32) = 1.2664166e-14 vs exp(-1/2) = 0.60653066\n  P_1(0) = 0.125 (1/8), P_1(2) = -0.2083333333 (-5/24); reversed-sign value +5/24\n  fixed-index factor at k = 2 sqrt t, t = 1, 4, 64: ['-0.875', '-0.96875', '-0.99804688'] (= -1 + 1/(8t): ['-0.875', '-0.96875', '-0.99804688']); local-CLT factor exp(-2) = 0.13533528\nSUMMARY: F P_1(0) = 0.125, P_1(2) = -0.208333, wrong-scaling exp(-32) vs exp(-1/2), fixed-index factor -1 + 1/(8t) < 0\n==============================================================================\nSUMMARY: hits=0; runtime 6s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf17d",
+  "at_utc": "20260919T123353Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

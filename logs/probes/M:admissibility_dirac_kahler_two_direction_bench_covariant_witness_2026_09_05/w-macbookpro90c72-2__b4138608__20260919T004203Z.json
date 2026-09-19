@@ -1,0 +1,32 @@
+{
+ "task": "M:admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05",
+ "type": "mutation-census",
+ "lane": "admissibility",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "for m in $(python3 scripts/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 78523,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b4138608",
+ "started_utc": "20260919T004203Z",
+ "elapsed_s": 1150.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "f5f17448e1d6ca361c7218405de3fbf67d46bb1fb184b2e469034775e9de5edd",
+ "stdout_tail": " onsite pencil\n[bench] witness line overlap form\n[bench] witness line overlap pencil\n[bench] W1 line onsite form\n[bench] W1 line onsite pencil\n[bench] W1 line overlap form\n[bench] W1 line overlap pencil\n[bench] flat line onsite form\n[bench] flat line onsite pencil\n[bench] flat line overlap form\n[bench] flat line overlap pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] W1 zero overlap form\n[bench] W1 zero overlap pencil\n[bench] flat zero onsite form\n[bench] flat zero onsite pencil\n[bench] flat zero overlap form\n[bench] flat zero overlap pencil\n[phase] bench: 22166 ms\n[phase] identities: 2844 ms\n[phase] shape: 7365 ms\n[phase] control: 7406 ms\n[phase] authority: 3 ms\n[phase] census: 1995 ms\n[phase] construction: 513 ms\n[bench] witness line onsite form\n[bench] witness line onsite pencil\n[bench] witness line overlap form\n[bench] witness line overlap pencil\n[bench] W1 line onsite form\n[bench] W1 line onsite pencil\n[bench] W1 line overlap form\n[bench] W1 line overlap pencil\n[bench] flat line onsite form\n[bench] flat line onsite pencil\n[bench] flat line overlap form\n[bench] flat line overlap pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] W1 zero overlap form\n[bench] W1 zero overlap pencil\n[bench] flat zero onsite form\n[bench] flat zero onsite pencil\n[bench] flat zero overlap form\n[bench] flat zero overlap pencil\n[phase] bench: 21625 ms\n[phase] identities: 2769 ms\n[phase] shape: 7288 ms\n[phase] control: 7266 ms\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T010114Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+  ]
+ }
+}

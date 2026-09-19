@@ -1,0 +1,32 @@
+{
+ "task": "J:note:ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISCOVERY_BOUNDED_THEOREM_NOTE_2026_06_10",
+ "type": "judgment",
+ "lane": "eta",
+ "worker": "w-jonathonsmac4f50-j883a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISC/symmetric_point_velocity_exact.py",
+ "seed": 5066,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "63019bff",
+ "started_utc": "20260919T080426Z",
+ "elapsed_s": 200.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier 1 does not fire: with a group-averaged construction, both dispersive six-orbit families (the note's and its k -> -k mirror) satisfy the axis-line D3 identity exactly at all 900 rational moduli points and axes tried, and all 3415 exact symmetric-point band slopes have squares in [1/12, 1/36] (1/36: |v| = 1/6 off the strata; 1/12: |v| = 1/(2 sqrt3) on the equal-phase strata); slope 0 never occurs"
+ },
+ "review": "Output matches the task (falsifier 1 implemented exactly with a group-averaged construction disjoint from the runner's orbit propagation): of the four all-phase-unitary six-orbit subsets two are flat and two dispersive (the note's family and its k -> -k mirror); for both, along all three axes, the D3 axis-line identity holds exactly over QQ_I[w] at 900 rational moduli points (120 random + 30 equal-phase per family and axis), and all 3415 exact symmetric-point band slopes have squares 1/36 (|v| = 1/6) or 1/12 (|v| = 1/(2 sqrt3), equal-phase strata); slope 0 never occurs, so the falsifier does not fire.",
+ "what": "Note on main: docs/ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISCOVERY_BOUNDED_THEOREM_NOTE_2026-06-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISC/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISC/<script>.py\"",
+ "stdout_sha256": "2caac1cbbcacddd4fdb5877a32dd475179567882f250c485d2b2c61cccd44dea",
+ "stdout_tail": "1. group of order 6; 4 on-site + 12 hop orbits (equivariant True); all-phase-unitary six-orbit subsets [(0, 2, 4, 6, 8, 10), (0, 3, 5, 6, 8, 11), (1, 2, 4, 7, 9, 10), (1, 3, 5, 7, 9, 11)]; dispersive [(0, 3, 5, 6, 8, 11), (1, 2, 4, 7, 9, 10)]\n2. D3 identity along the x axis at a rational point identifies (orientation, pairing, roles): {(0, 3, 5, 6, 8, 11): (-1, ((0, 1), (2, 3), (4, 5)), (0, 1, 2)), (1, 2, 4, 7, 9, 10): (1, ((0, 1), (2, 3), (4, 5)), (0, 1, 2))}\n3. exact symmetric-point slopes: 900 axis-line identities verified, 3415 band slopes computed; set of squared slopes [1/12, 1/36]\nSUMMARY: falsifier 1 does not fire: with a group-averaged construction, both dispersive six-orbit families (the note's and its k -> -k mirror) satisfy the axis-line D3 identity exactly at all 900 rational moduli points and axes tried, and all 3415 exact symmetric-point band slopes have squares in [1/12, 1/36] (1/36: |v| = 1/6 off the strata; 1/12: |v| = 1/(2 sqrt3) on the equal-phase strata); slope 0 never occurs\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j883a",
+  "at_utc": "20260919T080747Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

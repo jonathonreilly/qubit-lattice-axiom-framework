@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8141",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block10-record",
+ "worker": "w-macbookpro90c72-jc34c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8141/normalization_K_mobius_n0.py",
+ "seed": 91134,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a3eefb27",
+ "started_utc": "20260919T041214Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (f) NORMALIZATION has purchase (Z1, K_1\u22611, K_2=K^2, (1/6)^{n0} on a disconnected n0=2 window, \u0394_k mixed-difference ratios, T6 vacuum-M\u00f6bius exp \u03a6 factors 3, 3/4, 12/13, 1, 165/169) and every identity recomputes exactly at (3,1,2); no HIT"
+ },
+ "review": "K_1\u22611, K_2=K^2, T1 (1/6)^{n0} on a disconnected n0=2 window (mass 1; mass 6 if n0=1), \u0394_k ratios 169/121 and 169/165, and T6 vacuum-M\u00f6bius exp \u03a6 factors 3, 3/4, 12/13, 1, 165/169 all recompute exactly at (3,1,2); pattern has purchase and does not fire",
+ "what": "PR #8141 ([physics-loop] admissibility-induced-law block10 \u2014 bounded_t): attack ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915; git show origin/physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915:<note>. Create probes/work/pr8141/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8141/<script>.py\"",
+ "stdout_sha256": "7a9bd03d90372de73387582cac7fed5edd5b5dcb7dc368117d13edddec0dab94",
+ "stdout_tail": "== K sum rules at (3,1,2) ==\n  Z1=12 p+q+4r=12\n  K_2 vs K^2 mismatches=0\n== T1 (1/6)^{n0} on two disjoint edges (n0=2) ==\n  configs=1296 mismatches=0 total mass=1\n  mass if n0 wrongly 1: 6\n== T3 \u0394_k exp(\u0394 log K_k) at (3,1,2) ==\n  k=2 wit=('+y', '+z'): exp \u0394=13/12 stated=169/121\n  k=2 wit=('-x', '+y'): exp \u0394=13/11 stated=169/121\n  k=2 wit=('+x', '+y'): exp \u0394=1 stated=169/121\n  k=2 wit=('+y', '+y'): exp \u0394=169/144 stated=169/121\n  k=2 found witness ('-x', '-x') with 169/121\n  k=3 wit=('-x', '-x', '+y'): exp \u0394=169/165 stated=169/165\n  k=3 wit=('+y', '+z', '-y'): exp \u0394=2197/2160 stated=169/165\n  k=3 wit=('-x', '+y', '+z'): exp \u0394=169/165 stated=169/165\n== T6 vacuum M\u00f6bius factors at the named witness ==\n  plaquette exp \u03a6_{bc} = 12/13 stated 12/13\n  plaquette exp \u03a6_{ad} = 1 stated 1\n  plaquette exp \u03a6_{ab} = 3 stated 3\n  plaquette exp \u03a6_{bd} = 3/4 stated 3/4\n  plaquette exp \u03a6_{abcd} = 1 stated 1\n  plaquette exp \u03a6_{bcd} = 1 stated 1\n  exp \u03a6_ad == 1 on 1296/1296 configs\n  star exp \u03a6_leaves=165/169 stated 165/169\nSUMMARY: pattern (f) NORMALIZATION has purchase (Z1, K_1\u22611, K_2=K^2, (1/6)^{n0} on a disconnected n0=2 window, \u0394_k mixed-difference ratios, T6 vacuum-M\u00f6bius exp \u03a6 factors 3, 3/4, 12/13, 1, 165/169) and every identity recomputes exactly at (3,1,2); no HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc34c",
+  "at_utc": "20260919T041214Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

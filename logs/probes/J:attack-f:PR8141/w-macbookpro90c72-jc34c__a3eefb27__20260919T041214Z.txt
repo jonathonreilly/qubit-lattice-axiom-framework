@@ -1,0 +1,25 @@
+== K sum rules at (3,1,2) ==
+  Z1=12 p+q+4r=12
+  K_2 vs K^2 mismatches=0
+== T1 (1/6)^{n0} on two disjoint edges (n0=2) ==
+  configs=1296 mismatches=0 total mass=1
+  mass if n0 wrongly 1: 6
+== T3 Δ_k exp(Δ log K_k) at (3,1,2) ==
+  k=2 wit=('+y', '+z'): exp Δ=13/12 stated=169/121
+  k=2 wit=('-x', '+y'): exp Δ=13/11 stated=169/121
+  k=2 wit=('+x', '+y'): exp Δ=1 stated=169/121
+  k=2 wit=('+y', '+y'): exp Δ=169/144 stated=169/121
+  k=2 found witness ('-x', '-x') with 169/121
+  k=3 wit=('-x', '-x', '+y'): exp Δ=169/165 stated=169/165
+  k=3 wit=('+y', '+z', '-y'): exp Δ=2197/2160 stated=169/165
+  k=3 wit=('-x', '+y', '+z'): exp Δ=169/165 stated=169/165
+== T6 vacuum Möbius factors at the named witness ==
+  plaquette exp Φ_{bc} = 12/13 stated 12/13
+  plaquette exp Φ_{ad} = 1 stated 1
+  plaquette exp Φ_{ab} = 3 stated 3
+  plaquette exp Φ_{bd} = 3/4 stated 3/4
+  plaquette exp Φ_{abcd} = 1 stated 1
+  plaquette exp Φ_{bcd} = 1 stated 1
+  exp Φ_ad == 1 on 1296/1296 configs
+  star exp Φ_leaves=165/169 stated 165/169
+SUMMARY: pattern (f) NORMALIZATION has purchase (Z1, K_1≡1, K_2=K^2, (1/6)^{n0} on a disconnected n0=2 window, Δ_k mixed-difference ratios, T6 vacuum-Möbius exp Φ factors 3, 3/4, 12/13, 1, 165/169) and every identity recomputes exactly at (3,1,2); no HIT

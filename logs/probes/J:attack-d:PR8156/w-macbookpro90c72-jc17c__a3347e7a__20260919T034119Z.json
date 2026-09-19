@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8156",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "w-macbookpro90c72-jc17c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8156/quantifier_every_n_P.py",
+ "seed": 89279,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a3347e7a",
+ "started_utc": "20260919T034119Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - V2's P_{2n} bound holds for every n=1..20 and 1-cos u \u2265 11u\u00b2/24 on |u|\u22641 and \u2265 2u\u00b2/\u03c0\u00b2 on [0,\u03c0] (not the N=1000 75/100\u201376/100 certificate)"
+ },
+ "review": "V2's P_{2n} bound holds for n=1..20 and the 1-cos inequalities hold on the grids, so the universals hold on the stated range and the pattern has no purchase",
+ "what": "PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915; git show origin/physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915:<note>. Create probes/work/pr8156/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8156/<script>.py\"",
+ "stdout_sha256": "bd342ee2ffa39070765285cb8104bc1dc93c805bc655e532f1c3b5e5bfd144e3",
+ "stdout_tail": "3656998213724613576 ok=True\nn=10: P=0.007108354149086696661074435327554397878012 bound=0.526394473834705759990145241069202860662 ok=True\nn=11: P=0.006182032930252519443381785537591086636274 bound=0.4598180081424137802748448707907347092943 ok=True\nn=12: P=0.005440770873122592093059417267094615396484 bound=0.4017413875035693637802730706925626596496 ok=True\nn=13: P=0.004836648668838671267805329732641299947466 bound=0.3510591330932559131634296227736997591471 ok=True\nn=14: P=0.004336599083314764853910510639596691765106 bound=0.3068168445871444671665198932570726940703 ok=True\nn=15: P=0.003917143982554943323894638684979036636485 bound=0.2681876688228818698528910703003917222772 ok=True\nn=16: P=0.003561201814415359035907548035653519448994 bound=0.2344536096078488751413120229487135656588 ok=True\nn=17: P=0.003256079420678925429640891918695537557209 bound=0.2049902261880004845092955664994209678089 ok=True\nn=18: P=0.002992168643126632881321725587788891524063 bound=0.1792538530564759450512743192916245898336 ok=True\nn=19: P=0.002762076956250654494255829908041781359324 bound=0.1567707829674729977116889006902014410249 ok=True\nn=20: P=0.002560033500527269970631548953130756016759 bound=0.1371280294307832830228616967029503200856 ok=True\n1-cos u \u2265 11u\u00b2/24 on k/100 in [0,1]: True\n1-cos u \u2265 2u\u00b2/\u03c0\u00b2 on [0,\u03c0]: checked\nSUMMARY: pattern has no purchase on this note - V2's P_{2n} bound holds for every n=1..20 and 1-cos u \u2265 11u\u00b2/24 on |u|\u22641 and \u2265 2u\u00b2/\u03c0\u00b2 on [0,\u03c0] (not the N=1000 75/100\u201376/100 certificate)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc17c",
+  "at_utc": "20260919T034119Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

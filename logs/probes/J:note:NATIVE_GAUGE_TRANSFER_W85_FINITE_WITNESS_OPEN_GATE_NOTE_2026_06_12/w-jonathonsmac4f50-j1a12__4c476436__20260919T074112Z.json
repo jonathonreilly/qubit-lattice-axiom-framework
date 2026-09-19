@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_W85_FINITE_WITNESS_OPEN_GATE_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j1a12",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_W85_FINITE_WITNESS/full_grid_rho_vs_kgeom.py",
+ "seed": 3672,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4c476436",
+ "started_utc": "20260919T074112Z",
+ "elapsed_s": 7.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier 2 does not fire on the scanned grids: over every cell 0 <= p, q <= 8 sqrt(beta) at eleven betas from 12 to 1200 (walk-count Wilson coefficients, disjoint from the runner), the largest rho/K_geom(a) is 0.1028 at (beta, p, q) = (27, 1, 1) and the tail region a > 3 stays below 8.3e-07; the note's three rows are reproduced (True) and replacing H by x + y inflates rho by factors 28, 3, 18"
+ },
+ "review": "Output matches the task (falsifier 2 implemented as a full-grid scan with walk-count Wilson coefficients, disjoint from the runner's finite-mode Bessel routine): over every cell 0 <= p, q <= 8 sqrt(beta) at eleven betas from 12 to 1200 the largest rho/K_geom(a) is 0.1028 (at beta = 27, (1,1)), max rho stays 0.205-0.217 for all betas, the tail a > 3 stays below 8.3e-7, the note's three displayed rows (rho 0.070, 0.106, 0.138; K_geom 11.8, 28.9, 10.0) are reproduced, and H -> x + y inflates rho by x28, x3, x18; no cell has rho > K_geom.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_W85_FINITE_WITNESS_OPEN_GATE_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_W85_FINITE_WITNESS/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_W85_FINITE_WITNESS/<script>.py\"",
+ "stdout_sha256": "0574c593f24f059bd5b876b5545be193f4fe7010d8d9d0d6eea1e68c1ea08757",
+ "stdout_tail": "l (a > 3) max rho/K_geom 2.18e-07; beta=48 (grid 57+1 squared): max rho 0.2103, max rho/K_geom 0.0952 at (2, 2), tail (a > 3) max rho/K_geom 3.64e-07; beta=75 (grid 71+1 squared): max rho 0.2110, max rho/K_geom 0.0902 at (2, 2), tail (a > 3) max rho/K_geom 5.06e-07; beta=108 (grid 85+1 squared): max rho 0.2084, max rho/K_geom 0.0897 at (3, 3), tail (a > 3) max rho/K_geom 3.22e-07; beta=192 (grid 112+1 squared): max rho 0.2076, max rho/K_geom 0.0864 at (4, 4), tail (a > 3) max rho/K_geom 4.98e-07; beta=300 (grid 140+1 squared): max rho 0.2067, max rho/K_geom 0.0843 at (5, 5), tail (a > 3) max rho/K_geom 6.72e-07; beta=432 (grid 168+1 squared): max rho 0.2063, max rho/K_geom 0.0829 at (6, 6), tail (a > 3) max rho/K_geom 5.93e-07; beta=600 (grid 197+1 squared): max rho 0.2056, max rho/K_geom 0.0819 at (8, 8), tail (a > 3) max rho/K_geom 6.71e-07; beta=768 (grid 223+1 squared): max rho 0.2052, max rho/K_geom 0.0814 at (9, 9), tail (a > 3) max rho/K_geom 6.50e-07; beta=1200 (grid 279+1 squared): max rho 0.2046, max rho/K_geom 0.0808 at (11, 11), tail (a > 3) max rho/K_geom 8.34e-07\nSUMMARY: falsifier 2 does not fire on the scanned grids: over every cell 0 <= p, q <= 8 sqrt(beta) at eleven betas from 12 to 1200 (walk-count Wilson coefficients, disjoint from the runner), the largest rho/K_geom(a) is 0.1028 at (beta, p, q) = (27, 1, 1) and the tail region a > 3 stays below 8.3e-07; the note's three rows are reproduced (True) and replacing H by x + y inflates rho by factors 28, 3, 18\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1a12",
+  "at_utc": "20260919T074130Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

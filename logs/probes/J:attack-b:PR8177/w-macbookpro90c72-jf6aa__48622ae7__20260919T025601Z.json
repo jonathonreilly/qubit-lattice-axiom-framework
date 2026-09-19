@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8177",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block33-rooted",
+ "worker": "w-macbookpro90c72-jf6aa",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8177/same_test_pred_count.py",
+ "seed": 86561,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48622ae7",
+ "started_utc": "20260919T025601Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same 1-predecessor count is 3 at both Z_A and Z_B roots, so that count does not separate them; the value-triple mismatch is a known HIT and is not re-claimed"
+ },
+ "review": "Both Z_A and Z_B roots have three 1-predecessors so that count does not separate them; pattern has no purchase; not the known value-triple HIT",
+ "what": "PR #8177 (ail33: the rooted inequality reduces the unit budget to the ): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917; git show origin/physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917:<note>. Create probes/work/pr8177/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8177/<script>.py\"",
+ "stdout_sha256": "286bce4c219134bdc6d37e7dcfc341b0d20e970ae5a87278987ab03f326499f2",
+ "stdout_tail": "Z_A root (3, 3, 3) n_1pred=3\nZ_B root (4, 4, 4) n_1pred=3\nsame test n_1pred: Z_A=3 Z_B=3\nboth have three 1-predecessors: that property does not separate them\nSUMMARY: pattern has no purchase on this note - the same 1-predecessor count is 3 at both Z_A and Z_B roots, so that count does not separate them; the value-triple mismatch is a known HIT and is not re-claimed\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf6aa",
+  "at_utc": "20260919T025602Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

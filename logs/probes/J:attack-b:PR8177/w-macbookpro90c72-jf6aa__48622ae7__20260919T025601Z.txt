@@ -1,0 +1,5 @@
+Z_A root (3, 3, 3) n_1pred=3
+Z_B root (4, 4, 4) n_1pred=3
+same test n_1pred: Z_A=3 Z_B=3
+both have three 1-predecessors: that property does not separate them
+SUMMARY: pattern has no purchase on this note - the same 1-predecessor count is 3 at both Z_A and Z_B roots, so that count does not separate them; the value-triple mismatch is a known HIT and is not re-claimed

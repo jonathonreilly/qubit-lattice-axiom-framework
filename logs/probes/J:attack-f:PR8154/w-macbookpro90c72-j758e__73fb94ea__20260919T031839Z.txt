@@ -1,0 +1,6 @@
+L=2 d=1 N=4 Parseval all-ones: True
+L=2 d=2 N=16 Parseval all-ones: True
+L=3 d=1 N=6 Parseval all-ones: True
+plane 4/(3N)=|k_min|^2/(3π^2) for L=2,3,4: True
+zero-mode ŝ_0 = N^{1/2} m̂ (convention): True
+SUMMARY: pattern has no purchase on this note: N=(2L)^d, dual grid size, Parseval for ŝ=N^{-1/2} Σ e^{ik·x}s, and 4/(3N)=|k_min|^2/(3π^2) hold on the small tori

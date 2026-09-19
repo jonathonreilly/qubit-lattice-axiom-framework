@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8154",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block20-unsold",
+ "worker": "w-macbookpro90c72-j758e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8154/fourier_parseval_small_L.py",
+ "seed": 87919,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "73fb94ea",
+ "started_utc": "20260919T031839Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: N=(2L)^d, dual grid size, Parseval for \u015d=N^{-1/2} \u03a3 e^{ik\u00b7x}s, and 4/(3N)=|k_min|^2/(3\u03c0^2) hold on the small tori"
+ },
+ "review": "Parseval for \u015d=N^{-1/2} \u03a3 e^{ik\u00b7x}s, N=(2L)^d and 4/(3N)=|k_min|^2/(3\u03c0^2) hold on small tori; pattern has no purchase",
+ "what": "PR #8154 ([physics-loop] admissibility-induced-law block20 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915; git show origin/physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915:<note>. Create probes/work/pr8154/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8154/<script>.py\"",
+ "stdout_sha256": "d00d67e51d383d3391530c27492fde28bfe656dc5469beb4a216e6b9eb70617e",
+ "stdout_tail": "L=2 d=1 N=4 Parseval all-ones: True\nL=2 d=2 N=16 Parseval all-ones: True\nL=3 d=1 N=6 Parseval all-ones: True\nplane 4/(3N)=|k_min|^2/(3\u03c0^2) for L=2,3,4: True\nzero-mode \u015d_0 = N^{1/2} m\u0302 (convention): True\nSUMMARY: pattern has no purchase on this note: N=(2L)^d, dual grid size, Parseval for \u015d=N^{-1/2} \u03a3 e^{ik\u00b7x}s, and 4/(3N)=|k_min|^2/(3\u03c0^2) hold on the small tori\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j758e",
+  "at_utc": "20260919T031839Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

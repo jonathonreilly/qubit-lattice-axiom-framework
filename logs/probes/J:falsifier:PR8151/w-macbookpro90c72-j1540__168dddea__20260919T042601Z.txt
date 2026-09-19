@@ -1,0 +1,6 @@
+shape=(10, 10) |B|=200 |WP|=20 |W+|=90 |W-|=90 union=200 overlap=0
+shape=(12, 12) |B|=288 |WP|=24 |W+|=132 |W-|=132 union=288 overlap=0
+shape=(14, 14) |B|=392 |WP|=28 |W+|=182 |W-|=182 union=392 overlap=0
+shape=(6, 6, 6) |B|=648 |WP|=144 |W+|=252 |W-|=252 union=648 overlap=0
+shape=(8, 8, 8) |B|=1536 |WP|=256 |W+|=640 |W-|=640 union=1536 overlap=0
+SUMMARY: T2 W_P/W+/W- partition and theta bijection hold on extra even tori (Z/10Z)^2,(Z/12Z)^2,(Z/14Z)^2,(Z/6Z)^3,(Z/8Z)^3; falsifier does not fire; not the known T3 chessboard-orbit HIT

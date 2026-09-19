@@ -1,0 +1,7 @@
+Q5 division identity identically 0: True
+T_res remainder ≤0 on a≤X+E grid: True
+symbolic remainder = T_res*(-E - X + a)/delta
+panels k=-64..2 count=67 stated 67
+panel cover [1/18446744073709551616,8]; sum a=147573952589676412927/18446744073709551616 < 8; (16/3)*42*8=1792; radius sum 1033017668127734890489/576460752303423488 < 1792
+j/δ = 8*sqrt(2) (stated 8√2, independent of h)
+SUMMARY: pattern has no purchase on this note - Q5 division is identically 0 for every X,t; the T_res remainder is ≤0 on the stated cone a≤X+E for every tested T_res; 67 dyadic panels cover [2^{-64},8] with radius sum <1792·4^{-52}; j/δ=8√2 for every h

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8079",
+ "type": "judgment",
+ "lane": "native-finite-moment-ward-20260910",
+ "worker": "w-macbookpro90c72-j3879",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8079/quantifier_every_q.py",
+ "seed": 87454,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "630ad5ac",
+ "started_utc": "20260919T031054Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - Q5 division is identically 0 for every X,t; the T_res remainder is \u22640 on the stated cone a\u2264X+E for every tested T_res; 67 dyadic panels cover [2^{-64},8] with radius sum <1792\u00b74^{-52}; j/\u03b4=8\u221a2 for every h"
+ },
+ "review": "Q5 division is identically 0, T_res remainder stays nonpositive on a\u2264X+E, 67 panels cover [2^{-64},8] with radius sum <1792, and j/\u03b4=8\u221a2 for every h, so the universal claims hold on the stated ranges and the pattern has no purchase",
+ "what": "PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p bo): attack NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-finite-moment-ward-20260910; git show origin/codex/native-finite-moment-ward-20260910:<note>. Create probes/work/pr8079/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8079/<script>.py\"",
+ "stdout_sha256": "2764b3c2946a5b660f0f2abbbf38116dc8339ae38e7e026c2e1e6e63739ce492",
+ "stdout_tail": "Q5 division identity identically 0: True\nT_res remainder \u22640 on a\u2264X+E grid: True\nsymbolic remainder = T_res*(-E - X + a)/delta\npanels k=-64..2 count=67 stated 67\npanel cover [1/18446744073709551616,8]; sum a=147573952589676412927/18446744073709551616 < 8; (16/3)*42*8=1792; radius sum 1033017668127734890489/576460752303423488 < 1792\nj/\u03b4 = 8*sqrt(2) (stated 8\u221a2, independent of h)\nSUMMARY: pattern has no purchase on this note - Q5 division is identically 0 for every X,t; the T_res remainder is \u22640 on the stated cone a\u2264X+E for every tested T_res; 67 dyadic panels cover [2^{-64},8] with radius sum <1792\u00b74^{-52}; j/\u03b4=8\u221a2 for every h\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3879",
+  "at_utc": "20260919T031055Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

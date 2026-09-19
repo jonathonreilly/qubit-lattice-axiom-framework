@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-formation:a6",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j0029",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/lightcone-formation/w-macbookpro90c72-j0029/check.py",
+ "seed": 80116,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f67a3bd3",
+ "started_utc": "20260919T010836Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL reversibility of the symmetric 7-stencil formation law w.r.t. pi = prod Z(beta|S_x|) (bilinear identity proved and checked); linear Green-function kernel identity exact; doubled-graph spectrum {E, 14-E}; linearised Dobrushin threshold beta=3/7; backward stencil is a no-go for reversibility; FSS/LRO on the doubled Heisenberg ferromagnet is not claimed (classical RP/FSS named, not re-proved)."
+ },
+ "review": "Reversibility of the 7-stencil PCA w.r.t. pi=prod Z is proved and integer-checked; linear kernel identity and doubled-graph spectrum {E,14-E} are exact; backward stencil fails bilinear identity on L=3; linearised Dobrushin threshold is 3/7; FSS/LRO not claimed.",
+ "what": "DERIVATION, independent attempt 6 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\"",
+ "stdout_sha256": "370161123a6186628e5a0117d0906eedbf30f61a972cbcd0bffaeafde9cf6e6b",
+ "stdout_tail": "-stencil 1==1)\nCHECK E3a: PASS Ising bilinear 1024/1024\nCHECK E4a: PASS A'(0)=1/3\nCHECK E4b: PASS A(k)/k at 0 = 1/3\nCHECK E4c: PASS A' and A/k <= 1/3 on the sample\nCHECK E4d: PASS 7*(3/7)/3 = 1 (threshold identity)\nDOBRUSHIN sphere: uniqueness when 7*beta/3 < 1 i.e. beta < 3/7\nCHECK E5a: PASS k^2 coeff 1/6\nCHECK E5b: PASS k^4 coeff -1/180\nCHECK E5c: PASS stencil occupancy 7 vs static coordination 6\nCHECK E6a: PASS\nCHECK E6b: PASS\nCHECK E6c: PASS\nHIT: 7-stencil light-cone PCA is reversible w.r.t. pi(s) prop. prod_x Z(beta |S_x(s)|) by the bilinear identity sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') (integer-checked on L=2,3 and all 256 Ising configs on L=2 against 4 partners); the equal-time linear kernel sigma^2/(1-phi^2) equals 7 sigma^2/(2 E (1-E/14)) identically, and the doubled-graph Laplacian spectrum is {E(k), 14-E(k)}; sphere vMF Jacobian at 0 is (1/3) Id so the linearised Dobrushin threshold is beta=3/7; the backward 4-stencil FAILS the bilinear identity (exact counterexample left=1 right=0 on L=3). Static comparator is log Z(beta|S|) ~ (beta^2 |S|^2)/6, not beta s.s'.\nSUMMARY: PARTIAL reversibility of the symmetric 7-stencil formation law w.r.t. pi = prod Z(beta|S_x|) (bilinear identity proved and checked); linear Green-function kernel identity exact; doubled-graph spectrum {E, 14-E}; linearised Dobrushin threshold beta=3/7; backward stencil is a no-go for reversibility; FSS/LRO on the doubled Heisenberg ferromagnet is not claimed (classical RP/FSS named, not re-proved).\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0029",
+  "at_utc": "20260919T010843Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "New exact partial: 7-stencil reversibility via bilinear identity, linear kernel identity, doubled-graph spectrum {E,14-E}, backward-stencil no-go, linearised Dobrushin 3/7; FSS/LRO not claimed.",
+  "by": "w-macbookpro90c72-j0029",
+  "at_utc": "20260919T010843Z"
+ }
+}

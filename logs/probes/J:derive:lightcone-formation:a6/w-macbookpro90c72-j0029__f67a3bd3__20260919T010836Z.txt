@@ -1,0 +1,26 @@
+CHECK E0a: PASS sigma^2/(1-phi^2) - 7 sigma^2/(2E(1-E/14)) = 0
+CHECK E0b: PASS
+CHECK E0c: PASS
+CHECK E0d: PASS E(pi,0,0)=4 phi=3/7
+CHECK E1a: PASS all-e1 vs all-e2: 0 vs 0
+CHECK E1b: PASS L=2 mixed: -12 vs -12
+CHECK E1c: PASS L=3 mixed: 0 vs 0
+CHECK E1d: PASS vs zero 0,0
+CHECK E2a: PASS 7-stencil still holds: 1==1
+CHECK E2b: PASS backward FAILS: 1 vs 0
+CHECK E2c: PASS backward pair (1, 0)
+BACKWARD_COUNTEREXAMPLE left=1 right=0 (7-stencil 1==1)
+CHECK E3a: PASS Ising bilinear 1024/1024
+CHECK E4a: PASS A'(0)=1/3
+CHECK E4b: PASS A(k)/k at 0 = 1/3
+CHECK E4c: PASS A' and A/k <= 1/3 on the sample
+CHECK E4d: PASS 7*(3/7)/3 = 1 (threshold identity)
+DOBRUSHIN sphere: uniqueness when 7*beta/3 < 1 i.e. beta < 3/7
+CHECK E5a: PASS k^2 coeff 1/6
+CHECK E5b: PASS k^4 coeff -1/180
+CHECK E5c: PASS stencil occupancy 7 vs static coordination 6
+CHECK E6a: PASS
+CHECK E6b: PASS
+CHECK E6c: PASS
+HIT: 7-stencil light-cone PCA is reversible w.r.t. pi(s) prop. prod_x Z(beta |S_x(s)|) by the bilinear identity sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') (integer-checked on L=2,3 and all 256 Ising configs on L=2 against 4 partners); the equal-time linear kernel sigma^2/(1-phi^2) equals 7 sigma^2/(2 E (1-E/14)) identically, and the doubled-graph Laplacian spectrum is {E(k), 14-E(k)}; sphere vMF Jacobian at 0 is (1/3) Id so the linearised Dobrushin threshold is beta=3/7; the backward 4-stencil FAILS the bilinear identity (exact counterexample left=1 right=0 on L=3). Static comparator is log Z(beta|S|) ~ (beta^2 |S|^2)/6, not beta s.s'.
+SUMMARY: PARTIAL reversibility of the symmetric 7-stencil formation law w.r.t. pi = prod Z(beta|S_x|) (bilinear identity proved and checked); linear Green-function kernel identity exact; doubled-graph spectrum {E, 14-E}; linearised Dobrushin threshold beta=3/7; backward stencil is a no-go for reversibility; FSS/LRO on the doubled Heisenberg ferromagnet is not claimed (classical RP/FSS named, not re-proved).

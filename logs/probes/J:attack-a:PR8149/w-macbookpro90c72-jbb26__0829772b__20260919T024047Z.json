@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-jbb26",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8149/star_plaquette_embed.py",
+ "seed": 85647,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0829772b",
+ "started_utc": "20260919T024047Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "WITNESS REALIZABILITY (PR #8149): isolated star is 7 sites with 0 leaf-leaf edges and 18 outside environment sites; plaquette C4 has 16 path-start and 8 diagonal-first orders; pattern has purchase and the witnesses exist as written"
+ },
+ "review": "Star is 7 sites with 18 outside env sites and no leaf-leaf edges; plaquette 16+8=24 orders; witnesses exist as written.",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "da7d3b7c0d29e7aea9563bce6edc8c2429cd54a15c64903d56c71db50f51a0fd",
+ "stdout_tail": "star sites=7 leaf-leaf NN edges=0 (stated 0; bipartite)\nstar outside sites 18 stated 18\nplaquette orders path-start=16 diagonal-first=8 total=24\nSUMMARY: WITNESS REALIZABILITY (PR #8149): isolated star is 7 sites with 0 leaf-leaf edges and 18 outside environment sites; plaquette C4 has 16 path-start and 8 diagonal-first orders; pattern has purchase and the witnesses exist as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jbb26",
+  "at_utc": "20260919T024047Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

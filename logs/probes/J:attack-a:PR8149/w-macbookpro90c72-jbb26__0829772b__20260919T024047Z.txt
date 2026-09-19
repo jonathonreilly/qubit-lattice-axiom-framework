@@ -1,0 +1,4 @@
+star sites=7 leaf-leaf NN edges=0 (stated 0; bipartite)
+star outside sites 18 stated 18
+plaquette orders path-start=16 diagonal-first=8 total=24
+SUMMARY: WITNESS REALIZABILITY (PR #8149): isolated star is 7 sites with 0 leaf-leaf edges and 18 outside environment sites; plaquette C4 has 16 path-start and 8 diagonal-first orders; pattern has purchase and the witnesses exist as written

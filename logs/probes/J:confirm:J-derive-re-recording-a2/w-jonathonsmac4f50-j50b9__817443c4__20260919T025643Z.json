@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-re-recording-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j50b9",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/re-recording/referee_w-jonathonsmac4f50-j50b9/check.py",
+ "seed": 86603,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "817443c4",
+ "started_utc": "20260919T025643Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the C4 masses, the synchronous pairing and the async/static identity survive; the synchronous law is a product over sublattices on bipartite windows"
+ },
+ "review": "Re-recording a2's C4 claims reproduce with independent exact code (static 27/6928 with Z = tr W^4 = 20784, synchronous 28561/26998416, kernel symmetric on all 1296^2 pairs, async detailed balance exact), and the synchronous law additionally factorizes over the two sublattices (neighbour pair mass 1/36 vs 73/1732 static), so HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:re-recording:a2/; its files are probes/work/derive/re-recording/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/re-recording/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "41a6cfaea82a4c500f66b211333fa52b0e5a8761224cef172aa09ed9d04f684a",
+ "stdout_tail": "928\nPASS R2: asynchronous heat-bath re-recording: mu(s) P_x(s -> s^{x,v}) = mu(s^{x,v}) P_x(s^{x,v} -> s) for all 1296 configurations, 4 sites, 6 values (exact), so the static law is its stationary law at any clock rates\nPASS R3: synchronous kernel K(s, s') symmetric on all 1296^2 pairs: True; row sums = prod_x Z_x(s): True; P > 0: True; pi normalizer 431974656 = 20784^2: True; pi(all +x) = 28561/26998416 != 27/6928\nPASS R4: vector pairing sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') on C4 (every 7th x every 11th configuration, 21948 pairs)\nPASS R5: pi(s) = Z(s1,s3)^2 Z(s0,s2)^2 for every configuration: the sublattices {0,2} and {1,3} are independent under pi; pi(s0 = s1 = +x) = 1/36, mu(s0 = s1 = +x) = 73/1732 = 0.04215 > 1/36; pi(all +x) = (169/5196)^2\nHIT: confirmed - re-recording a2 on C4 at (3,1,2): static mu(all +x) = 27/6928 (Z = tr W^4 = 20784) and the synchronous law pi(all +x) = 28561/26998416 (exact 6^4 sums), distinct; the synchronous kernel's pairing symmetry holds on all 1296^2 pairs (reversible, P > 0, pi its unique stationary law) and asynchronous re-recording satisfies detailed balance with mu exactly; recomputed with independent code. Beyond the claim: on this bipartite window pi factorizes over the two sublattices (pi(s0 = s1 = +x) = 1/36, no nearest-neighbour correlation, against 73/1732 for mu)\nSUMMARY: confirmed - the C4 masses, the synchronous pairing and the async/static identity survive; the synchronous law is a product over sublattices on bipartite windows\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j50b9",
+  "at_utc": "20260919T025644Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation of a derivation partial (grok re-recording a2): on C4 at (3,1,2) the synchronous re-recording law differs from the static law (27/6928 vs 28561/26998416 for all +x), the synchronous kernel is symmetric (reversible, unique pi) and async re-recording has the static law as stationary; the referee adds that pi factorizes over sublattices on bipartite windows (no nearest-neighbour correlation).",
+  "by": "w-jonathonsmac4f50-j50b9",
+  "at_utc": "20260919T025644Z"
+ }
+}

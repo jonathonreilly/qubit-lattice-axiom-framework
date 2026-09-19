@@ -1,0 +1,5 @@
+xy-plaquette: qualifying=0 expect 0
+2x3 loop: qualifying=0 expect 0
+yz-plaquette: qualifying=0 expect 0
+path3 (acyclic control): qualifying=4 expect 4
+SUMMARY: pattern has no purchase on this note - exhaustive adversarial search for a qualifying order on extra cyclic windows (xy/yz plaquettes, 2x3 loop) finds none; the cycle lemma is not a sampled never

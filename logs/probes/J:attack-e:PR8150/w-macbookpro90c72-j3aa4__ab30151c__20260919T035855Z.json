@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8150",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block16-static",
+ "worker": "w-macbookpro90c72-j3aa4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8150/adversarial_qualifying_on_cycles.py",
+ "seed": 90335,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab30151c",
+ "started_utc": "20260919T035855Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - exhaustive adversarial search for a qualifying order on extra cyclic windows (xy/yz plaquettes, 2x3 loop) finds none; the cycle lemma is not a sampled never"
+ },
+ "review": "Exhaustive adversarial search for a qualifying order on extra cyclic windows (xy/yz plaquettes, 2x3 loop) finds none; cycle lemma is not a sampled never. No HIT.",
+ "what": "PR #8150 ([physics-loop] admissibility-induced-law block16 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915; git show origin/physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915:<note>. Create probes/work/pr8150/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8150/<script>.py\"",
+ "stdout_sha256": "729e7b473fcbdb43f384c6ae9ac59829b621a19291c31c63c710fe4288567708",
+ "stdout_tail": "xy-plaquette: qualifying=0 expect 0\n2x3 loop: qualifying=0 expect 0\nyz-plaquette: qualifying=0 expect 0\npath3 (acyclic control): qualifying=4 expect 4\nSUMMARY: pattern has no purchase on this note - exhaustive adversarial search for a qualifying order on extra cyclic windows (xy/yz plaquettes, 2x3 loop) finds none; the cycle lemma is not a sampled never\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3aa4",
+  "at_utc": "20260919T035855Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

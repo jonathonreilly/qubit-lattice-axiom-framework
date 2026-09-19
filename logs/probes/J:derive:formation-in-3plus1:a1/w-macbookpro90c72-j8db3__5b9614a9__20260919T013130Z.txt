@@ -1,0 +1,16 @@
+CHECK E0a: PASS
+CHECK E0b: PASS
+CHECK E0c: PASS [I/4, I/4, I/4]
+HESS Matrix([[3/8, -1/8, -1/8], [-1/8, 3/8, -1/8], [-1/8, -1/8, 3/8]])
+EIGEN {1/8: 1, 1/2: 2}
+CHECK E1a: PASS ev={1/8: 1, 1/2: 2}
+CHECK E1b: PASS
+CHECK E2a: PASS
+CHECK E2b: PASS
+CHECK E2c: PASS
+CHECK E2d: PASS
+CHECK E3a: PASS
+HESS2 Matrix([[4/9, -2/9], [-2/9, 4/9]]) EV2 {2/3: 1, 2/9: 1}
+CHECK E3b: PASS
+HIT: linear formation on a d-dimensional level plane has 1-|phi|^2 = k^T M k + O(|k|^4) with M positive definite (Cauchy: 4|k|^2-(1·k)^2 = sum_{i<j}(k_i-k_j)^2); the zero-mode integral Int d^d k / (k^T M k) converges at k=0 iff d>2. Thus 3+1 (d=3) is the lowest event-lattice dimension whose linear equal-level kernel is a 1/r Green function; 2+1 (campaign Z^3) is logarithmic. Drift of the 3+1 zero mode is (1,1,1)/4 per level. LRO of the nonlinear sphere law is not proved.
+SUMMARY: PARTIAL linear dichotomy: finite zero-mode sum iff level dimension d>2, so 3+1 is the lowest Newtonian equal-level kernel; drift (1,1,1)/4; M positive definite by Cauchy identity. Sphere LRO and two-sided nonlinear S(k) bounds are not proved.

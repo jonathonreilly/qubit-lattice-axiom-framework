@@ -1,0 +1,2 @@
+4^3 modes: E(0)=0 and E>0 off zero (checked 64)
+SUMMARY: pattern has no purchase on this note — the same E(k)=0 test holds only at the zero mode of the 4^3 torus, so 1/E(k) is defined exactly on the nonzero modes used by G2/G5

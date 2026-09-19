@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8153",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block19-sphere",
+ "worker": "w-macbookpro90c72-j26d0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8153/same_test_E_zero_mode.py",
+ "seed": 86962,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "52c75ae9",
+ "started_utc": "20260919T030242Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the same E(k)=0 test holds only at the zero mode of the 4^3 torus, so 1/E(k) is defined exactly on the nonzero modes used by G2/G5"
+ },
+ "review": "E(k)=0 only at the zero mode of the 4^3 torus; 1/E is defined on nonzero modes; no defect",
+ "what": "PR #8153 ([physics-loop] admissibility-induced-law block19 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915; git show origin/physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915:<note>. Create probes/work/pr8153/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8153/<script>.py\"",
+ "stdout_sha256": "c32adef1ee7e6294a0a1a543e0250d1dc1670bafc18fbe885314c6de9345099b",
+ "stdout_tail": "4^3 modes: E(0)=0 and E>0 off zero (checked 64)\nSUMMARY: pattern has no purchase on this note \u2014 the same E(k)=0 test holds only at the zero mode of the 4^3 torus, so 1/E(k) is defined exactly on the nonzero modes used by G2/G5\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j26d0",
+  "at_utc": "20260919T030242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

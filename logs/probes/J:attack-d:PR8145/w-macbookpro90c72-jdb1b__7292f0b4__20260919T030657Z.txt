@@ -1,0 +1,6 @@
+N=1: assignments=1
+N=2: assignments=4096
+N=3: assignments=531441
+N=4: assignments=16777216
+N=5: assignments=244140625
+SUMMARY: pattern has no purchase on this note — N^{12} link assignments on the 12-edge cube hold for every N=1..5, including the executed N=2,3

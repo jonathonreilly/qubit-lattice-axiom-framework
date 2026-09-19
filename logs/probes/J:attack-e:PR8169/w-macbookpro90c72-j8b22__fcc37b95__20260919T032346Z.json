@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8169",
+ "type": "judgment",
+ "lane": "frame-attached-four-point-weights-born-a",
+ "worker": "w-macbookpro90c72-j8b22",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8169/sampled_evidence_no_purchase.py",
+ "seed": 88226,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fcc37b95",
+ "started_utc": "20260919T032346Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 four-point masses are exact finite enumerations, not sampling conjectures"
+ },
+ "review": "Pattern (e) has no purchase: four-point masses are exact enumerations, not sampling conjectures",
+ "what": "PR #8169 ([physics-loop] frame-attached four-point weights: Born is no): attack ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916; git show origin/physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916:<note>. Create probes/work/pr8169/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8169/<script>.py\"",
+ "stdout_sha256": "0f422347b1124fca04d30ab12d0d81a923e37fb240cbc7176af4aea0c5fad47b",
+ "stdout_tail": "no sampled never/always claim found that is load-bearing\nSUMMARY: pattern has no purchase on this note \u2014 four-point masses are exact finite enumerations, not sampling conjectures\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8b22",
+  "at_utc": "20260919T032347Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

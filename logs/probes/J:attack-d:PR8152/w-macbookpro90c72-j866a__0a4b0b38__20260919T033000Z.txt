@@ -1,0 +1,3 @@
+|O|=24 (stated 24)
+vectors=126 orbit-size histogram [(6, 12), (8, 16), (12, 24), (24, 74)]
+SUMMARY: pattern has no purchase on this note - every nonzero integer vector in {-2..2}^3 and the named types has octahedral orbit size in {6,8,12,24} with |O|=|orb||stab|=24; the five-sample execution extends

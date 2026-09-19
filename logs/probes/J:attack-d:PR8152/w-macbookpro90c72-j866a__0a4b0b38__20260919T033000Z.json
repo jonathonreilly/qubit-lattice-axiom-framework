@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8152",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block18-menus-",
+ "worker": "w-macbookpro90c72-j866a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8152/quantifier_every_orbit.py",
+ "seed": 88600,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0a4b0b38",
+ "started_utc": "20260919T033000Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - every nonzero integer vector in {-2..2}^3 and the named types has octahedral orbit size in {6,8,12,24} with |O|=|orb||stab|=24; the five-sample execution extends"
+ },
+ "review": "every integer direction in {-2..2}^3 has octahedral orbit size in {6,8,12,24} with |O|=|orb||stab|=24, so M3's universal holds on the stated range and the pattern has no purchase",
+ "what": "PR #8152 ([physics-loop] admissibility-induced-law block18 \u2014 bounded_t): attack ADMISSIBILITY_RULE_MENUS_NEIGHBOUR_GENERATED_SUPPORTS_UNSOLDERED_AND_CUBE_ORBIT_MENUS_SOLDERED_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915; git show origin/physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915:<note>. Create probes/work/pr8152/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8152/<script>.py\"",
+ "stdout_sha256": "46677e87ad51efcf683c7cefbfe4d484e2ce243d720553712c129b0a687f27ec",
+ "stdout_tail": "|O|=24 (stated 24)\nvectors=126 orbit-size histogram [(6, 12), (8, 16), (12, 24), (24, 74)]\nSUMMARY: pattern has no purchase on this note - every nonzero integer vector in {-2..2}^3 and the named types has octahedral orbit size in {6,8,12,24} with |O|=|orb||stab|=24; the five-sample execution extends\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j866a",
+  "at_utc": "20260919T033001Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

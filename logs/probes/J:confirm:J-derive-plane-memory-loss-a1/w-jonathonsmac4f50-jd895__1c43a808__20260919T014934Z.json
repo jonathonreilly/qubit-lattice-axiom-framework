@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-plane-memory-loss-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jd895",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/plane-memory-loss/referee_w-jonathonsmac4f50-jd895/check.py",
+ "seed": 82574,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c43a808",
+ "started_utc": "20260919T014934Z",
+ "elapsed_s": 8.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 2 - 'the linear model does not forget, so a comparison with it cannot prove m_t -> 0' confuses the conserved mean of the zero mode with the magnetization: on the plane the linear transverse variance v_t = sigma^2 sum_{k<t} P_k grows like (3 sqrt3/(4 pi)) log t (exact return sums to t = 256), so the linear magnetization proxy exp(-v_t) tends to 0; the zero mode's random walk is the forgetting mechanism, not an obstruction, and the stated no-go for route (ii) does not follow. Steps 1, 3, 4 hold (phi(0) = 1, the Langevin jet and the sign identity, the mean-field threshold beta = 1)"
+ },
+ "review": "Referee of plane-memory-loss a1 (grok-4.6): independent checks pass 4 of 4 (phi(0) = 1; exact return sums to t = 256 showing the plane's linear variance grows like 0.414 log t, so its magnetization proxy tends to 0; the Langevin jet and the sign identity; the mean-field threshold), so steps 1, 3, 4 hold but the attempt fails at step 2: its no-go ('the linear model does not forget') confuses the zero mode's conserved mean with the magnetization; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:plane-memory-loss:a1/; its files are probes/work/derive/plane-memory-loss/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/plane-memory-loss/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "666e2a4e7fbc9235d8f892d192fa79904205aaafdbbed7a3b729fa8e28d22041",
+ "stdout_tail": "sigma^2 = sum_{k<t} P_k = 1.64609 (t = 4), 2.23853 (t = 16), 2.81659 (t = 64), 3.39103 (t = 256), growing by 0.41437 per unit log t (c0 = 0.4135): v_t -> infinity, so the linear magnetization proxy exp(-v_t) -> 0 and the linear law on the plane forgets its initial direction, through the random walk of the zero mode whose MEAN is conserved; the stated no-go ('the linear model does not forget') does not hold on the plane. In 3D the 7-stencil return sums decay like k^(-3/2) (k^1.5 Q_k = 0.1425, 0.1445, 0.1452 at k = 8, 16, 23), summable, so there the linear proxy stays positive\nPASS: P3 A(k) = k/3 - k^3/45 + 2k^5/945 + O(k^7); 3k cosh k - 3 sinh k - k^2 sinh k = -k^5/15 - k^7/210 + O(k^9); A(3m) = m - (3/5)m^3 + O(m^5); A(k) < k/3 at 500 points of (0, 50]\nPASS: P4 A(3 beta m) <= beta m for beta < 1 (grid), a positive mean-field fixed point at beta = 1.5 (m = 0.675707), 1/sqrt3 < 1\nSUMMARY: fails at step 2 - 'the linear model does not forget, so a comparison with it cannot prove m_t -> 0' confuses the conserved mean of the zero mode with the magnetization: on the plane the linear transverse variance v_t = sigma^2 sum_{k<t} P_k grows like (3 sqrt3/(4 pi)) log t (exact return sums to t = 256), so the linear magnetization proxy exp(-v_t) tends to 0; the zero mode's random walk is the forgetting mechanism, not an obstruction, and the stated no-go for route (ii) does not follow. Steps 1, 3, 4 hold (phi(0) = 1, the Langevin jet and the sign identity, the mean-field threshold beta = 1)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd895",
+  "at_utc": "20260919T014943Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

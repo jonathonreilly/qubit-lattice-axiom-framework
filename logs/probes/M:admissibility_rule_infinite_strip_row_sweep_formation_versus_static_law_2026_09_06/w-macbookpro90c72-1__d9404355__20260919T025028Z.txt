@@ -1,0 +1,120 @@
+== kernel_not_doubly_stochastic
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=36 FAIL=3
+== z2_identity_wrong_power
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=38 FAIL=1
+== path_law_not_formation
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=38 FAIL=1
+== spec_conditional_ignores_exterior
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=33 FAIL=6
+== spec_conditional_two_hop
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=33 FAIL=6
+== spec_face_wrong_subwindow
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=38 FAIL=1
+== row_kernel_formula_wrong_denominator
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== row_kernel_drops_left_neighbor
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=35 FAIL=4
+== invariance_forced_true
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== pair_law_wrong_column
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== direct_strip_law_mismatch
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== asymmetric_control_passes
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== constant_rule_not_uniform
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== three_neighbor_witness_forced
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== orbit_count_wrong
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== quotient_not_commuting
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== charpoly_coefficient_off
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== perron_interval_wrong_root
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=35 FAIL=4
+== eigvec_residual_nonzero
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=36 FAIL=3
+== limit_law_uses_rho_not_squared
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=37 FAIL=2
+== s_inf_enclosure_contains_formation_value
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=36 FAIL=3
+== finite_n_sequence_shuffled
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== second_eigenvalue_bound_too_small
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== boundary_dependence_forged
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=38 FAIL=1
+== restriction_lemma_broken
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=38 FAIL=1
+== claim_order_selected
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1
+== claim_plane_static
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1
+== claim_z3_uniqueness
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1
+== claim_washout
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1
+== claim_gate_fired
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=38 FAIL=1

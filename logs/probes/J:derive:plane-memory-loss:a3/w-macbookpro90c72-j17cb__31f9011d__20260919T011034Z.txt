@@ -1,0 +1,30 @@
+CHECK PASS: L.1 u(0)=0
+CHECK PASS: L.2 u' = k(k cosh - sinh)
+CHECK PASS: L.3 (k cosh-sinh)' = k sinh
+CHECK PASS: L.4 A'(0)=1/3
+CHECK PASS: L.5 A/k at 0 is 1/3
+CHECK PASS: L.6 A/k decreasing: p series k^0..k^5 vanish, then >=0  13*k**10/4725 + 11*k**8/315 + k**6/5
+CHECK PASS: L.7 d/dm A(3 beta m)|_0 = beta
+CHECK PASS: L.8 A(3 beta) <= beta with equality only at 0 in the small-beta series
+CHECK PASS: W.1 1d W1 of z-marginals equals A(k)  0
+CHECK PASS: W.2 W1_R3(uniform, vMF) >= A(k) by projection onto e
+CHECK PASS: W.3 A(k)/k -> 1/3, so the small-field W1 Lip constant is 1/3 not 1/sqrt(3)
+CHECK PASS: W.4 1/sqrt(3) > 1/3
+CHECK PASS: W.5 three-predecessor factor: 3/sqrt(3)=sqrt(3), 3*(1/3)=1
+CHECK PASS: K.1 KL(vMF(k u)||vMF(k u')) = k A(k) (1-u.u')  algebra of exponential family
+CHECK PASS: K.2 1-cos theta = theta^2/2 + O(theta^4)
+CHECK PASS: K.3 leading twist cost (k A(k)/2) theta^2
+CHECK PASS: K.4 total KL of a 1/L twist over T levels is Theta(T), not o(T)
+CHECK PASS: P.1 P_1 = 1/3  1/3
+CHECK PASS: P.2 P_2 = 5/27  5/27
+CHECK PASS: P.3 P_3 = 31/243  31/243
+CHECK PASS: P.4 3 sqrt3/(4 pi) is the local-limit constant of T3  0.41349667156634407
+CHECK PASS: P.5 gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta)
+CHECK PASS: P.6 P_4 = 71/729  71/729
+CHECK PASS: M.1 A(3 beta m) <= beta m with equality only at m=0
+CHECK PASS: M.2 for beta < 1 the mean-field map is a contraction toward 0 on [0,1]
+CHECK PASS: M.3 for beta > 1, m |-> A(3 beta m) has a positive fixed point (mean-field order, fluctuations ignored)
+CHECK PASS: M.4 one-site plane from aligned: m_1=A(3 beta), and S remains 3 m_t e only if the unique site is deterministic — actually S=3 s_t, |S|=3, m_{t+1}=A(3 beta) always, so m_t=A(3 beta)^t
+CHECKS: PASS=27 FAIL=0
+SUMMARY: PARTIAL route (i) twist fails: KL(vMF(k u)||vMF(k u'))=k A(k)(1-u.u') so a 1/L spatial twist costs Theta(T) in path-space relative entropy, not o(T); 1d W1 of z-marginals uniform vs vMF is exactly A(k); small-field W1 Lip is 1/3 (sharp), block 27's 1/sqrt(3) is a variance bound; mean-field m|->A(3 beta m) forgets iff beta<=1; level-walk P_1=1/3, P_2=5/27; linear gamma=(3 sqrt3/(4 pi)) A(3 beta)/(3 beta). Infinite-plane m_t->0 for every beta is not proved: uniqueness is finite-L (block 26 T4) or beta<1/sqrt(3) (block 27). First failing step of a global W1 proof of beta<1: W1(K_V,K_V') <= |V-V'|/3 is not established away from V=0.
+HIT: path-space twist (route i) fails because equal-concentration vMF KL is k A(k)(1-cos theta) and a unit global rotation implemented as a 1/L gradient costs Theta(T) nats, independent of L; the z-marginal 1-Wasserstein between uniform and vMF(k) equals A(k) identically; the sharp small-field W1 Lipschitz constant of the kernel is 1/3, so a W1 causal coupling could reach beta<1 if W1<=|Delta V|/3 held globally (block 27 reaches 1/sqrt(3) via W1<=|Delta V|/sqrt(3)); mean-field forgets iff beta<=1; P_1=1/3, P_2=5/27.

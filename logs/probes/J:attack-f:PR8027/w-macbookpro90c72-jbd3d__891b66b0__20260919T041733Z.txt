@@ -1,0 +1,4 @@
+E J^2=(0+2+0)/36=1/18
+unique geodesic (3,0,0) npaths=1
+ρ(1,1)=1 (stated 1); 2 cos(π/3)=1
+SUMMARY: pattern (f) NORMALIZATION — Haar E J^2=1/18, path L!/(n1!n2!n3!), and ρ(1,1)=2 cos(π/3)=1, ρ(2,1)=√2 all exact; no torus 2π Fourier; attack does not fire

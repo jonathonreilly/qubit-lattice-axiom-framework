@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8027",
+ "type": "judgment",
+ "lane": "static-geodesic-block37-20260907",
+ "worker": "w-macbookpro90c72-jbd3d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8027/normalization_haar_pi.py",
+ "seed": 91453,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "891b66b0",
+ "started_utc": "20260919T041733Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (f) NORMALIZATION \u2014 Haar E J^2=1/18, path L!/(n1!n2!n3!), and \u03c1(1,1)=2 cos(\u03c0/3)=1, \u03c1(2,1)=\u221a2 all exact; no torus 2\u03c0 Fourier; attack does not fire"
+ },
+ "review": "pattern (f) does not fire: Haar 1/18, path L!/(n1!n2!n3!), and rho(1,1)=2 cos(pi/3)=1 all exact; no torus 2pi Fourier",
+ "what": "PR #8027 ([physics-loop] static-geodesic block37 conditional-support): attack GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-geodesic-block37-20260907; git show origin/codex/static-geodesic-block37-20260907:<note>. Create probes/work/pr8027/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8027/<script>.py\"",
+ "stdout_sha256": "9674c4c821ea12d545b5db7deae24e92e52a1c1f2909301741c78c02dc378f62",
+ "stdout_tail": "E J^2=(0+2+0)/36=1/18\nunique geodesic (3,0,0) npaths=1\n\u03c1(1,1)=1 (stated 1); 2 cos(\u03c0/3)=1\nSUMMARY: pattern (f) NORMALIZATION \u2014 Haar E J^2=1/18, path L!/(n1!n2!n3!), and \u03c1(1,1)=2 cos(\u03c0/3)=1, \u03c1(2,1)=\u221a2 all exact; no torus 2\u03c0 Fourier; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jbd3d",
+  "at_utc": "20260919T041734Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

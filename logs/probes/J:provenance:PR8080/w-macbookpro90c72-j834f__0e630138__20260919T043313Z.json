@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8080",
+ "type": "judgment",
+ "lane": "native-stronger-ward-20260910",
+ "worker": "w-macbookpro90c72-j834f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8080/provenance_theorem_numbers.py",
+ "seed": 92393,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e630138",
+ "started_utc": "20260919T043313Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "provenance OK \u2014 11 theorem-statement numbers sourced in the note derivation, runner, or check.py"
+ },
+ "review": "provenance: 11 theorem-statement numbers (h/4, 2\u221a2, fifteen channels, 8\u03b1, \u221a15 bounds, 12/3 s0, ninety terms, tau+2\u03b4) sourced in the note/runner/check.py; none unsourced",
+ "what": "PR #8080 ([physics-loop] Stronger native Ward bounds (conditional-supp): for every number in the theorem statements of NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/native-stronger-ward-20260910; git show origin/codex/native-stronger-ward-20260910:<note>. Create probes/work/pr8080/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8080/<script>.py\"",
+ "stdout_sha256": "e6defd10a52363c5cc090c87f408b561869690b11b19c5f2025e6f642cc58006",
+ "stdout_tail": "ifteen two-link channels carry the disjo\nOK | 2\u221a2 | j = 2\u221a2 h in J_A* J_A = j\u00b2 I | NOTE: Use the original Gaussian reference, D_A=H0+B_A\u2265\u03b4=h/4, R_A=\u2212D_A\u207b\u00b9, g=\u03b30, J_A=2i\u03b3(d_A) and J_A*J_A=j\u00b2I with j=2\u221a2h. The fifteen two-link channels carry the disjo\nOK | 15 | fifteen two-link channels | NOTE: Use the original Gaussian reference, D_A=H0+B_A\u2265\u03b4=h/4, R_A=\u2212D_A\u207b\u00b9, g=\u03b30, J_A=2i\u03b3(d_A) and J_A*J_A=j\u00b2I with j=2\u221a2h. The fifteen two-link channels carry the disjo\nOK | 6 | adjacency T of norm 6 / posterior prefactor 6 | NOTE: Use the original Gaussian reference, D_A=H0+B_A\u2265\u03b4=h/4, R_A=\u2212D_A\u207b\u00b9, g=\u03b30, J_A=2i\u03b3(d_A) and J_A*J_A=j\u00b2I with j=2\u221a2h. The fifteen two-link channels carry the disjo\nOK | 8 | 8\u03b1 = Re(<x,Tx>\u2212<x,Tg v>) | NOTE: 8\u03b1=Re(<x,Tx>\u2212<x,Tg v>),\nOK | \u221a15 | X = \u221a15/\u03b4 and V = j\u221a15/\u03b4\u00b2 | NOTE: Trial vectors are xhat_A=\u2212p_A(D_A)\u03a9 and vhat_A=q_A(D_A)J_Ap_A(D_A)\u03a9. Certified bounds E\u2265||x\u2212xhat|| and F\u2265||v\u2212vhat|| lead to an interval around the unchanged sig\nOK | 12 | 12 s0_P in a\u00b2 | NOTE: a\u00b2=(12s0_P+3s0_O)/(8h\u00b2),\nOK | 3 | 3 s0_O in a\u00b2 | NOTE: a\u00b2=(12s0_P+3s0_O)/(8h\u00b2),\nOK | 90 | ninety ordered terms | NOTE: The completed degree-(2,0) protocol selected two predefined polynomials, recertified their residuals, and retained the full ninety ordered terms. Both outcomes \nOK | 2 | tau+2\u03b4 in A=(tau+2\u03b4)/(\u03b4\u00b2 tau\u00b3) | NOTE: A=(tau+2\u03b4)/(\u03b4\u00b2tau\u00b3),\nOK | 3 | 3 tau \u2212 2\u03bb in Q_tau | NOTE: a\u00b2=(12s0_P+3s0_O)/(8h\u00b2),\nSUMMARY: provenance OK \u2014 11 theorem-statement numbers sourced in the note derivation, runner, or check.py\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j834f",
+  "at_utc": "20260919T043313Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+OK | h/4 | δ = h/4 in D_A ≥ δ | NOTE: Use the original Gaussian reference, D_A=H0+B_A≥δ=h/4, R_A=−D_A⁻¹, g=γ0, J_A=2iγ(d_A) and J_A*J_A=j²I with j=2√2h. The fifteen two-link channels carry the disjo
+OK | 2√2 | j = 2√2 h in J_A* J_A = j² I | NOTE: Use the original Gaussian reference, D_A=H0+B_A≥δ=h/4, R_A=−D_A⁻¹, g=γ0, J_A=2iγ(d_A) and J_A*J_A=j²I with j=2√2h. The fifteen two-link channels carry the disjo
+OK | 15 | fifteen two-link channels | NOTE: Use the original Gaussian reference, D_A=H0+B_A≥δ=h/4, R_A=−D_A⁻¹, g=γ0, J_A=2iγ(d_A) and J_A*J_A=j²I with j=2√2h. The fifteen two-link channels carry the disjo
+OK | 6 | adjacency T of norm 6 / posterior prefactor 6 | NOTE: Use the original Gaussian reference, D_A=H0+B_A≥δ=h/4, R_A=−D_A⁻¹, g=γ0, J_A=2iγ(d_A) and J_A*J_A=j²I with j=2√2h. The fifteen two-link channels carry the disjo
+OK | 8 | 8α = Re(<x,Tx>−<x,Tg v>) | NOTE: 8α=Re(<x,Tx>−<x,Tg v>),
+OK | √15 | X = √15/δ and V = j√15/δ² | NOTE: Trial vectors are xhat_A=−p_A(D_A)Ω and vhat_A=q_A(D_A)J_Ap_A(D_A)Ω. Certified bounds E≥||x−xhat|| and F≥||v−vhat|| lead to an interval around the unchanged sig
+OK | 12 | 12 s0_P in a² | NOTE: a²=(12s0_P+3s0_O)/(8h²),
+OK | 3 | 3 s0_O in a² | NOTE: a²=(12s0_P+3s0_O)/(8h²),
+OK | 90 | ninety ordered terms | NOTE: The completed degree-(2,0) protocol selected two predefined polynomials, recertified their residuals, and retained the full ninety ordered terms. Both outcomes 
+OK | 2 | tau+2δ in A=(tau+2δ)/(δ² tau³) | NOTE: A=(tau+2δ)/(δ²tau³),
+OK | 3 | 3 tau − 2λ in Q_tau | NOTE: a²=(12s0_P+3s0_O)/(8h²),
+SUMMARY: provenance OK — 11 theorem-statement numbers sourced in the note derivation, runner, or check.py

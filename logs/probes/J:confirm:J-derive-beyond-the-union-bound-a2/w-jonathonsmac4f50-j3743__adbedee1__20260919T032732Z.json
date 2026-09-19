@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-beyond-the-union-bound-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j3743",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/beyond-the-union-bound/referee_w-jonathonsmac4f50-j3743/check.py",
+ "seed": 88452,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "adbedee1",
+ "started_utc": "20260919T032732Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed with a scope correction - the child-only kernel and threshold p = 13 are exact as defined; the full pair count moves the threshold to p = 14; the attempt's route fails at its step 5 as it says"
+ },
+ "review": "Beyond-the-union-bound a2's isolated-pair kernel reproduces with independent geometry (7 child fork pairs, P = 1-(1-eps2)^4, mean 4 eps2 + 3 eps2^2, threshold (-2+sqrt7)/3, first p = 13; eroder on 9 base pairs; atom-sum A_r > 10), but counting the child-seed fork pairs (23 in all) gives mean 1.047 at p = 13 and 0.924 at p = 14, so HIT confirmed with that scope correction.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:beyond-the-union-bound:a2/; its files are probes/work/derive/beyond-the-union-bound/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/beyond-the-union-bound/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "b99bd4f34e9237e06ab857799fa602940febf5ff8a362d264d441c6a400b97d8",
+ "stdout_tail": "1: 43/164 > 3/14\nPASS G2: the three predecessors are pairwise forks\nPASS G3: w = [(1, 0, 0)], four amplification children, 7 child fork pairs (4 with w)\nPASS G4: P(some child pair) = 1 - (1-e)^4, mean 4e + 3e^2 (16 patterns); threshold (-2+sqrt7)/3 = 0.21525; first integer p with mean < 1: 13 (d2(12) = 11/47, d2(13) = 45/214)\nPASS G5: counting every next-level fork pair that contains a child (23 pairs): mean 1.0469 at p = 13, 0.9241 at p = 14\nPASS G6: 7 fork pairs among the five predecessors; A_r p = 200: 10.1018, p = 84: 10.2481, p = 13: 12.1766, p = 11: 12.7391; eps -> 0 limit 10\nPASS G7: 9 base fork pairs, each -> one mid 1 and top 0 at eps = 0; 32 of 64 masks force the top\nHIT: confirmed - beyond-the-union-bound a2: the isolated fork-pair kernel of block 30's automaton (one majority child, four amplification children, seven child fork pairs; P(some child pair both 1) = 1 - (1 - eps2)^4, mean 4 eps2 + 3 eps2^2, below 1 iff eps2 < (-2+sqrt7)/3, first at p = 13 on (p,1,2)), the eps = 0 two-step eroder on the depth-2 cone, and the atom-sum no-go (A_r > 10) recomputed with independent geometry. Scope correction: counting also the next-level fork pairs between a child and a seed site (23 pairs in all), the pair mean is 1.0469 at p = 13 and first drops below 1 at p = 14\nSUMMARY: confirmed with a scope correction - the child-only kernel and threshold p = 13 are exact as defined; the full pair count moves the threshold to p = 14; the attempt's route fails at its step 5 as it says\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3743",
+  "at_utc": "20260919T032733Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok beyond-the-union-bound a2): the isolated fork-pair kernel of block 30's automaton, the eps = 0 eroder and the atom-sum no-go reproduce; scope correction: including next-level fork pairs between a child and a seed site moves the pair-mean threshold from p = 13 (children only) to p = 14.",
+  "by": "w-jonathonsmac4f50-j3743",
+  "at_utc": "20260919T032733Z"
+ }
+}

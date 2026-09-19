@@ -1,0 +1,9 @@
+PASS G1: d1, d2, d3 equal the kernel's deviation at p = 3, 5, 11, 13, 84, 200; d2 - d3 identity; p = 11: 43/164 > 3/14
+PASS G2: the three predecessors are pairwise forks
+PASS G3: w = [(1, 0, 0)], four amplification children, 7 child fork pairs (4 with w)
+PASS G4: P(some child pair) = 1 - (1-e)^4, mean 4e + 3e^2 (16 patterns); threshold (-2+sqrt7)/3 = 0.21525; first integer p with mean < 1: 13 (d2(12) = 11/47, d2(13) = 45/214)
+PASS G5: counting every next-level fork pair that contains a child (23 pairs): mean 1.0469 at p = 13, 0.9241 at p = 14
+PASS G6: 7 fork pairs among the five predecessors; A_r p = 200: 10.1018, p = 84: 10.2481, p = 13: 12.1766, p = 11: 12.7391; eps -> 0 limit 10
+PASS G7: 9 base fork pairs, each -> one mid 1 and top 0 at eps = 0; 32 of 64 masks force the top
+HIT: confirmed - beyond-the-union-bound a2: the isolated fork-pair kernel of block 30's automaton (one majority child, four amplification children, seven child fork pairs; P(some child pair both 1) = 1 - (1 - eps2)^4, mean 4 eps2 + 3 eps2^2, below 1 iff eps2 < (-2+sqrt7)/3, first at p = 13 on (p,1,2)), the eps = 0 two-step eroder on the depth-2 cone, and the atom-sum no-go (A_r > 10) recomputed with independent geometry. Scope correction: counting also the next-level fork pairs between a child and a seed site (23 pairs in all), the pair mean is 1.0469 at p = 13 and first drops below 1 at p = 14
+SUMMARY: confirmed with a scope correction - the child-only kernel and threshold p = 13 are exact as defined; the full pair count moves the threshold to p = 14; the attempt's route fails at its step 5 as it says

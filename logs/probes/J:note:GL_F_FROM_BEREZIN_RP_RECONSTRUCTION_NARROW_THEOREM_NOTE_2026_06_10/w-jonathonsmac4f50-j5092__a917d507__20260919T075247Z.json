@@ -1,0 +1,32 @@
+{
+ "task": "J:note:GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026_06_10",
+ "type": "judgment",
+ "lane": "gl",
+ "worker": "w-jonathonsmac4f50-j5092",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARR/wick_os_reconstruction_n4.py",
+ "seed": 4367,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a917d507",
+ "started_utc": "20260919T075247Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: with the OS form computed by Wick determinants of G = [[I, K], [0, I]] (calibrated against a direct Berezin integral), for two SPD integer kernels at each N = 2, 3, 4 (N = 4: 256 monomials, beyond the note's exact sizes) the Gram is PSD with rank 2^N, the null space is invariant under every chi_1x, the reconstructed fields satisfy {psi_x, psi_y} = 0 and {psi_x, psi_y^dag} = (K^-1)_xy I, and the grading equals (-1)^N_hat (True); the commuting-nilpotent branch gives commuting, not anticommuting, cross-site fields (True)"
+ },
+ "review": "Output matches the task (four falsifiers implemented with the OS form computed by Wick determinants of G = [[I,K],[0,I]], calibrated against a direct Berezin integral at N = 2, disjoint from the runner's full-algebra bitmask expansion): for two SPD integer kernels at each N = 2, 3, 4 (N = 4, 256 monomials, beyond the note's exact sizes) the Gram is PSD with rank 2^N, the null space is invariant under every chi_1x (exact block ranks), the fields satisfy {psi_x,psi_y} = 0 and {psi_x,psi_y^dag} = (K^-1)_xy I exactly, the grading equals (-1)^N_hat, and the commuting-nilpotent branch gives commuting cross-site fields; no falsifier fires.",
+ "what": "Note on main: docs/GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARR/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARR/<script>.py\"",
+ "stdout_sha256": "fb8d00a4f767849ba61f61cc5af70ceaf49a2d94b14b5427c6b96e9173f59fe0",
+ "stdout_tail": "[3, -1, 1], [-1, 2, 0], [1, 0, 4]]: {'monomials': 64, 'rank': 8, '2^N': 8, 'PSD': True, 'null space invariant': True, 'occupation Gram PD': True, '{psi,psi}=0': True, '{psi,psi^dag}=Kinv I': True, 'P anticommutes': True, 'P = (-1)^Nhat': True}\nN = 4, K = [[2, 1, 0, 0], [1, 3, 1, 0], [0, 1, 2, 1], [0, 0, 1, 3]]: {'monomials': 256, 'rank': 16, '2^N': 16, 'PSD': True, 'null space invariant': True, 'occupation Gram PD': True, '{psi,psi}=0': True, '{psi,psi^dag}=Kinv I': True, 'P anticommutes': True, 'P = (-1)^Nhat': True}\nN = 4, K = [[4, 1, -1, 0], [1, 3, 0, 1], [-1, 0, 2, 0], [0, 1, 0, 5]]: {'monomials': 256, 'rank': 16, '2^N': 16, 'PSD': True, 'null space invariant': True, 'occupation Gram PD': True, '{psi,psi}=0': True, '{psi,psi^dag}=Kinv I': True, 'P anticommutes': True, 'P = (-1)^Nhat': True}\ncommuting-nilpotent branch (permanents, no signs): cross-site [psi_x, psi_y] = 0 and {psi_x, psi_y} != 0: {2: (True, True), 3: (True, True)}\nSUMMARY: no falsifier fires: with the OS form computed by Wick determinants of G = [[I, K], [0, I]] (calibrated against a direct Berezin integral), for two SPD integer kernels at each N = 2, 3, 4 (N = 4: 256 monomials, beyond the note's exact sizes) the Gram is PSD with rank 2^N, the null space is invariant under every chi_1x, the reconstructed fields satisfy {psi_x, psi_y} = 0 and {psi_x, psi_y^dag} = (K^-1)_xy I, and the grading equals (-1)^N_hat (True); the commuting-nilpotent branch gives commuting, not anticommuting, cross-site fields (True)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5092",
+  "at_utc": "20260919T075248Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

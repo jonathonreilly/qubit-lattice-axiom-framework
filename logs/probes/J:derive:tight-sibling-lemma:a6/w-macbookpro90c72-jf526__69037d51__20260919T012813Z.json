@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:tight-sibling-lemma:a6",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jf526",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/tight-sibling-lemma/w-macbookpro90c72-jf526/check.py",
+ "seed": 81293,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "69037d51",
+ "started_utc": "20260919T012813Z",
+ "elapsed_s": 11.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "ROUTE FAILS AT step (iv) named witnesses: W1, Z_A, Z_B contain processed sites with all-processed 1-predecessors, but those predecessors are never all tight. Z_A's root is tight with three preds at v=-1; Z_B's root is tight with pred values {-1,-1,0}; W1's root has v=-2. No counterexample to the lemma among these configurations. (W2/W3 have multiple seeds, so single-seed DP does not apply.)"
+ },
+ "review": "Route (iv): W1/Z_A/Z_B are not lemma counterexamples; exact single-seed v(W1 root)=-2, v(Z_A root)=0 with preds v=-1, v(Z_B root)=0 with preds {-1,-1,0}; HIT as a new exact negative on the named witnesses.",
+ "what": "DERIVATION, independent attempt 6 of 6: The tight-sibling lemma: the six-axis formation law keeps its memory for p >= 453. OPEN LEMMA of block 33 (PR #8177; setting in blocks 25, 30, 32: PRs #8168, #8174, #8176). Two-level noisy majority automaton in level time on Z^3: a site's three predecessors are z - e_1, z - e_2, z - e_3; seeds S (no 1-predecessor), amplified sites A (exactly one), processed sites (two or more). Counted family of marked explanation trees; rooted value v(z) := min over trees of the family containing z with all nodes at levels <= level(z) of E - 3(|S| - 1) - |A|; a site is TIGHT when v = 0. PROVED there: the extension lemma v(z) <= 1 + v(u) for a 1-predecessor u (amplified z: -1 + v(u)) and the seed lemma v(z) <= v(p) - 1 by a fork placed below the seed's level; the induction v <= 0 closes in every case but one. THE LEMMA: a processed site all of whose 1-predecessors are tight processed sites has a rooted tree of cost at most zero. It is equivalent to the unit budget c* = 1 and would lower the proved ordering threshold on the line (p,1,2) from 4165 to 453. Evidence: no violation in about 10^4 hill-climbed realizations; structural searches found no tight sibling pairs at all. Tools on this branch: probes/lib/family.py (automaton, kinds, trees, exact single-seed DP), probes/lib/rooted.py and mintree.py (integer programs for v and c*), probes/lib/violate.py, tightpairs.py, structural.py (searches). Routes nobody has tried: (i) prove that two tight processed siblings cannot share a processed successor (a local statement about marks in the 2x2x2 cone below z); (ii) a potential-function argument: find a weight on marks that v dominates; (iii) strengthen the induction hypothesis (carry the number of tight predecessors); (iv) a counterexample built by hand from the two-level period of block 31. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/tight-sibling-lemma/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/tight-sibling-lemma/<name>/check.py\"",
+ "stdout_sha256": "2d885dca579692c3f40d47041d9267875f48a75c83d8042464f7c12783184f36",
+ "stdout_tail": " processed 1-preds is negative  -1\nCHECK PASS: ZA.1 single-seed v(root)=0 (tight processed root)  0\nCHECK PASS: ZA.2 root has three processed 1-preds  [(2, 3, 3), (3, 2, 3), (3, 3, 2)]\nCHECK PASS: ZA.3 those preds have v=-1,-1,-1  [Fraction(-1, 1), Fraction(-1, 1), Fraction(-1, 1)]\nCHECK PASS: ZA.4 not a hard case (preds are not tight)\nCHECK PASS: ZA.5 no hard case anywhere in Z_A\nCHECK PASS: ZB.1 single-seed v(root)=0  0\nCHECK PASS: ZB.2 root has three 1-preds, all processed  [(3, 4, 4), (4, 3, 4), (4, 4, 3)]\nCHECK PASS: ZB.3 pred values are {-1,-1,0}  [Fraction(-1, 1), Fraction(-1, 1), Fraction(0, 1)]\nCHECK PASS: ZB.4 exactly one tight processed pred, not all three: not a hard case\nCHECK PASS: ZB.5 no hard case anywhere in Z_B among single-seed-defined v\nCHECKS: PASS=14 FAIL=0\nSUMMARY: ROUTE FAILS AT step (iv) named witnesses: W1, Z_A, Z_B contain processed sites with all-processed 1-predecessors, but those predecessors are never all tight. Z_A's root is tight with three preds at v=-1; Z_B's root is tight with pred values {-1,-1,0}; W1's root has v=-2. No counterexample to the lemma among these configurations. (W2/W3 have multiple seeds, so single-seed DP does not apply.)\nHIT: block 31 W1 and controls Z_A, Z_B are not counterexamples to the tight-sibling lemma: exact single-seed DP gives v(W1 root)=-2; v(Z_A root)=0 with three processed preds each v=-1; v(Z_B root)=0 with pred values {-1,-1,0}. The hard case (every 1-pred tight processed) does not occur on these mark sets.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf526",
+  "at_utc": "20260919T012836Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Named witnesses W1/Z_A/Z_B are not tight-sibling counterexamples; exact single-seed values recorded; new exact negative, not a pattern false positive.",
+  "by": "w-macbookpro90c72-jf526",
+  "at_utc": "20260919T012836Z"
+ }
+}

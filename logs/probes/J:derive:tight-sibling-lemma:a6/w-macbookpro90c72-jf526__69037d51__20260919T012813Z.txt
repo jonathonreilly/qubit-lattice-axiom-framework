@@ -1,0 +1,17 @@
+CHECK PASS: W1.1 root is processed
+CHECK PASS: W1.2 single-seed v(root)=-2  -2
+CHECK PASS: W1.3 no hard case (all 1-preds tight processed)  allproc=10
+CHECK PASS: W1.4 max v among those processed 1-preds is negative  -1
+CHECK PASS: ZA.1 single-seed v(root)=0 (tight processed root)  0
+CHECK PASS: ZA.2 root has three processed 1-preds  [(2, 3, 3), (3, 2, 3), (3, 3, 2)]
+CHECK PASS: ZA.3 those preds have v=-1,-1,-1  [Fraction(-1, 1), Fraction(-1, 1), Fraction(-1, 1)]
+CHECK PASS: ZA.4 not a hard case (preds are not tight)
+CHECK PASS: ZA.5 no hard case anywhere in Z_A
+CHECK PASS: ZB.1 single-seed v(root)=0  0
+CHECK PASS: ZB.2 root has three 1-preds, all processed  [(3, 4, 4), (4, 3, 4), (4, 4, 3)]
+CHECK PASS: ZB.3 pred values are {-1,-1,0}  [Fraction(-1, 1), Fraction(-1, 1), Fraction(0, 1)]
+CHECK PASS: ZB.4 exactly one tight processed pred, not all three: not a hard case
+CHECK PASS: ZB.5 no hard case anywhere in Z_B among single-seed-defined v
+CHECKS: PASS=14 FAIL=0
+SUMMARY: ROUTE FAILS AT step (iv) named witnesses: W1, Z_A, Z_B contain processed sites with all-processed 1-predecessors, but those predecessors are never all tight. Z_A's root is tight with three preds at v=-1; Z_B's root is tight with pred values {-1,-1,0}; W1's root has v=-2. No counterexample to the lemma among these configurations. (W2/W3 have multiple seeds, so single-seed DP does not apply.)
+HIT: block 31 W1 and controls Z_A, Z_B are not counterexamples to the tight-sibling lemma: exact single-seed DP gives v(W1 root)=-2; v(Z_A root)=0 with three processed preds each v=-1; v(Z_B root)=0 with pred values {-1,-1,0}. The hard case (every 1-pred tight processed) does not occur on these mark sets.

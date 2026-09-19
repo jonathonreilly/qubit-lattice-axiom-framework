@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-clauses-in-level-time:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-je0c4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-clauses-in-level-time/w-macbookpro90c72-je0c4/check.py",
+ "seed": 80496,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3811449d",
+ "started_utc": "20260919T011456Z",
+ "elapsed_s": 10.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL sequential all-+x mass is determined by the k-sequence; clocks, opposite-first, joint, and monotone are four distinct cube laws at (3,1,2); only joint/static is order-independent; NEC is the k=3 sequential kernel"
+ },
+ "review": "k-sequence formula gives exact sequential P(all +x); on the cube at (3,1,2) monotone, opposite-first, joint, and uniform clocks are four distinct rationals; only joint is order-independent. HIT is a new exact partial via k-sequences, not full-cube TV.",
+ "what": "DERIVATION, independent attempt 1 of 3: How records form: what each rate and unit clause does to the three-dimensional law. THE AXIOM-LEVEL OPEN QUESTION. 'Records form' is fixed; HOW (order, unit, rate) is not. Blocks 14, 15, 24 (PRs #8148, #8149, #8158) recorded clause candidates with finite witnesses (rate: clocks and the jump chain; unit: sequential against joint formation of connected units; unrecorded sites: free window against integrated exterior), and block 12 (PR #8146) computed the level automaton's exact noise map for the monotone level order. TASK: for each recorded clause candidate, derive the law it induces on Z^3 in the strong-coupling regime and compare: (a) does the law still reduce to a north-east-centre noisy majority automaton in level time, and with which noise parameters (eps_1, eps_2 as functions of (p,q,r))? (b) does the clause change the six invariant laws or the ordering threshold's leading behaviour? (c) is there a clause under which the induced law is independent of the order chosen (an order-independence principle would select the clause)? Deliver exact finite computations on the 2x2x2 cube and the 3x3x2 slab for each clause, and the general statement you can prove from them. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-clauses-in-level-time/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-clauses-in-level-time/<name>/check.py\"",
+ "stdout_sha256": "aa1ee0622d2fd3023456cfec4f396b5b6d518ab2b73c3d8bd700b6ee2e12adf9",
+ "stdout_tail": "ck-neq-mono\nCHECKED E5.clock-neq-joint\nE6.slab-mono k-hist {0: 1, 1: 5, 2: 8, 3: 4}\nCHECKED E6.slab-has-k3\nE6.slab-plane k-hist {0: 2, 1: 3, 2: 9, 3: 4}\nCHECKED E6.slab-order-k-differs: mono={0: 1, 1: 5, 2: 8, 3: 4} plane={0: 2, 2: 9, 1: 3, 3: 4}\nCHECKED E6.slab-allplus-order-dep: mono=94143178827/68428452520263680000 plane=282429536481/222392470690856960000\nCHECKED E7.level-indep-set\nCHECKED E8.k-multiset-determines-allplus: sequential P(all +x) is a function of the k-sequence only\nCHECKS ok=24 fail=0\nHIT: PARTIAL: sequential P(all +x)=prod_i p^{k_i}/(p^{k_i}+q^{k_i}+4 r^{k_i}) exactly; on the 2x2x2 cube at (3,1,2) monotone/corner orders share k-multiset (0,1^3,2^3,3) hence the same P(all +x)=2187/44994560; opposite-corners-first differs; joint/static P(all +x)=59049/775835648 differs from both; uniform-clock mixture over 8! orders differs from monotone and from joint. NEC unanimous/copy kernels are the k=3/k=1 special cases of the same formula. A level is an independent set, so joint-of-a-level = sequential-in-level. The unique order-independent clause on a window with cycles is joint formation of the whole window (static law). 3x3x2 slab: monotone vs centre-first have different k-histograms and different P(all +x). Route: k-sequences, not 6^8 TV.\nSUMMARY: PARTIAL sequential all-+x mass is determined by the k-sequence; clocks, opposite-first, joint, and monotone are four distinct cube laws at (3,1,2); only joint/static is order-independent; NEC is the k=3 sequential kernel\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je0c4",
+  "at_utc": "20260919T011511Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "k-sequence determines sequential P(all +x); four distinct cube masses at (3,1,2); only joint is order-independent. Independent of a2/a3 TV enumerations.",
+  "by": "w-macbookpro90c72-je0c4",
+  "at_utc": "20260919T011511Z"
+ }
+}

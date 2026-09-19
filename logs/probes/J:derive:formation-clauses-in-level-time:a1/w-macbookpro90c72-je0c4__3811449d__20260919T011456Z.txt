@@ -1,0 +1,36 @@
+CHECKED E2.k0
+CHECKED E2.k1
+CHECKED E2.k3-unanimous
+E2.eps_unanimous 11/20 0.55
+CHECKED E2.majority-312: P(+x)=9/26 P(+y)=3/13
+CHECKED E2.majority-fails-132: P(+x)=1/26 P(+y)=1/13
+CHECKED E1.mono-k: (0, 1, 1, 1, 2, 2, 2, 3)
+CHECKED E1.rev-k-same-multiset: (0, 1, 1, 1, 2, 2, 2, 3)
+CHECKED E1.corner0-is-mono
+CHECKED E1.corner1-k-multiset: (0, 1, 1, 1, 2, 2, 2, 3)
+CHECKED E1.opp-different-multiset: (0, 0, 1, 1, 3, 1, 3, 3)
+E1.mono (0, 1, 1, 1, 2, 2, 2, 3) opp (0, 0, 1, 1, 3, 1, 3, 3)
+CHECKED E3.mono-eq-rev-allplus
+CHECKED E3.mono-eq-corner1-allplus
+CHECKED E3.opp-neq-mono-allplus: mono=2187/44994560 opp=81/2048000
+E3.P(all +x) monotone 2187/44994560 4.860587591033227e-05
+E3.P(all +x) opposite-first 81/2048000 3.955078125e-05
+CHECKED E4.n-edges: 12
+CHECKED E4.enumerated-6^8
+E4.P_joint(all +x) 59049/775835648 7.611019183279394e-05 Z 6982520832
+CHECKED E4.joint-neq-mono-allplus: joint=59049/775835648 mono=2187/44994560
+CHECKED E5.8fact
+E5.P_clock(all +x) 338229/7997080000 4.2294062332751454e-05
+E5.n_k-multisets 8
+CHECKED E5.clock-neq-mono
+CHECKED E5.clock-neq-joint
+E6.slab-mono k-hist {0: 1, 1: 5, 2: 8, 3: 4}
+CHECKED E6.slab-has-k3
+E6.slab-plane k-hist {0: 2, 1: 3, 2: 9, 3: 4}
+CHECKED E6.slab-order-k-differs: mono={0: 1, 1: 5, 2: 8, 3: 4} plane={0: 2, 2: 9, 1: 3, 3: 4}
+CHECKED E6.slab-allplus-order-dep: mono=94143178827/68428452520263680000 plane=282429536481/222392470690856960000
+CHECKED E7.level-indep-set
+CHECKED E8.k-multiset-determines-allplus: sequential P(all +x) is a function of the k-sequence only
+CHECKS ok=24 fail=0
+HIT: PARTIAL: sequential P(all +x)=prod_i p^{k_i}/(p^{k_i}+q^{k_i}+4 r^{k_i}) exactly; on the 2x2x2 cube at (3,1,2) monotone/corner orders share k-multiset (0,1^3,2^3,3) hence the same P(all +x)=2187/44994560; opposite-corners-first differs; joint/static P(all +x)=59049/775835648 differs from both; uniform-clock mixture over 8! orders differs from monotone and from joint. NEC unanimous/copy kernels are the k=3/k=1 special cases of the same formula. A level is an independent set, so joint-of-a-level = sequential-in-level. The unique order-independent clause on a window with cycles is joint formation of the whole window (static law). 3x3x2 slab: monotone vs centre-first have different k-histograms and different P(all +x). Route: k-sequences, not 6^8 TV.
+SUMMARY: PARTIAL sequential all-+x mass is determined by the k-sequence; clocks, opposite-first, joint, and monotone are four distinct cube laws at (3,1,2); only joint/static is order-independent; NEC is the k=3 sequential kernel

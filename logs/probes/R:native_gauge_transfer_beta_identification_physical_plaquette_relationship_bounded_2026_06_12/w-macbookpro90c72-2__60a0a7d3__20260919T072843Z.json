@@ -23,14 +23,21 @@
  "stdout_tail": " with beta/3\nPASS: source-sector note supplies only a typed diagonal theorem and excludes a Wilson-compression identification\nPASS: plaquette note states the finite Wilson action and average plaquette object\nPASS: plaquette note fences the 0.5934 value as admitted comparison/reuse\nPASS: Wilson positivity note gives the equivalent beta/(2Nc) character argument\nPASS: exact SU(3) beta identification: beta/3 on ReTr equals beta/(2Nc) on chi+chibar :: (beta/3)*(1/2) = 1/6 = beta/(2Nc) with Nc=3\nPASS: exact half-slice identification: exp((beta/2)J) is half of exp((beta/3)ReTr) :: J coefficient beta/12 per half; two halves give 1/6\nPASS: native beta=6 spectral row is stable across finite shells :: B_8: 0.254417486638136, B_12: 0.254417647457575, B_16: 0.254417647457580\nPASS: native beta=6 row matches the recomputed finite spectral ratio :: lambda1/lambda0=0.254417647457580; lambda0=7.907437924080e+01\nPASS: native diagonal uses c_(p,q)/c_(0,0), not the plaquette local-link c/(d c00) :: max c/c00=1.298078395840; dim(1,1)=8\nPASS: native recurrence matrix is symmetric on the tested dominant-weight box :: symmetry error=0.000e+00\nPASS: fixed-lattice gap notes keep beta=6 gap claims separate from this native spectral row\nPASS: relationship note contains the required status-authority block\nPASS: relationship note states same coupling, different objects, and no physical mass-gap claim\nPASS: relationship note records the no-go discipline gate without overreach phrases\nTOTAL: PASS=16, FAIL=1\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T072844Z",
+  "at_utc": "20260919T073846Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 60a0a7d3 differs from the current HEAD 0103dc4d (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=16, FAIL=1' vs cache 'TOTAL: PASS=17, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, text-guard staleness: the check 'tensor-transfer note states the Wilson coefficient expansion with beta/3' (runner lines 168-172) requires the literal '`exp[(beta/3) Re Tr U] = sum_lambda d_lambda c_lambda(beta) chi_lambda(U),`' in docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md. abfd82d89d (2026-07-18 07:32Z, 'fix: address physics review findings (iteration 1)') removed that expansion from the note and wrote the coefficient as the Haar integral '`c_lambda(beta) = integral_SU(3) chi_lambda(U) exp[(beta/3) Re Tr U] dmu_Haar(U)`'. The runner was last changed at 76e6894541 (05:58Z the same day), and the pinned cache is still PASS=17, FAIL=0. The other 16 checks pass.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073846Z"
  }
 }

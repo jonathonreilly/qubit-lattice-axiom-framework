@@ -1,0 +1,116 @@
+== projector_not_idempotent
+TOTAL: PASS=55 FAIL=2
+mutation_family_expected: B
+mutation_family_observed: B
+== pair_census_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: B
+mutation_family_observed: B
+== rotation_not_transitive
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: B
+mutation_family_observed: B
+== cube_edge_dropped
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: B
+mutation_family_observed: B
+== acyclic_count_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: B
+mutation_family_observed: B
+== order_orientation_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: B
+mutation_family_observed: B
+== monotone_extension_count_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: B
+mutation_family_observed: B
+== lemma_normalizer_dropped
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: C
+mutation_family_observed: C
+== one_neighbour_normalizer_varies
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: C
+mutation_family_observed: C
+== tree_partition_identity_broken
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: C
+mutation_family_observed: C
+== static_partition_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: C
+mutation_family_observed: C
+== census_key_keeps_singletons
+TOTAL: PASS=52 FAIL=5
+mutation_family_expected: D
+mutation_family_observed: D
+== law_count_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: D
+mutation_family_observed: D
+== mixture_weights_uniform_over_multisets
+TOTAL: PASS=52 FAIL=5
+mutation_family_expected: D
+mutation_family_observed: D
+== monotone_uses_upper_neighbours
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: D
+mutation_family_observed: D
+== cube_census_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: D
+mutation_family_observed: D
+== spread_zero_claimed
+TOTAL: PASS=55 FAIL=2
+mutation_family_expected: D
+mutation_family_observed: D
+== exchange_holds_claimed
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: D
+mutation_family_observed: D
+== constant_rule_defect_claimed
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: D
+mutation_family_observed: D
+== rect_distance_forged
+TOTAL: PASS=55 FAIL=2
+mutation_family_expected: D
+mutation_family_observed: D
+== binary_coupling_forged
+TOTAL: PASS=54 FAIL=3
+mutation_family_expected: E
+mutation_family_observed: E
+== ends_first_order_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: E
+mutation_family_observed: E
+== opposite_corners_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: E
+mutation_family_observed: E
+== corners_first_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: E
+mutation_family_observed: E
+== binary_law_count_forged
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: E
+mutation_family_observed: E
+== claim_all_orders_same_law
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: F
+mutation_family_observed: F
+== claim_order_selected
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: F
+mutation_family_observed: F
+== claim_mixture_is_law
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: F
+mutation_family_observed: F
+== float_literal_present
+TOTAL: PASS=56 FAIL=1
+mutation_family_expected: F
+mutation_family_observed: F

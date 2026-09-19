@@ -1,0 +1,6 @@
+|e^{iθ}-1|^2 = 2(1-cos θ) identically: True
+r(λ) (λ+2-√(λ(λ+4)))/2 is the decaying root: True
+λ is the same scalar for all three orientations: True
+single-axis currents: |ρ̂|^2 ≤ λ||η̂||^2 on L=4,6 grids: True
+temporal Green g_λ is scalar in orientation (same g for every axis): True
+SUMMARY: pattern has no purchase on this note: the same λ, r(λ), Cauchy–Schwarz, and scalar Hodge-Green tests hold for every axis orientation as written

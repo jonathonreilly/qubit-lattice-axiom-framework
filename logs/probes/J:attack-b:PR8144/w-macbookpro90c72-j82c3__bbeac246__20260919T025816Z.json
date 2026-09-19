@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8144",
+ "type": "judgment",
+ "lane": "static-charge-transfer-sector-20260915",
+ "worker": "w-macbookpro90c72-j82c3",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8144/same_test_orientations_r.py",
+ "seed": 86696,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bbeac246",
+ "started_utc": "20260919T025816Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the same \u03bb, r(\u03bb), Cauchy\u2013Schwarz, and scalar Hodge-Green tests hold for every axis orientation as written"
+ },
+ "review": "Same \u03bb, r(\u03bb), CS, and scalar Hodge-Green tests hold for every axis orientation; pattern has no purchase",
+ "what": "PR #8144 ([physics-loop] static-charge-transfer-sector: bounded_theore): attack FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/static-charge-transfer-sector-20260915; git show origin/physics-loop/static-charge-transfer-sector-20260915:<note>. Create probes/work/pr8144/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8144/<script>.py\"",
+ "stdout_sha256": "d52b3f6ead4fb27abc4f3044a7053968fa63bfa7ffdb2e22c6cb8786dedadfcb",
+ "stdout_tail": "|e^{i\u03b8}-1|^2 = 2(1-cos \u03b8) identically: True\nr(\u03bb) (\u03bb+2-\u221a(\u03bb(\u03bb+4)))/2 is the decaying root: True\n\u03bb is the same scalar for all three orientations: True\nsingle-axis currents: |\u03c1\u0302|^2 \u2264 \u03bb||\u03b7\u0302||^2 on L=4,6 grids: True\ntemporal Green g_\u03bb is scalar in orientation (same g for every axis): True\nSUMMARY: pattern has no purchase on this note: the same \u03bb, r(\u03bb), Cauchy\u2013Schwarz, and scalar Hodge-Green tests hold for every axis orientation as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j82c3",
+  "at_utc": "20260919T025817Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

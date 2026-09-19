@@ -1,0 +1,7 @@
+L=1 cells=1
+L=2 cells=8
+L=3 cells=27
+L=4 cells=64
+L=5 cells=125
+L=6 cells=216
+SUMMARY: pattern has no purchase on this note — |Lambda|=L^3 holds for every L=1..6 of the finite cubic family

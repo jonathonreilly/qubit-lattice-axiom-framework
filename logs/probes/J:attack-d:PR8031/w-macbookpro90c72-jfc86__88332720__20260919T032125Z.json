@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8031",
+ "type": "judgment",
+ "lane": "finite-transporter-block41-20260907",
+ "worker": "w-macbookpro90c72-jfc86",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8031/quantifier_L_cells.py",
+ "seed": 88085,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "88332720",
+ "started_utc": "20260919T032125Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 |Lambda|=L^3 holds for every L=1..6 of the finite cubic family"
+ },
+ "review": "L^3 cell counts hold for L=1..6; no quantifier-scope defect",
+ "what": "PR #8031 ([physics-loop] finite-transporter block41 conditional-suppor): attack GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-transporter-block41-20260907; git show origin/codex/finite-transporter-block41-20260907:<note>. Create probes/work/pr8031/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8031/<script>.py\"",
+ "stdout_sha256": "33d4744a57b4327143822581c5b989c47174dc851b0d5fc09883bab041dd18b3",
+ "stdout_tail": "L=1 cells=1\nL=2 cells=8\nL=3 cells=27\nL=4 cells=64\nL=5 cells=125\nL=6 cells=216\nSUMMARY: pattern has no purchase on this note \u2014 |Lambda|=L^3 holds for every L=1..6 of the finite cubic family\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jfc86",
+  "at_utc": "20260919T032125Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

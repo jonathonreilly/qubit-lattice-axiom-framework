@@ -23,14 +23,21 @@
  "stdout_tail": "A PASS explicit SU(2)^3 paths endpoint/unitarity worst_err=6.281e-16\nB PASS N=24 T=6 sectors=[-3, -2, -1, 0, 1, 2, 3] min_link_weight=6.738e-03 adjacent=(-3, -2) conjugation_pairing=True\nC FAIL admitted_thetas_from_positive_masses=[0.0] (360-point grid) fake_recovered_thetas=[] nonreal_fake=True\nD PASS mixed_parity=True even_sector=-2 odd_sector=-3 native_mass=2.245830e-12 pi_weighted_value=-2.245830e-12\nH PASS relative_even=[0.0, 3.14159265359] relative_odd=[0.0, 3.14159265359] relative_mixed=[0.0] exact_odd=[0.0] singleton_all_alias=True\nE PASS coarse_nonnegative=True coarse_equals_fine=True weak_T_windows=[[-1, 0, 1], [-2, -1, 0, 1, 2], [-3, -2, -1, 0, 1, 2, 3]] tv_to_delta0=['1.350e-04', '7.842e-06', '4.049e-07']\nF PASS N=6 links=3 ticks=3 min_plaquette=2.466e-01 min_transfer=1.320e-01 conjugation=True sectors=[-3, -2, -1, 0, 1, 2, 3]\nG PASS missing=[] banned=[] bad_md_targets=[]\nSUMMARY PASS=7 FAIL=1\nDONE\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T062734Z",
+  "at_utc": "20260919T064400Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 82bb3c2b differs from the current HEAD ea8bdd53 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=7 FAIL=1' vs cache 'PASS=8 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Platform floating point (Darwin arm64): check C's positive control fake_rep_exists tests abs(m_tilde_q.imag) > 1e-10 on masses up to 6.48e11; CPython's complex multiply round trip leaves an imaginary residue of 1.1e-5 to 2.9e-5 here, where plain float products give 0.0. The runner is unchanged since the cache (60b5ca3729). PASS=7 FAIL=1.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064400Z"
  }
 }

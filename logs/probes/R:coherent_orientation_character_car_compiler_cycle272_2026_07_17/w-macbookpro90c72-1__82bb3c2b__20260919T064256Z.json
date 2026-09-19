@@ -20,13 +20,20 @@
  "stdout_tail": "nk': 5, 'repetition_group_frame_span_failures': 0, 'logical_leakage': 0, 'maximum_orientation_route': 4, 'one_carrier_total_M2_per_cell': 25, 'two_carrier_total_M2_per_cell': 31}\nPASS all carrier constraint families are translation covariant but no route supplies bounded parity/Wilson preparation :: {'sizes': [{'L': 3, 'translation_failures': 0, 'Wilson_increment': 3, 'maximum_Wilson_support': 21, 'cat_depth_lower_bound': 2}, {'L': 4, 'translation_failures': 0, 'Wilson_increment': 3, 'maximum_Wilson_support': 28, 'cat_depth_lower_bound': 3}, {'L': 5, 'translation_failures': 0, 'Wilson_increment': 3, 'maximum_Wilson_support': 35, 'cat_depth_lower_bound': 3}, {'L': 6, 'translation_failures': 0, 'Wilson_increment': 3, 'maximum_Wilson_support': 42, 'cat_depth_lower_bound': 5}], 'bounded_preparation': False, 'arbitrary_coherent_parity_input': 'not encoded'}\nPASS actual Cycle-230 gates and mass/rank-73 seam remain gated by the surviving parity/preparation walls :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'common_full_Fock_E': False, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'mass_and_rank73_seam_intertwining': 'not claimed'}\nPASS the 3D frame character and coherent carriers are not physical time or Records :: {'3D_frame_character_is_spatial_structure_not_physical_time': True, 'orientation_carriers': 'coherent code data, not Records', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 9 FAIL 1\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T064301Z",
+  "at_utc": "20260919T064400Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 82bb3c2b differs from the current HEAD ea8bdd53 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL the Cycle-272 note exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064400Z"
  }
 }

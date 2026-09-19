@@ -23,14 +23,21 @@
  "stdout_tail": "utcome-is-the-K/CPT-orbit quote present\n[PASS] (13) B-check: both flow notes' maps are present in their sources\n[PASS] (14) B-check: firewall sentences present  [cannot by itself discriminate, sharpening, not a correction, the occupancy binary stays open]\n[PASS] (15) B-check: positive closing language absent\n[PASS] (16) B-check: markdown link inventory is exactly the three dependency links  [links=[('`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md`', 'FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md'), ('`FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`', 'FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md'), ('`MINIMAL_AXIOMS_2026-06-05.md`', 'MINIMAL_AXIOMS_2026-06-05.md')]]\n[PASS] (17) B-check: companions are backticked context only, not markdown-linked\n[PASS] (18) B-check: canonical front matter and No-promotion statement present\n[PASS] (19) B-check: Boundary contains the required does-NOT clauses\n[FAIL] (20) B-check: note, runner, and cache are the only touched files in this spec path set\n[PASS] (21) B-check: Record guardrail states supplied-context and no-weight/no-occupancy boundary\n[PASS] (22) B-check: tri-guise language is supplied-label scoped\n==============================================================================\nTOTAL: PASS=21 FAIL=1\nSUMMARY: conditioned flow selects x*=1; dictionary choice maps that invariant selection to r=1/2 or r=1.\n==============================================================================\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T062756Z",
+  "at_utc": "20260919T064400Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 82bb3c2b differs from the current HEAD ea8bdd53 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=21 FAIL=1' vs cache 'TOTAL: PASS=22 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, not reproducible from any committed tree: check 20 ('B-check: note, runner, and cache are the only touched files in this spec path set', runner lines 319-340) runs `git status --short` on the note, runner and cache and passes only if all three show as new or modified (??, A, AM, M). The pinned cache (e7899bd853, 2026-06-13; runner and cache unchanged since) records the pre-commit authoring state '[AM docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md; A  logs/runner-cache/...; AM scripts/...]'. On any clean checkout of main the three files are committed, git status prints nothing, and the check fails, so the pinned PASS=22 cannot be re-derived. The other 21 checks, including the conditioned-flow selection x*=1 and the dictionary map to r=1/2 or r=1, pass as cached.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064400Z"
  }
 }

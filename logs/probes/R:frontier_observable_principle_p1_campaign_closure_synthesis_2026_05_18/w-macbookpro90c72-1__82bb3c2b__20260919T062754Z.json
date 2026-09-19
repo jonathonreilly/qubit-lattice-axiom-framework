@@ -23,14 +23,21 @@
  "stdout_tail": "esponse steelman check\n======================================================================\nPASS: T6.1 Additivity \u21d2 locality of source response (forward)\nPASS: T6.2 Locality of source response \u21d2 additivity (reverse)\nPASS: T6.3 Locality steelman is Pattern L circularity\n\n======================================================================\nT7 \u2014 Path (a) requirements for a future retained primitive\n======================================================================\n  - Excludes F_p for p \u2260 0 without invoking log (avoids Pattern L D5)\n  - Operates on r = |Z| > 0 scalar functionals (avoids Pattern D D4)\n  - Derivable from existing retained primitives (no new axiom)\n  - Survives independent audit ratification\nPASS: T7 Path (a) requirements catalogued\nPASS: T7 No Path (a) candidate identified in current portfolio\n\n======================================================================\nT8 \u2014 Source-note boundary check\n======================================================================\nFAIL: T8 Source note exists -- missing path: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md\n\n======================================================================\nPASS=34  FAIL=1\n======================================================================\n\nFailures:\n  - T8 Source note exists: missing path: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T062754Z",
+  "at_utc": "20260919T064400Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 82bb3c2b differs from the current HEAD ea8bdd53 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=34  FAIL=1' vs cache 'PASS=40  FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): only failure is 'T8 Source note exists -- missing path: docs/OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md'; the note is now at archive/notes/docs/ (0b6129121f). The other 34 checks pass.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064400Z"
  }
 }

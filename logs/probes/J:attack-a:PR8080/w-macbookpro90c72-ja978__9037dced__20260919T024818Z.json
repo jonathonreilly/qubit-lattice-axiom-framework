@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8080",
+ "type": "judgment",
+ "lane": "native-stronger-ward-20260910",
+ "worker": "w-macbookpro90c72-ja978",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8080/fifteen_two_link_channels.py",
+ "seed": 86098,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9037dced",
+ "started_utc": "20260919T024818Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "WITNESS REALIZABILITY (PR #8080): the fifteen two-link channels match C(6,2) unordered pairs of Z^3 NN directions, each a 2-star not a triangle; pattern has purchase and the witnesses exist as written"
+ },
+ "review": "Fifteen two-link channels are C(6,2) NN-direction pairs, each a 2-star not a triangle; witnesses exist as written.",
+ "what": "PR #8080 ([physics-loop] Stronger native Ward bounds (conditional-supp): attack NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-stronger-ward-20260910; git show origin/codex/native-stronger-ward-20260910:<note>. Create probes/work/pr8080/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8080/<script>.py\"",
+ "stdout_sha256": "5073c85402c8d5995bb6fd08d6d4ff16b5b8b9ae6acfa7e42c2b63efb7d875ab",
+ "stdout_tail": "NN directions=6 unordered pairs=15 stated 15\ntwo-link stars that are triangles: 0\nSUMMARY: WITNESS REALIZABILITY (PR #8080): the fifteen two-link channels match C(6,2) unordered pairs of Z^3 NN directions, each a 2-star not a triangle; pattern has purchase and the witnesses exist as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja978",
+  "at_utc": "20260919T024818Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

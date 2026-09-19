@@ -1,0 +1,3 @@
+NN directions=6 unordered pairs=15 stated 15
+two-link stars that are triangles: 0
+SUMMARY: WITNESS REALIZABILITY (PR #8080): the fifteen two-link channels match C(6,2) unordered pairs of Z^3 NN directions, each a 2-star not a triangle; pattern has purchase and the witnesses exist as written

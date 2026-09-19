@@ -1,0 +1,1 @@
+SUMMARY: SAMPLED EVIDENCE (PR #8079): the Ward residual bounds, certificate-family exclusion, and fifth-half-moment supplier are exact identities plus a reused Gauss26 census (1742 nodes), not a sampled never/always; pattern has no purchase

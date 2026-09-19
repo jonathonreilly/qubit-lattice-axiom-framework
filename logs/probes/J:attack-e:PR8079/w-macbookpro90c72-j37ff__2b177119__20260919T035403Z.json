@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8079",
+ "type": "judgment",
+ "lane": "native-finite-moment-ward-20260910",
+ "worker": "w-macbookpro90c72-j37ff",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8079/no_sampled_never.py",
+ "seed": 90043,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2b177119",
+ "started_utc": "20260919T035403Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8079): the Ward residual bounds, certificate-family exclusion, and fifth-half-moment supplier are exact identities plus a reused Gauss26 census (1742 nodes), not a sampled never/always; pattern has no purchase"
+ },
+ "review": "SAMPLED EVIDENCE has no purchase: Ward residuals and the Gauss26 catalog are exact/censused, not a sampled never/always.",
+ "what": "PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p bo): attack NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-finite-moment-ward-20260910; git show origin/codex/native-finite-moment-ward-20260910:<note>. Create probes/work/pr8079/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8079/<script>.py\"",
+ "stdout_sha256": "b903d1e2d6213edb25ce37994484210cdcdd891c6f092195ce02c734495de96e",
+ "stdout_tail": "SUMMARY: SAMPLED EVIDENCE (PR #8079): the Ward residual bounds, certificate-family exclusion, and fifth-half-moment supplier are exact identities plus a reused Gauss26 census (1742 nodes), not a sampled never/always; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j37ff",
+  "at_utc": "20260919T035408Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

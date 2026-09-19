@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8169",
+ "type": "judgment",
+ "lane": "frame-attached-four-point-weights-born-a",
+ "worker": "w-macbookpro90c72-j103b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8169/attack_a_path3_fourpoint.py",
+ "seed": 85847,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "404dad44",
+ "started_utc": "20260919T024407Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (a) WITNESS REALIZABILITY \u2014 three-site NN paths exist in Z^3 and are triangle-free; the orthogonal four-point set S={q,q',\u2212q,\u2212q'} is four distinct points; the bisector 180\u00b0 rotation preserves S; Gibbs \u03b1=1/3, \u03b3=1/6 at e^{2\u03b2}=2; Born values sum to 2; chain vs ends-first supports have 2 vs 4 points; 0 failures; attack does not fire"
+ },
+ "review": "Pattern (a): 3-site Z^3 paths are triangle-free, the four-point S^2 menu and bisector 180 exist, Gibbs 1/3-1/6 and Born sum 2 hold; attack does not fire",
+ "what": "PR #8169 ([physics-loop] frame-attached four-point weights: Born is no): attack ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916; git show origin/physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916:<note>. Create probes/work/pr8169/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8169/<script>.py\"",
+ "stdout_sha256": "4755de101011fd0f5a37cf38037aa7513c5790ec5f370f9946fa6495ae838621",
+ "stdout_tail": "OK: three-site paths (straight and bent) exist in Z^3; ends are not NN (no triangle)\nOK: orthogonal q,q' give four distinct points {q,q',\u2212q,\u2212q'}\nOK: 180\u00b0 about the bisector of (e1,e2) swaps q\u2194q' and \u2212q\u2194\u2212q', preserving S\nOK: pair-Gibbs at t=0, e^{2\u03b2}=2 has copy mass 1/3 and flip mass 1/6\nOK: Born overlap on S is (1, 1/2, 0, 1/2) summing to 2, not a four-point law\nOK: chain order gives the middle a 2-point antipodal support; ends-first a 4-point support\nSUMMARY: pattern (a) WITNESS REALIZABILITY \u2014 three-site NN paths exist in Z^3 and are triangle-free; the orthogonal four-point set S={q,q',\u2212q,\u2212q'} is four distinct points; the bisector 180\u00b0 rotation preserves S; Gibbs \u03b1=1/3, \u03b3=1/6 at e^{2\u03b2}=2; Born values sum to 2; chain vs ends-first supports have 2 vs 4 points; 0 failures; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j103b",
+  "at_utc": "20260919T024407Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

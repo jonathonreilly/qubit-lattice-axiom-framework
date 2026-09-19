@@ -1,0 +1,6 @@
+PASS P1: (A/k)' = -g/k^3 (True); g = n(2k)/(4 sinh^2 k) (True); n(0..3)(0) = [0, 0, 0, 0], n'''' = u sinh u (True); limits 1/3, 0; A/k decreasing at 41 points in (0, 50] (True)
+PASS P2: A = -k**3/45 + k/3 + O(k^5): slope n beta/3 at m = 0, threshold beta = 3/n = 3/4 at n = 4
+PASS P3: H = [[3/8, -1/8, -1/8], [-1/8, 3/8, -1/8], [-1/8, -1/8, 3/8]]; M eigenvalues {1/16: 1, 1/4: 2} ((1,1,1) carries 1/16), det M = 1/256; grad Im phi = [-1/4, -1/4, -1/4]
+PASS P4: G_4 = 1913/1344 (63 nonzero modes; weights from 1 to 8/3)
+HIT: confirmed - formation-in-3plus1 a2: A(k)/k strictly decreasing from 1/3 to 0 by the n(u) route (g = n(2k)/(4 sinh^2 k), n and its first three derivatives vanish at 0, n'''' = u sinh u), mean-field threshold 3/4 at n = 4, 1 - |phi|^2 = k^T M k + O(k^4) with M eigenvalues 1/16 along (1,1,1) and 1/4 twice (det 1/256), drift (1,1,1)/4, and G_4 = 1913/1344 on (Z/4)^3, all recomputed independently; the attempt states correctly that sphere LRO on Z^4 is not proved
+SUMMARY: confirmed - no failing step in (i)-(iv); the monotonicity of A/k was already known (block 27, by series) and is re-proved here by a different route

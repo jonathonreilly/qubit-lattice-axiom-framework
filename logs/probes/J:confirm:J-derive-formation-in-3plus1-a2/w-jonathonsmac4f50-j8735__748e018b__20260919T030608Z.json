@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-in-3plus1-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j8735",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-in-3plus1/referee_w-jonathonsmac4f50-j8735/check.py",
+ "seed": 87168,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "748e018b",
+ "started_utc": "20260919T030608Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step in (i)-(iv); the monotonicity of A/k was already known (block 27, by series) and is re-proved here by a different route"
+ },
+ "review": "Formation-in-3plus1 a2's four claims reproduce with independent code (A/k decreasing via g = n(2k)/(4 sinh^2 k) with n(0..3)(0) = 0 and n'''' = u sinh u, limits 1/3 and 0; MF threshold 3/4; M eigenvalues 1/16 along (1,1,1) and 1/4 twice, det 1/256; G_4 = 1913/1344 exact), and the attempt correctly leaves sphere LRO open, so HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-in-3plus1:a2/; its files are probes/work/derive/formation-in-3plus1/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-in-3plus1/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "1fc0f8a09bbcb871cc17cb760353b532bf7b508bc220613bfbe4ba02833d0114",
+ "stdout_tail": "PASS P1: (A/k)' = -g/k^3 (True); g = n(2k)/(4 sinh^2 k) (True); n(0..3)(0) = [0, 0, 0, 0], n'''' = u sinh u (True); limits 1/3, 0; A/k decreasing at 41 points in (0, 50] (True)\nPASS P2: A = -k**3/45 + k/3 + O(k^5): slope n beta/3 at m = 0, threshold beta = 3/n = 3/4 at n = 4\nPASS P3: H = [[3/8, -1/8, -1/8], [-1/8, 3/8, -1/8], [-1/8, -1/8, 3/8]]; M eigenvalues {1/16: 1, 1/4: 2} ((1,1,1) carries 1/16), det M = 1/256; grad Im phi = [-1/4, -1/4, -1/4]\nPASS P4: G_4 = 1913/1344 (63 nonzero modes; weights from 1 to 8/3)\nHIT: confirmed - formation-in-3plus1 a2: A(k)/k strictly decreasing from 1/3 to 0 by the n(u) route (g = n(2k)/(4 sinh^2 k), n and its first three derivatives vanish at 0, n'''' = u sinh u), mean-field threshold 3/4 at n = 4, 1 - |phi|^2 = k^T M k + O(k^4) with M eigenvalues 1/16 along (1,1,1) and 1/4 twice (det 1/256), drift (1,1,1)/4, and G_4 = 1913/1344 on (Z/4)^3, all recomputed independently; the attempt states correctly that sphere LRO on Z^4 is not proved\nSUMMARY: confirmed - no failing step in (i)-(iv); the monotonicity of A/k was already known (block 27, by series) and is re-proved here by a different route\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8735",
+  "at_utc": "20260919T030609Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok formation-in-3plus1 a2): A(k)/k strictly decreasing by a new route (n(u) = u^2 + u sinh u - 4 cosh u + 4, four vanishing derivatives, n'''' = u sinh u), mean-field threshold 3/4 at n = 4, the metric M (eigenvalues 1/16, 1/4, 1/4) and G_4 = 1913/1344 all hold; monotonicity was already known from block 27 by series.",
+  "by": "w-jonathonsmac4f50-j8735",
+  "at_utc": "20260919T030609Z"
+ }
+}

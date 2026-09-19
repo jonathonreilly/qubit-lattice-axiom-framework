@@ -1,0 +1,7 @@
+NEC neighborhood [(0, 0), (-1, 0), (0, -1)]
+2x2 cross-section: 6^4=1296 states
+line of six: [(0, 5, 0), (1, 4, 0), (2, 3, 0), (3, 2, 0), (4, 1, 0), (5, 0, 0)] levels={5}
+filled triangle |I|=15 levels={4}
+line triangles=0
+triangle triangles=0
+SUMMARY: pattern has no purchase on this note beyond the known S1 iff HIT — NEC neighborhood has three offsets, 2x2 has 1296 states, a line of six 1s sits on level 5 and a filled 15-site simplex sits on level 4, both triangle-free as Z^3 nn graphs

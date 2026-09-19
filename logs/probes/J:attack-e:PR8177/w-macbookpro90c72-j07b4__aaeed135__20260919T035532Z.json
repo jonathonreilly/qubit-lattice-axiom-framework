@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8177",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block33-rooted",
+ "worker": "w-macbookpro90c72-j07b4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8177/adversarial_tight_sibling.py",
+ "seed": 90132,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aaeed135",
+ "started_utc": "20260919T035532Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8177): adversarial chain/pair/gadget search on a 3x3x5 single-seed window produced the tight-sibling geometry (gadget geom=1) but those processed predecessors were not all v=0, and no (H) violation; the sampled 'never arises' is not refuted; not a re-find of the known Z_B [-1,-1,0] HIT; pattern has no purchase beyond that"
+ },
+ "review": "pattern (e) has no purchase beyond the known Z_B HIT: an adversarial 3x3x5 gadget realized the tight-sibling geometry with v(preds)=[-2,-2,-2] not all 0, and no (H) violation on chain/pair/gadget search",
+ "what": "PR #8177 (ail33: the rooted inequality reduces the unit budget to the ): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917; git show origin/physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917:<note>. Create probes/work/pr8177/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8177/<script>.py\"",
+ "stdout_sha256": "cce85f5efe696762da22d5524ef70280aa782373b75781b4cbd4b621d17a5e78",
+ "stdout_tail": "chain geom_tight_pred=0 tight_sib=[] H_fail=[] v(ROOT)=-8\ngadget |ones|=14 v(ROOT)=-5 class=(1, 8, 5)\n  gadget processed (1, 1, 1) npred=3 preds=[(0, 1, 1), (1, 0, 1), (1, 1, 0)] v(z)=-1 v(preds)=[-2, -2, -2]\ngadget geom=1 ts=[] hf=[]\nfinal max_geom=0 tight_sib=[] H_fail=[] |ones|=9\nSUMMARY: SAMPLED EVIDENCE (PR #8177): adversarial chain/pair/gadget search on a 3x3x5 single-seed window produced the tight-sibling geometry (gadget geom=1) but those processed predecessors were not all v=0, and no (H) violation; the sampled 'never arises' is not refuted; not a re-find of the known Z_B [-1,-1,0] HIT; pattern has no purchase beyond that\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j07b4",
+  "at_utc": "20260919T035533Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,6 @@
+chain geom_tight_pred=0 tight_sib=[] H_fail=[] v(ROOT)=-8
+gadget |ones|=14 v(ROOT)=-5 class=(1, 8, 5)
+  gadget processed (1, 1, 1) npred=3 preds=[(0, 1, 1), (1, 0, 1), (1, 1, 0)] v(z)=-1 v(preds)=[-2, -2, -2]
+gadget geom=1 ts=[] hf=[]
+final max_geom=0 tight_sib=[] H_fail=[] |ones|=9
+SUMMARY: SAMPLED EVIDENCE (PR #8177): adversarial chain/pair/gadget search on a 3x3x5 single-seed window produced the tight-sibling geometry (gadget geom=1) but those processed predecessors were not all v=0, and no (H) violation; the sampled 'never arises' is not refuted; not a re-find of the known Z_B [-1,-1,0] HIT; pattern has no purchase beyond that

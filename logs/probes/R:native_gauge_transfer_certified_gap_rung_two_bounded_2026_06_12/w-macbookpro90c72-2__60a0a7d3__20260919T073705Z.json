@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py",
+ "seed": 3425,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T073705Z",
+ "elapsed_s": 13.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fdadf0713f4bcc87badb5315353f985956eb1cc7e106c7047082b9d669518c7e",
+ "stdout_tail": "857100 | tail_margin=0.041831857100 | certified=yes | block=(1, 0) | tail=(5, 0)\nbeta=  23/5 | upper=0.981242286148 | gap=0.018757713852 | tail_margin=0.018757713852 | certified=yes | block=(1, 0) | tail=(5, 0)\nbeta=117/25 | upper=0.999658318050 | gap=0.000341681950 | tail_margin=0.000341681950 | certified=yes | block=(1, 0) | tail=(5, 0)\nbeta=469/100 | upper=1.001957464152 | gap=-0.001957464152 | tail_margin=-0.001957464152 | certified=no | block=(1, 0) | tail=(5, 0)\nPASS: new certificate keeps the rung-one check points inside lambda1/lambda0 <= (2/3) beta\n      checked beta=1/10, 1/2, 1 with exact-rational upper bounds\nPASS: requested beta grid through beta=4 is certified\n      checked beta=5/4, 3/2, 2, 5/2, 3, 7/2, 4\nPASS: declared extension-grid frontier is certified and the next probe is not\n      frontier beta=117/25 gap=0.000341681949973; next beta=469/100 gap=-0.001957464152000\nPASS: float coefficient eigenvalues lie inside every certified block interval\n      checked all 24 nontrivial block weights for certified rows\nPASS: half-slice 25-state float ratios stay below one on certified rows\n      diagnostic only; not used as the full-operator certificate\nPASS: note contains scope, status-authority, table, frontier, and runner markers\n      checked required note markers\nPASS: one-hop authorities are present as markdown links\n      checked authority-link forms\nPASS: note avoids overreach phrases banned for this lane\n      scanned banned phrase set\n\nTOTAL: PASS=11, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073719Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:native_gauge_transfer_full_top_second_order_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_full_top_second_order_2026_09_07.py",
+ "seed": 3452,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T073732Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f2880d5fa7fafc8ed7ff63cca7aeb850f9bd45d0a3a2dc9bad3427f595add5d3",
+ "stdout_tail": "PASS full-top symbolic certificate: 22 actual named checks\nper_element: exact six-step symbol, diffusion and heat PDE normalization\nper_site: shifted-grid wall jets and cell projection variance; no false step-operator expansion\nper_mode: actual virial coefficient algebra, no trial Perron vector\nper_block: relative lower bound7/16 and EM remainder identities; analytic theorem supplies quantifiers\nlattice_wide: checked and not executed -- no numerical full spectrum, explicit onset or physical gap\nSOURCE_SHA256 f36564244394ff196ffcc17e94f1a26d97c5055c586fabe2f4aebca7a7336790\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073734Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

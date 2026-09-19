@@ -1,0 +1,35 @@
+{
+ "task": "R:native_flux_defect_comparison_and_winding_gap_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_flux_defect_comparison_and_winding_gap_2026_09_08.py",
+ "seed": 2921,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T072841Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=105615 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "50e2c544b4396b714a483976a4e2b231126bcda816c1290186c6e0b60a67c349",
+ "stdout_tail": "T_COMPARISON_AND_WINDING_GAP_NOTE_2026-09-08.md\": \"b215cd8b596d7fa4a5680331f21a2d86a5965ecaa8a207dff1c87ccff1d164e9\",\n    \"docs/NATIVE_EVEN_TORUS_FLUX_ISOLATION_NOTE_2026-09-08.md\": \"da1849644f34f729eda9f8fe8c1fc19602d775404f6c85c6ac365e7fa540c7d0\",\n    \"docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md\": \"fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd\",\n    \"docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md\": \"810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550\",\n    \"scripts/native_flux_defect_geometry_2026_09_08.py\": \"cdf37b7431888c4c401b32fe41558fe49e6506b6b26afe0e5d7f8d81c433c514\",\n    \"scripts/native_flux_defect_combinatorics_2026_09_08.py\": \"9c1c7fac29dc8ea2f29c42970a8c52b6b14c461423f764420d339657cce910b5\"\n  },\n  \"source_sha256\": \"a42bf36f29e618cd85dcc67306dba3118f6e08627d860180ebd35bd232d47134\",\n  \"scope\": \"Finite geometry and chessboard combinatorial controls only; reflection energy inequality and Fourier winding bound are analytical proofs, not numerical validations.\"\n}\nper_element: cube links and compatible face products.\nper_site: disjoint cube vertices and reflection partitions.\nper_mode: no spectral or Bloch calculation is executed; the energy comparison and Fourier winding bound are analytical.\nper_block:32 cube labels and exact run-extension controls.\nlattice_wide: finite tiling/seams/counts; analytical bounds separately proved.\nTOTAL: PASS=105615 FAIL=0\nResources: 0.478431s,23.062MiB; timeout180s,RSS384MiB.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T072842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_flux_defect_comparison_and_winding_gap_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

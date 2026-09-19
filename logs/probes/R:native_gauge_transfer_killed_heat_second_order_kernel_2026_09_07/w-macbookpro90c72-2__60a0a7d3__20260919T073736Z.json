@@ -1,0 +1,34 @@
+{
+ "task": "R:native_gauge_transfer_killed_heat_second_order_kernel_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_killed_heat_second_order_kernel_2026_09_07.py",
+ "seed": 3456,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T073736Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8420832e3d20d5f90bd346068199a91e4b79cc8f3bfdce3a656445755eecafa3",
+ "stdout_tail": "PASS native killed-heat second-order certificate: ten exact rational assertions\nper_element: low Fourier integral and two high-frequency tails have exact rational ceilings.\nper_site: rho=(1,1) shifted chamber endpoints are retained; the six images are source-proved.\nper_mode: beta>=2048 and t in[1/2,1], with correction (t/4beta)L_x^2 s_t^C.\nper_block: source theorem gives scaled-kernel error<18/beta^2 and two-sided weighted same-grid HS control.\nlattice_wide: arithmetic supports the conditional native Fourier proof; no bare-heat norm or cell-embedding expansion is tested.\nSOURCE_SHA256 af625ffe8bce798fef38c56f262fe819717c51534a0c66a9d4e750c2067cb54f\nDEPENDENCIES {}\nRESOURCES 0.005850416026078165 22.53125 seconds/MiB; 180 limits, BLAS1\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073736Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_killed_heat_second_order_kernel_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

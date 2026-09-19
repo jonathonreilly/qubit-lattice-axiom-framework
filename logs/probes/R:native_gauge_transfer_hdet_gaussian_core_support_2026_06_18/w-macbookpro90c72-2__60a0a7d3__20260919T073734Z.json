@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_hdet_gaussian_core_support_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_hdet_gaussian_core_support_2026_06_18.py",
+ "seed": 3454,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T073734Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dba80ce3e5e3150b793716fc62c5504d417dffe876435dc2d583a6b39c93df3f",
+ "stdout_tail": "372e-03 at=(12,12) rel=1.029593e-02 core=160.788745669591 saddle=159.150146204250\n    max_relative_error_on_window=1.987027e-02\nPASS: active-window Gaussian-core saddle error decreases on sampled windows\n      finite active-window certificate, not a global theorem\nexact_bessel_to_gaussian_core_rows\n  beta= 48 cap= 8 max_sqrt_beta_scaled_exact_minus_core=4.459121e-02 at=(5,5) rel=8.536210e-02 exact=22.933725650190 core=25.074103879555\n  beta= 96 cap=12 max_sqrt_beta_scaled_exact_minus_core=3.083020e-02 at=(8,7) rel=4.416326e-02 exact=64.057542259306 core=67.017241887554\n  beta=192 cap=17 max_sqrt_beta_scaled_exact_minus_core=2.172844e-02 at=(11,11) rel=2.235504e-02 exact=182.446424036561 core=186.618283902193\nPASS: exact-to-Gaussian correction decreases but remains a separate H_scalar/remainder wall\n      this is the remaining scalar/remainder contribution, not closed here\ntail_cap_check beta= 96 pair=(6,5) rel_change_extra20_to_40=0.000e+00\ntail_cap_check beta=192 pair=(10,8) rel_change_extra20_to_40=0.000e+00\nPASS: Gaussian determinant mode cap is stable on witness rows\nfalsifier_rows_beta_96_pair_6_5\n  gaussian core normalized: 0.080569375104\n  correct SU3 saddle:       0.079761275743\n  wrong N_c=2 saddle:       0.122681758828\n  wrong N_c=4 saddle:       0.051856618041\n  wrong no-dimension row:   0.000292165845\nPASS: wrong color constants visibly separate from the Gaussian core\nPASS: wrong dimension prefactor visibly separates from the Gaussian core\n\nTOTAL: PASS=13, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073736Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

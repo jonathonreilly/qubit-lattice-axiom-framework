@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_2026_06_12.py",
+ "seed": 2963,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T072923Z",
+ "elapsed_s": 14.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a62e6e99f33e514d3f583378ef8439d2f54008082b6a3efb6fc38fea3f01ea0c",
+ "stdout_tail": "PASS: identification c_00 = E_Haar[exp((beta/3)Re Tr U)] at beta=6\n      MC=3.45925 vs machinery c_00=3.44144 (rel 0.0052)\nPASS: identification c_00 = E_Haar[exp((beta/3)Re Tr U)] at beta=9\n      MC=15.87506 vs machinery c_00=15.77454 (rel 0.0064)\nbeta   c_00*beta^POWER*e^-beta  (-> C)\n   48         14.56439\n   96         14.72805\n  192         14.80767\n  384         14.84695\nPASS: c_00 ~ C e^beta beta^(-POWER), POWER = (N_c^2-1)/2 = 4\n      C estimates [14.564, 14.728, 14.808, 14.847] converging upward to ~14.9\nPASS: measured power of beta^1.5 e^-beta c_00 is ~ -5/2 (=> c_00 power -4)\n      slope = -2.4909 (target -2.5); c_00 power = -3.991 ~ -4\nPASS: grid witness c_00 >= C_grid e^beta beta^(-4) holds on sampled betas (C_grid=8)\n      ln(c_00) - ln(grid bound) = [0.5991, 0.6103, 0.6157, 0.6184] (all > 0; finite-grid witness)\nPASS: anti-fab: C_grid is a fixed finite-grid witness BELOW the observed asymptotic scale, not fitted\n      C_grid=8 < witnessed C~14.56; analytic C_lower remains the small-ball constant\nPASS: falsifier: wrong power (3 not (N_c^2-1)/2=4) does NOT give a stable O(1) constant\n      with power 3, scaled quantity = 7.712e-02 (drifts; the correct power is 4)\n\nTOTAL: PASS=7, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T072937Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py",
+ "seed": 2924,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T072844Z",
+ "elapsed_s": 38.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7478ce01ccd538d6307064a555ad506a2488bbe67bb47aaa2f5d15d4dbb5423a",
+ "stdout_tail": "e\n      errors=beta=8: 4.006e-10, beta=20: 3.209e-11\nPASS: beta=2 row is not in the decreasing derivative regime\n      logdiff=1.596939e-01\nPASS: J-expectation ordering is witnessed on post-peak grid\n      values=beta=3:-2.680e-01, beta=4:-1.915e-01, beta=8:-9.763e-02, beta=12:-6.679e-02, beta=16:-5.088e-02, beta=20:-4.112e-02, beta=24:-3.451e-02, beta=26:-3.194e-02, beta=30:-2.781e-02, beta=40:-2.102e-02, beta=50:-1.692e-02\nPASS: diagonal derivative part has the opposing positive sign on post-peak grid\n      values=beta=3:4.309e-02, beta=4:7.816e-02, beta=8:7.239e-02, beta=12:5.549e-02, beta=16:4.449e-02, beta=20:3.701e-02, beta=24:3.165e-02, beta=26:2.951e-02, beta=30:2.598e-02, beta=40:1.998e-02, beta=50:1.621e-02\nPASS: finite-block derivative inequality is witnessed on post-peak grid\n      values=beta=3:-2.249e-01, beta=4:-1.133e-01, beta=8:-2.525e-02, beta=12:-1.130e-02, beta=16:-6.391e-03, beta=20:-4.105e-03, beta=24:-2.858e-03, beta=26:-2.437e-03, beta=30:-1.833e-03, beta=40:-1.035e-03, beta=50:-7.078e-04\nPASS: diagonal domination is the load-bearing unresolved margin\n      max Delta_D/(-Delta_J)=0.958166\nPASS: wrong character-derivative normalization breaks the domination witness\n      wrong-scale logdiffs=beta=8:1.095e-02, beta=20:1.341e-02\nPASS: wrong reduced-operator constants visibly change the ratio row\n      correct=0.203758341733, saddle2=0.273042774766, j1/5=0.172664616936\nPASS: note verification section names the expected runner total\n\nTOTAL: PASS=30, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T072923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

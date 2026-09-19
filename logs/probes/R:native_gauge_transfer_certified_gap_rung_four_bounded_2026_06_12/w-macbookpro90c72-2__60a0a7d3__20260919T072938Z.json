@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12.py",
+ "seed": 2978,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T072938Z",
+ "elapsed_s": 447.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "38ca185258b5dbd0e292cea1638f1204cbe52443f08ff5b9b9b8a6cd81ea0a17",
+ "stdout_tail": "stops before beta=22\n      beta=21 trace+sharp margin=0.013576102023; beta=22 trace+sharp upper=1.131742093274\nPASS: path-count tail majorant is no larger than rung-three scalar tail on witnesses\n      exact path-count delta2 is <= rung-three scalar delta2 on witness rows\nPASS: finite outer-box true-operator tail witness is dominated by rung-four tail radius\n      finite outer boxes S in {22, 26}, beta in {20, 22}; min tail/true_op_tail=421.342956, min tail/weighted_fro=707909.995899; beta=22 S=26 true_op_tail=6.670602384457e+06, tail_radius=2.810611326691e+09, factor=421.342956\nPASS: exact characteristic-polynomial Sturm brackets still contain every float eigenvalue on the B_4 check block\n      beta=117/25 checked 25 Sturm intervals on B_4\nPASS: s=14 block float lambda_1 lies inside the exact deflation intervals on HS rows\n      checked 1 s=14 HS deflation intervals against float lambda_1\nPASS: T25 float diagnostics sit below certified full-operator uppers on certified rows\n      compared T25 float ratios against certified full upper rows\nPASS: note contains scope, status-authority, table, frontier, and runner markers\n      checked required note markers\nPASS: one-hop authorities are present as markdown links\n      checked authority-link forms\nPASS: note keeps scratch rung-three refs out of the dependency graph\n      scanned for branch-local scratch authority refs\nPASS: note avoids overreach phrases banned for this lane\n      scanned banned phrase set\n\nTOTAL: PASS=18, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073705Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

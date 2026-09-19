@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_2026_06_12.py",
+ "seed": 3439,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T073719Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "574554e065ebe53b9f1c807bfb1cce77f27d5a38e62813ca03451c9a0e3dcce0",
+ "stdout_tail": "PASS: mode peak = -round((p+2q)/3) (= -round(sum lam /3))\n      b48(7,3):pk-4~-4; b48(7,7):pk-7~-7; b108(10,5):pk-7~-7; b108(10,10):pk-10~-10; b192(14,7):pk-9~-9; b192(14,14):pk-14~-14; b300(17,8):pk-11~-11; b300(17,17):pk-17~-17\nPASS: tail beyond 2*sqrt(t) window is uniform on the sampled active-weight grid\n      g(2) = ['2.09e-04', '2.30e-04', '2.93e-04', '2.96e-04', '3.43e-04', '3.48e-04', '3.67e-04', '3.78e-04'] (flat ~3e-4)\nPASS: tail beyond 3*sqrt(t) window is uniform on the sampled active-weight grid\n      g(3) = ['7.20e-08', '8.31e-08', '9.82e-08', '1.00e-07', '1.16e-07', '1.20e-07', '1.23e-07', '1.30e-07'] (flat ~1e-7)\nPASS: g(A) ~ exp(-c A^2): the implied c is positive and stable across cases\n      implied c (from g2,g3) = [1.595, 1.585, 1.6, 1.599, 1.598, 1.595, 1.601, 1.594] (stable Gaussian rate)\nPASS: fixed window (|mode-peak|>5) tail GROWS with beta (the W88/W89 25-34% problem)\n      fixed-window tail = ['1.57e-02', '1.66e-02', '1.10e-01', '1.10e-01', '2.32e-01', '2.32e-01', '3.38e-01', '3.39e-01'] (grows -> not uniform; needs sqrt(t) scaling)\nPASS: anti-fab: tail fractions computed from exact 3x3 Bessel determinants (no fit)\n      g(A) witnessed via np.linalg.det of I_nu(t) entries; no curve_fit/target value\nPASS: falsifier: centering at 0 (wrong peak) inflates the 2*sqrt(t) tail\n      wrong-center tail 2.72e-01 >> correct-center tail 3.78e-04\n\nTOTAL: PASS=7, FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073719Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

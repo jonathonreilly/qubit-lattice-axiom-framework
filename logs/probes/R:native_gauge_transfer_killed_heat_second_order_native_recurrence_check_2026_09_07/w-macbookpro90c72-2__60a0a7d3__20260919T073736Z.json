@@ -1,0 +1,34 @@
+{
+ "task": "R:native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.py",
+ "seed": 3456,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T073736Z",
+ "elapsed_s": 9.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fa9a574c2698a459e6c2756dda8b93c577d99aa0aab4fe0d03f375a5312542b3",
+ "stdout_tail": "ected_residual\": 3.5031730433380376e-08, \"endpoint\": [45, 33], \"entry_truncation_upper_bound\": 1.667771012517753e-12, \"gaussian\": 0.21298511617281132, \"leading_residual\": 8.152614728118568e-05, \"native_scaled_entry\": 0.2130666423200925, \"scaled_entry_truncation_upper_bound\": 3.415595033636358e-09, \"second_order_correction\": 8.14911155507523e-05, \"source\": [45, 33], \"theorem_domain\": true, \"time\": 1.0}\nKERNEL_ROW {\"beta\": 2048, \"beta_squared_corrected_residual\": 0.01388288555946815, \"box_side\": 318, \"corrected_residual\": 3.309937848917997e-09, \"endpoint\": [67, 33], \"entry_truncation_upper_bound\": 1.667771012517753e-12, \"gaussian\": 0.17544483587308424, \"leading_residual\": 3.7948065741866266e-05, \"native_scaled_entry\": 0.1754827839388261, \"scaled_entry_truncation_upper_bound\": 3.415595033636358e-09, \"second_order_correction\": 3.794475580401735e-05, \"source\": [45, 33], \"theorem_domain\": true, \"time\": 1.0}\nKERNEL_ROW {\"beta\": 2048, \"beta_squared_corrected_residual\": 0.016567158296737716, \"box_side\": 318, \"corrected_residual\": 3.949918340858869e-09, \"endpoint\": [90, 66], \"entry_truncation_upper_bound\": 1.667771012517753e-12, \"gaussian\": 0.028082083501311764, \"leading_residual\": -8.57593408417831e-06, \"native_scaled_entry\": 0.028073507567227585, \"scaled_entry_truncation_upper_bound\": 3.415595033636358e-09, \"second_order_correction\": -8.57988400251917e-06, \"source\": [45, 33], \"theorem_domain\": true, \"time\": 1.0}\nRESOURCES 9.622800457989797 77.265625 seconds/MiB; limits180/180; BLAS1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T073746Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'RESOURCES 9.622800457989797 77.265625 seconds/MiB; limits180/180; BLAS1' vs cache 'RESOURCES 10.195013125019614 121.828125 seconds/MiB; limits180/180; BLAS1'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -20,13 +20,20 @@
  "stdout_tail": "rence group displacement; no empirical duration scale', 'C_wrap': 'Route-C tag resets after every transport macro and packet translates rather than returns; noisy/unbounded renewal is open', 'C_int': 'actual Cycle230 free-plus-contact interaction binds one dimer band; no second stable internal transition is certified', 'C_local': 'Route-B uses the accepted local antisymmetric CAR update; Route-C is bounded depth with 72 M2 per cell, all24/all576, but imports 66 rails beyond six-mode matter', 'C_source': 'contact coupling sensitivity g=0.31/0.37/0.43 is visible only as dimensionless source variation; no stress, gravity, redshift, or backreaction law'}}\nPASS the frozen Cycle578 tournament stays below the 360-second and 3-GiB cold caps :: {'elapsed_seconds': 60.547962916083634, 'peak_RSS_bytes': 965951488}\nSUMMARY_JSON {\"audit\": \"unset\", \"authority\": \"none\", \"axiom_pressure\": false, \"elapsed_seconds_internal\": 60.547962916083634, \"firewall_clean\": true, \"maximum_RSS_bytes_internal\": 965951488, \"route_A_exact_nonflat_factorization\": true, \"route_B_all576_failures\": 0, \"route_B_group_displacement\": -0.023781532899391822, \"route_B_maximum_eigen_residual\": 2.197315900183381e-15, \"route_B_packet_displacement\": -0.023549538035457427, \"route_C_all576_failures\": 0, \"route_C_maximum_residual\": 8.215650382226158e-15, \"shared_substrate_obstruction\": false, \"status\": \"cycle578-intrinsic-contact-bound-moving-transition-tournament\", \"tests_failed\": 1, \"tests_passed\": 7}\n\nRESULT pass=7 fail=1\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T085836Z",
+  "at_utc": "20260919T101139Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 071352a3 differs from the current HEAD 173a40cf (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "This probe clone is shallow (history grafted at f1d08841be0, 2026-08-13), so git history checks cannot see earlier commits: the only failing check (7 pass, 1 fail) is 'accepted Cycle575 is an ancestor ...' with ancestor=False from git merge-base --is-ancestor 152fa84bf264 HEAD (runner line 124), but GitHub's compare shows 152fa84bf264 is an ancestor of both main (behind_by 0, ahead_by 2767) and this run's HEAD 071352a324. Every other conjunct of that check holds on the committed bytes: all 6 DEPENDENCY_SHA256 runners, all 4 RECEIPT_SHA256 receipts and CYCLE575_NOTE_SHA256 match, the Cycle573/575 receipts have pass=True, and the retained residuals (max 2.1e-15) are below TOL=5e-9. Not a physics failure.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T101139Z"
  }
 }

@@ -20,13 +20,20 @@
  "stdout_tail": "ips (stroboscopic discreteness signature of the candidate tick law) :: {'rows': 8, 'flips': 3}\nPASS P2 null: the Q=8 rows are exact nulls (alpha wraps to 2*pi exactly) :: {'null_ratios': [1.0, 1.0]}\nPASS comparator map contains only the frozen Q=1, s=+1 near-hit in the 3:4 class; cross-apparatus identification remains outside this runner :: {'near_hits': 1}\nPASS route B: ticks are admitted through the declared opportunity and admission predicates until the finite bank exhausts :: {'admitted': 24, 'post_bank_statuses': ['exhausted', 'exhausted', 'exhausted']}\nPASS route B renewal: one declared finite-bank refill extends the domain :: {'post_refill': 'admitted'}\nPASS additivity: Delta(A,C) = Delta(A,B) + Delta(B,C) decoded from stored chain state across rollover receipts :: {'d_ab': 9, 'd_bc': 12, 'd_ac': 21, 'carries': 2}\nPASS reversal: the decoded interval is orientation-antisymmetric :: {'forward': 9, 'reverse': -9}\nPASS duplicate admission is refused by the derived freshness predicate :: {'status': 'refused_fresh'}\nPASS binder deletion blocks the opportunity; deleting the supplied actuality token blocks admission (the supplied middle is explicit) :: {'no_binder': 'no_opportunity', 'no_actuality': 'refused_supplied'}\nPASS missing event: a lineage gap makes the interval undefined, never zero :: {'removed_identity': 3}\nPASS independent observers: two chains fed by the same tick stream decode identical intervals :: {'observer_a': 8, 'observer_b': 8}\nRESULT 33 3 elapsed 67.51 s\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T085944Z",
+  "at_utc": "20260919T101139Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 071352a3 differs from the current HEAD 173a40cf (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "designed FAIL: the matched text is the three rows 'FAIL P1 raw source: ... predicted -0.4736', 'FAIL tick-unit convention shifts counts but not rates (T1 versus T2)' and 'FAIL independent calibration: ... raw_a2/raw_a3 matched False', plus exit code 1. The note (docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md, lines 26 and 84) reads 'preregistered partial, 33 PASS / 3 FAIL, exit 1 expected' and 'The runner deliberately exits 1 ... FAIL rows are evidence, not packaging defects' (raw-source tick clock falsified by convention dependence). The run reproduces the committed outputs/..._cycle610_cold_2026_07_22.txt (same three rows, same rates 0.04985119/0.05009921, counts 221/236, RESULT 33 3) and the committed receipt (pass_count 33, fail_count 3, pass false), all landed together at b780dc774f (2026-07-25).",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T101139Z"
  }
 }

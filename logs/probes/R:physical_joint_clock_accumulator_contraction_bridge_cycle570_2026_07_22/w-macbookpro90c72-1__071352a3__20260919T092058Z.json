@@ -20,13 +20,20 @@
  "stdout_tail": "Cycle570 physical joint-clock / accumulator / arbitrary-input contraction bridge\nauthority none audit unset\nFAIL Cycle570 runner completed without exception :: FileNotFoundError(2, 'No such file or directory')\nSUMMARY_JSON {\"audit\": \"unset\", \"authority\": \"none\", \"axiom_pressure\": false, \"compiler_resource\": {}, \"elapsed_seconds_internal\": 4.1624996811151505e-05, \"held_prefixes\": [8, 13, 21], \"maximum_RSS_bytes_internal\": 81657856, \"shared_substrate_obstruction\": false, \"status\": \"cycle570-joint-clock-accumulator-full-contraction-bridge\", \"tests_failed\": 1, \"tests_passed\": 0, \"train_prefixes\": [1, 2, 4, 5]}\n\nRESULT pass=0 fail=1\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T092059Z",
+  "at_utc": "20260919T101139Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 071352a3 differs from the current HEAD 173a40cf (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, runner not runnable from main: the only check is 'FAIL Cycle570 runner completed without exception :: FileNotFoundError(2, ...)' (RESULT pass=0 fail=1, exit 1). main() calls dependency_controls() first (runner lines 154-156, 981), which hashes seven pinned relational-clock-lane scripts (cycles 451/456/469/479/498/504/561) and reads outputs/physical_endpoint_count_semigroup_bridge_cycle561_receipt_2026_07_21.json; none of these eight files is on main (contents API 404, no commit history). The runner, note and receipt (pass True) landed together at 5d609e37ea (2026-07-23), whose message documents it: 'c570 pins seven relational-clock-lane scripts that are not landed' and the three anchors 'are NOT runnable on a main-based tree'. No runner-cache pin.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T101139Z"
  }
 }

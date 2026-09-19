@@ -20,13 +20,20 @@
  "stdout_tail": "AUTHORITY AND GEOMETRY\nFAIL review note exists :: \nPASS Cycle 157 adds no transition row :: 83372\nPASS two three-write branches share exactly one source :: (((0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0)), ((0, 0, 0), (0, 1, 0), (0, 2, 0), (0, 3, 0)))\n\nCAUSAL PRODUCT\nPASS all 48 value-orientation fork graphs are exact :: ({81}, [])\nPASS both endpoints retain the source value and remain open :: []\nPASS one literal source and no supplied branch value drive six writes :: \n\nCONTROLS\nPASS deleting the shared source suppresses both branches :: []\nPASS the joint fixture uses only existing frame and guide roles :: \n\nSCOPE\nFAIL note contains: one physical bit to two cable branches :: \nFAIL note contains: no transition row is added :: \nFAIL note contains: measured-row reuse :: \nFAIL note contains: supplied guide/frame harness :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 7 FAIL 9\nRESULT FAIL\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T100929Z",
+  "at_utc": "20260919T101139Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 071352a3 differs from the current HEAD 173a40cf (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL review note exists ::'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T101139Z"
  }
 }

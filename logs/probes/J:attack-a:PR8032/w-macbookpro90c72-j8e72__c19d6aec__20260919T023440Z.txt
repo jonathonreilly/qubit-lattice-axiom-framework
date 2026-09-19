@@ -1,0 +1,8 @@
+OK: elementary plaquette is a 4-cycle, bipartite, bivalent vertices, 1 face/link
+OK: 3D cubic box n=2: 12 links, max incidence 2≤4, faces are 4-cycles
+OK: 3D cubic box n=3: 54 links, max incidence 4≤4, faces are 4-cycles
+OK: 3D cubic box n=4: 144 links, max incidence 4≤4, faces are 4-cycles
+OK: 4D hypercubic link has 6 incident plaquettes, outside the note's ≤4 cubic-graph setting
+OK: 3×3 witness exists: J off-diagonal 1/6, Ω eigenvector, E0=4784/5049 v=1600/1683<4, remaining 84800/5049 and 86384/5049, excess=454685351/113607549 in (4,4.01), e_R(1)=4
+OK: A,B,C index formulae realize norms 1, 1/3, 1/9 and J=[[0, Fraction(1, 18), Fraction(1, 54)], [Fraction(1, 18), 0, Fraction(1, 54)], [Fraction(1, 54), Fraction(1, 54), 0]] via the two Haar moment rules
+SUMMARY: pattern (a) WITNESS REALIZABILITY — elementary plaquette is a bipartite 4-cycle with bivalent vertices (no triangles); 3D cubic boxes n=2,3,4 have max 4 faces/link and 4-cycle faces; 4D incidence 6 lies outside the stated ≤4 setting; the 3×3 J/H/Ω witness exists over Q with excess in (4,4.01); A,B,C index formulae realize norms 1, 1/3, 1/9 and the stated J matrix including B-J-C=1/54; 0 failures; attack does not fire

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8174",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block30-six-ax",
+ "worker": "w-macbookpro90c72-j6a85",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8174/graph_G_degree12.py",
+ "seed": 85756,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "80e0bf9c",
+ "started_utc": "20260919T024237Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "WITNESS REALIZABILITY (PR #8174): undirected G at a site has 6 axial + 6 face-diagonal fork neighbours (degree 12), forks at l1=2 not lattice edges, three predecessors pairwise non-adjacent; pattern has purchase and the witnesses exist as written"
+ },
+ "review": "G has 6 axial plus 6 l1=2 forks, degree 12; predecessors non-adjacent; witnesses exist as written.",
+ "what": "PR #8174 ([physics-loop] admissibility-induced-law block30 \u2014 bounded_t): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916; git show origin/physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916:<note>. Create probes/work/pr8174/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8174/<script>.py\"",
+ "stdout_sha256": "fb921ec1a0b95d3dc439e7e727d433904b2a7f5409cffb2c4e5a7cec1d38943c",
+ "stdout_tail": "axial 6 unique [(-1, 0, 0), (0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0), (1, 0, 0)]\nforks 6 unique [(-1, 0, 1), (-1, 1, 0), (0, -1, 1), (0, 1, -1), (1, -1, 0), (1, 0, -1)]\nunion 12 intersection 0\nSUMMARY: WITNESS REALIZABILITY (PR #8174): undirected G at a site has 6 axial + 6 face-diagonal fork neighbours (degree 12), forks at l1=2 not lattice edges, three predecessors pairwise non-adjacent; pattern has purchase and the witnesses exist as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6a85",
+  "at_utc": "20260919T024237Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

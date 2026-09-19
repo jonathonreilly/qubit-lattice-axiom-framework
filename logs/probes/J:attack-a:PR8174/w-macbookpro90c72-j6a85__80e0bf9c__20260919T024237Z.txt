@@ -1,0 +1,4 @@
+axial 6 unique [(-1, 0, 0), (0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0), (1, 0, 0)]
+forks 6 unique [(-1, 0, 1), (-1, 1, 0), (0, -1, 1), (0, 1, -1), (1, -1, 0), (1, 0, -1)]
+union 12 intersection 0
+SUMMARY: WITNESS REALIZABILITY (PR #8174): undirected G at a site has 6 axial + 6 face-diagonal fork neighbours (degree 12), forks at l1=2 not lattice edges, three predecessors pairwise non-adjacent; pattern has purchase and the witnesses exist as written

@@ -23,14 +23,21 @@
  "stdout_tail": "CHECK 01: PASS - single C3 orbit on the three corner labels -- orbit=[0, 1, 2]\nCHECK 02: PASS - Reynolds average of diagonal corner-weight has spread 0 -- raw_spread=6, averaged=[Fraction(3, 1), Fraction(3, 1), Fraction(3, 1)]\nCHECK 03: FAIL - live quote guard: arrow universal-floor sentence\nCHECK 04: FAIL - historical quote guard: superseded past-hypothesis placement sentence\nCHECK 05: PASS - live quote guard: parent same-identification sentence\nCHECK 06: PASS - direct text extraction: species residual statement names no tested number\nCHECK 07: PASS - historical provenance preserves the former theta decomposition\nCHECK 08: PASS - direct text extraction: CKM/PMNS remains separate\nfiles: ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md, SPECIES_BRIDGE_MINIMUM_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md, ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md\nTOTAL: PASS=6 FAIL=2\nhistorical classification proposal: AC_phi_lambda(iii)'s C3-grade species identification was compared with the past hypothesis; this proposal supplies no premise or status movement.\ncounterargument: every theory needing an input does not make it free; the defense is the past-hypothesis precedent plus the no-number discriminator.\nuncertainties: a retained species-identification theorem, audit-lane handling, and any above-C3 or CKM/PMNS content remain outside this runner.\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T094816Z",
+  "at_utc": "20260919T105144Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b6e64c45 differs from the current HEAD c5f63d3f (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=6 FAIL=2' vs cache 'TOTAL: PASS=8 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, text level: CHECK 03/04 (runner lines 102-123) quote docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md: 'This open input is **universal-floor**: every theory with time-symmetric microdynamics (CM, QM, QFT, GR) needs the same boundary input ... It is **not** a framework-specific gap.' and 'the past hypothesis sits with the universal-floor admissions ...'. 95df073c33 (2026-07-16, 'narrow arrow-from-record universalization (F24)') replaced both: the note now says the boundary 'mirrors the low-entropy past boundary needed in standard time-symmetric physics (CM, QM, QFT, GR) - an external comparator, not a universal claim derived from the finite toy controls here' (lines 64-69, 122-127). Runner and cache last refreshed 2026-07-11 (cache PASS=8 FAIL=0). PASS=6 FAIL=2.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T105144Z"
  }
 }

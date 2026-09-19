@@ -1,0 +1,32 @@
+{
+ "task": "J:note:PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2",
+ "type": "judgment",
+ "lane": "protocol",
+ "worker": "w-jonathonsmac4f50-j5491",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BR/bloch_words_len7_and_all_covariant_tables.py",
+ "seed": 15268,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "97126f7b",
+ "started_utc": "20260919T105428Z",
+ "elapsed_s": 9.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "all 335923 decorated-mover words through length 7 equal their predicted normal form in the Bloch form at four generic momenta (max deviation 1.1e-15); the characteristic polynomial is momentum-independent exactly when net = 0 for every (sigma, net) class reached and for every net in [-9,9]^3; of the 59049 rotation-covariant availability tables 3 have empty variation set and 59046 vary at all six offsets, none at a proper subset; decorated shifts are exact frame conjugates of covariant shifts with zero modulus defect on rings 4, 6, 8; no falsifier fires"
+ },
+ "review": "Read the script and its output: all 335923 decorated-mover words through length 7, multiplied in a Bloch form derived from the site definition at four generic momenta, equal their predicted normal form to 1.1e-15; the characteristic polynomial is momentum-independent exactly when net = 0 for all 1138 (sigma, net) classes reached and for every net in [-9,9]^3; all 3^10 rotation-covariant availability tables were enumerated: 3 are constant and 59046 vary at all six offsets, none at a proper subset; on exact integer rings L = 4, 6, 8 the decorated shifts are frame conjugates of exactly covariant shifts with zero modulus defect; no falsifier fires.",
+ "what": "Note on main: docs/PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BR/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BR/<script>.py\"",
+ "stdout_sha256": "8210e097193fcf854876f76ccded15783992a6979ef190b5133b1312493c0443",
+ "stdout_tail": "1. 335923 words through length 7 in Bloch form at 4 momenta: max |product - normal form| = 1.11e-15; 1138 (sigma, net) classes reached; dichotomy failures among them []; over all net in [-9,9]^3 and both signs: []\n2. rotation-covariant availability tables: 10 orbits, 3^10 = 59049 tables; variation sets: {'none': 3, 'all six': 59046, 'other': 0}\n3. exact site frames: decorated = g F g^dagger, bare shifts covariant, zero modulus defect on L = 4, 6, 8: {4: True, 6: True, 8: True}\nSUMMARY: all 335923 decorated-mover words through length 7 equal their predicted normal form in the Bloch form at four generic momenta (max deviation 1.1e-15); the characteristic polynomial is momentum-independent exactly when net = 0 for every (sigma, net) class reached and for every net in [-9,9]^3; of the 59049 rotation-covariant availability tables 3 have empty variation set and 59046 vary at all six offsets, none at a proper subset; decorated shifts are exact frame conjugates of covariant shifts with zero modulus defect on rings 4, 6, 8; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5491",
+  "at_utc": "20260919T105447Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

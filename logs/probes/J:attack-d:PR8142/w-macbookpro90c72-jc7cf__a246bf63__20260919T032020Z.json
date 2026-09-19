@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8142",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block11-three-",
+ "worker": "w-macbookpro90c72-jc7cf",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8142/quantifier_isolating_intervals.py",
+ "seed": 88020,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a246bf63",
+ "started_utc": "20260919T032020Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 t* in (4,5), rho in (6,7), and the sextic roots in (1,2) and (6,7) remain isolated at neighboring integers 0..10"
+ },
+ "review": "Isolating intervals for t*, rho, and the sextic hold at extra integers 0..10; no quantifier-scope defect",
+ "what": "PR #8142 ([physics-loop] admissibility-induced-law block11 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915; git show origin/physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915:<note>. Create probes/work/pr8142/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8142/<script>.py\"",
+ "stdout_sha256": "09545956b47ba7d3d4dcc3ef5c2491beeacb30015b110b548e5ee87a3cc3698b",
+ "stdout_tail": "t cubic positive at integers [5, 6, 7, 8, 9, 10]; ct(4)=-9 ct(5)=19\nrho cr(6)=-1 cr(7)=72; sextic s(1)=18 s(2)=-137 s(6)=-3137 s(7)=10818\nSUMMARY: pattern has no purchase on this note \u2014 t* in (4,5), rho in (6,7), and the sextic roots in (1,2) and (6,7) remain isolated at neighboring integers 0..10\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc7cf",
+  "at_utc": "20260919T032020Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

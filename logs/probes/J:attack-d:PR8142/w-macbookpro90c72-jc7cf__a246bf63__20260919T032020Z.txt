@@ -1,0 +1,3 @@
+t cubic positive at integers [5, 6, 7, 8, 9, 10]; ct(4)=-9 ct(5)=19
+rho cr(6)=-1 cr(7)=72; sextic s(1)=18 s(2)=-137 s(6)=-3137 s(7)=10818
+SUMMARY: pattern has no purchase on this note — t* in (4,5), rho in (6,7), and the sextic roots in (1,2) and (6,7) remain isolated at neighboring integers 0..10

@@ -1,0 +1,32 @@
+{
+ "task": "C:lro-finite-size-analysis:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j796b",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/lro-finite-size-analysis/w-jonathonsmac4f50-j796b/run.py",
+ "seed": 50130,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "18556495",
+ "started_utc": "20260919T203530Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "not computed: only 1 of 42 grid points are logged (finite-size and long grids); the 41 missing points are listed above; no fit of m_inf is attempted"
+ },
+ "review": "run.py matches the logs to the two grids in TASKS.json and finds 1 of 36 finite-size points (beta 2, L 64, seed 1: plateau 0.7354) and 0 of 6 long-run points logged, so, as the task requires when fewer than half the points exist, it lists the 41 missing points and stops without fitting m_inf.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): Does the 3+1 plateau survive the large-plane limit? Read the logs under logs/probes/X:formation-3plus1-finite-size/ and X:formation-3plus1-long/ (the .txt files hold the memory tables). For beta = 2 and 3: plateau |m| against L for the three seeds; fit m(L) = m_inf + a/L and m(L) = m_inf + a/L^2 by least squares with the seed scatter as error; report m_inf with its uncertainty under both forms, and whether the long runs still drift (compare |m| over the last three table rows). Expectation: m_inf > 0 by many standard errors. If the data say otherwise, print HIT with the numbers. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/lro-finite-size-analysis/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lro-finite-size-analysis/<name>/run.py\"",
+ "stdout_sha256": "b864de532d58c94d2250b5f84b1684dce436a03ebadf617ad6afab5375197855",
+ "stdout_tail": "000 1500 2'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 32 3000 1500 3'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 48 3000 1500 1'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 48 3000 1500 2'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 48 3000 1500 3'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 64 3000 1500 1'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 64 3000 1500 2'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 64 3000 1500 3'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 96 3000 1500 1'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 96 3000 1500 2'\n  missing: X:formation-3plus1-finite-size extra='3 sphere 3 96 3000 1500 3'\n  missing: X:formation-3plus1-long extra='3 sphere 2 48 20000 10000 1'\n  missing: X:formation-3plus1-long extra='3 sphere 2 48 20000 10000 2'\n  missing: X:formation-3plus1-long extra='3 sphere 2 48 20000 10000 3'\n  missing: X:formation-3plus1-long extra='3 sphere 2 48 20000 10000 4'\n  missing: X:formation-3plus1-long extra='3 sphere 1.5 48 20000 10000 1'\n  missing: X:formation-3plus1-long extra='3 sphere 1.5 48 20000 10000 2'\nsupplementary (not fitted): X:formation-3plus1-seeds beta=2 L=48 T=3000 seed=2: plateau |m| = 0.7366, last three |m| 0.7336, 0.7374, 0.7374\nSUMMARY: not computed: only 1 of 42 grid points are logged (finite-size and long grids); the 41 missing points are listed above; no fit of m_inf is attempted\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j796b",
+  "at_utc": "20260919T203538Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

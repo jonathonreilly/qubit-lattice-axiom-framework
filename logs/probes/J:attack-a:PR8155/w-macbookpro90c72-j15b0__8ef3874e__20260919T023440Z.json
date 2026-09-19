@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-a:PR8155",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block21-unsold",
+ "worker": "w-macbookpro90c72-j15b0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8155/torus_L1_six_neighbours.py",
+ "seed": 85280,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ef3874e",
+ "started_utc": "20260919T023440Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "WITNESS REALIZABILITY (PR #8155): the torus (Z/2LZ)^3 at the stated endpoint L=1 does not realize six distinct neighbours (+e_i=-e_i, degree 3, the 3-cube), so it is not the six-neighbour graph the conditionals and C_Lambda row-sum alpha=6c are written for"
+ },
+ "review": "W5's torus (Z/2LZ)^3 at L=1 has +e_i=-e_i so degree 3 not 6; the six-neighbour conditionals and alpha=6c row-sum are not realized on that graph.",
+ "what": "PR #8155 ([physics-loop] admissibility-induced-law block21 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915; git show origin/physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915:<note>. Create probes/work/pr8155/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8155/<script>.py\"",
+ "stdout_sha256": "a37589b3681f1ef80ccf882bb2359795e13b213ed303101d7d2fee7510e4b0d2",
+ "stdout_tail": "L=1 n=2 N=8 listed_steps=6 distinct_neighbours=3 +e=-e axes=[0, 1, 2]\nL=2 n=4 N=64 listed_steps=6 distinct_neighbours=6 +e=-e axes=[]\nL=3 n=6 N=216 listed_steps=6 distinct_neighbours=6 +e=-e axes=[]\nL=4 n=8 N=512 listed_steps=6 distinct_neighbours=6 +e=-e axes=[]\nL=5 n=10 N=1000 listed_steps=6 distinct_neighbours=6 +e=-e axes=[]\nLambda_1 |x|_inf<=L has 27 sites (stated (2L+1)^3=27)\nLambda_2 |x|_inf<=L has 125 sites (stated (2L+1)^3=125)\nLambda_3 |x|_inf<=L has 343 sites (stated (2L+1)^3=343)\nHIT: L=1 torus (Z/2Z)^3 has 3 distinct neighbours of the origin, not 6; +e_i=-e_i on axes [0, 1, 2]\nSUMMARY: WITNESS REALIZABILITY (PR #8155): the torus (Z/2LZ)^3 at the stated endpoint L=1 does not realize six distinct neighbours (+e_i=-e_i, degree 3, the 3-cube), so it is not the six-neighbour graph the conditionals and C_Lambda row-sum alpha=6c are written for\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j15b0",
+  "at_utc": "20260919T023459Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "W5 states the torus (Z/2LZ)^3 for every L>=1 has the same six-neighbour conditionals as Z^3; at L=1, +e_i=-e_i so the graph is the 3-cube of degree 3, not 6. Witness unrealizable as written.",
+  "by": "w-macbookpro90c72-j15b0",
+  "at_utc": "20260919T023459Z"
+ }
+}

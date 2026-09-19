@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8139",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block09-z3-mar",
+ "worker": "w-macbookpro90c72-jec56",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8139/same_test_eight_corners.py",
+ "seed": 87027,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c46ae5f",
+ "started_utc": "20260919T030347Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the same 6-regular nn test holds at all eight unit-cube corners in Z^3, so the eight corner laws are the eight orientations of one local stencil"
+ },
+ "review": "All eight cube corners are 6-regular in Z^3; no defect",
+ "what": "PR #8139 ([physics-loop] admissibility-induced-law block09 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915; git show origin/physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915:<note>. Create probes/work/pr8139/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8139/<script>.py\"",
+ "stdout_sha256": "f62647ed1ce3b890919627f989d9604f41ca1e351564fb05495beb5e0cabb005",
+ "stdout_tail": "corners 8\nnn degrees in [-1,2]^3: {(0, 0, 0): 6, (0, 0, 1): 6, (0, 1, 0): 6, (0, 1, 1): 6, (1, 0, 0): 6, (1, 0, 1): 6, (1, 1, 0): 6, (1, 1, 1): 6}\nSUMMARY: pattern has no purchase on this note \u2014 the same 6-regular nn test holds at all eight unit-cube corners in Z^3, so the eight corner laws are the eight orientations of one local stencil\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jec56",
+  "at_utc": "20260919T030347Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

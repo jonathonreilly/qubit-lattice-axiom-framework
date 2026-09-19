@@ -1,0 +1,2 @@
+no sampled never/always claim on the volume-uniform gap note
+SUMMARY: pattern has no purchase on this note: the gap bound is a proof, not a sampling conjecture; this is not the known C(1,0)=8/3 HIT

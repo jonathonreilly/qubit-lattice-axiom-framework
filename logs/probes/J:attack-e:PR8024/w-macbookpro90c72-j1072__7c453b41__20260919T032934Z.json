@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8024",
+ "type": "judgment",
+ "lane": "volume-uniform-gap-block34-20260907",
+ "worker": "w-macbookpro90c72-j1072",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8024/adversarial_no_sample.py",
+ "seed": 88574,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c453b41",
+ "started_utc": "20260919T032934Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the gap bound is a proof, not a sampling conjecture; this is not the known C(1,0)=8/3 HIT"
+ },
+ "review": "No sampled never/always claim; not the known C(1,0)=8/3 HIT; pattern has no purchase",
+ "what": "PR #8024 ([physics-loop] volume-uniform-gap block34 conditional-suppor): attack GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/volume-uniform-gap-block34-20260907; git show origin/codex/volume-uniform-gap-block34-20260907:<note>. Create probes/work/pr8024/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8024/<script>.py\"",
+ "stdout_sha256": "8a816d188e223f2438e837998fe6c35c668e4c1837885e864275f9896489ec86",
+ "stdout_tail": "no sampled never/always claim on the volume-uniform gap note\nSUMMARY: pattern has no purchase on this note: the gap bound is a proof, not a sampling conjecture; this is not the known C(1,0)=8/3 HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1072",
+  "at_utc": "20260919T032934Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

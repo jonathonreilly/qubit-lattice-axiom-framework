@@ -1,0 +1,6 @@
+PASS O1: every linear extension gives the same full joint law: V: 2 linear extensions; diamond: 2 linear extensions; five: 5 linear extensions (six-axis product kernel and a random binary kernel)
+PASS O2: path order k = (0, 1, 1, 2), P(all +x) = 3/832; opposite-first k = (0, 0, 2, 2), P(all +x) = 9/2704; sum of k = |E| = 4, so '(0,0,1,1)' cannot occur
+PASS O3: (3, 1, 2): two sites order-free; (5, 2, 4): two sites order-free; three-site path: ends-first P(all +x) = 1/104, middle-first 1/96: the laws differ
+PASS O4: 3x3 level-ordered window: 60 random linear extensions give the identical 512-cell joint law (binary kernel)
+HIT: confirmed - formation-order-independence a1: on a causal DAG the formation law is the product of kernels along the partial order and the same for every linear extension (full joint laws equal on the V, the diamond, a five-site DAG and a 3x3 level-ordered window, for covariant and non-covariant kernels), and C4's orders give 3/832 vs 9/2704. Corrections: the opposite-first k-sequence is (0,0,2,2), not the HIT line's (0,0,1,1); C4 is not the smallest counterexample - the three-site path (the attempt's V read undirected) already has order-dependent laws (1/104 vs 1/96) and two sites cannot
+SUMMARY: confirmed with two corrections (the k-sequence typo; smallest example has three sites)

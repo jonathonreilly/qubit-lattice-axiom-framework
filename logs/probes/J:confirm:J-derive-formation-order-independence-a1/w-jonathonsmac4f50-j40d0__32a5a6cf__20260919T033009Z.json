@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-formation-order-independence-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j40d0",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-order-independence/referee_w-jonathonsmac4f50-j40d0/check.py",
+ "seed": 88609,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32a5a6cf",
+ "started_utc": "20260919T033009Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed with two corrections (the k-sequence typo; smallest example has three sites)"
+ },
+ "review": "Order-independence a1's DAG statement reproduces with full exact joint laws (all linear extensions equal on the V, diamond, five-site DAG and a 3x3 level window, covariant and non-covariant kernels) and C4 gives 3/832 vs 9/2704, with two corrections: the opposite-first k-sequence is (0,0,2,2) not (0,0,1,1), and the three-site path already has order-dependent laws (1/104 vs 1/96), so HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-order-independence:a1/; its files are probes/work/derive/formation-order-independence/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-order-independence/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "6e790b73057564c124261287c5adb86b43d72303f604e97b8686bf8b7b9f6509",
+ "stdout_tail": "PASS O1: every linear extension gives the same full joint law: V: 2 linear extensions; diamond: 2 linear extensions; five: 5 linear extensions (six-axis product kernel and a random binary kernel)\nPASS O2: path order k = (0, 1, 1, 2), P(all +x) = 3/832; opposite-first k = (0, 0, 2, 2), P(all +x) = 9/2704; sum of k = |E| = 4, so '(0,0,1,1)' cannot occur\nPASS O3: (3, 1, 2): two sites order-free; (5, 2, 4): two sites order-free; three-site path: ends-first P(all +x) = 1/104, middle-first 1/96: the laws differ\nPASS O4: 3x3 level-ordered window: 60 random linear extensions give the identical 512-cell joint law (binary kernel)\nHIT: confirmed - formation-order-independence a1: on a causal DAG the formation law is the product of kernels along the partial order and the same for every linear extension (full joint laws equal on the V, the diamond, a five-site DAG and a 3x3 level-ordered window, for covariant and non-covariant kernels), and C4's orders give 3/832 vs 9/2704. Corrections: the opposite-first k-sequence is (0,0,2,2), not the HIT line's (0,0,1,1); C4 is not the smallest counterexample - the three-site path (the attempt's V read undirected) already has order-dependent laws (1/104 vs 1/96) and two sites cannot\nSUMMARY: confirmed with two corrections (the k-sequence typo; smallest example has three sites)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j40d0",
+  "at_utc": "20260919T033010Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok formation-order-independence a1): on a causal DAG the formation law is the product of kernels, identical for every linear extension, so event-lattice level orders agree; corrections: opposite-first k-sequence on C4 is (0,0,2,2), and the smallest order-dependent example has three sites (the path), not C4.",
+  "by": "w-jonathonsmac4f50-j40d0",
+  "at_utc": "20260919T033010Z"
+ }
+}

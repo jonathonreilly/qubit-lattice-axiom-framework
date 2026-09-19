@@ -1,0 +1,10 @@
+Q(1,0)=4 (4/a per occupied link)
+I: Tr(U^H U)/3=1
+cycle: Tr(U^H U)/3=1
+phases: Tr(U^H U)/3=1
+1/√3 Haar factor: (1/√3)*√3=1
+d=1: 4d/a coefficient 4
+d=2: 4d/a coefficient 8
+d=3: 4d/a coefficient 12
+d=5: 4d/a coefficient 20
+SUMMARY: pattern has no purchase on this note - Tr(W^*W)/3=1 on I, 3-cycle and diag phases; the 1/√3 Haar factor normalizes Psi; path energy coefficient is 4d

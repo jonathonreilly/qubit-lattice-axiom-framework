@@ -1,0 +1,6 @@
+pred pair (-1, 0, 0) (0, -1, 0) l1=2
+pred pair (-1, 0, 0) (0, 0, -1) l1=2
+pred pair (0, -1, 0) (0, 0, -1) l1=2
+L=3 torus 9 sites, 3 distinct preds per site: True
+L=4 torus 16 sites, 3 distinct preds per site: True
+SUMMARY: WITNESS REALIZABILITY (PR #8180): the three Z^3 predecessors of a site are pairwise at l1=2 (no triangle); L=3 and L=4 plane tori have three distinct wrapped predecessors at every site; pattern has purchase and the witnesses exist as written

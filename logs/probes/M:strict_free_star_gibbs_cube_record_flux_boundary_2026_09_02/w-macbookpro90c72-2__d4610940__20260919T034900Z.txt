@@ -1,0 +1,76 @@
+== phase_dependent_star_diagonal
+TOTAL: PASS=15 FAIL=1
+== mean_field_instead_of_full_gibbs
+TOTAL: PASS=15 FAIL=1
+== insert_density_density_interaction
+TOTAL: PASS=14 FAIL=2
+== wrong_star_principal_minor
+TOTAL: PASS=15 FAIL=1
+== wrong_star_conditional_normalization
+TOTAL: PASS=15 FAIL=1
+== constant_beta_zero_law
+TOTAL: PASS=15 FAIL=1
+== branch_specific_beta
+TOTAL: PASS=15 FAIL=1
+== branch_specific_writer
+TOTAL: PASS=15 FAIL=1
+== anisotropic_neighbor_count
+TOTAL: PASS=15 FAIL=1
+== all_plus_K1_links
+TOTAL: PASS=15 FAIL=1
+== commuting_K1_generators
+TOTAL: PASS=15 FAIL=1
+== wrong_K1_square
+TOTAL: PASS=15 FAIL=1
+== adjacent_instead_of_body_diagonal_target
+TOTAL: PASS=15 FAIL=1
+== nonzero_K1_body_diagonal_amplitude
+TOTAL: PASS=15 FAIL=1
+== wrong_K0_perfect_transfer
+TOTAL: PASS=15 FAIL=1
+== overwrite_pointer_record
+TOTAL: PASS=15 FAIL=1
+== claim_tree_detects_flux
+TOTAL: PASS=15 FAIL=1
+== claim_gibbs_from_current_axioms
+TOTAL: PASS=15 FAIL=1
+== claim_BBIT_or_P_KIN_selected
+TOTAL: PASS=15 FAIL=1
+== claim_TOE_or_obligation_movement
+TOTAL: PASS=15 FAIL=1
+== source_blob_drift
+TOTAL: PASS=15 FAIL=1
+== wrong_partial_blank_trace
+TOTAL: PASS=15 FAIL=1
+== claim_star_conditionals_are_global_DLR
+TOTAL: PASS=15 FAIL=1
+== claim_edge_factor_is_full_quantum_gibbs
+TOTAL: PASS=15 FAIL=1
+== claim_full_cube_gibbs_branch_equal
+TOTAL: PASS=15 FAIL=1
+== same_mode_record_persists_under_hopping
+TOTAL: PASS=15 FAIL=1
+== close_star_with_leaf_cycle_but_keep_phase_blindness
+TOTAL: PASS=15 FAIL=1
+== treat_blank_as_independent_binary_marginal
+TOTAL: PASS=15 FAIL=1
+== skip_record_actualization_instrument
+TOTAL: PASS=15 FAIL=1
+== leave_record_incident_hopping_on
+TOTAL: PASS=15 FAIL=1
+== external_cube_bonds_left_on
+TOTAL: PASS=15 FAIL=1
+== break_rotated_cube_gauge_covariance
+TOTAL: PASS=15 FAIL=1
+== wrong_edge_exponential_weight
+TOTAL: PASS=15 FAIL=1
+== treat_source_preparation_as_permanent_record
+TOTAL: PASS=15 FAIL=1
+== claim_star_gibbs_is_record_update_dynamics
+TOTAL: PASS=15 FAIL=1
+== break_signed_cube_adjacency_lift
+TOTAL: PASS=15 FAIL=1
+== treat_coordinate_paulis_as_physical_site_qubits
+TOTAL: PASS=15 FAIL=1
+== branch_specific_cube_protocol
+TOTAL: PASS=15 FAIL=1

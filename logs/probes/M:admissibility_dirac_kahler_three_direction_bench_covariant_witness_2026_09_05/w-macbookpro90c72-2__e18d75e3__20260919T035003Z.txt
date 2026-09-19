@@ -1,0 +1,194 @@
+== stale_main_authority
+TOTAL: PASS=28 FAIL=1
+== stale_parent_authority
+TOTAL: PASS=28 FAIL=1
+== claim_objects_registered
+TOTAL: PASS=28 FAIL=1
+== claim_gravity_supplied
+TOTAL: PASS=28 FAIL=1
+== claim_covariance_inherited
+TOTAL: PASS=28 FAIL=1
+== claim_assembly_decided
+TOTAL: PASS=28 FAIL=1
+== claim_cell_selected
+TOTAL: PASS=28 FAIL=1
+== claim_reading_selected
+TOTAL: PASS=28 FAIL=1
+== claim_continuum_read
+TOTAL: PASS=28 FAIL=1
+== break_bench_momenta
+TOTAL: PASS=28 FAIL=1
+== break_witness_reproduction
+TOTAL: PASS=28 FAIL=1
+== break_flat_control
+TOTAL: PASS=28 FAIL=1
+== break_second_multiple_positivity
+TOTAL: PASS=28 FAIL=1
+== break_bloch_equals_direct
+TOTAL: PASS=28 FAIL=1
+== break_witness_multisets
+TOTAL: PASS=28 FAIL=1
+== break_control_multisets
+TOTAL: PASS=28 FAIL=1
+== break_raising_block_additivity
+TOTAL: PASS=28 FAIL=1
+== break_onsite_similarity
+TOTAL: PASS=28 FAIL=1
+== break_triply_mixed_identity
+TOTAL: PASS=28 FAIL=1
+== break_cone_shape_visible
+TOTAL: PASS=28 FAIL=1
+== break_g1_readoff
+TOTAL: PASS=28 FAIL=1
+== break_triply_mixed_consistency
+TOTAL: PASS=28 FAIL=1
+== break_line_rescaling
+TOTAL: PASS=28 FAIL=1
+== break_d07_rescaling
+TOTAL: PASS=28 FAIL=1
+== break_control_failure
+TOTAL: PASS=28 FAIL=1
+== break_overlap_fold_dependence
+TOTAL: PASS=28 FAIL=1
+== break_scout_grade_fence
+TOTAL: PASS=28 FAIL=1
+== break_instance_scope
+TOTAL: PASS=28 FAIL=1
+== drop_n5_fence
+TOTAL: PASS=28 FAIL=1
+== break_float_absence
+TOTAL: PASS=28 FAIL=1
+
+[stderr]
+ity: 5 ms
+[phase] census: 2184 ms
+[phase] construction: 2411 ms
+[bench] witness line onsite pencil
+[bench] witness line onsite form
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] witness half onsite pencil
+[bench] witness d07 onsite pencil
+[bench] W1 line onsite pencil
+[bench] flat line onsite pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] flat zero onsite form
+[bench] flat zero onsite pencil
+[bench] flat zero overlap form
+[bench] flat zero overlap pencil
+[phase] bench: 85917 ms
+[phase] identities: 5369 ms
+[phase] shape: 7856 ms
+[phase] rescalings: 11 ms
+[phase] control: 7516 ms
+[phase] authority: 5 ms
+[phase] census: 1618 ms
+[phase] construction: 1686 ms
+[bench] witness line onsite pencil
+[bench] witness line onsite form
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] witness half onsite pencil
+[bench] witness d07 onsite pencil
+[bench] W1 line onsite pencil
+[bench] flat line onsite pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] flat zero onsite form
+[bench] flat zero onsite pencil
+[bench] flat zero overlap form
+[bench] flat zero overlap pencil
+[phase] bench: 73672 ms
+[phase] identities: 5706 ms
+[phase] shape: 7683 ms
+[phase] rescalings: 11 ms
+[phase] control: 7672 ms
+[phase] authority: 5 ms
+[phase] census: 1616 ms
+[phase] construction: 1684 ms
+[bench] witness line onsite pencil
+[bench] witness line onsite form
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] witness half onsite pencil
+[bench] witness d07 onsite pencil
+[bench] W1 line onsite pencil
+[bench] flat line onsite pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] flat zero onsite form
+[bench] flat zero onsite pencil
+[bench] flat zero overlap form
+[bench] flat zero overlap pencil
+[phase] bench: 89755 ms
+[phase] identities: 5849 ms
+[phase] shape: 7823 ms
+[phase] rescalings: 11 ms
+[phase] control: 8715 ms
+[phase] authority: 8 ms
+[phase] census: 1861 ms
+[phase] construction: 2180 ms
+[bench] witness line onsite pencil
+[bench] witness line onsite form
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] witness half onsite pencil
+[bench] witness d07 onsite pencil
+[bench] W1 line onsite pencil
+[bench] flat line onsite pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] flat zero onsite form
+[bench] flat zero onsite pencil
+[bench] flat zero overlap form
+[bench] flat zero overlap pencil
+[phase] bench: 84650 ms
+[phase] identities: 5939 ms
+[phase] shape: 7959 ms
+[phase] rescalings: 12 ms
+[phase] control: 8448 ms
+[phase] authority: 5 ms
+[phase] census: 1627 ms
+[phase] construction: 1889 ms
+[bench] witness line onsite pencil
+[bench] witness line onsite form
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] witness half onsite pencil
+[bench] witness d07 onsite pencil
+[bench] W1 line onsite pencil
+[bench] flat line onsite pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] flat zero onsite form
+[bench] flat zero onsite pencil
+[bench] flat zero overlap form
+[bench] flat zero overlap pencil
+[phase] bench: 75828 ms
+[phase] identities: 5478 ms
+[phase] shape: 9229 ms
+[phase] rescalings: 12 ms
+[phase] control: 8172 ms
+[phase] authority: 5 ms
+[phase] census: 1862 ms
+[phase] construction: 1981 ms
+[bench] witness line onsite pencil
+[bench] witness line onsite form
+[bench] witness line overlap form
+[bench] witness line overlap pencil
+[bench] witness half onsite pencil
+[bench] witness d07 onsite pencil
+[bench] W1 line onsite pencil
+[bench] flat line onsite pencil
+[bench] witness zero overlap form
+[bench] witness zero overlap pencil
+[bench] flat zero onsite form
+[bench] flat zero onsite pencil
+[bench] flat zero overlap form
+[bench] flat zero overlap pencil
+[phase] bench: 81367 ms
+[phase] identities: 5214 ms
+[phase] shape: 7346 ms
+[phase] rescalings: 11 ms
+[phase] control: 7504 ms

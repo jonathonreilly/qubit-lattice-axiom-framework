@@ -1,0 +1,5 @@
+[note] the floor sentence directly follows 'E(p,q)=[p²+pq+q²+3p+3q]/a': True; 'first nonzero energy4/a': True; K_e=(3/(2a))(-Delta_e): True
+[casimir] trace-orthonormal generators: True; C(1,0), C(0,1), C(1,1), C(2,0) from matrices = ['8/3', '8/3', '6', '20/3'], closed form ['8/3', '8/3', '6', '20/3']: True
+[energy] E = (3/(2a)) C = [p^2+pq+q^2+3p+3q]/a on 625 labels: True; min over nonzero labels of a E = 4 at [(0, 1), (1, 0)]; C there = 8/3
+[counts] whole-group 3(L-1)^3 and individual 3L(L-1)^2 (difference 3(L-1)^2), L = 1..12: True
+SUMMARY: not reproduced - the note's floor 'this polynomial is at least 4, with equality only at (1,0) and (0,1)' follows 'E(p,q)=[p²+pq+q²+3p+3q]/a' and is true of that bracket (min 4 exactly at (1,0), (0,1)); it is consistent with C(1,0) = C(0,1) = 8/3 (recomputed from trace-orthonormal Gell-Mann generators, with C(1,1) = 6 and C(2,0) = 20/3 matching (2/3)(p^2+pq+q^2+3p+3q)) through E = (3/(2a))C, giving the note's 'first nonzero energy 4/a'. The finder applied the floor to C instead of to E's bracket; the plaquette counts hold, as the finder also found

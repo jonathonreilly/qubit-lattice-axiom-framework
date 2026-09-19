@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-attack-g-PR8024",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-jeee7",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8024/casimir_floor_reading.py",
+ "seed": 87756,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f7be85af",
+ "started_utc": "20260919T031556Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "not reproduced - the note's floor 'this polynomial is at least 4, with equality only at (1,0) and (0,1)' follows 'E(p,q)=[p\u00b2+pq+q\u00b2+3p+3q]/a' and is true of that bracket (min 4 exactly at (1,0), (0,1)); it is consistent with C(1,0) = C(0,1) = 8/3 (recomputed from trace-orthonormal Gell-Mann generators, with C(1,1) = 6 and C(2,0) = 20/3 matching (2/3)(p^2+pq+q^2+3p+3q)) through E = (3/(2a))C, giving the note's 'first nonzero energy 4/a'. The finder applied the floor to C instead of to E's bracket; the plaquette counts hold, as the finder also found"
+ },
+ "review": "Not reproduced: the PR 8024 note states the floor 'at least 4, equality only at (1,0),(0,1)' for the bracket p^2+pq+q^2+3p+3q of E = [...]/a (true, min 4 there), consistent with C(1,0) = 8/3 recomputed from trace-orthonormal Gell-Mann generators (C(1,1) = 6, C(2,0) = 20/3) via E = (3/(2a))C = 4/a; the finder applied the floor to C, and the plaquette counts hold.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-g:PR8024/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "89d280c85e8ad6045af82ec0fe0a4c845bba87dc0116160d4d845bc37f887f69",
+ "stdout_tail": "[note] the floor sentence directly follows 'E(p,q)=[p\u00b2+pq+q\u00b2+3p+3q]/a': True; 'first nonzero energy4/a': True; K_e=(3/(2a))(-Delta_e): True\n[casimir] trace-orthonormal generators: True; C(1,0), C(0,1), C(1,1), C(2,0) from matrices = ['8/3', '8/3', '6', '20/3'], closed form ['8/3', '8/3', '6', '20/3']: True\n[energy] E = (3/(2a)) C = [p^2+pq+q^2+3p+3q]/a on 625 labels: True; min over nonzero labels of a E = 4 at [(0, 1), (1, 0)]; C there = 8/3\n[counts] whole-group 3(L-1)^3 and individual 3L(L-1)^2 (difference 3(L-1)^2), L = 1..12: True\nSUMMARY: not reproduced - the note's floor 'this polynomial is at least 4, with equality only at (1,0) and (0,1)' follows 'E(p,q)=[p\u00b2+pq+q\u00b2+3p+3q]/a' and is true of that bracket (min 4 exactly at (1,0), (0,1)); it is consistent with C(1,0) = C(0,1) = 8/3 (recomputed from trace-orthonormal Gell-Mann generators, with C(1,1) = 6 and C(2,0) = 20/3 matching (2/3)(p^2+pq+q^2+3p+3q)) through E = (3/(2a))C, giving the note's 'first nonzero energy 4/a'. The finder applied the floor to C instead of to E's bracket; the plaquette counts hold, as the finder also found\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jeee7",
+  "at_utc": "20260919T031557Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

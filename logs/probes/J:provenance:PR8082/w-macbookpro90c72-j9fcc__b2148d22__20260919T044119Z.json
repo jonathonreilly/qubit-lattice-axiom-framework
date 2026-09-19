@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8082",
+ "type": "judgment",
+ "lane": "native-gaussian-moment-jet-20260910",
+ "worker": "w-macbookpro90c72-j9fcc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8082/provenance_theorem_numbers.py",
+ "seed": 92879,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b2148d22",
+ "started_utc": "20260919T044119Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "provenance OK \u2014 1/2 in log Z, 10^{-6} width, degrees seven\u2013ten / eight / six sourced in the note/runner; Euler recurrence stated in the note"
+ },
+ "review": "provenance: 1/2 in log Z, 10^{-6} width, degrees 7-10/8/6 sourced in the note; Euler recurrence stated; none unsourced",
+ "what": "PR #8082 ([physics-loop] Gaussian local moment jets (conditional-suppo): for every number in the theorem statements of NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/native-gaussian-moment-jet-20260910; git show origin/codex/native-gaussian-moment-jet-20260910:<note>. Create probes/work/pr8082/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8082/<script>.py\"",
+ "stdout_sha256": "ee6fd16d6221ea00948b9839c06aff1277d125bfbaf3b72f5c5cb675d465896a",
+ "stdout_tail": "OK | 1/2 | NOTE: Thus \\(\\log Z=\\tfrac12\\operatorname{Tr}\\log(I+P(U-I))\\), and \\(m_n=(-1)^n n![t^n]Z(t)\\). The factor one half and the reference scalar are es\nOK | 10^{-6} | NOTE: For the supplied dimensionless native Hamiltonian, the negative free spectral projector and the original reference normal-order convention, \nOK | seven | NOTE: claim_scope: \"Conditional native Gaussian determinant bridge and finite source-degree closure, with certified local moments of orders seven \nOK | ten | NOTE: claim_scope: \"Conditional native Gaussian determinant bridge and finite source-degree closure, with certified local moments of orders seven \nOK | eight | NOTE: Every remaining cumulant of degree \\(n\\ge2\\) has at least two defect factors. Splitting at those factors bounds intervening free powers by \\\nOK | six | NOTE: Every remaining cumulant of degree \\(n\\ge2\\) has at least two defect factors. Splitting at those factors bounds intervening free powers by \\\nDERIVED | Euler n Z_n = \u03a3_j j \u2113_j Z_{n-j} (stated in the note)\nSUMMARY: provenance OK \u2014 1/2 in log Z, 10^{-6} width, degrees seven\u2013ten / eight / six sourced in the note/runner; Euler recurrence stated in the note\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9fcc",
+  "at_utc": "20260919T044120Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

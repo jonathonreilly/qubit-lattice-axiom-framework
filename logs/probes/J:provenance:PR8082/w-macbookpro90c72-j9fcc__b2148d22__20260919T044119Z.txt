@@ -1,0 +1,8 @@
+OK | 1/2 | NOTE: Thus \(\log Z=\tfrac12\operatorname{Tr}\log(I+P(U-I))\), and \(m_n=(-1)^n n![t^n]Z(t)\). The factor one half and the reference scalar are es
+OK | 10^{-6} | NOTE: For the supplied dimensionless native Hamiltonian, the negative free spectral projector and the original reference normal-order convention, 
+OK | seven | NOTE: claim_scope: "Conditional native Gaussian determinant bridge and finite source-degree closure, with certified local moments of orders seven 
+OK | ten | NOTE: claim_scope: "Conditional native Gaussian determinant bridge and finite source-degree closure, with certified local moments of orders seven 
+OK | eight | NOTE: Every remaining cumulant of degree \(n\ge2\) has at least two defect factors. Splitting at those factors bounds intervening free powers by \
+OK | six | NOTE: Every remaining cumulant of degree \(n\ge2\) has at least two defect factors. Splitting at those factors bounds intervening free powers by \
+DERIVED | Euler n Z_n = Σ_j j ℓ_j Z_{n-j} (stated in the note)
+SUMMARY: provenance OK — 1/2 in log Z, 10^{-6} width, degrees seven–ten / eight / six sourced in the note/runner; Euler recurrence stated in the note

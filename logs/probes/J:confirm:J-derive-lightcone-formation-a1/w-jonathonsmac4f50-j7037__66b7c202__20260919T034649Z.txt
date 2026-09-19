@@ -1,0 +1,5 @@
+PASS L1: 3-ring, stencil {x, x+-1}: K symmetric on 216^2 pairs (True), rows sum to prod Z_x (True); TV(pi, static nearest-neighbour law) = 184057/1545848 = 0.1191
+PASS L2: envelope holds for E = 1..12; L = 4 values {2: Fraction(49, 24), 4: Fraction(49, 40), 6: Fraction(49, 48), 8: Fraction(49, 48), 10: Fraction(49, 40), 12: Fraction(49, 24)}
+PASS L3: c = 270/989 = 0.273003 (antipodal flip, environment (0, 0, 0, 2, 2, 3)); 7c = 1890/989 = 1.9110 > 1
+HIT: confirmed - lightcone-formation a1: the symmetric-stencil synchronous chain is reversible w.r.t. pi ~ prod Z_x (kernel symmetry on every pair of a 3-ring instance), pi is not the static nearest-neighbour law, the linear kernel obeys 7 sigma^2/(2E) <= C <= 49 sigma^2/(2E) with the L = 4 values 49/24, 49/40, 49/48, and the seven-predecessor six-axis one-slot constant at (3,1,2) is c = 270/989 exactly (antipodal flip), 7c = 1890/989 > 1; recomputed independently. The attempt correctly leaves RP/LRO for pi open
+SUMMARY: confirmed - no failing step in the modest claims (a), (c), (d)

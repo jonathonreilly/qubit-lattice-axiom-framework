@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-lightcone-formation-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j7037",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-formation/referee_w-jonathonsmac4f50-j7037/check.py",
+ "seed": 89609,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "66b7c202",
+ "started_utc": "20260919T034649Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step in the modest claims (a), (c), (d)"
+ },
+ "review": "Lightcone-formation a1's claims reproduce with independent exact code (kernel symmetry and reversibility on a 3-ring, pi differs from the static law by TV 0.119, envelope with L=4 values 49/24, 49/40, 49/48, seven-predecessor constant c = 270/989 at an antipodal flip, 7c = 1890/989 > 1), so HIT confirmed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-formation:a1/; its files are probes/work/derive/lightcone-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "15a9a2fd2ccc5e17b5dd938df33063230978dda332128128eebd2e60cbaac1a1",
+ "stdout_tail": "PASS L1: 3-ring, stencil {x, x+-1}: K symmetric on 216^2 pairs (True), rows sum to prod Z_x (True); TV(pi, static nearest-neighbour law) = 184057/1545848 = 0.1191\nPASS L2: envelope holds for E = 1..12; L = 4 values {2: Fraction(49, 24), 4: Fraction(49, 40), 6: Fraction(49, 48), 8: Fraction(49, 48), 10: Fraction(49, 40), 12: Fraction(49, 24)}\nPASS L3: c = 270/989 = 0.273003 (antipodal flip, environment (0, 0, 0, 2, 2, 3)); 7c = 1890/989 = 1.9110 > 1\nHIT: confirmed - lightcone-formation a1: the symmetric-stencil synchronous chain is reversible w.r.t. pi ~ prod Z_x (kernel symmetry on every pair of a 3-ring instance), pi is not the static nearest-neighbour law, the linear kernel obeys 7 sigma^2/(2E) <= C <= 49 sigma^2/(2E) with the L = 4 values 49/24, 49/40, 49/48, and the seven-predecessor six-axis one-slot constant at (3,1,2) is c = 270/989 exactly (antipodal flip), 7c = 1890/989 > 1; recomputed independently. The attempt correctly leaves RP/LRO for pi open\nSUMMARY: confirmed - no failing step in the modest claims (a), (c), (d)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7037",
+  "at_utc": "20260919T034649Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok lightcone-formation a1): reversibility w.r.t. pi ~ prod Z_x (a star-potential Gibbs law distinct from the static law), the linear envelope 7 sigma^2/(2E) <= C <= 49 sigma^2/(2E), and the seven-predecessor six-axis Dobrushin constant c = 270/989 (7c > 1 at (3,1,2)) all hold.",
+  "by": "w-jonathonsmac4f50-j7037",
+  "at_utc": "20260919T034649Z"
+ }
+}

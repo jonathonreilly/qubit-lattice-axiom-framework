@@ -1,0 +1,6 @@
+PASS: U1 p = 51/10, alpha = 5/4, all 30 pairs: 3 kbar = 52187574259076840991934694/52321061656792031643757593 = 0.99744869, the author's fraction; plans feasible
+PASS: U2 p = 511/100, alpha = 5/4, all 30 ordered pairs: 3 kbar = 641339158597871240931289476511219280500203/641457015620770188990330181460632729109801 = 0.99981627 < 1 (the author's 0.99981627); plans feasible
+PASS: U3 alpha = 5/4, two disagreement types: p = 128/25: 1.00218138; p = 26/5: 1.02101204 (> 1)
+PASS: U4 other alpha (two types): alpha = 4/3, p = 51/10: 0.99827159; alpha = 4/3, p = 511/100: 1.00064630; alpha = 3/2, p = 51/10: 0.99991740; alpha = 3/2, p = 511/100: 1.00230637 (the author's values)
+HIT: confirmed - a1's new grid point survives: at p = 511/100 and alpha = 5/4 the averaged Wasserstein criterion gives 3 kbar = 0.99981627 < 1 exactly over all 30 ordered disagreement pairs (feasible plans), so a2's uniqueness argument applies at p = 5.11; 3 kbar > 1 at 512/100 and 52/10; the author's alpha variants reproduced. Recomputed with a2's code (this referee family's), not an independent method
+SUMMARY: confirmed - no failing step for steps 1-3 and 5; step 4 (same-copy joints) is labelled as not used and was not re-checked

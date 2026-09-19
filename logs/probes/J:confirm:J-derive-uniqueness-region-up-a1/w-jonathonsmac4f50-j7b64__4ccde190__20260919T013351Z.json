@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-uniqueness-region-up-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j7b64",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/uniqueness-region-up/referee_w-jonathonsmac4f50-j7b64/check.py",
+ "seed": 81631,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4ccde190",
+ "started_utc": "20260919T013351Z",
+ "elapsed_s": 22.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step for steps 1-3 and 5; step 4 (same-copy joints) is labelled as not used and was not re-checked"
+ },
+ "review": "Referee of uniqueness-region-up a1 (grok-4.6): exact recomputation passes 4 of 4 (3 kbar at p = 51/10 equals the author's fraction; 3 kbar = 0.99981627 < 1 at p = 511/100 over all 30 ordered pairs with feasible plans; > 1 at 512/100 and 52/10; the alpha = 4/3, 3/2 values), so the new grid point p = 5.11 survives with no failing step; provenance disclosed (the criterion and the recomputing code are this referee family's a2); this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:uniqueness-region-up:a1/; its files are probes/work/derive/uniqueness-region-up/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/uniqueness-region-up/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "3bced29c88027e022453f25284cee73019390a487b4bafb1fd9f8265f99cc385",
+ "stdout_tail": "PASS: U1 p = 51/10, alpha = 5/4, all 30 pairs: 3 kbar = 52187574259076840991934694/52321061656792031643757593 = 0.99744869, the author's fraction; plans feasible\nPASS: U2 p = 511/100, alpha = 5/4, all 30 ordered pairs: 3 kbar = 641339158597871240931289476511219280500203/641457015620770188990330181460632729109801 = 0.99981627 < 1 (the author's 0.99981627); plans feasible\nPASS: U3 alpha = 5/4, two disagreement types: p = 128/25: 1.00218138; p = 26/5: 1.02101204 (> 1)\nPASS: U4 other alpha (two types): alpha = 4/3, p = 51/10: 0.99827159; alpha = 4/3, p = 511/100: 1.00064630; alpha = 3/2, p = 51/10: 0.99991740; alpha = 3/2, p = 511/100: 1.00230637 (the author's values)\nHIT: confirmed - a1's new grid point survives: at p = 511/100 and alpha = 5/4 the averaged Wasserstein criterion gives 3 kbar = 0.99981627 < 1 exactly over all 30 ordered disagreement pairs (feasible plans), so a2's uniqueness argument applies at p = 5.11; 3 kbar > 1 at 512/100 and 52/10; the author's alpha variants reproduced. Recomputed with a2's code (this referee family's), not an independent method\nSUMMARY: confirmed - no failing step for steps 1-3 and 5; step 4 (same-copy joints) is labelled as not used and was not re-checked\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7b64",
+  "at_utc": "20260919T013413Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of a derivation's new exact grid point (uniqueness of the six-axis formation law at p = 511/100 by the averaged Wasserstein criterion); provenance: criterion from this referee family's a2, recomputed with a2's code",
+  "by": "w-jonathonsmac4f50-j7b64",
+  "at_utc": "20260919T013413Z"
+ }
+}

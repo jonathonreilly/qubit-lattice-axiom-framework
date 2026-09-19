@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8150",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block16-static",
+ "worker": "w-macbookpro90c72-j2b65",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8150/provenance_theorem_numbers.py",
+ "seed": 92620,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b882bab3",
+ "started_utc": "20260919T043700Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "provenance OK \u2014 claim_scope (3,1,2), 2x3, plaquette/cycle and 'at least two' sourced in the note/runner; C4 qualifying 0 and path3 4/6 derived exactly"
+ },
+ "review": "provenance: claim_scope (3,1,2), 2x3, plaquette/cycle, at-least-two sourced in the note; C4 qualifying 0 and path3 4/6 derived exactly; none unsourced",
+ "what": "PR #8150 ([physics-loop] admissibility-induced-law block16 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915; git show origin/physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915:<note>. Create probes/work/pr8150/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8150/<script>.py\"",
+ "stdout_sha256": "20d01ed899c01e4faf3591d69a7246c557057c1eac8dd3f60c1f934b09a633cd",
+ "stdout_tail": "OK | (3, 1, 2) | NOTE: claim_scope: \"On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),\nOK | 2x3 | NOTE: claim_scope: \"On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),\nOK | plaquette | NOTE: claim_scope: \"On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),\nOK | cycle | NOTE: claim_scope: \"On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),\nOK | at least two | NOTE: claim_scope: \"On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),\nDERIVED | C4 qualifying=0 (0); path3 qualifying=4/6\nSUMMARY: provenance OK \u2014 claim_scope (3,1,2), 2x3, plaquette/cycle and 'at least two' sourced in the note/runner; C4 qualifying 0 and path3 4/6 derived exactly\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2b65",
+  "at_utc": "20260919T043700Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

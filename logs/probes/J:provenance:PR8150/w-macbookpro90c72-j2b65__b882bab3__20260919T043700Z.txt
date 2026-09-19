@@ -1,0 +1,7 @@
+OK | (3, 1, 2) | NOTE: claim_scope: "On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),
+OK | 2x3 | NOTE: claim_scope: "On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),
+OK | plaquette | NOTE: claim_scope: "On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),
+OK | cycle | NOTE: claim_scope: "On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),
+OK | at least two | NOTE: claim_scope: "On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2),
+DERIVED | C4 qualifying=0 (0); path3 qualifying=4/6
+SUMMARY: provenance OK — claim_scope (3,1,2), 2x3, plaquette/cycle and 'at least two' sourced in the note/runner; C4 qualifying 0 and path3 4/6 derived exactly

@@ -1,0 +1,35 @@
+{
+ "task": "R:soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "soft",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.py",
+ "seed": 80758,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T011918Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4a3180639c7e55570dee1dca4dd739555b2bce7a4c8a1342752e7e46a2adf452",
+ "stdout_tail": "rse_spacing\": 32}], \"nonzero_remote_occupation_probabilities\": [0.9929647105221466, 0.007022876801392058, 1.2402941394383572e-05, 9.730772490069837e-09, 4.293290333719706e-12, 1.2121455218726911e-15, 2.3770031731977733e-19], \"qubit_chain_sites\": 7}\nPASS preferred_frame_quadratic {\"exact_full_equation_pole_weights\": [\"9/10\", \"1/5\", \"54/5\"], \"gauge_section_determinant\": \"-(9*w**2 - 10)**2*(18*w**2 - 19)**2*(54*w**2 - 95)/1000000000\", \"metric_only_Ward_assumed\": false, \"mode_counts\": [{\"additional_mode_nullity\": 2, \"gauge_nullity\": 4, \"speed_squared\": \"10/9\"}, {\"additional_mode_nullity\": 2, \"gauge_nullity\": 4, \"speed_squared\": \"19/18\"}, {\"additional_mode_nullity\": 1, \"gauge_nullity\": 4, \"speed_squared\": \"95/54\"}], \"positive_reduced_kinetic_and_gradient_coefficients\": [\"9/20\", \"1/2\", \"1/10\", \"19/180\", \"27/5\", \"19/2\"], \"quadratic_gauge_directions\": 4, \"unfixed_fields\": 13}\nTOTAL: PASS=8 FAIL=0\nper_element: exact residue, action, characteristic and stencil identities are checked in their declared conventions.\nper_site: the full seven-qubit nearest-neighbor XY Hamiltonian and occupation response are constructed and compared.\nper_mode: actual Dirac/Wilson eigenmodes and the complete thirteen-field aether quadratic symbol are checked.\nper_block: exact four-leg collision kernels, reaction menus and a gauge-section determinant provide finite falsifiers.\nlattice_wide: checked and not executed \u2014 quantified family claims use the written proofs; no interacting gravity phase is established.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T011920Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/soft_spin2_collision_invariants_common_cones_and_lattice_ward_boundaries_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

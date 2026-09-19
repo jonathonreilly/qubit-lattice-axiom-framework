@@ -1,0 +1,34 @@
+{
+ "task": "R:single_clock_blocked_time_unit_split_n2_support_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "single",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
+ "seed": 80746,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T011906Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5a867a61558a008f980648348308012ae7a6924b7b035e2cd817b391125ef31b",
+ "stdout_tail": "ator :: max residual 2.2e-16\n  [PASS] 1/a_tau reconstruction is the factor-two falsifier :: max residual 4.4e-16\n  [PASS] rescaling the supplied block time rescales H without changing T2 :: max residual 4.4e-16\n  [PASS] period-two single-step factors are distinct\n  [PASS] the physical block object is an ordered two-step product\n\n[C] Record/count clock no-go\n  [PASS] same record word/counts survive multiple clocks\n  [PASS] all supplied clocks are strictly increasing\n  [PASS] total rates differ under clock choice :: {'uniform': 1.0, 'slow': 0.5, 'accelerated': 0.5}\n  [PASS] interval-rate profiles differ under nonuniform clock\n  [PASS] Record order/count data do not determine physical elapsed time\n\n[D] branch hygiene\n  [PASS] source note exists on the canonical docs surface\n  [PASS] runner is paired with the science note\n  [PASS] note forbids audit/publication/status surface edits\n  [PASS] runner does not depend on branch-local loop packets\n\n[E] status firewall\n  [PASS] note forbids retained/promoted/audit-ratified status\n  [PASS] B-AXIS.2 and B-AXIS.3 remain outside this support\n  [PASS] absolute physical clock unit remains open\n  [PASS] internal denominator support is tied to the supplied T_hat^2 object\n  [PASS] note explicitly says no new axiom\n  [PASS] note explicitly says no audit-surface update\n\n==============================================================================\nTOTAL: PASS=37 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T011907Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

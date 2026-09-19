@@ -1,0 +1,35 @@
+{
+ "task": "R:spatial_metric_hop_weight_light_bending_factor_two_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "spatial",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spatial_metric_hop_weight_light_bending_factor_two_check_2026_09_03.py",
+ "seed": 80867,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T012107Z",
+ "elapsed_s": 60.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a345803d86d359694b36ba5e9edf0fa2c06186e2a23bc90c488335f65e449b5a",
+ "stdout_tail": "atio error 7e-04 and energy-rate ratio 2.00012. The residual cause and full error budget are unvalidated.\nPASS C1 [finite nominal-energy comparison] Energies +0.7660/+0.7660/+0.7660, (2,1) coefficients -4.0148/-7.9959/-5.0498/spread 70 percent versus 1+chi targets -4.0070/-8.0000/-5.0448; (1,1) -3.9998/-3.9996/-3.9997/spread 0.004 percent. Actual equal-speed modes can differ; no position-and-speed-only trajectory theorem.\nPASS D1 [uniform fixed-q block] Two-level spectrum 0.0e+00, diagonal Gamma identity 0.0e+00, off-diagonal identity 0.0e+00; uniform (1,1) interband element 2.2e-16 versus (2,1) 0.7400. This cancellation does not hold for general nonuniform fields; band labels do not derive particle ontology.\nPASS D2 [finite window scatter] Massive (2,1) scatters +0.153/+0.565/+1.366 versus (1,1) +0.002/+0.002/+0.003; means -3.937/-3.930/-3.933. Massless scatters 0.01574/0.00207; relative massive/light residuals 0.6/0.11 percent. These measurements do not determine a complete interband error mechanism.\nPASS E1 [external-field identity] H(2,1)-H(1,1)={Phi,M}/2: bond residual 1.7e-16, anticommutator residual 1.7e-16. No physical T00 source, Poisson solve, beta=1 authority or alpha=2 derivation follows.\nSUMMARY: two declared weights give exact trigonometric scalar-symbol acceleration. Chi is a hop fraction; equal actual speeds can accelerate differently. Uniform block cancellation has a nonuniform counterexample. Finite packet ratios do not derive gravity.\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T012207Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

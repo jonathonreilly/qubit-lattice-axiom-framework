@@ -1,0 +1,27 @@
+PASS current axioms supply Z3 space and M2 sites but no time metric :: {'axiomatic_spatial_dimension': 3, 'axiomatic_site_algebra': 'M_2(C)', 'axiomatic_time_metric': False}
+FAIL all seven named predecessor notes exist :: {22: PosixPath('/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/CLOCK_AS_COMMIT_COUNT_AND_RATE_CLASSIFICATION_CYCLE22_NOTE_2026-07-14.md'), 33: PosixPath('/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/LOCAL_TO_GLOBAL_CUBIC_PROCESS_GLUE_CYCLE33_NOTE_2026-07-14.md'), 172: PosixPath('/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/RECURRENT_CARRIER_MATTER_KINEMATICS_CYCLE172_NOTE_2026-07-16.md'), 224: PosixPath('/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/STATIONARY_LOCAL_FIRST_EVENT_HISTORY_CYCLE224_NOTE_2026-07-17.md'), 230: PosixPath('/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md'), 238: PosixPath('/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/STATE_LOCAL_FERMIONIZATION_TOPOLOGICAL_SECTOR_TOURNAMENT_CYCLE238_NOTE_2026-07-17.md'), 239: PosixPath('/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/DISTINGUISHABLE_ANTISYMMETRIC_FOCK_COMPILER_CYCLE239_NOTE_2026-07-17.md')}
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/spatial_compiler_derived_causal_time_bridge_cycle243_2026_07_17.py", line 558, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/spatial_compiler_derived_causal_time_bridge_cycle243_2026_07_17.py", line 545, in main
+    source_and_documentation_contract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/spatial_compiler_derived_causal_time_bridge_cycle243_2026_07_17.py", line 145, in source_and_documentation_contract
+    texts = {cycle: normalized(path) for cycle, path in SOURCES.items()}
+                    ~~~~~~~~~~^^^^^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/spatial_compiler_derived_causal_time_bridge_cycle243_2026_07_17.py", line 58, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/CLOCK_AS_COMMIT_COUNT_AND_RATE_CLASSIFICATION_CYCLE22_NOTE_2026-07-14.md'

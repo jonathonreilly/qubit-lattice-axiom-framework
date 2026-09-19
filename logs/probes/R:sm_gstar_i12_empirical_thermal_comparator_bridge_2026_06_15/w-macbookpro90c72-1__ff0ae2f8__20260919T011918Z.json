@@ -1,0 +1,35 @@
+{
+ "task": "R:sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "sm",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py",
+ "seed": 80758,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T011918Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=70 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "33c999f9a4a8afa73dc1461267bcebc19ebdec555ff03ee432d2457b0d84a072",
+ "stdout_tail": "< 1 at 100 GeV (2.349e-09)\nPASS: 0.6 eV generous edge still gives Gamma/H << 1 at 100 GeV (8.458e-08)\nPASS: 0.1 eV comparator is more than four decades below threshold (4.31)\nPASS: 0.6 eV generous edge is more than three decades below threshold (3.54)\nPASS: thermalization at 100 GeV implies m_nu above 1 keV (2.063e+03 eV)\nPASS: thermalization at 100 GeV is above 0.6 eV comparator by > 1000x\nPASS: prefactor grid has 3 masses x 3 temperatures x 5 enhancements = 45 cases\nPASS: all prefactor-grid cases remain out of equilibrium (Gamma/H < 1) (worst=8.458e-04 at m=0.6 eV, T=1.000e+02 GeV, E=1.0e+04)\nPASS: hostile E=1e4 at 0.6 eV, 100 GeV still has Gamma/H < 1e-3 (8.458e-04)\nPASS: hostile E=1e4 thermalization at 100 GeV still implies m_nu > 20 eV (2.063e+01 eV)\nPASS: hostile E=1e4 thermalization mass remains >30x the 0.6 eV generous edge (34.38x)\nPASS: central 0.1 eV branch survives even E=1e8 at 100 GeV (2.349e-01)\nPASS: temperature monotonicity makes 100 GeV the most lenient point for every enhancement\nPASS: exact 1.66/rate prefactors are not decisive inside the E<=1e4 robustness box\nPASS: note does not claim audit-retained status\nPASS: note does not allow bare retained wording\nPASS: note marks the arithmetic as conditional-support\nPASS: note keeps small mnu derivation excluded\nPASS: note keeps thermal-rate derivation excluded\nPASS: downstream citation rule prevents retained authority use\nPASS: note denies new axiom\nTOTAL: PASS=70 FAIL=0\nVERDICT: bounded comparator bridge passes\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T011918Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

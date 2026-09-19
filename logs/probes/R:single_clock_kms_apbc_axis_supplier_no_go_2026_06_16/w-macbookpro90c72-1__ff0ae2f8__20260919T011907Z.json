@@ -1,0 +1,34 @@
+{
+ "task": "R:single_clock_kms_apbc_axis_supplier_no_go_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "single",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py",
+ "seed": 80747,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T011907Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9b4584c879c6c9bbfd496437c59924fdc2fccb77a39f8d9fcda0735df1a9fba4",
+ "stdout_tail": "ns 'actual_current_surface_status: no-go'\nPASS: SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md contains 'Five scoped routes were checked'\nPASS: SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md contains 'context only, not as a proof dependency'\nPASS: KMS note starts from supplied RP transfer\nPASS: KMS note names a supplied Euclidean time block\nPASS: KMS note APBC is already time-labelled\nPASS: scope note keeps N2 explicit\nPASS: scope note keeps N4 explicit\nPASS: scope note keeps N5 explicit\nPASS: prior axis no-go identifies BC-asymmetry pin\nPASS: spin/Berezin note is algebraic after generators are supplied\nPASS: W is orthogonal -- resid=0.00e+00\nPASS: periodic staggered surface is W-invariant -- resid=0.00e+00\nPASS: APBC on supplied tau transports exactly to APBC on supplied x1 -- resid=0.00e+00\nPASS: APBC(tau)/PBC(x1) breaks W only as a supplied asymmetric datum -- resid=16\nPASS: APBC on both exchanged axes restores W -- resid=0.00e+00\nPASS: tau-APBC removes the periodic zero-kernel witness on this block -- kernel_dim=0\nPASS: PBC surface keeps a zero-kernel witness on this block -- kernel_dim=16\nPASS: APBC cyclic shift has C^4=-I on a supplied circle\nPASS: PBC cyclic shift has C^4=I on a supplied circle\nPASS: APBC cyclic shift has C^6=-I on a supplied circle\nPASS: PBC cyclic shift has C^6=I on a supplied circle\n\nSUMMARY: PASS=25 FAIL=0\nAUDIT_LEDGER_WRITTEN=FALSE\nAUDIT_VERDICT_APPLIED=FALSE\nB_AXIS_DERIVED=FALSE\nBC_ASYMMETRY_SUPPLIED_BY_KMS_APBC=FALSE\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T011907Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

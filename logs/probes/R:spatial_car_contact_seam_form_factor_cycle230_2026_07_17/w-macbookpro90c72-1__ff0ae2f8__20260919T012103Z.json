@@ -1,0 +1,31 @@
+{
+ "task": "R:spatial_car_contact_seam_form_factor_cycle230_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "spatial",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+ "seed": 80863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T012103Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "989781da57da847f12896d61785a915b7834bea6c51e082b7f1f9029e3dd766d",
+ "stdout_tail": "cle_phase_min': 3.1289390233766534, 'maximum_degenerate_spread': 4.440892098500626e-16}, {'L': 78, 'lower_gap': 0.047873475842125535, 'upper_gap': 0.032680181942228215, 'phase_cost': 12.542301401541028, 'wrapped_phase': 0.024069212818144826, 'singular_min': 0.9984148041719777, 'singular_max': 0.9984148041719785, 'frobenius': 1.9968296083439563, 'raw_operator_over_g': 2.103910223056648e-06, 'hole_phase_max': -3.1344401323269624, 'particle_phase_min': 3.1367105684435526, 'maximum_degenerate_spread': 4.440892098500626e-16}, {'L': 416, 'lower_gap': 0.007596646949948438, 'upper_gap': 0.007507163884617807, 'phase_cost': 12.561856611588686, 'wrapped_phase': 0.004514002770486904, 'singular_min': 0.9998884863600149, 'singular_max': 1.0, 'frobenius': 1.999832731871835, 'raw_operator_over_g': 1.3890568104233045e-08, 'hole_phase_max': -3.140457435531498, 'particle_phase_min': 3.1404708702628445, 'maximum_degenerate_spread': 4.440892098500626e-16}]\nPASS for this contact the tested U=+1 crossing has the same reduced strength; nonzero coupling alone is not the seam signature :: {'singular_residual': 1.4174378709434725e-15, 'ordinary_phase_cost': 0.0005977355698718143}\nPASS the shrinking-seam form factor is proper-cubic covariant in every tested frame :: 1.6764000044290905e-15\nPASS one or two passive tensor spectators leave the contact matrix element unchanged :: {'one_spectator': np.float64(1.962615573354719e-17), 'two_spectators': np.float64(2.8609792490763984e-17)}\nSUMMARY PASS 30 FAIL 0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T012104Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

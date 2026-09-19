@@ -1,0 +1,31 @@
+{
+ "task": "R:six_mode_paired_direction_coin_b_eigenvalue_determinant_factorization_2026_07_23",
+ "type": "runner-reexecution",
+ "lane": "six",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/six_mode_paired_direction_coin_b_eigenvalue_determinant_factorization_2026_07_23.py",
+ "seed": 80749,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T011909Z",
+ "elapsed_s": 8.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "96055bf1410481ac532595b7dbbc536230f7df8a18696cc09e4b6839b3856ccc",
+ "stdout_tail": "PASS direct full determinant equals the stated Laurent factorization :: -b**3*(b - 1)**2*(b + 1)*(x - 1)**2*(y - 1)**2*(z - 1)**2/(8*x*y*z)\nPASS independent block/rank-one route equals the full determinant :: -b**3*(b - 1)**2*(b + 1)*(x - 1)**2*(y - 1)**2*(z - 1)**2/(8*x*y*z)\nPASS all three 2 x 2 block determinants have the required factor :: (-b*(b - 1)*(x - 1)**2/(2*x), -b*(b - 1)*(y - 1)**2/(2*y), -b*(b - 1)*(z - 1)**2/(2*z))\nPASS each block supplies 2/(b-1) to the rank-one multiplier :: (2/(b - 1), 2/(b - 1), 2/(b - 1))\nPASS zero-momentum characteristic multiplicities are 1, 2, and 3 :: -(b - lambda)**3*(lambda - 1)*(lambda + 1)**2\nPASS generic exact witness is nonzero :: -131712/5\nPASS wrong-sign control is rejected :: -263424/5\nPASS missing-(b+1) control is rejected :: -115248/5\nPASS singular-parameter and coordinate-factor specializations agree exactly :: (({b: 0, x: 2, y: 3, z: 5}, 0), ({b: 1, x: 2, y: 3, z: 5}, 0), ({b: -1, x: 2, y: 3, z: 5}, 0), ({b: 7, x: 1, y: 3, z: 5}, 0))\nRESULT pass=9 fail=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T011918Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

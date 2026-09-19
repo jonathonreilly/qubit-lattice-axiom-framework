@@ -1,0 +1,35 @@
+{
+ "task": "R:single_clock_baxis_downstream_firewall_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "single",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/single_clock_baxis_downstream_firewall_2026_06_15.py",
+ "seed": 80746,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T011906Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ea2d01b0e44290941cb1f23ec39954135ea5268252ccd06e60b165a3fa1929a2",
+ "stdout_tail": "Single-clock downstream B-AXIS firewall\n========================================================================\n  [PASS] A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md names B-AXIS\n  [PASS] A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md marks single-clock conditional\n  [PASS] A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md names B-AXIS\n  [PASS] A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md marks single-clock conditional\n  [PASS] PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md names B-AXIS\n  [PASS] PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md marks single-clock conditional\n  [PASS] STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md names B-AXIS\n  [PASS] STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md marks single-clock conditional\n  [PASS] stale phrase absent: Single-clock codimension-1 evolution; uniqueness\n  [PASS] stale phrase absent: Temporal direction is the unique RP-admissible r\n  [PASS] stale phrase absent: unique RP-admissible reflection axis induces a p\n  [PASS] stale phrase absent: temporal direction \u03c4 is the **unique** lattice d\n  [PASS] stale phrase absent: no spatial axis admits RP\n  [PASS] stale phrase absent: (S3) of the single-clock theorem produces a NEGA\n  [PASS] stale phrase absent: retained per [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENS\n  [PASS] stale phrase absent: proposed_retained`, audit-pending; PR 418\nSUMMARY: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T011906Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

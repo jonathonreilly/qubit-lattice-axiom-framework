@@ -1,0 +1,35 @@
+{
+ "task": "R:spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "spatial",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_2026_09_14.py",
+ "seed": 80864,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff0ae2f8",
+ "started_utc": "20260919T012104Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e9013d54270d592fef26e052218eed429204de18d7319ea5f738ef045caa8cfc",
+ "stdout_tail": "375934542964], \"full_vs_reduced_error\": 3.284856830987337e-10, \"independent_c_of_r_error\": 1.2154721673596214e-11, \"initial_v_c_e\": [0.3, 1.0, 0.4]}, {\"ell\": 100000.0, \"final_v_c_e\": [1.311967905949134, 1.3119653040383719, 0.01969022065461342], \"full_vs_reduced_error\": 6.874727453975993e-10, \"independent_c_of_r_error\": 2.236766327712303e-11, \"initial_v_c_e\": [1.7, 1.0, 0.4]}, {\"ell\": 100000.0, \"final_v_c_e\": [1.0, 1.0, 0.017191312285906212], \"full_vs_reduced_error\": 1.3614437355258246e-10, \"independent_c_of_r_error\": 0.0, \"initial_v_c_e\": [1.0, 1.0, 0.4]}, {\"ell\": 100000.0, \"final_v_c_e\": [1.1719750129473556, 1.1719842363744006, 0.018596264820578388], \"full_vs_reduced_error\": 5.604949837589857e-10, \"independent_c_of_r_error\": 1.887601186467691e-11, \"initial_v_c_e\": [0.8, 1.7, 0.4]}]}\nPASS: check_threshold_and_flow_limits\nper_element: exact midpoint vertices, Clifford traces and 24-point spherical moments challenge the algebraic normalization\nper_site: the explicit nearest-neighbor symbol has four separated Weyl cones, with no imported taste or Dirac multiplicity\nper_mode: full photon Ward cancellations and direct longitudinal matrix derivatives test the actual tensor and source vertices\nper_block: independent frequency integrals, lattice shells, tensor contractions and coupled-flow solutions challenge distinct proof steps\nlattice_wide: analytic integrable remainders establish one-loop logarithmic matching; no all-orders phase or physical pole is inferred\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T012107Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

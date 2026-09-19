@@ -1,0 +1,72 @@
+== break_source_input_hash
+TOTAL: PASS=35 FAIL=1
+== break_source_input_readability
+TOTAL: PASS=35 FAIL=1
+== claim_objects_registered
+TOTAL: PASS=34 FAIL=2
+== claim_gravity_supplied
+TOTAL: PASS=35 FAIL=1
+== claim_symbol_is_dynamics
+TOTAL: PASS=35 FAIL=1
+== claim_cone_is_spacetime_cone
+TOTAL: PASS=35 FAIL=1
+== claim_assembly_selected
+TOTAL: PASS=35 FAIL=1
+== claim_readings_licensed
+TOTAL: PASS=35 FAIL=1
+== break_lane_kernel_fidelity
+TOTAL: PASS=35 FAIL=1
+== break_three_direction_shadow
+TOTAL: PASS=35 FAIL=1
+== break_assembler_fidelity
+TOTAL: PASS=35 FAIL=1
+== break_cell_form_reconciliation
+TOTAL: PASS=35 FAIL=1
+== break_flat_cell_identity
+TOTAL: PASS=35 FAIL=1
+== break_flat_symbol_identity
+TOTAL: PASS=35 FAIL=1
+== break_flat_bench_multiset
+TOTAL: PASS=35 FAIL=1
+== break_bloch_bench_agreement
+TOTAL: PASS=35 FAIL=1
+== break_witness_spectra
+TOTAL: PASS=35 FAIL=1
+== break_boundary_edge_case
+TOTAL: PASS=35 FAIL=1
+== break_onsite_cone_lemma
+TOTAL: PASS=35 FAIL=1
+== break_overlap_cone_formula
+TOTAL: PASS=35 FAIL=1
+== break_two_dim_branches
+TOTAL: PASS=35 FAIL=1
+== break_three_dim_branch_identification
+TOTAL: PASS=35 FAIL=1
+== claim_principal_part_scalar
+TOTAL: PASS=35 FAIL=1
+== claim_cone_is_metric_cone
+TOTAL: PASS=34 FAIL=2
+== break_coincidence_census
+TOTAL: PASS=35 FAIL=1
+== break_coincidence_locus
+TOTAL: PASS=35 FAIL=1
+== break_shear_registration
+TOTAL: PASS=35 FAIL=1
+== claim_volume_registration
+TOTAL: PASS=35 FAIL=1
+== drop_tension_record
+TOTAL: PASS=35 FAIL=1
+== break_scout_grade_fence
+TOTAL: PASS=35 FAIL=1
+== claim_assembly_decided
+TOTAL: PASS=35 FAIL=1
+== claim_hodge_reading_selected
+TOTAL: PASS=35 FAIL=1
+== break_instance_scope
+TOTAL: PASS=35 FAIL=1
+== drop_n5_fence
+TOTAL: PASS=35 FAIL=1
+== break_nsimplify_absence
+TOTAL: PASS=35 FAIL=1
+== break_float_absence
+TOTAL: PASS=35 FAIL=1

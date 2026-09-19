@@ -1,0 +1,10 @@
+PASS direct full determinant equals the stated Laurent factorization :: -b**3*(b - 1)**2*(b + 1)*(x - 1)**2*(y - 1)**2*(z - 1)**2/(8*x*y*z)
+PASS independent block/rank-one route equals the full determinant :: -b**3*(b - 1)**2*(b + 1)*(x - 1)**2*(y - 1)**2*(z - 1)**2/(8*x*y*z)
+PASS all three 2 x 2 block determinants have the required factor :: (-b*(b - 1)*(x - 1)**2/(2*x), -b*(b - 1)*(y - 1)**2/(2*y), -b*(b - 1)*(z - 1)**2/(2*z))
+PASS each block supplies 2/(b-1) to the rank-one multiplier :: (2/(b - 1), 2/(b - 1), 2/(b - 1))
+PASS zero-momentum characteristic multiplicities are 1, 2, and 3 :: -(b - lambda)**3*(lambda - 1)*(lambda + 1)**2
+PASS generic exact witness is nonzero :: -131712/5
+PASS wrong-sign control is rejected :: -263424/5
+PASS missing-(b+1) control is rejected :: -115248/5
+PASS singular-parameter and coordinate-factor specializations agree exactly :: (({b: 0, x: 2, y: 3, z: 5}, 0), ({b: 1, x: 2, y: 3, z: 5}, 0), ({b: -1, x: 2, y: 3, z: 5}, 0), ({b: 7, x: 1, y: 3, z: 5}, 0))
+RESULT pass=9 fail=0

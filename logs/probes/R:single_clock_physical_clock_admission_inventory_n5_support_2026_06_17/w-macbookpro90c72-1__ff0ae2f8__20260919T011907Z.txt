@@ -1,0 +1,62 @@
+single-clock physical-clock admission inventory N5 support
+========================================================================
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not mathematically exclude independent commuting transfer factors'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not add an axiom'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '**Claim boundary:** source-inventory support'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'No second physical-clock transfer is currently admitted.'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '## Admission Manifest (2026-07-16)'
+PASS: note states why the support is source-inventory, not algebraic exclusion
+PASS: single-clock source names B-AXIS.3
+PASS: B-AXIS.3 is phrased as an admission statement
+PASS: single-clock source names the sole supplied transfer/step pair
+PASS: single-clock source keeps B-AXIS declared
+PASS: minimal 2026-06-29 memo names the four axioms
+PASS: minimal 2026-06-29: Admissibility is not a dynamics axiom
+FAIL: minimal 2026-06-29: dynamics-exclusion sentence covers transfer operator and time metric
+PASS: minimal 2026-06-29: time metric listed among open gates outside axiom content
+FAIL: minimal 2026-06-29: probability/dynamics/bridges stay downstream
+PASS: minimal axiom runner does not enlarge axioms
+PASS: registry lists minimal_axioms as a canonical premise node
+PASS: registry current path for minimal_axioms is the 2026-06-29 memo
+PASS: registry aliases the 2026-06-05 path to the same premise node
+PASS: note carries exactly one fenced JSON manifest block -- found=1
+PASS: manifest is explicitly dated 2026-07-16
+PASS: manifest packet is the parent theorem note plus this inventory note
+PASS: manifest axiom authority matches the registry premise node
+PASS: manifest enumerates 18 packet documents -- got=18
+PASS: manifest entry paths are unique
+PASS: closed enumeration: manifest entries equal the live packet link union -- missing=[] stale=[]
+PASS: per-entry linked_by matches live link provenance and every role is stated -- mismatches=[]
+PASS: per-entry h1 titles match the live document headers -- mismatches=[]
+PASS: exactly the current minimal-axiom path is marked as an alias of minimal_axioms
+PASS: every manifest alias row resolves inside the registry premise node
+PASS: manifest proposes exactly one physical-clock candidate
+FAIL: candidate T_hat^2 evaluates as admitted from source evidence -- supplied_as_physical_transfer: anchor not found in source
+FAIL: computed admitted physical-clock count is one -- got=0
+FAIL: the computed admitted transfer is T_hat^2 with denominator 2 a_tau
+PASS: counterfeit rejector: fabricated anchor is not admitted -- supplied_as_physical_transfer: anchor not found in source
+PASS: counterfeit rejector: missing packet-consumption criterion is not admitted -- criteria evidence does not cover exactly the four admission criteria
+PASS: counterfeit rejector: evidence outside the enumerated surface is not admitted -- supplied_as_physical_transfer: evidence path outside the enumerated packet surface
+PASS: counterfeit rejector: candidate identity/denominator not named by packet evidence is not admitted -- supplied_as_physical_transfer: anchor not found in source
+PASS: parent grammar: every consumed T_hat^2 transfer/step pair normalizes to (T_hat^2, 2 a_tau) -- pairs=['T_hat^2,2a_tau']
+FAIL: RP2 supplies the two-step transfer
+PASS: RP2 supplies positivity
+FAIL: RP2 excludes the single-step object as the physical positive transfer
+PASS: SC2 supplies the blocked time denominator
+PASS: SC2 supplies corrected log normalization
+PASS: Stone note is transfer-relative
+PASS: Stone uniqueness does not add a transfer
+PASS: post-record rates require supplied clock map
+PASS: post-record layer does not derive a clock
+PASS: mathematical comparator T_A x I is positive
+PASS: mathematical comparator I x T_B is positive
+PASS: mathematical comparator transfers commute -- resid=0.00e+00
+PASS: factor comparator tangent space is two-dimensional -- rank=2
+
+SUMMARY: PASS=47 FAIL=7
+ADMITTED_PHYSICAL_CLOCK_TRANSFERS=0
+B_AXIS_DERIVED=FALSE
+MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE

@@ -1,0 +1,3 @@
+Z>=3/4 on S=0..5 step 1/8
+|C|=1+5L distinct for L=1..30
+SUMMARY: Z-and-C falsifier did not fire: Z>=3/4 on the grid and |C|=1+5L distinct for L=1..30

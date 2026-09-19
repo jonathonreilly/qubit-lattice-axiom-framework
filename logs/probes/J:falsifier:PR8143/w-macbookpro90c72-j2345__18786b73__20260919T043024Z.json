@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8143",
+ "type": "judgment",
+ "lane": "full-domain-projective-corridor-20260915",
+ "worker": "w-macbookpro90c72-j2345",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8143/falsifier_Z_and_C.py",
+ "seed": 92224,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "18786b73",
+ "started_utc": "20260919T043024Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "Z-and-C falsifier did not fire: Z>=3/4 on the grid and |C|=1+5L distinct for L=1..30"
+ },
+ "review": "Z>=3/4 on the grid and |C|=1+5L for L=1..30, so the falsifier did not fire",
+ "what": "PR #8143 ([physics-loop] full-domain-projective-corridor: bounded_theo): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/full-domain-projective-corridor-20260915; git show origin/physics-loop/full-domain-projective-corridor-20260915:<note>. Create probes/work/pr8143/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8143/<script>.py\"",
+ "stdout_sha256": "76f49ee490c452eaee9d61826e4d345594021c3fe0087de8257c490cadf15f36",
+ "stdout_tail": "Z>=3/4 on S=0..5 step 1/8\n|C|=1+5L distinct for L=1..30\nSUMMARY: Z-and-C falsifier did not fire: Z>=3/4 on the grid and |C|=1+5L distinct for L=1..30\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2345",
+  "at_utc": "20260919T043024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

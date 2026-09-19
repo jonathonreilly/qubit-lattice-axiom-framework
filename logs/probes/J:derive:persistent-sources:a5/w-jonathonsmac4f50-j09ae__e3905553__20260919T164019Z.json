@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:persistent-sources:a5",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j09ae",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/persistent-sources/w-jonathonsmac4f50-j09ae/check.py",
+ "seed": 36019,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e3905553",
+ "started_utc": "20260919T164019Z",
+ "elapsed_s": 10.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL two sites held at a and b at every level cost the free linear light-cone process the rate (a - b)^2/(4 sigma^2 D(r)) per level, D = G^2(0) - G^2(r): zero for like pins at every distance, positive and decreasing for unlike pins, with D(r)/r -> 49/(8 pi) so Delta R = 2 pi (a - b)^2/(49 sigma^2 r) + o(1/r); two field sources: the stationary mean superposes, the path relative-entropy rate (h1^2 + h2^2)/(2 sigma^2) has no distance dependence, while the reversible law's free energy has the cross term -(2/sigma^2) h1 h2 G(r) ~ -7 h1 h2/(2 pi sigma^2 r); pins do not superpose; exact torus values L = 6..16"
+ },
+ "review": "Claimed for referee: two sites held at a and b at every level cost the free linear light-cone process (a - b)^2/(4 sigma^2 D(r)) per level with D = G^2(0) - G^2(r) (zero for like pins at every distance, positive and decreasing for unlike pins; D/r -> 49/(8 pi), so the 1/r coefficient is 2 pi (a - b)^2/(49 sigma^2)); field sources: the mean Gh superposes, the path relative-entropy rate (h1^2 + h2^2)/(2 sigma^2) has no interaction, the reversible stationary law's free energy has the cross term -(2/sigma^2) h1 h2 G(r); pins do not superpose; 8 checks pass (exact D_L on L = 6..16 by orbit-reduced rational solves, exact minimal action on L = 8, exact dipole mean and free energy, sympy constants; the Toeplitz limit and the infinite-volume D(r)/r are labelled numerical); the 1/beta correction is not attempted.",
+ "what": "DERIVATION, independent attempt 5 of 5: Two persistent sources under light-cone formation: the interaction, done dynamically. GIVEN (refereed): linear light-cone formation has static response chi = 7/E(k) (the lattice Green function) and equal-time covariance C = 7 sigma^2/(2E(1 - E/14)), with chi/C = (1 + phi)/sigma^2 (the naive fluctuation-response relation fails by the factor 1 + phi); the Coulomb coefficient of C is 7 sigma^2/(8 pi r). Referee's correction to two failed attempts: a source PINNED AT EVERY LEVEL is not a conditioning of the stationary Gaussian at one time; the pinned process has stationary mean alpha G(y)/G(0) with G = (I - P)^-1. Executed (simulator probes/lib/formation_response.py): the nonlinear sphere law's potential around a persistent field source is 0.96-0.99 of (h/beta) x the lattice Green function, symmetric. TASK: (a) for the linear process with two sites pinned at every level to values a and b at distance r, compute the stationary law's cost: the large-deviation rate per level (the probability that the unpinned process stays within the pins), as a function of r; its sign for like and unlike pins; the coefficient of 1/r; (b) the same for two FIELD sources h_1, h_2 (no pinning): the change of the stationary mean and of the rate; is there an 'interaction energy' at all for a non-equilibrium process, and what replaces it (the rate function, or -log pi for the reversible law: compute both and compare); (c) superposition at linear order and the first nonlinear correction in 1/beta. Verify on L = 6..16 tori exactly. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/persistent-sources/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/persistent-sources/<name>/check.py\"",
+ "stdout_sha256": "34c9ece0bbc9b1a0d083385c224b5df943aa4bab67f725ad321009d658f32d18",
+ "stdout_tail": "G(0)]] c = (a, b); the sum of the two one-pin means alpha G(. - y)/G(0) exceeds the pin at y1 by b G(r)/G(0): pins do not superpose, field sources do (B1)\n====================================================================================================\nruntime 11s\nSUMMARY: PARTIAL two sites held at a and b at every level cost the free linear light-cone process the rate (a - b)^2/(4 sigma^2 D(r)) per level, D = G^2(0) - G^2(r): zero for like pins at every distance, positive and decreasing for unlike pins, with D(r)/r -> 49/(8 pi) so Delta R = 2 pi (a - b)^2/(49 sigma^2 r) + o(1/r); two field sources: the stationary mean superposes, the path relative-entropy rate (h1^2 + h2^2)/(2 sigma^2) has no distance dependence, while the reversible law's free energy has the cross term -(2/sigma^2) h1 h2 G(r) ~ -7 h1 h2/(2 pi sigma^2 r); pins do not superpose; exact torus values L = 6..16\nHIT: two sites held at a and b at every level cost the free linear light-cone process the rate (a - b)^2/(4 sigma^2 D(r)) per level, D = G^2(0) - G^2(r): zero for like pins at every distance, positive and decreasing for unlike pins, with D(r)/r -> 49/(8 pi) so Delta R = 2 pi (a - b)^2/(49 sigma^2 r) + o(1/r); two field sources: the stationary mean superposes, the path relative-entropy rate (h1^2 + h2^2)/(2 sigma^2) has no distance dependence, while the reversible law's free energy has the cross term -(2/sigma^2) h1 h2 G(r) ~ -7 h1 h2/(2 pi sigma^2 r); pins do not superpose; exact torus values L = 6..16\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j09ae",
+  "at_utc": "20260919T164040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation claim for cross-family referee: check.py verifies the exact torus Green functions, the minimal-action identity and the field-source statements exactly, with two labelled numerical checks (Toeplitz convergence, infinite-volume Bessel integral); not a pattern false positive.",
+  "by": "w-jonathonsmac4f50-j09ae",
+  "at_utc": "20260919T164040Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8026",
+ "type": "judgment",
+ "lane": "spatial-area-block36-20260907",
+ "worker": "w-macbookpro90c72-jba8c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8026/rectangle_area_perimeter_count.py",
+ "seed": 83264,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e01567f",
+ "started_utc": "20260919T020104Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROOF STEP BY BRUTE FORCE on the rectangle count A=RS, P=2(R+S) (PR #8026): holds for all 1<=R,S<=8 by enumerating boundary links of the grid graph; pattern has purchase and the step holds as written"
+ },
+ "review": "Rectangle count A=RS, P=2(R+S) holds for all 1<=R,S<=8 by boundary-link enumeration; pattern has purchase and the step holds.",
+ "what": "PR #8026 ([physics-loop] spatial-area block36 conditional-support): attack GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/spatial-area-block36-20260907; git show origin/codex/spatial-area-block36-20260907:<note>. Create probes/work/pr8026/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8026/<script>.py\"",
+ "stdout_sha256": "df1ee05e9f2512c5dec9f9813763e4064483d3b240381f91cc0851528ee397b1",
+ "stdout_tail": "perimeter 26 (2(R+S)=26)\n  R=6 S=1: area 6 (RS=6), perimeter 14 (2(R+S)=14)\n  R=6 S=2: area 12 (RS=12), perimeter 16 (2(R+S)=16)\n  R=6 S=3: area 18 (RS=18), perimeter 18 (2(R+S)=18)\n  R=6 S=4: area 24 (RS=24), perimeter 20 (2(R+S)=20)\n  R=6 S=5: area 30 (RS=30), perimeter 22 (2(R+S)=22)\n  R=6 S=6: area 36 (RS=36), perimeter 24 (2(R+S)=24)\n  R=6 S=7: area 42 (RS=42), perimeter 26 (2(R+S)=26)\n  R=6 S=8: area 48 (RS=48), perimeter 28 (2(R+S)=28)\n  R=7 S=1: area 7 (RS=7), perimeter 16 (2(R+S)=16)\n  R=7 S=2: area 14 (RS=14), perimeter 18 (2(R+S)=18)\n  R=7 S=3: area 21 (RS=21), perimeter 20 (2(R+S)=20)\n  R=7 S=4: area 28 (RS=28), perimeter 22 (2(R+S)=22)\n  R=7 S=5: area 35 (RS=35), perimeter 24 (2(R+S)=24)\n  R=7 S=6: area 42 (RS=42), perimeter 26 (2(R+S)=26)\n  R=7 S=7: area 49 (RS=49), perimeter 28 (2(R+S)=28)\n  R=7 S=8: area 56 (RS=56), perimeter 30 (2(R+S)=30)\n  R=8 S=1: area 8 (RS=8), perimeter 18 (2(R+S)=18)\n  R=8 S=2: area 16 (RS=16), perimeter 20 (2(R+S)=20)\n  R=8 S=3: area 24 (RS=24), perimeter 22 (2(R+S)=22)\n  R=8 S=4: area 32 (RS=32), perimeter 24 (2(R+S)=24)\n  R=8 S=5: area 40 (RS=40), perimeter 26 (2(R+S)=26)\n  R=8 S=6: area 48 (RS=48), perimeter 28 (2(R+S)=28)\n  R=8 S=7: area 56 (RS=56), perimeter 30 (2(R+S)=30)\n  R=8 S=8: area 64 (RS=64), perimeter 32 (2(R+S)=32)\nSUMMARY: PROOF STEP BY BRUTE FORCE on the rectangle count A=RS, P=2(R+S) (PR #8026): holds for all 1<=R,S<=8 by enumerating boundary links of the grid graph; pattern has purchase and the step holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jba8c",
+  "at_utc": "20260919T020105Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

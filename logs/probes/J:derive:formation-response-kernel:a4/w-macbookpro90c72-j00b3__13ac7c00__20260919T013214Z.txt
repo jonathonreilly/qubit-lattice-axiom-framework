@@ -1,0 +1,16 @@
+PASS: A1 L=4: 1/(1-phi) inverts I-P on all 15 nonzero modes; geometric sum of phi^t e^{iwt} matches 1/(1-phi e^{iw}) at w=0,pi/2,pi
+PASS: A2 L=3 cyclotomic: 1/(1-phi) inverts I-P on all 8 nonzero modes
+PASS: A3 FDR fails on L=4: C0/R_static takes 8 distinct values on nonzero modes, not 1
+PASS: B1 E(w+k1, w+k2, w) = 3(|1-phi e^{iw}|^2 + 1-u) identically
+PASS: C1 phi=1+i(k1+k2)/3+O(k^2); 1-u = k^T M k + O(k^4) with eigenvalues 1/9, 1/3
+PASS: D1 R_8(lam,0,0) = 3/2 identically on a coordinate axis
+PASS: D2 R_8(lam,lam,lam) -> 7/2, series 7/2 - 27 lam^2/4 + O(lam^3)
+PASS: D3 R_8(lam,-lam,0) ~ (3/2)/lam^2 + 1/2: 1/lam terms cancel, planar 1/k^2 pole coeff 3/2
+PASS: D4 1/E(lam,-lam,0) ~ 1/(2 lam^2) (coeff 1/2, not 3/2); 1/E(lam,0,0)~1/lam^2 while R_8=3/2
+PASS: E1 time-integrated covariance = C0 * R_static on every L=4 nonzero mode; differs from 1/E(k1,k2,0) on 15 modes
+PASS: E2 plane Green 1/(1-u) inverts I-PP* on every L=4 nonzero mode
+PASS: F1 one-corner occupancy of (n,n,n) is (3n)!/(n!)^3; n=1..8 (6, 90, ...)
+PASS: F2 combined with D1: R_8 finite on axes => not c/|x| in 3D
+TOTAL: PASS=13 FAIL=0
+HIT: new exact partial: linear response R=1/(1-phi e^{iw}) inverts I-P on every nonzero mode of L=3,4; E=3(|R|^{-2}+1-u) in the embedding q=(w+k1,w+k2,w); FDR fails (C0/R takes multiple values); R_8=3/2 identically on axes and -> 7/2 on the body diagonal, while R_8(lam,-lam,0)~(3/2)/lam^2 + 1/2 (1/lam cancels) against 1/E~1/(2 lam^2); no channel is isotropic 3D 1/r
+SUMMARY: PARTIAL formation-law linear response is R=1/(1-phi e^{iw}); static eight-corner average is 3/2 on axes (not 1/E), 7/2 on the body diagonal, and a planar 1/k^2 pole of coeff 3/2 on (lam,-lam,0); FDR fails; isotropic 1/r is absent; gravity node not constructed

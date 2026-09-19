@@ -1,0 +1,6 @@
+PASS T1: async: rows True, mu P = mu True, detailed balance on 1296 pairs True, P^2 > 0 True (mu unique)
+PASS T2: sync: rows True, pi P = pi True, detailed balance True, P > 0 True
+PASS T3: TV(mu, pi) = 1/12; one-site marginals {Fraction(1, 6)}
+PASS T4: Z(a) = p + q + 4r for every a, so pi is uniform on the 36 states (no bond correlation) at (3,1,2) (Z = 12) and at (5, 2, 4): Z = 23, TV(mu, pi) = 11/138; (1, 3, 2): Z = 12, TV(mu, pi) = 1/12; (7, 1, 1): Z = 12, TV(mu, pi) = 5/12
+HIT: confirmed - re-recording a3 on one bond at (3,1,2): async heat-bath reversible with unique stationary law mu ~ W (rows, mu P = mu, detailed balance on 1296 pairs, P^2 > 0), synchronous chain reversible with unique pi ~ Z(s0) Z(s1) (P > 0), TV(mu, pi) = 1/12, uniform one-site marginals; recomputed with independent exact code. Beyond the claim: Z is constant on the six-axis menu, so pi is the uniform product law - the synchronous law carries no bond correlation
+SUMMARY: confirmed - no failing step; the synchronous one-bond law is uniform, which makes (c)'s non-transfer immediate

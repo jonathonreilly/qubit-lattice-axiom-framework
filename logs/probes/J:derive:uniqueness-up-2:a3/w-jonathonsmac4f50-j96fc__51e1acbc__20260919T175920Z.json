@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:uniqueness-up-2:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j96fc",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/uniqueness-up-2/w-jonathonsmac4f50-j96fc/check.py",
+ "seed": 40760,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51e1acbc",
+ "started_utc": "20260919T175920Z",
+ "elapsed_s": 15.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL certificates above 5.11: with the ground metric (1, 27/20) and the sibling-shared-predecessor restriction of the environment laws, D_{t+1} <= 3 ks D_t + min(alpha, 3 kappa_max)(k1 - ks) D_{t-1} and the exact constant C = 3 ks + min(alpha, 3 kappa_max)(k1 - ks) is below 1 at p = 5.11, 5.13, ..., 5.25, 5.26 on (p, 1, 2) (C(5.26) = 0.998972) and above 1 at 5.27: one invariant law and exponential forgetting of every initial plane for the six-axis formation law at those p; largest certified p = 263/50 = 5.26 (round 1: 5.11); the criterion saturates near 5.3: the maximizing environment is a w | w' wall, one sibling with predecessors (w, w, w), the other with (w, w', w'), sharing the w-valued predecessor"
+ },
+ "review": "check.py prints 4 ok lines and SUMMARY: PARTIAL - the closed form of W_rho against exhaustive exact transport (180 instances), the recomputation of round 1's exact k1 at p = 51/10, exact shared-predecessor certificates C = 3ks + min(alpha, 3kappa_max)(k1 - ks) < 1 at alpha = 27/20 for p = 5.11..5.25 (step 0.02) and 5.26 (C = 0.998972) with C > 1 at 5.27 and 5.30, and the two-type symmetry at 5.26; this delivers the task's certificates above 5.11 (largest 263/50) but not the located threshold, as stated.",
+ "what": "DERIVATION, independent attempt 3 of 4: From p <= 5.1 toward the located 10.5: a stronger no-memory criterion. GIVEN (refereed twice): exact certificates of uniqueness and exponential memory loss for the six-axis formation law on (p,1,2) at p = 3.7..5.1 by an averaged Wasserstein contraction (alpha = 5/4); the criterion's numerical edge is p = 5.11. A two-step Hamming/Dobrushin attempt FAILED at the iteration step (the one-site bound holds for deterministic planes; iterating needs a coupling of the random planes meeting every site's bound at once). TASK: certificates above 5.11. Routes: (i) the averaged Wasserstein criterion over 2x2 or 3x3 blocks of the level plane and two or three levels, with the metric optimized by linear programming (exact rational LP); (ii) repair the two-step route with an explicit coupling (a site-by-site maximal coupling in a fixed scan order, or a disagreement-percolation domination); (iii) a computer-assisted cone-mixing bound. Report the largest p certified and the exact objects. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/uniqueness-up-2/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/uniqueness-up-2/<name>/check.py\"",
+ "stdout_sha256": "6d607fbafe27537e6b4268d9131cd39a2e699b93fb6479147f3ca911a14072ce",
+ "stdout_tail": "===================================================\nruntime 15s\nSUMMARY: PARTIAL certificates above 5.11: with the ground metric (1, 27/20) and the sibling-shared-predecessor restriction of the environment laws, D_{t+1} <= 3 ks D_t + min(alpha, 3 kappa_max)(k1 - ks) D_{t-1} and the exact constant C = 3 ks + min(alpha, 3 kappa_max)(k1 - ks) is below 1 at p = 5.11, 5.13, ..., 5.25, 5.26 on (p, 1, 2) (C(5.26) = 0.998972) and above 1 at 5.27: one invariant law and exponential forgetting of every initial plane for the six-axis formation law at those p; largest certified p = 263/50 = 5.26 (round 1: 5.11); the criterion saturates near 5.3: the maximizing environment is a w | w' wall, one sibling with predecessors (w, w, w), the other with (w, w', w'), sharing the w-valued predecessor\nHIT: certificates above 5.11: with the ground metric (1, 27/20) and the sibling-shared-predecessor restriction of the environment laws, D_{t+1} <= 3 ks D_t + min(alpha, 3 kappa_max)(k1 - ks) D_{t-1} and the exact constant C = 3 ks + min(alpha, 3 kappa_max)(k1 - ks) is below 1 at p = 5.11, 5.13, ..., 5.25, 5.26 on (p, 1, 2) (C(5.26) = 0.998972) and above 1 at 5.27: one invariant law and exponential forgetting of every initial plane for the six-axis formation law at those p; largest certified p = 263/50 = 5.26 (round 1: 5.11); the criterion saturates near 5.3: the maximizing environment is a w | w' wall, one sibling with predecessors (w, w, w), the other with (w, w', w'), sharing the w-valued predecessor\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j96fc",
+  "at_utc": "20260919T175946Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "claim for referee: uniqueness-up-2 - exact certificates of one invariant law and exponential forgetting for the six-axis formation law on (p,1,2) up to p = 263/50 = 5.26 (round 1: 5.11) via the sibling-shared-predecessor averaged W_rho recursion D_{t+1} <= 3ks D_t + min(alpha, 3kappa_max)(k1 - ks) D_{t-1}, alpha = 27/20; W_rho closed form proved by plan + dual; saturation near 5.3 at the (w,w,w)|(w,w',w') wall; builds on my family's round-1 criterion (j1ba5), disclosed",
+  "by": "w-jonathonsmac4f50-j96fc",
+  "at_utc": "20260919T175946Z"
+ }
+}

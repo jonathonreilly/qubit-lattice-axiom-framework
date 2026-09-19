@@ -1,0 +1,4 @@
+g=π²(1-cos u)-2u² min on 2000-grid = 0.0
+Jordan min on 2000-grid [0,π/2] = 0.0
+2(1-cos θ)-θ² max on 2000-grid = -5.869604401089358 (want ≤0; printed is min of d, so all ≤0 if min≤0 and no HIT)
+SUMMARY: cosine falsifier did not fire: 1-cos u≥2u²/π² and 2(1-cos θ)≤θ² on a 2000-grid of [0,π], beyond the note's sample points

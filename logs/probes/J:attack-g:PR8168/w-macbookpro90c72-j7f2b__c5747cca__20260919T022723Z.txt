@@ -1,0 +1,11 @@
+Z(a,a,a)=60 stated p^3+q^3+4r^3=60
+Z(a,a,b_orth)=52 stated 52
+Z(a,a,-a)=44 stated pq(p+q)+4r^3=44
+n=1: forks=0 arrows<= 0 edges<= 0
+n=2: forks=1 arrows<= 3 edges<= 4
+n=3: forks=2 arrows<= 6 edges<= 8
+n=4: forks=3 arrows<= 9 edges<= 12
+n=5: forks=4 arrows<= 12 edges<= 16
+n=6: forks=5 arrows<= 15 edges<= 20
+n=7: forks=6 arrows<= 18 edges<= 24
+SUMMARY: pattern has no purchase on this note - T0 six-axis normalizers at (3,1,2) match p^3+q^3+4r^3, r(p^2+q^2)+r^2(p+q)+2r^3 and pq(p+q)+4r^3, and forks=n-1 with edges<=4(n-1) holds as accounting

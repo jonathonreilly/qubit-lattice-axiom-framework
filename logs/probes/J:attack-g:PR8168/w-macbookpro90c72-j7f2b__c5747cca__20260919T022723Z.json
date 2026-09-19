@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8168",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block25-format",
+ "worker": "w-macbookpro90c72-j7f2b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8168/t0_normalizers.py",
+ "seed": 84843,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c5747cca",
+ "started_utc": "20260919T022723Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - T0 six-axis normalizers at (3,1,2) match p^3+q^3+4r^3, r(p^2+q^2)+r^2(p+q)+2r^3 and pq(p+q)+4r^3, and forks=n-1 with edges<=4(n-1) holds as accounting"
+ },
+ "review": "T0 six-axis normalizers at (3,1,2) match the stated closed forms; forks=n-1 accounting holds; pattern has no purchase",
+ "what": "PR #8168 ([physics-loop] admissibility-induced-law block25 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916; git show origin/physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916:<note>. Create probes/work/pr8168/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8168/<script>.py\"",
+ "stdout_sha256": "561d45a1b09f5793911f7e2e76cb7da11b464a50fa5f6afe9e5a91ccb79c6064",
+ "stdout_tail": "Z(a,a,a)=60 stated p^3+q^3+4r^3=60\nZ(a,a,b_orth)=52 stated 52\nZ(a,a,-a)=44 stated pq(p+q)+4r^3=44\nn=1: forks=0 arrows<= 0 edges<= 0\nn=2: forks=1 arrows<= 3 edges<= 4\nn=3: forks=2 arrows<= 6 edges<= 8\nn=4: forks=3 arrows<= 9 edges<= 12\nn=5: forks=4 arrows<= 12 edges<= 16\nn=6: forks=5 arrows<= 15 edges<= 20\nn=7: forks=6 arrows<= 18 edges<= 24\nSUMMARY: pattern has no purchase on this note - T0 six-axis normalizers at (3,1,2) match p^3+q^3+4r^3, r(p^2+q^2)+r^2(p+q)+2r^3 and pq(p+q)+4r^3, and forks=n-1 with edges<=4(n-1) holds as accounting\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7f2b",
+  "at_utc": "20260919T022723Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

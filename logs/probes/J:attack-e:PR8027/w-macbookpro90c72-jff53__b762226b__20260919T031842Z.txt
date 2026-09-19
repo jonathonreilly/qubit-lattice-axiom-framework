@@ -1,0 +1,4 @@
+unique axis (3,0,0) npaths=1 (rho=0 claimed)
+planar (1,1,0) npaths=2
+Haar 1/18 and fermionic rho_(r,s) are exact identities
+SUMMARY: SAMPLED EVIDENCE (PR #8027): the note's unique-geodesic rho=0, Haar 1/18, and planar flip spectrum are exact identities, not sampled never/always observations; pattern has no purchase

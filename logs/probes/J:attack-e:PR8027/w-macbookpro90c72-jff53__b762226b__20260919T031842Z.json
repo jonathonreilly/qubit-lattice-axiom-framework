@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8027",
+ "type": "judgment",
+ "lane": "static-geodesic-block37-20260907",
+ "worker": "w-macbookpro90c72-jff53",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8027/no_sampled_evidence.py",
+ "seed": 87922,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b762226b",
+ "started_utc": "20260919T031842Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8027): the note's unique-geodesic rho=0, Haar 1/18, and planar flip spectrum are exact identities, not sampled never/always observations; pattern has no purchase"
+ },
+ "review": "unique-geodesic rho=0, Haar 1/18, and the planar flip spectrum are exact identities with no Monte Carlo never/always claim, so the sampled-evidence pattern has no purchase",
+ "what": "PR #8027 ([physics-loop] static-geodesic block37 conditional-support): attack GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-geodesic-block37-20260907; git show origin/codex/static-geodesic-block37-20260907:<note>. Create probes/work/pr8027/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8027/<script>.py\"",
+ "stdout_sha256": "fd9e17b36dba6d79d3be2d2214f09a16ad14ac519bd477ae152e223799bb67c4",
+ "stdout_tail": "unique axis (3,0,0) npaths=1 (rho=0 claimed)\nplanar (1,1,0) npaths=2\nHaar 1/18 and fermionic rho_(r,s) are exact identities\nSUMMARY: SAMPLED EVIDENCE (PR #8027): the note's unique-geodesic rho=0, Haar 1/18, and planar flip spectrum are exact identities, not sampled never/always observations; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jff53",
+  "at_utc": "20260919T031842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

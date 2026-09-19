@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8146",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block12-strong",
+ "worker": "w-macbookpro90c72-j2de7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8146/falsifier_z1_gaps_beyond.py",
+ "seed": 92313,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f9902968",
+ "started_utc": "20260919T043153Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "D3 Z1-gap falsifier did not fire: |p-q|<Z1 and |p+q-2r|<Z1 on the 30^3 positive integer grid and extra rationals (known 2:1 majority HIT at (5,2,4) not re-claimed)"
+ },
+ "review": "D3 Z1-gap falsifier did not fire on 30^3; known 2:1 majority HIT not re-found.",
+ "what": "PR #8146 ([physics-loop] admissibility-induced-law block12 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915; git show origin/physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915:<note>. Create probes/work/pr8146/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8146/<script>.py\"",
+ "stdout_sha256": "4980ff8ab046cda378749fed8e3df52f9c14608f13d814586e90ce26e55b62d3",
+ "stdout_tail": "integer grid 1..30^3: 27000 triples, D3 holds\n  (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)) Z1=12 D3=True\n  (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)) Z1=23 D3=True\n  (Fraction(100, 1), Fraction(1, 1), Fraction(1, 1)) Z1=105 D3=True\n  (Fraction(1, 1), Fraction(100, 1), Fraction(1, 1)) Z1=105 D3=True\n  (Fraction(1, 10), Fraction(1, 10), Fraction(1, 10)) Z1=3/5 D3=True\nSUMMARY: D3 Z1-gap falsifier did not fire: |p-q|<Z1 and |p+q-2r|<Z1 on the 30^3 positive integer grid and extra rationals (known 2:1 majority HIT at (5,2,4) not re-claimed)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2de7",
+  "at_utc": "20260919T043201Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

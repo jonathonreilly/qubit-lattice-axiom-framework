@@ -1,0 +1,7 @@
+integer grid 1..30^3: 27000 triples, D3 holds
+  (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)) Z1=12 D3=True
+  (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)) Z1=23 D3=True
+  (Fraction(100, 1), Fraction(1, 1), Fraction(1, 1)) Z1=105 D3=True
+  (Fraction(1, 1), Fraction(100, 1), Fraction(1, 1)) Z1=105 D3=True
+  (Fraction(1, 10), Fraction(1, 10), Fraction(1, 10)) Z1=3/5 D3=True
+SUMMARY: D3 Z1-gap falsifier did not fire: |p-q|<Z1 and |p+q-2r|<Z1 on the 30^3 positive integer grid and extra rationals (known 2:1 majority HIT at (5,2,4) not re-claimed)

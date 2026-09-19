@@ -1,0 +1,32 @@
+{
+ "task": "X:sixaxis-weights-by-lattice",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 2 axes6w:6:1:2 0 128 3000 1500 1",
+ "seed": 11303,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9cea699c",
+ "started_utc": "20260919T094823Z",
+ "elapsed_s": 8.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=2 menu=axes6w:6:1:2 beta=0.0 L=128 T=3000 plateau_|m|=0.0107 lowk_ratio=nan seconds=9"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The campaign's six-axis rule with weights (p, q, r) on four event lattices: 2+1 backward (block 28 located the memory threshold at p in (10.5, 11) on the line (p,1,2)), 3+1 backward, and both light-cone lattices. Menu name axes6w:p:q:r; the beta argument is ignored (pass 0). Arguments: dim menu beta L T T0 seed. GRID UNITS: the 80 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "2e202a46b1a45a301f76be045015aca04ecc6c3354d641ff1318028bc0fcb08f",
+ "stdout_tail": "dim=2 (event lattice Z^3) menu=axes6w:6:1:2 beta=0.0 L=128 T=3000 T0=1500 seed=1; predecessors n=3; sigma^2=nan\nmemory table: level, |m|, m.e0\n         1  0.8616  +0.8616\n         2  0.7561  +0.7560\n         3  0.6505  +0.6505\n         4  0.5578  +0.5578\n         5  0.4734  +0.4734\n         7  0.3344  +0.3343\n        10  0.1927  +0.1926\n        14  0.0924  +0.0916\n        20  0.0202  +0.0179\n        28  0.0154  +0.0043\n        39  0.0046  +0.0035\n        55  0.0186  +0.0081\n        76  0.0065  -0.0023\n       107  0.0100  +0.0068\n       149  0.0173  -0.0128\n       208  0.0069  -0.0060\n       290  0.0112  +0.0109\n       405  0.0166  +0.0034\n       566  0.0090  +0.0078\n       790  0.0173  -0.0023\n      1103  0.0108  +0.0092\n      1539  0.0104  -0.0096\n      2149  0.0112  +0.0078\n      3000  0.0104  +0.0090\nSUMMARY: dim=2 menu=axes6w:6:1:2 beta=0.0 L=128 T=3000 plateau_|m|=0.0107 lowk_ratio=nan seconds=9\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T094832Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-finite-size",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 1.5 48 3000 1500 2",
+ "seed": 11414,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "857dd751",
+ "started_utc": "20260919T095014Z",
+ "elapsed_s": 37.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.5 L=48 T=3000 plateau_|m|=0.8543 lowk_ratio=1.0590 seconds=37"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Long-range order under light-cone formation: the plateau against the plane's side at fixed coupling, three seeds. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 54 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "01f00855cdd0c0971cd03e18b0c03b5e31265bba1b3c1a7e9fe4c2a75b1218d1",
+ "stdout_tail": "      10  0.8628  +0.8628\n        14  0.8603  +0.8603\n        20  0.8602  +0.8602\n        28  0.8583  +0.8582\n        39  0.8575  +0.8575\n        55  0.8570  +0.8570\n        76  0.8566  +0.8565\n       107  0.8545  +0.8543\n       149  0.8569  +0.8568\n       208  0.8550  +0.8547\n       290  0.8555  +0.8546\n       405  0.8539  +0.8531\n       566  0.8543  +0.8540\n       790  0.8543  +0.8539\n      1103  0.8539  +0.8522\n      1539  0.8533  +0.8513\n      2149  0.8548  +0.8533\n      3000  0.8533  +0.8519\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.0590 (n=56)\n   |k| in [0.3,0.6): 1.0619 (n=380)\n   |k| in [0.6,1.0): 1.0660 (n=1426)\n   |k| in [1.0,1.5): 1.0636 (n=4492)\n   |k| in [1.5,2.2): 1.0651 (n=13578)\n   |k| in [2.2,3.2): 1.0660 (n=41209)\n   |k| in [3.2,6.0): 1.0656 (n=49450)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.019399  +0.018131  1.070  +0.01813\n     2  +0.013499  +0.012576  1.073  +0.02515\n     3  +0.007254  +0.006702  1.082  +0.02011\n     4  +0.005192  +0.004745  1.094  +0.01898\n     6  +0.002976  +0.002630  1.132  +0.01578\n     8  +0.002000  +0.001624  1.232  +0.01299\n    12  +0.001109  +0.000656  1.690  +0.00788\n    16  +0.000753  +0.000219  3.439  +0.00350\n    24  +0.000574  -0.000047  -12.105  -0.00114\nSUMMARY: dim=3 menu=sphere beta=1.5 L=48 T=3000 plateau_|m|=0.8543 lowk_ratio=1.0590 seconds=37\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T095052Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

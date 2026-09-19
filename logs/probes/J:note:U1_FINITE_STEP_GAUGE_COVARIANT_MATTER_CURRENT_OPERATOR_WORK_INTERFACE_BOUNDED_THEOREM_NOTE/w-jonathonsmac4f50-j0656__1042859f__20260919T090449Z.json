@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_FINITE_STEP_GAUGE_COVARIANT_MATTER_CURRENT_OPERATOR_WORK_INTERFACE_BOUNDED_THEOREM_NOTE",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j0656",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_FINITE_STEP_GAUGE_COVARIANT_MATTER_CU/current_symbolic_and_torus_continuity.py",
+ "seed": 8689,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1042859f",
+ "started_utc": "20260919T090449Z",
+ "elapsed_s": 46.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "bond identities hold symbolically (closed form, both continuity equations, Hermitian, traceless, gauge covariance of H, V and the current, orientation, t = 0); Jbar - J_0 starts at h^1 (t^2 h Z) and Jbar - J(h/2) at h^2 (-(t^3/6) h^2 (cosA Y - sinA X)); on exact rational-phase cubic tori L = 4, 6, 8 (64, 216, 512 vertices; 192, 648, 1536 bonds) every color is a perfect matching, every layer unitary, every operational current the closed form on its bond, and the full-tick change of n_x equals the prefix-transported layer currents exactly at every vertex (initial-frame support by layer [2, 4, 8, 16, 32, 64] sites at L = 8); operator work on 81 + 81 components of 6 x 6 clock-link operators equals (h/4) sum {J, E + E'} exactly and is Hermitian, the left-ordered product misses it by 59.4 and is non-Hermitian by 119; the scalar limit is the classical midpoint law"
+ },
+ "review": "Read the script and its output: the bond current's closed form, both continuity equations, gauge covariance and orientation hold symbolically, Jbar - J_0 starts at t^2 h Z and Jbar - J(h/2) at -(t^3/6) h^2 (cosA Y - sinA X); on exact rational-phase colored tori L = 4, 6, 8 the full-tick change of every n_x equals the prefix-transported layer currents with zero residual (initial-frame support 2..64 sites by layer); the operator work on 81 + 81 components of 6 x 6 clock-link operators equals (h/4) sum {J, E + E'} exactly and is Hermitian, the left-ordered product misses it by 59.4, and the scalar limit gives the midpoint law; no falsifier fires; the off-bond-support check holds because each color is a perfect matching.",
+ "what": "Note on main: docs/U1_FINITE_STEP_GAUGE_COVARIANT_MATTER_CURRENT_OPERATOR_WORK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_FINITE_STEP_GAUGE_COVARIANT_MATTER_CU/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_FINITE_STEP_GAUGE_COVARIANT_MATTER_CU/<script>.py\"",
+ "stdout_sha256": "d42edca0ce6e8a38e6fd0f1ed8e441b9a15ce2ed7857abe1393161afbfd71dd2",
+ "stdout_tail": ", 'unitary': True, 'closed form': True, 'Hermitian': True, 'tick unitary (rows)': True, 'continuity at every vertex': True, 'max bad entries': 0, 'initial-frame support by layer': [2, 4, 8, 16, 32, 64]}\n3. exact operator field work, cubic curl lattice L = 3, clock-link currents: {'components': (81, 81), 'dim': 6, 'clock hops unitary': True, '[J_e, E_e] != 0 somewhere': True, \"dH == (h/4) sum {J, E+E'}\": True, 'dH Hermitian': True, 'left residual max': 59.377906183031925, 'left anti-Hermitian max': 118.75581236606385}\n3'. commuting (scalar) limit, same lattice: dH == h J^T (E+E')/2: True, left-ordered residual 0.0\nSUMMARY: bond identities hold symbolically (closed form, both continuity equations, Hermitian, traceless, gauge covariance of H, V and the current, orientation, t = 0); Jbar - J_0 starts at h^1 (t^2 h Z) and Jbar - J(h/2) at h^2 (-(t^3/6) h^2 (cosA Y - sinA X)); on exact rational-phase cubic tori L = 4, 6, 8 (64, 216, 512 vertices; 192, 648, 1536 bonds) every color is a perfect matching, every layer unitary, every operational current the closed form on its bond, and the full-tick change of n_x equals the prefix-transported layer currents exactly at every vertex (initial-frame support by layer [2, 4, 8, 16, 32, 64] sites at L = 8); operator work on 81 + 81 components of 6 x 6 clock-link operators equals (h/4) sum {J, E + E'} exactly and is Hermitian, the left-ordered product misses it by 59.4 and is non-Hermitian by 119; the scalar limit is the classical midpoint law\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0656",
+  "at_utc": "20260919T090543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

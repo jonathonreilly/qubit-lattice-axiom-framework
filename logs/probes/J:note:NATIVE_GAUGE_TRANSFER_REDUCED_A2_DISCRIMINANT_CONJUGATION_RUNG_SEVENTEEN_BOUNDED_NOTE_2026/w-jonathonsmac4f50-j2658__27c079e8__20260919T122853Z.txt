@@ -1,0 +1,41 @@
+==============================================================================
+D1  wall-reflection group, Q invariance, delta sign
+  group order 6; Q invariant under all: True; delta o g = det(g) delta for all: True; each wall flips delta: [True, True, True]; swap(x,y) fixes delta: True
+SUMMARY: D1 wall group order 6; Q invariant; delta o g = det(g) delta; every wall flips delta; swap fixes it
+==============================================================================
+D2  anti-invariants and invariants for every degree 0..40 (exact)
+  anti-invariant dims d=0..40: [0, 0, 0, 1, 0, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 3, 2, 3, 3, 3, 3, 4, 3, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5, 6, 5, 6, 6, 6, 6, 7, 6]
+  predicted #(2a+3b=d-3):          [0, 0, 0, 1, 0, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 3, 2, 3, 3, 3, 3, 4, 3, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5, 6, 5, 6, 6, 6, 6, 7, 6]
+  invariant dims:                  [1, 0, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 3, 2, 3, 3, 3, 3, 4, 3, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5, 6, 5, 6, 6, 6, 6, 7, 6, 7, 7, 7]
+  predicted #(2a+3b=d):            [1, 0, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 3, 2, 3, 3, 3, 3, 4, 3, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5, 6, 5, 6, 6, 6, 6, 7, 6, 7, 7, 7]
+  every anti-invariant basis element divisible by delta: True; quotient invariant: True
+SUMMARY: D2 degrees 0..40 exact: anti-invariant dims = #(2a+3b=d-3) for all d: True (d<=6: [0, 0, 0, 1, 0, 1, 1]); invariant dims = #(2a+3b=d): True; every anti-invariant divisible by delta: True; quotients invariant: True
+==============================================================================
+D3  delta-Doob identity L(delta g) = delta L_delta g
+  L delta = 0
+  monomials a+b<=12: 91 checked, failures 0; Gaussian class x^a y^b e^-Q, a+b<=8: 45 checked, failures 0
+  (u,v) form vs (x,y) form: 2400 exact evaluations, max |difference| = 0
+SUMMARY: D3 delta-Doob identity: 91 monomials (deg<=12) failures 0; 45 Gaussian-class functions failures 0; (u,v) vs (x,y) L_delta at 2400 rational evaluations max diff 0
+==============================================================================
+D4  commutator exp(Q)[L, M_(H exp(-Q))] 1 and L_delta Q
+  e^Q L(H e^-Q) == H (Q - 4) as polynomials: True; value at (1,2): 9 (times e^-7)
+  L_delta Q == 4 exactly: True
+SUMMARY: D4 e^Q L(H e^-Q) = H(Q-4) as polynomials: True; value at (1,2) = 9 e^-7; L_delta Q = 4: True
+==============================================================================
+D5  the note's falsifier table, recomputed
+  delta(1,2)                          6  (note 6)
+  delta(s_x(1,2))                    -6  (note -6)
+  delta(swap(1,2))                    6  (note 6)
+  signed delta*anti (1,2)            36  (note 36)
+  signed delta*anti s_x(1,2)         36  (note 36)
+  |delta|*anti (1,2)                 36  (note 36)
+  |delta|*anti s_x(1,2)             -36  (note -36)
+  B2-style degree-4 product          30  (note 30)
+  G2-style degree-6 product        1680  (note 1680)
+  A1 single-root product              1  (note 1)
+  correct L(u^2+v^2)                8/3  (note 8/3)
+  raw second-difference value         8  (note 8)
+  H = u(u^2-v^2)/8 and Q = (3u^2+v^2)/4 at 25 rational points: True
+SUMMARY: D5 falsifier table recomputed: delta(1,2)=6, delta(s_x(1,2))=-6, delta(swap(1,2))=6, signed delta*anti (1,2)=36, signed delta*anti s_x(1,2)=36, |delta|*anti (1,2)=36, |delta|*anti s_x(1,2)=-36, B2-style degree-4 product=30, G2-style degree-6 product=1680, A1 single-root product=1, correct L(u^2+v^2)=8/3, raw second-difference value=8; mismatches 0; (u,v) forms of H, Q: True
+==============================================================================
+SUMMARY: hits=0; runtime 1s

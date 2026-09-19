@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-g-PR8147",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-jfe79",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8147/level_line_symbol_exact.py",
+ "seed": 93789,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "37342feb",
+ "started_utc": "20260919T045629Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the level-direction clause of T3(ii) omits its remainder (the claim_scope's 'expansion' and the runner's D2 series check are the correct reading); exact level-line symbol 4 sin^2(u/2) = u^2 - u^4/12 + O(u^6)"
+ },
+ "review": "Finder's script re-run (S(u,u,u) = 4 sin^2(u/2) at pi/3, pi/2, pi); own route from the T3(i) cosine form gives 2 - 2 cos u exactly on the line, S - u^2 < 0 at all twelve points 2 pi m/12 (exact values 2-sqrt3, 1, 2, 3, 2+sqrt3, 4, ...), S/u^2 < 1 on (0, pi] at 50 digits, series u^2 - u^4/12 + u^6/360, transverse |k|^4/36 with its O(|k|^6) confirmed: HIT confirmed (the level clause lacks its remainder).",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-g:PR8147/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "4e7e42457637567e433ab008f2228f5d33780e9f5c7a227b9008275ce1fb57cc",
+ "stdout_tail": "1. T3(i) cosine form on the line at w = 1/3: 2 - 2*cos(u); equals 2 - 2 cos u: True\n   exact S at u = 2 pi m/12 against u^2: m=1: S=2 - sqrt(3), S-u^2=-0.006206; m=2: S=1, S-u^2=-0.096623; m=3: S=2, S-u^2=-0.467401; m=4: S=3, S-u^2=-1.386491; m=5: S=sqrt(3) + 2, S-u^2=-3.121841; m=6: S=4, S-u^2=-5.869604; m=7: S=sqrt(3) + 2, S-u^2=-9.701577; m=8: S=3, S-u^2=-14.545963; m=9: S=2, S-u^2=-20.206610; m=10: S=1, S-u^2=-26.415568; m=11: S=2 - sqrt(3), S-u^2=-32.904888; m=12: S=0, S-u^2=-39.478418\n2. max over 0 < u <= pi of S(u,u,u)/u^2 on a 4000-point grid (50 digits): 0.99999994859581146795 (< 1: S < u^2 there)\n3. S(u,u,u) = u**6/360 - u**4/12 + u**2 + O(u^8)\n   transverse plane: order-4 term equals |k|^4/36: True; a nonzero order-6 term is present (stated as O(|k|^6)): True\nHIT: confirmed - T3(ii)'s sentence 'along k = (u,u,u) the symbol is u^2 = K^2/9' is exact-false: the T3(i) symbol at w = 1/3 is 2 - 2 cos u = 4 sin^2(u/2) on the line, e.g. S = 1 at u = pi/3, 3 at 2pi/3, 4 at pi (u^2 = 1.097, 4.386, 9.870), and S < u^2 for every 0 < |u| <= pi (max S/u^2 on the grid 0.99999995); the series is u^2 - u^4/12 + u^6/360 - ..., so K^2/9 is the leading term only, while the transverse clause carries its O(|k|^6)\nSUMMARY: confirmed - the level-direction clause of T3(ii) omits its remainder (the claim_scope's 'expansion' and the runner's D2 series check are the correct reading); exact level-line symbol 4 sin^2(u/2) = u^2 - u^4/12 + O(u^6)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jfe79",
+  "at_utc": "20260919T045629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "T3(ii) 'along k=(u,u,u) the symbol is u^2 = K^2/9' is false as an exact statement: T3(i)'s symbol at w=1/3 is 2 - 2cos u = 4 sin^2(u/2) on the line (1 at pi/3, 3 at 2pi/3, 4 at pi; S < u^2 on (0,pi]); u^2 is its leading term (series u^2 - u^4/12 + u^6/360); the transverse clause has its O(|k|^6) but the level clause lacks + O(u^4). Claim_scope ('expansion') and runner D2 (series) carry the correct reading; wording fix only.",
+  "by": "w-jonathonsmac4f50-jfe79",
+  "at_utc": "20260919T045629Z"
+ }
+}

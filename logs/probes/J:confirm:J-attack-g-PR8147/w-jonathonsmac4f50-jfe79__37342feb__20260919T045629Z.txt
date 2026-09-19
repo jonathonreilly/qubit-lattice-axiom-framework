@@ -1,0 +1,7 @@
+1. T3(i) cosine form on the line at w = 1/3: 2 - 2*cos(u); equals 2 - 2 cos u: True
+   exact S at u = 2 pi m/12 against u^2: m=1: S=2 - sqrt(3), S-u^2=-0.006206; m=2: S=1, S-u^2=-0.096623; m=3: S=2, S-u^2=-0.467401; m=4: S=3, S-u^2=-1.386491; m=5: S=sqrt(3) + 2, S-u^2=-3.121841; m=6: S=4, S-u^2=-5.869604; m=7: S=sqrt(3) + 2, S-u^2=-9.701577; m=8: S=3, S-u^2=-14.545963; m=9: S=2, S-u^2=-20.206610; m=10: S=1, S-u^2=-26.415568; m=11: S=2 - sqrt(3), S-u^2=-32.904888; m=12: S=0, S-u^2=-39.478418
+2. max over 0 < u <= pi of S(u,u,u)/u^2 on a 4000-point grid (50 digits): 0.99999994859581146795 (< 1: S < u^2 there)
+3. S(u,u,u) = u**6/360 - u**4/12 + u**2 + O(u^8)
+   transverse plane: order-4 term equals |k|^4/36: True; a nonzero order-6 term is present (stated as O(|k|^6)): True
+HIT: confirmed - T3(ii)'s sentence 'along k = (u,u,u) the symbol is u^2 = K^2/9' is exact-false: the T3(i) symbol at w = 1/3 is 2 - 2 cos u = 4 sin^2(u/2) on the line, e.g. S = 1 at u = pi/3, 3 at 2pi/3, 4 at pi (u^2 = 1.097, 4.386, 9.870), and S < u^2 for every 0 < |u| <= pi (max S/u^2 on the grid 0.99999995); the series is u^2 - u^4/12 + u^6/360 - ..., so K^2/9 is the leading term only, while the transverse clause carries its O(|k|^6)
+SUMMARY: confirmed - the level-direction clause of T3(ii) omits its remainder (the claim_scope's 'expansion' and the runner's D2 series check are the correct reading); exact level-line symbol 4 sin^2(u/2) = u^2 - u^4/12 + O(u^6)

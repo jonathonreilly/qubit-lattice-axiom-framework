@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8169",
+ "type": "judgment",
+ "lane": "frame-attached-four-point-weights-born-a",
+ "worker": "w-macbookpro90c72-j270b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8169/bisector_gibbs_identities.py",
+ "seed": 84706,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82dc55b4",
+ "started_utc": "20260919T022506Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: bisector/axis 180\u00b0 maps, cube Aut covariance, Gibbs ratio and 1/3\u20131/6 masses, linear family, Born sum 2, and path3 cardinalities 2 vs 4 all hold as written"
+ },
+ "review": "Bisector 180 map, cube Aut covariance, Gibbs 1/3-1/6, linear family, Born sum 2 and path3 2-vs-4 hold as written; pattern has no purchase",
+ "what": "PR #8169 ([physics-loop] frame-attached four-point weights: Born is no): attack ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916; git show origin/physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916:<note>. Create probes/work/pr8169/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8169/<script>.py\"",
+ "stdout_sha256": "e2af9cebca98dbc34fd14fab8d6c2cdce10425b9db42769aa4c18e8f8a92a709",
+ "stdout_tail": "bisector 180\u00b0 (x,y,z)->(z,-y,x) swaps q\u2194q' and preserves S: True\n180\u00b0 about q sends q' to -q' and preserves S: True\ncube Aut covariance and distinctness on 864 pairs: True\nGibbs \u03b1/\u03b3=exp(2\u03b2(1+t)); t=0 e^{2\u03b2}=2 => \u03b1=1/3 \u03b3=1/6: True\nlinear family \u03b1=(1+\u03bb(1+t))/4; \u03bb=0,\u00b11 at t=0: True\nBorn on S at t=0 is (1,1/2,0,1/2) sums to 2: True\nchain |supp|=2 ends-first |supp|=4\nSUMMARY: pattern has no purchase on this note: bisector/axis 180\u00b0 maps, cube Aut covariance, Gibbs ratio and 1/3\u20131/6 masses, linear family, Born sum 2, and path3 cardinalities 2 vs 4 all hold as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j270b",
+  "at_utc": "20260919T022507Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

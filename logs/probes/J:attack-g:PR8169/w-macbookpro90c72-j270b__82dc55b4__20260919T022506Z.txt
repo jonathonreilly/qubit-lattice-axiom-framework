@@ -1,0 +1,8 @@
+bisector 180° (x,y,z)->(z,-y,x) swaps q↔q' and preserves S: True
+180° about q sends q' to -q' and preserves S: True
+cube Aut covariance and distinctness on 864 pairs: True
+Gibbs α/γ=exp(2β(1+t)); t=0 e^{2β}=2 => α=1/3 γ=1/6: True
+linear family α=(1+λ(1+t))/4; λ=0,±1 at t=0: True
+Born on S at t=0 is (1,1/2,0,1/2) sums to 2: True
+chain |supp|=2 ends-first |supp|=4
+SUMMARY: pattern has no purchase on this note: bisector/axis 180° maps, cube Aut covariance, Gibbs ratio and 1/3–1/6 masses, linear family, Born sum 2, and path3 cardinalities 2 vs 4 all hold as written

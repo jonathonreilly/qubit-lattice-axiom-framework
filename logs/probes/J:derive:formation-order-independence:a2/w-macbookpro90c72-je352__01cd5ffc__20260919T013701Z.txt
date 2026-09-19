@@ -1,0 +1,14 @@
+CHECK E0a: PASS mass=1
+CHECK E0b: PASS 3/8
+CHECK E0c: PASS
+CHECK E1a: PASS
+CHECK E2a: PASS two topological orders agree
+CHECK E2b: PASS C-first changes the law
+CHECK E2c: PASS
+CHECK E2d: PASS
+CHECK E2e: PASS
+LEGAL P(1,0,1)=3/28 ILLEGAL C-first=1/8
+CHECK E3a: PASS
+CHECK E3b: PASS same=2 diff=4
+HIT: on any DAG with finite predecessors, every topological formation order gives the same joint law P(v)=prod_x K(v_x | v_{pred(x)}) (hypothesis: every predecessor is recorded before its successor; no re-forming). Smallest example where a violating order changes the law: V-shape A->C<-B with P(C=1|a,b)=(2a+b+1)/7; legal P(1,0,1)=3/28, C-first P(1,0,1)=1/8. The campaign's Z^3 monotone orders are not topological orders of a causal DAG (neighbours are not predecessors), which is why they can disagree.
+SUMMARY: PROVED causal event-lattice formation is order-independent under topological orders; smallest violating order (C before A,B on a V-shape) changes P(1,0,1) from 3/28 to 1/8.

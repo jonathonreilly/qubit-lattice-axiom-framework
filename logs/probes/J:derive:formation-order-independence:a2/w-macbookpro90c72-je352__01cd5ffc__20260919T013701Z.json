@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:formation-order-independence:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-je352",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/formation-order-independence/w-macbookpro90c72-je352/check.py",
+ "seed": 81821,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "01cd5ffc",
+ "started_utc": "20260919T013701Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED causal event-lattice formation is order-independent under topological orders; smallest violating order (C before A,B on a V-shape) changes P(1,0,1) from 3/28 to 1/8."
+ },
+ "review": "Causal DAG formation is order-independent under topological orders; smallest violating order on a V-shape changes P(1,0,1) from 3/28 to 1/8; Z^3 monotone orders are not topological.",
+ "what": "DERIVATION, independent attempt 2 of 4: Does the law depend on the order in which causally unrelated records form?. On an event lattice the axiom fixes that a record is formed from its recorded predecessors; records at the same level are causally unrelated. TASK: prove that for ANY event lattice with a finite predecessor set and ANY formation order compatible with the causal order (not only level by level), the joint law of the records is the same, because each record's law depends only on its predecessors' values (a product of kernels along the partial order); state the exact hypothesis needed (every predecessor recorded before its successor; no record re-formed) and exhibit the smallest example where an order that violates it changes the law. Then compare with the campaign's Z^3 results, where different monotone orders of a NON-causal lattice gave different laws (blocks 05, 08, 09: PRs #8003, #8138, #8139): explain precisely why the event-lattice reading removes the order dependence that the formation-rate and formation-unit clauses (blocks 14, 15) were introduced to settle, or show that it does not. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/formation-order-independence/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/formation-order-independence/<name>/check.py\"",
+ "stdout_sha256": "856c0fd4f1ff68906b3bff3bc0f9020728f6557acf8deba67ca9f979bc826686",
+ "stdout_tail": "CHECK E0a: PASS mass=1\nCHECK E0b: PASS 3/8\nCHECK E0c: PASS\nCHECK E1a: PASS\nCHECK E2a: PASS two topological orders agree\nCHECK E2b: PASS C-first changes the law\nCHECK E2c: PASS\nCHECK E2d: PASS\nCHECK E2e: PASS\nLEGAL P(1,0,1)=3/28 ILLEGAL C-first=1/8\nCHECK E3a: PASS\nCHECK E3b: PASS same=2 diff=4\nHIT: on any DAG with finite predecessors, every topological formation order gives the same joint law P(v)=prod_x K(v_x | v_{pred(x)}) (hypothesis: every predecessor is recorded before its successor; no re-forming). Smallest example where a violating order changes the law: V-shape A->C<-B with P(C=1|a,b)=(2a+b+1)/7; legal P(1,0,1)=3/28, C-first P(1,0,1)=1/8. The campaign's Z^3 monotone orders are not topological orders of a causal DAG (neighbours are not predecessors), which is why they can disagree.\nSUMMARY: PROVED causal event-lattice formation is order-independent under topological orders; smallest violating order (C before A,B on a V-shape) changes P(1,0,1) from 3/28 to 1/8.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je352",
+  "at_utc": "20260919T013711Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Causal DAG formation is order-independent; V-shape violating order changes P(1,0,1) from 3/28 to 1/8.",
+  "by": "w-macbookpro90c72-je352",
+  "at_utc": "20260919T013711Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:note:KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026_04_24",
+ "type": "judgment",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-j12b4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGE/algebra_words_exact.py",
+ "seed": 3855,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "17c354b8",
+ "started_utc": "20260919T074415Z",
+ "elapsed_s": 12.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "neither falsifier fires: exactly over QQ_I, C*(D, U) is the 20-dimensional span of the words D^a U^b (minimal polynomial of D of degree 7, U^3 = -I, [D, U] = 0), matching the 20 joint eigenvalue pairs; the zeta multiplicity on ker D is 2 (tr P0 = 4, tr(U P0) = 2), and every word restricts to M_zeta as 0^a zeta^b times the identity, so the restriction image has dimension 1 and contains no rank-one projector"
+ },
+ "review": "Output matches the task (both falsifiers implemented by a literal exact enumeration of C*(D,U) over QQ_I, disjoint from the runner's numerical eigh/eig): [D,U] = 0, U^3 = -I and the degree-7 minimal polynomial of D hold exactly, so C*(D,U) is the span of the words D^a U^b with exact rank 20, equal to the 20 joint eigenvalue pairs from the momentum blocks; the kernel projector g(D)/g(0) gives dim ker D = 4 and, from tr(U P0) = 2, zeta multiplicity 2; every word restricts to M_zeta as 0^a zeta^b times the identity, so no rank-one projector exists and M_zeta is not one-dimensional; no falsifier fires.",
+ "what": "Note on main: docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGE/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGE/<script>.py\"",
+ "stdout_sha256": "c4123ef4c4a421718335ac096995c6b484103aa7ee5eb370d50328e71f464272",
+ "stdout_tail": "1. exact QQ_I construction (108 x 108): [D, U] = 0: True; U^3 = -I: True; m_D(D) = 0 for m_D = x*(x - 6)*(x - 3)*(2*x**2 - 12*x + 15)*(2*x**2 - 6*x + 3)/4: True; every proper divisor nonzero on D: True (minimal polynomial degree 7)\n2. C*(D, U) = span of the 21 words D^a U^b (a < 7, b < 3): exact rank 20; kernel projector P0 = g(D)/g(0): idempotent True, D P0 = 0 True; dim ker D = tr P0 = 4; tr(U P0) = 2 gives (n_zeta, n_zetabar) = (2, 2)\n3. joint eigenvalue pairs of (D, U) from the momentum blocks: 20 (= algebra dimension 20: True); the pair (0, zeta) has multiplicity n_zeta = 2\nSUMMARY: neither falsifier fires: exactly over QQ_I, C*(D, U) is the 20-dimensional span of the words D^a U^b (minimal polynomial of D of degree 7, U^3 = -I, [D, U] = 0), matching the 20 joint eigenvalue pairs; the zeta multiplicity on ker D is 2 (tr P0 = 4, tr(U P0) = 2), and every word restricts to M_zeta as 0^a zeta^b times the identity, so the restriction image has dimension 1 and contains no rank-one projector\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j12b4",
+  "at_utc": "20260919T074438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

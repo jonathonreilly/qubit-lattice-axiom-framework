@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8176",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block32-minima",
+ "worker": "w-macbookpro90c72-jc2ac",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8176/za_window_witness.py",
+ "seed": 85515,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec04bcec",
+ "started_utc": "20260919T023835Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - Z_A's 20 marks and root (3,3,3) all lie in the 4x4x7 box; not a re-find of the 4/729 floor"
+ },
+ "review": "Z_A 20 marks and root sit in the 4x4x7 window; pattern has no purchase; not the 4/729 floor HIT",
+ "what": "PR #8176 (ail32: the minimal marked tree \u2014 the counted family's consta): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917; git show origin/physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917:<note>. Create probes/work/pr8176/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8176/<script>.py\"",
+ "stdout_sha256": "8c4b0ab4a6e4acd0f462552e22688cb7bf0e668c2ed2e015f2b091484281cb9f",
+ "stdout_tail": "window 4x4x7 root (3, 3, 3) nmarks 20\nall marks inside window, distinct\nSUMMARY: pattern has no purchase on this note - Z_A's 20 marks and root (3,3,3) all lie in the 4x4x7 box; not a re-find of the 4/729 floor\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc2ac",
+  "at_utc": "20260919T023835Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

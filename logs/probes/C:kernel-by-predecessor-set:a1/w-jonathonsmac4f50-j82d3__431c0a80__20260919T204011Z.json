@@ -1,0 +1,32 @@
+{
+ "task": "C:kernel-by-predecessor-set:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j82d3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/kernel-by-predecessor-set/w-jonathonsmac4f50-j82d3/run.py",
+ "seed": 50411,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "431c0a80",
+ "started_utc": "20260919T204011Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the cube-symmetric sets containing the site, (a) and (c), give isotropic (M = 2/7 I, 10/19 I), drift-free, doubler-free kernels within a bounded factor of 1/E ((a): exactly 49/(14 - E) in [7/2, 49/2]); (b) has one doubler at (pi,pi,pi) and (d) has seven, at every corner of the zone (phi = cos k1 cos k2 cos k3); the sets without inversion symmetry (e), (f) drift along (1,1,1) (mean 1/4, 1/7 per axis) and are anisotropic, doubler-free"
+ },
+ "review": "run.py computes for the six predecessor sets the exact small-k form (M = Cov_P), the drift (mean of P), all zeros of 1 - |phi|^2 via the lattice of differences (checked exactly), the closed forms phi = 1 - E/7, 1 - E/6, cos k1 cos k2 cos k3 and the factor E/(1 - |phi|^2), which matches the task's expectation for (a) and (c) and refines the doubler remark: (d) has seven doublers, one at every nonzero zone corner.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): Which pasts give a Newtonian kernel. For the linear gain-one formation model on a 3+1 event lattice whose record at (t+1, x) averages the records at (t, x + p), p in a finite set P, the equal-time kernel is sigma^2/(1 - |phi|^2), phi(k) = |P|^-1 sum_p e^{ik.p}. For P = (a) the site and its 6 neighbours, (b) the 6 neighbours only, (c) site + 6 + 12 face diagonals, (d) the 8 cube corners, (e) the backward set {0, e1, e2, e3}, (f) the site and 3 backward + 3 forward neighbours chosen asymmetrically: compute with sympy the small-k form 1 - |phi|^2 = k^T M k + ..., whether M is isotropic, the drift (the imaginary linear term of phi), and ALL zeros of 1 - |phi|^2 on the Brillouin zone (a zero away from k = 0 is a second massless mode, a doubler: expected for (b) and (d) at k = (pi,pi,pi), since phi = -1 there). Table: set, isotropic?, drift?, doublers?, the bounded factor relating the kernel to 1/E(k). Expectation: cube-symmetric sets containing the site itself give an isotropic, drift-free, doubler-free Green-function kernel. DELIVERABLE in your unit worktree: probes/work/compute/kernel-by-predecessor-set/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/kernel-by-predecessor-set/<name>/run.py\"",
+ "stdout_sha256": "4a27891e70a0211d05e37e08263a166870f0911493df85dbdceea42475731658",
+ "stdout_tail": "((14 - E) E) and F = 49/(14 - E) in [7/2, 49/2] exactly (E in [0, 12]); (b) phi = 1 - E/6, F = 36/(12 - E), unbounded at E = 12, i.e. k = (pi,pi,pi); (d) phi = cos k1 cos k2 cos k3, so |phi| = 1 exactly on {0, pi}^3: seven doublers, at every corner of the zone, not only (pi,pi,pi)\ntable: set | isotropic | drift | doublers (k/pi) | F = E/(1-|phi|^2) range\n  (a) site + 6 neighbours | yes | no | none | [3.501, 24.500] (grid; small-k 7/2)\n  (b) 6 neighbours | yes | no | [('1', '1', '1')] | unbounded\n  (c) site + 6 + 12 face diagonals | yes | no | none | [1.901, 13.885] (grid; small-k 19/10)\n  (d) 8 cube corners | yes | no | [('0', '0', '1'), ('0', '1', '0'), ('0', '1', '1'), ('1', '0', '0'), ('1', '0', '1'), ('1', '1', '0'), ('1', '1', '1')] | unbounded\n  (e) backward {0, e1, e2, e3} | no | yes | none | [4.002, 16.000] (grid; small-k 16, 4)\n  (f) site + 3 backward + 3 forward face diagonals | no | yes | none | [1.535, 25.508] (grid; small-k 7/2, 49/32)\n==========================================================================================\nSUMMARY: the cube-symmetric sets containing the site, (a) and (c), give isotropic (M = 2/7 I, 10/19 I), drift-free, doubler-free kernels within a bounded factor of 1/E ((a): exactly 49/(14 - E) in [7/2, 49/2]); (b) has one doubler at (pi,pi,pi) and (d) has seven, at every corner of the zone (phi = cos k1 cos k2 cos k3); the sets without inversion symmetry (e), (f) drift along (1,1,1) (mean 1/4, 1/7 per axis) and are anisotropic, doubler-free\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j82d3",
+  "at_utc": "20260919T204016Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

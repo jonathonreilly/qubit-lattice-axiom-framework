@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8172",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block28-map-of",
+ "worker": "w-macbookpro90c72-j005a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8172/sampled_evidence_no_remaining.py",
+ "seed": 91539,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e10bca6e",
+ "started_utc": "20260919T041859Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8172): the only sampling language is the executed 120-island region count, already a known HIT (4.05 vs 6671/1728); T1\u2013T3 are exact and the map is labelled executed; no remaining never/always to hill-climb; pattern has no purchase beyond the known HIT"
+ },
+ "review": "pattern (e) has no purchase beyond the known 4.05 island-ratio HIT: T1-T3 are exact and the only sampling language is that executed count",
+ "what": "PR #8172 ([physics-loop] admissibility-induced-law block28 \u2014 bounded_t): attack ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916; git show origin/physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916:<note>. Create probes/work/pr8172/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8172/<script>.py\"",
+ "stdout_sha256": "20b21d7db20156848a4bab6b06a9501c634dc80c04b9647a8d02f66d198d5f55",
+ "stdout_tail": "SUMMARY: SAMPLED EVIDENCE (PR #8172): the only sampling language is the executed 120-island region count, already a known HIT (4.05 vs 6671/1728); T1\u2013T3 are exact and the map is labelled executed; no remaining never/always to hill-climb; pattern has no purchase beyond the known HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j005a",
+  "at_utc": "20260919T041859Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

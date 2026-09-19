@@ -1,0 +1,1 @@
+SUMMARY: SAMPLED EVIDENCE (PR #8172): the only sampling language is the executed 120-island region count, already a known HIT (4.05 vs 6671/1728); T1–T3 are exact and the map is labelled executed; no remaining never/always to hill-climb; pattern has no purchase beyond the known HIT

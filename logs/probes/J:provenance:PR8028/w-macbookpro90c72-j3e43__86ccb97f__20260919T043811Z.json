@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8028",
+ "type": "judgment",
+ "lane": "static-uniform-block38-20260907",
+ "worker": "w-macbookpro90c72-j3e43",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8028/provenance_theorem_numbers.py",
+ "seed": 92691,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "86ccb97f",
+ "started_utc": "20260919T043811Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "5 theorem numbers: Casimir 4 and 4L/a at v=0 for L in 1,2,5,10,100 derived; helper TOTAL 32/42 cache-sourced; unsourced 0"
+ },
+ "review": "Casimir 4 and 4L/a at v=0 derived for extra L; helper totals 32/42 cache-named; unsourced 0. No HIT.",
+ "what": "PR #8028 ([physics-loop] static-uniform block38 conditional-support): for every number in the theorem statements of GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/static-uniform-block38-20260907; git show origin/codex/static-uniform-block38-20260907:<note>. Create probes/work/pr8028/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8028/<script>.py\"",
+ "stdout_sha256": "f56aeec601004cbc6392921321b5da22d57518bd389fbacc96b68a1f3e846c18",
+ "stdout_tail": "[DERIVED] Casimir(1,0)=4\n[DERIVED] v=0 L=1: E=4 = 4L/a=4\n[DERIVED] v=0 L=2: E=8 = 4L/a=8\n[DERIVED] v=0 L=5: E=20 = 4L/a=20\n[DERIVED] v=0 L=10: E=40 = 4L/a=40\n[DERIVED] v=0 L=100: E=400 = 4L/a=400\n[CACHE] helper totals 32 and 42 named in helper_totals.py / runner-cache\n[DEFINITION] a>0, v>=0\nSUMMARY: 5 theorem numbers: Casimir 4 and 4L/a at v=0 for L in 1,2,5,10,100 derived; helper TOTAL 32/42 cache-sourced; unsourced 0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3e43",
+  "at_utc": "20260919T043811Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

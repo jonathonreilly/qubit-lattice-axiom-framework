@@ -1,0 +1,9 @@
+[DERIVED] Casimir(1,0)=4
+[DERIVED] v=0 L=1: E=4 = 4L/a=4
+[DERIVED] v=0 L=2: E=8 = 4L/a=8
+[DERIVED] v=0 L=5: E=20 = 4L/a=20
+[DERIVED] v=0 L=10: E=40 = 4L/a=40
+[DERIVED] v=0 L=100: E=400 = 4L/a=400
+[CACHE] helper totals 32 and 42 named in helper_totals.py / runner-cache
+[DEFINITION] a>0, v>=0
+SUMMARY: 5 theorem numbers: Casimir 4 and 4L/a at v=0 for L in 1,2,5,10,100 derived; helper TOTAL 32/42 cache-sourced; unsourced 0

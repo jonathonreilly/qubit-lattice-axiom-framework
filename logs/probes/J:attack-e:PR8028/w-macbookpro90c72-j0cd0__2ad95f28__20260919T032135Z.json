@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8028",
+ "type": "judgment",
+ "lane": "static-uniform-block38-20260907",
+ "worker": "w-macbookpro90c72-j0cd0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8028/adversarial_eta_half.py",
+ "seed": 88095,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2ad95f28",
+ "started_utc": "20260919T032135Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: there is no sampled never/always claim; \u03b7=1/2 gives 2L/a and the 4/a, CS-3 identities hold"
+ },
+ "review": "No sampled never/always claim; \u03b7=1/2 gives 2L/a; 4/a and CS-3 hold; pattern has no purchase",
+ "what": "PR #8028 ([physics-loop] static-uniform block38 conditional-support): attack GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-uniform-block38-20260907; git show origin/codex/static-uniform-block38-20260907:<note>. Create probes/work/pr8028/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8028/<script>.py\"",
+ "stdout_sha256": "314f85ac08b4b210d02bbdddd24c261995fbd1742a83514730e63206371cc623",
+ "stdout_tail": "\u03b7\u22641/2 yields lower bound 2L/a: True\nkinetic 4/a and CS factor 3 from dim E=9: True\nSUMMARY: pattern has no purchase on this note: there is no sampled never/always claim; \u03b7=1/2 gives 2L/a and the 4/a, CS-3 identities hold\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0cd0",
+  "at_utc": "20260919T032136Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

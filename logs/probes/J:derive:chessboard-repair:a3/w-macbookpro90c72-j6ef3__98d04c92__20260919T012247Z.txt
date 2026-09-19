@@ -1,0 +1,27 @@
+CHECK PASS: W.1 eigenvalues {p+q+4r:1, p-q:3, p+q-2r:2}  {p + q + 4*r: 1, p + q - 2*r: 2, p - q: 3}
+CHECK PASS: W.2 at (3,1,2): eigs 3-1=2>0, 3+1-4=0, 3+1+8=12>0 (semidefinite)
+CHECK PASS: W.3 (3,1,2) eigenvalues nonnegative  {12: 1, 2: 3, 0: 2}
+CHECK PASS: W.4 (5,2,4) has negative eig p+q-2r=-1  {23: 1, -1: 2, 3: 3}
+CHECK PASS: W.5 (1,3,2) has negative eig p-q=-2  {12: 1, -2: 3, 0: 2}
+CHECK PASS: W.6 (4,1,2) all eigs positive (p+q-2r=1)  {13: 1, 1: 2, 3: 3}
+CHECK PASS: W.7 on (p,1,2), PSD iff p>=3
+CHECK PASS: O.bond d=2 S=4 orbit 8 = N/2  got 8 N=16
+CHECK PASS: O.bond d=2 S=4 stays dir-0
+CHECK PASS: O.bond d=2 S=6 orbit 18 = N/2  got 18 N=36
+CHECK PASS: O.bond d=2 S=6 stays dir-0
+CHECK PASS: O.bond d=3 S=4 orbit 32 = N/2  got 32 N=64
+CHECK PASS: O.bond d=3 S=4 stays dir-0
+CHECK PASS: O.bond d=3 S=6 orbit 108 = N/2  got 108 N=216
+CHECK PASS: O.bond d=3 S=6 stays dir-0
+CHECK PASS: O.site d=2 S=4 orbit 8  got 8 N=16
+CHECK PASS: O.site d=3 S=4 orbit 16  got 16 N=64
+CHECK PASS: O.mixed site-dir0 + bond-transverse d=2 S=4 orbit N=16  got 16
+CHECK PASS: O.mixed site-dir0 + bond-transverse d=2 S=6 orbit N=36  got 36
+CHECK PASS: O.mixed site-dir0 + bond-transverse d=3 S=4 orbit N=64  got 64
+CHECK PASS: O.mixed site-dir0 + bond-transverse d=3 S=6 orbit N=216  got 216
+CHECK PASS: T.1 6m/p <= 1/36 iff p >= 216 m
+CHECK PASS: T.2 6 (m/p)^{3/4} <= 1/36 iff p >= 6^4 m = 1296 m
+CHECK PASS: T.3 bond-plane-only orbit N/2 does not recover T4's every-dir-i-bond event
+CHECKS: PASS=24 FAIL=0
+SUMMARY: PARTIAL six-axis bond weight W has eigenvalues p+q+4r (once), p-q (thrice), p+q-2r (twice), so bond-plane FLS reflection positivity holds iff p>=q and p+q>=2r (on (p,1,2): p>=3, with equality semidefinite at p=3). Pure bond-plane reflections of a direction-i bond have orbit N/2 (even longitudinal start), not N, so they do not disseminate to every direction-i bond. Site reflections in the bond direction plus bond reflections in the transverse directions do give orbit N. Route (ii) with bond planes alone fails to repair T3; the RP condition is verified.
+HIT: W-eigenvalues p+q+4r, p-q (x3), p+q-2r (x2); PSD iff p>=q and p+q>=2r; (3,1,2) on the PSD boundary, (5,2,4) and (1,3,2) have a negative eigenvalue. Bond-plane orbit of a dir-0 bond is N/2 not N (2D S=4: 8; 3D S=4: 32). Mixed site-dir0 + bond-transverse orbit is N. Pure bond-plane chessboard does not yield T4's every-direction-i-bond event.

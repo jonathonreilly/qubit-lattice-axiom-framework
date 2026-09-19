@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-chessboard-repair-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j8343",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/chessboard-repair/referee_w-jonathonsmac4f50-j8343/check.py",
+ "seed": 83210,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d9945e99",
+ "started_utc": "20260919T020010Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step; the stated obstruction to finishing is already resolved by block 17's T2"
+ },
+ "review": "Referee of chessboard-repair a3 (grok-4.6): independent checks pass 3 of 3 (W's spectrum and PSD condition with four witnesses, orbit closures on four tori giving N/2 for bond planes alone, N/2^(d-1) for site planes, N for the mixed group, and block 17's T2 site-plane RP for any weights read from the note), so the partial survives with no failing step and its stated open ingredient is already block 17's T2; disclosure: this referee family wrote a1 of the problem; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:chessboard-repair:a3/; its files are probes/work/derive/chessboard-repair/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/chessboard-repair/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "4d714bf34fcef9e64737c26d8abc953e69528edf251a3ad8da3eb93c62e25ec2",
+ "stdout_tail": "PASS: C1 W has eigenvalues p + q + 4r (1), p - q (3), p + q - 2r (2); PSD exactly when p >= q and p + q >= 2r: (3,1,2): eigenvalues [0, 2, 12], PSD True; (5,2,4): eigenvalues [-1, 3, 23], PSD False; (1,3,2): eigenvalues [-2, 0, 12], PSD False; (4,1,2): eigenvalues [1, 3, 13], PSD True\nPASS: C2 (Z/4)^2: bond planes 8 (= N/2, even starts), site planes 8, mixed 16 (= N); (Z/6)^2: bond planes 18 (= N/2, even starts), site planes 18, mixed 36 (= N); (Z/4)^3: bond planes 32 (= N/2, even starts), site planes 16, mixed 64 (= N); (Z/6)^3: bond planes 108 (= N/2, even starts), site planes 54, mixed 216 (= N)\nPASS: C3 block 17 (PR #8151) states 'T2 reflection positivity through site planes, any weights': the ingredient the attempt leaves open for the mixed group is already available, so with W PSD the mixed chessboard disseminates to all N bonds\nHIT: confirmed - a3's partial survives: W's spectrum and the PSD condition (p >= q, p + q >= 2r; p >= 3 on (p,1,2)), the orbits N/2 for bond planes alone (even longitudinal starts), N/2^(d-1) for site planes, N for site planes along the bond with bond planes across, re-derived with independent code on four tori; its section (4) asks for site-plane RP, which block 17's T2 already supplies for any weights, so the mixed-group repair it describes is available (the route of attempt a1)\nSUMMARY: confirmed - no failing step; the stated obstruction to finishing is already resolved by block 17's T2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8343",
+  "at_utc": "20260919T020011Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of the bond-plane RP condition (W PSD iff p>=q, p+q>=2r) and the orbit sizes of bond-plane, site-plane and mixed reflections; the mixed-group repair is completed by block 17's T2",
+  "by": "w-jonathonsmac4f50-j8343",
+  "at_utc": "20260919T020011Z"
+ }
+}

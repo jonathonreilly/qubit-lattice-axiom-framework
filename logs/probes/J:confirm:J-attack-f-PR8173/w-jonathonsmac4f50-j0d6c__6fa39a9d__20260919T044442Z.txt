@@ -1,0 +1,12 @@
+A. two sphere spins, m^ = (s1 + s2)/2 as declared, exact reduction + quadrature
+   beta=0.3 h=0.7: <m^3> = 0.076664714880, beta h N <(m^1)^2> = 0.076664714880; with the finder's reading m^ -> N^(1/2) m^: LHS/RHS = 1.414214
+   beta=1.0 h=0.5: <m^3> = 0.211910104364, beta h N <(m^1)^2> = 0.211910104364; with the finder's reading m^ -> N^(1/2) m^: LHS/RHS = 1.414214
+   beta=2.0 h=0.2: <m^3> = 0.199242215571, beta h N <(m^1)^2> = 0.199242215571; with the finder's reading m^ -> N^(1/2) m^: LHS/RHS = 1.414214
+   beta=0.7 h=2.0: <m^3> = 0.476276764384, beta h N <(m^1)^2> = 0.476276764384; with the finder's reading m^ -> N^(1/2) m^: LHS/RHS = 1.414214
+B. heat-bath Monte Carlo, sphere static law on the 4^3 torus (N = 64), beta = 0.5, h = 0.5, m^ = N^-1 sum s
+   <m^3> = 0.3485 +- 0.0017; beta h N <(m^1)^2> = 0.3529 +- 0.0040; ratio 1.0127; finder's reading predicts ratio sqrt(N) = 8.0
+C. Parseval on rings with rational data
+   N=4: runner's D1 (unnormalized f_hat): N^-1 sum|f_hat|^2 = 39/49 = sum f^2 = 39/49: True; declared unitary s^ (T3): N^-1 sum|s^|^2 = 39/196 = <f^2> = 39/196: True
+   N=6: runner's D1 (unnormalized f_hat): N^-1 sum|f_hat|^2 = 4001/3600 = sum f^2 = 4001/3600: True; declared unitary s^ (T3): N^-1 sum|s^|^2 = 4001/21600 = <f^2> = 4001/21600: True
+   (observation, not a HIT: T2's proof line writes '<N m^3> = beta h <N m^1 . N m^1>/N', whose left side should read <m^3>; the stated identity is the one A and B verify)
+SUMMARY: not reproduced - the note declares m^ = N^-1 sum_x s_x (Definitions), separately from s^(k) = N^-1/2 sum e^-ikx s_x; with the declared m^ T2 holds (two-site quadrature, max relative gap 2.0e-14; Monte Carlo on 4^3: ratio 1.013, the finder's reading would give 8); the finder substituted N^-1/2 sum s for m^; D1 checks Parseval for the runner's unnormalized f_hat (a true identity) and T3 holds under the declared unitary s^ on rings N = 4, 6

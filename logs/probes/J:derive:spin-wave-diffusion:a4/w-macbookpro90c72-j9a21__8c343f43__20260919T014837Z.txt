@@ -1,0 +1,8 @@
+CHECK V1_cosine: OK
+CHECK V2_G2: OK (G_2=27/32)
+CHECK V2_G3: OK (G_3=11/9)
+CHECK V2_G4: OK (G_4=189/128)
+CHECK V3_phi0: OK
+CHECK V3_var: OK (Var(bar xi)=sigma^2/N; linearized MSD of zero mode = 2 (sigma^2/N) t for two components)
+SUMMARY: PARTIAL 2+1 return sums G_2=27/32, G_3=11/9, G_4=189/128 exact; 1-|phi|^2=(6-2 cos k1-2 cos k2-2 cos(k1-k2))/9; linearized zero mode has phi(0)=1 and Cartesian variance sigma^2 t / N per component. (6/6 checks passed)
+HIT: G_2=27/32, G_3=11/9, G_4=189/128; linearized D_1 L^2/sigma^2 = 1 exactly

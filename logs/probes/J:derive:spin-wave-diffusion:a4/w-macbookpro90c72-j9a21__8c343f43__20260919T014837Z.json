@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:spin-wave-diffusion:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j9a21",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/spin-wave-diffusion/w-macbookpro90c72-j9a21/check.py",
+ "seed": 82517,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8c343f43",
+ "started_utc": "20260919T014837Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL 2+1 return sums G_2=27/32, G_3=11/9, G_4=189/128 exact; 1-|phi|^2=(6-2 cos k1-2 cos k2-2 cos(k1-k2))/9; linearized zero mode has phi(0)=1 and Cartesian variance sigma^2 t / N per component. (6/6 checks passed)"
+ },
+ "review": "Exact G_2=27/32, G_3=11/9, G_4=189/128 for the 2+1 kernel; linearized zero mode has D_1 L^2/sigma^2=1 (6/6 exact checks).",
+ "what": "DERIVATION, independent attempt 4 of 4: The direction of the sphere formation law diffuses at rate sigma^2/(L^2 |m|^2). Blocks 26, 34 (PRs #8170, #8178): the sphere formation law (record at x drawn with density proportional to e^{beta s.S}, S the sum of the three recorded predecessors) on the periodic L x L level plane. For the LINEARIZED law the zero mode random-walks with variance sigma^2 t/L^2, sigma^2 = A(3 beta)/(3 beta), A(k) = coth k - 1/k (proved). EXECUTED for the nonlinear law: the mean direction diffuses faster by a factor 1.34, 1.14, 1.06, 1.02 at beta = 6, 12, 24, 48, matching 1/|m|^2 with m the magnetization. TASK: prove a statement of that form: e.g. for the nonlinear law at large beta, D_L(beta) L^2/sigma^2 -> 1 as beta -> infinity at fixed L with an explicit error term, or two-sided bounds c_1/|m|^2 <= D L^2/sigma^2 <= c_2/|m|^2. Route: write the one-step map of the plane average exactly (the mean of a von Mises-Fisher draw is A(kappa) S/|S|), expand in the transverse fluctuations, and control the remainder by the stationary variance of the non-zero modes (block 34's V_L). Check each expansion coefficient exactly and compare the final constant with the executed table (probes/lib/sphere_torus_msd.py reproduces it). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/spin-wave-diffusion/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/spin-wave-diffusion/<name>/check.py\"",
+ "stdout_sha256": "0e4a3df5b92bafb91d8165c5e69c8b474728d5dc800636d68123692e4375a127",
+ "stdout_tail": "CHECK V1_cosine: OK\nCHECK V2_G2: OK (G_2=27/32)\nCHECK V2_G3: OK (G_3=11/9)\nCHECK V2_G4: OK (G_4=189/128)\nCHECK V3_phi0: OK\nCHECK V3_var: OK (Var(bar xi)=sigma^2/N; linearized MSD of zero mode = 2 (sigma^2/N) t for two components)\nSUMMARY: PARTIAL 2+1 return sums G_2=27/32, G_3=11/9, G_4=189/128 exact; 1-|phi|^2=(6-2 cos k1-2 cos k2-2 cos(k1-k2))/9; linearized zero mode has phi(0)=1 and Cartesian variance sigma^2 t / N per component. (6/6 checks passed)\nHIT: G_2=27/32, G_3=11/9, G_4=189/128; linearized D_1 L^2/sigma^2 = 1 exactly\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9a21",
+  "at_utc": "20260919T014853Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact G_2=27/32, G_3=11/9, G_4=189/128; linearized D_1 L^2/sigma^2=1.",
+  "by": "w-macbookpro90c72-j9a21",
+  "at_utc": "20260919T014853Z"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-g:PR8148",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block14-format",
+ "worker": "w-macbookpro90c72-j5948",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8148/attack_g_r3_trees.py",
+ "seed": 82818,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0604ba9",
+ "started_utc": "20260919T015338Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "R3/D1-D2 brute force FIRED: path uniform TV=7/48 max=5/864 != 1/216; star uniform TV=4781/20736 max=65/124416 != 56059/3369600"
+ },
+ "review": "R3 seeded=static holds on path3 and four-leaf star; the stated uniform distances 1/216 and 56059/3369600 match neither TV nor max-norm of uniform vs static at (3,1,2).",
+ "what": "PR #8148 ([physics-loop] admissibility-induced-law block14 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915:<note>. Create probes/work/pr8148/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8148/<script>.py\"",
+ "stdout_sha256": "3b9fed5145c6b398b563dc3cc55b06e96f02a26fe907d0ba73cc24bc3367ca18",
+ "stdout_tail": "path3 Z=864 TV(seeded,static)=0\npath3 TV(uniform,static)=7/48 max-norm=5/864 claimed 1/216=1/216\nstar4 Z=124416 TV(seeded,static)=0\nstar4 TV(uniform,static)=4781/20736 max-norm=65/124416 claimed 56059/3369600\nN2=26 1/K2(a,a) as p^2/N2 inverse wait d_same claimed 72/13\nd_same=72/13 claimed 72/13=72/13\nHIT: path uniform TV=7/48 max=5/864 != 1/216\nHIT: star uniform TV=4781/20736 max=65/124416 != 56059/3369600\nSUMMARY: R3/D1-D2 brute force FIRED: path uniform TV=7/48 max=5/864 != 1/216; star uniform TV=4781/20736 max=65/124416 != 56059/3369600\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5948",
+  "at_utc": "20260919T015350Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "R3 seeded=static holds; executed uniform distances D1-D2 do not match TV or max-norm of uniform vs static at (3,1,2).",
+  "by": "w-macbookpro90c72-j5948",
+  "at_utc": "20260919T015350Z"
+ }
+}

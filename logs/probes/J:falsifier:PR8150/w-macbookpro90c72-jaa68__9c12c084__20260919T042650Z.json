@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8150",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block16-static",
+ "worker": "w-macbookpro90c72-jaa68",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8150/falsifier_cycle_qualifying.py",
+ "seed": 92010,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c12c084",
+ "started_utc": "20260919T042650Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifier (cycle lemma) did not fire \u2014 C4, C6, C8 have 0 qualifying orders; path3 has 4/6; beyond the note's plaquette"
+ },
+ "review": "falsifier did not fire: C4, C6, C8 have 0 qualifying orders (every site records at most one already-recorded neighbour); path3 has 4/6; beyond the note's plaquette",
+ "what": "PR #8150 ([physics-loop] admissibility-induced-law block16 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915; git show origin/physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915:<note>. Create probes/work/pr8150/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8150/<script>.py\"",
+ "stdout_sha256": "50806a0dc02b626da7a7e03d108a1454914126a84bf3ea70e9547c2ea097305f",
+ "stdout_tail": "C4: qualifying orders 0 / 4!\nC6: qualifying orders 0 / 6!\nC8: qualifying orders 0 / 8!\npath3: qualifying 4 / 6 (stated some, 4)\nSUMMARY: falsifier (cycle lemma) did not fire \u2014 C4, C6, C8 have 0 qualifying orders; path3 has 4/6; beyond the note's plaquette\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jaa68",
+  "at_utc": "20260919T042651Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

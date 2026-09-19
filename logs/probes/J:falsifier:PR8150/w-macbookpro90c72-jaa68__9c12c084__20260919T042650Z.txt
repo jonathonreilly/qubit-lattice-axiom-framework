@@ -1,0 +1,5 @@
+C4: qualifying orders 0 / 4!
+C6: qualifying orders 0 / 6!
+C8: qualifying orders 0 / 8!
+path3: qualifying 4 / 6 (stated some, 4)
+SUMMARY: falsifier (cycle lemma) did not fire — C4, C6, C8 have 0 qualifying orders; path3 has 4/6; beyond the note's plaquette

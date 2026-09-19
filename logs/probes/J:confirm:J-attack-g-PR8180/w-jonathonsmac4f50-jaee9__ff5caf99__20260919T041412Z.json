@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-g-PR8180",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-jaee9",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8180/t1_adjoint_symbol_and_process.py",
+ "seed": 91252,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff5caf99",
+ "started_utc": "20260919T041412Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - T1's mode formula and its operator gloss differ by conjugation (P*^s should be P^s, or phi^s should be conj phi^s) on every nonzero mode with non-real phi^s, exact on L=4, float on L=3..10, and in a Monte Carlo of the recursion; the runner's cosine characters and real-phi symbolic check cannot see it"
+ },
+ "review": "Finder's L=3 script re-run (144/144 slots conj(phi)^s); own exact L=4 Gaussian-rational diagonalization of the stationary written operator G(P^T)^s gives conj(phi)^s/(1-u) on 60/60 slots and phi^s/(1-u) only on the 28 slots with real phi^s (both orientations), float L=3..10 misses phi^s/(1-u) on all 2320 non-real slots (min relative gap 0.076), and a Monte Carlo E[theta(t)theta(t+s)^T] matches G(P^T)^s to 0.006 against 0.35 for the transpose: HIT confirmed.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-g:PR8180/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "6521e92631072906fc2eb8b19b9b090fa7387594532978543ed8bc3b8e41e854",
+ "stdout_tail": " two operators differ by 0.3431; units of max|G|)\n  s=2: max entry |E^[theta(t)theta(t+s)^T] - G(P^T)^s| = 0.0060, vs transposed G P^s = 0.4510  (the two operators differ by 0.4475; units of max|G|)\n  s=3: max entry |E^[theta(t)theta(t+s)^T] - G(P^T)^s| = 0.0067, vs transposed G P^s = 0.4969  (the two operators differ by 0.4930; units of max|G|)\n  1024000 sample pairs; 282 (mode, s) slots with |Im phi^s| >= 0.05: empirical operator eigenvalue closer to conj(phi)^s in 282, to phi^s in 0; max |ratio - conj(phi)^s| = 0.0025; conjugate-first mode covariance max |ratio - phi^s| = 0.0025\nHIT: confirmed - block 35 T1's 'i.e.' is off by complex conjugation: at the character where P acts by phi(k), the written operator sigma^2 (I - P P*)^{-1} P*^s acts by sigma^2 conj(phi)^s/(1-|phi|^2), not the stated sigma^2 phi^s/(1-|phi|^2) (exact L=4: 60/60 conj, 28/60 phi = exactly the slots with real phi^s, both orientations; float L=3..10: 2320 non-real slots all off, min relative gap 0.076); the operator is the process's E[theta(t)theta(t+s)^T] (Monte Carlo), while phi^s/(1-u) is the conjugate-first mode covariance, whose operator is the transpose sigma^2 (I - P P*)^{-1} P^s\nSUMMARY: confirmed - T1's mode formula and its operator gloss differ by conjugation (P*^s should be P^s, or phi^s should be conj phi^s) on every nonzero mode with non-real phi^s, exact on L=4, float on L=3..10, and in a Monte Carlo of the recursion; the runner's cosine characters and real-phi symbolic check cannot see it\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jaee9",
+  "at_utc": "20260919T041429Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "T1's gloss C_s = sigma^2 (I-PP*)^{-1} P*^s acts by sigma^2 conj(phi)^s/(1-|phi|^2) at the character where P acts by phi; the stated C_s(k) = sigma^2 phi^s/(1-|phi|^2) is the conjugate-first mode covariance, whose operator is the transpose sigma^2 (I-PP*)^{-1} P^s. Exact L=4 60/60, float L=3..10 2320/2320 non-real slots, Monte Carlo agrees; |C_s(k)|, Re C_s(k) and Sigma_{t,t+s} = Sigma_t (P^s)^T unaffected; runner B1 (real phi) and B2 (cosine characters) cannot see it.",
+  "by": "w-jonathonsmac4f50-jaee9",
+  "at_utc": "20260919T041429Z"
+ }
+}

@@ -1,0 +1,16 @@
+A. exact, L = 4, Gaussian rationals; stationary written operator G (P^T)^s, s = 1..4, full character basis
+  orientation x-e_i (runner): U^H P U = diag(phi) True; U^H P^T U = diag(conj phi) True; nonzero off-diagonal entries of U^H C U (written and transposed) 0
+    slots 60: written operator's eigenvalue == conj(phi)^s/(1-u) 60/60; == phi^s/(1-u) 28/60 (phi^s non-real in 32); transposed G P^s == phi^s/(1-u) 60/60
+    witness s=1 k=2pi(0,1)/4: phi=2/3+1/3i  stated C_s(k)=3/2+3/4i  written operator gives 3/2-3/4i
+  orientation x+e_i (reversed): U^H P U = diag(phi) True; U^H P^T U = diag(conj phi) True; nonzero off-diagonal entries of U^H C U (written and transposed) 0
+    slots 60: written operator's eigenvalue == conj(phi)^s/(1-u) 60/60; == phi^s/(1-u) 28/60 (phi^s non-real in 32); transposed G P^s == phi^s/(1-u) 60/60
+    witness s=1 k=2pi(0,1)/4: phi=2/3+1/3i  stated C_s(k)=3/2+3/4i  written operator gives 3/2-3/4i
+B. floating point, L = 3..10, both orientations, s = 1..4
+  slots 2976: max |eigenvalue - conj(phi)^s/(1-u)| = 4.13e-14; on the 2320 slots with non-real phi^s, min relative distance to phi^s/(1-u) = 7.577e-02
+C. Monte Carlo of theta_{t+1} = P theta_t + xi on L = 12 (runner orientation), mean removed, seed 8180
+  s=1: max entry |E^[theta(t)theta(t+s)^T] - G(P^T)^s| = 0.0060, vs transposed G P^s = 0.3474  (the two operators differ by 0.3431; units of max|G|)
+  s=2: max entry |E^[theta(t)theta(t+s)^T] - G(P^T)^s| = 0.0060, vs transposed G P^s = 0.4510  (the two operators differ by 0.4475; units of max|G|)
+  s=3: max entry |E^[theta(t)theta(t+s)^T] - G(P^T)^s| = 0.0067, vs transposed G P^s = 0.4969  (the two operators differ by 0.4930; units of max|G|)
+  1024000 sample pairs; 282 (mode, s) slots with |Im phi^s| >= 0.05: empirical operator eigenvalue closer to conj(phi)^s in 282, to phi^s in 0; max |ratio - conj(phi)^s| = 0.0025; conjugate-first mode covariance max |ratio - phi^s| = 0.0025
+HIT: confirmed - block 35 T1's 'i.e.' is off by complex conjugation: at the character where P acts by phi(k), the written operator sigma^2 (I - P P*)^{-1} P*^s acts by sigma^2 conj(phi)^s/(1-|phi|^2), not the stated sigma^2 phi^s/(1-|phi|^2) (exact L=4: 60/60 conj, 28/60 phi = exactly the slots with real phi^s, both orientations; float L=3..10: 2320 non-real slots all off, min relative gap 0.076); the operator is the process's E[theta(t)theta(t+s)^T] (Monte Carlo), while phi^s/(1-u) is the conjugate-first mode covariance, whose operator is the transpose sigma^2 (I - P P*)^{-1} P^s
+SUMMARY: confirmed - T1's mode formula and its operator gloss differ by conjugation (P*^s should be P^s, or phi^s should be conj phi^s) on every nonzero mode with non-real phi^s, exact on L=4, float on L=3..10, and in a Monte Carlo of the recursion; the runner's cosine characters and real-phi symbolic check cannot see it

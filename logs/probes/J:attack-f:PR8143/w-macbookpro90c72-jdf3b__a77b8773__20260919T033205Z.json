@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8143",
+ "type": "judgment",
+ "lane": "full-domain-projective-corridor-20260915",
+ "worker": "w-macbookpro90c72-jdf3b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8143/normalization_Z_three_quarters.py",
+ "seed": 88725,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a77b8773",
+ "started_utc": "20260919T033205Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - Z(1/2)=3/4 is the exact minimum of S+(S-1)^2; Re tr agrees on Hermitian \u03c1; rank-one R\u03c1R=tr(\u03c1R)R; Erlang E\u03c4=Var\u03c4=3L at L=1,2,3,5"
+ },
+ "review": "Z=S+(S-1)^2 has exact minimum 3/4 at S=1/2, Re tr matches on Hermitian rho, R rho R=tr(rho R)R, and Erlang E tau=Var tau=3L, so the normalization factors hold and the pattern has no purchase",
+ "what": "PR #8143 ([physics-loop] full-domain-projective-corridor: bounded_theo): attack FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/full-domain-projective-corridor-20260915; git show origin/physics-loop/full-domain-projective-corridor-20260915:<note>. Create probes/work/pr8143/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8143/<script>.py\"",
+ "stdout_sha256": "d075a61d66c11002600618558e6222de18f54989d38aa8e593711d2bb0654a47",
+ "stdout_tail": "Z(S)=S+(S-1)^2; critical/min symbolic 3/4\nZ(0)=1\nZ(1)=1\nZ(2)=3\nZ(1/4)=13/16\nZ(3/4)=13/16\n\u03bb denom at a=1/2 = 3/4\nR rho R = Matrix([[p, 0], [0, 0]]); tr(rho R)R = Matrix([[p, 0], [0, 0]])\nL=1 Erlang(3L,1): E\u03c4=3 Var\u03c4=3\nL=2 Erlang(3L,1): E\u03c4=6 Var\u03c4=6\nL=3 Erlang(3L,1): E\u03c4=9 Var\u03c4=9\nL=5 Erlang(3L,1): E\u03c4=15 Var\u03c4=15\nSUMMARY: pattern has no purchase on this note - Z(1/2)=3/4 is the exact minimum of S+(S-1)^2; Re tr agrees on Hermitian \u03c1; rank-one R\u03c1R=tr(\u03c1R)R; Erlang E\u03c4=Var\u03c4=3L at L=1,2,3,5\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jdf3b",
+  "at_utc": "20260919T033205Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

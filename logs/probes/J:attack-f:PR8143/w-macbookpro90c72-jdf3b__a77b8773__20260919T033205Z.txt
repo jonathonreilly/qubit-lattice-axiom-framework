@@ -1,0 +1,13 @@
+Z(S)=S+(S-1)^2; critical/min symbolic 3/4
+Z(0)=1
+Z(1)=1
+Z(2)=3
+Z(1/4)=13/16
+Z(3/4)=13/16
+λ denom at a=1/2 = 3/4
+R rho R = Matrix([[p, 0], [0, 0]]); tr(rho R)R = Matrix([[p, 0], [0, 0]])
+L=1 Erlang(3L,1): Eτ=3 Varτ=3
+L=2 Erlang(3L,1): Eτ=6 Varτ=6
+L=3 Erlang(3L,1): Eτ=9 Varτ=9
+L=5 Erlang(3L,1): Eτ=15 Varτ=15
+SUMMARY: pattern has no purchase on this note - Z(1/2)=3/4 is the exact minimum of S+(S-1)^2; Re tr agrees on Hermitian ρ; rank-one RρR=tr(ρR)R; Erlang Eτ=Varτ=3L at L=1,2,3,5

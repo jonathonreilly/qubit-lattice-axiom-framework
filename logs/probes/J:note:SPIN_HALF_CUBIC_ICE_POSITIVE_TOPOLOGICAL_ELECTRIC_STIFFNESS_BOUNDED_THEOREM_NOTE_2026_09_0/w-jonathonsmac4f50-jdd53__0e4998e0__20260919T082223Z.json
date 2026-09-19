@@ -1,0 +1,32 @@
+{
+ "task": "J:note:SPIN_HALF_CUBIC_ICE_POSITIVE_TOPOLOGICAL_ELECTRIC_STIFFNESS_BOUNDED_THEOREM_NOTE_2026_09_0",
+ "type": "judgment",
+ "lane": "spin",
+ "worker": "w-jonathonsmac4f50-jdd53",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_SPIN_HALF_CUBIC_ICE_POSITIVE_TOPOLOGICAL/flux_stiffness_larger_volumes.py",
+ "seed": 6143,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0e4998e0",
+ "started_utc": "20260919T082223Z",
+ "elapsed_s": 184.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "with an independent two-colour sampler and flux-line placement, c_8 = 1.617 +- 0.111 (14.6 sigma); c_12 = 1.493 +- 0.135 (11.0 sigma); c_14 = 1.562 +- 0.130 (12.0 sigma); c_16 = 1.629 +- 0.135 (12.0 sigma); c_20 = 1.641 +- 0.130 (12.7 sigma); every chain kept its Gauss charges and flux (True); beyond the note (L = 14, 16, 20) the falsifier does not fire"
+ },
+ "review": "Output matches the task (the c_L-positivity and sector falsifiers implemented with an independent two-colour sampler, spread flux-line placement, longer runs and an own weighted fit): recomputed c_8 = 1.617 +- 0.111 and c_12 = 1.493 +- 0.135 agree with the note within 1.4 combined sigma, and beyond the note c_14 = 1.562 +- 0.130, c_16 = 1.629 +- 0.135, c_20 = 1.641 +- 0.130 are positive at 12-13 sigma with no downward trend; every chain kept its Gauss charges and assigned flux, so no falsifier fires.",
+ "what": "Note on main: docs/SPIN_HALF_CUBIC_ICE_POSITIVE_TOPOLOGICAL_ELECTRIC_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_SPIN_HALF_CUBIC_ICE_POSITIVE_TOPOLOGICAL/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_SPIN_HALF_CUBIC_ICE_POSITIVE_TOPOLOGICAL/<script>.py\"",
+ "stdout_sha256": "7bbec892c75c769a21fd8d546cc12cefd758c388d1b8db5b36ccd147ce504368",
+ "stdout_tail": "L = 8: orbit means 400.00, 399.79, 399.30, 398.44, 396.73; c_L = 1.6165 +- 0.1107 (14.6 sigma); note c = 1.8847 +- 0.1517 (difference 1.4 combined sigma)\nL = 12: orbit means 1348.64, 1347.47, 1346.83, 1346.50, 1346.49, 1344.21, 1343.31; c_L = 1.4935 +- 0.1352 (11.0 sigma); note c = 1.2602 +- 0.1733 (difference 1.1 combined sigma)\nL = 14: orbit means 2138.55, 2138.90, 2138.97, 2138.77, 2136.97, 2137.04, 2135.47, 2133.38; c_L = 1.5621 +- 0.1298 (12.0 sigma)\nL = 16: orbit means 3192.93, 3192.28, 3192.71, 3191.71, 3191.35, 3191.07, 3188.88, 3188.68, 3185.72; c_L = 1.6288 +- 0.1352 (12.0 sigma)\nL = 20: orbit means 6236.86, 6234.21, 6234.37, 6234.77, 6232.69, 6233.64, 6231.23, 6229.95, 6230.61, 6228.68, 6226.27; c_L = 1.6412 +- 0.1296 (12.7 sigma)\nsector preservation (Gauss degrees 3 everywhere, assigned flux) in all chains: True\nSUMMARY: with an independent two-colour sampler and flux-line placement, c_8 = 1.617 +- 0.111 (14.6 sigma); c_12 = 1.493 +- 0.135 (11.0 sigma); c_14 = 1.562 +- 0.130 (12.0 sigma); c_16 = 1.629 +- 0.135 (12.0 sigma); c_20 = 1.641 +- 0.130 (12.7 sigma); every chain kept its Gauss charges and flux (True); beyond the note (L = 14, 16, 20) the falsifier does not fire\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdd53",
+  "at_utc": "20260919T082527Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

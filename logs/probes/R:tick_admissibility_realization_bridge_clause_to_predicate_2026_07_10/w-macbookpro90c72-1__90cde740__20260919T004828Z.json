@@ -23,12 +23,19 @@
  "stdout_tail": "[assignment-rejector-defect] Givens witness has a strict computed modulus-covariance defect | M(U_giv)=0.783326909627; uniform-mover rejector M=0.000e+00\nPASS: [mover-gauge-right-l6] L=6 cumulative-product gauge exactly uniformizes the fixed mover phases and closes | uniformization=3.342e-16, closure=2.628e-16\nPASS: [mover-gauge-left-l8] L=8 opposite-direction cumulative-product gauge uniformizes and closes | uniformization=8.083e-16, closure=4.457e-16\nPASS: [conditioning-support] nonempty nearest-neighbor V is carried by U0 and forces O(U0)=true | |V|=6, O(U0)=True; identity fails conditioning faithfulness\nPASS: [conditioning-sharpness] dropping conditioning faithfulness lets the same varying rule coexist with the identity tick | O(I)=False, O(conditioning witness)=True\nPASS: [support-converse] converse fails: a constant rule has empty V while its fixed-F mover has O=true | |V(A_const)|=0, O(U_R)=True\nPASS: [rule-covariance-rejector] covariance checker rejects a deliberately site-dependent availability rule | rejector=False, covariant control=True\nPASS: [source-clause-translation] clause-1 sentence is present verbatim in the axioms and new note\nPASS: [source-clause-variation] clause-2 sentence is present verbatim in the axioms and new note\nPASS: [scope-frame-phrase] note contains the full-covariance phrase\nPASS: [scope-support-phrase] note contains the support phrase\nPASS: [scope-support-variation-boundary] note makes support variation an extra premise\nTOTAL: PASS=24 FAIL=0\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T004828Z",
+  "at_utc": "20260919T012021Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 90cde740 differs from the current HEAD 98d04c92 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=24 FAIL=0' vs cache 'TOTAL: PASS=23 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, stale cache regressed by a later commit: the run gives TOTAL: PASS=24 FAIL=0; the only difference from the pinned cache is the added PASS [scope-support-variation-boundary]. fb5e056ddf (2026-08-05) refreshed the cache to the current runner (runner_sha256 2ab0baf2, PASS=24); ffaa1a06e6 (2026-08-09, blockAC2 salvage) restored the older cache (runner_sha256 91c60a02, PASS=23) while the runner stayed at 2ab0baf2, so the cache header no longer matches the runner.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T012021Z"
  }
 }

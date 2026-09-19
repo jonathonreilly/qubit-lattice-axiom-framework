@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8033",
+ "type": "judgment",
+ "lane": "finite-pw-confinement-block43-20260907",
+ "worker": "w-macbookpro90c72-j009a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8033/same_test_casimir.py",
+ "seed": 87085,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "76593ef0",
+ "started_utc": "20260919T030445Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same Casimir-zero test holds for the vacuum and fails for the fundamental (Q=4)"
+ },
+ "review": "same Casimir-zero test holds for vacuum Q(0,0)=0 and fails for fundamental Q(1,0)=4, so the objects separate and the pattern has no purchase",
+ "what": "PR #8033 ([physics-loop] finite-pw-confinement block43 conditional-sup): attack GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-pw-confinement-block43-20260907; git show origin/codex/finite-pw-confinement-block43-20260907:<note>. Create probes/work/pr8033/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8033/<script>.py\"",
+ "stdout_sha256": "b0b84a650ae0818e2dd60e21b2efbc4b8bd593dd1927a81a2d853c4bd207edd3",
+ "stdout_tail": "Casimir-zero test: vacuum=True fundamental=False Q(1,0)=4\nSUMMARY: pattern has no purchase on this note - the same Casimir-zero test holds for the vacuum and fails for the fundamental (Q=4)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j009a",
+  "at_utc": "20260919T030445Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

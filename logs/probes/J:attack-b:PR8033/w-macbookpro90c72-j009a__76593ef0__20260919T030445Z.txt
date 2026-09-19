@@ -1,0 +1,2 @@
+Casimir-zero test: vacuum=True fundamental=False Q(1,0)=4
+SUMMARY: pattern has no purchase on this note - the same Casimir-zero test holds for the vacuum and fails for the fundamental (Q=4)

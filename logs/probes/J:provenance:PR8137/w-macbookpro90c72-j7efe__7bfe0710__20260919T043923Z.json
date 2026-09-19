@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8137",
+ "type": "judgment",
+ "lane": "possibility-symmetric-order-dependence-2",
+ "worker": "w-macbookpro90c72-j7efe",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8137/provenance_theorem_numbers.py",
+ "seed": 92763,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7bfe0710",
+ "started_utc": "20260919T043923Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROVENANCE (PR #8137): Ising K^2 17/25, 8/25, 17/50 re-derive from (4/5,1/5); 24, 1/6, 1/4, Haar-square (6c-1)^2/3 are CACHE/NOTE-sourced; no provenance HIT"
+ },
+ "review": "Ising K^2 17/25, 8/25, 17/50 re-derive from (4/5,1/5); 24, 1/6, 1/4 and Haar-square (6c-1)^2/3 are cache/note sourced; no provenance HIT",
+ "what": "PR #8137 ([physics-loop] possibility-symmetric-order-dependence bounde): for every number in the theorem statements of POSSIBILITY_SYMMETRIC_SEQUENTIAL_FORMATION_THAT_VARIES_HAS_ORDER_DEPENDENT_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/possibility-symmetric-order-dependence-20260915; git show origin/physics-loop/possibility-symmetric-order-dependence-20260915:<note>. Create probes/work/pr8137/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8137/<script>.py\"",
+ "stdout_sha256": "2369988b6374be72d5a59cb82f2a2903bde82ede0f88e174e5e35874bc4f3ea9",
+ "stdout_tail": "cache stdout lines=40\n[DERIVED] K^2(+|+)= 17/25 stated 17/25; K^2(+|-)= 8/25 stated 8/25\n[DERIVED] P(L=R=+)=17/50 stated 17/50\n[DERIVED] (6c-1)^2/3=0 => c=1/6; a=b=1/6 with a+b+4c=1\n[CACHE+NOTE] 17/25\n[CACHE] 8/25\n[CACHE+NOTE] 17/50\n[CACHE+NOTE] 1/4\n[CACHE+NOTE] 1/6\n[NOTE] 4/5\n[NOTE] 1/5\n[CACHE+NOTE] 24\n[CACHE+NOTE] (6c-1)^2 / 3\n[CACHE+NOTE] 1/2\n[CACHE+NOTE] 1/3\nSUMMARY: PROVENANCE (PR #8137): Ising K^2 17/25, 8/25, 17/50 re-derive from (4/5,1/5); 24, 1/6, 1/4, Haar-square (6c-1)^2/3 are CACHE/NOTE-sourced; no provenance HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7efe",
+  "at_utc": "20260919T043923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

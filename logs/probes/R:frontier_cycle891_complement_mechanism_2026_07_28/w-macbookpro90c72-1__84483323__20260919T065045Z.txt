@@ -1,0 +1,20 @@
+==============================================================================
+CYCLE 891 -- BANK/EDGE IDENTITY ALGEBRA AND THE CYCLIC K-RUN LAW
+==============================================================================
+
+SCOPE: self-contained.  The unlanded Cycle-879/881/889 corpus lineage
+is provenance context only.  The historical derive/holdout story is
+recorded history: its runtime digest was an in-process execution-order
+guard, not a cryptographically sealed or blind holdout, and none of
+its predictions are certified by this package.
+
+CLAIMS_JSON: {"control_breaks":2679,"control_cells":2679,"identities_all_hold":true,"identity_rows":27,"krun_cells":3000,"krun_mismatches":0,"science_digest":"60516263d8119dbc57ab2e29b1f354011f5e030441a1c520bcc80650b0f4d872"}
+
+-- CERTIFICATES --------------------------------------------------------
+  PASS  L1_BANK_EDGE_IDENTITIES      rows=27 all_identities_hold=True (exhaustive over B=3..8, e=0..B-2)
+  PASS  L2_KRUN_ALIGNMENT_LAW        random_cells=3000 mismatches=0 all_good_edge_case=True mismatch_set_always_even=True perturbation_control_breaks=2679/2679
+  PASS  L3_DETERMINISM               double_run_digest_equal=True
+  PASS  L4_RUNTIME                   elapsed_s=0.1 budget_s=300
+
+TOTAL: PASS=4 FAIL=0
+VERDICT: PASS

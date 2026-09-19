@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle892_gbw1b_pricing_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
+ "seed": 645,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T065045Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f54b4446f33fb978f0b6fe13232dbc3f8728663f7399e74ce07c5fdfd72b1abd",
+ "stdout_tail": "\n[stderr]\nINPUT_DRIFT: outputs/window_freedom_cycle887_receipt_2026_07_28.json\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065046Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '' vs cache 'elapsed_sec: 30.392'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle892_gbw1b_pricing_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

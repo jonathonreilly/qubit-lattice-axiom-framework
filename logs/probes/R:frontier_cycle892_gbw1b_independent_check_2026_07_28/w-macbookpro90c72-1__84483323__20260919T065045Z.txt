@@ -1,0 +1,3 @@
+
+[stderr]
+INPUT_DRIFT: outputs/window_freedom_cycle887_receipt_2026_07_28.json

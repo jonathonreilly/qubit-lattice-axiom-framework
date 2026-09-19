@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle891_complement_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle891_complement_independent_check_2026_07_28.py",
+ "seed": 645,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T065045Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9b7a604ea493cb3a6307deff4d9ecb5e95a349b5e686df6a4b5809d2debb52dd",
+ "stdout_tail": "==============================================================================\nCYCLE 891 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE\n==============================================================================\n\n  PASS  R0_PINNED_EVIDENCE             scripts/frontier_cycle891_complement_mechanism_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt:MATCH\n  PASS  R0b_CLAIMS_PARSED              claims_line_found=True\n  PASS  R1_IDENTITIES_WIDE_GRID        grid B=3..60 all hold; finite differences +8/-8; primary_rows=27 expected=27\n  PASS  R2_KRUN_LAW_INDEPENDENT        cells=2500 mismatches=0 parity_violations=0 all_good_edge=True\n  PASS  R3_OVERCLAIM_SCAN              hits=none\n  PASS  R4_RUNTIME                     elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=6 FAIL=0\nVERDICT: PRIMARY_SURVIVES_THIS_CHECK\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065045Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

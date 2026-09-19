@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle891_complement_mechanism_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle891_complement_mechanism_2026_07_28.py",
+ "seed": 645,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T065045Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "026f8fbe4af3edc400e605f1c51f488471b90399eff6cdec81622a82a9d34a28",
+ "stdout_tail": "==============================================================================\nCYCLE 891 -- BANK/EDGE IDENTITY ALGEBRA AND THE CYCLIC K-RUN LAW\n==============================================================================\n\nSCOPE: self-contained.  The unlanded Cycle-879/881/889 corpus lineage\nis provenance context only.  The historical derive/holdout story is\nrecorded history: its runtime digest was an in-process execution-order\nguard, not a cryptographically sealed or blind holdout, and none of\nits predictions are certified by this package.\n\nCLAIMS_JSON: {\"control_breaks\":2679,\"control_cells\":2679,\"identities_all_hold\":true,\"identity_rows\":27,\"krun_cells\":3000,\"krun_mismatches\":0,\"science_digest\":\"60516263d8119dbc57ab2e29b1f354011f5e030441a1c520bcc80650b0f4d872\"}\n\n-- CERTIFICATES --------------------------------------------------------\n  PASS  L1_BANK_EDGE_IDENTITIES      rows=27 all_identities_hold=True (exhaustive over B=3..8, e=0..B-2)\n  PASS  L2_KRUN_ALIGNMENT_LAW        random_cells=3000 mismatches=0 all_good_edge_case=True mismatch_set_always_even=True perturbation_control_breaks=2679/2679\n  PASS  L3_DETERMINISM               double_run_digest_equal=True\n  PASS  L4_RUNTIME                   elapsed_s=0.1 budget_s=300\n\nTOTAL: PASS=4 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065045Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

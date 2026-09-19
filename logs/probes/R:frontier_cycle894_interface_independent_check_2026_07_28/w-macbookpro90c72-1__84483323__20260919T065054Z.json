@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle894_interface_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle894_interface_independent_check_2026_07_28.py",
+ "seed": 654,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T065054Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a0579419eb3e3e6f2c2caf7936d637207227a45ff56cb96d647ac724fbe68469",
+ "stdout_tail": "[PASS] fixed map and weights allow varying target-window masses\n[PASS] positive event mass permits empty target fibre\n[PASS] positive common normalizer can absorb scalar theta dependence\nTOTAL: PASS=3 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065054Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

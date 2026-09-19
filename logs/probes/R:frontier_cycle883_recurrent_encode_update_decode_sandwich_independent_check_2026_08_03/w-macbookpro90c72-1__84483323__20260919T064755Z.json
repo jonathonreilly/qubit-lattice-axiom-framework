@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_independent_check_2026_08_03.py",
+ "seed": 475,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T064755Z",
+ "elapsed_s": 47.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ab3adc3b22a90663a905622f7600bc7d47ff42ad6e3a4c74a83ca7f789f14c41",
+ "stdout_tail": "80f11a8d9b7b4b24e04aa0\",\n  \"source_sha256\": {\n    \"docs/MINIMAL_AXIOMS_2026-06-29.md\": \"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\",\n    \"docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md\": \"74beb1de39ea0e579b8c709fdb294602f8cb959f1283b7556eb4c62335fd2e2b\",\n    \"outputs/cycle870_openreference_joined_recurrent_compiler_receipt_2026_08_02.json\": \"d6be75419b1fab56853127d55730b63a23ef7d44205e66b7fa73c9f19aac8611\",\n    \"outputs/cycle883_recurrent_encode_update_decode_sandwich_primary_receipt_2026_08_03.json\": \"d4643ba7f109595ac21199ad4985ec5dbe8ce6263ed8274a9b8c4a40d87e3791\",\n    \"scripts/frontier_cycle870_openreference_joined_recurrent_compiler_2026_08_02.py\": \"1b66c061dcb8e0082fd9e7264e78ccbd0f77440c0f517aa93696bde49f78c1bd\",\n    \"scripts/frontier_cycle870_openreference_native_recurrent_update_2026_08_02.py\": \"687b22a0bd0fd71fc20e7597443886a4990b49fcef7c80164d5f685210e84237\",\n    \"scripts/frontier_cycle870_openreference_physical_m2_placement_2026_08_02.py\": \"64b36432670f8a05179d0473e724afee1dfe6327cdd0233d3d788a6b8413c8a2\",\n    \"scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_2026_08_03.py\": \"053b0886a5de2b204bc004b0bd30b47e47fd0049ba80f11a8d9b7b4b24e04aa0\",\n    \"scripts/frontier_cycle883_recurrent_encode_update_decode_sandwich_core_2026_08_03.py\": \"b21554d7689d8c5ad66dd1e4fa1bfad23c0928c402815111c0148b7a423b790b\"\n  },\n  \"sources_stable_through_execution\": true,\n  \"status\": \"pass\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

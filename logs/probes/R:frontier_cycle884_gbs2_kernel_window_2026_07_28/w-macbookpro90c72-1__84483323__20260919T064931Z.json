@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle884_gbs2_kernel_window_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+ "seed": 571,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T064931Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a5e9d75eac9094766f177cb5b63a84f3ba63b97d8725fb0777b260f91d85227b",
+ "stdout_tail": "efficients_high_to_low\": [\n          \"1\",\n          \"3\",\n          \"-1/4\",\n          \"-4\",\n          \"1/2\"\n        ],\n        \"reduced_norm_degree\": 4,\n        \"site\": [\n          1,\n          0,\n          0\n        ]\n      },\n      {\n        \"cancelled_factor\": \"1\",\n        \"quadratic_field\": \"Q(sqrt(5))\",\n        \"reduced_norm_coefficients_high_to_low\": [\n          \"1\",\n          \"6\",\n          \"35/4\",\n          \"-2\",\n          \"-19/4\"\n        ],\n        \"reduced_norm_degree\": 4,\n        \"site\": [\n          2,\n          0,\n          0\n        ]\n      }\n    ]\n  },\n  \"withdrawn_historical_inferences\": [\n    \"Record finite additivity as current axiom content\",\n    \"finite additivity collapses arbitrary shell weights to an annulus\",\n    \"locality, linearity and cubic covariance select a nearest-neighbour inverse\",\n    \"an exact lattice dilation law or p=1 forcing\",\n    \"positivity selects the physical TOWARD sign\",\n    \"finite Dirichlet pivots prove an infinite decaying Green function\",\n    \"chart residuals or stabilizer dimension as complete physical counts\"\n  ]\n}\nPASS current_memo_denies_dynamics_selection\nPASS finite_cube_elimination_found_every_pivot\nPASS finite_cube_equations_exact\nPASS finite_cube_identity_exact\nPASS finite_cube_values_positive\nPASS finite_cube_nonradial_example\nPASS primary_radial_norm_gcd_is_one\nPASS independent_radial_norm_gcd_is_one\nPASS conditional_range_one_invariant_dimension_is_two\nPASS independent_scope_counterexamples_pass\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064932Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,3 @@
+
+[stderr]
+INPUT_DRIFT: outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json

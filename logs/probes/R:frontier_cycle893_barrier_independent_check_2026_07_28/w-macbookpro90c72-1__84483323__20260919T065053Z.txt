@@ -1,0 +1,3 @@
+[PASS] equal-count partitions are incomparable
+[PASS] barrier blocks positive-length arrival but permits zero-step seed
+TOTAL: PASS=2 FAIL=0

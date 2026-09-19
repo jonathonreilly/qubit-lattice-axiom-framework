@@ -1,0 +1,13 @@
+==============================================================================
+CYCLE 891 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+==============================================================================
+
+  PASS  R0_PINNED_EVIDENCE             scripts/frontier_cycle891_complement_mechanism_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt:MATCH
+  PASS  R0b_CLAIMS_PARSED              claims_line_found=True
+  PASS  R1_IDENTITIES_WIDE_GRID        grid B=3..60 all hold; finite differences +8/-8; primary_rows=27 expected=27
+  PASS  R2_KRUN_LAW_INDEPENDENT        cells=2500 mismatches=0 parity_violations=0 all_good_edge=True
+  PASS  R3_OVERCLAIM_SCAN              hits=none
+  PASS  R4_RUNTIME                     elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: PRIMARY_SURVIVES_THIS_CHECK

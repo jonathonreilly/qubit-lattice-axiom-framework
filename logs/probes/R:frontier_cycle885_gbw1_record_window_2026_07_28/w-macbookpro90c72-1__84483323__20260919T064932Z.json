@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle885_gbw1_record_window_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+ "seed": 572,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T064932Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9cba38c454f882d40c3062c6798c4f586985252dd59cf5472bbf2ba6733672e9",
+ "stdout_tail": "itive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"1\", \"support_mass\": \"1\"}, {\"configuration\": \"annulus_1_4\", \"positive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"0\", \"support_mass\": \"0\"}, {\"configuration\": \"hollow_annulus\", \"positive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"0\", \"support_mass\": \"0\"}, {\"configuration\": \"Lshape\", \"positive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"0\", \"support_mass\": \"0\"}, {\"configuration\": \"plane_square\", \"positive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"1\", \"support_mass\": \"1\"}, {\"configuration\": \"chain\", \"positive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"1\", \"support_mass\": \"1\"}, {\"configuration\": \"sparse_a\", \"positive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"0\", \"support_mass\": \"0\"}, {\"configuration\": \"sparse_b\", \"positive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"1\", \"support_mass\": \"1\"}, {\"configuration\": \"offcentre_ball\", \"positive_length_landings_on_support\": 0, \"seed_mass_on_support\": \"1\", \"support_mass\": \"1\"}]}\n[PASS] nonempty disjoint shell violates all-superset monotonicity\n[PASS] DFS reproduces actual depth-four seed and walk counts\n[PASS] all twelve support spectra match DFS\n[PASS] original support equivariance\n[PASS] original fixed-cube translation failures\n[PASS] original boundary retractions\n[PASS] original centre and boundary theta counts\n[PASS] support mass is exact zero-step seed mass\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T064933Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

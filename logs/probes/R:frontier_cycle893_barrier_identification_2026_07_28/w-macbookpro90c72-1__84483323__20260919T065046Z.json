@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle893_barrier_identification_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle893_barrier_identification_2026_07_28.py",
+ "seed": 646,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T065046Z",
+ "elapsed_s": 7.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5cf09cb3ae5826540fad81108586be5e898d4d64eb57537153dc51e0a8d5d070",
+ "stdout_tail": " \"positive_length_support_landings\": 4, \"potential_support_on_records\": 4}, {\"boundary_theta_moving\": true, \"configuration\": \"sparse_b\", \"contains_support\": false, \"frozen\": false, \"positive_length_support_landings\": 5, \"potential_support_on_records\": 6}, {\"boundary_theta_moving\": true, \"configuration\": \"offcentre_ball\", \"contains_support\": false, \"frozen\": false, \"positive_length_support_landings\": 4, \"potential_support_on_records\": 5}], \"finite_map_checks\": {\"distinct\": 11, \"equivariance_checks\": 1440, \"equivariance_failures\": 740, \"finite_filter\": false, \"monotonicity_failures\": 9, \"monotonicity_pairs\": 35, \"rotation_only_failures\": 148}, \"partition\": [[\"axis_segment_closure\"], [\"bounding_box\"], [\"minkowski_S_ball1__885_checker_dilation_k1\"], [\"minkowski_S_ball2__885_checker_dilation_k2\"], [\"minkowski_S_far_shell__origin_present\"], [\"minkowski_S_zero__the_885_support_window\"], [\"readout_keyed_inflation\", \"size_keyed_inflation\"], [\"union_box_with_dilation\"]], \"partition_relation_to_support\": \"same\"}}\n[PASS] equal-count partitions are incomparable\n[PASS] barrier blocks positive-length arrival but permits zero-step seed\n[PASS] DFS agrees on every layer of 444 original barrier/configuration fixtures\n[PASS] refinement labels follow actual block containment\n[PASS] all31 original and6 checker barrier rows retained\n[PASS] original finite filter count\n[PASS] original finite quadratic range\n[PASS] conditional containment forbids positive-length support landings\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065053Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

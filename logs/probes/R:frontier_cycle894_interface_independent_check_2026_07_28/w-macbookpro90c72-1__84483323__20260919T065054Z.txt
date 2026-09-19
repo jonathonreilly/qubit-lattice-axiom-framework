@@ -1,0 +1,4 @@
+[PASS] fixed map and weights allow varying target-window masses
+[PASS] positive event mass permits empty target fibre
+[PASS] positive common normalizer can absorb scalar theta dependence
+TOTAL: PASS=3 FAIL=0

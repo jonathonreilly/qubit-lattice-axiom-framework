@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle894_interface_attack_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle894_interface_attack_2026_07_28.py",
+ "seed": 653,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T065053Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "06a52f4c098c1b59672dae7a0c15e3772f7876aa079459d2368e8def5ca0d7f3",
+ "stdout_tail": "09\": 102, \"710\": 103, \"711\": 104, \"712\": 105, \"713\": 106, \"714\": 107, \"715\": 108, \"716\": 109, \"717\": 110, \"718\": 111, \"719\": 112, \"720\": 113, \"721\": 114, \"722\": 115, \"723\": 116, \"724\": 117, \"725\": 118, \"726\": 119, \"727\": 120, \"728\": 121, \"729\": 122, \"730\": 123, \"731\": 124, \"732\": 125, \"733\": 126, \"734\": 127, \"735\": 128, \"736\": 129, \"737\": 130, \"738\": 131, \"739\": 132, \"740\": 133, \"741\": 134, \"742\": 135, \"743\": 136, \"744\": 137, \"745\": 138, \"746\": 139, \"747\": 140}, \"weightings\": {\"M1_COUNTING\": {\"on_formed_fraction\": \"4793/23065\", \"total_mass\": \"92260\", \"zero_atoms\": 0}, \"M2_PER_WORLD_UNIFORM\": {\"on_formed_fraction\": \"41/187\", \"total_mass\": \"1\", \"zero_atoms\": 0}, \"M3_OCCUPATION_WEIGHTED\": {\"on_formed_fraction\": \"1\", \"total_mass\": \"1\", \"zero_atoms\": 73088}, \"M4_FORMATION_LIFETIME\": {\"on_formed_fraction\": \"1\", \"total_mass\": \"1\", \"zero_atoms\": 73088}, \"M5_FORMATION_MOMENT\": {\"on_formed_fraction\": \"1\", \"total_mass\": \"1\", \"zero_atoms\": 76184}}, \"world_count\": 748}, \"zero_cells\": 42}\n[PASS] fixed map and weights allow varying target-window masses\n[PASS] positive event mass permits empty target fibre\n[PASS] positive common normalizer can absorb scalar theta dependence\n[PASS] all108 window spectra reconstructed through DFS and ordered cross terms\n[PASS] literal same target set gives actual0/1 masses\n[PASS] actual fixed target-set witness\n[PASS] full original ratio grid\n[PASS] original restricted ratio incidence\n[PASS] original synthetic zero counts, not878 identity\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065054Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

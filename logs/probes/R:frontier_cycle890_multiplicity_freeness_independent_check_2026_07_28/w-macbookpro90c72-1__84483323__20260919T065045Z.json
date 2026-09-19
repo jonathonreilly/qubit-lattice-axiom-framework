@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28.py",
+ "seed": 645,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "84483323",
+ "started_utc": "20260919T065045Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4d207905481545c45daa448c2730781d8ad9f6681fa0ad230b3bba1146486f8b",
+ "stdout_tail": "\n[stderr]\nINPUT_DRIFT: outputs/multiplicity_freeness_cycle890_receipt_2026_07_28.json\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T065045Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '' vs cache ' \"role\": \"independent adversarial checker\"'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

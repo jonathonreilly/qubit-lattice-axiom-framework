@@ -1,0 +1,59 @@
+== sum rules at (3,1,2) (3, 1, 2) ==
+  Z1=12 stated p+q+4r=12
+  φ 1 = Z1 1 (rows and cols): True
+  K doubly stochastic and symmetric; K_1 ≡ 1
+  K_2 vs K^2 mismatches: 0
+  K_2 = K^2 on all 36 pairs (symmetry of K): True
+== sum rules at (2,2,2) (2, 2, 2) ==
+  Z1=12 stated p+q+4r=12
+  φ 1 = Z1 1 (rows and cols): True
+  K doubly stochastic and symmetric; K_1 ≡ 1
+  K_2 vs K^2 mismatches: 0
+  K_2 = K^2 on all 36 pairs (symmetry of K): True
+== TV 1/2 convention at (3,1,2) ==
+  TV(point,point)=0 TV(distinct points)=1
+  c1=1/6 stated=1/6; twice would be 1/3
+== TV 1/2 convention at (2,2,2) ==
+  TV(point,point)=0 TV(distinct points)=1
+  c1=0 stated=0; twice would be 0
+== (1/6)K and (1/6)K^2 pair laws at (3,1,2) ==
+  2-site P(a,b)=(1/6)K(a,b) on all 36: True; mass=1
+  length-2 chain P(ends)=(1/6)K^2 on all 36: True
+  2x2 anti-diagonal = (1/6)K_2: True; = (1/6)K^2: True
+  (1/6)K(+x,+x)=1/24 stated 1/24
+== (1/6)K and (1/6)K^2 pair laws at (2,2,2) ==
+  2-site P(a,b)=(1/6)K(a,b) on all 36: True; mass=1
+  length-2 chain P(ends)=(1/6)K^2 on all 36: True
+  2x2 anti-diagonal = (1/6)K_2: True; = (1/6)K^2: True
+== N multinomial path counts ==
+  delta=(0, 0, 0) N=1 enumerated=1
+  delta=(1, 0, 0) N=1 enumerated=1
+  delta=(1, 1, 0) N=2 enumerated=2
+  delta=(1, 1, 1) N=6 enumerated=6
+  delta=(2, 1, 0) N=3 enumerated=3
+  delta=(2, 0, 0) N=1 enumerated=1
+  delta=(3, 0, 0) N=1 enumerated=1
+  delta=(2, 1, 1) N=12 enumerated=12
+  N(2,1,0)=3 (menu size 6 would be wrong here)
+  sum N at distance 0 = 1; 3^0=1
+  sum N at distance 1 = 3; 3^1=3
+  sum N at distance 2 = 9; 3^2=9
+  sum N at distance 3 = 27; 3^3=27
+  sum N at distance 4 = 81; 3^4=81
+== Q4c generating function at (3,1,2) ==
+  c=27/110 theta=27/56 stated 27/56=27/56
+  n=0: closed=55/28 partial_j<12=27359563241967978268/13931233916552734375 theta_form=55/28
+  n=1: closed=1485/1568 partial_j<12=724648584865825357371/766217865410400390625 theta_form=1485/1568
+  n=2: closed=40095/87808 partial_j<12=19139925141957529887264/42141982597572021484375 theta_form=40095/87808
+  n=3: closed=1082565/4917248 partial_j<12=4021992339930115145144361/18542472342931689453125000 theta_form=1082565/4917248
+  n=4: closed=29229255/275365888 partial_j<12=2617757781248343756507093/25495899471531072998046875 theta_form=29229255/275365888
+  n=5: closed=789189885/15420489728 partial_j<12=1346349505274951794418737971/28045489418684180297851562500 theta_form=789189885/15420489728
+  n=6: closed=21308126895/863547424768 partial_j<12=68191834721057158656099724839/3085003836055259832763671875000 theta_form=21308126895/863547424768
+  Pascal for C(n+j,n): True
+== Z1-power cancellation on the 2x2x2 cube at (3, 1, 2) ==
+  n_one=3 n_two=3 n_three=1 n_edges=12; Z1 leftover exponent 3 (should equal n_one=3)
+  2x2: n_one=2 n_two=1 leftover=2
+== cube influence N c^3 factor at (3,1,2) ==
+  N=6 c^3=19683/1331000 N c^3=59049/665500 stated 6*(27/110)^3=59049/665500
+  crude (3c)^3=531441/1331000 (N=6 vs 27)
+SUMMARY: pattern (f) NORMALIZATION has purchase (Z1=p+q+4r, K_1≡1, K_2=K^2 on the 6x6 menu, TV=1/2 giving c1=1/6, (1/6)K and (1/6)K^2 pair laws, N multinomial with ΣN=3^d, Q4c generating function, Z1 cancellation leftover n_one) and every identity recomputes exactly at (3,1,2) and (2,2,2); no HIT

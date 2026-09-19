@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8025",
+ "type": "judgment",
+ "lane": "local-observable-block35-20260907",
+ "worker": "w-macbookpro90c72-j096f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8025/same_test_singlet_vs_fundamental.py",
+ "seed": 86907,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3009d3d2",
+ "started_utc": "20260919T030147Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the same support tests separate the four-link physical reduced density (I/9 on the 9-dim block, zero on the singlet) from a local singlet, as written"
+ },
+ "review": "Same support tests separate the four-link I/9 reduced density from a local singlet as written; pattern has no purchase",
+ "what": "PR #8025 ([physics-loop] local-observable block35 conditional-support): attack GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/local-observable-block35-20260907; git show origin/codex/local-observable-block35-20260907:<note>. Create probes/work/pr8025/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8025/<script>.py\"",
+ "stdout_sha256": "28697a31d012778edaa59d2fb5442fb6123de7f0e3aa4ac7669fb1a89c99277e",
+ "stdout_tail": "loop state: Tr_block=1 singlet-overlap=0\nsinglet state: Tr_block=0 singlet-overlap=1\nsupported on singlet: loop=False singlet=True\nsupported on fundamental 9-block: loop=True singlet=False\nHaar: 9 fundamental matrix elements orthonormal after \u221a3; singlet orthogonal: True\nSUMMARY: pattern has no purchase on this note: the same support tests separate the four-link physical reduced density (I/9 on the 9-dim block, zero on the singlet) from a local singlet, as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j096f",
+  "at_utc": "20260919T030148Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

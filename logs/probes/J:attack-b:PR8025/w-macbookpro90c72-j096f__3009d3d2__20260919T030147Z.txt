@@ -1,0 +1,6 @@
+loop state: Tr_block=1 singlet-overlap=0
+singlet state: Tr_block=0 singlet-overlap=1
+supported on singlet: loop=False singlet=True
+supported on fundamental 9-block: loop=True singlet=False
+Haar: 9 fundamental matrix elements orthonormal after √3; singlet orthogonal: True
+SUMMARY: pattern has no purchase on this note: the same support tests separate the four-link physical reduced density (I/9 on the 9-dim block, zero on the singlet) from a local singlet, as written

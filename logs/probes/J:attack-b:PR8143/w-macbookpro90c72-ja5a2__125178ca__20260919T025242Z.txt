@@ -1,0 +1,4 @@
+OK: same kernel (1) at tr(ρP)=1/4: f_B gives 0.25, f_S gives 0.06496916912866406 = 1/(1+exp(8/3)); they differ
+OK: |C|=3L+(1+2L)=1+5L for L=1..8
+OK: same rate (2): corridor contexts λ=1, empty/program/marker-alone λ=0
+SUMMARY: pattern (b) SAME TEST BOTH SIDES — kernel (1) at tr=1/4 gives f_B=1/4 vs f_S=1/(1+e^{8/3}); rate (2) gives λ=1 on the three corridor contexts and λ=0 on empty/program/marker-alone; |C|=1+5L; the splits are live under the identical formulae; attack does not fire

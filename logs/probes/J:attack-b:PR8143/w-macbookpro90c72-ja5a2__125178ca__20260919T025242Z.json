@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8143",
+ "type": "judgment",
+ "lane": "full-domain-projective-corridor-20260915",
+ "worker": "w-macbookpro90c72-ja5a2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8143/attack_b_fs_vs_fb.py",
+ "seed": 86362,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "125178ca",
+ "started_utc": "20260919T025242Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (b) SAME TEST BOTH SIDES \u2014 kernel (1) at tr=1/4 gives f_B=1/4 vs f_S=1/(1+e^{8/3}); rate (2) gives \u03bb=1 on the three corridor contexts and \u03bb=0 on empty/program/marker-alone; |C|=1+5L; the splits are live under the identical formulae; attack does not fire"
+ },
+ "review": "Pattern (b): f_B vs f_S at tr=1/4 and \u03bb on corridor vs empty contexts still split under the same kernel/rate formulae; attack does not fire",
+ "what": "PR #8143 ([physics-loop] full-domain-projective-corridor: bounded_theo): attack FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/full-domain-projective-corridor-20260915; git show origin/physics-loop/full-domain-projective-corridor-20260915:<note>. Create probes/work/pr8143/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8143/<script>.py\"",
+ "stdout_sha256": "870ea8eae671334f94e753fa73f1c8ec36c8ed55634db7980fec9f4d38c629fc",
+ "stdout_tail": "OK: same kernel (1) at tr(\u03c1P)=1/4: f_B gives 0.25, f_S gives 0.06496916912866406 = 1/(1+exp(8/3)); they differ\nOK: |C|=3L+(1+2L)=1+5L for L=1..8\nOK: same rate (2): corridor contexts \u03bb=1, empty/program/marker-alone \u03bb=0\nSUMMARY: pattern (b) SAME TEST BOTH SIDES \u2014 kernel (1) at tr=1/4 gives f_B=1/4 vs f_S=1/(1+e^{8/3}); rate (2) gives \u03bb=1 on the three corridor contexts and \u03bb=0 on empty/program/marker-alone; |C|=1+5L; the splits are live under the identical formulae; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja5a2",
+  "at_utc": "20260919T025242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,1 @@
+SUMMARY: NORMALIZATION (PR #8026): no Fourier sums, structure factors, 2 pi, or conjugation conventions in the spatial-area Wilson-loop note; pattern has no purchase

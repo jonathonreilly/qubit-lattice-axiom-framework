@@ -1,0 +1,8 @@
+CHECK N1a_FDR: OK (chi/C = 1+phi, not a real constant)
+CHECK N1b_phi: OK
+CHECK N1c_E_k2: OK (E = |k|^2 + O(k^4))
+CHECK N1d_newton: OK (coeff 7 sigma^2 / (8 pi r))
+CHECK N1e_axis: OK (E(k,0,0)=k1**2+O(k^4))
+CHECK N2_L4: OK (chi/C=1+phi on sample L=4 modes)
+SUMMARY: PARTIAL linear light-cone kernel C=7 sigma^2 / (2 E (1-E/14)), response chi=7/E, chi/C=1+phi (FDR fails); E=|k|^2+O(k^4) so C ~ 7 sigma^2/(2 k^2) and the 3D Coulomb coefficient is 7 sigma^2/(8 pi r). Superposition holds in the linear model. (6/6 checks passed)
+HIT: Newtonian coefficient of the linear equal-time kernel is 7 sigma^2/(8 pi r); FDR fails with chi/C=1+phi

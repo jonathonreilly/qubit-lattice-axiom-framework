@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8030",
+ "type": "judgment",
+ "lane": "continuum-boundary-block40-20260907",
+ "worker": "w-macbookpro90c72-jec1f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8030/provenance_theorem_numbers.py",
+ "seed": 92520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4fa1456",
+ "started_utc": "20260919T043520Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "provenance OK \u2014 8 theorem-statement numbers sourced in the note, runner, cache, or exact (0+2+0)/36=1/18"
+ },
+ "review": "provenance: 8 theorem-statement numbers (1/18, 1/3, sqrt18, h/3, Haar chi integrals 0/0/1, /36) sourced in the note; none unsourced",
+ "what": "PR #8030 ([physics-loop] continuum-boundary block40 conditional-suppor): for every number in the theorem statements of GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/continuum-boundary-block40-20260907; git show origin/codex/continuum-boundary-block40-20260907:<note>. Create probes/work/pr8030/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8030/<script>.py\"",
+ "stdout_sha256": "ba3bd35674534ea721730666896a02b7c86ab35dc9b76d4a368dd75ff6a83401",
+ "stdout_tail": " J | NOTE: At u=0 the neutral ground is product Haar. Choose N=n\u00b3 disjoint elementary xy plaquettes anchored at (2i,2j,2k), 0<=i,j,k<n, and set ell=1/(2n). Their physical \nOK | \u221a18 | X = sqrt(18) J so E X^2 = 1 | NOTE: At u=0 the neutral ground is product Haar. Choose N=n\u00b3 disjoint elementary xy plaquettes anchored at (2i,2j,2k), 0<=i,j,k<n, and set ell=1/(2n). Their physical \nOK | h/3 | mesh ell = h/3 | NOTE: Give fine links mesh ell=h/3. The chosen plaquette anchors then have physical positions hk. For real f in C_c(R3), define the finite random variable\nOK | 0 | integral chi = 0, E J = 0 | NOTE: Put J_k=ReTr(U_k)/3 and X_k=sqrt18 J_k. The fundamental Haar character chi satisfies integral chi=0, integral chi^2=0 and integral |chi|^2=1. The first follows \nOK | 1 | integral |chi|^2 = 1, E X^2 = 1 | NOTE: Put J_k=ReTr(U_k)/3 and X_k=sqrt18 J_k. The fundamental Haar character chi satisfies integral chi=0, integral chi^2=0 and integral |chi|^2=1. The first follows \nOK | 36 | (0+2+0)/36 | NOTE: Put J_k=ReTr(U_k)/3 and X_k=sqrt18 J_k. The fundamental Haar character chi satisfies integral chi=0, integral chi^2=0 and integral |chi|^2=1. The first follows \nOK | 2 | integral chi^2 = 0 via center; CLT t^2/2 | NOTE: Put J_k=ReTr(U_k)/3 and X_k=sqrt18 J_k. The fundamental Haar character chi satisfies integral chi=0, integral chi^2=0 and integral |chi|^2=1. The first follows \nSUMMARY: provenance OK \u2014 8 theorem-statement numbers sourced in the note, runner, cache, or exact (0+2+0)/36=1/18\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jec1f",
+  "at_utc": "20260919T043520Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

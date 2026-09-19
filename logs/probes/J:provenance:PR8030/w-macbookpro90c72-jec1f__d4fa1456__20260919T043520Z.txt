@@ -1,0 +1,9 @@
+OK | 1/18 | E J^2 = (0+2+0)/36 = 1/18 | NOTE: At u=0 the neutral ground is product Haar. Choose N=n³ disjoint elementary xy plaquettes anchored at (2i,2j,2k), 0<=i,j,k<n, and set ell=1/(2n). Their physical 
+OK | 1/3 | ReTr(U)/3 = J | NOTE: At u=0 the neutral ground is product Haar. Choose N=n³ disjoint elementary xy plaquettes anchored at (2i,2j,2k), 0<=i,j,k<n, and set ell=1/(2n). Their physical 
+OK | √18 | X = sqrt(18) J so E X^2 = 1 | NOTE: At u=0 the neutral ground is product Haar. Choose N=n³ disjoint elementary xy plaquettes anchored at (2i,2j,2k), 0<=i,j,k<n, and set ell=1/(2n). Their physical 
+OK | h/3 | mesh ell = h/3 | NOTE: Give fine links mesh ell=h/3. The chosen plaquette anchors then have physical positions hk. For real f in C_c(R3), define the finite random variable
+OK | 0 | integral chi = 0, E J = 0 | NOTE: Put J_k=ReTr(U_k)/3 and X_k=sqrt18 J_k. The fundamental Haar character chi satisfies integral chi=0, integral chi^2=0 and integral |chi|^2=1. The first follows 
+OK | 1 | integral |chi|^2 = 1, E X^2 = 1 | NOTE: Put J_k=ReTr(U_k)/3 and X_k=sqrt18 J_k. The fundamental Haar character chi satisfies integral chi=0, integral chi^2=0 and integral |chi|^2=1. The first follows 
+OK | 36 | (0+2+0)/36 | NOTE: Put J_k=ReTr(U_k)/3 and X_k=sqrt18 J_k. The fundamental Haar character chi satisfies integral chi=0, integral chi^2=0 and integral |chi|^2=1. The first follows 
+OK | 2 | integral chi^2 = 0 via center; CLT t^2/2 | NOTE: Put J_k=ReTr(U_k)/3 and X_k=sqrt18 J_k. The fundamental Haar character chi satisfies integral chi=0, integral chi^2=0 and integral |chi|^2=1. The first follows 
+SUMMARY: provenance OK — 8 theorem-statement numbers sourced in the note, runner, cache, or exact (0+2+0)/36=1/18

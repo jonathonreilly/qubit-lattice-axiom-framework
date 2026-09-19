@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-two-source-interaction-a5",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jf209",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/two-source-interaction/referee_w-jonathonsmac4f50-jf209/check.py",
+ "seed": 86424,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c95aa102",
+ "started_utc": "20260919T025344Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "jef9b confirmed (the kernel coefficient and the FDR ratio, a partial on a neighbouring quantity of task (c)); jc4c2 fails at its superposition clause - its L = 4 numbers hold (C(0), C(e1), chi(0), chi(e1), 128/147, 7680/9359, 12/7) and its pin quadratics are the equal-time Gaussian marginal of the unpinned law, but 'superposition of means is exact' is false for pins: the summed one-pin means miss the pin value by C(e1)/C(0) = 11/371 (Gaussian) and by G(e1)/G(0) (persistent pins, 5^3 box)"
+ },
+ "review": "Two grok a5 attempts refereed: jef9b's chi/C = 1+phi and kernel coefficient 7 sigma^2/(8 pi r) survive (exact split C = (7 sigma^2/2)(1/E + 1/(14-E)), r C(r e1) = 0.27854 at r = 64 vs 7/(8 pi) = 0.27852, G(0) = Watson/2), while jc4c2's L = 4 numbers hold but its 'superposition of means is exact' fails for pins (summed one-pin means give 382/371 and 1.2752 at the pin instead of 1), so HIT confirmed for jef9b only.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:two-source-interaction:a5/; its files are probes/work/derive/two-source-interaction/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/two-source-interaction/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "75ec97889957fd0ac87c99f3b8bb406840993807aa5ed43cc0af94ced20d99e8",
+ "stdout_tail": " 0.2527310 (Watson/2 = 0.2527310); 1/(4 pi) = 0.0795775, 7/(8 pi) = 0.2785212; r = 4: r G = 0.0811555, r C = 0.2857671, |g| = 1.2e-04; r = 8: r G = 0.0799044, r C = 0.2796733, |g| = 2.9e-07; r = 16: r G = 0.0796561, r C = 0.2787963, |g| = 3.6e-12; r = 32: r G = 0.0795970, r C = 0.2785893, |g| = 1.3e-21; r = 64: r G = 0.0795823, r C = 0.2785382, |g| = 1.2e-40\nHIT: confirmed - attempt w-macbookpro90c72-jef9b: chi/C = (1 + phi)/sigma^2 identically (naive FDR fails; 12/7 on the L = 4 mode (pi/2,0,0)) and the linear equal-time kernel's 1/r coefficient 7 sigma^2/(8 pi r): C = (7 sigma^2/2)(1/E + 1/(14 - E)) exactly, the second part short-ranged, so the coefficient is (7 sigma^2/2) times that of the simple-cubic Green function (its 1/(4 pi r) asymptotic ASSUMED, as the attempt states; along the axis r C(r e1) approaches 7/(8 pi) numerically); the persistent FIELD-source mean chi * h is additive. Its 'like pins attract' remark is about the equal-time marginal, not the task's persistent pins\nSUMMARY: jef9b confirmed (the kernel coefficient and the FDR ratio, a partial on a neighbouring quantity of task (c)); jc4c2 fails at its superposition clause - its L = 4 numbers hold (C(0), C(e1), chi(0), chi(e1), 128/147, 7680/9359, 12/7) and its pin quadratics are the equal-time Gaussian marginal of the unpinned law, but 'superposition of means is exact' is false for pins: the summed one-pin means miss the pin value by C(e1)/C(0) = 11/371 (Gaussian) and by G(e1)/G(0) (persistent pins, 5^3 box)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf209",
+  "at_utc": "20260919T025347Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok a5, jef9b): naive FDR fails with chi/C = 1+phi and the linear equal-time kernel's 1/r coefficient is 7 sigma^2/(8 pi r), with the simple-cubic Green asymptotic ASSUMED as stated; a partial on the kernel, not the task's persistent-source interaction. The second a5 attempt (jc4c2) fails at its superposition clause for pins; its L = 4 numbers hold.",
+  "by": "w-jonathonsmac4f50-jf209",
+  "at_utc": "20260919T025347Z"
+ }
+}

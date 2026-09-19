@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8150",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block16-static",
+ "worker": "w-macbookpro90c72-j9c55",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8150/attack_d_cycle_quantifier.py",
+ "seed": 87965,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dfb08b4d",
+ "started_utc": "20260919T031925Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (d) QUANTIFIER SCOPE \u2014 cycle lemma gives 0 qualifying orders on the plaquette, yz-plaquette and 2x3 (beyond the executed (3,1,2) census), and 4/6 on path3; no coupling/size inside the stated range where the proved 0-qualifying claim fails; attack does not fire"
+ },
+ "review": "Pattern (d): cycle lemma still 0 qualifying on extra cyclic windows; path3 4/6; no range failure; attack does not fire",
+ "what": "PR #8150 ([physics-loop] admissibility-induced-law block16 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915; git show origin/physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915:<note>. Create probes/work/pr8150/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8150/<script>.py\"",
+ "stdout_sha256": "083af2343b912ca479cb4efd2115f95213a6368e188b3be2b0ac405c28c215ac",
+ "stdout_tail": "plaquette qualifying orders 0/24 (stated 0)\n2x3 qualifying orders 0/720\npath3 qualifying orders 4/6 (stated 4)\nOK: cycle lemma: 0 qualifying orders on xy-plaquette, yz-plaquette, 2x3; path3 has 4/6\nOK: extra cyclic window (yz 4-cycle) still 0; the 'every window with a cycle' quantifier holds on these\nSUMMARY: pattern (d) QUANTIFIER SCOPE \u2014 cycle lemma gives 0 qualifying orders on the plaquette, yz-plaquette and 2x3 (beyond the executed (3,1,2) census), and 4/6 on path3; no coupling/size inside the stated range where the proved 0-qualifying claim fails; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9c55",
+  "at_utc": "20260919T031925Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

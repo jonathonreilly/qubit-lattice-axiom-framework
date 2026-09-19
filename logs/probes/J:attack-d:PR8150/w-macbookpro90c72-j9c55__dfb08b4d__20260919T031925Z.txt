@@ -1,0 +1,6 @@
+plaquette qualifying orders 0/24 (stated 0)
+2x3 qualifying orders 0/720
+path3 qualifying orders 4/6 (stated 4)
+OK: cycle lemma: 0 qualifying orders on xy-plaquette, yz-plaquette, 2x3; path3 has 4/6
+OK: extra cyclic window (yz 4-cycle) still 0; the 'every window with a cycle' quantifier holds on these
+SUMMARY: pattern (d) QUANTIFIER SCOPE — cycle lemma gives 0 qualifying orders on the plaquette, yz-plaquette and 2x3 (beyond the executed (3,1,2) census), and 4/6 on path3; no coupling/size inside the stated range where the proved 0-qualifying claim fails; attack does not fire

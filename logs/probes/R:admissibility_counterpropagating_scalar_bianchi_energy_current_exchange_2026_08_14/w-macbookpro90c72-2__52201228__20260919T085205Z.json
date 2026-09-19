@@ -20,13 +20,20 @@
  "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py\", line 993, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py\", line 852, in main\n    authority = authority_certificate(mutation)\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py\", line 133, in authority_certificate\n    parent = block96.authority_certificate(\"\")\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py\", line 145, in authority_certificate\n    path for path in parent[\"loaded_missing\"] if path != RUNNER_RELATIVE\n                     ~~~~~~^^^^^^^^^^^^^^^^^^\nKeyError: 'loaded_missing'\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T085206Z",
+  "at_utc": "20260919T091043Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 52201228 differs from the current HEAD b533e0f9 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the authority chain reads parent['loaded_missing'] (and 'origin_main') from block95.authority_certificate, which after the 2026-09-08 correction returns only failures and mutation_ok, so KeyError before any check runs.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T091043Z"
  }
 }

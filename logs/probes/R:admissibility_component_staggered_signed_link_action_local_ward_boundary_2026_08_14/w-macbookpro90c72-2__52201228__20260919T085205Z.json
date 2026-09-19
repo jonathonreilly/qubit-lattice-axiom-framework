@@ -20,13 +20,20 @@
  "stdout_tail": "smatches = tuple(\n        path\n        for path in frozen\n        if git_worktree_path_blob(path) != git_commit_path_blob(PARENT_COMMIT, path)\n    )\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py\", line 145, in <genexpr>\n    if git_worktree_path_blob(path) != git_commit_path_blob(PARENT_COMMIT, path)\n                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/admissibility_component_staggered_signed_link_action_local_ward_boundary_2026_08_14.py\", line 110, in git_commit_path_blob\n    return subprocess.run(\n           ~~~~~~~~~~~~~~^\n        (\"git\", \"rev-parse\", f\"{commit}:{path}\"),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n        text=True,\n        ^^^^^^^^^^\n    ).stdout.strip()\n    ^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py\", line 577, in run\n    raise CalledProcessError(retcode, process.args,\n                             output=stdout, stderr=stderr)\nsubprocess.CalledProcessError: Command '('git', 'rev-parse', '6d4ceb046de25664ae65836a1127348fc4a9c81c:.claude/science/physics-loops/backlog-dk-os-6377-correction-20260908/provenance/docs/ADMISSIBILITY_LOCAL_SHADOW_ENERGY_FLUX_LAPSE_TRANSLATION_JOINT_ACTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md')' returned non-zero exit status 128.\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T085205Z",
+  "at_utc": "20260919T091043Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 52201228 differs from the current HEAD b533e0f9 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: authority_certificate runs git rev-parse on PARENT_COMMIT 6d4ceb04 (not on main) at the relocated provenance path, which does not exist in that commit (the note sits under docs/ there), so the runner exits before any check, contrary to the 6377 correction record's input-guard claim.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T091043Z"
  }
 }

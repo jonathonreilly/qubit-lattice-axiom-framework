@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:re-recording:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j0cfe",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/re-recording/w-macbookpro90c72-j0cfe/check.py",
+ "seed": 79327,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82832540",
+ "started_utc": "20260919T005527Z",
+ "elapsed_s": 11.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED asynchronous re-recording has the static law as its unique stationary measure (detailed balance, any clock rates); synchronous re-recording is reversible w.r.t. \u03c0\u221d\u220f_x Z(\u03b2|S_x|), a distinct many-body Gibbs law (TV>0) with the same 1/E Goldstone kernel at large \u03b2 on the sphere (stiffness 2\u03b2 vs \u03b2/2)"
+ },
+ "review": "check.py verifies 48 exact identities: async DB holds on edge/C4/T2x2 for Boltzmann e^beta=3 and (3,1,2) including unequal rates; sync is reversible w.r.t. prod Z with TV(sync,static)>0; sphere IR kernel is 1/E with stiffness 2 beta. HIT is a proof of the linear identities, not an admissibility claim.",
+ "what": "DERIVATION, independent attempt 4 of 4: If records re-form: the stationary law of re-recording with the covariant rule. AXIOM-ADJACENT, derive consequences only; nothing here assumes re-recording is admissible. The campaign's formation law writes each record once. Suppose instead a site's record is re-drawn from the covariant rule K(s | neighbours) prop. to exp(beta s.S), S the sum of the CURRENT records of its six neighbours on Z^3. (a) Asynchronous re-recording (one site at a time, any clock rates): show by exact detailed balance on finite windows that the stationary law is the static law exp(beta sum s.s') -- so the 'frozen' comparator of blocks 01-24 would be the equilibrium of a universe in which records keep re-forming, and block 19's Green-function kernel its equal-time covariance. (b) Synchronous re-recording (all sites at once): show the chain is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|), Z the normalizer of the rule (the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') is the key), a Gibbs law with a many-body interaction; compute its small-window marginals exactly for the six-axis menu and compare with the static law; decide whether it orders and what its transverse kernel is at large beta (sphere menu: expand log Z(beta|S|)). (c) Which of the programme's results (uniqueness regions, the ordered side, the kernel, the menus) transfer to each case. Deliver exact finite checks for every identity. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/re-recording/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/re-recording/<name>/check.py\"",
+ "stdout_sha256": "78bcfa94886bf7cf4fdafd1b529fc8218b946e2e41d3ba885a6d9b835271fff9",
+ "stdout_tail": "-beats-orth-sync\nCHECKED E8.logsinh-expansion: log sinh k = k - log 2 + log(1-e^{-2k})\nCHECKED E8.logZ-exact: ratio=1\nCHECKED E8.|S|-jet: |S|=6 - L/2 + Q/12 + O(\u03b8^4)\nCHECKED E8.quad-coeff: \u03b2-leading quadratic of sum |S_x| is (-E + E^2/12)|\u03b8_k|^2\nCHECKED E8.goldstone\nCHECKED E8.stiffness-ratio-2: sync ~ exp(-\u03b2 E |\u03b8|^2), static ~ exp(-(\u03b2/2) E |\u03b8|^2)\nCHECKED E8.log-subleading: -log(\u03b2|S|) is O(log \u03b2) against \u03b2E\nCHECKED E9.async-kernel-is-static-conditional\nCHECKED E9.pairing-menu-agnostic: pairing is sum_{x,y~x} s'_x\u00b7s_y = sum_{y,x~y} s_y\u00b7s'_x\nCHECKS ok=48 fail=0\nHIT: PROVED async re-recording is the Gibbs sampler of the static law exp(\u03b2 sum_{bonds} s\u00b7s') (exact DB on edge, C4, T2x2 for Boltzmann e^\u03b2=3 and product (3,1,2); unequal rates \u03bb=(2,5) on the edge); sync is reversible w.r.t. \u03c0\u221d\u220f_x Z(S_x) by the pairing sum_x s'_x\u00b7S_x(s)=sum_x s_x\u00b7S_x(s') (exact on those graphs) and Z-cancellation; TV(sync,static)>0 so the laws are distinct; sphere large-\u03b2 kernel of sync is 1/E with IR stiffness 2\u03b2 against static \u03b2/2; uniqueness regions transfer to async (same kernels) not to sync; ordered side of static transfers to async, sync aligns at large \u03b2 on C4 (weight ratios grow in e^\u03b2)\nSUMMARY: PROVED asynchronous re-recording has the static law as its unique stationary measure (detailed balance, any clock rates); synchronous re-recording is reversible w.r.t. \u03c0\u221d\u220f_x Z(\u03b2|S_x|), a distinct many-body Gibbs law (TV>0) with the same 1/E Goldstone kernel at large \u03b2 on the sphere (stiffness 2\u03b2 vs \u03b2/2)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0cfe",
+  "at_utc": "20260919T005543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact DB for async=static and pairing/Z-cancellation for sync; TV(sync,static)>0; sphere 1/E kernel with stiffness 2 beta. Proof of the linear identities, not an admissibility claim.",
+  "by": "w-macbookpro90c72-j0cfe",
+  "at_utc": "20260919T005543Z"
+ }
+}

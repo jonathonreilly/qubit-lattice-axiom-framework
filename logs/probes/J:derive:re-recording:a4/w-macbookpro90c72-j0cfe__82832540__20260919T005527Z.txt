@@ -1,0 +1,57 @@
+CHECKED E1.pairing-edge-all: pairs=1296
+CHECKED E1.pairing-C4: checked 2736
+CHECKED E1.pairing-T2x2: checked 2736
+CHECKED E1.pairing-T2x2x2: checked 288
+CHECKED E1.pairing-C4-rotations
+CHECKED E2.async-DB-bolt3-edge: triples=432
+CHECKED E2.Z-indep-of-s_x-bolt3-edge
+CHECKED E2.async-DB-bolt3-C4: triples=31104
+CHECKED E2.Z-indep-of-s_x-bolt3-C4
+CHECKED E2.async-DB-bolt3-T2x2: triples=31104
+CHECKED E2.Z-indep-of-s_x-bolt3-T2x2
+CHECKED E2.async-DB-pqr312-edge: triples=432
+CHECKED E2.Z-indep-of-s_x-pqr312-edge
+CHECKED E2.async-DB-pqr312-C4: triples=31104
+CHECKED E2.Z-indep-of-s_x-pqr312-C4
+CHECKED E2.async-DB-pqr312-T2x2: triples=31104
+CHECKED E2.Z-indep-of-s_x-pqr312-T2x2
+CHECKED E3.async-unequal-rates: checked 360
+CHECKED E4.sync-kernel-sym-bolt3-edge: pairs=1296
+CHECKED E4.sync-DB-bolt3-edge: pairs=1296
+CHECKED E4.sync-kernel-sym-bolt3-C4: pairs=36288
+CHECKED E4.sync-DB-bolt3-C4: pairs=3200
+CHECKED E4.sync-kernel-sym-bolt3-T2x2: pairs=36288
+CHECKED E4.sync-DB-bolt3-T2x2: pairs=3200
+CHECKED E4.sync-kernel-sym-pqr312-edge: pairs=1296
+CHECKED E4.sync-DB-pqr312-edge: pairs=1296
+CHECKED E4.sync-kernel-sym-pqr312-C4: pairs=36288
+CHECKED E4.sync-DB-pqr312-C4: pairs=3200
+CHECKED E4.sync-kernel-sym-pqr312-T2x2: pairs=36288
+CHECKED E4.sync-DB-pqr312-T2x2: pairs=3200
+CHECKED E5.TV-C4-positive: TV=39161524/79474827
+CHECKED E5.not-proportional-C4: n ratios=14
+E5.C4 TV=39161524/79474827  n_distinct_ratios=14
+CHECKED E5.TV-T2x2-positive: TV=122900831405716/159789899835723
+CHECKED E5.not-proportional-T2x2: n ratios=14
+E5.T2x2 TV=122900831405716/159789899835723  n_distinct_ratios=14
+CHECKED E6.bipartite-factor-C4
+E7.p=2 static aligned/flip_opp=16 sync=121/64
+E7.p=3 static aligned/flip_opp=81 sync=3481/729
+E7.p=5 static aligned/flip_opp=625 sync=14641/625
+E7.p=7 static aligned/flip_opp=2401 sync=187489/2401
+CHECKED E7.static-ratio-grows
+CHECKED E7.sync-ratio-grows
+CHECKED E7.aligned-beats-orth-static
+CHECKED E7.aligned-beats-orth-sync
+CHECKED E8.logsinh-expansion: log sinh k = k - log 2 + log(1-e^{-2k})
+CHECKED E8.logZ-exact: ratio=1
+CHECKED E8.|S|-jet: |S|=6 - L/2 + Q/12 + O(θ^4)
+CHECKED E8.quad-coeff: β-leading quadratic of sum |S_x| is (-E + E^2/12)|θ_k|^2
+CHECKED E8.goldstone
+CHECKED E8.stiffness-ratio-2: sync ~ exp(-β E |θ|^2), static ~ exp(-(β/2) E |θ|^2)
+CHECKED E8.log-subleading: -log(β|S|) is O(log β) against βE
+CHECKED E9.async-kernel-is-static-conditional
+CHECKED E9.pairing-menu-agnostic: pairing is sum_{x,y~x} s'_x·s_y = sum_{y,x~y} s_y·s'_x
+CHECKS ok=48 fail=0
+HIT: PROVED async re-recording is the Gibbs sampler of the static law exp(β sum_{bonds} s·s') (exact DB on edge, C4, T2x2 for Boltzmann e^β=3 and product (3,1,2); unequal rates λ=(2,5) on the edge); sync is reversible w.r.t. π∝∏_x Z(S_x) by the pairing sum_x s'_x·S_x(s)=sum_x s_x·S_x(s') (exact on those graphs) and Z-cancellation; TV(sync,static)>0 so the laws are distinct; sphere large-β kernel of sync is 1/E with IR stiffness 2β against static β/2; uniqueness regions transfer to async (same kernels) not to sync; ordered side of static transfers to async, sync aligns at large β on C4 (weight ratios grow in e^β)
+SUMMARY: PROVED asynchronous re-recording has the static law as its unique stationary measure (detailed balance, any clock rates); synchronous re-recording is reversible w.r.t. π∝∏_x Z(β|S_x|), a distinct many-body Gibbs law (TV>0) with the same 1/E Goldstone kernel at large β on the sphere (stiffness 2β vs β/2)

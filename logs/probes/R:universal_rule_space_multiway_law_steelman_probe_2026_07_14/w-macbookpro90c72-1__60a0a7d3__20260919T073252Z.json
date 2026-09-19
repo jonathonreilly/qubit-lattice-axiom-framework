@@ -1,0 +1,38 @@
+{
+ "task": "R:universal_rule_space_multiway_law_steelman_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "universal",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/universal_rule_space_multiway_law_steelman_probe_2026_07_14.py",
+ "seed": 3172,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T073252Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eba41f988e81d38220a9d3761831a9b1843f06ad91ea6e472c6b2f91a568ea83",
+ "stdout_tail": "-1/scripts/universal_rule_space_multiway_law_steelman_probe_2026_07_14.py\", line 235, in main\n    authority_contract()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/universal_rule_space_multiway_law_steelman_probe_2026_07_14.py\", line 87, in authority_contract\n    NOTE.read_text(encoding=\"utf-8\").lower().replace(\"*\", \"\").replace(\"`\", \"\").split()\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 546, in read_text\n    return PathBase.read_text(self, encoding, errors, newline)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 632, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/UNIVERSAL_RULE_SPACE_MULTIWAY_LAW_STEELMAN_NOTE_2026-07-14.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T073252Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/UNIVERSAL_RULE_SPACE_MULTIWAY_LAW_STEELMAN_NOTE_2026-07-14.md, which is not in the tree at that path",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T073252Z"
+ }
+}

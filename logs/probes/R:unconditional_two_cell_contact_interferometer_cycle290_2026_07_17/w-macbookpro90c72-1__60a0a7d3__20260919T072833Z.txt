@@ -1,0 +1,24 @@
+CYCLE 290 / UNCONDITIONAL TWO-CELL CONTACT INTERFEROMETER
+FAIL the Cycle-290 note exists :: /Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/UNCONDITIONAL_TWO_CELL_CONTACT_INTERFEROMETER_CYCLE290_NOTE_2026-07-17.md
+
+FIXED-NUMBER TWO-CELL BRANCH / UNCONDITIONAL ACTION
+PASS one even bilinear redistribution gives fixed total N=6 branches |3,3> and |4,2> with pair-count surplus one but identical Q-only count :: {'reference_masks': (14, 7), 'surplus_masks': (15, 5), 'pair_counts': (6, 7), 'Q_counts': (2, 2)}
+PASS the ordinary marker-independent local W_g action produces the exact relative phase g and positive dark-port close sin^2(g/2) :: {'g': 0.37, 'close': 0.03383632719698277, 'expected_close': 0.03383632719698279, 'signed_quadrature': 0.3616154319649619}
+PASS W_g deletion, Q-only replacement, and a common global phase all give zero comparator close :: {'W_g_deleted': 5.004680467665246e-34, 'Q_only': 5.004680467665246e-34, 'global_phase': 5.004680467665246e-34}
+PASS the signed marker quadrature separates W_g from W_g dagger while their unsigned closes agree :: {'W_close': 0.03383632719698277, 'W_dagger_close': 0.03383632719698277, 'W_Y': 0.3616154319649619, 'W_dagger_Y': -0.3616154319649619}
+PASS the action is exactly identity on the path marker tensor the ordinary matter action, not a supplied controlled-W_g oracle :: the marker controls only the supplied redistribution route
+
+ROUTE / RECOMBINER DELETIONS AND N=2 STEELMAN
+PASS deletion and split replacements expose the supplied matched-route and matched-H boundaries without faking action faithfulness :: {'W_deleted': 5.004680467665246e-34, 'route_in_deleted': 0.4999999999999998, 'route_out_deleted': 0.4999999999999998, 'both_routes_deleted': 5.004680467665246e-34, 'preparer_deleted': 0.4999999999999999, 'recombiner_deleted': 0.4999999999999999, 'both_H_deleted': 0.0}
+PASS the fixed-N=2 co-located-versus-separated two-cell steelman works as an unconditional comparator but cannot reject the Q-only surrogate :: {'N2_actual_close': 0.03383632719698279, 'N2_Q_only_close': 0.03383632719698279, 'disposition': 'constructive minimal subfixture, not decisive Q-only control'}
+
+CONNECTED PHYSICAL CODE / SUPPORT / MASS / COVARIANCE
+PASS two ordinary W_g blocks and the adjacent mapped hopping connector have bounded constant overhead and zero leakage through held-out L=6 :: [{'L': 3, 'held_out': False, 'two_cell_matter_union_M2': 35, 'path_marker_M2': 1, 'total_declared_block_M2': 36, 'maximum_contact_term_weight': 12, 'connector_weight': 5, 'nonzero_Walsh_terms_per_cell': np.int64(64), 'check_or_Wilson_leakage': 0}, {'L': 4, 'held_out': False, 'two_cell_matter_union_M2': 35, 'path_marker_M2': 1, 'total_declared_block_M2': 36, 'maximum_contact_term_weight': 12, 'connector_weight': 5, 'nonzero_Walsh_terms_per_cell': np.int64(64), 'check_or_Wilson_leakage': 0}, {'L': 5, 'held_out': False, 'two_cell_matter_union_M2': 35, 'path_marker_M2': 1, 'total_declared_block_M2': 36, 'maximum_contact_term_weight': 12, 'connector_weight': 5, 'nonzero_Walsh_terms_per_cell': np.int64(64), 'check_or_Wilson_leakage': 0}, {'L': 6, 'held_out': True, 'two_cell_matter_union_M2': 35, 'path_marker_M2': 1, 'total_declared_block_M2': 36, 'maximum_contact_term_weight': 12, 'connector_weight': 5, 'nonzero_Walsh_terms_per_cell': np.int64(64), 'check_or_Wilson_leakage': 0}]
+PASS the two-cell contact comparator preserves the one-particle mass fixture because W_g is identity for N at most one :: {'one_particle_contact_action': 'identity', 'mass_ratio': 0.9999999999999998}
+PASS the entire two-cell contact-plus-connector motif is covariant in 648 proper-frame and L=3 translation tests :: {'frame_translation_tests': 648, 'failures': []}
+
+LAWFUL DOMAIN / SUPPLIED STRUCTURE
+PASS the lawful domain accepts the declared six-mode M64 cells and rejects undersized or mistyped fixtures :: {'negative_fixture_rejections': 3}
+PASS the supplied inventory is finite and explicit :: {'supplied': ('g=0.37', 'two adjacent cells and one stream connector', 'fixed branch occupations', 'one path-marker M2', 'marker H preparation and read basis', 'controlled redistribution route and its inverse', 'ordinary W_g insertion on both cells'), 'derived': ('relative phase g', 'dark-port close sin^2(g/2)', 'Q-only zero', 'bounded physical support', 'zero code leakage')}
+
+SUMMARY: 12 passed, 1 failed

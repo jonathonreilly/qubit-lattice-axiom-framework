@@ -1,0 +1,35 @@
+{
+ "task": "R:inertial_closure_two_step_surface_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "inertial",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/inertial_closure_two_step_surface_2026_07_08.py",
+ "seed": 2895,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4bb052b7",
+ "started_utc": "20260919T072815Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b916fe4d340606d7a5866ebcbebb1f14ee58b08550d6958310145d515d78b613",
+ "stdout_tail": "UNWRAPPED TWO-STEP QUASIMOMENTUM TRANSPORT\nCHECK-01 UNWRAPPED-LIFT/PRE-WRAP: PASS residual=6.939e-18 minimum_branch_seam_margin=1.334447e+00\nCHECK-02 ACCELERATION-IDENTITY: PASS residual=6.541e-14 finite-difference d<velocity>/dt versus -g<E_33>\nCHECK-03 REST-DERIVATIVES: PASS residual=0.000e+00 E33(0)=1/(m*sqrt(m**2 + 1)) E3333(0)=(-4*m**4 - 10*m**2 - 3)/(m**3*(m**2 + 1)**(3/2))\nDIAGNOSTIC-04 SAMPLED-LOCAL-CURVATURE worst_abs_r_over_sampled_scale=6.405855e-01 minimum_pstar_margin=1.850000e-01 sampled_hessian_is_not_a_certified_supremum\nTOTAL: PASS=3 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T072816Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

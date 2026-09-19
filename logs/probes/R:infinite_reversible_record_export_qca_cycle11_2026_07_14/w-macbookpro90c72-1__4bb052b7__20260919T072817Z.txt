@@ -1,0 +1,25 @@
+
+===============================================================================
+A - Framework, sibling, scope, and N1-N8 contract
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py", line 650, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py", line 635, in main
+    source_contract()
+    ~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py", line 136, in source_contract
+    qb16_note = QB16_NOTE.read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/AUTONOMOUS_HOMOGENEOUS_BINARY_NUCLEATION_NOTE_2026-07-14.md'

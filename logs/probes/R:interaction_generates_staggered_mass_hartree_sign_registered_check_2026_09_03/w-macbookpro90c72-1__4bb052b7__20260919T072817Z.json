@@ -1,0 +1,35 @@
+{
+ "task": "R:interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "interaction",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+ "seed": 2897,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4bb052b7",
+ "started_utc": "20260919T072817Z",
+ "elapsed_s": 8.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "715f5c861626f7acaefceea32871e65ae7c638db2eef4bc2a13503cdfb522a9c",
+ "stdout_tail": "degrees [3, 4], so d(~b)-d(b) is not constant (9 values) and V breaks C there (C H C^-1 - H = 4.0 at V = 1 t): no C-odd gap is definable, so periodic z is used\nPASS E2 [1e-10] the PERIODIC 8^3 torus carries 8 exact zero modes (parent note T3), so c(0) diverges and V_c^MF = 0, an artefact; the ANTIPERIODIC sector, min|E| = 1.325654 at L = 8, is used for finite response/energy; bulk integral results are separate\nPASS R1 [1e-8] actual below-gap slab fields tend toward zero, with opposite signs and converged eigenpairs\nPASS R2 [1e-9] actual cube Cg=g, first excitation C-odd/orthogonal, and two-string weight is below one\nPASS R3 [numerical] bulk and finite thresholds differ; zero remains an undivided stationary root\nPASS R4 [numerical] original finite strong-coupling ratios remain strictly below classical saturation; xi is one-body\nPASS R5 [exact] same site means do not fix joint O law; diagonal interaction does not make the full hopping law Record-preserving\nCORRECTION_DATA: [(1e-07, -0.008146900091394488, 8.213322505075143e-14), (1e-09, -8.148013179073987e-05, 3.082621304290776e-14), (-1e-09, 8.148014011619131e-05, 3.208882805417144e-14)] Cground_error 5.847698602912741e-16 first_C_overlap 2.220446049250313e-16 two_string_weight 0.9457509493983371 joint_O2 ['0', '1/4']\nSUMMARY: supplied bulk Hartree minimization, finite Fock spectra and joint Born readout are distinct; fixed finite h->0 gives zero. No physical sign registration or critical point is proved.\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T072826Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

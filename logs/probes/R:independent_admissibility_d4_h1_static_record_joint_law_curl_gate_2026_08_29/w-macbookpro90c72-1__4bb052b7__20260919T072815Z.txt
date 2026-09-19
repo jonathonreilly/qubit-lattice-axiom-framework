@@ -1,0 +1,6 @@
+PASS A_primary_identity: primary cache matches current source
+PASS B_independent_path_census: independent endpoint insertion reproduces histogram {0: 2112, 1: 1152, -1: 1152, -2: 864, 2: 864}
+PASS C_nonneutral_condition: an explicit positive nonneutral odds value fails exactly the nonzero-exponent squares
+PASS D_axis_slope_elimination: six active axis-count triples have difference rank 3
+INDEPENDENT_CURL: histogram={0: 2112, 1: 1152, -1: 1152, -2: 864, 2: 864}; active_axis_classes=6.
+TOTAL: PASS=4 FAIL=0

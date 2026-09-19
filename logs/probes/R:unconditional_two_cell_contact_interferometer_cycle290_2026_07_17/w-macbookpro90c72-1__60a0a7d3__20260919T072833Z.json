@@ -1,0 +1,32 @@
+{
+ "task": "R:unconditional_two_cell_contact_interferometer_cycle290_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "unconditional",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/unconditional_two_cell_contact_interferometer_cycle290_2026_07_17.py",
+ "seed": 2913,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60a0a7d3",
+ "started_utc": "20260919T072833Z",
+ "elapsed_s": 43.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6d1d4569eec94fdb0acb51bb50e3bb26275c872a430fe068a63b7c0f95445707",
+ "stdout_tail": "L': 5, 'held_out': False, 'two_cell_matter_union_M2': 35, 'path_marker_M2': 1, 'total_declared_block_M2': 36, 'maximum_contact_term_weight': 12, 'connector_weight': 5, 'nonzero_Walsh_terms_per_cell': np.int64(64), 'check_or_Wilson_leakage': 0}, {'L': 6, 'held_out': True, 'two_cell_matter_union_M2': 35, 'path_marker_M2': 1, 'total_declared_block_M2': 36, 'maximum_contact_term_weight': 12, 'connector_weight': 5, 'nonzero_Walsh_terms_per_cell': np.int64(64), 'check_or_Wilson_leakage': 0}]\nPASS the two-cell contact comparator preserves the one-particle mass fixture because W_g is identity for N at most one :: {'one_particle_contact_action': 'identity', 'mass_ratio': 0.9999999999999998}\nPASS the entire two-cell contact-plus-connector motif is covariant in 648 proper-frame and L=3 translation tests :: {'frame_translation_tests': 648, 'failures': []}\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS the lawful domain accepts the declared six-mode M64 cells and rejects undersized or mistyped fixtures :: {'negative_fixture_rejections': 3}\nPASS the supplied inventory is finite and explicit :: {'supplied': ('g=0.37', 'two adjacent cells and one stream connector', 'fixed branch occupations', 'one path-marker M2', 'marker H preparation and read basis', 'controlled redistribution route and its inverse', 'ordinary W_g insertion on both cells'), 'derived': ('relative phase g', 'dark-port close sin^2(g/2)', 'Q-only zero', 'bounded physical support', 'zero code leakage')}\n\nSUMMARY: 12 passed, 1 failed\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T072917Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

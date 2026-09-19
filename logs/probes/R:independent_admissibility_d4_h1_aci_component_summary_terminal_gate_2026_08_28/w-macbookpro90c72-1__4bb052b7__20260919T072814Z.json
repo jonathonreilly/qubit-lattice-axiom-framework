@@ -1,0 +1,35 @@
+{
+ "task": "R:independent_admissibility_d4_h1_aci_component_summary_terminal_gate_2026_08_28",
+ "type": "runner-reexecution",
+ "lane": "independent",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/independent_admissibility_d4_h1_aci_component_summary_terminal_gate_2026_08_28.py",
+ "seed": 2894,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4bb052b7",
+ "started_utc": "20260919T072814Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7764070f8f7a1afdd245f586c66ed3713bf8151dbfbff92e660122139e249e8d",
+ "stdout_tail": "tates and 15 common successors\nPASS the all-alpha-phi six-site state is a common quotient normal\nPASS the unguarded typed Y independently has 51 states, 70 transitions, and 19 normals\nPASS the exact terminal-versus-merge peak is reachable and unjoinable\nPASS the all-neighbor guard independently gives 33 states, 52 transitions, and one correct normal\nALGEBRA products=1024 associative=32768/32768 sha256=5e7bfc1cb5c5d43ec8df382bfe491c4e12ce7cb1e6d6929d8358148812be5c18\nQUOTIENT branch_a=20 branch_t=87 common=15 normal=(18, 18, 18, 18, 18, 18)\nFROZEN_Y states=51 transitions=70 normals=19 correct=1\nPEAK source=(15, 3, 7, 15) terminal=(-1, 3, 7, 15) merge01=(15, 15, 7, 15) common_descendants=0\nGUARDED_Y states=33 transitions=52 normals=((-1, 15, 15, 15),)\nDECISION scoped-summary-rank-or-confluence-failure broad_no_go_demoted\nAUDIT_INPUT_SHA256 f686f3a543a5dd5e02032e1ba451951f88060fa0bba25230af1b44676bcad1ee\nper_element: checked \u2014 the independent oracle reconstructs every Boolean-union product and every associativity triple.\nper_site: checked \u2014 the exact center terminal-versus-edge-merge peak has disjoint descendant sets.\nper_mode: checked and not executed \u2014 no primary, carrier isometry, labelled projector, or Lindblad mode is imported.\nper_block: checked \u2014 complete unguarded and neighbor-guarded four-site Y graphs are independently enumerated.\nlattice_wide: checked and not executed \u2014 the finite counterexample narrows one compiler and leaves broader routes live.\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T072815Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

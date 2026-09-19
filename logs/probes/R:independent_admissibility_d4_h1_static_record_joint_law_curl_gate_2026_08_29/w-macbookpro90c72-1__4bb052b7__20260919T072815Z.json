@@ -1,0 +1,35 @@
+{
+ "task": "R:independent_admissibility_d4_h1_static_record_joint_law_curl_gate_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "independent",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/independent_admissibility_d4_h1_static_record_joint_law_curl_gate_2026_08_29.py",
+ "seed": 2895,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4bb052b7",
+ "started_utc": "20260919T072815Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "85d2c5f20cb95b6dec946a26e64019092d31ef2d7b53e626f291a8e31fe6a2dc",
+ "stdout_tail": "PASS A_primary_identity: primary cache matches current source\nPASS B_independent_path_census: independent endpoint insertion reproduces histogram {0: 2112, 1: 1152, -1: 1152, -2: 864, 2: 864}\nPASS C_nonneutral_condition: an explicit positive nonneutral odds value fails exactly the nonzero-exponent squares\nPASS D_axis_slope_elimination: six active axis-count triples have difference rank 3\nINDEPENDENT_CURL: histogram={0: 2112, 1: 1152, -1: 1152, -2: 864, 2: 864}; active_axis_classes=6.\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T072815Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

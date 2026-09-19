@@ -1,0 +1,8 @@
+PASS: H1/H2 spans and actual removed diagonal sector | (3, 5, 3)
+PASS: finite orbit stabilizer control | [(0, 6, 4), (1, 6, 4), (4, 12, 2), (5, 24, 1), (7, 6, 4), (12, 2, 12), (21, 4, 6), (22, 4, 6)]
+TOTAL: 2 passed, 0 failed
+per_element: exact finite matrix, coefficient or probability predicates named above were executed.
+per_site: supplied six-neighbor condition identities only; no generated physical-site update executed.
+per_mode: checked and not executed — no universal momentum or dynamical mode campaign is claimed.
+per_block: finite conditional source, carrier or channel scope is exactly the named predicates above.
+lattice_wide: checked and not executed — no whole-stencil dynamics, infinite history or physical selection is claimed.

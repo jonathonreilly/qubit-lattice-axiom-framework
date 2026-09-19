@@ -1,0 +1,35 @@
+{
+ "task": "R:independent_admissibility_d4_covariant_conditional_cap_packet_instrument_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "independent",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/independent_admissibility_d4_covariant_conditional_cap_packet_instrument_2026_08_29.py",
+ "seed": 2848,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4bb052b7",
+ "started_utc": "20260919T072729Z",
+ "elapsed_s": 2.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9a5842b3113ad0e36eb61025b0c67d2d83f4eb8d15f507833f1f3a0ad495ce61",
+ "stdout_tail": "y identity\nPASS D_cubic_covariance_and_runtime: 144 rotations, 432 translated outputs, and public no-front construction are exact without reading blank content\nPASS E_block15_extended_composition: 2688 maps use the 73-site extension; generated 186/5166 and inherited 2976/171936 counts stay distinct\nPASS F_joint_law_and_born_boundary: 6x43 preparation labels have equal marginals and valid mass 5^15/6^18; positive Born overlaps remain explicit\nPASS G_conditional_terminal_and_limits: terminal is conditional on a selected center, atomic event, effective mask algebra, and blank detector\nMUTATION_BASELINE: clean=true; failures=none\nCONTROL_KIND: changed_object; detected=21/21\nCONTROL_KIND: assertion_guard; detected=16/16\nCONTROL_KIND: syntax_guard; detected=12/12\nCONTROL_KIND: scope_guard; detected=15/15\nMUTATIONS: rejected=64/64\nTERMINAL: COVARIANT-CONDITIONAL-CAP-PACKET-INSTRUMENT \u2014 one common blank input at a selected center\nCOUNTS: writer=43; external_destinations=30; extension=73; branches=6; rotations=24; controller_maps=2688; generated_blocked=186/5166; inherited_blocked=2976/171936\nMARGINAL: preparation_label_valid_probability=30517578125/101559956668416=5^15/6^18; not_a_Born_distinguishability_probability\nLIMITS: conditional atomic effective-block writer only; selected center and blank detector remain supplied; no nearest-neighbor/microscopic compilation, overlap arbitration, occurrence/rate/time, gravity, axiom, retention, obligation, or TOE movement\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T072731Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

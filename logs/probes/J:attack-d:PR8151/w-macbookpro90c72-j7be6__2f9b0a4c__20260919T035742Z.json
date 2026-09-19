@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8151",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block17-static",
+ "worker": "w-macbookpro90c72-j7be6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8151/quantifier_every_even_L.py",
+ "seed": 90262,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2f9b0a4c",
+ "started_utc": "20260919T035742Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - even-side tori (Z/2LZ)^d for L=1..5, d=2,3 are bipartite and triangle-free (not the known chessboard dissemination HIT)"
+ },
+ "review": "even-side tori (Z/2LZ)^d for L=1..5 in d=2,3 are bipartite and triangle-free, so the even-L universe holds and the pattern has no purchase",
+ "what": "PR #8151 ([physics-loop] admissibility-induced-law block17 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915; git show origin/physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915:<note>. Create probes/work/pr8151/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8151/<script>.py\"",
+ "stdout_sha256": "843b143d1a645b81a4b4b92353ccdcd2215e76264ed658f509cb5e2c7d526a55",
+ "stdout_tail": "d=2 L=1 n=2 N=4 bipartite=True triangles=False\nd=2 L=2 n=4 N=16 bipartite=True triangles=False\nd=2 L=3 n=6 N=36 bipartite=True triangles=False\nd=2 L=4 n=8 N=64 bipartite=True triangles=False\nd=2 L=5 n=10 N=100 bipartite=True triangles=False\nd=3 L=1 n=2 N=8 bipartite=True triangles=False\nd=3 L=2 n=4 N=64 bipartite=True triangles=False\nd=3 L=3 n=6 N=216 bipartite=True triangles=False\nd=3 L=4 n=8 N=512 bipartite=True triangles=False\nd=3 L=5 n=10 N=1000 bipartite=True triangles=False\nSUMMARY: pattern has no purchase on this note - even-side tori (Z/2LZ)^d for L=1..5, d=2,3 are bipartite and triangle-free (not the known chessboard dissemination HIT)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7be6",
+  "at_utc": "20260919T035742Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

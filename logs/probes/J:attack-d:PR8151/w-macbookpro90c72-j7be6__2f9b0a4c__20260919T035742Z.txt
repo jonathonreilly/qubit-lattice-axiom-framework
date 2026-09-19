@@ -1,0 +1,11 @@
+d=2 L=1 n=2 N=4 bipartite=True triangles=False
+d=2 L=2 n=4 N=16 bipartite=True triangles=False
+d=2 L=3 n=6 N=36 bipartite=True triangles=False
+d=2 L=4 n=8 N=64 bipartite=True triangles=False
+d=2 L=5 n=10 N=100 bipartite=True triangles=False
+d=3 L=1 n=2 N=8 bipartite=True triangles=False
+d=3 L=2 n=4 N=64 bipartite=True triangles=False
+d=3 L=3 n=6 N=216 bipartite=True triangles=False
+d=3 L=4 n=8 N=512 bipartite=True triangles=False
+d=3 L=5 n=10 N=1000 bipartite=True triangles=False
+SUMMARY: pattern has no purchase on this note - even-side tori (Z/2LZ)^d for L=1..5, d=2,3 are bipartite and triangle-free (not the known chessboard dissemination HIT)

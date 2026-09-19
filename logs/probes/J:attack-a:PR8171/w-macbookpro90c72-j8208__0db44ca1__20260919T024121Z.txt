@@ -1,0 +1,6 @@
+OK: predecessors of the origin are −e_j, pairwise Z^3-NN-nonadjacent (no triangle in the bipartite NN graph); sibling distances √2 as declared
+OK: aligned vs antipodal planes have per-site chordal distance 2 (D_0=2)
+OK: one-site periodic plane is the Z² quotient, S=3s, |V|=3β, not a Z^3 window
+OK: 1/√3 lies in (5773/10000,2887/5000) because 5773/10000²=33327529/100000000 < 1/3=1/3 < 2887/5000²=8334769/25000000
+OK: each +e_j step raises level by 1, so the three predecessors lie on the previous plane
+SUMMARY: pattern (a) WITNESS REALIZABILITY — the three predecessors −e_j of a Z^3 site are distinct and form no NN triangle (Z^3 is bipartite); they are sibling-adjacent (√2) on the level plane as declared; aligned/antipodal planes realize D_0=2; the one-site periodic plane is a Z² quotient with S=3s; 1/√3 lies between 5773/10^4 and 5774/10^4; 0 failures; attack does not fire

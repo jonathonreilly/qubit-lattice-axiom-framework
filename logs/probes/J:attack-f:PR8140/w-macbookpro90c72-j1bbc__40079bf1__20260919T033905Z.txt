@@ -1,0 +1,11 @@
+N=1: clock characters (1/N)Σ exp(2πi j k/N)=1_{N|j}
+N=2: clock characters (1/N)Σ exp(2πi j k/N)=1_{N|j}
+N=3: clock characters (1/N)Σ exp(2πi j k/N)=1_{N|j}
+N=4: clock characters (1/N)Σ exp(2πi j k/N)=1_{N|j}
+N=5: clock characters (1/N)Σ exp(2πi j k/N)=1_{N|j}
+N=6: clock characters (1/N)Σ exp(2πi j k/N)=1_{N|j}
+N=7: clock characters (1/N)Σ exp(2πi j k/N)=1_{N|j}
+N=8: clock characters (1/N)Σ exp(2πi j k/N)=1_{N|j}
+φ term k=0 u=0: 1; k=1: exp(-2*pi**2*beta)
+C_β r=2 = 1/(2*pi*beta)
+SUMMARY: pattern has no purchase on this note - clock characters sum to N 1_{N|j} for N=1..8; the Villain 1/2 produces exp(-2π²β) at the first alias; C_β=(2πβ)^{-r/2} at r=2

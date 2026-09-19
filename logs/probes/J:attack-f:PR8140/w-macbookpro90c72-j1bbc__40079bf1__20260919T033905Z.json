@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8140",
+ "type": "judgment",
+ "lane": "clock-static-charge-20260915",
+ "worker": "w-macbookpro90c72-j1bbc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8140/normalization_clock_characters.py",
+ "seed": 89145,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40079bf1",
+ "started_utc": "20260919T033905Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - clock characters sum to N 1_{N|j} for N=1..8; the Villain 1/2 produces exp(-2\u03c0\u00b2\u03b2) at the first alias; C_\u03b2=(2\u03c0\u03b2)^{-r/2} at r=2"
+ },
+ "review": "clock characters sum to N 1_{N|j} for N=1..8, the Villain 1/2 gives exp(-2\u03c0\u00b2\u03b2) at the first alias, and C_\u03b2=(2\u03c0\u03b2)^{-r/2} at r=2, so the 2\u03c0/N/1/2 factors hold and the pattern has no purchase",
+ "what": "PR #8140 ([physics-loop] clock-static-charge: bounded_theorem, bounded): attack CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md ... with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/clock-static-charge-20260915; git show origin/physics-loop/clock-static-charge-20260915:<note>. Create probes/work/pr8140/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8140/<script>.py\"",
+ "stdout_sha256": "393fb9b2e29ffcb38f87c3b5de8b3f91edda431cde72d2a537488c07fbe67288",
+ "stdout_tail": "N=1: clock characters (1/N)\u03a3 exp(2\u03c0i j k/N)=1_{N|j}\nN=2: clock characters (1/N)\u03a3 exp(2\u03c0i j k/N)=1_{N|j}\nN=3: clock characters (1/N)\u03a3 exp(2\u03c0i j k/N)=1_{N|j}\nN=4: clock characters (1/N)\u03a3 exp(2\u03c0i j k/N)=1_{N|j}\nN=5: clock characters (1/N)\u03a3 exp(2\u03c0i j k/N)=1_{N|j}\nN=6: clock characters (1/N)\u03a3 exp(2\u03c0i j k/N)=1_{N|j}\nN=7: clock characters (1/N)\u03a3 exp(2\u03c0i j k/N)=1_{N|j}\nN=8: clock characters (1/N)\u03a3 exp(2\u03c0i j k/N)=1_{N|j}\n\u03c6 term k=0 u=0: 1; k=1: exp(-2*pi**2*beta)\nC_\u03b2 r=2 = 1/(2*pi*beta)\nSUMMARY: pattern has no purchase on this note - clock characters sum to N 1_{N|j} for N=1..8; the Villain 1/2 produces exp(-2\u03c0\u00b2\u03b2) at the first alias; C_\u03b2=(2\u03c0\u03b2)^{-r/2} at r=2\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1bbc",
+  "at_utc": "20260919T033906Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

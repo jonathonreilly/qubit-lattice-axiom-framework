@@ -1,0 +1,6 @@
+OK: Haar ∫|U_ab|²=1/3 so ∫|√3 U_ab|²=1; 9 pairs (a,b) are orthonormal
+OK: (1/3)·√3·√3 = 1, so ψ=Tr(U1 U2 U3⁻¹ U4⁻¹) as written
+OK: single-link reduced density I/9 has Tr=1 on the 9-dimensional PW block
+OK: J=ReTr(U)/3 has E J²=1/18 from Haar character orthogonality
+OK: D_R(R=1)=19 = 1²+3²+3²
+SUMMARY: pattern (f) NORMALIZATION — Haar ∫|U_ab|²=1/3, Schmidt (1/3)·√3·√3=1, reduced I/9 has trace 1, J=ReTr/3 has E J²=1/18, D_R(R=1)=19; 0 failures; attack does not fire

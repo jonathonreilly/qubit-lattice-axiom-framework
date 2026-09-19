@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8168",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block25-format",
+ "worker": "w-macbookpro90c72-j259a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8168/same_test_six_constants.py",
+ "seed": 87116,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c8baf88",
+ "started_utc": "20260919T030516Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the same constant-field test yields six distinct axis-aligned configurations, matching T7's six laws"
+ },
+ "review": "Six distinct axis-aligned constant configurations exist; no defect",
+ "what": "PR #8168 ([physics-loop] admissibility-induced-law block25 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916; git show origin/physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916:<note>. Create probes/work/pr8168/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8168/<script>.py\"",
+ "stdout_sha256": "a60ccd33651447bf77906ec617af7d9beb1caad6432a69a416a25b7faacb1cb8",
+ "stdout_tail": "six constant configurations labeled by 6 distinct axes\nSUMMARY: pattern has no purchase on this note \u2014 the same constant-field test yields six distinct axis-aligned configurations, matching T7's six laws\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j259a",
+  "at_utc": "20260919T030516Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

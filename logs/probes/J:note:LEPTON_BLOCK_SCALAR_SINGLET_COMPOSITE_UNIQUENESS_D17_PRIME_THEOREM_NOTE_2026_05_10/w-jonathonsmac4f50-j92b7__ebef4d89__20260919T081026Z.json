@@ -1,0 +1,32 @@
+{
+ "task": "J:note:LEPTON_BLOCK_SCALAR_SINGLET_COMPOSITE_UNIQUENESS_D17_PRIME_THEOREM_NOTE_2026_05_10",
+ "type": "judgment",
+ "lane": "lepton",
+ "worker": "w-jonathonsmac4f50-j92b7",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_LEPTON_BLOCK_SCALAR_SINGLET_COMPOSITE_UN/yukawa_block_invariant_census.py",
+ "seed": 5426,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ebef4d89",
+ "started_utc": "20260919T081026Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "falsifiers 1 and 3 do not fire: the charged-lepton block bar(L_L) H e_R has exactly one invariant (dimension 1, Z^2 = 2, so 1/sqrt2), the tilde-H monomial has none (hypercharge sum -2); beyond the note, the full one-generation census of 72 Yukawa-shaped blocks has exactly 8 nonzero blocks, each 1-dimensional: the four Yukawas (e, nu, d, u) and their conjugates, with Z^2 = N_c N_iso ([2, 6])"
+ },
+ "review": "Output matches the task (falsifiers 1 and 3 implemented by exact per-factor invariant counting: su(3), su(2) and complexified-Lorentz generator nullspaces plus the doubled-hypercharge sum, disjoint from the runner): the block bar(L_L) H e_R has exactly one invariant (the Kronecker pairing, Z^2 = 2) and the tilde-H monomial none (hypercharge sum -2); beyond the note, the census of all 72 one-generation blocks bar(psi) Phi chi finds exactly 8 nonzero blocks, each 1-dimensional (the e, nu, d, u Yukawas and their conjugates) with Z^2 = N_c N_iso in {2, 6}; no falsifier fires.",
+ "what": "Note on main: docs/LEPTON_BLOCK_SCALAR_SINGLET_COMPOSITE_UNIQUENESS_D17_PRIME_THEOREM_NOTE_2026-05-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_LEPTON_BLOCK_SCALAR_SINGLET_COMPOSITE_UN/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_LEPTON_BLOCK_SCALAR_SINGLET_COMPOSITE_UN/<script>.py\"",
+ "stdout_sha256": "6d18c122a17003e9393e3eab5c972d5f454916ff4f91be02780a835e899f2fec",
+ "stdout_tail": "1. the note's block bar(L_L) H e_R: invariant dimension 1 (colour x weak x Lorentz x hypercharge); weak singlet tensor [1, 0, 0, 1] (the Kronecker pairing), Z^2 = 2; the tilde-H monomial bar(L_L) H^* e_R: invariant dimension 0 (hypercharge sum -2)\n2. one-generation census of bar(psi) Phi chi, 72 blocks: nonzero invariant dimensions {('Q_L', 'H*', 'u_R'): 1, ('Q_L', 'H', 'd_R'): 1, ('u_R', 'H', 'Q_L'): 1, ('d_R', 'H*', 'Q_L'): 1, ('L_L', 'H', 'e_R'): 1, ('L_L', 'H*', 'nu_R'): 1, ('e_R', 'H*', 'L_L'): 1, ('nu_R', 'H', 'L_L'): 1}\n   Z^2 of each surviving singlet (colour x weak normalization of the unit-entry tensor): {('Q_L', 'H*', 'u_R'): 6, ('Q_L', 'H', 'd_R'): 6, ('u_R', 'H', 'Q_L'): 6, ('d_R', 'H*', 'Q_L'): 6, ('L_L', 'H', 'e_R'): 2, ('L_L', 'H*', 'nu_R'): 2, ('e_R', 'H*', 'L_L'): 2, ('nu_R', 'H', 'L_L'): 2}\nSUMMARY: falsifiers 1 and 3 do not fire: the charged-lepton block bar(L_L) H e_R has exactly one invariant (dimension 1, Z^2 = 2, so 1/sqrt2), the tilde-H monomial has none (hypercharge sum -2); beyond the note, the full one-generation census of 72 Yukawa-shaped blocks has exactly 8 nonzero blocks, each 1-dimensional: the four Yukawas (e, nu, d, u) and their conjugates, with Z^2 = N_c N_iso ([2, 6])\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j92b7",
+  "at_utc": "20260919T081026Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8157",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block23-unsold",
+ "worker": "w-macbookpro90c72-j6099",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8157/p2_shell_counts.py",
+ "seed": 85228,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9e1ecfc9",
+ "started_utc": "20260919T023348Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 Z^2 d_inf shells have 8j sites for j=1..40, the plane is triangle-free of degree 4, and even-side tori (Z/2LZ)^2 have 8j sites for j<L and 4L-1 sites at j=L (\u22648L) for L=1..8"
+ },
+ "review": "Z^2 d_inf shells are 8j; even-side tori have 8j for j<L and 4L-1 at j=L; plane is triangle-free; no defect",
+ "what": "PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915; git show origin/physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915:<note>. Create probes/work/pr8157/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8157/<script>.py\"",
+ "stdout_sha256": "da71222c981785919aedc12d227860bd04a38bc5fcb0c8707d15a351718bfe0a",
+ "stdout_tail": "Z^2 d_inf shells j=1..40: 8j holds; origin 1\nZ^2 interior degree is 4\ntriangles in [-2,2]^2: 0\ntorus 2L=2: shells j<L ok; j=L count=3 (note 4L-1=3 <= 8L=8)\ntorus 2L=4: shells j<L ok; j=L count=7 (note 4L-1=7 <= 8L=16)\ntorus 2L=6: shells j<L ok; j=L count=11 (note 4L-1=11 <= 8L=24)\ntorus 2L=8: shells j<L ok; j=L count=15 (note 4L-1=15 <= 8L=32)\ntorus 2L=10: shells j<L ok; j=L count=19 (note 4L-1=19 <= 8L=40)\ntorus 2L=12: shells j<L ok; j=L count=23 (note 4L-1=23 <= 8L=48)\ntorus 2L=14: shells j<L ok; j=L count=27 (note 4L-1=27 <= 8L=56)\ntorus 2L=16: shells j<L ok; j=L count=31 (note 4L-1=31 <= 8L=64)\nSUMMARY: pattern has no purchase on this note \u2014 Z^2 d_inf shells have 8j sites for j=1..40, the plane is triangle-free of degree 4, and even-side tori (Z/2LZ)^2 have 8j sites for j<L and 4L-1 sites at j=L (\u22648L) for L=1..8\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6099",
+  "at_utc": "20260919T023348Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

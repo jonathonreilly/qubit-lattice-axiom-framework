@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8154",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block20-unsold",
+ "worker": "w-macbookpro90c72-j01fc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8154/quantifier_shells_beyond_L20.py",
+ "seed": 90566,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0dad6b8",
+ "started_utc": "20260919T040246Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - H2 shell counts 8j and 4L-1 and the bound sum 1/|n|^2 >= 4 H_{L-1} hold for every extra L=21..32 beyond the executed L<=20"
+ },
+ "review": "H2 shell counts 8j and 4L-1 and sum 1/|n|^2 >= 4 H_{L-1} hold for extra L=21..32 beyond executed L<=20. No in-range failure.",
+ "what": "PR #8154 ([physics-loop] admissibility-induced-law block20 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915; git show origin/physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915:<note>. Create probes/work/pr8154/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8154/<script>.py\"",
+ "stdout_sha256": "8d7b70c6032b3596c052d22899f0c1d019be51e4922db5803f2aa11359304b6f",
+ "stdout_tail": "4L-1=123); sum 1/|n|^2=2750432721180373418418480511787661853726965793532736580053758714025867256836787179159492959724848634485494223446328975133010870476504478496461625907809279615993429779331878895231842662725472293415816397740824726898565992054786469762218207318305329458870051129494231902499478145553737/110673478844426697035529536542099215690184483028125826734986862070314101811069072609606010072167950135000053653278424982419074894320863923801639119245966877950343251594951226986077284689092091865188968217419500898044705749371688182185787381772384929548269841653594167832059728880000 >= 4 H_30=9304682830147/582272390700: True\nL=32 j=L shell=127 (4L-1=127); sum 1/|n|^2=194996200230661018885267501954121855841842667058469450287199897479733792641880439426080267778743761977410973114085256492990253073350942900025500005363076803156507204678744678586098908723734762583331852169944354705116490153449379183105629253115896725951650119610470487008330789395866535033095308029287983/7783870603498526581777296059460972616982215832124633851247106373887029841507849078402551140396968513421979732770683656928038318622147362494628143082723439168503324540651293036532778603940321761476057938475730186305319608710434287084896119878778172494721060720288156673705256487766327432730625191680000 >= 4 H_31=290774257297357/18050444111700: True\nSUMMARY: pattern has no purchase on this note - H2 shell counts 8j and 4L-1 and the bound sum 1/|n|^2 >= 4 H_{L-1} hold for every extra L=21..32 beyond the executed L<=20\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j01fc",
+  "at_utc": "20260919T040246Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

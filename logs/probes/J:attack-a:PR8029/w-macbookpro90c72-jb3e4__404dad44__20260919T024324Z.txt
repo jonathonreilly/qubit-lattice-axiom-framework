@@ -1,0 +1,10 @@
+d=1: shortest path of 1 links, nested boxes contain it: True
+d=2: shortest path of 2 links, nested boxes contain it: True
+d=3: shortest path of 3 links, nested boxes contain it: True
+d=5: shortest path of 5 links, nested boxes contain it: True
+three outgoing links per cell: True
+dim E=9; Psi=W_gamma/√3 Omega has ||Psi||=1: True
+delta=3av/4 exists for a>0,v>=0: True
+upper trial 4d/a exists: True
+Z^3 is bipartite (no triangles): True
+SUMMARY: pattern has no purchase on this note: shortest paths of length d, nested finite boxes containing them, 3-outgoing cells, the dim-9 source space with transporter-normalized Psi, delta=3av/4, and bipartite Z^3 all exist as written

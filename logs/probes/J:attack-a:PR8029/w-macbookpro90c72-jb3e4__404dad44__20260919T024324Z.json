@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8029",
+ "type": "judgment",
+ "lane": "infinite-static-block39-20260907",
+ "worker": "w-macbookpro90c72-jb3e4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8029/witness_path_gns_sector.py",
+ "seed": 85804,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "404dad44",
+ "started_utc": "20260919T024324Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: shortest paths of length d, nested finite boxes containing them, 3-outgoing cells, the dim-9 source space with transporter-normalized Psi, delta=3av/4, and bipartite Z^3 all exist as written"
+ },
+ "review": "Shortest paths of length d, nested boxes, dim-9 transporter-normalized Psi and bipartite Z^3 exist as stated; pattern has no purchase",
+ "what": "PR #8029 ([physics-loop] infinite-static block39 conditional-support): attack GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/infinite-static-block39-20260907; git show origin/codex/infinite-static-block39-20260907:<note>. Create probes/work/pr8029/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8029/<script>.py\"",
+ "stdout_sha256": "329e212104d83b0ed371d3b73afff75d8d01c40e9c760218202339c03441c11b",
+ "stdout_tail": "d=1: shortest path of 1 links, nested boxes contain it: True\nd=2: shortest path of 2 links, nested boxes contain it: True\nd=3: shortest path of 3 links, nested boxes contain it: True\nd=5: shortest path of 5 links, nested boxes contain it: True\nthree outgoing links per cell: True\ndim E=9; Psi=W_gamma/\u221a3 Omega has ||Psi||=1: True\ndelta=3av/4 exists for a>0,v>=0: True\nupper trial 4d/a exists: True\nZ^3 is bipartite (no triangles): True\nSUMMARY: pattern has no purchase on this note: shortest paths of length d, nested finite boxes containing them, 3-outgoing cells, the dim-9 source space with transporter-normalized Psi, delta=3av/4, and bipartite Z^3 all exist as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb3e4",
+  "at_utc": "20260919T024324Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

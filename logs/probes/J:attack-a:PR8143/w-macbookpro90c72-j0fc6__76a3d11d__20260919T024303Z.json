@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8143",
+ "type": "judgment",
+ "lane": "full-domain-projective-corridor-20260915",
+ "worker": "w-macbookpro90c72-j0fc6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8143/seed_z3_no_triangles.py",
+ "seed": 85783,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "76a3d11d",
+ "started_utc": "20260919T024303Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the section-3 seed C=T\u222a{a0}\u222a{p_j}\u222a{k_j} has |C|=1+5L distinct Z^3 sites and a triangle-free nn graph for L=1..8"
+ },
+ "review": "Section-3 seed C has |C|=1+5L distinct Z^3 sites and a triangle-free nn graph for L=1..8; no defect",
+ "what": "PR #8143 ([physics-loop] full-domain-projective-corridor: bounded_theo): attack FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/full-domain-projective-corridor-20260915; git show origin/physics-loop/full-domain-projective-corridor-20260915:<note>. Create probes/work/pr8143/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8143/<script>.py\"",
+ "stdout_sha256": "30e9d43b12414562372624feb7110060082343409506eb6ae6aa7c011502e97b",
+ "stdout_tail": "L=1: |C|=6 distinct=6 want=6 triangles=0\nL=2: |C|=11 distinct=11 want=11 triangles=0\nL=3: |C|=16 distinct=16 want=16 triangles=0\nL=4: |C|=21 distinct=21 want=21 triangles=0\nL=5: |C|=26 distinct=26 want=26 triangles=0\nL=6: |C|=31 distinct=31 want=31 triangles=0\nL=7: |C|=36 distinct=36 want=36 triangles=0\nL=8: |C|=41 distinct=41 want=41 triangles=0\nSUMMARY: pattern has no purchase on this note \u2014 the section-3 seed C=T\u222a{a0}\u222a{p_j}\u222a{k_j} has |C|=1+5L distinct Z^3 sites and a triangle-free nn graph for L=1..8\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0fc6",
+  "at_utc": "20260919T024303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

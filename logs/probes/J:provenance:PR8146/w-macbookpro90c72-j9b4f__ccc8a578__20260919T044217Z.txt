@@ -1,0 +1,11 @@
+1000/1033        CACHE  S1 at (10,1,2)
+100/131          CACHE  S1 2:1 orthogonal
+50/71            CACHE  S1 2:1 antipodal
+10/33            CACHE  S1 tie
+211/10211        CACHE  epsilon(100) orthogonal
+35/44            CACHE  epsilon(3)
+21/71            CACHE  epsilon(10)
+216              CACHE  triples at (p,1,2)
+20               CACHE  TOTAL PASS
+0                CACHE  TOTAL FAIL
+SUMMARY: provenance (PR #8146): all 10 listed theorem tokens appear in the runner cache (1000/1033, 211/10211, 216 triples, TOTAL PASS=20); known 2:1 iff HIT not re-claimed; no UNCOVERED

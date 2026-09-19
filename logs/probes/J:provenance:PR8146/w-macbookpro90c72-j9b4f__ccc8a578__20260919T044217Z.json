@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8146",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block12-strong",
+ "worker": "w-macbookpro90c72-j9b4f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8146/provenance_theorem_numbers.py",
+ "seed": 92937,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ccc8a578",
+ "started_utc": "20260919T044217Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "provenance (PR #8146): all 10 listed theorem tokens appear in the runner cache (1000/1033, 211/10211, 216 triples, TOTAL PASS=20); known 2:1 iff HIT not re-claimed; no UNCOVERED"
+ },
+ "review": "Provenance: 10 theorem tokens all in cache (1000/1033, 211/10211, PASS=20); known 2:1 iff not re-claimed.",
+ "what": "PR #8146 ([physics-loop] admissibility-induced-law block12 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915; git show origin/physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915:<note>. Create probes/work/pr8146/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8146/<script>.py\"",
+ "stdout_sha256": "21c90ec7db2cb83443b47c888646a9d366592379f4d245d9e6f43f8ab84a1333",
+ "stdout_tail": "1000/1033        CACHE  S1 at (10,1,2)\n100/131          CACHE  S1 2:1 orthogonal\n50/71            CACHE  S1 2:1 antipodal\n10/33            CACHE  S1 tie\n211/10211        CACHE  epsilon(100) orthogonal\n35/44            CACHE  epsilon(3)\n21/71            CACHE  epsilon(10)\n216              CACHE  triples at (p,1,2)\n20               CACHE  TOTAL PASS\n0                CACHE  TOTAL FAIL\nSUMMARY: provenance (PR #8146): all 10 listed theorem tokens appear in the runner cache (1000/1033, 211/10211, 216 triples, TOTAL PASS=20); known 2:1 iff HIT not re-claimed; no UNCOVERED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9b4f",
+  "at_utc": "20260919T044230Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

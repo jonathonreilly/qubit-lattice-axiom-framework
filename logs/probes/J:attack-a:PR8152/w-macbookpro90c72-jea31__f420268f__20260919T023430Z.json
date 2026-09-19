@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8152",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block18-menus-",
+ "worker": "w-macbookpro90c72-jea31",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8152/cube_orbit_witnesses.py",
+ "seed": 85270,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f420268f",
+ "started_utc": "20260919T023430Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - axis/corner/edge menus exist as cube orbits of sizes 6, 8, 12 under both the full octahedral group and the 24 proper rotations"
+ },
+ "review": "Cube-orbit menus exist at sizes 6, 8, 12 under full octahedral and proper rotations; pattern has no purchase",
+ "what": "PR #8152 ([physics-loop] admissibility-induced-law block18 \u2014 bounded_t): attack ADMISSIBILITY_RULE_MENUS_NEIGHBOUR_GENERATED_SUPPORTS_UNSOLDERED_AND_CUBE_ORBIT_MENUS_SOLDERED_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915; git show origin/physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915:<note>. Create probes/work/pr8152/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8152/<script>.py\"",
+ "stdout_sha256": "81e5b87769381f5b5f8cdbb9fbc7fe87d9e05c04e0aebd6642e182db761c2bbf",
+ "stdout_tail": "full octahedral: axes 6 corners 8 edges 12\nproper rotations: axes 6 corners 8 edges 12\nSUMMARY: pattern has no purchase on this note - axis/corner/edge menus exist as cube orbits of sizes 6, 8, 12 under both the full octahedral group and the 24 proper rotations\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jea31",
+  "at_utc": "20260919T023430Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

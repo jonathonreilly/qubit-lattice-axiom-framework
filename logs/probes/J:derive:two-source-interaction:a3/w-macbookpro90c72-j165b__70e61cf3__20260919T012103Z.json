@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:two-source-interaction:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j165b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/two-source-interaction/w-macbookpro90c72-j165b/check.py",
+ "seed": 80863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "70e61cf3",
+ "started_utc": "20260919T012103Z",
+ "elapsed_s": 119.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL the reversible 7-point automaton's two-source interaction is the Gibbs pi\u221dprod Z, like pins favoured over unlike on the L=2 torus, not the AR Green 7/E; pairing exact; AR-FDR does not transfer to pi"
+ },
+ "review": "Gibbs pi\u221dprod Z two-pin masses on the L=2 six-axis torus: like/unlike ratios distinct at nn vs body diagonal, both >1; pairing holds; AR-FDR does not transfer. HIT is a nonlinear exact partial, different route from a2 Fourier.",
+ "what": "DERIVATION, independent attempt 3 of 5: The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?. Setting: light-cone formation in 3+1 (README section 8, problem lightcone-formation): the record at (t+1, x) formed from (t, x) and (t, x +- e_j) with weight exp(beta s.S); linear equal-time kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)) ~ 1/r. If the automaton is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|), then at stationarity the static linear response to a field equals the covariance (fluctuation-response), and a persistent source sees the Green-function potential. TASK: (a) prove or refute the fluctuation-response statement for this law (reversibility is the hypothesis to check first; for the BACKWARD lattice it fails: the response is a forward-cone multinomial); (b) a persistent source = a site whose record is pinned at every level, or a small field h at one site at every level: derive the mean transverse field around it at stationarity, exactly in the linear model and to leading order in 1/beta in the sphere law; (c) two sources at distance r: the change in -log(stationary weight) as a function of r, its sign for like and unlike pins, and the coefficient of 1/r; (d) what plays the role of mass (the pinned amplitude? the number of pinned records?) and whether the interaction is additive over sources (superposition) at linear order and where it fails. Verify every closed form against exact Gaussian conditioning on L = 8..32 tori. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/two-source-interaction/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/two-source-interaction/<name>/check.py\"",
+ "stdout_sha256": "45a38a4d964a57e89819599b5865acca1a5ad893ce6ae96d31e94ade90468d7b",
+ "stdout_tail": "21 frac 1/6\nE3.like/unlike nn 17179558853813045157374427641784866348978652410041/47238316419587431650245082317077879359070521 363678.4745082388 diag 17179504273441154976879226752962922871304575139833/46811863452737032502816928474601790785699833 366990.3953040923\nCHECKED E3.like-beats-unlike-nn\nCHECKED E3.like-beats-unlike-diag\nCHECKED E3.ratio-depends-on-r: nn=17179558853813045157374427641784866348978652410041/47238316419587431650245082317077879359070521 diag=17179504273441154976879226752962922871304575139833/46811863452737032502816928474601790785699833\nCHECKED E3.one-positive\nCHECKS ok=9 fail=0\nHIT: PARTIAL: 7-point sync automaton is reversible w.r.t. pi\u221dprod Z(S_x) (pairing identity); this Gibbs law is not the linear AR (C=7/(2E(1-E/14))), so AR-FDR chi=7/E does not apply to pi; on the L=2 six-axis torus at e^\u03b2=3, like/unlike two-pin mass ratios are 17179558853813045157374427641784866348978652410041/47238316419587431650245082317077879359070521 (nn) and 17179504273441154976879226752962922871304575139833/46811863452737032502816928474601790785699833 (body diagonal), both >1 (like favoured) and unequal (no isotropic 1/r on L=2). Mass is the pinned menu value; superposition fails because log Z is many-body. Different route from a2 (Gibbs pins, not Gaussian Fourier).\nSUMMARY: PARTIAL the reversible 7-point automaton's two-source interaction is the Gibbs pi\u221dprod Z, like pins favoured over unlike on the L=2 torus, not the AR Green 7/E; pairing exact; AR-FDR does not transfer to pi\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j165b",
+  "at_utc": "20260919T012313Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Gibbs pi two-pin exact masses on L=2; like favoured, nn\u2260diag; pairing holds; AR-FDR does not transfer. Different route from a2.",
+  "by": "w-macbookpro90c72-j165b",
+  "at_utc": "20260919T012313Z"
+ }
+}

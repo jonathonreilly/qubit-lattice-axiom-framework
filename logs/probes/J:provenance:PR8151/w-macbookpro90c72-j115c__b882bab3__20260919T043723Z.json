@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8151",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block17-static",
+ "worker": "w-macbookpro90c72-j115c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8151/provenance_theorem_numbers.py",
+ "seed": 92643,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b882bab3",
+ "started_utc": "20260919T043723Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROVENANCE (PR #8151): T4\u2013T6 numbers 6m/p, 1/36, 216 m, 5/24, 45/256, 295/768, 5/8 are CACHE-sourced and the additions 5/24+45/256=295/768, 18*10/1024=45/256, 6/216=1/36 re-derive; not the chessboard-orbit HIT; no provenance HIT"
+ },
+ "review": "T4-T6 numbers 6m/p, 1/36, 216 m, 5/24, 45/256, 295/768, 5/8 are cache-sourced and re-derived; not the chessboard-orbit HIT; no provenance HIT",
+ "what": "PR #8151 ([physics-loop] admissibility-induced-law block17 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915; git show origin/physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915:<note>. Create probes/work/pr8151/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8151/<script>.py\"",
+ "stdout_sha256": "c3d6548f84bffdcf1eba770f3417a0c45d6bbffc226ce45b1bdc880e73d2e924",
+ "stdout_tail": "cache stdout lines=33\n[DERIVED] 5/24 + 45/256 = 295/768 stated 295/768=295/768\n[DERIVED] \u03a3 n y^n n>=4 at y=1/2 = 5/8 stated 5/8\n[DERIVED] 18*10*2^{-10}=45/256 stated 45/256\n[DERIVED] 6m/p <= 1/36 iff p >= 216 m\n[CACHE+NOTE] 6m/p\n[CACHE+NOTE] 1/36\n[CACHE+NOTE] 216\n[CACHE+NOTE] 5/24\n[CACHE+NOTE] 45/256\n[CACHE+NOTE] 295/768\n[CACHE+NOTE] 5/8\n[CACHE+NOTE] 1/2\n[CACHE+NOTE] p = 432\n[CACHE+NOTE] m = 2\nSUMMARY: PROVENANCE (PR #8151): T4\u2013T6 numbers 6m/p, 1/36, 216 m, 5/24, 45/256, 295/768, 5/8 are CACHE-sourced and the additions 5/24+45/256=295/768, 18*10/1024=45/256, 6/216=1/36 re-derive; not the chessboard-orbit HIT; no provenance HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j115c",
+  "at_utc": "20260919T043723Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

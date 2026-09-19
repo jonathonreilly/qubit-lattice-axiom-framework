@@ -1,0 +1,16 @@
+cache stdout lines=33
+[DERIVED] 5/24 + 45/256 = 295/768 stated 295/768=295/768
+[DERIVED] Σ n y^n n>=4 at y=1/2 = 5/8 stated 5/8
+[DERIVED] 18*10*2^{-10}=45/256 stated 45/256
+[DERIVED] 6m/p <= 1/36 iff p >= 216 m
+[CACHE+NOTE] 6m/p
+[CACHE+NOTE] 1/36
+[CACHE+NOTE] 216
+[CACHE+NOTE] 5/24
+[CACHE+NOTE] 45/256
+[CACHE+NOTE] 295/768
+[CACHE+NOTE] 5/8
+[CACHE+NOTE] 1/2
+[CACHE+NOTE] p = 432
+[CACHE+NOTE] m = 2
+SUMMARY: PROVENANCE (PR #8151): T4–T6 numbers 6m/p, 1/36, 216 m, 5/24, 45/256, 295/768, 5/8 are CACHE-sourced and the additions 5/24+45/256=295/768, 18*10/1024=45/256, 6/216=1/36 re-derive; not the chessboard-orbit HIT; no provenance HIT

@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-uniqueness-region-up-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jf8fe",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/uniqueness-region-up/referee_w-jonathonsmac4f50-jf8fe/check.py",
+ "seed": 84896,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "45fdae04",
+ "started_utc": "20260919T022816Z",
+ "elapsed_s": 33.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 4 - the one-site bound TV <= lambda2 holds for deterministic level-t planes, but the iteration to lambda2^k and the window bound 'Hamming expectation <= m lambda2^k' need a coupling of the random level-(t+2) planes that meets every site's bound at once; the two-step kernel is not a product over sites (S4b) and none is given. The inference proves a false statement for a PCA on the same geometry (S4a: lambda2 = 0, two invariant torus laws). Every exact number reproduces: I_1, I_2, lambda2(499/100) < 1, lambda2 < 1 at the tenths 38/10..49/10, lambda2(5) > 1, the block 08/28 constants, lambda2 <= (3c)^2; no numerical violation of the claimed bound on the six-axis kernel was found (S4c)"
+ },
+ "review": "Every exact number of a3 reproduces (I_1, I_2 and lambda2 = 0.99718 at 499/100, lambda2 < 1 at the tenths 38/10..49/10, lambda2(5) = 1.00167, the block 08/28 constants), but step 4's iteration and window bound need a coupling the non-product two-step kernel does not give: a same-geometry PCA with lambda2 = 0 has two invariant torus laws (S4a) and a 0->1 flip moves the joint (X_z, X_z-e1) law by 0.0884 against 0.0831 for X_z alone (S4b), so the claim fails at step 4 with no HIT.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:uniqueness-region-up:a3/; its files are probes/work/derive/uniqueness-region-up/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/uniqueness-region-up/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "9d9c2dde6059e447e7324fca90a36a2fb74d20658aab2572ec85375992a62b18",
+ "stdout_tail": "ant (pushforward counts 512 on the class, 0 off it). Two invariant laws with equal one-site marginals and TV 1 on the nine-site window: step 4's 'Hamming expectation <= m lambda2^k' and 'two invariant laws would be equal on every finite window' are false for it\nPASS S4b: p = 499/100, flip 0->1 at z, boundary {(1, 0): 0, (0, 1): 1, (2, 0): 1, (1, 1): 0, (0, 2): 1, (3, 0): 0, (2, 1): 0, (1, 2): 0}: TV of the joint law of (X_z, X_z-e1) two levels later = 0.088400785 > TV of X_z = 0.083107819, TV of X_z-e1 = 0; every coupling has P(mismatch at z) + P(mismatch at z-e1) >= the joint TV\nINFO S4c: hill-climb (2 flips x 2 restarts) of the four-step TV at z under a flip at z, p = 499/100: max found 0.0084496 < I_1^2 = 0.0130595 (not exhaustive; no violation of the claimed bound found)\nSUMMARY: fails at step 4 - the one-site bound TV <= lambda2 holds for deterministic level-t planes, but the iteration to lambda2^k and the window bound 'Hamming expectation <= m lambda2^k' need a coupling of the random level-(t+2) planes that meets every site's bound at once; the two-step kernel is not a product over sites (S4b) and none is given. The inference proves a false statement for a PCA on the same geometry (S4a: lambda2 = 0, two invariant torus laws). Every exact number reproduces: I_1, I_2, lambda2(499/100) < 1, lambda2 < 1 at the tenths 38/10..49/10, lambda2(5) > 1, the block 08/28 constants, lambda2 <= (3c)^2; no numerical violation of the claimed bound on the six-axis kernel was found (S4c)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf8fe",
+  "at_utc": "20260919T022901Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

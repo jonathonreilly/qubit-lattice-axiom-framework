@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8081",
+ "type": "judgment",
+ "lane": "native-correlated-ward-20260910",
+ "worker": "w-macbookpro90c72-jacdc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8081/witness_k6_channels.py",
+ "seed": 85713,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e68b527",
+ "started_utc": "20260919T024153Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: K6's 15 channels, the disjoint-pair graph T with the stated spectrum, the 6\u00d715 incidence, L-branch continuity, the five lambda scales, and six cubic direction labels all exist as written"
+ },
+ "review": "K6 15 channels, T spectrum 6/-3/1, incidence N, L-branch continuity and six cubic labels exist as stated; pattern has no purchase",
+ "what": "PR #8081 ([physics-loop] Correlated native Ward bounds (conditional-su): attack NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-correlated-ward-20260910; git show origin/codex/native-correlated-ward-20260910:<note>. Create probes/work/pr8081/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8081/<script>.py\"",
+ "stdout_sha256": "ef2f73fa68da7af46989c26d69aa4ea223a277ae9a0c818cd1064368244cc815",
+ "stdout_tail": "K6: 6 vertices, 15 two-neighbor channels: True\nT exists: 6-regular on 15 vertices, ev 6,-3,1 with mult 1,5,9: True\nincidence N is 6\u00d715 with NN*=4I+J6: True\nL(E,F) branches agree at F=2E and F=4E: True\nfive scales lambda in {0,1/2,1,3/2,2} exist: True\nsix cubic directions exist and each flips Z^3 bipartition: True\nSUMMARY: pattern has no purchase on this note: K6's 15 channels, the disjoint-pair graph T with the stated spectrum, the 6\u00d715 incidence, L-branch continuity, the five lambda scales, and six cubic direction labels all exist as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jacdc",
+  "at_utc": "20260919T024154Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+PASS: A1 V-shape: topo orders ABC and BAC give the same 8-atom joint; P_topo(C=1)=1/2
+PASS: A2 child-first joint differs: P(C=1)=1/3 vs 1/2, full-joint TV=5/24
+PASS: B1 diamond: both topological orders give the same 16-atom joint (sum=1)
+PASS: C1 two incomparable sources: either order is the product, TV=0
+PASS: D1 Z^3 fragment parent->child: anti-causal order (child first) has TV=1/6 > 0
+PASS: D2 same-level siblings (incomparable in the event DAG): swap is topological, TV=0
+TOTAL: PASS=6 FAIL=0
+HIT: the joint law on a finite causal DAG is the product of kernels along every linear extension (V-shape 8-atom joints agree; diamond 16-atom joints agree; incomparable pair TV=0). Smallest violating order: 3-site V, child first, P(C=1)=1/3 vs 1/2, full-joint TV=5/24. Z^3 anti-causal parent/child order changes the law; same-level swaps do not. Event-lattice topological orders are order-independent; undirected monotone sweeps are not topological
+SUMMARY: PROVED finite causal DAG formation is independent of topological order (product of kernels); smallest anti-causal counterexample is a 3-site V with the child first (TV=5/24); Z^3 same-level swaps are topological, parent-after-child is not

@@ -1,0 +1,3 @@
+proved TV/|δ| ≤ 1/(2√3) = 0.2886751346
+executed 0.2499 < 0.2887; 1/4 is the small-|V| identity
+SUMMARY: SAMPLED EVIDENCE (PR #8171): the 300-pair quadrature sits under the proved 1/(2√3) bound; 1/4 is the small-field identity, not a sampler never/always; pattern has no purchase

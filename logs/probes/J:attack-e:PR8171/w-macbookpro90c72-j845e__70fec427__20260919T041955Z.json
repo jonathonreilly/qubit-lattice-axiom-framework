@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8171",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block27-unsold",
+ "worker": "w-macbookpro90c72-j845e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8171/no_sampled_beyond_bound.py",
+ "seed": 91595,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "70fec427",
+ "started_utc": "20260919T041955Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8171): the 300-pair quadrature sits under the proved 1/(2\u221a3) bound; 1/4 is the small-field identity, not a sampler never/always; pattern has no purchase"
+ },
+ "review": "the 300-pair quadrature sits under the proved 1/(2\u221a3) bound and 1/4 is the small-field identity, so the sampled-evidence pattern has no purchase",
+ "what": "PR #8171 ([physics-loop] admissibility-induced-law block27 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916; git show origin/physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916:<note>. Create probes/work/pr8171/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8171/<script>.py\"",
+ "stdout_sha256": "c04cc223270d25cac8944851d018e09f9c196b213c2b74481d7943fedfc1d86d",
+ "stdout_tail": "proved TV/|\u03b4| \u2264 1/(2\u221a3) = 0.2886751346\nexecuted 0.2499 < 0.2887; 1/4 is the small-|V| identity\nSUMMARY: SAMPLED EVIDENCE (PR #8171): the 300-pair quadrature sits under the proved 1/(2\u221a3) bound; 1/4 is the small-field identity, not a sampler never/always; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j845e",
+  "at_utc": "20260919T041955Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

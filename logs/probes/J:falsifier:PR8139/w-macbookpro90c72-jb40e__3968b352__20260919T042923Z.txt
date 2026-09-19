@@ -1,0 +1,8 @@
+== R1 face-diagonal TV (beyond executed (3,1,2) only) ==
+  (3, 1, 2): max TV over alt of ω_{e1-e2} = 793975879125/24719290847393
+  (5, 2, 4): max TV over alt of ω_{e1-e2} = 8166354608517369437064875000/472171593164184352886643039991
+  (2, 1, 2): max TV over alt of ω_{e1-e2} = 1967949873728/207240884782635
+  (2, 2, 2): max TV over alt of ω_{e1-e2} = 0
+== R3(a) D_κ(x) on [-2,2]^3, all eight corners ==
+  sites=125 corners=8 mismatches_logged=0
+SUMMARY: FALSIFIER (PR #8139): R1 face-diagonal TV at (3,1,2) equals 793975879125/24719290847393; extra triples (5,2,4) and (2,1,2) have TV>0 and the constant rule has TV=0; R3(a) D_κ(x)=D_{−κ}(x) and is distinct for other corners at every x in [-2,2]^3; does not fire

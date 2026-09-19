@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8139",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block09-z3-mar",
+ "worker": "w-macbookpro90c72-jb40e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8139/falsifier_r1_tv_r3a_beyond.py",
+ "seed": 92163,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3968b352",
+ "started_utc": "20260919T042923Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "FALSIFIER (PR #8139): R1 face-diagonal TV at (3,1,2) equals 793975879125/24719290847393; extra triples (5,2,4) and (2,1,2) have TV>0 and the constant rule has TV=0; R3(a) D_\u03ba(x)=D_{\u2212\u03ba}(x) and is distinct for other corners at every x in [-2,2]^3; does not fire"
+ },
+ "review": "independent Gibbs conditional: R1 face-diagonal TV at (3,1,2) matches 793975879125/24719290847393; extra triples (5,2,4) and (2,1,2) have TV>0, constant rule TV=0; R3(a) D_\u03ba distinct except \u00b1 pairs on [-2,2]^3; falsifier does not fire",
+ "what": "PR #8139 ([physics-loop] admissibility-induced-law block09 \u2014 bounded_t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915; git show origin/physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915:<note>. Create probes/work/pr8139/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8139/<script>.py\"",
+ "stdout_sha256": "70f6ffbeefd0613b2a4a3263479d3709cfae8cdc03155f84d8b2850865116cb8",
+ "stdout_tail": "== R1 face-diagonal TV (beyond executed (3,1,2) only) ==\n  (3, 1, 2): max TV over alt of \u03c9_{e1-e2} = 793975879125/24719290847393\n  (5, 2, 4): max TV over alt of \u03c9_{e1-e2} = 8166354608517369437064875000/472171593164184352886643039991\n  (2, 1, 2): max TV over alt of \u03c9_{e1-e2} = 1967949873728/207240884782635\n  (2, 2, 2): max TV over alt of \u03c9_{e1-e2} = 0\n== R3(a) D_\u03ba(x) on [-2,2]^3, all eight corners ==\n  sites=125 corners=8 mismatches_logged=0\nSUMMARY: FALSIFIER (PR #8139): R1 face-diagonal TV at (3,1,2) equals 793975879125/24719290847393; extra triples (5,2,4) and (2,1,2) have TV>0 and the constant rule has TV=0; R3(a) D_\u03ba(x)=D_{\u2212\u03ba}(x) and is distinct for other corners at every x in [-2,2]^3; does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb40e",
+  "at_utc": "20260919T042923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

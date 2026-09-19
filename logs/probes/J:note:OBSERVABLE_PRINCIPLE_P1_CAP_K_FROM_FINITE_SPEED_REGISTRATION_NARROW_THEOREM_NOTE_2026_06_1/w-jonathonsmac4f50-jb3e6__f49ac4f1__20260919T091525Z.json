@@ -1,0 +1,32 @@
+{
+ "task": "J:note:OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026_06_1",
+ "type": "judgment",
+ "lane": "observable",
+ "worker": "w-jonathonsmac4f50-jb3e6",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINIT/sensitivity_cone_exact_dynamics.py",
+ "seed": 9325,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f49ac4f1",
+ "started_utc": "20260919T091525Z",
+ "elapsed_s": 14.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "canonical D* = 63.821970, ceil 64, N_reach = 2146689, 4^10 <= N < 4^11, first joint-reading failure k = 1073345 (all as stated); the proof's own l1 cone (integer distance <= 63) holds 341503 sites, below 4^10; exact full-norm sensitivities on a 61-site chain (213 points, D to 20, site and bond sources) stay below the series bound, largest ratio 0.2434 at ('bond lam=1', 1); the d = 1 delta = 1/10 radius at tau = 1 is 2 against D* = 21.43; the 12-site 2x2x3 full Fock space and the 729-site one-particle sector stay below the W = 6 bound (largest 0.0800); the long-bond comparator exceeds the finite-range bound by 194.0 to 2.28e+26; runner T9 evaluates D*(R=10) = 378.96 without the R factor in front of the log (373.32 with it); no falsifier fires"
+ },
+ "review": "Read the script and its output: canonical D* = 63.8219703, ceil 64, N_reach = 2146689, 4^10 <= N < 4^11 and first joint-reading failure k = 1073345 match the note; exact Jordan-Wigner full-norm sensitivities on a 61-site chain (213 points, D to 20, site and bond sources, 60 digits), the 12-site 2x2x3 full Fock space and a 729-site one-particle sector all stay below the series bound (largest ratio 0.2434 at D = 1); the long-bond comparator exceeds the bound by 194 to 2.3e26; extra numbers only: the l1 cone of integer radius 63 holds 341503 sites (below 4^10) and the runner's T9 uses D*(R=10) = 378.96 without the R prefactor on the log (373.32 with it), neither a note claim; no falsifier fires.",
+ "what": "Note on main: docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINIT/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINIT/<script>.py\"",
+ "stdout_sha256": "c789625876da841b464c95c9e022752ef4e22948b76912ace0942965d9215228",
+ "stdout_tail": ", D) {(1.0, 1): 0.08, (1.0, 2): 0.00674, (1.0, 3): 0.000847, (1.0, 4): 7.09e-05, (1.0, 5): 4.98e-05, (1.0, 6): 2.33e-05, (1.0, 7): 3.02e-06, (1.0, 8): 5.72e-05, (1.0, 9): 1.31e-07, (1.0, 10): 1.09e-06, (1.0, 11): 1.09e-05, (1.0, 12): 1.24e-08, (0.01, 1): 0.08, (0.01, 2): 0.00674, (0.01, 3): 0.000847, (0.01, 4): 6.95e-05, (0.01, 5): 8.13e-05, (0.01, 6): 1.85e-05, (0.01, 7): 1.96e-07, (0.01, 8): 1.49e-06, (0.01, 9): 1.41e-05, (0.01, 10): 4.49e-08, (0.01, 11): 2.34e-07, (0.01, 12): 1.35e-06}; violations []\n4. long-bond comparator (one-particle sector): sensitivity / finite-range bound {(5, '0.05'): '3310.0', (5, '0.1'): '193.5', (10, '0.05'): '1.837e+10', (10, '0.1'): '3.445e+7', (20, '0.05'): '2.277e+26', (20, '0.1'): '4.239e+20'}\nSUMMARY: canonical D* = 63.821970, ceil 64, N_reach = 2146689, 4^10 <= N < 4^11, first joint-reading failure k = 1073345 (all as stated); the proof's own l1 cone (integer distance <= 63) holds 341503 sites, below 4^10; exact full-norm sensitivities on a 61-site chain (213 points, D to 20, site and bond sources) stay below the series bound, largest ratio 0.2434 at ('bond lam=1', 1); the d = 1 delta = 1/10 radius at tau = 1 is 2 against D* = 21.43; the 12-site 2x2x3 full Fock space and the 729-site one-particle sector stay below the W = 6 bound (largest 0.0800); the long-bond comparator exceeds the finite-range bound by 194.0 to 2.28e+26; runner T9 evaluates D*(R=10) = 378.96 without the R factor in front of the log (373.32 with it); no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb3e6",
+  "at_utc": "20260919T091547Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

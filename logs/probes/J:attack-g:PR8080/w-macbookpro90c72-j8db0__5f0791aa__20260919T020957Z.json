@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8080",
+ "type": "judgment",
+ "lane": "native-stronger-ward-20260910",
+ "worker": "w-macbookpro90c72-j8db0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8080/qtau_factorization.py",
+ "seed": 83797,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5f0791aa",
+ "started_utc": "20260919T020957Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: Q_tau(lambda)-1/lambda^2 equals the stated nonnegative factorization identically, and Q_tau is exactly A lambda^2 + B lambda + C with the stated A,B,C"
+ },
+ "review": "Q_tau factorization identity holds identically; Q equals A lam^2+B lam+C with the stated coefficients; pattern has no purchase",
+ "what": "PR #8080 ([physics-loop] Stronger native Ward bounds (conditional-supp): attack NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-stronger-ward-20260910; git show origin/codex/native-stronger-ward-20260910:<note>. Create probes/work/pr8080/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8080/<script>.py\"",
+ "stdout_sha256": "f45c6e1d29284e0777f7b0dc804a16d2c6f9853b9d3008daa121ac0bd23f11c9",
+ "stdout_tail": "factorization identity: True\nQ = A lam^2 + B lam + C: True\nSUMMARY: pattern has no purchase on this note: Q_tau(lambda)-1/lambda^2 equals the stated nonnegative factorization identically, and Q_tau is exactly A lambda^2 + B lambda + C with the stated A,B,C\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8db0",
+  "at_utc": "20260919T020957Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,3 @@
+factorization identity: True
+Q = A lam^2 + B lam + C: True
+SUMMARY: pattern has no purchase on this note: Q_tau(lambda)-1/lambda^2 equals the stated nonnegative factorization identically, and Q_tau is exactly A lambda^2 + B lambda + C with the stated A,B,C

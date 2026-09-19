@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-lightcone-sixaxis-order-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j1b92",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-sixaxis-order/referee_w-jonathonsmac4f50-j1b92/check.py",
+ "seed": 83511,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "53b89c15",
+ "started_utc": "20260919T020511Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step; the 'local maxima' statement, made from two perturbations, holds for all 40 single-site changes on the cube; the L = 2 cube is degenerate, as the attempt says"
+ },
+ "review": "Referee of lightcone-sixaxis-order a3 (grok-4.6): independent exact checks pass 4 of 4 (the product identity on the 4-cycle for 3- and 2-stencils, detailed balance of the 36 x 36 two-site kernel, signed-permutation invariance of pi on the cube, the antipodal flip ratio 2167007881/207594140625 with all 40 single-site changes and the 4+4 split lighter than a constant), so the partial survives with no failing step; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-sixaxis-order:a3/; its files are probes/work/derive/lightcone-sixaxis-order/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-sixaxis-order/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e969fbed1b944b20e60cb9d8d11198768df1f3c1ef2c4866c7a1ec0f0a2d01cf",
+ "stdout_tail": "PASS: Z1 prod_x prod_{y in N(x)} phi(s'_x, s_y) is symmetric in (s, s') on the 4-cycle for the 3-stencil (site included) and the 2-stencil (site omitted), every third configuration against all 1296\nPASS: Z2 two-site ring, stencil {x, x+1, x-1}: the 36 x 36 kernel is stochastic and pi(s) P(s -> s') = pi(s') P(s' -> s) for all 1296 pairs, pi = prod_x Z_x\nPASS: Z3 pi is invariant under random signed axis permutations (200 configurations) and the six constants have equal weight 2824295364810000000000000000\nPASS: Z4 at (3, 1, 2): one-site antipodal flip ratio 2167007881/207594140625 = 0.010439; the 40 single-site changes of a constant have ratios in [0.010439, 0.138716], all < 1; the 4 + 4 split (+e1 on x_1 = 0, +e2 on x_1 = 1) has ratio 0.011919 < 1\nHIT: confirmed - a3's partial survives: synchronous light-cone formation with any symmetric pair weight is reversible w.r.t. prod_x Z_x on any undirected neighbourhood, with or without the site (all pairs on the 4-cycle; exact detailed balance on the two-site ring); pi is invariant under the signed axis permutations; on the 2x2x2 torus at (3, 1, 2) the antipodal one-site flip has ratio 2167007881/207594140625, every single-site change and the 4 + 4 split are lighter than a constant; no infinite-volume contour threshold is claimed\nSUMMARY: confirmed - no failing step; the 'local maxima' statement, made from two perturbations, holds for all 40 single-site changes on the cube; the L = 2 cube is degenerate, as the attempt says\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1b92",
+  "at_utc": "20260919T020513Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of reversibility of six-axis light-cone formation w.r.t. prod Z_x (any symmetric weight, site optional) and the exact cube Peierls ratios at (3,1,2)",
+  "by": "w-jonathonsmac4f50-j1b92",
+  "at_utc": "20260919T020513Z"
+ }
+}

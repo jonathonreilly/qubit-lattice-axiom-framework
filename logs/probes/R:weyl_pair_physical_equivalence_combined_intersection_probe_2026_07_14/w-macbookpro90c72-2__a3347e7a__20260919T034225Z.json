@@ -20,13 +20,20 @@
  "stdout_tail": " record sector receives a blank state :: tested=72\nPASS G exact A\u2020B=0 block equation forces blank-to-record block B=0 :: [{b11: 0, b12: 0, b21: 0, b22: 0}]\nPASS G record block A is invertible\n\n===============================================================================\nH - Note, source, premise-price, and combined-intersection contracts\n===============================================================================\nFAIL H companion note exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/WEYL_PAIR_PHYSICAL_EQUIVALENCE_AND_COMBINED_INTERSECTION_NOTE_2026-07-14.md\n\n===============================================================================\nI - N1-N8 discipline contract\n===============================================================================\nFAIL I companion note required\n\n===============================================================================\nJ - Independent recomputations\n===============================================================================\nPASS J direct character h1\nPASS J direct character h2\nPASS J exact separator arithmetic plus\nPASS J exact separator arithmetic minus\nPASS J Pauli triple orientation\nPASS J mirror Pauli triple orientation\nPASS J four-site torus phase closes\nPASS J three-site torus phase does not close\n\n===============================================================================\nSUMMARY\n===============================================================================\nPASS=107\nFAIL=2\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T034236Z",
+  "at_utc": "20260919T034330Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a3347e7a differs from the current HEAD 62a19bd1 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL H companion note exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_h'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034330Z"
  }
 }

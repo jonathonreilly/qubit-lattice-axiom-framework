@@ -1,0 +1,7 @@
+plaquette: |V|=4 |E|=4 want_E>=4? 4 triangle=False
+path3: |V|=3 |E|=2 want_E>=2? 2 triangle=False
+star4: |V|=5 |E|=4 want_E>=4? 4 triangle=False
+2x3: |V|=6 |E|=7 want_E>=7? 7 triangle=False
+2x2x2: |V|=8 |E|=12 want_E>=12? 12 triangle=False
+(p,q,r)=(3,1,2) all positive True
+SUMMARY: attack pattern (a) WITNESS REALIZABILITY - plaquette, path3, four-leaf star, 2x3 and 2x2x2 embed in Z^3 with the stated NN graphs and no triangles; (3,1,2)>0; not the known R3 distance HIT

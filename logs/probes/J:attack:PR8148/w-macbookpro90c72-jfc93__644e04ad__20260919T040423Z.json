@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR8148",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block14-format",
+ "worker": "w-macbookpro90c72-jfc93",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8148/witness_windows_exist.py",
+ "seed": 90663,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "644e04ad",
+ "started_utc": "20260919T040423Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack pattern (a) WITNESS REALIZABILITY - plaquette, path3, four-leaf star, 2x3 and 2x2x2 embed in Z^3 with the stated NN graphs and no triangles; (3,1,2)>0; not the known R3 distance HIT"
+ },
+ "review": "Named windows (plaquette, path3, star, 2x3, cube) embed in Z^3 with the stated NN graphs and no triangles; (3,1,2)>0. Not the known R3 distance HIT.",
+ "what": "PR #8148 ([physics-loop] admissibility-induced-law block14 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915:<note>. Create probes/work/pr8148/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8148/<script>.py\"",
+ "stdout_sha256": "95023a642118be29556b003eec49057a8e8dafbf84fa3154719e52639d7109ea",
+ "stdout_tail": "plaquette: |V|=4 |E|=4 want_E>=4? 4 triangle=False\npath3: |V|=3 |E|=2 want_E>=2? 2 triangle=False\nstar4: |V|=5 |E|=4 want_E>=4? 4 triangle=False\n2x3: |V|=6 |E|=7 want_E>=7? 7 triangle=False\n2x2x2: |V|=8 |E|=12 want_E>=12? 12 triangle=False\n(p,q,r)=(3,1,2) all positive True\nSUMMARY: attack pattern (a) WITNESS REALIZABILITY - plaquette, path3, four-leaf star, 2x3 and 2x2x2 embed in Z^3 with the stated NN graphs and no triangles; (3,1,2)>0; not the known R3 distance HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jfc93",
+  "at_utc": "20260919T040423Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

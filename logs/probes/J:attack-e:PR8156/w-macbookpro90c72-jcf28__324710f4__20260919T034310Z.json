@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8156",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block22-sphere",
+ "worker": "w-macbookpro90c72-jcf28",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8156/adversarial_cosine_and_symbol.py",
+ "seed": 89390,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "324710f4",
+ "started_utc": "20260919T034310Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - adversarial grid plus hill-climb on C1's two cosine inequalities (4001+8001-point grids) and C3's two-region symbol (21^3 small box; large-region grid) finds no in-range witness below the stated bounds; the 21+21 sample points and nine sample wavevectors are not hiding a failure"
+ },
+ "review": "Adversarial grid plus hill-climb on C1's 21-point cosine inequalities and C3's nine sample wavevectors finds no in-range negative margin (quartic min away from 0 is 1e-8, chord nonnegative, small-box margin 0 at origin, large-region 1-phi >= 0.206 vs bound 0.068); sampled-evidence attack does not fire.",
+ "what": "PR #8156 ([physics-loop] admissibility-induced-law block22 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915; git show origin/physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915:<note>. Create probes/work/pr8156/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8156/<script>.py\"",
+ "stdout_sha256": "f8e08e58d72ef123131e3dc2863b93fa44dc887b1554481a3f8e33355b89eb73",
+ "stdout_tail": "C1 quartic: grid min margin (away from 0)=1.041666e-08; hill-climb worst at u=-0.000000010537 margin=-5.088522e-17\nC1 chord: grid min margin=0.000000e+00; hill-climb worst at u=-0.000000010537 margin=-2.249782e-17\nC3 small: 21^3 min margin=0.000000e+00 at (0.0, 0.0, 0.0); hill-climb worst [-1.82397726e-08 -1.05291661e-08 -2.35562246e-08] margin=-1.525407e-16\nC3 large: 34937 grid pts min(1-phi)=2.058858e-01 vs bound 6.754746e-02; hill-climb worst [-1.  0.  0.] margin=8.568511e-02\nC3 named small: [0.007483287887269735, 0.0013643607985268646, 0.0023800105764452267, 0.0035995181334152193]\nC3 named large: [0.5991192109051082, 0.28301262305241626, 1.3485993807855838, 1.9324525442384415, 0.6145871704299157]\nSUMMARY: pattern has no purchase on this note - adversarial grid plus hill-climb on C1's two cosine inequalities (4001+8001-point grids) and C3's two-region symbol (21^3 small box; large-region grid) finds no in-range witness below the stated bounds; the 21+21 sample points and nine sample wavevectors are not hiding a failure\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcf28",
+  "at_utc": "20260919T034310Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

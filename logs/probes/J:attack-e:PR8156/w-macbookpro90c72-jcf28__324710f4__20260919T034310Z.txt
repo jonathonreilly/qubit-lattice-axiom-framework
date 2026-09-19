@@ -1,0 +1,7 @@
+C1 quartic: grid min margin (away from 0)=1.041666e-08; hill-climb worst at u=-0.000000010537 margin=-5.088522e-17
+C1 chord: grid min margin=0.000000e+00; hill-climb worst at u=-0.000000010537 margin=-2.249782e-17
+C3 small: 21^3 min margin=0.000000e+00 at (0.0, 0.0, 0.0); hill-climb worst [-1.82397726e-08 -1.05291661e-08 -2.35562246e-08] margin=-1.525407e-16
+C3 large: 34937 grid pts min(1-phi)=2.058858e-01 vs bound 6.754746e-02; hill-climb worst [-1.  0.  0.] margin=8.568511e-02
+C3 named small: [0.007483287887269735, 0.0013643607985268646, 0.0023800105764452267, 0.0035995181334152193]
+C3 named large: [0.5991192109051082, 0.28301262305241626, 1.3485993807855838, 1.9324525442384415, 0.6145871704299157]
+SUMMARY: pattern has no purchase on this note - adversarial grid plus hill-climb on C1's two cosine inequalities (4001+8001-point grids) and C3's two-region symbol (21^3 small box; large-region grid) finds no in-range witness below the stated bounds; the 21+21 sample points and nine sample wavevectors are not hiding a failure

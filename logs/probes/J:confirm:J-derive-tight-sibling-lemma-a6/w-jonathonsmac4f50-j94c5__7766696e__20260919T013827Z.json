@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-tight-sibling-lemma-a6",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j94c5",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/tight-sibling-lemma/referee_w-jonathonsmac4f50-j94c5/check.py",
+ "seed": 81907,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7766696e",
+ "started_utc": "20260919T013827Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 3 - the attempt treats W1, Z_A, Z_B as single-seed windows (in contrast with W2, W3), but Z_A has 3 seeds and Z_B 8: there the single-seed DP gives upper bounds on the rooted values, so 'Z_A's root is tight' and 'Z_B's root is tight' (steps 3-4, the HIT line) are not established. The negative survives, re-derived with an independent 0-1 program: v(W1 root) = -2 (a single-seed window, exact) with 10 all-processed sites whose predecessors reach at most -1, and in Z_A and Z_B every processed site with only processed 1-predecessors has a predecessor of single-seed value < 0, hence of rooted value < 0, so no hard site occurs on W1, Z_A, Z_B"
+ },
+ "review": "Referee of tight-sibling-lemma a6 (grok-4.6): an independent 0-1 program (cross-checked by brute force at 45 sites) passes 5 of 5 and reproduces the single-seed values (W1 root -2; Z_A root 0 with preds -1,-1,-1; Z_B root 0 with preds -1,-1,0) and the absence of hard sites, but the attempt fails at step 3: Z_A and Z_B have 3 and 8 seeds, so their single-seed values only bound the rooted values and the roots' tightness is not established (the negative itself survives); this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:tight-sibling-lemma:a6/; its files are probes/work/derive/tight-sibling-lemma/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/tight-sibling-lemma/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a03f8f13e409ad9257756fba94701dbf81195840a841632a1fe772163065442c",
+ "stdout_tail": "ASS: T2 W1: v(root) = -2; 10 processed sites have only processed 1-predecessors, whose values reach at most -1; hard sites: []\nPASS: T3 Z_A single-seed values: root 0, predecessors [((2, 3, 3), 'proc', -1), ((3, 2, 3), 'proc', -1), ((3, 3, 2), 'proc', -1)]; every processed site with only processed 1-predecessors has a predecessor of single-seed value < 0, hence of rooted value < 0: no hard site\nPASS: T4 Z_B single-seed values: root 0, predecessors [((3, 4, 4), 'proc', -1), ((4, 3, 4), 'proc', -1), ((4, 4, 3), 'proc', 0)]; every processed site with only processed 1-predecessors has a predecessor of single-seed value < 0: no hard site (sites without a single-seed tree: 0)\nPASS: T5 the integer program agrees with brute-force enumeration over all node sets at all 45 sites with at most 18 candidate 1-sites at levels <= theirs\nSUMMARY: fails at step 3 - the attempt treats W1, Z_A, Z_B as single-seed windows (in contrast with W2, W3), but Z_A has 3 seeds and Z_B 8: there the single-seed DP gives upper bounds on the rooted values, so 'Z_A's root is tight' and 'Z_B's root is tight' (steps 3-4, the HIT line) are not established. The negative survives, re-derived with an independent 0-1 program: v(W1 root) = -2 (a single-seed window, exact) with 10 all-processed sites whose predecessors reach at most -1, and in Z_A and Z_B every processed site with only processed 1-predecessors has a predecessor of single-seed value < 0, hence of rooted value < 0, so no hard site occurs on W1, Z_A, Z_B\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j94c5",
+  "at_utc": "20260919T013829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

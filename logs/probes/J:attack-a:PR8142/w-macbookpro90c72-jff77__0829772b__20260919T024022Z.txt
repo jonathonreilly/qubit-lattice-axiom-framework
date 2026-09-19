@@ -1,0 +1,8 @@
+menu |A|=6 triples=216
+t* in (4,5): ct(4)=-9 ct(5)=19
+rho in (6,7): cr(6)=-1 cr(7)=72
+sextic (1,2): s(1)=18 s(2)=-137
+sextic (6,7): s(6)=-3137 s(7)=10818
+declared triple (3, 1, 2) is in the positive octant
+declared triple (5, 2, 4) is in the positive octant
+SUMMARY: pattern has no purchase on this note — the six-axis menu has 6 unit axes and 216 triples, t* in (4,5), rho in (6,7), sextic roots in (1,2) and (6,7) by integer sign changes, and (3,1,2),(5,2,4) lie in the positive octant

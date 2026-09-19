@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8142",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block11-three-",
+ "worker": "w-macbookpro90c72-jff77",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8142/menu_and_locus_points_exist.py",
+ "seed": 85622,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0829772b",
+ "started_utc": "20260919T024022Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the six-axis menu has 6 unit axes and 216 triples, t* in (4,5), rho in (6,7), sextic roots in (1,2) and (6,7) by integer sign changes, and (3,1,2),(5,2,4) lie in the positive octant"
+ },
+ "review": "Six-axis menu, 216 triples, isolating intervals for t*/rho/sextic, and declared positive triples all exist; no defect",
+ "what": "PR #8142 ([physics-loop] admissibility-induced-law block11 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915; git show origin/physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915:<note>. Create probes/work/pr8142/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8142/<script>.py\"",
+ "stdout_sha256": "bf46f04456f6fffef96ffb1d7b4ffc74cf8c412afeccf3df25c28f8e1f92e86a",
+ "stdout_tail": "menu |A|=6 triples=216\nt* in (4,5): ct(4)=-9 ct(5)=19\nrho in (6,7): cr(6)=-1 cr(7)=72\nsextic (1,2): s(1)=18 s(2)=-137\nsextic (6,7): s(6)=-3137 s(7)=10818\ndeclared triple (3, 1, 2) is in the positive octant\ndeclared triple (5, 2, 4) is in the positive octant\nSUMMARY: pattern has no purchase on this note \u2014 the six-axis menu has 6 unit axes and 216 triples, t* in (4,5), rho in (6,7), sextic roots in (1,2) and (6,7) by integer sign changes, and (3,1,2),(5,2,4) lie in the positive octant\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jff77",
+  "at_utc": "20260919T024022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

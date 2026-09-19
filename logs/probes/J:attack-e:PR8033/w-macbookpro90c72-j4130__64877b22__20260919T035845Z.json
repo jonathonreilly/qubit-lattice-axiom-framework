@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8033",
+ "type": "judgment",
+ "lane": "finite-pw-confinement-block43-20260907",
+ "worker": "w-macbookpro90c72-j4130",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8033/no_sampled_evidence.py",
+ "seed": 90325,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64877b22",
+ "started_utc": "20260919T035845Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8033): Casimir floor Q=4 and geodesic length L are exact identities, not sampled never/always observations; pattern has no purchase"
+ },
+ "review": "Casimir floor Q=4 and geodesic length are exact identities with no Monte Carlo never/always claim, so the sampled-evidence pattern has no purchase",
+ "what": "PR #8033 ([physics-loop] finite-pw-confinement block43 conditional-sup): attack GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-pw-confinement-block43-20260907; git show origin/codex/finite-pw-confinement-block43-20260907:<note>. Create probes/work/pr8033/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8033/<script>.py\"",
+ "stdout_sha256": "f3378481d67d9d5e54212eb0e6dfc50ec5f08826919b8379d7549291feecb748",
+ "stdout_tail": "Q(1,0)=4 Q(0,0)=0\noccupied-link floor and Manhattan geodesics are exact, not sampled\nSUMMARY: SAMPLED EVIDENCE (PR #8033): Casimir floor Q=4 and geodesic length L are exact identities, not sampled never/always observations; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4130",
+  "at_utc": "20260919T035845Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

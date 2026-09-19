@@ -1,0 +1,2 @@
+equal-weights test: (2,2,2)=True (3,1,2)=False
+SUMMARY: pattern has no purchase on this note - the same equal-weight test holds at (2,2,2) and fails at (3,1,2)

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8142",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block11-three-",
+ "worker": "w-macbookpro90c72-je17c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8142/same_test_equal_weights.py",
+ "seed": 86890,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3009d3d2",
+ "started_utc": "20260919T030130Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same equal-weight test holds at (2,2,2) and fails at (3,1,2)"
+ },
+ "review": "Equal-weight test holds at (2,2,2) and fails at (3,1,2); pattern has no purchase",
+ "what": "PR #8142 ([physics-loop] admissibility-induced-law block11 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915; git show origin/physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915:<note>. Create probes/work/pr8142/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8142/<script>.py\"",
+ "stdout_sha256": "05223764125c00583d7ca7af4d529c9067323d81728a5d9e9d9dc7b0e376d98f",
+ "stdout_tail": "equal-weights test: (2,2,2)=True (3,1,2)=False\nSUMMARY: pattern has no purchase on this note - the same equal-weight test holds at (2,2,2) and fails at (3,1,2)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je17c",
+  "at_utc": "20260919T030130Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

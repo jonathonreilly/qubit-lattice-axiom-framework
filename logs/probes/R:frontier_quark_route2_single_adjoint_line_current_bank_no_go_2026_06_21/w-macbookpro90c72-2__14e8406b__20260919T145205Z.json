@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py",
+ "seed": 29525,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "14e8406b",
+ "started_utc": "20260919T145205Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "735098aabe8797289d864195b951e9568879f4db51d1ee49ef5df3fe001324dd",
+ "stdout_tail": "or dimension 0 comes from the rank 8 of the stacked 64x8 matrix, and commutant_dim = 1 from rank 63 of the assembled system. No single generator is shown on its own to exclude an invariant line.\nper_block: checked, and this is the class that carries the result -- the computed commutant is one-dimensional and scalar, which says the adjoint is a single irreducible block, so it admits no invariant sub-block of rank 1 and no invariant complement of rank 7, exactly the pattern a line selector would need. Honesty note on how that is executed: the printed rank check compares against the hardcoded set {0, 8}, which restates the consequence of the computed scalar commutant rather than enumerating projectors independently.\nlattice_wide: checked and not executed, and this is genuine absence rather than an omission -- the object under study is a fixed 8-dimensional internal representation at N_c = 3, with no volume, no site count and no large-N or continuum limit anywhere. The no-go certified here is representation-theoretic at that fixed rank, and the certificate is scoped accordingly: nothing whole-system is asserted.\n\nTOTAL: PASS=20 FAIL=0\nVERDICT: current-bank no-go.  The SU(3)-equivariant adjoint source bank has no invariant line and no rank-7 invariant complement projector; its commutant is scalar.  Therefore the single-adjoint-line selector isolated as conditional support requires a new non-invariant typed source datum, not merely the current F_adj/Rconn/Fierz/color-singlet bank.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T145206Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

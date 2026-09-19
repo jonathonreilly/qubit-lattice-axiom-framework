@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-lightcone-sphere",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 0.4 64 2500 1200 1",
+ "seed": 29289,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "14e8406b",
+ "started_utc": "20260919T144809Z",
+ "elapsed_s": 75.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=0.4 L=64 T=2500 plateau_|m|=0.0029 lowk_ratio=0.0601 seconds=75"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS. The symmetric light-cone event lattice in 3+1: the record at (t+1, x) formed from (t, x) and its six neighbours (t, x +- e_j). No drift; phi(k) = 1 - E(k)/7 with E the lattice Laplacian symbol, so the linear equal-time kernel is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k) (1 - E(k)/14)): the comparator's Green-function kernel 1/E(k) up to a bounded factor, under the formation reading. Memory table and kernel normalization by beta and L; the 2+1 version (2s) for contrast. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 26 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "01264d9710f760beb145d3dd125880be5f7342f6a12f39c7aedc6ff0676812f0",
+ "stdout_tail": "18\n        19  0.0160  +0.0160\n        26  0.0032  +0.0016\n        36  0.0027  +0.0027\n        50  0.0047  -0.0008\n        69  0.0038  -0.0017\n        96  0.0045  +0.0019\n       133  0.0016  +0.0004\n       184  0.0036  +0.0022\n       255  0.0017  +0.0010\n       354  0.0019  -0.0004\n       490  0.0022  +0.0001\n       679  0.0027  +0.0017\n       940  0.0050  -0.0049\n      1303  0.0015  +0.0010\n      1805  0.0037  -0.0029\n      2500  0.0068  -0.0064\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.0601 (n=122)\n   |k| in [0.3,0.6): 0.2279 (n=826)\n   |k| in [0.6,1.0): 0.5169 (n=3436)\n   |k| in [1.0,1.5): 0.8325 (n=10554)\n   |k| in [1.5,2.2): 1.0843 (n=32318)\n   |k| in [2.2,3.2): 1.2217 (n=97545)\n   |k| in [3.2,6.0): 1.2266 (n=117342)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.015474  +0.049824  0.311  +0.04982\n     2  +0.008230  +0.034850  0.236  +0.06970\n     3  +0.000984  +0.019013  0.052  +0.05704\n     4  +0.000306  +0.013732  0.022  +0.05493\n     6  +0.000026  +0.008019  0.003  +0.04811\n     8  -0.000017  +0.005285  -0.003  +0.04228\n    12  -0.000026  +0.002611  -0.010  +0.03133\n    16  -0.000003  +0.001324  -0.002  +0.02118\n    24  +0.000004  +0.000191  0.020  +0.00459\n    32  +0.000005  -0.000096  -0.055  -0.00308\nSUMMARY: dim=3 menu=sphere beta=0.4 L=64 T=2500 plateau_|m|=0.0029 lowk_ratio=0.0601 seconds=75\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T144924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

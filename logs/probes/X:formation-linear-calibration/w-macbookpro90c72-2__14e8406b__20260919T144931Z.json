@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-linear-calibration",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 2 linear 6 128 3000 1000 1",
+ "seed": 29371,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "14e8406b",
+ "started_utc": "20260919T144931Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=2 menu=linear beta=6.0 L=128 T=3000 plateau_|m|=nan lowk_ratio=0.9436 seconds=1"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Calibration of the estimator on the Gaussian gain-one model (expected shell ratios 1 within sampling error) in 2+1 and 3+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 3 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "d0fd8db2d10b5bc6659b8d78d2db998de76ee3f218842b75167d5167acd9f764",
+ "stdout_tail": "dim=2 (event lattice Z^3) menu=linear beta=6.0 L=128 T=3000 T0=1000 seed=1; predecessors n=3; sigma^2=0.052469\nmemory table: level, |m|, m.e0\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.9436 (n=120)\n   |k| in [0.3,0.6): 0.9927 (n=360)\n   |k| in [0.6,1.0): 1.0051 (n=824)\n   |k| in [1.0,1.5): 1.0003 (n=1636)\n   |k| in [1.5,2.2): 1.0009 (n=3368)\n   |k| in [2.2,3.2): 1.0000 (n=6946)\n   |k| in [3.2,6.0): 1.0005 (n=3129)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio\n     1  +0.123201  +0.150350  0.819\n     2  +0.093059  +0.120138  0.775\n     3  +0.075612  +0.102486  0.738\n     4  +0.063520  +0.090020  0.706\n     6  +0.047043  +0.072517  0.649\n     8  +0.035882  +0.060168  0.596\n    12  +0.021499  +0.042958  0.500\n    16  +0.012932  +0.031013  0.417\n    24  +0.003800  +0.014958  0.254\n    32  -0.001632  +0.004636  -0.352\nSUMMARY: dim=2 menu=linear beta=6.0 L=128 T=3000 plateau_|m|=nan lowk_ratio=0.9436 seconds=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T144933Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

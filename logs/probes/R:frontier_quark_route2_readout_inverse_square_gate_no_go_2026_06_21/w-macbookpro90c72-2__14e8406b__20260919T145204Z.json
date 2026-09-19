@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_readout_inverse_square_gate_no_go_2026_06_21.py",
+ "seed": 29524,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "14e8406b",
+ "started_utc": "20260919T145204Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=61, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "70fdec5895de4df205b28d456debe1508c06dfa5ca43e45da65cac6ac35da352",
+ "stdout_tail": "/2, and the whole inverse-square value under test is nothing but a power of their ratio. Resolving the two modes separately is what makes the gate visible: one inverse power lands rho_E = 3/2 while two land rho_E = 21/4, so the exponent p is a genuine free choice that the bank does not fix.\nper_block: checked -- the six constraint families are each carried as a separate root and each is separately shown to have no typed path to rho_E_21_4: exact readout family, Schur projector weights, quadratic O_h invariants, registration/idempotency, positivity, and factor rigidity. Honesty note on the executed evidence: the free-direction content of three of those families is imported as quoted marker strings from the two named bank runners and from the rigidity note; it is asserted here by citation, not recomputed inside this file.\nlattice_wide: checked and not executed -- no volume, no thermodynamic limit and no extensive quantity exists in this runner, so there is nothing global to take a limit of. The nearest whole-bank statement it does close is that the admissible set remains a one-parameter line: across the 5 named bank files the strongest executed restriction on rho_E is the single one-sided bound rho_E > -6, which leaves both 3/2 and 21/4 alive, and that persistent freedom is the no-go itself.\n\nTOTAL: PASS=61, FAIL=0\nVERDICT: bounded current-bank no-go. The bank contains the exact inverse-square value 9/4, but no readout-only coefficient theorem bridges that value to rho_E=21/4.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T145204Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

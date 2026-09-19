@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_slice_semigroup_coordinate_gate_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_quark_route2_slice_semigroup_coordinate_gate_2026_06_21.py",
+ "seed": 29526,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "14e8406b",
+ "started_utc": "20260919T145206Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "136f459935511f00df0836d36e2f7db87863daa1529d331e4cbc1058d42fd729",
+ "stdout_tail": "e E and T channels enter only as the two named endpoint ratios q_E and q_T, and the entire test is whether a coordinate law can carry q_T into q_E. No channel amplitude is formed, and in particular no eigenmode of the slice generator Lambda_R is constructed anywhere, so the semigroup's own mode content is left completely untouched by this evidence.\nper_block: checked and not executed -- there is no block decomposition in this file to resolve. Lambda_R is never decomposed, the readout row is never split, and the three candidate coordinate laws are alternatives to one another rather than blocks of one object, so reporting a block-resolved result would misdescribe what was run.\nlattice_wide: checked and not executed -- no volume and no lattice appear, and the one direction that could carry a global or asymptotic statement, the semigroup time t in exp(-t Lambda_R), is never integrated or evaluated here; its law is taken from the parent note by quoted marker only. The gate is closed at the level of finite exact inequalities between fixed rationals, and nothing beyond that scope is certified.\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\nTOTAL: PASS=29, FAIL=0\nVERDICT: no-go / semigroup-coordinate boundary. Raw q scaling by 9/4 gives the endpoint, but it is not a semigroup coordinate law; semigroup-natural generator coordinates miss q_E=15/8.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T145206Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

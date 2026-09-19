@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-no-waves-under-positive-formation-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j153a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/no-waves-under-positive-formation/referee_w-jonathonsmac4f50-j153a/check.py",
+ "seed": 92181,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5b530c8f",
+ "started_utc": "20260919T042941Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 1 - its equality set is misread: (a) |lambda| = 1 at k != 0 also for supports in a proper sublattice, not only 'F in a coset of a hyperplane k.z = const' (F = {+-e1,+-e2}: lambda(pi,pi) = -1; F = {0,2}: lambda(pi) = 1); (b) inside the collinear case with the support's hyperplane off the origin the mode is an exact wave under positive weights (F = {e1,e2}: lambda(kappa,kappa) = e^(i kappa), |lambda| = 1, arg = |k|/sqrt 2), so the HIT's 'waves |lambda|=1 with arg=c|k| require dropping positivity or adding a conserved unitary structure' and 'no propagating wave under positivity' are false (the attempt's exception F = {0,e1} is the static case); the core Jensen bound, the expansion (Hessian -2 Cov), the 7-stencil 3/7, -1/7, -4/7, drift i/4 and |2-e^(ik)| = 3 at pi hold; not covered: several earlier levels (true here numerically) and the wave-giving change (a second-level weight -1 gives |lambda| = 1, arg = c|k|; the attempt's negative example is amplification)"
+ },
+ "review": "Jensen bound (max |lambda| = 1 over 400 random positive stencils), gradient i v and Hessian -2 Cov (exact, 12 stencils) and the numbers 3/7, -k1^2/7, -4/7, i/4, 9 all re-derive, but step 1's equality set is misread: sublattice supports also reach |lambda| = 1 (lambda(pi,pi) = -1 for {+-e1,+-e2}) and a collinear support off the origin is an exact wave under positive weights (lambda(kappa,kappa) = e^(i kappa) for {e1,e2}), contradicting the HIT's 'waves require dropping positivity'; several levels and the wave-giving change (leapfrog weight -1: |lambda| = 1, arg = c|k|) not covered.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:no-waves-under-positive-formation:a2/; its files are probes/work/derive/no-waves-under-positive-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/no-waves-under-positive-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "80bde639c700a2b10d7836b52917b86874638644984f3f93ce504a8e7d6ca46d",
+ "stdout_tail": "^(i kappa) = 0 (so |lambda| = 1, arg lambda = kappa = |k|/sqrt 2 along (1,1)); the attempt's F = {0, e1}: lambda(0, kappa) - 1 = 0 (static)\nR3 7-stencil: lambda(pi,0,0) = 3/7; axis series 1 - k1**2/7; Hessian of |lambda|^2 = -4/7; drift of (1+sum e^(ik_j))/4: I/4; |2 - e^(ik)|^2 = 5 - 4*cos(k)\nR4 (a) 300 random positive two-/three-level models: max |root| = 0.999999999416; (b) leapfrog: max ||lambda| - 1| for c^2 in {0.1, 0.25, 0.5} = 4.44e-16 (unit circle for c^2 <= 1/2); arg lambda = c*s + O(|k|^3)\nSUMMARY: fails at step 1 - its equality set is misread: (a) |lambda| = 1 at k != 0 also for supports in a proper sublattice, not only 'F in a coset of a hyperplane k.z = const' (F = {+-e1,+-e2}: lambda(pi,pi) = -1; F = {0,2}: lambda(pi) = 1); (b) inside the collinear case with the support's hyperplane off the origin the mode is an exact wave under positive weights (F = {e1,e2}: lambda(kappa,kappa) = e^(i kappa), |lambda| = 1, arg = |k|/sqrt 2), so the HIT's 'waves |lambda|=1 with arg=c|k| require dropping positivity or adding a conserved unitary structure' and 'no propagating wave under positivity' are false (the attempt's exception F = {0,e1} is the static case); the core Jensen bound, the expansion (Hessian -2 Cov), the 7-stencil 3/7, -1/7, -4/7, drift i/4 and |2-e^(ik)| = 3 at pi hold; not covered: several earlier levels (true here numerically) and the wave-giving change (a second-level weight -1 gives |lambda| = 1, arg = c|k|; the attempt's negative example is amplification)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j153a",
+  "at_utc": "20260919T042952Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_REDUCED_A2_SPECTRAL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j9d43",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_SPECTRA/box_table_converged_rows_and_falsifiers.py",
+ "seed": 23152,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8b93ea31",
+ "started_utc": "20260919T130552Z",
+ "elapsed_s": 47.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "T box rows reproduced from walk-sum coefficients: max deviation from the printed six-digit rows 5.0e-07; box beta*(c_J - c_D) = 1.6343, 1.6499, 1.6591, 1.7243, 1.8167 at beta = 15, 30, 60, 120, 180",
+   "C converged (two radii agree to 7.7e-08 in beta*margin): c_J - c_D = 0.108950, 0.054995, 0.027622, 0.013840, 0.009233, 0.006927, 0.003465 at beta = 15, 30, 60, 120, 180, 240, 480; beta*(c_J - c_D) = 1.6343, 1.6499, 1.6573, 1.6608, 1.6620, 1.6625, 1.6634; c_D/c_J = 0.86573, 0.93409, 0.96741, 0.98380, 0.98922, 0.99193, 0.99597; box vs converged beta*margin at beta = 120, 180: 1.7243 vs 1.6608, 1.8167 vs 1.6620",
+   "F falsifiers at beta = 30: J normalization /6 -> c_J - c_D +0.054995, /3 -> +0.074948, /12 -> +0.040252 (comparison changes: True); wrong r' without the -r c'00/c00 term gives c_D 0.779367 = the exact 0.779367 (that term is exactly invisible in Delta_D, so this wrong form does not change c_D), while a fundamental-neighbours-only c' gives c_D 0.389684 (visible: True); exact r' vs d r/d beta rel dev 3.3e-05",
+   "hits=0; runtime 47s"
+  ]
+ },
+ "review": "Output matches the task. With walk-sum Wilson coefficients from the character recurrence (disjoint from the runner's Bessel determinants), the note's five table rows reproduce on its own box regions to 5e-7. On radius-converged elliptical regions (two radii agree to 8e-8), c_J - c_D = 0.108950, 0.054995, 0.027622, 0.013840, 0.009233, 0.006927, 0.003465 at beta = 15, 30, 60, 120, 180, 240, 480. These are positive and shrinking, with c_D/c_J rising to 0.99597, so every trend claim holds. But converged beta*(c_J - c_D) is flat at 1.634-1.663, while the printed box rows rise 1.634 -> 1.817 (1.7243 vs 1.6608 at beta = 120, 1.8167 vs 1.6620 at beta = 180), so the rising part of the displayed products is box truncation. Of the two falsifiers: J/3 and J/12 change the margin to +0.0749 and +0.0403; the exact r' matches d r/d beta to 3e-5; dropping the -r c'00/c00 term leaves c_D exactly unchanged, because adding alpha*r to r' shifts both b_i/lambda_i by alpha, so that wrong form is invisible, while a fundamental-neighbour-only c' moves c_D to 0.3897. No stated fact of the note fails.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_SPECTRAL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_SPECTRA/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_SPECTRA/<script>.py\"",
+ "stdout_sha256": "3306276a7b64f20a4c2c7b30750f8915b9518dcd782f4322a1effccdc5988f36",
+ "stdout_tail": "6625, 1.6634; c_D/c_J = 0.86573, 0.93409, 0.96741, 0.98380, 0.98922, 0.99193, 0.99597; box vs converged beta*margin at beta = 120, 180: 1.7243 vs 1.6608, 1.8167 vs 1.6620\n==============================================================================\nF  the note's falsifiers at beta = 30 (converged region)\n  variant     /6 (note): c_J 0.834362, c_D 0.779367, c_J - c_D +0.054995\n  variant            /3: c_J 1.098961, c_D 1.024013, c_J - c_D +0.074948\n  variant           /12: c_J 0.601377, c_D 0.561125, c_J - c_D +0.040252\n  variant      wrong r': c_J 0.834362, c_D 0.779367, c_J - c_D +0.054995\n  variant  fund-only r': c_J 0.834362, c_D 0.389684, c_J - c_D +0.444679\n  exact recurrence r' vs central difference of r(beta) (h = 1/4): max rel dev 3.34e-05 (O(h^2) difference error)\n  wrong r' without -r c'00/c00: c_D change 2.2e-14 (exactly invariant: adding alpha r to r' shifts both b_i/lambda_i by alpha); fundamental-neighbours-only c': c_D 0.389684 (visible: True)\nSUMMARY: F falsifiers at beta = 30: J normalization /6 -> c_J - c_D +0.054995, /3 -> +0.074948, /12 -> +0.040252 (comparison changes: True); wrong r' without the -r c'00/c00 term gives c_D 0.779367 = the exact 0.779367 (that term is exactly invisible in Delta_D, so this wrong form does not change c_D), while a fundamental-neighbours-only c' gives c_D 0.389684 (visible: True); exact r' vs d r/d beta rel dev 3.3e-05\n==============================================================================\nSUMMARY: hits=0; runtime 47s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9d43",
+  "at_utc": "20260919T130650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

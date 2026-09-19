@@ -1,0 +1,37 @@
+==============================================================================
+T  the note's rows on its own box regions
+    (same box with the full-lattice exact r': c_D 0.702465, margin 0.108950)
+  beta= 15 box [0,16]^2: c_J 0.811415 (note 0.811415), c_D 0.702465 (note 0.702465), margin 0.108950 (note 0.10895), c_D/c_J 0.86573, l1/l0 0.21634
+    (same box with the full-lattice exact r': c_D 0.779367, margin 0.054996)
+  beta= 30 box [0,21]^2: c_J 0.834363 (note 0.834363), c_D 0.779367 (note 0.779367), margin 0.054996 (note 0.054996), c_D/c_J 0.93409, l1/l0 0.20481
+    (same box with the full-lattice exact r': c_D 0.819819, margin 0.027651)
+  beta= 60 box [0,28]^2: c_J 0.847469 (note 0.847469), c_D 0.819819 (note 0.819819), margin 0.027651 (note 0.027651), c_D/c_J 0.96737, l1/l0 0.19925
+    (same box with the full-lattice exact r': c_D 0.840332, margin 0.014369)
+  beta=120 box [0,37]^2: c_J 0.854701 (note 0.854701), c_D 0.840331 (note 0.840331), margin 0.014369 (note 0.014369), c_D/c_J 0.98319, l1/l0 0.19650
+    (same box with the full-lattice exact r': c_D 0.847168, margin 0.010092)
+  beta=180 box [0,45]^2: c_J 0.857260 (note 0.85726), c_D 0.847168 (note 0.847168), margin 0.010093 (note 0.010093), c_D/c_J 0.98823, l1/l0 0.19559
+  max deviation from the printed rows (six-digit entries; ratios scaled by 1/10): 5.0e-07
+SUMMARY: T box rows reproduced from walk-sum coefficients: max deviation from the printed six-digit rows 5.0e-07; box beta*(c_J - c_D) = 1.6343, 1.6499, 1.6591, 1.7243, 1.8167 at beta = 15, 30, 60, 120, 180
+==============================================================================
+C  converged rows (elliptical regions, symmetric sector, two radii)
+  beta= 15: R=27.4 (425 sites): c_J 0.81141544 c_D 0.70246498 margin 0.10895046; R=31.7 (576): margin 0.10895046; beta*margin 1.634257; c_D/c_J 0.865728; l1/l0 0.216336
+  beta= 30: R=35.4 (722 sites): c_J 0.83436239 c_D 0.77936737 margin 0.05499503; R=40.7 (959): margin 0.05499503; beta*margin 1.649851; c_D/c_J 0.934087; l1/l0 0.204813
+  beta= 60: R=46.7 (1272 sites): c_J 0.84745358 c_D 0.81983171 margin 0.02762187; R=53.4 (1670): margin 0.02762187; beta*margin 1.657312; c_D/c_J 0.967406; l1/l0 0.199245
+  beta=120: R=62.8 (2322 sites): c_J 0.85441568 c_D 0.84057543 margin 0.01384025; R=71.3 (3007): margin 0.01384025; beta*margin 1.660830; c_D/c_J 0.983801; l1/l0 0.196510
+  beta=180: R=75.1 (3335 sites): c_J 0.85679881 c_D 0.84756567 margin 0.00923314; R=85.1 (4299): margin 0.00923314; beta*margin 1.661965; c_D/c_J 0.989224; l1/l0 0.195605
+  beta=240: R=85.5 (4331 sites): c_J 0.85800214 c_D 0.85107495 margin 0.00692718; R=96.8 (5561): margin 0.00692718; beta*margin 1.662524; c_D/c_J 0.991926; l1/l0 0.195154
+  beta=480: R=117.5 (8235 sites): c_J 0.85982186 c_D 0.85635654 margin 0.00346532; R=132.7 (10516): margin 0.00346532; beta*margin 1.663353; c_D/c_J 0.995970; l1/l0 0.194479
+  converged: margins positive True, shrinking True, c_D/c_J rising True, beta*margin max/min 1.0178; radius convergence of beta*margin 7.7e-08
+SUMMARY: C converged (two radii agree to 7.7e-08 in beta*margin): c_J - c_D = 0.108950, 0.054995, 0.027622, 0.013840, 0.009233, 0.006927, 0.003465 at beta = 15, 30, 60, 120, 180, 240, 480; beta*(c_J - c_D) = 1.6343, 1.6499, 1.6573, 1.6608, 1.6620, 1.6625, 1.6634; c_D/c_J = 0.86573, 0.93409, 0.96741, 0.98380, 0.98922, 0.99193, 0.99597; box vs converged beta*margin at beta = 120, 180: 1.7243 vs 1.6608, 1.8167 vs 1.6620
+==============================================================================
+F  the note's falsifiers at beta = 30 (converged region)
+  variant     /6 (note): c_J 0.834362, c_D 0.779367, c_J - c_D +0.054995
+  variant            /3: c_J 1.098961, c_D 1.024013, c_J - c_D +0.074948
+  variant           /12: c_J 0.601377, c_D 0.561125, c_J - c_D +0.040252
+  variant      wrong r': c_J 0.834362, c_D 0.779367, c_J - c_D +0.054995
+  variant  fund-only r': c_J 0.834362, c_D 0.389684, c_J - c_D +0.444679
+  exact recurrence r' vs central difference of r(beta) (h = 1/4): max rel dev 3.34e-05 (O(h^2) difference error)
+  wrong r' without -r c'00/c00: c_D change 2.2e-14 (exactly invariant: adding alpha r to r' shifts both b_i/lambda_i by alpha); fundamental-neighbours-only c': c_D 0.389684 (visible: True)
+SUMMARY: F falsifiers at beta = 30: J normalization /6 -> c_J - c_D +0.054995, /3 -> +0.074948, /12 -> +0.040252 (comparison changes: True); wrong r' without the -r c'00/c00 term gives c_D 0.779367 = the exact 0.779367 (that term is exactly invisible in Delta_D, so this wrong form does not change c_D), while a fundamental-neighbours-only c' gives c_D 0.389684 (visible: True); exact r' vs d r/d beta rel dev 3.3e-05
+==============================================================================
+SUMMARY: hits=0; runtime 47s

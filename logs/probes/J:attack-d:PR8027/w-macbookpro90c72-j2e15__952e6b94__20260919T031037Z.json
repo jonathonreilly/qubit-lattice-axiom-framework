@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8027",
+ "type": "judgment",
+ "lane": "static-geodesic-block37-20260907",
+ "worker": "w-macbookpro90c72-j2e15",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8027/rho_rs_formula.py",
+ "seed": 87437,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "952e6b94",
+ "started_utc": "20260919T031037Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "QUANTIFIER SCOPE on rho_(r,s)=2 sum_k cos(pi k/(L+1)) (PR #8027): examples (1,1)=1, (2,1)=sqrt(2), (2,2)=sqrt(5), zeros on axes, and r<->s all hold for r,s in 0..4; the forall holds as written"
+ },
+ "review": "rho(r,s) examples 1, sqrt2, sqrt5 and particle-hole hold on r,s=0..4; the stated formula holds.",
+ "what": "PR #8027 ([physics-loop] static-geodesic block37 conditional-support): attack GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-geodesic-block37-20260907; git show origin/codex/static-geodesic-block37-20260907:<note>. Create probes/work/pr8027/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8027/<script>.py\"",
+ "stdout_sha256": "6d63da6d000c3978f1c063e1977079e29193691d0e058c0517d6961a2ce91183",
+ "stdout_tail": "rho(1,1)=1 claimed=1 ok=True\nrho(2,1)=sqrt(2) claimed=sqrt(2) ok=True\nrho(2,2)=sqrt(5) claimed=sqrt(5) ok=True\nrho(0,3)=0 claimed=0 ok=True\nrho(5,0)=0 claimed=0 ok=True\nSUMMARY: QUANTIFIER SCOPE on rho_(r,s)=2 sum_k cos(pi k/(L+1)) (PR #8027): examples (1,1)=1, (2,1)=sqrt(2), (2,2)=sqrt(5), zeros on axes, and r<->s all hold for r,s in 0..4; the forall holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2e15",
+  "at_utc": "20260919T031038Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

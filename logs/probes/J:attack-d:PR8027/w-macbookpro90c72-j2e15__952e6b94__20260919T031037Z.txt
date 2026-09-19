@@ -1,0 +1,6 @@
+rho(1,1)=1 claimed=1 ok=True
+rho(2,1)=sqrt(2) claimed=sqrt(2) ok=True
+rho(2,2)=sqrt(5) claimed=sqrt(5) ok=True
+rho(0,3)=0 claimed=0 ok=True
+rho(5,0)=0 claimed=0 ok=True
+SUMMARY: QUANTIFIER SCOPE on rho_(r,s)=2 sum_k cos(pi k/(L+1)) (PR #8027): examples (1,1)=1, (2,1)=sqrt(2), (2,2)=sqrt(5), zeros on axes, and r<->s all hold for r,s in 0..4; the forall holds as written

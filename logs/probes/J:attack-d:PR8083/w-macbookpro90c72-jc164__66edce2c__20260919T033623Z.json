@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8083",
+ "type": "judgment",
+ "lane": "native-quartic-ward-20260910",
+ "worker": "w-macbookpro90c72-jc164",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8083/quantifier_quartic_envelope.py",
+ "seed": 88983,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "66edce2c",
+ "started_utc": "20260919T033623Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: Q_{t,u}(x)>=x^{-2} holds for all 15 schedule pairs and tested x>=\u03b4=1/4"
+ },
+ "review": "Q_{t,u}(x)>=x^{-2} on all 15 schedule pairs and tested x>=1/4; pattern has no purchase",
+ "what": "PR #8083 ([physics-loop] Quartic Ward error bounds (conditional-suppor): attack NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-quartic-ward-20260910; git show origin/codex/native-quartic-ward-20260910:<note>. Create probes/work/pr8083/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8083/<script>.py\"",
+ "stdout_sha256": "ff37572a7b8a7e0efeadf8e9959891024143a09afa0d7ca9408ec5b2ea590e25",
+ "stdout_tail": "pair (1, 1): Q>=1/x^2 on tested x>=\u03b4: True\npair (1, 2): Q>=1/x^2 on tested x>=\u03b4: True\npair (1, 4): Q>=1/x^2 on tested x>=\u03b4: True\npair (1, 8): Q>=1/x^2 on tested x>=\u03b4: True\npair (1, 16): Q>=1/x^2 on tested x>=\u03b4: True\npair (2, 2): Q>=1/x^2 on tested x>=\u03b4: True\npair (2, 4): Q>=1/x^2 on tested x>=\u03b4: True\npair (2, 8): Q>=1/x^2 on tested x>=\u03b4: True\npair (2, 16): Q>=1/x^2 on tested x>=\u03b4: True\npair (4, 4): Q>=1/x^2 on tested x>=\u03b4: True\npair (4, 8): Q>=1/x^2 on tested x>=\u03b4: True\npair (4, 16): Q>=1/x^2 on tested x>=\u03b4: True\npair (8, 8): Q>=1/x^2 on tested x>=\u03b4: True\npair (8, 16): Q>=1/x^2 on tested x>=\u03b4: True\npair (16, 16): Q>=1/x^2 on tested x>=\u03b4: True\nSUMMARY: pattern has no purchase on this note: Q_{t,u}(x)>=x^{-2} holds for all 15 schedule pairs and tested x>=\u03b4=1/4\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc164",
+  "at_utc": "20260919T033624Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

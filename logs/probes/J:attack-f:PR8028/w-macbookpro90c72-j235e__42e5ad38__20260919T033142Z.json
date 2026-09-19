@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8028",
+ "type": "judgment",
+ "lane": "static-uniform-block38-20260907",
+ "worker": "w-macbookpro90c72-j235e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8028/normalization_4a_cs3.py",
+ "seed": 88702,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42e5ad38",
+ "started_utc": "20260919T033142Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: 4/a kinetic extra, ReTr/3, Casimir 8/3 and CS factor 3 from dim 9 recompute as written"
+ },
+ "review": "4/a, ReTr/3, Casimir 8/3 and CS factor 3 recompute as written; pattern has no purchase",
+ "what": "PR #8028 ([physics-loop] static-uniform block38 conditional-support): attack GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-uniform-block38-20260907; git show origin/codex/static-uniform-block38-20260907:<note>. Create probes/work/pr8028/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8028/<script>.py\"",
+ "stdout_sha256": "fe7e6a604c7baaa5113b12d8fa4ff6a90fde75c7763fb9cfe76c92ed03781fbb",
+ "stdout_tail": "(3/2)*(8/3)=4 (4/a per link)\nReTr/3, Casimir 8/3, dim E=9, CS 3: True\nSUMMARY: pattern has no purchase on this note: 4/a kinetic extra, ReTr/3, Casimir 8/3 and CS factor 3 from dim 9 recompute as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j235e",
+  "at_utc": "20260919T033142Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

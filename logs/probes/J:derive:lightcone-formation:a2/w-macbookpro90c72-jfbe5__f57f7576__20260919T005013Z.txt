@@ -1,0 +1,113 @@
+CHECK PASS: E1.1 1d L=4 integer bilinear  47=47
+CHECK PASS: E1.2 1d L=4 vector bilinear  84=84
+CHECK PASS: E1.3 3d L=4 7-stencil bilinear  11344=11344
+CHECK PASS: E1.4 7-stencil is an undirected relation  n=448
+CHECK PASS: E1.5 2d L=2 (degenerate ±e_j) bilinear  22=22
+CHECK PASS: E2.1 P rows sum to 1 (Ising 4-cycle, t=2)  bad=0
+CHECK PASS: E2.2 detailed balance pi(s)P(s,s')=pi(s')P(s',s)  bad=0
+CHECK PASS: E2.3 pi is stationary
+CHECK PASS: E2.4 detailed balance t=3  bad=0
+CHECK PASS: E3.1 backward 2-stencil bilinear fails  32!=24
+CHECK PASS: E3.2 backward product-form pi fails DB on an explicit pair  ((-1, -1, -1, 1), (-1, -1, 1, -1))
+CHECK PASS: E4.1 phi = 1 - E/7 identically
+CHECK PASS: E4.2 1-phi^2 = (2E/7)(1-E/14)  E*(14 - E)/49
+CHECK PASS: E4.3 S = 7 sigma^2 / (2 E (1-E/14))
+CHECK PASS: E4.4 zone-corner phi = -5/7
+CHECK PASS: E4.5 zone-corner 1-phi^2 = 24/49
+CHECK PASS: E4.6 pref at E->0 is 7/2
+CHECK PASS: E4.7 pref at E=12 is 49/2
+CHECK PASS: E4.8 pref increasing on (0,12]
+CHECK PASS: E4.9 even eigenvalue of Delta_Gamma is E
+CHECK PASS: E4.10 odd eigenvalue of Delta_Gamma is 14-E
+CHECK PASS: E4.11 14-E in [2,14) for E in (0,12]
+CHECK PASS: E4.12 1/E + 1/(14-E) = 14/(E(14-E)) = 1/(E(1-E/14))
+CHECK PASS: E4.13 E/(14-E) at 12 equals 6
+CHECK PASS: E4.14 E/(14-E) increasing so max=6
+CHECK PASS: E4.15 1/E + 1/(14-E) <= 7/E on (0,12]
+CHECK PASS: E4.16 large-beta linear S matches 1/(2 beta E (1-E/14))
+CHECK PASS: E4.17 FSS upper 1/2beta (1/E+1/(14-E)) equals that
+CHECK PASS: E5.1 |N(0)|=7
+CHECK PASS: E5.2 |N(0) cap N(0)|=7
+CHECK PASS: E5.3 NN |N(0) cap N(e1)|=2
+CHECK PASS: E5.4 axis-NNN |N(0) cap N(2 e1)|=1
+CHECK PASS: E5.5 face-diagonal |N(0) cap N(e1+e2)|=2
+CHECK PASS: E5.6 space-diagonal |N(0) cap N(e1+e2+e3)|=0
+CHECK PASS: E5.7 face-diagonal partner is not the bond-plane mirror
+CHECK PASS: E5.8 stencil multiplier = 7-E
+CHECK PASS: E6.1 spatial-grouped M=[[0,I],[I,0]] eigs {1:3, -1:3}
+CHECK PASS: E6.2 M is not PSD (negative eigs)
+CHECK PASS: E6.3 a single Heisenberg bond s·s' has 3 nonnegative eigenvalues of the 6x6 pairing
+CHECK PASS: E7.1 u(0)=0
+CHECK PASS: E7.2 u' = k(k cosh k - sinh k)
+CHECK PASS: E7.3 (k cosh-sinh)' = k sinh >= 0
+CHECK PASS: E7.4 p series: k^0..k^5 vanish  34*k**14/8513505 + 4*k**12/31185 + 13*k**10/4725 + 11*k**8/315 + k**6/5
+CHECK PASS: E7.5 p series k^6..k^15 nonnegative  34*k**14/8513505 + 4*k**12/31185 + 13*k**10/4725 + 11*k**8/315 + k**6/5
+CHECK PASS: E7.6 closed coeff m=2 is 0
+CHECK PASS: E7.7 closed coeff m=3 is positive
+CHECK PASS: E7.8 closed coeff m=4 is positive
+CHECK PASS: E7.9 series k^6 matches closed m=3
+CHECK PASS: E7.10 series k^8 matches closed m=4
+CHECK PASS: E7.11 A'(0)=1/3
+CHECK PASS: E7.12 A(k)/k at 0 is 1/3
+CHECK PASS: E7.13 mean-field beta_c = 3/7
+CHECK PASS: E8.1 L s^1 = s^3
+CHECK PASS: E8.2 L s^3 = -s^1
+CHECK PASS: E8.3 L s^2 = 0
+CHECK PASS: E8.4 L_s (s·t) = e2·(s x t)
+CHECK PASS: E8.5 single-bond second derivative  (s1*t1 + s3*t3)*(cbx*cx - cbx*cy - cby*cx + cby*cy)
+CHECK PASS: E8.6 ∫ L(s^1) = ∫ s^3 = 0 and ∫ L(s^3)=0 by oddness under s->-s and under axis swap
+CHECK PASS: E9 cubic eigenfunction k=(1, 0, 0) E=2  bad=0
+CHECK PASS: E9 Gamma even k=(1, 0, 0)  bad=0
+CHECK PASS: E9 Gamma odd k=(1, 0, 0) lam=12  bad=0
+CHECK PASS: E9 cubic gradient-sum identity k=(1, 0, 0)
+CHECK PASS: E9 Gamma even sum_edges (d psi)^2 = 2 E sum_x psi^2 k=(1, 0, 0)  gsG=128, 2E sumpsi2=128
+CHECK PASS: E9 cubic eigenfunction k=(1, 1, 0) E=4  bad=0
+CHECK PASS: E9 Gamma even k=(1, 1, 0)  bad=0
+CHECK PASS: E9 Gamma odd k=(1, 1, 0) lam=10  bad=0
+CHECK PASS: E9 cubic gradient-sum identity k=(1, 1, 0)
+CHECK PASS: E9 Gamma even sum_edges (d psi)^2 = 2 E sum_x psi^2 k=(1, 1, 0)  gsG=256, 2E sumpsi2=256
+CHECK PASS: E9 cubic eigenfunction k=(2, 0, 0) E=4  bad=0
+CHECK PASS: E9 Gamma even k=(2, 0, 0)  bad=0
+CHECK PASS: E9 Gamma odd k=(2, 0, 0) lam=10  bad=0
+CHECK PASS: E9 cubic gradient-sum identity k=(2, 0, 0)
+CHECK PASS: E9 Gamma even sum_edges (d psi)^2 = 2 E sum_x psi^2 k=(2, 0, 0)  gsG=512, 2E sumpsi2=512
+CHECK PASS: E9 cubic eigenfunction k=(1, 1, 1) E=6  bad=0
+CHECK PASS: E9 Gamma even k=(1, 1, 1)  bad=0
+CHECK PASS: E9 Gamma odd k=(1, 1, 1) lam=8  bad=0
+CHECK PASS: E9 cubic gradient-sum identity k=(1, 1, 1)
+CHECK PASS: E9 Gamma even sum_edges (d psi)^2 = 2 E sum_x psi^2 k=(1, 1, 1)  gsG=384, 2E sumpsi2=384
+CHECK PASS: E10.1 (1-cos pi)/pi^2 = 2/pi^2
+CHECK PASS: E10.2 num'' = -u sin u
+CHECK PASS: E10.3 num'(0)=0
+CHECK PASS: E10.4 num(0)=0
+CHECK PASS: E10.5 75*(22/7)^2 < 11664 so beta_* < 21/10  36300 < 571536
+CHECK PASS: E10.6 block19 75 pi^2 < 75*(22/7)^2 = 36300/49 < 784*49? skip numeric
+CHECK PASS: E10.7 14-E >= 2 on the Brillouin zone so 1/(14-E)<=1/2
+CHECK PASS: E10.8 beta_* = 3*sqrt(3)*pi/16 + 3/4 > 3/4
+CHECK PASS: E10.9 1/7 < 3/7 < 3/4 < beta_*
+CHECK PASS: E11.1 spatial Gram of pi is symmetric
+CHECK PASS: E11.2 spatial Gram of pi is PSD (min eig >= 0) on the 4-cycle  eigs={17690625/4096: 1, 18330625/8192 - 625*sqrt(812248609)/8192: 1, 625*sqrt(812248609)/8192 + 18330625/8192: 1, 0: 1}
+CHECK PASS: E11.3 joint layer-swap Gram is symmetric
+CHECK PASS: E11.4 joint layer-swap Gram min eig >= 0 (40-dec)  min=0.04803319045635539200037919977637887417458
+CHECK PASS: E11.5 theta_G is an involution
+CHECK PASS: E11.6 theta_G is a graph automorphism of 1d Gamma
+CHECK PASS: E11.7 theta_B o theta_A restores layers
+CHECK PASS: E12.1 |d r(+1)/dS| = (b/2) sech^2(b S) <= b/2
+CHECK PASS: E12.2 Ising PCA Dobrushin sum <= 7 beta; uniqueness for beta<1/7
+CHECK PASS: E12.3 |s-m|^2 expectation identity: 1-|m|^2
+CHECK PASS: E13.1 log(sinh k / k) = k^2/6 + O(k^4)  k**6/2835 - k**4/180 + k**2/6
+CHECK PASS: E13.2 k^4 coefficient is -1/180  k**6/2835 - k**4/180 + k**2/6
+CHECK PASS: E13.3 static vs formation: coupling O(beta) NN vs O(beta^2) range-sqrt(2) at small beta
+CHECK PASS: E14 Rodrigues vs integral ell=0
+CHECK PASS: E14 integrand (1-t^2)^0 e^{beta t} > 0 on (-1,1)
+CHECK PASS: E14 Rodrigues vs integral ell=1
+CHECK PASS: E14 integrand (1-t^2)^1 e^{beta t} > 0 on (-1,1)
+CHECK PASS: E14 Rodrigues vs integral ell=2
+CHECK PASS: E14 integrand (1-t^2)^2 e^{beta t} > 0 on (-1,1)
+CHECK PASS: E14 Rodrigues vs integral ell=3
+CHECK PASS: E14 integrand (1-t^2)^3 e^{beta t} > 0 on (-1,1)
+CHECK PASS: E14 Rodrigues vs integral ell=4
+CHECK PASS: E14 integrand (1-t^2)^4 e^{beta t} > 0 on (-1,1)
+CHECKS: PASS=110 FAIL=0
+SUMMARY: PARTIAL reversibility of the 7-stencil light-cone automaton w.r.t. pi prop. to prod_x Z(beta S_x); pi is the s-marginal of the Heisenberg ferromagnet on the doubled graph Gamma (two copies of Z^3, edges (x,sigma)--(y,s) for y in N(x)); RP through spatial bond planes composed with layer swap; infrared bound <|s-hat^e(k)|^2> <= (1/(2 beta))(1/E(k)+1/(14-E(k))) <= 7/(2 beta E(k)); long-range order of the even sector for beta > 3*sqrt(3)*pi/16 + 3/4; Goldstone lower bound of order M_+^4/(beta E) for the transverse channel; PCA uniqueness/forgetting for beta < 1/7; linear automaton identity S(k)=7 sigma^2/(2 E (1-E/14)).
+HIT: 7-stencil light-cone formation is reversible w.r.t. pi(s) prop. to prod_x Z(beta S_x(s)); pi is the s-marginal of Heisenberg on Gamma (adjacency 7-E(k) off-diagonal between copies); FSS on Gamma with layer-swap bond-plane reflections gives <|hat s^e(k)|^2> <= (1/(2 beta))(1/E+1/(14-E)) and liminf M_+^2 >= 1-(3/(2 beta))(G(0)+G_14) > 0 for beta > 3*sqrt(3)*pi/16+3/4, with a matching Bogoliubov lower bound of order M_+^4/(beta E) on the even transverse channel; the linear gain-one kernel is exactly 7 sigma^2/(2 E (1-E/14)); the automaton contracts in one-site TV for beta<1/7; the static nn law of block 19 is a different interaction (beta s.s' vs log Z(beta|S|)) and its G1 does not apply to pi as a product of nn kernels, while G1-G5 do apply on Gamma with Laplacian spectrum {E, 14-E}.

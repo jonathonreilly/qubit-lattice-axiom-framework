@@ -1,0 +1,2 @@
+M_k increment on 1125 (z,j,k) triples: OK
+SUMMARY: pattern has no purchase on this note - M_k(v-e_j)-M_k(v)=1/3-δ_{jk} holds for every z in {-2..2}^3 and every directions j,k

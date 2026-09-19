@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:uniqueness-region-up:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j736b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/uniqueness-region-up/w-macbookpro90c72-j736b/check.py",
+ "seed": 83306,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9cac4940",
+ "started_utc": "20260919T020146Z",
+ "elapsed_s": 32.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL 2-step Hamming/Dobrushin of the six-axis level automaton on (p,1,2): lambda2=3 I1+3 I2 with I1 (I2) the exact max TV of a 1-path (2-path) grandchild over its 5-site cone (7776 configs). lambda2(499/100)=24556258082665457028111537240149894218301097/24625783511450273112712758399765677226463799<1, so uniqueness and exponential forgetting by 2-step telescoping (cone of 6 ancestors). lambda2(19/5)<1 already, while 3c(19/5)>1, so this enlarges the worst-case region past block 08. lambda2(5)=4283413252/4276289513>1: this route stops at p=5. Distinct from averaged W_rho (a1/a2) which reaches 511/100."
+ },
+ "review": "check.py 13/0 exact: 2-step Hamming lambda2=3 I1+3 I2 <1 at p=499/100 (and at 19/5 where 3c>1), fails at p=5; enlarges worst-case uniqueness past block 08 3c, not the W_rho edge 5.11; HIT",
+ "what": "DERIVATION, independent attempt 3 of 3: Push the proved no-memory region of the six-axis formation law up toward the located threshold. Blocks 08, 28 (PRs #8138, #8172): the six-axis formation law on Z^3 in level order is unique with exponential decay when the causal coupling contracts, 3c < 1 with c the one-site total-variation sensitivity; on the line (p,1,2) that region ends far below the executed threshold p in (10.5, 11). TASK: enlarge the proved region on (p,1,2). Candidates: (i) a block criterion over two or three levels (couple 2x2 blocks of the level plane jointly; compute the exact block sensitivity with rational arithmetic); (ii) disagreement percolation in level time: the set of sites where two coupled copies differ is dominated by an oriented percolation with an explicit density; uniqueness when it dies out; use rigorous oriented-percolation bounds you re-prove or the elementary path count 3^n q^n < 1 improved by exact small-block enumeration. Report the largest p you prove unique and the exact sensitivity matrices. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/uniqueness-region-up/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/uniqueness-region-up/<name>/check.py\"",
+ "stdout_sha256": "46c883c24a28498e981891f715fc077652c146196f67a809d22006696f79e695",
+ "stdout_tail": "625783511450273112712758399765677226463799\nCHECK PASS: L.3b I2(499/100) exhaustive  5371225220303023355156424506650509468563499/24625783511450273112712758399765677226463799\nCHECK PASS: L.3c lambda2(499/100)=3(I1+I2)<1  24556258082665457028111537240149894218301097/24625783511450273112712758399765677226463799 = 0.9971767222\nCHECK PASS: L.4 lambda2(5)=4283413252/4276289513>1 (2-step worst-case no-go)  4283413252/4276289513\nCHECKS: PASS=13 FAIL=0\nSUMMARY: PARTIAL 2-step Hamming/Dobrushin of the six-axis level automaton on (p,1,2): lambda2=3 I1+3 I2 with I1 (I2) the exact max TV of a 1-path (2-path) grandchild over its 5-site cone (7776 configs). lambda2(499/100)=24556258082665457028111537240149894218301097/24625783511450273112712758399765677226463799<1, so uniqueness and exponential forgetting by 2-step telescoping (cone of 6 ancestors). lambda2(19/5)<1 already, while 3c(19/5)>1, so this enlarges the worst-case region past block 08. lambda2(5)=4283413252/4276289513>1: this route stops at p=5. Distinct from averaged W_rho (a1/a2) which reaches 511/100.\nHIT: 2-step exact Hamming coefficient lambda2<1 at p=499/100 on (p,1,2) (lambda2=24556258082665457028111537240149894218301097/24625783511450273112712758399765677226463799); uniqueness of the six-axis level automaton by Dobrushin telescoping on the 6-site 2-step cone. The same criterion fails at p=5. Enlarges the worst-case (non-averaged) region from 3c<1 at p=37/10 through 3c>1 at p=19/5 up to p=499/100. Not the W_rho edge 511/100.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j736b",
+  "at_utc": "20260919T020224Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "New exact partial: 2-step Hamming/Dobrushin lambda2<1 at p=499/100, fails at p=5. Distinct from W_rho. Enlarges worst-case region past 3c. Sphere/threshold 10.5-11 not reached.",
+  "by": "w-macbookpro90c72-j736b",
+  "at_utc": "20260919T020224Z"
+ }
+}

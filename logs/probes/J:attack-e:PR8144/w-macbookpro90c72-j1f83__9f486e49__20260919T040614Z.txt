@@ -1,0 +1,1 @@
+SUMMARY: SAMPLED EVIDENCE (PR #8144): the note's path-comparison and transfer-Hamiltonian statements are analytic, not sampled never/always; pattern has no purchase

@@ -1,0 +1,9 @@
+k=0 TV=0 stated 0
+k=1 TV=0 stated 0
+k=2 TV=1/72 stated 1/72
+k=3 TV=5/144 stated 5/144
+k=4 TV=505/10368 stated 505/10368
+k=5 TV=575/10368 stated 575/10368
+k=6 TV=103375/1492992 stated 103375/1492992
+3-leaf star order leaves-leaves-center-leaf: mass=1 TV vs joint=1/72
+SUMMARY: pattern has no purchase on this note - forcing every k=2..6 on the isolated star keeps TV>0 while k=0,1 stay 0, matching U3; a 3-leaf adversarial order with two leaves before the center has TV>0; not the known U2/U4 sigma-equivariant HIT

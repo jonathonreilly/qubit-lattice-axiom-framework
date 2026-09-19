@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-j170d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8149/adversarial_k_leaves_before_center.py",
+ "seed": 90888,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "faed7bb7",
+ "started_utc": "20260919T040808Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - forcing every k=2..6 on the isolated star keeps TV>0 while k=0,1 stay 0, matching U3; a 3-leaf adversarial order with two leaves before the center has TV>0; not the known U2/U4 sigma-equivariant HIT"
+ },
+ "review": "Forcing k=2..6 on the isolated star keeps TV>0 while k=0,1 are 0; a 3-leaf adversarial order with two leaves before the center has TV=1/72. Not the known U2/U4 HIT.",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "53a226c8e3d6e9e0d3fb94ce7c6c1e0e6f556a6bd88e4385872a709701556618",
+ "stdout_tail": "k=0 TV=0 stated 0\nk=1 TV=0 stated 0\nk=2 TV=1/72 stated 1/72\nk=3 TV=5/144 stated 5/144\nk=4 TV=505/10368 stated 505/10368\nk=5 TV=575/10368 stated 575/10368\nk=6 TV=103375/1492992 stated 103375/1492992\n3-leaf star order leaves-leaves-center-leaf: mass=1 TV vs joint=1/72\nSUMMARY: pattern has no purchase on this note - forcing every k=2..6 on the isolated star keeps TV>0 while k=0,1 stay 0, matching U3; a 3-leaf adversarial order with two leaves before the center has TV>0; not the known U2/U4 sigma-equivariant HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j170d",
+  "at_utc": "20260919T040808Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

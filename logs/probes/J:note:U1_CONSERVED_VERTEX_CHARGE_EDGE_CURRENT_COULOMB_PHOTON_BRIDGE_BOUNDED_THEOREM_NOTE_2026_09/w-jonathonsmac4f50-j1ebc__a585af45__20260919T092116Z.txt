@@ -1,0 +1,19 @@
+A4. role complex L = 4: {'sizes': (64, 192, 192, 64), 'C d0 = 0': True, 'd2 C = 0': True, 'Gauss = continuity': True, 'magnetic Gauss both halves': True, 'total charge': True, 'one-edge transfer': True, 'J_L . J_T = 0, C J_L = 0, d0^T J_T = 0': True, 'cone reach by cycle': [1, 3, 5, 7, 9, 11]}
+A5. role complex L = 5: {'sizes': (125, 375, 375, 125), 'C d0 = 0': True, 'd2 C = 0': True, 'Gauss = continuity': True, 'magnetic Gauss both halves': True, 'total charge': True, 'one-edge transfer': True, 'J_L . J_T = 0, C J_L = 0, d0^T J_T = 0': True, 'cone reach by cycle': [1, 3, 5, 7, 9, 11]}
+A6. role complex L = 6: {'sizes': (216, 648, 648, 216), 'C d0 = 0': True, 'd2 C = 0': True, 'Gauss = continuity': True, 'magnetic Gauss both halves': True, 'total charge': True, 'one-edge transfer': True, 'J_L . J_T = 0, C J_L = 0, d0^T J_T = 0': True, 'cone reach by cycle': [1, 3, 5, 7, 9, 11]}
+A'. real-space covariance, 48 signed permutations (L = 4, exact): axial B covariant True; polar-B rule covariant for proper R True, fails for every improper R True
+A''. exact Poisson field at L = 4: Gauss True; orthogonal to all co-exact generators and the 3 harmonic ones True; constraint kernel dimension 129 = co-exact rank 126 + 3 harmonic: True
+B. closed-form axis Green function vs 3D FFT at L = 48: max difference 3.92e-16
+B48: runner-rule fit |4 pi a - 1| = 0.02632; after removing r^2/(6L^3): 8.22e-03; axis Poisson residual 2.8e-16
+B64: runner-rule fit |4 pi a - 1| = 0.01823; after removing r^2/(6L^3): 5.64e-03; axis Poisson residual 6.2e-16
+B96: runner-rule fit |4 pi a - 1| = 0.01197; after removing r^2/(6L^3): 3.46e-03; axis Poisson residual 9.8e-16
+B128: runner-rule fit |4 pi a - 1| = 0.00860; after removing r^2/(6L^3): 2.64e-03; axis Poisson residual 8.4e-16
+B192: runner-rule fit |4 pi a - 1| = 0.00581; after removing r^2/(6L^3): 1.91e-03; axis Poisson residual 1.6e-15
+B256: runner-rule fit |4 pi a - 1| = 0.00449; after removing r^2/(6L^3): 1.57e-03; axis Poisson residual 1.7e-15
+B384: runner-rule fit |4 pi a - 1| = 0.00317; after removing r^2/(6L^3): 1.26e-03; axis Poisson residual 1.8e-15
+B512: runner-rule fit |4 pi a - 1| = 0.00256; after removing r^2/(6L^3): 1.11e-03; axis Poisson residual 2.0e-15
+B768: runner-rule fit |4 pi a - 1| = 0.00194; after removing r^2/(6L^3): 9.49e-04; axis Poisson residual 4.5e-15
+B1024: runner-rule fit |4 pi a - 1| = 0.00163; after removing r^2/(6L^3): 8.68e-04; axis Poisson residual 4.0e-15
+B2048: runner-rule fit |4 pi a - 1| = 0.00114; after removing r^2/(6L^3): 7.36e-04; axis Poisson residual 9.3e-15
+B4096: runner-rule fit |4 pi a - 1| = 0.00088; after removing r^2/(6L^3): 6.59e-04; axis Poisson residual 3.8e-14
+SUMMARY: on my own role complexes L = 4, 5, 6 all incidence identities, exact Fraction Gauss/continuity at h = 3/7, magnetic Gauss, charge conservation, one-edge transfer and Hodge orthogonality hold; the impulse cone reaches [1, 3, 5, 7, 9, 11] over six cycles (note: 1, then at most 4); the full sourced tick is covariant under all 48 signed permutations with B as an axial 2-form and the polar rule fails for every improper one; the exact L = 4 Poisson field is orthogonal to the whole constraint kernel; the closed-form Green function matches the FFT to 4e-16 and solves the axis Poisson equation to 4e-14; the runner's fit errors on the named ladder are [0.02632, 0.01823, 0.01197, 0.0086] (decreasing, below 0.009) and continue {192: 0.00581, 256: 0.00449, 512: 0.00256, 1024: 0.00163, 2048: 0.00114, 4096: 0.00088} beyond it; with the background r^2/(6L^3) removed the error is 2.6e-03 at L = 128 and 6.6e-04 at L = 4096; no falsifier fires

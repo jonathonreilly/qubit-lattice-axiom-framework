@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_CONSERVED_VERTEX_CHARGE_EDGE_CURRENT_COULOMB_PHOTON_BRIDGE_BOUNDED_THEOREM_NOTE_2026_09",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j1ebc",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_CONSERVED_VERTEX_CHARGE_EDGE_CURRENT_/incidence_cone_covariance_and_green_ladder.py",
+ "seed": 9676,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a585af45",
+ "started_utc": "20260919T092116Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "on my own role complexes L = 4, 5, 6 all incidence identities, exact Fraction Gauss/continuity at h = 3/7, magnetic Gauss, charge conservation, one-edge transfer and Hodge orthogonality hold; the impulse cone reaches [1, 3, 5, 7, 9, 11] over six cycles (note: 1, then at most 4); the full sourced tick is covariant under all 48 signed permutations with B as an axial 2-form and the polar rule fails for every improper one; the exact L = 4 Poisson field is orthogonal to the whole constraint kernel; the closed-form Green function matches the FFT to 4e-16 and solves the axis Poisson equation to 4e-14; the runner's fit errors on the named ladder are [0.02632, 0.01823, 0.01197, 0.0086] (decreasing, below 0.009) and continue {192: 0.00581, 256: 0.00449, 512: 0.00256, 1024: 0.00163, 2048: 0.00114, 4096: 0.00088} beyond it; with the background r^2/(6L^3) removed the error is 2.6e-03 at L = 128 and 6.6e-04 at L = 4096; no falsifier fires"
+ },
+ "review": "Read the script and its output: on independently built role complexes L = 4, 5, 6 every incidence identity, exact Fraction Gauss/continuity at h = 3/7, magnetic Gauss, charge conservation, one-edge transfer and Hodge orthogonality hold; the impulse cone reaches 1, 3, 5, 7, 9, 11 over six cycles (note: 1, then at most 4); the real-space sourced tick is covariant under all 48 signed permutations with B axial and the polar rule fails for each improper one; the closed-form O(L^2) Green function matches the FFT to 4e-16, solves the axis Poisson equation, reproduces the named-ladder fit errors 0.02632, 0.01823, 0.01197, 0.00860 and keeps decreasing to 0.00088 at L = 4096; no falsifier fires.",
+ "what": "Note on main: docs/U1_CONSERVED_VERTEX_CHARGE_EDGE_CURRENT_COULOMB_PHOTON_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_CONSERVED_VERTEX_CHARGE_EDGE_CURRENT_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_CONSERVED_VERTEX_CHARGE_EDGE_CURRENT_/<script>.py\"",
+ "stdout_sha256": "49a3de3b64537cc69d1dc68dede91abd5feb8112e68c4406c463754d79ef6eb1",
+ "stdout_tail": "e fit |4 pi a - 1| = 0.00256; after removing r^2/(6L^3): 1.11e-03; axis Poisson residual 2.0e-15\nB768: runner-rule fit |4 pi a - 1| = 0.00194; after removing r^2/(6L^3): 9.49e-04; axis Poisson residual 4.5e-15\nB1024: runner-rule fit |4 pi a - 1| = 0.00163; after removing r^2/(6L^3): 8.68e-04; axis Poisson residual 4.0e-15\nB2048: runner-rule fit |4 pi a - 1| = 0.00114; after removing r^2/(6L^3): 7.36e-04; axis Poisson residual 9.3e-15\nB4096: runner-rule fit |4 pi a - 1| = 0.00088; after removing r^2/(6L^3): 6.59e-04; axis Poisson residual 3.8e-14\nSUMMARY: on my own role complexes L = 4, 5, 6 all incidence identities, exact Fraction Gauss/continuity at h = 3/7, magnetic Gauss, charge conservation, one-edge transfer and Hodge orthogonality hold; the impulse cone reaches [1, 3, 5, 7, 9, 11] over six cycles (note: 1, then at most 4); the full sourced tick is covariant under all 48 signed permutations with B as an axial 2-form and the polar rule fails for every improper one; the exact L = 4 Poisson field is orthogonal to the whole constraint kernel; the closed-form Green function matches the FFT to 4e-16 and solves the axis Poisson equation to 4e-14; the runner's fit errors on the named ladder are [0.02632, 0.01823, 0.01197, 0.0086] (decreasing, below 0.009) and continue {192: 0.00581, 256: 0.00449, 512: 0.00256, 1024: 0.00163, 2048: 0.00114, 4096: 0.00088} beyond it; with the background r^2/(6L^3) removed the error is 2.6e-03 at L = 128 and 6.6e-04 at L = 4096; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1ebc",
+  "at_utc": "20260919T092125Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

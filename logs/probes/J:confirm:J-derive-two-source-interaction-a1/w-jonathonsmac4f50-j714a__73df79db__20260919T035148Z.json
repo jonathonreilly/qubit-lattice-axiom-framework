@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-two-source-interaction-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j714a",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/two-source-interaction/referee_w-jonathonsmac4f50-j714a/check.py",
+ "seed": 89908,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "73df79db",
+ "started_utc": "20260919T035148Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 4 - chi = 7/E, C, chi/C = 1 + phi and the unlike-pin energy 128 a^2/147 (G(0) = 18179/15360, G(e1) = 539/15360) hold, but 'like pins are IR-divergent on the massless torus' is backwards: keeping the zero mode through a mass, the like-pin energy a^2/(G(0)+G(e1)) tends to 0 while the unlike one tends to 128/147 (mean-zero torus: 7680 a^2/9359, finite). Also false: (a) 'not reversible w.r.t. the Gaussian pi' (P C is symmetric; the chain is reversible and chi != C is a conjugate-observable effect) and (d) 'superposition of means holds' for pins (the summed one-pin means give 360 a/371 at the pin)"
+ },
+ "review": "Two-source a1's values reproduce (chi = 7/E, chi/C = 1 + phi, unlike-pin energy 128 a^2/147) but step 4's 'like pins IR-divergent' is backwards (with the zero mode kept through a mass the like-pin energy falls 0.763 to 0.0064 a^2 as m goes 1/10 to 1/10000), the chain is reversible (P C symmetric on L=4), and pinned means do not superpose (360a/371 at the pin), so the claim fails at step 4 with no HIT.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:two-source-interaction:a1/; its files are probes/work/derive/two-source-interaction/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/two-source-interaction/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "5b0493c254fbe88ff1849b62f0df9c4a23b8b8fa9f54cd424c3ddec89d480be6",
+ "stdout_tail": "PASS U1: chi = 7/E, C = 7/(2E(1 - E/14)), chi/C = 1 + phi on the 63 nonzero modes\nPASS U2: the lag-one covariance P C is a symmetric matrix on L = 4 (mean-zero stationary law): the Gaussian chain is reversible\nPASS U3: G(0) = 18179/15360, G(e1) = 539/15360, G(0) - G(e1) = 147/128, unlike energy 128/147 a^2\nPASS U4: m = 1/10: like 0.762639 a^2, unlike 0.901595 a^2; m = 1/100: like 0.359658 a^2, unlike 0.874221 a^2; m = 1/1000: like 0.059345 a^2, unlike 0.871100 a^2; m = 1/10000: like 0.006350 a^2, unlike 0.870784 a^2 -> like-pin energy tends to 0 as m -> 0 (unlike -> 128/147 = 0.870748); mean-zero torus: like 7680/9359 a^2\nPASS U5: unlike pins +a at 0, -a at e1: summed one-pin means at 0 = 360/371 a, not a\nSUMMARY: fails at step 4 - chi = 7/E, C, chi/C = 1 + phi and the unlike-pin energy 128 a^2/147 (G(0) = 18179/15360, G(e1) = 539/15360) hold, but 'like pins are IR-divergent on the massless torus' is backwards: keeping the zero mode through a mass, the like-pin energy a^2/(G(0)+G(e1)) tends to 0 while the unlike one tends to 128/147 (mean-zero torus: 7680 a^2/9359, finite). Also false: (a) 'not reversible w.r.t. the Gaussian pi' (P C is symmetric; the chain is reversible and chi != C is a conjugate-observable effect) and (d) 'superposition of means holds' for pins (the summed one-pin means give 360 a/371 at the pin)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j714a",
+  "at_utc": "20260919T035148Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

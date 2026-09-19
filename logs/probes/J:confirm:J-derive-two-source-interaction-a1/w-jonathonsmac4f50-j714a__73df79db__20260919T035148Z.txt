@@ -1,0 +1,6 @@
+PASS U1: chi = 7/E, C = 7/(2E(1 - E/14)), chi/C = 1 + phi on the 63 nonzero modes
+PASS U2: the lag-one covariance P C is a symmetric matrix on L = 4 (mean-zero stationary law): the Gaussian chain is reversible
+PASS U3: G(0) = 18179/15360, G(e1) = 539/15360, G(0) - G(e1) = 147/128, unlike energy 128/147 a^2
+PASS U4: m = 1/10: like 0.762639 a^2, unlike 0.901595 a^2; m = 1/100: like 0.359658 a^2, unlike 0.874221 a^2; m = 1/1000: like 0.059345 a^2, unlike 0.871100 a^2; m = 1/10000: like 0.006350 a^2, unlike 0.870784 a^2 -> like-pin energy tends to 0 as m -> 0 (unlike -> 128/147 = 0.870748); mean-zero torus: like 7680/9359 a^2
+PASS U5: unlike pins +a at 0, -a at e1: summed one-pin means at 0 = 360/371 a, not a
+SUMMARY: fails at step 4 - chi = 7/E, C, chi/C = 1 + phi and the unlike-pin energy 128 a^2/147 (G(0) = 18179/15360, G(e1) = 539/15360) hold, but 'like pins are IR-divergent on the massless torus' is backwards: keeping the zero mode through a mass, the like-pin energy a^2/(G(0)+G(e1)) tends to 0 while the unlike one tends to 128/147 (mean-zero torus: 7680 a^2/9359, finite). Also false: (a) 'not reversible w.r.t. the Gaussian pi' (P C is symmetric; the chain is reversible and chi != C is a conjugate-observable effect) and (d) 'superposition of means holds' for pins (the summed one-pin means give 360 a/371 at the pin)

@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-two-source-interaction-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jf286",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/two-source-interaction/referee_w-jonathonsmac4f50-jf286/check.py",
+ "seed": 92854,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ccc8a578",
+ "started_utc": "20260919T044054Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 5 - C0 does not diverge: C(k) = 49/(E(14-E)) ~ 7/(2k^2) is integrable in 3D, and the mean-zero torus C0(L) settles (L=8..64: 1.2789, 1.3284, 1.3531, 1.3655, increments halving, limit 1.3778 against (7/2)(Watson/2 + I_14) = 1.3778), so like pins have a finite energy a^2/(C0+Cr) in infinite volume; the only divergence is the torus zero mode, which is non-stationary on every torus in every dimension and would make the like-pin energy r-independent (0), contradicting the attempt's own 'like pins attractive when C(r)>0'; steps 1-2 hold (chi/C = 1+phi; the reversible PCA's response is C(1+P) = chi), step 3's formulas hold with its sign sentence reversed (sign Cr = sign of unlike-minus-like), step 4's L=4 value 147/128 holds for e1, e1+e2, 2e1; not supplied: the 1/r coefficient (C(r) ~ 7/(8 pi r), torus check ok), the L=8..32 checks, and persistent pins, whose stationary mean differs from equal-time conditioning (max difference 0.165 at L=8)"
+ },
+ "review": "Steps 1-2 (chi/C = 1+phi; reversible-PCA response C(1+P) = chi) and step 4's L=4 value 147/128 re-derive and step 3's formulas hold with its sign sentence reversed, but step 5 fails: C0 is finite in 3D (mean-zero tori 1.2789..1.3655 with halving increments, limit 1.3778 = (7/2)(Watson/2 + I_14)), so like pins are not IR-divergent; 1/r coefficient (C ~ 7/(8 pi r), torus ratio 0.98-1.02), L=8..32 checks and persistent pins (differ from equal-time conditioning by 0.165 at L=8) not supplied.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:two-source-interaction:a4/; its files are probes/work/derive/two-source-interaction/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/two-source-interaction/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "2f206541e524bd16ed6cf41d29506eccd97f05b7d1c37b5d27c3c558ff7c3a65",
+ "stdout_tail": "8 pi r))\nT6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 1), r = 3*|dir|: 0.9871 (-> 1 for C(r) ~ 7/(8 pi r))\nT6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 1), r = 5*|dir|: 0.9923 (-> 1 for C(r) ~ 7/(8 pi r))\nT6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 1), r = 8*|dir|: 0.9834 (-> 1 for C(r) ~ 7/(8 pi r))\nT7 L=8 unlike pins +-1 at 0 and 2e1: (persistent-pin stationary mean, equal-time conditional mean) at -e1, e2, -2e3, (4,4,4): (0.2650, 0.1002), (0.2343, 0.0843), (0.0665, 0.0488), (-0.0055, -0.0033); max difference over the torus 0.1648\nSUMMARY: fails at step 5 - C0 does not diverge: C(k) = 49/(E(14-E)) ~ 7/(2k^2) is integrable in 3D, and the mean-zero torus C0(L) settles (L=8..64: 1.2789, 1.3284, 1.3531, 1.3655, increments halving, limit 1.3778 against (7/2)(Watson/2 + I_14) = 1.3778), so like pins have a finite energy a^2/(C0+Cr) in infinite volume; the only divergence is the torus zero mode, which is non-stationary on every torus in every dimension and would make the like-pin energy r-independent (0), contradicting the attempt's own 'like pins attractive when C(r)>0'; steps 1-2 hold (chi/C = 1+phi; the reversible PCA's response is C(1+P) = chi), step 3's formulas hold with its sign sentence reversed (sign Cr = sign of unlike-minus-like), step 4's L=4 value 147/128 holds for e1, e1+e2, 2e1; not supplied: the 1/r coefficient (C(r) ~ 7/(8 pi r), torus check ok), the L=8..32 checks, and persistent pins, whose stationary mean differs from equal-time conditioning (max difference 0.165 at L=8)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf286",
+  "at_utc": "20260919T044104Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

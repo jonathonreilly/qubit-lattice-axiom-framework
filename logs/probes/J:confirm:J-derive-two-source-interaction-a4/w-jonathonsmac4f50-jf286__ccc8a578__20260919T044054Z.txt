@@ -1,0 +1,16 @@
+T1 1/(1-phi^2) = 49/(E(14-E)): True; = 7/(2E(1-E/14)): True; chi = 7/E: True; chi/C = 1+phi: True
+T2 C(1+phi) = chi on every nonzero mode of the L=4 torus (the reversible PCA's response to a dynamical field): True
+T3 like a^2/(C0+Cr), unlike a^2/(C0-Cr): True; unlike - like = 2a^2 Cr/(C0^2-Cr^2): True (so sign(Cr) = sign(unlike - like); like - unlike = -2a^2 Cr/(C0^2-Cr^2))
+T4 L=4 exact C(0)-C(r): r=(1, 0, 0): 147/128, r=(1, 1, 0): 147/128, r=(2, 0, 0): 147/128, r=(1, 1, 1): 49/40, r=(2, 1, 0): 49/40, r=(2, 2, 0): 49/40, r=(2, 2, 2): 2401/1920
+T5 mean-zero torus C0(L) for L=8,16,32,64: [1.2789, 1.32841, 1.35312, 1.36547]; increments [0.04951, 0.02472, 0.01235] (ratio 0.500, extrapolated 1.3778); infinite volume C0 = (7/2)(W + I_14) = 3.5 (0.2527310098 + 0.140931) = 1.3778; at L=64 C(e1) = 0.2145: like-pin energy a^2/(C0+C(e1)) = 0.6329 a^2, unlike a^2/(C0-C(e1)) = 0.8689 a^2 (both finite)
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 0, 0), r = 3*|dir|: 1.0209 (-> 1 for C(r) ~ 7/(8 pi r))
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 0, 0), r = 5*|dir|: 1.0168 (-> 1 for C(r) ~ 7/(8 pi r))
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 0, 0), r = 8*|dir|: 1.0041 (-> 1 for C(r) ~ 7/(8 pi r))
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 0), r = 3*|dir|: 1.0011 (-> 1 for C(r) ~ 7/(8 pi r))
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 0), r = 5*|dir|: 0.9961 (-> 1 for C(r) ~ 7/(8 pi r))
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 0), r = 8*|dir|: 0.9906 (-> 1 for C(r) ~ 7/(8 pi r))
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 1), r = 3*|dir|: 0.9871 (-> 1 for C(r) ~ 7/(8 pi r))
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 1), r = 5*|dir|: 0.9923 (-> 1 for C(r) ~ 7/(8 pi r))
+T6 (C(r)-C(2r)) * 16 pi r/7 along (1, 1, 1), r = 8*|dir|: 0.9834 (-> 1 for C(r) ~ 7/(8 pi r))
+T7 L=8 unlike pins +-1 at 0 and 2e1: (persistent-pin stationary mean, equal-time conditional mean) at -e1, e2, -2e3, (4,4,4): (0.2650, 0.1002), (0.2343, 0.0843), (0.0665, 0.0488), (-0.0055, -0.0033); max difference over the torus 0.1648
+SUMMARY: fails at step 5 - C0 does not diverge: C(k) = 49/(E(14-E)) ~ 7/(2k^2) is integrable in 3D, and the mean-zero torus C0(L) settles (L=8..64: 1.2789, 1.3284, 1.3531, 1.3655, increments halving, limit 1.3778 against (7/2)(Watson/2 + I_14) = 1.3778), so like pins have a finite energy a^2/(C0+Cr) in infinite volume; the only divergence is the torus zero mode, which is non-stationary on every torus in every dimension and would make the like-pin energy r-independent (0), contradicting the attempt's own 'like pins attractive when C(r)>0'; steps 1-2 hold (chi/C = 1+phi; the reversible PCA's response is C(1+P) = chi), step 3's formulas hold with its sign sentence reversed (sign Cr = sign of unlike-minus-like), step 4's L=4 value 147/128 holds for e1, e1+e2, 2e1; not supplied: the 1/r coefficient (C(r) ~ 7/(8 pi r), torus check ok), the L=8..32 checks, and persistent pins, whose stationary mean differs from equal-time conditioning (max difference 0.165 at L=8)

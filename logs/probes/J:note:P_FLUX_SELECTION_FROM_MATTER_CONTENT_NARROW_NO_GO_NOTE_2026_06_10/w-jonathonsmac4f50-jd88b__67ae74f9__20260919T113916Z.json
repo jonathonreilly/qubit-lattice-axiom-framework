@@ -1,0 +1,32 @@
+{
+ "task": "J:note:P_FLUX_SELECTION_FROM_MATTER_CONTENT_NARROW_NO_GO_NOTE_2026_06_10",
+ "type": "judgment",
+ "lane": "p",
+ "worker": "w-jonathonsmac4f50-jd88b",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_P_FLUX_SELECTION_FROM_MATTER_CONTENT_NAR/cyclotomic_kernels_and_pi_cubes.py",
+ "seed": 17956,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67ae74f9",
+ "started_utc": "20260919T113916Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "in exact cyclotomic arithmetic K0 has 20 and 68 zero modes at L = 4, 8 and K1 exactly 8 at every even L; ker K0 contains exactly one pi-cube coset (the (+-pi/2)^3 cube) whenever 4 | L and none when L = 2 mod 4, and on every such cube the translation characters give the full Klein cube once, Hamming grading 1+3+3+1, the three hw=1 characters and a C3[111]-closed carrier, while ker K1 is exactly its 8-point cube; beyond the note, (K0 zeros, K0 pi-cubes) by L = 4..24: {4: (20, 1), 6: (24, 0), 8: (68, 1), 10: (0, 0), 12: (140, 1), 14: (0, 0), 16: (164, 1), 18: (120, 0), 20: (212, 1), 22: (0, 0), 24: (380, 1)}; no falsifier fires at the certified volumes"
+ },
+ "review": "Read the script and its output: exact arithmetic in Z[zeta_L] (a momentum is a K0 zero mode iff sum (x^j + x^-j) vanishes mod Phi_L) reproduces 20 and 68 K0 zero modes at L = 4, 8 and exactly 8 K1 zero modes at every even L; ker K0 contains exactly one pi-cube coset whenever 4 | L (none when L = 2 mod 4), and on it the translation characters give the full Klein cube once, Hamming grading 1+3+3+1, the three hw = 1 characters and C3[111] closure, while ker K1 is exactly its cube; beyond the note the K0 kernel keeps growing (140, 164, 212, 380 at L = 12, 16, 20, 24) with one carrier cube each; no falsifier fires at the certified volumes.",
+ "what": "Note on main: docs/P_FLUX_SELECTION_FROM_MATTER_CONTENT_NARROW_NO_GO_NOTE_2026-06-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_P_FLUX_SELECTION_FROM_MATTER_CONTENT_NAR/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_P_FLUX_SELECTION_FROM_MATTER_CONTENT_NAR/<script>.py\"",
+ "stdout_sha256": "1e25b2192415d24fc23de04f1092e66c121b0ab594b3905171305b7f49e91944",
+ "stdout_tail": " True)]; ker K0 strictly larger than the carrier: True\nL = 18: K0 zeros 120, K1 zeros 8; pi-cubes in ker K0: 0 (in ker K1: 1); battery on each K0 cube (Klein, Hamming, hw1, C3): []; ker K0 strictly larger than the carrier: None\nL = 20: K0 zeros 212, K1 zeros 8; pi-cubes in ker K0: 1 (in ker K1: 1); battery on each K0 cube (Klein, Hamming, hw1, C3): [(True, {0: 1, 1: 3, 2: 3, 3: 1}, True, True)]; ker K0 strictly larger than the carrier: True\nL = 22: K0 zeros 0, K1 zeros 8; pi-cubes in ker K0: 0 (in ker K1: 1); battery on each K0 cube (Klein, Hamming, hw1, C3): []; ker K0 strictly larger than the carrier: None\nL = 24: K0 zeros 380, K1 zeros 8; pi-cubes in ker K0: 1 (in ker K1: 1); battery on each K0 cube (Klein, Hamming, hw1, C3): [(True, {0: 1, 1: 3, 2: 3, 3: 1}, True, True)]; ker K0 strictly larger than the carrier: True\nSUMMARY: in exact cyclotomic arithmetic K0 has 20 and 68 zero modes at L = 4, 8 and K1 exactly 8 at every even L; ker K0 contains exactly one pi-cube coset (the (+-pi/2)^3 cube) whenever 4 | L and none when L = 2 mod 4, and on every such cube the translation characters give the full Klein cube once, Hamming grading 1+3+3+1, the three hw=1 characters and a C3[111]-closed carrier, while ker K1 is exactly its 8-point cube; beyond the note, (K0 zeros, K0 pi-cubes) by L = 4..24: {4: (20, 1), 6: (24, 0), 8: (68, 1), 10: (0, 0), 12: (140, 1), 14: (0, 0), 16: (164, 1), 18: (120, 0), 20: (212, 1), 22: (0, 0), 24: (380, 1)}; no falsifier fires at the certified volumes\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd88b",
+  "at_utc": "20260919T113928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

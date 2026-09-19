@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026_",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-jd956",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROL/rotor_mathieu_and_clock_ladder.py",
+ "seed": 7685,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec805d22",
+ "started_utc": "20260919T084805Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the rotor gaps from the large-q Mathieu series (0.764916599742, 0.3897301234641, 0.1955832413998) agree with the note's Fourier-tridiagonal values to about 1e-12 and sit 0.05883, 0.11546, 0.23008% below the harmonic frequencies; the parity-reduced clock ladder reproduces the printed K = 1024 discrepancies and, beyond the note, keeps decreasing through K = 16384 (0.05922%, 0.11566%, 0.23018%) toward the rotor floor from above: the falsifier does not fire"
+ },
+ "review": "Output matches the task (the clock-comparison ladder and rotor-floor falsifier implemented with machinery disjoint from the runner: large-q Mathieu asymptotics, DLMF 28.8.1 through q^-5/2, for the rotor and a reflection-parity tridiagonal reduction for the clock): the rotor gaps 0.764916599742, 0.389730123464, 0.195583241400 are reproduced to 2e-13 and sit 0.05883, 0.11546, 0.23008 percent below harmonic; the clock discrepancies at K = 1024 are 0.159, 0.166, 0.256 percent as printed, and beyond the note they keep decreasing through K = 16384 (0.05922, 0.11566, 0.23018 percent) toward the rotor floor from above; no falsifier fires.",
+ "what": "Note on main: docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROL/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROL/<script>.py\"",
+ "stdout_sha256": "c66e3d02b5665448f1f8203b3df4297a99152c56c8ab43123b4a3c815864caf0",
+ "stdout_tail": "4, difference 7.3e-14; last series term 1.9e-16); below harmonic by 0.11546% (note 0.11546%)\n1. rotor L = 32: Mathieu |q| = 11860.938, gap = 0.195583241399814 (note 0.1955832414, difference 1.9e-13; last series term 6.0e-15); below harmonic by 0.23008% (note 0.23008%)\n2. clock L = 8: discrepancy from harmonic (%) at K = 128..16384: 6.94580, 1.68331, 0.45988, 0.15879, 0.08380, 0.06507, 0.06039, 0.05922; at K = 1024 0.159% (note 0.159%); decreasing True, above the rotor floor True; K = 16384 gap - rotor gap = -2.99e-06\n2. clock L = 16: discrepancy from harmonic (%) at K = 128..16384: 3.48414, 0.93524, 0.31913, 0.16630, 0.12817, 0.11864, 0.11626, 0.11566; at K = 1024 0.166% (note 0.166%); decreasing True, above the rotor floor True; K = 16384 gap - rotor gap = -7.74e-07\n2. clock L = 32: discrepancy from harmonic (%) at K = 128..16384: 1.88569, 0.63867, 0.33191, 0.25552, 0.23644, 0.23167, 0.23048, 0.23018; at K = 1024 0.256% (note 0.256%); decreasing True, above the rotor floor True; K = 16384 gap - rotor gap = -1.95e-07\nSUMMARY: the rotor gaps from the large-q Mathieu series (0.764916599742, 0.3897301234641, 0.1955832413998) agree with the note's Fourier-tridiagonal values to about 1e-12 and sit 0.05883, 0.11546, 0.23008% below the harmonic frequencies; the parity-reduced clock ladder reproduces the printed K = 1024 discrepancies and, beyond the note, keeps decreasing through K = 16384 (0.05922%, 0.11566%, 0.23018%) toward the rotor floor from above: the falsifier does not fire\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd956",
+  "at_utc": "20260919T084805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

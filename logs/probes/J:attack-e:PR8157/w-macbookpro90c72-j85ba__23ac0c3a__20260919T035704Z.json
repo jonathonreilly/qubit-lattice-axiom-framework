@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8157",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block23-unsold",
+ "worker": "w-macbookpro90c72-j85ba",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8157/adversarial_kappa_never_nonpos.py",
+ "seed": 90224,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "23ac0c3a",
+ "started_utc": "20260919T035704Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - adversarial beta grid in (0,10] including the join 5/256 never finds kappa<=0; the 'never-vanishing exponent' is not a sampled never"
+ },
+ "review": "Adversarial beta grid in (0,10] including the join 5/256 never finds kappa<=0; the never-vanishing exponent is not a sampled never. No HIT.",
+ "what": "PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915; git show origin/physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915:<note>. Create probes/work/pr8157/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8157/<script>.py\"",
+ "stdout_sha256": "b6d460018b091c23ee82f8e2e0619050b25897d1e6d1eb39a9da2f3a1db627de",
+ "stdout_tail": "09/625\nbeta=1/10000 kappa=3117/3125\nbeta=1/100000 kappa=15621/15625\nbeta=1/1000000 kappa=78123/78125\nbeta=1/10000000 kappa=390624/390625\nbeta=5/1024 kappa=7/8\nbeta=5/512 kappa=3/4\nbeta=5/256 kappa=1/2\nbeta=5/128 kappa=1/4\nbeta=5/64 kappa=1/8\nbeta=1/100 kappa=93/125\nbeta=1/10 kappa=25/256\nbeta=1/2 kappa=5/256\nbeta=1 kappa=5/512\nbeta=2 kappa=5/1024\nbeta=5 kappa=1/512\nbeta=10 kappa=1/1024\nbeta=1/256 kappa=9/10\nbeta=1/128 kappa=4/5\nbeta=3/256 kappa=7/10\nbeta=1/64 kappa=3/5\nbeta=5/256 kappa=1/2\nbeta=3/128 kappa=5/12\nbeta=7/256 kappa=5/14\nbeta=1/32 kappa=5/16\nbeta=9/256 kappa=5/18\nbeta=5/128 kappa=1/4\nbeta=11/256 kappa=5/22\nbeta=3/64 kappa=5/24\nbeta=13/256 kappa=5/26\nbeta=7/128 kappa=5/28\nbeta=15/256 kappa=1/6\nbeta=1/16 kappa=5/32\nbeta=17/256 kappa=5/34\nbeta=9/128 kappa=5/36\nbeta=19/256 kappa=5/38\nbeta=5/64 kappa=1/8\nbeta=21/256 kappa=5/42\nbeta=11/128 kappa=5/44\nbeta=23/256 kappa=5/46\nbeta=3/32 kappa=5/48\nbeta=25/256 kappa=1/10\nbeta=13/128 kappa=5/52\nbeta=27/256 kappa=5/54\nbeta=7/64 kappa=5/56\nbeta=29/256 kappa=5/58\nbeta=15/128 kappa=1/12\nbeta=31/256 kappa=5/62\nbeta=1/8 kappa=5/64\nbeta=33/256 kappa=5/66\nbeta=17/128 kappa=5/68\nbeta=35/256 kappa=1/14\nbeta=9/64 kappa=5/72\nbeta=37/256 kappa=5/74\nbeta=19/128 kappa=5/76\nbeta=39/256 kappa=5/78\nadversarial min kappa on grid: (Fraction(1, 1024), Fraction(10, 1))\nSUMMARY: pattern has no purchase on this note - adversarial beta grid in (0,10] including the join 5/256 never finds kappa<=0; the 'never-vanishing exponent' is not a sampled never\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j85ba",
+  "at_utc": "20260919T035704Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

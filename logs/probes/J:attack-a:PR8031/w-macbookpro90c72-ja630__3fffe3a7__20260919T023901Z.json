@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8031",
+ "type": "judgment",
+ "lane": "finite-transporter-block41-20260907",
+ "worker": "w-macbookpro90c72-ja630",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8031/path_and_R1_carrier.py",
+ "seed": 85541,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3fffe3a7",
+ "started_utc": "20260919T023901Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "WITNESS REALIZABILITY (PR #8031): R=1 full-irrep carrier has dimension 19; a simple path of L distinct links embeds in Z^3 for L=1..8; Z^3 NN is triangle-free; fusion of p+q<=R-1 stays in p+q<=R; pattern has purchase and the witnesses exist as written"
+ },
+ "review": "R=1 carrier dim 19, simple L-link paths embed in Z^3, fusion stays in p+q<=R; witnesses exist as written.",
+ "what": "PR #8031 ([physics-loop] finite-transporter block41 conditional-suppor): attack GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-transporter-block41-20260907; git show origin/codex/finite-transporter-block41-20260907:<note>. Create probes/work/pr8031/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8031/<script>.py\"",
+ "stdout_sha256": "ddf99a20d3d1004b1e0c01183b6410b8187301ef19768c925855cc845c357040",
+ "stdout_tail": "R=1 irreps [(0, 0), (0, 1), (1, 0)] dimH=19 stated 19\npath L=1 verts=2 distinct_links=1\npath L=2 verts=3 distinct_links=2\npath L=3 verts=4 distinct_links=3\npath L=4 verts=5 distinct_links=4\npath L=5 verts=6 distinct_links=5\npath L=6 verts=7 distinct_links=6\npath L=7 verts=8 distinct_links=7\npath L=8 verts=9 distinct_links=8\nZ^3 NN bipartite (no odd cycles / no triangles): True\nfusion (1,0)x(p,q) for p+q<=R-1 stays in p+q<=R: ok\nSUMMARY: WITNESS REALIZABILITY (PR #8031): R=1 full-irrep carrier has dimension 19; a simple path of L distinct links embeds in Z^3 for L=1..8; Z^3 NN is triangle-free; fusion of p+q<=R-1 stays in p+q<=R; pattern has purchase and the witnesses exist as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja630",
+  "at_utc": "20260919T023901Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+R=1 irreps [(0, 0), (0, 1), (1, 0)] dimH=19 stated 19
+path L=1 verts=2 distinct_links=1
+path L=2 verts=3 distinct_links=2
+path L=3 verts=4 distinct_links=3
+path L=4 verts=5 distinct_links=4
+path L=5 verts=6 distinct_links=5
+path L=6 verts=7 distinct_links=6
+path L=7 verts=8 distinct_links=7
+path L=8 verts=9 distinct_links=8
+Z^3 NN bipartite (no odd cycles / no triangles): True
+fusion (1,0)x(p,q) for p+q<=R-1 stays in p+q<=R: ok
+SUMMARY: WITNESS REALIZABILITY (PR #8031): R=1 full-irrep carrier has dimension 19; a simple path of L distinct links embeds in Z^3 for L=1..8; Z^3 NN is triangle-free; fusion of p+q<=R-1 stays in p+q<=R; pattern has purchase and the witnesses exist as written

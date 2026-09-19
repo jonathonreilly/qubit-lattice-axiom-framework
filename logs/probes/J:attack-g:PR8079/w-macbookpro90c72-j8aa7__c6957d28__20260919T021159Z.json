@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8079",
+ "type": "judgment",
+ "lane": "native-finite-moment-ward-20260910",
+ "worker": "w-macbookpro90c72-j8aa7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8079/panel_gauss_census.py",
+ "seed": 83919,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c6957d28",
+ "started_utc": "20260919T021159Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - 67 dyadic panels, Gauss26 degree 51, 67*26=1742 nodes, 3484 oracles, (16/3)*42*8=1792, and EX^2=42 all hold exactly (not a re-check of the ellipse/Q5 falsifier)"
+ },
+ "review": "67 panels, Gauss26 degree 51, 1742 nodes, 3484 oracles, 1792 prefactor and EX^2=42 all hold exactly; pattern has no purchase",
+ "what": "PR #8079 ([physics-loop] Finite-moment Ward certificate and fixed-p bo): attack NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-finite-moment-ward-20260910; git show origin/codex/native-finite-moment-ward-20260910:<note>. Create probes/work/pr8079/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8079/<script>.py\"",
+ "stdout_sha256": "7d98b6b24e247c1645f76ac2493888fa403619ca032b3899ec05f0bd3879f9bb",
+ "stdout_tail": "dyadic panels k=-64..2: 67 (stated 67)\nGauss26 exactness degree 51 (stated 51)\n67*26 nodes=1742 (stated 1742)\n1742*2 oracles=3484 (stated 3484)\n(16/3)*42*8=1792 (stated 1792)\nsum of panel left endpoints=147573952589676412927/18446744073709551616 < 8\nM1=6 M2=42 (stated 6, 42)\nL identity tautological True; L=24316338739836401038949906851824460649183293956115309063651458895587439542272001/10679935179604550411975108530847760573013522611783263849735208039111098628903202750114810434682880\nSUMMARY: pattern has no purchase on this note - 67 dyadic panels, Gauss26 degree 51, 67*26=1742 nodes, 3484 oracles, (16/3)*42*8=1792, and EX^2=42 all hold exactly (not a re-check of the ellipse/Q5 falsifier)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8aa7",
+  "at_utc": "20260919T021159Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+dyadic panels k=-64..2: 67 (stated 67)
+Gauss26 exactness degree 51 (stated 51)
+67*26 nodes=1742 (stated 1742)
+1742*2 oracles=3484 (stated 3484)
+(16/3)*42*8=1792 (stated 1792)
+sum of panel left endpoints=147573952589676412927/18446744073709551616 < 8
+M1=6 M2=42 (stated 6, 42)
+L identity tautological True; L=24316338739836401038949906851824460649183293956115309063651458895587439542272001/10679935179604550411975108530847760573013522611783263849735208039111098628903202750114810434682880
+SUMMARY: pattern has no purchase on this note - 67 dyadic panels, Gauss26 degree 51, 67*26=1742 nodes, 3484 oracles, (16/3)*42*8=1792, and EX^2=42 all hold exactly (not a re-check of the ellipse/Q5 falsifier)

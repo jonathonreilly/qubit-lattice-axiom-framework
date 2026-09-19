@@ -1,0 +1,11 @@
+CHECK E0a: PASS
+CHECK E0b: PASS
+CHECK E0c: PASS
+CHECK E1a: PASS
+CHECK E1b: PASS
+CHECK E1c: PASS
+CHECK E2a: PASS
+CHECK E2b: PASS
+CHECK E3a: PASS
+HIT: two-level positive gain-one (theta_{t+1}=a theta_t + b e^{i phi} theta_{t-1}, a+b=1, a,b>0) has spectral radius 1 at phi=0 (roots 1 and -b) and |lambda|^2=b=1/2 at phi=pi when a=b=1/2. Positivity over two earlier levels still forbids waves. The weakest change that WOULD give |lambda|=1 with arg=c|k| is a unitary (complex phase) overlap, costing positivity of real overlap weights.
+SUMMARY: PARTIAL two-level positive gain-one still has spectral radius 1 only at the uniform mode (roots 1,-b) and |lambda|^2=1/2 at phi=pi (a=b=1/2); unitary phases are the weakest wave-producing drop of positivity.

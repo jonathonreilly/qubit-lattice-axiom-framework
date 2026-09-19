@@ -1,0 +1,27 @@
+==============================================================================
+I  exactness of c_(0,0) = E_Haar[exp((beta/3) Re Tr U)]
+  beta=  6: Weyl/torus 8.530477770793398e-03 (N=1024), Bessel determinant 8.530477770793399e-03, rel diff 2.0e-16
+  beta=  9: Weyl/torus 1.946733234077202e-03 (N=1024), Bessel determinant 1.946733234077202e-03, rel diff 1.1e-16
+  beta= 24: Weyl/torus 4.285215786055211e-05 (N=1024), Bessel determinant 4.285215786055213e-05, rel diff 3.2e-16
+  beta= 48: Weyl/torus 2.743640682110622e-06 (N=1024), Bessel determinant 2.743640682110624e-06, rel diff 4.6e-16
+  beta= 96: Weyl/torus 1.734045316584491e-07 (N=1024), Bessel determinant 1.734045316584493e-07, rel diff 1.1e-15
+  beta=192: Weyl/torus 1.089636751406753e-08 (N=1024), Bessel determinant 1.089636751406755e-08, rel diff 1.8e-15
+  beta=384: Weyl/torus 6.828294081002683e-10 (N=1024), Bessel determinant 6.828294081002709e-10, rel diff 3.8e-15
+SUMMARY: I c_(0,0) = E_Haar[exp((beta/3) Re Tr U)]: 40-digit Bessel determinant vs Weyl-torus trapezoid agree to 3.8e-15 relative at beta = 6, 9, 24, 48, 96, 192, 384 (the identity is exact)
+==============================================================================
+T  the scaled table, the limit constant and the power
+  beta^4 e^-beta c00: 48: 14.564386, 96: 14.728054, 192: 14.807668, 384: 14.846946, 768: 14.866455, 1536: 14.876178, 3072: 14.881032
+  exact Gaussian limit C = 27*sqrt(3)/pi = 14.8858801764; Richardson (768,1536) 14.885901, (1536,3072) 14.885885
+  local slopes of log(beta^(3/2) e^-beta c00) vs log beta: -2.4839, -2.4922, -2.4962, -2.4981, -2.4991, -2.4995 (note -2.49 ~ -5/2)
+  wrong power: beta^3 e^-beta c00 = 0.3034, 0.1534, 0.0771, 0.0387, 0.0194, 0.0097, 0.0048 (drifts to 0)
+  monotone upward: True; the note's '~14.85' equals its beta = 384 value 14.8469; the limit is 14.88588 (difference +0.0359)
+SUMMARY: T beta^4 e^-beta c00 = 14.5644, 14.7281, 14.8077, 14.8469, 14.8665, 14.8762, 14.8810 at beta = 48, 96, 192, 384, 768, 1536, 3072; exact limit C = 27*sqrt(3)/pi = 14.88588018 (the note's '~14.85' is its beta = 384 value; the sequence keeps rising to 14.8859); Richardson 14.885885; slopes -> -2.4995 (-5/2); beta^3 scaling drifts 0.303 -> 0.0048
+==============================================================================
+B  the small-ball constant, C_lower and the safety factor
+  c_8 = sqrt(3)/(72*pi) = 0.00765735; C_lower = (c_8/2) e^-4 12^4 = 1.454103
+  P(12/beta) / (c_8 (12/beta)^4): beta=12: 0.9262, beta=24: 0.9652, beta=48: 0.9833, beta=96: 0.9917, beta=192: 0.9958, beta=384: 0.9979, beta=768: 0.9988
+  safety factor 1/2 holds from beta = 12 on this grid; c00 >= C_lower e^beta beta^-4 at 7/7 tabulated beta; c00 >= 8 e^beta beta^-4 on the tabulated grid: True
+  Re Tr U on the torus: max away from 0 (|t| > 0.05) 2.998687 < 3; Hessian at I eigenvalues [-3. -1.] (negative definite)
+SUMMARY: B c_8 = sqrt(3)/(72*pi) = 0.007657, C_lower = 1.4541 (> 0, far below C = 14.886); P(12/beta)/(c_8 (12/beta)^4) = 0.926, 0.965, 0.983, 0.992, 0.996, 0.998, 0.999 at beta = 12, 24, 48, 96, 192, 384, 768, so the 1/2 safety factor holds from beta = 12 on this grid; grid witness 8: True
+==============================================================================
+SUMMARY: hits=0; runtime 11s

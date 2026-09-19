@@ -1,0 +1,37 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RUNG_TWELVE_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j7507",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RU/weyl_torus_bessel_identity_exact_constants.py",
+ "seed": 25952,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9f62703f",
+ "started_utc": "20260919T135232Z",
+ "elapsed_s": 10.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "I c_(0,0) = E_Haar[exp((beta/3) Re Tr U)]: 40-digit Bessel determinant vs Weyl-torus trapezoid agree to 3.8e-15 relative at beta = 6, 9, 24, 48, 96, 192, 384 (the identity is exact)",
+   "T beta^4 e^-beta c00 = 14.5644, 14.7281, 14.8077, 14.8469, 14.8665, 14.8762, 14.8810 at beta = 48, 96, 192, 384, 768, 1536, 3072; exact limit C = 27*sqrt(3)/pi = 14.88588018 (the note's '~14.85' is its beta = 384 value; the sequence keeps rising to 14.8859); Richardson 14.885885; slopes -> -2.4995 (-5/2); beta^3 scaling drifts 0.303 -> 0.0048",
+   "B c_8 = sqrt(3)/(72*pi) = 0.007657, C_lower = 1.4541 (> 0, far below C = 14.886); P(12/beta)/(c_8 (12/beta)^4) = 0.926, 0.965, 0.983, 0.992, 0.996, 0.998, 0.999 at beta = 12, 24, 48, 96, 192, 384, 768, so the 1/2 safety factor holds from beta = 12 on this grid; grid witness 8: True",
+   "hits=0; runtime 11s"
+  ]
+ },
+ "review": "Output matches the task. The identity c00 = E_Haar[exp((beta/3) Re Tr U)] is exact to 4e-15, comparing a 40-digit Bessel determinant with a Weyl-torus trapezoid (disjoint from the runner's machinery and its Monte Carlo) at beta = 6-384. The table reproduces (14.5644, 14.7281, 14.8077, 14.8469), and the scaled sequence rises monotonically through beta = 3072 to the exact Gaussian limit C = 27 sqrt3/pi = 14.88588 (Richardson 14.885885); the note's '~14.85' is its beta = 384 value rather than the limit, a non-load-bearing witness 0.036 low. The slopes tend to -5/2, and the beta^3 scaling drifts to 0. The exact small-ball constant is c_8 = sqrt3/(72 pi), with C = 1944 c_8, giving C_lower = 1.4541 > 0. P(12/beta)/(c_8 (12/beta)^4) is at least 0.926 from beta = 12, so the 1/2 safety factor holds from beta = 12 on the grid. c00 >= C_lower e^beta beta^-4 and the grid witness 8 hold, and Re Tr U has its strict nondegenerate maximum at U = I. No falsifier fired.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RUNG_TWELVE_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RU/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RU/<script>.py\"",
+ "stdout_sha256": "c334d3dde640b822a657e5627df41491d27e7a9bba0b98b6dcaae0ce3f667f9e",
+ "stdout_tail": "ote's '~14.85' equals its beta = 384 value 14.8469; the limit is 14.88588 (difference +0.0359)\nSUMMARY: T beta^4 e^-beta c00 = 14.5644, 14.7281, 14.8077, 14.8469, 14.8665, 14.8762, 14.8810 at beta = 48, 96, 192, 384, 768, 1536, 3072; exact limit C = 27*sqrt(3)/pi = 14.88588018 (the note's '~14.85' is its beta = 384 value; the sequence keeps rising to 14.8859); Richardson 14.885885; slopes -> -2.4995 (-5/2); beta^3 scaling drifts 0.303 -> 0.0048\n==============================================================================\nB  the small-ball constant, C_lower and the safety factor\n  c_8 = sqrt(3)/(72*pi) = 0.00765735; C_lower = (c_8/2) e^-4 12^4 = 1.454103\n  P(12/beta) / (c_8 (12/beta)^4): beta=12: 0.9262, beta=24: 0.9652, beta=48: 0.9833, beta=96: 0.9917, beta=192: 0.9958, beta=384: 0.9979, beta=768: 0.9988\n  safety factor 1/2 holds from beta = 12 on this grid; c00 >= C_lower e^beta beta^-4 at 7/7 tabulated beta; c00 >= 8 e^beta beta^-4 on the tabulated grid: True\n  Re Tr U on the torus: max away from 0 (|t| > 0.05) 2.998687 < 3; Hessian at I eigenvalues [-3. -1.] (negative definite)\nSUMMARY: B c_8 = sqrt(3)/(72*pi) = 0.007657, C_lower = 1.4541 (> 0, far below C = 14.886); P(12/beta)/(c_8 (12/beta)^4) = 0.926, 0.965, 0.983, 0.992, 0.996, 0.998, 0.999 at beta = 12, 24, 48, 96, 192, 384, 768, so the 1/2 safety factor holds from beta = 12 on this grid; grid witness 8: True\n==============================================================================\nSUMMARY: hits=0; runtime 11s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7507",
+  "at_utc": "20260919T135253Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

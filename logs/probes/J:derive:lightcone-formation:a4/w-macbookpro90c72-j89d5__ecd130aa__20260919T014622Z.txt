@@ -1,0 +1,9 @@
+CHECKED E1.C
+CHECKED E2.range2-nnn-affects-cond: same=13/72 orth-nnn=1/6
+CHECKED E2.static-ignores-nnn
+CHECKED E2.pi-not-static-cond
+E2.P(+z|s1=+z,s2=+z) 13/72 s2=+y 1/6
+E2.static P(+z|s1=+z) 1/4
+CHECKS ok=4 fail=0
+HIT: PARTIAL: the light-cone Gibbs law pi∝prod Z(S_x) has a range-2 specification (one-site conditional at x depends on next-nearest sites through neighbouring stars); on a 3-site path at (3,1,2) the conditional P(s0=+z|s1=+z) is 13/72 if s2=+z vs 1/6 if s2=+y, whereas the static nn-Gibbs conditional 1/4 ignores s2. Block 19 RP/IR for nearest-neighbour beta s.s' therefore does not transfer. Linear C=7/(2E(1-E/14)) identity holds. Independent of FSS and sphere-Dobrushin routes.
+SUMMARY: PARTIAL pi is a range-2 Gibbs law, not nn; static RP/IR does not transfer; linear kernel identity holds

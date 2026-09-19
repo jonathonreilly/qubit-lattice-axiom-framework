@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-attack-a-PR8155",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-ja7c8",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8155/torus_L1_multigraph.py",
+ "seed": 90557,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0fd69bb0",
+ "started_utc": "20260919T040237Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "not reproduced - block 19's torus law has 3N bonds (x, x + e_i), so at L = 1 each of the 12 edges of (Z/2Z)^3 is doubled (24 bonds, every site in six bond slots): the conditional field is the sum over the six slots (twice the sum over the three distinct neighbours, exact derivative of the log-density), one distinct neighbour moves it by up to 4 and has influence 2c, the row sum is 6c = alpha, the walk bounds hold with multiplicity and the torus sum is (1+alpha)^3; W5(b) at L = 1 is the multigraph statement it is written as. The finder counted distinct neighbours (3) and missed the bond multiplicity"
+ },
+ "review": "Not reproduced: block 19's torus law has 3N bonds (x, x+e_i), so at L = 1 each 3-cube edge is doubled (24 bonds, six slots per site); the exact log-density derivative gives the six-slot field, one distinct neighbour has influence 2c, the row sum is 6c, walk bounds hold with multiplicity and the torus sum is (1+alpha)^3, so W5(b) at L = 1 stands; the finder counted distinct neighbours.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-a:PR8155/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "a61bb6fad4468a813838118552c075deca20d13edef21563efe9a98afedb9648",
+ "stdout_tail": "[notes] block 21: torus law of block 19 'has the same conditionals': True; W5(b) 'for every L >= 1': True; block 19: '3N bonds', product over bonds: True\n[bonds] L = 1: N = 8, 24 bonds = 3N, 12 distinct pairs, multiplicities {2}, slots per site {6}; L = 2: N = 64, 192 bonds = 3N, 192 distinct pairs, multiplicities {1}, slots per site {6}; L = 3: N = 216, 648 bonds = 3N, 648 distinct pairs, multiplicities {1}, slots per site {6}\n[field] L = 1: d log w / d s_0 = beta * (sum over the six slots x +- e_i) = 2 beta * (sum over the three distinct neighbours): True\n[W2/W5 at L = 1] one distinct neighbour: TV <= 2 c; row sum 6 c = alpha; walk counts with multiplicity: sum_y (C^k)_0y = (6c)^k and (C^k)_0y = 0 below the torus distance for k <= 4: True; sum_x alpha^d_T(0,x) = (1+alpha)^3: True\nSUMMARY: not reproduced - block 19's torus law has 3N bonds (x, x + e_i), so at L = 1 each of the 12 edges of (Z/2Z)^3 is doubled (24 bonds, every site in six bond slots): the conditional field is the sum over the six slots (twice the sum over the three distinct neighbours, exact derivative of the log-density), one distinct neighbour moves it by up to 4 and has influence 2c, the row sum is 6c = alpha, the walk bounds hold with multiplicity and the torus sum is (1+alpha)^3; W5(b) at L = 1 is the multigraph statement it is written as. The finder counted distinct neighbours (3) and missed the bond multiplicity\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-ja7c8",
+  "at_utc": "20260919T040238Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

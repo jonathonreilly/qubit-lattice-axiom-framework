@@ -1,0 +1,39 @@
+{
+ "task": "J:note:COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026_09_13",
+ "type": "judgment",
+ "lane": "composition",
+ "worker": "w-jonathonsmac4f50-jd679",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_COMPOSITION_LAW_SELECTION_GRADED_ZEROS_O/antichain_dp_model_counting_and_exact_zeros.py",
+ "seed": 25262,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a2053ef8",
+ "started_utc": "20260919T134102Z",
+ "elapsed_s": 93.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "Z exact Q(sqrt2) ground vectors: 2x3 N=2: kernel dim 1, zeros 3, (+,-,0) (9, 3, 3); 2x3 N=3: kernel dim 1, zeros 2, (+,-,0) (9, 9, 2); cube N=4: kernel dim 1, zeros 12, (+,-,0) (29, 29, 12); 3x3 N=3: kernel dim 1, zeros 8, (+,-,0) (38, 38, 8); energies/gaps and ungraded Perron positivity as stated",
+   "X character mechanism: 2x3 N=2: 3/3 (|Aut| 4), 2x3 N=3: 0/2 (|Aut| 4), cube N=4: 12/12 (|Aut| 48), 3x3 N=3: 4/8 (|Aut| 8)",
+   "R fixed-N counts (unrec/empty): 2x3 N=2: 476/782 (used 16/16); 2x3 N=3: 201/2607 (used 18/19); cube N=4: 8750/8750 (used 20/20); 3x3 N=3: 421/1116 (used 26/26)",
+   "R joint counts: unrec 2x3N2+cube+3x3: 160; unrec 2x3N2+cube: 1021; unrec 2x3N2+3x3: 384; unrec cube+3x3: 189; unrec 2x3N2+2x3N3: 0; unrec 2x3N2+2x3N3+cube+3x3: 0; empty 2x3N2+2x3N3: 39; empty 2x3N2+cube+3x3: 0; empty 2x3N2+2x3N3+cube+3x3: 0; falsifiers 1 and 2 (unrec 2x3 pair, empty discriminator triple): 0 and 0 rules",
+   "B boundary-state class (beyond the note's existence remark): the same-cluster pair admits exactly 456258 rules over 31 used classes",
+   "hits=0; runtime 93s"
+  ]
+ },
+ "review": "Output matches the task, using machinery disjoint from the runner's capped subset enumeration. My own Jordan-Wigner builder gives exact Q(sqrt2) ground-vector kernels of dimension 1 with the Theorem 1 energies, gaps (>= 0.586), zero sets and signed counts ((9,3,3), (29,29,12)), and the ungraded ground vectors are strictly positive. The fixed-point character mechanism predicts 3/3, 0/2, 12/12 and 4/8 zeros. Counting rules through antichains of minimal step-class sets (a DP over formed-site subsets) with a backtracking model counter reproduces every count: the fixed-N counts 476/201/8750/421 (unrecorded) and 782/2607/8750/1116 (empty) with used-class counts 16/18/20/26 and 16/19/20/26; the joint counts 160, 1021, 384, 189, 0, 0 and 39, 0, 0; and every forced/never class list. Both falsifier counts (the unrecorded 2x3 pair and the empty discriminator triple) are 0. Beyond the note's existence remark, the boundary-state class admits exactly 456258 rules for the same-cluster pair over 31 used classes. No falsifier fired.",
+ "what": "Note on main: docs/COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026-09-13.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_COMPOSITION_LAW_SELECTION_GRADED_ZEROS_O/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_COMPOSITION_LAW_SELECTION_GRADED_ZEROS_O/<script>.py\"",
+ "stdout_sha256": "12d060750d4c4423f8526d9fe04ed0ff05bf197716cb8fb76b66a969c3a2488e",
+ "stdout_tail": "ed []; never []  (3.1s)\n  empty 3x3 N=3: rules 1116 (note 1116), used classes 26 (note 26); forced [020 021 101 102]; never [130 011]  (2.6s)\n  empty joint 2x3N2+2x3N3: rules 39 (note 39); used classes 19; forced [130 020 111 010 112]; never [120 121 011 021 001 101 000 002]  (0.1s)\n  empty joint 2x3N2+cube+3x3: rules 0 (note 0); used classes 27; forced []; never []  (0.9s)\n  empty joint 2x3N2+2x3N3+cube+3x3: rules 0 (note 0); used classes 27; forced []; never []  (0.5s)\nSUMMARY: R fixed-N counts (unrec/empty): 2x3 N=2: 476/782 (used 16/16); 2x3 N=3: 201/2607 (used 18/19); cube N=4: 8750/8750 (used 20/20); 3x3 N=3: 421/1116 (used 26/26)\nSUMMARY: R joint counts: unrec 2x3N2+cube+3x3: 160; unrec 2x3N2+cube: 1021; unrec 2x3N2+3x3: 384; unrec cube+3x3: 189; unrec 2x3N2+2x3N3: 0; unrec 2x3N2+2x3N3+cube+3x3: 0; empty 2x3N2+2x3N3: 39; empty 2x3N2+cube+3x3: 0; empty 2x3N2+2x3N3+cube+3x3: 0; falsifiers 1 and 2 (unrec 2x3 pair, empty discriminator triple): 0 and 0 rules\n==============================================================================\nB  boundary-state class (v, u, e, m): full counts beyond the note's existence remark\n  2x3 N=2 + N=3 jointly: 456258 boundary-state rules over 31 used classes (note: at least one found at cap one)\nSUMMARY: B boundary-state class (beyond the note's existence remark): the same-cluster pair admits exactly 456258 rules over 31 used classes\n==============================================================================\nSUMMARY: hits=0; runtime 93s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd679",
+  "at_utc": "20260919T134245Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

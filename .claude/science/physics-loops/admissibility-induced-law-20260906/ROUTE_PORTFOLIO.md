@@ -84,3 +84,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
 | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
 
 Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
+
+## Block 25 (2026-09-16) — prior-art search and routes (independent PR against main; blocks 06–24 are open PRs #8034, #8035, #8138–#8142, #8146–#8158)
+Searched commit: `origin/main` = `6dda46fc1a`.
+- `git grep -l -iE "toom|eroder|space-time contour|peierls contour|explanation tree" origin/main -- 'docs/*.md'` → nothing; block 12 (open PR) states the obligation and its exact obstruction (the naive backward tree's count).
+- The literature (reference only, read at arXiv: Gács 2105.05968; Swart–Szabó–Toninelli 2202.10999): the explanation-tree proof (arrows, forks, spanned sets with three linear functionals, the spanning lemma, refinement; edges `≤ 4(n−1)`; threshold `1/(32·24^8)`) and the Toom-contour formulation (`3^{−21}` for the north-east-center rule).
+Classification: **open after the matched-hit review.** Routes: T-A the naive backward tree — fails (block 12's obstruction); T-B the explanation tree with the three coordinate functionals `M_k = z_k − τ/3` in level time, degree `12`, depth-first count `(4r)^k` — chosen; T-C Toom contours with the sink/source accounting — not needed; T-D the continuum route — not attempted; T-E a per-level potential without contours — the counting fails (recorded in the control's design notes).

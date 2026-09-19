@@ -78,3 +78,21 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## Refresh at block 25 opening (2026-09-16)
+
+Block 25 opened for review (independent PR against main): block 12's S6 closed — the formation reading orders in three dimensions at strong coupling, with `ε_0 = 1/(2·96⁴)`. The campaign's record-dynamics row now reads: both readings order on `Z³` (static: block 17; formation: block 25); the sphere law's kernel lives on `Z³` in `[√3/6, 76/100]` (blocks 19–22) and nowhere on planes (20, 23). Ranked next:
+
+1. **Sharpen block 25's threshold** — a finer tree encoding (the exact counts `12, 198, 3688` are thirty times below `48^k` at `k = 3`) and a per-level accounting could bring `ε_0` up by orders of magnitude; the Toom-cycle idea of the literature is for two charges only — medium.
+2. **The band between block 08's region and block 25's** (uniqueness at moderate coupling; the formation law's transition) — hard.
+3. **The kernel's normalization on `Z³`** — hard.
+4. **Value-dependent order laws (block 16, X4)** — hard; unchanged.
+
+## Refresh at block 25 sharpening (2026-09-16)
+
+Item 1 of the previous refresh executed on the open PR: `ε_0` from `1/(2·96⁴)` to `7/10⁶` (factor `1189`), `p_0` at `(p, 1, 2)` from `3.4·10⁸` to `285718`. The count is now near the edge of its own domain (`7.4·10^{−6}`); what remains of the route's slack is the arrow budget `3(n − 1)` (executed trees never exceed `12/7`) and the union bound itself. Ranked next:
+
+1. **The arrow budget** — *dropped the same day*: `arrows ≤ 2(n − 1)` is refuted by the procedure itself (a random depth-12 cone gives `7/3` arrows per fork; `743` large random trees probed), so the budget can fall at most from `3` to about `7/3` for this construction, a gain below a factor two in `ε_0`; not worth a block.
+2. **The band between block 08's region and block 25's** — hard.
+3. **The kernel's normalization on `Z³`** — hard.
+4. **Value-dependent order laws (block 16, X4)** — hard; unchanged.

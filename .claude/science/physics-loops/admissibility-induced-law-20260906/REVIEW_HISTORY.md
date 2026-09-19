@@ -199,3 +199,22 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## block 25 — V1-V5 (supervisor, 2026-09-16)
+- V1: block 12's obligation S6 (PR #8146): the stability of the noisy majority eroder in level time — the last open row of the campaign's record-dynamics seam; the owner's directive to take the highest-leverage science after reading his drafts #8159–#8166.
+- V2: the lens pass in `GOAL_block25.md` ("this is the classical theorem" — re-proved at scope, executed exhaustively on small cones; "the threshold is absurd" — the route's crude constant, stated as such; "fork–fork adjacency" — the first-draft slip, fixed; "six laws or six extremal laws" — both, the latter under the named decomposition).
+- V3: T0–T7 proved; the skeleton executed exactly (22 checks, 13 mutations); the refuting pass agreed on five routes; the control caught and fixed the cause-graph slip before the contract.
+- V4: no reading, rule or coupling selected; the true threshold and the intermediate band not claimed; blocks 08, 12, 17 not re-proved beyond T0.
+- V5: consumers named — #8093's assembly (record dynamics: both readings order at strong coupling); the campaign's decision record; the queue.
+
+## block 25 — supervisor controls, primary, refuting pass and fold (2026-09-16)
+Controls: the construction implemented (`supervisor_control_block25_toom_core.py`) and run exhaustively on the depth-2 cone, on all depth-3 configurations with at most four noise sites, on 3000 random cones of depth 3–6, 1500 of depth 7–10, and on structured seeds; the first draft's fork–fork adjacency produced `5` edges for `2` noise nodes on the first configuration; the bipartite cause graph fixed it; worst ratio `2.875`. Primary: the note and the runner (22 checks, 13 mutations; one sympy summation form replaced by exact partial sums). Refuting pass (`CHECKER_block25_findings.md`): abstract spanning-lemma instances, float enumeration of the noise map, an independent graph implementation, direct summation, simulation — no findings beyond the folded one. Author checks only; independent review pending.
+
+## block 25 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-16)
+1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `6dda46fc1a`; the level-time reading declared in the note; nothing pinned from a branch or PR (PRs #8003/#8138/#8146/#8151 are evidence addresses). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings named as supplied; the true threshold and the band marked open; the crude constant stated; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+
+## block 25 — sharpening on the open PR (supervisor, 2026-09-16)
+- Control (`supervisor_control_block25_sharpening.py`): the refined T4 facts on `4308` explained trees; the candidate direction lemma refuted (`538` of `4308`); `66103` subtrees of `G` with `≤ 4` edges against the recursion's coefficients, lifts pairwise distinct, direct enumeration of the typed tree agreeing for `≤ 3` edges; the edge of the recursion's domain explored in floats (`7.37·10^{−6}` at `t = 0.092`); the exact certificate at `(91/1000, 1000/107653)` found along the Jacobian's dominant eigenvector; the new `p_0`.
+- Primary: T4 refined, T5–T6 replaced, T7 renumbered; the runner's D4/E1/E2/E3 rewritten (`certificate_wrong` replaces `series_constant_wrong`; `subtree_bound_wrong` drops an up-slot); 22/0; census 13/13; cache re-pinned.
+- Refuting pass (`supervisor_control_block25_sharpening_refuter.py`): float iteration of the recursion (fixed point below the certificate; divergence at `1.06 s`); the binomial split as a second bound (`44` times weaker); the Peierls partial sum over `64490` family trees; an independent recount of the upward arrows (`32` of `3253` exhaustive); simulation at `ε_0` (`8.3·10^{−6}` against `3·10^{−5}`).
+- V1–V5 unchanged in kind; V3 strengthened (the constant is now within a factor four of the simulated density at `ε_0`); V4: the true threshold still not claimed. Author checks only; independent review pending.

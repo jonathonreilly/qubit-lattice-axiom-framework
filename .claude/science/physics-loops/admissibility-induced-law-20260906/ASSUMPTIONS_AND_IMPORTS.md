@@ -23,3 +23,11 @@
 - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
 - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
 - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
+
+## Block 25 (2026-09-16) — the formation law's ordered phase
+- Dependencies: `minimal_axioms`; block 01 (on `main`; the rule and its conditional). Proposed, unaudited. PRs #8003, #8138, #8146, #8151 referenced as evidence addresses (the monotone class; the uniqueness region; the obligation and S0; the static reading's order).
+- Named premises: the records-only reading; positivity; the six-axis menu; the monotone formation order with corner `(+,+,+)` read in level time; the noisy majority automaton with i.i.d. one-sided noise as the dominating object.
+- Scaffolding: the depth-2 and depth-3 backward cones (exhaustive), random cones of depth `3`–`10`, line and triangle seeds; the three-state chain for the Cesàro identity; the `96×96` periodic plane in the refuting pass.
+- Standard mathematical imports at definition level: independence of the noise variables and the union bound; weak compactness of laws on a compact product space and the Krylov–Bogolyubov construction of invariant laws for Feller kernels; the extremal decomposition of invariant laws.
+- References named, not used: Toom (1980); Berman–Simon (1988); Gács (2021), whose exposition the construction follows; Swart–Szabó–Toninelli (2022); Bramson–Gray (1991).
+- Counterfactual pass: a non-eroding rule (two predecessors, block 12's two-dimensional case: no majority, no stability); two-sided noise (the coupling of T0 is one-sided by construction; the argument itself is indifferent); the static reading (block 17's route, chessboard and contours, is the counterpart); the band between block 08's region and this one (nothing claimed).

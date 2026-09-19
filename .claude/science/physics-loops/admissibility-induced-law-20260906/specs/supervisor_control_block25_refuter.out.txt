@@ -1,0 +1,9 @@
+R1 spanning lemma on 169 random abstract cluster/fork systems (independent implementation): identity holds in all: True
+R2 noise map = max of the three closed-form deviations at 200 random real weights (max discrepancy 4.4e-16): True
+R3 independent graph checks (numpy predecessors/siblings) on 363 explained random cones: True
+R4 max_K sum_{k<=K} 2 96^k / 96^K = 2.021052632 (192/95 = 2.021052632); bound at eps0 = 2.379538e-08 = 1/42024960 = 2.379538e-08
+R5 simulation eps=0.01: final density 0.0110, max density over 300 levels 0.0131
+R5 simulation eps=0.02: final density 0.0213, max density over 300 levels 0.0247
+R5 simulation eps=0.03: final density 0.0330, max density over 300 levels 0.0392
+R5 simulation eps=0.05: final density 0.0639, max density over 300 levels 0.0711
+R5 simulation eps=0.08: final density 1.0000, max density over 300 levels 1.0000

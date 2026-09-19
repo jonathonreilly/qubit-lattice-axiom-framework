@@ -1,0 +1,28 @@
+(1) 4308 explained trees: <= 1 arrow to a predecessor per node, marks = nodes without one, forks = n-1, arrows <= 3(n-1): True; max arrows/(n-1) = 12/7
+(1) candidate lemma 'every arrow points away from the root' FAILS on 538 of 4308 trees (a kept pole reached from below through its own arrow)
+(2) trees of G with <= 4 edges: 66103; lift injective: True
+(2) a=0 f=0: N = 1 <= coefficient 1 (equal)
+(2) a=0 f=1: N = 6 <= coefficient 6 (equal)
+(2) a=0 f=2: N = 45 <= coefficient 45 (equal)
+(2) a=0 f=3: N = 356 <= coefficient 380 
+(2) a=0 f=4: N = 2880 <= coefficient 3450 
+(2) a=1 f=0: N = 6 <= coefficient 6 (equal)
+(2) a=1 f=1: N = 108 <= coefficient 108 (equal)
+(2) a=1 f=2: N = 1512 <= coefficient 1512 (equal)
+(2) a=1 f=3: N = 18780 <= coefficient 19500 
+(2) a=2 f=0: N = 36 <= coefficient 36 (equal)
+(2) a=2 f=1: N = 1248 <= coefficient 1296 
+(2) a=2 f=2: N = 27405 <= coefficient 29160 
+(2) a=3 f=0: N = 220 <= coefficient 220 (equal)
+(2) a=3 f=1: N = 12150 <= coefficient 13080 
+(2) a=4 f=0: N = 1350 <= coefficient 1365 
+(2) all N <= coefficient: True
+(2) direct enumeration of admissible subtrees of the typed tree (<= 3 edges) equals the coefficients: True
+(3) exploration: best t^3 y_c(t) = 7.3672e-06 at t = 0.092; y_c(0.091) = 0.009780 > s = 1000/107653 = 0.009289
+(3) certificate exact: True; slacks [1.127876343209381e-05, 3.898069098456534e-06, 1.3706315452577732e-05]; R-bar = 3.907325 < 3.91: True; eps0 = 7/1000000; eps0 R-bar = 2.7351e-05 <= 3e-5: True
+(3) partial sum of the recursion over <= 5 edges at (t, s): 2.804451 (<= R-bar)
+(3) improvement of the threshold: 1189.1
+(4) p_0 at (p,1,2) = 285718 (was 339738628); eps(p_0) <= eps0 < eps(p_0 - 1): True
+(4) p_0 at (p,1,1) = 142861 (was 169869315); eps(p_0) <= eps0 < eps(p_0 - 1): True
+(4) p_0 at (p,2,4) = 571436 (was 679477255); eps(p_0) <= eps0 < eps(p_0 - 1): True
+(4) p_0 at (p,1,3) = 428576 (was 509607941); eps(p_0) <= eps0 < eps(p_0 - 1): True

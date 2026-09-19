@@ -1,0 +1,2 @@
+4-cycle test: plaquette=True star=False
+SUMMARY: pattern has no purchase on this note - the same 4-cycle test holds for the plaquette and fails for the star

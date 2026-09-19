@@ -1,0 +1,7 @@
+ratio1-1 numerator factors: (p - q)**2*(p**2 + 2*p*q + q**2 + 8*r**2)
+ratio2-1 numerator factors: (p**2 - 2*p*r + q**2 - 2*q*r + 2*r**2)*(p**2 + 2*p*r + q**2 + 2*q*r + 6*r**2)
+(Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): ratio1=169/121 ratio2=169/144
+(Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): ratio1=961/784 ratio2=8649/7744
+(Fraction(2, 1), Fraction(3, 1), Fraction(1, 1)): ratio1=289/256 ratio2=289/144
+(Fraction(37, 10), Fraction(1, 1), Fraction(2, 1)): ratio1=116281/67600 ratio2=9418761/7182400
+SUMMARY: pattern has no purchase on this note: X1's 'never vanishes' is an exact factorization, not a sampling claim; adversarial (p,q,r) including (3,1,2) keep the two-body ratios off 1

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8142",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block11-three-",
+ "worker": "w-macbookpro90c72-jf3d5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8142/adversarial_x1_never.py",
+ "seed": 87390,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "44168edd",
+ "started_utc": "20260919T030950Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: X1's 'never vanishes' is an exact factorization, not a sampling claim; adversarial (p,q,r) including (3,1,2) keep the two-body ratios off 1"
+ },
+ "review": "X1 never-vanishes is a factorization not a sampling claim; adversarial (3,1,2) and kin keep two-body ratios off 1; pattern has no purchase",
+ "what": "PR #8142 ([physics-loop] admissibility-induced-law block11 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915; git show origin/physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915:<note>. Create probes/work/pr8142/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8142/<script>.py\"",
+ "stdout_sha256": "18119297bd5ac9bd133fc042af6271e05666c5c32ed5c0cbd072372002fe10e4",
+ "stdout_tail": "ratio1-1 numerator factors: (p - q)**2*(p**2 + 2*p*q + q**2 + 8*r**2)\nratio2-1 numerator factors: (p**2 - 2*p*r + q**2 - 2*q*r + 2*r**2)*(p**2 + 2*p*r + q**2 + 2*q*r + 6*r**2)\n(Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)): ratio1=169/121 ratio2=169/144\n(Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)): ratio1=961/784 ratio2=8649/7744\n(Fraction(2, 1), Fraction(3, 1), Fraction(1, 1)): ratio1=289/256 ratio2=289/144\n(Fraction(37, 10), Fraction(1, 1), Fraction(2, 1)): ratio1=116281/67600 ratio2=9418761/7182400\nSUMMARY: pattern has no purchase on this note: X1's 'never vanishes' is an exact factorization, not a sampling claim; adversarial (p,q,r) including (3,1,2) keep the two-body ratios off 1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf3d5",
+  "at_utc": "20260919T030951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

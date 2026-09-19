@@ -1,0 +1,3 @@
+3-pred φ(0)=1
+2-pred φ(0)=1
+SUMMARY: pattern has no purchase on this note beyond the known exponent-vs-gamma HIT — 3-pred φ(0)=1 (gain one) holds; a 2-pred stencil also has φ(0)=1, which the note does not claim to lack

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8170",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block26-unsold",
+ "worker": "w-macbookpro90c72-j0633",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8170/same_test_gain_one.py",
+ "seed": 86619,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "76af2eb3",
+ "started_utc": "20260919T025659Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known exponent-vs-gamma HIT \u2014 3-pred \u03c6(0)=1 (gain one) holds; a 2-pred stencil also has \u03c6(0)=1, which the note does not claim to lack"
+ },
+ "review": "3-pred \u03c6(0)=1 gain-one holds; no new defect beyond known exponent-vs-gamma HIT",
+ "what": "PR #8170 ([physics-loop] admissibility-induced-law block26 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916; git show origin/physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916:<note>. Create probes/work/pr8170/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8170/<script>.py\"",
+ "stdout_sha256": "12ff289c1db934dfb80b6c523db7327f89432cf68648e5a0822b10e6d01203b7",
+ "stdout_tail": "3-pred \u03c6(0)=1\n2-pred \u03c6(0)=1\nSUMMARY: pattern has no purchase on this note beyond the known exponent-vs-gamma HIT \u2014 3-pred \u03c6(0)=1 (gain one) holds; a 2-pred stencil also has \u03c6(0)=1, which the note does not claim to lack\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0633",
+  "at_utc": "20260919T025700Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

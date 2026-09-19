@@ -1,0 +1,6 @@
+Q(1,0)=4 Q(0,1)=4 (stated 4)
+I: U^H U = I? True; det=1; Tr(U^H U)/3=1
+cycle: U^H U = I? True; det=1; Tr(U^H U)/3=1
+diag phases: U^H U = I? True; det=1; Tr(U^H U)/3=1
+cycle*diag: U^H U = I? True; det=1; Tr(U^H U)/3=1
+SUMMARY: pattern has no purchase on this note - Tr(W^*W)/3=1 on exact SU(3) identity, 3-cycle, diagonal phases and their product, and Q(1,0)=Q(0,1)=4, so section 4 ||Psi||=1 and 4/a-per-link hold

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8029",
+ "type": "judgment",
+ "lane": "infinite-static-block39-20260907",
+ "worker": "w-macbookpro90c72-je047",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8029/path_vector_normalization.py",
+ "seed": 84682,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "82dc55b4",
+ "started_utc": "20260919T022442Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - Tr(W^*W)/3=1 on exact SU(3) identity, 3-cycle, diagonal phases and their product, and Q(1,0)=Q(0,1)=4, so section 4 ||Psi||=1 and 4/a-per-link hold"
+ },
+ "review": "Exact SU(3) identity, 3-cycle, phases and product all have Tr(W^*W)/3=1 and Q(1,0)=4; pattern has no purchase",
+ "what": "PR #8029 ([physics-loop] infinite-static block39 conditional-support): attack GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/infinite-static-block39-20260907; git show origin/codex/infinite-static-block39-20260907:<note>. Create probes/work/pr8029/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8029/<script>.py\"",
+ "stdout_sha256": "d008fd3336a572ec31d94243813862cf19ac8fce78a494e0d884f086d1015552",
+ "stdout_tail": "Q(1,0)=4 Q(0,1)=4 (stated 4)\nI: U^H U = I? True; det=1; Tr(U^H U)/3=1\ncycle: U^H U = I? True; det=1; Tr(U^H U)/3=1\ndiag phases: U^H U = I? True; det=1; Tr(U^H U)/3=1\ncycle*diag: U^H U = I? True; det=1; Tr(U^H U)/3=1\nSUMMARY: pattern has no purchase on this note - Tr(W^*W)/3=1 on exact SU(3) identity, 3-cycle, diagonal phases and their product, and Q(1,0)=Q(0,1)=4, so section 4 ||Psi||=1 and 4/a-per-link hold\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je047",
+  "at_utc": "20260919T022442Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

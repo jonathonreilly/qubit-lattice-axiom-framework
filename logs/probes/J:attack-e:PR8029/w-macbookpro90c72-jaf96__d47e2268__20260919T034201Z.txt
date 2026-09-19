@@ -1,0 +1,4 @@
+Q(1,0)=4 Q(0,1)=4 (stated 4)
+Tr(I^H I)/3=1
+(4/a)(1-kappa)d at kappa=1/2 is (2/a)d
+SUMMARY: pattern has no purchase on this note — GNS sector bounds, Casimir 4 and Tr(W^*W)/3=1 are exact identities, not sampled never/always observations

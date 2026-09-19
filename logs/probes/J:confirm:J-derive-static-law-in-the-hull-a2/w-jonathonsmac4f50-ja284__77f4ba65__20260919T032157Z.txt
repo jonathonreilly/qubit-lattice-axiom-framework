@@ -1,0 +1,6 @@
+PASS P1: Z(C4) = brute force = tr W^4 = eigenvalue sum at the three rules
+PASS P2: (3, 1, 2): Z = 20784, D_min = 22464, margin 1680, orders attaining D_min 16; (5, 2, 4): Z = 280086, D_min = 295182, margin 15096, orders attaining D_min 16; (7, 3, 5): Z = 810768, D_min = 853200, margin 42432, orders attaining D_min 16; every order's all-+x mass p^4/D_sigma (chain rule) is below p^4/Z
+PASS P3: path of 3: Z = 864, D = 864
+INFO P4: C4 is the plaquette; the task names the 2x3 rectangle and the cube as the open windows (treated in a1 and a3)
+HIT: confirmed - static-law-in-the-hull a2 on C4: Z = tr W^4 = 20784, 280086, 810768 and D_min = 6 N_1^2 N_2 = 22464, 295182, 853200 over all 24 orders at (3,1,2), (5,2,4), (7,3,5), margins 1680, 15096, 42432, so every adapted scheme's all-+x mass is at most p^4/D_min < p^4/Z; path of 3: Z = D = 864; recomputed with new code. Scope: C4 is the plaquette, a special case of a1's cyclic-window separator (this referee's family), not the task's named windows
+SUMMARY: confirmed - no failing step on C4; the result is the plaquette case of a1's separator

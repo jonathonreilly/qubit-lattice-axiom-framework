@@ -1,0 +1,25 @@
+PASS: A1 box [0,3]^3 and box [-2,6]^3 give the same 37 one-sites (all inside [0,3]^3)
+PASS: A2 probes/lib/family.run_automaton gives the same one-set
+PASS: A3 1 on the 37 sites, 0 elsewhere satisfies the rule at every site of [-1,4]^3 (outside [0,4]^3 no site has a 1-predecessor)
+PASS: B1 one seed 000; the nine other marks are exactly the amplified sites; 27 processed; level sizes 1,3,3,4,3,6,7,6,3,1; 333 alone at level 9
+PASS: B2 333 is processed; its 1-predecessors 233,323,332 are processed
+v at c=1 by level (s/a/p = seed/amplified/processed): 0:000s0 | 1:001a-3 010a-3 100a-3 | 2:011p-2 101p-2 110p-2 | 3:021a-3 102a-3 111p-2 210a-3 | 4:112p-2 121p-2 211p-2 | 5:113a-3 122p-2 131a-3 212p-2 221p-2 311a-3 | 6:123p-2 132p-2 213p-2 222p-1 231p-2 312p-2 321p-2 | 7:133p-1 223p-1 232p-1 313p-1 322p-1 331p-1 | 8:233p0 323p0 332p0 | 9:333p1
+PASS: C1 v(333) = 1 while v(233) = v(323) = v(332) = 0; (H) holds at the other 36 one-sites
+PASS: C2 the tight processed sites are exactly 233, 323, 332
+PASS: D1 probes/lib/family.single_seed_min on eta truncated at level(z) equals v(z) at all 37 sites
+PASS: E1 tree at 233 (and its images at 323, 332 under (a,b,c)->(c,a,b)): valid, level-capped, (E,A,S) = (5,5,1), cost 0
+PASS: E2 tree at 333: valid, (E,A,S) = (10,9,1), cost 1, E/A = 10/9
+PASS: F1 PI = {011,101,110,112,121,211} processed at levels 2,4; amplified 001,010,100 -> 000; the other six amplified sites -> distinct members of PI (a bijection); levels 6-9 hold processed sites only, none in PI
+PASS: F2 on the exact DP output: E >= k+4, A <= k+3 at 333 and E >= k+3, A <= k+3 at level 8
+PASS: G1 c*(eta,333) = min E/A = 10/9 over 184 (E,A) pairs (every tree; no one-site above 333); the budget E <= c|A| holds for some tree iff c >= 10/9
+PASS: H1 marks, one-set, kinds and v are invariant under (a,b,c)->(c,a,b)
+PASS: I1 c = 1 control: max t(4/27-t) = 4/729 at t = 2/27; d_3 < 4/729 fails at p = 367, holds at 368 (block 32's E2)
+PASS: I2 t* = 40/513 is the stationary point of t^(10/9)(4/27 - t): (10/9)(4/27 - t*) = t*, 4/27 - t* = 36/513
+PASS: I3 d_3 = (2p+11)/(p^2+2p+11) has derivative numerator -2p^2-22p (identity of degree 2, checked at 12 points)
+PASS: I4 d_3 < h* fails for every p <= 488 and holds for 489 <= p <= 5000 (exact integers)
+INFO: probes/lib/rooted.py MILP agrees with the exact DP at 37/37 sites; at 333 value 1, (E,A,S) = (6,5,1)
+TOTAL: PASS=18 FAIL=0
+HIT: counterexample to block 33's tight-sibling lemma and (H): marks {000,001,010,100,021,102,210,113,131,311} (one seed, nine amplified) give 37 one-sites in [0,3]^3; 333 is processed, its 1-predecessors 233,323,332 are processed and tight (v=0), yet v(333)=1 (exact level DP; hand bound E>=k+4, A<=k+3); (H) holds at the other 36
+HIT: c*(eta,333)=10/9 exactly (tree E=10, A=9, S=1; every tree has E/A>=10/9), so block 32's constant c*>=10/9 and the unit budget c=1 fails at this realization
+HIT: with block 32 T4.2's inputs (t+eps2/t^c<4/27, eps2>=d_3=(2p+11)/(p^2+2p+11) on (p,1,2)), c>=10/9 needs d_3<max t^(10/9)(4/27-t) (t*=40/513): false for p<=488, true from 489, so T4.2's floor moves from 367 to 488
+SUMMARY: COUNTEREXAMPLE to the task's statement, block 33's tight-sibling lemma and (H): at a one-seed realization in [0,3]^3 the processed site 333 has three tight processed 1-predecessors and rooted value 1; c*(eta,333)=10/9, so block 32's c*>=10/9 and routes through the unit budget (453; block 33's c=1 certificates) are unavailable; conditional on T4.2's inputs the (p,1,2) floor is p<=488

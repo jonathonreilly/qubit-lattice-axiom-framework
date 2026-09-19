@@ -1,0 +1,4 @@
+path3 TV(seeded,static)=0 TV(all-order-clock,static)=1/216
+plaquette TV(seeded,static)=30457/2431728 TV(all-order-clock,static)=262271/15806232
+seeded=static: path3=True plaquette=False
+SUMMARY: pattern has no purchase on this note: the same TV(seeded,static) test is 0 on path3 and 30457/2431728 on the plaquette, so the tree vs plaquette separation holds as written

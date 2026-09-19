@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8177",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block33-rooted",
+ "worker": "w-macbookpro90c72-jff31",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8177/seed_lemma_fork_geometry.py",
+ "seed": 85056,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5968781c",
+ "started_utc": "20260919T023056Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known Z_B predecessor-value HIT \u2014 every pair of predecessors of a site in [0,4]^3 is a G-sibling fork, Z_A's root (3,3,3) has three distinct predecessors, the two-seed gadget is a Z^3 fork, and the nn graph on [0,3]^3 is triangle-free"
+ },
+ "review": "T1.2 predecessor pairs are G-sibling forks in Z^3; Z_A root (3,3,3) has three distinct predecessors; no new defect beyond known Z_B value HIT",
+ "what": "PR #8177 (ail33: the rooted inequality reduces the unit budget to the ): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917; git show origin/physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917:<note>. Create probes/work/pr8177/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8177/<script>.py\"",
+ "stdout_sha256": "a73c57fb5654b816054cb9644960f9d22b775551587774fe77094a852f3688de",
+ "stdout_tail": "Z_A root (3, 3, 3) predecessors [(2, 3, 3), (3, 2, 3), (3, 3, 2)]\nevery predecessor pair of (3, 3, 3) is a G-fork: True\npredecessor-pair fork failures on [0,4]^3: 0\nnn triangles in [0,3]^3: 0\ntwo-seed gadget {z=(2, 1, 1), s=(1, 1, 1), s'=(2, 0, 1)} fork=True\nSUMMARY: pattern has no purchase on this note beyond the known Z_B predecessor-value HIT \u2014 every pair of predecessors of a site in [0,4]^3 is a G-sibling fork, Z_A's root (3,3,3) has three distinct predecessors, the two-seed gadget is a Z^3 fork, and the nn graph on [0,3]^3 is triangle-free\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jff31",
+  "at_utc": "20260919T023056Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

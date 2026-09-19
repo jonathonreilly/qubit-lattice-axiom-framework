@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-attack-g-PR8174",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j8dd8",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8174/t1a_scope.py",
+ "seed": 89130,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b52a0d6",
+ "started_utc": "20260919T033850Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - T1(a)/T1(b) fail for positive weights with q > p (e.g. (1,2,1)); T4 unaffected"
+ },
+ "review": "Confirmed with an independent six-state-kernel computation: block 30's T1(a) d_1 <= max(d_2,d_3), stated for every positive weight triple, fails at (1,2,1) (d_1 = 12/13 > 9/10; 194 of 512 triples in {1..8}^3, all with q > p), which breaks T1(b)'s coupling there; the four T4 lines satisfy the inequality, so T4 is unaffected.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:attack-g:PR8174/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "562ece92ed39eff73d8d73b547fb5c5437353eaf8892010950dd74646e9b1341",
+ "stdout_tail": "[note] T1(a) states d_1 <= max(d_2, d_3): True; status 'T1-T5 proved for every positive weight triple': True; T1(b) uses 'max(d_1, d_2, d_3) = eps_2': True\n[(1,2,1)] d_1, d_2, d_3 = 12/13, 4/5, 9/10; max(d_2, d_3) = 9/10\n[scan] triples in {1..8}^3 with d_1 > max(d_2, d_3): 194; every one has q > p: True; first [(1, 2, 1), (1, 2, 2), (1, 2, 3), (1, 2, 4), (1, 2, 5)]\n[T4 lines] d_1 <= max(d_2, d_3) for p >= q on the four lines (tested to 60 and at the certificate couplings): {'(p,1,2)': True, '(p,1,1)': True, '(p,2,4)': True, '(p,1,3)': True}\n[T1(b)] at (1,2,1) a site with one eta'-dissenting predecessor whose three xi-predecessors all equal a has P(xi_x = 1 | past) = d_1 = 12/13 > eps_2 = 9/10: the monotone coupling xi_x <= 1{U_x < eps_2} is impossible there: True\nHIT: confirmed - block 30's T1(a) 'd_1 <= max(d_2, d_3)', stated as proved for every positive weight triple, fails: at (p,q,r) = (1,2,1) the six-state kernel gives d_1 = 12/13 > max(d_2, d_3) = 9/10 (194 of the 512 triples in {1..8}^3 fail, all with q > p); T1(b)'s coupling uses max(d_1, d_2, d_3) = eps_2 and breaks there (a state with all three xi-predecessors equal to a under one eta'-dissent has dissent probability d_1 > eps_2). The four T4 lines satisfy the inequality at every tested coupling, so T4's region is not affected; the defect is the scope 'every positive triple'\nSUMMARY: confirmed - T1(a)/T1(b) fail for positive weights with q > p (e.g. (1,2,1)); T4 unaffected\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8dd8",
+  "at_utc": "20260919T033850Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Block 30 (PR #8174) T1(a) claims d_1 <= max(d_2,d_3) for every positive weight triple; the six-state kernel gives d_1 = 12/13 > 9/10 at (1,2,1) and fails on all tested triples with q > p, so T1(b)'s identification max(d_1,d_2,d_3) = eps_2 and its coupling fail there; the T4 lines (p >= q) are unaffected - a scope defect.",
+  "by": "w-jonathonsmac4f50-j8dd8",
+  "at_utc": "20260919T033850Z"
+ }
+}

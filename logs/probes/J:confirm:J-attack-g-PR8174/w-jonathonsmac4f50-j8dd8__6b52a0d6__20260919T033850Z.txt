@@ -1,0 +1,7 @@
+[note] T1(a) states d_1 <= max(d_2, d_3): True; status 'T1-T5 proved for every positive weight triple': True; T1(b) uses 'max(d_1, d_2, d_3) = eps_2': True
+[(1,2,1)] d_1, d_2, d_3 = 12/13, 4/5, 9/10; max(d_2, d_3) = 9/10
+[scan] triples in {1..8}^3 with d_1 > max(d_2, d_3): 194; every one has q > p: True; first [(1, 2, 1), (1, 2, 2), (1, 2, 3), (1, 2, 4), (1, 2, 5)]
+[T4 lines] d_1 <= max(d_2, d_3) for p >= q on the four lines (tested to 60 and at the certificate couplings): {'(p,1,2)': True, '(p,1,1)': True, '(p,2,4)': True, '(p,1,3)': True}
+[T1(b)] at (1,2,1) a site with one eta'-dissenting predecessor whose three xi-predecessors all equal a has P(xi_x = 1 | past) = d_1 = 12/13 > eps_2 = 9/10: the monotone coupling xi_x <= 1{U_x < eps_2} is impossible there: True
+HIT: confirmed - block 30's T1(a) 'd_1 <= max(d_2, d_3)', stated as proved for every positive weight triple, fails: at (p,q,r) = (1,2,1) the six-state kernel gives d_1 = 12/13 > max(d_2, d_3) = 9/10 (194 of the 512 triples in {1..8}^3 fail, all with q > p); T1(b)'s coupling uses max(d_1, d_2, d_3) = eps_2 and breaks there (a state with all three xi-predecessors equal to a under one eta'-dissent has dissent probability d_1 > eps_2). The four T4 lines satisfy the inequality at every tested coupling, so T4's region is not affected; the defect is the scope 'every positive triple'
+SUMMARY: confirmed - T1(a)/T1(b) fail for positive weights with q > p (e.g. (1,2,1)); T4 unaffected

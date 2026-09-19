@@ -1,0 +1,32 @@
+{
+ "task": "J:note:ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THE",
+ "type": "judgment",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-j5ec4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMAT/exact_elimination_4x4.py",
+ "seed": 8037,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c2805dc7",
+ "started_utc": "20260919T085357Z",
+ "elapsed_s": 9.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "by exact variable elimination on the 4 x 4 rectangle (beyond the note's 3 x 4), at both declared triples every column and row is the K-chain, all 9 blocks carry the corner law pi with P(a,b|c) = K(c,a)K(c,b), all anti-diagonal pairs are K^2/6, and all 18 turning 3-site staircases have nonzero Markov defect; P(c|c,c) > K(c->c) holds in all 1980 cases on {1..10}^3; the extension counts 5, 42, 462, 24024 extend to 1662804 and 701149020: no falsifier fires"
+ },
+ "review": "Output matches the task (the note's finite falsifiers checked by exact rational variable elimination on the 4 x 4 rectangle, beyond the runner's enumerations up to 3 x 4): at (3,1,2) and (5,2,4) every column and row is the K-chain, all 9 blocks equal the corner law pi with P(a,b|c) = K(c,a)K(c,b), all anti-diagonal pairs equal K^2/6, and all 18 turning 3-site staircases have nonzero Markov defect (0.020396, 0.010033); P(c|c,c) > K(c->c) in all 1980 non-constant cases of {1..10}^3; extension counts agree with the hook-length formula through 5 x 5 (701149020); no falsifier fires.",
+ "what": "Note on main: docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMAT/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMAT/<script>.py\"",
+ "stdout_sha256": "2edf4132d5a9c34fe68397cbcbf385527f283f061dd6675317291aa219aaeca5",
+ "stdout_tail": "4x4, triple (3, 1, 2): every column K-chain True; every row K-chain True; all 9 blocks = pi True; P(a,b|c) = K(c,a)K(c,b) True; all anti-diagonal pairs = K^2/6 True; 18 turning 3-site staircases, Markov defects in [0.020396, 0.020396] (all nonzero True)\n4x4, triple (5, 2, 4): every column K-chain True; every row K-chain True; all 9 blocks = pi True; P(a,b|c) = K(c,a)K(c,b) True; all anti-diagonal pairs = K^2/6 True; 18 turning 3-site staircases, Markov defects in [0.010033, 0.010033] (all nonzero True)\nP(c|c,c) > K(c->c): 1980 (triple, c) cases on {1..10}^3 non-constant, violations 0\nlinear extensions (hook length = direct count): {(2, 3): (5, 5), (3, 3): (42, 42), (3, 4): (462, 462), (4, 4): (24024, 24024), (4, 5): (1662804, 1662804), (5, 5): (701149020, 701149020)}\nSUMMARY: by exact variable elimination on the 4 x 4 rectangle (beyond the note's 3 x 4), at both declared triples every column and row is the K-chain, all 9 blocks carry the corner law pi with P(a,b|c) = K(c,a)K(c,b), all anti-diagonal pairs are K^2/6, and all 18 turning 3-site staircases have nonzero Markov defect; P(c|c,c) > K(c->c) holds in all 1980 cases on {1..10}^3; the extension counts 5, 42, 462, 24024 extend to 1662804 and 701149020: no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5ec4",
+  "at_utc": "20260919T085407Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

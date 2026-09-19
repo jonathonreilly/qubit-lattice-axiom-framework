@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_commensuration_unconditional_lemma_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_commensuration_unconditional_lemma_2026_06_12.py",
+ "seed": 32373,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153933Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "47b279838b33db32606557f539c787cf41a49fda088c101b68cdf05681eb6144",
+ "stdout_tail": "gle trivial coset (delta == 0), parity vacuously preserved; criterion scoped to q_i >= 2 :: q1_deltas=(0, 0, 0, 0, 0, 0, 0)\nPASS: even q has no odd q*k branch and no parity failures :: qk_odd=0, parity_failures=0\nPASS: odd q flip set matches centered odd-k round set and is nonempty :: rule_failures=0, set_mismatch_q=0, empty_flip_q=0\nPASS: odd q witness a=(q+1)/2 succeeds for every swept odd q :: witness_failures=0\nPASS: q=99 flip profile is the frozen high-half odd-k profile :: profile=(50, 98, 49)\nC. assembled chart-family gates\n  L= 8 periods=(4, 8, 4) per_axis_predicts_holds=True mismatches=0 first_mismatch=None\n  L=10 periods=(5, 10, 5) per_axis_predicts_holds=False mismatches=5700 first_mismatch=((0, 0, 0), (0, 0, 3), (0, 0, -2), 0, 1)\n  L=12 periods=(6, 12, 6) per_axis_predicts_holds=True mismatches=0 first_mismatch=None\n  L=16 periods=(8, 16, 8) per_axis_predicts_holds=True mismatches=0 first_mismatch=None\n  L=18 periods=(9, 18, 9) per_axis_predicts_holds=False mismatches=197640 first_mismatch=((0, 0, 0), (0, 0, 5), (0, 0, -4), 0, 1)\n  L=26 periods=(13, 26, 13) per_axis_predicts_holds=False mismatches=1802892 first_mismatch=((0, 0, 0), (0, 0, 7), (0, 0, -6), 0, 1)\nPASS: full-coset checks agree exactly with per-axis iff prediction :: iff_disagreements=0\nPASS: selected all-even-period charts have zero full-coset mismatches :: protected_mismatch_total=0\nPASS: selected odd-period charts all have a nonempty failure set :: unprotected_empty_failures=0\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T153934Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

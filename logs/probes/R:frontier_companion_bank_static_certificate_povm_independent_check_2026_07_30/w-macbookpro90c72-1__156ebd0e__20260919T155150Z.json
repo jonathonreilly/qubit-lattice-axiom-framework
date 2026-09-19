@@ -1,0 +1,41 @@
+{
+ "task": "R:frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py",
+ "seed": 33110,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T155150Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "04a03b677e2d14cf6d73b10c6e9f9a8f9ac85dd58d78d6e152c6155148a5fdfc",
+ "stdout_tail": " primary declaration\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py\", line 671, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py\", line 440, in main\n    baseline_fingerprint = input_fingerprint(paths)\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py\", line 407, in input_fingerprint\n    body = replacements.get(relative, path.read_bytes())\n                                      ~~~~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T155150Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'FAIL independent inputs mechanically contain the complete primary declaration' vs cache 'RESULT COMPANION_BANK_STATIC_CERTIFICATE_POVM_INDEPENDENT_GREEN'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonreilly/.probe-workers/Physics/slot-1/docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md, which is not in the tree at that path",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T155150Z"
+ }
+}

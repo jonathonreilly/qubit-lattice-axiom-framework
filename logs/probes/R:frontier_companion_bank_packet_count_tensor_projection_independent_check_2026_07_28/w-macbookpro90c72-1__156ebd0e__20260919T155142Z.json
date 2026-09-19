@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_companion_bank_packet_count_tensor_projection_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_companion_bank_packet_count_tensor_projection_independent_check_2026_07_28.py",
+ "seed": 33102,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T155142Z",
+ "elapsed_s": 8.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "256a2c6bb8053b50b2787e803e8aa4ae57e140b8f6155ed442dd85ae40b40686",
+ "stdout_tail": "valid\": true,\n          \"static_predicate_value\": 1\n        },\n        \"binder\": {\n          \"liveness_witness_valid\": true,\n          \"static_predicate_value\": 1\n        },\n        \"certificate\": {\n          \"liveness_witness_valid\": true,\n          \"static_predicate_value\": 1\n        },\n        \"law_domain\": {\n          \"liveness_witness_valid\": true,\n          \"static_predicate_value\": 1\n        }\n      },\n      \"sources_clean\": true,\n      \"stage_slot_counts\": {\n        \"A\": 225,\n        \"B\": 9,\n        \"C\": 112,\n        \"D\": 17304,\n        \"E\": 24\n      },\n      \"violation_count\": 0\n    }\n  },\n  \"primary_contract_sha256\": \"71aa06d2b991e1d5cb9aeaedcc57bfd636f668acc3b11f6f4e312325fcf26847\",\n  \"raw_reconstruction\": {\n    \"fixture_constraint_residual_norm\": 2.4420869033412487e-14,\n    \"fixture_vector\": [\n      22.94603275562001,\n      5.004747709738101,\n      -2.7260395264152715,\n      -15.459522305985885,\n      19.302588290385657,\n      -12.946888676178023,\n      -15.774281229146602,\n      -11.262575850979188,\n      15.059939956172183,\n      -7.494110980836346\n    ],\n    \"stage_constraint_residual_norm\": 19195.11316756038,\n    \"stage_nonproportional_residual_norm\": 24473.660007974104,\n    \"stage_vector\": [\n      225.0,\n      9.0,\n      112.0,\n      17304.0,\n      24.0,\n      225.0,\n      18.0,\n      0.0,\n      17304.0,\n      24.0\n    ]\n  },\n  \"runtime_seconds\": 7.561344375018962,\n  \"status\": \"PASS\"\n}\nFINAL_TAG: COMPANION_BANK_PACKET_COUNT_TENSOR_PROJECTION_INDEPENDENT_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T155150Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_companion_bank_packet_count_tensor_projection_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

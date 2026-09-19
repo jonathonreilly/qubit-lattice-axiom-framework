@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_companion_bank_input_package_independent_adversary_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_companion_bank_input_package_independent_adversary_2026_07_28.py",
+ "seed": 32976,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T154936Z",
+ "elapsed_s": 9.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9b5f6ee27703e8e2a66bb00c9629fa8d456f7a0d6b4c418c65e02468e7d1ae76",
+ "stdout_tail": "change_port_range_formula\": \"[q,q+6)\",\n    \"docstring_sha256\": {\n      \"frontier_companion_bank_bell_character_dilation_2026_07_28\": \"d546ad4874b2b307f91b90cd4062df5dc04da6622d3d3527fc1d1f6bbc546908\",\n      \"frontier_companion_bank_epoch_liveness_2026_07_28\": \"53577cd0fec0b7ef618c6884e6fb83be25c378074bdd2138259d23128022ab7e\",\n      \"frontier_companion_bank_even_exchange_port_2026_07_28\": \"1d9b2b0cb3d7025490e49439495a8b625bc8fdbc219739b98ce3dd20278f33c8\"\n    },\n    \"epoch_liveness_declares_literal_slot_walk\": true,\n    \"epoch_liveness_declares_stage_components\": false,\n    \"even_exchange_port_declares_colocation\": true,\n    \"even_exchange_port_declares_one_six_mode_live_bank\": true\n  },\n  \"report_sha256\": \"1e91a0de06c84e95d559a8b98849cd4394540d424d2cb1d77d6f0d1d0f86b2fe\",\n  \"runtime_seconds\": 9.178776082932018,\n  \"status\": \"PASS\",\n  \"top_level_blocklist\": [\n    \"frontier_companion_bank_bell_character_dilation_2026_07_28\",\n    \"frontier_companion_bank_epoch_liveness_2026_07_28\",\n    \"frontier_companion_bank_even_exchange_port_2026_07_28\"\n  ],\n  \"wording_corrections\": [\n    \"The epoch runner's description of its alternate port as the even_exchange_port leg needs a namespace qualifier: standalone even_exchange_port declares one six-qubit bank [q,q+6), whereas the epoch embeds a port-indexed six-qubit sub-block inside the q-wide bell_character bank [q,2q).  These register conventions coincide only for port index zero.\"\n  ]\n}\nCOMPANION_BANK_INPUT_PACKAGE_INDEPENDENT_ADVERSARY_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T154945Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_companion_bank_input_package_independent_adversary_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

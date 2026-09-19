@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_common_e_ordered_physical_rom_composition_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_common_e_ordered_physical_rom_composition_2026_07_25.py",
+ "seed": 32425,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T154025Z",
+ "elapsed_s": 74.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4e7826ead42a4048cd95e19be547fbebb5b04494c9ebe3789a184a6b3fcf42ae",
+ "stdout_tail": "nly; no claim against a different bounded gauge/auxiliary encoding'}\nphysical_code_action_covariance {'proper_cubic_frames': 24, 'frame_products': 576, 'frame_representation_group_failures': 0, 'maximum_representation_unitarity': 0.0, 'target_CAR_update_maximum_covariance_residual': 0.0, 'executed_endpoint_ROM_maximum_covariance_residual': 2.0000000000000004, 'executed_endpoint_ROM_failed_frames': 23, 'lexicographic_order_runtime_service_used': False, 'lexicographic_order_role': 'offline sparse-row and mode-basis bookkeeping; its parity cocycle is not supplied to the physical ROM'}\ntranslation {'L': 5, 'translations': 125, 'translated_owner_fixtures': 1375, 'translation_chart_ambiguities': 0, 'translation_invalid_qutrit_words': 0, 'translation_duplicate_chart_failures': 0, 'translation_carrier_coefficient_mismatches': 0, 'translation_fixture_sha256': 'd0ad1da516895e085c0e634c17838db5c5733edea8e1bef532b7ce50eb4e5bb9', 'all_torus_translations_tested': True, 'recurrent_update_claimed': False}\ntranslation {'L': 6, 'translations': 216, 'translated_owner_fixtures': 2376, 'translation_chart_ambiguities': 0, 'translation_invalid_qutrit_words': 0, 'translation_duplicate_chart_failures': 0, 'translation_carrier_coefficient_mismatches': 0, 'translation_fixture_sha256': '1b77e9fb2d79aaf9924661803f0acabce650ffd138aff7e325b92003dc929240', 'all_torus_translations_tested': True, 'recurrent_update_claimed': False}\nROUTE_A_ACTUAL_COMMON_E_COMPOSITION_FALSIFIED_BY_UNSUPPLIED_CAR_PARITY_COCYCLE\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T154140Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

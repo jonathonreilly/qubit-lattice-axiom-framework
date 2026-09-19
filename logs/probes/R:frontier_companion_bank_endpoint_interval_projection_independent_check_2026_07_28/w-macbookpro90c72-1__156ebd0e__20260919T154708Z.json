@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_companion_bank_endpoint_interval_projection_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_companion_bank_endpoint_interval_projection_independent_check_2026_07_28.py",
+ "seed": 32828,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T154708Z",
+ "elapsed_s": 8.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eafddbf64b132edd5aed9cd6d969fc0906b670965f4de1a6071b552ffae53362",
+ "stdout_tail": "auss_cycle612_endpoint_bridge_2026_07_25.py\",\n          \"scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py\",\n          \"scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py\",\n          \"scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py\",\n          \"docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md\",\n          \"docs/COMPANION_BANK_LIVENESS_SCHEDULE_ENDPOINT_INTERVAL_PACKET_PROJECTION_BOUNDED_THEOREM_NOTE_2026-07-28.md\"\n        ],\n        \"attribute_assignments_onto_imported_harnesses\": [],\n        \"blocked_primary_imports_present\": [],\n        \"forbidden_class_definitions\": [],\n        \"imported_harness_aliases\": [\n          \"C704\",\n          \"EPOCH\"\n        ],\n        \"pass\": true\n      },\n      \"label\": \"primary_source_discipline\",\n      \"pass\": true\n    }\n  ],\n  \"claim_boundary\": {\n    \"cycle612_packet_feed_evaluated\": false,\n    \"register_state_readout_evaluated\": false,\n    \"reversible_packet_encoder_evaluated\": false,\n    \"static_field_predicates_recomputed\": true\n  },\n  \"report_sha256\": \"8308a35ed182b2ed7cf2033bcb12d180e43ddecf5922ab7bc83f1655ace9e3cf\",\n  \"runtime_seconds\": 7.979262790991925,\n  \"status\": \"PASS\",\n  \"top_level_blocklist\": [\n    \"frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28\"\n  ]\n}\nCOMPANION_BANK_ENDPOINT_INTERVAL_PROJECTION_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T154716Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_companion_bank_endpoint_interval_projection_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

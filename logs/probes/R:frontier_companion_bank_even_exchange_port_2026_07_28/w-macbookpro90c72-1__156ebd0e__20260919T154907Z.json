@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_companion_bank_even_exchange_port_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py",
+ "seed": 32947,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T154907Z",
+ "elapsed_s": 29.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "65b84945a91a51b127c307b88369492d593d987f3026910b00f82b60799b4894",
+ "stdout_tail": "1c406fca7a9a6f0b2d5bf75da74fd1712849904bdc2197a47\"\n      }\n    },\n    \"census_role\": \"reported measured ceiling for a future literal V_s-restriction word; no route is compiled from the digest or locality metrics\",\n    \"literal_v_s_restriction_compiled\": false,\n    \"v_s_coordinate_rows_returned\": false\n  },\n  \"fixture_constructor_equivalence\": {\n    \"cells_identical\": true,\n    \"edges_identical\": true,\n    \"matter_qubits_identical\": true,\n    \"qubits_identical\": true,\n    \"shape\": [\n      2,\n      2,\n      2\n    ],\n    \"used_constructor\": \"O.arbitrary_fixture(Q.shape_cells(shape))\"\n  },\n  \"open\": [\n    \"a public immutable V_s tableau/coordinate API and literal restriction compiler\",\n    \"the Bell/Choi gauge-mixed logical injection E_s\",\n    \"fault-tolerant preparation, decoding, and autonomous sector repair\",\n    \"coframe-origin seeded transport: this bank/dictionary surface touches no coframe registers, so the eight-origin channel covariance stays with the epoch-level composition\",\n    \"autonomous selection of the port cell: the lexicographic-minimum default is a supplied chart convention (covariance evaluates the transported port)\"\n  ],\n  \"runtime_seconds\": 28.43189370795153,\n  \"status\": \"companion-bank-even-exchange-port-pass\",\n  \"supplied\": [\n    \"the predecessor companion/center operator dictionary and sector inventory\",\n    \"one clean six-qubit live-input bank co-located at the declared port\",\n    \"the total-parity label and companion center-sector representative\"\n  ]\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T154936Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_companion_bank_even_exchange_port_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

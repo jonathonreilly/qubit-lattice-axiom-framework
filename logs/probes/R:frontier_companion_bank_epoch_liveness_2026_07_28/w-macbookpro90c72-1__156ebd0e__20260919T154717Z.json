@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_companion_bank_epoch_liveness_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py",
+ "seed": 32837,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T154717Z",
+ "elapsed_s": 110.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ae8a476ed28abb1e37cdebbee27b0ee3120839319e382e7134836bb76f5e6833",
+ "stdout_tail": "       \"bell_character_exported_Z_character_failures\": 0,\n          \"bell_character_exported_other_measured_row_failures\": 0\n        },\n        \"even_exchange_port_stage_action\": {\n          \"not_applicable\": 0\n        },\n        \"failing_generators\": [],\n        \"generator_family_census\": {\n          \"Bell_ancilla_X\": 100,\n          \"Bell_ancilla_Z\": 100,\n          \"Bell_measured\": 100,\n          \"cell_bank_parity\": 8,\n          \"cell_code_parity\": 8,\n          \"cell_joint_parity\": 8,\n          \"direct_graph\": 100,\n          \"pump_ancilla_X\": 100,\n          \"pump_ancilla_Z\": 100,\n          \"pump_graph\": 100,\n          \"pump_measured\": 100\n        },\n        \"generators_exhausted\": 824,\n        \"pass\": true,\n        \"phase_included\": true,\n        \"pump_stage_action\": {\n          \"dilation_X_failures\": 0,\n          \"dilation_Z_character_failures\": 0,\n          \"private_dual_predecessor_failures\": 0,\n          \"private_dual_self_failures\": 0\n        },\n        \"shape\": [\n          2,\n          2,\n          2\n        ],\n        \"stage_A_B_C_tableau_gates\": 1220,\n        \"stage_action_failure_total\": 0,\n        \"stagewise_vs_flattened_tableau_failures\": 0,\n        \"variant\": \"primary\"\n      }\n    }\n  },\n  \"status\": \"PASS\",\n  \"supplied\": \"one-time finite epoch; fixed sector and genesis inventory; clean initial banks; declared root/router and program content; the companion-encoded Bell-character bank and alternate declared even-exchange port are both supplied input conventions\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T154907Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_companion_bank_epoch_liveness_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_purity_non_reduction_past_hypothesis_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_color_purity_non_reduction_past_hypothesis_2026_06_09.py",
+ "seed": 32372,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153932Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f485893f83076b04f9d799ff41c6f9c3cb6966f4f174494daa07c7fa0881ae5e",
+ "stdout_tail": " rho=I3/3)\n\n=== purity is orientation-invariant ===\n[PASS] P(U rho U^dag) = P(rho) for every orientation (spectral function)\n[PASS] retiring orientation leaves the purity residual intact (P stays > 0)\n\n=== global entropy does not fix color purity ===\n[PASS] S(I3/3) = log 3 (maximal qutrit marginal entropy)\n[PASS] globally PURE singlet: S_global = 0\n[PASS] singlet marginal rho_A = I3/3 (P = 0)\n[PASS] separable realization: marginal rho_A = I3/3 (P = 0)\n[PASS] maximally mixed two-carrier realization: S_global = log 9\n[PASS] P=0 realized at both entropy poles => global entropy does not fix P\n\n=== purity zero does not entail neutrality ===\n[PASS] singlet rho_A = I3/3 (P = 0)\n[PASS] singlet INVARIANT under g (x) g* (color-neutral)\n[PASS] two-fundamental |F> is globally PURE\n[PASS] two-fundamental marginal rho_A = I3/3 (P = 0)\n[PASS] two-fundamental NOT invariant under diagonal g (x) g (NOT a singlet)\n[PASS] purity is STRICTLY WEAKER than global neutrality (converse fails)\n\n=== reduction assembly ===\n[PASS] past hypothesis (fixes global entropy) does NOT pin the purity P\n[PASS] retiring orientation does not pin P (pin needs the symmetry demand)\n[PASS] no admission discharged / no count reduced (proposed reduction refuted)\n[PASS] singlet is the neutral P=0 realization; two-fundamental is the non-neutral one\n\n=== discipline and hygiene ===\n[PASS] all constructed objects are valid densities\n[PASS] booleans wired to fresh computations (no tautological self-pass)\n\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T153932Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

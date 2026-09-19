@@ -1,0 +1,19 @@
+FAIL independent inputs mechanically contain the complete primary declaration
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py", line 671, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py", line 440, in main
+    baseline_fingerprint = input_fingerprint(paths)
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py", line 407, in input_fingerprint
+    body = replacements.get(relative, path.read_bytes())
+                                      ~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 625, in read_bytes
+    with self.open(mode='rb') as f:
+         ~~~~~~~~~^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md'

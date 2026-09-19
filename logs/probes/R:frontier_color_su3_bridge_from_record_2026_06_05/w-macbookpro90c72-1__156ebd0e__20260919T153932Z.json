@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_su3_bridge_from_record_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_color_su3_bridge_from_record_2026_06_05.py",
+ "seed": 32372,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153932Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dfc567c461377afac75577eef7d3bb032e42e35862b3fc76a682935ab3ebe48a",
+ "stdout_tail": "'the identification of the\n  3D symmetric base with physical SM color SU(3)_c'. #2667 supplies\n  (a) but NOT (b); the deferred bridge IS the residual (b).\n  [PASS] (a) verified: commutant identity holds for the color singlets\n  [PASS] (b) named: residual = matter realization (which symmetry's singlets are records)\n\n  (narration, not scored) the framework's color notes defer\n  'symmetric-base = physical color', i.e. residual (b), not (a).\n\n------------------------------------------------------------------------------------\nVERDICT\n------------------------------------------------------------------------------------\nRecord axiom (#2667 +#2711) supplies the gauge-from-record-invariance\nHALF of the symmetric-base -> physical-color bridge (a genuine\nalgebraic identity on the explicit C^8 carrier), but NOT the full\nbridge: the residual -- WHICH local symmetry is gauged / quarks in the\nfundamental-3 / the matter-realization residual -- is open,\nnot forced. base-SU(3)-vs-fiber-SU(2) gauging is NOT discriminated by\nrecords/locality/links. This is PARTIAL-PINNING, not a derivation of\ncolor. The framework's 'the bridge is the load-bearing boundary' flag\nis the residual (b); #2667 reduces the bridge to it but does not close it.\n\n------------------------------------------------------------------------------------\nSELF-CHECK SUMMARY\n------------------------------------------------------------------------------------\n  peak RSS (best-effort): 69.6 MB  (cap 2048 MB)\n  SUMMARY: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T153932Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_color_su3_bridge_from_record_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_commensuration_general_lemma_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_commensuration_general_lemma_2026_06_12.py",
+ "seed": 32373,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153933Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "354850780075299c0cd32bf79d83b18e347d4ead3ac0384cd8ad6b68b67f5983",
+ "stdout_tail": " 0, 1)\nPASS: C L=18 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=197640\n  L=20 periods=(10, 20, 10) pairs=1000000 mismatches=0 holds=True first_mismatch=none\nPASS: C L=20 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0\n  L=22 periods=(11, 22, 11) pairs=1771561 mismatches=660660 holds=False first_mismatch=((0, 0, 0), (0, 0, 7), (0, 0, -4), 0, 1)\nPASS: C L=22 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=660660\n  L=24 periods=(12, 24, 12) pairs=2985984 mismatches=0 holds=True first_mismatch=none\nPASS: C L=24 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0\n  L=26 periods=(13, 26, 13) pairs=4826809 mismatches=1802892 holds=False first_mismatch=((0, 0, 0), (0, 0, 7), (0, 0, -6), 0, 1)\nPASS: C L=26 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=1802892\n  L=28 periods=(14, 28, 14) pairs=7529536 mismatches=0 holds=True first_mismatch=none\nPASS: C L=28 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0\n  L=30 periods=(15, 30, 15) pairs=11390625 mismatches=4258800 holds=False first_mismatch=((0, 0, 0), (0, 0, 9), (0, 0, -6), 0, 1)\nPASS: C L=30 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=4258800\nPASS: C-summary protected L values have zero mismatches :: protected grid L=(8,12,16,20,24,28)\nPASS: C-summary unprotected L values have at least one mismatch :: unprotected grid L=(10,14,18,22,26,30)\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T153933Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

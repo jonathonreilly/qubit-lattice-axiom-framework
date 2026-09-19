@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_companion_bank_static_certificate_povm_input_acceptance_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_companion_bank_static_certificate_povm_input_acceptance_2026_07_30.py",
+ "seed": 33110,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T155150Z",
+ "elapsed_s": 8.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "292f37804344ba843b4c539f55a587efc38b79727457b1bdb5f21f4a32e06239",
+ "stdout_tail": "067987153708593,-0.10624346400440443,0.023774338877114304],\"weighted_bloch_norm\":0.1940899635475093},\"pins\":{\"B317\":\"e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10\",\"source\":\"b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0\"},\"source\":{\"alternate_port\":{\"field_counts\":{\"actuality\":24,\"admissibility\":24,\"binder\":24,\"certificate\":24,\"law_domain\":24},\"lawful\":true,\"rows\":24,\"stage_destination_counts\":{\"A\":100,\"B\":12,\"C\":0,\"D\":72}},\"primary\":{\"field_counts\":{\"actuality\":24,\"admissibility\":24,\"binder\":24,\"certificate\":24,\"law_domain\":24},\"lawful\":true,\"rows\":24,\"stage_destination_counts\":{\"A\":100,\"B\":152,\"C\":180,\"D\":72}}},\"split\":{\"direction\":[0.5773502691896257,0.5773502691896257,0.5773502691896257],\"effect_spectra\":[[-8.663816624429912e-18,0.17],[2.115025480545206e-17,0.29000000000000004],[2.520792359038087e-18,0.54],[1.890812283321094e-17,1.0]],\"isometry_residual\":2.4999285328858064e-16,\"povm_normalization_residual\":2.220446049250313e-16},\"status\":\"PASS\",\"supplied\":{\"Bloch_coordinate_order\":[\"x\",\"y\",\"z\"],\"Bloch_fields\":[\"certificate\",\"actuality\",\"law_domain\"],\"coefficient_projector_pairing\":\"positional\",\"contact_phase\":0.37,\"normalization\":\"Euclidean L2\",\"pooling\":[\"primary\",\"alternate_port\"],\"projector_directions\":[[1.0,2.0,3.0],[-1.0,0.0,0.0],[0.0,-1.0,0.0],[0.0,0.0,-1.0]],\"sign\":\"positive\",\"split_fractions\":[0.17,0.29,0.54],\"stage_order\":[\"A\",\"B\",\"C\",\"D\"]}}\nSUMMARY PASS 7 FAIL 0\nRESULT COMPANION_BANK_STATIC_CERTIFICATE_POVM_ACCEPTANCE_GREEN\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T155159Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

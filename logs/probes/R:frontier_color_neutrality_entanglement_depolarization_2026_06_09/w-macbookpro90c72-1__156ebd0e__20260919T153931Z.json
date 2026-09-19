@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_neutrality_entanglement_depolarization_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_color_neutrality_entanglement_depolarization_2026_06_09.py",
+ "seed": 32371,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153931Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5d4caa5b933a29b4d3bc748af3ab17ad913e5088c3eef5aecb4eaaf3f182673e",
+ "stdout_tail": "_y* does NOT fix the singlet\n[PASS] E3 singlet marginal = I3/3 independent of any frame (no V-eigenframe escape)\n\n=== E4: Schur no-go -- a lone fundamental carrier cannot be neutralized ===\n[PASS] E4 only invariant single-carrier operator is the scalar (twirl -> (Tr/Nc) I)\n[PASS] E4 no rank-1 (pure) single-carrier state equals I3/3 (rank 3)\n\n=== E5: baryon qqq singlet -- every single-carrier marginal = I3/3 ===\n[PASS] E5 baryon single-carrier reduced density = I3/3\n[PASS] E5 baryon order parameter Tr(rho^2)-1/3 = 0\n[PASS] E5 baryon singlet invariant under global g on all three carriers\n\n=== E6: separation from the twirl -- partial trace of a STATE, not an operator average ===\n[PASS] E6 twirl channel E_sing(M) = (Tr M/Nc) I (the block-05/Fierz operator map)\n[PASS] E6 non-invariant joint state has marginal != I3/3 (route is not a blanket average)\n\n=== E7: separation from the local-connection route (block 07) ===\n[PASS] E7 block-07 route is reducible (no depolarization) in the V-eigenframe\n[PASS] E7 entanglement route marginal = I3/3 with NO V and in every frame\n\n=== E8: weight-leak guard -- I3/3 is forced by invariance, not assigned by fiat ===\n[PASS] E8 a chosen non-invariant joint state has polarized marginal (P > 0)\n[PASS] E8 invariance (not fiat) is what forces I3/3\n\n=== E9: relocation/decision table (no hat discharged) ===\n[PASS] E9 only a globally color-neutral joint state depolarizes the marginal\n[PASS] E9 d=2 sanity: SU(2) singlet marginal = I2/2\n\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T153931Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

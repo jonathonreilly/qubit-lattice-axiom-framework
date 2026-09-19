@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_common_e_gauge_corrected_physical_rom_composition_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_common_e_gauge_corrected_physical_rom_composition_2026_07_25.py",
+ "seed": 32374,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153934Z",
+ "elapsed_s": 51.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "22e794b02d9cf97042052641e77476ec3de9106a96ece9ba6990dbce15df3b93",
+ "stdout_tail": "ed, comparator, and transit M2 at the declared code-time boundary', 'terminal_local_blank_constraint_failures': 0}\nthree_center_extensions ({'fixture': 'three-center-chain', 'centers': 3, 'shared_physical_cells': 17, 'unique_owned_seams': 16, 'decoded_occupation_M2_per_cell': 6, 'transition_CZ_pairs': 328, 'transition_distance_census': {0: 45, 1: 168, 2: 115}, 'maximum_transition_cell_distance': 2, 'distance_gt_2_pairs': 0, 'distance_two_midpoint_failures': 0, 'fixed_shared_register_colors': 39, 'fixed_color_resource_conflicts': 0, 'algebraic_transition_identity': True, 'current_one_transit_routing_supported': True, 'program_color_is_physical_time': False, 'all_CZ_terms_commute': True, 'color_order_affects_automorphism': False, 'matching_product_iSWAP_parity_origin_used': False}, {'fixture': 'three-center-L', 'centers': 3, 'shared_physical_cells': 16, 'unique_owned_seams': 16, 'decoded_occupation_M2_per_cell': 6, 'transition_CZ_pairs': 454, 'transition_distance_census': {0: 48, 1: 174, 2: 176, 3: 56}, 'maximum_transition_cell_distance': 3, 'distance_gt_2_pairs': 56, 'distance_two_midpoint_failures': 1, 'fixed_shared_register_colors': 60, 'fixed_color_resource_conflicts': 0, 'algebraic_transition_identity': True, 'current_one_transit_routing_supported': False, 'program_color_is_physical_time': False, 'all_CZ_terms_commute': True, 'color_order_affects_automorphism': False, 'matching_product_iSWAP_parity_origin_used': False})\nACTUAL_59941_ROW_GAUGE_CORRECTED_CAR_COMPILER_CLOSED\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T154025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

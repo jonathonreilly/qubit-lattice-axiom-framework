@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_su3_matter_realization_residual_map_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_color_su3_matter_realization_residual_map_2026_06_05.py",
+ "seed": 32372,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153932Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d58a5b1ddceb2d1a49ffd1414c21e6d402528208cf6b76eed20b4207593969da",
+ "stdout_tail": "  [PASS] stable_dial_fixes_mr_color: required output is not post-record output (requires quark_in_symmetric_base_fundamental)\n\n------------------------------------------------------------------------------\n5. Positive support decomposition\n------------------------------------------------------------------------------\n  [PASS] support map has four typed pieces\n  [PASS] algebraic SU(3) is not classified as physical closure\n  [PASS] post-record layer is classified as consumer\n  [PASS] record-invariance half remains bounded related input\n  [PASS] matter realization remains residual\n\n------------------------------------------------------------------------------\n6. Wording and artifact sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/COLOR_SU3_MATTER_REALIZATION_RESIDUAL_MAP_2026-06-05.md)\n  [PASS] forbidden wording absent: status-transition overclaim\n  [PASS] forbidden wording absent: promotion overclaim\n  [PASS] forbidden wording absent: actual-surface overclaim\n  [PASS] forbidden wording absent: physical-color derivation overclaim\n  [PASS] forbidden wording absent: Koide selector overclaim\n  [PASS] note declares meta claim type\n  [PASS] note records no-go discipline gate\n  [PASS] note keeps dial selection out of scope\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=44 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T153932Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

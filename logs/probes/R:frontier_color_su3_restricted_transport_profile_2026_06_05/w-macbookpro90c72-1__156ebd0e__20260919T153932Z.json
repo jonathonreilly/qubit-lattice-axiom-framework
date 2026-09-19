@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_su3_restricted_transport_profile_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_color_su3_restricted_transport_profile_2026_06_05.py",
+ "seed": 32372,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153932Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=74 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b69ebeba7492d2128810f2c4095257b44c5900afa166f40b08fd5cf1681559e4",
+ "stdout_tail": "-----------------------------------------------------------\n  [PASS] three transport-profile outputs supplied\n  [PASS] seven residuals remain\n  [PASS] supplied outputs do not include residuals\n  [PASS] post-record outputs do not include residuals\n  [PASS] transport rule derivation remains residual\n  [PASS] record readout remains residual\n  [PASS] record production remains residual\n\n------------------------------------------------------------------------------\n6. Note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/COLOR_SU3_RESTRICTED_TRANSPORT_PROFILE_2026-06-05.md)\n  [PASS] note contains marker: Claim type:** bounded_theorem\n  [PASS] note contains marker: This block supplies only the finite algebra\n  [PASS] note contains marker: This rule is a bounded input here.\n  [PASS] note contains marker: Does not derive physical color.\n  [PASS] note contains marker: Does not establish a repo-wide quantum-link ontology.\n  [PASS] note contains marker: Does not select a Koide/generation dial location.\n  [PASS] forbidden wording absent: physical color closure\n  [PASS] forbidden wording absent: transport derivation closure\n  [PASS] forbidden wording absent: action closure\n  [PASS] forbidden wording absent: dial selector closure\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=74 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T153933Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

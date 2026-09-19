@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_orientation_predictive_equivalence_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_color_orientation_predictive_equivalence_2026_06_09.py",
+ "seed": 32371,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T153931Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "62531069cf64ae313b65666a5b86e588eb987c26ea1cef771424f34714de87e7",
+ "stdout_tail": "ant 2: adjoint preserves traceless 8-block (tr stays 0)\nPASS  color commutant 3: singlet (identity / number operator) is fixed\nPASS  color commutant 4: off-diagonal bilinear E_12 (adjoint) is NOT SU(3)-invariant\nPASS  color commutant 5: single-carrier color commutant = scalars (Schur, dim 1)\nPASS  predictive equivalence 1: O = aI + b*SWAP is exactly SU(3)-invariant on C^3(x)C^3\nPASS  predictive equivalence 2: <O>_rho = <O>_{g rho g} for invariant O (exact)\nPASS  purity residual 1: orientation MOVES: rho_rot != rho as operators\nPASS  purity residual 2: spectrum (all SU(3)-invariants) preserved exactly\nPASS  purity residual 3: purity (two-copy invariant) agrees for SU(3)-related states\nPASS  purity residual 4: purity DISTINGUISHES a different-spectrum state (residual is real)\nPASS  r-dial guard 1: r-readout UNCHANGED by color-orientation rotation (exact)\nPASS  r-dial guard 2: r-readout DOES distinguish rA != rB (observables depend on r)\nPASS  r-dial guard 3: color SU(3) fixes r: no orientation rotation alters the r-readout\nPASS  r-dial guard 4: non-invariant color op DOES move (rotation is non-trivial)\nPASS  negative control: equivalence FAILS for a non-invariant operator\nPASS  discipline guard 1: purity untouched: polarized stays polarized (no depolarization delivered)\nPASS  discipline guard 2: no frame delivered: only SU(3)-invariant projectors are 0, I (Schur)\nPASS  discipline guard 3: global rotation commutes with site-shift (no local link delivered)\n\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T153932Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

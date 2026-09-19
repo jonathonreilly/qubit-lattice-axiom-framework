@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_companion_bank_bell_character_dilation_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py",
+ "seed": 32500,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "156ebd0e",
+ "started_utc": "20260919T154140Z",
+ "elapsed_s": 327.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "85f6af67d4bae87c1e7f4022eab9c378078a6b0b2665698816998d53358e0569",
+ "stdout_tail": "ent_conflict_layers\": 8,\n        \"physical_correction_conflict_layers\": 11,\n        \"shape\": [\n          5,\n          3,\n          2\n        ]\n      },\n      {\n        \"expected_measurement_layers_3_plus_degree\": 9,\n        \"maximum_cell_degree\": 6,\n        \"measurement_conflict_layers\": 9,\n        \"physical_correction_conflict_layers\": 11,\n        \"shape\": [\n          4,\n          4,\n          4\n        ]\n      },\n      {\n        \"expected_measurement_layers_3_plus_degree\": 9,\n        \"maximum_cell_degree\": 6,\n        \"measurement_conflict_layers\": 9,\n        \"physical_correction_conflict_layers\": 11,\n        \"shape\": [\n          5,\n          5,\n          3\n        ]\n      }\n    ],\n    \"measurement_by_box\": [\n      3,\n      6,\n      7,\n      8,\n      9,\n      9\n    ]\n  },\n  \"open\": \"a route-expanded nearest-neighbour measurement circuit with gate/route agreement; autonomous sector/genesis law; a composite channel joining pump, input leg, corrections, and recurrent update; downstream time/source/Record/Born acceptance\",\n  \"route_expanded_nearest_neighbour_measurement_compiled\": false,\n  \"runtime_seconds\": 326.56716641702224,\n  \"status\": \"PASS\",\n  \"supplied\": \"fixed parity/center sector; one-time Choi genesis inventory; mixed gauge reference; clean retained syndrome and mobile-rail banks; frozen private-dual atlas; finite boxes; the live input is presented in the code's own companion representation (companion-encoded input bank); a bare global-JW input register is not used\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T154708Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_companion_bank_bell_character_dilation_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

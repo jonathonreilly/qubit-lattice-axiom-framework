@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-formation-response-kernel-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jceaa",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-response-kernel/referee_w-jonathonsmac4f50-jceaa/check.py",
+ "seed": 79947,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3711cbe2",
+ "started_utc": "20260919T010547Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 3 - the continuum kernel (3/pi) e^{x1+x2} K_0(sqrt2 r) is not the lattice static response off the downstream axis: the exact response is (3/2) C(x1+x2, x1)/2^(x1+x2) on the forward quadrant and 0 elsewhere (edge rate log 2, not sqrt2 - 1); downstream (3/2)/sqrt(pi n) holds. Step 4 then fails twice: (iii) the point-source response is the trinomial kernel, which decays like 3/(2 pi R) along the 3D level axis (not 1/r^2), and (iv) the eight-corner average has a 1/k^2 singularity (kappa^2 R_8 -> 3/2 along (1,-1,0)), so 'no channel decays like 1/r' is false as stated: there is a directed 1/R (one ray, or the eight body diagonals) and no isotropic one. Steps 1, 2 and the conclusion of 5 hold"
+ },
+ "review": "Referee of formation-response-kernel a3 (grok-4.6): independent exact checks pass 5 of 5 (the E-identity and R, the exact lattice static response (3/2)C(x1+x2,x1)/2^(x1+x2) on the forward quadrant and 0 elsewhere, the point response as the trinomial kernel with T(n,n,n)R -> 3/(2pi), kappa^2 R_8 -> 3/2 along (1,-1,0), the L=4 mode values), so steps 1-2, the downstream 1/sqrt(r) law with constant 3/(2 sqrt pi) and the failure of fluctuation-response hold, but the attempt fails at step 3 (continuum form wrong off the downstream axis) and step 4 (a directed 1/R exists along the level axis and body diagonals; the eight-order average has 1/k^2 singularities); this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-response-kernel:a3/; its files are probes/work/derive/formation-response-kernel/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-response-kernel/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "37899f8edcdf5981c8f1608e60dfe111cfd49e3e2b2e92ffa69edbff57ee644e",
+ "stdout_tail": "ppa^2 R_8 -> 3/2 and kappa^2/E -> 1/2, so R_8 ~ 3/E there: the eight-corner average has a 1/k^2 singularity on the planes orthogonal to (eps1, eps2, eps3) (the four orders with eps1 = eps2 have no drift across this k); along the axis (kappa, 0, 0) it tends to 3/2 as the author says. 'No 1/k^2 pole' is false; in real space the average is (1/8) of the trinomial kernels of the eight octants, 1/R along the eight body diagonals (W3)\nPASS: W5 step 5: at k = (pi/2, 0) on L = 4, phi = (2 + i)/3, 1/(1 - phi) = 3/2 + 3*I/2, 1/(1 - |phi|^2) = 9/4: the static susceptibility is not a real multiple of the variance (the attempt's conclusion holds; its example values phi = (1 + i)/3, '3/(2 - i) vs 9/8' are not this mode's, and 9/8 is not 1/(1 - |(1 + i)/3|^2) = 9/7)\nTOTAL: PASS=5 FAIL=0\nSUMMARY: fails at step 3 - the continuum kernel (3/pi) e^{x1+x2} K_0(sqrt2 r) is not the lattice static response off the downstream axis: the exact response is (3/2) C(x1+x2, x1)/2^(x1+x2) on the forward quadrant and 0 elsewhere (edge rate log 2, not sqrt2 - 1); downstream (3/2)/sqrt(pi n) holds. Step 4 then fails twice: (iii) the point-source response is the trinomial kernel, which decays like 3/(2 pi R) along the 3D level axis (not 1/r^2), and (iv) the eight-corner average has a 1/k^2 singularity (kappa^2 R_8 -> 3/2 along (1,-1,0)), so 'no channel decays like 1/r' is false as stated: there is a directed 1/R (one ray, or the eight body diagonals) and no isotropic one. Steps 1, 2 and the conclusion of 5 hold\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jceaa",
+  "at_utc": "20260919T010548Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

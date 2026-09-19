@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-provenance-PR8026",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j38b6",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8026/theorem_numbers_derivations.py",
+ "seed": 96447,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1089dc53",
+ "started_utc": "20260919T054047Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "not reproduced - the task sources a number by a printing runner line OR its exact derivation in the note; all four 'unsourced' numbers have exact derivations in the note, each re-derived here in exact arithmetic (u/144 = 2*(1/6)*(1/96)*2; 7/124416 = 1/41472 + 1/31104 with I = 2/9; first positive energy 4/a from the label minimum 4; C_0 = 2ce from (ce)^P/(1-q) <= (2ce)^P), and 1/144 and 7/124416 are also asserted by the coefficients runner's check lines; the finder searched the caches only (their counts-only stdout); the Haar ingredients hold by Monte Carlo: True"
+ },
+ "review": "Finder's script re-run (it greps the two counts-only caches); the task also sources a number by its exact derivation in the note, and all four have one, re-derived here exactly: u/144 = 2*(1/6)*(1/96)*2 (eq. 5), 7/124416 = 1/41472 + 1/31104 with I = 2/9 (eqs. 6-7), 4/a from min(p^2+pq+q^2+3p+3q) = 4, C_0 = 2ce from (ce)^P/(1-q) <= (2ce)^P; 1/144 and 7/124416 are also asserted in the runner's check lines, and the Haar inputs hold by Monte Carlo (|Tr U|^2 -> 1.003, Tr(AU)Tr(U^+B) -> Tr(AB)/3): not reproduced.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:provenance:PR8026/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "02438849c52a1374abedc820e2e800f0f21b0b1fe7fd7bfe7c64c1d6adeea68a",
+ "stdout_tail": "[43]\n   2ce: cache lines none; runner lines none; note lines [33, 75, 77]\n2. the note's exact derivations, recomputed\n   eq.(5): 2*(1/6)*(1/96)*2 = 1/144; eq.(6): I = (4/6)(1/3) = 2/9; I/96^2 = 1/41472 (note: 1/41472); 2I/(576*24) = 1/31104 (note: 1/31104); eq.(7): sum = 7/124416; first positive electric label energy min(p^2+pq+q^2+3p+3q) = 4 (note: 4/a); (ce)^P/(1-q) <= (2ce)^P for q <= 1/4, P >= 1: True\n3. Haar SU(3), 200000 samples: <|Tr U|^2> = 1.0034 (1); |<(Tr U)^2>| = 0.0016 (0); <Tr(AU) Tr(U^dag B)> = 0.9316-0.0933j vs Tr(AB)/3 = 0.9353-0.0872j\n   1/144: exact derivation in the note (eq. (5)) re-derived: True\n   7/124416: exact derivation in the note (eqs. (6)-(7)) re-derived: True\n   4/a: exact derivation in the note (section 1: all-label energies [p\u00b2+pq+q\u00b2+3p+3q]/a) re-derived: True\n   2ce: exact derivation in the note (the uniform complex bound: (ce)^P/(1-q) <= (2ce)^P, C_0 = 2ce) re-derived: True\nSUMMARY: not reproduced - the task sources a number by a printing runner line OR its exact derivation in the note; all four 'unsourced' numbers have exact derivations in the note, each re-derived here in exact arithmetic (u/144 = 2*(1/6)*(1/96)*2; 7/124416 = 1/41472 + 1/31104 with I = 2/9; first positive energy 4/a from the label minimum 4; C_0 = 2ce from (ce)^P/(1-q) <= (2ce)^P), and 1/144 and 7/124416 are also asserted by the coefficients runner's check lines; the finder searched the caches only (their counts-only stdout); the Haar ingredients hold by Monte Carlo: True\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j38b6",
+  "at_utc": "20260919T054048Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

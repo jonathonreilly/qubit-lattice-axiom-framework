@@ -1,0 +1,13 @@
+1. where each number appears
+   1/144: cache lines none; runner lines ["ck('one-face coefficient',one==F(1,144))"]; note lines [27, 108, 163]
+   7/124416: cache lines none; runner lines ["ck('two-face coefficient',total==F(7,124416))"]; note lines [27, 186]
+   4/a: cache lines none; runner lines none; note lines [43]
+   2ce: cache lines none; runner lines none; note lines [33, 75, 77]
+2. the note's exact derivations, recomputed
+   eq.(5): 2*(1/6)*(1/96)*2 = 1/144; eq.(6): I = (4/6)(1/3) = 2/9; I/96^2 = 1/41472 (note: 1/41472); 2I/(576*24) = 1/31104 (note: 1/31104); eq.(7): sum = 7/124416; first positive electric label energy min(p^2+pq+q^2+3p+3q) = 4 (note: 4/a); (ce)^P/(1-q) <= (2ce)^P for q <= 1/4, P >= 1: True
+3. Haar SU(3), 200000 samples: <|Tr U|^2> = 1.0034 (1); |<(Tr U)^2>| = 0.0016 (0); <Tr(AU) Tr(U^dag B)> = 0.9316-0.0933j vs Tr(AB)/3 = 0.9353-0.0872j
+   1/144: exact derivation in the note (eq. (5)) re-derived: True
+   7/124416: exact derivation in the note (eqs. (6)-(7)) re-derived: True
+   4/a: exact derivation in the note (section 1: all-label energies [p²+pq+q²+3p+3q]/a) re-derived: True
+   2ce: exact derivation in the note (the uniform complex bound: (ce)^P/(1-q) <= (2ce)^P, C_0 = 2ce) re-derived: True
+SUMMARY: not reproduced - the task sources a number by a printing runner line OR its exact derivation in the note; all four 'unsourced' numbers have exact derivations in the note, each re-derived here in exact arithmetic (u/144 = 2*(1/6)*(1/96)*2; 7/124416 = 1/41472 + 1/31104 with I = 2/9; first positive energy 4/a from the label minimum 4; C_0 = 2ce from (ce)^P/(1-q) <= (2ce)^P), and 1/144 and 7/124416 are also asserted by the coefficients runner's check lines; the finder searched the caches only (their counts-only stdout); the Haar ingredients hold by Monte Carlo: True

@@ -24,8 +24,8 @@ R_SHARD = 20           # runner re-executions per unit
 F_SEEDS, F_BLOCK = 200, 20
 S_SEEDS, S_BOXES, S_MINUTES = 200, ["", "5x5x8"], 30
 PRIORITY = ["P", "R", "M", "F", "X", "S"]      # the loop's order; J is claimed by hand
-J_ORDER = ["J-confirm", "J-derive", "J-attack-g", "J-attack-a", "J-attack-b", "J-attack", "J-falsifier", "J-provenance", "J-note"]      # inside kind J: confirmations first, then the attack patterns by their yield so far
-KIND_WEIGHT = {"P": 8, "R": 4, "M": 4, "F": 2, "X": 3, "S": 2}      # the loop draws the kind at random with these weights, so cheap kinds do not starve behind a long one
+J_ORDER = ["J-confirm", "J-derive", "C-", "J-attack-g", "J-attack-a", "J-attack-b", "J-attack", "J-falsifier", "J-provenance", "J-note"]      # inside kind J: confirmations first, then the attack patterns by their yield so far
+KIND_WEIGHT = {"P": 8, "R": 2, "M": 4, "F": 2, "X": 10, "S": 2}      # the loop draws the kind at random with these weights, so cheap kinds do not starve behind a long one
 
 GIT_CWD = ROOT if os.path.exists(os.path.join(ROOT, ".git")) else os.getcwd()
 def git(*a, cwd=None, check=True, env=None, quiet=False):
@@ -177,21 +177,23 @@ def pick_and_claim(worker, kinds, tasks, idx, exclude=(), model=""):
     """Claim one free unit: the first kind in `kinds` that has free units, a random unit inside it (random, so that many
     workers starting together do not all race for the same ref)."""
     claims = remote_claims(worker)
+    if list(kinds) == ["J"]: kinds = ["J", "C"]      # judgment workers also take the worked computations (nobody was claiming kind C on its own)
     us = [u for u in units(tasks, idx) if u["kind"] in kinds and u["unit"] not in exclude and not (model and fam(model) in u.get("finder_families", []))]
     order = list(kinds)
     if len(order) > 1:
         order = []; pool = list(kinds)
         while pool:
             k = random.choices(pool, weights=[KIND_WEIGHT.get(x, 1) for x in pool])[0]; order.append(k); pool.remove(k)
+    if set(kinds) == {"J", "C"}: order = ["J"]
     for kind in order:
         free = []
-        for u in (x for x in us if x["kind"] == kind):
+        for u in (x for x in us if x["kind"] == kind or (kind == "J" and x["kind"] == "C" and "C" in kinds)):
             c = claims.get(u["unit"])
             if c and c[1] < LEASE_H: continue
             if unit_done(u, idx): continue
             free.append((u, c[0] if c else ""))
         random.shuffle(free)
-        if kind == "J": free.sort(key=lambda fe: next((i for i, pre in enumerate(J_ORDER) if fe[0]["unit"].startswith(pre)), len(J_ORDER)))
+        if kind in ("J", "C"): free.sort(key=lambda fe: next((i for i, pre in enumerate(J_ORDER) if fe[0]["unit"].startswith(pre)), len(J_ORDER)))
         for u, expect in free[:6]:
             sha = try_claim(u["unit"], worker, expect)
             if sha: return u, sha

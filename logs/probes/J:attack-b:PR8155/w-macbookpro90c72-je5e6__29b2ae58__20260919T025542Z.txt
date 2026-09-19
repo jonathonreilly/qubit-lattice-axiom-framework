@@ -1,0 +1,4 @@
+OK: same 1/3 bound: L'(x) and L(x)/x ≤ 1/3 at x=0 (limit 1/3) and on the tested half-line
+OK: α<1 iff β<√3/6: 1443/5000² < 1/12 < 2887/10000²
+OK: same neighbour-count test: Z^3 and (Z/4Z)^3 both have degree 6 (L=1 has degree 3, already logged as J:attack-a:PR8155; not re-found)
+SUMMARY: pattern (b) SAME TEST BOTH SIDES — L' and L/x both ≤ 1/3; α<1 iff β<√3/6 by β² vs 1/12; Z^3 and even torus L=2 both have degree 6 so the six-neighbour row-sum is realized there; the known L=1 degree-3 defect is not repeated; attack does not fire

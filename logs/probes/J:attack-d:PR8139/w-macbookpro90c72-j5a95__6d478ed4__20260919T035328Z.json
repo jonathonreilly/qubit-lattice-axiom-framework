@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8139",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block09-z3-mar",
+ "worker": "w-macbookpro90c72-j5a95",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8139/quantifier_every_corner.py",
+ "seed": 90008,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6d478ed4",
+ "started_utc": "20260919T035328Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - every one of the eight corners \u03ba\u2208{\u00b11}^3 has G_\u03ba of degree 12 (6 axial + 6 face-diagonal forks at l1=2)"
+ },
+ "review": "all eight corners have G_\u03ba of degree 12 with 6 axial and 6 face-diagonal neighbors, so the universal holds and the pattern has no purchase",
+ "what": "PR #8139 ([physics-loop] admissibility-induced-law block09 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915; git show origin/physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915:<note>. Create probes/work/pr8139/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8139/<script>.py\"",
+ "stdout_sha256": "4dc2e780a13030d074dc9e634ed2eb88b4b901187f85c540c61c3d54b5889b36",
+ "stdout_tail": "corners 8\n\u03ba=(-1, -1, -1): |axial|=6 |forks|=6 |union|=12 |A\u2229F|=0\n\u03ba=(-1, -1, 1): |axial|=6 |forks|=6 |union|=12 |A\u2229F|=0\n\u03ba=(-1, 1, -1): |axial|=6 |forks|=6 |union|=12 |A\u2229F|=0\n\u03ba=(-1, 1, 1): |axial|=6 |forks|=6 |union|=12 |A\u2229F|=0\n\u03ba=(1, -1, -1): |axial|=6 |forks|=6 |union|=12 |A\u2229F|=0\n\u03ba=(1, -1, 1): |axial|=6 |forks|=6 |union|=12 |A\u2229F|=0\n\u03ba=(1, 1, -1): |axial|=6 |forks|=6 |union|=12 |A\u2229F|=0\n\u03ba=(1, 1, 1): |axial|=6 |forks|=6 |union|=12 |A\u2229F|=0\nSUMMARY: pattern has no purchase on this note - every one of the eight corners \u03ba\u2208{\u00b11}^3 has G_\u03ba of degree 12 (6 axial + 6 face-diagonal forks at l1=2)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5a95",
+  "at_utc": "20260919T035328Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

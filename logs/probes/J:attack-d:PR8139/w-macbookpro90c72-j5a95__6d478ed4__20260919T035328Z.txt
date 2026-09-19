@@ -1,0 +1,10 @@
+corners 8
+κ=(-1, -1, -1): |axial|=6 |forks|=6 |union|=12 |A∩F|=0
+κ=(-1, -1, 1): |axial|=6 |forks|=6 |union|=12 |A∩F|=0
+κ=(-1, 1, -1): |axial|=6 |forks|=6 |union|=12 |A∩F|=0
+κ=(-1, 1, 1): |axial|=6 |forks|=6 |union|=12 |A∩F|=0
+κ=(1, -1, -1): |axial|=6 |forks|=6 |union|=12 |A∩F|=0
+κ=(1, -1, 1): |axial|=6 |forks|=6 |union|=12 |A∩F|=0
+κ=(1, 1, -1): |axial|=6 |forks|=6 |union|=12 |A∩F|=0
+κ=(1, 1, 1): |axial|=6 |forks|=6 |union|=12 |A∩F|=0
+SUMMARY: pattern has no purchase on this note - every one of the eight corners κ∈{±1}^3 has G_κ of degree 12 (6 axial + 6 face-diagonal forks at l1=2)

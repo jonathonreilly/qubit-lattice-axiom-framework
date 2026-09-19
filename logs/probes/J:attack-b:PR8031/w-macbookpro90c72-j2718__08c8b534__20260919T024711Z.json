@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8031",
+ "type": "judgment",
+ "lane": "finite-transporter-block41-20260907",
+ "worker": "w-macbookpro90c72-j2718",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8031/same_test_unitarity.py",
+ "seed": 86031,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "08c8b534",
+ "started_utc": "20260919T024711Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same unitarity-defect test is 0 on Haar and 1 on U_0, and the shell min Q=R^2-floor(R^2/4)+3R holds for R=1..8"
+ },
+ "review": "Unitarity defect 0 on Haar vs 1 on U_0; shell min Q formula holds R=1..8; pattern has no purchase",
+ "what": "PR #8031 ([physics-loop] finite-transporter block41 conditional-suppor): attack GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-transporter-block41-20260907; git show origin/codex/finite-transporter-block41-20260907:<note>. Create probes/work/pr8031/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8031/<script>.py\"",
+ "stdout_sha256": "2039ba9c6425e3e7dfe8b55ce7b8905ffce355d3b970d92e79c2e0a4f405dd00",
+ "stdout_tail": "unitarity defect Haar=0 U_0=1 (stated 0 vs 1)\nR=1 min Q=4 formula=4 vals=[4, 4]\nR=2 min Q=9 formula=9 vals=[10, 9, 10]\nR=3 min Q=16 formula=16 vals=[18, 16, 16, 18]\nR=4 min Q=24 formula=24 vals=[28, 25, 24, 25, 28]\nR=5 min Q=34 formula=34 vals=[40, 36, 34, 34, 36, 40]\nR=6 min Q=45 formula=45 vals=[54, 49, 46, 45, 46, 49, 54]\nR=7 min Q=58 formula=58 vals=[70, 64, 60, 58, 58, 60, 64, 70]\nR=8 min Q=72 formula=72 vals=[88, 81, 76, 73, 72, 73, 76, 81, 88]\nSUMMARY: pattern has no purchase on this note - the same unitarity-defect test is 0 on Haar and 1 on U_0, and the shell min Q=R^2-floor(R^2/4)+3R holds for R=1..8\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2718",
+  "at_utc": "20260919T024712Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+unitarity defect Haar=0 U_0=1 (stated 0 vs 1)
+R=1 min Q=4 formula=4 vals=[4, 4]
+R=2 min Q=9 formula=9 vals=[10, 9, 10]
+R=3 min Q=16 formula=16 vals=[18, 16, 16, 18]
+R=4 min Q=24 formula=24 vals=[28, 25, 24, 25, 28]
+R=5 min Q=34 formula=34 vals=[40, 36, 34, 34, 36, 40]
+R=6 min Q=45 formula=45 vals=[54, 49, 46, 45, 46, 49, 54]
+R=7 min Q=58 formula=58 vals=[70, 64, 60, 58, 58, 60, 64, 70]
+R=8 min Q=72 formula=72 vals=[88, 81, 76, 73, 72, 73, 76, 81, 88]
+SUMMARY: pattern has no purchase on this note - the same unitarity-defect test is 0 on Haar and 1 on U_0, and the shell min Q=R^2-floor(R^2/4)+3R holds for R=1..8

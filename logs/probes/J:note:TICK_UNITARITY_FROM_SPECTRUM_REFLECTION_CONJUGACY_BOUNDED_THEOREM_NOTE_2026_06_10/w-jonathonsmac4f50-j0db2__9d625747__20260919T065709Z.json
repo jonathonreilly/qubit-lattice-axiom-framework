@@ -1,0 +1,38 @@
+{
+ "task": "J:note:TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026_06_10",
+ "type": "judgment",
+ "lane": "tick",
+ "worker": "w-jonathonsmac4f50-j0db2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_/strict_tick_transport_census.py",
+ "seed": 1029,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9d625747",
+ "started_utc": "20260919T065709Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "on the realized strict-tick class (radius-1, unitary, dispersive) the note's C-reading via eps or eps o K is empty at every enumerated periodicity (m = 2: 32 dispersive ticks, all monomial site shifts; m = 3, 4 likewise); the transports survive only as P o K (the CPT note's Theta_H) or P, under a phase condition on the shift: counts (P o K, P, dispersive) = {2: (8, 8, 32), 3: (32, 16, 128), 4: (32, 32, 512)}; the theorem's own forward and converse directions are untouched"
+ },
+ "review": "Output matches the task (falsifier 3 implemented by an exact census of radius-1 unitary ticks, which the runner never tests): on every dispersive tick at periods 2 (63504 candidates, 208 unitary, 32 dispersive, all monomial site shifts), 3 (128 dispersive) and 4 (512 dispersive) neither the eps nor the eps o K tick-level transport holds, every tick carrying one of them is dimerized (flat), and only P o K (8, 32, 32 ticks) or P (8, 16, 32) transport, under a phase condition on the shift (q = r, resp. r = conj q at period 2).",
+ "what": "Note on main: docs/TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_/<script>.py\"",
+ "stdout_sha256": "d4f95f58ea0815e2b851f459c10ed4b366296828f20d75d1bfb382fe5f333910",
+ "stdout_tail": "evel transport {'eps': 0, 'eps K': 0, 'P': 16, 'P K': 32}; flat ticks carrying eps or eps K 124; eps/eps K transporters that are not dimerized 0\n3. period m = 4 (unimodular-or-zero entries), ring N = 12: candidates 20736, unitary 2304, dispersive 512 (non-monomial among them 0); dispersive ticks carrying each tick-level transport {'eps': 0, 'eps K': 0, 'P': 32, 'P K': 32}; flat ticks carrying eps or eps K 600; eps/eps K transporters that are not dimerized 0\nHIT: falsifier 3 fires for the pair the note reads and its runner implements (eps; Theta = eps o K): no dispersive radius-1 unitary tick carries either tick-level transport at periods 2, 3, 4 (dispersive ticks [32, 128, 512], transporting 0 and 0), every eps- or eps o K-transporting tick is dimerized (flat), and by the theorem an invertible contraction carrying them is unitary, hence flat too; only inversion-based representatives transport on dispersive strict ticks: (P o K, P, of dispersive) = {2: (8, 8, 32), 3: (32, 16, 128), 4: (32, 32, 512)}\nSUMMARY: on the realized strict-tick class (radius-1, unitary, dispersive) the note's C-reading via eps or eps o K is empty at every enumerated periodicity (m = 2: 32 dispersive ticks, all monomial site shifts; m = 3, 4 likewise); the transports survive only as P o K (the CPT note's Theta_H) or P, under a phase condition on the shift: counts (P o K, P, dispersive) = {2: (8, 8, 32), 3: (32, 16, 128), 4: (32, 32, 512)}; the theorem's own forward and converse directions are untouched\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0db2",
+  "at_utc": "20260919T065731Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The script demonstrates exactly (census plus the dimer argument: eps U or eps conj(U) would be a radius-1 involution, whose bonds form a matching) that the C-reading's unitary option eps and the runner's antiunitary Theta = eps o K cannot transport to any dispersive radius-1 unitary tick, so under the chain's own P1 license and reduced-P4 readings the C-reading survives only through the inversion-based P o K (the CPT note's Theta_H, when q = r) or P (r = conj q).",
+  "by": "w-jonathonsmac4f50-j0db2",
+  "at_utc": "20260919T065731Z"
+ }
+}

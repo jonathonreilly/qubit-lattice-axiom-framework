@@ -1,0 +1,39 @@
+==============================================================================
+H  staggered Bloch kernel, exact Laurent arithmetic
+  R^dagger = -R (D Hermitian): True; D^2 = sum_mu (2 - z_mu - 1/z_mu)/4 I identically: True; Hessian of E^2 at 0 = [['1/2', '0', '0'], ['0', '1/2', '0'], ['0', '0', '1/2']] -> E = |k|/2 + O(k^3) in every direction; v_H = 1 site/tau
+SUMMARY: H exact Laurent arithmetic: D Hermitian True, D^2 = sum_mu (2 - z_mu - 1/z_mu)/4 I identically True, Hessian isotropic -> v_H = 1 site/tau in every direction
+==============================================================================
+F1 family at phases zero: exact Laurent identities (unitarity, the sigma law)
+  W W^dagger = 3 I identically: True; W^2 + (W^dagger)^2 = sum_mu (z_mu + 1/z_mu) I identically: True
+  so every eigenvalue lambda = e^{i theta} obeys 6 cos(2 theta) = 2 sum_mu cos k_mu on the whole zone; theta^2 = k^T A k + O(k^4) with A = [['1/12', '0', '0'], ['0', '1/12', '0'], ['0', '0', '1/12']]: theta = +-|k|/(2 sqrt3) at k = 0 for ALL 8 bands
+SUMMARY: F1 family (phases zero; 12 consistent orbits, active 1,2,5,6,9,10): W W^dagger = 3I True; the sigma law W^2 + W^dagger^2 = sum(z + 1/z) I identically True; every band theta = +-|k|/(2 sqrt3) + O(k^3): True
+==============================================================================
+F2 exact first-order operators at the two touching points (Q(zeta_24) arithmetic)
+  k=0: U^2 = lambda^2 I True; eigenvalue zeta^0: projector idempotent True, trace 4; B_mu Hermitian True; B_mu^2 = P/12 True; B_mu B_nu + B_nu B_mu = 0 True
+  k=0: U^2 = lambda^2 I True; eigenvalue zeta^12: projector idempotent True, trace 4; B_mu Hermitian True; B_mu^2 = P/12 True; B_mu B_nu + B_nu B_mu = 0 True
+  k=(pi,pi,pi): U^2 = lambda^2 I True; eigenvalue zeta^6: projector idempotent True, trace 4; B_mu Hermitian True; B_mu^2 = P/12 True; B_mu B_nu + B_nu B_mu = 0 True
+  k=(pi,pi,pi): U^2 = lambda^2 I True; eigenvalue zeta^18: projector idempotent True, trace 4; B_mu Hermitian True; B_mu^2 = P/12 True; B_mu B_nu + B_nu B_mu = 0 True
+  => on each rank-4 eigenspace M(n) = sum n_mu B_mu has M(n)^2 = |n|^2/12: phase rate +-|n|/(2 sqrt3) exactly, every direction
+SUMMARY: F2 exact Q(zeta_24) projectors at k = 0 and (pi,pi,pi): rank-4 eigenspaces with B_mu^2 = P/12 and anticommuting B_mu: True -> isotropic cone rate 1/(2 sqrt3) per cell momentum = 1/sqrt3 site/tick (cell = 2 sites)
+==============================================================================
+F3 numeric phase rate on 2000 random directions at both touching points (runner: 5 at k = 0)
+  max |rate - 1/(2 sqrt3)| over all 8 bands: k=0: 8.8e-10; k=(pi,pi,pi): 8.7e-10
+SUMMARY: F3 numeric rate, 2000 directions, all 8 bands: max deviation 8.8e-10
+==============================================================================
+E1 exact first-order forms at the symmetric-point translates k0 = psi(1,1,1), phases zero
+  psi = pi/3: prod (U - lambda) = 0 True; for eigenvalues e^{i pi m/12}, m = [2, -2, 14, 10]: rank 2 and P B_mu P = s/6 P with s = [1, -1, 1, -1] (a pure drift s(1,1,1)/6, odd)
+  psi = pi/2: prod (U - lambda) = 0 True; for eigenvalues e^{i pi m/12}, m = [3, -3, 15, 9]: rank 2 and P B_mu P = s/6 P with s = [1, -1, 1, -1] (a pure drift s(1,1,1)/6, odd)
+  psi = 2pi/3: prod (U - lambda) = 0 True; for eigenvalues e^{i pi m/12}, m = [4, -4, 16, 8]: rank 2 and P B_mu P = s/6 P with s = [1, -1, 1, -1] (a pure drift s(1,1,1)/6, odd)
+SUMMARY: E1 exact symmetric-point translates psi(1,1,1), psi = pi/3, pi/2, 2pi/3: every rank-2 eigenspace carries P B_mu P = s/6 P (s = pi/3: [1, -1, 1, -1]; pi/2: [1, -1, 1, -1]; 2pi/3: [1, -1, 1, -1]), a pure odd drift: True
+==============================================================================
+E2 the full six-phase family (beyond the runner's phases-zero object)
+  unitarity for 50 random (phases, k): 6.7e-16; k = 0 at 300 random moduli: eigenspace sizes [1, 2]; max deviation of every first-order operator from a scalar 4.9e-14; max ||grad_mu| - 1/6| 3.8e-14
+  off-diagonal search (40 random moduli x 10 starts, Nelder-Mead on the smallest gap in d >= 0.2): 0 interior local minima (smallest gap none; 0 below 1e-7), 400 ended on the barrier d = 0.2 (gap decreasing toward the diagonal; smallest there 6.1e-05)
+  diagonal (12 random moduli, 3001-point scan + golden refinement): 48 extra-degeneracy points, 96 non-commuting (cone-type) eigenspaces; their non-drift first-order eigenvalues equal +-|n|/(2 sqrt3) on 200 directions within 6.1e-16 (0 other eigenvalues)
+SUMMARY: E2 full six-phase family (unitary to 7e-16): at k = 0 over 300 moduli every eigenspace (sizes [1, 2]) is a pure drift with |grad_mu| = 1/6 (scalar deviation 5e-14, gradient deviation 4e-14); off the diagonal (d >= 0.2, 400 local minimizations) 0 interior local minima (smallest gap none; 0 below 1e-7), the rest ending on the barrier (smallest gap there 6.1e-05); on the diagonal 48 extra degeneracies at 12 moduli, 96 cone-type eigenspaces, cone eigenvalues +-|n|/(2 sqrt3) within 6e-16 (0 exceptions)
+==============================================================================
+C  the table's arithmetic
+  1/sqrt3 rational would need q^2 = 3 p^2: 3-adic parities differ for all p, q < 300: True (min |(p/q)^2 - 1/3| over q < 300: 9.49e-06 > 0); the family row matches only at tick/tau = 1/sqrt3; the per-axis row at tick = tau (1 = 1)
+SUMMARY: C 1/sqrt3 irrational (3-adic parity for p, q < 300: True; nearest square 9.5e-06 from 1/3); the natural row 1 = 1
+==============================================================================
+SUMMARY: hits=0; runtime 37s

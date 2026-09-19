@@ -1,0 +1,41 @@
+{
+ "task": "J:note:UT_PLACEMENT_TABLE_AND_SPECIES_SPLIT_BOUNDED_THEOREM_NOTE_2026_06_11",
+ "type": "judgment",
+ "lane": "ut",
+ "worker": "w-jonathonsmac4f50-jb79e",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_UT_PLACEMENT_TABLE_AND_SPECIES_SPLIT_BOU/exact_degenerate_perturbation_cone_rates.py",
+ "seed": 27507,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "298ac7d1",
+ "started_utc": "20260919T141827Z",
+ "elapsed_s": 37.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "H exact Laurent arithmetic: D Hermitian True, D^2 = sum_mu (2 - z_mu - 1/z_mu)/4 I identically True, Hessian isotropic -> v_H = 1 site/tau in every direction",
+   "F1 family (phases zero; 12 consistent orbits, active 1,2,5,6,9,10): W W^dagger = 3I True; the sigma law W^2 + W^dagger^2 = sum(z + 1/z) I identically True; every band theta = +-|k|/(2 sqrt3) + O(k^3): True",
+   "F2 exact Q(zeta_24) projectors at k = 0 and (pi,pi,pi): rank-4 eigenspaces with B_mu^2 = P/12 and anticommuting B_mu: True -> isotropic cone rate 1/(2 sqrt3) per cell momentum = 1/sqrt3 site/tick (cell = 2 sites)",
+   "F3 numeric rate, 2000 directions, all 8 bands: max deviation 8.8e-10",
+   "E1 exact symmetric-point translates psi(1,1,1), psi = pi/3, pi/2, 2pi/3: every rank-2 eigenspace carries P B_mu P = s/6 P (s = pi/3: [1, -1, 1, -1]; pi/2: [1, -1, 1, -1]; 2pi/3: [1, -1, 1, -1]), a pure odd drift: True",
+   "E2 full six-phase family (unitary to 7e-16): at k = 0 over 300 moduli every eigenspace (sizes [1, 2]) is a pure drift with |grad_mu| = 1/6 (scalar deviation 5e-14, gradient deviation 4e-14); off the diagonal (d >= 0.2, 400 local minimizations) 0 interior local minima (smallest gap none; 0 below 1e-7), the rest ending on the barrier (smallest gap there 6.1e-05); on the diagonal 48 extra degeneracies at 12 moduli, 96 cone-type eigenspaces, cone eigenvalues +-|n|/(2 sqrt3) within 6e-16 (0 exceptions)",
+   "C 1/sqrt3 irrational (3-adic parity for p, q < 300: True; nearest square 9.5e-06 from 1/3); the natural row 1 = 1",
+   "hits=0; runtime 37s"
+  ]
+ },
+ "review": "Reviewed: exact Laurent identities give D^2 = sum sin^2(k/2) I (v_H = 1 site/tau) and, for the rebuilt family matrix, W W^dagger = 3I and W^2 + W^dagger^2 = sum(z + 1/z) I; exact Q(zeta_24) projectors at k = 0 and (pi,pi,pi) give B_mu^2 = P/12 with anticommuting B_mu (isotropic rate 1/(2 sqrt3), 1/sqrt3 site/tick); the symmetric-point translates are exact pure drifts s(1,1,1)/6; over the full six-phase family (300 moduli at k = 0, 400 off-diagonal minimizations, 48 diagonal degeneracies) the forms are drifts except the diagonal cones at +-|n|/(2 sqrt3); no falsifier fired.",
+ "what": "Note on main: docs/UT_PLACEMENT_TABLE_AND_SPECIES_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-11.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_UT_PLACEMENT_TABLE_AND_SPECIES_SPLIT_BOU/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_UT_PLACEMENT_TABLE_AND_SPECIES_SPLIT_BOU/<script>.py\"",
+ "stdout_sha256": "3af9967fb2a445b754660220c7eedc21a349b7fba28dfdb8fdd72fe97e01cdeb",
+ "stdout_tail": "n d >= 0.2): 0 interior local minima (smallest gap none; 0 below 1e-7), 400 ended on the barrier d = 0.2 (gap decreasing toward the diagonal; smallest there 6.1e-05)\n  diagonal (12 random moduli, 3001-point scan + golden refinement): 48 extra-degeneracy points, 96 non-commuting (cone-type) eigenspaces; their non-drift first-order eigenvalues equal +-|n|/(2 sqrt3) on 200 directions within 6.1e-16 (0 other eigenvalues)\nSUMMARY: E2 full six-phase family (unitary to 7e-16): at k = 0 over 300 moduli every eigenspace (sizes [1, 2]) is a pure drift with |grad_mu| = 1/6 (scalar deviation 5e-14, gradient deviation 4e-14); off the diagonal (d >= 0.2, 400 local minimizations) 0 interior local minima (smallest gap none; 0 below 1e-7), the rest ending on the barrier (smallest gap there 6.1e-05); on the diagonal 48 extra degeneracies at 12 moduli, 96 cone-type eigenspaces, cone eigenvalues +-|n|/(2 sqrt3) within 6e-16 (0 exceptions)\n==============================================================================\nC  the table's arithmetic\n  1/sqrt3 rational would need q^2 = 3 p^2: 3-adic parities differ for all p, q < 300: True (min |(p/q)^2 - 1/3| over q < 300: 9.49e-06 > 0); the family row matches only at tick/tau = 1/sqrt3; the per-axis row at tick = tau (1 = 1)\nSUMMARY: C 1/sqrt3 irrational (3-adic parity for p, q < 300: True; nearest square 9.5e-06 from 1/3); the natural row 1 = 1\n==============================================================================\nSUMMARY: hits=0; runtime 37s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb79e",
+  "at_utc": "20260919T141921Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

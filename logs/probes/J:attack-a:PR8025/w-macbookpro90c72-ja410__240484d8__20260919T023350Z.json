@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR8025",
+ "type": "judgment",
+ "lane": "local-observable-block35-20260907",
+ "worker": "w-macbookpro90c72-ja410",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8025/witness_four_link_schmidt.py",
+ "seed": 85230,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "240484d8",
+ "started_utc": "20260919T023350Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the four-link plaquette exists in bipartite Z^3, the 9+9 Schmidt Haar factors and I/9 reduced state are realized, and D_R/g_R/ball bounds exist as stated"
+ },
+ "review": "Four-link plaquette, Schmidt 9+9 Haar factors, I/9 reduced state and D_R carrier exist as stated; pattern has no purchase",
+ "what": "PR #8025 ([physics-loop] local-observable block35 conditional-support): attack GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/local-observable-block35-20260907; git show origin/codex/local-observable-block35-20260907:<note>. Create probes/work/pr8025/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8025/<script>.py\"",
+ "stdout_sha256": "f2781f12b59823ac55e6035985b8acf0c4472877a6196549d18d3dc05fce2038",
+ "stdout_tail": "four-link plaquette exists in Z^3; no triangle: True\nSchmidt 9+9 Haar orthonormal factors reconstruct Tr: True\nsingle-link reduced density I/9 on the 9-dim PW block: True\nD_R positive integer PW dimensions R=0..7: True\ng_R numerator positive for R=0..7: True\nB_r(X) bound 3|X|(2r+1)^3 is a positive integer: True\nSUMMARY: pattern has no purchase on this note: the four-link plaquette exists in bipartite Z^3, the 9+9 Schmidt Haar factors and I/9 reduced state are realized, and D_R/g_R/ball bounds exist as stated\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja410",
+  "at_utc": "20260919T023350Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+note lines: r=32-16+1=17,P=24. Symmetry gives(P_e)_pp=17/24 for every plaquette p. | exp[2pi i *9*(17/24)]=exp[2pi i*51/8], | <a,Q^-1a>=17/24 and||P_perp k||^2=9*(7/24).
+1. value-based search over all 5 caches of PR #8140:
+   <a,Q^-1 a> = 17/24: printed in finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt as "electric_energy": "17/24",
+   phase 9*(17/24) = 51/8: printed in finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt as "phase_turns": "51/8",
+   ||P_perp k||^2 = 9*(7/24) = 21/8: printed in finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt as "magnetic_energy": "21/8",
+   the factor (P_perp)_pp = 7/24: printed in free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt as "magnetic_energy": "7/24",
+2. tesseract from scratch: r = 17, P = 24, rank D = 17, det Q = 82944, trace P_e = 17, (P_e)_pp = {17/24}, (P_perp)_pp = {7/24}, phase = 51/8 (Re = -sqrt(2)/2), <a,Q^-1a> = 17/24, ||P_perp k||^2 = 21/8
+SUMMARY: not reproduced - the note's ||P_perp k||^2 = 9*(7/24) is the value 21/8, which the defect-representation cache prints as "magnetic_energy": "21/8", (the runner asserts em == 21/8); the finder searched 3 of the 5 caches for the literal factor 7/24 only (the literal does occur, in free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt, a cache the finder did not search, but as another note's quantity; the four-cube source is the 21/8 value); det Q = 82944 matches the cache's Q_det; all four numbers recompute from the tesseract complex (17/24, 7/24, 21/8, 51/8, Re = -sqrt(2)/2)

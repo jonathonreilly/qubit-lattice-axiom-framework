@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-provenance-PR8140",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-jonathonsmac4f50-j348d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/confirm/pr8140/four_cube_numbers_by_value.py",
+ "seed": 95109,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9d92c006",
+ "started_utc": "20260919T051829Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "not reproduced - the note's ||P_perp k||^2 = 9*(7/24) is the value 21/8, which the defect-representation cache prints as \"magnetic_energy\": \"21/8\", (the runner asserts em == 21/8); the finder searched 3 of the 5 caches for the literal factor 7/24 only (the literal does occur, in free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt, a cache the finder did not search, but as another note's quantity; the four-cube source is the 21/8 value); det Q = 82944 matches the cache's Q_det; all four numbers recompute from the tesseract complex (17/24, 7/24, 21/8, 51/8, Re = -sqrt(2)/2)"
+ },
+ "review": "Finder's script re-run (literal '7/24' absent from the 3 caches it reads); a value-based search of all 5 caches finds the note's ||P_perp k||^2 = 9*(7/24) = 21/8 printed as \"magnetic_energy\": \"21/8\" in the defect-representation cache (asserted exactly by its runner), next to 17/24 and 51/8, and a from-scratch tesseract complex reproduces (P_e)_pp = 17/24, (P_perp)_pp = 7/24, 21/8, 51/8 and det Q = 82944: not reproduced.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/J:provenance:PR8140/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "0a1e3ba4b6bc9c7ea08a4a61c64f08d4736b8bafeadbf33b59035fc5a6d6aab8",
+ "stdout_tail": "d search over all 5 caches of PR #8140:\n   <a,Q^-1 a> = 17/24: printed in finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt as \"electric_energy\": \"17/24\",\n   phase 9*(17/24) = 51/8: printed in finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt as \"phase_turns\": \"51/8\",\n   ||P_perp k||^2 = 9*(7/24) = 21/8: printed in finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt as \"magnetic_energy\": \"21/8\",\n   the factor (P_perp)_pp = 7/24: printed in free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt as \"magnetic_energy\": \"7/24\",\n2. tesseract from scratch: r = 17, P = 24, rank D = 17, det Q = 82944, trace P_e = 17, (P_e)_pp = {17/24}, (P_perp)_pp = {7/24}, phase = 51/8 (Re = -sqrt(2)/2), <a,Q^-1a> = 17/24, ||P_perp k||^2 = 21/8\nSUMMARY: not reproduced - the note's ||P_perp k||^2 = 9*(7/24) is the value 21/8, which the defect-representation cache prints as \"magnetic_energy\": \"21/8\", (the runner asserts em == 21/8); the finder searched 3 of the 5 caches for the literal factor 7/24 only (the literal does occur, in free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt, a cache the finder did not search, but as another note's quantity; the four-cube source is the 21/8 value); det Q = 82944 matches the cache's Q_det; all four numbers recompute from the tesseract complex (17/24, 7/24, 21/8, 51/8, Re = -sqrt(2)/2)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j348d",
+  "at_utc": "20260919T051830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

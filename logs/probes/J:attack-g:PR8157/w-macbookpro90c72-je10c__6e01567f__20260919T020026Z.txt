@@ -1,0 +1,9 @@
+PASS: P1a cos(theta+i tau)=cos theta cosh tau - i sin theta sinh tau identically
+PASS: P1b cos theta + (cosh tau-1) - cos theta cosh tau = (1-cos)(cosh-1) >= 0 for real theta, tau
+PASS: P2a series ratio 1/(2k)! over 1/(2(2k-2)!) = 2/((2k)(2k-1)) <= 1 for k=1..11
+PASS: P2b l_inf shell j on Z^2 has exactly 8j sites for j=1..20 (note: at most 8j)
+PASS: P3a cosh 1 < 8/5 and 25/16 <= 8/5 as used in P3
+integral pi*c*(c**2 + 8)/8
+want pi*c*(c**2 + 8)/8
+PASS: P1c shift-lemma test polynomial has nonzero period integral (pi*c*(c**2 + 8)/8)
+SUMMARY: pattern has no purchase on this note: P1 complex-cosine identity holds; (1-cos)(cosh-1) gap identity holds; P2 series ratios 2/((2k)(2k-1))<=1 for k=1..11; l_inf shells have exactly 8j sites; cosh 1 < 8/5; the degree-4 shift-lemma test polynomial has nonzero period integral

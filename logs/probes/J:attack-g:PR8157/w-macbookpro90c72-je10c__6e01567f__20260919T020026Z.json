@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8157",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block23-unsold",
+ "worker": "w-macbookpro90c72-je10c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8157/p1_p2_identities.py",
+ "seed": 83226,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6e01567f",
+ "started_utc": "20260919T020026Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: P1 complex-cosine identity holds; (1-cos)(cosh-1) gap identity holds; P2 series ratios 2/((2k)(2k-1))<=1 for k=1..11; l_inf shells have exactly 8j sites; cosh 1 < 8/5; the degree-4 shift-lemma test polynomial has nonzero period integral"
+ },
+ "review": "P1 complex-cosine and gap identities hold; P2 series ratios and 8j shells hold; cosh 1<8/5; shift-lemma test integral matches pi c(c^2+8)/8; pattern has no purchase",
+ "what": "PR #8157 ([physics-loop] admissibility-induced-law block23 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915; git show origin/physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915:<note>. Create probes/work/pr8157/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8157/<script>.py\"",
+ "stdout_sha256": "3a11cbd3ff3dd1ccaab0ccf254762f5b8fd5e4d15296509c1bf182b06f25eaf9",
+ "stdout_tail": "PASS: P1a cos(theta+i tau)=cos theta cosh tau - i sin theta sinh tau identically\nPASS: P1b cos theta + (cosh tau-1) - cos theta cosh tau = (1-cos)(cosh-1) >= 0 for real theta, tau\nPASS: P2a series ratio 1/(2k)! over 1/(2(2k-2)!) = 2/((2k)(2k-1)) <= 1 for k=1..11\nPASS: P2b l_inf shell j on Z^2 has exactly 8j sites for j=1..20 (note: at most 8j)\nPASS: P3a cosh 1 < 8/5 and 25/16 <= 8/5 as used in P3\nintegral pi*c*(c**2 + 8)/8\nwant pi*c*(c**2 + 8)/8\nPASS: P1c shift-lemma test polynomial has nonzero period integral (pi*c*(c**2 + 8)/8)\nSUMMARY: pattern has no purchase on this note: P1 complex-cosine identity holds; (1-cos)(cosh-1) gap identity holds; P2 series ratios 2/((2k)(2k-1))<=1 for k=1..11; l_inf shells have exactly 8j sites; cosh 1 < 8/5; the degree-4 shift-lemma test polynomial has nonzero period integral\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je10c",
+  "at_utc": "20260919T020027Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

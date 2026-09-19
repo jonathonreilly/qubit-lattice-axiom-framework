@@ -1,0 +1,2 @@
+no sampled never/always claim found that is load-bearing
+SUMMARY: pattern has no purchase on this note — load-bearing Ward statements are exact algebraic certificates, not sampling conjectures

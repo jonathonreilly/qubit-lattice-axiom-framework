@@ -1,0 +1,2 @@
+R=1..40: occupied min Q=4, shell min = h_R; Q(0,0)=0 Q(1,0)=4
+SUMMARY: falsifier (Sec.3 charged free floor) did not fire — every occupied SU(3) label with p+q<=R has Casimir >=4 (min 4 at (1,0)/(0,1)) and shell min = R^2-floor(R^2/4)+3R for R=1..40

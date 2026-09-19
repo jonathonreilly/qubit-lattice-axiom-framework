@@ -1,0 +1,20 @@
+== T2: declared Fourier m̂ = N^{-1/2} M vs proof m̂ = N^{-1} M ==
+  T2 residual with declared ŝ(0)=N^{-1/2} M: M1**2*beta*h*(sqrt(N) - 1)/sqrt(N)
+  T2 residual with proof m̂=N^{-1} M:         0
+HIT: T2 βh·N⟨(m̂¹)²⟩=⟨m̂³⟩ uses m̂=N^{-1}Σs (proof: Σs=N m̂) but the declared Fourier ŝ(k=0)=N^{-1/2}Σs leaves residual βh M1² (1-N^{-1/2}); factor √N at every L>1
+  L=2 N=8: LHS/RHS of T2 under declared ŝ is 2*sqrt(2) (not 1)
+  L=3 N=27: LHS/RHS of T2 under declared ŝ is 3*sqrt(3) (not 1)
+  L=4 N=64: LHS/RHS of T2 under declared ŝ is 8 (not 1)
+== T3/D1 Parseval on a 4-ring, both conventions ==
+  N^{-1} Σ|hat_unn|^2 = 39/49
+  N^{-1} Σ|hat_uni|^2 = 39/196
+  Σ_x f_x^2             = 39/49
+  ⟨f_x^2⟩               = 39/196
+  D1 identity holds unnormalized=True unitary=False
+  T3 identity holds unnormalized=False unitary=True
+HIT: D1 prints N^{-1}Σ_k|f̂(k)|² = Σ_x f_x² (true only for unnormalized DFT hat=Σ e^{-ikx} f); under the declared ŝ=N^{-1/2}Σ the same 4-ring data gives N^{-1}Σ|ŝ|²=39/196 != Σ f²=39/49 (equals ⟨f²⟩=39/196 instead, which is T3)
+== G_L inversion (N^{-1}, e^{+ikr}) on T_L^3, L=2,4 ==
+  L=2: (ΔG)_0=7/8 want 7/8
+  L=4: (ΔG)_0=63/64 want 63/64
+HIT: T2 βh·N⟨(m̂¹)²⟩=⟨m̂³⟩ uses m̂=N^{-1}Σs (proof: Σs=N m̂) but the declared Fourier ŝ(k=0)=N^{-1/2}Σs leaves residual βh M1² (1-N^{-1/2}); factor √N at every L>1
+SUMMARY: NORMALIZATION (PR #8173): T2 βh·N⟨(m̂¹)²⟩=⟨m̂³⟩ uses m̂=N^{-1}Σs (proof: Σs=N m̂) but the declared Fourier ŝ(k=0)=N^{-1/2}Σs leaves residual βh M1² (1-N^{-1/2}); factor √N at every L>1; D1 prints N^{-1}Σ_k|f̂(k)|² = Σ_x f_x² (true only for unnormalized DFT hat=Σ e^{-ikx} f); under the declared ŝ=N^{-1/2}Σ the same 4-ring data gives N^{-1}Σ|ŝ|²=39/196 != Σ f²=39/49 (equals ⟨f²⟩=39/196 instead, which is T3)

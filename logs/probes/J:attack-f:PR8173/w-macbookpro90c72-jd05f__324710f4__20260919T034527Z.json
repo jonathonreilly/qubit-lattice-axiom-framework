@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-f:PR8173",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block29-transv",
+ "worker": "w-macbookpro90c72-jd05f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8173/fourier_mhat_N_convention.py",
+ "seed": 89527,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "324710f4",
+ "started_utc": "20260919T034527Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "NORMALIZATION (PR #8173): T2 \u03b2h\u00b7N\u27e8(m\u0302\u00b9)\u00b2\u27e9=\u27e8m\u0302\u00b3\u27e9 uses m\u0302=N^{-1}\u03a3s (proof: \u03a3s=N m\u0302) but the declared Fourier \u015d(k=0)=N^{-1/2}\u03a3s leaves residual \u03b2h M1\u00b2 (1-N^{-1/2}); factor \u221aN at every L>1; D1 prints N^{-1}\u03a3_k|f\u0302(k)|\u00b2 = \u03a3_x f_x\u00b2 (true only for unnormalized DFT hat=\u03a3 e^{-ikx} f); under the declared \u015d=N^{-1/2}\u03a3 the same 4-ring data gives N^{-1}\u03a3|\u015d|\u00b2=39/196 != \u03a3 f\u00b2=39/49 (equals \u27e8f\u00b2\u27e9=39/196 instead, which is T3)"
+ },
+ "review": "NORMALIZATION HIT: T2 m\u0302 is N^{-1}\u03a3s in the proof but declared Fourier is N^{-1/2}\u03a3; residual factor \u221aN. D1 Parseval uses unnormalized DFT against declared \u015d.",
+ "what": "PR #8173 ([physics-loop] admissibility-induced-law block29 \u2014 bounded_t): attack ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916; git show origin/physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916:<note>. Create probes/work/pr8173/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8173/<script>.py\"",
+ "stdout_sha256": "f76055c9e60fce8e81f78503adac37513f992099762d0d7f2e4642544e3a578e",
+ "stdout_tail": " \u03a3s=N m\u0302) but the declared Fourier \u015d(k=0)=N^{-1/2}\u03a3s leaves residual \u03b2h M1\u00b2 (1-N^{-1/2}); factor \u221aN at every L>1\n  L=2 N=8: LHS/RHS of T2 under declared \u015d is 2*sqrt(2) (not 1)\n  L=3 N=27: LHS/RHS of T2 under declared \u015d is 3*sqrt(3) (not 1)\n  L=4 N=64: LHS/RHS of T2 under declared \u015d is 8 (not 1)\n== T3/D1 Parseval on a 4-ring, both conventions ==\n  N^{-1} \u03a3|hat_unn|^2 = 39/49\n  N^{-1} \u03a3|hat_uni|^2 = 39/196\n  \u03a3_x f_x^2             = 39/49\n  \u27e8f_x^2\u27e9               = 39/196\n  D1 identity holds unnormalized=True unitary=False\n  T3 identity holds unnormalized=False unitary=True\nHIT: D1 prints N^{-1}\u03a3_k|f\u0302(k)|\u00b2 = \u03a3_x f_x\u00b2 (true only for unnormalized DFT hat=\u03a3 e^{-ikx} f); under the declared \u015d=N^{-1/2}\u03a3 the same 4-ring data gives N^{-1}\u03a3|\u015d|\u00b2=39/196 != \u03a3 f\u00b2=39/49 (equals \u27e8f\u00b2\u27e9=39/196 instead, which is T3)\n== G_L inversion (N^{-1}, e^{+ikr}) on T_L^3, L=2,4 ==\n  L=2: (\u0394G)_0=7/8 want 7/8\n  L=4: (\u0394G)_0=63/64 want 63/64\nHIT: T2 \u03b2h\u00b7N\u27e8(m\u0302\u00b9)\u00b2\u27e9=\u27e8m\u0302\u00b3\u27e9 uses m\u0302=N^{-1}\u03a3s (proof: \u03a3s=N m\u0302) but the declared Fourier \u015d(k=0)=N^{-1/2}\u03a3s leaves residual \u03b2h M1\u00b2 (1-N^{-1/2}); factor \u221aN at every L>1\nSUMMARY: NORMALIZATION (PR #8173): T2 \u03b2h\u00b7N\u27e8(m\u0302\u00b9)\u00b2\u27e9=\u27e8m\u0302\u00b3\u27e9 uses m\u0302=N^{-1}\u03a3s (proof: \u03a3s=N m\u0302) but the declared Fourier \u015d(k=0)=N^{-1/2}\u03a3s leaves residual \u03b2h M1\u00b2 (1-N^{-1/2}); factor \u221aN at every L>1; D1 prints N^{-1}\u03a3_k|f\u0302(k)|\u00b2 = \u03a3_x f_x\u00b2 (true only for unnormalized DFT hat=\u03a3 e^{-ikx} f); under the declared \u015d=N^{-1/2}\u03a3 the same 4-ring data gives N^{-1}\u03a3|\u015d|\u00b2=39/196 != \u03a3 f\u00b2=39/49 (equals \u27e8f\u00b2\u27e9=39/196 instead, which is T3)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd05f",
+  "at_utc": "20260919T034545Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "T2 and D1 use m\u0302/hat conventions that disagree with the declared \u015d=N^{-1/2} DFT by a factor \u221aN (T2) and N (Parseval sum vs average); G_L inversion holds.",
+  "by": "w-macbookpro90c72-jd05f",
+  "at_utc": "20260919T034545Z"
+ }
+}

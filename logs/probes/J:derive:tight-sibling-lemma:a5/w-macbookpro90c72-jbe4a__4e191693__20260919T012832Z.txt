@@ -1,0 +1,16 @@
+CHECK E0: PASS
+CUBE census: eta(root)=1 in 212/256; processed root 168; two-proc-preds 32; tight-pair hits 0; brute_min values [(Fraction(-5, 1), 48), (Fraction(-2, 1), 48)]
+CHECK E1a: PASS tight hits 0
+CHECK E1b: PASS n_two=32
+CHECK E1c: PASS values {Fraction(-5, 1): 48, Fraction(-2, 1): 48}
+CHECK W1root1: PASS eta[root]=1
+  W1 pred (3, 3, 3) kind=proc single_seed=-2 brute=-2 nseeds=1
+CHECK W1notight: PASS tight preds 0 of 1
+CHECK W2root1: PASS eta[root]=1
+  W2 pred (3, 3, 5) kind=proc single_seed=None brute=None nseeds=2
+CHECK W2notight: PASS tight preds 0 of 1
+CHECK W3root1: PASS eta[root]=1
+  W3 pred (4, 4, 4) kind=proc single_seed=None brute=None nseeds=8
+CHECK W3notight: PASS tight preds 0 of 1
+HIT: on the isolated 2x2x2 cube, every noise pattern (256) in which the top site is processed with at least two processed 1-predecessors has brute_min(c=1) in [Fraction(-5, 1), Fraction(-2, 1)] at those predecessors, never 0 (n_two_proc_preds=32). Block 31 witnesses W1,W2,W3 are not tight-sibling counterexamples. Local route (i) holds on this cone; the lemma is not proved on the infinite lattice.
+SUMMARY: PARTIAL exhaustive 2x2x2 cube: no tight processed sibling pair sharing a processed successor (n_two=32, values [Fraction(-5, 1), Fraction(-2, 1)]); W1-W3 of block 31 are not counterexamples; the tight-sibling lemma remains open.

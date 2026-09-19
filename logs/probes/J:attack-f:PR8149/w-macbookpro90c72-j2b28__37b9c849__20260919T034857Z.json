@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-j2b28",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8149/normalization_sixaxis_Z.py",
+ "seed": 89737,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "37b9c849",
+ "started_utc": "20260919T034857Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - six-axis conditionals sum to 1 at (3,1,2); TV 1/2; Z1=p+q+4r=12; not the known 216-env HIT"
+ },
+ "review": "six-axis kernels at (3,1,2) sum to 1 with Z1=12 and TV 1/2, so the normalization holds and the pattern has no purchase",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "9e8b37f6539d8d541e7e5cdadc3a19715f1c0e250bec6f92f1dee77a64aa9b3c",
+ "stdout_tail": "preds=((1, 0, 0), (1, 0, 0), (1, 0, 0)): Z=60 sum K=1\npreds=((1, 0, 0), (1, 0, 0), (-1, 0, 0)): Z=44 sum K=1\npreds=((1, 0, 0), (0, 1, 0), (0, 0, 1)): Z=48 sum K=1\nTV 1/2: TV(\u03bc,\u03bc)=0 TV(e0,e1)=1\none-neighbour Z1=p+q+4r=12 at (3,1,2)\nSUMMARY: pattern has no purchase on this note - six-axis conditionals sum to 1 at (3,1,2); TV 1/2; Z1=p+q+4r=12; not the known 216-env HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2b28",
+  "at_utc": "20260919T034857Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

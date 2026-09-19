@@ -1,0 +1,6 @@
+preds=((1, 0, 0), (1, 0, 0), (1, 0, 0)): Z=60 sum K=1
+preds=((1, 0, 0), (1, 0, 0), (-1, 0, 0)): Z=44 sum K=1
+preds=((1, 0, 0), (0, 1, 0), (0, 0, 1)): Z=48 sum K=1
+TV 1/2: TV(μ,μ)=0 TV(e0,e1)=1
+one-neighbour Z1=p+q+4r=12 at (3,1,2)
+SUMMARY: pattern has no purchase on this note - six-axis conditionals sum to 1 at (3,1,2); TV 1/2; Z1=p+q+4r=12; not the known 216-env HIT

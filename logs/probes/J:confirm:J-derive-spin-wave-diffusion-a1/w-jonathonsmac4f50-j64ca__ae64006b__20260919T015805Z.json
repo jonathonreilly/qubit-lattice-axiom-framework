@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-spin-wave-diffusion-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j64ca",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/spin-wave-diffusion/referee_w-jonathonsmac4f50-j64ca/check.py",
+ "seed": 83085,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae64006b",
+ "started_utc": "20260919T015805Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - no failing step; provenance disclosed (the L = 1 observation first appears in this referee family's a2 report); the general-L combination is left open, as the attempt says"
+ },
+ "review": "Referee of spin-wave-diffusion a1 (grok-4.6): independent checks pass 3 of 3 (the vMF chordal moment and the exponential form of A, the exact L = 1 ratio [1 - 6 beta/(e^{6 beta} - 1)]/A(3 beta) with its 1/beta expansion, G_4 and the Jacobian limit), so the exact L = 1 law survives with no failing step; provenance disclosed (the L = 1 observation first appeared in this referee family's a2 report); this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:spin-wave-diffusion:a1/; its files are probes/work/derive/spin-wave-diffusion/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/spin-wave-diffusion/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "cbe875ebe2b48924bf414f8f58d74e52b55e9e58bbd1dbdef22441b637595392",
+ "stdout_tail": "ASS: U2 k(1 - A(k)) = 1 - 2k/(e^{2k} - 1); the L = 1 one-step ratio (1 - A)/sigma^2 equals [1 - 6 beta/(e^{6 beta} - 1)]/A(3 beta): beta = 6: 1.05882352941 (beta^3 x remainder = 0.0392157); beta = 12: 1.02857142857 (beta^3 x remainder = 0.0380952); beta = 24: 1.01408450704 (beta^3 x remainder = 0.0375587); beta = 48: 1.00699300699 (beta^3 x remainder = 0.037296) - so it is 1 + 1/(3 beta) + 1/(9 beta^2) + 1/(27 beta^3) + ..., not identically 1\nPASS: U3 G_4 = 189/128, G_1 = 0 (no nonzero mode on L = 1), and (n_x/eps)^2 -> m**(-2)\nINFO: U4 on L = 1 at beta = 6 the script's estimator at lag l is (1 - A^l)/l: 0.0555556 at l = 1 and 0.0304177 at l = 25 (the script's smallest lag): the attempt's D_1 = 1 - A(3 beta) is the one-step rate, the natural reading of a diffusion constant, not the script's lag-25 number on L = 1\nHIT: confirmed - a1's exact L = 1 law survives: the one-step direction rate is 1 - A(3 beta), so D_1 L^2/sigma^2 = [1 - 6 beta/(e^{6 beta} - 1)]/A(3 beta) = 1 + 1/(3 beta) + 1/(9 beta^2) + O(beta^-3), not identically 1, which contradicts a2's 1/(1 - sigma^2 G_L)^2 (= 1 at L = 1) as a finite-L identity; the chordal moment, the exponential form of A, G_4 = 189/128 and the Jacobian limit re-verified; D_1 here is the one-step rate (the script's lag-25 estimator saturates on L = 1)\nSUMMARY: confirmed - no failing step; provenance disclosed (the L = 1 observation first appears in this referee family's a2 report); the general-L combination is left open, as the attempt says\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j64ca",
+  "at_utc": "20260919T015805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of the exact single-site direction-diffusion law of the sphere formation law (a finite-L counterexample to an identity claimed in a2); provenance: observation first in this referee family's a2 report",
+  "by": "w-jonathonsmac4f50-j64ca",
+  "at_utc": "20260919T015805Z"
+ }
+}

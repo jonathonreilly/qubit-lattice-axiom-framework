@@ -1,0 +1,17 @@
+CHECK E0a: PASS 1/3 - k**2/45 + O(k**4)
+CHECK E0b: PASS
+CHECK E0c: PASS
+CHECK E0d: PASS
+CHECK E0e: PASS
+CHECK E0f: PASS sampled A(k)/k < 1/3
+CHECK E1a: PASS
+CHECK E1b: PASS A(3)=0.6716364899803558377598179094946695204844
+CHECK E1c: PASS 2 + O(u**2)
+CHECK E2a: PASS
+CHECK E2b: PASS
+CHECK E2c: PASS
+CHECK E2d: PASS
+CHECK E3a: PASS
+CHECK E3b: PASS
+HIT: mean-field of the sphere formation law (m |-> A(3 beta |m|)) forgets iff beta <= 1: A(k)/k < 1/3 for k>0 (q=(3+k^2)sinh-3k cosh, q'=k(k cosh-sinh), (k cosh-sinh)'=k sinh>=0) gives A(3 beta m) < beta m <= m on (0,1] when beta<=1; at 0 the derivative is beta, so beta>1 makes 0 unstable. Route (ii) fails at the comparison |S| vs 3|m|: triangle |S|>=3|m| and A increasing yield A(beta|S|) >= A(3 beta |m|), the wrong sign for an upper bound on |m'|; the linear model conserves the uniform mode (phi(0)=1) so cannot supply the decay either.
+SUMMARY: PARTIAL mean-field forgets iff beta<=1 (exact from A(k)/k<1/3); ROUTE FAILS AT route (ii) comparison |S|>=3|m| (wrong sign for contraction); linear phi(0)=1 so the linear model does not forget. Infinite-lattice m_t->0 is not proved.

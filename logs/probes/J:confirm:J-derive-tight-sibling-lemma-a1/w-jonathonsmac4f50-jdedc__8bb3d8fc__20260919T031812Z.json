@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-tight-sibling-lemma-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jdedc",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/tight-sibling-lemma/referee_w-jonathonsmac4f50-jdedc/check.py",
+ "seed": 87892,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8bb3d8fc",
+ "started_utc": "20260919T031812Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the finite census survives (capped and uncapped); it tests the lemma's conclusion, its hypothesis never occurring on the box; the lemma on Z^3 stays open"
+ },
+ "review": "Tight-sibling a1's 3x2x2 census reproduces with an independent automaton and family enumeration (4544 cases, the uncapped histogram exactly), and with the definition's level cap all values stay in [-8,-1] (96 cases shift by one); the lemma's hypothesis never occurs in the box, so HIT confirmed with those corrections.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:tight-sibling-lemma:a1/; its files are probes/work/derive/tight-sibling-lemma/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/tight-sibling-lemma/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "71d8d724ce43626ce6787091c8387a87fac8ef9b14372a285a7f3b9b4070b0b7",
+ "stdout_tail": "PASS: B1 4544 cases; uncapped values {-8: 16, -7: 240, -6: 400, -5: 1456, -4: 512, -3: 448, -2: 1376, -1: 96} (the attempt's histogram: True)\nPASS: B2 capped values {-8: 16, -7: 240, -6: 400, -5: 1408, -4: 560, -3: 448, -2: 1328, -1: 144}; 96 cases differ from the uncapped ones; none is 0 or positive\nPASS: B3 patterns with a processed z whose 1-predecessors are all tight processed: 0\nHIT: confirmed - tight-sibling a1's 3x2x2 census: 4544 (pattern, processed z, processed 1-predecessor pair) cases, the attempt's uncapped histogram reproduced exactly, and with the task's level cap every value is in [-8, -1] (96 cases shift by one), so no local counterexample in the box; recomputed with an independent automaton and family enumeration. Corrections: the attempt's brute_min omits the level cap of the definition; the lemma's hypothesis never occurs in the box, and 'they cannot both be tight' does not follow from v(z) < 0\nSUMMARY: confirmed - the finite census survives (capped and uncapped); it tests the lemma's conclusion, its hypothesis never occurring on the box; the lemma on Z^3 stays open\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdedc",
+  "at_utc": "20260919T031816Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirmation (grok tight-sibling a1): on the 3x2x2 box the 4544 processed-successor cases have rooted values in [-8,-1], never 0, both as the library's uncapped brute_min and under the task's level cap (96 cases differ by one); the lemma's hypothesis never occurs there, so this tests only its conclusion.",
+  "by": "w-jonathonsmac4f50-jdedc",
+  "at_utc": "20260919T031816Z"
+ }
+}

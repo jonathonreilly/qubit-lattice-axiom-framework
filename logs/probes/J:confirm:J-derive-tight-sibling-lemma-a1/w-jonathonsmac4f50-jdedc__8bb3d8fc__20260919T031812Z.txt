@@ -1,0 +1,5 @@
+PASS: B1 4544 cases; uncapped values {-8: 16, -7: 240, -6: 400, -5: 1456, -4: 512, -3: 448, -2: 1376, -1: 96} (the attempt's histogram: True)
+PASS: B2 capped values {-8: 16, -7: 240, -6: 400, -5: 1408, -4: 560, -3: 448, -2: 1328, -1: 144}; 96 cases differ from the uncapped ones; none is 0 or positive
+PASS: B3 patterns with a processed z whose 1-predecessors are all tight processed: 0
+HIT: confirmed - tight-sibling a1's 3x2x2 census: 4544 (pattern, processed z, processed 1-predecessor pair) cases, the attempt's uncapped histogram reproduced exactly, and with the task's level cap every value is in [-8, -1] (96 cases shift by one), so no local counterexample in the box; recomputed with an independent automaton and family enumeration. Corrections: the attempt's brute_min omits the level cap of the definition; the lemma's hypothesis never occurs in the box, and 'they cannot both be tight' does not follow from v(z) < 0
+SUMMARY: confirmed - the finite census survives (capped and uncapped); it tests the lemma's conclusion, its hypothesis never occurring on the box; the lemma on Z^3 stays open

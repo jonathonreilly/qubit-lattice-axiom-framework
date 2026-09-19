@@ -1,0 +1,33 @@
+YT P1 I_S native BZ certificate attempt (2026-06-11)
+
+Defining expression used:
+  I_scalar_old(N) = 2 + (16*pi^2/(16*u0^2)) * <N_S/((D_psi+m^2)(D_g+m^2)) - 4/(k^2+m^2)^2>_BZ
+  I_scalar_corrected(N) = 2 + 16*(I_scalar_old(N) - 2)
+  Source: scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py:292-350
+  Feynman-rule source: docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md:357-401
+
+[PASS] citation note defines I_S as Z_S finite matching coefficient (docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md:188-207)
+[PASS] H_unit note contains symbolic D_S1 BZ kernel (docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md:357-374)
+[PASS] H_unit tadpole subtraction is symbolic, not a closed numerical formula (docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md:377-405)
+[PASS] full-staggered runner now exposes the corrected no-division scalar expression (scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py:292-350)
+[PASS] Delta_1 note separates old I_S citation from native I_v_scalar plus I_leg (docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md:271-298)
+[PASS] canonical u0 imported from same-surface plaquette constant (u0=0.8776813812, plaquette=0.5934)
+Grid sweep for obsolete divided diagnostic:
+  N= 8  I_scalar_old=3.794186533223  seed
+  N=16  I_scalar_old=3.885650653368  delta_vs_prev=2.3539%
+  N=32  I_scalar_old=3.900542209113  delta_vs_prev=0.3818%
+  N=64  I_scalar_old=3.902216606381  delta_vs_prev=0.0429%
+
+[PASS] post-coarse grid convergence N=16->32 and N=32->64 below 1% (N16->32=0.3818%, N32->64=0.0429%)
+[PASS] second-order extrapolation error is small relative to bracket gap (I_old_inf=3.902774738804, err~0.000558132423)
+[PASS] falsifier guard: obsolete divided diagnostic is finite (|I_scalar_old|=3.902775)
+[PASS] corrected no-division scalar value invalidates the [4,10] bracket (I_scalar_corrected=32.444396 is above 10.0)
+[PASS] corrected Delta_1 diagnostic is large, not a precision closure (Delta_1_corrected=2*I_scalar_corrected-6=58.888792)
+
+CONVERGED_I_SCALAR_OLD_DIVIDED: 3.902774738804
+CORRECTED_I_SCALAR_NO_DIVISION: 32.444395820863
+RESOLUTION_EXTRAPOLATION_ERROR_OLD_DIVIDED: 0.000558132423
+INDUCED_DELTA_1_CORRECTED: 58.888791641726
+BRACKET_UNDER_TEST: [4.000000, 10.000000]
+BRACKET_VERDICT: VOID_DOUBLE_COUNT_ARTIFACT
+TOTAL: PASS=11 FAIL=0

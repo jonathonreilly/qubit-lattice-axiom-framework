@@ -1,0 +1,68 @@
+
+===============================================================================
+A - Exact Cycle-100 terminal, generated rail, and mixed table
+===============================================================================
+FAIL A01 Cycle 101 note exists
+PASS A02 source is exactly the 264-record Cycle-100 terminal
+PASS A03 no fragment or first-B-rail record is supplied
+PASS A04 complete Cycle-52 A slice and BACKSTOP are already generated
+PASS A05 Cycle-100 plus Cycle-52 base has exactly 6,524 raw rows
+PASS A06 relational fragment has 17 canonical and 372 raw rows
+PASS A07 fragment raw rows are disjoint from the complete base
+PASS A08 complete mixed union has 6,896 single-valued raw rows
+PASS A09 initial mixed frontier is exactly reader START plus rail START :: {(-2, 1, 1): frozenset({'B_1_1'}), (3, 3, 3): frozenset({'R_B00'})}
+
+===============================================================================
+B - Literal eight-bit read and zero-source first harness fragment
+===============================================================================
+PASS B01 fragment grows exactly 22 records in sixteen generations
+PASS B02 every literal R_B11 bit is consumed by a grown exact signature :: {(1, 5, 1), (1, 5, 0), (0, 5, 2), (2, 5, 0), (1, 4, 2), (1, 5, 2), (0, 5, 1), (2, 4, 2)}
+PASS B03 READY and VALID are both physically consumed before the word sweep
+PASS B04 the stored literal remains exactly R_B11=10010100
+PASS B05 grown reference sees literal bit0, old R_A10, and typed cage status :: (((-1, 0, 0), 'H1'), ((0, -1, 0), 'R_A10'), ((0, 1, 0), 'R_B32'))
+PASS B06 compare certificate sees the grown reference and old R_A00 frame
+PASS B07 first write sees certificate plus two grown cage/status records
+PASS B08 wrong literal bit0 cannot form the reference
+PASS B09 full fragment graph has exactly 182 states and 538 edges :: GraphStats(states=182, edges=538, terminals=1, terminal_sizes=(22,), output_reached=True, reject_terminal=False, bad=())
+PASS B10 every asynchronous schedule reaches one complete 22-record terminal :: GraphStats(states=182, edges=538, terminals=1, terminal_sizes=(22,), output_reached=True, reject_terminal=False, bad=())
+PASS B11 complete old-debris fragment is quiet without the independent rail law :: {}
+
+===============================================================================
+C - All one-bit stored-word corruptions fail closed
+===============================================================================
+PASS C01 all eight corruptions exhaust to one stopped graph with no output :: []
+PASS C02 exact corrupt-state/edge/terminal-size census is pinned :: [(38, 70, (14,)), (34, 62, (13,)), (30, 54, (12,)), (22, 34, (11,)), (6, 5, (5,)), (10, 13, (5,)), (4, 3, (3,)), (3, 2, (2,))]
+PASS C03 wrong VALID stops after READY tap
+PASS C04 wrong READY stops before every fragment append
+PASS C05 bit5's history-mixed base row is an explicit one-record reject poison
+
+===============================================================================
+D - Generated rail product, covariance, old debris, and scope
+===============================================================================
+PASS D01 fragment and generated B rail are noninteracting at minimum L1 four :: 4
+PASS D02 exact mixed asynchronous product has 2,366 states and 9,178 edges :: ProductStats(states=2366, edges=9178, terminals=1, terminal_frontiers=((((-3, 1, 2), frozenset({'C_2_1'})),),), bad=())
+PASS D03 product has one terminal prefix exposing only exact next C-rail start :: ProductStats(states=2366, edges=9178, terminals=1, terminal_frontiers=((((-3, 1, 2), frozenset({'C_2_1'})),),), bad=())
+PASS D04 all 165,504 proper-cubic raw images preserve output :: []
+PASS D05 all 24 rotated complete old-debris prefixes expose only next rail :: []
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/zero_source_relational_first_harness_cycle101_2026_07_15.py", line 488, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/zero_source_relational_first_harness_cycle101_2026_07_15.py", line 479, in main
+    concurrency_covariance_and_scope_contract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/zero_source_relational_first_harness_cycle101_2026_07_15.py", line 465, in concurrency_covariance_and_scope_contract
+    note = NOTE.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/ZERO_SOURCE_RELATIONAL_FIRST_HARNESS_CYCLE101_NOTE_2026-07-15.md'

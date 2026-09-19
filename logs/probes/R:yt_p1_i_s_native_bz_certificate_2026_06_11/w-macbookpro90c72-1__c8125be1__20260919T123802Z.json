@@ -1,0 +1,34 @@
+{
+ "task": "R:yt_p1_i_s_native_bz_certificate_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "yt",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/yt_p1_i_s_native_bz_certificate_2026_06_11.py",
+ "seed": 21482,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8125be1",
+ "started_utc": "20260919T123802Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d74aef60e5fd853cafffa6038e24fd2ce08b7195ea222da69a6717c830158695",
+ "stdout_tail": "d runner now exposes the corrected no-division scalar expression (scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py:292-350)\n[PASS] Delta_1 note separates old I_S citation from native I_v_scalar plus I_leg (docs/YT_P1_DELTA_1_BZ_COMPUTATION_NOTE_2026-04-17.md:271-298)\n[PASS] canonical u0 imported from same-surface plaquette constant (u0=0.8776813812, plaquette=0.5934)\nGrid sweep for obsolete divided diagnostic:\n  N= 8  I_scalar_old=3.794186533223  seed\n  N=16  I_scalar_old=3.885650653368  delta_vs_prev=2.3539%\n  N=32  I_scalar_old=3.900542209113  delta_vs_prev=0.3818%\n  N=64  I_scalar_old=3.902216606381  delta_vs_prev=0.0429%\n\n[PASS] post-coarse grid convergence N=16->32 and N=32->64 below 1% (N16->32=0.3818%, N32->64=0.0429%)\n[PASS] second-order extrapolation error is small relative to bracket gap (I_old_inf=3.902774738804, err~0.000558132423)\n[PASS] falsifier guard: obsolete divided diagnostic is finite (|I_scalar_old|=3.902775)\n[PASS] corrected no-division scalar value invalidates the [4,10] bracket (I_scalar_corrected=32.444396 is above 10.0)\n[PASS] corrected Delta_1 diagnostic is large, not a precision closure (Delta_1_corrected=2*I_scalar_corrected-6=58.888792)\n\nCONVERGED_I_SCALAR_OLD_DIVIDED: 3.902774738804\nCORRECTED_I_SCALAR_NO_DIVISION: 32.444395820863\nRESOLUTION_EXTRAPOLATION_ERROR_OLD_DIVIDED: 0.000558132423\nINDUCED_DELTA_1_CORRECTED: 58.888791641726\nBRACKET_UNDER_TEST: [4.000000, 10.000000]\nBRACKET_VERDICT: VOID_DOUBLE_COUNT_ARTIFACT\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T123802Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

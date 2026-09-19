@@ -1,0 +1,45 @@
+
+===============================================================================
+A - Exact generated endpoint and zero binary compiler source
+===============================================================================
+PASS A01 source is exactly the generated Cycle-85 endpoint
+PASS A02 all eight code, VALID, and READY sites start open
+PASS A03 source adds no compiler candidate/reference/rail/cage
+PASS A04 target sees exactly R_LA with five open directions
+PASS A05 lifted live law initially enables only first R_B11 bit
+PASS A06 first physical bit agrees with R_B11
+
+===============================================================================
+B - Surface encoder table and exact append trajectory
+===============================================================================
+PASS B01 encoder has seven data plus VALID plus READY rows
+PASS B02 encoder uses only existing endpoint contents and H0/H1
+PASS B03 every encoder raw input is single-valued
+PASS B04 encoder has no exact raw-input overlap with lifted live law :: ()
+PASS B05 complete lifted union is output-single-valued
+PASS B06 all eleven states have the exact singleton/quiet frontier :: []
+PASS B07 execution is ten forced permanent appends
+
+===============================================================================
+C - Decoder, causal validation, blockers, and covariance
+===============================================================================
+PASS C01 first eight records decode exactly to R_B11
+PASS C02 word completes before VALID and READY
+PASS C03 VALID forms ninth and READY tenth
+PASS C04 every one-bit causal corruption stops before the next certificate :: []
+PASS C05 every tested extra-neighbour record blocks the exact next write :: []
+PASS C06 all 264 rotated stages have the exact transformed frontier :: []
+
+===============================================================================
+D - Scope, N1-N8, and constitutional disposition
+===============================================================================
+FAIL D01 note exists and carries authority none
+FAIL D02 note pins zero added binary source records
+FAIL D03 note names exact next residual
+FAIL D04 note contains N1-N8
+FAIL D05 note denies foundation and axiom effects
+
+SOURCE=254 CODE_BITS=8 VALID=1 READY=1 APPENDS=10
+ENCODER_CANONICAL=9 ENCODER_RAW=204 UNION_RAW=5444
+WORD=10010100 ROLE=R_B11
+SUMMARY: 19 PASS / 5 FAIL

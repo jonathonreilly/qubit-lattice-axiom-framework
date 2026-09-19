@@ -1,0 +1,91 @@
+
+===============================================================================
+A - Global confluence versus record-faithful nonreconnection
+===============================================================================
+PASS A ordinary rewrite diamond is confluent
+PASS A two-site record system has nine states
+PASS A two-site record system has twelve rewrites
+PASS A four full records are normal forms
+PASS A conflicting same-site siblings never join
+PASS A compatible independent records have one join
+PASS A record-faithful append relation is not globally confluent
+PASS A exact confluence-failure triple census
+PASS A outcome-forgetting quotient is confluent
+PASS A restored confluence identifies record 0 and 1
+
+===============================================================================
+B - Reversible proto-record and nonjoinable locked sectors
+===============================================================================
+PASS B proto-record alternatives can erase and rejoin
+PASS B locked record sectors do not join
+PASS B read/clock copy is correlated with the locked label
+PASS B lock trigger remains an explicit rewrite
+
+===============================================================================
+C - Causal trace quotient removes schedule, not outcome
+===============================================================================
+PASS C dependency fork has two schedules
+PASS C both schedules induce one causal DAG
+PASS C three independent events have 3! schedules
+PASS C their causal trace is one empty poset
+PASS C fixed-outcome disjoint schedules have one terminal sector
+PASS C changing a record outcome is not schedule gauge
+PASS C hard-menu schedule histogram is 6x6 plus 2x4
+PASS C hard menu has 44 complete scheduled histories
+PASS C arbitrary scheduler invariance is not automatic
+
+===============================================================================
+D - Path, terminal, and refinement weights
+===============================================================================
+PASS D terminal multiplicities are two versus one
+PASS D uniform path and terminal laws disagree
+PASS D rule duplication changes raw path weight
+
+===============================================================================
+E - Exact multiway history multiplicities
+===============================================================================
+PASS E 6,427 reachable rewrite states
+PASS E 254 terminal record sectors
+PASS E 4,843,392 complete rewrite histories
+PASS E exact twelve-class multiplicity histogram
+PASS E max/min path multiplicity ratio
+PASS E uniform path extrema differ from uniform terminals
+
+===============================================================================
+F - Probabilistic bisimulation protects but does not derive weights
+===============================================================================
+PASS F equal weighted roots bisimulate
+PASS F same support with different weights does not bisimulate
+PASS F inherited refinement bisimulates the parent
+PASS F uniform microbranch refinement does not
+PASS F erasing outcome labels identifies all normalized laws
+
+===============================================================================
+G - Symmetry-reduced support gap and documentation
+===============================================================================
+PASS G all 3^7 support signatures classified
+PASS G 2059 supports retain continuous weight freedom
+PASS G total free-weight incidences
+PASS G label-quotient match statistic remains free
+PASS G no tested quotient both derives and protects weights
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/wolfram_multiway_record_sector_probe_2026_07_14.py", line 400, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/wolfram_multiway_record_sector_probe_2026_07_14.py", line 391, in main
+    support_statistics_gap_and_docs()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-1/scripts/wolfram_multiway_record_sector_probe_2026_07_14.py", line 371, in support_statistics_gap_and_docs
+    note = NOTE.read_text(encoding="utf-8")
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-1/docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md'

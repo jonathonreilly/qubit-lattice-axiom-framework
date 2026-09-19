@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-formation-clauses-in-level-time-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jafa6",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/formation-clauses-in-level-time/referee_w-jonathonsmac4f50-jafa6/check.py",
+ "seed": 87623,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4efdfedb",
+ "started_utc": "20260919T031343Z",
+ "elapsed_s": 9.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at (c) (step 4's conclusion) - the finite results hold: the noise map, the k-sequences, the exact cube TVs 1182193085/23402354976 (monotone vs joint) and 201510245581/4092954053760 (two corners), 0.08219 and 0.07250 for opposite-first, the 1080 build orders; but 'the unique recorded clause that makes the finished-window law independent of order is the whole-window unit' is argued only for the unit clause (U2), while the equal-rate clock law involves no chosen order and is not the joint law (and unequal rates move it). Correction to step 3: clocks firing only next to records give P(k=1) = 7/16, P(k=3) = 3/16 (boundary-uniform weights), not the uniform-over-build-orders 79/180, 17/90"
+ },
+ "review": "Formation-clauses a2's exact results reproduce (noise map at three weights, cube TVs 1182193085/23402354976 and 201510245581/4092954053760, opposite-first 0.08219/0.07250, 1080 build orders) but its seeded-clock numbers use uniform-over-orders weights (clocks next to records give P(k=1) = 7/16, not 79/180) and its uniqueness claim (c) ignores the order-free equal-rate clock law, so it fails at (c) with no HIT.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:formation-clauses-in-level-time:a2/; its files are probes/work/derive/formation-clauses-in-level-time/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/formation-clauses-in-level-time/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "fb4af770f3818ad8ab5f28eecf0282f80e301bee21961ce356ffb466ff4f3935",
+ "stdout_tail": "vel order {0: 1, 1: 5, 2: 8, 3: 4}\nPASS N3: Z = 6982520832; TV(monotone, joint) = 1182193085/23402354976; TV(corner 000, corner 100) = 201510245581/4092954053760; TV(opposite-first, joint) = 0.08219; TV(opposite-first, monotone) = 0.07250\nPASS N4: uniform orders: P(k) = {0: Fraction(1, 4), 1: Fraction(1, 4), 2: Fraction(1, 4), 3: Fraction(1, 4)}; 1080 build orders; uniform over them: P(k=1) = 79/180, P(k=3) = 17/90; boundary-uniform clocks (Eden weights, total 1): P(k=1) = 7/16, P(k=3) = 3/16; monotone 3/8, 1/8\nPASS N5: equal-rate clock law P(all +x) = 338229/7997080000 != joint 59049/775835648; rates [1, 1, 3, 4, 5, 6, 8, 9] give 4.102631e-05 against 4.229406e-05\nINFO I1: slab Eden growth from (0,0,0): P(k=1) per site = 0.4239 (the attempt's 400-sample value 0.419; monotone 0.2778)\nSUMMARY: fails at (c) (step 4's conclusion) - the finite results hold: the noise map, the k-sequences, the exact cube TVs 1182193085/23402354976 (monotone vs joint) and 201510245581/4092954053760 (two corners), 0.08219 and 0.07250 for opposite-first, the 1080 build orders; but 'the unique recorded clause that makes the finished-window law independent of order is the whole-window unit' is argued only for the unit clause (U2), while the equal-rate clock law involves no chosen order and is not the joint law (and unequal rates move it). Correction to step 3: clocks firing only next to records give P(k=1) = 7/16, P(k=3) = 3/16 (boundary-uniform weights), not the uniform-over-build-orders 79/180, 17/90\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jafa6",
+  "at_utc": "20260919T031352Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

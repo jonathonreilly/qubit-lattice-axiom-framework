@@ -1,0 +1,7 @@
+formation 1-u = k^T M k + O(k^4): True
+comparator E = |k|^2 + O(k^4): True
+M eigenvalues 1/9, 1/3: True
+predecessor group order 6: True
+order-6 invariance: formation=True comparator-plane=False
+48-group invariance: formation=False comparator=True
+SUMMARY: pattern has no purchase on this note: the same small-k and group-invariance tests separate the kernels as written (formation is order-6 and not 48, comparator is 48 and not order-6 on the plane)

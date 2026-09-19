@@ -1,0 +1,34 @@
+{
+ "task": "R:theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/theta_torus_dual_abelianization_weight_lattice_gaussian_2026_07_02.py",
+ "seed": 78855,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "90cde740",
+ "started_utc": "20260919T004735Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b5f6d6c5ff48e1bbb8e4d7b02702a9df1ea436fb7fc7bff69f10b3a3abeb989",
+ "stdout_tail": "xed direction survives element by element.\nper_site: checked and not executed \u2014 every grid index in this runner labels a maximal-torus angle (phi for SU(2), the pair theta_1, theta_2 for SU(3)), never a lattice site, and no site variable, link variable or plaquette occupancy is constructed anywhere in Sections A through F.\nper_mode: mode-by-mode resolution is the substance of this runner \u2014 the SU(2) dressed weight has vanishing zero mode and reproduces A n exp(-t n^2 / 4) at t = 0.7 for every n from 1 to 28 at relative tolerance 1e-10 on a 1024-point offset angle grid, and on the 48x48 SU(3) offset grid all 841 window modes with |n_1|, |n_2| <= 14 match the signed d_R exp(-t C_2) table to 1e-6 relative, 372 of them nonzero.\nper_block: the center-graded blocks come out as coset shadows of the dual lattice \u2014 restricting SU(2) to integer spins kills the even-mu modes and leaves only the odd-mu coset populated, while the SU(3) table populates all three triality cosets [0, 1, 2] and the non-regular lines n_1 = n_2, n_1 = 0 and n_2 = 0 carry identically zero weight.\nlattice_wide: checked and not executed as a spatial-lattice statement \u2014 no Z^3 or T^4 volume, spacing or boundary condition exists in this runner, so there is nothing to resolve over a physical lattice; the only lattice swept is the rho-shifted SU(3) weight lattice, and even that support claim is confined to the finite window |n_1|, |n_2| <= 14 with no infinite-volume or thermodynamic limit taken.\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T004735Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

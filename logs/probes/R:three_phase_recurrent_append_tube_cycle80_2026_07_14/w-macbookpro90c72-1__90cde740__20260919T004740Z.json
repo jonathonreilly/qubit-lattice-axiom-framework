@@ -1,0 +1,31 @@
+{
+ "task": "R:three_phase_recurrent_append_tube_cycle80_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "three",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/three_phase_recurrent_append_tube_cycle80_2026_07_14.py",
+ "seed": 78860,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "90cde740",
+ "started_utc": "20260919T004740Z",
+ "elapsed_s": 3.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d7f640cd0be6c63d2141223fdff0e55ec6271283f5d31635719f9534e1663cc0",
+ "stdout_tail": "ists :: []\nPASS CB4 no output conflict exists :: frozenset()\nPASS CC1 exact transition counters are pinned :: (18, 18, 18)\nPASS CC2 every schedule reaches the complete layer\nPASS CC3 no premature or wrong append exists :: []\nPASS CC4 no output conflict exists :: frozenset()\nPASS D03a horizon counters are exact :: (72, 52, 52)\nPASS D03b only the correct next seed crosses the horizon :: frozenset({((4, 1, 1), 'R_B11')})\nPASS D03c horizon has no conflict\nPASS D06a horizon counters are exact :: (169, 103, 103)\nPASS D06b only the correct next seed crosses the horizon :: frozenset({((7, 1, 1), 'R_B11')})\nPASS D06c horizon has no conflict\nPASS D09a horizon counters are exact :: (266, 154, 154)\nPASS D09b only the correct next seed crosses the horizon :: frozenset({((10, 1, 1), 'R_B11')})\nPASS D09c horizon has no conflict\nPASS D12a horizon counters are exact :: (363, 205, 205)\nPASS D12b only the correct next seed crosses the horizon :: frozenset({((13, 1, 1), 'R_B11')})\nPASS D12c horizon has no conflict\nPASS D15a horizon counters are exact :: (460, 256, 256)\nPASS D15b only the correct next seed crosses the horizon :: frozenset({((16, 1, 1), 'R_B11')})\nPASS D15c horizon has no conflict\nPASS E01 recurrence uses exactly 51 new physical roles :: 51\nPASS E02 selected compiler plus serial recurrence forces eight bits\nPASS E03 recurrent and selected extensional raw domains are disjoint\nPASS E04 composed law is single-valued :: (198, 4376)\n\nROWS=51 RAW=1170 ROLES=51\nSUMMARY: 41 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T004744Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8173",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block29-transv",
+ "worker": "w-macbookpro90c72-jbd61",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8173/same_test_c_equals_one.py",
+ "seed": 86729,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ce67aee",
+ "started_utc": "20260919T025849Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same exact-c=1 test holds for the quadratic spin-wave model (T1) and is not a theorem for the sphere law; they separate. Not a re-find of 0.86-0.98"
+ },
+ "review": "c=1 exactly holds for spin-wave T1 and is not a sphere theorem; pattern has no purchase; not the 0.86-0.98 HIT",
+ "what": "PR #8173 ([physics-loop] admissibility-induced-law block29 \u2014 bounded_t): attack ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916; git show origin/physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916:<note>. Create probes/work/pr8173/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8173/<script>.py\"",
+ "stdout_sha256": "4b51d4c32ee5a552811d8b631b2022fb0464feb00495b1019967f091a26e791f",
+ "stdout_tail": "c==1 exactly: spin-wave=True sphere=False\nSUMMARY: pattern has no purchase on this note - the same exact-c=1 test holds for the quadratic spin-wave model (T1) and is not a theorem for the sphere law; they separate. Not a re-find of 0.86-0.98\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jbd61",
+  "at_utc": "20260919T025849Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

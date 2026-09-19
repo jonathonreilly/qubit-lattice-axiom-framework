@@ -1,0 +1,2 @@
+c==1 exactly: spin-wave=True sphere=False
+SUMMARY: pattern has no purchase on this note - the same exact-c=1 test holds for the quadratic spin-wave model (T1) and is not a theorem for the sphere law; they separate. Not a re-find of 0.86-0.98

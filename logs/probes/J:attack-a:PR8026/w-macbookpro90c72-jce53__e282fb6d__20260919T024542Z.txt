@@ -1,0 +1,2 @@
+spatial plaquette [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 1, 0)] 4-cycle? True
+SUMMARY: pattern has no purchase on this note - an area-1 spatial plaquette exists as a 4-cycle in a coordinate plane of Z^3

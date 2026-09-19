@@ -1,0 +1,7 @@
+n_two=32 root brute_min [(Fraction(-4, 1), 16), (Fraction(-1, 1), 16)] n_pos=0
+CHECK E1: PASS n_two=32
+CHECK E2: PASS
+CHECK E3: PASS
+CHECK E4: PASS
+HIT: on the isolated 2x2x2 cube, in all 32 noise patterns where the top site is processed with at least two processed 1-predecessors, brute_min(c=1) at the successor is in [Fraction(-4, 1), Fraction(-1, 1)] and never positive, so the lemma's conclusion holds on this cone even though the predecessors are not tight. The lemma on Z^3 is not proved.
+SUMMARY: PARTIAL 2x2x2 cube: lemma conclusion v(successor)<=0 in all 32 two-processed-pred cases (values [Fraction(-4, 1), Fraction(-1, 1)]); predecessors are not tight; infinite-lattice lemma remains open.

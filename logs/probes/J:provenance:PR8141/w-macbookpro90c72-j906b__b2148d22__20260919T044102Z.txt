@@ -1,0 +1,13 @@
+cache stdout lines=32
+[DERIVED] exp Φ_leaves=165/169 = 1 / exp(Δ_3 log K_3) with T3 ratio 169/165
+[CACHE+NOTE] 12/13
+[CACHE+NOTE] 165/169
+[CACHE+NOTE] 3/4
+[CACHE] exp Phi_ab = 3
+[CACHE+NOTE] 1296
+[CACHE+NOTE] 48
+[NOTE] 1/6
+[CACHE+NOTE] (3,1,2)
+[NOTE] 169/121
+[NOTE] 169/165
+SUMMARY: PROVENANCE (PR #8141): T6 exp Φ_bc=12/13, Φ_ab=3, Φ_bd=3/4, Φ_leaves=165/169 and T1 48×1296 are CACHE-sourced; 165/169=1/(169/165) from T3 mixed difference; no provenance HIT

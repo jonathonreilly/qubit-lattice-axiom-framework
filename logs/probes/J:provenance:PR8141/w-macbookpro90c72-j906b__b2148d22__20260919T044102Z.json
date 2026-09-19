@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR8141",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block10-record",
+ "worker": "w-macbookpro90c72-j906b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8141/provenance_theorem_numbers.py",
+ "seed": 92862,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b2148d22",
+ "started_utc": "20260919T044102Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROVENANCE (PR #8141): T6 exp \u03a6_bc=12/13, \u03a6_ab=3, \u03a6_bd=3/4, \u03a6_leaves=165/169 and T1 48\u00d71296 are CACHE-sourced; 165/169=1/(169/165) from T3 mixed difference; no provenance HIT"
+ },
+ "review": "T6 exp Phi 12/13, 3, 3/4, 165/169 and T1 48x1296 are cache-sourced; 165/169=1/(169/165) from T3; no provenance HIT",
+ "what": "PR #8141 ([physics-loop] admissibility-induced-law block10 \u2014 bounded_t): for every number in the theorem statements of ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915; git show origin/physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915:<note>. Create probes/work/pr8141/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8141/<script>.py\"",
+ "stdout_sha256": "ea1af7b7efff5d0bb8e7aaa3ea89759c6af9ebba819ad70ffb46bcf93aef3be1",
+ "stdout_tail": "cache stdout lines=32\n[DERIVED] exp \u03a6_leaves=165/169 = 1 / exp(\u0394_3 log K_3) with T3 ratio 169/165\n[CACHE+NOTE] 12/13\n[CACHE+NOTE] 165/169\n[CACHE+NOTE] 3/4\n[CACHE] exp Phi_ab = 3\n[CACHE+NOTE] 1296\n[CACHE+NOTE] 48\n[NOTE] 1/6\n[CACHE+NOTE] (3,1,2)\n[NOTE] 169/121\n[NOTE] 169/165\nSUMMARY: PROVENANCE (PR #8141): T6 exp \u03a6_bc=12/13, \u03a6_ab=3, \u03a6_bd=3/4, \u03a6_leaves=165/169 and T1 48\u00d71296 are CACHE-sourced; 165/169=1/(169/165) from T3 mixed difference; no provenance HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j906b",
+  "at_utc": "20260919T044102Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

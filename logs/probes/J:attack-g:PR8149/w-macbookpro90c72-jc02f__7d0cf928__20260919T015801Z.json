@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-jc02f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8149/u3_star_tvs.py",
+ "seed": 83081,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d0cf928",
+ "started_utc": "20260919T015801Z",
+ "elapsed_s": 9.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: U3's seven isolated-star class TVs at (3,1,2) match 0, 0, 1/72, 5/144, 505/10368, 575/10368, 103375/1492992 exactly (brute-force over 6^{k+1} centre+leading-leaf configs; remaining leaves share the same kernel given the centre). Not the known U2/U4 sigma-equivariant HIT"
+ },
+ "review": "U3 isolated-star class TVs at (3,1,2) match the stated seven fractions exactly; pattern has no purchase; not the known U2/U4 sigma HIT",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "40c4f9def1c3a8e1a1f4747c907e39cc65f0ff90a097f3eb8ad262b8d6c29c90",
+ "stdout_tail": "class 0: TV=0 stated=0 match=True\nclass 1: TV=0 stated=0 match=True\nclass 2: TV=1/72 stated=1/72 match=True\nclass 3: TV=5/144 stated=5/144 match=True\nclass 4: TV=505/10368 stated=505/10368 match=True\nclass 5: TV=575/10368 stated=575/10368 match=True\nclass 6: TV=103375/1492992 stated=103375/1492992 match=True\nSUMMARY: pattern has no purchase on this note: U3's seven isolated-star class TVs at (3,1,2) match 0, 0, 1/72, 5/144, 505/10368, 575/10368, 103375/1492992 exactly (brute-force over 6^{k+1} centre+leading-leaf configs; remaining leaves share the same kernel given the centre). Not the known U2/U4 sigma-equivariant HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc02f",
+  "at_utc": "20260919T015810Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

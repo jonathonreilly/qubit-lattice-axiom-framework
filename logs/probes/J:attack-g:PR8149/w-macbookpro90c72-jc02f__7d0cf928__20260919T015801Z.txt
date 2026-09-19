@@ -1,0 +1,8 @@
+class 0: TV=0 stated=0 match=True
+class 1: TV=0 stated=0 match=True
+class 2: TV=1/72 stated=1/72 match=True
+class 3: TV=5/144 stated=5/144 match=True
+class 4: TV=505/10368 stated=505/10368 match=True
+class 5: TV=575/10368 stated=575/10368 match=True
+class 6: TV=103375/1492992 stated=103375/1492992 match=True
+SUMMARY: pattern has no purchase on this note: U3's seven isolated-star class TVs at (3,1,2) match 0, 0, 1/72, 5/144, 505/10368, 575/10368, 103375/1492992 exactly (brute-force over 6^{k+1} centre+leading-leaf configs; remaining leaves share the same kernel given the centre). Not the known U2/U4 sigma-equivariant HIT

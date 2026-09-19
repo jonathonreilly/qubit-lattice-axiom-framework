@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-formation:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j5bbf",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/lightcone-formation/w-macbookpro90c72-j5bbf/check.py",
+ "seed": 81974,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b74f3ef2",
+ "started_utc": "20260919T013934Z",
+ "elapsed_s": 38.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL linear two-sided envelope 7/(2E)<=C<=49/(2E); six-axis 7-pred Dobrushin 7c=1890/989>1 at (3,1,2); pairing exact; static vs log Z distinct"
+ },
+ "review": "Linear envelope 7/(2E)<=C<=49/(2E) on L=4; pairing holds; six-axis 7-pred Dobrushin 7c=1890/989>1 at (3,1,2) so that bound gives no uniqueness. HIT is those exact facts, not LRO.",
+ "what": "DERIVATION, independent attempt 1 of 6: Light-cone formation in 3+1: the Green-function kernel under the axiom's reading, and long-range order. LEAD (linear theory exact, the rest executed on small lattices, nothing proved). Event lattice: the record at (t+1, x), x in Z^3, is formed from the seven records (t, x), (t, x +- e_j) with the covariant weight exp(beta s.S). Records are permanent, formed once, in causal order: this IS a formation law of the axiom, on a 3+1 event lattice with a symmetric past. Linear gain-one model: phi(k) = 1 - E(k)/7, E(k) = 2 sum_j (1 - cos k_j), so the stationary equal-time transverse covariance is sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k)(1 - E(k)/14)): the lattice Green-function kernel 1/E(k) that the gravity node takes as input, times a bounded factor, with no drift and the full cubic symmetry. Simulation: memory already at beta = 1 on a 16^3 plane. As a synchronous probabilistic automaton it is reversible with respect to pi(s) prop. to prod_x Z(beta |S_x(s)|) (check it: the symmetry sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') does it), which opens equilibrium tools. TASK: (a) prove the reversibility statement and identify pi as a Gibbs law on Z^3 (its interaction, its reflection positivity through site or bond planes); (b) long-range order at large beta for the sphere menu (infrared bound for pi via reflection positivity and Gaussian domination, as block 19 (PR #8153) did for the static law; or a direct argument); (c) two-sided bounds on the equal-time transverse kernel of the form c_1/E(k) <= S(k) <= c_2/E(k); (d) the uniqueness region at small beta; (e) state precisely how this formation law differs from the static comparator (the interaction log Z(beta|S|) against beta s.s') and which of block 19's conclusions carry over. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-formation/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-formation/<name>/check.py\"",
+ "stdout_sha256": "173cd8170bb386d8f27a23fda26b5832b2cab14f6a6d41809b88c1c9d0a2bb2b",
+ "stdout_tail": "/48\nCHECKED E1.env-(3, 0, 0): E=2 C=49/24\nCHECKED E1.env-(3, 0, 1): E=4 C=49/40\nCHECKED E1.env-(3, 0, 2): E=6 C=49/48\nCHECKED E1.env-(3, 0, 3): E=4 C=49/40\nCHECKED E1.env-(3, 1, 0): E=4 C=49/40\nCHECKED E1.env-(3, 1, 1): E=6 C=49/48\nCHECKED E1.env-(3, 1, 2): E=8 C=49/48\nCHECKED E1.env-(3, 1, 3): E=6 C=49/48\nCHECKED E1.env-(3, 2, 0): E=6 C=49/48\nCHECKED E1.env-(3, 2, 1): E=8 C=49/48\nCHECKED E1.env-(3, 2, 2): E=10 C=49/40\nCHECKED E1.env-(3, 2, 3): E=8 C=49/48\nCHECKED E1.env-(3, 3, 0): E=4 C=49/40\nCHECKED E1.env-(3, 3, 1): E=6 C=49/48\nCHECKED E1.env-(3, 3, 2): E=8 C=49/48\nCHECKED E1.env-(3, 3, 3): E=6 C=49/48\nCHECKED E1.Emax-L4\nCHECKED E2.pairing\nE3.Dobrushin c 270/989 0.2730030333670374 7c 1890/989 1.9110212335692618 n 699840\nCHECKED E3.7c-at-312: c=270/989 7c=1890/989\nCHECKED E3.7c-gt1: 7c=1890/989 does not give uniqueness at (3,1,2)\nCHECKED E4.not-the-same-potential: log Z(beta|S|) vs beta s.s' per bond\nCHECKS ok=69 fail=0\nHIT: PARTIAL: linear kernel C=7/(2E(1-E/14)) obeys 7/(2E)<=C<=49/(2E) on every L=4 mode (E<=12); 7-stencil pairing holds; six-axis 7-pred Dobrushin at (3,1,2) is c=270/989, 7c=1890/989>1 so this bound does not prove uniqueness there. pi=prod Z is Gibbs for a star potential, not the static bond law, so block 19's RP/IR for beta s.s' does not automatically transfer. Independent of sphere 3/7 and FSS routes.\nSUMMARY: PARTIAL linear two-sided envelope 7/(2E)<=C<=49/(2E); six-axis 7-pred Dobrushin 7c=1890/989>1 at (3,1,2); pairing exact; static vs log Z distinct\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5bbf",
+  "at_utc": "20260919T014020Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Linear envelope and pairing exact; six-axis 7-pred Dobrushin 7c=1890/989>1 at (3,1,2). Not LRO.",
+  "by": "w-macbookpro90c72-j5bbf",
+  "at_utc": "20260919T014020Z"
+ }
+}

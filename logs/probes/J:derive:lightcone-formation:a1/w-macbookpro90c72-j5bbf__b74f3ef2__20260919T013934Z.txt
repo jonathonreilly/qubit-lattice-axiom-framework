@@ -1,0 +1,73 @@
+CHECKED E1.C-id
+CHECKED E1.env-(0, 0, 1): E=2 C=49/24
+CHECKED E1.env-(0, 0, 2): E=4 C=49/40
+CHECKED E1.env-(0, 0, 3): E=2 C=49/24
+CHECKED E1.env-(0, 1, 0): E=2 C=49/24
+CHECKED E1.env-(0, 1, 1): E=4 C=49/40
+CHECKED E1.env-(0, 1, 2): E=6 C=49/48
+CHECKED E1.env-(0, 1, 3): E=4 C=49/40
+CHECKED E1.env-(0, 2, 0): E=4 C=49/40
+CHECKED E1.env-(0, 2, 1): E=6 C=49/48
+CHECKED E1.env-(0, 2, 2): E=8 C=49/48
+CHECKED E1.env-(0, 2, 3): E=6 C=49/48
+CHECKED E1.env-(0, 3, 0): E=2 C=49/24
+CHECKED E1.env-(0, 3, 1): E=4 C=49/40
+CHECKED E1.env-(0, 3, 2): E=6 C=49/48
+CHECKED E1.env-(0, 3, 3): E=4 C=49/40
+CHECKED E1.env-(1, 0, 0): E=2 C=49/24
+CHECKED E1.env-(1, 0, 1): E=4 C=49/40
+CHECKED E1.env-(1, 0, 2): E=6 C=49/48
+CHECKED E1.env-(1, 0, 3): E=4 C=49/40
+CHECKED E1.env-(1, 1, 0): E=4 C=49/40
+CHECKED E1.env-(1, 1, 1): E=6 C=49/48
+CHECKED E1.env-(1, 1, 2): E=8 C=49/48
+CHECKED E1.env-(1, 1, 3): E=6 C=49/48
+CHECKED E1.env-(1, 2, 0): E=6 C=49/48
+CHECKED E1.env-(1, 2, 1): E=8 C=49/48
+CHECKED E1.env-(1, 2, 2): E=10 C=49/40
+CHECKED E1.env-(1, 2, 3): E=8 C=49/48
+CHECKED E1.env-(1, 3, 0): E=4 C=49/40
+CHECKED E1.env-(1, 3, 1): E=6 C=49/48
+CHECKED E1.env-(1, 3, 2): E=8 C=49/48
+CHECKED E1.env-(1, 3, 3): E=6 C=49/48
+CHECKED E1.env-(2, 0, 0): E=4 C=49/40
+CHECKED E1.env-(2, 0, 1): E=6 C=49/48
+CHECKED E1.env-(2, 0, 2): E=8 C=49/48
+CHECKED E1.env-(2, 0, 3): E=6 C=49/48
+CHECKED E1.env-(2, 1, 0): E=6 C=49/48
+CHECKED E1.env-(2, 1, 1): E=8 C=49/48
+CHECKED E1.env-(2, 1, 2): E=10 C=49/40
+CHECKED E1.env-(2, 1, 3): E=8 C=49/48
+CHECKED E1.env-(2, 2, 0): E=8 C=49/48
+CHECKED E1.env-(2, 2, 1): E=10 C=49/40
+CHECKED E1.env-(2, 2, 2): E=12 C=49/24
+CHECKED E1.env-(2, 2, 3): E=10 C=49/40
+CHECKED E1.env-(2, 3, 0): E=6 C=49/48
+CHECKED E1.env-(2, 3, 1): E=8 C=49/48
+CHECKED E1.env-(2, 3, 2): E=10 C=49/40
+CHECKED E1.env-(2, 3, 3): E=8 C=49/48
+CHECKED E1.env-(3, 0, 0): E=2 C=49/24
+CHECKED E1.env-(3, 0, 1): E=4 C=49/40
+CHECKED E1.env-(3, 0, 2): E=6 C=49/48
+CHECKED E1.env-(3, 0, 3): E=4 C=49/40
+CHECKED E1.env-(3, 1, 0): E=4 C=49/40
+CHECKED E1.env-(3, 1, 1): E=6 C=49/48
+CHECKED E1.env-(3, 1, 2): E=8 C=49/48
+CHECKED E1.env-(3, 1, 3): E=6 C=49/48
+CHECKED E1.env-(3, 2, 0): E=6 C=49/48
+CHECKED E1.env-(3, 2, 1): E=8 C=49/48
+CHECKED E1.env-(3, 2, 2): E=10 C=49/40
+CHECKED E1.env-(3, 2, 3): E=8 C=49/48
+CHECKED E1.env-(3, 3, 0): E=4 C=49/40
+CHECKED E1.env-(3, 3, 1): E=6 C=49/48
+CHECKED E1.env-(3, 3, 2): E=8 C=49/48
+CHECKED E1.env-(3, 3, 3): E=6 C=49/48
+CHECKED E1.Emax-L4
+CHECKED E2.pairing
+E3.Dobrushin c 270/989 0.2730030333670374 7c 1890/989 1.9110212335692618 n 699840
+CHECKED E3.7c-at-312: c=270/989 7c=1890/989
+CHECKED E3.7c-gt1: 7c=1890/989 does not give uniqueness at (3,1,2)
+CHECKED E4.not-the-same-potential: log Z(beta|S|) vs beta s.s' per bond
+CHECKS ok=69 fail=0
+HIT: PARTIAL: linear kernel C=7/(2E(1-E/14)) obeys 7/(2E)<=C<=49/(2E) on every L=4 mode (E<=12); 7-stencil pairing holds; six-axis 7-pred Dobrushin at (3,1,2) is c=270/989, 7c=1890/989>1 so this bound does not prove uniqueness there. pi=prod Z is Gibbs for a star potential, not the static bond law, so block 19's RP/IR for beta s.s' does not automatically transfer. Independent of sphere 3/7 and FSS routes.
+SUMMARY: PARTIAL linear two-sided envelope 7/(2E)<=C<=49/(2E); six-axis 7-pred Dobrushin 7c=1890/989>1 at (3,1,2); pairing exact; static vs log Z distinct

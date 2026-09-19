@@ -59879,6 +59879,262 @@
   "what": "Error bars for the key points: five seeds each. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 30 points of the `grid` field are claimed and run by the work loop."
  },
  {
+  "id": "X:sixaxis-weights-by-lattice",
+  "type": "scan",
+  "lane": "formation-3plus1",
+  "tier": 1,
+  "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "2 axes6w:2:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:3:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:4:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:5:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:6:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:8:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:10:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:11:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:12:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:16:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2 axes6w:24:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:2:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:3:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:4:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:5:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:6:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:8:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:10:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:11:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:12:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:16:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:24:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:2:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:3:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:4:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:5:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:6:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:8:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:10:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:11:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:12:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:16:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "2s axes6w:24:1:2 0 128 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:2:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:3:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:4:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:5:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:6:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:8:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:10:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:11:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:12:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:16:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:24:1:2 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:3:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:4:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:6:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:8:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:12:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:16:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:3:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:4:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:6:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:8:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:12:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:16:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:3:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:4:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:6:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:8:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:12:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3 axes6w:16:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:3:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:4:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:6:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:8:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:12:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:16:1:1 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:3:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:4:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:6:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:8:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:12:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:16:1:3 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:3:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:4:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:6:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:8:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:12:2:4 0 32 3000 1500 1"
+   },
+   {
+    "extra": "3s axes6w:16:2:4 0 32 3000 1500 1"
+   }
+  ],
+  "what": "The campaign's six-axis rule with weights (p, q, r) on four event lattices: 2+1 backward (block 28 located the memory threshold at p in (10.5, 11) on the line (p,1,2)), 3+1 backward, and both light-cone lattices. Menu name axes6w:p:q:r; the beta argument is ignored (pass 0). Arguments: dim menu beta L T T0 seed. GRID UNITS: the 80 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
   "id": "J:falsifier-implementation",
   "type": "judgment",
   "lane": "any",

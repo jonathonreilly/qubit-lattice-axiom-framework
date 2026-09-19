@@ -26,10 +26,14 @@ def menu_vectors(name):
 grids = np.meshgrid(*([2 * np.pi * np.arange(L) / L] * dim), indexing="ij")
 phi = ((1 + sum(2 * np.cos(g) for g in grids)) / n + 0j) if sym else (1 + sum(np.exp(1j * g) for g in grids)) / n; u = np.abs(phi) ** 2; kk = np.sqrt(sum(np.minimum(g, 2 * np.pi - g) ** 2 for g in grids))
 mask = np.ones(shape, dtype=bool); mask[(0,) * dim] = False
+weighted = menu.startswith("axes6w:")      # axes6w:p:q:r = the campaign's six-axis rule with weights p (same axis), q (opposite), r (orthogonal); beta is ignored
+if weighted: Wp, Wq, Wr = (float(x) for x in menu.split(":")[1:4]); menu_name = "axes6"
+else: menu_name = menu
 discrete = menu not in ("sphere", "linear")
 if menu == "linear": theta = np.zeros(shape + (2,))
 else:
-    M = menu_vectors(menu) if discrete else None
+    M = menu_vectors(menu_name) if discrete else None
+    if weighted: OPP = np.array([1, 0, 3, 2, 5, 4]); idx = np.zeros(shape, dtype=int)
     e0 = M[0] if discrete else np.array([0.0, 0.0, 1.0]); s = np.broadcast_to(e0, shape + (3,)).copy()
     ref = np.array([1.0, 0, 0]) if abs(e0[0]) < 0.9 else np.array([0, 1.0, 0]); t1 = ref - (ref @ e0) * e0; t1 /= np.linalg.norm(t1); t2 = np.cross(e0, t1)
 marks = sorted(set(int(round(x)) for x in np.geomspace(1, T, 25))); acc = np.zeros(shape); cnt = 0; tail = []; t0 = time.time()
@@ -41,7 +45,11 @@ for t in range(1, T + 1):
         fx, fy = theta[..., 0], theta[..., 1]
     else:
         S = s + sum(np.roll(s, 1, axis=j) + (np.roll(s, -1, axis=j) if sym else 0) for j in range(dim))
-        if discrete:
+        if weighted:
+            O = np.eye(6)[idx]; Cn = O + sum(np.roll(O, 1, axis=j) + (np.roll(O, -1, axis=j) if sym else 0) for j in range(dim))
+            logits = Cn * np.log(Wp) + Cn[..., OPP] * np.log(Wq) + (n - Cn - Cn[..., OPP]) * np.log(Wr)
+            idx = np.argmax(logits + rng.gumbel(size=shape + (6,)), axis=-1); s = M[idx]
+        elif discrete:
             idx = np.argmax(beta * (S @ M.T) + rng.gumbel(size=shape + (len(M),)), axis=-1); s = M[idx]
         else:
             norm = np.linalg.norm(S, axis=-1); norm = np.where(norm < 1e-12, 1e-12, norm); uu = S / norm[..., None]; kappa = beta * norm

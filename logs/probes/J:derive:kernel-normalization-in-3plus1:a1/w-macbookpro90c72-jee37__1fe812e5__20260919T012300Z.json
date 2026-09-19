@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:kernel-normalization-in-3plus1:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jee37",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/kernel-normalization-in-3plus1/w-macbookpro90c72-jee37/check.py",
+ "seed": 80980,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1fe812e5",
+ "started_utc": "20260919T012300Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL vMF innovation on the linear covariance gives R = 1 + (3-G_V)/(n beta) + O(1/beta^2) (n=4: 1 + (3-G)/ (4 beta) + ...); G_4=1913/1344<3 so this is >1, opposite to the executed low-k ratio 0.9719 at beta=6; the cubic-Gaussian noise sector cannot supply a = (G_3-related)>0 (17/17 checks passed)"
+ },
+ "review": "vMF noise on the linear covariance gives R=1+(3-G_V)/(n beta)+O(1/beta^2)>1 for G_3<3, opposite to the executed IR deficit 0.9719; cubic-Gaussian noise cannot supply a positive a (17/17 exact checks).",
+ "what": "DERIVATION, independent attempt 1 of 3: The normalization of the equal-level kernel in the ordered 3+1 formation law. Executed (first look): in the ordered sphere formation law on three-dimensional level planes the low-k structure factor is 0.96-0.97 of the linear kernel sigma^2/(1 - |phi|^2) at beta = 2 and 6; in 2+1 block 35 (PR #8180) found 0.83-0.97 rising with beta. TASK: derive the leading correction: S(k) (1 - |phi(k)|^2)/sigma^2 = 1 - a/beta + O(1/beta^2) as k -> 0, with a explicit (expected to involve the plateau |m|^2 and the return sum G_3 = (2 pi)^-3 Int 1/(1 - |phi|^2)); route: expand the one-step map of the transverse field to third order in the fluctuations (the record is a von Mises-Fisher draw about S/|S| with concentration beta |S|), close the hierarchy at Gaussian order, and compare with the simulator's shells (probes/lib/formation_levelplane.py) at beta = 3, 6, 12, 24. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/kernel-normalization-in-3plus1/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/kernel-normalization-in-3plus1/<name>/check.py\"",
+ "stdout_sha256": "5afa0977b5ebc9026d67f42a802814a5da72696e541dd35d4821cd8005d6d8e8",
+ "stdout_tail": "CHECK N1a_mean: OK\nCHECK N1b_long: OK\nCHECK N1c_trans: OK\nCHECK N1d_A: OK (A(x)=1-1/x+2/(e^{2x}-1))\nCHECK N1e_projector_aligned: OK (1-3A0/k-A0^2 = 2/k^2 - 1/k)\nCHECK N2a_R_formula: OK\nCHECK N2b_series_n4: OK (R_noise = 1 + 1/(2*beta) + 1/(16*beta**2) (n=4, V=infty, A=1-1/(n beta)))\nCHECK N2c_positive: OK\nCHECK N2d_beta6: OK (R_noise(beta=6,n=4,V=infty)=599/552 = 1.085145 > 1)\nCHECK N2e_sign_clash: OK (Gaussian noise correction is above 1; executed low-k ratio is below 1)\nCHECK N3a_G4: OK (G_4=1913/1344)\nCHECK N3b_identity: OK (C0-Cv = sig2(1-1/V) with sig2=1: 63/64)\nCHECK N4a_extra: OK (projector/sig2 = (G-1)(2/(n^2 beta^2)-1/(n beta)))\nCHECK N4b_leading: OK (leading projector correction -(G-1)/(n beta))\nCHECK N5a_combined_O1beta: OK (R = 1 + (3-G)/(n beta) + O(1/beta^2))\nCHECK N5b_G4_lt_3: OK (G_4=1913/1344 < 3 so (3-G)/n > 0, combined R still > 1)\nCHECK N5c_still_wrong_sign: OK (even with the G_3 projector piece, a = (G-3)/n < 0 (R>1) for G_3<3; executed deficit is R<1)\nSUMMARY: PARTIAL vMF innovation on the linear covariance gives R = 1 + (3-G_V)/(n beta) + O(1/beta^2) (n=4: 1 + (3-G)/ (4 beta) + ...); G_4=1913/1344<3 so this is >1, opposite to the executed low-k ratio 0.9719 at beta=6; the cubic-Gaussian noise sector cannot supply a = (G_3-related)>0 (17/17 checks passed)\nHIT: R_noise = 1+(3-G_V)/(n beta)+O(1/beta^2) on the linear covariance; for G_4=1913/1344 and G_3<3 this is >1, contradicting the executed IR deficit <1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jee37",
+  "at_utc": "20260919T012305Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact noise formula R=1+(3-G_V)/(n beta)+O(1/beta^2)>1 for G_3<3, contradicting the executed IR deficit; cubic-Gaussian noise cannot supply positive a.",
+  "by": "w-macbookpro90c72-jee37",
+  "at_utc": "20260919T012305Z"
+ }
+}

@@ -1,0 +1,19 @@
+CHECK N1a_mean: OK
+CHECK N1b_long: OK
+CHECK N1c_trans: OK
+CHECK N1d_A: OK (A(x)=1-1/x+2/(e^{2x}-1))
+CHECK N1e_projector_aligned: OK (1-3A0/k-A0^2 = 2/k^2 - 1/k)
+CHECK N2a_R_formula: OK
+CHECK N2b_series_n4: OK (R_noise = 1 + 1/(2*beta) + 1/(16*beta**2) (n=4, V=infty, A=1-1/(n beta)))
+CHECK N2c_positive: OK
+CHECK N2d_beta6: OK (R_noise(beta=6,n=4,V=infty)=599/552 = 1.085145 > 1)
+CHECK N2e_sign_clash: OK (Gaussian noise correction is above 1; executed low-k ratio is below 1)
+CHECK N3a_G4: OK (G_4=1913/1344)
+CHECK N3b_identity: OK (C0-Cv = sig2(1-1/V) with sig2=1: 63/64)
+CHECK N4a_extra: OK (projector/sig2 = (G-1)(2/(n^2 beta^2)-1/(n beta)))
+CHECK N4b_leading: OK (leading projector correction -(G-1)/(n beta))
+CHECK N5a_combined_O1beta: OK (R = 1 + (3-G)/(n beta) + O(1/beta^2))
+CHECK N5b_G4_lt_3: OK (G_4=1913/1344 < 3 so (3-G)/n > 0, combined R still > 1)
+CHECK N5c_still_wrong_sign: OK (even with the G_3 projector piece, a = (G-3)/n < 0 (R>1) for G_3<3; executed deficit is R<1)
+SUMMARY: PARTIAL vMF innovation on the linear covariance gives R = 1 + (3-G_V)/(n beta) + O(1/beta^2) (n=4: 1 + (3-G)/ (4 beta) + ...); G_4=1913/1344<3 so this is >1, opposite to the executed low-k ratio 0.9719 at beta=6; the cubic-Gaussian noise sector cannot supply a = (G_3-related)>0 (17/17 checks passed)
+HIT: R_noise = 1+(3-G_V)/(n beta)+O(1/beta^2) on the linear covariance; for G_4=1913/1344 and G_3<3 this is >1, contradicting the executed IR deficit <1

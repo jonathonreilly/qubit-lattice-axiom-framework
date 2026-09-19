@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j7fc3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUN/walk_poisson_ratio_to_beta800.py",
+ "seed": 2598,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bec1c608",
+ "started_utc": "20260919T072318Z",
+ "elapsed_s": 147.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "with walk-count Wilson coefficients and Poisson-walk exponentials (disjoint from the runner) the true ratios at beta = 50, 100, 200 reproduce the note's table (max difference 3.7e-13); beyond it, beta = 300, 400, 600, 800 give 0.194883466, 0.194613574, 0.194344001, 0.194209335 (box spread <= 1e-10); fits over all rows give limits 0.1938058, 0.1938058, 0.1938058 against the note's 0.1938058 (max drift 1.7e-08); the spectral-edge identity holds exactly (True)"
+ },
+ "review": "Output matches the task (the note's central extrapolation re-derived with disjoint machinery: walk-count Wilson coefficients as Poisson-weighted walk probabilities, Poisson-walk exponentials, subspace iteration; the spectral-edge identity 6d = sum of neighbours verified exactly): the true ratios reproduce the note's table at beta = 50, 100, 200 to 3.7e-13, and beyond it beta = 300, 400, 600, 800 give 0.194883466, 0.194613574, 0.194344001, 0.194209335 (box spread <= 1e-10), whose 1/beta fits give the limit 0.19380582, within 1.7e-8 of the note's 0.1938058; no falsifier fires.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUN/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUN/<script>.py\"",
+ "stdout_sha256": "9728c6907660a2722ef0282c5927910b1998d17fa49860eb4cb1a49cae6a911d",
+ "stdout_tail": "0, difference -6.10e-14\n3. beta = 200: lambda_1/lambda_0 = 0.195424212513 (box 80; box 70 differs by 1.9e-14); note 0.195424212513, difference -1.27e-13\n3. beta = 300: lambda_1/lambda_0 = 0.194883466344 (box 96; box 84 differs by 1.3e-13)\n3. beta = 400: lambda_1/lambda_0 = 0.194613573652 (box 112; box 96 differs by 3.2e-13)\n3. beta = 600: lambda_1/lambda_0 = 0.194344001245 (box 140; box 120 differs by 9.0e-14)\n3. beta = 800: lambda_1/lambda_0 = 0.194209335156 (box 164; box 140 differs by 4.6e-14)\n4. fits of lambda_1/lambda_0 in powers of 1/beta over beta = [50, 100, 200, 300, 400, 600, 800]: powers (1, 2): 0.19380582, powers (1, 2, 3): 0.19380582, powers (1, 2, 3, 4): 0.19380582; over beta = [300, 400, 600, 800] alone (1/beta, 1/beta^2): 0.19380582; the note's limit 0.1938058; first-order predictions from the note's limit and its beta = 200 row: beta=300: 0.1948847 vs computed 0.1948835, beta=400: 0.1946150 vs computed 0.1946136, beta=600: 0.1943453 vs computed 0.1943440, beta=800: 0.1942104 vs computed 0.1942093\nSUMMARY: with walk-count Wilson coefficients and Poisson-walk exponentials (disjoint from the runner) the true ratios at beta = 50, 100, 200 reproduce the note's table (max difference 3.7e-13); beyond it, beta = 300, 400, 600, 800 give 0.194883466, 0.194613574, 0.194344001, 0.194209335 (box spread <= 1e-10); fits over all rows give limits 0.1938058, 0.1938058, 0.1938058 against the note's 0.1938058 (max drift 1.7e-08); the spectral-edge identity holds exactly (True)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7fc3",
+  "at_utc": "20260919T072553Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

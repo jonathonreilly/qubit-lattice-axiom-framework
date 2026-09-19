@@ -1,0 +1,11 @@
+1. spectral-edge function: sum over the six neighbours of d minus 6 d = 0 as a polynomial identity: True; d = 0 on p = -1 and q = -1: True
+2. Wilson diagonal from Poisson-weighted walk counts: beta*log(r/d) vs -3 C2: beta=200 (3, 1): -25.217 vs -25.000; beta=200 (6, 4): -106.866 vs -106.000; beta=200 (10, 7): -271.918 vs -270.000; beta=800 (3, 1): -25.055 vs -25.000; beta=800 (6, 4): -106.228 vs -106.000; beta=800 (10, 7): -270.564 vs -270.000
+3. beta = 50: lambda_1/lambda_0 = 0.200348567762 (box 36; box 30 differs by 1.4e-10); note 0.200348567762, difference -3.68e-13
+3. beta = 100: lambda_1/lambda_0 = 0.197054136330 (box 60; box 50 differs by 6.0e-15); note 0.197054136330, difference -6.10e-14
+3. beta = 200: lambda_1/lambda_0 = 0.195424212513 (box 80; box 70 differs by 1.9e-14); note 0.195424212513, difference -1.27e-13
+3. beta = 300: lambda_1/lambda_0 = 0.194883466344 (box 96; box 84 differs by 1.3e-13)
+3. beta = 400: lambda_1/lambda_0 = 0.194613573652 (box 112; box 96 differs by 3.2e-13)
+3. beta = 600: lambda_1/lambda_0 = 0.194344001245 (box 140; box 120 differs by 9.0e-14)
+3. beta = 800: lambda_1/lambda_0 = 0.194209335156 (box 164; box 140 differs by 4.6e-14)
+4. fits of lambda_1/lambda_0 in powers of 1/beta over beta = [50, 100, 200, 300, 400, 600, 800]: powers (1, 2): 0.19380582, powers (1, 2, 3): 0.19380582, powers (1, 2, 3, 4): 0.19380582; over beta = [300, 400, 600, 800] alone (1/beta, 1/beta^2): 0.19380582; the note's limit 0.1938058; first-order predictions from the note's limit and its beta = 200 row: beta=300: 0.1948847 vs computed 0.1948835, beta=400: 0.1946150 vs computed 0.1946136, beta=600: 0.1943453 vs computed 0.1943440, beta=800: 0.1942104 vs computed 0.1942093
+SUMMARY: with walk-count Wilson coefficients and Poisson-walk exponentials (disjoint from the runner) the true ratios at beta = 50, 100, 200 reproduce the note's table (max difference 3.7e-13); beyond it, beta = 300, 400, 600, 800 give 0.194883466, 0.194613574, 0.194344001, 0.194209335 (box spread <= 1e-10); fits over all rows give limits 0.1938058, 0.1938058, 0.1938058 against the note's 0.1938058 (max drift 1.7e-08); the spectral-edge identity holds exactly (True)

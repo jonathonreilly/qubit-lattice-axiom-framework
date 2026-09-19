@@ -1,0 +1,13 @@
+TV 1/2: TV(u,u)=0 TV(e0,e1)=1 raw L1=2
+six-axis uniform 1/6 sums to 1
+chordal diameter of S^2: |e-(-e)|=2, so D_0=2*1_{x=x0} uses the max
+t=0: 1 walks, Σ p_t = 1 (exactly 1)
+t=1: 3 walks, Σ p_t = 1 (exactly 1)
+t=2: 9 walks, Σ p_t = 1 (exactly 1)
+t=3: 27 walks, Σ p_t = 1 (exactly 1)
+t=4: 81 walks, Σ p_t = 1 (exactly 1)
+t=5: 243 walks, Σ p_t = 1 (exactly 1)
+t=6: 729 walks, Σ p_t = 1 (exactly 1)
+T3: 2(β/√3)^t 3^t = 2(√3 β)^t
+T2 box (D+1)(6D+5)(6D+4)/2 integer and <= 18(D+1)^3 for D=0..20
+SUMMARY: pattern (f) NORMALIZATION — no Fourier/2π/conjugation in this note; TV 1/2, six-axis 1/6, chordal D_0=2, p_t=t!/(n1!n2!n3! 3^t) sums to 1 on all 3^t walks t=0..6, 2(β/√3)^t 3^t=2(√3 β)^t, and T2's box /2, all recompute exactly; attack does not fire (not the known 4.05 island-ratio HIT)

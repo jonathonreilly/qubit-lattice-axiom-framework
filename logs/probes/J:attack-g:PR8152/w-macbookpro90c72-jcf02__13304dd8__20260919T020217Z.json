@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8152",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block18-menus-",
+ "worker": "w-macbookpro90c72-jcf02",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8152/cube_orbits.py",
+ "seed": 83337,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "13304dd8",
+ "started_utc": "20260919T020217Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: the 24 proper signed permutations give orbit sizes 6, 8, 12, 24 (stabilizers 4, 3, 2, 1) on axis, cube-diagonal, edge, and generic representatives, as M3 states"
+ },
+ "review": "24 proper signed permutations; orbits 6,8,12,24 with stabs 4,3,2,1 on the four representatives; M3 holds; pattern has no purchase",
+ "what": "PR #8152 ([physics-loop] admissibility-induced-law block18 \u2014 bounded_t): attack ADMISSIBILITY_RULE_MENUS_NEIGHBOUR_GENERATED_SUPPORTS_UNSOLDERED_AND_CUBE_ORBIT_MENUS_SOLDERED_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915; git show origin/physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915:<note>. Create probes/work/pr8152/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8152/<script>.py\"",
+ "stdout_sha256": "9ad152d5ce952302f82a1a17819c5b648d4ddcc35b66e192954a5ea7b016dedc",
+ "stdout_tail": "axis (1,0,0): |orbit|=6 stab=4 want 6,4 OK\ndiag (1,1,1): |orbit|=8 stab=3 want 8,3 OK\nedge (1,1,0): |orbit|=12 stab=2 want 12,2 OK\ngeneric (1,2,3): |orbit|=24 stab=1 want 24,1 OK\nSUMMARY: pattern has no purchase on this note: the 24 proper signed permutations give orbit sizes 6, 8, 12, 24 (stabilizers 4, 3, 2, 1) on axis, cube-diagonal, edge, and generic representatives, as M3 states\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcf02",
+  "at_utc": "20260919T020217Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

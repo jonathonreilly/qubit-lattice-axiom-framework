@@ -1,0 +1,4 @@
+singleton: |S|=1 F=0 identity=True
+two-seed+fork: |S|=2 F=1 identity=True
+three-seed tree: |S|=3 F=2 identity=True
+SUMMARY: pattern has no purchase on this note — the same forks=|S|-1 test holds for a singleton seed, a two-seed fork gadget, and a three-seed tree

@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8144",
+ "type": "judgment",
+ "lane": "static-charge-transfer-sector-20260915",
+ "worker": "w-macbookpro90c72-j09a8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8144/falsifier_ck_positive_beyond.py",
+ "seed": 91982,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "faf9656b",
+ "started_utc": "20260919T042622Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "c_k falsifier did not fire: c_k>0 and even, K(j=0)=1, for N=1..16 and nine \u03b2 in {0.05..64}, beyond the note's small-N checks"
+ },
+ "review": "c_k>0/even/K(0)=1 falsifier did not fire for N=1..16 and nine \u03b2, beyond the note.",
+ "what": "PR #8144 ([physics-loop] static-charge-transfer-sector: bounded_theore): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/static-charge-transfer-sector-20260915; git show origin/physics-loop/static-charge-transfer-sector-20260915:<note>. Create probes/work/pr8144/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8144/<script>.py\"",
+ "stdout_sha256": "442d1e1553deddaefd9c5d7405b3cd6dc7271ace124856aff7d238a9e6e8bdb4",
+ "stdout_tail": "r=1.1e-16\nN=13 beta=64.0 min_c=1.541e+00 even_err=2.2e-16\nN=14 beta=0.05 min_c=3.139e-213 even_err=0.0e+00\nN=14 beta=0.1 min_c=7.923e-107 even_err=0.0e+00\nN=14 beta=0.25 min_c=5.498e-43 even_err=0.0e+00\nN=14 beta=0.5 min_c=1.049e-21 even_err=0.0e+00\nN=14 beta=1.0 min_c=4.579e-11 even_err=0.0e+00\nN=14 beta=2.0 min_c=9.570e-06 even_err=0.0e+00\nN=14 beta=4.0 min_c=4.375e-03 even_err=0.0e+00\nN=14 beta=16.0 min_c=4.325e-01 even_err=1.1e-16\nN=14 beta=64.0 min_c=1.428e+00 even_err=2.2e-16\nN=15 beta=0.05 min_c=1.569e-213 even_err=0.0e+00\nN=15 beta=0.1 min_c=3.961e-107 even_err=0.0e+00\nN=15 beta=0.25 min_c=2.749e-43 even_err=0.0e+00\nN=15 beta=0.5 min_c=5.243e-22 even_err=0.0e+00\nN=15 beta=1.0 min_c=2.291e-11 even_err=0.0e+00\nN=15 beta=2.0 min_c=4.898e-06 even_err=0.0e+00\nN=15 beta=4.0 min_c=2.523e-03 even_err=0.0e+00\nN=15 beta=16.0 min_c=3.516e-01 even_err=5.6e-17\nN=15 beta=64.0 min_c=1.327e+00 even_err=4.4e-16\nN=16 beta=0.05 min_c=2.252e-278 even_err=0.0e+00\nN=16 beta=0.1 min_c=2.122e-139 even_err=0.0e+00\nN=16 beta=0.25 min_c=5.144e-56 even_err=0.0e+00\nN=16 beta=0.5 min_c=3.208e-28 even_err=0.0e+00\nN=16 beta=1.0 min_c=2.533e-14 even_err=0.0e+00\nN=16 beta=2.0 min_c=2.251e-07 even_err=0.0e+00\nN=16 beta=4.0 min_c=6.709e-04 even_err=0.0e+00\nN=16 beta=16.0 min_c=2.707e-01 even_err=1.1e-16\nN=16 beta=64.0 min_c=1.235e+00 even_err=2.2e-16\nchecked 144 (N,beta)\nSUMMARY: c_k falsifier did not fire: c_k>0 and even, K(j=0)=1, for N=1..16 and nine \u03b2 in {0.05..64}, beyond the note's small-N checks\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j09a8",
+  "at_utc": "20260919T042631Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

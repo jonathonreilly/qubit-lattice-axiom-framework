@@ -1,0 +1,23 @@
+V1 1 - |phi_d|^2 = k^T Cov(Z) k + O(k^4) with Cov(Z) = ((d+1)I - J)/(d+1)^2, eigenvalues 1/(d+1)^2 and 1/(d+1), d = 1..5: True; d = 3: det 1/256, eigenvalues [(1/16, 1), (1/4, 2)]
+   ATTEMPT step-2 display: true quadratic form / displayed form = [2, 2, 2, 2, 2] for d = 1..5; eigenvalue of (d/2)sum k^2 - sum_(i<j) k_i k_j along (1..1) = [1/2, 1/2, 1/2, 1/2, 1/2] (text: (d+2)/2)
+V2 u = 1 only at k = 0: exact on (2pi/4)Z^d, d = 1..4: True; float max u off 0 on (2pi/n)Z^d, n = 5..9, d = 1..3: 0.912267
+V3 d=1: G_L for L=[8, 16, 32, 64, 128]: [np.float64(2.625), np.float64(5.3125), np.float64(10.6562), np.float64(21.3281), np.float64(42.6641)]; increments per doubling [np.float64(2.6875), np.float64(5.3437), np.float64(10.6719), np.float64(21.3359)]
+V3 d=2: G_L for L=[8, 16, 32, 64, 128]: [np.float64(2.0667), np.float64(2.6443), np.float64(3.2186), np.float64(3.7921), np.float64(4.3654)]; increments per doubling [np.float64(0.5776), np.float64(0.5743), np.float64(0.5735), np.float64(0.5733)]
+V3 d=3: G_L for L=[8, 16, 32, 64, 128]: [np.float64(1.6098), np.float64(1.7016), np.float64(1.7473), np.float64(1.7701), np.float64(1.7815)]; increments per doubling [np.float64(0.0918), np.float64(0.0457), np.float64(0.0228), np.float64(0.0114)]
+   d=2 predicted increment log 2 / (2 pi sqrt(det M_2)), det M_2 = 1/27: 3 sqrt(3) log 2/(2 pi) = 0.5732
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,1,1), x = 3*dir: 1.2744 (4/pi = 1.2732)
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,1,1), x = 5*dir: 1.2714 (4/pi = 1.2732)
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,1,1), x = 8*dir: 1.2633 (4/pi = 1.2732)
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,-1,0), x = 3*dir: 1.2823 (4/pi = 1.2732)
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,-1,0), x = 5*dir: 1.2750 (4/pi = 1.2732)
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,-1,0), x = 8*dir: 1.2732 (4/pi = 1.2732)
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,0,0), x = 3*dir: 1.2823 (4/pi = 1.2732)
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,0,0), x = 5*dir: 1.2750 (4/pi = 1.2732)
+V4 d=3 lattice (G(x) - G(2x)) * 2 sqrt(x^T M^-1 x) along (1,0,0), x = 8*dir: 1.2732 (4/pi = 1.2732)
+V5 grad phi at 0 = [I/4, I/4, I/4]; (n,n,n,n) path counts by DP n = 1..6: [24, 2520, 369600, 63063000, 11732745024, 2308743493056]; equal (4n)!/(n!)^4: True
+HIT: confirmed - 1 - u = k^T M_d k + O(k^4) with M_d = Cov of the step law = ((d+1)I-J)/(d+1)^2 (exact, d = 1..5); u = 1 only at k = 0; equal-level sums on tori grow ~L (d=1), ~(3 sqrt 3 log 2/(2 pi)) per doubling (d=2), settle (d=3); at d = 3 det M = 1/256 and the lattice kernel's differences match the continuum 4/(pi sqrt(x^T M^-1 x)) within 3% at x = 8*dir (L = 256) along and across the cone axis; drift (1,1,1)/4; (n,n,n,n) counts (4n)!/(n!)^4 by DP
+SUMMARY: confirmed - the linear partial survives (dichotomy d > 2, M_d, det 1/256, prefactor 4/pi on the lattice, drift, multinomial cone); correction: ATTEMPT step 2's general-d display is half the true form (ratio 2 for d = 1..5: True) and its '(d+2)/2 along (1..1)' should be 1/2 for that form (1/(d+1)^2 for M_d); the HIT's M_d is right; sphere LRO and nonlinear S(k) bounds are not claimed
+
+[stderr]
+/Users/jonBridger/.probe-workers/Physics-baremetal-probes/J-confirm-J-derive-formation-in-3plus1-a4/probes/work/derive/formation-in-3plus1/referee_w-jonathonsmac4f50-j5d38/check.py:120: DeprecationWarning: `axes` should not be `None` if `s` is not `None` (Deprecated in NumPy 2.0). In a future version of NumPy, this will raise an error and `s[i]` will correspond to the size along the transformed axis specified by `axes[i]`. To retain current behaviour, pass a sequence [0, ..., k-1] to `axes` for an array of dimension k.
+  G = np.fft.irfftn(f, s=(L, L, L))  # G[x] = L^-3 sum_k f(k) e^{i k.x}

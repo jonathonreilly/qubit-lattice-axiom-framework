@@ -1,0 +1,10 @@
+T1 L=2: Laplacian identity on nonzero modes (fails=0)
+T1 L=3: Laplacian identity on nonzero modes (fails=0)
+T1 L=4: Laplacian identity on nonzero modes (fails=0)
+T1 L=5: Laplacian identity on nonzero modes (fails=0)
+A(κ) series 2*kappa**5/945 - kappa**3/45 + kappa/3
+A(κ)/κ at 0 via series = 1/3 (want 1/3)
+T2: κ (A/κ) = A identically (Ward form)
+T3 L=2 Parseval delta: Σ|ŝ|²=1 (want 1)
+T3 L=3 Parseval delta: Σ|ŝ|²=1 (want 1)
+SUMMARY: pattern has no purchase on this note beyond the known 0.86-0.98 and √N Fourier HITs — T1 Laplacian holds on every mode of L=2..5, T2 Ward κ E[(s¹)²]=A(κ) is an identity with A/κ→1/3, T3 Parseval holds on L=2,3; no proved inequality fails inside its stated range

@@ -1,0 +1,31 @@
+ok   A1 (Ma)x(Mb) = cof(M)(axb) as a polynomial identity in all 15 entries
+ok   A2 the packet's two executed rotations are in SO(3)
+ok   A3 cof(g) = g there, so (ga)x(gb) = g(axb): both maps are SO(3)-equivariant
+ok   B1 F(r(t)) = I for symbolic t
+ok   B2 W(r(t)) = diag(1,1,sqrt(1-t^2)) = F(r(t))*M(t)
+ok   B3 F is orthogonal with det 1 at r(t)
+ok   B4 Gram(W) = diag(1,1,1-t^2): the written third column has length sqrt(1-t^2)
+ok   B5 det W = sqrt(1-t^2), not 1
+ok   B6 W is orthogonal exactly on t = 0: the orthogonal locus is the largest domain
+ok   B7 F(q1,q2) carries r(t) to (q1,q2) (identity at the reference pair)
+ok   C1 F AND W are both equivariant under the runner's rotation about y at symbolic t
+ok   C2 F AND W are both equivariant under the refuter's cube rotation at symbolic t
+ok   C3 the cross product itself is equivariant: equivariance cannot see the missing norm
+ok   D1 at t = 3/5: W passes equivariance, fails F^T F = I, det W = 4/5; F passes both
+ok   D2 at t = 4/13: W passes equivariance, fails F^T F = I, det W = 3*sqrt(17)/13; F passes both
+ok   D3 W maps e_z to (0,0,4/5): W.S_0 leaves the sphere, so M2 as written has no support
+ok   D4 F(q1,q2) is the rotation carrying r(3/5) to the runner's executed pair
+ok   E1 the 24 proper signed permutations (the cube rotation group)
+ok   E2 only the identity fixes the executed pair: the transporting rotation is unique
+ok   F1 F(g.r(t)) M(t) = g (F(r(t)) M(t)): every F*M(t) is equivariant, M arbitrary
+ok   F2 the written map is the member M(t) = diag(1,1,sqrt(1-t^2)) of that family
+INFO note line 91 = `F(q_1, q_2) = (q_1, (q_2 − (q_1·q_2) q_1)/|·|, q_1 × q_2)` is a rotation matrix
+INFO note line 91 third column is the unnormalised cross product: True
+INFO runner codes the corrected frame (e1.cross(e2)): True; tests F^T F = I: True
+INFO control codes the corrected frame (e1.cross(e2)): True; tests F^T F = I: False
+INFO refuter codes the corrected frame (e1.cross(e2)): True; tests F^T F = I: False
+TOTAL: PASS=21 FAIL=0
+HIT: the frame written at line 91 of the block 18 note is F(q_1,q_2)*diag(1,1,sqrt(1-t^2)) with t = q_1.q_2: its Gram matrix is diag(1,1,1-t^2) and its determinant sqrt(1-t^2), so it is a rotation exactly on the orthogonal locus t = 0 and nowhere else; the corrected third column is (q_1 x q_2)/|q_1 x q_2| = q_1 x e_2, and M2/M4 hold verbatim with that one normalization.
+HIT: SO(3)-equivariance is blind to the defect - the equivariant frame maps are exactly F(q_1,q_2)*M(q_1.q_2) for an arbitrary matrix function M, and the written map is the member M = diag(1,1,sqrt(1-t^2)); it passes the equivariance test of the runner's B2, the control's (3) and the refuter's R3 at their own executed configurations, and the single conjunct that separates it from a rotation is B2's F^T F = I, which the runner evaluates on the corrected frame only.
+HIT: the corrigendum is confined to one line - no executed number changes, and no statement outside the note uses the frame: across PRs #8146-#8180 the pair frame occurs only in #8152's own files, and #8169 (frame-attached four-point menus) proves covariance of {q,q',-q,-q'} directly, names block 18 as prior art that 'is not a premise of the proofs below', and carries no citation edge to it.
+SUMMARY: PROVED - corrigendum for PR #8152: the note's line-91 frame equals the corrected frame times diag(1,1,sqrt(1-t^2)) (Gram diag(1,1,1-t^2), det sqrt(1-t^2), off-sphere image (0,0,4/5) at the runner's own pair), it is a rotation only on t = 0, it is nevertheless equivariant - so the equivariance checks B2/(3)/R3 cannot see the defect - and the fix is the normalization of the third column, after which M2 and M4 hold unchanged and nothing downstream in #8146-#8180 moves.

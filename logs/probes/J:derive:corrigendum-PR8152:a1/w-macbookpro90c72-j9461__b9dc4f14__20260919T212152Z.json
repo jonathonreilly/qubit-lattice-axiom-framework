@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:corrigendum-PR8152:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j9461",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/corrigendum-PR8152/w-macbookpro90c72-j9461/check.py",
+ "seed": 52912,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b9dc4f14",
+ "started_utc": "20260919T212152Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED - corrigendum for PR #8152: the note's line-91 frame equals the corrected frame times diag(1,1,sqrt(1-t^2)) (Gram diag(1,1,1-t^2), det sqrt(1-t^2), off-sphere image (0,0,4/5) at the runner's own pair), it is a rotation only on t = 0, it is nevertheless equivariant - so the equivariance checks B2/(3)/R3 cannot see the defect - and the fix is the normalization of the third column, after which M2 and M4 hold unchanged and nothing downstream in #8146-#8180 moves."
+ },
+ "review": "The frame written at line 91 of the block 18 note equals the corrected frame times diag(1,1,sqrt(1-t^2)) with t = q_1.q_2, so its Gram matrix is diag(1,1,1-t^2) and its determinant sqrt(1-t^2) - 4/5 at the runner's own executed pair, where it carries e_z to (0,0,4/5) off the unit sphere - and it is a rotation exactly on the orthogonal locus t=0 and nowhere else; it is nevertheless SO(3)-equivariant, and because the equivariant frame maps are exactly F(q_1,q_2)M(q_1.q_2) for arbitrary M, the equivariance conjuncts of the runner's B2, the control's print (3) and the refuter's R3 all return True on it, leaving B2's F^T F = I as the single separating conjunct, which the runner evaluates on the corrected frame only; the fix is the normalisation of the third column, M2 and M4 then hold verbatim, the runner needs no change, and no other note of #8146-#8180 uses the pair frame - #8169 proves covariance of {q,q',-q,-q'} directly and states block 18 is not a premise - so no executed number moves.",
+ "what": "DERIVATION, independent attempt 1 of 2: Corrigendum packet for PR #8152. A probe found and another model family confirmed this defect in PR #8152: the frame F = (q1, Gram-Schmidt(q2), q1 x q2) is claimed to be a rotation but its third column is unnormalized (det 4/5 at the executed pair). TASK: (a) the minimal corrected statement (the largest domain on which the original holds, or the corrected formula), proved; (b) every later statement in that note AND in other notes of the campaign that uses the defective one (search the PR branches of blocks 12-35: PRs #8146-#8180), with a verdict for each: unaffected / holds on the corrected domain / needs its own repair; (c) the exact lines of the note and runner that must change. check.py verifies the corrected statement exactly and exhibits the original's failure. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/corrigendum-PR8152/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/corrigendum-PR8152/<name>/check.py\"",
+ "stdout_sha256": "c04e02ad5f222eca01093c8cdd02338b514dc2928da37ad20c3f47bbf4db7bd8",
+ "stdout_tail": "gonal locus t = 0 and nowhere else; the corrected third column is (q_1 x q_2)/|q_1 x q_2| = q_1 x e_2, and M2/M4 hold verbatim with that one normalization.\nHIT: SO(3)-equivariance is blind to the defect - the equivariant frame maps are exactly F(q_1,q_2)*M(q_1.q_2) for an arbitrary matrix function M, and the written map is the member M = diag(1,1,sqrt(1-t^2)); it passes the equivariance test of the runner's B2, the control's (3) and the refuter's R3 at their own executed configurations, and the single conjunct that separates it from a rotation is B2's F^T F = I, which the runner evaluates on the corrected frame only.\nHIT: the corrigendum is confined to one line - no executed number changes, and no statement outside the note uses the frame: across PRs #8146-#8180 the pair frame occurs only in #8152's own files, and #8169 (frame-attached four-point menus) proves covariance of {q,q',-q,-q'} directly, names block 18 as prior art that 'is not a premise of the proofs below', and carries no citation edge to it.\nSUMMARY: PROVED - corrigendum for PR #8152: the note's line-91 frame equals the corrected frame times diag(1,1,sqrt(1-t^2)) (Gram diag(1,1,1-t^2), det sqrt(1-t^2), off-sphere image (0,0,4/5) at the runner's own pair), it is a rotation only on t = 0, it is nevertheless equivariant - so the equivariance checks B2/(3)/R3 cannot see the defect - and the fix is the normalization of the third column, after which M2 and M4 hold unchanged and nothing downstream in #8146-#8180 moves.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9461",
+  "at_utc": "20260919T212153Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

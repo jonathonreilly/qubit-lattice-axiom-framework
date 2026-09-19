@@ -1,0 +1,6 @@
+1742 Gauss nodes = 67*26; 3484 oracles = 1742*2: True
+Euler jet Z uniquely determined: [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)]
+m_n = (-1)^n n! Z_n exists for n=0..4: True
+P/O classes and orders 7..10 exist: True
+n A_n = [h0,A_{n-1}]-A_{n-1}V realized on 2×2 with A_0=I, A_1=-V: True
+SUMMARY: pattern has no purchase on this note: the 1742/3484 Gauss catalog, Euler jet with Z(0)=1, m_n from Z_n, P/O orders 7..10, and the A_n recurrence on a 2×2 witness all exist as written

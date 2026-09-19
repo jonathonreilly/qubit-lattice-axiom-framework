@@ -1,0 +1,3 @@
+labels=6 C(6,2)=15 enumerated=15
+K6 triangles=20 (channel graph, not a Z^3 window)
+SUMMARY: pattern has no purchase on this note — the six unit axes and C(6,2)=15 two-subset channels exist as stated; K6 is not claimed as a Z^3 window

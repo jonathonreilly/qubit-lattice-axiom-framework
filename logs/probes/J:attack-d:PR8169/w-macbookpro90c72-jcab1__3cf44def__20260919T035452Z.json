@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8169",
+ "type": "judgment",
+ "lane": "frame-attached-four-point-weights-born-a",
+ "worker": "w-macbookpro90c72-jcab1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8169/quantifier_every_gibbs.py",
+ "seed": 90092,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3cf44def",
+ "started_utc": "20260919T035452Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - Born stays in [0,1] on the 4-point menu; 2\u03b1+2\u03b3=1 on the Gibbs line; the linear family /4 sums to 1 for every tested \u03bb in [-1,1]"
+ },
+ "review": "Born stays in [0,1] on the 4-point menu, 2\u03b1+2\u03b3=1 on the Gibbs line, and the linear family sums to 1 for \u03bb in [-1,1], so the universals hold and the pattern has no purchase",
+ "what": "PR #8169 ([physics-loop] frame-attached four-point weights: Born is no): attack ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916; git show origin/physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916:<note>. Create probes/work/pr8169/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8169/<script>.py\"",
+ "stdout_sha256": "be8a729f993f098b35c62a3b91c07b2abf22acd363dd256430c85f23e9df1dd9",
+ "stdout_tail": "Born in [0,1] on the 4-point menu\n2\u03b1+2\u03b3=1 on \u03b1=0..1/2 step 1/20\n\u03bb=0: linear family sum=1 masses=[Fraction(1, 4), Fraction(1, 4), Fraction(1, 4), Fraction(1, 4)]\n\u03bb=1/2: linear family sum=1 masses=[Fraction(3, 8), Fraction(3, 8), Fraction(1, 8), Fraction(1, 8)]\n\u03bb=1: linear family sum=1 masses=[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]\n\u03bb=-1/2: linear family sum=1 masses=[Fraction(1, 8), Fraction(1, 8), Fraction(3, 8), Fraction(3, 8)]\n\u03bb=-1: linear family sum=1 masses=[Fraction(0, 1), Fraction(0, 1), Fraction(1, 2), Fraction(1, 2)]\nSUMMARY: pattern has no purchase on this note - Born stays in [0,1] on the 4-point menu; 2\u03b1+2\u03b3=1 on the Gibbs line; the linear family /4 sums to 1 for every tested \u03bb in [-1,1]\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcab1",
+  "at_utc": "20260919T035453Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

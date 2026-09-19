@@ -1,0 +1,8 @@
+Born in [0,1] on the 4-point menu
+2α+2γ=1 on α=0..1/2 step 1/20
+λ=0: linear family sum=1 masses=[Fraction(1, 4), Fraction(1, 4), Fraction(1, 4), Fraction(1, 4)]
+λ=1/2: linear family sum=1 masses=[Fraction(3, 8), Fraction(3, 8), Fraction(1, 8), Fraction(1, 8)]
+λ=1: linear family sum=1 masses=[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]
+λ=-1/2: linear family sum=1 masses=[Fraction(1, 8), Fraction(1, 8), Fraction(3, 8), Fraction(3, 8)]
+λ=-1: linear family sum=1 masses=[Fraction(0, 1), Fraction(0, 1), Fraction(1, 2), Fraction(1, 2)]
+SUMMARY: pattern has no purchase on this note - Born stays in [0,1] on the 4-point menu; 2α+2γ=1 on the Gibbs line; the linear family /4 sums to 1 for every tested λ in [-1,1]

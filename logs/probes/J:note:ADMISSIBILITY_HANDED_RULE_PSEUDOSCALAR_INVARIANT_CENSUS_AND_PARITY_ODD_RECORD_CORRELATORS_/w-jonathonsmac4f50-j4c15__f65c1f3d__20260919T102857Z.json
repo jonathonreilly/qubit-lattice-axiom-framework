@@ -1,0 +1,32 @@
+{
+ "task": "J:note:ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_",
+ "type": "judgment",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-j4c15",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_I/orbits_graded_characters_exhaustive.py",
+ "seed": 13737,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f65c1f3d",
+ "started_utc": "20260919T102857Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "direct orbit enumeration reproduces Theorem 1's table in all three readings, including the unsoldered product actions ((98, 26, 468, 116, 90, 370), (81, 13, 338, 56, 43, 257), (1138, 896, 6276, 5436, 4540, 5138)); the graded character census gives the first handed degree 5 (SO(3)), 6 (O(3), none at odd degree), and exactly one soldered handed term at degree 2 (none at 1, none from v alone), with full-degree totals equal to the orbit counts; v.A_DM covariance, T's soldered evenness, E_X, normalisation, positivity and every mirror identity hold on all configurations; the centre-last table and static diagonal match exactly; no falsifier fires"
+ },
+ "review": "Read the script and its output: direct orbit enumeration (connected components of the generator graphs on 6^6 and 6^7 configurations) reproduces Theorem 1's table in all three readings, including the unsoldered product actions the note says were not orbit-checked; an exact graded character census gives cumulative handed dimensions 0,0,0,0,0,2,8,... (SO(3)), 0,...,0,6,6,28,... (O(3), increments only at even degree) and 0,0,1,7,... (soldered; v-only part 0), matching Theorem 2 and the orbit totals at full degree; v.A_DM covariance and T's soldered evenness hold on every configuration under all 48 elements, as do E_X = 18,34,18,10, normalisation, positivity and every mirror identity; the centre-last table and static diagonal match exactly; no falsifier fires.",
+ "what": "Note on main: docs/ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_INVARIANT_CENSUS_AND_PARITY_ODD_RECORD_CORRELATORS_BOUNDED_THEOREM_NOTE_2026-09-13.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_I/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_ADMISSIBILITY_HANDED_RULE_PSEUDOSCALAR_I/<script>.py\"",
+ "stdout_sha256": "a112006bde399f5a131f90304ee530e40aa58fcd70c6afd792e9fb1cc9ae20ad",
+ "stdout_tail": " 8, 25, 47, 70, 84, 89, 90, 90, 90]\n2. unsoldered O(3): handed rule terms of total degree <= D, D = 0..14: [0, 0, 0, 0, 0, 0, 6, 6, 28, 28, 42, 42, 43, 43, 43]\n2. soldered: handed rule terms of total degree <= D, D = 0..14: [0, 0, 1, 7, 54, 211, 632, 1367, 2384, 3353, 4072, 4407, 4525, 4540, 4540]; v-only sign-isotypic dim at degree <= 2: 0\n3. exhaustive: E_X {'T': 18, 'D4': 34, 'Omega': 18, 'DM': 10}; v.A_DM covariant True; T soldered-even True; normalised True; positive True; mirrors {'T': True, 'D4': True, 'Omega': True, 'DM': True}; W_0 zero True; W_-X negated True; E[v.s] equal True\n   centre-last table: {'T,T': '32/243', 'D4,D4': '320/1377', 'Omega,Omega': '2/27', 'Omega,DM': '2/81', 'DM,Omega': '2/45', 'DM,DM': '2/15'}; static diagonal: {'T': '1387678/10609137', 'D4': '94240/408969', 'Omega': '1778/24057', 'DM': '196/1485'}\nSUMMARY: direct orbit enumeration reproduces Theorem 1's table in all three readings, including the unsoldered product actions ((98, 26, 468, 116, 90, 370), (81, 13, 338, 56, 43, 257), (1138, 896, 6276, 5436, 4540, 5138)); the graded character census gives the first handed degree 5 (SO(3)), 6 (O(3), none at odd degree), and exactly one soldered handed term at degree 2 (none at 1, none from v alone), with full-degree totals equal to the orbit counts; v.A_DM covariance, T's soldered evenness, E_X, normalisation, positivity and every mirror identity hold on all configurations; the centre-last table and static diagonal match exactly; no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4c15",
+  "at_utc": "20260919T102910Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

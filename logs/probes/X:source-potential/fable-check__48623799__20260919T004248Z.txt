@@ -1,0 +1,16 @@
+dim=3 beta=6.0 L=16 T=600 T0=200 h=0.5 seed=1; n=4; |m| of the unperturbed copy at the end = 0.9279
+along e_1: r, measured displacement, linear prediction, ratio, r * measured (a 1/r potential gives a plateau)
+     1  +0.008897  +0.009245  0.962  +0.008897
+     2  +0.002929  +0.003034  0.966  +0.005859
+     3  +0.000895  +0.000929  0.963  +0.002684
+     4  +0.000180  +0.000194  0.930  +0.000720
+     6  -0.000186  -0.000188  0.987  -0.001114
+     8  -0.000220  -0.000233  0.947  -0.001762
+along the body diagonal, forward (+) and backward (-): r, measured +, measured -, linear +, linear -
+     1  +0.005905  +0.000060  +0.006137  +0.000062
+     2  +0.003278  +0.000108  +0.003351  +0.000117
+     3  +0.002169  +0.000178  +0.002252  +0.000179
+     4  +0.001614  +0.000242  +0.001655  +0.000248
+     6  +0.000992  +0.000397  +0.001008  +0.000417
+     8  +0.000625  +0.000625  +0.000651  +0.000651
+SUMMARY: dim=3 beta=6.0 L=16 h=0.5 mean_ratio_r1to4=0.9551 forward_backward_asymmetry_r2=+0.003170 seconds=0

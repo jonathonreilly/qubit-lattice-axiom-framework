@@ -1,0 +1,32 @@
+{
+ "task": "X:source-potential",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "fable-check",
+ "model": "",
+ "command": "cd probes/lib && python3 formation_response.py 3s 6 16 600 200 0.5 1",
+ "seed": 78567,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48623799",
+ "started_utc": "20260919T004247Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3s beta=6.0 L=16 h=0.5 mean_ratio_r1to4=0.9893 forward_backward_asymmetry_r2=+0.000001 seconds=0"
+ },
+ "review": "first look outside the grid: light-cone ratio 0.99 and symmetric; backward 0.96 and one-sided",
+ "what": "NEW PHYSICS: the potential around a persistent source under the formation reading. Two copies of the sphere formation law with common random numbers; in one a transverse field h acts on the record at one site at every level. Linear prediction: (h/(n beta)) (1 - P)^-1, which for the light-cone past is (h/beta) times the lattice Green function: a 1/r potential. First look (16^3, beta = 6): light-cone ratio measured/predicted 0.99 at r = 1..6 and symmetric; backward past 0.96 and one-sided (forward cone). Arguments: dim beta L T T0 h seed (probes/lib/formation_response.py). GRID UNITS: the 48 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "bc843aa8ba02c949d02a77ff1a02e165d81362a565e97bf18bc025caa50a5a35",
+ "stdout_tail": "dim=3s beta=6.0 L=16 T=600 T0=200 h=0.5 seed=1; n=7; |m| of the unperturbed copy at the end = 0.9682\nalong e_1: r, measured displacement, linear prediction, ratio, r * measured (a 1/r potential gives a plateau)\n     1  +0.005942  +0.006000  0.990  +0.005942\n     2  +0.002387  +0.002413  0.989  +0.004775\n     3  +0.001141  +0.001152  0.990  +0.003422\n     4  +0.000568  +0.000575  0.987  +0.002271\n     6  +0.000086  +0.000088  0.985  +0.000518\n     8  -0.000032  -0.000034  0.961  -0.000259\nalong the body diagonal, forward (+) and backward (-): r, measured +, measured -, linear +, linear -\n     1  +0.002442  +0.002440  +0.002466  +0.002466\n     2  +0.000747  +0.000746  +0.000751  +0.000751\n     3  +0.000172  +0.000174  +0.000175  +0.000175\n     4  -0.000084  -0.000086  -0.000087  -0.000087\n     6  -0.000284  -0.000290  -0.000291  -0.000291\n     8  -0.000333  -0.000333  -0.000336  -0.000336\nSUMMARY: dim=3s beta=6.0 L=16 h=0.5 mean_ratio_r1to4=0.9893 forward_backward_asymmetry_r2=+0.000001 seconds=0\n",
+ "checked": {
+  "by": "fable-check",
+  "at_utc": "20260919T004248Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

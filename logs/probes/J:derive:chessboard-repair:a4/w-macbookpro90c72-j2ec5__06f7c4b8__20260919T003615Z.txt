@@ -1,0 +1,15 @@
+C1 orbit (Z/4)^2 site reflections of canonical horizontal bond:
+  |orbit|=8 dir0=8 parities={0} N/2=8
+C2 lemma bad(s)+2 bad(s,a)>=n:
+  n=4 alphabet=5: True
+  n=6 alphabet=4: True
+C3 sharpness 2L>=4:
+  2D L=4: bad=16 N=16 True
+  2D L=6: bad=36 N=36 True
+  3D L=4: bad=48 3N/4=48 True
+  3D L=6: bad=162 3N/4=162 True
+C4 216^{4/3}=1296; CS does not improve the 3/4 exponent:
+  6^3=216, 6^4=1296: True; 6 (1/1296)^{3/4} = 1/36 (want 1/36=1/36)
+  2D: 6m/p at p=216m is 1/36 = 1/36 True
+HIT: route (i) CS over parity classes: site-reflection orbit is one class (N/2 on (Z/4)^2); lemma and sharpness give b0=N in 2D and 3N/4 in 3D (sides 4,6); CS recovers the intended 'every direction-i bond' event at the same N-th root, so T4 holds with eps=6m/p in 2D (p>=216m) and cannot beat 6(m/p)^{3/4} in 3D (p>=1296m=6^4 m)
+SUMMARY: PARTIAL - Cauchy-Schwarz over parity classes repairs T4 in 2D at 216m and is a no-go for 216m in 3D (stays 1296m); bond-plane RP not used

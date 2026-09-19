@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:chessboard-repair:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j2ec5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/chessboard-repair/w-macbookpro90c72-j2ec5/check.py",
+ "seed": 78175,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "06f7c4b8",
+ "started_utc": "20260919T003615Z",
+ "elapsed_s": 3.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL - Cauchy-Schwarz over parity classes repairs T4 in 2D at 216m and is a no-go for 216m in 3D (stays 1296m); bond-plane RP not used"
+ },
+ "review": "PARTIAL: CS over parity classes repairs T4 in 2D at 216m; 3D no-go stays 1296m; orbit/lemma/sharpness checked",
+ "what": "DERIVATION, independent attempt 4 of 4: Repair block 17's chessboard step and find the true constant. DEFECT found by a probe and confirmed (issue list: J:attack:PR8151): in block 17 (PR #8151, the static six-axis law's ordered side) T3 disseminates the event 'the canonical direction-i bond of the cell is bad' by reflections through site planes and states the result as 'every direction-i bond is bad'. Site reflections preserve the parity of the transverse coordinates, so the realized event is the direction-i bonds with even transverse coordinates (N/2 in 2D, N/4 in 3D), and T4's epsilon = 6m/p, hence T7's threshold p >= 216 max(q,r), does not follow. TASK: a correct chain with the best constant you can prove. Candidates: (i) a lemma that recovers the 2D statement (combine the four parity classes by a second chessboard or by Cauchy-Schwarz over classes); (ii) reflections through BOND planes (planes between sites): decide exactly for which weights (p, q, r) the six-axis law is reflection positive there, since those reflections move parity; (iii) cells of side two, so that one cell carries all parity classes; (iv) a Peierls count on the coarser lattice of even sites. COMPUTED LEAD for (ii): reflection positivity through a bond plane needs the 6 x 6 weight matrix W (p same axis, q opposite, r orthogonal) positive semidefinite; its eigenvalues are p+q+4r, p-q (three times), p+q-2r (twice), so the condition is p >= q and p + q >= 2r: on the line (p,1,2) that is p >= 3, the whole regime of interest; bond reflections move the parity that site reflections preserve. Verify this before relying on it. State the threshold you prove in 2D and in 3D and verify every finite inequality on small tori exactly (the probe's script is probes/work/pr8151/). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/chessboard-repair/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/chessboard-repair/<name>/check.py\"",
+ "stdout_sha256": "996d0a1baae65d91a37f8ae48a33d5b61e0df20b5153c4747a6da90c2a4ea566",
+ "stdout_tail": "C1 orbit (Z/4)^2 site reflections of canonical horizontal bond:\n  |orbit|=8 dir0=8 parities={0} N/2=8\nC2 lemma bad(s)+2 bad(s,a)>=n:\n  n=4 alphabet=5: True\n  n=6 alphabet=4: True\nC3 sharpness 2L>=4:\n  2D L=4: bad=16 N=16 True\n  2D L=6: bad=36 N=36 True\n  3D L=4: bad=48 3N/4=48 True\n  3D L=6: bad=162 3N/4=162 True\nC4 216^{4/3}=1296; CS does not improve the 3/4 exponent:\n  6^3=216, 6^4=1296: True; 6 (1/1296)^{3/4} = 1/36 (want 1/36=1/36)\n  2D: 6m/p at p=216m is 1/36 = 1/36 True\nHIT: route (i) CS over parity classes: site-reflection orbit is one class (N/2 on (Z/4)^2); lemma and sharpness give b0=N in 2D and 3N/4 in 3D (sides 4,6); CS recovers the intended 'every direction-i bond' event at the same N-th root, so T4 holds with eps=6m/p in 2D (p>=216m) and cannot beat 6(m/p)^{3/4} in 3D (p>=1296m=6^4 m)\nSUMMARY: PARTIAL - Cauchy-Schwarz over parity classes repairs T4 in 2D at 216m and is a no-go for 216m in 3D (stays 1296m); bond-plane RP not used\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2ec5",
+  "at_utc": "20260919T003622Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "PARTIAL: CS over parity classes repairs 2D at 216m; 3D no-go at 1296m",
+  "by": "w-macbookpro90c72-j2ec5",
+  "at_utc": "20260919T003622Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_AUXILIARY_FACE_LOCAL_CONDITIONALS_UNCONDITIONAL_GAUGE_MEASURE_BOUNDED_THEOREM_NOTE_2026",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-jb10d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_AUXILIARY_FACE_LOCAL_CONDITIONALS_UNC/marginal_connectivity_covariance_curvature.py",
+ "seed": 18132,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5fcbf3a6",
+ "started_utc": "20260919T114212Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "summing every supported face auxiliary on the 2 x 3 Z_3 lattice returns prod_f T(Phi_f) exactly for all 531441 link configurations; the positive-universal single-site support graph on the 2 x 2 lattice is connected for Z_3 (104976 states) and Z_4 (1048576 states) while epsilon = 0 leaves 65536 isolated matching sectors; the curl is gauge invariant for every tuple and potential and the factors survive all 8 square symmetries for N = 5, 6; kappa_N approaches kappa = 0.07314149 monotonically (9.4e-06 at N = 256, 1.5e-07 at N = 2048); no falsifier fires"
+ },
+ "review": "Read the script and its output: on the 2 x 3 periodic Z_3 lattice the explicit sum over all 64 supported face masks returns prod_f T(Phi_f) exactly for all 531441 link configurations; the positive-universal single-site support graph on the 2 x 2 lattice is connected for Z_3 (104976 states) and Z_4 (1048576 states), while epsilon = 0 leaves one isolated matching sector per link configuration; the curl is gauge invariant for all N^4 x N^4 tuple-potential pairs and the factors survive all 8 square symmetries for N = 5, 6; kappa_N converges monotonically to kappa = 0.0731414868 (9.4e-6 at N = 256, 1.5e-7 at N = 2048); no falsifier fires.",
+ "what": "Note on main: docs/U1_AUXILIARY_FACE_LOCAL_CONDITIONALS_UNCONDITIONAL_GAUGE_MEASURE_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_AUXILIARY_FACE_LOCAL_CONDITIONALS_UNC/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_AUXILIARY_FACE_LOCAL_CONDITIONALS_UNC/<script>.py\"",
+ "stdout_sha256": "3c198ca14d476a67c1f8f43e8bd4abcf3beaa51d8e3f0c76b1330e3c41916307",
+ "stdout_tail": "1. 2 x 3 periodic lattice, Z_3, T = (5,3,3): sum over all 64 face masks equals prod T(Phi_f) for all 531441 link configurations: True\n2. 2 x 2 support graphs (states, components): {3: (104976, 1), 4: (1048576, 1)}; epsilon = 0 control (supported states, components): {3: (6561, 6561), 4: (65536, 65536)}\n3. gauge invariance over all N^4 x N^4 (tuple, potential) pairs and all 8 square symmetries on every tuple and auxiliary, N = 5, 6: {5: (True, True), 6: (True, True)}\n4. curvature: kappa = 0.0731414868; |kappa_N - kappa| by N: {8: 0.00906, 16: 0.00236, 32: 0.000597, 64: 0.00015, 128: 3.75e-05, 256: 9.37e-06, 512: 2.34e-06, 1024: 5.85e-07, 2048: 1.46e-07}; monotone: True\nSUMMARY: summing every supported face auxiliary on the 2 x 3 Z_3 lattice returns prod_f T(Phi_f) exactly for all 531441 link configurations; the positive-universal single-site support graph on the 2 x 2 lattice is connected for Z_3 (104976 states) and Z_4 (1048576 states) while epsilon = 0 leaves 65536 isolated matching sectors; the curl is gauge invariant for every tuple and potential and the factors survive all 8 square symmetries for N = 5, 6; kappa_N approaches kappa = 0.07314149 monotonically (9.4e-06 at N = 256, 1.5e-07 at N = 2048); no falsifier fires\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb10d",
+  "at_utc": "20260919T114225Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

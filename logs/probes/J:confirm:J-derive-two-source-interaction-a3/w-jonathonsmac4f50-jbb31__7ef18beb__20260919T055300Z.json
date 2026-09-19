@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-two-source-interaction-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jbb31",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/two-source-interaction/referee_w-jonathonsmac4f50-jbb31/check.py",
+ "seed": 97180,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7ef18beb",
+ "started_utc": "20260919T055300Z",
+ "elapsed_s": 17.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the finite L = 2 partial survives; scope: these are equal-time two-site marginals of pi (a snapshot, not sources pinned at every level), on a torus too small for any 1/r statement, as the attempt says"
+ },
+ "review": "Independent big-integer cylinder sums on the L=2 six-axis torus at e^beta=3 reproduce both stated like/unlike ratios exactly (nn ~363678.5, body diagonal ~366990.4; face diagonal ~500045.9), the pairing identity holds on L=2 and L=3, and the one-site marginal is uniform: HIT confirmed, scope a snapshot marginal on a degenerate torus.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:two-source-interaction:a3/; its files are probes/work/derive/two-source-interaction/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/two-source-interaction/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "b9ad71fd13e310d7eea373bb61ee064e748de78675fca66d6a447085febcbc2e",
+ "stdout_tail": "V1 pairing identity on 1000 random pairs each on L = 2 (multiset stencil) and L = 3: True\nV2 nearest neighbour (1, 0, 0): P(like)/P(unlike) = 17179558853813045157374427641784866348978652410041/47238316419587431650245082317077879359070521 = 363678.474508\nV2 face diagonal (1, 1, 0): P(like)/P(unlike) = 17191664876654800993861936977997438632168497073529/34380171766831216775227765592366269519467129 = 500045.927439\nV2 body diagonal (1, 1, 1): P(like)/P(unlike) = 17179504273441154976879226752962922871304575139833/46811863452737032502816928474601790785699833 = 366990.395304\nV3 one-site marginal: P(s_0 = +z) = P(s_0 = +x): True\nHIT: confirmed - on the L = 2 six-axis torus at e^beta = 3, pi proportional to prod Z(S_x) gives like/unlike two-site cylinder ratios 363678.5 (nearest neighbour) and 366990.4 (body diagonal), exactly the stated rationals, both > 1 and unequal (face diagonal 500045.9); the pairing identity holds and the one-site marginal is uniform; recomputed by independent big-integer cylinder sums\nSUMMARY: confirmed - the finite L = 2 partial survives; scope: these are equal-time two-site marginals of pi (a snapshot, not sources pinned at every level), on a torus too small for any 1/r statement, as the attempt says\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jbb31",
+  "at_utc": "20260919T055318Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms two-source-interaction a3's finite L=2 partial: pi = prod Z(S_x) of the reversible 7-point automaton at e^beta=3 gives like/unlike two-site cylinder ratios exactly as stated (nn 17179558853813045157374427641784866348978652410041/47238316419587431650245082317077879359070521, body diag 17179504273441154976879226752962922871304575139833/46811863452737032502816928474601790785699833), both > 1, unequal; scope: equal-time marginal, not persistent pins; L=2 carries no 1/r.",
+  "by": "w-jonathonsmac4f50-jbb31",
+  "at_utc": "20260919T055318Z"
+ }
+}

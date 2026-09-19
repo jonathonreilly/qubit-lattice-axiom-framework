@@ -1,0 +1,7 @@
+V1 pairing identity on 1000 random pairs each on L = 2 (multiset stencil) and L = 3: True
+V2 nearest neighbour (1, 0, 0): P(like)/P(unlike) = 17179558853813045157374427641784866348978652410041/47238316419587431650245082317077879359070521 = 363678.474508
+V2 face diagonal (1, 1, 0): P(like)/P(unlike) = 17191664876654800993861936977997438632168497073529/34380171766831216775227765592366269519467129 = 500045.927439
+V2 body diagonal (1, 1, 1): P(like)/P(unlike) = 17179504273441154976879226752962922871304575139833/46811863452737032502816928474601790785699833 = 366990.395304
+V3 one-site marginal: P(s_0 = +z) = P(s_0 = +x): True
+HIT: confirmed - on the L = 2 six-axis torus at e^beta = 3, pi proportional to prod Z(S_x) gives like/unlike two-site cylinder ratios 363678.5 (nearest neighbour) and 366990.4 (body diagonal), exactly the stated rationals, both > 1 and unequal (face diagonal 500045.9); the pairing identity holds and the one-site marginal is uniform; recomputed by independent big-integer cylinder sums
+SUMMARY: confirmed - the finite L = 2 partial survives; scope: these are equal-time two-site marginals of pi (a snapshot, not sources pinned at every level), on a torus too small for any 1/r statement, as the attempt says

@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-lightcone-sixaxis-order-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j50f2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-sixaxis-order/referee_w-jonathonsmac4f50-j50f2/check.py",
+ "seed": 96618,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "83f5cbfd",
+ "started_utc": "20260919T054338Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "fails at step 3 - the one-flip formula rho_n and the stated rho_7 at (3,1,2) re-derive by direct products on the 3^3 torus, but the gap (p-q)(p^(n-1)-q^(n-1)) is a product of two factors with the sign of p-q, so it is >= 0 for every p, q: rho_n < 1 iff p != q, not iff p > q (e.g. (1,3,2): rho_7 = 0.00441); 'strict local maximum' also needs the orthogonal flips, which the attempt never checks (their gap (p-r)(p^(n-1)-r^(n-1)) + (q-r)(q^(n-1)-r^(n-1)) >= 0; ratios below 1: True); by Hoelder Z_x <= p^n + q^n + 4r^n at every site, so the six constants maximise pi for every coupling, and the local condition says nothing about p > q"
+ },
+ "review": "The one-flip ratio rho_n and rho_7(3,1,2) = 281399112371155271/63844929217529296875 re-derive by direct products on the 3^3 torus, but the gap (p-q)(p^(n-1)-q^(n-1)) is >= 0 for every p, q, so rho_n < 1 iff p != q (rho_7 = 0.0044 at (1,3,2), 0.011 at (1,2,1)), orthogonal flips (unchecked by the attempt) have gap (p-r)(p^(n-1)-r^(n-1))+(q-r)(q^(n-1)-r^(n-1)) >= 0, and by Hoelder Z_x <= p^n+q^n+4r^n so the constants maximise pi for every coupling: fails at step 3.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-sixaxis-order:a4/; its files are probes/work/derive/lightcone-sixaxis-order/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-sixaxis-order/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "2f0678d2c3fd2be48c35ff4bdb9fcb81139d1e1f9d8e1b53b58de34689456c22",
+ "stdout_tail": "= 1 (1); = attempt's rho_n: True; orthogonal one-flip ratio = 0.009659\nR1 (p,q,r)=(2, 2, 1), n=6: antipodal one-flip pi ratio = 1 (1); = attempt's rho_n: True; orthogonal one-flip ratio = 0.02224\nR2 n=6: D - N = (p-q)(p^(n-1) - q^(n-1)) identically: True; D - Z_o = (p-r)(p^(n-1)-r^(n-1)) + (q-r)(q^(n-1)-r^(n-1)): True\nR2 n=7: D - N = (p-q)(p^(n-1) - q^(n-1)) identically: True; D - Z_o = (p-r)(p^(n-1)-r^(n-1)) + (q-r)(q^(n-1)-r^(n-1)): True\nR3 (p,q,r)=('3', '1', '2'): Z_x <= p^7+q^7+4r^7 on 300 random stencils: True; best pi(s)/pi(aligned) found by hill-climbing = 7.534e-08\nR3 (p,q,r)=('1', '3', '2'): Z_x <= p^7+q^7+4r^7 on 300 random stencils: True; best pi(s)/pi(aligned) found by hill-climbing = 4.224e-08\nR3 (p,q,r)=('5/4', '2', '1/2'): Z_x <= p^7+q^7+4r^7 on 300 random stencils: True; best pi(s)/pi(aligned) found by hill-climbing = 5.028e-14\nSUMMARY: fails at step 3 - the one-flip formula rho_n and the stated rho_7 at (3,1,2) re-derive by direct products on the 3^3 torus, but the gap (p-q)(p^(n-1)-q^(n-1)) is a product of two factors with the sign of p-q, so it is >= 0 for every p, q: rho_n < 1 iff p != q, not iff p > q (e.g. (1,3,2): rho_7 = 0.00441); 'strict local maximum' also needs the orthogonal flips, which the attempt never checks (their gap (p-r)(p^(n-1)-r^(n-1)) + (q-r)(q^(n-1)-r^(n-1)) >= 0; ratios below 1: True); by Hoelder Z_x <= p^n + q^n + 4r^n at every site, so the six constants maximise pi for every coupling, and the local condition says nothing about p > q\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j50f2",
+  "at_utc": "20260919T054341Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

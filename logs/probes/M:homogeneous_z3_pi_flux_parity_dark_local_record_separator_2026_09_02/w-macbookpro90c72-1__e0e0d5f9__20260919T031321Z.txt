@@ -1,0 +1,62 @@
+== all_plus_H1_links
+TOTAL: PASS=8 FAIL=1
+== commuting_H1_directions
+TOTAL: PASS=8 FAIL=1
+== wrong_H1_square_with_mixed_shift
+TOTAL: PASS=8 FAIL=1
+== drop_one_coordinate_parity
+TOTAL: PASS=8 FAIL=1
+== claim_hamming_one_is_dark
+TOTAL: PASS=8 FAIL=1
+== claim_only_low_order_cancellation
+TOTAL: PASS=8 FAIL=1
+== nonzero_H1_body_diagonal
+TOTAL: PASS=8 FAIL=1
+== zero_H0_body_diagonal
+TOTAL: PASS=8 FAIL=1
+== wrong_H0_third_coefficient
+TOTAL: PASS=8 FAIL=1
+== wrong_bessel_argument
+TOTAL: PASS=8 FAIL=1
+== wrong_bessel_lower_bound
+TOTAL: PASS=8 FAIL=1
+== claim_perfect_uniform_transfer
+TOTAL: PASS=8 FAIL=1
+== branch_specific_source
+TOTAL: PASS=8 FAIL=1
+== branch_specific_cadence
+TOTAL: PASS=8 FAIL=1
+== branch_specific_effect
+TOTAL: PASS=8 FAIL=1
+== branch_specific_writer
+TOTAL: PASS=8 FAIL=1
+== suppress_exterior_bonds
+TOTAL: PASS=8 FAIL=1
+== odd_period_wrap_as_infinite_proof
+TOTAL: PASS=8 FAIL=1
+== treat_coordinate_bits_as_site_qubits
+TOTAL: PASS=8 FAIL=1
+== treat_source_as_permanent_Record
+TOTAL: PASS=8 FAIL=1
+== leave_incident_hopping_on_after_Record
+TOTAL: PASS=8 FAIL=1
+== claim_sequential_pulses_are_dark
+TOTAL: PASS=8 FAIL=1
+== claim_action_selected
+TOTAL: PASS=8 FAIL=1
+== claim_born_or_clock_derived
+TOTAL: PASS=8 FAIL=1
+== claim_record_formation_derived
+TOTAL: PASS=8 FAIL=1
+== claim_I4_closed
+TOTAL: PASS=8 FAIL=1
+== claim_obligation_or_TOE_movement
+TOTAL: PASS=8 FAIL=1
+== break_flux_sign
+TOTAL: PASS=8 FAIL=1
+== break_rotation_gauge_covariance
+TOTAL: PASS=8 FAIL=1
+== source_blob_drift
+TOTAL: PASS=8 FAIL=1
+== claim_bare_translation_invariance
+TOTAL: PASS=8 FAIL=1

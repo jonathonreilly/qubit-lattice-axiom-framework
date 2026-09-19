@@ -1,0 +1,32 @@
+{
+ "task": "M:homogeneous_z3_pi_flux_parity_dark_local_record_separator_2026_09_02",
+ "type": "mutation-census",
+ "lane": "homogeneous",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "for m in $(python3 scripts/homogeneous_z3_pi_flux_parity_dark_local_record_separator_2026_09_02.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/homogeneous_z3_pi_flux_parity_dark_local_record_separator_2026_09_02.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 87601,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e0e0d5f9",
+ "started_utc": "20260919T031321Z",
+ "elapsed_s": 28.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "ea246b8d11146e482040f46952efe8233312b26bb8e4afaec968a1ec631ed6ea",
+ "stdout_tail": "8 FAIL=1\n== wrong_H1_square_with_mixed_shift\nTOTAL: PASS=8 FAIL=1\n== drop_one_coordinate_parity\nTOTAL: PASS=8 FAIL=1\n== claim_hamming_one_is_dark\nTOTAL: PASS=8 FAIL=1\n== claim_only_low_order_cancellation\nTOTAL: PASS=8 FAIL=1\n== nonzero_H1_body_diagonal\nTOTAL: PASS=8 FAIL=1\n== zero_H0_body_diagonal\nTOTAL: PASS=8 FAIL=1\n== wrong_H0_third_coefficient\nTOTAL: PASS=8 FAIL=1\n== wrong_bessel_argument\nTOTAL: PASS=8 FAIL=1\n== wrong_bessel_lower_bound\nTOTAL: PASS=8 FAIL=1\n== claim_perfect_uniform_transfer\nTOTAL: PASS=8 FAIL=1\n== branch_specific_source\nTOTAL: PASS=8 FAIL=1\n== branch_specific_cadence\nTOTAL: PASS=8 FAIL=1\n== branch_specific_effect\nTOTAL: PASS=8 FAIL=1\n== branch_specific_writer\nTOTAL: PASS=8 FAIL=1\n== suppress_exterior_bonds\nTOTAL: PASS=8 FAIL=1\n== odd_period_wrap_as_infinite_proof\nTOTAL: PASS=8 FAIL=1\n== treat_coordinate_bits_as_site_qubits\nTOTAL: PASS=8 FAIL=1\n== treat_source_as_permanent_Record\nTOTAL: PASS=8 FAIL=1\n== leave_incident_hopping_on_after_Record\nTOTAL: PASS=8 FAIL=1\n== claim_sequential_pulses_are_dark\nTOTAL: PASS=8 FAIL=1\n== claim_action_selected\nTOTAL: PASS=8 FAIL=1\n== claim_born_or_clock_derived\nTOTAL: PASS=8 FAIL=1\n== claim_record_formation_derived\nTOTAL: PASS=8 FAIL=1\n== claim_I4_closed\nTOTAL: PASS=8 FAIL=1\n== claim_obligation_or_TOE_movement\nTOTAL: PASS=8 FAIL=1\n== break_flux_sign\nTOTAL: PASS=8 FAIL=1\n== break_rotation_gauge_covariance\nTOTAL: PASS=8 FAIL=1\n== source_blob_drift\nTOTAL: PASS=8 FAIL=1\n== claim_bare_translation_invariance\nTOTAL: PASS=8 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T031350Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+  ]
+ }
+}

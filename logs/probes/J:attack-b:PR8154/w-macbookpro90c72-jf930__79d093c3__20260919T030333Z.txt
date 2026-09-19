@@ -1,0 +1,4 @@
+L=1 plane S=5/32 (N=4 k!=0 3)  3D S=29/192 (N=8 k!=0 7)
+L=2 plane S=103/384 (N=16 k!=0 15)  3D S=1517/7680 (N=64 k!=0 63)
+plane growth 43/384  3D growth 119/2560
+SUMMARY: SAME TEST BOTH SIDES on N^{-1} sum_{k!=0} 1/E(k) (PR #8154): plane grows 5/32 -> 103/384 from L=1 to 2 while 3D is 29/192 -> 1517/7680; the IR sum separates the plane from 3D as written

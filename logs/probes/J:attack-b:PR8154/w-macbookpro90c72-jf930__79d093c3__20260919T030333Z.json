@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8154",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block20-unsold",
+ "worker": "w-macbookpro90c72-jf930",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8154/plane_vs_3d_lattice_sum.py",
+ "seed": 87013,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "79d093c3",
+ "started_utc": "20260919T030333Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAME TEST BOTH SIDES on N^{-1} sum_{k!=0} 1/E(k) (PR #8154): plane grows 5/32 -> 103/384 from L=1 to 2 while 3D is 29/192 -> 1517/7680; the IR sum separates the plane from 3D as written"
+ },
+ "review": "Same 1/E(k) lattice-sum test: plane S grows L=1 to 2 while 3D stays smaller; the IR separation holds.",
+ "what": "PR #8154 ([physics-loop] admissibility-induced-law block20 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915; git show origin/physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915:<note>. Create probes/work/pr8154/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8154/<script>.py\"",
+ "stdout_sha256": "c6bec57759bf7644f9976438f49c120e2c2f9f416b6f29759e4e63e699757130",
+ "stdout_tail": "L=1 plane S=5/32 (N=4 k!=0 3)  3D S=29/192 (N=8 k!=0 7)\nL=2 plane S=103/384 (N=16 k!=0 15)  3D S=1517/7680 (N=64 k!=0 63)\nplane growth 43/384  3D growth 119/2560\nSUMMARY: SAME TEST BOTH SIDES on N^{-1} sum_{k!=0} 1/E(k) (PR #8154): plane grows 5/32 -> 103/384 from L=1 to 2 while 3D is 29/192 -> 1517/7680; the IR sum separates the plane from 3D as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf930",
+  "at_utc": "20260919T030333Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

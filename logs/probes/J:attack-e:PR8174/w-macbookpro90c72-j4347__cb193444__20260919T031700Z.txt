@@ -1,0 +1,4 @@
+W1 rebuilt: E=16 |A|=10 |S|=1 bad=10 refs=10 ratio=8/5
+note C4 executed max 2/3
+HIT: adversarial W1 has (E-3(|S|-1))/|A|=8/5 > executed maximum 2/3 from random/small cones (same automaton and extended tree)
+SUMMARY: pattern (e) SAMPLED EVIDENCE fired — hill-climb/adversarial W1 reaches ratio 8/5 against the executed 2/3 on random cones; (E,|A|,|S|)=(16,10,1)

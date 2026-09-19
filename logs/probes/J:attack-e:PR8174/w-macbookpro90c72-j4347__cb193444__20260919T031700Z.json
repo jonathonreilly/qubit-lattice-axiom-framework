@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-e:PR8174",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block30-six-ax",
+ "worker": "w-macbookpro90c72-j4347",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8174/attack_e_adversarial_w1.py",
+ "seed": 87820,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cb193444",
+ "started_utc": "20260919T031700Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "pattern (e) SAMPLED EVIDENCE fired \u2014 hill-climb/adversarial W1 reaches ratio 8/5 against the executed 2/3 on random cones; (E,|A|,|S|)=(16,10,1)"
+ },
+ "review": "Pattern (e): adversarial W1 of the same automaton/tree has ratio 8/5 against the note's executed maximum 2/3 on random cones; not the known T1(a) d1 HIT",
+ "what": "PR #8174 ([physics-loop] admissibility-induced-law block30 \u2014 bounded_t): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916; git show origin/physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916:<note>. Create probes/work/pr8174/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8174/<script>.py\"",
+ "stdout_sha256": "3db43b0cc3f7d11c009ec988f311c93d502471ee3da98de592f73cfa37c23639",
+ "stdout_tail": "W1 rebuilt: E=16 |A|=10 |S|=1 bad=10 refs=10 ratio=8/5\nnote C4 executed max 2/3\nHIT: adversarial W1 has (E-3(|S|-1))/|A|=8/5 > executed maximum 2/3 from random/small cones (same automaton and extended tree)\nSUMMARY: pattern (e) SAMPLED EVIDENCE fired \u2014 hill-climb/adversarial W1 reaches ratio 8/5 against the executed 2/3 on random cones; (E,|A|,|S|)=(16,10,1)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4347",
+  "at_utc": "20260919T031705Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Adversarial W1 (same one-sided automaton and extended explanation tree) has (E,|A|,|S|)=(16,10,1) ratio 8/5, above the note's executed maximum 2/3 from random/small cones; not the known T1(a) d1<=max(d2,d3) HIT.",
+  "by": "w-macbookpro90c72-j4347",
+  "at_utc": "20260919T031705Z"
+ }
+}

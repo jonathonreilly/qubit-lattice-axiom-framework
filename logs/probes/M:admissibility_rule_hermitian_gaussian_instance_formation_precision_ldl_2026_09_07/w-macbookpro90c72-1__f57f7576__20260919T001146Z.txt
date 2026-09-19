@@ -1,0 +1,80 @@
+== pd_certificate_forged
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=25 FAIL=1
+== quadratic_form_mismatch
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=25 FAIL=1
+== normalizer_wrong
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=25 FAIL=1
+== class_equality_broken
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=25 FAIL=1
+== monotone_class_split
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=25 FAIL=1
+== separation_formula_wrong
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=25 FAIL=1
+== support_condition_forged
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=25 FAIL=1
+== fillin_pairs_wrong
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=25 FAIL=1
+== correction_literal_off
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=25 FAIL=1
+== equality_with_static_claimed
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=25 FAIL=1
+== cancellation_witness_denied
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=25 FAIL=1
+== one_edge_example_forged
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=25 FAIL=1
+== hadamard_reversed
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=25 FAIL=1
+== hadamard_equality_case_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=25 FAIL=1
+== read_slices_equal_claimed
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=25 FAIL=1
+== conditional_block_equal_claimed
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=25 FAIL=1
+== herm_inverse_commutes_claimed
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=25 FAIL=1
+== claim_lane_fixture
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=25 FAIL=1
+== claim_formation_equals_static
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=25 FAIL=1
+== claim_bridge
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=25 FAIL=1

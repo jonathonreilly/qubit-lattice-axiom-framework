@@ -1,0 +1,17 @@
+(a) coupled runs from antipodal planes, maximal coupling per site, L = 64
+  beta=0.3: D_t = [np.float64(0.7035), np.float64(0.234), np.float64(0.0832), np.float64(0.0301), np.float64(0.0092), np.float64(0.0042), np.float64(0.0013), np.float64(0.0)]; ratios D_(t+1)/D_t (first 6) = [np.float64(0.333), np.float64(0.355), np.float64(0.362), np.float64(0.306), np.float64(0.452), np.float64(0.314)]; sqrt3 beta = 0.520; unresolved sites at the end: 0
+  beta=0.5: D_t = [np.float64(1.0798), np.float64(0.5701), np.float64(0.3057), np.float64(0.1689), np.float64(0.0945), np.float64(0.0626), np.float64(0.0391), np.float64(0.0238)]; ratios D_(t+1)/D_t (first 6) = [np.float64(0.528), np.float64(0.536), np.float64(0.552), np.float64(0.559), np.float64(0.662), np.float64(0.625)]; sqrt3 beta = 0.866; unresolved sites at the end: 0
+  beta=0.577: D_t = [np.float64(1.1899), np.float64(0.6922), np.float64(0.418), np.float64(0.2542), np.float64(0.1591), np.float64(0.1027), np.float64(0.0728), np.float64(0.0531)]; ratios D_(t+1)/D_t (first 6) = [np.float64(0.582), np.float64(0.604), np.float64(0.608), np.float64(0.626), np.float64(0.645), np.float64(0.709)]; sqrt3 beta = 0.999; unresolved sites at the end: 0
+(b) Monte-Carlo total-variation sensitivity at 40 random pairs (10^5 samples each)
+  max TV/|V - V'| = 0.2511 against the bound 0.2887 (small-|V| value 0.25)
+(c) one-site chain at beta = 0.5, 20000 independent chains, 6 levels
+  t=1: mean s.e = 0.4348  A(3 beta)^t = 0.4381
+  t=2: mean s.e = 0.1934  A(3 beta)^t = 0.1920
+  t=3: mean s.e = 0.0817  A(3 beta)^t = 0.0841
+  t=4: mean s.e = 0.0365  A(3 beta)^t = 0.0368
+  t=5: mean s.e = 0.0173  A(3 beta)^t = 0.0161
+  t=6: mean s.e = 0.0109  A(3 beta)^t = 0.0071
+(d) near V = 0: |F(V') - F(V)| against 2 TV, per unit |V' - V|
+  |V'| = 0.05: mean difference/|V'| = 0.3333 (>= 1/3 - d^2/45 = 0.3333); 2 TV/|V'| = 0.4987
+  |V'| = 0.2: mean difference/|V'| = 0.3324 (>= 1/3 - d^2/45 = 0.3324); 2 TV/|V'| = 0.4982
+  |V'| = 0.5: mean difference/|V'| = 0.3279 (>= 1/3 - d^2/45 = 0.3278); 2 TV/|V'| = 0.4933

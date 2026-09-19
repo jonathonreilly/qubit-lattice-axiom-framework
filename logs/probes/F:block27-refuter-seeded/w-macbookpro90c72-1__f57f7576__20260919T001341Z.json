@@ -1,0 +1,35 @@
+{
+ "task": "F:block27-refuter-seeded",
+ "type": "refuter-rerun",
+ "lane": "admissibility-block27",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/block27_refuter.py 55",
+ "seed": 55,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f57f7576",
+ "started_utc": "20260919T001341Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "tv": [
+   "0.2510",
+   "0.2887"
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "block 27's refuting control (coupled antipodal runs; Monte-Carlo TV sensitivity at random pairs against the bound 1/(2 sqrt 3) = 0.2887; the one-site chain; the near-zero sensitivity) with a NEW seed. A HIT is a measured TV sensitivity above the proved bound 0.2887 (the pattern fires at 0.29 and above; a reviewer confirms with the parsed numbers). Sweep --seed over 1..200.",
+ "stdout_sha256": "9033cc0329ff51b824b84139c1fad8a0514647841fd9f7e0b27989f3c9237dd7",
+ "stdout_tail": "oat64(0.0855), np.float64(0.0554), np.float64(0.0282), np.float64(0.0137)]; ratios D_(t+1)/D_t (first 6) = [np.float64(0.528), np.float64(0.533), np.float64(0.554), np.float64(0.518), np.float64(0.648), np.float64(0.508)]; sqrt3 beta = 0.866; unresolved sites at the end: 0\n  beta=0.577: D_t = [np.float64(1.1925), np.float64(0.7224), np.float64(0.4227), np.float64(0.2455), np.float64(0.1421), np.float64(0.0916), np.float64(0.0583), np.float64(0.0391)]; ratios D_(t+1)/D_t (first 6) = [np.float64(0.606), np.float64(0.585), np.float64(0.581), np.float64(0.579), np.float64(0.645), np.float64(0.636)]; sqrt3 beta = 0.999; unresolved sites at the end: 0\n(b) Monte-Carlo total-variation sensitivity at 40 random pairs (10^5 samples each)\n  max TV/|V - V'| = 0.2510 against the bound 0.2887 (small-|V| value 0.25)\n(c) one-site chain at beta = 0.5, 20000 independent chains, 6 levels\n  t=1: mean s.e = 0.4352  A(3 beta)^t = 0.4381\n  t=2: mean s.e = 0.1902  A(3 beta)^t = 0.1920\n  t=3: mean s.e = 0.0885  A(3 beta)^t = 0.0841\n  t=4: mean s.e = 0.0432  A(3 beta)^t = 0.0368\n  t=5: mean s.e = 0.0215  A(3 beta)^t = 0.0161\n  t=6: mean s.e = 0.0052  A(3 beta)^t = 0.0071\n(d) near V = 0: |F(V') - F(V)| against 2 TV, per unit |V' - V|\n  |V'| = 0.05: mean difference/|V'| = 0.3333 (>= 1/3 - d^2/45 = 0.3333); 2 TV/|V'| = 0.5010\n  |V'| = 0.2: mean difference/|V'| = 0.3324 (>= 1/3 - d^2/45 = 0.3324); 2 TV/|V'| = 0.4975\n  |V'| = 0.5: mean difference/|V'| = 0.3279 (>= 1/3 - d^2/45 = 0.3278); 2 TV/|V'| = 0.4927\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T001342Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

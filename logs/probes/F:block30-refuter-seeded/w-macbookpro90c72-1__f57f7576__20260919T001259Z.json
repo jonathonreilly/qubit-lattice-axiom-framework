@@ -1,0 +1,38 @@
+{
+ "task": "F:block30-refuter-seeded",
+ "type": "refuter-rerun",
+ "lane": "admissibility-block30",
+ "worker": "w-macbookpro90c72-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/block30_refuter.py 48",
+ "seed": 48,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f57f7576",
+ "started_utc": "20260919T001259Z",
+ "elapsed_s": 5.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "violations": [
+   "0",
+   "0",
+   "0"
+  ],
+  "checks": "True",
+  "edge": "0.148148"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "block 30's refuting control (six-axis law vs the two-level automaton under the SAME uniforms at (p,1,2); independent graph checks of extended trees on random cones; certificate fixed points; the domain edge) with a NEW seed. A HIT is any domination violation, a failed graph check, a certificate without a fixed point, or a negative exact margin. Sweep --seed over 1..200.",
+ "stdout_sha256": "505f1441b5f107d27ef81c58506fae041e717d60c4777b0bc31e0af700715209",
+ "stdout_tail": " the runner's; a difference of order 1e-5 or below is the displacement or rounding)\n  (p,1,1)=2085: x=0.14801 y=5.861e-07: fixed point (88.6324, 3.2541, 131.3114); certificate minus fixed point ('-2.5e-06', '-5.9e-09', '-3.8e-06') (the exact inequalities are the runner's; a difference of order 1e-5 or below is the displacement or rounding)\n  (p,1,3)=6247: x=0.14803 y=4.608e-07: fixed point (97.7813, 3.2649, 145.0298); certificate minus fixed point ('-5.4e-06', '-7.9e-09', '-8.1e-06') (the exact inequalities are the runner's; a difference of order 1e-5 or below is the displacement or rounding)\n  exact margins at (4165,1,2): D 1.01e-08, U 7.85e-12, F 1.52e-08 (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)\n  exact margins at (2085,1,1): D 4.78e-08, U 4.64e-11, F 7.15e-08 (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)\n  exact margins at (8330,2,4): D 1.01e-08, U 7.85e-12, F 1.52e-08 (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)\n  exact margins at (6247,1,3): D 4.07e-08, U 3.34e-11, F 6.08e-08 (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)\n  domain edge at y = 0 by bisection: 0.148148 (4/27 = 0.148148)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T001305Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

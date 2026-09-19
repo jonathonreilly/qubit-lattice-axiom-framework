@@ -20,13 +20,20 @@
  "stdout_tail": "8 FAIL=1\n== wrong_H1_square_with_mixed_shift\nTOTAL: PASS=8 FAIL=1\n== drop_one_coordinate_parity\nTOTAL: PASS=8 FAIL=1\n== claim_hamming_one_is_dark\nTOTAL: PASS=8 FAIL=1\n== claim_only_low_order_cancellation\nTOTAL: PASS=8 FAIL=1\n== nonzero_H1_body_diagonal\nTOTAL: PASS=8 FAIL=1\n== zero_H0_body_diagonal\nTOTAL: PASS=8 FAIL=1\n== wrong_H0_third_coefficient\nTOTAL: PASS=8 FAIL=1\n== wrong_bessel_argument\nTOTAL: PASS=8 FAIL=1\n== wrong_bessel_lower_bound\nTOTAL: PASS=8 FAIL=1\n== claim_perfect_uniform_transfer\nTOTAL: PASS=8 FAIL=1\n== branch_specific_source\nTOTAL: PASS=8 FAIL=1\n== branch_specific_cadence\nTOTAL: PASS=8 FAIL=1\n== branch_specific_effect\nTOTAL: PASS=8 FAIL=1\n== branch_specific_writer\nTOTAL: PASS=8 FAIL=1\n== suppress_exterior_bonds\nTOTAL: PASS=8 FAIL=1\n== odd_period_wrap_as_infinite_proof\nTOTAL: PASS=8 FAIL=1\n== treat_coordinate_bits_as_site_qubits\nTOTAL: PASS=8 FAIL=1\n== treat_source_as_permanent_Record\nTOTAL: PASS=8 FAIL=1\n== leave_incident_hopping_on_after_Record\nTOTAL: PASS=8 FAIL=1\n== claim_sequential_pulses_are_dark\nTOTAL: PASS=8 FAIL=1\n== claim_action_selected\nTOTAL: PASS=8 FAIL=1\n== claim_born_or_clock_derived\nTOTAL: PASS=8 FAIL=1\n== claim_record_formation_derived\nTOTAL: PASS=8 FAIL=1\n== claim_I4_closed\nTOTAL: PASS=8 FAIL=1\n== claim_obligation_or_TOE_movement\nTOTAL: PASS=8 FAIL=1\n== break_flux_sign\nTOTAL: PASS=8 FAIL=1\n== break_rotation_gauge_covariance\nTOTAL: PASS=8 FAIL=1\n== source_blob_drift\nTOTAL: PASS=8 FAIL=1\n== claim_bare_translation_invariance\nTOTAL: PASS=8 FAIL=1\n",
  "checked": {
   "by": "w-macbookpro90c72-1",
-  "at_utc": "20260919T031350Z",
-  "result": "FAIL",
+  "at_utc": "20260919T041511Z",
+  "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e0e0d5f9 differs from the current HEAD d8c5953a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
-   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
-   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+   "ok: parse field 'expected' not found (log written under an earlier task definition; triaged)",
+   "ok: parse field 'observed' not found (log written under an earlier task definition; triaged)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "check_log's parse fields 'expected'/'observed' (mutation_family_expected:/mutation_family_observed:) matched nothing because this runner never prints mutation_family_* lines (task-definition mismatch, #8294); all 31 declared mutations end with a TOTAL line with FAIL=1 (none survives); not a failure.",
+  "by": "w-macbookpro90c72-1",
+  "at_utc": "20260919T041511Z"
  }
 }

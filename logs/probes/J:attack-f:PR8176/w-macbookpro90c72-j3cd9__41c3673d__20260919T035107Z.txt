@@ -1,0 +1,7 @@
+critical points of t(4/27-t): [2/27]
+max t(4/27-t)=4/729 (stated 4/729)
+affine min at c=3/4: 3/2 (stated 3/2)
+d3(367)=745/135434 >4/729? True
+d3(368)=747/136171 >4/729? False
+recursion (1+xU)^2 is a square, not a Fourier 1/2
+SUMMARY: pattern (f) NORMALIZATION — no Fourier/2π/conjugation; max t(4/27-t)=4/729 at t=2/27, affine 3/2 at c=3/4, and d3 crosses 4/729 between 367 and 368, all exact; attack does not fire

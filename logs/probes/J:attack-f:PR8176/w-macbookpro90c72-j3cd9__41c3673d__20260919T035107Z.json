@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8176",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block32-minima",
+ "worker": "w-macbookpro90c72-j3cd9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8176/normalization_no_fourier.py",
+ "seed": 89867,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41c3673d",
+ "started_utc": "20260919T035107Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (f) NORMALIZATION \u2014 no Fourier/2\u03c0/conjugation; max t(4/27-t)=4/729 at t=2/27, affine 3/2 at c=3/4, and d3 crosses 4/729 between 367 and 368, all exact; attack does not fire"
+ },
+ "review": "pattern (f) does not fire: no Fourier/2pi; max t(4/27-t)=4/729, affine 3/2 at c=3/4, and d3 crossing 4/729 between 367 and 368 all recompute exactly",
+ "what": "PR #8176 (ail32: the minimal marked tree \u2014 the counted family's consta): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917; git show origin/physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917:<note>. Create probes/work/pr8176/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8176/<script>.py\"",
+ "stdout_sha256": "f020265ec43c613218b894a806c50a1788e20decb2c4dbdbe76c04657fabd945",
+ "stdout_tail": "critical points of t(4/27-t): [2/27]\nmax t(4/27-t)=4/729 (stated 4/729)\naffine min at c=3/4: 3/2 (stated 3/2)\nd3(367)=745/135434 >4/729? True\nd3(368)=747/136171 >4/729? False\nrecursion (1+xU)^2 is a square, not a Fourier 1/2\nSUMMARY: pattern (f) NORMALIZATION \u2014 no Fourier/2\u03c0/conjugation; max t(4/27-t)=4/729 at t=2/27, affine 3/2 at c=3/4, and d3 crosses 4/729 between 367 and 368, all exact; attack does not fire\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3cd9",
+  "at_utc": "20260919T035108Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

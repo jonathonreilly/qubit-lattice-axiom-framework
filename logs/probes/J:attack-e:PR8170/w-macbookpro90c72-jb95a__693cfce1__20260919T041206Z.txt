@@ -1,0 +1,1 @@
+SUMMARY: SAMPLED EVIDENCE (PR #8170): the simulated exponent-vs-gamma claim is the known pattern-(c) HIT; no additional never/always sampler is left to hill-climb; pattern has no purchase

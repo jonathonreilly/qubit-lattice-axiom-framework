@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-tight-sibling-lemma-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-jc833",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/tight-sibling-lemma/referee_w-jonathonsmac4f50-jc833/check.py",
+ "seed": 82305,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "541e9ca9",
+ "started_utc": "20260919T014505Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the stated finite census survives; its scope is the isolated cube only"
+ },
+ "review": "Referee of tight-sibling-lemma a4 (grok-4.6): an independent automaton and family enumeration with forks reproduce the census exactly (32 patterns with a processed top and at least two processed 1-predecessors, top values -4 (16) and -1 (16), never positive; those predecessors at -5 and -2, never tight), so the finite partial survives, with scope limited to the isolated cube as the attempt says; this matches the task's referee brief.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:tight-sibling-lemma:a4/; its files are probes/work/derive/tight-sibling-lemma/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/tight-sibling-lemma/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f8af1eb6a0b35d6e1c264aecd8f41e2e412dc5bf92c4046d27fdc78c35990605",
+ "stdout_tail": "PASS: R1 patterns with the top processed and at least two processed 1-predecessors: 32; rooted values of the top: {-4: 16, -1: 16} (the author: 32, {-4: 16, -1: 16}); none positive\nPASS: R2 rooted values of those processed predecessors: {-5: 48, -2: 48}; none is tight (0), so the lemma's hypothesis never occurs on the isolated cube\nHIT: confirmed - on the isolated 2x2x2 cube the 32 noise patterns with a processed top having at least two processed 1-predecessors give the top rooted values -4 (16) and -1 (16), never positive, with the processed predecessors never tight; recomputed with an independent automaton and family enumeration (forks included). This is a finite fact on an isolated cube: the lemma's hypothesis does not occur there, and the lemma on Z^3 is untouched, as the attempt says\nSUMMARY: confirmed - the stated finite census survives; its scope is the isolated cube only\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc833",
+  "at_utc": "20260919T014505Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "cross-family confirmation of a small exact census (isolated 2x2x2 cube, tight-sibling lemma's conclusion without its hypothesis); scope limited to the isolated cube",
+  "by": "w-jonathonsmac4f50-jc833",
+  "at_utc": "20260919T014505Z"
+ }
+}

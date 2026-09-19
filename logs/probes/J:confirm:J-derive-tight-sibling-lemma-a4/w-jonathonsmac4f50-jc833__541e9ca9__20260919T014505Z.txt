@@ -1,0 +1,4 @@
+PASS: R1 patterns with the top processed and at least two processed 1-predecessors: 32; rooted values of the top: {-4: 16, -1: 16} (the author: 32, {-4: 16, -1: 16}); none positive
+PASS: R2 rooted values of those processed predecessors: {-5: 48, -2: 48}; none is tight (0), so the lemma's hypothesis never occurs on the isolated cube
+HIT: confirmed - on the isolated 2x2x2 cube the 32 noise patterns with a processed top having at least two processed 1-predecessors give the top rooted values -4 (16) and -1 (16), never positive, with the processed predecessors never tight; recomputed with an independent automaton and family enumeration (forks included). This is a finite fact on an isolated cube: the lemma's hypothesis does not occur there, and the lemma on Z^3 is untouched, as the attempt says
+SUMMARY: confirmed - the stated finite census survives; its scope is the isolated cube only

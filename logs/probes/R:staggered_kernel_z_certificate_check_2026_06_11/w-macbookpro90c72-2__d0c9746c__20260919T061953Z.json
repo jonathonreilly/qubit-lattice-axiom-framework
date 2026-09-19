@@ -1,0 +1,36 @@
+{
+ "task": "R:staggered_kernel_z_certificate_check_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/staggered_kernel_z_certificate_check_2026_06_11.py",
+ "seed": 98793,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0c9746c",
+ "started_utc": "20260919T061953Z",
+ "elapsed_s": 1.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=17 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f3b3e7e7fc29d0452d905dad76923629e6b8dfc5efbc5d10a30a7565c28fe556",
+ "stdout_tail": "=============================\n[PASS] 15. [D] weighted witness K1(c=1/2) (off the two-class surface -- anisotropic amplitude -- but inside FSB-K's realized class): zero set still 8 points (counts 8, 8 at L = 4, 8), detector V = diag(2.0000, 2.0000, 1.0000), det = 4: (Z) still HOLDS but with weight sum 8/4 = 2 != 1 -- the machinery tracks cone data quantitatively, it is not a rubber stamp\n[PASS] 16. [D] broken-cone witness K1(c=0): the detector reports V = diag(2.0000, 2.0000, 0.0e+00) SINGULAR (axis-3 speed 0), and the zero set goes extended (16, 32 = 4L at L = 4, 8) -- singular-V detection works on a perturbed kernel\n[PASS] 17. [D] quadratic comparator (scalar NN + on-site -6, off-surface): POINT-LIKE zero set (1, 1, 1) yet all directional speeds < 1e-5 => V = 0 singular -- the two (Z) clauses are detected independently (point-likeness alone does not pass)\n[PASS] 18. [D] non-vacuity of the decision: the (Z) machinery over {K1, K1(c=1/2), K0, K1(c=0), comparator} returns {pass, pass, fail, fail, fail} from computed zero counts and cone speeds ONLY, through one code path -- the flux certificates of check 1 are never read by the decision; no flux label, branch label, count-3, or species input enters it\nRESIDUAL (declared-open): the falsification witnesses K1(c=1/2), K1(c=0), and the comparator are declared OFF the licensed two-class surface (anisotropic amplitude / on-site sector); they exercise the machinery, they are not surface members (boundary B-Z-W)\n\nTOTAL: PASS=17 FAIL=1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061955Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=17 FAIL=1' vs cache 'TOTAL: PASS=18 FAIL=0'"
+  ]
+ }
+}

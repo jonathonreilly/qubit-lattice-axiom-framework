@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle749_response_comparison_harness_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py",
+ "seed": 98724,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061844Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aa8ae9d951d79fbc17eeabc092573f8e9dcbdbfa08b35f7fe4b5fa3dc7b3c117",
+ "stdout_tail": "T\",\"largest_residual\":\"2\",\"residuals\":{\"recoil_balance\":\"0\",\"recoil_entries\":\"2\",\"response_entries\":\"1542458203669247/2000000000000000\"},\"transform\":\"uniform_magnitude_doubling\"},\"uniform_sign_reversal\":{\"failed_criteria\":[\"recoil_entries\",\"response_entries\"],\"label\":\"REJECT\",\"largest_residual\":\"4\",\"residuals\":{\"recoil_balance\":\"0\",\"recoil_entries\":\"4\",\"response_entries\":\"1542458203669247/1000000000000000\"},\"transform\":\"uniform_sign_reversal\"}},\"expected_labels\":{\"identity\":\"ACCEPT\",\"matter_coefficient_perturbation\":\"DRIFT\",\"uniform_magnitude_doubling\":\"REJECT\",\"uniform_sign_reversal\":\"REJECT\"},\"fail\":0,\"fixture_path\":\"outputs/response_comparison_harness_cycle749_fixture_2026_07_28.json\",\"fixture_sha256\":\"e56b4c8677ce8bdec95054d1df436ec2558ba3e19894df156379addfc39f1a2d\",\"note_path\":\"docs/RESPONSE_COMPARISON_HARNESS_CYCLE749_SUPPORT_NOTE_2026-07-28.md\",\"pass\":12,\"runtime_sec\":0.010196,\"scope\":{\"candidate_interface\":\"none; transforms fixture outputs only\",\"classification_labels\":\"local software conventions\",\"scientific_authority\":\"none\"},\"source_closure_count\":32,\"strict_boundary_probe\":{\"failed_criteria\":[\"recoil_balance\",\"recoil_entries\"],\"label\":\"DRIFT\",\"largest_residual\":\"3/10000000000\",\"residuals\":{\"recoil_balance\":\"3/10000000000\",\"recoil_entries\":\"3/10000000000\",\"response_entries\":\"0\"},\"transform\":\"strict_boundary_equality\"},\"thresholds\":{\"accept_rule\":\"all residuals strictly below strict_upper_bound\",\"drift_upper_bound\":\"1/1000000\",\"strict_upper_bound\":\"3/10000000000\"}}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061844Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"artifact_kind\":\"conditional_software_regression_comparator\",\"evaluations\":{\"id' vs cache '{\"artifact_kind\":\"conditional_software_regression_comparator\",\"evaluations\":{\"id'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle749_response_comparison_harness_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

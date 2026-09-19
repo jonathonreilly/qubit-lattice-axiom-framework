@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_site_license_tick_dichotomy_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/staggered_site_license_tick_dichotomy_2026_06_09.py",
+ "seed": 98795,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0c9746c",
+ "started_utc": "20260919T061955Z",
+ "elapsed_s": 10.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a3bb6dfa483d0803fbb4a7192a78d3f209cf32feb6e12381858f61dcf732e1b8",
+ "stdout_tail": "edge per tick\n  [PASS] the dispersive tick is sublattice-off-diagonal (eps U eps = -U): the staggered hopping shape  --  pure A <-> B hopping, no same-sublattice action -- the staggered structure\n  [PASS] the dispersive cells are the conjugate left/right single-mover sectors (w = -1 / w = +1)  --  one chiral sector per tick; Dirac pairing = larger-cell named open\n  [PASS] eta_mu(x) is constant along its own axis mu (landed KS formulas, verified on a 3^3 block)  --  the 1D theorem applies to any per-axis FACTOR, where the tick factorizes (3D simultaneous tick = named open)\n\nSECTION -- exclusions: why block01's tunable cells cannot occur for this carrier\n==============================================================================\n  [PASS] split-step has K-dependent DIAGONAL entries: distance-2 site hops, license-ILLEGAL here  --  the tunable witness needs a carrier density the scheme-forcing excludes\n  [PASS] block01's cell-level winding construction (full-swap brickwork) is ALSO site-license-illegal here  --  diagonal z-entries = 2-site moves; the realized saturating cells are the site-shifts\n  [PASS] the legal gapped cell [[cos t, i sin t /z],[i sin t z, cos t]] is unitary and FLAT  --  mass at 2-site periodicity = dispersionless exchange; curved massive bands need a larger cell (named open)\n\n==============================================================================\nSCORECARD: PASS=16 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T062005Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

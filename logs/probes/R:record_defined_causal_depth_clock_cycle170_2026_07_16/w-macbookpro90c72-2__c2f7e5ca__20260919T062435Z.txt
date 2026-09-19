@@ -1,0 +1,41 @@
+ACTUAL DEPENDENCY DAG
+PASS case (0, 0) has the exact local causal-depth certificate :: {'observed': {'nodes': 30633, 'edges': 30636, 'roots': 15, 'sinks': 5, 'output_depths': (4036, 3970), 'depth': 4036, 'output_ancestors': 22317, 'profile_hash': 'd13aeee419088ef5c052c6fd5aacd241574a48ae2209c84a074e323c2e4e0627'}, 'profile': ((1, 1, 15), (2, 11, 19), (12, 411, 22), (412, 427, 20), (428, 435, 18), (436, 491, 16), (492, 1149, 14), (1150, 1227, 13), (1228, 1269, 12), (1270, 1331, 11), (1332, 1399, 10), (1400, 1424, 9), (1425, 1498, 8), (1499, 1545, 7), (1546, 1669, 6), (1670, 1984, 5), (1985, 2058, 4), (2059, 2305, 3), (2306, 2630, 2), (2631, 2908, 3), (2909, 3970, 2), (3971, 4036, 1)), 'chain_failures': []}
+PASS case (0, 1) has the exact local causal-depth certificate :: {'observed': {'nodes': 30637, 'edges': 30640, 'roots': 15, 'sinks': 5, 'output_depths': (4036, 3974), 'depth': 4036, 'output_ancestors': 22807, 'profile_hash': '2172b45e39b58351779b89f118df3842caf0109c41adb25d9e9c53add66e331f'}, 'profile': ((1, 1, 15), (2, 11, 19), (12, 411, 22), (412, 427, 20), (428, 435, 18), (436, 491, 16), (492, 1149, 14), (1150, 1227, 13), (1228, 1269, 12), (1270, 1331, 11), (1332, 1399, 10), (1400, 1424, 9), (1425, 1498, 8), (1499, 1545, 7), (1546, 1669, 6), (1670, 1984, 5), (1985, 2058, 4), (2059, 2305, 3), (2306, 2630, 2), (2631, 2908, 3), (2909, 3974, 2), (3975, 4036, 1)), 'chain_failures': []}
+PASS case (1, 0) has the exact local causal-depth certificate :: {'observed': {'nodes': 30703, 'edges': 30706, 'roots': 15, 'sinks': 5, 'output_depths': (4106, 3970), 'depth': 4106, 'output_ancestors': 23021, 'profile_hash': '741637eb0dd40958c5b9892572c7b6402664ace49c86c99aca20138980420bd2'}, 'profile': ((1, 1, 15), (2, 11, 19), (12, 411, 22), (412, 427, 20), (428, 435, 18), (436, 491, 16), (492, 1149, 14), (1150, 1227, 13), (1228, 1269, 12), (1270, 1331, 11), (1332, 1399, 10), (1400, 1424, 9), (1425, 1498, 8), (1499, 1545, 7), (1546, 1669, 6), (1670, 1984, 5), (1985, 2058, 4), (2059, 2305, 3), (2306, 2630, 2), (2631, 2908, 3), (2909, 3970, 2), (3971, 4106, 1)), 'chain_failures': []}
+PASS case (1, 1) has the exact local causal-depth certificate :: {'observed': {'nodes': 30831, 'edges': 30834, 'roots': 15, 'sinks': 5, 'output_depths': (4106, 4098), 'depth': 4106, 'output_ancestors': 25958, 'profile_hash': 'ec6fcee756ac9fb9f222dc90e95efdab6fa989004e8b4e47a70efc6b08ae6d53'}, 'profile': ((1, 1, 15), (2, 11, 19), (12, 411, 22), (412, 427, 20), (428, 435, 18), (436, 491, 16), (492, 1149, 14), (1150, 1227, 13), (1228, 1269, 12), (1270, 1331, 11), (1332, 1399, 10), (1400, 1424, 9), (1425, 1498, 8), (1499, 1545, 7), (1546, 1669, 6), (1670, 1984, 5), (1985, 2058, 4), (2059, 2305, 3), (2306, 2630, 2), (2631, 2908, 3), (2909, 4098, 2), (4099, 4106, 1)), 'chain_failures': []}
+
+ALL-EDGE AVAILABILITY AUDIT
+PASS all 30,636 declared dynamic edges in case (0, 0) are load-bearing :: ()
+PASS all 30,640 declared dynamic edges in case (0, 1) are load-bearing :: ()
+PASS all 30,706 declared dynamic edges in case (1, 0) are load-bearing :: ()
+PASS all 30,834 declared dynamic edges in case (1, 1) are load-bearing :: ()
+PASS all 122,816 declared dynamic edges are exact local necessities :: {'edges': 122816, 'failures': []}
+
+PROPER-CUBIC AND LINEAR-SCHEDULE INVARIANCE
+PASS case (0, 0) has invariant depth/profile in all 24 rotations and both linear schedules :: {'work': (252122, 399165, 252122, 398786, 24, 24), 'base_work': (269149, 263639), 'failures': []}
+PASS case (0, 1) has invariant depth/profile in all 24 rotations and both linear schedules :: {'work': (251170, 399169, 251170, 398790, 24, 24), 'base_work': (268513, 263651), 'failures': []}
+PASS case (1, 0) has invariant depth/profile in all 24 rotations and both linear schedules :: {'work': (250974, 399305, 250974, 398926, 24, 24), 'base_work': (269499, 263303), 'failures': []}
+PASS case (1, 1) has invariant depth/profile in all 24 rotations and both linear schedules :: {'work': (250718, 399433, 250718, 399054, 24, 24), 'base_work': (269435, 263687), 'failures': []}
+PASS all 96 case-rotation DAGs and 192 min/max replays pass :: []
+
+RECORD-VISIBLE BRANCH REFINEMENTS
+PASS the selected physical paths expose the exact 4/70/128 refinements :: {'paths': {'lane1': (404, 474), 'lane2': (318, 322, 446)}, 'depths': {(0, 0): (4036, 3970), (0, 1): (4036, 3974), (1, 0): (4106, 3970), (1, 1): (4106, 4098)}}
+
+PARENT-DELETION CONTROLS
+PASS all 80 strategic local-parent deletions suppress their child commit :: []
+
+PHYSICAL PARALLEL COMPOSITION
+PASS all 16 separated DAG unions have summed profiles and max depth :: []
+PASS the physical 00||11 union closes in 4,106 layers :: (61464, 4106, 44, 0)
+PASS the physical 11||11 union doubles records but not depth :: (61662, 4106, 44, 0)
+
+ABSTRACT SERIAL COMPOSITION AND EXACT PHYSICAL SEAM
+PASS all 16 abstract serial DAGs have additive depth :: {'failures': [], 'depths': {((0, 0), (0, 0)): 8072, ((0, 0), (0, 1)): 8072, ((0, 0), (1, 0)): 8142, ((0, 0), (1, 1)): 8142, ((0, 1), (0, 0)): 8072, ((0, 1), (0, 1)): 8072, ((0, 1), (1, 0)): 8142, ((0, 1), (1, 1)): 8142, ((1, 0), (0, 0)): 8142, ((1, 0), (0, 1)): 8142, ((1, 0), (1, 0)): 8212, ((1, 0), (1, 1)): 8212, ((1, 1), (0, 0)): 8142, ((1, 1), (0, 1)): 8142, ((1, 1), (1, 0)): 8212, ((1, 1), (1, 1)): 8212}}
+PASS zero-cost rigid serial gluing fails for this exact source/output seam :: {'source_delta': (480, 0, 0), 'output_delta': (320, -70, 80), 'norms': (230400, 113700), 'matches': 0}
+
+SCOPE AND NO-GO DISCIPLINE
+FAIL the Cycle-170 note states every required scope boundary :: ('operational commit depth', 'dimensionless relative duration', 'not a continuous rate', 'not metric time', 'not a lorentz or lapse result', 'no axiom conclusion follows', 'abstract dependency composition', 'zero-cost serial gluing', '122,816 declared dynamic edges', 'status: **pass for the exact seam exclusion; fail for a general serial no-go.**', '### n1 — alternative routes', '### n2 — wall independence', '### n3 — hidden-condition scan', '### n4 — residual matching', '### n5 — rhetoric audit', '### n6 — partial closure and axiom classification', '### n7 — strongest hostile steelman', '### n8 — cross-cycle echo')
+
+TOTAL
+PASS 21 FAIL 1
+RESULT OPEN

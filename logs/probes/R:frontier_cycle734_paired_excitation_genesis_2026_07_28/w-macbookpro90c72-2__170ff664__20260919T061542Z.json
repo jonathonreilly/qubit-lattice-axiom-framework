@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle734_paired_excitation_genesis_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py",
+ "seed": 98542,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061542Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "050937f6c72a58775c6bb7ed5b9375832cafba4a0fde695704f0d024a5eb4831",
+ "stdout_tail": "on_parameter\":10,\"reference_sites\":[0],\"word_sha256\":\"b0c08833e904f97ecdc934310cfa115318867b240f18459b69945235e3140a8b\"}],\"semantic_gates\":3,\"stations\":11},\"pair_word_size\":3,\"pass\":true,\"remaining_supplied_components\":[\"external application-position parameter\",\"finite oriented geometry\",\"program content/order\",\"passive-only covariance\"],\"report_sha256\":\"edc0e90d7070ceba5185c12167eb2b7cba515c95ac8a32a44dd50b8e6dab6052\",\"runtime_seconds\":0.435651,\"source_selection_remains_supplied\":true,\"supplied_position_template_audit\":{\"all_position_words_same_size\":true,\"audit_pass\":true,\"distinguished_site_constants\":[],\"external_position_parameter\":true,\"fixed_unrolling_gate_count\":3,\"gate_census\":{\"CNOT\":0,\"TOF\":0,\"X\":3},\"integer_constants\":[1,1],\"no_hardcoded_absolute_site\":true,\"only_literal_M2_X_gates\":true,\"orientation_remains_supplied\":true,\"position_parameter_loads\":3,\"program_content_order_untouched\":true,\"ring_geometry_remains_supplied\":true,\"runtime_branch_or_iteration_nodes\":[],\"runtime_state_parameters\":[],\"template_function_parameters\":[\"layout\",\"position\"]},\"terminal\":\"CYCLE734_PAIRED_EXCITATION_GENESIS_PASS\",\"translation_covariance\":{\"covariance_kind\":\"exact passive conjugation under supplied oriented ring translation\",\"expected_identities\":121,\"identities_tested\":121,\"identity\":\"T_shift W(position) T_shift^-1 = W(position+shift mod 11)\",\"identity_failures\":[],\"positions\":11,\"shifts_per_position\":11,\"translation_family_exact\":true,\"translation_normalization_failures\":[]}}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061544Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle734_paired_excitation_genesis_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

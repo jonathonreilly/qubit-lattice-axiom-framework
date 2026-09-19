@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle736_multisource_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle736_multisource_independent_check_2026_07_28.py",
+ "seed": 98549,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061549Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ae91fb82ed66ec368a1cf72ff29c47d53487266c381fcd2891467772f5c9d162",
+ "stdout_tail": "li interpreter over exported actual Cycle-731 count/comparator prefix gates\",\"literal_reversals\":1194,\"off_diagonal_refusals\":995,\"pass\":true},\"fresh_template_gate_interpreter\":{\"failures\":[],\"gauge_matches_by_h\":[1100,1089],\"gauge_normalized_matches\":2189,\"implementation\":\"fresh integer X interpreter plus independent support transforms\",\"literal_passive_matches\":707,\"pass\":true,\"passive_matches_by_h\":[608,99],\"template_cases\":199},\"independence_discipline\":{\"actual_gate_fixture_obtained_by_subprocess\":true,\"declared_inputs\":88,\"fresh_gate_interpreter\":true,\"frontier_module_imports\":[],\"missing_inputs\":[],\"pass\":true,\"primary_executed_in_subprocess\":true,\"primary_inputs_covered\":true,\"unique_inputs\":88},\"primary_execution_contract\":{\"conditions\":{\"boundary\":true,\"exit_zero\":true,\"full_input_identity\":true,\"nine_checks\":true,\"report_pass\":true,\"report_present\":true,\"static_scope\":true},\"pass\":true,\"primary_report_sha256\":\"c5dca2ca318098e695441beace05a50316850dd822552641b7ed318db4e20087\",\"primary_terminal\":\"CYCLE736_STATIC_TEMPLATE_PREFIX_PASS\",\"returncode\":0,\"stderr_tail\":\"\"}},\"checks\":{\"Cycle735_adjacent_positive_regression\":true,\"actual_gate_fixture_contract\":true,\"census_and_marked_edge_recount\":true,\"fresh_count_prefix_gate_interpreter\":true,\"fresh_template_gate_interpreter\":true,\"independence_discipline\":true,\"primary_execution_contract\":true},\"checks_passed\":7,\"checks_total\":7,\"pass\":true,\"runtime_seconds\":3.860216}\nCYCLE736_STATIC_TEMPLATE_PREFIX_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061553Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle736_multisource_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+
+===============================================================================
+A - Sources and approved primitive boundary
+===============================================================================
+FAIL A cycle107_note exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/STRICT_COMPILER_TOE_LEDGER_CYCLE107_NOTE_2026-07-15.md
+PASS A axioms exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS A registry exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/audit/data/axiom_premise_nodes.json
+PASS A scale exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS A kinetic exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS A realized exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+FAIL A cycle95 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/AUX_GATED_CANDIDATE_TRANSPORT_CYCLE95_NOTE_2026-07-15.md
+FAIL A cycle96 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/POST_CYCLE94_OPERATIONAL_COMPLETENESS_AUDIT_CYCLE96_NOTE_2026-07-15.md
+PASS A cycle97 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/ACTUAL_FIVE_PORT_OPEN_RLB_MACROSTEP_CYCLE97_NOTE_2026-07-15.md
+FAIL A cycle98 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/REPEATED_READABLE_CELL_ALLOCATION_CYCLE98_NOTE_2026-07-15.md
+FAIL A cycle99 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/ACTUAL_FIVE_PORT_OPEN_RLB_MACROSTEP_AUDIT_CYCLE99_NOTE_2026-07-15.md
+FAIL A cycle100 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/ZERO_BINARY_SOURCE_ENDPOINT_MACROBLOCK_BIND_CYCLE100_NOTE_2026-07-15.md
+FAIL A cycle101 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/ZERO_SOURCE_RELATIONAL_FIRST_HARNESS_CYCLE101_NOTE_2026-07-15.md
+FAIL A cycle102 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/GENERATED_ENDPOINT_AUTONOMOUS_FRAME_RAIL_CYCLE102_NOTE_2026-07-15.md
+FAIL A cycle104 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/ONSITE_ALPHABET_CLOSED_FRAME_RAIL_CYCLE104_NOTE_2026-07-15.md
+FAIL A cycle108 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/FRAGMENT_SAFE_ROLE_REMAP_TYPE_INTEGRATION_CYCLE108_NOTE_2026-07-15.md
+FAIL A cycle105 exists :: /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/READ_STATUS_TO_GENERATED_RAIL_SPINE_CYCLE105_NOTE_2026-07-15.md
+PASS A registry contains only the four canonical premise nodes :: ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+PASS A primitive current paths are the three source notes read here
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/strict_compiler_toe_ledger_cycle107_2026_07_15.py", line 829, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/strict_compiler_toe_ledger_cycle107_2026_07_15.py", line 812, in main
+    source_and_primitive_contract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/strict_compiler_toe_ledger_cycle107_2026_07_15.py", line 438, in source_and_primitive_contract
+    texts = {key: normalized(path) for key, path in SOURCES.items()}
+                  ~~~~~~~~~~^^^^^^
+  File "/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/strict_compiler_toe_ledger_cycle107_2026_07_15.py", line 80, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/AUX_GATED_CANDIDATE_TRANSPORT_CYCLE95_NOTE_2026-07-15.md'

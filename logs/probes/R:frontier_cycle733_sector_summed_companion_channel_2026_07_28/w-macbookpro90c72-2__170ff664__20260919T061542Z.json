@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle733_sector_summed_companion_channel_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle733_sector_summed_companion_channel_2026_07_28.py",
+ "seed": 98542,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061542Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "133b43b67156370fb0c04937dc46ae54000e433dc15fe01a75827b87b250c489",
+ "stdout_tail": "},\"parent_open_gate_closed\":false,\"physical_or_coherent_channel_constructed\":false,\"relative_phase_parameter\":\"arbitrary\",\"relative_phase_selected\":false,\"sector_intertwining_premises_required\":true,\"sector_isometry_premises_required\":true,\"sector_maps_constructed_here\":false},\"controls\":{\"parity_flip_detected\":true},\"named_checks_passed\":7,\"named_checks_total\":7,\"parent\":{\"current_surface_match\":true,\"dictionary_sha256\":\"dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e\",\"family_counts\":{\"coin\":120,\"contact\":120,\"free\":48,\"reverse\":12,\"seam\":12},\"generator_rows\":312,\"sector_exponent_pair\":[48,47],\"shape\":[2,2,2],\"signed_pullbacks_exact_in_supplied_sectors\":true},\"parity_certificate\":{\"all_preserve_total_matter_parity\":true,\"family_surface_pass_counts\":{\"coin\":{\"companion_physical\":120,\"reference_physical\":120,\"target\":120},\"contact\":{\"companion_physical\":120,\"reference_physical\":120,\"target\":120},\"free\":{\"companion_physical\":48,\"reference_physical\":48,\"target\":48},\"reverse\":{\"companion_physical\":12,\"reference_physical\":12,\"target\":12},\"seam\":{\"companion_physical\":12,\"reference_physical\":12,\"target\":12}},\"matter_qubits\":48,\"parity_failures\":[],\"representatives_tested\":936},\"pass\":true,\"report_sha256\":\"03e025db600dc01e58858640341a5426377fc4a3f48998604ddc8b491868dcd0\",\"runtime_seconds\":0.3752251659752801,\"scope\":{\"finite_dictionary_only\":true,\"shape\":[2,2,2],\"state_space_exhaustion_claimed\":false},\"status\":\"CYCLE733_FINITE_BOX_CONDITIONAL_DIRECT_SUM_LEMMA_PASS\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061542Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"boundary\":{\"actual_sector_maps\":\"not_constructed\",\"coherent_channel\":\"open\",\"o' vs cache '{\"boundary\":{\"actual_sector_maps\":\"not_constructed\",\"coherent_channel\":\"open\",\"o'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle733_sector_summed_companion_channel_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:status_gated_typed_payload_handoff_cycle109_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "status",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/status_gated_typed_payload_handoff_cycle109_2026_07_15.py",
+ "seed": 98920,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0c9746c",
+ "started_utc": "20260919T062200Z",
+ "elapsed_s": 57.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f6e5afa05925238fce55139715384e489ad8f624cbfef61925801d35007b64f",
+ "stdout_tail": "==========================================================================\nPASS D01 injected H0 follows exact STATUS -> AUX -> A_0_0 reject path then quiet :: []\nPASS D02 correct/reject interface is quiet under compatible Cycle-95/Cycle-93 rows :: []\nPASS D03 all eight word flips plus wrong VALID/READY stop before status and payload :: []\nPASS D04 all ten corrupt terminals retain eight exact rail slices :: []\nPASS D05 corrupt graph census is executable and pinned :: [(760, 2274, (29,)), (680, 2022, (28,)), (600, 1770, (27,)), (440, 1186, (26,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]\n\n===============================================================================\nE - Proper-cubic covariance and bounded claim discipline\n===============================================================================\nPASS E01 all 179,904 raw proper-cubic images preserve output :: []\nPASS E02 all positive/fault/corrupt terminal rotations expose only next rail :: []\nFAIL E03 note names exact status-gated substitution\nFAIL E04 note names positive reduced literal-cap cage\nFAIL E05 note carries full N1-N8 discipline\nFAIL E06 note avoids a complete reusable-harness claim\nFAIL E07 note makes no axiom claim\nPASS E08 Cycle 109 writes only runner and review note\n\nGROWN=46 SPINE_JOIN_CANONICAL=17 HANDOFF_CANONICAL=8 UNION_RAW=7496\nLOCAL_STATES=11320 LOCAL_EDGES=54066 PRODUCT_STATES=1098040 PRODUCT_EDGES=6331122\nPASS=26 FAIL=6\nRESULT=FAIL\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T062257Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

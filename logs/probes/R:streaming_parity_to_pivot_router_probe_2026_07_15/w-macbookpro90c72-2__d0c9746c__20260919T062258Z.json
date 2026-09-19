@@ -1,0 +1,31 @@
+{
+ "task": "R:streaming_parity_to_pivot_router_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "streaming",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/streaming_parity_to_pivot_router_probe_2026_07_15.py",
+ "seed": 98978,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0c9746c",
+ "started_utc": "20260919T062258Z",
+ "elapsed_s": 65.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8868ece8e187edd58a95de5fba131410ce27f3439930d35de540c8fe782dd58f",
+ "stdout_tail": "PATHS (177, 201) 378\nSMOKE True (624, 932, 2, 7504, 623, {})\nRESULT STREAMING_PARITY_TO_PIVOT_CONTROLLER\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T062403Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

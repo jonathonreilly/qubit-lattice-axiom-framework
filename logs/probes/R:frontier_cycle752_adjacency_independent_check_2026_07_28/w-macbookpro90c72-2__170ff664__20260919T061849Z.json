@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle752_adjacency_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle752_adjacency_independent_check_2026_07_28.py",
+ "seed": 98729,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061849Z",
+ "elapsed_s": 46.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1d1db78bf41088cc5533c7338b1818f3fda2e3151d8e7ecd044890684ff246f2",
+ "stdout_tail": "r_hits_per_class_histogram\":{\"0\":1535,\"1\":511},\"cases_exhausted\":22506,\"classes_passing_all_adjacent_starts\":0,\"compiled_refutation_witness\":{\"allocator_correct\":true,\"clean_return_and_literal_inverse\":true,\"compiled_gate_count\":6668,\"declared_route2_relaxed_invariant_rows\":0,\"edge_orientation_mask\":2,\"fixed_station_Q_order\":[1,0,10,9,8,7,6,5,4,3,2],\"original_six_term_invariant_rows\":22,\"output_sha256\":\"3513b562570c8ee4723fad82900dea66e6df5933fe40ac5e06a85bc513fea213\",\"position\":0,\"refutes_primary_scoped_no_go\":true,\"relaxed_invariant_rows\":0,\"runtime_occupancy_branch\":false,\"strict_invariant_rows\":22,\"strictly_lawful\":false,\"word_multiset_matches_primary\":true},\"declared_relaxed_law_allocator_correct_cases\":511,\"expected_orientation_classes\":2046,\"first_relaxed_allocator_hit\":{\"edge_orientation_mask\":2,\"fixed_station_Q_order\":[1,0,10,9,8,7,6,5,4,3,2],\"output_sha256\":\"3513b562570c8ee4723fad82900dea66e6df5933fe40ac5e06a85bc513fea213\",\"position\":0,\"relaxed_invariant_rows\":0,\"strict_invariant_rows\":22,\"strictly_lawful\":false},\"maximum_allocator_hits_in_any_class\":1,\"model\":\"all acyclic orientations of the 11 adjacent ring edges induced by fixed global station orders\",\"orientation_classes_exhausted\":2046,\"strict_law_cases\":0,\"topological_realization_failures\":0},\"scope\":\"only the enumerated Cycle-752 five-block schedules and fixed-Q-order equivalence classes on the held adjacent two-token ring-11 fixture\",\"v1_missing_premise_claim_refuted\":true,\"witness_verification_pass\":true}}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061935Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle752_adjacency_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

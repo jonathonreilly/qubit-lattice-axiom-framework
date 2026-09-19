@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle752_lawful_adjacency_attempt_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py",
+ "seed": 98775,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061935Z",
+ "elapsed_s": 8.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9a6d33f7bf0cc439d6f0d9676e79eead0808da63a0f5daa1eae1a8db39bdea64",
+ "stdout_tail": "red_alternative\",\"name\":\"odd_then_even\",\"order\":[1,3,5,7,9,0,2,4,6,8,10],\"passes_checker_witness_level\":true,\"passes_full_adjacent_family\":false},{\"allocator_correct_cases\":0,\"allocator_correct_positions\":[],\"family\":\"structured_alternative\",\"name\":\"witness_reverse\",\"order\":[2,3,4,5,6,7,8,9,10,0,1],\"passes_checker_witness_level\":false,\"passes_full_adjacent_family\":false},{\"allocator_correct_cases\":0,\"allocator_correct_positions\":[],\"family\":\"structured_alternative\",\"name\":\"zigzag\",\"order\":[0,10,1,9,2,8,3,7,4,6,5],\"passes_checker_witness_level\":false,\"passes_full_adjacent_family\":false}]},\"total_orders_passing_full_adjacent_family\":0,\"total_orders_sampled\":17,\"total_orders_with_any_adjacent_success\":10,\"working_criterion\":\"all 11 adjacent starts return the exact frozen two-allocator output\"},\"route\":3,\"separated_sector_anchor\":{\"all_separated_configs_reproduce_landed_behavior_byte_exact\":true,\"allocator_correctness_failures\":0,\"cases\":44,\"comparison_encoding\":\"byte-exact bytes(tuple-of-bits)\",\"distance_domain\":[2,3,4,5],\"expected_cases\":44,\"expected_landed_step_comparisons\":484,\"final_byte_mismatches\":0,\"landed_step_byte_mismatches\":0,\"landed_step_comparisons\":484,\"literal_reverse_failures\":0,\"original_six_term_invariant_rows\":0,\"reference\":\"Cycle-735 landed K.controller_word behavior under the same held two-bank fixture\",\"register_return_failures\":0,\"relaxed_invariant_rows\":0,\"steps_per_orbit\":11}},\"runtime_seconds\":7.259314,\"terminal\":\"CYCLE752_V2_ROUTE3_FULL_BATTERY_PASS\"}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061943Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_N' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_N'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle752_lawful_adjacency_attempt_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

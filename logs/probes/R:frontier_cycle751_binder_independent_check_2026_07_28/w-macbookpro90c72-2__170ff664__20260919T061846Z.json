@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle751_binder_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle751_binder_independent_check_2026_07_28.py",
+ "seed": 98726,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061846Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e9bc193ceae1bfb38d60a59f6360142f9214e97acedbe58c720b1847500b006b",
+ "stdout_tail": "undary\":{\"finite_indicator_only\":true,\"framework_binder_derived\":false,\"physical_write_claimed\":false,\"record_formation_claimed\":false},\"checks\":{\"A_complete_declared_input_closure\":true,\"B_primary_source_boundary_and_independence\":true,\"C_independent_closed_form_recount\":true,\"D_exhaustive_indicator_identity\":true,\"E_independent_Cycle610_decision_tree\":true,\"F_primary_black_box\":true,\"OUTPUT_stdout_under_150KB\":true},\"checks_failed\":0,\"checks_passed\":7,\"claim\":\"independent finite net-endpoint-delta reconstruction\",\"cycle\":751,\"indicator_identity\":{\"mismatches\":0,\"pass\":true,\"rows\":64},\"pass\":true,\"primary_black_box\":{\"pass\":true,\"returncode\":0,\"stderr\":\"\",\"stdout_bytes\":11765,\"terminal_line_matches\":true},\"recount\":{\"by_family\":{\"2\":{\"counts\":[32,22,18,17],\"events\":4,\"sha256\":\"c0a5d59ad10493ad978bd993486e206583cd7f48485d8eb54336d0bf8cffed9d\",\"total\":89},\"5\":{\"counts\":[32,22,18,17,22,19,22,19,26,21],\"events\":10,\"sha256\":\"9d0fa6d3632b92391841cbdc2951c33a2bf564a661b0fbe8943ddc312f986019\",\"total\":218},\"12\":{\"counts\":[32,22,18,17,22,19,22,19,26,21,22,19,26,21,26,21,30,22,18,17,22,19,22,19],\"events\":24,\"sha256\":\"5651dab71903be51fb2bfc4bbb34d0211f3f220a3ce62f9b5332de89bddd7318\",\"total\":522}},\"events\":38,\"maximum\":32,\"minimum\":17,\"nonempty\":38,\"pass\":true,\"total\":829},\"report_sha256\":\"ecbf486e6e9bafac19cce1f6a7b650abd2035c912ec4fafe73909387a0e7fb53\",\"runtime_seconds\":1.8163323340704665,\"terminal\":\"CYCLE751_NET_DELTA_INDEPENDENT_CHECK_PASS\"}\nCYCLE751_NET_DELTA_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061849Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

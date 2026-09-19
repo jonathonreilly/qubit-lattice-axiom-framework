@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle751_binder_formation_attempt_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle751_binder_formation_attempt_2026_07_28.py",
+ "seed": 98724,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061844Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "540f215ccde148872f33a0938e0616bd516c2a8bf925f00e82a1c43cacc53ea9",
+ "stdout_tail": "a5d59ad10493ad978bd993486e206583cd7f48485d8eb54336d0bf8cffed9d\",\"events\":4,\"maximum_support\":32,\"minimum_support\":17,\"program_stations\":11,\"support_cardinalities\":[32,22,18,17],\"total_endpoint_changes\":89},\"5\":{\"count_sha256\":\"9d0fa6d3632b92391841cbdc2951c33a2bf564a661b0fbe8943ddc312f986019\",\"events\":10,\"maximum_support\":32,\"minimum_support\":17,\"program_stations\":35,\"support_cardinalities\":[32,22,18,17,22,19,22,19,26,21],\"total_endpoint_changes\":218},\"12\":{\"count_sha256\":\"5651dab71903be51fb2bfc4bbb34d0211f3f220a3ce62f9b5332de89bddd7318\",\"events\":24,\"maximum_support\":32,\"minimum_support\":17,\"program_stations\":91,\"support_cardinalities\":[32,22,18,17,22,19,22,19,26,21,22,19,26,21,26,21,30,22,18,17,22,19,22,19],\"total_endpoint_changes\":522}},\"events\":38,\"maximum_support\":32,\"minimum_support\":17,\"net_delta_nonempty_ones\":38,\"pass\":true,\"total_endpoint_changes\":829},\"checks\":{\"A_note_contract\":true,\"B_complete_declared_input_closure\":true,\"C_upstream_literal_one_API_shape\":true,\"D_controller_trajectory_integrity\":true,\"E_exact_endpoint_delta_census\":true,\"F_conditional_API_adapter\":true,\"G_honest_boundary\":true,\"OUTPUT_stdout_under_150KB\":true},\"checks_failed\":0,\"checks_passed\":8,\"claim\":\"finite net-endpoint-delta census and conditional API adapter\",\"cycle\":751,\"pass\":true,\"report_sha256\":\"3ff59d7c1c95bfb7164693faac89d8760a6f30a7d10a814a35cc3e763cfba922\",\"runtime_seconds\":1.2080992079572752,\"terminal\":\"CYCLE751_NET_DELTA_FINITE_ADAPTER_PASS\"}\nCYCLE751_NET_DELTA_FINITE_ADAPTER_PASS\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061846Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle751_binder_formation_attempt_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

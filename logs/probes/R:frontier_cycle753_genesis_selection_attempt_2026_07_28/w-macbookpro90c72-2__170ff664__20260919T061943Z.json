@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle753_genesis_selection_attempt_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle753_genesis_selection_attempt_2026_07_28.py",
+ "seed": 98783,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "170ff664",
+ "started_utc": "20260919T061943Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c72d1b72bb34b84c2796e922c05683db86fe52016e77c1afa17af4fcaa5e5322",
+ "stdout_tail": ":31766083475554533889333676095260538518,\"status\":\"meta coordinate only\"},\"parent_provenance_sha256\":{\"docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md\":\"e223029cdef9681f3d489caec3ff4d72534d02b85187a0aa0f6b1332c9f63985\",\"scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py\":\"d9770e8fee349f1dc8b7d0344ba5dca0a7a9768a072ff93644c65ad38894043d\"},\"pass\":true,\"report_sha256\":\"179c50c4edaa6f51f37652c21637a0ef4d3b4173004c66f5f7948fd75a5b339b\",\"runtime_seconds\":0.002459,\"scientific_authority\":\"none\",\"supplied_scope\":{\"alphabet\":\"X(i) and ordered CNOT(control,target), control != target, at every register position\",\"blank_state\":0,\"cost\":\"one unit per X or CNOT\",\"equivalence\":\"adjacent swaps of semantically commuting gates\",\"landing_rule\":\"the final bit string must equal the supplied target exactly\",\"register_width\":5979,\"target_support\":[6,40,109,110,111,112,113,114,116,117,118,119,126,127,128,129,257,258,259,260,5815,5949,5951,5953,5955,5957,5969]},\"terminal\":\"CYCLE753_FIXED_TARGET_X_CNOT_COUNT_PASS\",\"theorem\":{\"class_count\":42277452950578284263485622772148731904,\"class_count_crosscheck\":42277452950578284263485622772148731904,\"minimum_length\":27,\"raw_minimum_word_count\":118567477908254066625631346005619254518349824000000000000,\"raw_recurrence_factors\":[27,52,75,96,115,132,147,160,171,180,187,192,195,196,195,192,187,180,171,160,147,132,115,96,75,52,27],\"raw_word_count_crosscheck\":118567477908254066625631346005619254518349824000000000000}}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T061943Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/FIXED_TARGET_X_CNOT_PREPARATION_COUNT_CYCLE753_BOUND' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/FIXED_TARGET_X_CNOT_PREPARATION_COUNT_CYCLE753_BOUND'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle753_genesis_selection_attempt_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:stale_frames_archive_firewall_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "stale",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/stale_frames_archive_firewall_2026_06_16.py",
+ "seed": 98805,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0c9746c",
+ "started_utc": "20260919T062005Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ef111da40b8adb2515ab7db4a269e53c3b34a57f35daff1747ea92e60a7cd962",
+ "stdout_tail": "PASS: stale-frame archive firewall holds\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T062005Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

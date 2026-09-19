@@ -1,0 +1,35 @@
+{
+ "task": "R:strict_free_star_gibbs_cube_record_flux_boundary_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "strict",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/strict_free_star_gibbs_cube_record_flux_boundary_2026_09_02.py",
+ "seed": 99062,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0c9746c",
+ "started_utc": "20260919T062422Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4e21cd8c97231f6d9321342f1683f5a9b677f5e3fa7d07243bc25d26ee890395",
+ "stdout_tail": "n the same carrier :: [H,n0] is nonzero, so a decoupled pointer or post-write gate is required\nPASS one common CP instrument assigns every star weight to exclusive branches :: weights=736 blank/0/1 distinct; gated site and pointer persist\nPASS the cube actions have commuting versus Clifford generators and opposite face flux :: signed NN adjacency lift=True; K0_flux=(1, 1, 1, 1, 1, 1) K1_flux=(-1, -1, -1, -1, -1, -1)\nPASS one common body-diagonal target gives a sharp Record transcript separator :: computed p_target=(1,0); pointer weights=(0, 1, 1, 0)\nPASS all 24 proper rotations preserve the action/protocol family up to gauge :: rotations=24 K0 exact, K1 gauge-equivalent, opposite_pairs=8\nPASS the honest isolated-cube finite-volume Gibbs law detects loop flux :: one-particle kernels and full-Fock empty-Record probability split at beta^4\nPASS closing the tree through one cubic plaquette restores phase sensitivity :: (h_flux+^4)_00=8; (h_flux-^4)_00=4\nPASS N1-N8 discipline and conditional claim custody are explicit :: narrow star-diagonal pruning; cube escape retained; zero score/obligation claim\nper_element: exact two-site CAR, edge weights, and face signs certified\nper_site: all 729 partial neighboring Record shells certified\nper_mode: strict quadratic hopping and same-carrier nonpermanence certified\nper_block: star blindness, DLR fork, writer, and cube separator certified\nlattice_wide: global edge-factor escape separated from finite-volume quantum Gibbs\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T062423Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

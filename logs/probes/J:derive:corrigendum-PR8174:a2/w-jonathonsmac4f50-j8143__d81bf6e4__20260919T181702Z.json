@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:corrigendum-PR8174:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j8143",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/corrigendum-PR8174/w-jonathonsmac4f50-j8143/check.py",
+ "seed": 41822,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d81bf6e4",
+ "started_utc": "20260919T181702Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (ATTEMPT.md S1-S5; finite facts CHECKED here) corrigendum for PR #8174: T1(a) 'd_1 <= max(d_2, d_3)' holds exactly on {p >= q} U {g >= 0}, g = p^2 r + pq^2 + pqr + 2pr^2 - q^3 - 4r^3 (d_2 - d_1 has the sign of p - q, d_3 - d_1 that of g); it fails at (1,2,1) (12/13 > 9/10) and on 127 of {1..7}^3, all with q > p; T1(b)'s coupling is repaired for every positive weight triple by eps_2 := max(d_1, d_2, d_3), which equals max(d_2, d_3) whenever p >= q; every weight point of blocks 30-33 has p >= q, so their certificates, ceilings and stakes are unaffected; the lines to change are block 30's T1 statement, proof, eps_2 definitions and runner B2"
+ },
+ "review": "check.py prints 5 ok lines and SUMMARY: PROVED - the closed forms against the menu's conditional, the exact sign identities (d_2 - d_1 ~ p - q, d_3 - d_1 ~ g), the (1,2,1) counterexample with the census 127/194 exactly equal to {p < q, g < 0}, the reachable coupling failure, the repaired eps_2 = max(d_1, d_2, d_3) on all 216 triples, and p >= q at every weight point of blocks 30-33; this matches the task's corrected statement, verdict table and line list.",
+ "what": "DERIVATION, independent attempt 2 of 2: Corrigendum packet for PR #8174. A probe found and another model family confirmed this defect in PR #8174: T1(a) 'd_1 <= max(d_2, d_3)' fails for general positive weights (e.g. (1,2,1): 12/13 > 9/10; 127 integer triples with coordinates 1..7), so T1(b)'s identification is false in general. TASK: (a) the minimal corrected statement (the largest domain on which the original holds, or the corrected formula), proved; (b) every later statement in that note AND in other notes of the campaign that uses the defective one (search the PR branches of blocks 12-35: PRs #8146-#8180), with a verdict for each: unaffected / holds on the corrected domain / needs its own repair; (c) the exact lines of the note and runner that must change. check.py verifies the corrected statement exactly and exhibits the original's failure. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/corrigendum-PR8174/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/corrigendum-PR8174/<name>/check.py\"",
+ "stdout_sha256": "47c4939b97e89056cd6adb30e9e6f7932bee79f072589b006d5f926fe1592e01",
+ "stdout_tail": "ur lines' results are unaffected; on the whole lines (p, 1, 1), (p, 1, 2), (p, 1, 3) for p >= 1 and (p, 2, 4) for p >= 2 the same holds by A2\n==========================================================================================\nSUMMARY: PROVED (ATTEMPT.md S1-S5; finite facts CHECKED here) corrigendum for PR #8174: T1(a) 'd_1 <= max(d_2, d_3)' holds exactly on {p >= q} U {g >= 0}, g = p^2 r + pq^2 + pqr + 2pr^2 - q^3 - 4r^3 (d_2 - d_1 has the sign of p - q, d_3 - d_1 that of g); it fails at (1,2,1) (12/13 > 9/10) and on 127 of {1..7}^3, all with q > p; T1(b)'s coupling is repaired for every positive weight triple by eps_2 := max(d_1, d_2, d_3), which equals max(d_2, d_3) whenever p >= q; every weight point of blocks 30-33 has p >= q, so their certificates, ceilings and stakes are unaffected; the lines to change are block 30's T1 statement, proof, eps_2 definitions and runner B2\nHIT: corrigendum for PR #8174: T1(a) 'd_1 <= max(d_2, d_3)' holds exactly on {p >= q} U {g >= 0}, g = p^2 r + pq^2 + pqr + 2pr^2 - q^3 - 4r^3 (d_2 - d_1 has the sign of p - q, d_3 - d_1 that of g); it fails at (1,2,1) (12/13 > 9/10) and on 127 of {1..7}^3, all with q > p; T1(b)'s coupling is repaired for every positive weight triple by eps_2 := max(d_1, d_2, d_3), which equals max(d_2, d_3) whenever p >= q; every weight point of blocks 30-33 has p >= q, so their certificates, ceilings and stakes are unaffected; the lines to change are block 30's T1 statement, proof, eps_2 definitions and runner B2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8143",
+  "at_utc": "20260919T181712Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "claim for referee: corrigendum for PR #8174 - T1(a) holds exactly on {p >= q} U {g >= 0} (g = p^2 r + pq^2 + pqr + 2pr^2 - q^3 - 4r^3); fails at (1,2,1) and 127 of {1..7}^3 (q > p); T1(b) repaired by eps_2 = max(d_1,d_2,d_3) (= max(d_2,d_3) for p >= q); blocks 30-33 certificates unaffected (all p >= q); I (same family) confirmed the defect as #8400, disclosed",
+  "by": "w-jonathonsmac4f50-j8143",
+  "at_utc": "20260919T181712Z"
+ }
+}

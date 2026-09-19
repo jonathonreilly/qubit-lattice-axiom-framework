@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8168",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block25-format",
+ "worker": "w-macbookpro90c72-j303b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8168/quantifier_extra_couplings_heights.py",
+ "seed": 88909,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0ef67be9",
+ "started_utc": "20260919T033509Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - T0's 16-triple max equals max(d1,d2,d3) at extra couplings including the four T7 thresholds and fractional weights, for every value a; T7(b) p\u2265p0 holds on extra integers and extra (q,r) lines stay monotone through their least p; T5's recursion stays under the super-solution through height 3, at extra interior points of the bar-box, and in the truncated series through 8 edges; T6's (391/100)\u03b5 \u2264 3/10^5 and \u03b5/t^3 \u2264 s hold on a grid of \u03b5 \u2264 7/10^6; T2 increments and fork Size=1 hold at extra sites"
+ },
+ "review": "Quantifier-scope attack on T0/T5/T6/T7: extra couplings including the four T7 thresholds and fractional weights, all six values a, extra p\u2265p0 and extra (q,r) lines, T5 heights 1-3 plus the truncated series through 8 edges and extra interior points of the super-solution box, and a grid of \u03b5\u2264\u03b50, plus T2 at extra sites; every stated inequality holds in range, no HIT.",
+ "what": "PR #8168 ([physics-loop] admissibility-induced-law block25 \u2014 bounded_t): attack ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916; git show origin/physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916:<note>. Create probes/work/pr8168/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8168/<script>.py\"",
+ "stdout_sha256": "c83db05d7b1bb25ec4e363536509bb8b6767b057866bccea0be5e7d1b5111eed",
+ "stdout_tail": " D\u2264Dbar True U\u2264Ubar True F\u2264Fbar True R_h<391/100 True\nT5 height 3: D\u2264Dbar True U\u2264Ubar True F\u2264Fbar True R_h<391/100 True\nT5 map at (1,1,1) inside_box=True: D'\u2264Dbar True U'\u2264Ubar True F'\u2264Fbar True\nT5 map at (2,2,2) inside_box=True: D'\u2264Dbar True U'\u2264Ubar True F'\u2264Fbar True\nT5 map at (4290957526219/2000000000000,764547476033/500000000000,1193741493637/500000000000) inside_box=True: D'\u2264Dbar True U'\u2264Ubar True F'\u2264Fbar True\nT5 map at (3290957526219/1000000000000,514547476033/250000000000,943741493637/250000000000) inside_box=True: D'\u2264Dbar True U'\u2264Ubar True F'\u2264Fbar True\nT5 map at (3,2,3) inside_box=True: D'\u2264Dbar True U'\u2264Ubar True F'\u2264Fbar True\nT5 truncated R through a,f \u2264 8: 81 monomials, 327248180404432438453 typed trees, partial=173402619659937703568202175726251867641137604492194591229704831/55504185584545817387736470971234520679880000000000000000000000 \u2264 Rbar True\nOK T2(a): increments 1/3-\u03b4_jk at 5 sites\nOK T2(b): Size=1 and Span\u22641 on 5\u00d76 fork pairs\nSUMMARY: pattern has no purchase on this note - T0's 16-triple max equals max(d1,d2,d3) at extra couplings including the four T7 thresholds and fractional weights, for every value a; T7(b) p\u2265p0 holds on extra integers and extra (q,r) lines stay monotone through their least p; T5's recursion stays under the super-solution through height 3, at extra interior points of the bar-box, and in the truncated series through 8 edges; T6's (391/100)\u03b5 \u2264 3/10^5 and \u03b5/t^3 \u2264 s hold on a grid of \u03b5 \u2264 7/10^6; T2 increments and fork Size=1 hold at extra sites\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j303b",
+  "at_utc": "20260919T033509Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

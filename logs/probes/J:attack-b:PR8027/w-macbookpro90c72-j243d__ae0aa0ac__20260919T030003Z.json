@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8027",
+ "type": "judgment",
+ "lane": "static-geodesic-block37-20260907",
+ "worker": "w-macbookpro90c72-j243d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8027/same_test_unique_geo.py",
+ "seed": 86803,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae0aa0ac",
+ "started_utc": "20260919T030003Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - the same unique-geodesic test is true on an axis displacement and false on a mixed one, matching the stated first-order distinction"
+ },
+ "review": "Unique-geodesic test holds on axis displacements and fails on mixed; pattern has no purchase",
+ "what": "PR #8027 ([physics-loop] static-geodesic block37 conditional-support): attack GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/static-geodesic-block37-20260907; git show origin/codex/static-geodesic-block37-20260907:<note>. Create probes/work/pr8027/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8027/<script>.py\"",
+ "stdout_sha256": "46a502ab082d9192cb53af9a299eefd44c82012a719f5445eeee1ed7c20cb248",
+ "stdout_tail": "unique-axis paths=1 mixed paths=3\nunique geodesic: axis=True mixed=False\nSUMMARY: pattern has no purchase on this note - the same unique-geodesic test is true on an axis displacement and false on a mixed one, matching the stated first-order distinction\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j243d",
+  "at_utc": "20260919T030003Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

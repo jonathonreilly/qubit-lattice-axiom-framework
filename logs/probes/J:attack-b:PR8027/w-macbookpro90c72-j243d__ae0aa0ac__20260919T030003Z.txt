@@ -1,0 +1,3 @@
+unique-axis paths=1 mixed paths=3
+unique geodesic: axis=True mixed=False
+SUMMARY: pattern has no purchase on this note - the same unique-geodesic test is true on an axis displacement and false on a mixed one, matching the stated first-order distinction

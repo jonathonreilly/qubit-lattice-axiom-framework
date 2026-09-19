@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8148",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block14-format",
+ "worker": "w-macbookpro90c72-j692a",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8148/plaquette_one_sixth_factors.py",
+ "seed": 89625,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab66dca8",
+ "started_utc": "20260919T034705Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - plaquette Haar 1/6, diagonal-first 1/36=(1/6)^2, start-average 1/4 and G=(1-p)d/6+p d^2/36 recompute exactly at (3,1,2) (uniform ratios 152/169, 136/121, 1); not the known R3 uniform-distance HIT"
+ },
+ "review": "Brute-force of R4's 1/6, 1/36=(1/6)^2, 1/4 and G=(1-p)d/6+p d^2/36 on the plaquette at (3,1,2) matches the stated uniform ratios 152/169, 136/121, 1; no Fourier conventions; not the known R3 distance HIT.",
+ "what": "PR #8148 ([physics-loop] admissibility-induced-law block14 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915:<note>. Create probes/work/pr8148/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8148/<script>.py\"",
+ "stdout_sha256": "fc6f392eebc55d7f3549390573ae28cfa36f8918251c6e3d55124c5327c156e2",
+ "stdout_tail": "d_same=72/13 stated 72/13=72/13 eq=True\nd_anti=72/11 stated 72/11=72/11 eq=True\nd_orth=6 stated 6 eq=True\nuniform plaquette mass sums to 1\nP1 \u03bc=19/438048 \u03a0K=1/20736 \u03bc/\u03a0K=152/169\nP3 \u03bc=17/34848 \u03a0K=1/2304 \u03bc/\u03a0K=136/121\nP4 \u03bc=1/1728 \u03a0K=1/1728 \u03bc/\u03a0K=1\nP1: brute 152/169  G(1/3,d)=152/169  stated 152/169\nP3: brute 136/121  G(1/3,d)=136/121  stated 136/121\nP4: brute 1  G(1/3,d)=1  stated 1\npath order (0,1,2,3) on P1: sequential=1/22464 written (1/6)\u03a0K d=1/22464\ndiag-first (0,2,1,3) on P1: sequential=1/24336 written (1/36)\u03a0K d^2=1/24336\n(1/4)\u03a3 G for P1 = 152/169 vs brute \u03bc/\u03a0K 152/169\nSUMMARY: pattern has no purchase on this note - plaquette Haar 1/6, diagonal-first 1/36=(1/6)^2, start-average 1/4 and G=(1-p)d/6+p d^2/36 recompute exactly at (3,1,2) (uniform ratios 152/169, 136/121, 1); not the known R3 uniform-distance HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j692a",
+  "at_utc": "20260919T034705Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

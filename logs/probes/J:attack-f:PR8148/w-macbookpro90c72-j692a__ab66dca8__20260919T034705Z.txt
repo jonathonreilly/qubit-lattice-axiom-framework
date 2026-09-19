@@ -1,0 +1,14 @@
+d_same=72/13 stated 72/13=72/13 eq=True
+d_anti=72/11 stated 72/11=72/11 eq=True
+d_orth=6 stated 6 eq=True
+uniform plaquette mass sums to 1
+P1 μ=19/438048 ΠK=1/20736 μ/ΠK=152/169
+P3 μ=17/34848 ΠK=1/2304 μ/ΠK=136/121
+P4 μ=1/1728 ΠK=1/1728 μ/ΠK=1
+P1: brute 152/169  G(1/3,d)=152/169  stated 152/169
+P3: brute 136/121  G(1/3,d)=136/121  stated 136/121
+P4: brute 1  G(1/3,d)=1  stated 1
+path order (0,1,2,3) on P1: sequential=1/22464 written (1/6)ΠK d=1/22464
+diag-first (0,2,1,3) on P1: sequential=1/24336 written (1/36)ΠK d^2=1/24336
+(1/4)Σ G for P1 = 152/169 vs brute μ/ΠK 152/169
+SUMMARY: pattern has no purchase on this note - plaquette Haar 1/6, diagonal-first 1/36=(1/6)^2, start-average 1/4 and G=(1-p)d/6+p d^2/36 recompute exactly at (3,1,2) (uniform ratios 152/169, 136/121, 1); not the known R3 uniform-distance HIT

@@ -1,0 +1,7 @@
+CHECK G2: OK (G_2=25/24, values {Fraction(3, 4), Fraction(1, 1)})
+CHECK detM: OK (det M=1/256)
+CHECK eigsM: OK
+CHECK newton: OK (1/(4 pi sqrt(det M)) = 4/pi)
+CHECK cone: OK (linear response of backward formation is supported on the forward cone, not 1/r on the whole plane)
+SUMMARY: PARTIAL 3+1 return sum G_2=25/24; det M=1/256 with eigs 1/16, 1/4, 1/4 so the continuum equal-level kernel is (4 sigma^2 / pi) / sqrt(x^T M^{-1} x); causal response lives on the forward cone, not the covariance's 1/r. LRO not proved. (5/5 checks passed)
+HIT: G_2=25/24; det M=1/256; continuum prefactor 4 sigma^2 / pi; response is a forward cone

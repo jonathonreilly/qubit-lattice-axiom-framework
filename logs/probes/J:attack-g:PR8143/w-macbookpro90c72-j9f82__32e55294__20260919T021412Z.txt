@@ -1,0 +1,9 @@
+L=1 |C|=6 (1+5L=6) |G|=23 (6|C|=36) |T|=3 |seq|=3
+L=2 |C|=11 (1+5L=11) |G|=39 (6|C|=66) |T|=6 |seq|=6
+L=3 |C|=16 (1+5L=16) |G|=55 (6|C|=96) |T|=9 |seq|=9
+L=4 |C|=21 (1+5L=21) |G|=71 (6|C|=126) |T|=12 |seq|=12
+L=5 |C|=26 (1+5L=26) |G|=87 (6|C|=156) |T|=15 |seq|=15
+L=6 |C|=31 (1+5L=31) |G|=103 (6|C|=186) |T|=18 |seq|=18
+L=7 |C|=36 (1+5L=36) |G|=119 (6|C|=216) |T|=21 |seq|=21
+L=8 |C|=41 (1+5L=41) |G|=135 (6|C|=246) |T|=24 |seq|=24
+SUMMARY: pattern has no purchase on this note - for L=1..8 the listed seed sites are distinct with |C|=1+5L, |G|<=6|C|, and sequence (5) is exactly the 3L axis sites T in the stated e,c,a order

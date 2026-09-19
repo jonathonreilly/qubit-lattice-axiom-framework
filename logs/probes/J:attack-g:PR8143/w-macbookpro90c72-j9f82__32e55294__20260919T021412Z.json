@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8143",
+ "type": "judgment",
+ "lane": "full-domain-projective-corridor-20260915",
+ "worker": "w-macbookpro90c72-j9f82",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8143/seed_geometry_count.py",
+ "seed": 84052,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32e55294",
+ "started_utc": "20260919T021412Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - for L=1..8 the listed seed sites are distinct with |C|=1+5L, |G|<=6|C|, and sequence (5) is exactly the 3L axis sites T in the stated e,c,a order"
+ },
+ "review": "Section 3 |C|=1+5L, |G|<=6|C|, sequence (5)=T of length 3L all hold for L=1..8; pattern has no purchase",
+ "what": "PR #8143 ([physics-loop] full-domain-projective-corridor: bounded_theo): attack FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/full-domain-projective-corridor-20260915; git show origin/physics-loop/full-domain-projective-corridor-20260915:<note>. Create probes/work/pr8143/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8143/<script>.py\"",
+ "stdout_sha256": "bc1674a785dffa617a2f77a6bcde3ee355c92e54816cc1f1bcfb2bb9ebece661",
+ "stdout_tail": "L=1 |C|=6 (1+5L=6) |G|=23 (6|C|=36) |T|=3 |seq|=3\nL=2 |C|=11 (1+5L=11) |G|=39 (6|C|=66) |T|=6 |seq|=6\nL=3 |C|=16 (1+5L=16) |G|=55 (6|C|=96) |T|=9 |seq|=9\nL=4 |C|=21 (1+5L=21) |G|=71 (6|C|=126) |T|=12 |seq|=12\nL=5 |C|=26 (1+5L=26) |G|=87 (6|C|=156) |T|=15 |seq|=15\nL=6 |C|=31 (1+5L=31) |G|=103 (6|C|=186) |T|=18 |seq|=18\nL=7 |C|=36 (1+5L=36) |G|=119 (6|C|=216) |T|=21 |seq|=21\nL=8 |C|=41 (1+5L=41) |G|=135 (6|C|=246) |T|=24 |seq|=24\nSUMMARY: pattern has no purchase on this note - for L=1..8 the listed seed sites are distinct with |C|=1+5L, |G|<=6|C|, and sequence (5) is exactly the 3L axis sites T in the stated e,c,a order\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9f82",
+  "at_utc": "20260919T021412Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

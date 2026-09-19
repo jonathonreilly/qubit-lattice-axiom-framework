@@ -1,0 +1,5 @@
+PASS R1: C = 7 sigma^2/(2E(1 - E/14))
+PASS R2: truncated star: 13/72 (s2 = +z), 1/6 (s2 = +y); independent of s1 for every s1, s2: True
+PASS R3: light-cone stencil: 39/188 (s2 = +z), 169/866 (s2 = +y) - range 2; static nearest-neighbour conditional {Fraction(1, 4)}
+HIT: confirmed - lightcone-formation a4: the light-cone Gibbs law pi ~ prod Z(S_x) has a range-2 specification (on the 3-site path at (3,1,2), P(s0 = +z | s1 = +z) is 39/188 for s2 = +z and 169/866 for s2 = +y, against the static 1/4 for every s2), so block 19's nearest-neighbour RP/IR does not transfer; C = 7/(2E(1 - E/14)). Correction: the attempt's 13/72 and 1/6 are the truncated star's values (site omitted), where the conditional of s0 does not depend on s1 at all
+SUMMARY: confirmed with corrected numbers for the light-cone stencil; the range-2 conclusion holds for both stencils

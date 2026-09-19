@@ -1,0 +1,5 @@
+Z1=p+q+4r is the constant eigenvalue: True
+P_odd (dim 3): eigenvalue p-q: True
+P_even (dim 2): eigenvalue p+q-2r: True
+TV=(1/2)Σ|μ-ν|: TV=0 on equals, TV=1 on distinct point masses: True
+SUMMARY: pattern has no purchase on this note: Z1=p+q+4r, φ-spectrum (1, p-q, p+q-2r) with dims 1+3+2, and TV 1/2 all recompute on the six-axis menu; not the known Q4 triangle HIT

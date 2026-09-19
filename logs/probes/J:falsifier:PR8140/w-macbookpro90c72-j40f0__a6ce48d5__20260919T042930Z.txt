@@ -1,0 +1,7 @@
+box (1, 1, 1): E=12 P=6 V=8 nonzero(d1 d0)=0
+box (2, 1, 1): E=20 P=11 V=12 nonzero(d1 d0)=0
+box (2, 2, 1): E=33 P=20 V=18 nonzero(d1 d0)=0
+box (2, 2, 2): E=54 P=36 V=27 nonzero(d1 d0)=0
+box (3, 2, 2): E=75 P=52 V=36 nonzero(d1 d0)=0
+box (3, 3, 2): E=104 P=75 V=48 nonzero(d1 d0)=0
+SUMMARY: dd=0 falsifier did not fire: d1 d0=0 on boxes 1x1x1 through 3x3x2, beyond a single cube

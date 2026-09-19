@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR8140",
+ "type": "judgment",
+ "lane": "clock-static-charge-20260915",
+ "worker": "w-macbookpro90c72-j40f0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8140/falsifier_dd_zero_beyond.py",
+ "seed": 92170,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a6ce48d5",
+ "started_utc": "20260919T042930Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dd=0 falsifier did not fire: d1 d0=0 on boxes 1x1x1 through 3x3x2, beyond a single cube"
+ },
+ "review": "d1 d0=0 falsifier did not fire on boxes through 3x3x2, beyond a single cube.",
+ "what": "PR #8140 ([physics-loop] clock-static-charge: bounded_theorem, bounded): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md, FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md ... with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/clock-static-charge-20260915; git show origin/physics-loop/clock-static-charge-20260915:<note>. Create probes/work/pr8140/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8140/<script>.py\"",
+ "stdout_sha256": "feb59955a5a0c7300c2809bfdfd8f3a1eec57b79155d309f693fe8e61b122a62",
+ "stdout_tail": "box (1, 1, 1): E=12 P=6 V=8 nonzero(d1 d0)=0\nbox (2, 1, 1): E=20 P=11 V=12 nonzero(d1 d0)=0\nbox (2, 2, 1): E=33 P=20 V=18 nonzero(d1 d0)=0\nbox (2, 2, 2): E=54 P=36 V=27 nonzero(d1 d0)=0\nbox (3, 2, 2): E=75 P=52 V=36 nonzero(d1 d0)=0\nbox (3, 3, 2): E=104 P=75 V=48 nonzero(d1 d0)=0\nSUMMARY: dd=0 falsifier did not fire: d1 d0=0 on boxes 1x1x1 through 3x3x2, beyond a single cube\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j40f0",
+  "at_utc": "20260919T042942Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

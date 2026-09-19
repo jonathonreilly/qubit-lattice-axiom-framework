@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8033",
+ "type": "judgment",
+ "lane": "finite-pw-confinement-block43-20260907",
+ "worker": "w-macbookpro90c72-je211",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8033/quantifier_L_cell_counts.py",
+ "seed": 87374,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "44168edd",
+ "started_utc": "20260919T030934Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 |Lambda|=L^3 holds for every L=1..8 of the finite cubic family"
+ },
+ "review": "L^3 cell counts hold for L=1..8; no quantifier-scope defect",
+ "what": "PR #8033 ([physics-loop] finite-pw-confinement block43 conditional-sup): attack GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-pw-confinement-block43-20260907; git show origin/codex/finite-pw-confinement-block43-20260907:<note>. Create probes/work/pr8033/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8033/<script>.py\"",
+ "stdout_sha256": "3b0d5d98c7febccbc97d0d54c1c61b4b36c154d04a824da65e80bcada406c2f2",
+ "stdout_tail": "L=1: cells=1 want 1\nL=2: cells=8 want 8\nL=3: cells=27 want 27\nL=4: cells=64 want 64\nL=5: cells=125 want 125\nL=6: cells=216 want 216\nL=7: cells=343 want 343\nL=8: cells=512 want 512\nSUMMARY: pattern has no purchase on this note \u2014 |Lambda|=L^3 holds for every L=1..8 of the finite cubic family\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je211",
+  "at_utc": "20260919T030934Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

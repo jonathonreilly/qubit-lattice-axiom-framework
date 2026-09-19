@@ -1,0 +1,9 @@
+L=1: cells=1 want 1
+L=2: cells=8 want 8
+L=3: cells=27 want 27
+L=4: cells=64 want 64
+L=5: cells=125 want 125
+L=6: cells=216 want 216
+L=7: cells=343 want 343
+L=8: cells=512 want 512
+SUMMARY: pattern has no purchase on this note — |Lambda|=L^3 holds for every L=1..8 of the finite cubic family

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8143",
+ "type": "judgment",
+ "lane": "full-domain-projective-corridor-20260915",
+ "worker": "w-macbookpro90c72-je9cc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8143/no_sampled_evidence.py",
+ "seed": 90483,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8adaa008",
+ "started_utc": "20260919T040123Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAMPLED EVIDENCE (PR #8143): Z\u22653/4, |C|=1+5L, and the rank-one Born chain are exact identities, not sampled never/always; pattern has no purchase"
+ },
+ "review": "Z\u22653/4, |C|=1+5L, and the rank-one Born chain are exact identities with no sampler, so the sampled-evidence pattern has no purchase",
+ "what": "PR #8143 ([physics-loop] full-domain-projective-corridor: bounded_theo): attack FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/full-domain-projective-corridor-20260915; git show origin/physics-loop/full-domain-projective-corridor-20260915:<note>. Create probes/work/pr8143/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8143/<script>.py\"",
+ "stdout_sha256": "46eb956e59fbc280c480e7da687509111a93ac351a79678b75396fb22fbc49c9",
+ "stdout_tail": "Z min at S=1/2 = 3/4\n|C|=1+5L and Erlang 3L are exact for every L\nSUMMARY: SAMPLED EVIDENCE (PR #8143): Z\u22653/4, |C|=1+5L, and the rank-one Born chain are exact identities, not sampled never/always; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je9cc",
+  "at_utc": "20260919T040123Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

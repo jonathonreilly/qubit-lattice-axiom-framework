@@ -1,0 +1,3 @@
+Z min at S=1/2 = 3/4
+|C|=1+5L and Erlang 3L are exact for every L
+SUMMARY: SAMPLED EVIDENCE (PR #8143): Z≥3/4, |C|=1+5L, and the rank-one Born chain are exact identities, not sampled never/always; pattern has no purchase

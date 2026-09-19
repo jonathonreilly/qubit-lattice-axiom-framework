@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR8147",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block13-causal",
+ "worker": "w-macbookpro90c72-je882",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8147/quantifier_Pn_bounds_beyond.py",
+ "seed": 89907,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e18d75e3",
+ "started_utc": "20260919T035147Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - T2's 1/(36n)<=P_n and P_n not above 9\u03c0/(16n) hold for n=1..60; T3's walk identity holds for n=0..12 (past the executed n<=6); T4's binomial stays a probability through n=450; not the known T3(ii) u^2 HIT"
+ },
+ "review": "Quantifier-scope on T2 P_n bounds for n=1..60, T3 walk identity n=0..12 (past executed n<=6), and T4 binomial through n=450; all hold. Not the known T3(ii) u^2 HIT.",
+ "what": "PR #8147 ([physics-loop] admissibility-induced-law block13 \u2014 bounded_t): attack ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915; git show origin/physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915:<note>. Create probes/work/pr8147/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8147/<script>.py\"",
+ "stdout_sha256": "bb60897be7412646776aafc53dc42c5de64df8f06589b31a510fbd6567cb48ef",
+ "stdout_tail": "55055736100206764920635045419506541353755761894697439251819807884785738976753091120627016985825247711343504684557661395484672\nT4 n=401 C(2n,n)/4^n=46951993745807623046969590710010836711525629800979304033363240076510820279052636166023120565274646663480304294104344201643704375733147087996068307481134341670224262887535598216711186022583238274990209705661893257210910170673070895065162205/1667003608219963568519962947680314449286189580578977040099064452941009309454408017880358050217888572685732477648358310111472200413529841270090839013082707511523789394878503639615769571477953506182241254033971650495422687009369115322790969344\nT4 n=450 C(2n,n)/4^n=14046699262912599733243071189857091152196313343974583868400524303337680544486339402671373562100789980317166153401560144032355337143234605806868326683812990539110953422524479315020813809820724480325238993430436825926192494699063790643259838378551364234086747240376438925/528294531135665246352339784916516606518847326036121522127960709026673902556724859474417255887657187894674394993257128678882347559502685537250538978462939576908386683999005084168731517676426441053024232908211188404148028292751561738838396898767036476489538580897737998336\nOK T4: C(2n,n)/4^n in (0,1] at extra n including 401,450\nSUMMARY: pattern has no purchase on this note - T2's 1/(36n)<=P_n and P_n not above 9\u03c0/(16n) hold for n=1..60; T3's walk identity holds for n=0..12 (past the executed n<=6); T4's binomial stays a probability through n=450; not the known T3(ii) u^2 HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je882",
+  "at_utc": "20260919T035147Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

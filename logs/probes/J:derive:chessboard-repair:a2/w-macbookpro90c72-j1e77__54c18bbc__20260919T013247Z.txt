@@ -1,0 +1,12 @@
+CHECK C1a_eigs: OK (eigenvalues {p + q + 4*r: 1, p + q - 2*r: 2, p - q: 3})
+CHECK C1b_psd_samples: OK (PSD samples on/off p>=q and p+q>=2r)
+CHECK C1c_condition: OK (for p,q,r >= 0, W ⪰ 0 iff p>=q and p+q>=2r (p+q+4r>=p+q-2r))
+CHECK C2_d2_S4: OK (cells=4 bonds/cell=2 parities/cell=2 union=8 vs N/2=8)
+CHECK C2_d2_S6: OK (cells=9 bonds/cell=2 parities/cell=2 union=18 vs N/2=18)
+CHECK C2_d3_S4: OK (cells=8 bonds/cell=4 parities/cell=4 union=32 vs N/2=32)
+CHECK C2_d3_S6: OK (cells=27 bonds/cell=4 parities/cell=4 union=108 vs N/2=108)
+CHECK C2_all_transverse_parities_2D: OK (2D cell: 2 = 2^{2-1} parities)
+CHECK C2_all_transverse_parities_3D: OK (3D cell: 4 = 2^{3-1} parities)
+CHECK C2_even_longitudinal: OK (even-corner 2-tiling: every dir-0 bond has even base_0)
+SUMMARY: PARTIAL route (iii) as a disjoint even-corner tiling of 2-cells: each 2-cell contains every transverse-parity class of direction-i bonds (2 in 2D, 4 in 3D) but only those with even longitudinal base; the union is N/2 bonds not D_all (checked (Z/4)^d and (Z/6)^d). W has eigs p+q+4r, p-q (x3), p+q-2r (x2); PSD iff p>=q and p+q>=2r. (10/10 checks passed)
+HIT: 2-cell even tiling covers N/2 direction-i bonds (all transverse parities, even longitudinal base) not D_all; route (iii) as a single tiling does not repair T3

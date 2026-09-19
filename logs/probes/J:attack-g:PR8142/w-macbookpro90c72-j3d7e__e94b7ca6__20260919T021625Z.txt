@@ -1,0 +1,11 @@
+pattern counts over 216: {0: 0, 1: 6, 2: 18, 3: 72, 4: 72, 5: 48}
+E2 = -(p-q)^2 G with deg G=7 (want 5 in p,q at r=1)
+X2a: W2^3-W1 W3^2 = 8(t-1)^3 (t^3-3t^2-6t-1)
+X2a: E1(t,t,1) = -8(t-1)^3 (t^3-3t^2-6t-1)
+X2b: p=r=1, Z3 takes exactly q^3+5, q^2+q+4, 3q+3
+X1: antipodal K2 ratio matches
+X1: orthogonal K2 ratio matches
+CR tuples 46656: zero numerators 33984, distinct nonzero 16
+X5 (3,1,2): E1=-2368 E2=-2816
+X5 (5,2,4): E1=-1201472 E2=-1482336
+SUMMARY: pattern has no purchase on this note — all 216 triples match V1..V5, E2=-(p-q)^2 G (deg 5 at r=1), X1 K2 ratios factor as stated, X2a W2^3-W1 W3^2=8(t-1)^3 cubic and E1 on the diagonal, X2b three Z3 values on p=r=1, exactly 16 distinct nonzero CR numerators over 6^6 tuples (33984 identically zero), and (3,1,2),(5,2,4) have E1 E2 nonzero

@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_REDUCED_A2_CLOSED_FORM_RUNG_SIXTEEN_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-j03d9",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_CLOSED_/witness_rows_walk_and_shell_ladder.py",
+ "seed": 10721,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8bc9651e",
+ "started_utc": "20260919T093841Z",
+ "elapsed_s": 224.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the exact table holds (15/32, 0, 7, 14/3, 8/3, 8, chamber closure) and H is L-harmonic (L H = 0) vanishing on both walls; the printed witness rows are reproduced at their own (beta, shell) to 6e-13; beta*(c_J - c_D) from the printed shell to shell + 24 moves {15: (1.634257, 1.634257), 30: (1.649886, 1.649851), 60: (1.659054, 1.657312), 120: (1.724313, 1.66083), 240: (3.545274, 1.662524), 480: (17.879194, 1.664246)}; c_D < c_J at every computed point including beta = 240, 480 (True); the top vector divided by the dimension factor is close to but not rank one on the sqrt(beta)-scaled wedge rectangle, s2/s1 = {30: 0.0012, 60: 0.00058, 120: 0.00098, 240: 0.001, 480: 0.0013}, not decreasing with beta; the printed beta = 120 row is a box-truncation value (1.724313 at shell 37, 1.660830 from shell 45)"
+ },
+ "review": "Read the script and its output: the exact falsifier table holds (15/32, 0, 7, 14/3, 8/3, 8, chamber closure) and H is L-harmonic, vanishing on both walls; walk-sum coefficients with an independent transfer reproduce every printed witness row at its own (beta, shell) to 6e-13; the shell ladder shows the printed beta = 120 row is box-truncated (beta*(c_J - c_D) = 1.724313 at shell 37, 1.660830 converged), the converged sequence being 1.634257, 1.649851, 1.657312, 1.660830, 1.662524 (240), 1.664246 (480) with c_D < c_J throughout; the converged top vector divided by the dimension factor has s2/s1 about 1e-3 on sqrt(beta)-scaled wedge rectangles, not decreasing with beta; the rows are labelled witnesses by shell, so no falsifier fires.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_CLOSED_FORM_RUNG_SIXTEEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_CLOSED_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_CLOSED_/<script>.py\"",
+ "stdout_sha256": "99b818663fc490ef1b43bf30894029ef60a79840039a0234510796b277090e4f",
+ "stdout_tail": " 0.861121029 cD 0.855223513 beta*margin 2.830808 ratio 0.194447393, shell 80: cJ 0.859870582 cD 0.856314598 beta*margin 1.706872 ratio 0.194477850, shell 88: cJ 0.859822865 cD 0.856355687 beta*margin 1.664246 ratio 0.194478733\n3. printed rows vs recomputation at the note's (beta, shell): max abs difference by beta {15: 4.9e-13, 30: 4.4e-13, 60: 3.7e-13, 120: 5.7e-13}\n4. converged top vector / dimension factor on a sqrt(beta)-scaled (u,v) rectangle in the wedge, singular-value ratios (s2/s1, s3/s1, grid): {30: (0.00124, 1.39e-15, (5, 3)), 60: (0.000575, 4.05e-16, (7, 3)), 120: (0.000982, 1.65e-07, (10, 5)), 240: (0.00102, 2.48e-07, (15, 7)), 480: (0.00129, 4.63e-07, (22, 11))}\nSUMMARY: the exact table holds (15/32, 0, 7, 14/3, 8/3, 8, chamber closure) and H is L-harmonic (L H = 0) vanishing on both walls; the printed witness rows are reproduced at their own (beta, shell) to 6e-13; beta*(c_J - c_D) from the printed shell to shell + 24 moves {15: (1.634257, 1.634257), 30: (1.649886, 1.649851), 60: (1.659054, 1.657312), 120: (1.724313, 1.66083), 240: (3.545274, 1.662524), 480: (17.879194, 1.664246)}; c_D < c_J at every computed point including beta = 240, 480 (True); the top vector divided by the dimension factor is close to but not rank one on the sqrt(beta)-scaled wedge rectangle, s2/s1 = {30: 0.0012, 60: 0.00058, 120: 0.00098, 240: 0.001, 480: 0.0013}, not decreasing with beta; the printed beta = 120 row is a box-truncation value (1.724313 at shell 37, 1.660830 from shell 45)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j03d9",
+  "at_utc": "20260919T094235Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

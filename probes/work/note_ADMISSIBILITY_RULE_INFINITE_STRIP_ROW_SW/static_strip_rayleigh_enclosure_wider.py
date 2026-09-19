@@ -162,7 +162,7 @@ def main():
                 lo, hi = encl["(0,1)"]
                 nlo, nhi = note[(W, trip)]
                 ok = lo <= nhi and nlo <= hi
-                extra = f"; meets the note's printed interval [{float(nlo):.18f}.., {float(nhi):.18f}..]: {ok}"
+                extra = f"; meets the note's printed interval [{dec(nlo, 22, False)}, {dec(nhi, 22, True)}]: {ok}"
                 if not ok or lo <= formation <= hi:
                     fails.append((W, trip))
             print(f"W = {W}, (p,q,r) = {trip}: {res['rows']} row states, {res['orbits']} orbits, weighted self-adjointness "

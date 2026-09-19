@@ -1,0 +1,9 @@
+L=1 whole-group=0 stated=0
+L=2 whole-group=3 stated=3
+L=3 whole-group=24 stated=24
+L=4 whole-group=81 stated=81
+L=5 whole-group=192 stated=192
+L=6 whole-group=375 stated=375
+L=7 whole-group=648 stated=648
+L=8 whole-group=1029 stated=1029
+SUMMARY: QUANTIFIER SCOPE on whole-group 3(L-1)^3 (PR #8024): holds for every L=1..8 (beyond the checker's L=1,2,3); no in-range failure; the independent-of-Lambda gap itself is not a finite identity to break

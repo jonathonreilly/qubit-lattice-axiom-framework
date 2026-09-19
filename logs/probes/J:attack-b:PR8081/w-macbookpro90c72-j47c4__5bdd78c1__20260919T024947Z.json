@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8081",
+ "type": "judgment",
+ "lane": "native-correlated-ward-20260910",
+ "worker": "w-macbookpro90c72-j47c4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8081/same_test_T_and_sign.py",
+ "seed": 86187,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bdd78c1",
+ "started_utc": "20260919T024947Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 disjoint-pair adjacency equals J15+I-N*N, and the same contains-0 test holds on prior and signed intervals of both residual and variational modes (the note does not claim a sign separation)"
+ },
+ "review": "T equals disjoint-pair adjacency; all four stated intervals contain 0; no sign-separation defect",
+ "what": "PR #8081 ([physics-loop] Correlated native Ward bounds (conditional-su): attack NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/native-correlated-ward-20260910; git show origin/codex/native-correlated-ward-20260910:<note>. Create probes/work/pr8081/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8081/<script>.py\"",
+ "stdout_sha256": "9ff0420b343e7a7594e8c193d6fceb643f1415c632547529e8a1a37cc0317f50",
+ "stdout_tail": "T from N equals disjoint-pair adjacency: True\ncontains0 {'residual_prior': True, 'residual_signed': True, 'variational_prior': True, 'variational_signed': True}\nSUMMARY: pattern has no purchase on this note \u2014 disjoint-pair adjacency equals J15+I-N*N, and the same contains-0 test holds on prior and signed intervals of both residual and variational modes (the note does not claim a sign separation)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j47c4",
+  "at_utc": "20260919T024947Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

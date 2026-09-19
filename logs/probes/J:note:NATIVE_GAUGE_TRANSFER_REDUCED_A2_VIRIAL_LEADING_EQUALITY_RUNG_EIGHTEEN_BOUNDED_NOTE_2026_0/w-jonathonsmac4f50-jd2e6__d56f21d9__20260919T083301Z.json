@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_REDUCED_A2_VIRIAL_LEADING_EQUALITY_RUNG_EIGHTEEN_BOUNDED_NOTE_2026_0",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-jd2e6",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_VIRIAL_/virial_symbolic_and_walk_witnesses.py",
+ "seed": 6781,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d56f21d9",
+ "started_utc": "20260919T083301Z",
+ "elapsed_s": 63.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the virial step holds symbolically (A + B/mu = 3/2) and the note's six wrong-structure values are reproduced exactly (True); with an independent Poisson-walk heat operator and subspace iteration the finite witnesses reproduce the note's beta = 100, 200, 400 rows (True) and, beyond them, the deficit 3/2 - (A + B/mu) keeps shrinking (0.04920, 0.02456, 0.01227, 0.00614, 0.00307 at beta = [100, 200, 400, 800, 1600], about halving per doubling) with shrinking state spread (0.01405, 0.00699, 0.00349, 0.00175, 0.00088), while A - B/mu stays state-dependent"
+ },
+ "review": "Output matches the task (the wrong-structure table and the virial proof step checked with machinery disjoint from the runner: symbolic commutators on a generic test function, a Poisson-walk heat operator and subspace iteration in place of expm_multiply and eigsh): [D,L] = -2L, [L,[L,D]] = 0 and D W = (3-2Q)W give A + B/mu = 3/2; all six table values are reproduced exactly; the finite witnesses match the note's beta = 100, 200, 400 rows to 4.2e-7, and beyond them the deficit 3/2 - (A + B/mu) is 0.00614 and 0.00307 at beta = 800, 1600 (halving per doubling) with shrinking state spread; no falsifier fires.",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_VIRIAL_LEADING_EQUALITY_RUNG_EIGHTEEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_VIRIAL_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_REDUCED_A2_VIRIAL_/<script>.py\"",
+ "stdout_sha256": "bdfafcabc2b9148ffc7fa22c442f265e415d6d0eb0289a923a471466ce95991f",
+ "stdout_tail": "d A = -1: -7/2 (note -7/2); wrong signed A = -2: -11/2 (note -11/2); wrong confiner at (1,2): -12*exp(-9) (note -12*exp(-9)); N_c = 3 fixed-weight sample: 79/10 (note 79/10); N_c = 2 sample: 79/15 (note 79/15)\n3. beta = 100 (box 40): A + B/mu = [1.464854, 1.454749, 1.4508], A - B/mu = [-4.0465, -5.7587, -6.629]; note (1.464854, 1.454749, 1.4508), max difference 4.2e-07\n3. beta = 200 (box 56): A + B/mu = [1.482438, 1.477406, 1.475445], A - B/mu = [-4.0649, -5.7827, -6.6542]; note (1.482438, 1.477406, 1.475445), max difference 2.5e-07\n3. beta = 400 (box 80): A + B/mu = [1.491222, 1.48871, 1.487732], A - B/mu = [-4.0741, -5.7947, -6.6667]; note (1.491222, 1.48871, 1.487732), max difference 3.6e-07\n3. beta = 800 (box 112): A + B/mu = [1.495611, 1.494354, 1.493859], A - B/mu = [-4.0787, -5.8007, -6.673] (beyond)\n3. beta = 1600 (box 160): A + B/mu = [1.497806, 1.497176, 1.496926], A - B/mu = [-4.081, -5.8037, -6.6761] (beyond)\nSUMMARY: the virial step holds symbolically (A + B/mu = 3/2) and the note's six wrong-structure values are reproduced exactly (True); with an independent Poisson-walk heat operator and subspace iteration the finite witnesses reproduce the note's beta = 100, 200, 400 rows (True) and, beyond them, the deficit 3/2 - (A + B/mu) keeps shrinking (0.04920, 0.02456, 0.01227, 0.00614, 0.00307 at beta = [100, 200, 400, 800, 1600], about halving per doubling) with shrinking state spread (0.01405, 0.00699, 0.00349, 0.00175, 0.00088), while A - B/mu stays state-dependent\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd2e6",
+  "at_utc": "20260919T083405Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

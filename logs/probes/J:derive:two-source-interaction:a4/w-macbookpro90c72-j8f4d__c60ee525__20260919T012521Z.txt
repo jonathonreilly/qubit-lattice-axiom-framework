@@ -1,0 +1,15 @@
+CHECK E0a: PASS
+CHECK E0b: PASS
+CHECK E0c: PASS
+CHECK E0d: PASS
+CHECK E1a: PASS gap=0
+CHECK E1b: PASS
+GREEN L=4  C0-C(e1)=147/128 C0-C(e1+e2)=147/128 C0-C(2 e1)=147/128
+CHECK E2a: PASS
+CHECK E2b: PASS d1=147/128
+CHECK E2c: PASS
+CHECK E3a: PASS
+CHECK E3b: PASS
+EXACT d(e1)=147/128 d(e1+e2)=147/128 d(2e1)=147/128
+HIT: linear light-cone kernel C=49/(E(14-E)) (sigma^2=1); naive CA FDR chi/C=1+phi fails (chi=7/E). Two-pin Gaussian energies: like a^2/(C0+Cr), unlike a^2/(C0-Cr); Cr>0 makes like cheaper (attractive). On the L=4 torus the massless unlike (dipole) energy a^2/(C0-C(r)) is the exact positive rational 1/d(r) with d(e1)=147/128, d(e1+e2)=147/128, d(2e1)=147/128; like equal pins are IR-divergent (zero mode), the 1/k^2 signature of Newton. Superposition holds at linear (Gaussian) order and fails for the sphere at O(1/beta^2).
+SUMMARY: PARTIAL linear two-source theory: naive FDR fails (chi/C=1+phi); unlike-pin energy on L=4 is a^2 / (147/128) = 128/147 a^2 at every tested r (finite-size degeneracy); like pins attractive when Cr>0 but IR-divergent on the massless torus; 1/r is the 3D Green function of E(k), not a nonlinear proof.

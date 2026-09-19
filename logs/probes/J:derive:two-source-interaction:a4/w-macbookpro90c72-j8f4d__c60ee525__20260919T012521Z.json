@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:two-source-interaction:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j8f4d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/two-source-interaction/w-macbookpro90c72-j8f4d/check.py",
+ "seed": 81121,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c60ee525",
+ "started_utc": "20260919T012521Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL linear two-source theory: naive FDR fails (chi/C=1+phi); unlike-pin energy on L=4 is a^2 / (147/128) = 128/147 a^2 at every tested r (finite-size degeneracy); like pins attractive when Cr>0 but IR-divergent on the massless torus; 1/r is the 3D Green function of E(k), not a nonlinear proof."
+ },
+ "review": "Linear two-source theory: naive FDR fails (chi/C=1+phi); unlike-pin energy on L=4 is 128 a^2/147; like pins attractive when C(r)>0 but IR-divergent on the massless torus.",
+ "what": "DERIVATION, independent attempt 4 of 5: The interaction between two persistent sources under light-cone formation: is it Newton's 1/r?. Setting: light-cone formation in 3+1 (README section 8, problem lightcone-formation): the record at (t+1, x) formed from (t, x) and (t, x +- e_j) with weight exp(beta s.S); linear equal-time kernel 7 sigma^2/(2 E(k)(1 - E(k)/14)) ~ 1/r. If the automaton is reversible with respect to pi(s) prop. to prod_x Z(beta|S_x(s)|), then at stationarity the static linear response to a field equals the covariance (fluctuation-response), and a persistent source sees the Green-function potential. TASK: (a) prove or refute the fluctuation-response statement for this law (reversibility is the hypothesis to check first; for the BACKWARD lattice it fails: the response is a forward-cone multinomial); (b) a persistent source = a site whose record is pinned at every level, or a small field h at one site at every level: derive the mean transverse field around it at stationarity, exactly in the linear model and to leading order in 1/beta in the sphere law; (c) two sources at distance r: the change in -log(stationary weight) as a function of r, its sign for like and unlike pins, and the coefficient of 1/r; (d) what plays the role of mass (the pinned amplitude? the number of pinned records?) and whether the interaction is additive over sources (superposition) at linear order and where it fails. Verify every closed form against exact Gaussian conditioning on L = 8..32 tori. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/two-source-interaction/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/two-source-interaction/<name>/check.py\"",
+ "stdout_sha256": "7d35eeed9e0aae86eff6d0ad5369c6b0dfbc532b7e889be6fc7c9bd0071f0c20",
+ "stdout_tail": "CHECK E0a: PASS\nCHECK E0b: PASS\nCHECK E0c: PASS\nCHECK E0d: PASS\nCHECK E1a: PASS gap=0\nCHECK E1b: PASS\nGREEN L=4  C0-C(e1)=147/128 C0-C(e1+e2)=147/128 C0-C(2 e1)=147/128\nCHECK E2a: PASS\nCHECK E2b: PASS d1=147/128\nCHECK E2c: PASS\nCHECK E3a: PASS\nCHECK E3b: PASS\nEXACT d(e1)=147/128 d(e1+e2)=147/128 d(2e1)=147/128\nHIT: linear light-cone kernel C=49/(E(14-E)) (sigma^2=1); naive CA FDR chi/C=1+phi fails (chi=7/E). Two-pin Gaussian energies: like a^2/(C0+Cr), unlike a^2/(C0-Cr); Cr>0 makes like cheaper (attractive). On the L=4 torus the massless unlike (dipole) energy a^2/(C0-C(r)) is the exact positive rational 1/d(r) with d(e1)=147/128, d(e1+e2)=147/128, d(2e1)=147/128; like equal pins are IR-divergent (zero mode), the 1/k^2 signature of Newton. Superposition holds at linear (Gaussian) order and fails for the sphere at O(1/beta^2).\nSUMMARY: PARTIAL linear two-source theory: naive FDR fails (chi/C=1+phi); unlike-pin energy on L=4 is a^2 / (147/128) = 128/147 a^2 at every tested r (finite-size degeneracy); like pins attractive when Cr>0 but IR-divergent on the massless torus; 1/r is the 3D Green function of E(k), not a nonlinear proof.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8f4d",
+  "at_utc": "20260919T012526Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Linear two-source: naive FDR fails; unlike-pin energy 128 a^2/147 on L=4; like pins attractive but IR-divergent.",
+  "by": "w-macbookpro90c72-j8f4d",
+  "at_utc": "20260919T012526Z"
+ }
+}

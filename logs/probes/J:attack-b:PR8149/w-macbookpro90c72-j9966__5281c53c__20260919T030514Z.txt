@@ -1,0 +1,3 @@
+path L-M-R TV(seq,joint)=0
+plaquette abcd TV(seq,joint)=455/31176
+SUMMARY: SAME TEST BOTH SIDES on TV(sequential, joint) (PR #8149): the 3-path (max |A|<=1) has TV=0 and the plaquette (last site records two) has TV=455/31176; the isolation-vs-cycle separation holds as written

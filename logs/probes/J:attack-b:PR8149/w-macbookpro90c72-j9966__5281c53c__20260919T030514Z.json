@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8149",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block15-format",
+ "worker": "w-macbookpro90c72-j9966",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8149/path_vs_plaquette_joint.py",
+ "seed": 87114,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5281c53c",
+ "started_utc": "20260919T030514Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAME TEST BOTH SIDES on TV(sequential, joint) (PR #8149): the 3-path (max |A|<=1) has TV=0 and the plaquette (last site records two) has TV=455/31176; the isolation-vs-cycle separation holds as written"
+ },
+ "review": "TV(seq,joint)=0 on the 3-path and 455/31176 on the plaquette, matching U3; the cycle-vs-tree separation holds.",
+ "what": "PR #8149 ([physics-loop] admissibility-induced-law block15 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915:<note>. Create probes/work/pr8149/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8149/<script>.py\"",
+ "stdout_sha256": "1989f7a136d9796a83d6cc4917ee77f45505c352403c830ecc86b6fca947635f",
+ "stdout_tail": "path L-M-R TV(seq,joint)=0\nplaquette abcd TV(seq,joint)=455/31176\nSUMMARY: SAME TEST BOTH SIDES on TV(sequential, joint) (PR #8149): the 3-path (max |A|<=1) has TV=0 and the plaquette (last site records two) has TV=455/31176; the isolation-vs-cycle separation holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9966",
+  "at_utc": "20260919T030515Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

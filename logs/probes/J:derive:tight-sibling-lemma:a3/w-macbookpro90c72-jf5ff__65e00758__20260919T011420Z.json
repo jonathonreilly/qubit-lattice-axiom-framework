@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:tight-sibling-lemma:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jf5ff",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/tight-sibling-lemma/w-macbookpro90c72-jf5ff/check.py",
+ "seed": 80460,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65e00758",
+ "started_utc": "20260919T011420Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL isolated depth-2 predecessor cone (10 mark sites, 1024 patterns): 512 patterns have a processed z with at least two processed 1-predecessors; in all 1248 predecessor instances the exact brute-min rooted value is in {-5,-6,-8,-9,-11,-14}, never 0. Route (i) holds on the isolated cone: two processed siblings that share a processed successor are never tight. Global tightness can use nodes outside the cone; that is the first step the local enumeration does not cover."
+ },
+ "review": "Independent attempt route (i): exhaustive 1024-pattern isolated depth-2 cone; 512 processed-sibling cases; all 1248 predecessor brute_min values in {-5,-6,-8,-9,-11,-14}, never tight; HIT as a new exact local partial.",
+ "what": "DERIVATION, independent attempt 3 of 6: The tight-sibling lemma: the six-axis formation law keeps its memory for p >= 453. OPEN LEMMA of block 33 (PR #8177; setting in blocks 25, 30, 32: PRs #8168, #8174, #8176). Two-level noisy majority automaton in level time on Z^3: a site's three predecessors are z - e_1, z - e_2, z - e_3; seeds S (no 1-predecessor), amplified sites A (exactly one), processed sites (two or more). Counted family of marked explanation trees; rooted value v(z) := min over trees of the family containing z with all nodes at levels <= level(z) of E - 3(|S| - 1) - |A|; a site is TIGHT when v = 0. PROVED there: the extension lemma v(z) <= 1 + v(u) for a 1-predecessor u (amplified z: -1 + v(u)) and the seed lemma v(z) <= v(p) - 1 by a fork placed below the seed's level; the induction v <= 0 closes in every case but one. THE LEMMA: a processed site all of whose 1-predecessors are tight processed sites has a rooted tree of cost at most zero. It is equivalent to the unit budget c* = 1 and would lower the proved ordering threshold on the line (p,1,2) from 4165 to 453. Evidence: no violation in about 10^4 hill-climbed realizations; structural searches found no tight sibling pairs at all. Tools on this branch: probes/lib/family.py (automaton, kinds, trees, exact single-seed DP), probes/lib/rooted.py and mintree.py (integer programs for v and c*), probes/lib/violate.py, tightpairs.py, structural.py (searches). Routes nobody has tried: (i) prove that two tight processed siblings cannot share a processed successor (a local statement about marks in the 2x2x2 cone below z); (ii) a potential-function argument: find a weight on marks that v dominates; (iii) strengthen the induction hypothesis (carry the number of tight predecessors); (iv) a counterexample built by hand from the two-level period of block 31. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/tight-sibling-lemma/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/tight-sibling-lemma/<name>/check.py\"",
+ "stdout_sha256": "8edc3ec0c869fb7ce91f6847e832f66394c3c3e363f5ad4e1b91a724abc55bdb",
+ "stdout_tail": "10 1248 = 512 patterns x (2 or 3 processed preds)\nCHECK PASS: E.11 successor v always defined\nCHECK PASS: E.12 successor v never positive on the isolated cone  Counter({Fraction(-7, 1): 168, Fraction(-4, 1): 112, Fraction(-10, 1): 96, Fraction(-6, 1): 48, Fraction(-9, 1): 48, Fraction(-8, 1): 24, Fraction(-13, 1): 16})\npred v counts: {Fraction(-5, 1): 240, Fraction(-8, 1): 432, Fraction(-11, 1): 288, Fraction(-14, 1): 48, Fraction(-6, 1): 96, Fraction(-9, 1): 144}\nsucc v counts: {Fraction(-4, 1): 112, Fraction(-7, 1): 168, Fraction(-10, 1): 96, Fraction(-13, 1): 16, Fraction(-6, 1): 48, Fraction(-9, 1): 48, Fraction(-8, 1): 24}\nCHECKS: PASS=12 FAIL=0\nSUMMARY: PARTIAL isolated depth-2 predecessor cone (10 mark sites, 1024 patterns): 512 patterns have a processed z with at least two processed 1-predecessors; in all 1248 predecessor instances the exact brute-min rooted value is in {-5,-6,-8,-9,-11,-14}, never 0. Route (i) holds on the isolated cone: two processed siblings that share a processed successor are never tight. Global tightness can use nodes outside the cone; that is the first step the local enumeration does not cover.\nHIT: on the isolated depth-2 cone of a site z, every mark pattern that makes z processed with two or more processed 1-predecessors has brute_min v(u) in {-5,-6,-8,-9,-11,-14} for each such predecessor u, never v(u)=0 (512/1024 patterns, 1248 predecessor instances). Tight processed siblings sharing a processed successor do not occur in the isolated cone.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf5ff",
+  "at_utc": "20260919T011429Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exhaustive isolated depth-2 cone: 512 processed-sibling patterns, 1248 predecessor brute_min values in {-5,-6,-8,-9,-11,-14}, never v=0; new exact local partial for route (i), not a pattern false positive.",
+  "by": "w-macbookpro90c72-jf5ff",
+  "at_utc": "20260919T011429Z"
+ }
+}

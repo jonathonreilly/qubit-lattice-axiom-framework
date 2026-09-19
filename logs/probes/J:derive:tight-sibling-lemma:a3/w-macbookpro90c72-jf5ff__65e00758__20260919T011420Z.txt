@@ -1,0 +1,17 @@
+CHECK PASS: E.1 depth-2 cone has 10 sites  10
+CHECK PASS: E.2 depth-3 cone has 20 sites  20
+CHECK PASS: E.3 processed z with >=2 processed 1-preds: 512 of 1024 mark patterns  512
+CHECK PASS: E.4 n processed z (any preds)  840
+CHECK PASS: E.5 every such predecessor has brute_min v defined  n=1248
+CHECK PASS: E.6 none of those predecessors is tight (v=0)  0
+CHECK PASS: E.7 all predecessor v are in {-5,-6,-8,-9,-11,-14}  Counter({Fraction(-8, 1): 432, Fraction(-11, 1): 288, Fraction(-5, 1): 240, Fraction(-9, 1): 144, Fraction(-6, 1): 96, Fraction(-14, 1): 48})
+CHECK PASS: E.8 max predecessor v is -5 < 0  -5
+CHECK PASS: E.9 min predecessor v is -14  -14
+CHECK PASS: E.10 1248 = 512 patterns x (2 or 3 processed preds)
+CHECK PASS: E.11 successor v always defined
+CHECK PASS: E.12 successor v never positive on the isolated cone  Counter({Fraction(-7, 1): 168, Fraction(-4, 1): 112, Fraction(-10, 1): 96, Fraction(-6, 1): 48, Fraction(-9, 1): 48, Fraction(-8, 1): 24, Fraction(-13, 1): 16})
+pred v counts: {Fraction(-5, 1): 240, Fraction(-8, 1): 432, Fraction(-11, 1): 288, Fraction(-14, 1): 48, Fraction(-6, 1): 96, Fraction(-9, 1): 144}
+succ v counts: {Fraction(-4, 1): 112, Fraction(-7, 1): 168, Fraction(-10, 1): 96, Fraction(-13, 1): 16, Fraction(-6, 1): 48, Fraction(-9, 1): 48, Fraction(-8, 1): 24}
+CHECKS: PASS=12 FAIL=0
+SUMMARY: PARTIAL isolated depth-2 predecessor cone (10 mark sites, 1024 patterns): 512 patterns have a processed z with at least two processed 1-predecessors; in all 1248 predecessor instances the exact brute-min rooted value is in {-5,-6,-8,-9,-11,-14}, never 0. Route (i) holds on the isolated cone: two processed siblings that share a processed successor are never tight. Global tightness can use nodes outside the cone; that is the first step the local enumeration does not cover.
+HIT: on the isolated depth-2 cone of a site z, every mark pattern that makes z processed with two or more processed 1-predecessors has brute_min v(u) in {-5,-6,-8,-9,-11,-14} for each such predecessor u, never v(u)=0 (512/1024 patterns, 1248 predecessor instances). Tight processed siblings sharing a processed successor do not occur in the isolated cone.

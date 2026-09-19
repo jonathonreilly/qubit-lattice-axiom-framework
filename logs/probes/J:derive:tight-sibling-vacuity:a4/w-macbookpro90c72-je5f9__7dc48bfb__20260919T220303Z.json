@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:tight-sibling-vacuity:a4",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-je5f9",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/tight-sibling-vacuity/w-macbookpro90c72-je5f9/check.py",
+ "seed": 55383,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7dc48bfb",
+ "started_utc": "20260919T220303Z",
+ "elapsed_s": 3.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "COUNTEREXAMPLE - the a4 conjecture is false: a processed site CAN have every 1-predecessor processed and tight. The lemma and (H) fail at 333 of an explicit minimal 10-mark realization, c*(eta,333) = 10/9 exactly, and the depth<=3 census route is refuted by two realizations sharing a depth-3 cone with different rooted values."
+ },
+ "review": "Refutes the a4 conjecture outright, with a certificate a referee can re-run without scipy: rooted values are pinned between an exhaustive minimisation over level-restricted closed node sets (valid because a family tree's node set is closed and cost depends only on that set) and an explicitly verified family tree, and the two bounds coincide at every site used. In the sigma-cyclic one-seed realization of 10 marks, 333 is processed with all three 1-predecessors processed and tight yet v(333)=1, so block 33's open lemma is not vacuous but false, (H) fails, and c*(eta,333)=10/9 exactly via the full Pareto frontier. The task's own route is refuted as a finite fact: one extra mark at level 4 leaves membership and kind identical on every level >=5, hence on the whole depth-3 cone of 233, while flipping v(233) from 0 to -1.",
+ "what": "DERIVATION, independent attempt 4 of 4: Is the tight-sibling lemma's hypothesis ever satisfied?. GIVEN (refereed censuses): on every small window examined (2x2x2, 3x2x2, the isolated depth-2 cone, the named witnesses) a processed site never has ALL its 1-predecessors tight; the lemma's conclusion was therefore never tested. CAUTION from the referee: probes/lib/family.py's brute_min omits the definition's level restriction (nodes at levels <= level(z)); use probes/lib/rooted.py or restrict it yourself, and for windows with several seeds the single-seed dynamic program gives only upper bounds. TASK: prove or refute: a processed site with at least two processed 1-predecessors cannot have all of them tight (rooted value 0). If true the open lemma of block 33 (PR #8177) is vacuous-true and the unit budget c* = 1 follows (threshold 453 by that route; note the refinement-history route already gives 84). Route: a tight processed site forces a specific local pattern of marks below it (characterize all tight sites at depth <= 3 exhaustively with the correct definition), and two such patterns cannot share the cone of a common successor. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/tight-sibling-vacuity/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/tight-sibling-vacuity/<name>/check.py\"",
+ "stdout_sha256": "d09dd5318a30ef2d364ba20953d4fda6e97a2a56f8d8a3194e57e4475e25b0c3",
+ "stdout_tail": "y Pareto minimum (6, 5)\nTOTAL: PASS=44 FAIL=0\nHIT: block 33's tight-sibling lemma and the rooted inequality (H) are both FALSE. Marks {000,001,010,100,021,102,210,113,131,311} give a sigma-cyclic one-seed realization with 37 one-sites in [0,3]^3 where 333 is processed, its 1-preds 233/323/332 are processed with rooted value exactly 0 (tight), yet v(333) = 1 > 0.\nHIT: every value is certified TWO-SIDEDLY: exhaustive minimisation over level-restricted CLOSED node sets (a lower bound: a family tree's node set is closed and cost depends only on that set) meets an explicitly verified tree.\nHIT: the exact budget. The Pareto frontier of (E,A) over closed sets at 333 is {(6,5),(7,6),(8,7),(9,8),(10,9)}, so c*(eta,333) = min E/A = 10/9 exactly, and the budget-critical set (10,9) is NOT the c=1 cost-minimiser (6,5). All 10 marks are load-bearing.\nHIT: the route proposed for this task cannot work. Adding the one mark (2,2,0) changes exactly one site, at level 4, so both realizations agree in membership AND kind on every site of level >= 5 - the whole depth-3 cone of 233 - yet v(233) = 0 while v'(233) = -1. Tightness is not a function of the depth<=3 cone.\nSUMMARY: COUNTEREXAMPLE - the a4 conjecture is false: a processed site CAN have every 1-predecessor processed and tight. The lemma and (H) fail at 333 of an explicit minimal 10-mark realization, c*(eta,333) = 10/9 exactly, and the depth<=3 census route is refuted by two realizations sharing a depth-3 cone with different rooted values.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je5f9",
+  "at_utc": "20260919T220306Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

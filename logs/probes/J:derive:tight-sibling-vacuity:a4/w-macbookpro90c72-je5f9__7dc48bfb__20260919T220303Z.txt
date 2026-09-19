@@ -1,0 +1,58 @@
+== A  realization ==
+ok   A1 no mark has a negative coordinate => eta=0 off the octant
+ok   A2 |{eta=1, level<=9}| = 37 (= 37)
+ok   A3 every 1-site lies in the cube [0,3]^3
+ok   A4 exactly one seed, at the origin
+ok   A5 kind census (proc,amp,seed) = (27,9,1) = (27, 9, 1)
+ok   A6 top level is 9 and 333 is a 1-site
+== B  the C3 symmetry ==
+ok   B1 sigma(x,y,z)=(y,z,x) fixes the mark set
+ok   B2 hence sigma fixes eta and preserves every kind
+ok   B3 the 1-preds of 333 are 233,323,332
+ok   B4 they form ONE sigma-orbit: verifying 233 gives the other two free
+== C  rooted values, certified two-sidedly ==
+ok   C (2, 3, 3): closed-set lower 0 == verified-tree upper 0 => v = 0
+ok   C (3, 2, 3): closed-set lower 0 == verified-tree upper 0 => v = 0
+ok   C (3, 3, 2): closed-set lower 0 == verified-tree upper 0 => v = 0
+ok   C (3, 3, 3): closed-set lower 1 == verified-tree upper 1 => v = 1
+ok   C1 all three 1-preds of 333 are PROCESSED
+ok   C2 all three are TIGHT (rooted value exactly 0)
+ok   C3 333 is processed with v(333) = 1
+== D  what this refutes ==
+ok   D1 the tight-sibling HYPOTHESIS is satisfiable (contra the a4 conjecture)
+ok   D2 its CONCLUSION fails here: no tree at 333 has cost <= 0
+ok   D3 hence the rooted inequality (H) fails at a processed site
+ok   D4 333 is the ONLY site of the realization violating (H)
+ok   D5 the tight processed sites are exactly those three
+== E  the exact budget c* ==
+ok   E1 Pareto (E,A) frontier at 333 = [(6, 5), (7, 6), (8, 7), (9, 8), (10, 9)]
+ok   E2 c*(eta,333) = min E/A = 10/9 exactly
+ok   E3 the budget-critical set (10,9) is NOT the c=1 cost-minimiser (6,5)
+ok   E4 so the unit budget c = 1 is not admissible at this realization
+== F  the witness is minimal ==
+ok   F1 of the 1023 proper subsets only 1 keep 333 processed with >=2 proc preds
+ok   F2 the one survivor is MARKS minus the origin mark
+ok   F3 its 3-seed values also certify two-sidedly (fork-spanned trees, not just bounds)
+ok   F4 and its preds have v = [-3, -3, -3] != 0, so they are NOT tight: not a violation
+ok   F5 hence every one of the 10 marks is load-bearing
+== G  no-go for the depth<=3 route ==
+ok   G1 adding the single mark (2,2,0) changes exactly one site
+ok   G2 that site sits at level 4
+ok   G3 so eta and kind agree on EVERY site of level >= 5
+ok   G4 233 is at level 8, so levels 5..8 hold its whole depth-3 cone
+ok   G5 v'(233) certified two-sidedly: lower -1 == upper -1
+ok   G6 v(233) = 0 but v'(233) = -1 on an IDENTICAL depth-3 cone
+ok   G7 => tightness is not a function of the depth<=3 cone; that census cannot decide it
+== X  cross-check against probes/lib (not used above) ==
+ok   X1 lib run_automaton reproduces eta
+ok   X2 lib MILP rooted(2, 3, 3) = 0 == mine 0 (kind proc)
+ok   X2 lib MILP rooted(3, 2, 3) = 0 == mine 0 (kind proc)
+ok   X2 lib MILP rooted(3, 3, 2) = 0 == mine 0 (kind proc)
+ok   X2 lib MILP rooted(3, 3, 3) = 1 == mine 1 (kind proc)
+ok   X3 lib optimum (E,A) = (6,5) = my Pareto minimum (6, 5)
+TOTAL: PASS=44 FAIL=0
+HIT: block 33's tight-sibling lemma and the rooted inequality (H) are both FALSE. Marks {000,001,010,100,021,102,210,113,131,311} give a sigma-cyclic one-seed realization with 37 one-sites in [0,3]^3 where 333 is processed, its 1-preds 233/323/332 are processed with rooted value exactly 0 (tight), yet v(333) = 1 > 0.
+HIT: every value is certified TWO-SIDEDLY: exhaustive minimisation over level-restricted CLOSED node sets (a lower bound: a family tree's node set is closed and cost depends only on that set) meets an explicitly verified tree.
+HIT: the exact budget. The Pareto frontier of (E,A) over closed sets at 333 is {(6,5),(7,6),(8,7),(9,8),(10,9)}, so c*(eta,333) = min E/A = 10/9 exactly, and the budget-critical set (10,9) is NOT the c=1 cost-minimiser (6,5). All 10 marks are load-bearing.
+HIT: the route proposed for this task cannot work. Adding the one mark (2,2,0) changes exactly one site, at level 4, so both realizations agree in membership AND kind on every site of level >= 5 - the whole depth-3 cone of 233 - yet v(233) = 0 while v'(233) = -1. Tightness is not a function of the depth<=3 cone.
+SUMMARY: COUNTEREXAMPLE - the a4 conjecture is false: a processed site CAN have every 1-predecessor processed and tight. The lemma and (H) fail at 333 of an explicit minimal 10-mark realization, c*(eta,333) = 10/9 exactly, and the depth<=3 census route is refuted by two realizations sharing a depth-3 cone with different rooted values.

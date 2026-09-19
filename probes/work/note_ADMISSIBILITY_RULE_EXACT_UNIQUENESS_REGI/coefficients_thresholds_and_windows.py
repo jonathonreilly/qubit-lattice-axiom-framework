@@ -269,9 +269,10 @@ def main():
         fails.append("Theorem H site bound")
     if not wk:
         fails.append("walk counts")
-    if not (ce[(3, 2, 2)][0] == Fr(1404, 11431) and abs(ce[(3, 2, 2)][2] - 0.0073929) < 5e-8 and ce[(5, 4, 4)][0] == Fr(10000, 175641)
-            and abs(ce[(5, 4, 4)][2] - 0.0016901) < 5e-8 and ce[(3, 1, 2)][0] == Fr(918, 3431) and ce[(3, 1, 2)][1] == Fr(3672, 3431)
-            and abs(ce[(3, 1, 2)][2] - 0.0346753) < 5e-8):
+    trunc = lambda x, label: 0 <= x - label < 1e-7              # the note's decimal labels are truncated to seven places
+    if not (ce[(3, 2, 2)][0] == Fr(1404, 11431) and trunc(ce[(3, 2, 2)][2], 0.0073929) and ce[(5, 4, 4)][0] == Fr(10000, 175641)
+            and trunc(ce[(5, 4, 4)][2], 0.0016901) and ce[(3, 1, 2)][0] == Fr(918, 3431) and ce[(3, 1, 2)][1] == Fr(3672, 3431)
+            and trunc(ce[(3, 1, 2)][2], 0.0346753)):
         fails.append(f"3x3 center literals {ce}")
     if fails:
         print(f"HIT: {fails}")

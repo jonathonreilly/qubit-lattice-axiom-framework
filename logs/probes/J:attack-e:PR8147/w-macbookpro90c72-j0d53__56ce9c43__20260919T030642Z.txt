@@ -1,0 +1,1 @@
+SUMMARY: SAMPLED EVIDENCE (PR #8147): the note's 'never the lattice Green function' is a proved heat-kernel identity with exact P_n, not a sampled never/always; pattern has no purchase

@@ -1,0 +1,14 @@
+Born f=(1+t)/2: κ=f'(1)/(2f(1))=1/4  var=f(1)/(3f'(1))=2/3
+  without the 1/2 in κ one would get 1/2
+g=3w: massless w=1/3 g=1; static-Laplacian w=1/6 g=1/2
+== T1 G sums to 1 at w=1/3, n=1..8 ==
+  n=0 sum G=1
+  n=1 sum G=1
+  n=2 sum G=1
+  n=3 sum G=1
+  n=4 sum G=1
+  n=5 sum G=1
+  n=6 sum G=1
+  n=7 sum G=1
+  n=8 sum G=1
+SUMMARY: NORMALIZATION (PR #8147): T5 Born variance f(1)/(3f'(1))=2/3 and κ=f'(1)/(2f(1))=1/4; g=3w gives g=1/2 at w=1/6; T1 directed kernel sums to 1 at w=1/3 for n=0..8; pattern has purchase (known T3(ii) u^2 vs 4sin²(u/2) not re-claimed)

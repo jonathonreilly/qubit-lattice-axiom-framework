@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8147",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block13-causal",
+ "worker": "w-macbookpro90c72-jdff2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8147/t5_half_and_two_thirds.py",
+ "seed": 91498,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1513578a",
+ "started_utc": "20260919T041818Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "NORMALIZATION (PR #8147): T5 Born variance f(1)/(3f'(1))=2/3 and \u03ba=f'(1)/(2f(1))=1/4; g=3w gives g=1/2 at w=1/6; T1 directed kernel sums to 1 at w=1/3 for n=0..8; pattern has purchase (known T3(ii) u^2 vs 4sin\u00b2(u/2) not re-claimed)"
+ },
+ "review": "NORMALIZATION: T5 2/3 and \u03ba=1/4, g=1/2 at w=1/6, T1 kernel sums to 1; known T3(ii) not re-found.",
+ "what": "PR #8147 ([physics-loop] admissibility-induced-law block13 \u2014 bounded_t): attack ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915; git show origin/physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915:<note>. Create probes/work/pr8147/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8147/<script>.py\"",
+ "stdout_sha256": "40bc84fbd0a1e28f468f2611b3e26d35a783aded71a810b92700e8d49e560cf2",
+ "stdout_tail": "Born f=(1+t)/2: \u03ba=f'(1)/(2f(1))=1/4  var=f(1)/(3f'(1))=2/3\n  without the 1/2 in \u03ba one would get 1/2\ng=3w: massless w=1/3 g=1; static-Laplacian w=1/6 g=1/2\n== T1 G sums to 1 at w=1/3, n=1..8 ==\n  n=0 sum G=1\n  n=1 sum G=1\n  n=2 sum G=1\n  n=3 sum G=1\n  n=4 sum G=1\n  n=5 sum G=1\n  n=6 sum G=1\n  n=7 sum G=1\n  n=8 sum G=1\nSUMMARY: NORMALIZATION (PR #8147): T5 Born variance f(1)/(3f'(1))=2/3 and \u03ba=f'(1)/(2f(1))=1/4; g=3w gives g=1/2 at w=1/6; T1 directed kernel sums to 1 at w=1/3 for n=0..8; pattern has purchase (known T3(ii) u^2 vs 4sin\u00b2(u/2) not re-claimed)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jdff2",
+  "at_utc": "20260919T041823Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8158",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block24-unreco",
+ "worker": "w-macbookpro90c72-j01c9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8158/q3_phi_spectrum_pendant.py",
+ "seed": 84559,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ab1ffd2e",
+ "started_utc": "20260919T022239Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note beyond the known Q4(a) triangle HIT \u2014 Q3 \u03c6-spectrum Z1 / p-q (\u00d73) / p+q-2r (\u00d72) and \u03c6\u00b2 isotypic squares, constancy iff p=q=r, Q2 pendant-path factors of length 2 and 3 independent of the attachment value, and the Q3(e) series z cosh z \u2212 sinh z = \u03a3 2n z^{2n+1}/(2n+1)! all hold literally"
+ },
+ "review": "Q3 phi spectrum and phi^2 isotypic squares, Q2 pendant-path constancy, and Q3(e) series hold; no new defect beyond known Q4(a) triangle HIT",
+ "what": "PR #8158 ([physics-loop] admissibility-induced-law block24 \u2014 bounded_t): attack ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915; git show origin/physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915:<note>. Create probes/work/pr8158/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8158/<script>.py\"",
+ "stdout_sha256": "dab6780edee005b462fcf979f80c86ffbb35d8065d458dde5dbecf2993af7e31",
+ "stdout_tail": "\u03c6 eigenvalues at (5,2,4): {23: 1, -1: 2, 3: 3}\nQ3: \u03c6 spectrum Z1, p-q (\u00d73), p+q-2r (\u00d72)\nQ3: Phi2 constant iff p=q=r (checked p=q=r and (3,1,2))\nQ2: pendant path k=2 factor independent of vb: p**2 + 2*p*q + 8*p*r + q**2 + 8*q*r + 16*r**2\nQ2: pendant path k=3 factor independent of vb: p**3 + 3*p**2*q + 12*p**2*r + 3*p*q**2 + 24*p*q*r + 48*p*r**2 + q**3 + 12*q**2*r + 48*q*r**2 + 64*r**3\nQ3(e): series identity holds through z^25\nSUMMARY: pattern has no purchase on this note beyond the known Q4(a) triangle HIT \u2014 Q3 \u03c6-spectrum Z1 / p-q (\u00d73) / p+q-2r (\u00d72) and \u03c6\u00b2 isotypic squares, constancy iff p=q=r, Q2 pendant-path factors of length 2 and 3 independent of the attachment value, and the Q3(e) series z cosh z \u2212 sinh z = \u03a3 2n z^{2n+1}/(2n+1)! all hold literally\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j01c9",
+  "at_utc": "20260919T022240Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

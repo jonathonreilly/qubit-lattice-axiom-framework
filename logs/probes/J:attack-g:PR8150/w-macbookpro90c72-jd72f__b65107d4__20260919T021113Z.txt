@@ -1,0 +1,11 @@
+normalizer lemma (3,1,2)-style (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)) k=2..8: gaps and closed forms checked
+normalizer lemma (3,1,2)-style (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)) k=2..8: gaps and closed forms checked
+normalizer lemma (3,1,2)-style (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)) k=2..8: gaps and closed forms checked
+normalizer lemma (3,1,2)-style (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)) k=2..8: gaps and closed forms checked
+normalizer lemma (3,1,2)-style (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)) k=2..8: gaps and closed forms checked
+path3: sites=3 orders=6 cycles=0 qualifying=4 last-fails=0
+star4: sites=5 orders=120 cycles=0 qualifying=48 last-fails=0
+plaquette: sites=4 orders=24 cycles=1 qualifying=0 last-fails=0
+grid2x3: sites=6 orders=720 cycles=3 qualifying=0 last-fails=0
+cube: sites=8 orders=40320 cycles=28 qualifying=0 last-fails=0
+SUMMARY: pattern has no purchase on this note — the normalizer lemma closed forms hold exactly for k=2..8 at five weight triples, and the cycle lemma holds on the plaquette (0/24 qualify), 2x3 and cube (0 qualify; last cycle vertex always records both neighbours), while the path of three (4/6) and four-leaf star (48/120) have qualifying orders as stated

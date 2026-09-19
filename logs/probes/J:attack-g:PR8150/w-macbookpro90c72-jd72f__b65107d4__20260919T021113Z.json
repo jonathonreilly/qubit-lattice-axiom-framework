@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8150",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block16-static",
+ "worker": "w-macbookpro90c72-jd72f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8150/normalizer_and_cycle_lemma.py",
+ "seed": 83873,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b65107d4",
+ "started_utc": "20260919T021113Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 the normalizer lemma closed forms hold exactly for k=2..8 at five weight triples, and the cycle lemma holds on the plaquette (0/24 qualify), 2x3 and cube (0 qualify; last cycle vertex always records both neighbours), while the path of three (4/6) and four-leaf star (48/120) have qualifying orders as stated"
+ },
+ "review": "Normalizer lemma closed forms hold for k=2..8 at five triples; cycle lemma holds on plaquette/2x3/cube (0 qualifying) and path3 4/6, star 48/120 as stated; no defect",
+ "what": "PR #8150 ([physics-loop] admissibility-induced-law block16 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915; git show origin/physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915:<note>. Create probes/work/pr8150/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8150/<script>.py\"",
+ "stdout_sha256": "88c6b5b3da70373b1b58ecf4c5741dece583663636451fb9c53d3a76e0cdc0d6",
+ "stdout_tail": "normalizer lemma (3,1,2)-style (Fraction(3, 1), Fraction(1, 1), Fraction(2, 1)) k=2..8: gaps and closed forms checked\nnormalizer lemma (3,1,2)-style (Fraction(5, 1), Fraction(2, 1), Fraction(4, 1)) k=2..8: gaps and closed forms checked\nnormalizer lemma (3,1,2)-style (Fraction(7, 1), Fraction(3, 1), Fraction(5, 1)) k=2..8: gaps and closed forms checked\nnormalizer lemma (3,1,2)-style (Fraction(4, 1), Fraction(4, 1), Fraction(1, 1)) k=2..8: gaps and closed forms checked\nnormalizer lemma (3,1,2)-style (Fraction(10, 1), Fraction(1, 1), Fraction(2, 1)) k=2..8: gaps and closed forms checked\npath3: sites=3 orders=6 cycles=0 qualifying=4 last-fails=0\nstar4: sites=5 orders=120 cycles=0 qualifying=48 last-fails=0\nplaquette: sites=4 orders=24 cycles=1 qualifying=0 last-fails=0\ngrid2x3: sites=6 orders=720 cycles=3 qualifying=0 last-fails=0\ncube: sites=8 orders=40320 cycles=28 qualifying=0 last-fails=0\nSUMMARY: pattern has no purchase on this note \u2014 the normalizer lemma closed forms hold exactly for k=2..8 at five weight triples, and the cycle lemma holds on the plaquette (0/24 qualify), 2x3 and cube (0 qualify; last cycle vertex always records both neighbours), while the path of three (4/6) and four-leaf star (48/120) have qualifying orders as stated\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd72f",
+  "at_utc": "20260919T021114Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

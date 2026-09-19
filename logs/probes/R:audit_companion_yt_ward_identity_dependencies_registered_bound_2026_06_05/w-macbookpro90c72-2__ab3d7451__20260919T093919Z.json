@@ -22,14 +22,21 @@
  "stdout_tail": "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10' is retained-grade in the ledger  --  ledger_effective_status:unaudited\n[PASS] g_bare=1 convention 'g_bare_rigidity_theorem_note' is historical and not retained-grade supply  --  historical conventions=True, ledger_effective_status:unaudited\n[PASS] Source note exposes G_BARE_RIGIDITY_THEOREM_NOTE.md as a one-hop convention dependency  --  the re-audit blocker requested the retained convention/rigidity edge\n[PASS] Source note preserves the finite-link scope boundary for the rigidity dependency  --  prevents using rigidity as a Wilson/beta or measured-coupling theorem\n[PASS] Target row 'yt_ward_identity_derivation_theorem' is NOT retained-grade (so it must be backticked, not linked)  --  ledger_effective_status:unaudited\n\n========================================================================\nBLOCK 10: Re-audit CASE arithmetic (no status is written)\n========================================================================\n[PASS] Open Dep 1 and non-retained convention keep the bounded row pending-chain  --  resolved = retained_pending_chain (published compute_effective_status rule)\n[PASS] Linking another conditional target also leaves the row pending-chain  --  resolved = retained_pending_chain (this is why the note backticks the target row)\n\n========================================================================\nTOTAL: 32 PASS / 1 FAIL\n========================================================================\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T093919Z",
+  "at_utc": "20260919T094820Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ab3d7451 differs from the current HEAD b6e64c45 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'TOTAL: 32 PASS / 1 FAIL' vs cache 'TOTAL: 33 PASS / 0 FAIL'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_yt_ward_identity_dependencies_registered_bound_2026_06_05.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, audit-epoch reset: the dependency gate requires Dep 2 basis beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10 retained-grade; its committed ledger shard reads retained/audited_clean through 5c8fd27b9d (2026-08-02) and unaudited/unaudited from 5e74dd6ed3 (2026-08-07) onward with note_hash a8fb8bff35 unchanged (TOTAL 32 PASS / 1 FAIL vs cache 33/0); not a physics result about the note.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T094820Z"
  }
 }

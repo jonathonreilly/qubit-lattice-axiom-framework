@@ -23,14 +23,21 @@
  "stdout_tail": "rent_runner_exit_zero :: returncode=0\nPASS parent_runner_summary_present\nFAIL parent_runner_pass_count_forty_seven :: pass_count=48\nPASS parent_runner_fail_count_zero :: fail_count=0\nPASS parent_runner_transcript_contains_neutral_ray\nPASS parent_runner_transcript_contains_q_neutral_tangent\nPASS parent_runner_transcript_contains_wz_ratio_jacobian_cancel\nPASS parent_runner_transcript_contains_yt_closure_not_allowed\nPASS parent_runner_transcript_contains_top_response_absent\nPASS algebraic_blocks_no_grade_field_token_0\nPASS algebraic_blocks_no_grade_field_token_1\nPASS algebraic_blocks_no_grade_field_token_2\nPASS algebraic_blocks_no_grade_field_token_3\nPASS algebraic_blocks_no_grade_field_token_4\nPASS algebraic_blocks_no_grade_field_token_5\nPASS algebraic_blocks_no_grade_field_token_6\nPASS weak_dependency_still_declared\nPASS weak_dependency_still_pending\nPASS companion_does_not_claim_dep_closure\nPASS neutral_ray_projection_holds\nPASS neutral_tangent_projection_holds\nPASS neutral_tangent_q_charge_zero\nPASS wz_response_ratio_matches_expected\nPASS parent_note_disclaims_top_closure\nPASS parent_note_review_boundary_present\nPASS companion_declares_meta_type\nPASS companion_disclaims_new_theorem\nPASS companion_disclaims_direct_status_change\nPASS companion_keeps_dependency_pending\nPASS companion_disclaims_physical_closure\n========================================================================\nSUMMARY: PASS=29 FAIL=1\n========================================================================\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T093919Z",
+  "at_utc": "20260919T094820Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ab3d7451 differs from the current HEAD b6e64c45 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=29 FAIL=1' vs cache 'SUMMARY: PASS=30 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main: the companion (landed 89421bb057, 2026-06-05) pins parent_pass == 47 for scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py; the parent grew to 48 checks at ad60938b79 ('review: split yt strict wz carrier bridge', 2026-06-20; parent cache PASS=47 at 89421bb057, PASS=48 from ad60938b79), and the pin was never updated (SUMMARY PASS=29 FAIL=1 vs cache 30/0).",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T094820Z"
  }
 }

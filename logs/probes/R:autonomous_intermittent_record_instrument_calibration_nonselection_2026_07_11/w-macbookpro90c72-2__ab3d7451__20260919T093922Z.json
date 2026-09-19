@@ -23,14 +23,21 @@
  "stdout_tail": "t imply blank-sector cross-label exclusion\nPASS V01: hadamard_blank corroborates supplied-menu family equivariance\nPASS V02: hadamard_locked corroborates supplied-menu family equivariance\nPASS V03: complex_blank corroborates supplied-menu family equivariance\nPASS V04: complex_locked corroborates supplied-menu family equivariance\nPASS V05: a one-Kraus no-record map has scalar effect q I\nPASS V06: a multi-Kraus no-record map can have the same scalar effect\nPASS V07: the scalar no-record effect does not select the conditional no-record channel\nPASS V08: the one-Kraus special case is sqrt(q) times a unitary\nFAIL S01: source note exists\nFAIL S02: source contains boundary marker: conditional repeat/exclusivity\nFAIL S03: source contains boundary marker: does not identify the external labels as framework Records\nFAIL S04: source contains boundary marker: does not derive probability semantics\nFAIL S05: source contains boundary marker: does not select event order, rate, or the no-record channel\nFAIL S06: source contains boundary marker: does not establish that the axioms require amendment\nBOUNDARY: finite Kraus representation is named mathematical authority; physical CP-instrument applicability, the supplied menu, probability semantics, cross-label exclusion, and event neutrality remain conditional/open and gain no chain-satisfying premise authority.\nBOUNDARY: auxiliary locked-register absorption and same-map reuse do not imply blank-sector cross-label exclusion.\nTOTAL: PASS=35 FAIL=6\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T093924Z",
+  "at_utc": "20260919T094820Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ab3d7451 differs from the current HEAD b6e64c45 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=35 FAIL=6' vs cache 'TOTAL: PASS=41 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Source note docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md was moved to archive/notes/docs/ (#8198 class), so the runner fails only S01 'source note exists' and the five S02-S06 boundary-marker reads (PASS=35 FAIL=6 vs cache 41); every computed check passes; repository hygiene, not a physics result.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T094820Z"
  }
 }

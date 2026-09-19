@@ -23,14 +23,21 @@
  "stdout_tail": "locked backlog\nPASS: the top ready keystones are critical-criticality (foundational)\n--- D: dependency cycles (Tarjan SCCs) -- KEYSTONE cycles block the top keystones ---\n  cyclic SCCs (mutual-dependency clusters; NONE become 'ready' until broken)=11\n    [KEYSTONE, max-fanout  599, size 2] quark_cp_carrier_slot_minimality <-> quark_cp_carrier_completion_note\n    [KEYSTONE, max-fanout  559, size 105] strong_cp_gauge_theta_not_forced <-> strong_cp_theta_zero_audited_sco <-> newphysics_np_strong_cp_theta_no...\n    [minor, max-fanout   27, size 2] area_law_native_car_semantics_ti <-> area_law_primitive_car_edge_iden\n    [minor, max-fanout   15, size 2] hubble_lane5_cosmic_history_rati <-> hubble_lane5_eta_retirement_gate\n    [minor, max-fanout    9, size 2] route_a_radius_one_parity_even_c <-> route_a_fixed_type_atlas_correct\n    [minor, max-fanout    2, size 2] staggered_gbare_trace_surface_br <-> gbare_root_su2_scale_transport_b\nPASS: cyclic SCCs exist (mutual-dep clusters that never become 'ready' until broken)\nPASS: at least one KEYSTONE cycle exists (a top keystone trapped in a cycle => break-first)\nFAIL: the highest-fanout keystones are TRAPPED in cycles (RP / observable-principle / staggered) -> breaking these cycles is the PREREQUISITE for the keystone unlock\n--- D2: gated sources (secondary) ---\n  gated/dropped sources (excluded from audit; review for ungating)=1134\nPASS: gated sources exist and are a (secondary) unlock target (review for ungating)\n\nTOTAL: PASS=9 FAIL=3\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T093922Z",
+  "at_utc": "20260919T094820Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ab3d7451 differs from the current HEAD b6e64c45 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=9 FAIL=3' vs cache 'TOTAL: PASS=10 FAIL=2'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, audit-state diagnostic: after the 2026-08-07 epoch invalidation every one of 4880 ledger rows is unaudited, READY-now is 1748/4504 = 38.8% of blocked rows, above the runner's 25% bound (cache 637/2971 = 21.4%), so 'only a minority of blocked rows are ready-now' now fails (PASS=9 FAIL=3 vs cache PASS=10 FAIL=2); not a physics result.",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T094820Z"
  }
 }

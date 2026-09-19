@@ -23,14 +23,21 @@
  "stdout_tail": "ASS G33  the total is 15800 plus half the squared spread about two, both routes agreeing\nPASS G34  carrying four needs 5664 odd meetings, so all 132 carriers sit at 18632 or above\nPASS G35  lightest carrier 19640, 1008 over the floor, spread [252, 2832, 9632, 2832, 252, 0], none above four\nPASS G36  ranked by cuttings met twice the top 60 are the carriers, least 9616, next 8688\nPASS G37  ranked by odd meetings they sit 57973th to 58032th, 57972 shapes above them\nPASS G38  the largest multiplicity reached is 8 and 42192 shapes pass four\nPASS G39  the linear form in odd count and twice-met holds on 17544, exactly those capped at four\nPASS G40  over all 132 carriers the squared spread runs 7680 to 16832 and takes 4 values\nper_element: checked -- all 192 pieces enter the complete induced-Q4 multiplicity-profile census\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked and not executed -- this finite binary incidence object has no modal decomposition\nper_block: checked -- every one of the 15800 cutting rows enters the forced-mean and ranking checks\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim\nelapsed under 300 s peak memory under 2500 MB\nPASS G41  inside its time and memory allowance\nPASS G42  its output stays under 10000 characters\n\nRECEIPT outputs/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=43 FAIL=1\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T075411Z",
+  "at_utc": "20260919T081917Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 016d2559 differs from the current HEAD 9d5b9ad8 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=43 FAIL=1' vs cache 'TOTAL: PASS=44 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "stale input pin (#8288 class): committed Cycle 752 receipts pin requirements-release.txt e153eea331, now 7756c1080a after f6f861e8f0; all other checked conjuncts match; dependency.cycle752 fails on inputs_current",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T081917Z"
  }
 }

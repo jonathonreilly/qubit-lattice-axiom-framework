@@ -23,14 +23,21 @@
  "stdout_tail": "llisions  the 132 minimum carriers give 108 exact vectors and 24 disjoint colliding pairs\nPASS independent.q4_collisions  all 59736 Q4 shapes give 53632 vectors; every repeated SHA-512 bucket is checked exactly\nPASS independent.binary_shadow  independent packed elimination gives GF(2) row/column rank 88 and reaches all eight readings\nPASS independent.localization  both local routes agree on all 132 carriers; none reaches baseline and the minimum is 19640\nFAIL independent.primary_contract  the Cycle 754 primary receipt matches the independent shadow and collision reconstruction\nPASS hostile.primary_rank  a one-unit reversion of the primary rational rank is rejected\nPASS hostile.primary_boundary  a reversion that turns rank-route failure into a two-cover verdict is rejected\nPASS hostile.cycle753_status  a failed direct predecessor certificate is rejected\nper_element: checked -- all 192 piece columns enter the independent exact shadow checks\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked and not executed -- this finite binary incidence object has no modal decomposition\nper_block: checked -- all 15800 cutting rows enter the independent rank and collision reconstruction\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim\nRECEIPT outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=12 FAIL=3\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T074556Z",
+  "at_utc": "20260919T081917Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 016d2559 differs from the current HEAD 9d5b9ad8 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=12 FAIL=3' vs cache 'TOTAL: PASS=15 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "stale input pin (#8288 class): Cycle 753 receipts pin requirements-release.txt e153eea331, now 7756c1080a after f6f861e8f0; cycle753_contract and live replay fail on inputs_current; primary_contract also binds the same pin",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T081917Z"
  }
 }

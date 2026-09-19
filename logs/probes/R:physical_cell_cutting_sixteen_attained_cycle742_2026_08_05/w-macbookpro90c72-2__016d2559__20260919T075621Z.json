@@ -23,14 +23,21 @@
  "stdout_tail": "FAIL DEP1  Cycle 741 exact lower-bound contract failed\nTOTAL: PASS=0 FAIL=1\n",
  "checked": {
   "by": "w-macbookpro90c72-2",
-  "at_utc": "20260919T075621Z",
+  "at_utc": "20260919T081917Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 016d2559 differs from the current HEAD 9d5b9ad8 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=0 FAIL=1' vs cache 'TOTAL: PASS=58 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "stale input pin (#8288 class): committed Cycle 741 independent receipt pins requirements-release.txt e153eea331, now 7756c1080a after f6f861e8f0; every other C741_OK conjunct matches; DEP1 stops the run",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T081917Z"
  }
 }

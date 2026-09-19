@@ -13,7 +13,7 @@ structure factor against sigma^2/(1 - |phi(k)|^2), phi = (1 + sum_j e^{i k_j})/n
 import numpy as np, sys, time
 def A(k): return 1.0 / np.tanh(k) - 1.0 / k
 sym = sys.argv[1].endswith("s"); dim = int(sys.argv[1].rstrip("s")); menu = sys.argv[2]; beta = float(sys.argv[3]); L = int(sys.argv[4]); T = int(sys.argv[5]); T0 = int(sys.argv[6]); seed = int(sys.argv[7])
-n = (2 * dim + 1) if sym else (dim + 1); shape = (L,) * dim; N = L ** dim; rng = np.random.default_rng(seed); sigma2 = A(n * beta) / (n * beta)
+n = (2 * dim + 1) if sym else (dim + 1); shape = (L,) * dim; N = L ** dim; rng = np.random.default_rng(seed); sigma2 = A(n * beta) / (n * beta) if beta > 0 else float("nan")
 def menu_vectors(name):
     if name == "axes6": M = [(0, 0, 1), (0, 0, -1), (1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0)]
     elif name == "corners8": M = [(a, b, c) for c in (1, -1) for a in (1, -1) for b in (1, -1)]

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR8150",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block16-static",
+ "worker": "w-macbookpro90c72-j1118",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8150/no_fourier_normalization.py",
+ "seed": 89638,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b02c4ced",
+ "started_utc": "20260919T034718Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "NORMALIZATION (PR #8150): no Fourier sums, structure factors, 2 pi, 1/L, 1/N, torus, or conjugation conventions in the static-vs-mixture flip-monotonicity note; pattern has no purchase"
+ },
+ "review": "NORMALIZATION has no purchase: the mixture/flip-monotonicity note has no Fourier sums, 2 pi, 1/L, 1/N, torus or conjugation conventions.",
+ "what": "PR #8150 ([physics-loop] admissibility-induced-law block16 \u2014 bounded_t): attack ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915; git show origin/physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915:<note>. Create probes/work/pr8150/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8150/<script>.py\"",
+ "stdout_sha256": "f3bee775ec2039aebd15f2e1a734338ba8177c873f399591d47ef57f2b053706",
+ "stdout_tail": "needle '\\\\bFourier\\\\b': 0\nneedle '\\\\bParseval\\\\b': 0\nneedle '\\\\bstructure factor': 0\nneedle '2\\\\s*\u03c0': 0\nneedle '\\\\b2\\\\s*pi\\\\b': 0\nneedle 'e\\\\^\\\\{ik': 0\nneedle '\\\\bconjugation\\\\b': 0\nneedle '\\\\bcomplex conjugate\\\\b': 0\nneedle '\\\\btorus\\\\b': 0\nneedle '1/N\\\\b': 0\nneedle '1/L\\\\b': 0\nSUMMARY: NORMALIZATION (PR #8150): no Fourier sums, structure factors, 2 pi, 1/L, 1/N, torus, or conjugation conventions in the static-vs-mixture flip-monotonicity note; pattern has no purchase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1118",
+  "at_utc": "20260919T034723Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+needle '\\bFourier\\b': 0
+needle '\\bParseval\\b': 0
+needle '\\bstructure factor': 0
+needle '2\\s*π': 0
+needle '\\b2\\s*pi\\b': 0
+needle 'e\\^\\{ik': 0
+needle '\\bconjugation\\b': 0
+needle '\\bcomplex conjugate\\b': 0
+needle '\\btorus\\b': 0
+needle '1/N\\b': 0
+needle '1/L\\b': 0
+SUMMARY: NORMALIZATION (PR #8150): no Fourier sums, structure factors, 2 pi, 1/L, 1/N, torus, or conjugation conventions in the static-vs-mixture flip-monotonicity note; pattern has no purchase

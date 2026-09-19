@@ -1,0 +1,39 @@
+{
+ "task": "J:note:U1_LOCAL_REVERSIBLE_YEE_LEAPFROG_TICK_BOUNDED_THEOREM_NOTE_2026_09_03",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j1ca6",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_LOCAL_REVERSIBLE_YEE_LEAPFROG_TICK_BO/realspace_exact_shears_multi_h_and_spectrum.py",
+ "seed": 22814,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e78f6d5d",
+ "started_utc": "20260919T130014Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": [
+   "F1-F3,F5 exact: 25 (L, h) cases, L = 2..6, h in {1/2,1/3,2/5,1/7,4/7}: layer locality, U(-h)U(h)=I, T U T = U(-h), per-layer Gauss, U^T M_h U = M_h all hold: True; composed distances on side >= 8: [0, 1, 2, 3]",
+   "F4 schedule: 1/32 grid solutions [('1/2', '1', '1/2')]; quarter control inverse False",
+   "F6,F7 lambda_max(C^T C) = 12.0000000000; lambda_min(M_h) = 1 - 3h^2 (h=1/2: 0.250000); h=1/sqrt3: -6.4e-16; h=2/3: -0.3333, radius 3.0000; spectrum dev 6.1e-15, count failures 0; extra zero phases on L=2..40: 0",
+   "F8 covariance: L=2: 48/48, L=3: 48/48, L=4: 48/48",
+   "F9 one-step halving ratios [8.149, 8.04, 8.01] (-> 8), global ratios [4.119, 4.029, 4.007] (-> 4)",
+   "hits=0; runtime 1s"
+  ]
+ },
+ "review": "Output matches the task: on an independently built real-space doubled complex, exact integer arithmetic over 25 (L, h) cases (L = 2..6, h in {1/2, 1/3, 2/5, 1/7, 4/7}; the runner covers L=3 at h=1/2) confirms: every layer row reads its own site plus at most four distance-1 neighbours, and the composed tick has distances exactly {0,1,2,3} on side >= 8; U(-h)U(h) = I and T U_h T = U(-h); both Gauss rows are unchanged by each shear separately; U^T M_h U = M_h. Half-full-half is the only solution on the 1/32 grid of [-1,2]^3 (912673 points), and the quarter/three-quarter control fails U(-h)U(h) = I. lambda_min(M_h) = 1 - 3h^2 (lambda_max(C^TC) = 12), with an instability of radius 3 at h = 2/3. Real-space eigenphases on L = 2..6 match {+-theta_h twice, 0 twice} per momentum to 6e-15, with 2(N-1) positive phases and no extra zero phase on L = 2..40. All 48 signed permutations fix C. One-step error ratios tend to 8 and global ratios to 4. No falsifier fired.",
+ "what": "Note on main: docs/U1_LOCAL_REVERSIBLE_YEE_LEAPFROG_TICK_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_LOCAL_REVERSIBLE_YEE_LEAPFROG_TICK_BO/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_LOCAL_REVERSIBLE_YEE_LEAPFROG_TICK_BO/<script>.py\"",
+ "stdout_sha256": "2436ee3d000092d7269085efefb9b19b77dce743c85857a877cb2396f50d718d",
+ "stdout_tail": ")\n  spectral radius of U_h: h=1/2: 1.000000000000; h=2/3: 3.000000 (instability)\n  real-space eigenphases of U_h vs {+-theta_h twice, 0 twice} per momentum (L=2..6, h=1/2, 0.3): max dev 6.11e-15; positive-phase count 2(N-1) failures 0\n  extra zero-phase momenta on L = 2..40 at h = 1/2: 0\nSUMMARY: F6,F7 lambda_max(C^T C) = 12.0000000000; lambda_min(M_h) = 1 - 3h^2 (h=1/2: 0.250000); h=1/sqrt3: -6.4e-16; h=2/3: -0.3333, radius 3.0000; spectrum dev 6.1e-15, count failures 0; extra zero phases on L=2..40: 0\n==============================================================================\nF8  48 signed permutations, polar E / axial B, real space\n  L=2: signed permutations fixing C (hence both shears and U_h): 48/48\n  L=3: signed permutations fixing C (hence both shears and U_h): 48/48\n  L=4: signed permutations fixing C (hence both shears and U_h): 48/48\nSUMMARY: F8 covariance: L=2: 48/48, L=3: 48/48, L=4: 48/48\n==============================================================================\nF9  approach to the continuous generator\n  one-step errors ['3.692e-02', '4.530e-03', '5.634e-04', '7.034e-05'], halving ratios ['8.1493', '8.0396', '8.0101'] (-> 8); global errors at T=1.6 ['1.215e-01', '2.949e-02', '7.320e-03', '1.827e-03'], ratios ['4.1191', '4.0294', '4.0073'] (-> 4)\nSUMMARY: F9 one-step halving ratios [8.149, 8.04, 8.01] (-> 8), global ratios [4.119, 4.029, 4.007] (-> 4)\n==============================================================================\nSUMMARY: hits=0; runtime 1s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1ca6",
+  "at_utc": "20260919T130025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

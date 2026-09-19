@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8033",
+ "type": "judgment",
+ "lane": "finite-pw-confinement-block43-20260907",
+ "worker": "w-macbookpro90c72-j7145",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8033/occupied_link_energy_floor.py",
+ "seed": 84801,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cfb64be6",
+ "started_utc": "20260919T022641Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PROOF STEP BY BRUTE FORCE on the finite-R occupied-link energy [p^2+pq+q^2+3p+3q]/a (PR #8033): min over p+q<=R, (p,q)!=(0,0) is 4 at (1,0) and (0,1) for every R=1..16; pattern has purchase and the step holds as written"
+ },
+ "review": "Occupied-link energy p^2+pq+q^2+3p+3q has min 4 at (1,0) and (0,1) for every cutoff R=1..16; the 4/a floor holds as written.",
+ "what": "PR #8033 ([physics-loop] finite-pw-confinement block43 conditional-sup): attack GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/finite-pw-confinement-block43-20260907; git show origin/codex/finite-pw-confinement-block43-20260907:<note>. Create probes/work/pr8033/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8033/<script>.py\"",
+ "stdout_sha256": "66bb168835e993b1bdc941bf3673e460da3b6994febc63fecdac52fab97668af",
+ "stdout_tail": "R=1 n_irreps=3 minC=4 at [(0, 1), (1, 0)]\nR=2 n_irreps=6 minC=4 at [(0, 1), (1, 0)]\nR=3 n_irreps=10 minC=4 at [(0, 1), (1, 0)]\nR=4 n_irreps=15 minC=4 at [(0, 1), (1, 0)]\nR=5 n_irreps=21 minC=4 at [(0, 1), (1, 0)]\nR=6 n_irreps=28 minC=4 at [(0, 1), (1, 0)]\nR=7 n_irreps=36 minC=4 at [(0, 1), (1, 0)]\nR=8 n_irreps=45 minC=4 at [(0, 1), (1, 0)]\nR=9 n_irreps=55 minC=4 at [(0, 1), (1, 0)]\nR=10 n_irreps=66 minC=4 at [(0, 1), (1, 0)]\nR=11 n_irreps=78 minC=4 at [(0, 1), (1, 0)]\nR=12 n_irreps=91 minC=4 at [(0, 1), (1, 0)]\nR=13 n_irreps=105 minC=4 at [(0, 1), (1, 0)]\nR=14 n_irreps=120 minC=4 at [(0, 1), (1, 0)]\nR=15 n_irreps=136 minC=4 at [(0, 1), (1, 0)]\nR=16 n_irreps=153 minC=4 at [(0, 1), (1, 0)]\nSUMMARY: PROOF STEP BY BRUTE FORCE on the finite-R occupied-link energy [p^2+pq+q^2+3p+3q]/a (PR #8033): min over p+q<=R, (p,q)!=(0,0) is 4 at (1,0) and (0,1) for every R=1..16; pattern has purchase and the step holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7145",
+  "at_utc": "20260919T022641Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

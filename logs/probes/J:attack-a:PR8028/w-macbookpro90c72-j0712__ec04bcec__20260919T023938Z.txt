@@ -1,0 +1,11 @@
+finite cubic box: 64 verts, 144 oriented links, interior outdeg 3: True
+shortest path x=(0, 0, 0) -> y=(1, 0, 0) has L=1 occupied links: True
+shortest path x=(0, 0, 0) -> y=(2, 0, 0) has L=2 occupied links: True
+shortest path x=(0, 0, 0) -> y=(3, 0, 0) has L=3 occupied links: True
+Λ_0={0,e1,e2,e3} exists: True
+endpoint tensor E=C^3⊗C^3* has dim 9; CS factor 3: True
+Dirichlet extra (3/2)*(8/3)=4 and Σ_A Tr(T_A T_A)=8: True
+r=3u/4 with u=av exists in the parameter range v>=0: True
+Z^3 box is bipartite (no triangles): True
+normalized tensor-vector Ω U_ab/√3 has Σ_ab |Ψ_ab|^2=|Ω|^2: True
+SUMMARY: pattern has no purchase on this note: the finite cubic graph, shortest paths of length L, 3 outgoing links per cell, Λ_0, dim-9 endpoint tensor with CS factor 3, the 4/a kinetic identity, r=3u/4, and the open-line trial normalization all exist as written

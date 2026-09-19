@@ -1,0 +1,7 @@
+CHECK I1a_Zpp: OK
+CHECK I1b_cross_zz: OK (Z(++ )Z(--)/(Z(+-)Z(-+)) = (p**7 + q**7 + 4*r**7)*(p**5*q**2 + p**2*q**5 + 4*r**7)/(p**6*q + p*q**6 + 4*r**7)**2 != 1)
+CHECK I1c_cross_zx: OK (cross-ratio for +z/+x also != 1)
+CHECK I1d_not_pairwise: OK (log Z is not a sum of pair terms on the 7-stencil)
+CHECK I2_form: OK (Z_x = sum_{u in 6 axes} prod_{y in N(x)} W(u, s_y) with W in {p,q,r})
+SUMMARY: PARTIAL the stationary weight pi ~ prod_x Z_x of six-axis light-cone formation has Z_x = sum_u prod_{y in N(x)} W(u,s_y), a 7-body (resp. 6-body) interaction; it is not pairwise: the 7-stencil cross-ratio Z(sA,sB) Z(+,+)/[Z(sA,+) Z(+,sB)] is not 1 for (sA,sB) in ({'-z', '+z'}, {'+z', '+x'}). Chessboard/pair-RP for pi is not the static-law W. (5/5 checks passed)
+HIT: pi's interaction is 7-body log Z, not pairwise (cross-ratio != 1 on the 7-stencil); Z = sum_u prod_y W(u,s_y)

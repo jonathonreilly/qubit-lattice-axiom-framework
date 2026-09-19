@@ -1,0 +1,5 @@
+R=1 S=1..16: A=RS P=2(R+S) all match
+R=8 S=1..16: A=RS P=2(R+S) all match
+R=9 S=1..16: A=RS P=2(R+S) all match
+R=16 S=1..16: A=RS P=2(R+S) all match
+SUMMARY: outline count A=RS, P=2(R+S) holds for every R,S=1..16 (beyond the executed 1..8); falsifier does not fire

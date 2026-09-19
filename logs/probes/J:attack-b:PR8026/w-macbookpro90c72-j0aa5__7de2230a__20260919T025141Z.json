@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8026",
+ "type": "judgment",
+ "lane": "spatial-area-block36-20260907",
+ "worker": "w-macbookpro90c72-j0aa5",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8026/same_test_area_perimeter.py",
+ "seed": 86301,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7de2230a",
+ "started_utc": "20260919T025141Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note \u2014 A=RS and P=2(R+S) hold for both Tr and ReTr on sampled rectangles, and the same leading-power test separates the square (u^1) from two-adjacent-faces (u^2)"
+ },
+ "review": "A=RS P=2(R+S) hold for Tr and ReTr; leading u-power separates square from two-adjacent-faces; no defect",
+ "what": "PR #8026 ([physics-loop] spatial-area block36 conditional-support): attack GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/spatial-area-block36-20260907; git show origin/codex/spatial-area-block36-20260907:<note>. Create probes/work/pr8026/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8026/<script>.py\"",
+ "stdout_sha256": "dfc38fdcba8c36e913955a50054bb69d9d92c085fff01b006bf81dd26104db00",
+ "stdout_tail": "R=1 S=1: A=1 P=4 (Tr and ReTr)\nR=1 S=2: A=2 P=6 (Tr and ReTr)\nR=2 S=2: A=4 P=8 (Tr and ReTr)\nR=3 S=5: A=15 P=16 (Tr and ReTr)\nR=8 S=1: A=8 P=18 (Tr and ReTr)\nTaylor leading powers: square u^1, two-adjacent-faces u^2\nstated coeffs 1/144 and 7/124416\nSUMMARY: pattern has no purchase on this note \u2014 A=RS and P=2(R+S) hold for both Tr and ReTr on sampled rectangles, and the same leading-power test separates the square (u^1) from two-adjacent-faces (u^2)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0aa5",
+  "at_utc": "20260919T025141Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

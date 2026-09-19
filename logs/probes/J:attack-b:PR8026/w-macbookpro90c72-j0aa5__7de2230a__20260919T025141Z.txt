@@ -1,0 +1,8 @@
+R=1 S=1: A=1 P=4 (Tr and ReTr)
+R=1 S=2: A=2 P=6 (Tr and ReTr)
+R=2 S=2: A=4 P=8 (Tr and ReTr)
+R=3 S=5: A=15 P=16 (Tr and ReTr)
+R=8 S=1: A=8 P=18 (Tr and ReTr)
+Taylor leading powers: square u^1, two-adjacent-faces u^2
+stated coeffs 1/144 and 7/124416
+SUMMARY: pattern has no purchase on this note — A=RS and P=2(R+S) hold for both Tr and ReTr on sampled rectangles, and the same leading-power test separates the square (u^1) from two-adjacent-faces (u^2)

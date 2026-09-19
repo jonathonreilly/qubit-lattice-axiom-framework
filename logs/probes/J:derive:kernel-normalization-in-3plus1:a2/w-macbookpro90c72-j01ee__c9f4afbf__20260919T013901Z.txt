@@ -1,0 +1,11 @@
+CHECK U1a_two_site: OK (|s|=1 => C_x(0)+C_y(0)+<s_z^2>=1 on 2-site 6-axis configs)
+CHECK U1b_var: OK (<s_z^2> >= m^2 so 2 C_perp(0) <= 1-m^2)
+CHECK U2_parseval: OK (C(0)=(1/V) sum_k S0(k) on L=2, values in {-1,0,1}^8)
+CHECK U3a_G4: OK
+CHECK U3b_linear_Ravg: OK
+CHECK U3c_bound_form: OK (R_avg <= (1-m^2)/(2 sigma^2 G_V))
+CHECK U3d_sw_identity: OK (2 G_4 = 1913/672; SW 1-m^2 ~ 2 sig^2 G => bound ~ 1)
+CHECK U4a_spread: OK (G-weights on L=4 range 1..8/3, not concentrated)
+CHECK U4b_not_delta: OK (heaviest mode is 8/3/1913/21 of G, not the whole mass)
+SUMMARY: PARTIAL |s|=1 gives 2 C(0)+<s_z^2>=1 and C(0)<=(1-m^2)/2; Parseval C(0)=(1/V)sum S(k); R_avg=C(0)/(sigma^2 G_V)<=(1-m^2)/(2 sigma^2 G_V) is the G-weighted average of R(k), not R(k->0). G_4=1913/1344; G-weights on L=4 are not a delta at zero, so the sum rule does not determine the IR ratio. (9/9 checks passed)
+HIT: R_avg <= (1-|m|^2)/(2 sigma^2 G_V) from |s|=1; this is the G-weighted mean of R(k), not lim_{k->0} R(k); G-weights on L=4 are spread, so a cannot be read from |m|^2 and G_3 alone

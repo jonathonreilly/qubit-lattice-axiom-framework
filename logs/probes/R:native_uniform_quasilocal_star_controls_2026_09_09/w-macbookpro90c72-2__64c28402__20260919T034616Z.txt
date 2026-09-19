@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": 11896,
+  "geometry": {
+    "4": {
+      "faces": 192,
+      "pairs": 960
+    },
+    "6": {
+      "faces": 648,
+      "pairs": 3240
+    }
+  },
+  "coefficient": "19/96",
+  "matrix_scope": "exact small Gaussian dyadics; no eigensolver",
+  "physical_runs": 0
+}

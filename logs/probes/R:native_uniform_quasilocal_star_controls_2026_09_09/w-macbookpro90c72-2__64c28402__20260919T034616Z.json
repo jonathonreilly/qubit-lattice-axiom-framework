@@ -1,0 +1,31 @@
+{
+ "task": "R:native_uniform_quasilocal_star_controls_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_uniform_quasilocal_star_controls_2026_09_09.py",
+ "seed": 89576,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034616Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d550e5c17e09912ba09032060d9012e86e857762d96c300ba7714db4c4ca6d55",
+ "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"checks\": 11896,\n  \"geometry\": {\n    \"4\": {\n      \"faces\": 192,\n      \"pairs\": 960\n    },\n    \"6\": {\n      \"faces\": 648,\n      \"pairs\": 3240\n    }\n  },\n  \"coefficient\": \"19/96\",\n  \"matrix_scope\": \"exact small Gaussian dyadics; no eigensolver\",\n  \"physical_runs\": 0\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034616Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

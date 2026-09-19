@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_bae_u1b_canonical_phase_stretch_2026_05_17.py",
+ "seed": 89478,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034438Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cc1c86cebb3781a4460cb86e5b13091bcbd0eb7ba56867b207af36415b2c4c14",
+ "stdout_tail": "--------------------\nPart 8: Review-hygiene checks\n----------------------------------------------------------------------------------------\n  [PASS] Route labels (R1)-(R5) are local stretch-attempt labels (5 routes)\n  [PASS] Retained authority KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md cited via markdown-link\n  [PASS] Retained authority CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md cited via markdown-link\n  [PASS] Retained authority CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md cited via markdown-link\n  [PASS] Retained authority CKM_CP_PHASE_RHO_ETA_TO_DELTA_NARROW_THEOREM_NOTE_2026-05-10.md cited via markdown-link\n  [PASS] 'Status authority: independent audit lane only' framing present\n  [PASS] No PDG numerical comparators in load-bearing positions\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\nPASS=45 FAIL=0\n\nVerdict (audit-companion summary):\n  All five stretch routes (R1)-(R5) fail to supply a canonical\n  direction in the U(1)_b doublet plane on Herm_circ(3) from\n  retained authorities (X1)-(X4) plus A_min. The structural-\n  character narrowing (T2) names the residue as continuous-SO(2)\n  quotient on a 2-real-dim plane; the Cycle 3 framing (T3) is\n  structurally distinct from the F3 reappearance pattern of\n  Cycles 1 / 2 (weight choice on 2-isotype decomposition).\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034439Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

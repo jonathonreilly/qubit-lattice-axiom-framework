@@ -1,0 +1,31 @@
+{
+ "task": "R:native_virtual_pair_remainder_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_virtual_pair_remainder_2026_09_08.py",
+ "seed": 89590,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034630Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "834acc6c0aa472ce3a451106d5e1e9b3f28131c793126ed9578144f0e7235d97",
+ "stdout_tail": "{\n  \"checks\": 14,\n  \"constant_terms\": [\n    \"64/49\",\n    \"24/7\",\n    \"8/343\",\n    \"2048/1029\",\n    \"2\"\n  ],\n  \"sum\": \"1286/147\",\n  \"surviving_inner_words\": {\n    \"0\": [\n      \"\"\n    ],\n    \"1\": [\n      \"E\"\n    ],\n    \"2\": [\n      \"VV\",\n      \"EE\"\n    ],\n    \"3\": [\n      \"VVE\",\n      \"VEV\",\n      \"EVV\",\n      \"EEE\"\n    ]\n  },\n  \"seconds\": 0.0026682920288294554,\n  \"rss_MiB\": 19.09375,\n  \"scope\": \"Exact finite algebraic components only; operator proof is separate.\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034630Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

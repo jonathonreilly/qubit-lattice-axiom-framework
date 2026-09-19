@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_axiom_first_lattice_noether_record_invariance_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_axiom_first_lattice_noether_record_invariance_2026_06_04.py",
+ "seed": 89476,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034436Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8a0051b01ac159fcfdbd8e8c0d99a28e193291f4900fd49e0f15bb21343d5ad7",
+ "stdout_tail": "field_present\nPASS parent_note_hash_matches_ledger\nPASS parent_deps_field_present :: count=8\nPASS parent_deps_include_required_sources :: missing=[]\nPASS parent_deps_omit_record_specific_sources :: count=8\nPASS parent_current_status_fields_present :: effective_status=unaudited, audit_status=unaudited\nPASS parent_load_bearing_block_present\nPASS parent_load_bearing_contains_noether_phrase_0\nPASS parent_load_bearing_contains_noether_phrase_1\nPASS parent_load_bearing_contains_noether_phrase_2\nPASS parent_load_bearing_contains_noether_phrase_3\nPASS parent_load_bearing_contains_noether_phrase_4\nPASS parent_load_bearing_contains_noether_phrase_5\nPASS parent_load_bearing_contains_noether_phrase_6\nPASS parent_load_bearing_contains_noether_phrase_7\nPASS parent_load_bearing_contains_noether_phrase_8\nPASS parent_load_bearing_contains_noether_phrase_9\nPASS parent_load_bearing_omits_record_axiom_terms\nPASS parent_runner_exit_zero :: returncode=0\nPASS parent_runner_summary_present\nPASS parent_runner_passed_all_live_exhibits :: passed=9/9\nPASS record_marker_true_exit_zero :: returncode=0\nPASS record_marker_does_not_change_parent_output\nPASS companion_declares_meta_type\nPASS companion_disclaims_new_theorem\nPASS companion_disclaims_verdict_change\nPASS companion_keeps_dependency_boundary\nPASS companion_marks_axioms_not_support\n========================================================================\nSUMMARY: PASS=35 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034437Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_axiom_first_lattice_noether_record_invariance_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

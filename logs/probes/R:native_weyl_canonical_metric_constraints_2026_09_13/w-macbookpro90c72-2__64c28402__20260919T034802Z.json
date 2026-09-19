@@ -1,0 +1,35 @@
+{
+ "task": "R:native_weyl_canonical_metric_constraints_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_weyl_canonical_metric_constraints_2026_09_13.py",
+ "seed": 89682,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034802Z",
+ "elapsed_s": 7.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=274 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6c8a37d5b5a867da050af4ea0972d38c9e0ea99248bb4c1399798528cad2f025",
+ "stdout_tail": "Taylor_remainder_refinement_-1\",\n      \"errors\": [\n        0.018605210954485113,\n        0.004923360227828845,\n        0.0013448546646279418,\n        0.00035446006902501576\n      ]\n    },\n    {\n      \"name\": \"native_time_shift_asymptotic_refinement_1\",\n      \"errors\": [\n        0.03619542019349215,\n        0.022588435781596323,\n        0.012489817586942882,\n        0.006502129869157114\n      ]\n    },\n    {\n      \"name\": \"native_time_shift_Taylor_remainder_refinement_1\",\n      \"errors\": [\n        0.03304812160940937,\n        0.007318696388552505,\n        0.0016674886930692857,\n        0.0003956225699688878\n      ]\n    }\n  ],\n  \"source_sha256\": \"22bd040d4faaeb9acaae21551aa649339d61c13e3bcb3a08a8fa046e08982a60\",\n  \"elapsed_seconds\": 6.585602540988475,\n  \"scope\": \"Author exact algebra and finite-jet challenges; classical conditional closure is a written argument. No quantum constraint or axiom-selection claim.\"\n}\nTOTAL: PASS=274 FAIL=0\nper_element: exact Pauli, canonical curvature and coefficient identities checked; no axiom selection follows.\nper_site: finite CAR hopping and protected-edge placement checked with their parity domain explicit.\nper_mode: both specified Wilson node jets and moving-frame source matrices checked; quantum interactions remain open.\nper_block: periodic source consistency through 96 sites per axis and explicit product-bracket witnesses checked.\nlattice_wide: written smooth continuum arguments supplied; finite samples do not prove quantum metric dynamics.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034809Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_weyl_canonical_metric_constraints_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

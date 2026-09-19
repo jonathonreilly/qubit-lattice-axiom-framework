@@ -1,0 +1,31 @@
+{
+ "task": "R:native_virtual_pair_sixth_global_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_virtual_pair_sixth_global_2026_09_08.py",
+ "seed": 89604,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034644Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "42fcd773f427501b07d2f106b2607cf811c04af96603a87fe97339e2eb4e9187",
+ "stdout_tail": "        ],\n          \"bits\": [\n            0,\n            1,\n            1\n          ],\n          \"E\": [\n            \"0\",\n            \"0\",\n            \"-3/2\",\n            \"0\",\n            \"7/8\",\n            \"0\",\n            \"-35/32\"\n          ]\n        },\n        {\n          \"shape\": \"path\",\n          \"edges\": [\n            0,\n            1,\n            16\n          ],\n          \"bits\": [\n            0,\n            1,\n            0\n          ],\n          \"E\": [\n            \"0\",\n            \"0\",\n            \"-3/2\",\n            \"0\",\n            \"7/8\",\n            \"0\",\n            \"-9/8\"\n          ]\n        },\n        {\n          \"shape\": \"path\",\n          \"edges\": [\n            3,\n            1,\n            11\n          ],\n          \"bits\": [\n            1,\n            1,\n            1\n          ],\n          \"E\": [\n            \"0\",\n            \"0\",\n            \"-3/2\",\n            \"0\",\n            \"7/8\",\n            \"0\",\n            \"-35/32\"\n          ]\n        },\n        {\n          \"shape\": \"path\",\n          \"edges\": [\n            3,\n            1,\n            16\n          ],\n          \"bits\": [\n            1,\n            1,\n            0\n          ],\n          \"E\": [\n            \"0\",\n            \"0\",\n            \"-3/2\",\n            \"0\",\n            \"7/8\",\n            \"0\",\n            \"-35/32\"\n          ]\n        }\n      ]\n    }\n  ],\n  \"input_sha256\": \"893b968c6ff25569f751c767ecd2a38bce3f7a79d1bf670902b6fccf0e4af47b\",\n  \"seconds\": 0.07245766697451472,\n  \"rss_MiB\": 24.234375\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034644Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

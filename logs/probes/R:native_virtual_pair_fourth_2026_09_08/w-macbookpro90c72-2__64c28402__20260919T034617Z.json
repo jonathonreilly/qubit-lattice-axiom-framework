@@ -1,0 +1,31 @@
+{
+ "task": "R:native_virtual_pair_fourth_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_virtual_pair_fourth_2026_09_08.py",
+ "seed": 89577,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034617Z",
+ "elapsed_s": 7.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f9c75c25ed1ebb0c125031401f9727e3450b912f79425a211a1ddd7876c6d1a7",
+ "stdout_tail": "0\n      ],\n      \"irreducible\": \"0\",\n      \"folded\": \"1/4\",\n      \"native_total\": \"1/4\",\n      \"bare_total\": \"-1/4\",\n      \"statuses\": {\n        \"reducible\": 2,\n        \"irreducible\": 4\n      }\n    },\n    {\n      \"edges\": [\n        188,\n        191\n      ],\n      \"irreducible\": \"-1/4\",\n      \"folded\": \"1/4\",\n      \"native_total\": \"0\",\n      \"bare_total\": \"0\",\n      \"statuses\": {\n        \"reducible\": 2,\n        \"irreducible\": 4\n      }\n    },\n    {\n      \"edges\": [\n        189,\n        190\n      ],\n      \"irreducible\": \"-1/4\",\n      \"folded\": \"1/4\",\n      \"native_total\": \"0\",\n      \"bare_total\": \"0\",\n      \"statuses\": {\n        \"reducible\": 2,\n        \"irreducible\": 4\n      }\n    },\n    {\n      \"edges\": [\n        189,\n        191\n      ],\n      \"irreducible\": \"0\",\n      \"folded\": \"1/4\",\n      \"native_total\": \"1/4\",\n      \"bare_total\": \"-1/4\",\n      \"statuses\": {\n        \"reducible\": 2,\n        \"irreducible\": 4\n      }\n    },\n    {\n      \"edges\": [\n        190,\n        191\n      ],\n      \"irreducible\": \"0\",\n      \"folded\": \"1/4\",\n      \"native_total\": \"1/4\",\n      \"bare_total\": \"-1/4\",\n      \"statuses\": {\n        \"reducible\": 2,\n        \"irreducible\": 4\n      }\n    }\n  ],\n  \"pair_types\": {\n    \"True:1\": 576,\n    \"True:0\": 384,\n    \"False:0\": 8736,\n    \"False:1\": 8640\n  },\n  \"winding\": {\n    \"cycle\": [\n      0,\n      16,\n      32,\n      48\n    ],\n    \"eta\": -1,\n    \"coefficient\": \"-1/2\"\n  },\n  \"source_sha256\": \"1495920838ff7e6f60ca11bbe55d13603a0af51ccf08f98a185c173e054a4160\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034624Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

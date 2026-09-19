@@ -1,0 +1,38 @@
+{
+ "task": "R:all_nine_six_context_shared_ancestry_cycle177_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "all",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/all_nine_six_context_shared_ancestry_cycle177_2026_07_16.py",
+ "seed": 89395,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034315Z",
+ "elapsed_s": 76.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b7d21dd1ab682ab19701c4b9d79e4979b1eefd87c7e15b192fba320f0fdc5fee",
+ "stdout_tail": "FROZEN AUTHORITY\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/all_nine_six_context_shared_ancestry_cycle177_2026_07_16.py\", line 2046, in <module>\n    raise SystemExit(main())\n                     ~~~~^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/all_nine_six_context_shared_ancestry_cycle177_2026_07_16.py\", line 1808, in main\n    observed = {path: sha256(path) for path in FROZEN}\n                      ~~~~~~^^^^^^\n  File \"/Users/jonreilly/.probe-workers/Physics/slot-2/scripts/all_nine_six_context_shared_ancestry_cycle177_2026_07_16.py\", line 93, in sha256\n    return hashlib.sha256(path.read_bytes()).hexdigest()\n                          ~~~~~~~~~~~~~~~^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 625, in read_bytes\n    with self.open(mode='rb') as f:\n         ~~~~~~~~~^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/SHARED_ANCESTRY_DUAL_CONTEXT_PERES_MERMIN_CYCLE173_NOTE_2026-07-16.md'\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034432Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonreilly/.probe-workers/Physics/slot-2/docs/work_history/repo/review_feedback/SHARED_ANCESTRY_DUAL_CONTEXT_PERES_MERMIN_CYCLE173_NOTE_2026-07-16.md, which is not in the tree at that path",
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034432Z"
+ }
+}

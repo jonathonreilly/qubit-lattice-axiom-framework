@@ -1,0 +1,35 @@
+{
+ "task": "R:native_weyl_gauge_hall_and_cone_flow_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_weyl_gauge_hall_and_cone_flow_2026_09_13.py",
+ "seed": 89689,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034809Z",
+ "elapsed_s": 3.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=462 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c213302c3c4b968bd82e04b24d57d8350ff112504943079c0363cc431a04dda0",
+ "stdout_tail": "frequency\": 0.6413273463856276,\n      \"singular_values\": [\n        1.1312041530917367,\n        0.5076540087653151,\n        8.203849384289086e-17\n      ]\n    },\n    {\n      \"name\": \"physical_Hall_wave_mode_(5, 0)\",\n      \"squared_frequency\": 0.01464522125415324,\n      \"singular_values\": [\n        0.09835734460194828,\n        0.09702494835960977,\n        3.297003729532592e-17\n      ]\n    },\n    {\n      \"name\": \"physical_Hall_wave_mode_(5, 1)\",\n      \"squared_frequency\": 0.6706228387506451,\n      \"singular_values\": [\n        1.3105253346825074,\n        0.6560751215646302,\n        1.2970711766022003e-16\n      ]\n    },\n    {\n      \"name\": \"time_reversed_copy_Hall_cancellation_0\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"time_reversed_copy_Hall_cancellation_1\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"time_reversed_copy_Hall_cancellation_2\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"time_reversed_copy_Hall_cancellation_3\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"time_reversed_copy_Hall_cancellation_4\",\n      \"error\": 0.0\n    },\n    {\n      \"name\": \"time_reversed_copy_Hall_cancellation_5\",\n      \"error\": 0.0\n    }\n  ],\n  \"source_sha256\": \"708f1d8c9f9dbcafdd1edffd326838b7ed721d6da7a425b5f0d4bd17daa405ef\",\n  \"elapsed_seconds\": 3.045894250040874,\n  \"scope\": \"Native free-band Hall response, leading Maxwell/Hall dispersion, and conditional Hall-subtracted one-loop coefficients. No full gauge phase, higher-loop or axiom-selection theorem.\"\n}\nTOTAL: PASS=462 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034813Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_weyl_gauge_hall_and_cone_flow_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

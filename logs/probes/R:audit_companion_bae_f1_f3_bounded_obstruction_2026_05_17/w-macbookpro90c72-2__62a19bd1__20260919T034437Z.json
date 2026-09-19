@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_bae_f1_f3_bounded_obstruction_2026_05_17.py",
+ "seed": 89477,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034437Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=50, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f19e2e2e04565b0259ab29836623460fda539a1c69116372b524ef3d019c3d72",
+ "stdout_tail": " this runner.\n  per_mode: checked \u2014 the C_3 isotype modes are resolved separately, the trivial mode carrying E_+(H) = 3 a^2 and the doublet mode carrying E_perp(H) = 6 |b|^2, and the AV4 section further resolves the three individual eigenvalues lambda_0 = a + 2 b_re, lambda_omega = a - b_re - sqrt(3) b_im and lambda_omegabar = a - b_re + sqrt(3) b_im, verifying their sum is 3a and their sum of squares 3 a^2 + 6 |b|^2.\n  per_block: checked \u2014 the selection question is decided block by block between the 1-dimensional trivial block and the 2-dimensional doublet block, with F1's (1, 1) block weighting placing the critical point at E_+ = E_perp = E_tot/2 (kappa = 2, the BAE locus) and F3's (1, 2) rank weighting placing it at E_+ = E_tot/3, E_perp = 2 E_tot/3 (kappa = 1), while the AV3 Hilbert-Schmidt block weights (3, 6) sit proportional to the real block dimensions (1, 2).\n  lattice_wide: checked and not executed \u2014 no lattice, volume, or extended system enters this companion at any point, and the note's own scope forbids the corresponding global statement: the obstruction is declared over the tested attack-vector set AV1-AV9 only and explicitly NOT as a universal impossibility, so the runner enumerates those nine attack vectors one at a time and asserts nothing beyond them.\n\n========================================================================================\n=== TOTAL: PASS=50, FAIL=0 ===\n========================================================================================\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034437Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

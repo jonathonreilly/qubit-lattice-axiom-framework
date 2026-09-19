@@ -1,0 +1,35 @@
+{
+ "task": "R:anomaly_forces_time_premise_manifest_recheck_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "anomaly",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/anomaly_forces_time_premise_manifest_recheck_2026_06_17.py",
+ "seed": 89472,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034432Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ffc5d19ff69d1d7505244c379e04e136364837c69d5d068390d1c405f9c22551",
+ "stdout_tail": "l result)\n    staggered eps == Clifford chirality              <- PREMISE:P-REC\n    Clifford chirality exists iff d even             <- RETAINED_SOURCE:clifford_volume_chirality_even_dimension\n\nBLOCK [GC-SCOPE]: native_gauge_closure credited only for nonabelian content\n  [PASS] native_gauge_closure tag(s) are NONABELIAN-only (no hypercharge/abelian credit)\n  [PASS] hypercharge values are PREMISE (P-HY/P-COMP), not RETAINED_SOURCE\n\nBLOCK [B1]: LH-only anomaly traces (nonzero => chiral inconsistency under P-ABJ)\n  [PASS] Tr[Y^3]      == -16/9\n  [PASS] Tr[SU3^2 Y]  == +1/3\n  [PASS] Tr[SU3^3]    == +2\n  [PASS] Tr[SU2^2 Y]  == 0\n  [PASS] Tr[Y] (grav) == 0\nBLOCK [B3]: P-COMP completion (4/3,-2/3,-2,0) cancels ALL six anomalies\n  [PASS] full-set SU(3)^3       == 0\n  [PASS] full-set SU(3)^2 U(1)  == 0\n  [PASS] full-set SU(2)^2 U(1)  == 0\n  [PASS] full-set U(1)^3        == 0\n  [PASS] full-set grav^2 U(1)   == 0\nBLOCK [B5]: chirality anticommutes with all gammas IFF d even (finite diagnostic)\n  [PASS] d=2: gamma_5 anticommutes-with-all == True (even-d)\n  [PASS] d=3: gamma_5 anticommutes-with-all == False (even-d)\n  [PASS] d=4: gamma_5 anticommutes-with-all == True (even-d)\n  [PASS] d=5: gamma_5 anticommutes-with-all == False (even-d)\nBLOCK [B6]: with d_s=3 (Lattice axiom) and d even -> d_t odd in {1,3,5,...}\n  [PASS] d_s=3 + (d_s+d_t even) => d_t odd\nSCOPE: bridge yields d_t in {odd positives}; the d_t=1 pin is the one-time-dimension open gate, NOT claimed here.\n\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034433Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

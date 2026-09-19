@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py",
+ "seed": 89477,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034437Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "85988ba3cd7fcc155fd22089043c8bf2ba55b675ecba8bb30b114bb21ec4254f",
+ "stdout_tail": "each eigenvalue counted once = doublet weight 2 = F3)\n  [PASS (A)] F1-eigenvalue-collapse spectral action != Tr_{H_R}(D^2/Lambda^2) for b complex  (confirms F1 weighting is NOT supplied by J-projection)\n\n----------------------------------------------------------------------------------------\nPart 8: claim-scope review hygiene\n----------------------------------------------------------------------------------------\n  [PASS (A)] note exists  (BAE_NCG_KODIM_REAL_STRUCTURE_PARTIAL_NARROWING_NOTE_2026-05-17.md)\n  [PASS (A)] note declares Status authority = independent audit lane only  (audit-pipeline language compliance)\n  [PASS (A)] note uses bounded_theorem claim type framing  (partial-narrowing = bounded, not no-go)\n  [PASS (A)] note explicitly does NOT discharge F1 hypothesis  (preserves F1 vs F3 Open derivation gap)\n  [PASS (A)] note cites Probe U as prior NCG-cutoff attempt  (cross-references prior NCG-route synthesis)\n  [PASS (A)] note cites cl3_complexification_split as authority  (markdown-link to retained authority)\n  [PASS (A)] note does not promote any audit_status (author-side)  (status authority deferred to audit lane)\n  [PASS (A)] note uses repo-canonical NCG vocabulary (KO-dim, anti-unitary involution)  (standard NCG vocabulary, no new repo tags)\n\n----------------------------------------------------------------------------------------\nFinal tally\n----------------------------------------------------------------------------------------\n\n=== TOTAL: PASS=45, FAIL=0 ===\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:native_weak_electric_defect_density_controls_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_weak_electric_defect_density_controls_2026_09_08.py",
+ "seed": 89604,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034644Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9a6ce13db21e18a05f92af96f3d527858c5b9b3fb4de8a39c3987e90d741c7a1",
+ "stdout_tail": "\n      \"L\": 4,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 4,\n      \"shared_faces\": 0,\n      \"flipped_faces\": 8\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 0,\n      \"flipped_faces\": 8\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 0,\n      \"flipped_faces\": 8\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 1,\n      \"flipped_faces\": 6\n    },\n    {\n      \"L\": 8,\n      \"shared_faces\": 0,\n      \"flipped_faces\": 8\n    }\n  ],\n  \"ground_density_coefficient\": \"102400/387\",\n  \"thermal_density_coefficient\": \"800\",\n  \"scope\": \"exact local geometry and rational inequality controls; no physical solve or Gibbs sampling\"\n}\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034644Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "checks": 14,
+  "constant_terms": [
+    "64/49",
+    "24/7",
+    "8/343",
+    "2048/1029",
+    "2"
+  ],
+  "sum": "1286/147",
+  "surviving_inner_words": {
+    "0": [
+      ""
+    ],
+    "1": [
+      "E"
+    ],
+    "2": [
+      "VV",
+      "EE"
+    ],
+    "3": [
+      "VVE",
+      "VEV",
+      "EVV",
+      "EEE"
+    ]
+  },
+  "seconds": 0.0026682920288294554,
+  "rss_MiB": 19.09375,
+  "scope": "Exact finite algebraic components only; operator proof is separate."
+}

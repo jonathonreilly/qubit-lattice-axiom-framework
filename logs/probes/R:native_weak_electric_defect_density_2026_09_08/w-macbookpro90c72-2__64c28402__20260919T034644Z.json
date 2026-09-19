@@ -1,0 +1,35 @@
+{
+ "task": "R:native_weak_electric_defect_density_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_weak_electric_defect_density_2026_09_08.py",
+ "seed": 89604,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034644Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=258 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b310f99f088a9cbdff46f45aefffdaf173a6411d09d412e7710f4e3294800db0",
+ "stdout_tail": "ull analytical theorem; no perturbed-state solve or phase claim.\",\n  \"input_sha256\": {\n    \"docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md\": \"7b8b4e2c5bca9c0e3bc9e3ac7478f0d852f2c81350fd0bd85a3b9ced61f0bf19\",\n    \"docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md\": \"787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada\",\n    \"docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md\": \"810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550\",\n    \"scripts/native_weak_electric_defect_density_controls_2026_09_08.py\": \"28f8de4f10219ee58a234e041be8c34b3aeb4edf41d08c6077d2cbaac2341ff5\"\n  },\n  \"source_sha256\": \"b0a5dc340fbcf475e8328c3a05ccaef277a55aba1234ed94aeb61623e0f1d41d\",\n  \"elapsed_seconds\": 0.02630012494046241,\n  \"peak_rss_bytes\": 25559040\n}\nper_element: executed exact local electric and rational inequality controls on the declared finite states.\nper_site: incident-pair and defect-face multiplicities are checked on the stated local geometries.\nper_mode: finite rational anticommutation-bound and quadratic-root controls are executed without state solves.\nper_block: all258 named local, quadratic and thermal algebra controls are executed as declared.\nlattice_wide: volume-uniform ground/Gibbs density bounds are analytical; no perturbed-state or Gibbs sampling run occurs.\nTOTAL: PASS=258 FAIL=0\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034644Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_weak_electric_defect_density_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

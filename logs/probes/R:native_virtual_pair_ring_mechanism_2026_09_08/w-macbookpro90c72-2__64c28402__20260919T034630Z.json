@@ -1,0 +1,35 @@
+{
+ "task": "R:native_virtual_pair_ring_mechanism_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_virtual_pair_ring_mechanism_2026_09_08.py",
+ "seed": 89590,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034630Z",
+ "elapsed_s": 12.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=112489 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ebffb959b3ff9d026077d2b7d37040c5472a927665eb2dc622326d3ca59267c6",
+ "stdout_tail": "   \"scripts/native_virtual_pair_full_fourth_2026_09_08.py\": \"51c686e1a62122f045b3edd7367a8f9bf5c5b55838107e47baa5a5a5f9bbf2e1\",\n    \"scripts/native_virtual_pair_full_sixth_local_2026_09_08.py\": \"5f37aba466dc7d71638d49cc99fae5ebe2f0bd68672d17b553bcfc2cd5396408\",\n    \"scripts/native_virtual_pair_full_sixth_global_2026_09_08.py\": \"b7115372c415fd48b3b308c9e7e881b7f51503d0757e19cf0ac7b1cc15b94aab\",\n    \"scripts/native_virtual_pair_remainder_2026_09_08.py\": \"002f4990a82e2e94d148b4c69cc79dbd3ffbe80d671b89c1611abdccb444bee7\",\n    \"docs/work_history/repo/review_feedback/pr8044-native-ring-evidence/inputs/FOUR_ICE_BACKGROUNDS.json\": \"893b968c6ff25569f751c767ecd2a38bce3f7a79d1bf670902b6fccf0e4af47b\"\n  },\n  \"scope\": \"Exact finite mechanism controls, not whole-Hilbert enumeration, a phase certificate or audit status.\"\n}\nper_element: all24 native plaquette orders and repeated-edge diagonal denominators.\nper_site: explicit hard/full-domain comparison and degree-three motif counts.\nper_mode: exact finite forest series and scalar remainder arithmetic; no spectrum census.\nper_block: four literal L4 backgrounds and separately declared finite cluster patterns.\nlattice_wide: checked and not executed; finite-volume operator proofs are analytical, with a depending on the total perturbation norm. Only the declared four L4 backgrounds and finite motifs were executed, not a whole-Hilbert census or thermodynamic limit.\nTOTAL: PASS=112489 FAIL=0\nResources: 12.327342s, 83.438MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034644Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_virtual_pair_ring_mechanism_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

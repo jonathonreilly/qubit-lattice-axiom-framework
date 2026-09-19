@@ -1,0 +1,45 @@
+========================================================================
+Axiom-first lattice Noether record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md
+Parent runner: scripts/axiom_first_lattice_noether_check.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+PASS parent_note_exists
+PASS parent_runner_exists
+PASS parent_ledger_row_exists
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
+PASS parent_runner_path_expected
+PASS parent_current_criticality_present :: criticality=critical
+PASS parent_current_load_present :: load=16.064
+PASS parent_note_hash_field_present
+PASS parent_note_hash_matches_ledger
+PASS parent_deps_field_present :: count=8
+PASS parent_deps_include_required_sources :: missing=[]
+PASS parent_deps_omit_record_specific_sources :: count=8
+PASS parent_current_status_fields_present :: effective_status=unaudited, audit_status=unaudited
+PASS parent_load_bearing_block_present
+PASS parent_load_bearing_contains_noether_phrase_0
+PASS parent_load_bearing_contains_noether_phrase_1
+PASS parent_load_bearing_contains_noether_phrase_2
+PASS parent_load_bearing_contains_noether_phrase_3
+PASS parent_load_bearing_contains_noether_phrase_4
+PASS parent_load_bearing_contains_noether_phrase_5
+PASS parent_load_bearing_contains_noether_phrase_6
+PASS parent_load_bearing_contains_noether_phrase_7
+PASS parent_load_bearing_contains_noether_phrase_8
+PASS parent_load_bearing_contains_noether_phrase_9
+PASS parent_load_bearing_omits_record_axiom_terms
+PASS parent_runner_exit_zero :: returncode=0
+PASS parent_runner_summary_present
+PASS parent_runner_passed_all_live_exhibits :: passed=9/9
+PASS record_marker_true_exit_zero :: returncode=0
+PASS record_marker_does_not_change_parent_output
+PASS companion_declares_meta_type
+PASS companion_disclaims_new_theorem
+PASS companion_disclaims_verdict_change
+PASS companion_keeps_dependency_boundary
+PASS companion_marks_axioms_not_support
+========================================================================
+SUMMARY: PASS=35 FAIL=0
+========================================================================

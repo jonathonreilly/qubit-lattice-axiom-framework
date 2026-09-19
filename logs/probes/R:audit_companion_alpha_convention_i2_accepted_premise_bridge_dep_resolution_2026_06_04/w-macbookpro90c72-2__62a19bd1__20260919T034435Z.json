@@ -1,0 +1,41 @@
+{
+ "task": "R:audit_companion_alpha_convention_i2_accepted_premise_bridge_dep_resolution_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_alpha_convention_i2_accepted_premise_bridge_dep_resolution_2026_06_04.py",
+ "seed": 89475,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034435Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=61 FAIL=0",
+   "PASS = 61, FAIL = 0",
+   "PASS = 56, FAIL = 0",
+   "PASS = 5, FAIL = 0",
+   "PASS=51 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "84160a01b4c39ff172b672506cfa6d402eabf9a54897f3ec7f6dbd202787fba8",
+ "stdout_tail": " alpha_LM^2/alpha_s = 1/(4*pi), expected 1/(4 pi)\n  PASS composition_is_pure_sympy_no_io :: composition uses sympy ring substitution only (no audit-ledger I/O)\n\n========================================================================\nBLOCK 8: Status boundary preserved; companion declares Type: meta\n========================================================================\n  PASS parent_note_independent_audit_boundary :: parent note carries the independent-audit boundary\n  PASS parent_note_not_predict_audit_outcome :: parent note disclaims setting/predicting audit outcome\n  PASS parent_note_claim_boundary_only :: parent note: source-side claim-boundary declaration only\n  PASS companion_metadata_declares_meta :: companion metadata declares Type: meta\n  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion\n  PASS companion_disclaims_theorem_claim :: companion explicitly disclaims new-theorem claim\n  PASS companion_audit_lane_handoff_section_present :: companion contains audit-lane handoff section\n  PASS companion_references_invalidation_reason :: companion records exact invalidation reason from ledger\n  PASS companion_substance_vs_grade_vocabulary :: companion uses substance-vs-grade vocabulary\n\n========================================================================\nSUMMARY: PASS=51 FAIL=0\n========================================================================\nFINAL_TAG: ALPHA_CONVENTION_I2_ACCEPTED_PREMISE_BRIDGE_DEP_RESOLUTION_HYGIENE_OK\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034436Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

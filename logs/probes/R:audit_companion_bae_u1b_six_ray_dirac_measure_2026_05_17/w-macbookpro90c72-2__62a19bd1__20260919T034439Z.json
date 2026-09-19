@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_bae_u1b_six_ray_dirac_measure_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/audit_companion_bae_u1b_six_ray_dirac_measure_2026_05_17.py",
+ "seed": 89479,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "62a19bd1",
+ "started_utc": "20260919T034439Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4aea90f5cb9229ae820c453ca7e81ec7da4d9cf32e7c7861bf2cf10c1d9f4100",
+ "stdout_tail": " [PASS] (T2) Six-ray locus (R) has six distinct rays\n  [PASS] (T2) Pairwise intersections of D_3-reflection fix loci = origin  (verified by joint_null in Part 3)\n\n----------------------------------------------------------------------------------------\nPart 6: (T3) \u2014 Cycle 3 vs Cycle 4 residue structural distinction\n----------------------------------------------------------------------------------------\n  [PASS] (T3) Cycle 3 = no-SO(2)-quotient (dim-1 measure)\n  [PASS] (T3) Cycle 4 = no-single-ray-Dirac-on-(R) (dim-0 measure)\n  [PASS] (T3) Cycle 3 \u2285 Cycle 4 (sharper, not implied)\n\n----------------------------------------------------------------------------------------\nPart 7: Review-hygiene checks\n----------------------------------------------------------------------------------------\n  [PASS] Zero PDG observed values consumed (review-hygiene)\n  [PASS] Zero literature numerical comparators consumed\n  [PASS] Zero fitted selectors consumed\n  [PASS] Zero new admissions; A_min fixed\n  [PASS] Sub-route labels S1-S3 are local stretch-attempt labels (no new vocabulary)\n  [PASS] Retained authorities (X1)-(X4) markdown-link-cited in note\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 50\n  FAIL = 0\n\n  Outcome: ALL SYMBOLIC CHECKS PASS (S1-S3 failure steps,\n  (T2) six-ray-locus enumeration, (T3) Cycle 3 / 4 distinction\n  verified by sympy.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034439Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

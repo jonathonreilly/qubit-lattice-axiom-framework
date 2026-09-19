@@ -1,0 +1,35 @@
+{
+ "task": "R:native_weak_electric_spectator_gap_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-macbookpro90c72-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_weak_electric_spectator_gap_2026_09_08.py",
+ "seed": 89605,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "64c28402",
+ "started_utc": "20260919T034645Z",
+ "elapsed_s": 76.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7960 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.13.5); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a91ac206fb3157be4ab78904e6ba0bc7a28f2f0d114923295d58fe833f27765c",
+ "stdout_tail": "_spectator_gap_2026_09_08_inputs/bridge_12.json\": \"327274437499694da8ddf9bd7470ba0bf56c3fff73c4689fdf0ff2cc8f1038d7\",\n    \"outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_12.npz\": \"cff2680feb07ee64e7d064b8e1af33ff19ded446ea5754ee6fee51c9a4675a28\",\n    \"outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_36.json\": \"7775581b5957a47327ad9d9459f3c2103c56d59d0af899828a267aa3e8987bd8\",\n    \"outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_36.npz\": \"352ee562d54521edbd9aa8bc27d3ae34720fc661ae7802edc733fe6da9e07bd6\",\n    \"outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_96.json\": \"1f0fa6225a80312a9f0c52c81c21112c15d82505c1b4ef2766974192d53b7438\",\n    \"outputs/native_weak_electric_spectator_gap_2026_09_08_inputs/bridge_96.npz\": \"cae0e071253c5edf04c176068c9e53028d89af63e65554e256f9ba1f8ef223b7\"\n  },\n  \"scope\": \"Exact supplied L4 adjacent coefficient and magnetic-orbit controls; full finite-gap theorem additionally uses the linked proof and isolation/parity premises.\"\n}\nper_element: canonical edge signs and strict candidate binary decoding.\nper_site: fixed adjacent centers and magnetic translation orbit.\nper_mode: rational Gram metric and physical even active Fock states.\nper_block: all2292 exact residuals, six bridge closures and coefficient interval.\nlattice_wide: supplied L4 symmetry/isolation premises; no larger-volume inference.\nTOTAL: PASS=7960 FAIL=0\nResources: 76.848423s, 87.094MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-2",
+  "at_utc": "20260919T034802Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_weak_electric_spectator_gap_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-lightcone-formation-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-jonathonsmac4f50-j2e27",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/derive/lightcone-formation/referee_w-jonathonsmac4f50-j2e27/check.py",
+ "seed": 95825,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "88effa19",
+ "started_utc": "20260919T053025Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - a finite exact partial: one-site flips are lighter than a constant in pi on the degenerate L=2 cube for (p,1,2); correction: 'both ratios decrease in p' holds on the sampled p >= 3 but not on all of p > 2 (the orthogonal ratio rises to a peak 0.57761 at p = 2.11); scope: (p,1,2) is not the six-axis restriction (e^beta, e^-beta, 1) of the task's exp(beta s.S) law, a one-site cost on L=2 controls no contour sum, and the task's (a) Gibbs identification, (b) sphere LRO and (c) kernel bounds are not addressed"
+ },
+ "review": "Reversibility identity re-derived (3-ring exhaustive, nondegenerate 3^3 torus six-axis and sphere spins), exact 2x2x2 flip ratios reproduced by an independent closed form checked against the direct product (p=3: 2167007881/207594140625 and 28796658496/207594140625; p=5,10,20 below 1), both decreasing on p >= 3 and below 1 on 2.01..200: HIT confirmed, with the correction that the orthogonal ratio is not monotone just above p = 2 (peak 0.57761 at p = 2.11) and the scope note that (p,1,2) is not the exp(beta s.S) law's six-axis restriction.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:lightcone-formation:a3/; its files are probes/work/derive/lightcone-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/lightcone-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "00a646bd67c42ac8f7be124385627cb5ae94e6d8b6d84638e3a3ab86541772c2",
+ "stdout_tail": "2e-01; p=20: 7.8192e-10, 1.0031e-07; p=200: 7.8125e-17, 1.0000e-14; on p = 2.01..200: antipodal decreasing True, orthogonal decreasing False (orthogonal ratio peaks at p = 2.11, value 0.57761), all below 1 True; both decreasing on p >= 3 True\nR4 exp six-axis weights (e^beta, e^-beta, 1), beta=1: antipodal 1.4603e-06, orthogonal 1.0969e-03\nR4 exp six-axis weights (e^beta, e^-beta, 1), beta=2: antipodal 7.1234e-13, orthogonal 8.3800e-07\nR4 exp six-axis weights (e^beta, e^-beta, 1), beta=3: antipodal 5.7580e-19, orthogonal 7.5854e-10\nHIT: confirmed - the reversibility identity holds (exhaustive on the 3-ring, random pairs on the nondegenerate 3^3 torus for the six-axis (5,1,2) weights and for sphere spins), and the 2x2x2 flip ratios re-derive exactly (p=3: 2167007881/207594140625 and 28796658496/207594140625; p=5 as stated; p=10, 20 below 1) by a closed form checked against the direct product; both ratios stay below 1 on p = 2.01..200 and decrease on p >= 3\nSUMMARY: confirmed - a finite exact partial: one-site flips are lighter than a constant in pi on the degenerate L=2 cube for (p,1,2); correction: 'both ratios decrease in p' holds on the sampled p >= 3 but not on all of p > 2 (the orthogonal ratio rises to a peak 0.57761 at p = 2.11); scope: (p,1,2) is not the six-axis restriction (e^beta, e^-beta, 1) of the task's exp(beta s.S) law, a one-site cost on L=2 controls no contour sum, and the task's (a) Gibbs identification, (b) sphere LRO and (c) kernel bounds are not addressed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2e27",
+  "at_utc": "20260919T053026Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms lightcone-formation a3's finite partial: pi = prod Z_x reversibility (general symmetric phi), and on the 2x2x2 cube one-site antipodal/orthogonal flips are lighter than a constant for (p,1,2) at p = 3, 5, 10, 20 (exact ratios reproduced), decreasing on p >= 3; correction: the orthogonal ratio rises on (2, 2.11) (peak 0.5776); scope: (p,1,2) differs from the task's exp weights (e^beta, e^-beta, 1); no contour control, sphere LRO/kernel bounds not addressed.",
+  "by": "w-jonathonsmac4f50-j2e27",
+  "at_utc": "20260919T053026Z"
+ }
+}

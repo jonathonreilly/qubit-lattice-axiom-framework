@@ -1,0 +1,3 @@
+C(6,2)=15
+TV 15-simplex point masses 1
+SUMMARY: pattern has no purchase on this note - C(6,2)=15 two-link channels and TV 1/2 on that simplex

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR8175",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block31-sharpe",
+ "worker": "w-macbookpro90c72-j8520",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8175/t1_mk_increment_period.py",
+ "seed": 84336,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "227d86fb",
+ "started_utc": "20260919T021856Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: T1.1 M_k increments hold on the enumerated box, T1.3 period sums to (0,4,2) with ratio 2, the three stated (b,a,e) triples are e=3r+2a equalities and sharper failures, and the stated W1 log / witness ratios match"
+ },
+ "review": "T1.1 M_k increments, T1.3 period (0,4,2) ratio 2, stated equality cases and W1 log/ratios hold as written; pattern has no purchase",
+ "what": "PR #8175 (ail31: the sharper bad-pair budget is false for the extended): attack ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916; git show origin/physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916:<note>. Create probes/work/pr8175/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8175/<script>.py\"",
+ "stdout_sha256": "52f76de8e3bb737814267491ea6b2d825b0701f73284012437ac4343822fc366",
+ "stdout_tail": "T1.1 M_k increments on box [-2,5)^3 \u00d7 directions/pairs: True\nperiod sum (r,e,a)=(0,4,2)\n(e-3r)/a = 2\ne=3r+2a equality cases: [(0, 0, 3), (1, 1, 2), (2, 2, 1), (3, 3, 0)]\nsharper e<=3r+a failures: [(1, 1, 2), (2, 2, 0), (2, 2, 1), (3, 3, 0)]\nW1 log sums r=0 E=16 |A|=10 b=10 periods=2\nW1 ratio 8/5 block30=True sharper=False\nW2 ratio 5/3 block30=True sharper=False\nW3 ratio 5/3 block30=True sharper=False\nSUMMARY: pattern has no purchase on this note: T1.1 M_k increments hold on the enumerated box, T1.3 period sums to (0,4,2) with ratio 2, the three stated (b,a,e) triples are e=3r+2a equalities and sharper failures, and the stated W1 log / witness ratios match\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8520",
+  "at_utc": "20260919T021856Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR8148",
+ "type": "judgment",
+ "lane": "admissibility-induced-law-block14-format",
+ "worker": "w-macbookpro90c72-jf1ac",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8148/adversarial_G_monotone.py",
+ "seed": 90111,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3cf44def",
+ "started_utc": "20260919T035511Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - adversarial grid of clock p in [0,1] (21 values) at extra (p,q,r) never flattens G(p,d_anti)-G(p,d_same); R4's 'no rate law reaches static' is not a sampled never; not the known R3 uniform-distance HIT"
+ },
+ "review": "Adversarial grid over clock p in [0,1] at extra (p,q,r) never flattens G(p,d_anti)-G(p,d_same); R4's never-static claim is not a sampled never. Not the known R3 distance HIT.",
+ "what": "PR #8148 ([physics-loop] admissibility-induced-law block14 \u2014 bounded_t): attack ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915; git show origin/physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915:<note>. Create probes/work/pr8148/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8148/<script>.py\"",
+ "stdout_sha256": "cca04bfe4840ecb9789f5abe9e24e4c7a04890ecf23cfeac6803093288b927a0",
+ "stdout_tail": "(p,q,r)=(3,1,2) d_same=72/13 d_anti=72/11 da>ds True\n  G(\u00b7,d_anti)-G(\u00b7,d_same)>0 on 21 values of p including 0 and 1\n(p,q,r)=(5,2,4) d_same=529/93 d_anti=529/84 da>ds True\n  G(\u00b7,d_anti)-G(\u00b7,d_same)>0 on 21 values of p including 0 and 1\n(p,q,r)=(10,1,2) d_same=361/117 d_anti=361/36 da>ds True\n  G(\u00b7,d_anti)-G(\u00b7,d_same)>0 on 21 values of p including 0 and 1\n(p,q,r)=(4,1,1) d_same=27/7 d_anti=27/4 da>ds True\n  G(\u00b7,d_anti)-G(\u00b7,d_same)>0 on 21 values of p including 0 and 1\n(p,q,r)=(7,3,5) d_same=450/79 d_anti=450/71 da>ds True\n  G(\u00b7,d_anti)-G(\u00b7,d_same)>0 on 21 values of p including 0 and 1\n(p,q,r)=(5/2,1/3,7/4) d_same=3481/670 d_anti=3481/501 da>ds True\n  G(\u00b7,d_anti)-G(\u00b7,d_same)>0 on 21 values of p including 0 and 1\nchecked 126 (clock p, triple) pairs\nbracket at p=1/2, (3,1,2) d's: 431/1716 >0 True\nSUMMARY: pattern has no purchase on this note - adversarial grid of clock p in [0,1] (21 values) at extra (p,q,r) never flattens G(p,d_anti)-G(p,d_same); R4's 'no rate law reaches static' is not a sampled never; not the known R3 uniform-distance HIT\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf1ac",
+  "at_utc": "20260919T035511Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

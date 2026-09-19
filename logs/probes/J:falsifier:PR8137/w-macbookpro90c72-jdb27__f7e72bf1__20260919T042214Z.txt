@@ -1,0 +1,2 @@
+scanned 151 kernels denom 1..12; uniform hits 2
+SUMMARY: Haar-square falsifier did not fire: among cubic kernels with denominator <=12 the only Haar-square solution is a=b=c=1/6; (a-b)^2 and (6c-1)^2/3 vanish only there

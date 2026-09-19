@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_QUANTUM_LINK_MATTER_MAGNETIC_PLAQUETTE_FINITE_STEP_JOIN_BOUNDED_THEOREM_NOTE_2026_09_03",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j53f0",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/note_U1_QUANTUM_LINK_MATTER_MAGNETIC_PLAQUETT/floquet_join_face_and_strip.py",
+ "seed": 7863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7729665c",
+ "started_utc": "20260919T085103Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "with an independent construction the note's single face reproduces every listed property, and beyond it the two-face strip with the charge on the shared link behaves the same way: layers commute with all Gauss generators, the palindromic tick is unitary, reversible and Gauss-preserving, flow and simple-energy errors are cubic, the Floquet generator is Hermitian, conserved and Gauss-preserving with quadratic deviation, quartic BCH residual and quadratic correlated charge-face entries that vanish when t = 0 or kappa = 0 (True)"
+ },
+ "review": "Output matches the task (six Floquet/Gauss falsifiers implemented with an independent construction for any planar face complex, beyond the note's single face): on the note's 162-dim face and on a two-face strip with the charge on the shared link (full-space Gauss checks, 260-dim sector union for the Floquet analysis) the layers commute with every Gauss generator, the palindromic tick is unitary, reversible and Gauss-preserving, flow and simple-energy errors halve-ratio 7.9-8.0 (cubic), the Floquet generator is Hermitian, conserved and Gauss-preserving with deviation ratio 4.0, BCH-residual ratio 16.0 and correlated charge-face entries ratio 4.0 (1.7e-4 at h = 0.05), and the correlated entries vanish (1e-14) at t = 0 or kappa = 0; no falsifier fires.",
+ "what": "Note on main: docs/U1_QUANTUM_LINK_MATTER_MAGNETIC_PLAQUETTE_FINITE_STEP_JOIN_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_QUANTUM_LINK_MATTER_MAGNETIC_PLAQUETT/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_QUANTUM_LINK_MATTER_MAGNETIC_PLAQUETT/<script>.py\"",
+ "stdout_sha256": "db6efe13eb7e62336b9f29d9b01c9aff1a268463f3fc28bdf69f2137c77ae002",
+ "stdout_tail": "w [np.float64(7.92), np.float64(7.98)], simple energy [np.float64(7.88), np.float64(7.97)], deviation [np.float64(4.04), np.float64(4.01)], BCH residual [np.float64(16.13), np.float64(16.03)], correlated entries [np.float64(4.05), np.float64(4.01)] (size at h = 0.05: 1.71e-04); removal controls: t = 0 -> 9.8e-15, kappa = 0 -> 1.2e-14\ntwo-face strip, hop on the shared link (sectors reachable from all states with at most one nonzero link): dim 260; layer-Gauss commutators 0.0e+00; at h = 0.05: Hermitian 5.0e-16, [H_F,U_S] 4.5e-15, Gauss 6.6e-14, unitary 3.0e-15, reversal 3.0e-15; refinement ratios per halving of h: flow [np.float64(7.89), np.float64(7.97)], simple energy [np.float64(7.79), np.float64(7.95)], deviation [np.float64(4.04), np.float64(4.01)], BCH residual [np.float64(16.15), np.float64(16.04)], correlated entries [np.float64(4.07), np.float64(4.02)] (size at h = 0.05: 1.71e-04); removal controls: t = 0 -> 3.6e-14, kappa = 0 -> 8.6e-15\nSUMMARY: with an independent construction the note's single face reproduces every listed property, and beyond it the two-face strip with the charge on the shared link behaves the same way: layers commute with all Gauss generators, the palindromic tick is unitary, reversible and Gauss-preserving, flow and simple-energy errors are cubic, the Floquet generator is Hermitian, conserved and Gauss-preserving with quadratic deviation, quartic BCH residual and quadratic correlated charge-face entries that vanish when t = 0 or kappa = 0 (True)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j53f0",
+  "at_utc": "20260919T085104Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

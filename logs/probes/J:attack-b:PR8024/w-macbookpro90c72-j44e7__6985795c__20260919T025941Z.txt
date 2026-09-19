@@ -1,0 +1,6 @@
+L=1 whole-group=0 stated=0 individual=0 differ=False
+L=2 whole-group=3 stated=3 individual=6 differ=True
+L=3 whole-group=24 stated=24 individual=36 differ=True
+L=4 whole-group=81 stated=81 individual=108 differ=True
+L=5 whole-group=192 stated=192 individual=240 differ=True
+SUMMARY: SAME TEST BOTH SIDES on whole-group vs individual plaquettes (PR #8024): for L=2..5 the identical 4-vertex-in-box count finds whole-group=3(L-1)^3 strictly below the individual total; the separation holds as written

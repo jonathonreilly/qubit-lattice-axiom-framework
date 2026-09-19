@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8024",
+ "type": "judgment",
+ "lane": "volume-uniform-gap-block34-20260907",
+ "worker": "w-macbookpro90c72-j44e7",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8024/whole_group_vs_individual.py",
+ "seed": 86781,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6985795c",
+ "started_utc": "20260919T025941Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "SAME TEST BOTH SIDES on whole-group vs individual plaquettes (PR #8024): for L=2..5 the identical 4-vertex-in-box count finds whole-group=3(L-1)^3 strictly below the individual total; the separation holds as written"
+ },
+ "review": "Whole-group 3(L-1)^3 is strictly below the individual in-box plaquette count for L=2..5; the separation holds.",
+ "what": "PR #8024 ([physics-loop] volume-uniform-gap block34 conditional-suppor): attack GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/volume-uniform-gap-block34-20260907; git show origin/codex/volume-uniform-gap-block34-20260907:<note>. Create probes/work/pr8024/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8024/<script>.py\"",
+ "stdout_sha256": "751f1dd244eda26b339a64aa381f57bddfb998e3a6766a4147dfc4984e7230cf",
+ "stdout_tail": "L=1 whole-group=0 stated=0 individual=0 differ=False\nL=2 whole-group=3 stated=3 individual=6 differ=True\nL=3 whole-group=24 stated=24 individual=36 differ=True\nL=4 whole-group=81 stated=81 individual=108 differ=True\nL=5 whole-group=192 stated=192 individual=240 differ=True\nSUMMARY: SAME TEST BOTH SIDES on whole-group vs individual plaquettes (PR #8024): for L=2..5 the identical 4-vertex-in-box count finds whole-group=3(L-1)^3 strictly below the individual total; the separation holds as written\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j44e7",
+  "at_utc": "20260919T025941Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

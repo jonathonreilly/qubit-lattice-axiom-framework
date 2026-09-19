@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR8029",
+ "type": "judgment",
+ "lane": "infinite-static-block39-20260907",
+ "worker": "w-macbookpro90c72-j72b8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/pr8029/same_test_finite_infinite.py",
+ "seed": 86262,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4f2ce673",
+ "started_utc": "20260919T025102Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note - ||Psi||=1 is shared, while the exact 4L/a trial identity is finite-volume only, as stated"
+ },
+ "review": "||Psi||=1 is shared; 4L/a trial is finite-volume only; pattern has no purchase",
+ "what": "PR #8029 ([physics-loop] infinite-static block39 conditional-support): attack GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/infinite-static-block39-20260907; git show origin/codex/infinite-static-block39-20260907:<note>. Create probes/work/pr8029/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8029/<script>.py\"",
+ "stdout_sha256": "e190e0a1a6ec36cba59d3bc098f6a1257c49a4bafbc6fcf54f5a09be9d7f2c54",
+ "stdout_tail": "Tr(U^H U)/3=1 (shared by finite and GNS)\nexact 4L/a trial: finite=True infinite-total=False\nfinite extra at L=3 is 12/a\nSUMMARY: pattern has no purchase on this note - ||Psi||=1 is shared, while the exact 4L/a trial identity is finite-volume only, as stated\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j72b8",
+  "at_utc": "20260919T025102Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

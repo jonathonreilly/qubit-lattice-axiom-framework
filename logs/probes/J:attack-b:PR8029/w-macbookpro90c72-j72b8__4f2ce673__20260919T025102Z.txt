@@ -1,0 +1,4 @@
+Tr(U^H U)/3=1 (shared by finite and GNS)
+exact 4L/a trial: finite=True infinite-total=False
+finite extra at L=3 is 12/a
+SUMMARY: pattern has no purchase on this note - ||Psi||=1 is shared, while the exact 4L/a trial identity is finite-volume only, as stated

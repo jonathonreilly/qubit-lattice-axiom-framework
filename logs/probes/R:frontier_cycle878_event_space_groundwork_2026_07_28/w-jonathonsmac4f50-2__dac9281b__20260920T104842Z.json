@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle878_event_space_groundwork_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+ "seed": 1322,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dac9281b",
+ "started_utc": "20260920T104842Z",
+ "elapsed_s": 147.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "55291b742952129ebbe5ffb1ac3ca5d4c7792da1769462b3446cdf00dbdfc625",
+ "stdout_tail": "ative\":true,\"firewall_hits\":[],\"git_blobs\":{\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"c123b8d681c3d76fce08ef13d7673622deac64ad\"},\"input_closure_statement\":\"self-contained: the only input is the landed Cycle-719 core; the composed record-write model is stipulated in-file; the legacy fixture-lineage module names are import-blocklisted and their files are not read, pinned, or required to exist\",\"literal_ok\":true,\"no_docs_paths_in_input_closure\":true,\"pass\":true,\"sha256\":{\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}}}\nSUMMARY_JSON {\"checks\":{\"A_EVENT_SPACE\":true,\"B_MEASURE_CANDIDATE_INVENTORY\":true,\"C_FRACTION_LEDGER\":true,\"D_STIPULATED_BOUNDARY\":true,\"E_CONTROLS\":true},\"cycle\":878,\"discriminating_pairs\":[\"M1_COUNTING|M2_PER_WORLD_UNIFORM\",\"M1_COUNTING|M3_OCCUPATION_WEIGHTED\",\"M1_COUNTING|M4_FORMATION_LIFETIME\",\"M1_COUNTING|M5_FORMATION_MOMENT\",\"M2_PER_WORLD_UNIFORM|M3_OCCUPATION_WEIGHTED\",\"M2_PER_WORLD_UNIFORM|M4_FORMATION_LIFETIME\",\"M2_PER_WORLD_UNIFORM|M5_FORMATION_MOMENT\",\"M3_OCCUPATION_WEIGHTED|M4_FORMATION_LIFETIME\",\"M3_OCCUPATION_WEIGHTED|M5_FORMATION_MOMENT\",\"M4_FORMATION_LIFETIME|M5_FORMATION_MOMENT\"],\"event_cardinality\":92260,\"finite_measure_candidates\":[\"M1_COUNTING\",\"M2_PER_WORLD_UNIFORM\",\"M3_OCCUPATION_WEIGHTED\",\"M4_FORMATION_LIFETIME\",\"M5_FORMATION_MOMENT\"],\"pass\":true,\"runtime_seconds\":146.893}\nCYCLE878_EVENT_SPACE_GROUNDWORK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T105109Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

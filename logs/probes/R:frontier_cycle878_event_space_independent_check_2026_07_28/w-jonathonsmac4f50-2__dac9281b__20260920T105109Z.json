@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle878_event_space_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle878_event_space_independent_check_2026_07_28.py",
+ "seed": 1469,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dac9281b",
+ "started_utc": "20260920T105109Z",
+ "elapsed_s": 91.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0e8055dafc100b173131ab1f03f9d9674952b6b3c3bec80e72df9481586aceef",
+ "stdout_tail": "a349fd6a869d88dce03d758fd32c81dbc93\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"c123b8d681c3d76fce08ef13d7673622deac64ad\",\"scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py\":\"769f65e51ea2e896af750e92592a421464c3c0e1\"},\"literal_ok\":true,\"pass\":true,\"sha256\":{\"logs/runner-cache/frontier_cycle878_event_space_groundwork_2026_07_28.txt\":\"41807bcb8019b8997c55a14905fca600dc759b4820603699a576f50bea346913\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\",\"scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py\":\"786934d884581aa8e12de6421cc1d84fcf79679a99f050c2656c20f5c410f3bb\"}},\"target_boundary_certificate_structurally_ok\":true,\"target_determinism\":{\"full_run_prefix_events\":25705,\"full_run_prefix_matches_short_scan\":true,\"repeat_digest_equal\":true,\"short_scan_events\":25705,\"short_scan_orbits\":192},\"target_runtime_seconds\":140.986,\"target_runtime_within_budget\":true,\"target_stdout_bytes\":66189,\"target_stdout_within_budget\":true,\"target_summary_pass\":true}\nSUMMARY_JSON {\"checks\":{\"CK_A_EVENT_SPACE_REBUILD\":true,\"CK_B_LATTICE_BY_CONTAINMENT\":true,\"CK_C_MEASURE_INVENTORY_ATTACK\":true,\"CK_D_FRACTION_LEDGER_REBUILD\":true,\"CK_E_BOUNDARY_AND_CONTROLS\":true},\"cycle\":878,\"pass\":true,\"rebuilt_event_cardinality\":92260,\"runtime_seconds\":91.146,\"runtime_within_budget\":true,\"verdict\":\"CORROBORATES\"}\nCYCLE878_EVENT_SPACE_INDEPENDENT_CHECK_CORROBORATES\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T105241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

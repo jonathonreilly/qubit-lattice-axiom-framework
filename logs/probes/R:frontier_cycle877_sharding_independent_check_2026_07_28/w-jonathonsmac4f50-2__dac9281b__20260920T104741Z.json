@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle877_sharding_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle877_sharding_independent_check_2026_07_28.py",
+ "seed": 1261,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dac9281b",
+ "started_utc": "20260920T104741Z",
+ "elapsed_s": 60.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "719f21bade03b73df89061bcdc32d1abe1bbff84223ab147ea689afa39608f4a",
+ "stdout_tail": "\":8.0},\"numbers_reproduced\":{\"probe\":true,\"register\":true,\"scope\":true},\"pass\":true,\"refutations\":[],\"runtime_seconds\":59.406,\"single_flip_scope\":{\"contiguous_rule_erased_all_shards\":[],\"min_survivors_by_rule\":{\"contiguous.2\":1,\"contiguous.4\":2,\"contiguous.8\":5,\"hash_scattered.2\":0,\"hash_scattered.4\":0,\"hash_scattered.8\":2,\"strided.2\":0,\"strided.4\":0,\"strided.8\":0},\"reading\":\"719 of 720 firing single-wire payload flips damaged exactly one live wire in this sweep; the remaining flips damaged more than one wire -- an EXISTENCE observation inside this sweep's declared caps, which is why the primary's one-wire reading is stated for its six declared cells only and is carried no further; nothing is asserted or denied about readings outside these caps; the multi-wire tail reached every shard under scattered boundaries and was confined to a subset under contiguous blocks IN THIS SAMPLE (a finite observation, not a design rule)\",\"single_flip_can_erase_all_shards\":[\"hash_scattered.2\",\"hash_scattered.4\",\"strided.2\",\"strided.4\",\"strided.8\"],\"single_flip_can_kill_multiple_shards\":[\"contiguous.4\",\"contiguous.8\",\"hash_scattered.2\",\"hash_scattered.4\",\"hash_scattered.8\",\"strided.2\",\"strided.4\",\"strided.8\"],\"single_flip_damage_size_histogram_given_fired\":{\"1\":719,\"10\":1}},\"single_flip_worst_case\":{\"contiguous.2\":1,\"contiguous.4\":2,\"contiguous.8\":3,\"hash_scattered.2\":2,\"hash_scattered.4\":4,\"hash_scattered.8\":6,\"strided.2\":2,\"strided.4\":4,\"strided.8\":8}}\nCYCLE877_SHARDING_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104842Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle877_sharding_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle877_sharded_content_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle877_sharded_content_2026_07_28.py",
+ "seed": 1196,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dac9281b",
+ "started_utc": "20260920T104636Z",
+ "elapsed_s": 65.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2460f0ef1158a9e2378b3ea6af0602897e263767baa7addcfba7c647819336fe",
+ "stdout_tail": "k0\\\":0.0,\\\"late_acting.bank1\\\":0.0,\\\"one_flip.bank0\\\":0.0,\\\"one_flip.bank1\\\":0.0,\\\"untouched_in_chunk.bank0\\\":0.0,\\\"untouched_in_chunk.bank1\\\":0.0}} (fingerprint agreement over host-computed damage, not reconstruction); mean damage wires given fired on the direct classes = {\\\"late_acting.bank0\\\":1.0,\\\"late_acting.bank1\\\":1.0,\\\"one_flip.bank0\\\":1.0,\\\"one_flip.bank1\\\":1.0,\\\"untouched_in_chunk.bank0\\\":1.0,\\\"untouched_in_chunk.bank1\\\":1.0} of 147 live wires; the safe pool admits S<=160 while the payload granularity caps S at 147 (binding constraint: payload granularity, cost 0.917078 of the pool); no reconstruction, locality, design-rule, or necessity claim\",\"live_payload_wires\":147,\"max_feasible_S_from_pool\":160,\"pass\":true,\"runtime_seconds\":65.1,\"saturating_S\":{\"binding_constraint\":\"payload granularity\",\"content_slots\":4704,\"feasible\":true,\"fraction_of_safe_pool\":0.917078,\"saturating_S_one_wire_per_shard\":147,\"total_slots\":4833},\"shard_counts\":[2,4,8],\"unhit_wire_fraction_by_S\":{\"flip_and_restore.bank0\":{\"2\":1.0,\"4\":1.0,\"8\":1.0},\"flip_and_restore.bank1\":{\"2\":1.0,\"4\":1.0,\"8\":1.0},\"late_acting.bank0\":{\"2\":0.496599,\"4\":0.748299,\"8\":0.870748},\"late_acting.bank1\":{\"2\":0.503401,\"4\":0.748299,\"8\":0.877551},\"one_flip.bank0\":{\"2\":0.496599,\"4\":0.748299,\"8\":0.870748},\"one_flip.bank1\":{\"2\":0.503401,\"4\":0.748299,\"8\":0.877551},\"untouched_in_chunk.bank0\":{\"2\":0.496599,\"4\":0.748299,\"8\":0.870748},\"untouched_in_chunk.bank1\":{\"2\":0.503401,\"4\":0.748299,\"8\":0.877551}}}\nCYCLE877_SHARDED_CONTENT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104741Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle877_sharded_content_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

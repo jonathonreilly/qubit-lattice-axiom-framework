@@ -33,12 +33,20 @@ quotes are the **lowest `|k|` shell of short runs**, and the plateau is `1 + σ�
 >
 > **(iv) The plateau.** The **top shell** over the same three seeds is `1.0081`, `1.0092`,
 > `1.0101` — s.d. `0.0010`, forty times tighter than the lowest shell. Its mean `1.0091` sits
-> **`4·10⁻⁴`** from the predicted `1.009485`. The four highest shells are flat in `k` to `0.005`
+> **`4·10⁻⁴`** from the predicted `1.009485`. The four highest shells are flat in `k` to `0.0014`
 > within each seed.
 
-So `a3`'s formula is confirmed where the statistics are good, and the lowest shell — the only
-place the task's sub-1 numbers live — is consistent with it once the window is long enough to
-measure it.
+> **(v) The second coupling.** At `β = 2` the predicted plateau is `1.025979`, three times the
+> `β = 6` effect. Two seeds give top shells `1.0341`, `1.0384`, mean `1.0362` — an excess of
+> `0.0103 = **0.86 σ⁴**`, which is inside the `+0.8σ⁴` to `+1.0σ⁴` residual `a3`'s section 3
+> states for the backward stencil. And the flatness **fails** there: the top four shells spread
+> by `0.0167` against `0.0014` at `β = 6`, a monotone rise in `|k|` — the same order `σ⁴`.
+
+So `a3`'s formula is confirmed where the statistics are good, the lowest shell — the only place
+the task's sub-1 numbers live — is consistent with it once the window is long enough to measure
+it, and **the two couplings separate the one-loop term from its `σ⁴` correction**: at `β = 6` the
+correction is invisible (`4·10⁻⁴`, inside the seed noise) and the line is flat; at `β = 2` the
+correction is `0.86σ⁴` and the `k`-dependence appears at exactly that order.
 
 ## 2. Steps
 
@@ -52,13 +60,16 @@ shell is noisy: 56 modes against 49450.
 lowest shell's `0.039` against the top shell's `0.0010`. A quantity with that much seed-to-seed
 scatter cannot be read off one run to three decimals, which is what the task's premise does.
 
-**S4 (CHECKED `V4`).** Measured plateau against prediction, and the flatness in `k`.
+**S4 (CHECKED `V4`).** Measured plateau against prediction, and the flatness in `k` at `β = 6`.
+
+**S5 (CHECKED `V5`).** The second coupling: the `σ⁴` excess and the loss of flatness. The two
+couplings are what separate the orders - one measurement could not.
 
 ## 3. Where this stops
 
-- **One coupling, three seeds.** `β = 6`, `L = 48`. The prediction at `β = 2` is a three times
-  larger effect (`1.026`) and would be a sharper test; I ran two seeds there but the window was
-  not finished when this attempt closed, so nothing from it is claimed.
+- **Two couplings, three and two seeds.** `β = 2` has only two seeds, so its residual
+  coefficient `0.86σ⁴` carries roughly `±0.25` from the seed spread; it is consistent with
+  `a3`'s `0.8`–`1.0` but does not pin it.
 - **The lowest shell is still not resolved to `0.02`.** Three seeds give a *sample* s.d. of
   `0.039`, i.e. a standard error of `0.023` on the mean — just above `a3`'s target. What the runs
   do settle is the sign question: the shell scatters **around** the plateau, not below it.
@@ -69,9 +80,9 @@ scatter cannot be read off one run to three decimals, which is what the task's p
 
 ## 4. What would finish it
 
-1. The `β = 2` window, which triples the effect; and enough seeds to bring the lowest shell's
-   standard error under `0.01`. At about three minutes a run this is an hour's work, not a
-   research problem.
+1. More seeds at `β = 2`, to pin the `σ⁴` coefficient to two digits, and enough of them to bring
+   the lowest shell's standard error under `0.01`. At about three minutes a run this is an hour's
+   work, not a research problem.
 2. The light-cone stencil's `k`-dependence, which is the one place `a3`'s formula predicts
    something other than a flat line and is therefore the sharpest available test of it.
 3. `a3`'s two-loop terms remain the theoretical item.

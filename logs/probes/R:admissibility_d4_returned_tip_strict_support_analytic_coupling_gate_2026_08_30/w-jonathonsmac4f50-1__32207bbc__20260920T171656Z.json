@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.py",
+ "seed": 24616,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171656Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eadd4ac2e612648ffdb327f24262b5a19b93aec43c95e8e2220fcec0a4e12c37",
+ "stdout_tail": "PASS current_source_and_note_inputs\nPASS local_positive_roots_rows_and_actual_writer_deletion\nPASS ten_block_geometry\nPASS 3136_actual_record_configurations\nPASS two_q_tables_and_changed_weight\nTERMINAL: BLOCK28-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171659Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

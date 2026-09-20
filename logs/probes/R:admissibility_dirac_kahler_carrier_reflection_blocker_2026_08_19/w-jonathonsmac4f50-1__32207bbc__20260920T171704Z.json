@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_carrier_reflection_blocker_2026_08_19",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_carrier_reflection_blocker_2026_08_19.py",
+ "seed": 24624,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171704Z",
+ "elapsed_s": 21.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "00ffdefc4651f7c98ac32b5aa06bd9e21441e237d717981deee37debd62689ec",
+ "stdout_tail": "elta-Delta theta)/2 for skew Delta, so neither global invariance nor shear/nonconstancy is promoted to a general implication\nper_block: for the specified compression the symbolic minor is -361 m^2/25600 and excludes positive semidefiniteness whenever m is nonzero; the three-inertia census is only at mass 2/7, the (0,4,4) result is only at m=0, s_t=0, s_x=3/5 for the named chart, and the all-zero parameter action gives an explicit zero positive-semidefinite counterexample\nlattice_wide: the displayed chart tails span dimension two with the exact sum rule, and the alternative-weight calculation is one second control rather than an all-weight theorem; historical parent propagator, tail-rank, nilpotency, and curvature counts are archived but not executed by this runner\nRESULT: the displayed fixture has positive-definite H_q and an exact global mass split, no preserver in the tested signed-reflection family, and a nonzero-mass negative-minor certificate for the named compression; no necessity of global Hodge symmetry, generic carrier law, zero-mass no-PSD theorem, OS theorem, or curved OS theorem follows\nDECISION_CUT: metric-adapted involutions, other carriers, completions, the forced self-edges, coboundary admissibility, and the joint-lane program remain live; no premise or audit disposition is adopted here\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171726Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

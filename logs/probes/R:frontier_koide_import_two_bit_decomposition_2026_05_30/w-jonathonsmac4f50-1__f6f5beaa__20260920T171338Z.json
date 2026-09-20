@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_import_two_bit_decomposition_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_import_two_bit_decomposition_2026_05_30.py",
+ "seed": 24418,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171338Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ace63d035ecf19ac5a00d59871c3a78131a5c78e12d4ab48eff6774b4339842e",
+ "stdout_tail": "=================================================\nF6 \u2014 modulus bit: r=1/2 <=> equal C3-block energy; the measure fork\n========================================================================================\n[PASS] F6.1 equal C3-block energy (E_+=E_perp) <=> r=1/2 <=> Q=2/3\n       E_+=3a^2, E_perp=6b^2; E_+=E_perp => r=1/2; Q(1/2)=2/3\n[PASS] F6.2 measure fork: per-block (1,1)->r=1/2->Q=2/3; per-dimension (1,2)->r=1->Q=1\n       r* = nu/(2 mu): (mu,nu)=(1,1) -> r=1/2 -> Q=2/3; (1,2) -> r=1 -> Q=1. Rep theory does not choose the measure in this runner.\n\n========================================================================================\nSUMMARY\n========================================================================================\n  11/11 checks passed\n\n  AVAILABLE FINITE GEOMETRY: g, J=Jcs (so(3) bivector about (1,1,1)),\n    omega=g.Jcs, P_weyl=(1/2)(P_doublet - i Jcs).\n  RESIDUAL = TWO PROVABLY-INDEPENDENT data:\n    bit(i)  orientation of Jcs (Z2; det_C vs det_R)         -- not chirality\n    bit(ii) modulus r=1/2 (per-block vs per-dimension measure) -- the load-bearer\n    independent: [H,Jcs]=0 at all r, so orienting Jcs never fixes r.\n  anticommuting-operator class EXCLUDED (massless generation {-s,0,+s}).\n\n  => the residual is a MEASURE choice plus an orientation sign,\n     not a missing symplectic form.\n  Next path: does emergent-time's quantization measure count the generation\n     factor per-complex-mode (->per-block->r=1/2->Q=2/3) or per-real-dim?\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171339Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_koide_import_two_bit_decomposition_2026_05_30.txt against the .txt beside this log"
+  ]
+ }
+}

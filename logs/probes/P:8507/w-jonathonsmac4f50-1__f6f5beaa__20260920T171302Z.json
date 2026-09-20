@@ -1,0 +1,37 @@
+{
+ "task": "P:8507",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block36-re-rec",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8507",
+ "pr": 8507,
+ "branch": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171302Z",
+ "elapsed_s": 24.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py",
+    "returncode": 0,
+    "total": "PASS=24 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "9c770b1b31863cc1a605e42cf888b2082d817484b5d432a06b0143e63a8bf772",
+ "stdout_tail": "PR #8507: ail36: if records re-form at every tick \u2014 the static law is the stationary law, the light-cone variant is a bilayer ferromagnet with long-range order, and a persistent source sits in the lattice Green function (conditional on a clause the axioms exclude)\nbranch physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py: rc=0 PASS=24 FAIL=0\n   mutation async_balance_wrong: expected B observed B ok\n   mutation checkerboard_wrong: expected B observed B ok\n   mutation reversibility_wrong: expected C observed C ok\n   mutation bilayer_map_wrong: expected C observed C ok\n   mutation spectrum_wrong: expected D observed D ok\n   mutation infrared_bound_wrong: expected D observed D ok\n   mutation response_symbol_wrong: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171327Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

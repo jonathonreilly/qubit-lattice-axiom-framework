@@ -1,0 +1,11 @@
+PR #8510: ail37: the unit budget of the explanation-tree route is false — a one-seed witness with family constant 10/9; the tight-sibling lemma refuted
+branch physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.py: rc=0 PASS=14 FAIL=0
+   mutation marks_wrong: expected B observed B ok
+   mutation rule_check_wrong: expected B observed B ok
+   mutation unit_budget_holds_injected: expected C observed C ok
+   mutation constant_wrong: expected C observed C ok
+   mutation predecessors_not_tight: expected C observed C ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

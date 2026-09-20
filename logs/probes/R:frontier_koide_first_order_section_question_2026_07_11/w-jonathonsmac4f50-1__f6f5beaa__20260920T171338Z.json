@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_first_order_section_question_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_first_order_section_question_2026_07_11.py",
+ "seed": 24418,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171338Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "627420105d7d50d8dc109bc42bb60a6792d7fdc12dbfa430cf0bfb6944273c0a",
+ "stdout_tail": "w, or upgrade the conditional r=1 versus r=1/2 endpoints\nRESIDUAL (declared-open): the physical selection of the reading stage (weight tie vs outcome label) is an open K-reality / orbit-occupancy question (CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02; KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09). No admission premise class exists, and nothing here adopts a premise.\nRESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades: kinetic-class premise, spin-statistics support tier (one Grassmann pair per site), boundary-holonomy convention, AC_phi_lambda labeling convention (STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03 section 5).\nRESIDUAL (declared-open): all cited source-note rows used for the fork, transfer walls, and occupancy alternatives are currently unaudited; this runner imports no audit grade from them.\n\nTOTAL: PASS=16 FAIL=0\nVERDICT: UNDECIDED WITH EXACT RESIDUAL. The determinant algebra distinguishes imposing K-reality before analytic classification (weight stage) from imposing the same restriction after the holomorphic calculation (outcome stage), while the two prescriptions agree pointwise on the K-real locus. The supplied per-real-mode and per-outcome-cell laws conditionally give r=1 and r=1/2, respectively, but neither law nor its pairing with a physical stage is derived. Spatial corner reflections are center-dependent and do not replace a full OS test. No premise adopted; no audit status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171338Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

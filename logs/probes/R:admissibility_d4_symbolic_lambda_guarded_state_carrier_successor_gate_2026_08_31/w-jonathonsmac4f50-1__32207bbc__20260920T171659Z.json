@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_symbolic_lambda_guarded_state_carrier_successor_gate_2026_08_31",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_symbolic_lambda_guarded_state_carrier_successor_gate_2026_08_31.py",
+ "seed": 24619,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171659Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c1d85e8e4122d91fc8d7c1d6c2997cbaf43cf7d6cdf5903c045293984e209b02",
+ "stdout_tail": "PASS current_source_and_note_inputs\nPASS symbolic_nonnegative_supplied_domain\nPASS positive_root_domain\nPASS comparator_cleanup_before_writers\nPASS actual_canonical256_debits_no_refire\nPASS actual_first_event_filter\nPASS ordinary_one_tip_observable_and_pair_tensor\nTERMINAL: BLOCK32-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171701Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

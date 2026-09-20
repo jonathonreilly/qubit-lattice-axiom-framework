@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_koide_mru_demotion_bridge_corollary_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py",
+ "seed": 24421,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171341Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=9 SOURCE_FAIL=0 ALGEBRA_PASS=7 ALGEBRA_FAIL=0",
+   "PASS=16 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8f50050d79ac7f6b56508e700bdf74138ca55d49844dd729ce6db426f3438ae2",
+ "stdout_tail": "as supplementary conditional support only\n  [SOURCE PASS] block-total and MRU context pointers are not graph-visible markdown edges\n  [SOURCE PASS] old overbroad two-route closure claims are absent\n  [SOURCE PASS] block-total source authority itself declares bounded support\n  [SOURCE PASS] block-total source authority leaves canonical scalar-measure bridge open\n\nTrace/SO(2) obstruction checks\n------------------------------------------------------------------------------\n  [ALGEBRA PASS] tr(H^3) exact formula has phase term 3(b^3+bbar^3), not a-scaled phase\n         tr(H^3) = 3*a**3 + 18*a*x**2 + 18*a*y**2 + 6*x**3 - 18*x*y**2\n  [ALGEBRA PASS] phase survives at a=0, so it cannot be proportional to a(b^3+bbar^3)\n         phase_at_a0=6*x*(x**2 - 3*y**2)\n  [ALGEBRA PASS] generic SO(2) phase rotation changes scalar spectral observables\n         tr3: 17.826000 vs 15.768000; det: 0.650000 vs -0.036000\n\nAbstract Hermitian-circulant Fourier invariant checks\n------------------------------------------------------------------------------\n  [ALGEBRA PASS] abstract Fourier map gives a0 = sqrt(3) a exactly\n  [ALGEBRA PASS] abstract Fourier map gives |z|^2 = 3 |b|^2 exactly\n  [ALGEBRA PASS] Fourier residual equals three times coordinate residual exactly\n  [ALGEBRA PASS] coordinate zero-locus sample points imply Fourier residual zero\n         max_spectrum_residual=8.882e-16\n\nSUMMARY: KOIDE MRU DEMOTION ABSTRACT-BOUNDARY SOURCE_PASS=9 SOURCE_FAIL=0 ALGEBRA_PASS=7 ALGEBRA_FAIL=0 PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171342Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+PASS current_source_and_note_inputs
+PASS symbolic_nonnegative_supplied_domain
+PASS positive_root_domain
+PASS comparator_cleanup_before_writers
+PASS actual_canonical256_debits_no_refire
+PASS actual_first_event_filter
+PASS ordinary_one_tip_observable_and_pair_tensor
+TERMINAL: BLOCK32-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED
+TOTAL: PASS=7 FAIL=0

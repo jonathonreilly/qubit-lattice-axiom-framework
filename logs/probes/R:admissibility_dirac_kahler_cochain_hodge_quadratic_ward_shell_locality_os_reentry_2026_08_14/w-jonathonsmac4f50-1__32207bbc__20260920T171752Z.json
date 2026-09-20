@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_cochain_hodge_quadratic_ward_shell_locality_os_reentry_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_cochain_hodge_quadratic_ward_shell_locality_os_reentry_2026_08_14.py",
+ "seed": 24672,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171752Z",
+ "elapsed_s": 5.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7779d889702cdb77496a9c9ee8a798c16335743b4e0e82fdac4feb3ee924cac8",
+ "stdout_tail": "l=2e-12; ranks=[2, 2, 2]\n[PASS] I-scope-no-go-discipline-and-TOE-firewall: N1-N8 preserve full-4D, temporal-link, joint-gravity, embedding, energy, axiom, audit, a...\nSOURCE_AUTHORITY: current memo and exact declared file bytes; historical Git identities are provenance only\nper_element: exact exterior/Koszul algebra, physical Hodge derivatives, phased Cartan response, Taylor coefficients, and source-bound Gram factors\nper_site: the two-plane carrier dimension is checked; physical fine-site and Record embedding are not executed\nper_mode: all 48 Block98 rows, five Block101 rows, two Block102 rows, and the Lorentz L4 shell cancel or source exactly as declared\nper_block: one Hodge action closes the first Ward term, constant-translation order-h term, and O(h^2) support with radius growth 1->2\nlattice_wide: checked and not executed \u2014 full 4D, temporal/dynamic and joint-gravity OS, constraint reduction, energy, Records, selection, adoption, and retention remain open\nRESULT: the degree-closed 0+1+2 two-plane Dirac-Kahler/Hodge carrier erases every executed scalar nonlinear Ward alias by identity and has a finite radius-two quadratic completion\nDECISION_CUT: advance the radius-two degree-closed Hodge carrier first to a same-action reflected-Gram/equivalence gate, then the actual ADM history transporter; stop scalar rank-one work inside Block102's declared class\nTOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

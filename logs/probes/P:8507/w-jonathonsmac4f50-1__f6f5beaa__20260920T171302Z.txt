@@ -1,0 +1,13 @@
+PR #8507: ail36: if records re-form at every tick — the static law is the stationary law, the light-cone variant is a bilayer ferromagnet with long-range order, and a persistent source sits in the lattice Green function (conditional on a clause the axioms exclude)
+branch physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py: rc=0 PASS=24 FAIL=0
+   mutation async_balance_wrong: expected B observed B ok
+   mutation checkerboard_wrong: expected B observed B ok
+   mutation reversibility_wrong: expected C observed C ok
+   mutation bilayer_map_wrong: expected C observed C ok
+   mutation spectrum_wrong: expected D observed D ok
+   mutation infrared_bound_wrong: expected D observed D ok
+   mutation response_symbol_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

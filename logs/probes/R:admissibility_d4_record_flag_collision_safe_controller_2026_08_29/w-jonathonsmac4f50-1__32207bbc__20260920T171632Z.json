@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_record_flag_collision_safe_controller_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_record_flag_collision_safe_controller_2026_08_29.py",
+ "seed": 24592,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171632Z",
+ "elapsed_s": 22.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "49150e5d389cae6d002be5a2a723a57d2c98eae920a17ee4acb9111b433e9c26",
+ "stdout_tail": "ler cases are total: clear transport is exact and all 31 blocked patterns are identity/permanence safe\nPASS F_stop_probability: clear continuation or blocked STOP carries the full normalized fourteen-outcome mass without supplying site/rate/clock\nPASS G_registered_adjudication: the all-or-none controller closes static-obstacle safety but flag-only geometry cannot choose the arrow, forcing CONDITIONAL-HALO\nPASS H_scope: the note keeps orientation readout, microscopic control, formation selection, concurrency, gravity, axioms, audit, and TOE open\nMUTATION_BASELINE: clean=true; failures=none\nCONTROL_KIND: changed_object; detected=0/0\nCONTROL_KIND: assertion_guard; detected=18/18\nCONTROL_KIND: syntax_guard; detected=9/9\nCONTROL_KIND: scope_guard; detected=11/11\nMUTATIONS: rejected=38/38\nper_element: checked each Record flag, each of five source/destination content pairs, and every occupied-destination permanence identity\nper_site: checked both finite-line endpoints and the complete five-site all-or-none destination guard\nper_mode: checked all nine carrier coordinates and fourteen outcome labels; no Fourier or continuum-mode claim was executed\nper_block: checked 37632 controller cases, including 1176 clear and 36456 blocked cases\nlattice_wide: checked and not executed; simultaneous fronts, global scheduling, occurrence rate, and gravity remain open\nVERDICT: CONDITIONAL-HALO; the all-or-none controller is safe but an unmarked finite line has two flag-only tips\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171655Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

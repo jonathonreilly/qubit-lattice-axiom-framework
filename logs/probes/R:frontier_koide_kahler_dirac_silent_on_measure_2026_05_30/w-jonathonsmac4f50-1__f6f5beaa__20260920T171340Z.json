@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_kahler_dirac_silent_on_measure_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_kahler_dirac_silent_on_measure_2026_05_30.py",
+ "seed": 24420,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171340Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "713a77442fba10fd0a7eeb970729669fc0334a318accfa21cfbe9f93b36c252a",
+ "stdout_tail": "ary: a real-antisymmetric generation bilinear?\n========================================================================================\n[PASS] F5.1 the only C3-equivariant real-antisymmetric operator on R^3 is span{Jcs} (1-dimensional)\n       dim(antisymmetric \u2229 commute-with-C) = 1\n[PASS] F5.2 C3-equivariant SYMMETRIC operators commute with both Jcs and i*I (measure-blind) -> only the antisymmetric (Jcs) direction carries the measure\n       => the measure binary = 'is there a real-antisymmetric generation bilinear (-> Jcs -> Q=2/3) or not (-> central-i -> Q=1)?'\n\n========================================================================================\nSUMMARY\n========================================================================================\n  10/10 checks passed\n\n  K\u00e4hler-Dirac D_KD: grade-off-diagonal => Lambda^1->Lambda^1 = 0\n    => SILENT on the within-generation complex structure (the measure).\n  det / Pfaffian: doublet-power-2 => Q=1 (per-block is NOT a det output).\n  central i*I (eigs {+i,+i,+i}) generation-blind => Q=1;\n    Jcs (det 0, doublet once) => Q=2/3; neither is a full-space J.\n  THE ONE BINARY: a within-generation real-antisymmetric (symplectic)\n    bilinear (uniquely Jcs -> Q=2/3) or not (central-i -> Q=1)?\n    = reality-type / kinetic-order of the generation field = open source question.\n\n  => Q=2/3 needs one discrete open input: a generation real-antisymmetric\n     bilinear. The checked K\u00e4hler-Dirac operator is silent on that input.\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171340Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_koide_kahler_dirac_silent_on_measure_2026_05_30.txt against the .txt beside this log"
+  ]
+ }
+}

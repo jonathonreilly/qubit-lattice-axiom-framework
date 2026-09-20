@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_koide_kodim_route_empty_independence_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_kodim_route_empty_independence_2026_06_08.py",
+ "seed": 24421,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171341Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c277f234d8540df5dfe4bf94fa4eb61b2eb685925adea724ac75e4012c22015b",
+ "stdout_tail": "ich moves anything between places; the real structure is complex conjugation composed with an index swap, not a spatial reflection, and no coordinate or spacing is defined\n  per_mode: each character vector is promoted to its own rank-one projector and then handled on its own - the square of the antilinear map is verified separately on the singlet vector and on both doublet vectors, and the J-reality of the three rank-one projectors is reported one projector at a time rather than folded into a single aggregate claim\n  per_block: the singlet-versus-doublet two-sector split is exactly the object under test, formed as P0 alone against the sum of the two remaining rank-one projectors, and shown J-real; the equipartition condition is then written as an equality between the squared Frobenius norm of the identity part and that of the off-diagonal part, which is a block-by-block energy balance rather than a spectral statement\n  lattice_wide: checked and not executed - no lattice, extent or limiting size appears, and the corollary the runner states is itself the reason nothing whole-system is available: the ratio is left undetermined by the axioms together with the real structure, so the widest object reached is one 3x3 circulant family evaluated at a handful of hardcoded couplings\n\n==========================================================================================\nTOTAL: 15 PASS / 0 FAIL\n==========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171341Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

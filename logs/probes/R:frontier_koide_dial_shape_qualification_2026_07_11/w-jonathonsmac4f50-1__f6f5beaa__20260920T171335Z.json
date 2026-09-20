@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_dial_shape_qualification_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_dial_shape_qualification_2026_07_11.py",
+ "seed": 24414,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171335Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "70cf5f9d33e05604c4f18a2801076dccbfb3669126cffdfe1af84305e9c973be",
+ "stdout_tail": "ommutes with real U, swaps w<->wbar doublet eigenspaces, fixes singlet\nCHECK 07: PASS -- K-invariance forces p1 = p2: joint-invariant Hermitian operators are diag(x,y,y) (real dim 2)\nCHECK 08: PASS -- robustness: 200 random Hermitian operators project onto diag(x, y, y)\nCHECK 09: PASS -- cell rank obstruction: singlet=rank1, doublet=rank2; no group element maps singlet->doublet\nCHECK 10: PASS -- cell orbit obstruction: both cells are group-invariant; split is a free invariant\nCHECK 11: PASS -- T2 dimension rule rho = I/3 is invariant and gives r = 1\nCHECK 12: PASS -- T2 cell-equipartition rule rho = diag(1/2,1/4,1/4) is invariant and gives r = 1/2\nCHECK 13: PASS -- unfixed value: two invariant density-state rules give r = 1 vs r = 1/2\nCHECK 14: PASS -- T3 dictionary: r = |b|^2/a^2 = p_d/(2 p_s), Q = (1+2r)/3, r=1/2 iff E_+ = E_perp\nCHECK 15: PASS -- T3 recovers file-4: C3 leaves r free; no unitary singlet/doublet swap (1 != 2)\nCHECK 16: PASS -- source guard: current Qualification uses conditional/open dependency language, not admission\nCHECK 17: PASS -- source guard: S2 supplied-context bridge carries fixed K/CPT action and ORBIT-INDEXING\n--------------------------------------------------------------------\nRunner: generation weight dial shape forced, value unfixed (Qualification)\nT1 invariant density-state shape forced; T2 value unfixed (Qualification boundary); T3 consistency\nSupplied elements: C3 shift U (context); antiunitary K/CPT exchange (context)\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171335Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

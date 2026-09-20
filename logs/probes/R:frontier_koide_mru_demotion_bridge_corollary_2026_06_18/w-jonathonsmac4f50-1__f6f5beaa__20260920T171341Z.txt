@@ -1,0 +1,30 @@
+Koide MRU demotion and abstract-Fourier-boundary source runner
+==============================================================================
+  [SOURCE PASS] note registers the dedicated demotion runner
+  [SOURCE PASS] note scopes its graph-visible Fourier authority to finite algebra
+  [SOURCE PASS] note explicitly rejects physical closure from either algebraic route
+  [SOURCE PASS] note preserves no-new-axiom / no-audit-verdict boundary
+  [SOURCE PASS] note keeps MRU as supplementary conditional support only
+  [SOURCE PASS] block-total and MRU context pointers are not graph-visible markdown edges
+  [SOURCE PASS] old overbroad two-route closure claims are absent
+  [SOURCE PASS] block-total source authority itself declares bounded support
+  [SOURCE PASS] block-total source authority leaves canonical scalar-measure bridge open
+
+Trace/SO(2) obstruction checks
+------------------------------------------------------------------------------
+  [ALGEBRA PASS] tr(H^3) exact formula has phase term 3(b^3+bbar^3), not a-scaled phase
+         tr(H^3) = 3*a**3 + 18*a*x**2 + 18*a*y**2 + 6*x**3 - 18*x*y**2
+  [ALGEBRA PASS] phase survives at a=0, so it cannot be proportional to a(b^3+bbar^3)
+         phase_at_a0=6*x*(x**2 - 3*y**2)
+  [ALGEBRA PASS] generic SO(2) phase rotation changes scalar spectral observables
+         tr3: 17.826000 vs 15.768000; det: 0.650000 vs -0.036000
+
+Abstract Hermitian-circulant Fourier invariant checks
+------------------------------------------------------------------------------
+  [ALGEBRA PASS] abstract Fourier map gives a0 = sqrt(3) a exactly
+  [ALGEBRA PASS] abstract Fourier map gives |z|^2 = 3 |b|^2 exactly
+  [ALGEBRA PASS] Fourier residual equals three times coordinate residual exactly
+  [ALGEBRA PASS] coordinate zero-locus sample points imply Fourier residual zero
+         max_spectrum_residual=8.882e-16
+
+SUMMARY: KOIDE MRU DEMOTION ABSTRACT-BOUNDARY SOURCE_PASS=9 SOURCE_FAIL=0 ALGEBRA_PASS=7 ALGEBRA_FAIL=0 PASS=16 FAIL=0

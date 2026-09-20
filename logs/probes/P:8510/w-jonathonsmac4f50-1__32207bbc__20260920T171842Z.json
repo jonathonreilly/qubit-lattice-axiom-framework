@@ -1,0 +1,37 @@
+{
+ "task": "P:8510",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block37-unit-b",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8510",
+ "pr": 8510,
+ "branch": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171842Z",
+ "elapsed_s": 12.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "4033933ddbf21ba93001bf840f175243be0799a7becedaa66e47f894c5ec2e84",
+ "stdout_tail": "PR #8510: ail37: the unit budget of the explanation-tree route is false \u2014 a one-seed witness with family constant 10/9; the tight-sibling lemma refuted\nbranch physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_six_axis_formation_threshold_unit_budget_false_one_seed_witness_family_constant_ten_ninths_2026_09_20.py: rc=0 PASS=14 FAIL=0\n   mutation marks_wrong: expected B observed B ok\n   mutation rule_check_wrong: expected B observed B ok\n   mutation unit_budget_holds_injected: expected C observed C ok\n   mutation constant_wrong: expected C observed C ok\n   mutation predecessors_not_tight: expected C observed C ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171855Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,58 @@
+
+========================================================================================
+Kahler-Dirac form-degree coupling: corrected Berry boundary
+========================================================================================
+
+========================================================================================
+F1 - Fock substrate and Lambda^1 embedding
+========================================================================================
+[PASS] F1.1 CAR {a_j,a_k^dag}=delta; d^2=delta^2=0; i*D_KD Hermitian
+       3-mode JW fermions on Lambda*(C^3), dim 8
+[PASS] F1.2 corrected Lambda^1 embedding is nonzero and has C^3=I on Lambda^1
+       ||lift(C)||_F = 1.732; ||lift(C)^3-lift(I)||_max = 0.0e+00
+
+========================================================================================
+F2 - form-parity grading anticommutes with i*D_KD
+========================================================================================
+[PASS] F2.1 {i*D_KD, Gamma_F} = 0 with Gamma_F=(-1)^N on the form factor
+       max|{i D_KD, Gamma_F}| = 0.0e+00
+
+========================================================================================
+F3 - the two circulant b-derivatives commute
+========================================================================================
+[PASS] F3.1 [dH/dRe b, dH/dIm b] = 0 (C and C^2 commute): local algebra diagnostic only, not a standalone Berry theorem
+       max|[dH/dx, dH/dy]| = 0.0e+00
+
+========================================================================================
+F4 - corrected zero-Berry spectator check fails; positive control nonzero
+========================================================================================
+[PASS] F4.1 corrected i*D_KD + circulant mass: Wilson phases are NOT all zero, so the submitted spectator theorem is not certified
+       Berry (kappa,band sweep) = ['-4.0e-32', '-2.5e+00', '0.0e+00', '-2.9e+00', '0.0e+00', '-1.9e+00']
+[PASS] F4.2 POSITIVE CONTROL: a chiral (non-commuting-coupling) 2-band gives a NONZERO monopole -> the Wilson-loop method detects curvature
+       Berry(chiral control) = -0.6871 (!=0)
+
+========================================================================================
+F5 - Gamma_F restricts to scalar -I on Lambda^1
+========================================================================================
+[PASS] F5.1 Gamma_F | Lambda^1 = -I (scalar) -> cannot impose <v|Gamma_chi|v>=0; the Koide grading Gamma_chi=(2/3)J-I is non-scalar on the generation R^3
+       Gamma_F|Lambda^1 = [-1.0, -1.0, -1.0] (= -I)
+
+========================================================================================
+F6 - downstream source-boundary firewall
+========================================================================================
+[PASS] F6.1 note has downstream source-boundary firewall
+[PASS] F6.2 F3 is local algebra diagnostic, not a zero-curvature Berry theorem
+[PASS] F6.3 future Berry theorem requires missing band/observable data
+[PASS] F6.4 packet only blocks stale zero-Berry claim and records nonzero sweep
+
+========================================================================================
+SUMMARY
+========================================================================================
+  11/11 checks passed
+
+  Form-parity anticommutes with i*D_KD, and Gamma_F is scalar on Lambda^1,
+  but the corrected Lambda^1 embedding does not support the zero-Berry
+  spectator theorem: the tested Wilson phases are not all zero.
+  The form-degree Berry role is therefore an open source question.
+
+ALL CHECKS PASSED

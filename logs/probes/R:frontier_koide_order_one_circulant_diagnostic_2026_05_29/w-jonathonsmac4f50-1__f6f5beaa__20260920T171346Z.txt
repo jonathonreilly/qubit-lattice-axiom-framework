@@ -1,0 +1,22 @@
+
+========================================================================
+Symbolic C_3-circulant algebra
+========================================================================
+[PASS] M commutes with every C_3-circulant algebra element
+[PASS] [D, pi(A)] vanishes identically
+
+========================================================================
+Distinct-r witnesses
+========================================================================
+[PASS] r=0.05 satisfies order-one in this route  (max=0.00e+00)
+[PASS] r=0.2 satisfies order-one in this route  (max=0.00e+00)
+[PASS] r=0.5 satisfies order-one in this route  (max=0.00e+00)
+[PASS] r=1 satisfies order-one in this route  (max=0.00e+00)
+[PASS] r=2 satisfies order-one in this route  (max=1.11e-16)
+[PASS] r=5 satisfies order-one in this route  (max=0.00e+00)
+
+========================================================================
+Summary
+========================================================================
+PASS=8 FAIL=0
+C_3-circulant order-one is vacuous on this route, so it does not select r=1/2.

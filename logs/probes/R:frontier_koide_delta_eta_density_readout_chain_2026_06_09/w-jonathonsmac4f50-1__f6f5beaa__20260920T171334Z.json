@@ -1,0 +1,44 @@
+{
+ "task": "R:frontier_koide_delta_eta_density_readout_chain_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py",
+ "seed": 24414,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171334Z",
+ "elapsed_s": 0.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "01220ceb4cb54b03e53241d407b204c07730b96486c446be7de379b67bee7eb9",
+ "stdout_tail": "-----------------------------------------------------\nE6: K-orbit consistency -- the chain supplies exactly the registrable atom\n----------------------------------------------------------------------------------------\n  [PASS] conj(H(delta)) = H(-delta) on the supplied circulant class; with the registrability bridge, the registrable atom is |delta| -- exactly what the chain supplies; the sign stays frame content\n  [PASS] the circulant-class form consumed here matches the retained_bounded K-orbit form authority: that note carries the exact H(delta) form, the exact conjugation/sign-flip statement, and the bounded |delta| atom boundary (located mechanically; the identity itself is re-verified symbolically above)  --  retained_bounded one-hop form authority; same wiring as the R-eta narrowing note\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py\", line 358, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py\", line 281, in main\n    with open(graph_path, encoding=\"utf-8\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/../docs/audit/data/citation_graph.json'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171334Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'SUMMARY: PASS=24 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_koide_delta_eta_density_readout_chain_2026_06_09.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/../docs/audit/data/citation_graph.json, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171334Z"
+ }
+}

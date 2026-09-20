@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_koide_kahler_dirac_realization_gives_r_one_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_kahler_dirac_realization_gives_r_one_2026_06_08.py",
+ "seed": 24419,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171339Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bf5b64c7e8cd1bc86aff4c462f30a9b7368e9640a7cb599cee79338a0329650a",
+ "stdout_tail": "ngled out or acted on individually, and no second site, hop or spacing exists\n  per_mode: modes are handled individually on both sides of the readout question - the three circulant eigenvalues a + 2b cos(delta + 2 pi k / 3) are built one per k and summed symbolically to give the exact Koide lever, and numerically the squared Dirac spectrum is matched against each squared singular value taken twice, which is what shows the physical masses to be sign-blind\n  per_block: the graded decomposition is computed rather than quoted - the Hamming weights of the eight basis labels are counted into the dimensions one, three, three, one, the volume element splits those eight into four positive and four negative chirality states, the two three-dimensional classes are read as the left and right generation triplets, and the supertrace grading is then assembled as the block diagonal of plus and minus the 3x3 identity\n  lattice_wide: checked and not executed - no lattice of sites, no volume and no limiting size appears, and section F states the sharper reason there is nothing global to sum over: the taste index is the Qubit itself, so there is no integer copy factor to root or extend, and the sole residual the runner records is a one-slot signed readout rather than any whole-system quantity\n\n==========================================================================================\nTOTAL: 22 PASS / 0 FAIL\n==========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171340Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

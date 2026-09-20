@@ -1,0 +1,44 @@
+{
+ "task": "R:gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py",
+ "seed": 24909,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "45f7fbe9",
+ "started_utc": "20260920T172149Z",
+ "elapsed_s": 20.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fd5f951c4172b8eb0b45980c5e3c30fc7dc2d8ef3e29242e0783d1990aa327c1",
+ "stdout_tail": " exists (docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md)\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py\", line 516, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py\", line 503, in main\n    section_G()\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py\", line 459, in section_G\n    note_flat = flat(NOTE.read_text(encoding=\"utf-8\"))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T172209Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=72 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T172209Z"
+ }
+}

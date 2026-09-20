@@ -1,0 +1,34 @@
+{
+ "task": "R:admissibility_dirac_kahler_complex_structure_synthesis_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_complex_structure_synthesis_2026_08_23.py",
+ "seed": 24704,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171824Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ce50bef9c0c0f6efa5e684407c96f4559ad9b9dc7fb7e41ee9d139b3b000bed4",
+ "stdout_tail": "PASS: 12x6 finite orbit and complex characters :: restriction=Matrix([[3193/2240, 0, 0], [0, 3193/2240, 0], [0, 0, 3193/2240]]), betas=(3193/2240,3193/2240), antilinear=(0, 0)\nPASS: realification has the positive determinant power :: det_R=1059725808475991023249/126324651851776000000, |det_C|^2=1059725808475991023249/126324651851776000000\nPASS: paired Gaussian uses reciprocal realified determinant :: Z(Q)Z(Q^dagger)=pi^(2N)/det Real(Q) for N=3\nPASS: supplied complex structure :: J^2=Matrix([[-1, 0], [0, -1]])\nPASS: supplied slot comparison :: (r1,q1,r2,q2)=(1/2, 2/3, 1, 1); this map is supplied, not derived\nPASS: literal input closure and bounded note :: float_literals=0, inputs_bound=True\nper_element: determinant realification and the reciprocal Gaussian normalization are distinguished exactly\nper_site: one supplied 12x6 orbit has the displayed scalar sesquilinear restriction\nper_mode: the one-complex-slot arithmetic is a supplied comparison, not a physical derivation\nper_block: the historical role reading remains interpretive and no holonomy arm is executed here\nlattice_wide: no probability law, carrier selector, all-lattice theorem, premise, axiom, audit, or TOE conclusion follows\nTOTAL: 6/6 PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171827Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

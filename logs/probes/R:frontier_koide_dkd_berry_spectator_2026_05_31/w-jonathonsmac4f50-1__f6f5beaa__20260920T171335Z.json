@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_dkd_berry_spectator_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py",
+ "seed": 24415,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171335Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4bb5a23cb44890190271e2ad4440a2c0a70a76f8059f79ad45b1a0a9c531a3d8",
+ "stdout_tail": "urvature\n       Berry(chiral control) = -0.6871 (!=0)\n\n========================================================================================\nF5 - Gamma_F restricts to scalar -I on Lambda^1\n========================================================================================\n[PASS] F5.1 Gamma_F | Lambda^1 = -I (scalar) -> cannot impose <v|Gamma_chi|v>=0; the Koide grading Gamma_chi=(2/3)J-I is non-scalar on the generation R^3\n       Gamma_F|Lambda^1 = [-1.0, -1.0, -1.0] (= -I)\n\n========================================================================================\nF6 - downstream source-boundary firewall\n========================================================================================\n[PASS] F6.1 note has downstream source-boundary firewall\n[PASS] F6.2 F3 is local algebra diagnostic, not a zero-curvature Berry theorem\n[PASS] F6.3 future Berry theorem requires missing band/observable data\n[PASS] F6.4 packet only blocks stale zero-Berry claim and records nonzero sweep\n\n========================================================================================\nSUMMARY\n========================================================================================\n  11/11 checks passed\n\n  Form-parity anticommutes with i*D_KD, and Gamma_F is scalar on Lambda^1,\n  but the corrected Lambda^1 embedding does not support the zero-Berry\n  spectator theorem: the tested Wilson phases are not all zero.\n  The form-degree Berry role is therefore an open source question.\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171335Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_koide_dkd_berry_spectator_2026_05_31.txt against the .txt beside this log"
+  ]
+ }
+}

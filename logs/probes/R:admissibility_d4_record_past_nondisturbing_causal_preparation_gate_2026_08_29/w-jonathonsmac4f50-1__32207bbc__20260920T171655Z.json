@@ -1,0 +1,34 @@
+{
+ "task": "R:admissibility_d4_record_past_nondisturbing_causal_preparation_gate_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_d4_record_past_nondisturbing_causal_preparation_gate_2026_08_29.py",
+ "seed": 24615,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171655Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "97d16d8ae0cc417dc8dea23169f48481a091db8ded7ef13330aca23ba7498d89",
+ "stdout_tail": "PASS: open nine-parameter maximally mixed anchor | (9, 3/16384)\nPASS: pair differences generate full six-site algebra | (16, 4096)\nPASS: rank-one identity Choi support forces constant complement | {'bistochastic_anchor': True, 'fixed_tangent_rank': 9, 'fixed_algebra_dimension': 4096, 'identity_choi_rank': 1, 'identity_choi_trace': 64, 'off_diagonal_minor': -beta**2, 'kraus_span_nullity': 1, 'pure_marginal_forces_product': True, 'constant_complement_rank': 0, 'target_complement_rank': 9}\nPASS: even shell cannot remove variable odd target | {'odd_decoder_unchanged': True, 'target_rank': 9, 'full_rank': 18, 'even_count': 9}\nPASS: orthogonal classical CNOT escape | {'unitary': True, 'zero_copy': True, 'one_copy': True, 'orthogonal': True, 'open_nine_parameter': False}\nPASS: actual approximate clone relaxed-premise channel | {'tp': True, 'marginal_shrink': True, 'identity': True, 'shrink': 2/3, 'exact_copy': False, 'prefix_safe': False}\nTOTAL: 6 passed, 0 failed\nper_element: exact finite matrix, coefficient or probability predicates named above were executed.\nper_site: supplied six-neighbor condition identities only; no generated physical-site update executed.\nper_mode: checked and not executed \u2014 no universal momentum or dynamical mode campaign is claimed.\nper_block: finite conditional source, carrier or channel scope is exactly the named predicates above.\nlattice_wide: checked and not executed \u2014 no whole-stencil dynamics, infinite history or physical selection is claimed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171656Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

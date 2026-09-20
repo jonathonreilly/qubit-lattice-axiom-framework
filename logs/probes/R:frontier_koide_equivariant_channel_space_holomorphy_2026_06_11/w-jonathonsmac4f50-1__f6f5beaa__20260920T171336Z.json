@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_equivariant_channel_space_holomorphy_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_equivariant_channel_space_holomorphy_2026_06_11.py",
+ "seed": 24416,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171336Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9e861ee664618a90ddc1d6e67587a88bdb9214042308a2add97c54a39b5bfff0",
+ "stdout_tail": "det M|^2 structure is the K-tied point of a holomorphic channel family, not a measure output\n[PASS] (17) full-surface confirmation: det(D + tA) leading behaviour matches the corner determinant for a coupling INCLUDING the native eps hw-mixing channel (ratio of two parameter points)  [|ratio mismatch| = 5.70e-06]\nRESIDUAL (declared-open): which reading section is physical (unrestricted holomorphic with K-orbit outcomes vs an antiunitary-tied section) is NOT decided here: it is the standing occupancy/K-reality selection -- the named owner-decision premise surface of the 2026-06-09 occupancy note and the 2026-06-02 custody note. Nothing is adopted by this runner.\nRESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades (kinetic-class premise, spin-statistics support tier, boundary-holonomy convention, AC_phi_lambda labeling convention).\n\nTOTAL: PASS=17 FAIL=0\nVERDICT: the COMPLETE C_3-equivariant bilinear channel space on the corner sector is M_4 + M_2 + M_2 (24-dim, fully lattice-realizable, including native hw=1<->hw=2 eps-mixing channels); for EVERY channel the first-order corner output is a polynomial in the channel parameters (holomorphy is channel-independent); count-twice/modulus structure arises exactly on antiunitary-tied parameter sections (K-real: gamma = conj beta -> |det beta|^2; Hermitian: in-block z zbar), recovering block01's c = conj(b) line and the 2026-06-08 |det M|^2 object as instances. No premise adopted; no audit status set.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171338Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

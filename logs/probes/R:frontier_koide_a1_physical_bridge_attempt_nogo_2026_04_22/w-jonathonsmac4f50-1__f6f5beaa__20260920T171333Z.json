@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_a1_physical_bridge_attempt_nogo_2026_04_22.py",
+ "seed": 24413,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171333Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "03eb00933caeff043fa3ffdbefcd310e6072d73d5a64753785d320e208c2ed1a",
+ "stdout_tail": "of u^4 (log(u^2/mu^2) - 3/2) is u = sqrt(e) * mu\n  [PASS] B.2 V_CW extremum forces e1 = e2 (i.e. b = 0), giving |b|/a = 0\n  [PASS] B.3 V_CW extremum is at Koide Q = 1/3, not Q = 2/3\n  [PASS] C.1 <a^2> / <|b|^2> = 1 for Gaussian at fixed Frobenius (NOT 2)\n  [PASS] C.2 Gaussian Frobenius max-ent ratio differs from A1 by factor 2\n  [PASS] D.1 Uniform 3-eigenvalue distribution gives Koide Q = 1/3\n  [PASS] D.2 Max-entropy on simplex (Q = 1/3) is NOT A1 (Q = 2/3)\n  [PASS] D.3 CV = 1 is the exponential continuous max-ent CV; not realizable on 3-point simplex from mean alone\n  [PASS] E.1 KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md exists on disk\n  [PASS] E.2 KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md exists on disk\n  [PASS] E.3 KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md exists on disk\n  [PASS] E.4 KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md exists on disk\n  [PASS] E.5 parent note KOIDE_A1_PHYSICAL_BRIDGE_ATTEMPT_2026-04-22.md exists on disk\n  [PASS] E.6 this section is graph-bookkeeping only and asserts no status promotion\n\nVERDICT: the four attempted physical bridges (W[J=0] = log|det H|,\nColeman-Weinberg V_CW, Gaussian max-ent at fixed Frobenius, and\n3-eigenvalue simplex max-ent) all fail to extremize at A1 by\nsymbolic verification on circulant H. The parent note's open-gate\nnegative-attempt boundary is executable. The physical source-law\nselecting the block-total Frobenius functional remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171334Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

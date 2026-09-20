@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_order_one_circulant_diagnostic_2026_05_29",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_order_one_circulant_diagnostic_2026_05_29.py",
+ "seed": 24426,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171346Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ce4664602147044dc3a7e55f630eb56421fc8e5d3d9df0b30afcf1350a8f211c",
+ "stdout_tail": "\n========================================================================\nSymbolic C_3-circulant algebra\n========================================================================\n[PASS] M commutes with every C_3-circulant algebra element\n[PASS] [D, pi(A)] vanishes identically\n\n========================================================================\nDistinct-r witnesses\n========================================================================\n[PASS] r=0.05 satisfies order-one in this route  (max=0.00e+00)\n[PASS] r=0.2 satisfies order-one in this route  (max=0.00e+00)\n[PASS] r=0.5 satisfies order-one in this route  (max=0.00e+00)\n[PASS] r=1 satisfies order-one in this route  (max=0.00e+00)\n[PASS] r=2 satisfies order-one in this route  (max=1.11e-16)\n[PASS] r=5 satisfies order-one in this route  (max=0.00e+00)\n\n========================================================================\nSummary\n========================================================================\nPASS=8 FAIL=0\nC_3-circulant order-one is vacuous on this route, so it does not select r=1/2.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171346Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

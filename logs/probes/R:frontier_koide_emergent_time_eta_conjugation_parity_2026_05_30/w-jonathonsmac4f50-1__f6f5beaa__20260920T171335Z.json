@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_emergent_time_eta_conjugation_parity_2026_05_30.py",
+ "seed": 24415,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171335Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1838594f971bc0d395852dec1356ef1055fe9332d2ce00f001b261e579291661",
+ "stdout_tail": "===========================================================\nCheck 5 - positive control: detector is sensitive\n========================================================================\n[PASS] conjugate-symmetric coupling: spectral asymmetry eta = 0  (eta=0)\n[PASS] c-independent deformation: spectral asymmetry eta != 0  (eta=4)\n[PASS] the control has coeff(C^2) != conj(coeff(C)) (non-Hermitian)\n\n========================================================================\nCheck 6 - over-determination: reality forces even-ness even when P breaks\n========================================================================\n[PASS] W_mix explicitly breaks the transposition lift ([W_mix, I (x) P] != 0)  (norm=2.80)\n[PASS] spec(O(b)) = spec(O(conj b)) with P broken (reality: O(conj b) = O(b)^T)  (max=0.0e+00)\n\n========================================================================\nCheck 7 - the odd generator i(C - C^2) is only the arg(b) tangent\n========================================================================\n[PASS] i(C - C^2) is Hermitian\n[PASS] i(C - C^2) is P-odd (P G P = -G)\n[PASS] M(b) + eps i(C - C^2) = M(b + i eps) (reparametrizes b; stays conjugate-symmetric)\n\n========================================================================\nSummary\n========================================================================\nPASS=17 FAIL=0\nConjugation-odd Berry coefficient vanishes on the conjugate-symmetric\nC_3 circulant and transpose-preserving real extensions.\nPositive control eta_chi=4.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171336Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,19 @@
+CHECK 01: PASS -- live Record quote: a present record locks exactly one admissible local possibility
+CHECK 02: PASS -- live Record quote: a readout value is determined by record content alone
+CHECK 03: PASS -- four enumerated channel determinants match their exact formulas; {'cycle': 0, 'two_step_path': 0, 'single_edge': 0, 'two_edge_star': 0}
+CHECK 04: PASS -- before restriction, no enumerated determinant contains bbar
+CHECK 05: PASS -- before restriction, every enumerated determinant is harmonic in (Re b, Im b); {'cycle': 0, 'two_step_path': 0, 'single_edge': 0, 'two_edge_star': 0}
+CHECK 06: PASS -- on c=bbar, the four mixed derivatives equal -3a, -2a, -a, -2a; {'cycle': 0, 'two_step_path': 0, 'single_edge': 0, 'two_edge_star': 0}
+CHECK 07: PASS -- c=bbar is the formal Hermitian/K-real restriction on all four real channels
+CHECK 08: PASS -- negative control: pre-restriction conjugate contamination has nonzero mixed curvature; mixed=-a
+CHECK 09: PASS -- Record countermodel: one locked content determines two distinct component readouts; readouts={'Re': x, 'Im': y}
+CHECK 10: PASS -- under the supplied one-possibility/one-slot rule, outcome slotting has the required count; required=1; outcome=1
+CHECK 11: PASS -- under that supplied rule, component slotting has a two-versus-one count mismatch; required=1; components=2
+CHECK 12: PASS -- same-density Cartesian and polar integrals agree and give the honest moment r=1; Z_cart=pi/(6*beta); Z_polar=pi/(6*beta); <a^2>=1/(6*beta); <|b|^2>=1/(6*beta)
+CHECK 13: PASS -- different-kernel support cells give 2pi/g and pi/g; no r map is applied; Z_real=2*pi/g; Z_complex=pi/g
+CHECK 14: PASS -- conditional aggregate laws give n_d=2 -> (r,Q)=(1,1) and n_d=1 -> (1/2,2/3); n_d=2:(1, 1); n_d=1:(1/2, 2/3)
+CHECK 15: PASS -- wrong-count discriminator: n_d=3 gives (r,Q)=(3/2,4/3); n_d=3:(3/2, 4/3)
+SUMMARY files: docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py
+SUMMARY conditional residual: a Record-compatible physical rule mapping locked possibilities to statistical slots.
+SUMMARY repair: the rho-map is withdrawn; same-density moments give r=1; r=1/2 occurs only under the supplied aggregate outcome-cell condition.
+TOTAL: PASS=15 FAIL=0

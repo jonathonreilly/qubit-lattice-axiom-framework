@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_orbit_occupancy_independence_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py",
+ "seed": 24425,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171345Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2750ab1f9e834c07488f50c7ab1b0cf0e0b75fbd0efffc6afee625e81917e27d",
+ "stdout_tail": "nd Berezin)  --  Z_real=2*pi/g, Z_majorana=2*pi/g, Z_holo_gauss=pi/g, Z_holo_berezin=pi/g\n  [PASS] the two integral/kernel cells differ by the factor 2\n  [REPORT] The two Z values alone provide no equation for r; the former rho-map attribution is not used.\n  [PASS] honest conditional consequence map: real-dimension aggregate -> (r,Q)=(1,1); outcome-cell aggregate -> (r,Q)=(1/2,2/3)\n\n----------------------------------------------------------------------------------------\nReport-only observational comparator\n----------------------------------------------------------------------------------------\n  [REPORT] PDG 2026 central-value Q = 0.666664463403\n  [REPORT] Q_PDG - 2/3 = -2.203264030110e-06\n  [REPORT] Comparator values are observational inputs and are not thresholded.\n\n----------------------------------------------------------------------------------------\nScope boundaries\n----------------------------------------------------------------------------------------\n  [SCOPE] not a derivation or adoption of the per-outcome-cell condition\n  [SCOPE] not a componentwise equality in a fixed Cartesian basis\n  [SCOPE] not a Gaussian-moment route to r = 1/2\n  [SCOPE] not a link from the decoupled partition-cell arithmetic to r\n  [SCOPE] not a charged-lepton mass prediction or audit verdict\n\n========================================================================================\nSUMMARY: PASS=27 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171346Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

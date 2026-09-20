@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_occupancy_kernel_coefficient_not_fixed_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_occupancy_kernel_coefficient_not_fixed_2026_06_12.py",
+ "seed": 24422,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171342Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "777738a20660fb2877ec2764e1b0c257faf43627682810abb3aa9d76b1da2ddf",
+ "stdout_tail": "inant identity: symbolic 3x3 expansion gives the six-term permutation formula\nPASS - Kernel-coefficient witness: block-diagonal singlet plus doublet factorizes from the expansion\nPASS - Kernel-coefficient witness: doublet rank-2 scaling is lambda^2 and paired rank-1 scaling is lambda\nPASS - Kernel-coefficient witness: Grassmann nilpotency and dimension are preserved under lambda scaling\nPASS - Kernel-coefficient witness: supplied circulant class remains C3-equivariant after lambda scaling\nPASS - Occupancy-atom localization: lambda freedom realizes both Z_d weight cells under the rho map\nPASS - Occupancy-atom localization: no check pins r; lambda-free admissible r set is the full binary\nPASS - Source boundary: substep1 carries evaluates-exactly/det/unique-surviving/single-pair text\nPASS - Source boundary: substep2 carries the no-physical-identification sentence fragment\nPASS - Source boundary: retained notes do not supply transfer/time/reflection-positivity strings\nPASS - Note hygiene: supplied-circulant/prerequisite/live-route language appears without closing phrases\nPASS - Note hygiene: firewall keeps the occupancy binary open and avoids the forbidden r-forcing phrase\nPASS - Note hygiene: link inventory has exactly two load-bearing markdown note links and backticked context names\nPASS - Note hygiene: no-promotion statement is present\nPASS - Runner hygiene: explicit expansion path is used and no matrix-det call substitutes for the determinant identity\nSUMMARY: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171343Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

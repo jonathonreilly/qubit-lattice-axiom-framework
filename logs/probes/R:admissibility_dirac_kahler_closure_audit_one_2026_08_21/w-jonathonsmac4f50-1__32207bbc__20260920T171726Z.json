@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_closure_audit_one_2026_08_21",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_closure_audit_one_2026_08_21.py",
+ "seed": 24646,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32207bbc",
+ "started_utc": "20260920T171726Z",
+ "elapsed_s": 5.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "883c389846c5faa110ac18dc21c42202af70bccc045a8525c883484a5f6cf4f8",
+ "stdout_tail": "e': 32, 'samples': ((1/3, 1/2, 10, (6, 0, 2), False), (10, 1/2, 10, (8, 0, 0), True), (1/3, 1/2, 1/10, (7, 0, 1), False), (10, 1/2, 1/10, (8, 0, 0), True), (1, 1/2, 1/10, (7, 0, 1), False), (1, 1/4, 1/10, (8, 0, 0), True), (1, 1/2, 100, (6, 0, 2), False))}, '12x4': {'square_nonzero': True, 'one_per_row_column': True, 'rank_when_g2_one': 48, 'samples': ((1/3, 1/2, 100, (4, 0, 4), False), (3, 1/2, 100, (8, 0, 0), True), (1/3, 1/2, 1/10, (4, 0, 4), False), (3, 1/2, 1/10, (8, 0, 0), True), (1, 1/2, 1/50, (4, 0, 4), False), (1, 1/4, 1/50, (8, 0, 0), True), (1, 1/2, 100, (7, 0, 1), False))}}\n[PASS] F-seven-point-rows: the fourteen cells are pointwise PSD/non-PSD tests only; they do not establish endpoint laws or monotonicity\n[PASS] G-metric-support-and-selected-map: x-reflecting rows show zero-forbidden-entry support compatibility only; selected shear-map rows={'8x4': {'support': {'x_trivial': [((-1, 2, 1, 0), 32), ((-1, 2, 1, 2), 32)], 'x_reflecting': [((-1, 2, -1, 0), 0), ((-1, 2, -1, 1), 0), ((-1, 2, -1, 2), 0), ((-1, 2, -1, 3), 0)]}, 'maps': {'offregion': (8, False), 'region': (0, True)}}, '12x4': {'support': {'x_trivial': [((-1, 2, 1, 0), 48), ((-1, 2, 1, 2), 48)], 'x_reflecting': [((-1, 2, -1, 0), 0), ((-1, 2, -1, 1), 0), ((-1, 2, -1, 2), 0), ((-1, 2, -1, 3), 0)]}, 'maps': {'offregion': (8, False), 'region': (0, True)}}}\n[PASS] H-exact-bounded-scope: finite named classes only; no endpoint theorem, cone preservation, wall independence, or physical closure\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171732Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

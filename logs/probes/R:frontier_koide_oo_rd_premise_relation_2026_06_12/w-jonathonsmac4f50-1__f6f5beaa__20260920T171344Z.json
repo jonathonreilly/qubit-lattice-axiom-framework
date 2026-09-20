@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_oo_rd_premise_relation_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_oo_rd_premise_relation_2026_06_12.py",
+ "seed": 24424,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171344Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0dbd550d356a5ee235e77870f76b1bc84a54fff031db94498aeb505ea53d4db9",
+ "stdout_tail": "forces a -> 0 at fixed doublet content, but positive channel weights require a > 0; trace sum(lambda_k)=3a  [trace_difference=0]\n[PASS] (05) {0, 1/2, infinity} minus the two side-condition exclusions is exactly {1/2}  [admissible={1/2}]\n[PASS] (06) r = 1/2 <-> rho = 1 <-> Z_d = pi/g under r = 1/(2 rho), rho = (pi/g)/Z_d  [rho=[1], Z_d=[pi/g]]\n[PASS] (07) orbit-occupancy's realized value is phi-stationary: phi(1/2) = 1/2 exactly\n[PASS] (08) Fix(psi) for psi(r) = r^2 is {0, 1}, plus infinity by the same projective conjugation  [finite=[0, 1], conjugated=s**2]\n[PASS] (09) under psi the same exclusions leave {1}, the sector cell, not orbit-occupancy's r = 1/2 count  [admissible={1}]\n[PASS] (10) orbit-occupancy's realized value is not psi-stationary: psi(1/2) = 1/4 != 1/2\n[PASS] (11) net relation assembled: records-flow durability => orbit-occupancy realization under phi + side conditions; orbit-occupancy => phi-stationarity; law-equivalence fails via psi\n\n--- B-class: note consistency checks\n[PASS] (12) note quotes both premise statements verbatim\n[PASS] (13) note carries supplied-flow boundary, proposed/NOT adopted language, Status authority, and No-promotion statement\n[PASS] (14) context notes are backticked only; the note's .md link inventory is exactly the two load-bearing dependencies and both resolve  [links=['FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md', 'KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md']]\n\nSUMMARY: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171345Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,7 @@
+PASS current_source_and_note_inputs
+PASS local_positive_roots_rows_and_actual_writer_deletion
+PASS ten_block_geometry
+PASS 3136_actual_record_configurations
+PASS two_q_tables_and_changed_weight
+TERMINAL: BLOCK28-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED
+TOTAL: PASS=5 FAIL=0

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_occupancy_locked_record_outcomes_2026_07_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py",
+ "seed": 24423,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f6f5beaa",
+ "started_utc": "20260920T171343Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0ed57a223491622f7a0d464892a98d45a34d3de773635f8250ef4c8569e13fb1",
+ "stdout_tail": "eal restriction on all four real channels\nCHECK 08: PASS -- negative control: pre-restriction conjugate contamination has nonzero mixed curvature; mixed=-a\nCHECK 09: PASS -- Record countermodel: one locked content determines two distinct component readouts; readouts={'Re': x, 'Im': y}\nCHECK 10: PASS -- under the supplied one-possibility/one-slot rule, outcome slotting has the required count; required=1; outcome=1\nCHECK 11: PASS -- under that supplied rule, component slotting has a two-versus-one count mismatch; required=1; components=2\nCHECK 12: PASS -- same-density Cartesian and polar integrals agree and give the honest moment r=1; Z_cart=pi/(6*beta); Z_polar=pi/(6*beta); <a^2>=1/(6*beta); <|b|^2>=1/(6*beta)\nCHECK 13: PASS -- different-kernel support cells give 2pi/g and pi/g; no r map is applied; Z_real=2*pi/g; Z_complex=pi/g\nCHECK 14: PASS -- conditional aggregate laws give n_d=2 -> (r,Q)=(1,1) and n_d=1 -> (1/2,2/3); n_d=2:(1, 1); n_d=1:(1/2, 2/3)\nCHECK 15: PASS -- wrong-count discriminator: n_d=3 gives (r,Q)=(3/2,4/3); n_d=3:(3/2, 4/3)\nSUMMARY files: docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py\nSUMMARY conditional residual: a Record-compatible physical rule mapping locked possibilities to statistical slots.\nSUMMARY repair: the rho-map is withdrawn; same-density moments give r=1; r=1/2 occurs only under the supplied aggregate outcome-cell condition.\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T171343Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

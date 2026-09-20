@@ -1,0 +1,48 @@
+P1  the star's geometry
+ok   six leaves with five outside neighbours each, but only 18 outside sites:
+ok   12 of them (the corners) are shared by exactly two leaves
+     So the environment space is 6^18 = 101559956668416, not 6^30, and the six leaf factors are
+     NOT independent: a factor-by-factor or pairing count over 30 free values is wrong.
+
+P2  the mechanism
+     If a cubic symmetry M acts on the six values as a single 6-cycle and the
+     environment is M-equivariant, then Phi_centre(Ma) = Phi_centre(a) for every a,
+     and a 6-cycle is transitive, so Phi is constant - for EVERY rule (p,q,r).
+ok   8 of the 48 cubic symmetries act on the values as a 6-cycle
+ok   they generate exactly 4 distinct cyclic subgroups
+
+P3  each subgroup's family
+     orbits on the 18 outside sites: [6, 6, 6] -> 6^3 = 216 equivariant environments
+     orbits on the 18 outside sites: [6, 6, 6] -> 6^3 = 216 equivariant environments
+     orbits on the 18 outside sites: [6, 6, 6] -> 6^3 = 216 equivariant environments
+     orbits on the 18 outside sites: [6, 6, 6] -> 6^3 = 216 equivariant environments
+ok   each subgroup has three orbits of six, hence exactly 6^3 = 216 equivariant
+     environments - which is attempt a2's 216, now identified and explained.
+
+P4  they all agree, and their union
+ok   Phi is constant in all 160 sampled equivariant environments at (3,1,2)
+ok   and at (4,1,2) too, as the symmetry argument says
+ok   and at (7,2,3) too, as the symmetry argument says
+ok   the four families overlap: their union is exactly 840 environments
+     (216 + 208 + 208 + 208), against a2's 216 - a factor 3.89 more,
+     and still a vanishing fraction of 6^18.
+
+P5  at (3,1,2) there is no smaller cancellation
+     rule (3, 1, 2): 234 distinct leaf factors up to scale; 0 constant; 0 with an inverse partner
+ok   at (3,1,2) no single leaf factor is constant and no two can cancel, so every
+     agreeing environment there is an irreducible cancellation among at least
+     three leaves - which is what the equivariant families are.
+     rule (4, 1, 2): 146 distinct leaf factors up to scale; 0 constant; 8 with an inverse partner
+ok   at (4,1,2), where pq = r^2, eight leaf factors DO have inverse partners, so
+     pairwise cancellation becomes available: the structure is rule-dependent.
+
+P6  what is still open
+     The full count over 6^18 = 1.0e14 environments is not settled here.  It is not a
+     product problem: by P1 the twelve corner sites are each shared by two leaves, so
+     the six factors are coupled and a meet-in-the-middle over leaf multisets counts
+     configurations that do not exist.  What is settled is the mechanism, the exact
+     size of the symmetric part (840), and that no pairwise shortcut exists at (3,1,2).
+ok   stated
+
+SUMMARY: PARTIAL attempt a2's 216 agreeing centre-first star environments are the environments equivariant under one cyclic symmetry whose action on the six values is a 6-cycle - the mechanism being that Phi is then invariant under a transitive group, hence constant, for every rule; there are exactly four such subgroups, each with three orbits of six on the star's 18 outside sites (not 30: the twelve corners are shared by two leaves each), hence exactly 6^3 = 216 environments apiece, and their union is exactly 840; at (3,1,2) no leaf factor is constant and no two leaf factors are inverse, so agreement there is an irreducible cancellation among at least three leaves, while at (4,1,2), where pq = r^2, eight factors do have inverse partners
+HIT: the agreeing set of the centre-first star contains exactly 840 environments from transitive equivariance, four times a2's exhibited 216, and the star's environment space is 6^18 with twelve shared corner sites - so the leaf factors are coupled and any product-form count of the agreeing set is invalid

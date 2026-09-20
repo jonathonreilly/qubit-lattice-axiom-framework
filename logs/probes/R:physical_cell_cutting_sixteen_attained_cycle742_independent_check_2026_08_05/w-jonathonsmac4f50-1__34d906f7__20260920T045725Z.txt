@@ -1,0 +1,6 @@
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py", line 18, in <module>
+    from pysat.card import CardEnc, EncType
+ModuleNotFoundError: No module named 'pysat'

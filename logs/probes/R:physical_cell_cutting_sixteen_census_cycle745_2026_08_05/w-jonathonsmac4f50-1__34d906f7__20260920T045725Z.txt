@@ -1,0 +1,6 @@
+PASS D01  Cycle 737 binds this exact incidence, order, and eight readings
+FAIL D02  Cycle 741 primary and independent receipts bind complete emptiness through weight 14
+PASS ID01  the complete 124812100-pair census pins 46128 four-moves, 31968 six-moves, 120 four-move differences, and exactly the three normalized reading pairs
+PASS ID02  seventeen named targets are realizable; the odd-total synthetic rejector alone is not
+PASS ID03  every realizable target has a directly rechecked exact support witness
+TOTAL: PASS=4 FAIL=1

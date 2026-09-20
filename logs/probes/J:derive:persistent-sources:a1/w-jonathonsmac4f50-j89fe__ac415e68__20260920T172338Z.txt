@@ -1,0 +1,39 @@
+U1  the 4x4x4 torus, 7-point light-cone stencil, killing 1/10
+     G(0) = 3337205782/2311505635 = 1.443736814
+ok        G is symmetric
+
+U2  a line of n sources, all pinned at alpha = 1
+     The claim to test is that m(y) = sum_i c_i G(y - x_i) with c = M^-1 alpha solves
+     the pinned problem for every n, i.e. (I - P) m vanishes off the line AND every
+     pinning condition holds.  Sources along the first axis at 0, 1, .., n-1:
+ok        n = 2: all 2 pinning conditions hold and (I - P) m = 0 at every unpinned site
+ok        n = 3: all 3 pinning conditions hold and (I - P) m = 0 at every unpinned site
+ok        n = 4: all 4 pinning conditions hold and (I - P) m = 0 at every unpinned site
+
+U3  the charges along the line
+     n = 2: c = [0.562325833, 0.562325833]
+     n = 3: c = [0.528563241, 0.447653871, 0.528563241]
+     n = 4: c = [0.439033578, 0.439033578, 0.439033578, 0.439033578]
+ok        n = 3 is symmetric end-to-end: c1 = c3 = 0.528563241
+ok        and the INTERIOR source carries less charge than the ends, 0.447653871 < 0.528563241 - it is screened on both sides while an end
+       is screened on one.  That asymmetry is invisible in the two-source case, where
+       both sources are ends.
+ok        n = 4 on this L = 4 torus WRAPS: the line closes into a ring, every source is
+       translation-equivalent, and indeed all four charges are equal at 0.439033578.  There are no ends on a ring, so the n = 4 row below is the
+       CLOSED-LOOP case and not a longer line - a finite-size feature of L = 4, and
+       the check that the solve knows it.
+
+U4  the total charge needed to hold the line
+     n = 2: total charge 1.124651667, per source 0.562325833
+     n = 3: total charge 1.504780352, per source 0.501593451
+     n = 4: total charge 1.756134313, per source 0.439033578
+ok        the total grows with the line, as it must
+ok        but the charge PER SOURCE falls: each added source screens the others, so a
+       longer line - and a fortiori the closed ring - is cheaper per site to hold at
+       the same value.  The single-source
+       cost is alpha/G(0) = 0.692647018, and the line's per-source cost
+       is already 0.439033578 at n = 4.
+ok        every line is cheaper per source than an isolated source
+
+SUMMARY: PARTIAL extending the pinned-set solve to a LINE of sources: c = M^-1 alpha with M the Green matrix solves the pinned problem exactly for n = 2, 3, 4 collinear sources - every pinning condition holds and (I - P) m vanishes at every unpinned site - and the solve shows what a pair cannot: at n = 3 the charges are [0.528563241, 0.447653871, 0.528563241], symmetric end-to-end with the INTERIOR source carrying strictly less charge than the ends because it is screened on both sides, while n = 4 wraps this L = 4 torus into a closed ring on which all four charges are equal, there being no ends; the total charge grows with the line while the charge PER SOURCE falls, from 0.692647018 for an isolated source to 0.439033578 at n = 4, so a longer line, and a fortiori a closed ring, is cheaper per site to hold at the same pinned value (exact on a 4x4x4 torus, 7-point stencil, killing 1/10)
+HIT: for a line of persistent sources the Green-matrix solve gives a position-dependent charge - interior sources carry strictly less than the ends, 0.447653871 against 0.528563241 at n = 3, because an interior source is screened on both sides - and the charge per source falls monotonically with the line's length, from 0.692647018 isolated to 0.439033578 for the closed ring at n = 4, so holding a longer line at a fixed value costs less per site; neither statement is visible in the two-source case, where every source is an end

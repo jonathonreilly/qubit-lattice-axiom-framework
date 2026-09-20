@@ -1,0 +1,32 @@
+{
+ "task": "C:event-lattice-geometry:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-jb600",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/event-lattice-geometry/w-jonathonsmac4f50-jb600/run.py",
+ "seed": 68449,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "451730c0",
+ "started_utc": "20260920T014049Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the level plane is A_d with lattice basis e_j - e_(d+1) (Gram I + J) and dual basis e_j - (1,..,1)/(d+1) (Gram G = I - J/(d+1)); the small-k metric of 1 - |phi|^2 is M = c G with c = 1/(d+1) for d = 2, 3, 4, and B M B^T = c P, so the kernel is isotropic in the plane's Euclidean geometry; in 3+1 the equal-level kernel is 2 sigma^2/(pi |X|) on the face-centred cubic plane, confirmed by FFT at L = 64 along three inequivalent directions to better than 5 % once the torus images are included; and the coordinate drift is the chart's motion f_(d+1) per level, the mean in-plane displacement being exactly zero"
+ },
+ "review": "run.py verifies the two dual bases of the level plane (Gram I + J and G = I - J/(d+1)), M = cG with c = 1/(d+1) for d = 2, 3, 4 together with B M B^T = cP (isotropy in the plane's Euclidean geometry), the 3+1 kernel 2 sigma^2/(pi |X|) on the face-centred cubic plane confirmed by FFT at L = 64 along three inequivalent directions to 5 % once the torus images are included, and sum_j f_j = 0, which makes the coordinate drift the chart's motion f_(d+1) per level rather than a physical velocity: both of the task's expectations hold.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): The geometry of the level planes. The level planes of Z^(d+1) in level order are the root lattice A_d (triangular for d = 2, face-centred cubic for d = 3), with plane coordinates the first d components. (1) Compute the Gram matrix G of the projected basis vectors e_j - (1,..,1)/(d+1), j = 1..d. (2) Show that the small-k metric M of 1 - |phi|^2 (phi = (1 + sum_j e^{ik_j})/(d+1)) satisfies M = c G for a constant c, i.e. the kernel is isotropic in the plane's Euclidean geometry: give c for d = 2, 3, 4. (3) Hence the equal-level kernel in 3+1 backward formation is c'/|x|_Euclid on the FCC plane: give c' exactly and confirm numerically at L = 64 (FFT) along three inequivalent FCC directions. (4) The drift in Euclidean terms: zero within the plane? (the drift (1,..,1)/(d+1) per level in coordinates is a displacement of the plane's origin, not a physical in-plane velocity: decide this carefully). Expectation: isotropy holds and the drift is a coordinate artefact; if the drift is physical, print HIT. DELIVERABLE in your unit worktree: probes/work/compute/event-lattice-geometry/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/event-lattice-geometry/<name>/run.py\"",
+ "stdout_sha256": "d92a5ad6d0773489d812da34186613c1ec2d912b22603dcf57bb0fd0fe8fd680",
+ "stdout_tail": "ckward lattice: C(r) by FFT along three inequivalent plane directions against c'/|X| with the torus images (the same Fourier sum with the symbol k^T M k); |C/periodic - 1| stays under 5 % for 3 <= |X| <= L/6, and C|X|/c' approaches 1 from below as the images are added back\nok   A4: the d+1 predecessors of a site are y - e_j, j = 1..d+1; projected orthogonally onto the plane their displacements are -f_j, and sum_j f_j = 0 exactly (symbolic, d = 2, 3, 4), so the mean in-plane displacement per level is ZERO: there is no physical drift.  The coordinate drift (1,...,1)/(d+1) in Im phi is the motion of the chart: the site with fixed plane coordinates x sits at (x, t - sum x), whose projection moves by f_(d+1) = e_(d+1) - (1,..,1)/(d+1) per level, and that is exactly the coordinate drift\n==========================================================================================\nSUMMARY: the level plane is A_d with lattice basis e_j - e_(d+1) (Gram I + J) and dual basis e_j - (1,..,1)/(d+1) (Gram G = I - J/(d+1)); the small-k metric of 1 - |phi|^2 is M = c G with c = 1/(d+1) for d = 2, 3, 4, and B M B^T = c P, so the kernel is isotropic in the plane's Euclidean geometry; in 3+1 the equal-level kernel is 2 sigma^2/(pi |X|) on the face-centred cubic plane, confirmed by FFT at L = 64 along three inequivalent directions to better than 5 % once the torus images are included; and the coordinate drift is the chart's motion f_(d+1) per level, the mean in-plane displacement being exactly zero\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb600",
+  "at_utc": "20260920T014050Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

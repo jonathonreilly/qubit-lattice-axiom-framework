@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_record_layer_fields_arrive_by_diffusion_establishment_time_square_of_the_range_2026_09_20.py
+runner_sha256: d5976873ad74de095b31238d870113bd5f3b224de55056a667d87e9a757a317d
+input_fingerprint_sha256: 86b11adaa8fbd31b79e012fe58992b7b7913a903acf575bb0575f909cee99c15
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RECORD_LAYER_FIELDS_ARRIVE_BY_DIFFUSION_ESTABLISHMENT_TIME_GROWS_AS_THE_SQUARE_OF_THE_RANGE_TRANSIT_HALO_AND_MASSLESS_ODDS_FIELD_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentences used
+PASS: B1 T1: on the tori of side 4 and 6 one tick of W = 1 + h Lap multiplies a cosine wave of wavevector k by 1 - h E(k), for h = 1/6 and 1/12
+PASS: B2 T1: the slowest mode has E_min = 2(1 - cos(2 pi/L)) <= (2 pi/L)^2 (side 4: E_min = 2; side 6: E_min = 1), and by (1 - x)^n >= 1 - n x it keeps at least half its deviation for every n <= 1/(2 h E_min): half the relaxation of a torus of side L costs at least L^2/(8 pi^2 h) ticks
+PASS: C1 T2: the s-tick kernel of the walk, s = 0..12, by exact path counts: total weight 1, nothing beyond s steps, mean-square reach exactly s (6 h s at h = 1/6): what a source emits travels the square root of the time
+PASS: C2 T2: the share of the kernel at distance R or more after s ticks is at most s/R^2 (R = 2..6, s = 0..12), and the response to a source switched on at tick 0 is the sum of the kernels: for a given share of what was emitted to lie beyond R, at least that share times R^2 ticks must pass
+PASS: D1 T3: by exact differentiation of block 42's odds map, a unit lean at one neighbour induces the lean l1 at the site ((3,1,2): 1/6; (5,2,4): 3/23): one linearized iteration of the odds is one step of the walk of T2 weighted by 6 l1, exactly the walk on the surface 5p = 7q + 4r
+PASS: E1 T4: with removal at the rate h m^2 per tick (a mass term m^2) a mode with E(k) <= m^2 loses at most 2 h m^2 of its deviation per tick and keeps at least half of it for every n <= 1/(4 h m^2): a field whose range is 1/m takes of the order of (range)^2/h ticks to settle, whatever the range
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the lean induced at a site by a unit lean at one neighbour, by exact differentiation, at two triples
+per_site: executed — cosine waves under one tick at sample sites of the tori of side 4 and 6; the response to a switched-on source against the sum of the kernels at every site reached in 12 ticks
+per_mode: executed — the factor 1 - h E(k) for four wavevectors, two sides, two hop probabilities; the slowest mode and its half-life bound
+per_block: executed — exact path counts of the walk for 0 to 12 ticks: weight, light cone, mean-square reach, tail shares beyond R = 2..6
+lattice_wide: T1 holds on every torus, T2 on the infinite lattice for every number of ticks (weight, light cone and mean-square reach by induction on the tick), T3 for every positive triple, T4 for every mass term; nothing is claimed about carriers whose dynamics is not of this first-order kind
+PASS: G1 the five N5 resolution lines are printed
+scope: the record layer's two fields (the transit halo and the linearized odds) are driven by one walk operator and settle by diffusion: half-life of a torus at least L^2/(8 pi^2 h) ticks, reach the square root of the time, a range of 1/m costs of the order of (range)^2/h ticks; exact
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

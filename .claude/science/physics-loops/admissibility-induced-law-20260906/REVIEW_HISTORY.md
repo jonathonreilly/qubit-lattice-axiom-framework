@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-20 block 43 — author checks (not a review PASS)
+Refuting pass by whole-path enumeration and explicit torus relaxation (four witnesses, all pass). Units statement rewritten to respect the registered scale reference. Theorem text re-read against the runner before the gates. Census 8/8 in family.

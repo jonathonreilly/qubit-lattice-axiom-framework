@@ -1,0 +1,16 @@
+[PASS] V1 supplied C3 coordinates are locally independent at the tested point
+       det=0.667
+[PASS] V2 supplied scalar G=gI has zero C/C^2 doublet coefficient
+       This is a singlet algebra check, not a physical gauge theorem.
+[PASS] V3 dispersion Q is delta-independent in the supplied model
+       Q(0.3)=0.6667=Q(1.3)
+[PASS] V4 displayed Q floors are readout-convention dependent
+       dispersion(r=0)=1/3, Brannen(r=0)=1
+[PASS] source guards keep physical channel, eta, and complete-account bridges open
+
+SCORECARD PASS=5 FAIL=0
+VERDICT: bounded support for finite supplied C3 coordinate algebra only.
+The runner checks local coordinate independence, a scalar singlet fact,
+delta-blindness of dispersion Q, and readout-convention dependence.
+It does not derive the physical carrier, channel identifications,
+eta=2/9, or a complete charged-lepton flavor account.

@@ -1,0 +1,32 @@
+{
+ "task": "X:source-potential",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_response.py 3 2 32 2000 800 0.5 1",
+ "seed": 88376,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071256Z",
+ "elapsed_s": 11.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 beta=2.0 L=32 h=0.5 mean_ratio_r1to4=1.0046 forward_backward_asymmetry_r2=+0.009674 seconds=11"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: the potential around a persistent source under the formation reading. Two copies of the sphere formation law with common random numbers; in one a transverse field h acts on the record at one site at every level. Linear prediction: (h/(n beta)) (1 - P)^-1, which for the light-cone past is (h/beta) times the lattice Green function: a 1/r potential. First look (16^3, beta = 6): light-cone ratio measured/predicted 0.99 at r = 1..6 and symmetric; backward past 0.96 and one-sided (forward cone). Arguments: dim beta L T T0 h seed (probes/lib/formation_response.py). GRID UNITS: the 48 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "e9a5a6e2cb5f675066cc22e1add54d6056bcf79c044065bfaba776b795a17f97",
+ "stdout_tail": "dim=3 beta=2.0 L=32 T=2000 T0=800 h=0.5 seed=1; n=4; |m| of the unperturbed copy at the end = 0.7385\nalong e_1: r, measured displacement, linear prediction, ratio, r * measured (a 1/r potential gives a plateau)\n     1  +0.026190  +0.028276  0.926  +0.026190\n     2  +0.009434  +0.009719  0.971  +0.018868\n     3  +0.003515  +0.003493  1.006  +0.010546\n     4  +0.001529  +0.001370  1.115  +0.006114\n     6  +0.000443  +0.000304  1.454  +0.002655\n     8  +0.000240  +0.000043  5.528  +0.001923\n    12  -0.000502  -0.000229  2.194  -0.006024\n    16  -0.000674  -0.000330  2.043  -0.010789\nalong the body diagonal, forward (+) and backward (-): r, measured +, measured -, linear +, linear -\n     1  +0.017731  +0.000847  +0.019003  +0.000557\n     2  +0.010410  +0.000737  +0.010738  +0.000596\n     3  +0.008324  +0.000911  +0.007530  +0.000638\n     4  +0.005755  +0.000874  +0.005819  +0.000681\n     6  +0.004078  +0.000759  +0.004016  +0.000775\n     8  +0.003528  +0.001011  +0.003064  +0.000881\nSUMMARY: dim=3 beta=2.0 L=32 h=0.5 mean_ratio_r1to4=1.0046 forward_backward_asymmetry_r2=+0.009674 seconds=11\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071308Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+[PASS] R1 J_cs is anti-Hermitian, J_cs^2=-P_doublet, eigs {0,+-i}, and [J_cs,C]=0
+       eigs(J_cs)=[1j, -1j, (-0+0j)]
+[PASS] R2 Gamma_chi=(2/3)Jall-I is a real involution and is not J_cs
+       Gamma_chi is built from the all-ones matrix; it commutes with J_cs but is not equal or proportional
+[PASS] R3 exp(theta J_cs)=SO(2) preserves the HS doublet block 6I and has determinant one
+       the static rotation is measure-neutral and does not select the det_C convention
+[PASS] R4 [J_cs,H]=0 for the tested Hermitian C3-circulant family
+       operator-silence supplies no spectral lever that fixes the doublet mode count
+[PASS] R5 source boundary guard: no Q/default or first-order-action conclusion is promoted by this packet
+       the packet closes only static-J_cs algebraic non-selection
+
+SCORECARD PASS=5 FAIL=0
+VERDICT (J-hunt round 1, wf_719da018): bounded-support negative route pruning.
+The static C3-equivariant J_cs is a valid finite complex structure, but exp(theta J_cs)
+is an SO(2) rotation preserving the doublet metric block and determinant. It is
+measure-neutral and operator-silent, and Gamma_chi is a distinct real involution.
+This runner does not derive a Q default, a det_C-to-r/Q map, or a first-order action.

@@ -1,0 +1,30 @@
+[PASS] R5-1 central idempotents close with ranks 1 and 2
+       Tr(e0)=1, Tr(e1)=2
+[PASS] R5-2 old E(A)=e0Ae0+e1Ae1 is only block compression, not center-valued
+       counterexample commutator norm ||E_old(A)C-C E_old(A)||=2.273030
+[PASS] R5-3 on R[C3] the old block compression is just the identity
+       so it cannot by itself create an equal-central-block state from a group-algebra operator
+[PASS] R5-4 corrected center-valued average lands in span{e0,e1}
+       block averages=(+2.833333, -0.666667)
+[PASS] R5-5 C3 conjugation average gives the C3-commutant but does not select state weights
+       operator averaging and state-weight selection are distinct finite operations
+[PASS] R5-6 tracial state has central block masses 1:2
+       trace masses=(0.333333, 0.666667)
+[PASS] R5-7 equal-block state is positive, normalized, C3-invariant, and non-tracial
+       equal masses=(0.500000, 0.500000), eigmin=+2.500e-01
+[PASS] R5-8 finite C3 central-state simplex leaves the block weight unforced
+       sampled p0 values 0, 1/4, 1/3, 1/2, 3/4, 1 are all admissible C3-invariant states
+[PASS] R5-9 equal-block route is not the continuous U(1)_b rephasing obstruction
+       changing central state weights leaves the discrete C3 operator relation C^3=I untouched
+[PASS] R5-10 local displayed Q(r) arithmetic is separated from state selection
+       this verifies the displayed convention only; it does not derive the physical Q readout
+
+FLAVOR J-HUNT ROUND 5 REPAIRED CENTRAL-STATE CERTIFICATE
+trace block masses       = (0.333333, 0.666667)
+equal-block masses       = (0.500000, 0.500000)
+old-E commutator norm    = 2.273030
+OUTPUT_JSON=outputs/flavor_find_J_round5_trace_vs_center_state_2026_06_02.json
+SCORECARD PASS=10 FAIL=0
+VERDICT: bounded finite algebra repaired. The equal-block state is C3-compatible
+and not the U(1)_b obstruction, but the finite packet does not force that state
+or derive the physical Q=2/3 selector.

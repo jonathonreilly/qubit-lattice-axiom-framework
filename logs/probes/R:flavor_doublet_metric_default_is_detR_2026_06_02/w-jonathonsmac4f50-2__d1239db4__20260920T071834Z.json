@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_doublet_metric_default_is_detR_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_doublet_metric_default_is_detR_2026_06_02.py",
+ "seed": 88714,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071834Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1183ccf777b2b30e4201d63354902ed7ea7e75df63965e73c84645804ec43592",
+ "stdout_tail": "[PASS] M1 HS/coherent-state field-space metric on (a,Re b,Im b) is diag(3,6,6)\n       metric=[[3.0, 0.0, 0.0], [0.0, 6.0, 0.0], [0.0, 0.0, 6.0]]; metric value is reading-neutral\n[PASS] M2 operator-symbol route is R-linear not C-linear; multiplying by i exits Hermitian observables\n       ||H_lin(ib)-iH_lin(b)||=3.4641; i*H_lin(1) is anti-Hermitian\n[PASS] M3 conditional det_R arithmetic: per-real-direction reading gives r=1 and Q=1\n       Q(r=1)=1.0000\n[PASS] M4 conditional det_C arithmetic: equal-complex-block reading gives r=1/2 and Q=2/3\n       Q(r=1/2)=0.6667\n[PASS] M5 without a continuous U(1)_b gauge, delta=arg(b) is spectrum-observable in this family\n       masses delta=0 [0.09, 0.09, 5.76]; delta=60deg [0.16, 2.89, 2.89]\n[PASS] M6 C^3=I permits only discrete rephasings C->exp(i alpha)C, not a continuous U(1)_b\n       allowed alpha are 0, 2pi/3, 4pi/3; generic alpha fails order three\n[PASS] M7 source boundary guard: no det_R default or full-J-exclusion conclusion is promoted\n       the packet leaves physical doublet counting open\n\nSCORECARD PASS=7 FAIL=0\nVERDICT: bounded-support finite metric packet.\nThe HS/coherent-state metric is diag(3,6,6) and reading-neutral. The det_R\nand det_C r/Q values are conditional arithmetic readings. The operator-symbol\ncomplex-linearity route and continuous U(1)_b route are pruned, but this runner\ndoes not select the physical doublet count.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071834Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

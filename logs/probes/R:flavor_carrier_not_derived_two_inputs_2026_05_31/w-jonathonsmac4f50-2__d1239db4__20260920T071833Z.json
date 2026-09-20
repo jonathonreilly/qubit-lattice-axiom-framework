@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_carrier_not_derived_two_inputs_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_carrier_not_derived_two_inputs_2026_05_31.py",
+ "seed": 88713,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071833Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "87d98f73d36fdd119c94df689593d64388c1ed08c2f4e60d6dfbbcb8e452a999",
+ "stdout_tail": "[PASS] A1 bare C_3 characters are singlet=1, doublet=-1, triplet=0; none equals 2/9\n       characters=(1.0, -1.0, 0.0)\n[PASS] B1 determinant inverse uses both doublet eigenvalues; each term is 1/3\n       det_inv_terms=[0.333333, 0.333333]; one_factor_terms=[(-0.5-0.288675j), (-0.5+0.288675j)]\n[PASS] B2 L_3(1,2)=2/9 comes from determinant denominators, not a bare character\n       L_3(1,2)=0.222222; doublet_character=-1.0\n[PASS] C1 C_3-equivariant circulant operators commute with C across freely chosen r values\n       r_values=[0.01, 0.5, 1.0, 4.0, 9.0]; max_commutator=0.00e+00\n[PASS] D1 Q(r)=1/3+(2/3)r verifies both r=1/2 -> 2/3 and r=1 -> 1\n       Q(1/2)=0.666667; Q(1)=1.000000\n[PASS] E1 note keeps bounded-support route-pruning status and required non-closure disclaimers\n       required phrases present\n[PASS] E2 note removes old input-count/status overclaim phrases\n       forbidden phrases absent\n[PASS] E3 audit surfaces are not retagged by this source repair\n       audit retagging left to audit/review lanes\n\nSCORECARD PASS=8 FAIL=0\nVERDICT: bounded-support negative route pruning.\nThe bare-character shortcut fails: C_3 characters are 1, -1, and 0, while\nL_3(1,2)=2/9 comes from the two-eigenvalue determinant denominator.\nEquivariance leaves r free, and Q(r) checks both r=1/2 and r=1 without\nselecting the physical basepoint. The source does not derive the physical\ncarrier, does not select the basepoint, and introduces no new axiom.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071833Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+SCOPE: finite C3-circulant matrix packet conditional on U_gen=i*I_3.
+SCOPE: no spinor-to-generation bridge is asserted by this runner.
+
+[PASS] R3-1 conditional U_gen=i*I_3 leaves the C3-circulant H fixed
+       finite algebra only: this does not prove the physical charge-conjugation bridge
+[PASS] R3-2 C-eigenbasis centralizer diag(1,e^iphi,e^-iphi) leaves H fixed and does not alter r
+       within the finite packet, this centralizer is a spectator to the block-count question
+[PASS] R3-3 exact check: C->e^{i theta}C breaks C^3=I for generic theta
+       (e^{i*pi/7}C)^3 = e^{3i*pi/7}I != I, so only cube-root phases preserve C^3=I
+[PASS] R3-4 exact solve: no nonzero Hermitian C3-circulant anticommutes with Gamma_chi
+       solving {H,Gamma_chi}=0 for H=aI+(x+iy)C+(x-iy)C^2 gives a=x=y=0
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: bounded finite-algebra support conditional on U_gen=i*I_3.
+The runner does not assert that physical charge conjugation acts as I_3 on
+generation space, does not close the Dirac/Majorana lane assignment, and
+does not prove an exhaustive continuous-lever theorem. Remaining bridge:
+derive the charged-lepton Dirac reality operator's generation action.

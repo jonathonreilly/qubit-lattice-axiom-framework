@@ -1,0 +1,23 @@
+FLAVOR GAUGE HOLONOMY CHARACTER-SUPPRESSION KERNEL
+========================================================================
+[ALGEBRA PASS] finite phase-grid regression matches the analytic triangle identity and bound
+       max_identity_error=7.105e-15, min_gap=0.000e+00, equality_violations=0
+[ALGEBRA PASS] fibre-averaged hop coefficient is exactly character-normalized
+       max_formula_error=2.776e-16
+[ALGEBRA PASS] normalized character multiplier cannot enhance r
+       max_bound_excess=1.110e-16
+[ALGEBRA PASS] bound propagates an arbitrary free r0=0.11
+       r_eff=0.031998
+[ALGEBRA PASS] bound propagates an arbitrary free r0=0.31
+       r_eff=0.090177
+[ALGEBRA PASS] bound propagates an arbitrary free r0=0.50
+       r_eff=0.145446
+[ALGEBRA PASS] bound propagates an arbitrary free r0=0.87
+       r_eff=0.253077
+[SOURCE PASS] kernel note records the conditional finite-algebra proof and no new axiom
+[SOURCE PASS] parent note cites the kernel note, runner, and cache
+[SOURCE PASS] physical sector-to-representation readout remains open
+[SOURCE PASS] source change does not promote audit status
+
+VERDICT: the character-suppression kernel is exact conditional finite algebra for a supplied closed-holonomy tensor dressing; that dressing and the physical sector readout remain open.
+SCORECARD ALGEBRA_PASS=7 ALGEBRA_FAIL=0 SOURCE_PASS=4 SOURCE_FAIL=0 PASS=11 FAIL=0

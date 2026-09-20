@@ -1,0 +1,21 @@
+[PASS] P1a on-site creator is nilpotent (sigma_+^2 = 0) -- shared by qubit, hard-core boson, fermion mode
+       dim-2 site excludes only the free boson; nilpotency is statistics-blind
+[PASS] P1b bare qubit ladders commute across sites; JW-dressed fermions anticommute
+       [sp_x,sp_y]=0 in the native product; {c1,c2}=0 after the JW dressing
+[PASS] P1c qubit-ladder algebra and JW-fermion algebra span the same ungraded algebra M_4(C)
+       qubit-ladder rank=16, JW-fermion rank=16
+[PASS] P1d second JW ladder is not local to the second native qubit factor (no c2 = I tensor B)
+       native sp_y reconstructs as I tensor sigma_+; JW c2=Z tensor sigma_- carries prior-site support
+[PASS] P2a supplied Clifford-Dirac symbol at k=(0.3, 1.1, 2.0): (iD)^2 = (sum sin^2 k) I
+       (iD)^2 == 1.7084 * I
+[PASS] P2b epsilon=(-1)^(x+y+z) is the Z^3 bipartite parity and anticommutes with nearest-neighbor hopping
+       finite supplied nearest-neighbor hop is parity-reversing on the bipartite lattice
+[PASS] P2c graph Laplacian is A2-local and symmetric, but neither epsilon-commuting nor epsilon-anticommuting
+       ||[epsilon,L]||=19.5959, ||{epsilon,L}||=33.9411; this is A2-local non-chiral support
+
+SCORECARD PASS=7 FAIL=0
+VERDICT: BOUNDED-SUPPORT finite algebra only. The native ungraded two-qubit tensor product does not
+select the cross-site CAR/Jordan-Wigner frame, and the supplied first-order parity-reversing operator
+has the checked Clifford square. The graph Laplacian supplies an A2-local non-chiral alternative.
+No downstream Dirac-Kahler, hw=1/count-three, carrier/generation, Koide-Q, or spin-statistics bridge
+is claimed by this runner.

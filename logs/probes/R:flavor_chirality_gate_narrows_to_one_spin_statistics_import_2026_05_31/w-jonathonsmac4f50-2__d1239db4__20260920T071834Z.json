@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026_05_31.py",
+ "seed": 88714,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071834Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d51e859166d40a540443ca285de446bfaec89ddc0e0142375d7f2d7cc31035b0",
+ "stdout_tail": "nilpotency is statistics-blind\n[PASS] P1b bare qubit ladders commute across sites; JW-dressed fermions anticommute\n       [sp_x,sp_y]=0 in the native product; {c1,c2}=0 after the JW dressing\n[PASS] P1c qubit-ladder algebra and JW-fermion algebra span the same ungraded algebra M_4(C)\n       qubit-ladder rank=16, JW-fermion rank=16\n[PASS] P1d second JW ladder is not local to the second native qubit factor (no c2 = I tensor B)\n       native sp_y reconstructs as I tensor sigma_+; JW c2=Z tensor sigma_- carries prior-site support\n[PASS] P2a supplied Clifford-Dirac symbol at k=(0.3, 1.1, 2.0): (iD)^2 = (sum sin^2 k) I\n       (iD)^2 == 1.7084 * I\n[PASS] P2b epsilon=(-1)^(x+y+z) is the Z^3 bipartite parity and anticommutes with nearest-neighbor hopping\n       finite supplied nearest-neighbor hop is parity-reversing on the bipartite lattice\n[PASS] P2c graph Laplacian is A2-local and symmetric, but neither epsilon-commuting nor epsilon-anticommuting\n       ||[epsilon,L]||=19.5959, ||{epsilon,L}||=33.9411; this is A2-local non-chiral support\n\nSCORECARD PASS=7 FAIL=0\nVERDICT: BOUNDED-SUPPORT finite algebra only. The native ungraded two-qubit tensor product does not\nselect the cross-site CAR/Jordan-Wigner frame, and the supplied first-order parity-reversing operator\nhas the checked Clifford square. The graph Laplacian supplies an A2-local non-chiral alternative.\nNo downstream Dirac-Kahler, hw=1/count-three, carrier/generation, Koide-Q, or spin-statistics bridge\nis claimed by this runner.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071834Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

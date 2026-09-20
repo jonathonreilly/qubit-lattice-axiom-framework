@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_find_J_round1_jcs_measure_neutral_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py",
+ "seed": 88715,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071835Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "30586341d9f188708fd9e684e41f5276ffcc5a46dd8c913fdecb839300a4d817",
+ "stdout_tail": "[PASS] R1 J_cs is anti-Hermitian, J_cs^2=-P_doublet, eigs {0,+-i}, and [J_cs,C]=0\n       eigs(J_cs)=[1j, -1j, (-0+0j)]\n[PASS] R2 Gamma_chi=(2/3)Jall-I is a real involution and is not J_cs\n       Gamma_chi is built from the all-ones matrix; it commutes with J_cs but is not equal or proportional\n[PASS] R3 exp(theta J_cs)=SO(2) preserves the HS doublet block 6I and has determinant one\n       the static rotation is measure-neutral and does not select the det_C convention\n[PASS] R4 [J_cs,H]=0 for the tested Hermitian C3-circulant family\n       operator-silence supplies no spectral lever that fixes the doublet mode count\n[PASS] R5 source boundary guard: no Q/default or first-order-action conclusion is promoted by this packet\n       the packet closes only static-J_cs algebraic non-selection\n\nSCORECARD PASS=5 FAIL=0\nVERDICT (J-hunt round 1, wf_719da018): bounded-support negative route pruning.\nThe static C3-equivariant J_cs is a valid finite complex structure, but exp(theta J_cs)\nis an SO(2) rotation preserving the doublet metric block and determinant. It is\nmeasure-neutral and operator-silent, and Gamma_chi is a distinct real involution.\nThis runner does not derive a Q default, a det_C-to-r/Q map, or a first-order action.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071835Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

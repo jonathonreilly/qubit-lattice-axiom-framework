@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_detR_default_full_exercise_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_detR_default_full_exercise_2026_05_30.py",
+ "seed": 88714,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071834Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9295d1b4b82c3c1d397bc9dd41ddccd3a0db663f9c67c12311527a30bb3633d2",
+ "stdout_tail": "[PASS] X1 substrate i generation-blind ([i*I3,C]=0) + <i*I3,G_U1>_HS=0 -> no descended U(1)\n[PASS] X2 C^3=I quantizes U(1)_b: (e^{ia}C)^3=I only at a in {0,2pi/3,4pi/3}\n[PASS] X3 (Z_2)^3 corner amplitudes are +/-1 (REAL) -> checked finite carrier is real R[Z3]\n[PASS] CORR#1 G_U1 COMMUTES with Gamma_chi and C (NOT the chiral gate)\n       ||{G,Gchi}||=2.828 (nonzero; a true chiral splitter would anticommute)\n[PASS] CORR#2 import = block(1,1)->Q=2/3 vs dimension(1,2)->Q=1 measure choice; trace ranks neither\n       det_C block-count r=1/2; det_R dimension r=1; Schur: no merge of 2 real->1 complex\n[PASS] BOUNDARY source guard: finite locator only, no default/reference-state claim\n       finite locator only; no beta=0 tracial-vacuum promotion\n\nUPDATED SCORECARD PASS=6 FAIL=0\nVERDICT: FINITE LOCATOR -- tested structures do not make det_C/equal-block counting automatic;\nthey localize Q=2/3 versus Q=1 as a counting fork but do not rank the physical read. CORRECTED:\nthe equal-block input is not the chirality gate, not a U(1) symmetry, and not a derived\nholomorphic measure; it is the block-vs-dimension counting choice the trace permits but does not rank.\nOPEN: beta=0 tracial generation reference vs finite-beta Gibbs remains outside this row.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071834Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

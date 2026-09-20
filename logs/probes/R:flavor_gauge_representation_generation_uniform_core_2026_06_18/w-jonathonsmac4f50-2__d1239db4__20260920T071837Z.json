@@ -1,0 +1,39 @@
+{
+ "task": "R:flavor_gauge_representation_generation_uniform_core_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_gauge_representation_generation_uniform_core_2026_06_18.py",
+ "seed": 88717,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071837Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=2 CORE_FAIL=0",
+   "PASS=2 CONDITIONAL_FAIL=0",
+   "PASS=4 SOURCE_FAIL=0 PASS=8 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a5b205a5a9f6f17be10e6cc7ddc44e477763d546b93da1af17f23f67f6280952",
+ "stdout_tail": "FLAVOR GAUGE REPRESENTATION GENERATION-UNIFORM CORE\n========================================================================\n[CORE PASS] nonzero common scalar rescaling leaves r degree-zero inert\n       s=0.2: r=0.289940828402; s=0.75: r=0.289940828402; s=1.0: r=0.289940828402; s=2.0: r=0.289940828402; s=5.0: r=0.289940828402\n[CORE PASS] discriminating control: non-uniform singlet/doublet scaling would move r\n       r0=0.289941, nonuniform=0.0181213\n[CONDITIONAL PASS] standard colour-representation premise supplies only two colour classes\n       classes=[1, 3]\n[CONDITIONAL PASS] weak-doublet partners share the parent premise's left-handed multiplet\n[SOURCE PASS] new core note states only the conditional common-scalar lemma\n[SOURCE PASS] parent cites core note, runner, and cache\n[SOURCE PASS] parent keeps SM sector representation assignment conditional\n[SOURCE PASS] parent status is not promoted\n\nVERDICT: the conditional nonzero common-scalar homogeneity lemma is split out; generation uniformity does not supply that premise, and the SM sector representation assignment remains conditional/open.\nSCORECARD CORE_PASS=2 CORE_FAIL=0 CONDITIONAL_PASS=2 CONDITIONAL_FAIL=0 SOURCE_PASS=4 SOURCE_FAIL=0 PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071837Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

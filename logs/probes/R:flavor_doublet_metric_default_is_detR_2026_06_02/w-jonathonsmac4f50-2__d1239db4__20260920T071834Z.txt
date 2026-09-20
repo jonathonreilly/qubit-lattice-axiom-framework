@@ -1,0 +1,21 @@
+[PASS] M1 HS/coherent-state field-space metric on (a,Re b,Im b) is diag(3,6,6)
+       metric=[[3.0, 0.0, 0.0], [0.0, 6.0, 0.0], [0.0, 0.0, 6.0]]; metric value is reading-neutral
+[PASS] M2 operator-symbol route is R-linear not C-linear; multiplying by i exits Hermitian observables
+       ||H_lin(ib)-iH_lin(b)||=3.4641; i*H_lin(1) is anti-Hermitian
+[PASS] M3 conditional det_R arithmetic: per-real-direction reading gives r=1 and Q=1
+       Q(r=1)=1.0000
+[PASS] M4 conditional det_C arithmetic: equal-complex-block reading gives r=1/2 and Q=2/3
+       Q(r=1/2)=0.6667
+[PASS] M5 without a continuous U(1)_b gauge, delta=arg(b) is spectrum-observable in this family
+       masses delta=0 [0.09, 0.09, 5.76]; delta=60deg [0.16, 2.89, 2.89]
+[PASS] M6 C^3=I permits only discrete rephasings C->exp(i alpha)C, not a continuous U(1)_b
+       allowed alpha are 0, 2pi/3, 4pi/3; generic alpha fails order three
+[PASS] M7 source boundary guard: no det_R default or full-J-exclusion conclusion is promoted
+       the packet leaves physical doublet counting open
+
+SCORECARD PASS=7 FAIL=0
+VERDICT: bounded-support finite metric packet.
+The HS/coherent-state metric is diag(3,6,6) and reading-neutral. The det_R
+and det_C r/Q values are conditional arithmetic readings. The operator-symbol
+complex-linearity route and continuous U(1)_b route are pruned, but this runner
+does not select the physical doublet count.

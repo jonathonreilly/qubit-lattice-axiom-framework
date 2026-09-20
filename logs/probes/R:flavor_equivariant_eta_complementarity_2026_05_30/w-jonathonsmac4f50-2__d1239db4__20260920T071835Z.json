@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_equivariant_eta_complementarity_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_equivariant_eta_complementarity_2026_05_30.py",
+ "seed": 88715,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071835Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "58e6c7281c35c1337472377d35141993ef13c5fb593270b793e9cb8327173b71",
+ "stdout_tail": "[PASS] E1 2/9 NOT in Z[zeta_3] (minpoly 9x-2 non-monic) -> eta can never equal 2/9\n       eta_g(T) in Z[zeta_3]=algebraic integers; 2/9 is a Lefschetz denominator\n[PASS] E2 R multiplicity-free -> commutant circulant; comm(R)\u2229anticomm(Gamma)={0}\n       distinct eigs=True, anticommutant nullity=0\n[PASS] E3 Gamma-graded index_R=2 nonzero BUT both eigenspaces R-invariant -> forces nothing\n       index=2.000, [R,P\u00b1]=0: True (saturated by symmetric vacuum)\n[PASS] E4 tensor-coin dodge [D,g]=0 AND {D,grading}=0 but spectrum +/-sym -> eta=0\n       [D,g]=0:True, {D,grading}=0:True, eig=[-1. -1. -1.  1.  1.  1.], eta=0 (index silent)\n[PASS] E5 2/9=(N-1)/N^2=L_3(1,2) (rational-space family) but != Q=2/3 and not eta\n       (N-1)/N^2=0.2222, L_3(1,2)=0.2222, Q(r=1/2)=0.6667 != 2/9\n\nSCORECARD PASS=5 FAIL=0\nCOMPLEMENTARITY: eta loud <-> breaking impossible (R^3, forced circulant);\neta silent <-> breaking possible (R^3(x)C^2, +/- symmetric spectrum). The eta route\nREDUCES to the chirality gate. NEXT PATH (off-index): qubit-factor Berry holonomy of\nthe delta:0->2pi loop -- nonzero where eta is blind, natively radian-valued (could\nbridge the dimensionless-2/9 -> radian-2/9 wall); test if it = 2/9 rad and r=1/2-selective.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071835Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

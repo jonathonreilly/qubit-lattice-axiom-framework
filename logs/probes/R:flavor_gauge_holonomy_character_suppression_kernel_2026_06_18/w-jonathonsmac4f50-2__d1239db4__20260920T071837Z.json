@@ -1,0 +1,38 @@
+{
+ "task": "R:flavor_gauge_holonomy_character_suppression_kernel_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py",
+ "seed": 88717,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071837Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=7 ALGEBRA_FAIL=0 SOURCE_PASS=4 SOURCE_FAIL=0",
+   "PASS=11 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ee344deb19c1af6e2b78b1c4a9d9a1b095efeb761db788abc1ad87ff1ecb549a",
+ "stdout_tail": "FLAVOR GAUGE HOLONOMY CHARACTER-SUPPRESSION KERNEL\n========================================================================\n[ALGEBRA PASS] finite phase-grid regression matches the analytic triangle identity and bound\n       max_identity_error=7.105e-15, min_gap=0.000e+00, equality_violations=0\n[ALGEBRA PASS] fibre-averaged hop coefficient is exactly character-normalized\n       max_formula_error=2.776e-16\n[ALGEBRA PASS] normalized character multiplier cannot enhance r\n       max_bound_excess=1.110e-16\n[ALGEBRA PASS] bound propagates an arbitrary free r0=0.11\n       r_eff=0.031998\n[ALGEBRA PASS] bound propagates an arbitrary free r0=0.31\n       r_eff=0.090177\n[ALGEBRA PASS] bound propagates an arbitrary free r0=0.50\n       r_eff=0.145446\n[ALGEBRA PASS] bound propagates an arbitrary free r0=0.87\n       r_eff=0.253077\n[SOURCE PASS] kernel note records the conditional finite-algebra proof and no new axiom\n[SOURCE PASS] parent note cites the kernel note, runner, and cache\n[SOURCE PASS] physical sector-to-representation readout remains open\n[SOURCE PASS] source change does not promote audit status\n\nVERDICT: the character-suppression kernel is exact conditional finite algebra for a supplied closed-holonomy tensor dressing; that dressing and the physical sector readout remain open.\nSCORECARD ALGEBRA_PASS=7 ALGEBRA_FAIL=0 SOURCE_PASS=4 SOURCE_FAIL=0 PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071837Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

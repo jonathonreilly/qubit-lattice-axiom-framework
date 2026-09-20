@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_four_channel_reframe_validated_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_four_channel_reframe_validated_2026_05_31.py",
+ "seed": 88716,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071836Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "159b2e41fc1ee7eedb4794e1b296a0571c0051563dd3c79707213f3be767a534",
+ "stdout_tail": "[PASS] V1 supplied C3 coordinates are locally independent at the tested point\n       det=0.667\n[PASS] V2 supplied scalar G=gI has zero C/C^2 doublet coefficient\n       This is a singlet algebra check, not a physical gauge theorem.\n[PASS] V3 dispersion Q is delta-independent in the supplied model\n       Q(0.3)=0.6667=Q(1.3)\n[PASS] V4 displayed Q floors are readout-convention dependent\n       dispersion(r=0)=1/3, Brannen(r=0)=1\n[PASS] source guards keep physical channel, eta, and complete-account bridges open\n\nSCORECARD PASS=5 FAIL=0\nVERDICT: bounded support for finite supplied C3 coordinate algebra only.\nThe runner checks local coordinate independence, a scalar singlet fact,\ndelta-blindness of dispersion Q, and readout-convention dependence.\nIt does not derive the physical carrier, channel identifications,\neta=2/9, or a complete charged-lepton flavor account.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071836Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

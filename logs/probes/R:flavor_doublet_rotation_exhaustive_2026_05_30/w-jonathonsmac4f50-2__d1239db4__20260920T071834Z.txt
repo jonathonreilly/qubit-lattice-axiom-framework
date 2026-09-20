@@ -1,0 +1,17 @@
+[PASS] E1 finite O_h/signed-permutation stabilizer of hw=1 has six actions, i.e. S3/D3 on the three hw=1 vertices
+       distinct hw=1 stabilizer actions=6
+[PASS] E2 finite O_h: 0 of 12 order-4 elements preserve hw=1
+       order-4 total=12, preserve-hw1=0
+[PASS] E3 elementary bit-flips do not preserve hw=1, so this finite route gives no intra-doublet rotation
+       each one-bit flip sends an hw=1 vertex to Hamming weight 0 or 2
+[PASS] E4 central i*I3 commutes with C and is distinct from non-central J_cs
+[PASS] E5 exact solve: only +/-J_cs satisfy C3-equivariance, J*1=0, and J^2=-P_doublet
+       solutions [{a: 0, b: -sqrt(3)/3, c: sqrt(3)/3}, {a: 0, b: sqrt(3)/3, c: -sqrt(3)/3}]
+
+SCORECARD PASS=5 FAIL=0
+VERDICT: bounded finite-operator support only.
+The runner checks O_h/hw1 finite actions, bit-flip non-preservation,
+central i*I3 versus J_cs, and exact +/-J_cs uniqueness in the real
+C3-circulant packet. It does not prove broad exhaustive classification,
+cohomology backstops, anti-unitary/coin/induced collapse, or det_C/det_R
+readout values.

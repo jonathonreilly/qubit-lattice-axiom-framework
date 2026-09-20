@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+ "seed": 88716,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071836Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2fe6ec2ffcc712392c777c913046d60ac5d849deccfa19184152e3c29136c02d",
+ "stdout_tail": "]\n[PASS] R4-4 det_C (equal-block 3a^2=6|b|^2) -> r=1/2 -> Q=2/3 (observed); det_R (per-DOF 3a^2=3|b|^2) -> r=1 -> Q=1 (over-determined default)\n       3 independent principles (equipartition, Plancherel, trace) converge on det_R/r=1; det_C/r=1/2 forced by none\n\nSCORECARD PASS=4 FAIL=0\nVERDICT (J-hunt round 4 executable support, wf_702357cd): kappa_is_the_round4_input. Per-DOF / det_R /\nr=1 / Q=1 is the OVER-DETERMINED default (equipartition theorem + Plancherel measure + trace energy\nfunctional all converge). The K-theory/Wedderburn selector FAILS (K_0=Z^2 counts blocks=gen-count,\nmetric-free, can't weight energies). ROUND-4 RESULT: det_C/r=1/2/Q=2/3 is NOT forced by the\nblock-count measure route. The broader four-round no-forcing synthesis still needs round-1 through\nround-3 one-hop authority coverage before clean audit should be requested. The\nsingle residual = the per-irrep(det_C,r=1/2) vs per-DOF(det_R,r=1) counting MEASURE on the C_3 isotype\nsplit -- = the freedom the separate frobenius_isotype_split_uniqueness + action_normalization\ncontext rows decline to fix, matching Koide's free per-sector fit. The checked round-4 defaults favor det_R/Q=1; observed Q=2/3\n= det_C (equal-block). NEXT (not a closing): operator-level superselection sector-factorization on the\nM_2(C)-per-site + R[C_3] algebra -- can the 2 C_3 sectors be made genuine separate-POWER sectors at the\nOPERATOR level (forcing r=1/2), rather than the continuous angular quotient blocked by separate context rows?\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071836Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

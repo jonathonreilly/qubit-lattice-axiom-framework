@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_charged_lepton_value_full_chain_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_charged_lepton_value_full_chain_2026_06_02.py",
+ "seed": 88713,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071833Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "989c465cab5e17584d613b51b0aa4c6c5bf21bc4818462bf0db824d6112af1da",
+ "stdout_tail": "_*]\n       r=|b|^2/a^2; verified at r in {0,1/4,1/2,3/4,1}\n[PASS] L7 local cyclotomic density L_3(1,2)=2/9; no physical-delta identification [axiom_first_z_n_equivariant_spectral_asymmetry]\n       L_3(1,2)=0.222222\n[PASS] L8 positive-spectrum boundary: r=0 is degenerate; at r=1 positivity forces cos(3 delta)=1 and spectrum [0,0,3]\n       r=0 [1.0, 1.0, 1.0], max determinant-formula error=2.66e-15, largest sampled minimum eigenvalue=-3.33e-16\n[PASS] L9 r=1/2 = HS 2-sector equipartition (||aI||^2=||bC+conj(b)C^2||^2) = max 2-sector entropy (stationary point) [local algebra; koide_kappa_two_orbit_dimension_factorization]\n       equipartition at r=1/2; 2-sector entropy argmax=0.499\n[PASS] L10 Q=2/3 <=> r=1/2 (cone biconditional) [charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem]\n       Q(r=1/2)=0.666667\n[PASS] OPEN SELECTOR: AC obligations have zero premise weight and supply no r value\n       Born blocks (0.3333333333333333, 0.6666666666666666) -> r=1 -> Q=1; r=1/2 -> Q=2/3 algebraically; physical selection remains open\n\nSCORECARD PASS=9 FAIL=0\nCHAIN CONSISTENCY CHECK: nine representative local algebra/registry checks passed.\nThe runner does not prove or audit the chain's cited dependency claims.\nThe structural formulas assemble to abstract Q_H=1/3+(2/3)r, while physical Q=2/3\nrequires the still-open physical selection r=1/2.\nThe AC occupancy/readout statements are open derivation obligations and supply no r value.\nIndependent audit alone decides claim type/status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071834Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

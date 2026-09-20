@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_doublet_rotation_exhaustive_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py",
+ "seed": 88714,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d1239db4",
+ "started_utc": "20260920T071834Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "04a809f1cd85568e68649bf42ea6c92eaeaa4a499225a30890535bc1ffade001",
+ "stdout_tail": "[PASS] E1 finite O_h/signed-permutation stabilizer of hw=1 has six actions, i.e. S3/D3 on the three hw=1 vertices\n       distinct hw=1 stabilizer actions=6\n[PASS] E2 finite O_h: 0 of 12 order-4 elements preserve hw=1\n       order-4 total=12, preserve-hw1=0\n[PASS] E3 elementary bit-flips do not preserve hw=1, so this finite route gives no intra-doublet rotation\n       each one-bit flip sends an hw=1 vertex to Hamming weight 0 or 2\n[PASS] E4 central i*I3 commutes with C and is distinct from non-central J_cs\n[PASS] E5 exact solve: only +/-J_cs satisfy C3-equivariance, J*1=0, and J^2=-P_doublet\n       solutions [{a: 0, b: -sqrt(3)/3, c: sqrt(3)/3}, {a: 0, b: sqrt(3)/3, c: -sqrt(3)/3}]\n\nSCORECARD PASS=5 FAIL=0\nVERDICT: bounded finite-operator support only.\nThe runner checks O_h/hw1 finite actions, bit-flip non-preservation,\ncentral i*I3 versus J_cs, and exact +/-J_cs uniqueness in the real\nC3-circulant packet. It does not prove broad exhaustive classification,\ncohomology backstops, anti-unitary/coin/induced collapse, or det_C/det_R\nreadout values.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T071835Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

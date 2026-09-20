@@ -22,11 +22,18 @@
  "stdout_tail": "h\n\nSUMMARY: PARTIAL - (a) one branch, nonnegative weights: |lam| = 1 on an open set forces rigid transport, every level with mass one site W_j = g_j delta_{(j+1)v} (S0); (b) signed: W_{J-1} = +-delta_{y0} and the ladder W_j = -eps S_{y0} reflect(W_{J-2-j}), J <= 3 lossless iff disc <= 0, the gain-one J=3 rule blinks at lam = -1, window [-3,1] (S1-S5); (c) det U(k) is one shift; the signed NN cones are round at 1/sqrt(d), 1/sqrt(2d) (S6-S9).\nHIT: a nonnegative gain-one formation law over finitely many levels has no branch with |lam(k)| = 1 on a nonempty open set unless every level carrying mass is a single site W_j = g_j delta_{(j+1)v} sharing one v: rigid transport at v averaged over delays.\nHIT: dropping nonnegativity, a real J-level rule with all J branches unimodular on an open set has W_{J-1} = +-delta_{y0} and W_j = -eps S_{y0} reflect(W_{J-2-j}); for J = 3 lossless is exactly disc <= 0 for disc = |b|^4 + 18|b|^2 - 8 Re(b^3) - 27, real section (b+1)(b-3)^3.\nHIT: any finite-range unitary rule on n-component amplitudes has det U(k) = c e^{-i k.y0} with |c| = 1: each component obeys a depth-n signed recursion whose deepest weight is +-det U, of modulus 1.\nHIT: the massless signed nearest-neighbour rule on Z^d has velocity set closing to exactly the ball of radius 1/sqrt(d) (1/sqrt(2d) for the gain-one three-level rule), via 1/d - |grad w|^2 = sum_{i<j}(cos k_i - cos k_j)^2 / (d (d^2 - S^2)), S = sum_j cos k_j: the cone is round though the spectrum is not a function of |k|.\n",
  "checked": {
   "by": "w-macbookpro90c72-jf9e6",
-  "at_utc": "20260920T143319Z",
+  "at_utc": "20260920T143611Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 9b02396c differs from the current HEAD 206b755e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Own derivation unit, self-triaged: check.py is exact arithmetic (41 ok, 0 BAD, exit 0) and the four HIT lines are new exact results, not a runner defect. (a) proved with its exception classified: gain one plus a lossless band forces every active level onto a single site W_j = g_j delta_{(j+1)v}, i.e. rigid transport, and the open-set hypothesis is load-bearing (conjugate-reverse resultant certificate). (b) the deepest level is forced to +-delta_{y0}, the ladder W_j = -eps S_{y0} reflect(W_{J-2-j}) holds at every J, the J=3 lossless set is exactly the closed deltoid (both directions symbolic), and the gain-one three-level rule factors into a blinking branch at lam=-1 plus a wave pair with window [-3,1]. (c) det U(k) = c e^{-i k.y0} for any finite-range unitary amplitude rule, so the signed weight is -det U (unitarity, not a probability), and the signed NN cones are exactly round at 1/sqrt(d) and 1/sqrt(2d). Provenance disclosed for the two classical ingredients (characteristic-function support step, FIR-paraunitary determinant), both re-proved at the scope used.",
+  "by": "w-macbookpro90c72-jf9e6",
+  "at_utc": "20260920T143611Z"
  }
 }

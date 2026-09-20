@@ -1,0 +1,32 @@
+{
+ "task": "C:zero-mode-sum-3plus1:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j753b",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/zero-mode-sum-3plus1/w-jonathonsmac4f50-j753b/run.py",
+ "seed": 67282,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff599db3",
+ "started_utc": "20260920T012122Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the 3+1 return sum is finite, G = 1.7929 (rigorous bracket [1.7570, 1.8590] from 400 exact rational terms and a Stirling tail bound; [1.7928, 1.7929] using the local-limit decay n^(3/2) P_n -> 0.359174), so the spin-wave plateau 1 - sigma^2 G is positive at every coupling (|m| = 0.9634 at beta = 12, 0.6635 at beta = 1), while the same sum in 2+1 grows like log L (2.644 at L = 16 to 5.512 at L = 512): memory in 3+1, none in 2+1"
+ },
+ "review": "run.py computes P_n exactly for n <= 400 from the series identity, bounds the tail rigorously by Robbins-Stirling (G in [1.7570, 1.8590]) and sharply by the verified local limit (G in [1.79284, 1.79292]), tabulates the spin-wave plateau 1 - sigma^2 G against the single logged run (beta = 6, L = 32: 0.9242 measured against 0.9284, -0.45 %), and shows the 2+1 sum growing 0.827 per doubling, which is the finiteness in 3+1 and the log L divergence in 2+1 that the task expects.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): The return sum that decides memory in 3+1. G := (2 pi)^-3 Int d^3k 1/(1 - |phi(k)|^2), phi = (1 + sum_j e^{ik_j})/4. (1) Show 1/(1-u) = sum_n u^n and that Int u^n is the probability that the difference of two independent plane walks (steps 0, e1, e2, e3 with probability 1/4 each) is at the origin after n steps; compute these probabilities exactly (rational arithmetic) for n <= 400. (2) Bound the tail rigorously by a local-limit estimate you verify numerically, and give a two-sided bracket for G. (3) Spin-wave prediction for the plateau of the sphere law: |m| ~ 1 - sigma^2 G with sigma^2 = A(4 beta)/(4 beta), A(k) = coth k - 1/k; tabulate for beta in {1, 1.5, 2, 3, 6, 12} and compare with the logs under logs/probes/X:formation-3plus1-sphere-memory/ when present. Expectation: G finite (it diverges logarithmically with L in 2+1) and agreement within a few percent at beta >= 6. For contrast give the same sum on the L x L plane of 2+1 for L = 16..512 and its log L growth. DELIVERABLE in your unit worktree: probes/work/compute/zero-mode-sum-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/zero-mode-sum-3plus1/<name>/run.py\"",
+ "stdout_sha256": "119986c4bd07c52c993fd8f69893d448df8070c193752eb7323bc94bc7990bb3",
+ "stdout_tail": "0); it increases in n and stays below the constant on 1 <= n <= 400, which gives the sharper tail bracket [0.03584, 0.03592] and G in [1.79284, 1.79292] (numerical, since the monotonicity is checked only on that range)\nok   N2: (numerical, labelled) G = 1.7929: |m| ~ 1 - sigma^2 G with sigma^2 = A(4 beta)/(4 beta) gives beta=1: sigma^2=0.1877, |m|=0.6635, beta=1.5: sigma^2=0.1389, |m|=0.7510, beta=2: sigma^2=0.1094, |m|=0.8039, beta=3: sigma^2=0.0764, |m|=0.8630, beta=6: sigma^2=0.0399, |m|=0.9284, beta=12: sigma^2=0.0204, |m|=0.9634; against the logs: beta=6 L=32: measured 0.9242, spin wave 0.9284 (-0.45%)\nok   N3: (numerical, labelled) the same sum in 2+1, (1/L^2) sum_{k != 0} 1/(1 - |phi|^2) with phi = (1 + e^{ik1} + e^{ik2})/3: L=16: 2.6443, L=32: 3.2186, L=64: 3.7921, L=128: 4.3654, L=256: 4.9386, L=512: 5.5119; successive differences per doubling: 0.8286, 0.8274, 0.8271, 0.8270, 0.8270 (a log L growth, no finite limit), against the finite 3+1 value\n==========================================================================================\nSUMMARY: the 3+1 return sum is finite, G = 1.7929 (rigorous bracket [1.7570, 1.8590] from 400 exact rational terms and a Stirling tail bound; [1.7928, 1.7929] using the local-limit decay n^(3/2) P_n -> 0.359174), so the spin-wave plateau 1 - sigma^2 G is positive at every coupling (|m| = 0.9634 at beta = 12, 0.6635 at beta = 1), while the same sum in 2+1 grows like log L (2.644 at L = 16 to 5.512 at L = 512): memory in 3+1, none in 2+1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j753b",
+  "at_utc": "20260920T012126Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

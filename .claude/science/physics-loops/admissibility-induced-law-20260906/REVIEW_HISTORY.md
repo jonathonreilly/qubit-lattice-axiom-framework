@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-20 block 38 — author checks (not a review PASS)
+Both arguments re-derived before computing; own elimination code agrees with the workers' numbers (27/6928; 6982520832; 1/72). Refuting pass by enumeration, linear program and Monte Carlo. One finding folded (T2's schemes are a subclass of T1's). Census 7/7 in family. Hand-off to a fresh review-loop.

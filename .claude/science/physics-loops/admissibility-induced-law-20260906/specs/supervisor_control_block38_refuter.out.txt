@@ -1,0 +1,4 @@
+(a) rectangle 2x3 at (3,1,2): Z by enumeration = 6000000; least D_sigma over 720 orders = 7008768; Z < D: True
+(b) plaquette: static law as a mixture of the 24 value-blind order laws: linear program status 2 (infeasible)
+(c) adversarial adapted scheme on the plaquette, 200000 runs: P(constant pattern) = 0.02014 +- 0.00032; static law: 0.02338; bound 6 p^4/D_min = 0.02163
+(d) diamond, events (v0 = v3, v1 = v2): (False, False): sampled 0.6638 exact 0.6639; (False, True): sampled 0.1418 exact 0.1416; (True, False): sampled 0.1552 exact 0.1555; (True, True): sampled 0.0392 exact 0.0390

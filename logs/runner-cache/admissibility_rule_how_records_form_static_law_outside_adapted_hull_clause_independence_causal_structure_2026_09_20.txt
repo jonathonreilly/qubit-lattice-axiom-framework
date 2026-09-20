@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.py
+runner_sha256: 8aad6f4f0bb486de5f987cc94c5b063258aa2988c8be9be5ea853d575c7869e3
+input_fingerprint_sha256: 0764184f381cac5b9b53ab86fa25f6571050b1fbf9ec6e47a5ee8e5d3c447baa
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.65
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_HOW_RECORDS_FORM_STATIC_LAW_OUTSIDE_THE_HULL_OF_ADAPTED_FORMATION_LAWS_AND_CLAUSE_INDEPENDENCE_ON_A_CAUSAL_PREDECESSOR_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentences used
+PASS: A3 block 01 on main carries its claim id and the static law of a product rule
+PASS: B1 T1: for k = 2, 3, 4 and every tuple of recorded neighbours, sum_s prod_i phi(s, a_i) <= N_k, with equality exactly when the a_i are equal (or, only when p = q, lie in one antipodal pair); at (3,1,2), (5,2,4), (7,3,5) and (2,2,1)
+PASS: B2 T1: Z < D_min on the plaquette, the 2x3 rectangle and the cube, and Z = D_min on the path and the star (no cycle), at the three weight triples; at (3,1,2): plaquette: Z = 20784, D_min = 22464; rectangle 2x3: Z = 6000000, D_min = 7008768; cube: Z = 6982520832, D_min = 10933678080; path of 3: Z = 864, D_min = 864; star of 4: Z = 10368, D_min = 10368
+PASS: B3 T1: for every order of the plaquette (24) and of the 2x3 rectangle (720) the constant pattern has formation weight p^|E| / D_sigma, strictly below its static weight; at (3,1,2) and (5,2,4)
+PASS: B4 T1: 60 random adapted schemes on the plaquette at (3,1,2) (the next site drawn with probabilities depending on the records so far), exact laws: every constant pattern has weight at most p^4/D_min = 3/832 < p^4/Z = 27/6928 (largest found 3/832)
+PASS: C1 T2: on the diamond and the V, 12 random readiness-gated adapted schemes each (the next ready site drawn with value-dependent probabilities, which includes every clock law on the ready sites) give exactly the product of the rule's kernels, on all patterns
+PASS: C2 T2: an antichain formed jointly has the product law (no bond inside it); on level-ordered Z^3 two sites of the same level differ by e_i - e_j, of squared length 2, so they are never nearest neighbours
+PASS: C3 T2 (control): on the undirected path of 3 the order that forms the middle site last reads two neighbours where the other reads one at a time, and the laws differ: total variation 1/72 at (3,1,2)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the inequality sum_s prod phi(s, a_i) <= N_k with its equality cases for every tuple, k <= 4, four weight triples
+per_site: executed — every order of the plaquette and the 2x3 rectangle: the constant pattern's weight p^|E|/D_sigma against the static weight
+per_mode: not applicable — finite windows
+per_block: executed — Z and D_min exactly on five windows at three triples; exact laws of 60 random adapted schemes on the plaquette and of 24 readiness-gated schemes on two causal structures
+lattice_wide: T1 holds for every finite window with a cycle and every positive not-all-equal triple; T2 for every finite predecessor structure; which structure the axioms intend is not decided here
+PASS: G1 the five N5 resolution lines are printed
+scope: how records form — the static law outside the hull of adapted formation laws on windows with a cycle; one law for every readiness-gated clause on a causal predecessor structure; exact
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

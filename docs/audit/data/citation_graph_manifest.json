@@ -1,6 +1,6 @@
 {
  "edge_count": 13568,
- "node_count": 6014,
+ "node_count": 6015,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -737,6 +737,10 @@
   "admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1badd550395b",
    "out_degree": 3
+  },
+  "admissibility_rule_how_records_form_static_law_outside_the_hull_of_adapted_formation_laws_and_clause_independence_on_a_causal_predecessor_structure_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06": {
    "deps_hash": "0447028c8504",

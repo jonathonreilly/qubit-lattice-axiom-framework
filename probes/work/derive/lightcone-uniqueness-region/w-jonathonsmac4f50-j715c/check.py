@@ -240,8 +240,12 @@ def main():
          f" zeta_- ~ {float(zm[0]):.6f})")
 
     print("\nC3a  the perpendicular influence (the value Phi is compared with), re-proved here")
-    want(sp.simplify(sp.integrate(t * sp.exp(k*t), (t, -1, 1)) /
-                     sp.integrate(sp.exp(k*t), (t, -1, 1)) - A) == 0,
+    P1 = sp.exp(k*t) * (t/k - 1/k**2)                 # antiderivative of t e^{kt}
+    P0 = sp.exp(k*t) / k                              # antiderivative of e^{kt}
+    want(sp.simplify(sp.diff(P1, t) - t*sp.exp(k*t)) == 0 and
+         sp.simplify(sp.diff(P0, t) - sp.exp(k*t)) == 0, "antiderivatives of t e^{kt} and e^{kt}")
+    ratio = ((P1.subs(t,1) - P1.subs(t,-1)) / (P0.subs(t,1) - P0.subs(t,-1)))
+    want(sp.simplify((ratio - A).rewrite(sp.exp)) == 0,
          "E_V[s] = A(k) V/|V|, A = coth k - 1/k  (the transverse parts vanish by symmetry)")
     print("     rho_w s = s - 2(w.s)w is the reflection across w^perp, so |s - rho_w s| = 2|w.s|.")
     print("     For |V| = |V'| = k and w = (V-V')/|V-V'| one has rho_w V = V', p_V/p_V' =")

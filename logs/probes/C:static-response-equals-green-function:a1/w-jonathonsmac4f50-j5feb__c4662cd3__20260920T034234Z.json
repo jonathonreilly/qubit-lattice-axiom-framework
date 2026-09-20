@@ -1,0 +1,32 @@
+{
+ "task": "C:static-response-equals-green-function:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j5feb",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/static-response-equals-green-function/w-jonathonsmac4f50-j5feb/run.py",
+ "seed": 75754,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c4662cd3",
+ "started_utc": "20260920T034234Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "1 - P = (-Delta)/7 exactly, so the stationary mean is f times 7 (-Delta)^{-1} delta_0 with symbol 7/E(k), verified over the rationals on L = 3, 4, 5 tori (R = 7G entrywise, R(0) = 30044/20625 = 1.456679 at L=5); the field enters as h/(n beta) in the mean direction and A(n beta) h/(n beta) = sigma^2 h in the mean record, the two differing by exactly A(n beta) = 0.9762 (light cone, beta=6) and 0.9583 (backward, beta=6), against the simulator's quoted 0.99 and 0.96; and (1 + P) C/sigma^2 = (1 - P)^{-1} holds exactly on every torus checked, P being self-adjoint here; 8s"
+ },
+ "review": "run.py shows 1 - P = (-Delta)/7 entrywise so that (1-P)^-1 is seven lattice Green functions with symbol 7/E(k), verifies over the rationals on L = 3, 4, 5 tori that the exact solution of (1-P)R = delta - 1/N equals 7G entrywise with R(0) = 308/243, 10619/7680 and 30044/20625, derives the field's exact first-order coefficient as A(n beta)/(n beta) = sigma^2 for the mean record against 1/(n beta) for its mean direction (the two differing by exactly A(n beta) = 0.9762 light cone and 0.9583 backward at beta = 6, matching the simulator's quoted 0.99 and 0.96 to 1.4 and 0.2 percent) with the finite-h correction below 0.03 percent up to h = 1, and confirms (1 + P) C/sigma^2 = (1 - P)^-1 exactly on every torus, an identity that needs P self-adjoint; no HIT.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): The exact statement behind the source potential. Linear light-cone formation: theta_{t+1} = P theta_t + noise + f delta_0 with P the average over the site and its six neighbours. (1) The stationary mean is f (1 - P)^-1 delta_0 and (1 - P)^-1 has symbol 7/E(k), E(k) = 2 sum_j (1 - cos k_j): the Z^3 lattice Green function times 7; verify exactly on L = 3, 4, 5 tori with rational arithmetic (zero mode removed). (2) Relate f to the field h in the sphere rule: the record's mean direction under weight exp(beta s.S + h s.t) shifts transversally by h/(n beta) A(kappa)-corrections: derive the exact first-order coefficient in h at finite beta (expected h A(n beta)/(n beta) x something: find it) and compare with the simulator's ratio 0.99 at beta = 6 and 0.96 on the backward lattice. (3) The fluctuation-response relation for this chain: response = (1 + P) C / sigma^2 with C the equal-time covariance sigma^2/(1 - P^2): verify exactly on the small tori. DELIVERABLE in your unit worktree: probes/work/compute/static-response-equals-green-function/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-response-equals-green-function/<name>/run.py\"",
+ "stdout_sha256": "620aa6c898ad97a0cf42af63af23c76ecb669ea627844158f16a9cc217f10eb0",
+ "stdout_tail": " quoted 0.96 (difference 0.0017); 1/(n beta) = 0.041667, A(n beta)/(n beta) = 0.039931\nA2 finite h (n=7): h | transverse mean direction | transverse mean vector | ratio to h sigma^2\nA2   beta=2.0 h=0.01: 0.00071429 | 0.00066327 | 1.000000\nA2   beta=2.0 h=0.05: 0.00357141 | 0.00331631 | 0.999994\nA2   beta=2.0 h=0.2: 0.01428426 | 0.01326406 | 0.999906\nA2   beta=2.0 h=1.0: 0.07124705 | 0.06617091 | 0.997654\nA2   beta=6.0 h=0.01: 0.00023810 | 0.00023243 | 1.000000\nA2   beta=6.0 h=0.05: 0.00119048 | 0.00116213 | 0.999999\nA2   beta=6.0 h=0.2: 0.00476185 | 0.00464847 | 0.999989\nA2   beta=6.0 h=1.0: 0.02380278 | 0.02323621 | 0.999724\nA2 quadrature check of the vMF mean at |V|=14.0: <cos> = 0.9285714286 vs A(|V|) = 0.9285714286\nA2 quadrature check of the vMF mean at |V|=42.0: <cos> = 0.9761904762 vs A(|V|) = 0.9761904762\nA2 quadrature check of the vMF mean at |V|=5.0: <cos> = 0.8000908040 vs A(|V|) = 0.8000908040\nSUMMARY: 1 - P = (-Delta)/7 exactly, so the stationary mean is f times 7 (-Delta)^{-1} delta_0 with symbol 7/E(k), verified over the rationals on L = 3, 4, 5 tori (R = 7G entrywise, R(0) = 30044/20625 = 1.456679 at L=5); the field enters as h/(n beta) in the mean direction and A(n beta) h/(n beta) = sigma^2 h in the mean record, the two differing by exactly A(n beta) = 0.9762 (light cone, beta=6) and 0.9583 (backward, beta=6), against the simulator's quoted 0.99 and 0.96; and (1 + P) C/sigma^2 = (1 - P)^{-1} holds exactly on every torus checked, P being self-adjoint here; 8s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5feb",
+  "at_utc": "20260920T034242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

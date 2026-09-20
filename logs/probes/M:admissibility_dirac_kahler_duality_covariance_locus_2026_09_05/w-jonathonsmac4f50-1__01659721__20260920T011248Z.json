@@ -1,0 +1,32 @@
+{
+ "task": "M:admissibility_dirac_kahler_duality_covariance_locus_2026_09_05",
+ "type": "mutation-census",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "for m in $(python3 scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 66768,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "01659721",
+ "started_utc": "20260920T011248Z",
+ "elapsed_s": 3031.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "50afcc52ab3cceb9a3913dcc2d20a41498d34d87baa417d6a9628dd674a1a099",
+ "stdout_tail": "group: 11872 ms\n[phase] star: 103 ms\n[census] gauge class (1, 1)\n[census] gauge class (1, -1)\n[census] gauge class (-1, 1)\n[census] gauge class (-1, -1)\n[phase] census: 28634 ms\n[overlap] gauge class (1, 1)\n[overlap] gauge class (1, -1)\n[overlap] gauge class (-1, 1)\n[overlap] gauge class (-1, -1)\n[phase] overlap: 42951 ms\n[phase] controls: 29724 ms\n[phase] authority: 1 ms\n[phase] group: 11603 ms\n[phase] star: 103 ms\n[census] gauge class (1, 1)\n[census] gauge class (1, -1)\n[census] gauge class (-1, 1)\n[census] gauge class (-1, -1)\n[phase] census: 28002 ms\n[overlap] gauge class (1, 1)\n[overlap] gauge class (1, -1)\n[overlap] gauge class (-1, 1)\n[overlap] gauge class (-1, -1)\n[phase] overlap: 42155 ms\n[phase] controls: 29586 ms\n[phase] authority: 0 ms\n[phase] group: 11510 ms\n[phase] star: 103 ms\n[census] gauge class (1, 1)\n[census] gauge class (1, -1)\n[census] gauge class (-1, 1)\n[census] gauge class (-1, -1)\n[phase] census: 27930 ms\n[overlap] gauge class (1, 1)\n[overlap] gauge class (1, -1)\n[overlap] gauge class (-1, 1)\n[overlap] gauge class (-1, -1)\n[phase] overlap: 41823 ms\n[phase] controls: 29609 ms\n[phase] authority: 0 ms\n[phase] group: 11592 ms\n[phase] star: 102 ms\n[census] gauge class (1, 1)\n[census] gauge class (1, -1)\n[census] gauge class (-1, 1)\n[census] gauge class (-1, -1)\n[phase] census: 27895 ms\n[overlap] gauge class (1, 1)\n[overlap] gauge class (1, -1)\n[overlap] gauge class (-1, 1)\n[overlap] gauge class (-1, -1)\n[phase] overlap: 41734 ms\n[phase] controls: 29415 ms\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T020319Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+  ]
+ }
+}

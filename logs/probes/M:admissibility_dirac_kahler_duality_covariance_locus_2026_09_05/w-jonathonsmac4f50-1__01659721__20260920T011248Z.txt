@@ -1,0 +1,202 @@
+== stale_main_authority
+TOTAL: PASS=30 FAIL=1
+== stale_parent_authority
+TOTAL: PASS=30 FAIL=1
+== claim_objects_registered
+TOTAL: PASS=30 FAIL=1
+== claim_gravity_supplied
+TOTAL: PASS=30 FAIL=1
+== claim_covariance_inherited
+TOTAL: PASS=30 FAIL=1
+== claim_subgroup_selected
+TOTAL: PASS=30 FAIL=1
+== claim_assembly_decided
+TOTAL: PASS=30 FAIL=1
+== break_representation_orders
+TOTAL: PASS=30 FAIL=1
+== break_intertwining
+TOTAL: PASS=30 FAIL=1
+== break_subgroup_class_count
+TOTAL: PASS=30 FAIL=1
+== break_gauge_congruence
+TOTAL: PASS=30 FAIL=1
+== break_star_signs
+TOTAL: PASS=30 FAIL=1
+== break_star_line
+TOTAL: PASS=30 FAIL=1
+== break_twisted_census
+TOTAL: PASS=30 FAIL=1
+== break_strict_census
+TOTAL: PASS=30 FAIL=1
+== claim_shears_killed_by_twisted_covariance
+TOTAL: PASS=30 FAIL=1
+== break_p111_commutation
+TOTAL: PASS=30 FAIL=1
+== break_overlap_locus
+TOTAL: PASS=30 FAIL=1
+== claim_positivity_selects_plane
+TOTAL: PASS=30 FAIL=1
+== claim_parity_selects_plane
+TOTAL: PASS=30 FAIL=1
+== break_flat_cell_loci
+TOTAL: PASS=30 FAIL=1
+== break_strict_s3_cells
+TOTAL: PASS=30 FAIL=1
+== break_star_pattern_cells
+TOTAL: PASS=30 FAIL=1
+== break_scout_grade_fence
+TOTAL: PASS=30 FAIL=1
+== break_instance_scope
+TOTAL: PASS=30 FAIL=1
+== drop_n5_fence
+TOTAL: PASS=30 FAIL=1
+== break_float_absence
+TOTAL: PASS=30 FAIL=1
+
+[stderr]
+erlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 42963 ms
+[phase] controls: 30090 ms
+[phase] authority: 2 ms
+[phase] group: 11905 ms
+[phase] star: 107 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 28441 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 43013 ms
+[phase] controls: 30311 ms
+[phase] authority: 2 ms
+[phase] group: 11891 ms
+[phase] star: 106 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 29433 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 43237 ms
+[phase] controls: 30325 ms
+[phase] authority: 2 ms
+[phase] group: 11767 ms
+[phase] star: 106 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 27941 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 42890 ms
+[phase] controls: 30235 ms
+[phase] authority: 1 ms
+[phase] group: 11798 ms
+[phase] star: 106 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 28431 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 41635 ms
+[phase] controls: 29415 ms
+[phase] authority: 1 ms
+[phase] group: 11644 ms
+[phase] star: 104 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 27867 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 42275 ms
+[phase] controls: 29460 ms
+[phase] authority: 0 ms
+[phase] group: 11577 ms
+[phase] star: 103 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 27794 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 41910 ms
+[phase] controls: 30210 ms
+[phase] authority: 1 ms
+[phase] group: 11872 ms
+[phase] star: 103 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 28634 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 42951 ms
+[phase] controls: 29724 ms
+[phase] authority: 1 ms
+[phase] group: 11603 ms
+[phase] star: 103 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 28002 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 42155 ms
+[phase] controls: 29586 ms
+[phase] authority: 0 ms
+[phase] group: 11510 ms
+[phase] star: 103 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 27930 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 41823 ms
+[phase] controls: 29609 ms
+[phase] authority: 0 ms
+[phase] group: 11592 ms
+[phase] star: 102 ms
+[census] gauge class (1, 1)
+[census] gauge class (1, -1)
+[census] gauge class (-1, 1)
+[census] gauge class (-1, -1)
+[phase] census: 27895 ms
+[overlap] gauge class (1, 1)
+[overlap] gauge class (1, -1)
+[overlap] gauge class (-1, 1)
+[overlap] gauge class (-1, -1)
+[phase] overlap: 41734 ms
+[phase] controls: 29415 ms

@@ -1,0 +1,38 @@
+Q1  the deviations, for every positive (p,q,r)
+     d_1 = (q**3 + 4*r**3)/(p**3 + q**3 + 4*r**3)
+     d_2 = (p*q**2 + 4*r**3)/(p**2*q + p*q**2 + 4*r**3)
+     d_3 = (p*r + q**2 + q*r + 2*r**2)/(p**2 + p*r + q**2 + q*r + 2*r**2)
+ok   on (p,1,2): d_1 = 33/(p**3 + 33), which is a4's closed form
+ok                d_2 = (p + 32)/(p**2 + p + 32), likewise
+ok                d_3 = (2*p + 11)/(p**2 + 2*p + 11), likewise
+     so the general map restricts to the line the two prior attempts use.
+
+Q2  the repair
+     numerator of d_2 - d_1 = p**2*(p - q)*(p*q**2 + q**3 + 4*r**3)
+ok   the second factor is positive for p,q,r > 0, so d_1 <= d_2 IFF p >= q - exactly.
+     That is block 30's T1(a) on a domain: it holds for every rule in which alignment
+     is at least as likely as anti-alignment, and needs nothing about r.
+
+Q3  the full criterion, and the documented counterexample
+     numerator of d_3 - d_1 = p**2*(p**2*r + p*q**2 + p*q*r + 2*p*r**2 - q**3 - 4*r**3)
+ok   so d_1 <= max(d_2,d_3) iff p >= q OR p^2 r + p q^2 + p q r + 2 p r^2 >= q^3 + 4 r^3
+ok   at (1,2,1): d_1 = 12/13 > max(4/5, 9/10); p < q and the cubic is -3 < 0, so both halves fail - the documented counterexample, explained
+ok   and the second half is not idle: at (1, 21/20, 1/2) we have p < q but the cubic is 7759/8000 > 0, and T1(a) holds
+
+Q4  which of d_2, d_3 is the larger
+     numerator of d_2 - d_3 = p**2*(q - r)*(p*q - q**2 - 2*q*r - 4*r**2)
+ok   so eps_2 = max(d_2,d_3) switches branch on (q - r)(pq - q^2 - 2qr - 4r^2) = 0.
+ok   on (p,1,2) that is 21 - p, so d_2 >= d_3 iff p <= 21 - a4's crossing, now as a surface
+
+Q5  the cross-lane identity
+     The causal-clauses lane's Dobrushin influence alpha_3 - the largest total
+     variation between two three-parent kernels differing in one parent - was found
+     there to be p^2(p-1)(p+33)/((p^3+33)(p^2+p+32)) on (p,1,2), with the maximizer
+     three equal parents and one flipped to its antipode.  That is this lane's pair:
+ok   alpha_3 = d_2 - d_1 identically on (p,1,2)
+ok   and in general the same factorization governs both, so the influence of one parent is
+     exactly the extra deviation one wrong predecessor buys.  The uniqueness lane's
+     Dobrushin constant and the ordering lane's noise map are one object.
+
+SUMMARY: PARTIAL block 30's T1(a) is repaired for every positive (p,q,r): the numerator of d_2 - d_1 factors as p^2 (p - q)(p q^2 + q^3 + 4 r^3), so d_1 <= d_2 IFF p >= q, and d_1 <= max(d_2,d_3) iff p >= q or p^2 r + p q^2 + p q r + 2 p r^2 >= q^3 + 4 r^3; the documented failure at (1,2,1) misses both halves, the second half is not idle (it saves (1, 21/20, 1/2)), the d_2/d_3 branch switches on (q - r)(pq - q^2 - 2qr - 4r^2) which is p = 21 on (p,1,2), and alpha_3 = d_2 - d_1 identically, so the uniqueness lane's Dobrushin influence and this lane's noise map are the same object
+HIT: block 30's T1(a) holds exactly on p >= q - every rule where alignment beats anti-alignment, which contains every line the campaign uses - with an explicit second branch for p < q; and the Dobrushin influence alpha_3 equals d_2 - d_1, linking the uniqueness and ordering lanes' constants

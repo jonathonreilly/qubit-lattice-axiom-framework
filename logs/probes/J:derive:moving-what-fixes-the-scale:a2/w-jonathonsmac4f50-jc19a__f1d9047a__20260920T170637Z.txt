@@ -1,0 +1,67 @@
+R1  the test that makes 'no state is privileged' checkable
+     An empty site is NOT privileged if the law cannot tell it from a record whose
+     content has been averaged away.  For a site x with j occupied neighbours carrying
+     contents a_1..a_j, the two readings weigh
+       empty:            1        (every bond with an empty end weighs 1)
+       averaged record:  c^j (1/6) sum_s prod_i omega(a_i, s)
+     so the question is for which c and which j the two agree.  This is a statement
+     about the measure, not about an operator, so it cannot be circular with a5's
+     determinant.
+
+R2  degree 1: equality, and it happens at exactly one scale
+ok        with one occupied neighbour the averaged record weighs c(p+q+4r)/6, so equality
+ok        with the empty reading holds at c = 6/(p+q+4r) = c_0, and at no other scale
+
+R3  degree 2: the identity fails pointwise, and the gap is a covariance
+     With two occupied neighbours carrying a and b, the averaged record weighs
+     c^2 (1/6) sum_s omega(a,s) omega(b,s), which depends on the PAIR:
+       equal      : sum_s omega(a,s) omega(b,s) = p**2 + q**2 + 4*r**2
+       opposite   : sum_s omega(a,s) omega(b,s) = 2*(p*q + 2*r**2)
+       orthogonal : sum_s omega(a,s) omega(b,s) = 2*r*(p + q + r)
+ok        the three pair types give three different sums, so no single c can match all
+     three against the empty reading's 1 unless the sums coincide, i.e. unless
+ok        p = q = r, where all three collapse to 6p^2 - the trivial rule
+     The gap between any two of them is the content covariance of omega(a,.) and
+     omega(b,.), which is what the shared empty site correlates; a1 found the same
+     obstruction from block 24's side, on a bridge.
+
+R4  degree j: equality holds on average over the neighbours' contents, at every j
+     Average the degree-j test over the contents of the neighbours themselves:
+       c^j (1/6)^j sum_{a_1..a_j} (1/6) sum_s prod_i omega(a_i,s)
+       = c^j (1/6) sum_s prod_i [ (1/6) sum_{a_i} omega(a_i,s) ]
+       = c^j (1/6) sum_s [ (p+q+4r)/6 ]^j  =  [ c (p+q+4r)/6 ]^j,
+ok        because sum_a omega(a,s) = p+q+4r for EVERY s (the rule is doubly stochastic in
+       that sense).  So the averaged identity is [c(p+q+4r)/6]^j, which is 1 at c_0
+ok        j = 1: the fully averaged weight is exactly 1 at c_0
+ok        j = 2: the fully averaged weight is exactly 1 at c_0
+ok        j = 3: the fully averaged weight is exactly 1 at c_0
+ok        j = 6: the fully averaged weight is exactly 1 at c_0
+     for every j - so the redundancy is exact at every degree ON AVERAGE, and exact
+     pointwise only at j <= 1.
+
+R5  what that says, and one accident
+     The non-circular statement a5 asked for is therefore:
+       c_0 is the unique scale at which an empty site weighs what an averaged record
+       weighs, and at c_0 that identity is exact for a site with at most ONE occupied
+       neighbour and exact only in mean for more.  'No state is privileged' is a
+       one-bond statement; it does not extend to a site that joins two records,
+       because such a site correlates their contents and an empty site does not.
+     At (p,q,r) = (3,1,2), c_0 = 1/2, the three degree-2 weights are:
+       equal      : 13/12 = 1.083333
+       opposite   : 11/12 = 0.916667
+       orthogonal : 1 = 1.000000
+ok        and the ORTHOGONAL one is exactly 1 while the others are not.  That is NOT an
+     accident of this triple.  The orthogonal weight equals 1 iff
+ok          12r(p+q+r) - (p+q+4r)^2 = -(p+q-2r)^2,   so iff  p + q = 2r  exactly
+     - a scale-free condition on the weights, and the SAME one that appears in
+     issue 8534 as the side condition bond-plane reflection positivity needs beyond
+     c >= c_0.  Two of the lane's three standard triples sit exactly on it:
+ok          (3, 1, 2): p+q-2r = 0, orthogonal weight = 1
+ok          (5, 2, 4): p+q-2r = -1, orthogonal weight /= 1
+ok          (7, 3, 5): p+q-2r = 0, orthogonal weight = 1
+ok          (4, 1, 1): p+q-2r = 3, orthogonal weight /= 1
+     So the degree-2 identity is not fixed by the scale at all: one of its three
+     branches is fixed by the weights, on the surface p + q = 2r.
+
+SUMMARY: PARTIAL on what fixes the binding scale: testing 'an empty site is not privileged' as a statement about the MEASURE rather than the operator - an empty site weighs 1, an averaged record with j occupied neighbours weighs c^j (1/6) sum_s prod_i omega(a_i,s) - the two agree at j = 1 at exactly one scale, c = 6/(p+q+4r) = c_0, and at j = 2 the averaged-record weight takes three different values on the equal, opposite and orthogonal pairs (p^2+q^2+4r^2, 2pq+4r^2, 2r(p+q)+2r^2), so no scale can match all three unless p = q = r; averaging instead over the NEIGHBOURS' contents gives exactly [c(p+q+4r)/6]^j, which is 1 at c_0 for every j, because sum_a omega(a,s) = p+q+4r for every s; so the redundancy is exact at every degree in mean and exact pointwise only at degree one, and the orthogonal degree-2 weight equals 1 exactly on the surface p + q = 2r, since 12r(p+q+r) - (p+q+4r)^2 = -(p+q-2r)^2 - the same scale-free condition that issue 8534 found bond-plane reflection positivity needs beyond c >= c_0 - and this holds at (3,1,2) and (7,3,5) where p+q = 2r holds, and not at (5,2,4) or (4,1,1)
+HIT: 'no state is privileged' is a ONE-BOND statement: c_0 is the unique scale at which an empty site weighs what a content-averaged record weighs, that identity is exact for a site with at most one occupied neighbour, and for more neighbours it holds only in mean - exactly [c(p+q+4r)/6]^j at every degree j, but pointwise different on the equal, opposite and orthogonal pairs, the gap being the content covariance that a shared empty site cannot reproduce; one of the three degree-2 branches is fixed not by the scale but by the weights, on the surface p + q = 2r where 12r(p+q+r) - (p+q+4r)^2 = -(p+q-2r)^2 vanishes, which is the same condition reflection positivity needs in issue 8534; this is the non-circular form of a5's determinant statement, phrased about the measure instead of the operator, and it says the principle cannot fix the scale by itself beyond degree one

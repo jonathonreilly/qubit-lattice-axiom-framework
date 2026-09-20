@@ -1,0 +1,63 @@
+A1 the cube group acting on the six axes has 48 elements
+A1 126 multisets of four predecessors fall into 10 orbits
+A1 pattern 4 (unanimous): representative [(1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0)], orbit size 6
+A1   law: P((1, 0, 0)) = p**4/(p**4 + q**4 + 4*r**4), P((-1, 0, 0)) = q**4/(p**4 + q**4 + 4*r**4), P((0, 1, 0)) = r**4/(p**4 + q**4 + 4*r**4), P((0, -1, 0)) = r**4/(p**4 + q**4 + 4*r**4), P((0, 0, 1)) = r**4/(p**4 + q**4 + 4*r**4), P((0, 0, -1)) = r**4/(p**4 + q**4 + 4*r**4)
+A1 pattern 3-1 (opposite): representative [(1, 0, 0), (1, 0, 0), (1, 0, 0), (-1, 0, 0)], orbit size 6
+A1   law: P((1, 0, 0)) = p**3*q/(p**3*q + p*q**3 + 4*r**4), P((-1, 0, 0)) = p*q**3/(p**3*q + p*q**3 + 4*r**4), P((0, 1, 0)) = r**4/(p**3*q + p*q**3 + 4*r**4), P((0, -1, 0)) = r**4/(p**3*q + p*q**3 + 4*r**4), P((0, 0, 1)) = r**4/(p**3*q + p*q**3 + 4*r**4), P((0, 0, -1)) = r**4/(p**3*q + p*q**3 + 4*r**4)
+A1 pattern 3-1 (orthogonal): representative [(1, 0, 0), (1, 0, 0), (1, 0, 0), (0, 1, 0)], orbit size 24
+A1   law: P((1, 0, 0)) = p**3/(p**3 + p*r**2 + q**3 + q*r**2 + 2*r**3), P((-1, 0, 0)) = q**3/(p**3 + p*r**2 + q**3 + q*r**2 + 2*r**3), P((0, 1, 0)) = p*r**2/(p**3 + p*r**2 + q**3 + q*r**2 + 2*r**3), P((0, -1, 0)) = q*r**2/(p**3 + p*r**2 + q**3 + q*r**2 + 2*r**3), P((0, 0, 1)) = r**3/(p**3 + p*r**2 + q**3 + q*r**2 + 2*r**3), P((0, 0, -1)) = r**3/(p**3 + p*r**2 + q**3 + q*r**2 + 2*r**3)
+A1 pattern 2-2 (opposite): representative [(1, 0, 0), (1, 0, 0), (-1, 0, 0), (-1, 0, 0)], orbit size 3
+A1   law: P((1, 0, 0)) = p**2*q**2/(2*(p**2*q**2 + 2*r**4)), P((-1, 0, 0)) = p**2*q**2/(2*(p**2*q**2 + 2*r**4)), P((0, 1, 0)) = r**4/(2*(p**2*q**2 + 2*r**4)), P((0, -1, 0)) = r**4/(2*(p**2*q**2 + 2*r**4)), P((0, 0, 1)) = r**4/(2*(p**2*q**2 + 2*r**4)), P((0, 0, -1)) = r**4/(2*(p**2*q**2 + 2*r**4))
+A1 pattern 2-1-1 (opposite, orthogonal): representative [(1, 0, 0), (1, 0, 0), (-1, 0, 0), (0, 1, 0)], orbit size 24
+A1   law: P((1, 0, 0)) = p**2*q/(p**2*q + p*q**2 + p*r**2 + q*r**2 + 2*r**3), P((-1, 0, 0)) = p*q**2/(p**2*q + p*q**2 + p*r**2 + q*r**2 + 2*r**3), P((0, 1, 0)) = p*r**2/(p**2*q + p*q**2 + p*r**2 + q*r**2 + 2*r**3), P((0, -1, 0)) = q*r**2/(p**2*q + p*q**2 + p*r**2 + q*r**2 + 2*r**3), P((0, 0, 1)) = r**3/(p**2*q + p*q**2 + p*r**2 + q*r**2 + 2*r**3), P((0, 0, -1)) = r**3/(p**2*q + p*q**2 + p*r**2 + q*r**2 + 2*r**3)
+A1 pattern 2-2 (orthogonal): representative [(1, 0, 0), (1, 0, 0), (0, 1, 0), (0, 1, 0)], orbit size 12
+A1   law: P((1, 0, 0)) = p**2/(2*(p**2 + q**2 + r**2)), P((-1, 0, 0)) = q**2/(2*(p**2 + q**2 + r**2)), P((0, 1, 0)) = p**2/(2*(p**2 + q**2 + r**2)), P((0, -1, 0)) = q**2/(2*(p**2 + q**2 + r**2)), P((0, 0, 1)) = r**2/(2*(p**2 + q**2 + r**2)), P((0, 0, -1)) = r**2/(2*(p**2 + q**2 + r**2))
+A1 pattern 2-1-1 (opposite, orthogonal): representative [(1, 0, 0), (1, 0, 0), (0, 1, 0), (0, -1, 0)], orbit size 12
+A1   law: P((1, 0, 0)) = p**2/(p**2 + 2*p*q + q**2 + 2*r**2), P((-1, 0, 0)) = q**2/(p**2 + 2*p*q + q**2 + 2*r**2), P((0, 1, 0)) = p*q/(p**2 + 2*p*q + q**2 + 2*r**2), P((0, -1, 0)) = p*q/(p**2 + 2*p*q + q**2 + 2*r**2), P((0, 0, 1)) = r**2/(p**2 + 2*p*q + q**2 + 2*r**2), P((0, 0, -1)) = r**2/(p**2 + 2*p*q + q**2 + 2*r**2)
+A1 pattern 2-1-1 (orthogonal): representative [(1, 0, 0), (1, 0, 0), (0, 1, 0), (0, 0, 1)], orbit size 24
+A1   law: P((1, 0, 0)) = p**2/(p**2 + 2*p*r + q**2 + 2*q*r), P((-1, 0, 0)) = q**2/(p**2 + 2*p*r + q**2 + 2*q*r), P((0, 1, 0)) = p*r/(p**2 + 2*p*r + q**2 + 2*q*r), P((0, -1, 0)) = q*r/(p**2 + 2*p*r + q**2 + 2*q*r), P((0, 0, 1)) = p*r/(p**2 + 2*p*r + q**2 + 2*q*r), P((0, 0, -1)) = q*r/(p**2 + 2*p*r + q**2 + 2*q*r)
+A1 pattern 1-1-1-1 (opposite, orthogonal): representative [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0)], orbit size 3
+A1   law: P((1, 0, 0)) = p*q/(2*(2*p*q + r**2)), P((-1, 0, 0)) = p*q/(2*(2*p*q + r**2)), P((0, 1, 0)) = p*q/(2*(2*p*q + r**2)), P((0, -1, 0)) = p*q/(2*(2*p*q + r**2)), P((0, 0, 1)) = r**2/(2*(2*p*q + r**2)), P((0, 0, -1)) = r**2/(2*(2*p*q + r**2))
+A1 pattern 1-1-1-1 (opposite, orthogonal): representative [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, 0, 1)], orbit size 12
+A1   law: P((1, 0, 0)) = p*q/(2*(p*q + p*r + q*r)), P((-1, 0, 0)) = p*q/(2*(p*q + p*r + q*r)), P((0, 1, 0)) = p*r/(2*(p*q + p*r + q*r)), P((0, -1, 0)) = q*r/(2*(p*q + p*r + q*r)), P((0, 0, 1)) = p*r/(2*(p*q + p*r + q*r)), P((0, 0, -1)) = q*r/(2*(p*q + p*r + q*r))
+A1 every multiset in an orbit gives its representative's law relabelled by the group element: True
+A2 leaving a unanimous neighbourhood: 1 - P(same axis) = (q**4 + 4*r**4)/(p**4 + q**4 + 4*r**4) (factored: (q**2 - 2*q*r + 2*r**2)*(q**2 + 2*q*r + 2*r**2)/(p**4 + q**4 + 4*r**4))
+A2 equals the task's (q^4 + 4 r^4)/(p^4 + q^4 + 4 r^4): True
+A2 3-1 with the odd one opposite: P(minority) = p*q**3/(p**3*q + p*q**3 + 4*r**4)
+A2 3-1 with the odd one orthogonal: P(minority) = p*r**2/(p**3 + p*r**2 + q**3 + q*r**2 + 2*r**3)
+A2 on (p,1,2): leave = 65/(p**4 + 65)
+A2 on (p,1,2): minority opposite = p/(p**3 + p + 64), minority orthogonal = 4*p/(p**3 + 4*p + 21)
+A2 on (e^b, e^-b, 1): leave = (4*exp(4*b) + 1)/(exp(8*b) + 4*exp(4*b) + 1)
+A2 on (e^b, e^-b, 1): minority opposite = 1/((exp(2*b) + 4)*exp(2*b) + 1), minority orthogonal = exp(4*b)/((exp(3*b) + exp(b) + 2)*exp(3*b) + exp(2*b) + 1)
+A2 numerically on (p,1,2): p | leave | minority opposite | minority orthogonal
+A2   p=    1: 0.984848  1.515e-02  1.538e-01
+A2   p=    2: 0.802469  2.703e-02  2.162e-01
+A2   p=    4: 0.202492  3.030e-02  1.584e-01
+A2   p=    8: 0.015621  1.370e-02  5.664e-02
+A2   p=   16: 0.000991  3.831e-03  1.531e-02
+A2   p=   84: 0.000001  1.417e-04  5.666e-04
+A2   p= 4165: 0.000000  5.765e-08  2.306e-07
+A2 numerically on (e^b, e^-b, 1): b | leave | minority opposite | minority orthogonal
+A2   b=0.5: 0.358833  5.192e-02  1.840e-01
+A2   b=1: 0.068553  1.174e-02  1.078e-01
+A2   b=2: 0.001340  3.125e-04  1.789e-02
+A2   b=3: 0.000025  6.084e-06  2.472e-03
+A2   b=5: 0.000000  2.061e-09  4.540e-05
+A3 the 2-2 patterns, which need an even number of predecessors and so do not occur with three:
+A3   [(1, 0, 0), (1, 0, 0), (-1, 0, 0), (-1, 0, 0)] (opposite pair): P((1, 0, 0)) = p**2*q**2/(2*(p**2*q**2 + 2*r**4)), P((-1, 0, 0)) = p**2*q**2/(2*(p**2*q**2 + 2*r**4)), P((0, 1, 0)) = r**4/(2*(p**2*q**2 + 2*r**4)), P((0, -1, 0)) = r**4/(2*(p**2*q**2 + 2*r**4)), P((0, 0, 1)) = r**4/(2*(p**2*q**2 + 2*r**4)), P((0, 0, -1)) = r**4/(2*(p**2*q**2 + 2*r**4))
+A3     the two carried axes are exactly tied: True, at probability p**2*q**2/(2*(p**2*q**2 + 2*r**4)) each
+A3   [(1, 0, 0), (1, 0, 0), (0, 1, 0), (0, 1, 0)] (orthogonal pair): P((1, 0, 0)) = p**2/(2*(p**2 + q**2 + r**2)), P((-1, 0, 0)) = q**2/(2*(p**2 + q**2 + r**2)), P((0, 1, 0)) = p**2/(2*(p**2 + q**2 + r**2)), P((0, -1, 0)) = q**2/(2*(p**2 + q**2 + r**2)), P((0, 0, 1)) = r**2/(2*(p**2 + q**2 + r**2)), P((0, 0, -1)) = r**2/(2*(p**2 + q**2 + r**2))
+A3     the two carried axes are exactly tied: True, at probability p**2/(2*(p**2 + q**2 + r**2)) each
+A3 with three predecessors the patterns are 3, 2-1 and 1-1-1: no two axes can carry two predecessors each,
+A3 so the strict majority of a 2-1 always has the larger weight when p > q, r. For comparison:
+A3   three predecessors [(1, 0, 0), (1, 0, 0), (1, 0, 0)]: P((1, 0, 0)) = p**3/(p**3 + q**3 + 4*r**3), P((-1, 0, 0)) = q**3/(p**3 + q**3 + 4*r**3), P((0, 1, 0)) = r**3/(p**3 + q**3 + 4*r**3), P((0, -1, 0)) = r**3/(p**3 + q**3 + 4*r**3), P((0, 0, 1)) = r**3/(p**3 + q**3 + 4*r**3), P((0, 0, -1)) = r**3/(p**3 + q**3 + 4*r**3)
+A3   three predecessors [(1, 0, 0), (1, 0, 0), (-1, 0, 0)]: P((1, 0, 0)) = p**2*q/(p**2*q + p*q**2 + 4*r**3), P((-1, 0, 0)) = p*q**2/(p**2*q + p*q**2 + 4*r**3), P((0, 1, 0)) = r**3/(p**2*q + p*q**2 + 4*r**3), P((0, -1, 0)) = r**3/(p**2*q + p*q**2 + 4*r**3), P((0, 0, 1)) = r**3/(p**2*q + p*q**2 + 4*r**3), P((0, 0, -1)) = r**3/(p**2*q + p*q**2 + 4*r**3)
+A3   three predecessors [(1, 0, 0), (1, 0, 0), (0, 1, 0)]: P((1, 0, 0)) = p**2/(p**2 + p*r + q**2 + q*r + 2*r**2), P((-1, 0, 0)) = q**2/(p**2 + p*r + q**2 + q*r + 2*r**2), P((0, 1, 0)) = p*r/(p**2 + p*r + q**2 + q*r + 2*r**2), P((0, -1, 0)) = q*r/(p**2 + p*r + q**2 + q*r + 2*r**2), P((0, 0, 1)) = r**2/(p**2 + p*r + q**2 + q*r + 2*r**2), P((0, 0, -1)) = r**2/(p**2 + p*r + q**2 + q*r + 2*r**2)
+A3   three predecessors [(1, 0, 0), (0, 1, 0), (0, 0, 1)]: P((1, 0, 0)) = p/(3*(p + q)), P((-1, 0, 0)) = q/(3*(p + q)), P((0, 1, 0)) = p/(3*(p + q)), P((0, -1, 0)) = q/(3*(p + q)), P((0, 0, 1)) = p/(3*(p + q)), P((0, 0, -1)) = q/(3*(p + q))
+N1 brute-force check: for three random rational (p,q,r), every orbit's law recomputed by direct
+N1 enumeration of the six numerators, compared with the symbolic formula evaluated there
+N1 (p,q,r) = (7, 26, 5/9): worst deviation over all 10 orbits 0; leaving a unanimous neighbourhood 2998222036/3013974997 equals (q^4+4r^4)/(p^4+q^4+4r^4): True
+N1 (p,q,r) = (7/6, 38, 33/4): worst deviation over all 10 orbits 0; leaving a unanimous neighbourhood 10905404625/10905414229 equals (q^4+4r^4)/(p^4+q^4+4r^4): True
+N1 (p,q,r) = (3/2, 4, 5/4): worst deviation over all 10 orbits 0; leaving a unanimous neighbourhood 17009/17333 equals (q^4+4r^4)/(p^4+q^4+4r^4): True
+N1 all 180 probabilities agreed exactly with the symbolic laws: True
+SUMMARY: with four predecessors the 126 multisets fall into 10 cube-group orbits whose laws are given exactly above; leaving a unanimous neighbourhood has probability (q^4+4r^4)/(p^4+q^4+4r^4) as stated (1.306e-06 at (84,1,2), 2.160e-13 at (4165,1,2)), following the minority of a 3-1 neighbourhood has p*q**3/(p**3*q + p*q**3 + 4*r**4) when the odd one is opposite and p*r**2/(p**3 + p*r**2 + q**3 + q*r**2 + 2*r**3) when it is orthogonal, and the 2-2 patterns tie their two carried axes exactly - a case three predecessors cannot produce; every formula reproduced by brute force at three random rational weights; 4s

@@ -1,0 +1,41 @@
+{
+ "task": "X:sphere-kernel-grid",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/sphere_kernel.py 24 256 6000 2000 2",
+ "seed": 99477,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c058f20",
+ "started_utc": "20260920T101757Z",
+ "elapsed_s": 54.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "shells": [
+   "0.9484",
+   "0.9716",
+   "0.9633",
+   "0.9647",
+   "0.9657",
+   "0.9661",
+   "0.9658"
+  ],
+  "mabs": "0.9370"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "the normalization c(beta, |k|) of block 35 on a grid: --extra 'beta L T T0 seed' with L in {128, 256, 512}, beta in {3, 4, 6, 8, 12, 16, 24, 48}, T0 >= 2000, T - T0 >= 2000. Report the shell ratios; the questions are whether c depends on L at fixed beta (block 35: 0.83 at |k| < 0.3 for L = 256, beta = 6) and how c(beta) approaches 1. GRID UNITS: the 48 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "0bf4e06d319dffd385cab03f12a9402776e1e9e490256df6b65b031d103a36f6",
+ "stdout_tail": "93/0.998 ph +0.27/+0.26; s=64: 0.986/0.996 ph +0.54/+0.52;\n   k=2pi(2,2)/L:  s=1: 0.999/1.000 ph +0.03/+0.03; s=2: 0.999/0.999 ph +0.07/+0.07; s=4: 0.997/0.999 ph +0.13/+0.13; s=8: 0.994/0.998 ph +0.26/+0.26; s=16: 0.988/0.996 ph +0.52/+0.52; s=32: 0.978/0.991 ph +1.04/+1.05; s=64: 0.956/0.983 ph +2.08/+2.09;\n   k=2pi(4,1)/L:  s=1: 0.999/0.999 ph +0.04/+0.04; s=2: 0.997/0.998 ph +0.08/+0.08; s=4: 0.995/0.997 ph +0.16/+0.16; s=8: 0.989/0.993 ph +0.33/+0.33; s=16: 0.978/0.986 ph +0.65/+0.65; s=32: 0.956/0.973 ph +1.31/+1.31; s=64: 0.914/0.946 ph +2.61/+2.62;\n   k=2pi(8,8)/L:  s=1: 0.994/0.996 ph +0.13/+0.13; s=2: 0.988/0.991 ph +0.26/+0.26; s=4: 0.976/0.983 ph +0.52/+0.52; s=8: 0.953/0.966 ph +1.05/+1.05; s=16: 0.907/0.934 ph +2.10/+2.10; s=32: 0.830/0.872 ph -2.08/-2.09; s=64: 0.694/0.760 ph +2.12/+2.10;\nstructure function D(r) = 2 (C0(0) - C0(r)) along e1, e2, e1+e2 at r = 1, 2, 4, 8, 16, 32 (nonlinear law); linear: 2 sigma^2 (1/L^2) sum_k (1 - cos k.r)/(1-u)\n   r=(1, 0): nonlinear 0.0397  linear 0.0411  ratio 0.966\n   r=(2, 0): nonlinear 0.0549  linear 0.0569  ratio 0.965\n   r=(4, 0): nonlinear 0.0700  linear 0.0726  ratio 0.964\n   r=(8, 0): nonlinear 0.0849  linear 0.0883  ratio 0.962\n   r=(16, 0): nonlinear 0.0993  linear 0.1039  ratio 0.956\n   r=(32, 0): nonlinear 0.1107  linear 0.1191  ratio 0.930\n   r=(1, 1): nonlinear 0.0519  linear 0.0537  ratio 0.966\n   r=(4, 4): nonlinear 0.0821  linear 0.0850  ratio 0.965\n   r=(16, 16): nonlinear 0.1108  linear 0.1160  ratio 0.955\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260920T101851Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

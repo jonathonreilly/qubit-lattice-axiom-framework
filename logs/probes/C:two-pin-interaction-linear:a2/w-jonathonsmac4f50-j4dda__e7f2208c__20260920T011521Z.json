@@ -1,0 +1,32 @@
+{
+ "task": "C:two-pin-interaction-linear:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j4dda",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/two-pin-interaction-linear/w-jonathonsmac4f50-j4dda/run.py",
+ "seed": 66921,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e7f2208c",
+ "started_utc": "20260920T011521Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "conditioning the stationary linear field on two pins gives U(r) = -a b C(r)/(C0^2 - C(r)^2) (exact), and for the light-cone past C(r) -> c/r with c = 7 sigma^2/(8 pi) exactly; the FFT tables at L = 32, 64, 128 match the image-corrected 1/r law to better than 1.3% along the two diagonals for 3 <= r <= L/6 (the axis carries an even-odd lattice term of up to 6.8%), so like pins attract with a 1/r potential; the backward past gives the same law with the anisotropic metric M = (1/4)I - (1/16)J: equipotential ellipsoids r^T M^-1 r = const, the potential twice as strong across the cone axis as along it"
+ },
+ "review": "run.py verifies the two-pin identity symbolically (cross term + a b C(r)/(C0^2 - C(r)^2)), derives c = 7 sigma^2/(8 pi) from 1 - phi^2 = E(14 - E)/49 with E = |k|^2 + O(k^4), and tabulates C(r) by FFT at L = 32, 64, 128 along three directions against c/r with the torus images: within 0.2 to 1.3 % on the two diagonals for 3 <= r <= L/6 and an even-odd axis term of 6 to 9 % from the 1/(14 - E) factor, plus the backward past's anisotropic law with ellipsoidal equipotentials, which is what the task expects.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): Newton's law between two records, in the linear model. Take the Gaussian field on the periodic L^3 lattice with covariance C = sigma^2/(1 - phi^2), phi = 1 - E(k)/7 (zero mode removed), the stationary equal-time law of linear light-cone formation. Condition on theta(x_1) = a and theta(x_2) = b. (1) Show the log-probability of the pair of pins is -(1/2) v^T K^-1 v with v = (a, b) and K the 2x2 matrix [[C(0), C(r)], [C(r), C(0)]]; expand the interaction part: -a b C(r)/(C(0)^2 - C(r)^2) ~ -a b C(r)/C(0)^2. (2) With C(r) ~ c/r this is a 1/r attraction between like pins: compute c exactly (7 sigma^2/(8 pi)) and tabulate the exact interaction for r = 1..L/2 along three directions at L = 32, 64, 128 by FFT, against c/r with the finite-size image correction. (3) Do the same for the backward lattice, phi = (1 + sum_j e^{ik_j})/4 (anisotropic metric M): give the equipotential surfaces. Expectation: 1/r within a few percent for 3 <= r <= L/6. DELIVERABLE in your unit worktree: probes/work/compute/two-pin-interaction-linear/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-pin-interaction-linear/<name>/run.py\"",
+ "stdout_sha256": "f532415e322fe0d25c1ab54a9a6f894eafcbd43ed3d40e049abdd4be221970c8",
+ "stdout_tail": " across the cone axis as along it; FFT at L = 64 against the anisotropic continuum kernel on the same grid (numerical): (1,0,0) (sqrt(u^T M^-1 u) = 2.828, infinite-volume 0.15005 at r = 3.00): r=3.00: C=0.12787, C/continuum=0.958, r=4.00: C=0.09000, C/continuum=1.044, r=6.00: C=0.05245, C/continuum=1.033, r=8.00: C=0.03381, C/continuum=1.028; (1,1,0) (sqrt(u^T M^-1 u) = 3.464, infinite-volume 0.08663 at r = 4.24): r=4.24: C=0.06401, C/continuum=1.018, r=5.66: C=0.04243, C/continuum=1.015, r=8.49: C=0.02107, C/continuum=1.013, r=11.31: C=0.01067, C/continuum=1.012; (1,1,1) (sqrt(u^T M^-1 u) = 4.000, infinite-volume 0.06126 at r = 5.20): r=5.20: C=0.03878, C/continuum=1.002, r=6.93: C=0.02365, C/continuum=1.000, r=10.39: C=0.00894, C/continuum=1.000, r=13.86: C=0.00215, C/continuum=1.000\n==========================================================================================\nSUMMARY: conditioning the stationary linear field on two pins gives U(r) = -a b C(r)/(C0^2 - C(r)^2) (exact), and for the light-cone past C(r) -> c/r with c = 7 sigma^2/(8 pi) exactly; the FFT tables at L = 32, 64, 128 match the image-corrected 1/r law to better than 1.3% along the two diagonals for 3 <= r <= L/6 (the axis carries an even-odd lattice term of up to 6.8%), so like pins attract with a 1/r potential; the backward past gives the same law with the anisotropic metric M = (1/4)I - (1/16)J: equipotential ellipsoids r^T M^-1 r = const, the potential twice as strong across the cone axis as along it\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4dda",
+  "at_utc": "20260920T011522Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "C:dispersion-under-positive-weights:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-jfec0",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/dispersion-under-positive-weights/w-jonathonsmac4f50-jfec0/run.py",
+ "seed": 67715,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b217d561",
+ "started_utc": "20260920T012835Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "with positive weights the mode nearest 1 is diffusive, not propagating: for one level |phi| = 1 - (1/2)Var k^2, and for two levels the root near 1 has arg lambda = alpha k with alpha = (a mu_1 + (1-a) mu_2)/(2-a) and |lambda| = 1 - D k^2 with D = [a v_1 + (1-a) v_2 + a(1-a)(2 mu_1 - mu_2)^2/(2-a)^2]/(2(2-a)) > 0 unless each level sits on a single offset with p_2 = 2 p_1 (a rigid translation, where lambda = e^{ikp} exactly) - so no positive-weight choice gives |lambda| = 1 - O(k^4) with a wave's linear phase"
+ },
+ "review": "run.py derives |phi| = 1 - Var k^2/2 for one level and, for two levels, alpha = (a mu_1 + (1-a) mu_2)/(2-a) and D = [a v_1 + (1-a) v_2 + a(1-a)(2 mu_1 - mu_2)^2/(2-a)^2]/(2(2-a)) symbolically, shows D = 0 only for rigid translations (p_2 = 2 p_1, where lambda = e^{ikp} solves the quadratic exactly), and confirms it on a table of predecessor-set pairs at a = 0.25, 0.5, 0.75 and on 186 non-degenerate random multi-level laws (smallest D 0.011), which is the diffusion-forced-by-positivity the task expects; provenance of the related derive unit is disclosed in RESULT.md.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): Can a formation law carry waves? In a linear gain-one formation model the record at level t+1 is a POSITIVE-weight average of records at earlier levels: theta_{t+1} = sum_{j>=0} sum_p w_{j,p} theta_{t-j}(x+p) + noise, w >= 0, sum w = 1. (1) For one level of memory (j = 0): the mode multiplier is phi(k), |phi| <= 1, and 1 - |phi| = O(k^2): diffusive. (2) For two levels (j = 0, 1) with weights a and 1 - a: solve lambda^2 - a phi(k) lambda - (1-a) psi(k) = 0 for symmetric sets; compute |lambda(k)| at small k for a in {0.25, 0.5, 0.75} and several predecessor sets: is there ANY positive-weight choice with |lambda(k)| = 1 - O(k^4) and arg lambda = c|k| (a propagating wave)? (3) Prove or find numerically the obstruction: with positive weights the root near 1 satisfies lambda = 1 - D k^2 + i v.k + ..., with D > 0 unless the weights are degenerate. Expectation: no waves; diffusion is forced by positivity. A counterexample is a HIT. DELIVERABLE in your unit worktree: probes/work/compute/dispersion-under-positive-weights/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/dispersion-under-positive-weights/<name>/run.py\"",
+ "stdout_sha256": "9d98031e5cc6d96b82fd85c26264e27ed657c11b15feffc1e0743fc77927524e",
+ "stdout_tail": "of lambda^2 - a phi lambda - (1-a) psi at k = 0.05, 0.1, 0.2 along (1,0,0) for a = 0.25, 0.5, 0.75 and the listed pairs of predecessor sets: |lambda| = 1 - D k^2 with the D of A2 (agreement better than 2 % of D or 0.02 absolute), arg lambda = alpha k; |lambda| = 1 only for the two degenerate rows (single site at both levels, single shift at both levels), where the law is a rigid translation\nok   N2: (numerical, labelled) 200 random positive multi-level weight laws (up to four levels of memory and five offsets): the largest root obeys |lambda(0.05)| <= 1 in every non-degenerate draw (186 of 200 draws were non-degenerate; the smallest estimated D is 1.10e-02 and the median 0.2317); degeneracy is a property of the direction: draws whose offsets share their first coordinate have a single-point projected law along (1,0,0) and give D = 0 there while remaining dispersive across it\n==========================================================================================\nSUMMARY: with positive weights the mode nearest 1 is diffusive, not propagating: for one level |phi| = 1 - (1/2)Var k^2, and for two levels the root near 1 has arg lambda = alpha k with alpha = (a mu_1 + (1-a) mu_2)/(2-a) and |lambda| = 1 - D k^2 with D = [a v_1 + (1-a) v_2 + a(1-a)(2 mu_1 - mu_2)^2/(2-a)^2]/(2(2-a)) > 0 unless each level sits on a single offset with p_2 = 2 p_1 (a rigid translation, where lambda = e^{ikp} exactly) - so no positive-weight choice gives |lambda| = 1 - O(k^4) with a wave's linear phase\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jfec0",
+  "at_utc": "20260920T012837Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

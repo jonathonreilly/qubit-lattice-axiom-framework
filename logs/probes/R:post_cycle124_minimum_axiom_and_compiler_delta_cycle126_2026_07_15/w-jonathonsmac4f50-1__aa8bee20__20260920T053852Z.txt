@@ -1,0 +1,67 @@
+
+===============================================================================
+A - Unchanged foundation and primitive registry
+===============================================================================
+FAIL A foundation hash MINIMAL_AXIOMS_2026-06-29.md :: 93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753
+FAIL A foundation hash AXIOM_MINIMALITY_POLICY.md :: acf7c2647c392f426369bda8a29614f7bb768eae48e966fe02795e91e27bbb54
+FAIL A foundation hash axiom_premise_nodes.json :: 615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37
+PASS A foundation hash SCALE_REFERENCE_PRIMITIVE_NOTE.md :: e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292
+PASS A foundation hash KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md :: 5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b
+PASS A foundation hash REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md :: 755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563
+PASS A registry contains exactly the four canonical nodes :: ['minimal_axioms', 'scale_reference_primitive', 'kinetic_isotropy_primitive', 'realized_state_primitive']
+PASS A Record still states formation, one lock, permanence, and readout
+PASS A Admissibility still carries one fixed covariant nearest-neighbour rule
+
+===============================================================================
+B - Formed source, downstream read, and literal common port
+===============================================================================
+PASS B Cycle118 is a zero-new-row two-position reader
+PASS B no read-status carrier precedes its source record :: ((50, 52, 54, 57), (50, 52, 54, 57))
+PASS B Cycle120 table is 14 canonical / 318 raw and single-valued
+PASS B Cycle120 exhausts to two exact 92-write selector/value terminals
+PASS B one literal port carries exactly selector-zero/H0 or selector-one/H1 :: Counter({('R_C00', 'H0'): 1, ('R_C01', 'H1'): 1})
+
+===============================================================================
+C - Literal censuses for every campaign-table row through Cycle119
+===============================================================================
+PASS C Cycle112 is 73,656 states / 430,754 edges / one 69-write terminal
+PASS C Cycle113 is 77,336-state positive plus 22-state typed alternate
+PASS C Cycle114 is 17,880 states / 88,642 edges / two terminals
+PASS C Cycle115 is 74,264 states / 433,682 edges / one 71-write terminal
+PASS C Cycle117 is 76,056 states / 441,682 edges / one 82-write terminal
+PASS C Cycle119 is 228,296 states / 1,477,702 edges / one 85-write terminal
+
+===============================================================================
+D - Self-caged writer and next autonomous role port
+===============================================================================
+PASS D Cycle121 writes literal R_B00=10010000
+PASS D Cycle121 completion follows all eight physical data records
+PASS D Cycle124 adapter is two canonical / 48 raw rows
+PASS D Cycle124 reaches one complete R_A01/R_B01 terminal
+PASS D next port is causally downstream of allocator and completed R_B00
+PASS D Cycle125 pins the direct-reuse failure without a broad no-go
+
+===============================================================================
+E - Exact residual and constitutional firewall
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py", line 433, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py", line 424, in main
+    scope_contract()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py", line 336, in scope_contract
+    c121_note = normalized(c124.c121.NOTE)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py", line 126, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/R_B00_PORT_TO_ZERO_SOURCE_WORD_COMPLETION_CYCLE121_NOTE_2026-07-15.md'

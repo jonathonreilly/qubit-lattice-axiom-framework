@@ -1,0 +1,38 @@
+{
+ "task": "R:preterminal_context_quantum_process_cycle189_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "preterminal",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/preterminal_context_quantum_process_cycle189_2026_07_16.py",
+ "seed": 83249,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aa8bee20",
+ "started_utc": "20260920T054729Z",
+ "elapsed_s": 0.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "42fc01529bac2e136f505afc0bbac081f6507539b9be819eb48e3ccbd2faaa01",
+ "stdout_tail": "FROZEN SEAM\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/preterminal_context_quantum_process_cycle189_2026_07_16.py\", line 1077, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/preterminal_context_quantum_process_cycle189_2026_07_16.py\", line 646, in main\n    observed_hashes = {path: sha256(path) for path in FROZEN}\n                             ^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/preterminal_context_quantum_process_cycle189_2026_07_16.py\", line 61, in sha256\n    return hashlib.sha256(path.read_bytes()).hexdigest()\n                          ^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1019, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/OPERATIONAL_CONTEXT_PROCESS_SEAM_CYCLE181_NOTE_2026-07-16.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T054730Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/OPERATIONAL_CONTEXT_PROCESS_SEAM_CYCLE181_NOTE_2026-07-16.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T054730Z"
+ }
+}

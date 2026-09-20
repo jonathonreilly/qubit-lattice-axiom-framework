@@ -1,0 +1,41 @@
+
+===============================================================================
+A - Sources, exact consumption boundary, and approved primitives
+===============================================================================
+FAIL A cycle111_note exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/POST_CYCLE109_STRICT_COMPILER_CONSTITUTIONAL_DELTA_CYCLE111_NOTE_2026-07-15.md
+PASS A axioms exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS A registry exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/audit/data/axiom_premise_nodes.json
+PASS A scale exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS A kinetic exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS A realized exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+FAIL A cycle105 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/READ_STATUS_TO_GENERATED_RAIL_SPINE_CYCLE105_NOTE_2026-07-15.md
+FAIL A cycle106 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/FIRST_SELF_GROWN_SELECTOR_PAYLOAD_BIT0_CYCLE106_NOTE_2026-07-15.md
+FAIL A cycle107_note exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/STRICT_COMPILER_TOE_LEDGER_CYCLE107_NOTE_2026-07-15.md
+PASS A cycle107_runner exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/strict_compiler_toe_ledger_cycle107_2026_07_15.py
+FAIL A cycle109_note exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/STATUS_GATED_TYPED_PAYLOAD_HANDOFF_CYCLE109_NOTE_2026-07-15.md
+PASS A cycle109_runner exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/status_gated_typed_payload_handoff_cycle109_2026_07_15.py
+FAIL A cycle110_note exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/POST_CYCLE105_CONSTITUTIONAL_MINIMALITY_SMUGGLE_AUDIT_CYCLE110_NOTE_2026-07-15.md
+PASS A cycle110_runner exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle105_constitutional_minimality_smuggle_audit_cycle110_2026_07_15.py
+PASS A registry still has exactly four canonical premise nodes :: ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+PASS A approved primitive paths are unchanged
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle109_strict_compiler_constitutional_delta_cycle111_2026_07_15.py", line 796, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle109_strict_compiler_constitutional_delta_cycle111_2026_07_15.py", line 776, in main
+    source_and_primitive_contract()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle109_strict_compiler_constitutional_delta_cycle111_2026_07_15.py", line 277, in source_and_primitive_contract
+    texts = {key: normalized(path) for key, path in SOURCES.items()}
+                  ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle109_strict_compiler_constitutional_delta_cycle111_2026_07_15.py", line 80, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/READ_STATUS_TO_GENERATED_RAIL_SPINE_CYCLE105_NOTE_2026-07-15.md'

@@ -1,0 +1,40 @@
+
+===============================================================================
+A - Sources, freshness boundary, and approved primitives
+===============================================================================
+FAIL A cycle116_note exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/POST_CYCLE115_ADDRESS_SEMANTICS_AUDIT_CYCLE116_NOTE_2026-07-15.md
+PASS A axioms exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS A registry exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/audit/data/axiom_premise_nodes.json
+PASS A scale exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS A kinetic exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS A realized exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+PASS A cycle92 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/LIVE_EMPTY_CAGED_ROUTER_PATRICIA_CYCLE92_NOTE_2026-07-15.md
+FAIL A cycle95 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/AUX_GATED_CANDIDATE_TRANSPORT_CYCLE95_NOTE_2026-07-15.md
+FAIL A cycle107 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/STRICT_COMPILER_TOE_LEDGER_CYCLE107_NOTE_2026-07-15.md
+FAIL A cycle111 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/POST_CYCLE109_STRICT_COMPILER_CONSTITUTIONAL_DELTA_CYCLE111_NOTE_2026-07-15.md
+FAIL A cycle112 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/EIGHT_BIT_STATUS_COMPLETION_FRONT_CYCLE112_NOTE_2026-07-15.md
+FAIL A cycle114 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/LAWFUL_H0_REFERENCE_FORK_CYCLE114_NOTE_2026-07-15.md
+FAIL A cycle115 exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/FIRST_AUTONOMOUS_SUCCESSOR_ROLE_PORT_CYCLE115_NOTE_2026-07-15.md
+PASS A registry contains only the four canonical premise nodes :: ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+PASS A registered primitive current paths are the consumed source notes
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle115_address_semantics_audit_cycle116_2026_07_15.py", line 571, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle115_address_semantics_audit_cycle116_2026_07_15.py", line 550, in main
+    source_and_primitive_contract()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle115_address_semantics_audit_cycle116_2026_07_15.py", line 177, in source_and_primitive_contract
+    texts = {name: normalized(path) for name, path in SOURCES.items()}
+                   ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/post_cycle115_address_semantics_audit_cycle116_2026_07_15.py", line 84, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/AUX_GATED_CANDIDATE_TRANSPORT_CYCLE95_NOTE_2026-07-15.md'

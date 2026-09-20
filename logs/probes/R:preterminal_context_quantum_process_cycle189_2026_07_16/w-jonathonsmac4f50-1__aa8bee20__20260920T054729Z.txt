@@ -1,0 +1,20 @@
+FROZEN SEAM
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/preterminal_context_quantum_process_cycle189_2026_07_16.py", line 1077, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/preterminal_context_quantum_process_cycle189_2026_07_16.py", line 646, in main
+    observed_hashes = {path: sha256(path) for path in FROZEN}
+                             ^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/preterminal_context_quantum_process_cycle189_2026_07_16.py", line 61, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/OPERATIONAL_CONTEXT_PROCESS_SEAM_CYCLE181_NOTE_2026-07-16.md'

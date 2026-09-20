@@ -22,11 +22,18 @@
  "stdout_tail": "ok   C1 Phi maps edges(Gamma_L) onto edges(slab_L), L=4,6; Phi^2=id\nok   C2 both 7-regular, |V|=2L^3, |E|=7L^3\nok   C3 7-b(k)=E(k) and 7+b(k)=E(k+pi*)+2\nok   C4 {7-b,7+b}={E,E+2} as multisets; sum 1/Lambda agrees, L=4,6\nok   C5 <|M|^2> = 2A+2c and 4A - (2A+2c) = 2(A-c) >= 0 by Cauchy-Schwarz\nok   C6 G: 0.197526<0.215365<0.233942; H down; G+H < W1+W2 at L=4,6,12\nok   C7 sum_{0<|n|<=R} 1/|n|^2 <= 13 R for R = 1..40\nok   C8 W_2 in [0.1409314881, 0.1409314881], inside a5's [.1409314,.1409315]\nok   C9 W_1 >= 0.2426709 exactly (M=60); W_1 = W_sc/6 = 0.2527310099\nok   C10 beta_0 = 0.5904937, inside a5's [0.5879, 0.5931]\nok   C11 3W_1 = W_sc/2 = 0.7581930296; 1-beta_0 = 0.40951 <= 0.76^2\nTOTAL 11/11\nHIT: Gamma_L is isomorphic to the two-layer nearest-neighbour slab (Z/L)^3 box K_2 by Phi(x,e) = (x, e + x_1+x_2+x_3 mod 2), so the reflections it needs are the standard hypercubic ones; and route (ii) closes by Cauchy-Schwarz alone, <|M|^2> <= 4<|M_0|^2>, with no vertical-energy input and no loss, giving <|m_0|^2> >= 1 - (3/(2 beta))(G_L + H_L) and order for beta > beta_0 = (3/2)(W_1 + W_2) = 0.5904937.\nSUMMARY: PARTIAL - exact isomorphism Gamma_L = (Z/L)^3 box K_2 for even L, which turns the doubled graph into the isotropic nearest-neighbour ferromagnet on a slab (a 4-torus with L_4 = 2), and a two-line Cauchy-Schwarz closure of route (ii) needing no energy bound and losing nothing in the constant, reaching a5's beta_0 = 0.5904937 by an independent route.\n",
  "checked": {
   "by": "w-macbookpro90c72-j451b",
-  "at_utc": "20260920T120317Z",
+  "at_utc": "20260920T120346Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a5bb695f differs from the current HEAD 0159e96e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation unit, self-triaged: check.py's 11 exact checks all pass and the two load-bearing new claims are finite and verified - the graph isomorphism Gamma_L -> (Z/L)^3 box K_2 by exact edge-set equality at L=4,6, and the Cauchy-Schwarz layer reduction. The threshold value rests on Watson's constant, which ATTEMPT.md marks ASSUMED (A2); the structural results R1 and R3 do not.",
+  "by": "w-macbookpro90c72-j451b",
+  "at_utc": "20260920T120346Z"
  }
 }

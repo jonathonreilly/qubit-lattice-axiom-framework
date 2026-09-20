@@ -22,11 +22,18 @@
  "stdout_tail": "D1 (p,1,2) nums p^2(p-1)(p+33), p^2(2p^2+11p-33), p^2(21-p) ok\nD2 d1<=max(d2,d3) on (p,1,2) p<400; (1,2,1) d1=12/13>9/10: not attractive ok\nM1 f(n,U) nondecreasing in n for all U iff e1<=e2 ok\nG1 [r^R](e2 r+2e2+2w)^3R = C(3R,R) e2^R (2e2+2w)^2R, R=1..6 ok\nG2 (27/4)^R/(3R+1) <= C(3R,R) <= (27/4)^R, R<=200 ok\nG3 27e2<1 first at p=58: d3(57)=125/3374, d3(58)=127/3491 ok\nP1 w<.9726/.7757/.4523/.2513/.2093/.1136 at p=58/40/20/14/13/11 (tight to 1e-4) ok\nF1 w=e2 -> 108e2^3<1 iff p>=14: 108*45^3>214^3, 108*23^3<121^3 ok\nF2 w=e1 first holds at p=10, below the located (10.5,11): refuted ok\nC1 cone P_T exact T<=4 at p=11/14/58/84: P_1=e1, P_2 closed form, increasing ok\nC2 coincident pole: refined 48 e1 e2^3 < true 3 e1 e2 iff p>=12 (p^2-3p-96>0) ok\nC3 T=4 cone: P(z=1|c=1) >= e2 > P(z=1) at p=13/14/58/84 ok\nTOTAL 12 checks, 12 ok, 0 fail\nSUMMARY: ROUTE FAILS AT S3 (the prices do not multiply: the uncharged predecessor's witness shares the pole's predecessor c, so BK is denied and FKG runs the wrong way); PARTIAL: the exact criterion 27 e2 (e2+w)^2 < 1 for the refinement sum, its price sheet, the forced floor w >= e2 (ceiling p >= 14), and e1 <= e2 <=> monotonicity of eta'.\nHIT: on (p,1,2) block 30's T1(a) is exactly attractiveness of eta'; charging e2 per amplification and w per deterministic move gives 27 e2 (e2+w)^2 < 1 (w=1 recovers p>=58); the shared predecessor forces w >= e2, so this lever stops at 108 e2^3 < 1, p >= 14, and the bootstrap w = e1 is refuted.\n",
  "checked": {
   "by": "w-macbookpro90c72-jaf39",
-  "at_utc": "20260920T125233Z",
+  "at_utc": "20260920T125312Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f12f1f12 differs from the current HEAD 0b2705e2 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact-arithmetic derivation result, 12/12 checks. New: block 30's T1(a) on (p,1,2) is exactly attractiveness of the level-time noisy-Toom CA; the refined fork-free criterion 27 eps_2 (eps_2+w)^2 < 1 with exact rational price sheet; the shared-predecessor floor w >= eps_2 capping this lever at p >= 14; refutation of the w = eps_1 bootstrap; and a precise no-go for the price-multiplication step (BK denied, FKG wrong way), plus the coincident-pole non-domination boundary p >= 12.",
+  "by": "w-macbookpro90c72-jaf39",
+  "at_utc": "20260920T125312Z"
  }
 }

@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-long",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 1 48 20000 10000 3",
+ "seed": 97996,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0ad24d85",
+ "started_utc": "20260920T095316Z",
+ "elapsed_s": 357.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.0 L=48 T=20000 plateau_|m|=0.7616 lowk_ratio=1.0220 seconds=358"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Drift check under light-cone formation: twenty thousand levels near the threshold. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 6 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "dc47381f78ed55d7f926d4657c7f4675fe28b21e82e4de89b445ceead43680f3",
+ "stdout_tail": "     18  0.7706  +0.7706\n        27  0.7684  +0.7684\n        41  0.7686  +0.7685\n        62  0.7663  +0.7662\n        94  0.7632  +0.7631\n       141  0.7644  +0.7643\n       214  0.7655  +0.7650\n       323  0.7615  +0.7607\n       488  0.7631  +0.7630\n       737  0.7636  +0.7634\n      1113  0.7610  +0.7609\n      1682  0.7623  +0.7620\n      2541  0.7619  +0.7597\n      3839  0.7606  +0.7600\n      5800  0.7639  +0.7611\n      8762  0.7610  +0.7551\n     13238  0.7628  +0.7198\n     20000  0.7623  +0.7137\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.0220 (n=56)\n   |k| in [0.3,0.6): 1.0298 (n=380)\n   |k| in [0.6,1.0): 1.0350 (n=1426)\n   |k| in [1.0,1.5): 1.0430 (n=4492)\n   |k| in [1.5,2.2): 1.0520 (n=13578)\n   |k| in [2.2,3.2): 1.0586 (n=41209)\n   |k| in [3.2,6.0): 1.0584 (n=49450)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.026550  +0.025766  1.030  +0.02577\n     2  +0.018366  +0.017872  1.028  +0.03574\n     3  +0.009782  +0.009524  1.027  +0.02857\n     4  +0.006927  +0.006742  1.027  +0.02697\n     6  +0.003853  +0.003738  1.031  +0.02243\n     8  +0.002383  +0.002308  1.033  +0.01846\n    12  +0.000942  +0.000933  1.010  +0.01119\n    16  +0.000340  +0.000311  1.092  +0.00498\n    24  +0.000020  -0.000067  -0.304  -0.00162\nSUMMARY: dim=3 menu=sphere beta=1.0 L=48 T=20000 plateau_|m|=0.7616 lowk_ratio=1.0220 seconds=358\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T095914Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

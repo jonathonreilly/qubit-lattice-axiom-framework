@@ -21,15 +21,22 @@
  "stdout_sha256": "12c1e32a1903dd86fb43c256edf766d42954ec6c6a69f7de5020ce6ee441d2ec",
  "stdout_tail": "ay: deflection \u221d sqrt(source_strength) \u2014 M=2 ratio=1.4142 (sqrt 2=1.4142); M=4 ratio=2.0000 (sqrt 4=2.0000)\nC5: 4D distance tail flagged as width-limited in the note\n  [PASS] 4D W\u2208{7,8} tail slopes far from Newtonian 1/b^2 (width-limited honest read) \u2014 max |slope - (-2)| = 1.71\nC6: 3D row companion-cache assertion (same_family_3d_closure.txt)\n  [PASS] logs/runner-cache/same_family_3d_closure.txt names scripts/same_family_3d_closure.py\n  [PASS] logs/runner-cache/same_family_3d_closure.txt SHA-fresh \u2014 sha=6267ce79c157\n  [PASS] logs/runner-cache/same_family_3d_closure.txt exited cleanly\n  [FAIL] 3D Born = 4.20e-15 in cache\n  [PASS] 3D F~M = 1.00 in cache\n  [PASS] 3D distance tail b^(-0.93) in cache\n  [PASS] 3D gravity TOWARD in cache\n  [PASS] 3D decoherence \u2248 50% in cache\nC7: 4D row companion-cache + W=8 frozen log assertion\n  [PASS] logs/runner-cache/four_d_distance_width_probe.txt names scripts/four_d_distance_width_probe.py\n  [PASS] logs/runner-cache/four_d_distance_width_probe.txt SHA-fresh \u2014 sha=3fe3047271cb\n  [PASS] logs/runner-cache/four_d_distance_width_probe.txt exited cleanly\n  [PASS] logs/2026-04-04-4d-wide-distance-law.txt present\n  [PASS] 4D W=7 TOWARD support 6/6 in cache\n  [PASS] 4D W=7 far tail b^(-0.96) in cache\n  [PASS] 4D W=7 peak at z=4 in cache\n  [PASS] 4D W=8 frozen header (W=8 L=15 h=0.5)\n  [PASS] 4D W=8 Born = 4.43e-15\n  [PASS] 4D W=8 F~M = 1.00\n  [PASS] 4D W=8 TOWARD: 6/6\n  [PASS] 4D W=8 early tail b^(-0.54)\n\nPASS=6/7\nSTATUS: STRUCTURAL CERTIFICATE FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260920T082243Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T083640Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha dc7b043a differs from the current HEAD bba10cfc (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'STATUS: STRUCTURAL CERTIFICATE FAIL' vs cache 'STATUS: STRUCTURAL CERTIFICATE PASS'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/dimensional_gravity_table_certificate_runner_2026_05_03.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "STATUS: STRUCTURAL CERTIFICATE FAIL against the cache's PASS, from one gate, and the certified number is not what changed. C6 asserts that the 3D row's quoted values appear verbatim in the SHA-pinned cache of scripts/same_family_3d_closure.py by literal substring: 'Born = 4.20e-15', 'F~M alpha = 1.00', 'b^(-0.93)'. The last two still match. The first does not, because that cache now prints the value under a different label: line 23 reads 'Born |I3|/P = 4.20e-15  [PASS]'. The value 4.20e-15 is identical to the one docs/DIMENSIONAL_GRAVITY_TABLE.md quotes, so the certificate's claim is intact and only its matcher is stale; the label changed when 459f275a56 (review-loop: repair same-family 3D closure runner) regenerated that runner and its cache. Same mechanism as the phrase drift in #8494 and #8497, benign here because the number is unchanged.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T083640Z"
  }
 }

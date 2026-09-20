@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-finite-size",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 1.5 16 3000 1500 1",
+ "seed": 93114,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "de2c4661",
+ "started_utc": "20260920T083154Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.5 L=16 T=3000 plateau_|m|=0.8579 lowk_ratio=0.9966 seconds=2"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Long-range order under light-cone formation: the plateau against the plane's side at fixed coupling, three seeds. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 54 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "28cea62dc451d6b1e26ce13e7aa47598fd4c68c3013d0ac3db7d08ded7c093ed",
+ "stdout_tail": ", |m|, m.e0\n         1  0.9046  +0.9045\n         2  0.8835  +0.8835\n         3  0.8764  +0.8764\n         4  0.8717  +0.8717\n         5  0.8643  +0.8643\n         7  0.8650  +0.8650\n        10  0.8615  +0.8611\n        14  0.8615  +0.8610\n        20  0.8617  +0.8615\n        28  0.8593  +0.8589\n        39  0.8571  +0.8558\n        55  0.8545  +0.8535\n        76  0.8576  +0.8543\n       107  0.8537  +0.8511\n       149  0.8612  +0.8598\n       208  0.8568  +0.8547\n       290  0.8590  +0.8536\n       405  0.8569  +0.8563\n       566  0.8589  +0.8530\n       790  0.8594  +0.8573\n      1103  0.8538  +0.8407\n      1539  0.8610  +0.8380\n      2149  0.8644  +0.7605\n      3000  0.8570  +0.8140\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0.3,0.6): 0.9966 (n=18)\n   |k| in [0.6,1.0): 0.9797 (n=62)\n   |k| in [1.0,1.5): 0.9732 (n=170)\n   |k| in [1.5,2.2): 0.9794 (n=488)\n   |k| in [2.2,3.2): 0.9858 (n=1535)\n   |k| in [3.2,6.0): 0.9838 (n=1822)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.014852  +0.015304  0.970  +0.01530\n     2  +0.009494  +0.009785  0.970  +0.01957\n     3  +0.003932  +0.003974  0.989  +0.01192\n     4  +0.002067  +0.002112  0.979  +0.00845\n     6  +0.000182  +0.000314  0.582  +0.00188\n     8  -0.000244  -0.000127  1.923  -0.00102\nSUMMARY: dim=3 menu=sphere beta=1.5 L=16 T=3000 plateau_|m|=0.8579 lowk_ratio=0.9966 seconds=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T083155Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

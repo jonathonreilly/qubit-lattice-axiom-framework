@@ -19,14 +19,21 @@
  "stdout_sha256": "28d5cb20817ab53d39437dbe7b3dc2c24d88f56a39d398714d4ec626315cbf25",
  "stdout_tail": "eaks coarse translations :: {'fixed_marker_translation_mismatches': 90, 'marked_orbit_family': 'covariant only when the marker transforms as supplied data'}\nPASS deleting the edge-code loop condition admits one Wilson logical and deleting the marked parity factor removes odd matter parity :: {'loop_deletion_extra_logicals': 1, 'unmarked_product_B': 'identity on every alternating cycle', 'marked_product_B': 'Z_h'}\nPASS the lawful periodic domains L=3,4,5 and held-out L=6 retain the two exact but incompatible closures :: {'prefix': 'full Fock and local preparation; closing FSWAP nonlocal', 'edge_gauge': 'bounded B/A; unmarked cycle-even or marked/nonlocal holonomy'}\nPASS beta=-0.3, g=0.37, mass, contact, and seam remain fixed targets rather than spliced physical results :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'actual_coin_A_B_FSWAP_contact': 'not synthesized in one common encoding', 'mass_contact_seam_physical_intertwining': 'not claimed'}\nPASS the fixed stabilizer/Clifford grammar negative is not a universal no-go and schedules are not physical time :: {'prefix_route': 'full rank, bounded prep, nonlocal closing exchange', 'edge_route': 'bounded even algebra, global loop and marked odd reference', 'non_Pauli_measurement_open_boundary': 'live', 'three_dimensions': 'axiomatic input', 'compiler_schedules_are_not_physical_time': True, 'shared_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 14 FAIL 1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260920T083140Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T083444Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha dc7b043a differs from the current HEAD bba10cfc (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (archive: execute the densify-freeze migration, owner GO 2026-09-05) moved it out of docs/ into archive/notes/, and the runner still points at the old path, so its note-exists gate and every gate that reads the note fail. The file is present in HEAD at the archive path and its content is not in question. This is the class measured at 567 of 6435 scripts naming a .md that is now only under archive/notes/ (1376 references, 545 distinct notes).",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T083444Z"
  }
 }

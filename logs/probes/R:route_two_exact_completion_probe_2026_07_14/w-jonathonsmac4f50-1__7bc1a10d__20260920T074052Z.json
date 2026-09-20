@@ -1,0 +1,38 @@
+{
+ "task": "R:route_two_exact_completion_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "route",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/route_two_exact_completion_probe_2026_07_14.py",
+ "seed": 90052,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7bc1a10d",
+ "started_utc": "20260920T074052Z",
+ "elapsed_s": 1.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ef3e137625f821d096df2884fcb8eb225c2a626678a11161bb0f9dde0cb147b6",
+ "stdout_tail": "completions share one bare support graph\nPASS F every full-interface signature is distinct\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/route_two_exact_completion_probe_2026_07_14.py\", line 458, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/route_two_exact_completion_probe_2026_07_14.py\", line 449, in main\n    action_and_interface_controls()\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/route_two_exact_completion_probe_2026_07_14.py\", line 429, in action_and_interface_controls\n    note = NOTE.read_text(encoding=\"utf-8\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T074054Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T074054Z"
+ }
+}

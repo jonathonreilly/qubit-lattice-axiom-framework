@@ -1,0 +1,42 @@
+{
+ "task": "R:scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "scalar",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.py",
+ "seed": 90099,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7bc1a10d",
+ "started_utc": "20260920T074139Z",
+ "elapsed_s": 0.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=29 FAIL=5",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "be645fbcfbec1e0dfafeb3ad4907482aa87655d91f37f25236096b1f76d3b4c4",
+ "stdout_tail": "and its inverse have equal finite range\nPASS L06: the matrix-valued Laurent symbols multiply to identity exactly\nPASS C01: the six-direction one-particle update is a unitary permutation\nPASS C02: the inverse update is exact and finite-range\nPASS C03: the direction update commutes with all unit translations\nPASS C04: the six-direction update is covariant under all 24 proper cubic rotations\nPASS C05: both the tick and inverse have exact graph radius one\nPASS C06: the six dispersive direction bands have zero total determinant winding\nPASS C07: every direction band transports despite zero total determinant winding\nPASS C08: six fermionic modes require local Fock dimension 64 in this explicit escape\nPASS C09: the finite-torus coefficient matrix preserves the CAR anticommutator exactly\nPASS C10: opposite-moving bands have determinant one while remaining dispersive\nFAIL N01: source note exists\nFAIL N02: source contains boundary marker: supplied CAR realization\nFAIL N03: source contains boundary marker: does not classify all qubit QCAs\nFAIL N04: source contains boundary marker: does not derive the physical tick\nFAIL N05: source contains boundary marker: does not establish that an axiom update is necessary\nBOUNDARY: the CAR algebra, linear number-preserving update, finite Laurent range, and cubic action are explicit conditional inputs.\nBOUNDARY: the one-mode theorem is exhaustive only for scalar Gaussian/CAR ticks; interacting and general qubit QCAs remain open.\nTOTAL: PASS=29 FAIL=5\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T074336Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=29 FAIL=5' vs cache 'TOTAL: PASS=34 FAIL=0'"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (archive: execute the densify-freeze migration, owner GO 2026-09-05) moved it out of docs/ into archive/notes/, and the runner still points at the old path, so its note-exists gate and every gate that reads the note fail. The file is present in HEAD at the archive path and its content is not in question. Same class as the three I triaged stale earlier today (gravity_route_c, guarded_three_row_socket_renewal_cycle134, guided_cycle67_bdh_rebind_cycle76).",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T074336Z"
+ }
+}

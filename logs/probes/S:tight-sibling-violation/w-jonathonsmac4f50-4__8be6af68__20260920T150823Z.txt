@@ -1,0 +1,2 @@
+seed 37 5x5x8 from Z_A: start (unrooted, rooted) max cost = (0, 0) at ((3, 3, 3), 0, 0, (7, 7, 1, 0))
+seed 37: done best=(0, 0)

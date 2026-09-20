@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d31_magnitude_exponent_translation_probe_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d31_magnitude_exponent_translation_probe_2026_06_05.py",
+ "seed": 86233,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063713Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2be51b91ca0238d714255e2c539e8218da60d1ba5993afee4f5e32335524dc8e",
+ "stdout_tail": "al factor): got=True want=True\n[PASS] => 8 (spatial) x 2 (chiral) cannot SUPPLY the determinant power 16; the load-bearing 16 = 2^{4/2} x L_t still needs the 4D taste count (P2): got=True want=True\n\n== Block 5: 256 = 4^4 = M_2(C)^{tensor 4}; exponent counts tensor factors ==\n[PASS] dim_C(M_2(C)^{tensor 4}) = 4^4: got=256 want=256\n[PASS] 256 = 16^2 (BZ-corner-pair reading on Z^4): got=256 want=256\n[PASS] 256 = (2^3 x 2)^2 (if 16 were 8x2): got=256 want=256\n[PASS] M_2(C)^{tensor 4} exponent 4 = number of TENSOR FACTORS (a bounded parameter, per M2_TENSOR note), NOT a derived spacetime/corner count: got=True want=True\n[PASS] all 256 readings coincide numerically but the tensor-factor exponent 4 is not derived from d=3+1 by this note (M2_TENSOR carries d=4 as bounded): got=True want=True\n\n== Block 6: verdict witnesses (PARTIAL) ==\n[PASS] WITNESS A: count 4 = 3+1 is native: got=True want=True\n[PASS] WITNESS B: chiral two-fold is derived (retained chirality narrow): got=True want=True\n[PASS] WITNESS C: chiral two-fold genuinely distinct from a 4th corner: got=True want=True\n[PASS] WITNESS D: the load-bearing 16 is the 4D taste x temporal power: got=True want=True\n[PASS] WITNESS E: 8x2_chiral does NOT supply that load-bearing power: got=True want=True\n[PASS] VERDICT = PARTIAL: 3+1 gives the count 4 and a distinct derived chiral two-fold, but the magnitude's load-bearing 16/256 remains the 4D taste count (P2 Wick rotation), NOT 8x2_chiral: got=True want=True\n\nSUMMARY: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063713Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

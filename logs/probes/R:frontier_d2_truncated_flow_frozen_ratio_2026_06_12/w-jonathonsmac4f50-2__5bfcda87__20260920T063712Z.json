@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d2_truncated_flow_frozen_ratio_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d2_truncated_flow_frozen_ratio_2026_06_12.py",
+ "seed": 86232,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063712Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3a56605e595b2f7588fe7dee60edaaa94e4b2751d62103a87737140ed754db8c",
+ "stdout_tail": "ax difference =  1.3757182843246618e-02\n  L=12/L=16 retained-block ratio =  1.0000948407656889e+00; true factor =  1.0100000000000000e+00\n\nV2d c4/diag ratio drift on L=16:\n  true drift pattern: k2 = k3 = k4\n  next-step kept/drop block max norms:\n    after k=2: ||H_kd||_max =  0.0000000000000000e+00\n    after k=3: ||H_kd||_max =  0.0000000000000000e+00\n    after k=4: ||H_kd||_max =  0.0000000000000000e+00\n\nV2e control:\n  identity truncation max difference from exact steps =  0.0000000000000000e+00\n\nPASS: finite-lattice shell probe L=16: d2={4,8} shell components are below L/2\nPASS: finite-lattice shell probe L=12: d2={4,8} shell components are below L/2\nPASS: size probe after 4 checkerboard steps: L=16 retains 16 sites and L=12 retains 9 sites\nPASS: per-step truncation errors: k1 > k2 and k3 = k4 = 0 exactly (the post-step-2 closure makes later drops empty -- fixed-pattern gate)\nPASS: L=16 accumulated retained-block resolvent budget 3.2012460829562564e-02 <= regression ceiling 3.2099999999999997e-02\nPASS: L=12 vs L=16 retained-block budget ratio 1.0000948407656889e+00 is within true factor 1.0100000000000000e+00\nPASS: V2d the truncated flow's c4/diag ratio FREEZES: identical at steps 2,3,4 (equality 1e-12) -- the truncated map reaches a fixed coupling ratio immediately\nPASS: post-step-2 closure: the next checkerboard kept/drop block H_kd is zero at steps 2,3,4\nPASS: identity truncation reproduces fully exact checkerboard steps within 1e-12 (max 0.000e+00)\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063712Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d2_truncated_flow_frozen_ratio_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

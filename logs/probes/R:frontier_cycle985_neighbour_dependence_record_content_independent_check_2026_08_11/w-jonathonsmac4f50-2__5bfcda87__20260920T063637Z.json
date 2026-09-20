@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle985_neighbour_dependence_record_content_independent_check_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle985_neighbour_dependence_record_content_independent_check_2026_08_11.py",
+ "seed": 86197,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063637Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bbd99597c8d3681c8f1aba9e7d5aa3b9a3ea179d340769e6f346c2b24882b2ab",
+ "stdout_tail": "CYCLE985_NEIGHBOUR_DEPENDENCE_RECORD_CONTENT_INDEPENDENT_CHECK\nR0_PRIMARY_AST_AND_PINS PASS\nR1_INDEPENDENT_CONTENT_CENSUS PASS :: classes=[['incoming CNOT', 6, 4, 1, 2], ['perpendicular-control TOF', 12, 2, 2, 4], ['opposite-control TOF', 3, 8, 0, 4]]\nR2_INDEPENDENT_READOUT_DUAL PASS :: outcome=DECLARED_SEPARATOR_EXISTS; pairs=10\nR3_RECEIPT_CACHE_BINDING PASS\nR4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=9/9\nR5_CONTROLS PASS :: source_reads=5<=6; primary_executed=False; agreement_gate=True\nVERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063638Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

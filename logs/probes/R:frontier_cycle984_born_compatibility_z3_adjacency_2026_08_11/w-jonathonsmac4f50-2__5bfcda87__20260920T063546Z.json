@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.py",
+ "seed": 86145,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063546Z",
+ "elapsed_s": 51.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "433060f17eaba367b3fde3410f26cf5dffe098d28ee476de3cf534538a4c6678",
+ "stdout_tail": "ber semantic quotient to its 23 target-local members\nP_INSTANCE_STATUS: explicit_non_axiom_condition; one declared descriptor is treated as one complete substrate program instance; this is an explicit non-axiom condition\nPER_INSTANCE_RESULTS: M1_COUNTING=SURVIVES; witness=none | M2_PER_WORLD_UNIFORM=SURVIVES; witness=none | M3_OCCUPATION_WEIGHTED=SURVIVES; witness=none | M4_FORMATION_LIFETIME=SURVIVES; witness=none | M5_FORMATION_MOMENT=SURVIVES; witness=none\nSURVIVORS/5: 5/5\nDECLARED_TEST_TRANSFER_VERDICT: DECLARED_TEST_TRANSFERS; weighting=none; witness=none\nNONUNIFORM_P=1/4: CNOT: TV=1/2; TOF_PERPENDICULAR_CONTROLS: TV=1/2; TOF_OPPOSITE_CONTROLS: TV=1/2; survivors=5/5\nper_element: checked and executed -- all five finite event laws and every event-bearing world were rebuilt\nper_site: checked and executed -- centre plus all six true-Z3 nearest neighbours were enumerated\nper_mode: checked and not executed -- no Fourier or continuous M_2(C) mode claim is made\nper_block: checked and executed -- all 23 programs, 2944 truth rows, three orbits, and five candidate blocks were checked\nlattice_wide: checked and not executed -- the theorem is one finite radius-one star, not an infinite-lattice realization\nCURRENT_RECORD_BOUNDARY: exact current memo pinned; finite_additivity=false; scalar_I=false; I_empty_zero=false; record_properties_used=[]\nA_REBUILD_ON_Z3 PASS\nB_PER_INSTANCE_TEST PASS\nC_DECLARED_TEST_TRANSFER_VERDICT PASS\nD_INPUT_ROBUSTNESS PASS\nE_CONTROLS PASS\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

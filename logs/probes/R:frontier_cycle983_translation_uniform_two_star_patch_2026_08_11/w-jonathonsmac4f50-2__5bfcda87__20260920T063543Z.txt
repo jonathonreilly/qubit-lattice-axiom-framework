@@ -1,0 +1,12 @@
+CYCLE983_TRANSLATION_UNIFORM_TWO_STAR_PATCH
+A_PATCH_CONSTRUCTION PASS :: patch=P2x_ADJACENT_TWO_CENTRE_CLOSED_STAR_PATCH; targets=2; support=12; overlap=2; instances=46
+B_UNIFORMITY_TEST PASS :: result=translation_uniform_on_every_target_site_of_P2x; sites=[["A",21,[["CNOT",6,[1]],["TOF_OPPOSITE_CONTROLS",3,[0]],["TOF_PERPENDICULAR_CONTROLS",12,[2]]],true],["B",21,[["CNOT",6,[1]],["TOF_OPPOSITE_CONTROLS",3,[0]],["TOF_PERPENDICULAR_CONTROLS",12,[2]]],true]]
+C_OVERLAP_CONSISTENCY PASS :: result=exact_agreement_on_all_shared_sites_and_pairs; shared_sites=2; shared_pairs=1
+D_VERDICT PASS :: verdict=TRANSLATION_UNIFORM_AT_PATCH_SCOPE; infinite_claimed=False; obstruction=null
+E_CONTROLS PASS :: source_reads=1<=6; pins=True; prior_ast_text=False; current_record=True; record_used=False; determinism=True; runtime_lt_1400=True
+per_element: checked and executed -- every descriptor/input case and every witness edge comparison was exhausted at both targets.
+per_site: checked and executed -- both declared target sites were tested; the ten support-only halo sites were not promoted to targets.
+per_mode: checked and executed -- all 24 proper-cubic rotations and all 23 relative program modes were reconstructed.
+per_block: checked and executed -- the two closed stars, their shared sites, and their one shared semantic pair were reconciled.
+lattice_wide: checked and not executed -- no compatible exhaustion or infinite-lattice allocation was supplied.
+TOTAL: PASS=5 FAIL=0

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d2_orbital_susceptibility_sign_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d2_orbital_susceptibility_sign_2026_06_12.py",
+ "seed": 86198,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063638Z",
+ "elapsed_s": 5.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6f74e39f030615679dbd50a6dad49a70311b7790cf151e37a9b6eee134478874",
+ "stdout_tail": "pness sets the floor) :: worst_rel=2.957e-09; Omega(0) q=16 m=0.2 mu=0.0 T=0.2 64=-8.366127598858466e-01 128=-8.366127569291770e-01\nCONTROL: LANDAU-GAUGE ORIGIN SHIFT\nGAUGE q=24 order=128 origin_shift=0.37 Omega0=-1.484641609880391e+00 Omega_shift=-1.484641609880391e+00 diff=0.000e+00\nPASS shifting the Landau-gauge origin leaves Omega(B) invariant to 1e-10 :: diff=0.000e+00\nCONTROL: T=50 HIGH-T SUPPRESSION\nHIGHT m=0.2 T=50.0 mu=0.0 chi24=-3.31169555e-07 chi32=-3.31998224e-07 chi_inf=-3.33063655e-07\nHIGHT m=0.2 T=50.0 mu=0.5 chi24=-3.31136588e-07 chi32=-3.31965050e-07 chi_inf=-3.33030214e-07\nHIGHT m=0.2 T=50.0 mu=1.0 chi24=-3.31037272e-07 chi32=-3.31865526e-07 chi_inf=-3.32930424e-07\nHIGHT m=0.2 T=50.0 mu=1.5 chi24=-3.30871815e-07 chi32=-3.31699654e-07 chi_inf=-3.32764019e-07\nHIGHT m=0.2 T=50.0 mu=2.0 chi24=-3.30640424e-07 chi32=-3.31467434e-07 chi_inf=-3.32530732e-07\nHIGHT m=0.5 T=50.0 mu=0.0 chi24=-3.31163957e-07 chi32=-3.31992326e-07 chi_inf=-3.33057372e-07\nHIGHT m=0.5 T=50.0 mu=0.5 chi24=-3.31130990e-07 chi32=-3.31959152e-07 chi_inf=-3.33023931e-07\nHIGHT m=0.5 T=50.0 mu=1.0 chi24=-3.31031467e-07 chi32=-3.31859629e-07 chi_inf=-3.32924408e-07\nHIGHT m=0.5 T=50.0 mu=1.5 chi24=-3.30866217e-07 chi32=-3.31694494e-07 chi_inf=-3.32759421e-07\nHIGHT m=0.5 T=50.0 mu=2.0 chi24=-3.30635033e-07 chi32=-3.31461536e-07 chi_inf=-3.32524183e-07\nPASS T=50 kills the plaquette-field susceptibility on the sampled mu,m grid :: max|chi_T50|=3.331e-07, max|chi_table|=4.020e-02\nTOTAL: PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063643Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d2_orbital_susceptibility_sign_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

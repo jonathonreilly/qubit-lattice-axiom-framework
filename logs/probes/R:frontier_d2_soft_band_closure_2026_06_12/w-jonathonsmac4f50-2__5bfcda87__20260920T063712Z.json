@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d2_soft_band_closure_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d2_soft_band_closure_2026_06_12.py",
+ "seed": 86232,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063712Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "25fd4c735ae319738955bd9b860f5fa61608c1d380b2305d1d77730e128fe00a",
+ "stdout_tail": ":max=4.434972e-01:n=768, d2=226:max=2.496301e-01:n=896, d2=256:max=2.496301e-01:n=256, d2=274:max=2.496301e-01:n=128\n  soft step 3 generated tail: d2=10:max=4.440747e-01:n=512, d2=18:max=4.440747e-01:n=128, d2=26:max=4.440747e-01:n=384, d2=34:max=4.440747e-01:n=128, d2=50:max=2.509164e-01:n=384, d2=64:max=2.509164e-01:n=256, d2=82:max=2.509164e-01:n=384, d2=58:max=2.509164e-01:n=128\n  identity budget: 0.000000000000e+00\nPASS: wraparound probe L=16: soft-band vectors do not alias\nPASS: size probe L=16: checkerboard charts stay balanced through 3 steps\nPASS: wraparound probe L=32: soft-band vectors do not alias\nPASS: size probe L=32: checkerboard charts stay balanced through 3 steps\nPASS: U2a parity lemma verified (hard band): even-d2 shells preserve checkerboard color (dx^2+dy^2 = dx+dy mod 2) so truncated H_kd = 0 by algebra, L=16/32\nPASS: U2a parity lemma verified (soft band {4,8,16,20}): even-d2 truncation forces H_kd = 0 by the same algebra, L=16/32\nPASS: U2b fixed-instance ordering at L=32: soft budget < hard budget (no generic claim; ties exist at some larger compatible L per the panel scan)\nPASS: U2b fixed-instance ordering at L=16: soft budget < hard budget\nPASS: U2c hard L-scaling: exactly one measured ordering is selected\nPASS: U2c hard L-scaling: L=16 budget < L=32 budget\nPASS: U2c soft L-scaling: exactly one measured ordering is selected\nPASS: U2c soft L-scaling: L=16 budget < L=32 budget\nPASS: U2d identity truncation reproduces exact at L=32\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063712Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+CYCLE979_CLASS_COEXISTENCE_CONDITIONAL_WEIGHT_TEST
+A_COEXISTENCE PASS :: programs=155; patterns={"CNOT":6,"NONE":134,"TOF_OPPOSITE_CONTROLS":3,"TOF_PERPENDICULAR_CONTROLS":12}; multi_class=0; proper_cubic=True; per_program_digest=4bdb22953055bd4bf1e4e094a4138aa04f63c6e6561e9dbf99d7d12898969771
+B_CONDITIONAL_REQUIREMENT PASS :: conditional=PER_INSTANCE; premise=P_instance(non-axiom); axiom_implication=NOT_DERIVED; cross_program_mismatch=True
+C_CONDITIONAL_WEIGHT_TEST PASS :: survivors/5=5/5; premise=P_instance(non-axiom); born_selection=NOT_ADVANCED_BY_CONDITIONAL_TEST; neighbour_variation=True; proper_cubic=True; exclusions=[]
+D_INPUT_SCOPE PASS :: depends_on_fixed_x=false; p_zero=1/4; survivors/5=5/5; TV_by_class={"CNOT":"1/2","TOF_OPPOSITE_CONTROLS":"1/2","TOF_PERPENDICULAR_CONTROLS":"1/2"}
+E_CONTROLS PASS :: source_reads=1<=6; pins=True; determinism=True; active_corruptions=True; runtime_s=49.923<1400; stdout_bytes=1641<6000
+per_element: checked and executed -- each of 92,260 event atoms across all five finite weight vectors was included in the normalization and marginal tests.
+per_site: checked and executed -- the centre readout was evaluated under all six neighbour positions, all spectator contexts, and all declared operand placements.
+per_mode: checked and not executed -- basis states only; no continuous M_2(C) modes.
+per_block: checked and executed -- all 155 semantic-quotient programs and all three neighbour-sensitive class blocks were exhausted.
+lattice_wide: checked and not executed -- proper-cubic orbit closure was checked on the radius-one star; no infinite embedding was executed.
+TOTAL: PASS=5 FAIL=0

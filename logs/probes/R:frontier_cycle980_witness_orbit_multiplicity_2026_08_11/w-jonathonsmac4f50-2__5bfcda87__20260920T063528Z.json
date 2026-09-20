@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle980_witness_orbit_multiplicity_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py",
+ "seed": 86128,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063528Z",
+ "elapsed_s": 2.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5aeea61227e6022efabc8706253aa4f6ae6883e3b13243164e68798c4d84334f",
+ "stdout_tail": "\nB_INVARIANT_SEPARATOR PASS :: J=norm2(sum_controls); values=[[\"CNOT\",[{\"control_arity\":1,\"control_sum_norm_squared\":1,\"off_diagonal_control_gram\":[]}]],[\"TOF_PERPENDICULAR_CONTROLS\",[{\"control_arity\":2,\"control_sum_norm_squared\":2,\"off_diagonal_control_gram\":[0]}]],[\"TOF_OPPOSITE_CONTROLS\",[{\"control_arity\":2,\"control_sum_norm_squared\":0,\"off_diagonal_control_gram\":[-1]}]]]; constant=True; distinct=True\nC_ALPHABET_SENSITIVITY PASS :: alphabet_to_classes={\"CNOT\":1,\"CNOT+TOF\":3,\"I_ONLY\":0,\"TOF\":2,\"X\":0,\"X+CNOT\":1,\"X+CNOT+TOF\":3,\"X+TOF\":2}\nD_CONTROLS PASS :: source_reads=1<=6; sha_pins=True; blocklist_text_ast=True; record_current=True; semantic_quotient=True; determinism=True; runtime_s=1.054<1400\nper_element: checked and executed -- all 155 pairwise-distinct semantic-quotient descriptors and all 19,840 descriptor/input/condition rows were evaluated.\nper_site: checked and executed -- the centre and each of its six radius-one neighbour coordinates were included in every edge-dependence and transport check.\nper_mode: checked and not executed -- this Boolean basis theorem does not test Fourier, momentum, or continuous M_2(C) modes.\nper_block: checked and executed -- all eight subsets of the declared X/CNOT/TOF menu and all three derived witness orbits were exhausted.\nlattice_wide: checked and not executed -- translation cancellation was proved on recentered descriptors and proper-cubic closure on the radius-one star; no infinite lattice state was enumerated.\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063531Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

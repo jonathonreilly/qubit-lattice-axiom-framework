@@ -1,0 +1,6 @@
+CYCLE985_NEIGHBOUR_DEPENDENCE_RECORD_CONTENT
+A_LOCKED_CONTENT_CENSUS PASS :: classes=[["incoming CNOT",6,1,2],["perpendicular-control TOF",12,2,4],["opposite-control TOF",3,0,4]]; witnesses=21; separated_pairs=10
+B_READOUT_VISIBILITY PASS :: outcome=DECLARED_SEPARATOR_EXISTS; readout=I_one; visible=10/10
+C_SCOPE PASS :: single_site=True; full_mosaic_claimed=False; selected_readout_claimed=False
+D_CONTROLS PASS :: source_reads=1<=6; pins=True; deterministic=True; agreement_gate=True; record_no_additivity=True
+TOTAL: PASS=4 FAIL=0

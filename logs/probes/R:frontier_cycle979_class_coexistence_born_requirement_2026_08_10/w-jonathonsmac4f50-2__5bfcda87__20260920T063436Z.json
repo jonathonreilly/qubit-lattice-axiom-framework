@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle979_class_coexistence_born_requirement_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py",
+ "seed": 86076,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063436Z",
+ "elapsed_s": 52.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "62907f5de8f4370d792a24f4739c42af537ff022a15c7f703768b42aafbf2622",
+ "stdout_tail": "3,\"TOF_PERPENDICULAR_CONTROLS\":12}; multi_class=0; proper_cubic=True; per_program_digest=4bdb22953055bd4bf1e4e094a4138aa04f63c6e6561e9dbf99d7d12898969771\nB_CONDITIONAL_REQUIREMENT PASS :: conditional=PER_INSTANCE; premise=P_instance(non-axiom); axiom_implication=NOT_DERIVED; cross_program_mismatch=True\nC_CONDITIONAL_WEIGHT_TEST PASS :: survivors/5=5/5; premise=P_instance(non-axiom); born_selection=NOT_ADVANCED_BY_CONDITIONAL_TEST; neighbour_variation=True; proper_cubic=True; exclusions=[]\nD_INPUT_SCOPE PASS :: depends_on_fixed_x=false; p_zero=1/4; survivors/5=5/5; TV_by_class={\"CNOT\":\"1/2\",\"TOF_OPPOSITE_CONTROLS\":\"1/2\",\"TOF_PERPENDICULAR_CONTROLS\":\"1/2\"}\nE_CONTROLS PASS :: source_reads=1<=6; pins=True; determinism=True; active_corruptions=True; runtime_s=49.923<1400; stdout_bytes=1641<6000\nper_element: checked and executed -- each of 92,260 event atoms across all five finite weight vectors was included in the normalization and marginal tests.\nper_site: checked and executed -- the centre readout was evaluated under all six neighbour positions, all spectator contexts, and all declared operand placements.\nper_mode: checked and not executed -- basis states only; no continuous M_2(C) modes.\nper_block: checked and executed -- all 155 semantic-quotient programs and all three neighbour-sensitive class blocks were exhausted.\nlattice_wide: checked and not executed -- proper-cubic orbit closure was checked on the radius-one star; no infinite embedding was executed.\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063528Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt against the .txt beside this log"
+  ]
+ }
+}

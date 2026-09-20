@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle985_neighbour_dependence_record_content_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py",
+ "seed": 86197,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063637Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a75514e70b263d92a97b49b49ca504df8e28538dd927a7aa868e0a30868adc4c",
+ "stdout_tail": "CYCLE985_NEIGHBOUR_DEPENDENCE_RECORD_CONTENT\nA_LOCKED_CONTENT_CENSUS PASS :: classes=[[\"incoming CNOT\",6,1,2],[\"perpendicular-control TOF\",12,2,4],[\"opposite-control TOF\",3,0,4]]; witnesses=21; separated_pairs=10\nB_READOUT_VISIBILITY PASS :: outcome=DECLARED_SEPARATOR_EXISTS; readout=I_one; visible=10/10\nC_SCOPE PASS :: single_site=True; full_mosaic_claimed=False; selected_readout_claimed=False\nD_CONTROLS PASS :: source_reads=1<=6; pins=True; deterministic=True; agreement_gate=True; record_no_additivity=True\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

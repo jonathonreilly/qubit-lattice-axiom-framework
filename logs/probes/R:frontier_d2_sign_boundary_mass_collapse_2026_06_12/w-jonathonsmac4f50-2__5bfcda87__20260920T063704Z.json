@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d2_sign_boundary_mass_collapse_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d2_sign_boundary_mass_collapse_2026_06_12.py",
+ "seed": 86224,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063704Z",
+ "elapsed_s": 7.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=92 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e41eb21d599d7a40bb9d77507ece3375320312ba35aa27327dea6e3682bcf5ba",
+ "stdout_tail": "bisection iter 05 keeps bracket\nPASS: U1c m=0 anchor: final bisection width <= 2.0e-03\nPASS: U1c m=0 anchor: boundary susceptibility is finite\nU1c m=0.000000000000 T=0.200000000000 mu*=-1.699218750000 eps*=1.699218750000 chi(mu*)=1.442811013423e-06 width=1.562500000000e-03 rel_to_mean=1.073226111238e-02\nPASS: U1c: BOUNDED collapse, relative spread 1.0732e-02 < 2.0e-02 (a small systematic m-trend exists and is gated separately)\nCONTROL quadrature: chi_160=4.091134903716e-03 chi_224=4.091694477544e-03 delta=5.595738275859e-07\nPASS: quadrature doubling |chi_160 - chi_224| < 1.0e-06\nCONTROL endpoint: mu=-1.750000000000 primary=6.087089212079e-04 independent=6.087089210621e-04\nPASS: independent endpoint recompute agrees within 1.0e-10\nPASS: independent endpoint recompute preserves endpoint sign\nPASS: U1d q=32 spot: scanned endpoint signs bracket a zero\nPASS: U1d q=32 spot: bisection iter 01 keeps bracket\nPASS: U1d q=32 spot: bisection iter 02 keeps bracket\nPASS: U1d q=32 spot: bisection iter 03 keeps bracket\nPASS: U1d q=32 spot: bisection iter 04 keeps bracket\nPASS: U1d q=32 spot: bisection iter 05 keeps bracket\nPASS: U1d q=32 spot: final bisection width <= 2.0e-03\nPASS: U1d q=32 spot: boundary susceptibility is finite\nCONTROL q32: mu*=-1.705468750000 eps*=1.693701171171 rel_to_q24=1.854421958910e-03\nPASS: q=32 spot relative agreement < 5.0e-02\nSCOPE: sampled instances; collapse relation or measured failure is the datum; no continuum claim; X3-import unused.\nTOTAL: PASS=92 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063712Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d2_sign_boundary_mass_collapse_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

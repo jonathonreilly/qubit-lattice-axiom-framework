@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle981_j_landed_invariant_identification_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle981_j_landed_invariant_identification_2026_08_11.py",
+ "seed": 86131,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063531Z",
+ "elapsed_s": 12.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4b4d15a981fd21f702fb0c2de3713d3270c40719dfa4f7d002f9e799e17a217e",
+ "stdout_tail": "CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION\nA_CANDIDATE_ENUMERATION PASS :: pin=625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46; pinned_full_bodies=9<=9; token_files=2655; candidates=11; exact_J_hits=3; requested_surfaces_present=2\nB_IDENTIFICATION_TEST PASS :: outcomes={\"COINCIDES\":0,\"DISAGREES\":2,\"NOT_COMPARABLE\":9}; first_witnesses={\"cycle980_control_arity\":{\"J\":0,\"candidate\":2,\"word\":\"TOF(+x,-x->C)\"},\"cycle980_off_diagonal_control_gram_sum\":{\"J\":1,\"candidate\":0,\"word\":\"CNOT(+x->C)\"}}\nC_VERDICT PASS :: NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN; coincident_landed=[]; J_landed=True; J_bounded_invariant=True; cross_lane_physics_identification=false\nD_CONTROLS PASS :: sha_pins=True; blob_pins=True; determinism=True; current_record=True; record_used=False; runtime_s=12.118<300; stdout_bytes=1424<6000<150000\nper_element: checked and executed -- all 21 witness words were reconstructed and compared exactly.\nper_site: checked and not executed -- J uses centre-relative word descriptors, not site records or sitewise observables.\nper_mode: checked and executed -- all 24 effective proper-cubic rotations preserve J on every witness.\nper_block: checked and executed -- all eleven enumerated candidate classes were typed before comparison.\nlattice_wide: checked and not executed -- translation cancellation was checked on recentered descriptors; no infinite lattice census was attempted.\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle981_j_landed_invariant_identification_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

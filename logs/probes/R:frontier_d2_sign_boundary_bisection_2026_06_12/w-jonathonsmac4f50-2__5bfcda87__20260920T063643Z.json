@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d2_sign_boundary_bisection_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d2_sign_boundary_bisection_2026_06_12.py",
+ "seed": 86203,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063643Z",
+ "elapsed_s": 20.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=154 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "df9feca4c582cdc7dc05e175e95cec59db68aeb90cecda04bdf6d84d107aeed6",
+ "stdout_tail": "2=1.793632 rel=4.353791e-04\nPASS: V1c fixed-direction gate: mu* increases with m at T=0.2 (mu*(m=0.5) > mu*(m=0.2)) | 1.753466 > 1.708008\nPASS: V1c fixed-direction gate: mu* increases with T at m=0.2 (mu*(T=0.4) > mu*(T=0.2)) | 1.794413 > 1.708008\nV1d zero-field analytic landmarks:\nPASS: V1d analytic upper band edge equals sqrt(m^2+16) for m=0.2 | Emax=4.004996878900\nPASS: V1d analytic staggered-spectrum van Hove energy equals |m| for m=0.2 | E_vH=0.200000000000\n  (m=0.2,T=0.2) mu*=1.708008, E_vH=0.200000, E_upper=4.004997, |mu*-E_vH|=1.508008, |mu*-E_upper|=2.296989\nPASS: V1d analytic upper band edge equals sqrt(m^2+16) for m=0.5 | Emax=4.031128874149\nPASS: V1d analytic staggered-spectrum van Hove energy equals |m| for m=0.5 | E_vH=0.500000000000\n  (m=0.5,T=0.2) mu*=1.753466, E_vH=0.500000, E_upper=4.031129, |mu*-E_vH|=1.253466, |mu*-E_upper|=2.277663\nPASS: V1d analytic upper band edge equals sqrt(m^2+16) for m=0.2 | Emax=4.004996878900\nPASS: V1d analytic staggered-spectrum van Hove energy equals |m| for m=0.2 | E_vH=0.200000000000\n  (m=0.2,T=0.4) mu*=1.794413, E_vH=0.200000, E_upper=4.004997, |mu*-E_vH|=1.594413, |mu*-E_upper|=2.210584\nPASS: V1d anchor: every sampled mu* lies strictly between the analytic van Hove energy |m| and the upper band edge sqrt(m^2+16), anchored to NEITHER at the sampled instances (distances printed; the landmark question stays open)\nSCOPE: sampled instances only; bisection-bracketed finite-field boundary; no continuum claim\nTOTAL: PASS=154 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063704Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d2_sign_boundary_bisection_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

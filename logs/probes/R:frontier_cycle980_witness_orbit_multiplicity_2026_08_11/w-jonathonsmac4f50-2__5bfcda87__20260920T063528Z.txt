@@ -1,0 +1,11 @@
+CYCLE980_WITNESS_ORBIT_MULTIPLICITY
+A_ORBIT_DECOMPOSITION PASS :: effective_group=O+_cubic(24); action_closed=True; orbits=[["CNOT",6,4],["TOF_PERPENDICULAR_CONTROLS",12,2],["TOF_OPPOSITE_CONTROLS",3,8]]; sum=21
+B_INVARIANT_SEPARATOR PASS :: J=norm2(sum_controls); values=[["CNOT",[{"control_arity":1,"control_sum_norm_squared":1,"off_diagonal_control_gram":[]}]],["TOF_PERPENDICULAR_CONTROLS",[{"control_arity":2,"control_sum_norm_squared":2,"off_diagonal_control_gram":[0]}]],["TOF_OPPOSITE_CONTROLS",[{"control_arity":2,"control_sum_norm_squared":0,"off_diagonal_control_gram":[-1]}]]]; constant=True; distinct=True
+C_ALPHABET_SENSITIVITY PASS :: alphabet_to_classes={"CNOT":1,"CNOT+TOF":3,"I_ONLY":0,"TOF":2,"X":0,"X+CNOT":1,"X+CNOT+TOF":3,"X+TOF":2}
+D_CONTROLS PASS :: source_reads=1<=6; sha_pins=True; blocklist_text_ast=True; record_current=True; semantic_quotient=True; determinism=True; runtime_s=1.054<1400
+per_element: checked and executed -- all 155 pairwise-distinct semantic-quotient descriptors and all 19,840 descriptor/input/condition rows were evaluated.
+per_site: checked and executed -- the centre and each of its six radius-one neighbour coordinates were included in every edge-dependence and transport check.
+per_mode: checked and not executed -- this Boolean basis theorem does not test Fourier, momentum, or continuous M_2(C) modes.
+per_block: checked and executed -- all eight subsets of the declared X/CNOT/TOF menu and all three derived witness orbits were exhausted.
+lattice_wide: checked and not executed -- translation cancellation was proved on recentered descriptors and proper-cubic closure on the radius-one star; no infinite lattice state was enumerated.
+TOTAL: PASS=4 FAIL=0

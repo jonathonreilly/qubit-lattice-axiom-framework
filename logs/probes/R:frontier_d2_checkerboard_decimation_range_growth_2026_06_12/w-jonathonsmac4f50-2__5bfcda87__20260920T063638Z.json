@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d2_checkerboard_decimation_range_growth_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d2_checkerboard_decimation_range_growth_2026_06_12.py",
+ "seed": 86198,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063638Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "81563bf9010be799718861fa89fa4bc21ce8054db162f65678aec3683fe0c83f",
+ "stdout_tail": "ted): d2=16: 4.748e-03 vs 4.731e-03; d2=20: 2.665e-03 vs 2.654e-03; d2=32: 3.204e-04 vs 3.158e-04\nPASS Y1c coupling magnitudes DECAY by distance band (L=14): {16,20} > {32,36,40} > {52} > {72} with the far tail < 1e-5 -- dense, decaying structure; within-band ordering is anisotropic (diagonal vs axial shells at similar d2, disclosed: the (32,36) pair is near-degenerate): bands: ['4.73e-03', '2.65e-03'] > ['3.16e-04', '3.19e-04', '1.88e-04'] > ['3.17e-05'] > ['4.23e-06']\nPASS Y1d L=6 shifted onsite coefficient uses mu-E: measured=1.8622448979591839e+00 expected=1.8622448979591839e+00 err=2.220e-16\nPASS Y1d L=6 E-shifted rotated-NN coupling uses mu-E: expected=2.9387755102040813e-01 maxerr=0.000e+00\nPASS Y1d L=6 E-shifted rotated-NNN coupling uses mu-E: expected=1.4693877551020407e-01 maxerr=0.000e+00\nPASS Y1d L=6 E-shifted step-1 has no couplings beyond rotated-NNN: max |off-family entry|=0.000e+00 for d2 not in {2,4}\nPASS Y1d L=8 shifted onsite coefficient uses mu-E: measured=1.8622448979591837e+00 expected=1.8622448979591839e+00 err=2.220e-16\nPASS Y1d L=8 E-shifted rotated-NN coupling uses mu-E: expected=2.9387755102040813e-01 maxerr=0.000e+00\nPASS Y1d L=8 E-shifted rotated-NNN coupling uses mu-E: expected=1.4693877551020407e-01 maxerr=0.000e+00\nPASS Y1d L=8 E-shifted step-1 has no couplings beyond rotated-NNN: max |off-family entry|=0.000e+00 for d2 not in {2,4}\nPASS Y1e L=6 retained-site resolvent is preserved at step 1: max resolvent error=3.331e-16\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T063638Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

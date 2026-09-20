@@ -18,11 +18,135 @@ sys.path.insert(0, str(SCRIPT_DIR))
 import check_review_loop_skill_contract as contract  # noqa: E402
 
 
+class ReviewLoopReferenceRoutingTest(unittest.TestCase):
+    """Routed instructions must remain reachable and covered by the guard."""
+
+    def setUp(self):
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        self.root = Path(temp.name)
+        self.entry = self.root / contract.SKILL_REL
+        source = contract.REPO_ROOT / contract.SKILL_REL
+        self.entry.parent.mkdir(parents=True)
+        shutil.copyfile(source, self.entry)
+        for relative in contract.REFERENCE_TRIGGER_RULES:
+            destination = self.entry.parent / relative
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source.parent / relative, destination)
+
+    def load(self):
+        return contract.load_skill_contract(self.root)
+
+    def edit(self, path, old, new):
+        text = path.read_text(encoding="utf-8")
+        self.assertIn(old, text)
+        path.write_text(text.replace(old, new), encoding="utf-8")
+
+    def test_live_routes_load_complete_contract(self):
+        skill, missing = self.load()
+        self.assertEqual(missing, [])
+        for relative in contract.SKILL_CONTRACT_REFERENCES:
+            self.assertIn((self.entry.parent / relative).read_text(), skill)
+        self.assertEqual(set(contract.SKILL_RULE_LOCATIONS), set(contract.SKILL_RULES))
+        self.assertEqual(set(contract.UNIT_RULE_LOCATIONS), set(contract.UNIT_PROSE_RULES))
+
+    def test_missing_procedure_holds_operation(self):
+        (self.entry.parent / "references/SCIENCE_LENSES.md").unlink()
+        self.assertIn("reference_unreadable_science_lenses", self.load()[1])
+
+    def test_hidden_or_sample_route_does_not_count(self):
+        text = self.entry.read_text()
+        row = next(line for line in text.splitlines()
+                   if line.startswith("| Every scientific, code, governance"))
+        for replacement in ("<!--\n" + row + "\n-->",
+                            "```markdown\n" + row + "\n```",
+                            "    " + row):
+            with self.subTest(replacement=replacement):
+                self.entry.write_text(text.replace(row, replacement))
+                self.assertIn("reference_route_science_lenses", self.load()[1])
+
+    def test_optional_or_wrong_mode_route_does_not_count(self):
+        self.edit(self.entry,
+                  "| Every scientific, code, governance, or methodology review and affected-fix confirmation |",
+                  "| Optional background after landing |")
+        self.assertIn("reference_route_science_lenses", self.load()[1])
+
+    def test_optional_suffix_cannot_disable_a_mandatory_route(self):
+        self.edit(self.entry,
+                  "methodology review and affected-fix confirmation |",
+                  "methodology review and affected-fix confirmation; may skip this optional reference |")
+        self.assertIn("reference_route_science_lenses", self.load()[1])
+
+    def test_science_rules_cannot_be_hidden_in_landing_only_file(self):
+        lenses = self.entry.parent / "references/SCIENCE_LENSES.md"
+        landing = self.entry.parent / "references/LANDING.md"
+        landing.write_text(landing.read_text() + "\n" + lenses.read_text())
+        lenses.write_text("No review lenses apply before authorized landing.\n")
+        self.assertIn("routed_reviewer_lenses", self.load()[1])
+
+    def test_validation_recipe_cannot_be_moved_out_of_shared_procedure(self):
+        combined = self.entry.parent / "references/COMBINED_VALIDATION.md"
+        landing = self.entry.parent / "references/LANDING.md"
+        text = combined.read_text()
+        start = text.index("   On the frozen integrated candidate,")
+        landing.write_text(landing.read_text() + "\n" + text[start:])
+        combined.write_text(text[:start])
+        self.assertIn("routed_landing_train_combined_gate", self.load()[1])
+
+    def test_missing_reference_cannot_be_ignored(self):
+        self.edit(self.entry,
+                  "required reference holds the dependent operation",
+                  "required reference may be skipped during the dependent operation")
+        self.assertIn("reference_routing_unread_holds_action", self.load()[1])
+
+    def test_cross_file_delimiters_cannot_repair_missing_instructions(self):
+        one = self.entry.parent / "references/REVIEW_UNITS.md"
+        two = self.entry.parent / "references/LANDING.md"
+        one.write_text(one.read_text() + "\n<!--\n")
+        two.write_text("-->\n" + two.read_text())
+        self.assertIn("reference_markdown_structure_review_units", self.load()[1])
+
+    def test_outside_package_substitution_fails(self):
+        reference = self.entry.parent / "references/SCIENCE_LENSES.md"
+        outside = self.root / "other-revision.md"
+        shutil.copyfile(reference, outside)
+        reference.unlink()
+        reference.symlink_to(outside)
+        self.assertIn("reference_outside_package_science_lenses", self.load()[1])
+
+    def test_relocated_rule_still_reaches_existing_semantic_guard(self):
+        self.edit(self.entry.parent / "references/REVIEW_UNITS.md",
+                  "never infer a scientific verdict or restamp an old execution",
+                  "reuse a receipt to infer a scientific verdict")
+        skill, missing = self.load()
+        self.assertIn("routed_versioned_mechanical_receipt", missing)
+        root = contract.REPO_ROOT
+        failures = contract.validate_texts(
+            skill,
+            (root / contract.GENERATOR_REL).read_text(),
+            (root / contract.PIPELINE_REL).read_text(),
+        )
+        self.assertIn("versioned_mechanical_receipt", failures)
+
+    def test_review_only_cannot_mutate_callers_source_or_index(self):
+        self.edit(self.entry.parent / "references/COMBINED_VALIDATION.md",
+                  "the caller's source and index",
+                  "only the caller's source")
+        self.assertIn("review_only_validation_isolation", self.load()[1])
+
+    def test_dirty_proof_cannot_be_validated_as_head_only(self):
+        self.edit(self.entry.parent / "references/COMBINED_VALIDATION.md",
+                  "staged, unstaged and untracked reviewed content and all declared inputs",
+                  "only the committed source")
+        self.assertIn("review_only_validation_isolation", self.load()[1])
+
+
 class ReviewLoopSkillContractTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         root = contract.REPO_ROOT
-        cls.skill = (root / contract.SKILL_REL).read_text(encoding="utf-8")
+        cls.skill, routing_failures = contract.load_skill_contract(root)
+        assert not routing_failures, routing_failures
         cls.command = (root / contract.COMMAND_REL).read_text(encoding="utf-8")
         cls.generator = (root / contract.GENERATOR_REL).read_text(encoding="utf-8")
         cls.pipeline = (root / contract.PIPELINE_REL).read_text(encoding="utf-8")
@@ -986,7 +1110,8 @@ class ReviewLoopLandingSequenceTest(unittest.TestCase):
             write(manifest, json.dumps(["a", "b", "base", "c"]) + "\n")
             commit("validated candidate")
             tree = git(work, "rev-parse", "HEAD^{tree}")
-            skill = (contract.REPO_ROOT / contract.SKILL_REL).read_text()
+            skill, routing_failures = contract.load_skill_contract(contract.REPO_ROOT)
+            self.assertEqual(routing_failures, [])
             blocks = contract._markdown_scan(skill).fenced_blocks
             code = next(body for _, body in blocks if "VALIDATED_BASE=<" in body)
             replacements = {

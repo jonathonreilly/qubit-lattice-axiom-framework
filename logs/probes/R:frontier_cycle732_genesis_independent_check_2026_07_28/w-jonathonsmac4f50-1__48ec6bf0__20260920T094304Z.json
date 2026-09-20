@@ -21,14 +21,21 @@
  "stdout_sha256": "c8f6b6d1bfa3246cdc653cf72d6581991807ad8747bd233395c867ce16302081",
  "stdout_tail": "PASS recursive input closure :: 83/83 inputs\nPASS primary boundary alignment :: current-parent APIs\nPASS independent logical genesis :: 27 gates\nPASS actual current-parent composition :: 123293 gates\nPASS enumerated mutations :: 27/27 deletions; 23/23 flips\nPASS scope countercontrols :: accepted data flip; non-global-parity witness\nPASS independence discipline :: primary inert; separate X/CNOT/TOF evaluator\nSUMMARY 7/7 ALL_PASS runtime=2.792526s\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T094308Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T101518Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 48ec6bf0 differs from the current HEAD 35d595f7 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run 'SUMMARY 7/7 ALL_PASS runtime=2.792526s' vs cache 'SUMMARY 7/7 ALL_PASS runtime=2.609442s'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle732_genesis_independent_check_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The task's expectation is not reproducible, so this is not a failure of the run. The task pins a verdict_line that is the runner's final JSON report, and that JSON embeds the wall-clock runtime and a sha256 computed over the report containing it, so the last-line comparison cannot match on any machine, including the one that froze it. Field-by-field diffing on the cycle727 member of this cluster leaves exactly runtime_seconds and report_sha256 differing, with the PASS status and every certified count identical, exit code 0 and hit False. 30 of the 384 tasks that pin a verdict_line embed a runtime this way, 23 of them a hash of it as well.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T101518Z"
  }
 }

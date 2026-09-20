@@ -1,0 +1,84 @@
+C1  the Polya-urn flow has uniform marginals on every level
+     The urn starts with one ball of each of three colours; drawing colour j and
+     returning it with another of its colour moves the site n to n + e_j with
+     probability (n_j+1)/(m+3) at level m.  Its law at level m is uniform on the
+     N(m) = (m+1)(m+2)/2 sites of that level:
+ok        level 0: all 1 sites carry mass 1/1
+ok        level 1: all 3 sites carry mass 1/3
+ok        level 2: all 6 sites carry mass 1/6
+ok        level 3: all 10 sites carry mass 1/10
+ok        level 4: all 15 sites carry mass 1/15
+ok        level 5: all 21 sites carry mass 1/21
+ok        level 6: all 28 sites carry mass 1/28
+ok        level 7: all 36 sites carry mass 1/36
+ok        level 8: all 45 sites carry mass 1/45
+
+C2  it is a unit flow from the apex to the base
+ok        level 0: total flow out = 1, and every site's inflow equals its outflow
+ok        level 1: total flow out = 1, and every site's inflow equals its outflow
+ok        level 2: total flow out = 1, and every site's inflow equals its outflow
+ok        level 3: total flow out = 1, and every site's inflow equals its outflow
+ok        level 4: total flow out = 1, and every site's inflow equals its outflow
+ok        level 5: total flow out = 1, and every site's inflow equals its outflow
+ok        level 6: total flow out = 1, and every site's inflow equals its outflow
+
+C3  its level energy is exactly 1/((m+1)(m+3))
+ok        symbolically: 3 * sum (n_1+1)^2 / (N(m)(m+3))^2 = 1/((m+1)(m+3)), where the sum
+       over the level of (n_1+1)^2 is sum_{a=0..m} (a+1)^2 (m+1-a), evaluated in
+       closed form.  Verified term by term against the flow itself:
+ok        level 0: energy 1/3 = 1/(1*3)
+ok        level 1: energy 1/8 = 1/(2*4)
+ok        level 2: energy 1/15 = 1/(3*5)
+ok        level 3: energy 1/24 = 1/(4*6)
+ok        level 7: energy 1/80 = 1/(8*10)
+ok        level 12: energy 1/195 = 1/(13*15)
+ok        level 20: energy 1/483 = 1/(21*23)
+
+C4  so the flow's total energy telescopes, and is bounded by 3/4
+ok        E_T = sum_{m<T} 1/((m+1)(m+3)) = 3/4 - (1/2)(1/(T+1) + 1/(T+2)) by partial
+       fractions, hence E_T < 3/4 for EVERY T, with E_T increasing to 3/4.
+ok        T = 1: E_T = 1/3 = 0.333333 < 3/4
+ok        T = 5: E_T = 25/42 = 0.595238 < 3/4
+ok        T = 20: E_T = 325/462 = 0.703463 < 3/4
+ok        T = 40: E_T = 625/861 = 0.725900 < 3/4
+
+C5  Thomson's principle: the minimum twist energy is bounded BELOW, uniformly in T
+     The order-beta cost of a site-wise twist is the quadratic Dirichlet form on the
+     backward cone with theta = theta_0 at the apex and 0 on level 0.  Its minimum is
+     theta_0^2 times the effective conductance C_T, and C_T = 1/R_T with R_T the
+     effective resistance, which by Thomson's principle is the minimum energy over
+     unit flows - so ANY unit flow bounds it above:
+       R_T <= E_T < 3/4   ==>   C_T > 4/3   for every T.
+     Checked against the conductance computed directly by layer elimination:
+ok        T = 1: C_T = 3 = 3.000000 > 4/3, and R_T = 1/C_T = 0.333333 <= E_T = 0.333333 as Thomson requires, matching attempt a4's exact value
+ok        T = 2: C_T = 9/4 = 2.250000 > 4/3, and R_T = 1/C_T = 0.444444 <= E_T = 0.458333 as Thomson requires, matching attempt a4's exact value
+ok        T = 3: C_T = 117/59 = 1.983051 > 4/3, and R_T = 1/C_T = 0.504274 <= E_T = 0.525000 as Thomson requires, matching attempt a4's exact value
+ok        T = 4: C_T = 2595/1408 = 1.843040 > 4/3, and R_T = 1/C_T = 0.542582 <= E_T = 0.566667 as Thomson requires, matching attempt a4's exact value
+ok        T = 5: C_T = 369612/210437 = 1.756402 > 4/3, and R_T = 1/C_T = 0.569346 <= E_T = 0.595238 as Thomson requires, matching attempt a4's exact value
+     The first four agree with attempt a4's independently computed conductances, so
+     its table is confirmed; what it could not do was rule out a slow decay to 0,
+     which C_T > 4/3 now does outright.  a4's extrapolated limit 1.38 sits above 4/3.
+
+C6  where 1/sum_k P_k comes from, and why it settles nothing
+     The uniform-splitting flow - split equally three ways at every site, i.e. the
+     simple random walk on the cone - is also a unit flow, and its energy is
+     (1/3) sum_{m<T} P_m with P_m the collision probability of that walk at level m:
+ok        T = 1: uniform-splitting energy = 0.333333 = (1/3) sum P_m
+ok        T = 3: uniform-splitting energy = 0.506173 = (1/3) sum P_m
+ok        T = 10: uniform-splitting energy = 0.680111 = (1/3) sum P_m
+ok        T = 30: uniform-splitting energy = 0.833821 = (1/3) sum P_m
+     P_m ~ c/m by the local limit theorem for the plane walk, so this energy grows
+     like (c/3) log T.  Numerically, against the Polya flow's bounded energy:
+       T =  1:  uniform-splitting 0.333333   Polya 0.333333   1/sum_k P_k = 1.000000
+       T =  3:  uniform-splitting 0.506173   Polya 0.525000   1/sum_k P_k = 0.658537
+       T = 10:  uniform-splitting 0.680111   Polya 0.662879   1/sum_k P_k = 0.490116
+       T = 30:  uniform-splitting 0.833821   Polya 0.718246   1/sum_k P_k = 0.399766
+ok        the uniform-splitting flow is the WORSE of the two: its energy is an upper bound
+       on R_T that diverges, so its reciprocal 3/sum_k P_m is a LOWER bound on the
+       conductance that tends to 0 - true, and vacuous.  The task's GIVEN (2) reads
+       that vacuous lower bound as the value of the minimum.  The minimum is the
+       conductance, and the Polya flow bounds it below by 4/3 for every T.
+ok        E_T -> 3/4, so the bound C_T > 4/3 cannot be improved by this flow beyond 4/3
+
+SUMMARY: PARTIAL on the backward cone of the 2+1 sphere law: the Polya-urn unit flow (uniform on every level, step probability (n_j+1)/(m+3)) has level energy exactly 1/((m+1)(m+3)), proved in closed form, so its total energy telescopes to E_T = 3/4 - (1/2)(1/(T+1) + 1/(T+2)) < 3/4 for every T; by Thomson's principle the cone's effective resistance is R_T <= E_T < 3/4 and its conductance - which is the minimum order-beta cost of a space-time twist reaching theta_0 at the apex, per theta_0^2 - satisfies C_T > 4/3 uniformly in T, confirmed against exact layer-elimination values C_1..C_5 = 3, 9/4, 117/59, 2595/1408, ... that reproduce attempt a4's table; the uniform-splitting flow, by contrast, has energy (1/3) sum_{m<T} P_m which diverges like log T, so 1/sum_k P_k is the reciprocal of a divergent upper bound on R_T - a lower bound on the conductance that tends to 0
+HIT: the task's GIVEN (2) is false as stated - the minimum space-time twist cost is NOT 1/sum_{k<T}P_k and does not tend to 0; it is the cone's conductance, which is bounded below by 4/3 for every T by the Polya-urn flow's exactly telescoping energy E_T = 3/4 - (1/2)(1/(T+1) + 1/(T+2)), so Route A's cost is Theta(1) with an explicit constant and the route is closed by a proof rather than by attempt a4's extrapolation; 1/sum_k P_k is a lower bound on the conductance read as its value

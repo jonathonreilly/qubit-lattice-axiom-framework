@@ -1,0 +1,39 @@
+{
+ "task": "R:recurrent_five_literal_lane_worldline_cycle178_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "recurrent",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/recurrent_five_literal_lane_worldline_cycle178_2026_07_16.py",
+ "seed": 95883,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "90cc2b81",
+ "started_utc": "20260920T091803Z",
+ "elapsed_s": 97.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a18651a2508c9353e470894fe0d799b3e43c494571240d6519361fdc0e2b1292",
+ "stdout_tail": "ilures': (), 'generation_depths': (0, 19, 71, 123, 175), 'depth_increments': (19, 52, 52, 52), 'displacement': (4, 4, 4, 4), 'startup_ratio': Fraction(4, 19), 'steady_ratios': (Fraction(1, 13), Fraction(1, 13), Fraction(1, 13))}}\n\nFIVE-LANE ALL-32 BUNDLE\nPASS all 32 five-bit words close on five independent recurrent lanes :: (Counter({(1521, 3455, 18, 16, 0, 10): 32}), ())\nPASS the encoded word has five disjoint payload lineages and five endpoints :: ((), ((-26, 3, -1), (-26, 203, -1), (-26, 403, -1), (-26, 603, -1), (-26, 803, -1)), ())\nPASS the literal word is conserved without any 32-valued payload record :: set()\n\nDECODER-FACING PORT CONTRACT\nPASS the five seed and endpoint sites are disjoint and ordered :: (((-8, 3, -1), (-8, 203, -1), (-8, 403, -1), (-8, 603, -1), (-8, 803, -1)), ((-24, 3, -1), (-24, 203, -1), (-24, 403, -1), (-24, 603, -1), (-24, 803, -1)), ((-26, 3, -1), (-26, 203, -1), (-26, 403, -1), (-26, 603, -1), (-26, 803, -1)))\n\nSCOPE\nFAIL review note states the five-rail cost and physical scope :: \n\nACCOUNTING\nBIT_ROLES ('H0', 'H1')\nLANE_SPACING 200\nSEED_SITES ((-8, 3, -1), (-8, 203, -1), (-8, 403, -1), (-8, 603, -1), (-8, 803, -1))\nG4_SITES ((-24, 3, -1), (-24, 203, -1), (-24, 403, -1), (-24, 603, -1), (-24, 803, -1))\nENDPOINT_SITES ((-26, 3, -1), (-26, 203, -1), (-26, 403, -1), (-26, 603, -1), (-26, 803, -1))\nPROPAGATION_DIRECTION (-1, 0, 0)\nBIT_CARRIER 12 288 101996\nBUNDLE_SHAPES Counter({(1521, 3455, 18, 16, 0, 10): 32})\nPASS 8 FAIL 2\nRESULT CYCLE178_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T092224Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 90cc2b81 differs from the current HEAD ea1aa031 (fine if you pulled since; the run is bound to its sha)",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (archive: execute the densify-freeze migration, owner GO 2026-09-05) moved it out of docs/ into archive/notes/, and the runner still points at the old path, so its note-exists gate and every gate that reads the note fail. The file is present in HEAD at the archive path and its content is not in question. This is the class measured at 567 of 6435 scripts naming a .md that is now only under archive/notes/ (1376 references, 545 distinct notes).",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T092224Z"
+ }
+}

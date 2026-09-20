@@ -1,0 +1,35 @@
+AUTHORITY AND LAW
+FAIL Cycle-172 review note exists :: 
+PASS the Cycle-175 union plus recurrent carrier remains deterministic :: (132, 3168, 104876, 0)
+
+FOUR-PERIOD ALL-32 CARRIER
+PASS all 32 values close through the fourth recurrent generation :: (Counter({(305, 691, 0, 2): 32}), ())
+
+LINEAGE AND CAUSAL KINEMATICS
+PASS the permanent payload trail has one exact parent-child lineage and one endpoint :: ((), 19, ((-26, 3, -1),))
+PASS the row value is conserved while the number of payload records grows :: 19
+PASS the fourth generation confirms a steady 4-per-52 causal-layer ratio :: {'payloads': ((-8, 3, -1), (-9, 3, -1), (-10, 3, -1), (-11, 3, -1), (-12, 3, -1), (-13, 3, -1), (-14, 3, -1), (-15, 3, -1), (-16, 3, -1), (-17, 3, -1), (-18, 3, -1), (-19, 3, -1), (-20, 3, -1), (-21, 3, -1), (-22, 3, -1), (-23, 3, -1), (-24, 3, -1), (-25, 3, -1), (-26, 3, -1)), 'row_parent': {(-9, 3, -1): ((-8, 3, -1),), (-10, 3, -1): ((-9, 3, -1),), (-11, 3, -1): ((-10, 3, -1),), (-12, 3, -1): ((-11, 3, -1),), (-13, 3, -1): ((-12, 3, -1),), (-14, 3, -1): ((-13, 3, -1),), (-15, 3, -1): ((-14, 3, -1),), (-16, 3, -1): ((-15, 3, -1),), (-17, 3, -1): ((-16, 3, -1),), (-18, 3, -1): ((-17, 3, -1),), (-19, 3, -1): ((-18, 3, -1),), (-20, 3, -1): ((-19, 3, -1),), (-21, 3, -1): ((-20, 3, -1),), (-22, 3, -1): ((-21, 3, -1),), (-23, 3, -1): ((-22, 3, -1),), (-24, 3, -1): ((-23, 3, -1),), (-25, 3, -1): ((-24, 3, -1),), (-26, 3, -1): ((-25, 3, -1),)}, 'children': {(-8, 3, -1): [(-9, 3, -1)], (-9, 3, -1): [(-10, 3, -1)], (-10, 3, -1): [(-11, 3, -1)], (-11, 3, -1): [(-12, 3, -1)], (-12, 3, -1): [(-13, 3, -1)], (-13, 3, -1): [(-14, 3, -1)], (-14, 3, -1): [(-15, 3, -1)], (-15, 3, -1): [(-16, 3, -1)], (-16, 3, -1): [(-17, 3, -1)], (-17, 3, -1): [(-18, 3, -1)], (-18, 3, -1): [(-19, 3, -1)], (-19, 3, -1): [(-20, 3, -1)], (-20, 3, -1): [(-21, 3, -1)], (-21, 3, -1): [(-22, 3, -1)], (-22, 3, -1): [(-23, 3, -1)], (-23, 3, -1): [(-24, 3, -1)], (-24, 3, -1): [(-25, 3, -1)], (-25, 3, -1): [(-26, 3, -1)], (-26, 3, -1): []}, 'degree_failures': (), 'generation_depths': (0, 19, 71, 123, 175), 'depth_increments': (19, 52, 52, 52), 'displacement': (4, 4, 4, 4), 'startup_ratio': Fraction(4, 19), 'steady_ratios': (Fraction(1, 13), Fraction(1, 13), Fraction(1, 13))}
+
+SEPARATED PARALLEL CARRIERS
+PASS two separated unequal carriers close under one common law :: (None, 1088, 608, 0)
+PASS the separated causal graphs factor with no cross-carrier parent edge :: (691, 1382)
+
+FIRST LOCAL COLLISION/JUNCTION PREFLIGHT
+PASS the unperturbed generation target has its exact carrier output :: frozenset({'ARM'})
+PASS a second bare incoming row never preserves the carrier write :: (Counter({'quiet': 96}), {'quiet': ((-13, 3, -1), 'ARM', None)})
+PASS one additional existing context record does not supply a row junction :: (Counter({'quiet': 29376}), {'quiet': ((-13, 3, -1), 'ARM', (-12, 4, -1), 'ALL', None)})
+PASS replacing either carrier control with any existing role supplies no row junction :: (Counter({'quiet': 14688}), {'quiet': ((-13, 3, -1), 'ARM', 'ALL', None)}, Counter({'quiet': 14688}), {'quiet': ((-13, 3, -1), 'ARM', 'ALL', None)})
+PASS filling both remaining open faces with existing roles supplies no row junction :: (Counter({'quiet': 2247264}), {'quiet': ((-13, 3, -1), 'ARM', (-12, 4, -1), 'ALL', (-12, 3, -2), 'ALL', None)})
+
+SCOPE
+FAIL review note carries N1-N8 and denies a particle or axiom claim :: 
+
+ACCOUNTING
+ROW_ROLES ('ARM', 'AUXY', 'AUXZ', 'PAIR', 'Z0', 'A_1_0', 'A_1_2', 'A_2_0', 'A_2_1', 'A_2_2', 'A_3_0', 'A_3_1', 'A_3_2', 'Z_A', 'BTP', 'Z_C', 'RING', 'B_1_2', 'R_A02', 'COMPLETE', 'C_Q', 'D0', 'D1', 'R_A00', 'E', 'F', 'FP', 'G1', 'I1', 'I2', 'JOIN', 'L1')
+DYNAMIC_RECORDS 304
+REPRESENTATIVE_GRAPH 305 691 10 4
+LINEAGE {'payloads': ((-8, 3, -1), (-9, 3, -1), (-10, 3, -1), (-11, 3, -1), (-12, 3, -1), (-13, 3, -1), (-14, 3, -1), (-15, 3, -1), (-16, 3, -1), (-17, 3, -1), (-18, 3, -1), (-19, 3, -1), (-20, 3, -1), (-21, 3, -1), (-22, 3, -1), (-23, 3, -1), (-24, 3, -1), (-25, 3, -1), (-26, 3, -1)), 'row_parent': {(-9, 3, -1): ((-8, 3, -1),), (-10, 3, -1): ((-9, 3, -1),), (-11, 3, -1): ((-10, 3, -1),), (-12, 3, -1): ((-11, 3, -1),), (-13, 3, -1): ((-12, 3, -1),), (-14, 3, -1): ((-13, 3, -1),), (-15, 3, -1): ((-14, 3, -1),), (-16, 3, -1): ((-15, 3, -1),), (-17, 3, -1): ((-16, 3, -1),), (-18, 3, -1): ((-17, 3, -1),), (-19, 3, -1): ((-18, 3, -1),), (-20, 3, -1): ((-19, 3, -1),), (-21, 3, -1): ((-20, 3, -1),), (-22, 3, -1): ((-21, 3, -1),), (-23, 3, -1): ((-22, 3, -1),), (-24, 3, -1): ((-23, 3, -1),), (-25, 3, -1): ((-24, 3, -1),), (-26, 3, -1): ((-25, 3, -1),)}, 'children': {(-8, 3, -1): [(-9, 3, -1)], (-9, 3, -1): [(-10, 3, -1)], (-10, 3, -1): [(-11, 3, -1)], (-11, 3, -1): [(-12, 3, -1)], (-12, 3, -1): [(-13, 3, -1)], (-13, 3, -1): [(-14, 3, -1)], (-14, 3, -1): [(-15, 3, -1)], (-15, 3, -1): [(-16, 3, -1)], (-16, 3, -1): [(-17, 3, -1)], (-17, 3, -1): [(-18, 3, -1)], (-18, 3, -1): [(-19, 3, -1)], (-19, 3, -1): [(-20, 3, -1)], (-20, 3, -1): [(-21, 3, -1)], (-21, 3, -1): [(-22, 3, -1)], (-22, 3, -1): [(-23, 3, -1)], (-23, 3, -1): [(-24, 3, -1)], (-24, 3, -1): [(-25, 3, -1)], (-25, 3, -1): [(-26, 3, -1)], (-26, 3, -1): []}, 'degree_failures': (), 'generation_depths': (0, 19, 71, 123, 175), 'depth_increments': (19, 52, 52, 52), 'displacement': (4, 4, 4, 4), 'startup_ratio': Fraction(4, 19), 'steady_ratios': (Fraction(1, 13), Fraction(1, 13), Fraction(1, 13))}
+PARALLEL_GRAPH 609 1382 12 7
+JUNCTION {'target': (-12, 3, -1), 'premise': {(-12, 3, 0): 'BACKSTOP', (-11, 3, -1): 'ARM', (-12, 2, -1): 'GY'}, 'baseline': frozenset({'ARM'}), 'free': ((-13, 3, -1), (-12, 4, -1), (-12, 3, -2)), 'bare': Counter({'quiet': 96}), 'bare_examples': {'quiet': ((-13, 3, -1), 'ARM', None)}, 'one_context': Counter({'quiet': 29376}), 'one_context_examples': {'quiet': ((-13, 3, -1), 'ARM', (-12, 4, -1), 'ALL', None)}, 'guide_parent': (-12, 3, 0), 'phase_parent': (-12, 2, -1), 'guide_substitution': Counter({'quiet': 14688}), 'guide_substitution_examples': {'quiet': ((-13, 3, -1), 'ARM', 'ALL', None)}, 'phase_substitution': Counter({'quiet': 14688}), 'phase_substitution_examples': {'quiet': ((-13, 3, -1), 'ARM', 'ALL', None)}, 'two_context': Counter({'quiet': 2247264}), 'two_context_examples': {'quiet': ((-13, 3, -1), 'ARM', (-12, 4, -1), 'ALL', (-12, 3, -2), 'ALL', None)}}
+PASS 12 FAIL 2
+RESULT CYCLE172_OPEN

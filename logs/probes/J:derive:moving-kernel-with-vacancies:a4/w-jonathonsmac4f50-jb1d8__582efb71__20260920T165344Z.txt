@@ -1,0 +1,69 @@
+V1  the occupation marginal
+     Summing the contents out of the law with vacancies leaves a measure on the
+     OCCUPIED SET alone:   mu(A)  proportional to  z^|A| Z_A,   where Z_A is the
+     content partition function on the subgraph induced by A (for the two-valued menu,
+     an Ising partition function).  Every question about rho and rho_2 is a question
+     about mu.  Checked on a ring of 4 at w = e^beta = 2, z = 1:
+ok        Z_empty = 1 and Z_{one site} = 2 (two contents, no bonds)
+ok        Z_{two adjacent} = 5 = 2(w + 1/w) - the bond is counted once
+
+V2  the FKG lattice condition for the occupation marginal
+     If mu(A u B) mu(A n B) >= mu(A) mu(B) for all subsets A, B, then the occupation
+     variables are positively associated, and rho_2 >= rho^2 follows at once.  The
+     condition is checked here EXACTLY over every ordered pair of subsets:
+ok        ring of 6, w = 2, z = 1: all 2080 pairs satisfy it (0 violations)
+ok        ring of 6, w = 3, z = 1/2: all 2080 pairs satisfy it (0 violations)
+ok        ring of 8, w = 2, z = 2: all 32896 pairs satisfy it (0 violations)
+ok        3x3 torus, w = 2, z = 1: all 131328 pairs satisfy it (0 violations)
+     So on every instance tested the marginal is log-supermodular, which is the
+     hypothesis of the FKG inequality.  Given FKG (ASSUMED as a theorem, not re-proved
+     here), 1[x occupied] and 1[y occupied] are increasing functions of the occupied
+     set, hence positively correlated, hence
+       rho_2  >=  rho^2    for every bond.
+
+V3  the two bounds against the truth
+     Exact densities on a 3x3 torus, scanning the fugacity and the coupling:
+       w = 1, z = 1/8:  rho = 0.200000   rho_2 = 0.040000   rho^2 = 0.040000   2rho-1 = -0.600000
+       w = 1, z = 1/4:  rho = 0.333333   rho_2 = 0.111111   rho^2 = 0.111111   2rho-1 = -0.333333
+       w = 1, z = 1/2:  rho = 0.500000   rho_2 = 0.250000   rho^2 = 0.250000   2rho-1 = +0.000000
+       w = 1, z = 1:  rho = 0.666667   rho_2 = 0.444444   rho^2 = 0.444444   2rho-1 = +0.333333
+       w = 1, z = 2:  rho = 0.800000   rho_2 = 0.640000   rho^2 = 0.640000   2rho-1 = +0.600000
+       w = 2, z = 1/8:  rho = 0.250735   rho_2 = 0.075976   rho^2 = 0.062868   2rho-1 = -0.498530
+       w = 2, z = 1/4:  rho = 0.495583   rho_2 = 0.279299   rho^2 = 0.245603   2rho-1 = -0.008834
+       w = 2, z = 1/2:  rho = 0.779758   rho_2 = 0.630971   rho^2 = 0.608023   2rho-1 = +0.559517
+       w = 2, z = 1:  rho = 0.913766   rho_2 = 0.840803   rho^2 = 0.834968   2rho-1 = +0.827531
+       w = 2, z = 2:  rho = 0.962375   rho_2 = 0.927470   rho^2 = 0.926166   2rho-1 = +0.924750
+       w = 4, z = 1/8:  rho = 0.942705   rho_2 = 0.899779   rho^2 = 0.888693   2rho-1 = +0.885410
+       w = 4, z = 1/4:  rho = 0.980642   rho_2 = 0.962853   rho^2 = 0.961658   2rho-1 = +0.961284
+       w = 4, z = 1/2:  rho = 0.991400   rho_2 = 0.983102   rho^2 = 0.982873   2rho-1 = +0.982799
+       w = 4, z = 1:  rho = 0.995909   rho_2 = 0.991885   rho^2 = 0.991834   2rho-1 = +0.991818
+       w = 4, z = 2:  rho = 0.998001   rho_2 = 0.996019   rho^2 = 0.996007   2rho-1 = +0.996003
+ok        rho_2 >= rho^2 in all 15 cases, exactly - the FKG prediction holds
+ok        rho_2 >= 2 rho - 1 also holds, as it must, but:
+ok        in the 4 cases with rho < 1/2 the bound 2 rho - 1 is NEGATIVE and says
+       nothing, while rho^2 is positive and correct.  That is exactly a3's floor, and
+       it is an artefact of the inequality, not of the law.
+ok        the tightest case is w = 1, z = 1/8, where rho_2/rho^2 = 1.000000 >= 1
+
+V4  what this does to a3's threshold
+     a3 gives  M^2 >= rho - 3G(0)/(beta rho_2)  and long-range order once
+     beta rho_2 rho > 3G(0).  With rho_2 >= 2 rho - 1 that reads
+       beta > 3G(0)/(rho(2 rho - 1)),   which needs rho > 1/2.
+     With rho_2 >= rho^2 it reads instead
+       beta > 3G(0)/rho^3,   which needs nothing of rho at all.
+       rho = 1/4:  beta > 48.6400 (from rho^2)   vs NO STATEMENT (from 2rho-1)
+       rho = 2/5:  beta > 11.8750 (from rho^2)   vs NO STATEMENT (from 2rho-1)
+       rho = 1/2:  beta > 6.0800 (from rho^2)   vs NO STATEMENT (from 2rho-1)
+       rho = 3/5:  beta > 3.5185 (from rho^2)   vs 6.3333 (from 2rho-1)
+       rho = 9/10:  beta > 1.0425 (from rho^2)   vs 1.0556 (from 2rho-1)
+       rho = 1:  beta > 0.7600 (from rho^2)   vs 0.7600 (from 2rho-1)
+ok        the new threshold decreases with rho and is finite at every positive density,
+ok        and at rho = 1 it is 3G(0) = 0.76, still recovering block 19 exactly
+ok        at rho = 3/5 the new threshold 3.5185 is BELOW the old 6.3333
+ok        at rho = 9/10 the new threshold 1.0425 is BELOW the old 1.0556
+ok        at rho = 1 the new threshold 0.7600 is EQUAL to the old 0.7600, as it must be since rho^2 = 2rho-1 at rho = 1
+ok        the two bounds cross only at rho = 1: rho^2 > 2 rho - 1 for every rho < 1, so the
+       improvement is everywhere, not only below half filling.
+
+SUMMARY: PARTIAL - attempt a3's half-filling floor is an artefact of its inequality, not of the law: summing the contents out leaves an occupation marginal mu(A) proportional to z^|A| Z_A, and this marginal satisfies the FKG lattice condition mu(AuB)mu(AnB) >= mu(A)mu(B) on every instance tested - all pairs of subsets of rings of 6 and 8 and of a 3x3 torus, at several couplings and fugacities - so by FKG (ASSUMED) the occupation variables are positively associated and rho_2 >= rho^2, which is positive at every density where 2 rho - 1 is negative; checked exactly in 15 further cases on the 3x3 torus, including every case with rho < 1/2; a3's long-range-order criterion beta rho_2 rho > 3G(0) then reads beta > 3G(0)/rho^3, finite at every positive density, strictly below a3's 3G(0)/(rho(2rho-1)) wherever the latter exists, and still equal to 3G(0) at rho = 1
+HIT: the occupation marginal of the law with vacancies is log-supermodular on every instance checked, so FKG gives rho_2 >= rho^2 for the occupied-occupied bond density, and attempt a3's threshold beta > 3G(0)/(rho(2 rho - 1)) - which exists only above half filling - is replaced by beta > 3G(0)/rho^3, which is finite at EVERY positive density and strictly smaller wherever both are defined; a3's rho > 1/2 floor came from inclusion-exclusion being the only tie it had between the site and bond densities, and it does not survive the correlation input

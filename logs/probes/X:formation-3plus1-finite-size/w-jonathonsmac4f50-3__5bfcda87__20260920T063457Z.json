@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-finite-size",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 3 32 3000 1500 3",
+ "seed": 86097,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5bfcda87",
+ "started_utc": "20260920T063457Z",
+ "elapsed_s": 10.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=3.0 L=32 T=3000 plateau_|m|=0.8380 lowk_ratio=1.0485 seconds=10"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The test of long-range order in 3+1: the plateau |m| against the plane's side L at fixed coupling; a positive limit as L grows is memory, a decay to zero is not. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 36 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "b6af5363728b74ff62227920df1f2c6c11ea4c9534cd8ac83026f38b38516aa4",
+ "stdout_tail": "5  0.8679  +0.8679\n         7  0.8623  +0.8623\n        10  0.8559  +0.8558\n        14  0.8538  +0.8537\n        20  0.8482  +0.8482\n        28  0.8457  +0.8456\n        39  0.8465  +0.8464\n        55  0.8459  +0.8458\n        76  0.8444  +0.8442\n       107  0.8421  +0.8420\n       149  0.8405  +0.8404\n       208  0.8379  +0.8376\n       290  0.8394  +0.8389\n       405  0.8407  +0.8405\n       566  0.8392  +0.8373\n       790  0.8398  +0.8363\n      1103  0.8402  +0.8341\n      1539  0.8418  +0.8320\n      2149  0.8372  +0.8283\n      3000  0.8386  +0.8325\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.0485 (n=18)\n   |k| in [0.3,0.6): 1.0129 (n=104)\n   |k| in [0.6,1.0): 1.0130 (n=392)\n   |k| in [1.0,1.5): 1.0114 (n=1348)\n   |k| in [1.5,2.2): 1.0132 (n=4024)\n   |k| in [2.2,3.2): 1.0169 (n=12063)\n   |k| in [3.2,6.0): 1.0178 (n=14818)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.032116  +0.031623  1.016  +0.03162\n     2  +0.014245  +0.013933  1.022  +0.02787\n     3  +0.008326  +0.008050  1.034  +0.02415\n     4  +0.005421  +0.005176  1.047  +0.02070\n     6  +0.002614  +0.002362  1.106  +0.01417\n     8  +0.001282  +0.001016  1.261  +0.00813\n    12  +0.000094  -0.000152  -0.618  -0.00182\n    16  -0.000101  -0.000443  0.229  -0.00709\nSUMMARY: dim=3 menu=sphere beta=3.0 L=32 T=3000 plateau_|m|=0.8380 lowk_ratio=1.0485 seconds=10\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260920T063507Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

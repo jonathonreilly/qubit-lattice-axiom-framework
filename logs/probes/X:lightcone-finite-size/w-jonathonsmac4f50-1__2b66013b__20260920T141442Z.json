@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-finite-size",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 0.75 96 3000 1500 3",
+ "seed": 13682,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2b66013b",
+ "started_utc": "20260920T141442Z",
+ "elapsed_s": 581.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=0.75 L=96 T=3000 plateau_|m|=0.6350 lowk_ratio=1.0978 seconds=582"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Long-range order under light-cone formation: the plateau against the plane's side at fixed coupling, three seeds. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 54 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "b488b4bcbab47f12653b44c432d62339ad461286a68882d897490d955b755b28",
+ "stdout_tail": "\n        20  0.6528  +0.6528\n        28  0.6485  +0.6485\n        39  0.6453  +0.6453\n        55  0.6425  +0.6425\n        76  0.6422  +0.6422\n       107  0.6404  +0.6404\n       149  0.6401  +0.6401\n       208  0.6381  +0.6381\n       290  0.6376  +0.6376\n       405  0.6348  +0.6348\n       566  0.6363  +0.6361\n       790  0.6349  +0.6347\n      1103  0.6342  +0.6337\n      1539  0.6351  +0.6346\n      2149  0.6344  +0.6341\n      3000  0.6345  +0.6337\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.0978 (n=436)\n   |k| in [0.3,0.6): 1.1389 (n=2802)\n   |k| in [0.6,1.0): 1.1374 (n=11700)\n   |k| in [1.0,1.5): 1.1453 (n=35602)\n   |k| in [1.5,2.2): 1.1526 (n=108366)\n   |k| in [2.2,3.2): 1.1582 (n=329967)\n   |k| in [3.2,6.0): 1.1578 (n=395862)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.037898  +0.033717  1.124  +0.03372\n     2  +0.026543  +0.023773  1.116  +0.04755\n     3  +0.014634  +0.013257  1.104  +0.03977\n     4  +0.010665  +0.009749  1.094  +0.03900\n     6  +0.006401  +0.005950  1.076  +0.03570\n     8  +0.004371  +0.004128  1.059  +0.03302\n    12  +0.002422  +0.002331  1.039  +0.02797\n    16  +0.001505  +0.001445  1.041  +0.02312\n    24  +0.000570  +0.000585  0.975  +0.01404\n    32  +0.000129  +0.000195  0.662  +0.00624\nSUMMARY: dim=3 menu=sphere beta=0.75 L=96 T=3000 plateau_|m|=0.6350 lowk_ratio=1.0978 seconds=582\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T142424Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

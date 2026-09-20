@@ -1,0 +1,32 @@
+{
+ "task": "C:threshold-and-plateau-tables:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-jcbe9",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/threshold-and-plateau-tables/w-jonathonsmac4f50-jcbe9/run.py",
+ "seed": 77461,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "085877e4",
+ "started_utc": "20260920T041101Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "only 2 of 120 grid points are logged (1.7%, far below the half the task requires) - formation-3plus1-threshold-fine 0/22, lightcone-threshold-fine 0/30, formation-3plus1-seeds 2/30, formation-by-dimension 0/16, lightcone-by-dimension 0/22 - so none of the four tables (plateau against beta, the memory bracket, the dimension dichotomy, lowk_ratio against beta) can be formed; the 118 missing argument lists are printed above and the run stops there, as instructed; 0s"
+ },
+ "review": "run.py inventories the five 3+1 scan grids against their logs and finds 2 of 120 points logged (threshold-fine 0/22 and 0/30, seeds 2/30, by-dimension 0/16 and 0/22), both of them at dimension 3, beta = 2, L = 48 - one backward (plateau 0.7366, lowk_ratio 0.9924) and one light-cone (0.8946, 1.0717), both settled by the task's own three-row criterion - so there is no second coupling for any lattice, no seed repeat and nothing at all at dimensions 1, 2 and 4, and none of the four requested tables can be formed; it prints all 118 missing argument lists and stops, having first checked every stdout file against its log's stdout_sha256; no HIT.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): Turn the 3+1 scan logs into tables. Read logs/probes/X:formation-3plus1-threshold-fine/, X:lightcone-threshold-fine/, X:formation-3plus1-seeds/, X:formation-by-dimension/, X:lightcone-by-dimension/ (.txt files: memory tables and SUMMARY lines). Produce: (1) plateau |m| against beta for each lattice (3 backward, 3s light-cone) and L, with seed scatter where available; (2) the bracket of the coupling where memory appears (largest beta with plateau < 0.1, smallest with plateau > 0.5 and not drifting over the last three table rows); (3) the dichotomy table by dimension (1, 2, 3, 4; backward and light-cone): memory yes/no/undecided; (4) the kernel normalization (lowk_ratio) against beta. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/threshold-and-plateau-tables/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/threshold-and-plateau-tables/<name>/run.py\"",
+ "stdout_sha256": "6fad1f277e36727f463b53fa2f60ba833bddca623cad0dd5f67b4eebd44126bc",
+ "stdout_tail": "n_levelplane.py 4s sphere 1 12 2000 1000 1\nN3     missing: cd probes/lib && python3 formation_levelplane.py 4s sphere 1 16 2000 1000 1\nN4 consequences for the four tables the task asks for:\nN4   (1) plateau against beta: no lattice has more than one coupling logged, so there is no curve and no\nN4       seed scatter (the only two logged runs are a pair at the same beta with different neighbourhoods).\nN4   (2) the memory bracket needs a largest beta with plateau < 0.1 and a smallest with plateau > 0.5 that\nN4       is not drifting: no lattice has both, so no bracket can be given.\nN4   (3) the dichotomy by dimension: the only two logged runs are both at dimension 3, beta = 2, L = 48\nN4       (one backward, one light-cone); dimensions 1, 2 and 4 have no logged run in these five scans, so\nN4       every entry of the table would read 'undecided' - a table of undecideds, not a result.\nN4   (4) lowk_ratio against beta: two points, one per lattice, at the same beta; no curve.\nN4 Stopping here, as the task instructs.\nSUMMARY: only 2 of 120 grid points are logged (1.7%, far below the half the task requires) - formation-3plus1-threshold-fine 0/22, lightcone-threshold-fine 0/30, formation-3plus1-seeds 2/30, formation-by-dimension 0/16, lightcone-by-dimension 0/22 - so none of the four tables (plateau against beta, the memory bracket, the dimension dichotomy, lowk_ratio against beta) can be formed; the 118 missing argument lists are printed above and the run stops there, as instructed; 0s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jcbe9",
+  "at_utc": "20260920T041114Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

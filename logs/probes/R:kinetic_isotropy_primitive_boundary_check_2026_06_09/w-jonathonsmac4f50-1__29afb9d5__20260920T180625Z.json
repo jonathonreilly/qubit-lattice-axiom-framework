@@ -1,0 +1,35 @@
+{
+ "task": "R:kinetic_isotropy_primitive_boundary_check_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kinetic_isotropy_primitive_boundary_check_2026_06_09.py",
+ "seed": 27585,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180625Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a3e7c6f8a603ba65ed15c76a35d9513c29eed6a441e282153c6cca6839676951",
+ "stdout_tail": "eta\n[PASS] source declares framework primitive status\n[PASS] registry canonical ids include kinetic primitive\n[PASS] registry node exists\n[PASS] registry current path points at source note -- docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md\n[PASS] registry note records dimensionless structural premise\n[PASS] registry note forbids dynamical-content laundering\n[PASS] policy records owner approval section\n[PASS] policy records kinetic primitive approval\n[PASS] policy records no-laundering boundary\n[PASS] policy records emergent-time boundary\n[PASS] note states c_t = c_s\n[PASS] note states OS0/hypercubic graining\n[PASS] note says no dimensionless dynamical content\n[PASS] note says it is not a fourth spatial dimension\n[PASS] note says it does not add or amend an axiom\n[PASS] note says it does not re-axiomatize time\n[PASS] note says no audit verdict changes\n[PASS] note cites premise registry\n[PASS] note cites purity guard\n[PASS] forbidden overclaim absent: m_t\\s*=\n[PASS] forbidden overclaim absent: y_t\\s*=\n[PASS] forbidden overclaim absent: mixing angle is derived\n[PASS] forbidden overclaim absent: retained Lorentz restoration\n[PASS] forbidden overclaim absent: physical observable is supplied\n[PASS] forbidden overclaim absent: dimensionless dynamical quantity is supplied\n[PASS] axiom/primitive purity guard passes --   OK   realized_state_primitive (docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): pure premise content\n\nSUMMARY: KINETIC ISOTROPY PRIMITIVE BOUNDARY PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180625Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

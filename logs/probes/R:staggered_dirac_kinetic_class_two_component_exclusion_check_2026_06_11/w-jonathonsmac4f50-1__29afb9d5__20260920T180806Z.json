@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py",
+ "seed": 27686,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180806Z",
+ "elapsed_s": 3.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a20b89496cffab414b02222015f8883e10f537ad128f68d606b4df1d8f22e8b5",
+ "stdout_tail": "  The realization gate's kinetic-class residual NARROWS; it does not vanish.\n[PASS] (18) NON-CONFLATION GUARD: the rival's 16 = 2 x 2^3 (spinor components x Z^3 corners, a 3D kernel dimension computed here) and the hierarchy lane's exponent-16 surface = 2^4 (the d=4 naive-operator zero-locus count of the 2026-05-10 two-power-d note) are numerically equal but DIFFERENT surfaces; this runner computes NO bridge between them and this note claims NONE  [16 = 2*2^3 (3D rival) vs 16 = 2^4 (4D naive); equality is numerical coincidence of different decompositions]\nWARNING (non-conflation, repeated on purpose): nothing in this runner affects the hierarchy exponent-16 surface; only the realization gate's kinetic-class residual is narrowed.\n\n--- [E] source-edge firewall: no realization-gate upstream dependency\n[PASS] (19) source-edge firewall: realization gate is absent from markdown/YAML upstream dependencies  [forbidden markers absent]\n[PASS] (20) source-edge firewall: note states self-contained rival and downstream-only gate role  [all required boundary phrases present]\n\nTOTAL: PASS=20 FAIL=0\nVERDICT: self-contained 2-component naive rival D_2c\n         EXCLUDED within Quantum + Lattice + the substep-1\n         single-mode surface (CAR dimension obstruction,\n         computed); the kinetic-class residual NARROWS, it\n         does not vanish (declared-open residuals above:\n         substep-1 support tier, other one-mode-compatible\n         kinetic forms, boundary-holonomy convention).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180810Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

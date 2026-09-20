@@ -1,0 +1,35 @@
+{
+ "task": "R:kinetic_isotropy_composition_closure_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kinetic_isotropy_composition_closure_2026_06_09.py",
+ "seed": 27576,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180616Z",
+ "elapsed_s": 6.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "81a592664640b5fc70efda7dac3fb5500c555410d14dfb43e1aeb9d0a7d2a1f2",
+ "stdout_tail": "y Skolem-Noether\n==============================================================================\n  [PASS] automorphism consistency exhibit: inner maps Ad_U are C-linear automorphisms; converse is Skolem-Noether, cited not machine-proved  --  premise must say C-LINEAR automorphism: antiunitary (antilinear) ticks are excluded by the premise, named\n  [PASS] anti-automorphism witness: transpose reverses products, so the automorphism premise has content  --  unitary-tick reading residual = 'the tick preserves the algebra structure', not bare unitarity\n\nPART free-sector bridge computation -- Berezin-Wick bridge, free sector\n==============================================================================\n  [PASS] free-kernel linearization: given Berezin-Wick free-sector bridge, the Euclidean kernel expands to partial_tau - i partial_x  --  EQUAL-MAGNITUDE temporal and spatial coefficients: |c_t| = |c_s| = 1 exactly\n  [PASS] conjugate-pair kernel: degree-2 part is omega_E^2 + K^2 with zero mixed term  --  GIVEN the named Berezin-Wick free-sector bridge transfer representation: c_t = c_s exactly at the free level\n  [PASS] free zero-locus: omega_E = i K is an exact zero locus for the saturating cell  --  the light-cone hop is exactly conical at ALL orders -- nothing to renormalize at the free kinetic level\n\n==============================================================================\nSCORECARD: PASS=14 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180623Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

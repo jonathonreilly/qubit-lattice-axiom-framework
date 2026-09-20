@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_total_complex_structure_ambient_invariant_assembly_2026_07_19",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kcpt_total_complex_structure_ambient_invariant_assembly_2026_07_19.py",
+ "seed": 27473,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180433Z",
+ "elapsed_s": 22.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=69 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "65b404c136dbf4c54de11e5de89a1f49d67e2050efaa735dad55037d3a46ba60",
+ "stdout_tail": "- P_bulk @ J_ker == 0 and J_ker @ P_bulk == 0\n[B7.3] PASS - P_bulk @ B_m @ P_bulk == B_m for m=1,2,3 (each carrier in the image block)\n[B7.4] PASS - P_ker @ B_m == 0 for m=1,2,3\n[B8.1] PASS - J_full is real: integer lift J_ker_int and every A_m are integer, P_m/J_ker rational\n[B8.2] PASS - holomorphic dim = sum tr(P_m)//2 == (4, 12, 12, 4) == 4+12+12+4 == 32\n[B8.3] PASS - bulk contributes 28 conjugate pairs, kernel contributes 4 (Unit 2 dim W = 4); 28 + 4 = 32\n[B8.4] PASS - [FLOAT SANITY - non-load-bearing] eig(J_full): 32 at +i, 32 at -i, conj(v_+) in the -i eigenspace\n[B9.1] PASS - J_alt @ J_alt == -I_64 via the same rational facts (sign-independent square)\n[B9.2] PASS - sign-blindness: (-B_m)@(-B_m) == B_m@B_m for m=1,2,3\n[B9.3] PASS - J_alt commutes with all 768 (built from the same U @ J_ker_int, U @ A_m facts)\n[B9.4] PASS - J_alt != J_full: J_full - J_alt = 2 J_bulk != 0 (B_1 is nonzero)\n[B9.5] PASS - [FLOAT SANITY - non-load-bearing] float J_alt @ J_alt == -I and J_alt differs from J_full\n[B10.1] PASS - required verbatim strings present (all present)\n[B10.2] PASS - forbidden substrings absent from the note (none)\n[B10.3] PASS - exactly the five dependency notes are markdown-linked, once each (5 links)\n[B10.4] PASS - note carries bounded_theorem front matter, Claim boundary, Setting, and the two named sections\n[note] all [FLOAT SANITY - non-load-bearing] gates are confirmations; every load-bearing gate above uses exact integer/rational arithmetic.\nTOTAL: PASS=69 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180455Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

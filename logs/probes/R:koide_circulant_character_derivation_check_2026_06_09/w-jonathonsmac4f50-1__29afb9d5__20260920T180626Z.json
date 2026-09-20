@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_circulant_character_derivation_check_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/koide_circulant_character_derivation_check_2026_06_09.py",
+ "seed": 27586,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180626Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "745832a1e0f4a8b0af33641a3dc9d0bf3b5e7094fc6e9a01786c65925bbd7462",
+ "stdout_tail": "able at delta = 2/9: residuals tau +0.0006%, e -0.0029%, mu -0.0024% (all < 0.01%) :: tau: pred 42.1531 vs 42.1528 (0.00063%); e: pred 0.714821 vs 0.714842 (-0.0029%); mu: pred 10.2788 vs 10.279 (-0.0024%)\n  [PASS] D32 [D] top overshoots the Frobenius-equipartition condition ceiling: ratio 2.754 -> required cos = 1.240 > 1 (impossible); bottom 2.536 -> 1.086 > 1 :: required cos: up 1.24, down 1.086\n  [PASS] D33 [D] tau sits at 98.6% of the 1+sqrt(2) ceiling (ratio 2.37942) :: tau ratio/ceiling = 0.98559\n  [PASS] D34 [D] A.1 heuristic arithmetic: v*a_LM^2 = 2.0260 GeV; *(7/8) = 1.7728 (-0.23% vs m_tau); *sqrt(7/8) = 1.8952 (+0.65%); v_0 route 17.695 (-0.12%) -- heuristic, NOT retained :: x1=2.026 x2=1.7728 x3=1.8952 v0_h=17.6951\n\nCheck classes: C=5 A=21 D=8 (B=0, E=0, F=0, G=0)\nTOTAL: PASS=34 FAIL=0\n\nVerdict (bounded):\n  - UNCONDITIONAL: commutant => circulant form, cosine\n    spectrum, Frobenius equipartition <=> equal-character-weight bridge,\n    and the exact delta-independent implication\n    circulant commutant + cosine spectrum + Frobenius equipartition\n    + square-root readout => Q = 2/3, plus the 1+sqrt(2) ceiling\n    and pi/12 positivity boundary. All exact in sympy.\n  - OPEN BOUNDARY (not claimed, not checked as theorem):\n    selection principle for Frobenius equipartition, derivation of square-root readout,\n    the phase delta = 2/9, and the scale v_0.\n  - PART D is PDG comparator decoration at fitted delta, v_0.\n\n  KOIDE_CIRCULANT_CHARACTER_DERIVATION_BOUNDED=TRUE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180626Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

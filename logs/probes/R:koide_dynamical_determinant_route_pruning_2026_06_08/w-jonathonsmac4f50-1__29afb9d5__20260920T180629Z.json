@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_dynamical_determinant_route_pruning_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/koide_dynamical_determinant_route_pruning_2026_06_08.py",
+ "seed": 27589,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180629Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "df424dd3905134877b7571cfddac6dbcdf43864eb570992c0947d8ee47427556",
+ "stdout_tail": " |Pf| = |det M| = prod(singular values) -> r=1 (Majorana does not give a one-slot count)\n       |Pf(A)| = 0.5317, |det M| = 0.5317, prod(sigma) = 0.5317\n[PASS] C3-equivariant antisymmetric kernel check: the only antisymmetric C3-equivariant kernel is J_cs, which annihilates the singlet (J_cs.(1,1,1)=0) -> cannot form the Koide Q (no singlet channel)\n       ||J_cs + J_cs^T|| = 0.0e+00, ||J_cs.triv|| = 2.9e-18\n[PASS] Reflection-positivity route: the tested first-order holomorphic W_h = aI + bC has a COMPLEX spectrum for b!=0 (non-self-adjoint -> not reflection-positive); the Dirac D is Hermitian and D^dag D (= OS transfer B^dag B) is positive (second order). This prunes the tested RP first-order route.\n       max|Im eig(W_h)| = 0.798 (>0 -> complex), D Hermitian=True, D^dag D PSD=True\n[PASS] Berezin-power route: the Berezin determinant POWER p (Dirac 2, Majorana 1, rooted 1/2) multiplies every isotype log-weight uniformly -> cancels in the singlet:doublet ratio -> r is p-INDEPENDENT (the halving comes from POLARIZATION, not statistics)\n       r(power p) = w_d/(2*w_s) = r(p=1) = w_d/(2*w_s)  (p cancels)\n\nSCORECARD PASS=4 FAIL=0\nVERDICT: Pfaffian/Majorana -> |det M| (no one-slot count); the tested non-self-adjoint first-order operator is not RP-compatible while the Hermitian Dirac object is second order; the Berezin measure power is r-neutral. This prunes the tested determinant-family routes only and does not classify Koide r=1/2 globally. The independent audit lane owns status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

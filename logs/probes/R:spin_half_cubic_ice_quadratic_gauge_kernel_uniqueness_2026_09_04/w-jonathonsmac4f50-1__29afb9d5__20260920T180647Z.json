@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cubic_ice_quadratic_gauge_kernel_uniqueness_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spin_half_cubic_ice_quadratic_gauge_kernel_uniqueness_2026_09_04.py",
+ "seed": 27607,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180647Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ac54864f8edb7fb8f830e625bf888a12ccb38dd79e2e7c02af55ff791283aeba",
+ "stdout_tail": "[PASS] 01 the proper cubic group contains exactly twenty-four rotations\n[PASS] 02 cubic covariance alone leaves three symmetric quadratic kernels\n[PASS] 03 gauge transversality alone leaves six symmetric quadratic kernels\n[PASS] 04 their exact intersection is one-dimensional\n[PASS] 05 the surviving normalized kernel is q-squared delta minus q-i q-j\nKERNEL_DIMENSIONS cubic_only=3 transverse_only=6 joint=1\nCERTIFICATE: polynomial_order=q2 symmetric_kernel=True proper_cubic_covariance=True gauge_transversality=True analyticity_assumed=True higher_orders_unconstrained=True\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180648Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

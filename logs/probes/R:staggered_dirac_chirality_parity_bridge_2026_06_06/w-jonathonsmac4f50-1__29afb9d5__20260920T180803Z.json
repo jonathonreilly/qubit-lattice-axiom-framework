@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_dirac_chirality_parity_bridge_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py",
+ "seed": 27683,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180803Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2573c509bb75e430093eae14737675c9e2974b20dab4750d8da38e41e3314c0b",
+ "stdout_tail": " on (2, 2, 2) box is one global sign -- rank=7, vertices=8, affine_solutions=2\n[PASS] epsilon solves every edge-flip equation on (2, 3, 4) open box -- epsilon(x+e_mu)=-epsilon(x)\n[PASS] edge-flip solution space on (2, 3, 4) box is one global sign -- rank=23, vertices=24, affine_solutions=2\n[PASS] epsilon solves every edge-flip equation on (4, 4, 3) open box -- epsilon(x+e_mu)=-epsilon(x)\n[PASS] edge-flip solution space on (4, 4, 3) box is one global sign -- rank=47, vertices=48, affine_solutions=2\n[PASS] coordinate-square consistency gives path-independent parity propagation -- four edge flips around every checked square multiply to +1\nB. A1 central pseudoscalar -> local staggered chirality\n[PASS] Pauli pseudoscalar sigma1 sigma2 sigma3 equals i I\n[PASS] A1 pseudoscalar is central in the Pauli Cl(3) realization\n[PASS] Omega(x)=epsilon(x) Omega0 flips by -1 on every coordinate edge -- Omega(x)/Omega(x+e_mu)=-1\n[PASS] local chirality keeps the Cl(3) pseudoscalar square -- Omega(x)^2=-1 for Omega0=iI\nC. Anticommutation with every nearest-neighbor odd kinetic stencil\n[PASS] Gamma_epsilon D + D Gamma_epsilon vanishes edgewise for arbitrary weights -- checked 54 undirected nearest-neighbor edges with three weights\n[PASS] two-step same-axis hops are correctly excluded from the odd NN class -- epsilon(x+2e_mu)=epsilon(x)\n\nSCORECARD: PASS=13 FAIL=0\nVERDICT: exact support for the narrow H_staggered_chirality bridge; the full staggered-Dirac realization gate remains outside this scope.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180803Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

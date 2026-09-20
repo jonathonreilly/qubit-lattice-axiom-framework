@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_backreaction_live_capture_source_packet_manifest_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.py",
+ "seed": 27683,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180803Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=91 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3764f8a6c6774cbef423ff6ac06d3a78cf3e0a2d1d5c185808453045a6d4fee2",
+ "stdout_tail": "d139bef6390002c66cbebdb6c16e7443b05006b65b58870ab65124a241c5ec48\n[PASS] cache_exit_ok:cycle_battery_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:cycle_battery_cache: STAGGERED FERMION\n[PASS] cache_runner_matches:layered_cache: scripts/frontier_staggered_layered_backreaction.py == scripts/frontier_staggered_layered_backreaction.py\n[PASS] cache_sha_fresh:layered_cache: 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd == 833f1a4762d167986c9b93ce79f493c28579d6c9f975400bcd378a6b078eb0bd\n[PASS] cache_exit_ok:layered_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:layered_cache: STAGGERED LAYERED BACKREACTION BRIDGE\n[PASS] cache_runner_matches:prototype_helper_cache: scripts/frontier_staggered_backreaction_prototype.py == scripts/frontier_staggered_backreaction_prototype.py\n[PASS] cache_sha_fresh:prototype_helper_cache: 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975 == 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975\n[PASS] cache_exit_ok:prototype_helper_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:prototype_helper_cache: STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE\n========================================================================================\nSUMMARY: STAGGERED CAPTURE SOURCE PACKET PASS=91 FAIL=0\n========================================================================================\nOutput written: outputs/staggered_backreaction_live_capture_source_packet_manifest_2026_06_06.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180803Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

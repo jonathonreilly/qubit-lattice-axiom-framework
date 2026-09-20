@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py",
+ "seed": 27587,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180627Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=40 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "352629b89bc24ccc41fbb0c5bff42ee4ec296aed94e7adddc1d44874714b848d",
+ "stdout_tail": "uare to -I\nPASS V2.8 entrywise conjugation exchanges the two roots\nPASS V2.9 two-model witness: conjugation is multiplicative over all 64 monomial products\nPASS V2.10 two-model witness: conjugation is R-linear over the spanning basis\nPASS V3.1 grade involution multiplicative on all 8x8 basis products\nPASS V3.2 grade involution sends ps to -ps\nPASS V4.1 character projectors resolve identity\nPASS V4.2 character projectors are idempotent\nPASS V4.3 character projectors are pairwise orthogonal\nPASS V4.4 C Pw = w Pw\nPASS V4.5 C and P1 are conjugation-fixed\nPASS V4.6 conjugation swaps Pw and P_wbar\nPASS V4.7 doublet block is conjugation-fixed\nPASS V4.8 doublet block has rank 2\nPASS V5.1 exactly 9 of 27 selectors are swap-invariant\nPASS V5.2 fixed-label swap invariance forces doublet constancy\nPASS V5.3 invariant fixed-label selector fibers give exactly two partitions\nPASS V5.4 finest fixed-label scalar-selector fiber partition has 2 blocks\nPASS V6a.1 i(C-C^2) is Hermitian\nPASS V6a.2 i(C-C^2) is conjugation-odd\nPASS V6a.3 i(C-C^2) has the resolving spectrum\nPASS V6a.4 unordered three-atom PVM is conjugation-stable\nPASS V6b.1 C+C^2 is conjugation-even\nPASS V6b.2 C+C^2 has singlet-doublet spectrum\nPASS V6b.3 C+C^2 retains a rank-1/rank-2 distinction\nPASS V6c character-w selector flips under conjugation\nPASS V7.1 sibling supplied-context declaration verbatim\nPASS V7.2 bridge supplied ORBIT-INDEXING bullet verbatim\nPASS V7.3 bridge supplied-context framing verbatim\nTOTAL: PASS=40 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180628Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

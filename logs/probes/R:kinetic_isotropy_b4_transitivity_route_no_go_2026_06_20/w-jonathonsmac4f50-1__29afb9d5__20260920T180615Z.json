@@ -1,0 +1,34 @@
+{
+ "task": "R:kinetic_isotropy_b4_transitivity_route_no_go_2026_06_20",
+ "type": "runner-reexecution",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kinetic_isotropy_b4_transitivity_route_no_go_2026_06_20.py",
+ "seed": 27575,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180615Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d7efe4127e0f1b8373237a70ae1561c0889281c8af765fdddf81879a191c22c9",
+ "stdout_tail": " on both, so the collapse is not an artifact of the diagonal restriction; correspondingly the defect splits into a (t,x) 2x2 block carrying the whole obstruction and a (y,z) 2x2 block that is identically zero.\nlattice_wide: split, and stated as such -- C1 and C2 are exact whole-lattice statements, because O_h and B4 are the point groups of the hypercubic lattice itself and the Reynolds average is taken exactly over all 48 and all 384 elements over Q with no truncation, so the invariant-dimension wall needs no volume; C3 by contrast is NOT lattice-wide -- it is a finite 64-mode grid and six time slices with no volume, no site sum and no thermodynamic or continuum limit, exactly as the note's C3 wording restricts it to the tested finite mode grid.\n\n============================================================================\nSUMMARY\n============================================================================\nC1: the diagonal-form invariant space is 2-dim under O_h, 1-dim under B4 ->\n    deriving c_t=c_s == supplying the O_h->B4 (time-space) generator.\nC2: that generator is a metric symmetry IFF c_t=c_s -> every B4/S4-\n    transitivity argument for isotropy is CIRCULAR as a class.\nC3: a c_t!=c_s free-scalar witness is reflection-positive on a square\n    lattice, so square geometry plus RP does not select c_t=c_s.\nNET: the B4/S4 transitivity route is circular as a derivation of kinetic\n     isotropy. The approved primitive is unchanged and not retired here.\n\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180616Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

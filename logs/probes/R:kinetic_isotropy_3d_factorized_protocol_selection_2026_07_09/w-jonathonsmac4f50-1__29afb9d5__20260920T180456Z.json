@@ -1,0 +1,35 @@
+{
+ "task": "R:kinetic_isotropy_3d_factorized_protocol_selection_2026_07_09",
+ "type": "runner-reexecution",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kinetic_isotropy_3d_factorized_protocol_selection_2026_07_09.py",
+ "seed": 27496,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180456Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=42 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "75fd3454b41d70e3c7bd24503cb1dc05388ae73919bdf2c1780c55e279466eec",
+ "stdout_tail": " 'P_WEIGHT']\n  [PASS] composite-word dispersiveness filter survivors  --  computed=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']\n  [PASS] survivor-structure ingredients: decorated anticommutation, central reorder sign, and S1^2 weight identity\n  [PASS] survivor-structure divergence: P_WEIGHT is not the symmetric three-axis cycle times a central scalar\n  [PASS] composite-slope divergence: factor slopes are one, but P_WEIGHT has slope magnitudes (2,1,1)\n\n(S8) PREDICATE-REMOVAL AND REJECTOR CHECKS\n================================================================================================\n  [PASS] support-and-dispersion-only filter admits P_MIX4 and P_STAIR with nonunit computed slopes\n  [PASS] removing only factor-modulus homogeneity retains the all-axis support rejection of P_MIX4 and P_STAIR\n  [PASS] removing all-axis support uniformity admits P_AXIS\n  [PASS] removing composite-word dispersiveness admits flat identity word P_CANCEL\n  [PASS] P_PAIRFLAT is P12-axis-permutation covariant, all-axis factor-supported, flat, and factor-modulus-defective\n  [PASS] bare cycle passes the weak protocol filters while bare factors commute and decorated factors anticommute\n  [PASS] replacing P_SYM by P_MIX4 changes the three-filter survivor stack  --  honest final=['P_REORDER', 'P_SYM', 'P_SYM_OCT', 'P_WEIGHT']; corrupted final=['P_REORDER', 'P_SYM_OCT', 'P_WEIGHT']\n\n================================================================================================\nTOTAL: PASS=42 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180457Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

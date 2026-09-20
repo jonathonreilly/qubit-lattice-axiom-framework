@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_dirac_kinetic_class_forcing_check_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
+ "seed": 27685,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180805Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "13689516220914999b342e21c01bf4d13c06ba7e1dcf83a8d4fbca2673208eae",
+ "stdout_tail": " is O-equivariant under the spin lift for EVERY real r (C4z and C3[111] checked exactly): a one-parameter continuum of kinetic classes survives all spectator-surface symmetry constraints\n[PASS] [D] 26. single-mode absorption (qubit-reframe) kills the Wilson continuum: M(r) is proportional-to-unitary iff r = 0, and the projective plaquette commutation M_mu M_nu = lam M_nu M_mu has scalar solutions only at r = 0 (lam = -1): the continuum collapses to its endpoints  |  solve(off-diag=0) = [0], projective sols = [{lam: -1, r: 0}]\n[PASS] [D] 27. full reduction: the 12-complex-parameter NN family {M_mu} under O-equivariance (C3, C2z) + reversed-edge Hermiticity collapses to M_mu = a I + i b sigma_mu (a, b real: the scalar ray and the Dirac ray, 2 real parameters); with [D]26 the single-mode constraint then leaves exactly the two rays a=0 (Cl(3) vector = K1) and b=0 (scalar = K0) -- the same two classes as Two-flux-class theorem  |  surviving real dimension = 2\nRESIDUAL (declared-open): the kinetic surface is the bilinear (quadratic) sector by the definition of 'kinetic term'; quartic and higher interaction terms are out of scope here.\n\nTOTAL: PASS=28 FAIL=0\nVERDICT: Two-flux-class theorem (two-flux-class collapse) and Absorbing-frame theorem\n         (P-SD discharged on the flux(-1) branch) VERIFIED on\n         the finite instantiation; the flux(+1) countermodel\n         certifies that the final one-bit kinetic-order\n         selector is NOT forced by the specified constraint set.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180806Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

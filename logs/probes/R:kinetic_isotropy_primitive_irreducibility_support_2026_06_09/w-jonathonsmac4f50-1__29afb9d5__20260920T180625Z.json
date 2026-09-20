@@ -1,0 +1,35 @@
+{
+ "task": "R:kinetic_isotropy_primitive_irreducibility_support_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kinetic_isotropy_primitive_irreducibility_support_2026_06_09.py",
+ "seed": 27585,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180625Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d358baba590362a22ad7d2ed522b0af596eff72222365739138557b378ce25b5",
+ "stdout_tail": "al isotropy -- it ADDS a generator the axioms disclaim, not a relabel.\n   ... VERDICT: the listed current structures do not fix xi=1 (c_t=c_s). This supports the registered\n   ... kinetic-isotropy primitive; it is not a new primitive, Tier-A admission, or bounded-status source.\n   ... The primitive is precisely OS0 kinetic-form isotropy (the temporal kinetic coefficient on the same footing as space);\n   ... no axiom supplies it (Lattice gives no metric/cone/4th-axis; Quantum/Record give no dynamics/time-metric;\n   ... the scale primitive has zero dimensionless content; RP and the single-clock product a_tau*H are xi-blind).\n   ... SCOPE: a model-family non-fixation witness. A future retained dynamics could still derive the same\n   ... kinetic isotropy and retire the primitive. This runner does not demote rows or make delta_v=0 unconditional.\n\n================================================================================================\nkinetic-isotropy primitive support: the listed current structures do not fix xi=c_t/c_s.\nPositive transfer/RP/single-clock/reachability checks hold across a xi-family, while xi=1\nand xi!=1 remain distinguished. This supports keeping the registered primitive explicit.\nSets no audit status and supplies no downstream Lorentz theorem.\n================================================================================================\nTOTAL: PASS=17 FAIL=0\n================================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180625Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

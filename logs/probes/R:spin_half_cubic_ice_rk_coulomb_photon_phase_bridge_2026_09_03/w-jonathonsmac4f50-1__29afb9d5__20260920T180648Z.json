@@ -1,0 +1,35 @@
+{
+ "task": "R:spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "spin",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+ "seed": 27608,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180648Z",
+ "elapsed_s": 9.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "798966742ea40719978763593f8657302d30a3e1a06579880ac030a01ee7c9eb",
+ "stdout_tail": "5965 tensor_spread=0.051068\ndiagnostic L=10 structure: long=1.233e-33 T1=0.375298 T2=0.369906 split=0.039420 tensor_null=3.637e-16 tensor_split=0.069363 tensor_spread=0.068189\ndiagnostic L=12 structure: long=1.663e-33 T1=0.363418 T2=0.366912 split=0.037253 tensor_null=5.144e-16 tensor_split=0.080406 tensor_spread=0.083249\ndiagnostic independent L=12 replica: density=0.260018 split=0.029464 tensor_null=8.835e-16 tensor_split=0.094743 tensor_spread=0.035387\ndiagnostic charged RK orbit: states=508 signature=((3, 6), (4, 2)) lowest=1.83019331e-15 5.76723509e-01 6.00870583e-01\ndiagnostic flippability densities: L=6:0.262313+/-0.000310 L=8:0.260063+/-0.000155 L=10:0.259975+/-0.000183 L=12:0.259755+/-0.000105\ndiagnostic trial-formula L*E ratios: L=6:0.99746410 L=8:0.99919707 L=10:0.99967106 L=12:0.99984136\ndiagnostic infrared omega/|k| ratios: L=8:0.97449536 L=16:0.99358685 L=32:0.99839439 L=64:0.99959845 L=128:0.99989960\nper_element: one occupation qubit per link and every four-link alternating plaquette move are checked\nper_site: exact three-of-six Gauss constraints and a fixed opposite-charge sector are checked\nper_mode: longitudinal pinch suppression, transverse weights, and conditional Maxwell polarizations are checked\nper_block: the complete 864-state L=2 RK orbit and L=6 through L=12 Monte Carlo tori are checked\nlattice_wide: finite tensor data and magnetic trial expectations are checked; renormalized stiffness and the thermodynamic phase are not proved\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180658Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

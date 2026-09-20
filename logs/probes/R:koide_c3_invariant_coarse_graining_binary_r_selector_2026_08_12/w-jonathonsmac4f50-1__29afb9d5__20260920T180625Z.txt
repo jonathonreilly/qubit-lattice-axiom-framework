@@ -1,0 +1,24 @@
+external_scientific_inputs: current axiom wording plus three source-bound algebra/custody parents; no fitted inputs
+construction: setwise Aut(C3) action on group-algebra coefficient labels, followed by fixed-partition Shannon uniformity
+negative_scope: no additional nontrivial invariant set partition; no broad physical-selector or arbitrary-kernel no-go
+PASS: current-axiom-boundary Qualification and the content-only/no-record Record boundary are pinned
+PASS: obsolete-record-semantics-excluded the theorem imports no named scalar, additivity, or absence value
+PASS: spectrum-parent the normalized coefficient identities and Parseval relation are source-bound
+PASS: frobenius-parent the real-isotype powers 3a^2 and 6|b|^2 are source-bound
+PASS: custody-parent the Q(r) line and open selector are source-bound
+PASS: partition-exhaustion a three-element set has exactly the five enumerated partitions
+PASS: setwise-invariant-list exactly one-block, three-singletons, and singlet/doublet survive
+PASS: definition-sensitivity stronger blockwise invariance excludes the three-singleton partition
+PASS: three-channel-iff three coefficient powers are equal if and only if r=1
+PASS: two-block-iff the trivial/doublet aggregate powers are equal if and only if r=1/2
+PASS: normalized-points the two fixed-partition uniform vectors and r-blind one-block are exact
+PASS: global-entropy-boundary the fixed-partition maxima log(3) and log(2) are not a tied binary optimum
+PASS: coefficient-is-not-spectral uniform coefficient powers need not be uniform eigenvalue/PVM powers
+PASS: dependency-boundary spectral, Frobenius, custody, and minimal-axiom inputs are load-bearing; adjacent chains are not
+PASS: note-contract bounded status, no-edit boundary, scope correction, and audit hygiene hold
+per_element: all three coefficient labels and all five set partitions are enumerated
+per_site: one abstract circulant is checked; no lattice-site statement is inferred
+per_mode: spectral eigenmodes are explicitly separated from coefficient channels
+per_block: setwise invariance and fixed-partition aggregation are checked exactly
+lattice_wide: no lattice dynamics, formation process, or sector assignment is claimed
+TOTAL: PASS=15 FAIL=0

@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_c3_invariant_coarse_graining_binary_r_selector_2026_08_12",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/koide_c3_invariant_coarse_graining_binary_r_selector_2026_08_12.py",
+ "seed": 27585,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180625Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2bdf8c8a6879102966dcb196ff9e8f5f0f1dde84d4c7bdad1f2234f6a2baa0ef",
+ "stdout_tail": "|^2 are source-bound\nPASS: custody-parent the Q(r) line and open selector are source-bound\nPASS: partition-exhaustion a three-element set has exactly the five enumerated partitions\nPASS: setwise-invariant-list exactly one-block, three-singletons, and singlet/doublet survive\nPASS: definition-sensitivity stronger blockwise invariance excludes the three-singleton partition\nPASS: three-channel-iff three coefficient powers are equal if and only if r=1\nPASS: two-block-iff the trivial/doublet aggregate powers are equal if and only if r=1/2\nPASS: normalized-points the two fixed-partition uniform vectors and r-blind one-block are exact\nPASS: global-entropy-boundary the fixed-partition maxima log(3) and log(2) are not a tied binary optimum\nPASS: coefficient-is-not-spectral uniform coefficient powers need not be uniform eigenvalue/PVM powers\nPASS: dependency-boundary spectral, Frobenius, custody, and minimal-axiom inputs are load-bearing; adjacent chains are not\nPASS: note-contract bounded status, no-edit boundary, scope correction, and audit hygiene hold\nper_element: all three coefficient labels and all five set partitions are enumerated\nper_site: one abstract circulant is checked; no lattice-site statement is inferred\nper_mode: spectral eigenmodes are explicitly separated from coefficient channels\nper_block: setwise invariance and fixed-partition aggregation are checked exactly\nlattice_wide: no lattice dynamics, formation process, or sector assignment is claimed\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180625Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

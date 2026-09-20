@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_backreaction_live_green_source_packet_manifest_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.py",
+ "seed": 27683,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180803Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=40 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cd8edd4ca63ff7e5c426e09bf22557f13a19fde759ddabf4a6d999dbdc90dd0f",
+ "stdout_tail": "49979ac43fc543f11d37a557eb011fbfa628401001c8e139336dec8\n[PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS\n[PASS] cache_runner_matches:green_closure_cache: scripts/frontier_staggered_backreaction_green_closure.py == scripts/frontier_staggered_backreaction_green_closure.py\n[PASS] cache_sha_fresh:green_closure_cache: eee3b3adb0ee477f2df71e27988dfb0a051a7b68fbb725060ac53491d5e943f8 == eee3b3adb0ee477f2df71e27988dfb0a051a7b68fbb725060ac53491d5e943f8\n[PASS] cache_exit_ok:green_closure_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:green_closure_cache: raw improvement factor: 2.81x\n[PASS] cache_runner_matches:prototype_helper_cache: scripts/frontier_staggered_backreaction_prototype.py == scripts/frontier_staggered_backreaction_prototype.py\n[PASS] cache_sha_fresh:prototype_helper_cache: 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975 == 24df57cb18a192ea901c663d35eec1e327d9b515cbbf67f5bb4539f950e1e975\n[PASS] cache_exit_ok:prototype_helper_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:prototype_helper_cache: STAGGERED SOURCE-GENERATED BACKREACTION PROTOTYPE\n========================================================================================\nSUMMARY: STAGGERED GREEN SOURCE PACKET PASS=40 FAIL=0\n========================================================================================\nOutput written: outputs/staggered_backreaction_live_green_source_packet_manifest_2026_06_04.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180803Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

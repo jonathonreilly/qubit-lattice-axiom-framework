@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_dirac_common_hw1_bz_corner_carrier_identification_2026_07_05",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/staggered_dirac_common_hw1_bz_corner_carrier_identification_2026_07_05.py",
+ "seed": 27683,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180803Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9dcb82a7e7538566f590d85e416c474a6ba79efcdfd248435c5fe43f6b636555",
+ "stdout_tail": " the concrete corners\n  PASS  S_3 is transitive on the concrete hw=1 level\n\n[K3] (I2) AC_lambda leg\n\n  PASS  U_mu|_V = T_mu matrix-identically against eq (2a)-(2c) for all mu\n  PASS  the three joint eigenvalue triples are pairwise distinct :: triples = [(-1, 1, 1), (1, -1, 1), (1, 1, -1)]\n  PASS  commutant of {U_mu|_V} is exactly the diagonal algebra C^3 (dim 3, off-diagonals vanish) :: commutant dim = 3\n\n[K4] (I3) C_3 action leg\n\n  PASS  R U_mu R^-1 = U_sigma(mu) exactly for all mu\n  PASS  R preserves V and acts on the ordered character basis as the cyclic shift (c_1->c_2->c_3->c_1) :: basis images = [1, 2, 0]\n  PASS  R|_V equals the cyclic generator C of the abstract notes\n  PASS  the action is a regular Z/3: order 3 and no fixed basis vector\n\n[K5] consumed-scope text checks\n\n  PASS  AC_lambda note's own out-of-scope disclaimer present (the gap this bridge closes)\n  PASS  finite translation-character note records three distinct supplied hw=1 characters\n  PASS  finite translation-character note records the transitive C_3 action\n  PASS  species-reduction (R4) records the exact four-copy defined-module decomposition\n  PASS  species-reduction (R5) keeps the copy index outside physical roles\n  PASS  Hamming note supplies the abstract grading (1, 3, 3, 1)\n\n[K6] negative control\n\n  PASS  hw=2 level is a distinct 3-element set, disjoint from the hw=1 corner set\n  PASS  hw=2 characters carry a DIFFERENT eigenvalue pattern (two -1 components each)\n\n=== SCORECARD ===\n  PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180804Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

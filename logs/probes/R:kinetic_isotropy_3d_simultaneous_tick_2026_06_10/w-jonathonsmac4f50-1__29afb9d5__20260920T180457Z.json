@@ -1,0 +1,35 @@
+{
+ "task": "R:kinetic_isotropy_3d_simultaneous_tick_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py",
+ "seed": 27497,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180457Z",
+ "elapsed_s": 78.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8c9160a220bd3966c98bbb1dc3866530e28ca4eaaac89843c76133d1afdb50e0",
+ "stdout_tail": "e Trotter cycle is +-(the reference order): central sign, physically equivalent  --  no ordering dial exists in the factorized cycle\n  [PASS] factorized drift-only check: every sampled word of decorated shifts has W^2 = (unimodular scalar) I: exactly linear bands, NO cone at this density  --  curved (Dirac-cone) 3D matter dispersion is larger-cell/density content -- named open, stated not implied\n\nLINEAR PERMUTATION-EQUIVARIANT SITE-LICENSE FAMILY: EXACT EQUATIONS\n==============================================================================\n  [PASS] orbit reduction: 4 component orbits (parity weight) and 6 hop orbits (computed)  --  the equivariant site-license family has 4 + 12 complex orbit parameters\n  [PASS] exact kills: per-orbit d*conj(c) = 0 for ALL 6 orbits; cross-orbit d*conj(d') = 0 for the two opposite-side-hop pairs  --  remaining cross-orbit coexistence is excluded at sweep grade (F2b), not by the exact backbone\n  [PASS] kill-propagation collapses the exact system to 25 leaves (canonical ordering; deterministic)  --  25 leaves; 16 retain transport (d) coefficients\n  [PASS] dense per-leaf sweep diagnostic: no dispersive unitary found among optimizer endpoints  --  22 optimizer-distinct unitaries across 25 leaves; dispersive: 0 -- endpoint count diagnostic only; exact-kill backbone\n\n==============================================================================\nSCORECARD: PASS=20 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180615Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

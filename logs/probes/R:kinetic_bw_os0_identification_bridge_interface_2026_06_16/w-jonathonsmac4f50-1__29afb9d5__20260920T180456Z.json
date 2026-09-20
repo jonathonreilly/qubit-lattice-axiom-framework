@@ -1,0 +1,34 @@
+{
+ "task": "R:kinetic_bw_os0_identification_bridge_interface_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kinetic_bw_os0_identification_bridge_interface_2026_06_16.py",
+ "seed": 27496,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180456Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c1145b9f963b76730f733cb04d25af6bb58098d2fd9350d8f5f5c7123d5c7913",
+ "stdout_tail": "er_site: checked and not executed \u2014 this runner builds no lattice and carries no site index; every object above is a function of the single momentum symbol k on one axis, so there is no site sum, no neighbour edge and no site-resolved quantity to resolve.\n  per_mode: resolved mode by mode, which is where the obstruction actually lives -- at each momentum the real-time band keeps d omega/dk = 1 while the Euclidean envelope T_r(k) = exp(-r k) is sampled at k = 0.1, 0.7, 1.3 and stays a strict contraction for every r, and at k = 0.4 the positive envelope is separated from the unitary phase exp(i omega) for r = 1/2, 1, 2 one r at a time.\n  per_block: checked and not executed \u2014 there is exactly one 2x2 K/CPT-paired quasi-energy block here and no direct sum or block decomposition is ever formed; the only block-level facts, unitarity and the omega <-> -omega pairing, are already the entrywise checks above, so no further granularity exists at block level.\n  lattice_wide: checked and not executed \u2014 no volume, no site sum and no continuum or thermodynamic limit is taken; the entire witness is the one-parameter family E_E(k) = r |omega(k)| on a single axis, and this note's own N5 restricts the negative phrase to that per-axis statement rather than a lattice-wide B-W impossibility.\n\nSCORECARD: PASS=22 FAIL=0\nVERDICT: B-W is not automatic from the unit real-time band slope. A separate OS0 Wick/readout normalization rule is still required; with the supplied r=1 rule the ratio becomes one.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180456Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

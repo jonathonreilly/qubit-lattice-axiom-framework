@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_delta_c3_circulant_spectral_boundary_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/koide_delta_c3_circulant_spectral_boundary_2026_06_08.py",
+ "seed": 27588,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180628Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3fb5e45f97bdf132f5909dd6bc22fb950cba15dab9cfd64977964428e581e856",
+ "stdout_tail": "EGENERATE; comparator delta=2/9 is NON-degenerate, interior u=cos(2/3)~0.786, sin(3*2/9)!=0 -> not a spectral-stationary point\n       gaps: 0=1.6e-15, 60=1.8e-15, 2/9=0.9178; u_phys=0.7859 interior=True; sin(3*2/9)=0.6184\n[PASS] D6: eigenvalue SET invariant under delta -> -delta (relabel k -> -k) -> masses EVEN in delta: SIGN of delta undetermined by spectrum (Z2 orientation residual); |delta| fixed by u\n       spectrum(+0.41)==spectrum(-0.41): True\n[PASS] D7: u_target=cos(2/3)~0.786 is strictly interior to [-1,1]; det and Tr log have NO interior critical point in u (monotonic), so these canonical spectral functionals do not select delta=2/9\n       u_phys=0.78589 in (-1,1); canonical functionals monotonic (d(det)/du=2*c**3!=0) -> no interior extremum\n[PASS] D8: the squared-Vandermonde discriminant has its interior critical point at u*=0 (delta=30deg), amplitude-INDEPENDENT, a concave MAX; not the comparator u=cos(2/3)~0.786.\n       u* solving dD/du=0 -> [0] (=0); d2D/du2=-216*c**6 (<0, max); argmax_delta==30deg for all amplitudes: True\n\nTOTAL: PASS=8 FAIL=0\nVERDICT: symmetric spectral quantities of the Hermitian C3 circulant collapse to u=cos(3 delta).\nThe canonical spectral examples det and Tr log are monotone in u and are stationary only at the\ndegenerate delta=k*60deg boundary; the discriminant extremizes at delta=30deg. The runner supports\nthis bounded spectral boundary only. It does not close non-spectral, labeled, dynamical, or future\nreadout routes to the Koide phase.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+[PASS] 01 the proper cubic group contains exactly twenty-four rotations
+[PASS] 02 cubic covariance alone leaves three symmetric quadratic kernels
+[PASS] 03 gauge transversality alone leaves six symmetric quadratic kernels
+[PASS] 04 their exact intersection is one-dimensional
+[PASS] 05 the surviving normalized kernel is q-squared delta minus q-i q-j
+KERNEL_DIMENSIONS cubic_only=3 transverse_only=6 joint=1
+CERTIFICATE: polynomial_order=q2 symmetric_kernel=True proper_cubic_covariance=True gauge_transversality=True analyticity_assumed=True higher_orders_unconstrained=True
+TOTAL: PASS=5 FAIL=0

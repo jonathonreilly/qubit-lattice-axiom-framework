@@ -1,0 +1,35 @@
+{
+ "task": "R:stack_spectral_transcription_weak_registration_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "stack",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/stack_spectral_transcription_weak_registration_2026_06_11.py",
+ "seed": 27682,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180802Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "514b059e71b9ca97e781772c6187fc05237447a85894c6ddd9b534f8701e86be",
+ "stdout_tail": "  --  omega_c(0.3) = 0.09584 ~ eps^2 = 0.090: records too weak to resolve slower precession\n  [PASS] Window closes quadratically: omega_c(eps)/eps^2 stays O(1) across eps  --  window and band error vanish together in the weak-registration limit\n\nHOSTILE WITNESSES\n==============================================================================\n  [PASS] Strong registration eps = pi/4: Prony roots REAL (band destroyed) and decay = (cos omega)^n exactly  --  roots [-1.76447  0.62161], decay ratio 0.62161 = cos(omega) = 0.62161: maximal registration overdamps every frequency -- the weak limit is load-bearing\n  [PASS] Second interleaved frequency SHIFTS the recovered band: contamination detected, not hidden  --  recovered 1.1715 vs clean 0.8993: the stack-level one-spectrum content\n\nSCOPE HONESTY: what is NOT proved here\n==============================================================================\n  [PASS] Single-fiber exactly solvable model of the arrow-note class: the realized-stack production bridge is NOT derived  --  that the realized stack is of this class remains outside this theorem\n  [PASS] Faithful limit is an idealization: at strictly eps = 0 no records form (amplitude -> 0 with the window)  --  records and perfect transcription coexist only asymptotically; the tradeoff is soft, not erased\n\n==============================================================================\nSCORECARD: PASS=21 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180803Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/koide_embedding_framing_writhe_so2_vs_spin_z2_decoupling_2026_06_02.py",
+ "seed": 27589,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180629Z",
+ "elapsed_s": 3.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c53a7bf156d0a310a7c77442364e5574ea87fdcbb54a45313b55e9c547ef3766",
+ "stdout_tail": "ap into individual invariant-factor modes and the runner keeps precisely those with elementary divisor 2. Representation-theoretically the same 2 pi exchange rotation about a fixed axis is evaluated separately in each mode: the R^3 vector frame returns +I_3 and the spin-1/2 frame returns -I_2, both to 1e-9, with Ad(-I_2) = I_3 confirming the sign is quotiented away in the adjoint mode.\n  per_block: resolved as the two token copies. The whole object is the unordered two-particle configuration space UD_2, so the blocks are the two registrations of the same particle, and the exchange class is exactly the one that interchanges them. The runner establishes its order directly, showing 2t lies in the image of d2 while t does not, which is what forces every integer-valued framing to vanish on it; the same block structure is rebuilt independently on all three carriers.\n  lattice_wide: resolved at fixed finite volume and deliberately not extended to a limit. The quantifiers really do range over whole complexes: every integral 1-cocycle of the entire UD_2 nullspace is paired with t, and t is shown to be a rational boundary over the whole complex. But the lattice is the finite 3x3x2 slab and no infinite-volume limit is taken, because none is needed: the obstruction is a comparison of coefficient groups, Z-valued writhe against Z_2 spin torsion, which is volume-independent and reproduces identically on K_{3,3} and K_5, two carriers that are not lattices at all.\n\nSCORECARD: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180633Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "task": "R:koide_corner_dirac_determinant_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/koide_corner_dirac_determinant_2026_06_08.py",
+ "seed": 27588,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180628Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=6 FAIL=0",
+   "PASS=6, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "52986b697de61ff3913888f3fd760bcf049508a21850b548af309fbe143866ed",
+ "stdout_tail": "ot selected by the native J_cs=(C-C^2)/sqrt3 diagnostic; J_cs commutes with M and its SO(2) flow preserves |det M| and the singular values -> measure-neutral, so this determinant diagnostic does not SELECT that count.\n       [J_cs,M]=0: True; |det M| & singular values J_cs-invariant: True\n\nSCORECARD PASS=6 FAIL=0\nVERDICT: the tested C3 generation Dirac operator D=[[0,M],[M^dag,0]] has det D = -|det M|^2 (SECOND order) and eigenvalues +- the singular values of M -> the tested determinant reading counts the modulus -> r=1. A first-order Weyl half det M is complex, but its MAGNITUDE is still the modulus and its phase is not a magnitude selector; the native complex-structure diagnostic preserves |det M| and singular values. This prunes the tested corner-Dirac determinant route only; it does not classify Koide r=1/2 globally. The independent audit lane owns status.\nper_element: checked \u2014 symbolic determinant identity detD+det(M Mdag)=0 holds=True.\nper_site: checked \u2014 one C3 generation carrier has |det M|=0.531655, equal to product singular values=0.531655.\nper_mode: checked \u2014 all six Dirac eigenvalue magnitudes pair with the three singular values=True.\nper_block: checked \u2014 the Re(b)/Im(b) doublet Hessian has rank 2 and entries [[12, 0], [0, 12]], selecting two real modulus modes.\nlattice_wide: checked and not executed \u2014 the corner-Dirac claim supplies no lattice/global Koide selector; the executed J_cs flow preserves determinant magnitude and singular values=True, PASS=6, FAIL=0.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180628Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

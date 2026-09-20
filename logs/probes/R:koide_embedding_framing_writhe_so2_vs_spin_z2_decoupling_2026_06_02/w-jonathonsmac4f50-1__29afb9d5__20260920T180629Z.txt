@@ -1,0 +1,57 @@
+========================================================================
+Obstruction I+II: writhe (Z-valued) framing vanishes on the 2-torsion swap
+========================================================================
+[PASS] K_{3,3}: UD_2 carries a Z_2 exchange-torsion class t
+[PASS] K_{3,3}: t is a 1-cycle (d1 t = 0)
+[PASS] K_{3,3}: 2t in im(d2) and t not in im(d2)  (t is exactly 2-torsion)
+[PASS] K_{3,3}: EVERY integral 1-cocycle pairs to 0 with the swap t (dim Z^1_Z=18)  -- writhe/SO(2)-framing -> +1 on the swap, cannot be the fermionic -1
+[PASS] K_5: UD_2 carries a Z_2 exchange-torsion class t
+[PASS] K_5: t is a 1-cycle (d1 t = 0)
+[PASS] K_5: 2t in im(d2) and t not in im(d2)  (t is exactly 2-torsion)
+[PASS] K_5: EVERY integral 1-cocycle pairs to 0 with the swap t (dim Z^1_Z=15)  -- writhe/SO(2)-framing -> +1 on the swap, cannot be the fermionic -1
+[PASS] Z^3 slab 3x3x2: UD_2 carries a Z_2 exchange-torsion class t
+[PASS] Z^3 slab 3x3x2: t is a 1-cycle (d1 t = 0)
+[PASS] Z^3 slab 3x3x2: 2t in im(d2) and t not in im(d2)  (t is exactly 2-torsion)
+[PASS] Z^3 slab 3x3x2: EVERY integral 1-cocycle pairs to 0 with the swap t (dim Z^1_Z=168)  -- writhe/SO(2)-framing -> +1 on the swap, cannot be the fermionic -1
+
+========================================================================
+Obstruction I (group/codimension): normal bundle of a Z^3 edge is SO(2)
+========================================================================
+[PASS] Z^3 edge normal-bundle rank = 2 (codim of 1-complex in R^3)
+[PASS] normal-bundle structure group is SO(2); pi_1(SO(2))=Z (writhe valued in Z)  -- framing self-linking (Calugareanu) is an INTEGER
+[PASS] fermionic swap sign is pi_1(SO(3))=Z_2 (SU(2) double cover) -- a DIFFERENT group  -- Z (writhe) -/-> Z_2 (spin sign) on the torsion class
+
+========================================================================
+Obstruction III: the -1 needs the SPIN rep; vector(adjoint) frame gives +1
+========================================================================
+[PASS] R^3 VECTOR/adjoint frame after 2pi exchange rotation = +I_3 (trivial)  -- the embedding's O(3) frame (and Ad(-I)=I_3) sees the swap as +1
+[PASS] SPIN-1/2 frame after 2pi exchange rotation = -I_2 (the swap sign)  -- the -1 lives ONLY in the spinor (matter-state) rep
+[PASS] Ad(-I_2) = I_3 on su(2): the on-site spinor 2pi sign is quotiented in the operator(adjoint) frame
+
+========================================================================
+Consistency with the parent no-go's P(t)=0 (the framing is a CONFIG-SPACE,
+not base-edge, object): a non-fibered GF(2) cocycle nonzero on t EXISTS but
+is NOT integral -- so it is NOT a writhe; it is genuine Z_2/Bockstein data.
+========================================================================
+[PASS] K_{3,3}: a GF(2) cocycle phi with phi(t)=1 EXISTS (swap sign realizable as config-space data)
+[PASS] K_{3,3}: that swap cocycle is NON-FIBERED (depends on parked token, not a base-edge connection)
+[PASS] K_{3,3}: the swap sign is NOT in the image of integral framing classes (2-torsion, Bockstein) -> writhe cannot realize it
+
+========================================================================
+Obstruction IV: the SO(2)/U(1) framing CONNECTION route is closed too
+(t = 0 in H_1(;R): every FLAT real framing connection gives holonomy +1)
+========================================================================
+[PASS] K_{3,3}: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
+[PASS] K_5: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
+[PASS] Z^3 slab 3x3x2: t = 0 in H_1(;R) (rational boundary) => every flat U(1)/SO(2) framing connection has holonomy +1 on the swap  -- abelian framing (flat-Z_2, integral-writhe, OR real-holonomy) is blind to the swap; only the non-abelian SU(2)/spin torsion detects it
+
+========================================================================
+N5 execution certificate: what this runner resolves
+========================================================================
+  per_element: resolved at the level of individual cells of the Abrams complex. The 0-cells are unordered vertex pairs, the 1-cells are (parked vertex, moving edge) pairs and the 2-cells are disjoint edge pairs; the exchange class t is pulled out as one explicit column of the Smith transform, its cycle condition d1 t = 0 is checked coordinate by coordinate over all 1-cells, and each integral cocycle in the nullspace basis is paired against t cell by cell.
+  per_site: resolved, and it is the load-bearing distinction. The Z^3 slab is built site by site as an explicit 3x3x2 vertex set with nearest-neighbour edges along the three axis directions, and the decisive check is site-indexed: the GF(2) cocycle that does evaluate to 1 on the swap is shown NON-FIBERED, meaning its value on a given edge differs according to which vertex the second token is parked at. That is exactly why it is config-space data and not a base-edge framing connection.
+  per_mode: resolved in two independent senses, both computed rather than asserted. Homologically the Smith normal form splits the boundary map into individual invariant-factor modes and the runner keeps precisely those with elementary divisor 2. Representation-theoretically the same 2 pi exchange rotation about a fixed axis is evaluated separately in each mode: the R^3 vector frame returns +I_3 and the spin-1/2 frame returns -I_2, both to 1e-9, with Ad(-I_2) = I_3 confirming the sign is quotiented away in the adjoint mode.
+  per_block: resolved as the two token copies. The whole object is the unordered two-particle configuration space UD_2, so the blocks are the two registrations of the same particle, and the exchange class is exactly the one that interchanges them. The runner establishes its order directly, showing 2t lies in the image of d2 while t does not, which is what forces every integer-valued framing to vanish on it; the same block structure is rebuilt independently on all three carriers.
+  lattice_wide: resolved at fixed finite volume and deliberately not extended to a limit. The quantifiers really do range over whole complexes: every integral 1-cocycle of the entire UD_2 nullspace is paired with t, and t is shown to be a rational boundary over the whole complex. But the lattice is the finite 3x3x2 slab and no infinite-volume limit is taken, because none is needed: the obstruction is a comparison of coefficient groups, Z-valued writhe against Z_2 spin torsion, which is volume-independent and reproduces identically on K_{3,3} and K_5, two carriers that are not lattices at all.
+
+SCORECARD: PASS=24 FAIL=0

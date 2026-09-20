@@ -1,0 +1,35 @@
+{
+ "task": "R:kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py",
+ "seed": 27583,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180623Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bc32d25f3cd9b295107212e555d7d3ad0495fedac2dff2aacf6f223614d44c9a",
+ "stdout_tail": "d status firewall\n==============================================================================\n  [PASS] H1 target note wires both 2026-06-15 premise-discharge candidate packets  --  P1/P4 and P2/P3 now have explicit source packets for re-audit\n  [PASS] H2 all-period site-license packet states the finite-period flat-or-saturating discharge without status overreach  --  candidate packet narrows P1/P4 but keeps license/unitarity as named readings\n  [PASS] H3 tick-unitarity packet reduces P2/P3 to spectrum-reflection transport plus channel envelope  --  candidate packet narrows P2/P3 without bundling OS0 c_t/c_s\n  [PASS] H4 target source keeps primitive retirement, B-W, and audit authority firewalled  --  repair is source-side wiring only, not a retained-status claim\n  [PASS] H5 target source keeps downstream B-W inspection rows out of upstream dependencies  --  re-audit sees the downstream bridge rows without reversing the source dependency graph\n  [PASS] H6 B-W bridge packet reduces OS0 identification to W-IR while refuting full Wick pairing  --  B-W is no longer a naked bridge, but its residual remains named\n  [PASS] H7 WIR and realization packets expose the remaining readings without primitive retirement  --  bridge residual is now record-stack/realization/unit readings, not hidden OS0 prose\n\n==============================================================================\nSCORECARD: PASS=36 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180625Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

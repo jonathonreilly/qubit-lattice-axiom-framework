@@ -1,0 +1,34 @@
+{
+ "task": "R:koide_finite_beta_weight_is_the_partition_bit_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/koide_finite_beta_weight_is_the_partition_bit_2026_06_02.py",
+ "seed": 27593,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "29afb9d5",
+ "started_utc": "20260920T180633Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7aa5085e0a8f29045f74f7a90adcd587c0f3041fc3943c2d802402d9beae73dd",
+ "stdout_tail": "[PASS] Q(1/2)=2/3 (retained algebra anchor, used as target)\n[PASS] Q(1)=1 (direction-counting target)\n[PASS] cyclic vector e is NOT an eigenvector of H (b!=0)\n[PASS] H eigenline is democratic (1,1,1), distinct from vacuum e (overlap 1/sqrt3)\n[PASS] H eigen-gap = 3b (single energy scale)\n[PASS] beta=ln2/gap is the UNIQUE beta giving weight-ratio 1/2 (free posit, absorbs target)\n[PASS] t=1/2 (beta*gap=+ln2) -> r=1/2 -> Q=2/3\n[PASS] t=1 (beta=0, uniform/tracial) -> r=1 -> Q=1\n[PASS] identity beta*gap = -ln(t) collapses temperature onto the partition ratio\n[PASS] unconstrained MaxEnt state = I/3 (tracial) -> uniform per direction (r=1 side)\n[PASS] 2-outcome {P_id,P_perp} entropy maximized (=ln2) exactly at r=1/2 (genuine 1-bit reading)\n\nSCORECARD PASS=11/11\nSCORECARD PASS=11\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T180633Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

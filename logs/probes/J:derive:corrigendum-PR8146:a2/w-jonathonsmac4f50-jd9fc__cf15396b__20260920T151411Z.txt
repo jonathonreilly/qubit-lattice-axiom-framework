@@ -1,0 +1,52 @@
+U1  the 2:1 triples
+     Two predecessors at v, one at w.  The weight of an output a is the product of
+     phi(a, .) over the three, phi = p, q, r for equal, antipodal, orthogonal.
+     w = -v (antipodal):   v -> p^2 q,  -v -> q^2 p,  each of the four others -> r^3
+     w orthogonal:         v -> p^2 r,  w -> r^2 p,  -v -> q^2 r,  -w -> r^2 q,
+                           the two remaining -> r^3
+ok   antipodal: the majority beats the antipode iff p > q
+ok   and it beats the four others iff p^2 q > r^3, i.e. p > sqrt(r^3/q)
+     orthogonal: the four margins are [p*r*(p - r), r*(p - q)*(p + q), r*(p**2 - q*r), r*(p - r)*(p + r)]
+ok   orthogonal: p > max(q, r) suffices - checked at (5,2,4), where the antipodal fails
+     So the corrected condition is p > q AND p^2 q > r^3, i.e. p > max(q, sqrt(r^3/q)),
+     which is attempt a1's formula.  It also subsumes p > r:
+ok   sqrt(r^3/q) >= r iff r >= q, and when r < q the max is q > r - so r never has to be
+     written separately, which is why a1's two-term max is the whole condition.
+
+U2  the band
+     The original 'p > max(q,r)' fails exactly where p > max(q,r) but p^2 q <= r^3.
+     p > r and p^2 q <= r^3 give r^3 >= p^2 q > r^2 q, so r > q; and then
+     p is between r and sqrt(r^3/q).  So the band is exactly
+       { q < r < p <= sqrt(r^3/q) },  non-empty precisely when q < r.
+ok   on the campaign's line (p,1,2) the band is 2 < p <= sqrt(8) = 2.828..., a real interval
+ok   (5,2,4): p > max(q,r) is True, p^2 q = 50 vs r^3 = 64 -> in the band
+ok   (5/2,1,2): p > max(q,r) is True, p^2 q = 25/4 vs r^3 = 8 -> in the band
+ok   (3,1,2): p > max(q,r) is True, p^2 q = 9 vs r^3 = 8 -> not in the band
+ok   (5,2,3): p > max(q,r) is True, p^2 q = 50 vs r^3 = 27 -> not in the band
+
+U3  what the band points do
+ok   (5,2,4) antipodal weights: v 50, -v 20, others 64 - the argmax is 'other', not the majority
+ok   (5/2,1,2) antipodal weights: v 25/4, -v 5/2, others 8 - the argmax is 'other', not the majority
+
+U4  the audit
+ok   block 12's pack has ASSUMPTIONS_AND_IMPORTS.md at 3acd27d2fca8
+ok   the file carries 6 counterfactual-pass entries, one per block; block 12's is line 78
+ok   and it selects the counterfactual menu by 'q >= p or r >= p':
+       "- Counterfactual pass: a menu with `q ≥ p` or `r ≥ p` (the majority is not the most likely output; S1's condition fails, S3's `ε` is not small); a non..."
+     Attempt a1's line list names the note, the runner, RESULTS, HANDOFF, STATE and
+     GOAL.  It does not name this file at all.
+
+U5  why that is the interesting one
+     'q >= p or r >= p' is the negation of the DEFECTIVE condition.  By U2 the menus
+     where the majority is not the most likely output are strictly more than that:
+     the band q < r < p <= sqrt(r^3/q) also fails, and (5,2,4) is in it.  So the
+     block's own counterfactual pass - an executed check, designed to exhibit what
+     happens when S1's condition fails - selects its menu by a rule that can never
+     enter the band.  The check inherits the defect it was meant to guard.
+ok   at (5,2,4) the counterfactual's own selector says 'not a counterfactual menu' while
+     the majority is not the most likely output: the pass would have found the defect
+     had it been written with the corrected condition.  The corrigendum should add
+     this line, reading 'a menu with p <= max(q, sqrt(r^3/q))'.
+
+SUMMARY: PARTIAL attempt a1's corrected condition p > max(q, sqrt(r^3/q)) is re-derived here from the four 2:1 patterns and confirmed, including that it subsumes p > r; the band where the original fails is exactly q < r < p <= sqrt(r^3/q), non-empty precisely when q < r and equal to 2 < p <= 2 sqrt 2 on the campaign's own line; and a1's line list, which it closes with 'nothing is open', misses the block's ASSUMPTIONS_AND_IMPORTS pack file, whose counterfactual pass selects its menu by 'q >= p or r >= p' - the negation of the defective condition - and therefore can never enter the band
+HIT: the executed counterfactual pass of block 12 inherits the very defect it was meant to guard: it selects counterfactual menus by the negation of S1's wrong condition, so it cannot reach (5,2,4) or any band point, and the corrigendum needs that line as well as the ones attempt a1 lists

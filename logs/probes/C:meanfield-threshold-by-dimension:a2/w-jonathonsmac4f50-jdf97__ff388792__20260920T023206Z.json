@@ -1,0 +1,32 @@
+{
+ "task": "C:meanfield-threshold-by-dimension:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-jdf97",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/meanfield-threshold-by-dimension/w-jonathonsmac4f50-jdf97/run.py",
+ "seed": 71526,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff388792",
+ "started_utc": "20260920T023206Z",
+ "elapsed_s": 83.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "mean-field threshold is 3/n exactly (0.75 backward, 3/7 light-cone in d=3) and the executed brackets are (1.1,1.3) and (0.52,0.56), so mean field underestimates: True; G_3 = 1.792882 backward (= (4/3)G_FCC) and 1.377819 light-cone (= (7/2)(W/6 + <1/(14-E)>)), and the spin-wave plateau at beta >= 6 is within 0.70% of the executed value; 83s"
+ },
+ "review": "run.py gives the exact mean-field thresholds beta_c = 3/n for d = 1..4 and both neighbourhoods, proves 1-|phi|^2 = E(14-E)/49 for the light cone and 1-|phi|^2 = (3/4)(1-lambda_FCC) for the backward neighbourhood, and gets G_3 = 1.377819 (light cone, matching (7/2)(W/6 + <1/(14-E)>) with the Watson closed form and rigorously bracketed 1.36826 to 1.37993) and 1.792882 (backward, matching (4/3) times the published FCC constant to 4e-7), with G divergent for d <= 2; against the executed scans the threshold brackets are (1.1, 1.3) backward and (0.52, 0.56) light cone, both above the mean-field 0.75 and 0.4286, and the spin-wave plateau 1 - sigma^2 G is within 0.04 percent at beta = 24 and 0.70 percent at beta = 6, so both stated expectations hold and there is no HIT.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): Where memory should appear, by dimension, in the simplest approximations. For the sphere formation law with n predecessors (n = d + 1 backward, or 2d + 1 light-cone): (1) mean field: m' = A(n beta m) with A(k) = coth k - 1/k; threshold n beta/3 = 1; table for d = 1..4 and both neighbourhoods. (2) Gaussian (spin-wave) correction: m ~ 1 - sigma^2 G_d with G_d the plane return sum (infinite for d <= 2, finite for d >= 3: compute G_3 for both neighbourhoods numerically to 4 digits by FFT extrapolation in L, and with rigorous brackets if you can). (3) Compare with the executed thresholds and plateaus in logs/probes/X:formation-*/ when present (first look, 3+1 backward: no memory at beta <= 1, |m| = 0.74 at beta = 2, 0.92 at beta = 6; light-cone: 0.77 at beta = 1 on a 16^3 plane). Expectation: mean field underestimates the threshold; the spin-wave plateau is accurate to a few percent at beta >= 6. DELIVERABLE in your unit worktree: probes/work/compute/meanfield-threshold-by-dimension/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/meanfield-threshold-by-dimension/<name>/run.py\"",
+ "stdout_sha256": "ca31f4eac869caf5d878b9541d7c8e2343077b5cbb832528a197078b06286c06",
+ "stdout_tail": " 0.7500\nN3 light-cone n=7 beta=0.43: plateau |m| = 0.0104 (mean field 0.0757)\nN3 light-cone n=7 beta=0.48: plateau |m| = 0.0131 (mean field 0.4097)\nN3 light-cone n=7 beta=0.52: plateau |m| = 0.0252 (mean field 0.5143)\nN3 light-cone n=7 beta=0.56: plateau |m| = 0.2201 (mean field 0.5838)\nN3 light-cone n=7 beta=0.60: plateau |m| = 0.4144 (mean field 0.6345)\nN3 light-cone n=7: executed threshold between 0.52 and 0.56; mean field says 3/7 = 0.4286\nN4 the task's stated coupling: my own runs at beta = 6 on a 32^3 plane, T = 2000\nN4 backward n=4 beta=6 L=32: executed |m| = 0.9237 vs spin wave 1 - sigma^2 G_L = 0.9302 (0.70%), mean field 0.9564, sigma^2 = 0.039931, G_L = 1.7473, G_inf gives 0.9284\nN4 light-cone n=7 beta=6 L=32: executed |m| = 0.9669 vs spin wave 1 - sigma^2 G_L = 0.9685 (0.17%), mean field 0.9756, sigma^2 = 0.023243, G_L = 1.3531, G_inf gives 0.9680\nN3 mean field below the executed bracket for both neighbourhoods: True\nN2/N3 high-coupling check: beta=24.0 L=64: executed 0.9814 vs spin wave 0.9818 (0.04%); beta=6.0 L=32: executed 0.9237 vs spin wave 0.9302 (0.70%); beta=6.0 L=32: executed 0.9669 vs spin wave 0.9685 (0.17%)\nSUMMARY: mean-field threshold is 3/n exactly (0.75 backward, 3/7 light-cone in d=3) and the executed brackets are (1.1,1.3) and (0.52,0.56), so mean field underestimates: True; G_3 = 1.792882 backward (= (4/3)G_FCC) and 1.377819 light-cone (= (7/2)(W/6 + <1/(14-E)>)), and the spin-wave plateau at beta >= 6 is within 0.70% of the executed value; 83s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdf97",
+  "at_utc": "20260920T023343Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

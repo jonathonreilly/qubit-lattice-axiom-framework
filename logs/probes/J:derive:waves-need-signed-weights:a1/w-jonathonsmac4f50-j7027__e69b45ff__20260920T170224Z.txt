@@ -1,0 +1,68 @@
+Q1  what (a) needs, and what every treatment so far has been assuming
+     The branches of a gain-one rule with nonnegative weights are the eigenvalues of
+     the block companion matrix C(k), and nonnegativity gives |C(k)| <= C(0) entrywise
+     with rho(C(0)) = 1.  To conclude that |lambda(k)| = 1 forces each weight entry
+     onto a SINGLE displacement, all three prior treatments invoke Wielandt's equality
+     case: |B| <= C, rho(B) = rho(C) implies B = e^{i phi} D C D^{-1}.  But the
+     classification only uses the ENTRYWISE half of that conclusion,
+       |B_{mn}| = C_{mn}  for every entry,
+     and that half does not need Wielandt at all.
+
+Q2  the sub-eigenvector lemma
+     LEMMA.  C nonnegative irreducible with spectral radius rho; y >= 0, y /= 0, and
+     C y >= rho y entrywise.  Then C y = rho y, and y > 0 strictly.
+     PROOF.  Perron-Frobenius gives a strictly positive LEFT eigenvector v with
+     v^T C = rho v^T.  Then v^T (C y - rho y) = rho v^T y - rho v^T y = 0, while
+     C y - rho y >= 0 entrywise and v > 0, so every entry of C y - rho y vanishes.
+     Positivity of y is then (I + C)^{n-1} y > 0 by irreducibility.  []
+     The only import is the existence of a positive left Perron vector, which is the
+     standard statement of Perron-Frobenius, not its equality case.  Checked:
+ok        diffusive one-level: rho(C(0)) = 1 and the left 1-eigenvector has all entries of one sign
+ok        two-level chain: rho(C(0)) = 1 and the left 1-eigenvector has all entries of one sign
+ok        two-component one-level: rho(C(0)) = 1 and the left 1-eigenvector has all entries of one sign
+
+Q3  the squeeze
+     THEOREM.  With C = C(0) nonnegative irreducible, rho(C) = 1, and B = C(k)
+     satisfying |B| <= C entrywise: if B x = lambda x with x /= 0 and |lambda| = 1 then
+     |B| = C entrywise.
+     PROOF.  |x| >= 0 and |x| /= 0, and entrywise
+       |x| = |lambda||x| = |B x| <= |B| |x| <= C |x|,
+     so C|x| >= |x| = rho(C)|x|.  By Q2, C|x| = |x| and |x| > 0.  Then the whole chain
+     is an equality, so (C - |B|)|x| = 0 with C - |B| >= 0 and |x| > 0, which forces
+     C - |B| = 0 entrywise.  []
+     For NONNEGATIVE weights |B_{mn}| = C_{mn} says |sum_y w(y)_{mn} e^{-iky}| =
+     sum_y w(y)_{mn}, which holds only if all the displacements in that entry share a
+     phase - so on an OPEN set of k, only if the entry has a single displacement.
+     That is condition (i), and Wielandt is gone.  Checked on the two sides:
+ok        rigid transport at k = pi/3: |C(k)| = C(0) entrywise
+ok        rigid transport at k = 2*pi/5: |C(k)| = C(0) entrywise
+       - condition (i) holds, and this rule IS unimodular at every k
+ok        single-site but mixing at k = pi/3: |C(k)| = C(0) entrywise
+ok        single-site but mixing at k = 2*pi/5: |C(k)| = C(0) entrywise
+       - condition (i) ALSO holds - yet every branch is strictly inside the circle, so (i) is necessary and not sufficient, which is where condition (ii) does its work
+ok        two displacements in one entry at k = pi/3: |C(k)| /= C(0) entrywise
+ok        two displacements in one entry at k = 2*pi/5: |C(k)| /= C(0) entrywise
+       - condition (i) FAILS, so by the theorem no branch can be unimodular here
+
+Q4  when is the companion matrix irreducible?
+     Q2 needs irreducibility, and it is NOT automatic: the companion of a J-level rule
+     is irreducible only if the deepest level is actually used.  Checked:
+ok        a two-level rule that uses both levels: companion is irreducible
+ok        a two-level rule whose DEEPEST weight vanishes: companion is REDUCIBLE, and the
+       lemma does not apply to it - but such a rule is a (J-1)-level rule, so the
+       theorem applies to it after dropping the empty level.  The honest statement is
+       that J is the true depth, and then irreducibility of the companion reduces to
+       irreducibility of A = sum_j A_j, which is the hypothesis j62b1 already makes.
+ok        and for one level the companion IS A, so the condition is exactly A irreducible
+
+Q5  what is left assumed
+     Only Perron-Frobenius: a nonnegative irreducible matrix has spectral radius rho
+     with a strictly positive left eigenvector, and (I + C)^{n-1} > 0.  Wielandt's
+     equality case, which was the import in all four prior attempts, is no longer
+     needed for condition (i).  The PHASE condition (ii) - that the surviving phases
+     form a diagonal conjugation - still needs an argument, and Q3 gives none; but (ii)
+     is not what the open-set statement rests on, because (i) alone already confines k
+     to a proper closed subgroup unless every entry is single-site.
+
+SUMMARY: PARTIAL - the entrywise half of Wielandt's equality case, which is all that theorem (a) uses, is proved here directly from Perron-Frobenius: if C is nonnegative irreducible with rho(C) = 1, |B| <= C entrywise, and Bx = lambda x with |lambda| = 1, then |x| = |lambda||x| = |Bx| <= |B||x| <= C|x| makes |x| a sub-eigenvector, the positive left Perron vector forces C|x| = |x| and |x| > 0, the whole chain becomes an equality and (C - |B|)|x| = 0 with C - |B| >= 0 gives |B| = C entrywise - which for nonnegative weights is exactly condition (i), single displacement per entry on any open set of k; the only import left is ordinary Perron-Frobenius, not its equality case, and the side condition is irreducibility of the companion, shown here to fail exactly when the deepest level is unused (a rule of smaller true depth) and otherwise to reduce to irreducibility of A
+HIT: theorem (a)'s classification half no longer needs Wielandt's equality case in any of its scalar, one-level or many-level forms: the entrywise equality |B| = C follows in four lines from the existence of a positive left Perron vector, via the sub-eigenvector lemma applied to |x|, and that is the only part of Wielandt the argument ever used; the residual hypothesis is irreducibility of the block companion matrix, which fails precisely when the deepest level carries zero weight - a rule that is really of smaller depth - and otherwise reduces to irreducibility of the gain matrix A

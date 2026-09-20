@@ -55033,6 +55033,288 @@
   "what": "re-execute the runners of PR #8530 (ail39: records that move \u2014 pair-weight transit has the static law as e) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8530 --worker <name> --review \"...\""
  },
  {
+  "id": "J:falsifier:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): attack MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): attack MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): attack MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): attack MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): attack MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): attack MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): attack MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8545",
+  "type": "judgment",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8545 (Derive the formation-event law for mobile permanent records): for every number in the theorem statements of MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/mobile-record-formation-20260920; git show origin/codex/mobile-record-formation-20260920:<note>. Create probes/work/pr8545/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8545/<script>.py\""
+ },
+ {
+  "id": "P:8545",
+  "type": "pr-reexecution",
+  "lane": "mobile-record-formation-20260920",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8545",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8545 (Derive the formation-event law for mobile permanent records) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8545 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): attack ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): attack ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): attack ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): attack ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): attack ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): attack ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): attack ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8546",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the p): for every number in the theorem statements of ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920; git show origin/physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920:<note>. Create probes/work/pr8546/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8546/<script>.py\""
+ },
+ {
+  "id": "P:8546",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block40-bindin",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8546",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8546 (ail40: the binding scale pinned at the neutral value \u2014 the pair weight) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8546 --worker <name> --review \"...\""
+ },
+ {
   "id": "J:note:ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026_06_10",
   "type": "judgment",
   "lane": "adjacency",
@@ -57307,6 +57589,66 @@
   },
   "problem": "moving-kernel-inside-a-cluster",
   "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Does the Green-function kernel live inside a cluster of moving records? Write a simulator for the SPHERE menu with vacancies (content = a unit vector, carried; pair weight c * exp(beta s.s'); pair-weight transit; plus a heat-bath re-draw of nothing: contents never change). Since contents are carried and never re-drawn, the transverse field can only relax by records exchanging places: measure, in a slab that is fully occupied and aligned on average (start from a fully aligned half-filled lattice with a flat interface, beta = 3, c = neutral and c = 1), the transverse structure factor of the dense region against 1/(beta E(k)) and how fast it relaxes. Expectation: equal-time correlations follow the static law on the occupied set only if contents can mix; with carried contents the relaxation is diffusive in the exchange of records. Report what you see; this is exploratory. DELIVERABLE in your unit worktree: probes/work/compute/moving-kernel-inside-a-cluster/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-kernel-inside-a-cluster/<name>/run.py\""
+ },
+ {
+  "id": "C:pinned-loop-factors-table:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-loop-factors-table",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. Loop factors of the pinned law. For the six-axis rule on the lines (p,1,2), (p,1,1), (p,2,4), (p,1,3): (1) the eigenvalues l_1, l_2 of the one-neighbour probability and the plaquette factor 1 + 3 l_1^4 + 2 l_2^4 as functions of p (exact rationals at p = 3..24); (2) the exact factor of the two smallest two-cycle occupied sets of the cubic lattice (two plaquettes sharing an edge; the six-cycle around a cube corner) by enumeration of contents; (3) the value of p at which the plaquette factor reaches the content-less clumping activity per plaquette implied by the literature onset (exp(4 x 0.2216544) per BOND in the content-less gas: translate carefully and say what is and is not comparable); (4) compare with the executed onsets at the pinned scale. Expectation: the plaquette factor passes about 1.2 near p = 10 on (p,1,2). DELIVERABLE in your unit worktree: probes/work/compute/pinned-loop-factors-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/pinned-loop-factors-table/<name>/run.py\""
+ },
+ {
+  "id": "C:pinned-loop-factors-table:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-loop-factors-table",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. Loop factors of the pinned law. For the six-axis rule on the lines (p,1,2), (p,1,1), (p,2,4), (p,1,3): (1) the eigenvalues l_1, l_2 of the one-neighbour probability and the plaquette factor 1 + 3 l_1^4 + 2 l_2^4 as functions of p (exact rationals at p = 3..24); (2) the exact factor of the two smallest two-cycle occupied sets of the cubic lattice (two plaquettes sharing an edge; the six-cycle around a cube corner) by enumeration of contents; (3) the value of p at which the plaquette factor reaches the content-less clumping activity per plaquette implied by the literature onset (exp(4 x 0.2216544) per BOND in the content-less gas: translate carefully and say what is and is not comparable); (4) compare with the executed onsets at the pinned scale. Expectation: the plaquette factor passes about 1.2 near p = 10 on (p,1,2). DELIVERABLE in your unit worktree: probes/work/compute/pinned-loop-factors-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/pinned-loop-factors-table/<name>/run.py\""
+ },
+ {
+  "id": "C:pinned-sphere-simulator:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-sphere-simulator",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. A simulator for the sphere menu with moving records at the pinned scale. Write it (contents are unit vectors, carried; pair weight (beta/sinh beta) exp(beta s.s'); pair-weight transit between a record's position and an empty neighbour; optional content re-draw OFF). Validate it against exact enumeration on a 2x3 window with contents restricted to four directions. Then on a 24^3 lattice at density 0.5 and 0.8, beta = 2, 4, 8, from a fully aligned start: the magnetization of the records, the fraction of accepted moves, and the transverse structure factor of the records' field against 1/E(k) at small k. Report numbers and what limits the run (contents never change, so the field relaxes only by records trading places). DELIVERABLE in your unit worktree: probes/work/compute/pinned-sphere-simulator/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/pinned-sphere-simulator/<name>/run.py\""
+ },
+ {
+  "id": "C:pinned-sphere-simulator:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-sphere-simulator",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. A simulator for the sphere menu with moving records at the pinned scale. Write it (contents are unit vectors, carried; pair weight (beta/sinh beta) exp(beta s.s'); pair-weight transit between a record's position and an empty neighbour; optional content re-draw OFF). Validate it against exact enumeration on a 2x3 window with contents restricted to four directions. Then on a 24^3 lattice at density 0.5 and 0.8, beta = 2, 4, 8, from a fully aligned start: the magnetization of the records, the fraction of accepted moves, and the transverse structure factor of the records' field against 1/E(k) at small k. Report numbers and what limits the run (contents never change, so the field relaxes only by records trading places). DELIVERABLE in your unit worktree: probes/work/compute/pinned-sphere-simulator/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/pinned-sphere-simulator/<name>/run.py\""
  },
  {
   "id": "J:derive:tight-sibling-lemma:a1",
@@ -59771,6 +60113,230 @@
   "problem": "moving-kernel-with-vacancies",
   "title": "The transverse kernel and long-range order for the sphere menu with vacancies",
   "what": "DERIVATION, independent attempt 4 of 4: The transverse kernel and long-range order for the sphere menu with vacancies. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Block 19 (PR #8153) proved the infrared bound and long-range order for the full-lattice static sphere law by bond-plane reflection positivity; block 39's T5 shows that with an empty state the bond kernel stays positive semidefinite exactly for c >= c_0 = beta/sinh(beta). TASK: carry block 19's argument to the law with vacancies at fugacity z: (a) Gaussian domination with the enlarged one-site space; what the twisted partition function twists (only the records); (b) the infrared bound for the transverse field of the records, s_x 1[x occupied], and the sum rule with the density rho = <1[occupied]>; (c) long-range order for beta large and rho above an explicit value, or the obstruction; (d) the stiffness: how the coefficient of 1/E(k) depends on the density and on c. Exact finite checks on small tori with a two-valued content as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-kernel-with-vacancies/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-kernel-with-vacancies/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-sphere-order-and-stiffness:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-sphere-order-and-stiffness",
+  "title": "The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel",
+  "what": "DERIVATION, independent attempt 1 of 5: The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. This is the route by which a one-over-distance potential would come back under the moving-records reading. Block 19 (PR #8153) proved for the FULL-lattice sphere law: bond-plane reflection positivity, the domination of the twisted partition function, the infrared bound and long-range order above a coupling. TASK: do it with vacancies at c_0 = beta/sinh(beta): (a) reflection positivity of the law on the one-site space 'empty or a unit vector' at c_0 (the bond kernel is [[1, 1], [1, (beta/sinh beta) exp(beta s.s')]]: show it is positive semidefinite exactly on the floor, as for six axes); (b) the twist acts on records only: prove Z(h) <= Z(0); (c) the infrared bound for the field s_x 1[x occupied] and the sum rule, which now contains the density rho: <|m|^2> >= rho - (3/(2 beta ...)) sums: get the constants right; (d) long-range order for beta large and z large enough, with explicit numbers; (e) the STIFFNESS: the coefficient of 1/E(k) in the transverse structure factor as a function of beta and rho at large beta (spin-wave expansion on a lattice with a density rho of vacancies that themselves move). Exact finite checks with a two-valued content on small tori, as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-sphere-order-and-stiffness/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-sphere-order-and-stiffness/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-sphere-order-and-stiffness:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-sphere-order-and-stiffness",
+  "title": "The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel",
+  "what": "DERIVATION, independent attempt 2 of 5: The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. This is the route by which a one-over-distance potential would come back under the moving-records reading. Block 19 (PR #8153) proved for the FULL-lattice sphere law: bond-plane reflection positivity, the domination of the twisted partition function, the infrared bound and long-range order above a coupling. TASK: do it with vacancies at c_0 = beta/sinh(beta): (a) reflection positivity of the law on the one-site space 'empty or a unit vector' at c_0 (the bond kernel is [[1, 1], [1, (beta/sinh beta) exp(beta s.s')]]: show it is positive semidefinite exactly on the floor, as for six axes); (b) the twist acts on records only: prove Z(h) <= Z(0); (c) the infrared bound for the field s_x 1[x occupied] and the sum rule, which now contains the density rho: <|m|^2> >= rho - (3/(2 beta ...)) sums: get the constants right; (d) long-range order for beta large and z large enough, with explicit numbers; (e) the STIFFNESS: the coefficient of 1/E(k) in the transverse structure factor as a function of beta and rho at large beta (spin-wave expansion on a lattice with a density rho of vacancies that themselves move). Exact finite checks with a two-valued content on small tori, as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-sphere-order-and-stiffness/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-sphere-order-and-stiffness/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-sphere-order-and-stiffness:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-sphere-order-and-stiffness",
+  "title": "The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel",
+  "what": "DERIVATION, independent attempt 3 of 5: The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. This is the route by which a one-over-distance potential would come back under the moving-records reading. Block 19 (PR #8153) proved for the FULL-lattice sphere law: bond-plane reflection positivity, the domination of the twisted partition function, the infrared bound and long-range order above a coupling. TASK: do it with vacancies at c_0 = beta/sinh(beta): (a) reflection positivity of the law on the one-site space 'empty or a unit vector' at c_0 (the bond kernel is [[1, 1], [1, (beta/sinh beta) exp(beta s.s')]]: show it is positive semidefinite exactly on the floor, as for six axes); (b) the twist acts on records only: prove Z(h) <= Z(0); (c) the infrared bound for the field s_x 1[x occupied] and the sum rule, which now contains the density rho: <|m|^2> >= rho - (3/(2 beta ...)) sums: get the constants right; (d) long-range order for beta large and z large enough, with explicit numbers; (e) the STIFFNESS: the coefficient of 1/E(k) in the transverse structure factor as a function of beta and rho at large beta (spin-wave expansion on a lattice with a density rho of vacancies that themselves move). Exact finite checks with a two-valued content on small tori, as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-sphere-order-and-stiffness/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-sphere-order-and-stiffness/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-sphere-order-and-stiffness:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-sphere-order-and-stiffness",
+  "title": "The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel",
+  "what": "DERIVATION, independent attempt 4 of 5: The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. This is the route by which a one-over-distance potential would come back under the moving-records reading. Block 19 (PR #8153) proved for the FULL-lattice sphere law: bond-plane reflection positivity, the domination of the twisted partition function, the infrared bound and long-range order above a coupling. TASK: do it with vacancies at c_0 = beta/sinh(beta): (a) reflection positivity of the law on the one-site space 'empty or a unit vector' at c_0 (the bond kernel is [[1, 1], [1, (beta/sinh beta) exp(beta s.s')]]: show it is positive semidefinite exactly on the floor, as for six axes); (b) the twist acts on records only: prove Z(h) <= Z(0); (c) the infrared bound for the field s_x 1[x occupied] and the sum rule, which now contains the density rho: <|m|^2> >= rho - (3/(2 beta ...)) sums: get the constants right; (d) long-range order for beta large and z large enough, with explicit numbers; (e) the STIFFNESS: the coefficient of 1/E(k) in the transverse structure factor as a function of beta and rho at large beta (spin-wave expansion on a lattice with a density rho of vacancies that themselves move). Exact finite checks with a two-valued content on small tori, as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-sphere-order-and-stiffness/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-sphere-order-and-stiffness/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-sphere-order-and-stiffness:a5",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-sphere-order-and-stiffness",
+  "title": "The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel",
+  "what": "DERIVATION, independent attempt 5 of 5: The sphere menu with vacancies at the pinned scale: long-range order and the stiffness of the kernel. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. This is the route by which a one-over-distance potential would come back under the moving-records reading. Block 19 (PR #8153) proved for the FULL-lattice sphere law: bond-plane reflection positivity, the domination of the twisted partition function, the infrared bound and long-range order above a coupling. TASK: do it with vacancies at c_0 = beta/sinh(beta): (a) reflection positivity of the law on the one-site space 'empty or a unit vector' at c_0 (the bond kernel is [[1, 1], [1, (beta/sinh beta) exp(beta s.s')]]: show it is positive semidefinite exactly on the floor, as for six axes); (b) the twist acts on records only: prove Z(h) <= Z(0); (c) the infrared bound for the field s_x 1[x occupied] and the sum rule, which now contains the density rho: <|m|^2> >= rho - (3/(2 beta ...)) sums: get the constants right; (d) long-range order for beta large and z large enough, with explicit numbers; (e) the STIFFNESS: the coefficient of 1/E(k) in the transverse structure factor as a function of beta and rho at large beta (spin-wave expansion on a lattice with a density rho of vacancies that themselves move). Exact finite checks with a two-valued content on small tori, as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-sphere-order-and-stiffness/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-sphere-order-and-stiffness/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-what-is-a-source:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-what-is-a-source",
+  "title": "What is a source, and what is its strength, when records move?",
+  "what": "DERIVATION, independent attempt 1 of 5: What is a source, and what is its strength, when records move?. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. The framework has a one-over-distance response to a persistent source (block 36, PR #8507: static response 7/E(k) in the light-cone law; the static sphere law's Goldstone kernel in block 19) but NO definition of what a source is or how strong it is, so no strength of the long-range potential in the lattice's own units can be computed, and the memo's open gate 'the natural unit equals the Planck length' cannot be tested. TASK: propose and work out candidate definitions inside the moving-records picture with the pinned scale, and for each compute exactly on small systems, and to leading order on the cubic lattice, the field it produces at distance r in the ordered sphere-menu medium: (a) a pinned record (content held fixed at a site); (b) a jammed aligned cluster of N records: does its far field grow like N (additivity: a mass), like its surface, or not at all? (c) a density excess (extra records) in an aligned medium: does it source the transverse field at all, given that the field is the content and the content is carried? (d) a region where formation is faster. State which candidate gives a far field proportional to the number of records in the source, with which coefficient in terms of beta, rho and c_0. A clean negative (no candidate sources the massless mode additively) is an important result. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-what-is-a-source/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-what-is-a-source/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-what-is-a-source:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-what-is-a-source",
+  "title": "What is a source, and what is its strength, when records move?",
+  "what": "DERIVATION, independent attempt 2 of 5: What is a source, and what is its strength, when records move?. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. The framework has a one-over-distance response to a persistent source (block 36, PR #8507: static response 7/E(k) in the light-cone law; the static sphere law's Goldstone kernel in block 19) but NO definition of what a source is or how strong it is, so no strength of the long-range potential in the lattice's own units can be computed, and the memo's open gate 'the natural unit equals the Planck length' cannot be tested. TASK: propose and work out candidate definitions inside the moving-records picture with the pinned scale, and for each compute exactly on small systems, and to leading order on the cubic lattice, the field it produces at distance r in the ordered sphere-menu medium: (a) a pinned record (content held fixed at a site); (b) a jammed aligned cluster of N records: does its far field grow like N (additivity: a mass), like its surface, or not at all? (c) a density excess (extra records) in an aligned medium: does it source the transverse field at all, given that the field is the content and the content is carried? (d) a region where formation is faster. State which candidate gives a far field proportional to the number of records in the source, with which coefficient in terms of beta, rho and c_0. A clean negative (no candidate sources the massless mode additively) is an important result. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-what-is-a-source/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-what-is-a-source/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-what-is-a-source:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-what-is-a-source",
+  "title": "What is a source, and what is its strength, when records move?",
+  "what": "DERIVATION, independent attempt 3 of 5: What is a source, and what is its strength, when records move?. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. The framework has a one-over-distance response to a persistent source (block 36, PR #8507: static response 7/E(k) in the light-cone law; the static sphere law's Goldstone kernel in block 19) but NO definition of what a source is or how strong it is, so no strength of the long-range potential in the lattice's own units can be computed, and the memo's open gate 'the natural unit equals the Planck length' cannot be tested. TASK: propose and work out candidate definitions inside the moving-records picture with the pinned scale, and for each compute exactly on small systems, and to leading order on the cubic lattice, the field it produces at distance r in the ordered sphere-menu medium: (a) a pinned record (content held fixed at a site); (b) a jammed aligned cluster of N records: does its far field grow like N (additivity: a mass), like its surface, or not at all? (c) a density excess (extra records) in an aligned medium: does it source the transverse field at all, given that the field is the content and the content is carried? (d) a region where formation is faster. State which candidate gives a far field proportional to the number of records in the source, with which coefficient in terms of beta, rho and c_0. A clean negative (no candidate sources the massless mode additively) is an important result. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-what-is-a-source/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-what-is-a-source/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-what-is-a-source:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-what-is-a-source",
+  "title": "What is a source, and what is its strength, when records move?",
+  "what": "DERIVATION, independent attempt 4 of 5: What is a source, and what is its strength, when records move?. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. The framework has a one-over-distance response to a persistent source (block 36, PR #8507: static response 7/E(k) in the light-cone law; the static sphere law's Goldstone kernel in block 19) but NO definition of what a source is or how strong it is, so no strength of the long-range potential in the lattice's own units can be computed, and the memo's open gate 'the natural unit equals the Planck length' cannot be tested. TASK: propose and work out candidate definitions inside the moving-records picture with the pinned scale, and for each compute exactly on small systems, and to leading order on the cubic lattice, the field it produces at distance r in the ordered sphere-menu medium: (a) a pinned record (content held fixed at a site); (b) a jammed aligned cluster of N records: does its far field grow like N (additivity: a mass), like its surface, or not at all? (c) a density excess (extra records) in an aligned medium: does it source the transverse field at all, given that the field is the content and the content is carried? (d) a region where formation is faster. State which candidate gives a far field proportional to the number of records in the source, with which coefficient in terms of beta, rho and c_0. A clean negative (no candidate sources the massless mode additively) is an important result. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-what-is-a-source/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-what-is-a-source/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-what-is-a-source:a5",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-what-is-a-source",
+  "title": "What is a source, and what is its strength, when records move?",
+  "what": "DERIVATION, independent attempt 5 of 5: What is a source, and what is its strength, when records move?. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. The framework has a one-over-distance response to a persistent source (block 36, PR #8507: static response 7/E(k) in the light-cone law; the static sphere law's Goldstone kernel in block 19) but NO definition of what a source is or how strong it is, so no strength of the long-range potential in the lattice's own units can be computed, and the memo's open gate 'the natural unit equals the Planck length' cannot be tested. TASK: propose and work out candidate definitions inside the moving-records picture with the pinned scale, and for each compute exactly on small systems, and to leading order on the cubic lattice, the field it produces at distance r in the ordered sphere-menu medium: (a) a pinned record (content held fixed at a site); (b) a jammed aligned cluster of N records: does its far field grow like N (additivity: a mass), like its surface, or not at all? (c) a density excess (extra records) in an aligned medium: does it source the transverse field at all, given that the field is the content and the content is carried? (d) a region where formation is faster. State which candidate gives a far field proportional to the number of records in the source, with which coefficient in terms of beta, rho and c_0. A clean negative (no candidate sources the massless mode additively) is an important result. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-what-is-a-source/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-what-is-a-source/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-loop-expansion:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-loop-expansion",
+  "title": "The density field at the pinned scale from the rule's eigenvalues",
+  "what": "DERIVATION, independent attempt 1 of 4: The density field at the pinned scale from the rule's eigenvalues. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. At c_0 records interact only through cycles, with factors computed from the rule's eigenvalues l_1, l_2. TASK: (a) the exact expansion of the law of the occupied set on a finite window as a sum over cycle structures (for a unicyclic occupied set the factor is 1 + 3 l_1^n + 2 l_2^n; for two cycles sharing edges compute the factor by the transfer of K_1 and show the general rule); (b) a convergent expansion of the density-density correlation on the cubic lattice at small l_1, l_2 and an explicit region of (p, q, r, z) where the density is analytic in z (no clumping), with exact small-window checks; (c) a contour or chessboard argument (reflection positivity holds at c_0) for a dense aligned phase coexisting with a dilute one at large l_1, with an explicit region; (d) compare with the executed onsets on the line (p,1,2): above 16 at density 0.1, 8-12 at 0.3, 6-8 at 0.5, below 6 at 0.7. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-loop-expansion/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-loop-expansion/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-loop-expansion:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-loop-expansion",
+  "title": "The density field at the pinned scale from the rule's eigenvalues",
+  "what": "DERIVATION, independent attempt 2 of 4: The density field at the pinned scale from the rule's eigenvalues. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. At c_0 records interact only through cycles, with factors computed from the rule's eigenvalues l_1, l_2. TASK: (a) the exact expansion of the law of the occupied set on a finite window as a sum over cycle structures (for a unicyclic occupied set the factor is 1 + 3 l_1^n + 2 l_2^n; for two cycles sharing edges compute the factor by the transfer of K_1 and show the general rule); (b) a convergent expansion of the density-density correlation on the cubic lattice at small l_1, l_2 and an explicit region of (p, q, r, z) where the density is analytic in z (no clumping), with exact small-window checks; (c) a contour or chessboard argument (reflection positivity holds at c_0) for a dense aligned phase coexisting with a dilute one at large l_1, with an explicit region; (d) compare with the executed onsets on the line (p,1,2): above 16 at density 0.1, 8-12 at 0.3, 6-8 at 0.5, below 6 at 0.7. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-loop-expansion/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-loop-expansion/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-loop-expansion:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-loop-expansion",
+  "title": "The density field at the pinned scale from the rule's eigenvalues",
+  "what": "DERIVATION, independent attempt 3 of 4: The density field at the pinned scale from the rule's eigenvalues. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. At c_0 records interact only through cycles, with factors computed from the rule's eigenvalues l_1, l_2. TASK: (a) the exact expansion of the law of the occupied set on a finite window as a sum over cycle structures (for a unicyclic occupied set the factor is 1 + 3 l_1^n + 2 l_2^n; for two cycles sharing edges compute the factor by the transfer of K_1 and show the general rule); (b) a convergent expansion of the density-density correlation on the cubic lattice at small l_1, l_2 and an explicit region of (p, q, r, z) where the density is analytic in z (no clumping), with exact small-window checks; (c) a contour or chessboard argument (reflection positivity holds at c_0) for a dense aligned phase coexisting with a dilute one at large l_1, with an explicit region; (d) compare with the executed onsets on the line (p,1,2): above 16 at density 0.1, 8-12 at 0.3, 6-8 at 0.5, below 6 at 0.7. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-loop-expansion/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-loop-expansion/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:pinned-loop-expansion:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "pinned-loop-expansion",
+  "title": "The density field at the pinned scale from the rule's eigenvalues",
+  "what": "DERIVATION, independent attempt 4 of 4: The density field at the pinned scale from the rule's eigenvalues. SETTING (blocks 39 and 40, open PRs titled 'ail39: records that move' and 'ail40'): records move and carry their content; a site is empty or holds one record; two neighbouring records weigh W = c * omega (omega the rule's pair weights), a bond with an empty end weighs 1, a record weighs z; motion is pair-weight transit, in detailed balance with this law; formation happens at rate z * Z_x with content drawn from the rule. THE PINNED SCALE: c = c_0, the value at which W is the rule's one-neighbour probability divided by the uniform probability (six axes: c_0 = 6/(p + q + 4r), W = 6 K_1; sphere menu with omega = exp(beta s.s'): c_0 = beta/sinh(beta), W = the density of the rule against the uniform measure). At c_0: an empty site acts on each neighbour as a record of unknown content; the law with vacancies is reflection positive through bond planes (and not below c_0); on any window without a cycle the occupancies are independent with density 6z/(1 + 6z); a fully occupied cycle of length n carries the factor 1 + 3 l_1^n + 2 l_2^n with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r). The owner has accepted c = c_0 as the working value; it is not registered. At c_0 records interact only through cycles, with factors computed from the rule's eigenvalues l_1, l_2. TASK: (a) the exact expansion of the law of the occupied set on a finite window as a sum over cycle structures (for a unicyclic occupied set the factor is 1 + 3 l_1^n + 2 l_2^n; for two cycles sharing edges compute the factor by the transfer of K_1 and show the general rule); (b) a convergent expansion of the density-density correlation on the cubic lattice at small l_1, l_2 and an explicit region of (p, q, r, z) where the density is analytic in z (no clumping), with exact small-window checks; (c) a contour or chessboard argument (reflection positivity holds at c_0) for a dense aligned phase coexisting with a dilute one at large l_1, with an explicit region; (d) compare with the executed onsets on the line (p,1,2): above 16 at density 0.1, 8-12 at 0.3, 6-8 at 0.5, below 6 at 0.7. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/pinned-loop-expansion/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/pinned-loop-expansion/<name>/check.py\""
  },
  {
   "id": "X:formation-3plus1-sphere-memory",

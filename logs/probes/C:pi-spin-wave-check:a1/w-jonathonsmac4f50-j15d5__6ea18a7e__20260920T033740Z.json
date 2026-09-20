@@ -1,0 +1,32 @@
+{
+ "task": "C:pi-spin-wave-check:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j15d5",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/pi-spin-wave-check/w-jonathonsmac4f50-j15d5/run.py",
+ "seed": 75460,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ea18a7e",
+ "started_utc": "20260920T033740Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "expanding log pi about the aligned configuration gives lambda(k) = beta A(n beta) n (1 - phi^2) (the coefficient is beta A(n beta), and the sphere's own measure subtracts exactly 1), so the reversible law's spin-wave kernel is the formation kernel sigma^2/(1-phi^2) times 1/A(n beta)^2 = 1 + 2/(n beta) + ...: the same in every mode, 1.1597 at beta=2 and 1.0494 at beta=6 for n=7, which the numerical Hessian on a 4^3 torus reproduces mode by mode; the two agree to the order the expansion controls; 1s"
+ },
+ "review": "run.py expands -log pi about the aligned configuration and gets the symbol beta A(n beta) n (1 - phi(k)^2) - the coefficient is beta A(n beta), not A(n beta) - with the sphere's own measure subtracting exactly 1, and the numerical Hessian on 4^3 and 6^3 tori at beta = 2 and 6 reproduces that expansion to six digits in every mode and is transversely isotropic to machine zero; against the claimed formation kernel sigma^2/(1-phi^2) the per-mode ratio is constant to five digits at exactly 1/A(n beta)^2 = 1.15976 (beta=2) and 1.04938 (beta=6), so the shape agrees exactly and only the normalisation differs, by 1 + 2/(n beta) + O(1/(n beta)^2), which is the order the quadratic expansion cannot control; no HIT.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): The reversible law's spin waves reproduce the formation kernel. For the sphere menu Z(S) = 4 pi sinh(beta|S|)/(beta|S|), so pi(s) prop. to exp(sum_x log Z(S_x)). (1) Expand sum_x log Z(S_x) to second order in transverse fluctuations about the aligned configuration for a symmetric predecessor set of size n: show the quadratic form has symbol beta' n (1 - phi(k)^2) with beta' = A(n beta) (coth - 1/x) up to the terms you find, and hence the Gaussian covariance sigma^2/(1 - phi^2) with sigma^2 = A(n beta)/(n beta) or state the exact coefficient you get. (2) Do it with sympy for n = 7 on a small torus by explicit Hessian computation at beta = 2, 6 (numerical Hessian of -log pi at the aligned point, transverse directions only) and compare its inverse with the claimed kernel mode by mode. Expectation: agreement to the accuracy of the expansion; report the ratio per mode. DELIVERABLE in your unit worktree: probes/work/compute/pi-spin-wave-check/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/pi-spin-wave-check/<name>/run.py\"",
+ "stdout_sha256": "d263fa061a00eceef78ef56231ac4759c35df41a54c3fdb36f55303d4c1339c2",
+ "stdout_tail": "1, 1/A^2=1.1598\nN1 L=6 beta=2.0 without the measure term: Hessian/expansion over the 19 modes 0.999996 to 1.000001; (1/lambda)/claimed kernel 1.15976 to 1.15977, against 1/A^2 = 1.15976\nN1 L=6 beta=2.0 with the sphere measure term: Hessian isotropy residual 0.00e+00, A(n beta)=0.928571, 1/A^2=1.1598\nN1 L=6 beta=2.0 with the measure term: Hessian/expansion over the 19 modes 0.999996 to 1.000001; (1/lambda)/claimed kernel 1.25641 to 1.63333\nN1 L=6 beta=6.0 without the sphere measure term: Hessian isotropy residual 0.00e+00, A(n beta)=0.976190, 1/A^2=1.0494\nN1 L=6 beta=6.0 without the measure term: Hessian/expansion over the 19 modes 0.999999 to 1.000001; (1/lambda)/claimed kernel 1.04937 to 1.04938, against 1/A^2 = 1.04938\nN1 L=6 beta=6.0 with the sphere measure term: Hessian isotropy residual 0.00e+00, A(n beta)=0.976190, 1/A^2=1.0494\nN1 L=6 beta=6.0 with the measure term: Hessian/expansion over the 19 modes 0.999999 to 1.000001; (1/lambda)/claimed kernel 1.07561 to 1.15561\nSUMMARY: expanding log pi about the aligned configuration gives lambda(k) = beta A(n beta) n (1 - phi^2) (the coefficient is beta A(n beta), and the sphere's own measure subtracts exactly 1), so the reversible law's spin-wave kernel is the formation kernel sigma^2/(1-phi^2) times 1/A(n beta)^2 = 1 + 2/(n beta) + ...: the same in every mode, 1.1597 at beta=2 and 1.0494 at beta=6 for n=7, which the numerical Hessian on a 4^3 torus reproduces mode by mode; the two agree to the order the expansion controls; 1s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j15d5",
+  "at_utc": "20260920T033753Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

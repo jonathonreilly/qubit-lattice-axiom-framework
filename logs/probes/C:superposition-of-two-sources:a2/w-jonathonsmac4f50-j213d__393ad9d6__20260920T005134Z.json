@@ -1,0 +1,38 @@
+{
+ "task": "C:superposition-of-two-sources:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j213d",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/superposition-of-two-sources/w-jonathonsmac4f50-j213d/run.py",
+ "seed": 65494,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "393ad9d6",
+ "started_utc": "20260920T005134Z",
+ "elapsed_s": 533.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "at h = 0.5 the two-source field equals the sum of the one-source fields to within max|N|/max|S| <= 0.0002 (||N||/||S|| <= 0.0003) over beta = 3, 6, d = 4, 8 and both signs; at h = 2 the ratio is 0.0002 to 0.0033; largest ratio at h = 8: 0.0325, at h = 32: 0.0853; first h of the four above 2 %: 8.0"
+ },
+ "review": "run.py measures the four displacement fields with common random numbers and reports the superposition defect N = delta_AB - delta_A - delta_B against S = delta_A + delta_B: at most 0.02 % of max|S| at h = 0.5 and 0.33 % at h = 2 for beta = 3, 6, d = 4, 8 and both signs, so the task's 2 % additivity holds at h = 0.5 but its expected visible saturation at h = 2 does not appear; the 2 % line is first crossed at h = 8 (3.25 %) and the defect reaches 8.5 % at h = 32.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): Do sources add? Copy probes/lib/formation_response.py into your work directory and add a second source site at distance d along e_1 (same field h, then opposite sign). For the light-cone lattice (3s) at beta = 3 and 6 on a 32^3 plane, h = 0.5, d in {4, 8}: measure the displacement field with source A alone, B alone, and both (same random numbers in all four copies), and tabulate [both - A - B] against [A + B] along the line through the sources and perpendicular to it. Then h = 2 to find where additivity fails. Expectation: additive within 2 % at h = 0.5 (linear response), visible saturation at h = 2. Report numbers. DELIVERABLE in your unit worktree: probes/work/compute/superposition-of-two-sources/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/superposition-of-two-sources/<name>/run.py\"",
+ "stdout_sha256": "4b84b8e3a5af2066380ea2f7f5b0ecc96cc73bd1879990aac1a1948ddaa212db",
+ "stdout_tail": "6 0.5 8 + | 0.0001 | 0.0000 | 0.0000 0.0001\n  6 0.5 8 - | 0.0000 | 0.0000 | 0.0000 0.0000\n  6 2 4 + | 0.0008 | 0.0005 | 0.0007 0.0009\n  6 2 4 - | 0.0009 | 0.0006 | 0.0009 0.0008\n  6 2 8 + | 0.0006 | 0.0003 | 0.0004 0.0007\n  6 2 8 - | 0.0002 | 0.0001 | 0.0003 0.0002\n  6 8 4 + | 0.0114 | 0.0079 | 0.0103 0.0124\n  6 8 4 - | 0.0113 | 0.0087 | 0.0108 0.0118\n  6 8 8 + | 0.0060 | 0.0040 | 0.0049 0.0071\n  6 8 8 - | 0.0048 | 0.0036 | 0.0044 0.0053\n  6 32 4 + | 0.0572 | 0.0405 | 0.0530 0.0615\n  6 32 4 - | 0.0630 | 0.0501 | 0.0587 0.0674\n  6 32 8 + | 0.0287 | 0.0203 | 0.0243 0.0331\n  6 32 8 - | 0.0291 | 0.0213 | 0.0249 0.0332\nlargest max|N|/max|S| by h over beta, d, sign: h=0.5: 0.0002, h=2: 0.0033, h=8: 0.0325, h=32: 0.0853\nseconds=533\n==========================================================================================\nSUMMARY: at h = 0.5 the two-source field equals the sum of the one-source fields to within max|N|/max|S| <= 0.0002 (||N||/||S|| <= 0.0003) over beta = 3, 6, d = 4, 8 and both signs; at h = 2 the ratio is 0.0002 to 0.0033; largest ratio at h = 8: 0.0325, at h = 32: 0.0853; first h of the four above 2 %: 8.0\nHIT: no visible saturation at h = 2 (every ratio at or below 2 %): at h = 0.5 the two-source field equals the sum of the one-source fields to within max|N|/max|S| <= 0.0002 (||N||/||S|| <= 0.0003) over beta = 3, 6, d = 4, 8 and both signs; at h = 2 the ratio is 0.0002 to 0.0033; largest ratio at h = 8: 0.0325, at h = 32: 0.0853; first h of the four above 2 %: 8.0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j213d",
+  "at_utc": "20260920T010122Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "the expectation 'visible saturation at h = 2' is contradicted: the two-source field is additive to 0.33 % there (and one source is only 0.64 % below linear); additivity first fails above 2 % at h = 8, reaching 8.5 % at h = 32, with the defect larger at d = 4 than d = 8 and at beta = 3 than beta = 6",
+  "by": "w-jonathonsmac4f50-j213d",
+  "at_utc": "20260920T010122Z"
+ }
+}

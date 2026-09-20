@@ -1,0 +1,46 @@
+N1  the ingredient, exactly
+     p = 5      alpha_3 = 950/2449                 = 0.38791
+     p = 21/4   alpha_3 = 38199/97340              = 0.39243
+     p = 11/2   alpha_3 = 495/1216                 = 0.40707
+     p = 23/4   alpha_3 = 49381/117348             = 0.42081
+     p = 6      alpha_3 = 435/1003                 = 0.43370
+     p = 25/4   alpha_3 = 255/572                  = 0.44580
+     p = 7      alpha_3 = 18/37                    = 0.48649
+     p = 21/2   alpha_3 = 399/611                  = 0.65303
+     p = 11     alpha_3 = 55/82                    = 0.67073
+ok   alpha_3 increases along the line: the coupling gets harder as p grows
+     It is the site-wise maximal-coupling failure rate: with one parent disagreeing,
+     the two children can be coupled except on a set of probability alpha_3.
+
+N2  the percolation threshold   [numerical, labelled]
+     survival of the disagreement cluster to level T from one disagreeing site:
+       q = 0.4    T = 400   survival = 0.000
+       q = 0.42   T = 600   survival = 0.000
+       q = 0.425  T = 600   survival = 0.000
+       q = 0.43   T = 600   survival = 0.015
+       q = 0.45   T = 400   survival = 0.367
+       q = 0.5    T = 400   survival = 0.683
+ok   q_c lies between 0.425 and 0.45: below it the disagreement dies out, so
+     memory is lost whenever alpha_3(p) < q_c.
+
+N3  route (ii)'s ceiling
+ok   alpha_3 = 0.42081 at p = 23/4 and 0.43370 at p = 6, so the crossing is between them:
+     route (ii) certifies up to p of about 6.0 and no further.
+     Attempt a3's averaged Wasserstein reaches 5.26, so the gain is about 0.6 in p.
+
+N4  what the located transition would require
+ok   at the located p = 10.5 the ingredient is alpha_3 = 0.6530, which a
+     percolation criterion could only beat with q_c >= 0.65 - half again the measured
+     threshold 0.430.  The route does not fail narrowly at 10.5; it fails
+     by 50 per cent in its own ingredient.  No sharpening of the percolation estimate
+     closes that, because q_c is a property of the DAG, not of the rule.
+
+N5  the four criteria on (p,1,2)
+     branching / Dobrushin, 3 alpha_3 < 1      p < 3.7564   (exact, causal-clauses a3)
+     one-site averaged Wasserstein             p <= 5.26    (attempt a3 of this task)
+     disagreement percolation, alpha_3 < q_c   p ~ 5.9      (this attempt, measured)
+     executed, located                         p in (10.5, 11)   (block 28, PR #8172)
+ok   so the three criteria are ordered and all three sit below the located value
+
+SUMMARY: PARTIAL the task's route (ii) is settled before it is built: its ingredient is the site-wise maximal-coupling failure rate alpha_3(p), exactly 0.38791 at p = 5 and 0.43370 at p = 6, and the disagreement cluster is dominated by oriented site percolation on the three-parent level DAG, whose threshold measures as q_c in (0.425, 0.43); so route (ii) certifies to p of about 5.9, gaining about 0.6 over attempt a3's 5.26, and at the located p = 10.5 the ingredient is 0.653, which would need q_c >= 0.65 - half again the DAG's actual threshold
+HIT: disagreement percolation cannot reach the located 10.5 and barely improves on the one-site criterion: alpha_3(10.5) = 0.653 against a measured percolation threshold of 0.425 to 0.43, so the route fails by 50 per cent in its own ingredient, and the failure is a property of the DAG rather than of the estimate

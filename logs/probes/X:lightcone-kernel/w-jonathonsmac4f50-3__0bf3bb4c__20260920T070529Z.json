@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-kernel",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 12 48 1500 500 1",
+ "seed": 87929,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0bf3bb4c",
+ "started_utc": "20260920T070529Z",
+ "elapsed_s": 21.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=12.0 L=48 T=1500 plateau_|m|=0.9836 lowk_ratio=0.9995 seconds=21"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The equal-time kernel under light-cone formation against 7 sigma^2/(2 E(k)(1 - E(k)/14)): normalization by shell, and the covariance column for the 1/r law. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 32 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "fa4bddbc6915a73c34f4482728debde35d5d99ba89700a1a5f3369627df1041f",
+ "stdout_tail": "       8  0.9846  +0.9846\n        11  0.9844  +0.9844\n        16  0.9843  +0.9843\n        21  0.9841  +0.9841\n        29  0.9840  +0.9840\n        39  0.9839  +0.9839\n        53  0.9839  +0.9839\n        71  0.9838  +0.9838\n        97  0.9838  +0.9838\n       131  0.9838  +0.9837\n       178  0.9837  +0.9837\n       241  0.9836  +0.9836\n       327  0.9837  +0.9837\n       443  0.9838  +0.9838\n       601  0.9837  +0.9837\n       815  0.9835  +0.9834\n      1106  0.9836  +0.9835\n      1500  0.9836  +0.9835\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.9995 (n=56)\n   |k| in [0.3,0.6): 1.0004 (n=380)\n   |k| in [0.6,1.0): 1.0044 (n=1426)\n   |k| in [1.0,1.5): 1.0081 (n=4492)\n   |k| in [1.5,2.2): 1.0078 (n=13578)\n   |k| in [2.2,3.2): 1.0076 (n=41209)\n   |k| in [3.2,6.0): 1.0073 (n=49450)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.002480  +0.002475  1.002  +0.00248\n     2  +0.001719  +0.001717  1.001  +0.00343\n     3  +0.000911  +0.000915  0.996  +0.00274\n     4  +0.000646  +0.000648  0.998  +0.00259\n     6  +0.000362  +0.000359  1.009  +0.00215\n     8  +0.000235  +0.000222  1.061  +0.00177\n    12  +0.000108  +0.000090  1.205  +0.00108\n    16  +0.000053  +0.000030  1.776  +0.00048\n    24  +0.000028  -0.000006  -4.356  -0.00016\nSUMMARY: dim=3 menu=sphere beta=12.0 L=48 T=1500 plateau_|m|=0.9836 lowk_ratio=0.9995 seconds=21\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260920T070551Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

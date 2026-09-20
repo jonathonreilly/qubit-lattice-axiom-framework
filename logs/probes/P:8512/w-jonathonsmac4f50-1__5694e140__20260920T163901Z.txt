@@ -1,0 +1,11 @@
+PR #8512: ail38: how records form — the static law is outside the hull of every adapted formation law on a window with a cycle, and under a fixed predecessor structure every rate, order and unit clause gives one law
+branch physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_how_records_form_static_law_outside_adapted_hull_clause_independence_causal_structure_2026_09_20.py: rc=0 PASS=15 FAIL=0
+   mutation inequality_direction_wrong: expected B observed B ok
+   mutation tree_window_strict_injected: expected B observed B ok
+   mutation adapted_bound_wrong: expected B observed B ok
+   mutation causal_gate_removed: expected C observed C ok
+   mutation noncausal_control_equal_injected: expected C observed C ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

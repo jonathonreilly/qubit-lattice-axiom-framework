@@ -1,0 +1,53 @@
+H1  the heat-kernel representation
+     1/E(k) = int_0^inf e^{-t E(k)} dt for E(k) > 0, and E(k) = 6 - 2 sum_a cos k_a,
+     so G(x) = int (2pi)^-3 e^{ik.x}/E = int_0^inf e^{-6t} prod_a J_a(t) dt with
+     J_a(t) = (2pi)^-1 int e^{i k x_a + 2t cos k} dk = I_{x_a}(2t).
+ok   (2pi)^-1 int e^{i m k + 2t cos k} dk = I_m(2t) for m = 0..3 at t = 0.3 and 1.7
+
+H2  the continuum integral behind the tail
+ok   int_0^inf (4 pi t)^{-3/2} e^{-r^2/(4t)} dt = 1/(4 pi r)
+     e^{-6t} prod_a I_{x_a}(2t) is the transition kernel of the simple cubic walk at
+     continuous time; it is (4 pi t)^{-3/2} e^{-|x|^2/(4t)} (1 + O(1/t)) uniformly on
+     |x|^2 = O(t), and integrating that against dt gives the Newtonian tail.  H4
+     executes the conclusion, which is the step a2 and a3 leave as an import.
+
+H3  the on-site value
+ok   G(0) = 0.252731009858663003 = W/6, Watson's integral in closed form
+ok   which is the value 0.252731 the node's note states (P4), now pinned to 18 digits
+     It is the same constant as the light-cone long-range-order threshold's I_0.
+
+H4  the Newtonian tail, three inequivalent directions
+ok   axis (1,0,0): 4 pi R G = 1.004108041, 1.000987849, 1.000278672 at r = 8, 16, 30 -> 1
+ok   face (1,1,0): 4 pi R G = 0.9995333321, 0.9998792666, 0.9999653858 at r = 8, 16, 30 -> 1
+ok   body (1,1,1): 4 pi R G = 0.9991298896, 0.9997828481, 0.9999382603 at r = 8, 16, 30 -> 1
+     so the tail is isotropic and has unit Newtonian normalization (P2).
+
+H5  the leading lattice correction
+     K4(n) = sum_a n_a^4 - 3/5, the l = 4 cubic harmonic; the note asserts the
+     coefficient 5/(32 pi).  Richardson in 1/r^2 on each direction:
+     axis (1,0,0): c(10) = 0.05128597, c(20) = 0.05009992, c(30) = 0.04989606 -> 0.049732975
+     face (1,1,0): c(10) = 0.04833477, c(20) = 0.04938762, c(30) = 0.04958126 -> 0.049736162
+     body (1,1,1): c(10) = 0.04981392, c(20) = 0.04975633, c(30) = 0.04974507 -> 0.049736058
+ok   all three extrapolate to 0.0497359197 = 5/(32 pi), within 3e-6
+ok   and they agree with each other to 3e-6, which is what fixes the angular shape as K4:
+     three inequivalent directions with three different values of K4 give one
+     coefficient.  The note's P3 is now checked, not cited.
+
+H6  candidate (iii) through the node
+     chi = 7/E exactly (a3 L1, a2 step 2, not re-derived here), so chi = 7 G and:
+       chi(0) = 7 W/6                         = 1.76911706901
+       tail amplitude 7/(4 pi)                = 0.557042300822
+       correction 7*5/(32 pi) = 35/(32 pi)    = 0.348151438014
+ok   so candidate (iii) inherits P2, P3 and P4 with one factor 7, each with an exact
+     constant, and the node's input needs no import beyond standard analysis.
+
+H7  a2's one ASSUMED identity is not needed
+     a2 assumes A(k)/k = sum_n 2/(k^2 + n^2 pi^2) (partial fractions for coth) and
+     uses it for the monotonicity of A(k)/k, for A <= k/3 and for the limit 1/3.
+ok   cosh 2k - 1 - k^2 - (k/2) sinh 2k has nonpositive Taylor coefficients ['-2/45', '-2/315', '-2/4725']...
+ok   and A(k) = k/3 - k^3/45 + ...; the two together give A(k)/k strictly decreasing from
+     1/3, which is everything a2 draws from the partial fractions.  The assumption
+     can be dropped from the packet.
+
+SUMMARY: PARTIAL the three kernel facts the gravity node's note asserts and both prior attempts cite are derived or verified here from the kernel itself: G(0) = W/6 = 0.252731009858663003 exactly (Watson), 4 pi R G(R) -> 1 in three inequivalent directions, and the leading lattice correction's coefficient extrapolates to 5/(32 pi) = 0.0497359 in all three (within 3e-6), which also fixes the angular shape as the l = 4 cubic harmonic; candidate (iii) inherits all three with one factor 7, and a2's ASSUMED partial-fraction identity is shown unnecessary
+HIT: the import a2 names - that neither attempt derives G(r) -> 1/(4 pi r) - is closed: the heat-kernel representation gives the tail, and the note's own 5/(32 pi) cubic-harmonic correction is reproduced to 3e-6 from three directions, so chi = 7/E enters the node with chi(0) = 7W/6, tail 7/(4 pi r) and correction 35/(32 pi) K4/r^3, all exact

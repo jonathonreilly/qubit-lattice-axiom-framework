@@ -105,3 +105,4 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+# block41: "opened for review 2026-09-20; what a source is when records move: mass = record count; no action across empty sites; field of a held record of short range; content channel's charge is the content vector (zero mean, occupancy carries none); transit Laplacian sourced by production, only agreeing records are net producers at the neutral scale; runner 19/0, thirteen mutations in family; nothing adopted"

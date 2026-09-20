@@ -1,0 +1,8 @@
+PASS: W1 a 2 x 2 block and three records on a 2 x 5 window with an empty column between them: the weight is the product of the two weights at three scales
+PASS: W3 the occupied 2 x 3 window at (12,1,2): for all 30 ordered pairs of sites the content field at y given the content a at x is one coefficient times the vector of a, and zero when the content at x is not read
+PASS: W4 a rule whose weights depend on the direction of the bond (outside the declared class): the content field at a neighbour of a record of unread content is (-53/391, 0, 0), along the bond: the lemma of T4 needs the declared isotropic pair weight
+PASS: W5 the 3 x 3 torus, an arbitrary law on its 512 arrangements: under symmetric transit d/dt E[n_x] equals the Laplacian of E[n] at every site; with a preference for occupied neighbourhoods it does not; for a single record the two generators agree
+PASS: W6 (5,2,3): every row of the neutral pair weight sums to 6, so the mean formation rate next to four records of independent uniform contents is the rate in the void; next to four agreeing records it is 208440/130321 times that
+PASS: W7 block 01's reading (ii) with absence factors (2, 3, 5): a pair and a single record separated by one empty site weigh the product of their separate weights; the empty neighbour's factor is a one-record factor and carries no action across the gap
+PASS: W2 the periodic 2 x 4 ladder by enumeration of all 7^8 site states: density and g(1), g(2) equal the runner's transfer-matrix values exactly (g(1) - 1 = 38934/10^6)
+REFUTER TOTAL: FAIL=0

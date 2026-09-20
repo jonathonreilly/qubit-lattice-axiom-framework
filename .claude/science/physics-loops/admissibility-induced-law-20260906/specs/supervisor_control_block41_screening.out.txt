@@ -1,0 +1,28 @@
+=== scr_neutral_4_0.3
+occupancy structure factor by E(k) shell: E<0.2: 0.212, E<0.6: 0.214, E<1.6: 0.213, E<4: 0.211, E<12: 0.211
+SCREENING: S(0) = 0.212  xi^2 = -0.004  xi = nan lattice steps (fit of 1/S against E(k) on 170 modes)
+SUMMARY: p=4.0 q=1.0 r=2.0 c=0.4615 rho=0.3 L=16 nbrs=1.813 nbrs_over_random=1.007 aligned=0.313 S=0.21 accept=0.449 records=1238 seconds=77
+=== scr_neutral_8_0.3
+occupancy structure factor by E(k) shell: E<0.2: 0.263, E<0.6: 0.237, E<1.6: 0.237, E<4: 0.220, E<12: 0.208
+SCREENING: S(0) = 0.245  xi^2 = 0.035  xi = 0.188 lattice steps (fit of 1/S against E(k) on 170 modes)
+SUMMARY: p=8.0 q=1.0 r=2.0 c=0.3529 rho=0.3 L=16 nbrs=1.870 nbrs_over_random=1.039 aligned=0.515 S=0.26 accept=0.365 records=1238 seconds=77
+=== scr_neutral_10_0.3
+occupancy structure factor by E(k) shell: E<0.2: 0.310, E<0.6: 0.303, E<1.6: 0.273, E<4: 0.230, E<12: 0.203
+SCREENING: S(0) = 0.310  xi^2 = 0.119  xi = 0.345 lattice steps (fit of 1/S against E(k) on 170 modes)
+SUMMARY: p=10.0 q=1.0 r=2.0 c=0.3158 rho=0.3 L=16 nbrs=1.942 nbrs_over_random=1.079 aligned=0.608 S=0.31 accept=0.331 records=1238 seconds=77
+=== scr_1_3_0.3
+occupancy structure factor by E(k) shell: E<0.2: 1.177, E<0.6: 0.674, E<1.6: 0.536, E<4: 0.310, E<12: 0.169
+SCREENING: S(0) = 0.905  xi^2 = 0.617  xi = 0.786 lattice steps (fit of 1/S against E(k) on 170 modes)
+SUMMARY: p=3.0 q=1.0 r=2.0 c=1.0000 rho=0.3 L=16 nbrs=2.534 nbrs_over_random=1.408 aligned=0.254 S=1.18 accept=0.376 records=1238 seconds=77
+=== scr_1_4_0.3
+occupancy structure factor by E(k) shell: E<0.2: 1.629, E<0.6: 1.009, E<1.6: 0.641, E<4: 0.313, E<12: 0.160
+SCREENING: S(0) = 1.520  xi^2 = 1.243  xi = 1.115 lattice steps (fit of 1/S against E(k) on 170 modes)
+SUMMARY: p=4.0 q=1.0 r=2.0 c=1.0000 rho=0.3 L=16 nbrs=2.677 nbrs_over_random=1.487 aligned=0.317 S=1.63 accept=0.342 records=1238 seconds=76
+=== scr_2.0_1_0.5
+occupancy structure factor by E(k) shell: E<0.2: 1.036, E<0.6: 1.130, E<1.6: 0.740, E<4: 0.375, E<12: 0.192
+SCREENING: S(0) = 1.503  xi^2 = 0.938  xi = 0.969 lattice steps (fit of 1/S against E(k) on 170 modes)
+SUMMARY: p=1.0 q=1.0 r=1.0 c=2.0000 rho=0.5 L=16 nbrs=3.615 nbrs_over_random=1.205 aligned=0.168 S=1.04 accept=0.388 records=2066 seconds=77
+=== scr_2.4_1_0.5
+occupancy structure factor by E(k) shell: E<0.2: 7.255, E<0.6: 2.595, E<1.6: 0.974, E<4: 0.358, E<12: 0.163
+SCREENING: S(0) = -28.881  xi^2 = nan  xi = nan lattice steps (fit of 1/S against E(k) on 170 modes)
+SUMMARY: p=1.0 q=1.0 r=1.0 c=2.4000 rho=0.5 L=16 nbrs=3.925 nbrs_over_random=1.308 aligned=0.166 S=7.26 accept=0.341 records=2066 seconds=76

@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 41 (2026-09-20)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "owner: define what a source is and go from there; gravity lane open item: identify the branchwise Record source"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "source defined as the record count; equilibrium channels worked out (none at long range for the mass); the transit field sourced by production identified; next the halo and the response inside it, loaded on ai/probes"
+```

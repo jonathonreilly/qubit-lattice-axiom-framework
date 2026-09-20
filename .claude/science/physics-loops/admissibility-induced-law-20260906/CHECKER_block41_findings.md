@@ -1,0 +1,8 @@
+# Block 41 — refuting pass and findings (2026-09-20)
+
+1. Disjoint machinery (site-level enumeration on general graphs): W1 a `2×2` block and three records across an empty column at three scales, product exact; W2 the periodic `2×4` ladder by enumeration of all `7⁸` site states equals the transfer matrix exactly (`g(1) − 1 = 0.038934…`); W3 the symmetry lemma on all 30 ordered pairs of the occupied `2×3` window at (12,1,2); W5 closure on the `3×3` torus under an arbitrary law; W6 the production mean at (5,2,3), `k = 4`.
+2. Finding folded: the first draft had the content channel only in the quadratic model; the exact symmetry lemma (any law invariant under the rotation of all contents) was added and carries the zero-charge sentence.
+3. Finding folded: the lemma's limit. A rule whose weights depend on the direction of the bond gives a radial content field `(−53/391, 0, 0)` next to a record of unread content (W4). Block 01's declared class is isotropic; the direction-dependent case and block 01's reading (ii) are listed as routes under N1.
+4. Finding folded: T5 added after asking where the gravity lane's operator acts on the occupancy at all; W5 shows the closure fails when hops prefer occupied neighbourhoods, so T5 is stated for symmetric transit and for the dilute far field of pair-weight transit.
+5. Stated limit: the executed ranges are one seed on one side; the quadratic model is a stand-in.
+6. Re-read of the theorem text against the runner, before the gates: two sentences corrected. The lemma of T4 covers formation laws only along orders that do not read contents (or read them invariantly). Block 01's reading (ii) does not break T2: an empty neighbour's factor is a one-record factor, so the weight still factorizes across a gap (W7, exact).

@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F41 what a source is | transitivity of the rotations on contents; factorization over occupied components; the pair correlation as the field of a held record; the internal-rotation lemma; closure of the mean under exclusion | block 41 (under block 39's reading) |

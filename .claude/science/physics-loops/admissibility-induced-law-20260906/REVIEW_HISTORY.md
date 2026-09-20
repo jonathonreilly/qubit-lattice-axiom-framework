@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-20 block 41 — author checks (not a review PASS)
+Three exact facts tested before writing. Refuting pass by site-level enumeration (six witnesses, all pass). Three findings folded: the symmetry lemma in general form, its limit for direction-dependent rules, and T5. Census 13/13 in family.

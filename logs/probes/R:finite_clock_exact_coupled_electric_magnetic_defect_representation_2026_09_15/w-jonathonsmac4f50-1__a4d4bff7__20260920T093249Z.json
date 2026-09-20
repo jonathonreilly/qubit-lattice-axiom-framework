@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+ "seed": 96769,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093249Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=2 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "743d43edd0f7c359952b59fc626a7a12f20f320fc5c67aa823d02efd816f5756",
+ "stdout_tail": "t_imag\": -1.4210854715202005e-19,\n        \"dual\": 0.002827276442278023,\n        \"absolute_error\": 4.563703926694018e-19,\n        \"omitting_phase_error\": 0.0001019583955198162,\n        \"min_magnetic_character\": 0.9254863297884355\n      }\n    ],\n    \"alias_error\": 1.7521252633077577e-18,\n    \"representative_integer_shift\": 13,\n    \"cutoff_comparison\": 0.0,\n    \"cube_r\": 5,\n    \"cube_P\": 6,\n    \"Q_det\": 6,\n    \"magnetic_Q\": \"1/6\"\n  },\n  \"four_cube\": {\n    \"r\": 17,\n    \"P\": 24,\n    \"Q_det\": 82944,\n    \"magnetic_rank\": 7,\n    \"phase_turns\": \"51/8\",\n    \"phase_real\": \"-sqrt(2)/2\",\n    \"electric_energy\": \"17/24\",\n    \"magnetic_energy\": \"21/8\",\n    \"magnetic_charge\": [\n      -3,\n      0,\n      -3,\n      0,\n      0,\n      0,\n      0,\n      0\n    ],\n    \"integer_completion_determinant\": 1\n  }\n}\nTOTAL: PASS=2 FAIL=0\nper_element: executed integer boundary-of-boundary identities and exact rational curl projections on single three- and four-cubes.\nper_site: executed exact tree gauge counts and direct finite-clock sums up to3125states with the supplied Villain weight.\nper_mode: executed electric aliases, integer representative shifts and an exact negative mixed phase at N=3 on the four-cube.\nper_block: executed ten direct/dual three-cube comparisons, a shifted-cutoff comparison and positive complete magnetic phase-class sums.\nlattice_wide: checked and not executed: the general coupled-defect identity and positive marginal follow from the written proof; fixed-law phase control remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093254Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

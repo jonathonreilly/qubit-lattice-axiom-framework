@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_2026_09_14.py",
+ "seed": 96775,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093255Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0cb3009eaa2765433b6d2f5adfc2bdd2e044e9bf576cf2c2a65775ded32c73b7",
+ "stdout_tail": "79353802500765\n      }\n    ],\n    \"magnetic\": [\n      {\n        \"spatial_momentum\": [\n          1.0,\n          0.3,\n          0.2\n        ],\n        \"positive_time_kernel\": 0.12873525679354206,\n        \"nonzero_full_field_os_norm\": 0.04316944336992644\n      },\n      {\n        \"spatial_momentum\": [\n          0.4,\n          0.6,\n          -0.8\n        ],\n        \"positive_time_kernel\": 0.0595209754263109,\n        \"nonzero_full_field_os_norm\": 0.01987196641348786\n      }\n    ],\n    \"regularized_current_contact\": [\n      -0.3892049348582704,\n      -0.00445413733016822,\n      -9.595232399775587e-08,\n      -7.617029377950592e-18\n    ]\n  }\n}\nTOTAL: PASS=6 FAIL=0\nper_element: executed finite Gaussian-image and Fourier score identities, conditional variance bounds and complex characteristic remainders at declared beta and angle values.\nper_site: executed the zero score on both N=2 clock plaquette values and the contrasting N=3 value; this checks an observable, not the entire clock theory.\nper_mode: executed exterior-algebra current projections and independent temporal Fourier integrals at the declared four- and three-momenta.\nper_block: executed conditional-noise arrays, a nonergodic variance-mixture countercontrol, and finite positive-time exponential Gram identities with colored-noise failure controls.\nlattice_wide: checked and not executed; conditional white-noise scaling and OS equivalence rely on the stated analytic hypotheses, and fixed-law Gaussian photon closure remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093256Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

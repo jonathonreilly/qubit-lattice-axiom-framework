@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_score_gaussian_maxwell_scaling_limit_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_clock_score_gaussian_maxwell_scaling_limit_2026_09_14.py",
+ "seed": 96779,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093259Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fc3b18b1d7f706f16313d74ad2ce807e121a90fe52058dc484f10cf61db9cfb0",
+ "stdout_tail": "n\": 1.5500294381354252,\n      \"tilt\": -1.2\n    },\n    {\n      \"between_coset_covariance_trace\": 0.9999193445514619,\n      \"direct_mean\": -0.3099923839646388,\n      \"direct_variance\": 1.5499674688042142,\n      \"source_gradient\": -0.3099923839644525,\n      \"source_hessian\": 1.5499674654861906,\n      \"tilt\": -0.2\n    },\n    {\n      \"between_coset_covariance_trace\": 1.0000992274723604,\n      \"direct_mean\": 1.3949973909229372,\n      \"direct_variance\": 1.550040021525957,\n      \"source_gradient\": 1.3949973909233027,\n      \"source_hessian\": 1.5500400185608498,\n      \"tilt\": 0.9\n    }\n  ]\n}\nper_element: scalar Gaussian lifts, score derivatives, centered theta sources and tail integrals are checked with explicit finite cutoffs.\nper_site: the three-face incidence toy checks clock fibers and conditional plaquette noise; it is not a four-dimensional phase computation.\nper_mode: midpoint Fourier phases, continuum projector symbols, electric-magnetic contact signs and the rank-two reflected Gram matrix are checked.\nper_block: composite orders two, four and six, a finite exact-plane lattice sequence and an even side-six Fourier block are checked personally.\nlattice_wide: checked and not executed \u2014 arbitrary-volume affine covariance, distributional convergence and full Fock reconstruction rest on the stated conditional derivation.\nTOTAL: PASS=8 FAIL=0\nscope: finite mathematical challenges only; the all-shift input and the new continuum theorem await independent proof review and formal audit.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093259Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/finite_clock_score_gaussian_maxwell_scaling_limit_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_clock_phase_diagnostics_local_wraps_and_quantized_flux_2026_09_14.py",
+ "seed": 96778,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093258Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "47f00a1bc03103b56c3cc87dcebab9ab8e8cb5a1ee8463c3236ca24050c04746",
+ "stdout_tail": "ce_period_gcd': 1, 'sheet_source': 25, 'quantized_sheet_flux': 1, 'local_wrap_quantized_phase_residue': 0}]\nPASS modular_periods_and_quantized_source declared exact identities and finite tolerances checked\nperiodic_quantized_ground_series [{'two_dimensional_torus_L': 2, 'gauss_zero_flux_dimension': 8, 'first_quantized_source_order': 4, 'energy_difference_coefficient': '5/512', 'direct_subset_sum': '5/1024', 'source_independent_coefficients_below_area': True}, {'two_dimensional_torus_L': 3, 'gauss_zero_flux_dimension': 256, 'first_quantized_source_order': 9, 'energy_difference_coefficient': '15507/6710886400', 'direct_subset_sum': '15507/13421772800', 'source_independent_coefficients_below_area': True}]\nPASS periodic_quantized_ground_series declared exact identities and finite tolerances checked\nTOTAL: PASS=8 FAIL=0\nper_element: exact clock orientations, Fourier aliases, sine denominators and contact normalization are checked.\nper_site: full square Gauss generators and periodic cellular boundary identities are independently constructed.\nper_mode: full matrix transfer logarithms and high-precision finite spectra are compared with derived generators.\nper_block: exact rational patch recursion and periodic quantized-flux coefficients use distinct constructions.\nlattice_wide: checked and not executed \u2014 no lattice-wide numerical execution; uniform gap and area-tail consequences are analytically justified using the explicitly mapped external theorem; no Coulomb phase is established.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093259Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_step_gaussian_gauge_canonical_log_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_step_gaussian_gauge_canonical_log_2026_09_14.py",
+ "seed": 96928,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093528Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "63a4ac2b7b286f33b7b2f4cc81dffd3eb50948eb2f419792fb20d2cc8fe31dea",
+ "stdout_tail": ": 1.0002448308516607\n      }\n    ],\n    \"oscillator_covariances\": [\n      {\n        \"beta_t\": 0.7,\n        \"beta_s\": 1.8,\n        \"lam\": 0.02,\n        \"x_variance\": 3.1296490257861653,\n        \"p_variance\": 0.07988116173416608,\n        \"vacuum_energy\": 0.11314775987259025\n      },\n      {\n        \"beta_t\": 2.0,\n        \"beta_s\": 0.3,\n        \"lam\": 7.0,\n        \"x_variance\": 0.21713491635397367,\n        \"p_variance\": 1.1513578939669455,\n        \"vacuum_energy\": 0.49222843773170677\n      },\n      {\n        \"beta_t\": 1.0,\n        \"beta_s\": 1.0,\n        \"lam\": 12.0,\n        \"x_variance\": 0.07216878364870323,\n        \"p_variance\": 3.4641016151377544,\n        \"vacuum_energy\": 1.3169578969248166\n      }\n    ]\n  },\n  \"status\": \"author_checked_finite_identities_only\",\n  \"compact_clock_phase\": \"not_established\"\n}\nper_element: finite 4x4 inverse-log identities, oscillator kernel eigenfunctions and explicit Gaussian coefficient formulas checked numerically.\nper_site: full gradient/curl incidence on L3/L4 tori and L12 three-orientation spatial kernels.\nper_mode: all finite cubic eigenmodes, zero-mode coefficient limit, selected oscillator covariances and infrared samples.\nper_block: polynomial tails, weighted row bounds, charge KKT solves and independent Bessel Green-function samples.\nlattice_wide: checked and not executed \u2014 volume-uniform Gaussian coefficient/Weyl bounds and Coulomb asymptotic rely on written proofs; no compact phase or native Record law simulated.\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093529Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

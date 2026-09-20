@@ -1,0 +1,31 @@
+{
+ "task": "R:finite_proper_cubic_admission_table_discriminator_2026_07_23",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_proper_cubic_admission_table_discriminator_2026_07_23.py",
+ "seed": 96919,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093519Z",
+ "elapsed_s": 8.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a1cfd53d818d800928823e422a22b789fff62cab4d878e65ed6449cd28daf49e",
+ "stdout_tail": "5 in-family FULL streams identified blind with complete witnesses\nPASS 06 train_prefix_held_no_refit/train :: 5/5 train streams identified\nPASS 06 train_prefix_held_no_refit/held_no_refit :: 5/5 extensions identical to train verdict (zero retractions)\nPASS 07 coverage_starved_refusal/starved_uq :: starved_uq -> ambiguous, consistent=['low_density', 'nonempty', 'odd_shells', 'unique_quorum'], completing=[[2, 3], [2, 5]]\nPASS 07 coverage_starved_refusal/starved_even :: starved_even -> identified:even_nonzero\nPASS 08 off_family_covariant_imposter :: antipodal -> off_family (covariance scan passed); same-shell witness pair [(0, 0, 0, 0, 1, 1), (0, 0, 0, 1, 0, 1)]\nPASS 09 non_covariant_imposter :: axis -> refuse_covariance, witness=[(0, 0, 0, 0, 0, 1), (1, 0, 0, 0, 0, 0)] (same orbit, occ differs)\nPASS 10 non_deterministic_imposter :: noisy -> refuse_contradiction, repeated word=(0, 0, 0, 0, 0, 1)\nPASS 11 held_corpus_retraction/train :: mimic train -> identified:odd_shells (train-consistent)\nPASS 11 held_corpus_retraction/full_retract :: mimic full -> off_family, held witness (0, 1, 1, 1, 1, 1) (weight 5)\nPASS 12 malformed_port_refusals :: 8/8 malformed streams refused with the expected reason\nPASS 13 verdict_frame_invariance :: 2/2 streams frame-invariant across all 24 frames\nPASS 14 decoder_blindness_discipline :: signature=['stream', 'tables', 'frames'], forbidden-tokens-present=[]\nRESULT 24 0 OK outputs/finite_proper_cubic_admission_table_discriminator_receipt_2026_07_23.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093528Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

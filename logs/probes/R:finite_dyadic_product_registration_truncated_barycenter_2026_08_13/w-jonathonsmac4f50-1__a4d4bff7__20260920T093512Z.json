@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_dyadic_product_registration_truncated_barycenter_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.py",
+ "seed": 96912,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093512Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e3f0c5b5afefb45392f6156326967ed0b5359957708964a236dd4ec411ec22f7",
+ "stdout_tail": "e-uniform-bound finite-support pushforward differs from barycenter evaluation by less than 2^-n\nPASS: mixture-not-barycenter-at-biased endpoint mixture truncated E_0 mass is 3/10; Dirac at the barycenter is not\nPASS: disagree-restriction truncated E_0 values disagree with restriction 25/142 and 2/11\nPASS: order-independence-length reversed M_A keeps the same pairing lengths; exact E_0 truncated mass is unchanged when the increment is integral\nPASS: mutation-restriction-would-fail replacing floor_diff_mass by restriction 25/142 would fail mixed-exact-quarter and mixture-not-barycenter\nPASS: mutation-raw-trace-would-fail replacing floor_diff_mass by raw Tr would fail biased-never-dyadic and mixture-not-barycenter\nPASS: singleton-mass-two raw singleton normalization of the z and x projective menus still forces mass two\nPASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold\nper_element: E_0 and remaining declared menu members checked by floor-difference masses and restriction controls\nper_site: finite dyadic image exclusion, product partition, and truncated kernel identities are one-site statements\nper_mode: checked and not executed \u2014 no spectral or harmonic mode claim occurs in this one-site theorem\nper_block: only the finite-n exact-equality obstruction and the truncated-kernel identities are executed\nlattice_wide: checked and not executed \u2014 no lattice-wide dynamics, formation rate, or Record identification is claimed\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093512Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

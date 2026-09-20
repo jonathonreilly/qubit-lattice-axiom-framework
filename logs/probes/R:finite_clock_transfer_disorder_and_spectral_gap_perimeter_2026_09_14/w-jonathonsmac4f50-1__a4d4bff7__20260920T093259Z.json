@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_transfer_disorder_and_spectral_gap_perimeter_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_clock_transfer_disorder_and_spectral_gap_perimeter_2026_09_14.py",
+ "seed": 96779,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093259Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0e404a6d3bda8ea7d30d7b4244c4e2096fe2a0fcae46056523230547bab7639a",
+ "stdout_tail": "260539, 0.44411784182660674, 0.0017181568078435262], [3, 2.718281828459045, 5, 3.394410847260539, 0.4294020000065486, 1.2080219880096495e-09], [5, 2.0, 1, 1.7943406054413056, 0.4037779600458257, 0.04424461857018693], [5, 2.0, 3, 1.7943406054413056, 0.468729301802459, 0.0017673551414045543], [5, 2.718281828459045, 5, 1.7943406054413056, 0.5438420321279664, 1.218666861370596e-09], [7, 2.0, 1, 1.1201871970083221, 0.42696384468295, 0.04709556714253459], [7, 2.0, 3, 1.1201871970083221, 0.4760525073591555, 0.002005250911222888], [7, 2.718281828459045, 5, 1.1201871970083221, 0.5125833295757073, 1.4085454933153397e-09]]\nPASS filter_spectral_and_algebra\nDEGENERACY: scalar Wilson compression sufficient; nonscalar ground leakage survives filtering.\nPASS degenerate_ground_sectors\nTOTAL: PASS=5 FAIL=0\nper_element: exact Weyl phases and independent temporal seam path sums distinguish unitary and weighted insertions.\nper_site: integer link cochains and all boundary plaquette supports establish the linked-loop separation.\nper_mode: spectral sinc multipliers are compared with triangular time quadrature and both ordered correlations.\nper_block: ground-space compression, nonscalar leakage, transfer positivity and the exact twisted dynamical identity are checked.\nlattice_wide: checked and not executed \u2014 no lattice-wide numerical execution; analytical scope only: the asymptotic spectral-gap implication uses the written conditional proof; no infinite-volume clock phase or photon pole is computed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093300Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

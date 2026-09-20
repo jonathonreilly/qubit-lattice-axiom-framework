@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_edge_qubit_parity_dictionary_occupation_zeros_check_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_edge_qubit_parity_dictionary_occupation_zeros_check_2026_09_02.py",
+ "seed": 96913,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093513Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f74f5ceae630844fa0987a527fd01eb1a5c707fbd51df60b24264aedad13b0fe",
+ "stdout_tail": "ng one star and 2/12 requiring both\nPASS F3 [exact] four-cycle flux: cube 144 of 444 carry -1, grid3x3 80 of 344, identical for H_F (144/444, 80/344); these closed-cycle products are invariant under diagonal rephasing\nPASS G1 [exact] cube control: bare X_e in place of A_ij anticommutes with 16 of 60 (term, generator) pairs, mapping some code states outside the face-code space; on the separately selected 2240-dimensional edge-string sector, a gauge makes all 7680 undirected nonzero configuration edges -1 on 1 connected component\nPASS G2 [numerical, 1e-12] cube control at g in {0, 0.5, 1, 2}: ground simple and all 70 pushed-forward occupation probabilities exceed 1e-4, consistent with the finite Perron-Frobenius positivity lemma\nPASS G3 [exact] grid3x3 control: bare X_e in place of A_ij anticommutes with 12 of 48 (term, generator) pairs, mapping some code states outside the face-code space; on the separately selected 1344-dimensional edge-string sector, a gauge makes all 4032 undirected nonzero configuration edges -1 on 1 connected component\nPASS G4 [numerical, 1e-12] grid3x3 control at g in {0, 0.5, 1, 2}: ground simple and all 84 pushed-forward occupation probabilities exceed 1e-4, consistent with the finite Perron-Frobenius positivity lemma\nSUMMARY: the supplied finite edge-qubit encoding and incidence-parity map have the checked exact and tolerance-qualified occupation statistics; the dictionary, encoding, basis, and finite models are declared inputs.\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093518Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

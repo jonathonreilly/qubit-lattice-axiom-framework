@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_local_probability_and_charge_projection_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_clock_local_probability_and_charge_projection_2026_09_14.py",
+ "seed": 96776,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093256Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b74c64bba6245a6f3123e5e1997c5e210a0281068f823e2f609f240493c2ad47",
+ "stdout_tail": "      [\n          -100.0,\n          -1.0,\n          -1.0\n        ],\n        [\n          -1.0,\n          0.0,\n          -1.0\n        ],\n        [\n          -1.0,\n          -1.0,\n          0.0\n        ]\n      ],\n      \"lowest_near_eigenvalue\": -100.02019789944299,\n      \"false_bound_if_positive_near_is_dropped\": 5.477435739940306,\n      \"minimum_actual_probability\": 0.00010196798629533636,\n      \"valid_bound_after_local_scalar_shift\": 1.3399872412088446e-05\n    },\n    \"on_region_potential_misassigned_to_far\": {\n      \"H\": [\n        [\n          2.0,\n          -1.0,\n          -1.0\n        ],\n        [\n          -1.0,\n          102.0,\n          -1.0\n        ],\n        [\n          -1.0,\n          -1.0,\n          102.0\n        ]\n      ],\n      \"false_bound\": 0.10032273504899315,\n      \"minimum_actual_probability\": 0.00010196798629533647\n    }\n  }\n}\nper_element: checked exact cyclic shifts and integer branch-mismatch coefficients on finite carriers.\nper_site: checked an original twelve-link cube assignment with integer charge and local term counts.\nper_mode: checked and not executed \u2014 no photon pole, spectral residue, or continuum mode calculation is claimed.\nper_block: checked complete one/two-cube projection matrices and a noncommuting four-qutrit probability example.\nlattice_wide: checked and not executed \u2014 the uniform local bound has an analytic proof; no infinite-volume matrix was computed.\nTOTAL: PASS=7 FAIL=0 (author check families; theorem scope is stated in the paired note)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093257Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/finite_clock_local_probability_and_charge_projection_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

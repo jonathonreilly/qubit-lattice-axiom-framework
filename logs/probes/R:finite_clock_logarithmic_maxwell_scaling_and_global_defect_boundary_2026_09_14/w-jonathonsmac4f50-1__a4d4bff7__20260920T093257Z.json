@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_clock_logarithmic_maxwell_scaling_and_global_defect_boundary_2026_09_14.py",
+ "seed": 96777,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093257Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fc1ddc88a9913b769d4ec81feed61189759962fdf9f0bb4fbfb0e8e358c6d956",
+ "stdout_tail": "\": 4.081409167457741e-37,\n        \"defect_upper\": 1.1596583916478912e-150,\n        \"log_wrap_upper\": -532.3566569899076\n      }\n    ],\n    \"principal_holder_exponents\": {\n      \"2\": -8.369604401089358,\n      \"18\": -0.369604401089358,\n      \"19\": 0.130395598910642,\n      \"40\": 10.630395598910642\n    },\n    \"score_all_moments_from_conditional_jensen\": true\n  },\n  \"conditional_defect_count\": {\n    \"conditional_cases\": 2,\n    \"mixture_mean\": 3.6719999999999997,\n    \"unconditional_covariance\": 0.12250000000000005,\n    \"fixed_beta\": 0.1,\n    \"global_closed_upper\": [\n      0.12478505852648765,\n      2.6565812122143105e-05,\n      3.4562201093297336e-15,\n      4.9414118964436776e-36\n    ]\n  }\n}\nTOTAL: PASS=7 FAIL=0\nper_element: executed scalar image probabilities and shifted theta characteristics on explicit finite sums; their truncations are not universal tail certificates.\nper_site: executed oriented cube boundaries, disjoint even-sublattice supports and integer harmonic periods on side-four and side-six four-tori.\nper_mode: executed Fourier current potentials and Hodge energy identities on finite four-tori through side thirty-two, retaining the zero-mode subtraction.\nper_block: executed single-cube lifted laws, loop refinements, logarithmic parameter members and conditional-mixture defect counts on declared finite domains.\nlattice_wide: checked and not executed; logarithmic Maxwell and Wilson limits and global defect bounds depend on the written proof and await independent review.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093258Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

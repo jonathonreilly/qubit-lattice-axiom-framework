@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_clock_gaussian_smoothing_flux_equivalence_2026_09_15.py",
+ "seed": 96774,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093255Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "61292d5ccfb65e5d368eea190f62ec950147c7250f9f850a267237d482f506c6",
+ "stdout_tail": "ror\": 2.097939149001952, \"error_variance_bound\": 0.0005121921750493047}, {\"L\": 128, \"L2_times_error\": 2.101881002083445, \"error_variance_bound\": 0.00012828863538106965}, {\"L\": 256, \"L2_times_error\": 2.102867868198894, \"error_variance_bound\": 3.2087217227155974e-05}]\nPASS check_magnetic_carrier_convexity_control: {\"coexact_flux_spacing\": \"6.0\", \"extension_hessian\": 1, \"interpretation\": \"A convex extension on a discrete magnetic carrier does not imply its all-tilt Gaussian covariance bound.\", \"real_source\": \"3.0\", \"tilted_mean\": \"3.0\", \"tilted_variance\": \"9.00000000000001670056437775369572211426277489811243290127032897269962261546\"}\nper_element: exact image-fold signs, strip boundaries, Gaussian square completion and bundle Jacobians are checked on explicit finite cochains.\nper_site: local current components in three coordinate orders, finite gauge characters and all vertex subsets of a positive polymer example are executed.\nper_mode: real-space and Fourier densities, fourth cumulants, signed cubic transformations and smooth discrete Fourier source errors are compared.\nper_block: positive Gaussian partition derivatives through order three are checked by quadrature and Fourier sums; the discrete magnetic variance control is executed.\nlattice_wide: uniform polymer convergence, C3 response, magnetic-charge preservation and local H^-s coupling are checked and not executed \u2014 the all-volume conclusions are analytic proof obligations awaiting independent review.\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093255Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

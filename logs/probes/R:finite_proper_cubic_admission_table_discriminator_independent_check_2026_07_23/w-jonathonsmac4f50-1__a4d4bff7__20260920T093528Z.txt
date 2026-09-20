@@ -1,0 +1,1 @@
+frames=24 orbits=10 minimum_sets=6 mimic_train=0 mimic_held=6

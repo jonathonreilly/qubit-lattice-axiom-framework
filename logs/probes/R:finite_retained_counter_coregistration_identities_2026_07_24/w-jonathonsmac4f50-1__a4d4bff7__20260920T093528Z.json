@@ -1,0 +1,34 @@
+{
+ "task": "R:finite_retained_counter_coregistration_identities_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_retained_counter_coregistration_identities_2026_07_24.py",
+ "seed": 96928,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093528Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "63c0e5bc3f4157ce5605f40df64160e51552250e6f967a63e6a802ab01bcc48d",
+ "stdout_tail": "'S3->S2': None, 'S4->S2': None}, 'surviving_S1_S3': 652}\nPASS exact decoded-count additivity holds across the supplied slope change :: {'first': 969, 'second': 640, 'total': 1609, 'accumulated_at_split': '606208/625', 'accumulated_at_end': '1006208/625'}\nPASS supplied cross-order predicate accepts ordinary rows and refuses the injected inversion :: {'ordinary': ['accepted', 'accepted', 'accepted', 'accepted'], 'ordinary_accept_mutation_exact': True, 'first_adversarial_fixture_call': 'accepted', 'first_accept_mutation_exact': True, 'after_injected_snapshot': 'refused_inverted', 'refusal_state_unchanged': True, 'equality_boundary': 'refused_inverted', 'equality_refusal_state_unchanged': True}\nPASS displayed decoders ignore bank/generator metadata but retain index-oriented predecessor lineage :: {'baseline_S1_S3': 652, 'metadata_mutant_S1_S3': 652, 'broken_predecessor_S1_S3': None, 'index_lineage_remains_used': True}\nPASS finite floating diagnostic only: segment-ratio spreads fit disclosed two-count tolerances :: {'B_over_A': [0.6581196581196581, 0.6602687140115163, 0.6602112676056338], 'spread_B_over_A': 0.0021490558918582092, 'tolerance_B_over_A': 0.006493506493506494, 'C_over_B': [0.737012987012987, 0.7325581395348837, 0.736], 'spread_C_over_B': 0.004454847478103319, 'tolerance_C_over_B': 0.00881057268722467, 'classification': 'finite floating diagnostic, not exact identity'}\nRESULT 9 0\nRECEIPT outputs/finite_retained_counter_coregistration_identities_receipt_2026_07_24.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093528Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

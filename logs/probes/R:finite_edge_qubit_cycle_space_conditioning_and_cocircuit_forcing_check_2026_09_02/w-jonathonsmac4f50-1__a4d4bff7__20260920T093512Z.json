@@ -1,0 +1,34 @@
+{
+ "task": "R:finite_edge_qubit_cycle_space_conditioning_and_cocircuit_forcing_check_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/finite_edge_qubit_cycle_space_conditioning_and_cocircuit_forcing_check_2026_09_02.py",
+ "seed": 96912,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4d4bff7",
+ "started_utc": "20260920T093512Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "065105378d2bb88fd2cdd8fe8c92b4d1a7996a39ab4501ae8e271be3a06e4777",
+ "stdout_tail": "A/grid3x3 [exact] connected cycle space has dimension E-V+1=4 and support 16\nPASS B/grid3x3 [exact] face boundaries have rank 4 and span the full cycle space\nPASS C/grid3x3 [exact] cut space has dimension V-1 and 53 inclusion-minimal nonzero cuts\nPASS D/grid3x3 [exact] the complete coordinate-marginal profile is [Fraction(1, 2)]\nPASS A/grid3x3+pendant [exact] connected cycle space has dimension E-V+1=4 and support 16\nPASS B/grid3x3+pendant [exact] face boundaries have rank 4 and span the full cycle space\nPASS C/grid3x3+pendant [exact] cut space has dimension V-1 and 54 inclusion-minimal nonzero cuts\nPASS D/grid3x3+pendant [exact] the complete coordinate-marginal profile is [Fraction(0, 1), Fraction(1, 2)]\nPASS E/cube [exact] one observed edge leaves every other edge marginal at 1/2\nPASS F/cube [exact] full two-observation census is 96 adjacent cases forcing one edge and 168 disjoint cases forcing none\nPASS G/all [exact] all 102400 target/observed-set masks satisfy forcing iff a cocircuit through the target is contained\nPASS H/cube [exact] the three disjoint observed edges (1,5),(2,6),(3,7) force (0,4) in all eight value assignments\nPASS I/all [exact] coordinate-projector conditioning is order-independent for every ordered value pair\nPASS J/pendant [exact] the bridge edge is fixed to zero while all other edge marginals are 1/2\nPASS K/mutations [exact] rank, support, marginal value/profile, cocircuit, order, and local-only forcing mutants are all rejected\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T093513Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

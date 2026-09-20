@@ -1,0 +1,275 @@
+finite_check_completed: positive_clock_lift_score_and_duality
+finite_check_completed: centered_theta_and_shifted_counterexample
+finite_check_completed: finite_exact_plane_gaussian_approach
+finite_check_completed: tilted_coset_total_covariance
+finite_check_completed: midpoint_symbol_and_cell_average
+finite_check_completed: electric_magnetic_os_reconstruction
+finite_check_completed: bianchi_contact_and_conditional_noise
+finite_check_completed: tail_constants_and_explicit_scaling
+{
+  "bianchi_contact_and_conditional_noise": {
+    "bianchi_error": 1.0622619652064402e-16,
+    "euclidean_divergence_covariance_norm": 10.028574175823799,
+    "independent_noise_variance": 3.0,
+    "shared_noise_variance": 9.0
+  },
+  "centered_theta_and_shifted_counterexample": {
+    "affine_log_mgf": 0.09683430641363522,
+    "affine_sigma": 0.05,
+    "affine_variance": 0.9999999999999999,
+    "centered_theta_ratios": [
+      0.940566579037659,
+      0.9875801260717925,
+      0.9181750483997186,
+      0.9368544762590183,
+      0.9963475799475896,
+      0.9539609428347394,
+      0.9080104332487632,
+      0.9100648681284851,
+      0.9968962907537674,
+      0.9919241477261654,
+      0.9993141764666565,
+      0.9101699148638263,
+      0.9332360729395468,
+      0.9989493172417022,
+      0.9268269278119502,
+      0.986462358695488,
+      0.9739921465738579,
+      0.999373150513894,
+      0.9576408337967138,
+      0.9922062533077244,
+      0.9708855282242553,
+      0.944857661396335,
+      0.9836698342851008,
+      0.9272811850908388,
+      0.9921798486101462
+    ]
+  },
+  "electric_magnetic_os_reconstruction": [
+    {
+      "gram_eigenvalues": [
+        -1.853856745794638e-16,
+        3.6669816826032934e-17,
+        1.615903562062627e-16,
+        5.924839338060285e-16,
+        2.0,
+        2.0
+      ],
+      "reflected_kernel_error": 6.938893903907228e-16,
+      "spatial_momentum": [
+        0.7,
+        -0.4,
+        1.2
+      ]
+    },
+    {
+      "gram_eigenvalues": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        2.0
+      ],
+      "reflected_kernel_error": 2.3869795029440866e-15,
+      "spatial_momentum": [
+        0.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "gram_eigenvalues": [
+        -1.9697193314320582e-16,
+        -6.953875073410146e-17,
+        8.304709913907158e-17,
+        4.284501809586403e-16,
+        2.0,
+        2.000000000000001
+      ],
+      "reflected_kernel_error": 8.56259507742152e-15,
+      "spatial_momentum": [
+        1.0,
+        2.0,
+        -3.0
+      ]
+    }
+  ],
+  "finite_exact_plane_gaussian_approach": {
+    "rademacher_fourth": 1,
+    "three_face_lattice_sequence": [
+      {
+        "N": 8,
+        "beta_d": 0.25,
+        "fourth": 2.383637630559988,
+        "gaussian_log_mgf": 0.32000000000000006,
+        "log_mgf": 0.16088513798229823,
+        "variance": 0.3964466007582548
+      },
+      {
+        "N": 16,
+        "beta_d": 0.5,
+        "fourth": 3.210327529134945,
+        "gaussian_log_mgf": 0.32000000000000006,
+        "log_mgf": 0.3099877795489173,
+        "variance": 0.945647852482929
+      },
+      {
+        "N": 24,
+        "beta_d": 0.75,
+        "fourth": 3.0269588656322273,
+        "gaussian_log_mgf": 0.32000000000000006,
+        "log_mgf": 0.31958667397444773,
+        "variance": 0.9969380259085817
+      },
+      {
+        "N": 32,
+        "beta_d": 1.0,
+        "fourth": 3.00209054792446,
+        "gaussian_log_mgf": 0.32000000000000006,
+        "log_mgf": 0.3199852301706825,
+        "variance": 0.9998478407341722
+      },
+      {
+        "N": 40,
+        "beta_d": 1.25,
+        "fourth": 3.000132336390611,
+        "gaussian_log_mgf": 0.32000000000000006,
+        "log_mgf": 0.31999951943199934,
+        "variance": 0.9999929133387253
+      }
+    ]
+  },
+  "midpoint_symbol_and_cell_average": {
+    "cell_average_norm": 0.7582777140326764,
+    "centered_symbol_errors": [
+      0.009827792725308213,
+      0.0024484721223674267,
+      0.000611589361130661,
+      0.0001528643154767083
+    ],
+    "harmonic_unit_source_norm": 1,
+    "one_plaquette_harmonic_norm_squared": 0.0007716049382716049,
+    "projected_pairing": 0.5134793969040177
+  },
+  "positive_clock_lift_score_and_duality": [
+    {
+      "N": 2,
+      "beta": 0.18,
+      "beta_d": 0.5628954646796543,
+      "constant_lift_fiber": 2,
+      "covariance_duality_error": 3.1086244689504383e-15,
+      "lattice_points": 4631,
+      "score_variance": 1.565659538558174e-33,
+      "source_noise": 1.4434661239107611
+    },
+    {
+      "N": 4,
+      "beta": 0.65,
+      "beta_d": 0.6235149762605402,
+      "constant_lift_fiber": 4,
+      "covariance_duality_error": 6.661338147750939e-16,
+      "lattice_points": 2315,
+      "score_variance": 1.224068141274533,
+      "source_noise": 0.20703034955668476
+    },
+    {
+      "N": 6,
+      "beta": 1.4,
+      "beta_d": 0.6513504662721714,
+      "constant_lift_fiber": 6,
+      "covariance_duality_error": 6.661338147750939e-16,
+      "lattice_points": 2027,
+      "score_variance": 1.4310026929847108,
+      "source_noise": 0.0016345582189112964
+    }
+  ],
+  "tail_constants_and_explicit_scaling": {
+    "affine_input_delta_values": [
+      4.4243430754697853e-10,
+      2.4316691830731667e-12,
+      1.3486045022901546e-14
+    ],
+    "supplied_scaling_sequence": [
+      {
+        "N": 16016,
+        "beta": 2002,
+        "beta_d": 3245.520154431364,
+        "j": 2,
+        "physical_side": 4.0
+      },
+      {
+        "N": 16080,
+        "beta": 2010,
+        "beta_d": 3258.4892659375832,
+        "j": 10,
+        "physical_side": 20.0
+      },
+      {
+        "N": 16800,
+        "beta": 2100,
+        "beta_d": 3404.3917703825496,
+        "j": 100,
+        "physical_side": 200.0
+      },
+      {
+        "N": 24000,
+        "beta": 3000,
+        "beta_d": 4863.416814832213,
+        "j": 1000,
+        "physical_side": 2000.0
+      }
+    ],
+    "tail_integrals": [
+      {
+        "beta": 0.1,
+        "noise_bound": 14.588267601868495
+      },
+      {
+        "beta": 0.8,
+        "noise_bound": 1.527600853842346
+      },
+      {
+        "beta": 2.0,
+        "noise_bound": 0.008995369158389168
+      },
+      {
+        "beta": 5.0,
+        "noise_bound": 7.90363509050492e-09
+      }
+    ]
+  },
+  "tilted_coset_total_covariance": [
+    {
+      "between_coset_covariance_trace": 1.000072956277685,
+      "direct_mean": -1.8600087251529946,
+      "direct_variance": 1.5500294260534295,
+      "source_gradient": -1.860008725151907,
+      "source_hessian": 1.5500294381354252,
+      "tilt": -1.2
+    },
+    {
+      "between_coset_covariance_trace": 0.9999193445514619,
+      "direct_mean": -0.3099923839646388,
+      "direct_variance": 1.5499674688042142,
+      "source_gradient": -0.3099923839644525,
+      "source_hessian": 1.5499674654861906,
+      "tilt": -0.2
+    },
+    {
+      "between_coset_covariance_trace": 1.0000992274723604,
+      "direct_mean": 1.3949973909229372,
+      "direct_variance": 1.550040021525957,
+      "source_gradient": 1.3949973909233027,
+      "source_hessian": 1.5500400185608498,
+      "tilt": 0.9
+    }
+  ]
+}
+per_element: scalar Gaussian lifts, score derivatives, centered theta sources and tail integrals are checked with explicit finite cutoffs.
+per_site: the three-face incidence toy checks clock fibers and conditional plaquette noise; it is not a four-dimensional phase computation.
+per_mode: midpoint Fourier phases, continuum projector symbols, electric-magnetic contact signs and the rank-two reflected Gram matrix are checked.
+per_block: composite orders two, four and six, a finite exact-plane lattice sequence and an even side-six Fourier block are checked personally.
+lattice_wide: checked and not executed — arbitrary-volume affine covariance, distributional convergence and full Fock reconstruction rest on the stated conditional derivation.
+TOTAL: PASS=8 FAIL=0
+scope: finite mathematical challenges only; the all-shift input and the new continuum theorem await independent proof review and formal audit.

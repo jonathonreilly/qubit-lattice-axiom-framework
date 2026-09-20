@@ -1,0 +1,37 @@
+AUTHORITY AND INPUT CLASS
+FAIL review note exists :: 
+PASS Cycle 48 accepts exactly codes 0 through 59 :: 
+PASS runner is outside protected constitutional surfaces :: 
+
+LOCAL COMPILATION
+PASS 153-role alphabet partitions into 27 reserved and 126 prefix roles :: (153, 27, 126)
+PASS all nonempty six-bit prefixes have one injective physical role :: 
+PASS finite apparatus is six literal bits, one start, and 43 quiet cage records :: (6, 43, 50)
+PASS 126 canonical rows have only five- or six-parent radius-one inputs :: Counter({6: 64, 5: 62})
+PASS 3,024 decoder rows are disjoint from the 9,836-row bound law :: (3024, 9836, 12860)
+PASS merged law is single-valued and alphabet-closed :: 
+PASS MARK cage has no unary continuation in the merged law :: 
+
+ALL WORDS, SCHEDULES, AND ROTATIONS
+PASS all 1,536 rotated word histories are exact six-write chains :: (10752, 9216, [])
+PASS sixty state IDs and four reject IDs are pairwise disjoint :: (60, 4)
+PASS every physical final role replays the exact Cycle-48 decoder result :: 
+PASS decoder and bound terminal are strictly separated while sharing one law :: 
+
+CORRUPTION AND PARENT NECESSITY
+PASS deleting any literal bit stalls before the missing position :: (384, ())
+PASS flipping any bit yields the distinct changed-word ID :: []
+PASS all direct-parent deletion/value mutations suppress the intended write :: (106182, (), 3970)
+
+SCOPE
+FAIL note contains: finite_cycle48_local_decoder :: 
+FAIL note contains: six literal permanent h0/h1 records :: 
+FAIL note contains: not generated from the recurrent archive :: 
+FAIL note contains: born–lüders weights remain conditional :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 16 FAIL 8
+RESULT FAIL

@@ -1,0 +1,35 @@
+Complex determinant and realification determinant power
+================================================================
+
+Part A: generic realification identity
+--------------------------------------
+  [PASS] generic 2x2 determinant identity
+  [PASS] realified determinant is real
+  [PASS] scalar realification gives x^2+y^2
+  [PASS] singular scalar is included
+  [PASS] complex determinant scales to first power per complex mode
+  [PASS] realified determinant scales to second power per complex mode
+
+Part B: exact finite examples
+-----------------------------
+  [PASS] diagonal 2x2 example
+  [PASS] exact 3x3 example
+  [PASS] singular 2x2 example has both determinants zero
+  [PASS] multiplication by i changes the complex determinant phase in odd size
+  [PASS] multiplication by i leaves the realified determinant unchanged
+
+Part C: Berezin first power
+---------------------------
+  [PASS] generic 1x1 top coefficient is det_C(K)  (k0)
+  [PASS] generic 2x2 top coefficient is det_C(K)  (k00*k11 - k01*k10)
+  [PASS] Berezin result has first determinant power
+  [PASS] generic 3x3 top coefficient is det_C(K)
+
+Scope guards
+------------
+  [PASS] source note has no load-bearing links to former context stack
+  [PASS] source separates the physical occupancy-selector domain
+  [PASS] source keeps r as a free dial
+
+================================================================
+TOTAL: PASS=18, FAIL=0

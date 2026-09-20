@@ -1,0 +1,13 @@
+PR #8530: ail39: records that move — pair-weight transit has the static law as equilibrium, the binding scale is a constant the rule cannot see, reflection positivity bounds it from below, and where records clump and jam
+branch physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_records_that_move_pair_weight_transit_static_equilibrium_binding_scale_2026_09_20.py: rc=0 PASS=19 FAIL=0
+   mutation balance_with_normalized_rule: expected B observed B ok
+   mutation window_disconnected_injected: expected B observed B ok
+   mutation scale_invisible_to_motion_injected: expected C observed C ok
+   mutation escape_formula_wrong: expected C observed C ok
+   mutation normalized_reading_reversible_injected: expected D observed D ok
+   mutation birth_rate_wrong: expected E observed E ok
+   mutation rp_threshold_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

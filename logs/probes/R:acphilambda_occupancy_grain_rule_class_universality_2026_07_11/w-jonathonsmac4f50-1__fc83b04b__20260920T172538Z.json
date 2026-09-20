@@ -1,0 +1,36 @@
+{
+ "task": "R:acphilambda_occupancy_grain_rule_class_universality_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py",
+ "seed": 25138,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fc83b04b",
+ "started_utc": "20260920T172538Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=32 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "37c06703c6181e10e144691e68433406872768de31f776b3c2d8fec44d747ae0",
+ "stdout_tail": "ual-power-per-block arithmetic\nU4.1 PASS: f(0)=0 and f(1)>0 fix q=0\nU4.2 PASS: exchange symmetry fixes q=1/2\nU4.3 PASS: f(0)=0 and f(1)>0 fix q=1\nU4.4 PASS: an interior fixed point is exactly the input-odds equality\nU4.5 PASS: exact solve for k=2 has only 0, 1/2, 1\nU4.6 PASS: exact solve for k=3 has only 0, 1/2, 1\nU4.7 PASS: exact solve for k=5/2 has only 0, 1/2, 1\nU4.8 PASS: exact solve for k=4 has only 0, 1/2, 1\nU4.9 PASS: a^2 and two |b|^2 contributions give p_d=2r/(1+2r)\nU4.10 PASS: the derived two-sector occupancies normalize exactly\nU4.11 PASS: p_d=1/2 is equivalent to r=1/2\n[U5] Load-bearing negative controls\nU5.1 PASS: N1 asymmetric f_d(x)=x^3, f_s(x)=x^2 has one exact interior fixed point\nU5.2 PASS: N1 asymmetric interior fixed point is not 1/2\nU5.3 PASS: N1 q=1/2 is moved by the asymmetric update\nU5.4 PASS: N2 f(q)=q makes every q a fixed point\nU5.5 PASS: N3 the three-sector symmetric square sharpening fixes (1/3,1/3,1/3)\nU5.6 PASS: N3 exact solve has the uniform point as its only simplex-interior fixed point\nU5.7 PASS: N3 per-sector uniform occupancy reads r=1\n[U6] Consumed-scope text checks\nU6.1 PASS: sibling controlled-copy class statement is consumed verbatim\nU6.2 PASS: sibling R5 single-register-orbit statement is consumed verbatim\nU6.3 PASS: adoption Candidate 1 is quoted verbatim in the theorem note\nU6.4 PASS: adoption value and sector-weight boundary is consumed verbatim\nU6.5 PASS: narrowed formation no-go boundary is consumed verbatim\nTOTAL: PASS=32 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T172539Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=32 FAIL=1' vs cache 'TOTAL: PASS=33 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:acphilambda_occupancy_wpower_n7_independent_certificate_2026_07_13",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/acphilambda_occupancy_wpower_n7_independent_certificate_2026_07_13.py",
+ "seed": 25139,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fc83b04b",
+ "started_utc": "20260920T172539Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5920ef1b72509a3e77052301abdc84e304feb53f8057afb104584601ecf8c50a",
+ "stdout_tail": "Independent W_power normalization-steelman certificate\n============================================================\n[PASS] finite carrier is invertible\n[PASS] realification determinant equals squared complex modulus\n[PASS] normalization identity F_R/2=F_C holds exactly\n[PASS] raw determinant powers remain distinct before normalization\n[PASS] source declares W_power as the raw determinant-power wall\n[PASS] accepted axioms withhold source/action identification\n[PASS] accepted axioms require a separate log-det or action bridge\nN7_STEELMAN_RESOLUTION W_power remains underdetermined on the current axiom surface: F_R/2=F_C removes the coordinate factor two, but the accepted axioms explicitly withhold source/action and physical-observable identification, so the normalization convention does not select the physical determinant power.\n============================================================\nTOTAL: PASS=7, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T172539Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+Independent W_power normalization-steelman certificate
+============================================================
+[PASS] finite carrier is invertible
+[PASS] realification determinant equals squared complex modulus
+[PASS] normalization identity F_R/2=F_C holds exactly
+[PASS] raw determinant powers remain distinct before normalization
+[PASS] source declares W_power as the raw determinant-power wall
+[PASS] accepted axioms withhold source/action identification
+[PASS] accepted axioms require a separate log-det or action bridge
+N7_STEELMAN_RESOLUTION W_power remains underdetermined on the current axiom surface: F_R/2=F_C removes the coordinate factor two, but the accepted axioms explicitly withhold source/action and physical-observable identification, so the normalization convention does not select the physical determinant power.
+============================================================
+TOTAL: PASS=7, FAIL=0

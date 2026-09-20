@@ -1,0 +1,35 @@
+{
+ "task": "R:acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py",
+ "seed": 25137,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fc83b04b",
+ "started_utc": "20260920T172537Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c9e17d532bf056aba940a519eb388e0d1add0bbc3c449af215a75c1f9d36b0f3",
+ "stdout_tail": "Complex determinant and realification determinant power\n================================================================\n\nPart A: generic realification identity\n--------------------------------------\n  [PASS] generic 2x2 determinant identity\n  [PASS] realified determinant is real\n  [PASS] scalar realification gives x^2+y^2\n  [PASS] singular scalar is included\n  [PASS] complex determinant scales to first power per complex mode\n  [PASS] realified determinant scales to second power per complex mode\n\nPart B: exact finite examples\n-----------------------------\n  [PASS] diagonal 2x2 example\n  [PASS] exact 3x3 example\n  [PASS] singular 2x2 example has both determinants zero\n  [PASS] multiplication by i changes the complex determinant phase in odd size\n  [PASS] multiplication by i leaves the realified determinant unchanged\n\nPart C: Berezin first power\n---------------------------\n  [PASS] generic 1x1 top coefficient is det_C(K)  (k0)\n  [PASS] generic 2x2 top coefficient is det_C(K)  (k00*k11 - k01*k10)\n  [PASS] Berezin result has first determinant power\n  [PASS] generic 3x3 top coefficient is det_C(K)\n\nScope guards\n------------\n  [PASS] source note has no load-bearing links to former context stack\n  [PASS] source separates the physical occupancy-selector domain\n  [PASS] source keeps r as a free dial\n\n================================================================\nTOTAL: PASS=18, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T172537Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

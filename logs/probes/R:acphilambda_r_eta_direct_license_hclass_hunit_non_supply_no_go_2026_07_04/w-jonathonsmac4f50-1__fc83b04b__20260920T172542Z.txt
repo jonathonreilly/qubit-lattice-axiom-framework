@@ -1,0 +1,77 @@
+Record additivity and the R-eta unit-calibration countermodel
+========================================================================
+
+Part A: exact beta family
+-------------------------
+  [PASS] tested beta family is strictly positive
+  [PASS] empty record reads zero for every tested beta
+  [PASS] finite disjoint additivity holds for every tested beta
+  [PASS] target singleton eta angle is 2/9
+  [PASS] countermodel singleton eta angle is 4/9
+  [PASS] N1 numerical_or_finite_case mechanism: finite singleton point evaluation; N1 numerical_or_finite_case attempt: finite cardinality formula at n=1; N1 numerical_or_finite_case outcome: finite beta-one and beta-two singleton readouts remain distinct
+  [PASS] target cycle holonomy is 2/3
+  [PASS] countermodel cycle holonomy is 4/3
+  [PASS] target and countermodel share the same h
+  [PASS] target and countermodel are distinct
+
+Part B: content and symmetry
+----------------------------
+  [PASS] readout is translation invariant
+  [PASS] readout is proper-cubic-rotation invariant
+  [PASS] readout is cycle-position permutation invariant
+  [PASS] real readout is conjugation even
+  [PASS] readout depends on record collection through cardinality
+
+Part C: arbitrary finite additivity
+-----------------------------------
+  [PASS] cardinality formula holds at n=0
+  [PASS] cardinality formula holds at n=1
+  [PASS] cardinality formula holds at n=2
+  [PASS] cardinality formula holds at n=3
+  [PASS] cardinality formula holds at n=4
+  [PASS] cardinality formula holds at n=5
+  [PASS] three-way disjoint additivity
+
+Part D: rhetoric-resolution lifts
+---------------------------------
+  [PASS] per_element: singleton record indicator preserves distinct beta-one and beta-two readouts
+  [PASS] per_site: translated finite-site records preserve symmetry while leaving beta free
+  [PASS] per_mode: disjoint finite-mode decomposition preserves additivity while leaving beta free
+  [PASS] per_block: disjoint record blocks preserve additivity for both beta normalizations
+  [PASS] lattice_wide: finite lattice partition preserves both laws while beta remains unselected
+  [PASS] N2 wall readout bridge: W_unit beta-one and beta-two singleton laws share h but remain distinct
+
+Part E: coordinate-convention steelman
+--------------------------------------
+N1 route coordinate_convention
+  N7 convention mechanism: same-observable common-unit rescaling
+  ATTEMPTED N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor
+  N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected
+  [PASS] N7 steelman argument: N7 convention mechanism: same-observable common-unit rescaling; ATTEMPTED N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor; N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected
+  [PASS] N7 relative-normalization guard: beta=2 reaches beta=1 by rescaling abs(delta_beta) without h, which is not a common-unit convention
+  [PASS] coordinate unit scales are positive
+  [PASS] coordinate_convention ATTEMPTED: common-unit rescaling preserves the beta-one ratio
+  [PASS] coordinate_convention ATTEMPTED: common-unit rescaling preserves the beta-two ratio
+  [PASS] same-coordinate beta-one readout equals the fixed-locus density
+  [PASS] same-coordinate beta-two readout remains distinct from the fixed-locus density
+  [PASS] same-observable identity is equivalent to beta one in the tested positive family
+N7 coordinate steelman resolved by current-cycle computation: a common coordinate change leaves beta invariant; a separate same-observable theorem could set beta=1 but is not a units convention
+
+Part F: source and axiom guards
+-------------------------------
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py", line 298, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py", line 250, in main
+    note = NOTE.read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md'

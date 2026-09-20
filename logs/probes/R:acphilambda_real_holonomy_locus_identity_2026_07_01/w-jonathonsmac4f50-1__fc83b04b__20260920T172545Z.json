@@ -1,0 +1,36 @@
+{
+ "task": "R:acphilambda_real_holonomy_locus_identity_2026_07_01",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py",
+ "seed": 25145,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fc83b04b",
+ "started_utc": "20260920T172545Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=62 FAIL=23",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "14a21506a673133e680afbae3038e48cb9339349f22fc6d23cab6ddd91799709",
+ "stdout_tail": "forbidden phrase: only route\n[PASS] note excludes forbidden phrase: last route\n[PASS] note excludes forbidden phrase: exhausted\n[PASS] note excludes forbidden phrase: closes the route\n[PASS] note excludes forbidden phrase: PDG\n[PASS] note excludes forbidden phrase: theta is closed\n[PASS] note excludes forbidden phrase: r=1/2 is forced\n[FAIL] note declares canonical bounded_theorem claim type\n[PASS] note does not use runner PASS as source status\n[PASS] note does not lean on PR #4783 as authority\n[FAIL] dep link present as markdown label: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md\n[FAIL] dep link present as markdown label: docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md\n[FAIL] dep link present as markdown label: docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md\n[FAIL] only the three origin/main md files are linked\n       []\n[FAIL] in-flight context name appears: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM\n[PASS] in-flight context name is not a markdown target: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM\n[FAIL] in-flight context name appears: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION\n[PASS] in-flight context name is not a markdown target: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION\n[FAIL] primary runner is linked\n[FAIL] status authority header is standard\nTOTAL: PASS=62 FAIL=23\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T172545Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=62 FAIL=23' vs cache 'TOTAL: PASS=85 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,63 @@
+[FAIL] paired note exists
+[PASS] premise source note exists
+[FAIL] ledger exists
+[FAIL] ledger row found for premise source
+ledger row live audit fields (informational; the audit lane owns them): effective_status=None, claim_scope=null
+[PASS] dependency claim-scope block located in source note
+[FAIL] note carries exactly three premise scope quotes
+[FAIL] premise line pins no audit-grade label
+[PASS] retired ledger-condensed scope wording absent from note
+[FAIL] header carries primary runner link
+[FAIL] heat-trace anchors are printed in note
+[PASS] fixed-seed dense probe is nondegenerate
+[PASS] H_D is Hermitian exactly in dense arithmetic
+[PASS] R2 is unitary
+[PASS] [R2,H_D]=0 at N=4
+[PASS] R2^3=-I at N=4
+[PASS] heat trace t=0.5 anchor
+[PASS] heat trace t=1.0 anchor
+[PASS] projective sign identity at t=0.5
+[PASS] projective sign identity at t=1.0
+[PASS] one-component scalar trace has plus sign
+[PASS] one-component sign contrasts with two-component trace
+[PASS] Bloch H(kappa) commutes with U exactly
+[PASS] plus branch has U-weight exp(-i*pi/3)
+[PASS] minus branch has U-weight exp(+i*pi/3)
+[PASS] symbolic N=4 doubler pair m=0,2 cancels
+[PASS] symbolic N=4 doubler pair m=1,3 cancels
+[PASS] dense trace equals diagonal reduction at t=0.5
+[PASS] dense trace equals diagonal reduction at t=1.0
+[PASS] dropping spinor torsion weights breaks reduction
+[PASS] diagonal fixed momenta are the N C3-fixed Bloch points
+[PASS] naive A(4,0.7)=0
+[PASS] naive A(6,0.7)=0
+[PASS] odd N anchor A(3,0.7)
+[PASS] odd N naive trace is flux-odd
+[PASS] odd N naive trace vanishes at zero flux
+[PASS] Wilson scalar term preserves R2 covariance
+[PASS] Wilson A(4,0.7) anchor
+[PASS] Wilson even-N trace is flux-odd
+[PASS] Wilson even-N trace vanishes at zero flux
+[PASS] Wilson A(3,0.7) anchor
+[PASS] special r=1,t=1 vanishing is real
+[PASS] generic Wilson point is not that special vanishing
+[PASS] finite-ring native instances decrease 3>5>7
+[PASS] dense flux trace equals reduction at N=3
+[PASS] dense Wilson flux trace equals reduction at N=4
+[PASS] PR #4783 rescale freedom persists on the composed surface
+[FAIL] required sentence present: the projective equivariance is realized exac
+[FAIL] required sentence present: the sector-distinguishing weights are torsio
+[FAIL] required sentence present: on even diagonal grids the naive K-odd trace
+[FAIL] required sentence present: the K-odd observable exists at the generatio
+[FAIL] required sentence present: what value it registers remains the wall
+[FAIL] required sentence present: not a terminal no-go
+[FAIL] N1 through N8 gate tokens present
+[PASS] forbidden phrases are absent
+[PASS] W_ names stay whitelisted
+[FAIL] link inventory is one md dependency plus one runner
+[FAIL] in-flight campaign ids are backticked, not linked
+[PASS] instruction-leakage strings absent from note
+[FAIL] note quotes the dependency claim-scope block, not a ledger-authority line
+[FAIL] canonical type, audit boundary, and bounded gate are stated
+[PASS] runtime under 90 seconds
+TOTAL: PASS=43 FAIL=18

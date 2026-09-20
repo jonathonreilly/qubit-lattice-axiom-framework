@@ -1,0 +1,72 @@
+ok   PR #8178 present at its pinned head e6ffae5b460b
+ok   PR #8180 present at its pinned head 7c844adf7555
+
+D1  the multiplier under each transform
+     P is the average over the three predecessors: (P th)_x = (th_x + th_{x-e1} + th_{x-e2})/3.
+ok   L=3: with e^-ik.x the multiplier is (1+e^-ik1+e^-ik2)/3 and with e^+ik.x it is (1+e^+ik1+e^+ik2)/3, at all 9 modes (exact, roots of unity)
+ok   L=4: with e^-ik.x the multiplier is (1+e^-ik1+e^-ik2)/3 and with e^+ik.x it is (1+e^+ik1+e^+ik2)/3, at all 16 modes (exact, roots of unity)
+ok   numpy's FFT (e^-ik.x) on L=3..8 random fields: |P^ - phi_c th^| <= 4.4e-16, |P^ - phi th^| up to 1.793
+
+D2  where the stated phi is right anyway
+ok   phi - phi_c = (2i/3)(sin k1 + sin k2)
+     L=2: 4 of 4 modes agree
+     L=3: 3 of 9 modes agree
+     L=10: 20 of 100 modes agree
+ok   for L = 2..12 the agreeing modes are exactly n1+n2 = 0, or n2-n1 = L/2 for even L
+ok   so for every L >= 3 some mode disagrees: the stated identity fails for every field
+
+D3  what the choice cannot touch
+ok   1 - |phi|^2 = (4/9)[sin^2(k1/2)+sin^2(k2/2)+sin^2((k1-k2)/2)]
+ok   1 - |phi_c|^2 = (4/9)[sin^2(k1/2)+sin^2(k2/2)+sin^2((k1-k2)/2)]
+ok   |phi| = |phi_c|: T1.2, the mode variances, tau_L, V_L, S_L and block 35's T2/T3 moduli
+     cannot distinguish the two, which is why nothing executed caught the defect.
+
+D4  block 34's control
+ok   supervisor_control_block34_refuter.py line 23 uses u = (3+2cos k1+2cos k2+2cos(k1-k2))/9,
+     which is |phi|^2 = |phi_c|^2: the refuting pass is phase-blind by construction.
+
+D5  block 35's refuter, which does see the phase
+ok   its mode vector is e_x = e^{+i k.x}/L, not numpy's FFT convention
+ok   and it checks conj(e).Sigma.(P^s)^T.e / conj(e).Sigma.e against phi^s
+ok   exactly: P e_k = phi_c e_k and P^T e_k = phi e_k for e_k = (e^{+ik.x})_x, L = 3 and 4
+     so for ANY covariance Sigma, conj(e).Sigma.(P^s)^T.e = phi^s conj(e).Sigma.e:
+     the ratio the refuter prints is phi^s identically, at every level t.
+
+D6  block 35's sampler
+ok   it transforms with numpy's fft2 (e^-ik.x) and compares against phi
+     With f_k(t) the fft2 coefficient, f_k(t+1) = phi_c f_k(t) + noise, so
+     E[f_k(t) conj(f_k(t+s))] = conj(phi_c)^s Var = phi^s Var: with the ordering the
+     sampler accumulates, phi is again the measured symbol.  Both of block 35's
+     executed routes therefore measure phi, not phi_c.
+
+D7  the audit of formula-bearing lines
+     GOAL_block34.md:6   listed by a1
+     HANDOFF.md:30   NOT in a1's list
+     RESULTS_block34.md:6   listed by a1
+     ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_:4   listed by a1
+     ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_:85   listed by a1
+     ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_:104   listed by a1
+     admissibility_rule_unsoldered_formation_law_:18   listed by a1
+     admissibility_rule_unsoldered_formation_law_:5   listed by a1
+     admissibility_rule_unsoldered_formation_law_:199   listed by a1
+     admissibility_rule_unsoldered_formation_law_:206   listed by a1
+ok   every line a1 lists carries the formula at the pinned head
+ok   exactly one formula-bearing line of block 34 is missing from a1's list: ['HANDOFF.md:30']
+
+D8  the two repairs
+ok   note line 85 carries BOTH halves of the defect: it declares the transform with e^-ik.x
+     and, in the same sentence, says P acts as multiplication by phi.  One of the two
+     clauses has to move; which one is the whole choice.
+ok   T1.1's proof names the step it skips: 'the conjugate convention gives the stated phi'
+ok   repair A (a1's): phi -> phi_c in 10 lines (its 9, plus HANDOFF.md:30 from D7).  Three of
+     them are executed or frozen: the runner's line 199 is code, its line 206 is the
+     check's text, and the runner-cache line 18 is that text frozen - so repair A means
+     re-running block 34's runner and regenerating its cache.
+ok   repair B: change the transform in note line 85 to e^{+ik.x} and the clause in T1.1's
+     proof.  Two clauses of prose.  By D1 T1.1 is then true exactly as written; by D3
+     nothing downstream moves; the runner's phi (line 199), its check text, the frozen
+     cache, GOAL, RESULTS and HANDOFF all stay as they are, and by D5 and D6 both of
+     block 35's executed controls already measure that phi.
+
+SUMMARY: PARTIAL the defect of PR #8178 T1.1 sits inside one sentence - note line 85 declares the transform as L^-1 sum_x e^{-ik.x} th_x and, in the same sentence, gives P the multiplier phi - so it has two repairs, not one: change the formula to phi_c in ten lines (three of them executed or frozen, which forces a re-run of the runner and its cache), or change the transform to e^{+ik.x} in that clause and in T1.1's proof, which is two clauses of prose and leaves phi, the runner, the frozen cache and both of block 35's executed controls untouched; those controls measure phi, not phi_c (the refuter in the e^{+ik.x} basis exactly, the sampler through fft2 with the ordering E[f(t) conj f(t+s)])
+HIT: the transform clause is the minimal repair of PR #8178 T1.1 - the executed side of blocks 34 and 35 is consistent with phi as stated, and attempt a1's formula repair is the one that invalidates block 34's frozen runner cache; a1's line list is also short by one formula-bearing line, HANDOFF.md:30

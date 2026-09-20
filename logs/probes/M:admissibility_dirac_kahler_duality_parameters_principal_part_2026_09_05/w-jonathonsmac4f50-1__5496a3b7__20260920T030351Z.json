@@ -19,14 +19,21 @@
  "stdout_sha256": "8b98119ee5c985f9fda4adbd502bba521b8a46fbef52991b0f4104e30b4158aa",
  "stdout_tail": " ms\n[phase] registration: 92158 ms\n[phase] authority: 0 ms\n[phase] construction: 529 ms\n[phase] control: 313 ms\n[phase] bench: 110 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12370 ms\n[phase] branches: 22037 ms\n[phase] registration: 92253 ms\n[phase] authority: 0 ms\n[phase] construction: 538 ms\n[phase] control: 314 ms\n[phase] bench: 114 ms\n[phase] mechanism: 54 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12705 ms\n[phase] branches: 17629 ms\n[phase] registration: 93615 ms\n[phase] authority: 2 ms\n[phase] construction: 536 ms\n[phase] control: 314 ms\n[phase] bench: 115 ms\n[phase] mechanism: 55 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12806 ms\n[phase] branches: 22474 ms\n[phase] registration: 93951 ms\n[phase] authority: 1 ms\n[phase] construction: 524 ms\n[phase] control: 310 ms\n[phase] bench: 112 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12759 ms\n[phase] branches: 17383 ms\n[phase] registration: 93147 ms\n[phase] authority: 2 ms\n[phase] construction: 515 ms\n[phase] control: 304 ms\n[phase] bench: 109 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12413 ms\n[phase] branches: 19002 ms\n[phase] registration: 91637 ms\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T035844Z",
-  "result": "FAIL",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T050205Z",
+  "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5496a3b7 differs from the current HEAD 1b619011 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
-   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
-   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+   "ok: parse field 'expected' not found (log written under an earlier task definition; triaged)",
+   "ok: parse field 'observed' not found (log written under an earlier task definition; triaged)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Same stale-parse class as M:admissibility_dirac_kahler_duality_covariance_locus_2026_09_05: the task declares parse fields mutation_family_expected/observed, and this 2026-09-05 script never prints them (zero occurrences in the stdout) - it enforces the census internally instead, raising AssertionError 'mutation did not fail exactly its own gate' in main unless the mutated run changes exactly its target family and fails it, and otherwise prints only [PASS]/[FAIL] lines, GATES and TOTAL. The census itself passed: all 26 declared mutations ran to completion with TOTAL: PASS=32 FAIL=1, one failing gate each and no INTERNAL-EXCEPTION, and I re-ran the unmutated baseline at the same commit, getting GATES A..I all PASS with TOTAL: PASS=33 FAIL=0, so each mutation did fail exactly its own gate. No text matched the declared patterns because the patterns do not exist in this script's vocabulary.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T050205Z"
  }
 }

@@ -1,0 +1,21 @@
+# the pinned scale (neutral), line (p,1,2), L = 16, 3000 sweeps, seed 3: density against preference
+SUMMARY: p=6.0 q=1.0 r=2.0 c=0.4000 rho=0.1 L=16 nbrs=0.690 nbrs_over_random=1.150 aligned=0.401 S=0.09 accept=0.460 records=472 seconds=179
+SUMMARY: p=8.0 q=1.0 r=2.0 c=0.3529 rho=0.1 L=16 nbrs=0.693 nbrs_over_random=1.155 aligned=0.473 S=0.09 accept=0.441 records=472 seconds=178
+SUMMARY: p=10.0 q=1.0 r=2.0 c=0.3158 rho=0.1 L=16 nbrs=0.694 nbrs_over_random=1.157 aligned=0.532 S=0.10 accept=0.425 records=472 seconds=178
+SUMMARY: p=12.0 q=1.0 r=2.0 c=0.2857 rho=0.1 L=16 nbrs=0.693 nbrs_over_random=1.156 aligned=0.573 S=0.11 accept=0.411 records=472 seconds=178
+SUMMARY: p=16.0 q=1.0 r=2.0 c=0.2400 rho=0.1 L=16 nbrs=0.705 nbrs_over_random=1.175 aligned=0.652 S=0.11 accept=0.388 records=472 seconds=178
+SUMMARY: p=6.0 q=1.0 r=2.0 c=0.4000 rho=0.3 L=16 nbrs=1.884 nbrs_over_random=1.047 aligned=0.415 S=0.21 accept=0.402 records=1275 seconds=180
+SUMMARY: p=8.0 q=1.0 r=2.0 c=0.3529 rho=0.3 L=16 nbrs=1.926 nbrs_over_random=1.070 aligned=0.519 S=0.27 accept=0.362 records=1275 seconds=179
+SUMMARY: p=10.0 q=1.0 r=2.0 c=0.3158 rho=0.3 L=16 nbrs=2.172 nbrs_over_random=1.207 aligned=0.691 S=1.26 accept=0.327 records=1275 seconds=180
+SUMMARY: p=12.0 q=1.0 r=2.0 c=0.2857 rho=0.3 L=16 nbrs=2.551 nbrs_over_random=1.417 aligned=0.831 S=2.04 accept=0.301 records=1275 seconds=179
+SUMMARY: p=16.0 q=1.0 r=2.0 c=0.2400 rho=0.3 L=16 nbrs=3.207 nbrs_over_random=1.781 aligned=0.944 S=1.98 accept=0.268 records=1275 seconds=178
+SUMMARY: p=6.0 q=1.0 r=2.0 c=0.4000 rho=0.5 L=16 nbrs=3.058 nbrs_over_random=1.019 aligned=0.465 S=0.34 accept=0.356 records=2047 seconds=180
+SUMMARY: p=8.0 q=1.0 r=2.0 c=0.3529 rho=0.5 L=16 nbrs=3.562 nbrs_over_random=1.187 aligned=0.808 S=1.65 accept=0.303 records=2047 seconds=179
+SUMMARY: p=10.0 q=1.0 r=2.0 c=0.3158 rho=0.5 L=16 nbrs=3.848 nbrs_over_random=1.283 aligned=0.905 S=3.02 accept=0.264 records=2047 seconds=179
+SUMMARY: p=12.0 q=1.0 r=2.0 c=0.2857 rho=0.5 L=16 nbrs=4.000 nbrs_over_random=1.333 aligned=0.940 S=2.20 accept=0.235 records=2047 seconds=179
+SUMMARY: p=16.0 q=1.0 r=2.0 c=0.2400 rho=0.5 L=16 nbrs=4.137 nbrs_over_random=1.379 aligned=0.964 S=1.23 accept=0.196 records=2047 seconds=179
+SUMMARY: p=6.0 q=1.0 r=2.0 c=0.4000 rho=0.7 L=16 nbrs=4.411 nbrs_over_random=1.050 aligned=0.753 S=0.60 accept=0.315 records=2847 seconds=179
+SUMMARY: p=8.0 q=1.0 r=2.0 c=0.3529 rho=0.7 L=16 nbrs=4.539 nbrs_over_random=1.081 aligned=0.861 S=0.59 accept=0.245 records=2847 seconds=178
+SUMMARY: p=10.0 q=1.0 r=2.0 c=0.3158 rho=0.7 L=16 nbrs=4.605 nbrs_over_random=1.096 aligned=0.900 S=0.66 accept=0.201 records=2847 seconds=179
+SUMMARY: p=12.0 q=1.0 r=2.0 c=0.2857 rho=0.7 L=16 nbrs=4.640 nbrs_over_random=1.105 aligned=0.918 S=0.39 accept=0.171 records=2847 seconds=180
+SUMMARY: p=16.0 q=1.0 r=2.0 c=0.2400 rho=0.7 L=16 nbrs=4.643 nbrs_over_random=1.106 aligned=0.927 S=0.39 accept=0.132 records=2847 seconds=178

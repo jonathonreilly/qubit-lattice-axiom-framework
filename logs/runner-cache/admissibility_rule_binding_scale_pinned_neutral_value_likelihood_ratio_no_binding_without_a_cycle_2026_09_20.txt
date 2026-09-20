@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_binding_scale_pinned_neutral_value_likelihood_ratio_no_binding_without_a_cycle_2026_09_20.py
+runner_sha256: d12ff919c86a9bf411573642a8ffa3045d7e0e0aa11e339d0f21eedca51e3b70
+input_fingerprint_sha256: 580da220dcebc639c1ffdbed2a55c916c027dc14e709096eca47eb3b838ab7d5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.47
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentences used: no possibility is privileged; the distribution sentence; a site with no record cannot be read
+PASS: A3 block 01 on main carries its claim id and the static law of a product rule
+PASS: B1 T1: at c_0 = 6/(p + q + 4r), and at no other scale, the pair weight is the rule's one-neighbour probability divided by 1/6, its rows average to 1, and an empty site next to one record forms at the empty-space rate; at (3,1,2), (5,2,4), (12,1,2)
+PASS: B2 T1: at c_0 the empty row of the 7 x 7 bond kernel is the average of the six record rows, so the vector (-6, 1, 1, 1, 1, 1, 1) is annihilated: bond by bond an empty site acts as a record of uniformly random content (block 39's T5: the least reflection-positive scale)
+PASS: B3 T1: at c_0 the formation rate over its empty-space value, Z_x/6, equals the likelihood ratio of the neighbours' contents under a common uniformly drawn cause against independent uniform draws, for all 36 pairs of neighbours
+PASS: C1 T2: at c_0, on the path of 3, the star of 4, the path of 4 and a tree of 5 sites, the occupancy is exactly independent from site to site with density 6z/(1 + 6z); two weight triples, two fugacities
+PASS: C2 T2: on the 2x3 window every occupied set without a cycle (57 of the 64) weighs exactly (6z)^n; on a fully occupied tree the contents have the rule's tree law (uniform root, the one-neighbour probability along each edge)
+PASS: D1 T3: a fully occupied cycle of length n = 4, 6 weighs (6z)^n (1 + 3 l_1^n + 2 l_2^n) with l_1 = (p - q)/(p + q + 4r), l_2 = (p + q - 2r)/(p + q + 4r), the two non-trivial eigenvalues of the rule's one-neighbour probability; plaquette factors (3,1,2): 433/432; (5,2,4): 280086/279841; (12,1,2): 83842/64827
+PASS: D2 T3: on the plaquette at c_0 neighbouring occupancies are positively correlated, by the loop factor alone (covariance 15552/1224510049 at (3,1,2), z = 1/12)
+PASS: E1 T4: at any scale c, on a window without a cycle, the occupied set weighs (6z)^n (c/c_0)^(occupied bonds): the content-less lattice gas with bond activity c/c_0; the glue beyond the rule is exactly the ratio c/c_0 (c = 1/4, 1, 3 at (3,1,2))
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the pair weight as the rule's likelihood ratio; the averaged empty row and the annihilated vector; the formation rate as a likelihood ratio, all 36 neighbour pairs
+per_site: executed — exact occupancy laws on four windows without a cycle at two triples and two fugacities; all 64 occupied sets of the 2x3 window
+per_mode: executed — the loop factor 1 + 3 l_1^n + 2 l_2^n for n = 4, 6 at three triples, by enumeration of the contents
+per_block: executed — the lattice-gas form (6z)^n (c/c_0)^bonds away from the neutral scale on windows without a cycle
+lattice_wide: T1-T4 hold for every finite window and every positive six-axis triple; the value c = c_0 is a proposal, not adopted and not registered; where records clump at that value on the cubic lattice is executed in the controls and not claimed
+PASS: G1 the five N5 resolution lines are printed
+scope: the binding scale at the neutral value — the pair weight is the rule's likelihood ratio; an empty site is a record of unknown content; no binding without a cycle; the loop factor from the rule's eigenvalues; the glue c/c_0 away from it; exact
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

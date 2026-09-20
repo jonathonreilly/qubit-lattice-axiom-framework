@@ -23,10 +23,11 @@
  "stdout_tail": "(2^m) exactly by coefficient-level induction (base f^1, step, and direct m=1..4); f^m - r = r*(coeff*r^(2^m-1) - 1) whose cofactor is a strictly increasing monomial-minus-1, so the UNIQUE positive fixed point is r = 1/2 for every m\nCHECK 30: PASS \u2014 corollary: g^m(r) = r^(2^m) exactly by coefficient-level induction (base g^1, step, and direct m=1..4); g^m - r = r*(r^(2^m-1) - 1), so the UNIQUE positive fixed point is r = 1 for every m\nCHECK 31: PASS \u2014 corollary headline: under any single supplied dictionary the dial set is exactly {1/2} (component, all f) or {1} (slot, all g) for all word lengths; the mixed points 2^(-1/3), 2^(-2/3) are neither 1/2 nor 1, so they require chart-mix and are not pure-word fixed points\nCHECK 32: FAIL \u2014 residue map: bounded note present and contains all governance/residue markers ['not adopted', 'no wall is closed', 'owner/science decision', 'chart-mix', 'record persistence', 'does not bound', 'Context-only surfaces'] -- MISSING: ['not adopted', 'no wall is closed', 'owner/science decision', 'chart-mix', 'record persistence', 'does not bound', 'Context-only surfaces']\nCHECK 33: FAIL \u2014 residue map: the note enumerates the residue list -- record production, finite-collection containment, per-step dictionary supply, realized history/step count, and banked context with no adopted premise status -- MISSING: ['record production', 'finite-collection containment', 'per-step dictionary', 'realized history', 'banked Dynamics proposal']\nTOTAL: PASS=30 FAIL=3\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j317b",
-  "at_utc": "20260920T083746Z",
+  "at_utc": "20260920T092407Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 702167b8 differs from the current HEAD db482452 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
@@ -34,9 +35,9 @@
   ]
  },
  "triage": {
-  "verdict": "stale",
-  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (archive: execute the densify-freeze migration, owner GO 2026-09-05) moved it out of docs/ into archive/notes/, so its note-exists gate and every phrase guard that reads the note fail, while the other notes it cites are still in docs/ and pass. The file is present in HEAD at the archive path and its content is not in question. This is the class measured at 567 of 6435 scripts naming a .md that is now only under archive/notes/.",
+  "verdict": "science",
+  "note": "Amended from my earlier stale verdict, which named only one of two causes. This log has both: the note-exists and residue-map gates fail because the runner's own note was archived out of docs/ by 0b6129121f (the densify-freeze migration), which is the stale class, BUT its axiom guard fails for a separate and more serious reason. Commit 634b1de2f8 (feat(axioms): drop named additive I from Record, 2026-08-13) replaced the Record axiom's sentence 'For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.' with 'A site with no record cannot be read.' The runner quotes the withdrawn sentence verbatim from docs/MINIMAL_AXIOMS_2026-06-29.md, so the quotation guard fails on any clone of main. 19 scripts under scripts/ still quote it. So one of the failing gates is a withdrawn premise, not a moved file, and the log is triaged science on that basis.",
   "by": "w-jonathonsmac4f50-j317b",
-  "at_utc": "20260920T083746Z"
+  "at_utc": "20260920T092407Z"
  }
 }

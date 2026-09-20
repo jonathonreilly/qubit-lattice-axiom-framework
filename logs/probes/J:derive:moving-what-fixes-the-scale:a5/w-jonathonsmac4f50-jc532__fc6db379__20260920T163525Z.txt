@@ -1,0 +1,78 @@
+D1  the pair-weight matrix of the law with vacancies
+     A site is empty or carries one of six contents, so the pair weight is a 7x7
+     matrix T: record a with record b weighs c*omega(a,b) (omega = p, q, r for equal,
+     opposite, orthogonal); any bond with an empty end weighs 1.
+ok        T is symmetric, and the six-axis block is Omega = (p-r)I + (q-r)J + r 11^T
+ok        Omega's spectrum is p+q+4r (once), p+q-2r (twice), p-q (three times); trace 6p
+ok          eigenvalue p + q + 4*r has multiplicity 1
+ok          eigenvalue p + q - 2*r has multiplicity 2
+ok          eigenvalue p - q has multiplicity 3
+ok          uniform vector is an eigenvector with eigenvalue p + q + 4*r
+ok          axis-symmetric vector is an eigenvector with eigenvalue p + q - 2*r
+ok          axis-antisymmetric vector is an eigenvector with eigenvalue p - q
+
+D2  (b), first half: where the empty state meets the record states
+     The empty state couples to the six contents only through the all-ones direction,
+     because every bond with an empty end weighs the same 1.  So T splits into the
+     3- and 2-dimensional eigenspaces of Omega orthogonal to 1 (untouched by the
+     vacancy) and a 2x2 block on span{u, e_empty} with u = (1,...,1)/sqrt 6:
+ok        T u = c(p+q+4r) u + sqrt(6) e_empty
+ok        T e_empty = sqrt(6) u + e_empty, so the 2x2 block is [[c(p+q+4r), sqrt6],[sqrt6, 1]]
+ok        its determinant is c(p+q+4r) - 6, which vanishes at exactly one scale:
+ok          c = 6/(p+q+4r) = c_0.  The unit's guessed 'zero eigenvalue' is this one.
+ok        and the whole 7x7 determinant factors as
+       det T = c**5*(p - q)**3*(p + q - 2*r)**2*(c*p + c*q + 4*c*r - 6)
+     - every factor is one of the eigenvalues above, with its multiplicity, and the
+       ONLY factor that depends on the scale is c(p+q+4r) - 6.  So c_0 is the unique
+       scale at which the law with vacancies has a degenerate transfer operator.
+
+D3  (b), first half: what the null vector says
+ok        at c_0 the 2x2 block has a one-dimensional kernel
+ok        spanned by u - sqrt(6) e_empty, i.e. e_empty = (1/6) * sum over the six contents
+     of the record states, AS A VECTOR IN THE TRANSFER OPERATOR.  This is the exact
+     sense in which 'no state is privileged' holds at c_0: the empty state is not a
+     seventh state at all there, it is the uniform superposition of the six contents.
+ok        at (3,1,2): rank T = 4 at c_0 = 1/2 and 5 at c = 1 - the drop at c_0 is by one,
+       on top of the two ranks (p+q-2r) = 0 costs at every scale there.
+
+D4  the two facts block 39 gives are ONE fact - with two side conditions
+     Bond-plane reflection positivity through a bond holds iff the pair-weight matrix
+     T is positive semidefinite.  T's eigenvalues are p-q (x3), p+q-2r (x2) and the
+     two roots of the 2x2 block, whose trace c(p+q+4r)+1 > 0 and whose determinant is
+     c(p+q+4r)-6.  So T >= 0 exactly when
+       c >= c_0    AND    p >= q    AND    p + q >= 2r,
+     the last two being independent of the scale.  The averaging statement (an empty
+     neighbour weighs what a uniformly random record weighs: c(p+q+4r)/6 = 1) and the
+     RP threshold are therefore the SAME equation c(p+q+4r) = 6, seen once as a mean
+     and once as a determinant.
+       (p,q,r) = (3, 1, 2): c_0 = 1/2, p-q = 2, p+q-2r = 0; at c_0 the spectrum of T has 0 negative eigenvalue(s)
+ok            PSD at c_0 iff p >= q and p+q >= 2r: holds here
+       (p,q,r) = (5, 2, 4): c_0 = 6/23, p-q = 3, p+q-2r = -1; at c_0 the spectrum of T has 1 negative eigenvalue(s)
+ok            PSD at c_0 iff p >= q and p+q >= 2r: fails here
+       (p,q,r) = (7, 3, 5): c_0 = 1/5, p-q = 4, p+q-2r = 0; at c_0 the spectrum of T has 0 negative eigenvalue(s)
+ok            PSD at c_0 iff p >= q and p+q >= 2r: holds here
+       (p,q,r) = (4, 1, 1): c_0 = 2/3, p-q = 3, p+q-2r = 3; at c_0 the spectrum of T has 0 negative eigenvalue(s)
+ok            PSD at c_0 iff p >= q and p+q >= 2r: holds here
+     So 'reflection positive exactly for c >= c_0' is right only where p >= q and
+     p + q >= 2r.  At (5,2,4) the second fails (7 < 8), and NO scale makes the law
+     with vacancies reflection positive through a bond plane there.
+
+D5  (d) formation-then-motion against formation-in-place
+     Take x and y adjacent and both empty, with x having one occupied neighbour A
+     carrying content a, and y having none.  Two routes end with a record at y:
+       route 1: form at x (rate z Z_x, content s with weight c omega(a,s)), then move
+                x -> y, which by the motion rule happens with probability
+                1/(1 + c omega(a,s)) - the record weighs c omega(a,s) at x and 1 at y;
+       route 2: form at y (rate z Z_y, content s with weight 1 - uniform).
+ok        route 1 gives content s with probability proportional to c w/(1 + c w), route 2
+       uniformly.  Equality for every content demands c omega/(1 + c omega) constant
+       in omega, and t -> ct/(1+ct) is strictly increasing for every c > 0, so:
+ok        the two routes agree for NO positive c when p != r (solutions in c: none)
+ok        (p,q,r) = (3, 1, 2) at c_0: total variation between the two routes' content laws is 7/132 = 0.053030 > 0
+ok        (p,q,r) = (5, 2, 4) at c_0: total variation between the two routes' content laws is 12995/257322 = 0.050501 > 0
+     Equality holds iff p = q = r, i.e. iff the six-axis rule is trivial.  So (d)
+     fixes no scale at all: it is not a condition on c, it is a condition on the
+     six-axis weights, and the weights the lane works with never satisfy it.
+
+SUMMARY: PARTIAL on what fixes the binding scale: the 7-state pair-weight matrix T (c omega between records, 1 on any bond with an empty end) has the six-axis spectrum p+q+4r, p+q-2r (twice), p-q (three times), and the empty state couples only to the all-ones direction, giving a 2x2 block [[c(p+q+4r), sqrt6],[sqrt6, 1]] whose determinant c(p+q+4r) - 6 vanishes exactly at c_0; there T has rank 6 and its kernel is u - sqrt(6) e_empty, so the empty state IS the uniform superposition of the six contents in the transfer operator - candidate (b)'s first half gives c_0 a spectral derivation, and block 39's averaging fact and RP threshold are the same equation seen as a mean and as a determinant; bond-plane RP needs in addition the scale-free p >= q and p + q >= 2r, and at (5,2,4) the latter fails (7 < 8) so no scale is reflection positive there; candidate (d) fixes no scale, the two routes' content laws differing in total variation by 7/132 at (3,1,2) and agreeing only if p = q = r
+HIT: c_0 = 6/(p+q+4r) is the unique scale at which the 7-state transfer operator is singular, with kernel u - sqrt(6) e_empty, so at c_0 the empty state is exactly the uniform superposition of the six record states and the operator has rank 6 - the averaging sentence and the reflection-positivity threshold of block 39 are one equation c(p+q+4r) = 6, read once as a mean and once as a determinant; bond-plane RP additionally requires the scale-free conditions p >= q and p + q >= 2r, so block 39's 'exactly for c >= c_0' is incomplete and fails at every scale for (5,2,4); and consistency between formation and motion (candidate d) constrains the weights, not the scale, holding only at p = q = r

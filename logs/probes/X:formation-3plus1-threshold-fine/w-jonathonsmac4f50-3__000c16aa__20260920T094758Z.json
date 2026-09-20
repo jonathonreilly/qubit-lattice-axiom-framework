@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-threshold-fine",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 1.1 32 4000 2000 1",
+ "seed": 97678,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "000c16aa",
+ "started_utc": "20260920T094758Z",
+ "elapsed_s": 15.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.1 L=32 T=4000 plateau_|m|=0.0309 lowk_ratio=0.3409 seconds=15"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Locate the coupling where the 3+1 sphere formation law starts to keep memory (first look: between beta = 1 and 2). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 22 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "d9ae14f0d14a401c7c07a71051147218f0cebaf1538f6098ffbcee6e6811bcf9",
+ "stdout_tail": "6  0.5037  +0.5037\n         8  0.4615  +0.4615\n        11  0.4130  +0.4130\n        16  0.3554  +0.3554\n        22  0.3104  +0.3102\n        32  0.2486  +0.2480\n        45  0.2017  +0.2007\n        63  0.1533  +0.1530\n        89  0.1019  +0.1014\n       126  0.0511  +0.0505\n       178  0.0392  +0.0322\n       252  0.0247  +0.0114\n       356  0.0246  +0.0092\n       503  0.0398  +0.0261\n       711  0.0209  +0.0004\n      1004  0.0095  -0.0062\n      1418  0.0214  +0.0012\n      2004  0.0373  +0.0031\n      2831  0.0398  +0.0263\n      4000  0.0078  +0.0003\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.3409 (n=18)\n   |k| in [0.3,0.6): 0.7127 (n=104)\n   |k| in [0.6,1.0): 0.9543 (n=392)\n   |k| in [1.0,1.5): 1.0822 (n=1348)\n   |k| in [1.5,2.2): 1.1444 (n=4024)\n   |k| in [2.2,3.2): 1.1747 (n=12063)\n   |k| in [3.2,6.0): 1.1841 (n=14818)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.059816  +0.072730  0.822  +0.07273\n     2  +0.018316  +0.032045  0.572  +0.06409\n     3  +0.007275  +0.018514  0.393  +0.05554\n     4  +0.003204  +0.011903  0.269  +0.04761\n     6  +0.000615  +0.005433  0.113  +0.03260\n     8  -0.000116  +0.002337  -0.050  +0.01870\n    12  -0.000559  -0.000349  1.601  -0.00419\n    16  -0.000261  -0.001019  0.256  -0.01631\nSUMMARY: dim=3 menu=sphere beta=1.1 L=32 T=4000 plateau_|m|=0.0309 lowk_ratio=0.3409 seconds=15\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260920T094814Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

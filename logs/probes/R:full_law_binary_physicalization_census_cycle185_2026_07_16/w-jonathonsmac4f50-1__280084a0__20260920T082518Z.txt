@@ -1,0 +1,51 @@
+AUTHORITY AND EXACT LAW
+FAIL Cycle-185 review note exists :: 
+PASS the consumed Cycle-178 law is deterministic :: (101996, 0)
+PASS the law uses the current 153-role onsite alphabet :: (153, 153, 153)
+
+BINARY PHYSICALIZATION CONTRACT
+PASS open plus 153 roles requires exactly eight literal bits per port :: (154, 8, 8)
+PASS one exact six-neighbour rule row is a 48-bit to 8-bit classifier :: (48, 8)
+PASS the binary encoding is injective on every exact raw signature :: (101996, 101996)
+
+PROPER-CUBIC ORBIT CENSUS
+PASS the complete raw table is exactly proper-cubic covariant :: ()
+PASS every raw row belongs to exactly one canonical output-labelled orbit :: (4414, Counter({24: 4181, 6: 185, 12: 42, 8: 4, 3: 2}))
+PASS the arity census covers every raw signature :: Counter({5: 86616, 4: 5352, 2: 4518, 3: 4296, 6: 1088, 1: 126})
+
+EXACT CLASSIFIER SIZE
+PASS the literal flat program bank has 5,711,776 key/output bits :: (713972, 301507)
+PASS the full binary prefix trie shares exact input prefixes :: (1240739, (1, 2, 3, 5, 10, 20, 39, 77, 154), (67312, 67950, 69504, 71860, 74025, 76630, 81174, 95021, 101996))
+PASS Patricia compression remains a six-figure decision object :: (101995, 203991)
+PASS unique prefixes do not replace full exact-neighbour verification :: (11, 48, 40.261)
+
+REPRESENTATION CENSUS
+PASS rotation quotienting materially shrinks but does not trivialize the table :: (4414, 4414, 30898, 12940)
+PASS all serialized rows round-trip within one-byte role codes :: (153, 713972)
+PASS the output census accounts for every row and remains multi-role :: (153, [('YG0', 5808), ('H0', 5064), ('H1', 4842), ('F', 1080), ('AUXY', 1032), ('ARM', 1008), ('I2', 984), ('T_H3', 984), ('T_H1', 960), ('R_B10', 960)])
+
+SCOPE
+FAIL the note distinguishes finite compilation from law selection :: 
+
+ACCOUNTING
+RAW_ROWS 101996
+CANONICAL_ORBITS 4414
+ORBIT_SIZES Counter({24: 4181, 6: 185, 12: 42, 8: 4, 3: 2})
+ARITY_HISTOGRAM Counter({5: 86616, 4: 5352, 2: 4518, 3: 4296, 6: 1088, 1: 126})
+INPUT_ROLES 153
+OUTPUT_ROLES 153
+ALL_ROLES 153
+PORT_SYMBOLS 154
+INPUT_BITS 48
+OUTPUT_BITS 8
+FLAT_PROGRAM_BITS 5711776
+FULL_TRIE_NODES 1240739
+PATRICIA_TOTAL_NODES 203991
+UNIQUE_PREFIX_LENGTHS (11, 48, 40.26058865053532)
+RAW_SERIAL_BYTES 713972
+RAW_ZLIB_BYTES 301507
+CANONICAL_SERIAL_BYTES 30898
+CANONICAL_ZLIB_BYTES 12940
+OUTPUT_ROLES_USED 153
+PASS 15 FAIL 2
+RESULT CYCLE185_NEEDS_REPAIR

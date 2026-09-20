@@ -21,12 +21,19 @@
  "stdout_sha256": "54ca57bf608afede072345f4474acb0f7305854b5dffa47b5e8955ae644b4c35",
  "stdout_tail": "seed 82 5x5x8 from Z_B: start (unrooted, rooted) max cost = (0, 0) at ((4, 4, 3), 0, 0, (8, 8, 1, 0))\nseed 82: (unrooted, rooted) max cost = (1, 1) at ((4, 4, 4), 1, 1, (8, 7, 1, 0)); ones? zeta=[(0, 0, 0), (0, 0, 1), (0, 0, 7), (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 1, 7), (0, 2, 7), (0, 4, 4), (1, 0, 0), (1, 0, 2), (1, 0, 5), (1, 1, 2), (1, 2, 0), (1, 2, 2), (1, 3, 1), (1, 3, 7), (2, 0, 0), (2, 1, 2), (2, 1, 3), (2, 2, 3), (2, 2, 4), (2, 2, 6), (2, 3, 2), (2, 3, 3), (2, 3, 4), (2, 4, 2), (2, 4, 6), (3, 0, 1), (3, 0, 2), (3, 1, 1), (3, 1, 2), (3, 2, 1), (3, 2, 7), (3, 4, 2), (4, 0, 2), (4, 0, 6), (4, 1, 1), (4, 1, 3), (4, 2, 1), (4, 2, 3), (4, 4, 2)]\nseed 82: done best=(1, 1)\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T081146Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T082725Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c8407121 differs from the current HEAD d8283eee (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Verified counterexample. The seeded climb (probes/lib/violate.py 82 1800 5 5 8 B) reports max cost = (1, 1) at site (4,4,4) with (E,A,S,F) = (8,7,1,0), and the task's HIT pattern is exactly a first component >= 1. I reproduced it from the logged zeta of 42 sites: the automaton gives 76 one-sites, (4,4,4) is processed at level 12, and MinTree.solve(1.0) returns a 16-node tree with E=8, A=7, S=1, so the unrooted cost E - 3(S-1) - A = 1 > 0, and rooted() gives 1 > 0 as well. MinTree only returns a result when HiGHS reports status 0, so both are proven optima of that integer program, not incumbents. To rule out an over-constrained encoding I wrote an independent minimiser for the same family with cut-based connectivity instead of the single-commodity flow (all violated component cuts added per round); it agrees with MinTree on 9 of 9 comparable small configurations, and on this witness it converges in 2 rounds to the same optimal VALUE 1.0 by a different optimal tree (26 nodes, E=13, A=12, S=1) - and to 1.0 again on the level-restricted configuration, matching the rooted result. So two independent exact formulations agree that no tree of the counted family through this site costs 0 or less at c = 1. Per the task's own wording this refutes block 32's conjecture c* = 1 and, through the positive rooted cost, the induction hypothesis H3.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T082725Z"
  }
 }

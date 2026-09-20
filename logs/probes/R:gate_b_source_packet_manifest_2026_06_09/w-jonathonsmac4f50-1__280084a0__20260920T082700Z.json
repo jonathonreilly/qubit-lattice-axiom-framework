@@ -1,0 +1,36 @@
+{
+ "task": "R:gate_b_source_packet_manifest_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "gate",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/gate_b_source_packet_manifest_2026_06_09.py",
+ "seed": 92820,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "280084a0",
+ "started_utc": "20260920T082700Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=4 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d855b35af6397fb2367eba1414a7b1a55fa935614cea5b0d7e24f33039eb1481",
+ "stdout_tail": "GATE B SOURCE-PACKET MANIFEST GATE\n========================================================================\n[PASS] note declares open_gate source-index claim type\n[PASS] row-local source-packet manifest section is present\n[FAIL] GB-S1 discloses valley-linear source/action as supplied only\n[FAIL] GB-S2 discloses propagation/readout semantics as supplied only\n[FAIL] GB-S3 discloses generated-connectivity rule as supplied only\n[PASS] manifest preserves no-new-axiom and no-clean-theorem boundary\n[PASS] note blocks solved/physical-gravity overclaims\n\nSUMMARY: PASS=4 FAIL=3\nrunner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}\nVERDICT: the Gate B row exposes the supplied source packet as row-local manifest data and does not promote it to an axiom, primitive, retained premise, physical-gravity bridge, or clean Gate B dynamics theorem.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T082700Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=4 FAIL=3' vs cache 'SUMMARY: PASS=7 FAIL=0'"
+  ]
+ }
+}

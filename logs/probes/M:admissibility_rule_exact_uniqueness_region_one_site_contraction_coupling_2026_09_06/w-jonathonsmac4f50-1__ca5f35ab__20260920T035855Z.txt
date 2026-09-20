@@ -1,0 +1,124 @@
+== coefficient_direction_dependent
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=40 FAIL=1
+== relabeling_identity_broken
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=40 FAIL=1
+== constant_rule_nonzero
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=40 FAIL=1
+== c1_literal_off
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== region_triple_misclassified
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== grid_symmetry_broken
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== grid_region_cells_wrong
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== sign_pattern_not_fixed
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=34 FAIL=7
+== line_polynomial_wrong_coefficient
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== threshold_wrong_root
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=37 FAIL=4
+== endpoint_sup_pattern_forged
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== second_crossing_wrong_root
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=38 FAIL=3
+== competitor_identity_forged
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== region_certificate_forged
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== reciprocity_broken
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== c4_c1_inversion_denied
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=40 FAIL=1
+== one_step_inequality_drops_b
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=40 FAIL=1
+== one_step_inequality_wrong_coefficient
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=40 FAIL=1
+== maximal_coupling_identity_broken
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=40 FAIL=1
+== row_sum_ignored
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=40 FAIL=1
+== D_matrix_wrong_inverse
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=37 FAIL=4
+== fixed_point_not_fixed
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=40 FAIL=1
+== center_tv_exceeds_bound_forged
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=40 FAIL=1
+== path_count_wrong
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=40 FAIL=1
+== alpha_table_wrong_exponent
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=40 FAIL=1
+== line_points_misclassified
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=40 FAIL=1
+== claim_nonunique_at_silent
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=40 FAIL=1
+== claim_unique_at_silent
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=40 FAIL=1
+== claim_phase_transition
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=40 FAIL=1
+== claim_physical_rule
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=40 FAIL=1
+== claim_author_in_theorem
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=40 FAIL=1

@@ -1,0 +1,7 @@
+beta=24.0 L=48 T=505000 seeds=8 (1050s): sigma^2/L^2 = 5.9444e-06; memory time 168224; mean |m| in the stationary regime 0.9500
+  lag    25: nonlinear MSD 3.2064e-04 -> D_1 = 6.4127e-06 (ratio to sigma^2/L^2: 1.079 +- 0.003); linear model MSD 2.9663e-04 (ratio 0.998 +- 0.002)
+  lag    50: nonlinear MSD 6.4422e-04 -> D_1 = 6.4422e-06 (ratio to sigma^2/L^2: 1.084 +- 0.004); linear model MSD 5.9188e-04 (ratio 0.996 +- 0.002)
+  lag   100: nonlinear MSD 1.2957e-03 -> D_1 = 6.4783e-06 (ratio to sigma^2/L^2: 1.090 +- 0.004); linear model MSD 1.1832e-03 (ratio 0.995 +- 0.003)
+  lag   200: nonlinear MSD 2.6019e-03 -> D_1 = 6.5047e-06 (ratio to sigma^2/L^2: 1.094 +- 0.006); linear model MSD 2.3614e-03 (ratio 0.993 +- 0.005)
+  lag   400: nonlinear MSD 5.2371e-03 -> D_1 = 6.5464e-06 (ratio to sigma^2/L^2: 1.101 +- 0.012); linear model MSD 4.7111e-03 (ratio 0.991 +- 0.006)
+  lag  1000: nonlinear MSD 1.3211e-02 -> D_1 = 6.6054e-06 (ratio to sigma^2/L^2: 1.111 +- 0.017); linear model MSD 1.1714e-02 (ratio 0.985 +- 0.014)

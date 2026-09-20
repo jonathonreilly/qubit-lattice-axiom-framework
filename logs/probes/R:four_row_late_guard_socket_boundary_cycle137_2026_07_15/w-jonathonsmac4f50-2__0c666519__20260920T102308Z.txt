@@ -1,0 +1,40 @@
+
+===============================================================================
+A - Exact late interface and declared fresh roles
+===============================================================================
+FAIL A01 Cycle 137 note exists
+PASS A02 executable search module exists
+PASS A03 exact five radius-three late centers are enumerated :: ((-2, 1, -1), (-2, 2, -2), (-2, 3, -1), (-1, 1, -2), (1, 2, -1))
+PASS A04 every center has at least two parents including a Y2-valued record
+PASS A05 eleven roles are alphabet-closed and terminal-absent :: ('R_C11', 'R_C12', 'R_C13', 'R_C21', 'R_C22', 'R_C23', 'R_C30', 'R_C32', 'R_C33', 'R_C41', 'R_LB')
+
+===============================================================================
+B - Complete declared-family census
+===============================================================================
+PASS B01 complete census equals frozen Cycle-137 counts :: {'arm1_rows': 17584, 'arm2_rows': 13492, 'centers': 5, 'direction_pairs': 26256, 'duplicate_sequences': 6108, 'factor_unexpected': 2153, 'factor_wrong_value': 2810, 'fresh_roles': 11, 'full_unexpected': 3147, 'full_wrong_value': 3770, 'guard_attempts': 55, 'guard_rows': 55, 'helper_attempts': 2420, 'helper_rows': 2188, 'helper_target_contexts': 242, 'open_geometries': 10522, 'role_assignments': 21044, 'socket_geometries': 3770}
+PASS B02 all 55 late-guard role attempts are raw-compatible
+PASS B03 helper layer exhausts 242 contexts and 2,420 role attempts
+PASS B04 orthogonal arms exhaust 26,256 pairs / 21,044 assignments
+PASS B05 all physical coimages leave 3,770 distinct socket geometries
+
+===============================================================================
+C - Expected-target and unexpected-target boundary
+===============================================================================
+PASS C01 every socket geometry has a full-source wrong-value condition
+PASS C02 3,147 also expose a full-source unexpected target
+PASS C03 factor-scope failures overlap at 2,153 unexpected / 2,810 wrong
+PASS C04 zero candidate reaches the schedule-graph gate :: ()
+
+===============================================================================
+D - Exact scope and constitutional boundary
+===============================================================================
+FAIL D01 note names four-row late-guard socket boundary
+FAIL D02 note declares radius-three/radius-four/radius-six envelope
+FAIL D03 note keeps five-row, terminal-emitted, and bridge-redesign routes live
+FAIL D04 note carries complete N1-N8 discipline
+FAIL D05 note denies four-row/global no-go, minimality, and axiom addition
+PASS D06 Cycle 137 campaign surfaces are runner, search module, and review note
+
+SOCKET_GEOMETRIES=3770 FULL_WRONG=3770 SCREEN_SURVIVORS=0
+PASS=14 FAIL=6
+RESULT=FAIL

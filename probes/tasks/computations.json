@@ -778,5 +778,185 @@
   },
   "problem": "static-response-equals-green-function",
   "what": "WORKED COMPUTATION (independent run 2 of 2): The exact statement behind the source potential. Linear light-cone formation: theta_{t+1} = P theta_t + noise + f delta_0 with P the average over the site and its six neighbours. (1) The stationary mean is f (1 - P)^-1 delta_0 and (1 - P)^-1 has symbol 7/E(k), E(k) = 2 sum_j (1 - cos k_j): the Z^3 lattice Green function times 7; verify exactly on L = 3, 4, 5 tori with rational arithmetic (zero mode removed). (2) Relate f to the field h in the sphere rule: the record's mean direction under weight exp(beta s.S + h s.t) shifts transversally by h/(n beta) A(kappa)-corrections: derive the exact first-order coefficient in h at finite beta (expected h A(n beta)/(n beta) x something: find it) and compare with the simulator's ratio 0.99 at beta = 6 and 0.96 on the backward lattice. (3) The fluctuation-response relation for this chain: response = (1 + P) C / sigma^2 with C the equal-time covariance sigma^2/(1 - P^2): verify exactly on the small tori. DELIVERABLE in your unit worktree: probes/work/compute/static-response-equals-green-function/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-response-equals-green-function/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-meanfield-onset:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-meanfield-onset",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). A first theory of the clumping onset. For the six-axis gas with vacancies (weights c * (p, q, r); empty bonds 1) write the mean-field free energy per site as a function of the density rho and the content distribution (six occupation fractions), find where the uniform disordered state loses stability to (i) a density modulation and (ii) alignment, and where a dense aligned phase coexists with a dilute one. Give the onset p*(c, rho) on the line (p,1,2) at c = neutral, 1, 1/2 and rho = 0.3 and compare with the executed brackets (neutral: 8-12, near 10; scale 1: 5-6; scale 1/2: 8-12) and with the logs under logs/probes/X:moving-clumping-line-p12/ when present. Expectation: mean field puts the onset too low by tens of percent, with the right ordering in c. DELIVERABLE in your unit worktree: probes/work/compute/moving-meanfield-onset/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-meanfield-onset/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-meanfield-onset:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-meanfield-onset",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). A first theory of the clumping onset. For the six-axis gas with vacancies (weights c * (p, q, r); empty bonds 1) write the mean-field free energy per site as a function of the density rho and the content distribution (six occupation fractions), find where the uniform disordered state loses stability to (i) a density modulation and (ii) alignment, and where a dense aligned phase coexists with a dilute one. Give the onset p*(c, rho) on the line (p,1,2) at c = neutral, 1, 1/2 and rho = 0.3 and compare with the executed brackets (neutral: 8-12, near 10; scale 1: 5-6; scale 1/2: 8-12) and with the logs under logs/probes/X:moving-clumping-line-p12/ when present. Expectation: mean field puts the onset too low by tens of percent, with the right ordering in c. DELIVERABLE in your unit worktree: probes/work/compute/moving-meanfield-onset/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-meanfield-onset/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-escape-times:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-escape-times",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). How stuck is a record? Under pair-weight transit a record with k agreeing neighbours moves to an isolated empty position with probability 1/(1 + (c p)^k) per visit of that bond. (1) For a cubic cluster of n^3 aligned records in empty space, count the records by their number of neighbours inside the cluster, the moves available to each (only surface records have an empty neighbour) and the rate at which the cluster loses a record, exactly as a function of n, c, p. (2) Compare with the rate at which an isolated record arriving at the surface sticks. (3) Simulate a single cluster (copy probes/lib/moving_gas.py into your work directory and start from a cube of aligned records) at c p = 3, 6, 12 and n = 4, 6, 8 and measure the time to lose ten percent of its records. Expectation: interior records never move; the loss rate is a surface term and falls like (c p)^-3 for a flat face. DELIVERABLE in your unit worktree: probes/work/compute/moving-escape-times/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-escape-times/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-escape-times:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-escape-times",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). How stuck is a record? Under pair-weight transit a record with k agreeing neighbours moves to an isolated empty position with probability 1/(1 + (c p)^k) per visit of that bond. (1) For a cubic cluster of n^3 aligned records in empty space, count the records by their number of neighbours inside the cluster, the moves available to each (only surface records have an empty neighbour) and the rate at which the cluster loses a record, exactly as a function of n, c, p. (2) Compare with the rate at which an isolated record arriving at the surface sticks. (3) Simulate a single cluster (copy probes/lib/moving_gas.py into your work directory and start from a cube of aligned records) at c p = 3, 6, 12 and n = 4, 6, 8 and measure the time to lose ten percent of its records. Expectation: interior records never move; the loss rate is a surface term and falls like (c p)^-3 for a flat face. DELIVERABLE in your unit worktree: probes/work/compute/moving-escape-times/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-escape-times/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-neutral-scale-other-menus:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-neutral-scale-other-menus",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The neutral scale and the reflection-positivity bound beyond six axes. For the menus: eight cube corners, twelve edge midpoints, the 26 directions of a cube, and the sphere with weight exp(beta s.s'): (1) compute c_0 = 1 / (mean over b of omega(a, b)) and check it does not depend on a; (2) include the empty state in the bond kernel and find exactly for which c and which shape parameters it is positive semidefinite (eigenvalues of c * omega - J on the constant vector and on its complement); (3) the formation-rate multipliers next to two agreeing, orthogonal-or-nearest, and opposite records at c_0. Expectation: the bound is c >= c_0 for every menu whose omega has constant row sums; for the sphere c_0 = beta / sinh(beta). DELIVERABLE in your unit worktree: probes/work/compute/moving-neutral-scale-other-menus/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-neutral-scale-other-menus/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-neutral-scale-other-menus:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-neutral-scale-other-menus",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The neutral scale and the reflection-positivity bound beyond six axes. For the menus: eight cube corners, twelve edge midpoints, the 26 directions of a cube, and the sphere with weight exp(beta s.s'): (1) compute c_0 = 1 / (mean over b of omega(a, b)) and check it does not depend on a; (2) include the empty state in the bond kernel and find exactly for which c and which shape parameters it is positive semidefinite (eigenvalues of c * omega - J on the constant vector and on its complement); (3) the formation-rate multipliers next to two agreeing, orthogonal-or-nearest, and opposite records at c_0. Expectation: the bound is c >= c_0 for every menu whose omega has constant row sums; for the sphere c_0 = beta / sinh(beta). DELIVERABLE in your unit worktree: probes/work/compute/moving-neutral-scale-other-menus/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-neutral-scale-other-menus/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-normalized-transit-currents:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-normalized-transit-currents",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). What is the law when a move is accepted with the rule's NORMALIZED probability at the destination? Block 39 shows that chain is reversible for no law (a four-move cycle with products 1/2592 against 1/2376). On the 2x3 window with two vacancies and on the 3x3 window with two and three vacancies (two-valued and six-axis contents, weights (3,1,2)): (1) the exact stationary law (rational linear solve); (2) the stationary probability current on every edge of the state graph and the cycles that carry it; (3) is there a simple closed form for the one-vacancy case, where the chain is reversible? (4) does the stationary law clump less than random placement at every weight (block 39: 0.1195 against 0.1333)? Expectation: currents circulate around pairs of records exchanging places via the vacancies. DELIVERABLE in your unit worktree: probes/work/compute/moving-normalized-transit-currents/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-normalized-transit-currents/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-normalized-transit-currents:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-normalized-transit-currents",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). What is the law when a move is accepted with the rule's NORMALIZED probability at the destination? Block 39 shows that chain is reversible for no law (a four-move cycle with products 1/2592 against 1/2376). On the 2x3 window with two vacancies and on the 3x3 window with two and three vacancies (two-valued and six-axis contents, weights (3,1,2)): (1) the exact stationary law (rational linear solve); (2) the stationary probability current on every edge of the state graph and the cycles that carry it; (3) is there a simple closed form for the one-vacancy case, where the chain is reversible? (4) does the stationary law clump less than random placement at every weight (block 39: 0.1195 against 0.1333)? Expectation: currents circulate around pairs of records exchanging places via the vacancies. DELIVERABLE in your unit worktree: probes/work/compute/moving-normalized-transit-currents/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-normalized-transit-currents/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-formation-and-motion:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-formation-and-motion",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Formation and motion together. Copy the simulator and add formation: an empty site forms a record at rate z * Z_x / 6 per sweep (Z_x the rule's normalizer there, content drawn from the rule), records are never removed. From an empty 24^3 lattice on the line (p,1,2) at p = 6 and 12, neutral scale and scale 1, z = 0.001 and 0.0001: the density against time, the neighbour ratio and aligned fraction against density, and the fraction of accepted moves against density. Then the rare-formation check on the 2x3 window with two-valued contents: compare the exact law of the arrangement just before the k-th formation, as z goes to 0, with the static law on the occupied set. Expectation: with rare formation the arrangement is the static law for the records present; at the neutral scale growth is uniform, at scale 1 new records form next to old ones and clusters fill in. DELIVERABLE in your unit worktree: probes/work/compute/moving-formation-and-motion/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-formation-and-motion/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-formation-and-motion:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-formation-and-motion",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Formation and motion together. Copy the simulator and add formation: an empty site forms a record at rate z * Z_x / 6 per sweep (Z_x the rule's normalizer there, content drawn from the rule), records are never removed. From an empty 24^3 lattice on the line (p,1,2) at p = 6 and 12, neutral scale and scale 1, z = 0.001 and 0.0001: the density against time, the neighbour ratio and aligned fraction against density, and the fraction of accepted moves against density. Then the rare-formation check on the 2x3 window with two-valued contents: compare the exact law of the arrangement just before the k-th formation, as z goes to 0, with the static law on the occupied set. Expectation: with rare formation the arrangement is the static law for the records present; at the neutral scale growth is uniform, at scale 1 new records form next to old ones and clusters fill in. DELIVERABLE in your unit worktree: probes/work/compute/moving-formation-and-motion/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-formation-and-motion/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-kernel-inside-a-cluster:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-kernel-inside-a-cluster",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Does the Green-function kernel live inside a cluster of moving records? Write a simulator for the SPHERE menu with vacancies (content = a unit vector, carried; pair weight c * exp(beta s.s'); pair-weight transit; plus a heat-bath re-draw of nothing: contents never change). Since contents are carried and never re-drawn, the transverse field can only relax by records exchanging places: measure, in a slab that is fully occupied and aligned on average (start from a fully aligned half-filled lattice with a flat interface, beta = 3, c = neutral and c = 1), the transverse structure factor of the dense region against 1/(beta E(k)) and how fast it relaxes. Expectation: equal-time correlations follow the static law on the occupied set only if contents can mix; with carried contents the relaxation is diffusive in the exchange of records. Report what you see; this is exploratory. DELIVERABLE in your unit worktree: probes/work/compute/moving-kernel-inside-a-cluster/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-kernel-inside-a-cluster/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-kernel-inside-a-cluster:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-kernel-inside-a-cluster",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Does the Green-function kernel live inside a cluster of moving records? Write a simulator for the SPHERE menu with vacancies (content = a unit vector, carried; pair weight c * exp(beta s.s'); pair-weight transit; plus a heat-bath re-draw of nothing: contents never change). Since contents are carried and never re-drawn, the transverse field can only relax by records exchanging places: measure, in a slab that is fully occupied and aligned on average (start from a fully aligned half-filled lattice with a flat interface, beta = 3, c = neutral and c = 1), the transverse structure factor of the dense region against 1/(beta E(k)) and how fast it relaxes. Expectation: equal-time correlations follow the static law on the occupied set only if contents can mix; with carried contents the relaxation is diffusive in the exchange of records. Report what you see; this is exploratory. DELIVERABLE in your unit worktree: probes/work/compute/moving-kernel-inside-a-cluster/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-kernel-inside-a-cluster/<name>/run.py\""
  }
 ]

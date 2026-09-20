@@ -1,0 +1,946 @@
+[
+ {
+  "id": "X:moving-clumping-line-p12",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "4 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 2 0.5 24 3000 1"
+   }
+  ],
+  "what": "NEW PHYSICS: records that move. Where do records clump on the line (p,1,2)? First look (density 0.3): onset near p = 10 at the neutral scale, between 5 and 6 at scale 1. The table over p, scale and density is the map. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 132 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:moving-clumping-other-lines",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 4 1 0.3 24 3000 1"
+   }
+  ],
+  "what": "The same map on other weight lines. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 64 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:moving-contentless-calibration",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "1 1 1 2.0 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.2 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.3 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.4 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.5 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.6 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.8 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 3.2 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.0 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.2 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.3 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.4 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.6 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.8 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 3.2 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.0 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.2 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.3 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.4 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.5 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.6 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.8 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 3.2 0.5 32 3000 1"
+   }
+  ],
+  "what": "Calibration: content-less records (p = q = r = 1) at half filling across the literature onset 2.427, three lattice sizes. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:moving-jamming-mobility",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "12 1 2 1 0.05 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.2 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.7 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.05 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.2 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.7 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.05 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.2 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.7 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.05 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.2 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.7 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.05 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.2 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.7 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.05 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.2 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.7 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.05 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.2 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.7 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.05 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.2 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.7 24 3000 1"
+   }
+  ],
+  "what": "Jamming without being full: the fraction of accepted moves against the density at strong preference. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 48 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:moving-seeds-and-long-runs",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "8 1 2 neutral 0.3 24 3000 2"
+   },
+   {
+    "extra": "8 1 2 neutral 0.3 24 3000 3"
+   },
+   {
+    "extra": "8 1 2 neutral 0.3 24 3000 4"
+   },
+   {
+    "extra": "8 1 2 neutral 0.3 24 20000 5"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 3000 2"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 3000 3"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 3000 4"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 20000 5"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 2"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 3"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 4"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 20000 5"
+   },
+   {
+    "extra": "5 1 2 1 0.3 24 3000 2"
+   },
+   {
+    "extra": "5 1 2 1 0.3 24 3000 3"
+   },
+   {
+    "extra": "5 1 2 1 0.3 24 3000 4"
+   },
+   {
+    "extra": "5 1 2 1 0.3 24 20000 5"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 3000 2"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 3000 3"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 3000 4"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 20000 5"
+   }
+  ],
+  "what": "Error bars and drift at the key points. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 20 points of the `grid` field are claimed and run by the work loop."
+ }
+]

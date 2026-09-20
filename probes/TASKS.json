@@ -54892,6 +54892,147 @@
   "what": "re-execute the runners of PR #8512 (ail38: how records form \u2014 the static law is outside the hull of every ) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8512 --worker <name> --review \"...\""
  },
  {
+  "id": "J:falsifier:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): attack ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): attack ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): attack ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): attack ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): attack ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): attack ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): attack ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8530",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8530 (ail39: records that move \u2014 pair-weight transit has the stati): for every number in the theorem statements of ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920; git show origin/physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920:<note>. Create probes/work/pr8530/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8530/<script>.py\""
+ },
+ {
+  "id": "P:8530",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block39-record",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8530",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8530 (ail39: records that move \u2014 pair-weight transit has the static law as e) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8530 --worker <name> --review \"...\""
+ },
+ {
   "id": "J:note:ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026_06_10",
   "type": "judgment",
   "lane": "adjacency",
@@ -56986,6 +57127,186 @@
   },
   "problem": "static-response-equals-green-function",
   "what": "WORKED COMPUTATION (independent run 2 of 2): The exact statement behind the source potential. Linear light-cone formation: theta_{t+1} = P theta_t + noise + f delta_0 with P the average over the site and its six neighbours. (1) The stationary mean is f (1 - P)^-1 delta_0 and (1 - P)^-1 has symbol 7/E(k), E(k) = 2 sum_j (1 - cos k_j): the Z^3 lattice Green function times 7; verify exactly on L = 3, 4, 5 tori with rational arithmetic (zero mode removed). (2) Relate f to the field h in the sphere rule: the record's mean direction under weight exp(beta s.S + h s.t) shifts transversally by h/(n beta) A(kappa)-corrections: derive the exact first-order coefficient in h at finite beta (expected h A(n beta)/(n beta) x something: find it) and compare with the simulator's ratio 0.99 at beta = 6 and 0.96 on the backward lattice. (3) The fluctuation-response relation for this chain: response = (1 + P) C / sigma^2 with C the equal-time covariance sigma^2/(1 - P^2): verify exactly on the small tori. DELIVERABLE in your unit worktree: probes/work/compute/static-response-equals-green-function/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-response-equals-green-function/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-meanfield-onset:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-meanfield-onset",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). A first theory of the clumping onset. For the six-axis gas with vacancies (weights c * (p, q, r); empty bonds 1) write the mean-field free energy per site as a function of the density rho and the content distribution (six occupation fractions), find where the uniform disordered state loses stability to (i) a density modulation and (ii) alignment, and where a dense aligned phase coexists with a dilute one. Give the onset p*(c, rho) on the line (p,1,2) at c = neutral, 1, 1/2 and rho = 0.3 and compare with the executed brackets (neutral: 8-12, near 10; scale 1: 5-6; scale 1/2: 8-12) and with the logs under logs/probes/X:moving-clumping-line-p12/ when present. Expectation: mean field puts the onset too low by tens of percent, with the right ordering in c. DELIVERABLE in your unit worktree: probes/work/compute/moving-meanfield-onset/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-meanfield-onset/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-meanfield-onset:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-meanfield-onset",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). A first theory of the clumping onset. For the six-axis gas with vacancies (weights c * (p, q, r); empty bonds 1) write the mean-field free energy per site as a function of the density rho and the content distribution (six occupation fractions), find where the uniform disordered state loses stability to (i) a density modulation and (ii) alignment, and where a dense aligned phase coexists with a dilute one. Give the onset p*(c, rho) on the line (p,1,2) at c = neutral, 1, 1/2 and rho = 0.3 and compare with the executed brackets (neutral: 8-12, near 10; scale 1: 5-6; scale 1/2: 8-12) and with the logs under logs/probes/X:moving-clumping-line-p12/ when present. Expectation: mean field puts the onset too low by tens of percent, with the right ordering in c. DELIVERABLE in your unit worktree: probes/work/compute/moving-meanfield-onset/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-meanfield-onset/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-escape-times:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-escape-times",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). How stuck is a record? Under pair-weight transit a record with k agreeing neighbours moves to an isolated empty position with probability 1/(1 + (c p)^k) per visit of that bond. (1) For a cubic cluster of n^3 aligned records in empty space, count the records by their number of neighbours inside the cluster, the moves available to each (only surface records have an empty neighbour) and the rate at which the cluster loses a record, exactly as a function of n, c, p. (2) Compare with the rate at which an isolated record arriving at the surface sticks. (3) Simulate a single cluster (copy probes/lib/moving_gas.py into your work directory and start from a cube of aligned records) at c p = 3, 6, 12 and n = 4, 6, 8 and measure the time to lose ten percent of its records. Expectation: interior records never move; the loss rate is a surface term and falls like (c p)^-3 for a flat face. DELIVERABLE in your unit worktree: probes/work/compute/moving-escape-times/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-escape-times/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-escape-times:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-escape-times",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). How stuck is a record? Under pair-weight transit a record with k agreeing neighbours moves to an isolated empty position with probability 1/(1 + (c p)^k) per visit of that bond. (1) For a cubic cluster of n^3 aligned records in empty space, count the records by their number of neighbours inside the cluster, the moves available to each (only surface records have an empty neighbour) and the rate at which the cluster loses a record, exactly as a function of n, c, p. (2) Compare with the rate at which an isolated record arriving at the surface sticks. (3) Simulate a single cluster (copy probes/lib/moving_gas.py into your work directory and start from a cube of aligned records) at c p = 3, 6, 12 and n = 4, 6, 8 and measure the time to lose ten percent of its records. Expectation: interior records never move; the loss rate is a surface term and falls like (c p)^-3 for a flat face. DELIVERABLE in your unit worktree: probes/work/compute/moving-escape-times/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-escape-times/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-neutral-scale-other-menus:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-neutral-scale-other-menus",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The neutral scale and the reflection-positivity bound beyond six axes. For the menus: eight cube corners, twelve edge midpoints, the 26 directions of a cube, and the sphere with weight exp(beta s.s'): (1) compute c_0 = 1 / (mean over b of omega(a, b)) and check it does not depend on a; (2) include the empty state in the bond kernel and find exactly for which c and which shape parameters it is positive semidefinite (eigenvalues of c * omega - J on the constant vector and on its complement); (3) the formation-rate multipliers next to two agreeing, orthogonal-or-nearest, and opposite records at c_0. Expectation: the bound is c >= c_0 for every menu whose omega has constant row sums; for the sphere c_0 = beta / sinh(beta). DELIVERABLE in your unit worktree: probes/work/compute/moving-neutral-scale-other-menus/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-neutral-scale-other-menus/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-neutral-scale-other-menus:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-neutral-scale-other-menus",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The neutral scale and the reflection-positivity bound beyond six axes. For the menus: eight cube corners, twelve edge midpoints, the 26 directions of a cube, and the sphere with weight exp(beta s.s'): (1) compute c_0 = 1 / (mean over b of omega(a, b)) and check it does not depend on a; (2) include the empty state in the bond kernel and find exactly for which c and which shape parameters it is positive semidefinite (eigenvalues of c * omega - J on the constant vector and on its complement); (3) the formation-rate multipliers next to two agreeing, orthogonal-or-nearest, and opposite records at c_0. Expectation: the bound is c >= c_0 for every menu whose omega has constant row sums; for the sphere c_0 = beta / sinh(beta). DELIVERABLE in your unit worktree: probes/work/compute/moving-neutral-scale-other-menus/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-neutral-scale-other-menus/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-normalized-transit-currents:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-normalized-transit-currents",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). What is the law when a move is accepted with the rule's NORMALIZED probability at the destination? Block 39 shows that chain is reversible for no law (a four-move cycle with products 1/2592 against 1/2376). On the 2x3 window with two vacancies and on the 3x3 window with two and three vacancies (two-valued and six-axis contents, weights (3,1,2)): (1) the exact stationary law (rational linear solve); (2) the stationary probability current on every edge of the state graph and the cycles that carry it; (3) is there a simple closed form for the one-vacancy case, where the chain is reversible? (4) does the stationary law clump less than random placement at every weight (block 39: 0.1195 against 0.1333)? Expectation: currents circulate around pairs of records exchanging places via the vacancies. DELIVERABLE in your unit worktree: probes/work/compute/moving-normalized-transit-currents/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-normalized-transit-currents/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-normalized-transit-currents:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-normalized-transit-currents",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). What is the law when a move is accepted with the rule's NORMALIZED probability at the destination? Block 39 shows that chain is reversible for no law (a four-move cycle with products 1/2592 against 1/2376). On the 2x3 window with two vacancies and on the 3x3 window with two and three vacancies (two-valued and six-axis contents, weights (3,1,2)): (1) the exact stationary law (rational linear solve); (2) the stationary probability current on every edge of the state graph and the cycles that carry it; (3) is there a simple closed form for the one-vacancy case, where the chain is reversible? (4) does the stationary law clump less than random placement at every weight (block 39: 0.1195 against 0.1333)? Expectation: currents circulate around pairs of records exchanging places via the vacancies. DELIVERABLE in your unit worktree: probes/work/compute/moving-normalized-transit-currents/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-normalized-transit-currents/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-formation-and-motion:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-formation-and-motion",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Formation and motion together. Copy the simulator and add formation: an empty site forms a record at rate z * Z_x / 6 per sweep (Z_x the rule's normalizer there, content drawn from the rule), records are never removed. From an empty 24^3 lattice on the line (p,1,2) at p = 6 and 12, neutral scale and scale 1, z = 0.001 and 0.0001: the density against time, the neighbour ratio and aligned fraction against density, and the fraction of accepted moves against density. Then the rare-formation check on the 2x3 window with two-valued contents: compare the exact law of the arrangement just before the k-th formation, as z goes to 0, with the static law on the occupied set. Expectation: with rare formation the arrangement is the static law for the records present; at the neutral scale growth is uniform, at scale 1 new records form next to old ones and clusters fill in. DELIVERABLE in your unit worktree: probes/work/compute/moving-formation-and-motion/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-formation-and-motion/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-formation-and-motion:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-formation-and-motion",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Formation and motion together. Copy the simulator and add formation: an empty site forms a record at rate z * Z_x / 6 per sweep (Z_x the rule's normalizer there, content drawn from the rule), records are never removed. From an empty 24^3 lattice on the line (p,1,2) at p = 6 and 12, neutral scale and scale 1, z = 0.001 and 0.0001: the density against time, the neighbour ratio and aligned fraction against density, and the fraction of accepted moves against density. Then the rare-formation check on the 2x3 window with two-valued contents: compare the exact law of the arrangement just before the k-th formation, as z goes to 0, with the static law on the occupied set. Expectation: with rare formation the arrangement is the static law for the records present; at the neutral scale growth is uniform, at scale 1 new records form next to old ones and clusters fill in. DELIVERABLE in your unit worktree: probes/work/compute/moving-formation-and-motion/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-formation-and-motion/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-kernel-inside-a-cluster:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-kernel-inside-a-cluster",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Does the Green-function kernel live inside a cluster of moving records? Write a simulator for the SPHERE menu with vacancies (content = a unit vector, carried; pair weight c * exp(beta s.s'); pair-weight transit; plus a heat-bath re-draw of nothing: contents never change). Since contents are carried and never re-drawn, the transverse field can only relax by records exchanging places: measure, in a slab that is fully occupied and aligned on average (start from a fully aligned half-filled lattice with a flat interface, beta = 3, c = neutral and c = 1), the transverse structure factor of the dense region against 1/(beta E(k)) and how fast it relaxes. Expectation: equal-time correlations follow the static law on the occupied set only if contents can mix; with carried contents the relaxation is diffusive in the exchange of records. Report what you see; this is exploratory. DELIVERABLE in your unit worktree: probes/work/compute/moving-kernel-inside-a-cluster/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-kernel-inside-a-cluster/<name>/run.py\""
+ },
+ {
+  "id": "C:moving-kernel-inside-a-cluster:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-kernel-inside-a-cluster",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Does the Green-function kernel live inside a cluster of moving records? Write a simulator for the SPHERE menu with vacancies (content = a unit vector, carried; pair weight c * exp(beta s.s'); pair-weight transit; plus a heat-bath re-draw of nothing: contents never change). Since contents are carried and never re-drawn, the transverse field can only relax by records exchanging places: measure, in a slab that is fully occupied and aligned on average (start from a fully aligned half-filled lattice with a flat interface, beta = 3, c = neutral and c = 1), the transverse structure factor of the dense region against 1/(beta E(k)) and how fast it relaxes. Expectation: equal-time correlations follow the static law on the occupied set only if contents can mix; with carried contents the relaxation is diffusive in the exchange of records. Report what you see; this is exploratory. DELIVERABLE in your unit worktree: probes/work/compute/moving-kernel-inside-a-cluster/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/moving-kernel-inside-a-cluster/<name>/run.py\""
  },
  {
   "id": "J:derive:tight-sibling-lemma:a1",
@@ -59178,6 +59499,278 @@
   "problem": "corrigendum-PR8180",
   "title": "Corrigendum packet for PR #8180",
   "what": "DERIVATION, independent attempt 2 of 2: Corrigendum packet for PR #8180. A probe found and another model family confirmed this defect in PR #8180: T1: phi^s/(1 - |phi|^2) against (I - PP*)^-1 P*^s differ by complex conjugation on every nonzero mode (cosine characters hid it); and T3/D2's product-structure separation is representation-dependent. TASK: (a) the minimal corrected statement (the largest domain on which the original holds, or the corrected formula), proved; (b) every later statement in that note AND in other notes of the campaign that uses the defective one (search the PR branches of blocks 12-35: PRs #8146-#8180), with a verdict for each: unaffected / holds on the corrected domain / needs its own repair; (c) the exact lines of the note and runner that must change. check.py verifies the corrected statement exactly and exhibits the original's failure. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/corrigendum-PR8180/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/corrigendum-PR8180/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-clumping-bounds:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-clumping-bounds",
+  "title": "Brackets for where moving records clump",
+  "what": "DERIVATION, independent attempt 1 of 4: Brackets for where moving records clump. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). TASK: rigorous brackets for the onset of clumping of the six-axis gas with vacancies (the static law on the occupied set with a fugacity z per record; clumping = two translation-invariant states of different density at one fugacity). (a) ABOVE: for c p large a contour argument between a dense aligned state and the empty state; the reflection positivity of block 39's T5 (valid for c >= c_0, p >= q, p + q >= 2r) makes the chessboard estimate available: give an explicit region of (c, p, q, r). (b) BELOW: a uniqueness region for every fugacity (a one-site criterion in the enlarged one-site space of seven states). (c) For content-less records reduce to the known two-valued model and state what is proved and what is literature. Exact finite checks of every inequality used. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-clumping-bounds/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-clumping-bounds/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-clumping-bounds:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-clumping-bounds",
+  "title": "Brackets for where moving records clump",
+  "what": "DERIVATION, independent attempt 2 of 4: Brackets for where moving records clump. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). TASK: rigorous brackets for the onset of clumping of the six-axis gas with vacancies (the static law on the occupied set with a fugacity z per record; clumping = two translation-invariant states of different density at one fugacity). (a) ABOVE: for c p large a contour argument between a dense aligned state and the empty state; the reflection positivity of block 39's T5 (valid for c >= c_0, p >= q, p + q >= 2r) makes the chessboard estimate available: give an explicit region of (c, p, q, r). (b) BELOW: a uniqueness region for every fugacity (a one-site criterion in the enlarged one-site space of seven states). (c) For content-less records reduce to the known two-valued model and state what is proved and what is literature. Exact finite checks of every inequality used. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-clumping-bounds/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-clumping-bounds/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-clumping-bounds:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-clumping-bounds",
+  "title": "Brackets for where moving records clump",
+  "what": "DERIVATION, independent attempt 3 of 4: Brackets for where moving records clump. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). TASK: rigorous brackets for the onset of clumping of the six-axis gas with vacancies (the static law on the occupied set with a fugacity z per record; clumping = two translation-invariant states of different density at one fugacity). (a) ABOVE: for c p large a contour argument between a dense aligned state and the empty state; the reflection positivity of block 39's T5 (valid for c >= c_0, p >= q, p + q >= 2r) makes the chessboard estimate available: give an explicit region of (c, p, q, r). (b) BELOW: a uniqueness region for every fugacity (a one-site criterion in the enlarged one-site space of seven states). (c) For content-less records reduce to the known two-valued model and state what is proved and what is literature. Exact finite checks of every inequality used. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-clumping-bounds/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-clumping-bounds/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-clumping-bounds:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-clumping-bounds",
+  "title": "Brackets for where moving records clump",
+  "what": "DERIVATION, independent attempt 4 of 4: Brackets for where moving records clump. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). TASK: rigorous brackets for the onset of clumping of the six-axis gas with vacancies (the static law on the occupied set with a fugacity z per record; clumping = two translation-invariant states of different density at one fugacity). (a) ABOVE: for c p large a contour argument between a dense aligned state and the empty state; the reflection positivity of block 39's T5 (valid for c >= c_0, p >= q, p + q >= 2r) makes the chessboard estimate available: give an explicit region of (c, p, q, r). (b) BELOW: a uniqueness region for every fugacity (a one-site criterion in the enlarged one-site space of seven states). (c) For content-less records reduce to the known two-valued model and state what is proved and what is literature. Exact finite checks of every inequality used. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-clumping-bounds/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-clumping-bounds/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-what-fixes-the-scale:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-what-fixes-the-scale",
+  "title": "What fixes the binding scale?",
+  "what": "DERIVATION, independent attempt 1 of 5: What fixes the binding scale?. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The overall scale c of the pair weights is invisible to the axioms' normalized rule and becomes a binding constant once records move or sites can be empty. The owner treats it as a primitive to be stated when derived or found. Block 39 gives two facts: at c_0 = 6/(p + q + 4r) an empty neighbour weighs what a record of uniformly random content weighs on average, and the law with vacancies is reflection positive through bond planes exactly for c >= c_0. TASK: examine every principled candidate and say exactly what it fixes: (a) 'no state is privileged' (the memo's sentence) applied to the empty state: does it force c = c_0, or only a relation? (b) reflection positivity with a transfer matrix that is a strict contraction on the complement of its top state: is c = c_0 (a zero eigenvalue: the empty state is then a linear combination of the record states in the transfer operator) special, e.g. does the law at c_0 coincide with the law in which an unrecorded site is integrated over contents (block 24's second reading, PR #8158)? Work this out exactly on windows where block 24's two readings differ. (c) the formation rate z Z_x: is there a scale at which it is independent of the neighbourhood for every neighbourhood, or only on average? (d) consistency between formation and motion: a record formed at x and moved to y against a record formed at y. (e) anything that would tie c to the memo's open gate on the natural unit. Deliver exact finite computations for each candidate and the statement of what it determines. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-what-fixes-the-scale/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-what-fixes-the-scale/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-what-fixes-the-scale:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-what-fixes-the-scale",
+  "title": "What fixes the binding scale?",
+  "what": "DERIVATION, independent attempt 2 of 5: What fixes the binding scale?. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The overall scale c of the pair weights is invisible to the axioms' normalized rule and becomes a binding constant once records move or sites can be empty. The owner treats it as a primitive to be stated when derived or found. Block 39 gives two facts: at c_0 = 6/(p + q + 4r) an empty neighbour weighs what a record of uniformly random content weighs on average, and the law with vacancies is reflection positive through bond planes exactly for c >= c_0. TASK: examine every principled candidate and say exactly what it fixes: (a) 'no state is privileged' (the memo's sentence) applied to the empty state: does it force c = c_0, or only a relation? (b) reflection positivity with a transfer matrix that is a strict contraction on the complement of its top state: is c = c_0 (a zero eigenvalue: the empty state is then a linear combination of the record states in the transfer operator) special, e.g. does the law at c_0 coincide with the law in which an unrecorded site is integrated over contents (block 24's second reading, PR #8158)? Work this out exactly on windows where block 24's two readings differ. (c) the formation rate z Z_x: is there a scale at which it is independent of the neighbourhood for every neighbourhood, or only on average? (d) consistency between formation and motion: a record formed at x and moved to y against a record formed at y. (e) anything that would tie c to the memo's open gate on the natural unit. Deliver exact finite computations for each candidate and the statement of what it determines. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-what-fixes-the-scale/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-what-fixes-the-scale/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-what-fixes-the-scale:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-what-fixes-the-scale",
+  "title": "What fixes the binding scale?",
+  "what": "DERIVATION, independent attempt 3 of 5: What fixes the binding scale?. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The overall scale c of the pair weights is invisible to the axioms' normalized rule and becomes a binding constant once records move or sites can be empty. The owner treats it as a primitive to be stated when derived or found. Block 39 gives two facts: at c_0 = 6/(p + q + 4r) an empty neighbour weighs what a record of uniformly random content weighs on average, and the law with vacancies is reflection positive through bond planes exactly for c >= c_0. TASK: examine every principled candidate and say exactly what it fixes: (a) 'no state is privileged' (the memo's sentence) applied to the empty state: does it force c = c_0, or only a relation? (b) reflection positivity with a transfer matrix that is a strict contraction on the complement of its top state: is c = c_0 (a zero eigenvalue: the empty state is then a linear combination of the record states in the transfer operator) special, e.g. does the law at c_0 coincide with the law in which an unrecorded site is integrated over contents (block 24's second reading, PR #8158)? Work this out exactly on windows where block 24's two readings differ. (c) the formation rate z Z_x: is there a scale at which it is independent of the neighbourhood for every neighbourhood, or only on average? (d) consistency between formation and motion: a record formed at x and moved to y against a record formed at y. (e) anything that would tie c to the memo's open gate on the natural unit. Deliver exact finite computations for each candidate and the statement of what it determines. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-what-fixes-the-scale/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-what-fixes-the-scale/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-what-fixes-the-scale:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-what-fixes-the-scale",
+  "title": "What fixes the binding scale?",
+  "what": "DERIVATION, independent attempt 4 of 5: What fixes the binding scale?. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The overall scale c of the pair weights is invisible to the axioms' normalized rule and becomes a binding constant once records move or sites can be empty. The owner treats it as a primitive to be stated when derived or found. Block 39 gives two facts: at c_0 = 6/(p + q + 4r) an empty neighbour weighs what a record of uniformly random content weighs on average, and the law with vacancies is reflection positive through bond planes exactly for c >= c_0. TASK: examine every principled candidate and say exactly what it fixes: (a) 'no state is privileged' (the memo's sentence) applied to the empty state: does it force c = c_0, or only a relation? (b) reflection positivity with a transfer matrix that is a strict contraction on the complement of its top state: is c = c_0 (a zero eigenvalue: the empty state is then a linear combination of the record states in the transfer operator) special, e.g. does the law at c_0 coincide with the law in which an unrecorded site is integrated over contents (block 24's second reading, PR #8158)? Work this out exactly on windows where block 24's two readings differ. (c) the formation rate z Z_x: is there a scale at which it is independent of the neighbourhood for every neighbourhood, or only on average? (d) consistency between formation and motion: a record formed at x and moved to y against a record formed at y. (e) anything that would tie c to the memo's open gate on the natural unit. Deliver exact finite computations for each candidate and the statement of what it determines. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-what-fixes-the-scale/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-what-fixes-the-scale/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-what-fixes-the-scale:a5",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-what-fixes-the-scale",
+  "title": "What fixes the binding scale?",
+  "what": "DERIVATION, independent attempt 5 of 5: What fixes the binding scale?. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The overall scale c of the pair weights is invisible to the axioms' normalized rule and becomes a binding constant once records move or sites can be empty. The owner treats it as a primitive to be stated when derived or found. Block 39 gives two facts: at c_0 = 6/(p + q + 4r) an empty neighbour weighs what a record of uniformly random content weighs on average, and the law with vacancies is reflection positive through bond planes exactly for c >= c_0. TASK: examine every principled candidate and say exactly what it fixes: (a) 'no state is privileged' (the memo's sentence) applied to the empty state: does it force c = c_0, or only a relation? (b) reflection positivity with a transfer matrix that is a strict contraction on the complement of its top state: is c = c_0 (a zero eigenvalue: the empty state is then a linear combination of the record states in the transfer operator) special, e.g. does the law at c_0 coincide with the law in which an unrecorded site is integrated over contents (block 24's second reading, PR #8158)? Work this out exactly on windows where block 24's two readings differ. (c) the formation rate z Z_x: is there a scale at which it is independent of the neighbourhood for every neighbourhood, or only on average? (d) consistency between formation and motion: a record formed at x and moved to y against a record formed at y. (e) anything that would tie c to the memo's open gate on the natural unit. Deliver exact finite computations for each candidate and the statement of what it determines. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-what-fixes-the-scale/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-what-fixes-the-scale/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-jammed-clusters:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-jammed-clusters",
+  "title": "Jammed clusters of records: what moves, what is frozen, how they grow and evaporate",
+  "what": "DERIVATION, independent attempt 1 of 4: Jammed clusters of records: what moves, what is frozen, how they grow and evaporate. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The owner's remark: a region does not have to be very full to jam, and a jammed region is where nothing can happen any more. Under pair-weight transit a record with k agreeing neighbours leaves with probability 1/(1 + (c p)^k), and a record with no empty neighbour cannot move at all. TASK: for a convex cluster of aligned records in empty space, with rare formation at rate z Z_x: (a) which records can ever move (the surface), and how the number of arrangements reachable in a time T scales with the cluster's volume and with its surface; (b) the growth law of the cluster by sticking and by formation at its surface, and its evaporation rate, as functions of its size; is there a size above which a cluster only grows? (c) whether contents inside are frozen forever, and what an observer who can read only records (the axioms: only records are readable) can learn about the interior from the surface. State theorems for finite clusters with exact small checks; no identification with anything in nature is asked for. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-jammed-clusters/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-jammed-clusters/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-jammed-clusters:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-jammed-clusters",
+  "title": "Jammed clusters of records: what moves, what is frozen, how they grow and evaporate",
+  "what": "DERIVATION, independent attempt 2 of 4: Jammed clusters of records: what moves, what is frozen, how they grow and evaporate. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The owner's remark: a region does not have to be very full to jam, and a jammed region is where nothing can happen any more. Under pair-weight transit a record with k agreeing neighbours leaves with probability 1/(1 + (c p)^k), and a record with no empty neighbour cannot move at all. TASK: for a convex cluster of aligned records in empty space, with rare formation at rate z Z_x: (a) which records can ever move (the surface), and how the number of arrangements reachable in a time T scales with the cluster's volume and with its surface; (b) the growth law of the cluster by sticking and by formation at its surface, and its evaporation rate, as functions of its size; is there a size above which a cluster only grows? (c) whether contents inside are frozen forever, and what an observer who can read only records (the axioms: only records are readable) can learn about the interior from the surface. State theorems for finite clusters with exact small checks; no identification with anything in nature is asked for. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-jammed-clusters/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-jammed-clusters/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-jammed-clusters:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-jammed-clusters",
+  "title": "Jammed clusters of records: what moves, what is frozen, how they grow and evaporate",
+  "what": "DERIVATION, independent attempt 3 of 4: Jammed clusters of records: what moves, what is frozen, how they grow and evaporate. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The owner's remark: a region does not have to be very full to jam, and a jammed region is where nothing can happen any more. Under pair-weight transit a record with k agreeing neighbours leaves with probability 1/(1 + (c p)^k), and a record with no empty neighbour cannot move at all. TASK: for a convex cluster of aligned records in empty space, with rare formation at rate z Z_x: (a) which records can ever move (the surface), and how the number of arrangements reachable in a time T scales with the cluster's volume and with its surface; (b) the growth law of the cluster by sticking and by formation at its surface, and its evaporation rate, as functions of its size; is there a size above which a cluster only grows? (c) whether contents inside are frozen forever, and what an observer who can read only records (the axioms: only records are readable) can learn about the interior from the surface. State theorems for finite clusters with exact small checks; no identification with anything in nature is asked for. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-jammed-clusters/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-jammed-clusters/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-jammed-clusters:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-jammed-clusters",
+  "title": "Jammed clusters of records: what moves, what is frozen, how they grow and evaporate",
+  "what": "DERIVATION, independent attempt 4 of 4: Jammed clusters of records: what moves, what is frozen, how they grow and evaporate. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). The owner's remark: a region does not have to be very full to jam, and a jammed region is where nothing can happen any more. Under pair-weight transit a record with k agreeing neighbours leaves with probability 1/(1 + (c p)^k), and a record with no empty neighbour cannot move at all. TASK: for a convex cluster of aligned records in empty space, with rare formation at rate z Z_x: (a) which records can ever move (the surface), and how the number of arrangements reachable in a time T scales with the cluster's volume and with its surface; (b) the growth law of the cluster by sticking and by formation at its surface, and its evaporation rate, as functions of its size; is there a size above which a cluster only grows? (c) whether contents inside are frozen forever, and what an observer who can read only records (the axioms: only records are readable) can learn about the interior from the surface. State theorems for finite clusters with exact small checks; no identification with anything in nature is asked for. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-jammed-clusters/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-jammed-clusters/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-kernel-with-vacancies:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-kernel-with-vacancies",
+  "title": "The transverse kernel and long-range order for the sphere menu with vacancies",
+  "what": "DERIVATION, independent attempt 1 of 4: The transverse kernel and long-range order for the sphere menu with vacancies. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Block 19 (PR #8153) proved the infrared bound and long-range order for the full-lattice static sphere law by bond-plane reflection positivity; block 39's T5 shows that with an empty state the bond kernel stays positive semidefinite exactly for c >= c_0 = beta/sinh(beta). TASK: carry block 19's argument to the law with vacancies at fugacity z: (a) Gaussian domination with the enlarged one-site space; what the twisted partition function twists (only the records); (b) the infrared bound for the transverse field of the records, s_x 1[x occupied], and the sum rule with the density rho = <1[occupied]>; (c) long-range order for beta large and rho above an explicit value, or the obstruction; (d) the stiffness: how the coefficient of 1/E(k) depends on the density and on c. Exact finite checks on small tori with a two-valued content as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-kernel-with-vacancies/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-kernel-with-vacancies/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-kernel-with-vacancies:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-kernel-with-vacancies",
+  "title": "The transverse kernel and long-range order for the sphere menu with vacancies",
+  "what": "DERIVATION, independent attempt 2 of 4: The transverse kernel and long-range order for the sphere menu with vacancies. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Block 19 (PR #8153) proved the infrared bound and long-range order for the full-lattice static sphere law by bond-plane reflection positivity; block 39's T5 shows that with an empty state the bond kernel stays positive semidefinite exactly for c >= c_0 = beta/sinh(beta). TASK: carry block 19's argument to the law with vacancies at fugacity z: (a) Gaussian domination with the enlarged one-site space; what the twisted partition function twists (only the records); (b) the infrared bound for the transverse field of the records, s_x 1[x occupied], and the sum rule with the density rho = <1[occupied]>; (c) long-range order for beta large and rho above an explicit value, or the obstruction; (d) the stiffness: how the coefficient of 1/E(k) depends on the density and on c. Exact finite checks on small tori with a two-valued content as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-kernel-with-vacancies/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-kernel-with-vacancies/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-kernel-with-vacancies:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-kernel-with-vacancies",
+  "title": "The transverse kernel and long-range order for the sphere menu with vacancies",
+  "what": "DERIVATION, independent attempt 3 of 4: The transverse kernel and long-range order for the sphere menu with vacancies. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Block 19 (PR #8153) proved the infrared bound and long-range order for the full-lattice static sphere law by bond-plane reflection positivity; block 39's T5 shows that with an empty state the bond kernel stays positive semidefinite exactly for c >= c_0 = beta/sinh(beta). TASK: carry block 19's argument to the law with vacancies at fugacity z: (a) Gaussian domination with the enlarged one-site space; what the twisted partition function twists (only the records); (b) the infrared bound for the transverse field of the records, s_x 1[x occupied], and the sum rule with the density rho = <1[occupied]>; (c) long-range order for beta large and rho above an explicit value, or the obstruction; (d) the stiffness: how the coefficient of 1/E(k) depends on the density and on c. Exact finite checks on small tori with a two-valued content as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-kernel-with-vacancies/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-kernel-with-vacancies/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:moving-kernel-with-vacancies:a4",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "moving-kernel-with-vacancies",
+  "title": "The transverse kernel and long-range order for the sphere menu with vacancies",
+  "what": "DERIVATION, independent attempt 4 of 4: The transverse kernel and long-range order for the sphere menu with vacancies. SETTING (the owner's working reading, 2026-09-20; block 39, the open PR titled 'ail39: records that move'): a site is empty or carries ONE record; a record carries its content (six axes); two neighbouring records weigh W = c * omega, omega = p, q, r for equal, opposite, orthogonal axes; a bond with an empty end weighs 1; the axioms' rule K (normalized over contents) does not depend on the scale c. MOTION: a record chooses between its position and an empty neighbouring position in proportion to the pair weights it would have there; this is in detailed balance with the static law on the occupied set. The neutral scale c_0 = 6/(p + q + 4r): an empty neighbour weighs what a record of random content weighs on average, and it is the least scale at which the law with vacancies is reflection positive through bond planes. Simulator: probes/lib/moving_gas.py p q r scale rho L sweeps seed (scale = a number or the word neutral). Block 19 (PR #8153) proved the infrared bound and long-range order for the full-lattice static sphere law by bond-plane reflection positivity; block 39's T5 shows that with an empty state the bond kernel stays positive semidefinite exactly for c >= c_0 = beta/sinh(beta). TASK: carry block 19's argument to the law with vacancies at fugacity z: (a) Gaussian domination with the enlarged one-site space; what the twisted partition function twists (only the records); (b) the infrared bound for the transverse field of the records, s_x 1[x occupied], and the sum rule with the density rho = <1[occupied]>; (c) long-range order for beta large and rho above an explicit value, or the obstruction; (d) the stiffness: how the coefficient of 1/E(k) depends on the density and on c. Exact finite checks on small tori with a two-valued content as in block 36's runner. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/moving-kernel-with-vacancies/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/moving-kernel-with-vacancies/<name>/check.py\""
  },
  {
   "id": "X:formation-3plus1-sphere-memory",
@@ -62304,6 +62897,950 @@
    "summary": "(?m)^SUMMARY: (.*)"
   },
   "what": "For one open science PR: fetch its refuting control (`git show origin/<branch>:.claude/science/physics-loops/<pack>/specs/<name>_refuter.py > probes/work/<stub>/refuter.py`), change its random seeds and, where it has them, its sizes or couplings, run it, and compare its verdict lines with the committed .out.txt on the branch. Print `HIT: ...` on any inconsistency and a `SUMMARY:` line; run through run_probe with --extra. Commit the fetched script with the log so the run is reproducible."
+ },
+ {
+  "id": "X:moving-clumping-line-p12",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "4 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 0.5 0.1 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 0.5 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 0.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 2 0.1 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 2 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "6 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "7 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "8 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "9 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "10 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "11 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "14 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "16 1 2 2 0.5 24 3000 1"
+   },
+   {
+    "extra": "20 1 2 2 0.5 24 3000 1"
+   }
+  ],
+  "what": "NEW PHYSICS: records that move. Where do records clump on the line (p,1,2)? First look (density 0.3): onset near p = 10 at the neutral scale, between 5 and 6 at scale 1. The table over p, scale and density is the map. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 132 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:moving-clumping-other-lines",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "3 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 1 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 1 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 2 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 2 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 3 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 3 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 4 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "3 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "4 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "6 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "8 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "10 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "16 1 4 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 4 1 0.3 24 3000 1"
+   }
+  ],
+  "what": "The same map on other weight lines. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 64 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:moving-contentless-calibration",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "1 1 1 2.0 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.2 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.3 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.4 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.5 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.6 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.8 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 3.2 0.5 16 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.0 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.2 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.3 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.4 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.5 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.6 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.8 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 3.2 0.5 24 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.0 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.2 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.3 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.4 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.5 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.6 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 2.8 0.5 32 3000 1"
+   },
+   {
+    "extra": "1 1 1 3.2 0.5 32 3000 1"
+   }
+  ],
+  "what": "Calibration: content-less records (p = q = r = 1) at half filling across the literature onset 2.427, three lattice sizes. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:moving-jamming-mobility",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "12 1 2 1 0.05 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.2 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 1 0.7 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.05 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.2 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 1 0.7 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.05 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.2 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 1 0.7 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.05 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.1 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.2 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.3 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.5 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 1 0.7 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.05 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.2 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "12 1 2 neutral 0.7 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.05 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.2 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "24 1 2 neutral 0.7 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.05 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.2 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "48 1 2 neutral 0.7 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.05 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.1 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.2 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.3 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.5 24 3000 1"
+   },
+   {
+    "extra": "96 1 2 neutral 0.7 24 3000 1"
+   }
+  ],
+  "what": "Jamming without being full: the fraction of accepted moves against the density at strong preference. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 48 points of the `grid` field are claimed and run by the work loop."
+ },
+ {
+  "id": "X:moving-seeds-and-long-runs",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 moving_gas.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "grid": [
+   {
+    "extra": "8 1 2 neutral 0.3 24 3000 2"
+   },
+   {
+    "extra": "8 1 2 neutral 0.3 24 3000 3"
+   },
+   {
+    "extra": "8 1 2 neutral 0.3 24 3000 4"
+   },
+   {
+    "extra": "8 1 2 neutral 0.3 24 20000 5"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 3000 2"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 3000 3"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 3000 4"
+   },
+   {
+    "extra": "10 1 2 neutral 0.3 24 20000 5"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 2"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 3"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 3000 4"
+   },
+   {
+    "extra": "12 1 2 neutral 0.3 24 20000 5"
+   },
+   {
+    "extra": "5 1 2 1 0.3 24 3000 2"
+   },
+   {
+    "extra": "5 1 2 1 0.3 24 3000 3"
+   },
+   {
+    "extra": "5 1 2 1 0.3 24 3000 4"
+   },
+   {
+    "extra": "5 1 2 1 0.3 24 20000 5"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 3000 2"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 3000 3"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 3000 4"
+   },
+   {
+    "extra": "6 1 2 1 0.3 24 20000 5"
+   }
+  ],
+  "what": "Error bars and drift at the key points. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 20 points of the `grid` field are claimed and run by the work loop."
  },
  {
   "id": "F:block30-refuter-seeded",

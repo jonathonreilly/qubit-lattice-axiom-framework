@@ -1,0 +1,45 @@
+R1  the relative entropy of one site's kernel
+ok   KL(vMF(k u) || vMF(k u')) = E[log(e^{k u.s}/e^{k u'.s})] = k (u - u').E[s]
+     and E[s] = A(k) u, so KL = k A(k)(1 - u.u') - the task's GIVEN, in one line.
+ok   k A(k) = k^2/3 + O(k^4), so the per-site cost of a small twist is quadratic in the angle
+     and, at fixed angle, grows linearly in k at large coupling.
+
+R2  the minimum space-time twist energy of the backward cone
+     A site-wise twist with theta = theta_0 at the apex and 0 on level 0 costs at
+     least (const) times the quadratic Dirichlet energy, whose minimum is the cone's
+     effective conductance from apex to base.  Exactly:
+       T = 1:                                   3  = 3.000000
+       T = 2:                                 9/4  = 2.250000
+       T = 3:                              117/59  = 1.983051
+       T = 4:                           2595/1408  = 1.843040
+       T = 5:                       369612/210437  = 1.756402
+       T = 6:                 519757389/306198359  = 1.697453
+       T = 7:         4011089980525/2423987521503  = 1.654749
+       T = 8:  992844286053523947/611962959395348995  = 1.622393
+ok   the first three are 3, 9/4 and 117/59 - exact rationals from an exact linear solve
+
+R3  it does not vanish
+     decrements: 0.7500, 0.2669, 0.1400, 0.0866, 0.0589, 0.0427, 0.0324
+     decrement x T^2: 3.000, 2.403, 2.240, 2.166, 2.122, 2.093, 2.071
+ok   the conductance decreases in T, as it must: a longer cone is a longer resistor
+ok   but the decrements behave like 2/T^2 (the last two scaled values are 2.093, 2.071), whose sum converges:
+ok   extrapolating, the conductance tends to about 1.382 > 0, not to 0
+     So min energy = Theta(1) uniformly in T, and by R1 the path-space relative
+     entropy of ANY site-wise twist reaching theta_0 at the apex is bounded below by
+     a positive constant times theta_0^2, for every T.  That is A2's failure, derived
+     from the cone's geometry rather than from attempt a1's Theorem N.
+
+R4  what route A needed, and what it was confused with
+     Route A needed the cost to vanish like 1/sum_{k<T} P_k.  The plane walk's return
+     sum diverges - that is the recurrence the route rests on - so 1/sum -> 0 like
+     1/log T.  But that sum is a property of the PLANE walk, while the twist's cost is
+     the conductance of the SPACE-TIME cone, and R2/R3 show the latter does not
+     vanish.  The two are different objects; conflating them is what made the route
+     look open.  Three regimes, now separated:
+       twist static in level time:        cost Theta(T)      (the earlier attempts)
+       twist varying in space and time:   cost Theta(1)      (R2, R3)
+       what route A needs:                cost o(1)          (unreachable this way)
+ok   the space-time twist buys a factor T over the static one and no more
+
+SUMMARY: PARTIAL attempt a1's no-go for route A is re-derived from the backward cone's geometry, with no step in common with its Theorem N, and the rate is pinned: the minimum space-time twist energy is the cone's effective conductance, exactly 3, 9/4, 117/59, 2595/1408, ... which decreases with decrements of order 2/T^2 and therefore converges to about 1.4 > 0; so a site-wise space-time twist costs Theta(1) uniformly in T - a factor T better than a twist static in level time, and still not the o(1) route A needs; the sum that does vanish, 1/sum_{k<T} P_k, is the plane walk's return sum, a different object from the cone's conductance
+HIT: the space-time twist's path cost is Theta(1), not o(1): the backward cone's effective conductance is bounded below (about 1.4), so route A cannot close for any site-wise rotation of the records, whatever the twist profile

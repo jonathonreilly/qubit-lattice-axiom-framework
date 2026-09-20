@@ -1,0 +1,50 @@
+V1  the realization
+ok   the marks realize the same one-set in [0,3]^3 and in [-2,6]^3, so the
+     realization is the one on Z^3 (nothing escapes the box)
+ok   it has 37 one-sites
+
+V2  kinds, levels, and the site 333
+ok   one seed, 9 amplified, 27 processed-type
+ok   level sizes [1, 3, 3, 4, 3, 6, 7, 6, 3, 1]
+ok   333 is processed-type and all three of its 1-predecessors [(2, 3, 3), (3, 2, 3), (3, 3, 2)] are processed-type
+
+V3/V4  the rooted values, by the layered dynamic program
+     v(2, 3, 3) = +0   |T| = 11  E = 5  A = 5  S = 1
+     v(3, 2, 3) = +0   |T| = 11  E = 5  A = 5  S = 1
+     v(3, 3, 2) = +0   |T| = 11  E = 5  A = 5  S = 1
+     v(3, 3, 3) = +1   |T| = 12  E = 6  A = 5  S = 1
+ok   each of 233, 323, 332 is TIGHT: its rooted value is exactly 0
+ok   and v(333) = +1 > 0: the tight-sibling lemma's conclusion fails at 333
+     So (Q) is false - a processed site can have all its processed 1-predecessors
+     tight - the tight-sibling lemma is false, and with it the rooted inequality (H).
+     This reproduces attempt a2's refutation from the marks alone.
+
+V5  the family constant at this root, exactly
+     c = 1         min(E - c|A|) = 1        at E = 6, A = 5
+     c = 10/9      min(E - c|A|) = 0        at E = 10, A = 9
+     c = 1001/900  min(E - c|A|) = -1/100   at E = 10, A = 9
+     c = 11/9      min(E - c|A|) = -1       at E = 10, A = 9
+ok   min(E - |A|) = 1 and min(E - (10/9)|A|) = 0, so min E/|A| = 10/9 at this root:
+     c*(eta, 333) = 10/9 > 1, which is a2's lower bound, and it removes the c = 1
+     certificates that block 33's threshold 453 rests on.
+ok   the same with the level restriction lifted, so this is the family's value, not
+     an artefact of the rooted restriction
+
+V6  is the witness minimal?
+     drop (0, 0, 1): 333 is no longer processed-type
+     drop (0, 1, 0): 333 is no longer processed-type
+     drop (0, 2, 1): 333 is no longer processed-type
+     drop (1, 0, 0): 333 is no longer processed-type
+     drop (1, 0, 2): 333 is no longer processed-type
+     drop (1, 1, 3): 333 is no longer processed-type
+     drop (1, 3, 1): 333 is no longer processed-type
+     drop (2, 1, 0): 333 is no longer processed-type
+     drop (3, 1, 1): 333 is no longer processed-type
+ok   every one of the nine non-seed marks is needed: dropping any single one destroys the
+     counterexample, so the witness is minimal for removal of one mark.
+
+V7  cross-check against a different formulation
+ok   a node-closure integer program (HiGHS) agrees with the DP at all four sites
+
+SUMMARY: PARTIAL attempt a2's refutation is reproduced from its ten marks by independent machinery - a layered dynamic program over levels, exact integers, no scipy and no probes/lib: the realization has 37 one-sites with level sizes 1,3,3,4,3,6,7,6,3,1, the three 1-predecessors of 333 are processed-type with rooted value exactly 0 (tight) while v(333) = +1, so (Q), block 33's tight-sibling lemma and the rooted inequality (H) all fail; c*(eta,333) = 10/9 exactly, with and without the level restriction; and the witness is minimal, since dropping any one of the nine non-seed marks stops 333 being processed-type
+HIT: the refutation stands under re-derivation by different machinery, and the witness is mark-minimal: all ten marks are needed, so no smaller realization of this shape refutes the lemma

@@ -21,12 +21,19 @@
  "stdout_sha256": "c22d492ea22c65b101502ee9a39a74fb3867927d5e61f4cda0add843e5b7e9c1",
  "stdout_tail": " 5  0.4684  +0.4683\n         6  0.4308  +0.4307\n         8  0.3782  +0.3781\n        11  0.3078  +0.3077\n        16  0.2323  +0.2322\n        21  0.1831  +0.1824\n        29  0.1281  +0.1269\n        39  0.0855  +0.0824\n        53  0.0454  +0.0450\n        71  0.0233  +0.0160\n        97  0.0056  -0.0021\n       131  0.0061  -0.0050\n       178  0.0122  +0.0029\n       241  0.0176  +0.0004\n       327  0.0111  -0.0030\n       443  0.0169  -0.0061\n       601  0.0132  +0.0129\n       815  0.0121  -0.0073\n      1106  0.0120  +0.0020\n      1500  0.0102  +0.0012\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.1419 (n=18)\n   |k| in [0.3,0.6): 0.4038 (n=104)\n   |k| in [0.6,1.0): 0.7012 (n=392)\n   |k| in [1.0,1.5): 0.9443 (n=1348)\n   |k| in [1.5,2.2): 1.0888 (n=4024)\n   |k| in [2.2,3.2): 1.1679 (n=12063)\n   |k| in [3.2,6.0): 1.1922 (n=14818)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.045106  +0.077689  0.581  +0.07769\n     2  +0.009503  +0.034230  0.278  +0.06846\n     3  +0.002462  +0.019776  0.124  +0.05933\n     4  +0.000737  +0.012715  0.058  +0.05086\n     6  +0.000057  +0.005803  0.010  +0.03482\n     8  -0.000140  +0.002497  -0.056  +0.01997\n    12  -0.000001  -0.000373  0.003  -0.00447\n    16  -0.000055  -0.001089  0.051  -0.01742\nSUMMARY: dim=3 menu=sphere beta=1.0 L=32 T=1500 plateau_|m|=0.0155 lowk_ratio=0.1419 seconds=6\n",
  "checked": {
-  "by": "fable-check",
-  "at_utc": "20260918T234713Z",
+  "by": "w-jonathonsmac4f50-j6221",
+  "at_utc": "20260920T034856Z",
   "result": "FAIL",
   "findings": [
    "FAIL: stdout file does not match the log's stdout_sha256 (edited after the run?)",
+   "ok: log's git sha 3f4f3536 differs from the current HEAD c23f0e23 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "The stdout file beside this log is a different run's output, not this run's: the .txt header and its SUMMARY read beta=6.0 with plateau_|m|=0.9242, while the log's command, summary and stdout_tail all read beta=1.0 with plateau_|m|=0.0155 and are mutually consistent, and the .txt hashes to 1e144e11... against the recorded c22d492e..., so the file was overwritten after the run (same worker, sha and second) rather than the log being wrong. The log's numbers are still usable from its stdout_tail; the memory table beyond the tail is lost. Reported while reading this directory for C:menu-threshold-table:a2.",
+  "by": "w-jonathonsmac4f50-j6221",
+  "at_utc": "20260920T034856Z"
  }
 }

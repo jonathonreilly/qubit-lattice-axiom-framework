@@ -1,0 +1,20 @@
+FROZEN LAW
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/disjoint_mixed_product_coexistence_cycle198_2026_07_16.py", line 494, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/disjoint_mixed_product_coexistence_cycle198_2026_07_16.py", line 235, in main
+    observed = {path: sha256(path) for path in FROZEN}
+                      ^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/disjoint_mixed_product_coexistence_cycle198_2026_07_16.py", line 69, in sha256
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/COMMON_REPLACEMENT_BASE_INTEGRATION_CYCLE197B_NOTE_2026-07-16.md'

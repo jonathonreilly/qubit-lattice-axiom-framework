@@ -1,0 +1,39 @@
+{
+ "task": "R:dimension_selection_parent_source_packet_manifest_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "dimension",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py",
+ "seed": 92562,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T082242Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=27 FAIL=0: SUMMARY: PASS=27 FAIL=0",
+   "PASS=56 FAIL=0: SUMMARY: PASS=56 FAIL=0",
+   "PASS=57 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1b3c34268c645a54891e20fdb87301acfcb2633b70cf8bb19745b6932323231f",
+ "stdout_tail": "    Yes |    1.01\n[PASS] cache_snippet_present:original_cache:  4 |       Yes |    Yes |     Yes |    1.05:   4 |       Yes |    Yes |     Yes |    1.05\n[PASS] cache_snippet_present:original_cache:  5 |       Yes |    Yes |     Yes |    1.03:   5 |       Yes |    Yes |     Yes |    1.03\n[PASS] cache_runner_matches:finite_k_bridge_cache: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py == scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py\n[PASS] cache_sha_fresh:finite_k_bridge_cache: 121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade == 121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade\n[PASS] cache_exit_ok:finite_k_bridge_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0: SUMMARY: PASS=56 FAIL=0\n[PASS] cache_snippet_present:finite_k_bridge_cache:d=1 derivative has expected sign: d=1 derivative has expected sign\n[PASS] cache_snippet_present:finite_k_bridge_cache:d=5 parent raw_delta sign matches lower-bound sign: d=5 parent raw_delta sign matches lower-bound sign\n[PASS] bridge_json_fail_count_zero: 0\n[PASS] bridge_json_pass_count_56: 56\n========================================================================================\nSUMMARY: DIMENSION SELECTION SOURCE PACKET PASS=57 FAIL=0\n========================================================================================\nOutput written: outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T082242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

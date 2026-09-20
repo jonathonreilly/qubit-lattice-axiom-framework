@@ -1,0 +1,35 @@
+{
+ "task": "R:dest_hop_face_plant_occupies_holding_sandwich_cubes_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "dest",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/dest_hop_face_plant_occupies_holding_sandwich_cubes_check_2026_09_04.py",
+ "seed": 92561,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T082241Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3c2db309cc3732876dcf0556a4f8857fbde238752d1c563d17336025f5dd38ff",
+ "stdout_tail": "r=4 dest=hop -e2 cubes == geometric y=-1 sandwich\nPASS r=4 y=0 and y=-1 sandwiches disjoint\nPASS r=4 face \u00b1e2 cubes == disjoint union of \u00b1e2 sandwiches\nPASS r=4 dest=perpL cubes == geometric x=0 slab\nr=6 |geom_y0|=88 inherit=88 hop+e2=88 hop-e2=88 face=176 perpL=88 geom_x0=88\nPASS r=6 dest=hop +e2 cubes == geometric y=0 sandwich\nPASS r=6 HOLDING inherit cubes == geometric y=0 sandwich\nPASS r=6 dest=hop -e2 cubes == geometric y=-1 sandwich\nPASS r=6 y=0 and y=-1 sandwiches disjoint\nPASS r=6 face \u00b1e2 cubes == disjoint union of \u00b1e2 sandwiches\nPASS r=6 dest=perpL cubes == geometric x=0 slab\nr=8 |geom_y0|=164 inherit=164 hop+e2=164 hop-e2=164 face=328 perpL=164 geom_x0=164\nPASS r=8 dest=hop +e2 cubes == geometric y=0 sandwich\nPASS r=8 HOLDING inherit cubes == geometric y=0 sandwich\nPASS r=8 dest=hop -e2 cubes == geometric y=-1 sandwich\nPASS r=8 y=0 and y=-1 sandwiches disjoint\nPASS r=8 face \u00b1e2 cubes == disjoint union of \u00b1e2 sandwiches\nPASS r=8 dest=perpL cubes == geometric x=0 slab\nPASS r=6 dest=hop occupancy set != HOLDING inherit occupancy set\nPASS r=6 every y=0 sandwich vertex occupied by dest=hop\nPASS r=6 every y=0 sandwich vertex occupied by HOLDING inherit\nr=6 dest agree on sandwich vertices 26/218\nPASS r=6 exact dest agreement is 26 of 218 sandwich vertices\nPASS r=6 dests on sandwich vertices are not identical\nPASS r=6 dests on sandwich vertices agree somewhere\nPASS r=6 1-seed curl occupies no 8/8 cube\nPASS r=6 dest=copy plant +e2 occupies no 8/8 cube\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T082241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

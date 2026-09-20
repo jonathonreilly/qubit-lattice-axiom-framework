@@ -1,0 +1,21 @@
+
+===============================================================================
+A - Source and authority boundary
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/deterministic_unique_extension_record_sector_probe_2026_07_14.py", line 473, in <module>
+    main()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/deterministic_unique_extension_record_sector_probe_2026_07_14.py", line 457, in main
+    source_contract()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/deterministic_unique_extension_record_sector_probe_2026_07_14.py", line 245, in source_contract
+    note = " ".join(NOTE.read_text(encoding="utf-8").lower().replace("*", "").replace("`", "").split())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/DETERMINISTIC_UNIQUE_EXTENSION_RECORD_SECTOR_NOTE_2026-07-14.md'

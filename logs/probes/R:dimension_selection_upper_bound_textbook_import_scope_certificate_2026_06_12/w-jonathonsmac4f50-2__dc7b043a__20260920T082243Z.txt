@@ -1,0 +1,39 @@
+Dimension upper-bound textbook-import wrapper scope certificate
+========================================================================
+PASS docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md exists
+PASS docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md exists
+PASS docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md exists
+PASS docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md exists
+PASS scripts/dimension_upper_bound_dependency_edge_repair_2026_06_08.py exists
+PASS scripts/frontier_coulomb_stability_scaling_repair.py exists
+PASS logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt exists
+PASS logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt exists
+PASS logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt exists
+PASS wrapper has 2026-06-12 Coulomb scope narrowing
+PASS wrapper names this source-packet runner
+PASS wrapper keeps native stable orbit as decisive selector
+PASS wrapper demotes Coulomb side to compatible support
+PASS wrapper no longer asserts hydrogenic spectrum as load-bearing
+PASS wrapper explicitly forbids hydrogenic spectral theorem
+PASS textbook references are parallel context only
+PASS Coulomb support note remains scaling-only
+PASS stable support note keeps full Bertrand theorem out of scope
+PASS D3 gate records finite-set composition
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py", line 172, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py", line 163, in main
+    source_boundary_checks()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py", line 127, in source_boundary_checks
+    and "edit `docs/audit/**`" in (ROOT / "docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md").read_text(encoding="utf-8"),
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md'

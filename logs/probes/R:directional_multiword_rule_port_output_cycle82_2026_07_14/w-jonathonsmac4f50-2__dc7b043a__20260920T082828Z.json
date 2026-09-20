@@ -1,0 +1,31 @@
+{
+ "task": "R:directional_multiword_rule_port_output_cycle82_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "directional",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/directional_multiword_rule_port_output_cycle82_2026_07_14.py",
+ "seed": 92908,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T082828Z",
+ "elapsed_s": 9.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8bce627ebd5a835036ad10bf82686043428ce6510b48256a9c9620e1d0add755",
+ "stdout_tail": "ull row stops quietly :: []\nPASS C05 no substituted full row reaches the output writer\n\n===============================================================================\nD - Three hardest rows: six words to exact output word\n===============================================================================\nPASS D01 each full row has exactly 66 states and 65 edges :: (198, 195, 3)\nPASS D02 all three end-to-end physical frontiers are exact :: []\nPASS D03 terminal words are exactly the three selected outputs\nPASS D04 each pipeline has 262 supplied source records\nPASS D05 each pipeline appends 48 rule-port certificates plus 17 output records\n\n===============================================================================\nE - Covariance, achieved boundary, and exact residuals\n===============================================================================\nPASS E01 all 96 transformed pipeline controls have exact frontier :: []\nPASS E02 note exists and carries authority none\nPASS E03 note says every harness and program is supplied\nPASS E04 note names open-direction residual\nPASS E05 note names stream-routing residual\nPASS E06 note names program-bank residual\nPASS E07 note names seed-growth residual\nPASS E08 note scopes the output result to an incoming physical port\nPASS E09 note denies foundation and axiom effects\n\nPROGRAMS=198 SLOT_BITS=48 EMPTY_WORDS=1 SIX_ROWS=3\nOUTPUT_CANONICAL=5 OUTPUT_RAW=48 PHYSICAL_UNION_RAW=4588\nPIPELINE_SOURCE=262 PIPELINE_ADDITIONS=65\nSUMMARY: 37 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T082838Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+PASS: note finite-table diagnostic boundary -- missing=[]
+PASS: note removes old closure wording -- present=[]
+PASS: runner diagnostic firewall text -- missing=[]
+PASS: runner removes old retained-style output -- present=[]
+PASS: heavy runner cache is fresh -- status=fresh
+PASS: cache carries diagnostic values and caveats -- missing=[]
+PASS: cache removes old closure output -- present=[]
+
+TOTAL PASS: 7
+TOTAL FAIL: 0
+Verdict: finite-table diagnostic split verified; no estimator-selection or retained inverse-square closure is claimed.

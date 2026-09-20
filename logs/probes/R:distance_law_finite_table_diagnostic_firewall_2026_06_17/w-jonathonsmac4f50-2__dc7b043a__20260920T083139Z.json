@@ -1,0 +1,34 @@
+{
+ "task": "R:distance_law_finite_table_diagnostic_firewall_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "distance",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/distance_law_finite_table_diagnostic_firewall_2026_06_17.py",
+ "seed": 93099,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T083139Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "99d70a13969f45c50e59ab6b78475f76ad779c33cf205de22c51bc3ccfd6f772",
+ "stdout_tail": "PASS: note finite-table diagnostic boundary -- missing=[]\nPASS: note removes old closure wording -- present=[]\nPASS: runner diagnostic firewall text -- missing=[]\nPASS: runner removes old retained-style output -- present=[]\nPASS: heavy runner cache is fresh -- status=fresh\nPASS: cache carries diagnostic values and caveats -- missing=[]\nPASS: cache removes old closure output -- present=[]\n\nTOTAL PASS: 7\nTOTAL FAIL: 0\nVerdict: finite-table diagnostic split verified; no estimator-selection or retained inverse-square closure is claimed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T083139Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

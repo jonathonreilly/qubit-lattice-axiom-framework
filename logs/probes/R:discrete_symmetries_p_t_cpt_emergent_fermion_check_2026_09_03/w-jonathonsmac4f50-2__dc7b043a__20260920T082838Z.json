@@ -1,0 +1,35 @@
+{
+ "task": "R:discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "discrete",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+ "seed": 92918,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T082838Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5e0e14b745263af5f5e4c1bb6bd4687389d8261f30344edfe582e105e2420866",
+ "stdout_tail": "in every column\nPASS E2 [exact] the odd-shift columns Pcen, Ref carry sigma_ij = eta_ij eta_{P(i)P(j)} on A_ij, T_ij and J_ij, at -1 on 64 of 192 bonds and on 128\nPASS E3 [exact] H(t,m) is INVARIANT under Pcor, T and PT and goes to H(t,-m) under C, Pcen, Ref, CP, CT and CPT; mass-flipping maps are not fixed-m symmetries\nPASS E4 [exact] S_f -> +S_f in every column: each operation carries the code space to itself with no sign; the encoding obstructs none\nPASS E5 [exact] B_v, Q and H_m are pure Z, so record-diagonal, carrying the table's signs; A_ij, S_f, T_ij, J_ij have zero fixed-Z diagonal; this supplies no off-diagonal measurement\nPASS R1 [1e-10] negative-m gaps are 2|m|; spectral particle-hole at fixed m fails by 2|m|\nPASS R2 [1e-12] cube-centre PT commutes only at m0; x-half C_spec P anticommutes all tested m; both square -I\nPASS R3 [1e-12] identical complete Z laws have opposite X expectations; fixed-Z correlations do not determine X\nPASS R4 [exact] unitary many-body C times either odd-shift parity preserves both hop and mass\nDOMAIN_DATA: [(0.0, 0.0, 0.0), (0.0, 0.0, 1.4)] [('cube-centre PT', 0.0, 0.0, 0.0, 2.0), ('cube-centre PT', 0.7, 0.0, 1.4, 2.0), ('x-half C_spec P', 0.0, 0.0, 2.0, 0.0), ('x-half C_spec P', 0.7, 0.0, 2.0, 0.0)] scalar choices ['corner inversion']\nSUMMARY: conditional finite corner P and encoded T preserve all masses; specified spectral BDI is massless; many-body CPT flips m. Fixed-Z diagonality does not supply physical Records.\nTOTAL: PASS=37 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T082839Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

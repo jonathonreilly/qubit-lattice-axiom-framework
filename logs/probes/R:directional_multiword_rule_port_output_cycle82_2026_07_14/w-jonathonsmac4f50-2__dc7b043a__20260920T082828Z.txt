@@ -1,0 +1,62 @@
+
+===============================================================================
+A - Six-slot directional program bank
+===============================================================================
+PASS A01 direction order is exactly all six nearest neighbours
+PASS A02 EMPTY is a genuinely reserved eight-bit word
+PASS A03 all 198 row programs are exactly 48 bits
+PASS A04 all 198 directional programs are distinct
+PASS A05 exact minimum program Hamming distance is one
+PASS A06 row arity census is preserved
+PASS A07 exactly three programs need no EMPTY slot
+PASS A08 every programmed output has an assigned eight-bit word
+
+===============================================================================
+B - Physical rule-port to arbitrary eight-bit output
+===============================================================================
+PASS B01 output table has five canonical rows
+PASS B02 output table has 48 proper-cubic raw rows
+PASS B03 exactly 24 raw rows safely alias prior H1 rows
+PASS B04 provisional physical union has 4,588 rows
+PASS B05 provisional physical union is single-valued
+PASS B06 writer rule input/output contents are only H0/H1
+PASS B07 writer source is 69 supplied records plus incoming port
+PASS B08 fixed 62-record writer cage has trivial stabilizer
+PASS B09 all 4,608 writer states have exact serial frontier :: []
+PASS B10 all word writers have 4,352 edges and 256 terminals :: (4352, 256)
+
+===============================================================================
+C - Directional multiword match to physical rule port
+===============================================================================
+PASS C01 48-bit stream uses six ordered eight-bit slots
+PASS C02 stream comparator source has 193 supplied H0/H1 records
+PASS C03 stream uses an existing Cycle-81 equality row
+PASS C04 every one-role substitution in every full row stops quietly :: []
+PASS C05 no substituted full row reaches the output writer
+
+===============================================================================
+D - Three hardest rows: six words to exact output word
+===============================================================================
+PASS D01 each full row has exactly 66 states and 65 edges :: (198, 195, 3)
+PASS D02 all three end-to-end physical frontiers are exact :: []
+PASS D03 terminal words are exactly the three selected outputs
+PASS D04 each pipeline has 262 supplied source records
+PASS D05 each pipeline appends 48 rule-port certificates plus 17 output records
+
+===============================================================================
+E - Covariance, achieved boundary, and exact residuals
+===============================================================================
+PASS E01 all 96 transformed pipeline controls have exact frontier :: []
+PASS E02 note exists and carries authority none
+PASS E03 note says every harness and program is supplied
+PASS E04 note names open-direction residual
+PASS E05 note names stream-routing residual
+PASS E06 note names program-bank residual
+PASS E07 note names seed-growth residual
+PASS E08 note scopes the output result to an incoming physical port
+PASS E09 note denies foundation and axiom effects
+
+PROGRAMS=198 SLOT_BITS=48 EMPTY_WORDS=1 SIX_ROWS=3
+OUTPUT_CANONICAL=5 OUTPUT_RAW=48 PHYSICAL_UNION_RAW=4588
+PIPELINE_SOURCE=262 PIPELINE_ADDITIONS=65
+SUMMARY: 37 PASS / 0 FAIL

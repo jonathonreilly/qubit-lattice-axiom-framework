@@ -1,0 +1,66 @@
+
+===============================================================================
+A - Literal Cycle-112 writer and exact C93/C95 rows
+===============================================================================
+FAIL A01 Cycle-113 note exists
+PASS A02 new completion support is 11 canonical / 264 raw rows :: canonical=11 raw=264
+PASS A03 new rows are disjoint from every selected predecessor subset
+PASS A04 selected 11,186-row union is single-valued and alphabet-closed :: raw=11186 multi=0 missing=[]
+PASS A05 centre is the literal inherited Cycle-93 H1 five-record row :: (((-1, 0, 0), 'H1'), ((0, -1, 0), 'H1'), ((0, 0, -1), 'H0'), ((0, 0, 1), 'H1'), ((0, 1, 0), 'H1'))
+PASS A06 alternate decision is the exact inherited Cycle-95 AUX row :: (((-1, 0, 0), 'H0'), ((0, 0, -1), 'T_H0'), ((0, 1, 0), 'T_H1'))
+PASS A07 alternate launch is the exact inherited Cycle-95 A_0_0 row :: (((-1, 0, 0), 'H0'), ((0, 0, 1), 'LAUNCH_A'), ((0, 1, 0), 'AUX'), ((1, 0, 0), 'H0'))
+
+===============================================================================
+B - Full positive growth and bounded alternate completion
+===============================================================================
+PASS B01 Cycle-112 writer replaces the provisional zipper wholesale
+PASS B02 exact positive corpus has 69 zero-added-source writes
+PASS B03 every full-growth schedule reaches one complete positive terminal :: states=77336 edges=452018 max=11
+PASS B04 positive terminal is quiet except for the inherited rail :: {(-2, 1, 1): frozenset({'R_C02'})}
+PASS B05 typed H0 control reaches one complete 11-write alternate terminal :: states=22 edges=31
+PASS B06 alternate terminal is quiet except for the inherited rail :: {(-2, 1, 1): frozenset({'R_C02'})}
+PASS B07 LAUNCH_A forces exactly two local R_C02 and two side-guard images
+
+===============================================================================
+C - Lawful histories and comparison with Cycle 112/115 completion
+===============================================================================
+PASS C01 literal Cycle-114 union remains single-valued :: raw=11258
+PASS C02 Cycle-114 union has exactly one lawful H1 and one lawful H0 terminal :: states=115160 edges=686514 sizes=(54, 69) labels=Counter({'H0_REJECT': 1, 'H1_COMPLETION': 1}) bad=()
+PASS C03 lawful H1 completes the writer/cone while lawful H0 stops at the earlier reject
+PASS C04 Cycle-112/Cycle-115 raw comparison exposes exactly two rotated conflict classes :: raw=11282 conflicts=48 outputs=Counter({frozenset({'T_H0', 'R_A10'}): 24, frozenset({'LAUNCH_A', 'T_N1'}): 24})
+PASS C05 physical-site comparison exposes the alternate-completion boundary :: positive={(5, 5, 2): ('T_H1', 'T_H2')} alternate={(5, 5, 2): ('T_H1', 'T_H2'), (4, 4, 2): ('H0', 'H1'), (5, 4, 2): ('AUX', 'T_G0'), (5, 3, 3): ('LAUNCH_A', 'T_N1'), (5, 3, 2): ('A_0_0', 'R_B11')} c115={(5, 4, 1): ('T_H0', 'R_A10')}
+
+===============================================================================
+D - 96-append rail, long tail, and locality product
+===============================================================================
+PASS D01 all four positive/alternate histories retain 96 exact rail appends :: []
+PASS D02 Cycle-113 support is rail-separated with zero 97-prefix aliases :: distance=8 hits=[]
+PASS D03 exact positive 97-prefix product is computed :: states=7501592 edges=51270002
+PASS D04 101 complete late slices remain exact :: []
+
+===============================================================================
+E - Wrong-word, wrong-status-role, and stopped-history controls
+===============================================================================
+PASS E01 all eight bit flips plus wrong VALID/READY stop before writer/cone :: []
+PASS E02 stopped-history census remains pinned :: [(1080, 3522, (30,)), (920, 2938, (29,)), (760, 2354, (28,)), (520, 1438, (27,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]
+PASS E03 all ten stopped histories retain 96 exact rail appends :: []
+PASS E04 D3 role controls expose only H0/H1 status or the separate ALL-to-R1 front :: []
+
+===============================================================================
+F - Proper-cubic covariance and bounded claim discipline
+===============================================================================
+PASS F01 all 268,464 proper-cubic raw images preserve output :: []
+PASS F02 positive/alternate/stopped terminal rotations expose only next rail :: []
+FAIL F03 note names positive history and alternate history
+FAIL F04 note names Cycle 112 writer-only surface
+FAIL F05 note compares Cycle 115 completion
+FAIL F06 note carries N1-N8 discipline
+FAIL F07 note avoids reusable/addressable overclaim
+FAIL F08 note makes no axiom addition
+PASS F09 Cycle 113 writes only runner and review note
+
+NEW_CANONICAL=11 NEW_RAW=264 UNION_RAW=11186 POSITIVE_WRITES=69
+POSITIVE_STATES=77336 POSITIVE_EDGES=452018 ALTERNATE_STATES=22 ALTERNATE_EDGES=31
+C114_STATES=115160 C114_EDGES=686514 PRODUCT_STATES=7501592 PRODUCT_EDGES=51270002
+PASS=29 FAIL=7
+RESULT=FAIL

@@ -1,0 +1,62 @@
+INPUT_BINDING: exact companion note verified
+PASS e1 × e2 is +e3
+PASS r=4 1-seed occupies +e2
+PASS r=4 1-seed dest at +e2 is +e3
+PASS r=4 1-seed does not occupy +e1
+r=4 fresh second dest=(1, 0, 0) n8=0 fills_y0=0
+PASS r=4 fresh second dest=(1, 0, 0) fills no 8/8 cube
+r=4 fresh second dest=(-1, 0, 0) n8=0 fills_y0=0
+PASS r=4 fresh second dest=(-1, 0, 0) fills no 8/8 cube
+r=4 fresh second dest=(0, 1, 0) n8=32 fills_y0=1
+PASS r=4 fresh second dest=(0, 1, 0) fills geometric y=0 sandwich
+r=4 fresh second dest=(0, -1, 0) n8=32 fills_y0=1
+PASS r=4 fresh second dest=(0, -1, 0) fills geometric y=0 sandwich
+r=4 fresh second dest=(0, 0, 1) n8=0 fills_y0=0
+PASS r=4 fresh second dest=(0, 0, 1) fills no 8/8 cube
+r=4 fresh second dest=(0, 0, -1) n8=0 fills_y0=0
+PASS r=4 fresh second dest=(0, 0, -1) fills no 8/8 cube
+PASS r=4 fresh +hop and -hop occupancy sets equal
+PASS r=4 fresh +hop candidate occupies +e1 with dest -e1
+PASS r=4 fresh -hop candidate occupies +e1 with dest +e1
+PASS r=4 +e2 belongs to both fresh candidate and separate baseline
+PASS r=6 1-seed occupies +e2
+PASS r=6 1-seed dest at +e2 is +e3
+PASS r=6 1-seed does not occupy +e1
+r=6 fresh second dest=(1, 0, 0) n8=0 fills_y0=0
+PASS r=6 fresh second dest=(1, 0, 0) fills no 8/8 cube
+r=6 fresh second dest=(-1, 0, 0) n8=0 fills_y0=0
+PASS r=6 fresh second dest=(-1, 0, 0) fills no 8/8 cube
+r=6 fresh second dest=(0, 1, 0) n8=88 fills_y0=1
+PASS r=6 fresh second dest=(0, 1, 0) fills geometric y=0 sandwich
+r=6 fresh second dest=(0, -1, 0) n8=88 fills_y0=1
+PASS r=6 fresh second dest=(0, -1, 0) fills geometric y=0 sandwich
+r=6 fresh second dest=(0, 0, 1) n8=0 fills_y0=0
+PASS r=6 fresh second dest=(0, 0, 1) fills no 8/8 cube
+r=6 fresh second dest=(0, 0, -1) n8=0 fills_y0=0
+PASS r=6 fresh second dest=(0, 0, -1) fills no 8/8 cube
+PASS r=6 fresh +hop and -hop occupancy sets equal
+PASS r=6 fresh +hop candidate occupies +e1 with dest -e1
+PASS r=6 fresh -hop candidate occupies +e1 with dest +e1
+r=6 completed-baseline sites omitted by fresh candidates: plus=413 minus=413
+PASS r=6 each fresh candidate omits 413 baseline sites, incompatible with no-erasure continuation
+PASS r=6 +e2 belongs to both fresh candidate and separate baseline
+PASS r=8 1-seed occupies +e2
+PASS r=8 1-seed dest at +e2 is +e3
+PASS r=8 1-seed does not occupy +e1
+r=8 fresh second dest=(1, 0, 0) n8=0 fills_y0=0
+PASS r=8 fresh second dest=(1, 0, 0) fills no 8/8 cube
+r=8 fresh second dest=(-1, 0, 0) n8=0 fills_y0=0
+PASS r=8 fresh second dest=(-1, 0, 0) fills no 8/8 cube
+r=8 fresh second dest=(0, 1, 0) n8=164 fills_y0=1
+PASS r=8 fresh second dest=(0, 1, 0) fills geometric y=0 sandwich
+r=8 fresh second dest=(0, -1, 0) n8=164 fills_y0=1
+PASS r=8 fresh second dest=(0, -1, 0) fills geometric y=0 sandwich
+r=8 fresh second dest=(0, 0, 1) n8=0 fills_y0=0
+PASS r=8 fresh second dest=(0, 0, 1) fills no 8/8 cube
+r=8 fresh second dest=(0, 0, -1) n8=0 fills_y0=0
+PASS r=8 fresh second dest=(0, 0, -1) fills no 8/8 cube
+PASS r=8 fresh +hop and -hop occupancy sets equal
+PASS r=8 fresh +hop candidate occupies +e1 with dest -e1
+PASS r=8 fresh -hop candidate occupies +e1 with dest +e1
+PASS r=8 +e2 belongs to both fresh candidate and separate baseline
+TOTAL: PASS=41 FAIL=0

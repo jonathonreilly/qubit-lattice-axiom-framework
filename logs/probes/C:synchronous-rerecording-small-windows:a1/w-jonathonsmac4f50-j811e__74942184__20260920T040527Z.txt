@@ -1,0 +1,27 @@
+A1 the rule at x draws a with probability prod_{y in N(x)} W(a, s_y) / Z_x(s), and Z_x depends only on the
+A1 neighbours, which the move does not touch. The static law's ratio between s and s with x set to a is
+A1   pi(s)/pi(s^{x->a}) = prod_{y in N(x)} W(s_x, s_y) / prod_{y in N(x)} W(a, s_y),
+A1 so pi(s) P(s -> s^{x->a}) = (1/N) prod_y W(s_x,s_y) prod_y W(a,s_y) / Z_x, which is symmetric under
+A1 exchanging s_x and a: detailed balance holds identically in (p,q,r), for any neighbour multiset.
+A1 2x2 torus weights (3,1,2): exhaustive detailed balance over all 1296 states, 25920 moves: violations 0
+A1 2x2x2 torus weights (3,1,2): exact detailed balance on 2510 random moves (seeded) out of 1679616 states: violations 0
+A1 2x2 torus weights (5,2,4): exhaustive detailed balance over all 1296 states, 25920 moves: violations 0
+A1 2x2x2 torus weights (5,2,4): exact detailed balance on 2510 random moves (seeded) out of 1679616 states: violations 0
+A2 the 2x2 torus is bipartite: sites (0,0),(1,1) on one sublattice, (0,1),(1,0) on the other, and every
+A2 neighbour of a site lies on the other sublattice (twice). A synchronous re-draw therefore makes the new
+A2 A-values depend only on the old B-values and vice versa, so the chain maps product measures to product
+A2 measures and its unique stationary law (all transitions are positive) is a product mu(A) nu(B).
+A2 sublattice A = [(0, 0), (1, 1)], B = [(0, 1), (1, 0)]
+A2 weights (3,1,2): mu solves mu K = mu exactly (K = M_AB M_BA): True; sum mu = 1, sum nu = 1
+A2 weights (3,1,2): the product law is stationary for the full 1296-state chain (worst deviation over 40 sampled targets: 0)
+A2 weights (3,1,2): pi_sync equals prod_x Z_x(s) normalised: True
+A3 weights (3,1,2): TV(synchronous stationary law, static law) = 505370471/1147076748 = 0.440573; TV(prod_x Z_x, static law) = 0.440573
+A2 weights (5,2,4): mu solves mu K = mu exactly (K = M_AB M_BA): True; sum mu = 1, sum nu = 1
+A2 weights (5,2,4): the product law is stationary for the full 1296-state chain (worst deviation over 40 sampled targets: 0)
+A2 weights (5,2,4): pi_sync equals prod_x Z_x(s) normalised: True
+A3 weights (5,2,4): TV(synchronous stationary law, static law) = 16118013809/44806080366 = 0.359728; TV(prod_x Z_x, static law) = 0.359728
+A4 the same three checks with the SET convention (each distinct neighbour counted once, so a site on the
+A4 2x2 torus has two neighbours and the static law has four bonds), in case the paired run reads it that way:
+A4 weights (3,1,2) (set convention): detailed balance violations 0 of 25920 moves; pi_sync = prod_x Z_x normalised: True; TV against the static law = 529411/2249868 = 0.235308
+A4 weights (5,2,4) (set convention): detailed balance violations 0 of 25920 moves; pi_sync = prod_x Z_x normalised: True; TV against the static law = 2708336741/13074694566 = 0.207143
+SUMMARY: asynchronous single-site re-recording satisfies detailed balance with the static law identically in (p,q,r) - verified exactly over all 1296 states and 25920 moves on the 2x2 torus and on 2510 seeded random moves of the 2x2x2 torus at both weight sets; the synchronous chain on the bipartite 2x2 torus has a product stationary law mu(A) nu(B) which equals prod_x Z_x(s) normalised exactly, at a total-variation distance 505370471/1147076748 = 0.440573 (3,1,2) and 16118013809/44806080366 = 0.359728 (5,2,4) from the static law - not zero; all three expectations hold, under both neighbour conventions; 4s

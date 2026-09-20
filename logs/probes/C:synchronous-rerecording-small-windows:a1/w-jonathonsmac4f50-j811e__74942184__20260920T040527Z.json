@@ -1,0 +1,32 @@
+{
+ "task": "C:synchronous-rerecording-small-windows:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j811e",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/synchronous-rerecording-small-windows/w-jonathonsmac4f50-j811e/run.py",
+ "seed": 77127,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "74942184",
+ "started_utc": "20260920T040527Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "asynchronous single-site re-recording satisfies detailed balance with the static law identically in (p,q,r) - verified exactly over all 1296 states and 25920 moves on the 2x2 torus and on 2510 seeded random moves of the 2x2x2 torus at both weight sets; the synchronous chain on the bipartite 2x2 torus has a product stationary law mu(A) nu(B) which equals prod_x Z_x(s) normalised exactly, at a total-variation distance 505370471/1147076748 = 0.440573 (3,1,2) and 16118013809/44806080366 = 0.359728 (5,2,4) from the static law - not zero; all three expectations hold, under both neighbour conventions; 4s"
+ },
+ "review": "run.py verifies exactly in rational arithmetic that asynchronous single-site re-recording satisfies detailed balance with the six-axis static law - no violation in all 25920 moves over all 1296 states of the 2x2 torus nor in 2510 seeded exact moves of the 2x2x2 torus, at weights (3,1,2) and (5,2,4) and under both neighbour conventions - that the synchronous chain on the bipartite 2x2 torus has a product stationary law mu(A) nu(B), obtained exactly from the 36x36 sublattice matrices, which equals prod_x Z_x(s) normalised entry for entry over all 1296 states, and that this law sits at total-variation distance 505370471/1147076748 = 0.440573 and 16118013809/44806080366 = 0.359728 from the static law (0.235308 and 0.207143 under the set convention), so all three expectations hold and there is no HIT.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): Exact finite checks for the re-recording derivation (README section 8). Six-axis menu, weights W(a,b) = p, q, r (same, opposite, orthogonal). (1) Asynchronous single-site re-recording with the covariant rule on the 2x2 torus and the 2x2x2 torus: build the transition matrix exactly (rational weights (3,1,2), (5,2,4)) and verify detailed balance with the static law. (2) Synchronous re-recording (every site re-drawn at once from its neighbours' current records): build the chain on the 2x2 torus (6^4 states) exactly, compute its stationary law, and test the claim pi(s) prop. to prod_x Z_x(s), Z_x the normalizer of the rule at x; if the torus is bipartite note the two-sublattice structure. (3) Total-variation distance between that law and the static law. Expectation: (1) holds; (2) holds; (3) is not zero. DELIVERABLE in your unit worktree: probes/work/compute/synchronous-rerecording-small-windows/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/synchronous-rerecording-small-windows/<name>/run.py\"",
+ "stdout_sha256": "60e04e3f479bfa69d59f0eaaee6aadec71c494e448a1030b87d3bcf498199663",
+ "stdout_tail": " the product law is stationary for the full 1296-state chain (worst deviation over 40 sampled targets: 0)\nA2 weights (5,2,4): pi_sync equals prod_x Z_x(s) normalised: True\nA3 weights (5,2,4): TV(synchronous stationary law, static law) = 16118013809/44806080366 = 0.359728; TV(prod_x Z_x, static law) = 0.359728\nA4 the same three checks with the SET convention (each distinct neighbour counted once, so a site on the\nA4 2x2 torus has two neighbours and the static law has four bonds), in case the paired run reads it that way:\nA4 weights (3,1,2) (set convention): detailed balance violations 0 of 25920 moves; pi_sync = prod_x Z_x normalised: True; TV against the static law = 529411/2249868 = 0.235308\nA4 weights (5,2,4) (set convention): detailed balance violations 0 of 25920 moves; pi_sync = prod_x Z_x normalised: True; TV against the static law = 2708336741/13074694566 = 0.207143\nSUMMARY: asynchronous single-site re-recording satisfies detailed balance with the static law identically in (p,q,r) - verified exactly over all 1296 states and 25920 moves on the 2x2 torus and on 2510 seeded random moves of the 2x2x2 torus at both weight sets; the synchronous chain on the bipartite 2x2 torus has a product stationary law mu(A) nu(B) which equals prod_x Z_x(s) normalised exactly, at a total-variation distance 505370471/1147076748 = 0.440573 (3,1,2) and 16118013809/44806080366 = 0.359728 (5,2,4) from the static law - not zero; all three expectations hold, under both neighbour conventions; 4s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j811e",
+  "at_utc": "20260920T040531Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

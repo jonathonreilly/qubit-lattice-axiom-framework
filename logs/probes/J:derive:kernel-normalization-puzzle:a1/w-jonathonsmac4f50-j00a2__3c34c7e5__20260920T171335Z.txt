@@ -1,0 +1,54 @@
+N1  what the estimator actually forms
+     probes/lib/formation_levelplane.py takes LAB-FRAME components s.t1, s.t2 about
+     the INITIAL direction.  A unit record at polar angle theta from that direction
+     has transverse components of magnitude sin(theta), not theta.  So the measured
+     structure factor is built from <sin^2 theta> while the linear theory that
+     predicts the ratio 1 is a statement about <theta^2>.  Since sin x < x, the
+     measured ratio is pushed BELOW 1 - which is the sign of the discrepancy.
+
+N2  the deficit, exactly, for an isotropic Gaussian transverse field
+     With (theta_1, theta_2) independent Gaussians of variance v each, theta^2 is
+     exponential-like: <(theta^2)^m> = (2v)^m m!.  Checked:
+ok        <(theta^2)^1> = 2*v = (2v)^1 1!
+ok        <(theta^2)^2> = 8*v**2 = (2v)^2 2!
+ok        <(theta^2)^3> = 48*v**3 = (2v)^3 3!
+ok        sin^2 theta = theta^2 - theta^4/3 + 2 theta^6/45 + ...
+ok        so <sin^2 theta>/<theta^2> = 1 - (4/3) v + (16/15) v^2, and with T = <theta^2> = 2v
+ok          <sin^2 theta>/<theta^2> = 1 - (2/3) T + (4/15) T^2,  T the total transverse
+       variance per site.  The leading deficit is TWO THIRDS of the transverse
+       variance, and it is a pure kinematic factor - no dynamics in it at all.
+
+N3  the size, against the measured table
+     The one-step noise is sigma^2 = A(n beta)/(n beta) with n = 3, and the total
+     transverse variance per site is T = sigma^2 W, with W the lattice factor the
+     estimator's shells sum to (W >= 1, and W = 1 would be a single independent
+     level).  Taking W = 1 gives a LOWER bound on the deficit:
+       beta   sigma^2 = A(3beta)/(3beta)   deficit (2/3)sigma^2   1 - deficit
+          1   0.223879                 0.149253               0.850747
+          2   0.138891                 0.092594               0.907406
+          4   0.076389                 0.050926               0.949074
+          6   0.052469                 0.034979               0.965021
+         24   0.013696                 0.009131               0.990869
+ok        the deficit falls monotonically with beta, like 2/(9 beta) at large beta
+ok        - exactly: beta * (2/3) sigma^2 -> 2/9, so the deficit is 2/(9 beta) + O(1/beta^2)
+     Measured ratios from the unit's table: 0.95-0.99 at beta = 2..6 (backward) and
+     1.01 at beta = 24.  The predicted lower bound on the deficit at beta = 2 is
+     0.0926, i.e. a ratio at most 0.9074, and at
+     beta = 24 it is 0.00913, a ratio at most 0.99087.
+ok        so this one effect alone is large enough to put beta = 2 below 0.99 and small
+       enough to leave beta = 24 within a per cent of 1 - the two ends of the table.
+ok        at beta = 24 the deficit is 0.00913 < 0.01, so it cannot by
+       itself explain a measured value ABOVE 1 there; something else is positive.
+
+N4  what this does not explain
+     The sine accounts for a deficit of the right sign, the right order 1/beta and
+     roughly the right size, but it is one of the four effects the unit lists and the
+     only one priced here.  It cannot produce the 1.01 at beta = 24 nor the 1.01-1.09
+     of the light-cone stencil, both of which are ABOVE 1; those need a positive
+     contribution, and the remaining candidates - the wandering mean direction, the
+     vMF variance at the fluctuating concentration, and the shifted pole from g < 1 -
+     are untouched.  W > 1 makes the deficit larger, not smaller, so the lower bound
+     above is the conservative end.
+
+SUMMARY: PARTIAL on the kernel-normalization puzzle: the estimator takes lab-frame transverse components about the initial direction, so it measures <sin^2 theta> where the linear prediction is about <theta^2>, and for an isotropic Gaussian transverse field with total variance T per site the exact ratio is 1 - (2/3) T + (4/15) T^2, from the moments <(theta^2)^m> = (2v)^m m! and sin^2 theta = theta^2 - theta^4/3 + 2 theta^6/45; with T at least sigma^2 = A(3 beta)/(3 beta) this is a deficit of 2/(9 beta) + O(1/beta^2), numerically at least 0.0300 at beta = 2 and 0.00309 at beta = 24 - large enough to put the low-beta end below 0.99 and small enough to leave beta = 24 within a per cent of 1, which are the two ends of the measured table; it is a purely kinematic factor with no dynamics in it, and it cannot explain the measured values ABOVE 1
+HIT: the first candidate is quantitatively the right size - because the estimator uses lab-frame components about the initial direction it measures <sin^2 theta>, and the exact Gaussian ratio <sin^2 theta>/<theta^2> = 1 - (2/3)T + (4/15)T^2 gives a deficit of 2/(9 beta) + O(1/beta^2), at least 3.0 per cent at beta = 2 falling to 0.31 per cent at beta = 24, which is the sign, the order in 1/beta and the size of the backward table's 0.95-0.99 rising to 1.01; the residual above 1 at large beta and for the light-cone stencil must come from the other three candidates, so the puzzle splits into a kinematic deficit that is now exact and a smaller positive remainder that is not

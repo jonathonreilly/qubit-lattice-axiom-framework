@@ -1,0 +1,72 @@
+P1  the two set functions in mu(A) = z^|A| Z_A
+     mu(A) = z^|A| Z_A, so log mu = |A| log z + log Z_A.  The site count is MODULAR:
+       |A u B| + |A n B| = |A| + |B|   exactly, so the fugacity contributes nothing to
+     the lattice condition either way.  The edge set is SUPERMODULAR:
+       E(A) u E(B) is contained in E(A u B), and E(A) n E(B) = E(A n B),
+     the second because an edge with both ends in A and both ends in B has both ends
+     in A n B.  Checked by enumeration:
+ok        ring of 6: over all 4096 ordered pairs - 0 count failures, 0 union failures, 0 intersection failures
+ok        3x3 torus: over all 262144 ordered pairs - 0 count failures, 0 union failures, 0 intersection failures
+ok        and the union can be STRICT: on a ring of 4, E(A u B) has 4 edges against 2 in E(A) u E(B)
+
+P2  the coupling vector
+     Write J(A)_e = beta if e is inside A and 0 otherwise, so that Z_A is the Ising
+     partition function at couplings J(A), times 2 for every site outside A.  Then P1
+     says exactly
+       J(A n B) = J(A) ^ J(B)        (componentwise minimum), and
+       J(A u B) >= J(A) v J(B)       (componentwise maximum), sometimes strictly.
+ok        ring of 6: both hold over all 4096 ordered pairs (0 failures)
+ok        3x3 torus: both hold over all 262144 ordered pairs (0 failures)
+
+P3  Griffiths' second inequality, on this model, checked exactly
+     ASSUMED as a theorem for the ferromagnetic Ising model: for J >= 0,
+       d^2 log Z / dJ_e dJ_f  =  <sigma_e sigma_f> - <sigma_e><sigma_f>  >=  0,
+     i.e. log Z is SUPERMODULAR in the coupling vector, and dlog Z/dJ_e = <sigma_e>
+     >= 0 makes it increasing.  Verified here on every ordered pair of edges:
+ok        ring of 5 at w = 2: all 25 pairs have <s_e s_f> - <s_e><s_f> >= 0, and all 5 have <s_e> >= 0
+ok        ring of 6 at w = 3: all 36 pairs have <s_e s_f> - <s_e><s_f> >= 0, and all 6 have <s_e> >= 0
+ok        2x2 torus at w = 2: all 64 pairs have <s_e s_f> - <s_e><s_f> >= 0, and all 8 have <s_e> >= 0
+     (the 2x2 torus has doubled bonds; it is included because the doubling is exactly
+     the degenerate case where a naive proof would be tempted to divide by zero)
+
+P4  the lattice condition, assembled
+     log mu(A) = |A| log z + log Z_A, and Z_A = 2^{N - |A|} Zising(J(A)).  Then
+       log mu(A u B) + log mu(A n B)
+         = (|A u B| + |A n B|) log z + (2N - |A| - |B|) log 2
+           + log Zising(J(A u B)) + log Zising(J(A n B))       [P1: counts are modular]
+         >= ... + log Zising(J(A) v J(B)) + log Zising(J(A) ^ J(B))
+                                                    [P2 and Zising increasing in J]
+         >= ... + log Zising(J(A)) + log Zising(J(B))         [P3: supermodularity]
+         = log mu(A) + log mu(B).
+     So mu is log-supermodular: the FKG lattice condition HOLDS, for every graph and
+     every z > 0 and beta >= 0.  a4 checked this on four instances; it is a theorem.
+     Re-verified on one instance not in a4's list:
+ok        ring of 5, z = 3/2, w = 2: 1024 ordered pairs, 0 failures
+
+P5  where the proof stops - and it stops at the menu the unit asks about
+     Step P3 is Griffiths' SECOND inequality.  It is a theorem for the Ising model -
+     the two-valued menu of block 36's runner - and for a few other single-site
+     measures, but it is NOT available in general for vector spins: for the O(3)
+     model, which is the SPHERE menu this unit is about, the second Griffiths
+     inequality is not known and is believed false in general.  Everything else in P4
+     is menu-independent: P1 and P2 are pure set combinatorics, and the monotonicity
+     of Z in the couplings holds for any ferromagnetic menu.  So:
+       two-valued menu:  rho_2 >= rho^2 is a THEOREM (modulo GKS-II and FKG);
+       sphere menu:      rho_2 >= rho^2 rests on a4's numerical evidence alone,
+                         and the one missing ingredient is named.
+     How far past Ising does the GKS-II step survive?  Checked for a q-state menu
+     (weight w if the two contents agree, 1 if they differ), with the centred edge
+     variable sigma_e = 1[agree] - 1/q, on a ring of 5:
+ok          q = 2: all 25 edge pairs have non-negative covariance (0 negative)
+ok          q = 3: all 25 edge pairs have non-negative covariance (0 negative)
+ok          q = 4: all 25 edge pairs have non-negative covariance (0 negative)
+ok          q = 6: all 25 edge pairs have non-negative covariance (0 negative)
+     So the inequality itself survives every finite menu tested - which says the
+     obstruction for the sphere is about the CONTINUUM limit and the absence of a
+     proof there, not about a counterexample at small q.  That is the honest state:
+     a4's headline extends to the unit's own menu only
+       if a GKS-II analogue holds for the sphere, which is a real open question and
+       not a gap in the bookkeeping.
+
+SUMMARY: PARTIAL - the FKG lattice condition for the occupation marginal mu(A) = z^|A| Z_A of the law with vacancies is PROVED for the two-valued menu, modulo Griffiths' second inequality: the site count is modular and the edge set supermodular with E(A n B) = E(A) n E(B) and E(A) u E(B) contained in E(A u B) (both verified over all ordered pairs of subsets of a ring of 6 and a 3x3 torus), so the coupling vectors satisfy J(A n B) = J(A) ^ J(B) and J(A u B) >= J(A) v J(B); since log Z is increasing and supermodular in the couplings - the latter being GKS-II, checked here on every ordered pair of edges of three small graphs - log mu is supermodular, which upgrades attempt a4's four exhaustive instance checks to a theorem for every graph, every z > 0 and every beta >= 0; but GKS-II is an Ising theorem and is not available for O(3) spins, so for the SPHERE menu that this unit is actually about, rho_2 >= rho^2 still rests on a4's numerics
+HIT: the lattice condition behind rho_2 >= rho^2 factors into three pieces - modularity of the site count, supermodularity of the edge set with E(A n B) = E(A) n E(B) exactly, and supermodularity of log Z in the couplings - of which only the third carries any physics, and it is exactly Griffiths' second inequality; this proves attempt a4's checked hypothesis for the two-valued menu at every graph, fugacity and coupling, and simultaneously locates the obstruction for the sphere menu the unit asks about, where GKS-II is not available for vector spins - so the half-filling floor is provably removable for the two-valued menu and only numerically removable for the sphere

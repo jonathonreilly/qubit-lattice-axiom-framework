@@ -1,0 +1,34 @@
+{
+ "task": "R:formation_rate_law_class_reduction_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "formation",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/formation_rate_law_class_reduction_2026_07_08.py",
+ "seed": 99470,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c058f20",
+ "started_utc": "20260920T101750Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2791b632f19997dc9506236a7a849cfdc17d64479e75b9fe5707c8adeb2e296c",
+ "stdout_tail": "inear6/linear:A0=5,F0=5,g=1,response=-0.2,fd_error=4.662e-13 | linear6/square_root:A0=5,F0=2.2360679775,g=0.5,response=-0.1,fd_error=7.595e-13 | linear6/quadratic:A0=5,F0=25,g=2,response=-0.4,fd_error=5.770e-13 | linear6/saturating:A0=5,F0=0.833333333333,g=0.166666666667,response=-0.0333333333333,fd_error=6.698e-13 | linear6/exponential:A0=5,F0=0.993262053001,g=0.0339182745315,response=-0.0067836549063,fd_error=3.505e-14 | convex6/linear:A0=4.16666666667,F0=4.16666666667,g=1,response=-0.4,fd_error=3.993e-13 | convex6/square_root:A0=4.16666666667,F0=2.04124145232,g=0.5,response=-0.2,fd_error=2.507e-13 | convex6/quadratic:A0=4.16666666667,F0=17.3611111111,g=2,response=-0.8,fd_error=1.069e-12 | convex6/saturating:A0=4.16666666667,F0=0.806451612903,g=0.193548387097,response=-0.0774193548387,fd_error=4.353e-13 | convex6/exponential:A0=4.16666666667,F0=0.984496146401,g=0.0656167017332,response=-0.0262466806933,fd_error=1.147e-13 | horizon6/linear:A0=5,F0=5,g=1,response=-0.8,fd_error=3.842e-13 | horizon6/square_root:A0=5,F0=2.2360679775,g=0.5,response=-0.4,fd_error=5.556e-13 | horizon6/quadratic:A0=5,F0=25,g=2,response=-1.6,fd_error=1.598e-12 | horizon6/saturating:A0=5,F0=0.833333333333,g=0.166666666667,response=-0.133333333333,fd_error=9.634e-14 | horizon6/exponential:A0=5,F0=0.993262053001,g=0.0339182745315,response=-0.0271346196252,fd_error=6.059e-13\nCHECKS: chain_rule=True max_identity_error=1.598e-12 closed_forms=True max_closed_form_error=0.000e+00\nTOTAL: CHAIN-RULE-VALIDATED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T101751Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

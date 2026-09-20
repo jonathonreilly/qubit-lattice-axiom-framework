@@ -1,0 +1,35 @@
+{
+ "task": "R:formation_rate_ruler_constant_mode_fixes_kappa_one_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "formation",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/formation_rate_ruler_constant_mode_fixes_kappa_one_check_2026_09_04.py",
+ "seed": 99471,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c058f20",
+ "started_utc": "20260920T101751Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bf16cd8d093be19237ec89e974bee422e4cb45ad68ba7d8dfab20ab37a2797b3",
+ "stdout_tail": "massless/acceleration-ratio: parent H(1,1) -4.01067 -4.00966 0.9997 | declared H(2,1) -4.02984 -8.01583 1.9891 | rate AM (1,1) -4.03702 -8.04940 1.9939 | rate GM (1,1) -4.03702 -8.04940 1.9939 | rate AM (2,1/2) -4.03343 -8.03262 1.9915\nPASS E2 Finite packet acceleration ratios (two-width Richardson assumption): {'parent H(1,1)': (-4.010671158787365, -4.009662985668466, 0.999748627329695), 'declared H(2,1)': (-4.029838207610374, -8.015831514575122, 1.9891199352463271), 'rate AM (1,1)': (-4.0370209336698855, -8.049399466064227, 1.993895894601383), 'rate GM (1,1)': (-4.037020417670226, -8.049396814930311, 1.9938954927494863), 'rate AM (2,1/2)': (-4.033432362597005, -8.032622408498003, 1.9915103778574437)}; not an exact curvature or light-bending observable.\nPASS E3 Declared rest packets: rate {0.5: -4.063699535651181, 2.0: -4.011271084681759, 1.0: -4.0370209336698855}, linear {0.5: -4.056835419040781, 2.0: -4.001861047383346, 1.0: -4.029838207610374}; spread=0.052428, gap=0.009410. Residual origin and all-mass universality not proved.\nPASS E4 Two-field acceleration-ratio mismatch 0.0047760->0.0003330, reduction 14.3442; small-field ratios 1.9845831,1.9842502; maxPhi=0.0960. Not a convergence proof.\nPASS F1 Stipulated local tick arithmetic only: r/r0=Phi_v + 1, derivative=1, value(-.1)=0.9000; no clock/carrier authority.\nSUMMARY: finite conditional identities and declared-fixture calculations only; physical source, carrier, metric and cosmology remain open.\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T101759Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/formation_rate_ruler_constant_mode_fixes_kappa_one_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

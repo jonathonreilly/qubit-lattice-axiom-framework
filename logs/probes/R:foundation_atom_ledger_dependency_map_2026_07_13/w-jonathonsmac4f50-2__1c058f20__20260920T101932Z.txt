@@ -1,0 +1,21 @@
+
+===============================================================================
+A - Authority and atom contract
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/foundation_atom_ledger_dependency_map_2026_07_13.py", line 213, in <module>
+    main()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/foundation_atom_ledger_dependency_map_2026_07_13.py", line 197, in main
+    source_contract()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/foundation_atom_ledger_dependency_map_2026_07_13.py", line 55, in source_contract
+    note_raw = NOTE.read_text()
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/FOUNDATION_ATOM_LEDGER_AND_DEPENDENCY_MAP_NOTE_2026-07-13.md'

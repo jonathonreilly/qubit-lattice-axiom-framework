@@ -1,0 +1,23 @@
+FAIL the Cycle-257 synthesis note exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/FOLLOWUP_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE257_NOTE_2026-07-17.md
+FAIL all Cycle-230 and Cycle-247-through-256 source notes exist :: ('LOCAL_ROUGH_PUNCTURE_ODD_SECTOR_CYCLE247_NOTE_2026-07-17.md', 'PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', 'COHERENT_GAUGE_FRAME_AUTONOMOUS_COMPILER_CYCLE249_NOTE_2026-07-17.md', 'ROUGH_TERMINAL_SUBSYSTEM_GAUGE_FACTORIZATION_CYCLE251_NOTE_2026-07-17.md', 'COHERENT_EVEN_ODD_SECTOR_JOIN_CYCLE252_NOTE_2026-07-17.md', 'ROUGH_SUBSYSTEM_OPERATIONAL_EQUIVALENCE_CYCLE253_NOTE_2026-07-17.md', 'MIXED_PAULI_SELECTOR_CANONICAL_PAIR_TOURNAMENT_CYCLE254_NOTE_2026-07-17.md', 'CAR_COMPILER_RECORD_CAUSAL_DEPTH_BRIDGE_CYCLE255_NOTE_2026-07-17.md', 'INCIDENT_CAR_AUXILIARY_DRESSING_CYCLE256_NOTE_2026-07-17.md')
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/followup_m64_physical_m2_compiler_tournament_synthesis_cycle257_2026_07_17.py", line 408, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/followup_m64_physical_m2_compiler_tournament_synthesis_cycle257_2026_07_17.py", line 398, in main
+    source_contracts()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/followup_m64_physical_m2_compiler_tournament_synthesis_cycle257_2026_07_17.py", line 269, in source_contracts
+    text = normalized(NOTES / name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/followup_m64_physical_m2_compiler_tournament_synthesis_cycle257_2026_07_17.py", line 204, in normalized
+    return " ".join(path.read_text(encoding="utf-8").lower().split())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md'

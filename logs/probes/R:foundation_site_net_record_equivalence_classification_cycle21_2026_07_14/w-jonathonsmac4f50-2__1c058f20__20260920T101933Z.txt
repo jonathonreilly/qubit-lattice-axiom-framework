@@ -1,0 +1,66 @@
+
+===============================================================================
+A - Authority and source contract
+===============================================================================
+PASS A note exists
+PASS A note is authority-free
+PASS A note does not amend an axiom
+PASS A note does not select a law
+PASS A named site M2 is present in foundation
+PASS A max one record per site is present
+PASS A qubit basis neutrality is present
+
+===============================================================================
+B - Exhaustive two-qubit symplectic census
+===============================================================================
+PASS B Sp(4,2) has 720 elements
+PASS B site-plane normalizer has 72 elements
+PASS B 648 symplectic maps are entangling factor maps
+PASS B full Clifford quotient has 11520 elements
+PASS B site-net Clifford quotient has 1152 elements
+
+===============================================================================
+C - Exact CZ and site-swap controls
+===============================================================================
+PASS C CZ is symplectic
+PASS C swap is symplectic
+PASS C CZ sends X1 to X1Z2
+PASS C CZ fixes Z1
+PASS C CZ sends X2 to Z1X2
+PASS C CZ fixes Z2
+PASS C CZ does not permute named site factors
+PASS C CZ preserves local Z support weight
+PASS C CZ enlarges X1 support weight
+PASS C swap permutes named site factors
+PASS C swap preserves record support weight
+
+===============================================================================
+D - Theorem, scope, and no-go contract
+===============================================================================
+PASS D required phrase is present: any star automorphism
+PASS D required phrase is present: site permutation followed by onsite unitary recodings
+PASS D required phrase is present: foundation-maximal site-record category
+PASS D required phrase is present: law-selected record category
+PASS D required phrase is present: full one-site m_2 record net
+PASS D required phrase is present: scalar-additive record readout
+PASS D required phrase is present: not automatically gauge
+PASS D required phrase is present: no axiom sentence follows
+PASS D required phrase is present: record-net closure
+PASS D required phrase is present: common complex-linear pu(2) recoding
+PASS D N1 section is present
+PASS D N2 section is present
+PASS D N3 section is present
+PASS D N4 section is present
+PASS D N5 section is present
+PASS D N6 section is present
+PASS D N7 section is present
+PASS D N8 section is present
+PASS D N7 keeps transported-net route live
+PASS D conclusion retains exact-law referent
+
+===============================================================================
+TOTAL
+===============================================================================
+PASS=43 FAIL=0
+RESULT: PASS
+BOUNDARY: maximal named-site record equivalence is factor permutation plus onsite recoding; larger quotients are law-relative

@@ -1,0 +1,38 @@
+{
+ "task": "R:foundation_atom_ledger_dependency_map_2026_07_13",
+ "type": "runner-reexecution",
+ "lane": "foundation",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/foundation_atom_ledger_dependency_map_2026_07_13.py",
+ "seed": 99572,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c058f20",
+ "started_utc": "20260920T101932Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e645774347a70439a46ef58aed76d3542c437d23e99591d5f4d74063347e605d",
+ "stdout_tail": "==============================================================\nA - Authority and atom contract\n===============================================================================\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/foundation_atom_ledger_dependency_map_2026_07_13.py\", line 213, in <module>\n    main()\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/foundation_atom_ledger_dependency_map_2026_07_13.py\", line 197, in main\n    source_contract()\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/foundation_atom_ledger_dependency_map_2026_07_13.py\", line 55, in source_contract\n    note_raw = NOTE.read_text()\n               ^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/FOUNDATION_ATOM_LEDGER_AND_DEPENDENCY_MAP_NOTE_2026-07-13.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T101932Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/FOUNDATION_ATOM_LEDGER_AND_DEPENDENCY_MAP_NOTE_2026-07-13.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T101932Z"
+ }
+}

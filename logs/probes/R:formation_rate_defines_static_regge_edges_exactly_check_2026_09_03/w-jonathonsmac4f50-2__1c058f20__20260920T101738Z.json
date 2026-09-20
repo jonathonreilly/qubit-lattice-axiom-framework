@@ -1,0 +1,35 @@
+{
+ "task": "R:formation_rate_defines_static_regge_edges_exactly_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "formation",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/formation_rate_defines_static_regge_edges_exactly_check_2026_09_03.py",
+ "seed": 99458,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c058f20",
+ "started_utc": "20260920T101738Z",
+ "elapsed_s": 11.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b3258484dc8e224ee1fbad1bbdec12e4f7319faefec75b91cd6801f8717111c6",
+ "stdout_tail": "rate|/|u_rate| = 0.340; |k|=1.00: |Q u_rate|/|u_rate| = 1.601; |k|=2.00: |Q u_rate|/|u_rate| = 5.960\n[PASS] T7a endpoint anchor/Fourier convention at every site and class of the declared 8-cubed fixture\n       max deviation 1.8e-15 on the 8^3 torus at k = 2pi(1,2,0)/8\n[PASS] T7b the landed NONLINEAR Regge action on the periodic 3^4 box, second-differenced along the supplied field, agrees numerically with the Bloch and tested-identity predictions in this one direction\n       finite difference -243.000674; Bloch -243.000000; identity -243.000000; S_R(flat) = 3.3e-12\n\nSUPPLIED, not derived: S_R, its orientation and G; the OS0 reading; l_tau = r/r_0; the\nworldline coupling; linear order; the rate law with kappa_r = 1; the record-count reading.\n[PASS] C1 actual full-gauge readout counterexample at non-axis k\n       gauge Q residual 3.111e-15; metric residual 0.280207928761; Phi_read (-1.734723475976807e-17-0.0157902820653779j); Psi_read (2.0750527619898866e-16+0.06135666284009611j)\n[PASS] C2 actual gauge-shifted edge map preserves response but differs from endpoint mean\n       map change 0.245862834033; Q change 3.259e-16; quadratic change 2.811e-16\n[PASS] C3 signed +2 Delta response and Phi=-4piG phi conversion\n       plus-sign error 4.129e-15; opposite-sign error 3.218214; bridge error 0.000e+00\n[PASS] C4 constant fields do not select an exponent\n       nu=0,1,2 constant-mode residuals [3.9719340927637685e-15, 8.866038879445227e-15, 2.0718856038725706e-14]\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T101750Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/formation_rate_defines_static_regge_edges_exactly_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

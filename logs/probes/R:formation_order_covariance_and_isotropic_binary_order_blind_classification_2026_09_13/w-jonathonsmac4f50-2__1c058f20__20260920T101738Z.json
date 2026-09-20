@@ -1,0 +1,35 @@
+{
+ "task": "R:formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "formation",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.py",
+ "seed": 99458,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c058f20",
+ "started_utc": "20260920T101738Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=41 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9906ff4244d9ff272ca2420e14e7f4fa4e021c5c38a0bdc805699bc887b5d5f0",
+ "stdout_tail": "s-first versus row-major differs on 44 of 64 configurations, TV 135/578\nPASS: rectangle-constant-one-law the constant rule is order-blind on the 2x3 window\nPASS: ising-varies-with-neighbours the declared Ising kernel varies with the recorded-neighbour values\nPASS: constant-does-not-vary the independent kernel is insensitive to nearest-neighbour conditions\nPASS: note-quotes-witness-numbers the note quotes the exact path3, plaquette, and 2x3 witness numbers\nPASS: note-no-order-selected the note selects neither a physical order nor a physical rule\nPASS: note-separating-clauses-not-adopted separating clauses are recorded as owner decisions and not adopted\nPASS: translation-lexicographic-counterexample lexicographic order is translation-invariant; finite samples control the written general proof\nPASS: null-prefix-unweighted-exchange-counterexample all-zero path laws agree although unreachable plus-prefix local products are 1/4 and 1/3\nPASS: star-positive-leaf-cancellation-through-six center-first and leaves-first joint factorizations checked for every binary leaf assignment through six neighbours\nper_element: exact binary probabilities and rational witness joints\nper_site: all 23 nonidentity proper cubic rotations move a tested seed\nper_mode: no Fourier-mode calculation is claimed\nper_block: path3, plaquette, 2x3 census and star controls through six neighbours\nlattice_wide: written rotation and exchange/star proofs; no infinite-volume formation-process claim\nTOTAL: PASS=41 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T101738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

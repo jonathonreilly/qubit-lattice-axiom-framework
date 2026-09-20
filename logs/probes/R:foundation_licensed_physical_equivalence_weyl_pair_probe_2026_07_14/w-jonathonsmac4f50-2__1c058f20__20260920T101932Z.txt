@@ -1,0 +1,178 @@
+
+===============================================================================
+A - Exact supplied spatial group
+===============================================================================
+PASS A proper signed-permutation group has 24 elements
+PASS A improper complement has 24 elements
+PASS A every supplied rotation has determinant +1
+PASS A every excluded mirror has determinant -1
+PASS A proper rotations preserve cardinal neighbors
+PASS A improper maps also preserve the graph but are outside named group
+PASS A proper cubic matrices are closed
+PASS A identity belongs to proper group
+
+===============================================================================
+B - Origin-free adjoint action, frame-dependent fourth root
+===============================================================================
+PASS B chi proper-cubic orbit has eight characters :: [(1, 1, 1), (1, 1, 3), (1, 3, 1), (1, 3, 3), (3, 1, 1), (3, 1, 3), (3, 3, 1), (3, 3, 3)]
+PASS B chi orbit is every +/- pi/2 corner
+PASS B chi full-cardinal stabilizer has order three
+PASS B only trivial and checkerboard characters are proper-cubic invariant :: [(0, 0, 0), (2, 2, 2)]
+PASS B chi squared is checkerboard parity
+PASS B origin (1, 0, 0) changes G only by one scalar
+PASS B origin (1, 0, 0) leaves Ad_G unchanged
+PASS B origin (1, 2, -1) changes G only by one scalar
+PASS B origin (1, 2, -1) leaves Ad_G unchanged
+PASS B origin (-2, 1, 3) changes G only by one scalar
+PASS B origin (-2, 1, 3) leaves Ad_G unchanged
+PASS B BCC sublattice annihilator has four characters :: {(0, 0, 0), (2, 0, 2), (0, 2, 2), (2, 2, 0)}
+PASS B eight cardinal roots reduce to two BCC-component classes :: {(1, 1, 3), (1, 1, 1)}
+PASS B BCC class of (3, 3, 1) has four cardinal frames
+PASS B BCC class of (1, 1, 3) has four cardinal frames
+PASS B BCC class of (3, 1, 3) has four cardinal frames
+PASS B BCC class of (1, 3, 1) has four cardinal frames
+PASS B BCC class of (3, 1, 1) has four cardinal frames
+PASS B BCC class of (3, 3, 3) has four cardinal frames
+PASS B BCC class of (1, 3, 3) has four cardinal frames
+PASS B BCC class of (1, 1, 1) has four cardinal frames
+
+===============================================================================
+C - Common M2 recodings versus improper and local-frame changes
+===============================================================================
+PASS C canonical Pauli orientation is +1
+PASS C proper Pauli frame 00 preserves orientation
+PASS C proper Pauli frame 00 preserves products
+PASS C proper Pauli frame 01 preserves orientation
+PASS C proper Pauli frame 01 preserves products
+PASS C proper Pauli frame 02 preserves orientation
+PASS C proper Pauli frame 02 preserves products
+PASS C proper Pauli frame 03 preserves orientation
+PASS C proper Pauli frame 03 preserves products
+PASS C proper Pauli frame 04 preserves orientation
+PASS C proper Pauli frame 04 preserves products
+PASS C proper Pauli frame 05 preserves orientation
+PASS C proper Pauli frame 05 preserves products
+PASS C proper Pauli frame 06 preserves orientation
+PASS C proper Pauli frame 06 preserves products
+PASS C proper Pauli frame 07 preserves orientation
+PASS C proper Pauli frame 07 preserves products
+PASS C proper Pauli frame 08 preserves orientation
+PASS C proper Pauli frame 08 preserves products
+PASS C proper Pauli frame 09 preserves orientation
+PASS C proper Pauli frame 09 preserves products
+PASS C proper Pauli frame 10 preserves orientation
+PASS C proper Pauli frame 10 preserves products
+PASS C proper Pauli frame 11 preserves orientation
+PASS C proper Pauli frame 11 preserves products
+PASS C proper Pauli frame 12 preserves orientation
+PASS C proper Pauli frame 12 preserves products
+PASS C proper Pauli frame 13 preserves orientation
+PASS C proper Pauli frame 13 preserves products
+PASS C proper Pauli frame 14 preserves orientation
+PASS C proper Pauli frame 14 preserves products
+PASS C proper Pauli frame 15 preserves orientation
+PASS C proper Pauli frame 15 preserves products
+PASS C proper Pauli frame 16 preserves orientation
+PASS C proper Pauli frame 16 preserves products
+PASS C proper Pauli frame 17 preserves orientation
+PASS C proper Pauli frame 17 preserves products
+PASS C proper Pauli frame 18 preserves orientation
+PASS C proper Pauli frame 18 preserves products
+PASS C proper Pauli frame 19 preserves orientation
+PASS C proper Pauli frame 19 preserves products
+PASS C proper Pauli frame 20 preserves orientation
+PASS C proper Pauli frame 20 preserves products
+PASS C proper Pauli frame 21 preserves orientation
+PASS C proper Pauli frame 21 preserves products
+PASS C proper Pauli frame 22 preserves orientation
+PASS C proper Pauli frame 22 preserves products
+PASS C proper Pauli frame 23 preserves orientation
+PASS C proper Pauli frame 23 preserves products
+PASS C complex conjugation fixes X
+PASS C complex conjugation flips Y
+PASS C complex conjugation fixes Z
+PASS C complex conjugation reverses Pauli orientation
+PASS C common inner recoding preserves isotropic neighbor relation
+PASS C site-dependent one-sided recoding changes same relation
+
+===============================================================================
+D - Record-content and complete-protocol co-recoding
+===============================================================================
+PASS D original protocol has probability one
+PASS D co-recoded state and effect preserve probability
+PASS D recoded state with fixed decoder changes probability
+PASS D content swap with transported decoder preserves c0 readout
+PASS D content swap with fixed decoder changes c0 readout
+PASS D spatially co-translated position record preserves match
+PASS D translating state but fixing position decoder changes match
+
+===============================================================================
+E - Weyl pair under licensed and conditional transformations
+===============================================================================
+PASS E positive (1, 1, 1) uses chi conjugacy
+PASS E negative (-1, -1, -1) uses chi conjugacy
+PASS E positive (1, -1, -1) uses chi conjugacy
+PASS E negative (-1, 1, 1) uses chi conjugacy
+PASS E positive (-1, 1, -1) uses chi conjugacy
+PASS E negative (1, -1, 1) uses chi conjugacy
+PASS E positive (-1, -1, 1) uses chi conjugacy
+PASS E negative (1, 1, -1) uses chi conjugacy
+PASS E onsite Ad_chi is identity at (1, 1, 1)
+PASS E onsite Ad_chi is identity at (1, -1, -1)
+PASS E onsite Ad_chi is identity at (-1, 1, -1)
+PASS E onsite Ad_chi is identity at (-1, -1, 1)
+PASS E chi changes an intersite link phase
+PASS E hand +1 has expected chiral sign
+PASS E hand -1 has expected chiral sign
+PASS E proper/common-inner transformations cannot identify opposite signs
+PASS E one improper reflection flips chiral sign
+PASS E endpoint state vectors obey psi_plus=G psi_minus
+PASS E G-co-transformed coherent effects agree :: p=1/8
+PASS E fixed coherent effect gives exact plus probability 1/4 :: 1/4
+PASS E fixed coherent effect gives exact minus probability 0 :: 0
+
+===============================================================================
+F - Boundary and phase-reference controls
+===============================================================================
+PASS F chi descends on cardinal torus L=1 iff 4 divides L
+PASS F chi descends on cardinal torus L=2 iff 4 divides L
+PASS F chi descends on cardinal torus L=3 iff 4 divides L
+PASS F chi descends on cardinal torus L=4 iff 4 divides L
+PASS F chi descends on cardinal torus L=5 iff 4 divides L
+PASS F chi descends on cardinal torus L=6 iff 4 divides L
+PASS F chi descends on cardinal torus L=7 iff 4 divides L
+PASS F chi descends on cardinal torus L=8 iff 4 divides L
+PASS F checkerboard parity descends on L=1 iff 2 divides L
+PASS F checkerboard parity descends on L=2 iff 2 divides L
+PASS F checkerboard parity descends on L=3 iff 2 divides L
+PASS F checkerboard parity descends on L=4 iff 2 divides L
+PASS F checkerboard parity descends on L=5 iff 2 divides L
+PASS F checkerboard parity descends on L=6 iff 2 divides L
+
+===============================================================================
+G - Note and formal-ledger contracts
+===============================================================================
+FAIL G companion note exists :: /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/FOUNDATION_LICENSED_PHYSICAL_EQUIVALENCE_WEYL_PAIR_NOTE_2026-07-14.md
+
+===============================================================================
+H - N1-N8 discipline contract
+===============================================================================
+FAIL H note required
+
+===============================================================================
+I - Independent exact recomputations
+===============================================================================
+PASS I chi at h1 is i
+PASS I chi at -h1 is -i
+PASS I chi square on one cardinal step is -1
+PASS I parity is invariant under every proper rotation
+PASS I common scalar has trivial inner automorphism
+PASS I Pauli reflection orientation is minus
+PASS I fixed separator plus recomputes 1/4
+PASS I fixed separator minus recomputes zero
+
+===============================================================================
+SUMMARY
+===============================================================================
+PASS=134
+FAIL=2

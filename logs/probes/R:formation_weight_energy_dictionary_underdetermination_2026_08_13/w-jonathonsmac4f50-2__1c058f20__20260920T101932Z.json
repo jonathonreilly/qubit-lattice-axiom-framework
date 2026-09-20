@@ -1,0 +1,35 @@
+{
+ "task": "R:formation_weight_energy_dictionary_underdetermination_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "formation",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/formation_weight_energy_dictionary_underdetermination_2026_08_13.py",
+ "seed": 99572,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c058f20",
+ "started_utc": "20260920T101932Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4f09d3656ba6da0e4acd73e012e28a351839e52d0174db74da48ff9b884e3a72",
+ "stdout_tail": "differs from D_* at w=1/2\nPASS: family-image-formula direct energy ratios equal the analytic affine image formula\nPASS: third-image-formula at w=1/3, r_t=(1+t)/(2(2-t))\nPASS: third-table inverse, equal, and declared shares give 1/4, 1/2, and 1 at w=1/3\nPASS: half-coalescence all exact t-grid dictionaries coalesce at shares (1/2,1/2) and r=1/2 when w=1/2\nPASS: counterfamily-distinct distinct t-grid parameters give distinct shares at w=1/3\nPASS: normalization-does-not-select D_0 and D_1 satisfy the same explicit normalization constraints but differ at w=1/3\nPASS: mutation-no-normalize using (wE_tot,wE_tot) fails total normalization away from w=1/2\nPASS: mutation-constant-half replacing r_image by constant 1/2 fails declared w=1/3\nPASS: mutation-declared-only assuming t=1 erases exact live endpoint t=0\nPASS: note-contract machine fields, current semantics, N1-N8, and retired-scalar hygiene hold\nper_element: the two channel energies, exact comparison weights, and affine-family parameters are evaluated rationally\nper_site: one declared two-channel formation coordinate is analyzed; no physical site-selection theorem is claimed\nper_mode: channel multiplicities three and six are used algebraically; no spectral-mode exhaustion is claimed\nper_block: conditional inversion, normalized counterfamily, image formula, and half-weight coalescence are executed\nlattice_wide: checked and not executed \u2014 no global formation law, energy readout, or dictionary no-go is claimed\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T101932Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

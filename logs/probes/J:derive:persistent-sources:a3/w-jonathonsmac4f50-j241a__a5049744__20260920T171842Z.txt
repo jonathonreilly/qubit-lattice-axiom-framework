@@ -1,0 +1,45 @@
+T1  the stencil and its Green function on a 4x4x4 torus, killing 1/10
+     The light-cone formation map averages a site and its six neighbours with weight
+     1/7 each; that is the P whose symbol gives the unit's static response 7/E(k),
+     since 1 - P(k) = (6 - 2 sum_a cos k_a)/7 = E(k)/7.
+ok        G is translation invariant: G(0) = 3337205782/2311505635 = 1.443736814 at every site checked
+ok        and symmetric, as the detailed-balance of the stencil requires
+     G(0) = 1.443736814,  G(x1-x2) = 380959524/2311505635 = 0.164810121 for the pair
+     x1 = (0, 0, 0), x2 = (2, 0, 0)
+
+T2  one pinned source
+     A source pinned at every level is not a conditioning of the stationary law; the
+     pinned process's stationary mean m solves (I - P) m = c e_x with the single
+     unknown c fixed by m(x) = alpha, so m(y) = alpha G(y - x)/G(0).  Checked:
+ok        the solution takes the pinned value: m(x1) = 3/2 = alpha
+ok        and (I - P) m vanishes at every unpinned site, so m is the stationary mean
+
+T3  two pinned sources
+     With two pinned sites the ansatz is m(y) = c1 G(y-x1) + c2 G(y-x2), and the two
+     pinning conditions give the 2x2 system M c = alpha with M = [[G(0), G(d)],
+     [G(d), G(0)]].  So c = M^-1 alpha, NOT c_i = alpha_i/G(0).
+ok        both pinning conditions hold exactly: m(x1) = 3/2, m(x2) = 1/2
+ok        and (I - P) m vanishes off the two pinned sites
+
+T4  superposition fails, exactly
+     The naive superposition of the two single-source solutions is
+       m_naive(y) = a1 G(y-x1)/G(0) + a2 G(y-x2)/G(0),
+     which pins nothing: it overshoots at each source by the other's tail.
+ok        m_naive(x1) - a1 = a2 G(d)/G(0) = 95239881/1668602891 = 0.057077620 /= 0
+ok        and the true charge is reduced: c1 / (a1/G(0)) = 0.974649317 /= 1
+     The exact statement is c = M^-1 alpha with M the Green matrix of the pinned set,
+     so the single-source formula alpha G/G(0) is the one-source case of a linear
+     solve whose size is the number of sources; it does not superpose.
+
+T5  equal charges, and the interaction
+ok        for equal charges c1 = c2 = alpha/(G(0) + G(d)) exactly
+ok        i.e. each charge is SCREENED by the factor G(0)/(G(0)+G(d)) = 0.897540993 < 1
+     - two like sources each need LESS charge to hold their pinned value, because
+     each sits in the other's field.  With opposite charges the same algebra gives
+ok        the factor G(0)/(G(0)-G(d)) = 1.128865964 > 1: opposite sources need MORE.
+     Both factors are exact and depend on the separation only through G(d), so the
+     whole two-source interaction of the linear pinned process is carried by the
+     single number G(d)/G(0).
+
+SUMMARY: PARTIAL for (a), the linear light-cone process with sites pinned at every level: the stationary mean with a pinned set S is m(y) = sum_i c_i G(y - x_i) with c = M^-1 alpha and M_ij = G(x_i - x_j) the Green matrix of S, so the refereed one-source formula alpha G(y-x)/G(0) is the |S| = 1 case of a linear solve and does NOT superpose; verified exactly on a 4x4x4 torus with the 7-point stencil (1 - P(k) = E(k)/7) and killing 1/10, where G(0) = 1.443736814 and G(d) = 0.164810121 at separation 2: the naive superposition overshoots the first pinning condition by exactly a2 G(d)/G(0) = 0.057077620, for equal charges the true coefficient is alpha/(G(0)+G(d)), a screening factor G(0)/(G(0)+G(d)) = 0.897540993 < 1, and for opposite charges it is G(0)/(G(0)-G(d)) = 1.128865964 > 1
+HIT: for the linear light-cone process the two-source pinned problem is an exact 2x2 solve in the Green matrix - c = M^-1 alpha with M = [[G(0), G(d)],[G(d), G(0)]] - so like sources are screened by G(0)/(G(0)+G(d)) < 1 and opposite sources anti-screened by G(0)/(G(0)-G(d)) > 1, the entire interaction being carried by the single ratio G(d)/G(0); the refereed single-source formula alpha G(y-x)/G(0) therefore does not superpose, and the naive sum overshoots each pinning condition by the other charge's tail, exactly a2 G(d)/G(0)

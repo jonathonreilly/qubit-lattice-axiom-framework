@@ -1,0 +1,30 @@
+ok   C1 Z1=12, N in {22,24,26} by antipode rule, Z_W(4-cycle)=20784
+ok   C1b Z_W = 20784 by enumeration
+ok   C2 mu_sigma(v) = W(v)/(M^a0 Z1^a1 prod_A Z(v|A)), all 24 orders x 1296
+ok   C3 census: 24 orders -> 4 laws, multiplicities 8,8,4,4
+ok   C4 DP reproduces the pure-order laws (max over 24 orders <= V)
+ok   C5 U = 13339090843683247/13958280479086944
+ok   C5b V = 1009751/965250 (adaptive sup over every order and mixture)
+ok   C5c U*V = 13469160318500002341497/13473230232438672696000 < 1
+ok   C6 log 2 < 7/10 certified: sum_{k<14} 1/k! > 2718/1000 and 2718^7 > 1024*1000^7
+ok   C7 m >= 9268 gives TV >= 1/2 (a3: 80237), factor 8.65
+ok   C8 sup_E [mu(E)-sup_nu nu(E)] = 30457/2431728 at E={N1N2>=624}
+ok   C9 min over the 24 orders TV = 455/31176 -> hull TV in [30457/2431728, 455/31176]
+ok   C10 four-point (all four equal): mu=81/3464, nu=9/416, gap 315/180128
+ok   C10b the level-set test beats the four-point function by 8.34x (7.16x vs the hull)
+ok   C11 Hellinger rho >= 0.999712...; TV < 1/2 for every m <= 495
+ok   C11b log(4/3) > 2/7 certified: e < 2719/1000 and 2719^2*2187 < 16384*10^6
+ok   C12 h(r)-(r-1)^2/2 convex on (0,1], h(r)-(r-1)^2/(2r) convex on [1,inf)
+ok   C12b d/dx[log(1/x)-2(1-x)/(1+x)] = -(1-x)^2/(x(1+x)^2) <= 0
+ok   C13 Z^2: the tilt is never constant (21 distinct vectors, none constant)
+ok   C13b Z^2 min D = 537719/129443808050 >= a3's 19/4604256 (no finite-energy factor)
+ok   C14 finite energy: max_b sum_s prod_{i<=6} phi(s,b_i) = 986, so gamma >= 1/986
+ok   C14b Z^3: tilt constant on exactly 600 of 46656, none with v(a1)=v(b1)
+ok   C14c Z^3 min D on {v(a1)=v(b1)} = 29405471333306771/9669810101542139423160
+ok   C14d (1/986)*min D beats a3's (1/986)^2*(4/28561) by 21.4x
+ok   C15 cube: Z_W = 6982520832, the monotone law is W/(10368 Q), Q has 17 values
+ok   C15b cube TV = 1182193085/23402354976, attained by {Q > 6061216/9}
+ok   C16 dependency graph NN u (e_j-e_k): independent sets of density 1/3 (Z^2, x1+2x2=0 mod 3) and 1/4 (Z^3, x1+2x2+3x3=0 mod 4 AND x1=x2=x3 mod 2)
+ok   C16b both densities are maximal: {x,x+e_j} is a 3-clique in Z^2, a 4-clique in Z^3
+SUMMARY: PARTIAL - mu_sigma(v)=W(v)/(M^a0 Z1^a1 prod_A Z(v|A)) exactly, so sum_A log Z(v|A) is a sufficient statistic and every optimal test is one of its level sets. On m disjoint 4-cycles a plaquette test has U*V=13469160318500002341497/13473230232438672696000<1, so TV>=1/2 at m=9268 against the closed convex hull of all adapted formation laws (8.65x below 80237); Hellinger affinity >=432875307883/433000000000 for the nearest fixed order leaves every test powerless at m<=495. Using D>=sum_s (P_s-Q_s)^2/(2max(P_s,Q_s)): min D=537719/129443808050 on Z^2 (tilt never constant, so no finite-energy factor is needed) and 29405471333306771/9669810101542139423160 on {v(a1)=v(b1)} in Z^3, where one factor 1/986 suffices: 21.4x the earlier Z^3 rate. The dependency graph is NN u (e_j-e_k) and its independent-set densities 1/3 and 1/4 are maximal. On the 2x2 the hull-optimal event is {N(d1),N(d2)}={26,>=24}, gap 30457/2431728; the plaquette four-point function gives 315/180128, 7.16x worse. On the 2x2x2 the likelihood ratio is one scalar Q (17 values), TV=1182193085/23402354976 at {Q>6061216/9}.
+HIT: U*V=13469160318500002341497/13473230232438672696000<1, so m=9268 disjoint 4-cycles separate the static law from the closed convex hull of every adapted formation law (TV>=1/2) and no test does at m<=495; on Z^3 one finite-energy factor 1/986 with min D=29405471333306771/9669810101542139423160 gives 21.4x the earlier rate; the plaquette four-point function is 7.16x below the optimal 2x2 event 30457/2431728.

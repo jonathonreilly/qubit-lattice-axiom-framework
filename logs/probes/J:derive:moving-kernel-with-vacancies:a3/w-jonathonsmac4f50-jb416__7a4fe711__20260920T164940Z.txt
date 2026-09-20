@@ -1,0 +1,85 @@
+K1  the enlarged one-site kernel and the neutral scale
+     States: a content, or empty.  The kernel is K(s,s') = c e^{beta s.s'} between
+     records and 1 on any bond with an empty end.  The empty state couples to the
+     contents only through the CONSTANT function, because that bond weight does not
+     depend on the content.  So on span{1, e_empty} the kernel is the 2x2 block
+       [[ c <e^{beta s.s'}> , 1 ], [ 1 , 1 ]],   det = c <e^{beta s.s'}> - 1,
+     with the average over the uniform content measure.  For the SPHERE menu:
+ok        (the antiderivative e^{beta t}/(2 beta) is verified by differentiation)
+ok        evaluating it at the endpoints of the cosine's range gives the average:
+ok        <e^{beta s.s'}> = sinh(beta)/beta exactly, so det = 0 at
+ok          c_0 = beta/sinh(beta) - which is exactly what the unit quotes from block 39's T5,
+       recovered here as a determinant rather than as an average.
+     For the TWO-VALUED menu (block 36's runner, contents +-1):
+ok        <e^{beta s s'}> = cosh(beta), so c_0 = 1/cosh(beta) there
+
+K2  why the sphere menu needs no side conditions, and the six-axis menu does
+     The kernel's other eigenvalues are its expansion coefficients on the content
+     space.  For the sphere, e^{beta s.s'} = sum_l a_l(beta) P_l(s.s') with every
+     a_l(beta) > 0 (they are modified Bessel functions of a positive argument), so the
+     ONLY way to lose positive semidefiniteness is through the 2x2 block: bond-plane
+     RP holds exactly for c >= c_0, with no further condition.  Checked for the
+     two-valued menu, where the expansion has just two terms:
+ok        the constant mode has eigenvalue cosh(beta) - it is the one in the 2x2 block
+ok        the alternating mode has eigenvalue sinh(beta) > 0 at beta = 1/2: 0.521095 - never an obstruction
+ok        the alternating mode has eigenvalue sinh(beta) > 0 at beta = 1: 1.175201 - never an obstruction
+ok        the alternating mode has eigenvalue sinh(beta) > 0 at beta = 3: 10.017875 - never an obstruction
+     This is the contrast with the SIX-AXIS menu, whose finite content space has the
+     modes p-q and p+q-2r; those can be negative (at (5,2,4), p+q-2r = -1), and there
+     RP fails at every scale.  The menu, not the scale, decides whether 'exactly for
+     c >= c_0' is the whole story.
+
+K3  (a),(b) what the twist twists, and the sum rule
+     The twisted partition function rotates the CONTENTS, so a bond contributes a
+     twist cost only when BOTH of its ends carry records: a bond with an empty end
+     weighs 1 whatever the twist.  So the Gaussian-domination quadratic form is
+     beta times a sum over OCCUPIED-OCCUPIED bonds, not over all bonds.
+     Exact check on a 3x3 torus with two-valued contents, e^beta = 2, c = 1, z = 1:
+ok        sum rule: (1/N) sum_x <|s_x|^2 1[occ]> = rho = 1168963/1279281 = 0.913766, because
+       |s|^2 = 1 on every content.  By Parseval this is (1/N) sum_k <|sigma(k)|^2>,
+       so the sum rule of block 19 becomes rho, not 1: the vacancies take the rest.
+     bond density rho_2 = <occupied-occupied bonds>/|bonds| = 9680611/11513529 = 0.840803
+ok        and rho_2 < rho here, as it must be for a law that is not saturated
+
+K4  the only inequality that ties rho_2 to rho
+     For one bond, P(both ends occupied) >= P(x occ) + P(y occ) - 1 = 2 rho - 1 by
+     inclusion-exclusion, and nothing better holds without a correlation input:
+ok        checked: rho_2 = 0.840803 >= 2 rho - 1 = 0.827531
+     The bound is vacuous for rho <= 1/2, and it is sharp: a law that puts all its
+     mass on configurations where the occupied sets of the two ends are as disjoint
+     as the marginals allow attains it.  Exact witness on two sites:
+ok          rho = 3/5: the law (1/5, 2/5, 2/5, 0) on (both, x only, y only, neither) is a probability law with both marginals 3/5 and P(both occupied) = 1/5, so 2 rho - 1 cannot be improved
+ok          rho = 7/10: the law (2/5, 3/10, 3/10, 0) on (both, x only, y only, neither) is a probability law with both marginals 7/10 and P(both occupied) = 2/5, so 2 rho - 1 cannot be improved
+ok          rho = 1/2: the law (0, 1/2, 1/2, 0) on (both, x only, y only, neither) is a probability law with both marginals 1/2 and P(both occupied) = 0, so 2 rho - 1 cannot be improved
+ok          rho = 2/5: the law (0, 2/5, 2/5, 1/5) on (both, x only, y only, neither) is a probability law with both marginals 2/5 and P(both occupied) = 0, so 2 rho - 1 cannot be improved
+
+K5  (c),(d) the stiffness, and the threshold it forces
+     Gaussian domination with the twist supported on occupied-occupied bonds gives
+       <|sigma(k)|^2>  <=  1 / (beta rho_2 E(k)),
+     so the coefficient of 1/E(k) - the inverse stiffness - is 1/(beta rho_2): it is
+     set by the BOND density, not by the site density.  That is the answer to (d).
+     Feeding this into the sum rule of K3:
+       rho = (1/N) sum_k <|sigma(k)|^2> <= M^2 + (1/(beta rho_2)) (1/N) sum_{k/=0} 1/E(k)
+     and (1/N) sum_{k/=0} 1/E(k) -> 3G(0) on Z^3, pinned by block 22 (PR #8156) to
+     0.75 < 3G(0) < 0.76 (ASSUMED here, not re-derived).  Hence
+       M^2  >=  rho  -  3G(0)/(beta rho_2),
+     so long-range order holds as soon as  beta rho_2 rho > 3G(0).
+     Using rho_2 >= 2 rho - 1, which needs rho > 1/2, the threshold is explicit:
+       beta  >  3G(0) / ( rho (2 rho - 1) ) .
+       rho = 11/20: beta > 152/11 = 13.8182
+       rho = 3/5: beta > 19/3 = 6.3333
+       rho = 7/10: beta > 19/7 = 2.7143
+       rho = 9/10: beta > 19/18 = 1.0556
+       rho = 1: beta > 19/25 = 0.7600
+ok        the threshold decreases with rho, as it must, and at rho = 1 it is 3G(0) = 0.76,
+ok        recovering block 19's full-lattice threshold exactly when the vacancies vanish
+     Below rho = 1/2 the route gives nothing: 2 rho - 1 <= 0, the stiffness is not
+     bounded below by the site density alone, and the obstruction is real rather than
+     technical - at low density the occupied set need not percolate, and a transverse
+     field supported on a non-percolating set cannot have long-range order at all.
+ok        so rho > 1/2 is where this argument lives, and the gap between 1/2 and the site-
+       percolation threshold of Z^3 (about 0.3116) is where a better inequality
+       between rho_2 and rho would buy real ground.
+
+SUMMARY: PARTIAL for the sphere menu with vacancies at fugacity z: the enlarged one-site kernel's empty state couples to the contents only through the constant function, so the 2x2 block [[c<e^{beta s.s'}>, 1],[1, 1]] has determinant c<e^{beta s.s'}> - 1 and c_0 = beta/sinh(beta) is a determinant rather than an average (1/cosh(beta) for the two-valued menu); every other mode of the sphere kernel is a positive Bessel coefficient, which is why 'RP exactly for c >= c_0' needs no side condition here while the six-axis menu does; the twist touches only occupied-occupied bonds, so the sum rule reads rho rather than 1 (checked exactly by enumerating all 3^9 configurations of a 3x3 torus) and the infrared bound is <|sigma(k)|^2> <= 1/(beta rho_2 E(k)) with rho_2 the BOND density - the stiffness is carried by rho_2, not rho, giving M^2 >= rho - 3G(0)/(beta rho_2) and long-range order once beta rho_2 rho > 3G(0); the only unconditional tie is rho_2 >= 2 rho - 1, so the explicit threshold beta > 3G(0)/(rho(2 rho - 1)) exists only for rho > 1/2 and reduces to block 19's 3G(0) at rho = 1
+HIT: with vacancies the coefficient of 1/E(k) in the infrared bound is 1/(beta rho_2) with rho_2 the occupied-occupied BOND density, not the site density rho, because the twist costs nothing on a bond with an empty end; the sum rule becomes rho, so M^2 >= rho - 3G(0)/(beta rho_2) and long-range order needs only beta rho_2 rho > 3G(0) - but the sole unconditional inequality between the two densities is rho_2 >= 2 rho - 1, which is vacuous at rho <= 1/2, so this route yields an explicit threshold beta > 3G(0)/(rho(2 rho - 1)) only above half filling, and the whole interval from the site-percolation threshold of Z^3 up to 1/2 is out of reach for a reason that is about the two densities, not about beta

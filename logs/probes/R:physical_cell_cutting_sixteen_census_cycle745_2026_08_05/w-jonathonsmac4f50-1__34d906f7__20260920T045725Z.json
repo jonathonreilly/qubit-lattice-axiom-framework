@@ -22,15 +22,22 @@
  "stdout_sha256": "fd1f22be2ee11446f9fe2923cafb4a6088faa00503fedb0a03c958bd51bc0751",
  "stdout_tail": "PASS D01  Cycle 737 binds this exact incidence, order, and eight readings\nFAIL D02  Cycle 741 primary and independent receipts bind complete emptiness through weight 14\nPASS ID01  the complete 124812100-pair census pins 46128 four-moves, 31968 six-moves, 120 four-move differences, and exactly the three normalized reading pairs\nPASS ID02  seventeen named targets are realizable; the odd-total synthetic rejector alone is not\nPASS ID03  every realizable target has a directly rechecked exact support witness\nTOTAL: PASS=4 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T045737Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052148Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 34d906f7 differs from the current HEAD 666a77ba (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=4 FAIL=1' vs cache 'TOTAL: PASS=42 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "FAIL: verdict line differs from the pinned cache: run  TOTAL: PASS=4 FAIL=1  vs cache  TOTAL: PASS=42 FAIL=0 . Failing gates: FAIL D02  Cycle 741 primary and independent receipts bind complete emptiness through weight 14. The failing gates all require the predecessor receipts to be current: each checker accepts a predecessor receipt only if every hash it records in input_sha256 equals the file s current sha256. Of the 40 committed cell-cutting receipts in outputs/, 34 have at least one pin that no longer matches the branch itself (HEAD, not just this worktree), spanning cycles 736 to 756, in three classes: requirements-release.txt (32 receipts, the #8288 pin, changed by f6f861e8f0 on 2026-09-07), MINIMAL_AXIOMS_2026-06-29.md (cycles 736, 740, 742, 743, 744), and receipt-on-receipt pins where a predecessor receipt s own committed bytes changed (least_computing, twelve_frontier and fourteen_frontier receipts, pinned by the cycle 742 receipts). So these runners cannot pass on a clean clone, and the certified computations themselves are not implicated.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052148Z"
  }
 }

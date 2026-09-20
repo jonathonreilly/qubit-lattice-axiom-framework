@@ -22,15 +22,22 @@
  "stdout_sha256": "0e97c9b0769b13a828021ab5a223061153d0afa2ebf5e89b52aef1d90da44e5a",
  "stdout_tail": " asking only that two-step pairs share less than three-step pairs picks the same 60\nPASS G38  the far-corner tests are weaker: separation lets 1488 through, all corners at 433 lets 672\nPASS G39  inside a carrier two steps give 170 to 184, three steps 240 to 250, the far corner 433 every time\nPASS G40  the cheapest parity-preserving multiplicity increments prove that a sixteen-piece four realization costs at least 18632\nPASS G41  the lightest carrier sits at 19640, which is 1008 over that floor: 252 cuttings missed and 252 met four times\nPASS G42  over all 132 carriers the total takes 4 values, least 19640 and most 24216\nso pair total separates four-reading from no-reading Q4s on this supplied object\nelapsed under 200 s peak memory under 2500 MB\nFAIL G43  inside its time and memory allowance\nPASS G44  its output including the evidence footer stays under 10000 characters\n\nper_element: checked -- all 192 pieces enter the complete induced-Q4 and pair-total census\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked and not executed -- this finite binary incidence object has no modal decomposition\nper_block: checked -- every one of the 15800 cutting rows enters the dense co-incidence matrix\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim\nRECEIPT outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=45 FAIL=3\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T045224Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052147Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 34d906f7 differs from the current HEAD 666a77ba (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=45 FAIL=3' vs cache 'TOTAL: PASS=48 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "FAIL: verdict line differs from the pinned cache: run  TOTAL: PASS=45 FAIL=3  vs cache  TOTAL: PASS=48 FAIL=0 . Failing gates: FAIL dependency.cycle750  current primary and independent Cycle 750 certificates bind the 60 Q4 carriers; FAIL dependency.cycle751  current primary and independent Cycle 751 certificates bind the ambient graph; FAIL G43  inside its time and memory allowance. The failing gates all require the predecessor receipts to be current: each checker accepts a predecessor receipt only if every hash it records in input_sha256 equals the file s current sha256. Of the 40 committed cell-cutting receipts in outputs/, 34 have at least one pin that no longer matches the branch itself (HEAD, not just this worktree), spanning cycles 736 to 756, in three classes: requirements-release.txt (32 receipts, the #8288 pin, changed by f6f861e8f0 on 2026-09-07), MINIMAL_AXIOMS_2026-06-29.md (cycles 736, 740, 742, 743, 744), and receipt-on-receipt pins where a predecessor receipt s own committed bytes changed (least_computing, twelve_frontier and fourteen_frontier receipts, pinned by the cycle 742 receipts). So these runners cannot pass on a clean clone, and the certified computations themselves are not implicated. One of the failing gates is a resource gate (time and memory allowance), which is a property of this host rather than of the pins; it passes in the cache.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052147Z"
  }
 }

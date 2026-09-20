@@ -22,15 +22,22 @@
  "stdout_sha256": "cb4a92e2eb1fc3e07e53cb96f38d8bc55d7a81caf8a46bb86448abbc044fde56",
  "stdout_tail": "rebuilt five-bin profile\nPASS independent.twice_met_ranking  the 60 largest twice-met counts are exactly the Q4 carriers with the 9616/8688 boundary\nPASS independent.odd_met_ranking  odd-count equality also classifies the carriers, while descending rank places 57972 shapes above them\nPASS independent.cap_four_linear_form  the odd/twice linear form holds exactly on the 17544 Q4s capped at multiplicity four\nPASS independent.all_carrier_spreads  all 132 minimum carriers independently have exactly four squared-spread values\nFAIL independent.primary_contract  the Cycle 753 primary receipt matches the independent forced-mean and ranking reconstruction\nPASS hostile.primary_odd_classifier  a reversion that hides the odd-count equality classifier is rejected\nPASS hostile.cycle752_status  a failing direct Cycle 752 independent certificate is rejected\nper_element: checked -- all 192 pieces enter the independently replayed Q4 multiplicity census\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked and not executed -- this finite binary incidence object has no modal decomposition\nper_block: checked -- every one of the 15800 cutting rows enters the row-blocked profile reconstruction\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim\nRECEIPT outputs/physical_cell_cutting_shared_count_variance_law_cycle753_independent_check_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=10 FAIL=3\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T045725Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052148Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 34d906f7 differs from the current HEAD 666a77ba (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=10 FAIL=3' vs cache 'TOTAL: PASS=13 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "FAIL: verdict line differs from the pinned cache: run  TOTAL: PASS=10 FAIL=3  vs cache  TOTAL: PASS=13 FAIL=0 . Failing gates: FAIL independent.cycle752_contract  current Cycle 752 primary and helper receipts bind the complete induced-Q4 population; FAIL independent.cycle752_live_replay  the structurally independent Cycle 752 checker completes live with all 19 gates; FAIL independent.primary_contract  the Cycle 753 primary receipt matches the independent forced-mean and ranking reconstruction. The failing gates all require the predecessor receipts to be current: each checker accepts a predecessor receipt only if every hash it records in input_sha256 equals the file s current sha256. Of the 40 committed cell-cutting receipts in outputs/, 34 have at least one pin that no longer matches the branch itself (HEAD, not just this worktree), spanning cycles 736 to 756, in three classes: requirements-release.txt (32 receipts, the #8288 pin, changed by f6f861e8f0 on 2026-09-07), MINIMAL_AXIOMS_2026-06-29.md (cycles 736, 740, 742, 743, 744), and receipt-on-receipt pins where a predecessor receipt s own committed bytes changed (least_computing, twelve_frontier and fourteen_frontier receipts, pinned by the cycle 742 receipts). So these runners cannot pass on a clean clone, and the certified computations themselves are not implicated.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052148Z"
  }
 }

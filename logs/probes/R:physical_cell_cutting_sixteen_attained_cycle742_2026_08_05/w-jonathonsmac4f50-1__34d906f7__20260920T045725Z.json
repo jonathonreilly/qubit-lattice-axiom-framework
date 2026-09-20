@@ -22,15 +22,22 @@
  "stdout_sha256": "de48fb5f109e185acb9e7792a64aa425dcbd124f12354cf214417d1dfb0e6884",
  "stdout_tail": "FAIL DEP1  Cycle 741 exact lower-bound contract failed\nTOTAL: PASS=0 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T045725Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052148Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 34d906f7 differs from the current HEAD 666a77ba (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=0 FAIL=1' vs cache 'TOTAL: PASS=58 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "FAIL: verdict line differs from the pinned cache: run  TOTAL: PASS=0 FAIL=1  vs cache  TOTAL: PASS=58 FAIL=0 . Failing gates: FAIL DEP1  Cycle 741 exact lower-bound contract failed. The failing gates all require the predecessor receipts to be current: each checker accepts a predecessor receipt only if every hash it records in input_sha256 equals the file s current sha256. Of the 40 committed cell-cutting receipts in outputs/, 34 have at least one pin that no longer matches the branch itself (HEAD, not just this worktree), spanning cycles 736 to 756, in three classes: requirements-release.txt (32 receipts, the #8288 pin, changed by f6f861e8f0 on 2026-09-07), MINIMAL_AXIOMS_2026-06-29.md (cycles 736, 740, 742, 743, 744), and receipt-on-receipt pins where a predecessor receipt s own committed bytes changed (least_computing, twelve_frontier and fourteen_frontier receipts, pinned by the cycle 742 receipts). So these runners cannot pass on a clean clone, and the certified computations themselves are not implicated.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052148Z"
  }
 }

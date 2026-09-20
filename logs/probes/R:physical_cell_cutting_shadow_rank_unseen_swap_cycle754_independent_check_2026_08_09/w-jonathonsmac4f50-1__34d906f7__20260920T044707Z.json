@@ -22,15 +22,22 @@
  "stdout_sha256": "aabcb3a6094555652cc44e7e01efa97ab7b645d21a31abe88eb982ea39d1e5b9",
  "stdout_tail": "llisions  the 132 minimum carriers give 108 exact vectors and 24 disjoint colliding pairs\nPASS independent.q4_collisions  all 59736 Q4 shapes give 53632 vectors; every repeated SHA-512 bucket is checked exactly\nPASS independent.binary_shadow  independent packed elimination gives GF(2) row/column rank 88 and reaches all eight readings\nPASS independent.localization  both local routes agree on all 132 carriers; none reaches baseline and the minimum is 19640\nFAIL independent.primary_contract  the Cycle 754 primary receipt matches the independent shadow and collision reconstruction\nPASS hostile.primary_rank  a one-unit reversion of the primary rational rank is rejected\nPASS hostile.primary_boundary  a reversion that turns rank-route failure into a two-cover verdict is rejected\nPASS hostile.cycle753_status  a failed direct predecessor certificate is rejected\nper_element: checked -- all 192 piece columns enter the independent exact shadow checks\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked and not executed -- this finite binary incidence object has no modal decomposition\nper_block: checked -- all 15800 cutting rows enter the independent rank and collision reconstruction\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim\nRECEIPT outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=12 FAIL=3\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T044920Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052147Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 34d906f7 differs from the current HEAD 666a77ba (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=12 FAIL=3' vs cache 'TOTAL: PASS=15 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "FAIL: verdict line differs from the pinned cache: run  TOTAL: PASS=12 FAIL=3  vs cache  TOTAL: PASS=15 FAIL=0 . Failing gates: FAIL independent.cycle753_contract  current Cycle 753 primary and helper bind the complete forced-mean finite-object boundary; FAIL independent.cycle753_live_replay  the independent Cycle 753 reconstruction completes live with all thirteen gates; FAIL independent.primary_contract  the Cycle 754 primary receipt matches the independent shadow and collision reconstruction. The failing gates all require the predecessor receipts to be current: each checker accepts a predecessor receipt only if every hash it records in input_sha256 equals the file s current sha256. Of the 40 committed cell-cutting receipts in outputs/, 34 have at least one pin that no longer matches the branch itself (HEAD, not just this worktree), spanning cycles 736 to 756, in three classes: requirements-release.txt (32 receipts, the #8288 pin, changed by f6f861e8f0 on 2026-09-07), MINIMAL_AXIOMS_2026-06-29.md (cycles 736, 740, 742, 743, 744), and receipt-on-receipt pins where a predecessor receipt s own committed bytes changed (least_computing, twelve_frontier and fourteen_frontier receipts, pinned by the cycle 742 receipts). So these runners cannot pass on a clean clone, and the certified computations themselves are not implicated.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T052147Z"
  }
 }

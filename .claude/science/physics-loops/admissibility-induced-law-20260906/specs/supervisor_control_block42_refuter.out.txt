@@ -1,0 +1,9 @@
+PASS: W1 gap weights at n = 1..4 by enumeration of the unformed contents on a path, (12,1,2) and (3,1,2): the three formulas and the content average 1
+PASS: W2 the 2 x 3 window at (3,1,2): all 64 arrangements weigh Z once contents are summed; two records at the ends of a row, every other site unformed, agree more often than chance (excess 703/281250)
+PASS: W5 the mode sum of 1/(1 - l (6 - E(k))) solves v_x - l (sum of the six neighbours) = point source at all 216 sites of the 6^3 torus and all 27 of the 3^3 torus, for l = 3/23, 1/12 and -1/9
+PASS: W6 hill-climbing from 18 starts against the one-factor bound, pairs with ratio at least 2, never exceeds it (best 999999/10^6 of the bound); two trajectories of the full map on the cube window with a record obey the product bound at every site for three steps
+PASS: W8 integer triples up to 40: 6 l1 = 1 exactly on 5p = 7q + 4r (134 triples, (3,1,2) the smallest); both channels lose their mass term together exactly on q = r, 5p = 11q (3 triples, (11,5,5) the smallest)
+PASS: W7 symbolic expansion of the content-averaged weight in the leans: constant 1, no first-order term, second-order term 3 l1^2 sum_{y<y'} m_y.m_y'
+PASS: W3 symbolic differentiation of the six-outcome map at the uniform field, symbolic (p, q, r): the derivative is K_1(s,b) - 1/6 in all 36 entries
+PASS: W4 the seven-outcome map, symbolic in (rho, g, p, q, r): the uniform field is a fixed point at the stated z, and the scalar and vector eigenvalues are rho(1-rho)(g-1)/(1+rho(g-1)) and rho g l1/(1+rho(g-1)) identically; the scalar one vanishes identically at g = 1: True
+REFUTER TOTAL: FAIL=0

@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 42 (2026-09-20)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "owner: why couldn't records interact via the neighbourhood probabilities; keep going until something solid or a change of direction"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the reading worked out in both forms; the record layer has a field across empty space whose first-order charge is content; mass enters only through the glue and is screened off tuned surfaces; next the nonlinear field on the massless surface and the second-order mass channel, loaded on ai/probes"
+```

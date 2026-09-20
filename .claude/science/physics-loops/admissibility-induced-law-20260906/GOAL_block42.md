@@ -1,0 +1,9 @@
+# Block 42 — contract (2026-09-20)
+
+**Owner's instruction.** "why couldnt records interact via the neighborhood probabilities?"; then "well keep going until we have something solid or need to probe a different direction".
+
+**Lens pass.** Block 41's "no action across empty sites" is a theorem about a law in which an empty site has no state (every bond touching it weighs `1`). The axioms' sentence on the probability distribution speaks of every site and does not say a condition must be a record. Give the unformed site its odds and let them be a condition: influence then propagates. Two forms must be kept apart: the summed form (one unknown content per unformed site; block 01's reading (iii), block 24's integrated exterior) and the self-consistent form (each site's odds from its neighbours' odds). Tested exactly before writing: gap weights and their content average; the nonlinear odds around a record against the screened lattice Green function (four digits at range `0.77`).
+
+**Exact target.** T1 summed form: contents interact, masses do not. T2 the field equation of the self-consistent odds: derivative, spectrum, massless surfaces, screened response. T3 a proved regime (contraction in the ratio metric, elementary constant proved at scope). T4 what a record feeds in (covariance; content-blind weight at second order). T5 "no record" as a seventh possibility: the mass channel's first-order strength and its zero at the neutral scale. T6 (added during the block) whether sources add: records as boundary values, capacity. Executed: the nonlinear fields.
+
+**Boundaries fixed in advance.** No force law; no gravitational reading; nothing about the nonlinear field on or beyond the massless surfaces; the two forms are different objects and neither is claimed to approximate the other; the reading is not adopted.

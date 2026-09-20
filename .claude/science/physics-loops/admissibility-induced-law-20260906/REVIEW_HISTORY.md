@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-20 block 42 — author checks (not a review PASS)
+Predictions tested before writing. Refuting pass by enumeration, symbolic differentiation and hill-climbing (eight witnesses, all pass; two of them upgrade point checks to symbolic identities). Four findings folded (adversarial pairs for the contraction mutations; the trivial-equality hill-climb; the control's stopping test; the seven-outcome map). Theorem text re-read against the runner before the gates. First gate run stopped to fold T6 (records as boundary values; capacity). Census 14/14 in family.

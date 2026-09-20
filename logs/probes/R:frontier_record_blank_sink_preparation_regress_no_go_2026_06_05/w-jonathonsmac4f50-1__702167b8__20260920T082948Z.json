@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_record_blank_sink_preparation_regress_no_go_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_blank_sink_preparation_regress_no_go_2026_06_05.py",
+ "seed": 92988,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T082948Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=75 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c1a958cb29bfb240d048760387be1552134cbe6d55a09bfebd2b7316c5f972c6",
+ "stdout_tail": "site-level dynamics is executed anywhere.\n  per_mode: checked and not executed -- there is no state space, no basis and no dynamics in this file at all, hence nothing that could carry a mode. No spectrum is formed, no channel is projected, and the capacity ledger it computes would read identically under any relabelling of an underlying mode structure that does not exist here.\n  per_block: exercised, but only at the single split the argument needs -- the register is partitioned into an inner sink and an outer sink, and the two routes are distinguished exactly by what crosses that boundary: closed blanking keeps everything inside and collapses the block to one label, while the outer-sink route moves the old k-cell word across and preserves all 2^k labels. No finer block decomposition exists in this runner and none is claimed.\n  lattice_wide: exercised, and it is inherently a finite-N statement -- the result is a whole-system capacity ledger: m repeated clean resets need k*m exported bits, and a fixed environment of B bits therefore supports floor(B/k) cycles and no more. The runner executes this over widths k = 1..5, cycle counts m = 1..5 and capacities B in {0, 3, 6, 9}; the whole force of the no-go is that the budget stays finite, so no limiting or large-system extrapolation is taken.\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=75 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T082948Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

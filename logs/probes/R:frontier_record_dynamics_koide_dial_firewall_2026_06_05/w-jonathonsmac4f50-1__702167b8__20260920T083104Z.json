@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_record_dynamics_koide_dial_firewall_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_dynamics_koide_dial_firewall_2026_06_05.py",
+ "seed": 93064,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083104Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "26d8c62429d667301d567db8f8493aee971862300aafaeb8c2c4b5cd22337daf",
+ "stdout_tail": "hich gates a claim would need, and whether those gates are on the record side or must be supplied from outside. That question sits entirely above any site-level description and would read the same for a system of any size or shape.\n  per_mode: checked and not executed -- there is no state space, no basis and no spectrum here, so nothing can carry a mode. The word dial in this file names an externally supplied setting, tracked as the string gate dial_selector, and not a mode, channel or eigenvalue; no decomposition of anything is formed.\n  per_block: checked and not executed -- no space is decomposed into blocks. The single partition present is the disjoint split of gate names into the 6 record-side gates and the 3 external gates, and that is a provenance partition over labels rather than a decomposition of any physical object, so it supports no block-resolved physical statement.\n  lattice_wide: checked and not executed -- nothing of any extent is built, so there is no whole-system quantity, no finite-N statement and no limit. The firewall's content is that dial_selector is absent from the record-side gate set outright, which holds independently of how large or small any underlying system would be; that scale-independence is exactly why no lattice-wide claim can be made from this file.\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083104Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

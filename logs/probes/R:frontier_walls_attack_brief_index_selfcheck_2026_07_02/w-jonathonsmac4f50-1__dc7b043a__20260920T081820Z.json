@@ -19,14 +19,21 @@
  "stdout_sha256": "fdfbd6e8dfe616975024cf2a518152085c0a32bff0305fed4d6e29a63a345b44",
  "stdout_tail": "FAIL: missing docs/WALLS_ATTACK_20260702_ADJUDICATION_BRIEF_META_NOTE_2026-07-02.md\nPASS/TOTAL: 0/1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T081820Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T083444Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha dc7b043a differs from the current HEAD 702167b8 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (archive: execute the densify-freeze migration, owner GO 2026-09-05) moved it out of docs/ into archive/notes/, and the runner still points at the old path, so its note-exists gate and every gate that reads the note fail. The file is present in HEAD at the archive path and its content is not in question. This is the class measured at 567 of 6435 scripts naming a .md that is now only under archive/notes/ (1376 references, 545 distinct notes).",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T083444Z"
  }
 }

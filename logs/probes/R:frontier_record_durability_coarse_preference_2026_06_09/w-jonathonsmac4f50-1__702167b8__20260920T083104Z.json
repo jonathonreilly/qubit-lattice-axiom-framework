@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_durability_coarse_preference_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_durability_coarse_preference_2026_06_09.py",
+ "seed": 93063,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083104Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0847710b6110e033fbb196d796b1f58313ea4468b0398820c4be12ebd792079d",
+ "stdout_tail": " varies continuously with the SOURCE measure: outcome-fed source -> weight ratio 1 (orbit cell); fiber-fed source -> weight ratio 2 (sector cell); intermediate q -> intermediate  --  Od/Os at q=0,0.5,1: 1.000, 1.400, 2.000\n  [PASS] => DURABILITY DOES NOT FIX THE WEIGHT: both endpoint cells and intermediate weights are realized by fully durable registration; the weight is set by the source-measure class, not by durability alone  --  'skip the admission' is not justified by durability alone\n\n----------------------------------------------------------------------------------------\nD3: the net boundary\n----------------------------------------------------------------------------------------\n  [PASS] DERIVED (new, conditional): the GRANULARITY half of 'preferred outcome' -- durable central record content is orbit content in a K/CPT-covariant readout\n  [PASS] NOT DERIVED: the WEIGHT half -- the occupancy factor is source-measure class, untouched by durability\n  [PASS] candidate support only: MAXENT-R is a possible future source-measure principle studied by the companion runner; this note does not adopt it as an admission\n  [PASS] honest framing: 'skip the admission entirely' = NO; this note lands only the conditional granularity theorem and the durability-does-not-fix-weight boundary\n\n========================================================================================\nSUMMARY: PASS=11 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083104Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_finite_alphabet_post_record_dynamics_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_finite_alphabet_post_record_dynamics_2026_06_05.py",
+ "seed": 93065,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083105Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "736fd8cc85ba8b7ec94f5b603662a7151c6bfd6d403da30333b8d0013a9c1c6f",
+ "stdout_tail": "d\n[PASS] G3.3 coarse count commutes with append dynamics\n[PASS] G3.4 coarse-graining preserves total length\n[PASS] G3.5 scalar readout is preserved for fiber-constant weights\n[PASS] G3.6 coarse count cannot preserve arbitrary non-fiber-constant scalar readout\n       singlet and doublet have same coarse count but different fine readout\n[PASS] R4.1 deterministic atom relabeling extends to a word homomorphism\n[PASS] R4.2 relabeling acts linearly on counts\n[PASS] R4.3 relabeling commutes with suffix append through the relabeled suffix\n[PASS] T5.1 realized post-record count update remains integral\n[PASS] T5.2 ensemble expectation is a different pre-record object\n       c+p is not the realized count c+e_o\n[PASS] T5.3 finite append grammar does not select which suffix occurs\n       both are admissible realized suffixes in the grammar\n[PASS] U6.1 every tested finite suffix is reached from empty\n[PASS] U6.2 tested trajectory lengths are unbounded over finite samples\n[PASS] U6.3 every reached trajectory remains finite\n[PASS] U6.4 finite-bound escape is append a suffix of length B+1\n\n=== Finite-alphabet post-record dynamics interpretation ===\nFinite suffixes act on record histories by append; counts update by translations in N^O.\nAlphabet coarse-grainings commute with append/count dynamics, with scalar preservation only under compatible readout.\nThe grammar supplies post-record information dynamics, not record-production probabilities, rates, or dial selection.\nSCORECARD PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083105Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,69 @@
+==============================================================================
+RECORD BORN-FREQUENCY BOUNDARY
+no-go / finite history-count runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Finite histories have exact counts
+------------------------------------------------------------------------------
+  [PASS] all binary histories of length 4 are enumerated
+  [PASS] frequency set has five finite values ([0.0, 0.25, 0.5, 0.75, 1.0])
+  [PASS] all-zero history has frequency zero
+  [PASS] all-one history has frequency one
+  [PASS] append adds one atom
+  [PASS] append updates count exactly
+  [PASS] count class k=2 has six histories
+  [PASS] counts are many-to-one over histories
+
+------------------------------------------------------------------------------
+2. Counts do not force a probability
+------------------------------------------------------------------------------
+  [PASS] chosen pre-record probability is not a finite-history theorem
+  [PASS] history with frequency zero is compatible as a word
+  [PASS] history with frequency one is compatible as a word
+  [PASS] finite frequency can differ from p by 0.7
+  [PASS] finite frequency can differ from p by 0.3
+  [PASS] history grammar has no IID flag
+  [PASS] history grammar has no convergence flag
+  [PASS] history grammar has no dial selector
+
+------------------------------------------------------------------------------
+3. Probability model is an extra input
+------------------------------------------------------------------------------
+  [PASS] supplied binomial weights sum to one
+  [PASS] binomial weights use supplied p
+  [PASS] without supplied p, binomial weights are undefined by history
+  [PASS] selective atoms supply counts, not model
+  [PASS] finite count frequency is empirical information
+  [PASS] empirical frequency is not identical to p here
+
+------------------------------------------------------------------------------
+4. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_BORN_FREQUENCY_BOUNDARY_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: no-go
+  [PASS] note contains marker: trace_class: negative_route_pruning
+  [PASS] note contains marker: Born-frequency law remains a separate probability-model gate
+  [PASS] note contains marker: Does not derive Born frequencies
+  [PASS] note contains marker: history grammar supplies IID trials
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: born closure
+  [PASS] forbidden wording absent: iid closure
+  [PASS] forbidden wording absent: convergence closure
+  [PASS] forbidden wording absent: selection closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+N5 EXECUTION CERTIFICATE (print-only; registers no check)
+------------------------------------------------------------------------------
+  per_element: checked and not executed -- nothing array-valued is constructed in this runner. No operator, density matrix or amplitude vector appears, so there is no entry to compare against another; the objects are integer tuples, Hamming counts and a list of binomial weights, and every conclusion is drawn from set membership and cardinality rather than from any entrywise test.
+  per_site: checked and not executed -- there is no spatial index anywhere here. The only position index carried is the slot inside a length-4 history word, which is a time-ordered record step rather than a site, and even that slot is consumed almost entirely through the total count of ones. Reading this boundary as a site-resolved result would misdescribe what the file does.
+  per_mode: checked and not executed -- no state space, basis or dynamics exists, so nothing can carry a mode. The binomial weights that appear in section 3 are a classical probability model handed in from outside with p supplied by hand; they are not a spectral decomposition, and the point of the section is precisely that this model is an extra input the history grammar does not produce.
+  per_block: exercised, and the no-go is visible at exactly this granularity -- the 16 histories are partitioned into 5 Hamming-count blocks k = 0..4, and the run shows the middle block k=2 contains 6 distinct histories. That many-to-one block structure is the reason a count, and hence a frequency, cannot identify a history or fix a probability.
+  lattice_wide: exercised, and stated only for finite n -- the enumeration is exhaustive over the whole space of 16 histories at fixed n = 4, and the whole-space quantities are read off directly: the frequency set has 5 attainable values and the supplied binomial weights over all 5 count classes sum to one. No sequence of growing n is compared and no limit is taken, which is the substance of the boundary: the history grammar supplies no convergence and no IID structure.
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=35 FAIL=0

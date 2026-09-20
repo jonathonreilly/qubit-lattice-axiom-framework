@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_classical_semigroup_boundary_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py",
+ "seed": 92989,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T082949Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "57e559eee2bf923e803bc9cec0cbd103612db6f178f1712f4a414dcb36139951",
+ "stdout_tail": " realized atom\n       T=[[Fraction(5, 6), Fraction(1, 3)], [Fraction(1, 6), Fraction(2, 3)]]\n[PASS] M3 the inverse linear map is not stochastic\n       T^-1=[[Fraction(4, 3), Fraction(-2, 3)], [Fraction(-1, 3), Fraction(5, 3)]]\n[PASS] M4 a Markov step from a realized atom produces an ensemble distribution\n       T e0=(Fraction(5, 6), Fraction(1, 6))\n\n========================================================================\nStable dial locations require supplied dynamics\n========================================================================\n[PASS] S1 equal-letter stationary point is realized by supplied symmetric rates\n       pi=(Fraction(1, 2), Fraction(1, 2))\n[PASS] S2 dimension-weighted stationary point is realized by different supplied rates\n       pi=(Fraction(1, 3), Fraction(2, 3))\n[PASS] S3 the same record algebra permits another stable point under another generator\n       pi=(Fraction(2, 3), Fraction(1, 3))\n[PASS] S4 finite record algebra alone cannot distinguish those supplied generators\n       stability is a property of the chosen generator/functional\n\n========================================================================\nScorecard\n========================================================================\nPASS=21 FAIL=0\nFINDING: finite post-record algebras have only discrete reversible permutations and zero derivations. Nontrivial continuous dynamics, transition rates, and dial attractors live on supplied Markov/ensemble or append/action layers, not in Record alone.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T082949Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

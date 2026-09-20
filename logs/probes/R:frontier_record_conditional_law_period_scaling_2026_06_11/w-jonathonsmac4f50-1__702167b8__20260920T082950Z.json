@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_conditional_law_period_scaling_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py",
+ "seed": 92990,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T082950Z",
+ "elapsed_s": 20.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f10014bec0723a54d5edef0e066052b0c2ebf1dfe1896c4ef477aecac72d43bd",
+ "stdout_tail": "ner-defined diagnostic\n  [PASS] source note forbids promotion to upstream framework laws\n==============================================================================\nTOTAL: PASS=18 FAIL=0\n==============================================================================\nSCOPE: scales #3554's named object (the fixed-prefix-k conditional law) from\n  L=3 to L=4 (rings; Z^3 untested -- geometry disclosed; two periods = a\n  two-point trend, labeled).  PANEL-CORRECTED FINDINGS: the L=3 baseline is the\n  SET of both #3554 events positive against the fixed seeded-null diagnostic\n  ({+0.088 stalled, +0.190 monotone} --\n  the stall is event-specific, not a period property); the L=4 gaps are\n  COMPARABLE-OR-LARGER (ranges overlap; median ~1.4x, not doubled).  THE\n  LOAD-BEARING POSITIVE: seed-robust fixed-k MONOTONICITY at L=4 (7/7 K=7\n  seeds + a 3/3 half-filling control in-runner) -- consistent with, not\n  establishing, strengthening with the period.  NOT claimed: gap growth as a\n  period law, concentration in the large-period limit, any CLT premise,\n  L>=5/Z^3 behavior, or gap universality (instance/seed-labeled).  Guards\n  are runner-local finite diagnostics, not inherited #3554/#3507/Born theorem\n  premises.  No exhaustive permutation-null p95, certified finite-sample bound,\n  or MC-free null theorem is claimed.  The U(1) factor is NOT identified with a\n  physical gauge field.\n  Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/\n  measure/weight; r untouched.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083011Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "task": "R:frontier_record_composition_bridge_positivity_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_composition_bridge_positivity_2026_07_02.py",
+ "seed": 92990,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T082950Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=24 FAIL=4",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a6a4b2a943c3352ec77b9e62d0ab0c9f3530f8f4fb91e1b07b38865916c10a6a",
+ "stdout_tail": "e Separation (b) spatial-wrap positivity q in {1/2,1/3}: K_t(j) >= S_M(j) > 0 for all j, tail geometrically bounded (exact)\nCHECK 21: PASS -- Named Candidate Separation (b) non-membership witness: q^2 coeff of (W_q*W_q)(0) is 2 but of W_{q^2}(0)/W_s(0) is 0 (not convolution-closed)\nCHECK 22: PASS -- Named Candidate Separation (c) NN heat generator: off-diagonals = 1 (Metzler, integer), row-sum 0, single-step local (dist-2 entries 0)\nCHECK 23: PASS -- Named Candidate Separation (c) NN spectrum: lambda_n = -4 sin^2(pi n/5), |lambda_1| = (5-sqrt5)/2 (= locality deficit), != -bal(n)^2 (non-quadratic)\nCHECK 24: PASS -- Named Candidate Separation canonicity: literal-label spectrum {0,-13/2,-13/2,-17/2,-17/2} != -bal(k)^2; bal(n)^2 even, literal n^2 not (balanced FORCED)\nCHECK 25: PASS -- Named Candidate Separation canonicity: literal-label off-diagonals 3/2 -/+ sqrt5/5 both > 0 (Metzler restored) -- violation is representative-relative\nCHECK 26: PASS -- Locality leg: single-step deficit 4 sin^2(pi/5) = (5-sqrt5)/2 != 0 = |lambda_1(NN)| (PR #4825, review-pending)\nCHECK 27: FAIL -- Action-Wall End-State boundary: note asserts 'not adopted' + 'no wall is closed' + 'review-pending'; no literal empty-family selection\nCHECK 28: FAIL -- Residue and Governance Map boundary: note carries 'three named premises', 'nearest-neighbor heat', 'un-taken', 'canonicity', POS, LOC, SU(3), owner review\n------------------------------------------------------------------------------\nTOTAL: PASS=24 FAIL=4\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T083746Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=24 FAIL=4' vs cache 'TOTAL: PASS=28 FAIL=0'"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (archive: execute the densify-freeze migration, owner GO 2026-09-05) moved it out of docs/ into archive/notes/, so its note-exists gate and every phrase guard that reads the note fail, while the other notes it cites are still in docs/ and pass. The file is present in HEAD at the archive path and its content is not in question. This is the class measured at 567 of 6435 scripts naming a .md that is now only under archive/notes/.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T083746Z"
+ }
+}

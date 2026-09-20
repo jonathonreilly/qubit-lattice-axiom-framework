@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_classicalization_dynamics_firewall_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_classicalization_dynamics_firewall_2026_06_05.py",
+ "seed": 92989,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T082949Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "307558f8b914ba1543f63c8e12c62114d160b8d714ad2b8265fa451704ef9a28",
+ "stdout_tail": "s of psi\n[PASS] C4 arbitrary pre-record qubit states need not be orthogonal records\n       <phi|psi> = sqrt(6)/6 + sqrt(3)/3\n[PASS] C5 repeat-read of a pointer atom is idempotent\n\n=== Dynamics consequences ===\n[PASS] D1 realized post-record update is integral for outcome 0\n       counts -> (4, 4)\n[PASS] D2 realized post-record update is integral for outcome 1\n       counts -> (3, 5)\n[PASS] D3 predictive expected update is fractional for nontrivial Born weights\n       E[counts'] = (11/3, 13/3)\n[PASS] D4 expected update is an ensemble object, not either realized update\n[PASS] D5 post-record count dynamics is additive under concatenating histories\n       (0,1,1)+(0,0) -> (3, 2)\n[PASS] D6 empirical frequency is a normalized count summary, not the written token\n\n=== Generation-dial implication ===\n[PASS] G1 equal record-letter prior is distinct from dimension/Born-style prior\n       gamma=0 letters=(1/2, 1/2), gamma=1 dims=(1/3, 2/3)\n[PASS] G2 a realized singlet token is not either prior distribution\n[PASS] G3 a realized doublet token is not either prior distribution\n[PASS] G4 the dial is therefore a prior/ensemble choice over record letters\n       the individual post-record site carries the selected letter\n\n=== Scorecard ===\nPASS=29 FAIL=0\nFINDING: pre-record qubits carry predictive weights; record events write one realized label; post-record dynamics acts on information tokens/counts. Probabilities re-enter as predictive or ensemble states, not as the individual durable record.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T082949Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

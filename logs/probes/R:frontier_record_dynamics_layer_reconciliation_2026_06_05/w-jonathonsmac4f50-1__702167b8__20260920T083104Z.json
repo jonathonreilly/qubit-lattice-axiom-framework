@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_dynamics_layer_reconciliation_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_dynamics_layer_reconciliation_2026_06_05.py",
+ "seed": 93064,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083104Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6f8eef5964f72188080be4b24f2d188560e6cc7a6074528faab531631f9bb1fc",
+ "stdout_tail": "    finite_record_alphabet,realized_atom_stream\n[PASS] L2 layer has outputs: post_record_information_dynamics\n       finite_histories,counts,append_action,coarse_graining,unbounded_finite_retention\n[PASS] L2 layer has forbidden outputs: post_record_information_dynamics\n       next_atom_selector,probability_law,transition_rate,carrier_Hamiltonian,dial_selection\n[PASS] F3 post-record exact layer forbids production/probability/rate/dial outputs\n[PASS] F3 post-record exact layer only consumes realized atom stream\n[PASS] F3 formation layer carries bounded support\n[PASS] F3 formation layer names bridge premises\n[PASS] F3 formation layer does not force couplings\n[PASS] F3 formation layer does not force truncation\n[PASS] C4 post-record layer alone stays exact-support\n[PASS] C4 bounded formation feeding exact post-record stays bounded-support\n[PASS] C4 open/bounded carrier through formation to post-record is not exact\n[PASS] R5 all required residuals recorded\n[PASS] R5 residual count\n[PASS] P6 only support/open statuses used\n[PASS] P6 no layer output includes retained/probability selection language\n\n=== Record dynamics layer interpretation ===\nPost-record information dynamics is exact once atoms are realized.\nPhysical formation/preservation dynamics remains bounded when it uses quantum-Darwinism, Gauss, or finite-model bridges.\nThe composition localizes residuals: production, probability/rates/time, observable bridge, couplings/truncation, and dial selection.\nSCORECARD PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083104Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

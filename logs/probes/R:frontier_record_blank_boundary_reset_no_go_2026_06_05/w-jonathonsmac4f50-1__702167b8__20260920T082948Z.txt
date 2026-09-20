@@ -1,0 +1,69 @@
+==============================================================================
+RECORD BLANK-BOUNDARY RESET NO-GO
+exact negative boundary / finite-unitary runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Fanout is clean only on blank fragments
+------------------------------------------------------------------------------
+  [PASS] blank zero input broadcasts cleanly
+  [PASS] blank one input broadcasts cleanly
+  [PASS] only blank inputs give clean broadcast (['0000', '1000'])
+  [PASS] nonblank zero input fails clean broadcast (0101)
+  [PASS] nonblank one input fails clean broadcast (1010)
+  [PASS] fanout preserves old fragment data reversibly
+
+------------------------------------------------------------------------------
+2. Closed clean reset is many-to-one
+------------------------------------------------------------------------------
+  [PASS] all zero-pointer env inputs collapse to one clean target
+  [PASS] all one-pointer env inputs collapse to one clean target
+  [PASS] reset target set has size two (['0000', '1111'])
+  [PASS] reset map is not injective
+
+------------------------------------------------------------------------------
+3. Matrix is not unitary/isometric
+------------------------------------------------------------------------------
+  [PASS] reset matrix has rank two (rank=2)
+  [PASS] reset matrix fails isometry condition
+  [PASS] two orthogonal inputs share the same image
+  [PASS] input pair is orthogonal
+  [PASS] image pair is not orthogonal
+
+------------------------------------------------------------------------------
+4. Extra sink restores injectivity at label level
+------------------------------------------------------------------------------
+  [PASS] adding old fragment state as sink gives 16 labels
+  [PASS] sink labels keep clean broadcast target
+  [PASS] sink route is not the closed four-qubit reset route
+
+------------------------------------------------------------------------------
+5. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md)
+  [PASS] note contains marker: actual_current_surface_status: no-go
+  [PASS] note contains marker: trace_class: negative_route_pruning
+  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: Does not derive blank fragments
+  [PASS] note contains marker: Does not apply audit verdicts.
+  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] forbidden wording absent: blank closure
+  [PASS] forbidden wording absent: reset closure
+  [PASS] forbidden wording absent: hamiltonian closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+N5 EXECUTION CERTIFICATE (print-only; no check is registered)
+------------------------------------------------------------------------------
+  per_element: exercised -- the reset operator is assembled one entry at a time, exactly one unit entry placed per column across all 16 columns of the 16x16 matrix, and it is then tested entrywise: the Gram matrix R*R is compared against the 16x16 identity element by element and departs from it by 1.000e+00 at its worst entry, far outside the runner's TOL = 1e-10, which is the isometry failure being certified. The overlap witness is built the same way, by setting single amplitudes at two named basis indices.
+  per_site: exercised, and the whole construction is site-indexed -- states are carried as 4-bit strings with one bit per site, fanout XORs every non-pointer site against the pointer site individually, clean_broadcast() inspects each site's bit separately rather than any aggregate, and reset_target() rewrites the three non-pointer sites one at a time. There is no site-averaged quantity anywhere in this file.
+  per_mode: checked and not executed -- the argument runs entirely in the fixed computational product basis and never changes basis. The only spectral quantity taken anywhere is the numerical rank of the reset operator at tol = 1e-10, and only its integer value is used: no singular vector or eigenvector is examined, no mode is labelled, and no mode-resolved statement is made or needed for this no-go.
+  per_block: exercised -- the 16 basis states split into two pointer blocks of 8, and the collapse is certified separately on each: all eight pointer-zero environment states map to the single target 0000 and all eight pointer-one states map to 1111, which is what makes the image set of size two a block statement rather than a coincidence of sampled inputs. The sink variant re-splits the same space by old fragment state and recovers 16 distinguishable labels.
+  lattice_wide: exercised, as a finite-N statement -- the reset map is judged on the whole 16-state register at once, not on a subsystem: its rank over the full space is 2, its Gram fails the isometry condition globally, and non-injectivity is established across all 16 inputs simultaneously. The system is a fixed four-site Qubit register; no size is varied, no sequence of sizes is compared and no thermodynamic limit is taken or implied.
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=31 FAIL=0

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_conditional_law_three_point_period_series_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py",
+ "seed": 93011,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083011Z",
+ "elapsed_s": 51.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8f4e11639376b603f8a9a50b568d416f7c6c20186676351f1c67104db39471bd",
+ "stdout_tail": "wnstream retained-derivation citations\n  [PASS] source note forbids selector/null and record-conditional overclaim\n==============================================================================\nTOTAL: PASS=24 FAIL=0\n==============================================================================\nSCOPE: extends the period series to three points (L = 3, 4, 5 rings; uniform\n  expm_multiply machinery -- no dense step unitary anywhere; measured peak\n  footprint ~2.5 GB, single-run safe, panels serialize).  THE MIN-GAIN LEDGER\n  replaces the monotone/stall dichotomy.  (G1) #3555's STRICT monotonicity\n  persists 6/6 at L=5; the gain MAGNITUDE does not (4/6 clear, 2/6 marginal):\n  no systematic strengthening.  (G2) sampled-null clearing drops from all-tested to\n  5/6 (failing seed disclosed).  (G3) gap medians {~0.14, ~0.19, ~0.09}:\n  trendless.  THREE-POINT VERDICT: the record-conditional structure is\n  event/seed-dominated at accessible periods -- period scans at these sizes\n  cannot decide the conditional-law question (the honest redirect: the next\n  lever is analytic or a different observable, not larger rings).  NOT claimed:\n  asymptotics, concentration, CLT premises, L>=6 (memory contract), Z^3.\n  Conditionality inherited (#3554/#3555: Born cap, named instruments, supplied\n  carrier, guarded domain, discrete-time, R1 boundaries untouched).  The U(1)\n  factor is NOT identified with a physical gauge field.  No new axiom/\n  primitive/measure/weight; r untouched.  Audit lane grades.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083103Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

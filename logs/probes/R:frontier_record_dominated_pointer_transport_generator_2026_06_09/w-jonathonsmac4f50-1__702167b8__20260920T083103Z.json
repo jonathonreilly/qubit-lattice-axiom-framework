@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_dominated_pointer_transport_generator_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_dominated_pointer_transport_generator_2026_06_09.py",
+ "seed": 93063,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083103Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2d2ab627aa7472c9293c020a1fd975da35557b33317979544fa7f1c9fa940350",
+ "stdout_tail": "lam=1) ~ 0 << dev(lam=0) order 1  (dev(1)=2.18e-16 dev(0.3)=1.799e-01 dev(0)=3.672e-01)\n  [PASS] D2b departure grows monotonically as records weaken\n  [PASS] D3 trace-blocking: (tr M(x,x),tr M(y,y)) closed 2x2 doubly-stochastic flow  (6.68e-16)\n  [PASS] D3b trace-block fixed point = equal occupation (gauge-invariant, no link content)\n==============================================================================\nPART E -- the generator's covariance is instrument-inherited (no discharge)\n==============================================================================\n  [PASS] E1a color-blind total-occupation instrument preserves local color-density spectrum (Ad-covariant content)  (0.00e+00)\n  [PASS] E1b frame-naming occupation-basis instrument changes the local-density spectrum (frame-naming, order 1)  (2.620e-01)\n  [PASS] E2a color-blind total-occupation instrument realized pointer step joint-locally covariant (exact)  (2.35e-16)\n  [PASS] E2b frame-naming occupation-basis instrument realized pointer step covariance broken at order 1 (frame-naming)  (4.267e-01)\n  [INFO] E2 footprint  (the covariant pointer transport generator is the color-blind total-occupation instrument's footprint; frame-naming occupation-basis instrument gives a frame-dependent generator -- no einselection-selection is discharged)\n==============================================================================\nTOTAL: PASS=30 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083103Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_record_dominated_pointer_transport_generator_2026_06_09.txt against the .txt beside this log"
+  ]
+ }
+}

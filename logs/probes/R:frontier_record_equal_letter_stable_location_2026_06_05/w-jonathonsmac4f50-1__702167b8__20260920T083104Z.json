@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_equal_letter_stable_location_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_equal_letter_stable_location_2026_06_05.py",
+ "seed": 93064,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083104Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "93c57110f2b5bd5a2764320b12cebf63e4205d9d87278ff8b0a775cae03c1fa7",
+ "stdout_tail": "r reset chain satisfies detailed balance\n[PASS] D2.4 chain is atom-swap symmetric\n[PASS] D2.5 eigenvalues are {1, 1-alpha}\n       {1: 1, 1 - alpha: 1}\n[PASS] D2.6 deviations from equal letters contract by 1-alpha\n[PASS] D2.7 record-letter imbalance contracts by 1-alpha\n[PASS] D2.8 iterated imbalance has closed form (1-alpha)^n times initial imbalance\n[PASS] D2.9 quadratic imbalance Lyapunov function decreases by (1-alpha)^2\n[PASS] G3.1 equal-letter prior is exactly the s=0 dial location\n       [0]\n[PASS] G3.2 s=0 gives r=1/2\n[PASS] G3.3 s=0 gives Q=2/3 on the supplied Koide algebra map\n[PASS] G3.4 s=1 gives a different stable dial location r=1\n[PASS] G3.5 Q(s) is not constant across the dial\n[PASS] N4.1 symbolic pi_s chain is row-stochastic\n[PASS] N4.2 symbolic pi_s is stationary\n[PASS] N4.3 symbolic pi_s chain satisfies detailed balance\n[PASS] N4.4 arbitrary pi_s deviations contract by 1-alpha\n[PASS] N4.5 dimension/Born endpoint s=1 is also stable under its own reset chain\n[PASS] N4.6 equal-letter stability is not dial selection\n[PASS] B5.1 stable-location sidecar entries avoid audit-clean and forced endpoint labels\n[PASS] B5.2 imported sidecar writes no audit data when imported\n\n=== Stable-location interpretation ===\nEqual-letter is a stable s=0 location on the post-record atom-symmetric dial.\nThe construction also works for arbitrary pi_s, so it is not a physical dial selector.\nThe three sidecar rows should be read as stable-location support only.\nSCORECARD PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083105Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

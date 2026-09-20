@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_record_blank_boundary_reset_no_go_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_blank_boundary_reset_no_go_2026_06_05.py",
+ "seed": 92988,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T082948Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5a289c03a2d60f5e1f1038dba058e6a5277dd74611d8aeb9681dc56be931a00b",
+ "stdout_tail": "per_mode: checked and not executed -- the argument runs entirely in the fixed computational product basis and never changes basis. The only spectral quantity taken anywhere is the numerical rank of the reset operator at tol = 1e-10, and only its integer value is used: no singular vector or eigenvector is examined, no mode is labelled, and no mode-resolved statement is made or needed for this no-go.\n  per_block: exercised -- the 16 basis states split into two pointer blocks of 8, and the collapse is certified separately on each: all eight pointer-zero environment states map to the single target 0000 and all eight pointer-one states map to 1111, which is what makes the image set of size two a block statement rather than a coincidence of sampled inputs. The sink variant re-splits the same space by old fragment state and recovers 16 distinguishable labels.\n  lattice_wide: exercised, as a finite-N statement -- the reset map is judged on the whole 16-state register at once, not on a subsystem: its rank over the full space is 2, its Gram fails the isometry condition globally, and non-injectivity is established across all 16 inputs simultaneously. The system is a fixed four-site Qubit register; no size is varied, no sequence of sizes is compared and no thermodynamic limit is taken or implied.\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T082948Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

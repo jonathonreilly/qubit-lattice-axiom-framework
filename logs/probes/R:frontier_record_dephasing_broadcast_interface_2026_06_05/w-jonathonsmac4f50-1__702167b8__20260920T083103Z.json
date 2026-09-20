@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_dephasing_broadcast_interface_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_dephasing_broadcast_interface_2026_06_05.py",
+ "seed": 93063,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083103Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6823a5b9c974273cbce5fdf4913d2b1699a6a3efdd3aec99c5e79610e52f18b7",
+ "stdout_tail": " state is not one realized atom\n  [PASS] selective branch gives one clean atom\n  [PASS] pre-record probabilities are preserved as weights\n  [PASS] post-record atom is conditional on selection\n  [PASS] local broadcast appears on selective branches\n  [PASS] no clock or dial gate is supplied\n\n------------------------------------------------------------------------------\n4. Source note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/RECORD_DEPHASING_BROADCAST_INTERFACE_2026-06-05.md)\n  [PASS] note contains marker: actual_current_surface_status: bounded-support\n  [PASS] note contains marker: trace_class: upstream_support\n  [PASS] note contains marker: selective post-record atom remains a separate gate\n  [PASS] note contains marker: Does not derive outcome selection\n  [PASS] note contains marker: nonselective dephased state is still an ensemble object\n  [PASS] note contains marker: audit_required_before_effective_retained: true\n  [PASS] forbidden wording absent: selection closure\n  [PASS] forbidden wording absent: born closure\n  [PASS] forbidden wording absent: collapse closure\n  [PASS] forbidden wording absent: rate closure\n  [PASS] forbidden wording absent: dial closure\n  [PASS] forbidden wording absent: audit verdict\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=33 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083103Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

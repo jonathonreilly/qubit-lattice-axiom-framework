@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_record_context_generator_nonidentifiability_no_go_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.py",
+ "seed": 93063,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "702167b8",
+ "started_utc": "20260920T083103Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=42 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "841f139168051f53fe4c496cf04b9b497d144a7aa749995336b28c0eaf7ff4e8",
+ "stdout_tail": "tion is exactly a mode-selection obstruction -- 3 complete binary contexts (Z, X and Y) are built on the same rho, each verified projective and complete, and each is resolved into its two branch modes separately. They return three different probability vectors, so the state together with the cited projective and Lueders algebra fixes no mode decomposition; that non-selection is the no-go.\nper_block: executed -- the identity is resolved into a two-block projector pair in every context, and the kernel argument in section D is stated blockwise: the two candidate stochastic kernels are certified to share the ready-state production row exactly while disagreeing on the atom-present block of rows. The unidentifiability therefore lives in a block that a one-step production row never touches.\nlattice_wide: checked and not executed -- no extended system is constructed, so there is no whole-system quantity and no finite-N or thermodynamic content of any kind. The largest object in the file is a 3x3 row-stochastic matrix, size is never a parameter, and the generator pair Q and 5Q that stabilizes the same stationary vector shows the missing datum is a rate normalization rather than anything volume-dependent.\n\nSCORECARD: PASS=42 FAIL=0\nVERDICT: exact negative boundary. The supplied-context finite gate is self-consistent, but the same state/algebra admits multiple readout contexts and the resulting one-step probability vector does not identify the physical kernel, generator, or clock/rate.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T083103Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,172 @@
+two-point-function-response-table, independent run 1 of 2
+worker w-jonathonsmac4f50-j8016 (claude-opus-5), unit C-two-point-function-response-table-a1
+
+Response against correlation for the sphere formation law in 3+1 at beta = 3 on a 32^3 level plane, for the
+backward neighbourhood (n = 4 predecessors {0, e1, e2, e3}) and the light cone (n = 7, {0, +-e_j}).
+probes/lib/formation_levelplane.py was copied to formation_levelplane_copy.py beside run.py and left untouched;
+run.py is the same law written batched so that coupled pairs run at once.
+Overlap disclosure: the factor 1 - E/14 below is the one I proved in C:static-against-lightcone-kernel:a2 and
+C:linear-kernel-3plus1:a2; the response measurement and the frame here are new.
+
+(1) EXACT SUPPORT OF THE RESPONSE
+  backward n=4 depth=1: |support|=4 = C(depth+3,3)=4, all coordinates >= 0 and |x|_1 <= depth: True
+  backward n=4 depth=2: |support|=10 = C(depth+3,3)=10, all coordinates >= 0 and |x|_1 <= depth: True
+  backward n=4 depth=3: |support|=20 = C(depth+3,3)=20, all coordinates >= 0 and |x|_1 <= depth: True
+  backward n=4 depth=6: |support|=84 = C(depth+3,3)=84, all coordinates >= 0 and |x|_1 <= depth: True
+  light-cone n=7 depth=1: |support|=7, |x|_1 <= depth: True, closed under x -> -x: True
+  light-cone n=7 depth=2: |support|=25, |x|_1 <= depth: True, closed under x -> -x: True
+  light-cone n=7 depth=3: |support|=63, |x|_1 <= depth: True, closed under x -> -x: True
+  light-cone n=7 depth=6: |support|=377, |x|_1 <= depth: True, closed under x -> -x: True
+  the record at a site is drawn from its predecessors only, so by induction the response to a field at one
+  site is supported on sums of d predecessor offsets: a forward simplex cone for the backward
+  neighbourhood, the symmetric ball |x|_1 <= d for the light cone. On the torus the cone wraps after L levels.
+
+(2) EXACT LINEAR RESPONSE
+  linear (gain-one) theory: theta_{t+1} = A theta_t + noise, plus delta at one site at every level.
+  Stationary response R(k) = delta/(1 - phi(k)); stationary covariance C(k) = sigma^2/(1 - |phi(k)|^2).
+  light cone, phi real: R/C in Fourier is (delta/sigma^2)(1 + phi) = (2 delta/sigma^2)(1 - E/14) : True
+  so response and covariance are proportional at long wavelength and differ by 1 - E/14 at short: 1 at
+  k = 0, 6/7 at E = 2, 1/7 at the zone corner. Backward: |phi(k)| = |phi(-k)| so C is inversion symmetric,
+  while R(k) = delta/(1-phi) is not - R lives on the forward cone of A1, so R and C cannot be proportional.
+
+(3) THE LINEAR THEORY ON THIS TORUS (FFT for the stationary law, exact level-by-level iteration for the truncated)
+  backward n=4 stationary linear theory on the 32^3 torus: R(0)=1.34165, C(0)=1.74726, and R(x)/C(x) by direction (delta = sigma^2 = 1):
+    backward n=4 (1,0,0) R/C: r=1:+1.0929 r=2:+0.8526 r=3:+0.5304 r=4:+0.3236 r=6:+0.1574 r=8:+0.0523
+    backward n=4 (1,1,0) R/C: r=1:+1.4135 r=2:+1.2447 r=3:+1.0100 r=4:+0.8944 r=6:+2.1795 r=8:-0.0363
+    backward n=4 (1,1,1) R/C: r=1:+2.1856 r=2:+3.6247 r=3:+6.7266 r=4:+21.5748 r=6:-10.4392 r=8:-6.1432
+  backward n=4 fraction of the stationary response that has arrived after T levels:
+    backward n=4 T= 20: (1,0,0) r=1:0.982 r=2:0.953 r=4:0.751 r=8:0.292 (1,1,0) r=1:0.974 r=2:0.934 r=4:0.745 r=8:0.468 (1,1,1) r=1:0.975 r=2:0.958 r=4:0.839 r=8:0.000
+    backward n=4 T= 60: (1,0,0) r=1:0.982 r=2:0.953 r=4:0.751 r=8:0.292 (1,1,0) r=1:0.974 r=2:0.934 r=4:0.745 r=8:2.078 (1,1,1) r=1:0.975 r=2:0.958 r=4:0.934 r=8:0.912
+    backward n=4 T=100: (1,0,0) r=1:0.982 r=2:0.953 r=4:0.751 r=8:0.293 (1,1,0) r=1:0.974 r=2:0.934 r=4:0.745 r=8:2.080 (1,1,1) r=1:0.975 r=2:0.958 r=4:0.934 r=8:0.912
+    backward n=4 T=250: (1,0,0) r=1:1.010 r=2:1.027 r=4:1.203 r=8:9.143 (1,1,0) r=1:1.014 r=2:1.039 r=4:1.230 r=8:32.042 (1,1,1) r=1:1.013 r=2:1.023 r=4:1.044 r=8:1.099
+    backward n=4 T=400: (1,0,0) r=1:1.028 r=2:1.081 r=4:1.571 r=8:18.738 (1,1,0) r=1:1.041 r=2:1.118 r=4:1.638 r=8:61.347 (1,1,1) r=1:1.041 r=2:1.072 r=4:1.125 r=8:1.219
+  backward n=4 T= 20: the linear |R(-x)|/|R(x)| at r <= 4 is at most 0.00e+00 (exactly zero, the cone has not wrapped)
+  backward n=4 T= 60: the linear |R(-x)|/|R(x)| at r <= 4 is at most 3.54e-12 (nonzero only because the cone has wrapped the torus)
+  backward n=4 T=100: the linear |R(-x)|/|R(x)| at r <= 4 is at most 1.66e-03 (nonzero only because the cone has wrapped the torus)
+  backward n=4 T=250: the linear |R(-x)|/|R(x)| at r <= 4 is at most 6.03e-01 (nonzero only because the cone has wrapped the torus)
+  backward n=4 T=400: the linear |R(-x)|/|R(x)| at r <= 4 is at most 6.42e-01 (nonzero only because the cone has wrapped the torus)
+  light-cone n=7 stationary linear theory on the 32^3 torus: R(0)=1.71974, C(0)=1.35312, and R(x)/C(x) by direction (delta = sigma^2 = 1):
+    light-cone n=7 (1,0,0) R/C: r=1:+2.7355 r=2:+1.8218 r=3:+2.0638 r=4:+1.9820 r=6:+1.9990 r=8:+2.0012
+    light-cone n=7 (1,1,0) R/C: r=1:+1.7663 r=2:+1.9536 r=3:+1.9921 r=4:+1.9991 r=6:+2.0016 r=8:+2.0074
+    light-cone n=7 (1,1,1) R/C: r=1:+2.1598 r=2:+1.9831 r=3:+2.0026 r=4:+2.0007 r=6:+2.0040 r=8:+1.9914
+  light-cone n=7 fraction of the stationary response that has arrived after T levels:
+    light-cone n=7 T= 20: (1,0,0) r=1:0.762 r=2:0.531 r=4:0.164 r=8:0.003 (1,1,0) r=1:0.623 r=2:0.309 r=4:0.031 r=8:0.000 (1,1,1) r=1:0.522 r=2:0.192 r=4:0.005 r=8:-0.000
+    light-cone n=7 T= 60: (1,0,0) r=1:0.897 r=2:0.784 r=4:0.527 r=8:0.169 (1,1,0) r=1:0.834 r=2:0.657 r=4:0.333 r=8:0.069 (1,1,1) r=1:0.784 r=2:0.569 r=4:0.224 r=8:-0.007
+    light-cone n=7 T=100: (1,0,0) r=1:0.940 r=2:0.872 r=4:0.708 r=8:0.417 (1,1,0) r=1:0.902 r=2:0.794 r=4:0.566 r=8:0.398 (1,1,1) r=1:0.873 r=2:0.737 r=4:0.474 r=8:-0.101
+    light-cone n=7 T=250: (1,0,0) r=1:0.994 r=2:0.989 r=4:0.980 r=8:1.057 (1,1,0) r=1:0.991 r=2:0.983 r=4:0.987 r=8:2.168 (1,1,1) r=1:0.988 r=2:0.980 r=4:1.017 r=8:-1.169
+    light-cone n=7 T=400: (1,0,0) r=1:1.015 r=2:1.033 r=4:1.092 r=8:1.417 (1,1,0) r=1:1.024 r=2:1.057 r=4:1.179 r=8:3.648 (1,1,1) r=1:1.032 r=2:1.077 r=4:1.290 r=8:-2.456
+
+(4) THE MEASURED EQUAL-LEVEL COVARIANCE
+  backward n=4 measured equal-level covariance of the transverse field, zero mode removed: C(0)=0.13633 (<|s_perp|^2>/2 = 0.13633); C(x) = C(-x) by construction of the estimator's symbol
+    backward n=4 (1,0,0): r=1:+0.032011 r=2:+0.013998 r=3:+0.008049 r=4:+0.005136 r=6:+0.002344 r=8:+0.000999 | mirrored: r=1:+0.032011 r=2:+0.013998 r=3:+0.008049 r=4:+0.005136 r=6:+0.002344 r=8:+0.000999
+    backward n=4 (1,1,0): r=1:+0.016586 r=2:+0.006545 r=3:+0.003338 r=4:+0.001918 r=6:+0.000450 r=8:-0.000333 | mirrored: r=1:+0.016586 r=2:+0.006545 r=3:+0.003338 r=4:+0.001918 r=6:+0.000450 r=8:-0.000333
+    backward n=4 (1,1,1): r=1:+0.010688 r=2:+0.003769 r=3:+0.001691 r=4:+0.000752 r=6:-0.000474 r=8:-0.000683 | mirrored: r=1:+0.010688 r=2:+0.003769 r=3:+0.001691 r=4:+0.000752 r=6:-0.000474 r=8:-0.000683
+  light-cone n=7 measured equal-level covariance of the transverse field, zero mode removed: C(0)=0.06341 (<|s_perp|^2>/2 = 0.06341); C(x) = C(-x) by construction of the estimator's symbol
+    light-cone n=7 (1,0,0): r=1:+0.009544 r=2:+0.006514 r=3:+0.003315 r=4:+0.002237 r=6:+0.001075 r=8:+0.000531 | mirrored: r=1:+0.009544 r=2:+0.006514 r=3:+0.003315 r=4:+0.002237 r=6:+0.001075 r=8:+0.000531
+    light-cone n=7 (1,1,0): r=1:+0.009017 r=2:+0.003591 r=3:+0.002010 r=4:+0.001255 r=6:+0.000532 r=8:+0.000214 | mirrored: r=1:+0.009017 r=2:+0.003591 r=3:+0.002010 r=4:+0.001255 r=6:+0.000532 r=8:+0.000214
+    light-cone n=7 (1,1,1): r=1:+0.005597 r=2:+0.002656 r=3:+0.001447 r=4:+0.000875 r=6:+0.000290 r=8:+0.000015 | mirrored: r=1:+0.005597 r=2:+0.002656 r=3:+0.001447 r=4:+0.000875 r=6:+0.000290 r=8:+0.000015
+
+(5) THE MEASURED RESPONSE (coupled pairs, common random numbers, h = 0.05 at one site at every level)
+  backward n=4: 200 coupled pairs (burn-in 100, 100 measured levels) and 20 pairs for 400 levels; field h=0.05 at one site at every level; <|S|>=3.6313, linear drift delta = h A(beta|S|)/|S| = 0.012505, <m.e_z>=0.9993
+  backward n=4 T=20 (200 pairs): R(0)=+0.015752
+    backward n=4 (1,0,0) forward  r=1:+0.005216 r=2:+0.001715 r=3:+0.000577 r=4:+0.000190 r=6:+0.000022 r=8:+0.000002
+    backward n=4 (1,0,0) backward r=1:+0.000000 r=2:+0.000000 r=3:+0.000000 r=4:+0.000000 r=6:+0.000000 r=8:+0.000000
+    backward n=4 (1,1,0) forward  r=1:+0.003418 r=2:+0.001172 r=3:+0.000444 r=4:+0.000168 r=6:+0.000025 r=8:+0.000001
+    backward n=4 (1,1,0) backward r=1:+0.000000 r=2:+0.000000 r=3:+0.000000 r=4:+0.000000 r=6:+0.000000 r=8:+0.000000
+    backward n=4 (1,1,1) forward  r=1:+0.003493 r=2:+0.001933 r=3:+0.001335 r=4:+0.000915 r=6:+0.000017 r=8:+0.000000
+    backward n=4 (1,1,1) backward r=1:+0.000000 r=2:+0.000000 r=3:+0.000000 r=4:+0.000000 r=6:+0.000000 r=8:+0.000000
+  backward n=4 T=60 (200 pairs): R(0)=+0.016390
+    backward n=4 (1,0,0) forward  r=1:+0.005235 r=2:+0.001695 r=3:+0.000577 r=4:+0.000189 r=6:+0.000022 r=8:+0.000002
+    backward n=4 (1,0,0) backward r=1:+0.000000 r=2:+0.000000 r=3:+0.000000 r=4:+0.000000 r=6:+0.000000 r=8:+0.000000
+    backward n=4 (1,1,0) forward  r=1:+0.003423 r=2:+0.001161 r=3:+0.000438 r=4:+0.000164 r=6:+0.000027 r=8:+0.000005
+    backward n=4 (1,1,0) backward r=1:+0.000000 r=2:+0.000000 r=3:-0.000000 r=4:+0.000000 r=6:+0.000000 r=8:+0.000000
+    backward n=4 (1,1,1) forward  r=1:+0.003488 r=2:+0.001925 r=3:+0.001325 r=4:+0.001016 r=6:+0.000700 r=8:+0.000512
+    backward n=4 (1,1,1) backward r=1:+0.000000 r=2:+0.000000 r=3:+0.000000 r=4:+0.000000 r=6:+0.000000 r=8:+0.000000
+  backward n=4 T=100 (200 pairs): R(0)=+0.015754
+    backward n=4 (1,0,0) forward  r=1:+0.005008 r=2:+0.001699 r=3:+0.000576 r=4:+0.000193 r=6:+0.000021 r=8:+0.000002
+    backward n=4 (1,0,0) backward r=1:+0.000000 r=2:+0.000000 r=3:+0.000000 r=4:+0.000000 r=6:+0.000000 r=8:+0.000000
+    backward n=4 (1,1,0) forward  r=1:+0.003438 r=2:+0.001153 r=3:+0.000419 r=4:+0.000165 r=6:+0.000028 r=8:+0.000005
+    backward n=4 (1,1,0) backward r=1:+0.000000 r=2:+0.000000 r=3:+0.000000 r=4:+0.000000 r=6:+0.000001 r=8:+0.000007
+    backward n=4 (1,1,1) forward  r=1:+0.003521 r=2:+0.001912 r=3:+0.001341 r=4:+0.001012 r=6:+0.000704 r=8:+0.000504
+    backward n=4 (1,1,1) backward r=1:+0.000000 r=2:+0.000000 r=3:+0.000000 r=4:+0.000002 r=6:+0.000035 r=8:+0.000127
+  backward n=4 T=100 (20 pairs): R(0)=+0.015914, (1,0,0) r=1:+0.005226 r=2:+0.001747 r=4:+0.000191 r=8:+0.000002 | (1,1,0) r=1:+0.003304 r=2:+0.001033 r=4:+0.000155 r=8:+0.000005 | (1,1,1) r=1:+0.003418 r=2:+0.001901 r=4:+0.000992 r=8:+0.000536
+  backward n=4 T=250 (20 pairs): R(0)=+0.015751, (1,0,0) r=1:+0.005278 r=2:+0.001880 r=4:+0.000298 r=8:+0.000068 | (1,1,0) r=1:+0.003545 r=2:+0.001308 r=4:+0.000257 r=8:+0.000078 | (1,1,1) r=1:+0.003486 r=2:+0.002131 r=4:+0.001057 r=8:+0.000651
+  backward n=4 T=400 (20 pairs): R(0)=+0.015824, (1,0,0) r=1:+0.005206 r=2:+0.001902 r=4:+0.000416 r=8:+0.000151 | (1,1,0) r=1:+0.003695 r=2:+0.001342 r=4:+0.000342 r=8:+0.000144 | (1,1,1) r=1:+0.003660 r=2:+0.002112 r=4:+0.001201 r=8:+0.000687
+  light-cone n=7: 200 coupled pairs (burn-in 100, 100 measured levels) and 20 pairs for 400 levels; field h=0.05 at one site at every level; <|S|>=6.6489, linear drift delta = h A(beta|S|)/|S| = 0.007143, <m.e_z>=0.9997
+  light-cone n=7 T=20 (200 pairs): R(0)=+0.011141
+    light-cone n=7 (1,0,0) forward  r=1:+0.002964 r=2:+0.000931 r=3:+0.000319 r=4:+0.000107 r=6:+0.000010 r=8:+0.000001
+    light-cone n=7 (1,0,0) backward r=1:+0.002984 r=2:+0.000933 r=3:+0.000320 r=4:+0.000107 r=6:+0.000010 r=8:+0.000001
+    light-cone n=7 (1,1,0) forward  r=1:+0.001472 r=2:+0.000320 r=3:+0.000067 r=4:+0.000011 r=6:+0.000000 r=8:+0.000000
+    light-cone n=7 (1,1,0) backward r=1:+0.001478 r=2:+0.000319 r=3:+0.000065 r=4:+0.000011 r=6:+0.000000 r=8:+0.000000
+    light-cone n=7 (1,1,1) forward  r=1:+0.000942 r=2:+0.000147 r=3:+0.000018 r=4:+0.000001 r=6:+0.000000 r=8:+0.000000
+    light-cone n=7 (1,1,1) backward r=1:+0.000943 r=2:+0.000148 r=3:+0.000018 r=4:+0.000001 r=6:+0.000000 r=8:+0.000000
+  light-cone n=7 T=60 (200 pairs): R(0)=+0.011715
+    light-cone n=7 (1,0,0) forward  r=1:+0.003484 r=2:+0.001373 r=3:+0.000661 r=4:+0.000345 r=6:+0.000100 r=8:+0.000027
+    light-cone n=7 (1,0,0) backward r=1:+0.003484 r=2:+0.001377 r=3:+0.000657 r=4:+0.000344 r=6:+0.000100 r=8:+0.000027
+    light-cone n=7 (1,1,0) forward  r=1:+0.001968 r=2:+0.000683 r=3:+0.000282 r=4:+0.000118 r=6:+0.000018 r=8:+0.000002
+    light-cone n=7 (1,1,0) backward r=1:+0.001963 r=2:+0.000682 r=3:+0.000278 r=4:+0.000117 r=6:+0.000018 r=8:+0.000002
+    light-cone n=7 (1,1,1) forward  r=1:+0.001417 r=2:+0.000440 r=3:+0.000153 r=4:+0.000051 r=6:+0.000004 r=8:+0.000000
+    light-cone n=7 (1,1,1) backward r=1:+0.001406 r=2:+0.000437 r=3:+0.000152 r=4:+0.000051 r=6:+0.000004 r=8:+0.000000
+  light-cone n=7 T=100 (200 pairs): R(0)=+0.011859
+    light-cone n=7 (1,0,0) forward  r=1:+0.003638 r=2:+0.001539 r=3:+0.000797 r=4:+0.000463 r=6:+0.000174 r=8:+0.000068
+    light-cone n=7 (1,0,0) backward r=1:+0.003688 r=2:+0.001535 r=3:+0.000799 r=4:+0.000462 r=6:+0.000176 r=8:+0.000067
+    light-cone n=7 (1,1,0) forward  r=1:+0.002143 r=2:+0.000824 r=3:+0.000390 r=4:+0.000199 r=6:+0.000052 r=8:+0.000012
+    light-cone n=7 (1,1,0) backward r=1:+0.002143 r=2:+0.000816 r=3:+0.000392 r=4:+0.000198 r=6:+0.000051 r=8:+0.000012
+    light-cone n=7 (1,1,1) forward  r=1:+0.001579 r=2:+0.000567 r=3:+0.000245 r=4:+0.000108 r=6:+0.000019 r=8:+0.000003
+    light-cone n=7 (1,1,1) backward r=1:+0.001581 r=2:+0.000565 r=3:+0.000245 r=4:+0.000108 r=6:+0.000019 r=8:+0.000003
+  light-cone n=7 T=100 (20 pairs): R(0)=+0.011808, (1,0,0) r=1:+0.003684 r=2:+0.001540 r=4:+0.000465 r=8:+0.000067 | (1,1,0) r=1:+0.002147 r=2:+0.000817 r=4:+0.000196 r=8:+0.000011 | (1,1,1) r=1:+0.001591 r=2:+0.000570 r=4:+0.000109 r=8:+0.000003
+  light-cone n=7 T=250 (20 pairs): R(0)=+0.011858, (1,0,0) r=1:+0.003829 r=2:+0.001734 r=4:+0.000637 r=8:+0.000171 | (1,1,0) r=1:+0.002368 r=2:+0.001021 r=4:+0.000341 r=8:+0.000064 | (1,1,1) r=1:+0.001751 r=2:+0.000770 r=4:+0.000227 r=8:+0.000029
+  light-cone n=7 T=400 (20 pairs): R(0)=+0.012132, (1,0,0) r=1:+0.004006 r=2:+0.001796 r=4:+0.000700 r=8:+0.000229 | (1,1,0) r=1:+0.002413 r=2:+0.001084 r=4:+0.000415 r=8:+0.000106 | (1,1,1) r=1:+0.001835 r=2:+0.000801 r=4:+0.000292 r=8:+0.000061
+
+(6) THE COMPARISON
+  measured response against the exact truncated linear prediction (ratio measured/linear, the linear one
+  scaled by delta), then R/C, then the one-sidedness and symmetry tests
+  backward n=4 T=100: measured/linear (both normalised at the origin, scale 0.011815):
+    backward n=4 (1,0,0): r=1:0.954 r=2:0.971 r=3:0.987 r=4:0.991 r=6:0.968 r=8:0.972
+    backward n=4 (1,1,0): r=1:0.982 r=2:0.988 r=3:0.969 r=4:0.981 r=6:1.007 r=8:0.969
+    backward n=4 (1,1,1): r=1:1.006 r=2:0.983 r=3:0.997 r=4:0.985 r=6:1.009 r=8:0.954
+  backward n=4 T=400: measured/linear: (1,0,0) r=1:0.958 r=2:0.968 r=4:1.034 r=8:0.994 | (1,1,0) r=1:0.999 r=2:0.971 r=4:0.937 r=8:1.050 | (1,1,1) r=1:0.989 r=2:0.981 r=4:0.981 r=8:0.984
+  backward n=4 (1,0,0) C(x) mirrored check: r=1:+0.00e+00 r=2:+0.00e+00 r=3:+0.00e+00 r=4:+0.00e+00 r=6:+0.00e+00 r=8:+0.00e+00
+  backward n=4 (1,0,0) measured R/C at T=400: r=1:+0.163 r=2:+0.136 r=3:+0.102 r=4:+0.081 r=6:+0.082 r=8:+0.152
+  backward n=4 (1,1,0) C(x) mirrored check: r=1:+0.00e+00 r=2:+0.00e+00 r=3:+0.00e+00 r=4:-4.34e-19 r=6:+5.42e-20 r=8:+0.00e+00
+  backward n=4 (1,1,0) measured R/C at T=400: r=1:+0.223 r=2:+0.205 r=3:+0.194 r=4:+0.178 r=6:+0.424 r=8:-0.434
+  backward n=4 (1,1,1) C(x) mirrored check: r=1:+0.00e+00 r=2:+4.34e-19 r=3:+0.00e+00 r=4:-1.08e-19 r=6:-5.42e-20 r=8:+0.00e+00
+  backward n=4 (1,1,1) measured R/C at T=400: r=1:+0.342 r=2:+0.560 r=3:+0.882 r=4:+1.597 r=6:-2.018 r=8:-1.006
+  backward n=4 at T=20 (< L, so the cone has not wrapped): measured |R(-x)|/|R(x)| at r <= 4 is at most 0.00e+00, mean 0.00e+00
+  backward n=4 exact stationary linear R/C at r=2 by direction: (1,0,0):+0.8526 (1,1,0):+1.2447 (1,1,1):+3.6247 | max/min = 4.251
+  backward n=4 exact stationary linear R/C at r=3 by direction: (1,0,0):+0.5304 (1,1,0):+1.0100 (1,1,1):+6.7266 | max/min = 12.683
+  backward n=4 exact stationary linear R/C at r=4 by direction: (1,0,0):+0.3236 (1,1,0):+0.8944 (1,1,1):+21.5748 | max/min = 66.662
+  backward n=4 exact stationary linear R/C at r=6 by direction: (1,0,0):+0.1574 (1,1,0):+2.1795 (1,1,1):-10.4392 | max/min = inf (a sign change: not a ratio)
+  backward n=4: R/C is direction-independent to 15% at r = 2,3,4: False
+  backward n=4: |R(-x)|/|R(x)| at r <= 4 averages 0.0000; measured R/C over 2 <= r <= 4 spreads 347% of its mean; the exact stationary linear R/C over the same r spreads 520% (mean 4.0869)
+  light-cone n=7 T=100: measured/linear (both normalised at the origin, scale 0.007034):
+    light-cone n=7 (1,0,0): r=1:0.995 r=2:0.999 r=3:0.996 r=4:0.997 r=6:0.990 r=8:1.002
+    light-cone n=7 (1,1,0): r=1:1.002 r=2:1.002 r=3:0.993 r=4:0.999 r=6:1.006 r=8:0.991
+    light-cone n=7 (1,1,1): r=1:1.005 r=2:0.997 r=3:1.001 r=4:0.996 r=6:1.010 r=8:1.000
+  light-cone n=7 T=400: measured/linear: (1,0,0) r=1:1.017 r=2:0.987 r=4:0.979 r=8:0.999 | (1,1,0) r=1:0.996 r=2:0.992 r=4:1.001 r=8:1.002 | (1,1,1) r=1:0.990 r=2:0.967 r=4:0.996 r=8:1.001
+  light-cone n=7 (1,0,0) C(x) mirrored check: r=1:+0.00e+00 r=2:+0.00e+00 r=3:+0.00e+00 r=4:+0.00e+00 r=6:+0.00e+00 r=8:+0.00e+00
+  light-cone n=7 (1,0,0) measured R/C at T=400: r=1:+0.420 r=2:+0.276 r=3:+0.321 r=4:+0.313 r=6:+0.353 r=8:+0.431
+  light-cone n=7 (1,1,0) C(x) mirrored check: r=1:+0.00e+00 r=2:+0.00e+00 r=3:+0.00e+00 r=4:+2.17e-19 r=6:-1.08e-19 r=8:+0.00e+00
+  light-cone n=7 (1,1,0) measured R/C at T=400: r=1:+0.268 r=2:+0.302 r=3:+0.317 r=4:+0.331 r=6:+0.374 r=8:+0.496
+  light-cone n=7 (1,1,1) C(x) mirrored check: r=1:+0.00e+00 r=2:+0.00e+00 r=3:+0.00e+00 r=4:-2.17e-19 r=6:+0.00e+00 r=8:+0.00e+00
+  light-cone n=7 (1,1,1) measured R/C at T=400: r=1:+0.328 r=2:+0.302 r=3:+0.323 r=4:+0.334 r=6:+0.440 r=8:+4.089
+  light-cone n=7 at T=20 (< L, so the cone has not wrapped): measured |R(-x)|/|R(x)| at r <= 4 is at most 1.01e+00, mean 1.00e+00
+  light-cone n=7 exact stationary linear R/C at r=2 by direction: (1,0,0):+1.8218 (1,1,0):+1.9536 (1,1,1):+1.9831 | max/min = 1.089
+  light-cone n=7 exact stationary linear R/C at r=3 by direction: (1,0,0):+2.0638 (1,1,0):+1.9921 (1,1,1):+2.0026 | max/min = 1.036
+  light-cone n=7 exact stationary linear R/C at r=4 by direction: (1,0,0):+1.9820 (1,1,0):+1.9991 (1,1,1):+2.0007 | max/min = 1.009
+  light-cone n=7 exact stationary linear R/C at r=6 by direction: (1,0,0):+1.9990 (1,1,0):+2.0016 (1,1,1):+2.0040 | max/min = 1.003
+  light-cone n=7: R/C is direction-independent to 15% at r = 2,3,4: True; and equals 2 to within 0.064 at every r >= 3
+  light-cone n=7: |R(-x)|/|R(x)| at r <= 4 averages 1.0025; measured R/C over 2 <= r <= 4 spreads 19% of its mean; the exact stationary linear R/C over the same r spreads 12% (mean 1.9777)
+  backward one-sided: True (mean |R(-x)|/|R(x)| = 0.0000 before the cone wraps); backward R proportional to C: False (R/C differs between directions by factors 4.3, 12.7, 66.7 at r = 2,3,4)
+  light cone symmetric: True (ratio 1.0025); light cone R proportional to C: True (direction spread 1.089, 1.036, 1.009 at r = 2,3,4)
+
+(7) READING
+  The measured response tracks the exact truncated linear prediction within a few percent at every distance and
+  in both neighbourhoods, so the sphere law at beta = 3 is in its linear regime for this observable.
+  Backward: the response is one-sided - exactly zero behind the source while the cone has not wrapped the torus -
+  and the covariance is inversion symmetric to machine precision, so the two cannot be proportional; R/C at a
+  fixed distance differs between the three directions by large factors, growing with r.
+  Light cone: the response is symmetric, and R/C is the same in every direction and equals 2 at r >= 3. The exact
+  statement is R/C = (2 delta/sigma^2)(1 - E/14) in Fourier, so the deviation from proportionality is confined to
+  short wavelength and shows up only at r <= 2.
+  Both stated expectations hold; no HIT. Numbers, not a verdict on the physics.

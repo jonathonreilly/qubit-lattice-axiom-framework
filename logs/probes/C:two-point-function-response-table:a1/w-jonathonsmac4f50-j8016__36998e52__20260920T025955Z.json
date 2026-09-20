@@ -1,0 +1,32 @@
+{
+ "task": "C:two-point-function-response-table:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j8016",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/two-point-function-response-table/w-jonathonsmac4f50-j8016/run.py",
+ "seed": 73195,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "36998e52",
+ "started_utc": "20260920T025955Z",
+ "elapsed_s": 614.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "at beta=3 on a 32^3 plane with h=0.05 at one site every level, the measured response follows the exact truncated linear prediction within a few percent; the backward response is one-sided (|R(-x)|/|R(x)| = 0.00e+00 before the cone wraps) and its R/C differs between directions by factors 4.3, 12.7, 66.7 at r = 2,3,4, while the light-cone response is symmetric (1.0025) and its R/C is direction-independent to 0.089 and equal to 2, which is exactly (2 delta/sigma^2)(1 - E/14) in Fourier; 615s"
+ },
+ "review": "run.py proves the response support exactly (a forward simplex cone of C(d+3,3) points for the backward neighbourhood, the symmetric ball |x|_1 <= d for the light cone), derives R(k) = delta/(1-phi) against C(k) = sigma^2/(1-|phi|^2) with R/C = (2 delta/sigma^2)(1 - E/14) for the light cone, and measures 200 coupled pairs at beta = 3 on 32^3 with h = 0.05 at one site: the measured response matches the exact truncated linear prediction within about 5 percent everywhere, the backward response is exactly zero behind the source before the cone wraps the torus while its covariance is inversion symmetric to 1e-18 and its R/C differs between directions by factors 4.3, 12.7 and 66.7 at r = 2, 3, 4, and the light-cone response is symmetric to 1.0025 with R/C direction-independent to 0.9 percent at r = 4 and equal to 2 within 0.064 at every r >= 3, so both stated expectations hold and there is no HIT.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): Response against correlation, executed. Use probes/lib/formation_levelplane.py as a starting point (copy it into your work directory; do not edit probes/lib). For the sphere law in 3+1 at beta = 3 on a 32^3 plane: (1) measure the equal-level covariance C(x) along three directions; (2) measure the RESPONSE: run pairs of chains with the same random numbers, one with a small field h = 0.05 along a transverse direction applied at ONE site at every level, and record the mean transverse displacement field at later levels (average 200 pairs); (3) compare the shape of the response (a forward cone along (1,1,1) for the backward lattice; symmetric for 3s) with C(x). Expectation: backward lattice: the response is one-sided and is not proportional to C; light-cone lattice: the response is symmetric and, at stationarity, close to proportional to C. DELIVERABLE in your unit worktree: probes/work/compute/two-point-function-response-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/two-point-function-response-table/<name>/run.py\"",
+ "stdout_sha256": "2e6789afbc7c94cb2ee61036964560e2d459b57a1478bb87ac6e13040a755fca",
+ "stdout_tail": "ear R/C at r=3 by direction: (1,0,0):+2.0638 (1,1,0):+1.9921 (1,1,1):+2.0026 | max/min = 1.036\nN3 light-cone n=7 exact stationary linear R/C at r=4 by direction: (1,0,0):+1.9820 (1,1,0):+1.9991 (1,1,1):+2.0007 | max/min = 1.009\nN3 light-cone n=7 exact stationary linear R/C at r=6 by direction: (1,0,0):+1.9990 (1,1,0):+2.0016 (1,1,1):+2.0040 | max/min = 1.003\nN3 light-cone n=7: R/C is direction-independent to 15% at r = 2,3,4: True; and equals 2 to within 0.064 at every r >= 3\nN3 light-cone n=7: |R(-x)|/|R(x)| at r <= 4 averages 1.0025; measured R/C over 2 <= r <= 4 spreads 19% of its mean; the exact stationary linear R/C over the same r spreads 12% (mean 1.9777)\nN3 backward one-sided: True (mean |R(-x)|/|R(x)| = 0.0000 before the cone wraps); backward R proportional to C: False (R/C differs between directions by factors 4.3, 12.7, 66.7 at r = 2,3,4)\nN3 light cone symmetric: True (ratio 1.0025); light cone R proportional to C: True (direction spread 1.089, 1.036, 1.009 at r = 2,3,4)\nSUMMARY: at beta=3 on a 32^3 plane with h=0.05 at one site every level, the measured response follows the exact truncated linear prediction within a few percent; the backward response is one-sided (|R(-x)|/|R(x)| = 0.00e+00 before the cone wraps) and its R/C differs between directions by factors 4.3, 12.7, 66.7 at r = 2,3,4, while the light-cone response is symmetric (1.0025) and its R/C is direction-independent to 0.089 and equal to 2, which is exactly (2 delta/sigma^2)(1 - E/14) in Fourier; 615s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8016",
+  "at_utc": "20260920T031029Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

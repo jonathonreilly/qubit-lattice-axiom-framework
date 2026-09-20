@@ -1,0 +1,38 @@
+{
+ "task": "R:four_open_reservation_comb_cycle59_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "four",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/four_open_reservation_comb_cycle59_2026_07_14.py",
+ "seed": 99736,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8dde16d1",
+ "started_utc": "20260920T102216Z",
+ "elapsed_s": 51.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "acf0005c2dae0340ac0fee9aabfd7e1b589ec4761d855eb65650b702228aa969",
+ "stdout_tail": ": ((45, 1),)\nPASS E05 terminal is the declared complete comb\nPASS E06 there is no incomplete dead terminal\nPASS E07 no mixed rotated output conflict occurs\nPASS E08 no off-footprint or wrong-content write occurs :: []\nPASS E09 b never appears before q and a\nPASS E10 designated c/COMMIT never appears before q/a/b\nPASS E11 every certificate has reachable formation edges :: (('a', 20), ('b', 2133248), ('c', 366848), ('q', 20))\nPASS E12 no target write is even enabled before COMMIT\n\n===============================================================================\nF. Source and scope contract\n===============================================================================\nFAIL F01 required source exists: FOUR_OPEN_RESERVATION_COMB_CYCLE59_NOTE_2026-07-14.md\nFAIL F02 required source exists: OPEN_SITE_RESERVATION_HANDSHAKE_CYCLE51_NOTE_2026-07-14.md\nFAIL F03 required source exists: SELF_EXTENDING_FRAME_CAGE_RAIL_CYCLE52_NOTE_2026-07-14.md\nFAIL F04 required source exists: FULL_A_BOUNDARY_LAUNCHER_LAST_CYCLE57_NOTE_2026-07-14.md\nPASS F05 required source exists: MINIMAL_AXIOMS_2026-06-29.md\nFAIL F06 note states authority none\nFAIL F07 note makes no axiom-need claim\nFAIL F08 note preserves the bounded candidate-law scope\nFAIL F09 note reports exact graph counts\nFAIL F10 positive result invokes no N1-N8 gate\n\n===============================================================================\nSUMMARY\n===============================================================================\nPASS=102 FAIL=9\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102801Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (the densify-freeze migration, owner GO 2026-09-05) moved all four required sources (FOUR_OPEN_RESERVATION_COMB_CYCLE59, OPEN_SITE_RESERVATION_HANDSHAKE_CYCLE51, SELF_EXTENDING_FRAME_CAGE_RAIL_CYCLE52, FULL_A_BOUNDARY_LAUNCHER_LAST_CYCLE57) out of docs/ into archive/notes/, and the runner still points at the old paths, so F01-F04 and everything downstream fail. All four are present in HEAD under archive/ and their content is not in question.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102801Z"
+ }
+}

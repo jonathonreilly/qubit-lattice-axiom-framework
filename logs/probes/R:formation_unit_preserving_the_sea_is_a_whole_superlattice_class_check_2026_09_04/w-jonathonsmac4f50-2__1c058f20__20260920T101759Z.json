@@ -22,15 +22,22 @@
  "stdout_sha256": "bc771753dbbe4c78d31e52380fd64697e2cf4e0fd77c72023b0b844a255e8bd8",
  "stdout_tail": ".8274364764901819}, {'set': [1, 4, 8, 11], 'max_live_residual': 0.7541737377209761}, {'set': [1, 5, 6, 10], 'max_live_residual': 0.48931920527117456}, {'set': [1, 5, 7, 10], 'max_live_residual': 0.8274364764901819}, {'set': [1, 5, 7, 11], 'max_live_residual': 0.7541737377209763}, {'set': [2, 4, 7, 9], 'max_live_residual': 0.4893192052711749}, {'set': [2, 4, 7, 10], 'max_live_residual': 0.8274364764901818}, {'set': [2, 4, 8, 10], 'max_live_residual': 0.7541737377209763}, {'set': [2, 5, 7, 10], 'max_live_residual': 0.7541737377209763}]\nPASS Q2 every one of 21 actual irregular slab sets has a nonzero many-body outcome: min 0.489319205 max 0.827436476\nPASS Q3 periodic 4-cube +2 paths, antiperiodic cancellation and two distinct rank-32 zero-mode ground Slaters\nPASS Q0 current own-note/memo and declared proof inputs match their literal bindings\nTOTAL: PASS=20 FAIL=1\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260920T101932Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102801Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1c058f20 differs from the current HEAD 8dde16d1 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=20 FAIL=1' vs cache 'TOTAL: PASS=21 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "TOTAL: PASS=20 FAIL=1 against the cache's PASS, and the one failing gate fails on a threshold that is seven times tighter than the one it advertises. The A2 message reads '[numerical, 1e-13]' but the code tests w_res < 1.5e-14 and w_ev < 2e-14 and w_odds < 1e-14, together with the structural counts. This host gives w_res = 1.523e-14 against the cache's 1.435e-14, so the only failing conjunct is w_res < 1.5e-14, missed by 1.5 percent; w_ev (1.688e-14 against 2e-14) and w_odds (5.6e-16 against 1e-14) pass, and every structural count is identical - 249 regular sets, 75 eigen-sets, 6 irregular sets all many-body non-eigen at 0.7071. At the advertised 1e-13 the gate would pass on both machines. The quantity is a max over 255 vertex sets of the difference between a many-body residual and a one-particle Frobenius residual, so its floating-point noise is host-dependent, and the pinned threshold sits immediately above the value the freezing machine happened to produce.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102801Z"
  }
 }

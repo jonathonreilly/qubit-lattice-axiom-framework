@@ -1,0 +1,38 @@
+{
+ "task": "R:four_generator_physical_tableau_row_machine_cycle149_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "four",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/four_generator_physical_tableau_row_machine_cycle149_2026_07_15.py",
+ "seed": 99575,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8dde16d1",
+ "started_utc": "20260920T101935Z",
+ "elapsed_s": 161.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8a3788ddf21d56ca03bdd8c920451e0a1424faf65755fd7e0ae188285a44d55e",
+ "stdout_tail": "4 signed-row/gate cases :: (1088, 864, {81, 33, 153, 105}, [])\nPASS all 2,520 state/basis/gate reconstructions agree :: []\n\nBOUNDED GENERATOR TOURNAMENT\nPASS five declared primitives generate the 11,520-element action :: 11520\nPASS no tested three-generator subset reaches the full action :: {('H0', 'H1', 'S0'): 48, ('H0', 'H1', 'S1'): 48, ('H0', 'H1', 'CX01'): 1152, ('H0', 'S0', 'S1'): 96, ('H0', 'S0', 'CX01'): 384, ('H0', 'S1', 'CX01'): 1152, ('H1', 'S0', 'S1'): 96, ('H1', 'S0', 'CX01'): 32, ('H1', 'S1', 'CX01'): 384, ('S0', 'S1', 'CX01'): 64}\nPASS exactly three inclusion-minimal four-generator subsets survive :: (('H0', 'H1', 'S0', 'CX01'), ('H0', 'H1', 'S1', 'CX01'), ('H0', 'S0', 'S1', 'CX01'))\nPASS S1 is explicitly reconstructed by the eleven-event retained word :: (4, 0, 1, 4, 0, 2, 0, 4, 0, 1, 4)\n\nMIXED-DEVICE COLLISION CLOSURE\nPASS new row rows preserve all 86,640 unified event histories :: []\nPASS Cycle-144 terminal remains at exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: four-generator physical tableau-row machine :: \nFAIL note contains: bounded to subsets of the five declared primitives :: \nFAIL note contains: not a universal generator minimum :: \nFAIL note contains: measurement pivot compiler remains open :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 14 FAIL 8\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102650Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (archive: execute the densify-freeze migration, owner GO 2026-09-05) moved it out of docs/ into archive/notes/, and the runner still points at the old path, so its note-exists gate and every gate that reads the note fail. The file is present in HEAD at the archive path and its content is not in question. This is the class measured at 567 of 6435 scripts naming a .md that is now only under archive/notes/ (1376 references, 545 distinct notes).",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102650Z"
+ }
+}

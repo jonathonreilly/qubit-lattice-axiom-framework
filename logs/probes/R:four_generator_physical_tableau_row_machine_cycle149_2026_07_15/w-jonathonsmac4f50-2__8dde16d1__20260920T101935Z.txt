@@ -1,0 +1,37 @@
+AUTHORITY AND ROW CODE
+FAIL review note exists :: 
+PASS thirty-two physical roles encode all signed two-qubit Pauli rows :: 
+PASS chosen primitive alphabet is H0,H1,S0,CX01 :: 
+
+LOCAL PHYSICAL COMPILER
+PASS 128 five-parent rows cover every signed row and primitive gate :: Counter({5: 128})
+PASS 3,072 covariant rows merge conflict-free with the unified machine :: (67580, 3072, 70652)
+PASS all 3,072 rotated primitive row histories are exact :: []
+PASS deleting any row-gate parent suppresses that update :: (640, ())
+
+DECLARED GATE RECONSTRUCTION
+PASS four primitives physically reconstruct all 224 signed-row/gate cases :: (1088, 864, {81, 33, 153, 105}, [])
+PASS all 2,520 state/basis/gate reconstructions agree :: []
+
+BOUNDED GENERATOR TOURNAMENT
+PASS five declared primitives generate the 11,520-element action :: 11520
+PASS no tested three-generator subset reaches the full action :: {('H0', 'H1', 'S0'): 48, ('H0', 'H1', 'S1'): 48, ('H0', 'H1', 'CX01'): 1152, ('H0', 'S0', 'S1'): 96, ('H0', 'S0', 'CX01'): 384, ('H0', 'S1', 'CX01'): 1152, ('H1', 'S0', 'S1'): 96, ('H1', 'S0', 'CX01'): 32, ('H1', 'S1', 'CX01'): 384, ('S0', 'S1', 'CX01'): 64}
+PASS exactly three inclusion-minimal four-generator subsets survive :: (('H0', 'H1', 'S0', 'CX01'), ('H0', 'H1', 'S1', 'CX01'), ('H0', 'S0', 'S1', 'CX01'))
+PASS S1 is explicitly reconstructed by the eleven-event retained word :: (4, 0, 1, 4, 0, 2, 0, 4, 0, 1, 4)
+
+MIXED-DEVICE COLLISION CLOSURE
+PASS new row rows preserve all 86,640 unified event histories :: []
+PASS Cycle-144 terminal remains at exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}
+
+SCOPE
+FAIL note contains: four-generator physical tableau-row machine :: 
+FAIL note contains: bounded to subsets of the five declared primitives :: 
+FAIL note contains: not a universal generator minimum :: 
+FAIL note contains: measurement pivot compiler remains open :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 14 FAIL 8
+RESULT FAIL

@@ -1,0 +1,147 @@
+
+===============================================================================
+A. Independent four-replica exhaustion
+===============================================================================
+PASS A01 proper cubic group has 24 rotations
+PASS A02 Cycle-51 replica footprint excludes only the target
+PASS A03 every 24^4 orientation quartet is enumerated
+PASS A04 support-safe orientation counts are exact :: (7, 1, 1, 5)
+PASS A05 no four replicas are pairwise disjoint
+PASS A06 no support-safe four-replica quartet exists
+
+===============================================================================
+B. Shared comb geometry and certificates
+===============================================================================
+PASS B01 base is exact completed Cycle-57 frame
+PASS B02 comb has 24 canonical exact inputs
+PASS B03 comb declares 45 permanent additions
+PASS B04 no declared addition overwrites the base
+PASS B05 START is the unique completed-base comb write :: {(-1, 3, 0): 'START'}
+PASS B06 full declared comb is terminal
+PASS B07 q/a share the exact three-site W6 orbit
+PASS B08 b belongs to the exact three-site OPEN_B orbit
+PASS B09 c belongs to the exact three-site OPEN_C orbit
+PASS B10 canonical c certificate is the designated COMMIT
+PASS B11 q certificate is target-adjacent
+PASS B15 q target is open in defining source
+PASS B19 q defining row writes its visible certificate
+PASS B23 q blocked-target control disables certificate
+PASS B12 a certificate is target-adjacent
+PASS B16 a target is open in defining source
+PASS B20 a defining row writes its visible certificate
+PASS B24 a blocked-target control disables certificate
+PASS B13 b certificate is target-adjacent
+PASS B17 b target is open in defining source
+PASS B21 b defining row writes its visible certificate
+PASS B25 b blocked-target control disables certificate
+PASS B14 c certificate is target-adjacent
+PASS B18 c target is open in defining source
+PASS B22 c defining row writes its visible certificate
+PASS B26 c blocked-target control disables certificate
+PASS B27 every live-alphabet target content blocks every defining certificate row
+
+===============================================================================
+C. Support, infinite rail, and live-table composition
+===============================================================================
+PASS C01 Cycle-43 and Cycle-53 official support agree
+PASS C02 all four official targets are on official support
+PASS C03 comb writes no official-support site
+PASS C04 comb writes no q/a/b/c target
+PASS C05 every comb site misses the infinite future rail corridor
+PASS C06 only START and exterior W1 lie within distance two of the rail
+PASS C07 natural rail transform has the stated infinite corridor
+PASS C08 first 64 future slices lie in the analytic corridor
+PASS C09 comb misses first 64 future slices
+PASS C10 exact Cycle-57 builder graph is retained
+PASS C11 every pre-comb builder state enables either nothing or canonical START :: {(((-1, 3, 0), 'START'),), ()}
+PASS C12 START never precedes ARM/A_0_2/H1
+PASS C13 only START touches declared Cycle-57 additions :: {((-1, 3, 0), (-1, 3, 1)), ((-1, 3, 0), (-1, 2, 0))}
+PASS C14 both touched builder additions are START prerequisites
+PASS C15 completed Cycle-57 builder remains silent
+PASS C16 Cycle-52 remains live at its exact first frontier
+PASS C17 full comb does not change the Cycle-52 frontier
+PASS C18 comb outputs are role-disjoint from Cycle 57
+PASS C19 the sole comb/rail output overlap is preserving B_0_2
+PASS C20 Cycle-52 inputs canonicalize without collapse conflict
+PASS C21 no comb input collides with Cycle 57
+PASS C22 no comb input collides with Cycle 52
+PASS C23 diamond source enables exterior W1
+PASS C24 diamond source enables normal B_0_2
+PASS C25 W1-first tolerance still enables B_0_2
+PASS C26 B_0_2-first tolerance still enables exterior W1
+PASS C27 both local orders join the identical record map
+PASS C28 all merged outputs at the diamond source are single-valued
+
+===============================================================================
+D. Proper-cubic covariance and local controls
+===============================================================================
+PASS D01 comb expands to 464 distinct raw directional inputs
+PASS D02 every raw input is single-valued
+PASS D03 rotation 00 preserves every canonical row
+PASS D04 rotation 01 preserves every canonical row
+PASS D05 rotation 02 preserves every canonical row
+PASS D06 rotation 03 preserves every canonical row
+PASS D07 rotation 04 preserves every canonical row
+PASS D08 rotation 05 preserves every canonical row
+PASS D09 rotation 06 preserves every canonical row
+PASS D10 rotation 07 preserves every canonical row
+PASS D11 rotation 08 preserves every canonical row
+PASS D12 rotation 09 preserves every canonical row
+PASS D13 rotation 10 preserves every canonical row
+PASS D14 rotation 11 preserves every canonical row
+PASS D15 rotation 12 preserves every canonical row
+PASS D16 rotation 13 preserves every canonical row
+PASS D17 rotation 14 preserves every canonical row
+PASS D18 rotation 15 preserves every canonical row
+PASS D19 rotation 16 preserves every canonical row
+PASS D20 rotation 17 preserves every canonical row
+PASS D21 rotation 18 preserves every canonical row
+PASS D22 rotation 19 preserves every canonical row
+PASS D23 rotation 20 preserves every canonical row
+PASS D24 rotation 21 preserves every canonical row
+PASS D25 rotation 22 preserves every canonical row
+PASS D26 rotation 23 preserves every canonical row
+PASS D27 every certificate/target adjacency is rotation invariant
+PASS D28 no rule input contains the blocked-control role
+
+===============================================================================
+E. Complete asynchronous comb graph
+===============================================================================
+  graph progress: 1,000,000 states / 7,062,073 edges
+  graph progress: 2,000,000 states / 15,994,256 edges
+  graph progress: 2,000,000 states / 15,994,267 edges
+  graph progress: 3,000,000 states / 26,200,112 edges
+  graph progress: 3,000,000 states / 26,200,124 edges
+  graph progress: 4,000,000 states / 37,176,743 edges
+  graph progress: 4,000,000 states / 37,176,751 edges
+PASS E01 exact reachable-state count :: 4,784,509
+PASS E02 exact directed-edge count :: 46,716,061
+PASS E03 graph has one terminal
+PASS E04 sole terminal has all 45 additions :: ((45, 1),)
+PASS E05 terminal is the declared complete comb
+PASS E06 there is no incomplete dead terminal
+PASS E07 no mixed rotated output conflict occurs
+PASS E08 no off-footprint or wrong-content write occurs :: []
+PASS E09 b never appears before q and a
+PASS E10 designated c/COMMIT never appears before q/a/b
+PASS E11 every certificate has reachable formation edges :: (('a', 20), ('b', 2133248), ('c', 366848), ('q', 20))
+PASS E12 no target write is even enabled before COMMIT
+
+===============================================================================
+F. Source and scope contract
+===============================================================================
+FAIL F01 required source exists: FOUR_OPEN_RESERVATION_COMB_CYCLE59_NOTE_2026-07-14.md
+FAIL F02 required source exists: OPEN_SITE_RESERVATION_HANDSHAKE_CYCLE51_NOTE_2026-07-14.md
+FAIL F03 required source exists: SELF_EXTENDING_FRAME_CAGE_RAIL_CYCLE52_NOTE_2026-07-14.md
+FAIL F04 required source exists: FULL_A_BOUNDARY_LAUNCHER_LAST_CYCLE57_NOTE_2026-07-14.md
+PASS F05 required source exists: MINIMAL_AXIOMS_2026-06-29.md
+FAIL F06 note states authority none
+FAIL F07 note makes no axiom-need claim
+FAIL F08 note preserves the bounded candidate-law scope
+FAIL F09 note reports exact graph counts
+FAIL F10 positive result invokes no N1-N8 gate
+
+===============================================================================
+SUMMARY
+===============================================================================
+PASS=102 FAIL=9

@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-kernel-large",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 linear 6 128 1000 400 1",
+ "seed": 90454,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c8407121",
+ "started_utc": "20260920T074734Z",
+ "elapsed_s": 71.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=linear beta=6.0 L=128 T=1000 plateau_|m|=nan lowk_ratio=0.9249 seconds=71"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The 1/r law at equal level on a large three-dimensional plane (covariance column r * C(r)). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 3 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "c90c30e47390c7b72eb5c9f27b51688349e32445e7d2270f5bc8a3644d336acf",
+ "stdout_tail": "dim=3 (event lattice Z^4) menu=linear beta=6.0 L=128 T=1000 T0=400 seed=1; predecessors n=4; sigma^2=0.039931\nmemory table: level, |m|, m.e0\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.9249 (n=948)\n   |k| in [0.3,0.6): 0.9984 (n=6740)\n   |k| in [0.6,1.0): 0.9987 (n=27824)\n   |k| in [1.0,1.5): 1.0003 (n=84000)\n   |k| in [1.5,2.2): 1.0001 (n=257500)\n   |k| in [2.2,3.2): 1.0001 (n=781137)\n   |k| in [3.2,6.0): 0.9999 (n=939002)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.017120  +0.017895  0.957  +0.01789\n     2  +0.007868  +0.008643  0.910  +0.01729\n     3  +0.004791  +0.005560  0.862  +0.01668\n     4  +0.003286  +0.004046  0.812  +0.01618\n     6  +0.001818  +0.002543  0.715  +0.01526\n     8  +0.001099  +0.001794  0.613  +0.01435\n    12  +0.000412  +0.001046  0.394  +0.01256\n    16  +0.000148  +0.000675  0.220  +0.01080\n    24  -0.000049  +0.000308  -0.159  +0.00740\n    32  -0.000091  +0.000133  -0.688  +0.00425\nSUMMARY: dim=3 menu=linear beta=6.0 L=128 T=1000 plateau_|m|=nan lowk_ratio=0.9249 seconds=71\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260920T074845Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-20 block 39 — author checks (not a review PASS)
+Complete axioms memo read before the lens. Exact stationary laws computed before arguing. Refuting pass by linear solves, a site-by-site reference simulator and a literature calibration. One finding folded (neutral-scale multiplier). Census 8/8 in family.

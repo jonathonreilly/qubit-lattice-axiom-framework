@@ -1,0 +1,8 @@
+one vacancy, weights (3,1), normalized reading: 60 states, stationary laws 1; total variation to the static law 134813/674193 = 0.2000; detailed balance True
+one vacancy, weights (3,1), pair-weight reading: 60 states, stationary laws 1; total variation to the static law 0 = 0.0000; detailed balance True
+one vacancy, weights (6,2), normalized reading: 60 states, stationary laws 1; total variation to the static law 325996/1169363 = 0.2788; detailed balance True
+one vacancy, weights (6,2), pair-weight reading: 60 states, stationary laws 1; total variation to the static law 0 = 0.0000; detailed balance True
+two vacancies, weights (3,1), normalized reading: 90 states, stationary laws 1; total variation to the static law 8639049/59119982 = 0.1461; detailed balance False; P(2x2 clump) = 0.1195
+two vacancies, weights (3,1), pair-weight reading: 90 states, stationary laws 1; total variation to the static law 0 = 0.0000; detailed balance True; P(2x2 clump) = 0.2197
+two vacancies, weights (6,2), normalized reading: 90 states, stationary laws 1; total variation to the static law 19729143/65442061 = 0.3015; detailed balance False; P(2x2 clump) = 0.1195
+two vacancies, weights (6,2), pair-weight reading: 90 states, stationary laws 1; total variation to the static law 0 = 0.0000; detailed balance True; P(2x2 clump) = 0.3969

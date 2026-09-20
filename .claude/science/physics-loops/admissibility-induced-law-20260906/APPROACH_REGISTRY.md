@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F39 records that move | the ratio w_y/w_x; the scale cancelling from K; a four-move cycle; the rate zZ_x; sublattice-parallel exchange simulator | block 39 (conditional on a motion clause and a scale) |

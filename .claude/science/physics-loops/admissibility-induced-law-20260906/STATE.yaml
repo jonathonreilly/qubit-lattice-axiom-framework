@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block39: "opened for review 2026-09-20; records that move: pair-weight transit equilibrates to the static law; binding scale invisible to the rule; normalized transit irreversible; rate zZ_x; clumping/jamming map executed; reflection positivity iff scale >= neutral scale; runner 19/0, nine mutations in family; nothing adopted"

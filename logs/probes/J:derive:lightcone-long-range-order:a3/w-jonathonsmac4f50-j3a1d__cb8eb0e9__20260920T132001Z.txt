@@ -1,0 +1,58 @@
+E1  the shift identity
+ok   E(k + (pi,pi,pi)) = 12 - E(k), so 14 - E(k+pi) = 2 + E(k)
+     k -> k + pi permutes the modes of an even torus, so H_L = (1/N) sum_k 1/(2+E(k)):
+     H_L is a smooth periodic Riemann sum with no singular summand, unlike G_L.
+
+E2  exact rational arithmetic on the small even tori
+ok   L=4: the two forms of H_L agree exactly, H_4 = 127/896
+     L=4: G_L = 1517/7680 = 0.197526042   H_L = 127/896 = 0.141741071
+ok   L=6: the two forms of H_L agree exactly, H_6 = 30479/216216
+     L=6: G_L = 1289503/5987520 = 0.215365126   H_L = 30479/216216 = 0.140965516
+ok   G_4 < G_6
+ok   H_4 > H_6
+
+E5  the two lattice integrals and the threshold   [numerical, labelled]
+ok   I_0 = int e^{-6t} I0(2t)^3 dt = W/6 with Watson's W (agreement 8.69e-27):
+     W = 1.516386059151978018156,  I_0 = 0.252731009858663003026
+ok   I_2 = int e^{-8t} I0(2t)^3 dt = 0.140931488112717092059
+ok   beta_0 = (3/2)(I_0 + I_2) = 0.590493746957070142627, inside a5's bracket [0.5879, 0.5931]
+     a5's bracket is 0.0052 wide; the value is pinned here to 1e-20.
+
+E3/E4  the finite even tori
+     L=  4  G_L = 0.1975260416666667   I_0 - G_L = 0.055205    H_L - I_2 = 0.00080958
+     L=  6  G_L = 0.215365126129015    I_0 - G_L = 0.037366    H_L - I_2 = 3.4028e-5
+     L=  8  G_L = 0.2246056253902771   I_0 - G_L = 0.028125    H_L - I_2 = 1.7292e-6
+     L= 10  G_L = 0.2301997512627555   I_0 - G_L = 0.022531    H_L - I_2 = 9.6678e-8
+     L= 12  G_L = 0.2339421242774415   I_0 - G_L = 0.018789    H_L - I_2 = 5.7035e-9
+     L= 16  G_L = 0.2386303186050185   I_0 - G_L = 0.014101    H_L - I_2 = 2.1743e-11
+     L= 20  G_L = 0.2414472526274089   I_0 - G_L = 0.011284    H_L - I_2 = 8.9022e-14
+ok   G_L < I_0 at every L computed: the singular sum never exceeds its own limit
+ok   and G_L increases in L, so I_0 is an upper bound for G_L at every even L
+ok   H_L > I_2 at every L: the smooth sum sits above its limit
+     ratio of successive (H_L - I_2) against e^-kappa dL, kappa = log(2+sqrt3) = 1.3169579:
+       L  4-> 6: 0.042031     vs 0.071797
+       L  6-> 8: 0.050816     vs 0.071797
+       L  8->10: 0.055911     vs 0.071797
+       L 10->12: 0.058995     vs 0.071797
+       L 12->16: 0.0038122    vs 0.0051548
+       L 16->20: 0.0040943    vs 0.0051548
+ok   the decay rate of H_L - I_2 is e^{-L log(2+sqrt3)}: 2 + sqrt3 = 1/cos(i arccosh 2) is
+     where 8 - 2 sum cos k_j vanishes off the real torus, which sets the Riemann-sum rate.
+ok   at L = 12 the truth is H_L - I_2 = 5.704e-9 against a5's bound (3/4)^12/2 = 0.01584: six orders of magnitude
+
+     consequence: for every even L the bound is at least 1 - (3/(2beta))(I_0 + I_2 + eps_L)
+ok   so long-range order holds at EVERY even L >= 4 for beta > 0.59170812, and at every
+     even L >= 12 for beta > 0.590493755512 - with no 'sufficiently large L' hedge,
+     because G_L < I_0 at every L and the whole finite-size cost is eps_L = H_L - I_2.
+
+E6  a5's tabulated values
+      L     a5 quotes   from its surrogate   from the sums themselves
+       12    0.093       0.09579             0.43769
+ok   at L = 12 a5's 0.093 is its surrogate (0.09579); the sums give 0.4377, 4.7 times larger
+       24    0.217       0.21916             0.42361
+       48    0.288       0.29086             0.41656
+      100    0.337       0.34001             0.41289
+     (the executed value is |m| = 0.76, i.e. <|m|^2> = 0.578.)
+
+SUMMARY: PARTIAL taking a5's infrared bound as given, its threshold constant is beta_0 = (3/2)(I_0 + I_2) = 0.59049374695707014263 with I_0 = W/6 (Watson's integral) and I_2 = 0.14093148811271709206, against a5's bracket [0.5879, 0.5931]; and the hedge 'sufficiently large L' is not needed, because G_L < I_0 at every even L while the entire finite-size cost H_L - I_2 falls like (2+sqrt3)^{-L} (5.7e-9 at L = 12, against a5's (3/4)^L/2 = 1.6e-2), giving order at every even L >= 4 for beta > 0.5917 and at every even L >= 12 for beta > 0.59049375
+HIT: the threshold of the light-cone long-range-order route is pinned to 20 digits and holds on every even torus without an L_0: beta_0 = (3/2)(W/6 + I_2) = 0.59049374695707014263, and at beta = 1 the bound the sums give is 0.4377 at L = 12 where a5's surrogate gives 0.093

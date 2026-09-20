@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-kernel",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 1 64 1500 500 2",
+ "seed": 94703,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f236d6b2",
+ "started_utc": "20260920T085823Z",
+ "elapsed_s": 59.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.0 L=64 T=1500 plateau_|m|=0.7612 lowk_ratio=1.0736 seconds=59"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The equal-time kernel under light-cone formation against 7 sigma^2/(2 E(k)(1 - E(k)/14)): normalization by shell, and the covariance column for the 1/r law. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 32 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "d587195455d21bc5027b6060b38bbcc392dbe5504aa7acaa1200847fe73ea687",
+ "stdout_tail": ".7766\n        16  0.7734  +0.7734\n        21  0.7710  +0.7710\n        29  0.7685  +0.7684\n        39  0.7676  +0.7676\n        53  0.7665  +0.7665\n        71  0.7644  +0.7644\n        97  0.7639  +0.7638\n       131  0.7624  +0.7623\n       178  0.7610  +0.7606\n       241  0.7611  +0.7603\n       327  0.7604  +0.7594\n       443  0.7610  +0.7600\n       601  0.7612  +0.7591\n       815  0.7601  +0.7589\n      1106  0.7617  +0.7600\n      1500  0.7601  +0.7579\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.0736 (n=122)\n   |k| in [0.3,0.6): 1.0978 (n=826)\n   |k| in [0.6,1.0): 1.0972 (n=3436)\n   |k| in [1.0,1.5): 1.1000 (n=10554)\n   |k| in [1.5,2.2): 1.1030 (n=32318)\n   |k| in [2.2,3.2): 1.1057 (n=97545)\n   |k| in [3.2,6.0): 1.1055 (n=117342)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.028801  +0.026269  1.096  +0.02627\n     2  +0.020110  +0.018374  1.094  +0.03675\n     3  +0.010980  +0.010024  1.095  +0.03007\n     4  +0.007945  +0.007240  1.097  +0.02896\n     6  +0.004658  +0.004228  1.102  +0.02537\n     8  +0.003082  +0.002787  1.106  +0.02229\n    12  +0.001493  +0.001376  1.085  +0.01652\n    16  +0.000774  +0.000698  1.109  +0.01117\n    24  +0.000299  +0.000101  2.960  +0.00242\n    32  +0.000146  -0.000051  -2.869  -0.00162\nSUMMARY: dim=3 menu=sphere beta=1.0 L=64 T=1500 plateau_|m|=0.7612 lowk_ratio=1.0736 seconds=59\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260920T085922Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

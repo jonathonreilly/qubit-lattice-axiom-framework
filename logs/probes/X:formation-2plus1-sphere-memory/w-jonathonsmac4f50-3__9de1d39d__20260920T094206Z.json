@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-2plus1-sphere-memory",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 2 sphere 2 256 4000 2000 1",
+ "seed": 97326,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9de1d39d",
+ "started_utc": "20260920T094206Z",
+ "elapsed_s": 30.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=2 menu=sphere beta=2.0 L=256 T=4000 plateau_|m|=0.0184 lowk_ratio=0.2847 seconds=30"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The side-by-side comparison for the 3+1 table: the same law on Z^3 (two-dimensional level planes), where block 26 found no plateau at any coupling. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 10 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "5cc268c6322ac7a133f94ff725031a46b0ca4c428f2378f73daa12865e166017",
+ "stdout_tail": "   3  0.7144  +0.7143\n         4  0.6800  +0.6800\n         6  0.6304  +0.6304\n         8  0.5956  +0.5956\n        11  0.5536  +0.5535\n        16  0.5025  +0.5025\n        22  0.4579  +0.4578\n        32  0.4009  +0.4009\n        45  0.3535  +0.3535\n        63  0.2882  +0.2880\n        89  0.2187  +0.2183\n       126  0.1430  +0.1423\n       178  0.0966  +0.0958\n       252  0.0531  +0.0467\n       356  0.0143  +0.0129\n       503  0.0122  -0.0084\n       711  0.0206  +0.0123\n      1004  0.0219  +0.0176\n      1418  0.0222  -0.0037\n      2004  0.0281  -0.0148\n      2831  0.0221  -0.0149\n      4000  0.0204  +0.0049\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.2847 (n=480)\n   |k| in [0.3,0.6): 0.6512 (n=1404)\n   |k| in [0.6,1.0): 0.8315 (n=3324)\n   |k| in [1.0,1.5): 0.9148 (n=6536)\n   |k| in [1.5,2.2): 0.9566 (n=13504)\n   |k| in [2.2,3.2): 0.9790 (n=27838)\n   |k| in [3.2,6.0): 0.9844 (n=12449)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio\n     1  +0.135404  +0.477599  0.284\n     2  +0.072166  +0.397596  0.182\n     3  +0.042651  +0.350823  0.122\n     4  +0.026363  +0.317758  0.083\n     6  +0.010616  +0.271234  0.039\n     8  +0.004519  +0.238278  0.019\n    12  +0.000921  +0.191959  0.005\n    16  -0.000176  +0.159271  -0.001\n    24  -0.000327  +0.113716  -0.003\n    32  -0.000086  +0.082097  -0.001\nSUMMARY: dim=2 menu=sphere beta=2.0 L=256 T=4000 plateau_|m|=0.0184 lowk_ratio=0.2847 seconds=30\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260920T094236Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

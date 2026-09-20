@@ -1,0 +1,32 @@
+{
+ "task": "R:guided_cycle67_bdh_rebind_cycle76_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "guided",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/guided_cycle67_bdh_rebind_cycle76_2026_07_14.py",
+ "seed": 85459,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4b469fa3",
+ "started_utc": "20260920T062419Z",
+ "elapsed_s": 1.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "689a5e878acf711ec51b2107483a6bf3e283e5d66eed35cb64a70b25e30f4e76",
+ "stdout_tail": "FAIL A01 note exists\nPASS A02 source is exactly the Cycle-67 terminal\nPASS A03 YS is the exact fourfold E/L8/L10 class\nPASS A04 YG is the exact fourfold OPEN_B/YS class\nPASS A05 DY is singleton X_B/YG\nPASS A06 DZ remains singleton X_B/L10\nPASS A07 H pair is exact\nPASS A08 guided extension has 39 additions :: 39\nPASS B01 every rotated union input is single-valued\nPASS B02 component raw domains are pairwise disjoint\nPASS C01 official map is exact Cycle-14 B/D/H :: {(2, 1, 0): 'D1', (2, 0, 1): 'D1', (3, 0, 1): 'H1', (3, 1, 0): 'H1', (1, 1, 0): 'B1', (1, 0, 1): 'B1', (1, 2, 0): 'B0', (1, 0, 2): 'B0', (1, 3, 0): 'B1', (2, 2, 0): 'D0', (2, 0, 2): 'D0', (2, 3, 0): 'D1', (2, 1, 1): 'B1', (3, 1, 1): 'D1', (3, 0, 2): 'H0', (3, 2, 0): 'H0', (3, 3, 0): 'H1', (4, 1, 1): 'H1'}\nPASS C02 auxiliaries avoid current official support\nPASS C03 additions avoid next-only support\nPASS D01 every conditional schedule reaches one complete terminal :: (13095, 62667, 1)\nPASS D02 conditional graph has no parasite :: frozenset()\nPASS D03 conditional graph has no conflict :: frozenset()\nPASS E01 translated next header is complete\nPASS E02 translated preparation interface is ready\nPASS E03 next q/a/b/c remain open\n\nNEW_ROWS=29 UNION_ROWS=149 RAW=3,272\nCONDITIONS=57 STATES=13,095 EDGES=62,667\nSUMMARY: 18 PASS / 1 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062420Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

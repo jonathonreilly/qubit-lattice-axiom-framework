@@ -1,0 +1,35 @@
+{
+ "task": "R:meron_half_action_core_split_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "meron",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/meron_half_action_core_split_2026_06_18.py",
+ "seed": 85596,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062636Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4ec8dec835294139c983d0f62a25ba384f4f1e69c25d47abc82cb38286debed0",
+ "stdout_tail": "==============================\n  [PASS] (8*pi^2/g^2)*(1/2) = 4*pi^2/g^2\n         simplified difference = 0\n  [PASS] S_half / S_inst = 1/2\n         ratio = 1/2\n\n==============================================================================\nT2: numerical half-action values\n==============================================================================\n  [PASS] g^2 in {1/2,1,2} gives {8,4,2}*pi^2\n         g^2=1/2: 78.956835208715; g^2=1: 39.478417604357; g^2=2: 19.739208802179\n  [PASS] canonical g^2=1 value is 4*pi^2 ~= 39.4784176044\n         4*pi^2 = 39.4784176043574\n\n==============================================================================\nT3: bounded infrastructure dependency\n==============================================================================\n  [PASS] infrastructure states bounded certificate status\n  [PASS] infrastructure includes Bogomolny bound normalization\n  [PASS] infrastructure includes BPST 8 pi^2 normalization\n  [PASS] infrastructure includes twisted T4 fractional charge arithmetic\n  [PASS] infrastructure runner cache passed\n\n==============================================================================\nT4: parent row cites core split and preserves open gate\n==============================================================================\n  [PASS] parent cites new half-action core split\n  [PASS] parent says boundary construction remains open\n  [PASS] parent does not claim upstream authority for regulator/twist/patching construction\n\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

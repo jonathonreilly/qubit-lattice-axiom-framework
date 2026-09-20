@@ -1,0 +1,10 @@
+PASS: exterior-functor-multiplicativity Gamma(A)Gamma(B)=Gamma(AB) for a noncommuting invertible pair
+PASS: canonical-creation-intertwiner vacuum fixing and Gamma(A)a^dag(f)=a^dag(Af)Gamma(A)
+PASS: positive-log-realization Gamma(t)=exp(dGamma(log t)) on a rotated positive spectrum
+PASS: trace-determinant-identity Tr Gamma(A)=det(1+A)=12 for a nonnormal matrix
+PASS: logarithmic-generator-identity -log Gamma(exp(-2E))/2=dGamma(E)
+PASS: channel-direct-sum-factorization Gamma(x direct-sum y)=Gamma(x) tensor Gamma(y)
+PASS: free-corner-three-channel-composition three-channel tensor log is the sum of occupation energies
+PASS: counterfeit-functor-rejection trace and multiplication survive a sector swap while standard dGamma does not
+PASS: singular-log-boundary Gamma(t) and its trace remain defined but log Gamma(t) is singular
+TOTAL: PASS=9 FAIL=0

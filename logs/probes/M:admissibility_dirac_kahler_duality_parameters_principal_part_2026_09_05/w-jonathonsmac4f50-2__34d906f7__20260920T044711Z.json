@@ -20,11 +20,11 @@
  "stdout_tail": " ms\n[phase] registration: 93303 ms\n[phase] authority: 0 ms\n[phase] construction: 527 ms\n[phase] control: 310 ms\n[phase] bench: 112 ms\n[phase] mechanism: 54 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12679 ms\n[phase] branches: 18779 ms\n[phase] registration: 93522 ms\n[phase] authority: 0 ms\n[phase] construction: 528 ms\n[phase] control: 309 ms\n[phase] bench: 112 ms\n[phase] mechanism: 54 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12618 ms\n[phase] branches: 17244 ms\n[phase] registration: 93349 ms\n[phase] authority: 0 ms\n[phase] construction: 524 ms\n[phase] control: 309 ms\n[phase] bench: 112 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12578 ms\n[phase] branches: 23281 ms\n[phase] registration: 93391 ms\n[phase] authority: 0 ms\n[phase] construction: 526 ms\n[phase] control: 310 ms\n[phase] bench: 112 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12577 ms\n[phase] branches: 22447 ms\n[phase] registration: 93455 ms\n[phase] authority: 0 ms\n[phase] construction: 524 ms\n[phase] control: 308 ms\n[phase] bench: 111 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12577 ms\n[phase] branches: 19676 ms\n[phase] registration: 93388 ms\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j317b",
-  "at_utc": "20260920T054337Z",
+  "at_utc": "20260920T063028Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
-   "ok: log's git sha 34d906f7 differs from the current HEAD 60f9a15a (fine if you pulled since; the run is bound to its sha)",
+   "ok: log's git sha 34d906f7 differs from the current HEAD f2b73089 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "ok: parse field 'expected' not found (log written under an earlier task definition; triaged)",
    "ok: parse field 'observed' not found (log written under an earlier task definition; triaged)"
@@ -32,8 +32,8 @@
  },
  "triage": {
   "verdict": "false-positive",
-  "note": "Second opinion on the same task, same conclusion and same reason as the w-jonathonsmac4f50-1 log of 20260920T030351Z: the task declares parse fields mutation_family_expected/observed and this 2026-09-05 script never prints them, enforcing the census internally instead (main raises AssertionError 'mutation did not fail exactly its own gate'). No text matched the declared patterns because the patterns are not in this script's vocabulary. The census passes: all 26 declared mutations reach TOTAL: PASS=32 FAIL=1, one failing gate each and no INTERNAL-EXCEPTION, and I ran the unmutated baseline at this commit, getting GATES A..I all PASS with TOTAL: PASS=33 FAIL=0.",
+  "note": "Third run of the same census, same stale-parse cause: the task declares parse fields mutation_family_expected/observed that this 2026-09-05 script never prints, enforcing the census internally (main raises AssertionError unless a mutation fails exactly its target gate). The census passes - 26 mutations each at TOTAL: PASS=32 FAIL=1, and I verified the unmutated baseline at this commit gives GATES A..I all PASS with TOTAL: PASS=33 FAIL=0.",
   "by": "w-jonathonsmac4f50-j317b",
-  "at_utc": "20260920T054337Z"
+  "at_utc": "20260920T063028Z"
  }
 }

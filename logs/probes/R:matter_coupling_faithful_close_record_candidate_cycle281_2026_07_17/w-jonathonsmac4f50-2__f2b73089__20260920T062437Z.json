@@ -1,0 +1,31 @@
+{
+ "task": "R:matter_coupling_faithful_close_record_candidate_cycle281_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "matter",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/matter_coupling_faithful_close_record_candidate_cycle281_2026_07_17.py",
+ "seed": 85477,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062437Z",
+ "elapsed_s": 29.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fe464346fe59bd7fbc3181e4c935dcbab3f835d6fa6d57a35c1ebc35b7798e1b",
+ "stdout_tail": "eight': 13, 'nonzero_Walsh_terms': 64, 'check_or_Wilson_leakage': 0}, {'L': 6, 'held_out': True, 'matter_support_union': 18, 'interface_M2': 5, 'total_neighborhood_M2': 23, 'maximum_Q_Pauli_weight': 12, 'maximum_U_I_term_weight': 13, 'nonzero_Walsh_terms': 64, 'check_or_Wilson_leakage': 0}]\nPASS the Q-controlled echo and scalar interface roles are covariant under all 24 proper-cubic frames and full L=3 translations :: {'frame_translation_tests': 648, 'failures': [], 'pointer_archive_close_history_fresh_roles': 'carried scalars'}\n\nARCHIVE / RESET / LAWFUL-DOMAIN FIREWALLS\nPASS one supplied controls-only continuation exports the close to a fresh reversible carrier without changing its history effect :: {'history_effect_change': 0.0, 'fresh_export_residual': 0.0, 'fresh_capacity_is_supplied': True}\nPASS lawful-domain and semantic controls reject malformed interfaces and keep close, occurrence, permanence, and Record distinct :: {'rejected_controls': 3, 'pointer_reset': 'second actual U_I use', 'full_interface_reset': 'inverse reconnection or fresh blank carriers'}\nPASS the bounded result is a constructive partial and creates neither shared obstruction nor axiom pressure :: \nDATA constructor {'gram_error': 0.0, 'intertwiner_error': 0.0, 'inverse_error': 0.0}\nDATA faults {'max_deleted_close_effect_norm': 0.0, 'min_deleted_isometry_residual': 10.677078252031311, 'double_pointer_only_false_close_rank': 7.0}\nSUMMARY PASS 14 FAIL 0\nRESULT CYCLE281_MATTER_COUPLING_FAITHFUL_CLOSE_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062506Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

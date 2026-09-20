@@ -1,0 +1,38 @@
+{
+ "task": "R:meson_os_transfer_source_packet_manifest_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "meson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py",
+ "seed": 85597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062637Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=116 FAIL=0: SCORECARD PASS=116 FAIL=0",
+   "PASS=37 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3f613f23860c5eabe5d5c1dd66e415fb7869ce3847b56bf4a3b6e22b0b83f5df",
+ "stdout_tail": "ck-minor avg == exact finite trace: P0      : det-weighted Wick-minor avg == exact finite trace\n[PASS] cache_contains:P1      : per-config SAME-M Wick minor == exact finite trace: P1      : per-config SAME-M Wick minor == exact finite trace\n[PASS] cache_contains:ASYMPT  : finite normalization vs C_BLOCK-2: ASYMPT  : finite normalization vs C_BLOCK-2\n[PASS] cache_contains:SIGN    : wrong reflection physical max eig: SIGN    : wrong reflection physical max eig\n[PASS] cache_contains:Pdet    : det phase residual / min log|det|: Pdet    : det phase residual / min log|det|\n[PASS] cache_contains:K1 VAC  : ||F|Omega>||: K1 VAC  : ||F|Omega>||\n[PASS] cache_contains:K2 BREAK: per-mode-factorized Berezin gap: K2 BREAK: per-mode-factorized Berezin gap\n[PASS] cache_contains:K3 DIFF : flat(no-det) vs det-weighted gap: K3 DIFF : flat(no-det) vs det-weighted gap\n[PASS] cache_contains:K4 CTRL : single-step block-metric min eig: K4 CTRL : single-step block-metric min eig\n[PASS] cache_contains:K5 GAUGE: ||<Theta(F)F> invariance|| under g: K5 GAUGE: ||<Theta(F)F> invariance|| under g\n[PASS] cache_contains:K5 GAUGE: SAME-M Wick-minor invariance under g: K5 GAUGE: SAME-M Wick-minor invariance under g\n========================================================================================\nSUMMARY: MESON OS SOURCE PACKET PASS=37 FAIL=0\nOUTPUT_JSON=outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

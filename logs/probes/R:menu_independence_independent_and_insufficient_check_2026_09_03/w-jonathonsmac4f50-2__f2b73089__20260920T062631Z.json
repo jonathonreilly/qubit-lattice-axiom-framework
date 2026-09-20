@@ -1,0 +1,35 @@
+{
+ "task": "R:menu_independence_independent_and_insufficient_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "menu",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/menu_independence_independent_and_insufficient_check_2026_09_03.py",
+ "seed": 85591,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062631Z",
+ "elapsed_s": 5.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=46 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b4f9470c5afa13d53c75c15a4e262283f686c9c27e450b066392022063cb0862",
+ "stdout_tail": "-alike in this declared sample, tick and sea each depart from one half at the same condition-edge row\nPASS: T4-vacuity-lemma the menu is a function of the condition, so the candidate sentence holds verbatim\nPASS: T4-candidate-is-vacuous that same law is menu-dependent at 1/3 against 1/2, so the sentence has no force\nPASS: T4-price-is-three three recorded diagnostics concern distinct questions; no minimal or independent price count is proved\nPASS: source-admissibility the local distribution is nearest-neighbor determined and varying\nPASS: source-admissibility-support reading note (3): available and admissible denote that support\nPASS: source-record a record locks exactly one admissible possibility and only records are readable\nPASS: source-parent-clauses the parent states its two clauses as independent conditional clauses\nPASS: surface-status the note keeps its conditional surface and independent audit explicit\nper_element: every menu, possibility, odds value, rank row and record block is checked as a declared element\nper_site: one M_2(C) site under a supplied tuple compiler and one twelve-qubit cube; no wider carrier is asserted\nper_mode: odd and unrestricted sphere-polynomial sections through degree five by exact rational rank\nper_block: the witness law, the abundance certificates, the record blocks and the candidates together\nlattice_wide: executed on the 7^6 alphabet and a 3^3 torus for covariance only; no lattice-wide Born claim\nruntime_seconds: 4.9\nTOTAL: PASS=46 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062636Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/menu_independence_independent_and_insufficient_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

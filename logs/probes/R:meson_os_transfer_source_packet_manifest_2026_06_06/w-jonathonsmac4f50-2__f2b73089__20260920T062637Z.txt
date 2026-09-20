@@ -1,0 +1,41 @@
+[PASS] path_exists:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] note_links:primary_runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] path_exists:primary_runner_cache: logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt
+[PASS] note_links:primary_runner_cache: logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt
+[PASS] source_full_length: bytes=36513
+[PASS] source_contains:def block_fwd_propagator_berezin(: def block_fwd_propagator_berezin(
+[PASS] source_contains:def block_fwd_trace_kernel(: def block_fwd_trace_kernel(
+[PASS] source_contains:def block_metric_spacetime_eigs(: def block_metric_spacetime_eigs(
+[PASS] source_contains:def full_grassmann_packet(: def full_grassmann_packet(
+[PASS] source_contains:def meson_op_on_vacuum_norm(: def meson_op_on_vacuum_norm(
+[PASS] source_contains:def meson_correlator_full_berezin(: def meson_correlator_full_berezin(
+[PASS] source_contains:def meson_trace_kernel(: def meson_trace_kernel(
+[PASS] source_contains:def u_averaged_finite_trace(: def u_averaged_finite_trace(
+[PASS] source_contains:def u_averaged_full_berezin(: def u_averaged_full_berezin(
+[PASS] source_contains:def normalized_gauge_weights(: def normalized_gauge_weights(
+[PASS] source_contains:def gauge_transform_links(: def gauge_transform_links(
+[PASS] source_contains:K1 VAC  : ||F|Omega>||: K1 VAC  : ||F|Omega>||
+[PASS] source_contains:K2 BREAK: per-mode-factorized Berezin gap: K2 BREAK: per-mode-factorized Berezin gap
+[PASS] source_contains:K3 DIFF : flat(no-det) vs det-weighted gap: K3 DIFF : flat(no-det) vs det-weighted gap
+[PASS] source_contains:K4 CTRL : single-step block-metric min eig: K4 CTRL : single-step block-metric min eig
+[PASS] source_contains:K5 GAUGE: SAME-M Wick-minor invariance under g: K5 GAUGE: SAME-M Wick-minor invariance under g
+[PASS] cache_runner_present: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+[PASS] cache_sha_fresh: 28b99471f9377af741a92bf83fbda146d5871ebff8d6bd67855035cda5081da5 == 28b99471f9377af741a92bf83fbda146d5871ebff8d6bd67855035cda5081da5
+[PASS] cache_exit_ok: exit_code=0
+[PASS] cache_status_ok: status=ok
+[PASS] cache_contains:SCORECARD PASS=116 FAIL=0: SCORECARD PASS=116 FAIL=0
+[PASS] cache_contains:P0      : det-weighted Wick-minor avg == exact finite trace: P0      : det-weighted Wick-minor avg == exact finite trace
+[PASS] cache_contains:P1      : per-config SAME-M Wick minor == exact finite trace: P1      : per-config SAME-M Wick minor == exact finite trace
+[PASS] cache_contains:ASYMPT  : finite normalization vs C_BLOCK-2: ASYMPT  : finite normalization vs C_BLOCK-2
+[PASS] cache_contains:SIGN    : wrong reflection physical max eig: SIGN    : wrong reflection physical max eig
+[PASS] cache_contains:Pdet    : det phase residual / min log|det|: Pdet    : det phase residual / min log|det|
+[PASS] cache_contains:K1 VAC  : ||F|Omega>||: K1 VAC  : ||F|Omega>||
+[PASS] cache_contains:K2 BREAK: per-mode-factorized Berezin gap: K2 BREAK: per-mode-factorized Berezin gap
+[PASS] cache_contains:K3 DIFF : flat(no-det) vs det-weighted gap: K3 DIFF : flat(no-det) vs det-weighted gap
+[PASS] cache_contains:K4 CTRL : single-step block-metric min eig: K4 CTRL : single-step block-metric min eig
+[PASS] cache_contains:K5 GAUGE: ||<Theta(F)F> invariance|| under g: K5 GAUGE: ||<Theta(F)F> invariance|| under g
+[PASS] cache_contains:K5 GAUGE: SAME-M Wick-minor invariance under g: K5 GAUGE: SAME-M Wick-minor invariance under g
+========================================================================================
+SUMMARY: MESON OS SOURCE PACKET PASS=37 FAIL=0
+OUTPUT_JSON=outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json
+========================================================================================

@@ -1,0 +1,81 @@
+
+===============================================================================
+A - Sources, authority, and live-surface boundary
+===============================================================================
+PASS A source exists: measure_twice_final_minimum_axiom_cut_readiness_2026_07_14.py
+FAIL A source exists: MEASURE_TWICE_FINAL_MINIMUM_AXIOM_CUT_READINESS_NOTE_2026-07-14.md
+PASS A source exists: MINIMAL_AXIOMS_2026-06-29.md
+PASS A source exists: axiom_premise_nodes.json
+PASS A source exists: AXIOM_MINIMALITY_POLICY.md
+PASS A source exists: audit_companion_minimal_axioms_clean_base_exact.py
+PASS A source exists: vocab_lint.py
+PASS A source exists: controlled_vocabulary.yaml
+FAIL A source exists: EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md
+FAIL A source exists: EXACT_LAW_IRREDUCIBLE_CONTENT_INDEPENDENCE_TOURNAMENT_NOTE_2026-07-14.md
+FAIL A source exists: MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md
+FAIL A source exists: MINIMUM_AXIOM_UPDATE_EXERCISE_SYNTHESIS_AND_CUT_GATE_NOTE_2026-07-14.md
+FAIL A source exists: MOVING_LOGICAL_APPARATUS_APPEND_FRONT_CYCLE34_NOTE_2026-07-14.md
+FAIL A source exists: FINAL_MISSING_CONTENT_CENSUS_AND_CONSTITUTIONAL_EDIT_GATE_CYCLE35_NOTE_2026-07-14.md
+FAIL A source exists: CUBIC_CZ_EDGE_RULE_UNIQUENESS_SELECTION_CYCLE36_NOTE_2026-07-14.md
+FAIL A source exists: TEMPORAL_PROTOCOL_EQUIVALENCE_ALTERNATING_FRAME_CYCLE39_NOTE_2026-07-14.md
+FAIL A source exists: CUBIC_ONE_QUBIT_CLIFFORD_QCA_UNIQUENESS_CYCLE40_NOTE_2026-07-14.md
+FAIL A source exists: COMPLETE_CANDIDATE_LSTAR_ASSEMBLY_CYCLE41_NOTE_2026-07-14.md
+FAIL A source exists: REALIZED_HISTORY_EXACT_LAW_IDENTIFIABILITY_CYCLE42_NOTE_2026-07-14.md
+FAIL A source exists: STRICT_NN_RECORD_LAW_COMPILER_CYCLE43_NOTE_2026-07-14.md
+FAIL A source exists: PROTECTED_MATTER_TRANSPORT_CYCLE44_NOTE_2026-07-14.md
+FAIL A source exists: COMPLETE_HISTORY_RECONSTRUCTION_CYCLE45_NOTE_2026-07-14.md
+FAIL A source exists: CAUSAL_ORDER_RECORD_DENSITY_METRIC_RECONSTRUCTION_CYCLE46_NOTE_2026-07-14.md
+FAIL A source exists: SEED_ORBIT_WRITE_ONCE_TRANSDUCER_CYCLE47_NOTE_2026-07-14.md
+FAIL A source exists: RECORD_DERIVED_COHERENT_CARRIER_DECODER_CYCLE48_NOTE_2026-07-14.md
+FAIL A source exists: SELF_DESCRIBING_LAW_FOUNDATION_SELECTION_CYCLE49_NOTE_2026-07-14.md
+FAIL A source exists: FRAME_CAGED_LOCAL_MOTIF_CYCLE50_NOTE_2026-07-14.md
+FAIL A source exists: OPEN_SITE_RESERVATION_HANDSHAKE_CYCLE51_NOTE_2026-07-14.md
+FAIL A source exists: SELF_EXTENDING_FRAME_CAGE_RAIL_CYCLE52_NOTE_2026-07-14.md
+FAIL A source exists: OFFICIAL_SEED_TO_RAIL_NUCLEATION_CYCLE53_NOTE_2026-07-14.md
+FAIL A source exists: AUXILIARY_PAIR_COMPLETION_GATE_CYCLE54_NOTE_2026-07-14.md
+FAIL A source exists: LAUNCHER_LAST_FIRST_ROLE_DIFFERENTIATION_CYCLE55_NOTE_2026-07-14.md
+PASS A source exists: exact_predictive_specification_tournament_2026_07_14.py
+PASS A source exists: exact_law_irreducible_content_independence_tournament_2026_07_14.py
+PASS A source exists: minimum_constitutional_content_exhaustion_ledger_2026_07_14.py
+PASS A source exists: minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py
+PASS A source exists: moving_logical_apparatus_append_front_cycle34_2026_07_14.py
+PASS A source exists: final_missing_content_census_constitutional_edit_gate_cycle35_2026_07_14.py
+PASS A source exists: cubic_cz_edge_rule_uniqueness_selection_cycle36_2026_07_14.py
+PASS A source exists: temporal_protocol_equivalence_alternating_frame_cycle39_2026_07_14.py
+PASS A source exists: cubic_one_qubit_clifford_qca_uniqueness_cycle40_2026_07_14.py
+PASS A source exists: complete_candidate_lstar_assembly_cycle41_2026_07_14.py
+PASS A source exists: realized_history_exact_law_identifiability_cycle42_2026_07_14.py
+PASS A source exists: strict_nn_record_law_compiler_cycle43_2026_07_14.py
+PASS A source exists: protected_matter_transport_cycle44_2026_07_14.py
+PASS A source exists: complete_history_reconstruction_cycle45_2026_07_14.py
+PASS A source exists: causal_order_record_density_metric_reconstruction_cycle46_2026_07_14.py
+PASS A source exists: seed_orbit_write_once_transducer_cycle47_2026_07_14.py
+PASS A source exists: record_derived_coherent_carrier_decoder_cycle48_2026_07_14.py
+PASS A source exists: self_describing_law_foundation_selection_cycle49_2026_07_14.py
+PASS A source exists: frame_caged_local_motif_cycle50_2026_07_14.py
+PASS A source exists: open_site_reservation_handshake_cycle51_2026_07_14.py
+PASS A source exists: self_extending_frame_cage_rail_cycle52_2026_07_14.py
+PASS A source exists: official_seed_to_rail_nucleation_cycle53_2026_07_14.py
+PASS A source exists: auxiliary_pair_completion_gate_cycle54_2026_07_14.py
+PASS A source exists: launcher_last_first_role_differentiation_cycle55_2026_07_14.py
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/measure_twice_final_minimum_axiom_cut_readiness_2026_07_14.py", line 601, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/measure_twice_final_minimum_axiom_cut_readiness_2026_07_14.py", line 580, in main
+    source_contract()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/measure_twice_final_minimum_axiom_cut_readiness_2026_07_14.py", line 241, in source_contract
+    note = normalized(NOTE)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/measure_twice_final_minimum_axiom_cut_readiness_2026_07_14.py", line 212, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/MEASURE_TWICE_FINAL_MINIMUM_AXIOM_CUT_READINESS_NOTE_2026-07-14.md'

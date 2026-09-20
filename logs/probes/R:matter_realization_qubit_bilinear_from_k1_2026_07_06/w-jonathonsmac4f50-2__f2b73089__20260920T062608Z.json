@@ -1,0 +1,42 @@
+{
+ "task": "R:matter_realization_qubit_bilinear_from_k1_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "matter",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/matter_realization_qubit_bilinear_from_k1_2026_07_06.py",
+ "seed": 85568,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062608Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=0 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f4c1d524893e9c050084c51707f934af7eac502e18d47fce1da23336a84ee0a5",
+ "stdout_tail": "[FAIL] [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md'\nTOTAL PASS=0 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062608Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=0 FAIL=1' vs cache 'PASS=9 FAIL=0'"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062608Z"
+ }
+}

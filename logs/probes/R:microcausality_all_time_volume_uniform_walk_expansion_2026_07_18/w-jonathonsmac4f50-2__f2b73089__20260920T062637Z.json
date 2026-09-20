@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_all_time_volume_uniform_walk_expansion_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/microcausality_all_time_volume_uniform_walk_expansion_2026_07_18.py",
+ "seed": 85597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062637Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d55c0b0430a8df191df4b206b3f446f7f255edc1e27d3b203c337a913eb7c5b9",
+ "stdout_tail": "ssembly identity (symbolic zero)\nPASS: G4c remainder ratio < 1 past the threshold (symbolic) and instance\nPASS: G4d previous-bond Jacobi flow matches the direct derivative exactly\nPASS: G4e self-bond-forcing mutation is killed on the three-site chain\nPASS: G4f direct finite-chain expansion first vanishes and second reaches\nPASS: G4g exact k=2 coefficient obeys the headline walk majorant\nPASS: G5a bonds incident to one site = 6 exactly\nPASS: G5b bond-adjacency degree = 10 exactly, box-stable (5 and 7)\nPASS: G5c walk counts: |W_2| = 60 = 6*10 and 100 = 10^2 for EVERY start bond\nPASS: G5d reach lemma sharp at d = 3: lengths 1,2 never, length 3 yes\nPASS: G5e walk sites stay within distance k of X (k = 1, 2, 3)\nPASS: G6a coefficient assembly (2J)^k n 10^(k-1) = (n/10)(20J)^k\nPASS: G6b tail lemma: binomial >= 1 mechanism and exact partial instance\nPASS: G6c cone-decay ratio 20Jt/(d+1) < 1 (instance J=1, t=1/10, d=2)\nPASS: G6d large-d smallness certificate 3^200 200^800/800! < 10^-40\nPASS: G6e disjoint supports commute (d >= 1) and the d = 0 rejector trips\nPASS: G6e2 nonempty-support distance is defined; empty support is rejected\nPASS: G6e3 d = 0 exclusion is necessary: ||[A,B]|| = 2 > 1/5 = claimed RHS\nPASS: G6e4 empty-bond J=0 convention and disconnected evolution are static\nPASS: G6f mu-reweighting identity (symbolic); drop via exponent comparison (symbolic) plus exp-monotonicity instances\nPASS: G6g mu-bound instance: sum_{k>=2} (3/2)^k/k! < e^{-2 + (3/2)e}\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062638Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

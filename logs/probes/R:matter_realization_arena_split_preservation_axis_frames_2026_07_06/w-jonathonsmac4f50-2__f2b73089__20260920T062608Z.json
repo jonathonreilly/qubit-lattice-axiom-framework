@@ -1,0 +1,34 @@
+{
+ "task": "R:matter_realization_arena_split_preservation_axis_frames_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "matter",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py",
+ "seed": 85568,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062608Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "49860add5e19f3c4d1477815c3e909b97d95594a15127cb57161a004b519353a",
+ "stdout_tail": "[PASS] text audits: every source quote from files 1-4 is present\n[PASS] SWAP algebra and Sym/Anti projectors have exact ranks 3/1\n[PASS] 16 elementary-pair identity S(A tensor B)S = B tensor A\n[PASS] diagonal Pauli lifts commute with SWAP\n[PASS] one-sided sigma3 tensor I moves Sym into Anti by exact witness\n[PASS] KS relative frames: T(x+mu)T(x)^-1 = eta_mu(x) sigma_mu\n[PASS] twisted exchanges S'_mu commute with S and have joint dims 2,1,1,0\n[PASS] AST self-scan: no banned imports/calls and no float constants\nDECLARATION verdict=SPLIT_PRESERVATION_EXACT_FOR_EDGE_DIAG_CLASS; ks_frame_transport=IN_CLASS; open_bridge=KS-HOP-BRIDGE; condition=EDGE-DIAG; joint_dims={(S=+,S'=+):2,(+,-):1,(-,+):1,(-,-):0}; not_consumed=K1_audit,color_carrier,beyond_KS,dynamics_statistics\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062608Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

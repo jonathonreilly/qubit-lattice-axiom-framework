@@ -1,0 +1,35 @@
+{
+ "task": "R:massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "massive",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.py",
+ "seed": 85475,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062435Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f00aac84411f066ade31329afe06c69a7b20876eb9a643704e36295d700e190b",
+ "stdout_tail": "25,\n  \"conditional_Gaussian_correct_error\": 1.920758027828646e-14,\n  \"doubled_exponent_rejected_error\": 0.23731529533303491\n}\nPASS: check_signed_source\nper_element: integer loop boundaries, Clifford traces and a full-box Fourier-type counterexample are checked\nper_site: exact integer cochain contraction verifies sector labels without a real-rank torsion assumption\nper_mode: curl and Bianchi symbols test covariance discontinuity and the closed-current response counterexample\nper_block: determinant derivatives, normalized compact marginals and signed-source integrals use separate representations\nlattice_wide: volume-uniform analytic bounds are proved in the note; compact infrared and Hamiltonian matching remain open\nInternal finite assertions: 48895 (not independent scientific results)\nTOTAL: PASS=7 FAIL=0\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062436Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/massive_wilson_loop_curvature_noncompact_covariance_and_compact_defect_bounds_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

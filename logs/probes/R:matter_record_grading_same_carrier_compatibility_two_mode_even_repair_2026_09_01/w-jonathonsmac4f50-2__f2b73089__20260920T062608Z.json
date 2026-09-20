@@ -1,0 +1,35 @@
+{
+ "task": "R:matter_record_grading_same_carrier_compatibility_two_mode_even_repair_2026_09_01",
+ "type": "runner-reexecution",
+ "lane": "matter",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/matter_record_grading_same_carrier_compatibility_two_mode_even_repair_2026_09_01.py",
+ "seed": 85568,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062608Z",
+ "elapsed_s": 22.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fcdf6426509c76204f905af6e493c36a244fea608f12e0e13c3214ca6a0fb91e",
+ "stdout_tail": "rd=1)=(encoded_sum+1)/14 is normalized, varying and invariant for 24 cubic rotations; memo_text_bound=True finite_scope=True rule=True formed=729 varies=True persistent_histories=1458/1458 local_twin=True\nPASS decision_and_scope: same-carrier trilemma plus exact repair is AXIOM_DECISION_READY; owner choice remains G/M/D; zero audit/obligation/TOE movement\nPASS hostile_mutation_gate: 31/31 designated mutations rejected\nN5_EXECUTION per_element: six projectors, grading action, commutant, logical effects and Choi matrices executed\nN5_EXECUTION per_site: one-mode lower bound, four physical qubit matter/Record typing, parity and local readout twins executed\nN5_EXECUTION per_mode: two-mode even logical Pauli algebra, arbitrary-axis writer spectrum and exact repeatability executed\nN5_EXECUTION per_block: two matter plus two Record carriers, graded and ordinary cross-site relations and 24 cubic rotations executed\nN5_EXECUTION lattice_wide: checked and not executed - no covariant dynamic role assignment, full collision process, state, action or physical-identification law is supplied\nSUMMARY same_carrier=CONDITIONAL_INCOMPATIBILITY two_mode_even_repair=PASS typed_matter_record_candidate=PASS statistics_selection=OPEN axiom_decision_status=PROPOSAL_ONLY global_model=UNESTABLISHED historical_shipping_label=BACKLOG_NO_PR audit_status=unset obligation_retirement=0 toe_percentage_movement=0 input_sha256=719f543310604fc4c5647f68299947c439b9f21e50d9643127e38a94a7cd405e\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062631Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

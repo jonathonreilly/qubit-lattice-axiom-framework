@@ -1,0 +1,14 @@
+PASS: parallel-height-table exact {-2:1,-1:4,+1:4,+2:1}, box-stable
+PASS: transverse-height-table exact {-1:2,0:6,+1:2} for both orientations
+PASS: tilt-polynomials reconstructed term-by-term with untilted value 10
+PASS: tilt-domination exact positive factorization
+PASS: walk-row-bound both bond types bounded by S_parallel for y>=1
+PASS: indicator-bound exact threshold and below-threshold instances
+PASS: axis-offset-witness exact 2m-2 offset and m=1 counterexample to 2m-1
+PASS: series-assembly reconstructed parent k-term sums to theorem display
+PASS: display-decay exact y=5/2 spatial factor (4/25)^m
+PASS: offset-prefactor-mutation two-site slope rejects coupled 2m-1 and y/S edit
+PASS: scan-value S_parallel(5/2)=1801/100 exactly
+PASS: parent-comparison exact positive-series lower bounds and rational margin
+PASS: scan-interval-comparisons rational atanh bounds prove all five pairs
+TOTAL: PASS=13 FAIL=0

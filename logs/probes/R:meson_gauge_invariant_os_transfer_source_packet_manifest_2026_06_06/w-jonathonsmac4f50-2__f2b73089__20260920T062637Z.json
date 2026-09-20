@@ -1,0 +1,38 @@
+{
+ "task": "R:meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "meson",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py",
+ "seed": 85597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062637Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=116 FAIL=0: SCORECARD PASS=116 FAIL=0",
+   "PASS=36 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f9b38006a93fd6c19914ad81ef620992d054a290f11e394e5433acd3fc3495a4",
+ "stdout_tail": "AME-M Wick minor == exact finite trace\n[PASS] cache_contains:primary_cache:P0      : det-weighted Wick-minor avg == exact finite trace: P0      : det-weighted Wick-minor avg == exact finite trace\n[PASS] cache_contains:primary_cache:Pdet    : det phase residual / min log|det|: Pdet    : det phase residual / min log|det|\n[PASS] cache_contains:primary_cache:K2 BREAK: per-mode-factorized Berezin gap: K2 BREAK: per-mode-factorized Berezin gap\n[PASS] cache_contains:primary_cache:K5 GAUGE: SAME-M Wick-minor invariance under g: K5 GAUGE: SAME-M Wick-minor invariance under g\n[PASS] cache_contains:primary_cache:K5 GAUGE: Wilson-line covariance residual: K5 GAUGE: Wilson-line covariance residual\n[PASS] cache_contains:primary_cache:This verifies the gauge-invariant meson SAME-M Wick-minor==exact finite trace: This verifies the gauge-invariant meson SAME-M Wick-minor==exact finite trace\n[PASS] cache_contains:primary_cache:SCORECARD PASS=116 FAIL=0: SCORECARD PASS=116 FAIL=0\n[PASS] note_has_source_packet_reaudit_section: meson note has the 2026-07-29 same-matrix repair section\n[PASS] note_preserves_bounded_boundary: note states that status movement remains audit-owned\n======================================================================================\nSUMMARY: MESON OS TRANSFER SOURCE PACKET PASS=36 FAIL=0\n======================================================================================\nOutput written: outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

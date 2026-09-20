@@ -1,0 +1,38 @@
+{
+ "task": "R:measure_twice_constitutional_decision_gate_2026_07_13",
+ "type": "runner-reexecution",
+ "lane": "measure",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/measure_twice_constitutional_decision_gate_2026_07_13.py",
+ "seed": 85591,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062631Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "93856d9cf730b90f8a816a8b3cc13dfd2fadee93faec55da32c492575cd9454e",
+ "stdout_tail": "==============================================================================\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/measure_twice_constitutional_decision_gate_2026_07_13.py\", line 224, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/measure_twice_constitutional_decision_gate_2026_07_13.py\", line 210, in main\n    source_contract()\n  File \"/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/measure_twice_constitutional_decision_gate_2026_07_13.py\", line 46, in source_contract\n    note = NOTE.read_text(encoding=\"utf-8\").lower()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/MEASURE_TWICE_CONSTITUTIONAL_DECISION_PACKET_NOTE_2026-07-13.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062631Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/MEASURE_TWICE_CONSTITUTIONAL_DECISION_PACKET_NOTE_2026-07-13.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062631Z"
+ }
+}

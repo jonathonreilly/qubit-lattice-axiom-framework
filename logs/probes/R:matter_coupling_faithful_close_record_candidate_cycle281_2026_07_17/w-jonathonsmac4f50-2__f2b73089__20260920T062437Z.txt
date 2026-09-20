@@ -1,0 +1,28 @@
+PASS the note preserves the same-code, fault, resource, semantic, and N1-N8 contract :: ()
+
+SAME-POINTER COUPLE-ARCHIVE-RECOUPLE CONSTRUCTOR
+PASS the exact Cycle-278 pointer gives a coherent positive-contact close and history packet after coupling-mediated reset :: {'isometry_Gram_error': 0.0, 'intertwiner_error': 0.0, 'close_effect_minus_Q': 0.0, 'history_effect_minus_Q': 0.0, 'final_pointer_one_effect': 0.0}
+PASS the complete finite interface is reversible and reconnecting its archive erases close rather than proving permanence :: 0.0
+PASS a coherent inactive/active input retains both branches and yields dephasing only after archive restriction :: {'close_weight': 0.4999999999999999, 'reduced_dephasing_residual': 0.0, 'branch_selected': False}
+
+SPLIT DELETIONS / STRONGER SUBSTITUTION BOUNDARY
+PASS deleting either actual matter-pointer coupling leg while the complete auxiliary schedule survives gives zero close and history support :: [{'fault': 'delete_first_U_I', 'close_effect_norm': 0.0, 'history_effect_norm': 0.0, 'isometry_residual_from_ideal': 10.677078252031311, 'all_auxiliary_gates_survive': True}, {'fault': 'delete_second_U_I', 'close_effect_norm': 0.0, 'history_effect_norm': 0.0, 'isometry_residual_from_ideal': 10.677078252031311, 'all_auxiliary_gates_survive': True}, {'fault': 'delete_both_U_I', 'close_effect_norm': 0.0, 'history_effect_norm': 0.0, 'isometry_residual_from_ideal': 10.677078252031311, 'all_auxiliary_gates_survive': True}, {'fault': 'delete_archive_writer', 'close_effect_norm': 0.0, 'history_effect_norm': 0.0, 'isometry_residual_from_ideal': 10.677078252031311, 'all_auxiliary_gates_survive': False}]
+PASS close-writer and history-export deletions cannot create a false positive :: 
+PASS pointer-only substitutions are not hidden: single substitutions alter the full packet and double substitution falsely closes the seven-dimensional inactive sector :: [{'fault': 'pointer_only_first', 'isometry_residual': 3.7416573867739413, 'close_minus_Q': 0.0, 'false_close_rank_on_Q0': 0, 'final_pointer_effect_norm': 2.6457513110645907}, {'fault': 'pointer_only_second', 'isometry_residual': 3.7416573867739413, 'close_minus_Q': 0.0, 'false_close_rank_on_Q0': 0, 'final_pointer_effect_norm': 2.6457513110645907}, {'fault': 'pointer_only_both', 'isometry_residual': 3.7416573867739413, 'close_minus_Q': 2.6457513110645907, 'false_close_rank_on_Q0': 7, 'final_pointer_effect_norm': 0.0}]
+
+ACTUAL CONTACT / MASS / CONDITIONAL WEIGHTS
+PASS the close effect is the support of the actual contact fixture and is identity-free on the one-particle mass sector :: {'Q_coin_commutator': 0.0, 'Q_contact_commutator': 0.0, 'one_particle_close_weight': 0}
+PASS the faithful positive close reproduces the Cycle-278 contact weights and all vanish under a split coupling deletion :: [{'state': 'uniform', 'close_weight': 0.890625, 'expected': '57/64', 'delete_first_close_weight': 0.0}, {'state': 'B0_plus', 'close_weight': 0.8125, 'expected': '13/16', 'delete_first_close_weight': 0.0}, {'state': 'B0_minus', 'close_weight': 0.96875, 'expected': '31/32', 'delete_first_close_weight': 0.0}]
+
+CONNECTED EDGE CODE / SUPPORT / ALL-24 COVARIANCE
+PASS the close remains on the Cycle-278 connected edge code with bounded 23-M2 support and constant five-M2 interface through held-out L=6 :: [{'L': 3, 'held_out': False, 'matter_support_union': 18, 'interface_M2': 5, 'total_neighborhood_M2': 23, 'maximum_Q_Pauli_weight': 12, 'maximum_U_I_term_weight': 13, 'nonzero_Walsh_terms': 64, 'check_or_Wilson_leakage': 0}, {'L': 4, 'held_out': False, 'matter_support_union': 18, 'interface_M2': 5, 'total_neighborhood_M2': 23, 'maximum_Q_Pauli_weight': 12, 'maximum_U_I_term_weight': 13, 'nonzero_Walsh_terms': 64, 'check_or_Wilson_leakage': 0}, {'L': 5, 'held_out': False, 'matter_support_union': 18, 'interface_M2': 5, 'total_neighborhood_M2': 23, 'maximum_Q_Pauli_weight': 12, 'maximum_U_I_term_weight': 13, 'nonzero_Walsh_terms': 64, 'check_or_Wilson_leakage': 0}, {'L': 6, 'held_out': True, 'matter_support_union': 18, 'interface_M2': 5, 'total_neighborhood_M2': 23, 'maximum_Q_Pauli_weight': 12, 'maximum_U_I_term_weight': 13, 'nonzero_Walsh_terms': 64, 'check_or_Wilson_leakage': 0}]
+PASS the Q-controlled echo and scalar interface roles are covariant under all 24 proper-cubic frames and full L=3 translations :: {'frame_translation_tests': 648, 'failures': [], 'pointer_archive_close_history_fresh_roles': 'carried scalars'}
+
+ARCHIVE / RESET / LAWFUL-DOMAIN FIREWALLS
+PASS one supplied controls-only continuation exports the close to a fresh reversible carrier without changing its history effect :: {'history_effect_change': 0.0, 'fresh_export_residual': 0.0, 'fresh_capacity_is_supplied': True}
+PASS lawful-domain and semantic controls reject malformed interfaces and keep close, occurrence, permanence, and Record distinct :: {'rejected_controls': 3, 'pointer_reset': 'second actual U_I use', 'full_interface_reset': 'inverse reconnection or fresh blank carriers'}
+PASS the bounded result is a constructive partial and creates neither shared obstruction nor axiom pressure :: 
+DATA constructor {'gram_error': 0.0, 'intertwiner_error': 0.0, 'inverse_error': 0.0}
+DATA faults {'max_deleted_close_effect_norm': 0.0, 'min_deleted_isometry_residual': 10.677078252031311, 'double_pointer_only_false_close_rank': 7.0}
+SUMMARY PASS 14 FAIL 0
+RESULT CYCLE281_MATTER_COUPLING_FAITHFUL_CLOSE_GREEN

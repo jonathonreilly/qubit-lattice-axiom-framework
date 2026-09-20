@@ -19,14 +19,21 @@
  "stdout_sha256": "76fbf945226b76020d2b8480ad77711b8f0f4f293aabf598dd9ef0bffe11016d",
  "stdout_tail": "748852, 'fixed_N_branch_charge': [1.8136226166995408, 1.8136226166995408]}\nPASS the equal-N Cycle-289 contact branches separate number charge from contact action :: {'number_charge': [1.8136226166995408, 1.8136226166995408], 'contact_action_coordinate': [0.37, 2.2199999999999998]}\nPASS the candidate mass/source charge is spectator invariant :: {'base': 0.4534056541748852, 'with_spectator': 0.4534056541748854}\n\nFINITE-COIN STATIC SOURCE / RESPONSE FIXTURE\nPASS the mass-normalized number charge matches the Cycle-216 scalar source port and exact static Green response :: {'mass_charge': 0.4534056541748852, 'green_match_residual': 4.0029940758302564e-15, 'composition_residual': 0.0}\nPASS the direct number current is phase robust but the selected Cycle-216 stiffness response retains its explicit phase-reference import :: {'base_scalar_response': 12.133172216206441, 'phase_shifted_scalar_response': 41.05831967362574, 'alpha': 0.4}\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS invalid size, radius, and beta inputs are rejected rather than extrapolated :: {'rejected': 3}\nPASS the runner keeps the action, source, stiffness, clock, phase zero, state, and physical interpretation supplied :: {'supplied': 'Cycle-269 mapped even-CAR code; six-direction coins; beta and mass map; contact coupling/order; diagonal separation basis and radius; periodic boundary; Q=mN source identification; Cycle-216 stiffness/action and phase zero; zero-mode subtraction; prepared source/state'}\n\nTOTAL PASS=22 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260920T062254Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T063028Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 4b469fa3 differs from the current HEAD f2b73089 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The note this runner reads was archived, not deleted: commit 0b6129121f (archive: execute the densify-freeze migration, owner GO 2026-09-05) moved it from docs/work_history/repo/review_feedback/ to archive/notes/docs/work_history/repo/review_feedback/, and the runner still points at the old path, so its note-exists gate and everything downstream of it fail. The file is present in HEAD at the archive path and its content is not in question.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T063028Z"
  }
 }

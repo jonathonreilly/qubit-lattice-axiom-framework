@@ -1,0 +1,42 @@
+{
+ "task": "R:matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "matter",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+ "seed": 85476,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062436Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=27 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f9d1b420c8ca4ce74504ff195762e442e4c5ae786f33755394769a80274a3c4c",
+ "stdout_tail": "chiral identity] conjugated empty orbital is in occupied shell (1.000000000000), energy negated (0e+00); bulk holonomies stay fixed, while an independently defined APS label remains untested\nPASS R1 [actual even alternative] adding two empty orbitals gives deltaN=2.000000000000, even total N34, projector residual 4.4e-16\nPASS R2 [readout counterexample] identical fixed-Z probabilities, offdiagonal energies 1.000000000000 / -1.000000000000\nPASS R3 [domain counterexample] complex pair gives max imaginary row 0.335410 while total imaginary 1.1e-16; original source restricted to real states\nPASS R4 [actual full gauge] all 3072 directed edge equations, matrix residual 0e+00 and real energy translation 5.6e-17; twist seam included\nSUMMARY: supplied real fixed-N source comparisons; charged even and full-covariance alternatives remain. No physical readout, gravity or APS theorem.\nper_element: checked finite source sums and exact stated scalar identities; physical interpretation is not supplied\nper_site: checked declared coordinate/record/source dictionaries on finite sites; no fine-site formation mechanism follows\nper_mode: checked the stated one-particle or Fourier modes only; no unexecuted interacting or APS boundary spectrum\nper_block: checked named finite preparations, response boxes or sign-field families at their stated tolerances\nlattice_wide: checked and not executed \u2014 no physical infinite-volume formation law or numerical limit error bound is certified\nTOTAL: PASS=27 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T062827Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=27 FAIL=1' vs cache 'TOTAL: PASS=28 FAIL=0'"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "TOTAL: PASS=27 FAIL=1 against the cache's PASS=28 FAIL=0, and the single failure is gate B1, whose delocalisation test is basis-dependent. B1 asserts abs(E_exc - gap) < 1e-12 and ip > 150 and ih > 150 on the two band-edge orbitals U[:,N] and U[:,N-1]. The energy part passes - E_exc = 2.651309 exactly as in the cache - and it is ih = 147 that fails, against the cache's 176. Those eigenvalues are +-1.325654296142 with multiplicity 32 each, so U[:,N] and U[:,N-1] are an arbitrary basis of two 32-dimensional eigenspaces and their individual IPRs are not determined by the physics: drawing 400 random unit vectors in each subspace gives IPR from 132 to 230 for the particle space and 121 to 230 for the hole space, with 5 and 7 percent of draws at or below the threshold 150. The cache's 171/176 and this run's 155/147 are both ordinary members of that range, so the gate turns a LAPACK basis choice into a verdict. Every other gate reproduces the cache; the remaining differences are float noise at 1e-15 to 1e-16 (A2 residual 0 vs 2e-16, A3 8e-15 vs 7e-15, A5 8e-16 vs 1e-15).",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T062827Z"
+ }
+}

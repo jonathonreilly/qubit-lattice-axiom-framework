@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_corner_class_factorization_discharge_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/microcausality_corner_class_factorization_discharge_2026_07_18.py",
+ "seed": 85598,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f2b73089",
+ "started_utc": "20260920T062638Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b693d12d50dd7443d26373ab38f0d200fffae9a9ac0e0c80f83a8f35c731832b",
+ "stdout_tail": "PASS: exterior-functor-multiplicativity Gamma(A)Gamma(B)=Gamma(AB) for a noncommuting invertible pair\nPASS: canonical-creation-intertwiner vacuum fixing and Gamma(A)a^dag(f)=a^dag(Af)Gamma(A)\nPASS: positive-log-realization Gamma(t)=exp(dGamma(log t)) on a rotated positive spectrum\nPASS: trace-determinant-identity Tr Gamma(A)=det(1+A)=12 for a nonnormal matrix\nPASS: logarithmic-generator-identity -log Gamma(exp(-2E))/2=dGamma(E)\nPASS: channel-direct-sum-factorization Gamma(x direct-sum y)=Gamma(x) tensor Gamma(y)\nPASS: free-corner-three-channel-composition three-channel tensor log is the sum of occupation energies\nPASS: counterfeit-functor-rejection trace and multiplication survive a sector swap while standard dGamma does not\nPASS: singular-log-boundary Gamma(t) and its trace remain defined but log Gamma(t) is singular\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T062638Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

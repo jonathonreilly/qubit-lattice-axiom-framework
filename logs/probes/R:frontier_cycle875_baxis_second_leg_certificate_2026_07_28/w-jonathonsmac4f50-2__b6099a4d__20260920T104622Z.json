@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle875_baxis_second_leg_certificate_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.py",
+ "seed": 1182,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6099a4d",
+ "started_utc": "20260920T104622Z",
+ "elapsed_s": 10.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "60d10a66c2ea8bf84eeb63bb4edc509b258afe97d168da3b894a6e656e4faef1",
+ "stdout_tail": "idence subtotal, and obligation O7 is priced to the larger one.\",\"NON-TRANSLATION RESIDUE: 329 across-key F3 factor edges relate distinct gap words by index lag plus offset.  They are NOT pure time translations, so 'CROSS_KEY_TIME_TRANSLATION_DICTIONARY' describes the F1 layer only.  Whether any F relation identifies physical clocks is the OPEN obligation O13, so no unification reading is drawn from these edges.\",\"ACROSS-KEY SCOPE (quoted from the 869 verdict): the across-key comparison first buckets sounding clocks by exact gap-word equality and verifies constant-offset edges only WITHIN those buckets (equal finite gap words already imply a constant offset); it is a within-class verification over the observed class occupancy, not a universal cross-key dictionary claim\"],\"measured_obligations\":[\"O1_RECORD_NATIVITY_FILTER\",\"O2_DECLARED_PREDICTOR_FAMILY_SEARCHED\",\"O3_WITHIN_KEY_BANK_CLOCK_SEARCH\",\"O4_WITHIN_KEY_PAIR_CLOCK_SEARCH\",\"O5_PERIOD_DIVISIBILITY\",\"O6_CROSS_KEY_F1_OFFSET_CENSUS\"],\"open_obligations\":[\"O7_CROSS_KEY_UNCOVERED_RESIDUE\",\"O8_UNRELATED_SUBSTANTIVE_PAIR_RESIDUE\",\"O9_B4_RELATION_FAMILY_UNRUN\",\"O10_FAMILY_CLOSURE\",\"O11_SUBSTRATE_TO_AXIS_PREMISE_TRANSFER\",\"O12_LEG_I_CO_DEPENDENCE\",\"O13_RELATION_TO_IDENTITY_BRIDGE\"],\"pass\":true,\"premise_standing\":\"SINGLE_CLOCK_AXIS_PREMISE_NOT_DISCHARGED__FINITE_MEASUREMENTS_AT_SCOPE_ONLY\",\"runtime_seconds\":10.202,\"tally\":{\"MEASURED_AT_SCOPE\":6,\"OPEN\":6,\"PERMANENTLY_OPEN\":1}}\nCYCLE875_SINGLE_RECORD_CLOCK_SECOND_LEG_MEASUREMENT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104632Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle875_baxis_second_leg_certificate_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle876_grading_affine_chart_algebra_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle876_grading_affine_chart_algebra_2026_08_09.py",
+ "seed": 1192,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6099a4d",
+ "started_utc": "20260920T104632Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e9c620c8ddbaff9d195e8c0e1542c9703bcc132097e91bfc624f2ae9f8a4c1e9",
+ "stdout_tail": "REFUTING the rejected package's scale-quotiented global-maximum claim (216 > 90); every maximality-flavoured statement here is affine-chart scoped only and the projective classification is OPEN\nSTATEMENT response_identity_statement on the STIPULATED two-endpoint graded-source algebra the sector-summed object equals sigma times the conformal channel, so sigma-sensitivity is exactly equivalent to a nonzero sector trace, on all 1296 supports under both endpoint embeddings; whether this stipulated algebra is the physical conformal-mode response of any lane is expressly OPEN\nSTATEMENT joint_intersection_statement CONDITIONAL: if the modeled carried-link constraint and the modeled two-sector constraint are imposed JOINTLY (the constructions they restate are alternative candidate laws, so nothing licenses the conjunction), the rank-2 system meets the chart at exactly (1, 2, 0), chart parameter t = +1; no selection among candidate laws is stated or implied\nSUMMARY_JSON {\"chart_infinity_lawful\":216,\"checks\":{\"A_SCOPE_CONTROLS\":true,\"B_MODEL_BUILD\":true,\"C_EQUIVARIANCE_COLLAPSE\":true,\"D_BALANCE_PLANES\":true,\"E_CHART_NORMAL_FORM\":true,\"F_EXCEPTIONAL_CENSUS\":true,\"G_CHART_INFINITY_CONTROL\":true,\"H_RESPONSE_IDENTITY\":true,\"I_JOINT_INTERSECTION\":true,\"J_FALSIFIERS\":true,\"K_DOUBLE_BUILD\":true,\"L_RUNTIME\":true},\"counts_at_exceptional_values\":{\"-1\":[36,30,30],\"0\":[90,0,0],\"1\":[36,30,30]},\"cycle\":876,\"elapsed_sec\":1.422,\"generic_count\":6,\"pass\":true}\nCYCLE876_GRADING_AFFINE_CHART_ALGEBRA_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104634Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle876_grading_affine_chart_algebra_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

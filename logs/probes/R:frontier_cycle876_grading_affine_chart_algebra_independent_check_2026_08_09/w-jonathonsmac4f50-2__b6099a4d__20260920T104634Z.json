@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle876_grading_affine_chart_algebra_independent_check_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle876_grading_affine_chart_algebra_independent_check_2026_08_09.py",
+ "seed": 1194,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6099a4d",
+ "started_utc": "20260920T104634Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "feb920ff7709d6abc9800581b2b49533fd12592669be94579c8e8e55861cebcd",
+ "stdout_tail": " certified-statement text is replaced by false prose\",\"tooth\":\"tampered_statement_text\"},{\"detected\":true,\"gate\":[\"primary_self_sha_matches\"],\"mutation\":\"the primary's self-declared sha256 is altered by one hex digit\",\"tooth\":\"tampered_primary_sha\"},{\"detected\":true,\"gate\":[\"generic_count\"],\"mutation\":\"the generic lawful count is raised to 7\",\"tooth\":\"tampered_generic_count\"},{\"detected\":true,\"gate\":[\"all_primary_certificates_pass\"],\"mutation\":\"one primary certificate flag is flipped to False\",\"tooth\":\"flipped_primary_check\"}],\"teeth_count\":14,\"teeth_that_bit\":14}\nCERTIFICATE E_RUNTIME PASS {\"budget_sec\":300,\"certificate\":\"E_RUNTIME\",\"elapsed_sec\":1.59,\"pass\":true}\nCLAIM_SURVIVAL {\"achieved_exceptional_values\":true,\"achieved_trace_bearing_values\":true,\"all_primary_certificates_pass\":true,\"always_lawful_is_the_modeled_family\":true,\"balance_plane_normals\":true,\"brute_force_sweep_agrees\":true,\"census_class_counts\":true,\"certified_statement_texts\":true,\"chart_infinity_refutation_flag\":true,\"chart_infinity_triple\":true,\"counts_at_exceptional_values\":true,\"equivariance_rank_and_dimension\":true,\"free_dimension_after_scale_quotient\":true,\"generic_count\":true,\"joint_intersection\":true,\"primary_self_sha_matches\":true,\"response_identity\":true}\nSUMMARY_JSON {\"checker_verdict\":\"CORROBORATES\",\"checks\":{\"A_PINS\":true,\"B_INDEPENDENT_MODEL\":true,\"C_CLAIM_SURVIVAL\":true,\"D_TEETH\":true,\"E_RUNTIME\":true},\"cycle\":876,\"elapsed_sec\":1.59,\"pass\":true}\nCYCLE876_SALVAGE_INDEPENDENT_CHECK_CORROBORATES\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104635Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle876_grading_affine_chart_algebra_independent_check_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

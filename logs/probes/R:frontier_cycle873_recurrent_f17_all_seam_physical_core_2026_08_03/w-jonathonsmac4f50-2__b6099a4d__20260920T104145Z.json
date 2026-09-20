@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py",
+ "seed": 905,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6099a4d",
+ "started_utc": "20260920T104145Z",
+ "elapsed_s": 22.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c2cae9af9a9c868ec8d8a08113133de944fac2ec4c782dea89a6ffb1e1bea589",
+ "stdout_tail": "{\n  \"status\": \"pass\",\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"expected_base_is_ancestor_of_head\": true,\n  \"receipt\": \"outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json\",\n  \"failures\": [],\n  \"secondary_optional_status\": \"pass\",\n  \"secondary_optional_failures\": [],\n  \"fixtures\": [\n    {\n      \"shape\": [\n        2,\n        2,\n        2\n      ],\n      \"seams\": 12,\n      \"F17_only_bank_union_M2\": 240,\n      \"F17_only_logical\": 8808,\n      \"F17_only_routed\": 58280,\n      \"colors\": 12,\n      \"F17_only_parallel_depth\": 58280,\n      \"F17_only_route_union\": 2547,\n      \"F17_only_support_union\": 2787\n    },\n    {\n      \"shape\": [\n        3,\n        3,\n        3\n      ],\n      \"seams\": 54,\n      \"F17_only_bank_union_M2\": 1080,\n      \"F17_only_logical\": 40140,\n      \"F17_only_routed\": 293540,\n      \"colors\": 24,\n      \"F17_only_parallel_depth\": 139776,\n      \"F17_only_route_union\": 11130,\n      \"F17_only_support_union\": 11886\n    },\n    {\n      \"shape\": [\n        3,\n        2,\n        2\n      ],\n      \"seams\": 20,\n      \"F17_only_bank_union_M2\": 400,\n      \"F17_only_logical\": 14744,\n      \"F17_only_routed\": 102968,\n      \"colors\": 16,\n      \"F17_only_parallel_depth\": 84768,\n      \"F17_only_route_union\": 4195,\n      \"F17_only_support_union\": 4547\n    }\n  ]\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104208Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

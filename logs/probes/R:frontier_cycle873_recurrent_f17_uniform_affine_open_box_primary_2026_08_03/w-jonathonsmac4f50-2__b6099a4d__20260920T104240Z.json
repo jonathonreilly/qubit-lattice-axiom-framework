@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py",
+ "seed": 960,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6099a4d",
+ "started_utc": "20260920T104240Z",
+ "elapsed_s": 27.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
+ "stdout_tail": "95274,\n      \"complete_epoch_routed\": 842762,\n      \"cycle_rank\": 28,\n      \"fixed_divergence_dimension\": 28351092476867700887730107366063041,\n      \"links_and_seams\": 54,\n      \"plaquettes\": 36,\n      \"raw_seam_stage_phase\": [\n        -1.0,\n        0.0\n      ],\n      \"shape\": [\n        3,\n        3,\n        3\n      ],\n      \"uniform_plus_sector_dimension\": 1,\n      \"vertices\": 27\n    },\n    {\n      \"Cycle870_full_epoch_formal_correction_angle\": 255.4519095229226,\n      \"F17_bank_M2\": 400,\n      \"checks\": {\n        \"bank\": true,\n        \"constraint_preservation\": true,\n        \"cycle_rank\": true,\n        \"depth\": true,\n        \"factor_order\": true,\n        \"links_equal_seams\": true,\n        \"logical\": true,\n        \"plaquette_span\": true,\n        \"plaquettes\": true,\n        \"raw_stage_phase\": true,\n        \"routed\": true,\n        \"routes\": true,\n        \"unique_uniform_plus_sector\": true,\n        \"vertices\": true\n      },\n      \"complete_epoch_depth\": 317116,\n      \"complete_epoch_logical\": 38740,\n      \"complete_epoch_routed\": 335316,\n      \"cycle_rank\": 9,\n      \"fixed_divergence_dimension\": 118587876497,\n      \"links_and_seams\": 20,\n      \"plaquettes\": 11,\n      \"raw_seam_stage_phase\": [\n        1.0,\n        0.0\n      ],\n      \"shape\": [\n        3,\n        2,\n        2\n      ],\n      \"uniform_plus_sector_dimension\": 1,\n      \"vertices\": 12\n    }\n  ],\n  \"receipt\": \"outputs/cycle873_recurrent_f17_uniform_affine_open_box_primary_receipt_2026_08_03.json\",\n  \"status\": \"pass\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104307Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

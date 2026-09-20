@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle873_tracelessness_provenance_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py",
+ "seed": 987,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6099a4d",
+ "started_utc": "20260920T104307Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f2ca33aced86c1a78bec744b7baee0574236f3a7b7fc4bab2a66f299336b03f4",
+ "stdout_tail": "\"c155a2dafaccde60c17047303c6de358445711c3\",\"git_blob_exact\":true,\"missing_quotes\":[],\"path\":\"scripts/frontier_cycle868_response_sign_census_2026_07_28.py\",\"required_markers\":[\"stipulated_ledger\",\"conformal_channel\",\"grading_operator\",\"response_objects\"],\"required_markers_present\":true,\"required_quote_count\":3,\"sha256\":\"dca6b71b9dec65adbacff348e75085bf2c24fe96f621b949a4c8fb96f74cf89a\",\"sha256_exact\":true}],\"sources_pass\":true,\"stdout_bytes\":44645,\"stdout_limit_bytes\":150000,\"stdout_under_limit\":true,\"writes_nothing_to_disk\":true}\nFINAL {\"checks\":{\"A_PINS\":true,\"B_FORCING_STEP\":true,\"C_EXHAUSTIVE_TARGET_SWEEP\":true,\"D_GRADING_PROVENANCE\":true,\"E_TRACE_BEARING_WITNESS\":true,\"F_CENSUS_REDERIVED\":true,\"G_VERDICT\":true,\"H_CONTROLS\":true},\"cycle868_boundary_1_witnessed\":true,\"fixed_support_lawful_gradings_on_grid\":[\"(1,0,2)\",\"(1,1/2,3/2)\",\"(1,1,1)\",\"(1,3/2,1/2)\",\"(1,2,0)\"],\"lawful_trace_bearing_at_unit_grading\":0,\"lawful_triples_at_unit_grading\":90,\"minimum_nonzero_trace_L1_norm\":2,\"objects_still_blind_under_the_witness\":[\"O2_ADJOINT_PULLBACK\",\"O4_RESPONSE_GRAM\",\"O5_RESPONSE_TENSOR\",\"O6_EDGE_TRANSFER\"],\"runtime_seconds\":4.907764,\"science_payload_sha256\":\"497a21aa433e3298be5a36936889e48803c332e40e5d6125c8ad858248e98c0b\",\"sign_sensitive_objects_under_the_witness\":[\"O1_PUSHFORWARD\",\"O3_FLUX_BALANCE\"],\"stdout_bytes\":44645,\"terminal\":\"CYCLE873_TRACELESSNESS_PROVENANCE_COMPLETE\",\"verdict\":\"TRACELESSNESS_CONDITIONAL_ON_SUPPLIED_UNIT_GRADING__WITNESS_LAWFUL\",\"witness_ledger_sector_sum\":-1}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104312Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

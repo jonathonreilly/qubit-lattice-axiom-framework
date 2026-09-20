@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+  "expected_base_is_ancestor_of_head": true,
+  "receipt": "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json",
+  "failures": [],
+  "secondary_optional_status": "pass",
+  "secondary_optional_failures": [],
+  "fixtures": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "seams": 12,
+      "F17_only_bank_union_M2": 240,
+      "F17_only_logical": 8808,
+      "F17_only_routed": 58280,
+      "colors": 12,
+      "F17_only_parallel_depth": 58280,
+      "F17_only_route_union": 2547,
+      "F17_only_support_union": 2787
+    },
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "seams": 54,
+      "F17_only_bank_union_M2": 1080,
+      "F17_only_logical": 40140,
+      "F17_only_routed": 293540,
+      "colors": 24,
+      "F17_only_parallel_depth": 139776,
+      "F17_only_route_union": 11130,
+      "F17_only_support_union": 11886
+    },
+    {
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "seams": 20,
+      "F17_only_bank_union_M2": 400,
+      "F17_only_logical": 14744,
+      "F17_only_routed": 102968,
+      "colors": 16,
+      "F17_only_parallel_depth": 84768,
+      "F17_only_route_union": 4195,
+      "F17_only_support_union": 4547
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "C219_dispersion_mass": 0.4534056690336209,
+  "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+  "expected_base_is_ancestor_of_head": true,
+  "failures": [],
+  "physical_raw_to_minus_i_residual": 0.0,
+  "primary_imported": false,
+  "receipt": "outputs/cycle873_recurrent_f17_uniform_affine_open_box_independent_check_receipt_2026_08_03.json",
+  "status": "pass"
+}

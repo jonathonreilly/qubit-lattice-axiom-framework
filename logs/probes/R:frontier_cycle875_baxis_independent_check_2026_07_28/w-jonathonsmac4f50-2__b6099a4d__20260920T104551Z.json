@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle875_baxis_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle875_baxis_independent_check_2026_07_28.py",
+ "seed": 1151,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6099a4d",
+ "started_utc": "20260920T104551Z",
+ "elapsed_s": 30.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7789fdfa917d57e04d254d036fc556dd66ddcb4b29f80f6fb267043a0d802814",
+ "stdout_tail": " pair-clock incidences.  Both are PAIR-CLOCK totals.  Over the full corpus the figures are 1328 edges and 229 uncovered clock-family/key incidences (a sum over six labels; not unique keys).  Each of the 1328 edges carries a nonzero offset -- arithmetic only; what an F1 edge means for physical clock identity is the open O13 -- and the uncovered residue does not shrink to the headline.\",\"866 finds a DISTINCT dominant-gap signature for every bank pair at both B=3 (3/3) and B=4 (6/6).  That is signature distinctness, not clock identity: it neither supplies nor denies a second clock, and it is the only B=4 evidence that exists.\",\"leg (i)'s own evidence carries verdict_B=MIXED, so the (i) leg is itself scoped, not clean\",\"The certificate leaves 7 obligations open (O7_CROSS_KEY_UNCOVERED_RESIDUE, O8_UNRELATED_SUBSTANTIVE_PAIR_RESIDUE, O9_B4_RELATION_FAMILY_UNRUN, O10_FAMILY_CLOSURE, O11_SUBSTRATE_TO_AXIS_PREMISE_TRANSFER, O12_LEG_I_CO_DEPENDENCE, O13_RELATION_TO_IDENTITY_BRIDGE) and reports standing SINGLE_CLOCK_AXIS_PREMISE_NOT_DISCHARGED__FINITE_MEASUREMENTS_AT_SCOPE_ONLY.  This checker found no basis to move any of them, and no attempt to move them was made by the primary.\"],\"pass\":true,\"primary_first_run_seconds\":10.376,\"primary_standing\":\"SINGLE_CLOCK_AXIS_PREMISE_NOT_DISCHARGED__FINITE_MEASUREMENTS_AT_SCOPE_ONLY\",\"primary_summary_pass\":true,\"refutations\":[],\"role\":\"INDEPENDENT_CHECK_SPECD_TO_REFUTE\",\"runtime_seconds\":30.689}\nCYCLE875_SINGLE_RECORD_CLOCK_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T104622Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle875_baxis_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

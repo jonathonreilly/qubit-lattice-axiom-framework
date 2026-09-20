@@ -1,0 +1,41 @@
+{
+ "task": "R:frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
+ "seed": 928,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6099a4d",
+ "started_utc": "20260920T104208Z",
+ "elapsed_s": 29.9,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0d811d7e2d06344f22fdaf4becb4ace1d8b7feb059f39f1a0cd91e6ae5c7b5a2",
+ "stdout_tail": "{\n  \"base_commit\": \"c73a11d1ea7ddd564c48aa2a5a459a43d94262ef\",\n  \"base_is_ancestor_of_head\": true,\n  \"cycle873_unused_on_base\": true,\n  \"failures\": [\n    \"upstream citation hash drift\",\n    \"independent cold receipt drift\"\n  ],\n  \"independent_cold_receipt_match\": false,\n  \"package_file_count\": 33,\n  \"primary_cold_receipt_match\": true,\n  \"receipt\": \"outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json\",\n  \"status\": \"fail\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T104618Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '  \"status\": \"fail\"' vs cache '  \"status\": \"pass\"'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The acceptance report flips from status pass to status fail with two entries, 'upstream citation hash drift' and 'independent cold receipt drift', and the drift is the axioms file. Of the 15 upstream citations in outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json exactly one no longer matches: docs/MINIMAL_AXIOMS_2026-06-29.md, pinned at 53175250f045 against the current 93af34cf6fcf. primary_cold_receipt_match stays true; it is the independent cold receipt, which pins the same file, that drifts with it. This is the hash-pin face of the same edit reported in #8501, where 634b1de2f8 dropped the named additive readout clause from the Record axiom and 19 scripts still quote the withdrawn sentence. Scanning outputs/, 22 frozen receipts and manifests pin a stale axioms hash, in two generations: 53175250f045 (pre-634b1de2f8) and an older fc4d60cce815. Nothing in this runner's computation is implicated.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T104618Z"
+ }
+}

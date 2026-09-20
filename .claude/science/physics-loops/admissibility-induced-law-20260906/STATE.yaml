@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block36: "opened for review 2026-09-20; re-recording at every tick (conditional on a clause the memo excludes): static law stationary for the axioms' rule; bilayer ferromagnet, long-range order above beta_0 < 5914/10000 (given block 22), response 7/E; runner 24/0, nine mutations in family; nothing adopted"

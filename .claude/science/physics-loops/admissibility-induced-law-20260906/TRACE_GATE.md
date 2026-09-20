@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 36 (2026-09-20)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 35: no Green-function kernel under write-once formation; the owner's question whether records re-form"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the clause priced exactly (comparator as stationary law; bilayer long-range order; response 7/E); owner decision on the clause"
+```

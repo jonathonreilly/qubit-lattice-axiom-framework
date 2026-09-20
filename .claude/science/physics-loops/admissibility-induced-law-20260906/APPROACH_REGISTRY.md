@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F36 re-recording | detailed balance at one site; parity-class conditional; symmetric double product; bilayer map; reflections + domination + infrared bound + sum rule with bands E, 14 − E; exact propagation | block 36 (conditional on a clause the memo excludes) |

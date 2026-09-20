@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-20 block 36 — author checks (not a review PASS)
+Lens before primary (the bilayer map; the six-site stencil gives the comparator itself). Refuting pass with an acceptance sampler of the equilibrium laws (agreement to 0.001 at three couplings, both stencils) and an exact enumeration of the infrared bound on a two-valued instance (largest ratio 0.318). Consistency test applied: the proved ordering coupling (< 0.5914) lies above the executed onset (between 0.5 and 0.6). Two findings folded (the I₀ bracket made conditional on block 22; the plane-sum bound simplified). Mutation census 9/9 in family. Hand-off to a fresh review-loop; no audit status applied.

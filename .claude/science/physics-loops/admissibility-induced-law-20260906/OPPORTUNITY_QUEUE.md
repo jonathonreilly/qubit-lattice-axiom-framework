@@ -78,3 +78,9 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## 2026-09-20 refresh after block 36
+1. **Owner decision: do records re-form?** Block 36 prices the clause; nothing downstream should be built on it before the decision.
+2. **Blocks from refereed probe inputs (ai/probes), in order:** the ordering threshold `p ≥ 84` on (p,1,2) by refinement histories (after fixing block 30's T1 domain); block 17's corrigendum (bond-plane reflections restore `216·max(q,r)`); the static law outside the hull of adapted formation laws and its infinite-volume separation; uniqueness up to `p = 5.26`; the causal-lattice theorem (every readiness-gated rate, order and antichain-unit clause gives the same law).
+3. **No-go to record:** the tight-sibling lemma is false (explicit one-seed realization, `c* ≥ 10/9`); blocks 32–33's unit budget is unavailable.
+4. **Corrigenda owed** on PRs #8146, #8147, #8149, #8151, #8152, #8158, #8170, #8172, #8173, #8174, #8177, #8178, #8180 (packets on ai/probes).

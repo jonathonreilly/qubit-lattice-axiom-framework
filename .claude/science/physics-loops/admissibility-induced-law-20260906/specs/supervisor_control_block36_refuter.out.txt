@@ -1,0 +1,6 @@
+(a) seven-site stencil, L=12, beta=1.0: chain plateau |m_0| = 0.7699; Metropolis on the doubled graph, one layer: 0.7706; difference -0.0007
+(b) six-site stencil, L=12, beta=1.0: space-time checkerboard of the synchronous chain |m| = 0.6919; Metropolis on the static law: 0.6928; difference -0.0009   (5s)
+(a) seven-site stencil, L=12, beta=1.5: chain plateau |m_0| = 0.8601; Metropolis on the doubled graph, one layer: 0.8594; difference +0.0007
+(b) six-site stencil, L=12, beta=1.5: space-time checkerboard of the synchronous chain |m| = 0.8210; Metropolis on the static law: 0.8206; difference +0.0004   (6s)
+(a) seven-site stencil, L=16, beta=0.75: chain plateau |m_0| = 0.6451; Metropolis on the doubled graph, one layer: 0.6455; difference -0.0004
+(b) six-site stencil, L=16, beta=0.75: space-time checkerboard of the synchronous chain |m| = 0.4507; Metropolis on the static law: 0.4503; difference +0.0003   (11s)

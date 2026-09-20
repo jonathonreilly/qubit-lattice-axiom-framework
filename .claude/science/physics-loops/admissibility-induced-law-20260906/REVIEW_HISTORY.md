@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-20 block 41 — author checks (not a review PASS)
 Three exact facts tested before writing. Refuting pass by site-level enumeration (six witnesses, all pass). Three findings folded: the symmetry lemma in general form, its limit for direction-dependent rules, and T5. Census 13/13 in family.
+
+## 2026-09-20 block 41 — amendment (author; not a review PASS)
+Owner's question: 'why couldnt records interact via the neighborhood probabilities?' T2 belongs to the law in which an empty site has no state; the note now lists the odds of unformed sites as the first route by which its sentences fail and points to block 42 (PR #8548). No theorem text changed; runner unchanged (19/0).

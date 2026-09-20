@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_what_a_source_is_when_records_move_one_mass_per_record_screened_density_signed_tilt_2026_09_20.py
 runner_sha256: f21241d574940e5625b559aa28cd9f7f7832dc3791e0dad2d48f7906afec6c97
-input_fingerprint_sha256: 312191cd939913f3778d9e44b30d263dba22d07bd15f7b2dad3e09199981529f
+input_fingerprint_sha256: 98e1ac5c4267278a62459881aae7ee8622e65ffa12dbb9555ad18bd4adeae7d5
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.07
+elapsed_sec: 1.11
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

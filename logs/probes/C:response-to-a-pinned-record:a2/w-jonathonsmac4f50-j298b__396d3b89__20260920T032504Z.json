@@ -1,0 +1,32 @@
+{
+ "task": "C:response-to-a-pinned-record:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j298b",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/response-to-a-pinned-record/w-jonathonsmac4f50-j298b/run.py",
+ "seed": 74704,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "396d3b89",
+ "started_utc": "20260920T032504Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "the pinned-record response is exactly the multinomial n!/(a_0! prod a_i!) (d+1)^-n on the forward cone (checked exactly to level 12 for d = 2, 3), peaking as (2 pi n)^(-d/2) (d+1)^((d+1)/2) = 0.826993 n^-1 (d=2) and 1.015918 n^(-3/2) (d=3) with widths sqrt(n/(d+1)) across the axis; the equal-level covariance is the plane's Green function (log in d=2, 1/r in d=3), inversion symmetric and supported everywhere, and (1-|phi|^2)/(1-phi) is not constant, so no lambda gives response = lambda x covariance: the equilibrium fluctuation-response relation fails, as expected; 0s"
+ },
+ "review": "run.py verifies exactly with Fractions that propagating the pinned mean to level 12 reproduces the multinomial n!/(a_0! prod a_i!) (d+1)^-n at all 455 (d=2) and 1820 (d=3) points and nowhere else, gives the local-limit constants (2 pi n)^(-d/2)(d+1)^((d+1)/2) = 3 sqrt(3)/(2 pi) = 0.826993 n^-1 and 4 sqrt(2)/pi^(3/2) = 1.015898 n^(-3/2) with widths sqrt(n/(d+1)) across the drifting axis and sqrt(n)/(d+1) along it (exact multinomials reach ratio 0.9986 and 0.9974 at n = 480), identifies the equal-level covariance as the plane Green function with det M = 1/27 and 1/256, and proves no constant can relate them because (1-|phi|^2)/(1-phi) takes the values 2/3, 4/3 and 2/3 - 2i/3 in d = 2 (1/2, 3/2, 3/4 - 3i/4 in d = 3), the least-squares fit leaving 30 and 52 percent residual over the cone, so the equilibrium fluctuation-response relation fails as expected and there is no HIT.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): Response against fluctuation in level time. In the linear gain-one formation model on Z^(d+1) (d = 2 and 3) pin one record at the origin to theta = 1 and propagate the MEAN: theta(x) = average of the d+1 predecessors. (1) Show the response at x = (a_0, ..., a_d) >= 0 is the multinomial probability (sum a)!/(prod a_i!) (d+1)^-(sum a); verify by direct propagation on a box. (2) Asymptotics: along the axis (1,..,1) the response decays like n^(-d/2) (n the level), with Gaussian width ~ sqrt n across it: give the exact constants for d = 2, 3. (3) Compare with the COVARIANCE of block 35: sigma^2 phi^s/(1-u) at equal level is a Green function of the d-dimensional plane (log in d = 2, 1/r in d = 3). State precisely how the two differ (support: forward cone against the whole plane; decay law; symmetry) and check numerically that no constant makes response = constant x covariance (the equilibrium fluctuation-response relation fails). Expectation: it fails. DELIVERABLE in your unit worktree: probes/work/compute/response-to-a-pinned-record/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/response-to-a-pinned-record/<name>/run.py\"",
+ "stdout_sha256": "5164412da286907c27fe8d65da82b9342ec7cebaf5a1bf9c4ef0fef5e8965c2e",
+ "stdout_tail": "ne wraps after L levels, so only the fixed-level statement is one-sided.\nN1 d=2: at the single level n=8, best lambda = 0.0081 with relative residual 81.4%, and the response at the mirrored points is exactly 0.0e+00 against a covariance of 1.2642 or more\nN1 d=3 (L=64, 520 points inside the cone): best lambda = 1.3919, relative residual 51.6%, R/C ranges 0.1586 to 24.0356 (a factor 151.5)\nN1 d=3: the covariance at the mirrored points is 0.0022 to 0.4367 and C(x) - C(-x) is at most 5.55e-17 (inversion symmetric to machine precision), while the response at a fixed level n < L is exactly zero there - see the next line. Summed over all levels on a torus the cone wraps after L levels, so only the fixed-level statement is one-sided.\nN1 d=3: at the single level n=8, best lambda = 0.0707 with relative residual 86.7%, and the response at the mirrored points is exactly 0.0e+00 against a covariance of 0.0022 or more\nSUMMARY: the pinned-record response is exactly the multinomial n!/(a_0! prod a_i!) (d+1)^-n on the forward cone (checked exactly to level 12 for d = 2, 3), peaking as (2 pi n)^(-d/2) (d+1)^((d+1)/2) = 0.826993 n^-1 (d=2) and 1.015918 n^(-3/2) (d=3) with widths sqrt(n/(d+1)) across the axis; the equal-level covariance is the plane's Green function (log in d=2, 1/r in d=3), inversion symmetric and supported everywhere, and (1-|phi|^2)/(1-phi) is not constant, so no lambda gives response = lambda x covariance: the equilibrium fluctuation-response relation fails, as expected; 0s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j298b",
+  "at_utc": "20260920T032518Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

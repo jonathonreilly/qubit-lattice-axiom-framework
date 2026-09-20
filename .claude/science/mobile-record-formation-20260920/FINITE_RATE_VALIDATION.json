@@ -1,0 +1,105 @@
+{
+  "completed_at_utc": "2026-09-20T21:12:11.384673+00:00",
+  "base_main": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+  "previous_milestone_head": "22e6df1c55c99434410b37d936991c7227bf591c",
+  "sources": {
+    "docs/MOBILE_RECORDS_FINITE_RATE_CONTROL_AND_SPATIAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-20.md": "423eba32f704e510331bfbb6dba78ea0a35db129854547b155fd76f27248d917",
+    "scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py": "c81de898311789470c834686ecfb5287b96d1fe73c7ae60cab4f3f9ec686af0e"
+  },
+  "primary_result": "PASS=22 FAIL=0",
+  "mutations": [
+    {
+      "mutation": "wrong_center",
+      "exit": 1,
+      "expected": "resolvent",
+      "observed": "resolvent",
+      "caught": true
+    },
+    {
+      "mutation": "oversized_gap",
+      "exit": 1,
+      "expected": "gap",
+      "observed": "gap,poisson",
+      "caught": true
+    },
+    {
+      "mutation": "omit_hazard_variance",
+      "exit": 1,
+      "expected": "error",
+      "observed": "error",
+      "caught": true
+    },
+    {
+      "mutation": "omit_corrector",
+      "exit": 1,
+      "expected": "poisson",
+      "observed": "poisson",
+      "caught": true
+    },
+    {
+      "mutation": "drop_wedges",
+      "exit": 1,
+      "expected": "dilution",
+      "observed": "dilution",
+      "caught": true
+    },
+    {
+      "mutation": "drop_sink",
+      "exit": 1,
+      "expected": "vacancy",
+      "observed": "vacancy",
+      "caught": true
+    },
+    {
+      "mutation": "dense_closure",
+      "exit": 1,
+      "expected": "orientation",
+      "observed": "orientation",
+      "caught": true
+    },
+    {
+      "mutation": "wrong_birth_sign",
+      "exit": 1,
+      "expected": "spectrum",
+      "observed": "spectrum",
+      "caught": true
+    }
+  ],
+  "compiled_python_files": [
+    "scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py",
+    ".claude/science/mobile-record-formation-20260920/independent/finite_rate_bridge/REVIEW_EXTRA_CHECKS.py",
+    ".claude/science/mobile-record-formation-20260920/independent/finite_rate_bridge/check.py",
+    ".claude/science/mobile-record-formation-20260920/independent/finite_rate_bridge/field_check.py"
+  ],
+  "vocabulary_check": {
+    "markdown_files": 6,
+    "files_with_violations": 0,
+    "report": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/finite-rate-vocab.json"
+  },
+  "verified_seals": {
+    ".claude/science/mobile-record-formation-20260920/independent/INITIAL_SEAL.json": "0f93afdb491c475c86f1f57dac8b6891b258f345a2cf2f925bc66ad14c52ea33",
+    ".claude/science/mobile-record-formation-20260920/independent/finite_rate_bridge/BOUND_SEAL.json": "ed83f3175e2afec23d5f6ab84397e8f8c84b853f418bac3ae1fbe91b403a6d77",
+    ".claude/science/mobile-record-formation-20260920/independent/finite_rate_bridge/FIELD_SEAL.json": "2eaded4ca742d5c523f9547813a04a7a96bbed2c8e0673dda770f94334f85fbb",
+    ".claude/science/mobile-record-formation-20260920/independent/FINAL_REVIEW_SEAL.json": "097762c15dd4f98a84e42b304dc232e1f488bdcabca259b7cb297b98ecc499d8",
+    ".claude/science/mobile-record-formation-20260920/independent/finite_rate_bridge/FINAL_SOURCE_REVIEW_SEAL.json": "c008f4a9112c1dc82bda102e839974a8c7047b1a9e094b536f1557cec29c914b"
+  },
+  "canonical_cache": {
+    "path": "logs/runner-cache/mobile_records_finite_rate_spatial_bridge_2026_09_20.txt",
+    "sha256": "6f13e8ca21037e3a71b17d26bae6479a8d2d4acb320e87ad15db181fca7b821b",
+    "fresh": true
+  },
+  "citation_topology": {
+    "new_nodes": 1,
+    "new_edges": 1,
+    "prior_entries_unchanged": true,
+    "node_count": 6028,
+    "edge_count": 13608
+  },
+  "pending_combined_candidate_gates": [
+    "full pipeline",
+    "strict audit lint",
+    "changed-evidence integration"
+  ],
+  "independent_audit_verdict": null,
+  "editable_prompt_files_changed": []
+}

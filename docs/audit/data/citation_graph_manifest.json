@@ -1,6 +1,6 @@
 {
- "edge_count": 13607,
- "node_count": 6027,
+ "edge_count": 13608,
+ "node_count": 6028,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12853,6 +12853,10 @@
   "mixed_os_transfer_representation_bounded_note_2026-05-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "mobile_records_finite_rate_control_and_spatial_response_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "4e790b07c75a",
+   "out_degree": 1
   },
   "mobile_records_rare_formation_event_law_and_six_site_witness_bounded_theorem_note_2026-09-20": {
    "deps_hash": "c8eee4235fc9",

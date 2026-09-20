@@ -1,0 +1,63 @@
+{
+  "runner_sha256": "c81de898311789470c834686ecfb5287b96d1fe73c7ae60cab4f3f9ec686af0e",
+  "baseline_exit_code": 0,
+  "baseline_total": "TOTAL: PASS=22 FAIL=0",
+  "mutations": [
+    {
+      "mutation": "wrong_center",
+      "expected_family": "resolvent",
+      "return_code": 1,
+      "observed_families": "resolvent",
+      "total": "TOTAL: PASS=21 FAIL=1"
+    },
+    {
+      "mutation": "oversized_gap",
+      "expected_family": "gap",
+      "return_code": 1,
+      "observed_families": "gap,poisson",
+      "total": "TOTAL: PASS=20 FAIL=2"
+    },
+    {
+      "mutation": "omit_hazard_variance",
+      "expected_family": "error",
+      "return_code": 1,
+      "observed_families": "error",
+      "total": "TOTAL: PASS=21 FAIL=1"
+    },
+    {
+      "mutation": "omit_corrector",
+      "expected_family": "poisson",
+      "return_code": 1,
+      "observed_families": "poisson",
+      "total": "TOTAL: PASS=21 FAIL=1"
+    },
+    {
+      "mutation": "drop_wedges",
+      "expected_family": "dilution",
+      "return_code": 1,
+      "observed_families": "dilution",
+      "total": "TOTAL: PASS=21 FAIL=1"
+    },
+    {
+      "mutation": "drop_sink",
+      "expected_family": "vacancy",
+      "return_code": 1,
+      "observed_families": "vacancy",
+      "total": "TOTAL: PASS=21 FAIL=1"
+    },
+    {
+      "mutation": "dense_closure",
+      "expected_family": "orientation",
+      "return_code": 1,
+      "observed_families": "orientation",
+      "total": "TOTAL: PASS=21 FAIL=1"
+    },
+    {
+      "mutation": "wrong_birth_sign",
+      "expected_family": "spectrum",
+      "return_code": 1,
+      "observed_families": "spectrum",
+      "total": "TOTAL: PASS=21 FAIL=1"
+    }
+  ]
+}

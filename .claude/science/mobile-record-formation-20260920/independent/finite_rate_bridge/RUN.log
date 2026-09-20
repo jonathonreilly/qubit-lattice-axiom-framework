@@ -1,0 +1,132 @@
+{
+  "exact_test_cases": 90,
+  "selected_rows": {
+    "asymmetric_two_state": [
+      {
+        "entrance": "point_0",
+        "epsilon": "1",
+        "TV_exact": "32/165",
+        "TV_decimal": 0.19393939393939394,
+        "main_bound_squared": "40/297",
+        "main_bound_decimal_capped_at_one": 0.36698792170878686,
+        "clock_bound_squared": "32/243",
+        "clock_bound_decimal_capped_at_one": 0.36288736930121157,
+        "entrance_chi2_from_pi": "2/3",
+        "mismatch_norm_squared": "800/363",
+        "mean_pi_h": "8/55"
+      },
+      {
+        "entrance": "motion_stationary",
+        "epsilon": "1",
+        "TV_exact": "24/275",
+        "TV_decimal": 0.08727272727272728,
+        "main_bound_squared": "3/110",
+        "main_bound_decimal_capped_at_one": 0.1651445647689541,
+        "clock_bound_squared": "2/75",
+        "clock_bound_decimal_capped_at_one": 0.16329931618554522,
+        "entrance_chi2_from_pi": "0",
+        "mismatch_norm_squared": "54/121",
+        "mean_pi_h": "18/275"
+      },
+      {
+        "entrance": "event_stationary",
+        "epsilon": "1",
+        "TV_exact": "0",
+        "TV_decimal": 0.0,
+        "main_bound_squared": "0",
+        "main_bound_decimal_capped_at_one": 0.0,
+        "clock_bound_squared": "0",
+        "clock_bound_decimal_capped_at_one": 0.0,
+        "entrance_chi2_from_pi": "54/121",
+        "mismatch_norm_squared": "0",
+        "mean_pi_h": "0"
+      }
+    ],
+    "noncommuting_three_state": [
+      {
+        "entrance": "point_0",
+        "epsilon": "1",
+        "TV_exact": "1/2",
+        "TV_decimal": 0.5,
+        "main_bound_squared": "195/64",
+        "main_bound_decimal_capped_at_one": 1.0,
+        "clock_bound_squared": "175/144",
+        "clock_bound_decimal_capped_at_one": 1.0,
+        "entrance_chi2_from_pi": "2",
+        "mismatch_norm_squared": "117/32",
+        "mean_pi_h": "3/8"
+      },
+      {
+        "entrance": "motion_stationary",
+        "epsilon": "1",
+        "TV_exact": "5/24",
+        "TV_decimal": 0.20833333333333334,
+        "main_bound_squared": "65/192",
+        "main_bound_decimal_capped_at_one": 0.5818433351570392,
+        "clock_bound_squared": "115/1296",
+        "clock_bound_decimal_capped_at_one": 0.2978834804101002,
+        "entrance_chi2_from_pi": "0",
+        "mismatch_norm_squared": "13/32",
+        "mean_pi_h": "1/8"
+      },
+      {
+        "entrance": "event_stationary",
+        "epsilon": "1",
+        "TV_exact": "0",
+        "TV_decimal": 0.0,
+        "main_bound_squared": "0",
+        "main_bound_decimal_capped_at_one": 0.0,
+        "clock_bound_squared": "0",
+        "clock_bound_decimal_capped_at_one": 0.0,
+        "entrance_chi2_from_pi": "13/32",
+        "mismatch_norm_squared": "0",
+        "mean_pi_h": "0"
+      }
+    ],
+    "constant_hazard_symmetric_two_state": [
+      {
+        "entrance": "point_0",
+        "epsilon": "1",
+        "TV_exact": "3/10",
+        "TV_decimal": 0.3,
+        "main_bound_squared": "9/100",
+        "main_bound_decimal_capped_at_one": 0.3,
+        "clock_bound_squared": "9/100",
+        "clock_bound_decimal_capped_at_one": 0.3,
+        "entrance_chi2_from_pi": "1",
+        "mismatch_norm_squared": "1",
+        "mean_pi_h": "0"
+      },
+      {
+        "entrance": "motion_stationary",
+        "epsilon": "1",
+        "TV_exact": "0",
+        "TV_decimal": 0.0,
+        "main_bound_squared": "0",
+        "main_bound_decimal_capped_at_one": 0.0,
+        "clock_bound_squared": "0",
+        "clock_bound_decimal_capped_at_one": 0.0,
+        "entrance_chi2_from_pi": "0",
+        "mismatch_norm_squared": "0",
+        "mean_pi_h": "0"
+      },
+      {
+        "entrance": "event_stationary",
+        "epsilon": "1",
+        "TV_exact": "0",
+        "TV_decimal": 0.0,
+        "main_bound_squared": "0",
+        "main_bound_decimal_capped_at_one": 0.0,
+        "clock_bound_squared": "0",
+        "clock_bound_decimal_capped_at_one": 0.0,
+        "entrance_chi2_from_pi": "0",
+        "mismatch_norm_squared": "0",
+        "mean_pi_h": "0"
+      }
+    ]
+  },
+  "symbolic_two_state_TV": "abs(alpha0-3/11) * epsilon/(epsilon+11/4)",
+  "symbolic_gap": "epsilon**2*(11*alpha0 - 3)**2*(784*epsilon**2 + 3880*epsilon + 4255)/(726*(epsilon + 5)**2*(4*epsilon + 11)**2)",
+  "all_exact_inequalities_satisfied": true,
+  "three_state_noncommutation_confirmed": true
+}

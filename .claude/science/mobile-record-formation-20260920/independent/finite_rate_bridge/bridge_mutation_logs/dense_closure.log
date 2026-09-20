@@ -1,0 +1,45 @@
+PASS: gap: 14 exact positive pivots certify motion gap at least 2/5
+PASS: resolvent: hazard Schur complement is symmetric in pi and kills constants
+PASS: poisson: zero-mean Poisson equation for stationary entrance
+PASS: poisson: zero-mean Poisson equation for point entrance
+PASS: poisson: zero-mean Poisson equation for palm entrance
+PASS: resolvent: direct absorption equals centered resolvent reconstruction at all 15 cases
+PASS: error: exact pre-birth TV obeys the certified finite-rate bound for all entrances/rates
+PASS: poisson: first-order corrected event law has the certified quadratic remainder
+PASS: error: scaled mean waiting time obeys the same-gap bound
+PASS: resolvent: hazard-clock resolvent and complementary gap bound agree with direct absorption
+PASS: poisson: third-birth derivative equals -16823/29030544
+finite_rate: mean_hazard=898/37 hazard_variance=233/1369 certified_gap=2/5 third_birth_derivative=-16823/29030544
+stationary_entrance: epsilon=1/10000 exact_TV=3510486066330150/698226184427057798977 bound=5.20260635105e-05 corrected_TV=6844212279051666891/1097262448827121331092355500
+stationary_entrance: epsilon=1/1000 exact_TV=2615080197282/52497899773319383 bound=0.00049375679143 corrected_TV=723791280601527/1178577849911020148350
+stationary_entrance: epsilon=1/100 exact_TV=1150423368/2514786013831 bound=0.00327113874323 corrected_TV=301775129079/5645694601050595
+stationary_entrance: epsilon=1/10 exact_TV=124186353/43280719216 bound=0.00747688855594 corrected_TV=48954755631/19433042927984
+stationary_entrance: epsilon=1 exact_TV=430119198795/66611419809944 bound=0.0085800360478 corrected_TV=166713128287275/3738565936833107
+dilution: six_site_dynamic=2701/53880 static=73/1440 ratio=444/449
+PASS: dilution: identical-pair sectors connected on all 11 named graphs
+PASS: dilution: direct insertion sums verify pair/wedge/triple identities in 33 cases
+PASS: dilution: all-identical dynamic/static ratios match the graph formula
+PASS: dilution: content-summed static triple partition independently enumerated for graphs up to six vertices
+dilution: cycle_vertices=10 relative_deficit=1/481 volume_squared_deficit=0.2079002079
+dilution: cycle_vertices=100 relative_deficit=1/58801 volume_squared_deficit=0.170065134947
+dilution: cycle_vertices=1000 relative_deficit=1/5988001 volume_squared_deficit=0.167000640113
+PASS: vacancy: full occupancy generators give diffusion plus formation sink on 80 configurations
+PASS: vacancy: infinite-chain response recurrence, origin normalization and total mass
+PASS: orientation: isolated-neighborhood generator identity on 300 site/component cases
+FAIL: orientation: local multiple-occupancy residual bound on all 28812 site/component cases
+PASS: orientation: an explicit interacting dense state has nonzero closure residual
+orientation: dense_closure_counterexample=((-1, -1, 0, 0), 0, 0, '-1/10')
+PASS: spectrum: direct spatial matrices verify all twelve Fourier multipliers
+orientation: cubic_d=3 j=1/2 uniform_tangent_growth=6*epsilon; this is not a finite-density growth theorem
+neutral_modes: raw_weights=(3,1,2) theta_vector=1 theta_axis_population=0
+neutral_modes: raw_weights=(6,1,2) theta_vector=2 theta_axis_population=6/5
+neutral_modes: raw_weights=(12,1,2) theta_vector=22/7 theta_axis_population=18/7
+PASS: orientation: five centered content modes diagonalize five neutral pair-weight matrices
+per_element: executed — exact resolvents, Poisson equations, rational gap certificate and insertion sums
+per_site: executed — every occupancy state on named four/six-site graphs and every six-axis state on the four-cycle
+per_mode: executed — all twelve cycle Fourier modes; general torus multipliers and scaling are proved algebraically in the note
+per_block: executed — finite-rate six-site witness and eleven named triangle-free graphs at three weights
+lattice_wide: checked and not executed — uniform-weight response has an exact operator proof; no interacting bulk phase, relativistic field or gravity claim
+mutation_family_expected: orientation
+mutation_family_observed: orientation
+TOTAL: PASS=21 FAIL=1

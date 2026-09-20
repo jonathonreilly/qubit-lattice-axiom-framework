@@ -1,0 +1,14 @@
+{
+  "head": "22e6df1c55c99434410b37d936991c7227bf591c",
+  "planning_ref": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "sha256": {
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/independent/finite_rate_bridge/DERIVATION.md": "f61aded69fe4cc20842d7be07cf5ff27a352269ee409ae5463c16598acb1f990",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/independent/finite_rate_bridge/check.py": "a4934eff48706a7e2c6ac978a3e75a2441ae87460a2d78b947aa2590352c40a1",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/independent/REPORT.md": "3d31d272951642dc36812dec7a5404f5150f51bd084a947e937ae1f4846aeb44",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/independent/INITIAL_SEAL.json": "0f93afdb491c475c86f1f57dac8b6891b258f345a2cf2f925bc66ad14c52ea33",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+  },
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "primary_new_calculations_read": false
+}

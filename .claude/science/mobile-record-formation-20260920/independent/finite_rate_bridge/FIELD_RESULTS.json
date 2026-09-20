@@ -1,0 +1,44 @@
+{
+  "sparse_configuration_site_j_cases": 8972,
+  "sparse_states_per_site_on_five_path": {
+    "0": 931,
+    "1": 175,
+    "2": 31,
+    "3": 175,
+    "4": 931
+  },
+  "j_values": [
+    "-1/2",
+    "0",
+    "1/3",
+    "3/4"
+  ],
+  "occupancy_all_density_site_cases": 160,
+  "fourier_modes_checked": 84,
+  "field_generator_motion": "Delta m_i/2",
+  "field_generator_birth_coefficient_of_epsilon": "2 j A m_i",
+  "fourier_eigenvalue": "(1+4 epsilon j) sum_r cos(k_r)-d",
+  "full_density_counterexample": {
+    "state": [
+      0,
+      1
+    ],
+    "j": "0",
+    "actual_motion_component_1": "0",
+    "linear_motion_component_1": "-1"
+  },
+  "radius_one_counterexample": {
+    "state": [
+      -1,
+      0,
+      0
+    ],
+    "j": "1/2",
+    "actual_motion_component_1": "2/5",
+    "linear_motion_component_1": "1/2",
+    "birth_component_1_coefficient_of_epsilon": "1"
+  },
+  "all_checks_satisfied": true,
+  "sha256_field_check_py": "51739fed48016607c611cffd62db8511135269c93b27491b5457db49fd75831b",
+  "primary_calculations_read": false
+}

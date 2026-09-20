@@ -1,0 +1,45 @@
+{
+  "scientific_review_only": true,
+  "confirmed_at_utc": "2026-09-20T21:11:03.725748+00:00",
+  "head_at_confirmation": "22e6df1c55c99434410b37d936991c7227bf591c",
+  "sources": {
+    "docs/MOBILE_RECORDS_FINITE_RATE_CONTROL_AND_SPATIAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-20.md": "423eba32f704e510331bfbb6dba78ea0a35db129854547b155fd76f27248d917",
+    "scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py": "c81de898311789470c834686ecfb5287b96d1fe73c7ae60cab4f3f9ec686af0e"
+  },
+  "artifacts": {
+    "FINAL_SOURCE_REVIEW.md": "3bd6ca1293cce5baa88c74a06120f4ed2af9878f8bfcfc06b87eb73870b7f548",
+    "PRIMARY_BRIDGE_RUN.log": "b9232210f0bb0150dbb13d0b5e9cf8216628eb7f791eff9da157fbda1ea4fe8f",
+    "PRIMARY_BRIDGE_EXECUTION.json": "ced96951a966e07cec5ba7b758df2c04dd91cb5c2e9733f1c1b032d2a2872e30",
+    "PRIMARY_BRIDGE_MUTATIONS.log": "9dc1b8e9e4088f5e048f92ecc6536da0c9993b4578eb038e37a579772c6d7538",
+    "REVIEW_EXTRA_CHECKS.py": "8d4d80ce5edb07f2cc907af5506c0fb61fbc301496a7450e59a799d32f754a29",
+    "REVIEW_EXTRA_RESULTS.json": "a45e662e76b74f6cf3b9c2f7e5573771d44835c237ca1422469988ad56f10f04",
+    "REVIEW_EXTRA_RUN.log": "a45e662e76b74f6cf3b9c2f7e5573771d44835c237ca1422469988ad56f10f04",
+    "BOUND_SEAL.json": "ed83f3175e2afec23d5f6ab84397e8f8c84b853f418bac3ae1fbe91b403a6d77",
+    "FIELD_SEAL.json": "2eaded4ca742d5c523f9547813a04a7a96bbed2c8e0673dda770f94334f85fbb",
+    "bridge_mutation_logs/dense_closure.log": "9c7ac7cccfaa75aefc71aa47960bcbe78d699bb26aa366dd15b6c873de686640",
+    "bridge_mutation_logs/drop_sink.log": "eae32718389e0e638b9d9a9e38dfaac1cff41279cacefcda889caeb9f944dd13",
+    "bridge_mutation_logs/drop_wedges.log": "d0c0ba8471e4e9b12456fb25a1b3c340f23771e7c52fee47af1bae7927e1bd01",
+    "bridge_mutation_logs/omit_corrector.log": "497eab9c92a07afc4ac23d1d7cdf989e765fc48cd213d1ca24e7ebe85d857564",
+    "bridge_mutation_logs/omit_hazard_variance.log": "5fc45503e41d38ec646be48a4793f72e1c394bc86f13cfe7c224ec7b0f8aa720",
+    "bridge_mutation_logs/oversized_gap.log": "c332037ab1ac42486f8e7bc9746a6a85f2de22ace6338053f5648a1f18e5501f",
+    "bridge_mutation_logs/wrong_birth_sign.log": "04ded8ff21ff0039780af2a1fe1fa9e89687d7f7fd2dbd315f1d9fa239b8b882",
+    "bridge_mutation_logs/wrong_center.log": "1d47b210d213a70b2c1dea53ce96d8d19470596c7d67a2ef1dd439a4b1288a0e"
+  },
+  "preserved_independent_seals_verified": {
+    "BOUND_SEAL.json": "ed83f3175e2afec23d5f6ab84397e8f8c84b853f418bac3ae1fbe91b403a6d77",
+    "FIELD_SEAL.json": "2eaded4ca742d5c523f9547813a04a7a96bbed2c8e0673dda770f94334f85fbb"
+  },
+  "previous_milestone_sources_unchanged": {
+    "docs/MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md": "8cc06519d7f3acc088b1e450c151f0870ab21d2987ef2b0224d40ba6a5e7e4e2",
+    "scripts/mobile_records_rare_formation_event_law_2026_09_20.py": "1f64e0a8d83c872abb6fb87d11da1c3c14d5a87416ff96404a286645afa71c4d"
+  },
+  "resolved_findings": [
+    "The machine-readable Duhamel claim scope now explicitly restricts the result to the j-family with 0<=j<1 on regular tori."
+  ],
+  "unresolved_actionable_findings": [],
+  "execution": {
+    "baseline": "PASS=22 FAIL=0",
+    "declared_mutations_caught": 8,
+    "declared_mutations_total": 8
+  }
+}

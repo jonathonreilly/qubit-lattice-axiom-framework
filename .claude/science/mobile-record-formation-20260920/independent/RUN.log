@@ -1,0 +1,166 @@
+{
+  "exact_comparison": {
+    "rare": {
+      "exact": "2701/53880",
+      "decimal": 0.05012991833704528
+    },
+    "static": {
+      "exact": "73/1440",
+      "decimal": 0.050694444444444445
+    },
+    "static_minus_rare": {
+      "exact": "73/129312",
+      "decimal": 0.0005645261073991587
+    },
+    "rare_div_static": {
+      "exact": "444/449",
+      "decimal": 0.9888641425389755
+    },
+    "no_motion": {
+      "exact": "14717/294000",
+      "decimal": 0.0500578231292517
+    },
+    "naive_unbiased_prebirth": {
+      "exact": "14717/294000",
+      "decimal": 0.0500578231292517
+    }
+  },
+  "connectivity": [
+    {
+      "n": 0,
+      "states": 1,
+      "components": 1,
+      "size_histogram": {
+        "1": 1
+      }
+    },
+    {
+      "n": 1,
+      "states": 36,
+      "components": 6,
+      "size_histogram": {
+        "6": 6
+      }
+    },
+    {
+      "n": 2,
+      "states": 540,
+      "components": 21,
+      "size_histogram": {
+        "15": 6,
+        "30": 15
+      }
+    },
+    {
+      "n": 3,
+      "states": 4320,
+      "components": 56,
+      "size_histogram": {
+        "20": 6,
+        "60": 30,
+        "120": 20
+      }
+    }
+  ],
+  "detailed_balance": [
+    {
+      "n": 0,
+      "directed_hops_checked_exactly": 0
+    },
+    {
+      "n": 1,
+      "directed_hops_checked_exactly": 84
+    },
+    {
+      "n": 2,
+      "directed_hops_checked_exactly": 2016
+    },
+    {
+      "n": 3,
+      "directed_hops_checked_exactly": 18144
+    }
+  ],
+  "finite_epsilon_probability": "(95366160000*epsilon**5 + 41898708000*epsilon**4 + 6758339400*epsilon**3 + 498976260*epsilon**2 + 16928359*epsilon + 210678)/(1905120000000*epsilon**5 + 836593920000*epsilon**4 + 134896320000*epsilon**3 + 9957002400*epsilon**2 + 337738320*epsilon + 4202640)",
+  "finite_epsilon": [
+    {
+      "epsilon": 1e-06,
+      "probability": 0.05012991775787382,
+      "symbolic_probability": 0.05012991775755891,
+      "max_harmonic_residual": 2.0128975661845919e-16,
+      "prebirth_mass": 1.000000000003684,
+      "prebirth_tv_from_stationary": 0.00752417943997314
+    },
+    {
+      "epsilon": 0.0001,
+      "probability": 0.050129860454858385,
+      "symbolic_probability": 0.050129860454858684,
+      "max_harmonic_residual": 1.4495783046131194e-16,
+      "prebirth_mass": 1.0000000000000173,
+      "prebirth_tv_from_stationary": 0.0075193745066046945
+    },
+    {
+      "epsilon": 0.01,
+      "probability": 0.050124698539135294,
+      "symbolic_probability": 0.05012469853913531,
+      "max_harmonic_residual": 1.6653345369377348e-16,
+      "prebirth_mass": 0.9999999999999994,
+      "prebirth_tv_from_stationary": 0.007073280886791041
+    },
+    {
+      "epsilon": 0.1,
+      "probability": 0.05009990019869418,
+      "symbolic_probability": 0.05009990019869418,
+      "max_harmonic_residual": 3.3306690738754696e-16,
+      "prebirth_mass": 0.9999999999999999,
+      "prebirth_tv_from_stationary": 0.004654905247635576
+    },
+    {
+      "epsilon": 1.0,
+      "probability": 0.05006715262472315,
+      "symbolic_probability": 0.05006715262472315,
+      "max_harmonic_residual": 1.7763568394002505e-15,
+      "prebirth_mass": 1.0,
+      "prebirth_tv_from_stationary": 0.0010670889827571126
+    },
+    {
+      "epsilon": 10.0,
+      "probability": 0.05005888915437675,
+      "symbolic_probability": 0.05005888915437675,
+      "max_harmonic_residual": 1.4210854715202004e-14,
+      "prebirth_mass": 1.0,
+      "prebirth_tv_from_stationary": 0.00012265583938967858
+    },
+    {
+      "epsilon": 100.0,
+      "probability": 0.0500579312808874,
+      "symbolic_probability": 0.0500579312808874,
+      "max_harmonic_residual": 2.2737367544323206e-13,
+      "prebirth_mass": 0.9999999999999999,
+      "prebirth_tv_from_stationary": 1.2451834764747038e-05
+    },
+    {
+      "epsilon": 10000.0,
+      "probability": 0.05005782421250041,
+      "symbolic_probability": 0.05005782421250041,
+      "max_harmonic_residual": 2.9103830456733704e-11,
+      "prebirth_mass": 0.9999999999999998,
+      "prebirth_tv_from_stationary": 1.2472670225804894e-07
+    },
+    {
+      "epsilon": 1000000.0,
+      "probability": 0.05005782314008436,
+      "symbolic_probability": 0.05005782314008436,
+      "max_harmonic_residual": 1.862645149230957e-09,
+      "prebirth_mass": 1.0000000000000002,
+      "prebirth_tv_from_stationary": 1.2472879187819252e-09
+    }
+  ],
+  "one_hole_five_distinct": {
+    "states": 720,
+    "components": 2,
+    "component_sizes": [
+      360,
+      360
+    ]
+  }
+}

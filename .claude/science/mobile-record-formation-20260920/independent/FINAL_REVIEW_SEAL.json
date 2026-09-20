@@ -1,0 +1,14 @@
+{
+  "sources": {
+    "docs/MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md": "8cc06519d7f3acc088b1e450c151f0870ab21d2987ef2b0224d40ba6a5e7e4e2",
+    "scripts/mobile_records_rare_formation_event_law_2026_09_20.py": "1f64e0a8d83c872abb6fb87d11da1c3c14d5a87416ff96404a286645afa71c4d"
+  },
+  "artifacts": {
+    "FINAL_SOURCE_REVIEW.md": "a16b17039a9c0951041d64f64b31d7cfd0ee2e51a39570e1adf3ad6fe8f71f79",
+    "PRIMARY_RUN.log": "bcbf48f70d699a01b58725e710b4c76fc7c07b6c6859ae747a8991f5a7a2f983",
+    "PRIMARY_MUTATIONS.log": "4d5f751062800ec65fe62cf24943dd9bbc82813ef16231f269c912110b64ae17",
+    "MUTATION_REVIEW.json": "3bb19b0f283cb7bc13aa95ff2fb198e244c9078d7f5427316e6bdd84a4f9ac56",
+    "INITIAL_SEAL.json": "0f93afdb491c475c86f1f57dac8b6891b258f345a2cf2f925bc66ad14c52ea33"
+  },
+  "head_at_confirmation": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319"
+}

@@ -1,0 +1,29 @@
+PASS: motion: all 28 source count sectors connected, 577 configurations
+PASS: motion: every source-class vacancy hop satisfies detailed balance
+PASS: insertion: all 168 averaged insertion rates agree with independent insertion/deletion counting
+PASS: content_law: event laws normalize at all three births
+PASS: content_law: partition functions from enumeration: 36, 540, 4320
+content_law: all_identical_growth=2701/53880 static=73/1440 difference=-73/129312 count_TV=811/387936
+PASS: content_law: third-birth witness matches the separate edge/wedge combinatorial derivation
+event_sampling: two_identical_mean_rate=898/37 event_TV=125/16613
+PASS: event_sampling: exact two-identical-record rate tilt
+PASS: resolvent: two-state marked waiting-time transform, arbitrary positive rates
+PASS: event_sampling: event law tested against exact killed-generator limit
+PASS: resolvent: 15-state invariant law and insertion intensity
+finite_rate: epsilon=1/10 all_three_same=187951483/3751534080 event_distance_to_limit=124186353/43280719216
+finite_rate: epsilon=1/100 all_three_same=54630759887/1089897026400 event_distance_to_limit=1150423368/2514786013831
+finite_rate: epsilon=1/1000 all_three_same=2851401694918427/56880888215238000 event_distance_to_limit=2615080197282/52497899773319383
+PASS: resolvent: nonzero-rate absorption witness at epsilon=1/1000
+PASS: resolvent: three exact finite rates approach the proved limit; final error below 6e-7
+PASS: controls: constant weights give the uniform-content probability 1/36
+PASS: controls: three-site path has two distinct order-preserving motion classes
+FAIL: vacancies: explicit transitions give L V=-B at epsilon=1
+per_element: executed — every insertion on the 577 source configurations; all 168 averaged rates checked by a different counting identity
+per_site: executed — all six sites, all six contents and all vacancy hops on the declared source sectors
+per_mode: checked and not executed — no Fourier-mode, hydrodynamic or field-response claim is made
+per_block: executed — third-birth content law, rate-biased observation and a 15-state nonzero-rate resolvent on the stated 2x3 graph
+lattice_wide: checked and not executed — the proof is finite-graph; no volume-uniform mixing or infinite-lattice correlation conclusion is asserted
+mutation_family_expected: vacancies
+mutation_family_observed: vacancies
+scope: conditional finite motion-and-birth model; exact event-law witness; no physical parameter selection or TOE closure
+TOTAL: PASS=14 FAIL=1

@@ -1,0 +1,13 @@
+{
+  "initial_seal_entries_verified": 6,
+  "final_source_entries_verified": 2,
+  "final_review_entries_verified": 5,
+  "python_files_compiled": [
+    "scripts/mobile_records_rare_formation_event_law_2026_09_20.py",
+    ".claude/science/mobile-record-formation-20260920/independent/check.py",
+    ".claude/science/mobile-record-formation-20260920/independent/review_sources/mobile_records_rare_formation_event_law_2026_09_20.py",
+    ".claude/science/mobile-record-formation-20260920/independent/review_sources/final/mobile_records_rare_formation_event_law_2026_09_20.py"
+  ],
+  "runner_cache": "fresh",
+  "vocabulary_exit_code": 0
+}

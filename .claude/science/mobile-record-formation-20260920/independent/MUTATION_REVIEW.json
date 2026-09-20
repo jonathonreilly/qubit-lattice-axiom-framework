@@ -1,0 +1,51 @@
+[
+  {
+    "mutation": "motion_flat",
+    "expected_family": "motion",
+    "returncode": 1,
+    "observed_families": "motion",
+    "total": "TOTAL: PASS=14 FAIL=1"
+  },
+  {
+    "mutation": "birth_normalized",
+    "expected_family": "insertion",
+    "returncode": 1,
+    "observed_families": "content_law,event_sampling,insertion",
+    "total": "TOTAL: PASS=12 FAIL=3"
+  },
+  {
+    "mutation": "drop_multiplicity",
+    "expected_family": "insertion",
+    "returncode": 1,
+    "observed_families": "insertion",
+    "total": "TOTAL: PASS=14 FAIL=1"
+  },
+  {
+    "mutation": "merge_sectors",
+    "expected_family": "content_law",
+    "returncode": 1,
+    "observed_families": "content_law",
+    "total": "TOTAL: PASS=14 FAIL=1"
+  },
+  {
+    "mutation": "unbiased_events",
+    "expected_family": "event_sampling",
+    "returncode": 1,
+    "observed_families": "event_sampling",
+    "total": "TOTAL: PASS=14 FAIL=1"
+  },
+  {
+    "mutation": "killing_flat",
+    "expected_family": "resolvent",
+    "returncode": 1,
+    "observed_families": "resolvent",
+    "total": "TOTAL: PASS=13 FAIL=2"
+  },
+  {
+    "mutation": "allow_removal",
+    "expected_family": "vacancies",
+    "returncode": 1,
+    "observed_families": "vacancies",
+    "total": "TOTAL: PASS=14 FAIL=1"
+  }
+]

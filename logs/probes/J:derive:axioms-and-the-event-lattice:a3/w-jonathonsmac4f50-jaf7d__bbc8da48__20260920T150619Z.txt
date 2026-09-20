@@ -1,0 +1,40 @@
+T1  the file and a1's citations
+ok   docs/MINIMAL_AXIOMS_2026-06-29.md at FETCH_HEAD (b1cb232e68) has 234 lines
+ok   every one of a1's quoted lines I re-checked is verbatim at its cited line (sampled 8 of its 21)
+
+T2  the exhaustive scan
+ok   57 lines of the memo bear on the question's vocabulary; a1 cites 21,
+     so 40 are uncited.  Most are the memo's change log and its policy
+     rows, which restate downstream content.  Three are not, and they are in T3.
+
+T3  the three that matter
+ok   L166-168: the second statement of the Record axiom's content
+       "- Record names the fixed locking of one admissible local possibility, one-record-per-site uniqueness, permanence, content-determined readout, and the ..."
+ok          and no line of L166-168 is in a1's map
+ok   L199-202: the scope of the 2026-07-04 formation sentence
+       "The 2026-07-04 owner-approved revision appended the formation sentence "Records form." to the Record axiom: occurrence became named axiom content, whi..."
+ok          and no line of L199-202 is in a1's map
+ok   L228-233: what the memo declines to specify
+       "lanes: records are not arbitrary mosaics. The admissibility rule determines the probability distribution over the possibilities at each site from the ..."
+ok          and no line of L228-233 is in a1's map
+
+T4  what they change
+     (i) L166-168 restates one-record-per-site uniqueness AND permanence.  a1's
+     proposed clause replaces L80's 'A site never carries more than one record' by a
+     per-tick version; L166-168 says the same thing in the memo's own summary of what
+     the Record axiom names, so the clause has to change TWO places, not one, and an
+     audit row citing L166-168 would still read the old rule.
+ok   a1 cites L80 and not L166-168, so its cost estimate is short by one location
+     (ii) L199-202 is the memo's own statement that the formation rule - 'which
+     admissible possibility, at which site, with what weight, at what rate' - is
+     downstream supplier content.  That is the same gate a1 finds at L183-184, but it
+     is the HISTORY entry, so a clause that moves the gate has to amend it too or the
+     memo contradicts itself about what 2026-07-04 decided.
+     (iii) L228-233 adds one word the map does not have: 'dynamics' is listed among
+     what remains downstream.  The predecessor structure of a record is dynamics, so
+     this is the memo's most direct statement that the axioms do not fix the past -
+     which is the task's question (c), answered in the memo's own closing paragraph.
+ok   stated
+
+SUMMARY: PARTIAL attempt a1's map of the axioms is accurate where it cites - every quoted line I re-checked is verbatim at its line on origin/main - but not complete: an exhaustive line scan of the memo finds three passages bearing on the task's question that it does not cite, L166-168 (a second statement of one-record-per-site uniqueness and permanence, so a1's proposed clause must change two places not one), L199-202 (the history entry fixing the formation rule's scope as downstream supplier content), and L228-233 (which lists 'dynamics' among what remains downstream - the memo's most direct answer to the task's question)
+HIT: the axioms memo states the record-permanence rule twice, at L79-80 and again at L166-168, so any clause that changes it has to change both; and its closing paragraph L228-233 names dynamics as downstream, which is the memo's own statement that the past of a record is not fixed by the axioms

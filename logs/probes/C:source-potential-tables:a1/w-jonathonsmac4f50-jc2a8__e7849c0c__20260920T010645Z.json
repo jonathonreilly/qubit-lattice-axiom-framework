@@ -1,0 +1,32 @@
+{
+ "task": "C:source-potential-tables:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-jc2a8",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/source-potential-tables/w-jonathonsmac4f50-jc2a8/run.py",
+ "seed": 66405,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e7849c0c",
+ "started_utc": "20260920T010645Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "not computed: only 2 of 48 grid points of X:source-potential are logged (the 2 other logs are off-grid short runs); the 46 missing points are listed above; no ratio, plateau, linearity or asymmetry table is fitted"
+ },
+ "review": "run.py matches the logs to the 48-point grid of X:source-potential and finds 2 points logged (3s beta=1 L=32 and 3 beta=6 L=48, tabulated with their ratios, r times displacement and diagonal asymmetry) plus 2 off-grid short runs, so, as the task requires when fewer than half the points exist, it lists the 46 missing points and stops without fitting c_R(beta), the plateau, the h-linearity or the asymmetry.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): Turn the source-potential logs into the result. Read logs/probes/X:source-potential/*.txt. (1) For the light-cone lattice: the ratio measured/linear by r for each beta and L, with the seed scatter; does the ratio approach a beta-dependent constant c_R(beta) at r >= 2, and what is it (first look: 0.99 at beta = 6)? (2) r x displacement against r at L = 48 and 64: the plateau and its finite-size bending, compared with h/(4 pi beta) (the continuum value of (h/beta) G(r) at large r). (3) Linearity in h from the four h values. (4) The backward lattice: forward and backward diagonal columns, the asymmetry. If fewer than half the points are logged, list what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/source-potential-tables/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/source-potential-tables/<name>/run.py\"",
+ "stdout_sha256": "4b8bb1b6d0b1304125a0b3b3a3fce8d4f0d49e36b28c0ffe946dd504d9d1e7b1",
+ "stdout_tail": "5 2'\n  missing: X:source-potential extra='3 2 48 2000 800 0.5 1'\n  missing: X:source-potential extra='3 2 48 2000 800 0.5 2'\n  missing: X:source-potential extra='3 3 32 2000 800 0.5 1'\n  missing: X:source-potential extra='3 3 32 2000 800 0.5 2'\n  missing: X:source-potential extra='3 3 48 2000 800 0.5 1'\n  missing: X:source-potential extra='3 3 48 2000 800 0.5 2'\n  missing: X:source-potential extra='3 6 32 2000 800 0.5 1'\n  missing: X:source-potential extra='3 6 32 2000 800 0.5 2'\n  missing: X:source-potential extra='3 6 48 2000 800 0.5 2'\n  missing: X:source-potential extra='3 12 32 2000 800 0.5 1'\n  missing: X:source-potential extra='3 12 32 2000 800 0.5 2'\n  missing: X:source-potential extra='3 12 48 2000 800 0.5 1'\n  missing: X:source-potential extra='3 12 48 2000 800 0.5 2'\n  missing: X:source-potential extra='3s 3 32 2000 800 0.1 1'\n  missing: X:source-potential extra='3s 3 32 2000 800 0.25 1'\n  missing: X:source-potential extra='3s 3 32 2000 800 1 1'\n  missing: X:source-potential extra='3s 3 32 2000 800 2 1'\n  missing: X:source-potential extra='2s 6 128 3000 1200 0.5 1'\n  missing: X:source-potential extra='2 6 128 3000 1200 0.5 1'\n  missing: X:source-potential extra='3s 6 64 1500 600 0.5 1'\n  missing: X:source-potential extra='3s 3 64 1500 600 0.5 1'\nSUMMARY: not computed: only 2 of 48 grid points of X:source-potential are logged (the 2 other logs are off-grid short runs); the 46 missing points are listed above; no ratio, plateau, linearity or asymmetry table is fitted\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc2a8",
+  "at_utc": "20260920T010645Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

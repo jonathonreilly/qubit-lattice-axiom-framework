@@ -1,0 +1,58 @@
+A1 recursion: theta_{t+1}(k) = phi(k) theta_t(k) + xi_t(k), xi independent with variance sigma^2.
+A1 Stationarity: V(k) = |phi|^2 V(k) + sigma^2, so V(k) = sigma^2/(1-u) for u < 1 (every k except 0).
+A1 Lag: Cov(theta_k(t), theta_k(t+s)) = E[theta_k(t+s) conj(theta_k(t))] = phi^s V(k) = sigma^2 phi^s/(1-u),
+A1 because theta_{t+s} = phi^s theta_t + (noise of levels t+1..t+s, independent of theta_t).
+A1 at s = 0 this is the equal-level kernel sigma^2/(1-u): True
+A1 and it satisfies the one-level recursion C_{s+1} = phi C_s : True
+A1 1 - u = (12 - 2 sum_j cos k_j - 2 sum_{i<j} cos(k_i - k_j))/16 : True
+A2 exact check with Fractions: the stationary covariance solves (delta - b) * C = sigma^2 (delta - 1/N),
+A2 b = a * a~ the difference walk, the zero mode removed because it has no stationary law (it random-walks:
+A2 the k = 0 variance grows by exactly sigma^2 per level).
+A2 L=3 (N=27): (delta - b) * C = sigma^2 (delta - 1/N) exactly: True; sum_x C(x) = 0: True; C(0) = 1576/1215 sigma^2 = 1.297119 sigma^2; lag kernels stay rational: True
+A2 L=3: DFT of the exact solution against sigma^2/(1-u): max deviation 1.11e-15; lag s=1,2,3 against sigma^2 phi^s/(1-u): 1.06e-15
+A2 L=4 (N=64): (delta - b) * C = sigma^2 (delta - 1/N) exactly: True; sum_x C(x) = 0: True; C(0) = 1913/1344 sigma^2 = 1.423363 sigma^2; lag kernels stay rational: True
+A2 L=4: DFT of the exact solution against sigma^2/(1-u): max deviation 8.88e-16; lag s=1,2,3 against sigma^2 phi^s/(1-u): 9.16e-16
+A2 L=5 (N=125): (delta - b) * C = sigma^2 (delta - 1/N) exactly: True; sum_x C(x) = 0: True; C(0) = 2525816/1685625 sigma^2 = 1.498445 sigma^2; lag kernels stay rational: True
+A2 L=5: DFT of the exact solution against sigma^2/(1-u): max deviation 1.78e-15; lag s=1,2,3 against sigma^2 phi^s/(1-u): 2.81e-15
+A3 one level of the walk is uniform on {0, e1, e2, e3}: mean (1,1,1)/4, second moment I/4,
+A3 so the step covariance is M = I/4 - J/16 = [3/16, -1/16, -1/16, -1/16, 3/16, -1/16, -1/16, -1/16, 3/16] ; equals the M of 1 - u: True
+A3 1 - u(k) = k^T M k + O(k^4): True
+A3 the difference walk a * a~ has zero drift and covariance 2M, and 1 - u = k^T M k is the standard
+A3 1 - (symbol) = k^T (cov/2) k for it. At lag s the covariance is C_s = a^{*s} * C_0: the equal-level
+A3 kernel convolved with the s-step walk, i.e. displaced by s(1,1,1)/4 and spread by sM.
+A3 Continuum form: C_0(x) = sigma^2 sum_t b^{*t}(x) = c/sqrt(x^T M^{-1} x) with c = sigma^2/(4 pi sqrt(det M)),
+A3 det M = 1/256 so c = 4/pi sigma^2 = 1.273240 sigma^2.
+A3 In the co-moving frame y = x - s(1,1,1)/4, writing r_M = sqrt(y^T M^{-1} y),
+A3   C_s(x) = (sigma^2/2) int_s^inf G_{tau M}(y) dtau = (c/r_M) erf(r_M/sqrt(2s)),
+A3 using int_s^inf (2 pi tau)^{-3/2} e^{-r^2/2tau} dtau = erf(r/sqrt(2s))/(2 pi r) (differentiate in s to
+A3 check it). So at lag s the equal-level 1/r law is unchanged outside the diffusive scale sqrt(2s) and
+A3 flattens to the plateau 2c/sqrt(2 pi s) inside it; erfc would be the wrong tail - checked numerically below.
+A4 -log|phi(k)| = k^T M k/2 + O(k^4) (diffusive): True
+A4 identity for n = 2 predecessors (d = 1): n(|1 - phi e^{iw}|^2 + 1 - u) = 2 sum_j (1 - cos(w + k_j)), k_0 = 0 : True
+A4 identity for n = 3 predecessors (d = 2): n(|1 - phi e^{iw}|^2 + 1 - u) = 2 sum_j (1 - cos(w + k_j)), k_0 = 0 : True
+A4 identity for n = 4 predecessors (d = 3): n(|1 - phi e^{iw}|^2 + 1 - u) = 2 sum_j (1 - cos(w + k_j)), k_0 = 0 : True
+A4 identity for n = 5 predecessors (d = 4): n(|1 - phi e^{iw}|^2 + 1 - u) = 2 sum_j (1 - cos(w + k_j)), k_0 = 0 : True
+A4 so the four-predecessor analogue is E(k,w) = 4(|1 - phi e^{iw}|^2 + 1 - u), the event lattice's own
+A4 static dispersion in the skew basis {t, t+e_1, t+e_2, t+e_3}.
+A4 The comparator's rate: with E(k,w) = 2(1 - cos w) + E_3(k) the transfer matrix decays at
+A4 gamma(k) = arccosh(1 + E_3(k)/2) = |k| + O(|k|^3), linear in |k|, against the formation law's k^T M k/2.
+N1 lag covariance against (c/r_M) erf(r_M/sqrt(2s)) in the co-moving frame y = x - s(1,1,1)/4;
+N1 the torus suppresses the 1/r law by O(1/L), so the L = 64 and 128 values are extrapolated in 1/L
+N1 L=64 decay rate along (1,0,0): k=0.098:0.00090 vs k^T M k/2=0.00090 k=0.196:0.00362 vs k^T M k/2=0.00361 k=0.295:0.00814 vs k^T M k/2=0.00813 k=0.393:0.01448 vs k^T M k/2=0.01446 k=0.491:0.02264 vs k^T M k/2=0.02259 k=0.589:0.03264 vs k^T M k/2=0.03253 k=0.687:0.04448 vs k^T M k/2=0.04428 k=0.785:0.05817 vs k^T M k/2=0.05783
+N1 L=128 decay rate along (1,0,0): k=0.049:0.00023 vs k^T M k/2=0.00023 k=0.098:0.00090 vs k^T M k/2=0.00090 k=0.147:0.00203 vs k^T M k/2=0.00203 k=0.196:0.00362 vs k^T M k/2=0.00361 k=0.245:0.00565 vs k^T M k/2=0.00565 k=0.295:0.00814 vs k^T M k/2=0.00813 k=0.344:0.01108 vs k^T M k/2=0.01107 k=0.393:0.01448 vs k^T M k/2=0.01446
+N1 s=  4 (1,0,0): m=1 r_M= 2.83 z=1.00: L64=0.37365 L128=0.38504 extrapolated=0.39643 formula=0.37935 ratio=1.045 | m=1 r_M= 2.83 z=1.00: L64=0.37365 L128=0.38504 extrapolated=0.39643 formula=0.37935 ratio=1.045 | m=2 r_M= 5.66 z=2.00: L64=0.19986 L128=0.21124 extrapolated=0.22262 formula=0.22403 ratio=0.994
+N1 s=  4 (1,1,0): m=1 r_M= 4.90 z=1.73: L64=0.22426 L128=0.23564 extrapolated=0.24702 formula=0.25618 ratio=0.964 | m=1 r_M= 4.90 z=1.73: L64=0.22426 L128=0.23564 extrapolated=0.24702 formula=0.25618 ratio=0.964 | m=1 r_M= 4.90 z=1.73: L64=0.22426 L128=0.23564 extrapolated=0.24702 formula=0.25618 ratio=0.964
+N1 s=  4 (1,1,1): m=1 r_M= 6.93 z=2.45: L64=0.15652 L128=0.16789 extrapolated=0.17926 formula=0.18368 ratio=0.976 | m=1 r_M= 6.93 z=2.45: L64=0.15652 L128=0.16789 extrapolated=0.17926 formula=0.18368 ratio=0.976 | m=1 r_M= 6.93 z=2.45: L64=0.15652 L128=0.16789 extrapolated=0.17926 formula=0.18368 ratio=0.976
+N1 s= 16 (1,0,0): m=1 r_M= 2.83 z=0.50: L64=0.21419 L128=0.22556 extrapolated=0.23693 formula=0.23431 ratio=1.011 | m=2 r_M= 5.66 z=1.00: L64=0.16899 L128=0.18035 extrapolated=0.19170 formula=0.18967 ratio=1.011 | m=4 r_M=11.31 z=2.00: L64=0.08933 L128=0.10063 extrapolated=0.11194 formula=0.11201 ratio=0.999
+N1 s= 16 (1,1,0): m=1 r_M= 4.90 z=0.87: L64=0.18078 L128=0.19214 extrapolated=0.20350 formula=0.20255 ratio=1.005 | m=1 r_M= 4.90 z=0.87: L64=0.18078 L128=0.19214 extrapolated=0.20350 formula=0.20255 ratio=1.005 | m=2 r_M= 9.80 z=1.73: L64=0.10355 L128=0.11487 extrapolated=0.12619 formula=0.12809 ratio=0.985
+N1 s= 16 (1,1,1): m=1 r_M= 6.93 z=1.22: L64=0.14405 L128=0.15540 extrapolated=0.16675 formula=0.16847 ratio=0.990 | m=1 r_M= 6.93 z=1.22: L64=0.14405 L128=0.15540 extrapolated=0.16675 formula=0.16847 ratio=0.990 | m=2 r_M=13.86 z=2.45: L64=0.06795 L128=0.07922 extrapolated=0.09049 formula=0.09184 ratio=0.985
+N1 s= 64 (1,0,0): m=2 r_M= 5.66 z=0.50: L64=0.09484 L128=0.10611 extrapolated=0.11739 formula=0.11715 ratio=1.002 | m=4 r_M=11.31 z=1.00: L64=0.07249 L128=0.08372 extrapolated=0.09494 formula=0.09484 ratio=1.001 | m=8 r_M=22.63 z=2.00: L64=0.03366 L128=0.04467 extrapolated=0.05568 formula=0.05601 ratio=0.994
+N1 s= 64 (1,1,0): m=1 r_M= 4.90 z=0.43: L64=0.09710 L128=0.10838 extrapolated=0.11966 formula=0.11948 ratio=1.002 | m=2 r_M= 9.80 z=0.87: L64=0.07862 L128=0.08986 extrapolated=0.10110 formula=0.10127 ratio=0.998 | m=5 r_M=24.49 z=2.17: L64=0.02922 L128=0.04018 extrapolated=0.05115 formula=0.05187 ratio=0.986
+N1 s= 64 (1,1,1): m=1 r_M= 6.93 z=0.61: L64=0.09022 L128=0.10149 extrapolated=0.11276 formula=0.11275 ratio=1.000 | m=2 r_M=13.86 z=1.22: L64=0.06112 L128=0.07231 extrapolated=0.08349 formula=0.08424 ratio=0.991 | m=3 r_M=20.78 z=1.84: L64=0.03764 L128=0.04870 extrapolated=0.05975 formula=0.06068 ratio=0.985
+N1 extrapolated/formula over the 27 points: mean 0.9942, range 0.9643 to 1.0450; at fixed x the L = 64 and 128 values differ by a 1/L term, and the extrapolation lands on the continuum formula
+N1 comparator arccosh(1 + E_3/2) against |k| along (1,0,0): k=0.100:0.0999 vs 0.1000 k=0.200:0.1993 vs 0.2000 k=0.400:0.3948 vs 0.4000 k=0.800:0.7604 vs 0.8000
+SUMMARY: Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi^s/(1-u) verified exactly with rational arithmetic on L = 3, 4, 5 tori (zero mode removed, it grows by sigma^2 per level), the lag-s kernel is the equal-level kernel displaced by s(1,1,1)/4 and spread by sM with M = I/4 - J/16 and co-moving form (c/r_M) erf(r_M/sqrt(2s)), c = 4 sigma^2/pi (extrapolated/formula 0.994), and the per-level rate -log|phi| = k^T M k/2 is diffusive against the comparator's arccosh(1 + E_3/2) = |k|, with the identity 4(|1 - phi e^{iw}|^2 + 1 - u) = 2 sum_j (1 - cos(w + k_j)); 8s
+
+[stderr]
+/Users/jonBridger/.probe-workers/Physics-baremetal-probes/C-heat-kernel-in-3plus1-a2/probes/work/compute/heat-kernel-in-3plus1/w-jonathonsmac4f50-jc48b/run.py:99: RuntimeWarning: divide by zero encountered in divide
+  pred = np.where(np.abs(1 - np.abs(ph) ** 2) > 1e-12, 1.0 / (1 - np.abs(ph) ** 2), 0.0); pred[0, 0, 0] = 0

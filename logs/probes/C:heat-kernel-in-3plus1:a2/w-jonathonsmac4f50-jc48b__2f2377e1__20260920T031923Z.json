@@ -1,0 +1,32 @@
+{
+ "task": "C:heat-kernel-in-3plus1:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-jc48b",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/heat-kernel-in-3plus1/w-jonathonsmac4f50-jc48b/run.py",
+ "seed": 74363,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2f2377e1",
+ "started_utc": "20260920T031923Z",
+ "elapsed_s": 8.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi^s/(1-u) verified exactly with rational arithmetic on L = 3, 4, 5 tori (zero mode removed, it grows by sigma^2 per level), the lag-s kernel is the equal-level kernel displaced by s(1,1,1)/4 and spread by sM with M = I/4 - J/16 and co-moving form (c/r_M) erf(r_M/sqrt(2s)), c = 4 sigma^2/pi (extrapolated/formula 0.994), and the per-level rate -log|phi| = k^T M k/2 is diffusive against the comparator's arccosh(1 + E_3/2) = |k|, with the identity 4(|1 - phi e^{iw}|^2 + 1 - u) = 2 sum_j (1 - cos(w + k_j)); 8s"
+ },
+ "review": "run.py derives Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi^s/(1-u) from the recursion and verifies it exactly with Fractions on L = 3, 4, 5 tori by solving (delta - b) * C = sigma^2 (delta - 1/N) over the rationals (C(0) = 1576/1215, 1913/1344, 2525816/1685625 times sigma^2) with the zero mode excluded because its variance grows by sigma^2 per level, shows the step drift (1,1,1)/4 and step covariance M = I/4 - J/16 so that at lag s the kernel is displaced by s(1,1,1)/4 and smoothed over sqrt(2s) with the co-moving form (c/r_M) erf(r_M/sqrt(2s)), c = 4 sigma^2/pi, which 27 FFT points at L = 64 and 128 confirm to a mean of 0.994 after the 1/L torus term is extrapolated away, and verifies -log|phi| = k^T M k/2 (diffusive, against the comparator's arccosh(1 + E_3/2) = |k|) and the n-predecessor identity n(|1 - phi e^{iw}|^2 + 1 - u) = 2 sum_j (1 - cos(w + k_j)) for d = 1, 2, 3, 4; no HIT.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): The space-time covariance in 3+1. For the linear model Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi(k)^s/(1-u) (block 35's T1 with four predecessors). (1) Re-derive it for d = 3 from the recursion and verify exactly on L = 3, 4 tori by propagating the covariance matrix with rational arithmetic. (2) Real space: at lag s the covariance is the equal-level kernel convolved with the s-step walk; show the drift (1,1,1)/4 per level and the Gaussian spreading; in the co-moving frame give the large-distance form. (3) The decay rate of a mode per level is -log|phi(k)| ~ k^T M k / 2: diffusive, against the comparator's (static law's) rate ~ |k| (README section 8, the probe's identity E(k) = 3(|1 - phi e^{iw}|^2 + 1 - u) has a four-predecessor analogue: find it and verify it symbolically). DELIVERABLE in your unit worktree: probes/work/compute/heat-kernel-in-3plus1/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/heat-kernel-in-3plus1/<name>/run.py\"",
+ "stdout_sha256": "a303189722851182d7c958f3262db5d51a780978d038b06c44315a434eaf120a",
+ "stdout_tail": "10149 extrapolated=0.11276 formula=0.11275 ratio=1.000 | m=2 r_M=13.86 z=1.22: L64=0.06112 L128=0.07231 extrapolated=0.08349 formula=0.08424 ratio=0.991 | m=3 r_M=20.78 z=1.84: L64=0.03764 L128=0.04870 extrapolated=0.05975 formula=0.06068 ratio=0.985\nN1 extrapolated/formula over the 27 points: mean 0.9942, range 0.9643 to 1.0450; at fixed x the L = 64 and 128 values differ by a 1/L term, and the extrapolation lands on the continuum formula\nN1 comparator arccosh(1 + E_3/2) against |k| along (1,0,0): k=0.100:0.0999 vs 0.1000 k=0.200:0.1993 vs 0.2000 k=0.400:0.3948 vs 0.4000 k=0.800:0.7604 vs 0.8000\nSUMMARY: Cov(theta_k(t), theta_k(t+s)) = sigma^2 phi^s/(1-u) verified exactly with rational arithmetic on L = 3, 4, 5 tori (zero mode removed, it grows by sigma^2 per level), the lag-s kernel is the equal-level kernel displaced by s(1,1,1)/4 and spread by sM with M = I/4 - J/16 and co-moving form (c/r_M) erf(r_M/sqrt(2s)), c = 4 sigma^2/pi (extrapolated/formula 0.994), and the per-level rate -log|phi| = k^T M k/2 is diffusive against the comparator's arccosh(1 + E_3/2) = |k|, with the identity 4(|1 - phi e^{iw}|^2 + 1 - u) = 2 sum_j (1 - cos(w + k_j)); 8s\n\n[stderr]\n/Users/jonBridger/.probe-workers/Physics-baremetal-probes/C-heat-kernel-in-3plus1-a2/probes/work/compute/heat-kernel-in-3plus1/w-jonathonsmac4f50-jc48b/run.py:99: RuntimeWarning: divide by zero encountered in divide\n  pred = np.where(np.abs(1 - np.abs(ph) ** 2) > 1e-12, 1.0 / (1 - np.abs(ph) ** 2), 0.0); pred[0, 0, 0] = 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc48b",
+  "at_utc": "20260920T031945Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -22,15 +22,22 @@
  "stdout_sha256": "74db308dc8ebec63d7a61aea3aa890fba55a11780ca6a111ea9a959c620ab8f6",
  "stdout_tail": "ommon-vector completeness is identity\nPASS rank-one Kraus/isometry classification: declared family is exactly the V channel\nPASS rank-one Kraus/isometry classification: weaker constraints admit dephasing\nPASS written-projector permanence: a trace-preserving repeat extension exists\nPASS written-projector permanence: repeat application fixes the P_0 record\nPASS written-projector permanence: repeat application fixes the P_1 record\nPASS written-projector permanence: classical mixtures are idempotently stable\nPASS written-projector permanence: C2 leaves no cross-record component\nPASS written-projector permanence: normalized Kraus amplitudes fix the content projector\nPASS written-projector permanence: reset-to-blank control is normalized\nPASS written-projector permanence: reset overwrites P_1 but leaves coincident P_0 fixed\nPASS register-unitary orbit: the general record-frame matrix is unitary\nPASS register-unitary orbit: conjugation preserves the controlled-copy class\nPASS register-unitary orbit: canonical labels map to the general pair\nPASS named negative controls: non-correlating write is rejected by C1\nPASS named negative controls: pointer-demolishing write is rejected by C3\nPASS named negative controls: reset of P_1 to blank is rejected by C2\nPASS named negative controls: non-isometric contraction fails normalization\nPASS dependency-scope quotations: controlled-copy write-isometry surface\nPASS dependency-scope quotations: projective extracted-block form\nTOTAL: PASS=32 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260920T091629Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102900Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 90cc2b81 differs from the current HEAD 076cedf0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=32 FAIL=1' vs cache 'TOTAL: PASS=33 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Same cause as the earlier run of this task, reported in issue #8501: the runner asserts that clause C4, 'For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.', occurs verbatim in the flattened docs/MINIMAL_AXIOMS_2026-06-29.md, and commit 634b1de2f8 (feat(axioms): drop named additive I from Record, 2026-08-13) replaced that sentence with 'A site with no record cannot be read.' 19 scripts still quote the withdrawn clause.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102900Z"
  }
 }

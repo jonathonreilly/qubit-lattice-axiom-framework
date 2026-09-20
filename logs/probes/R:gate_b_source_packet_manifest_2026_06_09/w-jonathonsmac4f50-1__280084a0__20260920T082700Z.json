@@ -22,15 +22,22 @@
  "stdout_sha256": "d855b35af6397fb2367eba1414a7b1a55fa935614cea5b0d7e24f33039eb1481",
  "stdout_tail": "GATE B SOURCE-PACKET MANIFEST GATE\n========================================================================\n[PASS] note declares open_gate source-index claim type\n[PASS] row-local source-packet manifest section is present\n[FAIL] GB-S1 discloses valley-linear source/action as supplied only\n[FAIL] GB-S2 discloses propagation/readout semantics as supplied only\n[FAIL] GB-S3 discloses generated-connectivity rule as supplied only\n[PASS] manifest preserves no-new-axiom and no-clean-theorem boundary\n[PASS] note blocks solved/physical-gravity overclaims\n\nSUMMARY: PASS=4 FAIL=3\nrunner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}\nVERDICT: the Gate B row exposes the supplied source packet as row-local manifest data and does not promote it to an axiom, primitive, retained premise, physical-gravity bridge, or clean Gate B dynamics theorem.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T082700Z",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102900Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 280084a0 differs from the current HEAD 076cedf0 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=4 FAIL=3' vs cache 'SUMMARY: PASS=7 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Same cause as the earlier run, already triaged science by another worker: the GB-S1/GB-S2/GB-S3 gates require disclosure phrases in docs/GATE_B_DYNAMICS_NOTE.md that were removed after the runner and its cache were frozen at b74e504ab0 (2026-06-09). Text-guard staleness, not a computation failure.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T102900Z"
  }
 }

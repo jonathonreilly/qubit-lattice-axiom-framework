@@ -1,0 +1,232 @@
+== break_source_input_hash
+TOTAL: PASS=32 FAIL=1
+== break_source_input_readability
+TOTAL: PASS=32 FAIL=1
+== claim_objects_registered
+TOTAL: PASS=32 FAIL=1
+== claim_gravity_supplied
+TOTAL: PASS=32 FAIL=1
+== claim_parameter_value_selected
+TOTAL: PASS=32 FAIL=1
+== claim_readings_licensed
+TOTAL: PASS=32 FAIL=1
+== break_parameter_carriers
+TOTAL: PASS=32 FAIL=1
+== break_degree_diagonal_reconciliation
+TOTAL: PASS=32 FAIL=1
+== break_overlap_folded_structure
+TOTAL: PASS=32 FAIL=1
+== break_flat_control
+TOTAL: PASS=32 FAIL=1
+== break_flat_deformation
+TOTAL: PASS=32 FAIL=1
+== break_bloch_bench_agreement
+TOTAL: PASS=32 FAIL=1
+== break_parity_mechanism
+TOTAL: PASS=32 FAIL=1
+== break_d07_congruence
+TOTAL: PASS=32 FAIL=1
+== break_union_locus
+TOTAL: PASS=32 FAIL=1
+== break_factorization_type
+TOTAL: PASS=32 FAIL=1
+== claim_single_metric_cone_restored
+TOTAL: PASS=32 FAIL=1
+== break_coincidence_fate
+TOTAL: PASS=32 FAIL=1
+== break_pencil_branches
+TOTAL: PASS=32 FAIL=1
+== break_shear_registration
+TOTAL: PASS=32 FAIL=1
+== claim_volume_blind_under_parameters
+TOTAL: PASS=32 FAIL=1
+== break_scout_grade_fence
+TOTAL: PASS=32 FAIL=1
+== claim_assembly_decided
+TOTAL: PASS=32 FAIL=1
+== break_instance_scope
+TOTAL: PASS=32 FAIL=1
+== drop_n5_fence
+TOTAL: PASS=32 FAIL=1
+== break_float_absence
+TOTAL: PASS=32 FAIL=1
+
+[stderr]
+ase] mechanism: 54 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12643 ms
+[phase] branches: 21210 ms
+[phase] registration: 93562 ms
+[phase] authority: 0 ms
+[phase] construction: 526 ms
+[phase] control: 312 ms
+[phase] bench: 112 ms
+[phase] mechanism: 54 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12611 ms
+[phase] branches: 22020 ms
+[phase] registration: 93376 ms
+[phase] authority: 0 ms
+[phase] construction: 526 ms
+[phase] control: 309 ms
+[phase] bench: 111 ms
+[phase] mechanism: 54 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12622 ms
+[phase] branches: 17248 ms
+[phase] registration: 93282 ms
+[phase] authority: 0 ms
+[phase] construction: 535 ms
+[phase] control: 310 ms
+[phase] bench: 111 ms
+[phase] mechanism: 53 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12595 ms
+[phase] branches: 17248 ms
+[phase] registration: 93681 ms
+[phase] authority: 0 ms
+[phase] construction: 523 ms
+[phase] control: 313 ms
+[phase] bench: 113 ms
+[phase] mechanism: 54 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12612 ms
+[phase] branches: 17327 ms
+[phase] registration: 93781 ms
+[phase] authority: 0 ms
+[phase] construction: 523 ms
+[phase] control: 309 ms
+[phase] bench: 112 ms
+[phase] mechanism: 53 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12605 ms
+[phase] branches: 17262 ms
+[phase] registration: 93422 ms
+[phase] authority: 0 ms
+[phase] construction: 529 ms
+[phase] control: 310 ms
+[phase] bench: 111 ms
+[phase] mechanism: 53 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12925 ms
+[phase] branches: 19094 ms
+[phase] registration: 93501 ms
+[phase] authority: 0 ms
+[phase] construction: 523 ms
+[phase] control: 310 ms
+[phase] bench: 111 ms
+[phase] mechanism: 53 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12571 ms
+[phase] branches: 18844 ms
+[phase] registration: 93308 ms
+[phase] authority: 0 ms
+[phase] construction: 526 ms
+[phase] control: 308 ms
+[phase] bench: 112 ms
+[phase] mechanism: 54 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12574 ms
+[phase] branches: 17251 ms
+[phase] registration: 93303 ms
+[phase] authority: 0 ms
+[phase] construction: 527 ms
+[phase] control: 310 ms
+[phase] bench: 112 ms
+[phase] mechanism: 54 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12679 ms
+[phase] branches: 18779 ms
+[phase] registration: 93522 ms
+[phase] authority: 0 ms
+[phase] construction: 528 ms
+[phase] control: 309 ms
+[phase] bench: 112 ms
+[phase] mechanism: 54 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12618 ms
+[phase] branches: 17244 ms
+[phase] registration: 93349 ms
+[phase] authority: 0 ms
+[phase] construction: 524 ms
+[phase] control: 309 ms
+[phase] bench: 112 ms
+[phase] mechanism: 53 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12578 ms
+[phase] branches: 23281 ms
+[phase] registration: 93391 ms
+[phase] authority: 0 ms
+[phase] construction: 526 ms
+[phase] control: 310 ms
+[phase] bench: 112 ms
+[phase] mechanism: 53 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12577 ms
+[phase] branches: 22447 ms
+[phase] registration: 93455 ms
+[phase] authority: 0 ms
+[phase] construction: 524 ms
+[phase] control: 308 ms
+[phase] bench: 111 ms
+[phase] mechanism: 53 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 12577 ms
+[phase] branches: 19676 ms
+[phase] registration: 93388 ms

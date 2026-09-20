@@ -1,0 +1,32 @@
+{
+ "task": "M:admissibility_dirac_kahler_duality_parameters_principal_part_2026_09_05",
+ "type": "mutation-census",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "for m in $(python3 scripts/admissibility_dirac_kahler_duality_parameters_principal_part_2026_09_05.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/admissibility_dirac_kahler_duality_parameters_principal_part_2026_09_05.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 79631,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "34d906f7",
+ "started_utc": "20260920T044711Z",
+ "elapsed_s": 3303.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "0ad4f2d65c3ff1602be01602f562222cf07c39a559460740b430835c8f642d4f",
+ "stdout_tail": " ms\n[phase] registration: 93303 ms\n[phase] authority: 0 ms\n[phase] construction: 527 ms\n[phase] control: 310 ms\n[phase] bench: 112 ms\n[phase] mechanism: 54 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12679 ms\n[phase] branches: 18779 ms\n[phase] registration: 93522 ms\n[phase] authority: 0 ms\n[phase] construction: 528 ms\n[phase] control: 309 ms\n[phase] bench: 112 ms\n[phase] mechanism: 54 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12618 ms\n[phase] branches: 17244 ms\n[phase] registration: 93349 ms\n[phase] authority: 0 ms\n[phase] construction: 524 ms\n[phase] control: 309 ms\n[phase] bench: 112 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12578 ms\n[phase] branches: 23281 ms\n[phase] registration: 93391 ms\n[phase] authority: 0 ms\n[phase] construction: 526 ms\n[phase] control: 310 ms\n[phase] bench: 112 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12577 ms\n[phase] branches: 22447 ms\n[phase] registration: 93455 ms\n[phase] authority: 0 ms\n[phase] construction: 524 ms\n[phase] control: 308 ms\n[phase] bench: 111 ms\n[phase] mechanism: 53 ms\n[cone] W1 onsite\n[cone] W1 slices\n[cone] W1 overlap\n[cone] L+- onsite\n[cone] L-+ onsite\n[phase] cone: 12577 ms\n[phase] branches: 19676 ms\n[phase] registration: 93388 ms\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260920T054215Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+  ]
+ }
+}

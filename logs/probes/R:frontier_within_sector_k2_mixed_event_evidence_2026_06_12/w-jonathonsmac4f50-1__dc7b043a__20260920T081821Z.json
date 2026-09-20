@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_within_sector_k2_mixed_event_evidence_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_within_sector_k2_mixed_event_evidence_2026_06_12.py",
+ "seed": 92301,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T081821Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4fbf9d913c67178ee71afa8ba3d469f0a0fe01fce434a9a084cc352f4b70cfb1",
+ "stdout_tail": "null p95  (record 0.176915 vs null p95 0.250621)\nseed 7 depth 11 prefix-k=3: B=2048, sectors=8, ESS=[234.141, 227.254, 238.581, 216.110, 235.795, 234.684, 231.518, 215.710], adequacy=AAAAAAAA, |delta|=[0.006, 0.056, 0.201, 0.113, 0.081, 0.210, 0.093, 0.021], adequate-weighted |delta|=0.092996\nseed 7 depth 11 prefix-k=3: permutation null draws=300, finite=300, median=0.248140, p95=0.251159, max=0.252984\n  [PASS] V4 record-vs-null TRUE RELATION: seed 7 depth 11 prefix-k=3 adequate-sector weighted |delta| DOES NOT EXCEED permutation-null p95  (record 0.092996 vs null p95 0.251159)\n  [PASS] V4c TRUE OUTCOME: seed 7's next-most-spread row supplies an adequate within-sector datum  (adequate prefixes k=2, k=3)\n==============================================================================\nTOTAL: PASS=13 FAIL=0\n==============================================================================\nSCOPE: finite L=3, depth cap 12, selected seeds 4242/99/7, landed selector\n  depths 9/7/4.  The ESS adequacy pattern is computed before gating; the\n  moment-relation statistic is the adequate-sector weighted | |chi_2| -\n  |chi_1|^4 | deviation.  Permutation controls use 300 deterministic label\n  draws with rng 7777 and preserve prefix-sector cardinalities.  Seed 7's\n  selected event is escalated to the requested next-most-spread row only if\n  its landed selected event is not k=2 adequate.  Finite power; branch\n  weights are explicit Kraus/Born weights; statuses pipeline-derived.\n  Audit lane grades.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T081824Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

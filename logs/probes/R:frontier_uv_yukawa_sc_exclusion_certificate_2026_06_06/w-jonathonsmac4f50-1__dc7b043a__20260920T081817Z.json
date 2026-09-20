@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_uv_yukawa_sc_exclusion_certificate_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_uv_yukawa_sc_exclusion_certificate_2026_06_06.py",
+ "seed": 92297,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T081817Z",
+ "elapsed_s": 2.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 24   FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c79b5335177a910ec7aae2ec0f0f206b1948da9f5a69b9699bdf6577f8b3de6c",
+ "stdout_tail": "\n\n[BLOCK 4] Common-denominator sharing and cancellation controls\n  [PASS] two chosen observables share one radius |b_c|=sqrt(5)  --  R(O1)=2.2361, R(O2)=2.2361, sqrt(5)=2.2361\n  [PASS] an entire numerator can cancel all denominator zeros  --  O_cancel = Z/Z = 1, so common Z does not force an identical radius\n  [PASS] plaquette radius cannot be assigned to another observable from common Z alone  --  observable-specific cancellation leaves the four-fermion radius open\n\n[BLOCK 5] Source-note selector firewall\n  [PASS] the two coefficient square roots are distinct  --  1/sqrt(6)=0.40825 vs 1/N_c=0.33333\n  [PASS] source note preserves public C_strong = 1/N_c^2 convention\n  [PASS] source note explicitly leaves governing-expansion selection open\n  [PASS] source note does not claim an only-convergent expansion\n  [PASS] beta=6 comparison is retained only as finite plaquette evidence\n\n[BLOCK 6] Literature complex-singularity comparators (never inputs)\n  [PASS] R_SC consistent with the earlier series-analysis scale ~5.7  --  R_SC=5.386 vs series scale 5.7 (comparator only)\n  [PASS] R_SC consistent with the finite-volume Fisher-zero modulus ~5.54  --  R_SC=5.386 vs |5.54+0.10i|=5.541\n  [PASS] all comparator scales are below 6 without radius transfer  --  comparison is plaquette-series evidence only\n\n==============================================================================\nSCORECARD:  PASS = 24   FAIL = 0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T081819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

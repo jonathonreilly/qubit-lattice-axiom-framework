@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_wilson_action_surface_selector_real_positive_2026_05_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_wilson_action_surface_selector_real_positive_2026_05_25.py",
+ "seed": 92300,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T081820Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "total": [
+   "PASS = 8, FAIL = 0",
+   "PASS = 37, FAIL = 0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d111678cdc1044a270c1de49589a0ba535f1da3e3a13b159f6f97d86918f1686",
+ "stdout_tail": "02)\n  [PASS] V7.1  S = i theta Q[U] with Q = \u03a3_P Im Tr U_P has Im S != 0 on generic SU(3) configs  (20/20 configs reject (Im S > 1e-9))\n  [PASS] V7.2  Boltzmann factor exp(-S_W - i theta Q) has Im != 0 (rejection)  (20/20 configs reject (Im BF > 1e-12 * |BF|))\n  [PASS] V7.3  Control: theta = 0 gives real Boltzmann factor on ALL configs  (20/20 configs have Im BF = 0 at theta = 0)\n  [PASS] V7   F~F-proxy term i\u03b8Q rejected at action-functional + Boltzmann-factor levels  (Convention guard plus triple confirmation: Im S != 0, Im BF != 0, theta=0 control)\n\n=== V8: Scoped beta-matching consistency ===\n\n  [PASS] V8.1  Canonical generator normalization Tr(T^a T^b) = (1/2) delta^{ab} holds on T_GEN basis  (max |Tr(T^a T^b) - target| = 1.11e-16)\n  [PASS] V8.2  Scoped relation: g_bare^2 = 2 N_c / beta = 1 at beta = 6, N_c = 3  (g_bare^2 = 1.000000)\n  [PASS] V8.3  Inverse: beta = 2 N_c / g_bare^2 = 6 at g_bare^2 = 1 (canonical), N_c = 3  (beta = 6.000000)\n  [PASS] V8   Scoped beta-matching consistency: beta = 6 from N_c = 3  (Canonical Wilson coefficient checked as a scoped premise, not imported status)\n\n================================================================================\nGATE SUMMARY (8 verification gates):\n  [PASS]  V1\n  [PASS]  V2\n  [PASS]  V3\n  [PASS]  V4\n  [PASS]  V5\n  [PASS]  V6\n  [PASS]  V7\n  [PASS]  V8\n\n  GATES: PASS = 8, FAIL = 0\n\nSUB-CHECK SUMMARY:\n  PASS = 37, FAIL = 0, runtime = 0.6s\n================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T081821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_wilson_action_surface_selector_real_positive_2026_05_25.txt against the .txt beside this log"
+  ]
+ }
+}

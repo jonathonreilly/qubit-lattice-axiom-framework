@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_universal_gr_spin2_curvature_generator_supplied_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_universal_gr_spin2_curvature_generator_supplied_2026_06_10.py",
+ "seed": 92244,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T081724Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a37e9ec1db0efa95e96a78494c3d336ba1d30789ff7f5713496fe9938f1afa62",
+ "stdout_tail": "vel (the landed geometric rows). The scalar-W facts stand unchanged: the bundle non-canonicity is a true property of that route (its scalar-channel-only canonical projector, its rank-1 longitudinal Hessian -- reproduced in F2). What remains for the gate's own atlas: the S^3 transplant of the geometric construction and the nonlinear completion -- named open, not claimed.\n       flat-atlas linearized supply certified; S^3 transplant + nonlinear completion remain open\n\nTOTAL: PASS=6 FAIL=0\nVERDICT: the minimal extra object named by the polarization-frame gate -- equivalently (per the\nlanded TT-kernel re-scope) a spin-2-coupled two-derivative curvature generator turning the\nkernel data into 'a canonical Einstein/Regge dynamics law' -- EXISTS on the flat Z^3 x Z_tau\natlas: it is the second variation of the Regge action of the landed geometric rows. It is\ntwo-derivative (F1), spin-2-coupled where the scalar-W route provably is not (F2), and the\ngate's exact obstruction FAILS for it: the localized channel coefficients are frame-COVARIANT,\ncollapsing to the single constant c = -1/2 per momentum (F3), with every channel weight a\nframe-independent scalar (F4) and the localization equal to the linearized Einstein/Regge law\nitself (F5). The gate's obstruction remains a true fact about the scalar-W route; the\nuniversal-GR lane's tensor sector is unblocked by routing through the geometric action instead.\nOpen and named: the S^3 transplant, the nonlinear completion. No external-data value.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T081727Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_universal_gr_spin2_curvature_generator_supplied_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

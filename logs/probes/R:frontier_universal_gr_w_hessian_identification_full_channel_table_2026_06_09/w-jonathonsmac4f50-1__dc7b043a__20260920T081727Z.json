@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_universal_gr_w_hessian_identification_full_channel_table_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_universal_gr_w_hessian_identification_full_channel_table_2026_06_09.py",
+ "seed": 92247,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T081727Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "187adcd38877835ae31f47e208cee3dac531d7b9882ea948a5110e5e5b202770",
+ "stdout_tail": " of the landed rows is resolved.\n  (2) SPIN-2 SECTOR EXTENDED, WITH AN HONEST NEGATIVE: both TT channels positive (scheme-robust,\n      mass-robust, BZ-convergent), BUT the E_g/T_2g stiffness anisotropy is O(1), k-STABLE, and\n      PERSISTS toward lighter mass -- the tested stiffness has O(1) cubic anisotropy, not an\n      emergent-isotropic graviton kinetic term.\n  (3) THE #3220 COMPARATOR IS NOT INDUCED (sharpening): the conserved-scheme induced trace\n      stiffness is POSITIVE -- same sign as TT -- and the transverse trace-vs-shear splitting is\n      ZERO at machine precision on checked grids: the k=0 trace=shear DEGENERACY persists in\n      this finite-BZ check. The opposite-signed GR/Lichnerowicz channel pair is not induced by\n      the one-loop W action in this tested scheme; the curvature-sign structure must come from\n      elsewhere, such as a geometric/Regge route, and the gauge channels are NOT suppressed at\n      the slope level in this finite-BZ check.\n  NET: in the tested native one-loop W schemes the induced action is a healthy-positive but\n      ANISOTROPIC, SAME-SIGN, gauge-unsuppressed elastic stiffness -- it does not reproduce the\n      Einstein/Lichnerowicz opposite-sign trace/TT comparator in this tested class.\nScope: finite-BZ stiffness signs of the induced action for the native elliptic operator; NOT a\ncontinuum dispersion law; NOT a unique-coupling theorem (local improvement freedom exhibited, not\neliminated); NOT full GR closure. No PDG/fitted value.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T081728Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

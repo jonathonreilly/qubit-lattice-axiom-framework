@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09.py",
+ "seed": 92301,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T081821Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=89, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "75ddc2b511d29a288945301fabfd9d8956be27f96065cb06ff73e24507d20e25",
+ "stdout_tail": "re phrase  (marker = 'F_2^4')\n  [PASS] note contains: lattice-independence phrase  (marker = 'lattice-independent')\n  [PASS] note contains: companion bounded note cited  (marker = 'WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08')\n\n----------------------------------------------------------------------------------------\n Bounded note cross-link to closed-form note\n----------------------------------------------------------------------------------------\n  [PASS] bounded note exists and references the new closed-form companion  (path = docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md)\n\n----------------------------------------------------------------------------------------\n Emit JSON certificate\n----------------------------------------------------------------------------------------\n  [PASS] wrote JSON certificate to outputs/wilson_bz_corner_hamming_staircase_certificate_2026_05_09.json  (size = 10480 bytes)\n\n========================================================================================\n TOTAL: PASS=89, FAIL=0\n========================================================================================\n\n VERDICT: closed-form theorem certified.\n T1 closed-form enumeration: W(n)/r = 2*hw(n), multiplicities binomial(4,k).\n T2 S_4 equivariance verified (24/24 perms; C_3[111] and C_4[1111] sub-actions).\n T3 lattice-independence verified symbolically for any rectangular Bravais L.\n T4 sister Z^3 corollary verified (1+3+3+1 with C_3[111] transitivity).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T081821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

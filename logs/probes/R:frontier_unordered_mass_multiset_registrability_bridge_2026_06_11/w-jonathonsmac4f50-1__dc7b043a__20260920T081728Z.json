@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_unordered_mass_multiset_registrability_bridge_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py",
+ "seed": 92248,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "dc7b043a",
+ "started_utc": "20260920T081728Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3a540607412ee9b60364343e0a04d491a132c3e75650a129fb1b0b107427391a",
+ "stdout_tail": "Claim boundary: finite algebra under supplied context + explicit P-dep; P-dep is not derived from Record alone.\nPASS L1 flip identity conj(H(delta)) == H(-delta)\nPASS L2 {P_k} orthogonal idempotents, sum=I, central for H(delta)\nPASS L3 K/CPT label involution sigma = (0)(1 2) = (k -> -k mod 3)\nPASS L4 per-sector covariance lambda_{sigma(k)}(-delta) == lambda_k(delta)\nPASS L5 multiset invariant under flip; e1,e2,e3 even and match closed forms\nPASS L6 registrable family (p1,p2,p3; singlet class; cos3delta) orbit-constant, equal at +/-delta, I(empty)=0\nPASS L7 exactness: Newton-Girard rebuilds the multiset from registrable power sums; singlet readout resolves the orbit split\nPASS G1 hostile label-weighted sum violates ORBIT-CONSTANCY (differs at +/-delta)\nPASS G2 hostile signed doublet gap is K/CPT-odd and nonzero: violates ORBIT-CONSTANCY\nPASS G3 hostile fixed-label Vandermonde violates I(empty)=0 + ADDITIVITY and ORBIT-CONSTANCY (alternating)\nPASS G4 hostile sin(3 delta) assigns two values to one K/CPT outcome: violates ORBIT-CONSTANCY\nPASS G5 hostile cross-term I(rec1 u rec2)=l1+l2+l1*l2 violates ADDITIVITY\nPASS G6 hostile within-orbit order probe f(k,x)=[k==1]x violates per-record ORBIT-CONSTANCY r_k(d)=r_{sigma(k)}(-d)\nPASS D1 boundary points sin(3 delta)=0: cos(3 delta)=+/-1 exactly, registrable family flip-equal, G4 hostile vanishes there\nPASS H1 source scope: P-dep explicit, K/CPT orbit constancy bridge-relocated\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T081728Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

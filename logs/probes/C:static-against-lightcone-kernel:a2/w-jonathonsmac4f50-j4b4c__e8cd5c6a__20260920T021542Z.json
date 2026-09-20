@@ -1,0 +1,38 @@
+{
+ "task": "C:static-against-lightcone-kernel:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j4b4c",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/static-against-lightcone-kernel/w-jonathonsmac4f50-j4b4c/run.py",
+ "seed": 70542,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e8cd5c6a",
+ "started_utc": "20260920T021542Z",
+ "elapsed_s": 117.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "1-|phi|^2 = E(14-E)/49 exactly (the light-cone kernel is the static one times 1-E/14); at |m| matched within 0.01 the low-k shells give R_static below 1 and R_form above 1 in 8 of 8 cases, e.g. beta_s=1.0 |k| in [0.3,0.6): 0.895+-0.007 against 1.165+-0.004 (0.947 against the injected noise), in 117s"
+ },
+ "review": "run.py proves 1-|phi|^2 = E(14-E)/49 so the light-cone kernel is the static one times 1-E/14, matches the magnetization within 0.004 at beta_s = 1.0/1.5/2.0/3.0 by bisection (beta_f = 0.8061/1.1969/1.6281/2.4906), and in a common transverse frame finds beta_s E(k) S_static(k) below 1 (0.895 to 0.975 in the lowest shell) while S_form(k)(1-|phi|^2)/sigma^2 is above 1 (1.165 down to 1.065) in 8 of 8 low-k shells by more than three block errors, the excess tracking the calibration sigma^2 = A(7 beta_f)/(7 beta_f) against the noise the law injects, <A(kappa)/kappa> at kappa = beta_f|S|, whose ratio is 1.231 to 1.062.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): The comparator and the formation kernel side by side. For the sphere menu at matched magnetization: run probes/lib/block29_kernel.py (static law, heat bath on L^3; arguments L sweeps therm betas) at L = 16 for beta in {1.0, 1.5, 2.0, 3.0} and probes/lib/formation_levelplane.py in light-cone mode (3s sphere beta 16 T T0 seed) at couplings chosen so the magnetizations match within 0.01 (bisect on beta). Compare beta_static E(k) S_static(k) with S_formation(k) (1 - phi^2)/sigma^2 shell by shell. Expectation: both close to 1 at small k with corrections of the same sign; report the numbers, not a verdict. DELIVERABLE in your unit worktree: probes/work/compute/static-against-lightcone-kernel/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/static-against-lightcone-kernel/<name>/run.py\"",
+ "stdout_sha256": "4cbb40e4257645f579c86e3935216d03c3dec58458190e8b4aa5cd7afc3bc2c3",
+ "stdout_tail": "beta_s=3.00 |k| in [0.3,0.6): static 0.9593+-0.0055 (below 1), formation 1.0645+-0.0052 (above 1)\nN4   opposite sign: beta_s=3.00 |k| in [0.6,1.0): static 0.9753+-0.0023 (below 1), formation 1.0298+-0.0052 (above 1)\nN4 replacing sigma^2 by the injected noise moves the low-k formation ratio closer to 1 in 7 of 8 shells and puts it below 1 in 7 of 8\nN4 frame-bias prediction (1+<cos^2 theta>)/2, which is the small-fluctuation form: it matches the measured fixed/instantaneous ratio to 0.0294 in the lowest shell at every coupling and to 0.1672 over all shells, the deviation growing with |k| and with the drift (0.0089 over all shells at beta_s=3)\nSUMMARY: 1-|phi|^2 = E(14-E)/49 exactly (the light-cone kernel is the static one times 1-E/14); at |m| matched within 0.01 the low-k shells give R_static below 1 and R_form above 1 in 8 of 8 cases, e.g. beta_s=1.0 |k| in [0.3,0.6): 0.895+-0.007 against 1.165+-0.004 (0.947 against the injected noise), in 117s\nHIT: the two corrections do NOT have the same sign at small k. At magnetization matched within 0.01, beta_s E(k) S_static(k) sits below 1 (the infrared bound) while S_form(k)(1-|phi|^2)/sigma^2 sits above 1 in 8 of 8 low-k shells, each by more than three block errors; the formation excess is the calibration constant, since sigma^2 = A(7 beta_f)/(7 beta_f) assumes aligned predecessors while the law injects <A(kappa)/kappa> at kappa = beta_f |S| < 7 beta_f, and the ratio against that injected noise moves back towards 1 (see R_form_eff).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4b4c",
+  "at_utc": "20260920T021758Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The script demonstrates the contradiction with the task's stated expectation - at magnetization matched within 0.004 the static ratio sits below 1 and the light-cone formation ratio above 1 in all eight low-k shells, each by more than three block errors - and locates two measurement causes: the calibration sigma^2 = A(7 beta_f)/(7 beta_f) assumes aligned predecessors while the law injects 1.231x that at beta_f = 0.81, and the two library drivers use different transverse frames, formation_levelplane.py projecting on the initial direction whose drift biases its printed ratio by (1+<cos^2 theta>)/2 = 0.63 there.",
+  "by": "w-jonathonsmac4f50-j4b4c",
+  "at_utc": "20260920T021758Z"
+ }
+}

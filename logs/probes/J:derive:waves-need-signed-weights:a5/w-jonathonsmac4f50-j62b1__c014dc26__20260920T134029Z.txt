@@ -1,0 +1,57 @@
+G1  the gauge identity
+ok   SWAP      y_mn = v + g_m - g_n with v = 1, g = [0, 0], and W(k) = e^(-ikv) D A D^-1
+ok   MIX       y_mn = v + g_m - g_n with v = 1, g = [0, 0], and W(k) = e^(-ikv) D A D^-1
+ok   GAUGE     y_mn = v + g_m - g_n with v = 1, g = [0, 1], and W(k) = e^(-ikv) D A D^-1
+ok   GAUGEMIX  y_mn = v + g_m - g_n with v = 1, g = [0, 1], and W(k) = e^(-ikv) D A D^-1
+ok   HALF      y_mn = v + g_m - g_n with v = 3/2, g = [0, 3/2], and W(k) = e^(-ikv) D A D^-1
+
+G2  those rules are unimodular at every k
+     G1 gives W(k) = e^(-ikv) D A D^-1, a similarity, so spec W(k) = e^(-ikv) spec A.
+     A is row-stochastic, so 1 is in spec A and every other eigenvalue has |mu| <= 1:
+     the branch e^(-ikv) is unimodular at every k, and no branch ever exceeds 1.
+ok   SWAP      A is row-stochastic with spec [-1, 1]
+ok             and e^(ikv) W(k) has the trace and determinant of A, so the same spectrum
+ok   MIX       A is row-stochastic with spec [-1/2, 1]
+ok             and e^(ikv) W(k) has the trace and determinant of A, so the same spectrum
+ok   GAUGE     A is row-stochastic with spec [-1, 1]
+ok             and e^(ikv) W(k) has the trace and determinant of A, so the same spectrum
+ok   GAUGEMIX  A is row-stochastic with spec [-1/2, 1]
+ok             and e^(ikv) W(k) has the trace and determinant of A, so the same spectrum
+ok   HALF      A is row-stochastic with spec [-1, 1]
+ok             and e^(ikv) W(k) has the trace and determinant of A, so the same spectrum
+ok   CHIRAL    is two classes at once: spectrum [exp(-I*k), exp(I*k)], velocities +1 and -1
+
+G3  break either half and the unimodular set collapses
+ok   TWOSITE   unimodular on 1/61 of a 61-point grid (one block holds two sites)
+ok   MISMATCH  unimodular on 1/61 of a 61-point grid (two cycles with means +1 and 0)
+ok   PERSIST   unimodular on 1/61 of a 61-point grid (the persistent walk: both)
+ok   while CHIRAL and GAUGE are unimodular on all 61 of 61
+
+G4  the tightness lemma the proof turns on
+     If |lambda| = 1 and W(k)u = lambda u then |u| <= A|u| entrywise; with A
+     irreducible stochastic and left Perron pi > 0, pi|u| <= pi A |u| = pi|u|, so
+     every triangle inequality is tight: for each row m all the terms
+     w_mn(y) e^{-ik.y} u_n share one argument.
+ok   MIX: u = (1,1) is the unimodular eigenvector, with lambda = e^{-ik}
+ok   |u| = A|u|: the Perron equality the lemma forces
+ok   and row 0's two terms do share one argument, as the lemma says
+
+G5  the open-set lemma
+     y - y' = 1: e^(-ikm) = 1 at exactly the 1 point(s) 2 pi j/1 in [0, 2pi)
+     y - y' = 2: e^(-ikm) = 1 at exactly the 2 point(s) 2 pi j/2 in [0, 2pi)
+     y - y' = 3: e^(-ikm) = 1 at exactly the 3 point(s) 2 pi j/3 in [0, 2pi)
+     y - y' = 4: e^(-ikm) = 1 at exactly the 4 point(s) 2 pi j/4 in [0, 2pi)
+     y - y' = 5: e^(-ikm) = 1 at exactly the 5 point(s) 2 pi j/5 in [0, 2pi)
+ok   for every nonzero displacement difference the solution set is finite, so it has empty
+     interior: an open set of k forces y = y', and each block is a single site.
+
+G6  the consequence in two dimensions
+ok   four chiral copies on Z^2: every branch is unimodular, spectrum [exp(-I*k1), exp(I*k1), exp(-I*k2), exp(I*k2)]
+ok   but each branch is e^{-i k.v} with v in {+-e1, +-e2}: four velocities, four points
+     of the unit front - not a circle.  Adding components adds points, never a
+     circle, because by the theorem each irreducible class transports at ONE fixed
+     velocity: the group velocity of a unimodular branch is the constant v, so
+     there is no dispersion and no isotropy to be had from nonnegative weights.
+
+SUMMARY: PARTIAL the vector version of (a) that attempt a2 leaves open: for nonnegative matrix weights with an irreducible stochastic total, a branch is unimodular on a set with interior IFF every block sits at a single site and the displacements satisfy y_mn = v + g_m - g_n, and then W(k) = e^{-ikv} D A D^{-1} is unimodular at EVERY k with spectrum e^{-ikv} spec(A); a2's guess 'exactly the componentwise copies (permutation-type)' is too narrow - stochastic mixing with a common velocity, and gauge-shifted displacements such as y = 0 and y = 2 with mean +1, also qualify, while a two-site block or two cycles of different mean do not
+HIT: nonnegative matrix weights buy no dispersion - every unimodular branch is a rigid transport e^{-ik.v} times a fixed eigenvalue of A, one velocity per irreducible class, so in d >= 2 the achievable fronts are finitely many points and never an isotropic cone; the exceptional class is the gauge-equivalent common-velocity rules, strictly larger than the componentwise copies

@@ -1,0 +1,32 @@
+{
+ "task": "S:tight-sibling-pairs",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/tightpairs.py 140 1800 5 5 8",
+ "seed": 140,
+ "minutes": 30.0,
+ "box": "5x5x8",
+ "git_sha": "7a47fd15",
+ "started_utc": "20260920T113628Z",
+ "elapsed_s": 1800.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "-2"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "random-start climb maximizing min(v(w1), v(w2)) over sibling processed predecessors of a processed site; a HIT (value 0) is a tight sibling pair, the open case of block 33's lemma; then run S:tight-sibling-violation from it. Vary seed, box, minutes.",
+ "stdout_sha256": "70d1937f960c0998a14170ea653a86dcfb54c0fd84c65b0a1e488f1fe1757d89",
+ "stdout_tail": "seed 140: max over sibling processed pred pairs of min(v) = -5: detail ((4, 3, 5), (4, 2, 5), -5, (4, 3, 4), -5, -4); H3 violation: None; ones=17; zeta=[(0, 0, 3), (0, 0, 4), (0, 0, 7), (0, 1, 5), (0, 3, 0), (1, 1, 0), (1, 2, 1), (1, 3, 4), (3, 1, 3), (3, 2, 0), (4, 1, 5), (4, 2, 4), (4, 3, 0), (4, 3, 3)]\nseed 140: max over sibling processed pred pairs of min(v) = -4: detail ((3, 2, 2), (2, 2, 2), -4, (3, 2, 1), -4, -7); H3 violation: None; ones=30; zeta=[(0, 0, 3), (0, 0, 4), (0, 0, 7), (0, 1, 4), (0, 1, 5), (0, 3, 0), (1, 0, 4), (1, 1, 0), (1, 2, 1), (1, 2, 2), (1, 3, 4), (1, 4, 7), (2, 2, 1), (2, 2, 3), (3, 1, 3), (3, 2, 0), (4, 0, 2), (4, 1, 5), (4, 2, 4), (4, 3, 0), (4, 3, 3)]\nseed 140: max over sibling processed pred pairs of min(v) = -2: detail ((1, 1, 1), (0, 1, 1), -2, (1, 0, 1), -2, -2); H3 violation: None; ones=60; zeta=[(0, 0, 0), (0, 0, 1), (0, 0, 6), (0, 0, 7), (0, 1, 0), (0, 1, 3), (0, 2, 5), (0, 2, 6), (0, 3, 5), (0, 4, 1), (1, 0, 0), (1, 0, 1), (1, 0, 2), (1, 1, 2), (1, 1, 3), (1, 1, 6), (1, 2, 0), (1, 2, 1), (1, 3, 4), (1, 3, 6), (1, 4, 2), (1, 4, 7), (2, 0, 5), (2, 3, 3), (2, 3, 5), (2, 4, 0), (2, 4, 5), (2, 4, 6), (3, 0, 0), (3, 0, 2), (3, 1, 6), (3, 1, 7), (3, 2, 7), (3, 4, 0), (3, 4, 2), (3, 4, 5), (3, 4, 6), (3, 4, 7), (4, 0, 2), (4, 1, 3), (4, 1, 5), (4, 2, 0), (4, 2, 2), (4, 2, 7), (4, 4, 1)]\nseed 140: done restarts=40 best=-2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-4",
+  "at_utc": "20260920T120628Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

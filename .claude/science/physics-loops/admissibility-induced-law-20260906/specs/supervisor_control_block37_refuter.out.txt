@@ -1,0 +1,6 @@
+(a) integer program: c*(eta, 333) = 10/9; optimal tree E=10 A=9 S=1
+(b) rooted value with the level cap, c = 1, at (2, 3, 3): 0  (E=7 A=7 S=1)
+(b) rooted value with the level cap, c = 1, at (3, 2, 3): 0  (E=8 A=8 S=1)
+(b) rooted value with the level cap, c = 1, at (3, 3, 2): 0  (E=7 A=7 S=1)
+(b) rooted value at 333: 1
+(c) local search: 705 realizations tried in 404s; largest constant found 10/9 at (3, 3, 3)

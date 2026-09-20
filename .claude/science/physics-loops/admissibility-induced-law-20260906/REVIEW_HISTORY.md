@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-20 block 37 — author checks (not a review PASS)
+Exact dynamic program before reading the workers' checks; integer program as the disjoint refuting machinery; two findings folded (mutation isolation; the proof of exactness of 10/9). Census 7/7 in family. Hand-off to a fresh review-loop.

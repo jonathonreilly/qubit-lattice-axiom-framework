@@ -1,6 +1,6 @@
 {
  "edge_count": 13568,
- "node_count": 6014,
+ "node_count": 6015,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -745,6 +745,10 @@
   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
+  },
+  "admissibility_rule_six_axis_formation_threshold_the_unit_budget_is_false_one_seed_witness_with_family_constant_ten_ninths_tight_sibling_lemma_refuted_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8188f46b334d",

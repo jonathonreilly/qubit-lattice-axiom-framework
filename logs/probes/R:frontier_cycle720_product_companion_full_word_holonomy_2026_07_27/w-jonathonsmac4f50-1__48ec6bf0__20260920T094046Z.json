@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_product_companion_full_word_holonomy_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py",
+ "seed": 97246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48ec6bf0",
+ "started_utc": "20260920T094046Z",
+ "elapsed_s": 5.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5521ddc9f90fc672abd116ecca0a986fff84085b900f7679071b5e400c9c29c7",
+ "stdout_tail": "mum_cell_diameter\": 2, \"diagonal_digest\": \"cf2131db70b8c7efdc922d5794a407166b438053ced5b1ac35fe1235daa494c8\", \"diagonal_phase_matrix_symmetry_failures\": 0, \"diagonal_phase_solve_parity_failures\": 0, \"exact_logical_X_action_failures_after_diagonal_repair\": 0, \"holonomy_form_failures\": 0, \"logical_X_auxiliary_X_leakage\": 0, \"logical_X_permutation_failures_after_reset\": 0, \"logical_Z_action_failures_after_reset\": 0, \"maximum_diagonal_row_weight\": 126, \"maximum_holonomy_cell_diameter\": 2, \"maximum_holonomy_matter_weight\": 4, \"minimum_holonomy_matter_weight\": 2, \"raw_product_stabilizer_failures\": 300, \"required_diagonal_CZ_beyond_R2\": 12078, \"required_diagonal_CZ_distance_census\": {\"0\": 637, \"1\": 2552, \"2\": 3854, \"3\": 4222, \"4\": 3620, \"5\": 2408, \"6\": 1244, \"7\": 470, \"8\": 108, \"9\": 6}, \"required_diagonal_CZ_gates\": 19121, \"required_diagonal_CZ_maximum_cell_distance\": 9, \"required_diagonal_Z_gates\": 235, \"stabilizer_return_failures_after_reset\": 0}, \"matter_modes\": 600, \"shape\": [5, 5, 4]}], \"status\": \"cycle720-product-companion-E-falsified__bounded-holonomy-reset-positive__nonlocal-phase-repair\", \"supplied\": [\"the fixed total-parity sector used by the parent subsystem construction\", \"three companion qubits per cell initialized in |000>\", \"the existing within-cell matter and companion Majorana order\", \"the fixed checkerboard seam schedule; it is not physical time\", \"Cycle219 coin and Cycle230 contact parameters\"]}\nPRODUCT_COMPANION_STATE_E_FALSIFIED__BOUNDED_HOLONOMY_RESET_POSITIVE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T094052Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

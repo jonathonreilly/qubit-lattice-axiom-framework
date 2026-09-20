@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle730_enforcement_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle730_enforcement_independent_check_2026_07_28.py",
+ "seed": 97339,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48ec6bf0",
+ "started_utc": "20260920T094219Z",
+ "elapsed_s": 23.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1d9a7b73dc0948f50bdcfd8c5a22203cdf125bec308193f5cfb5c94ebe8b6747",
+ "stdout_tail": "ations\":5,\"solution_multiplicities\":[0,2]}]}\nPASS local_guard_non_global_counterexample :: {\"A_mask\":1,\"B_mask\":0,\"active_charge_row_clean\":true,\"active_station\":0,\"charge_row_mask\":2,\"conclusion\":\"the circuit has no global parity acceptance bit\",\"dirty_rows\":[1],\"h\":0,\"parity_mismatch\":true,\"refs_mask\":2,\"ring_stations\":11}\nPASS static_witness_recount :: {\"A_mask\":33,\"B_mask\":0,\"all_local_rows_pass\":true,\"bounded_scope\":\"static row-system witness only; no recurrent or global acceptance claim\",\"canonical_refs_mask\":62,\"closure\":0,\"frozen_refs_mask\":62,\"h\":0,\"local_rows\":[0,0,0,0,0,0,0,0,0,0,0],\"ring_stations\":11,\"token_count\":2,\"token_parity_equals_h\":true,\"token_sites\":[0,5]}\nPASS discipline :: {\"checker_K_attribute_writes\":[],\"checker_direct_primary_imports\":[],\"checker_frozen_literal_failures\":{},\"primary_K_attribute_writes\":[],\"primary_frozen_literal_failures\":{},\"primary_present_in_sys_modules\":false,\"program_census\":{\"nonidentity_stations\":91,\"stations\":130},\"word_size_arithmetic\":{\"added\":1276,\"cycle724\":98034,\"marked_edge_extra\":2,\"per_nonidentity_delta\":14,\"primary_cycle730\":99310,\"reproduced_cycle730\":99310}}\n{\"blocklist\":[\"frontier_cycle730_charge_row_enforcement_2026_07_28\"],\"certificates\":\"7/7\",\"checker\":\"cycle730_local_charge_row_guard_independent_check\",\"declared_input_closure_exact\":true,\"declared_mutable_input_paths\":79,\"failed\":[],\"pass\":true,\"runtime_seconds\":23.381284,\"timeout_seconds\":900,\"within_timeout\":true}\nCYCLE730_LOCAL_GUARD_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T094243Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle730_enforcement_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

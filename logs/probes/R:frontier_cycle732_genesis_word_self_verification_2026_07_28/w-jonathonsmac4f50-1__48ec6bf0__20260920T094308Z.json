@@ -1,0 +1,41 @@
+{
+ "task": "R:frontier_cycle732_genesis_word_self_verification_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
+ "seed": 97388,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48ec6bf0",
+ "started_utc": "20260920T094308Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d479aa14058c04ef8e4ef9189962483671efa899baffe9f239adf44b87d5875e",
+ "stdout_tail": "93\"},\"input_contract\":{\"all_exist\":true,\"declared_count\":83,\"exact_recursive_closure\":true,\"independent_runner_in_closure\":true,\"independent_runner_registered\":true,\"input_manifest_sha256\":\"3f8158565fbce556e44fa478582f3bdab43d12f2beb7440141fb26885d993529\",\"missing_path_rejected\":true,\"note_in_closure\":true,\"parent_note_in_closure\":true,\"recovered_count\":83,\"transitive_mutation_changes_digest\":true},\"pass\":true,\"report_sha256\":\"1ead8eb00106356dbabfe003b206b96ca12f93fdb8597e3d538a17548d4a803f\",\"runtime_seconds\":1.044105,\"scope_countercontrols\":{\"current_parent_global_parity_counterexample\":{\"A_occupancy_matches\":true,\"auxiliaries_clean_after_full_orbit\":true,\"auxiliaries_clean_after_one\":true,\"data_changes_after_full_orbit\":true,\"data_changes_after_one_word\":true,\"input\":{\"A_mask\":1,\"B_mask\":0,\"expected_A_occupancy\":1,\"h\":0,\"refs_mask\":2},\"literal_reverse_exact_after_full_orbit\":true,\"literal_reverse_exact_after_one\":true,\"refs_h_return_after_full_orbit\":true,\"refs_h_return_after_one\":true,\"scope_statement\":\"The integrated word is not a global parity acceptor; the certificate proves only A-rail counter/comparator behavior and the separately stated fixed 55-placement refusal fixture.\",\"two_rail_parity_matches_h\":false},\"data_wire_0_flip\":{\"accepted\":true,\"controller_registers_return\":true,\"input_differs\":true,\"transient_refusals\":0},\"general_error_detection_claimed\":false,\"global_parity_acceptor_claimed\":false},\"terminal\":\"CYCLE732_FIXED_LOGICAL_GENESIS_PARTIAL_NARROWING_PASS\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T094822Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 48ec6bf0 differs from the current HEAD 9de1d39d (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOU' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOU'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle732_genesis_word_self_verification_2026_07_28.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The task's expectation is not reproducible, so this is not a failure of the run. The task pins a verdict_line that is the runner's final JSON report, and that JSON embeds the wall-clock runtime and a sha256 of the report containing it. Diffing this run's final line against the pinned one field by field leaves exactly two differences - runtime_seconds (7.101933458005078 here against the pinned 6.934302417008439 for cycle727) and report_sha256, which changes because the runtime it covers changed. Every other field is identical, including the PASS status and the supply-predicate counts, and the log's own hit field is False with exit code 0. 30 of the 384 tasks that pin a verdict_line embed a runtime this way and 23 of those also embed a hash of it, so their last-line check cannot reproduce on any machine, including the one that froze them.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T094822Z"
+ }
+}

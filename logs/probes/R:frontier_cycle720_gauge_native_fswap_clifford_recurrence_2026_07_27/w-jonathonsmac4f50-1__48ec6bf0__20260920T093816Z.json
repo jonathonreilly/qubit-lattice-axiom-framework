@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py",
+ "seed": 97096,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48ec6bf0",
+ "started_utc": "20260920T093816Z",
+ "elapsed_s": 144.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c18cecac311394b695186c1f9396ee15a98209fc1ffe4841e40a1ea1676a3e9e",
+ "stdout_tail": " ordinary coarse-CAR convention\", \"literal single-M2-rotation compilation and one combined routed word for the non-Clifford coin/contact factors\", \"parallel nearest-neighbour routing rather than the supplied serial route-and-return microprogram\", \"autonomous genesis/enforcement of local-D, loop, rail, repetition, coframe, origin, and program registers\", \"periodic Wilson direct-sum and arbitrary irregular-domain recurrence\", \"composition with endpoint packet allocation, source/gravity, Record/Born, and prediction interfaces\"], \"pass\": true, \"report_sha256\": \"3cf08d453ee14f6ffbde392defc28860c1de62ad46e3e5fdfab503bc5a73a518\", \"schedule_covariance\": {\"frame_colour_cases\": 576, \"frame_colour_failures\": 0, \"ordered_frame_products\": 576, \"product_key_cases\": 13824, \"product_key_failures\": 0, \"proper_cubic_frames\": 24}, \"status\": \"cycle720-gauge-native-direct-seam-positive-common-E-open\", \"supplied\": [\"one persistent direct-reference/seam-gauge sector, transported to the Cycle706 prepared rail sector\", \"the Cycle707 literal repetition placement and blank serial route workspace\", \"one transported proper-cubic coframe, checkerboard origin, and six program phases\", \"the Cycle219 coin and Cycle230 contact values and fixed factor order\"], \"translations\": {\"colour_origin\": \"supplied and translated with the chart\", \"omit_translated_colour_origin_changes_cleanup\": 0, \"parity_residue_translations\": 8, \"translated_semantic_failures\": 0}}\nGAUGE_NATIVE_DIRECT_SEAM_PHYSICAL_PARTIAL_COMMON_E_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T094040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

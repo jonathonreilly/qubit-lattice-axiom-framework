@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle732_genesis_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle732_genesis_independent_check_2026_07_28.py",
+ "seed": 97384,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48ec6bf0",
+ "started_utc": "20260920T094304Z",
+ "elapsed_s": 3.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c8f6b6d1bfa3246cdc653cf72d6581991807ad8747bd233395c867ce16302081",
+ "stdout_tail": "PASS recursive input closure :: 83/83 inputs\nPASS primary boundary alignment :: current-parent APIs\nPASS independent logical genesis :: 27 gates\nPASS actual current-parent composition :: 123293 gates\nPASS enumerated mutations :: 27/27 deletions; 23/23 flips\nPASS scope countercontrols :: accepted data flip; non-global-parity witness\nPASS independence discipline :: primary inert; separate X/CNOT/TOF evaluator\nSUMMARY 7/7 ALL_PASS runtime=2.792526s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T094308Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'SUMMARY 7/7 ALL_PASS runtime=2.792526s' vs cache 'SUMMARY 7/7 ALL_PASS runtime=2.609442s'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle732_genesis_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

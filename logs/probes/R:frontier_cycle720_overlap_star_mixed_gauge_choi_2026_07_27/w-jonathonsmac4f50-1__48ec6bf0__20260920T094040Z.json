@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
+ "seed": 97240,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "48ec6bf0",
+ "started_utc": "20260920T094040Z",
+ "elapsed_s": 6.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5c224783244841fa34cb6e5a0ac2642a40f58008f2d2913d5a109d3e269c4c50",
+ "stdout_tail": "_residual_matching\": \"domain, signed even/odd Choi image, axis, held-completion, and locality tests are separate\", \"N5_resolution\": \"three oriented pairs of seven-cell maximal stars, their twelve-cell unions, and four held boxes\", \"N6_partial_closure\": \"the exact local channel atlas is retained without claiming a global PEPO\", \"N7_steelman\": \"compatible pairwise marginals may admit a bounded repeated tensor after triple/loop checks\", \"N8_cross_cycle_echo\": \"tests actual Choi overlap rather than inferring locality from small-patch diameter\", \"gate\": \"FAIL_for_broad_no_go__constructive_two-star-positive\"}, \"open\": [\"construct one explicit globally tiled PEPO/Stinespring tensor from the compatible local channel atlas\", \"verify triple-overlap and closed-loop consistency beyond the tested two-star unions\", \"rerun full-word intertwining on the explicitly contracted held tensor\", \"autonomous center/parity enforcement\"], \"pass\": true, \"report_sha256\": \"4968f9c1ca53d2f34efd5916c04763332efc3d42db5c79cedc76a5739cf2aaf4\", \"status\": \"cycle720-positive-phase-fixed-two-star-local-channel-atlas__global-PEPO-open\", \"supplied\": [\"one phase-fixed canonical symplectic completion per finite patch\", \"global total-parity superselection at a finite-box boundary\", \"local patch parity retained as a bounded virtual operator rail rather than scalarized\", \"fixed local relation-center sectors\", \"maximally mixed local gauge coordinates\"]}\nPHASE_FIXED_TWO_STAR_LOCAL_CHANNEL_ATLAS_POSITIVE__GLOBAL_PEPO_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260920T094046Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

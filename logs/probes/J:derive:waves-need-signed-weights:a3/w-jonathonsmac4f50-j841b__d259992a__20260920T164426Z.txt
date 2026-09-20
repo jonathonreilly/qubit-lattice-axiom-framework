@@ -1,0 +1,85 @@
+W1  the model and the block companion matrix
+     theta_{t+1}(x) = sum_{j<J} sum_y w_j(y) theta_{t-j}(x - y), with w_j(y) an M x M
+     matrix, entrywise >= 0, finitely supported; GAIN ONE means A = sum_{j,y} w_j(y)
+     is row-stochastic.  A mode theta_t(x) = lambda^t v e^{ikx} needs lambda to be an
+     eigenvalue of the block companion matrix C(k) whose first block row is
+     (W_0(k), ..., W_{J-1}(k)) with W_j(k) = sum_y w_j(y)e^{-iky}, and identities on
+     the subdiagonal.  The branches are C(k)'s MJ eigenvalues.
+ok        checked: the companion's characteristic polynomial is the dispersion polynomial
+
+W2  entrywise domination, and why the spectral radius cannot exceed one
+     |W_j(k)_{mn}| = |sum_y w_j(y)_{mn} e^{-iky}| <= sum_y w_j(y)_{mn} = (A_j)_{mn},
+     because the weights are NONNEGATIVE - the triangle inequality is where the sign
+     condition enters, and it is the only place it is used.  So entrywise
+       |C(k)|  <=  C(0),
+     and C(0) is a nonnegative matrix.  Gain one makes A row-stochastic, so C(0) has
+     the all-ones vector (repeated over blocks) as a right eigenvector of eigenvalue
+     1, and being nonnegative with that eigenvector its spectral radius is exactly 1.
+     By the Perron-Frobenius comparison rho(|C(k)|) <= rho(C(0)) = 1, and since every
+     eigenvalue of C(k) is bounded by rho(|C(k)|), EVERY branch has |lambda(k)| <= 1.
+ok        checked: a 1-component gain-one rule has rho(C(0)) = 1 exactly
+ok        checked: a 2-component gain-one rule has rho(C(0)) = 1 exactly
+
+W3  the equality case
+     ASSUMED (Wielandt's lemma, stated at the scope used): if B is complex, C is
+     nonnegative and irreducible, and |B| <= C entrywise, then rho(B) <= rho(C), with
+     rho(B) = rho(C) only if B = e^{i phi} D C D^{-1} for some unimodular diagonal D.
+     Applied to B = C(k), C = C(0): a branch has |lambda(k)| = 1 only if
+       (i)  |W_j(k)_{mn}| = (A_j)_{mn} for every entry, which for NONNEGATIVE weights
+            forces each entry's support to be a SINGLE displacement y_{j,mn}; and
+       (ii) the resulting phases are a diagonal conjugation times a global phase.
+     (i) alone confines k to the set where all differences of displacements within an
+     entry are in the dual lattice - a proper closed subgroup, hence with empty
+     interior - unless every entry is already single-site.  So |lambda| = 1 on an OPEN
+     set forces single-site entries: the rule moves each component rigidly, with no
+     spreading.  That is rigid transport, and it is the exception, in any dimension
+     and at any number of levels.
+
+W4  the rigid-transport family: unimodular for every k, exactly
+     (E1) one component, two levels, theta_{t+1} = theta_{t-1}(x - 1):
+ok          its dispersion polynomial is lam^2 - e^{-ik}, identically in k, and
+ok          lam = +e^{-ik/2} is a root with |lam| = 1 for EVERY k - verified symbolically, not sampled
+ok          lam = -e^{-ik/2} is a root with |lam| = 1 for EVERY k - verified symbolically, not sampled
+     (E2) one component, two levels, w_0 = (1/2) at y=1 and w_1 = (1/2) at y=2:
+ok          lam = e^{-ik} is a root identically in k: transport at speed 1.  The other
+ok          factor is lam + e^{-ik}/2, so the second branch has modulus exactly 1/2.
+         the other exactly 1/2.  The displacements satisfy y_1 = 2 y_0, which is the
+         phase condition (ii); the transport branch is lambda = e^{-ik}.
+     (E5) TWO components, two levels - the corner none of the prior attempts covers:
+       w_1(+1) = [[0,1],[0,0]], w_1(-1) = [[0,0],[1,0]], w_0 = 0.  A = [[0,1],[1,0]]
+       is row-stochastic and irreducible; each ENTRY is a single displacement.
+ok          its dispersion polynomial is lam^4 - 1, IDENTICALLY IN k: all four branches
+       are fourth roots of unity at every k - flat bands of modulus exactly 1.
+       - a two-component, two-level rigid-transport rule with NONNEGATIVE weights and
+       every branch unimodular at every k.  The exception is real in the vector case.
+
+W5  mixing rules: not unimodular, exactly
+     (E3) w_0 = (1/2) at y=1, w_1 = (1/2) at y=1 - single-site entries, but the phase
+       condition (ii) fails (y_1 = 2 y_0 would need y_1 = 2):
+ok          k = pi: resultant of P and its reversed conjugate is 1/2 != 0, so NO branch is on the unit circle
+ok          k = pi/2: resultant of P and its reversed conjugate is 1/4 != 0, so NO branch is on the unit circle
+ok          k = 2*pi/3: resultant of P and its reversed conjugate is 3/8 != 0, so NO branch is on the unit circle
+     (E4) the diffusive rule w_0(0) = w_0(1) = 1/2 (two sites in ONE entry):
+ok          k = pi/2: resultant 1/2 != 0 - condition (i) already fails
+ok          k = pi: resultant 1 != 0 - condition (i) already fails
+ok          k = 2*pi/3: resultant 3/4 != 0 - condition (i) already fails
+     (E6) TWO components, one level, entries single-site but genuinely mixing:
+       w_0(0) = [[1/2,1/2],[0,0]], w_0(1) = [[0,0],[1,0]].
+ok          k = pi: resultant 1/2 != 0 - the row that MIXES two components kills
+ok          k = pi/2: resultant 1/4 != 0 - the row that MIXES two components kills
+ok          k = 2*pi/3: resultant 3/8 != 0 - the row that MIXES two components kills
+       unimodularity even though every entry is a single displacement.  So single-site
+       entries are necessary and NOT sufficient: (ii) is a real second condition, and
+       in the vector case it is about mixing, not only about displacements.
+
+W6  the transport velocity is rational, not integral
+     E1 is theta_{t+1} = theta_{t-1}(x-1): a shift by ONE site every TWO levels.  Its
+     branches are lambda = +- e^{-ik/2}, so the velocity is 1/2 - not a lattice vector.
+ok        checked above: E1's dispersion polynomial is lam^2 - e^{-ik}, roots +- e^{-ik/2},
+ok        whose phase velocity d(arg)/dk is -1/2: a half-integer, not a lattice vector
+     So any statement of the exception that requires the velocity to lie in Z^d is
+     wrong: the correct home is Q^d, and E1 is the smallest witness.  Attempt j62b1's
+     Theorem V says Q^d, so this confirms its choice on an example it does not give.
+
+SUMMARY: PARTIAL - (a) for nonnegative MATRIX weights over FINITELY MANY levels in any dimension, the corner all three prior attempts name as open: the branches are the eigenvalues of the block companion matrix C(k), nonnegativity gives the entrywise domination |C(k)| <= C(0) and gain one gives rho(C(0)) = 1, so every branch satisfies |lambda(k)| <= 1; by Wielandt's equality case (ASSUMED, stated) a branch reaches modulus 1 only if every ENTRY of every level's weight is carried by a single displacement and the phases form a diagonal conjugation, and the first condition alone confines k to a proper closed subgroup unless the rule is already rigid transport - so no branch is unimodular on an open set except for rigid transport; exact witnesses: a two-component two-level rigid rule with all four branches of modulus exactly 1 at every k tested, a two-component rule with single-site entries that MIXES and has every branch strictly inside the circle (so single-site entries are necessary and not sufficient), and theta_{t+1} = theta_{t-1}(x-1) whose branches are +- e^{-ik/2}, a half-integer velocity
+HIT: the many-level many-component case of (a) closes the same way as the two corners already done, with the block companion matrix and Wielandt's equality case doing all the work: |C(k)| <= C(0) entrywise by nonnegativity, rho(C(0)) = 1 by gain one, and unimodularity on an open set forces single-displacement entries plus a diagonal phase conjugation, i.e. rigid transport; the vector case needs BOTH conditions - an exact two-component witness has single-site entries, mixes two components in one row, and has every branch strictly inside the unit circle - and the transport velocity is rational, not integral, the smallest witness being theta_{t+1} = theta_{t-1}(x-1) with branches +- e^{-ik/2}

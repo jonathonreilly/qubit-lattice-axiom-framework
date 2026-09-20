@@ -1,0 +1,203 @@
+N1 X:menu-size-threshold: 5 of 140 grid points logged (3.6%)
+N1 X:formation-3plus1-sphere-memory: 0 of 20 grid points logged (0.0%); 1 further run(s) present that are not grid points: [3 sphere 1 32 1500 750 1]
+N1   DATA DEFECT in X:formation-3plus1-sphere-memory: fable-check__3f4f3536__20260918T234707Z.json carries a stdout file that does not hash to the log's stdout_sha256; the log's own self-check already recorded FAIL: FAIL: stdout file does not match the log's stdout_sha256 (edited after the run?)
+N1 X:formation-2plus1-sphere-memory: 0 of 10 grid points logged (0.0%)
+N1 overall: 5 of 170 grid points logged (2.9%), the task's threshold being half
+N2 the points that ARE logged, with the last two rows of their memory table (the drift check):
+N2   X:menu-size-threshold [2 edges12 1.5 128 3000 1500 1]: plateau_|m|=0.0163; levels 2149->3000: |m| 0.0162 -> 0.0120 (relative change 35.0%) -> STILL DRIFTING  [rows from: stdout file]
+N2   X:menu-size-threshold [2 fib100 12 128 3000 1500 1]: plateau_|m|=0.9350; levels 2149->3000: |m| 0.9370 -> 0.9347 (relative change 0.2%) -> settled  [rows from: stdout file]
+N2   X:menu-size-threshold [3 axes6 8 32 3000 1500 1]: plateau_|m|=1.0000; levels 2149->3000: |m| 1.0000 -> 1.0000 (relative change 0.0%) -> settled  [rows from: stdout file]
+N2   X:menu-size-threshold [3 edges12 0.5 32 3000 1500 1]: plateau_|m|=0.0060; levels 2149->3000: |m| 0.0055 -> 0.0115 (relative change 52.2%) -> STILL DRIFTING  [rows from: stdout file]
+N2   X:menu-size-threshold [3 fib50 6 32 3000 1500 1]: plateau_|m|=0.9496; levels 2149->3000: |m| 0.9499 -> 0.9494 (relative change 0.1%) -> settled  [rows from: stdout file]
+N2   X:formation-3plus1-sphere-memory [3 sphere 1 32 1500 750 1]  (NOT a grid point): plateau_|m|=0.0155; levels 1106->1500: |m| 0.0120 -> 0.0102 (relative change 17.6%) -> STILL DRIFTING  [rows from: MISMATCHED stdout file, ignored (rows from the log's own stdout_tail)]
+N3 what is missing (the exact argument lists a later run would need):
+N3 X:menu-size-threshold: 135 missing, grouped by (dim, menu):
+N3   dim=2 menu=axes6: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=2 menu=corners8: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=2 menu=edges12: beta in ['0.5', '0.75', '1', '2', '3', '4', '6', '8', '12'] (9 runs)
+N3   dim=2 menu=fib100: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8'] (9 runs)
+N3   dim=2 menu=fib20: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=2 menu=fib200: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=2 menu=fib50: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=3 menu=axes6: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '12'] (9 runs)
+N3   dim=3 menu=corners8: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=3 menu=edges12: beta in ['0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (9 runs)
+N3   dim=3 menu=fib100: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=3 menu=fib20: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=3 menu=fib200: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '6', '8', '12'] (10 runs)
+N3   dim=3 menu=fib50: beta in ['0.5', '0.75', '1', '1.5', '2', '3', '4', '8', '12'] (9 runs)
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 0.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 0.75 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 1 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 1.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 2 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 3 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 4 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 6 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 8 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 axes6 12 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 0.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 0.75 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 1 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 1.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 2 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 3 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 4 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 6 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 8 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 corners8 12 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 0.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 0.75 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 1 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 2 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 3 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 4 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 6 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 8 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 edges12 12 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 0.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 0.75 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 1 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 1.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 2 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 3 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 4 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 6 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 8 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib20 12 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 0.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 0.75 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 1 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 1.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 2 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 3 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 4 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 6 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 8 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib50 12 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 0.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 0.75 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 1 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 1.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 2 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 3 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 4 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 6 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib100 8 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 0.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 0.75 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 1 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 1.5 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 2 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 3 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 4 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 6 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 8 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 fib200 12 128 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 0.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 0.75 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 1 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 1.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 2 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 3 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 4 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 6 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 axes6 12 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 0.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 0.75 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 1 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 1.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 2 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 3 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 4 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 6 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 8 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 corners8 12 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 0.75 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 1 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 1.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 2 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 3 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 4 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 6 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 8 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 edges12 12 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 0.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 0.75 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 1 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 1.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 2 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 3 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 4 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 6 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 8 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib20 12 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 0.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 0.75 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 1 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 1.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 2 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 3 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 4 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 8 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib50 12 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 0.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 0.75 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 1 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 1.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 2 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 3 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 4 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 6 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 8 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib100 12 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 0.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 0.75 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 1 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 1.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 2 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 3 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 4 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 6 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 8 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 fib200 12 32 3000 1500 1
+N3 X:formation-3plus1-sphere-memory: 20 missing, grouped by (dim, menu):
+N3   dim=3 menu=sphere: beta in ['0.4', '0.5', '0.6', '0.75', '1', '1.5', '2', '3', '6', '12'] (20 runs)
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 0.4 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 0.4 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 0.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 0.5 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 0.6 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 0.6 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 0.75 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 0.75 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 1 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 1 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 1.5 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 1.5 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 2 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 2 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 3 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 3 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 6 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 6 64 2000 1000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 12 32 3000 1500 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 3 sphere 12 64 2000 1000 1
+N3 X:formation-2plus1-sphere-memory: 10 missing, grouped by (dim, menu):
+N3   dim=2 menu=sphere: beta in ['0.4', '0.5', '0.6', '0.75', '1', '1.5', '2', '3', '6', '12'] (10 runs)
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 0.4 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 0.5 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 0.6 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 0.75 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 1 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 1.5 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 2 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 3 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 6 256 4000 2000 1
+N3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 12 256 4000 2000 1
+N4 with 2.9 percent of the grid logged there is no (dim, menu) with more than one coupling, so no plateau
+N4 curve, no half-of-the-large-beta-value crossing and no bracket can be formed, for either dimension.
+N4 The task's expectation - that the bracket rises without bound with the menu size N in 2+1 and
+N4 approaches the sphere's in 3+1 - is therefore neither supported nor contradicted by what is logged.
+N4 Stopping here, as the task instructs.
+SUMMARY: only 5 of 170 grid points are logged (2.9%, far below the half the task requires) - X:menu-size-threshold 5/140, X:formation-3plus1-sphere-memory 0/20, X:formation-2plus1-sphere-memory 0/10 - so no threshold bracket can be formed for any (dim, menu); the 165 missing argument lists are printed above and the run stops there, as instructed; 0s

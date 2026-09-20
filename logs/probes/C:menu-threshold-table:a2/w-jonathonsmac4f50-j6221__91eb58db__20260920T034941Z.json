@@ -1,0 +1,32 @@
+{
+ "task": "C:menu-threshold-table:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j6221",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/menu-threshold-table/w-jonathonsmac4f50-j6221/run.py",
+ "seed": 76181,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "91eb58db",
+ "started_utc": "20260920T034941Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "only 5 of 170 grid points are logged (2.9%, far below the half the task requires) - X:menu-size-threshold 5/140, X:formation-3plus1-sphere-memory 0/20, X:formation-2plus1-sphere-memory 0/10 - so no threshold bracket can be formed for any (dim, menu); the 165 missing argument lists are printed above and the run stops there, as instructed; 0s"
+ },
+ "review": "run.py inventories the three scan grids against the logs and finds only 5 of 170 grid points logged (X:menu-size-threshold 5/140, X:formation-3plus1-sphere-memory 0/20, X:formation-2plus1-sphere-memory 0/10), so no (dim, menu) pair has more than one coupling and no plateau curve, half-value crossing or bracket-against-menu-size table can be formed in either dimension; it prints all 165 missing argument lists, marks two of the six available runs as still drifting at the end of their memory tables, and reports that the one sphere-memory log present is both off-grid (T=1500, T0=750 against the grid's 3000/1500) and carries a stdout file from a different run (the .txt reads beta=6.0 plateau 0.9242 against the log's own beta=1.0 plateau 0.0155 and hashes to 1e144e11 against the recorded c22d492e), which I triaged machine on the log itself; no HIT, this is the missing-data report the task asks for.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): Turn the scan logs into the result. Read every log under logs/probes/X:menu-size-threshold/ and logs/probes/X:formation-3plus1-sphere-memory/ and logs/probes/X:formation-2plus1-sphere-memory/ (the .txt files hold the memory tables). For each (dim, menu): tabulate the plateau |m| against beta, bracket the coupling where the plateau crosses one half of its large-beta value, and mark runs whose |m| is still drifting at the end (compare the last two table rows). Then plot or tabulate the bracket against the menu size N for dim = 2 and dim = 3. Expectation: in 2+1 the bracket moves up without bound as N grows; in 3+1 it approaches the sphere's bracket. Say plainly if the data do not show that. If fewer than half the grid points are logged, report what is missing and stop. DELIVERABLE in your unit worktree: probes/work/compute/menu-threshold-table/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/menu-threshold-table/<name>/run.py\"",
+ "stdout_sha256": "aa735a2fdeac565d81265b35fd610a03c215552e49f5e0898f159156e2feeb41",
+ "stdout_tail": "tion_levelplane.py 2 sphere 0.6 256 4000 2000 1\nN3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 0.75 256 4000 2000 1\nN3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 1 256 4000 2000 1\nN3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 1.5 256 4000 2000 1\nN3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 2 256 4000 2000 1\nN3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 3 256 4000 2000 1\nN3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 6 256 4000 2000 1\nN3     missing: cd probes/lib && python3 formation_levelplane.py 2 sphere 12 256 4000 2000 1\nN4 with 2.9 percent of the grid logged there is no (dim, menu) with more than one coupling, so no plateau\nN4 curve, no half-of-the-large-beta-value crossing and no bracket can be formed, for either dimension.\nN4 The task's expectation - that the bracket rises without bound with the menu size N in 2+1 and\nN4 approaches the sphere's in 3+1 - is therefore neither supported nor contradicted by what is logged.\nN4 Stopping here, as the task instructs.\nSUMMARY: only 5 of 170 grid points are logged (2.9%, far below the half the task requires) - X:menu-size-threshold 5/140, X:formation-3plus1-sphere-memory 0/20, X:formation-2plus1-sphere-memory 0/10 - so no threshold bracket can be formed for any (dim, menu); the 165 missing argument lists are printed above and the run stops there, as instructed; 0s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6221",
+  "at_utc": "20260920T034954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

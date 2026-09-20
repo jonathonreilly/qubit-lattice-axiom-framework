@@ -76,7 +76,7 @@ def main():
     t_start = time.time()
     summary = []
     for beta in (3.0, 6.0):
-        for h in (0.5, 2.0):
+        for h in (0.5, 2.0, 8.0, 32.0):
             fields, m = run(beta, h)
             F = fields["all"]
             print(f"beta={beta:g} h={h:g} L={L} T={T} T0={T0} seed={SEED}: |m| of the unperturbed copy = {m:.4f}; "
@@ -106,11 +106,15 @@ def main():
     worst_small = max(x[4] for x in small)
     worst_small_l2 = max(x[5] for x in small)
     big_range = (min(x[4] for x in big), max(x[4] for x in big))
+    by_h = {hh: max(x[4] for x in summary if x[1] == hh) for hh in (0.5, 2.0, 8.0, 32.0)}
+    first_fail = next((hh for hh in (0.5, 2.0, 8.0, 32.0) if by_h[hh] > 0.02), None)
+    print("largest max|N|/max|S| by h over beta, d, sign: " + ", ".join(f"h={hh:g}: {v:.4f}" for hh, v in by_h.items()))
     print(f"seconds={time.time() - t_start:.0f}")
     print("=" * 90)
     msg = (f"at h = 0.5 the two-source field equals the sum of the one-source fields to within max|N|/max|S| <= {worst_small:.4f} "
            f"(||N||/||S|| <= {worst_small_l2:.4f}) over beta = 3, 6, d = 4, 8 and both signs; at h = 2 the ratio is "
-           f"{big_range[0]:.4f} to {big_range[1]:.4f}")
+           f"{big_range[0]:.4f} to {big_range[1]:.4f}; largest ratio at h = 8: {by_h[8.0]:.4f}, at h = 32: {by_h[32.0]:.4f}; "
+           f"first h of the four above 2 %: {first_fail if first_fail is not None else 'none'}")
     print("SUMMARY: " + msg)
     if worst_small > 0.02:
         print(f"HIT: additivity at h = 0.5 fails the task's 2 % expectation: {msg}")

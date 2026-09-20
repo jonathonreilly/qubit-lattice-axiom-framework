@@ -1,0 +1,100 @@
+B1  the census of a solid L-cube of aligned records in empty space
+ok   the surface splits as 8 corners + 12(L-2) edge sites + 6(L-2)^2 face sites
+     Predicted occupied-neighbour counts: face site 5, edge site 4, corner 3,
+     interior 6.  Enumerated on the lattice:
+ok        L = 3: {3: 8, 4: 12, 5: 6, 6: 1} matches; 26 records have an empty neighbour and can move, 1 cannot
+ok        L = 4: {3: 8, 4: 24, 5: 24, 6: 8} matches; 56 records have an empty neighbour and can move, 8 cannot
+ok        L = 5: {3: 8, 4: 36, 5: 54, 6: 27} matches; 98 records have an empty neighbour and can move, 27 cannot
+ok        L = 6: {3: 8, 4: 48, 5: 96, 6: 64} matches; 152 records have an empty neighbour and can move, 64 cannot
+ok   surface/volume -> 0: the movable fraction vanishes as the cluster grows
+
+B2  (a) which records can ever move, and how many arrangements are reachable
+     A record with no empty neighbour cannot move, so ONLY the surface moves, the
+     interior occupation pattern is invariant, and - records being permanent with a
+     fixed content - the interior CONTENTS are invariant too.
+     One move carries a record across an occupied-empty bond, and distinct bonds give
+     distinct arrangements, so the one-move reachable set is the set of those bonds:
+ok        L = 2: 24 distinct arrangements after one move = 6 L^2, the cluster's SURFACE AREA
+ok        L = 3: 54 distinct arrangements after one move = 6 L^2, the cluster's SURFACE AREA
+ok        L = 4: 96 distinct arrangements after one move = 6 L^2, the cluster's SURFACE AREA
+ok        L = 5: 150 distinct arrangements after one move = 6 L^2, the cluster's SURFACE AREA
+     The one-move count is exactly 6L^2: set by the surface, blind to the volume.
+     Iterating, in T sweeps at most S = |surface| records move at most T times each
+     into at most 6 places, so log|reachable(T)| <= S T log(6S) = O(L^2 log L), while
+     log|configurations of the cluster| >= V log 7 = O(L^3):
+ok   their ratio -> 0 at fixed T: what the cluster can explore is a surface quantity
+
+B3  (b) the exact evaporation and growth rates of an L-cube
+     evaporation, one attempt per surface record at the given transit probability:
+       E(L) = 8/(1+(cp)^3) + 12(L-2)/(1+(cp)^4) + 6(L-2)^2/(1+(cp)^5)
+     growth by formation at the empty sites touching the cube, at rate z Z_x.  The
+     census of those sites by their number j of occupied neighbours, enumerated:
+ok        L = 2: {1: 24} - EVERY touching empty site has exactly one occupied neighbour, and there are 6 L^2 of them
+ok        L = 3: {1: 54} - EVERY touching empty site has exactly one occupied neighbour, and there are 6 L^2 of them
+ok        L = 4: {1: 96} - EVERY touching empty site has exactly one occupied neighbour, and there are 6 L^2 of them
+ok        L = 5: {1: 150} - EVERY touching empty site has exactly one occupied neighbour, and there are 6 L^2 of them
+     This is a fact about the six-neighbour stencil, not an approximation: the site
+     diagonally outside an edge or a corner is at distance sqrt(2) or sqrt(3) and is
+     not a neighbour of the cube at all.  So no j = 2 or j = 3 growth sites exist, and
+     with the neighbour aligned, Z_x = c A_1 with A_1 = p + q + 4r:
+     It is a property of the BOX, not of convexity.  The ramp
+       C = {(i,j,k) in [0,2]^3 : i + j <= 2}  (a box cut by a half-space, so convex)
+ok        has touching-empty-site census {1: 36, 2: 6}: 6 sites with TWO occupied neighbours, on its sloped face -
+       so a convex cluster with a slanted face grows faster per site there (Z_x is
+       c^2 A_2, not c A_1), and B4's numbers are stated for boxes only.
+       G(L) = 6 z c A_1 L^2   exactly - no subleading terms whatsoever.
+ok   E ~ 6 L^2/(1+(cp)^5), so both rates are quadratic and the balance has a finite,
+ok   SIZE-INDEPENDENT leading limit; all of the size dependence sits in E alone
+
+B4  (b) the critical coupling, and the sign of the size correction
+ok   G/E -> z c A_1 (1 + (cp)^5), so growth at LARGE size holds iff z > z_c with
+       z_c = 1/(c A_1 (1 + (cp)^5)) = 1/(c*(c**5*p**5 + 1)*(p + q + 4*r))
+ok   at the neutral scale c_0 = 6/(p+q+4r) one has c A_1 = 6 exactly, so there
+       z_c = 1/(6 (1 + (c_0 p)^5)): a pure function of the six-axis weights.
+     Whether a critical SIZE exists, and which way it runs, is decided by the sign of
+     the coefficient of L in E, namely 12/(1+(cp)^4) - 24/(1+(cp)^5):
+ok   its numerator is 12 (x^5 - 2x^4 - 1) at x = cp, so the sign flips exactly at the
+ok        positive root x* of x^5 = 2x^4 + 1, bracketed by 2 and 21/10: x* = 2.05596739671282
+
+     WEAK-ALIGNMENT side, c p < x*:
+     (p,q,r) = (3, 1, 2): c_0 = 1/2, c_0 p = 3/2 = 1.5000, z_c = 16/825 = 0.0193939, E's L-coefficient = -0.8133
+       z = 9/10 z_c: G-E sign at L = 2,3,5,10,50,500 is [1, 1, 1, 1, -1, -1], crossing at L* = ['10.768']
+       z = 1 z_c: G-E sign at L = 2,3,5,10,50,500 is [1, 1, 1, 1, 1, 1], crossing at L* = none above 1
+       z = 11/10 z_c: G-E sign at L = 2,3,5,10,50,500 is [1, 1, 1, 1, 1, 1], crossing at L* = none above 1
+ok        cp < x* and the L-coefficient of E is NEGATIVE, so
+ok        at z = 9/10 z_c there is one crossing, L* = 10.768, and
+ok        G-E is POSITIVE at L = 10 and NEGATIVE at L = 11: below L* the cluster grows and
+       above it the cluster shrinks - L* is an ATTRACTING equilibrium size, a maximum
+       stable cluster, not a nucleation barrier.
+ok        at z = z_c and above, G-E > 0 at every size tested: no critical size at all
+
+     STRONG-ALIGNMENT side, c p > x*:
+     (p,q,r) = (20, 1, 1): c_0 = 6/25, c_0 p = 24/5 = 4.8000, z_c = 3125/47794494 = 6.53841e-05, E's L-coefficient = +0.0131
+       z = 9/10 z_c: G-E sign at L = 2,3,5,10,50,500 is [-1, -1, -1, -1, -1, -1], crossing at L* = none above 1
+       z = 1 z_c: G-E sign at L = 2,3,5,10,50,500 is [-1, -1, -1, -1, -1, -1], crossing at L* = none above 1
+       z = 3/2 z_c: G-E sign at L = 2,3,5,10,50,500 is [-1, -1, -1, -1, 1, 1], crossing at L* = ['13.445']
+ok        cp > x* and the L-coefficient of E is POSITIVE, so
+ok        at z = 3/2 z_c there is one crossing, L* = 13.445, and
+ok        G-E is NEGATIVE at L = 13 and POSITIVE at L = 14: below L* the cluster shrinks and
+       above it the cluster grows - here L* IS the ordinary nucleation barrier, and it
+       exists only for z > z_c, diverging as z decreases to z_c.
+ok        at z = z_c and below, G-E < 0 at every size tested: every cluster shrinks
+
+B5  (c) the interior, and what a reader of records can learn
+ok   a corner leaves with probability 8/35, a face site with 32/275: a corner is 1.964 times as likely to go, yet at (3,1,2) the cluster's small-
+     size correction still favours SURVIVAL, because the 12(L-2) edge sites that
+     replace 24(L-2) face-site-equivalents in the count are too few to pay for them.
+     Per-site erosion is fastest at the corners; the census is what decides the sign.
+     The interior is frozen in three separate senses: its records cannot move (no
+     empty neighbour), their contents cannot change (permanent, one per site), and no
+     formation can happen there (no empty site).  An observer who reads only records
+     reads the surface, and by B2 every arrangement reachable in time T has the same
+     interior:
+ok        L = 4: the 8 interior records are invariants of the motion, so any
+       relabelling of their contents leaves every reachable surface identical, and no
+       surface reading in time T separates two clusters with equal surfaces and
+       different interiors.  The interior becomes readable only as the surface erodes
+       down to it: readable in principle, but only by destroying the cluster.
+
+SUMMARY: PARTIAL for a solid L-cube of aligned records in empty space: only its 6(L-2)^2 + 12(L-2) + 8 surface records can move, the interior occupation and contents are exact invariants, the one-move reachable set has exactly 6L^2 members - the surface area, volume-blind, enumerated at L = 2..5 - and log|reachable(T)|/log|configurations| -> 0; every empty site touching the cube has exactly ONE occupied neighbour (the diagonal sites are not neighbours on the six-neighbour stencil), so growth is the pure quadratic G(L) = 6 z c A_1 L^2 with A_1 = p + q + 4r while evaporation carries all the size dependence, E(L) = 8/(1+(cp)^3) + 12(L-2)/(1+(cp)^4) + 6(L-2)^2/(1+(cp)^5); hence z_c = 1/(c A_1 (1+(cp)^5)), equal to 1/(6(1+(c_0 p)^5)) at the neutral scale and to 16/825 at (3,1,2); the coefficient of L in E has numerator 12((cp)^5 - 2(cp)^4 - 1), so at cp = x* = 2.05597 (the positive root of x^5 = 2x^4 + 1) the size correction changes sign: at (3,1,2), cp = 3/2 < x*, z = 9/10 z_c has an ATTRACTING L* = 10.768 (G-E > 0 at L = 10, < 0 at L = 11) and z >= z_c grows at every size; at (20,1,1), cp = 24/5 > x*, z <= z_c shrinks at every size and z = 3/2 z_c has a REPELLING L* = 13.445 (G-E < 0 at L = 13, > 0 at L = 14)
+HIT: the unit's 'is there a size above which a cluster only grows' has opposite answers on the two sides of the quintic x^5 = 2x^4 + 1 in x = cp - a nucleation barrier above z_c when cp > x*, but for cp < x* no such size at all above z_c and an ATTRACTING maximum stable size below it, so a weakly aligned cluster settles at a finite size instead of running away; the survival criterion itself is the size-free coupling z_c = 1/(c A_1 (1 + (cp)^5)), and the growth side is the pure quadratic 6 z c A_1 L^2 because on the six-neighbour stencil every empty site touching a convex cluster has exactly one occupied neighbour

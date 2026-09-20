@@ -1,0 +1,2 @@
+seed 51 5x5x8 from Z_A: start (0, 0, 1)
+seed 51: done best=(0, 0, 1)

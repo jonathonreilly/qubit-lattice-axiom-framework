@@ -1,0 +1,42 @@
+PASS sympy available for exact matrix witnesses
+PASS T1 C1 supplies algebra unit cell
+PASS T1 C1 supplies HS-orthocomplement cell
+PASS T1 unit norm squared is 3
+PASS T1 B=J-I norm squared is 6
+PASS T1 S1 generator-channel HS gives r=1/2
+PASS T1 S1 generator-channel HS gives Q=2/3
+PASS T1 Hadamard witness excludes S2 per-mode equality in canonical frame
+PASS T1 S3 parent relation holds before Hadamard mixing
+PASS T1 Hadamard witness excludes S3 mixed-frame relation
+PASS T1 C1 leaves only S1 among parent-named scorings
+PASS T2 w=1 keeps the same C1 canonical partition
+PASS T2 w=1 empty direct-sum readout is zero
+PASS T2 w=1 is additive on explicit direct sums
+PASS T2 w=2 keeps the same C1 canonical partition
+PASS T2 w=2 empty direct-sum readout is zero
+PASS T2 w=2 is additive on explicit direct sums
+PASS T2 w=1 and w=2 give different scalar assignments
+PASS T2 C1 constraints do not mention the scalar weight
+PASS T3 imported-frame S2 witness satisfies equal weighting
+PASS T3 imported mixed cell 1 is not the unit direction
+PASS T3 imported mixed cell 2 is not HS-orthogonal to the unit
+PASS T3 equal weighting alone permits C1 violation
+PASS T3 S2 mixed-frame behavior is frame-dependent
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.py", line 207, in <module>
+    main()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.py", line 175, in main
+    note = note_text()
+           ^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.py", line 63, in note_text
+    return note.read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-1/docs/SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md'

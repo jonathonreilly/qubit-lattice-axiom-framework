@@ -1,0 +1,33 @@
+A1 pi(s) = prod_x Z(S_x(s))/Norm and P(s->s') = prod_x exp(beta s'_x . S_x(s))/Z(S_x(s)), so the
+A1 normalisers cancel: pi(s) P(s->s') = exp(beta sum_x s'_x . S_x(s))/Norm.
+A1 sum_x s'_x . S_x(s) = sum_{x} sum_{y in N(x)} s'_x . s_y = sum_{y} sum_{x in N(y)} s_y . s'_x
+A1 = sum_y s_y . S_y(s'), because y in N(x) iff x in N(y) for a symmetric neighbourhood (self-inclusion
+A1 and the +-e_j are both symmetric). Hence pi(s)P(s->s') = pi(s')P(s'->s): detailed balance, and pi is
+A1 stationary. Note this needs no property of the menu beyond the dot product being symmetric.
+A2 periodic 4-cycle (neighbourhood sizes [3, 3, 3, 3], 1296 states): E(s,s') = E(s',s) for all 1679616 ordered pairs: True  -> detailed balance, since pi(s)P(s->s') = t^E(s,s')/Norm
+A2 periodic 4-cycle: sum_s t^E(s,s') equals prod_x Z(S_x(s')) as a Laurent polynomial in t, for every s': True  -> pi is exactly stationary, for every t at once
+A2 periodic 4-cycle: at beta = 1/2 (t = e^beta = 1.648721) the normalisation is Norm = sum_s prod_x Z = 2810717.919325
+A2 periodic 4-cycle: at beta = 1 (t = e^beta = 2.718282) the normalisation is Norm = sum_s prod_x Z = 16544024.909055
+A2 2x2 torus (neighbourhood sizes [5, 5, 5, 5], 1296 states): E(s,s') = E(s',s) for all 1679616 ordered pairs: True  -> detailed balance, since pi(s)P(s->s') = t^E(s,s')/Norm
+A2 2x2 torus: sum_s t^E(s,s') equals prod_x Z(S_x(s')) as a Laurent polynomial in t, for every s': True  -> pi is exactly stationary, for every t at once
+A2 2x2 torus: at beta = 1/2 (t = e^beta = 1.648721) the normalisation is Norm = sum_s prod_x Z = 8530503.365409
+A2 2x2 torus: at beta = 1 (t = e^beta = 2.718282) the normalisation is Norm = sum_s prod_x Z = 4583974618.890029
+A3 backward neighbourhood N(x) = {x, x - e_j}: no longer symmetric, so the identity fails. Kolmogorov's
+A3 criterion settles reversibility for ANY pi: around a cycle the normalisers cancel, so reversibility
+A3 requires E(s,s')+E(s',s'')+E(s'',s) = E(s,s'')+E(s'',s')+E(s',s) for every triple.
+A3 periodic 3-cycle backward: E(s,s') = E(s',s) fails for 31512 of 46656 ordered pairs
+A3 periodic 3-cycle backward: Kolmogorov cycle found - states [4, 5, 1], [0, 3, 0], [1, 0, 2] (menu indices) give forward exponent -5 and backward 0 (difference -5), so the forward and reverse cycle products differ by a factor t^-5: no pi whatever makes this chain reversible
+A3 periodic 4-cycle backward: E(s,s') = E(s',s) fails for 1189800 of 1679616 ordered pairs
+A3 periodic 4-cycle backward: Kolmogorov cycle found - states [4, 5, 1, 1], [0, 3, 0, 3], [1, 0, 2, 4] (menu indices) give forward exponent -3 and backward -2 (difference -1), so the forward and reverse cycle products differ by a factor t^-1: no pi whatever makes this chain reversible
+A3 2x2 torus backward: E(s,s') = E(s',s) fails for 0 of 1679616 ordered pairs
+A3 2x2 torus backward: no Kolmogorov violation found in 200000 random triples  - and none exists: on a torus of side 2, x - e_j and x + e_j are the same site, so the backward neighbourhood IS symmetric there and the window cannot tell the two rules apart
+A3 2x2 torus: with the backward neighbourhood the joint weight is still symmetric in every one of the 1679616 ordered pairs, so that window is reversible under the backward rule as well - it cannot be used to separate the two neighbourhoods
+A4 for general (p,q,r): log W(a,b) = alpha + gamma (a.b) + delta (a.b)^2 with alpha = log(r), gamma = log(p)/2 - log(q)/2, delta = log(p)/2 + log(q)/2 - log(r)
+A4 so the rule's exponent is gamma (a . S_x) + delta * (number of neighbours on a's axis), and what
+A4 replaces s.S is that pair: the dot-product term and the same-axis count.
+A4 Both are symmetric functions of the two records ((a.b) and (a.b)^2 are), so the same double counting
+A4 argument applies to each, and reversibility survives for every (p,q,r) with pi prop. to prod_x Z_x(s).
+A4 periodic 4-cycle: the exponent triple (of p, of q, of r) in pi(s)P(s->s') is symmetric under s <-> s' for all 1679616 ordered pairs: True  -> detailed balance for every (p,q,r), not just q = 1/p
+A4 2x2 torus: the exponent triple (of p, of q, of r) in pi(s)P(s->s') is symmetric under s <-> s' for all 1679616 ordered pairs: True  -> detailed balance for every (p,q,r), not just q = 1/p
+SUMMARY: for a symmetric neighbourhood sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') identically, so pi(s)P(s->s') = t^E(s,s')/Norm with E symmetric - verified for every one of the 1296^2 ordered pairs on the periodic 4-cycle and the 2x2 torus, together with sum_s t^E(s,s') = prod_x Z(S_x(s')) as an exact Laurent polynomial in t, so the chain is reversible with respect to prod_x Z(S_x) for every t at once; the backward neighbourhood breaks the symmetry and an explicit Kolmogorov cycle shows no pi at all can make it reversible; and for general weights (p,q,r) the exponent of each of p, q, r is separately symmetric, so reversibility survives beyond q = 1/p; the 2x2 torus, however, cannot show the backward rule failing, because on side 2 that neighbourhood is symmetric too; 5s
+HIT: expectation (3) fails on one of the two windows the task names. The backward neighbourhood {x, x - e_j} does NOT break detailed balance on the 2x2 torus: there x - e_j and x + e_j are the same site, so the backward neighbourhood is symmetric, the joint weight pi(s)P(s->s') is symmetric in all 1679616 ordered pairs (zero asymmetric pairs, no Kolmogorov violation in 200000 random triples), and the backward chain is reversible with respect to the same pi prop. to prod_x Z(S_x). The failure the task expects does appear on the windows of odd or larger side: the periodic 3-cycle has 31512 asymmetric pairs of 46656 and a Kolmogorov cycle off by t^-5, the periodic 4-cycle 1189800 of 1679616 and a cycle off by t^-1. So any side-2 window is blind to the difference between the backward and the light-cone rule.

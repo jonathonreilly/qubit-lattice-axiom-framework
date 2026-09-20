@@ -1,0 +1,38 @@
+{
+ "task": "C:lightcone-reversibility-exact:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j317b",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/lightcone-reversibility-exact/w-jonathonsmac4f50-j317b/run.py",
+ "seed": 78248,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a24faac7",
+ "started_utc": "20260920T042408Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "for a symmetric neighbourhood sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') identically, so pi(s)P(s->s') = t^E(s,s')/Norm with E symmetric - verified for every one of the 1296^2 ordered pairs on the periodic 4-cycle and the 2x2 torus, together with sum_s t^E(s,s') = prod_x Z(S_x(s')) as an exact Laurent polynomial in t, so the chain is reversible with respect to prod_x Z(S_x) for every t at once; the backward neighbourhood breaks the symmetry and an explicit Kolmogorov cycle shows no pi at all can make it reversible; and for general weights (p,q,r) the exponent of each of p, q, r is separately symmetric, so reversibility survives beyond q = 1/p; the 2x2 torus, however, cannot show the backward rule failing, because on side 2 that neighbourhood is symmetric too; 5s"
+ },
+ "review": "run.py proves the symmetry identity sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') for any symmetric neighbourhood and verifies detailed balance exactly as the integer identity E(s,s') = E(s',s) over all 1679616 ordered pairs on the periodic 4-cycle and the 2x2 torus, together with stationarity as an exact Laurent-polynomial identity sum_s t^E(s,s') = prod_x Z(S_x(s')) valid for every t at once; the backward neighbourhood fails on the 3-cycle and the 4-cycle in the strongest form (31512 of 46656 and 1189800 of 1679616 asymmetric pairs, with explicit Kolmogorov cycles off by t^-5 and t^-1, which rules out reversibility with respect to any measure), but it does NOT fail on the 2x2 torus, where x - e_j and x + e_j coincide so the backward neighbourhood is symmetric and the chain is reversible with respect to the same pi - that is the HIT against the task's expectation (3); and for general weights (p,q,r) the exponent of each of p, q, r is separately symmetric over all pairs on both windows, so reversibility survives beyond q = 1/p.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): Is light-cone formation reversible? The record at (t+1, x) is drawn with probability prop. to exp(beta s.S_x), S_x the sum of the level-t records at x and its neighbours (the site ITSELF included). Claim to test: the synchronous chain is reversible with respect to pi(s) prop. to prod_x Z(S_x(s)), Z(S) = sum over the menu of exp(beta s.S), because sum_x s'_x.S_x(s) = sum_x s_x.S_x(s') for a symmetric neighbourhood. (1) Prove the symmetry identity and the detailed-balance equation on paper (three lines). (2) Verify exactly on the periodic 4-cycle and the 2x2 torus for the six-axis menu with exp(beta s.s') weights at beta = 1/2, 1 (rational arithmetic with e^beta replaced by a rational t: weights t, 1/t, 1): full transition matrix, stationary law, detailed balance. (3) Show the BACKWARD neighbourhood {x, x - e_j} fails detailed balance with any product-form pi on the same windows. (4) For the general six-axis weights (p,q,r), which are not of the form exp(beta s.s') unless q = 1/p... state what replaces s.S and whether reversibility survives. Expectation: (1)-(3) hold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-reversibility-exact/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-reversibility-exact/<name>/run.py\"",
+ "stdout_sha256": "e90f59efaad06512ae93db6adfa889e57f95ce82b02d35ce77adcf5fa386f4a4",
+ "stdout_tail": "pi(s)P(s->s') = t^E(s,s')/Norm with E symmetric - verified for every one of the 1296^2 ordered pairs on the periodic 4-cycle and the 2x2 torus, together with sum_s t^E(s,s') = prod_x Z(S_x(s')) as an exact Laurent polynomial in t, so the chain is reversible with respect to prod_x Z(S_x) for every t at once; the backward neighbourhood breaks the symmetry and an explicit Kolmogorov cycle shows no pi at all can make it reversible; and for general weights (p,q,r) the exponent of each of p, q, r is separately symmetric, so reversibility survives beyond q = 1/p; the 2x2 torus, however, cannot show the backward rule failing, because on side 2 that neighbourhood is symmetric too; 5s\nHIT: expectation (3) fails on one of the two windows the task names. The backward neighbourhood {x, x - e_j} does NOT break detailed balance on the 2x2 torus: there x - e_j and x + e_j are the same site, so the backward neighbourhood is symmetric, the joint weight pi(s)P(s->s') is symmetric in all 1679616 ordered pairs (zero asymmetric pairs, no Kolmogorov violation in 200000 random triples), and the backward chain is reversible with respect to the same pi prop. to prod_x Z(S_x). The failure the task expects does appear on the windows of odd or larger side: the periodic 3-cycle has 31512 asymmetric pairs of 46656 and a Kolmogorov cycle off by t^-5, the periodic 4-cycle 1189800 of 1679616 and a cycle off by t^-1. So any side-2 window is blind to the difference between the backward and the light-cone rule.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T042425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The script demonstrates the contradiction with the task's expectation (3): on the 2x2 torus, one of the two windows the task names, the backward neighbourhood {x, x - e_j} does not break detailed balance at all - zero asymmetric pairs of 1679616 and no Kolmogorov violation - because on side 2 x - e_j and x + e_j are the same site, so the backward rule is reversible there with respect to the same pi prop. to prod_x Z(S_x), while the same script exhibits explicit Kolmogorov violations on the periodic 3-cycle and 4-cycle; the practical consequence is that any side-2 window is blind to the difference between the backward and the light-cone neighbourhood.",
+  "by": "w-jonathonsmac4f50-j317b",
+  "at_utc": "20260920T042425Z"
+ }
+}

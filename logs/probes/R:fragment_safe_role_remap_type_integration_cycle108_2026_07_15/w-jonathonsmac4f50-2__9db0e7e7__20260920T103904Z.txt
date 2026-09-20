@@ -1,0 +1,55 @@
+
+===============================================================================
+A - Exact two-role repair and integrated table
+===============================================================================
+FAIL A01 Cycle 108 note exists
+PASS A02 repair changes exactly R_B12 and R_B31 phase aliases :: {'C_3_1': ('R_B31', 'J2'), 'D_1_1': ('R_B12', 'J1')}
+PASS A03 repaired map remains 36-role injective and onsite closed
+PASS A04 removed aliases are exactly Cycle-101's unary inputs
+PASS A05 J1/J2 are unary-inert in the complete pre-rail union
+PASS A06 J1/J2 reuse is explicit at one pre-existing source site each :: (1, 1)
+PASS A07 relabelled rail keeps 1,080 single-valued inputs
+PASS A08 rail inputs are disjoint from Cycle 100 and Cycle 101 :: ((), ())
+PASS A09 integrated union has 6,896 single-valued inputs
+PASS A10 every integrated input/output remains in FULL_ROLES
+
+===============================================================================
+B - Eight-slice sequential contacts and inherited TYPE
+===============================================================================
+PASS B01 all 97 empty-reader prefixes expose exactly reader plus rail fronts :: []
+PASS B02 all 97 complete-reader prefixes expose exactly TYPE plus rail fronts :: []
+PASS B03 all 97 typed prefixes expose only the next rail front :: []
+PASS B04 neither pre-existing J1/J2 debris site supplies an intended rail row :: []
+PASS B05 CERT alone is the exact inherited TYPE signature :: (((-1, 0, 0), 'R_B40'),)
+PASS B06 TYPE is supplied only by the remapped rail family
+
+===============================================================================
+C - Complete asynchronous product and proper-cubic covariance
+===============================================================================
+PASS C01 full reader x eight-slice rail x TYPE graph has 22,310 states :: GraphStats(states=22310, edges=91338, terminals=1, terminal_frontiers=((((-10, 1, 1), frozenset({'R_C02'})),),), max_front=7, bad=())
+PASS C02 all 91,338 legal asynchronous edges are parasite-free :: GraphStats(states=22310, edges=91338, terminals=1, terminal_frontiers=((((-10, 1, 1), frozenset({'R_C02'})),),), max_front=7, bad=())
+PASS C03 graph has one complete terminal exposing only slice-nine start :: ((((-10, 1, 1), frozenset({'R_C02'})),),)
+PASS C04 maximum simultaneous lawful frontier is seven
+PASS C05 all 165,504 proper-cubic raw images preserve output :: []
+
+===============================================================================
+D - Scope, no-go discipline, and constitutional disposition
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/fragment_safe_role_remap_type_integration_cycle108_2026_07_15.py", line 419, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/fragment_safe_role_remap_type_integration_cycle108_2026_07_15.py", line 409, in main
+    scope_contract()
+  File "/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/scripts/fragment_safe_role_remap_type_integration_cycle108_2026_07_15.py", line 371, in scope_contract
+    note = NOTE.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/Physics-baremetal-probes/slot-2/docs/work_history/repo/review_feedback/FRAGMENT_SAFE_ROLE_REMAP_TYPE_INTEGRATION_CYCLE108_NOTE_2026-07-15.md'

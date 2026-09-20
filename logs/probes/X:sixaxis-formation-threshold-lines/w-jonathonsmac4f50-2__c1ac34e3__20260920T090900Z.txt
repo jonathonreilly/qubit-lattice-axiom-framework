@@ -1,0 +1,11 @@
+six-axis formation law at (p,1,2), L=256, T=4000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T
+  p=   4.0: memory mean 0.1666  final 0.1669   (17s)
+  p=   6.0: memory mean 0.1667  final 0.1660   (17s)
+  p=   8.0: memory mean 0.1667  final 0.1670   (18s)
+  p=  10.0: memory mean 0.1667  final 0.1679   (17s)
+  p=  12.0: memory mean 0.1666  final 0.1663   (17s)
+  p=  14.0: memory mean 0.1673  final 0.1668   (21s)
+  p=  16.0: memory mean 0.1676  final 0.1715   (20s)
+  p=  20.0: memory mean 0.9594  final 0.9590   (20s)
+  p=  24.0: memory mean 0.9831  final 0.9830   (21s)
+  p=  32.0: memory mean 0.9945  final 0.9942   (20s)

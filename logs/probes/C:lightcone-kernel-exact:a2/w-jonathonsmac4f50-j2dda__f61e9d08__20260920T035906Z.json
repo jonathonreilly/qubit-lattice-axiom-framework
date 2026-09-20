@@ -1,0 +1,32 @@
+{
+ "task": "C:lightcone-kernel-exact:a2",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j2dda",
+ "model": "claude-opus-5",
+ "command": "python3 probes/work/compute/lightcone-kernel-exact/w-jonathonsmac4f50-j2dda/run.py",
+ "seed": 76746,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f61e9d08",
+ "started_utc": "20260920T035906Z",
+ "elapsed_s": 2.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "phi = 1 - E/7 exactly, the stationary kernel is (7 sigma^2/2)/(E(1 - E/14)) with the factor 1/(1 - E/14) running over exactly [1, 7] (7 at the corner, where phi = -5/7), it splits exactly as (7 sigma^2/2)(1/E + 1/(14 - E)) so the correction to the lattice Green function is the mass-squared-2 propagator times (-1)^{sum x}, decaying exponentially at log(2 + sqrt 3) = 1.316958 per site along an axis and 3 arccosh(4/3) = 2.386 along the diagonal - not 1/r^3 - and the space-time kernel sigma^2 phi^s/(1 - phi^2) has no drift with per-level rate -log(1 - E/7) = E/7 + E^2/98 + ...; the exact rational checks on L = 3 and 4 and the FFT checks at L = 64 and 128 all hold; 2s"
+ },
+ "review": "run.py proves phi = 1 - E/7 and sigma^2/(1-phi^2) = (7 sigma^2/2)/(E(1-E/14)) with the factor's exact range [1,7] (7 at the corner where phi = -5/7), splits the kernel exactly as (7 sigma^2/2)(1/E + 1/(14-E)) and identifies the correction as the mass-squared-2 lattice propagator carried to the zone corner, H(x) = (-1)^{sum x} K(x), which decays exponentially at log(2+sqrt3) = 1.316958 per site along an axis and 3 arccosh(4/3) = 2.386096 along the diagonal (FFT fits 1.3449 and 2.3802 from log(r|H|)) and not as 1/r^3, verifies on L = 3 and 4 tori over the rationals that the stationary equation holds, that sum_x H = 1/14, that C(x) = (7/2)(G(x)+H(x)) - 1/(4N) entrywise with zero deviation, and that every lag kernel P^s C is symmetric under x -> -x for s = 1..4 (no drift), with per-level rate -log(1 - E/7) = E/7 + E^2/98 + ...; all four parts hold, no HIT.",
+ "what": "WORKED COMPUTATION (independent run 2 of 2): The light-cone formation kernel, exactly. Event lattice in 3+1 with symmetric predecessors: the record at (t+1, x) is formed from (t, x) and (t, x +- e_j), seven predecessors. Linear gain-one model: theta_{t+1} = P theta_t + noise, phi(k) = (1 + 2 sum_j cos k_j)/7. (1) Show phi = 1 - E(k)/7 with E(k) = 2 sum_j (1 - cos k_j) and the stationary equal-time covariance sigma^2/(1 - phi^2) = 7 sigma^2/(2 E(k) (1 - E(k)/14)), sigma^2 = A(7 beta)/(7 beta): the lattice Green-function kernel 1/E(k) times a factor between 1 and 7 on the Brillouin zone (give its exact range; note phi = -5/7 at the zone corner). (2) Real space: C(x) = (7 sigma^2/2) G(x) + correction, G the Z^3 lattice Green function; bound the correction's decay (it is short-ranged: show exponential or 1/r^3 and say which). (3) The space-time covariance sigma^2 phi^s/(1 - phi^2): no drift, decay rate E(k)/7 per level. (4) Verify (1) and (3) exactly on L = 3, 4 tori by propagating the covariance with rational arithmetic, and (2) numerically by FFT at L = 64, 128. Expectation: all four hold. DELIVERABLE in your unit worktree: probes/work/compute/lightcone-kernel-exact/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/lightcone-kernel-exact/<name>/run.py\"",
+ "stdout_sha256": "ee2bed76c1c1420ea1878c574f1561e83a4cd65ba000002c14e28d512e0e3433",
+ "stdout_tail": " rate along (1,0,0) from log(r|H|), r = 3..8: 1.344901 against the exact 1.316958 (ratio 1.0212); from log|H| alone it would read 1.538196, the difference being the 1/r prefactor\nN2   L=128 r^3 |H| along (1,0,0) (flat would mean a 1/r^3 law): r=1:2.124e-02 r=2:2.808e-02 r=3:1.708e-02 r=4:7.877e-03 r=5:3.181e-03 r=6:1.192e-03\nN2   L=128 H along (1,1,1): r=1:-2.702e-03 r=2:+1.353e-04 r=3:-8.525e-06 r=4:+5.957e-07 r=5:-4.417e-08 r=6:+3.402e-09 r=7:-2.692e-10 r=8:+2.172e-11\nN2   L=128 fitted rate along (1,1,1) from log(r|H|), r = 3..8: 2.380200 against the exact 2.386096 (ratio 0.9975); from log|H| alone it would read 2.573495, the difference being the 1/r prefactor\nN2   L=128 r^3 |H| along (1,1,1) (flat would mean a 1/r^3 law): r=1:2.702e-03 r=2:1.083e-03 r=3:2.302e-04 r=4:3.813e-05 r=5:5.521e-06 r=6:7.348e-07\nSUMMARY: phi = 1 - E/7 exactly, the stationary kernel is (7 sigma^2/2)/(E(1 - E/14)) with the factor 1/(1 - E/14) running over exactly [1, 7] (7 at the corner, where phi = -5/7), it splits exactly as (7 sigma^2/2)(1/E + 1/(14 - E)) so the correction to the lattice Green function is the mass-squared-2 propagator times (-1)^{sum x}, decaying exponentially at log(2 + sqrt 3) = 1.316958 per site along an axis and 3 arccosh(4/3) = 2.386 along the diagonal - not 1/r^3 - and the space-time kernel sigma^2 phi^s/(1 - phi^2) has no drift with per-level rate -log(1 - E/7) = E/7 + E^2/98 + ...; the exact rational checks on L = 3 and 4 and the FFT checks at L = 64 and 128 all hold; 2s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2dda",
+  "at_utc": "20260920T035908Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

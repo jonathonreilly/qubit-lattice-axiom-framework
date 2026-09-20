@@ -3,7 +3,7 @@
 
 Four agent-facing surfaces carry generated framework-authority blocks:
 
-  * docs/ai_methodology/skills/physics-loop/SKILL.md
+  * docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md
   * docs/ai_methodology/skills/review-loop/SKILL.md
   * docs/ai_methodology/skills/audit-loop/SKILL.md
   * docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md
@@ -592,7 +592,7 @@ class Target:
 TARGETS: tuple[Target, ...] = (
     Target(
         key="physics-loop",
-        path="docs/ai_methodology/skills/physics-loop/SKILL.md",
+        path="docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
         marker_indent="",
         spans=(SPAN_AXIOMS, SPAN_PRIMITIVES),
     ),

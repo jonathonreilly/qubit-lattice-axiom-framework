@@ -39,7 +39,7 @@ citation-edge rule in section 8.
   that needs it.
 - A dependency may be brought in as a self-contained derivation and reviewed in
   the same branch; that is the sanctioned repair route
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:737-738`). Copying in an
+  (`docs/ai_methodology/skills/review-loop/references/SALVAGE.md` (self-contained derivation rule)). Copying in an
   unreviewed sibling's conclusion is not.
 - No hard requirement on gitignored artifacts (e.g. the symlinked
   `docs/audit/data/audit_ledger.json`). Runners must be fresh-worktree
@@ -86,7 +86,7 @@ citation-edge rule in section 8.
   `AUDIT_INPUT_PATHS`, and consumption rejects input drift
   (`scripts/runner_cache.py` module docstring), while the review-time
   readiness gate blocks PASS on a stale or failed SHA/input-bound compute
-  result (`docs/ai_methodology/skills/review-loop/SKILL.md` "Changed-science
+  result (`docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md` "Changed-science
   evidence-readiness PASS gate").
 - A runner-emitted read inventory must separate two kinds of read: external or
   ancestral scientific inputs (data the result depends on) and package-local
@@ -104,7 +104,7 @@ citation-edge rule in section 8.
   bounded scope. Words that claim more than the computation —
   "certified", "closed", "complete", "global", "maximal", "the law" — are
   demotion targets unless the computation actually establishes them
-  (`docs/ai_methodology/skills/review-loop/SKILL.md` Fix Policy step 2:
+  (`docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md` Fix Policy step 2:
   "Demote overclaimed status when the artifact supports only support/bounded
   language").
 - Full-surface consistency: the claim scope must match on EVERY surface —
@@ -113,7 +113,7 @@ citation-edge rule in section 8.
   a docstring still overclaims is a confirmation failure (seen twice). The
   surface enumeration is the Native-language PASS gate's: changed headings,
   metadata, runner banners, claim scopes, table labels, and review comments
-  (`docs/ai_methodology/skills/review-loop/SKILL.md` "Native-language PASS
+  (`docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md` "Native-language PASS
   gate").
 - Structured status fields carry only values from their own enum. A claim class
   (`positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`, `decoration`,
@@ -127,7 +127,8 @@ citation-edge rule in section 8.
   headlines. No unregistered labels or block/campaign fields in machine records.
   Campaign names, PR-specific labels, and branch-local/draft framings are owned
   by `RepoGovernanceReviewer` and the Native-language PASS gate
-  (`docs/ai_methodology/skills/review-loop/SKILL.md`); the frame-relative
+  (`docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md` and
+  `docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md`); the frame-relative
   naming rule is the owner directive of 2026-08-09.
 - No bare letter-number names for new science. `A1`, `A2`, `G1`, `R3`,
   `Route F`, `Block 2` and their kin are overloaded across axioms, assumptions,
@@ -136,7 +137,8 @@ citation-edge rule in section 8.
   review findings. Use an explicit scientific noun phrase; a shorthand may
   follow only as a parenthetical alias, and archival aliases belong only in
   clearly historical work-history or archive material
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:147-152,594-605`).
+  (`docs/ai_methodology/skills/review-loop/SKILL.md` Claim Boundary and
+  `docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md` Reviewer Prompt).
 - Any noun phrase the PR introduces to categorize claims, lanes, or tiers must
   already exist in `docs/repo/CONTROLLED_VOCABULARY.md` or be plain descriptive
   prose. Coining a class word is a defect even when the concept is real; say the
@@ -162,7 +164,7 @@ PR body, source note, runner, or review verdict it ships asserts:
 Authority for the trigger set and the checklist:
 `docs/ai_methodology/skills/no-go-discipline/SKILL.md:23-46` (when to invoke)
 and `:48-260` (N1-N8 and the binding Output artifacts); the same trigger is
-wired at `docs/ai_methodology/skills/physics-loop/SKILL.md` "NO-GO DISCIPLINE
+wired at `docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md` "NO-GO DISCIPLINE
 GATE". The checked-in gate binds every N1-N8 statement to evidence in the
 restricted audit packet (`docs/audit/scripts/no_go_discipline_gate.py`).
 
@@ -238,7 +240,8 @@ including checker-emitted strings and receipts.
 
 ## 5. Proof obligations
 
-Authority: `docs/ai_methodology/skills/review-loop/SKILL.md:1131-1137`. Any PR
+Authority: `docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md`
+(Proof-obligation scope PASS gate). Any PR
 claiming a theorem, proof, derivation, reduction, or closure through intermediate
 lemmas MUST, in the note:
 
@@ -280,7 +283,8 @@ Stating the honest boundary requires no new science.
   check that does NOT share the changed runner's implementation path: manual
   formula derivation, symbolic or algebraic reduction, finite toy-case
   enumeration, independent recomputation, or invariant/limit tests. Record which
-  one was used (`docs/ai_methodology/skills/review-loop/SKILL.md:1119-1129`). A
+  one was used (`docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md`
+  Math-runner independent-check PASS gate). A
   runner that computes its own target and prints PASS proves nothing about the
   formula.
 
@@ -302,7 +306,8 @@ Stating the honest boundary requires no new science.
   mismatching fingerprint as the safe default; narrowing that blast radius takes
   a separate, reviewed machine-readable equivalence/impact record, and
   `docs/audit/data/legacy_science_epoch_baseline.json` is never refreshed to make
-  a policy change pass (`docs/ai_methodology/skills/review-loop/SKILL.md:865-878`).
+  a policy change pass (`docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md`
+  Dependency/axiom impact guard).
 - Open policy debt, and how to stay correct across its repair: the helper
   registry is currently recorded as unresolved dependency-policy epoch debt on
   `origin/main`, because refreshing the epoch mass-invalidates roughly 860-891
@@ -353,8 +358,8 @@ Stating the honest boundary requires no new science.
   removed, or rewired node. A zero-edge note addition therefore changes
   `node_count` and needs the manifest exactly like an edge rewire. Omitting it
   blocks the enforced stage-18 guard on every subsequent pipeline run on `main`
-  (`docs/ai_methodology/skills/review-loop/SKILL.md` proactive manifest rule in
-  the landing loop; `docs/ai_methodology/skills/physics-loop/SKILL.md`
+  (`docs/ai_methodology/skills/review-loop/references/LANDING.md` proactive manifest rule in
+  the landing loop; `docs/ai_methodology/skills/physics-loop/references/DELIVERY.md`
   citation-graph carve-out).
 - Regeneration DURING landing is a narrow generated-artifact exception. After
   cherry-picking any frozen commit set that carries
@@ -370,7 +375,7 @@ Stating the honest boundary requires no new science.
   regeneration, never by hand-merge, and needs no new reviewer round. Any other
   conflict fails the landing closed and returns the PR to its worker for
   re-review on a rebased head
-  (`docs/ai_methodology/skills/review-loop/SKILL.md` fail-closed landing loop).
+  (`docs/ai_methodology/skills/review-loop/references/LANDING.md` fail-closed landing loop).
 - `docs/repo/ACTIVE_REVIEW_QUEUE.md` and `docs/CANONICAL_HARNESS_INDEX.md` are
   not append-only. The queue's own rule is that a resolved item is removed from
   the open list and recorded in the queue history or the linked packet
@@ -393,15 +398,16 @@ Stating the honest boundary requires no new science.
 
 - Machine-status block: complete, and consistent with the receipts and every
   other surface. Use the real field names from
-  `docs/ai_methodology/skills/physics-loop/SKILL.md`. The status contract
-  (`:399-412`) requires `actual_current_surface_status`, whose value is one of
+  `docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md`. The status contract
+  (Claim-Status Firewalls) requires `actual_current_surface_status`, whose value is one of
   `open`, `no-go`, `exact-support`, `bounded-support`, `conditional-support`,
   `demotion`, `candidate-retained-grade`, together with `target_claim_type`,
   `trace_class`, `reachability_to_target`, `conditional_surface_status`,
   `hypothetical_axiom_status`, `admitted_observation_status`,
   `claim_type_reason`, `audit_required_before_effective_retained`, and
   `bare_retained_allowed: false`. There is no `surface_status` field.
-- The trace contract (`:278-288`) additionally requires `trace_class`
+- The trace contract (`docs/ai_methodology/skills/physics-loop/references/DELIVERY.md`,
+  Loop Pack) additionally requires `trace_class`
   (`direct_blocker_closure`, `upstream_support`, `negative_route_pruning`,
   `frontier_discovery`, `methodology`), `target_claim_id`,
   `target_blocker_text`, `source_of_blocker_text` (`null`, `audit_ledger`,
@@ -418,7 +424,8 @@ Stating the honest boundary requires no new science.
   normalization is not available in-repo". Do not coin a status token for this;
   imported physics, textbook machinery, observations, fitted values, and
   conventions are labelled in prose
-  (`docs/ai_methodology/skills/review-loop/SKILL.md:725-738`). Open bridges are
+  (`docs/ai_methodology/skills/review-loop/references/SALVAGE.md`
+  Salvage Pass step 2). Open bridges are
   declared open and owned by the correct lane.
 - A Review record section when the PR replaces or narrows earlier content: what
   was dropped or refuted, where the retained scope ends, and any hard landing
@@ -436,7 +443,8 @@ generated ledger, queue, prompt, or publication effective-status output. Audit
 fields are auditor-owned and `effective_status` is derived by the pipeline
 (`docs/repo/CONTROLLED_VOCABULARY.md` "Audit Lane Field Vocabulary"); the
 independent audit lane is the sole channel that refreshes the hash and
-re-ratifies (`docs/ai_methodology/skills/review-loop/SKILL.md:1179-1192`).
+re-ratifies (`docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md`
+Audit-verdict application boundary).
 
 - Do not run `docs/audit/scripts/apply_audit.py` from an author branch.
 - Validation runs generate audit surfaces. Restore them before committing and
@@ -484,7 +492,7 @@ the complete input/tool/evidence receipt specified in the review skill.
 
 Use a worktree with identified generated residue separated from source and
 recovery artifacts; do not indiscriminately delete caches. Authority:
-`docs/ai_methodology/skills/review-loop/SKILL.md` (Coherent review units and
+`docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md` (Coherent review units and
 validation placement) and `docs/ai_methodology/skills/review-loop/PREFLIGHT.md`.
 
 - `python3 scripts/vocab_lint.py --fix` on the changed files, then
@@ -506,10 +514,10 @@ validation placement) and `docs/ai_methodology/skills/review-loop/PREFLIGHT.md`.
   inspects only the working tree and reports clean on a committed PR whose delta
   carries whitespace errors, so it does not satisfy this gate. The
   `git diff --check` requirement is owned by
-  `docs/ai_methodology/skills/review-loop/SKILL.md` (the post-fix pipeline
+  `docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md` (the clean-state check
   block); the merge-base strengthening is the owner directive of 2026-08-09.
 - `python3 -m py_compile` on every added or modified Python file
-  (`docs/ai_methodology/skills/review-loop/SKILL.md` Smoketest).
+  (`docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md` Smoketest).
 - Prep sanity for stacked PRs: record each original constituent delta as
   `merge-base(base-branch, head)..head` and independently verify its file count.
   For a cumulative/dependent unit, also verify the complete final source delta
@@ -518,8 +526,9 @@ validation placement) and `docs/ai_methodology/skills/review-loop/PREFLIGHT.md`.
   Review that complete unit and all interacting premises; inherited content is
   not covered merely because its ancestor had an earlier PASS. The
   merge-base review base is owned by
-  `docs/ai_methodology/skills/review-loop/SKILL.md` (Setup step 3) and the
-  stale/stacked overlap check by its Stale PR Integration Guard; the
+  `docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md` (Setup step 3) and the
+  stale/stacked overlap check by Stale PR Integration Guard in
+  `docs/ai_methodology/skills/review-loop/references/LANDING.md`; the
   independent file-count cross-check is the owner directive of 2026-08-09.
 - Read the complete diff once, cold, as the reviewer would
   (`docs/ai_methodology/skills/review-loop/PREFLIGHT.md:109-112`). Every hunk

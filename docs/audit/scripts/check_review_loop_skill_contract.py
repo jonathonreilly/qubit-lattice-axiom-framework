@@ -10,6 +10,48 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 SKILL_REL = "docs/ai_methodology/skills/review-loop/SKILL.md"
+# The entry point routes by operation. Validate every relocated procedure as
+# part of the original contract, without forcing every runtime operation to
+# load unrelated landing or salvage instructions. This order keeps each old
+# section group (including executable shell recipes) intact for mutation tests.
+SKILL_CONTRACT_REFERENCES = (
+    "references/REVIEW_UNITS.md",
+    "references/LANDING.md",
+    "references/REVIEW_SETUP.md",
+    "references/SCIENCE_LENSES.md",
+    "references/SALVAGE.md",
+    "references/FIXES_AND_REPORTING.md",
+    "references/AUDIT_COMPATIBILITY.md",
+    "references/COMBINED_VALIDATION.md",
+)
+REFERENCE_TRIGGER_RULES = {
+    "references/REVIEW_SETUP.md": r"Every branch/PR review.*before review starts",
+    "references/REVIEW_UNITS.md": r"Before defining, reviewing, confirming, or reusing any unit",
+    "references/SCIENCE_LENSES.md": r"Every scientific, code, governance, or methodology review and affected-fix confirmation",
+    "references/FIXES_AND_REPORTING.md": r"Before fixes, checks after fixes, re-review, or the final report",
+    "references/AUDIT_COMPATIBILITY.md": r"Changed source notes, runners, claim tables, lane stubs, or publication/control-plane files.*scientific PASS gate",
+    "references/COMBINED_VALIDATION.md": r"Whenever combined candidate validation is required.*named review-only or landing mode",
+    "references/LANDING.md": r"Actual unspecified/focus-text-only invocation, a set of PRs, or any authorized landing",
+    "references/SALVAGE.md": r"Before PR closure/rejection, non-landable disposition, discarded stretch/campaign packets, or salvage",
+    "references/UNIT_RECEIPT.md": r"Creating a new canonical unit record, using supporting-proof relationships, or adapting an older record",
+    "references/OPERATIONS.md": r"Historical payload consolidation, exclusive sequential checkout reuse, or dependent-PR head/base maintenance and recovery",
+}
+ROUTING_RULES = {
+    "same_source": r"read the complete required reference from the same source revision",
+    "cumulative_triggers": r"Triggers accumulate",
+    "unread_holds_action": r"A missing or unread\s+required reference holds the dependent operation",
+    "full_procedure_required": r"routing summaries are not substitutes for the detailed instructions",
+}
+REVIEW_ONLY_VALIDATION_RULES = (
+    r"For a named review-only candidate, run the mutating validation recipe in a\s+disposable isolated copy",
+    r"staged, unstaged and untracked reviewed content and all declared inputs",
+    r"Verify\s+the copied source/input identities against the reviewed candidate, preserve\s+the caller's source and index",
+    r"In that copy, use `--include-worktree`",
+    r"`--stage-citation-manifest` may stage the generated manifest only there",
+    r"Do not execute the landing commit, replay or push instructions for this mode",
+    r"do not create an iteration commit under `--no-commit`",
+    r"a matching `HEAD` alone is insufficient",
+)
 COMMAND_REL = ".claude/commands/review-loop.md"
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
@@ -272,13 +314,13 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
 # visible and anchored; adversarial methodology review still checks behavior.
 UNIT_PROSE_RULES: dict[str, tuple[str, ...]] = {
     "versioned_mechanical_receipt": (
-        r"For new units, use the versioned schema in `references/UNIT_RECEIPT\.md` and\s+"
-        r"`scripts/review_receipt\.py` for shared preflight against actual repository APIs\.",
+        r"For new units, use the versioned schema in \[`references/UNIT_RECEIPT\.md`\]\(UNIT_RECEIPT\.md\) and\s+"
+        r"\[`scripts/review_receipt\.py`\]\(\.\./scripts/review_receipt\.py\) for shared preflight against actual repository APIs\.",
         r"never infer a scientific verdict or restamp an old execution",
         r"Mechanical success\s+does not establish proof closure, reviewer authenticity or landing PASS",
     ),
     "exact_history_and_exclusive_reuse": (
-        r"exact archive\s+mapping and externally pinned manifest checks in `references/OPERATIONS\.md`",
+        r"exact archive\s+mapping and externally pinned manifest checks in \[`references/OPERATIONS\.md`\]\(OPERATIONS\.md\)",
         r"Keep all active proof/runtime/link targets accessible, preserve every original\s+path/mode/disposition",
         r"guarded release preserves the exact HEAD,\s+rejects tracked/untracked/ignored residue and unfinished Git operations, and\s+retains ownership on failure",
         r"never concurrently share a slot or force cleanup",
@@ -314,6 +356,40 @@ UNIT_PROSE_RULES: dict[str, tuple[str, ...]] = {
         r"never delete its recovery branch for partial salvage\.",
         r"review-loop must\s+not invoke an auditor or apply a scientific verdict/status\.",
     ),
+}
+
+# Bind each family to the source an agent actually loads for that operation.
+# Pooled validation alone could find displaced science obligations in a landing
+# file that a named review never reads. Multi-file families retain explicit
+# shared boundaries (entry authority, unit scope, or the common gate).
+SKILL_RULE_LOCATIONS = {
+    "freshness": ("SKILL.md",),
+    "mandatory_authority_reads": ("SKILL.md",),
+    "reviewer_model_and_effort": ("SKILL.md",),
+    "reviewer_lenses": ("references/SCIENCE_LENSES.md",),
+    "independent_math_and_mutations": ("references/SCIENCE_LENSES.md",),
+    "proof_import_governance": ("references/SCIENCE_LENSES.md",),
+    "no_go_discipline": ("references/AUDIT_COMPATIBILITY.md",),
+    "audit_compatibility_boundary": ("SKILL.md", "references/AUDIT_COMPATIBILITY.md"),
+    "same_session_confirmation": ("references/LANDING.md",),
+    "landing_train_scheduler": ("references/LANDING.md",),
+    "landing_train_combined_gate": ("references/LANDING.md", "references/COMBINED_VALIDATION.md"),
+    "landing_train_head_guard": ("SKILL.md", "references/LANDING.md"),
+    "dependent_pr_base_preservation": ("SKILL.md",),
+    "live_surface_routing": ("references/REVIEW_SETUP.md", "references/SCIENCE_LENSES.md", "references/AUDIT_COMPATIBILITY.md"),
+    "pipeline_strict_and_evidence": ("references/COMBINED_VALIDATION.md",),
+    "manifest_landing": ("references/LANDING.md",),
+    "manifest_sequencer_progress": ("references/LANDING.md",),
+    "disk_and_worktree_guards": ("references/LANDING.md",),
+    "fail_closed_landing": ("references/LANDING.md",),
+}
+UNIT_RULE_LOCATIONS = {
+    "versioned_mechanical_receipt": ("references/REVIEW_UNITS.md",),
+    "exact_history_and_exclusive_reuse": ("references/REVIEW_UNITS.md", "references/LANDING.md"),
+    "coherent_unit_coverage": ("references/REVIEW_UNITS.md",),
+    "unit_provenance_and_recheck": ("references/REVIEW_UNITS.md",),
+    "shared_validation_placement": ("references/REVIEW_UNITS.md",),
+    "unit_scope_and_close": ("references/REVIEW_UNITS.md", "references/LANDING.md"),
 }
 
 GENERATOR_RULES: dict[str, tuple[str, ...]] = {
@@ -890,7 +966,7 @@ def _marked_train_shell(scan: MarkdownScan, marker: str) -> str | None:
     return shell_scan.active
 
 
-def _train_combined_gate_structure_ok(scan: MarkdownScan) -> bool:
+def _combined_validation_recipe_ok(scan: MarkdownScan) -> bool:
     validation = _marked_train_shell(scan, "TRAIN_COMBINED_VALIDATION_SCOPE=")
     clean = _marked_train_shell(scan, "TRAIN_COMBINED_CLEAN_SCOPE=")
     if validation is None or clean is None:
@@ -898,6 +974,12 @@ def _train_combined_gate_structure_ok(scan: MarkdownScan) -> bool:
     if not _active_context_is_at_depth(validation, TRAIN_VALIDATION_CONTEXT, 0):
         return False
     if not _active_context_is_at_depth(clean, TRAIN_CLEAN_CONTEXT, 0):
+        return False
+    return True
+
+
+def _train_combined_gate_structure_ok(scan: MarkdownScan) -> bool:
+    if not _combined_validation_recipe_ok(scan):
         return False
     shell = _train_shell(scan)
     if shell is None:
@@ -1018,9 +1100,98 @@ def validate_texts(
     return missing
 
 
+def load_skill_contract(repo_root: Path) -> tuple[str, list[str]]:
+    """Read the routed contract, rejecting absent, hidden or optional routes.
+
+    Read each file separately before joining: an unterminated comment/fence in
+    one source must not be repaired by a delimiter in a different source. The
+    existing prose, shell, and mutation guards then see all operative content.
+    Fixed package-relative paths avoid silently accepting an unrelated file.
+    """
+    skill_path = repo_root / SKILL_REL
+    package = skill_path.parent.resolve()
+    missing: list[str] = []
+    try:
+        entry = skill_path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return "", ["skill_entry_unreadable"]
+    entry_scan = _markdown_scan(entry)
+    if entry_scan.errors:
+        missing.append("skill_entry_markdown_structure")
+    heading = "## Required reference routing"
+    if entry_scan.prose.count(heading) != 1:
+        missing.append("reference_routing_section")
+        routing = ""
+    else:
+        routing = entry_scan.prose.split(heading, 1)[1]
+        routing = re.split(r"^## ", routing, maxsplit=1, flags=re.MULTILINE)[0]
+    for name, pattern in ROUTING_RULES.items():
+        if not re.search(pattern, routing):
+            missing.append(f"reference_routing_{name}")
+    sources: dict[str, str] = {"SKILL.md": entry}
+    for relative, trigger in REFERENCE_TRIGGER_RULES.items():
+        # The requirement must be an active table row in the routing section;
+        # prose in a code sample, HTML comment or link definition cannot route
+        # an agent to a procedure. Every link is coupled to its actual trigger.
+        row = re.compile(
+            r"^\| " + trigger + r"[^|]* \| .*\]\("
+            + re.escape(relative) + r"\) \|$", re.MULTILINE,
+        )
+        stem = Path(relative).stem.lower()
+        route = row.search(routing)
+        trigger_cell = route[0].split("|")[1] if route else ""
+        if (route is None or REVIEWER_DISABLE_RE.search(trigger_cell)
+                or re.search(r"\boptional\b", trigger_cell, re.IGNORECASE)):
+            missing.append(f"reference_route_{stem}")
+        path = skill_path.parent / relative
+        if not path.resolve().is_relative_to(package):
+            missing.append(f"reference_outside_package_{stem}")
+            continue
+        try:
+            source = path.read_text(encoding="utf-8")
+        except (OSError, UnicodeError):
+            missing.append(f"reference_unreadable_{stem}")
+            continue
+        source_scan = _markdown_scan(source)
+        if source_scan.errors:
+            missing.append(f"reference_markdown_structure_{stem}")
+        if relative == "references/COMBINED_VALIDATION.md" and any(
+            not re.search(pattern, source_scan.prose)
+            for pattern in REVIEW_ONLY_VALIDATION_RULES
+        ):
+            missing.append("review_only_validation_isolation")
+        if relative in SKILL_CONTRACT_REFERENCES:
+            sources[relative] = source
+    for rules, locations, prose_only in (
+        (SKILL_RULES, SKILL_RULE_LOCATIONS, False),
+        (UNIT_PROSE_RULES, UNIT_RULE_LOCATIONS, True),
+    ):
+        for family, patterns in rules.items():
+            local = _markdown_scan("\n\n".join(
+                sources.get(name, "") for name in locations.get(family, ())
+            ))
+            text = local.prose if prose_only else local.visible
+            if _missing(text, {family: patterns}):
+                missing.append(f"routed_{family}")
+    lenses = _markdown_scan(sources.get("references/SCIENCE_LENSES.md", ""))
+    if not _reviewer_structure_ok(lenses.prose):
+        _append_once(missing, "routed_reviewer_lenses")
+    combined = _markdown_scan(sources.get("references/COMBINED_VALIDATION.md", ""))
+    if not _combined_validation_recipe_ok(combined):
+        _append_once(missing, "routed_landing_train_combined_gate")
+    landing = _markdown_scan(sources.get("references/LANDING.md", ""))
+    if not _landing_context_is_top_level(landing):
+        _append_once(missing, "routed_fail_closed_landing")
+    if not _train_head_guard_structure_ok(landing):
+        _append_once(missing, "routed_landing_train_head_guard")
+    parts = [entry] + [sources.get(name, "") for name in SKILL_CONTRACT_REFERENCES]
+    return "\n\n".join(parts), missing
+
+
 def validate_repo(repo_root: Path) -> list[str]:
-    return validate_texts(
-        (repo_root / SKILL_REL).read_text(encoding="utf-8"),
+    skill, routing_failures = load_skill_contract(repo_root)
+    return routing_failures + validate_texts(
+        skill,
         (repo_root / GENERATOR_REL).read_text(encoding="utf-8"),
         (repo_root / PIPELINE_REL).read_text(encoding="utf-8"),
         (repo_root / COMMAND_REL).read_text(encoding="utf-8"),

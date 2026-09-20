@@ -1,6 +1,6 @@
 {
- "edge_count": 13568,
- "node_count": 6014,
+ "edge_count": 13606,
+ "node_count": 6026,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1134,6 +1134,22 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "ai_methodology.skills.physics-loop.references.campaign": {
+   "deps_hash": "01053aeb8404",
+   "out_degree": 1
+  },
+  "ai_methodology.skills.physics-loop.references.claim_status": {
+   "deps_hash": "9b89d5f13d7d",
+   "out_degree": 1
+  },
+  "ai_methodology.skills.physics-loop.references.delivery": {
+   "deps_hash": "ccffc2e9b618",
+   "out_degree": 2
+  },
+  "ai_methodology.skills.physics-loop.references.discovery": {
+   "deps_hash": "5fab0f18dcd0",
+   "out_degree": 6
+  },
   "ai_methodology.skills.physics-loop.references.literature-bridge-protocol": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -1151,8 +1167,8 @@
    "out_degree": 1
   },
   "ai_methodology.skills.physics-loop.skill": {
-   "deps_hash": "87d01f37c89e",
-   "out_degree": 9
+   "deps_hash": "c84110eb27c5",
+   "out_degree": 5
   },
   "ai_methodology.skills.primitive_registry_check": {
    "deps_hash": "e3b0c44298fc",
@@ -1162,17 +1178,49 @@
    "deps_hash": "0cc007ced687",
    "out_degree": 1
   },
+  "ai_methodology.skills.review-loop.references.audit_compatibility": {
+   "deps_hash": "15add152a3c6",
+   "out_degree": 3
+  },
+  "ai_methodology.skills.review-loop.references.combined_validation": {
+   "deps_hash": "e81d698d2221",
+   "out_degree": 2
+  },
+  "ai_methodology.skills.review-loop.references.fixes_and_reporting": {
+   "deps_hash": "bb03d78d4851",
+   "out_degree": 1
+  },
+  "ai_methodology.skills.review-loop.references.landing": {
+   "deps_hash": "09028c267f6e",
+   "out_degree": 8
+  },
   "ai_methodology.skills.review-loop.references.operations": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "ai_methodology.skills.review-loop.references.review_setup": {
+   "deps_hash": "40505cd12fd1",
+   "out_degree": 3
+  },
+  "ai_methodology.skills.review-loop.references.review_units": {
+   "deps_hash": "d30de492ee29",
+   "out_degree": 3
+  },
+  "ai_methodology.skills.review-loop.references.salvage": {
+   "deps_hash": "1db460fa419a",
+   "out_degree": 2
+  },
+  "ai_methodology.skills.review-loop.references.science_lenses": {
+   "deps_hash": "a0a7701d5b27",
+   "out_degree": 3
   },
   "ai_methodology.skills.review-loop.references.unit_receipt": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
   "ai_methodology.skills.review-loop.skill": {
-   "deps_hash": "17c1a6867e99",
-   "out_degree": 4
+   "deps_hash": "43460544c3d5",
+   "out_degree": 11
   },
   "ai_methodology.skills.reviewer-backpressure-integrator.skill": {
    "deps_hash": "e3b0c44298fc",

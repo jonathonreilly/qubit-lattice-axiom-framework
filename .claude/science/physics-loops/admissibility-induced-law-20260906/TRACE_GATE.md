@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 75 (2026-09-21)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 71: a ledger whose total is zero; block 60: no closed lattice at rest for positive bodies"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "curvature member: never at rest on a closed lattice whatever the signs; simplest member: at rest on a surface of bare energies of both signs with the ledger zero; next: content that moves; stability; the owner's fork on which amplitudes are present"
+```

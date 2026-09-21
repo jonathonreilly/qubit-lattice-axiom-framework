@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 75 — author checks (not a review PASS)
+Written lens pass by the supervisor. A case-by-case derivation replaced by one identity. The pair's closed form derived by hand, confirmed exactly and on three tori. The first control minimised a homogeneous residual and "succeeded" trivially; located by evaluating the identity on its output, then reposed (per unit rate; mean length held). Expected total corrected (12). Census 7/7 in family.

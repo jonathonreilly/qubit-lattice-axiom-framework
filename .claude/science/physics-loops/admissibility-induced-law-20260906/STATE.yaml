@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block75: "opened for review 2026-09-21; twenty-third block of the source-link direction, nineteenth of the 12-hour campaign: on a closed lattice sum (Delta f)/f = sum_bonds (df)^2/(f f') for positive f; curvature member: the two field equations feed it with opposite signs, so no closed lattice is at rest with bodies at rest of any signs; simplest member: rest needs sum m > 0 > sum m w (both signs), ledger exactly zero, and a pair is at rest iff 1/|m_B| - 1/m_A = gamma (G_0 - G_d) (exact example m_A = 3, m_B = -3840/1673 on a 4x4x4 torus); content or fields that move outside; nothing adopted"

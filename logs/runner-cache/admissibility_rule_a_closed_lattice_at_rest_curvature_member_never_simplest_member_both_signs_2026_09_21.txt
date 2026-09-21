@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_closed_lattice_at_rest_curvature_member_never_simplest_member_both_signs_2026_09_21.py
+runner_sha256: 420b33cf9610761b7bf1d3527ebf0c2e18123538f4ab8c2037cf62876f6a04ea
+input_fingerprint_sha256: 8380efef6375e5f5c53e6f03b8e65c6eb36e5b9356d786d2c85dcfafa7da1edc
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.98
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_CLOSED_LATTICE_AT_REST_NEVER_IN_THE_CURVATURE_MEMBER_WHATEVER_THE_SIGNS_IN_THE_SIMPLEST_MEMBER_ONLY_WITH_BODIES_OF_BOTH_SIGNS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a 4x4x4 torus, for a positive rational function f varying with every coordinate, sum_z (Delta f)_z / f_z = sum over the 192 bonds of (f_x - f_y)^2/(f_x f_y) = 126205/5544 exactly: positive unless f is uniform
+PASS: B2 T2: curvature member on the closed 4x4x4 lattice: for ANY positive lengths chi (charges of both signs, defined through the lengths' equation, summing to zero) and ANY positive rates N, the residuals of the rates' equation divided by the rates sum to sum_bonds (dN)^2/(N N') + sum_bonds (dchi)^2/(chi chi') = 1706963/60060 > 0: they cannot all vanish unless both fields are uniform - no closed lattice is at rest in the curvature member, whatever the signs of the bodies
+PASS: C1 T3: block 56's member on the closed 4x4x4 lattice, gamma = 1/2, a body m_A = 3 at (0,0,0) and a body m_B = -3840/1673 at (2,1,0), chosen by 1/|m_B| - 1/m_A = gamma (G_0 - G_d), G_0 - G_d = 131/640: phi = c - p (G_A - G_B) solves the law at all 64 sites with every rate positive; the clock at the negative body is the faster; sum m > 0, sum m w = -6036480/8720209 < 0, and the ledger's total (content plus field) is exactly zero
+PASS: C2 T3: the determinant of -Delta + (gamma/2) M on the 64 sites vanishes at the tuned m_B and not at m_B + 1/10: away from the condition the only solution of the law is phi = 0 - for a pair the condition is necessary as well as sufficient
+PASS: D1 T3: for ANY positive phi on the closed lattice, the bare energies that the simplest member's law assigns to it have sum m = (2/gamma) sum_bonds (dphi)^2/(phi phi') = 6158/165 > 0 and sum m w = -F = -1712/27 < 0, and occur with both signs: a closed lattice at rest in the simplest member needs bodies of both signs, the positive ones outweighing the negative in bare energy and the negative ones in energy counted in local ticks
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the identity for a positive rational function on the 192 bonds of a 4x4x4 torus
+per_site: executed — the simplest member’s law for the tuned pair at all 64 sites with every rate positive; the residuals of the curvature member’s rates equation at all 64 sites for arbitrary positive fields
+per_mode: executed — the determinant of the simplest member’s operator on the 64 sites at the tuned and at a detuned negative body
+per_block: executed — the ledger’s total for the tuned pair (exactly zero); the sums of the bare energies and of the energies in local ticks for an arbitrary positive field
+lattice_wide: T1 for every positive function on every closed lattice; T2 for every number, position and sign of bodies at rest in the curvature member; T3 for every closed lattice in the simplest member, with the pair’s condition in closed form; content that moves, and which amplitudes are present, are outside
+PASS: G1 the five N5 resolution lines are printed
+scope: a closed lattice at rest — one identity for positive functions on a closed lattice; in the curvature member the residuals of the rates equation cannot all vanish, whatever the signs of the bodies; in the simplest member a closed lattice at rest needs bodies of both signs (sum m > 0 > sum m w, ledger zero), and a pair is at rest exactly when 1/|m_B| - 1/m_A = gamma (G_0 - G_d)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

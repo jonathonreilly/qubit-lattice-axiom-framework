@@ -1,0 +1,7 @@
+# Block 75 — results (2026-09-21)
+
+- Runner `scripts/admissibility_rule_a_closed_lattice_at_rest_curvature_member_never_simplest_member_both_signs_2026_09_21.py`: `TOTAL: PASS=12 FAIL=0`; 7 mutations, each in its own family (<1 s).
+- T1: `4×4×4` torus, positive rational `f`: `Σ(Δf)/f = Σ_bonds(df)²/(ff') = 126205/5544`.
+- T2: arbitrary positive rational `χ`, `N`; charges defined by the lengths' equation (both signs, summing to zero): the rates' residuals per unit rate sum to the two sums of squares, a positive rational.
+- T3: `γ = 1/2`, `m_A = 3` at `(0,0,0)`, `m_B = −3840/1673` at `(2,1,0)` from `1/|m_B| − 1/m_A = γ(G_0 − G_d)`, `G_0 − G_d = 131/640`: the law holds at all 64 sites, every rate positive, the clock at the negative body faster, `Σm = 1179/1673 > 0`, `Σmw = −6036480/8720209`, ledger exactly zero; the operator's determinant vanishes at the tuned `m_B` and not at `m_B + 1/10`; for an arbitrary positive `φ`: `Σm = 6158/165`, `Σmw = −1712/27`, both signs present.
+- Control: simplest member on a `6×6×6` torus — pair `(3, −2)t` at `t* = 1.529829` (closed form `1.529829`), triple `(3, −1, −3/2)t` at `t* = 0.802959`, positive lowest modes; closed form vs numerical root on tori of side 4, 6, 8 to six digits. Curvature member — least squares with per-unit-rate residuals and the mean length held: `0.031–0.129` (`c = 1`), falling only with inflation; sum rule equals the bond forms at every best point.

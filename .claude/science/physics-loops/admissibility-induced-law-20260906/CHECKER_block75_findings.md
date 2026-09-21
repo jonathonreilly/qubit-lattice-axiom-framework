@@ -1,0 +1,7 @@
+# Block 75 — control and findings (2026-09-21)
+
+1. Disjoint machinery (`specs/supervisor_control_block75_closed_lattice.py`): dense eigenvalues and root finding for the simplest member (the exact runner uses rational elimination and a closed form); a least-squares search for the curvature member (the exact runner uses the identity).
+2. **The first control was wrong in kind (supervisor).** It minimised the raw residual of the rates' equation, which is homogeneous in `N`; the optimiser drove `N` to `2e-5` and the script printed a zero residual beside the words "never zero". The identity was evaluated on that point and held (`0.147 = 0.147`), which put the fault in the control and not in the theorem. Reposed: residual per unit rate; the mean of `χ` held, because inflating every length is the other route by which the bodies become negligible (residual tends to zero, never attained). The same error as block 60's first refuting pass.
+3. **One identity instead of cases (supervisor).** The first derivation gave three necessary sum rules and a contradiction for two bodies; T1 closes every number, place and sign at once. The sum rules are kept as a remark.
+4. Finding folded: the note's Expected total was first 11; the runner has 12 checks.
+5. Scope kept: content that moves is outside (N1.1) — a relation from the probes queue suggests the two uses of T1 no longer cancel exactly with hop energy; not claimed either way.

@@ -1,0 +1,8 @@
+# Block 44 — refuting pass and findings (2026-09-20)
+
+1. Disjoint machinery: W1 the streaming bijection built explicitly over 1895400 (configuration, record) pairs (three records, `3³` torus); W2 the momentum flux across a bond by enumeration of its 49 states; W3, W4 the sphere menu's identities symbolically and by exact integration; W5 an L-shaped reflecting body. All pass.
+2. Finding folded (the decisive one): the first simulator scattered head-on pairs when an attempt was blocked. Exact enumeration showed that rule does not keep the uniform measure stationary (486 of 12636 configurations unbalanced; the back-to-back pair receives `1/3` where it sends `2`). The clause was cleaned (pass-through exchange; scattering on a bond clock, uniform on the momentum class), the counterexamples became T2's second half and two mutations, and every executed number was redone with the clean clause. The first force batch was discarded.
+3. Finding folded: a silent floating-point number inside an "exact" check — an integer zero divided by two. Inputs are now wrapped as fractions and the check asserts the type. The literal scan cannot see this; type assertions can.
+4. Finding folded: the classical name for the conservation equations had crept into theorem sections; removed (F4).
+5. Finding folded: the first description of the six-axis wave as weakly damped was wrong at the wavelength used; corrected.
+6. Stated limits: no hydrodynamic limit is proved; the force law is executed at one density, one body size, one scattering rate; the scaling with record count and the drag on a moving body are not executed; the scattering re-draws contents, which the Record axiom's locking sentence does not obviously allow.

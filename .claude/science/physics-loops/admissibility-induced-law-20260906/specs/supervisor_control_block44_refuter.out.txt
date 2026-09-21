@@ -1,0 +1,6 @@
+PASS: W2 momentum crossing one bond per unit time, by enumeration of the bond's 49 states and its streaming events in an isotropic product state: (rho/3, 0, 0) at rho = 3/10, 1/2, 4/5
+PASS: W3 symbolically, |P/2 +- r w|^2 = |P|^2/4 + r^2 |w|^2 = 1 when |w| = 1, w.P = 0 and r^2 = 1 - |P|^2/4; the sum of the pair is P by construction
+PASS: W4 the uniform sphere has <s_i s_j> = delta_ij/3 (exact integration), so the sphere menu's momentum flux is rho/(3 sqrt 3) and the linearized speed squared is (1 - rho)/9
+PASS: W5 an L-shaped reflecting body of three sites on the 4^3 torus, two records (65880 configurations): inflow equals outflow everywhere and the total mean force on the body is exactly zero
+PASS: W1 all 1895400 (configuration, record) pairs with three records on the 3^3 torus: the constructed streaming preimage runs forward to the configuration, and the map to (preimage, mover) is one to one
+REFUTER TOTAL: FAIL=0

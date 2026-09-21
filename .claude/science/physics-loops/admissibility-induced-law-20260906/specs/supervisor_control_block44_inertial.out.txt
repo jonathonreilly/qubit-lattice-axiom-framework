@@ -1,0 +1,6 @@
+six menu, side 64, density 0.3, gamma 1.0, mode 1: fitted speed sqrt(w^2 + g^2)/k = 0.464 (w/k = 0.445, damping 0.0130 per tick); product-closure prediction 0.483;  amplitude every 30 ticks: +0.99 +0.28 -0.40 -0.22 +0.14 +0.13 -0.05 -0.08 -0.00 +0.04 +0.03
+six menu, side 64, density 0.3, gamma 1.0, mode 2: fitted speed sqrt(w^2 + g^2)/k = 0.421 (w/k = 0.335, damping 0.0500 per tick); product-closure prediction 0.483;  amplitude every 30 ticks: +1.00 -0.12 +0.01 +0.01 +0.00 +0.00 -0.00 +0.01 +0.01 +0.00 -0.02
+   53 s
+sphere menu, side 64, density 0.3, gamma 1.0, mode 1: fitted speed sqrt(w^2 + g^2)/k = 0.277 (w/k = 0.275, damping 0.0030 per tick); product-closure prediction 0.279;  amplitude every 30 ticks: +1.00 +0.66 -0.00 -0.55 -0.67 -0.39 +0.08 +0.41 +0.45 +0.22 -0.10
+sphere menu, side 64, density 0.3, gamma 1.0, mode 2: fitted speed sqrt(w^2 + g^2)/k = 0.278 (w/k = 0.270, damping 0.0130 per tick); product-closure prediction 0.279;  amplitude every 30 ticks: +0.99 +0.05 -0.47 +0.02 +0.22 -0.02 -0.10 +0.02 +0.05 -0.03 -0.02
+   89 s

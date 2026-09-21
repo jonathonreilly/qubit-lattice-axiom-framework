@@ -105,3 +105,4 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+# block44: "opened for review 2026-09-20; records with inertia (content = direction of travel; supplied clause, frontier discovery): number and momentum conserved event by event, structureless equilibrium, pressure rho/3, wave speed squared (1-rho)/3 and (1-rho)/9, no force without capture or emission; executed: sound at the predicted speed, capturing bodies attract with F r^2 = 36 +- 2 over separations 12 to 40, emitters repel; runner 15/0, ten mutations in family; nothing adopted"

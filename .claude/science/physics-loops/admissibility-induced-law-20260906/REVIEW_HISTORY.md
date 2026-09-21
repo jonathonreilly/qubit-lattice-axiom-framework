@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-20 block 44 — author checks (not a review PASS)
+Exact enumeration overturned the first simulator's collision rule before anything was written; the clause was cleaned and all executed numbers redone. Refuting pass with an explicit bijection, bond-event enumeration and symbolic identities (five witnesses, all pass). A silent floating-point contamination in an exact check found and closed with a type assertion. Theorem text re-read against the runner before the gates. Census 10/10 in family.

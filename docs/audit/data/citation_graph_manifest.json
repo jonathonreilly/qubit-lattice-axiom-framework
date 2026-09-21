@@ -1,6 +1,6 @@
 {
  "edge_count": 13606,
- "node_count": 6026,
+ "node_count": 6027,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -745,6 +745,10 @@
   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
+  },
+  "admissibility_rule_records_with_inertia_content_as_direction_of_travel_conserved_momentum_structureless_equilibrium_sound_speed_forces_need_capture_or_emission_bounded_theorem_note_2026-09-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8188f46b334d",

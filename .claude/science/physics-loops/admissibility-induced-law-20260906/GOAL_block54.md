@@ -1,0 +1,11 @@
+# Block 54 — contract (2026-09-21; second block of the source-link direction)
+
+**Owner's instruction.** "ok lets work the source link into the amplitude layer". Block 53 (PR #8568) ended: a record whose waiting time is timed by the local clock drifts; acceleration needs a record whose phase is timed by the local clock.
+
+**Foundations.** The axioms memo and the parked-decisions registry were read in full on 2026-09-21 (block 53). Facts that shape this block: the memo contains no amplitude dynamics and no time metric; the Admissibility axiom names translations and PROPER rotations only (inversion is not among its symmetries); the site algebra is `M₂(ℂ)`; the `M₄(ℂ)` enlargement and the statistical bridge are parked and are not touched.
+
+**Lens pass (supervisor, in writing; the campaign's no-subagent rule).** Foundations: inversion is an added symmetry, so the inversion argument for the generator must be conditional and the long-wavelength conclusions stated without it; an amplitude is not an axiom object; a mean position is a descriptor, not a reading. Rigour: a uniform gradient over the whole lattice has unbounded rates and rays that escape at the time `1/g`, so the exact identity is algebraic on finitely supported amplitudes and the statement about the evolution is for a slab; no "iff" in the title. Lattice: eight zero-energy points; the orientation factor `cos 2k_j`. Comparator: a field of clock rates alone gives the fall of slow bodies in full and half of the comparator's bending of light; record under Prior art and Boundaries. Strategy: the packet's supplied test response follows from the clause; the open piece of the source link is whether the amplitude's energy is a source (action and reaction).
+
+**Exact target.** T1 the admissible generators and the walk; T2 the clocked generator and what is conserved; T3 the exact force identity in a uniform gradient; T4 the law of fall for rays and what ties weight to inertia. Executed and not claimed: the passage from the walk to its rays.
+
+**Boundaries fixed in advance.** Objects and clause supplied; inversion extra; no rest energy for one walker and no larger site algebra; the ray limit not proved; where records form not addressed; the rate field given; lengths not addressed; correspondence of form only; nothing adopted.

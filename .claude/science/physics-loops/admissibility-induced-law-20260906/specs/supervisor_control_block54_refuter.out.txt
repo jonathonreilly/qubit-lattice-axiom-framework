@@ -1,0 +1,6 @@
+PASS: W1 explicit unitaries: 3 free real parameters; the content part of the symbol is 2*i_6_11 * sigma_j sin k_j and the scalar part r_0_11 + 2*r_6_11*cos(k1) + 2*r_6_11*cos(k2) + 2*r_6_11*cos(k3); inversion with the content reversed leaves 1 parameter (the walk survives: True); with the content untouched 2 parameters (the walk survives: False)
+PASS: W2 symbolic, general eps(k) and u(x): dv_j/dt = -w^2 sum_l d_j d_l (eps^2/2) d_l u + 2 (v . grad u) v_j identically; for eps^2 = m^2 + sum sin^2 k_j the matrix is diag(cos 2 k_j), free of m
+PASS: W3 random rate field on the 3x3x3 torus: exp(-i w H t) changes sum |psi|^2 / w by 7.8e-16 and sum |psi|^2 by 1.9e-01; the spectrum of w H is real and equals that of sqrt(w) H sqrt(w) to 1.8e-14
+PASS: W4 slab with a uniform gradient: |U(t) T_a psi - T_a U(lambda_a t) psi| = 3.3e-15; <T_a>(t) against <psi| T_a exp(i (lambda_a - 1) H_w t) |psi>: difference 5.6e-16 (a = 37, lambda_a = 1.0768)
+PASS: W5 reduced walk against a cloud of rays (g = 0.002, T = 100): rest energy 0.2, k0 0.0: walk -9.844, rays -9.842; rest energy 0.6, k0 0.0: walk -9.865, rays -9.864; rest energy 0.2, k0 0.15: walk +55.166, rays +55.164; the two packets at rest fall alike to 2.1e-03
+REFUTER TOTAL: PASS=5 FAIL=0

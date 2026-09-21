@@ -1,0 +1,25 @@
+(a) packets at rest along the gradient, g = 0.002, T = 100.0, packet width 40; long-wavelength value -g T^2/2 = -10.0000
+    rest energy 0.05, transverse direction (1,0): fall of the walk -8.9626; of the cloud of rays -8.9673; walk over cloud 0.9995; norm 1.00000000; weight at the ends 3e-34
+    rest energy 0.10, transverse direction (1,0): fall of the walk -9.6675; of the cloud of rays -9.6692; walk over cloud 0.9998; norm 1.00000000; weight at the ends 2e-34
+    rest energy 0.20, transverse direction (1,0): fall of the walk -9.8578; of the cloud of rays -9.8589; walk over cloud 0.9999; norm 1.00000000; weight at the ends 2e-34
+    rest energy 0.40, transverse direction (1,0): fall of the walk -9.8886; of the cloud of rays -9.8896; walk over cloud 0.9999; norm 1.00000000; weight at the ends 3e-34
+    rest energy 0.80, transverse direction (1,0): fall of the walk -9.8343; of the cloud of rays -9.8353; walk over cloud 0.9999; norm 1.00000000; weight at the ends 1e-34
+    rest energy 0.40, transverse direction (1,1): fall of the walk -9.8694; of the cloud of rays -9.8703; walk over cloud 0.9999; norm 1.00000000; weight at the ends 5e-35
+    rest energy 0.40, transverse direction (3,4): fall of the walk -9.8657; of the cloud of rays -9.8666; walk over cloud 0.9999; norm 1.00000000; weight at the ends 2e-34
+    largest |walk/cloud - 1| = 5.2e-04; falls for rest energies 0.2 to 0.8 agree to 0.054 sites of 9.89
+(b) packets moving along the gradient, rest energy 0.05, g = 0.001, T = 200.0, packet width 100
+    starting up   at 0.300 of the local limit: walk  +41.1804; cloud  +41.1815; walk over cloud 1.0000; excess over uniform motion  -18.820 (long-wavelength rule -(g/2)(1 - 2 v^2) T^2 = -16.400)
+    starting down at 0.300 of the local limit: walk  -73.9862; cloud  -73.9939; walk over cloud 0.9999; excess over uniform motion  -13.986 (long-wavelength rule -(g/2)(1 - 2 v^2) T^2 = -16.400)
+    starting up   at 0.500 of the local limit: walk  +86.7018; cloud  +86.7055; walk over cloud 1.0000; excess over uniform motion  -13.298 (long-wavelength rule -(g/2)(1 - 2 v^2) T^2 = -10.000)
+    starting down at 0.500 of the local limit: walk -107.4595; cloud -107.4677; walk over cloud 0.9999; excess over uniform motion   -7.459 (long-wavelength rule -(g/2)(1 - 2 v^2) T^2 = -10.000)
+    starting up   at 0.707 of the local limit: walk +139.2875; cloud +139.2930; walk over cloud 1.0000; excess over uniform motion   -2.134 (long-wavelength rule -(g/2)(1 - 2 v^2) T^2 =  -0.000)
+    starting down at 0.707 of the local limit: walk -140.1295; cloud -140.1366; walk over cloud 0.9999; excess over uniform motion   +1.292 (long-wavelength rule -(g/2)(1 - 2 v^2) T^2 =  -0.000)
+    starting up   at 0.850 of the local limit: walk +179.5004; cloud +179.5084; walk over cloud 1.0000; excess over uniform motion   +9.500 (long-wavelength rule -(g/2)(1 - 2 v^2) T^2 =  +8.900)
+    starting down at 0.850 of the local limit: walk -161.4195; cloud -161.4254; walk over cloud 1.0000; excess over uniform motion   +8.581 (long-wavelength rule -(g/2)(1 - 2 v^2) T^2 =  +8.900)
+(c) no transverse motion (no rest energy): the packet moves at the local limiting speed w
+    moving up  : walk  +247.412; cloud  +247.426; walk over cloud 0.9999; a ray with dz/dt = w exactly (wave vector tending to zero) would give  +255.413
+    moving down: walk  -159.234; cloud  -159.237; walk over cloud 1.0000; a ray with dz/dt = w exactly (wave vector tending to zero) would give  -168.236
+(d) the time-scaling identity in a uniform gradient: the same packet moved up by a sites evolves exp(g a) times faster
+    a =   1: |U(t) T_a psi - T_a U(exp(g a) t) psi| = 4.2e-15; with the time not rescaled 3.5e-02
+    a =  10: |U(t) T_a psi - T_a U(exp(g a) t) psi| = 3.9e-15; with the time not rescaled 3.5e-01
+    a = 100: |U(t) T_a psi - T_a U(exp(g a) t) psi| = 6.2e-15; with the time not rescaled 1.9e+00

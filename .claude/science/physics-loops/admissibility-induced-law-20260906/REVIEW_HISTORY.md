@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 54 — author checks (not a review PASS)
+Written lens pass by the supervisor: inversion is not among the axiom's symmetries (T1 split); a uniform gradient everywhere has unbounded rates and escaping rays (T3 for a slab); an "iff" removed from the title. Refuting pass with explicit unitaries and symbolic matrices, symbolic ray calculus, dense exponentials and sparse propagation against clouds of rays (5/0). Four control artefacts folded (reference position; packet size; group velocity off the wave vector; walls). Census 12/12 in family.

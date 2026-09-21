@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_phase_timed_by_the_local_clock_every_packet_falls_towards_slow_clocks_force_is_energy_times_gradient_2026_09_21.py
+runner_sha256: a96f7a32b411da97230e29fa9051f30d44128db5f711850576b4a2bc4eab6129
+input_fingerprint_sha256: 24d0718928063db528190c333436981a701f9d46c5c71cda687392faf9208e99
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.93
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clause works in that opening)
+PASS: A3 weak-field packet on main: its third supplied piece is the test response S_test = L_test (1 - phi): a path's phase reduced in proportion to the field
+PASS: B1 T1: the three content matrices anticommute and square to one, so the walk H = sum_j sigma_j D_j squares to the scalar sum_j D_j^2 (checked on the infinite lattice: H(H delta) touches only the second neighbours along the axes and leaves the content alone): energies +-sqrt(sum_j sin^2 k_j)
+PASS: B2 T1: nearest-neighbour generators sum_e A_e T_e that are hermitian and covariant under the 24 rotations form a real space of dimension 3 (a_0, a, beta); with lattice inversion a symmetry of the evolution and the content reversed by it (an antiunitary map), dimension 1, spanned by the walk A_(+-e_j) = +-(i/2) sigma_j; with the content untouched by inversion, dimension 2 and the walk is excluded (beta = 0)
+PASS: B3 T1: the equations X sigma_j + sigma_j X = 0 (j = 1, 2, 3) have rank 8 of 8: only X = 0.  So no 2x2 matrix can serve as a rest energy for one walker (nothing anticommutes with the walk), and no linear map reverses all three content matrices; the antiunitary map sigma_2 conj(.) sigma_2 does
+PASS: B4 T1: the velocity operator of the walk is i[H, X_j] = sigma_j (T_j + T_j^dagger)/2: at long wavelength the velocity IS the content (block 44's 'content = direction of travel' is its expectation value), and the limiting speed is one site per unit time
+PASS: C1 T2: on the 3x3x3 torus with a rational rate field, the clause's generator w H is self-adjoint for the inner product sum_x conj(phi_x) psi_x / w_x and NOT for the plain one: the conserved quantity of an amplitude timed by local clocks is sum_x |psi_x|^2 / w_x
+PASS: C2 T2: w^(-1/2) (w H) w^(1/2) = sqrt(w) H sqrt(w) =: H_w, hermitian: every bond carries the amplitude sqrt(w_x w_y); chi = psi / sqrt(w) is the variable with the plain norm; timing by the sending site, H w, is similar to the same H_w (conserved sum |psi|^2 w): the three timings differ by which variable is called the amplitude, not in the motion
+PASS: C3 T2: multiplying every rate by t multiplies H_w by t (the bond amplitude sqrt(w_x w_y), like any bond timing of degree one such as (w_x + w_y)/2, scales by t): a change of the unit of time and nothing else, as 'only ratios of rates mean anything' demands
+PASS: D1 T3: in a uniform gradient, w(x + a) = lambda_a w(x) (here w = 9^x1 4^x3), H_w T_a = lambda_a T_a H_w exactly on the infinite lattice, for shifts along, across and oblique to the gradient
+PASS: D2 T3: H_w^3 T_a = lambda_a^3 T_a H_w^3, and so for every power: U_w(t) T_a = T_a U_w(lambda_a t) (the same packet moved up the gradient evolves faster by exactly the ratio of the clocks) and T_a(t) = T_a exp(i (lambda_a - 1) H_w t): in a state of energy E the wave vector along a falls at the constant rate (lambda_a - 1) E
+PASS: D3 T3: the identity holds for the bond timing (w_x + w_y)/2 too: it rests on the degree-one scaling of the timing, not on the symmetrization chosen
+PASS: D4 T3 (control): for sqrt(w) = 1 + x3^2 the two sides differ by site-dependent factors [Fraction(5, 1), Fraction(25, 4)]: no time rescaling relates a packet to its translate; the exact identity is a property of uniform gradients
+PASS: E1 T4: at 6 rational points of the walk's energy surface (with and without rest energy, a general gradient, both signs of the group velocity) the ray equations of E = w(x) eps(k) give exactly dv_j/dt = -w^2 cos(2 k_j) d_j u + 2 (v . grad u) v_j: the rest energy and the energy do not appear
+PASS: E2 T4: a ray with no motion along an axis gradient falls at exactly -w^2 g for transverse 'rest energies' 3/5, 5/13, 24/25, 8/17 alike (1 distinct value): bodies of different energy fall together
+PASS: E3 T4: for eps^2 = m^2 + k^2 the second derivatives of eps^2/2 form the unit matrix and dv/dt = -w^2 grad u + 2 (v . grad u) v: along the gradient a ray at 3/5 of the limiting speed is accelerated by -(7/25) g, at 4/5 by +(7/25) g; the sign changes at v = w/sqrt 2
+PASS: E4 T4: with a constant e_0 = 1/2 added to the energy (the term a_0 + 6a of T1's family), a transverse ray of wave number 1/2 falls 2 times faster than -g: the fall would depend on the wave number as 1 + e_0/|k|; universality needs the walk's spectrum to pass through zero energy at zero wave vector
+PASS: E5 T4: for the generator with beta = 0 (content not coupled to motion), eps = e_0 + k^2/(2M), a ray at rest falls at (e_0/M) times -g: 3/2, 1, 1/10 for (e_0, M) = (3, 2), (1, 1), (1/2, 5); weight and inertia are two separate numbers there, while the walk fixes their ratio at one for every packet
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the three content matrices' products; the 24 rotations acting on the 56 real coefficients of a nearest-neighbour generator, with each of the four behaviours under inversion; the eight real equations for a matrix anticommuting with all three content matrices
+per_site: executed — the walk, its square and its velocity operator applied to single-site amplitudes on the infinite lattice; the translation identity at three sites, four shifts and two contents, with its third power
+per_mode: executed — the ray equations at rational points of the energy surface with exact second-order jets: the walk with and without rest energy, the long-wavelength dispersion at 3/5 and 4/5 of the limiting speed, an energy offset
+per_block: executed — the clocked generator on the 3x3x3 torus with a rational rate field: self-adjointness for the weighted inner product and not for the plain one, similarity to the symmetrized form, scaling of the bond timing
+lattice_wide: T1 is a statement about every translation-invariant, hermitian, rotation-covariant nearest-neighbour generator on two-component amplitudes; T2 about every positive rate field; T3 about every uniform gradient and every state; T4 about rays of any energy function of the form w(x) eps(k); the passage from the walk to its rays is executed in the controls, not proved; the clause itself, the rate field, the formation of records from the amplitude and any rest energy of one walker are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: an amplitude whose phase is timed by the local clock — the generator is forced to the walk with the qubit as coin when inversion reverses the content; the clocked generator conserves sum |psi|^2 / w; in a uniform gradient the wave vector falls at the rate (clock ratio - 1) x energy in every state; rays fall towards slow clocks at a rate that depends on their velocity alone because the walk squares to a scalar
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

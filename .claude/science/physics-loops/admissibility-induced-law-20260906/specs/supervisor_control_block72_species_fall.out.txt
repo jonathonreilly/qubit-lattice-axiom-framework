@@ -1,0 +1,9 @@
+[W1] 5x6x7 torus, random rate field, 10 eigenvectors of H_w, j = 1, 2, 3: largest |div J[phi psi] + f| = 5.7e-17; largest |div K[phi psi] + fP| = 2.7e-17 (largest |fP| at a site 3.4e-03)
+
+[W2] ring of 2048 sites, u = 0.2 sin(2 pi x/N), packets of width 60 at the steepest point, coin along sigma_3 (H = S on the upper component):
+     q = 0.2, species 0: energy +0.1988; reach two F/W = +0.9800 (cos k = +0.9801); reach three FP/W = +0.9207 (cos 2k = +0.9211); [W3] site by site: f/(e du) in [+0.980, +0.981], fP/(e du) in [+0.920, +0.921]
+     q = 0.2, species 1: energy -0.1988; reach two F/W = -0.9800 (cos k = -0.9801); reach three FP/W = +0.9207 (cos 2k = +0.9211); [W3] site by site: f/(e du) in [-0.981, -0.980], fP/(e du) in [+0.920, +0.921]
+     q = 0.5, species 0: energy +0.4797; reach two F/W = +0.8775 (cos k = +0.8776); reach three FP/W = +0.5400 (cos 2k = +0.5403); [W3] site by site: f/(e du) in [+0.877, +0.878], fP/(e du) in [+0.540, +0.540]
+     q = 0.5, species 1: energy -0.4797; reach two F/W = -0.8775 (cos k = -0.8776); reach three FP/W = +0.5400 (cos 2k = +0.5403); [W3] site by site: f/(e du) in [-0.878, -0.877], fP/(e du) in [+0.540, +0.540]
+     q = 0.9, species 0: energy +0.7838; reach two F/W = +0.6215 (cos k = +0.6216); reach three FP/W = -0.2273 (cos 2k = -0.2272); [W3] site by site: f/(e du) in [+0.621, +0.622], fP/(e du) in [-0.227, -0.227]
+     q = 0.9, species 1: energy -0.7838; reach two F/W = -0.6215 (cos k = -0.6216); reach three FP/W = -0.2273 (cos 2k = -0.2272); [W3] site by site: f/(e du) in [-0.622, -0.621], fP/(e du) in [-0.227, -0.227]

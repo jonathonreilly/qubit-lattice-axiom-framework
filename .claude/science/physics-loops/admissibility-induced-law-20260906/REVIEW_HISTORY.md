@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 72 — author checks (not a review PASS)
+Written lens pass by the supervisor. Block 66's theorems re-read before writing. T3(a) checked on two independent legs (exact map + direct expansion for a staggered amplitude). The control reports the larger lattice correction of reach three beside its merit. Census 8/8 in family, run before the Review record's sentence about it was kept. No corrections after the draft.

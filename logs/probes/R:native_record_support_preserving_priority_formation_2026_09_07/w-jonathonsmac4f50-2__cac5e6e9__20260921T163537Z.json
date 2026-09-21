@@ -1,0 +1,36 @@
+{
+ "task": "R:native_record_support_preserving_priority_formation_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_record_support_preserving_priority_formation_2026_09_07.py",
+ "seed": 8537,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163537Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=72 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5cc7e3e25bb9b4daf1093c5fec890ac62b8f795cc4288dfaeb1ad1fe436f9a2d",
+ "stdout_tail": "PASS: 72 exact assertions\nper_element: enumerated all six adverse center outcomes and 55987 ordered neighbor menus; checked positive-odds exterior repair\nper_site: checked all four sites of the open square and every recorded site after both exterior-repair appends\nper_mode: checked and not executed \u2014 no spectral-mode claim belongs to this classical formation test\nper_block: normalized all 24 orders on 1296 configurations for each of two rules; verified exact TV and differing-count discriminator\nlattice_wide: checked and not executed \u2014 infinite-lattice existence follows from the written factorial ancestor proof, not finite enumeration\nsource_sha256: 80d8e0264f8dcbe6bb655b2b6e6e4ce8490a876cfd383bf3bf54a7cb0c0e6da6\nTOTAL: PASS=72 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165032Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

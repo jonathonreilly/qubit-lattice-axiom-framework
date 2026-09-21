@@ -1,0 +1,45 @@
+{
+  "checks": 2983,
+  "phase_result": {
+    "status": "PASS",
+    "checks": 1057,
+    "graph": {
+      "vertices": 64,
+      "edges": 192
+    },
+    "layers": [
+      {
+        "depth": 0,
+        "states": 1,
+        "degree6": 0,
+        "degree8": 1
+      },
+      {
+        "depth": 1,
+        "states": 8,
+        "degree6": 4,
+        "degree8": 4
+      },
+      {
+        "depth": 2,
+        "states": 34,
+        "degree6": 0,
+        "degree8": 34
+      }
+    ],
+    "seen_including_next": 195,
+    "unordered_frame_nonnegative_hop_cases": 141,
+    "seconds": 0.02144395897630602,
+    "peak_MiB": 20.921875,
+    "source_sha256": {
+      "scripts/native_rk_charge_ordered_holes_2026_09_08.py": "3a881f6d5e47e45b25f0c2ab71b83865c185c64c5cc628705af6613d3fbf6482",
+      "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+    },
+    "scope": "bounded native phase neighborhood, not allD2 configuration census"
+  },
+  "common_neighbor_pairs": 2016,
+  "seed_edge_bijection_cases": 192,
+  "charged_states": 195,
+  "seconds": 0.06665354198776186,
+  "scope": "native phase helper imported explicitly; independent combinatorial predicates, not fullD2census"
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:native_rk_charge_counting_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_rk_charge_counting_2026_09_08.py",
+ "seed": 8538,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163538Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d5c8e402a5da60221deb2edb28941a36c99222661e1c16fc741c2785a2f3d9f0",
+ "stdout_tail": "{\n  \"checks\": 2983,\n  \"phase_result\": {\n    \"status\": \"PASS\",\n    \"checks\": 1057,\n    \"graph\": {\n      \"vertices\": 64,\n      \"edges\": 192\n    },\n    \"layers\": [\n      {\n        \"depth\": 0,\n        \"states\": 1,\n        \"degree6\": 0,\n        \"degree8\": 1\n      },\n      {\n        \"depth\": 1,\n        \"states\": 8,\n        \"degree6\": 4,\n        \"degree8\": 4\n      },\n      {\n        \"depth\": 2,\n        \"states\": 34,\n        \"degree6\": 0,\n        \"degree8\": 34\n      }\n    ],\n    \"seen_including_next\": 195,\n    \"unordered_frame_nonnegative_hop_cases\": 141,\n    \"seconds\": 0.02144395897630602,\n    \"peak_MiB\": 20.921875,\n    \"source_sha256\": {\n      \"scripts/native_rk_charge_ordered_holes_2026_09_08.py\": \"3a881f6d5e47e45b25f0c2ab71b83865c185c64c5cc628705af6613d3fbf6482\",\n      \"docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md\": \"46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9\"\n    },\n    \"scope\": \"bounded native phase neighborhood, not allD2 configuration census\"\n  },\n  \"common_neighbor_pairs\": 2016,\n  \"seed_edge_bijection_cases\": 192,\n  \"charged_states\": 195,\n  \"seconds\": 0.06665354198776186,\n  \"scope\": \"native phase helper imported explicitly; independent combinatorial predicates, not fullD2census\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165033Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:native_local_ring_matrix_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_local_ring_matrix_2026_09_08.py",
+ "seed": 8530,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163530Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6371388e869f096c4a3b3f779d4b839f025415c33835dfde32ff57a9c8b24a42",
+ "stdout_tail": "(7, 4)\": \"-21\",\n      \"(13, 11)\": \"-21\",\n      \"(13, 14)\": \"21\",\n      \"(13, 1)\": \"21\",\n      \"(13, 4)\": \"21\",\n      \"(15, 15)\": \"693/16\",\n      \"(15, 0)\": \"651/16\",\n      \"(11, 7)\": \"21\",\n      \"(11, 13)\": \"-21\",\n      \"(11, 2)\": \"21\",\n      \"(11, 8)\": \"21\",\n      \"(14, 7)\": \"-21\",\n      \"(14, 13)\": \"21\",\n      \"(14, 2)\": \"-21\",\n      \"(14, 8)\": \"-21\"\n    },\n    {},\n    {\n      \"(1, 2)\": \"66\",\n      \"(1, 8)\": \"66\",\n      \"(1, 7)\": \"66\",\n      \"(1, 13)\": \"-66\",\n      \"(2, 1)\": \"66\",\n      \"(2, 4)\": \"66\",\n      \"(2, 11)\": \"-66\",\n      \"(2, 14)\": \"66\",\n      \"(4, 2)\": \"66\",\n      \"(4, 8)\": \"66\",\n      \"(4, 7)\": \"66\",\n      \"(4, 13)\": \"-66\",\n      \"(8, 1)\": \"66\",\n      \"(8, 4)\": \"66\",\n      \"(8, 11)\": \"-66\",\n      \"(8, 14)\": \"66\",\n      \"(0, 0)\": \"-2145/16\",\n      \"(0, 15)\": \"-2079/16\",\n      \"(5, 10)\": \"-2079/16\",\n      \"(5, 5)\": \"2145/16\",\n      \"(10, 5)\": \"-2079/16\",\n      \"(10, 10)\": \"2145/16\",\n      \"(7, 11)\": \"-66\",\n      \"(7, 14)\": \"66\",\n      \"(7, 1)\": \"66\",\n      \"(7, 4)\": \"66\",\n      \"(13, 11)\": \"66\",\n      \"(13, 14)\": \"-66\",\n      \"(13, 1)\": \"-66\",\n      \"(13, 4)\": \"-66\",\n      \"(15, 15)\": \"-2145/16\",\n      \"(15, 0)\": \"-2079/16\",\n      \"(11, 7)\": \"-66\",\n      \"(11, 13)\": \"66\",\n      \"(11, 2)\": \"-66\",\n      \"(11, 8)\": \"-66\",\n      \"(14, 7)\": \"66\",\n      \"(14, 13)\": \"-66\",\n      \"(14, 2)\": \"66\",\n      \"(14, 8)\": \"66\"\n    }\n  ],\n  \"seconds\": 3.119472082995344,\n  \"rss_mib\": 23.265625,\n  \"source_sha256\": \"535d6947efc300ac924291a76ebe714289f8d84b5a5760aa3a80232e8282504d\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165032Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

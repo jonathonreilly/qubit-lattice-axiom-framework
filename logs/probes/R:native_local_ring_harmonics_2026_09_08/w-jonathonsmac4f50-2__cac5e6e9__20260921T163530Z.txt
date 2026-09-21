@@ -1,0 +1,37 @@
+{
+  "checks": 10917,
+  "frequency_counts": {
+    "-5": 2,
+    "-4": 20,
+    "-3": 90,
+    "-2": 240,
+    "-1": 420,
+    "0": 504,
+    "1": 420,
+    "2": 240,
+    "3": 90,
+    "4": 20,
+    "5": 2
+  },
+  "geometry": [
+    {
+      "L": 4,
+      "vertices": 64,
+      "edges": 192,
+      "max_cells": 7,
+      "max_cell_overlap": 21,
+      "max_physical_overlap": 11
+    },
+    {
+      "L": 6,
+      "vertices": 216,
+      "edges": 648,
+      "max_cells": 7,
+      "max_cell_overlap": 21,
+      "max_physical_overlap": 11
+    }
+  ],
+  "seconds": 0.013868541020201519,
+  "rss_mib": 21.78125,
+  "source_sha256": "481755120b78c5ff633e1d2c726bb6b84e396c8fe9a9a6ed7ff016bca80a35f9"
+}

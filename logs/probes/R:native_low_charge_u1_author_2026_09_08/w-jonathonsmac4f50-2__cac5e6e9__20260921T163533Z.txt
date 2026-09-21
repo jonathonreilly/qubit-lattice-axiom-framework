@@ -1,0 +1,27 @@
+{
+  "PASS": true,
+  "physical_configurations": 24,
+  "D_sectors": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    64
+  ],
+  "native_hop_columns": 256,
+  "native_ring_columns": 2348,
+  "local_species_CAR_columns": 4860,
+  "missing_hole_minus_rejected": 256,
+  "seconds": 0.20425420798710547,
+  "rss_MiB": 21.4375,
+  "fixture_sha": "f8684324f4dc90e3d334a170f42b6a91accbf3b8166cbfcb3dfd99b7bbf6738e",
+  "scope": "All selected native columns, not fullL4 census; site-major CAR all6-site label columns.",
+  "executed_predicates": 8003,
+  "portable_seconds": 0.20783987498725764,
+  "portable_rss_mib": 21.578125
+}

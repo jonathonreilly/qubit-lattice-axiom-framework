@@ -1,0 +1,32 @@
+{
+ "task": "R:native_low_charge_u1_absolute_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_low_charge_u1_absolute_2026_09_08.py",
+ "seed": 8533,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163533Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "265f658cd0e1c1516cfd6cc8a3ab9e0527f7f36886e8a7c37ae6de265845d960",
+ "stdout_tail": "{\n  \"absolute_basis_columns\": 510,\n  \"old_identity_failures\": 255,\n  \"correct_s0\": \"(-1)^sumI\",\n  \"tested_map_optional_block_phase\": \"(-1)^[D(D-1)/2]\",\n  \"PASS\": true,\n  \"executed_predicates\": 512,\n  \"portable_seconds\": 0.0025787079939618707,\n  \"portable_rss_mib\": 18.375\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165033Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

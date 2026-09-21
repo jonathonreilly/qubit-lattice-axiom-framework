@@ -1,0 +1,10 @@
+{
+  "absolute_basis_columns": 510,
+  "old_identity_failures": 255,
+  "correct_s0": "(-1)^sumI",
+  "tested_map_optional_block_phase": "(-1)^[D(D-1)/2]",
+  "PASS": true,
+  "executed_predicates": 512,
+  "portable_seconds": 0.0025787079939618707,
+  "portable_rss_mib": 18.375
+}

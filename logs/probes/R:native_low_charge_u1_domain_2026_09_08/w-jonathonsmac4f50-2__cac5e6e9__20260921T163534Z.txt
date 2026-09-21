@@ -1,0 +1,2181 @@
+{
+  "executed_predicates": 358,
+  "star_rows": [
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 3,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -3,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 0,
+      "labels": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": -1,
+      "labels": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 1,
+      "labels": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "epsilon": -1,
+      "divergence": -2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "epsilon": 1,
+      "divergence": 2,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "epsilon": -1,
+      "divergence": -3,
+      "labels": []
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "epsilon": 1,
+      "divergence": 3,
+      "labels": []
+    }
+  ],
+  "neutral_without_no_double": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "portable_seconds": 0.002664500003447756,
+  "portable_rss_mib": 17.734375
+}

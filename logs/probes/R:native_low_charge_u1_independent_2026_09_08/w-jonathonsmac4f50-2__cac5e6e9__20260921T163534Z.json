@@ -1,0 +1,32 @@
+{
+ "task": "R:native_low_charge_u1_independent_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_low_charge_u1_independent_2026_09_08.py",
+ "seed": 8534,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163534Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b921d5aa2e9726acaea45aaa8783203e471bd3b7d084593234e5596831e139ff",
+ "stdout_tail": "{\n  \"hole_basis_subsets\": 510,\n  \"old_basis_formula_failures\": 255,\n  \"relabeled_native_configurations\": 22,\n  \"D_sectors\": [\n    0,\n    2,\n    4,\n    6,\n    8,\n    10,\n    12,\n    14,\n    16,\n    64\n  ],\n  \"native_hop_columns\": 400,\n  \"ring_columns\": 2096,\n  \"missing_minus_failures\": 400,\n  \"seconds\": 0.2096928340033628,\n  \"rss_mib\": 18.859375,\n  \"scope\": \"finite different-order native controls; no full global census\",\n  \"executed_predicates\": 22359,\n  \"portable_seconds\": 0.21151887500309385,\n  \"portable_rss_mib\": 18.890625\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165033Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

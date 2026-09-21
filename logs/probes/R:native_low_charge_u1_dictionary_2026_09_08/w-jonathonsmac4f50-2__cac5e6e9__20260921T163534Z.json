@@ -1,0 +1,36 @@
+{
+ "task": "R:native_low_charge_u1_dictionary_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_low_charge_u1_dictionary_2026_09_08.py",
+ "seed": 8534,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163534Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31232 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "778535273fc630a39d3bdf6f940558c2dcf17ce479954e35d6bebc2f9f3f507a",
+ "stdout_tail": "4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd\",\n    \"scripts/native_low_charge_u1_author_2026_09_08.py\": \"5b905ffed185e62f3644282271b237b44e1f3927c5c44b2fb25c80deacb53587\",\n    \"scripts/native_low_charge_u1_independent_2026_09_08.py\": \"d595216b21c279463caa7b3b7b9edea87943df1095d65337e7142607b96f3ed9\",\n    \"scripts/native_low_charge_u1_absolute_2026_09_08.py\": \"eb607259b4a71b4f44c6e7ad941a7fd2ffda4dcff99207d1cb4d41ba52dd6095\",\n    \"scripts/native_low_charge_u1_domain_2026_09_08.py\": \"23b65813acd5a87e8e6817364058830fa0fb807514e473a862d0012cca7e6cf6\",\n    \"docs/work_history/repo/review_feedback/pr8042-native-u1-dictionary-evidence/inputs/GLOBAL_D4_SEED.json\": \"f8684324f4dc90e3d334a170f42b6a91accbf3b8166cbfcb3dfd99b7bbf6738e\"\n  },\n  \"scope\": \"Finite exact phase/domain controls; general intertwiner proof is separate. No audit status, physical electromagnetic identification or role retirement.\"\n}\nper_element: exact native hopping, gated ring and absolute Fock basis phases.\nper_site: full six-edge Gauss/no-double label controls on both sublattices.\nper_mode: site-major two-species CAR and all one-through-eight-mode hole subsets.\nper_block: selected actual L4 columns in both native order conventions, not a full census.\nlattice_wide: checked and not executed; analytical finite all-sector basis proof under the supplied restricted carrier, with no full lattice configuration census executed.\nTOTAL: PASS=31232 FAIL=0\nResources: 0.402059s, 24.094MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165033Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_low_charge_u1_dictionary_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:native_leading_ring_stoquastic_gauge_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_leading_ring_stoquastic_gauge_2026_09_08.py",
+ "seed": 8524,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163524Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6253 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "20e2dd306d7a5317a5a35ed296ffcc42867a35753b339534d11e71b9c0b4deab",
+ "stdout_tail": "-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md\": \"a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47\",\n    \"docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md\": \"c1cc8df7ae97504527fd26195e65670ad6ccf4e01982d0665040662b22ba0d7e\",\n    \"scripts/native_leading_ring_stoquastic_gauge_exact_2026_09_08.py\": \"5fd6b2b5886349d146727e1004c9ef5c5bd705107d5353e632dff76e23e65844\",\n    \"docs/NATIVE_SIXTH_OFFDIAGONAL_SIGN_OBSTRUCTION_NOTE_2026-09-08.md\": \"a5315490b08b3059a4f4f1320f70a0c3690ee3590b6b9910c1355e50278d7084\"\n  },\n  \"scope\": \"Leading H4 gauge, L4 winding extras and transformed coherent boundaries only.\"\n}\nper_element: executed literal native edge-toggle phases and background holonomies on supplied full-bit fixtures.\nper_site: finite L4 and L6 degree-three ice fixtures with the declared preparation faces and legal transitions.\nper_mode: coherent density-matrix and diagonal-readout transformation is analytical in the note, not executed by this helper.\nper_block: executed exact alternating cycle phase ratios, including 132 legal winding transitions.\nlattice_wide: the general even-torus gauge identity is analytical; this invocation executes only declared L4/L6 fixtures, not a phase or full-H equivalence test.\nTOTAL: PASS=6253 FAIL=0\nResources: 0.414914s, 22.672MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165033Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_leading_ring_stoquastic_gauge_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

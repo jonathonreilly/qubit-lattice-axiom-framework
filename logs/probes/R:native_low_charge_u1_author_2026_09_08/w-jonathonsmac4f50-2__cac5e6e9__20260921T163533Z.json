@@ -1,0 +1,32 @@
+{
+ "task": "R:native_low_charge_u1_author_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_low_charge_u1_author_2026_09_08.py",
+ "seed": 8533,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163533Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f2dcab22520208190ae1240b6aa0f7951a52e504ee7d4aebdd9156d2470e995",
+ "stdout_tail": "{\n  \"PASS\": true,\n  \"physical_configurations\": 24,\n  \"D_sectors\": [\n    0,\n    2,\n    4,\n    6,\n    8,\n    10,\n    12,\n    14,\n    16,\n    64\n  ],\n  \"native_hop_columns\": 256,\n  \"native_ring_columns\": 2348,\n  \"local_species_CAR_columns\": 4860,\n  \"missing_hole_minus_rejected\": 256,\n  \"seconds\": 0.20425420798710547,\n  \"rss_MiB\": 21.4375,\n  \"fixture_sha\": \"f8684324f4dc90e3d334a170f42b6a91accbf3b8166cbfcb3dfd99b7bbf6738e\",\n  \"scope\": \"All selected native columns, not fullL4 census; site-major CAR all6-site label columns.\",\n  \"executed_predicates\": 8003,\n  \"portable_seconds\": 0.20783987498725764,\n  \"portable_rss_mib\": 21.578125\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165032Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

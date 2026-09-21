@@ -1,0 +1,36 @@
+{
+ "task": "R:native_rho4_moment_certificates_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_rho4_moment_certificates_2026_09_09.py",
+ "seed": 8537,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cac5e6e9",
+ "started_utc": "20260921T163537Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=270 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "05f147e5b69b750b7259d8055ad694485d2de203de198859227b7b042c868bf9",
+ "stdout_tail": "58240936775254729690779889669681006276497102201868136317/6277101735386680763835789423207666416102355444464034512896\", \"357280117096906841211347486209311989404064879323008778385/784637716923335095479473677900958302012794430558004314112\"], \"mu\": [\"14987222182067066249792612284688107797317653374278592145663/6277101735386680763835789423207666416102355444464034512896\", \"7493611091033533124896306142352768066247639993368563517921/3138550867693340381917894711603833208051177722232017256448\"], \"nu\": [\"98209158718209420234201748092515684836748940857425204853791/6277101735386680763835789423207666416102355444464034512896\", \"98209158718209420234201748092623948429135136084821056971299/6277101735386680763835789423207666416102355444464034512896\"]}, \"semantic_mutants_rejected\": [\"wrong geometric remainder sign\", \"nu subtraction omitted\", \"target\", \"width\", \"interval\", \"interval\"], \"status\": \"PASS_COMPACT_IDENTITIES_AND_SAVED_BINDINGS\"}\nper_element: exact rational identities and saved endpoint/receipt bindings; no catalog recomputation.\nper_site: supplied torus measure and local analytic assumptions; no spatial solver executed.\nper_mode: three synthetic spectral atoms and finite moment identities; no physical mode reconstruction.\nper_block: six altered identity or saved-row alternatives are rejected under unchanged predicates.\nlattice_wide: native scalar containment additionally requires the reviewed analytic proof and authenticated original catalog; no physical selection or alpha is inferred.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T165033Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha cac5e6e9 differs from the current HEAD ef312ca7 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

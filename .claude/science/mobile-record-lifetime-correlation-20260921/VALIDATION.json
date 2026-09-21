@@ -1,0 +1,53 @@
+{
+  "verified_utc": "2026-09-21T03:08:11.168802+00:00",
+  "base_commit": "689941783bea870e08458e079ddb208257d0083d",
+  "final_sources_sha256": {
+    "docs/MOBILE_RECORDS_LIFETIME_ACTIVITY_AND_TERMINAL_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "1bbcfc4e497ec382f67ed9490e6d9394744a836eef4ce844239f4910dccad3a8",
+    "scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py": "f8d58a82cd35783123167a6bd345ebf60e4a4cdbd7c5e7eff5a0c3793a60e020"
+  },
+  "verified_copied_evidence_count": 10,
+  "verified_seals": {
+    ".claude/science/mobile-record-lifetime-correlation-20260921/independent_terminal_correlations/SEAL.json": "aa66a81abc1483376709f7ffa52edafaa713009a09c56176931c2cc477776f2e",
+    ".claude/science/mobile-record-lifetime-correlation-20260921/independent_local_activity/SEAL.json": "e5a93c93d7a74d69713108035d53e78692bf6cd7bd2c4f87ca41bf281dfa0eb4",
+    ".claude/science/mobile-record-lifetime-correlation-20260921/final_source_review/SEAL.json": "0010a27cbfd89cd0b5692a8ced9c3988833a0f035961116e7cf5132bf98a5457"
+  },
+  "correction_ack_sha256": "2dd2153aa559978e1f97b3eb6c432f019622bc22c0c7dfb75e7efdf4cfd30294",
+  "complete_source_review_findings_remaining": 0,
+  "python_files_compiled": [
+    "scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py",
+    ".claude/science/mobile-record-lifetime-correlation-20260921/independent_terminal_correlations/check.py",
+    ".claude/science/mobile-record-lifetime-correlation-20260921/independent_local_activity/check.py",
+    ".claude/science/mobile-record-lifetime-correlation-20260921/final_source_review/independent_check.py"
+  ],
+  "canonical_cache": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-lifetime-publication-20260921/logs/runner-cache/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.txt",
+    "status": "fresh",
+    "sha256": "01af6adc8f4c3edb72942c4d31b2f7045498c643243e90ea78289e0c01a1881f"
+  },
+  "primary_checks": {
+    "pass": 24,
+    "fail": 0,
+    "mutations_detected_in_expected_family": 8
+  },
+  "citation_topology": {
+    "added_nodes": [
+      "mobile_records_lifetime_activity_and_terminal_correlations_bounded_theorem_note_2026-09-21"
+    ],
+    "new_edges": 1,
+    "prior_entries_unchanged": true,
+    "node_count": 6029,
+    "edge_count": 13609
+  },
+  "vocabulary_check": {
+    "report": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/lifetime-final-vocab.json",
+    "report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "files_with_violations": 0
+  },
+  "pending_combined_candidate_gates": [
+    "full pipeline",
+    "strict audit lint",
+    "changed-evidence integration"
+  ],
+  "independent_audit_verdict": null,
+  "editable_prompt_files_changed": []
+}

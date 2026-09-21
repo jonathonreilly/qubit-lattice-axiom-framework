@@ -1,0 +1,20 @@
+{
+  "reviewed_note_sha256": "806b682aedcc5f465c34f278a23c623dc39bdf4b09639641b45b4ccf102a1294",
+  "corrected_note_sha256": "1bbcfc4e497ec382f67ed9490e6d9394744a836eef4ce844239f4910dccad3a8",
+  "runner_unchanged_sha256": "f8d58a82cd35783123167a6bd345ebf60e4a4cdbd7c5e7eff5a0c3793a60e020",
+  "edits": [
+    {
+      "before": "Use Z^d, d>=1, or a nearest-neighbor periodic torus, with degree bound z=2d.",
+      "after": "Use Z^d, d>=1, or a simple nearest-neighbor periodic torus whose every\nperiod is at least three. These graphs have degree z=2d."
+    },
+    {
+      "before": "terminal finite-dimensional torus marginals converge to the infinite-lattice\nterminal law for a fixed homogeneous product initial distribution. One",
+      "after": "terminal finite-dimensional torus marginals converge to the infinite-lattice\nterminal law as the minimum periodic side length tends to infinity, for a\nfixed homogeneous product initial distribution. Growing volume with a bounded\nperiod is insufficient. One"
+    },
+    {
+      "before": "primary derivations and require their own selective check.\n\nComplete review of this publication note and runner is pending. No axiom,",
+      "after": "primary derivations subsequently reconstructed in the complete-source review\nunder `final_source_review/`. Its exact tagged-state controls supplement the\nproof; they do not certify the infinite-lattice conclusion. The reviewer\nrequested two torus qualifications. This revision states simple periods at\nleast three for degree z=2d, and requires every period to diverge for the\nterminal local limit. The correction receipt and any subsequent narrow\nacknowledgment preserve the reviewed and corrected source identities.\n\nThe review is selective scientific scrutiny, not independent retention. No axiom,"
+    }
+  ],
+  "scope": "R1 actual torus degree; R2 all periods diverge; accurate review provenance only"
+}

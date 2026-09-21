@@ -1,0 +1,33 @@
+{
+  "sealed_at_utc": "2026-09-21T01:00:18.371262+00:00",
+  "independence": "No new primary calculation about local activity or tagged records was read before this seal.",
+  "scientific_check_only": true,
+  "model_commit": "689941783bea870e08458e079ddb208257d0083d",
+  "previously_verified_model_sources_sha256": {
+    "docs/MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md": "8cc06519d7f3acc088b1e450c151f0870ab21d2987ef2b0224d40ba6a5e7e4e2",
+    "docs/MOBILE_RECORDS_FINITE_RATE_CONTROL_AND_SPATIAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-20.md": "423eba32f704e510331bfbb6dba78ea0a35db129854547b155fd76f27248d917"
+  },
+  "source_identity_note": "Previously verified immutable model identities reused; no Git action or new author-source read occurred.",
+  "hypotheses": "Zd or translation-invariant finite tori; translation-invariant initial law; fixed epsilon>0, finite kappa>=0, finite positive bounded symmetric pair matrix, unit proposals, births only into vacancies, content-preserving vacancy hops.",
+  "prior_independent_receipts_unchanged": {
+    "empty_start_seal_sha256": "dc986eac439b4cacbeb17d31a4909a5bbb521d6c5c3306ddf0e54acd15ca5a26",
+    "formation_intensity_seal_sha256": "2f25a82a241e45aa651b5794501c4c0e0da1cfb6f44e99e42698c2b90b0cd893"
+  },
+  "artifacts_sha256": {
+    "REPORT.md": "7b4bad382af9d326a7de018db2bc8acd272fd960e16ac5c1a8cd4dba853e4ca4",
+    "check.py": "b6e6e6e6748cad03d0de814c391bf081ba6e3d39ca4371d5b9154aa2a2f8c0c6",
+    "RESULTS.json": "ec02d4c61a7b7cf046105b7392a938e266fc6342cf7069e50ba0bfc6e354600c",
+    "RUN.log": "ec02d4c61a7b7cf046105b7392a938e266fc6342cf7069e50ba0bfc6e354600c"
+  },
+  "execution": {
+    "command": "python3 check.py > RUN.log",
+    "exit_code": 0,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "arithmetic": "exact fractions; standard library only",
+    "generator_state_cases": 3087,
+    "correlated_translation_orbits": 14,
+    "absorption_parameter_cases": 3,
+    "status": "all exact checks passed"
+  },
+  "scope": "Existence via bounded local graphical construction; vacancy-density/event-count bounds, local fixation and separately mass-transport tagged fixation; finite versus infinite global absorption distinguished. No physical no-go claim."
+}

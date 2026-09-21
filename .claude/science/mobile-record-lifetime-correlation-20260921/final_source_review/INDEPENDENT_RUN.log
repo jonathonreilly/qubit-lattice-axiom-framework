@@ -1,0 +1,193 @@
+{
+  "tagged_controls": {
+    "two_site_geometric_ratio": "5/61",
+    "two_site_mean": "5/56",
+    "two_site_exact_tail_thresholds": 6,
+    "interacting_path_total_states": 147,
+    "interacting_path_transient_states": 39,
+    "maximum_exact_mean": "227380784704148240436083779727/1412086846492863392779488952755",
+    "uniform_tag_mean_bound": 43.35898311578823,
+    "scope": "Finite induced path control for local rates and tagged counts; not a proof of the infinite tagged estimate.",
+    "examples": [
+      {
+        "state": [
+          -1,
+          0,
+          -1
+        ],
+        "tag_position": 1,
+        "mean_lifetime_hops_exact": "227380784704148240436083779727/1412086846492863392779488952755",
+        "mean_lifetime_hops": 0.16102464608949774,
+        "tail_probabilities_m1_to_m4": [
+          "612175747/4104020558",
+          "138342139321309301473553940599/12909049164289279911724834871500",
+          "2962463843209124967002346221904427543/2788368587077680221933428818515330963000",
+          "129294579429212412056595136603434439681163282016783657751/1754142635010923748434848733255555506397471773304657068550000"
+        ]
+      },
+      {
+        "state": [
+          0,
+          -1,
+          1
+        ],
+        "tag_position": 0,
+        "mean_lifetime_hops_exact": "20910/289037",
+        "mean_lifetime_hops": 0.07234367918294198,
+        "tail_probabilities_m1_to_m4": [
+          "1020/15293",
+          "1530/290567",
+          "1560600/4443641131",
+          "2340900/84429181489"
+        ]
+      },
+      {
+        "state": [
+          0,
+          2,
+          -1
+        ],
+        "tag_position": 0,
+        "mean_lifetime_hops_exact": "968000/207581409",
+        "mean_lifetime_hops": 0.004663230703863273,
+        "tail_probabilities_m1_to_m4": [
+          "8000/1846193",
+          "64000/208619809",
+          "8307200000/385152431037137",
+          "66457600000/43522224707196481"
+        ]
+      }
+    ]
+  },
+  "geometry_and_tail_algebra": {
+    "candidate_ball_counts": [
+      {
+        "dimension": 1,
+        "travel_budget": 0,
+        "candidate_destination_count": 3,
+        "box_bound": 3
+      },
+      {
+        "dimension": 1,
+        "travel_budget": 1,
+        "candidate_destination_count": 5,
+        "box_bound": 5
+      },
+      {
+        "dimension": 1,
+        "travel_budget": 2,
+        "candidate_destination_count": 7,
+        "box_bound": 7
+      },
+      {
+        "dimension": 1,
+        "travel_budget": 3,
+        "candidate_destination_count": 9,
+        "box_bound": 9
+      },
+      {
+        "dimension": 1,
+        "travel_budget": 4,
+        "candidate_destination_count": 11,
+        "box_bound": 11
+      },
+      {
+        "dimension": 2,
+        "travel_budget": 0,
+        "candidate_destination_count": 5,
+        "box_bound": 9
+      },
+      {
+        "dimension": 2,
+        "travel_budget": 1,
+        "candidate_destination_count": 13,
+        "box_bound": 25
+      },
+      {
+        "dimension": 2,
+        "travel_budget": 2,
+        "candidate_destination_count": 25,
+        "box_bound": 49
+      },
+      {
+        "dimension": 2,
+        "travel_budget": 3,
+        "candidate_destination_count": 41,
+        "box_bound": 81
+      },
+      {
+        "dimension": 2,
+        "travel_budget": 4,
+        "candidate_destination_count": 61,
+        "box_bound": 121
+      },
+      {
+        "dimension": 3,
+        "travel_budget": 0,
+        "candidate_destination_count": 7,
+        "box_bound": 27
+      },
+      {
+        "dimension": 3,
+        "travel_budget": 1,
+        "candidate_destination_count": 25,
+        "box_bound": 125
+      },
+      {
+        "dimension": 3,
+        "travel_budget": 2,
+        "candidate_destination_count": 63,
+        "box_bound": 343
+      },
+      {
+        "dimension": 3,
+        "travel_budget": 3,
+        "candidate_destination_count": 129,
+        "box_bound": 729
+      },
+      {
+        "dimension": 3,
+        "travel_budget": 4,
+        "candidate_destination_count": 231,
+        "box_bound": 1331
+      }
+    ],
+    "tail_antiderivative_checks": 3
+  },
+  "time_varying_budget": {
+    "clock": "epsilon(t)=a on [0,1), zero thereafter; fixed kappa>0",
+    "initial_vacancy_density": "1/3",
+    "limiting_vacancy_density": "exp(-6*a)/3",
+    "mean_births_per_site": "1/3 - exp(-6*a)/3",
+    "probability_of_persistent_vacancy_motion": "exp(-6*a)",
+    "irreducible_two_tag_vacancy_configurations": 6
+  },
+  "torus_degree_scope_counterexample": {
+    "actual_degree": 1,
+    "degree_bound_z_2d": 2,
+    "exact_expected_departures_per_site": "1/24",
+    "formula_using_degree_bound_as_exact_degree": "1/12",
+    "scope": "Only a finding if simple side-two tori are included; all upper bounds remain valid."
+  },
+  "thin_torus_limit_counterexample": {
+    "growing_tori": "3-by-L as L tends to infinity",
+    "fixed_Z2_observation_sites": [
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "torus_quotient_covariance": "1/3",
+    "Z2_covariance": "0",
+    "scope": "Volume growth alone does not give the stated Z^d local limit; all periods must diverge."
+  },
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "all_checks_passed": true
+}

@@ -1,0 +1,55 @@
+{
+  "sealed_at_utc": "2026-09-21T01:38:35.019091+00:00",
+  "scientific_check_only": true,
+  "independence": "No new primary terminal-correlation calculation or quantum-interface source read before sealing. This continuation read only prior sealed local-activity evidence and unchanged instruction hashes. Prior context contains a completed unrelated empty-start publication review; it supplies no terminal-correlation result here.",
+  "model_commit": "689941783bea870e08458e079ddb208257d0083d",
+  "previously_verified_model_sources_sha256": {
+    "docs/MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md": "8cc06519d7f3acc088b1e450c151f0870ab21d2987ef2b0224d40ba6a5e7e4e2",
+    "docs/MOBILE_RECORDS_FINITE_RATE_CONTROL_AND_SPATIAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-20.md": "423eba32f704e510331bfbb6dba78ea0a35db129854547b155fd76f27248d917"
+  },
+  "model_source_identity_note": "Immutable model identities reused from the local-activity receipt; no Git actions or new author-source reads in this continuation.",
+  "prior_local_activity_receipt_sha256": "e5a93c93d7a74d69713108035d53e78692bf6cd7bd2c4f87ca41bf281dfa0eb4",
+  "prior_local_activity_artifacts_reverified": {
+    "REPORT.md": "7b4bad382af9d326a7de018db2bc8acd272fd960e16ac5c1a8cd4dba853e4ca4",
+    "check.py": "b6e6e6e6748cad03d0de814c391bf081ba6e3d39ca4371d5b9154aa2a2f8c0c6",
+    "RESULTS.json": "ec02d4c61a7b7cf046105b7392a938e266fc6342cf7069e50ba0bfc6e354600c",
+    "RUN.log": "ec02d4c61a7b7cf046105b7392a938e266fc6342cf7069e50ba0bfc6e354600c"
+  },
+  "instruction_identities_sha256": {
+    "AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+  },
+  "artifacts_sha256": {
+    "REPORT.md": "6249af1ec44d27467c3378641c225cadadda6fd4f9a794560dbf6a6991bf106e",
+    "RESULTS.json": "f5e925b29024a65d09dcc925e062be5ac66d2f2b50df8cdba353e0aaff6b7f61",
+    "RUN.log": "f5e925b29024a65d09dcc925e062be5ac66d2f2b50df8cdba353e0aaff6b7f61",
+    "check.py": "c817b2703f03f27d638fc26ea9f4e0ec3118c33191dc60ec909268e5ad510fcf"
+  },
+  "hypotheses": "Zd with fixed finite d, or corresponding finite tori; positive bounded symmetric finite six-content W; epsilon>0 and finite kappa>=0; unit proposals; empty or spatial product initial law independent of proposal clocks.",
+  "result": "Explicit exponential spatial bound for terminal connected single-site correlations. Extension to arbitrary spatial product initial laws uses a new uniform vacancy-label exponential-moment estimate. Correlated initial data can retain nondecaying correlations despite immediate fixation.",
+  "proof_constants": {
+    "z": "2d",
+    "alpha": "6 epsilon min(1,min W)^z",
+    "beta": "6 epsilon max(1,max W)^z",
+    "Lambda": "(z+1)(beta+2z kappa)",
+    "empty_gamma": "alpha",
+    "empty_C": "1+2z kappa/alpha",
+    "general_product_gamma": "alpha/2",
+    "general_product_C": "2(beta+2z kappa) v_* (1+4z kappa/alpha)^d/alpha",
+    "covariance_bound": "M_f M_g min(1,8(C+1) exp[-gamma dist(x,y)/(8e Lambda)])"
+  },
+  "execution": {
+    "command": "python3 check.py > RUN.log",
+    "exit_code": 0,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "arithmetic": "Exact fractions; standard library only",
+    "exact_absorption_cases": 5,
+    "states_per_absorption_case": 343,
+    "maximum_linear_system": 6,
+    "vacancy_label_drift_checks": 1519,
+    "radius_depth_checks": 1000,
+    "nonproduct_counterexample": "Full common random content; vacancy density and successful activity zero, covariance one at all distances",
+    "status": "All checks passed"
+  },
+  "limitations": "Finite cases check constants and controls; infinite-distance conclusions use the displayed proof. No finite coding radius, fixed-distance independence, singular-parameter limit, equilibrium phase, physical-field or TOE conclusion is claimed."
+}

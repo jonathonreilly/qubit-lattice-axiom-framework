@@ -1,0 +1,53 @@
+{
+  "status": "affected_corrections_confirmed_no_remaining_review_finding",
+  "acknowledged_utc": "2026-09-21T02:59:50.784234+00:00",
+  "scope": "Only the three replacements in SOURCE_CORRECTIONS.json and their source identities; no unaffected mathematical checks rerun.",
+  "reviewed_note_sha256": "806b682aedcc5f465c34f278a23c623dc39bdf4b09639641b45b4ccf102a1294",
+  "corrected_note_sha256": "1bbcfc4e497ec382f67ed9490e6d9394744a836eef4ce844239f4910dccad3a8",
+  "runner_unchanged_sha256": "f8d58a82cd35783123167a6bd345ebf60e4a4cdbd7c5e7eff5a0c3793a60e020",
+  "correction_receipt": {
+    "path": ".claude/science/mobile-record-lifetime-correlation-20260921/author_checks/SOURCE_CORRECTIONS.json",
+    "sha256": "18061a9149169c392a863bf89577a7b5e9b2c2034aab46252ceccad49f5bf11d"
+  },
+  "inverse_replacement_check": {
+    "each_after_text_found_exactly_once": true,
+    "replacement_count": 3,
+    "recovered_sha256": "806b682aedcc5f465c34f278a23c623dc39bdf4b09639641b45b4ccf102a1294",
+    "equals_reviewed_source": true,
+    "implication": "The listed replacements account for the complete note change."
+  },
+  "affected_findings": [
+    {
+      "id": "R1",
+      "corrected_line": 45,
+      "status": "resolved",
+      "confirmation": "Simple tori with every period at least three have actual degree 2d, so the exact uniform-weight departure formula now uses the actual degree."
+    },
+    {
+      "id": "R2",
+      "corrected_line": 309,
+      "status": "resolved",
+      "confirmation": "The terminal local limit now explicitly requires the minimum periodic side length to tend to infinity and rejects volume growth with a bounded period."
+    }
+  ],
+  "review_provenance": {
+    "corrected_line": 377,
+    "status": "accurate",
+    "confirmation": "The text correctly credits subsequent reconstruction of the tagged estimates and clock budget, separates finite exact controls from infinite-system proof, and identifies this as selective scientific scrutiny rather than independent retention."
+  },
+  "original_review_artifacts_preserved": {
+    "REPORT.md": "58c5076d819caa2234815d06877409363ba81f21a110fcdc88cc6297b1e9baed",
+    "SEAL.json": "0010a27cbfd89cd0b5692a8ced9c3988833a0f035961116e7cf5132bf98a5457"
+  },
+  "unresolved_findings_from_this_review": [],
+  "authority_boundary": "This acknowledgment completes affected-source confirmation only; it supplies no formal audit verdict or retention status.",
+  "actions": {
+    "only_new_acknowledgment_written": true,
+    "primary_source_edits": false,
+    "original_report_or_seal_rewritten": false,
+    "unaffected_checks_rerun": false,
+    "git_pr_audit_actions": false,
+    "external_communications": false,
+    "delegation": false
+  }
+}

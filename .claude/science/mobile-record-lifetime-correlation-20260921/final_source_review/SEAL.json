@@ -1,0 +1,157 @@
+{
+  "status": "complete_source_review_with_two_scope_findings",
+  "sealed_utc": "2026-09-21T02:56:41.912202+00:00",
+  "worktree": "/Users/jonreilly/Documents/Codex/mobile-record-lifetime-publication-20260921",
+  "output_directory": "/Users/jonreilly/Documents/Codex/mobile-record-lifetime-publication-20260921/.claude/science/mobile-record-lifetime-correlation-20260921/final_source_review",
+  "primary_sources": {
+    "docs/MOBILE_RECORDS_LIFETIME_ACTIVITY_AND_TERMINAL_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-09-21.md": {
+      "sha256": "806b682aedcc5f465c34f278a23c623dc39bdf4b09639641b45b4ccf102a1294",
+      "bytes": 19786
+    },
+    "scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py": {
+      "sha256": "f8d58a82cd35783123167a6bd345ebf60e4a4cdbd7c5e7eff5a0c3793a60e020",
+      "bytes": 14051
+    }
+  },
+  "source_coverage": {
+    "note_lines_read_completely": 380,
+    "runner_lines_read_completely": 317,
+    "end_of_review_hashes_equal_supplied_frozen_hashes": true
+  },
+  "review_evidence": {
+    "REVIEW_INPUT.md": {
+      "sha256": "4e589da66209376de99ff30a9aa857146cf6c9fc6b090403c055b21a3b74d8fb",
+      "bytes": 2330
+    },
+    "REPORT.md": {
+      "sha256": "58c5076d819caa2234815d06877409363ba81f21a110fcdc88cc6297b1e9baed",
+      "bytes": 13560
+    },
+    "independent_check.py": {
+      "sha256": "e83184e56c777eca75fc1aaafa7b1af59540883b0e95ced40ed076fb1e4e667d",
+      "bytes": 12790
+    },
+    "INDEPENDENT_RESULTS.json": {
+      "sha256": "2bb0a63d4e5b7f825467d0bc06a779ca29bda4995ceb81e2bb85b9bf224d2110",
+      "bytes": 5240
+    },
+    "INDEPENDENT_RUN.log": {
+      "sha256": "2bb0a63d4e5b7f825467d0bc06a779ca29bda4995ceb81e2bb85b9bf224d2110",
+      "bytes": 5240
+    },
+    "PRIMARY_BASELINE.log": {
+      "sha256": "0341d458943d02bd877a895c2649e7923f0f96d1e70b67245faadaa1c85a1ace",
+      "bytes": 2872
+    }
+  },
+  "prior_independent_reports": {
+    ".claude/science/mobile-record-lifetime-correlation-20260921/independent_local_activity/REPORT.md": {
+      "sha256": "7b4bad382af9d326a7de018db2bc8acd272fd960e16ac5c1a8cd4dba853e4ca4",
+      "bytes": 11466,
+      "matches_original_byte_for_byte": true,
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_local_activity/REPORT.md"
+    },
+    ".claude/science/mobile-record-lifetime-correlation-20260921/independent_terminal_correlations/REPORT.md": {
+      "sha256": "6249af1ec44d27467c3378641c225cadadda6fd4f9a794560dbf6a6991bf106e",
+      "bytes": 14120,
+      "matches_original_byte_for_byte": true,
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_terminal_correlations/REPORT.md"
+    }
+  },
+  "additional_premise_source": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    }
+  },
+  "governance_sources": {
+    "AGENTS.md": {
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": {
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md": {
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": {
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md": {
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "bytes": 19430
+    }
+  },
+  "governance_scope": "Frozen local snapshot used; installed reviewer skill and proof-governance reference hash-matched it. No Git freshness action or broader review/audit workflow was run.",
+  "findings": [
+    {
+      "id": "R1",
+      "status": "unresolved_at_reviewed_source",
+      "locations": [
+        "note:45",
+        "note:73",
+        "note:314-316"
+      ],
+      "finding": "The exact uniform-weight departure identity requires actual degree or an explicit torus convention ensuring degree 2d.",
+      "narrow_fix": "Specify simple periods at least three, use actual degree in the exact identity, or explicitly define parallel-bond proposal multiplicities."
+    },
+    {
+      "id": "R2",
+      "status": "unresolved_at_reviewed_source",
+      "locations": [
+        "note:307-309"
+      ],
+      "finding": "The torus-to-Z^d terminal local limit requires all periods to diverge, not volume growth alone.",
+      "narrow_fix": "State convergence as the minimum periodic side length tends to infinity, or define the cubic L-to-infinity family."
+    }
+  ],
+  "new_math_review": {
+    "tagged_estimates_6_to_8": "reconstructed without an unresolved mathematical defect",
+    "time_dependent_clock_budget": "reconstructed with stated hypotheses; finite cutoff-clock control separates birth budget from hopping fixation",
+    "remaining_note_and_runner": "complete read and selected checks; no further consequential defect found"
+  },
+  "execution": {
+    "primary_baseline": {
+      "command": "python3 scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py > .claude/science/mobile-record-lifetime-correlation-20260921/final_source_review/PRIMARY_BASELINE.log 2>&1",
+      "exit_code": 0,
+      "passed": 24,
+      "failed": 0
+    },
+    "independent_checks": {
+      "command": "python3 independent_check.py > INDEPENDENT_RUN.log 2>&1",
+      "exit_code": 0,
+      "all_checks_passed": true,
+      "versions": {
+        "python": "3.13.5",
+        "sympy": "1.14.0"
+      },
+      "tagged_path_total_states": 147,
+      "tagged_path_transient_states": 39
+    },
+    "primary_mutations": "Branches inspected; the author-reported eight mutation executions were not repeated."
+  },
+  "limits": [
+    "No formal retention or audit verdict.",
+    "No external PR-status or current-main freshness investigation.",
+    "Finite exact controls do not certify infinite-time or infinite-volume conclusions; the reconstructed proofs supply those implications.",
+    "No changed-source confirmation yet; only the two affected qualifications and final hashes need rechecking after correction."
+  ],
+  "actions": {
+    "writes_only_in_assigned_output_directory": true,
+    "primary_source_edits": false,
+    "git_actions": false,
+    "pr_or_audit_actions": false,
+    "delegation": false,
+    "external_communications": false,
+    "editable_prompt_changes": false
+  },
+  "seal_convention": "Full SHA-256 identities are recorded above; this seal does not recursively hash itself."
+}

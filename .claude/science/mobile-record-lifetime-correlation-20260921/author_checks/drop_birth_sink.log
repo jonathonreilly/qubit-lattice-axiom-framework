@@ -1,0 +1,36 @@
+PASS: hazards: all 2401 four-cycle states; neutral positive weights
+FAIL: balance: all cyclic initial-state orbits; neutral weights:
+PASS: vacancy: vacancy-label exponential drift in every vacant state; neutral
+PASS: hazards: all 2401 four-cycle states; flat positive weights
+FAIL: balance: all cyclic initial-state orbits; flat weights:
+PASS: vacancy: vacancy-label exponential drift in every vacant state; flat
+PASS: hazards: all 2401 four-cycle states; large positive weights
+FAIL: balance: all cyclic initial-state orbits; large weights:
+PASS: vacancy: vacancy-label exponential drift in every vacant state; large
+PASS: hazards: all 2401 four-cycle states; small positive weights
+FAIL: balance: all cyclic initial-state orbits; small weights:
+PASS: vacancy: vacancy-label exponential drift in every vacant state; small
+PASS: uniform: full biased-product generator identity and lifetime departure integral
+PASS: reuse: exact two-site repeated birth and tagged count at epsilon=1, kappa=0
+PASS: reuse: exact two-site repeated birth and tagged count at epsilon=1, kappa=1
+PASS: reuse: exact two-site repeated birth and tagged count at epsilon=2/7, kappa=3/5
+PASS: reuse: exact two-site repeated birth and tagged count at epsilon=1/10, kappa=10
+PASS: dependence: range-two discriminator and one thousand radius/depth identities
+PASS: tag: search-ball joint-law control, integrated hop bound and varying-clock budget
+PASS: correlations: absorbed shared random content retains covariance one
+  terminal_control: menu=flat kappa=1 covariance=3.4540354911930651e-18 max_harmonic_residual=7.66e-15 max_block=24
+PASS: correlations: full four-cycle absorption equations; flat, kappa=1
+  terminal_control: menu=neutral kappa=0 covariance=0.055080721747388414 max_harmonic_residual=7.77e-16 max_block=24
+PASS: correlations: full four-cycle absorption equations; neutral, kappa=0
+  terminal_control: menu=neutral kappa=1 covariance=0.054840702642753869 max_harmonic_residual=5.44e-15 max_block=24
+PASS: correlations: full four-cycle absorption equations; neutral, kappa=1
+  terminal_control: menu=neutral kappa=5 covariance=0.054462372647938725 max_harmonic_residual=4.88e-15 max_block=24
+PASS: correlations: full four-cycle absorption equations; neutral, kappa=5
+per_element: executed — exact birth, vacancy-hop, hazard and exponential-drift identities on four finite menus
+per_site: executed — local budgets over all cyclic orbits, repeated-site births and biased product controls
+per_mode: executed — terminal single-coordinate covariance and a shared-random-content counterexample
+per_block: executed — full 2401-state four-cycle absorption controls and exact two-site tagged calculations
+lattice_wide: checked and not executed — infinite-process construction and uniform lifetime/correlation proofs in note; no physical field or time identification
+mutation_family_expected: balance
+mutation_family_observed: balance
+TOTAL: PASS=20 FAIL=4

@@ -1,0 +1,63 @@
+{
+  "completed_utc": "2026-09-21T02:27:19.743633+00:00",
+  "runner_sha256": "f8d58a82cd35783123167a6bd345ebf60e4a4cdbd7c5e7eff5a0c3793a60e020",
+  "mutations": [
+    {
+      "mutation": "omit_empty_neighbor_floor",
+      "expected_family": "hazards",
+      "observed_family": "hazards",
+      "exit_code": 1,
+      "log_sha256": "8fe24149120d719e0ab0dedbe29c8cc45112b9b49610e52df51fad80494deb89"
+    },
+    {
+      "mutation": "drop_birth_sink",
+      "expected_family": "balance",
+      "observed_family": "balance",
+      "exit_code": 1,
+      "log_sha256": "b0a288d3da7b34d2b3ca48446bf02d4e1f8869849ada5cfb59a103553259913b"
+    },
+    {
+      "mutation": "ignore_vacancy_killing",
+      "expected_family": "vacancy",
+      "observed_family": "vacancy",
+      "exit_code": 1,
+      "log_sha256": "7b7d4887531c375c8af37b720c8194883df28386eb356b8e20f1eb12bfeca522"
+    },
+    {
+      "mutation": "omit_birth_competition",
+      "expected_family": "reuse",
+      "observed_family": "reuse",
+      "exit_code": 1,
+      "log_sha256": "ddde2375710cb728d61067fc4f2ebab70b436a0f757f0b0347fe0b4ab5277845"
+    },
+    {
+      "mutation": "miss_half_hop_acceptance",
+      "expected_family": "uniform",
+      "observed_family": "uniform",
+      "exit_code": 1,
+      "log_sha256": "faf28c350aeb9a9d219df9dcd9b8390c9432e6c17e0cc9946566835a77bb8501"
+    },
+    {
+      "mutation": "radius_one_hops",
+      "expected_family": "dependence",
+      "observed_family": "dependence",
+      "exit_code": 1,
+      "log_sha256": "2060cc2ebf7b08e17127d9f682ef06e5fcd02109a7f869d82f5e96166725b165"
+    },
+    {
+      "mutation": "forget_product_start",
+      "expected_family": "correlations",
+      "observed_family": "correlations",
+      "exit_code": 1,
+      "log_sha256": "c360af73a777d511acf6d67e1513531020705797bed7c7b46ec98a83a5622455"
+    },
+    {
+      "mutation": "omit_search_ball",
+      "expected_family": "tag",
+      "observed_family": "tag",
+      "exit_code": 1,
+      "log_sha256": "ee07ec7662e1eeffe2956a13fbd3318de41dc7f58df18543ad633a342c661f73"
+    }
+  ],
+  "all_expected_families_detected": true
+}

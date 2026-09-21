@@ -1,0 +1,14 @@
+{
+  "cache_path": "/Users/jonreilly/Documents/Codex/mobile-record-all-stage-publication-20260921/logs/runner-cache/mobile_records_all_stage_formation_clock_2026_09_21.txt",
+  "cache_sha256": "f1baf4fef273b7312bcb20b71da9e0fa8fb3d350748ac80cd395c4db86d86519",
+  "header": {
+    "runner_path": "scripts/mobile_records_all_stage_formation_clock_2026_09_21.py",
+    "runner_sha256": "0dae718913fe649f757e23e5f682cb5cd5b0365aea26bb2aed8fde6e5c7eba1b",
+    "input_fingerprint_sha256": "0fae71743131a364b575c14999a20198f18f9c001f260384da894534c41f483b",
+    "status": "ok",
+    "exit_code": "0"
+  },
+  "body": "===== runner cache v1 =====\nrunner: scripts/mobile_records_all_stage_formation_clock_2026_09_21.py\nrunner_sha256: 0dae718913fe649f757e23e5f682cb5cd5b0365aea26bb2aed8fde6e5c7eba1b\ninput_fingerprint_sha256: 0fae71743131a364b575c14999a20198f18f9c001f260384da894534c41f483b\ntimeout_sec: 1200\nexit_code: 0\nelapsed_sec: 22.77\nstatus: ok\n----- stdout -----\nPASS: declared_sources_and_conditional_scope\nPASS: geometric_all_stage_check.py: 4 complete control groups\nTOTAL: PASS=5 FAIL=0\n\n----- stderr -----\n\n",
+  "status": "fresh",
+  "helper_failure": "After a successful execution and cache write, wrapper asserted status==pass instead of actual status==ok. Original full stderr retained; the cache did not require a rerun."
+}

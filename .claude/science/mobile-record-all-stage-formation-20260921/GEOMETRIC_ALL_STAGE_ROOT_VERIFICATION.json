@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-09-21T17:40:50.511772+00:00",
+  "sources_read_completely": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "compare_author.py",
+    "seal_evidence.py"
+  ],
+  "bindings_verified": {
+    "PRE_COMPARISON_SEAL.json": 10,
+    "FINAL_SOURCES.json": 30,
+    "FINAL_SEAL.json": 26
+  },
+  "total_bindings": 70,
+  "unique_paths": 53,
+  "report_sha256": "65324f1661d0798995907628a4d83b39364104fe609a52b6e0fa0f4d2da9f1ec",
+  "final_seal_sha256": "403ee4d8fc89c259f439739048e7e20fa094cca2b0500e6106d033de16ebe628",
+  "scope": "Root proof/source review and authenticated selective independent controls. No rerun of exhaustive author suites; no new literature proof reconstruction. No unresolved finding. Initial aggregate tool-output truncation recovered by focused complete source reads."
+}

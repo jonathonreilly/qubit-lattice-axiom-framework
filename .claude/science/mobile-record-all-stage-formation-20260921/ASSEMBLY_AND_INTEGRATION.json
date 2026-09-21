@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-09-21T18:40:37.328738+00:00",
+  "base_commit": "97c1522d462e574663d8dd50fa424f9147587792",
+  "note_sha256": "e45dbe02cdfcbb756595b81a6c18e3b511b0987efcf66d2906c214b531255ef6",
+  "runner_sha256": "0dae718913fe649f757e23e5f682cb5cd5b0365aea26bb2aed8fde6e5c7eba1b",
+  "primary_exact_body_inclusion": true,
+  "author_control_groups": 4,
+  "source_bookkeeping_controls": 1,
+  "cache_fresh": true,
+  "mutation_controls": [
+    {
+      "mutation": "double_killed_birth_hazard",
+      "source_sha256": "e75dde7de0a9570e58a4b10f1bea076548a0fe7ba369fc44c38cfaf925c1f560",
+      "mutant_sha256": "24f673f523f32aaf094d65cd1b544bbf6075150e773a1ffa8cd5828ce2d9dcf3",
+      "returncode": 1
+    },
+    {
+      "mutation": "omit_augmenting_path_flip",
+      "source_sha256": "e75dde7de0a9570e58a4b10f1bea076548a0fe7ba369fc44c38cfaf925c1f560",
+      "mutant_sha256": "316454eab3b3374320ead655675bf5fca641d638acb2a7e9656c500c0ff243f4",
+      "returncode": 1
+    }
+  ],
+  "capsule": {
+    "capsules": 1,
+    "bundled_members": 76,
+    "bundled_source_bindings": 52,
+    "seal_rows": 86,
+    "external_reference_exclusions": [
+      {
+        "capsule": "geometric_all_stage_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+        "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517",
+        "bytes": 836060,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://arxiv.org/pdf/1909.06558v3",
+        "reason": "Third-party primary reference PDF, identified and inspected locally but not redistributed."
+      }
+    ],
+    "scope": "Bundled bytes authenticated. External PDFs and extracted statement pages not fetched or verified by this portable check; its original local verification is recorded. No scientific correctness or audit status inferred."
+  },
+  "pipeline_exit_code": 0,
+  "strict_lint_exit_code": 0,
+  "vocabulary_exit_code": 0,
+  "graph_delta": {
+    "nodes_added": 1,
+    "edges_added": 2
+  },
+  "audit_status": "unaudited",
+  "prompt_files_changed": [],
+  "changed_evidence_gate": {
+    "exit_code": 0,
+    "changed_path_count": 48,
+    "forensic_evidence_ready": true,
+    "scope": "Exact staged science surfaces; integration receipts appended afterward without changing scientific inputs."
+  },
+  "scope": "Source authentication and author integration; selective proof reconstruction is separately sealed. No retained status or merge.",
+  "whitespace_check": {
+    "exit_code": 2,
+    "scope": "Only two trailing blank-line warnings in byte-preserved sealed source copies; retained to preserve source identities. No whitespace error in publication framing or runner."
+  }
+}

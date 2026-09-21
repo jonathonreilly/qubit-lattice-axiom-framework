@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_all_stage_formation_clock_2026_09_21.py
+runner_sha256: 0dae718913fe649f757e23e5f682cb5cd5b0365aea26bb2aed8fde6e5c7eba1b
+input_fingerprint_sha256: 0fae71743131a364b575c14999a20198f18f9c001f260384da894534c41f483b
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 22.77
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: geometric_all_stage_check.py: 4 complete control groups
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

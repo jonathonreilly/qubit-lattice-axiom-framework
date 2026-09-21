@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_all_stage_formation_clock_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_ALL_STAGE_FORMATION_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "e45dbe02cdfcbb756595b81a6c18e3b511b0987efcf66d2906c214b531255ef6",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_GEOMETRIC_FORMATION_SELECTION_AND_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "2f87af236d872d27c2347e35f880afec4aeff761f3b81bba34157b7e55670206",
+    ".claude/science/mobile-record-all-stage-formation-20260921/primary_sources/GEOMETRIC_ALL_STAGE_FORMATION_CLOCK.md": "e7d47eb97d62fad65153d377bc19257ebcc2ff8aa1b0f0c5027a5424afe0eabd",
+    ".claude/science/mobile-record-all-stage-formation-20260921/author_checks/geometric_all_stage_check.py": "e75dde7de0a9570e58a4b10f1bea076548a0fe7ba369fc44c38cfaf925c1f560",
+    ".claude/science/mobile-record-all-stage-formation-20260921/author_checks/geometric_corridor_transport_check.py": "76ac19c67cd1d9d1c724f88f49a36c990524a5ee955a52058af4292c933d7f0c",
+    "scripts/mobile_records_all_stage_formation_clock_2026_09_21.py": "0dae718913fe649f757e23e5f682cb5cd5b0365aea26bb2aed8fde6e5c7eba1b"
+  },
+  "mutation": "double_killed_birth_hazard",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "geometric_all_stage_check.py",
+      "source_sha256": "e75dde7de0a9570e58a4b10f1bea076548a0fe7ba369fc44c38cfaf925c1f560",
+      "executed_source_sha256": "24f673f523f32aaf094d65cd1b544bbf6075150e773a1ffa8cd5828ce2d9dcf3",
+      "returncode": 1,
+      "stdout": "{\"group\": \"connectivity\", \"passed\": true}\n{\"group\": \"counting_progress\", \"vertices\": 2, \"graphs\": 1, \"injective_triples\": 1}\n{\"group\": \"counting_progress\", \"vertices\": 4, \"graphs\": 34, \"injective_triples\": 276}\n{\"group\": \"counting_progress\", \"vertices\": 6, \"graphs\": 24298, \"injective_triples\": 2291040}\n{\"group\": \"counting\", \"passed\": true}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/all-stage-record-controls-oxp575jg/geometric_all_stage_check.py\", line 281, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/all-stage-record-controls-oxp575jg/geometric_all_stage_check.py\", line 272, in main\n    result=fn();result['pass']=result.pop('pass_');rows.append(dict(group=name,**result))\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/all-stage-record-controls-oxp575jg/geometric_all_stage_check.py\", line 216, in clock_controls\n    assert exitlaw*s.ones(A.cols,1)==s.ones(dim,1)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

@@ -42,4 +42,3 @@ def tick_b(occ, sx, sy, sz, solid, force, L, periodic, gamma, absorb):
         if occ[x, y, z] and occ[tx, ty, tz]:
             a, b, c, a2, b2, c2 = scatter_pair(sx[x, y, z], sy[x, y, z], sz[x, y, z], sx[tx, ty, tz], sy[tx, ty, tz], sz[tx, ty, tz])
             sx[x, y, z] = a; sy[x, y, z] = b; sz[x, y, z] = c; sx[tx, ty, tz] = a2; sy[tx, ty, tz] = b2; sz[tx, ty, tz] = c2
-

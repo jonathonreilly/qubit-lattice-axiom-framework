@@ -1,0 +1,902 @@
+[
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      1,
+      1,
+      1
+    ],
+    "beta": "1/100",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "203",
+    "exact_LDL_pivots": [
+      "20403/100",
+      "418373309/2040300",
+      "128198353527/41837330900"
+    ],
+    "exact_mean_by_start": [
+      "100",
+      "100",
+      "100"
+    ],
+    "uniform_logarithmic_bound": 314.50914729981315
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      1,
+      1,
+      1
+    ],
+    "beta": "1/3",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "9",
+    "exact_LDL_pivots": [
+      "11",
+      "139/11",
+      "638/139"
+    ],
+    "exact_mean_by_start": [
+      "3",
+      "3",
+      "3"
+    ],
+    "uniform_logarithmic_bound": 13.943755299006495
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      1,
+      1,
+      1
+    ],
+    "beta": "1",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "5",
+    "exact_LDL_pivots": [
+      "9",
+      "101/9",
+      "684/101"
+    ],
+    "exact_mean_by_start": [
+      "1",
+      "1",
+      "1"
+    ],
+    "uniform_logarithmic_bound": 7.7465307216702755
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      1,
+      1,
+      1
+    ],
+    "beta": "7",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "23/7",
+    "exact_LDL_pivots": [
+      "177/7",
+      "34871/1239",
+      "868362/34871"
+    ],
+    "exact_mean_by_start": [
+      "1/7",
+      "1/7",
+      "1/7"
+    ],
+    "uniform_logarithmic_bound": 5.090577331383323
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      1,
+      0,
+      0
+    ],
+    "beta": "1/100",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "607",
+    "exact_LDL_pivots": [
+      "61207/100",
+      "37399191/61207",
+      "112251803/37399191"
+    ],
+    "exact_mean_by_start": [
+      "300",
+      "302",
+      "303"
+    ],
+    "uniform_logarithmic_bound": 940.4288296107713
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      1,
+      0,
+      0
+    ],
+    "beta": "1/3",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "25",
+    "exact_LDL_pivots": [
+      "97/3",
+      "2878/97",
+      "8447/2878"
+    ],
+    "exact_mean_by_start": [
+      "9",
+      "11",
+      "12"
+    ],
+    "uniform_logarithmic_bound": 38.73265360835138
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      1,
+      0,
+      0
+    ],
+    "beta": "1",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "13",
+    "exact_LDL_pivots": [
+      "25",
+      "456/25",
+      "1247/456"
+    ],
+    "exact_mean_by_start": [
+      "3",
+      "5",
+      "6"
+    ],
+    "uniform_logarithmic_bound": 20.140979876342715
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      1,
+      0,
+      0
+    ],
+    "beta": "7",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "55/7",
+    "exact_LDL_pivots": [
+      "433/7",
+      "41574/3031",
+      "97961/41574"
+    ],
+    "exact_mean_by_start": [
+      "3/7",
+      "17/7",
+      "24/7"
+    ],
+    "uniform_logarithmic_bound": 12.17311970548186
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      0,
+      1,
+      2
+    ],
+    "beta": "1/100",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "205",
+    "exact_LDL_pivots": [
+      "204",
+      "104573/510",
+      "3288913/1045730"
+    ],
+    "exact_mean_by_start": [
+      "15351/151",
+      "15200/151",
+      "15050/151"
+    ],
+    "uniform_logarithmic_bound": 317.60775958848126
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      0,
+      1,
+      2
+    ],
+    "beta": "1/3",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "11",
+    "exact_LDL_pivots": [
+      "10",
+      "377/30",
+      "8714/1131"
+    ],
+    "exact_mean_by_start": [
+      "50/11",
+      "39/11",
+      "30/11"
+    ],
+    "uniform_logarithmic_bound": 17.042367587674605
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      0,
+      1,
+      2
+    ],
+    "beta": "1",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "7",
+    "exact_LDL_pivots": [
+      "6",
+      "71/6",
+      "1126/71"
+    ],
+    "exact_mean_by_start": [
+      "12/5",
+      "7/5",
+      "4/5"
+    ],
+    "uniform_logarithmic_bound": 10.845143010338385
+  },
+  {
+    "n": 3,
+    "kind": "path",
+    "hazards": [
+      0,
+      1,
+      2
+    ],
+    "beta": "7",
+    "known_gap": 1,
+    "inverse_eigenvalue_bound": "37/7",
+    "exact_LDL_pivots": [
+      "30/7",
+      "8411/210",
+      "652594/8411"
+    ],
+    "exact_mean_by_start": [
+      "150/119",
+      "31/119",
+      "10/119"
+    ],
+    "uniform_logarithmic_bound": 8.189189620051433
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "beta": "1/100",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "403/2",
+    "exact_LDL_pivots": [
+      "80803/200",
+      "4905034809/16160600",
+      "265110183401627/981006961800",
+      "2647494861627/656188961800"
+    ],
+    "exact_mean_by_start": [
+      "100",
+      "100",
+      "100",
+      "100"
+    ],
+    "uniform_logarithmic_bound": 341.169156882829
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "beta": "1/3",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "15/2",
+    "exact_LDL_pivots": [
+      "33/2",
+      "144/11",
+      "781/64",
+      "693/142"
+    ],
+    "exact_mean_by_start": [
+      "3",
+      "3",
+      "3",
+      "3"
+    ],
+    "uniform_logarithmic_bound": 12.69860385419959
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "beta": "1",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "7/2",
+    "exact_LDL_pivots": [
+      "19/2",
+      "156/19",
+      "4997/624",
+      "3135/526"
+    ],
+    "exact_mean_by_start": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "uniform_logarithmic_bound": 5.926015131959809
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "beta": "7",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "25/14",
+    "exact_LDL_pivots": [
+      "211/14",
+      "21948/1477",
+      "9130181/614544",
+      "1266633/86542"
+    ],
+    "exact_mean_by_start": [
+      "1/7",
+      "1/7",
+      "1/7",
+      "1/7"
+    ],
+    "uniform_logarithmic_bound": 3.02347710814276
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "beta": "1/100",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "1609/2",
+    "exact_LDL_pivots": [
+      "323209/200",
+      "390276022/323209",
+      "1673505734375/1561104088",
+      "6708520758768/1673505734375"
+    ],
+    "exact_mean_by_start": [
+      "400",
+      "803/2",
+      "402",
+      "803/2"
+    ],
+    "uniform_logarithmic_bound": 1362.136906760476
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "beta": "1/3",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "57/2",
+    "exact_LDL_pivots": [
+      "131/2",
+      "11423/262",
+      "853757/22846",
+      "3598000/853757"
+    ],
+    "exact_mean_by_start": [
+      "12",
+      "27/2",
+      "14",
+      "27/2"
+    ],
+    "uniform_logarithmic_bound": 48.254694645958445
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "beta": "1",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "25/2",
+    "exact_LDL_pivots": [
+      "73/2",
+      "2879/146",
+      "92567/5758",
+      "406608/92567"
+    ],
+    "exact_mean_by_start": [
+      "4",
+      "11/2",
+      "6",
+      "11/2"
+    ],
+    "uniform_logarithmic_bound": 21.16433975699932
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "beta": "7",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "79/14",
+    "exact_LDL_pivots": [
+      "697/14",
+      "94127/9758",
+      "9204311/1317778",
+      "40686480/9204311"
+    ],
+    "exact_mean_by_start": [
+      "4/7",
+      "29/14",
+      "18/7",
+      "29/14"
+    ],
+    "uniform_logarithmic_bound": 9.55418766173112
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "beta": "1/100",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "815/6",
+    "exact_LDL_pivots": [
+      "812/3",
+      "9931933/48720",
+      "36326142333/198638660",
+      "275882057/66769860"
+    ],
+    "exact_mean_by_start": [
+      "81203/1206",
+      "4090450/60903",
+      "4060150/60903",
+      "20150/303"
+    ],
+    "uniform_logarithmic_bound": 229.9858253593926
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "beta": "1/3",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "13/2",
+    "exact_LDL_pivots": [
+      "12",
+      "511/48",
+      "18955/1533",
+      "5194/669"
+    ],
+    "exact_mean_by_start": [
+      "37/14",
+      "135/56",
+      "111/56",
+      "15/8"
+    ],
+    "uniform_logarithmic_bound": 11.005456673639646
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "beta": "1",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "23/6",
+    "exact_LDL_pivots": [
+      "20/3",
+      "1991/240",
+      "25011/1991",
+      "16082/1191"
+    ],
+    "exact_mean_by_start": [
+      "23/18",
+      "35/36",
+      "23/36",
+      "7/12"
+    ],
+    "uniform_logarithmic_bound": 6.490397525479791
+  },
+  {
+    "n": 4,
+    "kind": "cycle",
+    "hazards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "beta": "7",
+    "known_gap": 2,
+    "inverse_eigenvalue_bound": "113/42",
+    "exact_LDL_pivots": [
+      "92/21",
+      "166631/7728",
+      "48653475/1166417",
+      "8817638/149703"
+    ],
+    "exact_mean_by_start": [
+      "239/378",
+      "575/3024",
+      "239/3024",
+      "25/336"
+    ],
+    "uniform_logarithmic_bound": 4.555372176268425
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "beta": "1/100",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "803/4",
+    "exact_LDL_pivots": [
+      "241303/400",
+      "51779047809/96521200",
+      "25954326909/64401200",
+      "43202003/10760400"
+    ],
+    "exact_mean_by_start": [
+      "100",
+      "100",
+      "100",
+      "100"
+    ],
+    "uniform_logarithmic_bound": 339.899296497409
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "beta": "1/3",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "27/4",
+    "exact_LDL_pivots": [
+      "43/2",
+      "6667/344",
+      "904/59",
+      "565/128"
+    ],
+    "exact_mean_by_start": [
+      "3",
+      "3",
+      "3",
+      "3"
+    ],
+    "uniform_logarithmic_bound": 11.428743468779631
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "beta": "1",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "11/4",
+    "exact_LDL_pivots": [
+      "10",
+      "1479/160",
+      "459/58",
+      "119/24"
+    ],
+    "exact_mean_by_start": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "uniform_logarithmic_bound": 4.656154746539849
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "beta": "7",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "29/28",
+    "exact_LDL_pivots": [
+      "131/14",
+      "67803/7336",
+      "14841/1631",
+      "2425/272"
+    ],
+    "exact_mean_by_start": [
+      "1/7",
+      "1/7",
+      "1/7",
+      "1/7"
+    ],
+    "uniform_logarithmic_bound": 1.7536167227228008
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "beta": "1/100",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "3209/4",
+    "exact_LDL_pivots": [
+      "965509/400",
+      "8261325007/3862036",
+      "13259429191408/8261325007",
+      "8263880180/2066619263"
+    ],
+    "exact_mean_by_start": [
+      "400",
+      "401",
+      "401",
+      "401"
+    ],
+    "uniform_logarithmic_bound": 1358.3273256042162
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "beta": "1/3",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "105/4",
+    "exact_LDL_pivots": [
+      "173/2",
+      "96581/1384",
+      "5119504/96581",
+      "97292/24613"
+    ],
+    "exact_mean_by_start": [
+      "12",
+      "13",
+      "13",
+      "13"
+    ],
+    "uniform_logarithmic_bound": 44.445113489698564
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "beta": "1",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "41/4",
+    "exact_LDL_pivots": [
+      "40",
+      "17359/640",
+      "364720/17359",
+      "17540/4559"
+    ],
+    "exact_mean_by_start": [
+      "4",
+      "5",
+      "5",
+      "5"
+    ],
+    "uniform_logarithmic_bound": 17.35475860073944
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "beta": "7",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "95/28",
+    "exact_LDL_pivots": [
+      "461/14",
+      "227929/25816",
+      "11555632/1595503",
+      "218108/65657"
+    ],
+    "exact_mean_by_start": [
+      "4/7",
+      "11/7",
+      "11/7",
+      "11/7"
+    ],
+    "uniform_logarithmic_bound": 5.744606505471244
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "beta": "1/100",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "1615/12",
+    "exact_LDL_pivots": [
+      "1611/4",
+      "416554339/1159920",
+      "13531059768617/49986520680",
+      "13203013626908593/3247454344468080"
+    ],
+    "exact_mean_by_start": [
+      "32482203/484409",
+      "32401200/484409",
+      "32320600/484409",
+      "32240400/484409"
+    ],
+    "uniform_logarithmic_bound": 227.86939138369266
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "beta": "1/3",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "21/4",
+    "exact_LDL_pivots": [
+      "59/4",
+      "3453/236",
+      "29737/2302",
+      "713597/118948"
+    ],
+    "exact_mean_by_start": [
+      "455/191",
+      "420/191",
+      "390/191",
+      "364/191"
+    ],
+    "uniform_logarithmic_bound": 8.889022697939714
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "beta": "1",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "31/12",
+    "exact_LDL_pivots": [
+      "27/4",
+      "8111/972",
+      "457409/48666",
+      "50573693/5488908"
+    ],
+    "exact_mean_by_start": [
+      "105/101",
+      "84/101",
+      "70/101",
+      "60/101"
+    ],
+    "uniform_logarithmic_bound": 4.373963549779859
+  },
+  {
+    "n": 4,
+    "kind": "complete",
+    "hazards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "beta": "7",
+    "known_gap": 4,
+    "inverse_eigenvalue_bound": "121/84",
+    "exact_LDL_pivots": [
+      "93/28",
+      "299513/23436",
+      "283412711/12579546",
+      "110046472493/3400952532"
+    ],
+    "exact_mean_by_start": [
+      "2475/5579",
+      "900/5579",
+      "550/5579",
+      "396/5579"
+    ],
+    "uniform_logarithmic_bound": 2.4389382005684928
+  }
+]

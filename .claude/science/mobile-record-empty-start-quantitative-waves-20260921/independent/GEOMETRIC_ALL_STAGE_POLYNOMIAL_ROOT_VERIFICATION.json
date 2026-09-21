@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-21T21:08:23.260020+00:00",
+  "status": "Bounded selective check accepted; no unresolved correction or audit verdict",
+  "complete_reads": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "compare_author.py",
+    "INDEPENDENT_RESULTS.json",
+    "AUTHOR_COMPARISON.json"
+  ],
+  "binding_rows": 113,
+  "unique_bindings": 46,
+  "bytes": 540504,
+  "scope": "Complete source and proof reading, every compact mathematical output row inspected, and all packet JSON file bindings authenticated. No repeated execution. Recursive inherited bindings are separately authenticated by the publication capsule verifier.",
+  "coverage_qualification": "Finite exact graph and rational controls support selective checking; full all-volume proof arguments remain load bearing. The deterministic reference coupling covers matching geometry and pair colors, not mixing of extra immutable keys.",
+  "report_sha256": "38554e0c3145e1de9a480e50a6facb96607bc2c7cba209e496dba626bd25e787",
+  "seal_sha256": "21ccb102f03129e259e1b42788094c2774defe7f0b82d4405f1dfcb0efc10a00"
+}

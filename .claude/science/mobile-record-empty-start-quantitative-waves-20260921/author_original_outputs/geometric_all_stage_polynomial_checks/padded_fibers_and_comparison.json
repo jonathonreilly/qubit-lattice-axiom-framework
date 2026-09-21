@@ -1,0 +1,1394 @@
+{
+  "inventory": [
+    {
+      "K": 2,
+      "eligible_connected_graphs_with_perfect_matching": 5,
+      "selected_graphs": 5
+    },
+    {
+      "K": 3,
+      "eligible_connected_graphs_with_perfect_matching": 196,
+      "selected_graphs": 18
+    }
+  ],
+  "rows": [
+    {
+      "K": 2,
+      "j": 1,
+      "h": 0,
+      "m": 3,
+      "augmented_vertices": 4,
+      "augmented_edges": 3,
+      "original_two_level_states": 4,
+      "augmented_states": 4,
+      "augmented_transition_edges": 4,
+      "fiber_counts": {
+        "two_original": 3,
+        "perfect": 1
+      },
+      "exact_R_hat": "3",
+      "proved_upper_R_hat": "4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -7.89491928626703e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.9999999999999987,
+        "two_level": 1.9999999999999998,
+        "lower": 0.3333333333333331
+      },
+      "graph_mask": 7
+    },
+    {
+      "K": 2,
+      "j": 1,
+      "h": 0,
+      "m": 3,
+      "augmented_vertices": 4,
+      "augmented_edges": 3,
+      "original_two_level_states": 4,
+      "augmented_states": 4,
+      "augmented_transition_edges": 4,
+      "fiber_counts": {
+        "two_original": 3,
+        "perfect": 1
+      },
+      "exact_R_hat": "3",
+      "proved_upper_R_hat": "4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 1.147235745718178e-16,
+      "numeric_gap_comparison": {
+        "augmented": 2.0,
+        "two_level": 2.0,
+        "lower": 0.3333333333333333
+      },
+      "graph_mask": 11
+    },
+    {
+      "K": 2,
+      "j": 1,
+      "h": 0,
+      "m": 3,
+      "augmented_vertices": 4,
+      "augmented_edges": 3,
+      "original_two_level_states": 4,
+      "augmented_states": 4,
+      "augmented_transition_edges": 4,
+      "fiber_counts": {
+        "two_original": 3,
+        "perfect": 1
+      },
+      "exact_R_hat": "3",
+      "proved_upper_R_hat": "4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 1.147235745718178e-16,
+      "numeric_gap_comparison": {
+        "augmented": 2.0,
+        "two_level": 2.0,
+        "lower": 0.3333333333333333
+      },
+      "graph_mask": 13
+    },
+    {
+      "K": 2,
+      "j": 1,
+      "h": 0,
+      "m": 3,
+      "augmented_vertices": 4,
+      "augmented_edges": 3,
+      "original_two_level_states": 4,
+      "augmented_states": 4,
+      "augmented_transition_edges": 4,
+      "fiber_counts": {
+        "two_original": 3,
+        "perfect": 1
+      },
+      "exact_R_hat": "3",
+      "proved_upper_R_hat": "4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -1.5089428464810425e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.999999999999999,
+        "two_level": 2.0,
+        "lower": 0.33333333333333315
+      },
+      "graph_mask": 14
+    },
+    {
+      "K": 2,
+      "j": 1,
+      "h": 0,
+      "m": 4,
+      "augmented_vertices": 4,
+      "augmented_edges": 4,
+      "original_two_level_states": 6,
+      "augmented_states": 6,
+      "augmented_transition_edges": 8,
+      "fiber_counts": {
+        "two_original": 4,
+        "perfect": 2
+      },
+      "exact_R_hat": "2",
+      "proved_upper_R_hat": "10/3",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -4.551349893730734e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.4384471871911695,
+        "two_level": 1.4384471871911688,
+        "lower": 0.17980589839889619
+      },
+      "graph_mask": 15
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 5,
+      "augmented_vertices": 8,
+      "augmented_edges": 11,
+      "original_two_level_states": 10,
+      "augmented_states": 36,
+      "augmented_transition_edges": 80,
+      "fiber_counts": {
+        "mixed": 10,
+        "two_original": 20,
+        "two_dummy": 1,
+        "perfect": 5
+      },
+      "exact_R_hat": "31/5",
+      "proved_upper_R_hat": "41/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -1.6338736630972642e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.0874035797199517,
+        "two_level": 2.9652846543102678,
+        "lower": 0.032951623627877326
+      },
+      "graph_mask": 87
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 5,
+      "augmented_vertices": 6,
+      "augmented_edges": 5,
+      "original_two_level_states": 6,
+      "augmented_states": 6,
+      "augmented_transition_edges": 7,
+      "fiber_counts": {
+        "two_original": 5,
+        "perfect": 1
+      },
+      "exact_R_hat": "5",
+      "proved_upper_R_hat": "25/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -6.037177936638359e-17,
+      "numeric_gap_comparison": {
+        "augmented": 0.9999999999999989,
+        "two_level": 1.6972243622680043,
+        "lower": 0.0999999999999999
+      },
+      "graph_mask": 87
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 5,
+      "augmented_vertices": 8,
+      "augmented_edges": 11,
+      "original_two_level_states": 10,
+      "augmented_states": 36,
+      "augmented_transition_edges": 80,
+      "fiber_counts": {
+        "mixed": 10,
+        "two_dummy": 1,
+        "two_original": 20,
+        "perfect": 5
+      },
+      "exact_R_hat": "31/5",
+      "proved_upper_R_hat": "41/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -2.5440950218290387e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.087403579719948,
+        "two_level": 2.9652846543102687,
+        "lower": 0.03295162362787721
+      },
+      "graph_mask": 122
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 5,
+      "augmented_vertices": 6,
+      "augmented_edges": 5,
+      "original_two_level_states": 6,
+      "augmented_states": 6,
+      "augmented_transition_edges": 7,
+      "fiber_counts": {
+        "two_original": 5,
+        "perfect": 1
+      },
+      "exact_R_hat": "5",
+      "proved_upper_R_hat": "25/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 3.6411014740759844e-17,
+      "numeric_gap_comparison": {
+        "augmented": 0.9999999999999994,
+        "two_level": 1.6972243622680045,
+        "lower": 0.09999999999999995
+      },
+      "graph_mask": 122
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 5,
+      "augmented_vertices": 8,
+      "augmented_edges": 11,
+      "original_two_level_states": 11,
+      "augmented_states": 39,
+      "augmented_transition_edges": 88,
+      "fiber_counts": {
+        "two_dummy": 1,
+        "mixed": 12,
+        "two_original": 20,
+        "perfect": 6
+      },
+      "exact_R_hat": "11/2",
+      "proved_upper_R_hat": "47/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 5.683159640368404e-17,
+      "numeric_gap_comparison": {
+        "augmented": 0.9984641213907175,
+        "two_level": 3.0181257429398687,
+        "lower": 0.030256488526991438
+      },
+      "graph_mask": 171
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 5,
+      "augmented_vertices": 6,
+      "augmented_edges": 5,
+      "original_two_level_states": 7,
+      "augmented_states": 7,
+      "augmented_transition_edges": 9,
+      "fiber_counts": {
+        "two_original": 6,
+        "perfect": 1
+      },
+      "exact_R_hat": "6",
+      "proved_upper_R_hat": "29/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 2.224552165390308e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.381966011250104,
+        "two_level": 1.4549911023549331,
+        "lower": 0.1381966011250104
+      },
+      "graph_mask": 171
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 5,
+      "augmented_vertices": 8,
+      "augmented_edges": 11,
+      "original_two_level_states": 10,
+      "augmented_states": 36,
+      "augmented_transition_edges": 80,
+      "fiber_counts": {
+        "mixed": 10,
+        "two_original": 20,
+        "two_dummy": 1,
+        "perfect": 5
+      },
+      "exact_R_hat": "31/5",
+      "proved_upper_R_hat": "41/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -4.594131705503577e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.0874035797199508,
+        "two_level": 2.9652846543102687,
+        "lower": 0.0329516236278773
+      },
+      "graph_mask": 205
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 5,
+      "augmented_vertices": 6,
+      "augmented_edges": 5,
+      "original_two_level_states": 6,
+      "augmented_states": 6,
+      "augmented_transition_edges": 7,
+      "fiber_counts": {
+        "two_original": 5,
+        "perfect": 1
+      },
+      "exact_R_hat": "5",
+      "proved_upper_R_hat": "25/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -3.533342548596451e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.0000000000000009,
+        "two_level": 1.6972243622680045,
+        "lower": 0.10000000000000009
+      },
+      "graph_mask": 205
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 6,
+      "augmented_vertices": 8,
+      "augmented_edges": 12,
+      "original_two_level_states": 14,
+      "augmented_states": 50,
+      "augmented_transition_edges": 123,
+      "fiber_counts": {
+        "two_dummy": 2,
+        "mixed": 16,
+        "two_original": 24,
+        "perfect": 8
+      },
+      "exact_R_hat": "21/4",
+      "proved_upper_R_hat": "12",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 9.179952174844298e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.158539153691153,
+        "two_level": 3.0853250711414293,
+        "lower": 0.03218164315808758
+      },
+      "graph_mask": 231
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 6,
+      "augmented_vertices": 6,
+      "augmented_edges": 6,
+      "original_two_level_states": 10,
+      "augmented_states": 10,
+      "augmented_transition_edges": 15,
+      "fiber_counts": {
+        "two_original": 8,
+        "perfect": 2
+      },
+      "exact_R_hat": "4",
+      "proved_upper_R_hat": "11/2",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 2.7079728103343544e-17,
+      "numeric_gap_comparison": {
+        "augmented": 0.9361669068015541,
+        "two_level": 1.3333650819744496,
+        "lower": 0.0780139089001295
+      },
+      "graph_mask": 231
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 6,
+      "augmented_vertices": 8,
+      "augmented_edges": 12,
+      "original_two_level_states": 15,
+      "augmented_states": 53,
+      "augmented_transition_edges": 132,
+      "fiber_counts": {
+        "mixed": 18,
+        "two_dummy": 2,
+        "two_original": 24,
+        "perfect": 9
+      },
+      "exact_R_hat": "44/9",
+      "proved_upper_R_hat": "13",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 1.5897155869221174e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.179214621237164,
+        "two_level": 3.298437881283578,
+        "lower": 0.03275596170103233
+      },
+      "graph_mask": 245
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 6,
+      "augmented_vertices": 6,
+      "augmented_edges": 6,
+      "original_two_level_states": 11,
+      "augmented_states": 11,
+      "augmented_transition_edges": 18,
+      "fiber_counts": {
+        "two_original": 9,
+        "perfect": 2
+      },
+      "exact_R_hat": "9/2",
+      "proved_upper_R_hat": "6",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 6.6953519532211224e-18,
+      "numeric_gap_comparison": {
+        "augmented": 1.2679491924311221,
+        "two_level": 1.2679491924311233,
+        "lower": 0.10566243270259351
+      },
+      "graph_mask": 245
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 5,
+      "augmented_vertices": 8,
+      "augmented_edges": 11,
+      "original_two_level_states": 10,
+      "augmented_states": 36,
+      "augmented_transition_edges": 80,
+      "fiber_counts": {
+        "two_dummy": 1,
+        "mixed": 10,
+        "two_original": 20,
+        "perfect": 5
+      },
+      "exact_R_hat": "31/5",
+      "proved_upper_R_hat": "41/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 2.0977666081893898e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.0874035797199522,
+        "two_level": 2.9652846543102704,
+        "lower": 0.03295162362787734
+      },
+      "graph_mask": 279
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 5,
+      "augmented_vertices": 6,
+      "augmented_edges": 5,
+      "original_two_level_states": 6,
+      "augmented_states": 6,
+      "augmented_transition_edges": 7,
+      "fiber_counts": {
+        "two_original": 5,
+        "perfect": 1
+      },
+      "exact_R_hat": "5",
+      "proved_upper_R_hat": "25/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 2.727999224959292e-17,
+      "numeric_gap_comparison": {
+        "augmented": 0.9999999999999996,
+        "two_level": 1.6972243622680054,
+        "lower": 0.09999999999999995
+      },
+      "graph_mask": 279
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 6,
+      "augmented_vertices": 8,
+      "augmented_edges": 12,
+      "original_two_level_states": 14,
+      "augmented_states": 50,
+      "augmented_transition_edges": 123,
+      "fiber_counts": {
+        "two_dummy": 2,
+        "mixed": 16,
+        "two_original": 24,
+        "perfect": 8
+      },
+      "exact_R_hat": "21/4",
+      "proved_upper_R_hat": "12",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -1.185772586219508e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.158539153691153,
+        "two_level": 3.085325071141427,
+        "lower": 0.03218164315808758
+      },
+      "graph_mask": 315
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 6,
+      "augmented_vertices": 6,
+      "augmented_edges": 6,
+      "original_two_level_states": 10,
+      "augmented_states": 10,
+      "augmented_transition_edges": 15,
+      "fiber_counts": {
+        "two_original": 8,
+        "perfect": 2
+      },
+      "exact_R_hat": "4",
+      "proved_upper_R_hat": "11/2",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -1.716622944698322e-16,
+      "numeric_gap_comparison": {
+        "augmented": 0.9361669068015533,
+        "two_level": 1.3333650819744487,
+        "lower": 0.07801390890012945
+      },
+      "graph_mask": 315
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 5,
+      "augmented_vertices": 8,
+      "augmented_edges": 11,
+      "original_two_level_states": 11,
+      "augmented_states": 39,
+      "augmented_transition_edges": 88,
+      "fiber_counts": {
+        "two_dummy": 1,
+        "mixed": 12,
+        "two_original": 20,
+        "perfect": 6
+      },
+      "exact_R_hat": "11/2",
+      "proved_upper_R_hat": "47/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 2.989007324030945e-16,
+      "numeric_gap_comparison": {
+        "augmented": 0.9984641213907198,
+        "two_level": 3.018125742939868,
+        "lower": 0.03025648852699151
+      },
+      "graph_mask": 346
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 5,
+      "augmented_vertices": 6,
+      "augmented_edges": 5,
+      "original_two_level_states": 7,
+      "augmented_states": 7,
+      "augmented_transition_edges": 9,
+      "fiber_counts": {
+        "two_original": 6,
+        "perfect": 1
+      },
+      "exact_R_hat": "6",
+      "proved_upper_R_hat": "29/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 2.2245524652249794e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.3819660112501047,
+        "two_level": 1.454991102354935,
+        "lower": 0.13819660112501048
+      },
+      "graph_mask": 346
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 5,
+      "augmented_vertices": 8,
+      "augmented_edges": 11,
+      "original_two_level_states": 11,
+      "augmented_states": 39,
+      "augmented_transition_edges": 88,
+      "fiber_counts": {
+        "two_dummy": 1,
+        "mixed": 12,
+        "two_original": 20,
+        "perfect": 6
+      },
+      "exact_R_hat": "11/2",
+      "proved_upper_R_hat": "47/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 3.7719776447750257e-16,
+      "numeric_gap_comparison": {
+        "augmented": 0.9984641213907214,
+        "two_level": 3.018125742939868,
+        "lower": 0.030256488526991556
+      },
+      "graph_mask": 369
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 5,
+      "augmented_vertices": 6,
+      "augmented_edges": 5,
+      "original_two_level_states": 7,
+      "augmented_states": 7,
+      "augmented_transition_edges": 9,
+      "fiber_counts": {
+        "two_original": 6,
+        "perfect": 1
+      },
+      "exact_R_hat": "6",
+      "proved_upper_R_hat": "29/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -5.709523269947325e-18,
+      "numeric_gap_comparison": {
+        "augmented": 1.3819660112501044,
+        "two_level": 1.454991102354935,
+        "lower": 0.13819660112501045
+      },
+      "graph_mask": 369
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 7,
+      "augmented_vertices": 8,
+      "augmented_edges": 13,
+      "original_two_level_states": 17,
+      "augmented_states": 60,
+      "augmented_transition_edges": 156,
+      "fiber_counts": {
+        "two_dummy": 2,
+        "mixed": 20,
+        "two_original": 28,
+        "perfect": 10
+      },
+      "exact_R_hat": "5",
+      "proved_upper_R_hat": "43/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 2.192708469119436e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.2028504656313859,
+        "two_level": 3.221945720890745,
+        "lower": 0.030842319631573998
+      },
+      "graph_mask": 381
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 7,
+      "augmented_vertices": 6,
+      "augmented_edges": 7,
+      "original_two_level_states": 12,
+      "augmented_states": 12,
+      "augmented_transition_edges": 20,
+      "fiber_counts": {
+        "two_original": 10,
+        "perfect": 2
+      },
+      "exact_R_hat": "5",
+      "proved_upper_R_hat": "27/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 1.4914661997484388e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.2129921973080118,
+        "two_level": 1.4435411228312782,
+        "lower": 0.08664229980771512
+      },
+      "graph_mask": 381
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 5,
+      "augmented_vertices": 8,
+      "augmented_edges": 11,
+      "original_two_level_states": 11,
+      "augmented_states": 39,
+      "augmented_transition_edges": 88,
+      "fiber_counts": {
+        "two_dummy": 1,
+        "mixed": 12,
+        "two_original": 20,
+        "perfect": 6
+      },
+      "exact_R_hat": "11/2",
+      "proved_upper_R_hat": "47/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 1.0315977171538971e-16,
+      "numeric_gap_comparison": {
+        "augmented": 0.9984641213907238,
+        "two_level": 3.018125742939866,
+        "lower": 0.030256488526991632
+      },
+      "graph_mask": 412
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 5,
+      "augmented_vertices": 6,
+      "augmented_edges": 5,
+      "original_two_level_states": 7,
+      "augmented_states": 7,
+      "augmented_transition_edges": 9,
+      "fiber_counts": {
+        "two_original": 6,
+        "perfect": 1
+      },
+      "exact_R_hat": "6",
+      "proved_upper_R_hat": "29/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 2.4578913222197295e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.3819660112501049,
+        "two_level": 1.4549911023549367,
+        "lower": 0.13819660112501048
+      },
+      "graph_mask": 412
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 6,
+      "augmented_vertices": 8,
+      "augmented_edges": 12,
+      "original_two_level_states": 14,
+      "augmented_states": 50,
+      "augmented_transition_edges": 123,
+      "fiber_counts": {
+        "two_dummy": 2,
+        "mixed": 16,
+        "two_original": 24,
+        "perfect": 8
+      },
+      "exact_R_hat": "21/4",
+      "proved_upper_R_hat": "12",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -7.283260517874345e-18,
+      "numeric_gap_comparison": {
+        "augmented": 1.158539153691147,
+        "two_level": 3.0853250711414275,
+        "lower": 0.032181643158087414
+      },
+      "graph_mask": 429
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 6,
+      "augmented_vertices": 6,
+      "augmented_edges": 6,
+      "original_two_level_states": 10,
+      "augmented_states": 10,
+      "augmented_transition_edges": 15,
+      "fiber_counts": {
+        "two_original": 8,
+        "perfect": 2
+      },
+      "exact_R_hat": "4",
+      "proved_upper_R_hat": "11/2",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -5.4805818364259526e-17,
+      "numeric_gap_comparison": {
+        "augmented": 0.9361669068015546,
+        "two_level": 1.3333650819744478,
+        "lower": 0.07801390890012955
+      },
+      "graph_mask": 429
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 8,
+      "augmented_vertices": 8,
+      "augmented_edges": 14,
+      "original_two_level_states": 22,
+      "augmented_states": 78,
+      "augmented_transition_edges": 220,
+      "fiber_counts": {
+        "two_dummy": 4,
+        "mixed": 28,
+        "two_original": 32,
+        "perfect": 14
+      },
+      "exact_R_hat": "32/7",
+      "proved_upper_R_hat": "35/3",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -1.98236451200381e-30,
+      "numeric_gap_comparison": {
+        "augmented": 1.3538249733986911,
+        "two_level": 3.883749714203786,
+        "lower": 0.03223392793806407
+      },
+      "graph_mask": 447
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 8,
+      "augmented_vertices": 6,
+      "augmented_edges": 8,
+      "original_two_level_states": 18,
+      "augmented_states": 18,
+      "augmented_transition_edges": 36,
+      "fiber_counts": {
+        "two_original": 14,
+        "perfect": 4
+      },
+      "exact_R_hat": "7/2",
+      "proved_upper_R_hat": "11/2",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -4.6164518321250413e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.4112624469219672,
+        "two_level": 1.6308613280442668,
+        "lower": 0.08820390293262295
+      },
+      "graph_mask": 447
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 6,
+      "augmented_vertices": 8,
+      "augmented_edges": 12,
+      "original_two_level_states": 13,
+      "augmented_states": 46,
+      "augmented_transition_edges": 110,
+      "fiber_counts": {
+        "mixed": 14,
+        "two_original": 24,
+        "two_dummy": 1,
+        "perfect": 7
+      },
+      "exact_R_hat": "39/7",
+      "proved_upper_R_hat": "18",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -1.131601243602458e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.1201415753788957,
+        "two_level": 2.7077439201514224,
+        "lower": 0.03111504376052488
+      },
+      "graph_mask": 470
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 6,
+      "augmented_vertices": 6,
+      "augmented_edges": 6,
+      "original_two_level_states": 8,
+      "augmented_states": 8,
+      "augmented_transition_edges": 11,
+      "fiber_counts": {
+        "two_original": 7,
+        "perfect": 1
+      },
+      "exact_R_hat": "7",
+      "proved_upper_R_hat": "17/2",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 2.884791837214214e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.0967880740884468,
+        "two_level": 1.24576027921657,
+        "lower": 0.09139900617403723
+      },
+      "graph_mask": 470
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 6,
+      "augmented_vertices": 8,
+      "augmented_edges": 12,
+      "original_two_level_states": 13,
+      "augmented_states": 46,
+      "augmented_transition_edges": 110,
+      "fiber_counts": {
+        "two_dummy": 1,
+        "mixed": 14,
+        "two_original": 24,
+        "perfect": 7
+      },
+      "exact_R_hat": "39/7",
+      "proved_upper_R_hat": "18",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 1.0142241742370687e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.1201415753788933,
+        "two_level": 2.707743920151427,
+        "lower": 0.031115043760524812
+      },
+      "graph_mask": 485
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 6,
+      "augmented_vertices": 6,
+      "augmented_edges": 6,
+      "original_two_level_states": 8,
+      "augmented_states": 8,
+      "augmented_transition_edges": 11,
+      "fiber_counts": {
+        "two_original": 7,
+        "perfect": 1
+      },
+      "exact_R_hat": "7",
+      "proved_upper_R_hat": "17/2",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -4.278516779104291e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.0967880740884433,
+        "two_level": 1.24576027921657,
+        "lower": 0.09139900617403694
+      },
+      "graph_mask": 485
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 6,
+      "augmented_vertices": 8,
+      "augmented_edges": 12,
+      "original_two_level_states": 13,
+      "augmented_states": 46,
+      "augmented_transition_edges": 110,
+      "fiber_counts": {
+        "two_dummy": 1,
+        "mixed": 14,
+        "two_original": 24,
+        "perfect": 7
+      },
+      "exact_R_hat": "39/7",
+      "proved_upper_R_hat": "18",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 9.388226019291096e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.1201415753788977,
+        "two_level": 2.7077439201514224,
+        "lower": 0.031115043760524937
+      },
+      "graph_mask": 498
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 6,
+      "augmented_vertices": 6,
+      "augmented_edges": 6,
+      "original_two_level_states": 8,
+      "augmented_states": 8,
+      "augmented_transition_edges": 11,
+      "fiber_counts": {
+        "two_original": 7,
+        "perfect": 1
+      },
+      "exact_R_hat": "7",
+      "proved_upper_R_hat": "17/2",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -4.268034855992232e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.096788074088445,
+        "two_level": 1.2457602792165687,
+        "lower": 0.09139900617403708
+      },
+      "graph_mask": 498
+    },
+    {
+      "K": 3,
+      "j": 1,
+      "h": 1,
+      "m": 9,
+      "augmented_vertices": 8,
+      "augmented_edges": 15,
+      "original_two_level_states": 27,
+      "augmented_states": 96,
+      "augmented_transition_edges": 288,
+      "fiber_counts": {
+        "two_dummy": 6,
+        "mixed": 36,
+        "two_original": 36,
+        "perfect": 18
+      },
+      "exact_R_hat": "13/3",
+      "proved_upper_R_hat": "11",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -7.460969015481454e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.5302713080319537,
+        "two_level": 4.417424305044157,
+        "lower": 0.03400602906737675
+      },
+      "graph_mask": 511
+    },
+    {
+      "K": 3,
+      "j": 2,
+      "h": 0,
+      "m": 9,
+      "augmented_vertices": 6,
+      "augmented_edges": 9,
+      "original_two_level_states": 24,
+      "augmented_states": 24,
+      "augmented_transition_edges": 54,
+      "fiber_counts": {
+        "two_original": 18,
+        "perfect": 6
+      },
+      "exact_R_hat": "3",
+      "proved_upper_R_hat": "21/4",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 2.365260247765463e-17,
+      "numeric_gap_comparison": {
+        "augmented": 1.6277186767309864,
+        "two_level": 1.8170428655877517,
+        "lower": 0.09042881537394369
+      },
+      "graph_mask": 511
+    },
+    {
+      "K": 4,
+      "j": 1,
+      "h": 2,
+      "m": 7,
+      "augmented_vertices": 12,
+      "augmented_edges": 23,
+      "original_two_level_states": 22,
+      "augmented_states": 592,
+      "augmented_transition_edges": 2016,
+      "fiber_counts": {
+        "two_dummy": 40,
+        "mixed": 240,
+        "two_original": 252,
+        "perfect": 60
+      },
+      "exact_R_hat": "133/15",
+      "proved_upper_R_hat": "109/3",
+      "maximum_good_projected_edge_multiplicity": 20,
+      "maximum_bad_parent_multiplicity": 8,
+      "exact_good_minimum_fiber": 20,
+      "energy_PSD_scaled_minimum": -4.273153197984232e-17,
+      "graph_kind": "path"
+    },
+    {
+      "K": 4,
+      "j": 2,
+      "h": 1,
+      "m": 7,
+      "augmented_vertices": 10,
+      "augmented_edges": 15,
+      "original_two_level_states": 25,
+      "augmented_states": 91,
+      "augmented_transition_edges": 230,
+      "fiber_counts": {
+        "two_dummy": 1,
+        "mixed": 20,
+        "two_original": 60,
+        "perfect": 10
+      },
+      "exact_R_hat": "81/10",
+      "proved_upper_R_hat": "95/4",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 8.240191852048e-17,
+      "numeric_gap_comparison": {
+        "augmented": 0.8548072249613173,
+        "two_level": 2.4520841840495726,
+        "lower": 0.018995716110251495
+      },
+      "graph_kind": "path"
+    },
+    {
+      "K": 4,
+      "j": 3,
+      "h": 0,
+      "m": 7,
+      "augmented_vertices": 8,
+      "augmented_edges": 7,
+      "original_two_level_states": 11,
+      "augmented_states": 11,
+      "augmented_transition_edges": 16,
+      "fiber_counts": {
+        "two_original": 10,
+        "perfect": 1
+      },
+      "exact_R_hat": "10",
+      "proved_upper_R_hat": "57/5",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 5.4041037665508784e-17,
+      "numeric_gap_comparison": {
+        "augmented": 0.931292176670044,
+        "two_level": 0.9877950391673245,
+        "lower": 0.06652086976214601
+      },
+      "graph_kind": "path"
+    },
+    {
+      "K": 4,
+      "j": 1,
+      "h": 2,
+      "m": 8,
+      "augmented_vertices": 12,
+      "augmented_edges": 24,
+      "original_two_level_states": 28,
+      "augmented_states": 752,
+      "augmented_transition_edges": 2688,
+      "fiber_counts": {
+        "two_dummy": 64,
+        "mixed": 320,
+        "two_original": 288,
+        "perfect": 80
+      },
+      "exact_R_hat": "42/5",
+      "proved_upper_R_hat": "92/3",
+      "maximum_good_projected_edge_multiplicity": 20,
+      "maximum_bad_parent_multiplicity": 8,
+      "exact_good_minimum_fiber": 20,
+      "energy_PSD_scaled_minimum": 4.8335252091173604e-17,
+      "graph_kind": "cycle"
+    },
+    {
+      "K": 4,
+      "j": 2,
+      "h": 1,
+      "m": 8,
+      "augmented_vertices": 10,
+      "augmented_edges": 16,
+      "original_two_level_states": 36,
+      "augmented_states": 130,
+      "augmented_transition_edges": 360,
+      "fiber_counts": {
+        "two_dummy": 2,
+        "mixed": 32,
+        "two_original": 80,
+        "perfect": 16
+      },
+      "exact_R_hat": "57/8",
+      "proved_upper_R_hat": "20",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": -2.707471256421896e-16,
+      "numeric_gap_comparison": {
+        "augmented": 0.9878176016038005,
+        "two_level": 2.5555706705981125,
+        "lower": 0.020579533366745843
+      },
+      "graph_kind": "cycle"
+    },
+    {
+      "K": 4,
+      "j": 3,
+      "h": 0,
+      "m": 8,
+      "augmented_vertices": 8,
+      "augmented_edges": 8,
+      "original_two_level_states": 18,
+      "augmented_states": 18,
+      "augmented_transition_edges": 32,
+      "fiber_counts": {
+        "two_original": 16,
+        "perfect": 2
+      },
+      "exact_R_hat": "8",
+      "proved_upper_R_hat": "48/5",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": 2.702244468754903e-16,
+      "numeric_gap_comparison": {
+        "augmented": 0.9161276405643923,
+        "two_level": 0.9161276405643912,
+        "lower": 0.05725797753527452
+      },
+      "graph_kind": "cycle"
+    },
+    {
+      "K": 4,
+      "j": 1,
+      "h": 2,
+      "m": 16,
+      "augmented_vertices": 12,
+      "augmented_edges": 32,
+      "original_two_level_states": 88,
+      "augmented_states": 2400,
+      "augmented_transition_edges": 10752,
+      "fiber_counts": {
+        "two_dummy": 384,
+        "mixed": 1152,
+        "two_original": 576,
+        "perfect": 288
+      },
+      "exact_R_hat": "22/3",
+      "proved_upper_R_hat": "64/3",
+      "maximum_good_projected_edge_multiplicity": 20,
+      "maximum_bad_parent_multiplicity": 8,
+      "exact_good_minimum_fiber": 20,
+      "energy_PSD_scaled_minimum": 3.4135386414184497e-16,
+      "graph_kind": "complete"
+    },
+    {
+      "K": 4,
+      "j": 2,
+      "h": 1,
+      "m": 16,
+      "augmented_vertices": 10,
+      "augmented_edges": 24,
+      "original_two_level_states": 168,
+      "augmented_states": 600,
+      "augmented_transition_edges": 2400,
+      "fiber_counts": {
+        "two_dummy": 24,
+        "mixed": 192,
+        "two_original": 288,
+        "perfect": 96
+      },
+      "exact_R_hat": "21/4",
+      "proved_upper_R_hat": "14",
+      "maximum_good_projected_edge_multiplicity": 3,
+      "maximum_bad_parent_multiplicity": 2,
+      "exact_good_minimum_fiber": 3,
+      "energy_PSD_scaled_minimum": 1.1300878501154674e-16,
+      "graph_kind": "complete"
+    },
+    {
+      "K": 4,
+      "j": 3,
+      "h": 0,
+      "m": 16,
+      "augmented_vertices": 8,
+      "augmented_edges": 16,
+      "original_two_level_states": 120,
+      "augmented_states": 120,
+      "augmented_transition_edges": 384,
+      "fiber_counts": {
+        "two_original": 96,
+        "perfect": 24
+      },
+      "exact_R_hat": "4",
+      "proved_upper_R_hat": "36/5",
+      "maximum_good_projected_edge_multiplicity": 1,
+      "maximum_bad_parent_multiplicity": 0,
+      "exact_good_minimum_fiber": 1,
+      "energy_PSD_scaled_minimum": -1.229046894287741e-16,
+      "numeric_gap_comparison": {
+        "augmented": 1.725082782364619,
+        "two_level": 2.052258742272721,
+        "lower": 0.05390883694889435
+      },
+      "graph_kind": "complete"
+    }
+  ]
+}

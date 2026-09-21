@@ -1,0 +1,4 @@
+PASS: declared_sources_and_conditional_scope
+PASS: geometric_all_stage_polynomial_check.py: 3 complete control groups
+PASS: dimer_routed_quantitative_euler_check.py: 3 complete control groups
+TOTAL: PASS=7 FAIL=0

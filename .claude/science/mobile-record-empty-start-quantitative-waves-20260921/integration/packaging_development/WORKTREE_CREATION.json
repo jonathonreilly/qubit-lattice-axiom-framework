@@ -1,0 +1,8 @@
+{
+  "first_attempt": "git worktree add -b codex/mobile-record-empty-start-quantitative-waves-20260921 /Users/jonreilly/Documents/Codex/mobile-record-empty-start-publication-20260921 3c6fea4be33116952cc81f004b3550baec4087a9",
+  "exit_code": 128,
+  "reason": "The path belonged to the earlier empty-start publication. Git refused before modifying that worktree; the new branch had been created at the intended commit.",
+  "recovery": "Added the already created new branch at distinct mobile-record-quantitative-formation-waves-publication-20260921, without altering or reusing the older worktree.",
+  "recovery_exit_code": 0,
+  "base_commit": "3c6fea4be33116952cc81f004b3550baec4087a9"
+}

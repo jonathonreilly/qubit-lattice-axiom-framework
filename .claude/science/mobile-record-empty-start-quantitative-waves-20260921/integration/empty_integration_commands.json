@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-21T21:19:46.640563+00:00",
+  "rows": [
+    {
+      "check": "vocab",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "scripts/vocab_lint.py",
+        "--report-only",
+        "--report-path",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/empty_vocab.json",
+        "docs/MOBILE_RECORDS_EMPTY_START_QUANTITATIVE_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "pipeline",
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh",
+        "--stage-citation-manifest"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "strict_lint",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

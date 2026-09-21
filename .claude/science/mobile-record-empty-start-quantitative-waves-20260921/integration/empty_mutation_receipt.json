@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-09-21T20:44:09.465375+00:00",
+  "rows": [
+    {
+      "name": "wrong_original_hole_fiber",
+      "command": [
+        "python3",
+        "scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py",
+        "--mutation",
+        "wrong_original_hole_fiber",
+        "--output",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/empty_wrong_original_hole_fiber.json"
+      ],
+      "exit_code": 1,
+      "last_stderr": "AssertionError"
+    },
+    {
+      "name": "omit_birth_killing_scale",
+      "command": [
+        "python3",
+        "scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py",
+        "--mutation",
+        "omit_birth_killing_scale",
+        "--output",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/empty_omit_birth_killing_scale.json"
+      ],
+      "exit_code": 1,
+      "last_stderr": "AssertionError"
+    },
+    {
+      "name": "omit_route_orientation_factor",
+      "command": [
+        "python3",
+        "scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py",
+        "--mutation",
+        "omit_route_orientation_factor",
+        "--output",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/empty_omit_route_orientation_factor.json"
+      ],
+      "exit_code": 1,
+      "last_stderr": "AssertionError"
+    }
+  ]
+}

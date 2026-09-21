@@ -1,0 +1,21 @@
+{
+  "note": "docs/MOBILE_RECORDS_EMPTY_START_QUANTITATIVE_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "primary": "GEOMETRIC_ALL_STAGE_POLYNOMIAL_GAP_AND_FILLING.md",
+      "source_sha256": "521c795b794c1d6beb153499bbb0b79b3103723cdf0ac914627d46452d0a9535",
+      "published_body_sha256": "b4ec28f1b9b6cd4b713eb4c68a2e957da4e732cf6ed384877c3a6fd3239b18d4"
+    },
+    {
+      "primary": "DIMER_ROUTED_QUANTITATIVE_EULER_BOUND.md",
+      "source_sha256": "f3883ac1951ede774121807ab83678fd3622c93ee79f4c0d4aa7e50862564bf1",
+      "published_body_sha256": "aeb28fbd70e9ad8e93780ed8adcf4c9654070b6fa24ee15a7ea8340afb390b3d"
+    },
+    {
+      "primary": "EMPTY_START_DETERMINISTIC_WAVE_PREPARATION.md",
+      "source_sha256": "68718f0891e00094f3cf074dde78ed35a4a46e41b1c7041354713105f4db86e1",
+      "published_body_sha256": "22536c4695796dc2d251bf6997808a6987d8a9703fb7fbeb62dd823e9ac7de98"
+    }
+  ],
+  "change": "Remove original titles and increase heading levels; preserve complete arguments and historical status sentences."
+}

@@ -1,0 +1,319 @@
+{
+  "created_utc": "2026-09-21T20:09:02.484625+00:00",
+  "sources": {
+    "dimer_routed_quantitative_euler_check.py": "f3f7ffd137678cb282a0ae289e7a4c3fbd99a2e5bacdf59032eb36db9a4e2449",
+    "DIMER_ROUTED_QUANTITATIVE_EULER_BOUND.md": "f3883ac1951ede774121807ab83678fd3622c93ee79f4c0d4aa7e50862564bf1",
+    "dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921"
+  },
+  "open_cube_loads": [
+    {
+      "L": 3,
+      "ordered_paths": 729,
+      "physical_edges": 54,
+      "maximum_exact_load": 36,
+      "upper_bound_L4_over2": "40.5"
+    },
+    {
+      "L": 5,
+      "ordered_paths": 15625,
+      "physical_edges": 300,
+      "maximum_exact_load": 300,
+      "upper_bound_L4_over2": "312.5"
+    },
+    {
+      "L": 7,
+      "ordered_paths": 117649,
+      "physical_edges": 882,
+      "maximum_exact_load": 1176,
+      "upper_bound_L4_over2": "1200.5"
+    }
+  ],
+  "contracted_footprints": [
+    {
+      "N": 16,
+      "l": 2,
+      "L": 5,
+      "kind": "winding",
+      "pairs_in_footprint": 75,
+      "inside_black": 63,
+      "outside_black": 12,
+      "fixture_flips": 0,
+      "all_endpoint_pairs_checked": true,
+      "checked_pairs": 2775,
+      "largest_physical_multiplicity": 1,
+      "max_path_load": 130,
+      "max_word_use": 237,
+      "max_weighted_word_use": 2557,
+      "max_word_length": 19,
+      "all_exact_endpoint_permutations": true,
+      "variance_factor_bound": 1200
+    },
+    {
+      "N": 16,
+      "l": 2,
+      "L": 5,
+      "kind": "columnar",
+      "pairs_in_footprint": 75,
+      "inside_black": 63,
+      "outside_black": 12,
+      "fixture_flips": 0,
+      "all_endpoint_pairs_checked": true,
+      "checked_pairs": 2775,
+      "largest_physical_multiplicity": 2,
+      "max_path_load": 165,
+      "max_word_use": 292,
+      "max_weighted_word_use": 3102,
+      "max_word_length": 19,
+      "all_exact_endpoint_permutations": true,
+      "variance_factor_bound": 1200
+    },
+    {
+      "N": 16,
+      "l": 2,
+      "L": 5,
+      "kind": "irregular",
+      "pairs_in_footprint": 73,
+      "inside_black": 63,
+      "outside_black": 10,
+      "fixture_flips": 4200,
+      "all_endpoint_pairs_checked": true,
+      "checked_pairs": 2628,
+      "largest_physical_multiplicity": 2,
+      "max_path_load": 193,
+      "max_word_use": 366,
+      "max_weighted_word_use": 4052,
+      "max_word_length": 21,
+      "all_exact_endpoint_permutations": true,
+      "variance_factor_bound": 1200
+    },
+    {
+      "N": 20,
+      "l": 3,
+      "L": 7,
+      "kind": "winding",
+      "pairs_in_footprint": 196,
+      "inside_black": 171,
+      "outside_black": 25,
+      "fixture_flips": 0,
+      "all_endpoint_pairs_checked": true,
+      "checked_pairs": 19110,
+      "largest_physical_multiplicity": 1,
+      "max_path_load": 452,
+      "max_word_use": 836,
+      "max_weighted_word_use": 13494,
+      "max_word_length": 29,
+      "all_exact_endpoint_permutations": true,
+      "variance_factor_bound": 2352
+    },
+    {
+      "N": 20,
+      "l": 3,
+      "L": 7,
+      "kind": "columnar",
+      "pairs_in_footprint": 196,
+      "inside_black": 171,
+      "outside_black": 25,
+      "fixture_flips": 0,
+      "all_endpoint_pairs_checked": true,
+      "checked_pairs": 19110,
+      "largest_physical_multiplicity": 2,
+      "max_path_load": 620,
+      "max_word_use": 1165,
+      "max_weighted_word_use": 16843,
+      "max_word_length": 29,
+      "all_exact_endpoint_permutations": true,
+      "variance_factor_bound": 2352
+    },
+    {
+      "N": 20,
+      "l": 3,
+      "L": 7,
+      "kind": "irregular",
+      "pairs_in_footprint": 191,
+      "inside_black": 171,
+      "outside_black": 20,
+      "fixture_flips": 8176,
+      "all_endpoint_pairs_checked": true,
+      "checked_pairs": 18145,
+      "largest_physical_multiplicity": 2,
+      "max_path_load": 640,
+      "max_word_use": 1108,
+      "max_weighted_word_use": 18537,
+      "max_word_length": 29,
+      "all_exact_endpoint_permutations": true,
+      "variance_factor_bound": 2352
+    },
+    {
+      "N": 32,
+      "l": 6,
+      "L": 13,
+      "kind": "irregular",
+      "pairs_in_footprint": 1183,
+      "inside_black": 1099,
+      "outside_black": 84,
+      "fixture_flips": 33884,
+      "all_endpoint_pairs_checked": false,
+      "checked_pairs": 2998,
+      "largest_physical_multiplicity": 2,
+      "max_path_load": 42,
+      "max_word_use": 82,
+      "max_weighted_word_use": 2278,
+      "max_word_length": 57,
+      "all_exact_endpoint_permutations": true,
+      "variance_factor_bound": 8112
+    }
+  ],
+  "linear_coefficients": [
+    {
+      "N": 16,
+      "l": 2,
+      "black_sites": 2048,
+      "cube_black_cardinality": 63,
+      "exact_equal_memberships": true,
+      "coefficient_abs_bound": 7,
+      "maximum_normalized_coefficient": 1.7936507936507937,
+      "modes": [
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "multiplier": [
+            0.8501251601765256,
+            0.0
+          ],
+          "error": 0.14987483982347438,
+          "uniform_bound": 1.3603495231756633
+        },
+        {
+          "mode": [
+            1,
+            1,
+            0
+          ],
+          "multiplier": [
+            0.7233565403247486,
+            -1.409807015397024e-17
+          ],
+          "error": 0.2766434596752514,
+          "uniform_bound": 1.923824745242796
+        },
+        {
+          "mode": [
+            2,
+            -1,
+            1
+          ],
+          "multiplier": [
+            0.3469829969319855,
+            7.04903507698512e-18
+          ],
+          "error": 0.6530170030680145,
+          "uniform_bound": 3.3321622036187746
+        }
+      ]
+    },
+    {
+      "N": 20,
+      "l": 3,
+      "black_sites": 4000,
+      "cube_black_cardinality": 171,
+      "exact_equal_memberships": true,
+      "coefficient_abs_bound": 7,
+      "maximum_normalized_coefficient": 1.2280701754385965,
+      "modes": [
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "multiplier": [
+            0.8147090912921253,
+            0.0
+          ],
+          "error": 0.18529090870787468,
+          "uniform_bound": 1.632419427810796
+        },
+        {
+          "mode": [
+            1,
+            1,
+            0
+          ],
+          "multiplier": [
+            0.6633833603466334,
+            4.15522067695965e-17
+          ],
+          "error": 0.33661663965336663,
+          "uniform_bound": 2.308589694291355
+        },
+        {
+          "mode": [
+            2,
+            -1,
+            1
+          ],
+          "multiplier": [
+            0.2487214507536864,
+            4.15522067695965e-17
+          ],
+          "error": 0.7512785492463137,
+          "uniform_bound": 3.9985946443425293
+        }
+      ]
+    },
+    {
+      "N": 32,
+      "l": 6,
+      "black_sites": 16384,
+      "cube_black_cardinality": 1099,
+      "exact_equal_memberships": true,
+      "coefficient_abs_bound": 7,
+      "maximum_normalized_coefficient": 0.4968152866242038,
+      "modes": [
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "multiplier": [
+            0.7507902438148869,
+            0.0
+          ],
+          "error": 0.2492097561851131,
+          "uniform_bound": 2.040524284763495
+        },
+        {
+          "mode": [
+            1,
+            1,
+            0
+          ],
+          "multiplier": [
+            0.5637819272722889,
+            2.5861428053142865e-17
+          ],
+          "error": 0.43621807272771107,
+          "uniform_bound": 2.8857371178641937
+        },
+        {
+          "mode": [
+            2,
+            -1,
+            1
+          ],
+          "multiplier": [
+            0.12345986553447415,
+            0.0
+          ],
+          "error": 0.8765401344655258,
+          "uniform_bound": 4.998243305428161
+        }
+      ]
+    }
+  ],
+  "scope": "Exact finite path/permutation/coefficient inventories and explicitly floating phase bounds. Small cubes test the counting lemma; l=6 tests an actual current-containing footprint. No fitted exponent or proof by finite samples."
+}

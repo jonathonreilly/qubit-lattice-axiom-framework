@@ -1,0 +1,15 @@
+{
+  "result": {
+    "runner": "scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nPASS: geometric_all_stage_polynomial_check.py: 3 complete control groups\nPASS: dimer_routed_quantitative_euler_check.py: 3 complete control groups\nTOTAL: PASS=7 FAIL=0\n",
+    "stderr": "",
+    "elapsed_sec": 66.40950131416321,
+    "timeout_sec": 1200,
+    "live_log": "/Users/jonreilly/Documents/Codex/mobile-record-quantitative-formation-waves-publication-20260921/logs/runner-cache/.in-progress/mobile_records_empty_start_quantitative_waves_2026_09_21.txt"
+  },
+  "cache_path": "/Users/jonreilly/Documents/Codex/mobile-record-quantitative-formation-waves-publication-20260921/logs/runner-cache/mobile_records_empty_start_quantitative_waves_2026_09_21.txt",
+  "cache_sha256": "d9cf4de0305d31040b011da7bf918afb31a86596bb283c705284e399e50f672e",
+  "cache_status": "fresh"
+}

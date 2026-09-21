@@ -1,0 +1,30 @@
+{
+  "claim_id": "mobile_records_empty_start_quantitative_waves_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_EMPTY_START_QUANTITATIVE_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "919496a531930d6e307d5b6871ac36e4d7f7146a8d4477e67d692a556a8342cb",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_MOVING_GEOMETRY_COLOR_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "03b4434a59cccc3d01122d8d84a9fb4812815445ae972bc5fe6c98f481f5e747",
+    "docs/MOBILE_RECORDS_ALL_STAGE_FORMATION_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "e45dbe02cdfcbb756595b81a6c18e3b511b0987efcf66d2906c214b531255ef6",
+    ".claude/science/mobile-record-empty-start-quantitative-waves-20260921/primary_sources/GEOMETRIC_ALL_STAGE_POLYNOMIAL_GAP_AND_FILLING.md": "521c795b794c1d6beb153499bbb0b79b3103723cdf0ac914627d46452d0a9535",
+    ".claude/science/mobile-record-empty-start-quantitative-waves-20260921/primary_sources/DIMER_ROUTED_QUANTITATIVE_EULER_BOUND.md": "f3883ac1951ede774121807ab83678fd3622c93ee79f4c0d4aa7e50862564bf1",
+    ".claude/science/mobile-record-empty-start-quantitative-waves-20260921/primary_sources/EMPTY_START_DETERMINISTIC_WAVE_PREPARATION.md": "68718f0891e00094f3cf074dde78ed35a4a46e41b1c7041354713105f4db86e1",
+    ".claude/science/mobile-record-empty-start-quantitative-waves-20260921/primary_sources/GEOMETRIC_ALL_STAGE_FORMATION_CLOCK.md": "e7d47eb97d62fad65153d377bc19257ebcc2ff8aa1b0f0c5027a5424afe0eabd",
+    ".claude/science/mobile-record-empty-start-quantitative-waves-20260921/primary_sources/GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md": "f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb",
+    ".claude/science/mobile-record-empty-start-quantitative-waves-20260921/author_checks/geometric_all_stage_polynomial_check.py": "b246bcfb05eba3ec4b79759fcf3493afd5041497a8ad676c4345bc2071c50ea1",
+    ".claude/science/mobile-record-empty-start-quantitative-waves-20260921/author_checks/dimer_routed_quantitative_euler_check.py": "f3f7ffd137678cb282a0ae289e7a4c3fbd99a2e5bacdf59032eb36db9a4e2449",
+    ".claude/science/mobile-record-empty-start-quantitative-waves-20260921/author_checks/dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+    "scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py": "5756e8d7870b2d6486f461e123147599404267f3fb81af99180d428902ecf839"
+  },
+  "mutation": "wrong_original_hole_fiber",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "geometric_all_stage_polynomial_check.py",
+      "source_sha256": "b246bcfb05eba3ec4b79759fcf3493afd5041497a8ad676c4345bc2071c50ea1",
+      "executed_source_sha256": "666785a9e9a3d571ff374eaa75fb805752ca3825b9dd75a1f98ed3cdbe8ed62c",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/empty-start-wave-controls-618wkus8/geometric_all_stage_polynomial_check.py\", line 235, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/empty-start-wave-controls-618wkus8/geometric_all_stage_polynomial_check.py\", line 226, in main\n    value=fn();groups.append(dict(group=name,passed=True,detail=value))\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/empty-start-wave-controls-618wkus8/geometric_all_stage_polynomial_check.py\", line 165, in padded_controls\n    value=padded_case(K,edges,j,allm);value['graph_mask']=mask;rows.append(value)\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/empty-start-wave-controls-618wkus8/geometric_all_stage_polynomial_check.py\", line 102, in padded_case\n    for (kind,T),count in fibers.items():assert count==expected_fibers[kind]\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

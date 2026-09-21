@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-21T20:40:39.938991+00:00",
+  "status": "Bounded selective check accepted; no unresolved correction or audit verdict",
+  "complete_reads": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "compare_author.py",
+    "INDEPENDENT_RESULTS.json"
+  ],
+  "binding_rows": 81,
+  "unique_bindings": 37,
+  "bytes": 263908,
+  "scope": "Complete source and proof reading, decisive exact/numerical output inspection and all packet JSON file bindings authenticated. No repeat author or independent execution.",
+  "coverage_qualification": "Author N32,l6 is a local geometric sample outside the stronger global inequality; independent N36,l6 sampled controls satisfy it. Neither finite inventory proves the all-N theorem.",
+  "report_sha256": "ed61c1caeb504ec2c7be2460dd6750ddad65c571a4d374b4a5fe251fb39c2f9b",
+  "seal_sha256": "7b17a4208dc58af855af6cdc017c77ac7874bd8ecc7f04b1860c5619f8115a0a"
+}

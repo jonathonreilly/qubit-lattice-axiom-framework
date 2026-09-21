@@ -1,0 +1,38 @@
+{
+ "task": "X:sixaxis-static-threshold-lines",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/scan_static_sixaxis.py 24 400 3.55 3.6 3.65 3.7 3.75 --qr 1 2",
+ "seed": 10615,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4a525e1c",
+ "started_utc": "20260921T171015Z",
+ "elapsed_s": 9.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "lines": [
+   "  p= 3.55: order 0.1850 | 0.1864   (1s per start)",
+   "  p= 3.60: order 0.1902 | 0.1911   (1s per start)",
+   "  p= 3.65: order 0.4761 | 0.2092   (1s per start)",
+   "  p= 3.70: order 0.6667 | 0.4905   (1s per start)",
+   "  p= 3.75: order 0.7397 | 0.7401   (1s per start)"
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "the six-axis STATIC law on other weight lines: --extra '<p values> --qr q r' (block 28: p in (3.6, 3.7) at (p,1,2) on L = 24 with 400 sweeps); locate the crossing on (p,1,1), (p,2,4), (p,1,3); then L = 32. GRID UNITS: the 7 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "e81ff486779980a92007a06f1ca1a92e88d98f517dd178b3fd447716d4313c87",
+ "stdout_tail": "six-axis static law at (p,1,2), L=24, sweeps=400; order = mean fraction of the majority value over the last half (aligned start | random start)\n  p= 3.55: order 0.1850 | 0.1864   (1s per start)\n  p= 3.60: order 0.1902 | 0.1911   (1s per start)\n  p= 3.65: order 0.4761 | 0.2092   (1s per start)\n  p= 3.70: order 0.6667 | 0.4905   (1s per start)\n  p= 3.75: order 0.7397 | 0.7401   (1s per start)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T171024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

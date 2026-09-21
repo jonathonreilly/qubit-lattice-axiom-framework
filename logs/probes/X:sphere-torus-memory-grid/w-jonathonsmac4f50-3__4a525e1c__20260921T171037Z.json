@@ -1,0 +1,40 @@
+{
+ "task": "X:sphere-torus-memory-grid",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/sphere_torus_msd.py 4 16 11000 8",
+ "seed": 10637,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4a525e1c",
+ "started_utc": "20260921T171037Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "ratios": [
+   "1.633",
+   "1.629",
+   "1.637",
+   "1.597",
+   "1.557",
+   "1.412"
+  ],
+  "mabs": "0.7562"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "the (beta, L) grid for the 1/|m|^2 law of block 34: one point per run, --extra 'beta L T seeds' with T >= 3 * 3 beta L^2 / A(3 beta) (A(k) = coth k - 1/k) and seeds >= 8; grid beta in {3, 4, 6, 8, 12, 16, 24, 48}, L in {16, 24, 32, 48, 64}. The log's ratios and |m| fill the table D_1/(sigma^2/L^2) vs 1/|m|^2; a systematic deviation from 1/|m|^2 beyond 10 % at any point is worth an issue. GRID UNITS: the 36 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "b39f6109e3b4f5e9a7cee1af5eccb3d93743a565f1e64c543f49ca4ec0d80f79",
+ "stdout_tail": "beta=4.0 L=16 T=11000 seeds=8 (6s): sigma^2/L^2 = 2.9839e-04; memory time 3351; mean |m| in the stationary regime 0.7562\n  lag    25: nonlinear MSD 2.4358e-02 -> D_1 = 4.8716e-04 (ratio to sigma^2/L^2: 1.633 +- 0.037); linear model MSD 1.4892e-02 (ratio 0.998 +- 0.014)\n  lag    50: nonlinear MSD 4.8601e-02 -> D_1 = 4.8601e-04 (ratio to sigma^2/L^2: 1.629 +- 0.042); linear model MSD 2.9906e-02 (ratio 1.002 +- 0.019)\n  lag   100: nonlinear MSD 9.7723e-02 -> D_1 = 4.8862e-04 (ratio to sigma^2/L^2: 1.637 +- 0.040); linear model MSD 6.0463e-02 (ratio 1.013 +- 0.028)\n  lag   200: nonlinear MSD 1.9062e-01 -> D_1 = 4.7654e-04 (ratio to sigma^2/L^2: 1.597 +- 0.063); linear model MSD 1.2226e-01 (ratio 1.024 +- 0.036)\n  lag   400: nonlinear MSD 3.7158e-01 -> D_1 = 4.6448e-04 (ratio to sigma^2/L^2: 1.557 +- 0.100); linear model MSD 2.4523e-01 (ratio 1.027 +- 0.065)\n  lag  1000: nonlinear MSD 8.4250e-01 -> D_1 = 4.2125e-04 (ratio to sigma^2/L^2: 1.412 +- 0.135); linear model MSD 6.1977e-01 (ratio 1.039 +- 0.101)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T171043Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

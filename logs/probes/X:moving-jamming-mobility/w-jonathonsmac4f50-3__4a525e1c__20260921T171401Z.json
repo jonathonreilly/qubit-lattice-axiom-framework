@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-jamming-mobility",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 96 1 2 neutral 0.2 24 3000 1",
+ "seed": 10841,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4a525e1c",
+ "started_utc": "20260921T171401Z",
+ "elapsed_s": 121.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=96.0 q=1.0 r=2.0 c=0.0571 rho=0.2 L=24 nbrs=3.284 nbrs_over_random=2.737 aligned=0.995 S=3.95 accept=0.214 records=2773 seconds=121"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Jamming without being full: the fraction of accepted moves against the density at strong preference. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 48 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "97c4dd332ad02b906b521558ccb554c51bf4a277c7e7fa24ca20d3e4a13787a1",
+ "stdout_tail": "weights (96.0,1.0,2.0) scale c=0.0571 (neutral) rho=0.2 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=1.200 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 0.696 0.745 0.290 0.27\n     2 0.756 0.793 0.205 0.27\n     4 0.871 0.857 0.193 0.24\n     9 1.055 0.890 0.194 0.17\n    18 1.196 0.911 0.188 0.19\n    38 1.391 0.945 0.181 0.28\n    79 1.523 0.951 0.189 0.53\n   163 1.830 0.966 0.191 0.31\n   338 2.190 0.977 0.194 0.71\n   700 2.773 0.989 0.207 0.77\n  1449 3.138 0.994 0.208 2.56\n  3000 3.334 0.994 0.224 5.73\nSUMMARY: p=96.0 q=1.0 r=2.0 c=0.0571 rho=0.2 L=24 nbrs=3.284 nbrs_over_random=2.737 aligned=0.995 S=3.95 accept=0.214 records=2773 seconds=121\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T171602Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

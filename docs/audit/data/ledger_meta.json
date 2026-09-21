@@ -2,7 +2,7 @@
   "last_invalidations": [],
   "schema_version": 1,
   "stats": {
-    "dropped_gated_sources": 1134,
+    "dropped_gated_sources": 1146,
     "dropped_missing_notes": 0,
     "dropped_total": 0,
     "migrated_path_aliases": 0,

@@ -1,5 +1,5 @@
 {
-  "cycle_count": 63,
+  "cycle_count": 72,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -9000,6 +9000,456 @@
         }
       ],
       "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0064",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.references.review_units",
+          "to": "ai_methodology.skills.review-loop.references.landing"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.landing",
+          "to": "ai_methodology.skills.review-loop.references.review_units"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.review_units",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+          "title": "Review units and validation placement",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.landing",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+          "title": "Backlog review and landing",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0065",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.skill",
+          "to": "ai_methodology.skills.review-loop.references.review_setup"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.review_setup",
+          "to": "ai_methodology.skills.review-loop.skill"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.skill",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+          "title": "Review Loop",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.review_setup",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+          "title": "Review setup and input hygiene",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0066",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.skill",
+          "to": "ai_methodology.skills.review-loop.references.salvage"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.salvage",
+          "to": "ai_methodology.skills.review-loop.skill"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.skill",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+          "title": "Review Loop",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.salvage",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+          "title": "Salvage and source preservation",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0067",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.skill",
+          "to": "ai_methodology.skills.review-loop.references.science_lenses"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.science_lenses",
+          "to": "ai_methodology.skills.review-loop.skill"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.skill",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+          "title": "Review Loop",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.science_lenses",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+          "title": "Scientific review lenses and findings",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0068",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.references.audit_compatibility",
+          "to": "ai_methodology.skills.review-loop.references.review_units"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.review_units",
+          "to": "ai_methodology.skills.review-loop.references.landing"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.landing",
+          "to": "ai_methodology.skills.review-loop.references.audit_compatibility"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.audit_compatibility",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+          "title": "Audit-system compatibility and scientific PASS gates",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.review_units",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+          "title": "Review units and validation placement",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.landing",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+          "title": "Backlog review and landing",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0069",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.references.review_units",
+          "to": "ai_methodology.skills.review-loop.references.landing"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.landing",
+          "to": "ai_methodology.skills.review-loop.references.combined_validation"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.combined_validation",
+          "to": "ai_methodology.skills.review-loop.references.review_units"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.review_units",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+          "title": "Review units and validation placement",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.landing",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+          "title": "Backlog review and landing",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.combined_validation",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+          "title": "Combined candidate validation",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0070",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.references.audit_compatibility",
+          "to": "ai_methodology.skills.review-loop.references.review_units"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.review_units",
+          "to": "ai_methodology.skills.review-loop.references.landing"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.landing",
+          "to": "ai_methodology.skills.review-loop.references.combined_validation"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.combined_validation",
+          "to": "ai_methodology.skills.review-loop.references.audit_compatibility"
+        }
+      ],
+      "length": 4,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.audit_compatibility",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+          "title": "Audit-system compatibility and scientific PASS gates",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.review_units",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+          "title": "Review units and validation placement",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.landing",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+          "title": "Backlog review and landing",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.combined_validation",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+          "title": "Combined candidate validation",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0071",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.references.salvage",
+          "to": "ai_methodology.skills.review-loop.references.audit_compatibility"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.audit_compatibility",
+          "to": "ai_methodology.skills.review-loop.references.review_units"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.review_units",
+          "to": "ai_methodology.skills.review-loop.references.landing"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.landing",
+          "to": "ai_methodology.skills.review-loop.references.salvage"
+        }
+      ],
+      "length": 4,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.salvage",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+          "title": "Salvage and source preservation",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.audit_compatibility",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+          "title": "Audit-system compatibility and scientific PASS gates",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.review_units",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+          "title": "Review units and validation placement",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.landing",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+          "title": "Backlog review and landing",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0072",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ai_methodology.skills.review-loop.skill",
+          "to": "ai_methodology.skills.review-loop.references.salvage"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.salvage",
+          "to": "ai_methodology.skills.review-loop.references.audit_compatibility"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.audit_compatibility",
+          "to": "ai_methodology.skills.review-loop.references.review_units"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.review_units",
+          "to": "ai_methodology.skills.review-loop.references.landing"
+        },
+        {
+          "from": "ai_methodology.skills.review-loop.references.landing",
+          "to": "ai_methodology.skills.review-loop.skill"
+        }
+      ],
+      "length": 5,
+      "max_transitive_descendants": 0,
+      "nodes": [
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.skill",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+          "title": "Review Loop",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.salvage",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+          "title": "Salvage and source preservation",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.audit_compatibility",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+          "title": "Audit-system compatibility and scientific PASS gates",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.review_units",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+          "title": "Review units and validation placement",
+          "transitive_descendants": null
+        },
+        {
+          "audit_status": null,
+          "claim_id": "ai_methodology.skills.review-loop.references.landing",
+          "claim_type": null,
+          "effective_status": null,
+          "note_path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+          "title": "Backlog review and landing",
+          "transitive_descendants": null
+        }
+      ],
+      "requires_lemma_extraction": false
     }
   ],
   "length_counts": {
@@ -9007,12 +9457,13 @@
     "12": 2,
     "13": 16,
     "14": 11,
-    "2": 13,
-    "3": 1,
+    "2": 17,
+    "3": 3,
     "30": 1,
     "31": 1,
     "32": 1,
-    "5": 2,
+    "4": 2,
+    "5": 3,
     "6": 2,
     "7": 3,
     "8": 4,

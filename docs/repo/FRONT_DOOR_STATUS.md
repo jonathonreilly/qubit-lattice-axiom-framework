@@ -56,7 +56,7 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 |---|---:|
 | Total pending rows | 4504 |
 | Ready rows | 1668 |
-| Cycle-break targets | 63 |
+| Cycle-break targets | 72 |
 | Critical pending | 716 |
 | High pending | 322 |
 | Medium pending | 1127 |
@@ -691,11 +691,11 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 6014 |
+| Citation-graph nodes | 6026 |
 | Critical nodes | 747 |
-| High nodes | 341 |
-| Medium nodes | 1318 |
-| Leaf nodes | 3608 |
+| High nodes | 343 |
+| Medium nodes | 1330 |
+| Leaf nodes | 3606 |
 
 Top load-bearing rows by graph score:
 
@@ -706,4 +706,4 @@ Top load-bearing rows by graph score:
 - `kinetic_isotropy_primitive` - critical; 881 descendants; score 48.785
 - `plaquette_self_consistency_note` - critical; 1208 descendants; score 47.740
 - `minimal_axioms_2026-05-03` - critical; 1030 descendants; score 43.510
-- `key_terminology` - critical; 1250 descendants; score 43.289
+- `key_terminology` - critical; 1260 descendants; score 43.300

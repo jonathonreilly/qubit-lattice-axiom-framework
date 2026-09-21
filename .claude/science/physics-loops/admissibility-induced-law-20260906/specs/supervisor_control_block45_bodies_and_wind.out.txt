@@ -1,0 +1,23 @@
+# batch A: separation 20, density 0.3, gamma 1, 8000 ticks (porous, mixed and different-size capturing bodies)
+sep=20 body1 (R=5, f=0.1, sites 51): Q=9.361, F=+0.1188+-0.0174 | body2 (R=5, f=0.1, sites 43): Q=8.326, F=+0.1083+-0.0231 | F r^2/(Q1 Q2) = 0.583 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 3 ticks/s
+sep=20 body1 (R=5, f=0.3, sites 164): Q=17.777, F=+0.3555+-0.0322 | body2 (R=5, f=0.3, sites 146): Q=16.863, F=+0.3871+-0.0169 | F r^2/(Q1 Q2) = 0.495 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 3 ticks/s
+sep=20 body1 (R=5, f=1.0, sites 515): Q=21.772, F=+0.6461+-0.0247 | body2 (R=5, f=1.0, sites 515): Q=21.719, F=+0.5884+-0.0278 | F r^2/(Q1 Q2) = 0.522 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 3 ticks/s
+sep=20 body1 (R=5, f=0.1, sites 51): Q=9.306, F=+0.2977+-0.0175 | body2 (R=5, f=1.0, sites 515): Q=21.943, F=+0.2529+-0.0290 | F r^2/(Q1 Q2) = 0.539 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 3 ticks/s
+sep=20 body1 (R=2, f=1.0, sites 33): Q=3.168, F=+0.0062+-0.0072 | body2 (R=2, f=1.0, sites 33): Q=3.194, F=+0.0111+-0.0084 | F r^2/(Q1 Q2) = 0.341 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 3 ticks/s
+sep=20 body1 (R=3, f=1.0, sites 123): Q=7.856, F=+0.1071+-0.0124 | body2 (R=3, f=1.0, sites 123): Q=7.781, F=+0.0847+-0.0204 | F r^2/(Q1 Q2) = 0.627 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 3 ticks/s
+sep=20 body1 (R=2, f=1.0, sites 33): Q=3.171, F=+0.0729+-0.0123 | body2 (R=4, f=1.0, sites 257): Q=13.198, F=+0.0297+-0.0216 | F r^2/(Q1 Q2) = 0.491 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 3 ticks/s
+# the wind around one capturing body (radius 3, side 96, density 0.3, gamma 1, 8000 ticks)
+single capturing body R=3, side 96, density 0.3, gamma 1.0: captures per tick Q = 7.842
+   shell  6- 8 (mean r   7.1): density 0.2888; inward momentum density +0.03061; from the exact current sqrt3 Q <1/r^2>/(4 pi (1 - rho)) = 0.03115; ratio 0.983
+   shell  8-11 (mean r   9.6): density 0.2899; inward momentum density +0.01694; from the exact current sqrt3 Q <1/r^2>/(4 pi (1 - rho)) = 0.01691; ratio 1.002
+   shell 11-15 (mean r  13.2): density 0.2901; inward momentum density +0.00893; from the exact current sqrt3 Q <1/r^2>/(4 pi (1 - rho)) = 0.00901; ratio 0.991
+   shell 15-20 (mean r  17.7): density 0.2899; inward momentum density +0.00497; from the exact current sqrt3 Q <1/r^2>/(4 pi (1 - rho)) = 0.00496; ratio 1.003
+   shell 20-27 (mean r  23.8): density 0.2900; inward momentum density +0.00267; from the exact current sqrt3 Q <1/r^2>/(4 pi (1 - rho)) = 0.00274; ratio 0.974
+   shell 27-36 (mean r  31.9): density 0.2899; inward momentum density +0.00151; from the exact current sqrt3 Q <1/r^2>/(4 pi (1 - rho)) = 0.00153; ratio 0.991
+# batch B: solid balls of radius 3 at separation 16, 8000 ticks: density 0.15, 0.3 (second seed), 0.5, 0.75 at gamma 1; gamma 0.1 and 4 at density 0.3
+sep=16 body1 (R=3, f=1.0, sites 123): Q=3.863, F=+0.0744+-0.0109 | body2 (R=3, f=1.0, sites 123): Q=3.889, F=+0.0555+-0.0116 | F r^2/(Q1 Q2) = 1.107 (wind estimate sqrt3/(4 pi rho (1-rho)) = 1.081); 6 ticks/s
+sep=16 body1 (R=3, f=1.0, sites 123): Q=7.807, F=+0.1675+-0.0172 | body2 (R=3, f=1.0, sites 123): Q=7.777, F=+0.1496+-0.0170 | F r^2/(Q1 Q2) = 0.668 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 4 ticks/s
+sep=16 body1 (R=3, f=1.0, sites 123): Q=11.845, F=+0.2444+-0.0083 | body2 (R=3, f=1.0, sites 123): Q=11.875, F=+0.1928+-0.0140 | F r^2/(Q1 Q2) = 0.398 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.551); 3 ticks/s
+sep=16 body1 (R=3, f=1.0, sites 123): Q=15.076, F=+0.3905+-0.0127 | body2 (R=3, f=1.0, sites 123): Q=15.021, F=+0.3541+-0.0219 | F r^2/(Q1 Q2) = 0.421 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.735); 2 ticks/s
+sep=16 body1 (R=3, f=1.0, sites 123): Q=6.526, F=+0.1226+-0.0177 | body2 (R=3, f=1.0, sites 123): Q=6.522, F=+0.1255+-0.0170 | F r^2/(Q1 Q2) = 0.746 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 9 ticks/s
+sep=16 body1 (R=3, f=1.0, sites 123): Q=7.416, F=+0.1211+-0.0177 | body2 (R=3, f=1.0, sites 123): Q=7.458, F=+0.1246+-0.0092 | F r^2/(Q1 Q2) = 0.569 (wind estimate sqrt3/(4 pi rho (1-rho)) = 0.656); 2 ticks/s

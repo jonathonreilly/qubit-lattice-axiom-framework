@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_second_order_momentum_flux_force_product_of_capture_rates_2026_09_20.py
+runner_sha256: 203f00a3bc67ada6c2ca1fb7863f13750ce99e56e54c55625a2212a12cbd9ba8
+input_fingerprint_sha256: 58d063a55381b57f0fe41fcac566b0010cb02d884f364a663e810bb4e11eb3d7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 11.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentence used
+PASS: B1 T1: at every site of every one of the 12636 two-record configurations of the 3^3 torus the rate of change of the occupancy is minus the divergence of the current j(x->y) = [record at x pointing to y, y empty] - [the reverse]: records are conserved locally, so a stationary flow carries the capture rate of a body through every surface around it
+PASS: B2 T2: at every site of every configuration the rate of change of the momentum is minus the divergence of the momentum flux (a moving record carries e_d; an exchange passes e_d forward and e_d' back; scattering passes the mean change across its bond): the mean force on a body is the momentum flux through any surface enclosing it
+PASS: C1 T3: the surface of a cube of half-side R is crossed by 6 (2R+1)^2 bonds (R = 1, 2, 3, 5); by T1 the mean current over them sums to the capture rate, an inverse-square law for the mean current
+PASS: C2 T3: with the product-state current J = (1 - rho) g/sqrt 3 of block 44 a spherically symmetric inflow of Q per tick has the momentum density g = sqrt3 Q/(4 pi r^2 (1 - rho)): the square of its coefficient is 3 Q^2/(16 (1 - rho)^2) over pi^2 r^4 (checked at Q = 78/10, rho = 29/100)
+PASS: D1 T4: the uniform sphere has <s_z^2> = 1/3, <s_z^4> = 1/5, <s_x^2 s_z^2> = 1/15; the tilted state has <s_i s_j> = delta_ij/3 + l_i l_j/15 - delta_ij l^2/45 to second order (20 rational tilts); hence sqrt3 Pi_ij = (rho/3) delta_ij + A g_i g_j + B g^2 delta_ij with A = (3/5 - rho)/rho and B = -1/(5 rho)
+PASS: D2 T4: for the six-axis menu <s_1^2> = 1/3 + l_1^2/9 - (l_2^2 + l_3^2)/18 to second order and <s_1 s_2> vanishes identically: the six-axis gas has no g_1 g_2 term in its momentum flux and is not isotropic at second order
+PASS: E1 T5: with <n_i n_j> = delta_ij/3 over the sphere and the pressure adjusting by the second-order balance (B_eff = -A/2), the inviscid value of the force of a uniform wind g1 on a body drawing the inflow q is A q g1, that is (3/5 - rho)/(1 - rho) times the simple estimate Q2 g1/rho: rho 29/100: 31/71; rho 1/2: 1/5; rho 3/5: 0; rho 3/4: -3/5; it changes sign at rho = 3/5
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the uniform sphere's moments 1/3, 1/5, 1/15; the six-axis second moments
+per_site: executed — the mass and momentum continuity identities at every site of all 12636 two-record configurations of the 3^3 torus
+per_mode: not applicable
+per_block: executed — the tilted second moments on 20 rational tilts; the flux coefficients at three densities; the force coefficient at four densities
+lattice_wide: T1 and T2 are identities of the generator on every lattice; T3 is a statement in the local-equilibrium closure with spherical symmetry; T4 is exact for product states; T5 is the inviscid value that follows from T4; the wind profile and the forces between bodies are executed, not proved
+PASS: G1 the five N5 resolution lines are printed
+scope: the wind law of the inertial record gas — exact continuity of number and momentum, inverse-square mean current around a capturing body, second-order momentum flux with A = (3/5 - rho)/rho, inviscid force (3/5 - rho)/(1 - rho) of the simple estimate with a sign change at rho = 3/5; exact
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

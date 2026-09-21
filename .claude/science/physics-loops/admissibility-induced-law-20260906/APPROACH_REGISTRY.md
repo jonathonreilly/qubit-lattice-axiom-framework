@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F45 the wind law | local continuity of number and momentum with explicit observables; the flux theorem; second-order expansion of tilted product states; the inviscid and the free-streaming force | block 45 (within block 44's supplied clause; frontier discovery) |

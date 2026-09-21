@@ -1,0 +1,5 @@
+PASS: W2 closed forms <s_z> = coth l - 1/l and <s_z^2> = 1 - 2 <s_z>/l: series l/3 - l^3/45 and 1/3 + 2 l^2/45; the second-order flux has A = (3/5 - rho)/rho and B = -1/(5 rho)
+PASS: W3 symbolic integration of the cross term of the second-order flux over a sphere around the inflow: the force is A q g1 when the pressure adjusts (B_eff = -A/2) and (4A/3 + 2B/3) q g1 for a general isotropic coefficient
+PASS: W4 six axes: 2 cosh l_1/(2 sum cosh l_k) = 1/3 + l_1^2/9 - (l_2^2 + l_3^2)/18 + ...; the mixed second moments vanish because no content has two non-zero components
+PASS: W1 4000 random three-record configurations of the 3^3 torus, scattering rate 3/2: the changes of occupancy and momentum read off the new configurations equal minus the divergence of the current and of the momentum flux at every site
+REFUTER TOTAL: FAIL=0

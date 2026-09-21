@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 69 — author checks (not a review PASS)
+Written lens pass by the supervisor. The control's docstring named a conservation check that did not exist; the check was written (site-resolved, dense matrices) and run before the gates. Two note sentences sharpened (the speed of the reach-three packet with its formula; the local conservation law in T3's proof). The ladder's middle rung kept to what block 68 proved. Census 8/8 in family.

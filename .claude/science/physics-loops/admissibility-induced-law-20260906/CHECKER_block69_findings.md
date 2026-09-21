@@ -1,0 +1,7 @@
+# Block 69 — control and findings (2026-09-21)
+
+1. Disjoint machinery (`specs/supervisor_control_block69_reach_three.py`; sparse real-space evolution on a `160 × 128` slice; dense matrices on a `5 × 6 × 7` torus): as listed in the results. The exact runner uses the campaign's rational torus class; the control builds shift matrices and evolves packets.
+2. **A named check that did not exist (supervisor).** The control's first docstring named "W3, the conservation of <P> and of <S>", which the script did not contain. The check was written (site-resolved divergence of `K^j` on stationary states drawn inside eigenspaces; the local conservation law for a random state) and run before the gates; the note's Review record says so.
+3. Finding folded: the note's first draft said of the reach-three packet that "the speed hardly changes" without the reason. The group velocity along the stretched axis is `cos q[1 + b(1 − 3 sin² q)]`; at `q = 0.6` the factor `1 − 3 sin² q = 0.04`. The sentence now carries the formula, so that the executed `32.9` against `33.0` is not read as the coupling having no effect.
+4. Finding folded: T3(c)'s proof now states the local conservation law (`⟨G⟩ = Σξ_j Re ψ†P_jψ`, `P_j` Hermitian), which W3 checks site by site.
+5. Scope kept narrow: the ladder's middle rung ("reach two: not both") is block 68's statement about the relabelling generated with `S_j`; N1.1 of the note leaves open a coupling of reach two that is not a relabelling's deformation.

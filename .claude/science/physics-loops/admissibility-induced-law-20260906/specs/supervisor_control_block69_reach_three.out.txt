@@ -1,0 +1,20 @@
+[W1] stretch of the x-bonds b(y) = 0.2 sin(2 pi y/128) (gradient 0.00982 at y = 0), T = 60.0: sideways displacement, part odd in b0:
+     coupling frame , species (0, 0): -15.056
+     coupling frame , species (1, 0): -15.056
+     coupling strain, species (0, 0): -12.641
+     coupling strain, species (1, 0): +12.641
+     coupling reach3, species (0, 0): -10.572
+     coupling reach3, species (1, 0): -10.572
+     rays at the start: a packet that sees the stretch as 1 + b is pushed sideways at -b' per unit time: -(1/2) b' T^2 = -17.671 if the gradient stayed at its largest value (it falls as the packet drifts: cos(2 pi 15/128) = 0.74); one that sees 1 - b is pushed the other way; under the strain coupling the stretch enters through cos k, which lowers both by cos q = 0.825
+
+[W2] uniform stretch b = 0.2: distance travelled along x in T = 40 (no stretch: cos q x 40 = 33.013):
+     coupling frame , species (0, 0): +39.215
+     coupling frame , species (1, 0): +39.215
+     coupling strain, species (0, 0): +35.480
+     coupling strain, species (1, 0): +29.508
+     coupling reach3, species (0, 0): +32.925
+     coupling reach3, species (1, 0): +32.925
+     (group velocities x 40: frame (1 + b) cos q = 39.62 for both species; strain cos q +- b cos 2q = 35.91, 30.11; reach three d/dq[sin q (1 + b cos^2 q)] = 33.30 for BOTH species; the packets' spread in wave number lowers all of them by one to two per cent)
+
+[W3] 5x6x7 torus, 12 stationary states drawn inside eigenspaces of the walk, j = 1, 2, 3: largest |div K^j| at any site = 1.88e-17 (largest bond term of K itself 5.07e-03)
+     a random state in motion: largest |d/dt Re psi^dagger P_j psi + div K^j| at any site = 1.30e-18 (largest rate 6.46e-03)

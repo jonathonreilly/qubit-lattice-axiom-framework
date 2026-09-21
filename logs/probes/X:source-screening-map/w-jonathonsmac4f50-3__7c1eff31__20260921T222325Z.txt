@@ -1,0 +1,17 @@
+weights (6.0,1.0,2.0) scale c=1.0000 (1) rho=0.3 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=1.800 aligned=0.1667
+sweep  nbrs  aligned  accept  S
+     1 2.357 0.279 0.389 0.41
+     2 2.474 0.320 0.335 0.38
+     4 2.574 0.342 0.305 0.36
+     9 2.686 0.365 0.304 0.34
+    18 2.730 0.392 0.288 0.52
+    38 2.828 0.408 0.290 0.84
+    79 2.992 0.438 0.280 1.05
+   163 3.049 0.456 0.279 1.49
+   338 3.234 0.513 0.268 2.03
+   700 3.300 0.542 0.285 5.66
+  1449 3.706 0.653 0.278 13.39
+  3000 4.150 0.771 0.269 42.80
+occupancy structure factor by E(k) shell: E<0.2: 31.022, E<0.6: 8.601, E<1.6: 0.665, E<4: 0.181, E<12: 0.087
+SCREENING: S(0) = -3.471  xi^2 = nan  xi = nan lattice steps (fit of 1/S against E(k) on 538 modes)
+SUMMARY: p=6.0 q=1.0 r=2.0 c=1.0000 rho=0.3 L=24 nbrs=4.103 nbrs_over_random=2.280 aligned=0.744 S=38.57 accept=0.276 records=4173 seconds=116

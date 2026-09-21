@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_three_responses_eight_species_site_stress_bond_current_two_step_current_2026_09_21.py
+runner_sha256: 7812983d46adf0b60927eeeb31b152efd4d75c25575c0d62fb5c1f364f4e5d3d
+input_fingerprint_sha256: 678b072ddbd5d3fb3049fed1ab751ee6126e3735358edce5c19927e5b664dd99
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THREE_RESPONSES_EIGHT_SPECIES_THE_FRAMES_SITE_STRESS_HAS_THE_WRONG_SIGN_IN_SHEAR_FOR_SIX_SPECIES_ONLY_THE_TWO_STEP_CURRENT_SERVES_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a 6x6x6 torus, for a rational state, all eight species and all nine components, at all 216 sites: the frame's site stress Theta_a^j of V_n psi is det(D_n) D_a D_j times that of psi, and the reach-two bond current J_a^j is det(D_n) D_j times that of psi: per unit of energy density (which picks up det(D_n)) the site stress has the opposite sign in the components with exactly one reflected index, the reach-two current in the components with a reflected momentum index
+PASS: B2 T1: the reach-three bond current K_a^j of V_n psi is det(D_n) times that of psi in all nine components at all 216 sites, all eight species: per unit of energy density it is the same for every species
+PASS: C1 T3: the site stress agrees with the species' own stress in all nine components for two species, (000) and (111); the reach-two current for one, (000); the reach-three current for all eight; for species n and each j the frame's divergence falls short of the species' own by exactly twice the sum of d_a K_a^j over the axes a with D_a != D_j (the shear between a reflected and an unreflected axis), and the reach-two divergence by twice the whole when D_j = -1
+PASS: D1 T2: for a smooth two-component amplitude in three dimensions (exact symbolic expansion in the lattice spacing h), the site stress, the reach-two bond current and the reach-three bond current all begin at order h with the same coefficient, Re psi^dagger sigma_a (-i d_j psi), in all nine components: for the first species the three responses agree at leading order, so for species n the site stress is D_a D_j times, and the reach-two current D_j times, the species' own stress
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — each of the nine components of the three responses for V_n psi against psi, all eight species
+per_site: executed — those comparisons as equalities at all 216 sites of a 6x6x6 torus
+per_mode: executed — the leading order in the lattice spacing of the three responses for a smooth two-component amplitude in three dimensions, all nine components (exact symbolic expansion)
+per_block: executed — the species served by each response in all nine components (two, one, eight); the shortfall of each divergence as twice a sum of named terms, all eight species and j = 1, 2, 3
+lattice_wide: T1 is an identity for every state on every torus with even sides (at least six for the two-step momentum) and on the infinite lattice; T2 is the leading order for smooth envelopes; T3 combines them with block 72 T1 and T3 (restated); which coupling is supplied and which species are present are not decided
+PASS: G1 the five N5 resolution lines are printed
+scope: three responses, eight species — under the exchange maps the site stress of the frame picks up D_a D_j, the reach-two current D_j, the reach-three current nothing (each times the sense of the species, as the energy density does); at leading order the three agree for the first species; so the frame sources six of the eight species with the wrong sign in the shear between a reflected and an unreflected axis, reach two sources seven with the wrong sign along a reflected axis, and only the two-step current serves all eight
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

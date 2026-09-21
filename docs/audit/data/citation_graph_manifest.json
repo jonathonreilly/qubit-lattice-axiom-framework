@@ -1,6 +1,6 @@
 {
  "edge_count": 13606,
- "node_count": 6026,
+ "node_count": 6027,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -749,6 +749,10 @@
   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8188f46b334d",
    "out_degree": 2
+  },
+  "admissibility_rule_three_responses_eight_species_the_frames_site_stress_has_the_wrong_sign_in_shear_for_six_species_only_the_two_step_current_serves_all_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8ae058a5c524",

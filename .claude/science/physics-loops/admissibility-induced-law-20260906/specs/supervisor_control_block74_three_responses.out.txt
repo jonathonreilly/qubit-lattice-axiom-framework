@@ -1,0 +1,22 @@
+species (0, 0), own wave number q = (0.5, 0.3), D = [1, 1]:
+  [W1] site by site, where |K| > 0.2 max|K|: ratios to the two-step current (for a plane wave: Theta/K = D_a D_j/(cos q_a cos q_j), J/K = D_j/cos q_j)
+       (a, j) = (x, x): Theta/K in [+1.251, +1.347], J/K in [+1.139, +1.141]; plane wave: +1.298 and +1.139
+       (a, j) = (x, y): Theta/K in [+1.151, +1.239], J/K in [+1.046, +1.048]; plane wave: +1.193 and +1.047
+       (a, j) = (y, x): Theta/K in [+1.151, +1.239], J/K in [+1.139, +1.141]; plane wave: +1.193 and +1.139
+       (a, j) = (y, y): Theta/K in [+1.056, +1.136], J/K in [+1.046, +1.048]; plane wave: +1.096 and +1.047
+  [W2] pairings sum_x (d_a xi_j) R_a^j with xi_j = sin(2 pi x_a/L) (one Fourier mode of displacement), ratios to the pairing with K:
+       stretch d_x xi_x: Theta/K = +1.3002, J/K = +1.1403
+       shear   d_x xi_y: Theta/K = +1.1937, J/K = +1.0474
+       shear   d_y xi_x: Theta/K = +1.1937, J/K = +1.1402
+       stretch d_y xi_y: Theta/K = +1.0972, J/K = +1.0476
+species (1, 0), own wave number q = (0.5, 0.3), D = [-1, 1]:
+  [W1] site by site, where |K| > 0.2 max|K|: ratios to the two-step current (for a plane wave: Theta/K = D_a D_j/(cos q_a cos q_j), J/K = D_j/cos q_j)
+       (a, j) = (x, x): Theta/K in [+1.251, +1.347], J/K in [-1.141, -1.139]; plane wave: +1.298 and -1.139
+       (a, j) = (x, y): Theta/K in [-1.239, -1.151], J/K in [+1.046, +1.048]; plane wave: -1.193 and +1.047
+       (a, j) = (y, x): Theta/K in [-1.239, -1.151], J/K in [-1.141, -1.139]; plane wave: -1.193 and -1.139
+       (a, j) = (y, y): Theta/K in [+1.056, +1.136], J/K in [+1.046, +1.048]; plane wave: +1.096 and +1.047
+  [W2] pairings sum_x (d_a xi_j) R_a^j with xi_j = sin(2 pi x_a/L) (one Fourier mode of displacement), ratios to the pairing with K:
+       stretch d_x xi_x: Theta/K = +1.3002, J/K = -1.1403
+       shear   d_x xi_y: Theta/K = -1.1937, J/K = +1.0474
+       shear   d_y xi_x: Theta/K = -1.1937, J/K = -1.1402
+       stretch d_y xi_y: Theta/K = +1.0972, J/K = +1.0476

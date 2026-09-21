@@ -1,0 +1,6 @@
+PASS: W1 symbolic rates and amplitude on a ring of four: d<H_w>/du_z = Re chi_z^dagger (H_w chi)_z at every site, and the densities sum to <H_w>
+PASS: W2 general weight-one bond energy: bump test gives u_x = delta^2/12 + ((-f2 + 4*f4)/(576*f2)) delta^4; the power mean of order p gives p/6 delta^2: equal iff p = 1/2; the function f enters at the fourth order
+PASS: W3 ten bodies on a 16^3 torus: |total pull| / sum |pulls| = 1.9e-16 with sources proportional to the energies, 3.8e-02 with every body sourcing alike
+PASS: W4 sum_x d/du_x = identity (weight one) by finite differences: relative defect 2.4e-13 for <H_w>, 1.7e-10 and 2.1e-10 for the two weight-one field energies, 1.00 for a field energy quadratic in u
+PASS: W5 two walkers on a ring of 240 (dense exponentials, 60 steps): ledger change -4.0e-12 with the energy source; -2.388e-04 with the probability source, against the predicted -2.388e-04
+REFUTER TOTAL: PASS=5 FAIL=0

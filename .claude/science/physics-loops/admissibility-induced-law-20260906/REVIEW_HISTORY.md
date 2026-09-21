@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 55 — author checks (not a review PASS)
+Written lens pass by the supervisor: the ledger is a premise; no "iff" over all motions; a site term is excluded by locality, not by scale covariance; the continuum form is a known static theory of 1912 and is named. Refuting pass with symbolic calculus, transforms on a `16³` torus, finite differences and dense exponentials (5/0). Three control artefacts folded (missing local rate in the rest source; midpoint averaging of amplitudes; balance read from displacements). Census 10/10 in family.

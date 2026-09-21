@@ -1,0 +1,11 @@
+# Block 55 — contract (2026-09-21; third block of the source-link direction)
+
+**Owner's instruction.** "ok lets work the source link into the amplitude layer". Blocks 53 and 54 (PRs #8568, #8570) gave the rate field its law and the amplitude its response; the weak-field packet's third supplied piece is the source, `ρ = |ψ|²`. Block 54 named this block's question: does action and reaction force the amplitude's energy density, not its probability density, to be the source?
+
+**Foundations.** The axioms memo and the parked-decisions registry were read in full on 2026-09-21 (block 53). The memo contains no conserved energy; this block's premise — the pair keeps a ledger — is supplied. "Only records are readable": a source carried by an amplitude that has formed no record is in tension with the record reading; the block does not settle it and gives the form of the result if only records source. No statistical statement is used or compared (parked entry 1 untouched).
+
+**Lens pass (supervisor, in writing; the campaign's no-subagent rule).** Foundations: as above. Rigour: no "iff" over all motions for the ledger (it would need the reachable directions of `du/dt` to span) — state a sufficient law and an exact rate for any other source; the pair "iff" of matched pulls rests on the potential's central difference not vanishing identically; a site term of weight one IS scale covariant, so it is excluded by block 53's locality clause, not by scale covariance. Comparator: the continuum form of the weight-one law is a known static theory of 1912, reached by the same argument; name it under the Premises and Prior art. Strategy: three supplied clauses, one pure number; say plainly what is still supplied.
+
+**Exact target.** T1 the ledger identity; T2 the law that keeps the ledger, the exact rate for any other source, the rest-body and moving-body forms; T3 matched pulls; T4 weight one, the unit of rate not a variable, the second order fixed. Executed and not claimed: the coupled motion of two walkers.
+
+**Boundaries fixed in advance.** The ledger is a premise; mean field; static law; `γ` and `f` beyond second order not derived; unrecorded amplitudes as sources not settled; lengths not addressed; nothing adopted.

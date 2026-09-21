@@ -1,0 +1,4 @@
+PASS: W1 3^3 torus: exact rational rank 78 of the 108 constraints on 81 bonds: the kernel has dimension 3
+PASS: W2 three sinks (5, 2, 9) on the 6^3 torus: the current of Phi = -G_L * (Q - mean Q) has divergence -(Q - mean Q) at all 216 sites and no constant part (its circulation vanishes identically, being a difference of a site function)
+PASS: W3 six axes at density 7/10: the momentum crossing a bond is (rho/3, 0, 0) by enumeration of its 49 states; sphere menu: three times the pressure rho/(3 sqrt 3) equals the density times the speed 1/sqrt 3
+REFUTER TOTAL: FAIL=0

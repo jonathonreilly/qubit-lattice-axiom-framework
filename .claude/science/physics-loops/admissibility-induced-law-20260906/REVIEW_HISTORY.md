@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 46 — author checks (not a review PASS)
+Exact rank by two machineries (modulo a prime on the 4^3 torus; over the rationals on the 3^3 torus). Theorem text re-read against the runner before the gates. Census 7/7 in family.

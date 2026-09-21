@@ -1,0 +1,9 @@
+# Block 70 — contract (2026-09-21; eighteenth block of the source-link direction; fourteenth of the 12-hour campaign)
+
+**Question.** Blocks 68 (#8599) and 69 (#8601) compared the walk's eight species through `H²` in UNIFORM fields. What are the maps behind those comparisons, do they hold for fields that vary, and what do they say about the count of species — the queue's "are the eight species all kept?" and "the species under the twist hop"?
+
+**Lens pass (supervisor, in writing; no subagents).** Foundations: the maps are properties of a supplied walk; the site signs and the mirror image are not among the Lattice axiom's symmetries (proper rotations only); nothing is removed or kept by fiat; parked decision 4 not touched. Rigour: `H²` cannot see the sign `det D`; work with the generator itself; operator identities checked as equalities of spinor fields with all components of every field varying; re-verify block 65's operator before using it; an exact witness for every negative sentence. Comparator: the site-sign symmetries of lattice walkers and the equal count of the two senses — under the Premises. Strategy: turn "kept or removed" into a statement of multiplicity under the couplings that respect the maps; see whether any coupling stands out.
+
+**Exact target.** T1 `V_n = R_nU_n`: `V_nHV_n = s_nH`, any rate field; involutions; even maps anticommute; densities; `s_n` the sense. T2 table: rates unchanged; frame `ρEρ`; twist `ρϑ`; reach two `BD`; reach three unchanged. T3 two classes of eight exact copies under rates and reach-three strains (even maps; `A_n = ΘV_n` for odd); inversion joins the classes through the mirror-image fields; `U_(111)` reverses the energy for all but the reach-two strain; exact cubic-trace witness.
+
+**Boundaries fixed in advance.** No species declared physical or removed; no coupling chosen; no classification of all maps; the field's own energy outside; nothing adopted.

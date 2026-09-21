@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_eight_species_are_exchanged_by_site_signs_and_a_half_turn_of_the_coin_2026_09_21.py
+runner_sha256: cbb436797a01bfdd73ed3c04a3cc270793c2eccbca6af8df719e1f7627d3e2b2
+input_fingerprint_sha256: 5519d24342cafca0ec4588924db55482523ce19822bd7d66431b500cf3f52e72
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 35.00
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a 6x6x6 torus, for all eight species n and a rational state, V_n H V_n psi = det(D_n) H psi and V_n (phi H phi) V_n psi = det(D_n) (phi H phi) psi at all 216 sites, phi a varying rational rate field: the four species with an even number of reflected axes are exchanged with the first by exact symmetries of the walk in any rate field; the four odd ones by maps that reverse the energy; det(D_n) is the sense of species n (the determinant of the slopes of sin k_a at its zero): four of each sense
+PASS: B2 T1: V_n V_n = 1 for all eight; V_(110) V_(011) = - V_(011) V_(110) = i V_(101): the even maps anticommute pairwise; the site density psi^dagger psi is unchanged at every site and the coin densities psi^dagger sigma_a psi are turned by rho_n, the energy density Re psi^dagger (H psi) is multiplied by det(D_n): a record that reads the site density cannot tell the species apart
+PASS: C1 T2: for a VARYING rational frame field E(x) (all nine entries), V_n H[E] V_n psi = det(D_n) H[rho_n E rho_n] psi at all 216 sites for all eight n: species n in the frame E is the first species in the frame rho E rho (the same lengths, mirrored angles - block 68 T2 for fields that vary)
+PASS: C2 T2: block 65's identity -(i/2)[theta.sigma, H] psi = (frame rotation + twist hop) psi re-verified at all 216 sites for a varying rational theta; then V_n H[theta] V_n psi = det(D_n) H[rho_n theta] psi for all eight n: the blind walk is blind for every species, with the rotation vector turned by the half turn rho_n
+PASS: D1 T2: for a VARYING rational strain on the bonds (all nine components), reach two: V_n H2[B] V_n psi = det(D_n) H2[B D_n] psi at all 216 sites for all eight n: species n in the strain B is the first species in the strain B D - a stretch along a reflected axis is a squeeze (block 68 T3 for fields that vary); B D is a one-sided change, not a turn of the strain
+PASS: D2 T2: reach three: V_n H3[B] V_n psi = det(D_n) H3[B] psi at all 216 sites for all eight n and the same varying strain: with rates and reach-three strains the even maps are exact symmetries for every field configuration, and the odd maps reverse the energy: no field of those two kinds tells the species apart
+PASS: E1 T3: on a 4x4x4 torus with a rational reach-two strain field, tr H2[B]^3 = -735/8192 exactly (sum over all 128 basis states of <H e|H|H e>), not zero: the spectrum of the walk in a varying reach-two strain is NOT symmetric about zero, whereas U_(111) H U_(111) = -H for rates, frames, twists and reach-three strains (B1, C1, C2, D2 with n = (1,1,1), rho = 1) makes theirs symmetric for every field configuration
+PASS: E2 T3: the reversal of motion Theta = sigma_2 x (complex conjugation) commutes with the walk in all five kinds of varying real field (rates, frame, twist, reach-two and reach-three strains) at all 216 sites, and Theta Theta = -1; for the four odd species A_n = Theta V_n anticommutes with the walk in rates and in reach-three strains and keeps the site density: antilinear, it carries every solution to a solution in the SAME fields with the same site densities and the energy reversed
+PASS: E3 T3: the inversion x -> -x (no action on the coin) sends the walk in each of the five kinds of varying field to MINUS the walk in the mirror image of that field (site fields at -x; bond fields on the inverted bond), at all 216 sites: with the reversal of motion it carries a solution of one class to a solution of the other class in the mirror-image fields - the two classes of eight branches are mirror images of each other
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — V_n V_n = 1 for all eight maps; the anticommutation of the even maps; the site density and the three coin densities at all 216 sites of a 6x6x6 torus
+per_site: executed — every exchange identity (walk, rates, frame, twist, reach-two strain, reach-three strain) as an equality of spinor fields at all 216 sites, all eight species, fields varying with every coordinate
+per_mode: executed — the cubic trace of the walk in a reach-two strain over all 128 basis states of a 4x4x4 torus (exact, not zero); the energy reversal by U_(111) for the other four kinds of field; the sense of each of the eight zeros
+per_block: executed — block 65's first-order identity re-verified for the varying rotation vector used; all nine components of the frame and of the strain varied at once; the reversal of motion and the inversion against all five kinds of field
+lattice_wide: T1 and T2 are operator identities for every state and every field on every torus with even sides and on the infinite lattice; T3's cubic trace is one executed rational strain field; whether the eight species are all physical, which coupling is supplied and how far it may reach are not decided
+PASS: G1 the five N5 resolution lines are printed
+scope: the species-exchange maps — site signs and a half turn of the coin exchange the walk's eight species exactly, for fields that vary: rates are unchanged, a frame and a twist are turned by the half turn, a reach-two strain is changed on one side only (B -> B D), a reach-three strain is unchanged; odd species come with the energy reversed; the reach-two strain alone breaks the energy reversal
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

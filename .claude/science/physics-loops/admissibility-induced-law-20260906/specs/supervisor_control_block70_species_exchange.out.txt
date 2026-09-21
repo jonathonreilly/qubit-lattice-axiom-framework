@@ -1,0 +1,23 @@
+[W1] 6x6x6 torus, random real fields, dense matrices: largest entry of V_n H[field] V_n - det(D) H[field'] (in brackets: with the field left unchanged)
+     n = (0, 0, 0), det D = +1, rho = (1, 1, 1): rates 0.0e+00 (0.00); frame 0.0e+00 (0.00); twist 0.0e+00 (0.00); reach2 0.0e+00 (0.00); reach3 0.0e+00 (0.00)
+     n = (0, 0, 1), det D = -1, rho = (-1, -1, 1): rates 0.0e+00 (0.00); frame 0.0e+00 (0.69); twist 0.0e+00 (0.85); reach2 0.0e+00 (0.32); reach3 0.0e+00 (0.00)
+     n = (0, 1, 0), det D = -1, rho = (-1, 1, -1): rates 0.0e+00 (0.00); frame 0.0e+00 (0.65); twist 0.0e+00 (0.64); reach2 0.0e+00 (0.38); reach3 0.0e+00 (0.00)
+     n = (0, 1, 1), det D = +1, rho = (1, -1, -1): rates 0.0e+00 (0.00); frame 0.0e+00 (0.69); twist 0.0e+00 (0.66); reach2 0.0e+00 (0.38); reach3 0.0e+00 (0.00)
+     n = (1, 0, 0), det D = -1, rho = (1, -1, -1): rates 0.0e+00 (0.00); frame 0.0e+00 (0.69); twist 0.0e+00 (0.66); reach2 0.0e+00 (0.36); reach3 0.0e+00 (0.00)
+     n = (1, 0, 1), det D = +1, rho = (-1, 1, -1): rates 0.0e+00 (0.00); frame 0.0e+00 (0.65); twist 0.0e+00 (0.64); reach2 0.0e+00 (0.36); reach3 0.0e+00 (0.00)
+     n = (1, 1, 0), det D = +1, rho = (-1, -1, 1): rates 0.0e+00 (0.00); frame 0.0e+00 (0.69); twist 0.0e+00 (0.85); reach2 0.0e+00 (0.38); reach3 0.0e+00 (0.00)
+     n = (1, 1, 1), det D = -1, rho = (1, 1, 1): rates 0.0e+00 (0.00); frame 0.0e+00 (0.00); twist 0.0e+00 (0.00); reach2 0.0e+00 (0.38); reach3 0.0e+00 (0.00)
+
+[W2] multiplicities of the levels {multiplicity: number of levels} and the largest |E_i + E_(N-i)|:
+     rates + reach-three strain  : {2: 216}, asymmetry 6.22e-15
+     frame                       : {2: 216}, asymmetry 4.88e-15
+     twist                       : {2: 216}, asymmetry 8.88e-15
+     reach-two strain            : {2: 216}, asymmetry 1.18e-02
+
+[W3] 4x4x4 torus, the runner's rational reach-two strain field: tr H^3 = -0.0897216796875; the runner's exact value -735/8192 = -0.0897216796875
+     its spectrum: largest 1.906900, smallest -1.921918
+
+[W4] twins (rates + reach-three strain, 6x6x6, t = 7): A_n = Theta V_n, Theta = sigma_2 x conjugation
+     n = (1, 0, 0): |A U psi - U A psi| = 0.0e+00; largest difference of site densities between the movies = 0.0e+00; energies -0.024148 and +0.024148; contrast, V_n alone: |V U psi - U V psi| = 1.50
+     n = (0, 1, 0): |A U psi - U A psi| = 0.0e+00; largest difference of site densities between the movies = 0.0e+00; energies -0.024148 and +0.024148; contrast, V_n alone: |V U psi - U V psi| = 1.50
+     n = (1, 1, 1): |A U psi - U A psi| = 7.4e-16; largest difference of site densities between the movies = 9.5e-18; energies -0.024148 and +0.024148; contrast, V_n alone: |V U psi - U V psi| = 1.50

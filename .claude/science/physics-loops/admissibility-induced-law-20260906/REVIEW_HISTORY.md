@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 70 — author checks (not a review PASS)
+Written lens pass by the supervisor. A scratch expectation (a further doubling of levels from the anticommuting even maps) failed on execution and is not claimed. The exact witness for the asymmetry was found after simpler strain fields gave zero. A contrast line added to the control's twin test. A proof sentence with an ellipsis rewritten; N1.1 narrowed. Three checks added before the gates (sense, energy density, inversion). Census 11/11 in family.

@@ -1,0 +1,13 @@
+# block 49 balance control: committed output (floating point). Command per line: supervisor_control_block49_balanced.py 96 0.3 16 8000 SEED 1.0 3 1.0 MODE1 MODE2 (c: captures only; b: in balance); forces are towards the other body
+
+modes cc seed 1 sep=16 rho=0.3 gamma=1.0 | body1 (123 sites): captures 7.797, emits 0.000, net +7.797, store 0, F1=+0.1262+-0.0116 | body2 (123 sites): captures 7.799, emits 0.000, net +7.799, store 0, F2=+0.1380+-0.0115 | reference K0 Q1 Q2/r^2 with gross captures = 0.1559; 4 ticks/s
+modes cc seed 2 sep=16 rho=0.3 gamma=1.0 | body1 (123 sites): captures 7.800, emits 0.000, net +7.800, store 0, F1=+0.1605+-0.0183 | body2 (123 sites): captures 7.783, emits 0.000, net +7.783, store 0, F2=+0.1511+-0.0157 | reference K0 Q1 Q2/r^2 with gross captures = 0.1556; 4 ticks/s
+modes bc seed 1 sep=16 rho=0.3 gamma=1.0 | body1 (123 sites): captures 7.247, emits 7.248, net -0.001, store 33, F1=+0.0950+-0.0150 | body2 (123 sites): captures 7.842, emits 0.000, net +7.842, store 0, F2=+0.0223+-0.0119 | reference K0 Q1 Q2/r^2 with gross captures = 0.1457; 4 ticks/s
+modes bc seed 2 sep=16 rho=0.3 gamma=1.0 | body1 (123 sites): captures 7.242, emits 7.242, net -0.000, store 39, F1=+0.1231+-0.0113 | body2 (123 sites): captures 7.839, emits 0.000, net +7.839, store 0, F2=+0.0074+-0.0181 | reference K0 Q1 Q2/r^2 with gross captures = 0.1455; 4 ticks/s
+modes bb seed 1 sep=16 rho=0.3 gamma=1.0 | body1 (123 sites): captures 7.294, emits 7.297, net -0.003, store 32, F1=+0.0405+-0.0144 | body2 (123 sites): captures 7.284, emits 7.284, net +0.000, store 30, F2=-0.0220+-0.0118 | reference K0 Q1 Q2/r^2 with gross captures = 0.1362; 4 ticks/s
+modes bb seed 2 sep=16 rho=0.3 gamma=1.0 | body1 (123 sites): captures 7.303, emits 7.302, net +0.000, store 37, F1=+0.0057+-0.0238 | body2 (123 sites): captures 7.274, emits 7.273, net +0.001, store 36, F2=+0.0018+-0.0199 | reference K0 Q1 Q2/r^2 with gross captures = 0.1362; 4 ticks/s
+
+pooled (mean of the runs; error = root of the summed squared errors over the number of values):
+both capture: push 0.1440 +- 0.0073 against the reference 0.1558 (ratio 0.92 +- 0.05)
+body 1 in balance, body 2 captures: push on body 1 0.1091 +- 0.0094 against 0.1456 (ratio 0.75 +- 0.06); push on body 2 0.0149 +- 0.0108 (ratio 0.10 +- 0.07)
+both in balance: push 0.0065 +- 0.0090 against 0.1362 (ratio 0.05 +- 0.07)

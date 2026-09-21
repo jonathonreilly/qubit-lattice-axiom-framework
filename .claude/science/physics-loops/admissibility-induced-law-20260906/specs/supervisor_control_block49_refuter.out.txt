@@ -1,0 +1,7 @@
+PASS: W1 symbolic: mean content of cosine-law emission along the normal 2/3; <|s|_1> = 3/2; angular mean of |s|_1 (|s|_1 - 3/2) = -5/4 + 4/pi = 0.0232
+PASS: W2 transport solve on a 5x5x5 block, three contents: with cosine-law emission at the capture rate the stationary density is the upstream density at every site; without emission it is the upstream density times one minus the multinomial expression
+PASS: W3 path enumeration: a record emitted through a face chosen with the cosine law and streaming from there passes a site with the multinomial probability of the directed walk from the body (n = 1, 2, 4, 6; two contents)
+PASS: W4 the residue of uniform emission in units of rho/(4 pi sqrt 3 r^2), by quadrature over the simplex: approach to |r|_1 (|r|_1 - 3/2) with a deviation proportional to 1/n: (1,2,2): limit +0.2778; quadrature at n = 60, 240, 960: +0.2373, +0.2667, +0.2749 (deviation times n: -2.43, -2.67, -2.74); (1,1,1): limit +0.4019; quadrature at n = 60, 240, 960: +0.3225, +0.3790, +0.3960 (deviation times n: -4.77, -5.51, -5.73); (28,1,1): limit -0.4601; quadrature at n = 60, 240, 960: -0.4386, -0.4553, -0.4589 (deviation times n: +1.29, +1.14, +1.10); (11,16,33): limit +0.1051; quadrature at n = 60, 240, 960: +0.1133, +0.1084, +0.1060 (deviation times n: +0.49, +0.81, +0.91)
+PASS: W5 symbolic: q_1/G = 8*pi*(1 - rho)/3; comparator: 8.07e+60 ticks, 3/(8 pi T) = 1.48e-62
+REFUTER TOTAL: PASS=5 FAIL=0
+exit=0

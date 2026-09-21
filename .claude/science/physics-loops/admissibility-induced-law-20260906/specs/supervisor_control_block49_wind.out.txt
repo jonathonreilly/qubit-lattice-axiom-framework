@@ -1,0 +1,39 @@
+# block 49 uniform-wind control: committed output (floating point; commands in the control's docstring); last line of each run = tick 40 or 60
+
+## dilute body in balance, gamma = 0
+WIND L=32 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=400 sites/body=15.7; swept share of captures 0.000
+ tick  captured-fraction   p_x/u (measured)   p_x/u over captured fraction    p_y/u    p_z/u    X/(c u sum frac)
+   40   0.907               +0.768+-0.029       +0.846+-0.032                 -0.044   -0.001   +0.000+-0.000
+
+## dilute body in balance, gamma = 1
+WIND L=32 rho=0.3 gamma=1.0 b=0.3 (u = 0.0994) seeds=400 sites/body=15.7; swept share of captures 0.000
+ tick  captured-fraction   p_x/u (measured)   p_x/u over captured fraction    p_y/u    p_z/u    X/(c u sum frac)
+   40   0.906               +0.750+-0.027       +0.828+-0.029                 -0.052   +0.001   +0.000+-0.000
+
+## dilute body in balance, gamma = 4
+WIND L=32 rho=0.3 gamma=4.0 b=0.3 (u = 0.0994) seeds=400 sites/body=15.7; swept share of captures 0.000
+ tick  captured-fraction   p_x/u (measured)   p_x/u over captured fraction    p_y/u    p_z/u    X/(c u sum frac)
+   40   0.906               +0.723+-0.028       +0.798+-0.031                 +0.034   +0.017   +0.000+-0.000
+
+## one site in balance, gamma = 0
+WIND L=24 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=1500 sites/body=1.0; swept share of captures 0.000
+   60   0.936               +0.919+-0.051       +0.982+-0.054                 +0.086   -0.038   +0.000+-0.000
+WIND L=24 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=1500 sites/body=1.0; swept share of captures 0.000
+   60   0.936               +0.888+-0.052       +0.949+-0.055                 +0.006   +0.025   +0.000+-0.000
+WIND L=24 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=1500 sites/body=1.0; swept share of captures 0.000
+   60   0.935               +0.845+-0.049       +0.903+-0.053                 +0.073   +0.063   +0.000+-0.000
+WIND L=24 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=1500 sites/body=1.0; swept share of captures 0.000
+   60   0.936               +0.963+-0.051       +1.029+-0.054                 +0.071   -0.006   +0.000+-0.000
+
+## one capturing site, gamma = 0
+WIND L=24 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=1500 sites/body=1.0; swept share of captures 0.000
+   60   0.933               +0.902+-0.036       +0.967+-0.039                 -0.050   -0.042   +0.000+-0.000
+WIND L=24 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=1500 sites/body=1.0; swept share of captures 0.000
+   60   0.933               +0.958+-0.037       +1.028+-0.040                 +0.037   -0.055   +0.000+-0.000
+WIND L=24 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=1500 sites/body=1.0; swept share of captures 0.000
+   60   0.933               +0.917+-0.038       +0.982+-0.040                 +0.001   +0.039   +0.000+-0.000
+WIND L=24 rho=0.3 gamma=0.0 b=0.3 (u = 0.0994) seeds=1500 sites/body=1.0; swept share of captures 0.000
+   60   0.933               +0.949+-0.036       +1.017+-0.039                 -0.017   +0.006   +0.000+-0.000
+
+pooled (mean of the four runs; error = root of the summed squared errors over four): one site in balance 0.966 +- 0.027; one capturing site 0.999 +- 0.020
+for comparison (block 48's control): the dilute body capturing only, 0.97 +- 0.03 at gamma = 0 and 0.89 +- 0.03 at gamma = 1

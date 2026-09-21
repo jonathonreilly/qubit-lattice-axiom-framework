@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 49 (2026-09-21)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 48 N1 route 3: a balance of capture and emission is not worked; decision record: growth shares the rate q_1 with the attraction"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the capture picture's attraction is inseparable from growth (ratio 8 pi (1 - rho)/3); the record layer supplies the source, not the carrier; next the source link into the amplitude layer"
+```

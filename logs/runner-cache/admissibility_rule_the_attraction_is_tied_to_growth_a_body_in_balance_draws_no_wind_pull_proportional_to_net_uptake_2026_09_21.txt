@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_attraction_is_tied_to_growth_a_body_in_balance_draws_no_wind_pull_proportional_to_net_uptake_2026_09_21.py
+runner_sha256: 03e8385f35c0e14d44336f7579d03487b564fe36c3b6e00bc5f49462694f1bec
+input_fingerprint_sha256: 95c9d82611b859863699f9e44ad5f363dadc2fdbe6c9723c2e26ae4a158836c9
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_ATTRACTION_IS_TIED_TO_GROWTH_A_BODY_IN_BALANCE_DRAWS_NO_WIND_PULL_PROPORTIONAL_TO_NET_UPTAKE_GROWTH_RATE_FIXED_BY_THE_FORCE_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentence used
+PASS: B1 T1: for an antisymmetric bond current the flux out of a region is minus the net uptake inside it, captures minus emissions at the body's sites (a cube around the body: 6883/420; an L-shaped region: -779/60; the body alone: 4003/420): a body whose emissions equal its captures, in a gas that is stationary elsewhere, sends no flux through any surface around it
+PASS: C1 T2: emission with the cosine law through the six faces gives a content s the weight |s|_1 and places it on the neighbour e_k with the step frequency w_k = |s_k|/|s|_1: emitted records are directed walks that start at the body
+PASS: C2 T2: with the emission rate rho f(s) |s|_1/sqrt 3 per content, which for a uniform gas is the cosine law at the capture rate, the surplus of emitted records cancels the capture deficit at every site of a 4x4x4 block: the gas around a body in balance is uniform and no site feels a force
+PASS: C3 T2: a body that emits uniformly at its capture rate sends no net number through any shell (the mean of |s|_1 is 3/2) and leaves the force coefficient |r|_1 (|r|_1 - 3/2) in units of rho/(4 pi sqrt 3 r^2): (1, 2, 2): 5/18; (2, 3, 6): 11/98; (84, 12, 5): -5353/14450; (6, 6, 7): 95/242; repulsive near the axes, attractive near the body diagonals, zero where |r|_1 = 3/2
+PASS: D0 T3: cosine-law emission about a face's outward normal carries the mean content (2/3) n, and a body has as many faces with normal n as with -n (cube, plate, ball of radius 3), so faces that emit at equal rates carry off no momentum on average: a body in balance is pushed with its gross capture
+PASS: D1 T3: in the closure the wind of a body is made by its net uptake and a body takes up momentum with its gross capture, so the push on body 2 is K_0 (kept fraction of 1) Q_1 Q_2/r^2 and the push on body 1 is K_0 (kept fraction of 2) Q_1 Q_2/r^2: kept fractions 1, 1: pushes in units of K_0/r^2: 40 on body 2, 40 on body 1; kept fractions 0, 1: pushes in units of K_0/r^2: 0 on body 2, 40 on body 1; kept fractions 1/4, 1/2: pushes in units of K_0/r^2: 10 on body 2, 20 on body 1; kept fractions 0, 0: pushes in units of K_0/r^2: 0 on body 2, 0 on body 1
+PASS: D2 T4: q_1 = (8 pi/3)(1 - rho) G: the relative growth rate of a transparent body is 8 pi (1 - rho)/3 times the coefficient of the pull it exerts, and the ratio is the same for a body that keeps any fraction of what it captures; a mass that is steady over T ticks pulls with a coefficient below 3/(8 pi (1 - rho) T)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the cosine law through six faces gives |s|_1 and the step frequencies, for five rational contents; the mean emitted content (2/3) n
+per_site: executed — surplus against deficit at the 63 sites of a 4x4x4 block for three contents; the flux identity for three regions of a 5x5x5 block
+per_mode: not applicable
+per_block: executed — the residual coefficients 5/18, 11/98, -5353/14450, 95/242; pushes for four pairs of kept fractions; the ratio q_1/G at three densities
+lattice_wide: T1 is the lattice divergence theorem applied to block 45's conserved current; T2 is exact for independent records; T3 and T4 are statements in the closure of blocks 45 and 47; the executed forces of bodies in balance are controls, not proofs
+PASS: G1 the five N5 resolution lines are printed
+scope: bodies in balance in the inertial record gas — no flux without net uptake, the shadow filled by cosine-law emission, the residue of uniform emission, unequal action and reaction in the closure, and the relation between growth rate and force coefficient
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

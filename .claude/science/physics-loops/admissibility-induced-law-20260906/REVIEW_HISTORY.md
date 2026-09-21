@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 64 — author checks (not a review PASS)
+Written lens pass by the supervisor. A sign was broken in scratch (the inverse frame taken for the co-frame: `β = −1`); an unverified sentence of the first draft (what the weaker demand leaves free) was caught, computed and added to the runner; a miscount was corrected. The first run of the gates was stopped to add T5 (what blindness costs), found while scoping the next block. Runner by truncated expansions; refuting pass by exact frames at rational points, all orders in the strain (W1–W4, 4/0). Census 11/11 in family.

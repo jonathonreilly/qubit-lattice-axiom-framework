@@ -1,0 +1,20 @@
+[W1] dense H[B] on a 4x3x3 torus, random strain of size 0.1: |H - H^dagger| = 0.0e+00
+     d<H[B]>/dB on one bond: numerical -0.00807812, bond current -0.00807812
+
+[W2] B = d xi: largest shift of an eigenvalue of H[B] against H, for xi of size s:
+     s = 0.04: max shift 2.135e-03   (shift / s^2 = 1.334)
+     s = 0.02: max shift 5.333e-04   (shift / s^2 = 1.333)
+     s = 0.01: max shift 1.333e-04   (shift / s^2 = 1.333)
+     a strain of size 0.01 that is NOT a relabelling: max shift 5.623e-03  (first order)
+
+[W3] exact frames, polynomial strain and rotation fields; change of each basis density under the rotation at rational points:
+     rank of the 8 x 6 system: 4; null space dimension 2
+     null vector (c0, c1, c2, c3, c4, c5) = [1, 0, 0, 0, 0, 0]
+     null vector (c0, c1, c2, c3, c4, c5) = [0, -1/8, -1/4, 1/2, 1, 0]
+     (expected: the volume alone, and (0, -1/8, -1/4, 1/2, 1, 0): the blind combination; the rotation is exact in the strain here, not first order)
+
+[W4] D* + sqrt(g) R at rational points for the finite polynomial strain above (exact frames and exact curvature):
+     at (1/2, -1/3, 2/5): D* = +0.024262,  D* + sqrt(g) R = 0
+     at (-3/4, 1/5, 1/3): D* = +0.122325,  D* + sqrt(g) R = 0
+     at (2/3, 3/4, -1/2): D* = +0.188414,  D* + sqrt(g) R = 0
+     at (1/7, -2/3, -3/5): D* = -0.032764,  D* + sqrt(g) R = 0

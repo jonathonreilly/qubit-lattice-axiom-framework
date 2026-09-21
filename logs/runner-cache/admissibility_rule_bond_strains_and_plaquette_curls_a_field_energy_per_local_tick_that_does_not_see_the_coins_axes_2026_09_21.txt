@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_bond_strains_and_plaquette_curls_a_field_energy_per_local_tick_that_does_not_see_the_coins_axes_2026_09_21.py
+runner_sha256: abad50461da5d66defc5a569abd0d873c051745efb0f1f495dd53e032471c59a
+input_fingerprint_sha256: 5e8532f11a7f0baf4268261b0dfe01c48fff6c016eaf14a8ca73752649eb09c8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 14.60
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_BOND_STRAINS_AND_PLAQUETTE_CURLS_A_FIELD_ENERGY_PER_LOCAL_TICK_THAT_DOES_NOT_SEE_THE_COINS_AXES_IS_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a 5x4x3 torus the nine curls F_ab^j = d_a B_b^j - d_b B_a^j of a rational strain are unchanged, plaquette by plaquette, when the strain is shifted by the differences d_a xi_j of a rational displacement of the sites
+PASS: B2 T1: on a 5x5x5 torus H[B] = H + sum sigma_a (1/2){C_a[B_a^j], S_j} is hermitian for a rational strain field, and the derivative of <H[B]> in one bond's strain, by an exact difference, is block 63's bond current J_a^j on that bond: the strain is sourced by what the walk conserves
+PASS: B3 T1: for a field energy (1/2) sum (weight)(F_ab^j)^2 with a different rational weight on every plaquette and index, the divergence over a of dF/dB_a^j vanishes at every site for each j: the field equations of any function of the curls are divergence-free identically, as block 63's current is for stationary states; the static equations are consistent at first order in the strain
+PASS: C1 T2: rotate the coin axes by an angle that varies from place to place; to first order in the rotation and in a general strain, the density c0 det e + c5 det e (eps.T) + det e [c1 T1 + c2 T2 + c3 T3] + c4 div(det e V) is unchanged point by point iff c5 = 0 and (c1, c2, c3) = (-c4/8, -c4/4, c4/2); c0 is free (exact symbolic algebra, three rotation functions and nine strain functions)
+PASS: C2 T2: the weaker demand, unchanged UP TO A DIVERGENCE (all variational derivatives of the first-order change vanish), fixes c5 = 0 and c1 : c2 : c3 = 1 : 2 : -4 and leaves c4 free: without the point-by-point demand the strength with which the rates couple to the lengths, and with it beta, stays free; point by point is what a ledger linear in the rates asks for
+PASS: D1 T3: D* = det e [T1/4 + T2/2 - T3] - 2 div(det e V) equals MINUS (volume density) x (scalar curvature) of the metric g = e^T e, point by point, through second order in a general strain of nine functions (exact symbolic algebra): with c4 = -2K the blind density is block 60's member, -K x volume x curvature
+PASS: D2 T3: split the strain into its symmetric and antisymmetric parts; the second-order part of D* has NO variational derivative with respect to the three antisymmetric functions: at second order the blind member does not see them (they enter through a total derivative only)
+PASS: E1 T4: on the frame l x identity, l = exp(lam), the family has first order -2 c4 Lap lam and second order (4c1 + 2c2 + 4c3)|grad lam|^2: in block 60's form a = -2 c4, ap - b = -(4c1 + 2c2 + 4c3), so beta = c4/(4c1 + 2c2 + 4c3); for the member with c1 alone beta = c4/(4 c1), a free number; for the blind member beta = 1, and c4 = -2K gives block 60's a = 4K
+PASS: E2 T4: for the member with c1 alone (one field of curls for each coin axis) the antisymmetric strain has a non-zero variational derivative at second order: a member that sees the coin axes has three more fields, which the walker in a uniform frame does not see (block 62 T1)
+PASS: E3 T5: on the exactly stationary state of the 4x4x4 torus (H psi = psi) the response to a rotation of one site's three forward bonds is J_a^j(x) - J_j^a(x) (by an exact difference), and it is non-zero at all 64 sites for each of the three rotation axes, summing to zero over the torus: a field energy that does not see the coin's axes gives that rotation no field equation, so the static equations have no solution for this content; a blind field energy needs a blind content
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the nine curls of a rational strain on a 5x4x3 torus under a rational relabelling, plaquette by plaquette; hermiticity of H[B] and the derivative of <H[B]> in one bond's strain on a 5x5x5 torus
+per_site: executed — the divergence of the field equations of a weighted sum of squared curls at every site of a 5x4x3 torus for each coin axis
+per_mode: executed — the change of the six-number family of densities under a rotation of the coin axes that varies from place to place, to first order in three rotation functions and nine strain functions: all coefficient conditions and their solution
+per_block: executed — the blind density against the curvature density of e^T e through second order for nine strain functions; the variational derivatives with respect to the antisymmetric strain for the blind member and for the member with c1 alone; the exponent beta on the isotropic frame; the torque J_a^j(x) - J_j^a(x) of an exactly stationary state at all 64 sites of a 4x4x4 torus
+lattice_wide: T1 holds for every strain, relabelling, state and function of the curls on every torus and on the infinite lattice, the consistency of the static equations at first order in the strain and for uniform rates; T2 and T3 are continuum identities for every smooth frame, to the orders stated; T4 for the whole family; T5(a), (b) for every state and every field energy that does not depend on the rotation of the three forward bonds of a site, T5(c) for the stated stationary state; on the lattice the contractions that mix the coin index with the bond index have no unique placement, so T2 to T4 are statements at leading order in the wave vector; that bonds carry strains, the second-neighbour coupling, the blindness, K, c0 = 0 and the kinetic terms are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: bond strains and plaquette curls — curls are blind to relabellings exactly, the strain is sourced by the walk's conserved bond current, and the field equations of any function of the curls are divergence-free identically; among densities with two derivatives, blindness point by point to a varying rotation of the coin axes leaves only the volume and the curvature density, so a ledger linear in the rates that does not see the coin's axes is block 60's member and beta = 1; but such a field energy gives the rotation of a site's bonds no equation, and the walk's stationary states exert a torque there: a blind field energy needs a blind content
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

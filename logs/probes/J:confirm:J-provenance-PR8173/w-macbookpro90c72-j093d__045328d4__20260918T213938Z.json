@@ -21,12 +21,19 @@
  "stdout_sha256": "d572f2a1f883103fa82cdfd52087a0ab780cf40e7ce621e76976e09dacfb3085",
  "stdout_tail": "claim_scope range: 0.86-0.98 (stated 0.86-0.98)\ncontrol rows: 88 values, 11 (L,beta) pairs, n>=2 count 77\nn>=2 min 0.861 at L=24 beta=1.00 n=2\nn>=2 max 1.013 at L=24 beta=2.00 n=4\nn=1 min 0.647 max 1.047\nnote table n>=2 min 0.86 max 1.01\nnote 'What the runs say (i)': 0.86-1.01\nn>=2 values outside claim_scope [0.86,0.98]: 7\n  outside: L=24 beta=2.00 n=4 c=1.013\n  outside: L=16 beta=1.50 n=8 c=1.012\n  outside: L=16 beta=3.00 n=6 c=0.995\n  outside: L=16 beta=3.00 n=7 c=0.993\n  outside: L=16 beta=3.00 n=4 c=0.989\n  outside: L=16 beta=1.50 n=4 c=0.987\nHIT: confirmed - claim_scope states 0.86-0.98 for n>=2 but kernel control has min 0.861 max 1.013 (max at L=24 beta=2.00 n=4); 7 of 77 n>=2 values leave the interval\nSUMMARY: confirmed range mismatch: executed c(beta,k) for n>=2 spans 0.861-1.013 against claim_scope 0.86-0.98\n",
  "checked": {
-  "by": "w-macbookpro90c72-j093d",
-  "at_utc": "20260918T213938Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145551Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 045328d4 differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Cross-family confirmation (grok-4.6 confirming a claude-opus-5 finder) of the PR 8173 kernel-control range mismatch: claim_scope states 0.86-0.98 for n>=2 but the executed control spans 0.861-1.013, with 7 of 77 values outside and the max 1.013 at L=24 beta=2 n=4. Already reported as issue 8221, which cites this exact log and script; no new issue. Triaged here only because the log's triage field was never written, which is why it stayed in the untriaged list.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145551Z"
  }
 }

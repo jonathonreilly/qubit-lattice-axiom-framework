@@ -22,15 +22,22 @@
  "stdout_sha256": "2f830446e36980751aa32ee998d574dcc790983792cef34d7dbd6c9bc95d2ad1",
  "stdout_tail": " flux-odd\n[PASS] odd N naive trace vanishes at zero flux\n[PASS] Wilson scalar term preserves R2 covariance\n[PASS] Wilson A(4,0.7) anchor\n[PASS] Wilson even-N trace is flux-odd\n[PASS] Wilson even-N trace vanishes at zero flux\n[PASS] Wilson A(3,0.7) anchor\n[PASS] special r=1,t=1 vanishing is real\n[PASS] generic Wilson point is not that special vanishing\n[PASS] finite-ring native instances decrease 3>5>7\n[PASS] dense flux trace equals reduction at N=3\n[PASS] dense Wilson flux trace equals reduction at N=4\n[PASS] PR #4783 rescale freedom persists on the composed surface\n[FAIL] required sentence present: the projective equivariance is realized exac\n[FAIL] required sentence present: the sector-distinguishing weights are torsio\n[FAIL] required sentence present: on even diagonal grids the naive K-odd trace\n[FAIL] required sentence present: the K-odd observable exists at the generatio\n[FAIL] required sentence present: what value it registers remains the wall\n[FAIL] required sentence present: not a terminal no-go\n[FAIL] N1 through N8 gate tokens present\n[PASS] forbidden phrases are absent\n[PASS] W_ names stay whitelisted\n[FAIL] link inventory is one md dependency plus one runner\n[FAIL] in-flight campaign ids are backticked, not linked\n[PASS] instruction-leakage strings absent from note\n[FAIL] note quotes the dependency claim-scope block, not a ledger-authority line\n[FAIL] canonical type, audit boundary, and bounded gate are stated\n[PASS] runtime under 90 seconds\nTOTAL: PASS=43 FAIL=18\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T172541Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha fc83b04b differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=43 FAIL=18' vs cache 'TOTAL: PASS=64 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "All 18 failures are documentation/ledger state: '[FAIL] paired note exists', '[FAIL] ledger exists', '[FAIL] ledger row found for premise source', '[FAIL] note carries exactly three premise scope quotes'. The audited note and its ledger are no longer in the repository, so the runner has nothing to read. Not a computation failure.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z"
  }
 }

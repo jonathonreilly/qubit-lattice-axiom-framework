@@ -30,14 +30,21 @@
  "stdout_sha256": "7074683261ce86fa7fcdb57647945c5f85b28695879b3bcd577cb515f336e793",
  "stdout_tail": "e PASSED 8/8\n  [PASS] Gate target cache PASS=31 FAIL=0\n  [FAIL] kinetic supplier cache PASS=27 FAIL=0\n  [PASS] kinetic supplier says P-SD discharged on K1\n  [PASS] kinetic supplier says P-KIN residual is one-bit flux selector\n  [PASS] kinetic supplier contains K0 countermodel\n  [PASS] P-FLUX composer cache PASS=16 FAIL=0\n  [PASS] P-FLUX composer records today's grade boundary\n  [PASS] P-FLUX composer records retained Z geometry\n  [PASS] P-FLUX composer says current selection is within-surface\n  [FAIL] FSB-K cache PASS=18 FAIL=0\n  [PASS] FSB-K cache says phi not assumed or derived\n  [PASS] Z cache PASS=18 FAIL=0\n  [PASS] Z cache certifies K1 satisfies Z\n  [PASS] Z cache certifies K0 violates Z\n\n========================================================================\nBLOCK 4: status firewall\n========================================================================\n  [PASS] forbidden phrase absent: promoted to retained\n  [PASS] forbidden phrase absent: becomes retained\n  [PASS] forbidden phrase absent: retained on the actual surface\n  [PASS] KS sync says no audit status change\n  [PASS] Noether sync says no promotion\n  [PASS] Gate sync says supplier rows audit-owned\n  [PASS] runner is source verifier only  (does not read or edit audit data)\n\n========================================================================\nTOTAL: PASS=53 FAIL=3\n========================================================================\nVERDICT: supply-line sync verified iff FAIL=0; no audit status is changed.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T180810Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 29afb9d5 differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=53 FAIL=3' vs cache 'TOTAL: PASS=56 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Failures are cross-runner cache-status audits ('[FAIL] Noether target cache PASSED 8/8', '[FAIL] kinetic supplier cache PASS=27 FAIL=0') while the runner's own six target caches report PASS=47/31/27/16/18/18 FAIL=0. It is auditing other runners' pinned caches, whose recorded status has moved. Not a computation of this runner failing.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z"
  }
 }

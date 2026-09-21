@@ -23,14 +23,21 @@
  "stdout_tail": "forbidden phrase: only route\n[PASS] note excludes forbidden phrase: last route\n[PASS] note excludes forbidden phrase: exhausted\n[PASS] note excludes forbidden phrase: closes the route\n[PASS] note excludes forbidden phrase: PDG\n[PASS] note excludes forbidden phrase: theta is closed\n[PASS] note excludes forbidden phrase: r=1/2 is forced\n[FAIL] note declares canonical bounded_theorem claim type\n[PASS] note does not use runner PASS as source status\n[PASS] note does not lean on PR #4783 as authority\n[FAIL] dep link present as markdown label: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md\n[FAIL] dep link present as markdown label: docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md\n[FAIL] dep link present as markdown label: docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md\n[FAIL] only the three origin/main md files are linked\n       []\n[FAIL] in-flight context name appears: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM\n[PASS] in-flight context name is not a markdown target: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM\n[FAIL] in-flight context name appears: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION\n[PASS] in-flight context name is not a markdown target: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION\n[FAIL] primary runner is linked\n[FAIL] status authority header is standard\nTOTAL: PASS=62 FAIL=23\n",
  "checked": {
   "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T172545Z",
+  "at_utc": "20260921T145500Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha fc83b04b differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=62 FAIL=23' vs cache 'TOTAL: PASS=85 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "All 23 failures are documentation state and I verified the target is gone: '[FAIL] paired note exists' fires, and the required phrase 'real-holonomy locus' occurs in ZERO files under docs/ on this checkout. The paired note this runner audits has been removed or renamed. Nothing to do with the physics it computes.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z"
  }
 }

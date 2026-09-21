@@ -25,14 +25,21 @@
  "stdout_sha256": "7b20f61b59563042e1034051585050c190c6784b432841825cbb0e33a8f503ab",
  "stdout_tail": "tive_to_exact=5.573419605078e-03 reference_rel_bound=1.000000000000e-02\nPASS: S1 LP decomposition reference residual stays below 1%: relative=5.573419605078e-03, bound=1.000000000000e-02\nPASS: S2 single-band interband term is zero: chi_inter=+0.000000000000e+00\nchi(mu) curve: mu exact_chi lp_chi residual exact_sign lp_sign\nchi_curve mu=-4.500 exact=+6.422959259647e-03 lp=+6.417363451737e-03 residual=-5.595807909621e-06 sign_exact=+ sign_lp=+\nchi_curve mu=-3.000 exact=+2.938363917146e-03 lp=+2.935171660751e-03 residual=-3.192256394423e-06 sign_exact=+ sign_lp=+\nchi_curve mu=-1.500 exact=-6.975372383267e-03 lp=-6.947962345371e-03 residual=+2.741003789628e-05 sign_exact=- sign_lp=-\nchi_curve mu=+0.000 exact=-9.635406278512e-03 lp=-9.576734049665e-03 residual=+5.867222884751e-05 sign_exact=- sign_lp=-\nchi_curve mu=+1.500 exact=-6.975372386216e-03 lp=-6.947962345371e-03 residual=+2.741004084512e-05 sign_exact=- sign_lp=-\nchi_curve mu=+3.000 exact=+2.938363899453e-03 lp=+2.935171660751e-03 residual=-3.192238701416e-06 sign_exact=+ sign_lp=+\nchi_curve mu=+4.500 exact=+6.422959248036e-03 lp=+6.417363451737e-03 residual=-5.595796298580e-06 sign_exact=+ sign_lp=+\nPASS: S3 chi(mu) active sign tracking: active_pairs=[('+', '+'), ('+', '+'), ('-', '-'), ('-', '-'), ('-', '-'), ('+', '+'), ('+', '+')], exact_signs=['+', '-'], lp_signs=['+', '-']\nPASS: S3 chi(mu) active relative residual stays below 1%: max_rel=6.089232477758e-03 at mu=+0.000, bound=1.000000000000e-02\nTOTAL: PASS=12 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260921T050046Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha db814d54 differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=12 FAIL=1' vs cache 'TOTAL: PASS=13 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Single failure is a cross-runner cache-status check ('source normalization runner cache passes: normalization cache status ok with PASS=9 FAIL=0'), i.e. it audits another runner's pinned cache rather than computing anything. Cache/ledger state on this checkout, not a numerical disagreement.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z"
  }
 }

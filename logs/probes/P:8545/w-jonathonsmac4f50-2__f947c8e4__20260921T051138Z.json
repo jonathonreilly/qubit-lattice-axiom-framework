@@ -36,12 +36,19 @@
  "stdout_sha256": "1d63f5a69b3f60ee1f456ba40bbf3bb6d1f83a9e85561ee635ba79fc7f1ac159",
  "stdout_tail": "mation-20260920 (base main)\nrunners in the PR: 2\n== scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py: rc=0 PASS=22 FAIL=0\n   mutation wrong_center: expected resolvent observed resolvent ok\n   mutation oversized_gap: expected gap observed gap,poisson MISMATCH\n   mutation omit_hazard_variance: expected error observed error ok\n   mutation omit_corrector: expected poisson observed poisson ok\n   mutation drop_wedges: expected dilution observed dilution ok\n   mutation drop_sink: expected vacancy observed vacancy ok\n   mutation dense_closure: expected orientation observed orientation ok\n   mutation wrong_birth_sign: expected spectrum observed spectrum ok\nHIT: scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py: mutation census mismatch: oversized_gap\n== scripts/mobile_records_rare_formation_event_law_2026_09_20.py: rc=0 PASS=15 FAIL=0\n   mutation motion_flat: expected motion observed motion ok\n   mutation birth_normalized: expected insertion observed content_law,event_sampling,insertion MISMATCH\n   mutation drop_multiplicity: expected insertion observed insertion ok\n   mutation merge_sectors: expected content_law observed content_law ok\n   mutation unbiased_events: expected event_sampling observed event_sampling ok\n   mutation killing_flat: expected resolvent observed resolvent ok\n   mutation allow_removal: expected vacancies observed vacancies ok\nHIT: scripts/mobile_records_rare_formation_event_law_2026_09_20.py: mutation census mismatch: birth_normalized",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260921T051201Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145112Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f947c8e4 differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Two genuine census mismatches, reproduced independently on the PR branch. oversized_gap declares family 'gap' but also fails 'poisson' (FAIL: first-order corrected event law has the certified quadratic remainder), observed gap,poisson. birth_normalized declares 'insertion' but also fails 'content_law' (third-birth witness vs edge/wedge derivation) and 'event_sampling' (two-identical-record rate tilt), observed content_law,event_sampling,insertion. Both are supersets of the declared family, not disjoint from it, so the mutations ARE caught - what fails is the census's claim that each isolates one family. The parser is working correctly here (this runner lists mutations space-separated), so this is not the 8552 artifact.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145112Z"
  }
 }

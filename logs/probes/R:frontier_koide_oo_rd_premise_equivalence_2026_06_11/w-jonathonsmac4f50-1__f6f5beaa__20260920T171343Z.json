@@ -22,15 +22,22 @@
  "stdout_sha256": "6fab53149786b01ae9d5b1be8d0d3b6f114ac8e6929df6fe7d682aeeae601e21",
  "stdout_tail": "statement check): on the current registered surface the two candidates force the identical registered configuration (check 3), so the standing owner decision is ONE decision with two formulations -- a single section-6 proposal can carry both, with the strictly weaker unconditioned content (R-D) and the static formulation (OO) stated as provably configuration-equivalent given the registered content\nRESIDUAL (declared-open): nothing is routed, drafted, or adopted: the section-6 proposal shape is named as a consequence; the owner decision remains open. The registered side conditions (delta content; unsigned branch) are consumed at their admitted statuses.\nRESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades (kinetic-class premise, spin-statistics support tier, boundary-holonomy convention, AC_phi_lambda labeling convention).\n\nTOTAL: PASS=7 FAIL=2\nVERDICT: on the current registered surface, orbit-occupancy and the R-D durability bridge are EXTENSIONALLY EQUIVALENT -- each forces the identical registered configuration (r, Q, rho, Z_d) = (1/2, 2/3, 1, pi/g) and the same registered spectrum -- and STRICTLY INEQUIVALENT off the side conditions (two computed separation witnesses: the delta-free r = 0 model and the signed-branch r = infinity endpoint, both R-D-consistent and OO-violating; no converse witness exists given the Lueders grounding). The standing owner decision is one decision with two formulations. No premise adopted; no audit status set.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T171344Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f6f5beaa differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=7 FAIL=2' vs cache 'TOTAL: PASS=9 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Both failures are text audits: '(08) interface pins: both premise statements are present verbatim in their source notes' and '(09) decision corollary (statement check)'. The premise sentences were re-worded in their source notes by integration commits. The 7 computational checks pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z"
  }
 }

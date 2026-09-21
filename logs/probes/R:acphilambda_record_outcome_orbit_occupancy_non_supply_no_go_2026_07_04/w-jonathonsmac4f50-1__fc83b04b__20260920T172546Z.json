@@ -22,15 +22,22 @@
  "stdout_sha256": "569b66ba66dfe27fa90fc1265a9e9fdd9af05243fa753f8801d6243f1515adee",
  "stdout_tail": "tification\n  [FAIL] axioms withhold physical observable bridge\n  [PASS] N7 accepted axiom surface withholds log-det and action/readout selection\n  [PASS] N7 independent normalization certificate is executable\n  [PASS] note grants the auxiliary complex carrier\n  [PASS] note contains both countermodel functionals\n  [PASS] note constructs two readouts on one record model\n  [PASS] note limits the claim to finite carriers\n  [PASS] note preserves future action theorem\n  [PASS] note does not force r\n  [PASS] N1 contains six attempted routes\n  [PASS] N2 collapses to one wall\n  [PASS] N3 records required phrase scan\n  [PASS] N4 uses no prior negative witness\n  [PASS] N5 names tested resolutions\n  [PASS] N6 preserves action, coordinate, and open-obligation paths\n  [PASS] N7 contains normalization and complex-field steelmen\n  [PASS] N8 distinguishes phase from determinant power\n  [PASS] discipline gate records PASS\nN7_STEELMAN_ARGUMENT route=normalization_or_units; mechanism=the exact normalization F_R/2=F_C and the supplied single-complex-sector Pfaffian determinant power are executed above; attempt=normalize every finite witness and compare a single Grassmann sector with an independently adjoined conjugate sector; outcome=normalization removes the coordinate factor two, while the four axioms still withhold the physical CAR/action and readout selector, so future action derivations remain open.\n\n====================================================================\nTOTAL: PASS=75, FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T172546Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha fc83b04b differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=75, FAIL=1' vs cache 'TOTAL: PASS=76, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Single failure '[FAIL] axioms withhold physical observable bridge' is a text audit of the axioms document against 75 passing checks. The axioms text was revised by an integration commit; the runner's expected wording no longer matches. Documentation state.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z"
  }
 }

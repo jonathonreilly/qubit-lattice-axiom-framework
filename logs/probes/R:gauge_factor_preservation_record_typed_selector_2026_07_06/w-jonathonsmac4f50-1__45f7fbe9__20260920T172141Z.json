@@ -22,15 +22,22 @@
  "stdout_sha256": "2b14031aa5f68303d7e90787b45d845e61ae5cd0497eabaec50880ba4543fa7a",
  "stdout_tail": "[PASS] u6_dim_36_exact\n[PASS] factorwise_dim_12_center_overlap\n[PASS] stabilizer_equals_factorwise_both_containments\n[PASS] decomposition_bookkeeping_exact\n[PASS] lie_structure_closure_cross_zero_abelian_central\n[PASS] killing_form_nondegenerate_block_diagonal\n[FAIL] quoted_source_sentences_text_audit\n[PASS] ast_self_scan_readonly_no_network_no_subprocess\nDECLARATION premises=minimal_axioms_context; REGISTERED-FACTOR(named conditional, not axiom content); supplied C^3 tensor C^2 model surface; exact finite matrix algebra\nDIMENSIONS u6=36 factorwise=12 stabilizer=12 su3=8 su2=3 semisimple=11 abelian_image=1 relative_identity_kernel=1\nTOTAL PASS=7 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260920T172143Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 45f7fbe9 differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Single failure 'quoted_source_sentences_text_audit' is by name a verbatim-quote audit of source sentences; the 7 computational checks pass. Source note wording has moved.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145452Z"
  }
 }

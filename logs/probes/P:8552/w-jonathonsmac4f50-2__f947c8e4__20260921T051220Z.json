@@ -35,12 +35,19 @@
  "stdout_sha256": "521289151a3a342e29d5425fa1a86aef80f0f5776e5e25c964148664c7cae8d1",
  "stdout_tail": "PR #8552: Bound mobile-record lifetime activity and terminal correlations\nbranch codex/mobile-record-lifetime-correlation-20260921 (base codex/mobile-record-formation-20260920)\nrunners in the PR: 1\n== scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py: rc=0 PASS=24 FAIL=0\n   mutation omit_empty_neighbor_floor:: expected ? observed ? MISMATCH\n   mutation drop_birth_sink:: expected ? observed ? MISMATCH\n   mutation ignore_vacancy_killing:: expected ? observed ? MISMATCH\n   mutation omit_birth_competition:: expected ? observed ? MISMATCH\n   mutation miss_half_hop_acceptance:: expected ? observed ? MISMATCH\n   mutation radius_one_hops:: expected ? observed ? MISMATCH\n   mutation forget_product_start:: expected ? observed ? MISMATCH\n   mutation omit_search_ball:: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py: mutation census mismatch: omit_empty_neighbor_floor: drop_birth_sink: ignore_vacancy_killing: omit_birth_competition: miss_half_hop_acceptance: radius_one_hops: forget_product_start: omit_search_ball:",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260921T051230Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145112Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f947c8e4 differs from the current HEAD 74976f1a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Harness parsing, not the PR. run_pr_branch.py line 51 takes l.split()[0] of each --list-mutations line; this runner prints 'name: family' (line 280: print(f'{mutation}: {family}')), so every name arrives with a trailing colon, argparse rejects it (--mutation has choices=tuple(MUTATIONS)), no mutation_family_expected/observed line is produced, and all eight come back 'expected ? observed ? MISMATCH'. The tell is that every single mutation mismatched with NO values at all. The runner itself is clean: rc=0, PASS=24 FAIL=0. Contrast PR 8545, whose runners list mutations space-separated and parse correctly.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145112Z"
  }
 }

@@ -1,0 +1,26 @@
+{
+  "note": "docs/MOBILE_RECORDS_POSITIVE_QUANTUM_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "primary": "DIMER_FINITE_QUBIT_POSITIVE_CURL_LIMIT.md",
+      "source_sha256": "2448a007eb36de39c3b71db88190af5eec858b6c21a65d005f4229f4ff477010",
+      "published_body_sha256": "9fc8ae4030728e76096a45389b85395133ba6161f78d0c8f376478d9a0db0ff9"
+    },
+    {
+      "primary": "DIMER_EDGE_FACE_GAUSS_QUANTUM_LIMIT.md",
+      "source_sha256": "a6759908ef27e5f2990c7f20d4615aa4166d9a33bec66ea4b4e8143c22f01824",
+      "published_body_sha256": "2b161c378d0f28fc55d22289893f70286835ade9e26591427cddf8219b446a70"
+    },
+    {
+      "primary": "DIMER_EDGE_FACE_ENERGY_AND_GAUSS_MOMENT_ADDENDUM.md",
+      "source_sha256": "602b4a066aabbbe67ab455558287b332bb0a3daa9a9334200668cf1f3c7a0fb5",
+      "published_body_sha256": "e72d841048e82499790295cb1bf590e4742e308dd8fd53e2a3e70c259dcbbedd"
+    },
+    {
+      "primary": "DIMER_LOCAL_DILUTE_QUANTUM_CURL_LIMIT.md",
+      "source_sha256": "34ab30936006b553c778d9b050b226e8270a653d278875eab966b445d776043c",
+      "published_body_sha256": "d4361c37be3c37ba08fff143a1471d39afdd106c26fca5dcfc18c438ac6bc9da"
+    }
+  ],
+  "change": "Complete arguments preserved; only titles and heading levels transformed."
+}

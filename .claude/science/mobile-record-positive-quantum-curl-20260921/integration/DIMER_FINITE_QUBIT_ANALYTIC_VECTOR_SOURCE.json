@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-09-21T21:49:00Z",
+  "purpose": "Check the analytic-vector criterion used in the finite-qubit block limit, without changing its frozen primary note.",
+  "primary_note_sha256": "2448a007eb36de39c3b71db88190af5eec858b6c21a65d005f4229f4ff477010",
+  "source": {
+    "author": "Barry Simon",
+    "title": "Topics in Functional Analysis",
+    "url": "https://math.caltech.edu/SimonPapers/R4.pdf",
+    "external_pdf_sha256": "fc0424acae0b1e4508560dc2a60a85695dd6122716e703996ceda287716007ac",
+    "read_boundary": "Title page and complete PDF pages 9-10, printed pages 24-25: definition, Nussbaum lemma, Theorem 1.7 and its proof. No full-book read claimed.",
+    "criterion_paraphrase": "A symmetric operator whose domain contains a dense set of analytic vectors is essentially self-adjoint.",
+    "attribution": "Simon's text attributes the theorem to Nelson (1959) and gives a proof patterned after Nussbaum. The original Nelson paper itself was not obtained."
+  },
+  "hypotheses": {
+    "symmetric": "The finite real quadratic sum of Hermitian squares is symmetric and positive on the finite-particle Fock core.",
+    "dense_domain": "Finite linear combinations of occupation vectors are dense in the Fock space for the fixed finite number of modes.",
+    "invariant_domain": "Each quadratic factor changes occupation by at most two, so every power acts on the finite-particle core.",
+    "analytic_bound": "For initial maximum occupation m, each successive quadratic action costs at most C(m+2j+1). The product is bounded by C_m C_0^n (n+m+1)!, making the power series with denominator n! converge for a sufficiently small positive parameter."
+  },
+  "limits": "This receipt checks only the self-adjointness criterion. The weighted-number estimates, Duhamel bound and claimed physical scope require their separate derivation and independent review. The PDF remains outside the repository.",
+  "access_failures": ["web open of www.math.caltech.edu timed out", "curl to www.math.caltech.edu failed hostname certificate validation; the canonical math.caltech.edu host succeeded without disabling validation", "first local extraction attempt used unavailable fitz; pypdf succeeded"]
+}

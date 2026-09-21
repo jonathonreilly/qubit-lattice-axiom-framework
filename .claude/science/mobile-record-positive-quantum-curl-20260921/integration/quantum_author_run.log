@@ -1,0 +1,5 @@
+PASS: declared_sources_and_conditional_scope
+PASS: dimer_finite_qubit_curl_check.py: 3 complete control groups
+PASS: dimer_edge_face_gauss_check.py: 4 complete control groups
+PASS: dimer_local_dilute_curl_check.py: 3 complete control groups
+TOTAL: PASS=11 FAIL=0

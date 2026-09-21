@@ -1,0 +1,849 @@
+{
+  "status": "completed author corroboration; conditional proofs require separate review",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_EDGE_FACE_GAUSS_QUANTUM_LIMIT.md",
+      "bytes": 11787,
+      "sha256": "a6759908ef27e5f2990c7f20d4615aa4166d9a33bec66ea4b4e8143c22f01824"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_EDGE_FACE_ENERGY_AND_GAUSS_MOMENT_ADDENDUM.md",
+      "bytes": 5016,
+      "sha256": "602b4a066aabbbe67ab455558287b332bb0a3daa9a9334200668cf1f3c7a0fb5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_edge_face_gauss_check.py",
+      "bytes": 9182,
+      "sha256": "56c3bc0963a49ac64f27b1ebf8e28f526edc9c2307c6aedce409ec872592066e"
+    }
+  ],
+  "incidence": [
+    {
+      "L": 3,
+      "vertices": 27,
+      "edges": 81,
+      "exact_rank_curl": 52,
+      "exact_rank_gradient": 26,
+      "exact_kernel_dimension": 29,
+      "nonzero_frequency_min": 1.7320508075688772,
+      "zero_frequency_wavevectors": 1,
+      "Fourier_max_error": 1.9027589192508736e-15,
+      "wrong_adjoint_energy_defect_frobenius": 44.090815370097204,
+      "one_entry_incidence_mutation_rejected": true
+    },
+    {
+      "L": 4,
+      "vertices": 64,
+      "edges": 192,
+      "exact_rank_curl": 126,
+      "exact_rank_gradient": 63,
+      "exact_kernel_dimension": 66,
+      "nonzero_frequency_min": 1.414213562373095,
+      "zero_frequency_wavevectors": 1,
+      "Fourier_max_error": 2.759376629279258e-15,
+      "wrong_adjoint_energy_defect_frobenius": 67.88225099390856,
+      "one_entry_incidence_mutation_rejected": true
+    }
+  ],
+  "rotations": {
+    "L": 3,
+    "proper_rotations": 24,
+    "exact_edge_face_chain_maps": 72,
+    "negative_axis_basepoint_shifts_included": true
+  },
+  "finite_qubit_algebra": {
+    "rows": [
+      {
+        "K": 1,
+        "qubits_in_two_level_subspaces": 2,
+        "physical_pair_product_dimension": 2,
+        "symmetric_dimension": 2,
+        "exact_quadrature_norm": "sqrt(2)/2"
+      },
+      {
+        "K": 2,
+        "qubits_in_two_level_subspaces": 4,
+        "physical_pair_product_dimension": 4,
+        "symmetric_dimension": 3,
+        "exact_quadrature_norm": "1"
+      },
+      {
+        "K": 3,
+        "qubits_in_two_level_subspaces": 6,
+        "physical_pair_product_dimension": 8,
+        "symmetric_dimension": 4,
+        "exact_quadrature_norm": "sqrt(6)/2"
+      },
+      {
+        "K": 4,
+        "qubits_in_two_level_subspaces": 8,
+        "physical_pair_product_dimension": 16,
+        "symmetric_dimension": 5,
+        "exact_quadrature_norm": "sqrt(2)"
+      }
+    ],
+    "two_link_K1_finite_Gauss_commutator_squared_Frobenius": "2",
+    "scope": "The motif only checks cutoff algebra; it does not replace the full cubical incidence controls."
+  },
+  "squeezed_motif": {
+    "rows": [
+      {
+        "K": 4,
+        "physical_dimension": 25,
+        "epsilon": 0.7937005259840998,
+        "time": 0.0,
+        "projection_missing_probability": 7.220201778679325e-07,
+        "energy": 0.8476704878293629,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.14056370664281537,
+        "energy_error_over_K_minus_third": 0.22313097579335447,
+        "Gauss_mean_square": 0.31098520786686973,
+        "Gauss_over_K_minus_sixth": 0.3918168095974019,
+        "canonical_Gauss_mean_square": 0.31498026247371835,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.907269746018061,
+            "finite_imag": -1.8893063745445293e-18,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9060967250607814,
+            "error_to_reduced": 0.001685504417600403,
+            "error_to_squeezed": 0.001173020957279558
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9251872971249795,
+            "finite_imag": 0.0,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9242755240217118,
+            "error_to_reduced": 0.07481270287502051,
+            "error_to_squeezed": 0.0009117731032677323
+          }
+        ]
+      },
+      {
+        "K": 4,
+        "physical_dimension": 25,
+        "epsilon": 0.7937005259840998,
+        "time": 0.5,
+        "projection_missing_probability": 7.220201778679325e-07,
+        "energy": 0.8476704878293628,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.14056370664281526,
+        "energy_error_over_K_minus_third": 0.2231309757933543,
+        "Gauss_mean_square": 0.3223345356469651,
+        "Gauss_over_K_minus_sixth": 0.40611606656970073,
+        "canonical_Gauss_mean_square": 0.31498026247371835,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.8988929494022939,
+            "finite_imag": 0.0,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9060967250607814,
+            "error_to_reduced": 0.010062301033367471,
+            "error_to_squeezed": 0.00720377565848751
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9225656426909506,
+            "finite_imag": 5.551115123125783e-17,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9242755240217118,
+            "error_to_reduced": 0.07743435730904935,
+            "error_to_squeezed": 0.0017098813307611094
+          }
+        ]
+      },
+      {
+        "K": 4,
+        "physical_dimension": 25,
+        "epsilon": 0.7937005259840998,
+        "time": 1.25,
+        "projection_missing_probability": 7.220201778679325e-07,
+        "energy": 0.8476704878293628,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.14056370664281526,
+        "energy_error_over_K_minus_third": 0.2231309757933543,
+        "Gauss_mean_square": 0.3752288624199923,
+        "Gauss_over_K_minus_sixth": 0.47275874229105563,
+        "canonical_Gauss_mean_square": 0.31498026247371835,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.8999149878854017,
+            "finite_imag": 5.551115123125783e-17,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9060967250607814,
+            "error_to_reduced": 0.009040262550259692,
+            "error_to_squeezed": 0.006181737175379731
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.910322887479,
+            "finite_imag": 0.0,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9242755240217118,
+            "error_to_reduced": 0.08967711252099997,
+            "error_to_squeezed": 0.013952636542711727
+          }
+        ]
+      },
+      {
+        "K": 8,
+        "physical_dimension": 81,
+        "epsilon": 0.7071067811865476,
+        "time": 0.0,
+        "projection_missing_probability": 1.4389308855555782e-08,
+        "energy": 0.8176728329781358,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.11056605179158818,
+        "energy_error_over_K_minus_third": 0.22113210358317636,
+        "Gauss_mean_square": 0.24840395963331002,
+        "Gauss_over_K_minus_sixth": 0.3512962486606058,
+        "canonical_Gauss_mean_square": 0.25000000000000006,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9077847131811592,
+            "finite_imag": -1.0872509013229446e-18,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9066857004291375,
+            "error_to_reduced": 0.0011705372545022241,
+            "error_to_squeezed": 0.001099012752021622
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.939812238737718,
+            "finite_imag": 0.0,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9394130628134758,
+            "error_to_reduced": 0.06018776126228198,
+            "error_to_squeezed": 0.00039917592424221215
+          }
+        ]
+      },
+      {
+        "K": 8,
+        "physical_dimension": 81,
+        "epsilon": 0.7071067811865476,
+        "time": 0.5,
+        "projection_missing_probability": 1.4389308855555782e-08,
+        "energy": 0.8176728329781353,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.11056605179158774,
+        "energy_error_over_K_minus_third": 0.22113210358317548,
+        "Gauss_mean_square": 0.2543341107311545,
+        "Gauss_over_K_minus_sixth": 0.35968274877009915,
+        "canonical_Gauss_mean_square": 0.25000000000000006,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9050845303238417,
+            "finite_imag": -1.6653345369377348e-16,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9066857004291375,
+            "error_to_reduced": 0.003870720111819659,
+            "error_to_squeezed": 0.0016011701052958127
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9384239804786362,
+            "finite_imag": 5.551115123125783e-17,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9394130628134758,
+            "error_to_reduced": 0.06157601952136382,
+            "error_to_squeezed": 0.0009890823348396305
+          }
+        ]
+      },
+      {
+        "K": 8,
+        "physical_dimension": 81,
+        "epsilon": 0.7071067811865476,
+        "time": 1.25,
+        "projection_missing_probability": 1.4389308855555782e-08,
+        "energy": 0.8176728329781358,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.11056605179158818,
+        "energy_error_over_K_minus_third": 0.22113210358317636,
+        "Gauss_mean_square": 0.28532705455988827,
+        "Gauss_over_K_minus_sixth": 0.403513390270562,
+        "canonical_Gauss_mean_square": 0.25000000000000006,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9080333685738213,
+            "finite_imag": 0.0,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9066857004291375,
+            "error_to_reduced": 0.000921881861840057,
+            "error_to_squeezed": 0.001347668144683789
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9311846657501538,
+            "finite_imag": 1.6653345369377348e-16,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9394130628134758,
+            "error_to_reduced": 0.0688153342498462,
+            "error_to_squeezed": 0.008228397063322013
+          }
+        ]
+      },
+      {
+        "K": 16,
+        "physical_dimension": 289,
+        "epsilon": 0.6299605249474366,
+        "time": 0.0,
+        "projection_missing_probability": 5.685230064500502e-12,
+        "energy": 0.7944547755327744,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.08734799434622686,
+        "energy_error_over_K_minus_third": 0.2201031534858192,
+        "Gauss_mean_square": 0.19747701738996004,
+        "Gauss_over_K_minus_sixth": 0.313475225144365,
+        "canonical_Gauss_mean_square": 0.19842513149602495,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9081287383412636,
+            "finite_imag": -7.865560028082163e-18,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9071534429953169,
+            "error_to_reduced": 0.0008265120943977688,
+            "error_to_squeezed": 0.0009752953459467584
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.95184715760966,
+            "finite_imag": 0.0,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9516040135521127,
+            "error_to_reduced": 0.04815284239034001,
+            "error_to_squeezed": 0.0002431440575473287
+          }
+        ]
+      },
+      {
+        "K": 16,
+        "physical_dimension": 289,
+        "epsilon": 0.6299605249474366,
+        "time": 0.5,
+        "projection_missing_probability": 5.685230064500502e-12,
+        "energy": 0.7944547755327745,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.08734799434622698,
+        "energy_error_over_K_minus_third": 0.2201031534858195,
+        "Gauss_mean_square": 0.20002707035749415,
+        "Gauss_over_K_minus_sixth": 0.31752318190760326,
+        "canonical_Gauss_mean_square": 0.19842513149602495,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9074984100918511,
+            "finite_imag": -2.7755575615628914e-16,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9071534429953169,
+            "error_to_reduced": 0.0014568403438103283,
+            "error_to_squeezed": 0.0003449670965341989
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.951241689243872,
+            "finite_imag": -3.885780586188048e-16,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9516040135521127,
+            "error_to_reduced": 0.04875831075612802,
+            "error_to_squeezed": 0.0003623243082406802
+          }
+        ]
+      },
+      {
+        "K": 16,
+        "physical_dimension": 289,
+        "epsilon": 0.6299605249474366,
+        "time": 1.25,
+        "projection_missing_probability": 5.685230064500502e-12,
+        "energy": 0.7944547755327745,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.08734799434622698,
+        "energy_error_over_K_minus_third": 0.2201031534858195,
+        "Gauss_mean_square": 0.21348333609788944,
+        "Gauss_over_K_minus_sixth": 0.33888367229947036,
+        "canonical_Gauss_mean_square": 0.19842513149602495,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9090139435976774,
+            "finite_imag": -1.6653345369377348e-16,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9071534429953169,
+            "error_to_reduced": 5.869316201601027e-05,
+            "error_to_squeezed": 0.0018605006023605375
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9480519070532748,
+            "finite_imag": -2.220446049250313e-16,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9516040135521127,
+            "error_to_reduced": 0.0519480929467252,
+            "error_to_squeezed": 0.0035521064988378592
+          }
+        ]
+      },
+      {
+        "K": 32,
+        "physical_dimension": 1089,
+        "epsilon": 0.5612310241546865,
+        "time": 0.0,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7766861421178065,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.06957936093125894,
+        "energy_error_over_K_minus_third": 0.22090070147511093,
+        "Gauss_mean_square": 0.15686286324417853,
+        "Gauss_over_K_minus_sixth": 0.279497847576124,
+        "canonical_Gauss_mean_square": 0.15749013123685915,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9083195317079884,
+            "finite_imag": -1.9081424404005546e-17,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9075248622746129,
+            "error_to_reduced": 0.0006357187276729848,
+            "error_to_squeezed": 0.0007946694333754722
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9615522926925507,
+            "finite_imag": 0.0,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9613924921808532,
+            "error_to_reduced": 0.038447707307449286,
+            "error_to_squeezed": 0.00015980051169750542
+          }
+        ]
+      },
+      {
+        "K": 32,
+        "physical_dimension": 1089,
+        "epsilon": 0.5612310241546865,
+        "time": 0.5,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7766861421178082,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.0695793609312606,
+        "energy_error_over_K_minus_third": 0.22090070147511623,
+        "Gauss_mean_square": 0.1578940131001031,
+        "Gauss_over_K_minus_sixth": 0.28133514774583157,
+        "canonical_Gauss_mean_square": 0.15749013123685915,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.908378896288062,
+            "finite_imag": -4.440892098500626e-16,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9075248622746129,
+            "error_to_reduced": 0.0005763541475993783,
+            "error_to_squeezed": 0.0008540340134490787
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9613046636087206,
+            "finite_imag": -4.996003610813204e-16,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9613924921808532,
+            "error_to_reduced": 0.03869533639127942,
+            "error_to_squeezed": 8.782857213263107e-05
+          }
+        ]
+      },
+      {
+        "K": 32,
+        "physical_dimension": 1089,
+        "epsilon": 0.5612310241546865,
+        "time": 1.25,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7766861421178123,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.06957936093126471,
+        "energy_error_over_K_minus_third": 0.22090070147512927,
+        "Gauss_mean_square": 0.16327575874450512,
+        "Gauss_over_K_minus_sixth": 0.2909243283377418,
+        "canonical_Gauss_mean_square": 0.15749013123685915,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9088772919440037,
+            "finite_imag": 0.0,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9075248622746129,
+            "error_to_reduced": 7.795849165770363e-05,
+            "error_to_squeezed": 0.0013524296693907534
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9600131835002832,
+            "finite_imag": -3.885780586188048e-16,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9613924921808532,
+            "error_to_reduced": 0.039986816499716804,
+            "error_to_squeezed": 0.0013793086805700128
+          }
+        ]
+      },
+      {
+        "K": 64,
+        "physical_dimension": 4225,
+        "epsilon": 0.5,
+        "time": 0.0,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7628809069504234,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.05577412576387586,
+        "energy_error_over_K_minus_third": 0.2230965030555034,
+        "Gauss_mean_square": 0.12459669539108964,
+        "Gauss_over_K_minus_sixth": 0.24919339078217928,
+        "canonical_Gauss_mean_square": 0.125,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9084255006880928,
+            "finite_imag": -3.4694469519536022e-18,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9078197661981148,
+            "error_to_reduced": 0.0005297497475685864,
+            "error_to_squeezed": 0.000605734489978027
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9693350707546249,
+            "finite_imag": 0.0,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9692332344763441,
+            "error_to_reduced": 0.030664929245375117,
+            "error_to_squeezed": 0.00010183627828075359
+          }
+        ]
+      },
+      {
+        "K": 64,
+        "physical_dimension": 4225,
+        "epsilon": 0.5,
+        "time": 0.5,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7628809069504233,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.05577412576387575,
+        "energy_error_over_K_minus_third": 0.22309650305550296,
+        "Gauss_mean_square": 0.12500414380655597,
+        "Gauss_over_K_minus_sixth": 0.25000828761311195,
+        "canonical_Gauss_mean_square": 0.125,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9086640465961161,
+            "finite_imag": -1.1102230246251565e-16,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9078197661981148,
+            "error_to_reduced": 0.0002912038395452843,
+            "error_to_squeezed": 0.0008442803980013291
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9692363692994828,
+            "finite_imag": -1.6653345369377348e-16,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9692332344763441,
+            "error_to_reduced": 0.03076363070051724,
+            "error_to_squeezed": 3.134823138628562e-06
+          }
+        ]
+      },
+      {
+        "K": 64,
+        "physical_dimension": 4225,
+        "epsilon": 0.5,
+        "time": 1.25,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7628809069504202,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.05577412576387264,
+        "energy_error_over_K_minus_third": 0.22309650305549053,
+        "Gauss_mean_square": 0.12710732398477131,
+        "Gauss_over_K_minus_sixth": 0.25421464796954263,
+        "canonical_Gauss_mean_square": 0.125,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9087241367776362,
+            "finite_imag": 1.1102230246251565e-16,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.9078197661981148,
+            "error_to_reduced": 0.0002311136580251949,
+            "error_to_squeezed": 0.0009043705795214185
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9687270506631549,
+            "finite_imag": -5.551115123125783e-16,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9692332344763441,
+            "error_to_reduced": 0.0312729493368451,
+            "error_to_squeezed": 0.0005061838131892316
+          }
+        ]
+      },
+      {
+        "K": 128,
+        "physical_dimension": 16641,
+        "epsilon": 0.4454493590701697,
+        "time": 0.0,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7519629914477743,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.04485621026122677,
+        "energy_error_over_K_minus_third": 0.22606113410652,
+        "Gauss_mean_square": 0.09896638762387253,
+        "Gauss_over_K_minus_sixth": 0.22217202833214267,
+        "canonical_Gauss_mean_square": 0.09921256574801249,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9084939007423899,
+            "finite_imag": -5.204170427930421e-17,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.908053899810678,
+            "error_to_reduced": 0.00046134969327149555,
+            "error_to_squeezed": 0.0004400009317119258
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9755637315396037,
+            "finite_imag": 0.0,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9755019290355671,
+            "error_to_reduced": 0.02443626846039626,
+            "error_to_squeezed": 6.180250403664544e-05
+          }
+        ]
+      },
+      {
+        "K": 128,
+        "physical_dimension": 16641,
+        "epsilon": 0.4454493590701697,
+        "time": 0.5,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7519629914477721,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.04485621026122455,
+        "energy_error_over_K_minus_third": 0.22606113410650883,
+        "Gauss_mean_square": 0.09912587519877422,
+        "Gauss_over_K_minus_sixth": 0.2225300658321508,
+        "canonical_Gauss_mean_square": 0.09921256574801249,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9087351024563333,
+            "finite_imag": -6.661338147750939e-16,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.908053899810678,
+            "error_to_reduced": 0.00022014797932812247,
+            "error_to_squeezed": 0.0006812026456552989
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.97552483849158,
+            "finite_imag": 6.106226635438361e-16,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9755019290355671,
+            "error_to_reduced": 0.024475161508419996,
+            "error_to_squeezed": 2.29094560129095e-05
+          }
+        ]
+      },
+      {
+        "K": 128,
+        "physical_dimension": 16641,
+        "epsilon": 0.4454493590701697,
+        "time": 1.25,
+        "projection_missing_probability": 0.0,
+        "energy": 0.7519629914478021,
+        "reduced_energy": 0.7071067811865476,
+        "energy_error": 0.044856210261254525,
+        "energy_error_over_K_minus_third": 0.2260611341066599,
+        "Gauss_mean_square": 0.09994333313774231,
+        "Gauss_over_K_minus_sixth": 0.22436519685731254,
+        "canonical_Gauss_mean_square": 0.09921256574801249,
+        "Weyl_values": [
+          {
+            "e": [
+              0.4,
+              -0.2
+            ],
+            "b": 0.3,
+            "finite_real": 0.9086523564898182,
+            "finite_imag": 1.6653345369377348e-16,
+            "reduced_target": 0.9089552504356614,
+            "canonical_squeezed_target": 0.908053899810678,
+            "error_to_reduced": 0.0003028939458431523,
+            "error_to_squeezed": 0.000598456679140269
+          },
+          {
+            "e": [
+              0.5,
+              0.5
+            ],
+            "b": 0.0,
+            "finite_real": 0.9753255211896181,
+            "finite_imag": -1.1102230246251565e-15,
+            "reduced_target": 1.0,
+            "canonical_squeezed_target": 0.9755019290355671,
+            "error_to_reduced": 0.024674478810381872,
+            "error_to_squeezed": 0.00017640784594896708
+          }
+        ]
+      }
+    ],
+    "scope": "Exact finite-spin two-link motif with one transverse oscillator and one squeezed null coordinate. Full 3D convergence is proved analytically, not inferred from this small motif. Ratios are corroboration, not fitted exponents or universal constants."
+  }
+}

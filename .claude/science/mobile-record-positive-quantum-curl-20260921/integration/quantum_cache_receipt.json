@@ -1,0 +1,15 @@
+{
+  "result": {
+    "runner": "scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nPASS: dimer_finite_qubit_curl_check.py: 3 complete control groups\nPASS: dimer_edge_face_gauss_check.py: 4 complete control groups\nPASS: dimer_local_dilute_curl_check.py: 3 complete control groups\nTOTAL: PASS=11 FAIL=0\n",
+    "stderr": "",
+    "elapsed_sec": 5.373967170715332,
+    "timeout_sec": 1200,
+    "live_log": "/Users/jonreilly/Documents/Codex/mobile-record-positive-quantum-publication-20260921/logs/runner-cache/.in-progress/mobile_records_positive_quantum_curl_limits_2026_09_21.txt"
+  },
+  "cache_path": "/Users/jonreilly/Documents/Codex/mobile-record-positive-quantum-publication-20260921/logs/runner-cache/mobile_records_positive_quantum_curl_limits_2026_09_21.txt",
+  "cache_sha256": "b1119b9b9b6e04c32c164da6d44e8425fa24c71a1e8e4061efa046b7dfe9a526",
+  "cache_status": "fresh"
+}

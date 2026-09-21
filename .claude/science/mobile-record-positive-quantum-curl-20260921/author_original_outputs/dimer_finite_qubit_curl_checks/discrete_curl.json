@@ -1,0 +1,20 @@
+[
+  {
+    "L": 3,
+    "vector_dimension": 81,
+    "exact_adjoint_and_divergence": true,
+    "zero_momenta": 1,
+    "curl_nullity": 29,
+    "derivative_EB_bracket_rank": 104,
+    "max_Fourier_residual": 1.884928529521895e-15
+  },
+  {
+    "L": 4,
+    "vector_dimension": 192,
+    "exact_adjoint_and_divergence": true,
+    "zero_momenta": 8,
+    "curl_nullity": 80,
+    "derivative_EB_bracket_rank": 224,
+    "max_Fourier_residual": 4.07349805875642e-15
+  }
+]

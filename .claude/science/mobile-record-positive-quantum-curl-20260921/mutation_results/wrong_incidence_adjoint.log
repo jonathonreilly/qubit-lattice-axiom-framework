@@ -1,0 +1,2 @@
+PASS: declared_sources_and_conditional_scope
+FAIL: dimer_edge_face_gauss_check.py AssertionError

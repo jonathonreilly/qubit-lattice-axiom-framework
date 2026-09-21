@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py
+runner_sha256: 9bf1c73503aabf413becfa2b4641bd9e1e89fcdba56f6ac1ac7e724daf326aae
+input_fingerprint_sha256: 1fbf9d1bebcdeeaac4b9b6b2070df5ccce73165926c5f78a3cf8809240d6b802
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 5.37
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: dimer_finite_qubit_curl_check.py: 3 complete control groups
+PASS: dimer_edge_face_gauss_check.py: 4 complete control groups
+PASS: dimer_local_dilute_curl_check.py: 3 complete control groups
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

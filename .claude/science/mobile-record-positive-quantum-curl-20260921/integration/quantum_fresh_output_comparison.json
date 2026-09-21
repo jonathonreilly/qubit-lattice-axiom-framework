@@ -1,0 +1,17 @@
+[
+  {
+    "suite": "dimer_finite_qubit_curl_check.py",
+    "numeric_comparisons": 246,
+    "max_difference": 0
+  },
+  {
+    "suite": "dimer_edge_face_gauss_check.py",
+    "numeric_comparisons": 579,
+    "max_difference": 0
+  },
+  {
+    "suite": "dimer_local_dilute_curl_check.py",
+    "numeric_comparisons": 178,
+    "max_difference": 0
+  }
+]

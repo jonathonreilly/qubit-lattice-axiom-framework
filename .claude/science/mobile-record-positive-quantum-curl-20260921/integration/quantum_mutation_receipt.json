@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-21T22:44:53.893141+00:00",
+  "rows": [
+    {
+      "mutation": "omit_occupation_depletion",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py",
+        "--mutation",
+        "omit_occupation_depletion",
+        "--output",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/quantum_omit_occupation_depletion.json"
+      ],
+      "exit_code": 1
+    },
+    {
+      "mutation": "wrong_incidence_adjoint",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py",
+        "--mutation",
+        "wrong_incidence_adjoint",
+        "--output",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/quantum_wrong_incidence_adjoint.json"
+      ],
+      "exit_code": 1
+    },
+    {
+      "mutation": "halve_dilute_commutator_bound",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py",
+        "--mutation",
+        "halve_dilute_commutator_bound",
+        "--output",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/quantum_halve_dilute_commutator_bound.json"
+      ],
+      "exit_code": 1
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "status": "completed author corroboration; proof scope remains conditional",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_LOCAL_DILUTE_QUANTUM_CURL_LIMIT.md",
+      "bytes": 10198,
+      "sha256": "34ab30936006b553c778d9b050b226e8270a653d278875eab966b445d776043c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_local_dilute_curl_check.py",
+      "bytes": 8264,
+      "sha256": "429536b7ba4ffa5d97ae94b929c6215b2f56309a862db6d4f785391d10eb4e11"
+    }
+  ],
+  "physical_cells": {
+    "cell_count": 3,
+    "physical_dimension": 64,
+    "lab_gap": 1.1339745962155607,
+    "sector_rows": [
+      {
+        "n": 0,
+        "physical_sector_dimension": 1,
+        "occupation_compression_error": 0.0
+      },
+      {
+        "n": 1,
+        "physical_sector_dimension": 9,
+        "occupation_compression_error": 0.0
+      },
+      {
+        "n": 2,
+        "physical_sector_dimension": 27,
+        "occupation_compression_error": 0.0
+      },
+      {
+        "n": 3,
+        "physical_sector_dimension": 27,
+        "occupation_compression_error": 0.0
+      }
+    ],
+    "CCR_rows": [
+      {
+        "max_excitation": 0,
+        "max_restricted_CCR_error": 2.546991858459441e-16,
+        "bound": 0.0
+      },
+      {
+        "max_excitation": 1,
+        "max_restricted_CCR_error": 0.666666666666667,
+        "bound": 0.6666666666666666
+      },
+      {
+        "max_excitation": 2,
+        "max_restricted_CCR_error": 1.3333333333333335,
+        "bound": 1.3333333333333333
+      }
+    ]
+  },
+  "one_particle_symbols": {
+    "rows": [
+      {
+        "N": 3,
+        "one_particle_curl_norm": 1.5,
+        "mu2_gap_lower_bound": 0.5,
+        "sine_zero_momenta": 1,
+        "low_mode_symbol_error": 16.034977568619937,
+        "sine_remainder_bound": 67.51071705803703
+      },
+      {
+        "N": 4,
+        "one_particle_curl_norm": 1.7320508075688772,
+        "mu2_gap_lower_bound": 0.2679491924311228,
+        "sine_zero_momenta": 8,
+        "low_mode_symbol_error": 12.974572852748224,
+        "sine_remainder_bound": 37.97477834514583
+      },
+      {
+        "N": 6,
+        "one_particle_curl_norm": 1.5,
+        "mu2_gap_lower_bound": 0.5,
+        "sine_zero_momenta": 8,
+        "low_mode_symbol_error": 7.52883770421552,
+        "sine_remainder_bound": 16.877679264509258
+      },
+      {
+        "N": 8,
+        "one_particle_curl_norm": 1.7320508075688772,
+        "mu2_gap_lower_bound": 0.2679491924311228,
+        "sine_zero_momenta": 8,
+        "low_mode_symbol_error": 4.651485974968657,
+        "sine_remainder_bound": 9.493694586286457
+      },
+      {
+        "N": 16,
+        "one_particle_curl_norm": 1.7320508075688772,
+        "mu2_gap_lower_bound": 0.2679491924311228,
+        "sine_zero_momenta": 8,
+        "low_mode_symbol_error": 1.272997545111677,
+        "sine_remainder_bound": 2.3734236465716143
+      },
+      {
+        "N": 32,
+        "one_particle_curl_norm": 1.7320508075688772,
+        "mu2_gap_lower_bound": 0.2679491924311228,
+        "sine_zero_momenta": 8,
+        "low_mode_symbol_error": 0.3255274544664618,
+        "sine_remainder_bound": 0.5933559116429036
+      },
+      {
+        "N": 64,
+        "one_particle_curl_norm": 1.7320508075688772,
+        "mu2_gap_lower_bound": 0.2679491924311228,
+        "sine_zero_momenta": 8,
+        "low_mode_symbol_error": 0.08184312802614538,
+        "sine_remainder_bound": 0.1483389779107259
+      },
+      {
+        "N": 128,
+        "one_particle_curl_norm": 1.7320508075688772,
+        "mu2_gap_lower_bound": 0.2679491924311228,
+        "sine_zero_momenta": 8,
+        "low_mode_symbol_error": 0.020489711639977468,
+        "sine_remainder_bound": 0.037084744477681474
+      },
+      {
+        "N": 256,
+        "one_particle_curl_norm": 1.7320508075688772,
+        "mu2_gap_lower_bound": 0.2679491924311228,
+        "sine_zero_momenta": 8,
+        "low_mode_symbol_error": 0.005124237587380756,
+        "sine_remainder_bound": 0.009271186119420368
+      }
+    ],
+    "real_space_Fourier_max_error": 1.7319121124709863e-16
+  },
+  "two_particle_dynamics": [
+    {
+      "N": 3,
+      "V": 27,
+      "physical_two_particle_dimension": 3159,
+      "tau": 0.125,
+      "initial_collision": 0.046296296296296294,
+      "free_collision_at_time": 0.04154299393750411,
+      "free_comparison_error": 0.2348187271326213,
+      "proof_bound": 1.0330483276078988,
+      "continuum_comparison_error": 0.5088761244272872,
+      "combined_proof_bound": 2.181428945396781,
+      "unitary_norm_error": 1.1102230246251565e-16
+    },
+    {
+      "N": 3,
+      "V": 27,
+      "physical_two_particle_dimension": 3159,
+      "tau": 0.375,
+      "initial_collision": 0.046296296296296294,
+      "free_collision_at_time": 0.039689781334525435,
+      "free_comparison_error": 0.3623710709250485,
+      "proof_bound": 2.033048327607899,
+      "continuum_comparison_error": 1.1688745385647816,
+      "combined_proof_bound": 5.478190180974545,
+      "unitary_norm_error": 1.1102230246251565e-16
+    },
+    {
+      "N": 3,
+      "V": 27,
+      "physical_two_particle_dimension": 3159,
+      "tau": 0.75,
+      "initial_collision": 0.046296296296296294,
+      "free_collision_at_time": 0.05373336858245204,
+      "free_comparison_error": 0.5061273632307454,
+      "proof_bound": 3.533048327607899,
+      "continuum_comparison_error": 1.3791016526288475,
+      "combined_proof_bound": 10.423332034341191,
+      "unitary_norm_error": 2.220446049250313e-16
+    },
+    {
+      "N": 4,
+      "V": 64,
+      "physical_two_particle_dimension": 18144,
+      "tau": 0.125,
+      "initial_collision": 0.01953125,
+      "free_collision_at_time": 0.016935731913126938,
+      "free_comparison_error": 0.16047823848033876,
+      "proof_bound": 0.7455127018922193,
+      "continuum_comparison_error": 0.3294719674670526,
+      "combined_proof_bound": 1.3914767993984656,
+      "unitary_norm_error": 0.0
+    },
+    {
+      "N": 4,
+      "V": 64,
+      "physical_two_particle_dimension": 18144,
+      "tau": 0.375,
+      "initial_collision": 0.01953125,
+      "free_collision_at_time": 0.018999448070737644,
+      "free_comparison_error": 0.26886188097766567,
+      "proof_bound": 1.611538105676658,
+      "continuum_comparison_error": 0.8388945930545273,
+      "combined_proof_bound": 3.5494303981953967,
+      "unitary_norm_error": 0.0
+    },
+    {
+      "N": 4,
+      "V": 64,
+      "physical_two_particle_dimension": 18144,
+      "tau": 0.75,
+      "initial_collision": 0.01953125,
+      "free_collision_at_time": 0.020698959974052206,
+      "free_comparison_error": 0.36492477478162255,
+      "proof_bound": 2.910576211353316,
+      "continuum_comparison_error": 1.2889748186631251,
+      "combined_proof_bound": 6.7863607963907935,
+      "unitary_norm_error": 0.0
+    },
+    {
+      "N": 6,
+      "V": 216,
+      "physical_two_particle_dimension": 208980,
+      "tau": 0.125,
+      "initial_collision": 0.005787037037037037,
+      "free_collision_at_time": 0.004940609372094005,
+      "free_comparison_error": 0.09947242173233611,
+      "proof_bound": 0.5081546725997467,
+      "continuum_comparison_error": 0.17019552316216863,
+      "combined_proof_bound": 0.7952498270469672,
+      "unitary_norm_error": 0.0
+    },
+    {
+      "N": 6,
+      "V": 216,
+      "physical_two_particle_dimension": 208980,
+      "tau": 0.375,
+      "initial_collision": 0.005787037037037037,
+      "free_collision_at_time": 0.006716671072806507,
+      "free_comparison_error": 0.17139487661868721,
+      "proof_bound": 1.2152614537862942,
+      "continuum_comparison_error": 0.4397892176414108,
+      "combined_proof_bound": 2.076546917127956,
+      "unitary_norm_error": 0.0
+    },
+    {
+      "N": 6,
+      "V": 216,
+      "physical_two_particle_dimension": 208980,
+      "tau": 0.75,
+      "initial_collision": 0.005787037037037037,
+      "free_collision_at_time": 0.004920015203669057,
+      "free_comparison_error": 0.228172545793636,
+      "proof_bound": 2.2759216255661157,
+      "continuum_comparison_error": 0.7951422064746072,
+      "combined_proof_bound": 3.998492552249439,
+      "unitary_norm_error": 0.0
+    }
+  ],
+  "scope": "Direct three-cell tensor algebra; exact one-particle symbols; sparse uncut two-particle dynamics for N=3,4,6. These controls do not numerically prove the asymptotic rate or establish finite-density dynamics, record permanence, or a gapless positive vacuum."
+}

@@ -1,0 +1,27 @@
+{
+  "claim_id": "mobile_records_positive_quantum_curl_limits_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_POSITIVE_QUANTUM_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "522576cecb96292dce637f0b113eaa17c79c9ba8120994376592d5170d67f679",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-positive-quantum-curl-20260921/primary_sources/DIMER_FINITE_QUBIT_POSITIVE_CURL_LIMIT.md": "2448a007eb36de39c3b71db88190af5eec858b6c21a65d005f4229f4ff477010",
+    ".claude/science/mobile-record-positive-quantum-curl-20260921/primary_sources/DIMER_EDGE_FACE_GAUSS_QUANTUM_LIMIT.md": "a6759908ef27e5f2990c7f20d4615aa4166d9a33bec66ea4b4e8143c22f01824",
+    ".claude/science/mobile-record-positive-quantum-curl-20260921/primary_sources/DIMER_EDGE_FACE_ENERGY_AND_GAUSS_MOMENT_ADDENDUM.md": "602b4a066aabbbe67ab455558287b332bb0a3daa9a9334200668cf1f3c7a0fb5",
+    ".claude/science/mobile-record-positive-quantum-curl-20260921/primary_sources/DIMER_LOCAL_DILUTE_QUANTUM_CURL_LIMIT.md": "34ab30936006b553c778d9b050b226e8270a653d278875eab966b445d776043c",
+    ".claude/science/mobile-record-positive-quantum-curl-20260921/author_checks/dimer_finite_qubit_curl_check.py": "ece62b774654458b29c94fe07766742d586a483c45e4711ff25157076a8cee3d",
+    ".claude/science/mobile-record-positive-quantum-curl-20260921/author_checks/dimer_edge_face_gauss_check.py": "56c3bc0963a49ac64f27b1ebf8e28f526edc9c2307c6aedce409ec872592066e",
+    ".claude/science/mobile-record-positive-quantum-curl-20260921/author_checks/dimer_local_dilute_curl_check.py": "429536b7ba4ffa5d97ae94b929c6215b2f56309a862db6d4f785391d10eb4e11",
+    "scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py": "9bf1c73503aabf413becfa2b4641bd9e1e89fcdba56f6ac1ac7e724daf326aae"
+  },
+  "mutation": "halve_dilute_commutator_bound",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "dimer_local_dilute_curl_check.py",
+      "source_sha256": "429536b7ba4ffa5d97ae94b929c6215b2f56309a862db6d4f785391d10eb4e11",
+      "executed_source_sha256": "c3d389f6a049cd1bb754f872f0dbb203016b83e1ab984c55b9a8c547700fd52c",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/positive-quantum-curl-controls-jfbxmqys/dimer_local_dilute_curl_check.py\", line 165, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/positive-quantum-curl-controls-jfbxmqys/dimer_local_dilute_curl_check.py\", line 158, in main\n    result['physical_cells']=local_physical_controls();print('physical_cells_complete',flush=True)\n                             ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/positive-quantum-curl-controls-jfbxmqys/dimer_local_dilute_curl_check.py\", line 80, in local_physical_controls\n    assert maxerr<=m/V+2e-14\n           ^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "sources_sha256": {
+    "DIMER_FINITE_QUBIT_POSITIVE_CURL_LIMIT.md": "2448a007eb36de39c3b71db88190af5eec858b6c21a65d005f4229f4ff477010",
+    "dimer_finite_qubit_curl_check.py": "ece62b774654458b29c94fe07766742d586a483c45e4711ff25157076a8cee3d"
+  },
+  "groups": {
+    "physical_occupation": [
+      {
+        "K": 1,
+        "physical_dimension": 4,
+        "symmetric_dimension": 4,
+        "exact_nonzero_lowering_entries": 3
+      },
+      {
+        "K": 2,
+        "physical_dimension": 16,
+        "symmetric_dimension": 10,
+        "exact_nonzero_lowering_entries": 12
+      },
+      {
+        "K": 3,
+        "physical_dimension": 64,
+        "symmetric_dimension": 20,
+        "exact_nonzero_lowering_entries": 30
+      }
+    ],
+    "discrete_curl": [
+      {
+        "L": 3,
+        "vector_dimension": 81,
+        "exact_adjoint_and_divergence": true,
+        "zero_momenta": 1,
+        "curl_nullity": 29,
+        "derivative_EB_bracket_rank": 104,
+        "max_Fourier_residual": 1.884928529521895e-15
+      },
+      {
+        "L": 4,
+        "vector_dimension": 192,
+        "exact_adjoint_and_divergence": true,
+        "zero_momenta": 8,
+        "curl_nullity": 80,
+        "derivative_EB_bracket_rank": 224,
+        "max_Fourier_residual": 4.07349805875642e-15
+      }
+    ],
+    "finite_block_limit": {
+      "weighted_core_differences": [
+        {
+          "K": 4,
+          "core_maximum_number": 3,
+          "output_cutoff": 5,
+          "weighted_difference_norm": 0.1611289162023029,
+          "K_scaled_norm": 0.6445156648092116
+        },
+        {
+          "K": 8,
+          "core_maximum_number": 3,
+          "output_cutoff": 5,
+          "weighted_difference_norm": 0.08013959593517363,
+          "K_scaled_norm": 0.641116767481389
+        },
+        {
+          "K": 16,
+          "core_maximum_number": 3,
+          "output_cutoff": 5,
+          "weighted_difference_norm": 0.040051156493691946,
+          "K_scaled_norm": 0.6408185038990711
+        },
+        {
+          "K": 32,
+          "core_maximum_number": 3,
+          "output_cutoff": 5,
+          "weighted_difference_norm": 0.02002197945173438,
+          "K_scaled_norm": 0.6407033424555002
+        },
+        {
+          "K": 64,
+          "core_maximum_number": 3,
+          "output_cutoff": 5,
+          "weighted_difference_norm": 0.010010182133919614,
+          "K_scaled_norm": 0.6406516565708553
+        },
+        {
+          "K": 128,
+          "core_maximum_number": 3,
+          "output_cutoff": 5,
+          "weighted_difference_norm": 0.005004899075119358,
+          "K_scaled_norm": 0.6406270816152778
+        }
+      ],
+      "finite_block_Weyl_dynamics": [
+        {
+          "K": 4,
+          "dimension": 35,
+          "t": 0.25,
+          "observable": 0,
+          "real": 0.8877922235295821,
+          "imag": 0.0,
+          "gaussian_target": 0.8854991288137849,
+          "absolute_error": 0.002293094715797195
+        },
+        {
+          "K": 4,
+          "dimension": 35,
+          "t": 0.25,
+          "observable": 1,
+          "real": 0.8057774422286104,
+          "imag": 0.0,
+          "gaussian_target": 0.8078765385917451,
+          "absolute_error": 0.002099096363134767
+        },
+        {
+          "K": 4,
+          "dimension": 35,
+          "t": 0.75,
+          "observable": 0,
+          "real": 0.866590178996525,
+          "imag": -5.551115123125783e-17,
+          "gaussian_target": 0.8531312055051637,
+          "absolute_error": 0.01345897349136127
+        },
+        {
+          "K": 4,
+          "dimension": 35,
+          "t": 0.75,
+          "observable": 1,
+          "real": 0.8085530454441563,
+          "imag": 5.551115123125783e-17,
+          "gaussian_target": 0.8031561712802051,
+          "absolute_error": 0.005396874163951182
+        },
+        {
+          "K": 4,
+          "dimension": 35,
+          "t": 1.25,
+          "observable": 0,
+          "real": 0.8436255292201552,
+          "imag": -2.7755575615628914e-17,
+          "gaussian_target": 0.8102736752463543,
+          "absolute_error": 0.033351853973800916
+        },
+        {
+          "K": 4,
+          "dimension": 35,
+          "t": 1.25,
+          "observable": 1,
+          "real": 0.8142387177479262,
+          "imag": 0.0,
+          "gaussian_target": 0.7970809004578475,
+          "absolute_error": 0.017157817290078703
+        },
+        {
+          "K": 8,
+          "dimension": 165,
+          "t": 0.25,
+          "observable": 0,
+          "real": 0.8866358903597981,
+          "imag": 5.551115123125783e-17,
+          "gaussian_target": 0.8854991288137849,
+          "absolute_error": 0.0011367615460131653
+        },
+        {
+          "K": 8,
+          "dimension": 165,
+          "t": 0.25,
+          "observable": 1,
+          "real": 0.8068992960987551,
+          "imag": -8.326672684688674e-17,
+          "gaussian_target": 0.8078765385917451,
+          "absolute_error": 0.000977242492990027
+        },
+        {
+          "K": 8,
+          "dimension": 165,
+          "t": 0.75,
+          "observable": 0,
+          "real": 0.8599314096416262,
+          "imag": 5.551115123125783e-17,
+          "gaussian_target": 0.8531312055051637,
+          "absolute_error": 0.006800204136462429
+        },
+        {
+          "K": 8,
+          "dimension": 165,
+          "t": 0.75,
+          "observable": 1,
+          "real": 0.8062256424284191,
+          "imag": -5.551115123125783e-17,
+          "gaussian_target": 0.8031561712802051,
+          "absolute_error": 0.003069471148213987
+        },
+        {
+          "K": 8,
+          "dimension": 165,
+          "t": 1.25,
+          "observable": 0,
+          "real": 0.8275283697596519,
+          "imag": 5.551115123125783e-17,
+          "gaussian_target": 0.8102736752463543,
+          "absolute_error": 0.01725469451329764
+        },
+        {
+          "K": 8,
+          "dimension": 165,
+          "t": 1.25,
+          "observable": 1,
+          "real": 0.8062065644537717,
+          "imag": 0.0,
+          "gaussian_target": 0.7970809004578475,
+          "absolute_error": 0.009125663995924183
+        },
+        {
+          "K": 16,
+          "dimension": 969,
+          "t": 0.25,
+          "observable": 0,
+          "real": 0.8860641640999882,
+          "imag": 8.326672684688674e-17,
+          "gaussian_target": 0.8854991288137849,
+          "absolute_error": 0.0005650352862033303
+        },
+        {
+          "K": 16,
+          "dimension": 969,
+          "t": 0.25,
+          "observable": 1,
+          "real": 0.8074048613132613,
+          "imag": 1.1102230246251565e-16,
+          "gaussian_target": 0.8078765385917451,
+          "absolute_error": 0.00047167727848385077
+        },
+        {
+          "K": 16,
+          "dimension": 969,
+          "t": 0.75,
+          "observable": 0,
+          "real": 0.856524538006416,
+          "imag": 2.220446049250313e-16,
+          "gaussian_target": 0.8531312055051637,
+          "absolute_error": 0.0033933325012522886
+        },
+        {
+          "K": 16,
+          "dimension": 969,
+          "t": 0.75,
+          "observable": 1,
+          "real": 0.8047585374117816,
+          "imag": 2.220446049250313e-16,
+          "gaussian_target": 0.8031561712802051,
+          "absolute_error": 0.0016023661315764937
+        },
+        {
+          "K": 16,
+          "dimension": 969,
+          "t": 1.25,
+          "observable": 0,
+          "real": 0.8188434206036341,
+          "imag": -8.326672684688674e-17,
+          "gaussian_target": 0.8102736752463543,
+          "absolute_error": 0.008569745357279834
+        },
+        {
+          "K": 16,
+          "dimension": 969,
+          "t": 1.25,
+          "observable": 1,
+          "real": 0.8016368826170125,
+          "imag": -2.7755575615628914e-17,
+          "gaussian_target": 0.7970809004578475,
+          "absolute_error": 0.004555982159164973
+        },
+        {
+          "K": 32,
+          "dimension": 6545,
+          "t": 0.25,
+          "observable": 0,
+          "real": 0.8857806902641403,
+          "imag": -5.551115123125783e-17,
+          "gaussian_target": 0.8854991288137849,
+          "absolute_error": 0.00028156145035540536
+        },
+        {
+          "K": 32,
+          "dimension": 6545,
+          "t": 0.25,
+          "observable": 1,
+          "real": 0.8076447933469264,
+          "imag": -2.7755575615628914e-17,
+          "gaussian_target": 0.8078765385917451,
+          "absolute_error": 0.00023174524481872627
+        },
+        {
+          "K": 32,
+          "dimension": 6545,
+          "t": 0.75,
+          "observable": 0,
+          "real": 0.8548211590904814,
+          "imag": -2.220446049250313e-16,
+          "gaussian_target": 0.8531312055051637,
+          "absolute_error": 0.0016899535853176495
+        },
+        {
+          "K": 32,
+          "dimension": 6545,
+          "t": 0.75,
+          "observable": 1,
+          "real": 0.803970481050259,
+          "imag": -1.6653345369377348e-16,
+          "gaussian_target": 0.8031561712802051,
+          "absolute_error": 0.0008143097700539226
+        },
+        {
+          "K": 32,
+          "dimension": 6545,
+          "t": 1.25,
+          "observable": 0,
+          "real": 0.8144901648813692,
+          "imag": 5.551115123125783e-17,
+          "gaussian_target": 0.8102736752463543,
+          "absolute_error": 0.004216489635014864
+        },
+        {
+          "K": 32,
+          "dimension": 6545,
+          "t": 1.25,
+          "observable": 1,
+          "real": 0.7993332747863356,
+          "imag": 5.551115123125783e-17,
+          "gaussian_target": 0.7970809004578475,
+          "absolute_error": 0.002252374328488127
+        }
+      ],
+      "scope": "One three-mode block with squared frequencies (0,3/4,3/4), matching a nonzero L3 curl spectrum. This is a local polynomial control, not a simulation of the full coupled cubic lattice. Exact occupancy and discrete-curl controls are separate. No cutoff is imposed on the finite physical K block."
+    }
+  }
+}

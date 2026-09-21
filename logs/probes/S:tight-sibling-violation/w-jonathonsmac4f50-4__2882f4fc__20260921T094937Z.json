@@ -1,0 +1,32 @@
+{
+ "task": "S:tight-sibling-violation",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/violate.py 184 1800 6 6 8 A",
+ "seed": 184,
+ "minutes": 30.0,
+ "box": "6x6x8",
+ "git_sha": "2882f4fc",
+ "started_utc": "20260921T094937Z",
+ "elapsed_s": 1800.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "(0, 0)"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "seeded climb from the extremal realization Z_A for a processed site whose cheapest tree costs more than 0 at c = 1 (unrooted, rooted). A HIT refutes block 32's conjecture c* = 1 and raises the tree route's floor. Vary --seed, --box (5x5x8 .. 8x8x10), --minutes (20-120). To start from Z_B, use S:tight-sibling-violation-B.",
+ "stdout_sha256": "446faed8ae3ef8d5fd323dc044923455cbec7b685f98160d52f4e722f8334528",
+ "stdout_tail": "seed 184 6x6x8 from Z_A: start (unrooted, rooted) max cost = (0, 0) at ((3, 3, 3), 0, 0, (7, 7, 1, 0))\nseed 184: done best=(0, 0)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-4",
+  "at_utc": "20260921T101938Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

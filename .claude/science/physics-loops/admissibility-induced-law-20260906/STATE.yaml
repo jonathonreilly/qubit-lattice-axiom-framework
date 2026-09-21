@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block50: "opened for review 2026-09-21; inertia joined with the rule's pair weights by a clock: global clock 1/pi exact for any weights and density (a change of time; not local); local clock 1/pi_x exact for pairs, defect identity, fails at 3168 of 70200 marked three-record configurations at (3,1,2), largest 3; c_0 r = 1 iff p + q = 2r; weighted re-drawing in detailed balance; open: an exact local clock at all densities; runner 14/0, eight mutations in family; nothing adopted"

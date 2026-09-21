@@ -1,0 +1,8 @@
+PASS: W1 two records, all 12636 configurations, forward flux accounting: global clock violated at 0, local clock at 0; every configuration has two events in and two out
+PASS: W2 three records, all 631800 configurations: global clock violated at 0; local clock at 28512 = 9 x 3168 (the runner's 3168 are configurations with a record at the origin: each configuration has three such translates, and 27 translates in all), largest defect 3; three events in and three out everywhere
+PASS: W3 symbolic weights: the local-clock defect of the witness configuration is c*p + c*r - 2; sixty sampled two-record configurations have defect zero identically in p, q, r, c
+PASS: W4 simulation of two records with local clocks (600000 events): time per reachable configuration (contents not both along the bond) over the non-adjacent value: equal 2.974, opposite 1.009, orthogonal 2.004 (the rule's 3, 1, 2)
+PASS: W5 symbolic: the mean pair weight at c_0 = 6/(p + q + 4r) is one; c_0 r = 1 exactly when p + q = 2r, so at (3, 1, 2) orthogonal pairs are neutral at the neutral scale
+REFUTER TOTAL: PASS=5 FAIL=0
+python3 "$P/supervisor_control_block50_refuter.py"  12.65s user 0.21s system 84% cpu 15.272 total
+exit=0

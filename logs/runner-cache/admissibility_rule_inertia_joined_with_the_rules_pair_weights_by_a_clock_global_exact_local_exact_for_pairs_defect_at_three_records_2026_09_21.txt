@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_inertia_joined_with_the_rules_pair_weights_by_a_clock_global_exact_local_exact_for_pairs_defect_at_three_records_2026_09_21.py
+runner_sha256: 89ec4139f7dcd07656000f1be3e51ed114bde41d9564ced8449a7f81c5589a88
+input_fingerprint_sha256: eaa4bea926e868c8e3e7d9becd7806982f605cd8681cae98c6d02695bd7128a5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.30
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_INERTIA_JOINED_WITH_THE_RULES_PAIR_WEIGHTS_BY_A_CLOCK_GLOBAL_CLOCK_EXACT_LOCAL_CLOCK_EXACT_FOR_PAIRS_DEFECT_AT_THREE_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentence used
+PASS: B1 T1: every record of a configuration has exactly one streaming event (enter the empty target, or exchange contents with the occupied one) and the predecessor map inverts it (1872 events of the two-record sector); events keep the number of records and their contents, hence the momentum: the unit-clock dynamics has as many ways into a configuration as out of it
+PASS: B2 T1: with every event of C running at the rate 1/pi(C), the flow of pi into a configuration equals the flow out of it at all 936 two-record and 70200 three-record configurations (weights 3, 1, 2): pi is stationary under the global clock
+PASS: C1 T2: with the event of the record at x running at the rate 1/pi_x(C), pi is stationary at all 936 two-record configurations, for the weights (3, 1, 2), (5, 2, 4) and (3, 1, 2) at the neutral scale 1/2
+PASS: C2 T2: at three records the local clock fails at 3168 of 70200 configurations; the largest defect is 3, at [((0, 0, 0), 2), ((0, 0, 1), 4), ((0, 1, 0), 2)] (contents 0..5 = +x, -x, +y, -y, +z, -z)
+PASS: C3 T2: at every three-record configuration out - in = sum over records whose site behind is occupied of W_0 [A_b(u) - A_x(u)]; it vanishes whenever no such pair of sites has a third record next to it (70200 configurations)
+PASS: D1 T3: in the two-record sector the stationary law is the rule's pair law (weights p, q, r for adjacent equal, opposite and orthogonal contents, 1 otherwise); at the neutral scale the mean pair weight over the partner's content is one: (3,1,2): c_0 = 1/2; (5,2,4): c_0 = 6/23; (12,1,2): c_0 = 2/7
+PASS: D2 T4: re-drawing the two contents of a bond on their momentum class (classes of 1, 2 or 6 ordered pairs) with probabilities proportional to pi satisfies detailed balance with respect to pi and conserves the pair's momentum, also next to a third record (216 cases)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — every event of the two-record sector and its inverse; the momentum classes of a bond (1, 2 or 6 ordered pairs)
+per_site: executed — the local-clock balance at all 936 two-record configurations for three weight sets; the defect identity at all 70200 three-record configurations
+per_mode: not applicable
+per_block: executed — the global-clock balance in both sectors; the count 3168 and the largest defect 3 with its configuration; the neutral scale for three weight triples; detailed balance of the weighted re-draw next to a third record
+lattice_wide: T1 is a change of time and holds for any weights, density and window once the unit-clock dynamics keeps the uniform measure (block 44); T2's identity is proved for any number of records and checked at two and three; whether some local clock is exact at all densities is open
+PASS: G1 the five N5 resolution lines are printed
+scope: inertial streaming with the rule's pair weights — a global clock 1/pi keeps the law with vacancies stationary at any density; a local clock 1/pi_x is exact for two records and fails at three with an exact defect identity; the pair law and the neutral scale; weighted re-drawing of contents
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 50 — author checks (not a review PASS)
+Exact scratch check before writing; refuting pass over the full sectors, with symbolic weights and a simulation, returned three findings (the orbit count, closed classes of collinear pairs, a floating-point zero), all folded. Census 8/8 in family.

@@ -1,0 +1,7 @@
+# Block 50 — refuting pass and findings (2026-09-21)
+
+1. Disjoint machinery (`specs/supervisor_control_block50_refuter.py`): W1, W2 forward flux accounting over the full sectors (12636 and 631800 configurations; the runner uses the predecessor map on configurations with a record at the origin); W3 symbolic weights; W4 a continuous-time simulation of two records with local clocks; W5 the neutral scale symbolically. All pass after the findings below were folded.
+2. Finding: the count. The supervisor expected `27 × 3168` violating configurations in the full three-record sector; the refuter found `9 × 3168 = 28512`: fixing one record at the origin counts each configuration three times among its 27 translates. The note states both numbers.
+3. Finding: reducibility. The simulation first gave `2 : 2/3 : 2` for the time per adjacent configuration of equal, opposite and orthogonal contents, not `3 : 1 : 2`. Cause: two records on a common line with contents along it never leave it; those closed classes (2 of the 6 equal and 2 of the 6 opposite content pairs on each bond) are never reached from a generic start. Per reachable configuration the simulation gives `2.97 : 1.01 : 2.00`. Folded into T3: stationarity is not uniqueness.
+4. Finding: a floating-point zero. The symbolic check compared a float `0.0`, produced by dividing two Python integers, with zero; fixed by keeping symbolic numbers throughout (the campaign's standing lesson).
+5. Stated limits: one window, one weight triple for the count; the existence of an exact local clock at all densities is open.

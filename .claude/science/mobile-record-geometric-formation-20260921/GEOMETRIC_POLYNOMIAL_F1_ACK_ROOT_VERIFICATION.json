@@ -1,0 +1,7 @@
+{
+  "verified_utc": "2026-09-21T16:45:58.900390+00:00",
+  "seal_sha256": "fe5103df6f82aa577985cd740d25fb5fec93f3712d662dfc0a03d46c2131e0e3",
+  "bindings_authenticated": 19,
+  "root_read": "Complete acknowledgment and correction checker. Old runner bindings resolve through preserved old bytes.",
+  "F1": "closed"
+}

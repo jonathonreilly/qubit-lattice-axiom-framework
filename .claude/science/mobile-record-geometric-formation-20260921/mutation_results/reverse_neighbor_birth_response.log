@@ -1,0 +1,2 @@
+PASS: declared_sources_and_conditional_scope
+FAIL: geometric_partner_formation_check.py AssertionError

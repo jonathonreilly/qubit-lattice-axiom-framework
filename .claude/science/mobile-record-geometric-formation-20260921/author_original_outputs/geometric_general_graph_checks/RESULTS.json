@@ -1,0 +1,691 @@
+{
+  "scope": "Author exact finite controls and constructive path replay; selective independent reconstruction pending; no mixing, phase, wave or operational quantum conclusion.",
+  "rows": [
+    {
+      "name": "all_connected_labeled_simple_graphs_through_six_vertices_with_a_perfect_matching",
+      "pass": true,
+      "rows": [
+        {
+          "vertices": 2,
+          "cycle_changes": 0,
+          "graphs": 1,
+          "near_states": 1,
+          "directed_slide_channels": 0
+        },
+        {
+          "vertices": 4,
+          "cycle_changes": 0,
+          "graphs": 34,
+          "near_states": 132,
+          "directed_slide_channels": 312
+        },
+        {
+          "vertices": 6,
+          "cycle_changes": 22974,
+          "graphs": 24298,
+          "near_states": 327690,
+          "directed_slide_channels": 1378800
+        }
+      ],
+      "totals": {
+        "cycle_changes": 22974,
+        "graphs": 24333,
+        "near_states": 327823,
+        "directed_slide_channels": 1379112
+      },
+      "maximum_constructed_path": 11
+    },
+    {
+      "name": "irregular_bridge_and_odd_cycle_examples_with_immutable_content_replay",
+      "pass": true,
+      "cases": 80,
+      "rows": [
+        {
+          "vertices": 8,
+          "replicate": 0,
+          "edges": 7,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 1,
+          "edges": 7,
+          "events": 8,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 2,
+          "edges": 9,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 3,
+          "edges": 7,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 4,
+          "edges": 8,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 5,
+          "edges": 8,
+          "events": 7,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 6,
+          "edges": 10,
+          "events": 5,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 7,
+          "edges": 9,
+          "events": 1,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 8,
+          "edges": 7,
+          "events": 0,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 9,
+          "edges": 9,
+          "events": 3,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 10,
+          "edges": 7,
+          "events": 2,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 11,
+          "edges": 9,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 12,
+          "edges": 8,
+          "events": 0,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 13,
+          "edges": 10,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 8,
+          "replicate": 14,
+          "edges": 9,
+          "events": 10,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 8,
+          "replicate": 15,
+          "edges": 8,
+          "events": 3,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 0,
+          "edges": 10,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 1,
+          "edges": 14,
+          "events": 12,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 10,
+          "replicate": 2,
+          "edges": 11,
+          "events": 0,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 3,
+          "edges": 12,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 4,
+          "edges": 10,
+          "events": 2,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 5,
+          "edges": 10,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 6,
+          "edges": 11,
+          "events": 2,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 7,
+          "edges": 9,
+          "events": 2,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 8,
+          "edges": 11,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 9,
+          "edges": 12,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 10,
+          "edges": 10,
+          "events": 12,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 10,
+          "replicate": 11,
+          "edges": 11,
+          "events": 2,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 12,
+          "edges": 12,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 13,
+          "edges": 13,
+          "events": 5,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 14,
+          "edges": 13,
+          "events": 3,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 10,
+          "replicate": 15,
+          "edges": 11,
+          "events": 1,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 0,
+          "edges": 14,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 1,
+          "edges": 13,
+          "events": 1,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 2,
+          "edges": 15,
+          "events": 7,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 3,
+          "edges": 13,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 4,
+          "edges": 14,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 5,
+          "edges": 14,
+          "events": 9,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 12,
+          "replicate": 6,
+          "edges": 17,
+          "events": 12,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 12,
+          "replicate": 7,
+          "edges": 15,
+          "events": 7,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 8,
+          "edges": 14,
+          "events": 8,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 12,
+          "replicate": 9,
+          "edges": 14,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 10,
+          "edges": 18,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 11,
+          "edges": 13,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 12,
+          "edges": 14,
+          "events": 1,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 13,
+          "edges": 14,
+          "events": 4,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 12,
+          "replicate": 14,
+          "edges": 13,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 12,
+          "replicate": 15,
+          "edges": 14,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 0,
+          "edges": 22,
+          "events": 9,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 1,
+          "edges": 21,
+          "events": 7,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 2,
+          "edges": 24,
+          "events": 11,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 16,
+          "replicate": 3,
+          "edges": 28,
+          "events": 9,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 4,
+          "edges": 20,
+          "events": 8,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 5,
+          "edges": 21,
+          "events": 5,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 6,
+          "edges": 22,
+          "events": 5,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 7,
+          "edges": 23,
+          "events": 5,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 8,
+          "edges": 29,
+          "events": 15,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 16,
+          "replicate": 9,
+          "edges": 28,
+          "events": 17,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 16,
+          "replicate": 10,
+          "edges": 21,
+          "events": 10,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 16,
+          "replicate": 11,
+          "edges": 25,
+          "events": 6,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 12,
+          "edges": 21,
+          "events": 8,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 16,
+          "replicate": 13,
+          "edges": 22,
+          "events": 9,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 16,
+          "replicate": 14,
+          "edges": 22,
+          "events": 13,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 16,
+          "replicate": 15,
+          "edges": 22,
+          "events": 8,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 24,
+          "replicate": 0,
+          "edges": 45,
+          "events": 19,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 24,
+          "replicate": 1,
+          "edges": 38,
+          "events": 14,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 24,
+          "replicate": 2,
+          "edges": 37,
+          "events": 7,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 24,
+          "replicate": 3,
+          "edges": 37,
+          "events": 15,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 24,
+          "replicate": 4,
+          "edges": 44,
+          "events": 24,
+          "cycle_changes": 2
+        },
+        {
+          "vertices": 24,
+          "replicate": 5,
+          "edges": 43,
+          "events": 17,
+          "cycle_changes": 2
+        },
+        {
+          "vertices": 24,
+          "replicate": 6,
+          "edges": 41,
+          "events": 12,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 24,
+          "replicate": 7,
+          "edges": 48,
+          "events": 20,
+          "cycle_changes": 2
+        },
+        {
+          "vertices": 24,
+          "replicate": 8,
+          "edges": 44,
+          "events": 15,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 24,
+          "replicate": 9,
+          "edges": 38,
+          "events": 4,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 24,
+          "replicate": 10,
+          "edges": 41,
+          "events": 15,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 24,
+          "replicate": 11,
+          "edges": 41,
+          "events": 12,
+          "cycle_changes": 0
+        },
+        {
+          "vertices": 24,
+          "replicate": 12,
+          "edges": 42,
+          "events": 21,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 24,
+          "replicate": 13,
+          "edges": 40,
+          "events": 22,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 24,
+          "replicate": 14,
+          "edges": 53,
+          "events": 21,
+          "cycle_changes": 1
+        },
+        {
+          "vertices": 24,
+          "replicate": 15,
+          "edges": 34,
+          "events": 14,
+          "cycle_changes": 0
+        }
+      ]
+    },
+    {
+      "name": "periodic_contractible_and_winding_cycle_paths",
+      "pass": true,
+      "rows": [
+        {
+          "N": 4,
+          "target_axis": 0,
+          "target_shift": 1,
+          "events": 56,
+          "cycles": 15
+        },
+        {
+          "N": 4,
+          "target_axis": 1,
+          "target_shift": 0,
+          "events": 60,
+          "cycles": 15
+        },
+        {
+          "N": 6,
+          "target_axis": 0,
+          "target_shift": 1,
+          "events": 156,
+          "cycles": 35
+        },
+        {
+          "N": 6,
+          "target_axis": 1,
+          "target_shift": 0,
+          "events": 190,
+          "cycles": 53
+        },
+        {
+          "N": 8,
+          "target_axis": 0,
+          "target_shift": 1,
+          "events": 336,
+          "cycles": 63
+        },
+        {
+          "N": 8,
+          "target_axis": 1,
+          "target_shift": 0,
+          "events": 430,
+          "cycles": 127
+        },
+        {
+          "N": 12,
+          "target_axis": 0,
+          "target_shift": 1,
+          "events": 1032,
+          "cycles": 143
+        },
+        {
+          "N": 12,
+          "target_axis": 1,
+          "target_shift": 0,
+          "events": 1390,
+          "cycles": 431
+        }
+      ]
+    },
+    {
+      "name": "disconnected_two_square_countercontrol",
+      "pass": true,
+      "near_states": 16,
+      "component_sizes": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "full_matchings": 4,
+      "reachable_full_counts": [
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "sources_sha256": {
+    "geometric_general_graph_check.py": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039",
+    "GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959",
+    "geometric_partner_formation_check.py": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259"
+  }
+}

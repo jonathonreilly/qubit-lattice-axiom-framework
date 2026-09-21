@@ -1,0 +1,16 @@
+{
+  "report_sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1",
+  "final_seal_sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542",
+  "authenticated_rows": {
+    "PRE_COMPARISON_SEAL.json": 20,
+    "FINAL_SEAL.json": 35
+  },
+  "root_full_read": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "additional_controls.py",
+    "comparison_check.py"
+  ],
+  "finding": "F1: restrict later observation to a common deterministic elapsed time after first filling, or an independent random delay. Core first-full theorem unaffected."
+}

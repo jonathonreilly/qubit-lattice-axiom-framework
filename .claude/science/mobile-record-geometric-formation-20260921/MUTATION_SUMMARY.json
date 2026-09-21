@@ -1,0 +1,36 @@
+{
+  "runner_sha256": "fbd1d753c7c7eb3d84ce258de83862af5be378781693df6fc3c25eda17931166",
+  "rows": [
+    {
+      "mutation": "break_record_slide_permutation",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "mutation": "double_killed_birth_hazard",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "mutation": "miscount_monomer_normalization",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "mutation": "omit_clock_schur_correction",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "mutation": "omit_cycle_return_path",
+      "exit_code": 1,
+      "detected": true
+    },
+    {
+      "mutation": "reverse_neighbor_birth_response",
+      "exit_code": 1,
+      "detected": true
+    }
+  ],
+  "scope": "Author fault-sensitivity checks; not independent mathematical review."
+}

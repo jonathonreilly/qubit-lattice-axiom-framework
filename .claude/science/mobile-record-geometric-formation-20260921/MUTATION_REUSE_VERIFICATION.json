@@ -1,0 +1,78 @@
+{
+  "current_runner_sha256": "939cd94b62c6f0d81fab24c31f0bbb52b33f719262da5639a62b0c087d70181b",
+  "rows": [
+    {
+      "mutation": "break_record_slide_permutation",
+      "checker_sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+      "mutant_sha256": "76b4f88e18e3e65e1f6467b985b2c732bb543a2fc1032e9161b66a3ef605b8b9",
+      "evidence_sha256": "07c90e3826647c5f32803f2e30da19bf535b15383585cee29a6fb8f613e94f51",
+      "reused_unchanged_checker": true,
+      "exit_code": 1,
+      "failure": "AssertionError"
+    },
+    {
+      "mutation": "break_trace_row_sum",
+      "checker_sha256": "996c2098b94a0f3e3331cfb7152af40bf18e7b6307e5a806204e9569e04478f0",
+      "mutant_sha256": "fbcbd1f938cec85073fc0735c48a83b1e80726e2213555f6ce31a9060d75964e",
+      "evidence_sha256": "2363c0a8feb937df384a441ca0b0fa4449e9f2aac76b7f01071b7eb2d7049288",
+      "reused_unchanged_checker": false,
+      "exit_code": 1,
+      "failure": "AssertionError"
+    },
+    {
+      "mutation": "double_killed_birth_hazard",
+      "checker_sha256": "2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b",
+      "mutant_sha256": "7dbb14c20c3d45e8f801b0e0d4ab37a89c394715262a2a63b22e7017f8a4c981",
+      "evidence_sha256": "7d89ee9a6c9f5ddff97998963c700039e23a53896104559fb91b5f488b43f195",
+      "reused_unchanged_checker": true,
+      "exit_code": 1,
+      "failure": "AssertionError"
+    },
+    {
+      "mutation": "miscount_monomer_normalization",
+      "checker_sha256": "60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38",
+      "mutant_sha256": "1a3c40d75c048fae9b39edb011002056c7f9a4bd4f573672c8d8066ab2177891",
+      "evidence_sha256": "0bfde7010b7e8f7278364514d3ff4629797e7161d2437ea7792378809edb42f7",
+      "reused_unchanged_checker": true,
+      "exit_code": 1,
+      "failure": "AssertionError"
+    },
+    {
+      "mutation": "omit_clock_schur_correction",
+      "checker_sha256": "60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38",
+      "mutant_sha256": "4c7aef26be63dcd23e153fd037f0a57fa639ae35f6c21bf3fe8e16bc94d28564",
+      "evidence_sha256": "2e5c6beff039ecccf7aa0b3710f65f40e14cf8a458303e54185b87d16797b1f9",
+      "reused_unchanged_checker": true,
+      "exit_code": 1,
+      "failure": "AssertionError"
+    },
+    {
+      "mutation": "omit_cycle_return_path",
+      "checker_sha256": "2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b",
+      "mutant_sha256": "a207933c680848ef3a4d59a5b2ed858508e3057f165d1036390d1692a13650e6",
+      "evidence_sha256": "c4bbf9704d7dc360e51decbc4800b1a2119e58e6a751a81c5c4e8c1cf4e066f0",
+      "reused_unchanged_checker": true,
+      "exit_code": 1,
+      "failure": "AssertionError"
+    },
+    {
+      "mutation": "omit_general_graph_second_slide",
+      "checker_sha256": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039",
+      "mutant_sha256": "cdb963f26e64cb6e6d04741893ef9bb8ba1af2a7ec879aac42480c1b59dd75f9",
+      "evidence_sha256": "e35e8a886e487d29b95f7d8f11f4846f1b7d00a183f1e478ad7cd3fd2debe0b2",
+      "reused_unchanged_checker": false,
+      "exit_code": 1,
+      "failure": "AssertionError"
+    },
+    {
+      "mutation": "reverse_neighbor_birth_response",
+      "checker_sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+      "mutant_sha256": "f3b720183f3d243dcdd46cabf4322ad644d3e9050d57dcd1e7c8f56f9da8d70a",
+      "evidence_sha256": "3f4777abe298d9155d2da922c72b59bcf90673fa7b260835ea7568b8435b4653",
+      "reused_unchanged_checker": true,
+      "exit_code": 1,
+      "failure": "AssertionError"
+    }
+  ],
+  "scope": "Source/target identity permits reuse of six old fault controls. Two new controls are fresh. Original reports retain their actual runner and note hashes. This is author verification, not independent review."
+}

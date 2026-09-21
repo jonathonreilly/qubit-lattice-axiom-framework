@@ -1,0 +1,3229 @@
+{
+  "capsules": [
+    {
+      "name": "geometric_partner_independent",
+      "archive": "independent/geometric_partner_independent.zip",
+      "zip_sha256": "14878c8511d37008717a85960b851634db075eaabe2fffe970c7fdd8d664af62",
+      "report": "independent/geometric_partner_independent_REPORT.md",
+      "report_sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_COMPARISON_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+          "bytes": 10226,
+          "disposition": "bundled",
+          "member": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_formation_check.py",
+          "sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+          "bytes": 12896,
+          "disposition": "bundled",
+          "member": "bound_sources/3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259/geometric_partner_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_checks/RESULTS.json",
+          "sha256": "4001eb228ebb1f6b1d11e0eaddac3c58ace221f9c81163b011555e3564e11399",
+          "bytes": 5459,
+          "disposition": "bundled",
+          "member": "bound_sources/4001eb228ebb1f6b1d11e0eaddac3c58ace221f9c81163b011555e3564e11399/RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_checks/CUBE_CHANNELS.json",
+          "sha256": "0bf684adc51e80f59933a311bd112854d1794289f2c8a83fb8921e76638b6694",
+          "bytes": 153654,
+          "disposition": "bundled",
+          "member": "bound_sources/0bf684adc51e80f59933a311bd112854d1794289f2c8a83fb8921e76638b6694/CUBE_CHANNELS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_FORMATION_RUN.log",
+          "sha256": "35c56552b14da675614745294ce8d8f02ad45cc3b49d60fcd588cdd9ff7a882a",
+          "bytes": 3447,
+          "disposition": "bundled",
+          "member": "bound_sources/35c56552b14da675614745294ce8d8f02ad45cc3b49d60fcd588cdd9ff7a882a/GEOMETRIC_PARTNER_FORMATION_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_FORMATION_RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_PARTNER_FORMATION_RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_development/initial_path_error/GEOMETRIC_PARTNER_FORMATION_RUN.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_PARTNER_FORMATION_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_development/initial_path_error/GEOMETRIC_PARTNER_FORMATION_RUN.stderr",
+          "sha256": "2b01c12aec8b60b626e3f08ab5e498dfee33929858db942c2aad533e9389bf55",
+          "bytes": 352,
+          "disposition": "bundled",
+          "member": "bound_sources/2b01c12aec8b60b626e3f08ab5e498dfee33929858db942c2aad533e9389bf55/GEOMETRIC_PARTNER_FORMATION_RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/PRE_COMPARISON_SEAL.json",
+          "sha256": "14985752c4cf9843108349622118a346a4f8fefad43bd059b84d8c01bfa2d07d",
+          "bytes": 6086,
+          "disposition": "bundled",
+          "member": "bound_sources/14985752c4cf9843108349622118a346a4f8fefad43bd059b84d8c01bfa2d07d/PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/COMPARISON_RESULTS.json",
+          "sha256": "21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d",
+          "bytes": 1591,
+          "disposition": "bundled",
+          "member": "bound_sources/21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d/COMPARISON_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/COMPARISON_RUN_01.json",
+          "sha256": "ff754b6a5dd8586082062c6be3532409192799806b27f443ad88025b20f61b43",
+          "bytes": 292,
+          "disposition": "bundled",
+          "member": "bound_sources/ff754b6a5dd8586082062c6be3532409192799806b27f443ad88025b20f61b43/COMPARISON_RUN_01.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/COMPARISON_RUN_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON_RUN_01.stderr.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/COMPARISON_RUN_01.stdout.log",
+          "sha256": "21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d",
+          "bytes": 1591,
+          "disposition": "bundled",
+          "member": "bound_sources/21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d/COMPARISON_RUN_01.stdout.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/FAILED_ATTEMPT_01_EXPLANATION.md",
+          "sha256": "aa25fdb6a3108e472fe508803acc9a0419a15264e0baeb2241670786fbe4aa63",
+          "bytes": 509,
+          "disposition": "bundled",
+          "member": "bound_sources/aa25fdb6a3108e472fe508803acc9a0419a15264e0baeb2241670786fbe4aa63/FAILED_ATTEMPT_01_EXPLANATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RESULTS.json",
+          "sha256": "24a06aea2de643105f577b2a03639dbe6b9dcc5bcc6f026b4b6621dd6bc976e9",
+          "bytes": 26081,
+          "disposition": "bundled",
+          "member": "bound_sources/24a06aea2de643105f577b2a03639dbe6b9dcc5bcc6f026b4b6621dd6bc976e9/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_01.json",
+          "sha256": "e094ec0a99a6f9265861b6874ef08bc53bac91372e4808adc772a1e519273532",
+          "bytes": 317,
+          "disposition": "bundled",
+          "member": "bound_sources/e094ec0a99a6f9265861b6874ef08bc53bac91372e4808adc772a1e519273532/INDEPENDENT_RUN_01.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_01.stderr.log",
+          "sha256": "62d354360e5943a8dd0a3d8b6a4de93aaa31e57ced30c8973f329d21aa88f551",
+          "bytes": 1153,
+          "disposition": "bundled",
+          "member": "bound_sources/62d354360e5943a8dd0a3d8b6a4de93aaa31e57ced30c8973f329d21aa88f551/INDEPENDENT_RUN_01.stderr.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_01.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN_01.stdout.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_02.json",
+          "sha256": "0f03153aa98f5def1e6d2a2e4f5573a2c2ac9bc14c3263ca930b519c62b5a1f9",
+          "bytes": 316,
+          "disposition": "bundled",
+          "member": "bound_sources/0f03153aa98f5def1e6d2a2e4f5573a2c2ac9bc14c3263ca930b519c62b5a1f9/INDEPENDENT_RUN_02.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_02.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN_02.stderr.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_02.stdout.log",
+          "sha256": "bf56030c406adb597058b46d043c609d00feddd6eb227cad1d09b2fbf227d525",
+          "bytes": 16997,
+          "disposition": "bundled",
+          "member": "bound_sources/bf56030c406adb597058b46d043c609d00feddd6eb227cad1d09b2fbf227d525/INDEPENDENT_RUN_02.stdout.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/PRE_COMPARISON_DERIVATION.md",
+          "sha256": "c009d2f3ec170183ec69813db330a6e35073796f9e82338fd26cd7fc297c58a7",
+          "bytes": 10348,
+          "disposition": "bundled",
+          "member": "bound_sources/c009d2f3ec170183ec69813db330a6e35073796f9e82338fd26cd7fc297c58a7/PRE_COMPARISON_DERIVATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/READ_BOUNDARY.json",
+          "sha256": "594b144a0b078186c460eb1b3431f01608e6630f6817ce628504d1b0930c0c88",
+          "bytes": 832,
+          "disposition": "bundled",
+          "member": "bound_sources/594b144a0b078186c460eb1b3431f01608e6630f6817ce628504d1b0930c0c88/READ_BOUNDARY.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/REPORT.md",
+          "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423",
+          "bytes": 10504,
+          "disposition": "bundled",
+          "member": "bound_sources/ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/SEAL_ATTEMPT_01.log",
+          "sha256": "e2559b4e0aa5a5a4cfbec3cb3682dfdc445a880e71bc751dc6d376b2ff2e8f24",
+          "bytes": 357,
+          "disposition": "bundled",
+          "member": "bound_sources/e2559b4e0aa5a5a4cfbec3cb3682dfdc445a880e71bc751dc6d376b2ff2e8f24/SEAL_ATTEMPT_01.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/comparison_check.py",
+          "sha256": "2d17a5c3ea71695d3544c4e42061bb306859ac0182040b02e65536618b6235ad",
+          "bytes": 8068,
+          "disposition": "bundled",
+          "member": "bound_sources/2d17a5c3ea71695d3544c4e42061bb306859ac0182040b02e65536618b6235ad/comparison_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py",
+          "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f",
+          "bytes": 14609,
+          "disposition": "bundled",
+          "member": "bound_sources/1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check_attempt01.py",
+          "sha256": "b53d77367a4dc968b6082d5cdb65cea253977df03090ee3da9033bfae18143cb",
+          "bytes": 14489,
+          "disposition": "bundled",
+          "member": "bound_sources/b53d77367a4dc968b6082d5cdb65cea253977df03090ee3da9033bfae18143cb/independent_check_attempt01.py"
+        }
+      ],
+      "excluded_review_artifacts": [],
+      "members": [
+        {
+          "path": "bound_sources/0bf684adc51e80f59933a311bd112854d1794289f2c8a83fb8921e76638b6694/CUBE_CHANNELS.json",
+          "bytes": 153654,
+          "sha256": "0bf684adc51e80f59933a311bd112854d1794289f2c8a83fb8921e76638b6694"
+        },
+        {
+          "path": "bound_sources/0f03153aa98f5def1e6d2a2e4f5573a2c2ac9bc14c3263ca930b519c62b5a1f9/INDEPENDENT_RUN_02.json",
+          "bytes": 316,
+          "sha256": "0f03153aa98f5def1e6d2a2e4f5573a2c2ac9bc14c3263ca930b519c62b5a1f9"
+        },
+        {
+          "path": "bound_sources/14985752c4cf9843108349622118a346a4f8fefad43bd059b84d8c01bfa2d07d/PRE_COMPARISON_SEAL.json",
+          "bytes": 6086,
+          "sha256": "14985752c4cf9843108349622118a346a4f8fefad43bd059b84d8c01bfa2d07d"
+        },
+        {
+          "path": "bound_sources/1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f/independent_check.py",
+          "bytes": 14609,
+          "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+        },
+        {
+          "path": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "bytes": 10226,
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+        },
+        {
+          "path": "bound_sources/21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d/COMPARISON_RESULTS.json",
+          "bytes": 1591,
+          "sha256": "21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d"
+        },
+        {
+          "path": "bound_sources/21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d/COMPARISON_RUN_01.stdout.log",
+          "bytes": 1591,
+          "sha256": "21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d"
+        },
+        {
+          "path": "bound_sources/24a06aea2de643105f577b2a03639dbe6b9dcc5bcc6f026b4b6621dd6bc976e9/INDEPENDENT_RESULTS.json",
+          "bytes": 26081,
+          "sha256": "24a06aea2de643105f577b2a03639dbe6b9dcc5bcc6f026b4b6621dd6bc976e9"
+        },
+        {
+          "path": "bound_sources/2b01c12aec8b60b626e3f08ab5e498dfee33929858db942c2aad533e9389bf55/GEOMETRIC_PARTNER_FORMATION_RUN.stderr",
+          "bytes": 352,
+          "sha256": "2b01c12aec8b60b626e3f08ab5e498dfee33929858db942c2aad533e9389bf55"
+        },
+        {
+          "path": "bound_sources/2d17a5c3ea71695d3544c4e42061bb306859ac0182040b02e65536618b6235ad/comparison_check.py",
+          "bytes": 8068,
+          "sha256": "2d17a5c3ea71695d3544c4e42061bb306859ac0182040b02e65536618b6235ad"
+        },
+        {
+          "path": "bound_sources/35c56552b14da675614745294ce8d8f02ad45cc3b49d60fcd588cdd9ff7a882a/GEOMETRIC_PARTNER_FORMATION_RUN.log",
+          "bytes": 3447,
+          "sha256": "35c56552b14da675614745294ce8d8f02ad45cc3b49d60fcd588cdd9ff7a882a"
+        },
+        {
+          "path": "bound_sources/3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259/geometric_partner_formation_check.py",
+          "bytes": 12896,
+          "sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259"
+        },
+        {
+          "path": "bound_sources/4001eb228ebb1f6b1d11e0eaddac3c58ace221f9c81163b011555e3564e11399/RESULTS.json",
+          "bytes": 5459,
+          "sha256": "4001eb228ebb1f6b1d11e0eaddac3c58ace221f9c81163b011555e3564e11399"
+        },
+        {
+          "path": "bound_sources/594b144a0b078186c460eb1b3431f01608e6630f6817ce628504d1b0930c0c88/READ_BOUNDARY.json",
+          "bytes": 832,
+          "sha256": "594b144a0b078186c460eb1b3431f01608e6630f6817ce628504d1b0930c0c88"
+        },
+        {
+          "path": "bound_sources/62d354360e5943a8dd0a3d8b6a4de93aaa31e57ced30c8973f329d21aa88f551/INDEPENDENT_RUN_01.stderr.log",
+          "bytes": 1153,
+          "sha256": "62d354360e5943a8dd0a3d8b6a4de93aaa31e57ced30c8973f329d21aa88f551"
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "bytes": 737,
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "bytes": 14490,
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "path": "bound_sources/aa25fdb6a3108e472fe508803acc9a0419a15264e0baeb2241670786fbe4aa63/FAILED_ATTEMPT_01_EXPLANATION.md",
+          "bytes": 509,
+          "sha256": "aa25fdb6a3108e472fe508803acc9a0419a15264e0baeb2241670786fbe4aa63"
+        },
+        {
+          "path": "bound_sources/b53d77367a4dc968b6082d5cdb65cea253977df03090ee3da9033bfae18143cb/independent_check_attempt01.py",
+          "bytes": 14489,
+          "sha256": "b53d77367a4dc968b6082d5cdb65cea253977df03090ee3da9033bfae18143cb"
+        },
+        {
+          "path": "bound_sources/bf56030c406adb597058b46d043c609d00feddd6eb227cad1d09b2fbf227d525/INDEPENDENT_RUN_02.stdout.log",
+          "bytes": 16997,
+          "sha256": "bf56030c406adb597058b46d043c609d00feddd6eb227cad1d09b2fbf227d525"
+        },
+        {
+          "path": "bound_sources/c009d2f3ec170183ec69813db330a6e35073796f9e82338fd26cd7fc297c58a7/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 10348,
+          "sha256": "c009d2f3ec170183ec69813db330a6e35073796f9e82338fd26cd7fc297c58a7"
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "bytes": 12253,
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "path": "bound_sources/e094ec0a99a6f9265861b6874ef08bc53bac91372e4808adc772a1e519273532/INDEPENDENT_RUN_01.json",
+          "bytes": 317,
+          "sha256": "e094ec0a99a6f9265861b6874ef08bc53bac91372e4808adc772a1e519273532"
+        },
+        {
+          "path": "bound_sources/e2559b4e0aa5a5a4cfbec3cb3682dfdc445a880e71bc751dc6d376b2ff2e8f24/SEAL_ATTEMPT_01.log",
+          "bytes": 357,
+          "sha256": "e2559b4e0aa5a5a4cfbec3cb3682dfdc445a880e71bc751dc6d376b2ff2e8f24"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_PARTNER_FORMATION_RUN.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_PARTNER_FORMATION_RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN_01.stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN_02.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423/REPORT.md",
+          "bytes": 10504,
+          "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423"
+        },
+        {
+          "path": "bound_sources/ff754b6a5dd8586082062c6be3532409192799806b27f443ad88025b20f61b43/COMPARISON_RUN_01.json",
+          "bytes": 292,
+          "sha256": "ff754b6a5dd8586082062c6be3532409192799806b27f443ad88025b20f61b43"
+        },
+        {
+          "path": "review/COMPARISON_RESULTS.json",
+          "bytes": 1591,
+          "sha256": "21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.json",
+          "bytes": 292,
+          "sha256": "ff754b6a5dd8586082062c6be3532409192799806b27f443ad88025b20f61b43"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.stdout.log",
+          "bytes": 1591,
+          "sha256": "21093d38484744ac5f459fc617b0edefe315d10d5831f153cd9107cddf90432d"
+        },
+        {
+          "path": "review/FAILED_ATTEMPT_01_EXPLANATION.md",
+          "bytes": 509,
+          "sha256": "aa25fdb6a3108e472fe508803acc9a0419a15264e0baeb2241670786fbe4aa63"
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "bytes": 11231,
+          "sha256": "08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d"
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "bytes": 26081,
+          "sha256": "24a06aea2de643105f577b2a03639dbe6b9dcc5bcc6f026b4b6621dd6bc976e9"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.json",
+          "bytes": 317,
+          "sha256": "e094ec0a99a6f9265861b6874ef08bc53bac91372e4808adc772a1e519273532"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.stderr.log",
+          "bytes": 1153,
+          "sha256": "62d354360e5943a8dd0a3d8b6a4de93aaa31e57ced30c8973f329d21aa88f551"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_02.json",
+          "bytes": 316,
+          "sha256": "0f03153aa98f5def1e6d2a2e4f5573a2c2ac9bc14c3263ca930b519c62b5a1f9"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_02.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_02.stdout.log",
+          "bytes": 16997,
+          "sha256": "bf56030c406adb597058b46d043c609d00feddd6eb227cad1d09b2fbf227d525"
+        },
+        {
+          "path": "review/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 10348,
+          "sha256": "c009d2f3ec170183ec69813db330a6e35073796f9e82338fd26cd7fc297c58a7"
+        },
+        {
+          "path": "review/PRE_COMPARISON_SEAL.json",
+          "bytes": 6086,
+          "sha256": "14985752c4cf9843108349622118a346a4f8fefad43bd059b84d8c01bfa2d07d"
+        },
+        {
+          "path": "review/READ_BOUNDARY.json",
+          "bytes": 832,
+          "sha256": "594b144a0b078186c460eb1b3431f01608e6630f6817ce628504d1b0930c0c88"
+        },
+        {
+          "path": "review/REPORT.md",
+          "bytes": 10504,
+          "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423"
+        },
+        {
+          "path": "review/SEAL_ATTEMPT_01.log",
+          "bytes": 357,
+          "sha256": "e2559b4e0aa5a5a4cfbec3cb3682dfdc445a880e71bc751dc6d376b2ff2e8f24"
+        },
+        {
+          "path": "review/comparison_check.py",
+          "bytes": 8068,
+          "sha256": "2d17a5c3ea71695d3544c4e42061bb306859ac0182040b02e65536618b6235ad"
+        },
+        {
+          "path": "review/independent_check.py",
+          "bytes": 14609,
+          "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+        },
+        {
+          "path": "review/independent_check_attempt01.py",
+          "bytes": 14489,
+          "sha256": "b53d77367a4dc968b6082d5cdb65cea253977df03090ee3da9033bfae18143cb"
+        }
+      ]
+    },
+    {
+      "name": "geometric_rare_birth_independent",
+      "archive": "independent/geometric_rare_birth_independent.zip",
+      "zip_sha256": "790f294bb95e271e130e00ed5ca050eebc3ffb8a48b9c4482e7aa19053fd22df",
+      "report": "independent/geometric_rare_birth_independent_REPORT.md",
+      "report_sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1",
+      "seal_members": [
+        "review/F1_ACK_SEAL.json",
+        "review/FINAL_SEAL.json",
+        "review/PRE_COMPARISON_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/F1_ACK.json",
+          "sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e",
+          "bytes": 2802,
+          "disposition": "bundled",
+          "member": "bound_sources/7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e/F1_ACK.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/FINAL_SEAL.json",
+          "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542",
+          "bytes": 12389,
+          "disposition": "bundled",
+          "member": "bound_sources/202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_f1_fix/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.before.md",
+          "sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611",
+          "bytes": 8317,
+          "disposition": "bundled",
+          "member": "bound_sources/b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.before.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+          "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e",
+          "bytes": 8459,
+          "disposition": "bundled",
+          "member": "bound_sources/bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_f1_fix/DELTA.json",
+          "sha256": "34bee9756b392e907177142d37cfd32285535a5c40190ca79ccf299b0b20916d",
+          "bytes": 643,
+          "disposition": "bundled",
+          "member": "bound_sources/34bee9756b392e907177142d37cfd32285535a5c40190ca79ccf299b0b20916d/DELTA.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+          "sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611",
+          "bytes": 8317,
+          "disposition": "bundled",
+          "member": "bound_sources/b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_check.py",
+          "sha256": "2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b",
+          "bytes": 12463,
+          "disposition": "bundled",
+          "member": "bound_sources/2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b/geometric_rare_birth_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+          "bytes": 10226,
+          "disposition": "bundled",
+          "member": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_formation_check.py",
+          "sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+          "bytes": 12896,
+          "disposition": "bundled",
+          "member": "bound_sources/3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259/geometric_partner_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_checks/RESULTS.json",
+          "sha256": "957a523a9986800fac4b6cfbdf0c0653785a8ca4da4f6986c1c9d07e3478a558",
+          "bytes": 3145,
+          "disposition": "bundled",
+          "member": "bound_sources/957a523a9986800fac4b6cfbdf0c0653785a8ca4da4f6986c1c9d07e3478a558/RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_checks/CUBE_HARMONIC_CERTIFICATE.json",
+          "sha256": "c0d67e73e4c0e05d9f0c661f003a36f00f2c60c27c3647d8fa39d3d33d3f6d78",
+          "bytes": 2978,
+          "disposition": "bundled",
+          "member": "bound_sources/c0d67e73e4c0e05d9f0c661f003a36f00f2c60c27c3647d8fa39d3d33d3f6d78/CUBE_HARMONIC_CERTIFICATE.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_checks/CUBE_KILLED_CHAIN.json",
+          "sha256": "affa78030679212fd75e4e45f33ab6da43405ecc99bb8f9f86a8b80aec477693",
+          "bytes": 546,
+          "disposition": "bundled",
+          "member": "bound_sources/affa78030679212fd75e4e45f33ab6da43405ecc99bb8f9f86a8b80aec477693/CUBE_KILLED_CHAIN.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_RUN.log",
+          "sha256": "3a8727b0f3c3c441e364d80789bba4553520205f5baf4be5e6b7af9073690d5c",
+          "bytes": 2208,
+          "disposition": "bundled",
+          "member": "bound_sources/3a8727b0f3c3c441e364d80789bba4553520205f5baf4be5e6b7af9073690d5c/GEOMETRIC_RARE_BIRTH_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_RARE_BIRTH_RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/REPORT.md",
+          "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423",
+          "bytes": 10504,
+          "disposition": "bundled",
+          "member": "bound_sources/ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/FINAL_SEAL.json",
+          "sha256": "08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d",
+          "bytes": 11231,
+          "disposition": "bundled",
+          "member": "bound_sources/08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py",
+          "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f",
+          "bytes": 14609,
+          "disposition": "bundled",
+          "member": "bound_sources/1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RESULTS.json",
+          "sha256": "0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c",
+          "bytes": 1464,
+          "disposition": "bundled",
+          "member": "bound_sources/0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c/ADDITIONAL_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RUN_01.json",
+          "sha256": "5b0bae13dd398ca15152c30c9b7b25c21a4298b5198e7a12af6c9197decfd754",
+          "bytes": 629,
+          "disposition": "bundled",
+          "member": "bound_sources/5b0bae13dd398ca15152c30c9b7b25c21a4298b5198e7a12af6c9197decfd754/ADDITIONAL_RUN_01.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RUN_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/ADDITIONAL_RUN_01.stderr.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RUN_01.stdout.log",
+          "sha256": "0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c",
+          "bytes": 1464,
+          "disposition": "bundled",
+          "member": "bound_sources/0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c/ADDITIONAL_RUN_01.stdout.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/COMPARISON_RESULTS.json",
+          "sha256": "d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645",
+          "bytes": 1380,
+          "disposition": "bundled",
+          "member": "bound_sources/d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645/COMPARISON_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/COMPARISON_RUN_01.json",
+          "sha256": "933935bbdaee3d3e6b3fe13d977e347a3e860076c3d432443b73a8be5cb17da0",
+          "bytes": 626,
+          "disposition": "bundled",
+          "member": "bound_sources/933935bbdaee3d3e6b3fe13d977e347a3e860076c3d432443b73a8be5cb17da0/COMPARISON_RUN_01.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/COMPARISON_RUN_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON_RUN_01.stderr.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/COMPARISON_RUN_01.stdout.log",
+          "sha256": "d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645",
+          "bytes": 1380,
+          "disposition": "bundled",
+          "member": "bound_sources/d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645/COMPARISON_RUN_01.stdout.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/INDEPENDENT_RESULTS.json",
+          "sha256": "78d86d8bbefedb8b7f4f91dc2d9f45682ae9210f3ea60d5198921c3a408ab400",
+          "bytes": 3268,
+          "disposition": "bundled",
+          "member": "bound_sources/78d86d8bbefedb8b7f4f91dc2d9f45682ae9210f3ea60d5198921c3a408ab400/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/INDEPENDENT_RUN_01.json",
+          "sha256": "e5d06dc4bd780a7713d78e51b301c095333bdbec0aba14daf417634277f44d77",
+          "bytes": 650,
+          "disposition": "bundled",
+          "member": "bound_sources/e5d06dc4bd780a7713d78e51b301c095333bdbec0aba14daf417634277f44d77/INDEPENDENT_RUN_01.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/INDEPENDENT_RUN_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN_01.stderr.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/INDEPENDENT_RUN_01.stdout.log",
+          "sha256": "730f908f5bffe8e85f2e2dff599adec107fc861649121993db18ccbc3e895a33",
+          "bytes": 3321,
+          "disposition": "bundled",
+          "member": "bound_sources/730f908f5bffe8e85f2e2dff599adec107fc861649121993db18ccbc3e895a33/INDEPENDENT_RUN_01.stdout.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/PRE_COMPARISON_DERIVATION.md",
+          "sha256": "05deb36b09897c419592a4a9496461e83ae4bcd8e3f4ca2874bb0ee4b7906499",
+          "bytes": 9990,
+          "disposition": "bundled",
+          "member": "bound_sources/05deb36b09897c419592a4a9496461e83ae4bcd8e3f4ca2874bb0ee4b7906499/PRE_COMPARISON_DERIVATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/PRE_COMPARISON_SEAL.json",
+          "sha256": "f7fb9f89ffbf0e643b0136659a38cec7b15af484b3163731c5e23299fa2db665",
+          "bytes": 7041,
+          "disposition": "bundled",
+          "member": "bound_sources/f7fb9f89ffbf0e643b0136659a38cec7b15af484b3163731c5e23299fa2db665/PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/READ_BOUNDARY.json",
+          "sha256": "5298ba5d1c500187ce1e525409cd885c4bb8ca335bd0d58db973872b12d0582a",
+          "bytes": 1942,
+          "disposition": "bundled",
+          "member": "bound_sources/5298ba5d1c500187ce1e525409cd885c4bb8ca335bd0d58db973872b12d0582a/READ_BOUNDARY.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/REPORT.md",
+          "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1",
+          "bytes": 10727,
+          "disposition": "bundled",
+          "member": "bound_sources/20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/additional_controls.py",
+          "sha256": "b3d618180e6283798e107d16a266ce3ab5570b8429a92ac6e5f858b6d9ed3b19",
+          "bytes": 3108,
+          "disposition": "bundled",
+          "member": "bound_sources/b3d618180e6283798e107d16a266ce3ab5570b8429a92ac6e5f858b6d9ed3b19/additional_controls.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/comparison_check.py",
+          "sha256": "81e6234e671c2a07db78494fd5cf5afa7f87eef24a458fd8c4c83a7f46b0ce3c",
+          "bytes": 6530,
+          "disposition": "bundled",
+          "member": "bound_sources/81e6234e671c2a07db78494fd5cf5afa7f87eef24a458fd8c4c83a7f46b0ce3c/comparison_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/independent_check.py",
+          "sha256": "55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef",
+          "bytes": 15065,
+          "disposition": "bundled",
+          "member": "bound_sources/55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef/independent_check.py"
+        }
+      ],
+      "excluded_review_artifacts": [],
+      "members": [
+        {
+          "path": "bound_sources/05deb36b09897c419592a4a9496461e83ae4bcd8e3f4ca2874bb0ee4b7906499/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 9990,
+          "sha256": "05deb36b09897c419592a4a9496461e83ae4bcd8e3f4ca2874bb0ee4b7906499"
+        },
+        {
+          "path": "bound_sources/08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d/FINAL_SEAL.json",
+          "bytes": 11231,
+          "sha256": "08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d"
+        },
+        {
+          "path": "bound_sources/0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c/ADDITIONAL_RESULTS.json",
+          "bytes": 1464,
+          "sha256": "0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c"
+        },
+        {
+          "path": "bound_sources/0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c/ADDITIONAL_RUN_01.stdout.log",
+          "bytes": 1464,
+          "sha256": "0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c"
+        },
+        {
+          "path": "bound_sources/1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f/independent_check.py",
+          "bytes": 14609,
+          "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+        },
+        {
+          "path": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "bytes": 10226,
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+        },
+        {
+          "path": "bound_sources/202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542/FINAL_SEAL.json",
+          "bytes": 12389,
+          "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542"
+        },
+        {
+          "path": "bound_sources/20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1/REPORT.md",
+          "bytes": 10727,
+          "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1"
+        },
+        {
+          "path": "bound_sources/2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b/geometric_rare_birth_check.py",
+          "bytes": 12463,
+          "sha256": "2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b"
+        },
+        {
+          "path": "bound_sources/34bee9756b392e907177142d37cfd32285535a5c40190ca79ccf299b0b20916d/DELTA.json",
+          "bytes": 643,
+          "sha256": "34bee9756b392e907177142d37cfd32285535a5c40190ca79ccf299b0b20916d"
+        },
+        {
+          "path": "bound_sources/3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259/geometric_partner_formation_check.py",
+          "bytes": 12896,
+          "sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259"
+        },
+        {
+          "path": "bound_sources/3a8727b0f3c3c441e364d80789bba4553520205f5baf4be5e6b7af9073690d5c/GEOMETRIC_RARE_BIRTH_RUN.log",
+          "bytes": 2208,
+          "sha256": "3a8727b0f3c3c441e364d80789bba4553520205f5baf4be5e6b7af9073690d5c"
+        },
+        {
+          "path": "bound_sources/5298ba5d1c500187ce1e525409cd885c4bb8ca335bd0d58db973872b12d0582a/READ_BOUNDARY.json",
+          "bytes": 1942,
+          "sha256": "5298ba5d1c500187ce1e525409cd885c4bb8ca335bd0d58db973872b12d0582a"
+        },
+        {
+          "path": "bound_sources/55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef/independent_check.py",
+          "bytes": 15065,
+          "sha256": "55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef"
+        },
+        {
+          "path": "bound_sources/5b0bae13dd398ca15152c30c9b7b25c21a4298b5198e7a12af6c9197decfd754/ADDITIONAL_RUN_01.json",
+          "bytes": 629,
+          "sha256": "5b0bae13dd398ca15152c30c9b7b25c21a4298b5198e7a12af6c9197decfd754"
+        },
+        {
+          "path": "bound_sources/730f908f5bffe8e85f2e2dff599adec107fc861649121993db18ccbc3e895a33/INDEPENDENT_RUN_01.stdout.log",
+          "bytes": 3321,
+          "sha256": "730f908f5bffe8e85f2e2dff599adec107fc861649121993db18ccbc3e895a33"
+        },
+        {
+          "path": "bound_sources/7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e/F1_ACK.json",
+          "bytes": 2802,
+          "sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e"
+        },
+        {
+          "path": "bound_sources/78d86d8bbefedb8b7f4f91dc2d9f45682ae9210f3ea60d5198921c3a408ab400/INDEPENDENT_RESULTS.json",
+          "bytes": 3268,
+          "sha256": "78d86d8bbefedb8b7f4f91dc2d9f45682ae9210f3ea60d5198921c3a408ab400"
+        },
+        {
+          "path": "bound_sources/81e6234e671c2a07db78494fd5cf5afa7f87eef24a458fd8c4c83a7f46b0ce3c/comparison_check.py",
+          "bytes": 6530,
+          "sha256": "81e6234e671c2a07db78494fd5cf5afa7f87eef24a458fd8c4c83a7f46b0ce3c"
+        },
+        {
+          "path": "bound_sources/933935bbdaee3d3e6b3fe13d977e347a3e860076c3d432443b73a8be5cb17da0/COMPARISON_RUN_01.json",
+          "bytes": 626,
+          "sha256": "933935bbdaee3d3e6b3fe13d977e347a3e860076c3d432443b73a8be5cb17da0"
+        },
+        {
+          "path": "bound_sources/957a523a9986800fac4b6cfbdf0c0653785a8ca4da4f6986c1c9d07e3478a558/RESULTS.json",
+          "bytes": 3145,
+          "sha256": "957a523a9986800fac4b6cfbdf0c0653785a8ca4da4f6986c1c9d07e3478a558"
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "bytes": 737,
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "bytes": 14490,
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "path": "bound_sources/affa78030679212fd75e4e45f33ab6da43405ecc99bb8f9f86a8b80aec477693/CUBE_KILLED_CHAIN.json",
+          "bytes": 546,
+          "sha256": "affa78030679212fd75e4e45f33ab6da43405ecc99bb8f9f86a8b80aec477693"
+        },
+        {
+          "path": "bound_sources/b3d618180e6283798e107d16a266ce3ab5570b8429a92ac6e5f858b6d9ed3b19/additional_controls.py",
+          "bytes": 3108,
+          "sha256": "b3d618180e6283798e107d16a266ce3ab5570b8429a92ac6e5f858b6d9ed3b19"
+        },
+        {
+          "path": "bound_sources/b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.before.md",
+          "bytes": 8317,
+          "sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611"
+        },
+        {
+          "path": "bound_sources/b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+          "bytes": 8317,
+          "sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611"
+        },
+        {
+          "path": "bound_sources/bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+          "bytes": 8459,
+          "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e"
+        },
+        {
+          "path": "bound_sources/c0d67e73e4c0e05d9f0c661f003a36f00f2c60c27c3647d8fa39d3d33d3f6d78/CUBE_HARMONIC_CERTIFICATE.json",
+          "bytes": 2978,
+          "sha256": "c0d67e73e4c0e05d9f0c661f003a36f00f2c60c27c3647d8fa39d3d33d3f6d78"
+        },
+        {
+          "path": "bound_sources/d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645/COMPARISON_RESULTS.json",
+          "bytes": 1380,
+          "sha256": "d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645"
+        },
+        {
+          "path": "bound_sources/d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645/COMPARISON_RUN_01.stdout.log",
+          "bytes": 1380,
+          "sha256": "d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645"
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "bytes": 12253,
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/ADDITIONAL_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_RARE_BIRTH_RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e5d06dc4bd780a7713d78e51b301c095333bdbec0aba14daf417634277f44d77/INDEPENDENT_RUN_01.json",
+          "bytes": 650,
+          "sha256": "e5d06dc4bd780a7713d78e51b301c095333bdbec0aba14daf417634277f44d77"
+        },
+        {
+          "path": "bound_sources/ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423/REPORT.md",
+          "bytes": 10504,
+          "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423"
+        },
+        {
+          "path": "bound_sources/f7fb9f89ffbf0e643b0136659a38cec7b15af484b3163731c5e23299fa2db665/PRE_COMPARISON_SEAL.json",
+          "bytes": 7041,
+          "sha256": "f7fb9f89ffbf0e643b0136659a38cec7b15af484b3163731c5e23299fa2db665"
+        },
+        {
+          "path": "review/ADDITIONAL_RESULTS.json",
+          "bytes": 1464,
+          "sha256": "0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c"
+        },
+        {
+          "path": "review/ADDITIONAL_RUN_01.json",
+          "bytes": 629,
+          "sha256": "5b0bae13dd398ca15152c30c9b7b25c21a4298b5198e7a12af6c9197decfd754"
+        },
+        {
+          "path": "review/ADDITIONAL_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/ADDITIONAL_RUN_01.stdout.log",
+          "bytes": 1464,
+          "sha256": "0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c"
+        },
+        {
+          "path": "review/COMPARISON_RESULTS.json",
+          "bytes": 1380,
+          "sha256": "d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.json",
+          "bytes": 626,
+          "sha256": "933935bbdaee3d3e6b3fe13d977e347a3e860076c3d432443b73a8be5cb17da0"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.stdout.log",
+          "bytes": 1380,
+          "sha256": "d3650c0c4c0cfecc08f416856fff629bc530c64815d050e9329db93dcd986645"
+        },
+        {
+          "path": "review/F1_ACK.json",
+          "bytes": 2802,
+          "sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e"
+        },
+        {
+          "path": "review/F1_ACK_SEAL.json",
+          "bytes": 1675,
+          "sha256": "9d945ce46431de096442bc0681d4555aa69669b78478a01398dcb7db96d4e614"
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "bytes": 12389,
+          "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542"
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "bytes": 3268,
+          "sha256": "78d86d8bbefedb8b7f4f91dc2d9f45682ae9210f3ea60d5198921c3a408ab400"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.json",
+          "bytes": 650,
+          "sha256": "e5d06dc4bd780a7713d78e51b301c095333bdbec0aba14daf417634277f44d77"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.stdout.log",
+          "bytes": 3321,
+          "sha256": "730f908f5bffe8e85f2e2dff599adec107fc861649121993db18ccbc3e895a33"
+        },
+        {
+          "path": "review/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 9990,
+          "sha256": "05deb36b09897c419592a4a9496461e83ae4bcd8e3f4ca2874bb0ee4b7906499"
+        },
+        {
+          "path": "review/PRE_COMPARISON_SEAL.json",
+          "bytes": 7041,
+          "sha256": "f7fb9f89ffbf0e643b0136659a38cec7b15af484b3163731c5e23299fa2db665"
+        },
+        {
+          "path": "review/READ_BOUNDARY.json",
+          "bytes": 1942,
+          "sha256": "5298ba5d1c500187ce1e525409cd885c4bb8ca335bd0d58db973872b12d0582a"
+        },
+        {
+          "path": "review/REPORT.md",
+          "bytes": 10727,
+          "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1"
+        },
+        {
+          "path": "review/additional_controls.py",
+          "bytes": 3108,
+          "sha256": "b3d618180e6283798e107d16a266ce3ab5570b8429a92ac6e5f858b6d9ed3b19"
+        },
+        {
+          "path": "review/comparison_check.py",
+          "bytes": 6530,
+          "sha256": "81e6234e671c2a07db78494fd5cf5afa7f87eef24a458fd8c4c83a7f46b0ce3c"
+        },
+        {
+          "path": "review/independent_check.py",
+          "bytes": 15065,
+          "sha256": "55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef"
+        }
+      ]
+    },
+    {
+      "name": "geometric_last_pair_clock_independent",
+      "archive": "independent/geometric_last_pair_clock_independent.zip",
+      "zip_sha256": "c8b3d387ffa49a24b9851c01a95f940fdb3bec91600749d9cc92a08b87fe0e22",
+      "report": "independent/geometric_last_pair_clock_independent_REPORT.md",
+      "report_sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_COMPARISON_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+          "sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7",
+          "bytes": 7543,
+          "disposition": "bundled",
+          "member": "bound_sources/0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_check.py",
+          "sha256": "60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38",
+          "bytes": 7056,
+          "disposition": "bundled",
+          "member": "bound_sources/60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38/geometric_last_pair_clock_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+          "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e",
+          "bytes": 8459,
+          "disposition": "bundled",
+          "member": "bound_sources/bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+          "bytes": 10226,
+          "disposition": "bundled",
+          "member": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_formation_check.py",
+          "sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+          "bytes": 12896,
+          "disposition": "bundled",
+          "member": "bound_sources/3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259/geometric_partner_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_checks/RESULTS.json",
+          "sha256": "8321304654000443ac733bec6c45ade079fa4a798700659e9f73c4bd1ee33c2e",
+          "bytes": 3099,
+          "disposition": "bundled",
+          "member": "bound_sources/8321304654000443ac733bec6c45ade079fa4a798700659e9f73c4bd1ee33c2e/RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LAST_PAIR_CLOCK_RUN.log",
+          "sha256": "8a94dda27403266c50fd8d873cfa68fd1c90d79f6ec4ba2141fa02b964778a88",
+          "bytes": 2174,
+          "disposition": "bundled",
+          "member": "bound_sources/8a94dda27403266c50fd8d873cfa68fd1c90d79f6ec4ba2141fa02b964778a88/GEOMETRIC_LAST_PAIR_CLOCK_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LAST_PAIR_CLOCK_RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_LAST_PAIR_CLOCK_RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py",
+          "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f",
+          "bytes": 14609,
+          "disposition": "bundled",
+          "member": "bound_sources/1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/independent_check.py",
+          "sha256": "55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef",
+          "bytes": 15065,
+          "disposition": "bundled",
+          "member": "bound_sources/55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/REPORT.md",
+          "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1",
+          "bytes": 10727,
+          "disposition": "bundled",
+          "member": "bound_sources/20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/FINAL_SEAL.json",
+          "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542",
+          "bytes": 12389,
+          "disposition": "bundled",
+          "member": "bound_sources/202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/F1_ACK.json",
+          "sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e",
+          "bytes": 2802,
+          "disposition": "bundled",
+          "member": "bound_sources/7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e/F1_ACK.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/F1_ACK_SEAL.json",
+          "sha256": "9d945ce46431de096442bc0681d4555aa69669b78478a01398dcb7db96d4e614",
+          "bytes": 1675,
+          "disposition": "bundled",
+          "member": "bound_sources/9d945ce46431de096442bc0681d4555aa69669b78478a01398dcb7db96d4e614/F1_ACK_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+          "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517",
+          "bytes": 836060,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://arxiv.org/pdf/1909.06558v3",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/COMPARISON_RESULTS.json",
+          "sha256": "76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc",
+          "bytes": 1835,
+          "disposition": "bundled",
+          "member": "bound_sources/76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc/COMPARISON_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/COMPARISON_RUN_01.json",
+          "sha256": "8e8dd61fb0c5f645a4d05874134c10cd0b8d64f96f5fef9618ef6400481996cb",
+          "bytes": 636,
+          "disposition": "bundled",
+          "member": "bound_sources/8e8dd61fb0c5f645a4d05874134c10cd0b8d64f96f5fef9618ef6400481996cb/COMPARISON_RUN_01.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/COMPARISON_RUN_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON_RUN_01.stderr.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/COMPARISON_RUN_01.stdout.log",
+          "sha256": "76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc",
+          "bytes": 1835,
+          "disposition": "bundled",
+          "member": "bound_sources/76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc/COMPARISON_RUN_01.stdout.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/INDEPENDENT_RESULTS.json",
+          "sha256": "3e47746e439241dc9df7d7169701ae9b50a49b1ff70bf535db4763a5d2e184bf",
+          "bytes": 5207,
+          "disposition": "bundled",
+          "member": "bound_sources/3e47746e439241dc9df7d7169701ae9b50a49b1ff70bf535db4763a5d2e184bf/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/INDEPENDENT_RUN_01.json",
+          "sha256": "3be56a435b7fa1278e24aeaad7b813bbb6cdbab539531b6846a6007ef7f035b2",
+          "bytes": 660,
+          "disposition": "bundled",
+          "member": "bound_sources/3be56a435b7fa1278e24aeaad7b813bbb6cdbab539531b6846a6007ef7f035b2/INDEPENDENT_RUN_01.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/INDEPENDENT_RUN_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN_01.stderr.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/INDEPENDENT_RUN_01.stdout.log",
+          "sha256": "caf424af710a66f0cb475f1c4cedc4a8a031dcbf57870be5fef3e0de6b079dff",
+          "bytes": 5261,
+          "disposition": "bundled",
+          "member": "bound_sources/caf424af710a66f0cb475f1c4cedc4a8a031dcbf57870be5fef3e0de6b079dff/INDEPENDENT_RUN_01.stdout.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/LITERATURE_READ_RECEIPT.json",
+          "sha256": "b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea",
+          "bytes": 2161,
+          "disposition": "bundled",
+          "member": "bound_sources/b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea/LITERATURE_READ_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/PDF_EXTRACTION_ATTEMPT_01.log",
+          "sha256": "2e91c5e6e56850ed927d1fd35161e7129483bdb2fbfc2180c099a944ba886278",
+          "bytes": 425,
+          "disposition": "bundled",
+          "member": "bound_sources/2e91c5e6e56850ed927d1fd35161e7129483bdb2fbfc2180c099a944ba886278/PDF_EXTRACTION_ATTEMPT_01.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/PDF_EXTRACTION_RECEIPT.json",
+          "sha256": "16dc5bde5013688cc6502da98216ea107177dfa5030518f5b9b6bfbb1ae87c0b",
+          "bytes": 758,
+          "disposition": "bundled",
+          "member": "bound_sources/16dc5bde5013688cc6502da98216ea107177dfa5030518f5b9b6bfbb1ae87c0b/PDF_EXTRACTION_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/PRE_COMPARISON_DERIVATION.md",
+          "sha256": "0d0c79fcb945c18f2dda12e0bfefc5ada9e191bb714b8b1f9ef35482e2e3654f",
+          "bytes": 8677,
+          "disposition": "bundled",
+          "member": "bound_sources/0d0c79fcb945c18f2dda12e0bfefc5ada9e191bb714b8b1f9ef35482e2e3654f/PRE_COMPARISON_DERIVATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/PRE_COMPARISON_SEAL.json",
+          "sha256": "41eb0f77e2296e6182073e9d27b1e29a7f63797a9c7e9754c8284dc05396dce4",
+          "bytes": 8283,
+          "disposition": "bundled",
+          "member": "bound_sources/41eb0f77e2296e6182073e9d27b1e29a7f63797a9c7e9754c8284dc05396dce4/PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/READ_BOUNDARY.json",
+          "sha256": "79506996333660c26b01af8a2a9b7388cf8e0434474d25a47fc1a75099881b3d",
+          "bytes": 3629,
+          "disposition": "bundled",
+          "member": "bound_sources/79506996333660c26b01af8a2a9b7388cf8e0434474d25a47fc1a75099881b3d/READ_BOUNDARY.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/REPORT.md",
+          "sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f",
+          "bytes": 9400,
+          "disposition": "bundled",
+          "member": "bound_sources/233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/Taggi_v3_statement_extract.txt",
+          "sha256": "cc87c265f1fdb8cf38ea51cbc5c27b904f5d46a4e4e01e709ed2d2b9743b0f65",
+          "bytes": 17805,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://arxiv.org/pdf/1909.06558v3",
+          "reason": "Locally extracted third-party statement pages, excluded along with the source PDF."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/comparison_check.py",
+          "sha256": "4a70f7aac34c8014237631d9e0b230577db7f24ea40ca5d238021186ecd54cee",
+          "bytes": 6342,
+          "disposition": "bundled",
+          "member": "bound_sources/4a70f7aac34c8014237631d9e0b230577db7f24ea40ca5d238021186ecd54cee/comparison_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/independent_check.py",
+          "sha256": "029ab952533bb37d3a27d8987a165e13161f7d16dd773d875c823b1525b0007a",
+          "bytes": 11784,
+          "disposition": "bundled",
+          "member": "bound_sources/029ab952533bb37d3a27d8987a165e13161f7d16dd773d875c823b1525b0007a/independent_check.py"
+        }
+      ],
+      "excluded_review_artifacts": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/Taggi_v3_statement_extract.txt",
+          "sha256": "cc87c265f1fdb8cf38ea51cbc5c27b904f5d46a4e4e01e709ed2d2b9743b0f65",
+          "bytes": 17805,
+          "url": "https://arxiv.org/pdf/1909.06558v3",
+          "reason": "Locally extracted third-party statement pages, excluded along with the source PDF."
+        }
+      ],
+      "members": [
+        {
+          "path": "bound_sources/029ab952533bb37d3a27d8987a165e13161f7d16dd773d875c823b1525b0007a/independent_check.py",
+          "bytes": 11784,
+          "sha256": "029ab952533bb37d3a27d8987a165e13161f7d16dd773d875c823b1525b0007a"
+        },
+        {
+          "path": "bound_sources/0d0c79fcb945c18f2dda12e0bfefc5ada9e191bb714b8b1f9ef35482e2e3654f/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 8677,
+          "sha256": "0d0c79fcb945c18f2dda12e0bfefc5ada9e191bb714b8b1f9ef35482e2e3654f"
+        },
+        {
+          "path": "bound_sources/0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+          "bytes": 7543,
+          "sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7"
+        },
+        {
+          "path": "bound_sources/16dc5bde5013688cc6502da98216ea107177dfa5030518f5b9b6bfbb1ae87c0b/PDF_EXTRACTION_RECEIPT.json",
+          "bytes": 758,
+          "sha256": "16dc5bde5013688cc6502da98216ea107177dfa5030518f5b9b6bfbb1ae87c0b"
+        },
+        {
+          "path": "bound_sources/1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f/independent_check.py",
+          "bytes": 14609,
+          "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+        },
+        {
+          "path": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "bytes": 10226,
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+        },
+        {
+          "path": "bound_sources/202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542/FINAL_SEAL.json",
+          "bytes": 12389,
+          "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542"
+        },
+        {
+          "path": "bound_sources/20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1/REPORT.md",
+          "bytes": 10727,
+          "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1"
+        },
+        {
+          "path": "bound_sources/233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f/REPORT.md",
+          "bytes": 9400,
+          "sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f"
+        },
+        {
+          "path": "bound_sources/2e91c5e6e56850ed927d1fd35161e7129483bdb2fbfc2180c099a944ba886278/PDF_EXTRACTION_ATTEMPT_01.log",
+          "bytes": 425,
+          "sha256": "2e91c5e6e56850ed927d1fd35161e7129483bdb2fbfc2180c099a944ba886278"
+        },
+        {
+          "path": "bound_sources/3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259/geometric_partner_formation_check.py",
+          "bytes": 12896,
+          "sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259"
+        },
+        {
+          "path": "bound_sources/3be56a435b7fa1278e24aeaad7b813bbb6cdbab539531b6846a6007ef7f035b2/INDEPENDENT_RUN_01.json",
+          "bytes": 660,
+          "sha256": "3be56a435b7fa1278e24aeaad7b813bbb6cdbab539531b6846a6007ef7f035b2"
+        },
+        {
+          "path": "bound_sources/3e47746e439241dc9df7d7169701ae9b50a49b1ff70bf535db4763a5d2e184bf/INDEPENDENT_RESULTS.json",
+          "bytes": 5207,
+          "sha256": "3e47746e439241dc9df7d7169701ae9b50a49b1ff70bf535db4763a5d2e184bf"
+        },
+        {
+          "path": "bound_sources/41eb0f77e2296e6182073e9d27b1e29a7f63797a9c7e9754c8284dc05396dce4/PRE_COMPARISON_SEAL.json",
+          "bytes": 8283,
+          "sha256": "41eb0f77e2296e6182073e9d27b1e29a7f63797a9c7e9754c8284dc05396dce4"
+        },
+        {
+          "path": "bound_sources/4a70f7aac34c8014237631d9e0b230577db7f24ea40ca5d238021186ecd54cee/comparison_check.py",
+          "bytes": 6342,
+          "sha256": "4a70f7aac34c8014237631d9e0b230577db7f24ea40ca5d238021186ecd54cee"
+        },
+        {
+          "path": "bound_sources/55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef/independent_check.py",
+          "bytes": 15065,
+          "sha256": "55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef"
+        },
+        {
+          "path": "bound_sources/60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38/geometric_last_pair_clock_check.py",
+          "bytes": 7056,
+          "sha256": "60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38"
+        },
+        {
+          "path": "bound_sources/7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e/F1_ACK.json",
+          "bytes": 2802,
+          "sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e"
+        },
+        {
+          "path": "bound_sources/76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc/COMPARISON_RESULTS.json",
+          "bytes": 1835,
+          "sha256": "76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc"
+        },
+        {
+          "path": "bound_sources/76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc/COMPARISON_RUN_01.stdout.log",
+          "bytes": 1835,
+          "sha256": "76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc"
+        },
+        {
+          "path": "bound_sources/79506996333660c26b01af8a2a9b7388cf8e0434474d25a47fc1a75099881b3d/READ_BOUNDARY.json",
+          "bytes": 3629,
+          "sha256": "79506996333660c26b01af8a2a9b7388cf8e0434474d25a47fc1a75099881b3d"
+        },
+        {
+          "path": "bound_sources/8321304654000443ac733bec6c45ade079fa4a798700659e9f73c4bd1ee33c2e/RESULTS.json",
+          "bytes": 3099,
+          "sha256": "8321304654000443ac733bec6c45ade079fa4a798700659e9f73c4bd1ee33c2e"
+        },
+        {
+          "path": "bound_sources/8a94dda27403266c50fd8d873cfa68fd1c90d79f6ec4ba2141fa02b964778a88/GEOMETRIC_LAST_PAIR_CLOCK_RUN.log",
+          "bytes": 2174,
+          "sha256": "8a94dda27403266c50fd8d873cfa68fd1c90d79f6ec4ba2141fa02b964778a88"
+        },
+        {
+          "path": "bound_sources/8e8dd61fb0c5f645a4d05874134c10cd0b8d64f96f5fef9618ef6400481996cb/COMPARISON_RUN_01.json",
+          "bytes": 636,
+          "sha256": "8e8dd61fb0c5f645a4d05874134c10cd0b8d64f96f5fef9618ef6400481996cb"
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "bytes": 737,
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "bytes": 14490,
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "path": "bound_sources/9d945ce46431de096442bc0681d4555aa69669b78478a01398dcb7db96d4e614/F1_ACK_SEAL.json",
+          "bytes": 1675,
+          "sha256": "9d945ce46431de096442bc0681d4555aa69669b78478a01398dcb7db96d4e614"
+        },
+        {
+          "path": "bound_sources/b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea/LITERATURE_READ_RECEIPT.json",
+          "bytes": 2161,
+          "sha256": "b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea"
+        },
+        {
+          "path": "bound_sources/bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+          "bytes": 8459,
+          "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e"
+        },
+        {
+          "path": "bound_sources/caf424af710a66f0cb475f1c4cedc4a8a031dcbf57870be5fef3e0de6b079dff/INDEPENDENT_RUN_01.stdout.log",
+          "bytes": 5261,
+          "sha256": "caf424af710a66f0cb475f1c4cedc4a8a031dcbf57870be5fef3e0de6b079dff"
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "bytes": 12253,
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_LAST_PAIR_CLOCK_RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/COMPARISON_RESULTS.json",
+          "bytes": 1835,
+          "sha256": "76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.json",
+          "bytes": 636,
+          "sha256": "8e8dd61fb0c5f645a4d05874134c10cd0b8d64f96f5fef9618ef6400481996cb"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/COMPARISON_RUN_01.stdout.log",
+          "bytes": 1835,
+          "sha256": "76ee4e38763bcd9d3e5282addf8e248c340fa61c2c1e0f509f32c2ea625f9edc"
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "bytes": 13453,
+          "sha256": "e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb"
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "bytes": 5207,
+          "sha256": "3e47746e439241dc9df7d7169701ae9b50a49b1ff70bf535db4763a5d2e184bf"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.json",
+          "bytes": 660,
+          "sha256": "3be56a435b7fa1278e24aeaad7b813bbb6cdbab539531b6846a6007ef7f035b2"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_01.stdout.log",
+          "bytes": 5261,
+          "sha256": "caf424af710a66f0cb475f1c4cedc4a8a031dcbf57870be5fef3e0de6b079dff"
+        },
+        {
+          "path": "review/LITERATURE_READ_RECEIPT.json",
+          "bytes": 2161,
+          "sha256": "b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea"
+        },
+        {
+          "path": "review/PDF_EXTRACTION_ATTEMPT_01.log",
+          "bytes": 425,
+          "sha256": "2e91c5e6e56850ed927d1fd35161e7129483bdb2fbfc2180c099a944ba886278"
+        },
+        {
+          "path": "review/PDF_EXTRACTION_RECEIPT.json",
+          "bytes": 758,
+          "sha256": "16dc5bde5013688cc6502da98216ea107177dfa5030518f5b9b6bfbb1ae87c0b"
+        },
+        {
+          "path": "review/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 8677,
+          "sha256": "0d0c79fcb945c18f2dda12e0bfefc5ada9e191bb714b8b1f9ef35482e2e3654f"
+        },
+        {
+          "path": "review/PRE_COMPARISON_SEAL.json",
+          "bytes": 8283,
+          "sha256": "41eb0f77e2296e6182073e9d27b1e29a7f63797a9c7e9754c8284dc05396dce4"
+        },
+        {
+          "path": "review/READ_BOUNDARY.json",
+          "bytes": 3629,
+          "sha256": "79506996333660c26b01af8a2a9b7388cf8e0434474d25a47fc1a75099881b3d"
+        },
+        {
+          "path": "review/REPORT.md",
+          "bytes": 9400,
+          "sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f"
+        },
+        {
+          "path": "review/comparison_check.py",
+          "bytes": 6342,
+          "sha256": "4a70f7aac34c8014237631d9e0b230577db7f24ea40ca5d238021186ecd54cee"
+        },
+        {
+          "path": "review/independent_check.py",
+          "bytes": 11784,
+          "sha256": "029ab952533bb37d3a27d8987a165e13161f7d16dd773d875c823b1525b0007a"
+        }
+      ]
+    },
+    {
+      "name": "geometric_general_graph_independent",
+      "archive": "independent/geometric_general_graph_independent.zip",
+      "zip_sha256": "583efba801f260fc2c5ee2128e4914f976a531afd09c64c65706a075fb370f66",
+      "report": "independent/geometric_general_graph_independent_REPORT.md",
+      "report_sha256": "091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_COMPARISON_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md",
+          "sha256": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959",
+          "bytes": 6815,
+          "disposition": "bundled",
+          "member": "bound_sources/70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959/GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+          "bytes": 10226,
+          "disposition": "bundled",
+          "member": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+          "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e",
+          "bytes": 8459,
+          "disposition": "bundled",
+          "member": "bound_sources/bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+          "sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7",
+          "bytes": 7543,
+          "disposition": "bundled",
+          "member": "bound_sources/0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_check.py",
+          "sha256": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039",
+          "bytes": 10009,
+          "disposition": "bundled",
+          "member": "bound_sources/331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039/geometric_general_graph_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_formation_check.py",
+          "sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+          "bytes": 12896,
+          "disposition": "bundled",
+          "member": "bound_sources/3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259/geometric_partner_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_checks/RESULTS.json",
+          "sha256": "6424acb9eb4885aac401935cefbc83055071f9f2d93eae188ae534421719bd29",
+          "bytes": 15032,
+          "disposition": "bundled",
+          "member": "bound_sources/6424acb9eb4885aac401935cefbc83055071f9f2d93eae188ae534421719bd29/RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_GENERAL_GRAPH_RUN.log",
+          "sha256": "cdbf685a16c089fe5ff64ca2e1f68d846684bdee1babc131b6f60cfc8b4bf89a",
+          "bytes": 8871,
+          "disposition": "bundled",
+          "member": "bound_sources/cdbf685a16c089fe5ff64ca2e1f68d846684bdee1babc131b6f60cfc8b4bf89a/GEOMETRIC_GENERAL_GRAPH_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_GENERAL_GRAPH_RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_GENERAL_GRAPH_RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/REPORT.md",
+          "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423",
+          "bytes": 10504,
+          "disposition": "bundled",
+          "member": "bound_sources/ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/FINAL_SEAL.json",
+          "sha256": "08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d",
+          "bytes": 11231,
+          "disposition": "bundled",
+          "member": "bound_sources/08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/REPORT.md",
+          "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1",
+          "bytes": 10727,
+          "disposition": "bundled",
+          "member": "bound_sources/20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/FINAL_SEAL.json",
+          "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542",
+          "bytes": 12389,
+          "disposition": "bundled",
+          "member": "bound_sources/202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/REPORT.md",
+          "sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f",
+          "bytes": 9400,
+          "disposition": "bundled",
+          "member": "bound_sources/233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/FINAL_SEAL.json",
+          "sha256": "e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb",
+          "bytes": 13453,
+          "disposition": "bundled",
+          "member": "bound_sources/e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/BRIDGE_EXCURSION.json",
+          "sha256": "888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87",
+          "bytes": 3296,
+          "disposition": "bundled",
+          "member": "bound_sources/888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87/BRIDGE_EXCURSION.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/CHECKPOINT.md",
+          "sha256": "54ec835f09de9cddf2a9f67832a00eb0c86b2eb8bdfb85ebade1ba42efd4d331",
+          "bytes": 622,
+          "disposition": "bundled",
+          "member": "bound_sources/54ec835f09de9cddf2a9f67832a00eb0c86b2eb8bdfb85ebade1ba42efd4d331/CHECKPOINT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/COMPARISON.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/COMPARISON.stdout",
+          "sha256": "684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f",
+          "bytes": 14079,
+          "disposition": "bundled",
+          "member": "bound_sources/684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f/COMPARISON.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/COMPARISON_RECEIPT.json",
+          "sha256": "34ef8c8b5eaa2be045730e5e9b5d94902d66225ae13c66e8dfed703f0dd312ea",
+          "bytes": 659,
+          "disposition": "bundled",
+          "member": "bound_sources/34ef8c8b5eaa2be045730e5e9b5d94902d66225ae13c66e8dfed703f0dd312ea/COMPARISON_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/COMPARISON_RESULTS.json",
+          "sha256": "684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f",
+          "bytes": 14079,
+          "disposition": "bundled",
+          "member": "bound_sources/684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f/COMPARISON_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/COUNTERCONTROLS.json",
+          "sha256": "bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5",
+          "bytes": 453,
+          "disposition": "bundled",
+          "member": "bound_sources/bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5/COUNTERCONTROLS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/EXACT_CLOCK.json",
+          "sha256": "ec83fd9adf35c9f8d0cc18003e8cb009af6be873c5779666447260ea9d864a35",
+          "bytes": 1993,
+          "disposition": "bundled",
+          "member": "bound_sources/ec83fd9adf35c9f8d0cc18003e8cb009af6be873c5779666447260ea9d864a35/EXACT_CLOCK.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/PRE_COMPARISON_DERIVATION.md",
+          "sha256": "a6011e78fcae46ee8d515d53cbbdb47bfbfd4d2ff2564d25659ffaa09bb90606",
+          "bytes": 6584,
+          "disposition": "bundled",
+          "member": "bound_sources/a6011e78fcae46ee8d515d53cbbdb47bfbfd4d2ff2564d25659ffaa09bb90606/PRE_COMPARISON_DERIVATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/PRE_COMPARISON_SEAL.json",
+          "sha256": "c4f317495ea680b27397bc77ff85a3d8b113a4a29e788ab7ee0dfe66d42145a7",
+          "bytes": 8148,
+          "disposition": "bundled",
+          "member": "bound_sources/c4f317495ea680b27397bc77ff85a3d8b113a4a29e788ab7ee0dfe66d42145a7/PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/READ_BOUNDARY.json",
+          "sha256": "1bbb078faeb9e23666251c2911d719c0544902254b61790fdda016f298bd61af",
+          "bytes": 728,
+          "disposition": "bundled",
+          "member": "bound_sources/1bbb078faeb9e23666251c2911d719c0544902254b61790fdda016f298bd61af/READ_BOUNDARY.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/REPORT.md",
+          "sha256": "091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166",
+          "bytes": 13931,
+          "disposition": "bundled",
+          "member": "bound_sources/091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/RESULTS.json",
+          "sha256": "361d93e638b16e0424e27e0d673e445c38f827c5b40f77128103cdef129da8fd",
+          "bytes": 29775,
+          "disposition": "bundled",
+          "member": "bound_sources/361d93e638b16e0424e27e0d673e445c38f827c5b40f77128103cdef129da8fd/RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/RUN.stdout",
+          "sha256": "c7d620a9ccd0a2fd4b9d39d814800055afecc95855ce61abbb8446239928afab",
+          "bytes": 9041,
+          "disposition": "bundled",
+          "member": "bound_sources/c7d620a9ccd0a2fd4b9d39d814800055afecc95855ce61abbb8446239928afab/RUN.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/RUN_RECEIPT.json",
+          "sha256": "2e25d787b3e6734c9b0989900390668733b5b6b7b8032016669eea5d564f46c8",
+          "bytes": 909,
+          "disposition": "bundled",
+          "member": "bound_sources/2e25d787b3e6734c9b0989900390668733b5b6b7b8032016669eea5d564f46c8/RUN_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/compare_author.py",
+          "sha256": "6e80637b44cc78154724c491f4e63a9fd6ffc3a5c31ad39097f3de8f17cb635f",
+          "bytes": 5894,
+          "disposition": "bundled",
+          "member": "bound_sources/6e80637b44cc78154724c491f4e63a9fd6ffc3a5c31ad39097f3de8f17cb635f/compare_author.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/independent_check.py",
+          "sha256": "5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee",
+          "bytes": 17093,
+          "disposition": "bundled",
+          "member": "bound_sources/5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee/independent_check.py"
+        }
+      ],
+      "excluded_review_artifacts": [],
+      "members": [
+        {
+          "path": "bound_sources/08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d/FINAL_SEAL.json",
+          "bytes": 11231,
+          "sha256": "08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d"
+        },
+        {
+          "path": "bound_sources/091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166/REPORT.md",
+          "bytes": 13931,
+          "sha256": "091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166"
+        },
+        {
+          "path": "bound_sources/0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+          "bytes": 7543,
+          "sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7"
+        },
+        {
+          "path": "bound_sources/1bbb078faeb9e23666251c2911d719c0544902254b61790fdda016f298bd61af/READ_BOUNDARY.json",
+          "bytes": 728,
+          "sha256": "1bbb078faeb9e23666251c2911d719c0544902254b61790fdda016f298bd61af"
+        },
+        {
+          "path": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "bytes": 10226,
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+        },
+        {
+          "path": "bound_sources/202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542/FINAL_SEAL.json",
+          "bytes": 12389,
+          "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542"
+        },
+        {
+          "path": "bound_sources/20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1/REPORT.md",
+          "bytes": 10727,
+          "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1"
+        },
+        {
+          "path": "bound_sources/233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f/REPORT.md",
+          "bytes": 9400,
+          "sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f"
+        },
+        {
+          "path": "bound_sources/2e25d787b3e6734c9b0989900390668733b5b6b7b8032016669eea5d564f46c8/RUN_RECEIPT.json",
+          "bytes": 909,
+          "sha256": "2e25d787b3e6734c9b0989900390668733b5b6b7b8032016669eea5d564f46c8"
+        },
+        {
+          "path": "bound_sources/331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039/geometric_general_graph_check.py",
+          "bytes": 10009,
+          "sha256": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039"
+        },
+        {
+          "path": "bound_sources/34ef8c8b5eaa2be045730e5e9b5d94902d66225ae13c66e8dfed703f0dd312ea/COMPARISON_RECEIPT.json",
+          "bytes": 659,
+          "sha256": "34ef8c8b5eaa2be045730e5e9b5d94902d66225ae13c66e8dfed703f0dd312ea"
+        },
+        {
+          "path": "bound_sources/361d93e638b16e0424e27e0d673e445c38f827c5b40f77128103cdef129da8fd/RESULTS.json",
+          "bytes": 29775,
+          "sha256": "361d93e638b16e0424e27e0d673e445c38f827c5b40f77128103cdef129da8fd"
+        },
+        {
+          "path": "bound_sources/3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259/geometric_partner_formation_check.py",
+          "bytes": 12896,
+          "sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259"
+        },
+        {
+          "path": "bound_sources/54ec835f09de9cddf2a9f67832a00eb0c86b2eb8bdfb85ebade1ba42efd4d331/CHECKPOINT.md",
+          "bytes": 622,
+          "sha256": "54ec835f09de9cddf2a9f67832a00eb0c86b2eb8bdfb85ebade1ba42efd4d331"
+        },
+        {
+          "path": "bound_sources/5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee/independent_check.py",
+          "bytes": 17093,
+          "sha256": "5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee"
+        },
+        {
+          "path": "bound_sources/6424acb9eb4885aac401935cefbc83055071f9f2d93eae188ae534421719bd29/RESULTS.json",
+          "bytes": 15032,
+          "sha256": "6424acb9eb4885aac401935cefbc83055071f9f2d93eae188ae534421719bd29"
+        },
+        {
+          "path": "bound_sources/684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f/COMPARISON.stdout",
+          "bytes": 14079,
+          "sha256": "684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f"
+        },
+        {
+          "path": "bound_sources/684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f/COMPARISON_RESULTS.json",
+          "bytes": 14079,
+          "sha256": "684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f"
+        },
+        {
+          "path": "bound_sources/6e80637b44cc78154724c491f4e63a9fd6ffc3a5c31ad39097f3de8f17cb635f/compare_author.py",
+          "bytes": 5894,
+          "sha256": "6e80637b44cc78154724c491f4e63a9fd6ffc3a5c31ad39097f3de8f17cb635f"
+        },
+        {
+          "path": "bound_sources/70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959/GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md",
+          "bytes": 6815,
+          "sha256": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959"
+        },
+        {
+          "path": "bound_sources/888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87/BRIDGE_EXCURSION.json",
+          "bytes": 3296,
+          "sha256": "888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87"
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "bytes": 737,
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "bytes": 14490,
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "path": "bound_sources/a6011e78fcae46ee8d515d53cbbdb47bfbfd4d2ff2564d25659ffaa09bb90606/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 6584,
+          "sha256": "a6011e78fcae46ee8d515d53cbbdb47bfbfd4d2ff2564d25659ffaa09bb90606"
+        },
+        {
+          "path": "bound_sources/bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+          "bytes": 8459,
+          "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e"
+        },
+        {
+          "path": "bound_sources/bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5/COUNTERCONTROLS.json",
+          "bytes": 453,
+          "sha256": "bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5"
+        },
+        {
+          "path": "bound_sources/c4f317495ea680b27397bc77ff85a3d8b113a4a29e788ab7ee0dfe66d42145a7/PRE_COMPARISON_SEAL.json",
+          "bytes": 8148,
+          "sha256": "c4f317495ea680b27397bc77ff85a3d8b113a4a29e788ab7ee0dfe66d42145a7"
+        },
+        {
+          "path": "bound_sources/c7d620a9ccd0a2fd4b9d39d814800055afecc95855ce61abbb8446239928afab/RUN.stdout",
+          "bytes": 9041,
+          "sha256": "c7d620a9ccd0a2fd4b9d39d814800055afecc95855ce61abbb8446239928afab"
+        },
+        {
+          "path": "bound_sources/cdbf685a16c089fe5ff64ca2e1f68d846684bdee1babc131b6f60cfc8b4bf89a/GEOMETRIC_GENERAL_GRAPH_RUN.log",
+          "bytes": 8871,
+          "sha256": "cdbf685a16c089fe5ff64ca2e1f68d846684bdee1babc131b6f60cfc8b4bf89a"
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "bytes": 12253,
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_GENERAL_GRAPH_RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb/FINAL_SEAL.json",
+          "bytes": 13453,
+          "sha256": "e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb"
+        },
+        {
+          "path": "bound_sources/ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423/REPORT.md",
+          "bytes": 10504,
+          "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423"
+        },
+        {
+          "path": "bound_sources/ec83fd9adf35c9f8d0cc18003e8cb009af6be873c5779666447260ea9d864a35/EXACT_CLOCK.json",
+          "bytes": 1993,
+          "sha256": "ec83fd9adf35c9f8d0cc18003e8cb009af6be873c5779666447260ea9d864a35"
+        },
+        {
+          "path": "review/BRIDGE_EXCURSION.json",
+          "bytes": 3296,
+          "sha256": "888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87"
+        },
+        {
+          "path": "review/CHECKPOINT.md",
+          "bytes": 622,
+          "sha256": "54ec835f09de9cddf2a9f67832a00eb0c86b2eb8bdfb85ebade1ba42efd4d331"
+        },
+        {
+          "path": "review/COMPARISON.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/COMPARISON.stdout",
+          "bytes": 14079,
+          "sha256": "684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f"
+        },
+        {
+          "path": "review/COMPARISON_RECEIPT.json",
+          "bytes": 659,
+          "sha256": "34ef8c8b5eaa2be045730e5e9b5d94902d66225ae13c66e8dfed703f0dd312ea"
+        },
+        {
+          "path": "review/COMPARISON_RESULTS.json",
+          "bytes": 14079,
+          "sha256": "684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f"
+        },
+        {
+          "path": "review/COUNTERCONTROLS.json",
+          "bytes": 453,
+          "sha256": "bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5"
+        },
+        {
+          "path": "review/EXACT_CLOCK.json",
+          "bytes": 1993,
+          "sha256": "ec83fd9adf35c9f8d0cc18003e8cb009af6be873c5779666447260ea9d864a35"
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "bytes": 11917,
+          "sha256": "98d1312f06eb9bb0ce929b9d56c7dec687f0383a732330034b9029d276811646"
+        },
+        {
+          "path": "review/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 6584,
+          "sha256": "a6011e78fcae46ee8d515d53cbbdb47bfbfd4d2ff2564d25659ffaa09bb90606"
+        },
+        {
+          "path": "review/PRE_COMPARISON_SEAL.json",
+          "bytes": 8148,
+          "sha256": "c4f317495ea680b27397bc77ff85a3d8b113a4a29e788ab7ee0dfe66d42145a7"
+        },
+        {
+          "path": "review/READ_BOUNDARY.json",
+          "bytes": 728,
+          "sha256": "1bbb078faeb9e23666251c2911d719c0544902254b61790fdda016f298bd61af"
+        },
+        {
+          "path": "review/REPORT.md",
+          "bytes": 13931,
+          "sha256": "091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166"
+        },
+        {
+          "path": "review/RESULTS.json",
+          "bytes": 29775,
+          "sha256": "361d93e638b16e0424e27e0d673e445c38f827c5b40f77128103cdef129da8fd"
+        },
+        {
+          "path": "review/RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/RUN.stdout",
+          "bytes": 9041,
+          "sha256": "c7d620a9ccd0a2fd4b9d39d814800055afecc95855ce61abbb8446239928afab"
+        },
+        {
+          "path": "review/RUN_RECEIPT.json",
+          "bytes": 909,
+          "sha256": "2e25d787b3e6734c9b0989900390668733b5b6b7b8032016669eea5d564f46c8"
+        },
+        {
+          "path": "review/compare_author.py",
+          "bytes": 5894,
+          "sha256": "6e80637b44cc78154724c491f4e63a9fd6ffc3a5c31ad39097f3de8f17cb635f"
+        },
+        {
+          "path": "review/independent_check.py",
+          "bytes": 17093,
+          "sha256": "5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee"
+        }
+      ]
+    },
+    {
+      "name": "geometric_polynomial_relaxation_independent",
+      "archive": "independent/geometric_polynomial_relaxation_independent.zip",
+      "zip_sha256": "72b7ee2ab27c735aec942fe00ad93ac8c4465df202ccb064f47ce1d70fbe7f6a",
+      "report": "independent/geometric_polynomial_relaxation_independent_REPORT.md",
+      "report_sha256": "552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_COMPARISON_SEAL.json",
+        "review/correction_ack/ACK_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md",
+          "sha256": "f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb",
+          "bytes": 11276,
+          "disposition": "bundled",
+          "member": "bound_sources/f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb/GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_check.py",
+          "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202",
+          "bytes": 11808,
+          "disposition": "bundled",
+          "member": "bound_sources/fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202/geometric_polynomial_relaxation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md",
+          "sha256": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959",
+          "bytes": 6815,
+          "disposition": "bundled",
+          "member": "bound_sources/70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959/GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+          "bytes": 10226,
+          "disposition": "bundled",
+          "member": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+          "sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7",
+          "bytes": 7543,
+          "disposition": "bundled",
+          "member": "bound_sources/0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Jerrum_Sinclair_1989_ApproximatingPermanent.pdf",
+          "sha256": "607ee31f4dbea8dd7cc3f59ca27915252334671268c6b4251069a23cd8ada3e9",
+          "bytes": 11144147,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+          "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517",
+          "bytes": 836060,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://arxiv.org/pdf/1909.06558v3",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_checks/RESULTS.json",
+          "sha256": "b90a22ad82a110715b457f0ab27c4ed5694fb1502cbe1dff2a03cb8dd937f779",
+          "bytes": 75606,
+          "disposition": "bundled",
+          "member": "bound_sources/b90a22ad82a110715b457f0ab27c4ed5694fb1502cbe1dff2a03cb8dd937f779/RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log",
+          "sha256": "fe4750863c4c253cd5a539d6b2f65aadd16498aff8a8acf01cfd16decb0225ed",
+          "bytes": 52570,
+          "disposition": "bundled",
+          "member": "bound_sources/fe4750863c4c253cd5a539d6b2f65aadd16498aff8a8acf01cfd16decb0225ed/GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_LITERATURE_RECEIPT.json",
+          "sha256": "56524ed99d7c3bfaa5e17d783dd95d4d89ecfa68f2b7e6c040961e2d4c07c23b",
+          "bytes": 1317,
+          "disposition": "bundled",
+          "member": "bound_sources/56524ed99d7c3bfaa5e17d783dd95d4d89ecfa68f2b7e6c040961e2d4c07c23b/GEOMETRIC_POLYNOMIAL_RELAXATION_LITERATURE_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_check.py",
+          "sha256": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039",
+          "bytes": 10009,
+          "disposition": "bundled",
+          "member": "bound_sources/331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039/geometric_general_graph_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_development/attempt01_geometric_polynomial_relaxation_check.py",
+          "sha256": "345bf7bfad6300ed0b94eeb9d769111c26a1db6f496f35da3dcd65d85f435dfa",
+          "bytes": 11069,
+          "disposition": "bundled",
+          "member": "bound_sources/345bf7bfad6300ed0b94eeb9d769111c26a1db6f496f35da3dcd65d85f435dfa/attempt01_geometric_polynomial_relaxation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_development/attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log",
+          "sha256": "2a86cafd4d2a946a7a82e34185b50d6691bd82ef3abbae89bb567a8734e89a6c",
+          "bytes": 40479,
+          "disposition": "bundled",
+          "member": "bound_sources/2a86cafd4d2a946a7a82e34185b50d6691bd82ef3abbae89bb567a8734e89a6c/attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_development/attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr",
+          "sha256": "7b725e5bc72e8adcafea04833ce6e792e47ea15dd57d5a24e1635eb70b206646",
+          "bytes": 1392,
+          "disposition": "bundled",
+          "member": "bound_sources/7b725e5bc72e8adcafea04833ce6e792e47ea15dd57d5a24e1635eb70b206646/attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/FINAL_SEAL.json",
+          "sha256": "98d1312f06eb9bb0ce929b9d56c7dec687f0383a732330034b9029d276811646",
+          "bytes": 11917,
+          "disposition": "bundled",
+          "member": "bound_sources/98d1312f06eb9bb0ce929b9d56c7dec687f0383a732330034b9029d276811646/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/REPORT.md",
+          "sha256": "091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166",
+          "bytes": 13931,
+          "disposition": "bundled",
+          "member": "bound_sources/091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/independent_check.py",
+          "sha256": "5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee",
+          "bytes": 17093,
+          "disposition": "bundled",
+          "member": "bound_sources/5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/COUNTERCONTROLS.json",
+          "sha256": "bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5",
+          "bytes": 453,
+          "disposition": "bundled",
+          "member": "bound_sources/bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5/COUNTERCONTROLS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/BRIDGE_EXCURSION.json",
+          "sha256": "888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87",
+          "bytes": 3296,
+          "disposition": "bundled",
+          "member": "bound_sources/888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87/BRIDGE_EXCURSION.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/FINAL_SEAL.json",
+          "sha256": "e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb",
+          "bytes": 13453,
+          "disposition": "bundled",
+          "member": "bound_sources/e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/REPORT.md",
+          "sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f",
+          "bytes": 9400,
+          "disposition": "bundled",
+          "member": "bound_sources/233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/LITERATURE_READ_RECEIPT.json",
+          "sha256": "b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea",
+          "bytes": 2161,
+          "disposition": "bundled",
+          "member": "bound_sources/b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea/LITERATURE_READ_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.pdf",
+          "sha256": "152098553d74bd7d22da0573f4836a5a884f190d5144855f722c9c7f6c8c8226",
+          "bytes": 379563,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.png",
+          "sha256": "742e9091e0ed53c362fb9a41ec015fabfa9c96f3ee3f7313284ada47e2cc5fe2",
+          "bytes": 167660,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.txt",
+          "sha256": "488e623f5198132dd753a06ae27e47313539be3efd163efa94cca343c94faaa3",
+          "bytes": 3879,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.pdf",
+          "sha256": "8bf3ff7e89f1d539ee1b6b6d17abb13d18013f96f953b368a812332ca2035258",
+          "bytes": 389620,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.txt",
+          "sha256": "7eb1bbb1630d42667aa9e0d5958a594c299506e3f39a3290a40c65937a970303",
+          "bytes": 4298,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.pdf",
+          "sha256": "2469032b78ef405bb96770350cf6e0e49849c1b46278a0af05cd8c22b5389460",
+          "bytes": 398316,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.png",
+          "sha256": "8facf3020077227a07b2aedec1e3ff928abedcfdd30e28f9a3491bf7d6e0bb45",
+          "bytes": 177903,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.txt",
+          "sha256": "c41af426826129f1ea3587bb95239385835cb79efbdcd88b6c8440dd8f3cc9b1",
+          "bytes": 4415,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.pdf",
+          "sha256": "c443051492df7541c0ed9c004749f591b0835adb7a2215411c8a3d6e1d92a160",
+          "bytes": 439667,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.txt",
+          "sha256": "bfa421811f475167bb042d93684455ffec36b52e2d94c714c7ffc2cd9313664a",
+          "bytes": 4643,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.pdf",
+          "sha256": "7cc07c89a984ee0003980c6dee4c3d803ba250d2cf5c090d2569f475d6cb4e41",
+          "bytes": 383406,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.txt",
+          "sha256": "ccb52c1074f74e4968391b8a11da9df6896d2c9fda83211a975c6725f8318616",
+          "bytes": 4134,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+          "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/ATTEMPT_01.stderr",
+          "sha256": "a2c5f93817ac22f3cd9c60f5089f0551ba8a4c82514281ab8d0c0dc33420cc6b",
+          "bytes": 1122,
+          "disposition": "bundled",
+          "member": "bound_sources/a2c5f93817ac22f3cd9c60f5089f0551ba8a4c82514281ab8d0c0dc33420cc6b/ATTEMPT_01.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/ATTEMPT_01.stdout",
+          "sha256": "b20c23871aeda330b770a887e79fd8c9b08089f06bc128c7c6cdd7aea730458f",
+          "bytes": 69,
+          "disposition": "bundled",
+          "member": "bound_sources/b20c23871aeda330b770a887e79fd8c9b08089f06bc128c7c6cdd7aea730458f/ATTEMPT_01.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/ATTEMPT_01_RECEIPT.json",
+          "sha256": "c8cf2d3ccd2ffe741e301623061bc4d623570e675e68a1ddc63df3b4ac888502",
+          "bytes": 560,
+          "disposition": "bundled",
+          "member": "bound_sources/c8cf2d3ccd2ffe741e301623061bc4d623570e675e68a1ddc63df3b4ac888502/ATTEMPT_01_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/AUTHOR_COMPARISON.json",
+          "sha256": "2e1d957430e87498bf3c2942dff9392e586b5976da9bb8da9d9e0dcf866a8314",
+          "bytes": 7540,
+          "disposition": "bundled",
+          "member": "bound_sources/2e1d957430e87498bf3c2942dff9392e586b5976da9bb8da9d9e0dcf866a8314/AUTHOR_COMPARISON.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/CHECKPOINT.md",
+          "sha256": "7ed6d67b584820dfe5fec11934dfc0dc5dfd3b5fe737d6095765141d1b693552",
+          "bytes": 1122,
+          "disposition": "bundled",
+          "member": "bound_sources/7ed6d67b584820dfe5fec11934dfc0dc5dfd3b5fe737d6095765141d1b693552/CHECKPOINT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/COMPARISON.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/COMPARISON.stdout",
+          "sha256": "16c92661ebf34d3d360d0c83e68be2c5fa8b1bc88e3a4dac91de3284b7dafebd",
+          "bytes": 882,
+          "disposition": "bundled",
+          "member": "bound_sources/16c92661ebf34d3d360d0c83e68be2c5fa8b1bc88e3a4dac91de3284b7dafebd/COMPARISON.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/COMPARISON_RECEIPT.json",
+          "sha256": "6c90ad8e3dfc0a2a3bfa3c367b9918db3181e1a29fc367511ec4ae7a39ff10ba",
+          "bytes": 547,
+          "disposition": "bundled",
+          "member": "bound_sources/6c90ad8e3dfc0a2a3bfa3c367b9918db3181e1a29fc367511ec4ae7a39ff10ba/COMPARISON_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/INDEPENDENT_RESULTS.json",
+          "sha256": "c0ff74e09cb5d5d61999975d62a3a3ebd115c6a5192610228d17f5c3282859c6",
+          "bytes": 30009,
+          "disposition": "bundled",
+          "member": "bound_sources/c0ff74e09cb5d5d61999975d62a3a3ebd115c6a5192610228d17f5c3282859c6/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/INDEPENDENT_RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/INDEPENDENT_RUN.stdout",
+          "sha256": "b5ce4b2856ad2a8af443c4c80986d61160af45a7dabddec4ff3c736ca357d996",
+          "bytes": 848,
+          "disposition": "bundled",
+          "member": "bound_sources/b5ce4b2856ad2a8af443c4c80986d61160af45a7dabddec4ff3c736ca357d996/INDEPENDENT_RUN.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/INDEPENDENT_RUN_RECEIPT.json",
+          "sha256": "d4c48591d64e4b9909dfe3d80416b6523036113fb57fb2d5c7754383ab7c3a07",
+          "bytes": 559,
+          "disposition": "bundled",
+          "member": "bound_sources/d4c48591d64e4b9909dfe3d80416b6523036113fb57fb2d5c7754383ab7c3a07/INDEPENDENT_RUN_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/LITERATURE_RECEIPT.json",
+          "sha256": "4bbaaa48eedfb3d4ae07182363c7060d5e784094d944f719e2c86dd07b883c8c",
+          "bytes": 5199,
+          "disposition": "bundled",
+          "member": "bound_sources/4bbaaa48eedfb3d4ae07182363c7060d5e784094d944f719e2c86dd07b883c8c/LITERATURE_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/PRE_COMPARISON_DERIVATION.md",
+          "sha256": "0d6f84f1dca1e40f449b39d1ef5e4716621e67b60abd357e04c65c0d0e6e6db5",
+          "bytes": 11233,
+          "disposition": "bundled",
+          "member": "bound_sources/0d6f84f1dca1e40f449b39d1ef5e4716621e67b60abd357e04c65c0d0e6e6db5/PRE_COMPARISON_DERIVATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/PRE_COMPARISON_SEAL.json",
+          "sha256": "2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd",
+          "bytes": 13069,
+          "disposition": "bundled",
+          "member": "bound_sources/2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd/PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/READ_BOUNDARY.json",
+          "sha256": "d11375373f3929713f3ac0d5b25d4ce4b5064e4c99abd1f6ff56fa67b63b5eba",
+          "bytes": 717,
+          "disposition": "bundled",
+          "member": "bound_sources/d11375373f3929713f3ac0d5b25d4ce4b5064e4c99abd1f6ff56fa67b63b5eba/READ_BOUNDARY.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/REPORT.md",
+          "sha256": "552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369",
+          "bytes": 9979,
+          "disposition": "bundled",
+          "member": "bound_sources/552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/compare_author.py",
+          "sha256": "7854e328b235900bf9375b132060f4106e79f414ce9ca115e854112f07b9cf32",
+          "bytes": 9769,
+          "disposition": "bundled",
+          "member": "bound_sources/7854e328b235900bf9375b132060f4106e79f414ce9ca115e854112f07b9cf32/compare_author.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/finalize_review.py",
+          "sha256": "97bddae290d59e5125fb2719c13b2f544621125aa6b4bfd20c802382cd5f18a0",
+          "bytes": 2233,
+          "disposition": "bundled",
+          "member": "bound_sources/97bddae290d59e5125fb2719c13b2f544621125aa6b4bfd20c802382cd5f18a0/finalize_review.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/independent_check.py",
+          "sha256": "95fcd47ccdb8fa3988b505f0a3481fe5a57b587d0ad65a77ff6d41bebdb403c2",
+          "bytes": 12260,
+          "disposition": "bundled",
+          "member": "bound_sources/95fcd47ccdb8fa3988b505f0a3481fe5a57b587d0ad65a77ff6d41bebdb403c2/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/independent_check_before_symbolic_simplification.py",
+          "sha256": "5b826cfe59936f33c6b911092f5a5ea47d6d8afbf30cc93feada91f6b736acda",
+          "bytes": 12197,
+          "disposition": "bundled",
+          "member": "bound_sources/5b826cfe59936f33c6b911092f5a5ea47d6d8afbf30cc93feada91f6b736acda/independent_check_before_symbolic_simplification.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/seal_evidence.py",
+          "sha256": "3e143b53da71a68a55969740ec30bddc370bbdf70f9d3b30f16108c4674f9dd4",
+          "bytes": 6395,
+          "disposition": "bundled",
+          "member": "bound_sources/3e143b53da71a68a55969740ec30bddc370bbdf70f9d3b30f16108c4674f9dd4/seal_evidence.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/before_geometric_polynomial_relaxation_check.py",
+          "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202",
+          "bytes": 11808,
+          "disposition": "bundled",
+          "member": "bound_sources/fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202/before_geometric_polynomial_relaxation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_check.py",
+          "sha256": "996c2098b94a0f3e3331cfb7152af40bf18e7b6307e5a806204e9569e04478f0",
+          "bytes": 11809,
+          "disposition": "bundled",
+          "member": "bound_sources/996c2098b94a0f3e3331cfb7152af40bf18e7b6307e5a806204e9569e04478f0/geometric_polynomial_relaxation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_FIXTURE_CORRECTION.md",
+          "sha256": "6656f7606da9abe706a500980e59b86edf991f18815020cfed2142bfbee08c6b",
+          "bytes": 1462,
+          "disposition": "bundled",
+          "member": "bound_sources/6656f7606da9abe706a500980e59b86edf991f18815020cfed2142bfbee08c6b/GEOMETRIC_POLYNOMIAL_FIXTURE_CORRECTION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/check_correction.py",
+          "sha256": "6933f7e7cbec826a5e93916d8778858822ec208a1c2ad8320934cb4356e3c90c",
+          "bytes": 2946,
+          "disposition": "bundled",
+          "member": "bound_sources/6933f7e7cbec826a5e93916d8778858822ec208a1c2ad8320934cb4356e3c90c/check_correction.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RESULTS.json",
+          "sha256": "7dfd316bab0d472dc037d5135c0b796feced1a9a3b56551ee866eb6fef86fa36",
+          "bytes": 16148,
+          "disposition": "bundled",
+          "member": "bound_sources/7dfd316bab0d472dc037d5135c0b796feced1a9a3b56551ee866eb6fef86fa36/RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RUN.log",
+          "sha256": "e896eea8c2611bd7fab6a9ccff4f5eb93bc504af558f026a0fffba7ed4ac6b48",
+          "bytes": 12939,
+          "disposition": "bundled",
+          "member": "bound_sources/e896eea8c2611bd7fab6a9ccff4f5eb93bc504af558f026a0fffba7ed4ac6b48/RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/FINAL_SEAL.json",
+          "sha256": "44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97",
+          "bytes": 20297,
+          "disposition": "bundled",
+          "member": "bound_sources/44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/CORRECTION_ACK.json",
+          "sha256": "4445b3dfa87feb04a07e836abac76c9f262da5faaf98d42059b17372ad9209b7",
+          "bytes": 8843,
+          "disposition": "bundled",
+          "member": "bound_sources/4445b3dfa87feb04a07e836abac76c9f262da5faaf98d42059b17372ad9209b7/CORRECTION_ACK.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/RUN.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/RUN.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/RUN.stdout",
+          "sha256": "46cccd574d56e8b949ce7c5488d54e01ac866ab4cb08b6aef4dccbdd95122653",
+          "bytes": 201,
+          "disposition": "bundled",
+          "member": "bound_sources/46cccd574d56e8b949ce7c5488d54e01ac866ab4cb08b6aef4dccbdd95122653/RUN.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/RUN_RECEIPT.json",
+          "sha256": "92251d04a43bd70113f82f4a91d8d22cb76cf7113a4659bb2854fcd08ac98ed8",
+          "bytes": 543,
+          "disposition": "bundled",
+          "member": "bound_sources/92251d04a43bd70113f82f4a91d8d22cb76cf7113a4659bb2854fcd08ac98ed8/RUN_RECEIPT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/VERIFIED_SOURCE_DELTA.diff",
+          "sha256": "7eb24267617ab9669a6d30c6c201b8b871dcb6d013cfb9ae2d3218585d65528c",
+          "bytes": 849,
+          "disposition": "bundled",
+          "member": "bound_sources/7eb24267617ab9669a6d30c6c201b8b871dcb6d013cfb9ae2d3218585d65528c/VERIFIED_SOURCE_DELTA.diff"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/check_ack.py",
+          "sha256": "bdd65f4a3952a7c56c952c965a63d7cb6501a2cf42519d12460229da228e205f",
+          "bytes": 7446,
+          "disposition": "bundled",
+          "member": "bound_sources/bdd65f4a3952a7c56c952c965a63d7cb6501a2cf42519d12460229da228e205f/check_ack.py"
+        }
+      ],
+      "excluded_review_artifacts": [],
+      "members": [
+        {
+          "path": "bound_sources/091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166/REPORT.md",
+          "bytes": 13931,
+          "sha256": "091636c4217f45ce2389569e1d6a7e4888a71ee4d5c9af8764b4c24004c57166"
+        },
+        {
+          "path": "bound_sources/0d6f84f1dca1e40f449b39d1ef5e4716621e67b60abd357e04c65c0d0e6e6db5/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 11233,
+          "sha256": "0d6f84f1dca1e40f449b39d1ef5e4716621e67b60abd357e04c65c0d0e6e6db5"
+        },
+        {
+          "path": "bound_sources/0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+          "bytes": 7543,
+          "sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7"
+        },
+        {
+          "path": "bound_sources/16c92661ebf34d3d360d0c83e68be2c5fa8b1bc88e3a4dac91de3284b7dafebd/COMPARISON.stdout",
+          "bytes": 882,
+          "sha256": "16c92661ebf34d3d360d0c83e68be2c5fa8b1bc88e3a4dac91de3284b7dafebd"
+        },
+        {
+          "path": "bound_sources/1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+          "bytes": 10226,
+          "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+        },
+        {
+          "path": "bound_sources/233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f/REPORT.md",
+          "bytes": 9400,
+          "sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f"
+        },
+        {
+          "path": "bound_sources/2a86cafd4d2a946a7a82e34185b50d6691bd82ef3abbae89bb567a8734e89a6c/attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log",
+          "bytes": 40479,
+          "sha256": "2a86cafd4d2a946a7a82e34185b50d6691bd82ef3abbae89bb567a8734e89a6c"
+        },
+        {
+          "path": "bound_sources/2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd/PRE_COMPARISON_SEAL.json",
+          "bytes": 13069,
+          "sha256": "2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd"
+        },
+        {
+          "path": "bound_sources/2e1d957430e87498bf3c2942dff9392e586b5976da9bb8da9d9e0dcf866a8314/AUTHOR_COMPARISON.json",
+          "bytes": 7540,
+          "sha256": "2e1d957430e87498bf3c2942dff9392e586b5976da9bb8da9d9e0dcf866a8314"
+        },
+        {
+          "path": "bound_sources/331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039/geometric_general_graph_check.py",
+          "bytes": 10009,
+          "sha256": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039"
+        },
+        {
+          "path": "bound_sources/345bf7bfad6300ed0b94eeb9d769111c26a1db6f496f35da3dcd65d85f435dfa/attempt01_geometric_polynomial_relaxation_check.py",
+          "bytes": 11069,
+          "sha256": "345bf7bfad6300ed0b94eeb9d769111c26a1db6f496f35da3dcd65d85f435dfa"
+        },
+        {
+          "path": "bound_sources/3e143b53da71a68a55969740ec30bddc370bbdf70f9d3b30f16108c4674f9dd4/seal_evidence.py",
+          "bytes": 6395,
+          "sha256": "3e143b53da71a68a55969740ec30bddc370bbdf70f9d3b30f16108c4674f9dd4"
+        },
+        {
+          "path": "bound_sources/4445b3dfa87feb04a07e836abac76c9f262da5faaf98d42059b17372ad9209b7/CORRECTION_ACK.json",
+          "bytes": 8843,
+          "sha256": "4445b3dfa87feb04a07e836abac76c9f262da5faaf98d42059b17372ad9209b7"
+        },
+        {
+          "path": "bound_sources/44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97/FINAL_SEAL.json",
+          "bytes": 20297,
+          "sha256": "44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97"
+        },
+        {
+          "path": "bound_sources/46cccd574d56e8b949ce7c5488d54e01ac866ab4cb08b6aef4dccbdd95122653/RUN.stdout",
+          "bytes": 201,
+          "sha256": "46cccd574d56e8b949ce7c5488d54e01ac866ab4cb08b6aef4dccbdd95122653"
+        },
+        {
+          "path": "bound_sources/4bbaaa48eedfb3d4ae07182363c7060d5e784094d944f719e2c86dd07b883c8c/LITERATURE_RECEIPT.json",
+          "bytes": 5199,
+          "sha256": "4bbaaa48eedfb3d4ae07182363c7060d5e784094d944f719e2c86dd07b883c8c"
+        },
+        {
+          "path": "bound_sources/552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369/REPORT.md",
+          "bytes": 9979,
+          "sha256": "552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369"
+        },
+        {
+          "path": "bound_sources/56524ed99d7c3bfaa5e17d783dd95d4d89ecfa68f2b7e6c040961e2d4c07c23b/GEOMETRIC_POLYNOMIAL_RELAXATION_LITERATURE_RECEIPT.json",
+          "bytes": 1317,
+          "sha256": "56524ed99d7c3bfaa5e17d783dd95d4d89ecfa68f2b7e6c040961e2d4c07c23b"
+        },
+        {
+          "path": "bound_sources/5b826cfe59936f33c6b911092f5a5ea47d6d8afbf30cc93feada91f6b736acda/independent_check_before_symbolic_simplification.py",
+          "bytes": 12197,
+          "sha256": "5b826cfe59936f33c6b911092f5a5ea47d6d8afbf30cc93feada91f6b736acda"
+        },
+        {
+          "path": "bound_sources/5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee/independent_check.py",
+          "bytes": 17093,
+          "sha256": "5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee"
+        },
+        {
+          "path": "bound_sources/6656f7606da9abe706a500980e59b86edf991f18815020cfed2142bfbee08c6b/GEOMETRIC_POLYNOMIAL_FIXTURE_CORRECTION.md",
+          "bytes": 1462,
+          "sha256": "6656f7606da9abe706a500980e59b86edf991f18815020cfed2142bfbee08c6b"
+        },
+        {
+          "path": "bound_sources/6933f7e7cbec826a5e93916d8778858822ec208a1c2ad8320934cb4356e3c90c/check_correction.py",
+          "bytes": 2946,
+          "sha256": "6933f7e7cbec826a5e93916d8778858822ec208a1c2ad8320934cb4356e3c90c"
+        },
+        {
+          "path": "bound_sources/6c90ad8e3dfc0a2a3bfa3c367b9918db3181e1a29fc367511ec4ae7a39ff10ba/COMPARISON_RECEIPT.json",
+          "bytes": 547,
+          "sha256": "6c90ad8e3dfc0a2a3bfa3c367b9918db3181e1a29fc367511ec4ae7a39ff10ba"
+        },
+        {
+          "path": "bound_sources/70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959/GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md",
+          "bytes": 6815,
+          "sha256": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959"
+        },
+        {
+          "path": "bound_sources/7854e328b235900bf9375b132060f4106e79f414ce9ca115e854112f07b9cf32/compare_author.py",
+          "bytes": 9769,
+          "sha256": "7854e328b235900bf9375b132060f4106e79f414ce9ca115e854112f07b9cf32"
+        },
+        {
+          "path": "bound_sources/7b725e5bc72e8adcafea04833ce6e792e47ea15dd57d5a24e1635eb70b206646/attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr",
+          "bytes": 1392,
+          "sha256": "7b725e5bc72e8adcafea04833ce6e792e47ea15dd57d5a24e1635eb70b206646"
+        },
+        {
+          "path": "bound_sources/7dfd316bab0d472dc037d5135c0b796feced1a9a3b56551ee866eb6fef86fa36/RESULTS.json",
+          "bytes": 16148,
+          "sha256": "7dfd316bab0d472dc037d5135c0b796feced1a9a3b56551ee866eb6fef86fa36"
+        },
+        {
+          "path": "bound_sources/7eb24267617ab9669a6d30c6c201b8b871dcb6d013cfb9ae2d3218585d65528c/VERIFIED_SOURCE_DELTA.diff",
+          "bytes": 849,
+          "sha256": "7eb24267617ab9669a6d30c6c201b8b871dcb6d013cfb9ae2d3218585d65528c"
+        },
+        {
+          "path": "bound_sources/7ed6d67b584820dfe5fec11934dfc0dc5dfd3b5fe737d6095765141d1b693552/CHECKPOINT.md",
+          "bytes": 1122,
+          "sha256": "7ed6d67b584820dfe5fec11934dfc0dc5dfd3b5fe737d6095765141d1b693552"
+        },
+        {
+          "path": "bound_sources/888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87/BRIDGE_EXCURSION.json",
+          "bytes": 3296,
+          "sha256": "888777b5c029449df3e2d56fde7140d9845c463ec7ab1fc9431674e0528ece87"
+        },
+        {
+          "path": "bound_sources/92251d04a43bd70113f82f4a91d8d22cb76cf7113a4659bb2854fcd08ac98ed8/RUN_RECEIPT.json",
+          "bytes": 543,
+          "sha256": "92251d04a43bd70113f82f4a91d8d22cb76cf7113a4659bb2854fcd08ac98ed8"
+        },
+        {
+          "path": "bound_sources/95fcd47ccdb8fa3988b505f0a3481fe5a57b587d0ad65a77ff6d41bebdb403c2/independent_check.py",
+          "bytes": 12260,
+          "sha256": "95fcd47ccdb8fa3988b505f0a3481fe5a57b587d0ad65a77ff6d41bebdb403c2"
+        },
+        {
+          "path": "bound_sources/97bddae290d59e5125fb2719c13b2f544621125aa6b4bfd20c802382cd5f18a0/finalize_review.py",
+          "bytes": 2233,
+          "sha256": "97bddae290d59e5125fb2719c13b2f544621125aa6b4bfd20c802382cd5f18a0"
+        },
+        {
+          "path": "bound_sources/98d1312f06eb9bb0ce929b9d56c7dec687f0383a732330034b9029d276811646/FINAL_SEAL.json",
+          "bytes": 11917,
+          "sha256": "98d1312f06eb9bb0ce929b9d56c7dec687f0383a732330034b9029d276811646"
+        },
+        {
+          "path": "bound_sources/996c2098b94a0f3e3331cfb7152af40bf18e7b6307e5a806204e9569e04478f0/geometric_polynomial_relaxation_check.py",
+          "bytes": 11809,
+          "sha256": "996c2098b94a0f3e3331cfb7152af40bf18e7b6307e5a806204e9569e04478f0"
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "bytes": 737,
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "bytes": 14490,
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "path": "bound_sources/a2c5f93817ac22f3cd9c60f5089f0551ba8a4c82514281ab8d0c0dc33420cc6b/ATTEMPT_01.stderr",
+          "bytes": 1122,
+          "sha256": "a2c5f93817ac22f3cd9c60f5089f0551ba8a4c82514281ab8d0c0dc33420cc6b"
+        },
+        {
+          "path": "bound_sources/b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea/LITERATURE_READ_RECEIPT.json",
+          "bytes": 2161,
+          "sha256": "b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea"
+        },
+        {
+          "path": "bound_sources/b20c23871aeda330b770a887e79fd8c9b08089f06bc128c7c6cdd7aea730458f/ATTEMPT_01.stdout",
+          "bytes": 69,
+          "sha256": "b20c23871aeda330b770a887e79fd8c9b08089f06bc128c7c6cdd7aea730458f"
+        },
+        {
+          "path": "bound_sources/b5ce4b2856ad2a8af443c4c80986d61160af45a7dabddec4ff3c736ca357d996/INDEPENDENT_RUN.stdout",
+          "bytes": 848,
+          "sha256": "b5ce4b2856ad2a8af443c4c80986d61160af45a7dabddec4ff3c736ca357d996"
+        },
+        {
+          "path": "bound_sources/b90a22ad82a110715b457f0ab27c4ed5694fb1502cbe1dff2a03cb8dd937f779/RESULTS.json",
+          "bytes": 75606,
+          "sha256": "b90a22ad82a110715b457f0ab27c4ed5694fb1502cbe1dff2a03cb8dd937f779"
+        },
+        {
+          "path": "bound_sources/bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5/COUNTERCONTROLS.json",
+          "bytes": 453,
+          "sha256": "bc170c6abed22de0d3d81a66e7731c48ba9b29d7ed82604cf73ad6d58a86e0e5"
+        },
+        {
+          "path": "bound_sources/bdd65f4a3952a7c56c952c965a63d7cb6501a2cf42519d12460229da228e205f/check_ack.py",
+          "bytes": 7446,
+          "sha256": "bdd65f4a3952a7c56c952c965a63d7cb6501a2cf42519d12460229da228e205f"
+        },
+        {
+          "path": "bound_sources/c0ff74e09cb5d5d61999975d62a3a3ebd115c6a5192610228d17f5c3282859c6/INDEPENDENT_RESULTS.json",
+          "bytes": 30009,
+          "sha256": "c0ff74e09cb5d5d61999975d62a3a3ebd115c6a5192610228d17f5c3282859c6"
+        },
+        {
+          "path": "bound_sources/c8cf2d3ccd2ffe741e301623061bc4d623570e675e68a1ddc63df3b4ac888502/ATTEMPT_01_RECEIPT.json",
+          "bytes": 560,
+          "sha256": "c8cf2d3ccd2ffe741e301623061bc4d623570e675e68a1ddc63df3b4ac888502"
+        },
+        {
+          "path": "bound_sources/d11375373f3929713f3ac0d5b25d4ce4b5064e4c99abd1f6ff56fa67b63b5eba/READ_BOUNDARY.json",
+          "bytes": 717,
+          "sha256": "d11375373f3929713f3ac0d5b25d4ce4b5064e4c99abd1f6ff56fa67b63b5eba"
+        },
+        {
+          "path": "bound_sources/d4c48591d64e4b9909dfe3d80416b6523036113fb57fb2d5c7754383ab7c3a07/INDEPENDENT_RUN_RECEIPT.json",
+          "bytes": 559,
+          "sha256": "d4c48591d64e4b9909dfe3d80416b6523036113fb57fb2d5c7754383ab7c3a07"
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "bytes": 12253,
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/COMPARISON.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT_RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e896eea8c2611bd7fab6a9ccff4f5eb93bc504af558f026a0fffba7ed4ac6b48/RUN.log",
+          "bytes": 12939,
+          "sha256": "e896eea8c2611bd7fab6a9ccff4f5eb93bc504af558f026a0fffba7ed4ac6b48"
+        },
+        {
+          "path": "bound_sources/e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb/FINAL_SEAL.json",
+          "bytes": 13453,
+          "sha256": "e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb"
+        },
+        {
+          "path": "bound_sources/f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb/GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md",
+          "bytes": 11276,
+          "sha256": "f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb"
+        },
+        {
+          "path": "bound_sources/fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202/before_geometric_polynomial_relaxation_check.py",
+          "bytes": 11808,
+          "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+        },
+        {
+          "path": "bound_sources/fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202/geometric_polynomial_relaxation_check.py",
+          "bytes": 11808,
+          "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+        },
+        {
+          "path": "bound_sources/fe4750863c4c253cd5a539d6b2f65aadd16498aff8a8acf01cfd16decb0225ed/GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log",
+          "bytes": 52570,
+          "sha256": "fe4750863c4c253cd5a539d6b2f65aadd16498aff8a8acf01cfd16decb0225ed"
+        },
+        {
+          "path": "review/ATTEMPT_01.stderr",
+          "bytes": 1122,
+          "sha256": "a2c5f93817ac22f3cd9c60f5089f0551ba8a4c82514281ab8d0c0dc33420cc6b"
+        },
+        {
+          "path": "review/ATTEMPT_01.stdout",
+          "bytes": 69,
+          "sha256": "b20c23871aeda330b770a887e79fd8c9b08089f06bc128c7c6cdd7aea730458f"
+        },
+        {
+          "path": "review/ATTEMPT_01_RECEIPT.json",
+          "bytes": 560,
+          "sha256": "c8cf2d3ccd2ffe741e301623061bc4d623570e675e68a1ddc63df3b4ac888502"
+        },
+        {
+          "path": "review/AUTHOR_COMPARISON.json",
+          "bytes": 7540,
+          "sha256": "2e1d957430e87498bf3c2942dff9392e586b5976da9bb8da9d9e0dcf866a8314"
+        },
+        {
+          "path": "review/CHECKPOINT.md",
+          "bytes": 1122,
+          "sha256": "7ed6d67b584820dfe5fec11934dfc0dc5dfd3b5fe737d6095765141d1b693552"
+        },
+        {
+          "path": "review/COMPARISON.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/COMPARISON.stdout",
+          "bytes": 882,
+          "sha256": "16c92661ebf34d3d360d0c83e68be2c5fa8b1bc88e3a4dac91de3284b7dafebd"
+        },
+        {
+          "path": "review/COMPARISON_RECEIPT.json",
+          "bytes": 547,
+          "sha256": "6c90ad8e3dfc0a2a3bfa3c367b9918db3181e1a29fc367511ec4ae7a39ff10ba"
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "bytes": 20297,
+          "sha256": "44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97"
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "bytes": 30009,
+          "sha256": "c0ff74e09cb5d5d61999975d62a3a3ebd115c6a5192610228d17f5c3282859c6"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN.stdout",
+          "bytes": 848,
+          "sha256": "b5ce4b2856ad2a8af443c4c80986d61160af45a7dabddec4ff3c736ca357d996"
+        },
+        {
+          "path": "review/INDEPENDENT_RUN_RECEIPT.json",
+          "bytes": 559,
+          "sha256": "d4c48591d64e4b9909dfe3d80416b6523036113fb57fb2d5c7754383ab7c3a07"
+        },
+        {
+          "path": "review/LITERATURE_RECEIPT.json",
+          "bytes": 5199,
+          "sha256": "4bbaaa48eedfb3d4ae07182363c7060d5e784094d944f719e2c86dd07b883c8c"
+        },
+        {
+          "path": "review/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 11233,
+          "sha256": "0d6f84f1dca1e40f449b39d1ef5e4716621e67b60abd357e04c65c0d0e6e6db5"
+        },
+        {
+          "path": "review/PRE_COMPARISON_SEAL.json",
+          "bytes": 13069,
+          "sha256": "2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd"
+        },
+        {
+          "path": "review/READ_BOUNDARY.json",
+          "bytes": 717,
+          "sha256": "d11375373f3929713f3ac0d5b25d4ce4b5064e4c99abd1f6ff56fa67b63b5eba"
+        },
+        {
+          "path": "review/REPORT.md",
+          "bytes": 9979,
+          "sha256": "552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369"
+        },
+        {
+          "path": "review/compare_author.py",
+          "bytes": 9769,
+          "sha256": "7854e328b235900bf9375b132060f4106e79f414ce9ca115e854112f07b9cf32"
+        },
+        {
+          "path": "review/correction_ack/ACK_SEAL.json",
+          "bytes": 6606,
+          "sha256": "fe5103df6f82aa577985cd740d25fb5fec93f3712d662dfc0a03d46c2131e0e3"
+        },
+        {
+          "path": "review/correction_ack/CORRECTION_ACK.json",
+          "bytes": 8843,
+          "sha256": "4445b3dfa87feb04a07e836abac76c9f262da5faaf98d42059b17372ad9209b7"
+        },
+        {
+          "path": "review/correction_ack/RUN.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/correction_ack/RUN.stdout",
+          "bytes": 201,
+          "sha256": "46cccd574d56e8b949ce7c5488d54e01ac866ab4cb08b6aef4dccbdd95122653"
+        },
+        {
+          "path": "review/correction_ack/RUN_RECEIPT.json",
+          "bytes": 543,
+          "sha256": "92251d04a43bd70113f82f4a91d8d22cb76cf7113a4659bb2854fcd08ac98ed8"
+        },
+        {
+          "path": "review/correction_ack/VERIFIED_SOURCE_DELTA.diff",
+          "bytes": 849,
+          "sha256": "7eb24267617ab9669a6d30c6c201b8b871dcb6d013cfb9ae2d3218585d65528c"
+        },
+        {
+          "path": "review/correction_ack/check_ack.py",
+          "bytes": 7446,
+          "sha256": "bdd65f4a3952a7c56c952c965a63d7cb6501a2cf42519d12460229da228e205f"
+        },
+        {
+          "path": "review/finalize_review.py",
+          "bytes": 2233,
+          "sha256": "97bddae290d59e5125fb2719c13b2f544621125aa6b4bfd20c802382cd5f18a0"
+        },
+        {
+          "path": "review/independent_check.py",
+          "bytes": 12260,
+          "sha256": "95fcd47ccdb8fa3988b505f0a3481fe5a57b587d0ad65a77ff6d41bebdb403c2"
+        },
+        {
+          "path": "review/independent_check_before_symbolic_simplification.py",
+          "bytes": 12197,
+          "sha256": "5b826cfe59936f33c6b911092f5a5ea47d6d8afbf30cc93feada91f6b736acda"
+        },
+        {
+          "path": "review/seal_evidence.py",
+          "bytes": 6395,
+          "sha256": "3e143b53da71a68a55969740ec30bddc370bbdf70f9d3b30f16108c4674f9dd4"
+        }
+      ]
+    }
+  ],
+  "external_reference_identities": {
+    "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517": {
+      "url": "https://arxiv.org/pdf/1909.06558v3",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "cc87c265f1fdb8cf38ea51cbc5c27b904f5d46a4e4e01e709ed2d2b9743b0f65": {
+      "url": "https://arxiv.org/pdf/1909.06558v3",
+      "reason": "Locally extracted third-party statement pages, excluded along with the source PDF."
+    },
+    "607ee31f4dbea8dd7cc3f59ca27915252334671268c6b4251069a23cd8ada3e9": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "152098553d74bd7d22da0573f4836a5a884f190d5144855f722c9c7f6c8c8226": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "742e9091e0ed53c362fb9a41ec015fabfa9c96f3ee3f7313284ada47e2cc5fe2": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "488e623f5198132dd753a06ae27e47313539be3efd163efa94cca343c94faaa3": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "8bf3ff7e89f1d539ee1b6b6d17abb13d18013f96f953b368a812332ca2035258": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "7eb1bbb1630d42667aa9e0d5958a594c299506e3f39a3290a40c65937a970303": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "2469032b78ef405bb96770350cf6e0e49849c1b46278a0af05cd8c22b5389460": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "8facf3020077227a07b2aedec1e3ff928abedcfdd30e28f9a3491bf7d6e0bb45": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "c41af426826129f1ea3587bb95239385835cb79efbdcd88b6c8440dd8f3cc9b1": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "c443051492df7541c0ed9c004749f591b0835adb7a2215411c8a3d6e1d92a160": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "bfa421811f475167bb042d93684455ffec36b52e2d94c714c7ffc2cd9313664a": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "7cc07c89a984ee0003980c6dee4c3d803ba250d2cf5c090d2569f475d6cb4e41": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    },
+    "ccb52c1074f74e4968391b8a11da9df6896d2c9fda83211a975c6725f8318616": {
+      "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+      "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+    }
+  }
+}

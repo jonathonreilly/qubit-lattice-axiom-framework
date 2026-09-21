@@ -1,0 +1,17 @@
+{
+  "verified_utc": "2026-09-21T16:38:57.163727+00:00",
+  "seals": [
+    {
+      "path": "geometric_polynomial_relaxation_independent/PRE_COMPARISON_SEAL.json",
+      "sha256": "2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd",
+      "authenticated_bindings": 43
+    },
+    {
+      "path": "geometric_polynomial_relaxation_independent/FINAL_SEAL.json",
+      "sha256": "44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97",
+      "authenticated_bindings": 61
+    }
+  ],
+  "root_read": "Complete report, precomparison derivation, independent checker, and author-comparison code. Exact literature read boundaries reused by authenticated identities.",
+  "finding": "Minor F1: one cycle_6 numerical fixture omitted; preserving old source and correcting selector."
+}

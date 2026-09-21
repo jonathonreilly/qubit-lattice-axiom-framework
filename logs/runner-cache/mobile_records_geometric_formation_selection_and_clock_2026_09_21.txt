@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py
+runner_sha256: 939cd94b62c6f0d81fab24c31f0bbb52b33f719262da5639a62b0c087d70181b
+input_fingerprint_sha256: afdf1933a7549c762300978c8e67e11e1daafea08974b3e1807ccbcec6dd309d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 30.54
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: geometric_partner_formation_check.py: 5 complete control groups
+PASS: geometric_rare_birth_check.py: 4 complete control groups
+PASS: geometric_last_pair_clock_check.py: 3 complete control groups
+PASS: geometric_general_graph_check.py: 4 complete control groups
+PASS: geometric_polynomial_relaxation_check.py: 4 complete control groups
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

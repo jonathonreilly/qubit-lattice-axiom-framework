@@ -1,0 +1,17 @@
+{
+  "source_note_sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+  "source_runner_sha256": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+  "report_sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423",
+  "final_seal_sha256": "08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d",
+  "authenticated_rows": {
+    "PRE_COMPARISON_SEAL.json": 17,
+    "FINAL_SEAL.json": 32
+  },
+  "root_full_read": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "comparison_check.py"
+  ],
+  "scope": "Root read and source authentication of selective independent reconstruction; no production-screen, quantum, phase, wave, audit or retained-status conclusion."
+}

@@ -1,0 +1,21 @@
+{
+  "base": "origin/main",
+  "changed_path_count": 110,
+  "checked": [
+    {
+      "changed_surfaces": [
+        "docs/MOBILE_RECORDS_GEOMETRIC_FORMATION_SELECTION_AND_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+        "scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py"
+      ],
+      "claim_id": "mobile_records_geometric_formation_selection_and_clock_bounded_theorem_note_2026-09-21",
+      "forensic_evidence_ready": true,
+      "helper_runner_paths": [],
+      "issue": null,
+      "runner_path": "scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py"
+    }
+  ],
+  "control_failures": [],
+  "diff_scope": "committed_and_worktree",
+  "failures": [],
+  "schema": "changed_audit_evidence_readiness_v1"
+}

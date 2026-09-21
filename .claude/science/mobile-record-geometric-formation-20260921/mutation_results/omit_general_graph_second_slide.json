@@ -1,0 +1,30 @@
+{
+  "claim_id": "mobile_records_geometric_formation_selection_and_clock_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_GEOMETRIC_FORMATION_SELECTION_AND_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d88bacf39eb9c513bb3259b37b4789468296721ea77b758e196b6baa416004a1",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-geometric-formation-20260921/primary_sources/GEOMETRIC_PARTNER_RECORD_FORMATION.md": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+    ".claude/science/mobile-record-geometric-formation-20260921/primary_sources/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e",
+    ".claude/science/mobile-record-geometric-formation-20260921/primary_sources/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7",
+    ".claude/science/mobile-record-geometric-formation-20260921/primary_sources/GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959",
+    ".claude/science/mobile-record-geometric-formation-20260921/primary_sources/GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md": "f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb",
+    ".claude/science/mobile-record-geometric-formation-20260921/author_checks/geometric_partner_formation_check.py": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+    ".claude/science/mobile-record-geometric-formation-20260921/author_checks/geometric_rare_birth_check.py": "2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b",
+    ".claude/science/mobile-record-geometric-formation-20260921/author_checks/geometric_last_pair_clock_check.py": "60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38",
+    ".claude/science/mobile-record-geometric-formation-20260921/author_checks/geometric_general_graph_check.py": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039",
+    ".claude/science/mobile-record-geometric-formation-20260921/author_checks/geometric_polynomial_relaxation_check.py": "996c2098b94a0f3e3331cfb7152af40bf18e7b6307e5a806204e9569e04478f0",
+    "scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py": "939cd94b62c6f0d81fab24c31f0bbb52b33f719262da5639a62b0c087d70181b"
+  },
+  "mutation": "omit_general_graph_second_slide",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "geometric_general_graph_check.py",
+      "source_sha256": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039",
+      "executed_source_sha256": "cdb963f26e64cb6e6d04741893ef9bb8ba1af2a7ec879aac42480c1b59dd75f9",
+      "returncode": 1,
+      "stdout": "{\"progress_vertices\": 2, \"counts\": {\"cycle_changes\": 0, \"graphs\": 1, \"near_states\": 1, \"directed_slide_channels\": 0}, \"elapsed_seconds\": 5.9791840612888336e-05}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/geometric-record-controls-54hawaz_/geometric_general_graph_check.py\", line 189, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/geometric-record-controls-54hawaz_/geometric_general_graph_check.py\", line 184, in main\n    all_small_graphs();sparse_and_nonbipartite_controls();periodic_controls();disconnected_control()\n    ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/geometric-record-controls-54hawaz_/geometric_general_graph_check.py\", line 120, in all_small_graphs\n    events,cycles=connect(M,target,P,G);worst=max(worst,len(events));counts['cycle_changes']+=cycles\n                  ~~~~~~~^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/geometric-record-controls-54hawaz_/geometric_general_graph_check.py\", line 83, in connect\n    M,es=relocate(M,F,missing,tmissing,G);events.extend(es);assert M==tnear\n         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/geometric-record-controls-54hawaz_/geometric_general_graph_check.py\", line 60, in relocate\n    assert M==F-{f}\n           ^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

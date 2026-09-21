@@ -1,0 +1,26 @@
+{
+  "claim_id": "mobile_records_geometric_formation_selection_and_clock_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_GEOMETRIC_FORMATION_SELECTION_AND_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "3e203837c6e4da82d3d75640167ec34f2fa44d5d91e083f1da8ee4be7ec8689a",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-geometric-formation-20260921/primary_sources/GEOMETRIC_PARTNER_RECORD_FORMATION.md": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+    ".claude/science/mobile-record-geometric-formation-20260921/primary_sources/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e",
+    ".claude/science/mobile-record-geometric-formation-20260921/primary_sources/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7",
+    ".claude/science/mobile-record-geometric-formation-20260921/author_checks/geometric_partner_formation_check.py": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+    ".claude/science/mobile-record-geometric-formation-20260921/author_checks/geometric_rare_birth_check.py": "2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b",
+    ".claude/science/mobile-record-geometric-formation-20260921/author_checks/geometric_last_pair_clock_check.py": "60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38",
+    "scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py": "fbd1d753c7c7eb3d84ce258de83862af5be378781693df6fc3c25eda17931166"
+  },
+  "mutation": "miscount_monomer_normalization",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "geometric_last_pair_clock_check.py",
+      "source_sha256": "60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38",
+      "executed_source_sha256": "1a3c40d75c048fae9b39edb011002056c7f9a4bd4f573672c8d8066ab2177891",
+      "returncode": 1,
+      "stdout": "{\"name\": \"symbolic_laplace_exit_independence_mean_second_moment_and_countercontrols\", \"pass\": true, \"uniform_exit_probability\": \"1/2\", \"rate\": \"2/3\", \"mean_limit\": \"3/2\", \"second_moment_limit\": \"9/2\", \"simultaneous_limit_countercontrol\": \"two-state family: beta=1/n, exchange=1/n^2, initial exit probability (n+1)/(n+2)->1; not a cubic-torus assertion\"}\n{\"name\": \"unlumped_cube_schur_mean_and_every_state_symbolic_clock\", \"pass\": true, \"near_states\": 44, \"perfect_states\": 9, \"hazard_probability\": \"9/11\", \"scaled_mean_limit\": \"11/9\", \"integrated_hazard_covariance\": \"30/1331\", \"exact_mean_types\": [\"(3*beta + 22)/(3*beta*(beta + 6))\", \"(4*beta + 22)/(3*beta*(beta + 6))\", \"(beta**2 + 14*beta + 44)/(6*beta*(beta + 6))\"], \"rows\": [{\"beta\": \"1\", \"mean_from_uniform\": \"290/231\", \"maximum_scaled_mean_error\": \"23/126\"}, {\"beta\": \"1/10\", \"mean_from_uniform\": \"24671/2013\", \"maximum_scaled_mean_error\": \"203/10980\"}, {\"beta\": \"1/100\", \"mean_from_uniform\": \"2424701/19833\", \"maximum_scaled_mean_error\": \"2003/1081800\"}]}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/geometric-record-controls-sg1phr32/geometric_last_pair_clock_check.py\", line 121, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/geometric-record-controls-sg1phr32/geometric_last_pair_clock_check.py\", line 114, in main\n    scalar_and_laplace();cube_full_operator();counting_controls()\n                                              ~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/geometric-record-controls-sg1phr32/geometric_last_pair_clock_check.py\", line 104, in counting_controls\n    assert Omega==K*Z*chi and all(s.Rational(minors[0][j],Z)==s.Rational(1,degree) for j,v in enumerate(R) if v in neighbor[L[0]])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

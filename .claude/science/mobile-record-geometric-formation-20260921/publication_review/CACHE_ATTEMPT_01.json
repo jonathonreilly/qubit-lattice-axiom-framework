@@ -1,0 +1,10 @@
+{
+  "status": "rejected_by_execution_identity_guard",
+  "cache_written": false,
+  "observed_exception": "RunnerIdentityChangedError",
+  "observed_content_identity_equal": true,
+  "observed_fingerprint_sha256": "e40c96d720fc160a0d7f054199840c3ab1b7dca125fb85d5a8dfe737482367f0",
+  "cause": "The evidence parent directory stat token changed while vocabulary and citation tools were running in parallel. This run is not accepted as a fresh cache. Source content hashes in the exception were unchanged.",
+  "capture_limit": "The command was not redirected; its exception was truncated by the tool output budget. This receipt preserves the observed failure and does not claim a complete stderr transcript.",
+  "next_attempt": "Run the cache producer alone with full stdout/stderr files outside the publication input tree."
+}

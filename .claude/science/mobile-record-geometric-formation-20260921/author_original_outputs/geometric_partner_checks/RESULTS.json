@@ -1,0 +1,222 @@
+{
+  "status": "author mathematical controls; independent review pending; no phase, wave or quantum-operation conclusion",
+  "all_pass": true,
+  "rows": [
+    {
+      "name": "all_neighbor_masks_normalization_variation_and_proper_covariance",
+      "pass": true,
+      "masks": 64,
+      "rotation_cases": 1536,
+      "single_neighbor_mean": [
+        "1/6",
+        "0",
+        "0"
+      ],
+      "six_neighbor_mean": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "complete_cube_graph_augmentation_and_exact_absorption",
+      "pass": true,
+      "states": 108,
+      "count_census": {
+        "0": 1,
+        "1": 12,
+        "2": 42,
+        "3": 44,
+        "4": 9
+      },
+      "channels": 912,
+      "longest_augmentation": 4,
+      "exact_lumped_results": [
+        {
+          "nu": 0,
+          "lumped_states": 10,
+          "transient_lumps": 8,
+          "expected_empty_filling_time": "7787/4312",
+          "full_hit_probability": "1"
+        },
+        {
+          "nu": 1,
+          "lumped_states": 10,
+          "transient_lumps": 8,
+          "expected_empty_filling_time": "563/312",
+          "full_hit_probability": "1"
+        }
+      ],
+      "full_flip_component": 9,
+      "deposition_only_jam_retained": true
+    },
+    {
+      "name": "exhaustive_twelve_vertex_augmentations",
+      "pass": true,
+      "states": 1511,
+      "nonfull": 1479,
+      "total_certified_events": 2979
+    },
+    {
+      "name": "periodic_augmentation_with_exact_antipodal_contents_and_identities",
+      "pass": true,
+      "cases": 18,
+      "rows": [
+        {
+          "N": 4,
+          "sample": 0,
+          "initial_pairs": 25,
+          "births": 7,
+          "events": 22,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 4,
+          "sample": 1,
+          "initial_pairs": 29,
+          "births": 3,
+          "events": 28,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 4,
+          "sample": 2,
+          "initial_pairs": 30,
+          "births": 2,
+          "events": 12,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 4,
+          "sample": 3,
+          "initial_pairs": 28,
+          "births": 4,
+          "events": 19,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 4,
+          "sample": 4,
+          "initial_pairs": 29,
+          "births": 3,
+          "events": 21,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 4,
+          "sample": 5,
+          "initial_pairs": 29,
+          "births": 3,
+          "events": 24,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 6,
+          "sample": 0,
+          "initial_pairs": 97,
+          "births": 11,
+          "events": 75,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 6,
+          "sample": 1,
+          "initial_pairs": 96,
+          "births": 12,
+          "events": 75,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 6,
+          "sample": 2,
+          "initial_pairs": 93,
+          "births": 15,
+          "events": 77,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 6,
+          "sample": 3,
+          "initial_pairs": 96,
+          "births": 12,
+          "events": 73,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 6,
+          "sample": 4,
+          "initial_pairs": 96,
+          "births": 12,
+          "events": 79,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 6,
+          "sample": 5,
+          "initial_pairs": 92,
+          "births": 16,
+          "events": 70,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 8,
+          "sample": 0,
+          "initial_pairs": 231,
+          "births": 25,
+          "events": 182,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 8,
+          "sample": 1,
+          "initial_pairs": 225,
+          "births": 31,
+          "events": 176,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 8,
+          "sample": 2,
+          "initial_pairs": 230,
+          "births": 26,
+          "events": 176,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 8,
+          "sample": 3,
+          "initial_pairs": 228,
+          "births": 28,
+          "events": 156,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 8,
+          "sample": 4,
+          "initial_pairs": 225,
+          "births": 31,
+          "events": 171,
+          "max_site_births_including_initial": 2
+        },
+        {
+          "N": 8,
+          "sample": 5,
+          "initial_pairs": 226,
+          "births": 30,
+          "events": 199,
+          "max_site_births_including_initial": 2
+        }
+      ]
+    },
+    {
+      "name": "site_reformation_turn_and_both_reversible_plaquette_senses",
+      "pass": true,
+      "site_zero_births": 2,
+      "original_contents_preserved": true
+    }
+  ],
+  "sources_sha256": {
+    "geometric_partner_formation_check.py": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+    "GEOMETRIC_PARTNER_RECORD_FORMATION.md": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+  }
+}

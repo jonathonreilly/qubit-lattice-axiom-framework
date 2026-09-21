@@ -1,0 +1,8 @@
+{
+  "note_sha256": "2f87af236d872d27c2347e35f880afec4aeff761f3b81bba34157b7e55670206",
+  "runner_sha256": "939cd94b62c6f0d81fab24c31f0bbb52b33f719262da5639a62b0c087d70181b",
+  "primary_parts": 5,
+  "checker_sources": 5,
+  "exact_body_inclusions": true,
+  "scope": "Root checked complete changed framing and deterministic inclusion of already-read complete proof sources. Assembly is not independent mathematical review."
+}

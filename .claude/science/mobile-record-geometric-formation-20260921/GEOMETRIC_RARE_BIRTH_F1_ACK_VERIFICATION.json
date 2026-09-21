@@ -1,0 +1,6 @@
+{
+  "ack_sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e",
+  "ack_seal_sha256": "9d945ce46431de096442bc0681d4555aa69669b78478a01398dcb7db96d4e614",
+  "all_referenced_current_and_before_sources_verified": true,
+  "root_read_full_ack": true
+}

@@ -1,0 +1,2 @@
+PASS: declared_sources_and_conditional_scope
+FAIL: geometric_general_graph_check.py AssertionError

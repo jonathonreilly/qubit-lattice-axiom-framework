@@ -1,0 +1,35 @@
+{
+  "note": "docs/MOBILE_RECORDS_GEOMETRIC_FORMATION_SELECTION_AND_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "source": "GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+      "source_sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+      "published_body_sha256": "22b9691a892ab48dc54b1d134dfeb1047f2d565d36e0009e45572913cdb6bbfe",
+      "change": "Replace original title; increase existing heading levels; otherwise preserve complete argument bytes, including historical review-status wording."
+    },
+    {
+      "source": "GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+      "source_sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e",
+      "published_body_sha256": "467caffc70763f588ab8dd07da8487e164fc39719336fd8a9466548006456ff8",
+      "change": "Replace original title; increase existing heading levels; otherwise preserve complete argument bytes, including historical review-status wording."
+    },
+    {
+      "source": "GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+      "source_sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7",
+      "published_body_sha256": "8d6ab9c4df98100f085bb5aa5f1adec0f0d358d016973341f2d3d7489fa2cd4a",
+      "change": "Replace original title; increase existing heading levels; otherwise preserve complete argument bytes, including historical review-status wording."
+    },
+    {
+      "source": "GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md",
+      "source_sha256": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959",
+      "published_body_sha256": "d4b6a139860457d2b8e43f942d2527dafeffa9c100d0ae076b74f11d9bbdcb30",
+      "change": "Replace original title; increase existing heading levels; otherwise preserve complete argument bytes, including historical review-status wording."
+    },
+    {
+      "source": "GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md",
+      "source_sha256": "f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb",
+      "published_body_sha256": "90a5f90e8df64222c37392a87fc74cb19edfc3a69a0370a5fb106665693c903f",
+      "change": "Replace original title; increase existing heading levels; otherwise preserve complete argument bytes, including historical review-status wording."
+    }
+  ]
+}

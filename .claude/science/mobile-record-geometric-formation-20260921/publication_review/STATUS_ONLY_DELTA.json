@@ -1,0 +1,7 @@
+{
+  "old_note_sha256": "3e203837c6e4da82d3d75640167ec34f2fa44d5d91e083f1da8ee4be7ec8689a",
+  "new_note_sha256": "e66f20e04981791f8b1b7462f8f5cdaf64c897c3e97fb3d7e1b6ab16563d9cd6",
+  "exact_insert": "All three arguments received separate-context reconstruction and decisive\nchecks before comparison with their author checkers. The clock review verifies\nthe imported theorem's definitions, statement and application hypotheses,\nnot its entire published proof. The only required correction was a restriction\non observation times after first filling; its exact change and acknowledgment\nare preserved in the rare-birth capsule.\n\n",
+  "all_mutation_input_bytes_verified": true,
+  "mutation_reuse": "All mathematical arguments, checker inputs and runner bytes are unchanged. Only the published review-status paragraph was added after the six sensitivity runs; old publication bytes remain bundled."
+}

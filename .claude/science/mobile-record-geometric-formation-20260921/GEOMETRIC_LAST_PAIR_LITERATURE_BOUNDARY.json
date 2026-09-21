@@ -1,0 +1,24 @@
+{
+  "primary_reference": {
+    "author": "Lorenzo Taggi",
+    "arxiv_version": "1909.06558v3",
+    "submitted_revision_date": "2019-11-21",
+    "html_url": "https://arxiv.org/html/1909.06558v3",
+    "PDF_url": "https://arxiv.org/pdf/1909.06558v3",
+    "local_PDF": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+    "PDF_sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517",
+    "read_boundary": "Definitions and main theorem in Section2, including2.1--2.6, read completely in HTML; introduction inspected. Proof Sections3--7 not independently reconstructed. The HTML date2026-08-24 is not the arXiv revision date.",
+    "import": "Theorem2.1 Eq2.3 and pointwise bound Eq2.5, with exact unweighted even-periodic-torus count ratio; Eq2.4 only for its stated odd axial displacements.",
+    "not_imported": [
+      "dipolar dimer-correlation asymptotics",
+      "Gaussian continuum field",
+      "mixing rates",
+      "dynamical wave or quantum claim"
+    ]
+  },
+  "search_boundary": {
+    "Berger_Rechner_1404_4249v1": "Introduction through Broder/JSV chain definitions read; chains include full-state edge deletions absent from the physical process. Abstract warns about slow mixing on regular graphs; no no-go or rate estimate transferred to cubic two-vacancy dynamics.",
+    "other_dimer_search_results": "Abstract/search orientation only; not proof dependencies."
+  },
+  "external_reference_not_for_git": true
+}

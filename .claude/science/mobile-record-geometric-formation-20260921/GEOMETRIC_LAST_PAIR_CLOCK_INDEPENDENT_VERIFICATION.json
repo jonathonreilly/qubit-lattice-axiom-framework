@@ -1,0 +1,17 @@
+{
+  "authenticated_seal_rows": {
+    "PRE_COMPARISON_SEAL.json": 24,
+    "FINAL_SEAL.json": 38
+  },
+  "report_sha256": "233f0d3c23ad5f314fcbad698d201e0bde62a5a23b97cae7113eed060efd774f",
+  "final_seal_sha256": "e960bd539083047d983c763122177b3478e89ad5df48d24427535cd61e10affb",
+  "root_read": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "comparison_check.py",
+    "LITERATURE_READ_RECEIPT.json",
+    "COMPARISON_RESULTS.json"
+  ],
+  "scope": "Root authentication and reading, not another independent proof of the external theorem."
+}

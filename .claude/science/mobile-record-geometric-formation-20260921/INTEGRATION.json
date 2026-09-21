@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-09-21T17:07:13.074640+00:00",
+  "base_commit": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+  "note_sha256": "2f87af236d872d27c2347e35f880afec4aeff761f3b81bba34157b7e55670206",
+  "runner_sha256": "939cd94b62c6f0d81fab24c31f0bbb52b33f719262da5639a62b0c087d70181b",
+  "author_runner": {
+    "control_groups": 20,
+    "source_scope_controls": 1,
+    "exit_code": 0,
+    "current_cache_fresh": true
+  },
+  "capsules": {
+    "count": 5,
+    "bundled_members": 309,
+    "bundled_source_bindings": 200,
+    "seal_rows": 354
+  },
+  "mutations": {
+    "unchanged_checker_reuse": 6,
+    "new_controls": 2,
+    "identity_receipt": "MUTATION_REUSE_VERIFICATION.json"
+  },
+  "integration_checks": [
+    {
+      "check": "vocab",
+      "exit_code": 0,
+      "stdout_sha256": "107b88a3812e123cf12e0528bd5583687f344f1c8d054622ddc7a9813f0b5cae",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "capsules",
+      "exit_code": 0,
+      "stdout_sha256": "44fbb4d6ef026d1f60f08e6ad343f232b092e9580c7b71d3737b5bfa185e10ea",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "pipeline",
+      "exit_code": 0,
+      "stdout_sha256": "14f741a99062eaed71be47db2dc9c11586e6b0d570f0b29d7fd164fd220578a4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "strict_lint",
+      "exit_code": 0,
+      "stdout_sha256": "77db848b4c0d0f7e116f9e10ad06635178c141d1aba8b23abac2c00d7398c694",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "changed_evidence",
+      "exit_code": 0,
+      "stdout_sha256": "d4ee28541bd84c6fcf94eaca81f44ec3704ac74fc07ebc07d02980b372124797",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "strict_lint": {
+    "errors": 0,
+    "warnings": 23,
+    "notices": 1484,
+    "scope": "Existing repository-wide warning/notice categories preserved; no unrelated repair or audit disposition."
+  },
+  "graph_delta": {
+    "nodes_added": 1,
+    "edges_added": 1,
+    "only_dependency": "minimal_axioms"
+  },
+  "audit_status": "unaudited",
+  "prompt_files_changed": [],
+  "scope": "Mechanical integration and source authentication, separate from independent scientific reconstruction and formal audit. No merge or retained status."
+}

@@ -1,0 +1,26 @@
+{
+  "verified_utc": "2026-09-21T16:28:24.682447+00:00",
+  "seals": [
+    {
+      "path": "geometric_general_graph_independent/PRE_COMPARISON_SEAL.json",
+      "sha256": "c4f317495ea680b27397bc77ff85a3d8b113a4a29e788ab7ee0dfe66d42145a7",
+      "authenticated_bindings": 24
+    },
+    {
+      "path": "geometric_general_graph_independent/FINAL_SEAL.json",
+      "sha256": "98d1312f06eb9bb0ce929b9d56c7dec687f0383a732330034b9029d276811646",
+      "authenticated_bindings": 36
+    },
+    {
+      "path": "geometric_fixed_rate_independent/correction_ack/ACK_SEAL.json",
+      "sha256": "c818967744a8c4d2ea982c0786637741ed42666ff3f3720ca334896a7041e54a",
+      "authenticated_bindings": 50
+    }
+  ],
+  "root_read": [
+    "complete general-graph report and precomparison derivation",
+    "complete independent general-graph checker and postcomparison code",
+    "complete fixed-rate correction acknowledgment, targeted checker and results"
+  ],
+  "scope": "Selective independent checks, not formal audit; no production values yet read."
+}

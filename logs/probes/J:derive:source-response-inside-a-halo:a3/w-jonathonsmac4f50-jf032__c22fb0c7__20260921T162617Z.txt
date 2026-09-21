@@ -1,0 +1,79 @@
+H1  the machinery, and exclusion on its own
+     A record at x hops to an empty neighbour y with weight W(y)/(W(x)+W(y)), where
+     W(z) is the product of pair weights z would have against the RECORDED neighbours
+     of z (x itself is vacated, so it does not count in W(y)).  To first order in the
+     gas density only one gas record matters at a time, and the isotropic part of the
+     density cancels, so the drift is g times sum_s s_x <D_x(s)>.
+     With the weights switched off, only the blocking of an occupied target survives:
+ok          exclusion coefficient = -1, exactly -1, independent of c, p, q, r
+     and that is checkable by hand: a gas record on a target blocks that hop, so
+     D_x(s) = -s_x/2 for s a neighbour, giving -(1/2) sum_{s in AX} s_x^2 = -1.
+     Blocking alone therefore pushes the test record DOWN the gradient.
+
+H2  (a) the full first-order drift coefficient
+     coefficient of g  =  (18*c**3*p*q*r - 10*c**2*p*q + 11*c**2*p*r + 11*c**2*q*r - 17*c*p - 17*c*q + 4*c*r - 24) / (3*(c*p + 1)*(c*q + 1)*(c*r + 1))
+ok        - an exact rational function of c and the six-axis weights
+
+H3  (b) the drift at the neutral scale
+     The unit expects zero here, on the ground that a record 'binds to nothing without
+     a cycle' at c_0.  It is not zero.  At c_0 = 6/(p+q+4r):
+ok          (3, 1, 2): c_0 = 1/2, drift coefficient = -52/45 = -1.155556  (< 0)
+ok          (12, 1, 2): c_0 = 2/7, drift coefficient = -21002/9207 = -2.281090  (< 0)
+ok          (5, 2, 4): c_0 = 6/23, drift coefficient = -13866/12455 = -1.113288  (< 0)
+ok          (7, 3, 5): c_0 = 1/5, drift coefficient = -79/72 = -1.097222  (< 0)
+     and the part that is NOT blocking is also nonzero at c_0:
+       (3, 1, 2): weights-only part = -2/15 = -0.133333
+       (12, 1, 2): weights-only part = -3370/3069 = -1.098078
+       (5, 2, 4): weights-only part = -8466/87185 = -0.097104
+       (7, 3, 5): weights-only part = -1/12 = -0.083333
+ok        so neither cause vanishes at the neutral scale.
+     WHY.  <c_0 omega> = 1 over uniform contents, which is what makes a random-content
+     neighbour weigh what a void weighs.  But the hop uses phi/(1+phi) with
+     phi = c_0 omega, and that function is CONCAVE, so <phi/(1+phi)> < 1/2 = the value
+     at the mean.  A neighbouring record therefore lowers the chance of hopping TOWARDS
+     it even when it weighs one on average.  'No binding without a cycle' is a
+     statement about the static measure; the drift in a gradient is a non-equilibrium
+     kinetic asymmetry, and it survives the absence of binding.
+
+H4  (a) the scale at which the drift reverses
+     The coefficient's denominator is positive, so the sign is the numerator's:
+ok          (3, 1, 2): c_0 = 0.5000, drift reverses at c* = 0.702965, c*/c_0 = 1.4059
+ok          (12, 1, 2): c_0 = 0.2857, drift reverses at c* = 0.597174, c*/c_0 = 2.0901
+ok          (5, 2, 4): c_0 = 0.2609, drift reverses at c* = 0.361617, c*/c_0 = 1.3862
+ok          (7, 3, 5): c_0 = 0.2000, drift reverses at c* = 0.275496, c*/c_0 = 1.3775
+     So the answer to 'towards higher density?' is: only above c*, which on every
+     triple tested lies 1.4 to 2.1 times the neutral scale.  At and just above c_0 a
+     free record drifts AWAY from density; it is attracted only well into the binding
+     regime.  Below c* the gas is dispersive, not accretive.
+
+H5  (c) accretion: the centre of mass of a held cube of side m
+     Let the cube capture gas at a rate proportional to the local density on each face,
+     with constant kappa.  The two x-faces sit at +-m/2 and see rho +- g m/2, so
+ok          d(M X_cm)/dt = g*kappa*m**4/2 = kappa g m^4 / 2
+ok          and with M = m^3, the centre of mass moves at g*kappa*m/2 = kappa g m / 2
+     LINEAR in the side m, i.e. proportional to (record count)^(1/3).  A lump therefore
+     drifts up the gradient even where a single record drifts down: accretion and hop
+     asymmetry are different mechanisms with different signs and different sizes.
+
+H6  (d) B inside A's halo, and what kind of law this is
+     Block 41's halo is u = Q G / kappa with G the lattice Green function, ~ 1/(4 pi R)
+     at large R, so the gradient B sits in is
+ok          g(R) = d/dR [Q/(4 pi kappa R)] = -Q/(4*pi*R**2*kappa),  so |g| = Q/(4 pi kappa R^2)
+     Feeding that into H5, a cube of side m at distance R from a producer of strength Q
+       v_B  =  kappa g m / 2  =  Q m / (8 pi R^2),
+     so the velocity goes as ONE OVER R SQUARED, linearly in A's production Q_A, and
+     linearly in B's linear size (the cube root of its record count).
+     SYMMETRY: v_B depends on (Q_A, m_B) and v_A on (Q_B, m_A).  These agree only if
+     production is proportional to size for both bodies.  In general the law is NOT
+     symmetric under exchanging A and B - there is no single 'mass' that plays both
+     roles, because the source strength Q and the response size m are different
+     attributes of a lump.
+     AND IT IS NOT A FORCE LAW.  v proportional to g is overdamped: the velocity is
+     set by the local gradient, with no memory.  A force law with inertia needs a
+     conserved momentum to accelerate, and block 41's result (1) is that the ONLY local
+     additive invariant density is the occupancy - there is no momentum density in the
+     model to carry inertia.  Getting one would mean adding a conserved vector density,
+     which is new axiom content, not a consequence of the present clauses.
+
+SUMMARY: PARTIAL on the response inside a halo: the first-order drift of a free test record in a gas with density gradient g is exactly g(18c^3 pqr - 10c^2 pq + 11c^2 pr + 11c^2 qr - 17cp - 17cq + 4cr - 24)/(3(cp+1)(cq+1)(cr+1)), of which the blocking of occupied targets contributes exactly -1 independently of c, p, q and r.  At the neutral scale this is NEGATIVE on every triple tested - -26/45 sort of magnitudes, specifically the coefficient is negative at (3,1,2), (12,1,2), (5,2,4) and (7,3,5) - so contrary to the unit's expectation a single test record does NOT have zero drift at the neutral scale: it drifts AWAY from density.  Both causes survive at c_0: blocking, and the concavity of phi/(1+phi), which makes <phi/(1+phi)> < 1/2 even though <c_0 omega> = 1.  The drift reverses to up-gradient only above a scale c* which is 1.38 to 2.09 times c_0 on the triples tested.  A held cube of side m instead drifts up the gradient at kappa g m / 2, linear in the side; combined with the halo u = QG/kappa this gives v_B = Q_A m_B/(8 pi R^2), one over R squared, linear in A's production and in B's linear size, hence NOT symmetric under exchanging A and B
+HIT: contrary to the expectation that a test record has zero drift at the neutral scale because it binds to nothing without a cycle, the exact first-order drift coefficient is negative at c_0 on every triple tested - the record drifts AWAY from higher density - and it stays negative until a reversal scale c* that is 1.38 to 2.09 times c_0; the blocking of occupied targets contributes exactly -1 independently of all four parameters, and the remaining part is nonzero at c_0 because the hop uses the concave phi/(1+phi) so <phi/(1+phi)> < 1/2 even where <c_0 omega> = 1, which is the difference between a statement about the static measure and a kinetic asymmetry out of equilibrium; a held cube of side m instead drifts UP the gradient at kappa g m/2, so inside a halo u = QG/kappa the velocity of B is Q_A m_B/(8 pi R^2) - one over R squared but linear in A's production and in B's linear size separately, so the law is not symmetric in A and B, and being overdamped it is not a force law at all

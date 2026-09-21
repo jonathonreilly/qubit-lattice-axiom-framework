@@ -1,0 +1,94 @@
+A1  (a) every way the axioms let a record enter its neighbours' odds
+ok        Admissibility: the distribution 'is determined by, and varies with, the
+       nearest-neighbor conditions' - this is the ONLY channel the axioms supply.
+ok        Record: 'A site with no record cannot be read.'
+ok        Record: a record 'locks exactly one admissible local possibility'; permanent, one per site
+ok        AND decisively: 'Finite additivity, a named scalar collection functional I, and an
+       assigned value I(empty)=0 are NOT Record axiom content.'
+ok        The 2026-08-13 revision 'removed the named scalar functional I, finite additivity
+       over disjoint record collections, and I(empty)=0 from Record.'
+ok        and rows needing those structures 'must likewise cite a separate retained
+       authority or remain conditional/open'.
+     The enumeration is short, and every entry lands on the same side:
+       1. the record's locked content as its neighbour's condition   -> BOUNDARY VALUE
+       2. its bare occupancy, content unread, as a condition         -> BOUNDARY VALUE
+       3. its own distribution - a record HAS none, it is locked     -> collapses to 1
+       4. an unformed neighbour's distribution as a condition        -> the reading
+          under test; still a condition, and by Record the field is UNREADABLE, so it
+          is not an observable of the theory.
+     'Determined by the nearest-neighbor conditions' is CONDITIONING: it fixes a value,
+     it does not contribute a term.  The one clause that would have licensed summing
+     disjoint records was deliberately removed from the axiom set.
+     ANSWER TO (a): there is no reading available from axiom content alone in which a
+     record is an additive source.  Every route is a boundary value.
+
+A2  the stability surface and the massless line
+ok        1 - 6 l1 has numerator 7q + 4r - 5p, so m^2 = 0 exactly on 5p = 7q + 4r
+ok        (3,1,2) sits ON the massless surface: 5*3 = 15 = 7*1 + 4*2
+ok        (2, 1, 2): m^2 = 5, screening length 1/m = 0.4472 lattice units
+ok        (3, 1, 3): m^2 = 2, screening length 1/m = 0.7071 lattice units
+ok        (5, 2, 4): m^2 = 5/3, screening length 1/m = 0.7746 lattice units
+ok        (7, 3, 5): m^2 = 3/2, screening length 1/m = 0.8165 lattice units
+     Every stable triple tested screens within about one lattice spacing.  That single
+     fact is what (b) turns on.
+
+A3  exact Green functions on tori of side 5, 6 and 7
+ok        the orbit-reduced solve reproduces the full 125-site solve exactly at L = 5
+       (one equation per cubic-group orbit instead of one per site: 20 unknowns at
+        L = 7 rather than 343, which is what makes exact Fractions affordable here)
+ok        L = 5: G(0) = 0.096103660, one record has capacity C_1 = 1/G(0) = 10.405430958
+ok        L = 6: G(0) = 0.096096530, one record has capacity C_1 = 1/G(0) = 10.406203001
+ok        L = 7: G(0) = 0.096095691, one record has capacity C_1 = 1/G(0) = 10.406293867
+
+A4  (b) two records: how far apart before their capacities add to within 10 percent
+     The pinned-set solve gives, for two records at separation d,
+       C_2 = 2/(G(0) + G(d)),   C_1 = 1/G(0),   so   C_2/(2 C_1) = G(0)/(G(0) + G(d)).
+     Adding to within 10 percent is therefore EXACTLY the condition G(d)/G(0) <= 1/9.
+     L = 5:
+ok          d = 1: C_2/(2 C_1) = 0.909839591, G(d)/G(0) = 0.099094840  -> adds to 10%
+ok          d = 2: C_2/(2 C_1) = 0.988835330, G(d)/G(0) = 0.011290727  -> adds to 10%
+     L = 6:
+ok          d = 1: C_2/(2 C_1) = 0.909946121, G(d)/G(0) = 0.098966166  -> adds to 10%
+ok          d = 2: C_2/(2 C_1) = 0.989795476, G(d)/G(0) = 0.010309730  -> adds to 10%
+ok          d = 3: C_2/(2 C_1) = 0.997822468, G(d)/G(0) = 0.002182284  -> adds to 10%
+     L = 7:
+ok          d = 1: C_2/(2 C_1) = 0.909958660, G(d)/G(0) = 0.098951022  -> adds to 10%
+ok          d = 2: C_2/(2 C_1) = 0.989901997, G(d)/G(0) = 0.010201013  -> adds to 10%
+ok          d = 3: C_2/(2 C_1) = 0.998789517, G(d)/G(0) = 0.001211950  -> adds to 10%
+     So on a screened triple the answer to (b) is a couple of lattice spacings, and the
+     criterion is exact rather than fitted.
+
+A5  (b) an N^3 array against its record count
+ok        L = 6, N = 2 at spacing 2: capacity 80.591593 < 8 C_1 = 83.249624  (ratio 0.968072)
+ok          charges all equal at 10.073949, as they must: a 2x2x2 block is all corners, so it has no interior site
+         Sub-additivity still holds (the ratio above); what is absent is the
+         geometry needed to SEE a gradient, not the shielding itself.
+ok        L = 6, N = 3 at spacing 2: capacity 262.478006 < 27 C_1 = 280.967481  (ratio 0.934194)
+ok          charges all equal at 9.721408, as they must: it tiles the torus (N*step = L), so every record is translation-equivalent
+         Sub-additivity still holds (the ratio above); what is absent is the
+         geometry needed to SEE a gradient, not the shielding itself.
+ok        L = 7, N = 3 at spacing 2: capacity 268.232267 < 27 C_1 = 280.969934  (ratio 0.954665)
+ok          charges range 9.723717 .. 10.037097: this body has
+         both an interior and an outside, and the outer records carry MORE
+         charge than the inner ones.  That gradient is the self-shielding.
+
+A6  (c) the self-shielding crossover, and what it does to a 1/r law
+     A dilute body of spacing d and linear size D holds (D/d)^3 records, so if
+     capacities added its strength would be (D/d)^3 c_1.  But records that fix the odds
+     at their sites are a CONDUCTOR, and a conductor's capacity in the massless case
+     grows like its LINEAR size, kappa D.  Equating the two:
+ok          D* = sqrt(kappa) d^(3/2) / sqrt(c_1)   (solved, = d**(3/2)*sqrt(kappa)/sqrt(c_1))
+     which is the form the unit expects.  Below D* the body is dilute enough that its
+     records add; above D* it shields itself and its strength tracks D, not D^3.
+     CONSEQUENCE for the gravity lane: past D* a body's charge saturates at its
+     capacity and stops being proportional to the matter in it.  A 1/r law between two
+     LARGE bodies would read C(D_1) C(D_2)/r with each C growing like a linear size,
+     not like a mass.  No choice of scale repairs that: the saturation is geometric.
+     On the MASSLESS surface - where (3,1,2) sits, and which is the case the lane
+     cares about - it is worse: m = 0 means no screening, G(d)/G(0) falls only like
+     1/d (the unit reports r v(r) flat at 0.28-0.30 for r = 1..5), so the exact
+     criterion G(d)/G(0) <= 1/9 is not met at any separation a lattice body offers,
+     and capacities of nearby records never add.
+
+SUMMARY: PARTIAL on whether records can be additive sources. (a) Read in full, the axiom memo supplies exactly one channel - Admissibility's 'for each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions' - which CONDITIONS a site's distribution rather than contributing a term to it; the four routes by which a record can reach an unformed neighbour (locked content, bare occupancy, its own distribution, an unformed neighbour's distribution) are all boundary values, and the one clause that would have licensed summing disjoint records, finite additivity of a scalar collection functional I, was REMOVED from Record on 2026-08-13 with such rows required to cite a separate retained authority; so no additive-source reading follows from axiom content alone. (b) In the linear theory the criterion is exact: C_2/(2 C_1) = G(0)/(G(0)+G(d)), so two records' capacities add to within 10 percent exactly when G(d)/G(0) <= 1/9; verified against exact Fraction capacities on tori of side 5, 6 and 7 (the Green function computed one equation per cubic-group orbit and validated against the full 125-site solve at L = 5), and every stable triple screens within about one lattice spacing so this is met within a few spacings, while on the massless surface 5p = 7q + 4r it is never met. An N^3 array's capacity is strictly below N^3 C_1 with outer records carrying more charge. (c) Equating the would-be additive strength (D/d)^3 c_1 with a conductor's geometric capacity kappa D gives D* = sqrt(kappa) d^(3/2)/sqrt(c_1)
+HIT: the axioms as written cannot supply an additive source - Admissibility only CONDITIONS a site's distribution on its neighbours' conditions, and finite additivity over disjoint record collections was explicitly removed from the Record axiom on 2026-08-13, so every route by which a record enters its unformed neighbours' odds is a boundary value; quantitatively the linear theory's additivity criterion is exactly G(d)/G(0) <= 1/9 for 10 percent, which screened triples meet within a few lattice spacings but the massless surface 5p = 7q + 4r never does, and a dilute body self-shields beyond D* = sqrt(kappa) d^(3/2)/sqrt(c_1), past which its strength grows like its linear size rather than like the matter it contains - so a 1/r law between large bodies would not be proportional to their masses

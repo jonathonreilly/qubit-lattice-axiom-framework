@@ -1,0 +1,53 @@
+{
+  "verified_utc": "2026-09-21T06:10:38.650685+00:00",
+  "base_commit": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+  "final_sources_sha256": {
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    "scripts/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.py": "bc0ec7d702f46f862464cbfc3f915fa77201878858ee9984620ede10b669cb8d"
+  },
+  "verified_final_review_artifacts_and_dependencies": 26,
+  "final_review_seal_sha256": "3f11235f7953d0ea13e1e3e8b83ba41d57c9d59eeab6d7ae7e857f9e43b25389",
+  "correction_ack_sha256": "2a0fea5b29e5893277e383a815382db86c37e4ea70dead34411a45368445c9b7",
+  "complete_source_review_findings_remaining": 0,
+  "python_files_compiled": [
+    "scripts/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.py",
+    ".claude/science/mobile-record-immutable-waves-20260921/verify_capsules.py",
+    ".claude/science/mobile-record-immutable-waves-20260921/run_author_checks.py",
+    ".claude/science/mobile-record-immutable-waves-20260921/final_source_review/selective_check.py"
+  ],
+  "canonical_cache": {
+    "path": "logs/runner-cache/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.txt",
+    "sha256": "12d1ebf1dc1041fb9a4a03a9b0fe09278e4f0f493f3b490ba8c45abc4da55a4d",
+    "status": "fresh"
+  },
+  "primary_checks": {
+    "passed": 49,
+    "failed": 0,
+    "declared_mutations_rejected": 7
+  },
+  "citation_topology": {
+    "added_nodes": [
+      "mobile_records_immutable_context_exchange_acoustic_limits_bounded_theorem_note_2026-09-21"
+    ],
+    "new_edges": 1,
+    "prior_entries_unchanged": true,
+    "node_count": 6027,
+    "edge_count": 13607
+  },
+  "vocabulary_check": {
+    "report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "files_with_violations": 0
+  },
+  "pending_combined_candidate_gates": [
+    "full pipeline",
+    "strict audit lint",
+    "changed-evidence integration"
+  ],
+  "independent_audit_verdict": null,
+  "editable_prompt_files_changed": [],
+  "staged_whitespace_check": {
+    "status": "one byte-preserved historical cache exception",
+    "receipt": "RAW_EVIDENCE_WHITESPACE.json",
+    "all_other_staged_files_passed": true
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "status": "primary_controls_passed",
+  "checks": [
+    {
+      "name": "declared_source_and_primitive_boundary",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "sharp_local_asymmetry_bound",
+      "passed": true,
+      "details": {
+        "local_axis_cases": 7203,
+        "h_min": -4,
+        "h_max": 4
+      }
+    },
+    {
+      "name": "endpoint_antisymmetry",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "strict_floors_both_implementations",
+      "passed": true,
+      "details": {
+        "minimal_floor": "1/20",
+        "linear_K": "5/2",
+        "linear_floor": "1/2"
+      }
+    },
+    {
+      "name": "all_signed_cubic_transforms",
+      "passed": true,
+      "details": {
+        "local_cases": 345744
+      }
+    },
+    {
+      "name": "periodic_pointwise_balance_length_4",
+      "passed": true,
+      "details": {
+        "axis_configurations": 7203
+      }
+    },
+    {
+      "name": "periodic_pointwise_balance_length_5",
+      "passed": true,
+      "details": {
+        "axis_configurations": 50421
+      }
+    },
+    {
+      "name": "product_current_case_0_axis_0_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_0_axis_0_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_0_axis_1_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_0_axis_1_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_0_axis_2_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_0_axis_2_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_1_axis_0_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_1_axis_0_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_1_axis_1_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_1_axis_1_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_1_axis_2_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_1_axis_2_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_2_axis_0_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_2_axis_0_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_2_axis_1_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_2_axis_1_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_2_axis_2_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_2_axis_2_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_3_axis_0_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_3_axis_0_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_3_axis_1_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_3_axis_1_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_3_axis_2_minimal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "product_current_case_3_axis_2_linear",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "direct_four_site_product_current",
+      "passed": true,
+      "details": {
+        "case_count": 24,
+        "species_per_case": 7
+      }
+    },
+    {
+      "name": "flux_potential_axis_0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_entropy_symmetry_axis_0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "flux_potential_axis_1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_entropy_symmetry_axis_1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "flux_potential_axis_2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_entropy_symmetry_axis_2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_density_all_direction_field_matrix",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "general_polarized_family_field_matrix",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_direction_acoustic_polynomial",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "generic_axis_spectrum",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "generic_body_diagonal_spectrum",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_density_decoupling_coefficients",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_configuration_fourier_drift_sign",
+      "passed": true,
+      "details": {
+        "configurations": 2401,
+        "phase": "exp(-i pi x/2)"
+      }
+    },
+    {
+      "name": "slow_birth_generator_scaling",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_covariance_and_four_zero_modes_rho_1/4",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_covariance_and_four_zero_modes_rho_1/2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_covariance_and_four_zero_modes_rho_3/4",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "count": 49,
+  "source_sha256": "bc0ec7d702f46f862464cbfc3f915fa77201878858ee9984620ede10b669cb8d",
+  "direct_product_averages": [
+    {
+      "case": 0,
+      "axis": 0,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "1/96",
+        "-1/96",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 0,
+      "axis": 0,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "1/96",
+        "-1/96",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 0,
+      "axis": 1,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "1/96",
+        "-1/96",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 0,
+      "axis": 1,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "1/96",
+        "-1/96",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 0,
+      "axis": 2,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/96",
+        "-1/96"
+      ]
+    },
+    {
+      "case": 0,
+      "axis": 2,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/96",
+        "-1/96"
+      ]
+    },
+    {
+      "case": 1,
+      "axis": 0,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "1/24",
+        "-1/24",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 1,
+      "axis": 0,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "1/24",
+        "-1/24",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 1,
+      "axis": 1,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "1/24",
+        "-1/24",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 1,
+      "axis": 1,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "1/24",
+        "-1/24",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 1,
+      "axis": 2,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/24",
+        "-1/24"
+      ]
+    },
+    {
+      "case": 1,
+      "axis": 2,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/24",
+        "-1/24"
+      ]
+    },
+    {
+      "case": 2,
+      "axis": 0,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "3/32",
+        "-3/32",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 2,
+      "axis": 0,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "3/32",
+        "-3/32",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 2,
+      "axis": 1,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "3/32",
+        "-3/32",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 2,
+      "axis": 1,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "3/32",
+        "-3/32",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "case": 2,
+      "axis": 2,
+      "variant": "minimal",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3/32",
+        "-3/32"
+      ]
+    },
+    {
+      "case": 2,
+      "axis": 2,
+      "variant": "linear",
+      "currents": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3/32",
+        "-3/32"
+      ]
+    },
+    {
+      "case": 3,
+      "axis": 0,
+      "variant": "minimal",
+      "currents": [
+        "165/8788",
+        "475/8788",
+        "-383/4394",
+        "21/8788",
+        "7/2197",
+        "35/8788",
+        "21/4394"
+      ]
+    },
+    {
+      "case": 3,
+      "axis": 0,
+      "variant": "linear",
+      "currents": [
+        "165/8788",
+        "475/8788",
+        "-383/4394",
+        "21/8788",
+        "7/2197",
+        "35/8788",
+        "21/4394"
+      ]
+    },
+    {
+      "case": 3,
+      "axis": 1,
+      "variant": "minimal",
+      "currents": [
+        "105/8788",
+        "-5/8788",
+        "-5/4394",
+        "921/8788",
+        "-239/2197",
+        "-25/8788",
+        "-15/4394"
+      ]
+    },
+    {
+      "case": 3,
+      "axis": 1,
+      "variant": "linear",
+      "currents": [
+        "105/8788",
+        "-5/8788",
+        "-5/4394",
+        "921/8788",
+        "-239/2197",
+        "-25/8788",
+        "-15/4394"
+      ]
+    },
+    {
+      "case": 3,
+      "axis": 2,
+      "variant": "minimal",
+      "currents": [
+        "45/8788",
+        "-17/8788",
+        "-17/4394",
+        "-51/8788",
+        "-17/2197",
+        "695/8788",
+        "-285/4394"
+      ]
+    },
+    {
+      "case": 3,
+      "axis": 2,
+      "variant": "linear",
+      "currents": [
+        "45/8788",
+        "-17/8788",
+        "-17/4394",
+        "-51/8788",
+        "-17/2197",
+        "695/8788",
+        "-285/4394"
+      ]
+    }
+  ],
+  "input_sha256": {
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  "scope": "Exact finite and symbolic support. General hydrodynamic and fluctuation theorems rely on the explicit proofs, not on counts of passing controls."
+}

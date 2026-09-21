@@ -1,0 +1,10 @@
+{
+  "identities": {
+    "scripts/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.py": "bc0ec7d702f46f862464cbfc3f915fa77201878858ee9984620ede10b669cb8d",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "7b0ca5ba4add0790151beac085dee85c922f02db2b2f053b2b2421ac09d71b42"
+  },
+  "primary_pass": true,
+  "declared_mutations": 7,
+  "all_mutations_rejected": true,
+  "scientific_scope": "Author checks only. General proofs and independent reports are separate evidence."
+}

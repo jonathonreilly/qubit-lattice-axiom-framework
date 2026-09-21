@@ -1,0 +1,5 @@
+{
+  "failure": "New Fourier-loop integer indices shadowed the earlier symbolic wave-vector names in a subsequent covariance substitution. Use the retained ks tuple for substitution. The previous 46 controls passed.",
+  "source_sha256": "981089a6c9e1523129788c32516554a12d1b627ac08ee2ced3cf7e61ef79795c",
+  "log_sha256": "a427b3e8914e62f9257709eb6eaaf1b251f0be6112845063f6cc36dd8efdf659"
+}

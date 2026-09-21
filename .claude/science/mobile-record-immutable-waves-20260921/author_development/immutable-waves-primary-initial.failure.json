@@ -1,0 +1,6 @@
+{
+  "stage": "publication runner development",
+  "source_sha256": "596ee49d274989598241724ae0a6de80bc7ed12653ad04530ee291462b42643e",
+  "log_sha256": "fb575d8f8bb1e23f870510abcacdf5ef6b73b7454e827859cef01371facf8081",
+  "failure": "A source-presence assertion ignored the line break inside the axiom sentence. Normalize whitespace before matching; no scientific control has run yet."
+}

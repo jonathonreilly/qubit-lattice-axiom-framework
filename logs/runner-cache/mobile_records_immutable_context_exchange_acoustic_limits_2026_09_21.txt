@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.py
+runner_sha256: bc0ec7d702f46f862464cbfc3f915fa77201878858ee9984620ede10b669cb8d
+input_fingerprint_sha256: 17e62d9976e8dc258de0f84235d9015e278a9dc634b6d511fa55450ed6fae198
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.84
+status: ok
+----- stdout -----
+PASS: declared_source_and_primitive_boundary
+PASS: sharp_local_asymmetry_bound
+PASS: endpoint_antisymmetry
+PASS: strict_floors_both_implementations
+PASS: all_signed_cubic_transforms
+PASS: periodic_pointwise_balance_length_4
+PASS: periodic_pointwise_balance_length_5
+PASS: product_current_case_0_axis_0_minimal
+PASS: product_current_case_0_axis_0_linear
+PASS: product_current_case_0_axis_1_minimal
+PASS: product_current_case_0_axis_1_linear
+PASS: product_current_case_0_axis_2_minimal
+PASS: product_current_case_0_axis_2_linear
+PASS: product_current_case_1_axis_0_minimal
+PASS: product_current_case_1_axis_0_linear
+PASS: product_current_case_1_axis_1_minimal
+PASS: product_current_case_1_axis_1_linear
+PASS: product_current_case_1_axis_2_minimal
+PASS: product_current_case_1_axis_2_linear
+PASS: product_current_case_2_axis_0_minimal
+PASS: product_current_case_2_axis_0_linear
+PASS: product_current_case_2_axis_1_minimal
+PASS: product_current_case_2_axis_1_linear
+PASS: product_current_case_2_axis_2_minimal
+PASS: product_current_case_2_axis_2_linear
+PASS: product_current_case_3_axis_0_minimal
+PASS: product_current_case_3_axis_0_linear
+PASS: product_current_case_3_axis_1_minimal
+PASS: product_current_case_3_axis_1_linear
+PASS: product_current_case_3_axis_2_minimal
+PASS: product_current_case_3_axis_2_linear
+PASS: direct_four_site_product_current
+PASS: flux_potential_axis_0
+PASS: full_entropy_symmetry_axis_0
+PASS: flux_potential_axis_1
+PASS: full_entropy_symmetry_axis_1
+PASS: flux_potential_axis_2
+PASS: full_entropy_symmetry_axis_2
+PASS: all_density_all_direction_field_matrix
+PASS: general_polarized_family_field_matrix
+PASS: all_direction_acoustic_polynomial
+PASS: generic_axis_spectrum
+PASS: generic_body_diagonal_spectrum
+PASS: all_density_decoupling_coefficients
+PASS: exact_configuration_fourier_drift_sign
+PASS: slow_birth_generator_scaling
+PASS: full_covariance_and_four_zero_modes_rho_1/4
+PASS: full_covariance_and_four_zero_modes_rho_1/2
+PASS: full_covariance_and_four_zero_modes_rho_3/4
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

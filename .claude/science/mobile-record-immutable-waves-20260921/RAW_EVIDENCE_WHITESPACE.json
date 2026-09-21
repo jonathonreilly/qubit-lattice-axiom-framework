@@ -1,0 +1,8 @@
+{
+  "path": ".claude/science/mobile-record-immutable-waves-20260921/before_alpha_scope_correction/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.txt",
+  "sha256": "2fcbe0aca3caa286fcdc3b093ebd504e036606854d431b9479042c64ef07471b",
+  "reason": "The byte-exact historical canonical cache ends with its empty stderr section and a blank line. Its original logs/runner-cache location has repository whitespace attributes; this preserved copy has none. The independently acknowledged historical evidence is retained unchanged.",
+  "full_staged_diff_check_exit": 2,
+  "full_staged_diff_check_stdout": ".claude/science/mobile-record-immutable-waves-20260921/before_alpha_scope_correction/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.txt:62: new blank line at EOF.\n",
+  "all_other_staged_files_whitespace_check": "passed"
+}

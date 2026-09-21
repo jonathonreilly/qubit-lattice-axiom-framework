@@ -1,0 +1,34 @@
+{
+  "original_campaign_root": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h",
+  "scope": "Byte-preserving pre-primary-source mathematical evidence. No independent audit or final-source approval is asserted.",
+  "capsules": [
+    {
+      "name": "independent_context_exchange",
+      "zip_sha256": "a8ab8a141af1269e663f6ab16ff34ab08a31ad590782929120f56e1e0cfdcbe1",
+      "seal_sha256": "7e924cc17d429c64ceb8e1b626f874dc6386ac2618ec7399af2879dce8f4d5f5",
+      "report_sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713",
+      "sealed_artifacts": 8
+    },
+    {
+      "name": "independent_context_euler",
+      "zip_sha256": "9ee18b35b2b4bc58efce8c1dc621c055af7feb95d159e5538be156d2324bd423",
+      "seal_sha256": "48dda0ccb30539906dd6274bbf8736258727077c0018bb89c604f491164a1fa9",
+      "report_sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3",
+      "sealed_artifacts": 9
+    },
+    {
+      "name": "independent_axis_balanced_context",
+      "zip_sha256": "b843367b33c5e975d03c231b15ece4b6e6170065843604dd5d4e6f7b14b35f13",
+      "seal_sha256": "8519e354a43ed16b9c176aa3e7e4672e6b3e6e1101e83af040555323aa3390a2",
+      "report_sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf",
+      "sealed_artifacts": 8
+    },
+    {
+      "name": "independent_context_fluctuations",
+      "zip_sha256": "d31ecdd0dcf1c9fd457d33cb4c88ba6835d955a06fa9563fd569e38274816c44",
+      "seal_sha256": "c729b0f85e0350b834380909001ef62f0db0378fdf114b108f5feef7f6e0e8d1",
+      "report_sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68",
+      "sealed_artifacts": 16
+    }
+  ]
+}

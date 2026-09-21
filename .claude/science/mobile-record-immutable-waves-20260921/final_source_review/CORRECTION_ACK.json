@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-21T06:06:01.213573+00:00",
+  "scope": "Narrow F1 correction acknowledgment only; no repeat mathematical review or audit decision.",
+  "finding": "F1",
+  "status": "closed on corrected note identity",
+  "reviewed_note_sha256": "7b0ca5ba4add0790151beac085dee85c922f02db2b2f053b2b2421ac09d71b42",
+  "corrected_note_sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+  "runner_sha256": "bc0ec7d702f46f862464cbfc3f915fa77201878858ee9984620ede10b669cb8d",
+  "runner_unchanged": true,
+  "original_review_report_sha256": "0228e284efefd606c62961c44757b066b0eedc9560a61b48a1efcc70ceeccf6e",
+  "original_review_seal_sha256": "3f11235f7953d0ea13e1e3e8b83ba41d57c9d59eeab6d7ae7e857f9e43b25389",
+  "original_sealed_review_artifacts_unchanged": true,
+  "complete_note_delta": [
+    {
+      "location": "claim_scope, line 4",
+      "before": "and has one nonzero direction-independent acoustic pair",
+      "after": "and has, for fixed alpha!=0, one nonzero direction-independent acoustic pair"
+    },
+    {
+      "location": "introductory acoustic claim, lines 20-22",
+      "before": "tuning needed by an occupation-only context. The same fixed rates give an\nisotropic linear acoustic pair at every homogeneous density strictly between\nzero and one. A separate microscopic fluctuation argument identifies the",
+      "after": "tuning needed by an occupation-only context. For fixed alpha!=0, the same rates\ngive a nonzero isotropic linear acoustic pair at every homogeneous density\nstrictly between zero and one. A separate microscopic fluctuation argument identifies the"
+    }
+  ],
+  "inverse_replacement_recovers_reviewed_bytes": true,
+  "no_other_note_changes": true,
+  "assessment": "Both nonzero acoustic summaries now explicitly require fixed alpha != 0, matching the body theorem. No new overclaim is introduced by the changes. No unresolved mathematical finding remains from the completed source review.",
+  "preserved_manifest": {
+    "path": ".claude/science/mobile-record-immutable-waves-20260921/before_alpha_scope_correction/PRESERVED_IDENTITIES.json",
+    "sha256": "2cbe31a187a320e2e55bf003300472346360565324257ed3a873d6429a37905f",
+    "entries_verified": {
+      "AUTHOR_RUNS.json": "474274468dc5a803e264ae5b2583a3e9f0dc6aa0c4800ef6f21b4ae8ef92172e",
+      "AUTHOR_VERIFICATION.json": "149f46fd708019702bbcd5e9a66cba9cae08088fc529fd5df515f85ba4973202",
+      "MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "7b0ca5ba4add0790151beac085dee85c922f02db2b2f053b2b2421ac09d71b42",
+      "PRIMARY_RESULTS.json": "4a8cef948da092daf0f0e3d16c37ab287be7157c259be076f1046dd7a6d951c2",
+      "mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.txt": "2fcbe0aca3caa286fcdc3b093ebd504e036606854d431b9479042c64ef07471b"
+    }
+  },
+  "preserved_primary_logs_match_original_review_seal": true,
+  "verification_limits": [
+    "No previous mathematical check, primary baseline, mutation suite or capsule verifier was rerun.",
+    "Root refreshes source-dependent primary/cache evidence separately; this acknowledgment does not claim that refresh.",
+    "No unrelated campaign source was read; only CORRECTION_ACK.json was written."
+  ]
+}

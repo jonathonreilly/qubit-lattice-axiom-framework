@@ -1,0 +1,178 @@
+{
+  "created_utc": "2026-09-21T06:03:11.028622+00:00",
+  "kind": "complete publication-source mathematical review; not an audit",
+  "worktree": "/Users/jonreilly/Documents/Codex/mobile-record-immutable-waves-publication-20260921",
+  "source_identity_unchanged_at_seal": true,
+  "findings": [
+    {
+      "id": "F1",
+      "source": "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "lines": "4; corresponding introductory wording 19-22",
+      "status": "open on reviewed source",
+      "narrow_correction": "Qualify the nonzero acoustic pair by fixed alpha != 0, as the body already does."
+    }
+  ],
+  "body_proof_status": "No unresolved mathematical finding under stated body hypotheses.",
+  "sources": [
+    {
+      "path": "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "bytes": 23445,
+      "sha256": "7b0ca5ba4add0790151beac085dee85c922f02db2b2f053b2b2421ac09d71b42"
+    },
+    {
+      "path": "scripts/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.py",
+      "bytes": 11584,
+      "sha256": "bc0ec7d702f46f862464cbfc3f915fa77201878858ee9984620ede10b669cb8d"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/AUTHOR_RUNS.json",
+      "bytes": 14028,
+      "sha256": "474274468dc5a803e264ae5b2583a3e9f0dc6aa0c4800ef6f21b4ae8ef92172e"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/AUTHOR_VERIFICATION.json",
+      "bytes": 545,
+      "sha256": "149f46fd708019702bbcd5e9a66cba9cae08088fc529fd5df515f85ba4973202"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/INDEPENDENT_CAPSULES.json",
+      "bytes": 1739,
+      "sha256": "ea804ea392e3d7a25d3dc07b6d0e8f9eaead351b231a7440175e4698a420d458"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/PRIMARY_RESULTS.json",
+      "bytes": 11452,
+      "sha256": "4a8cef948da092daf0f0e3d16c37ab287be7157c259be076f1046dd7a6d951c2"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context.zip",
+      "bytes": 26160,
+      "sha256": "b843367b33c5e975d03c231b15ece4b6e6170065843604dd5d4e6f7b14b35f13"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context_REPORT.md",
+      "bytes": 19131,
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_euler.zip",
+      "bytes": 22520,
+      "sha256": "9ee18b35b2b4bc58efce8c1dc621c055af7feb95d159e5538be156d2324bd423"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_euler_REPORT.md",
+      "bytes": 18148,
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange.zip",
+      "bytes": 18818,
+      "sha256": "a8ab8a141af1269e663f6ab16ff34ab08a31ad590782929120f56e1e0cfdcbe1"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange_REPORT.md",
+      "bytes": 13405,
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations.zip",
+      "bytes": 28473,
+      "sha256": "d31ecdd0dcf1c9fd457d33cb4c88ba6835d955a06fa9563fd569e38274816c44"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations_REPORT.md",
+      "bytes": 22838,
+      "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/run_author_checks.py",
+      "bytes": 2021,
+      "sha256": "33ee33258f72a2e85ef702fb9361cd8ab6561f87fd300ee267c0d966dcd3d699"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/verify_capsules.py",
+      "bytes": 1767,
+      "sha256": "5530dab3defe1ea5738c25223b6529a08ff8398337df5ba6fbe5581f998ebedb"
+    }
+  ],
+  "instruction_snapshots": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/final_source_review/CAPSULE_VERIFICATION.log",
+      "bytes": 144,
+      "sha256": "3627364a38ffee58e7157a06de5b8fd539bda3ac68c57a33ec21830bd9d14889"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/final_source_review/REPORT.md",
+      "bytes": 18348,
+      "sha256": "0228e284efefd606c62961c44757b066b0eedc9560a61b48a1efcc70ceeccf6e"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/final_source_review/RESULTS.json",
+      "bytes": 4181,
+      "sha256": "b9b996408fa49c47b6729d743cff6e08e0d325b806d05d945bee564d1de77e36"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/final_source_review/RUN.log",
+      "bytes": 4181,
+      "sha256": "b9b996408fa49c47b6729d743cff6e08e0d325b806d05d945bee564d1de77e36"
+    },
+    {
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/final_source_review/selective_check.py",
+      "bytes": 8307,
+      "sha256": "b1d20f46ef25dbfccc8a44738dc1c5a61a85e6091ec8029876138c8f3a215556"
+    }
+  ],
+  "executions": [
+    {
+      "script": ".claude/science/mobile-record-immutable-waves-20260921/verify_capsules.py",
+      "returncode": 0,
+      "log": "CAPSULE_VERIFICATION.log",
+      "result": {
+        "capsules": 4,
+        "sealed_artifacts": 41,
+        "dependency_links": 15
+      }
+    },
+    {
+      "script": "selective_check.py",
+      "returncode": 0,
+      "log": "RUN.log",
+      "exact_math_controls": 6,
+      "numerical_generator_comparison": 1,
+      "cached_evidence_controls": 10
+    }
+  ],
+  "limits": [
+    "Seven primary mutation failures and baseline authenticated from existing complete logs; not rerun.",
+    "Finite controls do not prove asymptotic statements; the load-bearing proof steps were reconstructed.",
+    "No unrelated growing, native-formation, pressure-design or transverse primary sources accessed.",
+    "No formal audit, landing, retention decision, Git action, source or prior-evidence edit."
+  ]
+}

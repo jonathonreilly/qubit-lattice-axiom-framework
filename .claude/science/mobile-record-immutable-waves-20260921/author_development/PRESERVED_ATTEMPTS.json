@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "name": "immutable-waves-primary-initial.py",
+      "sha256": "596ee49d274989598241724ae0a6de80bc7ed12653ad04530ee291462b42643e"
+    },
+    {
+      "name": "immutable-waves-primary-initial.log",
+      "sha256": "fb575d8f8bb1e23f870510abcacdf5ef6b73b7454e827859cef01371facf8081"
+    },
+    {
+      "name": "immutable-waves-primary-initial.failure.json",
+      "sha256": "bfee6f4eed84e34d1e89973279eaaaedeb0674413e874b452ff097190d4e97fd"
+    },
+    {
+      "name": "immutable-waves-primary-attempt2.py",
+      "sha256": "981089a6c9e1523129788c32516554a12d1b627ac08ee2ced3cf7e61ef79795c"
+    },
+    {
+      "name": "immutable-waves-primary-attempt2.log",
+      "sha256": "a427b3e8914e62f9257709eb6eaaf1b251f0be6112845063f6cc36dd8efdf659"
+    },
+    {
+      "name": "immutable-waves-primary-attempt2.failure.json",
+      "sha256": "85bafa7839917e4c17b04ced32409f3e0f442c436f865fa65a2efa748ab35430"
+    }
+  ],
+  "scope": "Preserved development failures: first source-sentence check needed whitespace normalization; second runner shadowed symbolic x,y with lattice coordinates. Both were fixed in the final runner. These archived sources retain their original path assumptions."
+}

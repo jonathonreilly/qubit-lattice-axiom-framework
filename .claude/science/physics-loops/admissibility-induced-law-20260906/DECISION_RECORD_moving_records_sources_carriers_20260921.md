@@ -1,4 +1,4 @@
-# Moving records, sources and carriers — state of knowledge for the owner (blocks 39–46; 2026-09-21)
+# Moving records, sources and carriers — state of knowledge for the owner (blocks 39–46, with an addendum for blocks 47–49; 2026-09-21)
 
 **What this is.** One page on what the campaign established under the owner's reading that records move, written at the end of the 12-hour campaign of 2026-09-20/21. Nothing here is adopted; every block is an open hand-off PR against `main`; PR numbers are evidence addresses, not status. Author checks only; no independent review has taken place on any of it.
 
@@ -43,5 +43,26 @@ A capturing site takes up a record of the gas about every `1/(0.87ρ)` ticks (ex
 ## How the inertial gas meets the owner's picture
 The owner asked whether the probability fields at sites could pull records onto them, with the overlap of two neighbourhoods as the attraction. In the inertial gas the local distribution of contents near a capturing body is tilted towards the body — that tilt *is* the wind — and it falls as the inverse square of the distance because records are never destroyed. A second body standing in that tilted field is pulled along it.
 
-## Supervisor's recommendation (not a decision)
+## Supervisor's recommendation (not a decision) — superseded by the addendum below
 Decide fork 4 first: it gates both the odds reading and inertia. If encounters may re-draw contents, the inertial gas is the one record-layer candidate with a carrier that has a speed, a source that adds and a Laplacian protected by permanence; its open questions are quantitative (drag against attraction; growth by capture; a clause that includes the rule's weights) and are loaded on `ai/probes`. If not, the record layer supplies the source (the record count) and nothing else, and the carrier has to come from a dynamics clause for the amplitude layer, which the axioms do not yet contain.
+
+## Addendum after blocks 47–49 (2026-09-21, end of the 12-hour campaign)
+
+Three blocks were opened after this record was written. They change its recommendation.
+
+| # | Statement | Evidence address |
+|---|---|---|
+| 10 | For bodies transparent to the gas the capture rate is the record count, `q₁ = (√3/2)ρ` per record, and the force is `G N₁N₂/r²` with `G = 3√3ρ/(16π(1 − ρ))` (executed at separation 16: `(1.44 ± 0.10)·10⁻⁴` against `1.46·10⁻⁴`). Row 8 above is now a note. | block 47, #8556 |
+| 11 | A capturing site takes up records in proportion to `|s|₁` (1 to `√3`): captured records are a biased sample. Block 45's reason for the free-streaming value was wrong; the value holds for a gas in local equilibrium, so `K₀` and `G` are **collisional** values. Without collisions the force between transparent sites depends on direction (coefficient 1 near an axis to 3 on the body diagonal, against `9/4`). Corrections posted on #8553 and #8556. | block 48, #8558 |
+| 12 | A free capturing body is **carried** by the wind: its content is the wind's content times the captured fraction of its mass (executed: 0.78–0.97 of that); an accelerated fall exists only while the gas inside the radius is small against `8N₁/(3π²(1 − ρ)) ≈ 0.27N₁/(1 − ρ)`; outside that window `r³ = r₀³ − 3Ct`, no orbits. This replaces the estimate in "The cost of the capture picture" above (`N₁/6` there; `0.27N₁` derived). | block 48, #8558 |
+| 13 | The attraction is tied to growth. A body whose emissions equal its captures sends no flux through any surface around it (exact), so it draws no inverse-square wind; for independent records cosine-law emission at the capture rate fills the shadow exactly. In the closure the pull a body exerts is proportional to its **net** uptake and the push it feels to its **gross** capture. `q₁ = (8π/3)(1 − ρ)G`: the relative growth rate is `8π(1 − ρ)/3` times the coefficient of the pull, whatever fraction of its captures a body keeps. Executed (solid balls at separation 16; pushes over the reference): both capture `0.92 ± 0.05`; a body in balance is pushed with `0.75 ± 0.06` and pulls with `0.10 ± 0.07`; both in balance `0.05 ± 0.07`; the shortfall of the push is the body capturing its own emissions again (one site in balance takes up the full `q₁u`). | block 49, #8559 |
+
+### What this does to the forks
+Fork 5 ("does matter capture records?") now has its price attached: **in the capture picture a mass attracts in proportion to the rate at which it grows, and a mass that has stopped growing has stopped attracting.** Bodies that neither capture nor emit feel no force at all (block 44, exact: the uniform measure stays stationary around them). So, with permanent records:
+
+- in equilibrium the record layer has no long-range channel for the record count (blocks 41, 44);
+- through the odds of unformed sites the charge is the content, masslessness needs tuning and sources do not add (block 42), and the field arrives by diffusion (block 43);
+- out of equilibrium, with capture, there is an inverse-square pull between record counts with a predicted coefficient (blocks 45–47), but the pulled body is carried rather than accelerated (block 48) and the pull is the body's growth seen from a distance (block 49).
+
+### Supervisor's recommendation, revised (not a decision)
+The record layer supplies the **source** — the record count, forced by symmetry and additivity (block 41) — and, on the evidence of blocks 41–49, **not the carrier**: every record-layer mechanism found gives the record count a long-range pull only by moving records into the body. Unless growing masses are acceptable (the exchange rate is row 13), the carrier has to come from the amplitude layer, where the gravity lane's field equation is at present supplied rather than derived. The next work that can move the lane is therefore the **source link**: how a record count enters the amplitude layer's field equation without the parked statistical postulate. Fork 4 (may an encounter re-draw a record's content?) no longer gates the gravity question; it still gates whether the record layer has sound and momentum exchange at all.

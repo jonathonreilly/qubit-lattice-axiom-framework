@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 47 — author checks (not a review PASS)
+A parameter-free prediction computed before the measurement; refuting pass by symbolic integration, an independent face count and a 7^6 enumeration (four witnesses, all pass). Census 7/7 in family.

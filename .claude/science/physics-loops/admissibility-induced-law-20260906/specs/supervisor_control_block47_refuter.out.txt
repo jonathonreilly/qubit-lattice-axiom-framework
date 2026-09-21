@@ -1,0 +1,5 @@
+PASS: W1 symbolic integration: <max(0, s_z)> = 1/4 and q_1 = (sqrt 3/2) rho
+PASS: W2 exposed faces as 6 N minus twice the adjacent pairs: [6, 12, 10, 24, 78, 174, 294, 486]
+PASS: W3 symbolically K_0 q_1^2 = 3 sqrt3 rho/(16 pi (1 - rho))
+PASS: W4 six axes: the expected number of neighbours pointing at the site, over all 7^6 neighbour states of the product state at density 3/10, is 3/10
+REFUTER TOTAL: FAIL=0

@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 47 (2026-09-21)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "owner: define what a source is and go from there; record-pair source note: identify the Record source and supply a source/response law"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "in the transparent limit the wind law's source is the record count and the executed force is N1 N2/r^2 with the predicted coefficient; next growth and drag, and the owner's fork on re-drawing contents"
+```

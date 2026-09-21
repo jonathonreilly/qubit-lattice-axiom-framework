@@ -1,0 +1,31 @@
+{
+ "task": "R:native_zero_penalty_dispersion_exact_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_zero_penalty_dispersion_exact_2026_09_08.py",
+ "seed": 69393,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054313Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aafba412c8b9b1d0b340d0a95ef8417cc288fba937420def6bfdc1a6043bb5c6",
+ "stdout_tail": "    4,\n        4,\n        6\n      ],\n      \"tau\": [\n        -1,\n        -1,\n        -1\n      ],\n      \"rank\": 88,\n      \"active_zero_modes\": 8\n    },\n    {\n      \"L\": [\n        4,\n        4,\n        6\n      ],\n      \"tau\": [\n        -1,\n        -1,\n        1\n      ],\n      \"rank\": 96,\n      \"active_zero_modes\": 0\n    },\n    {\n      \"L\": [\n        4,\n        4,\n        6\n      ],\n      \"tau\": [\n        -1,\n        1,\n        -1\n      ],\n      \"rank\": 96,\n      \"active_zero_modes\": 0\n    },\n    {\n      \"L\": [\n        4,\n        4,\n        6\n      ],\n      \"tau\": [\n        -1,\n        1,\n        1\n      ],\n      \"rank\": 96,\n      \"active_zero_modes\": 0\n    },\n    {\n      \"L\": [\n        4,\n        4,\n        6\n      ],\n      \"tau\": [\n        1,\n        -1,\n        -1\n      ],\n      \"rank\": 96,\n      \"active_zero_modes\": 0\n    },\n    {\n      \"L\": [\n        4,\n        4,\n        6\n      ],\n      \"tau\": [\n        1,\n        -1,\n        1\n      ],\n      \"rank\": 96,\n      \"active_zero_modes\": 0\n    },\n    {\n      \"L\": [\n        4,\n        4,\n        6\n      ],\n      \"tau\": [\n        1,\n        1,\n        -1\n      ],\n      \"rank\": 96,\n      \"active_zero_modes\": 0\n    },\n    {\n      \"L\": [\n        4,\n        4,\n        6\n      ],\n      \"tau\": [\n        1,\n        1,\n        1\n      ],\n      \"rank\": 96,\n      \"active_zero_modes\": 0\n    }\n  ],\n  \"seconds\": 0.18406062500434928,\n  \"rss_bytes\": 23478272,\n  \"source_sha256\": \"a270cd616a1f4646cd4c22522ac17eed9f1f52117de954fc20e728609da00809\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

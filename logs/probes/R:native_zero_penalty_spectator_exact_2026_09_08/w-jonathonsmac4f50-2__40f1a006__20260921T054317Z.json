@@ -1,0 +1,31 @@
+{
+ "task": "R:native_zero_penalty_spectator_exact_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_zero_penalty_spectator_exact_2026_09_08.py",
+ "seed": 69397,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054317Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "370a9cdfe88cef7bd44c317c0dedc7477f12829acc9f904e8e00534da4277093",
+ "stdout_tail": "{\n  \"checks\": 87509,\n  \"status\": \"PASS\",\n  \"five_pair_matching\": false,\n  \"six_pairs\": [\n    [\n      0,\n      1\n    ],\n    [\n      2,\n      11\n    ],\n    [\n      37,\n      144\n    ],\n    [\n      0,\n      48\n    ],\n    [\n      49,\n      50\n    ],\n    [\n      59,\n      85\n    ]\n  ],\n  \"non_scalar_even_masks\": [\n    3,\n    12\n  ],\n  \"seconds\": 0.2923937910236418,\n  \"rss_mib\": 20.296875,\n  \"scope\": \"Finite support and Clifford controls; no sixth-order coefficient or cubic spectral-isolation test\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:native_zero_penalty_l4_delayed_splitting_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_zero_penalty_l4_delayed_splitting_2026_09_08.py",
+ "seed": 69395,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054315Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=93564 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "62a8d637f585ed9e45611d94a0619930d66b6740c82ed4dd4051447cf19500aa",
+ "stdout_tail": "50\",\n    \"docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md\": \"a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47\",\n    \"scripts/native_zero_penalty_electric_exact_2026_09_08.py\": \"18eb3db97cb1f292a1c0ab0129dffcb5dc02f96de4ae610ae7fa80d0c1c3203f\",\n    \"scripts/native_zero_penalty_spectator_exact_2026_09_08.py\": \"f466ccb0c0c8eb0914ed17198fa7b7040c2dd5943285b69bb80cbc9c744904a2\",\n    \"scripts/native_zero_penalty_isolation_exact_2026_09_08.py\": \"13c1867924c51159e539cb5ba19438e79622793c83267e4f191abf502b34b43c\"\n  },\n  \"scope\": \"Finite supplied L4 isolation and scalar canonical coefficients through five; sixth only support allowed.\"\n}\nper_element: executed actual electric pair flux toggles and finite graph cut controls.\nper_site: executed small cuts and incident-pair matching on the declared finite graphs.\nper_mode: executed active parity and spectator projection controls in the supplied finite Clifford models.\nper_block: finite fixed-flux compression is executed; the general canonical-normalization argument is analytical in the note.\nlattice_wide: executed L4 constant-square and winding controls; the general-torus cut proof and finite L4 isolation proof are analytical; no exhaustive flux-sector run.\nTOTAL: PASS=93564 FAIL=0\nResources: 0.610520s, 23.953MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_zero_penalty_l4_delayed_splitting_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

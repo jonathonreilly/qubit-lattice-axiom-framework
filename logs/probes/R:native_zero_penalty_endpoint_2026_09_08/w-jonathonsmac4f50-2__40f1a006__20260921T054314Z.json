@@ -1,0 +1,35 @@
+{
+ "task": "R:native_zero_penalty_endpoint_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_zero_penalty_endpoint_2026_09_08.py",
+ "seed": 69394,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054314Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=80 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1ad311c51c05fba5b8d244aa4447792929c45de32cf8f9fb320c9dbe935e9489",
+ "stdout_tail": "ian-rational native/CAR traces and analytic frequency squares; no cubic flux optimum or phase.\"\n    }\n  },\n  \"elapsed_seconds\": 0.05531116601196118,\n  \"peak_rss_mib\": 22.53125,\n  \"source_sha256\": \"46cea7e2e2aa0619e1f08571435f5ccb26b24d4774fb3929c923d7bf0d6a3db1\",\n  \"input_sha256\": {\n    \"docs/NATIVE_ZERO_PENALTY_ENDPOINT_NOTE_2026-09-08.md\": \"810b11457e8646aee9b67077fa0c78c31a5fd7101627b2985ba6974ef8f70550\",\n    \"docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md\": \"a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47\",\n    \"scripts/native_zero_penalty_endpoint_exact_2026_09_08.py\": \"6bc530a28ce00847becb60a221fe605d800475af9e80ce5515d49b55a6fff96a\"\n  },\n  \"scope\": \"Exact finite flux-sector and parity controls; no cubic flux optimum or phase.\"\n}\nper_element: exact Gaussian-rational Pauli and CAR matrices.\nper_site: even matter parity from global Gauss product.\nper_mode: frequency-square polynomials, zero modes and spectator multiplicity.\nper_block: flux-projected traces and total carrier dimension.\nlattice_wide: checked and not executed; the all-graph finite endpoint theorem is analytical, while only the declared triangle and square fixtures were executed; no cubic flux optimization or phase inference.\nTOTAL: PASS=80 FAIL=0\nResources: 0.055311s, 22.531MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_zero_penalty_endpoint_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

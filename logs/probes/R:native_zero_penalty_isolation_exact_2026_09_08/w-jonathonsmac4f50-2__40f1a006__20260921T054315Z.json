@@ -1,0 +1,31 @@
+{
+ "task": "R:native_zero_penalty_isolation_exact_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_zero_penalty_isolation_exact_2026_09_08.py",
+ "seed": 69395,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054315Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1d31260c6d1aed01da9c7b82991c2916fcd013772e4c68f3b48a0cfe879c1fb4",
+ "stdout_tail": "       199,\n        200,\n        201,\n        202,\n        203,\n        204,\n        205,\n        206,\n        207\n      ],\n      \"variance\": 4096,\n      \"nonzero_offdiagonal\": 64\n    },\n    {\n      \"label\": \"axis-twist-1\",\n      \"flipped_edges\": [\n        37,\n        40,\n        43,\n        46,\n        85,\n        88,\n        91,\n        94,\n        133,\n        136,\n        139,\n        142,\n        181,\n        184,\n        187,\n        190\n      ],\n      \"wrong_basic_cycles\": [\n        208,\n        209,\n        210,\n        211,\n        212,\n        213,\n        214,\n        215,\n        216,\n        217,\n        218,\n        219,\n        220,\n        221,\n        222,\n        223\n      ],\n      \"variance\": 4096,\n      \"nonzero_offdiagonal\": 64\n    },\n    {\n      \"label\": \"axis-twist-2\",\n      \"flipped_edges\": [\n        11,\n        23,\n        35,\n        47,\n        59,\n        71,\n        83,\n        95,\n        107,\n        119,\n        131,\n        143,\n        155,\n        167,\n        179,\n        191\n      ],\n      \"wrong_basic_cycles\": [\n        224,\n        225,\n        226,\n        227,\n        228,\n        229,\n        230,\n        231,\n        232,\n        233,\n        234,\n        235,\n        236,\n        237,\n        238,\n        239\n      ],\n      \"variance\": 4096,\n      \"nonzero_offdiagonal\": 64\n    }\n  ],\n  \"seconds\": 0.1442937920219265,\n  \"rss_mib\": 18.5625,\n  \"scope\": \"Exact integer square matrices and basic flux controls; no all-sector eigensolver\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

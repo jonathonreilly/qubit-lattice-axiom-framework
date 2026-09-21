@@ -1,0 +1,35 @@
+{
+ "task": "R:nn_record_gaussian_action_event_response_factorization_independent_check_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "nn",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/nn_record_gaussian_action_event_response_factorization_independent_check_2026_08_23.py",
+ "seed": 69405,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054325Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "575407d8d13b18dac73039d464c05d73ab4f84176e1d9343ba3b2e000f89052c",
+ "stdout_tail": "oth hostile state-dependent vectors\nPASS complex-source-and-real-hermitian-span: Py+ supplies the missing Y direction; transposing its imaginary source changes grade 2/3 to 1/3\nPASS independent-raw-minors: ten action minors vanish while the contextual shared/complement minor is exactly -27/50000\nPASS independent-source-mutations-bite: nonadditive E^2 coupling, wrong source sign, and outcome-dependent exposure each violate a required gate\nPASS independent-hidden-coupling-mutation: a positive auxiliary coupling changes one response ratio and produces raw minor -pi^6/576\nPASS independent-complex-action-mutation: a non-Hermitian action gives 1/2-i/8, so positivity cannot be inferred before a readout choice\nPASS independent-positive-source-patch: every reconstructed effect leaves Q-sE positive at s=1/4\nPASS declared-input-closure: the exact own-note and actual finite helper inputs match their declared SHA256 identities\nper_element: independently rebuilt effects, raw derivatives, distinct Record atoms, and event-presentation classes are checked\nper_site: the auxiliary M2 Gaussian kernel, finite conditional clock, quotient pushforward, and source patch are checked\nper_mode: all four complex Gaussian modes enter the exact determinant-square partition function\nper_block: five strata, named domain-boundary menus, permutations, covariance, and hostile minors are checked\nlattice_wide: not executed \u2014 no autonomous global process is inferred from the local marked law\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

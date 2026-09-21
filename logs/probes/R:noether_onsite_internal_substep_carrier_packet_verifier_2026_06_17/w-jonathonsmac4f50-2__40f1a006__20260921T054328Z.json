@@ -1,0 +1,42 @@
+{
+ "task": "R:noether_onsite_internal_substep_carrier_packet_verifier_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "noether",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/noether_onsite_internal_substep_carrier_packet_verifier_2026_06_17.py",
+ "seed": 69408,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054328Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=18 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aa05688089ed470e3ff7995cb09b57f1734561105731acc89b440fc622cc28d5",
+ "stdout_tail": "Noether onsite/internal substep-carrier packet verifier\nstatus authority: source-side verifier only; no audit verdicts are applied\n\nA. source-boundary checks\n[PASS] packet verifier is registered in the note\n[PASS] broad realization gate has no markdown dependency edge\n[PASS] old admitted-context section is absent\n[FAIL] finite carrier exhibit section is present\n[PASS] physical realization/readout bridge is not consumed\n[PASS] no audit verdict language is applied\n[PASS] abstract bilinear authority is cited\n[PASS] substep-1 Grassmann authority is cited\n[PASS] det positivity authority is cited\n[PASS] runner boundary uses finite carrier language\n[PASS] runner no longer requires physical charge-density wording\n\nB. finite Kawamoto-Smit carrier checks\n[PASS] massless KS exhibit is real antisymmetric -- err=0.000e+00\n[PASS] iM is Hermitian on the finite exhibit -- err=0.000e+00\n[PASS] support is nearest-neighbour only -- edges=384\n[PASS] onsite U(1) generator commutes with the finite carrier -- err=0.000e+00\n\nC. continuity sign checks\n[PASS] 1D continuity replay has Hermitian iM -- err=0.000e+00\n[PASS] d rho/dt is nonzero in the replay -- norm=5.000e-01\n[PASS] formula-(4*) sign satisfies d rho/dt + div j = 0 -- err=0.000e+00\n[PASS] flipped sign violates continuity -- err=1.000e+00\n\nSCORECARD: PASS=18 FAIL=1\nVERDICT: packet verifier failed; do not use this repair yet.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145916Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=18 FAIL=1' vs cache 'PASS=19 FAIL=0'"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Cache says PASS=19 FAIL=0, run gives PASS=18 FAIL=1, and the single failure is '[FAIL] finite carrier exhibit section is present' - a document-section presence check, not a computation. The 18 computational checks pass. Same class as the other documentation-state staleness in this batch.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260921T145916Z"
+ }
+}

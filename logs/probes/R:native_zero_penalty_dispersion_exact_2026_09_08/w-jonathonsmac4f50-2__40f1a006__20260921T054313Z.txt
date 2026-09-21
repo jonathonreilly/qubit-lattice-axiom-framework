@@ -1,0 +1,232 @@
+{
+  "predicates": 97,
+  "rows": [
+    {
+      "L": [
+        4,
+        4,
+        4
+      ],
+      "tau": [
+        -1,
+        -1,
+        -1
+      ],
+      "rank": 56,
+      "active_zero_modes": 8
+    },
+    {
+      "L": [
+        4,
+        4,
+        4
+      ],
+      "tau": [
+        -1,
+        -1,
+        1
+      ],
+      "rank": 64,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        4
+      ],
+      "tau": [
+        -1,
+        1,
+        -1
+      ],
+      "rank": 64,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        4
+      ],
+      "tau": [
+        -1,
+        1,
+        1
+      ],
+      "rank": 64,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        4
+      ],
+      "tau": [
+        1,
+        -1,
+        -1
+      ],
+      "rank": 64,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        4
+      ],
+      "tau": [
+        1,
+        -1,
+        1
+      ],
+      "rank": 64,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        4
+      ],
+      "tau": [
+        1,
+        1,
+        -1
+      ],
+      "rank": 64,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        4
+      ],
+      "tau": [
+        1,
+        1,
+        1
+      ],
+      "rank": 64,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        6
+      ],
+      "tau": [
+        -1,
+        -1,
+        -1
+      ],
+      "rank": 88,
+      "active_zero_modes": 8
+    },
+    {
+      "L": [
+        4,
+        4,
+        6
+      ],
+      "tau": [
+        -1,
+        -1,
+        1
+      ],
+      "rank": 96,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        6
+      ],
+      "tau": [
+        -1,
+        1,
+        -1
+      ],
+      "rank": 96,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        6
+      ],
+      "tau": [
+        -1,
+        1,
+        1
+      ],
+      "rank": 96,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        6
+      ],
+      "tau": [
+        1,
+        -1,
+        -1
+      ],
+      "rank": 96,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        6
+      ],
+      "tau": [
+        1,
+        -1,
+        1
+      ],
+      "rank": 96,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        6
+      ],
+      "tau": [
+        1,
+        1,
+        -1
+      ],
+      "rank": 96,
+      "active_zero_modes": 0
+    },
+    {
+      "L": [
+        4,
+        4,
+        6
+      ],
+      "tau": [
+        1,
+        1,
+        1
+      ],
+      "rank": 96,
+      "active_zero_modes": 0
+    }
+  ],
+  "seconds": 0.18406062500434928,
+  "rss_bytes": 23478272,
+  "source_sha256": "a270cd616a1f4646cd4c22522ac17eed9f1f52117de954fc20e728609da00809"
+}

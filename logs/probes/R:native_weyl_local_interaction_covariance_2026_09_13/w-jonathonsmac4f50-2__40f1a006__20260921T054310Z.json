@@ -1,0 +1,35 @@
+{
+ "task": "R:native_weyl_local_interaction_covariance_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_weyl_local_interaction_covariance_2026_09_13.py",
+ "seed": 69390,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054310Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=157 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fb04156bb84f8f7bc541172b3d99fb8302c91cc61f6c3a48f8f3648507a4b4dc",
+ "stdout_tail": " \"rotation1\": {\n      \"(1, 3, 5, 6)\": \"1\",\n      \"(0, 2, 5, 6)\": \"-1\",\n      \"(0, 3, 4, 6)\": \"-1\",\n      \"(0, 3, 5, 7)\": \"1\",\n      \"(1, 3, 4, 7)\": \"1\",\n      \"(0, 2, 4, 7)\": \"-1\",\n      \"(1, 2, 4, 6)\": \"-1\",\n      \"(1, 2, 5, 7)\": \"1\"\n    },\n    \"rotation2\": {},\n    \"boost0\": {},\n    \"boost1\": {},\n    \"boost2\": {\n      \"(0, 3, 4, 7)\": \"-2\",\n      \"(1, 2, 5, 6)\": \"2\"\n    }\n  },\n  \"invariants\": [\n    {\n      \"(0, 1, 4, 5)\": \"-1\"\n    },\n    {\n      \"(2, 3, 6, 7)\": \"-1\"\n    },\n    {\n      \"(0, 1, 6, 7)\": \"-1\"\n    },\n    {\n      \"(2, 3, 4, 5)\": \"-1\"\n    },\n    {\n      \"(0, 2, 4, 6)\": \"-2\",\n      \"(1, 3, 5, 7)\": \"-2\",\n      \"(0, 3, 5, 6)\": \"-2\",\n      \"(1, 2, 4, 7)\": \"-2\"\n    }\n  ],\n  \"source_sha256\": \"6068246246b9d78a602e10c2953386879e8db70610d671986c351d516cf0397e\",\n  \"elapsed_seconds\": 0.7368179579789285,\n  \"scope\": \"Exact component and finite-CAR challenges. No quantum interacting constraint or continuum existence theorem.\"\n}\nper_element: exact Grassmann signs and invariant coefficients checked; no axiom selection follows.\nper_site: actual CAR products, normal ordering and even parity checked; filtered fields are not exact species.\nper_mode: native node phases and leading density vertex checked; dressed four-point identities remain open.\nper_block: even two-particle amplitudes checked on three finite tori; these are not interacting ground states.\nlattice_wide: smooth few-particle vertex proof supplied; no finite-coupling quantum continuum is established.\nTOTAL: PASS=157 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_weyl_local_interaction_covariance_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

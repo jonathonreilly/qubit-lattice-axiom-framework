@@ -1,0 +1,35 @@
+{
+ "task": "R:nn_record_gaussian_action_event_response_factorization_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "nn",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/nn_record_gaussian_action_event_response_factorization_2026_08_23.py",
+ "seed": 69398,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054318Z",
+ "elapsed_s": 6.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f19d180a5ba350c15e2677ec454ecf8fbbd6d6d1e84b2d3a6b3fa68f16173a3b",
+ "stdout_tail": "urces while preserving every raw response\nPASS non-scalar-action-control: with the inverse-covariance rule supplied, Q=diag(5/3,5/2) yields both exact Block 39 vectors and shared grade 3/10\nPASS complex-source-and-real-hermitian-span: Py+ supplies the missing Y direction; transposing its imaginary source changes grade 2/3 to 1/3\nPASS raw-factorization-minor-discriminator: all ten raw action minors vanish on a positive-effect spanning set; the contextual E0/complement minor is -27/50000\nPASS first-mark-record-lock: the first marked event writes its existing M2 effect-label codeword and the permanent target cannot be overwritten\nPASS positive-source-patch: every representative source deformation remains positive at s=1/4, so the raw derivative lies inside an analytic patch\nPASS declared-input-closure: the exact own-note and actual finite helper inputs match their declared SHA256 identities\nper_element: every literal effect source, raw partition response, Record mark, and event-quotient representative is checked\nper_site: the root-derived M2 Gaussian action, conditional finite clock, event-presentation quotient, and first lock are checked\nper_mode: all four complex M2 Gaussian modes and the full exact 2x2 source derivative are checked\nper_block: all five strata, RN exposures, refinements, permutations, hostile pair, and five basis transports are checked\nlattice_wide: not executed \u2014 translation uses one copied local formula; no autonomous history is claimed\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

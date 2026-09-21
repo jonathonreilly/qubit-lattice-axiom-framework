@@ -1,0 +1,31 @@
+{
+ "task": "R:native_zero_penalty_optimal_flux_exact_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py",
+ "seed": 69396,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054316Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "70147a3f900251febf20e6ace3a7c127cd2e09d89e300cd3de541c81933fae7b",
+ "stdout_tail": " 2,\n        \"6\": 1\n      }\n    },\n    {\n      \"vertices\": 6,\n      \"frequencies\": [],\n      \"native\": {\n        \"0\": 32\n      },\n      \"auxiliary\": {\n        \"0\": 64\n      }\n    },\n    {\n      \"vertices\": 6,\n      \"frequencies\": [\n        1,\n        1,\n        3\n      ],\n      \"native\": {\n        \"-5\": 4,\n        \"1\": 4,\n        \"-3\": 8,\n        \"3\": 8,\n        \"-1\": 4,\n        \"5\": 4\n      },\n      \"auxiliary\": {\n        \"-10\": 1,\n        \"-4\": 6,\n        \"2\": 9,\n        \"-8\": 4,\n        \"-2\": 9,\n        \"4\": 6,\n        \"-6\": 6,\n        \"0\": 12,\n        \"6\": 6,\n        \"8\": 4,\n        \"10\": 1\n      }\n    }\n  ],\n  \"torus_controls\": [\n    {\n      \"extents\": [\n        4,\n        4,\n        4\n      ],\n      \"vertices\": 64,\n      \"basic_cycles\": 240,\n      \"reflections\": 6,\n      \"crossing_invariances\": 480,\n      \"wrong_trivial_background_cycles\": 192\n    },\n    {\n      \"extents\": [\n        6,\n        6,\n        6\n      ],\n      \"vertices\": 216,\n      \"basic_cycles\": 756,\n      \"reflections\": 9,\n      \"crossing_invariances\": 1620,\n      \"wrong_trivial_background_cycles\": 648\n    },\n    {\n      \"extents\": [\n        4,\n        6,\n        8\n      ],\n      \"vertices\": 192,\n      \"basic_cycles\": 680,\n      \"reflections\": 9,\n      \"crossing_invariances\": 1440,\n      \"wrong_trivial_background_cycles\": 576\n    }\n  ],\n  \"seconds\": 0.03364145799423568,\n  \"rss_mib\": 19.046875,\n  \"scope\": \"exact objective identity and theorem assumption fixtures; no numerical optimization or phase claim\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

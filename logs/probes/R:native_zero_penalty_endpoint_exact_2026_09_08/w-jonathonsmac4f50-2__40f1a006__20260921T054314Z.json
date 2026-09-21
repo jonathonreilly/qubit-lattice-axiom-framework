@@ -1,0 +1,31 @@
+{
+ "task": "R:native_zero_penalty_endpoint_exact_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/native_zero_penalty_endpoint_exact_2026_09_08.py",
+ "seed": 69394,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40f1a006",
+ "started_utc": "20260921T054314Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ec5796b5d229457206c5caa91913a26fa3ef4b05d65d3d6ff588b0ee18d61caf",
+ "stdout_tail": "{\n  \"checks\": 80,\n  \"rows\": [\n    {\n      \"vertices\": 3,\n      \"flux\": -1,\n      \"characteristic_polynomial\": [\n        1,\n        0,\n        -12,\n        0\n      ],\n      \"moments\": [\n        \"4\",\n        \"0\",\n        \"12\",\n        \"0\",\n        \"36\"\n      ]\n    },\n    {\n      \"vertices\": 3,\n      \"flux\": 1,\n      \"characteristic_polynomial\": [\n        1,\n        0,\n        -12,\n        0\n      ],\n      \"moments\": [\n        \"4\",\n        \"0\",\n        \"12\",\n        \"0\",\n        \"36\"\n      ]\n    },\n    {\n      \"vertices\": 4,\n      \"flux\": -1,\n      \"characteristic_polynomial\": [\n        1,\n        0,\n        -16,\n        0,\n        0\n      ],\n      \"moments\": [\n        \"8\",\n        \"0\",\n        \"32\",\n        \"0\",\n        \"128\",\n        \"0\",\n        \"512\",\n        \"0\",\n        \"2048\"\n      ]\n    },\n    {\n      \"vertices\": 4,\n      \"flux\": 1,\n      \"characteristic_polynomial\": [\n        1,\n        0,\n        -16,\n        0,\n        64\n      ],\n      \"moments\": [\n        \"8\",\n        \"0\",\n        \"32\",\n        \"0\",\n        \"256\",\n        \"0\",\n        \"2048\",\n        \"0\",\n        \"16384\"\n      ]\n    }\n  ],\n  \"seconds\": 0.0491320829896722,\n  \"rss_mib\": 19.796875,\n  \"scope\": \"Exact Gaussian-rational native/CAR traces and analytic frequency squares; no cubic flux optimum or phase.\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T145829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

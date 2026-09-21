@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-sixaxis-3plus1-against-2plus1",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 axes6 1.2 32 3000 1500 1",
+ "seed": 34108,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d09febef",
+ "started_utc": "20260921T234148Z",
+ "elapsed_s": 12.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=axes6 beta=1.2 L=32 T=3000 plateau_|m|=0.9344 lowk_ratio=nan seconds=12"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The six-axis menu with the covariant weight on the line (e^beta, e^-beta, 1): where memory appears in 3+1 against 2+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "1012dc0b3f9fefd481a6f7daa698b158cee21c8585d6523651b272954170478a",
+ "stdout_tail": "dim=3 (event lattice Z^4) menu=axes6 beta=1.2 L=32 T=3000 T0=1500 seed=1; predecessors n=4; sigma^2=0.164959\nmemory table: level, |m|, m.e0\n         1  0.9658  +0.9658\n         2  0.9524  +0.9524\n         3  0.9462  +0.9462\n         4  0.9395  +0.9395\n         5  0.9374  +0.9374\n         7  0.9344  +0.9344\n        10  0.9366  +0.9366\n        14  0.9349  +0.9349\n        20  0.9346  +0.9346\n        28  0.9328  +0.9328\n        39  0.9328  +0.9328\n        55  0.9329  +0.9329\n        76  0.9373  +0.9373\n       107  0.9355  +0.9355\n       149  0.9371  +0.9371\n       208  0.9341  +0.9341\n       290  0.9335  +0.9335\n       405  0.9348  +0.9348\n       566  0.9342  +0.9342\n       790  0.9357  +0.9357\n      1103  0.9333  +0.9333\n      1539  0.9354  +0.9354\n      2149  0.9337  +0.9337\n      3000  0.9333  +0.9333\nSUMMARY: dim=3 menu=axes6 beta=1.2 L=32 T=3000 plateau_|m|=0.9344 lowk_ratio=nan seconds=12\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T234200Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 56 — author checks (not a review PASS)
+Written lens pass by the supervisor: the choice of bond energy carried in the first line of every strong-field statement; what survives the choice separated out (the surface term); walls at a held rate in place of the closed lattice's multiplier. Refuting pass with a direct non-linear solve, finite differences, symbolic algebra, random arrangements and a second bond energy (5/0); the second bond energy stops a clock at the finite bare energy 18/gamma — folded as a boundary. Before opening: a wrong sentence about moving bodies corrected (the law is linear in phi for any fixed amplitude) and T5 added (a supplied principle under which the bond energy is not a choice); the first gates were stopped to fold both. Refuting pass 6/0. Census 12/12 in family.

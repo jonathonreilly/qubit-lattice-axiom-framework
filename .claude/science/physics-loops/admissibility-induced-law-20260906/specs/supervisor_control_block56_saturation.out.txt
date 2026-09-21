@@ -1,0 +1,19 @@
+(a) one body at the centre of a 41^3 box, gamma = 1.0
+    m =       0.1: x =     0.0125; phi_0 = 0.987691 against 1/(1 + x) = 0.987691; ledger m phi_0 = 0.09877 (bound 8.02399); energy in the field m phi_0^2 = 0.09755 (peak 3/(gamma g_0) = 2.00600 at x = 1); ledger from the wall flux 0.09877
+    m =         1: x =     0.1246; phi_0 = 0.889184 against 1/(1 + x) = 0.889184; ledger m phi_0 = 0.88918 (bound 8.02399); energy in the field m phi_0^2 = 0.79065 (peak 3/(gamma g_0) = 2.00600 at x = 1); ledger from the wall flux 0.88918
+    m =         8: x =     0.9970; phi_0 = 0.500749 against 1/(1 + x) = 0.500749; ledger m phi_0 = 4.00599 (bound 8.02399); energy in the field m phi_0^2 = 2.00599 (peak 3/(gamma g_0) = 2.00600 at x = 1); ledger from the wall flux 4.00599
+    m =        30: x =     3.7388; phi_0 = 0.211024 against 1/(1 + x) = 0.211024; ledger m phi_0 = 6.33073 (bound 8.02399); energy in the field m phi_0^2 = 1.33594 (peak 3/(gamma g_0) = 2.00600 at x = 1); ledger from the wall flux 6.33073
+    m =      1000: x =   124.6262; phi_0 = 0.007960 against 1/(1 + x) = 0.007960; ledger m phi_0 = 7.96012 (bound 8.02399); energy in the field m phi_0^2 = 0.06336 (peak 3/(gamma g_0) = 2.00600 at x = 1); ledger from the wall flux 7.96012
+    m =     1e+06: x = 124626.2442; phi_0 = 0.000008 against 1/(1 + x) = 0.000008; ledger m phi_0 = 8.02393 (bound 8.02399); energy in the field m phi_0^2 = 0.00006 (peak 3/(gamma g_0) = 2.00600 at x = 1); ledger from the wall flux 8.02393
+    the box's g_0 = 1.49551; on the infinite lattice 1.51639
+(b) stopped balls (phi = 0 on every site within R of the centre): ledger = (2/gamma) x wall flux, by box side, with a linear extrapolation in 1/side, against 8 pi R/gamma
+    R = 2:   46.501,   45.280,   44.693 in boxes of side 41, 61, 81; extrapolated   42.904 = 0.854 of 8 pi R/gamma; per site of the ball the extrapolated ledger is 1.300 (one site alone: 7.914)
+    R = 4:  108.718,  102.268,   99.324 in boxes of side 41, 61, 81; extrapolated   90.343 = 0.899 of 8 pi R/gamma; per site of the ball the extrapolated ledger is 0.352 (one site alone: 7.914)
+    R = 6:  192.317,  173.023,  164.760 in boxes of side 41, 61, 81; extrapolated  139.558 = 0.925 of 8 pi R/gamma; per site of the ball the extrapolated ledger is 0.151 (one site alone: 7.914)
+(c) outside the stopped ball of radius 6 in the 81^3 box, along an axis: 1 - phi = a/r - b fitted at r = 8 and 24, read at 12 and 18
+    a = 6.506, b = 0.1436; r = 12: 1 - phi = 0.4021, fit 0.3986; r = 18: 1 - phi = 0.2203, fit 0.2179; gamma x ledger/(8 pi) = 6.556
+(d) a pair of bodies with bare energy 20 each (x = 2.5 alone) on the axis of the 41^3 box: the defect of the ledger against its weak-field value (gamma/6) m^2 g and against (gamma/6) (m phi)^2 g with phi of one body alone
+    separation  2: ledger of the pair 10.29169; members alone 11.45325; defect 1.16157; (gamma/6) m^2 g = 15.76700; (gamma/6) (m phi_1)(m phi_2) g = 1.29267
+    separation  4: ledger of the pair 10.92711; members alone 11.45392; defect 0.52682; (gamma/6) m^2 g = 6.73474; (gamma/6) (m phi_1)(m phi_2) g = 0.55222
+    separation  8: ledger of the pair 11.24383; members alone 11.45679; defect 0.21296; (gamma/6) m^2 g = 2.64506; (gamma/6) (m phi_1)(m phi_2) g = 0.21699
+    separation 12: ledger of the pair 11.35210; members alone 11.46227; defect 0.11018; (gamma/6) m^2 g = 1.35479; (gamma/6) (m phi_1)(m phi_2) g = 0.11125

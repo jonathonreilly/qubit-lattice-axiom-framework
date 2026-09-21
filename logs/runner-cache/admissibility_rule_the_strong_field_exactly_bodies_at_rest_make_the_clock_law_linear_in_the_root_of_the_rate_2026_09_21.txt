@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_strong_field_exactly_bodies_at_rest_make_the_clock_law_linear_in_the_root_of_the_rate_2026_09_21.py
+runner_sha256: 1c80f5e73a8522a2af22965c5109ebc6a638f3d2b2212ca5fd52a2a6d1602b8f
+input_fingerprint_sha256: eb7d08b551f33047729f38f8342518af428c2e7f63f1608baacb86d7d8496a30
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 21.77
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_STRONG_FIELD_EXACTLY_BODIES_AT_REST_MAKE_THE_CLOCK_LAW_LINEAR_IN_THE_ROOT_OF_THE_RATE_THE_LEDGER_IS_A_SURFACE_TERM_BOUNDED_BY_A_CAPACITY_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: three bodies at rest (bare energies 2, 5, 3/2; gamma = 3/5) in a 7x7x7 box with walls at the ambient rate: the solution of the LINEAR problem ((1 - A) + (gamma/12) M) phi = 0 satisfies the clock law (12/gamma) phi_x (phi_x - average) = -m_x phi_x^2 at all 125 interior sites, with 0 < phi < 1 everywhere (lowest: about 0.741, at the heaviest body)
+PASS: B2 T1: raising one body's bare energy from 2 to 3 lowers phi at every one of the 125 interior sites: more energy anywhere slows every clock, and the (non-singular) linear problem has one solution
+PASS: B3 T1: linearity does not need rest: for an amplitude spread over six sites with a hopping generator, e_x = phi_x (K phi)_x with K independent of the rates (10 bond entries, of both signs), and the solution of the linear problem ((12/gamma)(1 - A) + K) phi = 0 satisfies the clock law with the amplitude's own energy density at all 125 interior sites; what rest adds is K = diag(m) >= 0, and with it uniqueness, the bounds and monotonicity
+PASS: C1 T2: energies in the field sum m phi^2 (about 5.468) plus the field energy (2/gamma) sum (phi_x - phi_y)^2 (about 1.323) equal sum m phi (about 6.791) exactly: less than the bare energies' sum 17/2 by a defect of about 1.709
+PASS: C2 T2: the sum over wall sites of dF/du_x equals the ledger exactly: the ledger is a surface term, so what the rates at the walls (and anything outside) respond to is the ledger of the arrangement, not the bare energies and not the energies in the field
+PASS: D1 T3: one body at the centre: phi_0 = 1/(1 + x), x = (gamma/12) g_0 m, with the box's g_0 = 136/99; its ledger m/(1 + x) rises with m and stays below 12/(gamma g_0) = 495/34 (within a part in 10^5 of it at m = 10^8): a site's energy seen from outside is bounded however much is put there
+PASS: D2 T3: the energy the body has in the field, m phi_0^2 = m/(1 + x)^2, is 55/17, 495/136, 55/17 at x = 1/2, 1, 2: largest at x = 1, where it is 3/(gamma g_0); beyond that, adding bare energy lowers it, the body's clock running at 1/(1 + x)^2 of the ambient rate
+PASS: D3 T3: seven bodies on a site and its six neighbours: the ledger rises with the bare energies (about 6.153 at 1 each, 49.240 at 100 each, and within a part in 10^6 of the limit at 10^8 each) and stays below (12/gamma) Cap = 1980/37, Cap = 1^T G^-1 1 = 99/37 the capacity of the set for the operator 1 - A: a region's energy seen from outside is bounded by its capacity
+PASS: E1 T4: two bodies (bare energies 4 and 7): phi at each equals the closed form from the 2x2 problem (1 + G D) phi = 1; the pair's ledger is below the sum of the members' ledgers alone by about 0.024, 0.185, 0.518 at separations 4, 2, 1: the defect is positive and grows as they approach, so the static ledger is one function whose slope pulls each towards the other, at any field strength
+PASS: E2 T5: nearest-neighbour energies bilinear in the root rates, covariant, with uniform rates solving the empty-space law, form a one-dimensional family (rank 3 of 4 conditions on (alpha, beta_1, beta_2, beta_3)), and alpha = -3 beta makes it -(beta/2) sum over bonds (phi_x - phi_y)^2 (checked on the 3x3x3 torus): the simplest bond energy; it satisfies the parallelogram identity of quadratic forms and the refuting pass's second bond energy does not: if the local clock times the field's own energy as it times an amplitude, the bond energy is not a choice
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the clock law at each of the 125 interior sites of a 7x7x7 box for three bodies; the sign of the change of phi at each site when one bare energy is raised
+per_site: executed — one body at the centre for three bare energies against 1/(1 + x); the energy in the field at x = 1/2, 1, 2
+per_mode: executed — the capacity of the seven-site cross from the exact 7x7 potential matrix, and the ledgers of seven bodies for three bare energies
+per_block: executed — the ledger identity and the surface term for three bodies; the closed form and the defect for a pair at separations 4, 2, 1; the clock law for an amplitude spread over six sites; the one-dimensional family of bilinear nearest-neighbour energies and the parallelogram identity on the 3x3x3 torus
+lattice_wide: T1 to T4 hold for any finite set of bodies at rest in any box with walls at the ambient rate, for the simplest bond energy of weight one; that the ledger is a surface term holds for every bond energy of weight one; for other bond energies the static law is not linear and the strong-field statements are not established; that the bond energy is bilinear in the root rates is a supplied principle (T5), not a consequence of blocks 53 to 55; bodies at rest with a rest energy are supplied (one walker has none); motion, delay and the number gamma are not addressed
+PASS: G1 the five N5 resolution lines are printed
+scope: the strong field of the simplest clock law — for bodies at rest the law is linear in phi = sqrt(w); the ledger is sum m phi and is a surface term; a body's ledger saturates and its clock stops only in the limit; a region's ledger is bounded by its capacity; a pair's ledger has a defect that grows as the bodies approach
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

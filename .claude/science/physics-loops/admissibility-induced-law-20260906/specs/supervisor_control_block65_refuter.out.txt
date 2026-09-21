@@ -1,0 +1,18 @@
+[W1] finite rotation of the coin at every site, size s: |U H U^dagger - H[s theta]| (largest entry), with and without the scalar hop:
+     s = 0.2: with the hop 7.354e-02 (/s^2 = 1.838);  without 2.155e-01 (/s = 1.078)
+     s = 0.1: with the hop 1.860e-02 (/s^2 = 1.860);  without 1.097e-01 (/s = 1.097)
+     s = 0.05: with the hop 4.663e-03 (/s^2 = 1.865);  without 5.528e-02 (/s = 1.106)
+
+[W2] eigenvalues of H[vartheta] against those of H (largest shift), random vartheta of size s:
+     s = 0.1: with the hop 2.034e-02 (/s^2 = 2.034);  without 6.645e-02 (/s = 0.664)
+     s = 0.05: with the hop 5.061e-03 (/s^2 = 2.024);  without 2.983e-02 (/s = 0.597)
+     (with the hop the rotation field is a change of coin basis at first order: the spectrum moves at second order; without it, at first)
+
+[W3] stationary states found numerically: a random vector in one degenerate eigenspace of H on a 6x4x4 torus; response to a rotation at a site:
+     energy 1.000000, degeneracy 16, |H psi - E psi| = 3.4e-16
+     largest |response| with the hop: 3.2e-17;  without it: largest 5.625e-03, 28 of 42 samples above 1e-6
+     (in this eigenspace some sites and axes have no torque by accident; the exact runner's state has it at every sampled site)
+
+[W4] a plane wave in a slowly varying twist vartheta_a = A sin(q x_a): first-order energy shift of the hop term, averaged over the torus, is zero;
+     its local value is (A q/2) cos(q x_a) cos k_a to leading order in q: a coin-independent potential (1/2) div vartheta times cos k_a.
+     largest difference between the hop's local energy and (1/2) d(vartheta)/dx cos k on a ring of 48: 1.48e-05 (the values are of size 5.19e-03)

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 65 — author checks (not a review PASS)
+Written lens pass by the supervisor. The continuum expectation (an on-site potential) was corrected by the lattice computation (a hop weighted by the twist); the naive varying-frame generalisation was broken in scratch and not claimed; the scope against block 64 T5 (bond rotation against coin rotation) was made explicit. Refuting pass with dense matrices and finite rotations (W1–W4, 4/0). Census 9/9 in family.

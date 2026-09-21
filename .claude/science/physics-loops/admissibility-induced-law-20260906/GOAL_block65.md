@@ -1,0 +1,9 @@
+# Block 65 — contract (2026-09-21; thirteenth block of the source-link direction; ninth of the 12-hour campaign)
+
+**Question.** Block 64 (#8595) T5: a field energy that does not see the coin's axes needs a content that does not see them either, and block 54's walk does. What exactly does a rotation of the coin axes that varies from site to site do to the walk, and what must be added for the walk not to see it?
+
+**Lens pass (supervisor, in writing; no subagents).** Foundations: a rotation field on the sites and any compensating term are supplied; the Lattice axiom has proper rotations only, so an inversion-odd term is allowed by covariance (block 54 flagged inversion as added). Rigour: compute the commutator exactly, do not guess from the continuum — the continuum suggests an on-site potential; keep the claim to first order around the identity frame unless the varying-frame generalisation is actually verified (the naive one failed in scratch); say what the block does NOT do: block 64 T5's torque belongs to a rotation of the bonds, a different lattice deformation. Comparator: the connection of a two-component amplitude and its reduction to a scalar — under the Premises only. Strategy: with block 64 this completes the account of what blindness costs.
+
+**Exact target.** T1 `−(i/2)[θ·σ, H] = ½Σ_j{(θ × e_j)·σ, S_j} + ½Σ_aC_a[d_aθ_a]`; T2 the blind walk `H[ϑ]` (first order; hermitian; nearest-neighbour; fails without the hop); T3 the response is `½ d(ψ†σ_cψ)/dt`, zero on stationary states; non-zero without the hop; T4 the hop is `−⅛ ε·T` at long wavelength, the scalar block 64's blindness removed from the field's energy.
+
+**Boundaries fixed in advance.** First order; identity frame; uniform rates; no walk blind beyond that; block 64 T5's bond torque not removed; nothing adopted.

@@ -1,0 +1,29 @@
+{
+  "executions": [
+    {
+      "attempt": 1,
+      "script": "independent_check_attempt_01.py",
+      "source_sha256": "c64dc2d6536a6c921ab37d3d541da98c4fadcf79e9a252822c803ff8f63d4239",
+      "log": "INDEPENDENT_RUN_attempt_01.log",
+      "returncode": 0,
+      "control_groups": 10,
+      "review_note": "The last control only counted a supplied zero list; preserved but superseded by a source-derived Jacobian. Other nine controls are unchanged.",
+      "executed_command": "OPENBLAS_NUM_THREADS=1 python3 independent_check.py > INDEPENDENT_RUN_attempt_01.log 2>&1",
+      "reproduction_command": "OPENBLAS_NUM_THREADS=1 python3 independent_check_attempt_01.py"
+    },
+    {
+      "attempt": 2,
+      "script": "independent_check.py",
+      "source_sha256": "b4b32bff7c35a720131679955a439c749a2a14fbf947770cc297b7f3d4e1e8e9",
+      "log": "INDEPENDENT_RUN_attempt_02.log",
+      "returncode": 0,
+      "control_groups": 10,
+      "review_note": "Final counterexample control differentiates the actual thirteen-coordinate tensor current and checks ranks at zero and nonzero gamma.",
+      "executed_command": "OPENBLAS_NUM_THREADS=1 python3 independent_check.py > INDEPENDENT_RUN_attempt_02.log 2>&1",
+      "reproduction_command": "OPENBLAS_NUM_THREADS=1 python3 independent_check.py"
+    }
+  ],
+  "assertion_failures": 0,
+  "identified_and_repaired_weak_controls": 1,
+  "discarded_attempts": []
+}

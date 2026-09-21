@@ -1,0 +1,7 @@
+{
+  "failure": "The first twelve identities passed. The final coefficient test compared factored and expanded SymPy expressions with structural equality, rather than simplifying their difference. Preserve this attempt and normalize the exact polynomial residual.",
+  "preserved_files": {
+    "MAXWELL_ENTROPY_ENERGY_RUN.log": "4f7b747d50e41f00706dc6b8d584100b04455a6482fbd02f52d1222bd9d36c04",
+    "maxwell_entropy_energy_check.py": "cf926bd8c889145ebd32dc051a264f529766b56cbcf7f61ad1ee87f05410be03"
+  }
+}

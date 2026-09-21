@@ -1,0 +1,21 @@
+PASS: all_48_polar_axial_spatial_rate_symmetries
+PASS: exact_group_composition_on_all_15_labels
+PASS: spatial_inversion_is_polar_on_A_and_axial_on_B
+PASS: time_reversal_is_an_involution
+PASS: time_reversal_and_endpoint_swap_reverse_the_same_drive
+PASS: time_reversal_commutes_with_full_spatial_group
+PASS: actual_escape_rates_match_under_Theta_minimal
+PASS: actual_escape_rates_match_under_Theta_linear
+PASS: complete_sector_stationarity
+PASS: complete_sector_generalized_reversal
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/maxwell_polar_axial_symmetry_check.py", line 98, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/maxwell_polar_axial_symmetry_check.py", line 80, in main
+    check('ordinary_detailed_balance_negative_control',Q!=Q.T)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/maxwell_polar_axial_symmetry_check.py", line 16, in check
+    assert condition,(name,detail)
+           ^^^^^^^^^
+AssertionError: ('ordinary_detailed_balance_negative_control', None)

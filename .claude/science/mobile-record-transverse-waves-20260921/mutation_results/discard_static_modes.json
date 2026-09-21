@@ -1,0 +1,26 @@
+{
+  "claim_id": "mobile_records_immutable_transverse_curl_limits_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/immutable_transverse_maxwell_check.py": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_polar_axial_symmetry_check.py": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_entropy_energy_check.py": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_formation_full_occupancy_check.py": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/gauss_preparation_check.py": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce",
+    "scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py": "1283709aafb037f699b9e79d20e26577a09814c1b1304e473dfd80821e96ab29"
+  },
+  "mutation": "discard_static_modes",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "immutable_transverse_maxwell_check.py",
+      "source_sha256": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+      "executed_source_sha256": "365555bb1d0e01d084382bace1ede51103751d29ffa025cc2fec2ad36010fceb",
+      "returncode": 1,
+      "stdout": "PASS: symmetric_pair_tensor_and_sharp_bounds\nPASS: endpoint_drive_antisymmetry\nPASS: pointwise_product_balance_all_four_cycles\nPASS: all_proper_cubic_local_rate_transformations\nPASS: negative_control_literal_inversion_is_not_rate_symmetry\nPASS: strictly_positive_minimal_and_linear_rate_floors\nPASS: exact_four_site_product_current_case0_axis0_minimal\nPASS: exact_four_site_product_current_case0_axis0_linear\nPASS: exact_four_site_product_current_case0_axis1_minimal\nPASS: exact_four_site_product_current_case0_axis1_linear\nPASS: exact_four_site_product_current_case0_axis2_minimal\nPASS: exact_four_site_product_current_case0_axis2_linear\nPASS: exact_four_site_product_current_case1_axis0_minimal\nPASS: exact_four_site_product_current_case1_axis0_linear\nPASS: exact_four_site_product_current_case1_axis1_minimal\nPASS: exact_four_site_product_current_case1_axis1_linear\nPASS: exact_four_site_product_current_case1_axis2_minimal\nPASS: exact_four_site_product_current_case1_axis2_linear\nPASS: exact_four_site_product_current_case2_axis0_minimal\nPASS: exact_four_site_product_current_case2_axis0_linear\nPASS: exact_four_site_product_current_case2_axis1_minimal\nPASS: exact_four_site_product_current_case2_axis1_linear\nPASS: exact_four_site_product_current_case2_axis2_minimal\nPASS: exact_four_site_product_current_case2_axis2_linear\nPASS: fourteen_fields_are_complete\nPASS: full_fourteen_field_entropy_symmetry_axis0\nPASS: full_fourteen_field_entropy_symmetry_axis1\nPASS: full_fourteen_field_entropy_symmetry_axis2\nPASS: full_directional_matrix_has_Maxwell_curl_signs\nPASS: full_directional_cubic_minimal_polynomial\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/immutable-transverse-controls-yc7i3o2b/immutable_transverse_maxwell_check.py\", line 136, in <module>\n    if __name__=='__main__': main()\n                             ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/immutable-transverse-controls-yc7i3o2b/immutable_transverse_maxwell_check.py\", line 107, in main\n    check('two_transverse_pairs_and_ten_zero_modes',s.factor(polynomial.as_expr()-polynomial.gen**8*(polynomial.gen**2-speed2)**2)==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/immutable-transverse-controls-yc7i3o2b/immutable_transverse_maxwell_check.py\", line 13, in check\n    if not ok: raise AssertionError((name,detail))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('two_transverse_pairs_and_ten_zero_modes', None)\n"
+    }
+  ]
+}

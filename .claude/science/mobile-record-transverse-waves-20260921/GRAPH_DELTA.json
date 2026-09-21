@@ -1,0 +1,18 @@
+{
+  "before_counts": {
+    "node_count": 6027,
+    "edge_count": 13607
+  },
+  "after_counts": {
+    "node_count": 6028,
+    "edge_count": 13609
+  },
+  "added": {
+    "mobile_records_immutable_transverse_curl_limits_bounded_theorem_note_2026-09-21": {
+      "deps_hash": "031ce03f42db",
+      "out_degree": 2
+    }
+  },
+  "removed": [],
+  "changed_existing": {}
+}

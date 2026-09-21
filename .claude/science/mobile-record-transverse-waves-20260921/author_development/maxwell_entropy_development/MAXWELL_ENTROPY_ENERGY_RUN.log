@@ -1,0 +1,23 @@
+PASS: full_simplex_entropy_metric_inverse
+PASS: pure_vector_species_reconstruction
+PASS: positive_quadratic_wave_energy
+PASS: quadratic_entropy_flux_is_Poynting_component_0
+PASS: quadratic_entropy_flux_is_Poynting_component_1
+PASS: quadratic_entropy_flux_is_Poynting_component_2
+PASS: exact_orbit_and_total_record_current_0
+PASS: exact_orbit_and_total_record_current_1
+PASS: exact_orbit_and_total_record_current_2
+PASS: energy_continuity_without_Gauss_assumption
+PASS: stress_identity_with_both_divergence_terms
+PASS: unconstrained_product_requires_Gauss_defect
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/maxwell_entropy_energy_check.py", line 82, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/maxwell_entropy_energy_check.py", line 73, in main
+    check('second_order_record_energy_coefficient_'+name,s.expand(flux).coeff(eps,2)==coefficient*Ps)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/maxwell_entropy_energy_check.py", line 14, in check
+    assert condition,(name,detail)
+           ^^^^^^^^^
+AssertionError: ('second_order_record_energy_coefficient_A', None)

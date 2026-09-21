@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py
+runner_sha256: 1283709aafb037f699b9e79d20e26577a09814c1b1304e473dfd80821e96ab29
+input_fingerprint_sha256: 83781149d1866b2c628a7ca31d31c395c4afb37492eae2f398ec75b063bd1b8d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 10.68
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: immutable_transverse_maxwell_check.py: 38 exact controls
+PASS: maxwell_polar_axial_symmetry_check.py: 13 exact controls
+PASS: maxwell_entropy_energy_check.py: 15 exact controls
+PASS: maxwell_formation_full_occupancy_check.py: 21 exact controls
+PASS: gauss_preparation_check.py: 3 exact controls
+TOTAL: PASS=91 FAIL=0
+
+----- stderr -----
+

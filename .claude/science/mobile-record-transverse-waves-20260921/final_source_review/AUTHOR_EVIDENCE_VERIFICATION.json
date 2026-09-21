@@ -1,0 +1,114 @@
+{
+  "method": "Read and authenticate existing author executions; no redundant baseline or mutation rerun",
+  "baseline_controls": 91,
+  "baseline_suites": 5,
+  "mutation_results": [
+    {
+      "mutation": "drop_context_term",
+      "declared_suite": "immutable_transverse_maxwell_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/drop_context_term.json",
+      "result_sha256": "433ac0e878d4c6e18fd71228a2d3b556ad75543f144dae3b8d3737261a117bde",
+      "executed_source_sha256": "9300f492bb3620e88885e0a62fbe9371adb3aa05ed1467b2f4e551877b3e3d2a",
+      "assertion_tail": "AssertionError: ('symmetric_pair_tensor_and_sharp_bounds', {'alphabet_size': 15, 'local_words': 50625, 'tensor_supremum': '|gamma|/2', 'drive_supremum': '2|gamma|'})"
+    },
+    {
+      "mutation": "omit_current_mean_subtraction",
+      "declared_suite": "immutable_transverse_maxwell_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/omit_current_mean_subtraction.json",
+      "result_sha256": "0af11ca4ece5b3da31abcbdf444a05f22fb43c3fafb4701dd7f5da614ac47514",
+      "executed_source_sha256": "ae265ac2656c200e42dc01ecb83526e296f437996ffa8b87ee2c8c376b496039",
+      "assertion_tail": "AssertionError: ('exact_four_site_product_current_case2_axis0_minimal', None)"
+    },
+    {
+      "mutation": "wrong_cube_normalization",
+      "declared_suite": "immutable_transverse_maxwell_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/wrong_cube_normalization.json",
+      "result_sha256": "89976c29349755c2a7c8f800068e4b436a1c7b9dde8aca08cc9a16703bf1430e",
+      "executed_source_sha256": "affb58135734bb13dcf5524aadb0987289da87bfa652fe988af31aba5291be9c",
+      "assertion_tail": "AssertionError: ('symmetric_pair_tensor_and_sharp_bounds', {'alphabet_size': 15, 'local_words': 50625, 'tensor_supremum': '|gamma|/2', 'drive_supremum': '2|gamma|'})"
+    },
+    {
+      "mutation": "reverse_curl_sign",
+      "declared_suite": "immutable_transverse_maxwell_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/reverse_curl_sign.json",
+      "result_sha256": "eefd4bdf3d57e8dcc70f3bc8b45450338dbdd037fda31e31074f9de67be8f1fd",
+      "executed_source_sha256": "fce44152daf64454d5cb223ac057bf4816d9a575e45b91a0adc789edf11c6425",
+      "assertion_tail": "AssertionError: ('full_directional_matrix_has_Maxwell_curl_signs', None)"
+    },
+    {
+      "mutation": "discard_static_modes",
+      "declared_suite": "immutable_transverse_maxwell_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/discard_static_modes.json",
+      "result_sha256": "f11d1fc27a1a686b6a8fb879839bb0cadf08cc7c4ae0c4eb3002b8a24d291a9c",
+      "executed_source_sha256": "365555bb1d0e01d084382bace1ede51103751d29ffa025cc2fec2ad36010fceb",
+      "assertion_tail": "AssertionError: ('two_transverse_pairs_and_ten_zero_modes', None)"
+    },
+    {
+      "mutation": "polar_instead_of_axial",
+      "declared_suite": "maxwell_polar_axial_symmetry_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/polar_instead_of_axial.json",
+      "result_sha256": "fe3b60ad3d556dd66f522da0936ae20322dc13185d09e9c57274adcb9bb70f71",
+      "executed_source_sha256": "c48331592e730ac08016d2f51702f5747bdc026eaae88638cba65cb469c0bb00",
+      "assertion_tail": "AssertionError"
+    },
+    {
+      "mutation": "omit_odd_triple_parity",
+      "declared_suite": "maxwell_polar_axial_symmetry_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/omit_odd_triple_parity.json",
+      "result_sha256": "173818fe2343fd5f02de487d5bb45e715ec6eab46396f10b129f5fcc8501caa0",
+      "executed_source_sha256": "071249137d93c0a05c5f71e55fd9f77bd12fa36afba687431c2efee399a146bd",
+      "assertion_tail": "AssertionError: ('all_fourteen_field_reversal_parities', None)"
+    },
+    {
+      "mutation": "wrong_energy_coefficient",
+      "declared_suite": "maxwell_entropy_energy_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/wrong_energy_coefficient.json",
+      "result_sha256": "949ed7127548dadd4c6086d8336c0a8365c422b15c7c6b0b53194f05841e3755",
+      "executed_source_sha256": "2e897065f163207b3f4803506266b0d3ad2afeb82ee3343dfa42251204290efe",
+      "assertion_tail": "AssertionError: ('positive_quadratic_wave_energy', {'expression': '(Yx**2 + Yy**2 + Yz**2)/(2*rho_B) + (3*Xx**2 + 3*Xy**2 + 3*Xz**2)/rho_A'})"
+    },
+    {
+      "mutation": "drop_stress_divergence_defect",
+      "declared_suite": "maxwell_entropy_energy_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/drop_stress_divergence_defect.json",
+      "result_sha256": "85bdb19cfd5bfd2e56506d089388acc5e79fd9759ad73ffcc7c264070ce31f3e",
+      "executed_source_sha256": "e7be475d58ecf210585b657122ef35022ee89ab260c702d2c4905539f97c036a",
+      "assertion_tail": "AssertionError: ('stress_identity_with_both_divergence_terms', None)"
+    },
+    {
+      "mutation": "omit_formation_noise",
+      "declared_suite": "maxwell_formation_full_occupancy_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/omit_formation_noise.json",
+      "result_sha256": "d1b07486c1dbca14dd0b56103ef25bcdfd32e96d3ef0b806021c8cb6788b4966",
+      "executed_source_sha256": "bb50d3888784e5c6e0266326fed719152b184df134d626d1b8039daa09ae4abc",
+      "assertion_tail": "AssertionError: ('fourteen_species_birth_Lyapunov_identity', None)"
+    },
+    {
+      "mutation": "wrong_full_occupancy_mode_count",
+      "declared_suite": "maxwell_formation_full_occupancy_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/wrong_full_occupancy_mode_count.json",
+      "result_sha256": "1e9edc1f48c5e9f9da3bfcc194324e41fa03bf104e3b39ac9132affc0fccbe63",
+      "executed_source_sha256": "7e69a3f62d42a3648d4dd556f477f06ed892df09225ea81b971faf8de2e44de6",
+      "assertion_tail": "AssertionError: ('full_occupancy_characteristic_polynomial', {'polynomial': 'lambda**9*(gamma**2*kx**2*r**2 - gamma**2*kx**2*r + gamma**2*ky**2*r**2 - gamma**2*ky**2*r + gamma**2*kz**2*r**2 - gamma**2*kz**2*r + 3*lambda**2)**2/9'})"
+    },
+    {
+      "mutation": "reverse_cross_covariance_sign",
+      "declared_suite": "maxwell_formation_full_occupancy_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/reverse_cross_covariance_sign.json",
+      "result_sha256": "a9078ebf50a17bbe75ba3217573167a9e689939ac2a1e38b6f5bc495af285467",
+      "executed_source_sha256": "1c3d65203661bed00130a181686fbfae295be1dbbe036c3005076c86157a28d6",
+      "assertion_tail": "AssertionError: ('transverse_propagator_derivative_and_cross_sign', None)"
+    },
+    {
+      "mutation": "restore_conditioned_longitudinal_variance",
+      "declared_suite": "gauss_preparation_check.py",
+      "result_path": ".claude/science/mobile-record-transverse-waves-20260921/mutation_results/restore_conditioned_longitudinal_variance.json",
+      "result_sha256": "7f7d74fcf7a011b93591400650986e93ab714318c27c0eb35847a7c4b4000abc",
+      "executed_source_sha256": "921f3eafdae1fd0ed53469e6357caf92736902c5517a1f4eea62bfaa0a679137",
+      "assertion_tail": "AssertionError: conditioning_removes_only_longitudinal_variance"
+    }
+  ],
+  "source_identities_match_current_frozen_files": true,
+  "scientific_proofs_checked_separately": true,
+  "all_mutation_base_identity_maps_match": true
+}

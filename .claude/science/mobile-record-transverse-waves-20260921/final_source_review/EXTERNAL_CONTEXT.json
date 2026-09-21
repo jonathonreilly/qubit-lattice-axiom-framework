@@ -1,0 +1,27 @@
+{
+  "scope": "Abstract-level attribution and methodological-context check only; no external mathematical theorem imported",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/0806.2678",
+      "version": "v2",
+      "title": "Three Dimensional Lattice-Boltzmann Model for Electrodynamics",
+      "authors": [
+        "M. Mendoza",
+        "J. D. Munoz"
+      ],
+      "abstract_scope": "Lattice-Boltzmann electromagnetic model using auxiliary vectors and antisymmetric conservation structures."
+    },
+    {
+      "url": "https://arxiv.org/abs/1108.2651",
+      "version": "v1",
+      "title": "Lattice Boltzmann Method for Electromagnetic Wave Propagation",
+      "authors": [
+        "Shravan M. Hanasoge",
+        "Sauro Succi",
+        "Steven A. Orszag"
+      ],
+      "abstract_scope": "Lattice-Boltzmann electromagnetic formulation using a pseudovector distribution."
+    }
+  ],
+  "full_papers_used_as_proof": false
+}

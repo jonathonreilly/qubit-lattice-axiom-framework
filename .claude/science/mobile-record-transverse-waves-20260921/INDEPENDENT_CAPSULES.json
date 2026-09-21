@@ -1,0 +1,25 @@
+{
+  "original_repository_root": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "original_campaign_root": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h",
+  "base_capsule_manifest": "../mobile-record-immutable-waves-20260921/INDEPENDENT_CAPSULES.json",
+  "capsules": [
+    {
+      "name": "independent_growing_fluctuations",
+      "zip_sha256": "2c72d7f5dcaff211a8d03021ba942ba2bb163221d752e823e399924dcb2abed6",
+      "seal_sha256": "c86eba9af78a19fbeb92782f521bb9ed43553f078adf638c4ca846e6b9ee6286",
+      "report_sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc"
+    },
+    {
+      "name": "independent_polynomial_flux",
+      "zip_sha256": "add4e1e5cc464188787308868e26bf042dc1d58739256702842586fc42ce90b1",
+      "seal_sha256": "47f87385cccde288d7cd950cc7bd9860cf0b2379f3527ee133af2f0e75d2f174",
+      "report_sha256": "94d8ffa8681f9fbc605bd6ff196c495d6725e3c92fdd9013cee1b840577776e8"
+    },
+    {
+      "name": "independent_transverse_exchange",
+      "zip_sha256": "1eff8ab5382d3747e8cd60780f5a99857401def54774ec22156a490fce6e6122",
+      "seal_sha256": "35138e3ac676833b4a4764225853fca20828956928bf734b92baa271ff7856c3",
+      "report_sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf"
+    }
+  ]
+}

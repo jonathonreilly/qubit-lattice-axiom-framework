@@ -1,0 +1,26 @@
+{
+  "claim_id": "mobile_records_immutable_transverse_curl_limits_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/immutable_transverse_maxwell_check.py": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_polar_axial_symmetry_check.py": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_entropy_energy_check.py": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_formation_full_occupancy_check.py": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/gauss_preparation_check.py": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce",
+    "scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py": "1283709aafb037f699b9e79d20e26577a09814c1b1304e473dfd80821e96ab29"
+  },
+  "mutation": "restore_conditioned_longitudinal_variance",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "gauss_preparation_check.py",
+      "source_sha256": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce",
+      "executed_source_sha256": "921f3eafdae1fd0ed53469e6357caf92736902c5517a1f4eea62bfaa0a679137",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/immutable-transverse-controls-tu7q6k5p/gauss_preparation_check.py\", line 13, in <module>\n    check('conditioning_removes_only_longitudinal_variance',conditioned==s.diag(PT,PT))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/immutable-transverse-controls-tu7q6k5p/gauss_preparation_check.py\", line 8, in check\n    assert bool(value),name\n           ~~~~^^^^^^^\nAssertionError: conditioning_removes_only_longitudinal_variance\n"
+    }
+  ]
+}

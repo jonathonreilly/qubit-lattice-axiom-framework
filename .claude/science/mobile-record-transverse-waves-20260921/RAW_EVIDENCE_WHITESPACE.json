@@ -1,0 +1,18 @@
+{
+  "status": "Explicit intentional-Markdown and byte-preserved-evidence exceptions; all other staged files pass",
+  "excluded_paths": [
+    ".claude/science/mobile-record-transverse-waves-20260921/GAMMA_SCOPE_CORRECTION.diff",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_development/initial_wrapper/RUN.log",
+    ".claude/science/mobile-record-transverse-waves-20260921/before_gamma_scope_correction/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+    ".claude/science/mobile-record-transverse-waves-20260921/before_gamma_scope_correction/mobile_records_immutable_transverse_curl_limits_2026_09_21.txt",
+    "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+  ],
+  "reasons": [
+    "Unified-diff blank context lines contain their required single leading space.",
+    "The original failed wrapper log retains an empty AssertionError message followed by a space.",
+    "Reviewed and current note use three intentional two-space Markdown hard breaks.",
+    "Archived cache retains the original final blank line after its empty stderr section."
+  ],
+  "raw_full_check_output": ".claude/science/mobile-record-transverse-waves-20260921/GAMMA_SCOPE_CORRECTION.diff:15: trailing whitespace.\n+ \n.claude/science/mobile-record-transverse-waves-20260921/GAMMA_SCOPE_CORRECTION.diff:22: trailing whitespace.\n+ \n.claude/science/mobile-record-transverse-waves-20260921/GAMMA_SCOPE_CORRECTION.diff:26: trailing whitespace.\n+ \n.claude/science/mobile-record-transverse-waves-20260921/GAMMA_SCOPE_CORRECTION.diff:36: trailing whitespace.\n+ \n.claude/science/mobile-record-transverse-waves-20260921/author_development/initial_wrapper/RUN.log:1: trailing whitespace.\n+FAIL: AssertionError \n.claude/science/mobile-record-transverse-waves-20260921/before_gamma_scope_correction/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md:13: trailing whitespace.\n+**Date:** 2026-09-21  \n.claude/science/mobile-record-transverse-waves-20260921/before_gamma_scope_correction/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md:14: trailing whitespace.\n+**Type:** bounded_theorem  \n.claude/science/mobile-record-transverse-waves-20260921/before_gamma_scope_correction/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md:15: trailing whitespace.\n+**Status:** proposed_retained  \n.claude/science/mobile-record-transverse-waves-20260921/before_gamma_scope_correction/mobile_records_immutable_transverse_curl_limits_2026_09_21.txt:19: new blank line at EOF.\ndocs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md:13: trailing whitespace.\n+**Date:** 2026-09-21  \ndocs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md:14: trailing whitespace.\n+**Type:** bounded_theorem  \ndocs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md:15: trailing whitespace.\n+**Status:** proposed_retained  \n",
+  "all_other_staged_files_passed": true
+}

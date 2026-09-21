@@ -1,0 +1,106 @@
+{
+  "acknowledged_utc": "2026-09-21T07:43:00.672930+00:00",
+  "kind": "Narrow affected-source correction acknowledgment; no new broad review",
+  "finding": "F1",
+  "status": "closed",
+  "reviewed_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/before_gamma_scope_correction/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+    "bytes": 26148,
+    "sha256": "d5d3951bb4c84d26c468c6e5567b6bb7dd6f3eb7322d6dced9e84cadc30b3ac3"
+  },
+  "corrected_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+    "bytes": 26438,
+    "sha256": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0"
+  },
+  "provided_diff": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/GAMMA_SCOPE_CORRECTION.diff",
+    "bytes": 4631,
+    "sha256": "adc156640e032b1a87ce8b624641f17464f4c1e7cc5d6ab42c7b8d033f269ce8"
+  },
+  "original_review_report": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/final_source_review/REPORT.md",
+    "bytes": 17287,
+    "sha256": "af88aa9be0dbd1dfca290713518d1b4dad44a746a92c7279c2d0b378822747e4"
+  },
+  "original_review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/final_source_review/SOURCE_REVIEW_SEAL.json",
+    "bytes": 18780,
+    "sha256": "0e6cb741fe0484411843b68198f142fb5566b0327cb774e0a0448262fed3cc74"
+  },
+  "complete_diff_matches_preserved_old_and_final_bytes": true,
+  "inverse_replacement_recovers_original_bytes": true,
+  "changed_blocks": [
+    {
+      "old_start_line": 4,
+      "old_end_line": 4,
+      "new_start_line": 4,
+      "new_end_line": 4,
+      "old_text": "claim_scope: \"For the supplied fifteen-state cubic-lattice process, whose occupied labels carry the displayed axis or cube features and are moved unchanged by positive-floor four-site-context exchanges: every homogeneous product is invariant, the exact currents have potential gamma X cross Y, and every orbit-isotropic interior product with gamma!=0 has four transverse propagating modes and ten zero-speed modes. The finite-alphabet entropy and stationary finite-mode proofs apply; the separately restricted fully occupied fourteen-label model has four propagating and nine zero-speed modes. Uniform microscopic births beta/N give an exact evolving product and the stated fourteen-field Gaussian finite-mode limit, including empty start and the signed integrated phase on equal-per-label trajectories. The declared polar/axial label action gives full cubic covariance and generalized time reversal. The quadratic relative entropy supplies the displayed positive wave energy, flux and conditional stress identity. A finite-mode Gauss preparation is available by an explicitly ordered conditioning limit; independent births subsequently add longitudinal noise. These are conditional classical results, not an axiom-selected alphabet or clock, physical electromagnetism, a microscopic gauge constraint, a nonlinear Maxwell closure, quantum theory, Lorentz invariance or gravity.\"\n",
+      "new_text": "claim_scope: \"For the supplied fifteen-state cubic-lattice process, whose occupied labels carry the displayed axis or cube features and are moved unchanged by positive-floor four-site-context exchanges: every homogeneous product is invariant, the exact currents have potential gamma X cross Y, and every orbit-isotropic interior product with gamma!=0 has, at each nonzero wave vector, four transverse propagating modes and ten zero-speed modes. The finite-alphabet entropy and stationary finite-mode proofs apply; the separately restricted fully occupied fourteen-label model has four propagating and nine zero-speed modes when gamma!=0 and K!=0. Uniform microscopic births beta/N give an exact evolving product and the stated fourteen-field Gaussian finite-mode limit, including empty start and the signed integrated phase on equal-per-label trajectories. The declared polar/axial label action gives full cubic covariance and generalized time reversal. The quadratic relative entropy supplies the displayed positive wave energy, flux and conditional stress identity. A finite-mode Gauss preparation is available by an explicitly ordered conditioning limit; independent births subsequently add longitudinal noise. These are conditional classical results, not an axiom-selected alphabet or clock, physical electromagnetism, a microscopic gauge constraint, a nonlinear Maxwell closure, quantum theory, Lorentz invariance or gravity.\"\n"
+    },
+    {
+      "old_start_line": 255,
+      "old_end_line": 256,
+      "new_start_line": 255,
+      "new_end_line": 257,
+      "old_text": "There are four propagating and nine static modes. This is a theorem about\na restricted model, not an interchange with a singular vacancy-density\n",
+      "new_text": "For gamma!=0 and K!=0 there are four propagating and nine static modes.\nAt gamma=0 or K=0 all thirteen current modes have zero speed. This is a theorem\nabout a restricted model, not an interchange with a singular vacancy-density\n"
+    },
+    {
+      "old_start_line": 542,
+      "old_end_line": 544,
+      "new_start_line": 543,
+      "new_end_line": 547,
+      "old_text": "are additions to that pre-source reconstruction and require final-source\nreview on their own arguments. They must not be described as part of its\nblind reconstruction. Formal retained status still requires independent audit.\n",
+      "new_text": "are additions to that pre-source reconstruction. The separate complete-source\nreview checked these arguments and found one omitted nonzero-coupling/wave-vector\nqualifier in the full-occupancy mode count, corrected above. That review is\nattached under `final_source_review/`; it is distinct from the blind reconstruction.\nFormal retained status still requires independent audit.\n"
+    }
+  ],
+  "unchanged_scientific_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py",
+      "bytes": 6788,
+      "sha256": "1283709aafb037f699b9e79d20e26577a09814c1b1304e473dfd80821e96ab29"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/gauss_preparation_check.py",
+      "bytes": 1455,
+      "sha256": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/immutable_transverse_maxwell_check.py",
+      "bytes": 8157,
+      "sha256": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_entropy_energy_check.py",
+      "bytes": 4767,
+      "sha256": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_formation_full_occupancy_check.py",
+      "bytes": 6596,
+      "sha256": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_polar_axial_symmetry_check.py",
+      "bytes": 6003,
+      "sha256": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767"
+    }
+  ],
+  "original_sealed_review_artifacts_unchanged": 13,
+  "assessment": {
+    "full_occupancy_count_correctly_requires_nonzero_gamma_and_K": true,
+    "zero_gamma_or_K_degeneration_explicit": true,
+    "interior_frontmatter_nonzero_K_qualification_correct": true,
+    "completed_source_review_distinguished_from_blind_reconstruction": true,
+    "no_new_formula_or_proof_change": true,
+    "no_remaining_mathematical_finding_from_original_review": true
+  },
+  "explicit_exclusions": [
+    "Refreshing author outputs and canonical cache were not read, verified or sealed in this acknowledgment.",
+    "No unaffected mathematical checks were rerun.",
+    "No audit, retention or landing verdict."
+  ],
+  "write_scope": "Only CORRECTION_ACK.json added to final_source_review; original review artifacts unchanged."
+}

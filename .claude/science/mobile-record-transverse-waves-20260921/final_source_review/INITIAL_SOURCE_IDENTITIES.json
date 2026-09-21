@@ -1,0 +1,77 @@
+{
+  "observed_utc": "2026-09-21T07:27:19.189201+00:00",
+  "root": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921",
+  "base_commit_supplied_not_git_checked": "6aaa725a086377dfbca541fec3f453024d67b774",
+  "sources": [
+    {
+      "path": "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "bytes": 26148,
+      "sha256": "d5d3951bb4c84d26c468c6e5567b6bb7dd6f3eb7322d6dced9e84cadc30b3ac3"
+    },
+    {
+      "path": "scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py",
+      "bytes": 6788,
+      "sha256": "1283709aafb037f699b9e79d20e26577a09814c1b1304e473dfd80821e96ab29"
+    },
+    {
+      "path": "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "bytes": 23487,
+      "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/author_checks/gauss_preparation_check.py",
+      "bytes": 1455,
+      "sha256": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/author_checks/immutable_transverse_maxwell_check.py",
+      "bytes": 8157,
+      "sha256": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_entropy_energy_check.py",
+      "bytes": 4767,
+      "sha256": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_formation_full_occupancy_check.py",
+      "bytes": 6596,
+      "sha256": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_polar_axial_symmetry_check.py",
+      "bytes": 6003,
+      "sha256": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/verify_capsules.py",
+      "bytes": 2486,
+      "sha256": "bd2e0044820cb5c8ef26b1b718f5e7df012d4f0d3e22dec06db3cffcd7a8bb66"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/INDEPENDENT_CAPSULES.json",
+      "bytes": 1362,
+      "sha256": "9a5a63afaeb405d2ee4bd0cdd677d6ae0f68345876c449a06b75e74c84a3fe61"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/AUTHOR_RUNS.json",
+      "bytes": 8926,
+      "sha256": "1e4676eb96f0ffefa99fd1fdbf4027c7fa2137b557e6dbb76087c8ca9aef444e"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/AUTHOR_VERIFICATION.json",
+      "bytes": 1723,
+      "sha256": "eebbd42847fe033cbc869a246c1cb0d7795e0056ded3899a04cb4743d90ac9a3"
+    },
+    {
+      "path": ".claude/science/mobile-record-transverse-waves-20260921/PRIMARY_RESULTS.json",
+      "bytes": 32328,
+      "sha256": "dc72942e1a963ee78aa45d671c9ea179722b008c39880cc4e4474b6ddac4dd34"
+    }
+  ]
+}

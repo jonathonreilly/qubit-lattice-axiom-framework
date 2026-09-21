@@ -1,0 +1,359 @@
+{
+  "sealed_utc": "2026-09-21T07:39:48.993319+00:00",
+  "kind": "Complete-source scientific review, separate from blind reconstruction",
+  "root": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921",
+  "supplied_base_commit_not_git_checked": "6aaa725a086377dfbca541fec3f453024d67b774",
+  "primary_note_sha256": "d5d3951bb4c84d26c468c6e5567b6bb7dd6f3eb7322d6dced9e84cadc30b3ac3",
+  "canonical_runner_sha256": "1283709aafb037f699b9e79d20e26577a09814c1b1304e473dfd80821e96ab29",
+  "sources_unchanged_during_review": true,
+  "findings": [
+    {
+      "id": "F1",
+      "status": "open_on_reviewed_source",
+      "paths_and_lines": [
+        "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md:4",
+        "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md:255"
+      ],
+      "issue": "Full-occupancy four-propagating/nine-static count requires gamma!=0 and K!=0; otherwise all thirteen current modes have zero speed.",
+      "narrow_fix": "Qualify both count statements; keep correct spectrum formula."
+    }
+  ],
+  "other_unresolved_mathematical_findings": [],
+  "source_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "bytes": 26148,
+      "sha256": "d5d3951bb4c84d26c468c6e5567b6bb7dd6f3eb7322d6dced9e84cadc30b3ac3",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py",
+      "bytes": 6788,
+      "sha256": "1283709aafb037f699b9e79d20e26577a09814c1b1304e473dfd80821e96ab29",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "bytes": 23487,
+      "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/gauss_preparation_check.py",
+      "bytes": 1455,
+      "sha256": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/immutable_transverse_maxwell_check.py",
+      "bytes": 8157,
+      "sha256": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_entropy_energy_check.py",
+      "bytes": 4767,
+      "sha256": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_formation_full_occupancy_check.py",
+      "bytes": 6596,
+      "sha256": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_polar_axial_symmetry_check.py",
+      "bytes": 6003,
+      "sha256": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/verify_capsules.py",
+      "bytes": 2486,
+      "sha256": "bd2e0044820cb5c8ef26b1b718f5e7df012d4f0d3e22dec06db3cffcd7a8bb66",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/INDEPENDENT_CAPSULES.json",
+      "bytes": 1362,
+      "sha256": "9a5a63afaeb405d2ee4bd0cdd677d6ae0f68345876c449a06b75e74c84a3fe61",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/AUTHOR_RUNS.json",
+      "bytes": 8926,
+      "sha256": "1e4676eb96f0ffefa99fd1fdbf4027c7fa2137b557e6dbb76087c8ca9aef444e",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/AUTHOR_VERIFICATION.json",
+      "bytes": 1723,
+      "sha256": "eebbd42847fe033cbc869a246c1cb0d7795e0056ded3899a04cb4743d90ac9a3",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/PRIMARY_RESULTS.json",
+      "bytes": 32328,
+      "sha256": "dc72942e1a963ee78aa45d671c9ea179722b008c39880cc4e4474b6ddac4dd34",
+      "role": "Frozen publication source or author evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/drop_context_term.json",
+      "bytes": 3411,
+      "sha256": "433ac0e878d4c6e18fd71228a2d3b556ad75543f144dae3b8d3737261a117bde",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/omit_current_mean_subtraction.json",
+      "bytes": 4039,
+      "sha256": "0af11ca4ece5b3da31abcbdf444a05f22fb43c3fafb4701dd7f5da614ac47514",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/wrong_cube_normalization.json",
+      "bytes": 3418,
+      "sha256": "89976c29349755c2a7c8f800068e4b436a1c7b9dde8aca08cc9a16703bf1430e",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/reverse_curl_sign.json",
+      "bytes": 4528,
+      "sha256": "eefd4bdf3d57e8dcc70f3bc8b45450338dbdd037fda31e31074f9de67be8f1fd",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/discard_static_modes.json",
+      "bytes": 4681,
+      "sha256": "f11d1fc27a1a686b6a8fb879839bb0cadf08cc7c4ae0c4eb3002b8a24d291a9c",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/polar_instead_of_axial.json",
+      "bytes": 2587,
+      "sha256": "fe3b60ad3d556dd66f522da0936ae20322dc13185d09e9c57274adcb9bb70f71",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/omit_odd_triple_parity.json",
+      "bytes": 3467,
+      "sha256": "173818fe2343fd5f02de487d5bb45e715ec6eab46396f10b129f5fcc8501caa0",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/wrong_energy_coefficient.json",
+      "bytes": 3070,
+      "sha256": "949ed7127548dadd4c6086d8336c0a8365c422b15c7c6b0b53194f05841e3755",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/drop_stress_divergence_defect.json",
+      "bytes": 3366,
+      "sha256": "85bdb19cfd5bfd2e56506d089388acc5e79fd9759ad73ffcc7c264070ce31f3e",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/omit_formation_noise.json",
+      "bytes": 2990,
+      "sha256": "d1b07486c1dbca14dd0b56103ef25bcdfd32e96d3ef0b806021c8cb6788b4966",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/wrong_full_occupancy_mode_count.json",
+      "bytes": 3160,
+      "sha256": "1e9edc1f48c5e9f9da3bfcc194324e41fa03bf104e3b39ac9132affc0fccbe63",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/reverse_cross_covariance_sign.json",
+      "bytes": 3456,
+      "sha256": "a9078ebf50a17bbe75ba3217573167a9e689939ac2a1e38b6f5bc495af285467",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/mutation_results/restore_conditioned_longitudinal_variance.json",
+      "bytes": 2647,
+      "sha256": "7f7d74fcf7a011b93591400650986e93ab714318c27c0eb35847a7c4b4000abc",
+      "role": "Authenticated existing author result"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-immutable-waves-20260921/INDEPENDENT_CAPSULES.json",
+      "bytes": 1739,
+      "sha256": "ea804ea392e3d7a25d3dc07b6d0e8f9eaead351b231a7440175e4698a420d458",
+      "role": "Inherited capsule manifest"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange.zip",
+      "bytes": 18818,
+      "sha256": "a8ab8a141af1269e663f6ab16ff34ab08a31ad590782929120f56e1e0cfdcbe1",
+      "role": "Portable pre-source independent capsule"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-immutable-waves-20260921/independent_context_euler.zip",
+      "bytes": 22520,
+      "sha256": "9ee18b35b2b4bc58efce8c1dc621c055af7feb95d159e5538be156d2324bd423",
+      "role": "Portable pre-source independent capsule"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context.zip",
+      "bytes": 26160,
+      "sha256": "b843367b33c5e975d03c231b15ece4b6e6170065843604dd5d4e6f7b14b35f13",
+      "role": "Portable pre-source independent capsule"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations.zip",
+      "bytes": 28473,
+      "sha256": "d31ecdd0dcf1c9fd457d33cb4c88ba6835d955a06fa9563fd569e38274816c44",
+      "role": "Portable pre-source independent capsule"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/independent_growing_fluctuations.zip",
+      "bytes": 27073,
+      "sha256": "2c72d7f5dcaff211a8d03021ba942ba2bb163221d752e823e399924dcb2abed6",
+      "role": "Portable pre-source independent capsule"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/independent_polynomial_flux.zip",
+      "bytes": 29092,
+      "sha256": "add4e1e5cc464188787308868e26bf042dc1d58739256702842586fc42ce90b1",
+      "role": "Portable pre-source independent capsule"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/.claude/science/mobile-record-transverse-waves-20260921/independent_transverse_exchange.zip",
+      "bytes": 42449,
+      "sha256": "1eff8ab5382d3747e8cd60780f5a99857401def54774ec22156a490fce6e6122",
+      "role": "Portable pre-source independent capsule"
+    }
+  ],
+  "procedure_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Procedure snapshot; no scientific premise"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Procedure snapshot; no scientific premise"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "Procedure snapshot; no scientific premise"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Procedure snapshot; no scientific premise"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/review-loop/SKILL.md",
+      "bytes": 19430,
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "role": "Procedure snapshot; no scientific premise"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "role": "Procedure snapshot; no scientific premise"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "ATTEMPTS.json",
+      "bytes": 1402,
+      "sha256": "7bb1ef27659aaf1b80396cd7697886926e41b1cc19ec739559497eda0ed52f28"
+    },
+    {
+      "path": "AUTHOR_EVIDENCE_VERIFICATION.json",
+      "bytes": 7714,
+      "sha256": "93356e5bd45ff3e9e505045b9836a8a84a4a5d9c776862f06b171b69eb92f6a6"
+    },
+    {
+      "path": "CAPSULE_VERIFICATION.log",
+      "bytes": 201,
+      "sha256": "0f38eeed0da5cb9492a6e344c8fa5b557505d624a871a39db92b3502d01778a1"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1453,
+      "sha256": "3019d56fa1250f5bb03ba198d25e7f60958faf92db7fcc7f7bfaeb56c01c570f"
+    },
+    {
+      "path": "EXTERNAL_CONTEXT.json",
+      "bytes": 931,
+      "sha256": "4816a35219fcfadecf505daea891c447f76cc6ea1ae05ca6ebe4edeb281fbd7c"
+    },
+    {
+      "path": "INDEPENDENT_RESULTS.json",
+      "bytes": 2695,
+      "sha256": "c5d3345e1b9fcb0af279d513798a28a4ebaa28267bf4bdd73cf27c71b7493464"
+    },
+    {
+      "path": "INDEPENDENT_RESULTS_attempt_01.json",
+      "bytes": 2604,
+      "sha256": "d7d9d8933496be9c248a7a5e21c25c8c6c4a8eaf95409450413b5c1baf5e8e91"
+    },
+    {
+      "path": "INDEPENDENT_RUN_attempt_01.log",
+      "bytes": 2604,
+      "sha256": "d7d9d8933496be9c248a7a5e21c25c8c6c4a8eaf95409450413b5c1baf5e8e91"
+    },
+    {
+      "path": "INDEPENDENT_RUN_attempt_02.log",
+      "bytes": 2695,
+      "sha256": "c5d3345e1b9fcb0af279d513798a28a4ebaa28267bf4bdd73cf27c71b7493464"
+    },
+    {
+      "path": "INITIAL_SOURCE_IDENTITIES.json",
+      "bytes": 3345,
+      "sha256": "944f00c38d98dd77b4c3d4912511995e40c5b41c601bbd2b724857f21bc7b85e"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 17287,
+      "sha256": "af88aa9be0dbd1dfca290713518d1b4dad44a746a92c7279c2d0b378822747e4"
+    },
+    {
+      "path": "independent_check.py",
+      "bytes": 9327,
+      "sha256": "b4b32bff7c35a720131679955a439c749a2a14fbf947770cc297b7f3d4e1e8e9"
+    },
+    {
+      "path": "independent_check_attempt_01.py",
+      "bytes": 8526,
+      "sha256": "c64dc2d6536a6c921ab37d3d541da98c4fadcf79e9a252822c803ff8f63d4239"
+    }
+  ],
+  "artifact_count": 13,
+  "verification": {
+    "complete_note_runner_and_five_author_sources_read": true,
+    "prior_blind_evidence_reused_by_identity": true,
+    "capsules": {
+      "capsules": 7,
+      "sealed_artifacts": 77,
+      "source_links": 45,
+      "instruction_snapshots": 2,
+      "result": "All byte identities verified. Scientific correctness and audit status are not inferred from hashes."
+    },
+    "author_controls_authenticated_not_rerun": 91,
+    "recorded_author_mutations_authenticated": 13,
+    "new_independent_groups": 10,
+    "independent_executions": 2,
+    "identified_and_repaired_weak_control": 1,
+    "discarded_attempts": []
+  },
+  "no_audit_retention_landing_or_physical_identification_verdict": true,
+  "no_primary_source_git_pr_or_prompt_edits": true
+}

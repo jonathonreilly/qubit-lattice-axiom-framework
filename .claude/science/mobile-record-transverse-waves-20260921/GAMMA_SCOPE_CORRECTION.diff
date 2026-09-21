@@ -1,0 +1,38 @@
+--- reviewed_note
++++ corrected_note
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: mobile_records_immutable_transverse_curl_limits_bounded_theorem_note_2026-09-21
+ claim_type: bounded_theorem
+-claim_scope: "For the supplied fifteen-state cubic-lattice process, whose occupied labels carry the displayed axis or cube features and are moved unchanged by positive-floor four-site-context exchanges: every homogeneous product is invariant, the exact currents have potential gamma X cross Y, and every orbit-isotropic interior product with gamma!=0 has four transverse propagating modes and ten zero-speed modes. The finite-alphabet entropy and stationary finite-mode proofs apply; the separately restricted fully occupied fourteen-label model has four propagating and nine zero-speed modes. Uniform microscopic births beta/N give an exact evolving product and the stated fourteen-field Gaussian finite-mode limit, including empty start and the signed integrated phase on equal-per-label trajectories. The declared polar/axial label action gives full cubic covariance and generalized time reversal. The quadratic relative entropy supplies the displayed positive wave energy, flux and conditional stress identity. A finite-mode Gauss preparation is available by an explicitly ordered conditioning limit; independent births subsequently add longitudinal noise. These are conditional classical results, not an axiom-selected alphabet or clock, physical electromagnetism, a microscopic gauge constraint, a nonlinear Maxwell closure, quantum theory, Lorentz invariance or gravity."
++claim_scope: "For the supplied fifteen-state cubic-lattice process, whose occupied labels carry the displayed axis or cube features and are moved unchanged by positive-floor four-site-context exchanges: every homogeneous product is invariant, the exact currents have potential gamma X cross Y, and every orbit-isotropic interior product with gamma!=0 has, at each nonzero wave vector, four transverse propagating modes and ten zero-speed modes. The finite-alphabet entropy and stationary finite-mode proofs apply; the separately restricted fully occupied fourteen-label model has four propagating and nine zero-speed modes when gamma!=0 and K!=0. Uniform microscopic births beta/N give an exact evolving product and the stated fourteen-field Gaussian finite-mode limit, including empty start and the signed integrated phase on equal-per-label trajectories. The declared polar/axial label action gives full cubic covariance and generalized time reversal. The quadratic relative entropy supplies the displayed positive wave energy, flux and conditional stress identity. A finite-mode Gauss preparation is available by an explicitly ordered conditioning limit; independent births subsequently add longitudinal noise. These are conditional classical results, not an axiom-selected alphabet or clock, physical electromagnetism, a microscopic gauge constraint, a nonlinear Maxwell closure, quantum theory, Lorentz invariance or gravity."
+ upstream_dependencies:
+   - minimal_axioms
+   - mobile_records_immutable_context_exchange_acoustic_limits_bounded_theorem_note_2026-09-21
+@@ -252,8 +252,9 @@
+ lambda^9 [lambda^2-gamma^2 rho_A(1-rho_A)|K|^2/3]^2.
+ ```
+ 
+-There are four propagating and nine static modes. This is a theorem about
+-a restricted model, not an interchange with a singular vacancy-density
++For gamma!=0 and K!=0 there are four propagating and nine static modes.
++At gamma=0 or K=0 all thirteen current modes have zero speed. This is a theorem
++about a restricted model, not an interchange with a singular vacancy-density
+ limit. At equal occupied probabilities, c=2|gamma|/7.
+ 
+ ## 4. Declared polar/axial symmetry and generalized time reversal
+@@ -539,9 +540,11 @@
+ author's failed development controls are also preserved.
+ 
+ Parity extension, quadratic energy and the finite-mode conditioning argument
+-are additions to that pre-source reconstruction and require final-source
+-review on their own arguments. They must not be described as part of its
+-blind reconstruction. Formal retained status still requires independent audit.
++are additions to that pre-source reconstruction. The separate complete-source
++review checked these arguments and found one omitted nonzero-coupling/wave-vector
++qualifier in the full-occupancy mode count, corrected above. That review is
++attached under `final_source_review/`; it is distinct from the blind reconstruction.
++Formal retained status still requires independent audit.
+ 
+ Lattice-Boltzmann Maxwell solvers already use enlarged population sets and
+ antisymmetric field structures; examples include Mendoza and Munoz,

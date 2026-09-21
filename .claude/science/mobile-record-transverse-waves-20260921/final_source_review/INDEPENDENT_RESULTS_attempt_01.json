@@ -1,0 +1,102 @@
+{
+  "scope": "Post-source independent selective review controls, not the prior blind reconstruction",
+  "checks": {
+    "polar_axial_tensor_and_oriented_rate_covariance": {
+      "actions": 48,
+      "improper_actions": 24,
+      "tensor_pairs_per_action": 225,
+      "oriented_word_tests": 576
+    },
+    "five_cycle_complete_sector_generalized_reversal": [
+      {
+        "variant": "positive_part",
+        "states": 240,
+        "ordinary_asymmetry_entries": 800,
+        "rate_integer_unit": "1/140"
+      },
+      {
+        "variant": "linear",
+        "states": 240,
+        "ordinary_asymmetry_entries": 800,
+        "rate_integer_unit": "1/140"
+      }
+    ],
+    "direct_log_entropy_second_derivative": {
+      "energy": "19594/4725"
+    },
+    "relative_entropy_flux_from_pair_tensor": {
+      "quadratic_flux": [
+        "101/350",
+        "31/140",
+        "-1/75"
+      ]
+    },
+    "second_order_record_flux_direct_species_sum": {
+      "A": {
+        "factor": "3/7",
+        "coefficient": [
+          "303/2450",
+          "93/980",
+          "-1/175"
+        ]
+      },
+      "B": {
+        "factor": "1/4",
+        "coefficient": [
+          "101/1400",
+          "31/560",
+          "-1/300"
+        ]
+      },
+      "total": {
+        "factor": "19/28",
+        "coefficient": [
+          "1919/9800",
+          "589/3920",
+          "-19/2100"
+        ]
+      }
+    },
+    "energy_and_stress_on_exact_non_Gauss_solution": {
+      "signed_speed": "-3/7",
+      "divergences": [
+        "2",
+        "3"
+      ],
+      "stress_defect_at_origin": [
+        "-8",
+        "-1",
+        "-9"
+      ]
+    },
+    "full_field_Gauss_conditioning_keeps_all_other_modes": [
+      {
+        "active_alphabet": "interior",
+        "full_covariance_rank": 14,
+        "conditioned_rank": 12,
+        "static_block_unchanged": true
+      },
+      {
+        "active_alphabet": "full_occupancy",
+        "full_covariance_rank": 13,
+        "conditioned_rank": 11,
+        "static_block_unchanged": true
+      }
+    ],
+    "independent_birth_noise_in_both_vector_sectors": true,
+    "post_preparation_longitudinal_noise_per_beta_p0": true,
+    "zero_gamma_full_occupancy_scope_counterexample": {
+      "gamma": 0,
+      "propagating_modes": 0,
+      "static_modes": 13,
+      "reason": "The supplied tensor and all homogeneous product currents vanish identically at gamma=0."
+    }
+  },
+  "completed_control_groups": 10,
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": "c64dc2d6536a6c921ab37d3d541da98c4fadcf79e9a252822c803ff8f63d4239"
+}

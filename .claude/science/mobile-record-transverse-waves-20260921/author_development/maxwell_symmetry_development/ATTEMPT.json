@@ -1,0 +1,7 @@
+{
+  "failure": "The chosen count sector contains only an e_x A label while checking x-directed rates, hence the cross-product x component vanishes and this sector is actually reversible. It cannot witness the general failure of ordinary detailed balance. Use e_y in the same sector to expose the drive; prior symmetry checks are unchanged.",
+  "preserved_files": {
+    "maxwell_polar_axial_symmetry_check.py": "49e17f91b8260bb04c05a8bcfa1714fcf4957e3d68ccd88a135d406b1a216fbe",
+    "MAXWELL_POLAR_AXIAL_SYMMETRY_RUN.log": "01a12014123e7edee3739fbcd5fa4994d52b8e7d55ceeb36fdf9f9c2b22bd831"
+  }
+}

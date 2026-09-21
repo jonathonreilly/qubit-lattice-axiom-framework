@@ -1,0 +1,10 @@
+{
+  "verified": {
+    "source_identities": 35,
+    "procedure_identities": 6,
+    "artifacts": 13
+  },
+  "report_sha256": "af88aa9be0dbd1dfca290713518d1b4dad44a746a92c7279c2d0b378822747e4",
+  "complete_report_and_checker_read": true,
+  "scope": "Byte authentication and full scientific reading; F1 remains until corrected."
+}

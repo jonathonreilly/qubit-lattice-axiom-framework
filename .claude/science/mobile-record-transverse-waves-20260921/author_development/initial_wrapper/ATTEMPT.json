@@ -1,0 +1,5 @@
+{
+  "source_sha256": "b1e20c603aab6ace4ceef9e2329129713e6a218dbcababec1b26ef5effb98626",
+  "failure": "Brittle scope-wording assertion required source-free with a hyphen while the note used source free. No scientific suite had executed.",
+  "correction": "Remove unrelated wording predicate; retain explicit conditional status, claim id and unchanged primitive source checks."
+}

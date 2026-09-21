@@ -1,0 +1,141 @@
+{
+  "identities": {
+    "scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py": "1283709aafb037f699b9e79d20e26577a09814c1b1304e473dfd80821e96ab29",
+    "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d5d3951bb4c84d26c468c6e5567b6bb7dd6f3eb7322d6dced9e84cadc30b3ac3",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/immutable_transverse_maxwell_check.py": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_polar_axial_symmetry_check.py": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_entropy_energy_check.py": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_formation_full_occupancy_check.py": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/gauss_preparation_check.py": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce"
+  },
+  "runs": [
+    {
+      "mutation": null,
+      "returncode": 0,
+      "elapsed_seconds": 9.640259000007063,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nPASS: immutable_transverse_maxwell_check.py: 38 exact controls\nPASS: maxwell_polar_axial_symmetry_check.py: 13 exact controls\nPASS: maxwell_entropy_energy_check.py: 15 exact controls\nPASS: maxwell_formation_full_occupancy_check.py: 21 exact controls\nPASS: gauss_preparation_check.py: 3 exact controls\nTOTAL: PASS=91 FAIL=0\n",
+      "stderr": "",
+      "result_path": "PRIMARY_RESULTS.json",
+      "result_sha256": "dc72942e1a963ee78aa45d671c9ea179722b008c39880cc4e4474b6ddac4dd34"
+    },
+    {
+      "mutation": "drop_context_term",
+      "returncode": 1,
+      "elapsed_seconds": 0.32257095794193447,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: immutable_transverse_maxwell_check.py AssertionError: ('symmetric_pair_tensor_and_sharp_bounds', {'alphabet_size': 15, 'local_words': 50625, 'tensor_supremum': '|gamma|/2', 'drive_supremum': '2|gamma|'})\n",
+      "stderr": "",
+      "result_path": "mutation_results/drop_context_term.json",
+      "result_sha256": "433ac0e878d4c6e18fd71228a2d3b556ad75543f144dae3b8d3737261a117bde"
+    },
+    {
+      "mutation": "omit_current_mean_subtraction",
+      "returncode": 1,
+      "elapsed_seconds": 1.0212274591904134,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: immutable_transverse_maxwell_check.py AssertionError: ('exact_four_site_product_current_case2_axis0_minimal', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/omit_current_mean_subtraction.json",
+      "result_sha256": "0af11ca4ece5b3da31abcbdf444a05f22fb43c3fafb4701dd7f5da614ac47514"
+    },
+    {
+      "mutation": "wrong_cube_normalization",
+      "returncode": 1,
+      "elapsed_seconds": 0.31577620888128877,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: immutable_transverse_maxwell_check.py AssertionError: ('symmetric_pair_tensor_and_sharp_bounds', {'alphabet_size': 15, 'local_words': 50625, 'tensor_supremum': '|gamma|/2', 'drive_supremum': '2|gamma|'})\n",
+      "stderr": "",
+      "result_path": "mutation_results/wrong_cube_normalization.json",
+      "result_sha256": "89976c29349755c2a7c8f800068e4b436a1c7b9dde8aca08cc9a16703bf1430e"
+    },
+    {
+      "mutation": "reverse_curl_sign",
+      "returncode": 1,
+      "elapsed_seconds": 1.294948667054996,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: immutable_transverse_maxwell_check.py AssertionError: ('full_directional_matrix_has_Maxwell_curl_signs', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/reverse_curl_sign.json",
+      "result_sha256": "eefd4bdf3d57e8dcc70f3bc8b45450338dbdd037fda31e31074f9de67be8f1fd"
+    },
+    {
+      "mutation": "discard_static_modes",
+      "returncode": 1,
+      "elapsed_seconds": 1.5333371669985354,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: immutable_transverse_maxwell_check.py AssertionError: ('two_transverse_pairs_and_ten_zero_modes', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/discard_static_modes.json",
+      "result_sha256": "f11d1fc27a1a686b6a8fb879839bb0cadf08cc7c4ae0c4eb3002b8a24d291a9c"
+    },
+    {
+      "mutation": "polar_instead_of_axial",
+      "returncode": 1,
+      "elapsed_seconds": 0.3230065838433802,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: maxwell_polar_axial_symmetry_check.py AssertionError\n",
+      "stderr": "",
+      "result_path": "mutation_results/polar_instead_of_axial.json",
+      "result_sha256": "fe3b60ad3d556dd66f522da0936ae20322dc13185d09e9c57274adcb9bb70f71"
+    },
+    {
+      "mutation": "omit_odd_triple_parity",
+      "returncode": 1,
+      "elapsed_seconds": 0.9971425421535969,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: maxwell_polar_axial_symmetry_check.py AssertionError: ('all_fourteen_field_reversal_parities', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/omit_odd_triple_parity.json",
+      "result_sha256": "173818fe2343fd5f02de487d5bb45e715ec6eab46396f10b129f5fcc8501caa0"
+    },
+    {
+      "mutation": "wrong_energy_coefficient",
+      "returncode": 1,
+      "elapsed_seconds": 0.8741931668482721,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: maxwell_entropy_energy_check.py AssertionError: ('positive_quadratic_wave_energy', {'expression': '(Yx**2 + Yy**2 + Yz**2)/(2*rho_B) + (3*Xx**2 + 3*Xy**2 + 3*Xz**2)/rho_A'})\n",
+      "stderr": "",
+      "result_path": "mutation_results/wrong_energy_coefficient.json",
+      "result_sha256": "949ed7127548dadd4c6086d8336c0a8365c422b15c7c6b0b53194f05841e3755"
+    },
+    {
+      "mutation": "drop_stress_divergence_defect",
+      "returncode": 1,
+      "elapsed_seconds": 2.1143432080280036,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: maxwell_entropy_energy_check.py AssertionError: ('stress_identity_with_both_divergence_terms', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/drop_stress_divergence_defect.json",
+      "result_sha256": "85bdb19cfd5bfd2e56506d089388acc5e79fd9759ad73ffcc7c264070ce31f3e"
+    },
+    {
+      "mutation": "omit_formation_noise",
+      "returncode": 1,
+      "elapsed_seconds": 1.2124095829203725,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: maxwell_formation_full_occupancy_check.py AssertionError: ('fourteen_species_birth_Lyapunov_identity', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/omit_formation_noise.json",
+      "result_sha256": "d1b07486c1dbca14dd0b56103ef25bcdfd32e96d3ef0b806021c8cb6788b4966"
+    },
+    {
+      "mutation": "wrong_full_occupancy_mode_count",
+      "returncode": 1,
+      "elapsed_seconds": 0.7855231249704957,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: maxwell_formation_full_occupancy_check.py AssertionError: ('full_occupancy_characteristic_polynomial', {'polynomial': 'lambda**9*(gamma**2*kx**2*r**2 - gamma**2*kx**2*r + gamma**2*ky**2*r**2 - gamma**2*ky**2*r + gamma**2*kz**2*r**2 - gamma**2*kz**2*r + 3*lambda**2)**2/9'})\n",
+      "stderr": "",
+      "result_path": "mutation_results/wrong_full_occupancy_mode_count.json",
+      "result_sha256": "1e9edc1f48c5e9f9da3bfcc194324e41fa03bf104e3b39ac9132affc0fccbe63"
+    },
+    {
+      "mutation": "reverse_cross_covariance_sign",
+      "returncode": 1,
+      "elapsed_seconds": 1.5918433340266347,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: maxwell_formation_full_occupancy_check.py AssertionError: ('transverse_propagator_derivative_and_cross_sign', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/reverse_cross_covariance_sign.json",
+      "result_sha256": "a9078ebf50a17bbe75ba3217573167a9e689939ac2a1e38b6f5bc495af285467"
+    },
+    {
+      "mutation": "restore_conditioned_longitudinal_variance",
+      "returncode": 1,
+      "elapsed_seconds": 0.28685437492094934,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: gauss_preparation_check.py AssertionError: conditioning_removes_only_longitudinal_variance\n",
+      "stderr": "",
+      "result_path": "mutation_results/restore_conditioned_longitudinal_variance.json",
+      "result_sha256": "7f7d74fcf7a011b93591400650986e93ab714318c27c0eb35847a7c4b4000abc"
+    }
+  ]
+}

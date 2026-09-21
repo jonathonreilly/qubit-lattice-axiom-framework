@@ -1,0 +1,8 @@
+{
+  "reason": "Runner-cache discovery requires a literal AUDIT_INPUT_PATHS tuple. Replaced computed but equivalent declaration before first cache invocation. Scientific controls unchanged; prior successful output preserved.",
+  "files": {
+    "RUN.log": "e35d8503ce63d2464de5756c24cc2116ed9a2ec1e012b83d224872c05f08d72f",
+    "mobile_records_immutable_transverse_curl_limits_2026_09_21.py": "fb1866f9a12b73a40628c1ebeb36f1ca8c928fabc3a0b3456895c46625abcfd0",
+    "PRIMARY_RESULTS.json": "53a389991cae21a693b1364719363ebe839af79adbfe8ceaa898f3c94dd5f0f4"
+  }
+}

@@ -1,0 +1,966 @@
+{
+  "claim_id": "mobile_records_immutable_transverse_curl_limits_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d5d3951bb4c84d26c468c6e5567b6bb7dd6f3eb7322d6dced9e84cadc30b3ac3",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/immutable_transverse_maxwell_check.py": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_polar_axial_symmetry_check.py": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_entropy_energy_check.py": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/maxwell_formation_full_occupancy_check.py": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+    ".claude/science/mobile-record-transverse-waves-20260921/author_checks/gauss_preparation_check.py": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce",
+    "scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py": "fb1866f9a12b73a40628c1ebeb36f1ca8c928fabc3a0b3456895c46625abcfd0"
+  },
+  "mutation": null,
+  "passed": true,
+  "control_count": 91,
+  "suites": [
+    {
+      "suite": "immutable_transverse_maxwell_check.py",
+      "source_sha256": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+      "executed_source_sha256": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+      "returncode": 0,
+      "stdout": "PASS: symmetric_pair_tensor_and_sharp_bounds\nPASS: endpoint_drive_antisymmetry\nPASS: pointwise_product_balance_all_four_cycles\nPASS: all_proper_cubic_local_rate_transformations\nPASS: negative_control_literal_inversion_is_not_rate_symmetry\nPASS: strictly_positive_minimal_and_linear_rate_floors\nPASS: exact_four_site_product_current_case0_axis0_minimal\nPASS: exact_four_site_product_current_case0_axis0_linear\nPASS: exact_four_site_product_current_case0_axis1_minimal\nPASS: exact_four_site_product_current_case0_axis1_linear\nPASS: exact_four_site_product_current_case0_axis2_minimal\nPASS: exact_four_site_product_current_case0_axis2_linear\nPASS: exact_four_site_product_current_case1_axis0_minimal\nPASS: exact_four_site_product_current_case1_axis0_linear\nPASS: exact_four_site_product_current_case1_axis1_minimal\nPASS: exact_four_site_product_current_case1_axis1_linear\nPASS: exact_four_site_product_current_case1_axis2_minimal\nPASS: exact_four_site_product_current_case1_axis2_linear\nPASS: exact_four_site_product_current_case2_axis0_minimal\nPASS: exact_four_site_product_current_case2_axis0_linear\nPASS: exact_four_site_product_current_case2_axis1_minimal\nPASS: exact_four_site_product_current_case2_axis1_linear\nPASS: exact_four_site_product_current_case2_axis2_minimal\nPASS: exact_four_site_product_current_case2_axis2_linear\nPASS: fourteen_fields_are_complete\nPASS: full_fourteen_field_entropy_symmetry_axis0\nPASS: full_fourteen_field_entropy_symmetry_axis1\nPASS: full_fourteen_field_entropy_symmetry_axis2\nPASS: full_directional_matrix_has_Maxwell_curl_signs\nPASS: full_directional_cubic_minimal_polynomial\nPASS: two_transverse_pairs_and_ten_zero_modes\nPASS: exact_rank_four_at_(1/4, 1/4)\nPASS: exact_rank_four_at_(3/10, 1/5)\nPASS: exact_rank_four_at_(3/5, 1/5)\nPASS: uncorrelated_isotropic_vector_covariances\nPASS: nonlinear_entropy_symmetry_at_three_products\nPASS: static_longitudinal_subspace_and_transverse_wave_projector\nPASS: negative_control_cosine_on_all_vector_modes_is_wrong\nTOTAL: 38 PASS\n",
+      "stderr": "",
+      "results": {
+        "count": 38,
+        "checks": [
+          {
+            "name": "symmetric_pair_tensor_and_sharp_bounds",
+            "passed": true,
+            "detail": {
+              "alphabet_size": 15,
+              "local_words": 50625,
+              "tensor_supremum": "|gamma|/2",
+              "drive_supremum": "2|gamma|"
+            }
+          },
+          {
+            "name": "endpoint_drive_antisymmetry",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "pointwise_product_balance_all_four_cycles",
+            "passed": true,
+            "detail": {
+              "axis_configurations": 151875
+            }
+          },
+          {
+            "name": "all_proper_cubic_local_rate_transformations",
+            "passed": true,
+            "detail": {
+              "local_comparisons": 3645000
+            }
+          },
+          {
+            "name": "negative_control_literal_inversion_is_not_rate_symmetry",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "strictly_positive_minimal_and_linear_rate_floors",
+            "passed": true,
+            "detail": {
+              "minimal_floor": "1/10",
+              "linear_K": "3/2",
+              "linear_floor": "1/2"
+            }
+          },
+          {
+            "name": "exact_four_site_product_current_case0_axis0_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case0_axis0_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case0_axis1_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case0_axis1_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case0_axis2_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case0_axis2_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case1_axis0_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case1_axis0_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case1_axis1_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case1_axis1_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case1_axis2_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case1_axis2_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case2_axis0_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case2_axis0_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case2_axis1_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case2_axis1_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case2_axis2_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_four_site_product_current_case2_axis2_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "fourteen_fields_are_complete",
+            "passed": true,
+            "detail": {
+              "determinant": "196608"
+            }
+          },
+          {
+            "name": "full_fourteen_field_entropy_symmetry_axis0",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_fourteen_field_entropy_symmetry_axis1",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_fourteen_field_entropy_symmetry_axis2",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_directional_matrix_has_Maxwell_curl_signs",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_directional_cubic_minimal_polynomial",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "two_transverse_pairs_and_ten_zero_modes",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_rank_four_at_(1/4, 1/4)",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_rank_four_at_(3/10, 1/5)",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_rank_four_at_(3/5, 1/5)",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "uncorrelated_isotropic_vector_covariances",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "nonlinear_entropy_symmetry_at_three_products",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "static_longitudinal_subspace_and_transverse_wave_projector",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "negative_control_cosine_on_all_vector_modes_is_wrong",
+            "passed": true,
+            "detail": null
+          }
+        ],
+        "exact_product_currents": [
+          {
+            "case": 0,
+            "axis": 0,
+            "variant": "minimal",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 0,
+            "axis": 0,
+            "variant": "linear",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 0,
+            "axis": 1,
+            "variant": "minimal",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 0,
+            "axis": 1,
+            "variant": "linear",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 0,
+            "axis": 2,
+            "variant": "minimal",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 0,
+            "axis": 2,
+            "variant": "linear",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 1,
+            "axis": 0,
+            "variant": "minimal",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 1,
+            "axis": 0,
+            "variant": "linear",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 1,
+            "axis": 1,
+            "variant": "minimal",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 1,
+            "axis": 1,
+            "variant": "linear",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 1,
+            "axis": 2,
+            "variant": "minimal",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 1,
+            "axis": 2,
+            "variant": "linear",
+            "currents": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          {
+            "case": 2,
+            "axis": 0,
+            "variant": "minimal",
+            "currents": [
+              "-1/216000",
+              "-1/108000",
+              "-1/72000",
+              "59/54000",
+              "-61/43200",
+              "-121/36000",
+              "833/216000",
+              "-1/27000",
+              "-31/24000",
+              "29/21600",
+              "-11/216000",
+              "-1/18000",
+              "-403/216000",
+              "203/108000",
+              "-1/14400"
+            ]
+          },
+          {
+            "case": 2,
+            "axis": 0,
+            "variant": "linear",
+            "currents": [
+              "-1/216000",
+              "-1/108000",
+              "-1/72000",
+              "59/54000",
+              "-61/43200",
+              "-121/36000",
+              "833/216000",
+              "-1/27000",
+              "-31/24000",
+              "29/21600",
+              "-11/216000",
+              "-1/18000",
+              "-403/216000",
+              "203/108000",
+              "-1/14400"
+            ]
+          },
+          {
+            "case": 2,
+            "axis": 1,
+            "variant": "minimal",
+            "currents": [
+              "1/72000",
+              "-19/36000",
+              "7/8000",
+              "1/18000",
+              "1/14400",
+              "27/4000",
+              "-553/72000",
+              "1/9000",
+              "11/8000",
+              "1/7200",
+              "121/72000",
+              "-3/2000",
+              "13/72000",
+              "-7/4000",
+              "1/4800"
+            ]
+          },
+          {
+            "case": 2,
+            "axis": 1,
+            "variant": "linear",
+            "currents": [
+              "1/72000",
+              "-19/36000",
+              "7/8000",
+              "1/18000",
+              "1/14400",
+              "27/4000",
+              "-553/72000",
+              "1/9000",
+              "11/8000",
+              "1/7200",
+              "121/72000",
+              "-3/2000",
+              "13/72000",
+              "-7/4000",
+              "1/4800"
+            ]
+          },
+          {
+            "case": 2,
+            "axis": 2,
+            "variant": "minimal",
+            "currents": [
+              "-1/108000",
+              "59/54000",
+              "-61/36000",
+              "-121/27000",
+              "119/21600",
+              "-1/18000",
+              "-7/108000",
+              "-1/13500",
+              "-1/12000",
+              "-1/675",
+              "-11/6750",
+              "7/4500",
+              "91/54000",
+              "-7/54000",
+              "-1/7200"
+            ]
+          },
+          {
+            "case": 2,
+            "axis": 2,
+            "variant": "linear",
+            "currents": [
+              "-1/108000",
+              "59/54000",
+              "-61/36000",
+              "-121/27000",
+              "119/21600",
+              "-1/18000",
+              "-7/108000",
+              "-1/13500",
+              "-1/12000",
+              "-1/675",
+              "-11/6750",
+              "7/4500",
+              "91/54000",
+              "-7/54000",
+              "-1/7200"
+            ]
+          }
+        ],
+        "source_sha256": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef",
+        "scope": "Exact controls for a supplied fifteen-state classical exchange model. Not an electromagnetic identification, qubit implementation, or general limit proof."
+      }
+    },
+    {
+      "suite": "maxwell_polar_axial_symmetry_check.py",
+      "source_sha256": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+      "executed_source_sha256": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+      "returncode": 0,
+      "stdout": "PASS: all_48_polar_axial_spatial_rate_symmetries\nPASS: exact_group_composition_on_all_15_labels\nPASS: spatial_inversion_is_polar_on_A_and_axial_on_B\nPASS: time_reversal_is_an_involution\nPASS: time_reversal_and_endpoint_swap_reverse_the_same_drive\nPASS: time_reversal_commutes_with_full_spatial_group\nPASS: actual_escape_rates_match_under_Theta_minimal\nPASS: actual_escape_rates_match_under_Theta_linear\nPASS: complete_sector_stationarity\nPASS: complete_sector_generalized_reversal\nPASS: ordinary_detailed_balance_negative_control\nPASS: all_fourteen_field_reversal_parities\nPASS: linear_Maxwell_generator_reversal_identity\nTOTAL: 13 PASS\n",
+      "stderr": "",
+      "results": {
+        "count": 13,
+        "checks": [
+          {
+            "name": "all_48_polar_axial_spatial_rate_symmetries",
+            "passed": true,
+            "detail": {
+              "local_comparisons": 7290000
+            }
+          },
+          {
+            "name": "exact_group_composition_on_all_15_labels",
+            "passed": true,
+            "detail": {
+              "group_products": 2304
+            }
+          },
+          {
+            "name": "spatial_inversion_is_polar_on_A_and_axial_on_B",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "time_reversal_is_an_involution",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "time_reversal_and_endpoint_swap_reverse_the_same_drive",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "time_reversal_commutes_with_full_spatial_group",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "actual_escape_rates_match_under_Theta_minimal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "actual_escape_rates_match_under_Theta_linear",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "complete_sector_stationarity",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "complete_sector_generalized_reversal",
+            "passed": true,
+            "detail": {
+              "states": 48
+            }
+          },
+          {
+            "name": "ordinary_detailed_balance_negative_control",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "all_fourteen_field_reversal_parities",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "linear_Maxwell_generator_reversal_identity",
+            "passed": true,
+            "detail": null
+          }
+        ],
+        "source_sha256": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+        "scope": "Exact finite symmetries of the supplied polar/axial label assignment. This does not identify the model with quantum electromagnetism or establish a microscopic Gauss constraint."
+      }
+    },
+    {
+      "suite": "maxwell_entropy_energy_check.py",
+      "source_sha256": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+      "executed_source_sha256": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+      "returncode": 0,
+      "stdout": "PASS: full_simplex_entropy_metric_inverse\nPASS: pure_vector_species_reconstruction\nPASS: positive_quadratic_wave_energy\nPASS: quadratic_entropy_flux_is_Poynting_component_0\nPASS: quadratic_entropy_flux_is_Poynting_component_1\nPASS: quadratic_entropy_flux_is_Poynting_component_2\nPASS: exact_orbit_and_total_record_current_0\nPASS: exact_orbit_and_total_record_current_1\nPASS: exact_orbit_and_total_record_current_2\nPASS: energy_continuity_without_Gauss_assumption\nPASS: stress_identity_with_both_divergence_terms\nPASS: unconstrained_product_requires_Gauss_defect\nPASS: second_order_record_energy_coefficient_A\nPASS: second_order_record_energy_coefficient_B\nPASS: second_order_total_record_energy_coefficient\nTOTAL: 15 PASS\n",
+      "stderr": "",
+      "results": {
+        "count": 15,
+        "checks": [
+          {
+            "name": "full_simplex_entropy_metric_inverse",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "pure_vector_species_reconstruction",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "positive_quadratic_wave_energy",
+            "passed": true,
+            "detail": {
+              "expression": "(Yx**2 + Yy**2 + Yz**2)/(2*rho_B) + (3*Xx**2 + 3*Xy**2 + 3*Xz**2)/(2*rho_A)"
+            }
+          },
+          {
+            "name": "quadratic_entropy_flux_is_Poynting_component_0",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "quadratic_entropy_flux_is_Poynting_component_1",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "quadratic_entropy_flux_is_Poynting_component_2",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_orbit_and_total_record_current_0",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_orbit_and_total_record_current_1",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_orbit_and_total_record_current_2",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "energy_continuity_without_Gauss_assumption",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "stress_identity_with_both_divergence_terms",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "unconstrained_product_requires_Gauss_defect",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "second_order_record_energy_coefficient_A",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "second_order_record_energy_coefficient_B",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "second_order_total_record_energy_coefficient",
+            "passed": true,
+            "detail": null
+          }
+        ],
+        "source_sha256": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+        "scope": "Symbolic controls of the stated conditional classical continuum identities; not physical energy identification, quantization, Gauss-sector preparation or a smooth-solution existence theorem."
+      }
+    },
+    {
+      "suite": "maxwell_formation_full_occupancy_check.py",
+      "source_sha256": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+      "executed_source_sha256": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+      "returncode": 0,
+      "stdout": "PASS: complete_fourteen_label_moment_basis\nPASS: fixed_occupancy_linear_current_has_zero_mass_row_and_column\nPASS: full_thirteen_field_linearization_retains_every_static_mode\nPASS: full_occupancy_characteristic_polynomial\nPASS: full_occupancy_entropy_symmetrizer\nPASS: full_occupancy_vector_covariances\nPASS: no_discarded_extra_wave_modes\nPASS: fourteen_species_birth_Lyapunov_identity\nPASS: vector_reaction_zero_for_arbitrary_profile\nPASS: vector_birth_noise\nPASS: equal_label_rescaling_has_equal_noise\nPASS: exact_one_site_product_birth_trajectory\nPASS: equal_label_late_transverse_speed\nPASS: equal_time_covariance_derivative_equals_birth_noise\nPASS: finite_total_birth_noise\nPASS: transverse_propagator_derivative_and_cross_sign\nPASS: propagator_unitary_with_longitudinal_static_sector\nPASS: propagator_composition\nPASS: integrated_phase_derivative_and_zero_interval\nPASS: empty_start_covariance_and_integrated_noise\nPASS: nonproportional_orbit_masses_require_time_ordering\nTOTAL: 21 exact controls\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+        "sympy_version": "1.14.0",
+        "checks": [
+          {
+            "name": "complete_fourteen_label_moment_basis",
+            "passed": true,
+            "detail": {
+              "determinant": "98304"
+            }
+          },
+          {
+            "name": "fixed_occupancy_linear_current_has_zero_mass_row_and_column",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_thirteen_field_linearization_retains_every_static_mode",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_occupancy_characteristic_polynomial",
+            "passed": true,
+            "detail": {
+              "polynomial": "lambda**9*(gamma**2*kx**2*r**2 - gamma**2*kx**2*r + gamma**2*ky**2*r**2 - gamma**2*ky**2*r + gamma**2*kz**2*r**2 - gamma**2*kz**2*r + 3*lambda**2)**2/9"
+            }
+          },
+          {
+            "name": "full_occupancy_entropy_symmetrizer",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_occupancy_vector_covariances",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "no_discarded_extra_wave_modes",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "fourteen_species_birth_Lyapunov_identity",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "vector_reaction_zero_for_arbitrary_profile",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "vector_birth_noise",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "equal_label_rescaling_has_equal_noise",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_one_site_product_birth_trajectory",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "equal_label_late_transverse_speed",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "equal_time_covariance_derivative_equals_birth_noise",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "finite_total_birth_noise",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "transverse_propagator_derivative_and_cross_sign",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "propagator_unitary_with_longitudinal_static_sector",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "propagator_composition",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "integrated_phase_derivative_and_zero_interval",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "empty_start_covariance_and_integrated_noise",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "nonproportional_orbit_masses_require_time_ordering",
+            "passed": true,
+            "detail": null
+          }
+        ],
+        "scope": "Exact finite-label linearization, birth covariance and Gaussian propagator identities. Conditional finite-mode theorem applications still require their separate proof hypotheses. No native-birth fluctuation theorem or physical Maxwell identification."
+      }
+    },
+    {
+      "suite": "gauss_preparation_check.py",
+      "source_sha256": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce",
+      "executed_source_sha256": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce",
+      "returncode": 0,
+      "stdout": "PASS: conditioning_removes_only_longitudinal_variance\nPASS: curl_drift_preserves_Gauss_subspace\nPASS: single_birth_longitudinal_noise_after_preparation\nTOTAL: 3 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "89a8458ba0985648606043260aadc29a48d9b24c9637b2540febf55f9663b7ce",
+        "checks": [
+          {
+            "name": "conditioning_removes_only_longitudinal_variance",
+            "passed": true
+          },
+          {
+            "name": "curl_drift_preserves_Gauss_subspace",
+            "passed": true
+          },
+          {
+            "name": "single_birth_longitudinal_noise_after_preparation",
+            "passed": true
+          }
+        ],
+        "scope": "Exact covariance and curl identities. No simultaneous conditioning/lattice limit or microscopic Gauss constraint is inferred."
+      }
+    }
+  ],
+  "scope": "Author finite and symbolic controls; not an independent audit or a replacement for the conditional proofs."
+}

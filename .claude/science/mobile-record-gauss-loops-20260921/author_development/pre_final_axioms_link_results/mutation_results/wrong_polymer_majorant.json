@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": "2e2de2a7b903c9166cb077d61ceb1a2455be6d27ec2e1845ab1e33f5a52c0e05",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+    "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+  },
+  "mutation": "wrong_polymer_majorant",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "gauss_loop_polymer_check.py",
+      "source_sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+      "executed_source_sha256": "36df9a32291dc22a836b1032bf31de8bb73193b41793ccc0a9dacbec7f10bad1",
+      "returncode": 1,
+      "stdout": "PASS: shared_charge_edge_full_configuration_polymer_bijection\nPASS: shared_charge_vertex_full_configuration_polymer_bijection\nPASS: shared_physical_slot_distinct_axes_full_configuration_polymer_bijection\nPASS: omitting_shared_midpoint_capacity_changes_partition\nPASS: omitting_same_species_vertex_exclusion_double_counts\nPASS: edge_degree_and_incompatibility_anchor_counts\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-58ob81t1/gauss_loop_polymer_check.py\", line 136, in <module>\n    check('uniform_enlarged_activity_KP_margin',bound.subs(q,s.Rational(1,2))==s.Rational(1,800) and 17*bound.subs(q,s.Rational(1,2))<1 and 6*bound.subs(q,s.Rational(1,2))<1,\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n          dict(z_star=1/(400*math.e**2),ordinary_margin='17/800',ghost_margin='6/800'))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-58ob81t1/gauss_loop_polymer_check.py\", line 18, in check\n    assert bool(condition),(name,detail)\n           ~~~~^^^^^^^^^^^\nAssertionError: ('uniform_enlarged_activity_KP_margin', {'z_star': 0.0003383382080915318, 'ordinary_margin': '17/800', 'ghost_margin': '6/800'})\n"
+    }
+  ]
+}

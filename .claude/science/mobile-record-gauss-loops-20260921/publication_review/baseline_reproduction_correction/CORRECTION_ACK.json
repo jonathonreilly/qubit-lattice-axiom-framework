@@ -1,0 +1,27 @@
+{
+  "baseline_commit": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+  "corrected_checker_sha256": "a624eee9ce2c6efbb435da65158e23f838e2ba359a0a068d3076f769681b695d",
+  "corrected_report_sha256": "f3ffd23e75889fa143fecca47b9d61a41e34724c1838d97b278cddf67722ff4f",
+  "created_utc": "2026-09-21T10:02:29.065759+00:00",
+  "exact_change": {
+    "after": "baseline_commit = '5d784d8ccda5268f2b7c056fcdf0d81fdb703319'  # Fixed reviewed baseline, independent of HEAD.",
+    "before": "baseline_commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()\nassert baseline_commit == '5d784d8ccda5268f2b7c056fcdf0d81fdb703319'"
+  },
+  "head_independent_by_source_inspection": true,
+  "inverse_replacement_recovers_original_checker": true,
+  "no_publication_source_edits": true,
+  "no_scientific_reexecution": true,
+  "original_archive_sha256": "704853b0575cf5527719f11ddb13389a7cb44e9021e7712994a0958f7d95b3ee",
+  "original_checker_sha256": "964af7c67477ecac5d20912d3f5d0af30eba42628243afc1ec0cf2453e371fea",
+  "original_seal_sha256": "2c36f3839b5f2d0d4b106a0417b6364367cde6d65c61c45cd18459c18badbc74",
+  "same_procedure_dependencies": 3,
+  "same_source_files_authenticated": 35,
+  "scope": "Narrow reviewer-checker reproduction correction requested by primary author after original seal.",
+  "scope_limit": "Does not create a shallow-clone fallback if the fixed baseline commit object is unavailable.",
+  "unchanged_rerun_outputs": [
+    "ASSEMBLY_RESULTS.json",
+    "ASSEMBLY_CHECK.log",
+    "VERIFY_EVIDENCE.stdout",
+    "VERIFY_EVIDENCE.stderr"
+  ]
+}

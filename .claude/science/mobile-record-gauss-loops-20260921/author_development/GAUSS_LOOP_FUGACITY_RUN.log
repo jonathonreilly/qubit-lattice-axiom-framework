@@ -1,0 +1,7 @@
+PASS: all_four_edge_signed_current_configurations
+PASS: each_enumerated_configuration_is_Gauss_free_and_has_zero_total_vector
+PASS: isotropic_single_label_fugacity_coefficient
+PASS: enumerated_order_four_vector_covariance
+PASS: one_record_capacity_compact_phase_factor
+PASS: positive_factor_sufficient_bound_and_explicit_sign_witness
+TOTAL: 6 PASS

@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": "7d13b012a6e05a23ae1d195c10954814ca628afee3cfb52443134d1193af4c1e",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+    "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+  },
+  "mutation": "flip_one_loop_record",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "microscopic_gauss_record_loop_check.py",
+      "source_sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+      "executed_source_sha256": "ea57755b3347213c0d63bcf79d6027f2c03a2b30b53536f8bb39fbfa2dc3fd01",
+      "returncode": 1,
+      "stdout": "PASS: nearest_neighbor_swap_centered_charge_Gram\nPASS: all_distinct_original_labels_have_nonzero_local_swap_impulse\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-oq0qxv48/microscopic_gauss_record_loop_check.py\", line 54, in <module>\n    check('axis_record_loop_has_exact_zero_centered_divergence',not np.any(div2(loop)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-oq0qxv48/microscopic_gauss_record_loop_check.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('axis_record_loop_has_exact_zero_centered_divergence', None)\n"
+    }
+  ]
+}

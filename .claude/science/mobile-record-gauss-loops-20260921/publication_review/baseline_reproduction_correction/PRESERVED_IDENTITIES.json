@@ -1,0 +1,87 @@
+{
+  "purpose": "Preserve every original sealed review artifact before the pinned-baseline reproduction correction.",
+  "original_seal_sha256": "2c36f3839b5f2d0d4b106a0417b6364367cde6d65c61c45cd18459c18badbc74",
+  "archive_sha256": "704853b0575cf5527719f11ddb13389a7cb44e9021e7712994a0958f7d95b3ee",
+  "members": [
+    {
+      "path": "ASSEMBLY_CHECK.log",
+      "sha256": "aa6e3f29753203022f770bf75abc7c51db85042b1120aa6c653b33ce631fdbbc",
+      "bytes": 953
+    },
+    {
+      "path": "ASSEMBLY_RESULTS.json",
+      "sha256": "aa4a4f3cb7e2fc1166ed7e1b9e704d3434b56a7bce47c2fe6888ef22032effaf",
+      "bytes": 49907
+    },
+    {
+      "path": "ATTEMPT_01_RECEIPT.json",
+      "sha256": "94516c961aa0e948493ad12f989665307f580dfa4c7582d4162f536f5baf8d35",
+      "bytes": 750
+    },
+    {
+      "path": "ATTEMPT_02_RECEIPT.json",
+      "sha256": "5cd411b5435c16ef740a9ec002887e3d2744c02658f603fafd9a3601561f3803",
+      "bytes": 978
+    },
+    {
+      "path": "AUTHOR_EVIDENCE_AUTHENTICATION.json",
+      "sha256": "771eb42affa2366adc3ea48ddaaf874580131aa2843179573655e4f7ae98769c",
+      "bytes": 5384
+    },
+    {
+      "path": "AUTHOR_EVIDENCE_AUTHENTICATION.log",
+      "sha256": "a592afd6bc4aa6913923bf49acc91b97c21c914a32b2f31931915c6f8d54a774",
+      "bytes": 159
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "770dc7dda3d3bdd3a114823f91a3331033e35f76952515d9b39741af47020713",
+      "bytes": 1383
+    },
+    {
+      "path": "FINAL_SEAL.json",
+      "sha256": "2c36f3839b5f2d0d4b106a0417b6364367cde6d65c61c45cd18459c18badbc74",
+      "bytes": 16106
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "e9b7d44e3c14dc49a4730a3fd503b49a90d8fe06ca68bb33799269ad7b984c68",
+      "bytes": 15584
+    },
+    {
+      "path": "VERIFY_EVIDENCE.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "VERIFY_EVIDENCE.stdout",
+      "sha256": "7d0f5081ad4e34b8cda53ce13579dbee5b20978a910deedcff08b3adc84b4f3d",
+      "bytes": 636
+    },
+    {
+      "path": "attempt_01_ASSEMBLY_CHECK.log",
+      "sha256": "1b870bba1858537a35e8d2d163e9997d3420dffabb5add6d65b3df7437ec0125",
+      "bytes": 386
+    },
+    {
+      "path": "attempt_01_check_assembly.py",
+      "sha256": "964af7c67477ecac5d20912d3f5d0af30eba42628243afc1ec0cf2453e371fea",
+      "bytes": 12733
+    },
+    {
+      "path": "attempt_02_ASSEMBLY_CHECK.log",
+      "sha256": "1b870bba1858537a35e8d2d163e9997d3420dffabb5add6d65b3df7437ec0125",
+      "bytes": 386
+    },
+    {
+      "path": "authenticate_author_evidence.py",
+      "sha256": "7e7d62df3e55b541bde6822c8c524c9b1dd8e3c1a64a5d311c7b186bd6cc05c9",
+      "bytes": 4421
+    },
+    {
+      "path": "check_assembly.py",
+      "sha256": "964af7c67477ecac5d20912d3f5d0af30eba42628243afc1ec0cf2453e371fea",
+      "bytes": 12733
+    }
+  ]
+}

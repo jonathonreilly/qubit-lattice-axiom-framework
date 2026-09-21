@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-09-21T08:24:58.650807+00:00",
+  "report_sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+  "seal_sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf",
+  "counts": {
+    "artifacts": 10,
+    "source_identities": 5,
+    "instruction_identities": 2
+  },
+  "root_read": [
+    "REPORT.md (250 lines)",
+    "BLIND_DERIVATION.md (197 lines)",
+    "blind_check.py (208 lines)",
+    "comparison_check.py (77 lines)"
+  ],
+  "mathematical_disposition": "No unresolved finite-construction discrepancy; additional winding, accessibility and phase-integrand scope retained. The uniform polymer theorem is a separate pending review.",
+  "verification_path_resolution_note": "Source/instruction paths are repository-relative or absolute; an initial duplicated-prefix lookup failed before verification and was corrected."
+}

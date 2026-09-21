@@ -1,0 +1,9 @@
+{
+  "status": "same graph-note-hash assertion failed after author source-run refresh; substantive metadata finding F2 reported",
+  "checker_identity": "unchanged from attempt_01_check_assembly.py",
+  "old_graph_note_sha256": "7d13b012a6e05a23ae1d195c10954814ca628afee3cfb52443134d1193af4c1e",
+  "correct_note_sha256": "7f88d63e632ce83e983b684979792b864a816f69545124f7850f4c4bbc1e829f",
+  "author_response": "rebuild graph through owning script and refresh manifest; no scientific source or calculation changes",
+  "other_exploratory_reader_issue": "AUTHOR_RUNS.json is a list, not a dict; an initial display-only .items() attempt raised AttributeError. Complete list and all mutation outputs were then read, and the final authenticator explicitly validates the list schema. No source or result was changed.",
+  "report_drafting_notes": "Three unsuccessful apply_patch calls matched no report text; they changed no file. The successful patch used the actual surrounding text."
+}

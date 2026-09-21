@@ -1,0 +1,6 @@
+PASS: backgrounds_are_Gauss_free_and_agree_at_center_and_neighbors
+PASS: all_templates_containing_origin_counted
+PASS: source_free_remote_loop_changes_normalized_odds
+PASS: direct_enumeration_matches_single_site_hazard_formula
+PASS: difference_survives_any_common_site_rate
+TOTAL: 5 PASS

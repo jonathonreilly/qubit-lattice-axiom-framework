@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/publication_review/check_assembly.py", line 187, in <module>
+    assert graph['nodes'][claim]['note_hash'] == SHA(note.encode())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

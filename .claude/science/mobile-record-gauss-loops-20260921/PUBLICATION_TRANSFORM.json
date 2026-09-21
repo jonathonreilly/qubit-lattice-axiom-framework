@@ -1,0 +1,27 @@
+{
+  "note": "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "source": "MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "source_sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+      "published_body_sha256": "f9cb863dc9147d6077f2776a202c17147762fa5efa4c3b69f29d05d78107c1d5",
+      "change": "Only top heading, heading nesting and the explicit review-status paragraph; mathematical arguments retained."
+    },
+    {
+      "source": "GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+      "source_sha256": "1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b",
+      "published_body_sha256": "7ee57cb405cde1704f452877a27e99899096636b63e1df0645306d7b540534f3",
+      "change": "Only top heading, heading nesting and the opening/closing review-status paragraphs; mathematical arguments retained.",
+      "additional_status_correction": {
+        "old": "Independent checking of this proof and its counting constants is pending.",
+        "new": "Selective independent checking of this proof and its counting constants is\ncomplete; the two scope clarifications are recorded in the polymer review\nand correction acknowledgment bundled with this note."
+      }
+    },
+    {
+      "source": "NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+      "source_sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f",
+      "published_body_sha256": "c351696f5c70b0b5a42172a37bacdb5b52271b8f54512be7d7aebe61d65898e5",
+      "change": "Only top heading, heading nesting and the explicit review-status paragraph; mathematical arguments retained."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+--- reviewed/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md
++++ corrected/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md
+@@ -237,8 +237,11 @@
+ 
+     |Cov_mu_N(E_i(x),E_j(y))| <= (2/e) exp(-d_1(x,y)/4). (10)
+ 
+-The same argument applies to B or any bounded one-slot label observable
+-whose value on a polymer is additive over its records. No dynamical
++The same component bound applies to B. For general bounded one-slot
++functions f,g, put A_f=max_occupied |f(label)-f(vacancy)| and similarly A_g.
++The same proof gives (2/e) A_f A_g exp(-d_1/4); the E/B components have
++A_f=A_g=1. Subtracting the vacancy values makes these sources additive
++over the records in compatible polymers. No dynamical
+ relaxation bound follows from this equilibrium estimate. In particular,
+ the conservative local generator can still have many invariant subsets.
+ 
+@@ -247,7 +250,10 @@
+ small by (9). Nonwrapping finite clusters stabilize under the natural
+ local lift to the infinite lattice. Dominated convergence therefore
+ gives the periodic thermodynamic limit, as well as the same local limit
+-from boxes with vacant exterior. This argument does not assert uniqueness
++from boxes with vacant exterior, provided Gauss is imposed at every charge
++vertex incident to an allowed record edge, including boundary/exterior
++vertices. Dropping those constraints permits open currents and is a different
++specification. This argument does not assert uniqueness
+ for every conceivable Gibbs boundary condition. Bound (10) survives in
+ the limiting state and makes its Fourier covariance analytic near k=0.
+ 

@@ -1,0 +1,15 @@
+{
+  "verified_utc": "2026-09-21T09:16:23.222448+00:00",
+  "seal_sha256": "e687e466fd8505ad7f98e205bae0c611fd742139a638cc063b3d9e1c988240bb",
+  "verified": {
+    "artifacts": 11,
+    "source_identities": 24,
+    "instruction_identities": 3
+  },
+  "root_read_complete": [
+    "REPORT.md",
+    "independent_check.py"
+  ],
+  "findings": 0,
+  "scope": "Source review and identity authentication, not formal audit status."
+}

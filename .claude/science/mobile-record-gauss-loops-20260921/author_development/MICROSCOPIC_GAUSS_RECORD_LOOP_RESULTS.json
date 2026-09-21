@@ -1,0 +1,161 @@
+{
+  "source_sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+  "checks": [
+    {
+      "name": "nearest_neighbor_swap_centered_charge_Gram",
+      "passed": true,
+      "detail": [
+        [
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "all_distinct_original_labels_have_nonzero_local_swap_impulse",
+      "passed": true,
+      "detail": {
+        "ordered_swaps_and_directions": 630
+      }
+    },
+    {
+      "name": "axis_record_loop_has_exact_zero_centered_divergence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opposite_site_permutation_reverses_loop_without_charge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one_half_of_collective_reversal_has_charge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_six_atomic_parallel_nearest_neighbor_translations_preserve_charge",
+      "passed": true,
+      "detail": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "name": "move_old_loop_and_form_new_loop_with_unique_immutable_record_ids",
+      "passed": true,
+      "detail": {
+        "old_records": 4,
+        "new_records": 4,
+        "occupied_sites": 8,
+        "new_alphabet": "vacancy plus six A axis and six B axis labels"
+      }
+    },
+    {
+      "name": "polar_and_axial_loop_templates_under_all_signed_cubic_actions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_transverse_loop_Fourier_form_factor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "loop_low_frequency_weight_is_order_k_squared",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_empty_start_loop_birth_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "homogeneous_product_weight_preserved_by_translation_and_reversal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isolated_symmetric_loop_translation_symbol_is_diffusive",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Primary exact local constructions and a one-isolated-loop calculation. No independent review, hydrodynamic theorem, microscopic gauge derivation or physical electromagnetism claimed."
+}

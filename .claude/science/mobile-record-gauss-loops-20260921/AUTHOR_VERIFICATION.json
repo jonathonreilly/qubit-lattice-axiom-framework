@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-21T09:47:31.137851+00:00",
+  "runner_sha256": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed",
+  "note_sha256": "7f88d63e632ce83e983b684979792b864a816f69545124f7850f4c4bbc1e829f",
+  "primary_controls": 35,
+  "mutations_rejected": 6,
+  "scope": "Author controls and substantive mutated-identity assertion failures, not independent proof or audit."
+}

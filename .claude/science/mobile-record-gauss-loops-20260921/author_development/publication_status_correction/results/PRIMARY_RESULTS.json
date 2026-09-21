@@ -1,0 +1,508 @@
+{
+  "claim_id": "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": "7d13b012a6e05a23ae1d195c10954814ca628afee3cfb52443134d1193af4c1e",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+    "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+  },
+  "mutation": null,
+  "passed": true,
+  "control_count": 35,
+  "suites": [
+    {
+      "suite": "microscopic_gauss_record_loop_check.py",
+      "source_sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+      "executed_source_sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+      "returncode": 0,
+      "stdout": "PASS: nearest_neighbor_swap_centered_charge_Gram\nPASS: all_distinct_original_labels_have_nonzero_local_swap_impulse\nPASS: axis_record_loop_has_exact_zero_centered_divergence\nPASS: opposite_site_permutation_reverses_loop_without_charge\nPASS: one_half_of_collective_reversal_has_charge\nPASS: all_six_atomic_parallel_nearest_neighbor_translations_preserve_charge\nPASS: move_old_loop_and_form_new_loop_with_unique_immutable_record_ids\nPASS: polar_and_axial_loop_templates_under_all_signed_cubic_actions\nPASS: exact_transverse_loop_Fourier_form_factor\nPASS: loop_low_frequency_weight_is_order_k_squared\nPASS: exact_empty_start_loop_birth_covariance\nPASS: homogeneous_product_weight_preserved_by_translation_and_reversal\nPASS: isolated_symmetric_loop_translation_symbol_is_diffusive\nTOTAL: 13 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+        "checks": [
+          {
+            "name": "nearest_neighbor_swap_centered_charge_Gram",
+            "passed": true,
+            "detail": [
+              [
+                [
+                  4,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ]
+              ],
+              [
+                [
+                  4,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ]
+              ],
+              [
+                [
+                  4,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ]
+              ]
+            ]
+          },
+          {
+            "name": "all_distinct_original_labels_have_nonzero_local_swap_impulse",
+            "passed": true,
+            "detail": {
+              "ordered_swaps_and_directions": 630
+            }
+          },
+          {
+            "name": "axis_record_loop_has_exact_zero_centered_divergence",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "opposite_site_permutation_reverses_loop_without_charge",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "one_half_of_collective_reversal_has_charge",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "all_six_atomic_parallel_nearest_neighbor_translations_preserve_charge",
+            "passed": true,
+            "detail": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                -1,
+                0,
+                0
+              ],
+              [
+                0,
+                -1,
+                0
+              ],
+              [
+                0,
+                0,
+                -1
+              ]
+            ]
+          },
+          {
+            "name": "move_old_loop_and_form_new_loop_with_unique_immutable_record_ids",
+            "passed": true,
+            "detail": {
+              "old_records": 4,
+              "new_records": 4,
+              "occupied_sites": 8,
+              "new_alphabet": "vacancy plus six A axis and six B axis labels"
+            }
+          },
+          {
+            "name": "polar_and_axial_loop_templates_under_all_signed_cubic_actions",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_transverse_loop_Fourier_form_factor",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "loop_low_frequency_weight_is_order_k_squared",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_empty_start_loop_birth_covariance",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "homogeneous_product_weight_preserved_by_translation_and_reversal",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "isolated_symmetric_loop_translation_symbol_is_diffusive",
+            "passed": true,
+            "detail": null
+          }
+        ],
+        "scope": "Primary exact local constructions and a one-isolated-loop calculation. No independent review, hydrodynamic theorem, microscopic gauge derivation or physical electromagnetism claimed."
+      }
+    },
+    {
+      "suite": "gauss_loop_fugacity_check.py",
+      "source_sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+      "executed_source_sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+      "returncode": 0,
+      "stdout": "PASS: all_four_edge_signed_current_configurations\nPASS: each_enumerated_configuration_is_Gauss_free_and_has_zero_total_vector\nPASS: isotropic_single_label_fugacity_coefficient\nPASS: enumerated_order_four_vector_covariance\nPASS: one_record_capacity_compact_phase_factor\nPASS: positive_factor_sufficient_bound_and_explicit_sign_witness\nTOTAL: 6 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+        "checks": [
+          {
+            "name": "all_four_edge_signed_current_configurations",
+            "passed": true,
+            "detail": {
+              "side": 7,
+              "configurations": 2058,
+              "per_site": 6
+            }
+          },
+          {
+            "name": "each_enumerated_configuration_is_Gauss_free_and_has_zero_total_vector",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "isotropic_single_label_fugacity_coefficient",
+            "passed": true,
+            "detail": {
+              "per_site_per_axis_label": 4,
+              "density_per_orbit": 24,
+              "two_orbit_total": 48
+            }
+          },
+          {
+            "name": "enumerated_order_four_vector_covariance",
+            "passed": true,
+            "detail": [
+              {
+                "mode": [
+                  0,
+                  0,
+                  0
+                ],
+                "maximum_error": 0.0
+              },
+              {
+                "mode": [
+                  1,
+                  0,
+                  0
+                ],
+                "maximum_error": 4.263257461534198e-14
+              },
+              {
+                "mode": [
+                  1,
+                  1,
+                  0
+                ],
+                "maximum_error": 8.881785435662588e-14
+              },
+              {
+                "mode": [
+                  1,
+                  1,
+                  1
+                ],
+                "maximum_error": 8.881784205426154e-14
+              },
+              {
+                "mode": [
+                  2,
+                  1,
+                  0
+                ],
+                "maximum_error": 6.572525293463554e-14
+              }
+            ]
+          },
+          {
+            "name": "one_record_capacity_compact_phase_factor",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "positive_factor_sufficient_bound_and_explicit_sign_witness",
+            "passed": true,
+            "detail": null
+          }
+        ],
+        "scope": "Finite-volume Taylor coefficient identities and one-site compact-phase algebra. No uniform cluster expansion, thermodynamic phase or Markov mixing claim."
+      }
+    },
+    {
+      "suite": "gauss_loop_polymer_check.py",
+      "source_sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+      "executed_source_sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+      "returncode": 0,
+      "stdout": "PASS: shared_charge_edge_full_configuration_polymer_bijection\nPASS: shared_charge_vertex_full_configuration_polymer_bijection\nPASS: shared_physical_slot_distinct_axes_full_configuration_polymer_bijection\nPASS: omitting_shared_midpoint_capacity_changes_partition\nPASS: omitting_same_species_vertex_exclusion_double_counts\nPASS: edge_degree_and_incompatibility_anchor_counts\nPASS: uniform_enlarged_activity_KP_margin\nPASS: cubic_quadratic_tensor_constrained_by_Gauss\nPASS: constant_covariance_negative_control\nPASS: spatial_weight_calculus\nTOTAL: 10 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+        "checks": [
+          {
+            "name": "shared_charge_edge_full_configuration_polymer_bijection",
+            "passed": true,
+            "detail": {
+              "shape": "shared_charge_edge",
+              "record_slots": 7,
+              "charge_edges": 7,
+              "assignments": 78125,
+              "valid_configurations": 13,
+              "polymers": 12,
+              "compatible_collections": 13,
+              "partition_coefficients": [
+                {
+                  "nA": 0,
+                  "nB": 0,
+                  "coefficient": 1
+                },
+                {
+                  "nA": 0,
+                  "nB": 4,
+                  "coefficient": 4
+                },
+                {
+                  "nA": 0,
+                  "nB": 6,
+                  "coefficient": 2
+                },
+                {
+                  "nA": 4,
+                  "nB": 0,
+                  "coefficient": 4
+                },
+                {
+                  "nA": 6,
+                  "nB": 0,
+                  "coefficient": 2
+                }
+              ],
+              "without_capacity_collections": 49,
+              "without_component_exclusion_collections": 13,
+              "branched_balanced_polymers": 0
+            }
+          },
+          {
+            "name": "shared_charge_vertex_full_configuration_polymer_bijection",
+            "passed": true,
+            "detail": {
+              "shape": "shared_charge_vertex",
+              "record_slots": 8,
+              "charge_edges": 8,
+              "assignments": 390625,
+              "valid_configurations": 25,
+              "polymers": 16,
+              "compatible_collections": 25,
+              "partition_coefficients": [
+                {
+                  "nA": 0,
+                  "nB": 0,
+                  "coefficient": 1
+                },
+                {
+                  "nA": 0,
+                  "nB": 4,
+                  "coefficient": 4
+                },
+                {
+                  "nA": 0,
+                  "nB": 8,
+                  "coefficient": 4
+                },
+                {
+                  "nA": 4,
+                  "nB": 0,
+                  "coefficient": 4
+                },
+                {
+                  "nA": 4,
+                  "nB": 4,
+                  "coefficient": 8
+                },
+                {
+                  "nA": 8,
+                  "nB": 0,
+                  "coefficient": 4
+                }
+              ],
+              "without_capacity_collections": 81,
+              "without_component_exclusion_collections": 33,
+              "branched_balanced_polymers": 8
+            }
+          },
+          {
+            "name": "shared_physical_slot_distinct_axes_full_configuration_polymer_bijection",
+            "passed": true,
+            "detail": {
+              "shape": "shared_physical_slot_distinct_axes",
+              "record_slots": 7,
+              "charge_edges": 8,
+              "assignments": 140625,
+              "valid_configurations": 9,
+              "polymers": 8,
+              "compatible_collections": 9,
+              "partition_coefficients": [
+                {
+                  "nA": 0,
+                  "nB": 0,
+                  "coefficient": 1
+                },
+                {
+                  "nA": 0,
+                  "nB": 4,
+                  "coefficient": 4
+                },
+                {
+                  "nA": 4,
+                  "nB": 0,
+                  "coefficient": 4
+                }
+              ],
+              "without_capacity_collections": 81,
+              "without_component_exclusion_collections": 9,
+              "branched_balanced_polymers": 0
+            }
+          },
+          {
+            "name": "omitting_shared_midpoint_capacity_changes_partition",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "omitting_same_species_vertex_exclusion_double_counts",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "edge_degree_and_incompatibility_anchor_counts",
+            "passed": true,
+            "detail": {
+              "edge_adjacency_degree": 10,
+              "same_species_anchors": 11,
+              "slot_anchors": 6,
+              "union": 16,
+              "bound_used": 17
+            }
+          },
+          {
+            "name": "uniform_enlarged_activity_KP_margin",
+            "passed": true,
+            "detail": {
+              "z_star": 0.0003383382080915318,
+              "ordinary_margin": "17/800",
+              "ghost_margin": "6/800"
+            }
+          },
+          {
+            "name": "cubic_quadratic_tensor_constrained_by_Gauss",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "constant_covariance_negative_control",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "spatial_weight_calculus",
+            "passed": true,
+            "detail": null
+          }
+        ],
+        "scope": "Primary exact finite-configuration, combinatorial-constant and symbolic tensor controls. The general polymer/cluster proof and thermodynamic passage require separate mathematical reading."
+      }
+    },
+    {
+      "suite": "loop_birth_locality_check.py",
+      "source_sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+      "executed_source_sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+      "returncode": 0,
+      "stdout": "PASS: backgrounds_are_Gauss_free_and_agree_at_center_and_neighbors\nPASS: all_templates_containing_origin_counted\nPASS: source_free_remote_loop_changes_normalized_odds\nPASS: direct_enumeration_matches_single_site_hazard_formula\nPASS: difference_survives_any_common_site_rate\nTOTAL: 5 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+        "checks": [
+          {
+            "name": "backgrounds_are_Gauss_free_and_agree_at_center_and_neighbors",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "all_templates_containing_origin_counted",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "source_free_remote_loop_changes_normalized_odds",
+            "passed": true,
+            "detail": {
+              "empty_per_label": "1/12",
+              "blocked_x_per_label": "1/10",
+              "blocked_yz_per_label": "3/40"
+            }
+          },
+          {
+            "name": "direct_enumeration_matches_single_site_hazard_formula",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "difference_survives_any_common_site_rate",
+            "passed": true,
+            "detail": {
+              "total_variation": "1/15"
+            }
+          }
+        ],
+        "scope": "Counterexample to nearest-neighbor forming-label odds for the specified equal-rate template birth generator; not a general impossibility theorem."
+      }
+    }
+  ],
+  "scope": "Author symbolic and finite numerical controls; not an independent audit or a replacement for the conditional proofs."
+}

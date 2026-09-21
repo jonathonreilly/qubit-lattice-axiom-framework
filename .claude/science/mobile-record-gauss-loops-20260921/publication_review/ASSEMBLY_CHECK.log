@@ -1,0 +1,25 @@
+{
+  "assembly_parts": 3,
+  "members": 115,
+  "bundled_bindings": 80,
+  "original_seal_references": 125,
+  "external_pdf_exclusions": 1,
+  "status_correction_inverse_verified": true,
+  "graph": {
+    "baseline_commit": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+    "baseline_manifest_sha256": "505a6a2cd2f438c4a7990b2a8e4f884fcab4f540c70a50e62e7d4cc1ddb76fc3",
+    "baseline_nodes": 6026,
+    "baseline_edges": 13606,
+    "current_nodes": 6027,
+    "current_edges": 13607,
+    "old_manifest_entries_unchanged": 6026,
+    "actual_graph_matches_manifest": true,
+    "new_edge": [
+      "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+      "minimal_axioms"
+    ],
+    "limitation": "Old graph cache is untracked. Old topology is compared through every tracked manifest dependency hash and degree, not an unavailable old full cache."
+  },
+  "source_files_authenticated": 26,
+  "all_checks_passed": true
+}

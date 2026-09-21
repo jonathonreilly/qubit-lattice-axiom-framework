@@ -1,0 +1,319 @@
+{
+  "artifacts": [
+    {
+      "bytes": 953,
+      "path": "ASSEMBLY_CHECK.log",
+      "sha256": "aa6e3f29753203022f770bf75abc7c51db85042b1120aa6c653b33ce631fdbbc"
+    },
+    {
+      "bytes": 49907,
+      "path": "ASSEMBLY_RESULTS.json",
+      "sha256": "aa4a4f3cb7e2fc1166ed7e1b9e704d3434b56a7bce47c2fe6888ef22032effaf"
+    },
+    {
+      "bytes": 750,
+      "path": "ATTEMPT_01_RECEIPT.json",
+      "sha256": "94516c961aa0e948493ad12f989665307f580dfa4c7582d4162f536f5baf8d35"
+    },
+    {
+      "bytes": 978,
+      "path": "ATTEMPT_02_RECEIPT.json",
+      "sha256": "5cd411b5435c16ef740a9ec002887e3d2744c02658f603fafd9a3601561f3803"
+    },
+    {
+      "bytes": 5384,
+      "path": "AUTHOR_EVIDENCE_AUTHENTICATION.json",
+      "sha256": "771eb42affa2366adc3ea48ddaaf874580131aa2843179573655e4f7ae98769c"
+    },
+    {
+      "bytes": 159,
+      "path": "AUTHOR_EVIDENCE_AUTHENTICATION.log",
+      "sha256": "a592afd6bc4aa6913923bf49acc91b97c21c914a32b2f31931915c6f8d54a774"
+    },
+    {
+      "bytes": 1383,
+      "path": "CHECKPOINT.md",
+      "sha256": "770dc7dda3d3bdd3a114823f91a3331033e35f76952515d9b39741af47020713"
+    },
+    {
+      "bytes": 15584,
+      "path": "REPORT.md",
+      "sha256": "e9b7d44e3c14dc49a4730a3fd503b49a90d8fe06ca68bb33799269ad7b984c68"
+    },
+    {
+      "bytes": 0,
+      "path": "VERIFY_EVIDENCE.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 636,
+      "path": "VERIFY_EVIDENCE.stdout",
+      "sha256": "7d0f5081ad4e34b8cda53ce13579dbee5b20978a910deedcff08b3adc84b4f3d"
+    },
+    {
+      "bytes": 386,
+      "path": "attempt_01_ASSEMBLY_CHECK.log",
+      "sha256": "1b870bba1858537a35e8d2d163e9997d3420dffabb5add6d65b3df7437ec0125"
+    },
+    {
+      "bytes": 12733,
+      "path": "attempt_01_check_assembly.py",
+      "sha256": "964af7c67477ecac5d20912d3f5d0af30eba42628243afc1ec0cf2453e371fea"
+    },
+    {
+      "bytes": 386,
+      "path": "attempt_02_ASSEMBLY_CHECK.log",
+      "sha256": "1b870bba1858537a35e8d2d163e9997d3420dffabb5add6d65b3df7437ec0125"
+    },
+    {
+      "bytes": 4421,
+      "path": "authenticate_author_evidence.py",
+      "sha256": "7e7d62df3e55b541bde6822c8c524c9b1dd8e3c1a64a5d311c7b186bd6cc05c9"
+    },
+    {
+      "bytes": 12733,
+      "path": "check_assembly.py",
+      "sha256": "964af7c67477ecac5d20912d3f5d0af30eba42628243afc1ec0cf2453e371fea"
+    }
+  ],
+  "baseline_graph": {
+    "actual_graph_matches_manifest": true,
+    "baseline_commit": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+    "baseline_edges": 13606,
+    "baseline_manifest_sha256": "505a6a2cd2f438c4a7990b2a8e4f884fcab4f540c70a50e62e7d4cc1ddb76fc3",
+    "baseline_nodes": 6026,
+    "current_edges": 13607,
+    "current_nodes": 6027,
+    "limitation": "Old graph cache is untracked. Old topology is compared through every tracked manifest dependency hash and degree, not an unavailable old full cache.",
+    "new_edge": [
+      "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+      "minimal_axioms"
+    ],
+    "old_manifest_entries_unchanged": 6026
+  },
+  "created_utc": "2026-09-21T09:59:38.482120+00:00",
+  "external_reference_exclusion": {
+    "bytes": 191795,
+    "disposition": "external_reference_not_bundled",
+    "locally_verified": true,
+    "original_path": "UELTSCHI_math-ph_0304003v3.pdf",
+    "sha256": "2cc3e036af5b2a46afe95acf0b5863fe5c7d31554debb10a2a5cade4122bdbfc",
+    "url": "https://arxiv.org/pdf/math-ph/0304003v3"
+  },
+  "findings": [
+    {
+      "description": "Stale polymer-review pending sentence",
+      "id": "F1",
+      "status": "corrected; exact inverse replacement verified"
+    },
+    {
+      "description": "Generated graph cached previous publication note hash",
+      "id": "F2",
+      "status": "corrected; owning-script regeneration and final identity/topology check verified"
+    }
+  ],
+  "limitations": [
+    "Existing topology authenticated through complete tracked baseline manifest, using its 12-hex dependency hashes and degrees; old generated full graph is untracked.",
+    "External Ueltschi v3 PDF not bundled or fetched; original verified identity and reading boundary preserved.",
+    "Author logs authenticated only; unchanged mathematical proofs reused by their sealed source identities."
+  ],
+  "procedure_dependencies": [
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 14490,
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "reviewed_note_sha256": "7f88d63e632ce83e983b684979792b864a816f69545124f7850f4c4bbc1e829f",
+  "runner_sha256": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed",
+  "scientific_controls_executed_by_this_review": 0,
+  "scope": "Final publication assembly/provenance review; reused identity-matched mathematical evidence. No new scientific reproof, audit or retention verdict.",
+  "source_files": [
+    {
+      "bytes": 2671,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/AUTHOR_RUNS.json",
+      "sha256": "8b67604a84fbcd5bee33f0b19f9499e40d9fde189ef9f5cdd74bfbc2ffe8fd12"
+    },
+    {
+      "bytes": 396,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/AUTHOR_VERIFICATION.json",
+      "sha256": "ac0a888fdbbeca1bbe213d1144d69d82d71c78e863cd4cfae7bd7b5eb804cc02"
+    },
+    {
+      "bytes": 171,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/GRAPH_VERIFICATION.json",
+      "sha256": "dc4261b1f05477e9043f7b765fe3f671f849794e3f79f1ebbca57d9b824541fe"
+    },
+    {
+      "bytes": 64238,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/INDEPENDENT_CAPSULES.json",
+      "sha256": "498726288532c50456486df373ea37102188f3176e2feac75a9a350f182f52d2"
+    },
+    {
+      "bytes": 18089,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/PRIMARY_RESULTS.json",
+      "sha256": "b3ebdb350b70231f90d0a6bddb73ad183b7031ec8b8390ddbfecbb526f038cd6"
+    },
+    {
+      "bytes": 1684,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/PUBLICATION_TRANSFORM.json",
+      "sha256": "3f6607eda9b8deaaecbb96b3ddbaf1ea01f4543ba126514b39e509fdc55e110c"
+    },
+    {
+      "bytes": 3429,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/README.md",
+      "sha256": "810558baaeca241eb8a2df2d7d5126322c68e23d0ae0a774c09407cc3d3821cf"
+    },
+    {
+      "bytes": 4279,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py",
+      "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0"
+    },
+    {
+      "bytes": 8291,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py",
+      "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec"
+    },
+    {
+      "bytes": 3305,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py",
+      "sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4"
+    },
+    {
+      "bytes": 6862,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py",
+      "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9"
+    },
+    {
+      "bytes": 38985,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/author_development/publication_status_correction/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "7d13b012a6e05a23ae1d195c10954814ca628afee3cfb52443134d1193af4c1e"
+    },
+    {
+      "bytes": 1313,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/author_development/publication_status_correction/PUBLICATION_TRANSFORM.json",
+      "sha256": "e50a9c971cab175b5a790234bf900083eca8fc3e9d51c00c01e9936daf4b898d"
+    },
+    {
+      "bytes": 67242,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/independent/gauss_loop_independent.zip",
+      "sha256": "cffaa98062806e154e88956b9be2fdfca64bb44b1608eb81e95363e64937444a"
+    },
+    {
+      "bytes": 12493,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/independent/gauss_loop_independent_REPORT.md",
+      "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+    },
+    {
+      "bytes": 101477,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/independent/gauss_polymer_independent.zip",
+      "sha256": "a397ae6307642895b58dcc10c1a1bc5cead0004e25e596650bfe0ea447fb1e61"
+    },
+    {
+      "bytes": 12091,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/independent/gauss_polymer_independent_REPORT.md",
+      "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7"
+    },
+    {
+      "bytes": 222709,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/independent/local_curl_independent.zip",
+      "sha256": "f571746798cc22799ce2eba14f8981d91c20edfe3b0ace1ad26d516cff5332e3"
+    },
+    {
+      "bytes": 26690,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/independent/local_curl_independent_REPORT.md",
+      "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232"
+    },
+    {
+      "bytes": 2536,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/mutation_results/allow_both_species_in_one_slot.json",
+      "sha256": "3d576c7efbd375807dc218c213ea0fbb827d8e7eb2f67e4d461094e805760c8e"
+    },
+    {
+      "bytes": 2433,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/mutation_results/flip_one_loop_record.json",
+      "sha256": "4feac1a4b2cbf2f24e330b89f8d267079e567f9867933f7ab977372c88e2683b"
+    },
+    {
+      "bytes": 3009,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/mutation_results/half_collective_birth_bracket.json",
+      "sha256": "302c9bbabd9735bd14244df180c1f9f7a4e927da5b8f5e42fdd9e4a667880785"
+    },
+    {
+      "bytes": 2133,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/mutation_results/half_fugacity_structure_factor.json",
+      "sha256": "ccf9940dbc7990d239aec93497f5ab0598deb2b38a49e2379230bb1938aa4bc9"
+    },
+    {
+      "bytes": 3097,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/mutation_results/wrong_polymer_majorant.json",
+      "sha256": "16143731c3c71bb634dc565a0c2ecf15ef907096d918a69f07d1b0b44ab77f1a"
+    },
+    {
+      "bytes": 2852,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/mutation_results/wrong_tensor_off_diagonal.json",
+      "sha256": "12471bb574779317a9e1d1ef02e6e4e53d56dff0f1941967eb5603c17f5d57c5"
+    },
+    {
+      "bytes": 16513,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/primary_sources/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+      "sha256": "1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b"
+    },
+    {
+      "bytes": 11623,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/primary_sources/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    },
+    {
+      "bytes": 5084,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/primary_sources/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+      "sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f"
+    },
+    {
+      "bytes": 2643,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/.claude/science/mobile-record-gauss-loops-20260921/verify_evidence.py",
+      "sha256": "e0eefa14a7dff47a3b24b45a82eab96ff89982a8630012b63a11d2eefb1e19ba"
+    },
+    {
+      "bytes": 11333,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "bytes": 39114,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "7f88d63e632ce83e983b684979792b864a816f69545124f7850f4c4bbc1e829f"
+    },
+    {
+      "bytes": 8612973,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/docs/audit/data/citation_graph.json",
+      "sha256": "d24e5e05fcb51c08bac661f2bb080cb90dbff3c1ebddd382b0aa9ae873becf12"
+    },
+    {
+      "bytes": 836219,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/docs/audit/data/citation_graph_manifest.json",
+      "sha256": "3003c0c6cb48910b07d85849753f87b927ddcc67345708651d0b22ce182af16c"
+    },
+    {
+      "bytes": 2049,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/docs/audit/scripts/write_citation_graph_manifest.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    },
+    {
+      "bytes": 6533,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-gauss-loops-publication-20260921/scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py",
+      "sha256": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+    }
+  ],
+  "unresolved_findings": []
+}

@@ -1,0 +1,114 @@
+{
+  "author_runs": [
+    {
+      "controls_reported": 35,
+      "mutation": null,
+      "source_binding_authenticated": true
+    },
+    {
+      "declared_mutated_bytes_authenticated": true,
+      "mutation": "flip_one_loop_record",
+      "reported_assertion": "AssertionError: ('axis_record_loop_has_exact_zero_centered_divergence', None)",
+      "suite": "microscopic_gauss_record_loop_check.py"
+    },
+    {
+      "declared_mutated_bytes_authenticated": true,
+      "mutation": "half_collective_birth_bracket",
+      "reported_assertion": "AssertionError: ('exact_empty_start_loop_birth_covariance', None)",
+      "suite": "microscopic_gauss_record_loop_check.py"
+    },
+    {
+      "declared_mutated_bytes_authenticated": true,
+      "mutation": "half_fugacity_structure_factor",
+      "reported_assertion": "AssertionError: ((1, 0, 0), 2.4450418679126713)",
+      "suite": "gauss_loop_fugacity_check.py"
+    },
+    {
+      "declared_mutated_bytes_authenticated": true,
+      "mutation": "allow_both_species_in_one_slot",
+      "reported_assertion": "AssertionError: ('one_record_capacity_compact_phase_factor', None)",
+      "suite": "gauss_loop_fugacity_check.py"
+    },
+    {
+      "declared_mutated_bytes_authenticated": true,
+      "mutation": "wrong_polymer_majorant",
+      "reported_assertion": "AssertionError: ('uniform_enlarged_activity_KP_margin', {'z_star': 0.0003383382080915318, 'ordinary_margin': '17/800', 'ghost_margin': '6/800'})",
+      "suite": "gauss_loop_polymer_check.py"
+    },
+    {
+      "declared_mutated_bytes_authenticated": true,
+      "mutation": "wrong_tensor_off_diagonal",
+      "reported_assertion": "AssertionError: ('cubic_quadratic_tensor_constrained_by_Gauss', None)",
+      "suite": "gauss_loop_polymer_check.py"
+    }
+  ],
+  "mutations_bound_to_exact_declared_bytes": 6,
+  "scope": "Authenticated existing author records and reconstructed declared mutation bytes in memory. No scientific execution or extra independence claimed.",
+  "source_bound_baseline": true,
+  "source_identities": {
+    ".claude/science/mobile-record-gauss-loops-20260921/AUTHOR_RUNS.json": {
+      "bytes": 2671,
+      "sha256": "8b67604a84fbcd5bee33f0b19f9499e40d9fde189ef9f5cdd74bfbc2ffe8fd12"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/AUTHOR_VERIFICATION.json": {
+      "bytes": 396,
+      "sha256": "ac0a888fdbbeca1bbe213d1144d69d82d71c78e863cd4cfae7bd7b5eb804cc02"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/PRIMARY_RESULTS.json": {
+      "bytes": 18089,
+      "sha256": "b3ebdb350b70231f90d0a6bddb73ad183b7031ec8b8390ddbfecbb526f038cd6"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py": {
+      "bytes": 4279,
+      "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py": {
+      "bytes": 8291,
+      "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py": {
+      "bytes": 3305,
+      "sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py": {
+      "bytes": 6862,
+      "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/mutation_results/allow_both_species_in_one_slot.json": {
+      "bytes": 2536,
+      "sha256": "3d576c7efbd375807dc218c213ea0fbb827d8e7eb2f67e4d461094e805760c8e"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/mutation_results/flip_one_loop_record.json": {
+      "bytes": 2433,
+      "sha256": "4feac1a4b2cbf2f24e330b89f8d267079e567f9867933f7ab977372c88e2683b"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/mutation_results/half_collective_birth_bracket.json": {
+      "bytes": 3009,
+      "sha256": "302c9bbabd9735bd14244df180c1f9f7a4e927da5b8f5e42fdd9e4a667880785"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/mutation_results/half_fugacity_structure_factor.json": {
+      "bytes": 2133,
+      "sha256": "ccf9940dbc7990d239aec93497f5ab0598deb2b38a49e2379230bb1938aa4bc9"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/mutation_results/wrong_polymer_majorant.json": {
+      "bytes": 3097,
+      "sha256": "16143731c3c71bb634dc565a0c2ecf15ef907096d918a69f07d1b0b44ab77f1a"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/mutation_results/wrong_tensor_off_diagonal.json": {
+      "bytes": 2852,
+      "sha256": "12471bb574779317a9e1d1ef02e6e4e53d56dff0f1941967eb5603c17f5d57c5"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": {
+      "bytes": 39114,
+      "sha256": "7f88d63e632ce83e983b684979792b864a816f69545124f7850f4c4bbc1e829f"
+    },
+    "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py": {
+      "bytes": 6533,
+      "sha256": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+    }
+  }
+}

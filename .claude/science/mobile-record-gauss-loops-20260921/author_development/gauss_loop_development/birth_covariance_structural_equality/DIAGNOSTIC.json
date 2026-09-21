@@ -1,0 +1,6 @@
+{
+  "raw_structural_equality": false,
+  "expanded_difference": "Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])",
+  "repair": "Compare expanded entrywise difference to zero. Event sum and proposed covariance formula unchanged.",
+  "scientific_target_changed": false
+}

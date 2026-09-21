@@ -1,0 +1,18 @@
+PASS: nearest_neighbor_swap_centered_charge_Gram
+PASS: all_distinct_original_labels_have_nonzero_local_swap_impulse
+PASS: axis_record_loop_has_exact_zero_centered_divergence
+PASS: opposite_site_permutation_reverses_loop_without_charge
+PASS: one_half_of_collective_reversal_has_charge
+PASS: all_six_atomic_parallel_nearest_neighbor_translations_preserve_charge
+PASS: move_old_loop_and_form_new_loop_with_unique_immutable_record_ids
+PASS: polar_and_axial_loop_templates_under_all_signed_cubic_actions
+PASS: exact_transverse_loop_Fourier_form_factor
+PASS: loop_low_frequency_weight_is_order_k_squared
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/microscopic_gauss_record_loop_check.py", line 119, in <module>
+    check('exact_empty_start_loop_birth_covariance',birth==8*bet*(wave.dot(wave)*s.eye(3)-wave*wave.T))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/microscopic_gauss_record_loop_check.py", line 12, in check
+    assert bool(ok),(name,detail)
+           ~~~~^^^^
+AssertionError: ('exact_empty_start_loop_birth_covariance', None)

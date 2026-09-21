@@ -1,0 +1,12 @@
+{
+  "status": "pre-refresh graph note hash differed from corrected note; no mathematical or capsule failure",
+  "failing_assertion": "graph node note_hash equals corrected publication note SHA256",
+  "stage": "root explicitly declared graph/source-bound author evidence refresh in progress",
+  "response": "preserved attempt; await completed author refresh and repeat only deterministic assembly/provenance check",
+  "earlier_exploratory_failure": {
+    "command": "git show HEAD:docs/audit/data/citation_graph.json",
+    "error": "fatal: path exists on disk, but not in HEAD",
+    "resolution": "generated graph cache is untracked; compare complete tracked baseline manifest and actual current graph recomputation",
+    "git_mutations": false
+  }
+}

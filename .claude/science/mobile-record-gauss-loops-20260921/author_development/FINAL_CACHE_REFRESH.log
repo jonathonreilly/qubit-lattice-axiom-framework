@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py
+runner_sha256: c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed
+input_fingerprint_sha256: e16a5cf18dc0d4fb6aaaba465e899cf5f9d17ac212697e89bb2d528d6a7d9ba2
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.69
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: microscopic_gauss_record_loop_check.py: 13 declared controls
+PASS: gauss_loop_fugacity_check.py: 6 declared controls
+PASS: gauss_loop_polymer_check.py: 10 declared controls
+PASS: loop_birth_locality_check.py: 5 declared controls
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+
+[cache refresh] scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py (input_mismatch; timeout_sec=600)

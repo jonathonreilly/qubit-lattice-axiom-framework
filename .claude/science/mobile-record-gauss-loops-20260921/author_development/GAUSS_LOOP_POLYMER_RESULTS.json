@@ -1,0 +1,175 @@
+{
+  "source_sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+  "checks": [
+    {
+      "name": "shared_charge_edge_full_configuration_polymer_bijection",
+      "passed": true,
+      "detail": {
+        "shape": "shared_charge_edge",
+        "record_slots": 7,
+        "charge_edges": 7,
+        "assignments": 78125,
+        "valid_configurations": 13,
+        "polymers": 12,
+        "compatible_collections": 13,
+        "partition_coefficients": [
+          {
+            "nA": 0,
+            "nB": 0,
+            "coefficient": 1
+          },
+          {
+            "nA": 0,
+            "nB": 4,
+            "coefficient": 4
+          },
+          {
+            "nA": 0,
+            "nB": 6,
+            "coefficient": 2
+          },
+          {
+            "nA": 4,
+            "nB": 0,
+            "coefficient": 4
+          },
+          {
+            "nA": 6,
+            "nB": 0,
+            "coefficient": 2
+          }
+        ],
+        "without_capacity_collections": 49,
+        "without_component_exclusion_collections": 13,
+        "branched_balanced_polymers": 0
+      }
+    },
+    {
+      "name": "shared_charge_vertex_full_configuration_polymer_bijection",
+      "passed": true,
+      "detail": {
+        "shape": "shared_charge_vertex",
+        "record_slots": 8,
+        "charge_edges": 8,
+        "assignments": 390625,
+        "valid_configurations": 25,
+        "polymers": 16,
+        "compatible_collections": 25,
+        "partition_coefficients": [
+          {
+            "nA": 0,
+            "nB": 0,
+            "coefficient": 1
+          },
+          {
+            "nA": 0,
+            "nB": 4,
+            "coefficient": 4
+          },
+          {
+            "nA": 0,
+            "nB": 8,
+            "coefficient": 4
+          },
+          {
+            "nA": 4,
+            "nB": 0,
+            "coefficient": 4
+          },
+          {
+            "nA": 4,
+            "nB": 4,
+            "coefficient": 8
+          },
+          {
+            "nA": 8,
+            "nB": 0,
+            "coefficient": 4
+          }
+        ],
+        "without_capacity_collections": 81,
+        "without_component_exclusion_collections": 33,
+        "branched_balanced_polymers": 8
+      }
+    },
+    {
+      "name": "shared_physical_slot_distinct_axes_full_configuration_polymer_bijection",
+      "passed": true,
+      "detail": {
+        "shape": "shared_physical_slot_distinct_axes",
+        "record_slots": 7,
+        "charge_edges": 8,
+        "assignments": 140625,
+        "valid_configurations": 9,
+        "polymers": 8,
+        "compatible_collections": 9,
+        "partition_coefficients": [
+          {
+            "nA": 0,
+            "nB": 0,
+            "coefficient": 1
+          },
+          {
+            "nA": 0,
+            "nB": 4,
+            "coefficient": 4
+          },
+          {
+            "nA": 4,
+            "nB": 0,
+            "coefficient": 4
+          }
+        ],
+        "without_capacity_collections": 81,
+        "without_component_exclusion_collections": 9,
+        "branched_balanced_polymers": 0
+      }
+    },
+    {
+      "name": "omitting_shared_midpoint_capacity_changes_partition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "omitting_same_species_vertex_exclusion_double_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "edge_degree_and_incompatibility_anchor_counts",
+      "passed": true,
+      "detail": {
+        "edge_adjacency_degree": 10,
+        "same_species_anchors": 11,
+        "slot_anchors": 6,
+        "union": 16,
+        "bound_used": 17
+      }
+    },
+    {
+      "name": "uniform_enlarged_activity_KP_margin",
+      "passed": true,
+      "detail": {
+        "z_star": 0.0003383382080915318,
+        "ordinary_margin": "17/800",
+        "ghost_margin": "6/800"
+      }
+    },
+    {
+      "name": "cubic_quadratic_tensor_constrained_by_Gauss",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "constant_covariance_negative_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "spatial_weight_calculus",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Primary exact finite-configuration, combinatorial-constant and symbolic tensor controls. The general polymer/cluster proof and thermodynamic passage require separate mathematical reading."
+}

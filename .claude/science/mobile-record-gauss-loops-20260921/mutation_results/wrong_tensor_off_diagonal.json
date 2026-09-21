@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": "7f88d63e632ce83e983b684979792b864a816f69545124f7850f4c4bbc1e829f",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+    "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+  },
+  "mutation": "wrong_tensor_off_diagonal",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "gauss_loop_polymer_check.py",
+      "source_sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+      "executed_source_sha256": "f9be1218a816dc6feb351ab5e759363fdd76ad92df85fa15b895f6518bc12216",
+      "returncode": 1,
+      "stdout": "PASS: shared_charge_edge_full_configuration_polymer_bijection\nPASS: shared_charge_vertex_full_configuration_polymer_bijection\nPASS: shared_physical_slot_distinct_axes_full_configuration_polymer_bijection\nPASS: omitting_shared_midpoint_capacity_changes_partition\nPASS: omitting_same_species_vertex_exclusion_double_counts\nPASS: edge_degree_and_incompatibility_anchor_counts\nPASS: uniform_enlarged_activity_KP_margin\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-x3o6edy7/gauss_loop_polymer_check.py\", line 144, in <module>\n    check('cubic_quadratic_tensor_constrained_by_Gauss',solution==[{b:-a,c:-a}] and s.simplify(tensor.subs(solution[0])-a*(k2*s.eye(3)-k*k.T))==s.zeros(3))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-x3o6edy7/gauss_loop_polymer_check.py\", line 18, in check\n    assert bool(condition),(name,detail)\n           ~~~~^^^^^^^^^^^\nAssertionError: ('cubic_quadratic_tensor_constrained_by_Gauss', None)\n"
+    }
+  ]
+}

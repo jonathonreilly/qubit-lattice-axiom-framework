@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T10:04:01.101958+00:00",
+  "check_returncode": 2,
+  "diagnostics": ".claude/science/mobile-record-gauss-loops-20260921/author_development/gauss_polymer_corrections/SOURCE_CORRECTIONS.diff:4: trailing whitespace.\n+ \n.claude/science/mobile-record-gauss-loops-20260921/author_development/gauss_polymer_corrections/SOURCE_CORRECTIONS.diff:6: trailing whitespace.\n+ \n.claude/science/mobile-record-gauss-loops-20260921/author_development/gauss_polymer_corrections/SOURCE_CORRECTIONS.diff:16: trailing whitespace.\n+ \n.claude/science/mobile-record-gauss-loops-20260921/author_development/gauss_polymer_corrections/SOURCE_CORRECTIONS.diff:28: trailing whitespace.\n+ \n.claude/science/mobile-record-gauss-loops-20260921/author_development/gauss_polymer_corrections/SOURCE_CORRECTIONS.diff:28: new blank line at EOF.\n",
+  "reason": "The byte-preserved historical unified diff contains blank context lines and a historical EOF blank. Altering it would break the correction provenance. No current scientific source whitespace finding."
+}

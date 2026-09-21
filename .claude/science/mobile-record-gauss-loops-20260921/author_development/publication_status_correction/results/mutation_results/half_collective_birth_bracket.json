@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": "7d13b012a6e05a23ae1d195c10954814ca628afee3cfb52443134d1193af4c1e",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+    "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+  },
+  "mutation": "half_collective_birth_bracket",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "microscopic_gauss_record_loop_check.py",
+      "source_sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+      "executed_source_sha256": "0b01a444cd20d0e809c652cce7af7e1839b110c11028e0f5db67a63741abe2f2",
+      "returncode": 1,
+      "stdout": "PASS: nearest_neighbor_swap_centered_charge_Gram\nPASS: all_distinct_original_labels_have_nonzero_local_swap_impulse\nPASS: axis_record_loop_has_exact_zero_centered_divergence\nPASS: opposite_site_permutation_reverses_loop_without_charge\nPASS: one_half_of_collective_reversal_has_charge\nPASS: all_six_atomic_parallel_nearest_neighbor_translations_preserve_charge\nPASS: move_old_loop_and_form_new_loop_with_unique_immutable_record_ids\nPASS: polar_and_axial_loop_templates_under_all_signed_cubic_actions\nPASS: exact_transverse_loop_Fourier_form_factor\nPASS: loop_low_frequency_weight_is_order_k_squared\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-shb8wd0h/microscopic_gauss_record_loop_check.py\", line 119, in <module>\n    check('exact_empty_start_loop_birth_covariance',all(s.expand(x)==0 for x in birth-8*bet*(wave.dot(wave)*s.eye(3)-wave*wave.T)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-shb8wd0h/microscopic_gauss_record_loop_check.py\", line 12, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('exact_empty_start_loop_birth_covariance', None)\n"
+    }
+  ]
+}

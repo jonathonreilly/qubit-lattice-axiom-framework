@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-21T10:03:37.102678+00:00",
+  "review_report_sha256": "f3ffd23e75889fa143fecca47b9d61a41e34724c1838d97b278cddf67722ff4f",
+  "review_seal_sha256": "88258c7f0320daac4089c8cf91fc20b4088595f1b4257795467d0c77daf515b3",
+  "source_files_verified": 35,
+  "procedure_files_verified": 3,
+  "review_artifacts_verified": 19,
+  "root_read": "Complete original publication report and both checkers, followed by complete narrow correction diff and acknowledgment.",
+  "author_controls": 35,
+  "mutations_rejected": 6,
+  "python_files_compiled": 8,
+  "graph": {
+    "nodes_added": 1,
+    "edges_added": 1,
+    "existing_topology_unchanged": true,
+    "manifest_sha256": "3003c0c6cb48910b07d85849753f87b927ddcc67345708651d0b22ce182af16c"
+  },
+  "scope": "Draft milestone verification. Full combined pipeline, strict audit lint, negative-claim packet/schema and changed-evidence integration gates remain pending; no audit verdict."
+}

@@ -1,0 +1,37 @@
+{
+  "source_sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+  "checks": [
+    {
+      "name": "backgrounds_are_Gauss_free_and_agree_at_center_and_neighbors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_templates_containing_origin_counted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_free_remote_loop_changes_normalized_odds",
+      "passed": true,
+      "detail": {
+        "empty_per_label": "1/12",
+        "blocked_x_per_label": "1/10",
+        "blocked_yz_per_label": "3/40"
+      }
+    },
+    {
+      "name": "direct_enumeration_matches_single_site_hazard_formula",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "difference_survives_any_common_site_rate",
+      "passed": true,
+      "detail": {
+        "total_variation": "1/15"
+      }
+    }
+  ],
+  "scope": "Counterexample to nearest-neighbor forming-label odds for the specified equal-rate template birth generator; not a general impossibility theorem."
+}

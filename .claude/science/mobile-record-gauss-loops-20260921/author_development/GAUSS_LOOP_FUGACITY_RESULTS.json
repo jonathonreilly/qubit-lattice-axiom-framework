@@ -1,0 +1,85 @@
+{
+  "source_sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+  "checks": [
+    {
+      "name": "all_four_edge_signed_current_configurations",
+      "passed": true,
+      "detail": {
+        "side": 7,
+        "configurations": 2058,
+        "per_site": 6
+      }
+    },
+    {
+      "name": "each_enumerated_configuration_is_Gauss_free_and_has_zero_total_vector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isotropic_single_label_fugacity_coefficient",
+      "passed": true,
+      "detail": {
+        "per_site_per_axis_label": 4,
+        "density_per_orbit": 24,
+        "two_orbit_total": 48
+      }
+    },
+    {
+      "name": "enumerated_order_four_vector_covariance",
+      "passed": true,
+      "detail": [
+        {
+          "mode": [
+            0,
+            0,
+            0
+          ],
+          "maximum_error": 0.0
+        },
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "maximum_error": 4.263257461534198e-14
+        },
+        {
+          "mode": [
+            1,
+            1,
+            0
+          ],
+          "maximum_error": 8.881785435662588e-14
+        },
+        {
+          "mode": [
+            1,
+            1,
+            1
+          ],
+          "maximum_error": 8.881784205426154e-14
+        },
+        {
+          "mode": [
+            2,
+            1,
+            0
+          ],
+          "maximum_error": 6.572525293463554e-14
+        }
+      ]
+    },
+    {
+      "name": "one_record_capacity_compact_phase_factor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive_factor_sufficient_bound_and_explicit_sign_witness",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Finite-volume Taylor coefficient identities and one-site compact-phase algebra. No uniform cluster expansion, thermodynamic phase or Markov mixing claim."
+}

@@ -1,0 +1,955 @@
+{
+  "assembly": [
+    {
+      "complete_body_equal_after_only_declared_transforms": true,
+      "published_body_sha256": "f9cb863dc9147d6077f2776a202c17147762fa5efa4c3b69f29d05d78107c1d5",
+      "source": "MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "status_replacements": [
+        {
+          "new": "2026-09-21. Primary construction and exact finite controls; selective\nindependent reconstruction completed.",
+          "old": "2026-09-21. Primary construction and exact finite controls; independent\nreconstruction pending."
+        }
+      ]
+    },
+    {
+      "complete_body_equal_after_only_declared_transforms": true,
+      "published_body_sha256": "7ee57cb405cde1704f452877a27e99899096636b63e1df0645306d7b540534f3",
+      "source": "GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+      "status_replacements": [
+        {
+          "new": "2026-09-21. Primary derivation with completed selective independent\nfinite-volume and polymer-proof review. Two scope clarifications were\ncorrected and acknowledged; there is no formal audit verdict.",
+          "old": "2026-09-21. Primary derivation; selective independent reconstruction pending.\nThe finite-volume coefficient checks are complete. The polymer proof below\nis newly derived and has not yet received an independent proof check."
+        },
+        {
+          "new": "Selective independent checking of this proof and its counting constants is\ncomplete; the two scope clarifications are recorded in the polymer review\nand correction acknowledgment bundled with this note.",
+          "old": "Independent checking of this proof and its counting constants is pending."
+        }
+      ]
+    },
+    {
+      "complete_body_equal_after_only_declared_transforms": true,
+      "published_body_sha256": "c351696f5c70b0b5a42172a37bacdb5b52271b8f54512be7d7aebe61d65898e5",
+      "source": "NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+      "status_replacements": []
+    }
+  ],
+  "author_scientific_controls_rerun": false,
+  "capsules": [
+    {
+      "bundled_bindings": 17,
+      "known_original_seals_match": true,
+      "members": 28,
+      "name": "gauss_loop_independent",
+      "reference_details": [
+        {
+          "disposition": "bundled",
+          "path": "BLIND_CHECK.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4"
+        },
+        {
+          "disposition": "bundled",
+          "path": "BLIND_DERIVATION.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe"
+        },
+        {
+          "disposition": "bundled",
+          "path": "BLIND_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137"
+        },
+        {
+          "disposition": "bundled",
+          "path": "CHECKPOINT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "046ee94d529a43321dcca105f09caa7626eda82d0b55fae8539989c5e6a5c7f8"
+        },
+        {
+          "disposition": "bundled",
+          "path": "POST_SOURCE_CHECK.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "a77a1be2f5e642351b194abf9a4479576713f846e8579cc93d427329bc1b3214"
+        },
+        {
+          "disposition": "bundled",
+          "path": "PRE_SOURCE_SEAL.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817"
+        },
+        {
+          "disposition": "bundled",
+          "path": "REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+        },
+        {
+          "disposition": "bundled",
+          "path": "SOURCE_COMPARISON_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "998bbdb08ff43210924d7efac79f2f85f3ea8bd8e7b265a87ec84add45d97295"
+        },
+        {
+          "disposition": "bundled",
+          "path": "blind_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "comparison_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/microscopic_gauss_record_loop_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_fugacity_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "3d5a46d78fd0958df7d5b79bbdcb6ed15e9ee35decb073989d2d6fd5474987b3"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_FUGACITY_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "1a0d8e2a71b53a28ef574998c7b297f8c7062cffc4b98da616bbe2323c761cdb"
+        },
+        {
+          "disposition": "bundled",
+          "path": "BLIND_CHECK.log",
+          "seal": "review/PRE_SOURCE_SEAL.json",
+          "sha256": "fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4"
+        },
+        {
+          "disposition": "bundled",
+          "path": "BLIND_DERIVATION.md",
+          "seal": "review/PRE_SOURCE_SEAL.json",
+          "sha256": "0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe"
+        },
+        {
+          "disposition": "bundled",
+          "path": "BLIND_RESULTS.json",
+          "seal": "review/PRE_SOURCE_SEAL.json",
+          "sha256": "d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137"
+        },
+        {
+          "disposition": "bundled",
+          "path": "blind_check.py",
+          "seal": "review/PRE_SOURCE_SEAL.json",
+          "sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "seal": "review/PRE_SOURCE_SEAL.json",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "seal": "review/PRE_SOURCE_SEAL.json",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        }
+      ],
+      "seal_references": 23
+    },
+    {
+      "bundled_bindings": 25,
+      "known_original_seals_match": true,
+      "members": 37,
+      "name": "gauss_polymer_independent",
+      "reference_details": [
+        {
+          "disposition": "bundled",
+          "path": "ATTEMPT_01_RECEIPT.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "d7e7c6eadd3ca819792b8b2e7aa1348a685d8647cf9f5756cf0dd7c3de15b85f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "CHECKPOINT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "44fd404796489d350d9c03daa2e8322c13a9aa0d10530cadabdf8cff4529c80a"
+        },
+        {
+          "disposition": "bundled",
+          "path": "EXTERNAL_SOURCE.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "77597d59d44c0b74fbb7c2522f172a3a901c53b1997ca8fbd0aa8c2f59ffeba8"
+        },
+        {
+          "disposition": "bundled",
+          "path": "INDEPENDENT_CHECK.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "55fbd2e959d3369d26a6c7d1aa3c1ffbe41e19ebb07899654aa215ee01605faa"
+        },
+        {
+          "disposition": "bundled",
+          "path": "INDEPENDENT_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "4c14526d0507bece4fa702da358934b9407392284cfaab364a8a010f1e27107f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "PRE_CHECKER_SEAL.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045"
+        },
+        {
+          "disposition": "bundled",
+          "path": "PROVISIONAL_REVIEW.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "f2d3f17383090ce982e9324d921272b794f1d005917f5527a058caecf0a76be4"
+        },
+        {
+          "disposition": "bundled",
+          "path": "REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7"
+        },
+        {
+          "disposition": "bundled",
+          "path": "SOURCE_COMPARISON.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "321e5c53a7bbaeaff4125d308a7d06bee8c27dcaff38c8ea791a5bce4aad6017"
+        },
+        {
+          "disposition": "external_reference_not_bundled",
+          "path": "UELTSCHI_math-ph_0304003v3.pdf",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "2cc3e036af5b2a46afe95acf0b5863fe5c7d31554debb10a2a5cade4122bdbfc"
+        },
+        {
+          "disposition": "bundled",
+          "path": "attempt_01_INDEPENDENT_CHECK.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787"
+        },
+        {
+          "disposition": "bundled",
+          "path": "attempt_01_independent_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a"
+        },
+        {
+          "disposition": "bundled",
+          "path": "independent_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/FINAL_SEAL.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_polymer_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_POLYMER_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "6eb5b86df4a756e014306cecfd6088504f462ab7a43e05b6578b13153a77fb3b"
+        },
+        {
+          "disposition": "bundled",
+          "path": "ATTEMPT_01_RECEIPT.json",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "d7e7c6eadd3ca819792b8b2e7aa1348a685d8647cf9f5756cf0dd7c3de15b85f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "EXTERNAL_SOURCE.json",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "77597d59d44c0b74fbb7c2522f172a3a901c53b1997ca8fbd0aa8c2f59ffeba8"
+        },
+        {
+          "disposition": "bundled",
+          "path": "INDEPENDENT_CHECK.log",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "55fbd2e959d3369d26a6c7d1aa3c1ffbe41e19ebb07899654aa215ee01605faa"
+        },
+        {
+          "disposition": "bundled",
+          "path": "INDEPENDENT_RESULTS.json",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "4c14526d0507bece4fa702da358934b9407392284cfaab364a8a010f1e27107f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "PROVISIONAL_REVIEW.md",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "f2d3f17383090ce982e9324d921272b794f1d005917f5527a058caecf0a76be4"
+        },
+        {
+          "disposition": "external_reference_not_bundled",
+          "path": "UELTSCHI_math-ph_0304003v3.pdf",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "2cc3e036af5b2a46afe95acf0b5863fe5c7d31554debb10a2a5cade4122bdbfc"
+        },
+        {
+          "disposition": "bundled",
+          "path": "attempt_01_INDEPENDENT_CHECK.log",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787"
+        },
+        {
+          "disposition": "bundled",
+          "path": "attempt_01_independent_check.py",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a"
+        },
+        {
+          "disposition": "bundled",
+          "path": "independent_check.py",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+        },
+        {
+          "disposition": "bundled",
+          "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/FINAL_SEAL.json",
+          "seal": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_corrections/SOURCE_CORRECTIONS.diff",
+          "seal": "review/CORRECTION_ACK.json",
+          "sha256": "bf0a959fa26fdb6bbfede499cacb1fa44e6c39464813995f4944d72bc9e0137b"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "seal": "review/CORRECTION_ACK.json",
+          "sha256": "1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/FINAL_SEAL.json",
+          "seal": "review/CORRECTION_ACK.json",
+          "sha256": "287bf746d940f3c70eb5c74f34fe29f7497c3b4ca9681f237e1448db629c10a5"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/REPORT.md",
+          "seal": "review/CORRECTION_ACK.json",
+          "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_corrections/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "seal": "review/CORRECTION_ACK.json",
+          "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3"
+        }
+      ],
+      "seal_references": 41
+    },
+    {
+      "bundled_bindings": 38,
+      "known_original_seals_match": true,
+      "members": 50,
+      "name": "local_curl_independent",
+      "reference_details": [
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/CHECKPOINT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INDEPENDENT_CHECK.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INDEPENDENT_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INITIAL_RECONSTRUCTION.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/PRE_COMPARISON_SEAL.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_COMPARISON.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_COMPARISON.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_IDENTITIES.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/compare_sources.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/independent_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/PRE_COMPARISON_SEAL.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_transverse_exchange/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-immutable-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/loop_birth_locality_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOOP_BIRTH_LOCALITY_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOOP_BIRTH_LOCALITY_RUN.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_native_formation_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_NATIVE_FORMATION_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/late_state_canonical_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LATE_STATE_CANONICAL_RESULTS.json",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LATE_STATE_CANONICAL_RUN.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_development/first_structural_equality/local_curl_native_formation_check.py",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_development/first_structural_equality/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "seal": "review/FINAL_SEAL.json",
+          "sha256": "ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INITIAL_RECONSTRUCTION.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/independent_check.py",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INDEPENDENT_CHECK.log",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INDEPENDENT_RESULTS.json",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_IDENTITIES.json",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/REPORT.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_transverse_exchange/REPORT.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/REPORT.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/REPORT.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc"
+        },
+        {
+          "disposition": "bundled",
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-immutable-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "seal": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da"
+        }
+      ],
+      "seal_references": 61
+    }
+  ],
+  "external_exclusions": [
+    {
+      "bytes": 191795,
+      "disposition": "external_reference_not_bundled",
+      "locally_verified": true,
+      "original_path": "UELTSCHI_math-ph_0304003v3.pdf",
+      "sha256": "2cc3e036af5b2a46afe95acf0b5863fe5c7d31554debb10a2a5cade4122bdbfc",
+      "url": "https://arxiv.org/pdf/math-ph/0304003v3"
+    }
+  ],
+  "graph": {
+    "actual_graph_matches_manifest": true,
+    "baseline_commit": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+    "baseline_edges": 13606,
+    "baseline_manifest_sha256": "505a6a2cd2f438c4a7990b2a8e4f884fcab4f540c70a50e62e7d4cc1ddb76fc3",
+    "baseline_nodes": 6026,
+    "current_edges": 13607,
+    "current_nodes": 6027,
+    "limitation": "Old graph cache is untracked. Old topology is compared through every tracked manifest dependency hash and degree, not an unavailable old full cache.",
+    "new_edge": [
+      "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+      "minimal_axioms"
+    ],
+    "old_manifest_entries_unchanged": 6026
+  },
+  "scientific_checker_identity_matches": {
+    "gauss_loop_fugacity_check.py": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+    "gauss_loop_polymer_check.py": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+    "loop_birth_locality_check.py": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+    "microscopic_gauss_record_loop_check.py": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9"
+  },
+  "scope": "Assembly and provenance authentication, not new mathematics or an audit verdict.",
+  "source_identities": {
+    ".claude/science/mobile-record-gauss-loops-20260921/GRAPH_VERIFICATION.json": {
+      "bytes": 171,
+      "sha256": "dc4261b1f05477e9043f7b765fe3f671f849794e3f79f1ebbca57d9b824541fe"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/INDEPENDENT_CAPSULES.json": {
+      "bytes": 64238,
+      "sha256": "498726288532c50456486df373ea37102188f3176e2feac75a9a350f182f52d2"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/PUBLICATION_TRANSFORM.json": {
+      "bytes": 1684,
+      "sha256": "3f6607eda9b8deaaecbb96b3ddbaf1ea01f4543ba126514b39e509fdc55e110c"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/README.md": {
+      "bytes": 3429,
+      "sha256": "810558baaeca241eb8a2df2d7d5126322c68e23d0ae0a774c09407cc3d3821cf"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py": {
+      "bytes": 4279,
+      "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py": {
+      "bytes": 8291,
+      "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py": {
+      "bytes": 3305,
+      "sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py": {
+      "bytes": 6862,
+      "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_development/publication_status_correction/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": {
+      "bytes": 38985,
+      "sha256": "7d13b012a6e05a23ae1d195c10954814ca628afee3cfb52443134d1193af4c1e"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/author_development/publication_status_correction/PUBLICATION_TRANSFORM.json": {
+      "bytes": 1313,
+      "sha256": "e50a9c971cab175b5a790234bf900083eca8fc3e9d51c00c01e9936daf4b898d"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/independent/gauss_loop_independent.zip": {
+      "bytes": 67242,
+      "sha256": "cffaa98062806e154e88956b9be2fdfca64bb44b1608eb81e95363e64937444a"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/independent/gauss_loop_independent_REPORT.md": {
+      "bytes": 12493,
+      "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/independent/gauss_polymer_independent.zip": {
+      "bytes": 101477,
+      "sha256": "a397ae6307642895b58dcc10c1a1bc5cead0004e25e596650bfe0ea447fb1e61"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/independent/gauss_polymer_independent_REPORT.md": {
+      "bytes": 12091,
+      "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/independent/local_curl_independent.zip": {
+      "bytes": 222709,
+      "sha256": "f571746798cc22799ce2eba14f8981d91c20edfe3b0ace1ad26d516cff5332e3"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/independent/local_curl_independent_REPORT.md": {
+      "bytes": 26690,
+      "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/primary_sources/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md": {
+      "bytes": 16513,
+      "sha256": "1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/primary_sources/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md": {
+      "bytes": 11623,
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/primary_sources/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md": {
+      "bytes": 5084,
+      "sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f"
+    },
+    ".claude/science/mobile-record-gauss-loops-20260921/verify_evidence.py": {
+      "bytes": 2643,
+      "sha256": "e0eefa14a7dff47a3b24b45a82eab96ff89982a8630012b63a11d2eefb1e19ba"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": {
+      "bytes": 39114,
+      "sha256": "7f88d63e632ce83e983b684979792b864a816f69545124f7850f4c4bbc1e829f"
+    },
+    "docs/audit/data/citation_graph.json": {
+      "bytes": 8612973,
+      "sha256": "d24e5e05fcb51c08bac661f2bb080cb90dbff3c1ebddd382b0aa9ae873becf12"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "bytes": 836219,
+      "sha256": "3003c0c6cb48910b07d85849753f87b927ddcc67345708651d0b22ce182af16c"
+    },
+    "docs/audit/scripts/write_citation_graph_manifest.py": {
+      "bytes": 2049,
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    },
+    "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py": {
+      "bytes": 6533,
+      "sha256": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+    }
+  },
+  "status_correction_inverse_verified": true
+}

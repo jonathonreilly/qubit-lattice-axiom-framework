@@ -1,0 +1,6 @@
+{
+  "observed": "Initial graph included the new claim but zero dependency edges despite its frontmatter minimal_axioms entry.",
+  "failed_check": "Expected +1 node/+1 edge; actual +1 node/+0 edges.",
+  "correction": "Added an explicit Markdown link from the introduction to MINIMAL_AXIOMS_2026-06-29.md, matching the stated dependency.",
+  "scientific_argument_changed": false
+}

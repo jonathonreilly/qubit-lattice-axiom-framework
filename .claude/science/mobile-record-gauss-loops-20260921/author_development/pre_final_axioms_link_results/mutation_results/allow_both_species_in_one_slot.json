@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_gauss_loops_static_phase_and_formation_locality_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_GAUSS_LOOPS_STATIC_PHASE_AND_FORMATION_LOCALITY_BOUNDED_THEOREM_NOTE_2026-09-21.md": "2e2de2a7b903c9166cb077d61ceb1a2455be6d27ec2e1845ab1e33f5a52c0e05",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/microscopic_gauss_record_loop_check.py": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_fugacity_check.py": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/gauss_loop_polymer_check.py": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+    ".claude/science/mobile-record-gauss-loops-20260921/author_checks/loop_birth_locality_check.py": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+    "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py": "c3f3230e7b47b317d62996a7c62867e34bb9303fb34e9dbdc29c1044fba114ed"
+  },
+  "mutation": "allow_both_species_in_one_slot",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "gauss_loop_fugacity_check.py",
+      "source_sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+      "executed_source_sha256": "c869ff6e3bb28cc3f0a6dbf55acdee1824b8619a5bdc0276feb2778cececa4de",
+      "returncode": 1,
+      "stdout": "PASS: all_four_edge_signed_current_configurations\nPASS: each_enumerated_configuration_is_Gauss_free_and_has_zero_total_vector\nPASS: isotropic_single_label_fugacity_coefficient\nPASS: enumerated_order_four_vector_covariance\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-bk1fkyt2/gauss_loop_fugacity_check.py\", line 77, in <module>\n    check('one_record_capacity_compact_phase_factor',s.simplify(s.expand_complex(factor)-target)==0)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gauss-loop-controls-bk1fkyt2/gauss_loop_fugacity_check.py\", line 17, in check\n    assert bool(ok),(name,detail)\n           ~~~~^^^^\nAssertionError: ('one_record_capacity_compact_phase_factor', None)\n"
+    }
+  ]
+}

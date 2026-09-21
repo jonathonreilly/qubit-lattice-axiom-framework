@@ -1,0 +1,1195 @@
+{
+  "created_utc": "2026-09-21T09:19:46.446716+00:00",
+  "capsules": [
+    {
+      "name": "gauss_loop_independent",
+      "archive": "independent/gauss_loop_independent.zip",
+      "zip_sha256": "cffaa98062806e154e88956b9be2fdfca64bb44b1608eb81e95363e64937444a",
+      "report": "independent/gauss_loop_independent_REPORT.md",
+      "report_sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_SOURCE_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "BLIND_CHECK.log",
+          "sha256": "fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4",
+          "bytes": 1522,
+          "disposition": "bundled",
+          "member": "bound_sources/fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4/BLIND_CHECK.log"
+        },
+        {
+          "original_path": "BLIND_DERIVATION.md",
+          "sha256": "0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe",
+          "bytes": 9979,
+          "disposition": "bundled",
+          "member": "bound_sources/0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe/BLIND_DERIVATION.md"
+        },
+        {
+          "original_path": "BLIND_RESULTS.json",
+          "sha256": "d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137",
+          "bytes": 2907,
+          "disposition": "bundled",
+          "member": "bound_sources/d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137/BLIND_RESULTS.json"
+        },
+        {
+          "original_path": "CHECKPOINT.md",
+          "sha256": "046ee94d529a43321dcca105f09caa7626eda82d0b55fae8539989c5e6a5c7f8",
+          "bytes": 917,
+          "disposition": "bundled",
+          "member": "bound_sources/046ee94d529a43321dcca105f09caa7626eda82d0b55fae8539989c5e6a5c7f8/CHECKPOINT.md"
+        },
+        {
+          "original_path": "POST_SOURCE_CHECK.log",
+          "sha256": "a77a1be2f5e642351b194abf9a4479576713f846e8579cc93d427329bc1b3214",
+          "bytes": 862,
+          "disposition": "bundled",
+          "member": "bound_sources/a77a1be2f5e642351b194abf9a4479576713f846e8579cc93d427329bc1b3214/POST_SOURCE_CHECK.log"
+        },
+        {
+          "original_path": "PRE_SOURCE_SEAL.json",
+          "sha256": "c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817",
+          "bytes": 1726,
+          "disposition": "bundled",
+          "member": "bound_sources/c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817/PRE_SOURCE_SEAL.json"
+        },
+        {
+          "original_path": "REPORT.md",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+          "bytes": 12493,
+          "disposition": "bundled",
+          "member": "bound_sources/046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af/REPORT.md"
+        },
+        {
+          "original_path": "SOURCE_COMPARISON_RESULTS.json",
+          "sha256": "998bbdb08ff43210924d7efac79f2f85f3ea8bd8e7b265a87ec84add45d97295",
+          "bytes": 2550,
+          "disposition": "bundled",
+          "member": "bound_sources/998bbdb08ff43210924d7efac79f2f85f3ea8bd8e7b265a87ec84add45d97295/SOURCE_COMPARISON_RESULTS.json"
+        },
+        {
+          "original_path": "blind_check.py",
+          "sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f",
+          "bytes": 9622,
+          "disposition": "bundled",
+          "member": "bound_sources/4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f/blind_check.py"
+        },
+        {
+          "original_path": "comparison_check.py",
+          "sha256": "df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e",
+          "bytes": 4610,
+          "disposition": "bundled",
+          "member": "bound_sources/df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e/comparison_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+          "bytes": 11623,
+          "disposition": "bundled",
+          "member": "bound_sources/684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/microscopic_gauss_record_loop_check.py",
+          "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+          "bytes": 6862,
+          "disposition": "bundled",
+          "member": "bound_sources/dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9/microscopic_gauss_record_loop_check.py"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_fugacity_check.py",
+          "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+          "bytes": 4279,
+          "disposition": "bundled",
+          "member": "bound_sources/f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0/gauss_loop_fugacity_check.py"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json",
+          "sha256": "3d5a46d78fd0958df7d5b79bbdcb6ed15e9ee35decb073989d2d6fd5474987b3",
+          "bytes": 3206,
+          "disposition": "bundled",
+          "member": "bound_sources/3d5a46d78fd0958df7d5b79bbdcb6ed15e9ee35decb073989d2d6fd5474987b3/MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_FUGACITY_RESULTS.json",
+          "sha256": "1a0d8e2a71b53a28ef574998c7b297f8c7062cffc4b98da616bbe2323c761cdb",
+          "bytes": 1917,
+          "disposition": "bundled",
+          "member": "bound_sources/1a0d8e2a71b53a28ef574998c7b297f8c7062cffc4b98da616bbe2323c761cdb/GAUSS_LOOP_FUGACITY_RESULTS.json"
+        }
+      ],
+      "members": [
+        {
+          "path": "bound_sources/046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af/REPORT.md",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+          "bytes": 12493
+        },
+        {
+          "path": "bound_sources/046ee94d529a43321dcca105f09caa7626eda82d0b55fae8539989c5e6a5c7f8/CHECKPOINT.md",
+          "sha256": "046ee94d529a43321dcca105f09caa7626eda82d0b55fae8539989c5e6a5c7f8",
+          "bytes": 917
+        },
+        {
+          "path": "bound_sources/0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe/BLIND_DERIVATION.md",
+          "sha256": "0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe",
+          "bytes": 9979
+        },
+        {
+          "path": "bound_sources/1a0d8e2a71b53a28ef574998c7b297f8c7062cffc4b98da616bbe2323c761cdb/GAUSS_LOOP_FUGACITY_RESULTS.json",
+          "sha256": "1a0d8e2a71b53a28ef574998c7b297f8c7062cffc4b98da616bbe2323c761cdb",
+          "bytes": 1917
+        },
+        {
+          "path": "bound_sources/3d5a46d78fd0958df7d5b79bbdcb6ed15e9ee35decb073989d2d6fd5474987b3/MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json",
+          "sha256": "3d5a46d78fd0958df7d5b79bbdcb6ed15e9ee35decb073989d2d6fd5474987b3",
+          "bytes": 3206
+        },
+        {
+          "path": "bound_sources/4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f/blind_check.py",
+          "sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f",
+          "bytes": 9622
+        },
+        {
+          "path": "bound_sources/684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+          "bytes": 11623
+        },
+        {
+          "path": "bound_sources/998bbdb08ff43210924d7efac79f2f85f3ea8bd8e7b265a87ec84add45d97295/SOURCE_COMPARISON_RESULTS.json",
+          "sha256": "998bbdb08ff43210924d7efac79f2f85f3ea8bd8e7b265a87ec84add45d97295",
+          "bytes": 2550
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737
+        },
+        {
+          "path": "bound_sources/a77a1be2f5e642351b194abf9a4479576713f846e8579cc93d427329bc1b3214/POST_SOURCE_CHECK.log",
+          "sha256": "a77a1be2f5e642351b194abf9a4479576713f846e8579cc93d427329bc1b3214",
+          "bytes": 862
+        },
+        {
+          "path": "bound_sources/c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817/PRE_SOURCE_SEAL.json",
+          "sha256": "c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817",
+          "bytes": 1726
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253
+        },
+        {
+          "path": "bound_sources/d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137/BLIND_RESULTS.json",
+          "sha256": "d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137",
+          "bytes": 2907
+        },
+        {
+          "path": "bound_sources/dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9/microscopic_gauss_record_loop_check.py",
+          "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9",
+          "bytes": 6862
+        },
+        {
+          "path": "bound_sources/df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e/comparison_check.py",
+          "sha256": "df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e",
+          "bytes": 4610
+        },
+        {
+          "path": "bound_sources/f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0/gauss_loop_fugacity_check.py",
+          "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0",
+          "bytes": 4279
+        },
+        {
+          "path": "bound_sources/fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4/BLIND_CHECK.log",
+          "sha256": "fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4",
+          "bytes": 1522
+        },
+        {
+          "path": "review/BLIND_CHECK.log",
+          "sha256": "fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4",
+          "bytes": 1522
+        },
+        {
+          "path": "review/BLIND_DERIVATION.md",
+          "sha256": "0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe",
+          "bytes": 9979
+        },
+        {
+          "path": "review/BLIND_RESULTS.json",
+          "sha256": "d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137",
+          "bytes": 2907
+        },
+        {
+          "path": "review/CHECKPOINT.md",
+          "sha256": "046ee94d529a43321dcca105f09caa7626eda82d0b55fae8539989c5e6a5c7f8",
+          "bytes": 917
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf",
+          "bytes": 3931
+        },
+        {
+          "path": "review/POST_SOURCE_CHECK.log",
+          "sha256": "a77a1be2f5e642351b194abf9a4479576713f846e8579cc93d427329bc1b3214",
+          "bytes": 862
+        },
+        {
+          "path": "review/PRE_SOURCE_SEAL.json",
+          "sha256": "c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817",
+          "bytes": 1726
+        },
+        {
+          "path": "review/REPORT.md",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+          "bytes": 12493
+        },
+        {
+          "path": "review/SOURCE_COMPARISON_RESULTS.json",
+          "sha256": "998bbdb08ff43210924d7efac79f2f85f3ea8bd8e7b265a87ec84add45d97295",
+          "bytes": 2550
+        },
+        {
+          "path": "review/blind_check.py",
+          "sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f",
+          "bytes": 9622
+        },
+        {
+          "path": "review/comparison_check.py",
+          "sha256": "df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e",
+          "bytes": 4610
+        }
+      ]
+    },
+    {
+      "name": "gauss_polymer_independent",
+      "archive": "independent/gauss_polymer_independent.zip",
+      "zip_sha256": "a397ae6307642895b58dcc10c1a1bc5cead0004e25e596650bfe0ea447fb1e61",
+      "report": "independent/gauss_polymer_independent_REPORT.md",
+      "report_sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_CHECKER_SEAL.json",
+        "review/CORRECTION_ACK.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "ATTEMPT_01_RECEIPT.json",
+          "sha256": "d7e7c6eadd3ca819792b8b2e7aa1348a685d8647cf9f5756cf0dd7c3de15b85f",
+          "bytes": 507,
+          "disposition": "bundled",
+          "member": "bound_sources/d7e7c6eadd3ca819792b8b2e7aa1348a685d8647cf9f5756cf0dd7c3de15b85f/ATTEMPT_01_RECEIPT.json"
+        },
+        {
+          "original_path": "CHECKPOINT.md",
+          "sha256": "44fd404796489d350d9c03daa2e8322c13a9aa0d10530cadabdf8cff4529c80a",
+          "bytes": 751,
+          "disposition": "bundled",
+          "member": "bound_sources/44fd404796489d350d9c03daa2e8322c13a9aa0d10530cadabdf8cff4529c80a/CHECKPOINT.md"
+        },
+        {
+          "original_path": "EXTERNAL_SOURCE.json",
+          "sha256": "77597d59d44c0b74fbb7c2522f172a3a901c53b1997ca8fbd0aa8c2f59ffeba8",
+          "bytes": 718,
+          "disposition": "bundled",
+          "member": "bound_sources/77597d59d44c0b74fbb7c2522f172a3a901c53b1997ca8fbd0aa8c2f59ffeba8/EXTERNAL_SOURCE.json"
+        },
+        {
+          "original_path": "INDEPENDENT_CHECK.log",
+          "sha256": "55fbd2e959d3369d26a6c7d1aa3c1ffbe41e19ebb07899654aa215ee01605faa",
+          "bytes": 1427,
+          "disposition": "bundled",
+          "member": "bound_sources/55fbd2e959d3369d26a6c7d1aa3c1ffbe41e19ebb07899654aa215ee01605faa/INDEPENDENT_CHECK.log"
+        },
+        {
+          "original_path": "INDEPENDENT_RESULTS.json",
+          "sha256": "4c14526d0507bece4fa702da358934b9407392284cfaab364a8a010f1e27107f",
+          "bytes": 2655,
+          "disposition": "bundled",
+          "member": "bound_sources/4c14526d0507bece4fa702da358934b9407392284cfaab364a8a010f1e27107f/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "PRE_CHECKER_SEAL.json",
+          "sha256": "771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045",
+          "bytes": 4407,
+          "disposition": "bundled",
+          "member": "bound_sources/771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045/PRE_CHECKER_SEAL.json"
+        },
+        {
+          "original_path": "PROVISIONAL_REVIEW.md",
+          "sha256": "f2d3f17383090ce982e9324d921272b794f1d005917f5527a058caecf0a76be4",
+          "bytes": 12294,
+          "disposition": "bundled",
+          "member": "bound_sources/f2d3f17383090ce982e9324d921272b794f1d005917f5527a058caecf0a76be4/PROVISIONAL_REVIEW.md"
+        },
+        {
+          "original_path": "REPORT.md",
+          "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7",
+          "bytes": 12091,
+          "disposition": "bundled",
+          "member": "bound_sources/b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7/REPORT.md"
+        },
+        {
+          "original_path": "SOURCE_COMPARISON.json",
+          "sha256": "321e5c53a7bbaeaff4125d308a7d06bee8c27dcaff38c8ea791a5bce4aad6017",
+          "bytes": 2246,
+          "disposition": "bundled",
+          "member": "bound_sources/321e5c53a7bbaeaff4125d308a7d06bee8c27dcaff38c8ea791a5bce4aad6017/SOURCE_COMPARISON.json"
+        },
+        {
+          "original_path": "UELTSCHI_math-ph_0304003v3.pdf",
+          "sha256": "2cc3e036af5b2a46afe95acf0b5863fe5c7d31554debb10a2a5cade4122bdbfc",
+          "bytes": 191795,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://arxiv.org/pdf/math-ph/0304003v3",
+          "locally_verified": true
+        },
+        {
+          "original_path": "attempt_01_INDEPENDENT_CHECK.log",
+          "sha256": "51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787",
+          "bytes": 2292,
+          "disposition": "bundled",
+          "member": "bound_sources/51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787/attempt_01_INDEPENDENT_CHECK.log"
+        },
+        {
+          "original_path": "attempt_01_independent_check.py",
+          "sha256": "b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a",
+          "bytes": 9034,
+          "disposition": "bundled",
+          "member": "bound_sources/b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a/attempt_01_independent_check.py"
+        },
+        {
+          "original_path": "independent_check.py",
+          "sha256": "db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff",
+          "bytes": 9070,
+          "disposition": "bundled",
+          "member": "bound_sources/db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3",
+          "bytes": 16105,
+          "disposition": "bundled",
+          "member": "bound_sources/3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+          "bytes": 11623,
+          "disposition": "bundled",
+          "member": "bound_sources/684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+          "bytes": 12493,
+          "disposition": "bundled",
+          "member": "bound_sources/046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af/REPORT.md"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/FINAL_SEAL.json",
+          "sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf",
+          "bytes": 3931,
+          "disposition": "bundled",
+          "member": "bound_sources/2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf/FINAL_SEAL.json"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_polymer_check.py",
+          "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+          "bytes": 8291,
+          "disposition": "bundled",
+          "member": "bound_sources/493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec/gauss_loop_polymer_check.py"
+        },
+        {
+          "original_path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_POLYMER_RESULTS.json",
+          "sha256": "6eb5b86df4a756e014306cecfd6088504f462ab7a43e05b6578b13153a77fb3b",
+          "bytes": 4377,
+          "disposition": "bundled",
+          "member": "bound_sources/6eb5b86df4a756e014306cecfd6088504f462ab7a43e05b6578b13153a77fb3b/GAUSS_LOOP_POLYMER_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_corrections/SOURCE_CORRECTIONS.diff",
+          "sha256": "bf0a959fa26fdb6bbfede499cacb1fa44e6c39464813995f4944d72bc9e0137b",
+          "bytes": 1567,
+          "disposition": "bundled",
+          "member": "bound_sources/bf0a959fa26fdb6bbfede499cacb1fa44e6c39464813995f4944d72bc9e0137b/SOURCE_CORRECTIONS.diff"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "sha256": "1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b",
+          "bytes": 16513,
+          "disposition": "bundled",
+          "member": "bound_sources/1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/FINAL_SEAL.json",
+          "sha256": "287bf746d940f3c70eb5c74f34fe29f7497c3b4ca9681f237e1448db629c10a5",
+          "bytes": 5593,
+          "disposition": "bundled",
+          "member": "bound_sources/287bf746d940f3c70eb5c74f34fe29f7497c3b4ca9681f237e1448db629c10a5/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/REPORT.md",
+          "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7",
+          "bytes": 12091,
+          "disposition": "bundled",
+          "member": "bound_sources/b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_corrections/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3",
+          "bytes": 16105,
+          "disposition": "bundled",
+          "member": "bound_sources/3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md"
+        }
+      ],
+      "members": [
+        {
+          "path": "bound_sources/046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af/REPORT.md",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+          "bytes": 12493
+        },
+        {
+          "path": "bound_sources/1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "sha256": "1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b",
+          "bytes": 16513
+        },
+        {
+          "path": "bound_sources/287bf746d940f3c70eb5c74f34fe29f7497c3b4ca9681f237e1448db629c10a5/FINAL_SEAL.json",
+          "sha256": "287bf746d940f3c70eb5c74f34fe29f7497c3b4ca9681f237e1448db629c10a5",
+          "bytes": 5593
+        },
+        {
+          "path": "bound_sources/2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf/FINAL_SEAL.json",
+          "sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf",
+          "bytes": 3931
+        },
+        {
+          "path": "bound_sources/321e5c53a7bbaeaff4125d308a7d06bee8c27dcaff38c8ea791a5bce4aad6017/SOURCE_COMPARISON.json",
+          "sha256": "321e5c53a7bbaeaff4125d308a7d06bee8c27dcaff38c8ea791a5bce4aad6017",
+          "bytes": 2246
+        },
+        {
+          "path": "bound_sources/3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+          "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3",
+          "bytes": 16105
+        },
+        {
+          "path": "bound_sources/44fd404796489d350d9c03daa2e8322c13a9aa0d10530cadabdf8cff4529c80a/CHECKPOINT.md",
+          "sha256": "44fd404796489d350d9c03daa2e8322c13a9aa0d10530cadabdf8cff4529c80a",
+          "bytes": 751
+        },
+        {
+          "path": "bound_sources/493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec/gauss_loop_polymer_check.py",
+          "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec",
+          "bytes": 8291
+        },
+        {
+          "path": "bound_sources/4c14526d0507bece4fa702da358934b9407392284cfaab364a8a010f1e27107f/INDEPENDENT_RESULTS.json",
+          "sha256": "4c14526d0507bece4fa702da358934b9407392284cfaab364a8a010f1e27107f",
+          "bytes": 2655
+        },
+        {
+          "path": "bound_sources/51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787/attempt_01_INDEPENDENT_CHECK.log",
+          "sha256": "51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787",
+          "bytes": 2292
+        },
+        {
+          "path": "bound_sources/55fbd2e959d3369d26a6c7d1aa3c1ffbe41e19ebb07899654aa215ee01605faa/INDEPENDENT_CHECK.log",
+          "sha256": "55fbd2e959d3369d26a6c7d1aa3c1ffbe41e19ebb07899654aa215ee01605faa",
+          "bytes": 1427
+        },
+        {
+          "path": "bound_sources/684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+          "bytes": 11623
+        },
+        {
+          "path": "bound_sources/6eb5b86df4a756e014306cecfd6088504f462ab7a43e05b6578b13153a77fb3b/GAUSS_LOOP_POLYMER_RESULTS.json",
+          "sha256": "6eb5b86df4a756e014306cecfd6088504f462ab7a43e05b6578b13153a77fb3b",
+          "bytes": 4377
+        },
+        {
+          "path": "bound_sources/771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045/PRE_CHECKER_SEAL.json",
+          "sha256": "771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045",
+          "bytes": 4407
+        },
+        {
+          "path": "bound_sources/77597d59d44c0b74fbb7c2522f172a3a901c53b1997ca8fbd0aa8c2f59ffeba8/EXTERNAL_SOURCE.json",
+          "sha256": "77597d59d44c0b74fbb7c2522f172a3a901c53b1997ca8fbd0aa8c2f59ffeba8",
+          "bytes": 718
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737
+        },
+        {
+          "path": "bound_sources/b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7/REPORT.md",
+          "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7",
+          "bytes": 12091
+        },
+        {
+          "path": "bound_sources/b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a/attempt_01_independent_check.py",
+          "sha256": "b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a",
+          "bytes": 9034
+        },
+        {
+          "path": "bound_sources/bf0a959fa26fdb6bbfede499cacb1fa44e6c39464813995f4944d72bc9e0137b/SOURCE_CORRECTIONS.diff",
+          "sha256": "bf0a959fa26fdb6bbfede499cacb1fa44e6c39464813995f4944d72bc9e0137b",
+          "bytes": 1567
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253
+        },
+        {
+          "path": "bound_sources/d7e7c6eadd3ca819792b8b2e7aa1348a685d8647cf9f5756cf0dd7c3de15b85f/ATTEMPT_01_RECEIPT.json",
+          "sha256": "d7e7c6eadd3ca819792b8b2e7aa1348a685d8647cf9f5756cf0dd7c3de15b85f",
+          "bytes": 507
+        },
+        {
+          "path": "bound_sources/db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff/independent_check.py",
+          "sha256": "db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff",
+          "bytes": 9070
+        },
+        {
+          "path": "bound_sources/f2d3f17383090ce982e9324d921272b794f1d005917f5527a058caecf0a76be4/PROVISIONAL_REVIEW.md",
+          "sha256": "f2d3f17383090ce982e9324d921272b794f1d005917f5527a058caecf0a76be4",
+          "bytes": 12294
+        },
+        {
+          "path": "review/ATTEMPT_01_RECEIPT.json",
+          "sha256": "d7e7c6eadd3ca819792b8b2e7aa1348a685d8647cf9f5756cf0dd7c3de15b85f",
+          "bytes": 507
+        },
+        {
+          "path": "review/CHECKPOINT.md",
+          "sha256": "44fd404796489d350d9c03daa2e8322c13a9aa0d10530cadabdf8cff4529c80a",
+          "bytes": 751
+        },
+        {
+          "path": "review/CORRECTION_ACK.json",
+          "sha256": "5f69b132dc26a9cfdec5de3c2b8c2b6beafdb778dbc7624f06456f298c1a5471",
+          "bytes": 2651
+        },
+        {
+          "path": "review/EXTERNAL_SOURCE.json",
+          "sha256": "77597d59d44c0b74fbb7c2522f172a3a901c53b1997ca8fbd0aa8c2f59ffeba8",
+          "bytes": 718
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "sha256": "287bf746d940f3c70eb5c74f34fe29f7497c3b4ca9681f237e1448db629c10a5",
+          "bytes": 5593
+        },
+        {
+          "path": "review/INDEPENDENT_CHECK.log",
+          "sha256": "55fbd2e959d3369d26a6c7d1aa3c1ffbe41e19ebb07899654aa215ee01605faa",
+          "bytes": 1427
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "sha256": "4c14526d0507bece4fa702da358934b9407392284cfaab364a8a010f1e27107f",
+          "bytes": 2655
+        },
+        {
+          "path": "review/PRE_CHECKER_SEAL.json",
+          "sha256": "771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045",
+          "bytes": 4407
+        },
+        {
+          "path": "review/PROVISIONAL_REVIEW.md",
+          "sha256": "f2d3f17383090ce982e9324d921272b794f1d005917f5527a058caecf0a76be4",
+          "bytes": 12294
+        },
+        {
+          "path": "review/REPORT.md",
+          "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7",
+          "bytes": 12091
+        },
+        {
+          "path": "review/SOURCE_COMPARISON.json",
+          "sha256": "321e5c53a7bbaeaff4125d308a7d06bee8c27dcaff38c8ea791a5bce4aad6017",
+          "bytes": 2246
+        },
+        {
+          "path": "review/attempt_01_INDEPENDENT_CHECK.log",
+          "sha256": "51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787",
+          "bytes": 2292
+        },
+        {
+          "path": "review/attempt_01_independent_check.py",
+          "sha256": "b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a",
+          "bytes": 9034
+        },
+        {
+          "path": "review/independent_check.py",
+          "sha256": "db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff",
+          "bytes": 9070
+        }
+      ]
+    },
+    {
+      "name": "local_curl_independent",
+      "archive": "independent/local_curl_independent.zip",
+      "zip_sha256": "f571746798cc22799ce2eba14f8981d91c20edfe3b0ace1ad26d516cff5332e3",
+      "report": "independent/local_curl_independent_REPORT.md",
+      "report_sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_COMPARISON_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/CHECKPOINT.md",
+          "sha256": "288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e",
+          "bytes": 633,
+          "disposition": "bundled",
+          "member": "bound_sources/288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e/CHECKPOINT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INDEPENDENT_CHECK.log",
+          "sha256": "be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6",
+          "bytes": 3120,
+          "disposition": "bundled",
+          "member": "bound_sources/be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6/INDEPENDENT_CHECK.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INDEPENDENT_RESULTS.json",
+          "sha256": "24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f",
+          "bytes": 4316,
+          "disposition": "bundled",
+          "member": "bound_sources/24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INITIAL_RECONSTRUCTION.md",
+          "sha256": "ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20",
+          "bytes": 20855,
+          "disposition": "bundled",
+          "member": "bound_sources/ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20/INITIAL_RECONSTRUCTION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/PRE_COMPARISON_SEAL.json",
+          "sha256": "6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22",
+          "bytes": 6669,
+          "disposition": "bundled",
+          "member": "bound_sources/6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22/PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/REPORT.md",
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232",
+          "bytes": 26690,
+          "disposition": "bundled",
+          "member": "bound_sources/53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_COMPARISON.json",
+          "sha256": "332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7",
+          "bytes": 5387,
+          "disposition": "bundled",
+          "member": "bound_sources/332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7/SOURCE_COMPARISON.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_COMPARISON.log",
+          "sha256": "2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c",
+          "bytes": 129,
+          "disposition": "bundled",
+          "member": "bound_sources/2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c/SOURCE_COMPARISON.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_IDENTITIES.json",
+          "sha256": "2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28",
+          "bytes": 4959,
+          "disposition": "bundled",
+          "member": "bound_sources/2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28/SOURCE_IDENTITIES.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/compare_sources.py",
+          "sha256": "5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d",
+          "bytes": 4356,
+          "disposition": "bundled",
+          "member": "bound_sources/5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d/compare_sources.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/independent_check.py",
+          "sha256": "42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e",
+          "bytes": 13399,
+          "disposition": "bundled",
+          "member": "bound_sources/42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+          "sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f",
+          "bytes": 5084,
+          "disposition": "bundled",
+          "member": "bound_sources/f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+          "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f",
+          "bytes": 16425,
+          "disposition": "bundled",
+          "member": "bound_sources/a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+          "bytes": 11623,
+          "disposition": "bundled",
+          "member": "bound_sources/684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333,
+          "disposition": "bundled",
+          "member": "bound_sources/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753/MINIMAL_AXIOMS_2026-06-29.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+          "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3",
+          "bytes": 18148,
+          "disposition": "bundled",
+          "member": "bound_sources/60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/REPORT.md",
+          "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c",
+          "bytes": 21955,
+          "disposition": "bundled",
+          "member": "bound_sources/dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_transverse_exchange/REPORT.md",
+          "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf",
+          "bytes": 30451,
+          "disposition": "bundled",
+          "member": "bound_sources/9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/REPORT.md",
+          "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68",
+          "bytes": 22838,
+          "disposition": "bundled",
+          "member": "bound_sources/772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/REPORT.md",
+          "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc",
+          "bytes": 25686,
+          "disposition": "bundled",
+          "member": "bound_sources/168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+          "bytes": 12493,
+          "disposition": "bundled",
+          "member": "bound_sources/046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0",
+          "bytes": 26438,
+          "disposition": "bundled",
+          "member": "bound_sources/d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+          "bytes": 34314,
+          "disposition": "bundled",
+          "member": "bound_sources/b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-immutable-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+          "bytes": 23487,
+          "disposition": "bundled",
+          "member": "bound_sources/4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/loop_birth_locality_check.py",
+          "sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+          "bytes": 3305,
+          "disposition": "bundled",
+          "member": "bound_sources/e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4/loop_birth_locality_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOOP_BIRTH_LOCALITY_RESULTS.json",
+          "sha256": "bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc",
+          "bytes": 1034,
+          "disposition": "bundled",
+          "member": "bound_sources/bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc/LOOP_BIRTH_LOCALITY_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOOP_BIRTH_LOCALITY_RUN.log",
+          "sha256": "705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad",
+          "bytes": 288,
+          "disposition": "bundled",
+          "member": "bound_sources/705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad/LOOP_BIRTH_LOCALITY_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_native_formation_check.py",
+          "sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+          "bytes": 6068,
+          "disposition": "bundled",
+          "member": "bound_sources/6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed/local_curl_native_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_NATIVE_FORMATION_RESULTS.json",
+          "sha256": "ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189",
+          "bytes": 1921,
+          "disposition": "bundled",
+          "member": "bound_sources/ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189/LOCAL_CURL_NATIVE_FORMATION_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "sha256": "716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7",
+          "bytes": 709,
+          "disposition": "bundled",
+          "member": "bound_sources/716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7/LOCAL_CURL_NATIVE_FORMATION_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/late_state_canonical_check.py",
+          "sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+          "bytes": 5824,
+          "disposition": "bundled",
+          "member": "bound_sources/5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb/late_state_canonical_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LATE_STATE_CANONICAL_RESULTS.json",
+          "sha256": "1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50",
+          "bytes": 1518,
+          "disposition": "bundled",
+          "member": "bound_sources/1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50/LATE_STATE_CANONICAL_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LATE_STATE_CANONICAL_RUN.log",
+          "sha256": "5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d",
+          "bytes": 424,
+          "disposition": "bundled",
+          "member": "bound_sources/5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d/LATE_STATE_CANONICAL_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_development/first_structural_equality/local_curl_native_formation_check.py",
+          "sha256": "47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b",
+          "bytes": 6046,
+          "disposition": "bundled",
+          "member": "bound_sources/47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b/local_curl_native_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_development/first_structural_equality/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "sha256": "ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823",
+          "bytes": 1511,
+          "disposition": "bundled",
+          "member": "bound_sources/ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823/LOCAL_CURL_NATIVE_FORMATION_RUN.log"
+        }
+      ],
+      "members": [
+        {
+          "path": "bound_sources/046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af/REPORT.md",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+          "bytes": 12493
+        },
+        {
+          "path": "bound_sources/168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc/REPORT.md",
+          "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc",
+          "bytes": 25686
+        },
+        {
+          "path": "bound_sources/1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50/LATE_STATE_CANONICAL_RESULTS.json",
+          "sha256": "1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50",
+          "bytes": 1518
+        },
+        {
+          "path": "bound_sources/24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f/INDEPENDENT_RESULTS.json",
+          "sha256": "24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f",
+          "bytes": 4316
+        },
+        {
+          "path": "bound_sources/288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e/CHECKPOINT.md",
+          "sha256": "288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e",
+          "bytes": 633
+        },
+        {
+          "path": "bound_sources/2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c/SOURCE_COMPARISON.log",
+          "sha256": "2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c",
+          "bytes": 129
+        },
+        {
+          "path": "bound_sources/2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28/SOURCE_IDENTITIES.json",
+          "sha256": "2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28",
+          "bytes": 4959
+        },
+        {
+          "path": "bound_sources/332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7/SOURCE_COMPARISON.json",
+          "sha256": "332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7",
+          "bytes": 5387
+        },
+        {
+          "path": "bound_sources/42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e/independent_check.py",
+          "sha256": "42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e",
+          "bytes": 13399
+        },
+        {
+          "path": "bound_sources/47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b/local_curl_native_formation_check.py",
+          "sha256": "47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b",
+          "bytes": 6046
+        },
+        {
+          "path": "bound_sources/4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+          "bytes": 23487
+        },
+        {
+          "path": "bound_sources/5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d/LATE_STATE_CANONICAL_RUN.log",
+          "sha256": "5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d",
+          "bytes": 424
+        },
+        {
+          "path": "bound_sources/53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232/REPORT.md",
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232",
+          "bytes": 26690
+        },
+        {
+          "path": "bound_sources/5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb/late_state_canonical_check.py",
+          "sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+          "bytes": 5824
+        },
+        {
+          "path": "bound_sources/5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d/compare_sources.py",
+          "sha256": "5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d",
+          "bytes": 4356
+        },
+        {
+          "path": "bound_sources/60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3/REPORT.md",
+          "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3",
+          "bytes": 18148
+        },
+        {
+          "path": "bound_sources/684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+          "bytes": 11623
+        },
+        {
+          "path": "bound_sources/6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22/PRE_COMPARISON_SEAL.json",
+          "sha256": "6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22",
+          "bytes": 6669
+        },
+        {
+          "path": "bound_sources/6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed/local_curl_native_formation_check.py",
+          "sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+          "bytes": 6068
+        },
+        {
+          "path": "bound_sources/705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad/LOOP_BIRTH_LOCALITY_RUN.log",
+          "sha256": "705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad",
+          "bytes": 288
+        },
+        {
+          "path": "bound_sources/716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "sha256": "716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7",
+          "bytes": 709
+        },
+        {
+          "path": "bound_sources/772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68/REPORT.md",
+          "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68",
+          "bytes": 22838
+        },
+        {
+          "path": "bound_sources/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490
+        },
+        {
+          "path": "bound_sources/9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf/REPORT.md",
+          "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf",
+          "bytes": 30451
+        },
+        {
+          "path": "bound_sources/a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+          "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f",
+          "bytes": 16425
+        },
+        {
+          "path": "bound_sources/ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20/INITIAL_RECONSTRUCTION.md",
+          "sha256": "ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20",
+          "bytes": 20855
+        },
+        {
+          "path": "bound_sources/b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+          "bytes": 34314
+        },
+        {
+          "path": "bound_sources/bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc/LOOP_BIRTH_LOCALITY_RESULTS.json",
+          "sha256": "bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc",
+          "bytes": 1034
+        },
+        {
+          "path": "bound_sources/be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6/INDEPENDENT_CHECK.log",
+          "sha256": "be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6",
+          "bytes": 3120
+        },
+        {
+          "path": "bound_sources/d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0",
+          "bytes": 26438
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253
+        },
+        {
+          "path": "bound_sources/dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c/REPORT.md",
+          "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c",
+          "bytes": 21955
+        },
+        {
+          "path": "bound_sources/e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4/loop_birth_locality_check.py",
+          "sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+          "bytes": 3305
+        },
+        {
+          "path": "bound_sources/ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "sha256": "ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823",
+          "bytes": 1511
+        },
+        {
+          "path": "bound_sources/f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+          "sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f",
+          "bytes": 5084
+        },
+        {
+          "path": "bound_sources/ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189/LOCAL_CURL_NATIVE_FORMATION_RESULTS.json",
+          "sha256": "ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189",
+          "bytes": 1921
+        },
+        {
+          "path": "review/CHECKPOINT.md",
+          "sha256": "288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e",
+          "bytes": 633
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "sha256": "e687e466fd8505ad7f98e205bae0c611fd742139a638cc063b3d9e1c988240bb",
+          "bytes": 13257
+        },
+        {
+          "path": "review/INDEPENDENT_CHECK.log",
+          "sha256": "be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6",
+          "bytes": 3120
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "sha256": "24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f",
+          "bytes": 4316
+        },
+        {
+          "path": "review/INITIAL_RECONSTRUCTION.md",
+          "sha256": "ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20",
+          "bytes": 20855
+        },
+        {
+          "path": "review/PRE_COMPARISON_SEAL.json",
+          "sha256": "6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22",
+          "bytes": 6669
+        },
+        {
+          "path": "review/REPORT.md",
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232",
+          "bytes": 26690
+        },
+        {
+          "path": "review/SOURCE_COMPARISON.json",
+          "sha256": "332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7",
+          "bytes": 5387
+        },
+        {
+          "path": "review/SOURCE_COMPARISON.log",
+          "sha256": "2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c",
+          "bytes": 129
+        },
+        {
+          "path": "review/SOURCE_IDENTITIES.json",
+          "sha256": "2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28",
+          "bytes": 4959
+        },
+        {
+          "path": "review/compare_sources.py",
+          "sha256": "5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d",
+          "bytes": 4356
+        },
+        {
+          "path": "review/independent_check.py",
+          "sha256": "42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e",
+          "bytes": 13399
+        }
+      ]
+    }
+  ],
+  "scope": "Byte provenance verification only; external reference exclusion is explicit."
+}

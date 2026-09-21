@@ -1,0 +1,37 @@
+{
+ "task": "P:8563",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block51-the-wi",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8563",
+ "pr": 8563,
+ "branch": "physics-loop/admissibility-induced-law-block51-the-wind-is-not-isotropic-cubic-lattice-viscosity-20260921",
+ "git_sha": "24944a79",
+ "started_utc": "20260921T155534Z",
+ "elapsed_s": 4.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_viscous_term_of_cubic_symmetry_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=15 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "38d4743fc6b76d4e44d7bf54d1dd02dd6e2790af62122389c1dc9b20e52f5084",
+ "stdout_tail": "PR #8563: ail51: the wind of a capturing body is not isotropic \u2014 the lattice's streaming gives a viscous term of cubic symmetry (corrects an assumption of blocks 45\u201348)\nbranch physics-loop/admissibility-induced-law-block51-the-wind-is-not-isotropic-cubic-lattice-viscosity-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_viscous_term_of_cubic_symmetry_2026_09_21.py: rc=0 PASS=15 FAIL=0\n   mutation second_order_term_without_half: expected B observed B ok\n   mutation fourth_moment_isotropic: expected C observed C ok\n   mutation lattice_viscosity_coefficient_wrong: expected C observed C ok\n   mutation cubic_term_is_a_gradient: expected D observed D ok\n   mutation inflow_is_potential_flow: expected E observed E ok\n   mutation inflow_not_homogeneous: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T155539Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+PR #8562: ail50: inertia joined with the rule's pair weights by a clock — a global clock is exact, a local clock is exact for pairs and fails at three records
+branch physics-loop/admissibility-induced-law-block50-inertia-joined-with-the-rules-weights-by-a-clock-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_inertia_joined_with_the_rules_pair_weights_by_a_clock_global_exact_local_exact_for_pairs_defect_at_three_records_2026_09_21.py: rc=0 PASS=14 FAIL=0
+   mutation blocked_record_waits: expected B observed B ok
+   mutation global_clock_uses_arrival_weight: expected B observed B ok
+   mutation local_clock_claimed_exact_at_three: expected C observed C ok
+   mutation defect_identity_wrong_site: expected C observed C ok
+   mutation neutral_scale_wrong: expected D observed D ok
+   mutation redraw_uniform_with_weights: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

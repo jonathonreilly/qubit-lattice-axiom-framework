@@ -1,0 +1,12 @@
+PR #8563: ail51: the wind of a capturing body is not isotropic — the lattice's streaming gives a viscous term of cubic symmetry (corrects an assumption of blocks 45–48)
+branch physics-loop/admissibility-induced-law-block51-the-wind-is-not-isotropic-cubic-lattice-viscosity-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_viscous_term_of_cubic_symmetry_2026_09_21.py: rc=0 PASS=15 FAIL=0
+   mutation second_order_term_without_half: expected B observed B ok
+   mutation fourth_moment_isotropic: expected C observed C ok
+   mutation lattice_viscosity_coefficient_wrong: expected C observed C ok
+   mutation cubic_term_is_a_gradient: expected D observed D ok
+   mutation inflow_is_potential_flow: expected E observed E ok
+   mutation inflow_not_homogeneous: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

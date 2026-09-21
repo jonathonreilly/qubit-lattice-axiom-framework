@@ -1,0 +1,14 @@
+PR #8550: ail44: records with inertia (content = direction of travel: number and momentum conserved, structureless equilibrium, sound at sqrt((1-rho)/3), forces only with capture or emission; capturing bodies attract inverse-square, executed)
+branch physics-loop/admissibility-induced-law-block44-records-with-inertia-sound-and-forces-between-bodies-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_records_with_inertia_conserved_momentum_structureless_equilibrium_sound_speed_forces_need_capture_2026_09_20.py: rc=0 PASS=15 FAIL=0
+   mutation head_on_reverses_one_record: expected B observed B ok
+   mutation clause_not_covariant_injected: expected B observed B ok
+   mutation blocked_attempts_do_nothing: expected C observed C ok
+   mutation blocked_attempt_head_on_rule: expected C observed C ok
+   mutation pressure_without_exchange_term: expected D observed D ok
+   mutation mass_current_without_blocking: expected D observed D ok
+   mutation force_on_reflecting_body_injected: expected E observed E ok
+   mutation sphere_scatter_breaks_unit_length: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

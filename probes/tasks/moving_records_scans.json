@@ -1085,5 +1085,57 @@
    }
   ],
   "what": "NEW PHYSICS: the range of the field of a held record (block 41, T3). screening_gas.py is the moving-records simulator with the occupancy structure factor accumulated; its SCREENING line gives S(0) and the range xi from 1/S(k) = (1/S0)(1 + xi^2 E(k)). First look (side 16, one seed): xi between 0 and 1.1 lattice steps away from the clumping onset; the fit fails next to the onset, where the small-k structure factor grows. The map over p, density and scale says where the density field is of short range and where it is not."
+ },
+ {
+  "id": "X:inertial-sound-speed",
+  "type": "scan",
+  "lane": "moving-records",
+  "tier": 1,
+  "command": "cd probes/lib && python3 inertial.py {EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?!x)x",
+  "parse": {
+   "summary": "(?m)^(.*mode 1: fitted speed.*)$"
+  },
+  "grid": [
+   {
+    "extra": "six 64 0.1 1.0"
+   },
+   {
+    "extra": "six 64 0.2 1.0"
+   },
+   {
+    "extra": "six 64 0.3 1.0"
+   },
+   {
+    "extra": "six 64 0.5 1.0"
+   },
+   {
+    "extra": "six 64 0.7 1.0"
+   },
+   {
+    "extra": "six 64 0.9 1.0"
+   },
+   {
+    "extra": "sphere 64 0.1 1.0"
+   },
+   {
+    "extra": "sphere 64 0.2 1.0"
+   },
+   {
+    "extra": "sphere 64 0.3 1.0"
+   },
+   {
+    "extra": "sphere 64 0.5 1.0"
+   },
+   {
+    "extra": "sphere 64 0.7 1.0"
+   },
+   {
+    "extra": "sphere 64 0.9 1.0"
+   }
+  ],
+  "what": "NEW PHYSICS: records with inertia carry sound (block 44). inertial.py menu side density gamma measures the speed of a standing density wave and prints the product-closure prediction sqrt((1 - rho)/3) (six axes) or sqrt(1 - rho)/3 (sphere). First look at density 0.3: 0.467 vs 0.483 and 0.277 vs 0.279. The scan over density checks the law (1 - rho)."
  }
 ]

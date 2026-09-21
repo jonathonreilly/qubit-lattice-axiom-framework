@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_declared_rg_map_uniform_chain_band_edge_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_declared_rg_map_uniform_chain_band_edge_2026_06_12.py",
+ "seed": 66867,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050107Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b8bb6d2ef8f2f1a5aa667b96ee6d69fd6efb7c36f1eac99a99dad673369ccd0d",
+ "stdout_tail": "ued |g'|=g^2/|1-2g^2| has |g|=1 -> 1 with fixed_error=0, labeled outside declared chart |g|<1/sqrt(2)=0.70710678118654746; signed evenness probe g=-0.3 versus +0.3 error=0\n[PASS] W1l DIVERGING E=0 RESOLVENT LENGTH HAS NU=1/2 UNDER THE MAP: N=128 fit over r=8..24 for |[(h-0)^-1]_{0,r}| decay: g=0.29999999999999999 measured_1/xi=1.0986122886681096 analytic_1/xi=1.0986122886681098 relerr=2.0211370946362213e-16; g=0.40000000000000002 measured_1/xi=0.69314718055994506 analytic_1/xi=0.69314718055994529 relerr=3.2034265038149176e-16; g=0.45000000000000001 measured_1/xi=0.46714530810326194 analytic_1/xi=0.46714530810326216 relerr=4.7532234847138505e-16; near-edge analytic scaling: g=0.47999999999999998 xi*sqrt(1/2-g)=0.49158904839651907; g=0.48999999999999999 xi*sqrt(1/2-g)=0.49581411954330246; composition xi'=xi/2 probes: g=0.48999999999999999 g'=0.46190842631781448 xi(g')/xi(g)=0.49999999999999989; g=0.495 g'=0.48048828316501613 xi(g')/xi(g)=0.500000000000001\nSCOPE: free sector, 1D, E=0 slice, projective fixed-energy Schur RG convention (b=2, quotient |g|=|t/mu|, chart |g|<1/sqrt(2)); agreement at the double-precision floor (measured 0.0 in these instances); the unstable fixed point is the E=0 resolvent-threshold chamber boundary with eigenvalue 4 and length exponent nu=1/2, while the upper side exits the declared chart. NOT claimed: interacting RG, d=3, universality beyond this declared convention, gauge sectors. Statuses pipeline-derived; audit lane grades.\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050107Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_declared_rg_map_uniform_chain_band_edge_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

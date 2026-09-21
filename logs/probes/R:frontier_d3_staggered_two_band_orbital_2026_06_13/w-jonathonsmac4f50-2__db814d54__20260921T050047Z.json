@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d3_staggered_two_band_orbital_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d3_staggered_two_band_orbital_2026_06_13.py",
+ "seed": 66847,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050047Z",
+ "elapsed_s": 8.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "807d055df897e22f1cb1b675874d8a9bb92bd0f2325837c4354e7b04b03ad61f",
+ "stdout_tail": "losed=+3.1227298366e-02(+)\n  mu=1.0 exact=+2.5569789140e-02(+) closed=+2.1970797986e-02(+)\n  mu=2.0 exact=-2.7613448988e-03(-) closed=-1.3455806626e-03(-)\nPASS: exact sign table has a sampled sign change at m=0.0 :: codes=+,+,+,-\nSIGN_TABLE m=0.3\n  mu=0.0 exact=+3.6048635822e-02(+) closed=+3.2961150584e-02(+)\n  mu=0.4 exact=+3.4462126459e-02(+) closed=+3.1077881226e-02(+)\n  mu=1.0 exact=+2.5448652887e-02(+) closed=+2.1862897332e-02(+)\n  mu=2.0 exact=-2.7031977509e-03(-) closed=-1.2919086884e-03(-)\nPASS: exact sign table has a sampled sign change at m=0.3 :: codes=+,+,+,-\nSIGN_TABLE m=0.6\n  mu=0.0 exact=+3.5513661837e-02(+) closed=+3.2489307136e-02(+)\n  mu=0.4 exact=+3.3956356504e-02(+) closed=+3.0629198301e-02(+)\n  mu=1.0 exact=+2.5089206016e-02(+) closed=+2.1545135342e-02(+)\n  mu=2.0 exact=-2.5232188139e-03(-) closed=-1.1292850449e-03(-)\nPASS: exact sign table has a sampled sign change at m=0.6 :: codes=+,+,+,-\nPASS: closed split tracks all exact sampled signs :: sign_tol=1.0e-04, mu_grid=(0.0, 0.4, 1.0, 2.0)\nPASS: sampled sign changes persist across the full mass grid :: each mass has positive interior rows and a negative mu=2.0 row\n\nS4 NOTE HYGIENE\nPASS: note declares bounded claim type and audit authority :: bounded claim; audit lane grades\nPASS: note states the fixed magnetic-area normalization :: normalization stated, not fitted\nPASS: note states the d = 3 interband residual rather than a thermodynamic closure :: bounded residual language present\n\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050055Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d3_staggered_two_band_orbital_2026_06_13.txt against the .txt beside this log"
+  ]
+ }
+}

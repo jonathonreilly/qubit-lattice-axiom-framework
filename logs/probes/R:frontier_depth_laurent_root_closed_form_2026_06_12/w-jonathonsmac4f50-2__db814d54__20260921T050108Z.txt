@@ -1,0 +1,88 @@
+Depth Laurent-root closed-form bounded audit runner
+Scope: zB L=3 realized K3/K4/K5/K6 states; no git/network; audit lane grades.
+Machinery: raw_det_site01 + determinant-polar site01 phase increment + normalized harmonic ladder weights.
+
+========================================================================================
+S0 anchors: real zB measured ladder weights and Laurent determinant
+========================================================================================
+K3: w1=0.080482953834387472, w2=0.55309571869393137, w3=0.22475620052258954, w4=0.078559324624496468, T_ge3=0.36642131754352697
+  [PASS] K3 no-floor coupled gap set is (-3,0,+3)  (gaps=(-3.0, 0.0, 3.0))
+  [PASS] K3 measured T_ge3 matches exact landed value to 1e-9  (measured=0.36642131754352697, landed=0.36642131754352519)
+  [PASS] K3 measured w1..w4 match landed full-precision values  (max_weight_error=1.887e-15)
+  [PASS] K3 held-out Laurent reconstruction error < 1e-12  (heldout_error=1.234e-17)
+K4: w1=0.14405220378367423, w2=0.039738951671227013, w3=0.24385061575589109, w4=0.04625192478276785, T_ge3=0.81620884399822258
+  [PASS] K4 no-floor coupled gap set is (-3,0,+3)  (gaps=(-3.0, 0.0, 3.0))
+  [PASS] K4 measured T_ge3 matches exact landed value to 1e-9  (measured=0.81620884399822258, landed=0.81620884399822058)
+  [PASS] K4 measured w1..w4 match landed full-precision values  (max_weight_error=1.069e-15)
+  [PASS] K4 held-out Laurent reconstruction error < 1e-12  (heldout_error=3.166e-17)
+K5: w1=0.53867590948448885, w2=0.2359028714256412, w3=0.078440233398744244, w4=0.067069470588617994, T_ge3=0.22542121070372118
+  [PASS] K5 no-floor coupled gap set is (-3,0,+3)  (gaps=(-3.0, 0.0, 3.0))
+  [PASS] K5 measured T_ge3 matches exact landed value to 1e-9  (measured=0.22542121070372118, landed=0.22542121070372184)
+  [PASS] K5 measured w1..w4 match landed full-precision values  (max_weight_error=5.412e-16)
+  [PASS] K5 held-out Laurent reconstruction error < 1e-12  (heldout_error=3.898e-17)
+K6: w1=0.95853605277526666, w2=0.031142737013937962, w3=0.0051157934208492994, w4=0.0022280633355371143, T_ge3=0.010321210053125439
+  [PASS] K6 no-floor coupled gap set is (-3,0,+3)  (gaps=(-3.0, 0.0, 3.0))
+  [PASS] K6 measured T_ge3 matches exact landed value to 1e-9  (measured=0.010321210053125439, landed=0.010321210053125331)
+  [PASS] K6 measured w1..w4 match landed full-precision values  (max_weight_error=4.441e-16)
+  [PASS] K6 held-out Laurent reconstruction error < 1e-12  (heldout_error=1.990e-17)
+
+========================================================================================
+S1 root decomposition of the real determinant
+========================================================================================
+K3: split=(3, 3), rho_star=0.99195490052107882
+  [PASS] K3 six numerator roots have the landed inside/outside split  (split=(3, 3), landed=(3, 3))
+  [PASS] K3 rho_star matches zB determinant-root datum  (rho_star=0.99195490052107882, landed=0.99195490052107926)
+  [PASS] K3 per-root principal-branch phase sum reproduces Laurent law values  (max_value_error=7.394e-14)
+  [PASS] K3 per-root phase-contribution weights reproduce measured ladder weights  (max_weight_error=1.110e-15)
+K4: split=(4, 2), rho_star=0.89304246593376668
+  [PASS] K4 six numerator roots have the landed inside/outside split  (split=(4, 2), landed=(4, 2))
+  [PASS] K4 rho_star matches zB determinant-root datum  (rho_star=0.89304246593376668, landed=0.89304246593376835)
+  [PASS] K4 per-root principal-branch phase sum reproduces Laurent law values  (max_value_error=1.288e-14)
+  [PASS] K4 per-root phase-contribution weights reproduce measured ladder weights  (max_weight_error=3.331e-16)
+K5: split=(3, 3), rho_star=0.99110706426138273
+  [PASS] K5 six numerator roots have the landed inside/outside split  (split=(3, 3), landed=(3, 3))
+  [PASS] K5 rho_star matches zB determinant-root datum  (rho_star=0.99110706426138273, landed=0.9911070642613854)
+  [PASS] K5 per-root principal-branch phase sum reproduces Laurent law values  (max_value_error=4.530e-14)
+  [PASS] K5 per-root phase-contribution weights reproduce measured ladder weights  (max_weight_error=1.110e-15)
+K6: split=(2, 4), rho_star=0.7619077977082207
+  [PASS] K6 six numerator roots have the landed inside/outside split  (split=(2, 4), landed=(2, 4))
+  [PASS] K6 rho_star matches zB determinant-root datum  (rho_star=0.7619077977082207, landed=0.76190779770821981)
+  [PASS] K6 per-root principal-branch phase sum reproduces Laurent law values  (max_value_error=6.439e-15)
+  [PASS] K6 per-root phase-contribution weights reproduce measured ladder weights  (max_weight_error=1.180e-16)
+
+========================================================================================
+S2 closed root-power approximation and honest residual
+========================================================================================
+K3: measured T_ge3=0.36642131754352697; root_power_closed=14.11207062535887; residual=13.745649307815343; relative=37.5132; unwrapped_phase_T_ge3=0.36642131754352614
+K4: measured T_ge3=0.81620884399822258; root_power_closed=1.6041354413852351; residual=0.78792659738701254; relative=0.965349; unwrapped_phase_T_ge3=0.10757177137114414
+K5: measured T_ge3=0.22542121070372118; root_power_closed=12.401070795853149; residual=12.175649585149428; relative=54.0129; unwrapped_phase_T_ge3=0.2254212107037197
+K6: measured T_ge3=0.010321210053125439; root_power_closed=0.7808894739269685; residual=0.77056826387384303; relative=74.6587; unwrapped_phase_T_ge3=0.010321210053125305
+measured/principal-branch order: K6 < K5 < K3 < K4
+unwrapped root-power order:     K6 < K4 < K5 < K3
+  [PASS] measured principal-branch T_ge3 ordering reproduces 6,5,3,4  (order=('K6', 'K5', 'K3', 'K4'))
+  [PASS] unwrapped positive root-power order is disclosed as branch-incomplete  (order=('K6', 'K4', 'K5', 'K3'))
+  [PASS] REFUTED: the tested scalar root-power closed form FAILS - relative residual is large (gated above the refutation floor), so this unwrapped positive root-moduli expression is not the measured depth tail  (max_rel_residual=74.6587 >= floor 5 (refuted); disclosure: max_abs=13.7456, max_rel=74.6587)
+
+========================================================================================
+S3 dominant root and subdominant measured fraction
+========================================================================================
+K3: W_{3(m+1)}/W_{3m} at m=512 = 0.97605835173210687; rho_star^3=0.97605835173210687; subdominant_fraction=0.037036691377035406
+  [PASS] K3 root-power envelope asymptotic ratio tends to rho_star^3  (|ratio-rho^3|=0.000e+00)
+  [PASS] K3 subdominant root-power fraction is measured, finite, and not designed  (fraction=0.037036691377035406)
+K4: W_{3(m+1)}/W_{3m} at m=512 = 0.71222355508051483; rho_star^3=0.71222355508051494; subdominant_fraction=0.48572098811398562
+  [PASS] K4 root-power envelope asymptotic ratio tends to rho_star^3  (|ratio-rho^3|=1.110e-16)
+  [PASS] K4 subdominant root-power fraction is measured, finite, and not designed  (fraction=0.48572098811398562)
+K5: W_{3(m+1)}/W_{3m} at m=512 = 0.97355774241065007; rho_star^3=0.97355774241065007; subdominant_fraction=0.010347464279053769
+  [PASS] K5 root-power envelope asymptotic ratio tends to rho_star^3  (|ratio-rho^3|=0.000e+00)
+  [PASS] K5 subdominant root-power fraction is measured, finite, and not designed  (fraction=0.010347464279053769)
+K6: W_{3(m+1)}/W_{3m} at m=512 = 0.44229013731034095; rho_star^3=0.44229013731057881; subdominant_fraction=0.66147705774245213
+  [PASS] K6 root-power envelope asymptotic ratio tends to rho_star^3  (|ratio-rho^3|=2.379e-13)
+  [PASS] K6 subdominant root-power fraction is measured, finite, and not designed  (fraction=0.66147705774245213)
+
+========================================================================================
+Summary
+========================================================================================
+The determinant-root configuration controls the principal-branch Laurent-Arg law.
+The measured depth tail is T_ge3=sum_{k>=3} w_k from that law and orders K6,K5,K3,K4.
+The tested scalar unwrapped root-power closed form (1/3) sum rho_j^3/(1-rho_j^3) does not reproduce the measured magnitudes and has a named branch-wrapping residual.
+TOTAL: PASS=43 FAIL=0

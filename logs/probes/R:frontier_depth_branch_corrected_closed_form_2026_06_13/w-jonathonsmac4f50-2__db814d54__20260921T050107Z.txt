@@ -1,0 +1,96 @@
+Depth branch-corrected Laurent-root closed-form runner
+Scope: specified zB L=3 K3/K4/K5/K6 state records; no network; audit lane grades.
+Machinery: raw_det_site01 + determinant-polar site01 phase increment + normalized harmonic ladder weights.
+Frozen gates: weight/tail <= 1e-9, Laurent held-out <= 1e-12, branch value <= 1e-11.
+
+========================================================================================
+S0 deterministic references: measured ladder weights and Laurent reconstruction
+========================================================================================
+K3: measured w1=0.080482953834387472, w2=0.55309571869393137, w3=0.22475620052258954, w4=0.078559324624496468, T_ge3=0.36642131754352697
+  [PASS] K3 no-floor coupled gap set is (-3,0,+3)  (gaps=(-3.0, 0.0, 3.0))
+  [PASS] K3 measured T_ge3 matches frozen reference value  (measured=0.36642131754352697, reference=0.36642131754352519)
+  [PASS] K3 measured w1..w4 match frozen reference values  (max_weight_error=1.887e-15)
+  [PASS] K3 held-out Laurent reconstruction error < 1e-12  (heldout_error=1.234e-17)
+K4: measured w1=0.14405220378367423, w2=0.039738951671227013, w3=0.24385061575589109, w4=0.04625192478276785, T_ge3=0.81620884399822258
+  [PASS] K4 no-floor coupled gap set is (-3,0,+3)  (gaps=(-3.0, 0.0, 3.0))
+  [PASS] K4 measured T_ge3 matches frozen reference value  (measured=0.81620884399822258, reference=0.81620884399822058)
+  [PASS] K4 measured w1..w4 match frozen reference values  (max_weight_error=1.069e-15)
+  [PASS] K4 held-out Laurent reconstruction error < 1e-12  (heldout_error=3.166e-17)
+K5: measured w1=0.53867590948448885, w2=0.2359028714256412, w3=0.078440233398744244, w4=0.067069470588617994, T_ge3=0.22542121070372118
+  [PASS] K5 no-floor coupled gap set is (-3,0,+3)  (gaps=(-3.0, 0.0, 3.0))
+  [PASS] K5 measured T_ge3 matches frozen reference value  (measured=0.22542121070372118, reference=0.22542121070372184)
+  [PASS] K5 measured w1..w4 match frozen reference values  (max_weight_error=5.412e-16)
+  [PASS] K5 held-out Laurent reconstruction error < 1e-12  (heldout_error=3.898e-17)
+K6: measured w1=0.95853605277526666, w2=0.031142737013937962, w3=0.0051157934208492994, w4=0.0022280633355371143, T_ge3=0.010321210053125439
+  [PASS] K6 no-floor coupled gap set is (-3,0,+3)  (gaps=(-3.0, 0.0, 3.0))
+  [PASS] K6 measured T_ge3 matches frozen reference value  (measured=0.010321210053125439, reference=0.010321210053125331)
+  [PASS] K6 measured w1..w4 match frozen reference values  (max_weight_error=4.441e-16)
+  [PASS] K6 held-out Laurent reconstruction error < 1e-12  (heldout_error=1.990e-17)
+
+========================================================================================
+S1 root split and winding from the argument principle
+========================================================================================
+K3: split=(3, 3), winding=0, numeric_winding=0, min_unit_gap=8.045e-03, jump_levels=(0,), jump_count=0
+  [PASS] K3 root split matches frozen determinant-root datum  (split=(3, 3), reference=(3, 3))
+  [PASS] K3 roots avoid the unit circle at the frozen margin  (min_unit_gap=8.045e-03)
+  [PASS] K3 winding equals N_inside - 3 and matches numeric phase winding  (inside-3=0, numeric=0, expected=0)
+  [PASS] K3 branch-jump structure is the measured principal-branch structure  (jump_levels=(0,), jump_count=0)
+K4: split=(4, 2), winding=1, numeric_winding=1, min_unit_gap=1.070e-01, jump_levels=(0, 1), jump_count=2
+  [PASS] K4 root split matches frozen determinant-root datum  (split=(4, 2), reference=(4, 2))
+  [PASS] K4 roots avoid the unit circle at the frozen margin  (min_unit_gap=1.070e-01)
+  [PASS] K4 winding equals N_inside - 3 and matches numeric phase winding  (inside-3=1, numeric=1, expected=1)
+  [PASS] K4 branch-jump structure is the measured principal-branch structure  (jump_levels=(0, 1), jump_count=2)
+K5: split=(3, 3), winding=0, numeric_winding=0, min_unit_gap=8.893e-03, jump_levels=(0,), jump_count=0
+  [PASS] K5 root split matches frozen determinant-root datum  (split=(3, 3), reference=(3, 3))
+  [PASS] K5 roots avoid the unit circle at the frozen margin  (min_unit_gap=8.893e-03)
+  [PASS] K5 winding equals N_inside - 3 and matches numeric phase winding  (inside-3=0, numeric=0, expected=0)
+  [PASS] K5 branch-jump structure is the measured principal-branch structure  (jump_levels=(0,), jump_count=0)
+K6: split=(2, 4), winding=-1, numeric_winding=-1, min_unit_gap=3.125e-01, jump_levels=(0,), jump_count=0
+  [PASS] K6 root split matches frozen determinant-root datum  (split=(2, 4), reference=(2, 4))
+  [PASS] K6 roots avoid the unit circle at the frozen margin  (min_unit_gap=3.125e-01)
+  [PASS] K6 winding equals N_inside - 3 and matches numeric phase winding  (inside-3=-1, numeric=-1, expected=-1)
+  [PASS] K6 branch-jump structure is the measured principal-branch structure  (jump_levels=(0,), jump_count=0)
+  [PASS] anti-fabrication: K4 is the 4-inside/2-outside + positive-winding branch case  (K4 split=(4, 2), winding=1, jump_count=2)
+  [PASS] anti-fabrication: K5 roots reproduce K5, not K4  (K5_corrected=0.2254212107037197, K4_reference=0.81620884399822058)
+
+========================================================================================
+S2 branch-corrected closed form
+========================================================================================
+K3: corrected w1=0.080482953834387125, w2=0.55309571869393248, w3=0.22475620052259032, w4=0.078559324624496427, T_ge3=0.36642131754352614
+    unwrapped_T_ge3=0.36642131754352614; corrected_T_ge3=0.36642131754352614; measured_T_ge3=0.36642131754352697
+  [PASS] K3 branch-corrected root law reproduces principal Laurent values  (max_value_error=7.405e-14)
+  [PASS] K3 branch-corrected w_k reproduce real measured ladder weights  (max_weight_error=1.110e-15)
+  [PASS] K3 branch-corrected T_ge3 reproduces exact measured T_ge3  (tail_error=8.327e-16)
+K4: corrected w1=0.1440522037836742, w2=0.039738951671227381, w3=0.24385061575589095, w4=0.046251924782767774, T_ge3=0.81620884399822213
+    unwrapped_T_ge3=0.10757177137114414; corrected_T_ge3=0.81620884399822213; measured_T_ge3=0.81620884399822258
+  [PASS] K4 branch-corrected root law reproduces principal Laurent values  (max_value_error=1.288e-14)
+  [PASS] K4 branch-corrected w_k reproduce real measured ladder weights  (max_weight_error=3.678e-16)
+  [PASS] K4 branch-corrected T_ge3 reproduces exact measured T_ge3  (tail_error=4.441e-16)
+K5: corrected w1=0.53867590948448996, w2=0.23590287142564142, w3=0.078440233398744105, w4=0.067069470588617883, T_ge3=0.2254212107037197
+    unwrapped_T_ge3=0.2254212107037197; corrected_T_ge3=0.2254212107037197; measured_T_ge3=0.22542121070372118
+  [PASS] K5 branch-corrected root law reproduces principal Laurent values  (max_value_error=4.530e-14)
+  [PASS] K5 branch-corrected w_k reproduce real measured ladder weights  (max_weight_error=1.110e-15)
+  [PASS] K5 branch-corrected T_ge3 reproduces exact measured T_ge3  (tail_error=1.471e-15)
+K6: corrected w1=0.95853605277526677, w2=0.03114273701393808, w3=0.0051157934208492014, w4=0.0022280633355371005, T_ge3=0.010321210053125305
+    unwrapped_T_ge3=0.010321210053125305; corrected_T_ge3=0.010321210053125305; measured_T_ge3=0.010321210053125439
+  [PASS] K6 branch-corrected root law reproduces principal Laurent values  (max_value_error=6.439e-15)
+  [PASS] K6 branch-corrected w_k reproduce real measured ladder weights  (max_weight_error=1.180e-16)
+  [PASS] K6 branch-corrected T_ge3 reproduces exact measured T_ge3  (tail_error=1.336e-16)
+measured/principal order:       K6 < K5 < K3 < K4
+unwrapped branch-incomplete:    K6 < K4 < K5 < K3
+branch-corrected closed form:   K6 < K5 < K3 < K4
+  [PASS] measured principal-branch order is K6 < K5 < K3 < K4  (order=('K6', 'K5', 'K3', 'K4'))
+  [PASS] unwrapped root sum is disclosed as branch-incomplete on K4  (order=('K6', 'K4', 'K5', 'K3'), K4_unwrapped=0.10757177137114414, K4_measured=0.81620884399822058)
+  [PASS] branch-corrected closed form recovers the measured order including K4  (order=('K6', 'K5', 'K3', 'K4'))
+
+========================================================================================
+Summary
+========================================================================================
+Closed form:
+  F(q)=q^-3 c prod_j(q-r_j), q=e^{i theta}, delta=3*tau.
+  u(theta)=-3 delta + sum_j unwrap Arg((q e^{i delta}-r_j)/(q-r_j)).
+  J(theta)=round((u(theta)-Arg(exp(i u(theta))))/(2*pi)).
+  g(theta)=u(theta)-2*pi J(theta)-mean; w_k=|Fourier_k(g)|^2 normalized.
+K4's 4-inside/2-outside roots give winding +1 and two branch jumps; this is
+the correction behind the unwrapped K4 branch-incomplete comparator.
+TOTAL: PASS=49 FAIL=0

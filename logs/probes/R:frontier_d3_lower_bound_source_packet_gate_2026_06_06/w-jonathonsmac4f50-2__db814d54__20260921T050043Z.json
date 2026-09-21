@@ -1,0 +1,40 @@
+{
+ "task": "R:frontier_d3_lower_bound_source_packet_gate_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d3_lower_bound_source_packet_gate_2026_06_06.py",
+ "seed": 66842,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050043Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": [
+   "PASS=57 FAIL=0",
+   "PASS=56 FAIL=0",
+   "PASS=54 FAIL=4"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bd411d013d62f31dc4b89d11a212a8bba9e27584eaf55bc9b690a9ad12c7ab8a",
+ "stdout_tail": "_cache:I_3/P = <1e-10\n[PASS] source-packet cache contains snippet: cache_snippet_present:finite_k_bridge_cache:SUMMARY: PASS=56 FAIL=0\n[PASS] source-packet verifier JSON exists -- outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json\n[PASS] source-packet verifier JSON reports zero failures -- {'pass': 57, 'fail': 0}\n[PASS] parent note keeps boundary phrase: finite-runner lower-bound support only\n[PASS] parent note keeps boundary phrase: not a unique-dimension theorem\n[PASS] parent note keeps boundary phrase: does not authorize any framework-baseline rewrite\n[PASS] parent note keeps boundary phrase: This row does not claim:\n[PASS] parent note keeps boundary phrase: framework-internal upper-bound derivation\nC. supporting note boundaries\n[PASS] finite-k/V2 boundary phrase present: Retained finite-k sign bridge\n[PASS] finite-k/V2 boundary phrase present: not a ledger retag\n[PASS] finite-k/V2 boundary phrase present: not full retained dimension selection\n[PASS] finite-k/V2 boundary phrase present: does not authorize changing the minimal axiom line\n[PASS] forbidden overclaim absent: full retained spatial d = 3 closure\n[PASS] forbidden overclaim absent: Z^3 has been derived from the physical Cl(3) local algebra alone\n[PASS] forbidden overclaim absent: repo-wide framework-baseline rewrite is authorized\n[PASS] forbidden overclaim absent: self-consistency uniquely selects d = 3\n\nSCORECARD: PASS=54 FAIL=4\nVERDICT: source-packet gate failed; do not use this artifact.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050043Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d3_lower_bound_source_packet_gate_2026_06_06.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d3_landau_peierls_single_band_normalization_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py",
+ "seed": 66842,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050042Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "221ff8889eb7a1da4e694da5be217f7d35a4163f3146aae36abd5e6aa5789cf4",
+ "stdout_tail": ",9/8,1/3) trace=0 det=373/288\nPASS: canonical spectrum and definiteness restrict the written midpoint derivation to positive-definite elliptic patches: positive-elliptic trace=0 det=243/98 lambda^2=-243/98<0; positive-elliptic trace=0 det=373/288 lambda^2=-373/288<0; negative-elliptic trace=0 det=243/98 lambda^2=-243/98<0; negative-elliptic trace=0 det=373/288 lambda^2=-373/288<0; saddle trace=0 det=-247/98 lambda^2=247/98>0; saddle trace=0 det=-398/405 lambda^2=398/405>0\nPASS: cubic band transverse Hessian determinant is 4 cos(kx) cos(ky): max finite-difference determinant error=7.513e-08\nPASS: cubic Brillouin zone contains positive-definite elliptic, negative-definite elliptic, and saddle patches: positive=1024 negative=1024 saddle=2048 det_min=-3.990369 det_max=+3.990369\nPASS: full-zone integral under the conjectured full-patch continuation reproduces the parent d=3 LP reference (diagnostic; remaining-patch scope is open): lp_ref=-3.949577202602e-03, expected=-3.949577202602e-03\nPASS: cubic particle-hole symmetry is preserved by the normalized LP integral: max |chi(mu)-chi(-mu)|=3.469e-18\nPASS: source note records bounded status and no-axiom boundary: all required source-boundary phrases present\nPASS: note restricts the derived claim to positive-definite elliptic patches and keeps the full-patch continuation open: forbidden_present=[] required_absent=[]\nPASS: runner uses exact rational normalization, not a fitted float: CELL_NORMALIZATION_EXACT=-1/12\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050042Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_det_phase_spectral_law_refuted_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_det_phase_spectral_law_refuted_2026_06_12.py",
+ "seed": 66871,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050111Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0fa8e4f83f7e5e87d9b66baa09e7702eb472676e662bb6a71d438d967844d371",
+ "stdout_tail": " mod 1)) mod T; direct gap bins=[0, 43, 213]; generated predicted bins count=7; frequencies are dispersion data, amplitudes are realized-state data; free sector only for this period.\nPASS: finite lattice has 3 sites, 3 colors, and 9 modes :: N_MODES=9\nPASS: ring indexing wraps across the finite lattice boundary :: forward=0 backward=2\nPASS: free single-particle Hamiltonian is the periodic nearest-neighbor ring :: hermitian=True nnz=18 wrap=True\nPASS: order-3 sparse gap-sum set has exactly 7 of 256 bins :: size=7\nPASS: gcd-vacuity control: the rejected gcd construction would cover all 256 bins (vacuous) -- rejected in favor of the sparse order-3 set :: gcd_cover=256\nPASS: order-3 state-independent spectral law is refuted: the gap-sum set (7 of 256 bins) captures under half the power at the worst state (min 0.33), with state-dependent capture spanning to 0.85 -- no few-frequency law holds at every state; the capture spread is the datum :: min_fraction=0.331017 max_fraction=0.854150 predicted_bins=7\nPASS: full finite-window DFT support at the stated power floor for every tested state (a leakage statement under the binning convention -- gaps sit off-grid, e.g. bin 42.78 -> 43; not exact spectral support) :: support_sizes=256,256,256,256,256\nPASS: at least one predicted-bin amplitude differs by more than 10 percent :: max_relative_difference=0.9988349630226561\nPASS: polar blocks stay above the singular-value rank floor :: min_sv=0.0110401688802966 floor=1e-08\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050111Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_det_phase_spectral_law_refuted_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

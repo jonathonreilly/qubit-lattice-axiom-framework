@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_depth_branch_corrected_closed_form_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_depth_branch_corrected_closed_form_2026_06_13.py",
+ "seed": 66867,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050107Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=49 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "051c5e3e4db437657c2c455112342cf689ca71411b82535a9f6a1721d3c41804",
+ "stdout_tail": "21210053125305; measured_T_ge3=0.010321210053125439\n  [PASS] K6 branch-corrected root law reproduces principal Laurent values  (max_value_error=6.439e-15)\n  [PASS] K6 branch-corrected w_k reproduce real measured ladder weights  (max_weight_error=1.180e-16)\n  [PASS] K6 branch-corrected T_ge3 reproduces exact measured T_ge3  (tail_error=1.336e-16)\nmeasured/principal order:       K6 < K5 < K3 < K4\nunwrapped branch-incomplete:    K6 < K4 < K5 < K3\nbranch-corrected closed form:   K6 < K5 < K3 < K4\n  [PASS] measured principal-branch order is K6 < K5 < K3 < K4  (order=('K6', 'K5', 'K3', 'K4'))\n  [PASS] unwrapped root sum is disclosed as branch-incomplete on K4  (order=('K6', 'K4', 'K5', 'K3'), K4_unwrapped=0.10757177137114414, K4_measured=0.81620884399822058)\n  [PASS] branch-corrected closed form recovers the measured order including K4  (order=('K6', 'K5', 'K3', 'K4'))\n\n========================================================================================\nSummary\n========================================================================================\nClosed form:\n  F(q)=q^-3 c prod_j(q-r_j), q=e^{i theta}, delta=3*tau.\n  u(theta)=-3 delta + sum_j unwrap Arg((q e^{i delta}-r_j)/(q-r_j)).\n  J(theta)=round((u(theta)-Arg(exp(i u(theta))))/(2*pi)).\n  g(theta)=u(theta)-2*pi J(theta)-mean; w_k=|Fourier_k(g)|^2 normalized.\nK4's 4-inside/2-outside roots give winding +1 and two branch jumps; this is\nthe correction behind the unwrapped K4 branch-incomplete comparator.\nTOTAL: PASS=49 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050108Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_depth_branch_corrected_closed_form_2026_06_13.txt against the .txt beside this log"
+  ]
+ }
+}

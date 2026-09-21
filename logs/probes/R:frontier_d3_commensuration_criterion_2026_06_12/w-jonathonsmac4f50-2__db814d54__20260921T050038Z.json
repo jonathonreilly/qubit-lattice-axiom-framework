@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d3_commensuration_criterion_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d3_commensuration_criterion_2026_06_12.py",
+ "seed": 66838,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050038Z",
+ "elapsed_s": 3.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e22769e5b02061b19b56ba5fd2c3e54af382ccad20b62a65256d57d512dba0f6",
+ "stdout_tail": "ods_even  parity_holds  H_kd_before        H_kd_after\n   8  (4, 8, 4)       True              True          7.5322071744240682e-01  0.0000000000000000e+00\n  10  (5, 10, 5)      False             False         7.4832497863019309e-01  7.4832497863019298e-01\n  12  (6, 12, 6)      True              True          7.4747736396794551e-01  0.0000000000000000e+00\n  14  (7, 14, 7)      False             False         7.4732149222164002e-01  7.4732149222164002e-01\n  16  (8, 16, 8)      True              True          7.4729172444226410e-01  0.0000000000000000e+00\n  18  (9, 18, 9)      False             False         7.4728589243652477e-01  7.4728589243652477e-01\nPASS: S2 out-of-sample L=16 prediction: protection holds :: L=16 max_abs_after=0.000e+00, tol=1.0e-14\nPASS: S2 out-of-sample L=18 prediction: protection fails :: L=18 max_abs_after=7.4728589243652477e-01, threshold=1.0e-01\nPASS: S2 protected branch L=8,12,16 holds at 1e-14 :: L8=0.000e+00, L12=0.000e+00, L16=0.000e+00, tol=1.0e-14\nPASS: S2 unprotected branch L=10,14,18 fails above 0.1 :: L10=7.483e-01, L14=7.473e-01, L18=7.473e-01, threshold=1.0e-01\nS3 note hygiene\nPASS: canonical claim type is present and noncanonical Type front matter is absent :: bounded_theorem with single claim-type field\nPASS: status authority and no-promotion statements are present :: audit status remains independent\nPASS: step-2 dichotomy and step-1 parity dependencies are linked :: dependency graph receives both structural anchors\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050042Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d3_commensuration_criterion_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d3_truncated_closure_recurs_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d3_truncated_closure_recurs_2026_06_12.py",
+ "seed": 66864,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050104Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=42 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cc0aa094043cfe54eabad0520f73ed7bb7a9b153486ca2a7c4a041ad03876129",
+ "stdout_tail": "ell values are translation-invariant before mirroring :: spreads diag=0.000e+00 c2=0.000e+00 c4=0.000e+00\nPASS: S4 anti-fabrication L=12 step=3: retained block has no out-of-family shell residual :: retained_residual_rms=0.000e+00\nPASS: S4b d=3 recurrence: exact post-step-2 invariance recurs because H_kd=0 forces no Schur update L=12 :: max_step3_minus_step2=0.000e+00\nPASS: S4b stronger fixed pattern: all three truncated steps share the landed couplings L=12 :: max_later_minus_step1=0.000e+00\nPASS: S4b fixed ratio pattern L=12: c2/diag=-1/15, c4/diag=-1/30, c4/c2=1/2 :: ratios=(-0.06666666666666667, -0.03333333333333333, 0.5)\nPASS: S4d identity-truncation control L=12: tautological sanity at 1e-12 :: worst_identity_deviation=0.000e+00\nS4c accumulated retained-block Schur/resolvent RMS budgets: L=8 1.58113883008419; L=12 1.581138830084189; ratio 1.000000000000001\nS4c accumulated retained-block residual-vs-fully-exact RMS budgets: L=8 0; L=12 0\nPASS: S4c L=12 accumulated retained-block Schur/resolvent RMS budget under frozen regression ceiling :: budget_l12=1.581138830084189 ceiling=1.581138831\nPASS: S4c fixed measured size pattern: L=8/L=12 Schur/resolvent RMS budget ratio is 1 :: ratio=1.000000000000001\nPASS: S4c L=12 retained block residual vs fully-exact is roundoff-zero under frozen ceiling :: retained_l12=0.000e+00\nPASS: S4c fixed measured retained residual size pattern: L=8 and L=12 both roundoff-zero :: retained_l8=0.000e+00 retained_l12=0.000e+00\nTOTAL: PASS=42 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050106Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d3_truncated_closure_recurs_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

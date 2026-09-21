@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_d3_step2_range_growth_period_class_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_d3_step2_range_growth_period_class_2026_06_12.py",
+ "seed": 66855,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050055Z",
+ "elapsed_s": 8.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3c3564dfdea46abb2a0f47471411013e0d0fa2de51480c151def21a1ac43334a",
+ "stdout_tail": "0e-12\n  L=10: near_1_5=7.4832497863019287e-01, mid_6_14=1.9264013390138579e-01, far_15_plus=3.8090997574405067e-02\nPASS: S1b band-wise magnitude decay at L=10 :: near=7.483e-01, mid=1.926e-01, far=3.809e-02, nonzero_tol=1.0e-12\n  L=12: near_1_5=7.4747736396794540e-01, mid_6_14=1.9184215222474468e-01, far_15_plus=3.9105809012915278e-02\nPASS: S1b band-wise magnitude decay at L=12 :: near=7.475e-01, mid=1.918e-01, far=3.911e-02, nonzero_tol=1.0e-12\n  L=14: near_1_5=7.4732149222163946e-01, mid_6_14=1.9170506806005883e-01, far_15_plus=3.8819184112713456e-02\nPASS: S1b band-wise magnitude decay at L=14 :: near=7.473e-01, mid=1.917e-01, far=3.882e-02, nonzero_tol=1.0e-12\nS1c PERIOD-CLASS DICHOTOMY H_kd_after after even-d2 truncation:\n  L=8: K_periods=(4, 8, 4), max_abs_after=0.0000000000000000e+00\n  L=10: K_periods=(5, 10, 5), max_abs_after=7.4832497863019298e-01\n  L=12: K_periods=(6, 12, 6), max_abs_after=0.0000000000000000e+00\n  L=14: K_periods=(7, 14, 7), max_abs_after=7.4732149222164002e-01\nPASS: S1c next-checkerboard H_kd is nonzero before even-d2 truncation :: L=8, max_abs_before=7.5322071744240682e-01\nPASS: S1c PERIOD-CLASS DICHOTOMY: protection HOLDS for L=0 mod 4 :: L=8 max_abs_after=0.000e+00, L=12 max_abs_after=0.000e+00, tol=1.0e-14\nPASS: S1c PERIOD-CLASS DICHOTOMY: protection FAILS for L=2 mod 4 because K periods (L/2,L,L/2) have odd components :: L=10 max_abs_after=7.4832497863019298e-01, L=14 max_abs_after=7.4732149222164002e-01, threshold=5.0e-1\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050104Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_d3_step2_range_growth_period_class_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12.py",
+ "seed": 66870,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050110Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d2378e942312c34a93becb684abea34352489746c4c66ae7f5db9323799bfa7e",
+ "stdout_tail": "main H eigenvalues=[-0.5  2.5  2.5]\npolar factor eigenvalues=[ 1.+1.79471507e-31j -1.+6.90090815e-34j  1.+5.55111512e-17j]; cycle det phase=-3.141592653590\nPASS: V3b witness has an off-domain negative eigenvalue\n      min eigenvalue=-0.500000\nPASS: V3b polar factor is a nontrivial reflection with pi-valued cycle phase\n      ||polar(H)-I||_F=2.000e+00; phase=-3.141593\n\n================================================================================================\nB-checks: note boundary and inventory\n================================================================================================\nPASS: B firewall and walls-move sentences are present\n      required wall/firewall phrases scanned\nPASS: B forbidden wall phrases are absent\n      forbidden=('closes the route', 'closes this route', 'exhausted'); only_count=1\nPASS: B markdown link inventory is exactly MINIMAL_AXIOMS\n      links=['MINIMAL_AXIOMS_2026-06-05.md']\nPASS: B context filenames are backticked and not markdown-linked\n      contexts=('INDUCED_HOLONOMY_MATTER_STATE_FUNCTIONAL_DERIVED_CURVATURE_TRAJECTORY_BOUNDED_THEOREM_NOTE_2026-06-10.md', 'KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md')\nPASS: B No-promotion statement is present\nPASS: B standard status lines are present\n\n================================================================================================\nSUMMARY: PASS=20 FAIL=0\n================================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050111Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

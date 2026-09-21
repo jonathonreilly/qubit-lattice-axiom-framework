@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_abcc_exact_target_surface_source_cubic_closure_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dm_abcc_exact_target_surface_source_cubic_closure_2026_04_21.py",
+ "seed": 66872,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050112Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "36e91fa037847c40dd565f6baa5f53c68722778d5e51d678792b10eaf31376b6",
+ "stdout_tail": "et(H) > 0  ((I_src,Delta)_N=(-0.008977592234,0.566913519123))\n  [PASS] Basin P is the opposite counterexample  ((I_src,Delta)_P=(0.697214790620,-9.860888662399))\n  [PASS] So the old sign-blindness audit remains correct globally: the new theorem is target-surface restricted  (global pure-sign closure is still false outside the exact chamber root set)\n\n========================================================================================\nPART 5: OPEN-MAP CONSEQUENCE\n========================================================================================\n  [PASS] Once the exact PMNS target surface is granted, the remaining strict/native DM burden is the PMNS angle triple itself, not a separate A-BCC branch-choice law  (A-BCC becomes downstream of the target surface)\n  [PASS] So this is a real narrowing but not full sole-axiom DM closure  (the PMNS angle triple still needs a native point-selection law)\n\n========================================================================================\nRESULT\n========================================================================================\n  On the exact PMNS target chamber root set, the native chamber law and\n  the coefficient-free source cubic already select Basin 1 uniquely.\n  So the separate strict/native A-BCC residue collapses into the PMNS\n  angle triple itself. This does not give a global Cl(3)/Z^3 sign law:\n  Basin N and Basin P remain explicit counterexamples outside the target\n  chamber root set.\n\nSUMMARY: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050112Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py",
+ "seed": 66871,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "db814d54",
+ "started_utc": "20260921T050111Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9f323821a2f8410e786ee28833fa6e57766a4302c68f7afb1a4c5ed7db8be88b",
+ "stdout_tail": "  3.427801e-01       1.536408e+01\n3  1.277466e-01       3.780320e+02\n4  4.224822e-02       5.181338e+04\n5  1.267447e-02       4.198468e+07\n6  3.503037e-03       2.094830e+11\n7  9.021700e-04       6.619864e+15\n8  2.183806e-04       1.352528e+21\n[PASS] rapidity Gaussian is analytic for K at sampled orders\n       sampled K ratio falls to 2.184e-04\n[PASS] rapidity Gaussian is not analytic for H\n       corrected quadrature H ratio n=5 4.198e+07, analytic lower bound n=8 4.704e+20\n[PASS] quadratic invariant counts separate native time from Euclidean time\n       dims: spatial=1, Euclidean=2, B4=1\n[PASS] free continuous-time dispersion has one quadratic speed and p^4 first correction\n       c2=0.999997, c4=-0.329185\n[PASS] runner is diagnostic only\n       no Nelson theorem, unitary representation, or interacting naturalness claim is asserted\n[PASS] primitive registry re-check uses current non-isolated file\n       registry ids=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']\n[PASS] approved primitives are not load-bearing for this diagnostic scope\n       load-bearing premise is only minimal_axioms; primitive ids are checked as non-load-bearing\n[PASS] registered primitive caps do not supply the rejected Lorentz repairs\n       caps={'scale_reference_primitive': True, 'kinetic_isotropy_primitive': True, 'realized_state_primitive': True}\n========================================================================\nTOTAL: 8 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T050112Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

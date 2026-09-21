@@ -1,0 +1,32 @@
+{
+ "task": "X:menu-size-threshold",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 fib20 0.5 32 3000 1500 1",
+ "seed": 32520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0548cc82",
+ "started_utc": "20260921T231520Z",
+ "elapsed_s": 35.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=fib20 beta=0.5 L=32 T=3000 plateau_|m|=0.0245 lowk_ratio=nan seconds=35"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS. Finite menus of unit vectors with the covariant weight exp(beta s.S): six axes, eight corners, twelve edge midpoints, and 20, 50, 100, 200 near-uniform points. Question: how does the coupling at which memory appears grow with the menu's size in 2+1 (where the sphere never keeps memory), and does it stay bounded in 3+1 (where the linear theory says the sphere does)? One run per (dim, menu, beta). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 140 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "0dc54771b6ec5acd6f5424f51a9577ed089c67a208aa81ab522793c978c2f663",
+ "stdout_tail": "dim=3 (event lattice Z^4) menu=fib20 beta=0.5 L=32 T=3000 T0=1500 seed=1; predecessors n=4; sigma^2=0.268657\nmemory table: level, |m|, m.e0\n         1  0.5432  +0.5431\n         2  0.3251  +0.3248\n         3  0.2012  +0.2007\n         4  0.1229  +0.1218\n         5  0.0800  +0.0783\n         7  0.0353  +0.0286\n        10  0.0267  +0.0074\n        14  0.0261  +0.0023\n        20  0.0257  +0.0034\n        28  0.0240  +0.0061\n        39  0.0267  +0.0046\n        55  0.0145  +0.0053\n        76  0.0258  +0.0072\n       107  0.0246  +0.0008\n       149  0.0200  +0.0053\n       208  0.0274  +0.0023\n       290  0.0224  +0.0030\n       405  0.0255  +0.0096\n       566  0.0235  +0.0016\n       790  0.0223  +0.0006\n      1103  0.0202  +0.0101\n      1539  0.0231  +0.0036\n      2149  0.0240  +0.0093\n      3000  0.0198  +0.0027\nSUMMARY: dim=3 menu=fib20 beta=0.5 L=32 T=3000 plateau_|m|=0.0245 lowk_ratio=nan seconds=35\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T231555Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

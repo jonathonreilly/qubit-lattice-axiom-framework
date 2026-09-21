@@ -1,0 +1,24 @@
+beta=8.0 L=256 T=6000 (levels 2001..6000 accumulated; 48s): sigma^2 = 0.03993; mean |m| = 0.8044
+equal-level structure factor S_0(k) / [sigma^2/(1-u(k))] by |k| shell (nonzero modes):
+   |k| in [0,0.3): mean ratio 0.8661 (n=132)
+   |k| in [0.3,0.6): mean ratio 0.8849 (n=363)
+   |k| in [0.6,1.0): mean ratio 0.8927 (n=847)
+   |k| in [1.0,1.5): mean ratio 0.8981 (n=1655)
+   |k| in [1.5,2.2): mean ratio 0.9030 (n=3404)
+   |k| in [2.2,3.2): mean ratio 0.9066 (n=7081)
+   |k| in [3.2,5.0): mean ratio 0.9085 (n=19318)
+cross-level correlation C_s(k)/C_0(k) against phi(k)^s at three modes (modulus, phase):
+   k=2pi(1,0)/L:  s=1: 1.000/1.000 ph +0.01/+0.01; s=2: 1.000/1.000 ph +0.02/+0.02; s=4: 0.999/1.000 ph +0.03/+0.03; s=8: 0.999/0.999 ph +0.07/+0.07; s=16: 0.998/0.999 ph +0.13/+0.13; s=32: 0.995/0.998 ph +0.26/+0.26; s=64: 0.990/0.996 ph +0.52/+0.52;
+   k=2pi(2,2)/L:  s=1: 1.000/1.000 ph +0.03/+0.03; s=2: 0.999/0.999 ph +0.07/+0.07; s=4: 0.999/0.999 ph +0.13/+0.13; s=8: 0.998/0.998 ph +0.26/+0.26; s=16: 0.995/0.996 ph +0.52/+0.52; s=32: 0.990/0.991 ph +1.05/+1.05; s=64: 0.979/0.983 ph +2.10/+2.09;
+   k=2pi(4,1)/L:  s=1: 0.999/0.999 ph +0.04/+0.04; s=2: 0.997/0.998 ph +0.08/+0.08; s=4: 0.995/0.997 ph +0.16/+0.16; s=8: 0.990/0.993 ph +0.33/+0.33; s=16: 0.979/0.986 ph +0.66/+0.65; s=32: 0.958/0.973 ph +1.31/+1.31; s=64: 0.919/0.946 ph +2.63/+2.62;
+   k=2pi(8,8)/L:  s=1: 0.996/0.996 ph +0.13/+0.13; s=2: 0.991/0.991 ph +0.26/+0.26; s=4: 0.983/0.983 ph +0.52/+0.52; s=8: 0.967/0.966 ph +1.04/+1.05; s=16: 0.936/0.934 ph +2.08/+2.10; s=32: 0.877/0.872 ph -2.12/-2.09; s=64: 0.758/0.760 ph +2.07/+2.10;
+structure function D(r) = 2 (C0(0) - C0(r)) along e1, e2, e1+e2 at r = 1, 2, 4, 8, 16, 32 (nonlinear law); linear: 2 sigma^2 (1/L^2) sum_k (1 - cos k.r)/(1-u)
+   r=(1, 0): nonlinear 0.1084  linear 0.1198  ratio 0.905
+   r=(2, 0): nonlinear 0.1495  linear 0.1658  ratio 0.902
+   r=(4, 0): nonlinear 0.1900  linear 0.2117  ratio 0.898
+   r=(8, 0): nonlinear 0.2298  linear 0.2574  ratio 0.893
+   r=(16, 0): nonlinear 0.2680  linear 0.3028  ratio 0.885
+   r=(32, 0): nonlinear 0.2984  linear 0.3472  ratio 0.860
+   r=(1, 1): nonlinear 0.1414  linear 0.1567  ratio 0.902
+   r=(4, 4): nonlinear 0.2214  linear 0.2479  ratio 0.893
+   r=(16, 16): nonlinear 0.2913  linear 0.3382  ratio 0.861

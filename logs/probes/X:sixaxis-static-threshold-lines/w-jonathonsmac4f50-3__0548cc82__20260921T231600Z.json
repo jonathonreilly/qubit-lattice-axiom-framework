@@ -1,0 +1,43 @@
+{
+ "task": "X:sixaxis-static-threshold-lines",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/scan_static_sixaxis.py 24 400 2 2.5 3 3.5 4 4.5 5 6 7 8 --qr 2 3",
+ "seed": 32560,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0548cc82",
+ "started_utc": "20260921T231600Z",
+ "elapsed_s": 16.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "lines": [
+   "  p= 2.00: order 0.1706 | 0.1708   (1s per start)",
+   "  p= 2.50: order 0.1708 | 0.1709   (1s per start)",
+   "  p= 3.00: order 0.1716 | 0.1715   (1s per start)",
+   "  p= 3.50: order 0.1720 | 0.1719   (1s per start)",
+   "  p= 4.00: order 0.1728 | 0.1727   (1s per start)",
+   "  p= 4.50: order 0.1737 | 0.1734   (1s per start)",
+   "  p= 5.00: order 0.1765 | 0.1758   (1s per start)",
+   "  p= 6.00: order 0.8491 | 0.7508   (1s per start)",
+   "  p= 7.00: order 0.9645 | 0.8497   (1s per start)",
+   "  p= 8.00: order 0.9862 | 0.6593   (1s per start)"
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "the six-axis STATIC law on other weight lines: --extra '<p values> --qr q r' (block 28: p in (3.6, 3.7) at (p,1,2) on L = 24 with 400 sweeps); locate the crossing on (p,1,1), (p,2,4), (p,1,3); then L = 32. GRID UNITS: the 7 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "607a7e1616cafe12cbc1b0d4e5824bbac84681359ac390d003f6e8faf503bb01",
+ "stdout_tail": "six-axis static law at (p,1,2), L=24, sweeps=400; order = mean fraction of the majority value over the last half (aligned start | random start)\n  p= 2.00: order 0.1706 | 0.1708   (1s per start)\n  p= 2.50: order 0.1708 | 0.1709   (1s per start)\n  p= 3.00: order 0.1716 | 0.1715   (1s per start)\n  p= 3.50: order 0.1720 | 0.1719   (1s per start)\n  p= 4.00: order 0.1728 | 0.1727   (1s per start)\n  p= 4.50: order 0.1737 | 0.1734   (1s per start)\n  p= 5.00: order 0.1765 | 0.1758   (1s per start)\n  p= 6.00: order 0.8491 | 0.7508   (1s per start)\n  p= 7.00: order 0.9645 | 0.8497   (1s per start)\n  p= 8.00: order 0.9862 | 0.6593   (1s per start)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T231617Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

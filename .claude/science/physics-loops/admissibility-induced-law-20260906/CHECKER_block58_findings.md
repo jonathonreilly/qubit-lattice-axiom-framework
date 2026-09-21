@@ -1,0 +1,8 @@
+# Block 58 — refuting pass and findings (2026-09-21)
+
+1. Disjoint machinery (`specs/supervisor_control_block58_refuter.py`): W1 the record's bare energy by root-finding on the ledger against the closed form (`2×10⁻¹³`), wall flux unchanged (`8×10⁻¹⁴`), twenty random amplitudes; W2 the flux identity with the harmonic weights `x² − y²`, `xyz`, `x² + y² − 2z²` (`10⁻¹³`) and its failure for `x²` (0.36): the walls see every harmonic moment; W3 thirty random amplitudes: distance between the mean site of formation and the centre the walls see: probability `0.043`, charge `0`, energy `0.043` sites; W4 midpoint concavity of the ledger (200 pairs) and `m' ≥ m` at the site of largest potential. All pass.
+2. **The supervisor's expectation was wrong.** Block 55 makes the energy density the source, so the supervisor expected odds by energy density to hold the centre. They do not. The centre the walls see is weighted by the CHARGE density `|χ|²φ` of block 56; the energy density `|χ|²φ²` misses by as much as the probability density `|χ|²`, on the other side. Now in the runner (D2) and the note.
+3. Finding folded: the two-site proof in T3 first carried an unfinished formula; replaced by block 56 T4's closed form (`φ_a < φ_b` for the heavier site).
+4. Finding folded: the first mutation changed the state handed to later families and failed in four of them; it is now confined to its own check.
+5. Finding folded: the name list of the runner's scan contained a name that occurs in the mandated second fence sentence; removed from the list (the fence is verbatim).
+6. Finding folded (control): an unfinished comparison of the far field with a dipole formula was removed in favour of the exact flux moments.

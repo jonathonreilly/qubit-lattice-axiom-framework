@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 58 — author checks (not a review PASS)
+Written lens pass by the supervisor; the block sits next to the parked statistical postulate and assumes, derives and proposes no odds. Refuting pass with root-finding, higher harmonic weights, random amplitudes and concavity (4/0). The supervisor's expectation that the energy density would hold the centre was refuted by the computation (it is the charge density). Census 9/9 in family after one mutation was confined to its own check.

@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 58 (2026-09-21)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "decision record fork 4: does an amplitude that has formed no record source anything; what happens to the ledger when a record forms"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "fork 4 has an exact discriminator (a monopole from nothing at every formation, or never) and any rule of formation one exact constraint (first moment of the odds = charge-weighted centre); next: bond rates and lengths"
+```

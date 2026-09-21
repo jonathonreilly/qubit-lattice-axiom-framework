@@ -1,0 +1,5 @@
+PASS: W1 twenty random amplitudes: the bare energy of the record that keeps the ledger, found by root-finding, agrees with the closed form to 1.8e-13; the total wall flux changes by at most 8.3e-14
+PASS: W2 sum over wall bonds (1 - phi) h = 6 sum q h: relative defects x: 3.1e-13, x^2 - y^2: 3.1e-14, x y z: 4.1e-13, x^2 + y^2 - 2 z^2: 1.5e-13, x^2 (not harmonic): 3.6e-01: every harmonic moment of the charges is seen at the walls; a weight that is not harmonic is not
+PASS: W3 thirty random amplitudes: distance between the mean site of formation and the centre the walls see: odds by probability 4.30e-02 (smallest 5.5e-03), by charge 0.0e+00, by energy 4.31e-02 (smallest 5.5e-03) sites: only the charge density |chi|^2 phi holds the centre
+PASS: W4 the ledger is midpoint-concave in the vector of bare energies for 200 random pairs; a record at the site of largest potential needs at least the amplitude's bare energy in 20 random cases
+REFUTER TOTAL: PASS=4 FAIL=0

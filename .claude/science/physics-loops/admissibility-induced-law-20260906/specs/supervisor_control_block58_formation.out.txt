@@ -1,0 +1,14 @@
+gamma = 0.05, bare energy 6.0: ledger 5.985594; (2/gamma) x wall flux 5.985594; centres relative to the box centre: charge-weighted [-1.8438  0.2891 -0.    ], probability [-1.8449  0.2888  0.    ], energy-weighted [-1.8426  0.2893  0.    ]; lowest phi 0.9962
+    first moments of the wall flux / 6 = [0.452816 0.506009 0.498799] against the dipole sum q x = [0.452816 0.506009 0.498799]
+    record at [-3  0  0]: bare energy 6.21744; ledger after 5.985602; wall flux changed by +2.2e-07; first moments / 6 jumped by [-2.8836e-02 -7.2080e-03  1.0000e-06] against Q (y - Xbar) = [-0.028836 -0.007209  0.      ]
+    record at [5 2 0]: bare energy 6.21730; ledger after 5.985602; wall flux changed by +2.1e-07; first moments / 6 jumped by [1.70685e-01 4.26720e-02 1.00000e-06] against Q (y - Xbar) = [0.170684 0.042671 0.      ]
+    record at [ 0  4 -3]: bare energy 6.21734; ledger after 5.985602; wall flux changed by +2.1e-07; first moments / 6 jumped by [ 0.045984  0.092552 -0.074819] against Q (y - Xbar) = [ 0.045984  0.092551 -0.07482 ]
+gamma = 1.0, bare energy 6.0: ledger 5.725552; (2/gamma) x wall flux 5.725552; centres relative to the box centre: charge-weighted [-1.8225  0.2944 -0.    ], probability [-1.8449  0.2888  0.    ], energy-weighted [-1.7999  0.3001 -0.    ]; lowest phi 0.9280
+    first moments of the wall flux / 6 = [8.673006 9.683065 9.542587] against the dipole sum q x = [8.673006 9.683065 9.542587]
+    record at [-3  0  0]: bare energy 19.97588; ledger after 5.725560; wall flux changed by +3.9e-06; first moments / 6 jumped by [-5.61796e-01 -1.40465e-01  1.30000e-05] against Q (y - Xbar) = [-0.561807 -0.140478  0.      ]
+    record at [5 2 0]: bare energy 19.94631; ledger after 5.725560; wall flux changed by +3.7e-06; first moments / 6 jumped by [3.255243e+00 8.137950e-01 1.200000e-05] against Q (y - Xbar) = [3.255228 0.813781 0.      ]
+    record at [ 0  4 -3]: bare energy 19.95377; ledger after 5.725560; wall flux changed by +3.7e-06; first moments / 6 jumped by [ 0.869593  1.768055 -1.431378] against Q (y - Xbar) = [ 0.869581  1.76804  -1.431388]
+(b) wall-referred law at weak field (c = 1, ambient rate 1), 61^3 box: the change of u at distance r along an axis after the event, by time
+    r =  8: change below 2 per cent of its largest value until t = 6.00 (r/(c wbar) = 8); value at t = 34: -3.033e-03
+    r = 16: change below 2 per cent of its largest value until t = 13.50 (r/(c wbar) = 16); value at t = 34: -1.451e-03
+    r = 24: change below 2 per cent of its largest value until t = 21.25 (r/(c wbar) = 24); value at t = 34: +1.763e-03

@@ -1,0 +1,33 @@
+{
+ "task": "X:source-screening-map",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 screening_gas.py 3 1 2 neutral 0.5 24 3000 1",
+ "seed": 20935,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4d6b50be",
+ "started_utc": "20260921T200215Z",
+ "elapsed_s": 123.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=3.0 q=1.0 r=2.0 c=0.5000 rho=0.5 L=24 nbrs=2.994 nbrs_over_random=0.998 aligned=0.254 S=0.29 accept=0.452 records=6894 seconds=123",
+  "screening": "S(0) = 0.255  xi^2 = 0.014  xi = 0.119 lattice steps (fit of 1/S against E(k) on 538 modes)"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: the range of the field of a held record (block 41, T3). screening_gas.py is the moving-records simulator with the occupancy structure factor accumulated; its SCREENING line gives S(0) and the range xi from 1/S(k) = (1/S0)(1 + xi^2 E(k)). First look (side 16, one seed): xi between 0 and 1.1 lattice steps away from the clumping onset; the fit fails next to the onset, where the small-k structure factor grows. The map over p, density and scale says where the density field is of short range and where it is not.",
+ "stdout_sha256": "92eb19e557fb6b99f00ec102d1f1decc9c5606a22fcc4d316e5b69d82053466a",
+ "stdout_tail": "weights (3.0,1.0,2.0) scale c=0.5000 (neutral) rho=0.5 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=3.000 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 2.998 0.228 0.474 0.33\n     2 2.976 0.235 0.454 0.26\n     4 2.994 0.244 0.449 0.11\n     9 2.990 0.254 0.450 0.06\n    18 2.974 0.255 0.447 0.10\n    38 3.001 0.257 0.456 0.23\n    79 2.990 0.257 0.449 0.04\n   163 3.020 0.253 0.451 0.18\n   338 2.991 0.253 0.447 0.21\n   700 2.988 0.255 0.452 0.21\n  1449 2.974 0.253 0.453 0.20\n  3000 3.008 0.251 0.455 0.27\noccupancy structure factor by E(k) shell: E<0.2: 0.272, E<0.6: 0.252, E<1.6: 0.251, E<4: 0.251, E<12: 0.250\nSCREENING: S(0) = 0.255  xi^2 = 0.014  xi = 0.119 lattice steps (fit of 1/S against E(k) on 538 modes)\nSUMMARY: p=3.0 q=1.0 r=2.0 c=0.5000 rho=0.5 L=24 nbrs=2.994 nbrs_over_random=0.998 aligned=0.254 S=0.29 accept=0.452 records=6894 seconds=123\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T200419Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

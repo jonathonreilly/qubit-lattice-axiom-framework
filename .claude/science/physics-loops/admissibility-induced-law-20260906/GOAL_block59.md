@@ -1,0 +1,9 @@
+# Block 59 — contract (2026-09-21; seventh block of the source-link direction; third of the 12-hour campaign)
+
+**Question.** Block 57 (#8578): a delay needs a reference to distant clocks or a field that is not a rate — a field of lengths. Decision record #8572, fork 6: a field of clock rates alone bends a ray by half of the comparator's amount. What can lengths be in the framework's vocabulary, what sources them, and do they supply the other half?
+
+**Lens pass (supervisor, in writing; no subagents).** Foundations: block 54's clause forces the product form `c_b = √(w_x w_y)`; a rate for every bond is a widening and must be named as one; block 54's walker has no rest energy, so comparing a ray with a slow body is conditional on an on-site energy. Rigour: two first-draft statements were too strong and were broken before the gates — "anisotropic bond-rate modes are short-ranged" (they are slaved to the scalar's second derivatives: a power law) and "no local law ties a length to the depth of a rate" (true for an algebraic clause; a cross term in the field's energy does it with a free exponent). Comparator: half the bending is the mark of a theory of clock rates alone; name under Premises and Prior art; avoid the forbidden phrases. Strategy: give the owner the fact in one sentence with the size of what is missing.
+
+**Exact target.** T1 what one walker sees; T2 each rate is sourced by the energy it times (a body at rest has no hop energy); T3 the law of bond rates: three numbers, one long-range scalar, the slaving of the anisotropic parts; T4 bending over fall = `d log c/d log a`; T5 what could tie lengths to rates.
+
+**Boundaries fixed in advance.** Bond rates supplied; their law's numbers and `β` not derived; a rest energy supplied; linear weak-field statements with held walls; no law of motion for lengths; comparator quoted as a comparator; nothing adopted.

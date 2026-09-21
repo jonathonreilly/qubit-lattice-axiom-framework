@@ -1,0 +1,6 @@
+(a) a ray crossing the gradient, 64^3 box, wave vector 0.5 along x, packet width 5, g = 0.004, T = 30.0: the part of the z-displacement odd in g
+    beta = 0 (lengths locked at 1: c = w): walk -1.6164; cloud of rays with E = c eps: -1.6110; walk over cloud 1.0034
+    beta = 1 (l = wbar/w: c = w^2/wbar): walk -3.1783; cloud of rays with E = c eps: -3.1680; walk over cloud 1.0033
+    bending with l = wbar/w over bending with locked lengths: 1.9662 (note T4: 2 at first order in g)
+(b) a slow body on a line, rest energy 0.4 timed by the SITE rate, hops timed by c = w^(1 + beta), g = 0.002, T = 100: fall of the packet
+    beta = 0: -9.8815; beta = 1: -10.0838; ratio 1.0205 (note T4: 1 at first order; -g T^2/2 = -10.0000)

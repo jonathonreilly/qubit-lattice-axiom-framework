@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 59 — author checks (not a review PASS)
+Written lens pass by the supervisor. Two first-draft claims were broken before the gates: anisotropic bond-rate modes are not exponentially short-ranged (they are slaved to the scalar's second derivatives), and a local law CAN tie lengths to the depth of a rate (a cross term; only an algebraic clause cannot) — the claim id and file names were changed accordingly. Refuting pass with symbolic rays and symbols, a transform solve, random dense checks and a coupled quadratic minimization (6/0). Census 10/10 in family.

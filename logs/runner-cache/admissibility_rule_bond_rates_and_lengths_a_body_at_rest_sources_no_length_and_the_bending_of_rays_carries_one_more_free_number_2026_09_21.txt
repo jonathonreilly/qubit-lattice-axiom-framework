@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_bond_rates_and_lengths_a_body_at_rest_sources_no_length_and_the_bending_of_rays_carries_one_more_free_number_2026_09_21.py
+runner_sha256: 19f5b4f056f5988376a44f420971d8adedd553330b62f94b9c1b95ae647949bd
+input_fingerprint_sha256: d8c1d2a4859e66e96ac5c831e01f07ec8a7238c3ab367b40a0a7a160111f530a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T2: on a 3x3x4 torus with rational bond rates, site rates and amplitude, the hop energies t_b = d<H>/dlog c_b and the on-site energies r_x = d<H>/dlog w_x add up to <H> = 160871/12870: H has weight one in the rates taken together, and each rate is sourced by the energy it times
+PASS: B2 T2: a body at rest (real envelope, rest content) has exactly zero hop energy on every one of the 108 bonds: by the ledger it sources site rates only, and no bond rate or length.  A walker with no rest energy moving along the third axis (wave vector pi/2) has all of its energy on that axis's bonds and none on the others: it sources the rates of the bonds it crosses
+PASS: B3 T2: in block 54's product form c_b = sqrt(w_x w_y) the energy density of block 55 is half the hop energy of the six bonds at the site (plus the on-site energy): the product form makes every bond's energy slow the clocks at both its ends, in all directions alike
+PASS: C1 T3: the bonds within one site of a bond's midpoint fall into 3 classes under the 8 rotations that keep the bond: 8 perpendicular bonds touching it (squared distance 1/2), 2 collinear and 4 parallel (squared distance 1).  A covariant linear law for log c_b with the shift symmetry therefore has three free numbers (alpha, beta, delta) where block 53's law for site rates had none
+PASS: C2 T3: at zero wave vector the law annihilates the isotropic mode (all three directions equal) and gives the two anisotropic modes the restoring term -12 beta = -4: they carry no long-range field of their own (what is left of them at distance is slaved to the second derivatives of the scalar and falls off two powers of the distance faster); at long range one scalar is left, with the stiffness alpha + 2 beta + 2 delta; with beta = 0 the three directions would not talk to each other at all
+PASS: D1 T4: for E^2 = a^2 m^2 + c^2 sum sin^2 k_j a slow body falls at -c^2 dlog a and a ray crossing the gradient bends at -c^2 dlog c, exactly on the lattice (the ray taken along an axis at sin k = 3/5): with locked lengths (c = a) the ray bends as the body falls; with l = abar/a it bends twice as much; with bond rates that ignore the site rates it does not bend at all.  The ratio is dlog c/dlog a and nothing else
+PASS: E1 T5: a length is a pure number, so a clause for it must be unchanged when the unit of rate is changed (here by 49/9): a clause in the ratio of the two rates at the bond's ends is; a clause in their depth, l = 1/sqrt(w_x w_y), is not; l = wbar/sqrt(w_x w_y) is, but it needs the ambient rate — a reference to distant clocks, as block 57's front did.  An algebraic local clause gives l = 1 wherever the rate is uniform, however deep
+PASS: E2 T5: a cross term between the differences of log l and of u in the field's energy gives, for a body at rest and held walls, log l = -(kappa/S) u exactly (segment of nine sites, kappa/S = 2/3): l = (wbar/w)^beta with beta free; the bending of a ray is then 1 + beta = 5/3 times the fall of a slow body; beta = 0 for the clauses of blocks 53 to 57, 1 for the comparator
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — hop energies on the 108 bonds and on-site energies on the 36 sites of a 3x3x4 torus for a rational amplitude, bond rates and site rates; a body at rest; a walker moving along one axis
+per_site: executed — block 55's energy density against half the hop energies of the six bonds at each site, in the product form
+per_mode: executed — the classes of bonds near a bond under the rotations that keep it; the law's matrix at zero wave vector and its isotropic mode at a rational wave vector
+per_block: executed — exact ray equations at rational points for three relations between bond rates and site rates; three clauses for a length under a change of the unit of rate
+lattice_wide: T1, T2 hold for every amplitude and all positive rates; T3 for linear covariant shift-symmetric laws reaching the bonds within one site of a bond's midpoint; T4 for rays of the stated energy function; T5(a) for every algebraic local clause l_b = G(w_x, w_y), T5(b) for the linear static laws with a cross term; that bonds have rates of their own, the law they obey and its three numbers, any reference to the ambient rate, and a rest energy are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: bond rates and lengths — each rate is sourced by the energy it times; a body at rest has no hop energy and stretches no length; anisotropic bond-rate modes are short-ranged; a ray bends by dlog c and a slow body falls by dlog a; an algebraic local clause cannot tie a length to the depth of a rate, a cross term in the field's energy can, with a free exponent
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,48 @@
+V1  the machinery, against block 50's own numbers
+ok        70200 three-record configurations with a record at the origin
+ok        the LOCAL clock 1/pi_x leaves the balance defective in 3168 of them
+ok        largest defect 3 at [((0, 0, 0), 2), ((0, 0, 1), 4), ((0, 1, 0), 2)] = (0,0,0):+y, (0,0,1):+z, (0,1,0):+y
+     - all three reproduce the block exactly, so the machinery below is the block's.
+
+V2  (b) number and momentum, event by event
+ok        record number is conserved by every event (a move relocates, an exchange
+ok        swaps), and so is the MULTISET of contents, hence the total content vector
+     - both hold for ANY choice of rates: they are properties of the event set, not of
+       the clock.  So the question really is only about stationarity of pi.
+
+V3  (a) the three-record feasibility problem
+     Unknown: a non-negative rate for each LOCAL pattern (the target's state plus any
+     other record within distance one of either site, modulo the symmetries fixing the
+     event).  One equation per configuration.  Solved by LP, verified in Fractions:
+ok        c = 1: 332 equations, 274 patterns -> FEASIBLE, and all 332 balance EXACTLY with rates in [1, 79/3]
+ok        c = c_0 = 1/2: 334 equations, 274 patterns -> FEASIBLE, and all 334 balance EXACTLY with rates in [1, 227/12]
+     So on the three-record sector the answer to (a) is YES, at both scales.
+
+V4  (c) what happens at four records
+     Adjoin the single four-record configuration
+       [((1, 0, 1), 1), ((1, 0, 2), 4), ((1, 1, 2), 1), ((1, 2, 1), 1)]   (contents 1 = -x, 4 = +z)
+ok        the LP over 333 equations and 275 patterns is INFEASIBLE
+     A float LP is not a proof, so here is a Farkas certificate, verified exactly.
+     Writing R = 1 + t with t >= 0 the system is A t = -A1, which is infeasible iff
+     there is a y with A^T y <= 0 componentwise and sum_j (A^T y)_j < 0:
+ok          (A^T y)_j <= 0 at every one of the 275 patterns (positives: 0)
+ok          and sum_j (A^T y)_j = -36/5 < 0, strictly negative in 2 coordinates
+     Both conditions hold in exact rational arithmetic, so NO strictly positive local
+     rate rule balances the three-record sector together with this one four-record
+     configuration.  (Scaling: a strictly positive solution could be scaled to R >= 1,
+     so ruling out R >= 1 rules out every strictly positive solution.)
+
+V5  (d) the theorem
+     THEOREM (scope: the 3x3x3 window, (p,q,r) = (3,1,2), rates depending only on the
+     contents and occupancies within distance one of the two sites of the event, up to
+     the symmetries fixing the event).
+       (i)  On the three-record sector the stationarity of pi under inertial streaming
+            is FEASIBLE with strictly positive local rates, at c = 1 and at c_0 = 1/2.
+       (ii) It is INFEASIBLE on the three- and four-record sectors together: a single
+            four-record configuration already obstructs it, with an exact certificate.
+     So the unit's question decides YES at three records, and the YES does NOT
+     generalize.  The local clock's defect at three records was not the obstruction -
+     that one is repairable; the obstruction lives one record higher.
+
+SUMMARY: PARTIAL, and it decides the unit's question: with rates depending only on the contents and occupancies within distance one of the two sites of the event, modulo the symmetries fixing the event, stationarity of pi under inertial streaming is FEASIBLE on the three-record sector of the 3x3x3 window at (p,q,r) = (3,1,2) - at c = 1 with 332 equations over 274 patterns and at the neutral scale c_0 = 1/2 with 334 equations, in both cases with strictly positive rates and every equation verified in exact rational arithmetic (the particular rate interval depends on which LP vertex is returned and is printed by the run, not fixed here) - but it becomes INFEASIBLE as soon as a single four-record configuration is adjoined, namely (1,0,1):-x, (1,0,2):+z, (1,1,2):-x, (1,2,1):-x, for which an exact Farkas certificate y satisfies (A^T y)_j <= 0 at all 275 patterns with sum -36/5 < 0; the machinery is validated against block 50's own figures (70200 configurations, the local clock defective in 3168 of them, largest defect 3 at the block's stated witness), and record number and the multiset of contents are conserved by every event for any rates at all
+HIT: the local-clock question decides YES at three records and the YES does not generalize - stationarity of pi under inertial streaming is feasible with strictly positive rates depending only on distance-one data of the event, on the entire three-record sector at both c = 1 and the neutral scale, every equation verified exactly, yet adjoining the SINGLE four-record configuration (1,0,1):-x, (1,0,2):+z, (1,1,2):-x, (1,2,1):-x makes the system infeasible, with an exact Farkas certificate (A^T y <= 0 at every pattern, sum -36/5 < 0); so the three-record defect of the local clock 1/pi_x is repairable and is not the real obstruction, which lives one record higher

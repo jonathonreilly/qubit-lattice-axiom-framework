@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/package_wave_reviews.py", line 61, in <module>
+    p,data=resolve(row,relative);digest=sha(data)
+           ~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/package_wave_reviews.py", line 33, in resolve
+    if p.suffix.lower()=='.pdf':assert p.name=='Taggi_1909.06558v3.pdf',str(p)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: /Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Jerrum_Sinclair_1989_ApproximatingPermanent.pdf

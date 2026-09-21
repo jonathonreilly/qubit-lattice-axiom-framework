@@ -1,0 +1,22 @@
+{
+  "exact_quartic_covariance_rotations": 24,
+  "integer_content_tests": 5760,
+  "sampled_label_counts": {
+    "4": 8,
+    "3": 8,
+    "2": 8,
+    "5": 8,
+    "11": 24,
+    "9": 24,
+    "7": 24,
+    "13": 24,
+    "10": 24,
+    "8": 24,
+    "6": 24,
+    "12": 24,
+    "0": 8,
+    "1": 8
+  },
+  "physical_rate_conjugacies": 30,
+  "formation_even_region_first_moments": "Exactly zero by n -> -n; no numerical quadrature assumed."
+}

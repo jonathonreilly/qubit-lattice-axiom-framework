@@ -1,0 +1,409 @@
+{
+  "completed_utc": "2026-09-21T17:56:04.902367+00:00",
+  "sources_sha256": {
+    "dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+    "DIMER_ROUTED_RECORD_TRANSPORT.md": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479"
+  },
+  "groups": [
+    {
+      "group": "geometry",
+      "passed": true,
+      "detail": {
+        "rows": [
+          {
+            "N": 8,
+            "sample": 0,
+            "accepted_geometry_flips": 0,
+            "pairs": 256,
+            "directed_nonfixed_channels": 1280,
+            "nontrivial_cycles": 192,
+            "minimum_cycle": 4,
+            "largest_cycle": 8,
+            "distinct_pair_edges": 1280,
+            "immutable_replays": 40,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 8,
+            "sample": 1,
+            "accepted_geometry_flips": 564,
+            "pairs": 256,
+            "directed_nonfixed_channels": 1280,
+            "nontrivial_cycles": 66,
+            "minimum_cycle": 4,
+            "largest_cycle": 98,
+            "distinct_pair_edges": 1104,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 8,
+            "sample": 2,
+            "accepted_geometry_flips": 535,
+            "pairs": 256,
+            "directed_nonfixed_channels": 1280,
+            "nontrivial_cycles": 76,
+            "minimum_cycle": 5,
+            "largest_cycle": 171,
+            "distinct_pair_edges": 1096,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 8,
+            "sample": 3,
+            "accepted_geometry_flips": 527,
+            "pairs": 256,
+            "directed_nonfixed_channels": 1280,
+            "nontrivial_cycles": 84,
+            "minimum_cycle": 5,
+            "largest_cycle": 53,
+            "distinct_pair_edges": 1111,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 10,
+            "sample": 0,
+            "accepted_geometry_flips": 0,
+            "pairs": 500,
+            "directed_nonfixed_channels": 2500,
+            "nontrivial_cycles": 300,
+            "minimum_cycle": 5,
+            "largest_cycle": 10,
+            "distinct_pair_edges": 2500,
+            "immutable_replays": 40,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 10,
+            "sample": 1,
+            "accepted_geometry_flips": 1055,
+            "pairs": 500,
+            "directed_nonfixed_channels": 2500,
+            "nontrivial_cycles": 114,
+            "minimum_cycle": 6,
+            "largest_cycle": 240,
+            "distinct_pair_edges": 2165,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 10,
+            "sample": 2,
+            "accepted_geometry_flips": 1046,
+            "pairs": 500,
+            "directed_nonfixed_channels": 2500,
+            "nontrivial_cycles": 96,
+            "minimum_cycle": 6,
+            "largest_cycle": 205,
+            "distinct_pair_edges": 2170,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 10,
+            "sample": 3,
+            "accepted_geometry_flips": 999,
+            "pairs": 500,
+            "directed_nonfixed_channels": 2500,
+            "nontrivial_cycles": 124,
+            "minimum_cycle": 5,
+            "largest_cycle": 137,
+            "distinct_pair_edges": 2141,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 12,
+            "sample": 0,
+            "accepted_geometry_flips": 0,
+            "pairs": 864,
+            "directed_nonfixed_channels": 4320,
+            "nontrivial_cycles": 432,
+            "minimum_cycle": 6,
+            "largest_cycle": 12,
+            "distinct_pair_edges": 4320,
+            "immutable_replays": 40,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 12,
+            "sample": 1,
+            "accepted_geometry_flips": 1782,
+            "pairs": 864,
+            "directed_nonfixed_channels": 4320,
+            "nontrivial_cycles": 122,
+            "minimum_cycle": 7,
+            "largest_cycle": 590,
+            "distinct_pair_edges": 3747,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 12,
+            "sample": 2,
+            "accepted_geometry_flips": 1840,
+            "pairs": 864,
+            "directed_nonfixed_channels": 4320,
+            "nontrivial_cycles": 134,
+            "minimum_cycle": 7,
+            "largest_cycle": 435,
+            "distinct_pair_edges": 3742,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          },
+          {
+            "N": 12,
+            "sample": 3,
+            "accepted_geometry_flips": 1745,
+            "pairs": 864,
+            "directed_nonfixed_channels": 4320,
+            "nontrivial_cycles": 120,
+            "minimum_cycle": 7,
+            "largest_cycle": 449,
+            "distinct_pair_edges": 3741,
+            "immutable_replays": 48,
+            "parity_independent_aggregated_rates": true
+          }
+        ],
+        "short_torus_countercontrol": "N=4 columnar routing contains nontrivial 2-cycles"
+      }
+    },
+    {
+      "group": "local",
+      "passed": true,
+      "detail": {
+        "rows": [
+          {
+            "axis": 0,
+            "words": 38416,
+            "drive2_range": [
+              -4,
+              4
+            ],
+            "all_cycle_balance": true,
+            "three_exact_rational_currents": true
+          },
+          {
+            "axis": 1,
+            "words": 38416,
+            "drive2_range": [
+              -4,
+              4
+            ],
+            "all_cycle_balance": true,
+            "three_exact_rational_currents": true
+          },
+          {
+            "axis": 2,
+            "words": 38416,
+            "drive2_range": [
+              -4,
+              4
+            ],
+            "all_cycle_balance": true,
+            "three_exact_rational_currents": true
+          }
+        ],
+        "total_six_direction_words": 230496,
+        "actual_rate_range": [
+          "1/2",
+          "3/2"
+        ]
+      }
+    },
+    {
+      "group": "symmetry_and_code",
+      "passed": true,
+      "detail": {
+        "exact_quartic_covariance_rotations": 24,
+        "integer_content_tests": 5760,
+        "sampled_label_counts": {
+          "4": 8,
+          "3": 8,
+          "2": 8,
+          "5": 8,
+          "11": 24,
+          "9": 24,
+          "7": 24,
+          "13": 24,
+          "10": 24,
+          "8": 24,
+          "6": 24,
+          "12": 24,
+          "0": 8,
+          "1": 8
+        },
+        "physical_rate_conjugacies": 30,
+        "formation_even_region_first_moments": "Exactly zero by n -> -n; no numerical quadrature assumed."
+      }
+    },
+    {
+      "group": "wave",
+      "passed": true,
+      "detail": {
+        "speed_squared_at_equal_colors": "24/49",
+        "tangent_characteristic_polynomial": "lambda**9*(49*lambda**2 - 24)**2/2401",
+        "propagating_rank": 4,
+        "zero_speed_tangent_dimensions": 9,
+        "geometry_current_controls": [
+          {
+            "N": 8,
+            "dimer_direction_sum": [
+              0,
+              0,
+              0
+            ],
+            "exact_current_cancellation": true
+          },
+          {
+            "N": 10,
+            "dimer_direction_sum": [
+              0,
+              0,
+              0
+            ],
+            "exact_current_cancellation": true
+          }
+        ]
+      }
+    },
+    {
+      "group": "blocks",
+      "passed": true,
+      "detail": {
+        "N": 32,
+        "accepted_geometry_flips": 40963,
+        "connected_block_controls": [
+          {
+            "anchor": 0,
+            "ell": 2,
+            "black_cube": 63,
+            "touching_pairs": 78,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "5/1638"
+          },
+          {
+            "anchor": 0,
+            "ell": 4,
+            "black_cube": 365,
+            "touching_pairs": 412,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "47/150380"
+          },
+          {
+            "anchor": 0,
+            "ell": 6,
+            "black_cube": 1099,
+            "touching_pairs": 1191,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "92/1308909"
+          },
+          {
+            "anchor": 2340,
+            "ell": 2,
+            "black_cube": 63,
+            "touching_pairs": 72,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "1/504"
+          },
+          {
+            "anchor": 2340,
+            "ell": 4,
+            "black_cube": 365,
+            "touching_pairs": 405,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "8/29565"
+          },
+          {
+            "anchor": 2340,
+            "ell": 6,
+            "black_cube": 1099,
+            "touching_pairs": 1183,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "12/185731"
+          },
+          {
+            "anchor": 5461,
+            "ell": 2,
+            "black_cube": 63,
+            "touching_pairs": 73,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "10/4599"
+          },
+          {
+            "anchor": 5461,
+            "ell": 4,
+            "black_cube": 365,
+            "touching_pairs": 406,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "41/148190"
+          },
+          {
+            "anchor": 5461,
+            "ell": 6,
+            "black_cube": 1099,
+            "touching_pairs": 1196,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "97/1314404"
+          },
+          {
+            "anchor": 16383,
+            "ell": 2,
+            "black_cube": 63,
+            "touching_pairs": 74,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "11/4662"
+          },
+          {
+            "anchor": 16383,
+            "ell": 4,
+            "black_cube": 365,
+            "touching_pairs": 404,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "39/147460"
+          },
+          {
+            "anchor": 16383,
+            "ell": 6,
+            "black_cube": 1099,
+            "touching_pairs": 1189,
+            "internal_contraction_connected": true,
+            "average_difference_variance": "90/1306711"
+          }
+        ],
+        "unsmoothed_direction_variance": 2.834228515625,
+        "smoothing": [
+          {
+            "ell": 1,
+            "exact_linear_variance_numerically_evaluated": 0.11090990777551776,
+            "black_block_size": 13
+          },
+          {
+            "ell": 2,
+            "exact_linear_variance_numerically_evaluated": 0.011637008409411218,
+            "black_block_size": 63
+          },
+          {
+            "ell": 4,
+            "exact_linear_variance_numerically_evaluated": 0.0009685070963419498,
+            "black_block_size": 365
+          },
+          {
+            "ell": 6,
+            "exact_linear_variance_numerically_evaluated": 0.00021159822063441643,
+            "black_block_size": 1099
+          },
+          {
+            "ell": 8,
+            "exact_linear_variance_numerically_evaluated": 6.835233935201024e-05,
+            "black_block_size": 2457
+          }
+        ],
+        "scope": "Finite geometric/canonical coefficient controls; no numerical proof of the limit or mixing constants."
+      }
+    }
+  ],
+  "scope": "Author controls. The continuum limit relies on the explicit finite-block proof, not these finite examples."
+}

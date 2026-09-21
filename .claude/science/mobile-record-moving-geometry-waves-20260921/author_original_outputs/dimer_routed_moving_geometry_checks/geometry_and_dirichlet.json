@@ -1,0 +1,94 @@
+{
+  "rows": [
+    {
+      "N": 8,
+      "kind": "winding",
+      "pairs": 256,
+      "accepted_geometry_flips": 0,
+      "flippable_squares": 0,
+      "immutable_rotation_replays": 0,
+      "maximum_scaled_geometric_increment": 0.0,
+      "exact_color_projections_and_form_coefficients": true
+    },
+    {
+      "N": 8,
+      "kind": "columnar",
+      "pairs": 256,
+      "accepted_geometry_flips": 0,
+      "flippable_squares": 512,
+      "immutable_rotation_replays": 1024,
+      "maximum_scaled_geometric_increment": 0.9496412035517843,
+      "exact_color_projections_and_form_coefficients": true
+    },
+    {
+      "N": 8,
+      "kind": "irregular",
+      "pairs": 256,
+      "accepted_geometry_flips": 512,
+      "flippable_squares": 166,
+      "immutable_rotation_replays": 332,
+      "maximum_scaled_geometric_increment": 0.9496412035517843,
+      "exact_color_projections_and_form_coefficients": true
+    },
+    {
+      "N": 10,
+      "kind": "winding",
+      "pairs": 500,
+      "accepted_geometry_flips": 0,
+      "flippable_squares": 0,
+      "immutable_rotation_replays": 0,
+      "maximum_scaled_geometric_increment": 0.0,
+      "exact_color_projections_and_form_coefficients": true
+    },
+    {
+      "N": 10,
+      "kind": "columnar",
+      "pairs": 500,
+      "accepted_geometry_flips": 0,
+      "flippable_squares": 1000,
+      "immutable_rotation_replays": 2000,
+      "maximum_scaled_geometric_increment": 0.9675312092750799,
+      "exact_color_projections_and_form_coefficients": true
+    },
+    {
+      "N": 10,
+      "kind": "irregular",
+      "pairs": 500,
+      "accepted_geometry_flips": 1004,
+      "flippable_squares": 330,
+      "immutable_rotation_replays": 660,
+      "maximum_scaled_geometric_increment": 0.9675312092750799,
+      "exact_color_projections_and_form_coefficients": true
+    },
+    {
+      "N": 12,
+      "kind": "winding",
+      "pairs": 864,
+      "accepted_geometry_flips": 0,
+      "flippable_squares": 0,
+      "immutable_rotation_replays": 0,
+      "maximum_scaled_geometric_increment": 0.0,
+      "exact_color_projections_and_form_coefficients": true
+    },
+    {
+      "N": 12,
+      "kind": "columnar",
+      "pairs": 864,
+      "accepted_geometry_flips": 0,
+      "flippable_squares": 1728,
+      "immutable_rotation_replays": 3456,
+      "maximum_scaled_geometric_increment": 0.9773614559926812,
+      "exact_color_projections_and_form_coefficients": true
+    },
+    {
+      "N": 12,
+      "kind": "irregular",
+      "pairs": 864,
+      "accepted_geometry_flips": 1837,
+      "flippable_squares": 569,
+      "immutable_rotation_replays": 1138,
+      "maximum_scaled_geometric_increment": 0.9773614559926812,
+      "exact_color_projections_and_form_coefficients": true
+    }
+  ]
+}

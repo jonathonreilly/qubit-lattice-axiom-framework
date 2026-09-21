@@ -1,0 +1,34 @@
+{
+  "graphs": 771,
+  "immutable_endpoint_transposition_replays": 7521,
+  "rows": [
+    {
+      "K": 2,
+      "connected_labeled_graphs": 1,
+      "color_sector_size": 2,
+      "largest_proved_lower_bound_over_actual_gap": 0.25,
+      "minimum_comparison_slack": 0.0
+    },
+    {
+      "K": 3,
+      "connected_labeled_graphs": 4,
+      "color_sector_size": 6,
+      "largest_proved_lower_bound_over_actual_gap": 0.08333333333333338,
+      "minimum_comparison_slack": 2.2204460492502815e-16
+    },
+    {
+      "K": 4,
+      "connected_labeled_graphs": 38,
+      "color_sector_size": 12,
+      "largest_proved_lower_bound_over_actual_gap": 0.056903559372885014,
+      "minimum_comparison_slack": -1.274422253638979e-13
+    },
+    {
+      "K": 5,
+      "connected_labeled_graphs": 728,
+      "color_sector_size": 30,
+      "largest_proved_lower_bound_over_actual_gap": 0.04818759739375386,
+      "minimum_comparison_slack": -7.947802013395028e-13
+    }
+  ]
+}

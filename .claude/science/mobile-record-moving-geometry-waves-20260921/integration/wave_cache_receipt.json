@@ -1,0 +1,15 @@
+{
+  "result": {
+    "runner": "scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nPASS: dimer_routed_transport_check.py: 5 complete control groups\nPASS: dimer_routed_preparation_check.py: 3 complete control groups\nPASS: dimer_routed_moving_geometry_check.py: 2 complete control groups\nPASS: dimer_routed_diffusive_gap_check.py: 3 complete control groups\nTOTAL: PASS=14 FAIL=0\n",
+    "stderr": "",
+    "elapsed_sec": 30.51078987121582,
+    "timeout_sec": 1200,
+    "live_log": "/Users/jonreilly/Documents/Codex/mobile-record-wave-publication-20260921/logs/runner-cache/.in-progress/mobile_records_moving_geometry_color_waves_2026_09_21.txt"
+  },
+  "cache_path": "/Users/jonreilly/Documents/Codex/mobile-record-wave-publication-20260921/logs/runner-cache/mobile_records_moving_geometry_color_waves_2026_09_21.txt",
+  "cache_sha256": "43bc57e74de92f222275778765a6570f3bdab86393cb1899e0609308c9c34263",
+  "cache_status": "fresh"
+}

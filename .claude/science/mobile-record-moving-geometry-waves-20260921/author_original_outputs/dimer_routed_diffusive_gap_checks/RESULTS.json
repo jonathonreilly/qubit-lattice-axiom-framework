@@ -1,0 +1,178 @@
+{
+  "created_utc": "2026-09-21T19:19:34.459093+00:00",
+  "sources": {
+    "dimer_routed_diffusive_gap_check.py": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95",
+    "DIMER_ROUTED_DIFFUSIVE_GAP_COMPARISON.md": "1d9f7929c5600c6e097913ab2459f351857431c7f3035d4a80bc497f9d732124",
+    "dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+    "DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+  },
+  "physical_loads": [
+    {
+      "N": 4,
+      "ordered_pairs": 4096,
+      "physical_edges": 192,
+      "exact_load_per_edge": 64
+    },
+    {
+      "N": 6,
+      "ordered_pairs": 46656,
+      "physical_edges": 648,
+      "exact_load_per_edge": 324
+    }
+  ],
+  "contracted_loads": [
+    {
+      "N": 8,
+      "kind": "winding",
+      "K": 256,
+      "fixture_flips": 0,
+      "unordered_reference_pairs": 32640,
+      "largest_physical_edge_multiplicity": 1,
+      "maximum_contracted_path_length": 10,
+      "erased_projected_vertices": 0,
+      "maximum_reference_path_load": 255,
+      "path_load_bound": 2048,
+      "maximum_word_edge_load": 485,
+      "word_load_bound": 4096,
+      "all_immutable_endpoint_words_exact": true,
+      "numerical_one_exceptional_color_gap": 1.1715728752538022,
+      "proven_unit_rate_H_gap_lower_bound": 0.001358695652173913
+    },
+    {
+      "N": 8,
+      "kind": "columnar",
+      "K": 256,
+      "fixture_flips": 0,
+      "unordered_reference_pairs": 32640,
+      "largest_physical_edge_multiplicity": 2,
+      "maximum_contracted_path_length": 10,
+      "erased_projected_vertices": 0,
+      "maximum_reference_path_load": 478,
+      "path_load_bound": 2048,
+      "maximum_word_edge_load": 887,
+      "word_load_bound": 4096,
+      "all_immutable_endpoint_words_exact": true,
+      "numerical_one_exceptional_color_gap": 0.5857864376268928,
+      "proven_unit_rate_H_gap_lower_bound": 0.001358695652173913
+    },
+    {
+      "N": 8,
+      "kind": "irregular",
+      "K": 256,
+      "fixture_flips": 499,
+      "unordered_reference_pairs": 32640,
+      "largest_physical_edge_multiplicity": 2,
+      "maximum_contracted_path_length": 12,
+      "erased_projected_vertices": 0,
+      "maximum_reference_path_load": 498,
+      "path_load_bound": 2048,
+      "maximum_word_edge_load": 923,
+      "word_load_bound": 4096,
+      "all_immutable_endpoint_words_exact": true,
+      "numerical_one_exceptional_color_gap": 1.4371125783949077,
+      "proven_unit_rate_H_gap_lower_bound": 0.001358695652173913
+    },
+    {
+      "N": 10,
+      "kind": "winding",
+      "K": 500,
+      "fixture_flips": 0,
+      "unordered_reference_pairs": 124750,
+      "largest_physical_edge_multiplicity": 1,
+      "maximum_contracted_path_length": 12,
+      "erased_projected_vertices": 0,
+      "maximum_reference_path_load": 647,
+      "path_load_bound": 5000,
+      "maximum_word_edge_load": 1192,
+      "word_load_bound": 10000,
+      "all_immutable_endpoint_words_exact": true,
+      "numerical_one_exceptional_color_gap": 0.763932022500196,
+      "proven_unit_rate_H_gap_lower_bound": 0.0008620689655172414
+    },
+    {
+      "N": 10,
+      "kind": "columnar",
+      "K": 500,
+      "fixture_flips": 0,
+      "unordered_reference_pairs": 124750,
+      "largest_physical_edge_multiplicity": 2,
+      "maximum_contracted_path_length": 12,
+      "erased_projected_vertices": 0,
+      "maximum_reference_path_load": 1184,
+      "path_load_bound": 5000,
+      "maximum_word_edge_load": 2239,
+      "word_load_bound": 10000,
+      "all_immutable_endpoint_words_exact": true,
+      "numerical_one_exceptional_color_gap": 0.3819660112500871,
+      "proven_unit_rate_H_gap_lower_bound": 0.0008620689655172414
+    },
+    {
+      "N": 10,
+      "kind": "irregular",
+      "K": 500,
+      "fixture_flips": 1017,
+      "unordered_reference_pairs": 124750,
+      "largest_physical_edge_multiplicity": 2,
+      "maximum_contracted_path_length": 14,
+      "erased_projected_vertices": 0,
+      "maximum_reference_path_load": 1195,
+      "path_load_bound": 5000,
+      "maximum_word_edge_load": 2305,
+      "word_load_bound": 10000,
+      "all_immutable_endpoint_words_exact": true,
+      "numerical_one_exceptional_color_gap": 0.9261604810762624,
+      "proven_unit_rate_H_gap_lower_bound": 0.0008620689655172414
+    }
+  ],
+  "schedule": [
+    {
+      "N": 8,
+      "K": 256,
+      "gap_lower_bound": 0.0007472826086956522,
+      "epsilon": 0.000244140625,
+      "sufficient_waiting_time": 462240.05905855924,
+      "improvement_factor": 15.9375
+    },
+    {
+      "N": 16,
+      "K": 2048,
+      "gap_lower_bound": 0.00018284574468085108,
+      "epsilon": 1.52587890625e-05,
+      "sufficient_waiting_time": 14836505.59092572,
+      "improvement_factor": 63.96875
+    },
+    {
+      "N": 32,
+      "K": 16384,
+      "gap_lower_bound": 4.523026315789474e-05,
+      "epsilon": 9.5367431640625e-07,
+      "sufficient_waiting_time": 478271093.9603059,
+      "improvement_factor": 255.984375
+    },
+    {
+      "N": 64,
+      "K": 131072,
+      "gap_lower_bound": 1.1248363874345551e-05,
+      "epsilon": 5.960464477539063e-08,
+      "sufficient_waiting_time": 15377276684.06194,
+      "improvement_factor": 1023.9921875
+    },
+    {
+      "N": 128,
+      "K": 1048576,
+      "gap_lower_bound": 2.8047486945169716e-06,
+      "epsilon": 3.725290298461914e-09,
+      "sufficient_waiting_time": 493322202772.78296,
+      "improvement_factor": 4095.99609375
+    },
+    {
+      "N": 256,
+      "K": 8388608,
+      "gap_lower_bound": 7.002729791395046e-07,
+      "epsilon": 2.3283064365386963e-10,
+      "sufficient_waiting_time": 15806736131670.848,
+      "improvement_factor": 16383.998046875
+    }
+  ],
+  "scope": "Exact finite combinatorial controls and numerical one-exceptional-color spectra; all-count-sector and all-volume bounds are proved in the note, not inferred from these samples."
+}

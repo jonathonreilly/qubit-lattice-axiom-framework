@@ -1,0 +1,29 @@
+{
+  "claim_id": "mobile_records_moving_geometry_color_waves_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_MOVING_GEOMETRY_COLOR_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "03b4434a59cccc3d01122d8d84a9fb4812815445ae972bc5fe6c98f481f5e747",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_ALL_STAGE_FORMATION_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "e45dbe02cdfcbb756595b81a6c18e3b511b0987efcf66d2906c214b531255ef6",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/primary_sources/DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/primary_sources/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/primary_sources/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/primary_sources/DIMER_ROUTED_DIFFUSIVE_GAP_COMPARISON.md": "1d9f7929c5600c6e097913ab2459f351857431c7f3035d4a80bc497f9d732124",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/author_checks/dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/author_checks/dimer_routed_preparation_check.py": "ceb61f213da0e675d27fafd094704590916d77f200f5682187d3c42b3b38c82b",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/author_checks/dimer_routed_moving_geometry_check.py": "ac77dead111c72e25d5d1121622a9e94c27c84c4b35b5bfbf89f8a86c8712df9",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/author_checks/dimer_routed_diffusive_gap_check.py": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95",
+    "scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py": "2d4cdcd4aca957a9f188fc29e5b5d2372ccb5c419b48f7945d02031a514fcf7e"
+  },
+  "mutation": "omit_endpoint_return_word",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "dimer_routed_diffusive_gap_check.py",
+      "source_sha256": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95",
+      "executed_source_sha256": "1a1f0850c94af2d1b48204a5e2772044374696ac5c6f93b87cbc9a4c59ce951a",
+      "returncode": 1,
+      "stdout": "exact all-vertex physical loads passed\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/moving-record-wave-controls-p3ts51rw/dimer_routed_diffusive_gap_check.py\", line 121, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/moving-record-wave-controls-p3ts51rw/dimer_routed_diffusive_gap_check.py\", line 103, in main\n    contracted=contracted_loads()\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/moving-record-wave-controls-p3ts51rw/dimer_routed_diffusive_gap_check.py\", line 75, in contracted_loads\n    assert len(word)==2*length-1<=3*N-1\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

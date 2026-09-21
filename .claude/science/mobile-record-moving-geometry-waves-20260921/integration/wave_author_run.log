@@ -1,0 +1,6 @@
+PASS: declared_sources_and_conditional_scope
+PASS: dimer_routed_transport_check.py: 5 complete control groups
+PASS: dimer_routed_preparation_check.py: 3 complete control groups
+PASS: dimer_routed_moving_geometry_check.py: 2 complete control groups
+PASS: dimer_routed_diffusive_gap_check.py: 3 complete control groups
+TOTAL: PASS=14 FAIL=0

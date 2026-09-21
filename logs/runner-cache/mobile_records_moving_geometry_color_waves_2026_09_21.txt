@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py
+runner_sha256: 2d4cdcd4aca957a9f188fc29e5b5d2372ccb5c419b48f7945d02031a514fcf7e
+input_fingerprint_sha256: d657f976e02fb9c564a2c0ec8ab2ccae9f14af385907402c05752dfdc68e44a2
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 30.51
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: dimer_routed_transport_check.py: 5 complete control groups
+PASS: dimer_routed_preparation_check.py: 3 complete control groups
+PASS: dimer_routed_moving_geometry_check.py: 2 complete control groups
+PASS: dimer_routed_diffusive_gap_check.py: 3 complete control groups
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

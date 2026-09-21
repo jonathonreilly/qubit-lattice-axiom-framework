@@ -1,0 +1,1086 @@
+{
+  "rows": [
+    {
+      "states": 4,
+      "intervals": 1,
+      "integral_second_moment": 7.622723914217527,
+      "energy_upper_bound": 12.642156862745098,
+      "ratio": 0.6029607128733523,
+      "interval_witnesses": [
+        {
+          "duration": 0.9,
+          "hminus": 7.023420479302832
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 2,
+      "integral_second_moment": 8.347622072296671,
+      "energy_upper_bound": 15.639794517216433,
+      "ratio": 0.5337424390779258,
+      "interval_witnesses": [
+        {
+          "duration": 0.5,
+          "hminus": 2.1598029251891284
+        },
+        {
+          "duration": 0.6,
+          "hminus": 11.233326326689422
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 3,
+      "integral_second_moment": 15.668793410563643,
+      "energy_upper_bound": 24.757310314430786,
+      "ratio": 0.6328956260418347,
+      "interval_witnesses": [
+        {
+          "duration": 1.0,
+          "hminus": 4.668533087487508
+        },
+        {
+          "duration": 0.4,
+          "hminus": 6.490637286104767
+        },
+        {
+          "duration": 0.9,
+          "hminus": 5.68207461698442
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 4,
+      "integral_second_moment": 6.708309062092771,
+      "energy_upper_bound": 18.431238802734796,
+      "ratio": 0.36396409019980813,
+      "interval_witnesses": [
+        {
+          "duration": 0.1,
+          "hminus": 12.349384014423078
+        },
+        {
+          "duration": 0.3,
+          "hminus": 8.300855085508552
+        },
+        {
+          "duration": 1.1,
+          "hminus": 3.560548765730881
+        },
+        {
+          "duration": 0.8,
+          "hminus": 1.9672760399606941
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 5,
+      "integral_second_moment": 31.736945204032047,
+      "energy_upper_bound": 58.738367684354046,
+      "ratio": 0.5403103023662287,
+      "interval_witnesses": [
+        {
+          "duration": 0.4,
+          "hminus": 3.9314175562671934
+        },
+        {
+          "duration": 1.1,
+          "hminus": 1.3155294428484745
+        },
+        {
+          "duration": 1.0,
+          "hminus": 10.794166375371534
+        },
+        {
+          "duration": 1.0,
+          "hminus": 12.612982500706773
+        },
+        {
+          "duration": 0.7,
+          "hminus": 4.203407937797886
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 6,
+      "integral_second_moment": 55.03754364604556,
+      "energy_upper_bound": 82.52577740041156,
+      "ratio": 0.6669133618579046,
+      "interval_witnesses": [
+        {
+          "duration": 1.2,
+          "hminus": 11.403085786603931
+        },
+        {
+          "duration": 1.3,
+          "hminus": 10.56362757694895
+        },
+        {
+          "duration": 1.3,
+          "hminus": 3.592093332723067
+        },
+        {
+          "duration": 1.2,
+          "hminus": 5.63896209115104
+        },
+        {
+          "duration": 0.4,
+          "hminus": 3.4828608980433144
+        },
+        {
+          "duration": 0.8,
+          "hminus": 1.2710621313860815
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 7,
+      "integral_second_moment": 51.17539508338934,
+      "energy_upper_bound": 88.41573437294416,
+      "ratio": 0.5788041624755127,
+      "interval_witnesses": [
+        {
+          "duration": 0.8,
+          "hminus": 12.998721227621484
+        },
+        {
+          "duration": 1.0,
+          "hminus": 10.975670307845085
+        },
+        {
+          "duration": 0.1,
+          "hminus": 15.426490801437938
+        },
+        {
+          "duration": 0.4,
+          "hminus": 7.122507122507123
+        },
+        {
+          "duration": 1.2,
+          "hminus": 5.24211593134674
+        },
+        {
+          "duration": 1.3,
+          "hminus": 6.432691253836037
+        },
+        {
+          "duration": 1.2,
+          "hminus": 3.1571085164835164
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 8,
+      "integral_second_moment": 16.89434656307482,
+      "energy_upper_bound": 51.461237725220066,
+      "ratio": 0.3282926588995596,
+      "interval_witnesses": [
+        {
+          "duration": 0.2,
+          "hminus": 10.643778207291223
+        },
+        {
+          "duration": 0.1,
+          "hminus": 0.7717573450181803
+        },
+        {
+          "duration": 0.4,
+          "hminus": 4.922266010696024
+        },
+        {
+          "duration": 0.5,
+          "hminus": 8.845587254538719
+        },
+        {
+          "duration": 0.2,
+          "hminus": 9.370165745856353
+        },
+        {
+          "duration": 0.5,
+          "hminus": 9.002471276973171
+        },
+        {
+          "duration": 1.1,
+          "hminus": 6.85892719572045
+        },
+        {
+          "duration": 0.4,
+          "hminus": 8.03224688037963
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 1,
+      "integral_second_moment": 10.892699219530524,
+      "energy_upper_bound": 16.827363455516046,
+      "ratio": 0.6473206125443183,
+      "interval_witnesses": [
+        {
+          "duration": 1.1,
+          "hminus": 7.648801570689112
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 2,
+      "integral_second_moment": 15.839728967429398,
+      "energy_upper_bound": 32.027787464053944,
+      "ratio": 0.49456207317495643,
+      "interval_witnesses": [
+        {
+          "duration": 1.0,
+          "hminus": 13.519757215409388
+        },
+        {
+          "duration": 0.7,
+          "hminus": 3.5630521665965507
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 3,
+      "integral_second_moment": 13.114226415505454,
+      "energy_upper_bound": 31.109718908069663,
+      "ratio": 0.4215475702065475,
+      "interval_witnesses": [
+        {
+          "duration": 1.0,
+          "hminus": 4.546474469759476
+        },
+        {
+          "duration": 0.6,
+          "hminus": 13.771130506925118
+        },
+        {
+          "duration": 0.5,
+          "hminus": 5.491413360240572
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 4,
+      "integral_second_moment": 5.165920542323487,
+      "energy_upper_bound": 13.160248473925073,
+      "ratio": 0.3925397421301682,
+      "interval_witnesses": [
+        {
+          "duration": 0.4,
+          "hminus": 5.662474838049818
+        },
+        {
+          "duration": 0.1,
+          "hminus": 9.381452084960578
+        },
+        {
+          "duration": 0.2,
+          "hminus": 8.359493332890368
+        },
+        {
+          "duration": 0.7,
+          "hminus": 2.435843466669252
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 5,
+      "integral_second_moment": 8.535244271142894,
+      "energy_upper_bound": 18.886983728027506,
+      "ratio": 0.4519114536259669,
+      "interval_witnesses": [
+        {
+          "duration": 0.4,
+          "hminus": 5.901122980005478
+        },
+        {
+          "duration": 0.2,
+          "hminus": 4.902909005788219
+        },
+        {
+          "duration": 0.4,
+          "hminus": 0.5971977883890424
+        },
+        {
+          "duration": 0.7,
+          "hminus": 7.98586301929162
+        },
+        {
+          "duration": 0.6,
+          "hminus": 0.45579606999027916
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 6,
+      "integral_second_moment": 15.810219279939474,
+      "energy_upper_bound": 38.74595299592652,
+      "ratio": 0.40804827491536083,
+      "interval_witnesses": [
+        {
+          "duration": 0.5,
+          "hminus": 6.25749993060276
+        },
+        {
+          "duration": 0.8,
+          "hminus": 12.607133379073518
+        },
+        {
+          "duration": 0.2,
+          "hminus": 3.6729224899063846
+        },
+        {
+          "duration": 0.4,
+          "hminus": 3.5295465228163763
+        },
+        {
+          "duration": 1.2,
+          "hminus": 0.8795690729615359
+        },
+        {
+          "duration": 0.7,
+          "hminus": 4.223762621059139
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 7,
+      "integral_second_moment": 29.563283195931856,
+      "energy_upper_bound": 59.14040326500574,
+      "ratio": 0.49988301675015623,
+      "interval_witnesses": [
+        {
+          "duration": 0.8,
+          "hminus": 7.954290280018974
+        },
+        {
+          "duration": 0.6,
+          "hminus": 8.831298886075837
+        },
+        {
+          "duration": 0.7,
+          "hminus": 3.873186424258574
+        },
+        {
+          "duration": 1.0,
+          "hminus": 10.727439467085167
+        },
+        {
+          "duration": 0.2,
+          "hminus": 9.67389810080287
+        },
+        {
+          "duration": 0.7,
+          "hminus": 2.229554547491863
+        },
+        {
+          "duration": 0.8,
+          "hminus": 1.2173153867139297
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 8,
+      "integral_second_moment": 18.35955964943744,
+      "energy_upper_bound": 42.02881892371563,
+      "ratio": 0.4368326334071138,
+      "interval_witnesses": [
+        {
+          "duration": 0.4,
+          "hminus": 0.43890134529147984
+        },
+        {
+          "duration": 0.4,
+          "hminus": 7.033050847457627
+        },
+        {
+          "duration": 0.2,
+          "hminus": 11.62985529322163
+        },
+        {
+          "duration": 0.2,
+          "hminus": 9.253955696202532
+        },
+        {
+          "duration": 0.1,
+          "hminus": 2.6002979490022167
+        },
+        {
+          "duration": 0.5,
+          "hminus": 1.7195200078848805
+        },
+        {
+          "duration": 0.3,
+          "hminus": 1.63266010305484
+        },
+        {
+          "duration": 1.3,
+          "hminus": 9.414829659318636
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 1,
+      "integral_second_moment": 1.2689687692114084,
+      "energy_upper_bound": 1.9936487204744526,
+      "ratio": 0.6365056974076239,
+      "interval_witnesses": [
+        {
+          "duration": 1.1,
+          "hminus": 0.9062039638520238
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 2,
+      "integral_second_moment": 17.70316981805234,
+      "energy_upper_bound": 31.081628387273312,
+      "ratio": 0.569570216768343,
+      "interval_witnesses": [
+        {
+          "duration": 1.0,
+          "hminus": 13.62121706631955
+        },
+        {
+          "duration": 0.3,
+          "hminus": 6.398657091057017
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 3,
+      "integral_second_moment": 10.162445062641869,
+      "energy_upper_bound": 19.517722240693345,
+      "ratio": 0.52067781974342,
+      "interval_witnesses": [
+        {
+          "duration": 0.9,
+          "hminus": 3.7860794337396775
+        },
+        {
+          "duration": 0.9,
+          "hminus": 4.801980198019802
+        },
+        {
+          "duration": 0.8,
+          "hminus": 2.5370093147039254
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 4,
+      "integral_second_moment": 57.24173127867841,
+      "energy_upper_bound": 77.17458826269927,
+      "ratio": 0.7417173523988206,
+      "interval_witnesses": [
+        {
+          "duration": 1.4,
+          "hminus": 12.738602400503963
+        },
+        {
+          "duration": 0.6,
+          "hminus": 14.927695159450584
+        },
+        {
+          "duration": 1.3,
+          "hminus": 5.669010096430831
+        },
+        {
+          "duration": 1.0,
+          "hminus": 4.426920549613662
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 5,
+      "integral_second_moment": 16.355867750624107,
+      "energy_upper_bound": 32.44434760127735,
+      "ratio": 0.5041207162378006,
+      "interval_witnesses": [
+        {
+          "duration": 0.6,
+          "hminus": 3.0612249687382245
+        },
+        {
+          "duration": 0.4,
+          "hminus": 8.229695200870056
+        },
+        {
+          "duration": 0.8,
+          "hminus": 5.821146390600652
+        },
+        {
+          "duration": 0.4,
+          "hminus": 7.595156420064458
+        },
+        {
+          "duration": 0.8,
+          "hminus": 4.248226323176768
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 6,
+      "integral_second_moment": 19.50295077497634,
+      "energy_upper_bound": 42.71514546345202,
+      "ratio": 0.45658163078628583,
+      "interval_witnesses": [
+        {
+          "duration": 0.6,
+          "hminus": 7.4228808322175315
+        },
+        {
+          "duration": 0.3,
+          "hminus": 7.761832295205737
+        },
+        {
+          "duration": 1.2,
+          "hminus": 3.0970032164430843
+        },
+        {
+          "duration": 0.9,
+          "hminus": 6.43850267379679
+        },
+        {
+          "duration": 0.6,
+          "hminus": 1.603898826159866
+        },
+        {
+          "duration": 0.5,
+          "hminus": 8.203797963978074
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 7,
+      "integral_second_moment": 48.471261966458094,
+      "energy_upper_bound": 92.11206465015002,
+      "ratio": 0.5262205569982211,
+      "interval_witnesses": [
+        {
+          "duration": 1.2,
+          "hminus": 12.337965327395972
+        },
+        {
+          "duration": 0.1,
+          "hminus": 11.798135821020985
+        },
+        {
+          "duration": 1.3,
+          "hminus": 11.404033377842788
+        },
+        {
+          "duration": 0.9,
+          "hminus": 3.3041939069398985
+        },
+        {
+          "duration": 0.9,
+          "hminus": 3.092852534891407
+        },
+        {
+          "duration": 0.3,
+          "hminus": 6.979618773232329
+        },
+        {
+          "duration": 1.1,
+          "hminus": 6.721990481167495
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 8,
+      "integral_second_moment": 47.07536334267311,
+      "energy_upper_bound": 80.09657064988052,
+      "ratio": 0.5877325703300049,
+      "interval_witnesses": [
+        {
+          "duration": 0.7,
+          "hminus": 7.852242915398932
+        },
+        {
+          "duration": 0.9,
+          "hminus": 2.5568989294591353
+        },
+        {
+          "duration": 0.6,
+          "hminus": 8.514690293335065
+        },
+        {
+          "duration": 1.1,
+          "hminus": 11.145066112952625
+        },
+        {
+          "duration": 0.1,
+          "hminus": 4.260033913745397
+        },
+        {
+          "duration": 1.3,
+          "hminus": 7.23486701146474
+        },
+        {
+          "duration": 0.7,
+          "hminus": 2.6490587421563156
+        },
+        {
+          "duration": 0.8,
+          "hminus": 3.995559652013423
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 1,
+      "integral_second_moment": 0.12408172912088809,
+      "energy_upper_bound": 0.5217340590979781,
+      "ratio": 0.2378256258282467,
+      "interval_witnesses": [
+        {
+          "duration": 0.3,
+          "hminus": 0.8695567651632969
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 2,
+      "integral_second_moment": 5.8235631241869985,
+      "energy_upper_bound": 18.09941421218465,
+      "ratio": 0.32175423225943606,
+      "interval_witnesses": [
+        {
+          "duration": 0.2,
+          "hminus": 5.790420691797313
+        },
+        {
+          "duration": 0.6,
+          "hminus": 13.152704946221439
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 3,
+      "integral_second_moment": 22.982316992465968,
+      "energy_upper_bound": 42.596352735501085,
+      "ratio": 0.5395372025199663,
+      "interval_witnesses": [
+        {
+          "duration": 0.7,
+          "hminus": 13.03663598686469
+        },
+        {
+          "duration": 1.4,
+          "hminus": 5.595992947928754
+        },
+        {
+          "duration": 0.5,
+          "hminus": 8.676282099690013
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 4,
+      "integral_second_moment": 20.15707161444994,
+      "energy_upper_bound": 29.894670085782572,
+      "ratio": 0.6742697462995694,
+      "interval_witnesses": [
+        {
+          "duration": 0.9,
+          "hminus": 3.4817653276955607
+        },
+        {
+          "duration": 0.8,
+          "hminus": 7.629303210857332
+        },
+        {
+          "duration": 1.0,
+          "hminus": 2.9209955031787875
+        },
+        {
+          "duration": 0.4,
+          "hminus": 6.973270440251572
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 5,
+      "integral_second_moment": 32.435765855341046,
+      "energy_upper_bound": 69.94582488211984,
+      "ratio": 0.46372697598470325,
+      "interval_witnesses": [
+        {
+          "duration": 0.6,
+          "hminus": 5.418544048364441
+        },
+        {
+          "duration": 0.8,
+          "hminus": 5.535836759686899
+        },
+        {
+          "duration": 0.6,
+          "hminus": 4.060873905526317
+        },
+        {
+          "duration": 1.1,
+          "hminus": 15.122657658601867
+        },
+        {
+          "duration": 0.9,
+          "hminus": 9.135187596126547
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 6,
+      "integral_second_moment": 21.92612308227888,
+      "energy_upper_bound": 48.333803632652334,
+      "ratio": 0.4536395117777673,
+      "interval_witnesses": [
+        {
+          "duration": 0.1,
+          "hminus": 3.4557884082181993
+        },
+        {
+          "duration": 1.0,
+          "hminus": 5.206078420509005
+        },
+        {
+          "duration": 0.4,
+          "hminus": 4.550981286501677
+        },
+        {
+          "duration": 0.2,
+          "hminus": 10.497861267186826
+        },
+        {
+          "duration": 0.4,
+          "hminus": 3.971341819721367
+        },
+        {
+          "duration": 1.1,
+          "hminus": 11.91522096278978
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 7,
+      "integral_second_moment": 47.126076663677104,
+      "energy_upper_bound": 82.93542372979805,
+      "ratio": 0.5682261516769109,
+      "interval_witnesses": [
+        {
+          "duration": 0.9,
+          "hminus": 4.33048433048433
+        },
+        {
+          "duration": 0.7,
+          "hminus": 5.957672706681766
+        },
+        {
+          "duration": 0.1,
+          "hminus": 4.751812532366649
+        },
+        {
+          "duration": 0.7,
+          "hminus": 14.129356873455587
+        },
+        {
+          "duration": 1.4,
+          "hminus": 7.548559946416611
+        },
+        {
+          "duration": 0.8,
+          "hminus": 12.129343169919085
+        },
+        {
+          "duration": 1.1,
+          "hminus": 2.511559588374357
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 8,
+      "integral_second_moment": 37.97631530636872,
+      "energy_upper_bound": 64.22177951411646,
+      "ratio": 0.5913307851898003,
+      "interval_witnesses": [
+        {
+          "duration": 0.2,
+          "hminus": 4.632654433017409
+        },
+        {
+          "duration": 0.9,
+          "hminus": 9.472801753235153
+        },
+        {
+          "duration": 0.5,
+          "hminus": 3.805870870299505
+        },
+        {
+          "duration": 0.1,
+          "hminus": 5.837531746414949
+        },
+        {
+          "duration": 1.4,
+          "hminus": 7.31013559337722
+        },
+        {
+          "duration": 0.2,
+          "hminus": 8.088467568052153
+        },
+        {
+          "duration": 0.7,
+          "hminus": 10.759760276657872
+        },
+        {
+          "duration": 0.4,
+          "hminus": 1.9710828618820329
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 1,
+      "integral_second_moment": 3.40177336260394,
+      "energy_upper_bound": 7.5567794520837355,
+      "ratio": 0.4501617897113461,
+      "interval_witnesses": [
+        {
+          "duration": 0.5,
+          "hminus": 7.5567794520837355
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 2,
+      "integral_second_moment": 11.24756142730557,
+      "energy_upper_bound": 19.653555324507526,
+      "ratio": 0.5722914374316855,
+      "interval_witnesses": [
+        {
+          "duration": 0.3,
+          "hminus": 2.5107419077628186
+        },
+        {
+          "duration": 1.3,
+          "hminus": 6.979657761480706
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 3,
+      "integral_second_moment": 18.60845857792713,
+      "energy_upper_bound": 38.97180605571818,
+      "ratio": 0.4774851478867191,
+      "interval_witnesses": [
+        {
+          "duration": 0.3,
+          "hminus": 16.887240131011897
+        },
+        {
+          "duration": 1.2,
+          "hminus": 8.008095832153227
+        },
+        {
+          "duration": 1.1,
+          "hminus": 4.372741809065136
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 4,
+      "integral_second_moment": 11.582058356935153,
+      "energy_upper_bound": 21.61711279353177,
+      "ratio": 0.5357819273811956,
+      "interval_witnesses": [
+        {
+          "duration": 0.6,
+          "hminus": 2.5782342359589205
+        },
+        {
+          "duration": 0.7,
+          "hminus": 1.022708934252268
+        },
+        {
+          "duration": 1.2,
+          "hminus": 6.748758503958833
+        },
+        {
+          "duration": 0.2,
+          "hminus": 2.2360469823167275
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 5,
+      "integral_second_moment": 17.640380822439358,
+      "energy_upper_bound": 43.41788299068763,
+      "ratio": 0.4062929744000395,
+      "interval_witnesses": [
+        {
+          "duration": 0.2,
+          "hminus": 19.394572025052195
+        },
+        {
+          "duration": 0.1,
+          "hminus": 2.4063324538258577
+        },
+        {
+          "duration": 0.7,
+          "hminus": 5.345011727257498
+        },
+        {
+          "duration": 0.6,
+          "hminus": 8.019084430486775
+        },
+        {
+          "duration": 0.7,
+          "hminus": 12.90919282511211
+        }
+      ]
+    },
+    {
+      "states": 5,
+      "intervals": 6,
+      "integral_second_moment": 34.89576855706735,
+      "energy_upper_bound": 64.71936645870353,
+      "ratio": 0.5391858799998269,
+      "interval_witnesses": [
+        {
+          "duration": 0.8,
+          "hminus": 4.5120780663039195
+        },
+        {
+          "duration": 0.4,
+          "hminus": 13.09772433222147
+        },
+        {
+          "duration": 1.3,
+          "hminus": 4.93705552421053
+        },
+        {
+          "duration": 1.1,
+          "hminus": 9.534527523999554
+        },
+        {
+          "duration": 0.9,
+          "hminus": 5.709099495415113
+        },
+        {
+          "duration": 0.2,
+          "hminus": 7.332945198366237
+        }
+      ]
+    },
+    {
+      "states": 6,
+      "intervals": 7,
+      "integral_second_moment": 39.6674554082391,
+      "energy_upper_bound": 76.25397070560362,
+      "ratio": 0.5202018339659273,
+      "interval_witnesses": [
+        {
+          "duration": 1.3,
+          "hminus": 9.886750396357991
+        },
+        {
+          "duration": 1.1,
+          "hminus": 6.441298594543596
+        },
+        {
+          "duration": 0.9,
+          "hminus": 4.364149349436926
+        },
+        {
+          "duration": 0.6,
+          "hminus": 4.058749679875994
+        },
+        {
+          "duration": 0.3,
+          "hminus": 9.044331783424617
+        },
+        {
+          "duration": 0.6,
+          "hminus": 4.947343173563554
+        },
+        {
+          "duration": 0.9,
+          "hminus": 6.826768579949019
+        }
+      ]
+    },
+    {
+      "states": 4,
+      "intervals": 8,
+      "integral_second_moment": 15.102727647496499,
+      "energy_upper_bound": 37.46037259267521,
+      "ratio": 0.40316544129754867,
+      "interval_witnesses": [
+        {
+          "duration": 0.4,
+          "hminus": 5.701534690397528
+        },
+        {
+          "duration": 0.2,
+          "hminus": 15.887773378582203
+        },
+        {
+          "duration": 0.9,
+          "hminus": 1.4742882277671145
+        },
+        {
+          "duration": 0.6,
+          "hminus": 1.6067282176028308
+        },
+        {
+          "duration": 0.7,
+          "hminus": 1.4093367178015672
+        },
+        {
+          "duration": 1.1,
+          "hminus": 3.365953375086987
+        },
+        {
+          "duration": 0.5,
+          "hminus": 10.551962209302326
+        },
+        {
+          "duration": 0.1,
+          "hminus": 10.160558892021083
+        }
+      ]
+    }
+  ],
+  "numerical_matrix_exponential_control": true,
+  "maximum_ratio": 0.7417173523988206
+}

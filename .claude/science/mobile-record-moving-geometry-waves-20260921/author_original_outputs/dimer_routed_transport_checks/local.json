@@ -1,0 +1,39 @@
+{
+  "rows": [
+    {
+      "axis": 0,
+      "words": 38416,
+      "drive2_range": [
+        -4,
+        4
+      ],
+      "all_cycle_balance": true,
+      "three_exact_rational_currents": true
+    },
+    {
+      "axis": 1,
+      "words": 38416,
+      "drive2_range": [
+        -4,
+        4
+      ],
+      "all_cycle_balance": true,
+      "three_exact_rational_currents": true
+    },
+    {
+      "axis": 2,
+      "words": 38416,
+      "drive2_range": [
+        -4,
+        4
+      ],
+      "all_cycle_balance": true,
+      "three_exact_rational_currents": true
+    }
+  ],
+  "total_six_direction_words": 230496,
+  "actual_rate_range": [
+    "1/2",
+    "3/2"
+  ]
+}

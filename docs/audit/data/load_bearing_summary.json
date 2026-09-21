@@ -2,11 +2,11 @@
   "criticality_counts": {
     "critical": 747,
     "high": 343,
-    "leaf": 3608,
+    "leaf": 3609,
     "medium": 1330
   },
   "flagship_signal_used": false,
-  "node_count": 6028,
+  "node_count": 6029,
   "thresholds": {
     "critical_descendants": 250,
     "critical_in_degree": 15,
@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 375.164,
-      "transitive_descendants": 2293
+      "load_bearing_score": 375.664,
+      "transitive_descendants": 2294
     },
     {
       "claim_id": "three_generation_observable_theorem_note",

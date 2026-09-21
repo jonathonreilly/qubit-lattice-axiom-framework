@@ -1,0 +1,26 @@
+{
+  "note": "docs/MOBILE_RECORDS_MOVING_GEOMETRY_COLOR_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "primary": "DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "source_sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+      "published_body_sha256": "d9dee2b02384f00578815ddebb54ea90acf4550100bb7d714ff95da15cf3d581"
+    },
+    {
+      "primary": "DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+      "source_sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03",
+      "published_body_sha256": "31157917ba6127370337723f5c01d0d8f67ff74b3866428e73b4f795023e311c"
+    },
+    {
+      "primary": "DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md",
+      "source_sha256": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca",
+      "published_body_sha256": "28c354ee8b8cb8924357dfa78bfadbb4c520eccf3ddde18928c8e1b5bfae4d16"
+    },
+    {
+      "primary": "DIMER_ROUTED_DIFFUSIVE_GAP_COMPARISON.md",
+      "source_sha256": "1d9f7929c5600c6e097913ab2459f351857431c7f3035d4a80bc497f9d732124",
+      "published_body_sha256": "c2f617d6529bb27256b0860024ac0503532b4c26bc0a1e0d5f09dcf43f795ab7"
+    }
+  ],
+  "change": "Remove each original title and increase heading levels; preserve complete arguments and historical status sentences."
+}

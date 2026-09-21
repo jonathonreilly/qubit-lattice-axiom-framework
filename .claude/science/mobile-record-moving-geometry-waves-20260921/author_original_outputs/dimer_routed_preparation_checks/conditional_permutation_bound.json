@@ -1,0 +1,42 @@
+[
+  {
+    "K": 2,
+    "permutations": 2,
+    "variance": "324",
+    "D_all": "648",
+    "complete_comparison_factor": "1",
+    "all_conditional_bijections_verified": true
+  },
+  {
+    "K": 3,
+    "permutations": 6,
+    "variance": "7337/36",
+    "D_all": "2263/2",
+    "complete_comparison_factor": "2/3",
+    "all_conditional_bijections_verified": true
+  },
+  {
+    "K": 4,
+    "permutations": 24,
+    "variance": "5591/36",
+    "D_all": "13099/12",
+    "complete_comparison_factor": "1/2",
+    "all_conditional_bijections_verified": true
+  },
+  {
+    "K": 5,
+    "permutations": 120,
+    "variance": "228353/1200",
+    "D_all": "111053/60",
+    "complete_comparison_factor": "2/5",
+    "all_conditional_bijections_verified": true
+  },
+  {
+    "K": 6,
+    "permutations": 720,
+    "variance": "2041459/11520",
+    "D_all": "1889869/720",
+    "complete_comparison_factor": "1/3",
+    "all_conditional_bijections_verified": true
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-21T18:36:41.573963+00:00",
+  "coverage": "Root completely read the report, pre-comparison reconstruction, independent checker, replacement control, author-comparison script and narrow F1 acknowledgment. All declared manifest/seal bindings authenticated here; unchanged proof controls not rerun.",
+  "counts": {
+    "dimer_routed_transport_independent/FINAL_SEAL.json": 34,
+    "dimer_routed_transport_independent/PRE_COMPARISON_SEAL.json": 27,
+    "dimer_routed_transport_independent/FINAL_SOURCES.json": 19,
+    "dimer_routed_transport_independent/PRE_COMPARISON_SOURCES.json": 10,
+    "dimer_routed_f1_fix/F1_ACK_SEAL.json": 46
+  },
+  "unique_path_hash_pairs": 55,
+  "old_note_bindings_resolved_from_preserved_source": 3,
+  "current_note_sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+  "F1": "closed by exact scope correction; no other unresolved finding",
+  "formal_audit": false
+}

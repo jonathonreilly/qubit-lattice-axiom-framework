@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/package_wave_reviews.py", line 63, in <module>
+    p,data=resolve(row,relative);digest=sha(data)
+           ~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/package_wave_reviews.py", line 36, in resolve
+    assert len(data)<10_000_000
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError

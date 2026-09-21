@@ -1,0 +1,2006 @@
+{
+  "claim_id": "mobile_records_moving_geometry_color_waves_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_MOVING_GEOMETRY_COLOR_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "03b4434a59cccc3d01122d8d84a9fb4812815445ae972bc5fe6c98f481f5e747",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_ALL_STAGE_FORMATION_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "e45dbe02cdfcbb756595b81a6c18e3b511b0987efcf66d2906c214b531255ef6",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/primary_sources/DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/primary_sources/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/primary_sources/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/primary_sources/DIMER_ROUTED_DIFFUSIVE_GAP_COMPARISON.md": "1d9f7929c5600c6e097913ab2459f351857431c7f3035d4a80bc497f9d732124",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/author_checks/dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/author_checks/dimer_routed_preparation_check.py": "ceb61f213da0e675d27fafd094704590916d77f200f5682187d3c42b3b38c82b",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/author_checks/dimer_routed_moving_geometry_check.py": "ac77dead111c72e25d5d1121622a9e94c27c84c4b35b5bfbf89f8a86c8712df9",
+    ".claude/science/mobile-record-moving-geometry-waves-20260921/author_checks/dimer_routed_diffusive_gap_check.py": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95",
+    "scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py": "2d4cdcd4aca957a9f188fc29e5b5d2372ccb5c419b48f7945d02031a514fcf7e"
+  },
+  "mutation": null,
+  "passed": true,
+  "control_count": 14,
+  "suites": [
+    {
+      "suite": "dimer_routed_transport_check.py",
+      "source_sha256": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+      "executed_source_sha256": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+      "returncode": 0,
+      "stdout": "{\"group\": \"geometry\", \"passed\": true}\n{\"group\": \"local\", \"passed\": true}\n{\"group\": \"symmetry_and_code\", \"passed\": true}\n{\"group\": \"wave\", \"passed\": true}\n{\"group\": \"blocks\", \"passed\": true}\nPASS: five complete dimer-routed transport groups\n",
+      "stderr": "",
+      "results": {
+        "completed_utc": "2026-09-21T19:55:53.452830+00:00",
+        "sources_sha256": {
+          "dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+          "DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+        },
+        "groups": [
+          {
+            "group": "geometry",
+            "passed": true,
+            "detail": {
+              "rows": [
+                {
+                  "N": 8,
+                  "sample": 0,
+                  "accepted_geometry_flips": 0,
+                  "pairs": 256,
+                  "directed_nonfixed_channels": 1280,
+                  "nontrivial_cycles": 192,
+                  "minimum_cycle": 4,
+                  "largest_cycle": 8,
+                  "distinct_pair_edges": 1280,
+                  "immutable_replays": 40,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 8,
+                  "sample": 1,
+                  "accepted_geometry_flips": 564,
+                  "pairs": 256,
+                  "directed_nonfixed_channels": 1280,
+                  "nontrivial_cycles": 66,
+                  "minimum_cycle": 4,
+                  "largest_cycle": 98,
+                  "distinct_pair_edges": 1104,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 8,
+                  "sample": 2,
+                  "accepted_geometry_flips": 535,
+                  "pairs": 256,
+                  "directed_nonfixed_channels": 1280,
+                  "nontrivial_cycles": 76,
+                  "minimum_cycle": 5,
+                  "largest_cycle": 171,
+                  "distinct_pair_edges": 1096,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 8,
+                  "sample": 3,
+                  "accepted_geometry_flips": 527,
+                  "pairs": 256,
+                  "directed_nonfixed_channels": 1280,
+                  "nontrivial_cycles": 84,
+                  "minimum_cycle": 5,
+                  "largest_cycle": 53,
+                  "distinct_pair_edges": 1111,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 10,
+                  "sample": 0,
+                  "accepted_geometry_flips": 0,
+                  "pairs": 500,
+                  "directed_nonfixed_channels": 2500,
+                  "nontrivial_cycles": 300,
+                  "minimum_cycle": 5,
+                  "largest_cycle": 10,
+                  "distinct_pair_edges": 2500,
+                  "immutable_replays": 40,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 10,
+                  "sample": 1,
+                  "accepted_geometry_flips": 1055,
+                  "pairs": 500,
+                  "directed_nonfixed_channels": 2500,
+                  "nontrivial_cycles": 114,
+                  "minimum_cycle": 6,
+                  "largest_cycle": 240,
+                  "distinct_pair_edges": 2165,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 10,
+                  "sample": 2,
+                  "accepted_geometry_flips": 1046,
+                  "pairs": 500,
+                  "directed_nonfixed_channels": 2500,
+                  "nontrivial_cycles": 96,
+                  "minimum_cycle": 6,
+                  "largest_cycle": 205,
+                  "distinct_pair_edges": 2170,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 10,
+                  "sample": 3,
+                  "accepted_geometry_flips": 999,
+                  "pairs": 500,
+                  "directed_nonfixed_channels": 2500,
+                  "nontrivial_cycles": 124,
+                  "minimum_cycle": 5,
+                  "largest_cycle": 137,
+                  "distinct_pair_edges": 2141,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 12,
+                  "sample": 0,
+                  "accepted_geometry_flips": 0,
+                  "pairs": 864,
+                  "directed_nonfixed_channels": 4320,
+                  "nontrivial_cycles": 432,
+                  "minimum_cycle": 6,
+                  "largest_cycle": 12,
+                  "distinct_pair_edges": 4320,
+                  "immutable_replays": 40,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 12,
+                  "sample": 1,
+                  "accepted_geometry_flips": 1782,
+                  "pairs": 864,
+                  "directed_nonfixed_channels": 4320,
+                  "nontrivial_cycles": 122,
+                  "minimum_cycle": 7,
+                  "largest_cycle": 590,
+                  "distinct_pair_edges": 3747,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 12,
+                  "sample": 2,
+                  "accepted_geometry_flips": 1840,
+                  "pairs": 864,
+                  "directed_nonfixed_channels": 4320,
+                  "nontrivial_cycles": 134,
+                  "minimum_cycle": 7,
+                  "largest_cycle": 435,
+                  "distinct_pair_edges": 3742,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                },
+                {
+                  "N": 12,
+                  "sample": 3,
+                  "accepted_geometry_flips": 1745,
+                  "pairs": 864,
+                  "directed_nonfixed_channels": 4320,
+                  "nontrivial_cycles": 120,
+                  "minimum_cycle": 7,
+                  "largest_cycle": 449,
+                  "distinct_pair_edges": 3741,
+                  "immutable_replays": 48,
+                  "parity_independent_aggregated_rates": true
+                }
+              ],
+              "short_torus_countercontrol": "N=4 columnar routing contains nontrivial 2-cycles"
+            }
+          },
+          {
+            "group": "local",
+            "passed": true,
+            "detail": {
+              "rows": [
+                {
+                  "axis": 0,
+                  "words": 38416,
+                  "drive2_range": [
+                    -4,
+                    4
+                  ],
+                  "all_cycle_balance": true,
+                  "three_exact_rational_currents": true
+                },
+                {
+                  "axis": 1,
+                  "words": 38416,
+                  "drive2_range": [
+                    -4,
+                    4
+                  ],
+                  "all_cycle_balance": true,
+                  "three_exact_rational_currents": true
+                },
+                {
+                  "axis": 2,
+                  "words": 38416,
+                  "drive2_range": [
+                    -4,
+                    4
+                  ],
+                  "all_cycle_balance": true,
+                  "three_exact_rational_currents": true
+                }
+              ],
+              "total_six_direction_words": 230496,
+              "actual_rate_range": [
+                "1/2",
+                "3/2"
+              ]
+            }
+          },
+          {
+            "group": "symmetry_and_code",
+            "passed": true,
+            "detail": {
+              "exact_quartic_covariance_rotations": 24,
+              "integer_content_tests": 5760,
+              "sampled_label_counts": {
+                "4": 8,
+                "3": 8,
+                "2": 8,
+                "5": 8,
+                "11": 24,
+                "9": 24,
+                "7": 24,
+                "13": 24,
+                "10": 24,
+                "8": 24,
+                "6": 24,
+                "12": 24,
+                "0": 8,
+                "1": 8
+              },
+              "physical_rate_conjugacies": 30,
+              "formation_even_region_first_moments": "Exactly zero by n -> -n; no numerical quadrature assumed."
+            }
+          },
+          {
+            "group": "wave",
+            "passed": true,
+            "detail": {
+              "speed_squared_at_equal_colors": "24/49",
+              "tangent_characteristic_polynomial": "lambda**9*(49*lambda**2 - 24)**2/2401",
+              "propagating_rank": 4,
+              "zero_speed_tangent_dimensions": 9,
+              "geometry_current_controls": [
+                {
+                  "N": 8,
+                  "dimer_direction_sum": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "exact_current_cancellation": true
+                },
+                {
+                  "N": 10,
+                  "dimer_direction_sum": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "exact_current_cancellation": true
+                }
+              ]
+            }
+          },
+          {
+            "group": "blocks",
+            "passed": true,
+            "detail": {
+              "N": 32,
+              "accepted_geometry_flips": 40963,
+              "connected_block_controls": [
+                {
+                  "anchor": 0,
+                  "ell": 2,
+                  "black_cube": 63,
+                  "touching_pairs": 78,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "5/1638"
+                },
+                {
+                  "anchor": 0,
+                  "ell": 4,
+                  "black_cube": 365,
+                  "touching_pairs": 412,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "47/150380"
+                },
+                {
+                  "anchor": 0,
+                  "ell": 6,
+                  "black_cube": 1099,
+                  "touching_pairs": 1191,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "92/1308909"
+                },
+                {
+                  "anchor": 2340,
+                  "ell": 2,
+                  "black_cube": 63,
+                  "touching_pairs": 72,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "1/504"
+                },
+                {
+                  "anchor": 2340,
+                  "ell": 4,
+                  "black_cube": 365,
+                  "touching_pairs": 405,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "8/29565"
+                },
+                {
+                  "anchor": 2340,
+                  "ell": 6,
+                  "black_cube": 1099,
+                  "touching_pairs": 1183,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "12/185731"
+                },
+                {
+                  "anchor": 5461,
+                  "ell": 2,
+                  "black_cube": 63,
+                  "touching_pairs": 73,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "10/4599"
+                },
+                {
+                  "anchor": 5461,
+                  "ell": 4,
+                  "black_cube": 365,
+                  "touching_pairs": 406,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "41/148190"
+                },
+                {
+                  "anchor": 5461,
+                  "ell": 6,
+                  "black_cube": 1099,
+                  "touching_pairs": 1196,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "97/1314404"
+                },
+                {
+                  "anchor": 16383,
+                  "ell": 2,
+                  "black_cube": 63,
+                  "touching_pairs": 74,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "11/4662"
+                },
+                {
+                  "anchor": 16383,
+                  "ell": 4,
+                  "black_cube": 365,
+                  "touching_pairs": 404,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "39/147460"
+                },
+                {
+                  "anchor": 16383,
+                  "ell": 6,
+                  "black_cube": 1099,
+                  "touching_pairs": 1189,
+                  "internal_contraction_connected": true,
+                  "average_difference_variance": "90/1306711"
+                }
+              ],
+              "unsmoothed_direction_variance": 2.834228515625,
+              "smoothing": [
+                {
+                  "ell": 1,
+                  "exact_linear_variance_numerically_evaluated": 0.11090990777551776,
+                  "black_block_size": 13
+                },
+                {
+                  "ell": 2,
+                  "exact_linear_variance_numerically_evaluated": 0.011637008409411218,
+                  "black_block_size": 63
+                },
+                {
+                  "ell": 4,
+                  "exact_linear_variance_numerically_evaluated": 0.0009685070963419498,
+                  "black_block_size": 365
+                },
+                {
+                  "ell": 6,
+                  "exact_linear_variance_numerically_evaluated": 0.00021159822063441643,
+                  "black_block_size": 1099
+                },
+                {
+                  "ell": 8,
+                  "exact_linear_variance_numerically_evaluated": 6.835233935201024e-05,
+                  "black_block_size": 2457
+                }
+              ],
+              "scope": "Finite geometric/canonical coefficient controls; no numerical proof of the limit or mixing constants."
+            }
+          }
+        ],
+        "scope": "Author controls. The continuum limit relies on the explicit finite-block proof, not these finite examples."
+      }
+    },
+    {
+      "suite": "dimer_routed_preparation_check.py",
+      "source_sha256": "ceb61f213da0e675d27fafd094704590916d77f200f5682187d3c42b3b38c82b",
+      "executed_source_sha256": "ceb61f213da0e675d27fafd094704590916d77f200f5682187d3c42b3b38c82b",
+      "returncode": 0,
+      "stdout": "{\"group\": \"conditional_permutation_bound\", \"passed\": true}\n{\"group\": \"physical_graph_comparison\", \"passed\": true}\n{\"group\": \"nonreversible_preparation\", \"passed\": true}\nPASS: three complete color-preparation groups\n",
+      "stderr": "",
+      "results": {
+        "created_utc": "2026-09-21T19:55:54.039982+00:00",
+        "sources_sha256": {
+          "dimer_routed_preparation_check.py": "ceb61f213da0e675d27fafd094704590916d77f200f5682187d3c42b3b38c82b",
+          "DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03",
+          "DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+        },
+        "groups": [
+          {
+            "group": "conditional_permutation_bound",
+            "passed": true,
+            "detail": [
+              {
+                "K": 2,
+                "permutations": 2,
+                "variance": "324",
+                "D_all": "648",
+                "complete_comparison_factor": "1",
+                "all_conditional_bijections_verified": true
+              },
+              {
+                "K": 3,
+                "permutations": 6,
+                "variance": "7337/36",
+                "D_all": "2263/2",
+                "complete_comparison_factor": "2/3",
+                "all_conditional_bijections_verified": true
+              },
+              {
+                "K": 4,
+                "permutations": 24,
+                "variance": "5591/36",
+                "D_all": "13099/12",
+                "complete_comparison_factor": "1/2",
+                "all_conditional_bijections_verified": true
+              },
+              {
+                "K": 5,
+                "permutations": 120,
+                "variance": "228353/1200",
+                "D_all": "111053/60",
+                "complete_comparison_factor": "2/5",
+                "all_conditional_bijections_verified": true
+              },
+              {
+                "K": 6,
+                "permutations": 720,
+                "variance": "2041459/11520",
+                "D_all": "1889869/720",
+                "complete_comparison_factor": "1/3",
+                "all_conditional_bijections_verified": true
+              }
+            ]
+          },
+          {
+            "group": "physical_graph_comparison",
+            "passed": true,
+            "detail": {
+              "graphs": 771,
+              "immutable_endpoint_transposition_replays": 7521,
+              "rows": [
+                {
+                  "K": 2,
+                  "connected_labeled_graphs": 1,
+                  "color_sector_size": 2,
+                  "largest_proved_lower_bound_over_actual_gap": 0.25,
+                  "minimum_comparison_slack": 0.0
+                },
+                {
+                  "K": 3,
+                  "connected_labeled_graphs": 4,
+                  "color_sector_size": 6,
+                  "largest_proved_lower_bound_over_actual_gap": 0.08333333333333338,
+                  "minimum_comparison_slack": 2.2204460492502815e-16
+                },
+                {
+                  "K": 4,
+                  "connected_labeled_graphs": 38,
+                  "color_sector_size": 12,
+                  "largest_proved_lower_bound_over_actual_gap": 0.056903559372885014,
+                  "minimum_comparison_slack": -1.274422253638979e-13
+                },
+                {
+                  "K": 5,
+                  "connected_labeled_graphs": 728,
+                  "color_sector_size": 30,
+                  "largest_proved_lower_bound_over_actual_gap": 0.04818759739375386,
+                  "minimum_comparison_slack": -7.947802013395028e-13
+                }
+              ]
+            }
+          },
+          {
+            "group": "nonreversible_preparation",
+            "passed": true,
+            "detail": {
+              "nonreversible_density_rows": [
+                {
+                  "t": 0.05,
+                  "centered_L2": 1.7190368804813245,
+                  "L2_bound": 1.9947984424676466,
+                  "total_variation": 0.6847045977694592
+                },
+                {
+                  "t": 0.5,
+                  "centered_L2": 0.6141613798064621,
+                  "L2_bound": 1.9485889863182284,
+                  "total_variation": 0.28952824152917533
+                },
+                {
+                  "t": 2.0,
+                  "centered_L2": 0.04467530168633128,
+                  "L2_bound": 1.8021502114425811,
+                  "total_variation": 0.01959536019495285
+                },
+                {
+                  "t": 10.0,
+                  "centered_L2": 4.448999306153618e-08,
+                  "L2_bound": 1.18805064110727,
+                  "total_variation": 2.001157994868663e-08
+                }
+              ],
+              "count_mixture_states": 243,
+              "all_sector_weights_exact": true,
+              "schedule": [
+                {
+                  "N": 8,
+                  "pairs": 256,
+                  "epsilon": 0.000244140625,
+                  "gap_lower_bound": 4.688832054560955e-05,
+                  "sufficient_post_completion_time": 7366950.941245788
+                },
+                {
+                  "N": 16,
+                  "pairs": 2048,
+                  "epsilon": 1.52587890625e-05,
+                  "gap_lower_bound": 2.8583604444490644e-06,
+                  "sufficient_post_completion_time": 949072717.0195296
+                },
+                {
+                  "N": 32,
+                  "pairs": 16384,
+                  "epsilon": 9.5367431640625e-07,
+                  "gap_lower_bound": 1.7669149985382797e-07,
+                  "sufficient_post_completion_time": 122429927067.99518
+                },
+                {
+                  "N": 64,
+                  "pairs": 131072,
+                  "epsilon": 5.960464477539063e-08,
+                  "gap_lower_bound": 1.0984814153521607e-08,
+                  "sufficient_post_completion_time": 15746211189505.33
+                },
+                {
+                  "N": 128,
+                  "pairs": 1048576,
+                  "epsilon": 3.725290298461914e-09,
+                  "gap_lower_bound": 6.847537522793741e-10,
+                  "sufficient_post_completion_time": 2020645815517464.2
+                },
+                {
+                  "N": 256,
+                  "pairs": 8388608,
+                  "epsilon": 2.3283064365386963e-10,
+                  "gap_lower_bound": 4.274127579458978e-11,
+                  "sufficient_post_completion_time": 2.5897753390876365e+17
+                }
+              ]
+            }
+          }
+        ],
+        "scope": "Author finite controls for an all-volume proof; not a mixing-exponent fit, native rate derivation or independent audit."
+      }
+    },
+    {
+      "suite": "dimer_routed_moving_geometry_check.py",
+      "source_sha256": "ac77dead111c72e25d5d1121622a9e94c27c84c4b35b5bfbf89f8a86c8712df9",
+      "executed_source_sha256": "ac77dead111c72e25d5d1121622a9e94c27c84c4b35b5bfbf89f8a86c8712df9",
+      "returncode": 0,
+      "stdout": "geometry_and_dirichlet PASS\nswitched_energy PASS\n",
+      "stderr": "",
+      "results": {
+        "status": "pass",
+        "completed_utc": "2026-09-21T19:55:54.563699+00:00",
+        "sources": {
+          "DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca",
+          "DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+          "DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03",
+          "dimer_routed_moving_geometry_check.py": "ac77dead111c72e25d5d1121622a9e94c27c84c4b35b5bfbf89f8a86c8712df9",
+          "dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921"
+        },
+        "geometry_and_dirichlet": {
+          "rows": [
+            {
+              "N": 8,
+              "kind": "winding",
+              "pairs": 256,
+              "accepted_geometry_flips": 0,
+              "flippable_squares": 0,
+              "immutable_rotation_replays": 0,
+              "maximum_scaled_geometric_increment": 0.0,
+              "exact_color_projections_and_form_coefficients": true
+            },
+            {
+              "N": 8,
+              "kind": "columnar",
+              "pairs": 256,
+              "accepted_geometry_flips": 0,
+              "flippable_squares": 512,
+              "immutable_rotation_replays": 1024,
+              "maximum_scaled_geometric_increment": 0.9496412035517843,
+              "exact_color_projections_and_form_coefficients": true
+            },
+            {
+              "N": 8,
+              "kind": "irregular",
+              "pairs": 256,
+              "accepted_geometry_flips": 512,
+              "flippable_squares": 166,
+              "immutable_rotation_replays": 332,
+              "maximum_scaled_geometric_increment": 0.9496412035517843,
+              "exact_color_projections_and_form_coefficients": true
+            },
+            {
+              "N": 10,
+              "kind": "winding",
+              "pairs": 500,
+              "accepted_geometry_flips": 0,
+              "flippable_squares": 0,
+              "immutable_rotation_replays": 0,
+              "maximum_scaled_geometric_increment": 0.0,
+              "exact_color_projections_and_form_coefficients": true
+            },
+            {
+              "N": 10,
+              "kind": "columnar",
+              "pairs": 500,
+              "accepted_geometry_flips": 0,
+              "flippable_squares": 1000,
+              "immutable_rotation_replays": 2000,
+              "maximum_scaled_geometric_increment": 0.9675312092750799,
+              "exact_color_projections_and_form_coefficients": true
+            },
+            {
+              "N": 10,
+              "kind": "irregular",
+              "pairs": 500,
+              "accepted_geometry_flips": 1004,
+              "flippable_squares": 330,
+              "immutable_rotation_replays": 660,
+              "maximum_scaled_geometric_increment": 0.9675312092750799,
+              "exact_color_projections_and_form_coefficients": true
+            },
+            {
+              "N": 12,
+              "kind": "winding",
+              "pairs": 864,
+              "accepted_geometry_flips": 0,
+              "flippable_squares": 0,
+              "immutable_rotation_replays": 0,
+              "maximum_scaled_geometric_increment": 0.0,
+              "exact_color_projections_and_form_coefficients": true
+            },
+            {
+              "N": 12,
+              "kind": "columnar",
+              "pairs": 864,
+              "accepted_geometry_flips": 0,
+              "flippable_squares": 1728,
+              "immutable_rotation_replays": 3456,
+              "maximum_scaled_geometric_increment": 0.9773614559926812,
+              "exact_color_projections_and_form_coefficients": true
+            },
+            {
+              "N": 12,
+              "kind": "irregular",
+              "pairs": 864,
+              "accepted_geometry_flips": 1837,
+              "flippable_squares": 569,
+              "immutable_rotation_replays": 1138,
+              "maximum_scaled_geometric_increment": 0.9773614559926812,
+              "exact_color_projections_and_form_coefficients": true
+            }
+          ]
+        },
+        "switched_energy": {
+          "rows": [
+            {
+              "states": 4,
+              "intervals": 1,
+              "integral_second_moment": 7.622723914217527,
+              "energy_upper_bound": 12.642156862745098,
+              "ratio": 0.6029607128733523,
+              "interval_witnesses": [
+                {
+                  "duration": 0.9,
+                  "hminus": 7.023420479302832
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 2,
+              "integral_second_moment": 8.347622072296671,
+              "energy_upper_bound": 15.639794517216433,
+              "ratio": 0.5337424390779258,
+              "interval_witnesses": [
+                {
+                  "duration": 0.5,
+                  "hminus": 2.1598029251891284
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 11.233326326689422
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 3,
+              "integral_second_moment": 15.668793410563643,
+              "energy_upper_bound": 24.757310314430786,
+              "ratio": 0.6328956260418347,
+              "interval_witnesses": [
+                {
+                  "duration": 1.0,
+                  "hminus": 4.668533087487508
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 6.490637286104767
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 5.68207461698442
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 4,
+              "integral_second_moment": 6.708309062092771,
+              "energy_upper_bound": 18.431238802734796,
+              "ratio": 0.36396409019980813,
+              "interval_witnesses": [
+                {
+                  "duration": 0.1,
+                  "hminus": 12.349384014423078
+                },
+                {
+                  "duration": 0.3,
+                  "hminus": 8.300855085508552
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 3.560548765730881
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 1.9672760399606941
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 5,
+              "integral_second_moment": 31.736945204032047,
+              "energy_upper_bound": 58.738367684354046,
+              "ratio": 0.5403103023662287,
+              "interval_witnesses": [
+                {
+                  "duration": 0.4,
+                  "hminus": 3.9314175562671934
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 1.3155294428484745
+                },
+                {
+                  "duration": 1.0,
+                  "hminus": 10.794166375371534
+                },
+                {
+                  "duration": 1.0,
+                  "hminus": 12.612982500706773
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 4.203407937797886
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 6,
+              "integral_second_moment": 55.03754364604556,
+              "energy_upper_bound": 82.52577740041156,
+              "ratio": 0.6669133618579046,
+              "interval_witnesses": [
+                {
+                  "duration": 1.2,
+                  "hminus": 11.403085786603931
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 10.56362757694895
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 3.592093332723067
+                },
+                {
+                  "duration": 1.2,
+                  "hminus": 5.63896209115104
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 3.4828608980433144
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 1.2710621313860815
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 7,
+              "integral_second_moment": 51.17539508338934,
+              "energy_upper_bound": 88.41573437294416,
+              "ratio": 0.5788041624755127,
+              "interval_witnesses": [
+                {
+                  "duration": 0.8,
+                  "hminus": 12.998721227621484
+                },
+                {
+                  "duration": 1.0,
+                  "hminus": 10.975670307845085
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 15.426490801437938
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 7.122507122507123
+                },
+                {
+                  "duration": 1.2,
+                  "hminus": 5.24211593134674
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 6.432691253836037
+                },
+                {
+                  "duration": 1.2,
+                  "hminus": 3.1571085164835164
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 8,
+              "integral_second_moment": 16.89434656307482,
+              "energy_upper_bound": 51.461237725220066,
+              "ratio": 0.3282926588995596,
+              "interval_witnesses": [
+                {
+                  "duration": 0.2,
+                  "hminus": 10.643778207291223
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 0.7717573450181803
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 4.922266010696024
+                },
+                {
+                  "duration": 0.5,
+                  "hminus": 8.845587254538719
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 9.370165745856353
+                },
+                {
+                  "duration": 0.5,
+                  "hminus": 9.002471276973171
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 6.85892719572045
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 8.03224688037963
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 1,
+              "integral_second_moment": 10.892699219530524,
+              "energy_upper_bound": 16.827363455516046,
+              "ratio": 0.6473206125443183,
+              "interval_witnesses": [
+                {
+                  "duration": 1.1,
+                  "hminus": 7.648801570689112
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 2,
+              "integral_second_moment": 15.839728967429398,
+              "energy_upper_bound": 32.027787464053944,
+              "ratio": 0.49456207317495643,
+              "interval_witnesses": [
+                {
+                  "duration": 1.0,
+                  "hminus": 13.519757215409388
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 3.5630521665965507
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 3,
+              "integral_second_moment": 13.114226415505454,
+              "energy_upper_bound": 31.109718908069663,
+              "ratio": 0.4215475702065475,
+              "interval_witnesses": [
+                {
+                  "duration": 1.0,
+                  "hminus": 4.546474469759476
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 13.771130506925118
+                },
+                {
+                  "duration": 0.5,
+                  "hminus": 5.491413360240572
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 4,
+              "integral_second_moment": 5.165920542323487,
+              "energy_upper_bound": 13.160248473925073,
+              "ratio": 0.3925397421301682,
+              "interval_witnesses": [
+                {
+                  "duration": 0.4,
+                  "hminus": 5.662474838049818
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 9.381452084960578
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 8.359493332890368
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 2.435843466669252
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 5,
+              "integral_second_moment": 8.535244271142894,
+              "energy_upper_bound": 18.886983728027506,
+              "ratio": 0.4519114536259669,
+              "interval_witnesses": [
+                {
+                  "duration": 0.4,
+                  "hminus": 5.901122980005478
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 4.902909005788219
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 0.5971977883890424
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 7.98586301929162
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 0.45579606999027916
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 6,
+              "integral_second_moment": 15.810219279939474,
+              "energy_upper_bound": 38.74595299592652,
+              "ratio": 0.40804827491536083,
+              "interval_witnesses": [
+                {
+                  "duration": 0.5,
+                  "hminus": 6.25749993060276
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 12.607133379073518
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 3.6729224899063846
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 3.5295465228163763
+                },
+                {
+                  "duration": 1.2,
+                  "hminus": 0.8795690729615359
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 4.223762621059139
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 7,
+              "integral_second_moment": 29.563283195931856,
+              "energy_upper_bound": 59.14040326500574,
+              "ratio": 0.49988301675015623,
+              "interval_witnesses": [
+                {
+                  "duration": 0.8,
+                  "hminus": 7.954290280018974
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 8.831298886075837
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 3.873186424258574
+                },
+                {
+                  "duration": 1.0,
+                  "hminus": 10.727439467085167
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 9.67389810080287
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 2.229554547491863
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 1.2173153867139297
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 8,
+              "integral_second_moment": 18.35955964943744,
+              "energy_upper_bound": 42.02881892371563,
+              "ratio": 0.4368326334071138,
+              "interval_witnesses": [
+                {
+                  "duration": 0.4,
+                  "hminus": 0.43890134529147984
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 7.033050847457627
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 11.62985529322163
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 9.253955696202532
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 2.6002979490022167
+                },
+                {
+                  "duration": 0.5,
+                  "hminus": 1.7195200078848805
+                },
+                {
+                  "duration": 0.3,
+                  "hminus": 1.63266010305484
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 9.414829659318636
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 1,
+              "integral_second_moment": 1.2689687692114084,
+              "energy_upper_bound": 1.9936487204744526,
+              "ratio": 0.6365056974076239,
+              "interval_witnesses": [
+                {
+                  "duration": 1.1,
+                  "hminus": 0.9062039638520238
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 2,
+              "integral_second_moment": 17.70316981805234,
+              "energy_upper_bound": 31.081628387273312,
+              "ratio": 0.569570216768343,
+              "interval_witnesses": [
+                {
+                  "duration": 1.0,
+                  "hminus": 13.62121706631955
+                },
+                {
+                  "duration": 0.3,
+                  "hminus": 6.398657091057017
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 3,
+              "integral_second_moment": 10.162445062641869,
+              "energy_upper_bound": 19.517722240693345,
+              "ratio": 0.52067781974342,
+              "interval_witnesses": [
+                {
+                  "duration": 0.9,
+                  "hminus": 3.7860794337396775
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 4.801980198019802
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 2.5370093147039254
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 4,
+              "integral_second_moment": 57.24173127867841,
+              "energy_upper_bound": 77.17458826269927,
+              "ratio": 0.7417173523988206,
+              "interval_witnesses": [
+                {
+                  "duration": 1.4,
+                  "hminus": 12.738602400503963
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 14.927695159450584
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 5.669010096430831
+                },
+                {
+                  "duration": 1.0,
+                  "hminus": 4.426920549613662
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 5,
+              "integral_second_moment": 16.355867750624107,
+              "energy_upper_bound": 32.44434760127735,
+              "ratio": 0.5041207162378006,
+              "interval_witnesses": [
+                {
+                  "duration": 0.6,
+                  "hminus": 3.0612249687382245
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 8.229695200870056
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 5.821146390600652
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 7.595156420064458
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 4.248226323176768
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 6,
+              "integral_second_moment": 19.50295077497634,
+              "energy_upper_bound": 42.71514546345202,
+              "ratio": 0.45658163078628583,
+              "interval_witnesses": [
+                {
+                  "duration": 0.6,
+                  "hminus": 7.4228808322175315
+                },
+                {
+                  "duration": 0.3,
+                  "hminus": 7.761832295205737
+                },
+                {
+                  "duration": 1.2,
+                  "hminus": 3.0970032164430843
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 6.43850267379679
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 1.603898826159866
+                },
+                {
+                  "duration": 0.5,
+                  "hminus": 8.203797963978074
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 7,
+              "integral_second_moment": 48.471261966458094,
+              "energy_upper_bound": 92.11206465015002,
+              "ratio": 0.5262205569982211,
+              "interval_witnesses": [
+                {
+                  "duration": 1.2,
+                  "hminus": 12.337965327395972
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 11.798135821020985
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 11.404033377842788
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 3.3041939069398985
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 3.092852534891407
+                },
+                {
+                  "duration": 0.3,
+                  "hminus": 6.979618773232329
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 6.721990481167495
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 8,
+              "integral_second_moment": 47.07536334267311,
+              "energy_upper_bound": 80.09657064988052,
+              "ratio": 0.5877325703300049,
+              "interval_witnesses": [
+                {
+                  "duration": 0.7,
+                  "hminus": 7.852242915398932
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 2.5568989294591353
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 8.514690293335065
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 11.145066112952625
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 4.260033913745397
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 7.23486701146474
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 2.6490587421563156
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 3.995559652013423
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 1,
+              "integral_second_moment": 0.12408172912088809,
+              "energy_upper_bound": 0.5217340590979781,
+              "ratio": 0.2378256258282467,
+              "interval_witnesses": [
+                {
+                  "duration": 0.3,
+                  "hminus": 0.8695567651632969
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 2,
+              "integral_second_moment": 5.8235631241869985,
+              "energy_upper_bound": 18.09941421218465,
+              "ratio": 0.32175423225943606,
+              "interval_witnesses": [
+                {
+                  "duration": 0.2,
+                  "hminus": 5.790420691797313
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 13.152704946221439
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 3,
+              "integral_second_moment": 22.982316992465968,
+              "energy_upper_bound": 42.596352735501085,
+              "ratio": 0.5395372025199663,
+              "interval_witnesses": [
+                {
+                  "duration": 0.7,
+                  "hminus": 13.03663598686469
+                },
+                {
+                  "duration": 1.4,
+                  "hminus": 5.595992947928754
+                },
+                {
+                  "duration": 0.5,
+                  "hminus": 8.676282099690013
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 4,
+              "integral_second_moment": 20.15707161444994,
+              "energy_upper_bound": 29.894670085782572,
+              "ratio": 0.6742697462995694,
+              "interval_witnesses": [
+                {
+                  "duration": 0.9,
+                  "hminus": 3.4817653276955607
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 7.629303210857332
+                },
+                {
+                  "duration": 1.0,
+                  "hminus": 2.9209955031787875
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 6.973270440251572
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 5,
+              "integral_second_moment": 32.435765855341046,
+              "energy_upper_bound": 69.94582488211984,
+              "ratio": 0.46372697598470325,
+              "interval_witnesses": [
+                {
+                  "duration": 0.6,
+                  "hminus": 5.418544048364441
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 5.535836759686899
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 4.060873905526317
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 15.122657658601867
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 9.135187596126547
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 6,
+              "integral_second_moment": 21.92612308227888,
+              "energy_upper_bound": 48.333803632652334,
+              "ratio": 0.4536395117777673,
+              "interval_witnesses": [
+                {
+                  "duration": 0.1,
+                  "hminus": 3.4557884082181993
+                },
+                {
+                  "duration": 1.0,
+                  "hminus": 5.206078420509005
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 4.550981286501677
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 10.497861267186826
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 3.971341819721367
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 11.91522096278978
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 7,
+              "integral_second_moment": 47.126076663677104,
+              "energy_upper_bound": 82.93542372979805,
+              "ratio": 0.5682261516769109,
+              "interval_witnesses": [
+                {
+                  "duration": 0.9,
+                  "hminus": 4.33048433048433
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 5.957672706681766
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 4.751812532366649
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 14.129356873455587
+                },
+                {
+                  "duration": 1.4,
+                  "hminus": 7.548559946416611
+                },
+                {
+                  "duration": 0.8,
+                  "hminus": 12.129343169919085
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 2.511559588374357
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 8,
+              "integral_second_moment": 37.97631530636872,
+              "energy_upper_bound": 64.22177951411646,
+              "ratio": 0.5913307851898003,
+              "interval_witnesses": [
+                {
+                  "duration": 0.2,
+                  "hminus": 4.632654433017409
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 9.472801753235153
+                },
+                {
+                  "duration": 0.5,
+                  "hminus": 3.805870870299505
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 5.837531746414949
+                },
+                {
+                  "duration": 1.4,
+                  "hminus": 7.31013559337722
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 8.088467568052153
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 10.759760276657872
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 1.9710828618820329
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 1,
+              "integral_second_moment": 3.40177336260394,
+              "energy_upper_bound": 7.5567794520837355,
+              "ratio": 0.4501617897113461,
+              "interval_witnesses": [
+                {
+                  "duration": 0.5,
+                  "hminus": 7.5567794520837355
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 2,
+              "integral_second_moment": 11.24756142730557,
+              "energy_upper_bound": 19.653555324507526,
+              "ratio": 0.5722914374316855,
+              "interval_witnesses": [
+                {
+                  "duration": 0.3,
+                  "hminus": 2.5107419077628186
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 6.979657761480706
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 3,
+              "integral_second_moment": 18.60845857792713,
+              "energy_upper_bound": 38.97180605571818,
+              "ratio": 0.4774851478867191,
+              "interval_witnesses": [
+                {
+                  "duration": 0.3,
+                  "hminus": 16.887240131011897
+                },
+                {
+                  "duration": 1.2,
+                  "hminus": 8.008095832153227
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 4.372741809065136
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 4,
+              "integral_second_moment": 11.582058356935153,
+              "energy_upper_bound": 21.61711279353177,
+              "ratio": 0.5357819273811956,
+              "interval_witnesses": [
+                {
+                  "duration": 0.6,
+                  "hminus": 2.5782342359589205
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 1.022708934252268
+                },
+                {
+                  "duration": 1.2,
+                  "hminus": 6.748758503958833
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 2.2360469823167275
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 5,
+              "integral_second_moment": 17.640380822439358,
+              "energy_upper_bound": 43.41788299068763,
+              "ratio": 0.4062929744000395,
+              "interval_witnesses": [
+                {
+                  "duration": 0.2,
+                  "hminus": 19.394572025052195
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 2.4063324538258577
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 5.345011727257498
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 8.019084430486775
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 12.90919282511211
+                }
+              ]
+            },
+            {
+              "states": 5,
+              "intervals": 6,
+              "integral_second_moment": 34.89576855706735,
+              "energy_upper_bound": 64.71936645870353,
+              "ratio": 0.5391858799998269,
+              "interval_witnesses": [
+                {
+                  "duration": 0.8,
+                  "hminus": 4.5120780663039195
+                },
+                {
+                  "duration": 0.4,
+                  "hminus": 13.09772433222147
+                },
+                {
+                  "duration": 1.3,
+                  "hminus": 4.93705552421053
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 9.534527523999554
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 5.709099495415113
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 7.332945198366237
+                }
+              ]
+            },
+            {
+              "states": 6,
+              "intervals": 7,
+              "integral_second_moment": 39.6674554082391,
+              "energy_upper_bound": 76.25397070560362,
+              "ratio": 0.5202018339659273,
+              "interval_witnesses": [
+                {
+                  "duration": 1.3,
+                  "hminus": 9.886750396357991
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 6.441298594543596
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 4.364149349436926
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 4.058749679875994
+                },
+                {
+                  "duration": 0.3,
+                  "hminus": 9.044331783424617
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 4.947343173563554
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 6.826768579949019
+                }
+              ]
+            },
+            {
+              "states": 4,
+              "intervals": 8,
+              "integral_second_moment": 15.102727647496499,
+              "energy_upper_bound": 37.46037259267521,
+              "ratio": 0.40316544129754867,
+              "interval_witnesses": [
+                {
+                  "duration": 0.4,
+                  "hminus": 5.701534690397528
+                },
+                {
+                  "duration": 0.2,
+                  "hminus": 15.887773378582203
+                },
+                {
+                  "duration": 0.9,
+                  "hminus": 1.4742882277671145
+                },
+                {
+                  "duration": 0.6,
+                  "hminus": 1.6067282176028308
+                },
+                {
+                  "duration": 0.7,
+                  "hminus": 1.4093367178015672
+                },
+                {
+                  "duration": 1.1,
+                  "hminus": 3.365953375086987
+                },
+                {
+                  "duration": 0.5,
+                  "hminus": 10.551962209302326
+                },
+                {
+                  "duration": 0.1,
+                  "hminus": 10.160558892021083
+                }
+              ]
+            }
+          ],
+          "numerical_matrix_exponential_control": true,
+          "maximum_ratio": 0.7417173523988206
+        }
+      }
+    },
+    {
+      "suite": "dimer_routed_diffusive_gap_check.py",
+      "source_sha256": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95",
+      "executed_source_sha256": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95",
+      "returncode": 0,
+      "stdout": "exact all-vertex physical loads passed\n{\"N\": 8, \"kind\": \"winding\", \"K\": 256, \"fixture_flips\": 0, \"unordered_reference_pairs\": 32640, \"largest_physical_edge_multiplicity\": 1, \"maximum_contracted_path_length\": 10, \"erased_projected_vertices\": 0, \"maximum_reference_path_load\": 255, \"path_load_bound\": 2048, \"maximum_word_edge_load\": 485, \"word_load_bound\": 4096, \"all_immutable_endpoint_words_exact\": true, \"numerical_one_exceptional_color_gap\": 1.1715728752538022, \"proven_unit_rate_H_gap_lower_bound\": 0.001358695652173913}\n{\"N\": 8, \"kind\": \"columnar\", \"K\": 256, \"fixture_flips\": 0, \"unordered_reference_pairs\": 32640, \"largest_physical_edge_multiplicity\": 2, \"maximum_contracted_path_length\": 10, \"erased_projected_vertices\": 0, \"maximum_reference_path_load\": 478, \"path_load_bound\": 2048, \"maximum_word_edge_load\": 887, \"word_load_bound\": 4096, \"all_immutable_endpoint_words_exact\": true, \"numerical_one_exceptional_color_gap\": 0.5857864376268928, \"proven_unit_rate_H_gap_lower_bound\": 0.001358695652173913}\n{\"N\": 8, \"kind\": \"irregular\", \"K\": 256, \"fixture_flips\": 499, \"unordered_reference_pairs\": 32640, \"largest_physical_edge_multiplicity\": 2, \"maximum_contracted_path_length\": 12, \"erased_projected_vertices\": 0, \"maximum_reference_path_load\": 498, \"path_load_bound\": 2048, \"maximum_word_edge_load\": 923, \"word_load_bound\": 4096, \"all_immutable_endpoint_words_exact\": true, \"numerical_one_exceptional_color_gap\": 1.4371125783949077, \"proven_unit_rate_H_gap_lower_bound\": 0.001358695652173913}\n{\"N\": 10, \"kind\": \"winding\", \"K\": 500, \"fixture_flips\": 0, \"unordered_reference_pairs\": 124750, \"largest_physical_edge_multiplicity\": 1, \"maximum_contracted_path_length\": 12, \"erased_projected_vertices\": 0, \"maximum_reference_path_load\": 647, \"path_load_bound\": 5000, \"maximum_word_edge_load\": 1192, \"word_load_bound\": 10000, \"all_immutable_endpoint_words_exact\": true, \"numerical_one_exceptional_color_gap\": 0.763932022500196, \"proven_unit_rate_H_gap_lower_bound\": 0.0008620689655172414}\n{\"N\": 10, \"kind\": \"columnar\", \"K\": 500, \"fixture_flips\": 0, \"unordered_reference_pairs\": 124750, \"largest_physical_edge_multiplicity\": 2, \"maximum_contracted_path_length\": 12, \"erased_projected_vertices\": 0, \"maximum_reference_path_load\": 1184, \"path_load_bound\": 5000, \"maximum_word_edge_load\": 2239, \"word_load_bound\": 10000, \"all_immutable_endpoint_words_exact\": true, \"numerical_one_exceptional_color_gap\": 0.3819660112500871, \"proven_unit_rate_H_gap_lower_bound\": 0.0008620689655172414}\n{\"N\": 10, \"kind\": \"irregular\", \"K\": 500, \"fixture_flips\": 1017, \"unordered_reference_pairs\": 124750, \"largest_physical_edge_multiplicity\": 2, \"maximum_contracted_path_length\": 14, \"erased_projected_vertices\": 0, \"maximum_reference_path_load\": 1195, \"path_load_bound\": 5000, \"maximum_word_edge_load\": 2305, \"word_load_bound\": 10000, \"all_immutable_endpoint_words_exact\": true, \"numerical_one_exceptional_color_gap\": 0.9261604810762624, \"proven_unit_rate_H_gap_lower_bound\": 0.0008620689655172414}\n",
+      "stderr": "",
+      "results": {
+        "created_utc": "2026-09-21T19:56:20.646615+00:00",
+        "sources": {
+          "dimer_routed_diffusive_gap_check.py": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95",
+          "DIMER_ROUTED_DIFFUSIVE_GAP_COMPARISON.md": "1d9f7929c5600c6e097913ab2459f351857431c7f3035d4a80bc497f9d732124",
+          "dimer_routed_transport_check.py": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921",
+          "DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+        },
+        "physical_loads": [
+          {
+            "N": 4,
+            "ordered_pairs": 4096,
+            "physical_edges": 192,
+            "exact_load_per_edge": 64
+          },
+          {
+            "N": 6,
+            "ordered_pairs": 46656,
+            "physical_edges": 648,
+            "exact_load_per_edge": 324
+          }
+        ],
+        "contracted_loads": [
+          {
+            "N": 8,
+            "kind": "winding",
+            "K": 256,
+            "fixture_flips": 0,
+            "unordered_reference_pairs": 32640,
+            "largest_physical_edge_multiplicity": 1,
+            "maximum_contracted_path_length": 10,
+            "erased_projected_vertices": 0,
+            "maximum_reference_path_load": 255,
+            "path_load_bound": 2048,
+            "maximum_word_edge_load": 485,
+            "word_load_bound": 4096,
+            "all_immutable_endpoint_words_exact": true,
+            "numerical_one_exceptional_color_gap": 1.1715728752538022,
+            "proven_unit_rate_H_gap_lower_bound": 0.001358695652173913
+          },
+          {
+            "N": 8,
+            "kind": "columnar",
+            "K": 256,
+            "fixture_flips": 0,
+            "unordered_reference_pairs": 32640,
+            "largest_physical_edge_multiplicity": 2,
+            "maximum_contracted_path_length": 10,
+            "erased_projected_vertices": 0,
+            "maximum_reference_path_load": 478,
+            "path_load_bound": 2048,
+            "maximum_word_edge_load": 887,
+            "word_load_bound": 4096,
+            "all_immutable_endpoint_words_exact": true,
+            "numerical_one_exceptional_color_gap": 0.5857864376268928,
+            "proven_unit_rate_H_gap_lower_bound": 0.001358695652173913
+          },
+          {
+            "N": 8,
+            "kind": "irregular",
+            "K": 256,
+            "fixture_flips": 499,
+            "unordered_reference_pairs": 32640,
+            "largest_physical_edge_multiplicity": 2,
+            "maximum_contracted_path_length": 12,
+            "erased_projected_vertices": 0,
+            "maximum_reference_path_load": 498,
+            "path_load_bound": 2048,
+            "maximum_word_edge_load": 923,
+            "word_load_bound": 4096,
+            "all_immutable_endpoint_words_exact": true,
+            "numerical_one_exceptional_color_gap": 1.4371125783949077,
+            "proven_unit_rate_H_gap_lower_bound": 0.001358695652173913
+          },
+          {
+            "N": 10,
+            "kind": "winding",
+            "K": 500,
+            "fixture_flips": 0,
+            "unordered_reference_pairs": 124750,
+            "largest_physical_edge_multiplicity": 1,
+            "maximum_contracted_path_length": 12,
+            "erased_projected_vertices": 0,
+            "maximum_reference_path_load": 647,
+            "path_load_bound": 5000,
+            "maximum_word_edge_load": 1192,
+            "word_load_bound": 10000,
+            "all_immutable_endpoint_words_exact": true,
+            "numerical_one_exceptional_color_gap": 0.763932022500196,
+            "proven_unit_rate_H_gap_lower_bound": 0.0008620689655172414
+          },
+          {
+            "N": 10,
+            "kind": "columnar",
+            "K": 500,
+            "fixture_flips": 0,
+            "unordered_reference_pairs": 124750,
+            "largest_physical_edge_multiplicity": 2,
+            "maximum_contracted_path_length": 12,
+            "erased_projected_vertices": 0,
+            "maximum_reference_path_load": 1184,
+            "path_load_bound": 5000,
+            "maximum_word_edge_load": 2239,
+            "word_load_bound": 10000,
+            "all_immutable_endpoint_words_exact": true,
+            "numerical_one_exceptional_color_gap": 0.3819660112500871,
+            "proven_unit_rate_H_gap_lower_bound": 0.0008620689655172414
+          },
+          {
+            "N": 10,
+            "kind": "irregular",
+            "K": 500,
+            "fixture_flips": 1017,
+            "unordered_reference_pairs": 124750,
+            "largest_physical_edge_multiplicity": 2,
+            "maximum_contracted_path_length": 14,
+            "erased_projected_vertices": 0,
+            "maximum_reference_path_load": 1195,
+            "path_load_bound": 5000,
+            "maximum_word_edge_load": 2305,
+            "word_load_bound": 10000,
+            "all_immutable_endpoint_words_exact": true,
+            "numerical_one_exceptional_color_gap": 0.9261604810762624,
+            "proven_unit_rate_H_gap_lower_bound": 0.0008620689655172414
+          }
+        ],
+        "schedule": [
+          {
+            "N": 8,
+            "K": 256,
+            "gap_lower_bound": 0.0007472826086956522,
+            "epsilon": 0.000244140625,
+            "sufficient_waiting_time": 462240.05905855924,
+            "improvement_factor": 15.9375
+          },
+          {
+            "N": 16,
+            "K": 2048,
+            "gap_lower_bound": 0.00018284574468085108,
+            "epsilon": 1.52587890625e-05,
+            "sufficient_waiting_time": 14836505.59092572,
+            "improvement_factor": 63.96875
+          },
+          {
+            "N": 32,
+            "K": 16384,
+            "gap_lower_bound": 4.523026315789474e-05,
+            "epsilon": 9.5367431640625e-07,
+            "sufficient_waiting_time": 478271093.9603059,
+            "improvement_factor": 255.984375
+          },
+          {
+            "N": 64,
+            "K": 131072,
+            "gap_lower_bound": 1.1248363874345551e-05,
+            "epsilon": 5.960464477539063e-08,
+            "sufficient_waiting_time": 15377276684.06194,
+            "improvement_factor": 1023.9921875
+          },
+          {
+            "N": 128,
+            "K": 1048576,
+            "gap_lower_bound": 2.8047486945169716e-06,
+            "epsilon": 3.725290298461914e-09,
+            "sufficient_waiting_time": 493322202772.78296,
+            "improvement_factor": 4095.99609375
+          },
+          {
+            "N": 256,
+            "K": 8388608,
+            "gap_lower_bound": 7.002729791395046e-07,
+            "epsilon": 2.3283064365386963e-10,
+            "sufficient_waiting_time": 15806736131670.848,
+            "improvement_factor": 16383.998046875
+          }
+        ],
+        "scope": "Exact finite combinatorial controls and numerical one-exceptional-color spectra; all-count-sector and all-volume bounds are proved in the note, not inferred from these samples."
+      }
+    }
+  ],
+  "scope": "Author symbolic and finite numerical controls; not an independent audit or a replacement for the conditional proofs."
+}

@@ -1,0 +1,4 @@
+{
+  "source_sha256": "e7cbda1a35754ae71d8f38602372da85685deba34b8ee06d3a182bea85a74d6a",
+  "result": "AssertionError while recursively encountering a forbidden suffix in a bound source. Publication not sealed and no scientific computation performed."
+}

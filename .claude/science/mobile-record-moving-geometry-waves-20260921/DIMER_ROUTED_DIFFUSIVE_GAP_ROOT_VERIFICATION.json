@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-09-21T19:49:31.564638+00:00",
+  "binding_rows": 64,
+  "unique_path_hash_pairs": 31,
+  "manifests": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/FINAL_SEAL.json",
+      "sha256": "ddde213c0b33f2f1e6ece1bba622335955c87d3efdea9c8138048e61c66552c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/INDEPENDENT_RESULTS.json",
+      "sha256": "54bef7054a8c6349d20f238effde2f224dbbbcf5467ce93e883e5ef681ae7d48"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/INDEPENDENT_RUN_RECEIPT.json",
+      "sha256": "d9dc66596d2c4e2140d05858a4a114d5a987a7c2e21250b877456fabbe9e478a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/POST_COMPARISON_RESULTS.json",
+      "sha256": "020e9e6fbedfdb3694cee6f6e825abc1085a9edad324fe66ed82a9e1c72e8004"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/POST_COMPARISON_RUN_RECEIPT.json",
+      "sha256": "c52badb6d7b34482ab76fc881f014cb99fe3129250f32b4e1694a75b0a788dc7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/PRE_COMPARISON_SEAL.json",
+      "sha256": "a317bd45ac244a4b4b61ce4866ee8e878193006730dcfe9a86826ab62ba1da4b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/PRE_COMPARISON_SOURCES.json",
+      "sha256": "0fbfa2ec9ed18365765fc7462eee3bc7f3f63b5085347598d5e0246e7fa725bb"
+    }
+  ],
+  "read_in_full": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "compare_author.py"
+  ],
+  "status": "full root reading and source authentication complete",
+  "scope": "Independent proof reconstruction and saved controls reviewed. No author or independent suite rerun, no proof by finite inventory, no formal audit verdict."
+}

@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-threshold-fine",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 1.2 48 4000 2000 1",
+ "seed": 83256,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7e160697",
+ "started_utc": "20260921T093416Z",
+ "elapsed_s": 55.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.2 L=48 T=4000 plateau_|m|=0.2391 lowk_ratio=0.9293 seconds=55"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Locate the coupling where the 3+1 sphere formation law starts to keep memory (first look: between beta = 1 and 2). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 22 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "6e0c22c948df3c54c85aead746dce97435e157611185ed4ba047160e0c01cd30",
+ "stdout_tail": "       11  0.4977  +0.4977\n        16  0.4610  +0.4609\n        22  0.4287  +0.4286\n        32  0.3974  +0.3974\n        45  0.3729  +0.3728\n        63  0.3463  +0.3463\n        89  0.3266  +0.3265\n       126  0.3156  +0.3155\n       178  0.3063  +0.3060\n       252  0.2810  +0.2789\n       356  0.2733  +0.2713\n       503  0.2660  +0.2643\n       711  0.2562  +0.2477\n      1004  0.2454  +0.2371\n      1418  0.2603  +0.2521\n      2004  0.2610  +0.2422\n      2831  0.2422  +0.2021\n      4000  0.2436  +0.1670\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.9293 (n=56)\n   |k| in [0.3,0.6): 1.0219 (n=380)\n   |k| in [0.6,1.0): 1.0538 (n=1426)\n   |k| in [1.0,1.5): 1.0859 (n=4492)\n   |k| in [1.5,2.2): 1.1076 (n=13578)\n   |k| in [2.2,3.2): 1.1249 (n=41209)\n   |k| in [3.2,6.0): 1.1316 (n=49450)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.072033  +0.070793  1.018  +0.07079\n     2  +0.031469  +0.032578  0.966  +0.06516\n     3  +0.018537  +0.019849  0.934  +0.05955\n     4  +0.012360  +0.013610  0.908  +0.05444\n     6  +0.006459  +0.007439  0.868  +0.04463\n     8  +0.003548  +0.004397  0.807  +0.03517\n    12  +0.000628  +0.001463  0.429  +0.01755\n    16  -0.000904  +0.000149  -6.044  +0.00239\n    24  -0.001258  -0.000638  1.974  -0.01530\nSUMMARY: dim=3 menu=sphere beta=1.2 L=48 T=4000 plateau_|m|=0.2391 lowk_ratio=0.9293 seconds=55\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T093512Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

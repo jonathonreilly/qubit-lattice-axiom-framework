@@ -58870,6 +58870,867 @@
   "what": "re-execute the runners of PR #8573 (ail56: the strong field, exactly \u2014 bodies at rest make the clock law l) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8573 --worker <name> --review \"...\""
  },
  {
+  "id": "J:falsifier:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): attack ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): attack ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): attack ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): attack ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): attack ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): attack ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): attack ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8578",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbou): for every number in the theorem statements of ADMISSIBILITY_RULE_A_DELAY_FOR_THE_RATE_FIELD_NEIGHBOUR_REFERRED_MOTION_DOES_NOT_PROPAGATE_A_REFERENCE_TO_DISTANT_CLOCKS_DOES_AT_A_SPEED_SET_BY_THE_LOCAL_RATE_BOUNDED_THEOREM_NOTE_2026-09-21.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921; git show origin/physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921:<note>. Create probes/work/pr8578/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8578/<script>.py\""
+ },
+ {
+  "id": "P:8578",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block57-a-dela",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8578",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8578 (ail57: a delay for the rate field \u2014 referred to its neighbours its mot) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8578 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): attack ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): attack ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): attack ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): attack ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): attack ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): attack ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): attack ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8579",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8579 (ail58: what a formation event does to the ledger and to the ): for every number in the theorem statements of ADMISSIBILITY_RULE_WHAT_A_FORMATION_EVENT_DOES_TO_THE_LEDGER_AND_TO_THE_FAR_FIELD_THE_MONOPOLE_NEVER_JUMPS_THE_DIPOLE_DOES_BOUNDED_THEOREM_NOTE_2026-09-21.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921; git show origin/physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921:<note>. Create probes/work/pr8579/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8579/<script>.py\""
+ },
+ {
+  "id": "P:8579",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block58-what-a",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8579",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8579 (ail58: what a formation event does to the ledger and to the far field ) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8579 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): attack ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): attack ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): attack ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): attack ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): attack ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): attack ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): attack ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8581",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no le): for every number in the theorem statements of ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921; git show origin/physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921:<note>. Create probes/work/pr8581/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8581/<script>.py\""
+ },
+ {
+  "id": "P:8581",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block59-bond-r",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8581",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8581 (ail59: bond rates and lengths \u2014 a body at rest sources no length, and ) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8581 --worker <name> --review \"...\""
+ },
+ {
+  "id": "P:8589",
+  "type": "pr-reexecution",
+  "lane": "mobile-record-geometric-formation-select",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8589",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8589 (Geometric record formation with uniform slow-birth selection and a con) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8589 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): attack ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): attack ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): attack ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): attack ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): attack ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): attack ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): attack ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8590",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multipli): for every number in the theorem statements of ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921; git show origin/physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921:<note>. Create probes/work/pr8590/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8590/<script>.py\""
+ },
+ {
+  "id": "P:8590",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block60-the-ge",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8590",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8590 (ail60: a ledger linear in the rates \u2014 every clock a multiplier, the le) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8590 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): attack ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): attack ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): attack ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): attack ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): attack ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): attack ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): attack ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8591",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long r): for every number in the theorem statements of ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921:<note>. Create probes/work/pr8591/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8591/<script>.py\""
+ },
+ {
+  "id": "P:8591",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block61-three-",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8591",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8591 (ail61: three lengths per site \u2014 alike at rest, column-long responses t) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8591 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): attack ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): attack ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): attack ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): attack ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): attack ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): attack ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): attack ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR8592",
+  "type": "judgment",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturb): for every number in the theorem statements of ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921; git show origin/physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921:<note>. Create probes/work/pr8592/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr8592/<script>.py\""
+ },
+ {
+  "id": "P:8592",
+  "type": "pr-reexecution",
+  "lane": "admissibility-induced-law-block62-angles",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 8592",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #8592 (ail62: angles are the tilt of the coin's frame \u2014 two disturbances at o) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 8592 --worker <name> --review \"...\""
+ },
+ {
   "id": "J:note:ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026_06_10",
   "type": "judgment",
   "lane": "adjacency",
@@ -61894,6 +62755,66 @@
   },
   "problem": "coupled-motion-at-strong-field",
   "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (blocks 53-56; open PRs titled 'ail53: no master clock', 'ail54: a phase timed by the local clock', 'ail55: action and reaction', 'ail56: the strong field, exactly'; all rest on SUPPLIED clauses, not adopted). Rates w_x = phi_x^2 on Z^3; amplitudes timed by them, H_w = phi H phi, so that <H_w> = sum phi_x phi_y h_xy with h_xy = chi_x^dagger H_xy chi_y independent of the rates; the pair keeps a ledger <H_w> + F; with no master clock F has weight one, F = sum over bonds sqrt(w_x w_y) f(u_x - u_y), and through second order every such law is the averaging law for phi = sqrt(w). BLOCK 56, for the simplest member F = (2/gamma) sum over bonds (phi_x - phi_y)^2 in a box with walls held at the ambient rate: at a fixed amplitude the static law is LINEAR in phi, ((12/gamma)(1 - A) + K) phi = 0 with K_xy = Re h_xy (A the average over the six neighbours); for bodies at rest K = diag(m) and the solution is unique with 0 < phi <= 1; the ledger is sum m phi exactly and, for every weight-one bond energy, a sum over wall sites; one body has phi_0 = 1/(1 + x), x = (gamma/12) g_0 m, its ledger stays below 12/(gamma g_0); a region's ledger is bounded by (12/gamma) times its capacity; a pair's ledger falls as the bodies approach at any field strength. BOUNDARY: for the bond energy (1/gamma) sum (w_x - w_y)^2/(w_x + w_y), same second order, the clock at a body stops at the finite bare energy 18/gamma. T5 (a supplied principle): if the field's own energy is bilinear in the root rates, F = sum phi_x J_xy phi_y with J independent of the rates, then nearest-neighbour range, covariance and 'uniform rates solve the empty-space law' leave only c sum over bonds (phi_x - phi_y)^2. Coupled motion of two heavy walkers under the simplest clock law. Extend .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block55_two_walkers.py (block 55 PR branch) from the weak-field law to the full simplest law: at each step solve the LINEAR problem ((12/Gam)(1 - A) + K) phi = mu/phi-free form on a line with the ends held at the ambient rate (walls, not a ring: with walls no multiplier appears), K_xy = Re chi_x^dagger H_xy chi_y summed over the two walkers, and evolve each walker with H_w = phi H phi. Ledger: <H_w>_A + <H_w>_B + (2/gamma') sum (phi_z - phi_(z+1))^2 with the line's normalization. Rest energies and couplings chosen so that x = (coupling) g_0 m runs from 0.1 to 5. Report: (i) the ledger's drift over the run (it should be at the integrator's level); (ii) the pull on each walker against the 'charges' m phi of block 56 (the pull should be bilinear in m_A phi_A and m_B phi_B, not in the bare energies); (iii) whether K's bond entries ever make the linear problem lose positivity of phi for moving packets at large energy, and what the run does then; (iv) the clock rate at each walker as they approach.  DELIVERABLE in your unit worktree: probes/work/compute/coupled-motion-at-strong-field/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/coupled-motion-at-strong-field/<name>/run.py\""
+ },
+ {
+  "id": "C:packet-in-a-varying-frame:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "packet-in-a-varying-frame",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. A packet of the walk in a slowly varying coin frame. Build the hermitian generator H = (1/2) sum_j {E^j(x).sigma, S_j} of block 62 on a 64^3 (or a 2D slice 256^2 with the third direction uniform) torus with a smooth frame field E = 1 + eps(x), eps of size 0.02-0.1 varying over 30-60 sites, including OFF-DIAGONAL (shear) parts and, separately, a pure local rotation of the coin axes. Evolve a positive-energy Gaussian packet (split-step or Krylov; state the method and the error control) and compare the centre's path with the rays of E^2 = sum g^ij(x) sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j, using a cloud of rays sampled from the packet (block 54's lesson: single rays leave 1-10 per cent residuals). Report: (i) path against rays for a shear gradient, to what accuracy; (ii) what a pure local ROTATION of the coin axes does (the rays say nothing; does the packet feel it? by how much, scaling with the rotation's gradient?); (iii) the norm and <H> drift. Use the specs of blocks 54 and 59 on their PR branches as models of the controls. DELIVERABLE in your unit worktree: probes/work/compute/packet-in-a-varying-frame/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/packet-in-a-varying-frame/<name>/run.py\""
+ },
+ {
+  "id": "C:packet-in-a-varying-frame:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "packet-in-a-varying-frame",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. A packet of the walk in a slowly varying coin frame. Build the hermitian generator H = (1/2) sum_j {E^j(x).sigma, S_j} of block 62 on a 64^3 (or a 2D slice 256^2 with the third direction uniform) torus with a smooth frame field E = 1 + eps(x), eps of size 0.02-0.1 varying over 30-60 sites, including OFF-DIAGONAL (shear) parts and, separately, a pure local rotation of the coin axes. Evolve a positive-energy Gaussian packet (split-step or Krylov; state the method and the error control) and compare the centre's path with the rays of E^2 = sum g^ij(x) sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j, using a cloud of rays sampled from the packet (block 54's lesson: single rays leave 1-10 per cent residuals). Report: (i) path against rays for a shear gradient, to what accuracy; (ii) what a pure local ROTATION of the coin axes does (the rays say nothing; does the packet feel it? by how much, scaling with the rotation's gradient?); (iii) the norm and <H> drift. Use the specs of blocks 54 and 59 on their PR branches as models of the controls. DELIVERABLE in your unit worktree: probes/work/compute/packet-in-a-varying-frame/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/packet-in-a-varying-frame/<name>/run.py\""
+ },
+ {
+  "id": "C:conservation-defect-of-the-frame-response:a1",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "conservation-defect-of-the-frame-response",
+  "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. Map the defect of block 62 W3. For stationary superpositions of two and of three plane waves of equal energy of the identity-frame walk on L^3 tori (L = 12 ... 64), compute the lattice divergence of the symmetric frame response Theta_(aj) (site placement; symmetric, forward and backward differences) and of the exactly conserved bond current of pi_j = Re psi^dagger S_j psi. Report: (i) the relative defect against the wave-vector difference q: confirm the third-power law 0.178 (12/L)^3 at mode numbers (1,2,3),(3,1,2) and find its dependence on direction and on the pair (it vanishes for mirror pairs and in coordinate planes: characterise exactly when); (ii) whether any local recombination of site responses (averaging over the bond's two ends, face placement for a != j) is divergence-free to rounding; (iii) the size of the antisymmetric part. This feeds the derivation task 'a-bond-placed-stress-for-the-walk'. DELIVERABLE in your unit worktree: probes/work/compute/conservation-defect-of-the-frame-response/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/conservation-defect-of-the-frame-response/<name>/run.py\""
+ },
+ {
+  "id": "C:conservation-defect-of-the-frame-response:a2",
+  "type": "judgment",
+  "lane": "computation",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 28800,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "conservation-defect-of-the-frame-response",
+  "what": "WORKED COMPUTATION (independent run 2 of 2): SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. Map the defect of block 62 W3. For stationary superpositions of two and of three plane waves of equal energy of the identity-frame walk on L^3 tori (L = 12 ... 64), compute the lattice divergence of the symmetric frame response Theta_(aj) (site placement; symmetric, forward and backward differences) and of the exactly conserved bond current of pi_j = Re psi^dagger S_j psi. Report: (i) the relative defect against the wave-vector difference q: confirm the third-power law 0.178 (12/L)^3 at mode numbers (1,2,3),(3,1,2) and find its dependence on direction and on the pair (it vanishes for mirror pairs and in coordinate planes: characterise exactly when); (ii) whether any local recombination of site responses (averaging over the bond's two ends, face placement for a != j) is divergence-free to rounding; (iii) the size of the antisymmetric part. This feeds the derivation task 'a-bond-placed-stress-for-the-walk'. DELIVERABLE in your unit worktree: probes/work/compute/conservation-defect-of-the-frame-response/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/conservation-defect-of-the-frame-response/<name>/run.py\""
  },
  {
   "id": "J:derive:tight-sibling-lemma:a1",
@@ -66454,6 +67375,214 @@
   "problem": "the-field-energy-as-a-clocked-amplitude",
   "title": "Is the rate field's own energy the energy of a clocked amplitude?",
   "what": "DERIVATION, independent attempt 3 of 3: Is the rate field's own energy the energy of a clocked amplitude?. SETTING (blocks 53-56; open PRs titled 'ail53: no master clock', 'ail54: a phase timed by the local clock', 'ail55: action and reaction', 'ail56: the strong field, exactly'; all rest on SUPPLIED clauses, not adopted). Rates w_x = phi_x^2 on Z^3; amplitudes timed by them, H_w = phi H phi, so that <H_w> = sum phi_x phi_y h_xy with h_xy = chi_x^dagger H_xy chi_y independent of the rates; the pair keeps a ledger <H_w> + F; with no master clock F has weight one, F = sum over bonds sqrt(w_x w_y) f(u_x - u_y), and through second order every such law is the averaging law for phi = sqrt(w). BLOCK 56, for the simplest member F = (2/gamma) sum over bonds (phi_x - phi_y)^2 in a box with walls held at the ambient rate: at a fixed amplitude the static law is LINEAR in phi, ((12/gamma)(1 - A) + K) phi = 0 with K_xy = Re h_xy (A the average over the six neighbours); for bodies at rest K = diag(m) and the solution is unique with 0 < phi <= 1; the ledger is sum m phi exactly and, for every weight-one bond energy, a sum over wall sites; one body has phi_0 = 1/(1 + x), x = (gamma/12) g_0 m, its ledger stays below 12/(gamma g_0); a region's ledger is bounded by (12/gamma) times its capacity; a pair's ledger falls as the bodies approach at any field strength. BOUNDARY: for the bond energy (1/gamma) sum (w_x - w_y)^2/(w_x + w_y), same second order, the clock at a body stops at the finite bare energy 18/gamma. T5 (a supplied principle): if the field's own energy is bilinear in the root rates, F = sum phi_x J_xy phi_y with J independent of the rates, then nearest-neighbour range, covariance and 'uniform rates solve the empty-space law' leave only c sum over bonds (phi_x - phi_y)^2. TASK: T5's principle says the field's energy is timed the way an amplitude's is. (a) Show that c sum over bonds (phi_x - phi_y)^2 = <xi| phi (c Lambda) phi |xi> with xi the uniform amplitude xi_x = 1 and Lambda the graph operator of sum over bonds (phi_x - phi_y)^2: the field's energy is the clocked energy of a uniform background with a rate-independent generator. (b) Is that a coincidence of notation or a structure? Give the background its own clocked motion, i d(xi)/dt = phi (c Lambda) phi xi, starting uniform: it does not stay uniform when phi varies. Work out what the combined ledger and the static law become if xi is allowed to move (real xi; small deviations), and whether the static results of block 56 survive as the limit in which xi is held uniform. (c) Alternatively take the background to be many amplitudes (a filled set of modes of a rate-independent generator) and compute their clocked energy to second order in the gradient of u: does it have the form c sum sqrt(w_x w_y)(u_x - u_y)^2 with a definite sign of c, and is c then a computed number, which would fix gamma? State clearly what is assumed about the modes that are filled. (d) Say what this would add to the clauses, or that it is only a rewriting. check.py: exact rational checks of (a) on a 3x3x3 torus and a numerical check of (c) on a line.  DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-field-energy-as-a-clocked-amplitude/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-field-energy-as-a-clocked-amplitude/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:a-bond-placed-stress-for-the-walk:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "a-bond-placed-stress-for-the-walk",
+  "title": "Is there a placement of the stretching for which the walk's stress is divergence-free exactly?",
+  "what": "DERIVATION, independent attempt 1 of 3: Is there a placement of the stretching for which the walk's stress is divergence-free exactly?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 62's price. (a) Derive the exact local conservation law of the momentum density pi_j(x) = Re psi^dagger(x)(S_j psi)(x) for the identity-frame walk: write the bond current J_a^j(x -> x + e_a) explicitly and prove d(pi_j)/dt + (backward difference over a of J_a^j) = 0 for every state. (b) Find a frame coupling whose response IS that bond current: place E_a^j on the bonds along a (or wherever the algebra puts it), write the hermitian generator, check H^2 for uniform frames, and compute d<H>/dE. (c) Rewrite block 62's second-order member for h placed accordingly (what are the symbols now? is the relabelling invariance still exact, and with which differences?) and decide whether the solvability condition of T5 is then met EXACTLY by stationary states of the walk, including the symmetric part. (d) If the antisymmetric part of the response obstructs this, say exactly what object (a law for the rotation of the coin axes; a connection) would absorb it and whether the framework's vocabulary has it. Report a theorem or an exact obstruction, with an exact-arithmetic check on a small torus. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/a-bond-placed-stress-for-the-walk/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/a-bond-placed-stress-for-the-walk/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:a-bond-placed-stress-for-the-walk:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "a-bond-placed-stress-for-the-walk",
+  "title": "Is there a placement of the stretching for which the walk's stress is divergence-free exactly?",
+  "what": "DERIVATION, independent attempt 2 of 3: Is there a placement of the stretching for which the walk's stress is divergence-free exactly?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 62's price. (a) Derive the exact local conservation law of the momentum density pi_j(x) = Re psi^dagger(x)(S_j psi)(x) for the identity-frame walk: write the bond current J_a^j(x -> x + e_a) explicitly and prove d(pi_j)/dt + (backward difference over a of J_a^j) = 0 for every state. (b) Find a frame coupling whose response IS that bond current: place E_a^j on the bonds along a (or wherever the algebra puts it), write the hermitian generator, check H^2 for uniform frames, and compute d<H>/dE. (c) Rewrite block 62's second-order member for h placed accordingly (what are the symbols now? is the relabelling invariance still exact, and with which differences?) and decide whether the solvability condition of T5 is then met EXACTLY by stationary states of the walk, including the symmetric part. (d) If the antisymmetric part of the response obstructs this, say exactly what object (a law for the rotation of the coin axes; a connection) would absorb it and whether the framework's vocabulary has it. Report a theorem or an exact obstruction, with an exact-arithmetic check on a small torus. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/a-bond-placed-stress-for-the-walk/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/a-bond-placed-stress-for-the-walk/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:a-bond-placed-stress-for-the-walk:a3",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "a-bond-placed-stress-for-the-walk",
+  "title": "Is there a placement of the stretching for which the walk's stress is divergence-free exactly?",
+  "what": "DERIVATION, independent attempt 3 of 3: Is there a placement of the stretching for which the walk's stress is divergence-free exactly?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 62's price. (a) Derive the exact local conservation law of the momentum density pi_j(x) = Re psi^dagger(x)(S_j psi)(x) for the identity-frame walk: write the bond current J_a^j(x -> x + e_a) explicitly and prove d(pi_j)/dt + (backward difference over a of J_a^j) = 0 for every state. (b) Find a frame coupling whose response IS that bond current: place E_a^j on the bonds along a (or wherever the algebra puts it), write the hermitian generator, check H^2 for uniform frames, and compute d<H>/dE. (c) Rewrite block 62's second-order member for h placed accordingly (what are the symbols now? is the relabelling invariance still exact, and with which differences?) and decide whether the solvability condition of T5 is then met EXACTLY by stationary states of the walk, including the symmetric part. (d) If the antisymmetric part of the response obstructs this, say exactly what object (a law for the rotation of the coin axes; a connection) would absorb it and whether the framework's vocabulary has it. Report a theorem or an exact obstruction, with an exact-arithmetic check on a small torus. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/a-bond-placed-stress-for-the-walk/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/a-bond-placed-stress-for-the-walk/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:a-law-for-the-rotation-of-the-coin-axes:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "a-law-for-the-rotation-of-the-coin-axes",
+  "title": "What fixes the three numbers of a frame that the walker does not see?",
+  "what": "DERIVATION, independent attempt 1 of 2: What fixes the three numbers of a frame that the walker does not see?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 62 T1: a rotation of all coin axes together changes nothing; block 62 N1.2: for superpositions the antisymmetric part of the frame response is not zero. (a) For a frame field whose rotation varies from site to site, R(x) E, compute exactly how H = (1/2) sum_j {E^j.sigma, S_j} changes: show it is NOT a conjugation and find the extra term (it should be a coupling of the coin to differences of R along the bonds). (b) What nearest-neighbour object, added to the generator, makes local coin rotations a symmetry (psi -> U(x) psi, E -> R(x) E)? Is it determined by E (as the comparator's connection is) or a new field? (c) With it, is the antisymmetric part of the frame response zero on stationary states? State precisely what would have to be supplied; do not adopt anything; do not touch the one-site algebra (parked decision 4). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/a-law-for-the-rotation-of-the-coin-axes/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/a-law-for-the-rotation-of-the-coin-axes/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:a-law-for-the-rotation-of-the-coin-axes:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "a-law-for-the-rotation-of-the-coin-axes",
+  "title": "What fixes the three numbers of a frame that the walker does not see?",
+  "what": "DERIVATION, independent attempt 2 of 2: What fixes the three numbers of a frame that the walker does not see?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 62 T1: a rotation of all coin axes together changes nothing; block 62 N1.2: for superpositions the antisymmetric part of the frame response is not zero. (a) For a frame field whose rotation varies from site to site, R(x) E, compute exactly how H = (1/2) sum_j {E^j.sigma, S_j} changes: show it is NOT a conjugation and find the extra term (it should be a coupling of the coin to differences of R along the bonds). (b) What nearest-neighbour object, added to the generator, makes local coin rotations a symmetry (psi -> U(x) psi, E -> R(x) E)? Is it determined by E (as the comparator's connection is) or a new field? (c) With it, is the antisymmetric part of the frame response zero on stationary states? State precisely what would have to be supplied; do not adopt anything; do not touch the one-site algebra (parked decision 4). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/a-law-for-the-rotation-of-the-coin-axes/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/a-law-for-the-rotation-of-the-coin-axes/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:what-fixes-the-powers-and-the-kinetic-sign:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "what-fixes-the-powers-and-the-kinetic-sign",
+  "title": "Does anything in the framework fix p = 1, s = 3 and a negative kinetic term for the lengths?",
+  "what": "DERIVATION, independent attempt 1 of 2: Does anything in the framework fix p = 1, s = 3 and a negative kinetic term for the lengths?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 60 declares the member w l^p (a Lap lam + b q) with p = 1 (three, the volume, minus two, the curvature), the kinetic power s = 3 and c_k < 0; beta = 1/p for bilinear members. (a) Find every principle in the framework's vocabulary (weight under a change of label; covariance under the lattice's rotations; a rescaling of all lengths; the ledger's sum rule; agreement of the disturbances' speed with the walker's top speed, alpha = K/4 in block 62) that constrains p, s, the sign of c_k or the ratio alpha/K, and say exactly what each fixes. (b) In particular: a uniform rescaling l -> c l of ALL lengths with the hop rates fixed is a change of what? Work out how <H>, F and the kinetic term transform and whether demanding a definite weight fixes p and s. (c) Report what remains declared. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/what-fixes-the-powers-and-the-kinetic-sign/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/what-fixes-the-powers-and-the-kinetic-sign/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:what-fixes-the-powers-and-the-kinetic-sign:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "what-fixes-the-powers-and-the-kinetic-sign",
+  "title": "Does anything in the framework fix p = 1, s = 3 and a negative kinetic term for the lengths?",
+  "what": "DERIVATION, independent attempt 2 of 2: Does anything in the framework fix p = 1, s = 3 and a negative kinetic term for the lengths?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 60 declares the member w l^p (a Lap lam + b q) with p = 1 (three, the volume, minus two, the curvature), the kinetic power s = 3 and c_k < 0; beta = 1/p for bilinear members. (a) Find every principle in the framework's vocabulary (weight under a change of label; covariance under the lattice's rotations; a rescaling of all lengths; the ledger's sum rule; agreement of the disturbances' speed with the walker's top speed, alpha = K/4 in block 62) that constrains p, s, the sign of c_k or the ratio alpha/K, and say exactly what each fixes. (b) In particular: a uniform rescaling l -> c l of ALL lengths with the hop rates fixed is a change of what? Work out how <H>, F and the kinetic term transform and whether demanding a definite weight fixes p and s. (c) Report what remains declared. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/what-fixes-the-powers-and-the-kinetic-sign/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/what-fixes-the-powers-and-the-kinetic-sign/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:internal-hop-energy-and-the-two-masses:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "internal-hop-energy-and-the-two-masses",
+  "title": "Does a bound body's internal hop energy bring the rates' far-field coefficient up to the lengths'?",
+  "what": "DERIVATION, independent attempt 1 of 2: Does a bound body's internal hop energy bring the rates' far-field coefficient up to the lengths'?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 60 T4(d): for bodies pinned at rest the lengths carry 2Q and the rates P + Q with P = sum Q_i w_i < Q at strong field; T3(e): hop energy adds to the source of the rates, Lap u = (e + tau)/(4K wbar). (a) In the weak-field, second-order theory compute, for a stationary bound state of the walk held together by a supplied confining on-site term, the two far-field coefficients including tau, and decide whether a virial-type identity makes them equal; identify the role of the confining agent's own stress. (b) At strong field in block 60's isotropic model, redo T4 for a body made of several sites with a supplied internal hop energy distribution and find the condition for P = Q. (c) Say what this means for the ratio of bending to fall at strong field. Exact where possible; controls labelled. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/internal-hop-energy-and-the-two-masses/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/internal-hop-energy-and-the-two-masses/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:internal-hop-energy-and-the-two-masses:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "internal-hop-energy-and-the-two-masses",
+  "title": "Does a bound body's internal hop energy bring the rates' far-field coefficient up to the lengths'?",
+  "what": "DERIVATION, independent attempt 2 of 2: Does a bound body's internal hop energy bring the rates' far-field coefficient up to the lengths'?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 60 T4(d): for bodies pinned at rest the lengths carry 2Q and the rates P + Q with P = sum Q_i w_i < Q at strong field; T3(e): hop energy adds to the source of the rates, Lap u = (e + tau)/(4K wbar). (a) In the weak-field, second-order theory compute, for a stationary bound state of the walk held together by a supplied confining on-site term, the two far-field coefficients including tau, and decide whether a virial-type identity makes them equal; identify the role of the confining agent's own stress. (b) At strong field in block 60's isotropic model, redo T4 for a body made of several sites with a supplied internal hop energy distribution and find the condition for P = Q. (c) Say what this means for the ratio of bending to fall at strong field. Exact where possible; controls labelled. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/internal-hop-energy-and-the-two-masses/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/internal-hop-energy-and-the-two-masses/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:the-walls-term-while-content-moves:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-walls-term-while-content-moves",
+  "title": "Is what the walls see constant in the label while content moves?",
+  "what": "DERIVATION, independent attempt 1 of 2: Is what the walls see constant in the label while content moves?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 60: the ledger of a walled region is the walls' term 8K x (flux of chi into the walls), and the constraint holds at each label time with nothing delayed. (a) For slowly moving bodies in block 60's isotropic model (positions as supplied functions of the label; kinetic term c_k l^3 (dlam/dt)^2/w with c_k = -6K), compute d(walls' term)/dt to the first non-vanishing order and decide whether it is zero, and if not what it equals (work done on the supplied motion? radiation is absent by block 60 T5). (b) For a walker evolving under sqrt(w) H sqrt(w) with the fields slaved instantaneously, is <H> + F constant? It is the walls' term by T1(c): so is the flux constant? Prove or give the exact rate of change. (c) Relate to block 55's kept ledger. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-walls-term-while-content-moves/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-walls-term-while-content-moves/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:the-walls-term-while-content-moves:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-walls-term-while-content-moves",
+  "title": "Is what the walls see constant in the label while content moves?",
+  "what": "DERIVATION, independent attempt 2 of 2: Is what the walls see constant in the label while content moves?. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 60: the ledger of a walled region is the walls' term 8K x (flux of chi into the walls), and the constraint holds at each label time with nothing delayed. (a) For slowly moving bodies in block 60's isotropic model (positions as supplied functions of the label; kinetic term c_k l^3 (dlam/dt)^2/w with c_k = -6K), compute d(walls' term)/dt to the first non-vanishing order and decide whether it is zero, and if not what it equals (work done on the supplied motion? radiation is absent by block 60 T5). (b) For a walker evolving under sqrt(w) H sqrt(w) with the fields slaved instantaneously, is <H> + F constant? It is the walls' term by T1(c): so is the flux constant? Prove or give the exact rate of change. (c) Relate to block 55's kept ledger. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-walls-term-while-content-moves/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-walls-term-while-content-moves/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:rays-in-a-frame:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "rays-in-a-frame",
+  "title": "Fall and bending of rays with the full inverse metric",
+  "what": "DERIVATION, independent attempt 1 of 2: Fall and bending of rays with the full inverse metric. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 59 T4 gave fall -c^2 grad log a and bending -c^2 grad log c for E^2 = a^2 m^2 + c^2 sum sin^2 k. With block 62's frame the ray function is E^2 = a^2 m^2 + w^2 sum_ij g^ij(x) sin k_i sin k_j. (a) Derive the exact ray equations. (b) For block 60's static weak field written as a frame (E = (1/l) identity, l = wbar/w) recover bending = 2 x fall. (c) For the transverse traceless disturbances of block 62 T4 passing over a ray, compute the first-order deflection and delay; which components does a ray along an axis feel? (d) Is there an on-site rest-energy term compatible with a frame (block 54's reduced walk), and does it fall as block 59 says? Exact symbolic work; a floating-point control of a packet in a slowly varying frame on a 2D slice is welcome and must be labelled. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/rays-in-a-frame/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/rays-in-a-frame/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:rays-in-a-frame:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "rays-in-a-frame",
+  "title": "Fall and bending of rays with the full inverse metric",
+  "what": "DERIVATION, independent attempt 2 of 2: Fall and bending of rays with the full inverse metric. SETTING (blocks 53-62 of the source-link direction; open PRs 'ail53' ... 'ail62' (#8568, #8570, #8571, #8573, #8578, #8579, #8581, #8590, #8591 #8592); all rest on SUPPLIED clauses, not adopted; read the notes on those PR branches before starting). Rates w_x = exp(u_x) on Z^3 (weight one under a change of the time label); block 54's walk H = sum_j sigma_j S_j, S_j = (T_j - T_j^dagger)/(2i), timed as sqrt(w) H sqrt(w); a kept ledger <H> + F of weight one; e_x = d<H>/du_x. Block 57: the label is only a label; nearest-neighbour kinetic terms in rates do not propagate. Block 59: bond rates c_b and lengths l_b = sqrt(w_x w_y)/c_b (weight zero); hop energy t_b = d<H>/dlog c_b; a body at rest has none; bending of a ray over fall of a slow body = 1 + beta for l = (wbar/w)^beta. Block 60: a field energy LINEAR in the rates, F = sum_x w_x G_x(lengths): every rate a multiplier, the ledger of a walled region = the walls' term; the member 8K w chi Lap chi (chi = sqrt(l); in the continuum -K x rate x volume x scalar curvature) has beta = 1, Lap lam = -e/(4K wbar), Lap u = (e + tau)/(4K wbar), an exact strong field for bodies at rest (chi = 1 + sum Q_i g_i, Q_i chi_i = m_i/(8K); N = w chi from a linear equation; P_i = Q_i w_i), and no delay in the isotropic lengths. Block 61: three lengths per site under the same member at second order: alike at rest; hop energy drives column-long tents (inverses of ONE-dimensional second differences); two travelling disturbances with speeds^2 fixed by rho = abc/((a+b+c)(ab+ac+bc)), a = 4 sin^2(k_1/2): 1 in coordinate planes, 1/3 on body diagonals, at every wavelength. Block 62: a FRAME for the coin, H = (1/2) sum_j {E^j(x).sigma, S_j}: uniform frame H^2 = g^ij sin k_i sin k_j, g^ij = sum_a E_a^i E_a^j; frame response Theta_a^j(x) = Re psi^dagger(x) sigma_a (S_j psi)(x); the member for the full symmetric stretching h_ij (staggered placement, symbols p_j = 2 sin(k_j/2)) is relabelling-invariant, has exactly two transverse traceless travelling disturbances at one direction-free speed, and has static responses iff sum_i p_i Theta_(ij) = 0; EXECUTED: the walk's symmetric frame response fails that by 0.178 (12/L)^3 for generic stationary superpositions while a bond current of the momentum density Re psi^dagger S_j psi is conserved exactly. Exact arithmetic wherever a statement is claimed; floating point only as evidence, labelled so. TASK: block 59 T4 gave fall -c^2 grad log a and bending -c^2 grad log c for E^2 = a^2 m^2 + c^2 sum sin^2 k. With block 62's frame the ray function is E^2 = a^2 m^2 + w^2 sum_ij g^ij(x) sin k_i sin k_j. (a) Derive the exact ray equations. (b) For block 60's static weak field written as a frame (E = (1/l) identity, l = wbar/w) recover bending = 2 x fall. (c) For the transverse traceless disturbances of block 62 T4 passing over a ray, compute the first-order deflection and delay; which components does a ray along an axis feel? (d) Is there an on-site rest-energy term compatible with a frame (block 54's reduced walk), and does it fall as block 59 says? Exact symbolic work; a floating-point control of a packet in a slowly varying frame on a 2D slice is welcome and must be labelled. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/rays-in-a-frame/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/rays-in-a-frame/<name>/check.py\""
  },
  {
   "id": "X:formation-3plus1-sphere-memory",

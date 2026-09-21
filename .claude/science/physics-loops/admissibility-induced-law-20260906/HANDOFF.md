@@ -34,3 +34,6 @@ The record now carries rows 10-13 (transparent bodies, the corrected capture law
 
 ## 2026-09-21 decision record: second addendum, blocks 50-51 (pack-only) — a correction
 Row 14: inertia joined with the rule's weights by a clock (block 50). Row 15, a correction: the wind of a capturing body is not isotropic, with or without scattering (block 51); the executed force law of rows 7, 8 and 10 is an on-axis statement, row 7a's zero circulation fails for the executed flows, and row 11's sentence on collisions is withdrawn. The recommendation (source yes, carrier no) is strengthened.
+
+## 2026-09-21 decision record: third addendum, block 52 and the force by direction (pack-only; close of the campaign)
+Row 16: the force between two capturing bodies executed by direction (0.907 +- 0.042 of the isotropic coefficient along an axis, 0.735 +- 0.046 along a body diagonal). Row 17: the direction dependence can be removed by a streaming rule in which the content only biases a symmetric walk, at the price alpha >= c (block 52). Of the capture picture's three defects as a carrier, the third is repairable; the first two (carried, not accelerated; the pull is the body's growth) are not. The recommendation stands.

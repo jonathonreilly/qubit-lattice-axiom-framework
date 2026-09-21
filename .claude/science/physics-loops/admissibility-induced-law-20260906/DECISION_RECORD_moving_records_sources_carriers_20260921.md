@@ -1,4 +1,4 @@
-# Moving records, sources and carriers — state of knowledge for the owner (blocks 39–46, with addenda for blocks 47–51, the second of which corrects rows 7, 7a, 8 and 10; 2026-09-21)
+# Moving records, sources and carriers — state of knowledge for the owner (blocks 39–46, with addenda for blocks 47–52, the second of which corrects rows 7, 7a, 8 and 10; 2026-09-21)
 
 **What this is.** One page on what the campaign established under the owner's reading that records move, written at the end of the 12-hour campaign of 2026-09-20/21. Nothing here is adopted; every block is an open hand-off PR against `main`; PR numbers are evidence addresses, not status. Author checks only; no independent review has taken place on any of it.
 
@@ -77,3 +77,12 @@ The record layer supplies the **source** — the record count, forced by symmetr
 **What this does to rows 7, 7a, 8, 10.** Their theorems are stated inside a spherically symmetric closure and stand as such. The executed force law (`K Q₁Q₂/r²`; `G N₁N₂/r²` with the predicted coefficient) was executed **along a lattice axis only**; it is an on-axis statement, and the coefficient off the axes has not been executed. Row 7a's zero circulation of the stationary wind was an assumption and fails for the executed flows. Row 11's sentence that collisions give one coefficient in every direction is withdrawn. Corrections are posted on #8553, #8554, #8556, #8558.
 
 **What this does to the recommendation.** It strengthens it. The capture picture now has three independent defects as a carrier: the pulled body is carried rather than accelerated (row 12), the pull is the body's growth (row 13), and in the slow flows executed the pull is not the same in every direction of the lattice (row 15). A streaming clause with hops to more neighbours could repair the third (the classical cure for lattice gases); nothing found repairs the second.
+
+## Third addendum: block 52 and the force by direction (2026-09-21, close of the campaign)
+
+| # | Statement | Evidence address |
+|---|---|---|
+| 16 | **The force by direction, executed.** At the reference parameters of rows 7–10 (two solid capturing balls of radius 3, `ρ = 0.3`, `γ = 1`, separation about 16, three seeds per direction): `K/K₀ = 0.907 ± 0.042` along a lattice axis and `0.735 ± 0.046` along a body diagonal. The coefficient of the force law depends on the lattice direction of the separation, as row 15's wind (`+13 %` on the axes, `−13 %` on the body diagonals) leads one to expect. | evidence comment on #8563 |
+| 17 | **The direction dependence can be removed, at a price.** If a record's content only biases a symmetric walk (hop to each neighbour at the rate `(α + c s·e)/2`, `α ≥ c`), the second-order streaming term is isotropic, a body of any shape captures a fair sample of the gas, the uniform measure stays stationary, and the executed wind is the same in every direction (`1.006 ± 0.019` against `1.35 ± 0.03`). Forward-only hopping (block 44) is the least diffusive rule there is, and an isotropic second-order term costs at least `α = c`: a record along an axis then makes two hops in three sideways. | block 52, #8564 |
+
+**Where the capture picture stands at the close.** Of its three defects as a carrier — (a) a pulled body is carried, not accelerated (row 12); (b) the pull is the body's growth, and stops when growth stops (row 13); (c) the pull depends on the lattice direction (rows 15, 16) — (c) can be repaired by a different streaming rule at the price in row 17; (a) and (b) follow from the conservation of records and from capture itself, and nothing found repairs them. The recommendation stands: the record layer supplies the source (the record count), not the carrier.

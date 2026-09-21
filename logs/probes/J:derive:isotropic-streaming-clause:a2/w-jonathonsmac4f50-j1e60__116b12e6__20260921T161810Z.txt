@@ -1,0 +1,96 @@
+S1  the current rule's fourth-rank moment
+     Axis hops only, one way, rate |s_k|/sqrt3, so sum_d a d_k d_l = delta_kl |s_k|/sqrt3
+     and T_ijkl = <s_i s_j |s_k|> delta_kl / sqrt3.  With the unit's sphere moments:
+       T_1111 = <s_1^2|s_1|>/sqrt3 = sqrt(3)/12
+       T_1122 = <s_1^2|s_2|>/sqrt3 = sqrt(3)/24
+       T_1212 = 0                      (delta_kl kills k=1, l=2)
+     An isotropic fourth-rank tensor symmetric in (ij) and (kl) is
+       T = A delta_ij delta_kl + B(delta_ik delta_jl + delta_il delta_jk),
+     so T_1212 = B = 0, forcing T_1111 = A = T_1122.  But
+ok          T_1111 - T_1122 = sqrt(3)/24 != 0: NOT isotropic, as block 51 says
+
+S2  the reduction
+     Write M_kl(s) = sum_d a(s,d) d_k d_l.  If M(s) = m(s) I with m invariant under the
+     cubic group, then T_ijkl = <s_i s_j m(s)> delta_kl, and cubic symmetry alone gives
+     <s_1^2 m> = <s_2^2 m> = <s_3^2 m> and <s_1 s_2 m> = 0, so <s_i s_j m> = (<m>/3)
+     delta_ij and T = (<m>/3) delta_ij delta_kl - isotropic (the B = 0 branch).
+     So it is ENOUGH to make the hop second moment a multiple of the identity at each
+     content.  That is the condition the rest of this script works with.
+     First, the unit's sphere moments, recomputed here rather than taken on trust:
+ok          <|s_k|>       = 1/2
+ok          <s_i^2 |s_i|> = 1/4
+ok          <s_i^2 |s_k|> = 1/8  (i /= k)
+     - all three agree with block 51, so S1's arithmetic rests on checked numbers.
+     Now the reduction itself, on a non-constant cubic invariant m = s_1^4+s_2^4+s_3^4:
+ok          <s_1 s_2 m> = 0
+ok          <s_1^2 m> = <s_3^2 m> = 1/5
+     so <s_i s_j m> = (<m>/3) delta_ij for a cubic-invariant m, as claimed, and the
+     fourth-rank moment is isotropic whenever M(s) = m(s) I.
+
+S3  forward hops along the axes only: impossible
+     Take s = e_1.  The only axis neighbour with s.d > 0 is d = (1,0,0), so
+       M = a (1,0,0)(1,0,0)^T = diag(a, 0, 0),
+ok        which is a multiple of the identity only if a = 0, i.e. the record never moves.
+     So NO forward-only rule on the axis neighbours alone can be isotropic.  This is
+     the sense in which the unit's 'the cubic term comes from hops along lattice axes
+     only' is right - but S4 shows it is the FORWARD-ONLY part that is doing the work.
+
+S4  axes only, if a record may also step backwards
+     Take a(s, +-e_k) = lambda (1 +- kappa s_k), non-negative for every unit s when
+     kappa <= 1 since |s_k| <= 1.  Then
+ok          mean displacement = 2 lambda kappa s   (proportional to s, as required)
+ok          second moment      = 2 lambda I        (a multiple of I, INDEPENDENT of s)
+     The total rate is 6 lambda, also independent of s.  By S2 the fourth-rank moment
+     is isotropic, with no diagonal neighbours used at all.
+     So the anisotropy of the current clause is NOT caused by restricting hops to the
+     axes.  It is caused by the rate |s_k| being ONE-WAY: the second moment then
+     inherits the content's direction.  A two-way linear rate on the same six
+     neighbours removes it exactly.
+
+S5  forward-only on the full 26-neighbour set: exact witnesses
+     If backward steps are refused (a(s,d) = 0 whenever s.d <= 0), diagonals become
+     necessary by S3.  They are also sufficient.  Exact rational rates, symmetrised
+     over the stabiliser of s in the cubic group, normalised to m = 1:
+ok        s = (1, 0, 0): 4 neighbours, mean = (1, 0, 0) parallel to s, M = 1 I, all rates >= 0, every hop forward
+ok        s = (1, 1, 0): 6 neighbours, mean = (1, 1, 0) parallel to s, M = 1 I, all rates >= 0, every hop forward
+ok        s = (1, 1, 1): 6 neighbours, mean = (3/5, 3/5, 3/5) parallel to s, M = 1 I, all rates >= 0, every hop forward
+     The s = (1,0,0) witness is the clean one: rate 1/4 on each of the four body
+     diagonals (1,+-1,+-1).  Their mean is (1,0,0) and their second moment is exactly
+     I, because each has d_k^2 = 1 in every coordinate and the signs cancel pairwise.
+     Generic directions work too (checked separately by exact rational programming at
+     (3,2,1) and (5,1,1); those rates are not symmetric and are not reproduced here).
+
+S6  (b) what stays and what moves
+     total hop rate at s = (1, 0, 0): 1
+     total hop rate at s = (1, 1, 0): 2
+     total hop rate at s = (1, 1, 1): 6/5
+ok        the total rate is NOT the same at every content for these witnesses, so 'one event
+       per record' does not come for free: a rule with a content-dependent total rate
+       changes the event clock, and the uniform product measure's stationarity has to
+       be re-argued rather than inherited from block 44.  By contrast S4's rule has
+       total rate 6 lambda at every content, so it keeps a single event clock.
+     Capture: block 48's law |s|_1 counts records stepping onto a site, which for axis
+     hops is sum_k |s_k|.  Under S4 the analogous count is sum over the six axis
+     neighbours of lambda(1 -+ kappa s_k) = 6 lambda MINUS the flux 2 lambda kappa s.n,
+     so capture becomes affine in s rather than |s|_1 - a different law.  NOT verified
+     here against a simulator.
+     Collisionless shadow: NOT computed.  The shadow is a statement about straight-line
+     transport behind a body, and S4's rule makes every record diffuse as well as
+     stream, so the shadow should soften; I have not measured it.
+
+S7  (c) the cost
+     Three different prices, one per construction:
+       S4 (axes, two-way): records step BACKWARDS against their content at positive
+         rate.  Cheapest in geometry (no new neighbours, six as before, one event
+         clock) and most expensive in reading: a record's content no longer determines
+         the direction it moves, only the direction it moves ON AVERAGE.
+       S5 (forward-only, 26 neighbours): the owner's reading is preserved - a record
+         only ever steps somewhere it is heading - at the cost of diagonal neighbours,
+         so the lattice's adjacency is no longer the nearest-neighbour graph the other
+         clauses use, and the total rate varies with content.
+       Keeping the present clause: the wind stays anisotropic, which is block 51's
+         finding and the reason the unit exists.
+     Nothing here chooses between them; that is the owner's call.
+
+SUMMARY: PARTIAL on the isotropic streaming clause: non-negative rates with mean displacement proportional to s and an isotropic fourth-rank moment DO exist, and the anisotropy of the present clause is not caused by restricting hops to the lattice axes. The fourth-rank moment is isotropic as soon as the hop second moment M(s) = sum_d a(s,d) d d^T is a multiple of the identity with a cubic-invariant coefficient, since cubic symmetry then gives T = (<m>/3) delta_ij delta_kl. Forward hops on the axes alone cannot do it (at s = e_1 the only forward axis neighbour gives M = diag(a,0,0)), but the two-way axis rule a(s,+-e_k) = lambda(1 +- kappa s_k), non-negative for kappa <= 1, has mean displacement exactly 2 lambda kappa s and second moment exactly 2 lambda I independent of s, using no diagonal neighbours at all; while if backward steps are refused, exact rational forward-only witnesses on the 26 neighbours exist, the cleanest being rate 1/4 on each of the four body diagonals (1,+-1,+-1) at s = (1,0,0), whose mean is (1,0,0) and whose second moment is exactly I. The two constructions differ in cost: the two-way axis rule keeps one event clock (total rate 6 lambda at every content) but lets records step backwards, whereas the forward-only rule preserves the owner's reading but needs diagonal neighbours and has a content-dependent total rate
+HIT: the cubic viscous term of the streaming clause is NOT a consequence of hops being along lattice axes - it is a consequence of the rate |s_k| being one-way. The two-way axis rule a(s, +-e_k) = lambda(1 +- kappa s_k) is non-negative for every unit s when kappa <= 1, has mean displacement exactly 2 lambda kappa s and hop second moment exactly 2 lambda I independent of s, so by cubic symmetry its fourth-rank sphere moment is isotropic, and it uses only the six axis neighbours; forward-only rules cannot be isotropic on the axes alone (at s = e_1 the second moment is diag(a,0,0)) but do exist on the 26 neighbours, with exact rational witnesses such as rate 1/4 on each body diagonal (1,+-1,+-1) at s = (1,0,0) giving mean (1,0,0) and second moment exactly I

@@ -1,0 +1,9 @@
+# Block 63 — contract (2026-09-21; eleventh block of the source-link direction; seventh of the 12-hour campaign)
+
+**Question.** Block 62 (#8592): the member for the full symmetric stretching answers a static source only if the stress is divergence-free, and the walk's site-placed frame response, executed there, is not — by a term of second order that also depends on placement at the same order. What does the walk conserve exactly, what generates that current, and how does block 62's response differ from it?
+
+**Lens pass (supervisor, in writing; no subagents).** Foundations: only block 54's clause is needed; do not slide from "this is what the walk conserves" to "therefore the coupling should reach second neighbours" — that is the owner's fork, and every supplied clause so far has been nearest-neighbour after the Admissibility rule's form. Rigour: replace block 62's executed statement by identities that hold for every state, checked with Gaussian rationals; use an exactly stationary state (wave numbers `π/2` on a `4³` torus) for the consequences; keep the statement about symbols depending on `q` alone as executed unless an exact witness is built. Comparator: current from a symmetry made local; canonical against symmetric stress; cosines from lattice derivatives — under the Premises. Strategy: itemise block 62's bill; say what is still open (the symmetric part).
+
+**Exact target.** T1 the continuity equation with a three-site bond current; T2 `i[H, G_ξ]` as a bond-placed second-neighbour deformation whose response is that current, divergence-free on stationary states; T3 the current against the bond-averaged site response (two more differences; `cos k̄_a` for plane-wave pairs; the law's symbol); T4 reach; T5 the torque on the coin.
+
+**Boundaries fixed in advance.** Identity frame, uniform rates; no member on the bond current; no law for coin rotations; the symmetric part of the bond current not examined; nothing adopted.

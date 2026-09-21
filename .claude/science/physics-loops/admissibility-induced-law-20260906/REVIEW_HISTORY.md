@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 63 — author checks (not a review PASS)
+Written lens pass by the supervisor. One overstatement was caught on re-reading before the gates ("the whole of block 62's bill": it is the first item; the symmetric part is open); two garbled passages were rewritten; one runner check had failed for an accidental reason and was made generic. Control and refuting pass W1–W4 (4/0). Census 9/9 in family.

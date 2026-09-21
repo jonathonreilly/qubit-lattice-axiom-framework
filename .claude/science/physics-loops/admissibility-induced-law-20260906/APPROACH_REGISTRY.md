@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F63 what the walk conserves | commutators of the walk with a local momentum density and with the generator of a relabelling; bond currents; summation by parts; the product rule of the coin's matrices; exactly stationary states with Gaussian-integer phases on a `4³` torus; plane-wave pairs and the symbol `sin k − sin k'` | block 63 (block 54's supplied walk) |

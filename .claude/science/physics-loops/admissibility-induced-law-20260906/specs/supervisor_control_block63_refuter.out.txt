@@ -1,0 +1,17 @@
+[W1] continuity with the bond current, random complex state, 6x5x4 torus: 1.8e-15
+     i[H, G_xi] against sigma_a (1/2){(d_a xi_j) C_a, S_j}: 1.3e-15
+     bond current against the bond average of Theta minus the two-difference term: 8.9e-16
+     torque on the coin: 3.6e-15
+
+[W2] plane-wave pair on a 24^3 torus, mode numbers (1,2,3) and (3,1,2): J_a^j(q)/Theta_a^j(q) against exp(i q_a/2) cos(kbar_a):
+     largest deviation over the nine (a, j): 2.2e-16   (cos kbar = [0.866  0.9239 0.7934])
+
+[W3] two equal-energy pairs with the SAME q = (0.5, -0.3, 0.9) and different mean wave vectors; the law's symbol (unique up to scale) for each:
+     kbar = [0.3    0.9    0.0109] (energy difference 1e-16): symbol from M = [ 0.46928 -0.18444  0.86357]; sin k - sin k' normalised = [ 0.46928 -0.18444  0.86357]; angle to p(q) = 6.10 deg
+     kbar = [ 1.1    -0.4    -0.4359] (energy difference 0e+00): symbol from M = [ 0.25951 -0.31829  0.91178]; sin k - sin k' normalised = [ 0.25951 -0.31829  0.91178]; angle to p(q) = 13.24 deg
+     angle between the two pairs' symbols: 14.56 deg: no symbol depending on q alone serves both
+
+[W4] block 62's defect: sum_a p_a M_a against sum_a p_a (1 - cos kbar_a) M_a, mode numbers (1,2,3), (3,1,2):
+     L = 12: |sum p M| = 9.450e-02; |sum p (1 - cos kbar) M| = 9.450e-02; |sum p cos(kbar) M| = 3.9e-17; ratio to |p||M| = 7.44e-02
+     L = 24: |sum p M| = 1.122e-02; |sum p (1 - cos kbar) M| = 1.122e-02; |sum p cos(kbar) M| = 3.0e-17; ratio to |p||M| = 1.69e-02
+     L = 48: |sum p M| = 1.384e-03; |sum p (1 - cos kbar) M| = 1.384e-03; |sum p cos(kbar) M| = 1.1e-17; ratio to |p||M| = 4.12e-03

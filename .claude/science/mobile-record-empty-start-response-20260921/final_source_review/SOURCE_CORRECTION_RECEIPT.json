@@ -1,0 +1,28 @@
+{
+  "initial_note_sha256": "693f13683a377cbc81587122f0d4568458736c5901dfd9a0503806ff1486c890",
+  "corrected_note_sha256": "a8e9d26399a8c810a7bb919edaaa9e9a5554f18139e601c790c2b23c24177a74",
+  "unchanged_runner_sha256": "56aeb1083d9a66a5dba5ad68b625f539e67fbd9fa458e835ca4fae60ee697156",
+  "only_changes_are_the_four_reviewed_corrections": true,
+  "fixes": [
+    {
+      "finding": "Fourier formula on the stated L>=6 family",
+      "before": "On a periodic cubic graph, for Fourier mode k this is\n",
+      "after": "On the above cubic family with side L>=6, for Fourier mode k this is\n"
+    },
+    {
+      "finding": "Common vector eigenvalue is an explicit hypothesis",
+      "before": "coefficient. Positive theta thus creates nearest-neighbor correlations from\n",
+      "after": "coefficient when all three content-coordinate functions are eigenfunctions\nof W with the same theta, in particular for the j-family with theta=2j.\nPositive theta thus creates nearest-neighbor correlations from\n"
+    },
+    {
+      "finding": "Relative generator uses unit proposals on a simple nearest-neighbor torus",
+      "before": "For a translation-invariant torus of volume V, let r!=0 be the displacement\n",
+      "after": "For a simple translation-invariant nearest-neighbor torus of volume V, with\nside at least three and unit symmetric proposals, let r!=0 be the displacement\n"
+    },
+    {
+      "finding": "Independent and portable block suites are distinguished",
+      "before": "the fifteen new block-coefficient cases themselves all have three sites.\n",
+      "after": "the separately sealed independent check has fifteen block-coefficient cases,\nall with three sites. The portable primary runner has twelve such cases,\nincluding one four-cycle; these are distinct suites.\n"
+    }
+  ]
+}

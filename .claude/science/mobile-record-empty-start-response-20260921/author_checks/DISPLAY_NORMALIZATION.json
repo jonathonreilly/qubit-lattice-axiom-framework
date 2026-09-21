@@ -1,0 +1,53 @@
+{
+  "reason": "Raw expected-failure log lines end in a space after empty AssertionError messages; preserve exact bytes in RAW_OUTPUTS.json and normalize display copies to satisfy the repository whitespace gate. The runner and all scientific evidence seals are unchanged.",
+  "files": [
+    {
+      "path": "double_time_coefficient.log",
+      "raw_sha256": "88c3cf170f6c93c99379fbf8f9635ec804e981fffdac69b1c58827ae709e7705",
+      "display_sha256": "a6e68ad13d535ddd87946362752724fa42293f306c2070df44aadf5381c99430",
+      "only_trailing_line_whitespace_removed": true
+    },
+    {
+      "path": "merge_rook_delayed_order.log",
+      "raw_sha256": "903a5e7004310d9c3f46e1a081a85880f125202a638129e280d9305cdbc93eef",
+      "display_sha256": "f8455e3d2792f9a0f7b3a456d5f9b5a196417b72e5319de2d752c404de3b2781",
+      "only_trailing_line_whitespace_removed": true
+    },
+    {
+      "path": "omit_birth_holding.log",
+      "raw_sha256": "bf3500d06395eb541b50ed8519d7942af8f2cefe269d24d6b8bde21090860947",
+      "display_sha256": "6f0465092224677caf50a1b98e1ca3fd8e66a282e04c3fd08cb96cd9ea0efd8d",
+      "only_trailing_line_whitespace_removed": true
+    },
+    {
+      "path": "omit_geometry_endpoint.log",
+      "raw_sha256": "88e87729d790c1ee4a20372ca02fe4ce04e95ceb2e130b14f93c62a6318ecb37",
+      "display_sha256": "2002b17925dacbd0176e3eaea7d774bd8da285edceae7340c662a78e1fb4933c",
+      "only_trailing_line_whitespace_removed": true
+    },
+    {
+      "path": "omit_motion_rate_bound.log",
+      "raw_sha256": "1edc4b51a374bdc3a9c0472a84290706fb0a583e3c4785a1b4af6031b51f8128",
+      "display_sha256": "7da9b2c49f45fa8c71a09a7ba58068c00b9f0a88acdc95c49a94656d7b2f5c1e",
+      "only_trailing_line_whitespace_removed": true
+    },
+    {
+      "path": "omit_relative_endpoint.log",
+      "raw_sha256": "f03a357221dd06bdb02b2a44f84611554512f7bcf0e67d7d1b4b98b4e532660c",
+      "display_sha256": "f03a357221dd06bdb02b2a44f84611554512f7bcf0e67d7d1b4b98b4e532660c",
+      "only_trailing_line_whitespace_removed": true
+    },
+    {
+      "path": "reverse_correlation_sign.log",
+      "raw_sha256": "9c1d2fd653d53938c899dfb26b2411b5dd4f6a7d4427783408f0f529bf80aa3e",
+      "display_sha256": "5f86f55f25a2245e8f4f06899828976c612b0c25e245531ca3768bf02dc391c7",
+      "only_trailing_line_whitespace_removed": true
+    },
+    {
+      "path": "reverse_semigroup_drop.log",
+      "raw_sha256": "18d6fe2527623ee050f5a4c7d0b02158b1aadaebeb082ec44d15fad18ef687ba",
+      "display_sha256": "18d6fe2527623ee050f5a4c7d0b02158b1aadaebeb082ec44d15fad18ef687ba",
+      "only_trailing_line_whitespace_removed": true
+    }
+  ]
+}

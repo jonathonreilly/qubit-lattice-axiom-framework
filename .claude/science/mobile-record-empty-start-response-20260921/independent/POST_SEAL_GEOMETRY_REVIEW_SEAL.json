@@ -1,0 +1,32 @@
+{
+  "sealed_at_utc": "2026-09-21T00:28:21.026688+00:00",
+  "scope": "Narrow post-seal geometry, positivity and volume-uniform Taylor-remainder scientific review; not a whole-PR or audit review.",
+  "reviewed_sources_sha256": {
+    "EMPTY_START_DERIVATION.md": "4e34cda1cb85a8b7471c80f22bad5a56d64319b8bb3090fdcdcea0174091ec74",
+    "empty_start_geometry.py": "182ce88938e4f7471b6801972bfbc8630b9dc79fd29918d36af3c33399727aec",
+    "EMPTY_START_GEOMETRY_RESULTS.json": "52d18fa0fac5f62686421df89e021b17ac2114833e6b6a939a0166289bdf601c"
+  },
+  "artifacts_sha256": {
+    "POST_SEAL_GEOMETRY_REVIEW.md": "a3aaac0298e989545c3b6b60b0eccdf6c41535c392c45894495fbf7874687739",
+    "post_seal_check.py": "8d352820a240471f27a02745272b7e1f5f3261c9e4717b719c07c6bb429887b6",
+    "POST_SEAL_CHECK_RESULTS.json": "b54d7f272d3bd40390b25fd788a5b54f814c4ff55fdfc044d9d79ea5dd4f32f3",
+    "POST_SEAL_CHECK_RUN.log": "5999543aabfb22d1d1b0b7665f2e5836c02e54ec3168069f9e41861edff08939",
+    "POST_SEAL_PRIMARY_REPRODUCTION.json": "52d18fa0fac5f62686421df89e021b17ac2114833e6b6a939a0166289bdf601c",
+    "POST_SEAL_PRIMARY_RUN.log": "52d18fa0fac5f62686421df89e021b17ac2114833e6b6a939a0166289bdf601c"
+  },
+  "unchanged_original_seal_sha256": "dc986eac439b4cacbeb17d31a4909a5bbb521d6c5c3306ddf0e54acd15ca5a26",
+  "original_sealed_artifacts_reverified": {
+    "REPORT.md": "fff040b1b6b3acc5929ab267fe04905bf3aed7d014b4733d615687f97a7bdb84",
+    "check.py": "540001b33303bc27372db87d8e60ab63912fd865bcccc572312761d80f690622",
+    "RESULTS.json": "ecf252a6219e208ba2d3d935119bde29484c7a8c92f090ceb6c1ddcf36555a35",
+    "RUN.log": "ecf252a6219e208ba2d3d935119bde29484c7a8c92f090ceb6c1ddcf36555a35"
+  },
+  "result": "Confirmed; no actionable mathematical defect found.",
+  "presentation_clarification": "Touching the support means the jump updated sites intersect the support; local jump differences remain grouped.",
+  "execution": {
+    "exit_code": 0,
+    "status": "all narrow checks passed",
+    "exact_norm_checks": 96,
+    "primary_output_reproduced_byte_for_byte": true
+  }
+}

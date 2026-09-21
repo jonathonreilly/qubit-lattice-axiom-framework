@@ -1,0 +1,73 @@
+{
+  "sealed_at_utc": "2026-09-21T01:19:32.644259+00:00",
+  "scope": "Complete-source mathematical review of the empty-start theorem milestone; no local-activity review, audit or retention verdict.",
+  "independence": "Post-source review; earlier separately sealed pre-source calculations preserved and their hashes reverified. New exact implementations are separate from the primary helpers; numerical metric reproduction is labeled.",
+  "worktree": "/Users/jonreilly/Documents/Codex/mobile-record-empty-start-publication-20260921",
+  "base_commit": "689941783bea870e08458e079ddb208257d0083d",
+  "initial_note_sha256": "693f13683a377cbc81587122f0d4568458736c5901dfd9a0503806ff1486c890",
+  "reviewed_sources_sha256": {
+    "docs/MOBILE_RECORDS_EMPTY_START_MOTION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-21.md": "a8e9d26399a8c810a7bb919edaaa9e9a5554f18139e601c790c2b23c24177a74",
+    "scripts/mobile_records_empty_start_motion_response_2026_09_21.py": "56aeb1083d9a66a5dba5ad68b625f539e67fbd9fa458e835ca4fae60ee697156"
+  },
+  "input_sources_sha256": {
+    "docs/MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md": "8cc06519d7f3acc088b1e450c151f0870ab21d2987ef2b0224d40ba6a5e7e4e2",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  "instruction_sources_sha256": {
+    "AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+  },
+  "prior_seals_reverified": {
+    "SEAL.json": "dc986eac439b4cacbeb17d31a4909a5bbb521d6c5c3306ddf0e54acd15ca5a26",
+    "POST_SEAL_GEOMETRY_REVIEW_SEAL.json": "7fc0bda5fdd0fd496148de00f62003356f7ce4b63735e7dc969fac81d9345e39",
+    "formation_intensity/SEAL.json": "2f25a82a241e45aa651b5794501c4c0e0da1cfb6f44e99e42698c2b90b0cd893"
+  },
+  "artifacts_sha256": {
+    "FIX_CHECK.log": "8994df5d5707c9e2050d63fc79de5e1c780eedeaba2c2e8543b3f44167fb3ded",
+    "PRIMARY_BASELINE.log": "c7abfdae2c62c2727a4ba69edafb3ae3f059db0b1c7d6a9f9f45ad9cfc8011c1",
+    "REPORT.md": "d7c29cbcb4455faf78e55416bad78c8009450b08d4fd126de50b9ac95bf49b5c",
+    "RESULTS.json": "385d961c260b8ed853b6dd853bdd874e8d2c1f49a46720b8bcf313af4660df92",
+    "SELECTIVE_RUN.log": "385d961c260b8ed853b6dd853bdd874e8d2c1f49a46720b8bcf313af4660df92",
+    "SOURCE_CORRECTION_RECEIPT.json": "8994df5d5707c9e2050d63fc79de5e1c780eedeaba2c2e8543b3f44167fb3ded",
+    "selective_checks.py": "336074ef18e1af47b43ccb4b525cc5d36b6f8ac7e93a1621594e480b54ab205b",
+    "verify_fixes.py": "5ec4445ebe5b5864762c6e94eb67e9a01c58df435254c48061ca02d581b2c07c"
+  },
+  "execution": {
+    "primary_baseline_exit_code": 0,
+    "primary_baseline_pass": 57,
+    "primary_baseline_fail": 0,
+    "selective_exit_code": 0,
+    "fix_check_exit_code": 0,
+    "exact_lumping_cases": 28,
+    "exact_lumping_rows": 4296,
+    "exact_scalar_moment_assertions": 166,
+    "full_content_states": [
+      216,
+      1296
+    ],
+    "semigroup_powers_checked": [
+      1,
+      2,
+      3
+    ],
+    "block_coefficient_max_absolute_error": 3.2614438927325295e-11,
+    "relative_gate_max_absolute_error": 2.7755575615628914e-16,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "mutations": "Not repeated by this reviewer; owner reports eight expected failures."
+  },
+  "findings": {
+    "reported": 4,
+    "corrected": 4,
+    "unresolved_mathematical_defects": 0
+  },
+  "source_corrections_verified_by_inverse_hash": true,
+  "future_metadata_change": "Requires a separate acknowledgment; this report and seal remain unchanged."
+}

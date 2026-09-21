@@ -1,0 +1,8 @@
+omit_birth_holding startup
+double_time_coefficient startup
+reverse_correlation_sign startup
+omit_geometry_endpoint geometry
+reverse_semigroup_drop intensity
+omit_relative_endpoint relative
+omit_motion_rate_bound remainder
+merge_rook_delayed_order delayed

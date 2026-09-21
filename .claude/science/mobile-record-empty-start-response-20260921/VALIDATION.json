@@ -1,0 +1,58 @@
+{
+  "base_commit": "689941783bea870e08458e079ddb208257d0083d",
+  "final_sources_sha256": {
+    "docs/MOBILE_RECORDS_EMPTY_START_MOTION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-21.md": "c23adc34ea5b9b8a2ecd82d991f90c0c2d72c8b3c206269df929e89ee62164d5",
+    "scripts/mobile_records_empty_start_motion_response_2026_09_21.py": "56aeb1083d9a66a5dba5ad68b625f539e67fbd9fa458e835ca4fae60ee697156"
+  },
+  "verified_seals": {
+    ".claude/science/mobile-record-empty-start-response-20260921/independent/SEAL.json": "dc986eac439b4cacbeb17d31a4909a5bbb521d6c5c3306ddf0e54acd15ca5a26",
+    ".claude/science/mobile-record-empty-start-response-20260921/independent/POST_SEAL_GEOMETRY_REVIEW_SEAL.json": "7fc0bda5fdd0fd496148de00f62003356f7ce4b63735e7dc969fac81d9345e39",
+    ".claude/science/mobile-record-empty-start-response-20260921/independent/formation_intensity/SEAL.json": "2f25a82a241e45aa651b5794501c4c0e0da1cfb6f44e99e42698c2b90b0cd893",
+    ".claude/science/mobile-record-empty-start-response-20260921/final_source_review/SEAL.json": "5d95e5a33d59b5685fe66d860224d4f31bfb7f3f1c40f314e6615188e462fafd"
+  },
+  "metadata_ack_sha256": "7f1b3ad95c2a3f55c9761dbd5402b7a26ce856e59631744311659af652de97c2",
+  "python_files_compiled": [
+    "scripts/mobile_records_empty_start_motion_response_2026_09_21.py",
+    ".claude/science/mobile-record-empty-start-response-20260921/independent/check.py",
+    ".claude/science/mobile-record-empty-start-response-20260921/independent/post_seal_check.py",
+    ".claude/science/mobile-record-empty-start-response-20260921/final_source_review/selective_checks.py",
+    ".claude/science/mobile-record-empty-start-response-20260921/final_source_review/verify_fixes.py",
+    ".claude/science/mobile-record-empty-start-response-20260921/independent/formation_intensity/check.py"
+  ],
+  "canonical_cache": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-empty-start-publication-20260921/logs/runner-cache/mobile_records_empty_start_motion_response_2026_09_21.txt",
+    "status": "fresh",
+    "sha256": "cd67643143a42937d88da97982f9e517fd301e45505768e89ba2f4f4c3e68d25"
+  },
+  "primary_checks": {
+    "pass": 57,
+    "fail": 0,
+    "mutations_detected_in_expected_family": 8
+  },
+  "citation_topology": {
+    "added_nodes": [
+      "mobile_records_empty_start_motion_response_bounded_theorem_note_2026-09-21"
+    ],
+    "new_edges": 1,
+    "prior_entries_unchanged": true,
+    "node_count": 6029,
+    "edge_count": 13609
+  },
+  "pending_combined_candidate_gates": [
+    "full pipeline",
+    "strict audit lint",
+    "changed-evidence integration"
+  ],
+  "independent_audit_verdict": null,
+  "editable_prompt_files_changed": [],
+  "vocabulary_check": {
+    "files_with_violations": 0,
+    "report": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/empty-start-final-vocab.json",
+    "report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  },
+  "author_log_display_normalization": {
+    "receipt": ".claude/science/mobile-record-empty-start-response-20260921/author_checks/DISPLAY_NORMALIZATION.json",
+    "raw_outputs": ".claude/science/mobile-record-empty-start-response-20260921/author_checks/RAW_OUTPUTS.json",
+    "runner_unchanged": true
+  }
+}

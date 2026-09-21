@@ -1,0 +1,26 @@
+{
+  "sealed_at_utc": "2026-09-21T00:18:45.852705+00:00",
+  "independence": "No new primary author source, calculation, or result message was read before this seal.",
+  "scientific_check_only": true,
+  "model_commit": "689941783bea870e08458e079ddb208257d0083d",
+  "model_sources_sha256": {
+    "docs/MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md": "8cc06519d7f3acc088b1e450c151f0870ab21d2987ef2b0224d40ba6a5e7e4e2",
+    "docs/MOBILE_RECORDS_FINITE_RATE_CONTROL_AND_SPATIAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-20.md": "423eba32f704e510331bfbb6dba78ea0a35db129854547b155fd76f27248d917"
+  },
+  "artifacts_sha256": {
+    "REPORT.md": "fff040b1b6b3acc5929ab267fe04905bf3aed7d014b4733d615687f97a7bdb84",
+    "check.py": "540001b33303bc27372db87d8e60ab63912fd865bcccc572312761d80f690622",
+    "RESULTS.json": "ecf252a6219e208ba2d3d935119bde29484c7a8c92f090ceb6c1ddcf36555a35",
+    "RUN.log": "ecf252a6219e208ba2d3d935119bde29484c7a8c92f090ceb6c1ddcf36555a35"
+  },
+  "execution": {
+    "command": "python3 check.py > RUN.log",
+    "exit_code": 0,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "exact_finite_state_cases": 3430,
+    "Taylor_degree": 6,
+    "rook_graph_two_record_checks": 4320,
+    "status": "all exact checks passed"
+  },
+  "scope": "Empty deterministic initial state; finite simple graph and fixed nonnegative rates; exact first motion terms and their leading population sign, including later-onset cases. No all-time population monotonicity claim."
+}

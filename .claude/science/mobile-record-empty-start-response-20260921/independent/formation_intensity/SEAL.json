@@ -1,0 +1,38 @@
+{
+  "sealed_at_utc": "2026-09-21T00:40:59.160095+00:00",
+  "independence": "No new primary calculation, changed author file, or result message was read after the prior post-seal geometry review and before this new seal.",
+  "scientific_check_only": true,
+  "model_commit": "689941783bea870e08458e079ddb208257d0083d",
+  "previously_verified_model_sources_sha256": {
+    "docs/MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md": "8cc06519d7f3acc088b1e450c151f0870ab21d2987ef2b0224d40ba6a5e7e4e2",
+    "docs/MOBILE_RECORDS_FINITE_RATE_CONTROL_AND_SPATIAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-20.md": "423eba32f704e510331bfbb6dba78ea0a35db129854547b155fd76f27248d917"
+  },
+  "model_source_identity_note": "Immutable commit identities reused from the previous independent receipt; no author sources or Git actions were used in this continuation.",
+  "weighted_deletion_dependency": {
+    "report_sha256": "fff040b1b6b3acc5929ab267fe04905bf3aed7d014b4733d615687f97a7bdb84",
+    "seal_sha256": "dc986eac439b4cacbeb17d31a4909a5bbb521d6c5c3306ddf0e54acd15ca5a26"
+  },
+  "pre_source_boundary_receipt_sha256": "7fc0bda5fdd0fd496148de00f62003356f7ce4b63735e7dc969fac81d9345e39",
+  "artifacts_sha256": {
+    "REPORT.md": "1ed67a3f52776551660f78fc8df2358c0e4dfba9a825ecb0fb4bf08fa6bb9a6e",
+    "check.py": "3af33ec42c7eab2f0fde8df1560416370c0bbb2a2bf3d1d009a850fcd117c925",
+    "RESULTS.json": "353a5d901ec9e9b2d4031c0b4deadb6d77f395f67e570ef02f161a1eb454a51a",
+    "RUN.log": "353a5d901ec9e9b2d4031c0b4deadb6d77f395f67e570ef02f161a1eb454a51a"
+  },
+  "execution": {
+    "command": "python3 check.py > RUN.log",
+    "exit_code": 0,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "dependencies": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "mpmath": "1.3.0"
+    },
+    "block_exponential_checks": 15,
+    "absolute_tolerance": 2e-08,
+    "maximum_observed_discrepancy": 5.564759764098426e-11,
+    "high_precision_decimal_digits": 70,
+    "status": "all checks passed"
+  },
+  "scope": "Taylor coefficients in epsilon at fixed finite time and fixed kappa, with full motion semigroup retained; sign/monotonicity/concavity of the leading motion coefficient, not arbitrary finite-epsilon population monotonicity."
+}

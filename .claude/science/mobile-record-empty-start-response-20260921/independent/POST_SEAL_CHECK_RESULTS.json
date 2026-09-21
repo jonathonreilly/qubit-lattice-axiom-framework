@@ -1,0 +1,708 @@
+{
+  "status": "all narrow checks passed",
+  "primary_reproduction": "Exact runner reproduced; only its result write was redirected; bytes match.",
+  "sources_sha256": {
+    "EMPTY_START_DERIVATION.md": "4e34cda1cb85a8b7471c80f22bad5a56d64319b8bb3090fdcdcea0174091ec74",
+    "empty_start_geometry.py": "182ce88938e4f7471b6801972bfbc8630b9dc79fd29918d36af3c33399727aec",
+    "EMPTY_START_GEOMETRY_RESULTS.json": "52d18fa0fac5f62686421df89e021b17ac2114833e6b6a939a0166289bdf601c"
+  },
+  "independent_geometry": [
+    {
+      "side": 6,
+      "dimension": 1,
+      "counts": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "side": 7,
+      "dimension": 1,
+      "counts": {
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "side": 6,
+      "dimension": 2,
+      "counts": {
+        "0": 22,
+        "1": 18
+      }
+    },
+    {
+      "side": 7,
+      "dimension": 2,
+      "counts": {
+        "0": 22,
+        "1": 18
+      }
+    },
+    {
+      "side": 6,
+      "dimension": 3,
+      "counts": {
+        "0": 74,
+        "1": 34
+      }
+    },
+    {
+      "side": 7,
+      "dimension": 3,
+      "counts": {
+        "0": 74,
+        "1": 34
+      }
+    },
+    {
+      "side": 6,
+      "dimension": 4,
+      "counts": {
+        "0": 158,
+        "1": 50
+      }
+    },
+    {
+      "side": 7,
+      "dimension": 4,
+      "counts": {
+        "0": 158,
+        "1": 50
+      }
+    }
+  ],
+  "excluded_cycle5_counts": {
+    "0": 0,
+    "1": 2
+  },
+  "direct_birth_hazard_edge_sums": {
+    "cycle6_axes": "29/5",
+    "torus6x6_general": "22986/4375"
+  },
+  "positive_negative_centered_modes": [
+    {
+      "rank_one_coefficient": "-1/10",
+      "D2_per_site": "2676402/130625"
+    },
+    {
+      "rank_one_coefficient": "0",
+      "D2_per_site": "0"
+    },
+    {
+      "rank_one_coefficient": "1/10",
+      "D2_per_site": "92721/4375"
+    }
+  ],
+  "generator_norm_checks": [
+    {
+      "name": "singleton",
+      "states": 7,
+      "max_degree": 0,
+      "runs": [
+        {
+          "kappa": "0",
+          "site": 0,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "6/7",
+              "claimed_bound": "12/7"
+            },
+            {
+              "k": 2,
+              "actual_norm": "36/49",
+              "claimed_bound": "432/49"
+            },
+            {
+              "k": 3,
+              "actual_norm": "216/343",
+              "claimed_bound": "25920/343"
+            },
+            {
+              "k": 4,
+              "actual_norm": "1296/2401",
+              "claimed_bound": "311040/343"
+            },
+            {
+              "k": 5,
+              "actual_norm": "7776/16807",
+              "claimed_bound": "33592320/2401"
+            },
+            {
+              "k": 6,
+              "actual_norm": "46656/117649",
+              "claimed_bound": "4434186240/16807"
+            }
+          ]
+        },
+        {
+          "kappa": "2/3",
+          "site": 0,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "6/7",
+              "claimed_bound": "12/7"
+            },
+            {
+              "k": 2,
+              "actual_norm": "36/49",
+              "claimed_bound": "432/49"
+            },
+            {
+              "k": 3,
+              "actual_norm": "216/343",
+              "claimed_bound": "25920/343"
+            },
+            {
+              "k": 4,
+              "actual_norm": "1296/2401",
+              "claimed_bound": "311040/343"
+            },
+            {
+              "k": 5,
+              "actual_norm": "7776/16807",
+              "claimed_bound": "33592320/2401"
+            },
+            {
+              "k": 6,
+              "actual_norm": "46656/117649",
+              "claimed_bound": "4434186240/16807"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "path3",
+      "states": 343,
+      "max_degree": 2,
+      "runs": [
+        {
+          "kappa": "0",
+          "site": 0,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "6/7",
+              "claimed_bound": "27/7"
+            },
+            {
+              "k": 2,
+              "actual_norm": "36/49",
+              "claimed_bound": "729/7"
+            },
+            {
+              "k": 3,
+              "actual_norm": "216/343",
+              "claimed_bound": "255879/49"
+            },
+            {
+              "k": 4,
+              "actual_norm": "1296/2401",
+              "claimed_bound": "131265927/343"
+            },
+            {
+              "k": 5,
+              "actual_norm": "7776/16807",
+              "claimed_bound": "88604500725/2401"
+            },
+            {
+              "k": 6,
+              "actual_norm": "46656/117649",
+              "claimed_bound": "74161967106825/16807"
+            }
+          ]
+        },
+        {
+          "kappa": "0",
+          "site": 1,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "13/14",
+              "claimed_bound": "27/7"
+            },
+            {
+              "k": 2,
+              "actual_norm": "169/196",
+              "claimed_bound": "729/7"
+            },
+            {
+              "k": 3,
+              "actual_norm": "2197/2744",
+              "claimed_bound": "255879/49"
+            },
+            {
+              "k": 4,
+              "actual_norm": "28561/38416",
+              "claimed_bound": "131265927/343"
+            },
+            {
+              "k": 5,
+              "actual_norm": "371293/537824",
+              "claimed_bound": "88604500725/2401"
+            },
+            {
+              "k": 6,
+              "actual_norm": "4826809/7529536",
+              "claimed_bound": "74161967106825/16807"
+            }
+          ]
+        },
+        {
+          "kappa": "0",
+          "site": 2,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "6/7",
+              "claimed_bound": "27/7"
+            },
+            {
+              "k": 2,
+              "actual_norm": "36/49",
+              "claimed_bound": "729/7"
+            },
+            {
+              "k": 3,
+              "actual_norm": "216/343",
+              "claimed_bound": "255879/49"
+            },
+            {
+              "k": 4,
+              "actual_norm": "1296/2401",
+              "claimed_bound": "131265927/343"
+            },
+            {
+              "k": 5,
+              "actual_norm": "7776/16807",
+              "claimed_bound": "88604500725/2401"
+            },
+            {
+              "k": 6,
+              "actual_norm": "46656/117649",
+              "claimed_bound": "74161967106825/16807"
+            }
+          ]
+        },
+        {
+          "kappa": "2/3",
+          "site": 0,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "82/63",
+              "claimed_bound": "137/21"
+            },
+            {
+              "k": 2,
+              "actual_norm": "2372/1323",
+              "claimed_bound": "18769/63"
+            },
+            {
+              "k": 3,
+              "actual_norm": "1798319/694575",
+              "claimed_bound": "33427589/1323"
+            },
+            {
+              "k": 4,
+              "actual_norm": "123562319/23152500",
+              "claimed_bound": "87012014167/27783"
+            },
+            {
+              "k": 5,
+              "actual_norm": "52467252421/4862025000",
+              "claimed_bound": "298016148521975/583443"
+            },
+            {
+              "k": 6,
+              "actual_norm": "3143574536177/145860750000",
+              "claimed_bound": "1265674582772827825/12252303"
+            }
+          ]
+        },
+        {
+          "kappa": "2/3",
+          "site": 1,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "121/70",
+              "claimed_bound": "137/21"
+            },
+            {
+              "k": 2,
+              "actual_norm": "47059/14700",
+              "claimed_bound": "18769/63"
+            },
+            {
+              "k": 3,
+              "actual_norm": "18960881/3087000",
+              "claimed_bound": "33427589/1323"
+            },
+            {
+              "k": 4,
+              "actual_norm": "7768848379/648270000",
+              "claimed_bound": "87012014167/27783"
+            },
+            {
+              "k": 5,
+              "actual_norm": "3207583393961/136136700000",
+              "claimed_bound": "298016148521975/583443"
+            },
+            {
+              "k": 6,
+              "actual_norm": "1328890075600099/28588707000000",
+              "claimed_bound": "1265674582772827825/12252303"
+            }
+          ]
+        },
+        {
+          "kappa": "2/3",
+          "site": 2,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "82/63",
+              "claimed_bound": "137/21"
+            },
+            {
+              "k": 2,
+              "actual_norm": "2372/1323",
+              "claimed_bound": "18769/63"
+            },
+            {
+              "k": 3,
+              "actual_norm": "1798319/694575",
+              "claimed_bound": "33427589/1323"
+            },
+            {
+              "k": 4,
+              "actual_norm": "123562319/23152500",
+              "claimed_bound": "87012014167/27783"
+            },
+            {
+              "k": 5,
+              "actual_norm": "52467252421/4862025000",
+              "claimed_bound": "298016148521975/583443"
+            },
+            {
+              "k": 6,
+              "actual_norm": "3143574536177/145860750000",
+              "claimed_bound": "1265674582772827825/12252303"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "star4",
+      "states": 2401,
+      "max_degree": 3,
+      "runs": [
+        {
+          "kappa": "0",
+          "site": 0,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "846/875",
+              "claimed_bound": "588/125"
+            },
+            {
+              "k": 2,
+              "actual_norm": "715716/765625",
+              "claimed_bound": "3111696/15625"
+            },
+            {
+              "k": 3,
+              "actual_norm": "605495736/669921875",
+              "claimed_bound": "31104513216/1953125"
+            },
+            {
+              "k": 4,
+              "actual_norm": "512249392656/586181640625",
+              "claimed_bound": "18289453771008/9765625"
+            },
+            {
+              "k": 5,
+              "actual_norm": "433362986186976/512908935546875",
+              "claimed_bound": "354888560972639232/1220703125"
+            },
+            {
+              "k": 6,
+              "actual_norm": "366625086314181696/448795318603515625",
+              "claimed_bound": "8555653427928386605056/152587890625"
+            }
+          ]
+        },
+        {
+          "kappa": "0",
+          "site": 1,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "6/7",
+              "claimed_bound": "588/125"
+            },
+            {
+              "k": 2,
+              "actual_norm": "36/49",
+              "claimed_bound": "3111696/15625"
+            },
+            {
+              "k": 3,
+              "actual_norm": "216/343",
+              "claimed_bound": "31104513216/1953125"
+            },
+            {
+              "k": 4,
+              "actual_norm": "1296/2401",
+              "claimed_bound": "18289453771008/9765625"
+            },
+            {
+              "k": 5,
+              "actual_norm": "7776/16807",
+              "claimed_bound": "354888560972639232/1220703125"
+            },
+            {
+              "k": 6,
+              "actual_norm": "46656/117649",
+              "claimed_bound": "8555653427928386605056/152587890625"
+            }
+          ]
+        },
+        {
+          "kappa": "0",
+          "site": 2,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "6/7",
+              "claimed_bound": "588/125"
+            },
+            {
+              "k": 2,
+              "actual_norm": "36/49",
+              "claimed_bound": "3111696/15625"
+            },
+            {
+              "k": 3,
+              "actual_norm": "216/343",
+              "claimed_bound": "31104513216/1953125"
+            },
+            {
+              "k": 4,
+              "actual_norm": "1296/2401",
+              "claimed_bound": "18289453771008/9765625"
+            },
+            {
+              "k": 5,
+              "actual_norm": "7776/16807",
+              "claimed_bound": "354888560972639232/1220703125"
+            },
+            {
+              "k": 6,
+              "actual_norm": "46656/117649",
+              "claimed_bound": "8555653427928386605056/152587890625"
+            }
+          ]
+        },
+        {
+          "kappa": "0",
+          "site": 3,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "6/7",
+              "claimed_bound": "588/125"
+            },
+            {
+              "k": 2,
+              "actual_norm": "36/49",
+              "claimed_bound": "3111696/15625"
+            },
+            {
+              "k": 3,
+              "actual_norm": "216/343",
+              "claimed_bound": "31104513216/1953125"
+            },
+            {
+              "k": 4,
+              "actual_norm": "1296/2401",
+              "claimed_bound": "18289453771008/9765625"
+            },
+            {
+              "k": 5,
+              "actual_norm": "7776/16807",
+              "claimed_bound": "354888560972639232/1220703125"
+            },
+            {
+              "k": 6,
+              "actual_norm": "46656/117649",
+              "claimed_bound": "8555653427928386605056/152587890625"
+            }
+          ]
+        },
+        {
+          "kappa": "2/3",
+          "site": 0,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "74177/32375",
+              "claimed_bound": "1088/125"
+            },
+            {
+              "k": 2,
+              "actual_norm": "17444572612/3144421875",
+              "claimed_bound": "10653696/15625"
+            },
+            {
+              "k": 3,
+              "actual_norm": "4189263678545972/305401974609375",
+              "claimed_bound": "197050761216/1953125"
+            },
+            {
+              "k": 4,
+              "actual_norm": "1013629828682246507632/29662166783935546875",
+              "claimed_bound": "214391228203008/9765625"
+            },
+            {
+              "k": 5,
+              "actual_norm": "245907269663233751814856592/2880937948889739990234375",
+              "claimed_bound": "7697502657400799232/1220703125"
+            },
+            {
+              "k": 6,
+              "actual_norm": "59712592344293667623356108524352/279811098285915996551513671875",
+              "claimed_bound": "343370198541334852141056/152587890625"
+            }
+          ]
+        },
+        {
+          "kappa": "2/3",
+          "site": 1,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "1088/861",
+              "claimed_bound": "1088/125"
+            },
+            {
+              "k": 2,
+              "actual_norm": "136352212/77621733",
+              "claimed_bound": "10653696/15625"
+            },
+            {
+              "k": 3,
+              "actual_norm": "86778554836/21369234375",
+              "claimed_bound": "197050761216/1953125"
+            },
+            {
+              "k": 4,
+              "actual_norm": "3098626658967488/296498126953125",
+              "claimed_bound": "214391228203008/9765625"
+            },
+            {
+              "k": 5,
+              "actual_norm": "5321091378714439754896/201581664062255859375",
+              "claimed_bound": "7697502657400799232/1220703125"
+            },
+            {
+              "k": 6,
+              "actual_norm": "185300220025293819239715968/2796945588863800048828125",
+              "claimed_bound": "343370198541334852141056/152587890625"
+            }
+          ]
+        },
+        {
+          "kappa": "2/3",
+          "site": 2,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "1088/861",
+              "claimed_bound": "1088/125"
+            },
+            {
+              "k": 2,
+              "actual_norm": "136352212/77621733",
+              "claimed_bound": "10653696/15625"
+            },
+            {
+              "k": 3,
+              "actual_norm": "86778554836/21369234375",
+              "claimed_bound": "197050761216/1953125"
+            },
+            {
+              "k": 4,
+              "actual_norm": "3098626658967488/296498126953125",
+              "claimed_bound": "214391228203008/9765625"
+            },
+            {
+              "k": 5,
+              "actual_norm": "5321091378714439754896/201581664062255859375",
+              "claimed_bound": "7697502657400799232/1220703125"
+            },
+            {
+              "k": 6,
+              "actual_norm": "185300220025293819239715968/2796945588863800048828125",
+              "claimed_bound": "343370198541334852141056/152587890625"
+            }
+          ]
+        },
+        {
+          "kappa": "2/3",
+          "site": 3,
+          "powers": [
+            {
+              "k": 1,
+              "actual_norm": "1088/861",
+              "claimed_bound": "1088/125"
+            },
+            {
+              "k": 2,
+              "actual_norm": "136352212/77621733",
+              "claimed_bound": "10653696/15625"
+            },
+            {
+              "k": 3,
+              "actual_norm": "86778554836/21369234375",
+              "claimed_bound": "197050761216/1953125"
+            },
+            {
+              "k": 4,
+              "actual_norm": "3098626658967488/296498126953125",
+              "claimed_bound": "214391228203008/9765625"
+            },
+            {
+              "k": 5,
+              "actual_norm": "5321091378714439754896/201581664062255859375",
+              "claimed_bound": "7697502657400799232/1220703125"
+            },
+            {
+              "k": 6,
+              "actual_norm": "185300220025293819239715968/2796945588863800048828125",
+              "claimed_bound": "343370198541334852141056/152587890625"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "norm_inequalities_checked": 96,
+  "one_uniform_window_example": {
+    "epsilon": "1/7",
+    "kappa": "2/3",
+    "R_kappa": "3083/224",
+    "R_0": "2187/224",
+    "K": 14,
+    "a": "793/360150",
+    "C": "814285810841683010541715667/15790581481472",
+    "t_max": "100294197248/4697802754855863522356051925",
+    "t_max_approx": 2.1349171619504743e-17
+  }
+}

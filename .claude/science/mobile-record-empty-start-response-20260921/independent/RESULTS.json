@@ -1,0 +1,164 @@
+{
+  "status": "all exact checks passed",
+  "finite_state_cases": [
+    {
+      "name": "path3_axes_j_half",
+      "states": 343,
+      "order": 6,
+      "first_hazard_noninvariant_level": 2,
+      "first_motion_distribution_order": 4,
+      "first_motion_population_order": 5,
+      "two_record_unnormalized_Dirichlet_energy": "14/5",
+      "population_Taylor_coefficients": [
+        {},
+        {
+          "0": "18"
+        },
+        {
+          "0": "-54"
+        },
+        {
+          "0": "108"
+        },
+        {
+          "0": "-649/4"
+        },
+        {
+          "0": "984/5",
+          "1": "7/150"
+        },
+        {
+          "0": "-99073/480",
+          "1": "-19/45",
+          "2": "-79/6750"
+        }
+      ],
+      "coefficient_convention": "entry k,h multiplies t^k kappa^h epsilon^(k-h)",
+      "triangles": 0,
+      "trace_W_cubed": "219",
+      "individual_state_t4_kappa_epsilon3": {
+        "(0,0,vacant)": "-1/40",
+        "(0,vacant,0)": "1/20"
+      }
+    },
+    {
+      "name": "triangle3_axes_j_half",
+      "states": 343,
+      "order": 6,
+      "first_hazard_noninvariant_level": null,
+      "first_motion_distribution_order": null,
+      "first_motion_population_order": null,
+      "two_record_unnormalized_Dirichlet_energy": "0",
+      "population_Taylor_coefficients": [
+        {},
+        {
+          "0": "18"
+        },
+        {
+          "0": "-54"
+        },
+        {
+          "0": "111"
+        },
+        {
+          "0": "-777/4"
+        },
+        {
+          "0": "5991/16"
+        },
+        {
+          "0": "-142327/160"
+        }
+      ],
+      "coefficient_convention": "entry k,h multiplies t^k kappa^h epsilon^(k-h)",
+      "triangles": 1,
+      "trace_W_cubed": "219"
+    },
+    {
+      "name": "path3_uniform",
+      "states": 343,
+      "order": 6,
+      "first_hazard_noninvariant_level": null,
+      "first_motion_distribution_order": null,
+      "first_motion_population_order": null,
+      "two_record_unnormalized_Dirichlet_energy": "0",
+      "population_Taylor_coefficients": [
+        {},
+        {
+          "0": "18"
+        },
+        {
+          "0": "-54"
+        },
+        {
+          "0": "108"
+        },
+        {
+          "0": "-162"
+        },
+        {
+          "0": "972/5"
+        },
+        {
+          "0": "-972/5"
+        }
+      ],
+      "coefficient_convention": "entry k,h multiplies t^k kappa^h epsilon^(k-h)",
+      "triangles": 0,
+      "trace_W_cubed": "216"
+    },
+    {
+      "name": "path4_general_unequal_proposals",
+      "states": 2401,
+      "order": 6,
+      "first_hazard_noninvariant_level": 2,
+      "first_motion_distribution_order": 4,
+      "first_motion_population_order": 5,
+      "two_record_unnormalized_Dirichlet_energy": "12223199/399000",
+      "population_Taylor_coefficients": [
+        {},
+        {
+          "0": "24"
+        },
+        {
+          "0": "-72"
+        },
+        {
+          "0": "144"
+        },
+        {
+          "0": "-13010641/60000"
+        },
+        {
+          "0": "213892673/800000",
+          "1": "12223199/23940000"
+        },
+        {
+          "0": "-21622890740881/72000000000",
+          "1": "-19083948037/3420000000",
+          "2": "-153429512623/382082400000"
+        }
+      ],
+      "coefficient_convention": "entry k,h multiplies t^k kappa^h epsilon^(k-h)",
+      "triangles": 0,
+      "trace_W_cubed": "219383/1000"
+    }
+  ],
+  "delayed_order_symbolic_construction": {
+    "graph": "4x4 rook graph",
+    "vertices": 16,
+    "degree": 6,
+    "pair_common_neighbor_count": 2,
+    "pair_hazard_checks": 4320,
+    "three_record_hazards": [
+      "159/2",
+      "81"
+    ],
+    "hop_rate": "4/13",
+    "one_edge_Dirichlet_contribution": "243/104",
+    "first_noninvariant_hazard_level": 3,
+    "distribution_order_from_proved_formula": 5,
+    "population_order_from_proved_formula": 6
+  },
+  "primary_calculations_read": false
+}

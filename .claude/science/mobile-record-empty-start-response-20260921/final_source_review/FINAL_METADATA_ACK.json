@@ -1,0 +1,20 @@
+{
+  "acknowledged_at_utc": "2026-09-21T01:21:31.056939+00:00",
+  "scope": "Metadata-only completion reference after the source-bound scientific review; not an audit or retention verdict.",
+  "final_sources_sha256": {
+    "docs/MOBILE_RECORDS_EMPTY_START_MOTION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-21.md": "c23adc34ea5b9b8a2ecd82d991f90c0c2d72c8b3c206269df929e89ee62164d5",
+    "scripts/mobile_records_empty_start_motion_response_2026_09_21.py": "56aeb1083d9a66a5dba5ad68b625f539e67fbd9fa458e835ca4fae60ee697156"
+  },
+  "sealed_reviewed_note_sha256": "a8e9d26399a8c810a7bb919edaaa9e9a5554f18139e601c790c2b23c24177a74",
+  "unchanged_report_sha256": "d7c29cbcb4455faf78e55416bad78c8009450b08d4fd126de50b9ac95bf49b5c",
+  "unchanged_review_seal_sha256": "5d95e5a33d59b5685fe66d860224d4f31bfb7f3f1c40f314e6615188e462fafd",
+  "only_change_verified_by_inverse_sha256": true,
+  "mathematical_source_unchanged": true,
+  "all_sealed_evidence_reverified_and_unchanged": true,
+  "metadata_replacement": {
+    "before": "Complete review of this final note and portable runner is pending before the\nmilestone PR is submitted. Standard finite Markov-generator calculus,\n",
+    "after": "The complete-source review is recorded in\n`.claude/science/mobile-record-empty-start-response-20260921/final_source_review/REPORT.md`\n(SHA-256 `d7c29cbcb4455faf78e55416bad78c8009450b08d4fd126de50b9ac95bf49b5c`).\nIts four narrow scope/evidence findings were corrected and confirmed; no\nunresolved mathematical finding remained. The runner reproduced 57/0 and\nall eight primary mutations failed in their intended families. A separate\nmetadata acknowledgment pins this completion reference without altering the\nsealed review. This remains scientific scrutiny, not an audit verdict.\nStandard finite Markov-generator calculus,\n"
+  },
+  "primary_mutation_statement": "Attributed to the primary author, who reported all eight expected-family failures; those runs are not independently repeated or certified by this acknowledgment.",
+  "unresolved_findings": []
+}

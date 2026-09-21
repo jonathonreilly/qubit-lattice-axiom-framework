@@ -1,0 +1,298 @@
+{
+  "status": "all checks passed",
+  "coefficient_convention": "Taylor coefficient in epsilon, not raw epsilon derivative",
+  "dependencies": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "mpmath": "1.3.0"
+  },
+  "full_generator_block_checks": 15,
+  "floating_absolute_tolerance": 2e-08,
+  "mpmath_decimal_precision": 70,
+  "cases": [
+    {
+      "name": "path3_axes",
+      "states": 343,
+      "two_record_classes": 36,
+      "pure_birth_coefficients_per_t_power": [
+        "0",
+        "18",
+        "-54",
+        "108",
+        "-649/4"
+      ],
+      "unnormalized_energy": "14/5",
+      "unnormalized_class_centered_hazard_variance": "15/8",
+      "coefficient_checks": [
+        {
+          "kappa": "1/10",
+          "time": "1/2",
+          "epsilon4_difference_block": 0.00014402423960646615,
+          "epsilon4_difference_semigroup": "0.00014402423961946724993724142353416745",
+          "absolute_discrepancy": 1.3001101931142678e-14,
+          "exact_two_mode_formula": "0.00014402423961946723796527651972751616055266349"
+        },
+        {
+          "kappa": "1/10",
+          "time": "1",
+          "epsilon4_difference_block": 0.004552116151899099,
+          "epsilon4_difference_semigroup": "0.0045521161510125262006678522770159329",
+          "absolute_discrepancy": 8.865729331231087e-13,
+          "exact_two_mode_formula": "0.00455211615101252581970788618938663496728640832"
+        },
+        {
+          "kappa": "1/10",
+          "time": "2",
+          "epsilon4_difference_block": 0.14215535709035976,
+          "epsilon4_difference_semigroup": "0.14215535704364818370411928853762741",
+          "absolute_discrepancy": 4.671157904923007e-11,
+          "exact_two_mode_formula": "0.142155357043648171649136968198250004546485931"
+        },
+        {
+          "kappa": "1",
+          "time": "1/2",
+          "epsilon4_difference_block": 0.0012935216824576656,
+          "epsilon4_difference_semigroup": "0.0012935216823237883981018788828523061",
+          "absolute_discrepancy": 1.338772842585101e-13,
+          "exact_two_mode_formula": "0.0012935216823237882842472921586337553841409854"
+        },
+        {
+          "kappa": "1",
+          "time": "1",
+          "epsilon4_difference_block": 0.03708500612410148,
+          "epsilon4_difference_semigroup": "0.037085006121348389869772067768488349",
+          "absolute_discrepancy": 2.7530963619959437e-12,
+          "exact_two_mode_formula": "0.0370850061213483864218932286534875759956136156",
+          "epsilon3_full_law_changes_but_population_does_not": true
+        },
+        {
+          "kappa": "1",
+          "time": "2",
+          "epsilon4_difference_block": 0.9770147268677647,
+          "epsilon4_difference_semigroup": "0.97701472692341228810996816172732965",
+          "absolute_discrepancy": 5.564759764098426e-11,
+          "exact_two_mode_formula": "0.977014726923412189041081952303568819765296103"
+        },
+        {
+          "kappa": "3",
+          "time": "1/2",
+          "epsilon4_difference_block": 0.003142439740999592,
+          "epsilon4_difference_semigroup": "0.00314243974119523020248103204685625",
+          "absolute_discrepancy": 1.9563821049284336e-13,
+          "exact_two_mode_formula": "0.00314243974119522989633586831864397724519310049"
+        },
+        {
+          "kappa": "3",
+          "time": "1",
+          "epsilon4_difference_block": 0.07750130001883804,
+          "epsilon4_difference_semigroup": "0.077501300022342240299085918808256467",
+          "absolute_discrepancy": 3.5041969326243816e-12,
+          "exact_two_mode_formula": "0.0775013000223422319213892711242073780551329795"
+        },
+        {
+          "kappa": "3",
+          "time": "2",
+          "epsilon4_difference_block": 1.6803430707095686,
+          "epsilon4_difference_semigroup": "1.6803430706775527306543610742441726",
+          "absolute_discrepancy": 3.2015723405720564e-11,
+          "exact_two_mode_formula": "1.68034307067755252716810869057216020598389641"
+        }
+      ],
+      "kappa_scan_time_one": [
+        {
+          "kappa": "0",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "1/10",
+          "coefficient": "0.0045521161510125262006678522770159329"
+        },
+        {
+          "kappa": "1/2",
+          "coefficient": "0.020696346917180614369630062125636897"
+        },
+        {
+          "kappa": "1",
+          "coefficient": "0.037085006121348389869772067768488349"
+        },
+        {
+          "kappa": "2",
+          "coefficient": "0.061063420432713268006873010107958103"
+        },
+        {
+          "kappa": "5",
+          "coefficient": "0.098178634474831928546229785416257597"
+        }
+      ]
+    },
+    {
+      "name": "path3_general_unequal_proposals",
+      "states": 343,
+      "two_record_classes": 36,
+      "pure_birth_coefficients_per_t_power": [
+        "0",
+        "18",
+        "-54",
+        "108",
+        "-19490641/120000"
+      ],
+      "unnormalized_energy": "10227559/1330000",
+      "unnormalized_class_centered_hazard_variance": "66557/20000",
+      "coefficient_checks": [
+        {
+          "kappa": "1/3",
+          "time": "1/2",
+          "epsilon4_difference_block": 0.0012507134067867298,
+          "epsilon4_difference_semigroup": "0.0012507134066584098621784600561195507",
+          "absolute_discrepancy": 1.283198807627839e-13
+        },
+        {
+          "kappa": "1/3",
+          "time": "1",
+          "epsilon4_difference_block": 0.03761033000250791,
+          "epsilon4_difference_semigroup": "0.037610330001281703390779004482445585",
+          "absolute_discrepancy": 1.2262066362289659e-12
+        },
+        {
+          "kappa": "2",
+          "time": "1/2",
+          "epsilon4_difference_block": 0.005648786712654896,
+          "epsilon4_difference_semigroup": "0.005648786712841274300454847397652544",
+          "absolute_discrepancy": 1.8637782289721017e-13
+        },
+        {
+          "kappa": "2",
+          "time": "1",
+          "epsilon4_difference_block": 0.13798387744259344,
+          "epsilon4_difference_semigroup": "0.13798387744459585071856149145618278",
+          "absolute_discrepancy": 2.0023982472139323e-12
+        }
+      ],
+      "kappa_scan_time_one": [
+        {
+          "kappa": "0",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "1/10",
+          "coefficient": "0.012319666914751110554227767205329274"
+        },
+        {
+          "kappa": "1/2",
+          "coefficient": "0.053167377263920350396377087870538602"
+        },
+        {
+          "kappa": "1",
+          "coefficient": "0.090380587405460388807277558362440703"
+        },
+        {
+          "kappa": "2",
+          "coefficient": "0.13798387744459585071856149145618278"
+        },
+        {
+          "kappa": "5",
+          "coefficient": "0.19890664009845677042774456167056082"
+        }
+      ]
+    },
+    {
+      "name": "path3_uniform",
+      "states": 343,
+      "two_record_classes": 36,
+      "pure_birth_coefficients_per_t_power": [
+        "0",
+        "18",
+        "-54",
+        "108",
+        "-162"
+      ],
+      "unnormalized_energy": "0",
+      "unnormalized_class_centered_hazard_variance": "0",
+      "coefficient_checks": [
+        {
+          "kappa": "1",
+          "time": "1",
+          "epsilon4_difference_block": 1.0231815394945443e-12,
+          "epsilon4_difference_semigroup": "0.0",
+          "absolute_discrepancy": 1.0231815394945443e-12
+        }
+      ],
+      "kappa_scan_time_one": [
+        {
+          "kappa": "0",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "1/10",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "1/2",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "1",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "2",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "5",
+          "coefficient": "0.0"
+        }
+      ]
+    },
+    {
+      "name": "triangle3_axes",
+      "states": 343,
+      "two_record_classes": 21,
+      "pure_birth_coefficients_per_t_power": [
+        "0",
+        "18",
+        "-54",
+        "111",
+        "-777/4"
+      ],
+      "unnormalized_energy": "0",
+      "unnormalized_class_centered_hazard_variance": "0",
+      "coefficient_checks": [
+        {
+          "kappa": "1",
+          "time": "1",
+          "epsilon4_difference_block": 3.353761712787673e-12,
+          "epsilon4_difference_semigroup": "0.0",
+          "absolute_discrepancy": 3.353761712787673e-12
+        }
+      ],
+      "kappa_scan_time_one": [
+        {
+          "kappa": "0",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "1/10",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "1/2",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "1",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "2",
+          "coefficient": "0.0"
+        },
+        {
+          "kappa": "5",
+          "coefficient": "0.0"
+        }
+      ]
+    }
+  ],
+  "new_primary_calculations_read": false
+}

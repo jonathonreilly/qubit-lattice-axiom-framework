@@ -1,0 +1,230 @@
+{
+  "source_sha256": "182ce88938e4f7471b6801972bfbc8630b9dc79fd29918d36af3c33399727aec",
+  "graphs": [
+    {
+      "dimension": 1,
+      "side": 6,
+      "counts": {
+        "(0, 0)": 2,
+        "(0, 1)": 2
+      }
+    },
+    {
+      "dimension": 1,
+      "side": 7,
+      "counts": {
+        "(0, 0)": 2,
+        "(0, 1)": 2
+      }
+    },
+    {
+      "dimension": 1,
+      "side": 8,
+      "counts": {
+        "(0, 0)": 2,
+        "(0, 1)": 2
+      }
+    },
+    {
+      "dimension": 2,
+      "side": 6,
+      "counts": {
+        "(0, 0)": 22,
+        "(0, 1)": 18
+      }
+    },
+    {
+      "dimension": 2,
+      "side": 7,
+      "counts": {
+        "(0, 0)": 22,
+        "(0, 1)": 18
+      }
+    },
+    {
+      "dimension": 2,
+      "side": 8,
+      "counts": {
+        "(0, 0)": 22,
+        "(0, 1)": 18
+      }
+    },
+    {
+      "dimension": 3,
+      "side": 6,
+      "counts": {
+        "(0, 0)": 74,
+        "(0, 1)": 34
+      }
+    },
+    {
+      "dimension": 3,
+      "side": 7,
+      "counts": {
+        "(0, 0)": 74,
+        "(0, 1)": 34
+      }
+    },
+    {
+      "dimension": 3,
+      "side": 8,
+      "counts": {
+        "(0, 0)": 74,
+        "(0, 1)": 34
+      }
+    }
+  ],
+  "menus": [
+    {
+      "dimension": 1,
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "D2_per_site": "0",
+      "density_t5_coefficient_per_kappa_epsilon4": "0"
+    },
+    {
+      "dimension": 2,
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "D2_per_site": "0",
+      "density_t5_coefficient_per_kappa_epsilon4": "0"
+    },
+    {
+      "dimension": 3,
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "D2_per_site": "0",
+      "density_t5_coefficient_per_kappa_epsilon4": "0"
+    },
+    {
+      "dimension": 1,
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "D2_per_site": "29/5",
+      "density_t5_coefficient_per_kappa_epsilon4": "29/300"
+    },
+    {
+      "dimension": 2,
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "D2_per_site": "582/5",
+      "density_t5_coefficient_per_kappa_epsilon4": "97/50"
+    },
+    {
+      "dimension": 3,
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "D2_per_site": "2379/5",
+      "density_t5_coefficient_per_kappa_epsilon4": "793/100"
+    },
+    {
+      "dimension": 1,
+      "raw_weights": [
+        1,
+        3,
+        2
+      ],
+      "D2_per_site": "29/5",
+      "density_t5_coefficient_per_kappa_epsilon4": "29/300"
+    },
+    {
+      "dimension": 2,
+      "raw_weights": [
+        1,
+        3,
+        2
+      ],
+      "D2_per_site": "582/5",
+      "density_t5_coefficient_per_kappa_epsilon4": "97/50"
+    },
+    {
+      "dimension": 3,
+      "raw_weights": [
+        1,
+        3,
+        2
+      ],
+      "D2_per_site": "2379/5",
+      "density_t5_coefficient_per_kappa_epsilon4": "793/100"
+    },
+    {
+      "dimension": 1,
+      "raw_weights": [
+        6,
+        1,
+        2
+      ],
+      "D2_per_site": "8433744/74375",
+      "density_t5_coefficient_per_kappa_epsilon4": "702812/371875"
+    },
+    {
+      "dimension": 2,
+      "raw_weights": [
+        6,
+        1,
+        2
+      ],
+      "D2_per_site": "167321184/74375",
+      "density_t5_coefficient_per_kappa_epsilon4": "13943432/371875"
+    },
+    {
+      "dimension": 3,
+      "raw_weights": [
+        6,
+        1,
+        2
+      ],
+      "D2_per_site": "38989872/4375",
+      "density_t5_coefficient_per_kappa_epsilon4": "3249156/21875"
+    },
+    {
+      "dimension": 1,
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "D2_per_site": "2199004624/2456223",
+      "density_t5_coefficient_per_kappa_epsilon4": "549751156/36843345"
+    },
+    {
+      "dimension": 2,
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "D2_per_site": "14438977824/818741",
+      "density_t5_coefficient_per_kappa_epsilon4": "1203248152/4093705"
+    },
+    {
+      "dimension": 3,
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "D2_per_site": "56057329808/818741",
+      "density_t5_coefficient_per_kappa_epsilon4": "14014332452/12281115"
+    }
+  ],
+  "non_axis_symmetric_D2_per_site": "92721/4375"
+}

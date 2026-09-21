@@ -1,0 +1,354 @@
+{
+  "reviewed_sources_sha256": {
+    "docs/MOBILE_RECORDS_EMPTY_START_MOTION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-21.md": "a8e9d26399a8c810a7bb919edaaa9e9a5554f18139e601c790c2b23c24177a74",
+    "scripts/mobile_records_empty_start_motion_response_2026_09_21.py": "56aeb1083d9a66a5dba5ad68b625f539e67fbd9fa458e835ca4fae60ee697156"
+  },
+  "prior_seals_reverified": {
+    "SEAL.json": "dc986eac439b4cacbeb17d31a4909a5bbb521d6c5c3306ddf0e54acd15ca5a26",
+    "POST_SEAL_GEOMETRY_REVIEW_SEAL.json": "7fc0bda5fdd0fd496148de00f62003356f7ce4b63735e7dc969fac81d9345e39",
+    "formation_intensity/SEAL.json": "2f25a82a241e45aa651b5794501c4c0e0da1cfb6f44e99e42698c2b90b0cd893"
+  },
+  "exact_lumping_cases": [
+    {
+      "side": 2,
+      "dimension": 2,
+      "g": "1/2",
+      "ordered_generator_rows": 12,
+      "weighted_norm": "8"
+    },
+    {
+      "side": 2,
+      "dimension": 2,
+      "g": "1",
+      "ordered_generator_rows": 12,
+      "weighted_norm": "8"
+    },
+    {
+      "side": 2,
+      "dimension": 2,
+      "g": "3/2",
+      "ordered_generator_rows": 12,
+      "weighted_norm": "8"
+    },
+    {
+      "side": 2,
+      "dimension": 2,
+      "g": "7/5",
+      "ordered_generator_rows": 12,
+      "weighted_norm": "8"
+    },
+    {
+      "side": 3,
+      "dimension": 1,
+      "g": "1/2",
+      "ordered_generator_rows": 6,
+      "weighted_norm": "3/2"
+    },
+    {
+      "side": 3,
+      "dimension": 1,
+      "g": "1",
+      "ordered_generator_rows": 6,
+      "weighted_norm": "3"
+    },
+    {
+      "side": 3,
+      "dimension": 1,
+      "g": "3/2",
+      "ordered_generator_rows": 6,
+      "weighted_norm": "9/2"
+    },
+    {
+      "side": 3,
+      "dimension": 1,
+      "g": "7/5",
+      "ordered_generator_rows": 6,
+      "weighted_norm": "21/5"
+    },
+    {
+      "side": 4,
+      "dimension": 1,
+      "g": "1/2",
+      "ordered_generator_rows": 12,
+      "weighted_norm": "8"
+    },
+    {
+      "side": 4,
+      "dimension": 1,
+      "g": "1",
+      "ordered_generator_rows": 12,
+      "weighted_norm": "8"
+    },
+    {
+      "side": 4,
+      "dimension": 1,
+      "g": "3/2",
+      "ordered_generator_rows": 12,
+      "weighted_norm": "8"
+    },
+    {
+      "side": 4,
+      "dimension": 1,
+      "g": "7/5",
+      "ordered_generator_rows": 12,
+      "weighted_norm": "8"
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "g": "1/2",
+      "ordered_generator_rows": 30,
+      "weighted_norm": "6"
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "g": "1",
+      "ordered_generator_rows": 30,
+      "weighted_norm": "6"
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "g": "3/2",
+      "ordered_generator_rows": 30,
+      "weighted_norm": "6"
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "g": "7/5",
+      "ordered_generator_rows": 30,
+      "weighted_norm": "6"
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "g": "1/2",
+      "ordered_generator_rows": 72,
+      "weighted_norm": "81"
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "g": "1",
+      "ordered_generator_rows": 72,
+      "weighted_norm": "90"
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "g": "3/2",
+      "ordered_generator_rows": 72,
+      "weighted_norm": "99"
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "g": "7/5",
+      "ordered_generator_rows": 72,
+      "weighted_norm": "486/5"
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "g": "1/2",
+      "ordered_generator_rows": 240,
+      "weighted_norm": "192"
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "g": "1",
+      "ordered_generator_rows": 240,
+      "weighted_norm": "192"
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "g": "3/2",
+      "ordered_generator_rows": 240,
+      "weighted_norm": "192"
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "g": "7/5",
+      "ordered_generator_rows": 240,
+      "weighted_norm": "192"
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "g": "1/2",
+      "ordered_generator_rows": 702,
+      "weighted_norm": "1377/2"
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "g": "1",
+      "ordered_generator_rows": 702,
+      "weighted_norm": "729"
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "g": "3/2",
+      "ordered_generator_rows": 702,
+      "weighted_norm": "1539/2"
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "g": "7/5",
+      "ordered_generator_rows": 702,
+      "weighted_norm": "3807/5"
+    }
+  ],
+  "exact_ordered_generator_rows_checked": 4296,
+  "full_content_semigroup_power_checks": [
+    {
+      "side": 4,
+      "dimension": 1,
+      "physical_content_states": 216,
+      "matrix_power_checks": [
+        {
+          "power": 1,
+          "full_minus_weighted_b_H_power_b": "1100672/433125"
+        },
+        {
+          "power": 2,
+          "full_minus_weighted_b_H_power_b": "-2318239184/300155625"
+        },
+        {
+          "power": 3,
+          "full_minus_weighted_b_H_power_b": "4891150496648/208007848125"
+        }
+      ]
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "physical_content_states": 1296,
+      "matrix_power_checks": [
+        {
+          "power": 1,
+          "full_minus_weighted_b_H_power_b": "275168/48125"
+        },
+        {
+          "power": 2,
+          "full_minus_weighted_b_H_power_b": "-1100672/48125"
+        },
+        {
+          "power": 3,
+          "full_minus_weighted_b_H_power_b": "4402688/48125"
+        }
+      ]
+    }
+  ],
+  "initial_moments": {
+    "exact_scalar_moment_assertions": 166,
+    "vector_scope_counterexample": {
+      "W": "J + u u^T/10, u=(2,-1,-1,0,0,0)",
+      "scalar_eigenfunction": "u",
+      "scalar_theta": "3/5",
+      "unit_vector_structure_effective_theta": "1/6"
+    }
+  },
+  "primary_relative_gate_reproduction": [
+    {
+      "side": 4,
+      "dimension": 1,
+      "g": 0.5,
+      "absolute_difference": 2.6020852139652106e-18
+    },
+    {
+      "side": 4,
+      "dimension": 1,
+      "g": 1.0,
+      "absolute_difference": 0.0
+    },
+    {
+      "side": 4,
+      "dimension": 1,
+      "g": 1.5,
+      "absolute_difference": 1.214306433183765e-17
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "g": 0.5,
+      "absolute_difference": 4.336808689942018e-18
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "g": 1.0,
+      "absolute_difference": 2.6020852139652106e-18
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "g": 1.5,
+      "absolute_difference": 2.6020852139652106e-18
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "g": 0.5,
+      "absolute_difference": 6.071532165918825e-18
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "g": 1.0,
+      "absolute_difference": 5.204170427930421e-18
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "g": 1.5,
+      "absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "g": 0.5,
+      "absolute_difference": 0.0
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "g": 1.0,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "g": 1.5,
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "g": 0.5,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "g": 1.0,
+      "absolute_difference": 2.7755575615628914e-16
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "g": 1.5,
+      "absolute_difference": 1.5265566588595902e-16
+    }
+  ],
+  "primary_relative_gate_max_absolute_difference": 2.7755575615628914e-16,
+  "python": "3.13.5",
+  "all_checks_passed": true
+}

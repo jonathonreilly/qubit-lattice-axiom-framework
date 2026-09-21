@@ -1,0 +1,109 @@
+{
+  "runner_sha256": "56aeb1083d9a66a5dba5ad68b625f539e67fbd9fa458e835ca4fae60ee697156",
+  "mutations": [
+    {
+      "name": "omit_birth_holding",
+      "expected_family": "startup",
+      "observed_families": [
+        "startup"
+      ],
+      "exit_code": 1,
+      "total": [
+        "TOTAL: PASS=41 FAIL=16"
+      ],
+      "elapsed_seconds": 0.843882457818836,
+      "detected_in_intended_family_only": true
+    },
+    {
+      "name": "double_time_coefficient",
+      "expected_family": "startup",
+      "observed_families": [
+        "startup"
+      ],
+      "exit_code": 1,
+      "total": [
+        "TOTAL: PASS=51 FAIL=6"
+      ],
+      "elapsed_seconds": 1.4492890001274645,
+      "detected_in_intended_family_only": true
+    },
+    {
+      "name": "reverse_correlation_sign",
+      "expected_family": "startup",
+      "observed_families": [
+        "startup"
+      ],
+      "exit_code": 1,
+      "total": [
+        "TOTAL: PASS=45 FAIL=12"
+      ],
+      "elapsed_seconds": 1.4167415839619935,
+      "detected_in_intended_family_only": true
+    },
+    {
+      "name": "omit_geometry_endpoint",
+      "expected_family": "geometry",
+      "observed_families": [
+        "geometry"
+      ],
+      "exit_code": 1,
+      "total": [
+        "TOTAL: PASS=48 FAIL=9"
+      ],
+      "elapsed_seconds": 1.4783455419819802,
+      "detected_in_intended_family_only": true
+    },
+    {
+      "name": "reverse_semigroup_drop",
+      "expected_family": "intensity",
+      "observed_families": [
+        "intensity"
+      ],
+      "exit_code": 1,
+      "total": [
+        "TOTAL: PASS=46 FAIL=11"
+      ],
+      "elapsed_seconds": 1.4976903339847922,
+      "detected_in_intended_family_only": true
+    },
+    {
+      "name": "omit_relative_endpoint",
+      "expected_family": "relative",
+      "observed_families": [
+        "relative"
+      ],
+      "exit_code": 1,
+      "total": [
+        "TOTAL: PASS=42 FAIL=15"
+      ],
+      "elapsed_seconds": 1.4732339999172837,
+      "detected_in_intended_family_only": true
+    },
+    {
+      "name": "omit_motion_rate_bound",
+      "expected_family": "remainder",
+      "observed_families": [
+        "remainder"
+      ],
+      "exit_code": 1,
+      "total": [
+        "TOTAL: PASS=56 FAIL=1"
+      ],
+      "elapsed_seconds": 1.4294744168873876,
+      "detected_in_intended_family_only": true
+    },
+    {
+      "name": "merge_rook_delayed_order",
+      "expected_family": "delayed",
+      "observed_families": [
+        "delayed"
+      ],
+      "exit_code": 1,
+      "total": [
+        "TOTAL: PASS=56 FAIL=1"
+      ],
+      "elapsed_seconds": 1.4178835828788579,
+      "detected_in_intended_family_only": true
+    }
+  ]
+}

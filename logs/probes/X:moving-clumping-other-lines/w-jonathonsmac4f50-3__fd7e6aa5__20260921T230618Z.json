@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-clumping-other-lines",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 4 1 3 neutral 0.3 24 3000 1",
+ "seed": 31978,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fd7e6aa5",
+ "started_utc": "20260921T230618Z",
+ "elapsed_s": 118.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=4.0 q=1.0 r=3.0 c=0.3529 rho=0.3 L=24 nbrs=1.813 nbrs_over_random=1.007 aligned=0.237 S=0.20 accept=0.456 records=4173 seconds=119"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The same map on other weight lines. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 64 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "fd58638804ba2f37d2b36b33b76fdbb0005f8be82601b0e42fec585d7c38c654",
+ "stdout_tail": "weights (4.0,1.0,3.0) scale c=0.3529 (neutral) rho=0.3 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=1.800 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 1.794 0.221 0.469 0.33\n     2 1.803 0.219 0.457 0.28\n     4 1.815 0.236 0.463 0.23\n     9 1.786 0.225 0.463 0.31\n    18 1.841 0.244 0.458 0.26\n    38 1.807 0.244 0.457 0.40\n    79 1.815 0.247 0.457 0.24\n   163 1.809 0.241 0.451 0.27\n   338 1.851 0.241 0.457 0.41\n   700 1.803 0.232 0.460 0.29\n  1449 1.780 0.229 0.449 0.37\n  3000 1.847 0.240 0.457 0.09\nSUMMARY: p=4.0 q=1.0 r=3.0 c=0.3529 rho=0.3 L=24 nbrs=1.813 nbrs_over_random=1.007 aligned=0.237 S=0.20 accept=0.456 records=4173 seconds=119\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T230817Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

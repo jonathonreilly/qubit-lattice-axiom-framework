@@ -31,3 +31,6 @@ Current source review found five further P2 groups, corrected in the canonical n
 
 ## 2026-09-21 decision record: addendum after blocks 47-49 (pack-only)
 The record now carries rows 10-13 (transparent bodies, the corrected capture law and the direction-dependent collisionless force, free bodies are carried, the attraction is tied to growth) and a revised recommendation: the record layer supplies the source (the record count) and, on the evidence of blocks 41-49, not the carrier; unless growing masses are acceptable (growth rate = 8 pi (1 - rho)/3 times the pull coefficient), the next work is the source link into the amplitude layer, without the parked statistical postulate.
+
+## 2026-09-21 decision record: second addendum, blocks 50-51 (pack-only) — a correction
+Row 14: inertia joined with the rule's weights by a clock (block 50). Row 15, a correction: the wind of a capturing body is not isotropic, with or without scattering (block 51); the executed force law of rows 7, 8 and 10 is an on-axis statement, row 7a's zero circulation fails for the executed flows, and row 11's sentence on collisions is withdrawn. The recommendation (source yes, carrier no) is strengthened.

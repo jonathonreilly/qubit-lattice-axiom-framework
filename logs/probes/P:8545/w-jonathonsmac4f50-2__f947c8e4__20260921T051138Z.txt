@@ -1,0 +1,22 @@
+PR #8545: Control mobile-record formation and derive its dilute spatial response
+branch codex/mobile-record-formation-20260920 (base main)
+runners in the PR: 2
+== scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py: rc=0 PASS=22 FAIL=0
+   mutation wrong_center: expected resolvent observed resolvent ok
+   mutation oversized_gap: expected gap observed gap,poisson MISMATCH
+   mutation omit_hazard_variance: expected error observed error ok
+   mutation omit_corrector: expected poisson observed poisson ok
+   mutation drop_wedges: expected dilution observed dilution ok
+   mutation drop_sink: expected vacancy observed vacancy ok
+   mutation dense_closure: expected orientation observed orientation ok
+   mutation wrong_birth_sign: expected spectrum observed spectrum ok
+HIT: scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py: mutation census mismatch: oversized_gap
+== scripts/mobile_records_rare_formation_event_law_2026_09_20.py: rc=0 PASS=15 FAIL=0
+   mutation motion_flat: expected motion observed motion ok
+   mutation birth_normalized: expected insertion observed content_law,event_sampling,insertion MISMATCH
+   mutation drop_multiplicity: expected insertion observed insertion ok
+   mutation merge_sectors: expected content_law observed content_law ok
+   mutation unbiased_events: expected event_sampling observed event_sampling ok
+   mutation killing_flat: expected resolvent observed resolvent ok
+   mutation allow_removal: expected vacancies observed vacancies ok
+HIT: scripts/mobile_records_rare_formation_event_law_2026_09_20.py: mutation census mismatch: birth_normalized

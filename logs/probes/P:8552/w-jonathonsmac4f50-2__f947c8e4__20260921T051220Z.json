@@ -1,0 +1,46 @@
+{
+ "task": "P:8552",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-lifetime-correlation-20260",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8552",
+ "pr": 8552,
+ "branch": "codex/mobile-record-lifetime-correlation-20260921",
+ "git_sha": "f947c8e4",
+ "started_utc": "20260921T051220Z",
+ "elapsed_s": 9.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=24 FAIL=0",
+    "census_mismatches": [
+     "omit_empty_neighbor_floor:",
+     "drop_birth_sink:",
+     "ignore_vacancy_killing:",
+     "omit_birth_competition:",
+     "miss_half_hop_acceptance:",
+     "radius_one_hops:",
+     "forget_product_start:",
+     "omit_search_ball:"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "521289151a3a342e29d5425fa1a86aef80f0f5776e5e25c964148664c7cae8d1",
+ "stdout_tail": "PR #8552: Bound mobile-record lifetime activity and terminal correlations\nbranch codex/mobile-record-lifetime-correlation-20260921 (base codex/mobile-record-formation-20260920)\nrunners in the PR: 1\n== scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py: rc=0 PASS=24 FAIL=0\n   mutation omit_empty_neighbor_floor:: expected ? observed ? MISMATCH\n   mutation drop_birth_sink:: expected ? observed ? MISMATCH\n   mutation ignore_vacancy_killing:: expected ? observed ? MISMATCH\n   mutation omit_birth_competition:: expected ? observed ? MISMATCH\n   mutation miss_half_hop_acceptance:: expected ? observed ? MISMATCH\n   mutation radius_one_hops:: expected ? observed ? MISMATCH\n   mutation forget_product_start:: expected ? observed ? MISMATCH\n   mutation omit_search_ball:: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py: mutation census mismatch: omit_empty_neighbor_floor: drop_birth_sink: ignore_vacancy_killing: omit_birth_competition: miss_half_hop_acceptance: radius_one_hops: forget_product_start: omit_search_ball:",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T051230Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+PR #8552: Bound mobile-record lifetime activity and terminal correlations
+branch codex/mobile-record-lifetime-correlation-20260921 (base codex/mobile-record-formation-20260920)
+runners in the PR: 1
+== scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py: rc=0 PASS=24 FAIL=0
+   mutation omit_empty_neighbor_floor:: expected ? observed ? MISMATCH
+   mutation drop_birth_sink:: expected ? observed ? MISMATCH
+   mutation ignore_vacancy_killing:: expected ? observed ? MISMATCH
+   mutation omit_birth_competition:: expected ? observed ? MISMATCH
+   mutation miss_half_hop_acceptance:: expected ? observed ? MISMATCH
+   mutation radius_one_hops:: expected ? observed ? MISMATCH
+   mutation forget_product_start:: expected ? observed ? MISMATCH
+   mutation omit_search_ball:: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py: mutation census mismatch: omit_empty_neighbor_floor: drop_birth_sink: ignore_vacancy_killing: omit_birth_competition: miss_half_hop_acceptance: radius_one_hops: forget_product_start: omit_search_ball:

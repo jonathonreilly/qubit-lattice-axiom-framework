@@ -1,0 +1,32 @@
+{
+ "task": "S:tight-sibling-violation-B",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/violate.py 55 1800 5 5 8 B",
+ "seed": 55,
+ "minutes": 30.0,
+ "box": "5x5x8",
+ "git_sha": "c75d3508",
+ "started_utc": "20260921T081825Z",
+ "elapsed_s": 1805.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "(0, 0)"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "as S:tight-sibling-violation, seeded from Z_B.",
+ "stdout_sha256": "a56749dd0152b3953151afd5a73fcca8ab9a5f81f4eadef172626bcf4002ec4b",
+ "stdout_tail": "seed 55 5x5x8 from Z_B: start (unrooted, rooted) max cost = (0, 0) at ((4, 4, 3), 0, 0, (8, 8, 1, 0))\nseed 55: done best=(0, 0)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-4",
+  "at_utc": "20260921T084831Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

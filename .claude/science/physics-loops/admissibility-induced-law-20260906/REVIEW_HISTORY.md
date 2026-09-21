@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 62 — author checks (not a review PASS)
+Written lens pass by the supervisor. One expectation was broken by the refuting pass (the walk's stationary states do not have a divergence-free symmetric frame response on the lattice; the defect scales as `(12/L)³`); one test was redone over the right index with the same conclusion; the memo's Qubit wording was corrected in the note. Control and refuting pass W1–W6 (6/0). Census 11/11 in family.

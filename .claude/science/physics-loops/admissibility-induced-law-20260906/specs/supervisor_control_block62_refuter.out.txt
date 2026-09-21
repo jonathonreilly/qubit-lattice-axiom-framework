@@ -1,0 +1,24 @@
+[W1] tilted frame, 6^3 torus: |H - H^dagger| = 0.0e+00
+     spectrum against +-sqrt(g^ij s_i s_j): max difference 1.75e-14  (off-diagonal g: -0.094, -0.255, -0.215)
+
+[W2] group velocity in the sheared frame at k = (0.4, 0.7, -0.3): numerical gradient of the energy against g^ij s_j cos k_i / energy:
+     numerical [ 0.220119  0.941718 -0.60735 ], formula [ 0.220119  0.941718 -0.60735 ]; in the identity frame it would be [ 0.443524  0.60928  -0.349105]: the tilt turns the walker
+
+[W3] stationary superpositions (identity frame), two plane waves of equal energy, mode numbers (1,2,3) and (3,1,2):
+     L = 12: oscillating stress 0.904; divergence of its symmetric part 1.61e-01 (relative 1.8e-01, x L^3/12^3 = 0.178); bond current of the momentum density 1.1e-14
+     L = 24: oscillating stress 0.610; divergence of its symmetric part 1.36e-02 (relative 2.2e-02, x L^3/12^3 = 0.178); bond current of the momentum density 5.8e-15
+     L = 48: oscillating stress 0.327; divergence of its symmetric part 9.11e-04 (relative 2.8e-03, x L^3/12^3 = 0.178); bond current of the momentum density 6.1e-15
+     (the frame response is divergence-free only up to terms of second order in the wave vector; what is conserved exactly is a bond current)
+
+[W4] two travelling disturbances, alpha = 1/4, beta = 1, K = 1: generalized eigenvalues X/p^2 at random directions (constraint imposed by projection):
+     p = [ 1.635  0.273 -1.233]: X/p^2 = [-0. -0. -0.  1.  1.]
+     p = [-0.958  1.6    0.203]: X/p^2 = [-0.  0.  0.  1.  1.]
+     p = [-1.732 -0.084 -1.163]: X/p^2 = [-0. -0.  0.  1.  1.]
+     p = [-0.629 -0.488 -0.713]: X/p^2 = [-0.  0.  0.  1.  1.]
+     (two values equal to 1/(4 alpha) = 1, the rest zero)
+
+[W5] static responses to divergence-free stresses at 300 random directions (100 of them with one component below 1/100):
+     largest |response| x p^2 / |stress| = 1.131: bounded, direction by direction (block 61's three-length response grows like p_1^2/(p_2^2 p_3^2))
+
+[W6] relabelling invariance of R_1 in real space, staggered placement, 5x4x3 torus, random integer xi on the bonds:
+     max |d_i d_j h_ij - Lap h| over all sites for a pure relabelling: 0  (integers: exactly zero)

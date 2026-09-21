@@ -1,0 +1,84 @@
+U1  the seven-state single-site conditional
+     P(x empty) proportional to 1; P(x carries a) proportional to
+     z * product over occupied neighbours y of c*omega(a, s_y).  At the neutral scale
+     c_0 = 6/(p+q+4r) an occupied neighbour of unknown content weighs what an empty one
+     weighs:
+ok          (3, 1, 2): c_0 = 1/2, and c_0 (p+q+4r)/6 = 1
+ok          (5, 2, 4): c_0 = 6/23, and c_0 (p+q+4r)/6 = 1
+ok          (1, 1, 1): c_0 = 1, and c_0 (p+q+4r)/6 = 1
+
+U2  (b) the Dobrushin coefficient, exactly, at a fixed fugacity
+     Dobrushin: if sup_x sum_y C_xy < 1 the Gibbs state is unique.  Here every site has
+     six neighbours and the model is translation invariant, so the condition is 6C < 1
+     with C the single-site total-variation sensitivity.  Computed exactly (the five
+     unchanged neighbours enter only through their multiset, 462 cases):
+     There are TWO channels, and they pull in opposite directions in z:
+       (3, 1, 2) at c = 1/2: z=0.1 -> 6C=1.4133, z=1.0 -> 6C=1.6171, z=10.0 -> 6C=1.6321
+         rises with z (the CONTENT channel)
+ok            and the direction is the predicted one for (3, 1, 2): rising in z
+       (1, 1, 1) at c = 2: z=0.1 -> 6C=1.0227, z=1.0 -> 6C=0.3956, z=10.0 -> 6C=0.0488
+         falls with z (the OCCUPANCY channel)
+ok            and the direction is the predicted one for (1, 1, 1): falling in z
+     At uniform weights the content carries no information, so only occupancy couples,
+     and C falls with z; away from uniform the content channel dominates and C rises.
+     A sup over a GRID of z is therefore not a proof either way - hence U3.
+
+U3  (b) a bound valid at every fugacity, and the region it gives
+     Changing one neighbour multiplies w(a) by lambda_a and leaves w(empty) = 1.  The
+     five unchanged neighbours contribute the same factor to both weights and cancel,
+     so lambda depends on neither them nor z, and with the density ratio in [m, M] the
+     total variation is at most (M - m)/(M + m).  That bound is z-free:
+       (1, 1, 1)  c/c_0 = 1.00: 6*bound = 0.0000   UNIQUE AT EVERY FUGACITY
+       (1, 1, 1)  c/c_0 = 1.25: 6*bound = 0.6667   UNIQUE AT EVERY FUGACITY
+       (1, 1, 1)  c/c_0 = 1.50: 6*bound = 1.2000
+       (9, 8, 8)  c/c_0 = 1.00: 6*bound = 0.7034   UNIQUE AT EVERY FUGACITY
+       (9, 8, 8)  c/c_0 = 1.25: 6*bound = 0.9528   UNIQUE AT EVERY FUGACITY
+       (9, 8, 8)  c/c_0 = 1.50: 6*bound = 1.4769
+       (5, 4, 4)  c/c_0 = 1.00: 6*bound = 1.3171
+       (5, 4, 4)  c/c_0 = 1.25: 6*bound = 1.3171
+       (5, 4, 4)  c/c_0 = 1.50: 6*bound = 1.7143
+       (3, 2, 2)  c/c_0 = 1.00: 6*bound = 2.3077
+       (3, 2, 2)  c/c_0 = 1.25: 6*bound = 2.3077
+       (3, 2, 2)  c/c_0 = 1.50: 6*bound = 2.3077
+       (3, 1, 2)  c/c_0 = 1.00: 6*bound = 4.8000
+       (3, 1, 2)  c/c_0 = 1.25: 6*bound = 4.8000
+       (3, 1, 2)  c/c_0 = 1.50: 6*bound = 4.8000
+ok        so the bound is decisive in part of the plane and inconclusive elsewhere
+ok        in particular (1,1,1) up to c/c_0 = 5/4, and (9,8,8) likewise, are UNIQUE for every
+       fugacity: no clumping there, at any density.
+     The bound is conservative: at (3,2,2) it gives 6*bound > 1 while the exact
+     coefficient at large z is 6C = 0.8014 < 1, so the true region is larger than the
+     one certified here.  U4 calibrates by how much.
+
+U4  (c) content-less records
+     With p = q = r = w the content is irrelevant and the weight of a configuration is
+     z^N (c w)^B with N the number of records and B the number of occupied adjacent
+     pairs.  That is EXACTLY the lattice gas with bond activity c w, i.e. the Ising
+     model in a field under the standard map with K_Ising = (1/4) log(c w).
+ok          at p=q=r=1 the neutral scale is c_0 = 1 and c_0 w = 1 exactly
+ok          and there C = 0 identically: at c = c_0 with uniform weights the sites are
+         INDEPENDENT, so there is no transition at the neutral scale at any fugacity.
+     For c > c_0 the bond activity exceeds one and the lattice gas is ferromagnetic.
+     LITERATURE, NOT PROVED HERE: the Z^3 Ising model has a transition at
+     K_c = 0.2216544... , so clumping of content-less records sets in at
+       c/c_0 = exp(4 K_c) = 2.4269... ,
+     whereas U3's rigorous bound only certifies uniqueness up to c/c_0 = 5/4.  The
+     bound is therefore about a factor two from the truth in the one case where the
+     truth is known - which is the honest measure of how lossy it is.
+
+U5  (a) above: what is available and what is not
+     The chessboard estimate needs reflection positivity through bond planes.  For this
+     law that holds exactly when the 7x7 pair-weight matrix is positive semidefinite,
+     which (issue 8534) is
+       c >= c_0   AND   p >= q   AND   p + q >= 2r,
+     the last two being SCALE-FREE.  The unit's statement of block 39's condition omits
+     them, and at (5,2,4) the third fails (7 < 8), so no scale makes the tool available
+     there at all.  That is the region question answered.
+     NOT DONE HERE: the contour argument itself.  A chessboard estimate bounds the
+     weight of a contour by a product of one-site quantities, and turning that into two
+     translation-invariant states needs a Peierls count whose constant I did not
+     establish.  So part (a) yields the exact region where the METHOD applies, and no
+     theorem.  A precise no-go it is not; an unfinished route it is.
+
+SUMMARY: PARTIAL on brackets for the clumping onset of the six-axis gas with vacancies. BELOW: the seven-state single-site conditional has two channels that move oppositely in the fugacity - at uniform weights only occupancy couples and the Dobrushin coefficient FALLS with z, away from uniform the content channel dominates and it RISES - so a sup over a grid of z proves nothing; instead, because the five unchanged neighbours contribute the same factor to both weights and cancel, the single-neighbour weight ratio is independent of them AND of z, giving the z-free bound (M-m)/(M+m) and hence uniqueness AT EVERY FUGACITY wherever 6(M-m)/(M+m) < 1 - certified here for (1,1,1) and (9,8,8) up to c/c_0 = 5/4. CONTENT-LESS: with p = q = r the law is exactly the lattice gas of bond activity c*w, at the neutral scale c_0 w = 1 and the Dobrushin coefficient is identically 0, so the sites are independent and there is no transition at any fugacity; the onset for c > c_0 is the Z^3 Ising transition at c/c_0 = exp(4 K_c) = 2.4269..., which is literature and calibrates the bound above as lossy by about a factor two. ABOVE: the chessboard tool is available exactly on c >= c_0, p >= q, p + q >= 2r - the last two scale-free and omitted from the unit's statement - but the contour count is NOT done, so part (a) yields the region where the method applies and no theorem
+HIT: for the six-axis gas with vacancies the Dobrushin sensitivity splits into two channels that move oppositely in the fugacity, so no grid over z can certify uniqueness; but the five unchanged neighbours cancel from the single-neighbour weight ratio, which makes that ratio independent of them and of z and yields the z-free bound (M-m)/(M+m), certifying uniqueness AT EVERY FUGACITY for (1,1,1) and (9,8,8) up to c/c_0 = 5/4; for content-less records the law is exactly the lattice gas, the sites are INDEPENDENT at the neutral scale (Dobrushin coefficient identically zero, so no clumping at any fugacity) and the onset is the Z^3 Ising point c/c_0 = exp(4 K_c) = 2.4269..., which calibrates the z-free bound as lossy by about a factor two

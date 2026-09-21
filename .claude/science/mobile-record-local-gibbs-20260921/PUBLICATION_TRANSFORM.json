@@ -1,0 +1,25 @@
+{
+  "note": "docs/MOBILE_RECORDS_LOCAL_GIBBS_CIRCULATIONS_AND_WINDING_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "source": "LOCAL_GIBBS_RECORD_CIRCULATIONS.md",
+      "source_sha256": "70a9abf1588e90e8a7065a5e1d6155f8f56997672b0303c0ea6cbca71fc1bf12",
+      "published_body_sha256": "8ce971c9b89d99d75de439c3efe29f0f668843a7323348301a6cb3a1186a79e7",
+      "replacement": {
+        "old": "independent check pending.",
+        "new": "selective independent check complete."
+      },
+      "change": "Remove source title; increase section headings one level; update only stated review-status phrase."
+    },
+    {
+      "source": "GIBBS_TRANSPORT_COUNTERCONTROL_1D.md",
+      "source_sha256": "28949032a1b110e642a8d3765dd880a4d8487be02cc70b3b095275d7cde59069",
+      "published_body_sha256": "e250ffdbea7cef0ba05353d12cf2e77c864b8fa309ae64967d2c5b7e8e36ff4d",
+      "replacement": {
+        "old": "Independent checking pending.",
+        "new": "Selective independent checking complete."
+      },
+      "change": "Remove source title; increase section headings one level; update only stated review-status phrase."
+    }
+  ]
+}

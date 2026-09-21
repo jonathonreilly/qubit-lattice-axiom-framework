@@ -1,0 +1,13 @@
+PASS: local_energy_and_orbit_invariants
+PASS: strict_positive_rates
+PASS: whole_generator_Gibbs_stationarity
+PASS: all_label_counts_conserved
+PASS: clockwise_and_reverse_orbit_flows_constant
+PASS: full_generator_nonreversible_witness
+PASS: exterior_energy_cancels_without_global_clock
+PASS: polar_axial_full_cubic_rate_covariance
+PASS: orientation_choice_independent
+PASS: closed_local_cycle_content_transport_cancels
+PASS: same_count_arrangements_have_nonuniform_Gibbs_weights
+PASS: birth_only_vacancy_Lyapunov_identity
+TOTAL: 12 PASS

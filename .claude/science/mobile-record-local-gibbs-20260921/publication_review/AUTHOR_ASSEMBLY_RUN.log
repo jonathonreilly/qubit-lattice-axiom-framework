@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-21T10:41:53.713874+00:00",
+  "scope": "Author assembly verification only. Known independent mathematical review reused at exact hashes; no new independent review or audit verdict.",
+  "source_bodies": 2,
+  "capsules": 1,
+  "bundled_members": 40,
+  "bundled_bindings": 29,
+  "seal_rows": 44,
+  "external_pdf_exclusions": 2,
+  "author_controls": 18,
+  "substantive_mutation_rejections": 6,
+  "old_manifest_entries_unchanged": 6026,
+  "graph_delta": {
+    "nodes": 1,
+    "edges": 1
+  },
+  "all_passed": true
+}

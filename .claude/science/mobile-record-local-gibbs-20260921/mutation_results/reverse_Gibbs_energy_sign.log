@@ -1,0 +1,2 @@
+PASS: declared_sources_and_conditional_scope
+FAIL: local_gibbs_record_circulation_check.py AssertionError: ('whole_generator_Gibbs_stationarity', {'configurations': 4096, 'residual': 0.004917046261546778})

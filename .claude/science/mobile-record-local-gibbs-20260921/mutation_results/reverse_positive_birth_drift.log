@@ -1,0 +1,2 @@
+PASS: declared_sources_and_conditional_scope
+FAIL: local_gibbs_record_circulation_check.py AssertionError: ('birth_only_vacancy_Lyapunov_identity', {'stationary_vacancy_must_be_zero': True})

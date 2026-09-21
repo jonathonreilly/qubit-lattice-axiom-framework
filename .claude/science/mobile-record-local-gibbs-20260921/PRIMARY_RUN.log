@@ -1,0 +1,4 @@
+PASS: declared_sources_and_conditional_scope
+PASS: local_gibbs_record_circulation_check.py: 12 declared controls
+PASS: gibbs_transport_1d_check.py: 5 declared controls
+TOTAL: PASS=18 FAIL=0

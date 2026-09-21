@@ -1,0 +1,5 @@
+{
+  "findings": 6,
+  "reason": "Three byte-preserved blank context lines in the historical correction diff and three intentional Markdown two-space metadata hard breaks. No claim that git diff --check passed.",
+  "full_check_output": ".claude/science/mobile-record-local-gibbs-20260921/author_development/CORRECTIONS.diff:6: trailing whitespace.\n+ \n.claude/science/mobile-record-local-gibbs-20260921/author_development/CORRECTIONS.diff:11: trailing whitespace.\n+ \n.claude/science/mobile-record-local-gibbs-20260921/author_development/CORRECTIONS.diff:17: trailing whitespace.\n+ \ndocs/MOBILE_RECORDS_LOCAL_GIBBS_CIRCULATIONS_AND_WINDING_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-21.md:12: trailing whitespace.\n+**Date:** 2026-09-21  \ndocs/MOBILE_RECORDS_LOCAL_GIBBS_CIRCULATIONS_AND_WINDING_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-21.md:13: trailing whitespace.\n+**Type:** bounded_theorem  \ndocs/MOBILE_RECORDS_LOCAL_GIBBS_CIRCULATIONS_AND_WINDING_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-21.md:14: trailing whitespace.\n+**Status:** proposed_retained  \n"
+}

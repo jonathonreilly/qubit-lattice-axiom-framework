@@ -1,0 +1,131 @@
+# A correlated Gibbs state and nonzero immutable-record transport coexist
+
+2026-09-21. Reconstructed established one-dimensional comparison, with an
+explicit finite-word stationarity certificate and a fine-label lift.
+Independent checking pending. No new universal obstruction is inferred from
+the zero-current local-circulation construction.
+
+## 1. Local record exchange and the Gibbs family
+
+Take a ring with N>=4 and two permanent record classes, encoded by
+sigma_x in {0,1}. Both values can be occupied records; zero in this section
+is a class indicator, not an assertion of an observable vacant-site state.
+Use the supplied dimensionless energy and chemical potential
+
+    H=-J sum_x sigma_x sigma_(x+1),
+    pi_mu=Z^-1 exp[-H+mu sum_x sigma_x], z=exp(J)>0.
+
+Only adjacent patterns10 exchange to01 clockwise. With exterior bits
+a=sigma_(x-1),d=sigma_(x+2), the rate is
+
+    r00=r11=kappa,
+    r01=2kappa z/(1+z), r10=2kappa/(1+z), kappa>0.       (1)
+
+This exchanges entire records, preserving every record's content and
+one-record capacity. The rule is local and strictly positive on allowed
+clockwise exchanges. It explicitly selects a spatial direction. It is the
+totally asymmetric heat-bath Kawasaki/KLS example, not a new method: see
+Luck and Godreche, [arXiv:cond-mat/0604274v2](https://arxiv.org/abs/cond-mat/0604274v2),
+Section2, equations(2.20)-(2.30). Their spin coupling equals J/4 in this
+binary-variable convention, up to a count-dependent energy term. Their
+time normalization is recovered by kappa=1/2.
+
+## 2. A pointwise certificate valid for every ring size
+
+Divide the master-equation stationarity residual at a configuration by
+pi_mu. A word(a,b,c,d) contributes
+
+    F(a,b,c,d)=1_(b=0,c=1) r_ad z^(a-d)
+                     -1_(b=1,c=0) r_ad.                 (2)
+
+The incoming predecessor has10 where the current word has01, and its
+Gibbs ratio is z^(a-d); all chemical-potential terms cancel.
+Define h on length-three binary words by the following table:
+
+| word | h/kappa |
+|---|---|
+|000,001,100|0|
+|010|-1|
+|011,110,111|-2/(1+z)|
+|101|(z-1)/(1+z)|
+
+Substitution of the sixteen words gives the rational identity
+
+    F(a,b,c,d)=h(a,b,c)-h(b,c,d).                         (3)
+
+The sum of (3) telescopes around any ring. Thus pi_mu is stationary for
+all N>=4 and all mu,J, including after conditioning on particle counts.
+The sixteen-word certificate proves all sizes; exhaustive finite rings
+are separate controls, not the proof's quantifier.
+
+## 3. Positive current and genuinely correlated thermodynamic state
+
+The class1 clockwise current per bond is
+
+    j_N=E_pi[1_(sigma_0=1,sigma_1=0) r_(sigma_-1,sigma_2)].
+
+For finite mu,J all configurations have positive weight and allowed10
+words have positive rates, so j_N>0. The current reverses for class0.
+This does not contradict the local-cycle cancellation: the full
+configuration-space flow here contains cycles with spatial winding.
+
+The positive transfer matrix
+
+    T_ab=exp[J a b+mu(a+b)/2], a,b in {0,1}
+
+has a simple largest eigenvalue Lambda and normalized strictly positive
+eigenvector v. In the infinite-ring limit,
+
+    P(a,b,c,d)=v_a T_ab T_bc T_cd v_d/Lambda^3,
+    rho=v_1^2,
+    j=sum_(a,d) P(a,1,0,d) r_ad >0.                      (4)
+
+The associated two-state transition matrix is
+P_ab=T_ab v_b/(Lambda v_a). Its second eigenvalue is
+u=Lambda_2/Lambda with |u|<1. Every centered single-site binary function
+is a multiple of sigma-rho, hence
+
+    Cov(sigma_0,sigma_r)=rho(1-rho) u^r, r>=0.            (5)
+
+For J!=0, det T=exp(mu)(exp(J)-1)!=0, so u!=0 and the
+nearest-neighbor covariance is nonzero. This is a supplied correlated
+stationary law with nonzero transport, not a critical or long-range phase.
+At J=0 it reduces to independent Bernoulli labels with
+j=kappa rho(1-rho). The dependence of stationary current on density is
+an input to a possible Euler closure; no hydrodynamic theorem is proved here.
+
+## 4. Lift to finitely many immutable record contents
+
+Partition any finite label menu into nonempty classes A and B and set
+sigma(label)=1_A. Use H above with this class indicator and arbitrary
+finite chemical potentials lambda_a for every actual label. In a
+cross-class exchange the product of chemical weights cancels, and the
+stationarity residual is still exactly(2). Thus the same calculation
+preserves the fine-label Gibbs measure
+
+    pi_lambda(eta) proportional exp[-H(sigma(eta))
+                                      +sum_a lambda_a N_a].
+
+Symmetric whole-record swaps within the same class can be added; their
+energy difference vanishes and they obey detailed balance. Fine label
+counts remain conserved. No claim about tagged-record mixing is required
+for the invariance calculation. If vacancy is one extra label assigned to
+one class, conservative invariance remains true as bookkeeping. Positive
+permanent births change this invariant law until full occupancy, exactly
+as in the vacancy Lyapunov argument of the local-circulation note.
+
+For the fully occupied fourteen-label restriction of the transverse menu,
+the rotation-invariant partition A=six axis labels and B=eight cube labels
+preserves label-orbit symmetry,
+but the selected chain direction still breaks three-dimensional cubic
+symmetry. With equal chemical potentials within each orbit, raw vectors
+have zero conditional means given the class configuration. Distinct-site
+raw vector covariances in this grand Gibbs law therefore vanish, despite
+nonzero correlations of the scalar class indicator. This particular lift
+does not supply the desired correlated transverse field state.
+
+The next problem is consequently narrower than "Gibbs invariance versus
+transport": obtain a three-dimensional cubic-covariant, permanently labeled
+model whose invariant correlations and transport both act on the needed
+vector observables, then derive its collective limit. The one-dimensional
+countercontrol keeps that route open without claiming it has been solved.

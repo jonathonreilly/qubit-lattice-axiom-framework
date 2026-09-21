@@ -1,0 +1,25 @@
+--- LOCAL_GIBBS_RECORD_CIRCULATIONS.md.before
++++ LOCAL_GIBBS_RECORD_CIRCULATIONS.md
+@@ -52,7 +52,7 @@
+     L_S f=r_S,+ [f(R eta)-f(eta)]
+             +r_S,- [f(R^-1 eta)-f(eta)].                 (1)
+ 
+-Self transitions contribute zero and can be omitted. These are positive
++Self transitions contribute zero and can be omitted. These are nonnegative
+ bounded local rates, independent of global volume or normalizing constants.
+ For any finite chemical potentials lambda_a, the grand Gibbs law is
+ 
+--- GIBBS_TRANSPORT_COUNTERCONTROL_1D.md.before
++++ GIBBS_TRANSPORT_COUNTERCONTROL_1D.md
+@@ -114,8 +114,9 @@
+ permanent births change this invariant law until full occupancy, exactly
+ as in the vacancy Lyapunov argument of the local-circulation note.
+ 
+-For the fifteen-label transverse menu, the rotation-invariant partition
+-A=six axis labels and B=eight cube labels preserves label-orbit symmetry,
++For the fully occupied fourteen-label restriction of the transverse menu,
++the rotation-invariant partition A=six axis labels and B=eight cube labels
++preserves label-orbit symmetry,
+ but the selected chain direction still breaks three-dimensional cubic
+ symmetry. With equal chemical potentials within each orbit, raw vectors
+ have zero conditional means given the class configuration. Distinct-site

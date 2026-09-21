@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-09-21T10:35:18.613466+00:00",
+  "runs": [
+    {
+      "mutation": null,
+      "returncode": 0,
+      "result": "PRIMARY_RESULTS.json",
+      "result_sha256": "d1b11df5464c907c1805b5cb7999c656658baf8f7fae3febe77f0b8de28944ea",
+      "log": "PRIMARY_RUN.log",
+      "log_sha256": "52f25c25de5a16020bde402b0be2d4e79e9544e217e8f79af9186d88890ea52e"
+    },
+    {
+      "mutation": "break_cycle_amplitude_invariance",
+      "returncode": 1,
+      "result": "mutation_results/break_cycle_amplitude_invariance.json",
+      "result_sha256": "6e342939a92ce574bc18b6d8c0850fca6b08457fa891925a3a3d804dd30dd789",
+      "log": "mutation_results/break_cycle_amplitude_invariance.log",
+      "log_sha256": "c970a461ebe87ac4b04384cceadcfb5f9243cd11664d99eeca28586aad4f5ece"
+    },
+    {
+      "mutation": "drop_Perron_normalization",
+      "returncode": 1,
+      "result": "mutation_results/drop_Perron_normalization.json",
+      "result_sha256": "1b04a2004845de4b96c1e8fc0741659fa49d96b0ccc1acdfb5ea1f7e101a5bcc",
+      "log": "mutation_results/drop_Perron_normalization.log",
+      "log_sha256": "49c1b2ae1b7573288bb695f9fad4fcb79dd1706fa4ae14efdf664607ea5a3140"
+    },
+    {
+      "mutation": "halve_KLS_environment_rate",
+      "returncode": 1,
+      "result": "mutation_results/halve_KLS_environment_rate.json",
+      "result_sha256": "fbe45d3cb2d19ee1282239c6f89a996b5d984f041c4b7f4b6ee40f6227865a75",
+      "log": "mutation_results/halve_KLS_environment_rate.log",
+      "log_sha256": "c19d01382c13202d6321c6a9430925674b768c490979a751b3361298bb9d01f0"
+    },
+    {
+      "mutation": "reverse_Gibbs_energy_sign",
+      "returncode": 1,
+      "result": "mutation_results/reverse_Gibbs_energy_sign.json",
+      "result_sha256": "560d0dcc0e7de225e6b4901f2b3e605741395586a00552d87e833eeb4a5a45bb",
+      "log": "mutation_results/reverse_Gibbs_energy_sign.log",
+      "log_sha256": "5f8e86316411345fea1580cfe931a236d602ba99851d0697eb8a87b77aa90ba3"
+    },
+    {
+      "mutation": "reverse_incoming_Gibbs_ratio",
+      "returncode": 1,
+      "result": "mutation_results/reverse_incoming_Gibbs_ratio.json",
+      "result_sha256": "609c68a95501213253cf44b7dfaefd19185a73dc884660e92637f75c141dba42",
+      "log": "mutation_results/reverse_incoming_Gibbs_ratio.log",
+      "log_sha256": "c19d01382c13202d6321c6a9430925674b768c490979a751b3361298bb9d01f0"
+    },
+    {
+      "mutation": "reverse_positive_birth_drift",
+      "returncode": 1,
+      "result": "mutation_results/reverse_positive_birth_drift.json",
+      "result_sha256": "6e77eacea4767a3c8a5a30db2215c43568dec4a06d834b0c5af21a5e03a5c488",
+      "log": "mutation_results/reverse_positive_birth_drift.log",
+      "log_sha256": "52927722f108aaeee82b09bacddfb59e04695cd68136297855f716b3772187e6"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-09-21T10:42:44.800923+00:00",
+  "note_sha256": "c2d6d019f1125249b4df91bcf435e68be727c72c5d3cf9570fe1f734d473d1b4",
+  "author_assembly_checker_sha256": "b426d31a934eb05412352fe18212ae3063eced3657cce296f811ab097c2bf54b",
+  "author_assembly_results_sha256": "36af2a7fcce0afb5de69161dd640469592e9974941f478e6bea044c13233731c",
+  "independent_math_report_sha256": "edd446648733d0bdc3a7732fb7541a22b22940e8549c6757f9c67f428c387e63",
+  "independent_math_seal_sha256": "6eefb9331502b7b7094fd9e8a2a62abd918ecb8c3446bf181f16f86e27ebe6f7",
+  "controls": 18,
+  "mutations_rejected": 6,
+  "capsule": {
+    "members": 40,
+    "bindings": 29,
+    "seal_rows": 44,
+    "excluded_pdfs": 2
+  },
+  "graph": {
+    "nodes_added": 1,
+    "edges_added": 1,
+    "existing_topology_unchanged": true,
+    "manifest_sha256": "dd953c34cd95effe97710a74a8e3630a29eb4497b99a121331b31462bf178f1e"
+  },
+  "root_read": "Complete source arguments and author checkers, complete independent derivation/checker/report/comparison, and complete publication assembly with exact source-body equality.",
+  "scope": "Independent mathematical review and author assembly verification only. No independent assembly audit. Combined pipeline, strict audit lint, negative-claim schema and changed-evidence integration pending."
+}

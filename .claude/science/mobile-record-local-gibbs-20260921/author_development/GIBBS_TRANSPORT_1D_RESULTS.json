@@ -1,0 +1,195 @@
+{
+  "source_sha256": "6eae0e4d6899e907b6c09e9a5bcc6038df13a8b2f17280ea6fa3f75b3426e34a",
+  "checks": [
+    {
+      "name": "sixteen_word_exact_stationarity_coboundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_binary_rings_correlated_Gibbs_and_nonzero_current",
+      "passed": true,
+      "detail": [
+        {
+          "N": 4,
+          "labels": 2,
+          "states": 16,
+          "J": -0.9,
+          "current": 0.2627259957642842,
+          "density": 0.4066307306078035,
+          "adjacent_covariance": -0.052544252950934484,
+          "stationarity_residual": 1.358559490790174e-18
+        },
+        {
+          "N": 4,
+          "labels": 2,
+          "states": 16,
+          "J": 0,
+          "current": 0.24408865662065704,
+          "density": 0.5768852611320464,
+          "adjacent_covariance": -1.1102230246251565e-16,
+          "stationarity_residual": 0.0
+        },
+        {
+          "N": 4,
+          "labels": 2,
+          "states": 16,
+          "J": 0.6931471805599453,
+          "current": 0.13615097827928083,
+          "density": 0.7971380750781721,
+          "adjacent_covariance": 0.020432098050239822,
+          "stationarity_residual": 1.2739612029895517e-17
+        },
+        {
+          "N": 5,
+          "labels": 2,
+          "states": 32,
+          "J": -0.9,
+          "current": 0.2666243374494004,
+          "density": 0.4061959006497813,
+          "adjacent_covariance": -0.05007014007063479,
+          "stationarity_residual": 6.938893903907228e-18
+        },
+        {
+          "N": 5,
+          "labels": 2,
+          "states": 32,
+          "J": 0,
+          "current": 0.24408865662065704,
+          "density": 0.5768852611320463,
+          "adjacent_covariance": 5.551115123125783e-17,
+          "stationarity_residual": 0.0
+        },
+        {
+          "N": 5,
+          "labels": 2,
+          "states": 32,
+          "J": 0.6931471805599453,
+          "current": 0.13577991985479018,
+          "density": 0.797261260136174,
+          "adjacent_covariance": 0.020093021647528575,
+          "stationarity_residual": 3.469446951953614e-18
+        },
+        {
+          "N": 7,
+          "labels": 2,
+          "states": 128,
+          "J": -0.9,
+          "current": 0.2659778145951671,
+          "density": 0.4062680152893574,
+          "adjacent_covariance": -0.05048043467306046,
+          "stationarity_residual": 3.469446951953614e-18
+        },
+        {
+          "N": 7,
+          "labels": 2,
+          "states": 128,
+          "J": 0,
+          "current": 0.24408865662065704,
+          "density": 0.5768852611320463,
+          "adjacent_covariance": 0.0,
+          "stationarity_residual": 1.734723475976807e-18
+        },
+        {
+          "N": 7,
+          "labels": 2,
+          "states": 128,
+          "J": 0.6931471805599453,
+          "current": 0.13572818110166632,
+          "density": 0.7972784365183389,
+          "adjacent_covariance": 0.020045739915818817,
+          "stationarity_residual": 5.204170427930421e-18
+        },
+        {
+          "N": 10,
+          "labels": 2,
+          "states": 1024,
+          "J": -0.9,
+          "current": 0.26594791938951096,
+          "density": 0.40627134986905067,
+          "adjacent_covariance": -0.05049940694000882,
+          "stationarity_residual": 2.699061981590725e-18
+        },
+        {
+          "N": 10,
+          "labels": 2,
+          "states": 1024,
+          "J": 0,
+          "current": 0.2440886566206571,
+          "density": 0.5768852611320463,
+          "adjacent_covariance": 0.0,
+          "stationarity_residual": 6.505213034913027e-19
+        },
+        {
+          "N": 10,
+          "labels": 2,
+          "states": 1024,
+          "J": 0.6931471805599453,
+          "current": 0.13572737437861002,
+          "density": 0.7972787043366121,
+          "adjacent_covariance": 0.020045002683038105,
+          "stationarity_residual": 2.3775574612941093e-18
+        }
+      ]
+    },
+    {
+      "name": "four_fine_labels_full_generator_invariance",
+      "passed": true,
+      "detail": [
+        {
+          "N": 5,
+          "labels": 4,
+          "states": 1024,
+          "J": -0.9,
+          "current": 0.2622513554304299,
+          "density": 0.38899341562528733,
+          "adjacent_covariance": -0.04827889662979301,
+          "stationarity_residual": 1.3010426069826053e-18
+        },
+        {
+          "N": 5,
+          "labels": 4,
+          "states": 1024,
+          "J": 0.6931471805599453,
+          "current": 0.14546096425613697,
+          "density": 0.7734376551018738,
+          "adjacent_covariance": 0.023195292012381685,
+          "stationarity_residual": 3.0357660829594124e-18
+        }
+      ]
+    },
+    {
+      "name": "positive_transfer_matrix_current_and_correlation",
+      "passed": true,
+      "detail": [
+        {
+          "J": -0.9,
+          "current": 0.26594819120167357,
+          "density": 0.40627131955049955,
+          "correlation_eigenvalue": -0.20935368099705357,
+          "N10_current_error": 2.7181216261107366e-07
+        },
+        {
+          "J": 0,
+          "current": 0.24408865662065693,
+          "density": 0.5768852611320463,
+          "correlation_eigenvalue": 4.697517251494628e-17,
+          "N10_current_error": 1.6653345369377348e-16
+        },
+        {
+          "J": 0.6931471805599453,
+          "current": 0.13572737283675493,
+          "density": 0.7972787048484815,
+          "correlation_eigenvalue": 0.12402137777103933,
+          "N10_current_error": 1.541855088049715e-09
+        }
+      ]
+    },
+    {
+      "name": "scalar_orbit_correlations_do_not_create_raw_vector_covariance",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Reconstruction of established one-dimensional KLS/Gibbs transport; exact finite-word proof and finite generator controls, not a 3D wave or continuum theorem."
+}

@@ -1,0 +1,6 @@
+PASS: sixteen_word_exact_stationarity_coboundary
+PASS: whole_binary_rings_correlated_Gibbs_and_nonzero_current
+PASS: four_fine_labels_full_generator_invariance
+PASS: positive_transfer_matrix_current_and_correlation
+PASS: scalar_orbit_correlations_do_not_create_raw_vector_covariance
+TOTAL: 5 PASS

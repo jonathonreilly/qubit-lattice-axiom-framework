@@ -1,0 +1,22 @@
+{
+  "claim_id": "mobile_records_local_gibbs_circulations_and_winding_transport_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_LOCAL_GIBBS_CIRCULATIONS_AND_WINDING_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-21.md": "c2d6d019f1125249b4df91bcf435e68be727c72c5d3cf9570fe1f734d473d1b4",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-local-gibbs-20260921/author_checks/local_gibbs_record_circulation_check.py": "f0c012e63355ed14f90ff7ed7e4247a521d427ceaddeffd49f84c353e2cc0037",
+    ".claude/science/mobile-record-local-gibbs-20260921/author_checks/gibbs_transport_1d_check.py": "6eae0e4d6899e907b6c09e9a5bcc6038df13a8b2f17280ea6fa3f75b3426e34a",
+    "scripts/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.py": "3812fca512d10953f8af64200cbacd9816844f712420d917d07935ddbf92640c"
+  },
+  "mutation": "reverse_positive_birth_drift",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "local_gibbs_record_circulation_check.py",
+      "source_sha256": "f0c012e63355ed14f90ff7ed7e4247a521d427ceaddeffd49f84c353e2cc0037",
+      "executed_source_sha256": "8dec460c276bf68016601208d2e8dc81783c58996e1bfde896ac752fc538a89d",
+      "returncode": 1,
+      "stdout": "PASS: local_energy_and_orbit_invariants\nPASS: strict_positive_rates\nPASS: whole_generator_Gibbs_stationarity\nPASS: all_label_counts_conserved\nPASS: clockwise_and_reverse_orbit_flows_constant\nPASS: full_generator_nonreversible_witness\nPASS: exterior_energy_cancels_without_global_clock\nPASS: polar_axial_full_cubic_rate_covariance\nPASS: orientation_choice_independent\nPASS: closed_local_cycle_content_transport_cancels\nPASS: same_count_arrangements_have_nonuniform_Gibbs_weights\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gibbs-record-controls-2nze9dsu/local_gibbs_record_circulation_check.py\", line 118, in <module>\n    check('birth_only_vacancy_Lyapunov_identity',np.all(birthLV[vac>0]<0) and np.all(birthLV[vac==0]==0),dict(stationary_vacancy_must_be_zero=True))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gibbs-record-controls-2nze9dsu/local_gibbs_record_circulation_check.py\", line 13, in check\n    assert bool(condition),(name,detail)\n           ~~~~^^^^^^^^^^^\nAssertionError: ('birth_only_vacancy_Lyapunov_identity', {'stationary_vacancy_must_be_zero': True})\n"
+    }
+  ]
+}

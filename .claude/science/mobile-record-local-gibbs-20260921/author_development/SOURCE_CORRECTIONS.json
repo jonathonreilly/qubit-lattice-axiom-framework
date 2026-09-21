@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-09-21T10:18:30.548453+00:00",
+  "pre_checker_seal_sha256": "a9709714b8474a7dd96f49f44135f814323094351531ed73800097a98e0f9a05",
+  "changes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_GIBBS_RECORD_CIRCULATIONS.md",
+      "before_sha256": "ee45014c7b58d32fee3f26c1eac01dbe4047ec5294464724d648e71a76406f8d",
+      "after_sha256": "70a9abf1588e90e8a7065a5e1d6155f8f56997672b0303c0ea6cbca71fc1bf12",
+      "old": "These are positive\nbounded local rates",
+      "new": "These are nonnegative\nbounded local rates"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GIBBS_TRANSPORT_COUNTERCONTROL_1D.md",
+      "before_sha256": "31a83be65af3f7066490631e01789d3e09bf00414f4391c605a97366c8937485",
+      "after_sha256": "28949032a1b110e642a8d3765dd880a4d8487be02cc70b3b095275d7cde59069",
+      "old": "For the fifteen-label transverse menu, the rotation-invariant partition\nA=six axis labels and B=eight cube labels preserves label-orbit symmetry,",
+      "new": "For the fully occupied fourteen-label restriction of the transverse menu,\nthe rotation-invariant partition A=six axis labels and B=eight cube labels\npreserves label-orbit symmetry,"
+    }
+  ],
+  "scope": "Two narrow scope/wording findings only; no formula or checker changes."
+}

@@ -1,0 +1,22 @@
+{
+  "claim_id": "mobile_records_local_gibbs_circulations_and_winding_transport_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_LOCAL_GIBBS_CIRCULATIONS_AND_WINDING_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-21.md": "c2d6d019f1125249b4df91bcf435e68be727c72c5d3cf9570fe1f734d473d1b4",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-local-gibbs-20260921/author_checks/local_gibbs_record_circulation_check.py": "f0c012e63355ed14f90ff7ed7e4247a521d427ceaddeffd49f84c353e2cc0037",
+    ".claude/science/mobile-record-local-gibbs-20260921/author_checks/gibbs_transport_1d_check.py": "6eae0e4d6899e907b6c09e9a5bcc6038df13a8b2f17280ea6fa3f75b3426e34a",
+    "scripts/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.py": "3812fca512d10953f8af64200cbacd9816844f712420d917d07935ddbf92640c"
+  },
+  "mutation": "halve_KLS_environment_rate",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "gibbs_transport_1d_check.py",
+      "source_sha256": "6eae0e4d6899e907b6c09e9a5bcc6038df13a8b2f17280ea6fa3f75b3426e34a",
+      "executed_source_sha256": "8539ddcf250488f1480eaef754d1ba1d1aa0936192a2b52c8e89e292235d8a9c",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/gibbs-record-controls-h91b35c5/gibbs_transport_1d_check.py\", line 20, in <module>\n    assert s.factor(residual-h[a,b,c]+h[b,c,d])==0,(a,b,c,d)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (0, 0, 1, 1)\n"
+    }
+  ]
+}

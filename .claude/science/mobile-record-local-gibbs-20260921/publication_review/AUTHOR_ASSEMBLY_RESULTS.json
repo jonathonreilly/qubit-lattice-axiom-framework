@@ -1,0 +1,132 @@
+{
+  "created_utc": "2026-09-21T10:41:53.713874+00:00",
+  "scope": "Author assembly verification only. Known independent mathematical review reused at exact hashes; no new independent review or audit verdict.",
+  "source_identities": {
+    "docs/MOBILE_RECORDS_LOCAL_GIBBS_CIRCULATIONS_AND_WINDING_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-21.md": {
+      "bytes": 19454,
+      "sha256": "c2d6d019f1125249b4df91bcf435e68be727c72c5d3cf9570fe1f734d473d1b4"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/PUBLICATION_TRANSFORM.json": {
+      "bytes": 1155,
+      "sha256": "f73c8d4995bc54e24b937f6a1925dc64a66a1a9a441dd4a2b04f8de090d35c75"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/primary_sources/LOCAL_GIBBS_RECORD_CIRCULATIONS.md": {
+      "bytes": 9998,
+      "sha256": "70a9abf1588e90e8a7065a5e1d6155f8f56997672b0303c0ea6cbca71fc1bf12"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/primary_sources/GIBBS_TRANSPORT_COUNTERCONTROL_1D.md": {
+      "bytes": 5933,
+      "sha256": "28949032a1b110e642a8d3765dd880a4d8487be02cc70b3b095275d7cde59069"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/INDEPENDENT_CAPSULES.json": {
+      "bytes": 22858,
+      "sha256": "b875daef2225167665ce37ac6d7fca675b60b4a8ed323c970eba62f8d7c23df4"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/independent/gibbs_transport_independent.zip": {
+      "bytes": 110868,
+      "sha256": "37d3310ea5de195e524a3f1bda65289de3fdc97d458113162c6bce537d8eaf3a"
+    },
+    "scripts/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.py": {
+      "bytes": 5839,
+      "sha256": "3812fca512d10953f8af64200cbacd9816844f712420d917d07935ddbf92640c"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/author_checks/local_gibbs_record_circulation_check.py": {
+      "bytes": 6403,
+      "sha256": "f0c012e63355ed14f90ff7ed7e4247a521d427ceaddeffd49f84c353e2cc0037"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/author_checks/gibbs_transport_1d_check.py": {
+      "bytes": 5331,
+      "sha256": "6eae0e4d6899e907b6c09e9a5bcc6038df13a8b2f17280ea6fa3f75b3426e34a"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/AUTHOR_RUNS.json": {
+      "bytes": 2770,
+      "sha256": "357bfca73db581f7f1cf6406260782bffd47ea2ad97d68e583e33d3c884062f9"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/PRIMARY_RESULTS.json": {
+      "bytes": 13012,
+      "sha256": "d1b11df5464c907c1805b5cb7999c656658baf8f7fae3febe77f0b8de28944ea"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/PRIMARY_RUN.log": {
+      "bytes": 190,
+      "sha256": "52f25c25de5a16020bde402b0be2d4e79e9544e217e8f79af9186d88890ea52e"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/break_cycle_amplitude_invariance.json": {
+      "bytes": 2155,
+      "sha256": "6e342939a92ce574bc18b6d8c0850fca6b08457fa891925a3a3d804dd30dd789"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/break_cycle_amplitude_invariance.log": {
+      "bytes": 208,
+      "sha256": "c970a461ebe87ac4b04384cceadcfb5f9243cd11664d99eeca28586aad4f5ece"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/drop_Perron_normalization.json": {
+      "bytes": 1750,
+      "sha256": "1b04a2004845de4b96c1e8fc0741659fa49d96b0ccc1acdfb5ea1f7e101a5bcc"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/drop_Perron_normalization.log": {
+      "bytes": 94,
+      "sha256": "49c1b2ae1b7573288bb695f9fad4fcb79dd1706fa4ae14efdf664607ea5a3140"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/halve_KLS_environment_rate.json": {
+      "bytes": 1644,
+      "sha256": "fbe45d3cb2d19ee1282239c6f89a996b5d984f041c4b7f4b6ee40f6227865a75"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/halve_KLS_environment_rate.log": {
+      "bytes": 108,
+      "sha256": "c19d01382c13202d6321c6a9430925674b768c490979a751b3361298bb9d01f0"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/reverse_Gibbs_energy_sign.json": {
+      "bytes": 2146,
+      "sha256": "560d0dcc0e7de225e6b4901f2b3e605741395586a00552d87e833eeb4a5a45bb"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/reverse_Gibbs_energy_sign.log": {
+      "bytes": 206,
+      "sha256": "5f8e86316411345fea1580cfe931a236d602ba99851d0697eb8a87b77aa90ba3"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/reverse_incoming_Gibbs_ratio.json": {
+      "bytes": 1646,
+      "sha256": "609c68a95501213253cf44b7dfaefd19185a73dc884660e92637f75c141dba42"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/reverse_incoming_Gibbs_ratio.log": {
+      "bytes": 108,
+      "sha256": "c19d01382c13202d6321c6a9430925674b768c490979a751b3361298bb9d01f0"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/reverse_positive_birth_drift.json": {
+      "bytes": 2638,
+      "sha256": "6e77eacea4767a3c8a5a30db2215c43568dec4a06d834b0c5af21a5e03a5c488"
+    },
+    ".claude/science/mobile-record-local-gibbs-20260921/mutation_results/reverse_positive_birth_drift.log": {
+      "bytes": 191,
+      "sha256": "52927722f108aaeee82b09bacddfb59e04695cd68136297855f716b3772187e6"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "bytes": 836218,
+      "sha256": "dd953c34cd95effe97710a74a8e3630a29eb4497b99a121331b31462bf178f1e"
+    },
+    "docs/audit/data/citation_graph.json": {
+      "bytes": 8612935,
+      "sha256": "3a81508944c93c8490b9fb3b3ec43dcc2b934d0fe9bd421d9aac878fe7aca241"
+    },
+    "logs/runner-cache/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.txt": {
+      "bytes": 580,
+      "sha256": "a57e88dbb4849d8d18eab64105d14798183c505567c7f4fe02f3d47fdf94b823"
+    }
+  },
+  "source_bodies": 2,
+  "capsules": 1,
+  "bundled_members": 40,
+  "bundled_bindings": 29,
+  "seal_rows": 44,
+  "external_pdf_exclusions": 2,
+  "author_controls": 18,
+  "substantive_mutation_rejections": 6,
+  "old_manifest_entries_unchanged": 6026,
+  "graph_delta": {
+    "nodes": 1,
+    "edges": 1
+  },
+  "all_passed": true
+}

@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.py
+runner_sha256: 3812fca512d10953f8af64200cbacd9816844f712420d917d07935ddbf92640c
+input_fingerprint_sha256: 62e1a67ae1777d4677833cb1d0c87df73c86b7aa2dc939c066217d961e5e269d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.10
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: local_gibbs_record_circulation_check.py: 12 declared controls
+PASS: gibbs_transport_1d_check.py: 5 declared controls
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,117 @@
+{
+  "source_sha256": "f0c012e63355ed14f90ff7ed7e4247a521d427ceaddeffd49f84c353e2cc0037",
+  "checks": [
+    {
+      "name": "local_energy_and_orbit_invariants",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "strict_positive_rates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_generator_Gibbs_stationarity",
+      "passed": true,
+      "detail": {
+        "configurations": 4096,
+        "residual": 2.143151899025203e-18
+      }
+    },
+    {
+      "name": "all_label_counts_conserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clockwise_and_reverse_orbit_flows_constant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_generator_nonreversible_witness",
+      "passed": true,
+      "detail": {
+        "stationary_edge_current": 3.0490335942755643e-05,
+        "source": [
+          0,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        "target": [
+          3,
+          0,
+          1,
+          2,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "name": "exterior_energy_cancels_without_global_clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "polar_axial_full_cubic_rate_covariance",
+      "passed": true,
+      "detail": {
+        "group_elements": 48
+      }
+    },
+    {
+      "name": "orientation_choice_independent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "closed_local_cycle_content_transport_cancels",
+      "passed": true,
+      "detail": {
+        "orbits": 1120,
+        "grand_Gibbs_currents": [
+          [
+            3.743208000506204e-16,
+            2.1250362580715887e-17,
+            0.0
+          ],
+          [
+            9.12356128146552e-17,
+            1.6664187391102203e-16,
+            0.0
+          ],
+          [
+            1.713039432527097e-17,
+            -3.5236570605778894e-17,
+            0.0
+          ],
+          [
+            9.118140270603092e-16,
+            4.651227319962814e-17,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "same_count_arrangements_have_nonuniform_Gibbs_weights",
+      "passed": true,
+      "detail": {
+        "probability_ratio": "exp(-4K)"
+      }
+    },
+    {
+      "name": "birth_only_vacancy_Lyapunov_identity",
+      "passed": true,
+      "detail": {
+        "stationary_vacancy_must_be_zero": true
+      }
+    }
+  ],
+  "scope": "Finite full-generator, exact arrangement and symmetry controls for supplied local Gibbs transport; no hydrodynamic limit, phase theorem, or quantum identification."
+}

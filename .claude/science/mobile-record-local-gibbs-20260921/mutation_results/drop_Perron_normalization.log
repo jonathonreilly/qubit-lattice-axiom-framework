@@ -1,0 +1,2 @@
+PASS: declared_sources_and_conditional_scope
+FAIL: gibbs_transport_1d_check.py AssertionError

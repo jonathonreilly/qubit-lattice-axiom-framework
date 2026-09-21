@@ -1,0 +1,22 @@
+line of 1500 sites, walls at the ends, walkers of rest energy 0.3 (A) and 0.6 (B) 300 sites apart, G = 0.002
+(1) switch-on: the field starts at the ambient rate; B's wave vector by time (A's pull on B arrives as a front)
+    c = 1, ambient rate 1: front expected at t = 300
+        t = 0: k_B = +2.71e-19; t = 50: k_B = -2.38e-12; t = 100: k_B = -1.88e-09; t = 150: k_B = -3.42e-07; t = 200: k_B = -1.55e-05; t = 250: k_B = -2.47e-04; t = 300: k_B = -1.80e-03; t = 350: k_B = -6.42e-03; t = 400: k_B = -1.32e-02; t = 450: k_B = -2.01e-02
+        ledger moved by -7.9e-08 over the run (start to end)
+    c = 2, ambient rate 1: front expected at t = 150
+        t = 0: k_B = +2.71e-19; t = 27: k_B = -1.88e-12; t = 53: k_B = -1.94e-09; t = 80: k_B = -4.15e-07; t = 106: k_B = -2.04e-05; t = 133: k_B = -3.01e-04; t = 160: k_B = -1.70e-03; t = 186: k_B = -4.71e-03; t = 213: k_B = -8.46e-03; t = 239: k_B = -1.22e-02
+        ledger moved by -7.7e-08 over the run (start to end)
+    c = 1, ambient rate 4 (phi = 2 at the walls): front expected at t = 75
+        t = 0: k_B = +2.71e-19; t = 13: k_B = -3.81e-12; t = 27: k_B = -3.98e-09; t = 40: k_B = -7.85e-07; t = 53: k_B = -3.42e-05; t = 66: k_B = -5.05e-04; t = 80: k_B = -3.17e-03; t = 93: k_B = -9.34e-03; t = 106: k_B = -1.68e-02; t = 120: k_B = -2.39e-02
+        ledger moved by -3.1e-07 over the run (start to end)
+(2) slow motion from the static field, T = 300: the dynamic field (c = 1) against the static law of block 56, for two strengths of the coupling
+    G = 0.002:
+        t = 0: k_A = -0.000000 (static law -0.000000); k_B = +0.000000 (static law +0.000000); speeds k/m = 0.000, 0.000 of the limit; ledger moved by +0.0e+00; lowest rate 0.6042
+        t = 100: k_A = +0.010192 (static law +0.010228); k_B = -0.013410 (static law -0.013493); speeds k/m = 0.034, 0.022 of the limit; ledger moved by +1.4e-11; lowest rate 0.6041
+        t = 200: k_A = +0.020232 (static law +0.020460); k_B = -0.026435 (static law -0.026978); speeds k/m = 0.067, 0.044 of the limit; ledger moved by +4.9e-11; lowest rate 0.6037
+        t = 300: k_A = +0.030086 (static law +0.030701); k_B = -0.038966 (static law -0.040447); speeds k/m = 0.100, 0.065 of the limit; ledger moved by +1.0e-10; lowest rate 0.6027
+    G = 0.0004:
+        t = 0: k_A = -0.000000 (static law -0.000000); k_B = +0.000000 (static law +0.000000); speeds k/m = 0.000, 0.000 of the limit; ledger moved by +0.0e+00; lowest rate 0.8955
+        t = 100: k_A = +0.002926 (static law +0.002930); k_B = -0.003896 (static law -0.003905); speeds k/m = 0.010, 0.006 of the limit; ledger moved by +6.6e-13; lowest rate 0.8955
+        t = 200: k_A = +0.005838 (static law +0.005860); k_B = -0.007754 (static law -0.007809); speeds k/m = 0.019, 0.013 of the limit; ledger moved by +2.3e-12; lowest rate 0.8955
+        t = 300: k_A = +0.008735 (static law +0.008792); k_B = -0.011572 (static law -0.011710); speeds k/m = 0.029, 0.019 of the limit; ledger moved by +4.5e-12; lowest rate 0.8953

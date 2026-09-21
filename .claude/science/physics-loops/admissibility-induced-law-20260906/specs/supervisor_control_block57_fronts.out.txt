@@ -1,0 +1,8 @@
+(i) reference clock, 61^3 box, c = 1: time at which u reaches half its final value, against r/(c wbar)
+    ambient rate 1: axis r = 8.0: t = 8.25 (r/(c wbar) = 8.00); axis r = 16.0: t = 16.50 (r/(c wbar) = 16.00); axis r = 24.0: t = 24.50 (r/(c wbar) = 24.00); diagonal r = 8.66: t = 9.00 (r/(c wbar) = 8.66); diagonal r = 15.59: t = 16.00 (r/(c wbar) = 15.59); diagonal r = 24.25: t = 24.75 (r/(c wbar) = 24.25)
+    ambient rate 2: axis r = 8.0: t = 4.12 (r/(c wbar) = 4.00); axis r = 16.0: t = 8.25 (r/(c wbar) = 8.00); axis r = 24.0: t = 12.25 (r/(c wbar) = 12.00); diagonal r = 8.66: t = 4.50 (r/(c wbar) = 4.33); diagonal r = 15.59: t = 8.00 (r/(c wbar) = 7.79); diagonal r = 24.25: t = 12.38 (r/(c wbar) = 12.12)
+(ii) neighbours only, 24^3 torus: u(x, t)/u_static(x) at distances 1, 6 and 20.8 against 1 - cos(omega_0 t)
+    t =  1.00: 0.459785, 0.459785, 0.459785   (1 - cos(omega_0 t) = 0.459698)
+    t =  3.00: 1.990037, 1.990037, 1.990037   (1 - cos(omega_0 t) = 1.989992)
+    t =  6.00: 0.039655, 0.039655, 0.039655   (1 - cos(omega_0 t) = 0.039830)
+    t = 10.00: 1.838504, 1.838504, 1.838504   (1 - cos(omega_0 t) = 1.839072)

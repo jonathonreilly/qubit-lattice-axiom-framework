@@ -1,0 +1,9 @@
+# Block 57 — contract (2026-09-21; fifth block of the source-link direction; first of the owner's 12-hour campaign)
+
+**Owner's instruction.** "ok do the delay block next. do a 12 hour campaign on htis lane (personally managed and executed please)". The static law of blocks 53, 55, 56 acts at a distance (decision record #8572, fork 7).
+
+**Lens pass (supervisor, in writing; no subagents).** Foundations: for motion, "no master clock" means the parameter `t` is a label (`t → f(t)`, `w → w/f'`); blocks 54 and 55 already have this invariance (weight one), but it is stronger than block 53's sentence — say so, and give the weaker reading its own theorem. Rigour: the first form of the no-go ("the rate field cannot have waves") is too strong — a kinetic term referred to the lattice mean or to held walls has `M1 = 0` and gives waves; the no-go is for finite range; a square-root action does not evade the shift of `du/dt`; on a closed lattice varying the unit of rate would make the ledger vanish. Comparator: a rate fixed at each instant by a constraint, the travelling carried by lengths; name under Premises and Prior art; avoid the forbidden phrases. Strategy: the forks on delay and on lengths are one fork; name the next block.
+
+**Exact target.** T1 what a kinetic term may see; T2 nearest neighbours: nothing travels (and no branch through zero at any finite range); T3 a reference clock: a front at `c` sites per local tick; T4 a master parameter: the uniform mode moves; T5 a field that is not a rate carries a delay with nearest-neighbour terms. Executed and not claimed: the non-linear coupled motion referred to the wall clocks.
+
+**Boundaries fixed in advance.** The premise is a reading; which reference the framework would state is the owner's; `c` not derived; weak field for the wave statements; lengths not treated; nothing adopted.

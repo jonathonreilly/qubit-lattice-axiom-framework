@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 57 — author checks (not a review PASS)
+Written lens pass by the supervisor; the first no-go (no waves at all) was broken by the supervisor's own counter-construction (a kinetic term referred to the lattice mean or to held walls) and restated for finite range. Refuting pass with symbolic invariance under a generic change of parameter, generalized eigenproblems, a non-linear elliptic solve and propagation (5/0). Three control artefacts folded. Census 9/9 in family.

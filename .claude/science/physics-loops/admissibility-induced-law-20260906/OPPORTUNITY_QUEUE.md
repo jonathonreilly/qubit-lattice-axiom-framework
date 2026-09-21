@@ -78,3 +78,6 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## 2026-09-21 refresh after block 57 (source-link direction; campaign)
+(1) A field that is not a rate as the carrier: a field of lengths on the bonds, timed by the local clock, nearest-neighbour; does it propagate, does it supply the second half of the comparator's bending of light, and what sources it? (2) the owner's fork: may rates be referred to the distant clocks (T3)? (3) the number `c`; (4) the coupled motion at strong field; (5) sources under the record reading; (6) `γ`.

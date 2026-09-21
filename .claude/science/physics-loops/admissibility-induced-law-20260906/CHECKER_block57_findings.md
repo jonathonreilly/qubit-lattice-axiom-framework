@@ -1,0 +1,9 @@
+# Block 57 — refuting pass and findings (2026-09-21)
+
+1. Disjoint machinery (`specs/supervisor_control_block57_refuter.py`): W1 generic `f(t)` symbolically — the on-site term changes by a multiple of `f''`, the other four pieces are unchanged; W2 generalized eigenproblems on a `6³` torus — 215 equal squared frequencies (spread `3×10⁻¹⁴`) for neighbours only, `c²w̄²E(k)` to `10⁻¹³` for the mean-referred form; W3 the NON-LINEAR neighbours-only law on a line with walls — the acceleration forty sites from a source switched on changes at once by 0.18 of its change at the source, by exactly zero under the wall-referred law; W4 half-rise times at ambient rates 1 and 3; W5 the uniform mode on a ring. All pass.
+2. **The supervisor's first no-go was too strong.** "With no master clock the rate field has no waves" fails: a kinetic term referred to the lattice mean, or to held walls, has `M1 = 0` and gives ordinary waves. The no-go holds for finite range. The note is a trichotomy (neighbours / a reference clock / a master parameter) plus what else can carry a delay.
+3. Finding folded: W5's first prediction used a constant acceleration and missed by 15 per cent; the uniform mode has the closed form `ψ_0² = 1 + at²` (now T4): `0.341064` against `0.341641`.
+4. Finding folded (control): at four times the ambient rate the first run blew up — the step was outside the lattice stability limit `c w̄ dt < 1`; steps are now set in local ticks.
+5. Finding folded (control): the fronts control's first step used `h²a` where a start from rest needs `h²a/2`.
+6. Proof sentence corrected: the symbol is even because the form is real and symmetric, not because of a rotation.
+7. Recorded: on a closed lattice, varying the unit of rate under full invariance makes the whole ledger vanish (kinetic part included); as in block 55 T4(b) it is not varied.

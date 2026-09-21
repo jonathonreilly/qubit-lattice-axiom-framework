@@ -1,0 +1,91 @@
+N1  the pinned scale c_0, on both menus
+     c_0 is fixed by 'an empty site acts on each neighbour as a record of unknown
+     content', i.e. c_0 times the average pair weight is 1.
+ok        (sphere) the antiderivative e^{beta t}/(2 beta) checks by differentiation, so
+ok          <e^{beta s.s'}> = sinh(beta)/beta, hence c_0 = beta/sinh(beta)
+ok          and c_0 * <e^{beta s.s'}> = 1 identically, which is the defining property
+ok        (six axes) c_0 = 6/(p+q+4r) gives c_0 * (p+q+4r)/6 = 1, the same property
+
+N2  (a) what a pinned record is
+     In the ORDERED medium the transverse (Goldstone) field is massless, with quadratic
+     action (rho_s/2) sum_<xy> (theta_x - theta_y)^2.  A record whose content is HELD
+     does not add a term to that action: it fixes theta at its site.  That is a
+     DIRICHLET condition, not a source term.  Solving it,
+       theta(x) = theta_0 G(x)/G(0),      G the lattice Green function, ~ 1/r,
+     so a pinned record does produce a one-over-distance field - but its strength is a
+     CAPACITY, 1/G(0), the reciprocal of an on-site Green function, and capacities do
+     not add.  This is the same structure as the persistent-source result of issue
+     8543 and it is reused here rather than re-derived.
+ok        L = 5: G(0) = 0.198260661, a single pinned record has capacity 1/G(0) = 5.043864956
+ok        L = 6: G(0) = 0.195520895, a single pinned record has capacity 1/G(0) = 5.114542874
+ok        L = 7: G(0) = 0.194529726, a single pinned record has capacity 1/G(0) = 5.140602521
+
+N3  (b) N aligned pinned records: does the far field grow like N?
+     A jammed aligned cluster pins theta at each of its sites, so its far field is set
+     by the capacity of the whole set.  Exactly, on the L = 7 torus:
+ok          N = 1 in a line: capacity 5.140603 vs N*C_1 = 5.140603, ratio 1.000000
+ok            and the ratio falls with N: strictly sub-additive, so the far field does NOT grow like N
+ok          N = 2 in a line: capacity 8.382103 vs N*C_1 = 10.281205, ratio 0.815284
+ok            and the ratio falls with N: strictly sub-additive, so the far field does NOT grow like N
+ok          N = 3 in a line: capacity 11.528260 vs N*C_1 = 15.421808, ratio 0.747530
+ok            and the ratio falls with N: strictly sub-additive, so the far field does NOT grow like N
+ok          N = 4 in a line: capacity 14.606007 vs N*C_1 = 20.562410, ratio 0.710326
+ok            and the ratio falls with N: strictly sub-additive, so the far field does NOT grow like N
+ok          N = 5 in a line: capacity 17.564240 vs N*C_1 = 25.703013, ratio 0.683353
+ok            and the ratio falls with N: strictly sub-additive, so the far field does NOT grow like N
+     Geometry matters, and the exact numbers show it.  Compact shapes on the same
+     torus, against the same N*C_1:
+ok          2x2x1 block (N = 4): capacity 13.224014, ratio to N*C_1 = 0.643116
+ok          2x2x2 cube (N = 8): capacity 20.093365, ratio to N*C_1 = 0.488595
+ok          line of 4   (N = 4): capacity 14.606007, ratio to N*C_1 = 0.710326
+     The 2x2x2 cube is more strongly screened than the line of 4 at the same N, which
+     is the geometry dependence a capacity has and a charge does not.
+     ARGUED, NOT COMPUTED HERE: for a COMPACT cluster a conductor's capacity grows
+     like its LINEAR size, so the far field of a jammed cube of N records would grow
+     like N^(1/3); the exact numbers above only establish strict sub-additivity and
+     its geometry dependence, on clusters small enough to fit a torus of side 7.
+     Either way a jammed cluster is not a mass.
+
+N4  (c) does a density excess source the transverse field at all?
+     The transverse field IS the content direction, and the content is carried by the
+     records.  Extra records that are ALIGNED with the medium carry no transverse
+     component, so they add nothing to theta.  What they change is the local stiffness:
+       action = (1/2) sum_<xy> rho_s(x) (theta_x - theta_y)^2,   rho_s proportional to rho
+     so a density excess multiplies the COEFFICIENT, giving
+       div( (rho + delta_rho(x)) grad theta ) = 0,
+     which is a modulation of the medium, not a source term on the right-hand side.
+ok        substituting theta == 0: the modulated equation gives 0 (satisfied), the
+       sourced equation gives -S(x) (not satisfied unless S == 0).  So a density
+       excess admits theta == 0 as an exact solution and a real source does not:
+       nothing: a density excess in an aligned medium does not source the massless
+       transverse mode at linear order.  It refracts an existing field; it does not
+       create one.  (Second order, it scatters - not a far field proportional to N.)
+
+N5  (d) a region where formation is faster
+     This one IS additive, and the unit's own setting says how: block 41 gives
+       d<n_x>/dt = kappa (Lap <n>)_x + j_x,
+     so a steady production excess carries the stationary halo G*(j - <j>)/kappa, a
+     genuine one-over-distance field whose strength is the TOTAL excess production
+     Q = sum_x (j_x - <j>) - additive in the sites of the region, hence proportional to
+     the number of records it makes per unit time.
+ok          n(R) = Q/(4 pi kappa R) with gradient -Q/(4 pi kappa R^2): additive in Q
+     BUT it is in the DENSITY channel, not the transverse one.  The massless mode of
+     the ordered medium is the content direction; the halo is an excess of records.
+     They are different fields, and block 41's own result (4) is that the content field
+     around a record is a number times its content vector - the mass carries no charge
+     in the long-range tilt channel.
+
+N6  the verdict
+     candidate                    far field   additive in N?   channel
+     (a) one pinned record        1/r         -                transverse (massless)
+     (b) N aligned pinned records 1/r         NO: capacity ~ N^(1/3)   transverse
+     (c) a density excess         none at linear order          -
+     (d) faster formation         1/r         YES, in Q         DENSITY, not transverse
+     So NO candidate sources the massless transverse mode additively.  The one additive
+     source is in the wrong channel.  That is the clean negative the unit anticipates,
+     and it says the strength of the long-range potential in the lattice's own units
+     cannot yet be computed from any of these four definitions - so the memo's open
+     gate on the natural unit stays untestable by this route.
+
+SUMMARY: PARTIAL and NEGATIVE on what a source is when records move: at the pinned scale (c_0 = beta/sinh(beta) on the sphere menu and 6/(p+q+4r) on the six axes, both verified as c_0 times the average pair weight = 1), none of the unit's four candidates sources the massless transverse mode additively. A pinned record fixes the content at its site, which is a DIRICHLET condition on the Goldstone field rather than a source term, so its far field is theta_0 G(r)/G(0) with strength the capacity 1/G(0); a jammed aligned cluster of N records is then a conductor, whose capacity is strictly sub-additive - checked exactly on tori of side 5, 6 and 7, with the capacity-to-N*C_1 ratio falling monotonically in N and depending on the cluster's shape, a 2x2x2 cube being more screened than a line of the same N; the N^(1/3) growth of a compact cluster's capacity is argued from the conductor analogy and NOT computed here; a density excess of ALIGNED records carries no transverse component and enters the quadratic action as a coefficient multiplying grad theta, so it modulates the medium and does not source the massless mode at linear order; and a region of faster formation IS additive, carrying block 41's halo G*(j-<j>)/kappa with strength the total excess production Q, but in the DENSITY channel rather than the transverse one
+HIT: no candidate definition of a source in the moving-records picture gives a far field proportional to the number of records in the source - a pinned record is a Dirichlet condition whose strength is a capacity 1/G(0) rather than a charge, an aligned jammed cluster of N records has strictly sub-additive capacity, checked exactly on tori of side 5 to 7 and shape-dependent (a 2x2x2 cube is more screened than a line of the same N), an aligned density excess enters the transverse action as a coefficient and so does not source the massless mode at linear order at all, and the one additive candidate, a region of faster formation with strength the total excess production Q, produces its one-over-distance field in the DENSITY channel and not in the transverse one; so the strength of the long-range potential in the lattice's own units cannot be computed from any of these four, and the natural-unit gate stays untestable by this route

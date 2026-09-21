@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 73 — author checks (not a review PASS)
+Written lens pass by the supervisor. A broader claim (least reach for all couplings with a conserved response) was considered and withdrawn for want of a proof of locality of the generator. The control's first commutant count at reach three was wrong through undersampling and was corrected. A flipped-constant mutation replaced by a computed one. Two wording/number slips in the note corrected. Census 7/7 in family.

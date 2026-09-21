@@ -1,0 +1,15 @@
+[W1] dimension of the space of translation-invariant operators of reach <= R commuting with the walk (complex dimension):
+     R = 1: 800 equations, unknowns 28, null space 8; count of a + c H: 7 + 1 = 8; smallest kept / largest dropped singular value: 5.3e-01 / 6.7e-16
+     R = 2: 800 equations, unknowns 100, null space 32; count of a + c H: 25 + 7 = 32; smallest kept / largest dropped singular value: 2.6e-01 / 1.1e-15
+     R = 3: 800 equations, unknowns 252, null space 88; count of a + c H: 63 + 25 = 88; smallest kept / largest dropped singular value: 1.3e-01 / 9.1e-16
+
+[W2] the 32 conditions for 'own wave number along axis 1':
+     reach <= 1: 7 monomials, rank 7; least-squares residual |Ax - b| = 2.8284 (not solvable)
+     reach <= 2: 25 monomials, rank 19, nullity 6; residual 1.2e-14 (solvable)
+     (1/2) sin 2k_1 satisfies the conditions: |A x - b| = 2.4e-16
+     the six functions sin k_b sin k_c satisfy the homogeneous conditions: largest |A x| = 4.9e-16; their rank: 6
+
+[W3] covariance, by sampling: a symbol f(k) that is the first component of a vector obeys f(Rk) = sum_i R_1i f_i(k); using only rotations with R e_1 = +-e_1: f(Rk) = +-f(k)
+     proper rotations: 24; those with R e_1 = +-e_1: 8
+     the six functions under these conditions: singular values [22.676 12.929 12.082 11.373  8.664  8.156]: none vanishes, so no combination of them survives
+     (1/2) sin 2k_1 under the same conditions: largest violation 0.0e+00

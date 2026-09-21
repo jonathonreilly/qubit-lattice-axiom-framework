@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F73 uniqueness of the two-step momentum | the commutant of the walk among matrix trigonometric polynomials (`b × s = 0`, unique factorisation); value-and-gradient conditions at the eight zeros as a linear system on monomials of bounded reach; covariance under two proper rotations; sampled singular-value control | block 73 (supplied clauses only) |

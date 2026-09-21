@@ -1,0 +1,23 @@
+{
+  "claim_id": "mobile_records_cubic_symbol_selection_and_gauss_closure_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_CUBIC_SYMBOL_SELECTION_AND_GAUSS_CLOSURE_BOUNDED_THEOREM_NOTE_2026-09-21.md": "a1e8be3e9d29e43324c5257e996f7501d1c44220e074dcbe118ae8bf060276f1",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0",
+    ".claude/science/mobile-record-cubic-selection-20260921/author_checks/cubic_entropy_symbol_check.py": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+    ".claude/science/mobile-record-cubic-selection-20260921/author_checks/cubic_symbol_selection_check.py": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+    "scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py": "3807ae952de8245d7606f21b4eb0617e43e22440c6c548ffc0fd5b4faf97536e"
+  },
+  "mutation": "omit_telescoping_term",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "cubic_entropy_symbol_check.py",
+      "source_sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+      "executed_source_sha256": "83e5657866a603d6d7d2e2daa2a4076634b60e44cada9b452fcaf48770f400c1",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/cubic-symbol-controls-xy4zwnaq/cubic_entropy_symbol_check.py\", line 163, in <module>\n    assert residual < 1e-12 and swap_error < 1e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

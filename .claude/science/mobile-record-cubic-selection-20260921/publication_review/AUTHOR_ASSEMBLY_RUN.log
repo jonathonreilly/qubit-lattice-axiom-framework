@@ -1,0 +1,32 @@
+{
+  "scope": "Author publication assembly verification, distinct from independent mathematics and formal audit.",
+  "note_sha256": "a1e8be3e9d29e43324c5257e996f7501d1c44220e074dcbe118ae8bf060276f1",
+  "runner_sha256": "3807ae952de8245d7606f21b4eb0617e43e22440c6c548ffc0fd5b4faf97536e",
+  "independent_report_sha256": "433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d",
+  "two_complete_source_bodies_match": true,
+  "capsule": {
+    "capsules": 1,
+    "bundled_members": 62,
+    "bundled_source_bindings": 38,
+    "seal_rows": 51,
+    "external_reference_exclusions": [],
+    "scope": "All declared source bytes authenticated. No scientific correctness or audit status inferred."
+  },
+  "source_scope_check_and_assertion_suites": 3,
+  "mutation_rejections": 6,
+  "cache_status": "fresh",
+  "vocabulary_violations": 0,
+  "python_sources_compiled": 5,
+  "graph": {
+    "nodes_added": 1,
+    "edges_added": 2,
+    "unchanged_prior_manifest_entries": 6028,
+    "manifest_sha256": "c90d213bdfee02dd7565e1784cdd44c75830daf55041dc18ed345a2c0462aaf7"
+  },
+  "pending_before_landing": [
+    "combined pipeline",
+    "strict audit lint",
+    "negative-claim schema",
+    "changed-evidence integration"
+  ]
+}

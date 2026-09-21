@@ -1,0 +1,596 @@
+{
+  "capsules": [
+    {
+      "name": "cubic_symbol_independent",
+      "archive": "independent/cubic_symbol_independent.zip",
+      "zip_sha256": "36c16ef5fa11984c20f3c77846a352920889a9b74091a99cd322044184022650",
+      "report": "independent/REPORT.md",
+      "report_sha256": "433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d",
+      "seal_members": [
+        "review/BASE_PRE_COMPARISON_SEAL.json",
+        "review/FINAL_SEAL.json",
+        "review/SELECTION_PRE_COMPARISON_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_PRINCIPAL_SYMBOL_CLASSIFICATION.md",
+          "sha256": "58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26",
+          "bytes": 8801,
+          "disposition": "bundled",
+          "member": "bound_sources/58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26/CUBIC_ENTROPY_PRINCIPAL_SYMBOL_CLASSIFICATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT.stdout",
+          "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe",
+          "bytes": 3668,
+          "disposition": "bundled",
+          "member": "bound_sources/60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe/INDEPENDENT.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT_RESULTS.json",
+          "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe",
+          "bytes": 3668,
+          "disposition": "bundled",
+          "member": "bound_sources/60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/PRE_COMPARISON_DERIVATION.md",
+          "sha256": "838ea7fd17c83705ee1e80932284c374f6f6f7f267af9588106b3b36057f2154",
+          "bytes": 6712,
+          "disposition": "bundled",
+          "member": "bound_sources/838ea7fd17c83705ee1e80932284c374f6f6f7f267af9588106b3b36057f2154/PRE_COMPARISON_DERIVATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/independent_check.py",
+          "sha256": "1e8787e5d25417fcc8910b61f799c8b271d5c52d37186bca09ae3992c2fe5a0b",
+          "bytes": 7893,
+          "disposition": "bundled",
+          "member": "bound_sources/1e8787e5d25417fcc8910b61f799c8b271d5c52d37186bca09ae3992c2fe5a0b/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_REVERSAL_AND_CONSERVED_DIVERGENCES.md",
+          "sha256": "b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f",
+          "bytes": 4508,
+          "disposition": "bundled",
+          "member": "bound_sources/b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f/CUBIC_SYMBOL_REVERSAL_AND_CONSERVED_DIVERGENCES.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_entropy_symbol_check.py",
+          "sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+          "bytes": 7324,
+          "disposition": "bundled",
+          "member": "bound_sources/7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927/cubic_entropy_symbol_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_SYMBOL_RESULTS.json",
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8",
+          "bytes": 1006,
+          "disposition": "bundled",
+          "member": "bound_sources/109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8/CUBIC_ENTROPY_SYMBOL_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_SYMBOL_RUN.log",
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8",
+          "bytes": 1006,
+          "disposition": "bundled",
+          "member": "bound_sources/109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8/CUBIC_ENTROPY_SYMBOL_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_selection_check.py",
+          "sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+          "bytes": 2020,
+          "disposition": "bundled",
+          "member": "bound_sources/9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5/cubic_symbol_selection_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_SELECTION_RESULTS.json",
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6",
+          "bytes": 501,
+          "disposition": "bundled",
+          "member": "bound_sources/8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6/CUBIC_SYMBOL_SELECTION_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_SELECTION_RUN.log",
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6",
+          "bytes": 501,
+          "disposition": "bundled",
+          "member": "bound_sources/8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6/CUBIC_SYMBOL_SELECTION_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/AUTHOR_COMPARISON.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/AUTHOR_COMPARISON.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/AUTHOR_COMPARISON.stdout",
+          "sha256": "f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8",
+          "bytes": 4285,
+          "disposition": "bundled",
+          "member": "bound_sources/f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8/AUTHOR_COMPARISON.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/AUTHOR_COMPARISON_RESULTS.json",
+          "sha256": "f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8",
+          "bytes": 4285,
+          "disposition": "bundled",
+          "member": "bound_sources/f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8/AUTHOR_COMPARISON_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/BASE_PRE_COMPARISON_SEAL.json",
+          "sha256": "5c3ad0cd053ea4822b1137953e6610300b25ed5f699867d410d7d943aa12a0a9",
+          "bytes": 2098,
+          "disposition": "bundled",
+          "member": "bound_sources/5c3ad0cd053ea4822b1137953e6610300b25ed5f699867d410d7d943aa12a0a9/BASE_PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/READ_BOUNDARY.json",
+          "sha256": "2ba6d1cd7792476bcc21bb3aa223010b049cdae63dba864e47bcf104ee32a1fb",
+          "bytes": 826,
+          "disposition": "bundled",
+          "member": "bound_sources/2ba6d1cd7792476bcc21bb3aa223010b049cdae63dba864e47bcf104ee32a1fb/READ_BOUNDARY.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/REPORT.md",
+          "sha256": "433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d",
+          "bytes": 13569,
+          "disposition": "bundled",
+          "member": "bound_sources/433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/SELECTION_INDEPENDENT.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT.stdout",
+          "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9",
+          "bytes": 1459,
+          "disposition": "bundled",
+          "member": "bound_sources/1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9/SELECTION_INDEPENDENT.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT_RESULTS.json",
+          "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9",
+          "bytes": 1459,
+          "disposition": "bundled",
+          "member": "bound_sources/1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9/SELECTION_INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_PRE_COMPARISON.md",
+          "sha256": "eeed358d5c3c5b9f9a06a83a724e01a89453e9c7e3237eaa1f734ff0e2179d7d",
+          "bytes": 3573,
+          "disposition": "bundled",
+          "member": "bound_sources/eeed358d5c3c5b9f9a06a83a724e01a89453e9c7e3237eaa1f734ff0e2179d7d/SELECTION_PRE_COMPARISON.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_PRE_COMPARISON_SEAL.json",
+          "sha256": "24eeaed4f6c837cef2c6b2cd4dd2fdae3a43165530305bc4e23632fa94a80c96",
+          "bytes": 2467,
+          "disposition": "bundled",
+          "member": "bound_sources/24eeaed4f6c837cef2c6b2cd4dd2fdae3a43165530305bc4e23632fa94a80c96/SELECTION_PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/CUBIC_ENTROPY_SYMBOL_RESULTS.json",
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8",
+          "bytes": 1006,
+          "disposition": "bundled",
+          "member": "bound_sources/109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8/CUBIC_ENTROPY_SYMBOL_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/CUBIC_SYMBOL_SELECTION_RESULTS.json",
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6",
+          "bytes": 501,
+          "disposition": "bundled",
+          "member": "bound_sources/8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6/CUBIC_SYMBOL_SELECTION_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_entropy_symbol_check.py",
+          "sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+          "bytes": 7324,
+          "disposition": "bundled",
+          "member": "bound_sources/7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927/cubic_entropy_symbol_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_entropy_symbol_check.py.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/cubic_entropy_symbol_check.py.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_entropy_symbol_check.py.stdout",
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8",
+          "bytes": 1006,
+          "disposition": "bundled",
+          "member": "bound_sources/109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8/cubic_entropy_symbol_check.py.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_symbol_selection_check.py",
+          "sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+          "bytes": 2020,
+          "disposition": "bundled",
+          "member": "bound_sources/9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5/cubic_symbol_selection_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_symbol_selection_check.py.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "disposition": "bundled",
+          "member": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/cubic_symbol_selection_check.py.stderr"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_symbol_selection_check.py.stdout",
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6",
+          "bytes": 501,
+          "disposition": "bundled",
+          "member": "bound_sources/8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6/cubic_symbol_selection_check.py.stdout"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/compare_author.py",
+          "sha256": "ef5cf371504281d6988f3ab8143f258632618ddd8e6ef07390910f6f8ba6f2c8",
+          "bytes": 2793,
+          "disposition": "bundled",
+          "member": "bound_sources/ef5cf371504281d6988f3ab8143f258632618ddd8e6ef07390910f6f8ba6f2c8/compare_author.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/seal_review.py",
+          "sha256": "635356b37538fd74e4e22743c6ff8f5ccb0e97ed98094c1ebfd7fe274e229abb",
+          "bytes": 3687,
+          "disposition": "bundled",
+          "member": "bound_sources/635356b37538fd74e4e22743c6ff8f5ccb0e97ed98094c1ebfd7fe274e229abb/seal_review.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/selection_independent_check.py",
+          "sha256": "bf5f1d5ef9f2cc62075893d7b37665e83885c149040aed3b09c6459df72779ad",
+          "bytes": 3517,
+          "disposition": "bundled",
+          "member": "bound_sources/bf5f1d5ef9f2cc62075893d7b37665e83885c149040aed3b09c6459df72779ad/selection_independent_check.py"
+        }
+      ],
+      "members": [
+        {
+          "path": "bound_sources/109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8/CUBIC_ENTROPY_SYMBOL_RESULTS.json",
+          "bytes": 1006,
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+        },
+        {
+          "path": "bound_sources/109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8/CUBIC_ENTROPY_SYMBOL_RUN.log",
+          "bytes": 1006,
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+        },
+        {
+          "path": "bound_sources/109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8/cubic_entropy_symbol_check.py.stdout",
+          "bytes": 1006,
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+        },
+        {
+          "path": "bound_sources/1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9/SELECTION_INDEPENDENT.stdout",
+          "bytes": 1459,
+          "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9"
+        },
+        {
+          "path": "bound_sources/1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9/SELECTION_INDEPENDENT_RESULTS.json",
+          "bytes": 1459,
+          "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9"
+        },
+        {
+          "path": "bound_sources/1e8787e5d25417fcc8910b61f799c8b271d5c52d37186bca09ae3992c2fe5a0b/independent_check.py",
+          "bytes": 7893,
+          "sha256": "1e8787e5d25417fcc8910b61f799c8b271d5c52d37186bca09ae3992c2fe5a0b"
+        },
+        {
+          "path": "bound_sources/24eeaed4f6c837cef2c6b2cd4dd2fdae3a43165530305bc4e23632fa94a80c96/SELECTION_PRE_COMPARISON_SEAL.json",
+          "bytes": 2467,
+          "sha256": "24eeaed4f6c837cef2c6b2cd4dd2fdae3a43165530305bc4e23632fa94a80c96"
+        },
+        {
+          "path": "bound_sources/2ba6d1cd7792476bcc21bb3aa223010b049cdae63dba864e47bcf104ee32a1fb/READ_BOUNDARY.json",
+          "bytes": 826,
+          "sha256": "2ba6d1cd7792476bcc21bb3aa223010b049cdae63dba864e47bcf104ee32a1fb"
+        },
+        {
+          "path": "bound_sources/433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d/REPORT.md",
+          "bytes": 13569,
+          "sha256": "433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d"
+        },
+        {
+          "path": "bound_sources/58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26/CUBIC_ENTROPY_PRINCIPAL_SYMBOL_CLASSIFICATION.md",
+          "bytes": 8801,
+          "sha256": "58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26"
+        },
+        {
+          "path": "bound_sources/5c3ad0cd053ea4822b1137953e6610300b25ed5f699867d410d7d943aa12a0a9/BASE_PRE_COMPARISON_SEAL.json",
+          "bytes": 2098,
+          "sha256": "5c3ad0cd053ea4822b1137953e6610300b25ed5f699867d410d7d943aa12a0a9"
+        },
+        {
+          "path": "bound_sources/60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe/INDEPENDENT.stdout",
+          "bytes": 3668,
+          "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe"
+        },
+        {
+          "path": "bound_sources/60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe/INDEPENDENT_RESULTS.json",
+          "bytes": 3668,
+          "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe"
+        },
+        {
+          "path": "bound_sources/635356b37538fd74e4e22743c6ff8f5ccb0e97ed98094c1ebfd7fe274e229abb/seal_review.py",
+          "bytes": 3687,
+          "sha256": "635356b37538fd74e4e22743c6ff8f5ccb0e97ed98094c1ebfd7fe274e229abb"
+        },
+        {
+          "path": "bound_sources/7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927/cubic_entropy_symbol_check.py",
+          "bytes": 7324,
+          "sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927"
+        },
+        {
+          "path": "bound_sources/838ea7fd17c83705ee1e80932284c374f6f6f7f267af9588106b3b36057f2154/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 6712,
+          "sha256": "838ea7fd17c83705ee1e80932284c374f6f6f7f267af9588106b3b36057f2154"
+        },
+        {
+          "path": "bound_sources/8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6/CUBIC_SYMBOL_SELECTION_RESULTS.json",
+          "bytes": 501,
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+        },
+        {
+          "path": "bound_sources/8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6/CUBIC_SYMBOL_SELECTION_RUN.log",
+          "bytes": 501,
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+        },
+        {
+          "path": "bound_sources/8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6/cubic_symbol_selection_check.py.stdout",
+          "bytes": 501,
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "bytes": 737,
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "path": "bound_sources/9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5/cubic_symbol_selection_check.py",
+          "bytes": 2020,
+          "sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5"
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "bytes": 14490,
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "path": "bound_sources/b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f/CUBIC_SYMBOL_REVERSAL_AND_CONSERVED_DIVERGENCES.md",
+          "bytes": 4508,
+          "sha256": "b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f"
+        },
+        {
+          "path": "bound_sources/bf5f1d5ef9f2cc62075893d7b37665e83885c149040aed3b09c6459df72779ad/selection_independent_check.py",
+          "bytes": 3517,
+          "sha256": "bf5f1d5ef9f2cc62075893d7b37665e83885c149040aed3b09c6459df72779ad"
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "bytes": 12253,
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/AUTHOR_COMPARISON.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/INDEPENDENT.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/SELECTION_INDEPENDENT.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/cubic_entropy_symbol_check.py.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/cubic_symbol_selection_check.py.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "bound_sources/eeed358d5c3c5b9f9a06a83a724e01a89453e9c7e3237eaa1f734ff0e2179d7d/SELECTION_PRE_COMPARISON.md",
+          "bytes": 3573,
+          "sha256": "eeed358d5c3c5b9f9a06a83a724e01a89453e9c7e3237eaa1f734ff0e2179d7d"
+        },
+        {
+          "path": "bound_sources/ef5cf371504281d6988f3ab8143f258632618ddd8e6ef07390910f6f8ba6f2c8/compare_author.py",
+          "bytes": 2793,
+          "sha256": "ef5cf371504281d6988f3ab8143f258632618ddd8e6ef07390910f6f8ba6f2c8"
+        },
+        {
+          "path": "bound_sources/f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8/AUTHOR_COMPARISON.stdout",
+          "bytes": 4285,
+          "sha256": "f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8"
+        },
+        {
+          "path": "bound_sources/f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8/AUTHOR_COMPARISON_RESULTS.json",
+          "bytes": 4285,
+          "sha256": "f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8"
+        },
+        {
+          "path": "review/AUTHOR_COMPARISON.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/AUTHOR_COMPARISON.stdout",
+          "bytes": 4285,
+          "sha256": "f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8"
+        },
+        {
+          "path": "review/AUTHOR_COMPARISON_RESULTS.json",
+          "bytes": 4285,
+          "sha256": "f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8"
+        },
+        {
+          "path": "review/BASE_PRE_COMPARISON_SEAL.json",
+          "bytes": 2098,
+          "sha256": "5c3ad0cd053ea4822b1137953e6610300b25ed5f699867d410d7d943aa12a0a9"
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "bytes": 12504,
+          "sha256": "485b0abf604335fd7cf93c18c933952a25877d9db39f42493a8e467d682a9fb1"
+        },
+        {
+          "path": "review/INDEPENDENT.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/INDEPENDENT.stdout",
+          "bytes": 3668,
+          "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe"
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "bytes": 3668,
+          "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe"
+        },
+        {
+          "path": "review/PRE_COMPARISON_DERIVATION.md",
+          "bytes": 6712,
+          "sha256": "838ea7fd17c83705ee1e80932284c374f6f6f7f267af9588106b3b36057f2154"
+        },
+        {
+          "path": "review/READ_BOUNDARY.json",
+          "bytes": 826,
+          "sha256": "2ba6d1cd7792476bcc21bb3aa223010b049cdae63dba864e47bcf104ee32a1fb"
+        },
+        {
+          "path": "review/REPORT.md",
+          "bytes": 13569,
+          "sha256": "433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d"
+        },
+        {
+          "path": "review/SELECTION_INDEPENDENT.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/SELECTION_INDEPENDENT.stdout",
+          "bytes": 1459,
+          "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9"
+        },
+        {
+          "path": "review/SELECTION_INDEPENDENT_RESULTS.json",
+          "bytes": 1459,
+          "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9"
+        },
+        {
+          "path": "review/SELECTION_PRE_COMPARISON.md",
+          "bytes": 3573,
+          "sha256": "eeed358d5c3c5b9f9a06a83a724e01a89453e9c7e3237eaa1f734ff0e2179d7d"
+        },
+        {
+          "path": "review/SELECTION_PRE_COMPARISON_SEAL.json",
+          "bytes": 2467,
+          "sha256": "24eeaed4f6c837cef2c6b2cd4dd2fdae3a43165530305bc4e23632fa94a80c96"
+        },
+        {
+          "path": "review/author_comparison_run/CUBIC_ENTROPY_SYMBOL_RESULTS.json",
+          "bytes": 1006,
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+        },
+        {
+          "path": "review/author_comparison_run/CUBIC_SYMBOL_SELECTION_RESULTS.json",
+          "bytes": 501,
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+        },
+        {
+          "path": "review/author_comparison_run/cubic_entropy_symbol_check.py",
+          "bytes": 7324,
+          "sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927"
+        },
+        {
+          "path": "review/author_comparison_run/cubic_entropy_symbol_check.py.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/author_comparison_run/cubic_entropy_symbol_check.py.stdout",
+          "bytes": 1006,
+          "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+        },
+        {
+          "path": "review/author_comparison_run/cubic_symbol_selection_check.py",
+          "bytes": 2020,
+          "sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5"
+        },
+        {
+          "path": "review/author_comparison_run/cubic_symbol_selection_check.py.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "review/author_comparison_run/cubic_symbol_selection_check.py.stdout",
+          "bytes": 501,
+          "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+        },
+        {
+          "path": "review/compare_author.py",
+          "bytes": 2793,
+          "sha256": "ef5cf371504281d6988f3ab8143f258632618ddd8e6ef07390910f6f8ba6f2c8"
+        },
+        {
+          "path": "review/independent_check.py",
+          "bytes": 7893,
+          "sha256": "1e8787e5d25417fcc8910b61f799c8b271d5c52d37186bca09ae3992c2fe5a0b"
+        },
+        {
+          "path": "review/seal_review.py",
+          "bytes": 3687,
+          "sha256": "635356b37538fd74e4e22743c6ff8f5ccb0e97ed98094c1ebfd7fe274e229abb"
+        },
+        {
+          "path": "review/selection_independent_check.py",
+          "bytes": 3517,
+          "sha256": "bf5f1d5ef9f2cc62075893d7b37665e83885c149040aed3b09c6459df72779ad"
+        }
+      ]
+    }
+  ]
+}

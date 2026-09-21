@@ -1,0 +1,72 @@
+{
+  "claim_id": "mobile_records_cubic_symbol_selection_and_gauss_closure_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_CUBIC_SYMBOL_SELECTION_AND_GAUSS_CLOSURE_BOUNDED_THEOREM_NOTE_2026-09-21.md": "a1e8be3e9d29e43324c5257e996f7501d1c44220e074dcbe118ae8bf060276f1",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0",
+    ".claude/science/mobile-record-cubic-selection-20260921/author_checks/cubic_entropy_symbol_check.py": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+    ".claude/science/mobile-record-cubic-selection-20260921/author_checks/cubic_symbol_selection_check.py": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+    "scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py": "3807ae952de8245d7606f21b4eb0617e43e22440c6c548ffc0fd5b4faf97536e"
+  },
+  "mutation": null,
+  "passed": true,
+  "control_count": 3,
+  "suites": [
+    {
+      "suite": "cubic_entropy_symbol_check.py",
+      "source_sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+      "executed_source_sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"author-checked finite classification; independent check pending\",\n  \"full_cubic_group_order\": 48,\n  \"full_cubic_symmetric_symbol_dimension_exact\": 5,\n  \"proper_cubic_symmetric_symbol_dimension_exact\": 11,\n  \"explicit_family_dimension\": 5,\n  \"group_covariance_max_abs_error\": 3.3306690738754696e-16,\n  \"exact_gram_formula\": \"verified by symbolic polynomial expansion\",\n  \"maxwell_nonzero_modes\": 4,\n  \"maxwell_zero_modes\": 10,\n  \"generic_nonzero_modes\": 6,\n  \"generic_zero_modes\": 8,\n  \"microscopic_current_derivative_max_abs_error\": 7.71046004821585e-10,\n  \"pair_tensor_row_sum_max_abs_error\": 3.552713678800501e-15,\n  \"telescoping_residual_max_abs_error\": 1.7763568394002505e-15,\n  \"swap_antisymmetry_max_abs_error\": 1.7763568394002505e-15,\n  \"limits\": [\n    \"uniform full-support fifteen-state product\",\n    \"full 48-element polar/axial cubic symmetry is added\",\n    \"first-order principal symbol only\",\n    \"no axiom selection, physical Maxwell identification or new limit theorem\"\n  ]\n}\n",
+      "stderr": "",
+      "results": {
+        "status": "author-checked finite classification; independent check pending",
+        "full_cubic_group_order": 48,
+        "full_cubic_symmetric_symbol_dimension_exact": 5,
+        "proper_cubic_symmetric_symbol_dimension_exact": 11,
+        "explicit_family_dimension": 5,
+        "group_covariance_max_abs_error": 3.3306690738754696e-16,
+        "exact_gram_formula": "verified by symbolic polynomial expansion",
+        "maxwell_nonzero_modes": 4,
+        "maxwell_zero_modes": 10,
+        "generic_nonzero_modes": 6,
+        "generic_zero_modes": 8,
+        "microscopic_current_derivative_max_abs_error": 7.71046004821585e-10,
+        "pair_tensor_row_sum_max_abs_error": 3.552713678800501e-15,
+        "telescoping_residual_max_abs_error": 1.7763568394002505e-15,
+        "swap_antisymmetry_max_abs_error": 1.7763568394002505e-15,
+        "limits": [
+          "uniform full-support fifteen-state product",
+          "full 48-element polar/axial cubic symmetry is added",
+          "first-order principal symbol only",
+          "no axiom selection, physical Maxwell identification or new limit theorem"
+        ]
+      }
+    },
+    {
+      "suite": "cubic_symbol_selection_check.py",
+      "source_sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+      "executed_source_sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+      "returncode": 0,
+      "stdout": "{\n  \"source_sha256\": \"9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5\",\n  \"exact_reversal_identity\": true,\n  \"raw_vector_Gauss_invariant_subspace_conditions\": [\n    \"a1=0\",\n    \"a2=0\",\n    \"u=0\",\n    \"v=0\"\n  ],\n  \"curl_readout_closed_conditions\": [\n    \"u=0\",\n    \"v=0\"\n  ],\n  \"curl_readout_evolution_residual_exact\": true,\n  \"scope\": \"Additional premises on the stated linear symbol; no new microscopic constraint, hydrodynamic theorem, state selection or physical Maxwell claim.\"\n}\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+        "exact_reversal_identity": true,
+        "raw_vector_Gauss_invariant_subspace_conditions": [
+          "a1=0",
+          "a2=0",
+          "u=0",
+          "v=0"
+        ],
+        "curl_readout_closed_conditions": [
+          "u=0",
+          "v=0"
+        ],
+        "curl_readout_evolution_residual_exact": true,
+        "scope": "Additional premises on the stated linear symbol; no new microscopic constraint, hydrodynamic theorem, state selection or physical Maxwell claim."
+      }
+    }
+  ],
+  "scope": "Author symbolic and finite numerical controls; not an independent audit or a replacement for the conditional proofs."
+}

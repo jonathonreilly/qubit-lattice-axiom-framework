@@ -1,0 +1,4 @@
+PASS: declared_sources_and_conditional_scope
+PASS: cubic_entropy_symbol_check.py: 1 complete assertion suite
+PASS: cubic_symbol_selection_check.py: 1 complete assertion suite
+TOTAL: PASS=3 FAIL=0

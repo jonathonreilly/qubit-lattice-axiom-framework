@@ -1,0 +1,16 @@
+{
+  "source_sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+  "exact_reversal_identity": true,
+  "raw_vector_Gauss_invariant_subspace_conditions": [
+    "a1=0",
+    "a2=0",
+    "u=0",
+    "v=0"
+  ],
+  "curl_readout_closed_conditions": [
+    "u=0",
+    "v=0"
+  ],
+  "curl_readout_evolution_residual_exact": true,
+  "scope": "Additional premises on the stated linear symbol; no new microscopic constraint, hydrodynamic theorem, state selection or physical Maxwell claim."
+}

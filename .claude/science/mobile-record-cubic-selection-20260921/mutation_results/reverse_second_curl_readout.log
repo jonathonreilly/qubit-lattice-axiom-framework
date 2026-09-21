@@ -1,0 +1,2 @@
+PASS: declared_sources_and_conditional_scope
+FAIL: cubic_symbol_selection_check.py AssertionError

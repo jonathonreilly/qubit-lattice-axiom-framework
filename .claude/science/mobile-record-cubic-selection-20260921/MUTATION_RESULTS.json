@@ -1,0 +1,41 @@
+{
+  "mutations": [
+    {
+      "name": "double_offdiagonal_Gram_weight",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "result_sha256": "534027e8bd78af54caff412ae1811ac92c879a2d4d725f6614a031b38fdb82ba"
+    },
+    {
+      "name": "halve_microscopic_pair_tensor",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "result_sha256": "54038b983371a4763dbe8782f70c28e579c6708ccac5e1faf0bd0ac327d1fbd6"
+    },
+    {
+      "name": "omit_axial_reflection_sign",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "result_sha256": "3221ce8c6ac5f7faedc1146a554c15735eab32702a7dc2c1d7dcb0ed6e67ef67"
+    },
+    {
+      "name": "omit_telescoping_term",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "result_sha256": "253412261735015d6c9584f59605e7af635c9df72088539e4526e6b1489740af"
+    },
+    {
+      "name": "reverse_second_curl_readout",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "result_sha256": "e3527de39413018f25644e28d448c6065a701f8ea4ac66bcf286f53fa75a1758"
+    },
+    {
+      "name": "use_proper_group_for_full_count",
+      "returncode": 1,
+      "assertion_rejected": true,
+      "result_sha256": "fbe3e9ba568ec6122fbe746148f193960afb5ad07e3d54fcb2c0b374298ae6a9"
+    }
+  ],
+  "all_rejected": true
+}

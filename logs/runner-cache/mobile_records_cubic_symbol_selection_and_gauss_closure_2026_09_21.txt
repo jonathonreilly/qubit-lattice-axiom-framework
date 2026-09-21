@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py
+runner_sha256: 3807ae952de8245d7606f21b4eb0617e43e22440c6c548ffc0fd5b4faf97536e
+input_fingerprint_sha256: e95b9a57916e7a276dfe35ec5bd68dc98b5970a0d88de4b3d66c9845eeabea8c
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: cubic_entropy_symbol_check.py: 1 complete assertion suite
+PASS: cubic_symbol_selection_check.py: 1 complete assertion suite
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

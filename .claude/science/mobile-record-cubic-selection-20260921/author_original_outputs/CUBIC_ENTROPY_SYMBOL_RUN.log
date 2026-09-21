@@ -1,0 +1,23 @@
+{
+  "status": "author-checked finite classification; independent check pending",
+  "full_cubic_group_order": 48,
+  "full_cubic_symmetric_symbol_dimension_exact": 5,
+  "proper_cubic_symmetric_symbol_dimension_exact": 11,
+  "explicit_family_dimension": 5,
+  "group_covariance_max_abs_error": 3.3306690738754696e-16,
+  "exact_gram_formula": "verified by symbolic polynomial expansion",
+  "maxwell_nonzero_modes": 4,
+  "maxwell_zero_modes": 10,
+  "generic_nonzero_modes": 6,
+  "generic_zero_modes": 8,
+  "microscopic_current_derivative_max_abs_error": 7.71046004821585e-10,
+  "pair_tensor_row_sum_max_abs_error": 3.552713678800501e-15,
+  "telescoping_residual_max_abs_error": 1.7763568394002505e-15,
+  "swap_antisymmetry_max_abs_error": 1.7763568394002505e-15,
+  "limits": [
+    "uniform full-support fifteen-state product",
+    "full 48-element polar/axial cubic symmetry is added",
+    "first-order principal symbol only",
+    "no axiom selection, physical Maxwell identification or new limit theorem"
+  ]
+}

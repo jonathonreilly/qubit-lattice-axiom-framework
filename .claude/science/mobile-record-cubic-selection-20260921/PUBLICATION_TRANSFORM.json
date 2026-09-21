@@ -1,0 +1,22 @@
+{
+  "note": "docs/MOBILE_RECORDS_CUBIC_SYMBOL_SELECTION_AND_GAUSS_CLOSURE_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "source": "CUBIC_ENTROPY_PRINCIPAL_SYMBOL_CLASSIFICATION.md",
+      "source_sha256": "58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26",
+      "published_body_sha256": "37f2fe6d241d9a61acdece47e872bb3b853d6f31cead8007ccecd6f7058e997b",
+      "replacement": {
+        "old": "An\nindependent check is requested separately; this file does not confer retained\nstatus.",
+        "new": "The separate independent report records its completed bounded check; this\nfile does not confer retained status."
+      },
+      "change": "Source title replaced; heading levels increased; one explicitly recorded review-status replacement, no mathematical change."
+    },
+    {
+      "source": "CUBIC_SYMBOL_REVERSAL_AND_CONSERVED_DIVERGENCES.md",
+      "source_sha256": "b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f",
+      "published_body_sha256": "bcad3d014565efe4d75b2847ba8782b7c83150ece34705a1203720cb1419417a",
+      "replacement": null,
+      "change": "Source title replaced; heading levels increased; one explicitly recorded review-status replacement, no mathematical change."
+    }
+  ]
+}

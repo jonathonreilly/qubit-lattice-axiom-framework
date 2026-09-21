@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_no_master_clock_neighbour_determined_scale_covariant_tick_rate_lattice_laplace_equation_additive_sources_2026_09_21.py
+runner_sha256: 55cf5bdc8fb03a08889f19c160481947078bbb61a491c3b9cb3af821a9b89e21
+input_fingerprint_sha256: 3dc7ab0bebec18d59e0339a4f599d99f137123f58047f6b5e7b27e59bf6efc52
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_NO_MASTER_CLOCK_A_NEIGHBOUR_DETERMINED_SCALE_COVARIANT_TICK_RATE_OBEYS_THE_LATTICE_LAPLACE_EQUATION_RECORDS_ENTER_AS_ADDITIVE_SOURCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the covariance sentence and says that Admissibility does not define a time metric
+PASS: B1 T1: the 24 proper rotations of the cube are transitive on the six nearest-neighbour directions (orbit of one direction: 6) and leave a 1-dimensional space of coefficient vectors unchanged: a covariant linear nearest-neighbour law has one coefficient c_1 for all six neighbours
+PASS: B2 T1: such a law admits the shift u -> u + const iff c_0 + 6 c_1 = 0, and then it is c_0 (u_x - (1/6) sum over the six neighbours) = s_x: minus c_0/6 times the lattice Laplace operator
+PASS: C1 T2: for four rational laws (arithmetic; harmonic; contraharmonic; pair ratio (2/5) e_2/e_1): symmetric under the 24 rotations, homogeneous of degree one, equal to one on uniform rates; the sum of w_i dF/dw_i equals F at a generic rational point, and at the uniform point all six first derivatives equal 1/6: every such law linearizes to u_x = (1/6) sum over the six neighbours
+PASS: C2 T2: the second order is not universal: with one neighbour at 11/10 and the opposite one at 9/10 the laws give 1 + 0, -1/298, 1/300, -1/1500: the weak-field equation is forced, its non-linear completion is not
+PASS: C3 T2: the geometric mean is multiplicative, that is exactly linear in u = log w; the symbol of the averaging law on a torus of side 4 is non-negative with a single zero at k = 0, while the product of the six rates (degree six, not scale covariant) has the symbol 1 - 2 sum cos k_i, from -5 to 7: it changes sign
+PASS: D1 T3: on the 3x3x3 torus the operator u_x - (1/6) sum of neighbours has rank 26 = 27 - 1; a source that sums to one has no solution, a source that sums to zero has one, and adding a constant to it gives another: only the part of the source with zero sum enters, and u is fixed up to the unobservable constant
+PASS: E1 T4: the clause 'a record's rate is kappa times the mean of its neighbours' rates' is unchanged when every rate is multiplied by t; the clause 'a record's rate is a fixed number' is not: without a master clock a record can enter only through a ratio, that is as the source log kappa in the equation for u
+PASS: E2 T4: on the 4x4x4 torus the field of three records is exactly the sum of their single fields, the field of one record at the site of another equals the converse (the pair term is symmetric), and with kappa < 1 the field is lowest at the record (u = -4551/12800 there, mean zero): clocks run slow near records, and sources add whatever their arrangement
+PASS: E3 T5: a test record that hops to each neighbour at the rate w_x/6, timed by the clock of the site it sits on, has the stationary law 1/w_x = exp(-u_x) (checked on the 3x3x3 torus with a rational rate field): it is found more often where clocks run slow; this is a drift, not an acceleration
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the 24 rotations, their orbit on the six directions and the one-dimensional space of invariant coefficient vectors; first derivatives of four rational laws at the uniform point, with exact dual numbers
+per_site: executed — the clause for a record under a change of the unit of rate: ratio law unchanged, pinned law changed; the stationary law 1/w of a test record at the 27 sites of a torus
+per_mode: executed — the symbols of the averaging law and of the product law on a torus of side 4
+per_block: executed — rank 26 of the law on the 3x3x3 torus and the solvability condition; exact additivity and symmetry of the fields of three records on the 4x4x4 torus
+lattice_wide: T1 and T2 are statements about every nearest-neighbour, covariant, scale-covariant law, the second at linear order; T3 and T4 are exact for the linear law on tori, and on the infinite lattice the field of finitely many records is the sum of their lattice potentials; T5 is exact for one test record; the clause itself, the value of kappa, inertia and any delay of the field are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: no master clock — a nearest-neighbour, covariant, scale-covariant law for the local tick rate linearizes to the lattice Laplace equation; the zero mode is unobservable; records can enter only through ratios, as additive sources; a test record timed by the local clock gathers where clocks run slow
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

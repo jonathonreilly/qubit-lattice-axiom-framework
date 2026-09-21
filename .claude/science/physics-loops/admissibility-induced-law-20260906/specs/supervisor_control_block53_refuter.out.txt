@@ -1,0 +1,8 @@
+PASS: W1 symbolic: covariance under quarter turns about two axes and the shift symmetry force every neighbour coefficient to be -c0/6
+PASS: W2 symbolic power mean of order p: first derivatives at the uniform point {1/6}; second-order coefficient p/6 - 1/6: it depends on p
+PASS: W3 one source on a 41^3 box with zero walls: the field's difference between r = 5 and 10 along an axis, over the difference of 1/r, is -0.1467; between r = 5.20 and 10.39 along a body diagonal -0.1413; against 6 log(kappa)/(4 pi) = -0.1432 on the infinite lattice; axis over diagonal 1.0380 (block 51's creeping wind had 1.30)
+PASS: W4 twelve records on a 16^3 torus: largest difference between the joint field and the sum of single fields 1.1e-16; pair term symmetric to 4.3e-19
+PASS: W5 simulation of a test record timed by the local clock (1500000 hops): share of time at each of the 27 sites against 1/w, largest relative difference 0.015
+REFUTER TOTAL: PASS=5 FAIL=0
+python3 "$P/supervisor_control_block53_refuter.py"  9.83s user 0.32s system 99% cpu 10.237 total
+exit=0

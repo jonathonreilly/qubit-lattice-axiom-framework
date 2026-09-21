@@ -1,6 +1,6 @@
 {
  "edge_count": 13606,
- "node_count": 6026,
+ "node_count": 6027,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -745,6 +745,10 @@
   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
+  },
+  "admissibility_rule_no_master_clock_a_neighbour_determined_scale_covariant_tick_rate_obeys_the_lattice_laplace_equation_records_enter_as_additive_sources_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8188f46b334d",

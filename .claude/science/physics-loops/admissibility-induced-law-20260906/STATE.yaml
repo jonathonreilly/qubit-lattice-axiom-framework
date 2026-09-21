@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block53: "opened for review 2026-09-21; first block of the source-link direction: no master clock (supplied clause: neighbour-determined, covariant, scale-covariant local tick rate) forces the lattice Laplacian as the weak-field law for u = log w, makes the zero mode unobservable, excludes pinned rates so that records enter as additive sources log kappa, and gives a site-timed test record the stationary law 1/w; the weak-field packet's operator, projection and additive source follow; left: one number kappa, the non-linear completion, inertia, delay; runner 16/0, ten mutations in family; parked decisions untouched; nothing adopted"

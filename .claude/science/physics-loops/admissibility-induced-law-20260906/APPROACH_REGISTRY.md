@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F53 no master clock | scale covariance of a neighbour-determined local rate (shift symmetry of its logarithm); transitivity of the cube's rotations on the six directions; the degree-one identity at the uniform point; ratio clauses against pinned clauses; detailed balance for site-timed hops | block 53 (a supplied clause for local tick rates) |

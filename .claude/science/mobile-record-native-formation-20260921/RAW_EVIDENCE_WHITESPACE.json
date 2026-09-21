@@ -1,0 +1,18 @@
+{
+  "status": "Explicit intentional-Markdown and byte-preserved-evidence exceptions; all other staged files pass",
+  "excluded_paths": [
+    ".claude/science/mobile-record-native-formation-20260921/SOURCE_CORRECTIONS.diff",
+    ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+    ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.txt",
+    ".claude/science/mobile-record-native-formation-20260921/independent_native_centering_REPORT.md",
+    "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+  ],
+  "reasons": [
+    "Unified-diff blank context lines contain their required single leading space.",
+    "Reviewed and current note use three intentional Markdown hard breaks.",
+    "Archived cache retains its original blank line after the empty stderr section.",
+    "The original independently sealed centering report has one trailing equation-space; its readable copy remains byte-identical."
+  ],
+  "raw_full_check_output": ".claude/science/mobile-record-native-formation-20260921/SOURCE_CORRECTIONS.diff:4: trailing whitespace.\n+ \n.claude/science/mobile-record-native-formation-20260921/SOURCE_CORRECTIONS.diff:6: trailing whitespace.\n+ \n.claude/science/mobile-record-native-formation-20260921/SOURCE_CORRECTIONS.diff:10: trailing whitespace.\n+ \n.claude/science/mobile-record-native-formation-20260921/SOURCE_CORRECTIONS.diff:20: trailing whitespace.\n+ \n.claude/science/mobile-record-native-formation-20260921/SOURCE_CORRECTIONS.diff:31: trailing whitespace.\n+ \n.claude/science/mobile-record-native-formation-20260921/SOURCE_CORRECTIONS.diff:39: trailing whitespace.\n+ \n.claude/science/mobile-record-native-formation-20260921/before_source_corrections/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md:13: trailing whitespace.\n+**Date:** 2026-09-21  \n.claude/science/mobile-record-native-formation-20260921/before_source_corrections/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md:14: trailing whitespace.\n+**Type:** bounded_theorem  \n.claude/science/mobile-record-native-formation-20260921/before_source_corrections/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md:15: trailing whitespace.\n+**Status:** proposed_retained  \n.claude/science/mobile-record-native-formation-20260921/before_source_corrections/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.txt:17: new blank line at EOF.\n.claude/science/mobile-record-native-formation-20260921/independent_native_centering_REPORT.md:182: trailing whitespace.\n+ &=8\\beta^2v(t)\\int_0^t F_N(\\kappa Nu)H(t-u)\\,du. \ndocs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md:13: trailing whitespace.\n+**Date:** 2026-09-21  \ndocs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md:14: trailing whitespace.\n+**Type:** bounded_theorem  \ndocs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md:15: trailing whitespace.\n+**Status:** proposed_retained  \n",
+  "all_other_staged_files_passed": true
+}

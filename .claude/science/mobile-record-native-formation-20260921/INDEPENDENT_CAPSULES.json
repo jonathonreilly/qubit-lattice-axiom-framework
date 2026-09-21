@@ -1,0 +1,19 @@
+{
+  "original_repository_root": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "original_campaign_root": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h",
+  "base_capsule_manifest": "../mobile-record-immutable-waves-20260921/INDEPENDENT_CAPSULES.json",
+  "capsules": [
+    {
+      "name": "independent_admissibility_euler",
+      "zip_sha256": "17229380d557a9eb9e174d8d7cecc5351c78ca35998b5b6a350b043ea1cb75f0",
+      "seal_sha256": "bcc3bc4ccdefc35df7fd42c8427b2fa7bd8350dab8a7471692ea169acd683c88",
+      "report_sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c"
+    },
+    {
+      "name": "independent_native_centering",
+      "zip_sha256": "9a5d845f4ff535977c3a2e71a7c8f112fa00ae34a188a2a6fdbb18e82727b0d1",
+      "seal_sha256": "cb26009a925ecd6861de994e57df67f904f906e5beac33aae6e6ed958b8a5d8e",
+      "report_sha256": "24b168b662c0e6f72f1b2f95a6efe7fb3440eb5b5d57addf951020335fe05f4e"
+    }
+  ]
+}

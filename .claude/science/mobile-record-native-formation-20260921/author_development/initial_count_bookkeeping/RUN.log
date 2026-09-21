@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/.claude/science/mobile-record-native-formation-20260921/run_author_checks.py", line 23, in <module>
+    assert 'FAIL:' in r.stdout if mutation else 'TOTAL: PASS=91 FAIL=0' in r.stdout
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

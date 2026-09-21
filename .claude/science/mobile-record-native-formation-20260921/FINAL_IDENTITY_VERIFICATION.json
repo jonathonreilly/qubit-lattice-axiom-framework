@@ -1,0 +1,445 @@
+{
+  "original_review": [
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/INDEPENDENT_CAPSULES.json",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/INDEPENDENT_CAPSULES.json",
+      "sha256": "ea804ea392e3d7a25d3dc07b6d0e8f9eaead351b231a7440175e4698a420d458"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context.zip",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context.zip",
+      "sha256": "b843367b33c5e975d03c231b15ece4b6e6170065843604dd5d4e6f7b14b35f13"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context_REPORT.md",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context_REPORT.md",
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_euler.zip",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_euler.zip",
+      "sha256": "9ee18b35b2b4bc58efce8c1dc621c055af7feb95d159e5538be156d2324bd423"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_euler_REPORT.md",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_euler_REPORT.md",
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange.zip",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange.zip",
+      "sha256": "a8ab8a141af1269e663f6ab16ff34ab08a31ad590782929120f56e1e0cfdcbe1"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange_REPORT.md",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange_REPORT.md",
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations.zip",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations.zip",
+      "sha256": "d31ecdd0dcf1c9fd457d33cb4c88ba6835d955a06fa9563fd569e38274816c44"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations_REPORT.md",
+      "verified_path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations_REPORT.md",
+      "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/AUTHOR_RUNS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/AUTHOR_RUNS.json",
+      "sha256": "5bb3a4fa8c5b4f7948bc7c1cba8e084e9ae715c6c8126f9d29e3c36493869b93"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/AUTHOR_VERIFICATION.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/AUTHOR_VERIFICATION.json",
+      "sha256": "e3e36108aee8175d4d7907e4a865c496f9e2a1e8c7f1788130984d5e03610b4d"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/INDEPENDENT_CAPSULES.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/INDEPENDENT_CAPSULES.json",
+      "sha256": "940a7fc418c4f931d220db817a439d4d7139592d6caae3b267f7d183cb3dcbae"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/PRIMARY_RESULTS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/PRIMARY_RESULTS.json",
+      "sha256": "23b65f0d96bb366e2853be286de9d012dbbe360bd40fb479dd488dfeb50c3380"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py",
+      "sha256": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py",
+      "sha256": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py",
+      "sha256": "4fd9b1947b07a3f13b5470bbabe14f2ad0d0bb28ce9344027c07a0cd1286f633"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/ADMISSIBILITY_FORMATION_EULER_RESULTS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/ADMISSIBILITY_FORMATION_EULER_RESULTS.json",
+      "sha256": "66fc6cc3a78e0467c149c8bc243f410ff32c1f88d2b01c70789f304bd8a224ed"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_CENTERING_INDEPENDENT_VERIFICATION.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_CENTERING_INDEPENDENT_VERIFICATION.json",
+      "sha256": "4286a51cb8f42ce6df63c86b1a3e53dcedf2ec9624dbb886870f2f6e57b4e61a"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_FORMATION_CENTERING_RESULTS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_FORMATION_CENTERING_RESULTS.json",
+      "sha256": "dd54debec13a366f711b67f47c5b7eba518b794e4b0b53ee94a2224690b9eae4"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_FORMATION_CENTERING_RUN.log",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_FORMATION_CENTERING_RUN.log",
+      "sha256": "d4a3fe0760d490faa833463858f947370fd4cc297ce1e1644ed4a64f216ab85d"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/AUTHOR_RUNS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/AUTHOR_RUNS.json",
+      "sha256": "953549d310497113ace5b5bc1390cbfb74c87812815c00ca30d232ac76f048ed"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/PRIMARY_RESULTS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/PRIMARY_RESULTS.json",
+      "sha256": "a91f7f8b264a462cad0c531a0cc6aca25fc9c373b36fa45f611dc7fcd87d9f70"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/RECEIPT.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/RECEIPT.json",
+      "sha256": "2ce990ee1018644c9980f464bf76f886ec604c5431216a0c98341e8462014ac4"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/RUN.log",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/RUN.log",
+      "sha256": "f0b9b3d622938b2e29824bf9260e2db460c0e5e30e4b4bfa9f5e0ecdd5024301"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/run_author_checks.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/run_author_checks.py",
+      "sha256": "ae11b790f0a7799e4b55ad4f7367b072e72502a8f577f0e541af0030a257d4eb"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/COMPLETED_CASES.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/COMPLETED_CASES.json",
+      "sha256": "43cb6366d40160fc6744d8ef14f15eb35d20eb0a314f039d44391493f70c920c"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/four_cycle_jet.npz",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/four_cycle_jet.npz",
+      "sha256": "fcf2ca91f572a4a179e07f540905df7c961ccb64987a3a5e70dc98d522484eb1"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L16.npz",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L16.npz",
+      "sha256": "bd502e51dc7b9d1ec03c2641a6c36ac090fc2b7d35cbeb73c1a2e22d8018d815"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L24.npz",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L24.npz",
+      "sha256": "e78db4c6408a0d0d7c02f8a945686bb14cc89a77c196a25c8da288f9d96acac2"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L32.npz",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L32.npz",
+      "sha256": "aba6e5f39d980db77ea54cf0d3691c2dd87ddea9acbf445f65c1d74bcabee061"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L4.npz",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L4.npz",
+      "sha256": "b061a7791d82623d9fd4ca59863a451a4c4ed18495104c66f58745abd34f6388"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L48.npz",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L48.npz",
+      "sha256": "9443a2dbbba15e2c13abccefc24a5481ced41b48ff1815732060e320fe2396ce"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L64.npz",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L64.npz",
+      "sha256": "ace545613e7a091473fe7eb37a1b4b21223423b7fa0a4059d3835b93eba4f137"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L8.npz",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L8.npz",
+      "sha256": "ec8cae424f94fb704491e77ebbf5cc70b866e7cdaeb58556f9791789dcb0935b"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/independent_admissibility_euler.zip",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/independent_admissibility_euler.zip",
+      "sha256": "17229380d557a9eb9e174d8d7cecc5351c78ca35998b5b6a350b043ea1cb75f0"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/independent_admissibility_euler_REPORT.md",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/independent_admissibility_euler_REPORT.md",
+      "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/independent_native_centering.zip",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/independent_native_centering.zip",
+      "sha256": "9a5d845f4ff535977c3a2e71a7c8f112fa00ae34a188a2a6fdbb18e82727b0d1"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/independent_native_centering_REPORT.md",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/independent_native_centering_REPORT.md",
+      "sha256": "24b168b662c0e6f72f1b2f95a6efe7fb3440eb5b5d57addf951020335fe05f4e"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_cubic_reward.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/half_cubic_reward.json",
+      "sha256": "2facf1e5095bfbbb455ac0413ae55a2ad5436a2e75a9d4c860c8c3bfeff27b5e"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_linear_vector_source.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/half_linear_vector_source.json",
+      "sha256": "4acb860d1117029e315882ab9aa94ef0528d53823123d37741228858156bc216"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_pair_source.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/half_pair_source.json",
+      "sha256": "e13e317cff878f67fbac2412cb19e1866a5aaeb7f1c51a7005846926ac05fff5"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_quadrupole_source.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/half_quadrupole_source.json",
+      "sha256": "d9e7b7cba548bb58f0bc9e9f201a774fc651ccf4b86a295546f31ae180aad56a"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_relative_diffusion.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/half_relative_diffusion.json",
+      "sha256": "211681bb549ae944569d94cb673253c7b83704c0f6235aa45fdb06e5438db4c0"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/omit_second_birth_endpoint.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/omit_second_birth_endpoint.json",
+      "sha256": "3fec6161945d8d4e43257d3b01db9f88fb13760c0ff7a0b9010d1388703a2e52"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/omit_time_dependent_entropy_weights.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/omit_time_dependent_entropy_weights.json",
+      "sha256": "28efc19f9c316f1fe7e6cc1ab2bdae28d8ebd9e5cd5cc5c85aeb5d2a3ba787f4"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/reverse_full_generator_quadratic_birth.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/reverse_full_generator_quadratic_birth.json",
+      "sha256": "e0194fe4cdd6d6b4127844c69e220e998bb0e3398c23b1495c70ccebedf37a32"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/wrong_Green_time_normalization.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/wrong_Green_time_normalization.json",
+      "sha256": "a5ed508b96d69f04fcf7adc67ba44e8999aee55af756e4f3b0e07bb0727e71a9"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/wrong_adjoint_vacancy_sign.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/wrong_adjoint_vacancy_sign.json",
+      "sha256": "5d359e46f7aeacd1ac1e05a5d02bc9a37cf9c2ccfe794dc93a4682c91f66d3e6"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/wrong_cubic_vector_source.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/wrong_cubic_vector_source.json",
+      "sha256": "5340467a356eba1f97985e14c343f583dbc41ede3a12bd42ba1adc01625a8972"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/wrong_reaction_power.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mutation_results/wrong_reaction_power.json",
+      "sha256": "f215efb6c10414e5ac41b60c8c8baacb2bc6996216a6d5f2cea7ea202c219bdd"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/run_author_checks.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/run_author_checks.py",
+      "sha256": "5e5cf7cf4bd8104426b441b75c5adc2f02c643fb4fdc1796e7741ee0e6f66cb3"
+    },
+    {
+      "group": "sources",
+      "sealed_path": ".claude/science/mobile-record-native-formation-20260921/verify_capsules.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/verify_capsules.py",
+      "sha256": "7b96aa6ac7aa60bbebb855d0570a208c923b53c393a27fc6bf8174c1fc614d82"
+    },
+    {
+      "group": "sources",
+      "sealed_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "verified_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "group": "sources",
+      "sealed_path": "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "verified_path": "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da"
+    },
+    {
+      "group": "sources",
+      "sealed_path": "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "2cb9e232400292ef28f75b16ebca67f30a335ed48c03af060180a4f4e7a8bf38"
+    },
+    {
+      "group": "sources",
+      "sealed_path": "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py",
+      "sha256": "fa22aa845d9aef1a1e0d99072ec93c719ec94abfa50e86d674022c0f067f450a"
+    },
+    {
+      "group": "procedure_identities",
+      "sealed_path": "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/AGENTS.md",
+      "verified_path": "AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "group": "procedure_identities",
+      "sealed_path": "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "verified_path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "group": "procedure_identities",
+      "sealed_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "verified_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "AUTHENTICATION.log",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/AUTHENTICATION.log",
+      "sha256": "f2fb29d6a08d44b941bf7737fea1e37ef034fa0e8577f433d59af55aec65d004"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "AUTHENTICATION_RESULTS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/AUTHENTICATION_RESULTS.json",
+      "sha256": "d5c3cc9d969ab5ce60fb2277c02b1b0aacbac317f498ae4eb319f0d0a3e3578f"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "CAPSULE_VERIFICATION.log",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/CAPSULE_VERIFICATION.log",
+      "sha256": "3a6f86066b92941440897a681be0f68e70144598f0713184fb1d71fae4e48847"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "CHECKPOINT.md",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/CHECKPOINT.md",
+      "sha256": "3ada454b0c8af11db897e040a04ae8cc58eba73b0325297eb0865b04cda63f60"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "FINDINGS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/FINDINGS.json",
+      "sha256": "40ba2b5dc767ab9615bd9c3546e4853d7f2e0f4d11a5fc8d772f2d8313510f19"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "INDEPENDENT_CHECK.log",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/INDEPENDENT_CHECK.log",
+      "sha256": "c6c864481329903121fa46a66b2c773ad89204f26ea8073ad3da80ab318b697d"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "INDEPENDENT_RESULTS.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/INDEPENDENT_RESULTS.json",
+      "sha256": "5acae2cd3f0fd0bab79f6d0e7fb1eb6d396cff27d35ed051e5a19e9e08aca9af"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "PROCEDURE_RECEIPT.json",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/PROCEDURE_RECEIPT.json",
+      "sha256": "90d0a6e37e508273d1c152d46a600c532d6894966376217ffc556606e7fc24a2"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "REPORT.md",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/REPORT.md",
+      "sha256": "fb89b36e2c8f2e47736778a16bc788a4e6b28aebf951133cf20714f800e213d8"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "authenticate_evidence.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/authenticate_evidence.py",
+      "sha256": "8b12ba2aea2f88ec4c7f6e995650df3525ceab221a3147cbe3d094aefa3c7e59"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "independent_check.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/independent_check.py",
+      "sha256": "61b4a7c53c73ed4f406019fb603dea9907c37e5b78627407d4188d5c9be63529"
+    },
+    {
+      "group": "artifacts",
+      "sealed_path": "seal_review.py",
+      "verified_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/seal_review.py",
+      "sha256": "7a92ba3582b1d943f64e8dd776ad64989f92ade0f7cfa4490d25a02d965f822f"
+    }
+  ],
+  "correction_ack_sha256": "02340de9df6a6b31a81d6adeffde38d45ba4b93a93159af1a4361d830cc8cd2d",
+  "author_runs_verified": 13,
+  "compiled_sources": [
+    "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py",
+    ".claude/science/mobile-record-native-formation-20260921/run_author_checks.py",
+    ".claude/science/mobile-record-native-formation-20260921/verify_capsules.py",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py",
+    ".claude/science/mobile-record-native-formation-20260921/final_source_review/seal_review.py",
+    ".claude/science/mobile-record-native-formation-20260921/final_source_review/authenticate_evidence.py",
+    ".claude/science/mobile-record-native-formation-20260921/final_source_review/independent_check.py",
+    ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py",
+    ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/run_author_checks.py"
+  ]
+}

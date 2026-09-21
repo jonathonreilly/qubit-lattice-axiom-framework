@@ -1,0 +1,169 @@
+{
+  "status": "primary_algebraic_controls_passed",
+  "checks": [
+    {
+      "name": "six_neighbor_multinomial_direct_hazard_average",
+      "passed": true,
+      "detail": {
+        "menus": 4,
+        "laws": 2,
+        "sectors": 924,
+        "labels": 6
+      }
+    },
+    {
+      "name": "direct_2401_state_birth_generator_first_moments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "negative_control_interacting_birth_law_is_not_product",
+      "passed": true,
+      "detail": {
+        "max_probability_derivative_residual": "7774371/367653125"
+      }
+    },
+    {
+      "name": "uniform_reference_birth_adjoint_upper_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reaction_adjoint_constant_and_first_order_cancellation",
+      "passed": true,
+      "detail": {
+        "menus": 4
+      }
+    },
+    {
+      "name": "complete_six_field_linear_reaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_nonlinear_density_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_nonlinear_vector_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_axis_occupation_source_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "uniform_linear_response_integrates_exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_longitudinal_characteristic_polynomial",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "product_hazard_averages": [
+    {
+      "menu": 0,
+      "law": 0,
+      "birth_means": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "menu": 0,
+      "law": 1,
+      "birth_means": [
+        "128100283921/823543000000",
+        "107918163081/823543000000",
+        "128100283921/823543000000",
+        "107918163081/823543000000",
+        "2176782336/12867859375",
+        "1544804416/12867859375"
+      ]
+    },
+    {
+      "menu": 1,
+      "law": 0,
+      "birth_means": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "menu": 1,
+      "law": 1,
+      "birth_means": [
+        "107918163081/823543000000",
+        "128100283921/823543000000",
+        "107918163081/823543000000",
+        "128100283921/823543000000",
+        "1544804416/12867859375",
+        "2176782336/12867859375"
+      ]
+    },
+    {
+      "menu": 2,
+      "law": 0,
+      "birth_means": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "menu": 2,
+      "law": 1,
+      "birth_means": [
+        "1572266908616041/12867859375000000",
+        "2140753641621841/12867859375000000",
+        "1572266908616041/12867859375000000",
+        "2140753641621841/12867859375000000",
+        "20924183895616/201060302734375",
+        "38806720086016/201060302734375"
+      ]
+    },
+    {
+      "menu": 3,
+      "law": 0,
+      "birth_means": [
+        "151334226289/278628139008",
+        "128100283921/278628139008",
+        "148035889/382205952",
+        "2565726409/4353564672",
+        "1/2",
+        "1838265625/4353564672"
+      ]
+    },
+    {
+      "menu": 3,
+      "law": 1,
+      "birth_means": [
+        "2436396322816/9380669484375",
+        "1265319018496/9380669484375",
+        "606355001344/9380669484375",
+        "148035889/600362847",
+        "2565726409/38423222208",
+        "887503681/5103000000"
+      ]
+    }
+  ],
+  "source_sha256": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+  "scope": "Finite and symbolic reaction controls only. General Euler convergence requires the explicit entropy proof and independent scrutiny."
+}

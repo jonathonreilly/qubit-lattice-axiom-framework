@@ -1,0 +1,455 @@
+{
+  "checks": [
+    {
+      "detail": null,
+      "name": "frozen_note"
+    },
+    {
+      "detail": null,
+      "name": "frozen_runner"
+    },
+    {
+      "detail": null,
+      "name": "recorded_current_identities"
+    },
+    {
+      "detail": 12,
+      "name": "baseline_and_complete_mutation_menu"
+    },
+    {
+      "detail": {
+        "controls": 25,
+        "suites": [
+          "admissibility_formation_euler_check.py",
+          "native_formation_centering_check.py",
+          "native_formation_energy_centering_check.py"
+        ]
+      },
+      "name": "authenticated_existing_baseline"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "bc5c4e110a933eae0be2edbf950e574776be29620e9cec7224b1defac0d7b637",
+        "failure": "AssertionError",
+        "suite": "admissibility_formation_euler_check.py"
+      },
+      "name": "authenticated_mutation_wrong_reaction_power"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "5d5bbe397631f69ffd72bcee4e5b079c0b9ec2e637638528a0052cd2a9d07ea8",
+        "failure": "AssertionError",
+        "suite": "admissibility_formation_euler_check.py"
+      },
+      "name": "authenticated_mutation_wrong_adjoint_vacancy_sign"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "a178dd1c4cd889c9ed3fd10d1661ca85d52d268e0a1073ea53d6b6863a429eb5",
+        "failure": "AssertionError: ('complete_six_field_linear_reaction', None)",
+        "suite": "admissibility_formation_euler_check.py"
+      },
+      "name": "authenticated_mutation_half_linear_vector_source"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "12204a4509b58c058d941329248048226ecf0afcad4f38c05547db9fc9cb8ad2",
+        "failure": "AssertionError",
+        "suite": "admissibility_formation_euler_check.py"
+      },
+      "name": "authenticated_mutation_half_quadrupole_source"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "6da70094ae34c52c944cb6b8adecfe16dd64e373e0436051c97444637214d96d",
+        "failure": "AssertionError",
+        "suite": "admissibility_formation_euler_check.py"
+      },
+      "name": "authenticated_mutation_wrong_cubic_vector_source"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "f2939675908c6d39c3fc7cd218936cb942e94b72815e9ce1cae2f6c0fe4a7313",
+        "failure": "AssertionError: ('complete_cycle_first_pair_response_matches_reflected_walk', {'maximum_error': 0.0019405677814175598})",
+        "suite": "native_formation_centering_check.py"
+      },
+      "name": "authenticated_mutation_half_relative_diffusion"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "9e3dfae5ec2f4d3f8ce813193ec3a7a6739d0e571cdca72c5cd030eef303c035",
+        "failure": "AssertionError: ('complete_cycle_first_pair_response_matches_reflected_walk', {'maximum_error': 0.017295039677671542})",
+        "suite": "native_formation_centering_check.py"
+      },
+      "name": "authenticated_mutation_half_pair_source"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "de60912f7b3b4f5db92e30c81426ab838d2f8abe378bda1cf652c2d1d256d528",
+        "failure": "AssertionError: ('complete_cycle_third_density_coefficient_matches_closure', {'maximum_error': 0.0008171619269125681, 'full_generator_final': 0.0016343238538251324, 'closed_response_final': 0.0008171619269125642})",
+        "suite": "native_formation_centering_check.py"
+      },
+      "name": "authenticated_mutation_half_cubic_reward"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "4126bf720b2f13cc16d005e8cfc93ee7d7b7d989a4c25dee94b0c883202fa788",
+        "failure": "AssertionError: ('complete_cycle_third_density_coefficient_matches_closure', {'maximum_error': 0.0032686477076502565, 'full_generator_final': -0.0016343238538251282, 'closed_response_final': 0.0016343238538251285})",
+        "suite": "native_formation_centering_check.py"
+      },
+      "name": "authenticated_mutation_reverse_full_generator_quadratic_birth"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "6c271460ff8745c45b462bd458b2e42e3c8b7f325cec289b82d3848a5045c2a9",
+        "failure": "AssertionError: ('nonautonomous_entropy_energy_identity', None)",
+        "suite": "native_formation_energy_centering_check.py"
+      },
+      "name": "authenticated_mutation_omit_time_dependent_entropy_weights"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "9f3ff971adc938f3c241f2b81d382baa5ecd902c53dbdcadbc340353fd6dc6fa",
+        "failure": "AssertionError: ('exact_initial_adjacent_component_covariance', None)",
+        "suite": "native_formation_energy_centering_check.py"
+      },
+      "name": "authenticated_mutation_omit_second_birth_endpoint"
+    },
+    {
+      "detail": {
+        "executed_source_sha256": "b3abbfd282e24de42afbde032bd59c3d1e099166758cd48ab07b51e172f0abe7",
+        "failure": "AssertionError: ('independent_Green_normalization_agrees', None)",
+        "suite": "native_formation_energy_centering_check.py"
+      },
+      "name": "authenticated_mutation_wrong_Green_time_normalization"
+    },
+    {
+      "detail": null,
+      "name": "preserved_nonmathematical_bookkeeping_failure"
+    },
+    {
+      "detail": [
+        {
+          "coefficient": 0.04296747934177147,
+          "side": 4
+        },
+        {
+          "coefficient": 0.026979750421026395,
+          "side": 8
+        },
+        {
+          "coefficient": 0.028330659127117665,
+          "side": 16
+        },
+        {
+          "coefficient": 0.029971654085403317,
+          "side": 24
+        },
+        {
+          "coefficient": 0.031055779968070817,
+          "side": 32
+        },
+        {
+          "coefficient": 0.03239899904529893,
+          "side": 48
+        },
+        {
+          "coefficient": 0.033223676086259764,
+          "side": 64
+        }
+      ],
+      "name": "seven_preserved_raw_size_cases"
+    },
+    {
+      "detail": {
+        "cubic": 4.7704895589362195e-18,
+        "final": 0.0016343238538251324,
+        "first_two": 3.8163916471489756e-17
+      },
+      "name": "cycle_prose_tolerances_match_preserved_arrays"
+    }
+  ],
+  "scope": "Authentication of existing evidence, not rerunning or independently validating the claimed mathematics.",
+  "sources": [
+    {
+      "bytes": 1739,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/INDEPENDENT_CAPSULES.json",
+      "sha256": "ea804ea392e3d7a25d3dc07b6d0e8f9eaead351b231a7440175e4698a420d458"
+    },
+    {
+      "bytes": 26160,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context.zip",
+      "sha256": "b843367b33c5e975d03c231b15ece4b6e6170065843604dd5d4e6f7b14b35f13"
+    },
+    {
+      "bytes": 19131,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_axis_balanced_context_REPORT.md",
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf"
+    },
+    {
+      "bytes": 22520,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_euler.zip",
+      "sha256": "9ee18b35b2b4bc58efce8c1dc621c055af7feb95d159e5538be156d2324bd423"
+    },
+    {
+      "bytes": 18148,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_euler_REPORT.md",
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+    },
+    {
+      "bytes": 18818,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange.zip",
+      "sha256": "a8ab8a141af1269e663f6ab16ff34ab08a31ad590782929120f56e1e0cfdcbe1"
+    },
+    {
+      "bytes": 13405,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_exchange_REPORT.md",
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713"
+    },
+    {
+      "bytes": 28473,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations.zip",
+      "sha256": "d31ecdd0dcf1c9fd457d33cb4c88ba6835d955a06fa9563fd569e38274816c44"
+    },
+    {
+      "bytes": 22838,
+      "path": ".claude/science/mobile-record-immutable-waves-20260921/independent_context_fluctuations_REPORT.md",
+      "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+    },
+    {
+      "bytes": 7814,
+      "path": ".claude/science/mobile-record-native-formation-20260921/AUTHOR_RUNS.json",
+      "sha256": "5bb3a4fa8c5b4f7948bc7c1cba8e084e9ae715c6c8126f9d29e3c36493869b93"
+    },
+    {
+      "bytes": 1397,
+      "path": ".claude/science/mobile-record-native-formation-20260921/AUTHOR_VERIFICATION.json",
+      "sha256": "e3e36108aee8175d4d7907e4a865c496f9e2a1e8c7f1788130984d5e03610b4d"
+    },
+    {
+      "bytes": 1033,
+      "path": ".claude/science/mobile-record-native-formation-20260921/INDEPENDENT_CAPSULES.json",
+      "sha256": "940a7fc418c4f931d220db817a439d4d7139592d6caae3b267f7d183cb3dcbae"
+    },
+    {
+      "bytes": 19737,
+      "path": ".claude/science/mobile-record-native-formation-20260921/PRIMARY_RESULTS.json",
+      "sha256": "23b65f0d96bb366e2853be286de9d012dbbe360bd40fb479dd488dfeb50c3380"
+    },
+    {
+      "bytes": 7294,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py",
+      "sha256": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49"
+    },
+    {
+      "bytes": 9584,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py",
+      "sha256": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee"
+    },
+    {
+      "bytes": 2726,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py",
+      "sha256": "4fd9b1947b07a3f13b5470bbabe14f2ad0d0bb28ce9344027c07a0cd1286f633"
+    },
+    {
+      "bytes": 3775,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/ADMISSIBILITY_FORMATION_EULER_RESULTS.json",
+      "sha256": "66fc6cc3a78e0467c149c8bc243f410ff32c1f88d2b01c70789f304bd8a224ed"
+    },
+    {
+      "bytes": 571,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_CENTERING_INDEPENDENT_VERIFICATION.json",
+      "sha256": "4286a51cb8f42ce6df63c86b1a3e53dcedf2ec9624dbb886870f2f6e57b4e61a"
+    },
+    {
+      "bytes": 5148,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_FORMATION_CENTERING_RESULTS.json",
+      "sha256": "dd54debec13a366f711b67f47c5b7eba518b794e4b0b53ee94a2224690b9eae4"
+    },
+    {
+      "bytes": 3643,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/NATIVE_FORMATION_CENTERING_RUN.log",
+      "sha256": "d4a3fe0760d490faa833463858f947370fd4cc297ce1e1644ed4a64f216ab85d"
+    },
+    {
+      "bytes": 1756,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/AUTHOR_RUNS.json",
+      "sha256": "953549d310497113ace5b5bc1390cbfb74c87812815c00ca30d232ac76f048ed"
+    },
+    {
+      "bytes": 19733,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/PRIMARY_RESULTS.json",
+      "sha256": "a91f7f8b264a462cad0c531a0cc6aca25fc9c373b36fa45f611dc7fcd87d9f70"
+    },
+    {
+      "bytes": 324,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/RECEIPT.json",
+      "sha256": "2ce990ee1018644c9980f464bf76f886ec604c5431216a0c98341e8462014ac4"
+    },
+    {
+      "bytes": 411,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/RUN.log",
+      "sha256": "f0b9b3d622938b2e29824bf9260e2db460c0e5e30e4b4bfa9f5e0ecdd5024301"
+    },
+    {
+      "bytes": 2381,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/initial_count_bookkeeping/run_author_checks.py",
+      "sha256": "ae11b790f0a7799e4b55ad4f7367b072e72502a8f577f0e541af0030a257d4eb"
+    },
+    {
+      "bytes": 3037,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/COMPLETED_CASES.json",
+      "sha256": "43cb6366d40160fc6744d8ef14f15eb35d20eb0a314f039d44391493f70c920c"
+    },
+    {
+      "bytes": 1870,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/four_cycle_jet.npz",
+      "sha256": "fcf2ca91f572a4a179e07f540905df7c961ccb64987a3a5e70dc98d522484eb1"
+    },
+    {
+      "bytes": 2063,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L16.npz",
+      "sha256": "bd502e51dc7b9d1ec03c2641a6c36ac090fc2b7d35cbeb73c1a2e22d8018d815"
+    },
+    {
+      "bytes": 2063,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L24.npz",
+      "sha256": "e78db4c6408a0d0d7c02f8a945686bb14cc89a77c196a25c8da288f9d96acac2"
+    },
+    {
+      "bytes": 2060,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L32.npz",
+      "sha256": "aba6e5f39d980db77ea54cf0d3691c2dd87ddea9acbf445f65c1d74bcabee061"
+    },
+    {
+      "bytes": 2061,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L4.npz",
+      "sha256": "b061a7791d82623d9fd4ca59863a451a4c4ed18495104c66f58745abd34f6388"
+    },
+    {
+      "bytes": 2061,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L48.npz",
+      "sha256": "9443a2dbbba15e2c13abccefc24a5481ced41b48ff1815732060e320fe2396ce"
+    },
+    {
+      "bytes": 2059,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L64.npz",
+      "sha256": "ace545613e7a091473fe7eb37a1b4b21223423b7fa0a4059d3835b93eba4f137"
+    },
+    {
+      "bytes": 2062,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_development/native_formation_centering/three_dimensional_L8.npz",
+      "sha256": "ec8cae424f94fb704491e77ebbf5cc70b866e7cdaeb58556f9791789dcb0935b"
+    },
+    {
+      "bytes": 31406,
+      "path": ".claude/science/mobile-record-native-formation-20260921/independent_admissibility_euler.zip",
+      "sha256": "17229380d557a9eb9e174d8d7cecc5351c78ca35998b5b6a350b043ea1cb75f0"
+    },
+    {
+      "bytes": 21955,
+      "path": ".claude/science/mobile-record-native-formation-20260921/independent_admissibility_euler_REPORT.md",
+      "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c"
+    },
+    {
+      "bytes": 24315,
+      "path": ".claude/science/mobile-record-native-formation-20260921/independent_native_centering.zip",
+      "sha256": "9a5d845f4ff535977c3a2e71a7c8f112fa00ae34a188a2a6fdbb18e82727b0d1"
+    },
+    {
+      "bytes": 19751,
+      "path": ".claude/science/mobile-record-native-formation-20260921/independent_native_centering_REPORT.md",
+      "sha256": "24b168b662c0e6f72f1b2f95a6efe7fb3440eb5b5d57addf951020335fe05f4e"
+    },
+    {
+      "bytes": 3385,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_cubic_reward.json",
+      "sha256": "2facf1e5095bfbbb455ac0413ae55a2ad5436a2e75a9d4c860c8c3bfeff27b5e"
+    },
+    {
+      "bytes": 2905,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_linear_vector_source.json",
+      "sha256": "4acb860d1117029e315882ab9aa94ef0528d53823123d37741228858156bc216"
+    },
+    {
+      "bytes": 2932,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_pair_source.json",
+      "sha256": "e13e317cff878f67fbac2412cb19e1866a5aaeb7f1c51a7005846926ac05fff5"
+    },
+    {
+      "bytes": 2699,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_quadrupole_source.json",
+      "sha256": "d9e7b7cba548bb58f0bc9e9f201a774fc651ccf4b86a295546f31ae180aad56a"
+    },
+    {
+      "bytes": 2940,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/half_relative_diffusion.json",
+      "sha256": "211681bb549ae944569d94cb673253c7b83704c0f6235aa45fdb06e5438db4c0"
+    },
+    {
+      "bytes": 2477,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/omit_second_birth_endpoint.json",
+      "sha256": "3fec6161945d8d4e43257d3b01db9f88fb13760c0ff7a0b9010d1388703a2e52"
+    },
+    {
+      "bytes": 2352,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/omit_time_dependent_entropy_weights.json",
+      "sha256": "28efc19f9c316f1fe7e6cc1ab2bdae28d8ebd9e5cd5cc5c85aeb5d2a3ba787f4"
+    },
+    {
+      "bytes": 3406,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/reverse_full_generator_quadratic_birth.json",
+      "sha256": "e0194fe4cdd6d6b4127844c69e220e998bb0e3398c23b1495c70ccebedf37a32"
+    },
+    {
+      "bytes": 2554,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/wrong_Green_time_normalization.json",
+      "sha256": "a5ed508b96d69f04fcf7adc67ba44e8999aee55af756e4f3b0e07bb0727e71a9"
+    },
+    {
+      "bytes": 2444,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/wrong_adjoint_vacancy_sign.json",
+      "sha256": "5d359e46f7aeacd1ac1e05a5d02bc9a37cf9c2ccfe794dc93a4682c91f66d3e6"
+    },
+    {
+      "bytes": 2814,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/wrong_cubic_vector_source.json",
+      "sha256": "5340467a356eba1f97985e14c343f583dbc41ede3a12bd42ba1adc01625a8972"
+    },
+    {
+      "bytes": 2464,
+      "path": ".claude/science/mobile-record-native-formation-20260921/mutation_results/wrong_reaction_power.json",
+      "sha256": "f215efb6c10414e5ac41b60c8c8baacb2bc6996216a6d5f2cea7ea202c219bdd"
+    },
+    {
+      "bytes": 2465,
+      "path": ".claude/science/mobile-record-native-formation-20260921/run_author_checks.py",
+      "sha256": "5e5cf7cf4bd8104426b441b75c5adc2f02c643fb4fdc1796e7741ee0e6f66cb3"
+    },
+    {
+      "bytes": 2653,
+      "path": ".claude/science/mobile-record-native-formation-20260921/verify_capsules.py",
+      "sha256": "7b96aa6ac7aa60bbebb855d0570a208c923b53c393a27fc6bf8174c1fc614d82"
+    },
+    {
+      "bytes": 11333,
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "bytes": 23487,
+      "path": "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da"
+    },
+    {
+      "bytes": 34168,
+      "path": "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "2cb9e232400292ef28f75b16ebca67f30a335ed48c03af060180a4f4e7a8bf38"
+    },
+    {
+      "bytes": 6392,
+      "path": "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py",
+      "sha256": "fa22aa845d9aef1a1e0d99072ec93c719ec94abfa50e86d674022c0f067f450a"
+    }
+  ]
+}

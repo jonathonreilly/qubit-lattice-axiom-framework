@@ -1,0 +1,41 @@
+--- reviewed/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md
++++ corrected/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md
+@@ -109,11 +109,12 @@
+ 
+ Stationarity of pi for exchanges and the same logarithmic inequality yield
+ 
+-    integral_0^T D_N(sqrt(f_t))dt
++    integral_0^T D_N(f_t)dt
+       <= N^3[log 7+beta max(1,W_max)^6 T]/(N c_*).            (4)
+ 
+-Here D_N denotes the same unweighted swap square-difference form as in the
+-checked proof, with its convention fixed there. The finite count-sector
++Here f_t=dmu_t^N/dpi is the density relative to the uniform product and
++D_N(f)=sum_e E_pi[(sqrt(f(eta^e))-sqrt(f(eta)))^2], the unweighted
++swap square-difference form used in the checked proof. The finite count-sector
+ Poincare comparison and marginal Hellinger bound depend only on (4), the
+ positive exchange floor, and count-sector connectivity. Births need not
+ preserve a count sector. They therefore still give one-block replacement
+@@ -220,10 +221,11 @@
+ 
+ This is linear response about the continuum background, for each component.
+ It is a ratio of continuum fields, not an expectation of a random ratio.
+-For j=1/2 the normalized gain is strictly decreasing before saturation when
++For beta>0 and j=1/2 the normalized gain is strictly decreasing before saturation when
+ 0<rho<1. For j>1/2 it can begin increasing after rho>1/(2j), but its total
+ absolute amplification is bounded by exp[2j(1-rho0)] for positive j.
+-Negative j damps the absolute uniform vector perturbation. None of this
++For beta>0, negative j damps the absolute uniform vector perturbation.
++At beta=0 both uniform gains in (13) are identically one. None of this
+ proves the fate of finite perturbations or stochastic ordering.
+ 
+ At quadratic order, B_(r_i)=30 beta p0 j^2(g_i^2-|g|^2/3)+O(|g|^4).
+--- reviewed/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py
++++ corrected/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Source-bound exact controls for the native formation and cubic-centering theorem note.
++"""Source-bound symbolic and numerical controls for the native formation and cubic-centering theorem note.
+ 
+ The complete finite calculations live in declared auxiliary author sources.
+ They are copied into a temporary directory before execution, so this runner

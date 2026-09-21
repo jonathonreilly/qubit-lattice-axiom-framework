@@ -1,0 +1,98 @@
+{
+  "bindings": [
+    {
+      "final_bytes": 34314,
+      "final_sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+      "forward_diff_matches_final": true,
+      "hunks": 2,
+      "inverse_diff_recovers_reviewed_bytes": true,
+      "inverse_recovery_sha256": "2cb9e232400292ef28f75b16ebca67f30a335ed48c03af060180a4f4e7a8bf38",
+      "preserved_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "reviewed_bytes": 34168,
+      "reviewed_sha256": "2cb9e232400292ef28f75b16ebca67f30a335ed48c03af060180a4f4e7a8bf38",
+      "source": "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+    },
+    {
+      "final_bytes": 6409,
+      "final_sha256": "29036ba51666a372b0c296533afcbe8ea48dce80b5020bb6625fa8dfef0b4632",
+      "forward_diff_matches_final": true,
+      "hunks": 1,
+      "inverse_diff_recovers_reviewed_bytes": true,
+      "inverse_recovery_sha256": "fa22aa845d9aef1a1e0d99072ec93c719ec94abfa50e86d674022c0f067f450a",
+      "preserved_path": ".claude/science/mobile-record-native-formation-20260921/before_source_corrections/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py",
+      "reviewed_bytes": 6392,
+      "reviewed_sha256": "fa22aa845d9aef1a1e0d99072ec93c719ec94abfa50e86d674022c0f067f450a",
+      "source": "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py"
+    }
+  ],
+  "complete_diff": {
+    "bytes": 2444,
+    "equals_full_computed_delta": true,
+    "files": 2,
+    "hunks": 3,
+    "path": ".claude/science/mobile-record-native-formation-20260921/SOURCE_CORRECTIONS.diff",
+    "sha256": "f58928a732671b80eaeef5113e3bf70db7e9888a1eefa6c636f7275877f268f1"
+  },
+  "created_utc": "2026-09-21T08:02:01.974622+00:00",
+  "disposition": "F1 and F2 are closed in the identified final note; the runner docstring accurately names symbolic and numerical controls. No new mathematical claim or computational change is introduced by this complete delta.",
+  "findings": [
+    {
+      "id": "F1",
+      "reason": "The inherited square-root-density Dirichlet form now takes f_t, and both density and form are explicitly defined.",
+      "status": "closed"
+    },
+    {
+      "id": "F2",
+      "reason": "Strict gain decrease and damping are restricted to positive beta; the zero-birth gains are explicitly constant.",
+      "status": "closed"
+    }
+  ],
+  "named_future_obligations_unchanged": [
+    "Uniform fixed-j Taylor remainder",
+    "Native interacting fluctuation replacement/limit",
+    "Cubic centering response for nonzero context drive"
+  ],
+  "original_review": {
+    "all_original_review_artifacts_unchanged": true,
+    "artifact_count": 12,
+    "report_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/REPORT.md",
+    "report_sha256": "fb89b36e2c8f2e47736778a16bc788a4e6b28aebf951133cf20714f800e213d8",
+    "seal_path": ".claude/science/mobile-record-native-formation-20260921/final_source_review/SOURCE_REVIEW_SEAL.json",
+    "seal_sha256": "4a7801bd150558693073d3971af1e03de222d8496a822f7da74da8bb4bfeb42f"
+  },
+  "remaining_mathematical_findings": [],
+  "runner_change": {
+    "after": "Source-bound symbolic and numerical controls",
+    "before": "Source-bound exact controls",
+    "full_AST_unchanged_after_removing_module_docstring": true,
+    "kind": "Opening module docstring only"
+  },
+  "scope": "Narrow correction acknowledgment after the complete frozen-source review; no broad rerun or audit verdict.",
+  "unchanged_scientific_sources": [
+    {
+      "bytes": 7294,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py",
+      "sha256": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+      "unchanged_from_review": true
+    },
+    {
+      "bytes": 9584,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py",
+      "sha256": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee",
+      "unchanged_from_review": true
+    },
+    {
+      "bytes": 2726,
+      "path": ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py",
+      "sha256": "4fd9b1947b07a3f13b5470bbabe14f2ad0d0bb28ce9344027c07a0cd1286f633",
+      "unchanged_from_review": true
+    }
+  ],
+  "verification": {
+    "git_PR_audit_actions": false,
+    "mathematical_checks_rerun": false,
+    "method": "Generated the complete unified delta from preserved/current bytes; compared it byte-for-byte with supplied diff; applied all hunks in memory in both directions with exact context/count checks; verified preserved identities against original review seal and unchanged checker identities.",
+    "outputs_and_cache_read_or_sealed": false,
+    "production_sources_changed": false
+  }
+}

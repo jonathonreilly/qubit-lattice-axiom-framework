@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_native_formation_euler_and_cubic_centering_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py": "4fd9b1947b07a3f13b5470bbabe14f2ad0d0bb28ce9344027c07a0cd1286f633",
+    "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py": "29036ba51666a372b0c296533afcbe8ea48dce80b5020bb6625fa8dfef0b4632"
+  },
+  "mutation": "wrong_adjoint_vacancy_sign",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "admissibility_formation_euler_check.py",
+      "source_sha256": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+      "executed_source_sha256": "5d5bbe397631f69ffd72bcee4e5b079c0b9ec2e637638528a0052cd2a9d07ea8",
+      "returncode": 1,
+      "stdout": "PASS: six_neighbor_multinomial_direct_hazard_average\nPASS: direct_2401_state_birth_generator_first_moments\nPASS: negative_control_interacting_birth_law_is_not_product\nPASS: uniform_reference_birth_adjoint_upper_bound\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-formation-controls-w5c5kk76/admissibility_formation_euler_check.py\", line 149, in <module>\n    if __name__=='__main__': main()\n                             ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-formation-controls-w5c5kk76/admissibility_formation_euler_check.py\", line 107, in main\n    assert s.simplify(Vbar.subs(subs))==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

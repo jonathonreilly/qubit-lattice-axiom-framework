@@ -1,0 +1,130 @@
+{
+  "identities": {
+    "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py": "fa22aa845d9aef1a1e0d99072ec93c719ec94abfa50e86d674022c0f067f450a",
+    "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md": "2cb9e232400292ef28f75b16ebca67f30a335ed48c03af060180a4f4e7a8bf38",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py": "4fd9b1947b07a3f13b5470bbabe14f2ad0d0bb28ce9344027c07a0cd1286f633"
+  },
+  "runs": [
+    {
+      "mutation": null,
+      "returncode": 0,
+      "elapsed_seconds": 14.577925292076543,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nPASS: admissibility_formation_euler_check.py: 11 declared controls\nPASS: native_formation_centering_check.py: 7 declared controls\nPASS: native_formation_energy_centering_check.py: 6 declared controls\nTOTAL: PASS=25 FAIL=0\n",
+      "stderr": "",
+      "result_path": "PRIMARY_RESULTS.json",
+      "result_sha256": "23b65f0d96bb366e2853be286de9d012dbbe360bd40fb479dd488dfeb50c3380"
+    },
+    {
+      "mutation": "wrong_reaction_power",
+      "returncode": 1,
+      "elapsed_seconds": 1.4717391659505665,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: admissibility_formation_euler_check.py AssertionError\n",
+      "stderr": "",
+      "result_path": "mutation_results/wrong_reaction_power.json",
+      "result_sha256": "f215efb6c10414e5ac41b60c8c8baacb2bc6996216a6d5f2cea7ea202c219bdd"
+    },
+    {
+      "mutation": "wrong_adjoint_vacancy_sign",
+      "returncode": 1,
+      "elapsed_seconds": 1.9226436668541282,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: admissibility_formation_euler_check.py AssertionError\n",
+      "stderr": "",
+      "result_path": "mutation_results/wrong_adjoint_vacancy_sign.json",
+      "result_sha256": "5d359e46f7aeacd1ac1e05a5d02bc9a37cf9c2ccfe794dc93a4682c91f66d3e6"
+    },
+    {
+      "mutation": "half_linear_vector_source",
+      "returncode": 1,
+      "elapsed_seconds": 1.7314028749242425,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: admissibility_formation_euler_check.py AssertionError: ('complete_six_field_linear_reaction', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/half_linear_vector_source.json",
+      "result_sha256": "4acb860d1117029e315882ab9aa94ef0528d53823123d37741228858156bc216"
+    },
+    {
+      "mutation": "half_quadrupole_source",
+      "returncode": 1,
+      "elapsed_seconds": 1.9521390828303993,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: admissibility_formation_euler_check.py AssertionError\n",
+      "stderr": "",
+      "result_path": "mutation_results/half_quadrupole_source.json",
+      "result_sha256": "d9e7b7cba548bb58f0bc9e9f201a774fc651ccf4b86a295546f31ae180aad56a"
+    },
+    {
+      "mutation": "wrong_cubic_vector_source",
+      "returncode": 1,
+      "elapsed_seconds": 1.7486290000379086,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: admissibility_formation_euler_check.py AssertionError\n",
+      "stderr": "",
+      "result_path": "mutation_results/wrong_cubic_vector_source.json",
+      "result_sha256": "5340467a356eba1f97985e14c343f583dbc41ede3a12bd42ba1adc01625a8972"
+    },
+    {
+      "mutation": "half_relative_diffusion",
+      "returncode": 1,
+      "elapsed_seconds": 0.6943466251250356,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: native_formation_centering_check.py AssertionError: ('complete_cycle_first_pair_response_matches_reflected_walk', {'maximum_error': 0.0019405677814175598})\n",
+      "stderr": "",
+      "result_path": "mutation_results/half_relative_diffusion.json",
+      "result_sha256": "211681bb549ae944569d94cb673253c7b83704c0f6235aa45fdb06e5438db4c0"
+    },
+    {
+      "mutation": "half_pair_source",
+      "returncode": 1,
+      "elapsed_seconds": 0.5587571659125388,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: native_formation_centering_check.py AssertionError: ('complete_cycle_first_pair_response_matches_reflected_walk', {'maximum_error': 0.017295039677671542})\n",
+      "stderr": "",
+      "result_path": "mutation_results/half_pair_source.json",
+      "result_sha256": "e13e317cff878f67fbac2412cb19e1866a5aaeb7f1c51a7005846926ac05fff5"
+    },
+    {
+      "mutation": "half_cubic_reward",
+      "returncode": 1,
+      "elapsed_seconds": 0.5575811669696122,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: native_formation_centering_check.py AssertionError: ('complete_cycle_third_density_coefficient_matches_closure', {'maximum_error': 0.0008171619269125681, 'full_generator_final': 0.0016343238538251324, 'closed_response_final': 0.0008171619269125642})\n",
+      "stderr": "",
+      "result_path": "mutation_results/half_cubic_reward.json",
+      "result_sha256": "2facf1e5095bfbbb455ac0413ae55a2ad5436a2e75a9d4c860c8c3bfeff27b5e"
+    },
+    {
+      "mutation": "reverse_full_generator_quadratic_birth",
+      "returncode": 1,
+      "elapsed_seconds": 0.5627228750381619,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: native_formation_centering_check.py AssertionError: ('complete_cycle_third_density_coefficient_matches_closure', {'maximum_error': 0.0032686477076502565, 'full_generator_final': -0.0016343238538251282, 'closed_response_final': 0.0016343238538251285})\n",
+      "stderr": "",
+      "result_path": "mutation_results/reverse_full_generator_quadratic_birth.json",
+      "result_sha256": "e0194fe4cdd6d6b4127844c69e220e998bb0e3398c23b1495c70ccebedf37a32"
+    },
+    {
+      "mutation": "omit_time_dependent_entropy_weights",
+      "returncode": 1,
+      "elapsed_seconds": 0.9173994578886777,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: native_formation_energy_centering_check.py AssertionError: ('nonautonomous_entropy_energy_identity', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/omit_time_dependent_entropy_weights.json",
+      "result_sha256": "28efc19f9c316f1fe7e6cc1ab2bdae28d8ebd9e5cd5cc5c85aeb5d2a3ba787f4"
+    },
+    {
+      "mutation": "omit_second_birth_endpoint",
+      "returncode": 1,
+      "elapsed_seconds": 0.8499735000077635,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: native_formation_energy_centering_check.py AssertionError: ('exact_initial_adjacent_component_covariance', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/omit_second_birth_endpoint.json",
+      "result_sha256": "3fec6161945d8d4e43257d3b01db9f88fb13760c0ff7a0b9010d1388703a2e52"
+    },
+    {
+      "mutation": "wrong_Green_time_normalization",
+      "returncode": 1,
+      "elapsed_seconds": 1.0356529590208083,
+      "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: native_formation_energy_centering_check.py AssertionError: ('independent_Green_normalization_agrees', None)\n",
+      "stderr": "",
+      "result_path": "mutation_results/wrong_Green_time_normalization.json",
+      "result_sha256": "a5ed508b96d69f04fcf7adc67ba44e8999aee55af756e4f3b0e07bb0727e71a9"
+    }
+  ]
+}

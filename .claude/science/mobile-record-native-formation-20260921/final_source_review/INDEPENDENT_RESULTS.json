@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "pair_states": 6,
+        "triple_states": 12
+      },
+      "name": "four_cycle_full_stirring_projection"
+    },
+    {
+      "detail": {
+        "maximum": 2,
+        "nonzero_entries": 28
+      },
+      "name": "four_cycle_blocked_vector_vacancy_swap_is_detected"
+    },
+    {
+      "detail": {
+        "pair_states": 6,
+        "triple_states": 12
+      },
+      "name": "four_site_star_full_stirring_projection"
+    },
+    {
+      "detail": {
+        "maximum": 2,
+        "nonzero_entries": 21
+      },
+      "name": "four_site_star_blocked_vector_vacancy_swap_is_detected"
+    },
+    {
+      "detail": {
+        "coordinates": [
+          "density",
+          "g1",
+          "g2",
+          "g3",
+          "r1",
+          "r2"
+        ],
+        "r3": "-r1-r2"
+      },
+      "name": "all_six_fields_arbitrary_complex_Fourier_energy"
+    },
+    {
+      "detail": null,
+      "name": "frozen_acoustic_speed_from_inherited_amplitude"
+    },
+    {
+      "detail": {
+        "D_f": "64/41",
+        "D_sqrt_f": "4*sqrt(41)/41",
+        "density": [
+          "1/41",
+          "81/41"
+        ]
+      },
+      "name": "Dirichlet_density_argument_is_not_square_root_argument"
+    },
+    {
+      "detail": {
+        "exact_Cauchy_bound": "1",
+        "maximum_path_length": 4
+      },
+      "name": "puncture_extension_paths_side_4"
+    },
+    {
+      "detail": {
+        "exact_Cauchy_bound": "1",
+        "maximum_path_length": 4
+      },
+      "name": "puncture_extension_paths_side_5"
+    },
+    {
+      "detail": null,
+      "name": "complex_neighbor_extension_variance_identity"
+    }
+  ],
+  "scope": "Exact finite/symbolic selective controls, not a numerical proof of the uniform heat or entropy limit.",
+  "source_sha256": "61b4a7c53c73ed4f406019fb603dea9907c37e5b78627407d4188d5c9be63529",
+  "versions": {
+    "sympy": "1.14.0"
+  }
+}

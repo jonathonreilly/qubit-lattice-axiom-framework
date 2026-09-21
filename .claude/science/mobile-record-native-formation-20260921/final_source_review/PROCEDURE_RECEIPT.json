@@ -1,0 +1,50 @@
+{
+  "excluded": [
+    "Git/PR/audit actions",
+    "Production-source edits",
+    "Graph/cache review or seal",
+    "External communications or delegation",
+    "Unrelated sources and new external literature"
+  ],
+  "execution": [
+    {
+      "exit_code": 0,
+      "mode": "authenticate existing baseline/mutations and raw arrays; no author rerun",
+      "script": "authenticate_evidence.py",
+      "stdout_and_stderr": "AUTHENTICATION.log"
+    },
+    {
+      "exit_code": 0,
+      "mode": "one new exact finite/symbolic run; ten groups; deliberate negative controls included",
+      "script": "independent_check.py",
+      "stdout_and_stderr": "INDEPENDENT_CHECK.log"
+    },
+    {
+      "exit_code": 0,
+      "mode": "read-only archive/dependency byte verification",
+      "script": "../verify_capsules.py",
+      "stdout_and_stderr": "CAPSULE_VERIFICATION.log"
+    }
+  ],
+  "frozen_sources_reauthenticated": 56,
+  "instructions": [
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 14490,
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "new_failed_executions": [],
+  "scope": "Post-source complete mathematical review; earlier sealed blind results reused by identity.",
+  "source_read_scope": "Complete note, runner and all three scientific checkers; relevant inherited proof premises and authenticated independent capsule dependencies."
+}

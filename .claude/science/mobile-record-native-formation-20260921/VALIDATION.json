@@ -1,0 +1,64 @@
+{
+  "verified_utc": "2026-09-21T08:09:26.448626+00:00",
+  "base_commit": "6aaa725a086377dfbca541fec3f453024d67b774",
+  "final_sources_sha256": {
+    "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py": "29036ba51666a372b0c296533afcbe8ea48dce80b5020bb6625fa8dfef0b4632",
+    "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py": "4fd9b1947b07a3f13b5470bbabe14f2ad0d0bb28ce9344027c07a0cd1286f633"
+  },
+  "primary_controls": 25,
+  "mutations_rejected": 12,
+  "complete_source_review_findings_remaining": 0,
+  "review_seal_sha256": "4a7801bd150558693073d3971af1e03de222d8496a822f7da74da8bb4bfeb42f",
+  "correction_ack_sha256": "02340de9df6a6b31a81d6adeffde38d45ba4b93a93159af1a4361d830cc8cd2d",
+  "original_review_source_procedure_and_artifact_identities_verified": 71,
+  "python_sources_compiled": 11,
+  "canonical_cache": {
+    "path": "logs/runner-cache/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.txt",
+    "sha256": "a35e7d418920a8446551e9e90fe7ffbff0aab41282af73afb5fd8795b37642e3",
+    "status": "fresh"
+  },
+  "citation_topology": {
+    "before_counts": {
+      "node_count": 6027,
+      "edge_count": 13607
+    },
+    "after_counts": {
+      "node_count": 6028,
+      "edge_count": 13609
+    },
+    "added": {
+      "mobile_records_native_formation_euler_and_cubic_centering_bounded_theorem_note_2026-09-21": {
+        "deps_hash": "031ce03f42db",
+        "out_degree": 2
+      }
+    },
+    "removed": [],
+    "changed_existing": {}
+  },
+  "capsules": {
+    "capsules": 6,
+    "sealed_artifacts": 61,
+    "source_links": 27,
+    "instruction_snapshots": 4
+  },
+  "vocabulary_check": {
+    "report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "files_with_violations": 0
+  },
+  "pending_combined_candidate_gates": [
+    "full pipeline",
+    "strict audit lint",
+    "changed-evidence integration"
+  ],
+  "independent_audit_verdict": null,
+  "editable_prompt_files_changed": [],
+  "staged_whitespace_check": {
+    "receipt": "RAW_EVIDENCE_WHITESPACE.json",
+    "status": "Explicit intentional-Markdown and byte-preserved-evidence exceptions; all other staged files pass"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "failure": "Copied author-evidence wrapper expected previous milestone count91 instead of this runners actual25. All mathematical baseline controls passed; no mutation ran in this attempt.",
+  "scientific_sources_changed": false,
+  "baseline_sha256": "a91f7f8b264a462cad0c531a0cc6aca25fc9c373b36fa45f611dc7fcd87d9f70"
+}

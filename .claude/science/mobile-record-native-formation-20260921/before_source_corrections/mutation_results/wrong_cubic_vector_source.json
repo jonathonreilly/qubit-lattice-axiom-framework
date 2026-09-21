@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_native_formation_euler_and_cubic_centering_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md": "2cb9e232400292ef28f75b16ebca67f30a335ed48c03af060180a4f4e7a8bf38",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py": "4fd9b1947b07a3f13b5470bbabe14f2ad0d0bb28ce9344027c07a0cd1286f633",
+    "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py": "fa22aa845d9aef1a1e0d99072ec93c719ec94abfa50e86d674022c0f067f450a"
+  },
+  "mutation": "wrong_cubic_vector_source",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "admissibility_formation_euler_check.py",
+      "source_sha256": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+      "executed_source_sha256": "6da70094ae34c52c944cb6b8adecfe16dd64e373e0436051c97444637214d96d",
+      "returncode": 1,
+      "stdout": "PASS: six_neighbor_multinomial_direct_hazard_average\nPASS: direct_2401_state_birth_generator_first_moments\nPASS: negative_control_interacting_birth_law_is_not_product\nPASS: uniform_reference_birth_adjoint_upper_bound\nPASS: reaction_adjoint_constant_and_first_order_cancellation\nPASS: complete_six_field_linear_reaction\nPASS: full_nonlinear_density_source\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-formation-controls-yfitnh7d/admissibility_formation_euler_check.py\", line 149, in <module>\n    if __name__=='__main__': main()\n                             ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-formation-controls-yfitnh7d/admissibility_formation_euler_check.py\", line 126, in main\n    assert all(s.expand(plus-minus-beta*(1-rho)*(12*j*g+20*j**3*g**3+12*j**5*g**5))==0\n           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n               for plus,minus,g in zip(source_plus,source_minus,gs))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

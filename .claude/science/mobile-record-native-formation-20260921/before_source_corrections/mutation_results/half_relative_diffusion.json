@@ -1,0 +1,24 @@
+{
+  "claim_id": "mobile_records_native_formation_euler_and_cubic_centering_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md": "2cb9e232400292ef28f75b16ebca67f30a335ed48c03af060180a4f4e7a8bf38",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/admissibility_formation_euler_check.py": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_centering_check.py": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee",
+    ".claude/science/mobile-record-native-formation-20260921/author_checks/native_formation_energy_centering_check.py": "4fd9b1947b07a3f13b5470bbabe14f2ad0d0bb28ce9344027c07a0cd1286f633",
+    "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py": "fa22aa845d9aef1a1e0d99072ec93c719ec94abfa50e86d674022c0f067f450a"
+  },
+  "mutation": "half_relative_diffusion",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "native_formation_centering_check.py",
+      "source_sha256": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee",
+      "executed_source_sha256": "f2939675908c6d39c3fc7cd218936cb942e94b72815e9ce1cae2f6c0fe4a7313",
+      "returncode": 1,
+      "stdout": "PASS: complete_cycle_uniform_product_baseline {\"states\": 2401, \"jet_states\": 9604, \"nonzeros\": 91336, \"mass_error\": 6.661338147750939e-16}\nPASS: complete_cycle_first_two_density_coefficients_vanish {\"maximum\": 3.8163916471489756e-17}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-formation-controls-hj0h_h8b/native_formation_centering_check.py\", line 166, in <module>\n    if __name__=='__main__': main()\n                             ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-formation-controls-hj0h_h8b/native_formation_centering_check.py\", line 127, in main\n    check('complete_cycle_first_pair_response_matches_reflected_walk',pair_error<3e-12,dict(maximum_error=float(pair_error)))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/native-formation-controls-hj0h_h8b/native_formation_centering_check.py\", line 118, in check\n    assert condition,(name,detail)\n           ^^^^^^^^^\nAssertionError: ('complete_cycle_first_pair_response_matches_reflected_walk', {'maximum_error': 0.0019405677814175598})\n"
+    }
+  ]
+}

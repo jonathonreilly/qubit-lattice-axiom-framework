@@ -1,0 +1,158 @@
+{
+  "source_sha256": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee",
+  "checks": [
+    {
+      "name": "complete_cycle_uniform_product_baseline",
+      "passed": true,
+      "detail": {
+        "states": 2401,
+        "jet_states": 9604,
+        "nonzeros": 91336,
+        "mass_error": 6.661338147750939e-16
+      }
+    },
+    {
+      "name": "complete_cycle_first_two_density_coefficients_vanish",
+      "passed": true,
+      "detail": {
+        "maximum": 3.8163916471489756e-17
+      }
+    },
+    {
+      "name": "complete_cycle_first_pair_response_matches_reflected_walk",
+      "passed": true,
+      "detail": {
+        "maximum_error": 1.0408340855860843e-17
+      }
+    },
+    {
+      "name": "complete_cycle_vacancy_weighted_pair_projection",
+      "passed": true,
+      "detail": {
+        "maximum_error": 8.673617379884035e-18
+      }
+    },
+    {
+      "name": "complete_cycle_third_density_coefficient_matches_closure",
+      "passed": true,
+      "detail": {
+        "maximum_error": 4.7704895589362195e-18,
+        "full_generator_final": 0.0016343238538251324,
+        "closed_response_final": 0.0016343238538251285
+      }
+    },
+    {
+      "name": "positive_third_response_at_positive_times",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Green_integral_and_positive_star_coefficient",
+      "passed": true,
+      "detail": {
+        "G0": 0.25273100985866565,
+        "Astar": 0.7909651478799846,
+        "quadpack_error_estimate": 4.5297099404706387e-13,
+        "limit": "Numerical quadrature with an error estimate, not an interval certificate."
+      }
+    }
+  ],
+  "cases": [
+    {
+      "side": 4,
+      "beta": 0.2,
+      "kappa": 0.75,
+      "v0": 0.6,
+      "elapsed_seconds": 0.009117791894823313,
+      "scaled_final_density_coefficient": 0.04296747934177147,
+      "target_final_coefficient": 0.038973228044900304,
+      "relative_final_deviation": 0.10248705322200835,
+      "raw_sha256": "b061a7791d82623d9fd4ca59863a451a4c4ed18495104c66f58745abd34f6388",
+      "relative_states": 63,
+      "sparse_nonzeros": 465
+    },
+    {
+      "side": 8,
+      "beta": 0.2,
+      "kappa": 0.75,
+      "v0": 0.6,
+      "elapsed_seconds": 0.023138457909226418,
+      "scaled_final_density_coefficient": 0.026979750421026395,
+      "target_final_coefficient": 0.038973228044900304,
+      "relative_final_deviation": -0.30773631606949403,
+      "raw_sha256": "ec8cae424f94fb704491e77ebbf5cc70b866e7cdaeb58556f9791789dcb0935b",
+      "relative_states": 511,
+      "sparse_nonzeros": 3601
+    },
+    {
+      "side": 16,
+      "beta": 0.2,
+      "kappa": 0.75,
+      "v0": 0.6,
+      "elapsed_seconds": 0.07307104207575321,
+      "scaled_final_density_coefficient": 0.028330659127117665,
+      "target_final_coefficient": 0.038973228044900304,
+      "relative_final_deviation": -0.27307383687903763,
+      "raw_sha256": "bd502e51dc7b9d1ec03c2641a6c36ac090fc2b7d35cbeb73c1a2e22d8018d815",
+      "relative_states": 4095,
+      "sparse_nonzeros": 28689
+    },
+    {
+      "side": 24,
+      "beta": 0.2,
+      "kappa": 0.75,
+      "v0": 0.6,
+      "elapsed_seconds": 0.2847215000074357,
+      "scaled_final_density_coefficient": 0.029971654085403317,
+      "target_final_coefficient": 0.038973228044900304,
+      "relative_final_deviation": -0.23096813918329906,
+      "raw_sha256": "e78db4c6408a0d0d7c02f8a945686bb14cc89a77c196a25c8da288f9d96acac2",
+      "relative_states": 13823,
+      "sparse_nonzeros": 96785
+    },
+    {
+      "side": 32,
+      "beta": 0.2,
+      "kappa": 0.75,
+      "v0": 0.6,
+      "elapsed_seconds": 0.6986713749356568,
+      "scaled_final_density_coefficient": 0.031055779968070817,
+      "target_final_coefficient": 0.038973228044900304,
+      "relative_final_deviation": -0.20315094422530122,
+      "raw_sha256": "aba6e5f39d980db77ea54cf0d3691c2dd87ddea9acbf445f65c1d74bcabee061",
+      "relative_states": 32767,
+      "sparse_nonzeros": 229393
+    },
+    {
+      "side": 48,
+      "beta": 0.2,
+      "kappa": 0.75,
+      "v0": 0.6,
+      "elapsed_seconds": 2.535906041972339,
+      "scaled_final_density_coefficient": 0.03239899904529893,
+      "target_final_coefficient": 0.038973228044900304,
+      "relative_final_deviation": -0.16868577044804534,
+      "raw_sha256": "9443a2dbbba15e2c13abccefc24a5481ced41b48ff1815732060e320fe2396ce",
+      "relative_states": 110591,
+      "sparse_nonzeros": 774161
+    },
+    {
+      "side": 64,
+      "beta": 0.2,
+      "kappa": 0.75,
+      "v0": 0.6,
+      "elapsed_seconds": 7.4288690409157425,
+      "scaled_final_density_coefficient": 0.033223676086259764,
+      "target_final_coefficient": 0.038973228044900304,
+      "relative_final_deviation": -0.14752567973113728,
+      "raw_sha256": "ace545613e7a091473fe7eb37a1b4b21223423b7fa0a4059d3835b93eba4f137",
+      "relative_states": 262143,
+      "sparse_nonzeros": 1835025
+    }
+  ],
+  "versions": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "scope": "Numerical complete-generator Taylor-jet controls and exact-response finite-size calculations. These do not prove the heat-kernel limit or uniformity of the Taylor remainder in the alignment parameter."
+}

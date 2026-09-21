@@ -1,0 +1,10 @@
+{
+  "counts": {
+    "sources": 56,
+    "procedure_identities": 3,
+    "artifacts": 12
+  },
+  "complete_report_and_checker_read": true,
+  "report_sha256": "fb89b36e2c8f2e47736778a16bc788a4e6b28aebf951133cf20714f800e213d8",
+  "scope": "Source/evidence authentication and full proof reading; F1 and F2 still require the narrow corrections."
+}

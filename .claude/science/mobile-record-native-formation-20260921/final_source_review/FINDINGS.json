@@ -1,0 +1,28 @@
+{
+  "scope": "Final publication-source mathematical review; no audit or retention verdict.",
+  "note_sha256": "2cb9e232400292ef28f75b16ebca67f30a335ed48c03af060180a4f4e7a8bf38",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "notation affecting a load-bearing estimate",
+      "line": 112,
+      "status": "open_in_frozen_source",
+      "correction": "Use D_N(f_t), define f_t=dmu_t^N/dpi and D_N(f)=sum_e E_pi[(sqrt(f^e)-sqrt(f))^2].",
+      "changes_to_theorem": false
+    },
+    {
+      "id": "F2",
+      "severity": "boundary-case precision",
+      "line": 223,
+      "status": "open_in_frozen_source",
+      "correction": "Scope strict decay/damping of uniform gains to beta>0; beta=0 gives constant gains.",
+      "changes_to_theorem": false
+    }
+  ],
+  "other_unresolved_mathematical_findings": [],
+  "named_unproved_extensions": [
+    "Uniform fixed-j Taylor remainder",
+    "Fluctuation replacement and limit for native driven births",
+    "Cubic coefficient for nonzero context drive"
+  ]
+}

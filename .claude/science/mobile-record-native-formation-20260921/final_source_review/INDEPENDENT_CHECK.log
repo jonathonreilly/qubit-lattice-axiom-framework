@@ -1,0 +1,11 @@
+VERIFIED four_cycle_full_stirring_projection {"pair_states": 6, "triple_states": 12}
+VERIFIED four_cycle_blocked_vector_vacancy_swap_is_detected {"maximum": 2, "nonzero_entries": 28}
+VERIFIED four_site_star_full_stirring_projection {"pair_states": 6, "triple_states": 12}
+VERIFIED four_site_star_blocked_vector_vacancy_swap_is_detected {"maximum": 2, "nonzero_entries": 21}
+VERIFIED all_six_fields_arbitrary_complex_Fourier_energy {"coordinates": ["density", "g1", "g2", "g3", "r1", "r2"], "r3": "-r1-r2"}
+VERIFIED frozen_acoustic_speed_from_inherited_amplitude null
+VERIFIED Dirichlet_density_argument_is_not_square_root_argument {"D_f": "64/41", "D_sqrt_f": "4*sqrt(41)/41", "density": ["1/41", "81/41"]}
+VERIFIED puncture_extension_paths_side_4 {"exact_Cauchy_bound": "1", "maximum_path_length": 4}
+VERIFIED puncture_extension_paths_side_5 {"exact_Cauchy_bound": "1", "maximum_path_length": 4}
+VERIFIED complex_neighbor_extension_variance_identity null
+SELECTIVE_EXACT_GROUPS 10

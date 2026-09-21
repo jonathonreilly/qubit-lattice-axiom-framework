@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py
+runner_sha256: 29036ba51666a372b0c296533afcbe8ea48dce80b5020bb6625fa8dfef0b4632
+input_fingerprint_sha256: 4d288f4b5bd369b00b3fee3514ec4cc17058b678c34cdb34a9dbfa95bf954490
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 15.01
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: admissibility_formation_euler_check.py: 11 declared controls
+PASS: native_formation_centering_check.py: 7 declared controls
+PASS: native_formation_energy_centering_check.py: 6 declared controls
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

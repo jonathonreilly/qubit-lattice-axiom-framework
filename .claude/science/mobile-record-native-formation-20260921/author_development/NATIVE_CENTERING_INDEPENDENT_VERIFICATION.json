@@ -1,0 +1,12 @@
+{
+  "seal_sha256": "cb26009a925ecd6861de994e57df67f904f906e5beac33aae6e6ed958b8a5d8e",
+  "counts": {
+    "artifacts": 10,
+    "source_identities": 3,
+    "instruction_identities": 2
+  },
+  "raw_log_matches_results": true,
+  "full_report_and_checker_read": true,
+  "normalization_match": "Independent dot-product C equals three times primary one-component C; independent g for 2*Delta equals primary G/2; independent Gcal=3*Astar. The large-N density coefficients coincide.",
+  "scope": "Source identities verified and arguments compared; no independent audit verdict."
+}

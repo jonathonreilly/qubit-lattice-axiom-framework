@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-clumping-line-p12",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 4 1 2 1 0.3 24 3000 1",
+ "seed": 25406,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ac35fa6",
+ "started_utc": "20260921T211646Z",
+ "elapsed_s": 121.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=4.0 q=1.0 r=2.0 c=1.0000 rho=0.3 L=24 nbrs=2.678 nbrs_over_random=1.488 aligned=0.321 S=1.73 accept=0.342 records=4173 seconds=121"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: records that move. Where do records clump on the line (p,1,2)? First look (density 0.3): onset near p = 10 at the neutral scale, between 5 and 6 at scale 1. The table over p, scale and density is the map. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 132 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "6d712ac429c2cc92c73df8d56218f16f20868311a0171e91d24f24a6a3503514",
+ "stdout_tail": "weights (4.0,1.0,2.0) scale c=1.0000 (1) rho=0.3 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=1.800 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 2.356 0.247 0.409 0.35\n     2 2.367 0.277 0.364 0.26\n     4 2.486 0.290 0.359 0.22\n     9 2.569 0.309 0.346 0.30\n    18 2.626 0.318 0.338 0.42\n    38 2.676 0.310 0.342 1.32\n    79 2.671 0.318 0.339 1.21\n   163 2.668 0.311 0.348 1.52\n   338 2.669 0.319 0.344 0.24\n   700 2.697 0.309 0.342 2.34\n  1449 2.703 0.332 0.341 1.38\n  3000 2.694 0.319 0.343 0.38\nSUMMARY: p=4.0 q=1.0 r=2.0 c=1.0000 rho=0.3 L=24 nbrs=2.678 nbrs_over_random=1.488 aligned=0.321 S=1.73 accept=0.342 records=4173 seconds=121\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T211848Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

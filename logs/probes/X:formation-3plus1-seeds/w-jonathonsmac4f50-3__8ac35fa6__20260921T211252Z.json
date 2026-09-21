@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-seeds",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 3 48 3000 1500 5",
+ "seed": 25172,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ac35fa6",
+ "started_utc": "20260921T211252Z",
+ "elapsed_s": 47.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=3.0 L=48 T=3000 plateau_|m|=0.8386 lowk_ratio=0.9855 seconds=48"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Error bars for the key points: five seeds each. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 30 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "28672e097a1699a13332423fbb80bab7c7b994ec1fc917a5d126506ec2f9abbf",
+ "stdout_tail": "       10  0.8567  +0.8567\n        14  0.8525  +0.8525\n        20  0.8494  +0.8494\n        28  0.8466  +0.8466\n        39  0.8457  +0.8457\n        55  0.8438  +0.8438\n        76  0.8429  +0.8428\n       107  0.8418  +0.8417\n       149  0.8411  +0.8410\n       208  0.8413  +0.8411\n       290  0.8394  +0.8389\n       405  0.8403  +0.8395\n       566  0.8388  +0.8383\n       790  0.8395  +0.8392\n      1103  0.8379  +0.8372\n      1539  0.8353  +0.8352\n      2149  0.8367  +0.8360\n      3000  0.8372  +0.8357\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.9855 (n=56)\n   |k| in [0.3,0.6): 1.0101 (n=380)\n   |k| in [0.6,1.0): 1.0171 (n=1426)\n   |k| in [1.0,1.5): 1.0176 (n=4492)\n   |k| in [1.5,2.2): 1.0200 (n=13578)\n   |k| in [2.2,3.2): 1.0232 (n=41209)\n   |k| in [3.2,6.0): 1.0243 (n=49450)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.032804  +0.032783  1.001  +0.03278\n     2  +0.014860  +0.015086  0.985  +0.03017\n     3  +0.008904  +0.009192  0.969  +0.02758\n     4  +0.005969  +0.006302  0.947  +0.02521\n     6  +0.003059  +0.003445  0.888  +0.02067\n     8  +0.001670  +0.002036  0.820  +0.01629\n    12  +0.000223  +0.000677  0.330  +0.00813\n    16  -0.000431  +0.000069  -6.220  +0.00111\n    24  -0.000366  -0.000295  1.239  -0.00709\nSUMMARY: dim=3 menu=sphere beta=3.0 L=48 T=3000 plateau_|m|=0.8386 lowk_ratio=0.9855 seconds=48\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T211340Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

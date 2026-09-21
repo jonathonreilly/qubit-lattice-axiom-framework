@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 60 — author checks (not a review PASS)
+Written lens pass by the supervisor. One design statement was broken while writing the control (the box's ledger is the walls' term, not zero) and one supervisor's guess was corrected by the refuting pass (the closed lattice's residual has infimum zero, approached as a site's length shrinks; the theorem stands by an identity). Control: brute-force stationary point in 250 variables against the closed form to six digits over four decades of bare energy. Refuting pass W1–W6 (6/0). Census 13/13 in family.

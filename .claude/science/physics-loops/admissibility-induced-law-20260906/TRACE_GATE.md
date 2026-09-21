@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 60 (2026-09-21)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 59: what fixes beta; a law of motion for lengths; block 55 T4(b): the unit of rate is not a variable"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "a ledger linear in the rates gives beta = 1 for the member built on the curvature of the stretched lattice, with p, K and the kinetic sign declared; the isotropic lengths carry no delay; next: the direction-dependent parts as the carrier of a delay; internal hop energy and P = Q"
+```

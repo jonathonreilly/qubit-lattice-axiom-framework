@@ -1,0 +1,8 @@
+# Block 60 — results (2026-09-21)
+
+- Runner `scripts/admissibility_rule_a_ledger_linear_in_the_rates_every_clock_a_multiplier_the_ledger_a_wall_term_2026_09_21.py`: `TOTAL: PASS=25 FAIL=0`; 13 mutations, each in its own family.
+- T1/T2: on a `5³` box with a hopping rational amplitude both ledgers are of weight one and the sum over all sites of `w ∂𝓔/∂w` (exact differences) is the ledger; block 56's ledger is positive at three configurations (1164.001, 1173.604, 1400.671); the linear field energy takes both signs (−9, 45/4), is additive in the rate vector, and its rate-derivative holds no rate; on a `3×3×4` torus `ΣΔχ = 0` against a demand of −0.599.
+- T3: six members' second-order jets; `β = 1, 1/3, 2/3, 1/4, −1/2, 1`; bilinear members `β = 1/p` for `p = 1, 2, 3`; the curvature identity `volume × curvature = −8χ∇²χ` by exact symbolic algebra; gradients `4KΔλ` and `4K(Δu + Δλ)`; the hop-energy derivative.
+- T4 (`7³` box, `8K = 6`, `g_0 = 0.229`): one body `Q = 5/2`: bare energy 23.586, clock at 0.466, ledger 15 = `m/χ_0` = walls' term; three bodies `Q = 3/2, 1/3, 4`: clocks at 0.572, 0.823, 0.371, `ΣP = 2.617 < ΣQ = 5.833`, ledger 35 of bare 58.850; Hessian minors 1.146, 4.096, 2.732; slope in the mutual potential −0.717; block 56 at the same bare energy 12.413 against 15, its bound 26.206 against 6000 at `Q = 1000`; `κ = 0.693, 0.905, 0.468`; bending over fall 2.364 at `Q = 5/2`.
+- T5: the far length responds at the same label time (0.185 millionths for a source of 1/100); uniform motion `ℓ = (1 + t/t_0)^{2/s}` and the kept constraint by exact symbolic algebra.
+- Controls: brute-force stationary point in 250 variables against the closed form to six digits for bare energies 0.05 to 500; refuting pass W1–W6.

@@ -1,0 +1,23 @@
+box Green function at the origin g0 = 0.228956
+
+[W1] analytic gradient of the bilinear member against finite differences of the bond-form ledger (random point):
+     max |analytic - numeric| = 8.85e-09  (the wall terms of the bond form are what put N = 1 on the walls)
+
+[W2] one body at the centre, every interior rate and length varied; closed form against the brute-force stationary point:
+      m      u0(brute)   u0(closed)   lam0(brute)  lam0(closed)  ledger(brute)  8KQ = m/chi0   lam/(-u) one site out, two sites out
+      0.05   -0.005691   -0.005691     0.005699     0.005699       0.049858      0.049858     1.0025  1.0027   ok=True
+      0.50   -0.054193   -0.054193     0.054927     0.054927       0.486455      0.486455     1.0234  1.0260   ok=True
+      5.00   -0.381519   -0.381519     0.417689     0.417689       4.057606      4.057606     1.1629  1.1809   ok=True
+     50.00   -1.260772   -1.260772     1.634331     1.634331      22.084095     22.084095     1.4848  1.5360   ok=True
+    150.00   -1.782556   -1.782556     2.489760     2.489760      43.196330     43.196330     1.6215  1.6839   ok=True
+    500.00   -2.374541   -2.374541     3.540744     3.540744      85.134826     85.134826     1.7301  1.7978   ok=True
+     (weak field: lam = -u, the exponent beta = 1;  strong field: the lengths' coefficient 2Q exceeds the rates' P + Q, P = Q/(1 + 2 Q g0))
+
+[W3] far-field coefficients read off the brute-force solution two sites out, against 2Q and P + Q:
+   m =    0.05: (chi-1)/g = 0.012464 against Q = 0.012464;   (1-N)/g = 0.012394 against P = 0.012394;   bending/fall = 1 + 2Q/(P+Q) = 2.0028
+   m =    5.00: (chi-1)/g = 1.014402 against Q = 1.014402;   (1-N)/g = 0.692657 against P = 0.692657;   bending/fall = 1 + 2Q/(P+Q) = 2.1885
+   m =  500.00: (chi-1)/g = 21.283707 against Q = 21.283707;   (1-N)/g = 1.980603 against P = 1.980603;   bending/fall = 1 + 2Q/(P+Q) = 2.8297
+
+[W4] the member K sum w l (4 Lap lam + 2 q) (same second-order form, not bilinear), by brute force on its finite-difference gradient:
+   m =  0.05: u0 = -0.005691 (bilinear member -0.005691), lam0 = 0.005699 (bilinear 0.005699), lam/(-u) two sites out 1.0027, ledger 0.049858 (bilinear 0.049858)   ok=True
+   m =  5.00: u0 = -0.382112 (bilinear member -0.381519), lam0 = 0.418601 (bilinear 0.417689), lam/(-u) two sites out 1.1814, ledger 4.056873 (bilinear 4.057606)   ok=True

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 67 — author checks (not a review PASS)
+Written lens pass by the supervisor; the block stands next to the parked statistical postulate and keeps to identities in arbitrary odds. Exact runner with rational charges; brute-force refuting pass in 250 variables reproducing every number (W1–W4, 4/0); one scan extended; one wording made honest ("about twice (executed)"). Census 8/8 in family.

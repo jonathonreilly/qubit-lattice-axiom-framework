@@ -1,0 +1,31 @@
+[W1] bare energies [3.521  2.2469 1.3201 1.6595 1.0936], total 9.8411
+     spread amplitude, brute force: flux of chi = 1.450000 (sum Q = 1.450000); flux of 1 - N = 1.151837; first moments of chi's flux [4.43333 4.55    4.18333] against sum Q x = [4.43333 4.55    4.18333]
+     record keeping the ledger (bare energy 11.5883): flux of chi = 1.450000; flux of 1 - N = 0.871408; dipole jump [-0.08333 -0.2      0.16667]
+     8K x flux of chi: 8.70000 -> 8.70000 (kept);  clocks' monopole: 1.15184 -> 0.87141 (jumps by -0.28043)
+
+[W2] the record that keeps the BARE ENERGY:
+     flux of chi 1.27057 (was 1.45000: the ledger falls by 1.07660);  clocks' monopole 0.80324 (was 1.15184)
+
+[W3] scan of the record's bare energy: which value keeps the lengths' monopole, which the clocks'?
+     bare energy   6.00: lengths' monopole 0.83888 (target 1.45000); clocks' monopole 0.60607 (target 1.15184)
+     bare energy   8.00: lengths' monopole 1.07081 (target 1.45000); clocks' monopole 0.71850 (target 1.15184)
+     bare energy  10.00: lengths' monopole 1.28727 (target 1.45000); clocks' monopole 0.80988 (target 1.15184)
+     bare energy  12.00: lengths' monopole 1.49101 (target 1.45000); clocks' monopole 0.88605 (target 1.15184)
+     bare energy  14.00: lengths' monopole 1.68403 (target 1.45000); clocks' monopole 0.95082 (target 1.15184)
+     bare energy  16.00: lengths' monopole 1.86786 (target 1.45000); clocks' monopole 1.00676 (target 1.15184)
+     bare energy  18.00: lengths' monopole 2.04371 (target 1.45000); clocks' monopole 1.05572 (target 1.15184)
+     bare energy  20.00: lengths' monopole 2.21253 (target 1.45000); clocks' monopole 1.09904 (target 1.15184)
+     bare energy  22.00: lengths' monopole 2.37510 (target 1.45000); clocks' monopole 1.13772 (target 1.15184)
+     bare energy  24.00: lengths' monopole 2.53207 (target 1.45000); clocks' monopole 1.17254 (target 1.15184)
+     bare energy  26.00: lengths' monopole 2.68398 (target 1.45000); clocks' monopole 1.20410 (target 1.15184)
+     lengths' monopole kept at bare energy ~11.597; clocks' monopole kept at ~22.811 (the clocks' monopole of ONE body is bounded by 1/(2 g_yy) = 2.1838): two different records
+
+[W4] formation at each of the five sites, ledger kept: the dipole's jump against Q'(y - Xbar); mean over odds:
+     y = (3, 3, 3): jump [-0.08333 -0.2      0.16667] against [-0.08333 -0.2      0.16667]
+     y = (4, 3, 3): jump [ 1.36667 -0.2      0.16667] against [ 1.36667 -0.2      0.16667]
+     y = (3, 4, 3): jump [-0.08333  1.25     0.16667] against [-0.08333  1.25     0.16667]
+     y = (2, 3, 3): jump [-1.53333 -0.2      0.16667] against [-1.53333 -0.2      0.16667]
+     y = (3, 3, 2): jump [-0.08333 -0.2     -1.28333] against [-0.08333 -0.2     -1.28333]
+     odds proportional to p/chi (the charges): mean jump [0. 0. 0.]
+     odds proportional to p: mean jump [ 0.003212 -0.005494  0.005535]
+     odds proportional to p/chi^2: mean jump [-0.003383  0.005484 -0.005586]

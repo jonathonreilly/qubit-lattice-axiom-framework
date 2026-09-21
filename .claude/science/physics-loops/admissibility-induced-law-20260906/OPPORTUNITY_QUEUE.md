@@ -78,3 +78,6 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## 2026-09-21 refresh after block 67 (source-link direction; campaign)
+(1) Bound bodies with internal hop energy: does `P = Q` hold, and does the clocks' jump at formation go away? (2) formation of a MOVING amplitude: momentum and block 66's balance; (3) the event in the frame formulation (blocks 62–65): the direction-dependent far field; (4) fork 4's other side in the curvature member: records as the only sources, first-order jumps in both coefficients; (5) decision-record fourth addendum (blocks 66, 67).

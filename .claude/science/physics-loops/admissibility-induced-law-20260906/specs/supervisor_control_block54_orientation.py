@@ -5,7 +5,9 @@ k0 along `move` is evolved with +g and with -g; half the difference of the mean 
 gradient (the fall).  The same is done for a cloud of rays with the energy function E = w(r) eps(k), eps = sqrt(sum_j sin^2 k_j), and the central
 ray's law  dv_j/dt = -w^2 cos(2 k_j) d_j u + 2 (v.grad u) v_j  is quoted next to both.
 Also reported: the direction of the content <sigma> against the direction of the velocity <i[H_w, r]> at the start and at the end (the content
-follows the direction of travel through the turn).
+follows the direction of travel through the turn); and the part of the displacement, odd in g, that lies ALONG gradient x motion, for the walk and
+for the cloud of rays (on the lattice the rays' fall is not parallel to the gradient for oblique orientations); the walk has MORE: a sideways drift
+that no ray of E = w eps has (long-wavelength expectation for a two-branch walk whose branches touch at k = 0: g T/(2 k0)).
 usage: supervisor_control_block54_orientation.py            (runs the fixed list below)"""
 import time
 
@@ -106,13 +108,17 @@ def one(side, k0, g, t_end, sig, move, gdir):
         edge = p[:2].sum() + p[-2:].sum() + p[:, :2].sum() + p[:, -2:].sum() + p[:, :, :2].sum() + p[:, :, -2:].sum()
         cont0, vel0 = content_and_velocity(psi, sw, side)
         cont1, vel1 = content_and_velocity(psi_t, sw, side)
-        out[sign] = ((mean - mean0) @ gdir, cloud(sign * g, gdir, centre, mean0, sig, kvec, t_end) @ gdir, edge, cont0, vel0, cont1, vel1)
+        rays_vec = cloud(sign * g, gdir, centre, mean0, sig, kvec, t_end)
+        out[sign] = ((mean - mean0) @ gdir, rays_vec @ gdir, edge, cont0, vel0, cont1, vel1, mean - mean0, rays_vec)
     walk = 0.5 * (out[1][0] - out[-1][0])
     rays = 0.5 * (out[1][1] - out[-1][1])
     law = (-(np.cos(2 * kvec) * gdir * gdir).sum() + 2 * (v0 @ gdir) ** 2) * 0.5 * g * t_end ** 2
-    _, _, edge, cont0, vel0, cont1, vel1 = out[1]
+    _, _, edge, cont0, vel0, cont1, vel1, _, _ = out[1]
+    side_dir = np.cross(gdir, move)
+    side_dir = side_dir / np.linalg.norm(side_dir)
+    sideways = ((0.5 * (out[1][7] - out[-1][7])) @ side_dir, (0.5 * (out[1][8] - out[-1][8])) @ side_dir)
     ang = lambda a, b: float(np.degrees(np.arccos(np.clip(a @ b / np.linalg.norm(a) / np.linalg.norm(b), -1, 1))))
-    return walk, rays, law, edge, ang(vel0, vel1), ang(cont0, cont1), ang(cont1, vel1)
+    return walk, rays, law, edge, ang(vel0, vel1), ang(cont0, cont1), ang(cont1, vel1), sideways
 
 
 if __name__ == "__main__":
@@ -122,5 +128,5 @@ if __name__ == "__main__":
         print(f"box {side}^3, wave vector {k0}, packet width {sig}, g = {g}, T = {t_end}; long-wavelength fall -g T^2/2 = {-0.5 * g * t_end ** 2:+.4f}")
         for move, gdir in cases:
             t0 = time.time()
-            walk, rays, law, edge, turn_v, turn_c, gap = one(side, k0, g, t_end, sig, move, gdir)
-            print(f"    motion along {move}, gradient along {gdir}: fall of the walk {walk:+.4f}; of the cloud of rays {rays:+.4f}; walk over cloud {walk / rays:.4f}; central ray's law {law:+.4f} | the velocity turned by {turn_v:.2f} degrees, the content by {turn_c:.2f}, final angle between them {gap:.2f} | weight near the walls {edge:.0e} | {time.time() - t0:.0f} s")
+            walk, rays, law, edge, turn_v, turn_c, gap, sideways = one(side, k0, g, t_end, sig, move, gdir)
+            print(f"    motion along {move}, gradient along {gdir}: fall of the walk {walk:+.4f}; of the cloud of rays {rays:+.4f}; walk over cloud {walk / rays:.4f}; central ray's law {law:+.4f} | the velocity turned by {turn_v:.2f} degrees, the content by {turn_c:.2f}, final angle between them {gap:.2f} | sideways (along gradient x motion, odd in g): walk {sideways[0]:+.4f}, cloud of rays {sideways[1]:+.4f}, walk minus cloud {sideways[0] - sideways[1]:+.4f}, against -g T/(2 k0) = {-g * t_end / (2 * k0):+.4f} | weight near the walls {edge:.0e} | {time.time() - t0:.0f} s")

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_a_phase_timed_by_the_local_clock_every_packet_falls_towards_slow_clocks_force_is_energy_times_gradient_2026_09_21.py
 runner_sha256: a96f7a32b411da97230e29fa9051f30d44128db5f711850576b4a2bc4eab6129
-input_fingerprint_sha256: 24d0718928063db528190c333436981a701f9d46c5c71cda687392faf9208e99
+input_fingerprint_sha256: 7377c6167baabd47455a8cc40dad6b735667cf628bcffd82090a7a77446d7fab
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.93
+elapsed_sec: 1.00
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

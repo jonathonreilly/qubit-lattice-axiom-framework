@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_fall_is_owed_by_the_ledger_a_field_energy_per_local_tick_requires_the_contents_stress_gradient_to_equal_its_weight_2026_09_21.py
+runner_sha256: 987feb024ca53b72c34aed0114148c06109057da9416c77b015f057fc15b47d4
+input_fingerprint_sha256: 8ff722fe022433f2610ecd33fb476cc129752fbbeb06025ce972661e907c3488
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 50.74
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_FALL_IS_OWED_BY_THE_LEDGER_A_FIELD_ENERGY_PER_LOCAL_TICK_REQUIRES_THE_CONTENTS_STRESS_GRADIENT_TO_EQUAL_ITS_WEIGHT_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T3: i[phi, S_j] psi = -C_j[d_j phi] psi exactly at all 60 sites of a 5x4x3 torus for a rational rate field and state: the root of the rate does not commute with the lattice momentum; what is left is a symmetric hop weighted by the change of phi along the bond
+PASS: B2 T3: i[H_w, G_xi] psi = phi (i[H, G_xi]) phi psi - (Lam H phi + phi H Lam) psi exactly at all 60 sites, Lam = (1/2) sum_j {xi_j, C_j[d_j phi]}: a relabelling carries the rates along, and on the lattice what it makes of a rate is a weighted hop
+PASS: B3 T3: for every state d<G_xi>/dt = sum over bonds (d_a xi_j) J_a^j[phi psi] - sum_x xi_j(x) f_j(x), with the force density f_j(x) = Re[(C_j[d_j phi] psi)^dagger H phi psi + psi^dagger C_j[d_j phi] H phi psi](x); for a uniform displacement the total lattice momentum changes at minus the total force (-1.989 here): in a rate field the walk's momentum is not conserved, it falls
+PASS: C1 T1: for F = int exp(u) D(e), with E_j^a = dF/de^j_a and U = dF/du, the identity E_j^a d_b e^j_a - d_a(E_j^a e^j_b) + U d_b u = 0 holds through second order in nine strain functions and the log rate, for the blind member AND for a member that sees the coin axes and has a volume term (exact symbolic algebra): it is the counting per local tick together with the blindness to relabellings that gives it, not the choice of member
+PASS: D1 T4: on a line with lattice spacing h, for smooth phi and a smooth complex amplitude, the force density and the weight e du agree at the leading order in h (exact symbolic expansion): f_j = e d_j u; the walk's momentum balance has exactly the form the ledger's identity requires, so on stationary states the divergence of its bond current is minus its weight
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — i[phi, S_j] at all 60 sites of a 5x4x3 torus for a rational rate field and state
+per_site: executed — i[H_w, G_xi] against phi (i[H, G_xi]) phi - (Lam H phi + phi H Lam) at all 60 sites; the force density site by site
+per_mode: executed — the ledger's identity through second order in nine strain functions and the log rate, for two members of block 64's family (exact symbolic algebra)
+per_block: executed — d<G_xi>/dt against the current term minus the force term for a rational displacement field; the rate of change of the total lattice momentum against minus the total force; the force density against the weight at leading order in the lattice spacing
+lattice_wide: T1 is a continuum identity for every frame and rate field, checked through the order at which the fall first appears; T2 follows from T1 for every content coupled through a ledger of this kind; T3 holds for every state, rate field and displacement on every torus and on the infinite lattice; T4 at leading order in the lattice spacing; the ledger's form, the strains, the relabellings and the clocked walk are supplied; an exact lattice form of T1 is not given
+PASS: G1 the five N5 resolution lines are printed
+scope: the fall is owed by the ledger — a field energy counted per local tick and blind to relabellings obeys an identity that ties the divergence of the strains' field equations to the rates' equation times the gradient of the log rate; with the rates' constraint it requires the content's stress gradient to equal its weight; the clocked walk's exact momentum balance has that form, with a force density that is the weight at leading order
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

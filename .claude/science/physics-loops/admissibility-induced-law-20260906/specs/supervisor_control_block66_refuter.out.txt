@@ -1,0 +1,19 @@
+[W1] |i[phi,S] + C[d phi]| = 4.6e-16;  |i[H_w,G] - (phi i[H,G] phi - Lam H phi - phi H Lam)| = 1.8e-15
+
+[W2] packet in a rate well (depth 0.3, width 40), wave number 0.35; t, d<S>/dt by finite differences, -total force, -total weight:
+     t =  10.0: +1.652293e-03   +1.652372e-03   +1.784335e-03   (ratio force/weight 0.9260; cos k0 = 0.9394)
+     t =  20.0: +1.760190e-03   +1.760293e-03   +1.916546e-03   (ratio force/weight 0.9185; cos k0 = 0.9394)
+     t =  30.0: +1.626736e-03   +1.626835e-03   +1.787679e-03   (ratio force/weight 0.9100; cos k0 = 0.9394)
+     t =  40.0: +1.258961e-03   +1.259036e-03   +1.397381e-03   (ratio force/weight 0.9010; cos k0 = 0.9394)
+     t =  50.0: +7.129531e-04   +7.129934e-04   +8.016908e-04   (ratio force/weight 0.8894; cos k0 = 0.9394)
+
+[W3] stationary states of H_w on a 6x5x4 torus with a smooth rate field (numerical eigenvectors of the dense matrix): divergence of the bond
+     current of phi psi against minus the force density, site by site.  (On a ring the test is empty: a non-degenerate stationary state of
+     i x (real antisymmetric) carries no momentum current and feels no force density: the first version of this test reported 0 = 0.)
+     energy +0.52486 (degeneracy 2): max |div J + f| = 3.7e-17;  max |f| = 5.25e-03;  max |e du| = 6.95e-03
+     energy +0.90386 (degeneracy 2): max |div J + f| = 5.9e-17;  max |f| = 5.23e-03;  max |e du| = 9.22e-03
+     (hydrostatic balance holds site by site to rounding with a force density that is not zero; on this small torus the wave numbers are not small
+      and f differs from the weight by factors of order cos k)
+
+[W4] the ledger's identity for a third member, coefficients (c0, c1, c2, c3, c4) = (-2/5, 3, 1/7, -5/3, 1/2), through second order (exact symbolic algebra):
+     identity holds: True;  the same expression WITHOUT the rates' term vanishes: False

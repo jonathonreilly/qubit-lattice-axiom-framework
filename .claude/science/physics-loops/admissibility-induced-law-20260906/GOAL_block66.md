@@ -1,0 +1,9 @@
+# Block 66 — contract (2026-09-21; fourteenth block of the source-link direction; tenth of the 12-hour campaign)
+
+**Question.** The decision record has clause B (the phase keeps local time ⇒ force = energy × gradient, block 54) and clause C with block 55's matched pulls (the source is the energy density) as separate supplied items. Blocks 60–64 built a field energy counted per local tick, from the strains of a frame, blind to relabellings. Given that field energy, is the law of fall still a separate clause?
+
+**Lens pass (supervisor, in writing; no subagents).** Foundations: nothing new is supplied; do NOT say clause B is derived — the identity forbids inconsistent content, it does not produce clocked content; say which ledgers are concerned (linear in the rates, with strains). Rigour: count orders before computing — the content's energy is itself of first order (it sources first-order fields), so the fall appears at second order in the field equations, third order of the ledger; take the symbolic check there; on the lattice compute what a relabelling makes of a rate (not a rate: a weighted hop) and give the exact force density. Comparator: the contracted identity and the motion of the sources — under the Premises only. Strategy: the record's list of supplied clauses can be re-read.
+
+**Exact target.** T1 the ledger's identity `E∂e − ∂(Ee) + U∂u = 0` for every member of block 64's family; T2 the content's stress gradient must equal its weight; the source is what is pulled; T3 the clocked walk's exact momentum balance and force density; hydrostatic balance on stationary states; T4 force density = weight at leading order.
+
+**Boundaries fixed in advance.** T1 continuum; no exact lattice form; agreement at leading order in the wave vector; T2 static; clause B is not derived; nothing adopted.

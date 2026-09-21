@@ -1,0 +1,477 @@
+{
+  "claim_id": "mobile_records_local_curl_quantum_interface_and_born_formation_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_LOCAL_CURL_QUANTUM_INTERFACE_AND_BORN_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d39b33a6ab8bf58b1c3daab87865bbc2effb2543cab48402a57daa8dca03adbb",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/suppliers/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/local_curl_native_formation_check.py": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/late_state_canonical_check.py": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/fourteen_label_quantum_check.py": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/fourteen_label_cubic_carrier_check.py": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/born_compatible_fourteen_formation_check.py": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4",
+    "scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py": "9c38ba3dcb1b1573072d45998f380e5ead4a0dda8fd69ef2b93d7b279118b0b4"
+  },
+  "mutation": null,
+  "passed": true,
+  "control_count": 52,
+  "suites": [
+    {
+      "suite": "local_curl_native_formation_check.py",
+      "source_sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+      "executed_source_sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+      "returncode": 0,
+      "stdout": "PASS: all_pair_weight_brackets_and_positivity_bound\nPASS: full_uniform_reaction_trajectory\nPASS: fourteen_moments_reconstruct_all_occupied_probabilities\nPASS: complete_native_reaction_jacobian\nPASS: all_fourteen_linear_flux_and_reaction_fields\nPASS: transverse_wave_and_longitudinal_reaction_structure\nPASS: local_curl_field_evolution_intertwining\nPASS: exact_initial_neighbor_covariance_with_both_birth_endpoints\nPASS: integrated_native_linear_gain\nPASS: exact_lattice_Gauss_and_curl_covariance\nPASS: polar_axial_curl_readout_under_all_cubic_actions\nPASS: finite_configuration_identity_after_all_birth_labels_and_whole_record_swap\nPASS: nearest_neighbor_birth_law_is_nonconstant_for_nonzero_j\nTOTAL: 13 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+        "checks": [
+          {
+            "name": "all_pair_weight_brackets_and_positivity_bound",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_uniform_reaction_trajectory",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "fourteen_moments_reconstruct_all_occupied_probabilities",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "complete_native_reaction_jacobian",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "all_fourteen_linear_flux_and_reaction_fields",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "transverse_wave_and_longitudinal_reaction_structure",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "local_curl_field_evolution_intertwining",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_initial_neighbor_covariance_with_both_birth_endpoints",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "integrated_native_linear_gain",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "exact_lattice_Gauss_and_curl_covariance",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "polar_axial_curl_readout_under_all_cubic_actions",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "finite_configuration_identity_after_all_birth_labels_and_whole_record_swap",
+            "passed": true,
+            "detail": {
+              "side": 7,
+              "birth_labels": 14
+            }
+          },
+          {
+            "name": "nearest_neighbor_birth_law_is_nonconstant_for_nonzero_j",
+            "passed": true,
+            "detail": null
+          }
+        ],
+        "scope": "Primary exact finite-event and full fourteen-field algebra. The general entropy proof and native fluctuation replacement are not certified by check counts; the latter is not claimed."
+      }
+    },
+    {
+      "suite": "late_state_canonical_check.py",
+      "source_sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+      "executed_source_sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+      "returncode": 0,
+      "stdout": "PASS: all_permutations_four_distinct_labels_canonical_covariance\nPASS: repeated_label_count_sectors_and_nonzero_mode_means\nPASS: count_mixture_preserves_nonzero_formula_but_has_zero_mode_variance\nPASS: actual_fourteen_label_full_occupancy_feature_covariances\nPASS: late_state_scaled_curl_second_moment\nPASS: pathwise_count_squeeze_all_three_birth_completions\nPASS: finite_volume_harmonic_absorption_comparison\nTOTAL: 7 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+        "checks": [
+          {
+            "name": "all_permutations_four_distinct_labels_canonical_covariance",
+            "passed": true,
+            "detail": {
+              "permutations": 24,
+              "ordered_mode_pairs": 16
+            }
+          },
+          {
+            "name": "repeated_label_count_sectors_and_nonzero_mode_means",
+            "passed": true,
+            "detail": {
+              "permutations_per_sector": 12
+            }
+          },
+          {
+            "name": "count_mixture_preserves_nonzero_formula_but_has_zero_mode_variance",
+            "passed": true,
+            "detail": {
+              "zero_mode_covariance": "Matrix([[1/2, -1/6], [-1/6, 1/18]])"
+            }
+          },
+          {
+            "name": "actual_fourteen_label_full_occupancy_feature_covariances",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "late_state_scaled_curl_second_moment",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "pathwise_count_squeeze_all_three_birth_completions",
+            "passed": true,
+            "detail": {
+              "completions": 2744,
+              "occupied_labels": 14
+            }
+          },
+          {
+            "name": "finite_volume_harmonic_absorption_comparison",
+            "passed": true,
+            "detail": "Rate comparison still requires the pointwise lower bound in the derivation."
+          }
+        ],
+        "scope": "Exact finite count-sector, Fourier and monotone-count controls. The ordered-limit proof and conditional Euler premises require mathematical review; no fluctuation CLT or mixing rate is certified."
+      }
+    },
+    {
+      "suite": "fourteen_label_quantum_check.py",
+      "source_sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+      "executed_source_sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+      "returncode": 0,
+      "stdout": "PASS: rank_six_feature_Gram_and_orthogonality\nPASS: full_kernel_eigenspaces\nPASS: every_parent_column_is_distinct_for_nonzero_coupling\nPASS: positive_content_clock_preserves_rank\nPASS: natural_encoding_witness_complete\nPASS: all_fourteen_witness_column_total_variations\nPASS: reduced_minimax_dual_bound\nPASS: qutrit_operator_basis\nPASS: qutrit_all_196_exact_probabilities\nPASS: qutrit_completeness_and_state_traces\nPASS: four_dimensional_all_196_exact_probabilities\nPASS: positive_carrier_and_witness_endpoint_controls\nPASS: nine_unrestricted_qubit_POVM_optimizations\nTOTAL: 13 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+        "checks": [
+          {
+            "name": "rank_six_feature_Gram_and_orthogonality",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "full_kernel_eigenspaces",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "every_parent_column_is_distinct_for_nonzero_coupling",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "positive_content_clock_preserves_rank",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "natural_encoding_witness_complete",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "all_fourteen_witness_column_total_variations",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "reduced_minimax_dual_bound",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "qutrit_operator_basis",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "qutrit_all_196_exact_probabilities",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "qutrit_completeness_and_state_traces",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "four_dimensional_all_196_exact_probabilities",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "positive_carrier_and_witness_endpoint_controls",
+            "passed": true,
+            "detail": {
+              "minimum_eigenvalue": -2.9820095012016994e-18
+            }
+          },
+          {
+            "name": "nine_unrestricted_qubit_POVM_optimizations",
+            "passed": true,
+            "detail": {
+              "maximum_objective_discrepancy": 3.6535635627998886e-12
+            }
+          }
+        ],
+        "fits": [
+          {
+            "j": -0.99,
+            "status": "optimal",
+            "objective": 0.08966212146842582,
+            "reference": 0.08966212146477226,
+            "discrepancy": 3.6535635627998886e-12,
+            "largest_actual_TV": 0.08966212146739883,
+            "feasibility_residual": 1.1102230246251565e-16
+          },
+          {
+            "j": -0.75,
+            "status": "optimal",
+            "objective": 0.06792584959523587,
+            "reference": 0.06792584959452444,
+            "discrepancy": 7.114309141798003e-13,
+            "largest_actual_TV": 0.06792584959636891,
+            "feasibility_residual": 2.220446049250313e-16
+          },
+          {
+            "j": -0.5,
+            "status": "optimal",
+            "objective": 0.045283899728534506,
+            "reference": 0.045283899729682955,
+            "discrepancy": 1.1484493911417815e-12,
+            "largest_actual_TV": 0.04528389973482999,
+            "feasibility_residual": 1.1102230246251565e-16
+          },
+          {
+            "j": -0.1,
+            "status": "optimal",
+            "objective": 0.009056779944396456,
+            "reference": 0.009056779945936592,
+            "discrepancy": 1.5401360742295367e-12,
+            "largest_actual_TV": 0.009056779946487271,
+            "feasibility_residual": 2.168404344971009e-19
+          },
+          {
+            "j": 0,
+            "status": "optimal",
+            "objective": 0.0,
+            "reference": 0.0,
+            "discrepancy": 0.0,
+            "largest_actual_TV": 0.0,
+            "feasibility_residual": 2.220446049250313e-16
+          },
+          {
+            "j": 0.1,
+            "status": "optimal",
+            "objective": 0.009056779944396503,
+            "reference": 0.009056779945936592,
+            "discrepancy": 1.5400892366956853e-12,
+            "largest_actual_TV": 0.009056779946487278,
+            "feasibility_residual": 2.220446049250313e-16
+          },
+          {
+            "j": 0.5,
+            "status": "optimal",
+            "objective": 0.04528389972853444,
+            "reference": 0.045283899729682955,
+            "discrepancy": 1.1485187800808205e-12,
+            "largest_actual_TV": 0.04528389973483,
+            "feasibility_residual": 1.3010426069826053e-18
+          },
+          {
+            "j": 0.75,
+            "status": "optimal",
+            "objective": 0.06792584959523572,
+            "reference": 0.06792584959452444,
+            "discrepancy": 7.112782585139144e-13,
+            "largest_actual_TV": 0.06792584959636899,
+            "feasibility_residual": 3.3306690738754696e-16
+          },
+          {
+            "j": 0.99,
+            "status": "optimal",
+            "objective": 0.08966212146842574,
+            "reference": 0.08966212146477226,
+            "discrepancy": 3.653480296073042e-12,
+            "largest_actual_TV": 0.0896621214673988,
+            "feasibility_residual": 2.220446049250313e-16
+          }
+        ],
+        "versions": {
+          "numpy": "2.4.4",
+          "sympy": "1.14.0",
+          "cvxpy": "1.9.3"
+        },
+        "scope": "Primary exact finite kernel/carrier checks and floating-point unrestricted POVM optima for fixed natural inputs. No spatial carrier, physical quantum bridge or minimal carrier dimension above |j|=1/3 is certified."
+      }
+    },
+    {
+      "suite": "fourteen_label_cubic_carrier_check.py",
+      "source_sha256": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5",
+      "executed_source_sha256": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5",
+      "returncode": 0,
+      "stdout": "PASS: all_S4_character_inner_products\nPASS: complete_dimension_square_sum\nPASS: class_table_from_actual_permutations\nPASS: only_two_trivial_remainder_has_nonnegative_Ad_character\nPASS: four_dimensional_states_and_effects_covariant_under_all_proper_cubic_rotations\nTOTAL: 5 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5",
+        "checks": [
+          {
+            "name": "all_S4_character_inner_products",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "complete_dimension_square_sum",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "class_table_from_actual_permutations",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "only_two_trivial_remainder_has_nonnegative_Ad_character",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "four_dimensional_states_and_effects_covariant_under_all_proper_cubic_rotations",
+            "passed": true,
+            "detail": {
+              "rotations": 24,
+              "maximum_residual": 2.220446049250313e-16
+            }
+          }
+        ],
+        "scope": "Finite S4 character table and all24 positive carrier covariance checks. The projective-commutant argument remains a proof obligation for independent review."
+      }
+    },
+    {
+      "suite": "born_compatible_fourteen_formation_check.py",
+      "source_sha256": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4",
+      "executed_source_sha256": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4",
+      "returncode": 0,
+      "stdout": "PASS: Born_Gram_rank_and_isotropic_frame\nPASS: uniform_fourteen_trajectory\nPASS: entire_fourteen_species_reaction_Jacobian\nPASS: entire_fourteen_species_flux_and_reaction\nPASS: driven_and_undriven_vector_rotation\nPASS: frozen_transverse_characteristic_polynomial\nPASS: noncommuting_gain_and_wave_blocks\nPASS: all196_single_qubit_marked_probabilities\nPASS: fourteen_ray_second_moment_for_fidelity\nPASS: all_two_parent_marked_rate_probabilities\nPASS: explicit_full_parity_failure_of_cross_orbit_weight\nPASS: integrated_norm_gain_comparison\nPASS: time_ordered_six_field_ODE_gain_and_late_wave_controls\nTOTAL: 13 PASS\n",
+      "stderr": "",
+      "results": {
+        "source_sha256": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4",
+        "checks": [
+          {
+            "name": "Born_Gram_rank_and_isotropic_frame",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "uniform_fourteen_trajectory",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "entire_fourteen_species_reaction_Jacobian",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "entire_fourteen_species_flux_and_reaction",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "driven_and_undriven_vector_rotation",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "frozen_transverse_characteristic_polynomial",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "noncommuting_gain_and_wave_blocks",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "all196_single_qubit_marked_probabilities",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "fourteen_ray_second_moment_for_fidelity",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "all_two_parent_marked_rate_probabilities",
+            "passed": true,
+            "detail": {
+              "probabilities": 2744
+            }
+          },
+          {
+            "name": "explicit_full_parity_failure_of_cross_orbit_weight",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "integrated_norm_gain_comparison",
+            "passed": true,
+            "detail": null
+          },
+          {
+            "name": "time_ordered_six_field_ODE_gain_and_late_wave_controls",
+            "passed": true,
+            "detail": [
+              {
+                "j": -0.8,
+                "norm_comparison_violation": 4.746314452575007e-12,
+                "late_interaction_picture_difference": 2.566721496364216e-06,
+                "rigorous_tail_bound": 1.842667573877528e-05,
+                "j0_integrated_phase_residual": null
+              },
+              {
+                "j": 0,
+                "norm_comparison_violation": 4.4518788655523167e-10,
+                "late_interaction_picture_difference": 8.071436808847023e-07,
+                "rigorous_tail_bound": 8.071236790372959e-07,
+                "j0_integrated_phase_residual": 1.070133810181944e-11
+              },
+              {
+                "j": 0.8,
+                "norm_comparison_violation": 2.0389467891845925e-11,
+                "late_interaction_picture_difference": 1.552365676779249e-05,
+                "rigorous_tail_bound": 1.842667573877528e-05,
+                "j0_integrated_phase_residual": null
+              }
+            ]
+          }
+        ],
+        "scope": "Primary exact fourteen-field and quantum-event controls plus finite numerical time-ordered ODE checks. No repeated quantum waiting law, immutable physical parent, native stochastic fluctuation theorem or physical EM identification."
+      }
+    }
+  ],
+  "scope": "Author symbolic and finite numerical controls; not an independent audit or a replacement for the conditional proofs."
+}

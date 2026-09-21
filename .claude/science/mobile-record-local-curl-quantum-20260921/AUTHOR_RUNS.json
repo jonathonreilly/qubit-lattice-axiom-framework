@@ -1,0 +1,58 @@
+[
+  {
+    "mutation": null,
+    "returncode": 0,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nPASS: local_curl_native_formation_check.py: 13 declared controls\nPASS: late_state_canonical_check.py: 7 declared controls\nPASS: fourteen_label_quantum_check.py: 13 declared controls\nPASS: fourteen_label_cubic_carrier_check.py: 5 declared controls\nPASS: born_compatible_fourteen_formation_check.py: 13 declared controls\nTOTAL: PASS=52 FAIL=0\n",
+    "stderr": "",
+    "result_sha256": "d1cece81d4c403acc3d13ef79cba2ae922d8385de2ba5c20a91bf6d90e415de6"
+  },
+  {
+    "mutation": "alter_Born_event_probability",
+    "returncode": 1,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: born_compatible_fourteen_formation_check.py AssertionError: ('all196_single_qubit_marked_probabilities', None)\n",
+    "stderr": "",
+    "result_sha256": "58ba572fa42aee5b377d45e207a28808f144cab0fc37ea75ba01330a25404b43"
+  },
+  {
+    "mutation": "alter_minimax_witness",
+    "returncode": 1,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: fourteen_label_quantum_check.py AssertionError: ('all_fourteen_witness_column_total_variations', None)\n",
+    "stderr": "",
+    "result_sha256": "1fe6fcd93b2e69d109215287ad4a7a051a84fcdc4f9e95dd5910d828ef52a110"
+  },
+  {
+    "mutation": "alter_original_kernel_normalization",
+    "returncode": 1,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: fourteen_label_quantum_check.py AssertionError: ('full_kernel_eigenspaces', None)\n",
+    "stderr": "",
+    "result_sha256": "bab91bec31dfcd59a93ea9e0357c2792df7cb3f62347aa50990ba2eff0a4e512"
+  },
+  {
+    "mutation": "drop_finite_count_correction",
+    "returncode": 1,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: late_state_canonical_check.py AssertionError\n",
+    "stderr": "",
+    "result_sha256": "595d668b7c25a840aaa9a5abe12c1970731704a2671b0b5952bb3fa077de1d4d"
+  },
+  {
+    "mutation": "halve_Born_cross_reaction",
+    "returncode": 1,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: born_compatible_fourteen_formation_check.py AssertionError: ('entire_fourteen_species_reaction_Jacobian', None)\n",
+    "stderr": "",
+    "result_sha256": "ac7dcb3f43340136b827e9ee4a8cdb6d3623dd4cae720f35488443418de3e38e"
+  },
+  {
+    "mutation": "halve_native_vector_gain",
+    "returncode": 1,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: local_curl_native_formation_check.py AssertionError: ('complete_native_reaction_jacobian', None)\n",
+    "stderr": "",
+    "result_sha256": "7ec09ab84257e4cad00d43799195928396e9155a336448538e519162d3b265ea"
+  },
+  {
+    "mutation": "halve_native_wave_speed",
+    "returncode": 1,
+    "stdout": "PASS: declared_sources_and_conditional_scope\nFAIL: local_curl_native_formation_check.py AssertionError: ('all_fourteen_linear_flux_and_reaction_fields', None)\n",
+    "stderr": "",
+    "result_sha256": "20936e61688cfc2733c4a02a17980027bf5625ebe4f9806506a36c206762dc0b"
+  }
+]

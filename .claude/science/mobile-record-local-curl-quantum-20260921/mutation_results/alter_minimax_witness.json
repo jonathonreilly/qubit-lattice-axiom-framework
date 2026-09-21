@@ -1,0 +1,26 @@
+{
+  "claim_id": "mobile_records_local_curl_quantum_interface_and_born_formation_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_LOCAL_CURL_QUANTUM_INTERFACE_AND_BORN_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d39b33a6ab8bf58b1c3daab87865bbc2effb2543cab48402a57daa8dca03adbb",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/suppliers/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/local_curl_native_formation_check.py": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/late_state_canonical_check.py": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/fourteen_label_quantum_check.py": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/fourteen_label_cubic_carrier_check.py": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/born_compatible_fourteen_formation_check.py": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4",
+    "scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py": "9c38ba3dcb1b1573072d45998f380e5ead4a0dda8fd69ef2b93d7b279118b0b4"
+  },
+  "mutation": "alter_minimax_witness",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "fourteen_label_quantum_check.py",
+      "source_sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+      "executed_source_sha256": "182915d96967a3b003970dda119e5c1a7e3e7a2dca368d1a648e1986c85fbc1c",
+      "returncode": 1,
+      "stdout": "PASS: rank_six_feature_Gram_and_orthogonality\nPASS: full_kernel_eigenspaces\nPASS: every_parent_column_is_distinct_for_nonzero_coupling\nPASS: positive_content_clock_preserves_rank\nPASS: natural_encoding_witness_complete\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/local-curl-quantum-controls-a_l9740f/fourteen_label_quantum_check.py\", line 63, in <module>\n    check('all_fourteen_witness_column_total_variations', all(s.simplify(q-(3-s.sqrt(3))/28) == 0 for q in tv))\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/local-curl-quantum-controls-a_l9740f/fourteen_label_quantum_check.py\", line 20, in check\n    assert bool(condition), (name, detail)\n           ~~~~^^^^^^^^^^^\nAssertionError: ('all_fourteen_witness_column_total_variations', None)\n"
+    }
+  ]
+}

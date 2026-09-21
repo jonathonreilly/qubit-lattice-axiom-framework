@@ -1,0 +1,295 @@
+{
+  "artifact_identities": [
+    {
+      "bytes": 62313,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/ASSEMBLY_RESULTS.json",
+      "sha256": "672cc2f02e52dc33914f1bd4eec6ba2d0721650366f759d81ea262783b43b287"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/CHECK.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 924,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/CHECK.stdout",
+      "sha256": "3eaa7e9dd9888dbce9d9ff4958938b8b8fd54c77cf0aca23fc62a0852f3b5622"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/PR_8560.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 184,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/PR_8560.stdout",
+      "sha256": "b3947b81deb569fac2da4c52d638f2c9c25586d42e127985290f9e56ec31cd08"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/PR_8561.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 184,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/PR_8561.stdout",
+      "sha256": "4e80adb236684e3e55744b3b6a6c861ccb07a354a8fa333868504d9e76d5692e"
+    },
+    {
+      "bytes": 1453,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/READ_BOUNDARY.json",
+      "sha256": "9087206108d671321df613cfbf4d3f5b3d87a2c8ded88dced6abb80a4653d4c6"
+    },
+    {
+      "bytes": 12681,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/REPORT.md",
+      "sha256": "99daba143ae867780c31dda339702f675ab5a6006c0e0709362310b8442bb767"
+    },
+    {
+      "bytes": 1111,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/SUPPLIER_PR_RECEIPTS.json",
+      "sha256": "482f1ee54c86a1701bc1f54647fd294336daf800332bed8459b0702fb3c62dfd"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/VERIFY_EVIDENCE.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 756,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/VERIFY_EVIDENCE.stdout",
+      "sha256": "bd94b606f945506a8ee6de486b4ea18260978492e57402435c84d69522557285"
+    },
+    {
+      "bytes": 17030,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/check_assembly.py",
+      "sha256": "1376e855c750d88ac5c903fd744a3bc45232a83e64461a14725210e90767482a"
+    },
+    {
+      "bytes": 2833,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/publication_review/seal_review.py",
+      "sha256": "3c31b34600a87e07c7b8c80c710f07b452a2ae93859761e1891cc836491d631d"
+    }
+  ],
+  "baseline_commit": "c26b0171974c456f68dd92a4c8661ade1cc5ddbd",
+  "concurrent_source_identity_recheck_passed": true,
+  "created_utc": "2026-09-21T10:38:03.741559+00:00",
+  "no_actionable_assembly_findings": true,
+  "procedure_dependencies": [
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 14490,
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "scientific_suite_executions_during_review": 0,
+  "scope": "Post-source publication assembly/provenance review, reusing exact previously sealed mathematical evidence; no audit verdict.",
+  "source_identities": [
+    {
+      "bytes": 3003,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/AUTHOR_RUNS.json",
+      "sha256": "c5aac1ce75ffd56abff73397d24ac07f8f1bf6626f1aef97a2460ff18e5fc37f"
+    },
+    {
+      "bytes": 409,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/AUTHOR_VERIFICATION.json",
+      "sha256": "c3aaec0cc2c207d1ca383bd3e549260bd0f6fa40a60e1967b8527c78b8b48626"
+    },
+    {
+      "bytes": 171,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/GRAPH_VERIFICATION.json",
+      "sha256": "b31c4533482792b29745c26773e7677b5ea45c10d620f4e7b6fdaae4a40d48c6"
+    },
+    {
+      "bytes": 65986,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/INDEPENDENT_CAPSULES.json",
+      "sha256": "0d9b187fd21d0c0b048d11b7f8263e2cb442ae2408381089c251287b083b670d"
+    },
+    {
+      "bytes": 20365,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/PRIMARY_RESULTS.json",
+      "sha256": "d1cece81d4c403acc3d13ef79cba2ae922d8385de2ba5c20a91bf6d90e415de6"
+    },
+    {
+      "bytes": 2311,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/PUBLICATION_TRANSFORM.json",
+      "sha256": "6e5c80d33dce0c3e47ae267cfc3247fb7c17626e639281727efa6dccc8bf39f6"
+    },
+    {
+      "bytes": 3230,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/README.md",
+      "sha256": "749e15a77a2caeaf3b94a54219985003505635c14d4223dec2552a9ff2bb84e3"
+    },
+    {
+      "bytes": 6869,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/author_checks/born_compatible_fourteen_formation_check.py",
+      "sha256": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4"
+    },
+    {
+      "bytes": 4008,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/author_checks/fourteen_label_cubic_carrier_check.py",
+      "sha256": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5"
+    },
+    {
+      "bytes": 7334,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/author_checks/fourteen_label_quantum_check.py",
+      "sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561"
+    },
+    {
+      "bytes": 5824,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/author_checks/late_state_canonical_check.py",
+      "sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb"
+    },
+    {
+      "bytes": 6068,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/author_checks/local_curl_native_formation_check.py",
+      "sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed"
+    },
+    {
+      "bytes": 11101,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/author_development/ATTEMPT_01_CACHE_REFRESH.log",
+      "sha256": "a69d17e91d6b698a60b87c2cfddb1bf349255ac23fbcbbcabda714927b0319a5"
+    },
+    {
+      "bytes": 733,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/author_development/CACHE_ATTEMPT_01_RECEIPT.json",
+      "sha256": "00c3e8ba46bb749f19692fcd3d138d961edb3ab618b9cb587bcfe23ca1c359f6"
+    },
+    {
+      "bytes": 226363,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/independent/fourteen_quantum_independent.zip",
+      "sha256": "ad13ac144e5b6d9d861a595a796353b8d983d933a36ffdaf5655089d523548db"
+    },
+    {
+      "bytes": 32395,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/independent/fourteen_quantum_independent_REPORT.md",
+      "sha256": "ae8bdc776893ae9b7873d57f6664d7b6c36dbb56cb623948c93a958762fa47a2"
+    },
+    {
+      "bytes": 222861,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/independent/local_curl_independent.zip",
+      "sha256": "fc71fdf3c6c97dd489e289ac59a3624c4a10843f7d06b49d990a63a57bd926ef"
+    },
+    {
+      "bytes": 26690,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/independent/local_curl_independent_REPORT.md",
+      "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232"
+    },
+    {
+      "bytes": 3274,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/mutation_results/alter_Born_event_probability.json",
+      "sha256": "58ba572fa42aee5b377d45e207a28808f144cab0fc37ea75ba01330a25404b43"
+    },
+    {
+      "bytes": 3059,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/mutation_results/alter_minimax_witness.json",
+      "sha256": "1fe6fcd93b2e69d109215287ad4a7a051a84fcdc4f9e95dd5910d828ef52a110"
+    },
+    {
+      "bytes": 3031,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/mutation_results/alter_original_kernel_normalization.json",
+      "sha256": "bab91bec31dfcd59a93ea9e0357c2792df7cb3f62347aa50990ba2eff0a4e512"
+    },
+    {
+      "bytes": 2666,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/mutation_results/drop_finite_count_correction.json",
+      "sha256": "595d668b7c25a840aaa9a5abe12c1970731704a2671b0b5952bb3fa077de1d4d"
+    },
+    {
+      "bytes": 2871,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/mutation_results/halve_Born_cross_reaction.json",
+      "sha256": "ac7dcb3f43340136b827e9ee4a8cdb6d3623dd4cae720f35488443418de3e38e"
+    },
+    {
+      "bytes": 2904,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/mutation_results/halve_native_vector_gain.json",
+      "sha256": "7ec09ab84257e4cad00d43799195928396e9155a336448538e519162d3b265ea"
+    },
+    {
+      "bytes": 2965,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/mutation_results/halve_native_wave_speed.json",
+      "sha256": "20936e61688cfc2733c4a02a17980027bf5625ebe4f9806506a36c206762dc0b"
+    },
+    {
+      "bytes": 7009,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/primary_sources/BORN_COMPATIBLE_FOURTEEN_LABEL_FORMATION.md",
+      "sha256": "42197693e57ead840ef3fc174c62cb56c1ae1ab7b49e3d164a36241698685c8f"
+    },
+    {
+      "bytes": 13521,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/primary_sources/FOURTEEN_LABEL_QUANTUM_INTERFACE_DERIVATION.md",
+      "sha256": "9bb453c1041ea2a548989f14e2666df6a27c76adb8e35bf2d833eb2334bd2f5d"
+    },
+    {
+      "bytes": 16425,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/primary_sources/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+      "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f"
+    },
+    {
+      "bytes": 34314,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/suppliers/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc"
+    },
+    {
+      "bytes": 2637,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/.claude/science/mobile-record-local-curl-quantum-20260921/verify_evidence.py",
+      "sha256": "eb8b192244d005f395ca6d47e7125f09550209d729268e76f46fa962c2a55060"
+    },
+    {
+      "bytes": 11333,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "bytes": 26438,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0"
+    },
+    {
+      "bytes": 41219,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/docs/MOBILE_RECORDS_LOCAL_CURL_QUANTUM_INTERFACE_AND_BORN_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "d39b33a6ab8bf58b1c3daab87865bbc2effb2543cab48402a57daa8dca03adbb"
+    },
+    {
+      "bytes": 8615536,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/docs/audit/data/citation_graph.json",
+      "sha256": "fe4b4a3e40ee9483fc3c3f8d7482811ac2cd585ec0524572dea5b612b827d70f"
+    },
+    {
+      "bytes": 836515,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/docs/audit/data/citation_graph_manifest.json",
+      "sha256": "984f6535323b844cd1e527ed3c2f4758615553d065953e10cbf11611130d0bce"
+    },
+    {
+      "bytes": 2049,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/docs/audit/scripts/write_citation_graph_manifest.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288"
+    },
+    {
+      "bytes": 779,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/logs/runner-cache/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.txt",
+      "sha256": "711b1e4b4f0c70bce8bea1ae32912bf4dc2c6b3523552e30210f0ff5f040bf88"
+    },
+    {
+      "bytes": 6929,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py",
+      "sha256": "9c38ba3dcb1b1573072d45998f380e5ead4a0dda8fd69ef2b93d7b279118b0b4"
+    },
+    {
+      "bytes": 24941,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    }
+  ],
+  "source_or_git_mutations": []
+}

@@ -1,0 +1,26 @@
+{
+  "claim_id": "mobile_records_local_curl_quantum_interface_and_born_formation_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_LOCAL_CURL_QUANTUM_INTERFACE_AND_BORN_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-21.md": "d39b33a6ab8bf58b1c3daab87865bbc2effb2543cab48402a57daa8dca03adbb",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/suppliers/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/local_curl_native_formation_check.py": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/late_state_canonical_check.py": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/fourteen_label_quantum_check.py": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/fourteen_label_cubic_carrier_check.py": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5",
+    ".claude/science/mobile-record-local-curl-quantum-20260921/author_checks/born_compatible_fourteen_formation_check.py": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4",
+    "scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py": "9c38ba3dcb1b1573072d45998f380e5ead4a0dda8fd69ef2b93d7b279118b0b4"
+  },
+  "mutation": "drop_finite_count_correction",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "late_state_canonical_check.py",
+      "source_sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+      "executed_source_sha256": "e36d402606d81924b1a2a9b11b8fb0b3a7b932e66f438ad814a9fcbf91b33ef5",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/local-curl-quantum-controls-2znjx4ye/late_state_canonical_check.py\", line 57, in <module>\n    generic = count_sector([0, 1, 2, 3], [(2, 0, 1), (-1, 1, 0), (0, -2, 1), (1, 1, -3)])\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/local-curl-quantum-controls-2znjx4ye/late_state_canonical_check.py\", line 53, in count_sector\n    assert covariance[k, ell] == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "all_checks_passed": true,
+  "assembly_parts": 3,
+  "capsules": 2,
+  "members": 109,
+  "bundled_bindings": 78,
+  "original_seal_rows": 129,
+  "external_reference_exclusions": 1,
+  "author_baseline_controls_authenticated": 52,
+  "assertion_rejections_authenticated": 7,
+  "scientific_controls_executed": 0,
+  "source_files_authenticated": 39,
+  "graph": {
+    "fixed_base_commit": "c26b0171974c456f68dd92a4c8661ade1cc5ddbd",
+    "base_manifest_sha256": "c7da3b56d15f6bdde712dadba9b8ec43be1c9e433e3cd83da45aef6fec450dee",
+    "base_nodes": 6028,
+    "base_edges": 13609,
+    "current_nodes": 6029,
+    "current_edges": 13611,
+    "old_manifest_entries_unchanged": 6028,
+    "current_graph_matches_manifest": true,
+    "current_note_hash_matches_graph": true,
+    "limitation": "Old topology comparison uses every tracked manifest dependency hash/degree; no bytewise old full generated graph comparison is asserted."
+  }
+}

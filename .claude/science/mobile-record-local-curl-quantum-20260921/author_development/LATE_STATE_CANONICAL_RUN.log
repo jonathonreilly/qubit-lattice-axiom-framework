@@ -1,0 +1,8 @@
+PASS: all_permutations_four_distinct_labels_canonical_covariance
+PASS: repeated_label_count_sectors_and_nonzero_mode_means
+PASS: count_mixture_preserves_nonzero_formula_but_has_zero_mode_variance
+PASS: actual_fourteen_label_full_occupancy_feature_covariances
+PASS: late_state_scaled_curl_second_moment
+PASS: pathwise_count_squeeze_all_three_birth_completions
+PASS: finite_volume_harmonic_absorption_comparison
+TOTAL: 7 PASS

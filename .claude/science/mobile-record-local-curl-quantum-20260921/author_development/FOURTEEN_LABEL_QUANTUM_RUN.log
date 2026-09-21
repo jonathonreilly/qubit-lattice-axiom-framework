@@ -1,0 +1,14 @@
+PASS: rank_six_feature_Gram_and_orthogonality
+PASS: full_kernel_eigenspaces
+PASS: every_parent_column_is_distinct_for_nonzero_coupling
+PASS: positive_content_clock_preserves_rank
+PASS: natural_encoding_witness_complete
+PASS: all_fourteen_witness_column_total_variations
+PASS: reduced_minimax_dual_bound
+PASS: qutrit_operator_basis
+PASS: qutrit_all_196_exact_probabilities
+PASS: qutrit_completeness_and_state_traces
+PASS: four_dimensional_all_196_exact_probabilities
+PASS: positive_carrier_and_witness_endpoint_controls
+PASS: nine_unrestricted_qubit_POVM_optimizations
+TOTAL: 13 PASS

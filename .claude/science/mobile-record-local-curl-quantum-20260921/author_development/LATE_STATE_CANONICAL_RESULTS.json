@@ -1,0 +1,51 @@
+{
+  "source_sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+  "checks": [
+    {
+      "name": "all_permutations_four_distinct_labels_canonical_covariance",
+      "passed": true,
+      "detail": {
+        "permutations": 24,
+        "ordered_mode_pairs": 16
+      }
+    },
+    {
+      "name": "repeated_label_count_sectors_and_nonzero_mode_means",
+      "passed": true,
+      "detail": {
+        "permutations_per_sector": 12
+      }
+    },
+    {
+      "name": "count_mixture_preserves_nonzero_formula_but_has_zero_mode_variance",
+      "passed": true,
+      "detail": {
+        "zero_mode_covariance": "Matrix([[1/2, -1/6], [-1/6, 1/18]])"
+      }
+    },
+    {
+      "name": "actual_fourteen_label_full_occupancy_feature_covariances",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "late_state_scaled_curl_second_moment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pathwise_count_squeeze_all_three_birth_completions",
+      "passed": true,
+      "detail": {
+        "completions": 2744,
+        "occupied_labels": 14
+      }
+    },
+    {
+      "name": "finite_volume_harmonic_absorption_comparison",
+      "passed": true,
+      "detail": "Rate comparison still requires the pointwise lower bound in the derivation."
+    }
+  ],
+  "scope": "Exact finite count-sector, Fourier and monotone-count controls. The ordered-limit proof and conditional Euler premises require mathematical review; no fluctuation CLT or mixing rate is certified."
+}

@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-21T10:37:12.713706+00:00",
+  "complete_new_human_reads": [
+    "publication note: all 786 lines; truncated portion recovered",
+    "canonical runner: all 110 lines",
+    "PUBLICATION_TRANSFORM.json",
+    "README.md",
+    "verify_evidence.py",
+    "AUTHOR_RUNS.json",
+    "AUTHOR_VERIFICATION.json",
+    "GRAPH_VERIFICATION.json",
+    "canonical runner cache",
+    "preserved cache-attempt receipt and traceback"
+  ],
+  "prior_mathematical_reads_reused": "Known original report/seal identities authenticated; complete publication source bodies and all five scientific checkers byte-identical to those sealed reviews.",
+  "structured_complete_checks": "All capsule members, bindings, original seal rows; all baseline/mutation source identities and stderr failure types; all baseline manifest entries and current graph entries/edges.",
+  "not_reexecuted": [
+    "five scientific checkers",
+    "114-second canonical scientific suite",
+    "mutated scientific suites"
+  ],
+  "not_reread_or_fetched": [
+    "Gallego arXiv:1010.5064v1 external PDF",
+    "unchanged prior mathematical proofs beyond necessary preserved scope",
+    "unrelated primary research"
+  ],
+  "housekeeping_failure": "Preliminary rg named nonexistent .cache and returned path-not-found; owning script located logs/runner-cache. Independent assembly checker passed first execution.",
+  "source_mutations": [],
+  "git_mutations": [],
+  "audit_verdict": null
+}

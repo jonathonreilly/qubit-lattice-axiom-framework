@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-21T09:54:37.681553+00:00",
+  "runner_sha256": "9c38ba3dcb1b1573072d45998f380e5ead4a0dda8fd69ef2b93d7b279118b0b4",
+  "note_sha256": "d39b33a6ab8bf58b1c3daab87865bbc2effb2543cab48402a57daa8dca03adbb",
+  "primary_controls": 52,
+  "mutations_rejected": 7,
+  "scope": "Author exact and numerical controls plus substantive mutation assertion failures; not independent proof or audit."
+}

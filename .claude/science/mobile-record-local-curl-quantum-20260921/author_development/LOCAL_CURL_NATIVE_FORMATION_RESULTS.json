@@ -1,0 +1,74 @@
+{
+  "source_sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+  "checks": [
+    {
+      "name": "all_pair_weight_brackets_and_positivity_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_uniform_reaction_trajectory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fourteen_moments_reconstruct_all_occupied_probabilities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_native_reaction_jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_fourteen_linear_flux_and_reaction_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transverse_wave_and_longitudinal_reaction_structure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "local_curl_field_evolution_intertwining",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_initial_neighbor_covariance_with_both_birth_endpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "integrated_native_linear_gain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_lattice_Gauss_and_curl_covariance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "polar_axial_curl_readout_under_all_cubic_actions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_configuration_identity_after_all_birth_labels_and_whole_record_swap",
+      "passed": true,
+      "detail": {
+        "side": 7,
+        "birth_labels": 14
+      }
+    },
+    {
+      "name": "nearest_neighbor_birth_law_is_nonconstant_for_nonzero_j",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Primary exact finite-event and full fourteen-field algebra. The general entropy proof and native fluctuation replacement are not certified by check counts; the latter is not claimed."
+}

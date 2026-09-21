@@ -1,0 +1,95 @@
+{
+  "source_sha256": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4",
+  "checks": [
+    {
+      "name": "Born_Gram_rank_and_isotropic_frame",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "uniform_fourteen_trajectory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entire_fourteen_species_reaction_Jacobian",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "entire_fourteen_species_flux_and_reaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "driven_and_undriven_vector_rotation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen_transverse_characteristic_polynomial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "noncommuting_gain_and_wave_blocks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all196_single_qubit_marked_probabilities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fourteen_ray_second_moment_for_fidelity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_two_parent_marked_rate_probabilities",
+      "passed": true,
+      "detail": {
+        "probabilities": 2744
+      }
+    },
+    {
+      "name": "explicit_full_parity_failure_of_cross_orbit_weight",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "integrated_norm_gain_comparison",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "time_ordered_six_field_ODE_gain_and_late_wave_controls",
+      "passed": true,
+      "detail": [
+        {
+          "j": -0.8,
+          "norm_comparison_violation": 4.746314452575007e-12,
+          "late_interaction_picture_difference": 2.566721496364216e-06,
+          "rigorous_tail_bound": 1.842667573877528e-05,
+          "j0_integrated_phase_residual": null
+        },
+        {
+          "j": 0,
+          "norm_comparison_violation": 4.4518788655523167e-10,
+          "late_interaction_picture_difference": 8.071436808847023e-07,
+          "rigorous_tail_bound": 8.071236790372959e-07,
+          "j0_integrated_phase_residual": 1.070133810181944e-11
+        },
+        {
+          "j": 0.8,
+          "norm_comparison_violation": 2.0389467891845925e-11,
+          "late_interaction_picture_difference": 1.552365676779249e-05,
+          "rigorous_tail_bound": 1.842667573877528e-05,
+          "j0_integrated_phase_residual": null
+        }
+      ]
+    }
+  ],
+  "scope": "Primary exact fourteen-field and quantum-event controls plus finite numerical time-ordered ODE checks. No repeated quantum waiting law, immutable physical parent, native stochastic fluctuation theorem or physical EM identification."
+}

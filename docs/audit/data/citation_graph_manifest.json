@@ -1,6 +1,6 @@
 {
- "edge_count": 13609,
- "node_count": 6028,
+ "edge_count": 13611,
+ "node_count": 6029,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12860,6 +12860,10 @@
   },
   "mobile_records_immutable_transverse_curl_limits_bounded_theorem_note_2026-09-21": {
    "deps_hash": "031ce03f42db",
+   "out_degree": 2
+  },
+  "mobile_records_local_curl_quantum_interface_and_born_formation_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "c6aea341ecfb",
    "out_degree": 2
   },
   "momentum_charge_commute_theorem_note_2026-05-02": {

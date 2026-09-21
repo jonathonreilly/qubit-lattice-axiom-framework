@@ -1,0 +1,54 @@
+{
+  "note": "docs/MOBILE_RECORDS_LOCAL_CURL_QUANTUM_INTERFACE_AND_BORN_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "source": "LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+      "source_sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f",
+      "published_body_sha256": "3d3b82b348b8476a5c2349776e11532d52e8a991c2453c4381bb2babd3266586",
+      "replacements": [
+        {
+          "old": "Independent review pending.",
+          "new": "Selective independent mathematical review is complete."
+        }
+      ],
+      "change": "Remove original top heading, increase nested heading level by one, and update only the specified review-status sentence."
+    },
+    {
+      "source": "FOURTEEN_LABEL_QUANTUM_INTERFACE_DERIVATION.md",
+      "source_sha256": "9bb453c1041ea2a548989f14e2666df6a27c76adb8e35bf2d833eb2334bd2f5d",
+      "published_body_sha256": "77e0c7709ab5af797c5e77c109903dc2ba50db56192e38e28fe42e62ed3afbce",
+      "replacements": [
+        {
+          "old": "not yet independently reviewed.",
+          "new": "with completed selective independent review."
+        }
+      ],
+      "change": "Remove original top heading, increase nested heading level by one, and update only the specified review-status sentence."
+    },
+    {
+      "source": "BORN_COMPATIBLE_FOURTEEN_LABEL_FORMATION.md",
+      "source_sha256": "42197693e57ead840ef3fc174c62cb56c1ae1ab7b49e3d164a36241698685c8f",
+      "published_body_sha256": "2cd62a44adfe903744901d6d75c14dd46e79f50d86287ce17c65c543d03d49ef",
+      "replacements": [
+        {
+          "old": "not independently checked yet.",
+          "new": "with completed selective independent review."
+        }
+      ],
+      "change": "Remove original top heading, increase nested heading level by one, and update only the specified review-status sentence."
+    }
+  ],
+  "provisional_suppliers": [
+    {
+      "pr": 8560,
+      "head": "c26b0171974c456f68dd92a4c8661ade1cc5ddbd",
+      "inherited_in_base": true
+    },
+    {
+      "pr": 8561,
+      "head": "4ae52ade2299b4dfaff388971f423aa8f6ddf64a",
+      "path": "suppliers/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc"
+    }
+  ]
+}

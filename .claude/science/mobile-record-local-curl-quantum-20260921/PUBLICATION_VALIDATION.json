@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-09-21T10:39:55.120969+00:00",
+  "review_report_sha256": "99daba143ae867780c31dda339702f675ab5a6006c0e0709362310b8442bb767",
+  "review_seal_sha256": "973bf4b79dd4fb4844e3de7c59a30409d4be1ea546976ce1e987ab9a7e18569e",
+  "verified_seal_files": {
+    "artifact_identities": 14,
+    "procedure_dependencies": 3,
+    "source_identities": 39
+  },
+  "root_read": "Complete assembly report and checker; unchanged source mathematical reports and checkers were previously fully read and source-authenticated.",
+  "author_controls": 52,
+  "mutations_rejected": 7,
+  "python_files_compiled": 9,
+  "graph": {
+    "nodes_added": 1,
+    "edges_added": 2,
+    "existing_topology_unchanged": true,
+    "manifest_sha256": "984f6535323b844cd1e527ed3c2f4758615553d065953e10cbf11611130d0bce"
+  },
+  "scope": "Draft milestone verification; combined pipeline, strict audit lint, negative-claim packet/schema and changed-evidence integration remain pending. No formal audit verdict."
+}

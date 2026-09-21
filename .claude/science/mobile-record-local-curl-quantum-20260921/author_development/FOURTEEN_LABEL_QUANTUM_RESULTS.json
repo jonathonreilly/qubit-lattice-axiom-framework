@@ -1,0 +1,163 @@
+{
+  "source_sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+  "checks": [
+    {
+      "name": "rank_six_feature_Gram_and_orthogonality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_kernel_eigenspaces",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every_parent_column_is_distinct_for_nonzero_coupling",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive_content_clock_preserves_rank",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "natural_encoding_witness_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_fourteen_witness_column_total_variations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reduced_minimax_dual_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qutrit_operator_basis",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qutrit_all_196_exact_probabilities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "qutrit_completeness_and_state_traces",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four_dimensional_all_196_exact_probabilities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive_carrier_and_witness_endpoint_controls",
+      "passed": true,
+      "detail": {
+        "minimum_eigenvalue": -2.9820095012016994e-18
+      }
+    },
+    {
+      "name": "nine_unrestricted_qubit_POVM_optimizations",
+      "passed": true,
+      "detail": {
+        "maximum_objective_discrepancy": 3.6535635627998886e-12
+      }
+    }
+  ],
+  "fits": [
+    {
+      "j": -0.99,
+      "status": "optimal",
+      "objective": 0.08966212146842582,
+      "reference": 0.08966212146477226,
+      "discrepancy": 3.6535635627998886e-12,
+      "largest_actual_TV": 0.08966212146739883,
+      "feasibility_residual": 1.1102230246251565e-16
+    },
+    {
+      "j": -0.75,
+      "status": "optimal",
+      "objective": 0.06792584959523587,
+      "reference": 0.06792584959452444,
+      "discrepancy": 7.114309141798003e-13,
+      "largest_actual_TV": 0.06792584959636891,
+      "feasibility_residual": 2.220446049250313e-16
+    },
+    {
+      "j": -0.5,
+      "status": "optimal",
+      "objective": 0.045283899728534506,
+      "reference": 0.045283899729682955,
+      "discrepancy": 1.1484493911417815e-12,
+      "largest_actual_TV": 0.04528389973482999,
+      "feasibility_residual": 1.1102230246251565e-16
+    },
+    {
+      "j": -0.1,
+      "status": "optimal",
+      "objective": 0.009056779944396456,
+      "reference": 0.009056779945936592,
+      "discrepancy": 1.5401360742295367e-12,
+      "largest_actual_TV": 0.009056779946487271,
+      "feasibility_residual": 2.168404344971009e-19
+    },
+    {
+      "j": 0,
+      "status": "optimal",
+      "objective": 0.0,
+      "reference": 0.0,
+      "discrepancy": 0.0,
+      "largest_actual_TV": 0.0,
+      "feasibility_residual": 2.220446049250313e-16
+    },
+    {
+      "j": 0.1,
+      "status": "optimal",
+      "objective": 0.009056779944396503,
+      "reference": 0.009056779945936592,
+      "discrepancy": 1.5400892366956853e-12,
+      "largest_actual_TV": 0.009056779946487278,
+      "feasibility_residual": 2.220446049250313e-16
+    },
+    {
+      "j": 0.5,
+      "status": "optimal",
+      "objective": 0.04528389972853444,
+      "reference": 0.045283899729682955,
+      "discrepancy": 1.1485187800808205e-12,
+      "largest_actual_TV": 0.04528389973483,
+      "feasibility_residual": 1.3010426069826053e-18
+    },
+    {
+      "j": 0.75,
+      "status": "optimal",
+      "objective": 0.06792584959523572,
+      "reference": 0.06792584959452444,
+      "discrepancy": 7.112782585139144e-13,
+      "largest_actual_TV": 0.06792584959636899,
+      "feasibility_residual": 3.3306690738754696e-16
+    },
+    {
+      "j": 0.99,
+      "status": "optimal",
+      "objective": 0.08966212146842574,
+      "reference": 0.08966212146477226,
+      "discrepancy": 3.653480296073042e-12,
+      "largest_actual_TV": 0.0896621214673988,
+      "feasibility_residual": 2.220446049250313e-16
+    }
+  ],
+  "versions": {
+    "numpy": "2.4.4",
+    "sympy": "1.14.0",
+    "cvxpy": "1.9.3"
+  },
+  "scope": "Primary exact finite kernel/carrier checks and floating-point unrestricted POVM optima for fixed natural inputs. No spatial carrier, physical quantum bridge or minimal carrier dimension above |j|=1/3 is certified."
+}

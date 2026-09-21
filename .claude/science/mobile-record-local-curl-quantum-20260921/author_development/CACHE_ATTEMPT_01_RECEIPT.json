@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-21T09:59:58.134246+00:00",
+  "failure": "RunnerIdentityChangedError",
+  "content_identity_before": [
+    "9c38ba3dcb1b1573072d45998f380e5ead4a0dda8fd69ef2b93d7b279118b0b4",
+    "193c59d108230dcaa34c66614f5f9b3b2de80b8e729900f7bdd925efb98bf044"
+  ],
+  "content_identity_after": [
+    "9c38ba3dcb1b1573072d45998f380e5ead4a0dda8fd69ef2b93d7b279118b0b4",
+    "193c59d108230dcaa34c66614f5f9b3b2de80b8e729900f7bdd925efb98bf044"
+  ],
+  "content_unchanged": true,
+  "cause": "Concurrent README/graph-verification creation and py_compile introduced directory entries in declared-input ancestor directories; fail-closed stat token check rejected cache. Freeze directories and retry without weakening validation."
+}

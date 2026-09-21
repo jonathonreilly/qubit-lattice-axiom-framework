@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py
+runner_sha256: 9c38ba3dcb1b1573072d45998f380e5ead4a0dda8fd69ef2b93d7b279118b0b4
+input_fingerprint_sha256: 193c59d108230dcaa34c66614f5f9b3b2de80b8e729900f7bdd925efb98bf044
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 113.80
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: local_curl_native_formation_check.py: 13 declared controls
+PASS: late_state_canonical_check.py: 7 declared controls
+PASS: fourteen_label_quantum_check.py: 13 declared controls
+PASS: fourteen_label_cubic_carrier_check.py: 5 declared controls
+PASS: born_compatible_fourteen_formation_check.py: 13 declared controls
+TOTAL: PASS=52 FAIL=0
+
+----- stderr -----
+

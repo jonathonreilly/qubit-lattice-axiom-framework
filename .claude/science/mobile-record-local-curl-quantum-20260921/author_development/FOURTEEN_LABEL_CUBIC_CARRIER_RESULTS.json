@@ -1,0 +1,34 @@
+{
+  "source_sha256": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5",
+  "checks": [
+    {
+      "name": "all_S4_character_inner_products",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_dimension_square_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "class_table_from_actual_permutations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only_two_trivial_remainder_has_nonnegative_Ad_character",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four_dimensional_states_and_effects_covariant_under_all_proper_cubic_rotations",
+      "passed": true,
+      "detail": {
+        "rotations": 24,
+        "maximum_residual": 2.220446049250313e-16
+      }
+    }
+  ],
+  "scope": "Finite S4 character table and all24 positive carrier covariance checks. The projective-commutant argument remains a proof obligation for independent review."
+}

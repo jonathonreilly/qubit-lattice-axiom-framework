@@ -1,0 +1,6 @@
+PASS: all_S4_character_inner_products
+PASS: complete_dimension_square_sum
+PASS: class_table_from_actual_permutations
+PASS: only_two_trivial_remainder_has_nonnegative_Ad_character
+PASS: four_dimensional_states_and_effects_covariant_under_all_proper_cubic_rotations
+TOTAL: 5 PASS

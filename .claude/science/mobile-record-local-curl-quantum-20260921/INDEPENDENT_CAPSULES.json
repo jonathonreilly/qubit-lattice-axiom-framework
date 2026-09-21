@@ -1,0 +1,1133 @@
+{
+  "created_utc": "2026-09-21T09:51:40.036264+00:00",
+  "capsules": [
+    {
+      "name": "local_curl_independent",
+      "archive": "independent/local_curl_independent.zip",
+      "zip_sha256": "fc71fdf3c6c97dd489e289ac59a3624c4a10843f7d06b49d990a63a57bd926ef",
+      "report": "independent/local_curl_independent_REPORT.md",
+      "report_sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_COMPARISON_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/CHECKPOINT.md",
+          "sha256": "288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e",
+          "bytes": 633,
+          "disposition": "bundled",
+          "member": "bound_sources/288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e/CHECKPOINT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INDEPENDENT_CHECK.log",
+          "sha256": "be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6",
+          "bytes": 3120,
+          "disposition": "bundled",
+          "member": "bound_sources/be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6/INDEPENDENT_CHECK.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INDEPENDENT_RESULTS.json",
+          "sha256": "24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f",
+          "bytes": 4316,
+          "disposition": "bundled",
+          "member": "bound_sources/24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/INITIAL_RECONSTRUCTION.md",
+          "sha256": "ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20",
+          "bytes": 20855,
+          "disposition": "bundled",
+          "member": "bound_sources/ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20/INITIAL_RECONSTRUCTION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/PRE_COMPARISON_SEAL.json",
+          "sha256": "6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22",
+          "bytes": 6669,
+          "disposition": "bundled",
+          "member": "bound_sources/6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22/PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/REPORT.md",
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232",
+          "bytes": 26690,
+          "disposition": "bundled",
+          "member": "bound_sources/53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_COMPARISON.json",
+          "sha256": "332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7",
+          "bytes": 5387,
+          "disposition": "bundled",
+          "member": "bound_sources/332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7/SOURCE_COMPARISON.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_COMPARISON.log",
+          "sha256": "2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c",
+          "bytes": 129,
+          "disposition": "bundled",
+          "member": "bound_sources/2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c/SOURCE_COMPARISON.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/SOURCE_IDENTITIES.json",
+          "sha256": "2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28",
+          "bytes": 4959,
+          "disposition": "bundled",
+          "member": "bound_sources/2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28/SOURCE_IDENTITIES.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/compare_sources.py",
+          "sha256": "5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d",
+          "bytes": 4356,
+          "disposition": "bundled",
+          "member": "bound_sources/5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d/compare_sources.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/independent_check.py",
+          "sha256": "42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e",
+          "bytes": 13399,
+          "disposition": "bundled",
+          "member": "bound_sources/42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+          "sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f",
+          "bytes": 5084,
+          "disposition": "bundled",
+          "member": "bound_sources/f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+          "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f",
+          "bytes": 16425,
+          "disposition": "bundled",
+          "member": "bound_sources/a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+          "bytes": 11623,
+          "disposition": "bundled",
+          "member": "bound_sources/684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333,
+          "disposition": "bundled",
+          "member": "bound_sources/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753/MINIMAL_AXIOMS_2026-06-29.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+          "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3",
+          "bytes": 18148,
+          "disposition": "bundled",
+          "member": "bound_sources/60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/REPORT.md",
+          "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c",
+          "bytes": 21955,
+          "disposition": "bundled",
+          "member": "bound_sources/dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_transverse_exchange/REPORT.md",
+          "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf",
+          "bytes": 30451,
+          "disposition": "bundled",
+          "member": "bound_sources/9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/REPORT.md",
+          "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68",
+          "bytes": 22838,
+          "disposition": "bundled",
+          "member": "bound_sources/772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/REPORT.md",
+          "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc",
+          "bytes": 25686,
+          "disposition": "bundled",
+          "member": "bound_sources/168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af",
+          "bytes": 12493,
+          "disposition": "bundled",
+          "member": "bound_sources/046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-transverse-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0",
+          "bytes": 26438,
+          "disposition": "bundled",
+          "member": "bound_sources/d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-native-formation-publication-20260921/docs/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc",
+          "bytes": 34314,
+          "disposition": "bundled",
+          "member": "bound_sources/b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-immutable-waves-publication-20260921/docs/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da",
+          "bytes": 23487,
+          "disposition": "bundled",
+          "member": "bound_sources/4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/loop_birth_locality_check.py",
+          "sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4",
+          "bytes": 3305,
+          "disposition": "bundled",
+          "member": "bound_sources/e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4/loop_birth_locality_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOOP_BIRTH_LOCALITY_RESULTS.json",
+          "sha256": "bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc",
+          "bytes": 1034,
+          "disposition": "bundled",
+          "member": "bound_sources/bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc/LOOP_BIRTH_LOCALITY_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOOP_BIRTH_LOCALITY_RUN.log",
+          "sha256": "705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad",
+          "bytes": 288,
+          "disposition": "bundled",
+          "member": "bound_sources/705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad/LOOP_BIRTH_LOCALITY_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_native_formation_check.py",
+          "sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed",
+          "bytes": 6068,
+          "disposition": "bundled",
+          "member": "bound_sources/6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed/local_curl_native_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_NATIVE_FORMATION_RESULTS.json",
+          "sha256": "ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189",
+          "bytes": 1921,
+          "disposition": "bundled",
+          "member": "bound_sources/ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189/LOCAL_CURL_NATIVE_FORMATION_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "sha256": "716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7",
+          "bytes": 709,
+          "disposition": "bundled",
+          "member": "bound_sources/716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7/LOCAL_CURL_NATIVE_FORMATION_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/late_state_canonical_check.py",
+          "sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb",
+          "bytes": 5824,
+          "disposition": "bundled",
+          "member": "bound_sources/5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb/late_state_canonical_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LATE_STATE_CANONICAL_RESULTS.json",
+          "sha256": "1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50",
+          "bytes": 1518,
+          "disposition": "bundled",
+          "member": "bound_sources/1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50/LATE_STATE_CANONICAL_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LATE_STATE_CANONICAL_RUN.log",
+          "sha256": "5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d",
+          "bytes": 424,
+          "disposition": "bundled",
+          "member": "bound_sources/5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d/LATE_STATE_CANONICAL_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_development/first_structural_equality/local_curl_native_formation_check.py",
+          "sha256": "47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b",
+          "bytes": 6046,
+          "disposition": "bundled",
+          "member": "bound_sources/47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b/local_curl_native_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_development/first_structural_equality/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "sha256": "ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823",
+          "bytes": 1511,
+          "disposition": "bundled",
+          "member": "bound_sources/ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823/LOCAL_CURL_NATIVE_FORMATION_RUN.log"
+        }
+      ],
+      "members": [
+        {
+          "path": "bound_sources/046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af/REPORT.md",
+          "bytes": 12493,
+          "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+        },
+        {
+          "path": "bound_sources/168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc/REPORT.md",
+          "bytes": 25686,
+          "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc"
+        },
+        {
+          "path": "bound_sources/1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50/LATE_STATE_CANONICAL_RESULTS.json",
+          "bytes": 1518,
+          "sha256": "1f8b40a46f3fa917be72d45b32d44840d416f08aedac15603f3b1e3831bace50"
+        },
+        {
+          "path": "bound_sources/24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f/INDEPENDENT_RESULTS.json",
+          "bytes": 4316,
+          "sha256": "24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f"
+        },
+        {
+          "path": "bound_sources/288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e/CHECKPOINT.md",
+          "bytes": 633,
+          "sha256": "288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e"
+        },
+        {
+          "path": "bound_sources/2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c/SOURCE_COMPARISON.log",
+          "bytes": 129,
+          "sha256": "2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c"
+        },
+        {
+          "path": "bound_sources/2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28/SOURCE_IDENTITIES.json",
+          "bytes": 4959,
+          "sha256": "2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28"
+        },
+        {
+          "path": "bound_sources/332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7/SOURCE_COMPARISON.json",
+          "bytes": 5387,
+          "sha256": "332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7"
+        },
+        {
+          "path": "bound_sources/42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e/independent_check.py",
+          "bytes": 13399,
+          "sha256": "42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e"
+        },
+        {
+          "path": "bound_sources/47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b/local_curl_native_formation_check.py",
+          "bytes": 6046,
+          "sha256": "47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b"
+        },
+        {
+          "path": "bound_sources/4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da/MOBILE_RECORDS_IMMUTABLE_CONTEXT_EXCHANGE_ACOUSTIC_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "bytes": 23487,
+          "sha256": "4c9c671678b4d2be2f6ada61412398a2fd797f1c9bb1f101f072e3d4968082da"
+        },
+        {
+          "path": "bound_sources/5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d/LATE_STATE_CANONICAL_RUN.log",
+          "bytes": 424,
+          "sha256": "5201eddac32f925d87fe5d1622ab56a196febe55d2c61d5efa73c5b585e74c5d"
+        },
+        {
+          "path": "bound_sources/53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232/REPORT.md",
+          "bytes": 26690,
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232"
+        },
+        {
+          "path": "bound_sources/5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb/late_state_canonical_check.py",
+          "bytes": 5824,
+          "sha256": "5a970b6be91b112ae2a147c253062d7cb519d56c257c31a47b25489553580cdb"
+        },
+        {
+          "path": "bound_sources/5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d/compare_sources.py",
+          "bytes": 4356,
+          "sha256": "5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d"
+        },
+        {
+          "path": "bound_sources/60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3/REPORT.md",
+          "bytes": 18148,
+          "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+        },
+        {
+          "path": "bound_sources/684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+          "bytes": 11623,
+          "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+        },
+        {
+          "path": "bound_sources/6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22/PRE_COMPARISON_SEAL.json",
+          "bytes": 6669,
+          "sha256": "6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22"
+        },
+        {
+          "path": "bound_sources/6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed/local_curl_native_formation_check.py",
+          "bytes": 6068,
+          "sha256": "6e84604fbf5c0366dc0b6eac063bb5539fcbb2e9d600628150111936b91829ed"
+        },
+        {
+          "path": "bound_sources/705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad/LOOP_BIRTH_LOCALITY_RUN.log",
+          "bytes": 288,
+          "sha256": "705b0b7eb4ac21a4a1a603915a9b14f05e9a8ef770e4a996df9d21e1eb4d64ad"
+        },
+        {
+          "path": "bound_sources/716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "bytes": 709,
+          "sha256": "716d58968f8d893767ba0e2272a26477ff8b5100bf899833c1695d44fbd72ca7"
+        },
+        {
+          "path": "bound_sources/772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68/REPORT.md",
+          "bytes": 22838,
+          "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+        },
+        {
+          "path": "bound_sources/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753/MINIMAL_AXIOMS_2026-06-29.md",
+          "bytes": 11333,
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "bytes": 737,
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "bytes": 14490,
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "path": "bound_sources/9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf/REPORT.md",
+          "bytes": 30451,
+          "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf"
+        },
+        {
+          "path": "bound_sources/a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+          "bytes": 16425,
+          "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f"
+        },
+        {
+          "path": "bound_sources/ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20/INITIAL_RECONSTRUCTION.md",
+          "bytes": 20855,
+          "sha256": "ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20"
+        },
+        {
+          "path": "bound_sources/b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc/MOBILE_RECORDS_NATIVE_FORMATION_EULER_AND_CUBIC_CENTERING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "bytes": 34314,
+          "sha256": "b10c0ad5fb9e0802b9fb7a5c206d5d9e1970b2c2573a5d792ab29b2758aea0dc"
+        },
+        {
+          "path": "bound_sources/bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc/LOOP_BIRTH_LOCALITY_RESULTS.json",
+          "bytes": 1034,
+          "sha256": "bb56812b9d093557d2991cf20e56c2725e70c6a110f8d7b29e002d1b6fe4defc"
+        },
+        {
+          "path": "bound_sources/be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6/INDEPENDENT_CHECK.log",
+          "bytes": 3120,
+          "sha256": "be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6"
+        },
+        {
+          "path": "bound_sources/d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0/MOBILE_RECORDS_IMMUTABLE_TRANSVERSE_CURL_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+          "bytes": 26438,
+          "sha256": "d5f3ef5dbe1d43c22bb63bfa4c09c71de839c59c9a405a770b7f051002d011f0"
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "bytes": 12253,
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "path": "bound_sources/dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c/REPORT.md",
+          "bytes": 21955,
+          "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c"
+        },
+        {
+          "path": "bound_sources/e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4/loop_birth_locality_check.py",
+          "bytes": 3305,
+          "sha256": "e501e4c931a8ce9df577d3ba70a2f7706df154e5763c2b0c1021f78724e499b4"
+        },
+        {
+          "path": "bound_sources/ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823/LOCAL_CURL_NATIVE_FORMATION_RUN.log",
+          "bytes": 1511,
+          "sha256": "ef6ae3258fd381d552eaa0a36a39ebabd0e8152509ea8383d46f5f81f4788823"
+        },
+        {
+          "path": "bound_sources/f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f/NEAREST_NEIGHBOR_LOOP_FORMATION_DIAGNOSTIC.md",
+          "bytes": 5084,
+          "sha256": "f1d5234bbff516995f2ec445c889fb9bc4eaccf381274b382d3206b2dec33d3f"
+        },
+        {
+          "path": "bound_sources/ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189/LOCAL_CURL_NATIVE_FORMATION_RESULTS.json",
+          "bytes": 1921,
+          "sha256": "ff299faf7f86bf9666b18f13144207618efe02637fb03d1231ce9eb59eca5189"
+        },
+        {
+          "path": "review/CHECKPOINT.md",
+          "bytes": 633,
+          "sha256": "288e4195dd4df3ada11962625107c86281cf879a30bbd2b514f0ef10a6d8689e"
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "bytes": 13257,
+          "sha256": "e687e466fd8505ad7f98e205bae0c611fd742139a638cc063b3d9e1c988240bb"
+        },
+        {
+          "path": "review/INDEPENDENT_CHECK.log",
+          "bytes": 3120,
+          "sha256": "be6e730ef19fecd766fa23bb78528da08da4894c181ec6801accb53ddd7082c6"
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "bytes": 4316,
+          "sha256": "24658ac4c99ce1dc35d6fcae4a377a64515684481c0848adb88daa4867f5ee7f"
+        },
+        {
+          "path": "review/INITIAL_RECONSTRUCTION.md",
+          "bytes": 20855,
+          "sha256": "ae102c6e5cdaf108c435cce0eecf14972a1467679a6d2dc16127a39de3e4be20"
+        },
+        {
+          "path": "review/PRE_COMPARISON_SEAL.json",
+          "bytes": 6669,
+          "sha256": "6aa16724081ff1d271883722e2ca0506477c0a8e725eaae84d75c3e324804a22"
+        },
+        {
+          "path": "review/REPORT.md",
+          "bytes": 26690,
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232"
+        },
+        {
+          "path": "review/SOURCE_COMPARISON.json",
+          "bytes": 5387,
+          "sha256": "332dc7f62d4266f46324a2d95846b628d9b0cc05997b6ca955e9dd167a8d5fc7"
+        },
+        {
+          "path": "review/SOURCE_COMPARISON.log",
+          "bytes": 129,
+          "sha256": "2f08dd6d54e06f361995cb1d2e9585ca7dba7763a1245b4d42c2def7bf77963c"
+        },
+        {
+          "path": "review/SOURCE_IDENTITIES.json",
+          "bytes": 4959,
+          "sha256": "2f86ae56779a4fb62287ea5c550653fc7d3e9bc8338f0f29d439725ada535c28"
+        },
+        {
+          "path": "review/compare_sources.py",
+          "bytes": 4356,
+          "sha256": "5bbceeb17784d517590a9d24b49cba7caf1ed742bc5ba3ea282ac84fdb6e3b1d"
+        },
+        {
+          "path": "review/independent_check.py",
+          "bytes": 13399,
+          "sha256": "42dd56c213fd20c8e5694f91fcf6354524e3d6299a6b2bc191a3360741b8124e"
+        }
+      ]
+    },
+    {
+      "name": "fourteen_quantum_independent",
+      "archive": "independent/fourteen_quantum_independent.zip",
+      "zip_sha256": "ad13ac144e5b6d9d861a595a796353b8d983d933a36ffdaf5655089d523548db",
+      "report": "independent/fourteen_quantum_independent_REPORT.md",
+      "report_sha256": "ae8bdc776893ae9b7873d57f6664d7b6c36dbb56cb623948c93a958762fa47a2",
+      "seal_members": [
+        "review/FINAL_SEAL.json",
+        "review/PRE_COMPARISON_SEAL.json"
+      ],
+      "bindings": [
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/ATTEMPTS.json",
+          "sha256": "4ed2809eca8872b3f5504722a55e1cf4643f56ec891cd80302e39c797067bb60",
+          "bytes": 1787,
+          "disposition": "bundled",
+          "member": "bound_sources/4ed2809eca8872b3f5504722a55e1cf4643f56ec891cd80302e39c797067bb60/ATTEMPTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/CHECKPOINT.md",
+          "sha256": "3cef5321b3228b284d1a03b395af35e802dc716e669fd338aa8c978f7ac77a85",
+          "bytes": 688,
+          "disposition": "bundled",
+          "member": "bound_sources/3cef5321b3228b284d1a03b395af35e802dc716e669fd338aa8c978f7ac77a85/CHECKPOINT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/ENVIRONMENT_PROBE.log",
+          "sha256": "3fada49012ac5f3f3ac2edc8be389aa3f027481b0133b1817f0079d41a64ecac",
+          "bytes": 322,
+          "disposition": "bundled",
+          "member": "bound_sources/3fada49012ac5f3f3ac2edc8be389aa3f027481b0133b1817f0079d41a64ecac/ENVIRONMENT_PROBE.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/ENVIRONMENT_PROBE_FIRST_TOOL_OUTPUT.json",
+          "sha256": "8b00322733f9687939aab0734e90b3c87d55332dde011ff0c419913d22ab40e7",
+          "bytes": 540,
+          "disposition": "bundled",
+          "member": "bound_sources/8b00322733f9687939aab0734e90b3c87d55332dde011ff0c419913d22ab40e7/ENVIRONMENT_PROBE_FIRST_TOOL_OUTPUT.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/EXTERNAL_SOURCE.json",
+          "sha256": "0a55ee6f2bbdc536822de1adb432509aebd6d01d1e026173ca4777f200dfd405",
+          "bytes": 722,
+          "disposition": "bundled",
+          "member": "bound_sources/0a55ee6f2bbdc536822de1adb432509aebd6d01d1e026173ca4777f200dfd405/EXTERNAL_SOURCE.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/GALLEGO_1010_5064v1.pdf",
+          "sha256": "c919dec4d75cafd53138a9ec64d09d344ce520caadb5a85a77f7561faa70106d",
+          "bytes": 197504,
+          "disposition": "external_reference_not_bundled",
+          "url": "https://arxiv.org/pdf/1010.5064v1"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/INDEPENDENT_CHECK.log",
+          "sha256": "7e9aae7e1011e69467898a07dacf5b3720557e4381459e0832b53cc216f3d5e3",
+          "bytes": 5091,
+          "disposition": "bundled",
+          "member": "bound_sources/7e9aae7e1011e69467898a07dacf5b3720557e4381459e0832b53cc216f3d5e3/INDEPENDENT_CHECK.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/INDEPENDENT_RESULTS.json",
+          "sha256": "f0206fd2780e85a5db203396021f029e39dd73549921e35194fd1efd2ebfd189",
+          "bytes": 7038,
+          "disposition": "bundled",
+          "member": "bound_sources/f0206fd2780e85a5db203396021f029e39dd73549921e35194fd1efd2ebfd189/INDEPENDENT_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/INITIAL_RECONSTRUCTION.md",
+          "sha256": "f867b2fdf8bcfefb4c7e0db1305610d10c15a27d20b6fe65da44108896ccafce",
+          "bytes": 24958,
+          "disposition": "bundled",
+          "member": "bound_sources/f867b2fdf8bcfefb4c7e0db1305610d10c15a27d20b6fe65da44108896ccafce/INITIAL_RECONSTRUCTION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/PRE_COMPARISON_SEAL.json",
+          "sha256": "b8d703de6cf7c9618c51d1294a35f0d867b63ba85a61085f793e4f423aeb4ef5",
+          "bytes": 8094,
+          "disposition": "bundled",
+          "member": "bound_sources/b8d703de6cf7c9618c51d1294a35f0d867b63ba85a61085f793e4f423aeb4ef5/PRE_COMPARISON_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/REPORT.md",
+          "sha256": "ae8bdc776893ae9b7873d57f6664d7b6c36dbb56cb623948c93a958762fa47a2",
+          "bytes": 32395,
+          "disposition": "bundled",
+          "member": "bound_sources/ae8bdc776893ae9b7873d57f6664d7b6c36dbb56cb623948c93a958762fa47a2/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/SOURCE_COMPARISON.json",
+          "sha256": "85d1a83af07ef2cbead29912961058a9e098f4d4467669103d2bbd1cfa3ed8ef",
+          "bytes": 5167,
+          "disposition": "bundled",
+          "member": "bound_sources/85d1a83af07ef2cbead29912961058a9e098f4d4467669103d2bbd1cfa3ed8ef/SOURCE_COMPARISON.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/SOURCE_COMPARISON.log",
+          "sha256": "cb27fa593df3c186de0cf95b755708a1dc6462ce20afda5ade94323fd42f01fe",
+          "bytes": 149,
+          "disposition": "bundled",
+          "member": "bound_sources/cb27fa593df3c186de0cf95b755708a1dc6462ce20afda5ade94323fd42f01fe/SOURCE_COMPARISON.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/SOURCE_IDENTITIES.json",
+          "sha256": "0e34ee6962b189636caef06cd8ee4993d0beca0ab3081f30d4d3b4bf64bd9eb8",
+          "bytes": 4062,
+          "disposition": "bundled",
+          "member": "bound_sources/0e34ee6962b189636caef06cd8ee4993d0beca0ab3081f30d4d3b4bf64bd9eb8/SOURCE_IDENTITIES.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/attempt_01_INDEPENDENT_CHECK.log",
+          "sha256": "744af310d11bd37a7a60072fbbde6dd1414e8ac0d10bd609dd83cbcd95c8b491",
+          "bytes": 2946,
+          "disposition": "bundled",
+          "member": "bound_sources/744af310d11bd37a7a60072fbbde6dd1414e8ac0d10bd609dd83cbcd95c8b491/attempt_01_INDEPENDENT_CHECK.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/attempt_01_independent_check.py",
+          "sha256": "7680a0ca82410d4a36a475d196c0f72858e95fa00a940c00dc825a8e07e6a22a",
+          "bytes": 17504,
+          "disposition": "bundled",
+          "member": "bound_sources/7680a0ca82410d4a36a475d196c0f72858e95fa00a940c00dc825a8e07e6a22a/attempt_01_independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/compare_sources.py",
+          "sha256": "154396bc41a15a0b433810b67cb564e92256c05ec40910a59664ce003563f984",
+          "bytes": 5322,
+          "disposition": "bundled",
+          "member": "bound_sources/154396bc41a15a0b433810b67cb564e92256c05ec40910a59664ce003563f984/compare_sources.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/environment_probe.py",
+          "sha256": "efbef60fb534873061084e155c0a97edd8d94330a9bc91f49d48442916acc318",
+          "bytes": 180,
+          "disposition": "bundled",
+          "member": "bound_sources/efbef60fb534873061084e155c0a97edd8d94330a9bc91f49d48442916acc318/environment_probe.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/independent_check.py",
+          "sha256": "9dbf5708ae200922fdfefa6ca04e5f1d736e6cddcc1130f739b2aa9169bd2405",
+          "bytes": 17515,
+          "disposition": "bundled",
+          "member": "bound_sources/9dbf5708ae200922fdfefa6ca04e5f1d736e6cddcc1130f739b2aa9169bd2405/independent_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+          "bytes": 737,
+          "disposition": "bundled",
+          "member": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+          "bytes": 12253,
+          "disposition": "bundled",
+          "member": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+          "bytes": 14490,
+          "disposition": "bundled",
+          "member": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_QUANTUM_INTERFACE_DERIVATION.md",
+          "sha256": "9bb453c1041ea2a548989f14e2666df6a27c76adb8e35bf2d833eb2334bd2f5d",
+          "bytes": 13521,
+          "disposition": "bundled",
+          "member": "bound_sources/9bb453c1041ea2a548989f14e2666df6a27c76adb8e35bf2d833eb2334bd2f5d/FOURTEEN_LABEL_QUANTUM_INTERFACE_DERIVATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/BORN_COMPATIBLE_FOURTEEN_LABEL_FORMATION.md",
+          "sha256": "42197693e57ead840ef3fc174c62cb56c1ae1ab7b49e3d164a36241698685c8f",
+          "bytes": 7009,
+          "disposition": "bundled",
+          "member": "bound_sources/42197693e57ead840ef3fc174c62cb56c1ae1ab7b49e3d164a36241698685c8f/BORN_COMPATIBLE_FOURTEEN_LABEL_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+          "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f",
+          "bytes": 16425,
+          "disposition": "bundled",
+          "member": "bound_sources/a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/REPORT.md",
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232",
+          "bytes": 26690,
+          "disposition": "bundled",
+          "member": "bound_sources/53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_independent/FINAL_SEAL.json",
+          "sha256": "e687e466fd8505ad7f98e205bae0c611fd742139a638cc063b3d9e1c988240bb",
+          "bytes": 13257,
+          "disposition": "bundled",
+          "member": "bound_sources/e687e466fd8505ad7f98e205bae0c611fd742139a638cc063b3d9e1c988240bb/FINAL_SEAL.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/REPORT.md",
+          "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c",
+          "bytes": 21955,
+          "disposition": "bundled",
+          "member": "bound_sources/dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+          "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3",
+          "bytes": 18148,
+          "disposition": "bundled",
+          "member": "bound_sources/60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_transverse_exchange/REPORT.md",
+          "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf",
+          "bytes": 30451,
+          "disposition": "bundled",
+          "member": "bound_sources/9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/REPORT.md",
+          "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc",
+          "bytes": 25686,
+          "disposition": "bundled",
+          "member": "bound_sources/168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc/REPORT.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333,
+          "disposition": "bundled",
+          "member": "bound_sources/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753/MINIMAL_AXIOMS_2026-06-29.md"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_label_quantum_check.py",
+          "sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561",
+          "bytes": 7334,
+          "disposition": "bundled",
+          "member": "bound_sources/7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561/fourteen_label_quantum_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_QUANTUM_RESULTS.json",
+          "sha256": "93fdcf46089dd1f217e00e623bb29472013f049a287aa566d8981f5aa1e986f6",
+          "bytes": 4480,
+          "disposition": "bundled",
+          "member": "bound_sources/93fdcf46089dd1f217e00e623bb29472013f049a287aa566d8981f5aa1e986f6/FOURTEEN_LABEL_QUANTUM_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_QUANTUM_RUN.log",
+          "sha256": "eeca427188ec78ce74ed1e3f1c0381ca270e147445e108306155b1d6b7d91bed",
+          "bytes": 583,
+          "disposition": "bundled",
+          "member": "bound_sources/eeca427188ec78ce74ed1e3f1c0381ca270e147445e108306155b1d6b7d91bed/FOURTEEN_LABEL_QUANTUM_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_label_cubic_carrier_check.py",
+          "sha256": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5",
+          "bytes": 4008,
+          "disposition": "bundled",
+          "member": "bound_sources/398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5/fourteen_label_cubic_carrier_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_CUBIC_CARRIER_RESULTS.json",
+          "sha256": "ba1263308418497ae9128201ee2381b758e2827d1105e8e09608076f7ac61bb1",
+          "bytes": 958,
+          "disposition": "bundled",
+          "member": "bound_sources/ba1263308418497ae9128201ee2381b758e2827d1105e8e09608076f7ac61bb1/FOURTEEN_LABEL_CUBIC_CARRIER_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_CUBIC_CARRIER_RUN.log",
+          "sha256": "ddec08fc53b43b641a59f4c6e038529d3a8705da57dd57ae8e6951812a3cd9f4",
+          "bytes": 278,
+          "disposition": "bundled",
+          "member": "bound_sources/ddec08fc53b43b641a59f4c6e038529d3a8705da57dd57ae8e6951812a3cd9f4/FOURTEEN_LABEL_CUBIC_CARRIER_RUN.log"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/born_compatible_fourteen_formation_check.py",
+          "sha256": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4",
+          "bytes": 6869,
+          "disposition": "bundled",
+          "member": "bound_sources/cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4/born_compatible_fourteen_formation_check.py"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/BORN_COMPATIBLE_FOURTEEN_FORMATION_RESULTS.json",
+          "sha256": "ae402a402bebd22ad71e5737de9f21cfd18f47c070ff999081ebf0354506158c",
+          "bytes": 2715,
+          "disposition": "bundled",
+          "member": "bound_sources/ae402a402bebd22ad71e5737de9f21cfd18f47c070ff999081ebf0354506158c/BORN_COMPATIBLE_FOURTEEN_FORMATION_RESULTS.json"
+        },
+        {
+          "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/BORN_COMPATIBLE_FOURTEEN_FORMATION_RUN.log",
+          "sha256": "e6de92c244a7251a2f3fba05a7479c664794a356325e4045f9718c0980b27e66",
+          "bytes": 614,
+          "disposition": "bundled",
+          "member": "bound_sources/e6de92c244a7251a2f3fba05a7479c664794a356325e4045f9718c0980b27e66/BORN_COMPATIBLE_FOURTEEN_FORMATION_RUN.log"
+        }
+      ],
+      "members": [
+        {
+          "path": "bound_sources/0a55ee6f2bbdc536822de1adb432509aebd6d01d1e026173ca4777f200dfd405/EXTERNAL_SOURCE.json",
+          "bytes": 722,
+          "sha256": "0a55ee6f2bbdc536822de1adb432509aebd6d01d1e026173ca4777f200dfd405"
+        },
+        {
+          "path": "bound_sources/0e34ee6962b189636caef06cd8ee4993d0beca0ab3081f30d4d3b4bf64bd9eb8/SOURCE_IDENTITIES.json",
+          "bytes": 4062,
+          "sha256": "0e34ee6962b189636caef06cd8ee4993d0beca0ab3081f30d4d3b4bf64bd9eb8"
+        },
+        {
+          "path": "bound_sources/154396bc41a15a0b433810b67cb564e92256c05ec40910a59664ce003563f984/compare_sources.py",
+          "bytes": 5322,
+          "sha256": "154396bc41a15a0b433810b67cb564e92256c05ec40910a59664ce003563f984"
+        },
+        {
+          "path": "bound_sources/168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc/REPORT.md",
+          "bytes": 25686,
+          "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc"
+        },
+        {
+          "path": "bound_sources/398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5/fourteen_label_cubic_carrier_check.py",
+          "bytes": 4008,
+          "sha256": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5"
+        },
+        {
+          "path": "bound_sources/3cef5321b3228b284d1a03b395af35e802dc716e669fd338aa8c978f7ac77a85/CHECKPOINT.md",
+          "bytes": 688,
+          "sha256": "3cef5321b3228b284d1a03b395af35e802dc716e669fd338aa8c978f7ac77a85"
+        },
+        {
+          "path": "bound_sources/3fada49012ac5f3f3ac2edc8be389aa3f027481b0133b1817f0079d41a64ecac/ENVIRONMENT_PROBE.log",
+          "bytes": 322,
+          "sha256": "3fada49012ac5f3f3ac2edc8be389aa3f027481b0133b1817f0079d41a64ecac"
+        },
+        {
+          "path": "bound_sources/42197693e57ead840ef3fc174c62cb56c1ae1ab7b49e3d164a36241698685c8f/BORN_COMPATIBLE_FOURTEEN_LABEL_FORMATION.md",
+          "bytes": 7009,
+          "sha256": "42197693e57ead840ef3fc174c62cb56c1ae1ab7b49e3d164a36241698685c8f"
+        },
+        {
+          "path": "bound_sources/4ed2809eca8872b3f5504722a55e1cf4643f56ec891cd80302e39c797067bb60/ATTEMPTS.json",
+          "bytes": 1787,
+          "sha256": "4ed2809eca8872b3f5504722a55e1cf4643f56ec891cd80302e39c797067bb60"
+        },
+        {
+          "path": "bound_sources/53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232/REPORT.md",
+          "bytes": 26690,
+          "sha256": "53c3a1455b7dc5b21084c96f4525ba7358faeedd1e2e9d16e3c7b34dff633232"
+        },
+        {
+          "path": "bound_sources/60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3/REPORT.md",
+          "bytes": 18148,
+          "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+        },
+        {
+          "path": "bound_sources/744af310d11bd37a7a60072fbbde6dd1414e8ac0d10bd609dd83cbcd95c8b491/attempt_01_INDEPENDENT_CHECK.log",
+          "bytes": 2946,
+          "sha256": "744af310d11bd37a7a60072fbbde6dd1414e8ac0d10bd609dd83cbcd95c8b491"
+        },
+        {
+          "path": "bound_sources/7680a0ca82410d4a36a475d196c0f72858e95fa00a940c00dc825a8e07e6a22a/attempt_01_independent_check.py",
+          "bytes": 17504,
+          "sha256": "7680a0ca82410d4a36a475d196c0f72858e95fa00a940c00dc825a8e07e6a22a"
+        },
+        {
+          "path": "bound_sources/7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561/fourteen_label_quantum_check.py",
+          "bytes": 7334,
+          "sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561"
+        },
+        {
+          "path": "bound_sources/7e9aae7e1011e69467898a07dacf5b3720557e4381459e0832b53cc216f3d5e3/INDEPENDENT_CHECK.log",
+          "bytes": 5091,
+          "sha256": "7e9aae7e1011e69467898a07dacf5b3720557e4381459e0832b53cc216f3d5e3"
+        },
+        {
+          "path": "bound_sources/85d1a83af07ef2cbead29912961058a9e098f4d4467669103d2bbd1cfa3ed8ef/SOURCE_COMPARISON.json",
+          "bytes": 5167,
+          "sha256": "85d1a83af07ef2cbead29912961058a9e098f4d4467669103d2bbd1cfa3ed8ef"
+        },
+        {
+          "path": "bound_sources/8b00322733f9687939aab0734e90b3c87d55332dde011ff0c419913d22ab40e7/ENVIRONMENT_PROBE_FIRST_TOOL_OUTPUT.json",
+          "bytes": 540,
+          "sha256": "8b00322733f9687939aab0734e90b3c87d55332dde011ff0c419913d22ab40e7"
+        },
+        {
+          "path": "bound_sources/93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753/MINIMAL_AXIOMS_2026-06-29.md",
+          "bytes": 11333,
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "path": "bound_sources/93fdcf46089dd1f217e00e623bb29472013f049a287aa566d8981f5aa1e986f6/FOURTEEN_LABEL_QUANTUM_RESULTS.json",
+          "bytes": 4480,
+          "sha256": "93fdcf46089dd1f217e00e623bb29472013f049a287aa566d8981f5aa1e986f6"
+        },
+        {
+          "path": "bound_sources/9bb453c1041ea2a548989f14e2666df6a27c76adb8e35bf2d833eb2334bd2f5d/FOURTEEN_LABEL_QUANTUM_INTERFACE_DERIVATION.md",
+          "bytes": 13521,
+          "sha256": "9bb453c1041ea2a548989f14e2666df6a27c76adb8e35bf2d833eb2334bd2f5d"
+        },
+        {
+          "path": "bound_sources/9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6/AGENTS.md",
+          "bytes": 737,
+          "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+        },
+        {
+          "path": "bound_sources/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455/SKILL.md",
+          "bytes": 14490,
+          "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+        },
+        {
+          "path": "bound_sources/9dbf5708ae200922fdfefa6ca04e5f1d736e6cddcc1130f739b2aa9169bd2405/independent_check.py",
+          "bytes": 17515,
+          "sha256": "9dbf5708ae200922fdfefa6ca04e5f1d736e6cddcc1130f739b2aa9169bd2405"
+        },
+        {
+          "path": "bound_sources/9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf/REPORT.md",
+          "bytes": 30451,
+          "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf"
+        },
+        {
+          "path": "bound_sources/a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f/LOCAL_CURL_READOUT_AND_NATIVE_FORMATION.md",
+          "bytes": 16425,
+          "sha256": "a300dc4f0095cc274b6b9f4d82f0466e0cad55011c48b94e644617c4ee18280f"
+        },
+        {
+          "path": "bound_sources/ae402a402bebd22ad71e5737de9f21cfd18f47c070ff999081ebf0354506158c/BORN_COMPATIBLE_FOURTEEN_FORMATION_RESULTS.json",
+          "bytes": 2715,
+          "sha256": "ae402a402bebd22ad71e5737de9f21cfd18f47c070ff999081ebf0354506158c"
+        },
+        {
+          "path": "bound_sources/ae8bdc776893ae9b7873d57f6664d7b6c36dbb56cb623948c93a958762fa47a2/REPORT.md",
+          "bytes": 32395,
+          "sha256": "ae8bdc776893ae9b7873d57f6664d7b6c36dbb56cb623948c93a958762fa47a2"
+        },
+        {
+          "path": "bound_sources/b8d703de6cf7c9618c51d1294a35f0d867b63ba85a61085f793e4f423aeb4ef5/PRE_COMPARISON_SEAL.json",
+          "bytes": 8094,
+          "sha256": "b8d703de6cf7c9618c51d1294a35f0d867b63ba85a61085f793e4f423aeb4ef5"
+        },
+        {
+          "path": "bound_sources/ba1263308418497ae9128201ee2381b758e2827d1105e8e09608076f7ac61bb1/FOURTEEN_LABEL_CUBIC_CARRIER_RESULTS.json",
+          "bytes": 958,
+          "sha256": "ba1263308418497ae9128201ee2381b758e2827d1105e8e09608076f7ac61bb1"
+        },
+        {
+          "path": "bound_sources/cb27fa593df3c186de0cf95b755708a1dc6462ce20afda5ade94323fd42f01fe/SOURCE_COMPARISON.log",
+          "bytes": 149,
+          "sha256": "cb27fa593df3c186de0cf95b755708a1dc6462ce20afda5ade94323fd42f01fe"
+        },
+        {
+          "path": "bound_sources/cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4/born_compatible_fourteen_formation_check.py",
+          "bytes": 6869,
+          "sha256": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4"
+        },
+        {
+          "path": "bound_sources/d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4/SCIENCE_WORKFLOW.md",
+          "bytes": 12253,
+          "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+        },
+        {
+          "path": "bound_sources/dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c/REPORT.md",
+          "bytes": 21955,
+          "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c"
+        },
+        {
+          "path": "bound_sources/ddec08fc53b43b641a59f4c6e038529d3a8705da57dd57ae8e6951812a3cd9f4/FOURTEEN_LABEL_CUBIC_CARRIER_RUN.log",
+          "bytes": 278,
+          "sha256": "ddec08fc53b43b641a59f4c6e038529d3a8705da57dd57ae8e6951812a3cd9f4"
+        },
+        {
+          "path": "bound_sources/e687e466fd8505ad7f98e205bae0c611fd742139a638cc063b3d9e1c988240bb/FINAL_SEAL.json",
+          "bytes": 13257,
+          "sha256": "e687e466fd8505ad7f98e205bae0c611fd742139a638cc063b3d9e1c988240bb"
+        },
+        {
+          "path": "bound_sources/e6de92c244a7251a2f3fba05a7479c664794a356325e4045f9718c0980b27e66/BORN_COMPATIBLE_FOURTEEN_FORMATION_RUN.log",
+          "bytes": 614,
+          "sha256": "e6de92c244a7251a2f3fba05a7479c664794a356325e4045f9718c0980b27e66"
+        },
+        {
+          "path": "bound_sources/eeca427188ec78ce74ed1e3f1c0381ca270e147445e108306155b1d6b7d91bed/FOURTEEN_LABEL_QUANTUM_RUN.log",
+          "bytes": 583,
+          "sha256": "eeca427188ec78ce74ed1e3f1c0381ca270e147445e108306155b1d6b7d91bed"
+        },
+        {
+          "path": "bound_sources/efbef60fb534873061084e155c0a97edd8d94330a9bc91f49d48442916acc318/environment_probe.py",
+          "bytes": 180,
+          "sha256": "efbef60fb534873061084e155c0a97edd8d94330a9bc91f49d48442916acc318"
+        },
+        {
+          "path": "bound_sources/f0206fd2780e85a5db203396021f029e39dd73549921e35194fd1efd2ebfd189/INDEPENDENT_RESULTS.json",
+          "bytes": 7038,
+          "sha256": "f0206fd2780e85a5db203396021f029e39dd73549921e35194fd1efd2ebfd189"
+        },
+        {
+          "path": "bound_sources/f867b2fdf8bcfefb4c7e0db1305610d10c15a27d20b6fe65da44108896ccafce/INITIAL_RECONSTRUCTION.md",
+          "bytes": 24958,
+          "sha256": "f867b2fdf8bcfefb4c7e0db1305610d10c15a27d20b6fe65da44108896ccafce"
+        },
+        {
+          "path": "review/ATTEMPTS.json",
+          "bytes": 1787,
+          "sha256": "4ed2809eca8872b3f5504722a55e1cf4643f56ec891cd80302e39c797067bb60"
+        },
+        {
+          "path": "review/CHECKPOINT.md",
+          "bytes": 688,
+          "sha256": "3cef5321b3228b284d1a03b395af35e802dc716e669fd338aa8c978f7ac77a85"
+        },
+        {
+          "path": "review/ENVIRONMENT_PROBE.log",
+          "bytes": 322,
+          "sha256": "3fada49012ac5f3f3ac2edc8be389aa3f027481b0133b1817f0079d41a64ecac"
+        },
+        {
+          "path": "review/ENVIRONMENT_PROBE_FIRST_TOOL_OUTPUT.json",
+          "bytes": 540,
+          "sha256": "8b00322733f9687939aab0734e90b3c87d55332dde011ff0c419913d22ab40e7"
+        },
+        {
+          "path": "review/EXTERNAL_SOURCE.json",
+          "bytes": 722,
+          "sha256": "0a55ee6f2bbdc536822de1adb432509aebd6d01d1e026173ca4777f200dfd405"
+        },
+        {
+          "path": "review/FINAL_SEAL.json",
+          "bytes": 15530,
+          "sha256": "5798645f8682e40b2238536e01146773a41689fa8b07efb15e4195ee12e9fd7b"
+        },
+        {
+          "path": "review/INDEPENDENT_CHECK.log",
+          "bytes": 5091,
+          "sha256": "7e9aae7e1011e69467898a07dacf5b3720557e4381459e0832b53cc216f3d5e3"
+        },
+        {
+          "path": "review/INDEPENDENT_RESULTS.json",
+          "bytes": 7038,
+          "sha256": "f0206fd2780e85a5db203396021f029e39dd73549921e35194fd1efd2ebfd189"
+        },
+        {
+          "path": "review/INITIAL_RECONSTRUCTION.md",
+          "bytes": 24958,
+          "sha256": "f867b2fdf8bcfefb4c7e0db1305610d10c15a27d20b6fe65da44108896ccafce"
+        },
+        {
+          "path": "review/PRE_COMPARISON_SEAL.json",
+          "bytes": 8094,
+          "sha256": "b8d703de6cf7c9618c51d1294a35f0d867b63ba85a61085f793e4f423aeb4ef5"
+        },
+        {
+          "path": "review/REPORT.md",
+          "bytes": 32395,
+          "sha256": "ae8bdc776893ae9b7873d57f6664d7b6c36dbb56cb623948c93a958762fa47a2"
+        },
+        {
+          "path": "review/SOURCE_COMPARISON.json",
+          "bytes": 5167,
+          "sha256": "85d1a83af07ef2cbead29912961058a9e098f4d4467669103d2bbd1cfa3ed8ef"
+        },
+        {
+          "path": "review/SOURCE_COMPARISON.log",
+          "bytes": 149,
+          "sha256": "cb27fa593df3c186de0cf95b755708a1dc6462ce20afda5ade94323fd42f01fe"
+        },
+        {
+          "path": "review/SOURCE_IDENTITIES.json",
+          "bytes": 4062,
+          "sha256": "0e34ee6962b189636caef06cd8ee4993d0beca0ab3081f30d4d3b4bf64bd9eb8"
+        },
+        {
+          "path": "review/attempt_01_INDEPENDENT_CHECK.log",
+          "bytes": 2946,
+          "sha256": "744af310d11bd37a7a60072fbbde6dd1414e8ac0d10bd609dd83cbcd95c8b491"
+        },
+        {
+          "path": "review/attempt_01_independent_check.py",
+          "bytes": 17504,
+          "sha256": "7680a0ca82410d4a36a475d196c0f72858e95fa00a940c00dc825a8e07e6a22a"
+        },
+        {
+          "path": "review/compare_sources.py",
+          "bytes": 5322,
+          "sha256": "154396bc41a15a0b433810b67cb564e92256c05ec40910a59664ce003563f984"
+        },
+        {
+          "path": "review/environment_probe.py",
+          "bytes": 180,
+          "sha256": "efbef60fb534873061084e155c0a97edd8d94330a9bc91f49d48442916acc318"
+        },
+        {
+          "path": "review/independent_check.py",
+          "bytes": 17515,
+          "sha256": "9dbf5708ae200922fdfefa6ca04e5f1d736e6cddcc1130f739b2aa9169bd2405"
+        }
+      ]
+    }
+  ]
+}

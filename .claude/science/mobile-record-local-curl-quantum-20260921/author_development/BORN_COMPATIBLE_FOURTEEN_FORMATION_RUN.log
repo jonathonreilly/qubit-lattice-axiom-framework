@@ -1,0 +1,14 @@
+PASS: Born_Gram_rank_and_isotropic_frame
+PASS: uniform_fourteen_trajectory
+PASS: entire_fourteen_species_reaction_Jacobian
+PASS: entire_fourteen_species_flux_and_reaction
+PASS: driven_and_undriven_vector_rotation
+PASS: frozen_transverse_characteristic_polynomial
+PASS: noncommuting_gain_and_wave_blocks
+PASS: all196_single_qubit_marked_probabilities
+PASS: fourteen_ray_second_moment_for_fidelity
+PASS: all_two_parent_marked_rate_probabilities
+PASS: explicit_full_parity_failure_of_cross_orbit_weight
+PASS: integrated_norm_gain_comparison
+PASS: time_ordered_six_field_ODE_gain_and_late_wave_controls
+TOTAL: 13 PASS

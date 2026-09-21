@@ -1,4 +1,4 @@
-# The source link in the amplitude layer — state of knowledge for the owner (blocks 53–55, with addenda for block 56, for blocks 57–62 and for blocks 63–65; 2026-09-21)
+# The source link in the amplitude layer — state of knowledge for the owner (blocks 53–55, with addenda for block 56 and for blocks 57–62, 63–65 and 66–67; 2026-09-21)
 
 **What this is.** One page on what three blocks established after the instruction "ok lets work the source link into the amplitude layer". Nothing here is adopted; every block is an open hand-off PR against `main`; PR numbers are evidence addresses, not status. Author checks only; no independent review has taken place on any of it. The axioms memo and the parked-decisions registry were read in full before the first block.
 
@@ -89,6 +89,17 @@ Written at the end of the owner's 12-hour campaign (2026-09-21). Row 25 ended wi
 **In plain words.** The walker keeps exact books on momentum, written on the bonds. Put the field there and the books balance by themselves. Then ask the field's energy to be counted per tick of each local clock and not to care how the coin is set at each site — and the energy can only be the curvature of the stretched lattice, which bends light twice as much as it makes slow things fall. The walker, as first written, does care how its coin is set: it feels the coin's twist along each bond. Give it one small extra hop that accounts for the twist, and it stops caring. What is left to choose is one number for the field, two for how it moves, and whether a rule may look two steps instead of one.
 
 **Integration order (continued).** … → #8592 → #8593 → #8595 → #8596, each independent against `main`.
+
+## Fourth addendum — blocks 66–67: the fall is owed; a formation event in the curvature member (#8597, #8598)
+
+| # | Statement | Evidence address |
+|---|---|---|
+| 31 | **Clause B's force law and row 9's matched pulls are one condition, and the ledger imposes it.** A field energy counted per local tick (row 20) and blind to relabellings obeys an identity — for *every* member of row 28's family, the curvature is not needed — that ties the divergence of the strains' field equations to the rates' field equation times the gradient of the log rate. With the field equations put in, any content coupled through such a ledger *must* have a stress gradient equal to its energy density times that gradient: its weight. What sources the clocks is what is pulled; a content with no stress gradient cannot sit still. The clocked walk's exact lattice momentum balance has that form (a relabelling makes a weighted hop of a rate; the force density is energy × gradient at leading order, with `cos k` because the lattice momentum is `sin k`). **Clause B is not derived** — the identity forbids inconsistent content, it does not produce content that keeps local time — but its force law moves from "supplied" to "required". | block 66, #8597 |
+| 32 | **Fork 4's discriminator in the member that gives the full bending** (bodies pinned at rest; no rule of formation; identities in arbitrary odds; the parked statistical postulate neither used nor approached). One record can keep the ledger of *every* spread amplitude (row 18's threshold is gone). What the walls see of the lengths: the monopole does not jump, the dipole jumps by `Q'(y − X̄)`, its mean over any odds vanishing for odds `∝ p/χ` — row 18's density at weak field. What they see of the clocks is *not* kept: it jumps at second order, `−(m' − m)/(4K)`, at once (row 22: nothing is delayed), and the record that would keep it is a different record. No record keeps both far-field coefficients. The jump belongs to *pinned* bodies (`P < Q` at strong field); whether bound bodies remove it is on `ai/probes`. | block 67, #8598 |
+
+**Re-reading the list of supplied clauses.** After row 31 the list in the third addendum can be read as: A (sites have clocks; only ratios count); B′ (*there is content whose phase keeps local time* — its force law is then owed, not supplied); C (the books balance), with the field's energy counted per local tick; the coin has a frame / the bonds carry strains; the field's energy does not see the coin's axes; the walker's rule has the twist hop. Declared numbers unchanged: `K`, `(α, β_kin)`, `c_0 = 0`.
+
+**Integration order (continued).** … → #8596 → #8597 → #8598, each independent against `main`.
 
 ## The weak-field packet, piece by piece (correspondence of form; no gravitational claim)
 

@@ -1,0 +1,18 @@
+[W1] determinant from the quadratic form by symbolic differentiation equals the runner's formula: True
+
+[W2] real-space evolution, 12^3 torus, comparator's kinetic term (K = wbar = 1), leapfrog, dt = 0.02, 6000 steps:
+     constraint after the run: max |sum_j (Lap - D_j) lam_j| = 1.34e-11  (start: 0.0e+00)
+     k = 2pi/12 x (1, 1, 0): spectral peaks at omega = [0.733];  closed form [0.732]
+     k = 2pi/12 x (1, 1, 1): spectral peaks at omega = [0.524];  closed form [0.518, 0.518]
+     k = 2pi/12 x (1, 2, 3): spectral peaks at omega = [0.524, 1.571];  closed form [0.506, 1.562]
+     k = 2pi/12 x (2, 0, 1): spectral peaks at omega = [1.152];  closed form [1.126]
+
+[W3] search for a kinetic term whose fast disturbance is direction-free (spread of v over 200 random directions, long wavelength):
+     smallest relative spread on a 25 x 25 grid of (m_1, m_2): 0.188 at (0.25, -0.75)  (the comparator's term: 0.204)
+
+[W4] equal hop energies 1/3 along the three axes at the centre of an 11^3 box (9^3 interior), brute-force solve of all 4 x 729 equations:
+     lam_1 + u: largest value on the two columns through the source 0.6667; on the three planes x = c-1, c, c+1: 0.6667; anywhere else: 2.1e-14
+     at the wall end of a column: +0.1667  (K = 1)
+
+[W5] a body at rest next to a wall (7^3 interior, body at (0,3,5)): max |lam_1 - lam_2|, |lam_1 - lam_3|, |lam_1 + u|:
+     1.8e-15, 1.9e-15, 1.4e-15

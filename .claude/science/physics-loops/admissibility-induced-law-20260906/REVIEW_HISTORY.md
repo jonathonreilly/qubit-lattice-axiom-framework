@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 61 — author checks (not a review PASS)
+Written lens pass by the supervisor. One scratch reading was broken before the contract ("nothing travels off the axes": the rates were wrongly set to zero); one runner check was moved (the equal-lengths law passes at the source by symmetry). Control: static, tent and mode checks. Refuting pass W1–W5 (5/0), including a real-space evolution of the constrained system. Census 12/12 in family.

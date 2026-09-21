@@ -1,0 +1,9 @@
+# Block 61 — contract (2026-09-21; ninth block of the source-link direction; fifth of the 12-hour campaign)
+
+**Question.** Block 60 (#8590): one length per site under the curvature member carries no delay; whether the direction-dependent parts can stay at rest was not examined. Block 59 (#8581): a walker loads only the bonds it crosses. Give every site a length for each axis, keep block 60's member, and ask at second order: what does a body at rest do, what does hop energy do, and do disturbances travel — at what speed?
+
+**Lens pass (supervisor, in writing; no subagents).** Foundations: three lengths per site widen block 60 and re-parametrise block 59's bond lengths; the member is declared at second order only and every statement is about that member. Rigour: the first reading of the scratch algebra ("nothing travels off the axes") dropped the rates from the mode equations; they are multipliers, not zero; with them there are two travelling disturbances at every generic wave vector. The equal-lengths law must be tested away from the source, where symmetry does not rescue it. Comparator: what is missing (off-diagonal components, the shift, conservation of stress) is named under the Premises only. Strategy: one sentence for the owner — lengths along the bonds alone do not close forks 6 and 7 under this member.
+
+**Exact target.** T1 the member for three lengths (pairs coupled along the third axis; no self terms; the kinetic density); T2 content at rest: unique, three lengths alike, block 60's law; T3 hop energy: inverses of one-dimensional second differences, tents along columns growing with the box, the rates' law unharmed; T4 two travelling disturbances, speeds by `ρ`, no direction-free speed for any kinetic term of the two-number family.
+
+**Boundaries fixed in advance.** Second order; the declared member only; no angles, no sliding of sites, no other members; bending in direction-dependent lengths not computed; nothing adopted.

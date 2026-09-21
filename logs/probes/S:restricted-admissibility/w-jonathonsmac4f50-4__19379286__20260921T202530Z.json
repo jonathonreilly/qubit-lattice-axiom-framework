@@ -1,0 +1,32 @@
+{
+ "task": "S:restricted-admissibility",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/restricted_admissibility.py 6 300 5 5 8",
+ "seed": 6,
+ "minutes": 30.0,
+ "box": "5x5x8",
+ "git_sha": "19379286",
+ "started_utc": "20260921T202530Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "realizations=300 hits=0 max_restricted_minus_unrestricted=0 elapsed=1"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "random realizations: is there one where every tree with the budget c = 2 has a node with two processed children (restricted minimum > 0 while the unrestricted is <= 0)? A HIT kills block 33's p >= 2921 route. 300 realizations per run; vary seed and box.",
+ "stdout_sha256": "a96ff7ff212c64704986f774494c57eda1a9f522e19fb6014e636fde16b5b2dc",
+ "stdout_tail": "SUMMARY: realizations=300 hits=0 max_restricted_minus_unrestricted=0 elapsed=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-4",
+  "at_utc": "20260921T202531Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

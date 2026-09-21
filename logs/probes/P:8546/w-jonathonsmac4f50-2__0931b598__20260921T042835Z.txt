@@ -1,0 +1,12 @@
+PR #8546: ail40: the binding scale pinned at the neutral value — the pair weight is the rule's likelihood ratio, records do not bind without a cycle, and all binding is agreement around loops
+branch physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_binding_scale_pinned_neutral_value_likelihood_ratio_no_binding_without_a_cycle_2026_09_20.py: rc=0 PASS=16 FAIL=0
+   mutation scale_wrong: expected B observed B ok
+   mutation null_vector_wrong: expected B observed B ok
+   mutation tree_independence_at_wrong_scale: expected C observed C ok
+   mutation forest_weight_wrong: expected C observed C ok
+   mutation loop_factor_wrong: expected D observed D ok
+   mutation activity_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

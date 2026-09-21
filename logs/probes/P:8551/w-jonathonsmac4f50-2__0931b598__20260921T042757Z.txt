@@ -1,0 +1,12 @@
+PR #8551: Derive the first effect of motion on formation from an empty lattice
+branch codex/mobile-record-empty-start-response-20260921 (base codex/mobile-record-formation-20260920)
+runners in the PR: 1
+== scripts/mobile_records_empty_start_motion_response_2026_09_21.py: rc=0 PASS=57 FAIL=0
+   mutation omit_birth_holding: expected startup observed startup ok
+   mutation double_time_coefficient: expected startup observed startup ok
+   mutation reverse_correlation_sign: expected startup observed startup ok
+   mutation omit_geometry_endpoint: expected geometry observed geometry ok
+   mutation reverse_semigroup_drop: expected intensity observed intensity ok
+   mutation omit_relative_endpoint: expected relative observed relative ok
+   mutation omit_motion_rate_bound: expected remainder observed remainder ok
+   mutation merge_rook_delayed_order: expected delayed observed delayed ok

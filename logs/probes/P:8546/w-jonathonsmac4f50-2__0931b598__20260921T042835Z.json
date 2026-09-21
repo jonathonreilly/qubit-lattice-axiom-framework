@@ -1,0 +1,37 @@
+{
+ "task": "P:8546",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block40-bindin",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8546",
+ "pr": 8546,
+ "branch": "physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920",
+ "git_sha": "0931b598",
+ "started_utc": "20260921T042835Z",
+ "elapsed_s": 21.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_binding_scale_pinned_neutral_value_likelihood_ratio_no_binding_without_a_cycle_2026_09_20.py",
+    "returncode": 0,
+    "total": "PASS=16 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "183ae60cddcc542faab368f31a6b4af6532d214174e65bdef312ae108fce5912",
+ "stdout_tail": "PR #8546: ail40: the binding scale pinned at the neutral value \u2014 the pair weight is the rule's likelihood ratio, records do not bind without a cycle, and all binding is agreement around loops\nbranch physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_binding_scale_pinned_neutral_value_likelihood_ratio_no_binding_without_a_cycle_2026_09_20.py: rc=0 PASS=16 FAIL=0\n   mutation scale_wrong: expected B observed B ok\n   mutation null_vector_wrong: expected B observed B ok\n   mutation tree_independence_at_wrong_scale: expected C observed C ok\n   mutation forest_weight_wrong: expected C observed C ok\n   mutation loop_factor_wrong: expected D observed D ok\n   mutation activity_wrong: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260921T042857Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

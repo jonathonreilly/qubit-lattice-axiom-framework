@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 68 — author checks (not a review PASS)
+Written lens pass by the supervisor. One statement corrected after a search of the earlier notes (block 54 had named the eight zero-energy points); one overstatement corrected ("not both" → "with the two couplings found so far"); a real-space check added so that the per-site line is honest; a control line's formula corrected. Control with packets of two species (sparse real-space evolution). Census 9/9 in family.

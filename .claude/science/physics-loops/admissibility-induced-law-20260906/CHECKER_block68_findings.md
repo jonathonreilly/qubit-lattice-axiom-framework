@@ -1,0 +1,7 @@
+# Block 68 — control and findings (2026-09-21)
+
+1. Disjoint machinery (`specs/supervisor_control_block68_species.py`; sparse real-space evolution on a `160 × 128` slice): packets of species `(0,0)` and `(1,0)` crossing a gradient of the stretch of the x-bonds: sideways displacement (part odd in the stretch) `−15.06` and `−15.06` under the frame, `−12.64` and `+12.64` under the strain coupling; in a uniform stretch 0.2 the distances in `T = 40` are `39.2, 39.2` against `35.5, 29.5`, within one to two per cent of `(1 + b)cos q` and `cos q ± b cos 2q` (the packets' spread in wave number).
+2. **Statement corrected after a search (supervisor).** The draft said the campaign had never raised the walk's extra species. A search of the fifteen earlier notes of the direction found block 54's sentence under its prior art ("its eight zero-energy points are the doubling of …"). The note now says: named there, not examined since.
+3. **Overstatement corrected (supervisor).** "Exact books, or one geometry for all: on this lattice, with this walk, not both" claimed more than the theorems: N1.3 leaves room for a coupling with both. Now: "with the two couplings found so far, not both".
+4. Finding folded: the runner's per-site resolution line was first an admission that nothing was site-resolved; a real-space check of the strain coupling on plane waves of three species (Gaussian-integer phases on a `4³` torus) was added.
+5. Finding folded: a control line gave the speeds under the strain coupling as `1 ± b cos q`; they are `cos q ± b cos 2q`.

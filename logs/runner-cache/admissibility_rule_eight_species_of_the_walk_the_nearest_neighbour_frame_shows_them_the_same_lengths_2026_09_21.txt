@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_2026_09_21.py
+runner_sha256: 7da4a715c9bf4fc82af5cc804d875ca9cbaa1ae4d1bc9253c5e349de4e74d01c
+input_fingerprint_sha256: babd41af642af84a1e80bdaa0c3dfe8b3065ba937c446a4210fde72c6b1b776b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.84
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_EIGHT_SPECIES_OF_THE_WALK_THE_NEAREST_NEIGHBOUR_FRAME_SHOWS_THEM_THE_SAME_LENGTHS_THE_RELABELLINGS_COUPLING_SHOWS_THEM_DIFFERENT_LENGTHS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: H(k)^2 = sum_a sin^2 k_a exactly (rational sines, all eight sign patterns); on the grid of wave numbers 0, pi/2, pi, 3pi/2 it vanishes at exactly the 8 points with every k_a in {0, pi}; near k = pi n + q the walk is sum_a (-1)^n_a sigma_a q_a: eight species of walker, each with top speed one
+PASS: B2 T1: a uniform rate multiplies the generator, so every species' energy is w times its energy at rate one, with the same function of the wave vector's sines: in a rate field all eight species feel the same force, energy x gradient (block 54), and fall alike
+PASS: C1 T2: for a uniform rational frame with all six off-diagonal entries of g non-zero, H^2 = sum_ij g^ij sin k_i sin k_j exactly at all eight species' wave vectors; in the species' own wave vector q the inverse metric is D g D: its diagonal - the three lengths - is the same for all eight, and the entry (i, j) changes sign exactly when n_i != n_j: the same lengths, mirrored angles
+PASS: D1 T3: for a uniform rational strain the relabelling's coupling gives H(k) = sum_a sigma_a [sin k_a + cos k_a (B s)_a] and H^2 = sum_a [sin k_a + cos k_a (B s)_a]^2 exactly, at all eight species' wave vectors: a sum of squares, not a quadratic form in the sines
+PASS: D2 T3: near k = pi n + q the relabelling's coupling gives, for a general uniform strain, the inverse metric (1 + B D)^T (1 + B D) in the species' own wave vector (exact symbolic expansion, all eight species): a stretch b of the bonds along axis 1 is seen as (1 + b)^2 by species with n_1 = 0 and as (1 - b)^2 by species with n_1 = 1: different lengths for different species
+PASS: D3 T3: in real space on a 4x4x4 torus, the relabelling's coupling with a uniform rational strain applied to plane waves of three species (wave numbers multiples of pi/2, so that the phases are Gaussian integers) equals sum_a sigma_a [sin k_a + cos k_a (B s)_a] psi at all 64 sites
+PASS: E1 T4: by block 59 T4 a ray's bending over a slow body's fall is dlog(hop rate)/du.  With l = (wbar/w)^beta carried by the nearest-neighbour frame the hop rate along a is w/l for every species: ratio 1 + beta, for all eight.  Carried by the relabelling's coupling, a species with n_a = 1 sees 1 - b where the others see 1 + b: ratio 1 - beta, which is no bending at all for beta = 1
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — H^2 at rational sines for all eight sign patterns; the zeros of the walk on the grid of wave numbers 0, pi/2, pi, 3pi/2; the walk near each of them
+per_site: executed — the relabelling's coupling with a uniform rational strain applied in real space to plane waves of three species on a 4x4x4 torus, against the wave-vector form, at all 64 sites
+per_mode: executed — for a uniform rational frame, H^2 against g^ij s_i s_j and against D g D at all eight species' wave vectors; for a uniform rational strain, H^2 against the sum of squares; the species' inverse metric (1 + B D)^T (1 + B D) by exact symbolic expansion for a general strain
+per_block: executed — the ratio of bending to fall, dlog(hop rate)/du, for the two couplings and the two signs D_a
+lattice_wide: T1 to T3 hold for every uniform frame, strain and rate and every wave vector; T4 for rays (block 59 T4) at first order in the log rate; non-uniform fields are in the control only; which coupling the framework has, and whether the eight species are all physical, are not decided
+PASS: G1 the five N5 resolution lines are printed
+scope: the walk has eight species; a rate field makes them fall alike; the nearest-neighbour frame shows all eight the same three lengths and mirrored angles (inverse metric D g D); the relabelling's second-neighbour coupling shows them different lengths ((1 + B D)^T (1 + B D)), so that a species with n_a = 1 bends by 1 - beta times its fall where the others bend by 1 + beta
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

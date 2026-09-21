@@ -1,0 +1,13 @@
+[W1] stretch of the x-bonds b(y) = 0.2 sin(2 pi y/128) (gradient 0.00982 at y = 0), T = 60.0: sideways displacement, part odd in b0:
+     coupling frame , species (0, 0): -15.056
+     coupling frame , species (1, 0): -15.056
+     coupling strain, species (0, 0): -12.641
+     coupling strain, species (1, 0): +12.641
+     rays at the start: a packet that sees the stretch as 1 + b is pushed sideways at -b' per unit time: -(1/2) b' T^2 = -17.671 if the gradient stayed at its largest value (it falls as the packet drifts: cos(2 pi 15/128) = 0.74); one that sees 1 - b is pushed the other way; under the strain coupling the stretch enters through cos k, which lowers both by cos q = 0.825
+
+[W2] uniform stretch b = 0.2: distance travelled along x in T = 40 (no stretch: cos q x 40 = 33.013):
+     coupling frame , species (0, 0): +39.215
+     coupling frame , species (1, 0): +39.215
+     coupling strain, species (0, 0): +35.480
+     coupling strain, species (1, 0): +29.508
+     (group velocities: frame (1 + b) cos q = 0.9904 for both species, that is 39.62; strain cos q + b cos 2q = 0.8978 for species (0,0), that is 35.91, and cos q - b cos 2q = 0.7529 for species (1,0), that is 30.11; the packets' spread in wave number lowers all of them by about one per cent)

@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F68 the walk's eight species | the zeros of `Σ sin²k_a`; expansion near `k = πn + q` with `D = diag((−1)^{n_a})`; the frame's `H² = g^{ij}s_is_j` against the strain's sum of squares with `cos k_a`; rays' bending over fall per species; sparse real-space evolution of packets of two species | block 68 (supplied clauses only) |

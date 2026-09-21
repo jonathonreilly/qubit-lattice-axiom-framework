@@ -1,0 +1,9 @@
+# Block 71 — control and findings (2026-09-21)
+
+1. Disjoint machinery (`specs/supervisor_control_block71_negative_energy.py`): block 55's coupled two-walker evolution with a walker from the negative branch (sparse real-space evolution, self-consistent field); dense iteration for the box statics against the closed forms.
+2. **Seen in the control first (supervisor).** The negative pair's repulsion was not in the contract; the control showed it (`−21.3, +11.3`), the reason is one line (each raises the rates around itself; everything falls towards slow clocks), and the exact check was added to the runner's B2 before the gates.
+3. **A root not ignored (supervisor).** Block 60's uniqueness argument does not cover negative bodies; the quadratic has two real roots with positive lengths. The second solves both field equations exactly; it is excluded by the sign of its rate at the body, and the rates' operator is not positive definite there. Both facts are runner checks.
+4. Finding folded: T3(b) first gave `N` at the body where it said "rate"; T2(b) first said `−w∇u` in the statement and `−w∇w` in the proof; both corrected, and the rest-ray acceleration was added to the runner as a symbolic check on both branches.
+5. Finding folded: the Review record first said blocks 55 and 60 were read "in full"; what was read is block 55's theorems and block 60's T4 (statement and proof). Corrected.
+6. Control detail: the first run capped the iteration at 60 steps with a tolerance below rounding at the largest size; tolerance set to `1e-11`, at most 7 steps needed.
+7. **Gates stopped for a theorem sentence (supervisor).** T3(a) said both roots have positive lengths without restricting to negative bodies; for a positive body the lower root has a negative length at the body. The pipeline was stopped, the sentence and its proof corrected, the cache re-pinned and the gates re-run.

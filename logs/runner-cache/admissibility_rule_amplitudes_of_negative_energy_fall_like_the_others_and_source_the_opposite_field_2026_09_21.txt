@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_amplitudes_of_negative_energy_fall_like_the_others_and_source_the_opposite_field_2026_09_21.py
+runner_sha256: 420d362c56046bc4b7e739d9581bb876e8a5bc5dbfcbb593555946f209b14ce1
+input_fingerprint_sha256: eb3a5ef0fa3598199169caa8ed589cbce7e13b79d5aee959bfe0a753320e4da2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_AMPLITUDES_OF_NEGATIVE_ENERGY_FALL_LIKE_THE_OTHERS_AND_SOURCE_THE_OPPOSITE_FIELD_A_NEGATIVE_BODY_AT_REST_HAS_A_LARGEST_SIZE_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a 6x6x6 torus with a varying rational rate field, the twin A_n psi = Theta V_n psi of a rational state has the energy density -e_x at every one of the 216 sites and the same site density, for four odd species; on block 54's reduced walk H = m sigma_1 + sigma_3 D on a ring of 12 sites with varying rates, a real envelope with the content (1, -1) has e_x = -m w_x |chi_x|^2 at every site (and +m w_x |chi_x|^2 with the content (1, 1), block 55 T2(c)): under block 55's law an amplitude of negative energy sources the opposite field
+PASS: B2 T2: on a ring of 12 sites with the exact zero-mean potential of block 55's operator, bodies of energies 2 and -3/2 sourcing in proportion to their energies: the two pulls sum to zero exactly (block 55 T3 holds for either sign), and the two accelerations (pull over energy) have the SAME direction - the positive body recedes from the negative one, which follows it; two positive bodies attract and two negative bodies REPEL (each raises the rates around itself, and every body falls towards slow clocks); rays: if (x(t), p(t)) solves Hamilton's equations for w(x) eps(p) then (x(t), -p(t)) solves them for -w(x) eps(p): rays of negative energy follow the same paths, and a ray starting from rest has d^2x/dt^2 = -w w' on either branch
+PASS: C1 T3: block 60's curvature member on a box (3x3x3 interior, walls at w = l = 1, g_0 = 11/51), one body at rest with m/(8K) = mu of EITHER sign: chi = 1 + Q g, N = 1 - P g with Q = (r - 1)/(2 g_0), P = Q/r, r = (1 + 4 g_0 mu)^(1/2) solve both field equations at all 27 sites with positive lengths and rates, for r = 1/2 and 1/10 (negative bodies) and 3/2 (positive); w_0 = 1/r, chi_0 = (1 + r)/2, M + M^2 g_0/(8K) = m; for mu = -1/(2 g_0) the quadratic has no real root: a negative body at rest has a static field only for m > -2K/g_0, and its clock rate (1 + g_0 m/(2K))^(-1/2) grows without bound as m decreases to it
+PASS: C2 T3: the quadratic's second root solves both field equations with positive lengths at all 27 sites (0 <= g <= g_0) but its rate at the body is negative (not admissible); the Dirichlet operator -Delta + Q/chi is positive definite at the admissible root (all 27 pivots positive) and not at the second; at the bound Q/chi = -1/g_0 and the unit-source potential g is its zero mode at every site; block 56's member (law linear in phi = sqrt(w)): phi_0 = 1/(1 + gamma m g_0/2) = 2 at m = -1/(gamma g_0), exact at all 27 sites, with the same zero mode at m = -2/(gamma g_0)
+PASS: D1 T4: along k = (t, 0, 0) the unit vector sin k/|sin k| of the walk tends to +e_1 for t -> 0+ and to -e_1 for t -> 0-: the symbol (1/2)(1 + sigma.s/|s|) of the positive-energy projector is discontinuous at the zero (and, by block 70's maps, at each of the eight), while a rule of finite reach - or of summable reach - has a continuous symbol; with a rest energy, p(z)^2 (m^2 + sin^2 k) has the top coefficient -a^2/4 for every trigonometric polynomial p of degree 0 to 3 with top coefficient a, so it is never 1: the projector is continuous but not of finite reach
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the energy density of a state and of its twin at all 216 sites of a 6x6x6 torus in a varying rate field; the reduced walk's two contents at all 12 sites of a ring
+per_site: executed — both field equations of the curvature member at all 27 interior sites of the box for three sizes of body of either sign, and for the second root; the zero mode at the bound at every site; block 56's linear law at all 27 sites
+per_mode: executed — the 27 pivots of -Delta + Q/chi at the admissible and at the second root; the one-sided limits of the projector's symbol at the zero; top coefficients for trigonometric polynomials of degree 0 to 3
+per_block: executed — the two pulls and the two accelerations of a mixed pair on a ring with the exact zero-mean potential; the symmetry of the rays' equations under the reversal of the energy and the momentum
+lattice_wide: T1 for every state and rate field; T2 for point bodies in the weak field and for rays; T3 for one body at rest in a box with held walls (closed forms in g_0), many bodies through the stated criterion; T4 for the walk and its reduced form; whether amplitudes of negative energy are present, and what would exclude them, are not decided
+PASS: G1 the five N5 resolution lines are printed
+scope: amplitudes of negative energy — as test bodies they are exact twins of those of positive energy; as sources they are exact opposites; a mixed pair keeps its pulls matched while both bodies accelerate the same way; a negative body at rest in the curvature member has a static field only above -2K/g_0, where its clock rate grows without bound; no rule of finite reach keeps only the positive energies
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

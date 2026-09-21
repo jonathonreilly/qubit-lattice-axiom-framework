@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 71 — author checks (not a review PASS)
+Written lens pass by the supervisor. Blocks 55 and 60 read for where positivity is used (block 55 T4(b); block 60 T4's uniqueness argument). The second root of the quadratic examined and excluded by a runner check, not ignored. The negative pair's repulsion seen in the control first, then added to the runner. Two statement slips corrected (N against rate; the rest-ray acceleration) and an overstatement in the Review record ("in full"). Census 7/7 in family.

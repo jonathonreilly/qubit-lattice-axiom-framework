@@ -1,0 +1,9 @@
+# Block 71 — contract (2026-09-21; nineteenth block of the source-link direction; fifteenth of the 12-hour campaign)
+
+**Question.** Block 70 (#8602): the walk's sixteen branches are exact copies as test bodies, and half of them have negative energy. Blocks 53–60 stated every theorem about sources for positive energies. What do the same supplied clauses say about amplitudes of negative energy — as sources, in pairs, in the strong field — and could a rule of the supplied kind exclude them?
+
+**Lens pass (supervisor, in writing; no subagents).** Foundations: the axioms say nothing about amplitudes, so nothing in them picks a sign of energy; the registered realized-state primitive is not a selection rule; a many-amplitude reading is outside the supplied clauses and must not be smuggled in. Rigour: read block 55's theorems and block 60's T4 for where positivity is used; block 60's uniqueness argument (convexity on the positive orthant) fails for negative bodies — examine every root; check every "iff" at the bound and beyond it. Comparator: negative-energy solutions and their classical readings; the motion of a pair of opposite mass — under the Premises. Strategy: the fork this hands the owner is about the content (which amplitudes are present), not about the field.
+
+**Exact target.** T1 `e_x[A_nψ] = −e_x[ψ]`; reduced walk content `(1, −1)`. T2 pulls matched for either sign; acceleration independent of one's own sign; attract / repel / chase; rays. T3 closed forms for one body of either sign in the curvature member; bound `m > −2K/g_0`; second root; zero mode; criterion for many bodies; block 56's member. T4 the positive-energy projector has no finite reach.
+
+**Boundaries fixed in advance.** Which amplitudes are present is not decided; no rule proposed; bodies pinned in T3; fields that move outside; nothing adopted.

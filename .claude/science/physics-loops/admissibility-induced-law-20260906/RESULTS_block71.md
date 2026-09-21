@@ -1,0 +1,8 @@
+# Block 71 — results (2026-09-21)
+
+- Runner `scripts/admissibility_rule_amplitudes_of_negative_energy_fall_like_the_others_and_source_the_opposite_field_2026_09_21.py`: `TOTAL: PASS=12 FAIL=0`; 7 mutations, each in its own family.
+- T1: twin's energy density `= −e_x` at all 216 sites of a `6×6×6` torus in a varying rate field, four odd species, same site density; reduced walk on a ring of 12 with varying rates: content `(1, −1)` gives `e_x = −m w_x|χ_x|²`, content `(1, 1)` gives `+`.
+- T2: ring of 12 with the exact zero-mean potential: energies `2, −3/2`, `S = E`: pulls sum to zero; accelerations the same direction (the chase); positive pair attracts; negative pair repels; rays: `(x, −p)` symmetry and `d²x/dt² = −ww'` from rest on either branch.
+- T3: box with `3×3×3` interior, `g_0 = 11/51`: both field equations at all 27 sites for `r = 1/2, 1/10` (negative bodies) and `3/2` (positive); `w_0 = 1/r`, `χ_0 = (1 + r)/2`, `M + M²g_0/(8K) = m`; no real root at `μ = −1/(2g_0)`; second root solves both equations with `N_0 < 0`; pivots of `−Δ + Q/χ` all positive at the admissible root, not at the second; `g` is the zero mode at the bound; block 56's member: `φ_0 = 2` at `m = −1/(γg_0)`, same zero mode at `−2/(γg_0)`.
+- T4: one-sided limits `±1`; top coefficient `−a²/4` for degrees 0–3.
+- Control: W1 displacements `+12.5, −6.0` (positive pair), `−16.7, −9.9` (mixed), `−21.3, +11.3` (negative pair); wave-vector sums `≤ 1.5e-6`; ledger `≤ 2e-10`. W2 box `9×9×9`: `w_0` equals the closed form at six sizes up to `0.999` of the bound (`31.623`); lowest eigenvalue of the rates' operator `0.2937 → 0.0784`; no solution at `1.05`.

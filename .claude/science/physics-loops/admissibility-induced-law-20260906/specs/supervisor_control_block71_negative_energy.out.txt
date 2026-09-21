@@ -1,0 +1,14 @@
+[W1] ring of 1500 sites, packets of width 30 at 600 (A) and 900 (B), both at rest, rest energies 0.3 (A) and 0.6 (B), Gam = 0.002, T = 300.0; source = the energy density
+     A positive, B positive: energies +0.2810, +0.5330; u at A -6.93e-02, at B -1.24e-01; displacements A +12.541, B -5.978; wave vectors A +0.027246, B -0.027246, sum +3.9e-07; ledger changed by -1.5e-11
+     A positive, B NEGATIVE: energies +0.2847, -0.6961; u at A -5.72e-02, at B +1.55e-01; displacements A -16.689, B -9.860; wave vectors A -0.035473, B +0.035475, sum +1.5e-06; ledger changed by -2.1e-11
+     A NEGATIVE, B NEGATIVE: energies -0.3251, -0.7018; u at A +8.12e-02, at B +1.63e-01; displacements A -21.282, B +11.303; wave vectors A +0.039830, B -0.039831, sum -1.3e-06; ledger changed by -1.8e-10
+
+[W2] box with interior 9x9x9, one body at the centre, K = 1: g_0 = 0.238703; bound m = -2K/g_0 = -8.3786
+     m = +0.000 x 2K/g_0: w_0 = 1.000000 (closed form 1.000000); chi_0 = 1.000000 ((1 + r)/2 = 1.000000); smallest rate 1.0000, largest 1.0000; smallest eigenvalue of -Delta + Q/chi = 0.29366; Newton steps 1
+     m = -0.250 x 2K/g_0: w_0 = 1.154701 (closed form 1.154701); chi_0 = 0.933013 ((1 + r)/2 = 0.933013); smallest rate 1.0002, largest 1.1547; smallest eigenvalue of -Delta + Q/chi = 0.29107; Newton steps 4
+     m = -0.500 x 2K/g_0: w_0 = 1.414214 (closed form 1.414214); chi_0 = 0.853553 ((1 + r)/2 = 0.853553); smallest rate 1.0004, largest 1.4142; smallest eigenvalue of -Delta + Q/chi = 0.28674; Newton steps 4
+     m = -0.750 x 2K/g_0: w_0 = 2.000000 (closed form 2.000000); chi_0 = 0.750000 ((1 + r)/2 = 0.750000); smallest rate 1.0009, largest 2.0000; smallest eigenvalue of -Delta + Q/chi = 0.27706; Newton steps 5
+     m = -0.900 x 2K/g_0: w_0 = 3.162278 (closed form 3.162278); chi_0 = 0.658114 ((1 + r)/2 = 0.658114); smallest rate 1.0017, largest 3.1623; smallest eigenvalue of -Delta + Q/chi = 0.25843; Newton steps 5
+     m = -0.990 x 2K/g_0: w_0 = 10.000000 (closed form 10.000000); chi_0 = 0.550000 ((1 + r)/2 = 0.550000); smallest rate 1.0060, largest 10.0000; smallest eigenvalue of -Delta + Q/chi = 0.17418; Newton steps 7
+     m = -0.999 x 2K/g_0: w_0 = 31.622777 (closed form 31.622777); chi_0 = 0.515811 ((1 + r)/2 = 0.515811); smallest rate 1.0193, largest 31.6228; smallest eigenvalue of -Delta + Q/chi = 0.07844; Newton steps 7
+     m = -1.050 x 2K/g_0 (beyond the bound): Newton on the lengths' equation from empty space, 200 steps: residual still 1.08e-01 (no real root: 1 + 4 g_0 mu = -0.050)

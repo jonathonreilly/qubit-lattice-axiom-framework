@@ -1,0 +1,32 @@
+{
+ "task": "X:source-potential",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_response.py 2 6 128 3000 1200 0.5 1",
+ "seed": 7223,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8a4b1f4f",
+ "started_utc": "20260921T161343Z",
+ "elapsed_s": 9.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=2 beta=6.0 L=128 h=0.5 mean_ratio_r1to4=-0.2801 forward_backward_asymmetry_r2=+0.014164 seconds=9"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: the potential around a persistent source under the formation reading. Two copies of the sphere formation law with common random numbers; in one a transverse field h acts on the record at one site at every level. Linear prediction: (h/(n beta)) (1 - P)^-1, which for the light-cone past is (h/beta) times the lattice Green function: a 1/r potential. First look (16^3, beta = 6): light-cone ratio measured/predicted 0.99 at r = 1..6 and symmetric; backward past 0.96 and one-sided (forward cone). Arguments: dim beta L T T0 h seed (probes/lib/formation_response.py). GRID UNITS: the 48 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "9c97299f00d7f96d322fc129c87e726f1b649f87e24a613773f624aec42d9be3",
+ "stdout_tail": "dim=2 beta=6.0 L=128 T=3000 T0=1200 h=0.5 seed=1; n=3; |m| of the unperturbed copy at the end = 0.7519\nalong e_1: r, measured displacement, linear prediction, ratio\n     1  +0.008486  +0.024719  0.343\n     2  +0.000210  +0.014268  0.015\n     3  -0.004465  +0.009010  -0.496\n     4  -0.006233  +0.006341  -0.983\n     6  -0.007242  +0.004216  -1.718\n     8  -0.007206  +0.003505  -2.056\n    12  -0.002331  +0.002778  -0.839\n    16  -0.000903  +0.002074  -0.436\nalong the body diagonal, forward (+) and backward (-): r, measured +, measured -, linear +, linear -\n     1  +0.009123  -0.007986  +0.024717  +0.003926\n     2  +0.006444  -0.007720  +0.019487  +0.003947\n     3  +0.003807  -0.007864  +0.016862  +0.003968\n     4  +0.001657  -0.008121  +0.015214  +0.003990\n     6  +0.000554  -0.009035  +0.013179  +0.004034\n     8  -0.000824  -0.008635  +0.011921  +0.004078\nSUMMARY: dim=2 beta=6.0 L=128 h=0.5 mean_ratio_r1to4=-0.2801 forward_backward_asymmetry_r2=+0.014164 seconds=9\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T161352Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

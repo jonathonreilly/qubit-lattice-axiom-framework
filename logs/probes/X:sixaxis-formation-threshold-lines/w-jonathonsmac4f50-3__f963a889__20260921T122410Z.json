@@ -1,0 +1,39 @@
+{
+ "task": "X:sixaxis-formation-threshold-lines",
+ "type": "scan",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/scan_formation_sixaxis.py 256 4000 10.5 10.6 10.7 10.8 10.9 11 --qr 1 2",
+ "seed": 93450,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f963a889",
+ "started_utc": "20260921T122410Z",
+ "elapsed_s": 91.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "lines": [
+   "  p=  10.5: memory mean 0.1658  final 0.1824   (16s)",
+   "  p=  10.6: memory mean 0.2061  final 0.1670   (15s)",
+   "  p=  10.7: memory mean 0.4033  final 0.3220   (15s)",
+   "  p=  10.8: memory mean 0.7096  final 0.6811   (15s)",
+   "  p=  10.9: memory mean 0.8034  final 0.7986   (15s)",
+   "  p=  11.0: memory mean 0.8397  final 0.8418   (15s)"
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "the six-axis formation law's memory scan on OTHER weight lines: --extra '<p values> --qr q r', e.g. '4 5 6 7 8 --qr 1 1' (block 28 located p in (10.5, 11) at (p,1,2); the lines (p,1,1), (p,2,4), (p,1,3) are unlocated). Report the p where the memory fraction at T crosses 1/2 and where it reaches 0; then refine with a finer p grid and L = 512. GRID UNITS: the 7 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "c969ceff53964b7cc5574e623415c2164422237bb34d7a76d9507d6cdc43bdcf",
+ "stdout_tail": "six-axis formation law at (p,1,2), L=256, T=4000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T\n  p=  10.5: memory mean 0.1658  final 0.1824   (16s)\n  p=  10.6: memory mean 0.2061  final 0.1670   (15s)\n  p=  10.7: memory mean 0.4033  final 0.3220   (15s)\n  p=  10.8: memory mean 0.7096  final 0.6811   (15s)\n  p=  10.9: memory mean 0.8034  final 0.7986   (15s)\n  p=  11.0: memory mean 0.8397  final 0.8418   (15s)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T122542Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

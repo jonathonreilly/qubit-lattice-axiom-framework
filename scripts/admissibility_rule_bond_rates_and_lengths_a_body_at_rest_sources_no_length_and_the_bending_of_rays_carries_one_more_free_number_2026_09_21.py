@@ -491,7 +491,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: bond rates and lengths — each rate is sourced by the energy it times; a body at rest has no hop energy and stretches no length; anisotropic bond-rate modes are short-ranged; a ray bends by dlog c and a slow body falls by dlog a; an algebraic local clause cannot tie a length to the depth of a rate, a cross term in the field's energy can, with a free exponent")
+    print("scope: bond rates and lengths — each rate is sourced by the energy it times; a body at rest has no hop energy and stretches no length; anisotropic bond-rate modes carry no long-range field of their own and are slaved to the second derivatives of the one scalar that survives (a power law, not short-ranged); a ray bends by dlog c and a slow body falls by dlog a; an algebraic local clause cannot tie a length to the depth of a rate, a cross term in the field's energy can, with a free exponent")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

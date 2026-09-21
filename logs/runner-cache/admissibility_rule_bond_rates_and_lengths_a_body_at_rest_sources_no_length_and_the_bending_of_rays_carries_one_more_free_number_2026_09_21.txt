@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_bond_rates_and_lengths_a_body_at_rest_sources_no_length_and_the_bending_of_rays_carries_one_more_free_number_2026_09_21.py
-runner_sha256: 19f5b4f056f5988376a44f420971d8adedd553330b62f94b9c1b95ae647949bd
+runner_sha256: 81c333287089e2cbdda4f2abc9029d3f6ae008c508202fc0f7840c066eaa7bd5
 input_fingerprint_sha256: d8c1d2a4859e66e96ac5c831e01f07ec8a7238c3ab367b40a0a7a160111f530a
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -30,7 +30,7 @@ per_mode: executed — the classes of bonds near a bond under the rotations that
 per_block: executed — exact ray equations at rational points for three relations between bond rates and site rates; three clauses for a length under a change of the unit of rate
 lattice_wide: T1, T2 hold for every amplitude and all positive rates; T3 for linear covariant shift-symmetric laws reaching the bonds within one site of a bond's midpoint; T4 for rays of the stated energy function; T5(a) for every algebraic local clause l_b = G(w_x, w_y), T5(b) for the linear static laws with a cross term; that bonds have rates of their own, the law they obey and its three numbers, any reference to the ambient rate, and a rest energy are not derived
 PASS: G1 the five N5 resolution lines are printed
-scope: bond rates and lengths — each rate is sourced by the energy it times; a body at rest has no hop energy and stretches no length; anisotropic bond-rate modes are short-ranged; a ray bends by dlog c and a slow body falls by dlog a; an algebraic local clause cannot tie a length to the depth of a rate, a cross term in the field's energy can, with a free exponent
+scope: bond rates and lengths — each rate is sourced by the energy it times; a body at rest has no hop energy and stretches no length; anisotropic bond-rate modes carry no long-range field of their own and are slaved to the second derivatives of the one scalar that survives (a power law, not short-ranged); a ray bends by dlog c and a slow body falls by dlog a; an algebraic local clause cannot tie a length to the depth of a rate, a cross term in the field's energy can, with a free exponent
 TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----

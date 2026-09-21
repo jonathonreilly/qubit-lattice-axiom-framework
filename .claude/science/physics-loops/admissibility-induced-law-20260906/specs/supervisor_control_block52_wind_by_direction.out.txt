@@ -1,0 +1,19 @@
+# block 52 wind-by-direction control under the biased walk: committed output (floating point)
+# command: supervisor_control_block52_wind_by_direction.py 64 0.1 2.0 20000 SEED 3 0.18 6 10, seeds 1 to 8 (the scratch version printed an unused 'collisionless prediction 0.0000' field, removed from the committed control)
+
+seed 1 rho=0.1 gamma=2.0 body sites 19 Q=1.046 (kinetic 1.900); inward wind r^2/Q: axis: sites 318, measured 0.2622 | face diagonal: sites 636, measured 0.2558 | body diagonal: sites 448, measured 0.2498 | isotropic closure 0.2653 | 11 ticks/s
+seed 2 rho=0.1 gamma=2.0 body sites 23 Q=1.102 (kinetic 2.300); inward wind r^2/Q: axis: sites 318, measured 0.2603 | face diagonal: sites 636, measured 0.2587 | body diagonal: sites 448, measured 0.2342 | isotropic closure 0.2653 | 11 ticks/s
+seed 3 rho=0.1 gamma=2.0 body sites 17 Q=1.117 (kinetic 1.700); inward wind r^2/Q: axis: sites 318, measured 0.2429 | face diagonal: sites 636, measured 0.2550 | body diagonal: sites 448, measured 0.2605 | isotropic closure 0.2653 | 11 ticks/s
+seed 4 rho=0.1 gamma=2.0 body sites 16 Q=0.991 (kinetic 1.600); inward wind r^2/Q: axis: sites 318, measured 0.2450 | face diagonal: sites 636, measured 0.2596 | body diagonal: sites 448, measured 0.2570 | isotropic closure 0.2653 | 11 ticks/s
+seed 5 rho=0.1 gamma=2.0 body sites 19 Q=1.102 (kinetic 1.900); inward wind r^2/Q: axis: sites 318, measured 0.2547 | face diagonal: sites 636, measured 0.2606 | body diagonal: sites 448, measured 0.2523 | isotropic closure 0.2653 | 11 ticks/s
+seed 6 rho=0.1 gamma=2.0 body sites 19 Q=1.129 (kinetic 1.900); inward wind r^2/Q: axis: sites 318, measured 0.2547 | face diagonal: sites 636, measured 0.2413 | body diagonal: sites 448, measured 0.2658 | isotropic closure 0.2653 | 11 ticks/s
+seed 7 rho=0.1 gamma=2.0 body sites 22 Q=1.169 (kinetic 2.200); inward wind r^2/Q: axis: sites 318, measured 0.2568 | face diagonal: sites 636, measured 0.2589 | body diagonal: sites 448, measured 0.2594 | isotropic closure 0.2653 | 11 ticks/s
+seed 8 rho=0.1 gamma=2.0 body sites 17 Q=0.973 (kinetic 1.700); inward wind r^2/Q: axis: sites 318, measured 0.2738 | face diagonal: sites 636, measured 0.2351 | body diagonal: sites 448, measured 0.2590 | isotropic closure 0.2653 | 11 ticks/s
+
+runs 8; Q over kinetic 0.573; isotropic closure 0.2653
+   axis           measured 0.2563 +- 0.0035   over the closure 0.966
+   face diagonal  measured 0.2531 +- 0.0034   over the closure 0.954
+   body diagonal  measured 0.2548 +- 0.0034   over the closure 0.960
+   axis over body diagonal: 1.006 +- 0.019
+
+for comparison, block 51's forward clause at the same density and scattering rate: axis 0.1754 +- 0.0017, face diagonal 0.1485 +- 0.0017, body diagonal 0.1304 +- 0.0021; axis over body diagonal 1.345 +- 0.025 (isotropic closure 0.1531)

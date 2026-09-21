@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block52: "opened for review 2026-09-21; a streaming clause with an isotropic second-order term: biased walk (alpha + c s.e)/2, first moment c s, second moment alpha delta; forward hops are the least diffusive axis-hop law and a content-independent second moment costs alpha >= c; operator -c s.grad + (alpha/2) Laplacian; unbiased capture by any body; uniform measure stationary; price: two hops in three sideways on an axis; executed winds by direction 1.006 +- 0.019 against 1.35 for forward hops; runner 13/0, eight mutations in family; nothing adopted"

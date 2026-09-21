@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 52 — author checks (not a review PASS)
+Prediction before the control; refuting pass with symbolic contents, a capture Monte Carlo and a three-record flux accounting (5/0); two exact checks contaminated by floating-point zeros found and fixed; one mutation that did not bite rewritten. Census 8/8 in family.

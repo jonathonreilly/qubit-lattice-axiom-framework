@@ -1,0 +1,7 @@
+PASS: W1 symbolic content: first moment [c*s1, c*s2, c*s3], second moment alpha times the identity, total rate 3 alpha
+PASS: W2 symbolic: the streaming operator of the biased walk is -h c s.grad f + (h^2 alpha/2) Laplacian f + O(h^3); the second-order term carries no content
+PASS: W3 Monte Carlo of 4000000 hop attempts next to a capturing site, gas of two contents: captured mean under the biased walk [ 0.2006 -0.3997  0.    ] (gas mean 0.2, -0.4, 0); under the forward clause [ 0.0662 -0.4669  0.    ] (1/15 = 0.0667, -7/15 = -0.4667, 0)
+PASS: W4 three records of distinct contents on the 3x3x3 torus: 17550 ordered configurations, flow in differs from flow out at 0; contents are moved or exchanged, never changed, so their sum is conserved
+PASS: W5 at alpha = c a record with no vanishing component hops against its content the share (3 - |s|_1)/6 of the time: from 0.2113 on a body diagonal towards 1/3 near an axis (on an axis itself none are against and two thirds are across)
+REFUTER TOTAL: PASS=5 FAIL=0
+exit=0

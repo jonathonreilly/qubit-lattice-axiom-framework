@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-clumping-line-p12",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 9 1 2 neutral 0.3 24 3000 1",
+ "seed": 91616,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c4eddf72",
+ "started_utc": "20260921T115336Z",
+ "elapsed_s": 124.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=9.0 q=1.0 r=2.0 c=0.3333 rho=0.3 L=24 nbrs=1.896 nbrs_over_random=1.054 aligned=0.560 S=0.25 accept=0.348 records=4173 seconds=124"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: records that move. Where do records clump on the line (p,1,2)? First look (density 0.3): onset near p = 10 at the neutral scale, between 5 and 6 at scale 1. The table over p, scale and density is the map. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 132 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "ce97adbfcf9c31a66095e37c63182bffd48a49fb1630f169983c3f2fbda263d4",
+ "stdout_tail": "weights (9.0,1.0,2.0) scale c=0.3333 (neutral) rho=0.3 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=1.800 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 1.678 0.393 0.414 0.28\n     2 1.715 0.422 0.372 0.32\n     4 1.748 0.465 0.359 0.23\n     9 1.838 0.505 0.354 0.22\n    18 1.855 0.522 0.356 0.27\n    38 1.869 0.537 0.354 0.29\n    79 1.845 0.537 0.346 0.15\n   163 1.903 0.551 0.348 0.41\n   338 1.896 0.563 0.352 0.21\n   700 1.895 0.571 0.348 0.31\n  1449 1.899 0.583 0.343 0.14\n  3000 1.930 0.572 0.348 1.10\nSUMMARY: p=9.0 q=1.0 r=2.0 c=0.3333 rho=0.3 L=24 nbrs=1.896 nbrs_over_random=1.054 aligned=0.560 S=0.25 accept=0.348 records=4173 seconds=124\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T115541Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

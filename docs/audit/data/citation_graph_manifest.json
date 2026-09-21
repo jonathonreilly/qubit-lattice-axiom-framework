@@ -1,6 +1,6 @@
 {
  "edge_count": 13606,
- "node_count": 6026,
+ "node_count": 6027,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -733,6 +733,10 @@
   "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06": {
    "deps_hash": "e54933eecd76",
    "out_degree": 2
+  },
+  "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1badd550395b",

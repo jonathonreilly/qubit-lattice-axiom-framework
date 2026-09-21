@@ -78,3 +78,6 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## 2026-09-21 refresh after block 48
+(1) The force between transparent bodies off the lattice axes and at small scattering rates (T3 predicts a dependence on direction); (2) two free bodies in a dilute gas inside the window of accelerated fall; (3) a balance of capture and emission (a body that does not grow); (4) the owner's fork on re-drawing contents; (5) a clause joining inertia with the rule's weights.

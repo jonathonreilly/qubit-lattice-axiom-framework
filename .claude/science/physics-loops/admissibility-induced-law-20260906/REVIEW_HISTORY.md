@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 48 — author checks (not a review PASS)
+The capture law corrected a reason given in block 45; the refuting pass (symbolic integration, path enumeration, quadrature, Monte Carlo) found the 1/n remainder of the collisionless coefficient, which was folded into the statement. Controls run before the closure was written; a 24-seed false lead (0.62) recorded. Census 11/11 in family.

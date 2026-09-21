@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F48 free capturing bodies | the capture weight |s|_1; first-harmonic moment identities; the multinomial shadow of independent records and its direction-dependent coefficient; the dilution law under a body clause; the window of accelerated fall | block 48 (within block 44's supplied clause and a supplied body clause) |

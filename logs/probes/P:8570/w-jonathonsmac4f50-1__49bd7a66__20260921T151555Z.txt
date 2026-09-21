@@ -1,0 +1,16 @@
+PR #8570: ail54: a phase timed by the local clock — every packet falls towards slow clocks; force = energy × gradient exactly; the walk with the qubit as coin ties weight to inertia (source-link direction, block 2)
+branch physics-loop/admissibility-induced-law-block54-phase-timed-by-the-local-clock-every-packet-falls-towards-slow-clocks-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_phase_timed_by_the_local_clock_every_packet_falls_towards_slow_clocks_force_is_energy_times_gradient_2026_09_21.py: rc=0 PASS=24 FAIL=0
+   mutation content_matrices_commute: expected B observed B ok
+   mutation inversion_leaves_the_content_alone: expected B observed B ok
+   mutation a_rest_energy_matrix_exists: expected B observed B ok
+   mutation inner_product_without_the_clock_weight: expected C observed C ok
+   mutation bond_timing_of_degree_two: expected C observed C ok
+   mutation clock_ratio_inverted: expected D observed D ok
+   mutation rate_field_not_exponential: expected D observed D ok
+   mutation fall_without_the_velocity_term: expected E observed E ok
+   mutation lattice_factor_dropped: expected E observed E ok
+   mutation energy_offset_is_harmless: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

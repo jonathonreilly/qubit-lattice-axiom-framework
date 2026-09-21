@@ -1,0 +1,18 @@
+PR #8548: ail42: records interacting through the odds of unformed sites (contents interact, masses do not; field equation massless on 5p = 7q + 4r; records are boundary values, not additive sources)
+branch physics-loop/admissibility-induced-law-block42-interaction-through-the-odds-of-unformed-sites-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_interaction_through_the_odds_of_unformed_sites_field_equation_massless_surface_2026_09_20.py: rc=0 PASS=20 FAIL=0
+   mutation gap_formula_wrong: expected B observed B ok
+   mutation bondwise_average_instead_of_coherent_sum: expected B observed B ok
+   mutation jacobian_without_normalization: expected C observed C ok
+   mutation massless_surface_wrong: expected C observed C ok
+   mutation green_function_mass_wrong: expected C observed C ok
+   mutation contraction_constant_too_large_kappa: expected D observed D ok
+   mutation product_bound_dropped_factor: expected D observed D ok
+   mutation map_not_covariant_injected: expected E observed E ok
+   mutation second_order_coefficient_wrong: expected E observed E ok
+   mutation scalar_channel_glue_at_neutral_scale: expected E observed E ok
+   mutation interior_charge_wrong: expected H observed H ok
+   mutation capacity_additive_injected: expected H observed H ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

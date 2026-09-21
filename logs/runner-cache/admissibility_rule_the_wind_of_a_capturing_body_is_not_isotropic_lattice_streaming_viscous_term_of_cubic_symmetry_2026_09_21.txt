@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_viscous_term_of_cubic_symmetry_2026_09_21.py
+runner_sha256: 3171c91286ba34cefee633d0efda7fe636dbf3b809cb490b35a497260c0a1328
+input_fingerprint_sha256: 530ec84b9038768d690f26314499189c5a94202ffc2a62b23a78c31d0dd86ede
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note exists and carries its claim id
+PASS: A2 the axioms memo carries the sentence used
+PASS: B1 T1: on a field of degree two the streaming operator of a record of content s is exactly (1/sqrt 3)[-s.grad + (1/2) sum_k |s_k| d_k^2] (150 rational unit contents, random rational fields and sites)
+PASS: C1 T2: over the uniform sphere <|s_k|> = 1/2, <s_i^2 |s_i|> = 1/4, <s_i^2 |s_k|> = 1/8 for k different from i (and they add up to <|s_k|>); moments with an odd power of a coordinate vanish by reflection
+PASS: C2 T2: in local equilibrium the second-order streaming term gives the momentum equation nu_lat (Laplacian g_i + d_i^2 g_i) with nu_lat = sqrt 3/16 (nu_lat^2 = 3/256), the part of cubic symmetry having the same coefficient as the isotropic part, and the number equation D_lat Laplacian n with D_lat = 1/(4 sqrt 3) (D_lat^2 = 1/48)
+PASS: C3 T2: a longitudinal wave is damped at the rate nu_lat q^2 times 2, 3/2, 4/3 along an axis, a face diagonal and a body diagonal; an isotropic viscous operator damps it equally in every direction
+PASS: D1 T3: for the harmonic potential x^5 - 10 x^3 y^2 + 5 x y^4 the field (d_x^3, d_y^3, d_z^3) chi has the curl 240 y along z; for chi = 1/r its curl along z at (1, 2, 2) is 70/2187: the part of cubic symmetry acting on a potential flow is not a gradient, so pressure cannot balance it and the potential inflow does not solve the creeping equations
+PASS: E1 T4: g_i = -i k_i P/(k^2 + eta k_i^2) with P = S/sum_i k_i^2/(k^2 + eta k_i^2) satisfies the divergence condition and the creeping momentum equation exactly (three values of eta, five wave vectors)
+PASS: E2 T4: the solution is homogeneous of degree -1 in the wave vector, so the inflow towards a sink is a function of direction over r^2: its dependence on direction does not decay with distance
+PASS: E3 T4: k x g vanishes for eta = 0 (potential flow) and along the symmetry directions, and is non-zero at generic wave vectors for eta > 0: the creeping inflow has circulation (eta = 1/2, k = (1, 2, 0): g = -i ('7/29', '11/29', '0'), k x g = -i ('0', '0', '-3/29'))
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the streaming operator on fields of degree two for 150 rational unit contents; the sphere moments 1/2, 1/4, 1/8
+per_site: not applicable
+per_mode: executed — the creeping solution at five wave vectors and three values of eta: both equations, homogeneity of degree -1, k x g
+per_block: executed — nu_lat^2 = 3/256 for both parts, D_lat^2 = 1/48; the curl 240 y for a harmonic polynomial of degree five and the curl of the cubic term for 1/r at (1, 2, 2)
+lattice_wide: T1 is exact on fields of degree two and is the second-order term of an expansion in gradients otherwise; T2 is a statement in local equilibrium at small density; T3 and T4 are exact statements about the creeping equations with a term of cubic symmetry; the winds by direction and the angular function are executed controls, not proofs
+PASS: G1 the five N5 resolution lines are printed
+scope: the wind of a capturing body in the inertial record gas is not isotropic — the second-order streaming term, its sphere moments, the lattice viscosity of cubic symmetry, the failure of the potential inflow, and the creeping solution with its direction dependence at every distance
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

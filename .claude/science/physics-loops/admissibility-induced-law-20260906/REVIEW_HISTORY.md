@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-21 block 51 — author checks (not a review PASS)
+A control meant to confirm block 48's sentence on collisions refuted it; the measurement was calibrated against an exact prediction before the cause was sought; the refuting pass replaced a test that did not discriminate (longitudinal against transverse) by one that does (direction by direction); corrections to four earlier PRs posted. Census 8/8 in family.

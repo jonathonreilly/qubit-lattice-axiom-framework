@@ -1,6 +1,6 @@
 {
  "edge_count": 13606,
- "node_count": 6026,
+ "node_count": 6027,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -749,6 +749,10 @@
   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8188f46b334d",
    "out_degree": 2
+  },
+  "admissibility_rule_the_wind_of_a_capturing_body_is_not_isotropic_lattice_streaming_gives_a_viscous_term_of_cubic_symmetry_direction_dependence_does_not_decay_bounded_theorem_note_2026-09-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
    "deps_hash": "8ae058a5c524",

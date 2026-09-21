@@ -1,0 +1,7 @@
+PASS: W1 symbolic: the streaming difference of a smooth field is -h s.grad f + (h^2/2) sum_k |s_k| d_k^2 f + O(h^3)
+PASS: W2 symbolic: <|s_x|> = 1/2, <s_x^2 |s_x|> = 1/4, <s_x^2 |s_y|> = 1/8, <s_x s_y |s_z|> = 0
+PASS: W3 symbolic: the z-component of the curl of (d_x^3, d_y^3, d_z^3)(1/r) is -105*X*Y*(X - Y)*(X + Y)/(X**2 + Y**2 + Z**2)**(9/2); at (1, 2, 2) it is 70/2187
+PASS: W4 quadrature of the discrete streaming operator on a longitudinal local-equilibrium momentum wave of wave number 0.05: damping along an axis, a face diagonal and a body diagonal -9.373047e-04, -7.030518e-04, -6.249566e-04; ratios 1.3332 and 1.4998 (4/3 and 3/2 from 1 + sum of the fourth powers of the direction cosines; an isotropic operator would give 1 and 1)
+PASS: W5 Fourier solution on a 96^3 grid: axes over body diagonals = 1.0002 for eta = 0; for eta = 1/2: 1.435 in the shell 8 to 12 and 1.514 in the shell 12 to 18: the direction dependence does not decay
+REFUTER TOTAL: PASS=5 FAIL=0
+exit=0

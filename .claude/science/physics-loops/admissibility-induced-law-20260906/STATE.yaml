@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block51: "opened for review 2026-09-21; CORRECTS blocks 45-48: the wind of a capturing body is not isotropic: second-order streaming term gives nu_lat (Laplacian g_i + d_i^2 g_i), nu_lat = sqrt3/16, cubic part equal to the isotropic part; the potential inflow does not solve the creeping equations; the solution is f(direction)/r^2 at every distance; executed axes/body diagonals 1.55 (no scattering), 1.35 (rho 0.1, gamma 2), 1.30 (rho 0.3, gamma 1) against 1 assumed; runner 15/0, eight mutations in family; nothing adopted"

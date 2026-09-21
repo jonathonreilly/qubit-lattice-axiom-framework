@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F51 lattice viscosity | the second-order term of the streaming operator; fourth-rank sphere moments with |s_k|; a viscous term of cubic symmetry; the creeping inflow in wave-vector space, homogeneous with circulation | block 51 (within block 44's supplied clause) |

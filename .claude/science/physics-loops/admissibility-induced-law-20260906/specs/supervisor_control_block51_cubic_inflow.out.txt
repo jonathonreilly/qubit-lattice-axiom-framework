@@ -1,0 +1,28 @@
+# block 51 cubic-inflow control: committed output (floating point): creeping inflow towards a smeared sink with the viscous operator Laplacian g_i + eta d_i^2 g_i
+
+## supervisor_control_block51_cubic_inflow.py 128 6 10 1.5
+grid 128^3, shell r in [6.0, 10.0]
+eta = 0.00: inflow r^2 over its shell mean: axis 1.000, face diagonal 1.000, body diagonal 1.000; axis over body diagonal 1.000
+eta = 0.25: inflow r^2 over its shell mean: axis 1.103, face diagonal 0.976, body diagonal 0.932; axis over body diagonal 1.183
+eta = 0.50: inflow r^2 over its shell mean: axis 1.197, face diagonal 0.955, body diagonal 0.873; axis over body diagonal 1.371
+eta = 0.75: inflow r^2 over its shell mean: axis 1.283, face diagonal 0.937, body diagonal 0.821; axis over body diagonal 1.564
+eta = 1.00: inflow r^2 over its shell mean: axis 1.363, face diagonal 0.920, body diagonal 0.774; axis over body diagonal 1.760
+eta = 2.00: inflow r^2 over its shell mean: axis 1.634, face diagonal 0.870, body diagonal 0.631; axis over body diagonal 2.590
+
+## supervisor_control_block51_cubic_inflow.py 192 12 20 2.0
+grid 192^3, shell r in [12.0, 20.0]
+eta = 0.00: inflow r^2 over its shell mean: axis 1.000, face diagonal 1.000, body diagonal 1.000; axis over body diagonal 1.000
+eta = 0.25: inflow r^2 over its shell mean: axis 1.128, face diagonal 0.969, body diagonal 0.916; axis over body diagonal 1.231
+eta = 0.50: inflow r^2 over its shell mean: axis 1.247, face diagonal 0.943, body diagonal 0.844; axis over body diagonal 1.477
+eta = 0.75: inflow r^2 over its shell mean: axis 1.357, face diagonal 0.921, body diagonal 0.781; axis over body diagonal 1.737
+eta = 1.00: inflow r^2 over its shell mean: axis 1.461, face diagonal 0.902, body diagonal 0.726; axis over body diagonal 2.012
+eta = 2.00: inflow r^2 over its shell mean: axis 1.817, face diagonal 0.844, body diagonal 0.558; axis over body diagonal 3.259
+
+## supervisor_control_block51_cubic_inflow.py 192 20 32 2.0
+grid 192^3, shell r in [20.0, 32.0]
+eta = 0.00: inflow r^2 over its shell mean: axis 0.999, face diagonal 1.000, body diagonal 1.000; axis over body diagonal 0.999
+eta = 0.25: inflow r^2 over its shell mean: axis 1.144, face diagonal 0.966, body diagonal 0.908; axis over body diagonal 1.259
+eta = 0.50: inflow r^2 over its shell mean: axis 1.279, face diagonal 0.939, body diagonal 0.830; axis over body diagonal 1.542
+eta = 0.75: inflow r^2 over its shell mean: axis 1.406, face diagonal 0.915, body diagonal 0.761; axis over body diagonal 1.847
+eta = 1.00: inflow r^2 over its shell mean: axis 1.526, face diagonal 0.895, body diagonal 0.702; axis over body diagonal 2.175
+eta = 2.00: inflow r^2 over its shell mean: axis 1.946, face diagonal 0.838, body diagonal 0.522; axis over body diagonal 3.728

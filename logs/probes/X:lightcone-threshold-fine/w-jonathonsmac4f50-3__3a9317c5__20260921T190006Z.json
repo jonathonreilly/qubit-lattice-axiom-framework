@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-threshold-fine",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 0.55 48 4000 2000 1",
+ "seed": 17206,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3a9317c5",
+ "started_utc": "20260921T190006Z",
+ "elapsed_s": 73.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=0.55 L=48 T=4000 plateau_|m|=0.0299 lowk_ratio=0.9939 seconds=73"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Locate where the light-cone sphere law in 3+1 starts to keep memory (first look: memory at beta = 1 on a 16^3 plane). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 30 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "f17d0679dc08ce2035b879f34920739c7f405ee6c093fe8b9f3eca1bd11c3e2a",
+ "stdout_tail": "      11  0.3954  +0.3954\n        16  0.3555  +0.3554\n        22  0.3161  +0.3160\n        32  0.2837  +0.2837\n        45  0.2537  +0.2536\n        63  0.2196  +0.2195\n        89  0.1891  +0.1890\n       126  0.1758  +0.1749\n       178  0.1526  +0.1522\n       252  0.1045  +0.0970\n       356  0.0843  +0.0808\n       503  0.0574  +0.0535\n       711  0.0265  +0.0056\n      1004  0.0546  +0.0152\n      1418  0.0341  +0.0313\n      2004  0.0491  +0.0140\n      2831  0.0380  -0.0197\n      4000  0.0312  +0.0054\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.9939 (n=56)\n   |k| in [0.3,0.6): 1.1920 (n=380)\n   |k| in [0.6,1.0): 1.2497 (n=1426)\n   |k| in [1.0,1.5): 1.2706 (n=4492)\n   |k| in [1.5,2.2): 1.2830 (n=13578)\n   |k| in [2.2,3.2): 1.2900 (n=41209)\n   |k| in [3.2,6.0): 1.2889 (n=49450)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.047626  +0.040508  1.176  +0.04051\n     2  +0.032064  +0.028098  1.141  +0.05620\n     3  +0.015875  +0.014973  1.060  +0.04492\n     4  +0.010606  +0.010600  1.001  +0.04240\n     6  +0.005244  +0.005876  0.892  +0.03526\n     8  +0.002850  +0.003628  0.785  +0.02902\n    12  +0.000699  +0.001466  0.477  +0.01760\n    16  -0.000168  +0.000489  -0.343  +0.00783\n    24  -0.000512  -0.000106  4.835  -0.00254\nSUMMARY: dim=3 menu=sphere beta=0.55 L=48 T=4000 plateau_|m|=0.0299 lowk_ratio=0.9939 seconds=73\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T190119Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

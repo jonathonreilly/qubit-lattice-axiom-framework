@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-finite-size",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 2 48 3000 1500 2",
+ "seed": 33632,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7b098368",
+ "started_utc": "20260921T233352Z",
+ "elapsed_s": 43.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=2.0 L=48 T=3000 plateau_|m|=0.7366 lowk_ratio=0.9924 seconds=43"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The test of long-range order in 3+1: the plateau |m| against the plane's side L at fixed coupling; a positive limit as L grows is memory, a decay to zero is not. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 36 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "9f871ac0240a520aba352620f7134e5ee794dd340d89a1fdba646b83a9bce31b",
+ "stdout_tail": "       10  0.7687  +0.7687\n        14  0.7616  +0.7616\n        20  0.7567  +0.7566\n        28  0.7520  +0.7520\n        39  0.7491  +0.7491\n        55  0.7470  +0.7469\n        76  0.7439  +0.7438\n       107  0.7400  +0.7397\n       149  0.7430  +0.7428\n       208  0.7386  +0.7382\n       290  0.7417  +0.7406\n       405  0.7373  +0.7362\n       566  0.7401  +0.7397\n       790  0.7389  +0.7383\n      1103  0.7362  +0.7336\n      1539  0.7336  +0.7316\n      2149  0.7374  +0.7358\n      3000  0.7374  +0.7361\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.9924 (n=56)\n   |k| in [0.3,0.6): 1.0175 (n=380)\n   |k| in [0.6,1.0): 1.0241 (n=1426)\n   |k| in [1.0,1.5): 1.0277 (n=4492)\n   |k| in [1.5,2.2): 1.0335 (n=13578)\n   |k| in [2.2,3.2): 1.0391 (n=41209)\n   |k| in [3.2,6.0): 1.0416 (n=49450)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.047432  +0.046939  1.011  +0.04694\n     2  +0.021542  +0.021601  0.997  +0.04320\n     3  +0.012934  +0.013161  0.983  +0.03948\n     4  +0.008749  +0.009024  0.970  +0.03610\n     6  +0.004631  +0.004932  0.939  +0.02959\n     8  +0.002645  +0.002915  0.907  +0.02332\n    12  +0.000867  +0.000970  0.893  +0.01164\n    16  +0.000472  +0.000099  4.763  +0.00159\n    24  +0.000591  -0.000423  -1.398  -0.01015\nSUMMARY: dim=3 menu=sphere beta=2.0 L=48 T=3000 plateau_|m|=0.7366 lowk_ratio=0.9924 seconds=43\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260921T233436Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

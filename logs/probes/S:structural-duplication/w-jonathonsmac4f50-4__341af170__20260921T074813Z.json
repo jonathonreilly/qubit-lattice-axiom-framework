@@ -1,0 +1,32 @@
+{
+ "task": "S:structural-duplication",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/structural.py 150 1800 7 7 8 A",
+ "seed": 150,
+ "minutes": 30.0,
+ "box": "7x7x8",
+ "git_sha": "341af170",
+ "started_utc": "20260921T074813Z",
+ "elapsed_s": 1800.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "(0, 0, 1)"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "climb with duplication moves (a band of marks copied beside itself) for a processed site with all predecessors tight (hard > 0) or a rooted value above 0 (vmax > 0); either is a HIT.",
+ "stdout_sha256": "e646b5a663ca9f3e97d07856e89762e1844b1a71666aa098da84824ce46d6f04",
+ "stdout_tail": "seed 150 7x7x8 from Z_A: start (0, 0, 1)\nseed 150: done best=(0, 0, 1)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-4",
+  "at_utc": "20260921T081813Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

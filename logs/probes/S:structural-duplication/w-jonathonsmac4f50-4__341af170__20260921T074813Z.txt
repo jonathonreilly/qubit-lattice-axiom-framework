@@ -1,0 +1,2 @@
+seed 150 7x7x8 from Z_A: start (0, 0, 1)
+seed 150: done best=(0, 0, 1)

@@ -1,4 +1,4 @@
-# The source link in the amplitude layer — state of knowledge for the owner (blocks 53–55; 2026-09-21)
+# The source link in the amplitude layer — state of knowledge for the owner (blocks 53–55, with an addendum for block 56; 2026-09-21)
 
 **What this is.** One page on what three blocks established after the instruction "ok lets work the source link into the amplitude layer". Nothing here is adopted; every block is an open hand-off PR against `main`; PR numbers are evidence addresses, not status. Author checks only; no independent review has taken place on any of it. The axioms memo and the parked-decisions registry were read in full before the first block.
 
@@ -27,6 +27,21 @@
 | 9 | Every pull is matched by an equal and opposite pull iff each body sources in proportion to its energy. With sources that count bodies, a heavy and a light body left alone would push themselves along. Executed: with the probability density as source the two wave vectors' changes fail to cancel by one half; with the energy density they cancel to 3 parts in 10⁵ and the ledger holds to 10⁻¹¹. | block 55, #8571 |
 | 10 | A and C together: the field's own energy has weight one; the unit of rate cannot be a variable of the ledger (so the source enters with its mean removed — the packet's projection a second time); the coupling `γ` is a pure number; the second order that row 2 left free is fixed — through second order the law is the averaging law for `√w`. In the continuum this is Einstein's second static theory of 1912, which he reached by the same action-and-reaction argument. | block 55, #8571 |
 
+## Addendum — block 56: the strong field (#8573)
+
+Block 55 fixes the clock law only through second order. Block 56 takes the simplest admissible field energy, `(2/γ) Σ_bonds (√w_x − √w_y)²`, and solves it exactly. **Every row below carries that choice**, except 12.
+
+| # | Statement | Evidence address |
+|---|---|---|
+| 11 | For bodies at rest the clock law, divided by `√w`, is a *linear* problem: any number of bodies, any strengths, one linear solve; one solution; every clock between stopped and ambient; more energy anywhere slows every clock. Linearity holds for any fixed amplitude; rest supplies the bounds. | block 56, #8573 |
+| 12 | For *every* admissible field energy the ledger of a static arrangement is a sum over the walls: what the outside responds to is the ledger. For the simplest one it is exactly `Σ m √w` — between the bare energies and the energies the bodies have in the field. | block 56, #8573 |
+| 13 | Saturation. However much bare energy is put at one site, its ledger stays below `7.9/γ` (on `Z³`); beyond a point, adding bare energy *lowers* the energy the body has in the field; its clock stops only in the limit. A region's ledger is bounded by `(12/γ) ×` its capacity — executed: proportional to a ball's **radius**, not its volume. | block 56, #8573 |
+| 14 | A pair's ledger is below its members' by an amount bilinear in the "charges" `m√w`, and falls as they approach at **any** field strength. | block 56, #8573 |
+| 15 | Boundary, found by the refuting pass: another admissible field energy with the same second order stops the clock at a body at the *finite* bare energy `18/γ`, with no static solution beyond. Whether and where clocks stop is a property of the field energy, not of clauses A–C. | block 56, #8573 |
+| 16 | A principle that would make the choice (supplied): clause B makes an amplitude's energy bilinear in the root rates. If the local clock times the field's own energy the same way, the simplest field energy is the only nearest-neighbour covariant one, and the whole ledger is one quadratic form in `√w`. | block 56, #8573 |
+
+**A ninth fork for the owner.** *Does the local clock time the field's own energy as it times an amplitude?* If yes (row 16), rows 11–14 follow and one number `γ` is all that is left of the field's law. If no, the law beyond second order is a free function, and row 15 shows the difference is not cosmetic.
+
 ## The weak-field packet, piece by piece (correspondence of form; no gravitational claim)
 
 | supplied on `main` | within the clauses |
@@ -54,4 +69,4 @@ With all three: a body of energy `E` draws every long-wavelength packet at `γ E
 There is no master clock; each place keeps its own time and only comparisons count. Then a place's clock rate is the average of its neighbours', and things that slow clocks add up. A moving thing whose phase keeps local time is pulled towards slow clocks, harder the more energy it has — and because of how a qubit's three directions multiply, its inertia grows in the same proportion, so everything falls alike. If the books are to balance and every pull is to be answered by an equal pull, the thing that slows the clocks has to be energy. One number is left over.
 
 ## Integration order
-#8568 → #8570 → #8571, each independent against `main` (each appends to the shared pack records; rebuild in that order). Follow-ups are on `ai/probes` (the ray limit as a theorem with its sideways correction; composite bodies; a clause for lengths; `κ`; discrete-step walks; a sideways-drift grid).
+#8568 → #8570 → #8571 → #8573, each independent against `main` (each appends to the shared pack records; rebuild in that order). Follow-ups are on `ai/probes` (the ray limit as a theorem with its sideways correction; composite bodies; a clause for lengths; `κ`; discrete-step walks; a sideways-drift grid).

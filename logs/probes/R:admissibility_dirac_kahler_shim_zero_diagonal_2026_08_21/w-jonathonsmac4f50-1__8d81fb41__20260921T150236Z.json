@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_shim_zero_diagonal_2026_08_21",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_shim_zero_diagonal_2026_08_21.py",
+ "seed": 2956,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150236Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8218fdb6af27a3e80985d25a1453c07876b35f1bd5d4d1282d04f2cd15a398f0",
+ "stdout_tail": "overlap_2026_08_14.py': '5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445', 'docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md': '9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33'}\n[PASS] B-12x4-closed-identity: at 12x4 only: [[B,s_t C1],[s_t C1^H,g2 s_t^2 I]], with C1^H B^-1 C1=(57/160)I at m=1\n[PASS] C-domain-and-boundary: the identity-corner threshold applies for B>0 and s_t!=0; s_t=0 is g2-independent and has rank C=0\n[PASS] D-general-positive-corner: for P=diag(2,3,4,5), the generalized threshold is kappa/2; it depends on P\n[PASS] E-pointwise-versus-uniform: k=2,4,6 work at the listed nonzero points; only k=2 has finite uniform threshold near zero; rows=[(2, 1/2, 57/160, (4, 4, 0)), (2, 2, 57/160, (4, 4, 0)), (4, 1/2, 57/40, (4, 4, 0)), (4, 2, 57/640, (4, 4, 0)), (6, 1/2, 57/10, (4, 4, 0)), (6, 2, 57/2560, (4, 4, 0))]\n[PASS] F-8x6-wrap-control: the homogeneous displacement-two shim has rank zero at 8x6, where the pre-existing T_phys=4 wrap corner is live\n[PASS] G-mass-only-selected-map: finite connection-off result, requiring nonzero mass; it does not decide cancellation against a connection; {'incident_variables': 8, 'rank_at_m_one': 8, 'zero_at_m_zero': True, 'x_homogeneous_variables': ('z_0', 'z_1'), 'x_homogeneous_rank': 2}\n[PASS] H-exact-bounded-scope: 12x4 closed formula, 8x6 wrap control, and selected maps only; no all-cone or physical closure\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150237Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

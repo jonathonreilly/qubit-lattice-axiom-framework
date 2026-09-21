@@ -1,0 +1,16 @@
+PR #8573: ail56: the strong field, exactly — bodies at rest make the clock law linear in √(rate); the ledger is a surface term, bounded by a capacity (source-link direction, block 4)
+branch physics-loop/admissibility-induced-law-block56-the-strong-field-exactly-linear-in-root-rate-ledger-and-capacity-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_strong_field_exactly_bodies_at_rest_make_the_clock_law_linear_in_the_root_of_the_rate_2026_09_21.py: rc=0 PASS=17 FAIL=0
+   mutation body_energy_not_timed_by_its_clock: expected B observed B ok
+   mutation raising_an_energy_raises_the_rates: expected B observed B ok
+   mutation amplitude_energy_not_timed_by_its_clock: expected B observed B ok
+   mutation ledger_is_the_sum_of_energies_in_the_field: expected C observed C ok
+   mutation outside_sees_the_bare_energies: expected C observed C ok
+   mutation ledger_grows_without_bound: expected D observed D ok
+   mutation energy_in_the_field_is_monotone: expected D observed D ok
+   mutation capacity_bound_is_the_single_site_bound: expected D observed D ok
+   mutation pair_ledger_exceeds_the_members: expected E observed E ok
+   mutation every_weight_one_energy_is_bilinear: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

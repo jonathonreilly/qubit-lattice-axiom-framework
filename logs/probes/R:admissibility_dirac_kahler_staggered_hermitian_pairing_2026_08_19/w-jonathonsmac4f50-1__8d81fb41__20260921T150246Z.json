@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.py",
+ "seed": 2966,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150246Z",
+ "elapsed_s": 66.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "53909a3cb00e7e62b652747faaf8ecd019752b4d31375074d75219db3116dfb2",
+ "stdout_tail": "sical block is symmetric, S=W^T beta is a real symmetric symmetrizer satisfying S R=R^T S, whereas the physical block is P(m)=S(m I+R); P(m) also symmetrizes R, so the positive index of either form is at most 6 on every primary edge, but zero and nonzero PSD algebraic S exist for the nilpotent Jordan form, whose real symmetric symmetrizer space has dimension 16 rather than 8, while the tested split probe has dimension 8 and two probes attain (6,0,2)\nlattice_wide: the chart-indexed census is 4 nilpotent plus 12 split at the primary weights and 2 plus 14 at the second tested weights; the two assignments and the s_t=0 and s_x=0 corner fixtures retain only the no-positive-definite bound, and neither an all-weight claim nor positivity of P(m) follows\nRESULT: the displayed primary fixture has a staggered Hermitian pairing and excludes positive-definite symmetrizers through the measured R spectra and positive-index bound; it does not exclude positive-semidefinite symmetrizers, does not turn S into P(m), and does not establish reflection positivity or a curved OS result\nDECISION_CUT: test the physical block P(m), admissible involution constraints, other weights and carriers, completions, the forced self-edges, coboundary admissibility, and the joint-lane program; no premise or audit disposition is adopted here\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150352Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

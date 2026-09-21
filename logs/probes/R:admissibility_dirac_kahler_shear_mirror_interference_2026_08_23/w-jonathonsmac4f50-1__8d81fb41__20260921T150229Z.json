@@ -1,0 +1,34 @@
+{
+ "task": "R:admissibility_dirac_kahler_shear_mirror_interference_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_shear_mirror_interference_2026_08_23.py",
+ "seed": 2949,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150229Z",
+ "elapsed_s": 5.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "86922ec7e88aab96506fbbe7e9883ae6814b02c4540a59b0a552a2b9645f3e74",
+ "stdout_tail": ", 17/8, 17/6)\nPASS: 8x4 tested shear profiles :: ambient=64, pinned=32\nPASS: 8x4 single-level accounting :: pure_b=16, physical_profile=24\nPASS: 12x4 flat mirror control :: zero shear and unit volume pass both finite tests\nPASS: 12x4 non-flat volume control :: repeating_diagonal=(25/16, 3/2, 17/8, 17/6)\nPASS: 12x4 tested shear profiles :: ambient=96, pinned=64\nPASS: 12x4 single-level accounting :: pure_b=16, physical_profile=24\nPASS: 8x4 exact transport family :: commutator=(16, 64, 72), transpose=(16, 64, 72)\nPASS: 8x4 finite candidate-family contrast :: 1/det Herm(Q) and a constant are dial-blind; determinant modulus changes\nPASS: 12x4 exact transport family :: commutator=(32, 96, 112), transpose=(24, 104, 116)\nPASS: 12x4 finite candidate-family contrast :: 1/det Herm(Q) and a constant are dial-blind; determinant modulus changes\nPASS: literal input closure and historical-interference fence :: float_literals=0, inputs_bound=True\nper_element: rQr=Q^T is the antiunitary condition; the commutator test is retained only as a comparison\nper_site: flat and one non-flat volume profile pass, while the separately tested shear profiles fail\nper_mode: transport support counts are exact for two finite extents and differ across them\nper_block: candidate function families do not select a unique readout; interference brackets remain historical\nlattice_wide: no carrier classification, OS no-go, physical interference theorem, premise, axiom, audit, or TOE conclusion follows\nTOTAL: 13/13 PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150234Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

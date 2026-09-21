@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_site_os_positivity_2026_08_24",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_site_os_positivity_2026_08_24.py",
+ "seed": 2957,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150237Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "177cc87bf13747fbf54ef4fc4c4e3f8097dca53638072b885b7c21968acb3b7d",
+ "stdout_tail": "f34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/audit/data/axiom_premise_nodes.json': '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37'}\n[PASS] B-link-seam-support: the finite link route has a full-rank 16x16 theta-paired seam of inertia (8,8,0) and support through offsets \u00b12\n[PASS] C-sector-phase-and-determinant: near off-diagonals carry (-i)^p and far off-diagonals carry i^p; every displayed 2x2 determinant is -|65/1152|^2\n[PASS] D-congruence-insertion-and-polar-controls: invertible congruence preserves inertia; S K fails the Hermitian positive-pairing requirement, and three finite action-side polar writings do not yield PSD Grams\n[PASS] E-site-construction: the unflipped site image and 56-entry site glue satisfy reflected-transpose covariance; the link action does not become this construction under the site permutation\n[PASS] F-empty-cross-and-schur-PSD: the cross is empty term by term; zero 4x4 and 8x8 Schur complements certify PSD rank eight on the two larger displayed spans\n[PASS] G-naive-transfer-control: the finite single-readout candidate T=K_c^-1 L is neither K_c-self-adjoint nor spectrally positive; no reconstruction-transfer theorem follows\n[PASS] H-finite-scope-and-diagonal-congruence: three finite site fixtures have the same displayed PSD inertias; the unequal site and link cores are not diagonally congruent in this indexing, which does not obstruct general congruence; physical equivalence remains open\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150240Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

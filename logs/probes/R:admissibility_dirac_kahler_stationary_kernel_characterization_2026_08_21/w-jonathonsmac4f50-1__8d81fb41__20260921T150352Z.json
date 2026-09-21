@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_stationary_kernel_characterization_2026_08_21",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_stationary_kernel_characterization_2026_08_21.py",
+ "seed": 3032,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150352Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9c9cf9c62162305522c23ee917723bbdcf340f49f4be903165da1460a527f511",
+ "stdout_tail": "01833814423051490626400571751505024059619119341946758490615150916822499431054315131476078375296283248499708941516449452818739412827433091619472999190360194596407573945361901852087457462667456074665256898708456713336381381294681255321959934452870093219277441340796806225921902444104862125750533799849287093647449000685212023953839203555657427087797762199436659721734858300413797313315050548978331041262842183205823082587326939715819081514585464022241525143947249375851973301857627376807011041025204883254923572554760514106752305625365761405639698127560846092331686730809486947224728663737992243441912906959708308589619764219902676033457678296567139443854727411494511235464226857838028796130384790538195875988789344659708944436906400388819965476011481517746085477452295829896702495477870326771526793551093027973753885950970358866320885666399857371154477017869886594070143486081443891076982278145935032597557003841245204591259808583817638348648907913592747136395175815220496967372655987036076973213818390883347955679064871526265625209049746145663997527488364544))\n[PASS] G-solution-is-not-fixed-point: the normalized solution obeys M mu*=P0 != mu* at the supplied 12x4 matrix\n[PASS] H-vector-defect-identity: M mu-P0 = E(mu-mu*) exactly for the displayed normalized one-record weight vector\n[PASS] I-exact-bounded-scope: two supplied systems, two sign-changing endpoint pairs, one zero-shear control, and five iterates only; no nearest-zero, topology, convergence, or universal law\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150353Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

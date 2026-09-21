@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_seam_dressing_sector_signature_2026_08_15",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_seam_dressing_sector_signature_2026_08_15.py",
+ "seed": 2902,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150142Z",
+ "elapsed_s": 35.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "31633b83ee7309bd94e6a8fc34093b1c354b7cf4c3ac27af7a95bf358b3e7bb2",
+ "stdout_tail": ".\nEXACT_WITNESSES: even/odd ranks=256/124; anticommutant rank/dim=14/2; p=32107654 rank/nullity=47/1; Groebner={1}; inertia(A*)=(8,8,0)\nSOURCE_INPUTS: own theorem note, Block109 theorem note, and the imported Block109 runner form the complete local science-file dependency closure\nper_element: exact grading, Gram covariance, signature, anticommutant, characteristic-polynomial, sparse-rank, and Groebner identities are checked\nper_site: one Grassmann mode per fine site on the antiperiodic reflection torus\nper_mode: both shear fixtures certify the same sector dimensions, odd-sector signature theorem, sparse obstructions, and coupled momentum decomposition\nper_block: the odd x-parity structure reverses sign while the identity and symmetric/antisymmetric shifts are preserved and Fourier diagonal\nlattice_wide: checked and not executed \u2014 the full even-sector and mixed-parity involution varieties, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open\nRESULT: nonzero pure-odd Hermitian Grams are indefinite; the tested even sparse supports contain no involution; mixed parity and the full even variety remain open\nDECISION_CUT: solve the coupled momentum equations or the full mixed-parity variety before any physical selection or OS claim\nTOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150217Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

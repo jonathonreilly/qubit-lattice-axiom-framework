@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+ "seed": 2954,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150234Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ef197e6d63f4f0eb02a26a8c59af84af2977920d1dea0628cd38be0a49d9f7f7",
+ "stdout_tail": "7f8f', 'logs/runner-cache/admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_2026_08_14.txt': '909e4a4cac03609b2351a911e80f0b78ecaf61f7fcc976be5892dbcfa9ea51b4', '.claude/science/physics-loops/toe-axiom-closure-block105-shifted-origin-frame-gauge-20260814/NO_GO_LEDGER.md': 'e92c85ac05cd969ce0f35cf4d0892f5a144f59a98b975586002aefe2e57747c7'}\nper_element: exact projective shift lifts, Hodge tangents, metric Clifford identity, and reflection parity are checked\nper_site: one fine Grassmann mode is retained at each of the 16 torus sites; no anchor copy is added\nper_mode: the zero-coarse-momentum shear orbit adds the degree-changing A02 direction; fixed physical tangent invariants are zero\nper_block: onsite nonuniform shear has shifted-chart cross rank 8; overlap repair cross ranks are 16/16/16/12\nlattice_wide: checked and not executed \u2014 a uniformly finite-range signed-shift common d/Ward action, ADM/history common link, OS positivity, joint gravity, Records, selection, audit retention, and TOE closure remain open\nRESULT: fixed-origin curved shear is not translation-closed; an all-anchor positive overlap Hodge restores exact passive and active translation covariance without extra site modes\nDECISION_CUT: advance only the overlap/frame-gauge carrier to the common-d and ADM reflection-link test; reject a physical fixed blocking origin\nTOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150236Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

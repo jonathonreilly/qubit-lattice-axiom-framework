@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.py",
+ "seed": 2937,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150217Z",
+ "elapsed_s": 12.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1bdbe39d3ef6e2bf08ab1c5fe006ca6b082ea606973cde6a45b43beb5f7f22f3",
+ "stdout_tail": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/audit/data/axiom_premise_nodes.json': '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37'}\n[PASS] B-cell-locality-and-support: the cover has eight disjoint 2x2 cells; the curved completion has 144 ordered inter-cell entries, 48 already in H and 96 transport-created\n[PASS] C-flat-seam-and-modulus: the flat-seam Gram is the zero PSD matrix; the six-dimensional self-dual modulus meets the shear family at (q,v)=(0,\u00b11), uniquely flat only after v>0 is imposed\n[PASS] D-reference-construction: the displayed E02 section frame is real, reflection-covariant and connected; its dressed Gram is Hermitian while the undressed neighbor is not\n[PASS] E-six-finite-seam-directions: six explicitly listed directions have inertias ((6, 6, 4), (6, 6, 4), (3, 3, 10), (0, 0, 16), (6, 6, 4), (6, 6, 4)); b8 is zero PSD and the other five are indefinite\n[PASS] F-finite-mass-and-geometry-probes: five finite masses and the pure-geometry limit are not positive definite; positive traces exclude exact opposite eigenvalue pairing but do not explain balanced inertia\n[PASS] G-spectral-gcd: gcd(p(lambda),p(-lambda))=lambda^4 and dim ker=4, so the anti-commutant is the 16-dimensional kernel-to-kernel block and contains no invertible map\n[PASS] H-bounded-obstruction: no tested Gram is positive definite; zero PSD cases are distinguished from indefinite cases, and no all-frame or all-pairing no-go is claimed\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150229Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

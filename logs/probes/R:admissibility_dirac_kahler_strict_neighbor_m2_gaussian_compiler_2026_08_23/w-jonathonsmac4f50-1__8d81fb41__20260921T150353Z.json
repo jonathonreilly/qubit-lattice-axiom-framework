@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_2026_08_23.py",
+ "seed": 3033,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150353Z",
+ "elapsed_s": 48.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8daafdcf20b0128428245fef73afc43d3f788085de688eb917093ac8823ef858",
+ "stdout_tail": "xed tagged support uses its three-complex-payload decoded-coordinate pushforward\nPASS finite-type-counts-do-not-close-routing: row-type and lane counts are finite bookkeeping only; without a periodic collision-free site map, seams, and equivariance they do not establish fixed density\nPASS compiler-mutation-gates: changing one mediator sign destroys the target cross term; deleting a zero-roster mediator changes only the unnormalized integral by pi/C, while either normalized roster still multiplies by one\nPASS selection-record-and-score-boundary: the complete extracted runtime closure and current Block 105 supplier are hash-bound; the note keeps base-measure/action/source selection and autonomous Record writing open and claims no obligation or score movement\nper_element: fixed Gaussian Schur identity, zero roster, signs, M2 encode/decode, and every compiled factor arity are exact\nper_site: the Record center plus all six neighbors, literal four-complex M2 capacity, and <=24 port slots are checked\nper_mode: full worst-roster Schur precision, hidden determinant, W covariance, determinant law, and marked-table normalization/positivity/arm marginals are checked\nper_block: four arms and both splits are checked on the mass-one xgraded width-four interface fixture; constant-background widths four/eight supply topology counts\nlattice_wide: NOT CLOSED; finite row-type counts are not a periodic fixed-density site map, and seams plus full cubic covariance remain open\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150442Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

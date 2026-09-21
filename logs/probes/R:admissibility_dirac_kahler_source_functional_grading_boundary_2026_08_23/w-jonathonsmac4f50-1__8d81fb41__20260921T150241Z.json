@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_source_functional_grading_boundary_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_source_functional_grading_boundary_2026_08_23.py",
+ "seed": 2961,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150241Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a29e9465738aff81c98b2b4e7cb935098219b6732b9483a774a4eda6de783644",
+ "stdout_tail": "ent here and positive by exact Sylvester minors\nPASS 12x4_1/4_X_NOT_SELECTED_BY_INVARIANCE: shift-two covariance explains the shape but does not select X by invariance\nPASS 12x4_RESTRICTION_TRANSPORT_RESPONSE: exact half-trace gap from s_t=0 to 1/4 is 150346029799280479942166602650413136160/2455275247171512614379752553769527826469\nPASS 12x4_CONVERGENT_ONE_COPY_VACUUM_RESPONSE: Herm(Q)>0 licenses the ordinary Gaussian; det(Q)>0 changes with the dial\nPASS FOUNDATION_AUTHORITY_BOUNDARY: current foundation leaves source/observable and Born/readout selection open\nPASS SOURCE_INPUT_BINDING: inputs_bound=True; finite_supplier_bound=True\nPASS EXACT_AST_SURFACE: float_literals=0 on the primary runner AST\nPASS BOUNDED_NO_GO_SURFACE: N1-N8 and bounded theorem metadata are present; this is not an audit verdict\nper_element: formal differentiation fixes G and Wick permanents; ordinary Gaussian language is used only where Herm(Q)>0 is certified\nper_site: four supplied finite cells have non-Hermitian full selected kernels and one positive imposed rank-two restriction\nper_mode: the positive restriction and convergent one-copy vacuum change at two supplied dial values; the dial is not physically identified\nper_block: the algebraic Wick identities, finite raw-kernel boundary, positive route, and dated original107 convention comparison are preserved\nlattice_wide: no universal OS, physical event/source, probability, continuum, axiom, obligation, or TOE conclusion is claimed\nTOTAL: PASS=37 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T150246Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+PASS fixed-normalized-complex-Gaussian-split: alpha=3, beta=3/2, and C=9/2 give (C/pi) integral exp[-alpha|u-y|^2-beta|v+y|^2]=exp[-|u+v|^2] exactly
+PASS pairwise-site-bridge-and-edge-subdivision: a unit-pivot center exactly bridges two on-site linear forms, and a unit-pivot path subdivision restores an arbitrary or zero Hermitian scalar edge
+PASS arity-three-original-isolating-compiler: the eleven-term worst roster becomes thirteen arity<=3 factors with twelve degree-two mediators; its Schur complement and complete normalized determinant are exact
+PASS zero-weight-fixed-roster: a vanishing leaf keeps the identical mediator roster and normalization while recovering the exact lower-support residual
+PASS fixed-arm-and-split-roster: at m=1, c=1/2 and c=1/3 use the same three arm-sensitive rows, sixteen original coordinates, fixed edge/on-site columns, and an eleven-term maximum residual
+PASS executed-three-row-record-star-bridge: on the mass-one xgraded width-four fixture, S0/S1/S2 carry 4/3/2 coordinates; all three arm-sensitive rows, four arms, and both supplied splits reduce exactly with hidden determinant C, while every arm-varying precision entry is on-site or Record-to-neighbor
+PASS record-roster-and-degree-input-bounds: the exact S0/S1/S2 Record roster is 4/3/2 and the largest bulk incidence demand is eight; these are inputs to the explicit site/slot certificate, not a routing proof
+PASS determinant-arm-law-preserved: normalized mediator measures and standard spectator measures multiply every arm by one, preserving the determinant partition and exact W covariance
+PASS marked-projector-table-consistency: the constructed table is normalized and positive and has the determinant arm marginals; this consistency predicate does not compare every entry with an independently supplied table
+PASS heldout-width-topology-stability: the auxiliary constant-background width-four and width-eight topology probes have the same eleven-term, three-row, sixteen-coordinate, eight-port compiler bounds
+PASS literal-M2-carrier-and-cubic-frame: four complex coordinates encode bijectively in literal M2(C), and the 24 proper-cubic frames preserve the six directions; this does not prove covariance of the full site map
+PASS self-describing-tagged-M2-pushforward: one central finite code plus three Pauli-frame payloads decode without an external frame and the supplied tag action is cubic-covariant; 16 is the real Jacobian of the full four-complex-coordinate codec, while each fixed tagged support uses its three-complex-payload decoded-coordinate pushforward
+PASS finite-type-counts-do-not-close-routing: row-type and lane counts are finite bookkeeping only; without a periodic collision-free site map, seams, and equivariance they do not establish fixed density
+PASS compiler-mutation-gates: changing one mediator sign destroys the target cross term; deleting a zero-roster mediator changes only the unnormalized integral by pi/C, while either normalized roster still multiplies by one
+PASS selection-record-and-score-boundary: the complete extracted runtime closure and current Block 105 supplier are hash-bound; the note keeps base-measure/action/source selection and autonomous Record writing open and claims no obligation or score movement
+per_element: fixed Gaussian Schur identity, zero roster, signs, M2 encode/decode, and every compiled factor arity are exact
+per_site: the Record center plus all six neighbors, literal four-complex M2 capacity, and <=24 port slots are checked
+per_mode: full worst-roster Schur precision, hidden determinant, W covariance, determinant law, and marked-table normalization/positivity/arm marginals are checked
+per_block: four arms and both splits are checked on the mass-one xgraded width-four interface fixture; constant-background widths four/eight supply topology counts
+lattice_wide: NOT CLOSED; finite row-type counts are not a periodic fixed-density site map, and seams plus full cubic covariance remain open
+TOTAL: PASS=15 FAIL=0

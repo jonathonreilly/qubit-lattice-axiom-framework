@@ -1,0 +1,37 @@
+{
+ "task": "P:8573",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block56-the-st",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8573",
+ "pr": 8573,
+ "branch": "physics-loop/admissibility-induced-law-block56-the-strong-field-exactly-linear-in-root-rate-ledger-and-capacity-20260921",
+ "git_sha": "8d81fb41",
+ "started_utc": "20260921T150838Z",
+ "elapsed_s": 372.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_strong_field_exactly_bodies_at_rest_make_the_clock_law_linear_in_the_root_of_the_rate_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=17 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "10b7bddca3b1f931fbf9f3fa34714740e673776d7b4276d5c3a0689e42231449",
+ "stdout_tail": "PR #8573: ail56: the strong field, exactly \u2014 bodies at rest make the clock law linear in \u221a(rate); the ledger is a surface term, bounded by a capacity (source-link direction, block 4)\nbranch physics-loop/admissibility-induced-law-block56-the-strong-field-exactly-linear-in-root-rate-ledger-and-capacity-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_strong_field_exactly_bodies_at_rest_make_the_clock_law_linear_in_the_root_of_the_rate_2026_09_21.py: rc=0 PASS=17 FAIL=0\n   mutation body_energy_not_timed_by_its_clock: expected B observed B ok\n   mutation raising_an_energy_raises_the_rates: expected B observed B ok\n   mutation amplitude_energy_not_timed_by_its_clock: expected B observed B ok\n   mutation ledger_is_the_sum_of_energies_in_the_field: expected C observed C ok\n   mutation outside_sees_the_bare_energies: expected C observed C ok\n   mutation ledger_grows_without_bound: expected D observed D ok\n   mutation energy_in_the_field_is_monotone: expected D observed D ok\n   mutation capacity_bound_is_the_single_site_bound: expected D observed D ok\n   mutation pair_ledger_exceeds_the_members: expected E observed E ok\n   mutation every_weight_one_energy_is_bilinear: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260921T151451Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

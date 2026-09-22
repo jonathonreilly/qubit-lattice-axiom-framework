@@ -1,0 +1,11 @@
+PR #8606: physics-loop: admissibility induced-law block 73 - the two-step momentum is the only one
+branch physics-loop/admissibility-induced-law-block73-the-two-step-momentum-is-the-only-one-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_two_step_momentum_is_the_only_one_2026_09_21.py: rc=0 PASS=12 FAIL=0
+   mutation a_matrix_off_the_walks_direction_commutes: expected B observed B ok
+   mutation mixed_axes_momentum_of_reach_one_serves_all_species: expected C observed C ok
+   mutation reach_two_solution_space_is_a_point: expected D observed D ok
+   mutation covariance_leaves_a_second_momentum: expected D observed D ok
+   mutation walk_part_changes_the_lengths: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

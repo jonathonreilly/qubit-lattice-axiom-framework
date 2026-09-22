@@ -1,0 +1,3 @@
+PR #8592: ail62: angles are the tilt of the coin's frame — two disturbances at one direction-free speed; the price is a conserved stress (source-link direction, block 10)
+branch physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921 (base main)
+runners in the PR: 0

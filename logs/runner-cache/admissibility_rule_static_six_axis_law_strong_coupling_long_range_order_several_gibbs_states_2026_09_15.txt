@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py
+runner_sha256: be497aaea45fff171334fd47afefffd710b0f967dbd9899aec4156707cb8e886
+input_fingerprint_sha256: 6c2a42a70d542dcc256d75f87d34e3ae4136ad79226870dd7d7c3a49255c9156
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 29.60
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 180
+scope: spectrum, real reflection identities, all-direction counting and finite controls; conditional contour arithmetic only; unconditional phase result deferred
+mutation: none
+PASS: A1 the three declared inputs exist (this note, the axiom memo, block 03 on main)
+PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
+PASS: A3 block 03's claim id and its one-neighbor coefficient are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 T1: eigenvalues Z_1, p-q (x3), p+q-2r (x2); the 48 signed permutations preserve phi and act transitively on the six values
+PASS: B2 T2: E[F F∘θ] >= 0 for site reflections — 20 pseudo-random F on the ring of 4 at (3,1,2) and (5,2,4), 3 on the 4x2 torus at (3,1,2)
+PASS: B3 T3: finite probability comparisons — ring: P(two bonds bad)^2 = 0.315594 <= P(all bad) = 0.323614; 4x2 torus: P(two direction-1 bonds bad)^4 <= P(all direction-1 bad) = 0.103125
+PASS: C1 T4: at p = 432, m = 2 (eps = 6m/p = 1/36): P(all bonds bad) on the ring = 0.000000032 <= eps^4 = 0.000000595; on the 4x2 torus P(all direction-1 bad) = 0.000000000000 <= eps^8
+PASS: C2 T5: enclosing dual cycles of length 4, 6, 8: {4: 1, 6: 4, 8: 22} <= (n/2) 3^(n-1) = {4: 54, 6: 729, 8: 8748}
+PASS: C3 T5: sum_{n>=4} n y^n = y^4 (4 - 3y)/(1 - y)^2, equal to 5/8 at y = 1/2 (case (a) bound 5/24)
+PASS: C4 T5: the winding bound 18 L' 2^{-L'} at L' = 10 is 45/256, the total 5/24 + 45/256 = 295/768 < 1/2; y = 3 eps^{1/2} = 1/2 at eps = 1/36, algebraically p_0 = 216 m, with no phase conclusion
+PASS: C5 T5 arithmetic only: at m = 2 the parameter p_0 = 432 and eps = 6m/p_0 = 1/36 exactly
+PASS: C6 T5 illustration: on the 4x2 torus at p = 432 the records at distance 2 agree with probability 0.999999 > 1/2
+PASS: D1 T7: on the 2x2x2 torus at p = 432 the probability that every direction-1 bond disagrees is 0.000000000000000 <= (6m/p)^N = (1/36)^8
+PASS: D2 T7 illustration: on the 2x2x2 torus at p = 432 neighbouring records agree with probability 0.999999 > 1/2; each unit cube of a layer is canonical for one in-plane bond per in-plane direction
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
+per_element: executed — the spectrum symbolically; the 48 signed permutations; the series identity at y = 1/2; the enclosing-cycle counts for lengths 4, 6, 8
+per_site: executed — every configuration of the ring of 4 and the 4x2 torus in the reflection-positivity, chessboard and disseminated checks
+per_mode: executed — finite probability comparisons on the ring and the 4x2 torus; the all-direction ratios at p = 432
+per_block: executed — the 4x2 and 2x2x2 torus illustrations at p = 432 (agreement above 1/2)
+lattice_wide: checked and not executed — written identities and conditional implications only; uniform bad-bond and phase conclusions not established
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

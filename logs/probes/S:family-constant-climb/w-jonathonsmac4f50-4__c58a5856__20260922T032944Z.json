@@ -1,0 +1,32 @@
+{
+ "task": "S:family-constant-climb",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/climb_cstar.py 129 1800 5 5 8",
+ "seed": 129,
+ "minutes": 30.0,
+ "box": "5x5x8",
+ "git_sha": "c58a5856",
+ "started_utc": "20260922T032944Z",
+ "elapsed_s": 1806.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "7/8"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "hill-climb on the family's constant c*(config) (block 32); a HIT is any value above 1 (e.g. '5/4 = 1.250'). Vary seed, box up to 7x7x10, minutes 30-180.",
+ "stdout_sha256": "7af1c7c5f90c1963b1d662742470de36fff0e2f07a8ba60baaf00e3faf4cdd29",
+ "stdout_tail": "seed 129 5x5x8: c* 3/4 = 0.750: root=(3, 3, 4) minimal tree (E,|A|,|S|,F)=(6,8,1,0) ones=37 zeta=[(0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 0, 2), (1, 2, 0), (1, 3, 1), (2, 0, 0), (2, 2, 3), (2, 3, 4), (3, 0, 2), (3, 3, 6)]\nseed 129 5x5x8: c* 7/8 = 0.875: root=(4, 3, 4) minimal tree (E,|A|,|S|,F)=(7,8,1,0) ones=45 zeta=[(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 4, 3), (1, 0, 0), (1, 0, 2), (1, 2, 0), (1, 2, 1), (1, 3, 1), (2, 0, 0), (2, 0, 4), (2, 2, 3), (2, 2, 6), (2, 3, 4), (3, 0, 2), (3, 1, 5), (3, 3, 6), (4, 1, 5), (4, 3, 2)]\nseed 129: done restarts=14 best=7/8\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-4",
+  "at_utc": "20260922T035951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_local_observable_finite_region_pw_2026_09_07.py
+runner_sha256: aa5ccaf5589029cc47fa2b52ab5b53a023c50874cf450edb0daf6ea099a53043
+input_fingerprint_sha256: 385946572dc3292e7c40b911d898cbd9e72e2c33176c0b2118481c0845e6ae4c
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+TOTAL: PASS=29 FAIL=0
+per_element: PASS 4 actual cubic incidence and adjacent-tail controls
+per_site: PASS 16 radius0..3 ball, crossing-distance and face-count controls
+per_mode: PASS 5 balanced omitted Peter-Weyl threshold controls
+per_block: PASS 3 projection normalization and zero-coupling/time controls
+lattice_wide: PASS 1 resource control; all-volume propagation remains analytical
+DATA: {"TOTAL": 29, "rows": [{"crossing_faces": 4, "links": 1, "polynomial_link_bound": 3, "radius": 0, "retained_faces": 0}, {"crossing_faces": 28, "links": 13, "polynomial_link_bound": 81, "radius": 1, "retained_faces": 4}, {"crossing_faces": 76, "links": 63, "polynomial_link_bound": 375, "radius": 2, "retained_faces": 32}, {"crossing_faces": 148, "links": 173, "polynomial_link_bound": 1029, "radius": 3, "retained_faces": 108}]}
+RESOURCE: seconds=0.033661832974758 rss_MiB=25.21875 limits=180sec/180MiB
+SOURCE_SHA256: aa5ccaf5589029cc47fa2b52ab5b53a023c50874cf450edb0daf6ea099a53043
+
+----- stderr -----
+

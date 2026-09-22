@@ -1,0 +1,62 @@
+{
+  "reviewer_session": "/root/resume_8079_8083",
+  "checked_utc": "2026-09-22T19:46:51.972582+00:00",
+  "purpose": "Separate same-session closure disposition following explicit user request to finish every open PR by landing or rejecting/closing. This does not alter prior scientific review or deferred theorem status.",
+  "current_main": "59024639572d6d3a1091c727297b18c350d3f484",
+  "positive_content_landed": "59024639572d6d3a1091c727297b18c350d3f484",
+  "fresh_pull_requests": [
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/native-finite-moment-ward-20260910",
+      "headRefOid": "181e182a14d358c8bca434a1eac398b27237ec8f",
+      "number": 8079,
+      "state": "OPEN",
+      "title": "[physics-loop] Finite-moment Ward certificate and fixed-p boundary (conditional-support)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8079",
+      "landed_note_sha256": "91780ae38915ab394eb194a28e938fb55d48b594a1a30e9a2073d563e4f160d9",
+      "landed_note": "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/native-correlated-ward-20260910",
+      "headRefOid": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+      "number": 8081,
+      "state": "OPEN",
+      "title": "[physics-loop] Correlated native Ward bounds (conditional-support)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8081",
+      "landed_note_sha256": "84fbc098ba4e90de2212d1f37ebb7774e2291e7be5be0429d280b50f862f7bca",
+      "landed_note": "docs/NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md"
+    }
+  ],
+  "recommendation": "CLOSE_WITH_REASON; reject the remaining negative-certification submissions as insufficient under the exact-target N1 requirement. Positive content has already landed.",
+  "per_pr": {
+    "8079": "Close remaining constant-trial/all-q fixed-first-polynomial negative-certification submission: packet lacks five actual in-domain attacks against each declared negative target. Its constructive residual bounds, finite-moment machinery and omega5 supplier were accepted and landed.",
+    "8081": "Close remaining zero-dual exclusion and norm-only optimality negative-certification submission: packet lacks exact-target N1 coverage. Its valid norm remainder bound, signed-error identity and finite signed-dual certificates were accepted and landed."
+  },
+  "scientific_meaning": "Rejection concerns certification completeness of these submissions, not disproof of their narrow conditional mathematical arguments. The whole-unit five estimator families and changes outside a theorem domain cannot count as five failed attacks against that exact theorem. No physical alpha sign/no-go, no new axiom and no audit verdict follows.",
+  "preservation_requirement": "MUST preserve both original remote recovery branches/heads named above. Do not delete branches on closure. Exact original proofs/results and historical failures remain in landed archives and original Git objects. Future work may submit a new properly scoped certification packet.",
+  "closure_comment_basis": "Useful positive source landed at59024639572d6d3a1091c727297b18c350d3f484. Remaining negative-certification claims are rejected for unmet exact-target N1 evidence requirements; mathematical disproof is not claimed. Original branches and proof evidence remain preserved.",
+  "existing_evidence": [
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-final-source-review.json",
+      "sha256": "3ab15a97a788de259bf552c4e79480b49159b229c01561f7c49a00b8b094f749"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-unit-v2-final.json",
+      "sha256": "ebe80421190c5df78bffa10a9ab89d0964bf11f8bf718a4af4de9c84731842f4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-final-preflight.json",
+      "sha256": "d98fc010248d1523295d9d9267892e1bc338e838b9ac9f9c6b9e842fbe5c83b0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-final-handoff.json",
+      "sha256": "50a8fd4e1dc9aa86c1af844b1f351acffd012975fa4f740f72e5fc4ccc49c9ed"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-supplemental-evidence-identity.json",
+      "sha256": "701c762ef059c71e2b556303dfa4c6dfcc81ac59ffa985816546c5e1c7bd9058"
+    }
+  ],
+  "execution_boundary": "Fresh read-only PR/main checks only. No scientific checks rerun, source edits, commits or GitHub mutations; root owns actual closure."
+}

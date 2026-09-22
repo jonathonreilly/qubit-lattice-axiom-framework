@@ -1,0 +1,39 @@
+W1: alternating lengths (both hops), beta = 1; least |E| over the reduced zone (grid 24^3)
+  delta=0.125 a=0: least |E| over the zone = 0.2165 (sqrt3*delta = 0.2165)
+  delta=0.125 a=0.1: least |E| over the zone = 0.0009 (sqrt3*delta = 0.2165)
+  delta=0.125 a=0.25: least |E| over the zone = 0.0032 (sqrt3*delta = 0.2165)
+  delta=0.125 a=0.5: least |E| over the zone = 0.0010 (sqrt3*delta = 0.2165)
+  delta=0.25 a=0: least |E| over the zone = 0.4330 (sqrt3*delta = 0.4330)
+  delta=0.25 a=0.1: least |E| over the zone = 0.0383 (sqrt3*delta = 0.4330)
+  delta=0.25 a=0.25: least |E| over the zone = 0.0007 (sqrt3*delta = 0.4330)
+  delta=0.25 a=0.5: least |E| over the zone = 0.0005 (sqrt3*delta = 0.4330)
+  delta=0.5 a=0: least |E| over the zone = 0.8660 (sqrt3*delta = 0.8660)
+  delta=0.5 a=0.1: least |E| over the zone = 0.4737 (sqrt3*delta = 0.8660)
+  delta=0.5 a=0.25: least |E| over the zone = 0.0000 (sqrt3*delta = 0.8660)
+  delta=0.5 a=0.5: least |E| over the zone = 0.0002 (sqrt3*delta = 0.8660)
+W2: free sea energy per site on L^3 tori against the background strength g (a = 0): alternating lengths / chessboard scalar / axis stripes
+  L=8 g=0: lengths -1.19015  chessboard -1.19015  stripes -1.19015
+  L=8 g=0.05: lengths -1.19322  chessboard -1.19200  stripes -1.19471
+  L=8 g=0.1: lengths -1.19971  chessboard -1.19598  stripes -1.20561
+  L=8 g=0.2: lengths -1.22255  chessboard -1.21025  stripes -1.24562
+  L=8 g=0.4: lengths -1.30336  chessboard -1.26261  stripes -1.38857
+  L=8 g=0.7: lengths -1.49128  chessboard -1.39228  stripes -1.71385
+  L=8 g=1: lengths -1.73205  chessboard -1.56860  stripes -2.11633
+    L=8 lengths: second-order coefficient -2 dE/g^2 at g = 0.1: 1.9120; monotone decreasing to g = 1: True
+    L=8 chessboard: second-order coefficient -2 dE/g^2 at g = 0.1: 1.1667; monotone decreasing to g = 1: True
+    L=8 stripes: second-order coefficient -2 dE/g^2 at g = 0.1: 3.0925; monotone decreasing to g = 1: True
+  L=16 g=0: lengths -1.19359  chessboard -1.19359  stripes -1.19359
+  L=16 g=0.05: lengths -1.19563  chessboard -1.19481  stripes -1.19712
+  L=16 g=0.1: lengths -1.20135  chessboard -1.19826  stripes -1.20727
+  L=16 g=0.2: lengths -1.22328  chessboard -1.21171  stripes -1.24639
+  L=16 g=0.4: lengths -1.30349  chessboard -1.26321  stripes -1.38875
+  L=16 g=0.7: lengths -1.49128  chessboard -1.39245  stripes -1.71388
+  L=16 g=1: lengths -1.73205  chessboard -1.56865  stripes -2.11634
+    L=16 lengths: second-order coefficient -2 dE/g^2 at g = 0.1: 1.5513; monotone decreasing to g = 1: True
+    L=16 chessboard: second-order coefficient -2 dE/g^2 at g = 0.1: 0.9331; monotone decreasing to g = 1: True
+    L=16 stripes: second-order coefficient -2 dE/g^2 at g = 0.1: 2.7347; monotone decreasing to g = 1: True
+W3: projected walk (records excluded) on the 6^3 torus: zero modes against 2|even - odd| of the vacant set
+  chessboard: vacant 108, zero modes 216, bound 216
+  random half filling (seed 0): vacant 108, zero modes 16, bound 16
+  random half filling (seed 1): vacant 108, zero modes 12, bound 4
+  random half filling (seed 2): vacant 108, zero modes 20, bound 12

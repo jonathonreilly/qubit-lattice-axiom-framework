@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 82 — author checks (not a review PASS)
+Written lens pass by the supervisor. A panel lens's "every corner is fixed by all rotations" refuted by the first runner check and corrected to corner stabilisers; a control metric that was zero by degeneracy replaced by the least `|E|`; block 77's mass table and block 81 T4's scope re-read against exact identities; each panel-suggested identity re-derived in scratch before the build. Census 9/9 in family.

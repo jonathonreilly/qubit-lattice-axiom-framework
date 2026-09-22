@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_what_can_gap_the_walk_no_invariant_term_any_reach_stripes_alternating_lengths_rest_energy_exclusion_cages_2026_09_22.py
+runner_sha256: 07190e803cc4eaea44e28143d0220c2cd846c94c5240c17f2e6c4858278d1019
+input_fingerprint_sha256: f0d9e2479c90b96d11683e11275d7a025f9c60b121b4a7271c044a5be45b37b0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.10
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WHAT_CAN_GAP_THE_WALK_NO_INVARIANT_TERM_AT_ANY_REACH_CHESSBOARD_OR_AXIS_STRIPES_ON_SITES_ALTERNATING_LENGTHS_GIVE_ONE_REST_ENERGY_EXCLUSION_CAGES_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: the 24 proper rotations permute the eight corners in orbits of sizes 1, 1, 3, 3 (stabilisers of order 24, 24, 8, 8, ...: [24, 8, 8, 8, 8, 8, 8, 24]); at every corner the stabiliser's coin lifts have a commutant of dimension exactly 1 ([1, 1, 1, 1, 1, 1, 1, 1]): a covariant translation-invariant term of any reach is a multiple of the identity at each species point, so the two branches touch there
+PASS: B2 T1: the lifts carry sigma_a to sum_b r_ab sigma_b exactly (checked on six rotations, all three axes): the coin transforms as block 54's walk requires
+PASS: C1 T2: on the 2x2x2 torus the solutions of M(x + e_j) = -sigma_j M(x) sigma_j (all j) form a space of dimension exactly 4, spanned by the chessboard scalar eps and the three axis stripes (-1)^{x_j} sigma_j; the chessboard content eps sigma_z, the uniform content sigma_z and the two-coordinate flip (-1)^{x+y} sigma_z are not solutions
+PASS: C2 T2: in the 16-dimensional block of the eight species, eps and the stripes anticommute with the walk; the three stripes anticommute pairwise so their square is c_1^2 + c_2^2 + c_3^2 (one rest energy sqrt(sum c_j^2) for all eight species); eps and a stripe commute, so a mixed background squares to c_0^2 + |c|^2 + 2 c_0 (stripe) and its gap is | |c_0| - |c| |
+PASS: C3 T2 remark: under the six-axis static law on a full lattice a stripe (contents +-e_j alternating along j, equal across) weighs q p^2 per site against p^3 for one content and q^3 for the content chessboard: 9 against 27 and 1 at (3,1,2); 144 against 1728 at (12,1,2); 3 against 1 and 27 at (1,3,2): the stripe is never the heaviest pattern, so the static law does not produce the one content order that gaps
+PASS: D1 T3(a): with the hop amplitude t_j(x) = 1 + delta (-1)^{x_j} along every axis, H^2 = beta^2 sum_j (sin^2 k_j + delta^2 cos^2 k_j) exactly (16-dimensional block): at every one of the eight species points E^2 = 3 beta^2 delta^2, one rest energy sqrt(3) beta |delta| for all eight, and no zero anywhere for delta != 0
+PASS: D2 T3(a) with the axioms' scalar hop through the same lengths: at the species points the sixteen energies are +-sqrt(4a^2 + 3 beta^2 delta^2) (four each) and +-4a +- sqrt(4a^2 + 3 beta^2 delta^2) (two each): the alternating lengths keep every species away from zero energy at the corners; the least separation elsewhere is executed only
+PASS: D3 T3(b): the scalar hop with a staggered phase, M = i eps (2a sum_j cos k_j), is Hermitian, anticommutes with the walk and squares to 4a^2 (sum_j cos k_j)^2: (H + M)^2 = |s|^2 + 4a^2 (sum cos k_j)^2, no zero anywhere (the corners have sum cos = +-3, +-1), a gap that varies over the zone (6a at two corners, 2a at six)
+PASS: D4 T3(c): with the scalar hop A = 2a sum cos k and the chessboard, (A + H + m eps)^2 = (A + H)^2 + m^2 exactly (not m^2 + 36a^2): the branches are +-sqrt(m^2 + (A +- |s|)^2), their least separation is 2m on the shell A = -+|s| (at a = 1/2 the diagonal point k = (pi/3, pi/3, pi/3) lies on it), while at the corners the separation is 2 sqrt(m^2 + A(k_0)^2): block 77's corner values are not the rest energy, m is
+PASS: E1 T4: on the 4^3 torus with records on one sublattice, the walk restricted to the vacant sites is exactly zero (every neighbour of a vacant site is recorded): a chessboard under exclusion is a cage, not a mass; the 64 states of the vacant sublattice are all zero modes
+PASS: E2 T4: the projected walk only joins the two sublattices of the vacant set, so it is off-diagonal in that split and has at least 2 |even - odd| exact zero modes; on the 4^3 torus with the records of one or two layers removed from the chessboard: 1 layer(s) emptied: vacant 40 (even 8, odd 32), exact nullity 48, bound 48; 2 layer(s) emptied: vacant 48 (even 16, odd 32), exact nullity 32, bound 32
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the coin lift of every proper rotation and the commutant of all 24; the on-site recurrence solved site by site on the 2x2x2 torus
+per_site: executed - the projected walk's matrix elements between every pair of vacant sites of the 4^3 torus for the chessboard and for one and two emptied layers
+per_mode: executed - the 16-dimensional block of the eight species at every wave vector (symbolic) for the stripes, the alternating lengths and the scalar hop; the 4-dimensional block for the chessboard and the staggered phase; control: least branch separation and the sea's energy against delta on tori
+per_block: executed - nullity of the projected walk by exact elimination on 4^3 against the sublattice-imbalance bound
+lattice_wide: T1 holds for every covariant translation-invariant term of any finite reach by the representation argument; T2 for every even-sided torus by the recurrence; T3 and the chessboard identity for every wave vector by the symbolic identities; T4 for every vacant set by the bipartite argument; the backgrounds, the coupling clauses, the value of delta and the sea reading are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: what can gap the walk inside the qubit - no covariant translation-invariant term of any reach separates the branches at a species point (Schur); on sites only the chessboard scalar and the axis stripes anticommute with the walk (the stripes gap all eight species; block 81 T4 covered the uniform and chessboard contents only); alternating bond lengths give one rest energy sqrt(3) beta |delta| to all eight species; with the scalar hop the chessboard's least branch separation is 2m on a shell (block 77's corner values are not the rest energy); under exclusion a chessboard is a cage with 2|even - odd| zero modes; nothing adopted
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

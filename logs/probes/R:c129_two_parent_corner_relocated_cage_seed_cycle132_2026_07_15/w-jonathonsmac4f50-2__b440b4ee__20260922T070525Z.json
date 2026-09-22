@@ -1,0 +1,32 @@
+{
+ "task": "R:c129_two_parent_corner_relocated_cage_seed_cycle132_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "c129",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/c129_two_parent_corner_relocated_cage_seed_cycle132_2026_07_15.py",
+ "seed": 60725,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T070525Z",
+ "elapsed_s": 227.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8eef0fa69c1074f5629bf6f4acd0fdcb172ce1ed7339e464a6799e141a1a0e03",
+ "stdout_tail": "missing C129 parent prevents the anchor\nPASS C06 rejected R_C12 strand role has two exact unexpected targets :: ((5, 1, -4), (6, 1, -3))\nPASS C07 both rejected targets would write A_2_1 from unary R_C12\nPASS C08 selected R_C13 strand role has no inherited unary input row\n\n===============================================================================\nD - Continued rail renewal and proper-cubic covariance\n===============================================================================\nPASS D01 remaining 84 writes through eight slices stay singleton fronts :: []\nPASS D02 late control reaches 101 slices with 1,598 terminal records :: []\nPASS D03 all 220,944 proper-cubic raw-image checks preserve output :: []\nPASS D04 every rotated completed history exposes only rotated next rail :: []\n\n===============================================================================\nE - Exact bounded scope and N1-N8 discipline\n===============================================================================\nFAIL E01 note names exact bounded campaign construction\nFAIL E02 note preserves cage/launch-seed scope\nFAIL E03 note denies word, writer, and recurrence claims\nFAIL E04 note carries refreshed N1-N8 discipline\nFAIL E05 note names rejected R_C12 role without inheriting it\nFAIL E06 note makes no axiom addition\nPASS E07 Cycle 132 writes runner and review note only\n\nCAGE_CANONICAL=4 CAGE_RAW=96 UNION_RAW=9206 OUTPUTS=134\nFACTOR=6/6 FULL=6870416/53451460 REJECTED_UNEXPECTED=2\nPASS=27 FAIL=7\nRESULT=FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T070913Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,24 @@
+
+===============================================================================
+A. Frozen-source and independent Cycle-60 graph review
+===============================================================================
+PASS A01 Cycle-60 runner hash matches handoff
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/causal_phase_chain_cycle61_2026_07_14.py", line 415, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/causal_phase_chain_cycle61_2026_07_14.py", line 262, in main
+    check("A02 Cycle-60 note hash matches handoff", digest(CYCLE60_NOTE) == CYCLE60_NOTE_HASH)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/causal_phase_chain_cycle61_2026_07_14.py", line 67, in digest
+    return sha256(path.read_bytes()).hexdigest()
+                  ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/PHASE_PORT_PRESERVING_COMB_CYCLE60_SCRATCH_NOTE_2026-07-14.md'

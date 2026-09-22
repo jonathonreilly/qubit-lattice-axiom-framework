@@ -1,0 +1,32 @@
+{
+ "task": "R:c135_six_guard_h0_factorized_full_graph_cycle136_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "c135",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/c135_six_guard_h0_factorized_full_graph_cycle136_2026_07_15.py",
+ "seed": 61173,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T071253Z",
+ "elapsed_s": 311.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7fc0850e6d4f1735783d3686836fb6b79dbfa4073a756034d1d245f406604511",
+ "stdout_tail": "5, -1, -1)}\nPASS C03 all old nonparent condition fingerprints are exactly preserved :: base=181 full=181\nPASS C04 parent conditions are the exact H0-absent base conditions\nPASS C05 ignored-target condition and value are unchanged :: (((-3, 1, 2), ((-2, 1, 2),), ((-2, 1, 2),), ('R_B21',)),)\nPASS C06 all 40 wrong-condition fingerprints are exactly inherited :: summaries=24 details=40\nPASS C07 independent traversal gives exact three-parent joint layer :: joint=65792/389824\nPASS C08 exact factorized graph has 444,969,984 states :: 444969984\nPASS C09 exact factorized graph has 4,791,200,000 edges :: 4791200000\nPASS C10 every incomplete product terminal has a guard or H0 enabled :: guards=[] pre_h0={(5, -1, -2): frozenset({'H0'})}\nPASS C11 product has one all-142-output terminal and no final action :: {}\n\n===============================================================================\nD - Output fork and bounded scope\n===============================================================================\nPASS D01 swapped guarded H1 is unexpected-target-clean and factor-clean only\nPASS D02 replacement H1 adds one BIT expected-target wrong-value alias :: (((5, 0, -2), (('H0',),)),)\nFAIL D03 note names factorized rather than enumerated full graph\nFAIL D04 note preserves unresolved H0/H1 output fork\nFAIL D05 note denies byte/writer claims\nFAIL D06 note carries N1-N8\nFAIL D07 note makes no axiom addition\n\nFACTOR=144/496 FULL_FACTORIZED=444969984/4791200000 OUTPUTS=142\nPASS=22 FAIL=6\nRESULT=FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T071805Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

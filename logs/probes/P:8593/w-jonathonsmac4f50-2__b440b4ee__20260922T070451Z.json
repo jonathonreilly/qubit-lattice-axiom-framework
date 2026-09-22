@@ -1,0 +1,37 @@
+{
+ "task": "P:8593",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block63-what-t",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8593",
+ "pr": 8593,
+ "branch": "physics-loop/admissibility-induced-law-block63-what-the-walk-conserves-momentum-flows-on-bonds-20260921",
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T070451Z",
+ "elapsed_s": 31.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_what_the_walk_conserves_momentum_flows_on_bonds_relabellings_reach_second_neighbours_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=17 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "d56caf8a8a1380586d75c9e1465dea52ed807b8df11f75b6993568e09dcc8ba2",
+ "stdout_tail": "PR #8593: ail63: what the walk conserves \u2014 momentum flows on bonds; relabellings reach second neighbours; the nearest-neighbour frame misses by cos k\u0304 (source-link direction, block 11)\nbranch physics-loop/admissibility-induced-law-block63-what-the-walk-conserves-momentum-flows-on-bonds-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_what_the_walk_conserves_momentum_flows_on_bonds_relabellings_reach_second_neighbours_2026_09_21.py: rc=0 PASS=17 FAIL=0\n   mutation momentum_flows_through_sites: expected B observed B ok\n   mutation continuity_holds_only_at_rest: expected B observed B ok\n   mutation relabelling_is_nearest_neighbour: expected C observed C ok\n   mutation current_not_the_relabellings_response: expected C observed C ok\n   mutation site_response_is_the_bond_current: expected D observed D ok\n   mutation conserved_symbol_is_a_function_of_q: expected D observed D ok\n   mutation antisymmetric_part_has_no_torque: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T070522Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

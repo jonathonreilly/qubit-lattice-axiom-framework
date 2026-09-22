@@ -1,0 +1,13 @@
+PR #8593: ail63: what the walk conserves — momentum flows on bonds; relabellings reach second neighbours; the nearest-neighbour frame misses by cos k̄ (source-link direction, block 11)
+branch physics-loop/admissibility-induced-law-block63-what-the-walk-conserves-momentum-flows-on-bonds-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_what_the_walk_conserves_momentum_flows_on_bonds_relabellings_reach_second_neighbours_2026_09_21.py: rc=0 PASS=17 FAIL=0
+   mutation momentum_flows_through_sites: expected B observed B ok
+   mutation continuity_holds_only_at_rest: expected B observed B ok
+   mutation relabelling_is_nearest_neighbour: expected C observed C ok
+   mutation current_not_the_relabellings_response: expected C observed C ok
+   mutation site_response_is_the_bond_current: expected D observed D ok
+   mutation conserved_symbol_is_a_function_of_q: expected D observed D ok
+   mutation antisymmetric_part_has_no_torque: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,46 @@
+CYCLE 316: CARRIED SOURCE RECURRENT TAGGED BLOCK
+authority=none; audit=unset
+FAIL the Cycle-316 note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/CARRIED_SOURCE_RECURRENT_TAGGED_BLOCK_CYCLE316_NOTE_2026-07-18.md
+
+RECURRENT EXTENDED ENCODING / INTERTWINER
+PASS the tagged recurrent code obeys E_recurrent G_carried-source = G_physical,recurrent E_recurrent through held L=6 :: [{'L': 3, 'held_out': False, 'logical_norm': 1.0, 'encoded_norm': 1.0000000000000016, 'encoded_output_norm': 1.000000000000002, 'matter_encoding_gram_residual': 4.440892098500626e-16, 'EG_residual': 1.0023360545702141e-15, 'physical_terms_in': 756, 'physical_terms_out': 1080, 'continuity_report': {'norm_residual': 2.220446049250313e-16, 'vertex_Q_residual': 5.551115123125783e-17, 'source_transfer': 0.005817350953434192, 'matter_current_residual': 1.1102230246251565e-16, 'Q_current_residual': 1.1102230246251565e-16}}, {'L': 4, 'held_out': False, 'logical_norm': 1.0000000000000004, 'encoded_norm': 0.9999999999999999, 'encoded_output_norm': 0.9999999999999994, 'matter_encoding_gram_residual': 4.440892098500626e-16, 'EG_residual': 8.205934305469504e-16, 'physical_terms_in': 756, 'physical_terms_out': 1080, 'continuity_report': {'norm_residual': 0.0, 'vertex_Q_residual': 3.469446951953614e-17, 'source_transfer': 0.001757009378636605, 'matter_current_residual': 2.220446049250313e-16, 'Q_current_residual': 0.0}}, {'L': 6, 'held_out': True, 'logical_norm': 1.0, 'encoded_norm': 1.0000000000000013, 'encoded_output_norm': 1.0000000000000022, 'matter_encoding_gram_residual': 4.440892098500626e-16, 'EG_residual': 9.481759001015874e-16, 'physical_terms_in': 756, 'physical_terms_out': 1080, 'continuity_report': {'norm_residual': 1.1102230246251565e-15, 'vertex_Q_residual': 1.0061396160665481e-16, 'source_transfer': -0.007200005364356073, 'matter_current_residual': 0.0, 'Q_current_residual': 0.0}}]
+
+OVERLAPPING TRANSLATED BLOCKS / PORT CATCH-UP
+PASS two adjacent translated coefficient patches overlap literally while their tagged one-carrier block actions commute on the lawful code :: {'left_pair_rows': 36, 'right_pair_rows': 36, 'overlapping_pair_rows': 14, 'tagged_cross_column_Gram': 0.0, 'tagged_code_commutator': 0.0, 'overlap_code_leakage': 3.215574762320553e-16}
+PASS the same bounded reverse/edge stream transports the relational port and internal-source M2 with the encoded carrier :: {'carried_source_stream_residual': 8.728676222655933e-16, 'transported_source_cells': {9}, 'transported_ports': {54}, 'source_vertex_product_applied_at_every_cell': True, 'host_carrier_cell_queries': 0}
+PASS deleting port/source catch-up gives unit code leakage on a translated excited-carrier fixture :: {'stale_tag_overlap_with_lawful_target': 0.0, 'matter_column_source_target_overlap': 0.0, 'deleted_catchup_leakage': 1.0}
+
+EMISSION / PHYSICAL TRANSPORT / ABSORPTION
+PASS the same recurrent physical code emits, transports to six neighbours, and contains the conjugate absorption channel :: {'volume_rows': [{'L': 3, 'held_out': False, 'emitted_field_weight': 0.12589921612871396, 'predicted_sin2': np.float64(0.12589921612871374), 'maximum_neighbour_error': np.float64(3.469446951953614e-17), 'physical_transport_intertwiner': 2.725160654678146e-16, 'Q_residual': 1.3322676295501878e-15}, {'L': 4, 'held_out': False, 'emitted_field_weight': 0.12589921612871396, 'predicted_sin2': np.float64(0.12589921612871374), 'maximum_neighbour_error': np.float64(3.469446951953614e-17), 'physical_transport_intertwiner': 2.725160654678146e-16, 'Q_residual': 1.3322676295501878e-15}, {'L': 6, 'held_out': True, 'emitted_field_weight': 0.12589921612871396, 'predicted_sin2': np.float64(0.12589921612871374), 'maximum_neighbour_error': np.float64(3.469446951953614e-17), 'physical_transport_intertwiner': 2.725160654678146e-16, 'Q_residual': 1.3322676295501878e-15}], 'absorbed_source_weight': 0.12589921612871388, 'remaining_field_weight': 0.8741007838712869, 'emission_source_occupation': 0.8741007838712866, 'emission_mediator_occupation': 0.1258992161287138, 'local_emission_Q_balance': 4.440892098500626e-16}
+
+RECOIL / EXCHANGE-TRANSFER CANDIDATE
+PASS the dimensionless internal-source plus mediator charge is exact, while the naive direction-sum recoil candidate fails as an operator law :: {'Q_commutator': 0.0, 'matter_direction_commutators': [0.0, 0.0, 0.0], 'matter_plus_field_direction_commutators': [0.7214786377822061, 0.7214786377822061, 0.7214786377822061], 'scalar_emission_field_direction_expectations': [0.0, 0.0, 2.8358099439668306e-20], 'interpretation': 'exact exchange transfer, not physical work; recoil candidate fails'}
+
+COVARIANCE / TRANSLATIONS / SUPPORT
+PASS the full carried-source schedule is covariant under all 24 proper-cubic frames and all L=3 translations :: {'maximum_frame_residual': 2.3515102929620556e-16, 'maximum_translation_residual': 0.0}
+PASS the tagged recurrent factors retain constant overhead and bounded patch support through held L=6 :: [{'L': 3, 'held_out': False, 'max_pair_rows_per_block': 36, 'base_Cycle312_M2_patch_envelope': 216, 'added_port_source_field_M2_per_cell': 13, 'combined_two_cell_patch_envelope_M2': 242, 'installed_M2_per_cell': 34}, {'L': 4, 'held_out': False, 'max_pair_rows_per_block': 36, 'base_Cycle312_M2_patch_envelope': 216, 'added_port_source_field_M2_per_cell': 13, 'combined_two_cell_patch_envelope_M2': 242, 'installed_M2_per_cell': 34}, {'L': 6, 'held_out': True, 'max_pair_rows_per_block': 36, 'base_Cycle312_M2_patch_envelope': 216, 'added_port_source_field_M2_per_cell': 13, 'combined_two_cell_patch_envelope_M2': 242, 'installed_M2_per_cell': 34}]
+
+MASS / DELETION / LAWFUL DOMAIN
+PASS both carried internal labels preserve the Cycle-219 one-particle mass fixture through held L=6 :: [{'L': 3, 'mass': 0.453405654174885}, {'L': 4, 'mass': 0.4534056541748858}, {'L': 6, 'mass': 0.4534056541748896}]
+PASS coupling/conjugate deletions and malformed multi-carrier, Q, tag, and size domains are detected :: {'zero_coupling_vertex_residual': 0.0, 'unilateral_source_gate_unitarity_residual': 1.297185990748149, 'lawful_domain_rejections': 4}
+PASS the supplied/derived/open inventory is explicit :: {'inherited matter code': 'Cycle-307/312 edge-whitened one-carrier E_global and bounded coin/reverse/edge block grammar', 'inherited source law': 'Cycle-295 excited/ground conjugate source vertex, beta=-0.3, kappa=0.8', 'inherited routing idea': 'Cycle-299 disjoint six-port catch-up; Cycle-316 uses coherent joint port/source block lifts', 'supplied auxiliaries': 'six relational port M2, one internal-source M2, and six mediator M2 per cell', 'supplied sectors': 'one encoded carrier and Q=N_source+N_field=1', 'supplied schedule': 'matter/field coins; source vertex; reverse/edge matter stream with tag catch-up; field stream', 'supplied extensions': 'identity completion outside each bounded encoded block and hard-core field block', 'derived': 'recurrent factor intertwiner, overlapping tagged-block commutation, continuity, response, covariance, held sizes', 'failed candidate': 'naive matter-plus-field direction operator as a recoil/stress coordinate', 'open': 'simultaneous carriers, recurrent contact, two matter sources, reciprocity, physical energy/stress, metric, clock', 'excluded words': 'energy, gravity, time, rate, Record, and full-Fock are not labels for the retained theorem'}
+
+EXECUTABLE NO-GO DISCIPLINE
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py", line 981, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py", line 969, in main
+    methodology_controls()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py", line 138, in methodology_controls
+    note = NOTE.read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/CARRIED_SOURCE_RECURRENT_TAGGED_BLOCK_CYCLE316_NOTE_2026-07-18.md'

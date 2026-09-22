@@ -1,0 +1,32 @@
+{
+ "task": "R:carried_internal_species_source_field_ledger_repair_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "carried",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/carried_internal_species_source_field_ledger_repair_2026_07_17.py",
+ "seed": 61525,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T071845Z",
+ "elapsed_s": 13.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a18d3e28b23c91f1d2153f5cdb02a359067816ff208a26c3ffef029a58ffcf25",
+ "stdout_tail": "stream sector and fails outside it with exact norm two :: 2.0\nPASS at tested L=3,4,5,6 the unchanged Cycle-269 code has exact 6 L^3 logical-exponent deficits for literal two-species matter :: [(3, 405, 164, 326, 162), (4, 960, 386, 770, 384), (5, 1875, 752, 1502, 750), (6, 3240, 1298, 2594, 1296)]\nPASS four ticks obey exact norm and declared carried-code Q continuity ledgers :: {'norm_residual': 4.884981308350689e-15, 'coin_q_residual': 1.1102230246251565e-15, 'vertex_q_residual': 1.3877787807814457e-16, 'matter_edge_residual': 1.1102230246251565e-16, 'q_edge_residual': 1.1102230246251565e-16, 'matter_current_sum_residual': 2.220446049250313e-16, 'q_current_sum_residual': 0.0}\nPASS matter and field remain inside their four-edge causal cones :: {'max_body_l1': 4, 'max_field_l1': 4}\nPASS the four-tick carried-source update is exactly inverted :: 2.750844983854659e-15\nPASS the local vertex emits by consuming excitation and absorbs by restoring it :: {'emitted': 0.1258992161287138, 'absorbed': 0.12589921612871388}\nPASS the full sparse schedule is covariant under all 24 proper-cubic frames :: 2.7575098023275394e-15\nPASS separated one-matter packets compose linearly without a host-side controller :: 0.0\nPASS excited and ground source states use the same one-edge matter stream :: {'excited_body': ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)), 'ground_body': ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))}\nSUMMARY {'pass': 18, 'fail': 1}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T071859Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

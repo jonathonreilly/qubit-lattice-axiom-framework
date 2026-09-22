@@ -1,0 +1,32 @@
+{
+ "task": "R:carried_relative_extended_green_branch_hunt_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "carried",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/carried_relative_extended_green_branch_hunt_2026_07_17.py",
+ "seed": 61539,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T071859Z",
+ "elapsed_s": 29.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "293b23766aa97b6fa53cfb317648c1035dd58ed560c848d84e7e711a60530093",
+ "stdout_tail": "ixed_parameters': {'beta': -0.3, 'mediator_coupling': 0.8, 'angle': 0.3627245233399082}, 'search_sizes': {'training': (3, 4), 'held': (5, 6)}, 'momentum_indices': {'K0_all_sizes': (0, 0, 0), 'axis_all_sizes': (1, 0, 0), 'face_L4_L5': (1, 1, 0), 'body_L4_L5': (1, 1, 1)}, 'target_fractions': {'K0': (0.08, 0.2, 0.32, 0.44, 0.56, 0.68, 0.8), 'axis': (0.08, 0.18, 0.28, 0.38, 0.48, 0.58, 0.68, 0.78, 0.88), 'face_body': (0.12, 0.28, 0.44, 0.6, 0.76, 0.88)}, 'eigenpairs_per_window': 8, 'projection_orbits': ('same', 'opposite', 'perpendicular'), 'orbit_profile_normalization': 'sum of orbit amplitudes divided by sqrt(orbit cardinality)', 'adaptive_rule': 'least-squares projection of the comparator into the three-orbit scalar span', 'adaptive_projection_shape_freedom': 'one per-eigenpair normalized complex three-vector; at most CP^2 = four real shape degrees', 'per_eigenpair_comparator_shift': 'mu=6(1-cos(eigenphase)); derived from each searched eigenpair', 'extension_gate': 0.6, 'green_overlap_minimum': 0.5, 'projection_weight_minimum': 1e-06, 'pole_margin_fraction': 0.02, 'simple_eigenvalue_gap': 1e-07, 'comparator': '3 (Delta_L - mu I)^-1 (delta_0 - 1/L^3), shape only', 'enumeration_counts': {'sizes': 4, 'momentum_sectors': 12, 'windows': 88, 'raw_eigenpairs': 704, 'negative_phase_eigenpairs': 692, 'projection_accepted': 539, 'unique_eigenvalues': 168, 'simple_extended_candidates_with_window_duplicates': 28, 'fixed_scalar_projections_per_eigenpair': 3}}\n\nSUMMARY: 10 passed, 1 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T071928Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

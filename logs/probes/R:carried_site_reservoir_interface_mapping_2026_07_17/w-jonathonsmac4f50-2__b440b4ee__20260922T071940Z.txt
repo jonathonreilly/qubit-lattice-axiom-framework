@@ -1,0 +1,21 @@
+FAIL the interface note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/CARRIED_SITE_RESERVOIR_INTERFACE_MAPPING_NOTE_2026-07-17.md
+
+LOCAL SEVEN-STATE / 42-STATE INTERFACE
+PASS the local phase-gauged map is an exact isometry and vertex intertwiner :: {'isometry_residual': 0.0, 'vertex_intertwiner_residual': 0.0, 'generator_sign_residual': 0.0}
+PASS the same local map exactly intertwines the matter and field coins :: 0.0
+PASS the local interface is covariant under all 24 proper-cubic frames :: 0.0
+PASS one direction block maps seven physical reservoir/field basis states into seven distinct states of the direct 18-M2 code :: {'input_reservoir_field_M2': 7, 'output_direct_code_M2': 18, 'fixed_direction_block_dimension': 7, 'all_direction_dimension': 42}
+
+FIXED / CO-MOVING / STAGGERED STREAM INTERFACE
+PASS the fixed-reservoir stream has the exact tagged-position mismatch and leaves the local image :: {'reservoir_branch_weight': np.float64(0.8741007838712862), 'image_leakage_norm': 0.9349335719029922, 'tagged_stream_residual': 1.322195737303133, 'expected_residual': 1.322195737303132}
+PASS the co-moving reservoir repair exactly intertwines one complete coin-vertex-stream step :: {'leakage': 0.0, 'full_step_residual': 0.0}
+PASS the staggered matter-stream then reservoir-catch-up repair has intermediate leakage and exact macrostep closure :: {'intermediate_leakage': 0.9349335719029922, 'final_leakage': 0.0, 'staggered_vs_co_moving': 0.0, 'staggered_inverse_residual': 1.02811195848043e-15}
+PASS the catch-up is a norm-preserving involution on an adversarial off-image tagged state :: {'norm_residual': 0.0, 'involution_residual': 0.0}
+PASS the co-moving interface remains exact for four ticks and is reversible :: {'maximum_four_tick_intertwiner_residual': 0.0, 'inverse_residual': 2.7508449838546606e-15}
+
+SPARSE COVARIANCE / DELETION / SCOPE
+PASS the co-moving and staggered repaired macrosteps are covariant under all 24 proper-cubic frames :: {'co_moving_maximum': 2.092290251208289e-16, 'staggered_maximum': 2.092290251208289e-16}
+PASS coupling deletion preserves the co-moving interface while maximizing the fixed-reservoir stream mismatch :: {'co_moving_deletion_residual': 0.0, 'fixed_deletion_residual': 1.4142135623730963}
+PASS the interface preserves the one-particle mass fixture; the separate contact fixture is not applied :: {'analytic_mass': 0.4534056541748852, 'dispersion_mass': 0.4534056690336209, 'executed_matter_number': 1, 'contact_applied': False}
+DIAGNOSTIC {'beta': -0.3, 'angle': 0.3627245233399082, 'local_interface': 'direction x seven-state Q=1 block', 'fixed_stream': 'reservoir tag remains at departure cell', 'co_moving_repair': 'reservoir tag follows matter edge', 'staggered_repair': 'matter stream then reservoir catch-up', 'physical_boundary': 'logical matter direction; no Cycle269 state encoder'}
+TOTAL PASS=12 FAIL=1

@@ -1,0 +1,31 @@
+{
+ "task": "R:causal_completion_cable_audit_cycle69_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "causal",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/causal_completion_cable_audit_cycle69_2026_07_14.py",
+ "seed": 61594,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T071954Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "71c7ef2eee37a8495d7b8bc4be8111e70c34790bf7aef408d359283cada40aab",
+ "stdout_tail": "adict mandatory ancestry :: 47\nPASS D05 independent generous forward closure rejects all 47 :: 47\nPASS E01 detector is exactly 6 F / 3 FP / 3 I1 / 3 I2 / 1 DONE\nPASS E02 detector has 9 canonical rows and 31 compiled conditions :: 9/31\nPASS E03 detector has no static wrong/off-footprint condition :: []\nPASS E04 exact detector graph is 344 states / 1,030 edges :: (344, 1030)\nPASS E05 exact detector graph has one complete terminal and no conflict :: (1, 1, 0)\nPASS F01 C_Q and all seven phase/endpoint sites are singleton prefix classes :: (('C_Q', (0, -1, 0), ((0, -1, 0),)), ('P0', (0, -2, 0), ((0, -2, 0),)), ('P1', (1, -2, 0), ((1, -2, 0),)), ('P2', (1, -1, 0), ((1, -1, 0),)), ('P3', (2, -1, 0), ((2, -1, 0),)), ('X_B', (2, 0, 0), ((2, 0, 0),)), ('Z_A', (1, 0, 0), ((1, 0, 0),)), ('Z_C', (3, 0, 0), ((3, 0, 0),)))\nPASS F02 endpoint records are nonadjacent commuting peers\nPASS F03 all four phase relay sites are genuinely fresh before P0\nPASS G01 an exact declared schedule writes all 91 records :: 91\nPASS G02 no apparent bad condition is enabled on that schedule :: 0\n\nCONDITIONS=355 GOOD=308 APPARENT_BAD=47 CLASSES=34\nANCESTOR_CERTIFICATE_ROLE_PAIRS={('L1', 'DONE'): 6, ('L1', 'I2'): 12, ('L10', 'L8'): 18, ('L10', 'L9'): 18, ('L5', 'FP'): 6, ('L6', 'L4'): 6, ('L6', 'L5'): 6, ('L7', 'FP'): 6, ('L8', 'F'): 6, ('L8', 'L6'): 6, ('L8', 'L7'): 6, ('L9', 'L7'): 16, ('L9', 'L8'): 5, ('P1', 'L7'): 2, ('P1', 'L8'): 1, ('P3', 'L7'): 2, ('P3', 'L8'): 1, ('P3', 'P1'): 1}\nSUMMARY: 27 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T071955Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

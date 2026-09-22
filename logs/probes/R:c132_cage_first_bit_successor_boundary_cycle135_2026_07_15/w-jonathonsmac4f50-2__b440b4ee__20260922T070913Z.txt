@@ -1,0 +1,47 @@
+
+===============================================================================
+A - Exact first physical 1 bit
+===============================================================================
+FAIL A01 Cycle 135 note and Cycle 132 predecessor note exist
+PASS A02 rebuilt Cycle-132 cage is four canonical / 96 raw rows
+PASS A03 first bit has exact four-parent cage-plus-fixed local :: (((-1, 0, 0), 'R_B10'), ((0, 0, -1), 'L6'), ((0, 0, 1), 'H1'), ((0, 1, 0), 'R_C23'))
+PASS A04 H1 row is 24 raw images with one exact terminal target :: ((5, 0, -2),)
+PASS A05 new row is disjoint and complete union has 9,230 rows
+PASS A06 full compiler has 136 targets and zero unexpected
+PASS A07 isolated bit factor is two states / one edge / one terminal
+PASS A08 every full history reaches one complete 135-write terminal :: states=6936208 edges=53907076
+
+===============================================================================
+B - Parent deletion and wrong-bit controls
+===============================================================================
+PASS B01 deleting any one of four parents disables H1 :: []
+PASS B02 swapped H0 row looks clean only in terminal factor
+PASS B03 swapped-H0 one-output corpus exposes one extra named target :: ((5, -1, -2),)
+PASS B04 extra target carries an inherited H1 output
+
+===============================================================================
+C - Exact nearest-successor boundary
+===============================================================================
+PASS C01 direct H0 successor has exactly two terminal images :: ((5, -1, -2), (5, 1, 1))
+PASS C02 two-image corpus exposes two additional full-history targets :: ((5, 0, 1), (5, 1, -1))
+PASS C03 terminal-only direct factor is misleadingly clean
+PASS C04 unary alternate successor has eleven terminal images :: ((-1, 5, 1), (2, 7, 2), (3, 7, 1), (3, 7, 2), (5, -1, 1), (6, -1, 0), (6, 0, -2), (6, 0, -1), (6, 2, -1), (6, 2, 1), (6, 3, -2))
+PASS C05 tested guard row has six explicit physical images :: ((1, -5, -3), (1, -2, -6), (2, -5, -2), (2, -1, -6), (5, -2, -2), (5, -1, -3))
+PASS C06 six-record guard makes intended H0 terminal target unique :: ((5, -1, -2),)
+PASS C07 guarded candidate compiler and factor are clean but bounded :: factor=144/496
+
+===============================================================================
+D - Renewal, covariance, and exact scope
+===============================================================================
+PASS D01 eight rail slices remain singleton fronts after first bit :: []
+PASS D02 all 221,520 proper-cubic raw images preserve output
+FAIL D03 note names c132_cage_first_bit_successor_boundary
+FAIL D04 note carries refreshed N1-N8 discipline
+FAIL D05 note denies byte/writer/completion claims
+FAIL D06 note makes no axiom addition
+PASS D07 Cycle 135 writes runner and review note only
+
+BIT_RAW=24 UNION_RAW=9230 FULL=6936208/53907076
+DIRECT_IMAGES=2 UNARY_IMAGES=11 GUARD_IMAGES=6 GUARD_FACTOR=144/496
+PASS=21 FAIL=5
+RESULT=FAIL

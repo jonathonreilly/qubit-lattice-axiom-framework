@@ -1,0 +1,31 @@
+PASS A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 independent requirement register covers every role
+PASS A04 declared role order is strict except the nonadjacent endpoint peers
+PASS B01 independent predicates agree on every intended local subset
+PASS B02 exactly 308 intended parent-valid subsets exist :: 308
+PASS B03 all 308 intended subsets have their exact declared row :: 308
+PASS C01 independent compiler reproduces Cycle-67 conditions
+PASS C02 condition census is 355 = 308 intended + 47 apparent bad :: 355/308/47
+PASS C03 exact 34 apparent bad target/output classes reproduced :: 34
+PASS C04 class split is 15 off-footprint + 19 wrong-role
+PASS C05 every same-target/same-output condition has that target's intended parents
+PASS D01 every intended site has a lower-rank causal parent alternative
+PASS D02 this geometry has one minimal parent set at every site
+PASS D03 DONE has all other 15 detector records as mandatory ancestors :: 15
+PASS D04 all 47 apparent bad conditions contradict mandatory ancestry :: 47
+PASS D05 independent generous forward closure rejects all 47 :: 47
+PASS E01 detector is exactly 6 F / 3 FP / 3 I1 / 3 I2 / 1 DONE
+PASS E02 detector has 9 canonical rows and 31 compiled conditions :: 9/31
+PASS E03 detector has no static wrong/off-footprint condition :: []
+PASS E04 exact detector graph is 344 states / 1,030 edges :: (344, 1030)
+PASS E05 exact detector graph has one complete terminal and no conflict :: (1, 1, 0)
+PASS F01 C_Q and all seven phase/endpoint sites are singleton prefix classes :: (('C_Q', (0, -1, 0), ((0, -1, 0),)), ('P0', (0, -2, 0), ((0, -2, 0),)), ('P1', (1, -2, 0), ((1, -2, 0),)), ('P2', (1, -1, 0), ((1, -1, 0),)), ('P3', (2, -1, 0), ((2, -1, 0),)), ('X_B', (2, 0, 0), ((2, 0, 0),)), ('Z_A', (1, 0, 0), ((1, 0, 0),)), ('Z_C', (3, 0, 0), ((3, 0, 0),)))
+PASS F02 endpoint records are nonadjacent commuting peers
+PASS F03 all four phase relay sites are genuinely fresh before P0
+PASS G01 an exact declared schedule writes all 91 records :: 91
+PASS G02 no apparent bad condition is enabled on that schedule :: 0
+
+CONDITIONS=355 GOOD=308 APPARENT_BAD=47 CLASSES=34
+ANCESTOR_CERTIFICATE_ROLE_PAIRS={('L1', 'DONE'): 6, ('L1', 'I2'): 12, ('L10', 'L8'): 18, ('L10', 'L9'): 18, ('L5', 'FP'): 6, ('L6', 'L4'): 6, ('L6', 'L5'): 6, ('L7', 'FP'): 6, ('L8', 'F'): 6, ('L8', 'L6'): 6, ('L8', 'L7'): 6, ('L9', 'L7'): 16, ('L9', 'L8'): 5, ('P1', 'L7'): 2, ('P1', 'L8'): 1, ('P3', 'L7'): 2, ('P3', 'L8'): 1, ('P3', 'P1'): 1}
+SUMMARY: 27 PASS / 0 FAIL

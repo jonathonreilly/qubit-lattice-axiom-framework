@@ -1,0 +1,35 @@
+{
+ "task": "R:causal_propagating_field_source_packet_manifest_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "causal",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/causal_propagating_field_source_packet_manifest_2026_06_05.py",
+ "seed": 61596,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T071956Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "66e23e6aaf93374fc0e2c9c1d46dbeb519586e5f57e5f5d3413733ee37974b96",
+ "stdout_tail": "e_v6.py has 11640 bytes\n[PASS] source_marker:helper_source:def build_structured_growth: def build_structured_growth present\n[PASS] source_marker:helper_source:def propagate: def propagate present\n[PASS] source_marker:helper_source:def centroid_y: def centroid_y present\n[PASS] source_marker:helper_source:class Family: class Family present\n[PASS] cache_runner_matches:packet_cache: scripts/causal_propagating_field.py == scripts/causal_propagating_field.py\n[PASS] cache_sha_fresh:packet_cache: 1b776f25ed7192464cb1e60f80ec4865d48565ff0b4f85b50aa489bcea64252b == 1b776f25ed7192464cb1e60f80ec4865d48565ff0b4f85b50aa489bcea64252b\n[PASS] cache_exit_ok:packet_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:packet_cache: ASSERTIONS: PASS\n[PASS] cache_runner_matches:helper_cache: scripts/evolving_network_prototype_v6.py == scripts/evolving_network_prototype_v6.py\n[PASS] cache_sha_fresh:helper_cache: 5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f == 5394010a8162963ce6c88171582c53ccb226a2c524439e6287eae9858bf45c7f\n[PASS] cache_exit_ok:helper_cache: exit_code=0 status=ok\n[PASS] cache_snippet_present:helper_cache: EVOLVING NETWORK PROTOTYPE V6\n========================================================================================\nSUMMARY: CAUSAL PROPAGATING FIELD SOURCE PACKET PASS=30 FAIL=0\n========================================================================================\nOutput written: outputs/causal_propagating_field_source_packet_manifest_2026_06_05.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T071956Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

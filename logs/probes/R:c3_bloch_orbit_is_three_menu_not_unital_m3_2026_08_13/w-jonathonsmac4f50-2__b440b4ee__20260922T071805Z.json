@@ -1,0 +1,35 @@
+{
+ "task": "R:c3_bloch_orbit_is_three_menu_not_unital_m3_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "c3",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/c3_bloch_orbit_is_three_menu_not_unital_m3_2026_08_13.py",
+ "seed": 61485,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T071805Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "368a643f5bffbc80d61586bd20344c7f881421fddfd547b5bf13e92719835210",
+ "stdout_tail": "m_k (2/3) Pk = I_2\nPASS: thm3-scaled-effects-not-projections each (2/3) Pk is non-idempotent, so the normalization is not a PVM\nPASS: thm4-explicit-basis-rank-4 I, P0, P1, P0P1 have Q(\u03c9)-rank 4\nPASS: thm4-generated-dim-4 Q(\u03c9)-dimension of generated algebra = 4\nPASS: mutation-dim-eq-9-fails predicate dim generated == 9 fails\nPASS: thm5-three-not-divides-two 3 does not divide 2\nPASS: thm5-injective-dimension-obstruction an injective complex-linear map M_3 to M_2 would require 9 <= 4\nPASS: mutation-unital-m3-to-m2-fails predicate unital M_3 \u2192 M_2 exists fails\nPASS: thm6-record-and-refusals note makes the Record reading conditional and refuses unsupported identifications\nPASS: machine-status-contract note carries the bounded-support status and no hypothetical axiom adoption\nPASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple\nPASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible\nper_element: checked exactly \u2014 each displayed Pk is a distinct rank-one projection in M_2(C)\nper_site: checked exactly \u2014 the unweighted sum is (3/2)I and the generated algebra has field-rank four\nper_mode: checked exactly \u2014 the single displayed Ad_R orbit closes after three steps; no other orbit is classified\nper_block: checked exactly \u2014 scaled trine effects form a POVM but not a PVM or multiplicative M_3 factor\nlattice_wide: checked and not executed \u2014 no nearest-neighbor covariance or lattice-wide support law is claimed\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T071805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

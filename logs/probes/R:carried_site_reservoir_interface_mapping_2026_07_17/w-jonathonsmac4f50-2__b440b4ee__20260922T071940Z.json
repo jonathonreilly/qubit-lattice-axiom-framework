@@ -1,0 +1,32 @@
+{
+ "task": "R:carried_site_reservoir_interface_mapping_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "carried",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/carried_site_reservoir_interface_mapping_2026_07_17.py",
+ "seed": 61580,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b440b4ee",
+ "started_utc": "20260922T071940Z",
+ "elapsed_s": 11.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c3ca102fa7bbe1781ec45c5064a1d824581405a5ddd7795b95c97b9d282d9a0b",
+ "stdout_tail": "akage': 0.9349335719029922, 'final_leakage': 0.0, 'staggered_vs_co_moving': 0.0, 'staggered_inverse_residual': 1.02811195848043e-15}\nPASS the catch-up is a norm-preserving involution on an adversarial off-image tagged state :: {'norm_residual': 0.0, 'involution_residual': 0.0}\nPASS the co-moving interface remains exact for four ticks and is reversible :: {'maximum_four_tick_intertwiner_residual': 0.0, 'inverse_residual': 2.7508449838546606e-15}\n\nSPARSE COVARIANCE / DELETION / SCOPE\nPASS the co-moving and staggered repaired macrosteps are covariant under all 24 proper-cubic frames :: {'co_moving_maximum': 2.092290251208289e-16, 'staggered_maximum': 2.092290251208289e-16}\nPASS coupling deletion preserves the co-moving interface while maximizing the fixed-reservoir stream mismatch :: {'co_moving_deletion_residual': 0.0, 'fixed_deletion_residual': 1.4142135623730963}\nPASS the interface preserves the one-particle mass fixture; the separate contact fixture is not applied :: {'analytic_mass': 0.4534056541748852, 'dispersion_mass': 0.4534056690336209, 'executed_matter_number': 1, 'contact_applied': False}\nDIAGNOSTIC {'beta': -0.3, 'angle': 0.3627245233399082, 'local_interface': 'direction x seven-state Q=1 block', 'fixed_stream': 'reservoir tag remains at departure cell', 'co_moving_repair': 'reservoir tag follows matter edge', 'staggered_repair': 'matter stream then reservoir catch-up', 'physical_boundary': 'logical matter direction; no Cycle269 state encoder'}\nTOTAL PASS=12 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T071952Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

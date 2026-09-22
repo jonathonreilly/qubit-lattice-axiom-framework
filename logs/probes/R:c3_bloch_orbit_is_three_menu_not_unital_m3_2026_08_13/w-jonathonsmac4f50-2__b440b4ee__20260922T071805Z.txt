@@ -1,0 +1,37 @@
+external_scientific_inputs: none; displayed R and P0 are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact Q(ω); scaled trine normalization is mathematical only
+negative_scope: the unweighted displayed orbit is not a PVM or unital M_3 factor
+PASS: omega-minimal ω^2 + ω + 1 = 0
+PASS: omega-cube ω^3 = 1
+PASS: omega-not-one ω ≠ 1
+PASS: thm1-p0-proj P0 is a rank-1 projection
+PASS: thm1-p1-proj P1 is a rank-1 projection
+PASS: thm1-p2-proj P2 is a rank-1 projection
+PASS: thm1-pairwise-distinct P0, P1, P2 are pairwise distinct
+PASS: thm1-orbit-closes Ad_R(P2) = P0
+PASS: thm1-p1-formula P1 equals ((1/2, ω^2/2), (ω/2, 1/2))
+PASS: thm2-not-e00 P1 ≠ |0><0|
+PASS: thm2-not-e11 P1 ≠ |1><1|
+PASS: thm2-not-p0 P1 ≠ P0
+PASS: thm2-full-menu-inequality the orbit menu is not {|0><0|, |1><1|, |+><+|}
+PASS: thm3-sum-is-three-halves P0+P1+P2 = (3/2) I_2
+PASS: mutation-sum-eq-i-fails predicate P0+P1+P2 == I_2 fails
+PASS: thm3-scaled-trine-povm sum_k (2/3) Pk = I_2
+PASS: thm3-scaled-effects-not-projections each (2/3) Pk is non-idempotent, so the normalization is not a PVM
+PASS: thm4-explicit-basis-rank-4 I, P0, P1, P0P1 have Q(ω)-rank 4
+PASS: thm4-generated-dim-4 Q(ω)-dimension of generated algebra = 4
+PASS: mutation-dim-eq-9-fails predicate dim generated == 9 fails
+PASS: thm5-three-not-divides-two 3 does not divide 2
+PASS: thm5-injective-dimension-obstruction an injective complex-linear map M_3 to M_2 would require 9 <= 4
+PASS: mutation-unital-m3-to-m2-fails predicate unital M_3 → M_2 exists fails
+PASS: thm6-record-and-refusals note makes the Record reading conditional and refuses unsupported identifications
+PASS: machine-status-contract note carries the bounded-support status and no hypothetical axiom adoption
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each displayed Pk is a distinct rank-one projection in M_2(C)
+per_site: checked exactly — the unweighted sum is (3/2)I and the generated algebra has field-rank four
+per_mode: checked exactly — the single displayed Ad_R orbit closes after three steps; no other orbit is classified
+per_block: checked exactly — scaled trine effects form a POVM but not a PVM or multiplicative M_3 factor
+lattice_wide: checked and not executed — no nearest-neighbor covariance or lattice-wide support law is claimed
+TOTAL: PASS=27 FAIL=0

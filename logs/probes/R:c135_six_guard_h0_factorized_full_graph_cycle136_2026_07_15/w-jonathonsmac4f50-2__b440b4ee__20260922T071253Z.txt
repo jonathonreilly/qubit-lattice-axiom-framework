@@ -1,0 +1,54 @@
+JOINT_PROGRESS states=1000000 joint=0 joint_edges=0
+JOINT_PROGRESS states=2000003 joint=0 joint_edges=0
+JOINT_PROGRESS states=3000000 joint=0 joint_edges=0
+JOINT_PROGRESS states=4000000 joint=0 joint_edges=0
+JOINT_PROGRESS states=5000000 joint=0 joint_edges=0
+JOINT_PROGRESS states=6000000 joint=0 joint_edges=0
+
+===============================================================================
+A - Six-image guard and unique H0 local
+===============================================================================
+FAIL A01 Cycle 136 note exists
+PASS A02 tested guard local is L4+L6 with six explicit images :: ((1, -5, -3), (1, -2, -6), (2, -5, -2), (2, -1, -6), (5, -2, -2), (5, -1, -3))
+PASS A03 H0 requires three prior base-variable parents and two guards :: (((-1, 0, 0), 'H1'), ((0, -1, 0), 'R_C30'), ((0, 0, -1), 'R_C30'), ((0, 0, 1), 'H0'), ((0, 1, 0), 'H1'))
+PASS A04 guarded H0 has one exact terminal target
+PASS A05 union has 9,278 single-valued rows and zero unexpected targets
+PASS A06 new guard/H0 targets have zero expected-target wrong-value aliases :: ()
+PASS A07 H0 has one exact all-five-parent compiled condition :: (((5, -1, -2), ((4, -1, -2), (5, -2, -2), (5, -1, -3), (5, -1, -1), (5, 0, -2)), ((4, -1, -2), (5, -2, -2), (5, -1, -3), (5, -1, -1), (5, 0, -2)), ('H0',)),)
+
+===============================================================================
+B - Enumerated factor and completion barrier
+===============================================================================
+PASS B01 complete factor is 144 states / 496 edges / one terminal
+PASS B02 H0 never precedes H1 or either local guard
+PASS B03 deleting any H0 parent disables H0 :: []
+
+===============================================================================
+C - Exact factorized full-graph census
+===============================================================================
+PASS C01 guards see source only and are pairwise nonadjacent :: base=[] pairs=[]
+PASS C02 H0 sees exactly three old parents and two local guards :: {(5, -1, -3), (5, 0, -2), (4, -1, -2), (5, -2, -2), (5, -1, -1)}
+PASS C03 all old nonparent condition fingerprints are exactly preserved :: base=181 full=181
+PASS C04 parent conditions are the exact H0-absent base conditions
+PASS C05 ignored-target condition and value are unchanged :: (((-3, 1, 2), ((-2, 1, 2),), ((-2, 1, 2),), ('R_B21',)),)
+PASS C06 all 40 wrong-condition fingerprints are exactly inherited :: summaries=24 details=40
+PASS C07 independent traversal gives exact three-parent joint layer :: joint=65792/389824
+PASS C08 exact factorized graph has 444,969,984 states :: 444969984
+PASS C09 exact factorized graph has 4,791,200,000 edges :: 4791200000
+PASS C10 every incomplete product terminal has a guard or H0 enabled :: guards=[] pre_h0={(5, -1, -2): frozenset({'H0'})}
+PASS C11 product has one all-142-output terminal and no final action :: {}
+
+===============================================================================
+D - Output fork and bounded scope
+===============================================================================
+PASS D01 swapped guarded H1 is unexpected-target-clean and factor-clean only
+PASS D02 replacement H1 adds one BIT expected-target wrong-value alias :: (((5, 0, -2), (('H0',),)),)
+FAIL D03 note names factorized rather than enumerated full graph
+FAIL D04 note preserves unresolved H0/H1 output fork
+FAIL D05 note denies byte/writer claims
+FAIL D06 note carries N1-N8
+FAIL D07 note makes no axiom addition
+
+FACTOR=144/496 FULL_FACTORIZED=444969984/4791200000 OUTPUTS=142
+PASS=22 FAIL=6
+RESULT=FAIL

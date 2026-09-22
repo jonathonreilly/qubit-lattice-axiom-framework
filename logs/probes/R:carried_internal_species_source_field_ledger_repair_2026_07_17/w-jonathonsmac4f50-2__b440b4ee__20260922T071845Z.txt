@@ -1,0 +1,21 @@
+CARRIED INTERNAL-SPECIES SOURCE/FIELD LEDGER REPAIR
+FAIL the carried-source repair note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/CARRIED_INTERNAL_SPECIES_SOURCE_FIELD_LEDGER_REPAIR_NOTE_2026-07-17.md
+PASS the direct 18-M2 encoding has 42 distinct active computational states :: {'M2_per_cell': 18, 'active_dimension': 42}
+PASS the onsite carried-source vertex is unitary on the active code :: 9.808906422059767e-16
+PASS the selected hard-core vertex is identity-completed on the rest of the 18-M2 Hilbert space :: {'physical_dimension': 262144, 'active_dimension': 42, 'identity_complement_dimension': 262102}
+PASS the onsite vertex leaves the active subspace invariant and conserves Q :: 0.0
+PASS the emission core has support eight M2 and its exact identity-completed physical gate has support 18 M2 :: {'active_core_support': 8, 'identity_completed_gate_support': 18, 'cell_union': 18}
+PASS the active vertex and common coin commute with all 24 proper-cubic frames :: 0.0
+PASS both internal labels preserve the Cycle-219 one-particle mass fixture :: {'analytic_mass': 0.4534056541748852, 'dispersion_mass': 0.4534056690336209}
+PASS contact deletion leaves the executed one-matter code unchanged; the supplied law has the algebraic two-matter phase value :: (np.complex128(1+0j), np.complex128(1+0j), np.complex128(0.9323273456060345+0.361615431964962j))
+PASS source-coupling deletion returns the two decoupled common matter labels :: 0.0
+PASS ordinary SWAP equals FSWAP on the declared one-matter stream sector and fails outside it with exact norm two :: 2.0
+PASS at tested L=3,4,5,6 the unchanged Cycle-269 code has exact 6 L^3 logical-exponent deficits for literal two-species matter :: [(3, 405, 164, 326, 162), (4, 960, 386, 770, 384), (5, 1875, 752, 1502, 750), (6, 3240, 1298, 2594, 1296)]
+PASS four ticks obey exact norm and declared carried-code Q continuity ledgers :: {'norm_residual': 4.884981308350689e-15, 'coin_q_residual': 1.1102230246251565e-15, 'vertex_q_residual': 1.3877787807814457e-16, 'matter_edge_residual': 1.1102230246251565e-16, 'q_edge_residual': 1.1102230246251565e-16, 'matter_current_sum_residual': 2.220446049250313e-16, 'q_current_sum_residual': 0.0}
+PASS matter and field remain inside their four-edge causal cones :: {'max_body_l1': 4, 'max_field_l1': 4}
+PASS the four-tick carried-source update is exactly inverted :: 2.750844983854659e-15
+PASS the local vertex emits by consuming excitation and absorbs by restoring it :: {'emitted': 0.1258992161287138, 'absorbed': 0.12589921612871388}
+PASS the full sparse schedule is covariant under all 24 proper-cubic frames :: 2.7575098023275394e-15
+PASS separated one-matter packets compose linearly without a host-side controller :: 0.0
+PASS excited and ground source states use the same one-edge matter stream :: {'excited_body': ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)), 'ground_body': ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))}
+SUMMARY {'pass': 18, 'fail': 1}

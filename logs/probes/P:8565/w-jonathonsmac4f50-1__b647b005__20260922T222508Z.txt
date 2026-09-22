@@ -1,0 +1,11 @@
+PR #8565: Explore mobile Gauss-preserving record loops, dilute equilibrium and birth locality
+branch codex/mobile-record-gauss-loops-phase-20260921 (base main)
+runners in the PR: 1
+== scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py: rc=0 PASS=35 FAIL=0
+   mutation flip_one_loop_record: expected ? observed ? MISMATCH
+   mutation half_collective_birth_bracket: expected ? observed ? MISMATCH
+   mutation half_fugacity_structure_factor: expected ? observed ? MISMATCH
+   mutation allow_both_species_in_one_slot: expected ? observed ? MISMATCH
+   mutation wrong_polymer_majorant: expected ? observed ? MISMATCH
+   mutation wrong_tensor_off_diagonal: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py: mutation census mismatch: flip_one_loop_record half_collective_birth_bracket half_fugacity_structure_factor allow_both_species_in_one_slot wrong_polymer_majorant wrong_tensor_off_diagonal

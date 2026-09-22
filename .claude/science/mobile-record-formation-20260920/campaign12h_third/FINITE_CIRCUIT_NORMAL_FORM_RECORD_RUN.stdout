@@ -1,0 +1,25 @@
+{"model": "B_occupancy", "order": 1, "nonzero_gates": 4}
+{"model": "B_occupancy", "order": 2, "nonzero_gates": 0}
+{"model": "B_occupancy", "order": 3, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 4, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 5, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 6, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 7, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 8, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 9, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 10, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 11, "nonzero_gates": 6}
+{"model": "B_occupancy", "order": 12, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 1, "nonzero_gates": 4}
+{"model": "homogeneous_star_onsite_extension", "order": 2, "nonzero_gates": 0}
+{"model": "homogeneous_star_onsite_extension", "order": 3, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 4, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 5, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 6, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 7, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 8, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 9, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 10, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 11, "nonzero_gates": 6}
+{"model": "homogeneous_star_onsite_extension", "order": 12, "nonzero_gates": 6}
+{"status": "PASS", "elapsed_seconds": 11.115487749921158}

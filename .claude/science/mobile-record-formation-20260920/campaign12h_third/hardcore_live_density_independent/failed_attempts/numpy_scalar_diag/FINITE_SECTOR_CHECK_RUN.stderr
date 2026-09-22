@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/finite_sector_check.py", line 163, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/finite_sector_check.py", line 145, in main
+    result,channels=exact_controls(m);cases['cycle_'+str(length)]=result
+                    ~~~~~~~~~~~~~~^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/finite_sector_check.py", line 59, in exact_controls
+    hop=sum(model['hop'],zero); pot=s.diag(*model['b']); fld=s.diag(*model['field'])
+                                    ~~~~~~^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/dense.py", line 794, in diag
+    return Matrix.diag(*values, strict=strict, unpack=unpack, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 1021, in diag
+    r, c = m.shape
+    ^^^^
+ValueError: not enough values to unpack (expected 2, got 0)

@@ -1,0 +1,385 @@
+{
+  "status": "PASS",
+  "ring_dependency_sha256": "3c3cb5c32bd66f95668c5b6667aca711d5cfc6ddd95146ee6d0b92f18cbebbf7",
+  "exact_local_identities": [
+    {
+      "geometry": "same_edge",
+      "full_dimension": 18,
+      "refinement": "plus_coherent",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "same_edge",
+      "full_dimension": 18,
+      "refinement": "minus_coherent",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "same_edge",
+      "full_dimension": 18,
+      "refinement": "charge_resolved",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "shared_A",
+      "full_dimension": 108,
+      "refinement": "plus_coherent",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "shared_A",
+      "full_dimension": 108,
+      "refinement": "minus_coherent",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "shared_A",
+      "full_dimension": 108,
+      "refinement": "charge_resolved",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "shared_B",
+      "full_dimension": 108,
+      "refinement": "plus_coherent",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "shared_B",
+      "full_dimension": 108,
+      "refinement": "minus_coherent",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "shared_B",
+      "full_dimension": 108,
+      "refinement": "charge_resolved",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "disjoint",
+      "full_dimension": 324,
+      "refinement": "plus_coherent",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "disjoint",
+      "full_dimension": 324,
+      "refinement": "minus_coherent",
+      "all_exact_local_identities": true
+    },
+    {
+      "geometry": "disjoint",
+      "full_dimension": 324,
+      "refinement": "charge_resolved",
+      "all_exact_local_identities": true
+    }
+  ],
+  "fast_defect_star": {
+    "basis": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "boundary_offsets": [
+      "1",
+      "1/2",
+      "1/2"
+    ],
+    "relative_penalties": [
+      1,
+      0,
+      0
+    ],
+    "hop_matrix": [
+      [
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0"
+      ]
+    ],
+    "second_order_matrix_over_t2_over_Delta": [
+      [
+        "-1",
+        "-1"
+      ],
+      [
+        "-1",
+        "-1"
+      ]
+    ],
+    "characteristic_polynomial": "-E*(Delta*E - E**2 + 2*t**2)",
+    "fixed_J_scaling": [
+      {
+        "Delta": 256.0,
+        "J_ring": 1.0,
+        "t": 53.81737057623773,
+        "leading_defect_exchange": 11.31370849898476,
+        "exact_exchange_from_splitting": 10.45908062734894,
+        "nominal_loss_scale_beta_epsilon2": 0.044194173824159216,
+        "product_exchange_and_nominal_loss_at_beta1": 0.4999999999999999
+      },
+      {
+        "Delta": 1024.0,
+        "J_ring": 1.0,
+        "t": 152.2185107203483,
+        "leading_defect_exchange": 22.62741699796952,
+        "exact_exchange_from_splitting": 21.70710740447464,
+        "nominal_loss_scale_beta_epsilon2": 0.022097086912079608,
+        "product_exchange_and_nominal_loss_at_beta1": 0.49999999999999994
+      },
+      {
+        "Delta": 4096.0,
+        "J_ring": 1.0,
+        "t": 430.5389646099018,
+        "leading_defect_exchange": 45.25483399593904,
+        "exact_exchange_from_splitting": 44.29672845314053,
+        "nominal_loss_scale_beta_epsilon2": 0.011048543456039804,
+        "product_exchange_and_nominal_loss_at_beta1": 0.4999999999999999
+      },
+      {
+        "Delta": 16384.0,
+        "J_ring": 1.0,
+        "t": 1217.7480857627863,
+        "leading_defect_exchange": 90.50966799187808,
+        "exact_exchange_from_splitting": 89.53117300414578,
+        "nominal_loss_scale_beta_epsilon2": 0.005524271728019902,
+        "product_exchange_and_nominal_loss_at_beta1": 0.49999999999999994
+      },
+      {
+        "Delta": 65536.0,
+        "J_ring": 1.0,
+        "t": 3444.3117168792146,
+        "leading_defect_exchange": 181.01933598375615,
+        "exact_exchange_from_splitting": 180.03023426109576,
+        "nominal_loss_scale_beta_epsilon2": 0.002762135864009951,
+        "product_exchange_and_nominal_loss_at_beta1": 0.4999999999999999
+      }
+    ],
+    "scope": "Three-site coherent exchange only. Its divergent speed does not prove finite disturbance of a many-body field."
+  },
+  "finite_live_density": {
+    "physical_dimension": 9,
+    "controls": [
+      {
+        "Delta": 4096.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.25,
+        "epsilon": 0.10511205190671431,
+        "defect_density": 0.011753575812988894,
+        "density_bound": 0.2762135864009951,
+        "expected_births_per_vertex": 0.0024186441442583585,
+        "birth_density_bound": 0.056163429234869,
+        "trace_error": 6.849867358491315e-14
+      },
+      {
+        "Delta": 4096.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.5,
+        "epsilon": 0.10511205190671431,
+        "defect_density": 0.02539618086683257,
+        "density_bound": 0.397747564417433,
+        "expected_births_per_vertex": 0.004591485927795386,
+        "birth_density_bound": 0.1399482171098375,
+        "trace_error": 1.385233227950794e-13
+      },
+      {
+        "Delta": 4096.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 1.0,
+        "epsilon": 0.10511205190671431,
+        "defect_density": 0.024778833176230173,
+        "density_bound": 0.7071067811865475,
+        "expected_births_per_vertex": 0.008390344428966055,
+        "birth_density_bound": 0.4124789556921527,
+        "trace_error": 2.9052142970354033e-13
+      },
+      {
+        "Delta": 16384.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.25,
+        "epsilon": 0.07432544468767006,
+        "defect_density": 0.005948087006597562,
+        "density_bound": 0.13810679320049754,
+        "expected_births_per_vertex": 0.001253864084157051,
+        "birth_density_bound": 0.0280817146174345,
+        "trace_error": 1.9859502239217106e-13
+      },
+      {
+        "Delta": 16384.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.5,
+        "epsilon": 0.07432544468767006,
+        "defect_density": 0.014770614704649368,
+        "density_bound": 0.1988737822087165,
+        "expected_births_per_vertex": 0.0023787964283265082,
+        "birth_density_bound": 0.06997410855491876,
+        "trace_error": 3.7648269338929414e-13
+      },
+      {
+        "Delta": 16384.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 1.0,
+        "epsilon": 0.07432544468767006,
+        "defect_density": 0.022078789859876224,
+        "density_bound": 0.35355339059327373,
+        "expected_births_per_vertex": 0.004346232532484444,
+        "birth_density_bound": 0.20623947784607635,
+        "trace_error": 6.168810839337612e-13
+      },
+      {
+        "Delta": 65536.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.25,
+        "epsilon": 0.052556025953357156,
+        "defect_density": 0.004952095281989611,
+        "density_bound": 0.06905339660024877,
+        "expected_births_per_vertex": 0.0006386786588740208,
+        "birth_density_bound": 0.01404085730871725,
+        "trace_error": 3.739653546064952e-14
+      },
+      {
+        "Delta": 65536.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.5,
+        "epsilon": 0.052556025953357156,
+        "defect_density": 0.010097872012784415,
+        "density_bound": 0.09943689110435824,
+        "expected_births_per_vertex": 0.001211344149250711,
+        "birth_density_bound": 0.03498705427745938,
+        "trace_error": 2.694719975455316e-14
+      },
+      {
+        "Delta": 65536.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 1.0,
+        "epsilon": 0.052556025953357156,
+        "defect_density": 0.007196269325117753,
+        "density_bound": 0.17677669529663687,
+        "expected_births_per_vertex": 0.0022128478853218735,
+        "birth_density_bound": 0.10311973892303818,
+        "trace_error": 2.6735275073978057e-13
+      },
+      {
+        "Delta": 262144.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.25,
+        "epsilon": 0.03716272234383503,
+        "defect_density": 0.003355440532385362,
+        "density_bound": 0.034526698300124385,
+        "expected_births_per_vertex": 0.0003223348307943184,
+        "birth_density_bound": 0.007020428654358625,
+        "trace_error": 1.0513062960373064e-12
+      },
+      {
+        "Delta": 262144.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 0.5,
+        "epsilon": 0.03716272234383503,
+        "defect_density": 0.0037427154144042216,
+        "density_bound": 0.04971844555217912,
+        "expected_births_per_vertex": 0.000611266372661773,
+        "birth_density_bound": 0.01749352713872969,
+        "trace_error": 1.8398075588538394e-12
+      },
+      {
+        "Delta": 262144.0,
+        "J": 1.0,
+        "beta": 1.0,
+        "time": 1.0,
+        "epsilon": 0.03716272234383503,
+        "defect_density": 0.005455628358623752,
+        "density_bound": 0.08838834764831843,
+        "expected_births_per_vertex": 0.0011166375700944363,
+        "birth_density_bound": 0.05155986946151909,
+        "trace_error": 1.9412662144061736e-12
+      }
+    ],
+    "energy_ledger_controls": [
+      {
+        "Delta": 4096.0,
+        "low_eigenenergy": -90.48829481556382,
+        "birth_rate": 0.02160432732665978,
+        "mean_power_supplied_by_formation": 178.93758820042376,
+        "energy_per_birth_over_Delta": 2.0220918688514575,
+        "exact_identity_residual_over_Delta": 1.519617764955683e-15
+      },
+      {
+        "Delta": 16384.0,
+        "low_eigenenergy": -181.00846950719034,
+        "birth_rate": 0.010925857230278106,
+        "mean_power_supplied_by_formation": 359.9961624170597,
+        "energy_per_birth_over_Delta": 2.0110478802189444,
+        "exact_identity_residual_over_Delta": -2.949029909160572e-16
+      },
+      {
+        "Delta": 65536.0,
+        "low_eigenenergy": -362.03319334401453,
+        "birth_rate": 0.0054936735449014635,
+        "mean_power_supplied_by_formation": 722.055671053974,
+        "energy_per_birth_over_Delta": 2.0055241881308574,
+        "exact_identity_residual_over_Delta": -2.175343238874916e-15
+      },
+      {
+        "Delta": 262144.0,
+        "low_eigenenergy": -724.0745932273373,
+        "birth_rate": 0.00275449616445276,
+        "mean_power_supplied_by_formation": 1446.1437457584307,
+        "energy_per_birth_over_Delta": 2.0027621253708925,
+        "exact_identity_residual_over_Delta": -3.703634621210483e-16
+      }
+    ]
+  },
+  "runtime_seconds": 0.0833269169088453
+}

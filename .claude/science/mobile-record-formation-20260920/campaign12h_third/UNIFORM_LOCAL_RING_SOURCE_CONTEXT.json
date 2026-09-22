@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-22T20:40:42.309792+00:00",
+  "status": "Source identities and primary-source coverage, not independent validation",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+      "bytes": 15367,
+      "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_record_ring_and_formation_check.py",
+      "bytes": 13932,
+      "sha256": "3c3cb5c32bd66f95668c5b6667aca711d5cfc6ddd95146ee6d0b92f18cbebbf7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_PENALTY_FOR_MOBILE_RECORDS.md",
+      "bytes": 10593,
+      "sha256": "860e8d364e50f8cddcbb6c534d69ca4ce822020ea80deab6c22361eeda0d361c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/BALLISTIC_FIELD_SIGNALS_FROM_RECORD_FORMATION.md",
+      "bytes": 11555,
+      "sha256": "aa7bbf8a01334360fa85399416d01dadb581769998c04194dea2e5ea8cf36c25"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/html/1105.0675",
+      "coverage": "Sections4.3-4.4 local Schrieffer-Wolff construction, interaction norm/commutator estimates and ground-energy theorem read, through beginning4.5. Credited framework; its ground-energy estimate is not imported as a dynamics estimate. The new proof uses a finite circuit construction written in full."
+    },
+    {
+      "url": "https://arxiv.org/html/1111.4210v2",
+      "coverage": "SectionsII-III through Theorem2, complete Theorem1 proof in SectionV, norm/contraction appendicesA-B and exponential-tail appendixC-D read. Used finite-range time-dependent Lindblad locality with all local terms kept in Lindblad form."
+    }
+  ]
+}

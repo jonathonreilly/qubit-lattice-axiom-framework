@@ -1,0 +1,5 @@
+{
+  "failure": "SymPy diag interpreted a NumPy integer scalar as a zero-dimensional array, raising ValueError before physical operator checks.",
+  "repair": "Convert enumerated NumPy integer counts to ordinary Python ints.",
+  "scientific_change": "None; same states, operators, parameters and assertions."
+}

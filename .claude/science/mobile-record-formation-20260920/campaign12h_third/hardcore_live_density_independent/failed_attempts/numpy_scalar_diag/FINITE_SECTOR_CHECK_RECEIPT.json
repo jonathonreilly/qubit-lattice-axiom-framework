@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/finite_sector_check.py"
+  ],
+  "started_utc": "2026-09-22T20:10:36.130759+00:00",
+  "finished_utc": "2026-09-22T20:10:36.690959+00:00",
+  "returncode": 1,
+  "script_sha256": "1773ad9dc53057f12b9fac5af3601a1dd8aef6039fa211eaca96dce259689ef1"
+}

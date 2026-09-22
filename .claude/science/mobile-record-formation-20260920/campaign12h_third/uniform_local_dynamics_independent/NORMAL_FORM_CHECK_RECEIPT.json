@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/normal_form_check.py"
+  ],
+  "started_utc": "2026-09-22T20:52:46.499765+00:00",
+  "completed_utc": "2026-09-22T20:52:47.481238+00:00",
+  "returncode": 0,
+  "script_sha256": "72cdcd86962e2921da720257e4e3b41093b3436bab074e26e4e2d79110b82053",
+  "stdout_sha256": "8927eaef91c80191c64e60fd1de5bf573125cafe0b78ca9ac76725e3b769f811",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-22T19:59:12.615790+00:00",
+  "status": "Frozen personal construction and volume-uniform finite-time mean-density estimate; independent reconstruction pending",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_PENALTY_FOR_MOBILE_RECORDS.md",
+      "bytes": 10593,
+      "sha256": "860e8d364e50f8cddcbb6c534d69ca4ce822020ea80deab6c22361eeda0d361c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_field_star_record_check.py",
+      "bytes": 8899,
+      "sha256": "41169c1be2dea85197dbea8603bb2c450681eaf91da3107f34e4a8200c94a8f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_RECORD_RESULTS.json",
+      "bytes": 12769,
+      "sha256": "f691beb7365666064ea7e8b04c441416c9e5b3abc29fb1ac1ec11d76748b040a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_RECORD_RUN.stdout",
+      "bytes": 12769,
+      "sha256": "f691beb7365666064ea7e8b04c441416c9e5b3abc29fb1ac1ec11d76748b040a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_RECORD_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_RECORD_RUN_RECEIPT.json",
+      "bytes": 382,
+      "sha256": "14adc934fb9cab00b37fdd7b651f8f88952988d8ecb2834df353cdc394da7dae"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_SOURCE_CONTEXT.json",
+      "bytes": 2401,
+      "sha256": "d8942610eafd80f2e2472d1b860817c9e00959392edd8ae589c4d5f1991d4c31"
+    }
+  ],
+  "limits": "Uniform Hamiltonian does not imply uniform selected sector or native qubit implementation; no volume-uniform field evolution claim."
+}

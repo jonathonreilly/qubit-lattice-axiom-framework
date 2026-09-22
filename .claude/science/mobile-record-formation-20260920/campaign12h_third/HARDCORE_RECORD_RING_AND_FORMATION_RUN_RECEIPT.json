@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_record_ring_and_formation_check.py"
+  ],
+  "started_utc": "2026-09-22T18:58:22.661409+00:00",
+  "script_sha256": "3c3cb5c32bd66f95668c5b6667aca711d5cfc6ddd95146ee6d0b92f18cbebbf7",
+  "completed_utc": "2026-09-22T18:58:24.346531+00:00",
+  "returncode": 0
+}

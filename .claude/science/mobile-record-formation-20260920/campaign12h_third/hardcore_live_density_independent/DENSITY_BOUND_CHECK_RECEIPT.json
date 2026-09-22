@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/density_bound_check.py"
+  ],
+  "started_utc": "2026-09-22T20:17:44.822907+00:00",
+  "finished_utc": "2026-09-22T20:17:45.534927+00:00",
+  "returncode": 0,
+  "script_sha256": "6f9ff0ba694fdb726c5d7030896686ad5507961bbd5f464cd37f417f2007a80c"
+}

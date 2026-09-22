@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-22T19:02:18.633327+00:00",
+  "status": "Exact source context, not independent verification",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/VIRTUAL_MULTIPLE_OCCUPANCY_SOURCE_FOR_RECORD_CIRCULATION.md",
+      "bytes": 6569,
+      "sha256": "5b86ca78d8d43822c82b489d3f689951b0831e817f19421b88c35da1420f6cb3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md",
+      "bytes": 9771,
+      "sha256": "9c71310bfe26b93ae5206d5a4525bc01dc6136be1d39e6f1b08ecfa08b83e6a4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_gauge_record_cooling_check.py",
+      "bytes": 12497,
+      "sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/1303.5040v3",
+      "coverage": "Complete section VI.A and immediately preceding loop-method introduction, including species-dependent pinning, unitary link assumption and fourth-order Eq76. Used to credit established machinery, not transfer coefficients."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1702.05492",
+      "coverage": "Section3.5.1 through displayed plaquette contribution Eq39 and finite-link qualification; finite on-site penalty premise checked. Not its complete AppendixD."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1112.2806v2",
+      "coverage": "Abstract through SectionIII.D beginning; framework hypotheses examined only. No theorem imported: the finite-time live-birth bound uses an explicit Duhamel argument."
+    }
+  ]
+}

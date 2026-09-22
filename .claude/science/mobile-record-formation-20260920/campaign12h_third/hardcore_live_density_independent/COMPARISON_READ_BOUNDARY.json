@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-09-22T20:43:05.722480+00:00",
+  "pre_comparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 15895,
+    "sha256": "caf8a8632b62fa99bcd9fad95f33aa27be44ed0ecd1b511e09827a825b04a703"
+  },
+  "post_seal_authorization": "Parent expressly authorized these three frozen seven-artifact packets after receiving PRE.",
+  "read_scope": "Complete three notes, runners, result JSONs, contexts and receipts. Full logs authenticated byte-identical to read JSONs; stderr empty. Earlier truncated note read repaired by targeted section read.",
+  "executed": "Only independent comparison_check.py; imports only identity-matched own PRE finite_sector_check.py.",
+  "not_executed": "No author runner or original numerical sweep rerun.",
+  "reused_dependency": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_gauge_record_cooling_check.py",
+    "bytes": 12497,
+    "sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552"
+  },
+  "external_source_limit": "Contextual literature reading and virtual-multiple-occupancy source not freshly verified and not imported into the proof.",
+  "unopened": [
+    "newer one-dimensional transport",
+    "ramp",
+    "uniform-local normal form",
+    "campaign checkpoint",
+    "campaign registry"
+  ],
+  "unchanged": "All prior PRE artifacts and primary author files.",
+  "disposition": "No material mathematical error or necessary scope correction identified in bounded comparison."
+}

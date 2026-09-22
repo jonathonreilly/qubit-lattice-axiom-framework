@@ -1,0 +1,3 @@
+{
+  "diagnosis": "The first runner used an unjustified numerical screen residual < 1e8 epsilon^17. Exact normal-form coefficient and parity checks had passed. Diagnostic values residual/epsilon^17 at epsilon=.005,.01,.025,.04 were approximately 127699011.30,127646953.09,127284140.97,126617660.71. This is consistent order-17 decay with a coefficient above the assumed screen, not evidence of a lower-order residual. The repaired runner derives the complete first omitted coefficient exactly and tests numerical approach to that coefficient. No theoretical remainder constant is inferred from this finite control."
+}

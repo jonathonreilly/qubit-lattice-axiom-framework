@@ -1,0 +1,571 @@
+{"completed_series": {"kind": "global", "penalty": "B_occupancy", "order": 16, "gate_count_including_zero": 16, "all_stored_coefficients_recomposed": true, "exact_first_omitted_frobenius_squared": "289311215188902702903038845891/17736670201250", "first_omitted_frobenius": "127716376.7587668642392", "all_gate_parities_and_number_commutators_verified": true, "numeric_table_arithmetic": [{"epsilon": "1/40", "stored_ratio_recomputed": "0.99661565888848066668"}, {"epsilon": "1/25", "stored_ratio_recomputed": "0.99139721878752811828"}, {"epsilon": "3/50", "stored_ratio_recomputed": "0.98091929772605582193"}, {"epsilon": "2/25", "stored_ratio_recomputed": "0.96673933180665423204"}]}}
+{"completed_series": {"kind": "global", "penalty": "homogeneous_star_onsite_extension", "order": 16, "gate_count_including_zero": 16, "all_stored_coefficients_recomposed": true, "exact_first_omitted_frobenius_squared": "289311215188902702903038845891/17736670201250", "first_omitted_frobenius": "127716376.7587668642392", "all_gate_parities_and_number_commutators_verified": true, "numeric_table_arithmetic": [{"epsilon": "1/40", "stored_ratio_recomputed": "0.99661565888848066668"}, {"epsilon": "1/25", "stored_ratio_recomputed": "0.99139721878752811828"}, {"epsilon": "3/50", "stored_ratio_recomputed": "0.98091929772605582193"}, {"epsilon": "2/25", "stored_ratio_recomputed": "0.96673933180665423204"}]}}
+{"completed_series": {"kind": "circuit", "penalty": "B_occupancy", "order": 12, "gate_count_including_zero": 64, "all_stored_coefficients_recomposed": true, "exact_first_omitted_frobenius_squared": "1032255336369062785103735305993/1077105223434240000", "first_omitted_frobenius": "978958.9976091803184985", "all_gate_parities_and_number_commutators_verified": true, "noncommuting_first_order_gate_pairs": 4, "numeric_table_arithmetic": [{"epsilon": "3/500", "stored_ratio_recomputed": "0.99982005833301725004"}, {"epsilon": "3/250", "stored_ratio_recomputed": "0.99928075481700231864"}, {"epsilon": "3/125", "stored_ratio_recomputed": "0.99713133052589544042"}]}}
+{"completed_series": {"kind": "circuit", "penalty": "homogeneous_star_onsite_extension", "order": 12, "gate_count_including_zero": 64, "all_stored_coefficients_recomposed": true, "exact_first_omitted_frobenius_squared": "1032255336369062785103735305993/1077105223434240000", "first_omitted_frobenius": "978958.9976091803184985", "all_gate_parities_and_number_commutators_verified": true, "noncommuting_first_order_gate_pairs": 4, "numeric_table_arithmetic": [{"epsilon": "3/500", "stored_ratio_recomputed": "0.99982005833301725004"}, {"epsilon": "3/250", "stored_ratio_recomputed": "0.99928075481700231864"}, {"epsilon": "3/125", "stored_ratio_recomputed": "0.99713133052589544042"}]}}
+{
+  "created_utc": "2026-09-22T21:19:27.211740+00:00",
+  "status": "PASS",
+  "authentication": {
+    "author_artifacts": 17,
+    "preserved_PRE_bindings": 24,
+    "prior_context_dependencies": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+        "bytes": 15367,
+        "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_record_ring_and_formation_check.py",
+        "bytes": 13932,
+        "sha256": "3c3cb5c32bd66f95668c5b6667aca711d5cfc6ddd95146ee6d0b92f18cbebbf7"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_PENALTY_FOR_MOBILE_RECORDS.md",
+        "bytes": 10593,
+        "sha256": "860e8d364e50f8cddcbb6c534d69ca4ce822020ea80deab6c22361eeda0d361c"
+      }
+    ],
+    "unread_context_reference": "BALLISTIC_FIELD_SIGNALS_FROM_RECORD_FORMATION.md is neither opened nor imported."
+  },
+  "stored_series_check": {
+    "own_to_author_basis_permutation": [
+      3,
+      5,
+      7,
+      6,
+      0,
+      8,
+      1,
+      2,
+      4
+    ],
+    "rows": [
+      {
+        "kind": "global",
+        "penalty": "B_occupancy",
+        "order": 16,
+        "gate_count_including_zero": 16,
+        "all_stored_coefficients_recomposed": true,
+        "exact_first_omitted_frobenius_squared": "289311215188902702903038845891/17736670201250",
+        "first_omitted_frobenius": "127716376.7587668642392",
+        "all_gate_parities_and_number_commutators_verified": true,
+        "numeric_table_arithmetic": [
+          {
+            "epsilon": "1/40",
+            "stored_ratio_recomputed": "0.99661565888848066668"
+          },
+          {
+            "epsilon": "1/25",
+            "stored_ratio_recomputed": "0.99139721878752811828"
+          },
+          {
+            "epsilon": "3/50",
+            "stored_ratio_recomputed": "0.98091929772605582193"
+          },
+          {
+            "epsilon": "2/25",
+            "stored_ratio_recomputed": "0.96673933180665423204"
+          }
+        ]
+      },
+      {
+        "kind": "global",
+        "penalty": "homogeneous_star_onsite_extension",
+        "order": 16,
+        "gate_count_including_zero": 16,
+        "all_stored_coefficients_recomposed": true,
+        "exact_first_omitted_frobenius_squared": "289311215188902702903038845891/17736670201250",
+        "first_omitted_frobenius": "127716376.7587668642392",
+        "all_gate_parities_and_number_commutators_verified": true,
+        "numeric_table_arithmetic": [
+          {
+            "epsilon": "1/40",
+            "stored_ratio_recomputed": "0.99661565888848066668"
+          },
+          {
+            "epsilon": "1/25",
+            "stored_ratio_recomputed": "0.99139721878752811828"
+          },
+          {
+            "epsilon": "3/50",
+            "stored_ratio_recomputed": "0.98091929772605582193"
+          },
+          {
+            "epsilon": "2/25",
+            "stored_ratio_recomputed": "0.96673933180665423204"
+          }
+        ]
+      },
+      {
+        "kind": "circuit",
+        "penalty": "B_occupancy",
+        "order": 12,
+        "gate_count_including_zero": 64,
+        "all_stored_coefficients_recomposed": true,
+        "exact_first_omitted_frobenius_squared": "1032255336369062785103735305993/1077105223434240000",
+        "first_omitted_frobenius": "978958.9976091803184985",
+        "all_gate_parities_and_number_commutators_verified": true,
+        "noncommuting_first_order_gate_pairs": 4,
+        "numeric_table_arithmetic": [
+          {
+            "epsilon": "3/500",
+            "stored_ratio_recomputed": "0.99982005833301725004"
+          },
+          {
+            "epsilon": "3/250",
+            "stored_ratio_recomputed": "0.99928075481700231864"
+          },
+          {
+            "epsilon": "3/125",
+            "stored_ratio_recomputed": "0.99713133052589544042"
+          }
+        ]
+      },
+      {
+        "kind": "circuit",
+        "penalty": "homogeneous_star_onsite_extension",
+        "order": 12,
+        "gate_count_including_zero": 64,
+        "all_stored_coefficients_recomposed": true,
+        "exact_first_omitted_frobenius_squared": "1032255336369062785103735305993/1077105223434240000",
+        "first_omitted_frobenius": "978958.9976091803184985",
+        "all_gate_parities_and_number_commutators_verified": true,
+        "noncommuting_first_order_gate_pairs": 4,
+        "numeric_table_arithmetic": [
+          {
+            "epsilon": "3/500",
+            "stored_ratio_recomputed": "0.99982005833301725004"
+          },
+          {
+            "epsilon": "3/250",
+            "stored_ratio_recomputed": "0.99928075481700231864"
+          },
+          {
+            "epsilon": "3/125",
+            "stored_ratio_recomputed": "0.99713133052589544042"
+          }
+        ]
+      }
+    ],
+    "scope": "All stored rational matrices are independently recomposed. Numerical high-precision exponentials are authenticated and their table arithmetic checked, not rerun."
+  },
+  "full_dissipator_and_onsite_control": {
+    "dissipator_matrix": [
+      [
+        "-s**2",
+        "-s*sqrt(1 - s**2)/2",
+        "0"
+      ],
+      [
+        "-s*sqrt(1 - s**2)/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "s**2"
+      ]
+    ],
+    "exact_trace_norm_for_0_s_1": "s+s^2",
+    "exact_jump_trace": "s^2",
+    "controls": [
+      {
+        "BP_norm": "1/3",
+        "jump_trace": "1/9",
+        "full_dissipator_trace_norm": "4/9"
+      },
+      {
+        "BP_norm": "1/11",
+        "jump_trace": "1/121",
+        "full_dissipator_trace_norm": "12/121"
+      },
+      {
+        "BP_norm": "1/101",
+        "jump_trace": "1/10201",
+        "full_dissipator_trace_norm": "102/10201"
+      }
+    ],
+    "scope": "The O(epsilon) trace-source estimate is sharp as a general bound; a jump-probability-only O(epsilon^2) source estimate is false.",
+    "onsite_integer_extension_checks": [
+      {
+        "volume": 4,
+        "fixed_charge_words": 10,
+        "integer_penalty_identity": true,
+        "unique_zero_pattern": true
+      },
+      {
+        "volume": 6,
+        "fixed_charge_words": 50,
+        "integer_penalty_identity": true,
+        "unique_zero_pattern": true
+      }
+    ]
+  },
+  "clipped_cone_and_scaling": {
+    "finite_torus_controls": [
+      {
+        "periods": [
+          6,
+          6
+        ],
+        "epsilon": 0.01,
+        "vT": 0.0,
+        "clipped_sum": 0.3394305401730082,
+        "ratio_to_claimed_scale": 1.0803719715860716
+      },
+      {
+        "periods": [
+          6,
+          6
+        ],
+        "epsilon": 0.01,
+        "vT": 2.0,
+        "clipped_sum": 0.36,
+        "ratio_to_claimed_scale": 0.6224215586356995
+      },
+      {
+        "periods": [
+          6,
+          6
+        ],
+        "epsilon": 0.01,
+        "vT": 20.0,
+        "clipped_sum": 0.36,
+        "ratio_to_claimed_scale": 0.0549094593137001
+      },
+      {
+        "periods": [
+          6,
+          6
+        ],
+        "epsilon": 0.01,
+        "vT": 100.0,
+        "clipped_sum": 0.36,
+        "ratio_to_claimed_scale": 0.0032279896920249054
+      },
+      {
+        "periods": [
+          6,
+          6
+        ],
+        "epsilon": 0.2,
+        "vT": 0.0,
+        "clipped_sum": 2.756508600854423,
+        "ratio_to_claimed_scale": 2.024116104864747
+      },
+      {
+        "periods": [
+          6,
+          6
+        ],
+        "epsilon": 0.2,
+        "vT": 2.0,
+        "clipped_sum": 5.900146178253092,
+        "ratio_to_claimed_scale": 1.3884710748980915
+      },
+      {
+        "periods": [
+          6,
+          6
+        ],
+        "epsilon": 0.2,
+        "vT": 20.0,
+        "clipped_sum": 7.2,
+        "ratio_to_claimed_scale": 0.07042436983826036
+      },
+      {
+        "periods": [
+          6,
+          6
+        ],
+        "epsilon": 0.2,
+        "vT": 100.0,
+        "clipped_sum": 7.2,
+        "ratio_to_claimed_scale": 0.0034192266012814557
+      },
+      {
+        "periods": [
+          6,
+          10
+        ],
+        "epsilon": 0.01,
+        "vT": 0.0,
+        "clipped_sum": 0.4579304248933916,
+        "ratio_to_claimed_scale": 1.4575447328315057
+      },
+      {
+        "periods": [
+          6,
+          10
+        ],
+        "epsilon": 0.01,
+        "vT": 2.0,
+        "clipped_sum": 0.5794305401730082,
+        "ratio_to_claimed_scale": 1.0018057220433585
+      },
+      {
+        "periods": [
+          6,
+          10
+        ],
+        "epsilon": 0.01,
+        "vT": 20.0,
+        "clipped_sum": 0.6,
+        "ratio_to_claimed_scale": 0.0915157655228335
+      },
+      {
+        "periods": [
+          6,
+          10
+        ],
+        "epsilon": 0.01,
+        "vT": 100.0,
+        "clipped_sum": 0.6,
+        "ratio_to_claimed_scale": 0.00537998282004151
+      },
+      {
+        "periods": [
+          6,
+          10
+        ],
+        "epsilon": 0.2,
+        "vT": 0.0,
+        "clipped_sum": 2.9480581094976066,
+        "ratio_to_claimed_scale": 2.1647717317702524
+      },
+      {
+        "periods": [
+          6,
+          10
+        ],
+        "epsilon": 0.2,
+        "vT": 2.0,
+        "clipped_sum": 7.147636802168738,
+        "ratio_to_claimed_scale": 1.682040860320982
+      },
+      {
+        "periods": [
+          6,
+          10
+        ],
+        "epsilon": 0.2,
+        "vT": 20.0,
+        "clipped_sum": 12.0,
+        "ratio_to_claimed_scale": 0.11737394973043393
+      },
+      {
+        "periods": [
+          6,
+          10
+        ],
+        "epsilon": 0.2,
+        "vT": 100.0,
+        "clipped_sum": 12.0,
+        "ratio_to_claimed_scale": 0.005698711002135759
+      },
+      {
+        "periods": [
+          6,
+          6,
+          6
+        ],
+        "epsilon": 0.01,
+        "vT": 0.0,
+        "clipped_sum": 1.5087278430909081,
+        "ratio_to_claimed_scale": 0.8567310266298661
+      },
+      {
+        "periods": [
+          6,
+          6,
+          6
+        ],
+        "epsilon": 0.01,
+        "vT": 2.0,
+        "clipped_sum": 2.047067441009091,
+        "ratio_to_claimed_scale": 0.46537745452749474
+      },
+      {
+        "periods": [
+          6,
+          6,
+          6
+        ],
+        "epsilon": 0.01,
+        "vT": 20.0,
+        "clipped_sum": 2.16,
+        "ratio_to_claimed_scale": 0.012866805941500406
+      },
+      {
+        "periods": [
+          6,
+          6,
+          6
+        ],
+        "epsilon": 0.01,
+        "vT": 100.0,
+        "clipped_sum": 2.16,
+        "ratio_to_claimed_scale": 0.00018339952597054966
+      },
+      {
+        "periods": [
+          6,
+          6,
+          6
+        ],
+        "epsilon": 0.2,
+        "vT": 0.0,
+        "clipped_sum": 6.886461000884415,
+        "ratio_to_claimed_scale": 1.9378724691382345
+      },
+      {
+        "periods": [
+          6,
+          6,
+          6
+        ],
+        "epsilon": 0.2,
+        "vT": 2.0,
+        "clipped_sum": 21.66398767912967,
+        "ratio_to_claimed_scale": 1.1060238591982645
+      },
+      {
+        "periods": [
+          6,
+          6,
+          6
+        ],
+        "epsilon": 0.2,
+        "vT": 20.0,
+        "clipped_sum": 43.2,
+        "ratio_to_claimed_scale": 0.01868893073176234
+      },
+      {
+        "periods": [
+          6,
+          6,
+          6
+        ],
+        "epsilon": 0.2,
+        "vT": 100.0,
+        "clipped_sum": 43.2,
+        "ratio_to_claimed_scale": 0.00019993638036684642
+      },
+      {
+        "periods": [
+          6,
+          8,
+          10
+        ],
+        "epsilon": 0.01,
+        "vT": 0.0,
+        "clipped_sum": 2.0325340240675276,
+        "ratio_to_claimed_scale": 1.1541743390458408
+      },
+      {
+        "periods": [
+          6,
+          8,
+          10
+        ],
+        "epsilon": 0.01,
+        "vT": 2.0,
+        "clipped_sum": 3.525632116134941,
+        "ratio_to_claimed_scale": 0.8015122838349011
+      },
+      {
+        "periods": [
+          6,
+          8,
+          10
+        ],
+        "epsilon": 0.01,
+        "vT": 20.0,
+        "clipped_sum": 4.8,
+        "ratio_to_claimed_scale": 0.02859290209222312
+      },
+      {
+        "periods": [
+          6,
+          8,
+          10
+        ],
+        "epsilon": 0.01,
+        "vT": 100.0,
+        "clipped_sum": 4.8,
+        "ratio_to_claimed_scale": 0.00040755450215677696
+      },
+      {
+        "periods": [
+          6,
+          8,
+          10
+        ],
+        "epsilon": 0.2,
+        "vT": 0.0,
+        "clipped_sum": 7.581313346372839,
+        "ratio_to_claimed_scale": 2.1334061736441066
+      },
+      {
+        "periods": [
+          6,
+          8,
+          10
+        ],
+        "epsilon": 0.2,
+        "vT": 2.0,
+        "clipped_sum": 26.462531758074284,
+        "ratio_to_claimed_scale": 1.3510066536558232
+      },
+      {
+        "periods": [
+          6,
+          8,
+          10
+        ],
+        "epsilon": 0.2,
+        "vT": 20.0,
+        "clipped_sum": 96.0,
+        "ratio_to_claimed_scale": 0.04153095718169409
+      },
+      {
+        "periods": [
+          6,
+          8,
+          10
+        ],
+        "epsilon": 0.2,
+        "vT": 100.0,
+        "clipped_sum": 96.0,
+        "ratio_to_claimed_scale": 0.00044430306748188093
+      }
+    ],
+    "max_observed_ratio": 2.1647717317702524,
+    "scaling_powers": [
+      {
+        "dimension": 2,
+        "normal_form_order": 10,
+        "remainder_after_cone_power": 3,
+        "birth_after_cone_power": 1
+      },
+      {
+        "dimension": 3,
+        "normal_form_order": 12,
+        "remainder_after_cone_power": 3,
+        "birth_after_cone_power": 1
+      },
+      {
+        "dimension": 4,
+        "normal_form_order": 14,
+        "remainder_after_cone_power": 3,
+        "birth_after_cone_power": 1
+      }
+    ]
+  },
+  "limits": [
+    "No author runner executed; stored exact matrices independently recomposed.",
+    "Finite controls do not prove locality, uniform constants, or a thermodynamic field phase.",
+    "PRE and all primary sources are unchanged."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "failure": "The first comparison run stopped at a structurally compared, unexpanded SymPy polynomial identity. All four rational-series recompositions had already passed.",
+  "actual_expression": "s**4/4 - s**2/4",
+  "expected_expression": "-s**2*(1 - s**2)/4",
+  "simplified_difference": "0",
+  "correction": "Use simplify(lhs-rhs)==0. No mathematical assertion, model, or tolerance changed."
+}

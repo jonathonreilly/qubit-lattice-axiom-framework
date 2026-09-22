@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-22T19:02:18.633327+00:00",
+  "status": "Frozen personally derived finite-volume construction, independent reconstruction pending",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+      "bytes": 15367,
+      "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_record_ring_and_formation_check.py",
+      "bytes": 13932,
+      "sha256": "3c3cb5c32bd66f95668c5b6667aca711d5cfc6ddd95146ee6d0b92f18cbebbf7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AND_FORMATION_RESULTS.json",
+      "bytes": 18787,
+      "sha256": "7c557c81aad396810109252e2d302f0bee41a00341d34a4719a3cdcb029863c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AND_FORMATION_RUN.log",
+      "bytes": 18787,
+      "sha256": "7c557c81aad396810109252e2d302f0bee41a00341d34a4719a3cdcb029863c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AND_FORMATION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AND_FORMATION_RUN_RECEIPT.json",
+      "bytes": 472,
+      "sha256": "8b79e3c8298352c392397ad8e752270b2b569698c5f609737f55ed12558333a3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_SOURCE_CONTEXT.json",
+      "bytes": 1918,
+      "sha256": "4d289ec6d535f7464141a2c9a9ed8855991c1effb6e219242778b525b970a4eb"
+    }
+  ],
+  "limits": "Exact occupancy exclusion with supplied spin-half links, identical bosonic records, checkerboard penalty/background, and increasing microscopic energy scales. No native compiler or thermodynamic photon result."
+}

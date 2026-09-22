@@ -1,0 +1,24 @@
+{
+  "read_before_precomparison": true,
+  "import": {
+    "source": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/literature/Nachtergaele_Sims_0506030v3.pdf",
+      "bytes": 175375,
+      "sha256": "c6af8d70ba5081a5d5bf000881d47fca6bfd19eb9a9bc74ff40939e48079c498"
+    },
+    "version": "arXiv math-ph/0506030v3, 2 September 2005",
+    "coverage": "Definitions and interaction norm on PDF page 2; Theorem 1 and local-observable corollaries on page 3; complete Section 3.1 proof on pages 5-6. Clustering theorem not imported.",
+    "hypotheses_checked": "Finite cell dimension, arbitrary finite metric graph, bounded finite-range interaction norm proportional to the stated strength. Applied to finite-range F_r and each preparation generator, not directly to a constrained tensor factorization or a growing onsite penalty.",
+    "own_steps": "Homological recursion, finite local integral remainder, clipped-cone spatial sum, open-system Duhamel and scaling are reconstructed in REPORT."
+  },
+  "context_only": {
+    "source": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/literature/Bravyi_DiVincenzo_Loss_1105.0675v1.html",
+      "bytes": 1019233,
+      "sha256": "a1616b2bf968d4c1067a076336c1606006be6fddbfa4b8cbca1f07e8fb19b825"
+    },
+    "coverage": "Complete Section 4.4 through Lemma 4.2 proof, including the local recursion, interaction-strength estimate and stated ground-energy theorem. Adjacent Section 4.5 opening viewed. No ground-energy theorem imported as dynamical control."
+  },
+  "failed_lookup": "Nonexistent 1810.02428v4 HTML returned 404; later abstract/version history only, no theorem used. See download receipt.",
+  "limits": "No claim that all of either paper was read or independently reproved."
+}

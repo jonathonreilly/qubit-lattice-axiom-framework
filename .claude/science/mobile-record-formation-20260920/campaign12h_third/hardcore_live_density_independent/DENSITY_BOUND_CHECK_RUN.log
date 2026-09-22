@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-09-22T20:17:45.484928+00:00",
+  "script_sha256": "6f9ff0ba694fdb726c5d7030896686ad5507961bbd5f464cd37f417f2007a80c",
+  "own_operator_builder_sha256": "c1e6142e632ae77c14fee1b76079c8cba0f2e9c73cf1fed2e40f84f0a3893122",
+  "exact_clock_controls": [
+    {
+      "potential": "sublattice",
+      "instrument": "coherent_plus",
+      "time_derivatives_orders_0_to_3_of_record_density": [
+        "1/2",
+        "0",
+        "0",
+        "9/5"
+      ],
+      "time_cubic_coefficient": "3/10"
+    },
+    {
+      "potential": "sublattice",
+      "instrument": "coherent_minus",
+      "time_derivatives_orders_0_to_3_of_record_density": [
+        "1/2",
+        "0",
+        "0",
+        "9/5"
+      ],
+      "time_cubic_coefficient": "3/10"
+    },
+    {
+      "potential": "sublattice",
+      "instrument": "resolved",
+      "time_derivatives_orders_0_to_3_of_record_density": [
+        "1/2",
+        "0",
+        "0",
+        "9/5"
+      ],
+      "time_cubic_coefficient": "3/10"
+    },
+    {
+      "potential": "field_squared",
+      "instrument": "coherent_plus",
+      "time_derivatives_orders_0_to_3_of_record_density": [
+        "1/2",
+        "0",
+        "0",
+        "9/5"
+      ],
+      "time_cubic_coefficient": "3/10"
+    },
+    {
+      "potential": "field_squared",
+      "instrument": "coherent_minus",
+      "time_derivatives_orders_0_to_3_of_record_density": [
+        "1/2",
+        "0",
+        "0",
+        "9/5"
+      ],
+      "time_cubic_coefficient": "3/10"
+    },
+    {
+      "potential": "field_squared",
+      "instrument": "resolved",
+      "time_derivatives_orders_0_to_3_of_record_density": [
+        "1/2",
+        "0",
+        "0",
+        "9/5"
+      ],
+      "time_cubic_coefficient": "3/10"
+    }
+  ],
+  "symbolic_scalar_bound_ODE": "Verified exactly for general positive alpha,kappa,C,lambda,beta,d; d is an integer >=1 in the theorem.",
+  "exponents": {
+    "sublattice": "(6d-1) beta",
+    "field_squared": "(18d-1) beta"
+  },
+  "normalization": "One coherent sign per edge or two charge-resolved channels has total loss beta*Pvac. Both coherent signs at the displayed strength double beta."
+}

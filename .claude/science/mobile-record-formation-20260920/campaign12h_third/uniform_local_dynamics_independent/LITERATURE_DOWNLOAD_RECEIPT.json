@@ -1,0 +1,35 @@
+{
+  "downloads": [
+    {
+      "url": "https://arxiv.org/pdf/math-ph/0506030v3",
+      "final_url": "https://arxiv.org/pdf/math-ph/0506030v3",
+      "started_utc": "2026-09-22T20:50:10.026437+00:00",
+      "completed_utc": "2026-09-22T20:50:10.228290+00:00",
+      "content_type": "application/pdf",
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/literature/Nachtergaele_Sims_0506030v3.pdf",
+      "bytes": 175375,
+      "sha256": "c6af8d70ba5081a5d5bf000881d47fca6bfd19eb9a9bc74ff40939e48079c498"
+    },
+    {
+      "url": "https://arxiv.org/html/1105.0675v1",
+      "final_url": "https://arxiv.org/html/1105.0675v1",
+      "started_utc": "2026-09-22T20:50:10.228589+00:00",
+      "completed_utc": "2026-09-22T20:50:10.436920+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/literature/Bravyi_DiVincenzo_Loss_1105.0675v1.html",
+      "bytes": 1019233,
+      "sha256": "a1616b2bf968d4c1067a076336c1606006be6fddbfa4b8cbca1f07e8fb19b825"
+    }
+  ],
+  "earlier_web_attempts": [
+    {
+      "url": "https://arxiv.org/html/1810.02428v4",
+      "outcome": "404; no such version",
+      "used_in_proof": false
+    },
+    {
+      "url": "https://arxiv.org/abs/1810.02428",
+      "outcome": "Abstract/version history read; v2 latest listed. No theorem imported."
+    }
+  ]
+}

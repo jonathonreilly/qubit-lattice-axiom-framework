@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/verify_evidence.py"
+  ],
+  "started_utc": "2026-09-22T20:23:45.921125+00:00",
+  "finished_utc": "2026-09-22T20:23:46.056728+00:00",
+  "returncode": 0,
+  "script_sha256": "78e75b3a4fc99d12be4b19dac9efc6ad1229d16124a58ef9378ab0d8fb3e4e63"
+}

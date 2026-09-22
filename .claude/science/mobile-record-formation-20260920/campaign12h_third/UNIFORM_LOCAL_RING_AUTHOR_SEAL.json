@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-09-22T20:40:42.311704+00:00",
+  "status": "Author conditional uniform-local theorem and finite controls frozen before independent comparison; not retained or independently established.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION.md",
+      "bytes": 17686,
+      "sha256": "e03793ab0cc06bcc0d536db5b846addf3a999733c6dc25cc4d08ae457263e16e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_SOURCE_CONTEXT.json",
+      "bytes": 2161,
+      "sha256": "247b63cefc951eb010166556aca368991ee7a6c61b79aeafb8a5ac1fb7359713"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_normal_form_record_check.py",
+      "bytes": 6805,
+      "sha256": "9507de54429615ccc0256da4965f9a4e093787797d635e53c751d3279028d3ec"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_NORMAL_FORM_RECORD_RESULTS.json",
+      "bytes": 135236,
+      "sha256": "b7776666d455926c77a55bfa884f0399fc4bec5d041de1633143f7cea7d1abf6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_NORMAL_FORM_RECORD_RUN.stdout",
+      "bytes": 3534,
+      "sha256": "a71b1f5fdae01794dba37f9830b63ede516af754a6d24e657d26d697618bd77e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_NORMAL_FORM_RECORD_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_NORMAL_FORM_RECORD_RUN_RECEIPT.json",
+      "bytes": 290,
+      "sha256": "73ed958b532c4bdc49656d86c1fc09aee9d05dde21a65473825cc2eea278a5bd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_circuit_normal_form_record_check.py",
+      "bytes": 6562,
+      "sha256": "17c238c8ac4a7c8517068c7dfe26b5eb50872e9325ec1b0f41bbf95c338aae6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CIRCUIT_NORMAL_FORM_RECORD_RESULTS.json",
+      "bytes": 303903,
+      "sha256": "6f374492bb6c2df490ec97bc8fa2ef1d7ceced58c41ee20a864a9603990e23b8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CIRCUIT_NORMAL_FORM_RECORD_RUN.stdout",
+      "bytes": 1696,
+      "sha256": "9bdec48ffcbf4a9a138983d07576db3e404884ed97d54076c2fa1f6f60c649a0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CIRCUIT_NORMAL_FORM_RECORD_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CIRCUIT_NORMAL_FORM_RECORD_RUN_RECEIPT.json",
+      "bytes": 299,
+      "sha256": "526baa6738a29fe563f8ca3926fb2c0a1972f3a929c096244d50dadf58261c10"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_normal_form_source_history/first_residual_screen/DIAGNOSIS.json",
+      "bytes": 617,
+      "sha256": "a0c60f1b722b81d4274f6519192e55b28f2328a5b1cbb1fffced93e86482375b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_normal_form_source_history/first_residual_screen/LOCAL_NORMAL_FORM_RECORD_RUN.stderr",
+      "bytes": 568,
+      "sha256": "3aa3d95a68feaebad6a298c4223a6146af7fc75da9e5fa3f3a1a6afae751f3e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_normal_form_source_history/first_residual_screen/LOCAL_NORMAL_FORM_RECORD_RUN.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_normal_form_source_history/first_residual_screen/LOCAL_NORMAL_FORM_RECORD_RUN_RECEIPT.json",
+      "bytes": 290,
+      "sha256": "ae83a97a8f2a56db149d85728980af30a98c79991a9bb4c96f7a7e65747a1b0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_normal_form_source_history/first_residual_screen/local_normal_form_record_check.py",
+      "bytes": 5891,
+      "sha256": "e315b8c6507bf4666015c0ccb204febd97364918e0dbfe70c132a78b3fa9316d"
+    }
+  ],
+  "scope": "Supplied bosonic gauge-record Hamiltonians, finite local dressed preparation, beta=beta0 epsilon^(2d), fixed finite local observation horizon. No fixed-beta or bare-quench uniform field theorem."
+}

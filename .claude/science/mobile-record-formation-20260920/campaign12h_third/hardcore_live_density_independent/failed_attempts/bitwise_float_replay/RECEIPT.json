@@ -1,0 +1,10 @@
+{
+  "original_tool_chunk": "f0f202",
+  "original_observed_exit_code": 1,
+  "reproduction_started_utc": "2026-09-22T20:16:43.594488+00:00",
+  "reproduction_finished_utc": "2026-09-22T20:16:43.627200+00:00",
+  "reproduction_exit_code": 1,
+  "reason": "Successful numerical Liouvillian exponential evaluations differed only at floating roundoff. Exact dictionary equality was an inappropriate bookkeeping assertion.",
+  "maximum_difference": 3.552713678800501e-15,
+  "repair": "Exact fields remain exactly compared; numerical fields checked within 1e-12 in the final evidence verifier. No scientific checker, parameters, thresholds or results changed in response."
+}

@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-22T19:30:23.428450+00:00",
+  "status": "Frozen personally derived volume-uniform density theorem and finite controls; independent reconstruction pending",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_RECORD_DENSITY_WITH_LIVE_FORMATION.md",
+      "bytes": 11198,
+      "sha256": "b900352f9e1d33c249f5ff155602feb6345c680d09ea192eedbc65d51ee670a4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/record_density_and_fast_defect_check.py",
+      "bytes": 9979,
+      "sha256": "64bd01ac51dbaaf129c39766c3701834bcf23929a9d086d3d322773c7674bf94"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RECORD_DENSITY_AND_FAST_DEFECT_RESULTS.json",
+      "bytes": 11029,
+      "sha256": "3792c3b7aaf34317dd3badd2ce5429942b86e02a5be2fe9d9c4895f88235833a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RECORD_DENSITY_RUN.stdout",
+      "bytes": 11029,
+      "sha256": "3792c3b7aaf34317dd3badd2ce5429942b86e02a5be2fe9d9c4895f88235833a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RECORD_DENSITY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RECORD_DENSITY_RUN_RECEIPT.json",
+      "bytes": 382,
+      "sha256": "c085dbbbfaee591fb02cc171ada47a9fd3cc26d8ecc0d34afaf075e33e219175"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RECORD_DENSITY_SOURCE_CONTEXT.json",
+      "bytes": 2022,
+      "sha256": "181e643395d55fc3f93ee30acc285ee8b2d6400a716472b4e42095f8764249d0"
+    }
+  ],
+  "limits": "Uniform mean density control is not uniform field-dynamics convergence. Enlarged fields, quantum amplitudes, background and scalable energies are supplied. Fast-star transport and exact finite energy cost do not establish a many-body obstruction."
+}

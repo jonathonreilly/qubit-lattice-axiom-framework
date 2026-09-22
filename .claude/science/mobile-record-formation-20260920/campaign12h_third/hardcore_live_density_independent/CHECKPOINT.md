@@ -1,0 +1,1 @@
+Independent hard-core/live-density report sealed before author access. PRE_COMPARISON_SEAL.json authenticates all sources, scripts, complete results, logs and preserved helper failures. Await explicit authorization and exact author packet for a separate bounded comparison. No newer author hard-core, density, homogeneous-star, ramp or checkpoint/registry source opened.

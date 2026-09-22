@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T20:31:03.667199+00:00",
+  "finished_utc": "2026-09-22T20:31:04.680847+00:00",
+  "command": [
+    "python3",
+    "local_normal_form_record_check.py"
+  ],
+  "exit_code": 1,
+  "runner_sha256": "e315b8c6507bf4666015c0ccb204febd97364918e0dbfe70c132a78b3fa9316d"
+}

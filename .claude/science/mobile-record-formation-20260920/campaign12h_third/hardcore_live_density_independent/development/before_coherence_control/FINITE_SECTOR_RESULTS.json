@@ -1,0 +1,829 @@
+{
+  "created_utc": "2026-09-22T20:11:07.839194+00:00",
+  "script_sha256": "d847ebd15628e722904eb81957f0e93d85e0734fb6d2a57f50f663d4804878be",
+  "cases": {
+    "cycle_4": {
+      "physical_dimension": 9,
+      "plus_only_dimension": 7,
+      "low_dimension": 2,
+      "states": [
+        0,
+        2,
+        6,
+        8,
+        9,
+        10,
+        11,
+        14,
+        15
+      ],
+      "charges": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "low_states": [
+        0,
+        15
+      ],
+      "second_order_coefficient": [
+        [
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "-2"
+        ]
+      ],
+      "fourth_order_coefficient": [
+        [
+          "2",
+          "-2"
+        ],
+        [
+          "-2",
+          "2"
+        ]
+      ],
+      "unfolded_fourth_excursion": [
+        [
+          "-2",
+          "-2"
+        ],
+        [
+          "-2",
+          "-2"
+        ]
+      ],
+      "folded_fourth_term": [
+        [
+          "4",
+          "0"
+        ],
+        [
+          "0",
+          "4"
+        ]
+      ],
+      "field_potential_birth_changes_in_units_Delta": [
+        0
+      ],
+      "exact_controls": "charge/count/potential identities, coherent and resolved loss, all dissipative hopping identities, and complete fourth-order physical-sector matrices"
+    },
+    "cycle_6": {
+      "physical_dimension": 27,
+      "plus_only_dimension": 18,
+      "low_dimension": 2,
+      "states": [
+        0,
+        2,
+        6,
+        8,
+        10,
+        14,
+        24,
+        26,
+        30,
+        32,
+        33,
+        34,
+        35,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        46,
+        47,
+        56,
+        57,
+        58,
+        59,
+        62,
+        63
+      ],
+      "charges": [
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "low_states": [
+        0,
+        63
+      ],
+      "second_order_coefficient": [
+        [
+          "-3",
+          "0"
+        ],
+        [
+          "0",
+          "-3"
+        ]
+      ],
+      "fourth_order_coefficient": [
+        [
+          "3",
+          "0"
+        ],
+        [
+          "0",
+          "3"
+        ]
+      ],
+      "unfolded_fourth_excursion": [
+        [
+          "-6",
+          "0"
+        ],
+        [
+          "0",
+          "-6"
+        ]
+      ],
+      "folded_fourth_term": [
+        [
+          "9",
+          "0"
+        ],
+        [
+          "0",
+          "9"
+        ]
+      ],
+      "field_potential_birth_changes_in_units_Delta": [
+        0
+      ],
+      "exact_controls": "charge/count/potential identities, coherent and resolved loss, all dissipative hopping identities, and complete fourth-order physical-sector matrices"
+    },
+    "four_leaf_star_with_frozen_external_ice_flow": {
+      "physical_dimension": 11,
+      "plus_only_dimension": 3,
+      "low_dimension": 1,
+      "states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "charges": [
+        [
+          -1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ]
+      ],
+      "low_states": [
+        3
+      ],
+      "second_order_coefficient": [
+        [
+          "-2"
+        ]
+      ],
+      "fourth_order_coefficient": [
+        [
+          "4"
+        ]
+      ],
+      "unfolded_fourth_excursion": [
+        [
+          "0"
+        ]
+      ],
+      "folded_fourth_term": [
+        [
+          "4"
+        ]
+      ],
+      "field_potential_birth_changes_in_units_Delta": [
+        0,
+        2
+      ],
+      "exact_controls": "charge/count/potential identities, coherent and resolved loss, all dissipative hopping identities, and complete fourth-order physical-sector matrices"
+    }
+  },
+  "dynamics": {
+    "geometry": "complete six-cycle physical sector; mean-density control, not a cubic plaquette-dynamics test",
+    "Delta": 64.0,
+    "t": 2.25,
+    "beta": 0.3,
+    "initial": "equal coherent cat of two ice words",
+    "rows": [
+      {
+        "potential": "sublattice",
+        "instrument": "coherent_plus",
+        "time": 0.0,
+        "record_density": 0.49999999999999983,
+        "B_occupation_density": 0.0,
+        "A_vacancy_density": 0.0,
+        "proved_bound_B_density": 0.0098876953125,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "coherent_plus",
+        "time": 0.2,
+        "record_density": 0.5001420159689782,
+        "B_occupation_density": 0.00018534911394715154,
+        "A_vacancy_density": 4.3333144968324054e-05,
+        "proved_bound_B_density": 0.014038852062547303,
+        "trace": 0.9999999999999989,
+        "minimum_eigenvalue": -1.956810542293464e-17
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "coherent_plus",
+        "time": 0.5,
+        "record_density": 0.50034860031007,
+        "B_occupation_density": 0.0005985201164654799,
+        "A_vacancy_density": 0.00024991980639617464,
+        "proved_bound_B_density": 0.02314116230648828,
+        "trace": 1.0000000000000013,
+        "minimum_eigenvalue": -1.3513718616755233e-16
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "coherent_plus",
+        "time": 1.0,
+        "record_density": 0.5006798278961434,
+        "B_occupation_density": 0.0014980145907902368,
+        "A_vacancy_density": 0.0008181866946460836,
+        "proved_bound_B_density": 0.051198752152937,
+        "trace": 0.9999999999999987,
+        "minimum_eigenvalue": -2.511483000607215e-16
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "coherent_minus",
+        "time": 0.0,
+        "record_density": 0.49999999999999983,
+        "B_occupation_density": 0.0,
+        "A_vacancy_density": 0.0,
+        "proved_bound_B_density": 0.0098876953125,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "coherent_minus",
+        "time": 0.2,
+        "record_density": 0.5001420159689782,
+        "B_occupation_density": 0.00018534911394715154,
+        "A_vacancy_density": 4.3333144968324054e-05,
+        "proved_bound_B_density": 0.014038852062547303,
+        "trace": 0.9999999999999989,
+        "minimum_eigenvalue": -1.956810542293464e-17
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "coherent_minus",
+        "time": 0.5,
+        "record_density": 0.50034860031007,
+        "B_occupation_density": 0.0005985201164654799,
+        "A_vacancy_density": 0.00024991980639617464,
+        "proved_bound_B_density": 0.02314116230648828,
+        "trace": 1.0000000000000013,
+        "minimum_eigenvalue": -1.3513718616755233e-16
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "coherent_minus",
+        "time": 1.0,
+        "record_density": 0.5006798278961452,
+        "B_occupation_density": 0.0014980145907902429,
+        "A_vacancy_density": 0.0008181866946460871,
+        "proved_bound_B_density": 0.051198752152937,
+        "trace": 1.0000000000000022,
+        "minimum_eigenvalue": -3.8968089772915974e-16
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "resolved",
+        "time": 0.0,
+        "record_density": 0.49999999999999983,
+        "B_occupation_density": 0.0,
+        "A_vacancy_density": 0.0,
+        "proved_bound_B_density": 0.0098876953125,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "resolved",
+        "time": 0.2,
+        "record_density": 0.5001420159689782,
+        "B_occupation_density": 0.00018534911394715154,
+        "A_vacancy_density": 4.3333144968324054e-05,
+        "proved_bound_B_density": 0.014038852062547303,
+        "trace": 0.9999999999999989,
+        "minimum_eigenvalue": -1.956810542293464e-17
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "resolved",
+        "time": 0.5,
+        "record_density": 0.5003486003100696,
+        "B_occupation_density": 0.0005985201164654784,
+        "A_vacancy_density": 0.00024991980639617334,
+        "proved_bound_B_density": 0.02314116230648828,
+        "trace": 1.0000000000000002,
+        "minimum_eigenvalue": -2.7930032912677906e-16
+      },
+      {
+        "potential": "sublattice",
+        "instrument": "resolved",
+        "time": 1.0,
+        "record_density": 0.5006798278961434,
+        "B_occupation_density": 0.0014980145907902368,
+        "A_vacancy_density": 0.0008181866946460836,
+        "proved_bound_B_density": 0.051198752152937,
+        "trace": 0.9999999999999987,
+        "minimum_eigenvalue": -2.511483000607215e-16
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "coherent_plus",
+        "time": 0.0,
+        "record_density": 0.49999999999999983,
+        "B_occupation_density": 0.0,
+        "A_vacancy_density": 0.0,
+        "proved_bound_B_density": 0.03955078125,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "coherent_plus",
+        "time": 0.2,
+        "record_density": 0.5001420159689783,
+        "B_occupation_density": 0.00018534911394715135,
+        "A_vacancy_density": 4.333314496832391e-05,
+        "proved_bound_B_density": 0.11380738642750306,
+        "trace": 0.9999999999999989,
+        "minimum_eigenvalue": -7.305066989972229e-18
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "coherent_plus",
+        "time": 0.5,
+        "record_density": 0.50034860031007,
+        "B_occupation_density": 0.0005985201164654799,
+        "A_vacancy_density": 0.00024991980639617464,
+        "proved_bound_B_density": 0.5340003824426326,
+        "trace": 1.0000000000000013,
+        "minimum_eigenvalue": -1.3513718616755233e-16
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "coherent_plus",
+        "time": 1.0,
+        "record_density": 0.5006798278961434,
+        "B_occupation_density": 0.0014980145907902368,
+        "A_vacancy_density": 0.0008181866946460836,
+        "proved_bound_B_density": 6.866467740213025,
+        "trace": 0.9999999999999987,
+        "minimum_eigenvalue": -2.511483000607215e-16
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "coherent_minus",
+        "time": 0.0,
+        "record_density": 0.49999999999999983,
+        "B_occupation_density": 0.0,
+        "A_vacancy_density": 0.0,
+        "proved_bound_B_density": 0.03955078125,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "coherent_minus",
+        "time": 0.2,
+        "record_density": 0.5001420159689783,
+        "B_occupation_density": 0.00018534911394715135,
+        "A_vacancy_density": 4.333314496832391e-05,
+        "proved_bound_B_density": 0.11380738642750306,
+        "trace": 0.9999999999999989,
+        "minimum_eigenvalue": -7.305066989972229e-18
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "coherent_minus",
+        "time": 0.5,
+        "record_density": 0.50034860031007,
+        "B_occupation_density": 0.0005985201164654799,
+        "A_vacancy_density": 0.00024991980639617464,
+        "proved_bound_B_density": 0.5340003824426326,
+        "trace": 1.0000000000000013,
+        "minimum_eigenvalue": -1.3513718616755233e-16
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "coherent_minus",
+        "time": 1.0,
+        "record_density": 0.5006798278961434,
+        "B_occupation_density": 0.0014980145907902368,
+        "A_vacancy_density": 0.0008181866946460836,
+        "proved_bound_B_density": 6.866467740213025,
+        "trace": 0.9999999999999987,
+        "minimum_eigenvalue": -2.511483000607215e-16
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "resolved",
+        "time": 0.0,
+        "record_density": 0.49999999999999983,
+        "B_occupation_density": 0.0,
+        "A_vacancy_density": 0.0,
+        "proved_bound_B_density": 0.03955078125,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "resolved",
+        "time": 0.2,
+        "record_density": 0.5001420159689783,
+        "B_occupation_density": 0.00018534911394715135,
+        "A_vacancy_density": 4.333314496832391e-05,
+        "proved_bound_B_density": 0.11380738642750306,
+        "trace": 0.9999999999999989,
+        "minimum_eigenvalue": -7.305066989972229e-18
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "resolved",
+        "time": 0.5,
+        "record_density": 0.50034860031007,
+        "B_occupation_density": 0.0005985201164654799,
+        "A_vacancy_density": 0.00024991980639617464,
+        "proved_bound_B_density": 0.5340003824426326,
+        "trace": 1.0000000000000013,
+        "minimum_eigenvalue": -1.3513718616755233e-16
+      },
+      {
+        "potential": "field_squared",
+        "instrument": "resolved",
+        "time": 1.0,
+        "record_density": 0.5006798278961434,
+        "B_occupation_density": 0.0014980145907902368,
+        "A_vacancy_density": 0.0008181866946460836,
+        "proved_bound_B_density": 6.866467740213025,
+        "trace": 0.9999999999999987,
+        "minimum_eigenvalue": -2.511483000607215e-16
+      }
+    ],
+    "coherent_plus_vs_resolved_final_HS_difference": {
+      "sublattice": 0.0,
+      "field_squared": 0.0
+    }
+  },
+  "limits": "Complete finite physical sectors. Four-cycle and star are local controls with fixed exterior flows and selected active internal hopping edges, not replacements for the prescribed large torus. Six-cycle obeys the d=1 period>=6 condition. No extrapolation of numerical values."
+}

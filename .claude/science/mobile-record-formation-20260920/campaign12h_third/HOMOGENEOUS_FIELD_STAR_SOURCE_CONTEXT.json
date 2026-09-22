@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-22T19:59:12.591416+00:00",
+  "author_head": "94b9deb79e80bac3c344b7844a9fa5781d3b4b82",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+      "bytes": 15367,
+      "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AUTHOR_SEAL.json",
+      "bytes": 2597,
+      "sha256": "f48d6ee6d9e013bcc12019164ede7f8593feb93e62cd6076e753573b2126ef26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_RECORD_DENSITY_WITH_LIVE_FORMATION.md",
+      "bytes": 11198,
+      "sha256": "b900352f9e1d33c249f5ff155602feb6345c680d09ea192eedbc65d51ee670a4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RECORD_DENSITY_AUTHOR_SEAL.json",
+      "bytes": 2584,
+      "sha256": "7b57069bb8dce7d13eee4c9301f58f15ac62eaed63fe445b1aee63396aad38bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/record_density_and_fast_defect_check.py",
+      "bytes": 9979,
+      "sha256": "64bd01ac51dbaaf129c39766c3701834bcf23929a9d086d3d322773c7674bf94"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_record_ring_and_formation_check.py",
+      "bytes": 13932,
+      "sha256": "3c3cb5c32bd66f95668c5b6667aca711d5cfc6ddd95146ee6d0b92f18cbebbf7"
+    }
+  ],
+  "literature": "No additional theorem imported. Exact sector identity, elementary energy/comparison estimate, and inherited finite ring theorem with its stated premises. Prior loop-method and local perturbation references remain credited in the inherited source.",
+  "limits": "Uniform Hamiltonian does not imply uniform selected sector or native qubit implementation; no volume-uniform field evolution claim."
+}

@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-22T21:15:58.392145+00:00",
+  "url": "https://arxiv.org/html/1111.4210v2",
+  "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/literature/Barthel_Kliesch_1111_4210v2.html",
+  "bytes": 334857,
+  "sha256": "abdeedde2be6d39e29f766e860d90e54783f9a384c3dbf1e75244769a07e84a7",
+  "read_coverage": "Complete Section II setting, Section III Theorems 1-2, complete Section V proof of Theorem 1, Appendices A-D. Section IV appeared in tool extract and was read, but no Trotter theorem is imported. Appendix E and references are not needed and not claimed reviewed.",
+  "use": "Finite-range time-dependent Lindblad locality in finite-dimensional tensor factors; local superoperator norm, bounded overlap and range; backward Heisenberg propagator is norm contracting.",
+  "hypothesis_mapping": "Use the onsite matter extension on the full tensor product, remove Delta N by exact onsite interaction picture, retain each transformed dissipator in Lindblad form. Depth and range depend only on fixed perturbative order. Velocity O(h+delta_R+beta), without time-derivative bound."
+}

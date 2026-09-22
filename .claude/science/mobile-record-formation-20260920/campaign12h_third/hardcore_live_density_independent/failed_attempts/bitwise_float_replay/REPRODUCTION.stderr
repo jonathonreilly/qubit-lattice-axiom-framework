@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/failed_attempts/bitwise_float_replay/attempt.py", line 8, in <module>
+    assert a['dynamics']==old['dynamics'];print('All previous mathematical result fields unchanged exactly.')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/fourth_order_paths.py"
+  ],
+  "started_utc": "2026-09-22T20:10:36.130756+00:00",
+  "finished_utc": "2026-09-22T20:10:36.631520+00:00",
+  "returncode": 0,
+  "script_sha256": "272c2e29ff04609adb080c98aba9ca8474bfc93b71a03290aed12054ca632118"
+}

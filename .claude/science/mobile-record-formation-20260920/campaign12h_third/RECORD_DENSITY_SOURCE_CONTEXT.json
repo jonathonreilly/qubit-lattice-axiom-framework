@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-22T19:30:23.428450+00:00",
+  "author_head": "94b9deb79e80bac3c344b7844a9fa5781d3b4b82",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+      "bytes": 15367,
+      "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AUTHOR_SEAL.json",
+      "bytes": 2597,
+      "sha256": "f48d6ee6d9e013bcc12019164ede7f8593feb93e62cd6076e753573b2126ef26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_record_ring_and_formation_check.py",
+      "bytes": 13932,
+      "sha256": "3c3cb5c32bd66f95668c5b6667aca711d5cfc6ddd95146ee6d0b92f18cbebbf7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md",
+      "bytes": 9771,
+      "sha256": "9c71310bfe26b93ae5206d5a4525bc01dc6136be1d39e6f1b08ecfa08b83e6a4"
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/html/1105.0675",
+      "read_scope": "Sections4.3 and4.4 through Eq4.27; context only; no imported theorem used in density proof."
+    },
+    {
+      "url": "https://arxiv.org/html/1509.05386v3",
+      "read_scope": "Section2.2 and Section3 including Theorems3.1-3.3; no bare-state or open-system approximation theorem imported."
+    }
+  ],
+  "check_scope": "Complete local exact operator identities and exact three-state star; nine-state complete finite Lindblad controls. First run warnings preserved, integer dtype explicit in final run; scientific result fields identical."
+}

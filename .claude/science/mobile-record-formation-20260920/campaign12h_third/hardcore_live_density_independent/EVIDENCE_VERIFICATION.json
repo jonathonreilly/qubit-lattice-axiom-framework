@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-09-22T20:23:46.048898+00:00",
+  "scientific_checks": [
+    {
+      "script": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/finite_sector_check.py",
+        "bytes": 11173,
+        "sha256": "c1e6142e632ae77c14fee1b76079c8cba0f2e9c73cf1fed2e40f84f0a3893122"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/FINITE_SECTOR_RESULTS.json",
+        "bytes": 22066,
+        "sha256": "192bc51119348ebc0889e7929c0c578dd15f743b4dc6388c83ffaa7a0baceb1a"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/FINITE_SECTOR_CHECK_RECEIPT.json",
+        "bytes": 484,
+        "sha256": "a0dc4426fb73a7ee5fa035f5a8beaae763592bf0672b8060b3c01adf8a7ac33b"
+      },
+      "streams": "stdout exactly equals complete JSON; stderr empty"
+    },
+    {
+      "script": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/fourth_order_paths.py",
+        "bytes": 3937,
+        "sha256": "272c2e29ff04609adb080c98aba9ca8474bfc93b71a03290aed12054ca632118"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/FOURTH_ORDER_RESULTS.json",
+        "bytes": 2521,
+        "sha256": "e0b8287324cbcdc9712c6b43b468c77d25de556db846cc1c176a94b7e2408047"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/FOURTH_ORDER_PATHS_RECEIPT.json",
+        "bytes": 483,
+        "sha256": "6d435395586186406c039a16398ed32d47170b37ef1f35d1a59197d17daaba01"
+      },
+      "streams": "stdout exactly equals complete JSON; stderr empty"
+    },
+    {
+      "script": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/density_bound_check.py",
+        "bytes": 2825,
+        "sha256": "6f9ff0ba694fdb726c5d7030896686ad5507961bbd5f464cd37f417f2007a80c"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/DENSITY_BOUND_RESULTS.json",
+        "bytes": 2147,
+        "sha256": "4154d949f14303e52ee297ed0010edacecc9c5be83f1267718d749ce8e96385c"
+      },
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/DENSITY_BOUND_CHECK_RECEIPT.json",
+        "bytes": 484,
+        "sha256": "934b06695804abb3c006f864cdfccbc3cefc64e312f3eb2f749ff9a09f1e6371"
+      },
+      "streams": "stdout exactly equals complete JSON; stderr empty"
+    }
+  ],
+  "physical_dimensions": {
+    "cycle_4": 9,
+    "cycle_6": 27,
+    "four_leaf_star_with_frozen_external_ice_flow": 11,
+    "rectangle_3_by_2_with_frozen_external_ice_flow": 24
+  },
+  "previous_exact_results_preserved": true,
+  "max_float_replay_difference": 3.552713678800501e-15,
+  "float_replay_verification_tolerance": 1e-12,
+  "finite_density_artifact": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/FINITE_DENSITIES.npz",
+    "bytes": 14244,
+    "sha256": "2822bb982fa0d5981e35c05dd86b7282d068813b1896c2709d2ad688038bcace"
+  },
+  "all_six_numeric_density_arrays_verified": true,
+  "failures_preserved": [
+    "numpy_scalar_diag",
+    "bitwise_float_replay"
+  ],
+  "read_boundary": "Only neutral task and own reconstruction code/results; no author new hard-core, density, homogeneous-star, ramp source or output opened.",
+  "status": "Evidence authenticates; exact controls and finite numerical coverage are distinguished."
+}

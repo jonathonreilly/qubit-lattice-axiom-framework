@@ -1,0 +1,9 @@
+{
+  "stage": "Writing report after the scientific checker had already passed",
+  "tool": "apply_patch",
+  "outcome": "Rejected before any report file was created",
+  "error": "apply_patch verification failed: invalid hunk at line 212, 'to a fixed smaller (mu). There are only finitely many steps at fixed (r),' is not a valid hunk header. Valid hunk headers: '*** Add File: {path}', '*** Delete File: {path}', '*** Update File: {path}'",
+  "cause": "One report-content line lacked the plus prefix required by Add File patch syntax.",
+  "repair": "Constructed valid patch prefixes programmatically for every report line. The final report was also shortened for readability; no scientific checker, result, premise, or tolerance changed.",
+  "record_boundary": "Full rejected tool request remains in the task transcript. The rejected request produced no filesystem report artifact; this receipt preserves its exact error and cause. No claim that it was a mathematical failed assertion."
+}

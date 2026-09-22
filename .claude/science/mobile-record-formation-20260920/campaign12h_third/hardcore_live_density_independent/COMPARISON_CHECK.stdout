@@ -1,0 +1,264 @@
+{
+  "created_utc": "2026-09-22T20:38:39.039678+00:00",
+  "script": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/comparison_check.py",
+    "bytes": 14678,
+    "sha256": "b67f96b02df7bd93d2a2b3d04cd1859e1129d3294d4ccb1c078046c8026e525d"
+  },
+  "authentication": {
+    "prior_bindings": 41,
+    "author_artifact_bindings": 21,
+    "author_seal_bindings": 3,
+    "author_output_equals_full_log": true,
+    "prior_geometry_dependency": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_gauge_record_cooling_check.py",
+      "bytes": 12497,
+      "sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552"
+    },
+    "execution_scope": "Author runners were read, not rerun. No author module imported."
+  },
+  "square_statistics": [
+    {
+      "reference_A_sites": [
+        0
+      ],
+      "plus_sector_size": 5,
+      "H2": [
+        [
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "-1"
+        ]
+      ],
+      "H4": [
+        [
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ]
+    },
+    {
+      "reference_A_sites": [
+        0,
+        2
+      ],
+      "plus_sector_size": 7,
+      "H2": [
+        [
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "-2"
+        ]
+      ],
+      "H4": [
+        [
+          "2",
+          "-2"
+        ],
+        [
+          "-2",
+          "2"
+        ]
+      ],
+      "fermionic_H4_same_Fock_basis": [
+        [
+          "2",
+          "2"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ]
+    }
+  ],
+  "complex_reflection_series": {
+    "odd": {
+      "second": "-2/a",
+      "fourth": "4/a**3"
+    },
+    "even": {
+      "second": "-2/a",
+      "fourth": "4*(D - a)/(D*a**3)"
+    }
+  },
+  "fast_defect": {
+    "states": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "relative_penalties": [
+      1,
+      0,
+      0
+    ],
+    "hop": [
+      [
+        "0",
+        "-1",
+        "-1"
+      ],
+      [
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0"
+      ]
+    ],
+    "H2": [
+      [
+        "-1",
+        "-1"
+      ],
+      [
+        "-1",
+        "-1"
+      ]
+    ],
+    "det_H_minus_EI": "E*(D*E - E**2 + 2*t**2)",
+    "boundary": "Fixed exterior flows; not a periodic three-site torus."
+  },
+  "sharper_density_identities": {
+    "physical_rectangle_dimension": 24,
+    "instrument_edge_checks": 21,
+    "K_birth_invariant_and_counterterm": true,
+    "R_equals_K_over2_plus2minusA": true,
+    "exact_R_birth_derivative": "2 V_(A-minus)^dagger V_(A-minus)",
+    "integrated_original_bound": "4*beta*d*ep**2*tau*(C**2*beta**2*tau**2 + 6*C*beta*d*tau + 12*d**2)/3",
+    "homogeneous_comparison_ODE_and_d1_limit": true
+  },
+  "energy_ledgers": [
+    {
+      "potential": "sublattice",
+      "Delta": 37.0,
+      "t": 4.0,
+      "beta": 0.7,
+      "initial_low_energy": -0.864636775443205,
+      "birth_rate": 0.015976175177319148,
+      "power": 1.19605055171085,
+      "power_per_birth": 74.8646367754432,
+      "target_energy_minus_initial": 74.8646367754432,
+      "residual": 0.0
+    },
+    {
+      "potential": "star",
+      "Delta": 37.0,
+      "t": 4.0,
+      "beta": 0.7,
+      "initial_low_energy": -0.864636775443205,
+      "birth_rate": 0.015976175177319148,
+      "power": 0.6049320701500414,
+      "power_per_birth": 37.864636775443195,
+      "target_energy_minus_initial": 37.8646367754432,
+      "residual": -7.105427357601002e-15
+    }
+  ],
+  "censuses": {
+    "author_ring_columns_checked_arithmetically": [
+      {
+        "shape": [
+          6,
+          6
+        ],
+        "word": "0x111bbb111bbb111bbb",
+        "arithmetic_consistent": true
+      },
+      {
+        "shape": [
+          6,
+          6
+        ],
+        "word": "0x9bb419e85466611bbb",
+        "arithmetic_consistent": true
+      },
+      {
+        "shape": [
+          6,
+          6
+        ],
+        "word": "0x45047ae1b581eebee1",
+        "arithmetic_consistent": true
+      },
+      {
+        "shape": [
+          6,
+          6,
+          6
+        ],
+        "word": "0xf3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7f3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7f3cf11451f3cf11451f3cf1145128a2a79e728a2a79e728a2a79e7",
+        "arithmetic_consistent": true
+      },
+      {
+        "shape": [
+          6,
+          6,
+          6
+        ],
+        "word": "0x96fb81cb1211c1db7428c7539839e396670d98abae241db425f961ce3c53794cda253c54cbdb3d5a97a22138f1a5dd96a53a9aabdd1c58a90b86ef0d4b2a8d75ebaa3ae0ea4a172373572c69225874e50b",
+        "arithmetic_consistent": true
+      },
+      {
+        "shape": [
+          6,
+          6,
+          6
+        ],
+        "word": "0x84c7b30f36cecb68b5d75aca45948240d8a826465109ca8165d2dc650313b085b4a6c4552502a1f65baedf4c5e97074d562be2a56775ce58feb7544a2b199fc667b5bb53b384d78e8fe8ac4f5797c522dc",
+        "arithmetic_consistent": true
+      }
+    ],
+    "author_star_columns_checked_arithmetically": 6,
+    "independent_PRE_path_result": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/FOURTH_ORDER_RESULTS.json",
+      "bytes": 2521,
+      "sha256": "e0b8287324cbcdc9712c6b43b468c77d25de556db846cc1c176a94b7e2408047"
+    },
+    "limit": "Random author field words were not used to regenerate every path; PRE has separate exact path enumeration."
+  },
+  "limits": "Post-source selective checks. No author runner replay, literature theorem import, volume-uniform field-dynamics inference, or formal audit."
+}

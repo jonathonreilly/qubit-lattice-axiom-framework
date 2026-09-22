@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_live_density_independent/comparison_check.py"
+  ],
+  "started_utc": "2026-09-22T20:38:38.492503+00:00",
+  "completed_utc": "2026-09-22T20:38:39.290653+00:00",
+  "returncode": 0,
+  "script_sha256": "b67f96b02df7bd93d2a2b3d04cd1859e1129d3294d4ccb1c078046c8026e525d",
+  "stdout_sha256": "048f0917c1fdfaaf51ea98741acccf8b75fa87589654c672552f68c83c605535",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

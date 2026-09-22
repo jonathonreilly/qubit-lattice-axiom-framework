@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-09-22T21:18:31.982007+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/comparison_check.py"
+  ],
+  "script_sha256": "0f07df9ff802eacaca3827d6142c15513c95f5920cb8fb0660e17d2aa114ed05",
+  "finished_utc": "2026-09-22T21:18:33.356845+00:00",
+  "exit_code": 1,
+  "COMPARISON_CHECK.stdout": {
+    "bytes": 2744,
+    "sha256": "6c9206cf83917f0f2b2ed4945142e00bc7d372813a319d21cf8b234c5d7abd52"
+  },
+  "COMPARISON_CHECK.stderr": {
+    "bytes": 1008,
+    "sha256": "99fa7fc845397ee646642c06a3b7d59b13389707baf1847eca627c89b2e21591"
+  }
+}

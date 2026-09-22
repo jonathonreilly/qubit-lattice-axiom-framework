@@ -1,0 +1,93 @@
+[detached HEAD 7e741aa994] Preserve independently reviewed source unit PR8150
+ Date: Tue Sep 22 17:23:11 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 77 files changed, 3190 insertions(+)
+ create mode 100644 docs/ADMISSIBILITY_RULE_FORMATION_LAW_FLIP_IDENTITIES_AND_FINITE_MIXTURE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_FORMATION_RATE_IDENTITIES_AND_FINITE_WINDOW_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CONDITIONAL_IDENTITIES_AND_FINITE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_CHECKER_block14_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_CLAIM_STATUS_CERTIFICATE_block14.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_GOAL_block14.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_RESULTS_block14.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_rate_laws.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_rate_laws.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_CHECKER_block15_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_CLAIM_STATUS_CERTIFICATE_block15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_GOAL_block15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_RESULTS_block15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_formation_unit.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_formation_unit.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_CHECKER_block16_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_CLAIM_STATUS_CERTIFICATE_block16.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_GOAL_block16.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_RESULTS_block16.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_flip_monotonicity.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_flip_monotonicity.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8150/README.md
+ create mode 100644 docs/work_history/review_loop/pr8150/original-manifest.json
+ create mode 100644 logs/runner-cache/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt
+ create mode 100644 scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py
+FROZEN 7e741aa994ac678cd065007510ce84e219ace2b9 sources 77 inputs 89 notes 3

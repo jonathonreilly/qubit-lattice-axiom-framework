@@ -1,0 +1,35 @@
+{
+  "2d_reflected_edge_orbit": {
+    "distinct_edges": 8,
+    "all_direction_edges": 16,
+    "transverse_coordinates": "even only"
+  },
+  "3d_reflected_edge_orbit": {
+    "distinct_edges": 16,
+    "all_direction_edges": 64,
+    "transverse_coordinates": "even only"
+  },
+  "independent_spin_4x4": {
+    "site_reflected_event_probability": "1225/5184",
+    "claimed_all_direction_probability": "1500625/26873856",
+    "equal": false
+  },
+  "nonuniform_one_site_orbit": {
+    "distribution": [
+      "1/21",
+      "2/21",
+      "1/7",
+      "4/21",
+      "5/21",
+      "2/7"
+    ],
+    "orbit_size": 48,
+    "refutes_claimed_upper_bound_six": true
+  },
+  "spectrum_controls": 18,
+  "contour_arithmetic": {
+    "series": "5/8",
+    "sum": "295/768"
+  },
+  "elapsed_seconds": 0.0020419579814188182
+}

@@ -1,0 +1,17 @@
+{
+  "pr": 8555,
+  "reviewed_head": "b9279835bdbacd6a6028fc1c095a16145352f312",
+  "branch": "physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921",
+  "review_sha256": "f5ad113ae9280aa12c13ba38627056d233602ddda76d7e5d52f7219b4e08cd98",
+  "history_commit": "a7a7258ed04e6883bbd2d24083ea08dc51d9277f",
+  "branch_deleted": false,
+  "state": "CLOSED",
+  "closed": {
+    "closedAt": "2026-09-22T20:53:00Z",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921",
+    "headRefOid": "b9279835bdbacd6a6028fc1c095a16145352f312",
+    "number": 8555,
+    "state": "CLOSED"
+  },
+  "recovery_branch_verified": true
+}

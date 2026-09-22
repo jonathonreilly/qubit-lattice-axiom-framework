@@ -1,0 +1,17 @@
+{
+  "pr": 8572,
+  "reviewed_head": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+  "branch": "physics-loop/admissibility-induced-law-decision-record-source-link-amplitude-layer-20260921",
+  "review_sha256": "f5ad113ae9280aa12c13ba38627056d233602ddda76d7e5d52f7219b4e08cd98",
+  "history_commit": "a7a7258ed04e6883bbd2d24083ea08dc51d9277f",
+  "branch_deleted": false,
+  "state": "CLOSED",
+  "closed": {
+    "closedAt": "2026-09-22T20:53:05Z",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-source-link-amplitude-layer-20260921",
+    "headRefOid": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+    "number": 8572,
+    "state": "CLOSED"
+  },
+  "recovery_branch_verified": true
+}

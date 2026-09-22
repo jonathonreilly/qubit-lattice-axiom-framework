@@ -1,0 +1,100 @@
+{
+  "planning_commit": "a7a7258ed04e6883bbd2d24083ea08dc51d9277f",
+  "manifest": {
+    "review": "drain-meta-independent-review-v2.json",
+    "review_sha256": "f5ad113ae9280aa12c13ba38627056d233602ddda76d7e5d52f7219b4e08cd98",
+    "authority": "Historical source recovery only. These statements and instructions are unreviewed author history, not current framework premises, approved decisions, independent science or audit authority. All original branches are retained; separate source PRs remain independently reviewable.",
+    "files": [
+      {
+        "pr": 8179,
+        "revision": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD.md",
+        "mode": "100644",
+        "blob": "941648c528f9cd9192d9ca1874264bf7eb8e02a1",
+        "sha256": "6e1ebd6a732d232fcc4e53a3daf2b5bf0e3e9b59bdec3c055a35f3ec25bf7480",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8179/.claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD.md"
+      },
+      {
+        "pr": 8179,
+        "revision": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "mode": "100644",
+        "blob": "ee16bd884c4bf82c9cb39b5be3f2b807d1a55fb7",
+        "sha256": "4b697dcdea47f0f623ea263b2ff5c439f4645a71c53b8b21f32b4c682c8bd7ff",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8179/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+      },
+      {
+        "pr": 8555,
+        "revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_moving_records_sources_carriers_20260921.md",
+        "mode": "100644",
+        "blob": "f170fb229a56b2065857a541a1777b3934bd2286",
+        "sha256": "4cd7315363a4bcc742888681cccaa5a2b2b4a6f7e65d9db93116c44d6640c746",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8555/.claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_moving_records_sources_carriers_20260921.md"
+      },
+      {
+        "pr": 8555,
+        "revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "mode": "100644",
+        "blob": "74e41f5a6026cda6045d6420e41853c51afb118e",
+        "sha256": "172268336c7e01919b27e82ab1c4a3c50e8f753af60ad59ba76a240823b72440",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8555/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+      },
+      {
+        "pr": 8555,
+        "revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "mode": "100644",
+        "blob": "4d2220d8e42f2c566ef6a4f56fa7f182feafb096",
+        "sha256": "e125402926acbf7a9fd6832cbdc134f4e5954a060c2ddbfce23f87a742eb4c26",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8555/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+      },
+      {
+        "pr": 8572,
+        "revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_source_link_amplitude_layer_20260921.md",
+        "mode": "100644",
+        "blob": "9e72ee3477bc4197f18aa97a1d80edbe9e013bf3",
+        "sha256": "801f03bca4fa160e874e9b7824a849d0156e442e7e03e43912492f6d89dae87a",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8572/.claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_source_link_amplitude_layer_20260921.md"
+      },
+      {
+        "pr": 8572,
+        "revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/FORK_PROBE_source_link_20260922.md",
+        "mode": "100644",
+        "blob": "150b12d0fa1a65cab17f60939c89f17b1dc6710d",
+        "sha256": "42e2e9ad09593628cc9619f20695828e9eabbd78c9fb2bf3289d879b32ef12bc",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8572/.claude/science/physics-loops/admissibility-induced-law-20260906/FORK_PROBE_source_link_20260922.md"
+      },
+      {
+        "pr": 8179,
+        "revision": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "mode": "100644",
+        "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+        "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8179/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+      },
+      {
+        "pr": 8572,
+        "revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "mode": "100644",
+        "blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+        "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8572/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+      },
+      {
+        "pr": 8572,
+        "revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "mode": "100644",
+        "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+        "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+        "execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8572/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+      }
+    ]
+  }
+}

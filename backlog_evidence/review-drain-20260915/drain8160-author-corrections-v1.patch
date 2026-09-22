@@ -1,0 +1,972 @@
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/notes/BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md
++++ docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,16 +1,29 @@
++---
++claim_id: rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/rotor_uniform_compact_response_check_2026_09_16.py
++upstream_dependencies: []
++claim_scope: "Exact integer Gauss-neutral Gaussian trial, uniform compact-field and spectral-response bounds in the supplied homogeneous rotor/CAR model; finite-volume soft weight, not a fixed-coupling phase."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
+ # Uniform compact-field control and low-energy response
+ 
+-Personal derivation, 2026-09-16. **Provisional author theorem proposal.**
+-No independent review or audit has been performed. The supplied Hamiltonian
+-is the same charged compact rotor used in the preceding campaign. This note
+-does not prove its fixed-coupling Coulomb/Weyl phase.
+-
+-The new statement is uniform in spatial volume: weak microscopic coupling
+-forces small average plaquette defects and nonzero inelastic gauge-field
+-response below an explicit energy scale. For probes of wave number k the
+-bound has scale k+g+g^2/k. It resolves a mesoscopic window g much smaller
+-than k, and supplies soft response at energy O(g) by choosing k of order g.
+-It does not reach k tending to zero at fixed positive g.
++Exact integer Gauss-neutral Gaussian trial, uniform compact-field and spectral-response bounds in the supplied homogeneous rotor/CAR model; finite-volume soft weight, not a fixed-coupling phase.
++
++The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
+ 
+ ## 1. Exact supplied model and state
+ 
+@@ -141,8 +154,8 @@
+ 
+     epsilon_L=6+2 sqrt(3)+sqrt(3)/(2V) < 10,  L>=3.    (11)
+ 
+-This estimate does not select zeta,b,g or the Hamiltonian. Positive matched
+-anisotropic weights from the prior comparator also satisfy (8)--(9), with
++This estimate does not select zeta,b,g or the Hamiltonian. Positive homogeneous
++anisotropic weights also satisfy (8)--(9), with
+ their displayed coefficients retained in G_L.
+ 
+ ## 4. Two-observable spectral lower bound
+@@ -316,10 +329,10 @@
+ The present inequalities do not perform that separation. They also make
+ no claim of fermion stability, law selection, gravity or an axiom update.
+ 
+-## Verification status
+-
+-The [finite checker](../evidence/block01_uniform_response_check.py) and
+-[paired output](../evidence/block01_uniform_response_check.json) challenge
++## Historical finite verification
++
++The [finite checker](../scripts/rotor_uniform_compact_response_check_2026_09_16.py) and
++[paired output](../docs/work_history/review_loop/pr8160/8160_010_block01_uniform_response_check.json.gz) challenge
+ the Poisson normalization and derivative, literal integer Gauss constraint,
+ shift overlap, CAR hopping norm, sparse cubic curl, translated compact
+ field ensemble, and spectral inequality with degenerate ground space.
+@@ -328,7 +341,33 @@
+ challenges, not interval certificates or an execution of the general proof.
+ No cutoff rotor was substituted for the domain statements above.
+ 
+-The accompanying working note records the target before testing. Personal
+-adversarial review and its exact input hashes are in review/. All checks
+-are by the same author; independent mathematical review remains required.
+-Primary-source reading limits are in the campaign ledger.
++The original working derivation, personal review, reading ledger and exact input hashes are historical records in the recovery archive linked below. Historical outputs are not current execution evidence.
++
++## No-Go Discipline Gate
++
++N1: this is a positive supplied-model theorem. Fixed-positive-coupling infrared behavior, nonlinear gauge dynamics, growing-support limits, finite-clock realization and native law selection are open directions, not five completed exclusion attempts. No broad negative certificate is claimed.
++
++N2: the model assumptions are stated hypotheses, not independent physical walls. The finite counterexamples refute only the particular inference specified beside them.
++
++N3: the proof retains the normalized full ground trace, possible ground degeneracy, exact Gauss constraint, fixed coefficients, observable domain and order-of-limits quantifiers. Notes requiring free matter exclude an extra unscaled onsite charge interaction.
++
++N4: the supplied continuous rotor/CAR carrier, Hamiltonian, homogeneous weights, Wilson parameters, time and ground ensemble are conditional inputs. Linked proofs below are the actual mathematical dependencies; historical campaign pins confer no authority or additional premise.
++
++N5: the paired programs report finite element/site/mode/block coverage and unchanged tolerances. Uniform-volume estimates, arbitrary joint-sequence convergence and bounded-time analytical arguments are written proofs, not executed infinite-lattice simulations.
++
++N6: conditional mathematical progress does not select the supplied model from the framework axioms or require a new axiom.
++
++N7: alternative interacting fixed-coupling constructions and different physical carriers remain open. Neither finite check success nor the explicit toy counterexamples excludes them.
++
++N8: original personal reviews, failed runs and 28 mutation failures are historical evidence, preserved with their original source hashes. They are not fresh independent review or an audit verdict.
++
++
++## Mathematical dependencies and current evidence
++
++The supplied model and complete argument are defined in this note; no earlier campaign theorem is imported.
++
++Reproduction programs: [rotor_uniform_compact_response_check_2026_09_16.py](../scripts/rotor_uniform_compact_response_check_2026_09_16.py). Each declares 120 seconds; all calculations and tolerances retain the original finite scope.
++
++Current canonical caches: [rotor_uniform_compact_response_check_2026_09_16](../logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.txt). These links describe the required current evidence; historical outputs do not certify the new source bytes.
++
++[Original recovery](work_history/review_loop/pr8160/README.md) and [exact manifest](work_history/review_loop/pr8160/original-manifest.json) preserve all 86 original files, including full proof development, original outputs, failed propagation runs and mutations.
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/notes/BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md
++++ docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,17 +1,36 @@
++---
++claim_id: rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py
++upstream_dependencies: ["rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16"]
++claim_scope: "Supplied quadratic paired Wilson/rotor model without additional onsite charge interaction: uniform ground-energy and positive-square defect densities tending to zero along every joint g to zero and L to infinity sequence."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
+ # Uniform ground energy and oscillator-defect density
+ 
+-Personal derivation, 2026-09-16. **Provisional author theorem proposal.**
+-No independent review or audit. This note supplies the energy step of a
+-possible simultaneous weak-coupling and large-volume field limit. It does not
+-yet assert convergence of field characteristic functions, fermion correlations,
+-or real-time dynamics. It does not treat fixed-positive-coupling infrared physics.
+-
+-Load-bearing dependency: the [uniform compact-field bound](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md), proved in this same proposal.
++Supplied quadratic paired Wilson/rotor model without additional onsite charge interaction: uniform ground-energy and positive-square defect densities tending to zero along every joint g to zero and L to infinity sequence.
++
++The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++
++**Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+ ## 1. Model, restriction, and proposed result
+ 
+ Use the exact integer charged rotor and normalized full ground-space trace
+-`rho_(g,L)` of Block01, on a periodic cubic lattice with V=L^3, L>=3.
++`rho_(g,L)` of compact-field concentration theorem, on a periodic cubic lattice with V=L^3, L>=3.
+ All energies below are dimensionless: write `calH=aH`. Fix positive homogeneous
+ link and plaquette weights W_E,W_B, independent of g,L. The matter Hamiltonian
+ is the number-conserving conjugate pair of two-orbital Wilson matrices
+@@ -22,7 +41,7 @@
+ 
+ The numerical star in (1) is entrywise conjugation. The fixed matter sector
+ is N_+=N_-=V. **There is no additional onsite charge interaction in this
+-note.** Block01 allowed a nonnegative charge penalty; that wider hypothesis
++note.** compact-field concentration theorem allowed a nonnegative charge penalty; that wider hypothesis
+ is insufficient for convergence to free matter. An unscaled penalty would
+ contribute to the dressed Slater trial and remain a separate interaction.
+ 
+@@ -57,7 +76,7 @@
+ no relation between their rates is imposed. Estimate (5) is an averaged
+ ground-state bound, not an operator-norm bound or a bound on all states.
+ 
+-The proof uses Block01 only for the uniform actual-ground plaquette estimate
++The proof uses compact-field concentration theorem only for the uniform actual-ground plaquette estimate
+ 
+     rho(1-cos theta_p)<=B0 g^2,                            (6)
+ 
+@@ -345,7 +364,7 @@
+ The remaining g^2 and exponential terms are also bounded by a constant
+ times sqrt(g). This proves (4)-(5) without an order-of-limits assumption.
+ 
+-## 8. Evidence and outstanding scope
++## 8. Finite evidence and scope
+ 
+ The paired integer-Gaussian/positive-square runner checks the lattice rank
+ and Smith invariants on the literal 3^3 torus, the weighted metric identities,
+@@ -367,3 +386,32 @@
+ estimate alone is not yet a statement about those correlations. Fixed-g
+ masslessness, real-time limits, finite-cyclic realization, law selection, and
+ axiomatic TOE closure remain unproved here.
++
++## No-Go Discipline Gate
++
++N1: this is a positive supplied-model theorem. Fixed-positive-coupling infrared behavior, nonlinear gauge dynamics, growing-support limits, finite-clock realization and native law selection are open directions, not five completed exclusion attempts. No broad negative certificate is claimed.
++
++N2: the model assumptions are stated hypotheses, not independent physical walls. The finite counterexamples refute only the particular inference specified beside them.
++
++N3: the proof retains the normalized full ground trace, possible ground degeneracy, exact Gauss constraint, fixed coefficients, observable domain and order-of-limits quantifiers. Notes requiring free matter exclude an extra unscaled onsite charge interaction.
++
++N4: the supplied continuous rotor/CAR carrier, Hamiltonian, homogeneous weights, Wilson parameters, time and ground ensemble are conditional inputs. Linked proofs below are the actual mathematical dependencies; historical campaign pins confer no authority or additional premise.
++
++N5: the paired programs report finite element/site/mode/block coverage and unchanged tolerances. Uniform-volume estimates, arbitrary joint-sequence convergence and bounded-time analytical arguments are written proofs, not executed infinite-lattice simulations.
++
++N6: conditional mathematical progress does not select the supplied model from the framework axioms or require a new axiom.
++
++N7: alternative interacting fixed-coupling constructions and different physical carriers remain open. Neither finite check success nor the explicit toy counterexamples excludes them.
++
++N8: original personal reviews, failed runs and 28 mutation failures are historical evidence, preserved with their original source hashes. They are not fresh independent review or an audit verdict.
++
++
++## Mathematical dependencies and current evidence
++
++Actual load-bearing proofs: [compact-field concentration theorem](ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
++Reproduction programs: [rotor_integer_gaussian_positive_square_check_2026_09_16.py](../scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py), [rotor_tree_slater_dressing_check_2026_09_16.py](../scripts/rotor_tree_slater_dressing_check_2026_09_16.py). Each declares 120 seconds; all calculations and tolerances retain the original finite scope.
++
++Current canonical caches: [rotor_integer_gaussian_positive_square_check_2026_09_16](../logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.txt), [rotor_tree_slater_dressing_check_2026_09_16](../logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.txt). These links describe the required current evidence; historical outputs do not certify the new source bytes.
++
++[Original recovery](work_history/review_loop/pr8160/README.md) and [exact manifest](work_history/review_loop/pr8160/original-manifest.json) preserve all 86 original files, including full proof development, original outputs, failed propagation runs and mutations.
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/notes/BLOCK03_JOINT_EQUAL_TIME_GAUGE_LIMIT.md
++++ docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,23 +1,41 @@
++---
++claim_id: rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/rotor_joint_characteristic_check_2026_09_16.py
++upstream_dependencies: ["rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16", "rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16"]
++claim_scope: "Same supplied model and normalized full ground trace: local equal-time single-exponential gauge characteristic convergence along every joint weak-coupling/large-volume sequence, with fixed support."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
+ # A simultaneous weak-coupling and large-volume gauge-field limit
+ 
+-Personal derivation, 2026-09-16. **Provisional author theorem proposal.**
+-Depends on the provisional Block02 energy/defect theorem and its restricted
+-quadratic Wilson matter model. No independent review or audit. This note
+-addresses equal-time gauge characteristic functions. Fixed-g infrared phases,
+-fermion correlations, real-time dynamics, finite clocks, and law selection
+-are separate questions.
+-
+-Load-bearing dependencies: the [uniform energy and oscillator-defect estimate](BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md) and [compact-field bound](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md), both proved in this proposal.
++Same supplied model and normalized full ground trace: local equal-time single-exponential gauge characteristic convergence along every joint weak-coupling/large-volume sequence, with fixed support.
++
++The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++
++**Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+ ## 1. Statement and normalization
+ 
+-Keep the finite-volume operators P,Z,Q,M,Omega,Omega_p of Block02 and its
++Keep the finite-volume operators P,Z,Q,M,Omega,Omega_p of ground-energy and oscillator-defect theorem and its
+ translation-invariant normalized full ground-space trace rho. Suppose
+ 
+     rho[sum_l Q_l^*Q_l+||Z_perp||^2]/V <= delta_(g,L),
+     rho(1-cos theta_p)<=B0 g^2,                         (1)
+ 
+-uniformly in plaquette position. Block02 supplies
++uniformly in plaquette position. ground-energy and oscillator-defect theorem supplies
+ `delta_(g,L)<=C(sqrt(g)+L^-1)` for the specified paired Wilson model.
+ The nonnegative quartic term in that theorem can be discarded here.
+ 
+@@ -175,7 +193,7 @@
+        =int_0^t exp[-kappa_L(t^2-s^2)/4] epsilon(s) ds.  (20)
+ 
+ The kernel is <=1 for 0<=s<=t. This proves (3) for nonnegative t; for
+-negative t use chi(-t)=overline(chi(t)). With Block02 the coarse error is
++negative t use chi(-t)=overline(chi(t)). With ground-energy and oscillator-defect theorem the coarse error is
+ O(g^(1/4)+L^(-1/2)+g) for fixed smears. It is not a uniform estimate for
+ smears whose support or coefficients themselves grow with the volume.
+ 
+@@ -186,10 +204,39 @@
+ continuous even at a zero eigenvalue, so no singular inverse symbol occurs
+ in kappa_L. Fixed local smears have trigonometric-polynomial Fourier
+ transforms. This proves the Riemann-sum limit used in (4) and completes the
+-stated single-exponential characteristic result, conditional on Block02.
++stated single-exponential characteristic result, conditional on ground-energy and oscillator-defect theorem.
+ 
+ A joint algebra/state formulation involving products of these exponentials
+ requires an additional asymptotic Weyl-product estimate. Matter observables
+ and factorization also require separate arguments. Neither is silently
+ included in (4). Real-time evolution is not inferred from this equal-time
+ result, and no assertion is made about a fixed nonzero microscopic coupling.
++
++## No-Go Discipline Gate
++
++N1: this is a positive supplied-model theorem. Fixed-positive-coupling infrared behavior, nonlinear gauge dynamics, growing-support limits, finite-clock realization and native law selection are open directions, not five completed exclusion attempts. No broad negative certificate is claimed.
++
++N2: the model assumptions are stated hypotheses, not independent physical walls. The finite counterexamples refute only the particular inference specified beside them.
++
++N3: the proof retains the normalized full ground trace, possible ground degeneracy, exact Gauss constraint, fixed coefficients, observable domain and order-of-limits quantifiers. Notes requiring free matter exclude an extra unscaled onsite charge interaction.
++
++N4: the supplied continuous rotor/CAR carrier, Hamiltonian, homogeneous weights, Wilson parameters, time and ground ensemble are conditional inputs. Linked proofs below are the actual mathematical dependencies; historical campaign pins confer no authority or additional premise.
++
++N5: the paired programs report finite element/site/mode/block coverage and unchanged tolerances. Uniform-volume estimates, arbitrary joint-sequence convergence and bounded-time analytical arguments are written proofs, not executed infinite-lattice simulations.
++
++N6: conditional mathematical progress does not select the supplied model from the framework axioms or require a new axiom.
++
++N7: alternative interacting fixed-coupling constructions and different physical carriers remain open. Neither finite check success nor the explicit toy counterexamples excludes them.
++
++N8: original personal reviews, failed runs and 28 mutation failures are historical evidence, preserved with their original source hashes. They are not fresh independent review or an audit verdict.
++
++
++## Mathematical dependencies and current evidence
++
++Actual load-bearing proofs: [compact-field concentration theorem](ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md), [ground-energy and oscillator-defect theorem](ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
++Reproduction programs: [rotor_joint_characteristic_check_2026_09_16.py](../scripts/rotor_joint_characteristic_check_2026_09_16.py). Each declares 120 seconds; all calculations and tolerances retain the original finite scope.
++
++Current canonical caches: [rotor_joint_characteristic_check_2026_09_16](../logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.txt). These links describe the required current evidence; historical outputs do not certify the new source bytes.
++
++[Original recovery](work_history/review_loop/pr8160/README.md) and [exact manifest](work_history/review_loop/pr8160/original-manifest.json) preserve all 86 original files, including full proof development, original outputs, failed propagation runs and mutations.
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/notes/BLOCK04_JOINT_GAUGE_AND_MATTER_STATE.md
++++ docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,13 +1,31 @@
++---
++claim_id: rotor_joint_equal_time_weyl_car_state_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/rotor_joint_weyl_car_state_check_2026_09_16.py
++upstream_dependencies: ["rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16", "rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16", "rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16"]
++claim_scope: "Same supplied model: fixed local Weyl words and finite-path neutral CAR polynomials converge jointly to the Gaussian gauge state times the pure filled-band Slater state; equal-time and fixed support."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
+ # Joint equal-time gauge and matter state in the simultaneous limit
+ 
+-Personal derivation, 2026-09-16. **Provisional author theorem proposal.**
+-Dependencies: Block01 plaquette concentration, Block02 uniform energy and
+-oscillator-defect estimate, and Block03 gauge characteristic function.
+-All remain provisional pending independent review. The model is exactly
+-Block02's supplied quadratic paired Wilson/compact-rotor Hamiltonian, with
+-no additional unscaled onsite charge interaction.
+-
+-Load-bearing proofs in this proposal: [compact-field concentration](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md), [uniform energy](BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md), and [gauge characteristic functions](BLOCK03_JOINT_EQUAL_TIME_GAUGE_LIMIT.md).
++Same supplied model: fixed local Weyl words and finite-path neutral CAR polynomials converge jointly to the Gaussian gauge state times the pure filled-band Slater state; equal-time and fixed support.
++
++The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++
++**Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+ ## 1. Statement
+ 
+@@ -18,13 +36,13 @@
+ 
+     W_(g,L)(w)=exp(i[P(u)+Z(v)]),                         (1)
+ 
+-with the rescaled weighted fields P,Z of Block02. For fixed finite-path
++with the rescaled weighted fields P,Z of ground-energy and oscillator-defect theorem. For fixed finite-path
+ gauge-neutral matter polynomials use the explicit dressing in section3.
+ Every finite word in these bounded physical observables has a limit.
+ The limit is the product of:
+ 
+ - the centered free transverse gauge-field Gaussian state specified by
+-  Block03, with covariance quadratic form
++  gauge characteristic theorem, with covariance quadratic form
+   `kappa(w)=u.Omega_infty.u+v.Omega_(p,infty).v`;
+ - the filled-negative-band Slater state omega_F of the free paired Wilson
+   one-particle matrix (including the supplied band parameters b,zeta).
+@@ -81,10 +99,10 @@
+ The sign in (6) is positive. It agrees with the limiting commutator
+ `[P(u)+Z(v),P(u')+Z(v')]=-i sigma(w,w')`.
+ 
+-By Block01, `||(cos theta_p-1)||_rho<=sqrt(2B0)g`.
++By compact-field concentration theorem, `||(cos theta_p-1)||_rho<=sqrt(2B0)g`.
+ After translating the angles by g W_E^(1/2)sum_j u_j for a fixed list of
+ smears, the same norm is bounded by Cg, by the Lipschitz estimate in
+-Block03. Together with |exp(ix)-1|<=|x| this proves
++gauge characteristic theorem. Together with |exp(ix)-1|<=|x| this proves
+ 
+     ||W(w)W(w')-exp[i sigma(w,w')/2]W(w+w')||_rho<=Cg.   (7)
+ 
+@@ -102,7 +120,7 @@
+ cosine defect multiplied by a bounded matrix. Finite sums of words follow
+ by the triangle inequality.
+ 
+-Repeated use of (7) and Block03 yields all pure-gauge word expectations in
++Repeated use of (7) and gauge characteristic theorem yields all pure-gauge word expectations in
+ (2). More importantly, the word-excited version makes the Weyl relations
+ valid on the full cyclic space of any limiting joint state, not merely
+ in its expectation on one vector.
+@@ -180,7 +198,7 @@
+     j_L(c_0^* T_i c_(e_i))=c_0^* T_i U_i c_(e_i)
+ 
+ for the plus species, and the conjugate expression holds for the minus.
+-Translation invariance of the actual ground trace and Block02 give
++Translation invariance of the actual ground trace and ground-energy and oscillator-defect theorem give
+ 
+     omega(h_loc)=lim rho(calH_m)/V
+        =lim E_m,L/V=:e_m,free.                          (10)
+@@ -314,12 +332,12 @@
+ 
+     sigma(G B)=sigma(G) omega_F(B).                     (16)
+ 
+-Extend linearly from positive G to every bounded gauge element. Block03
++Extend linearly from positive G to every bounded gauge element. gauge characteristic theorem
+ and section2 determine the gauge marginal. This proves (2) for every
+ subsequential limit. Since the value is unique and all finite-word
+ expectations are bounded, the original full sequence converges.
+ 
+-## 10. Checks and limits of the result
++## 10. Finite checks and limits of the result
+ 
+ The new Weyl-product fixture uses exact finite rotor matrices and checks
+ the positive phase sign both on a ground vector and after a field/charge
+@@ -344,3 +362,32 @@
+ infrared behavior are outside this theorem. The supplied model's fields
+ and coefficients remain inputs. This conditional bridge removes a prior
+ order-of-limits restriction without selecting those inputs from axioms.
++
++## No-Go Discipline Gate
++
++N1: this is a positive supplied-model theorem. Fixed-positive-coupling infrared behavior, nonlinear gauge dynamics, growing-support limits, finite-clock realization and native law selection are open directions, not five completed exclusion attempts. No broad negative certificate is claimed.
++
++N2: the model assumptions are stated hypotheses, not independent physical walls. The finite counterexamples refute only the particular inference specified beside them.
++
++N3: the proof retains the normalized full ground trace, possible ground degeneracy, exact Gauss constraint, fixed coefficients, observable domain and order-of-limits quantifiers. Notes requiring free matter exclude an extra unscaled onsite charge interaction.
++
++N4: the supplied continuous rotor/CAR carrier, Hamiltonian, homogeneous weights, Wilson parameters, time and ground ensemble are conditional inputs. Linked proofs below are the actual mathematical dependencies; historical campaign pins confer no authority or additional premise.
++
++N5: the paired programs report finite element/site/mode/block coverage and unchanged tolerances. Uniform-volume estimates, arbitrary joint-sequence convergence and bounded-time analytical arguments are written proofs, not executed infinite-lattice simulations.
++
++N6: conditional mathematical progress does not select the supplied model from the framework axioms or require a new axiom.
++
++N7: alternative interacting fixed-coupling constructions and different physical carriers remain open. Neither finite check success nor the explicit toy counterexamples excludes them.
++
++N8: original personal reviews, failed runs and 28 mutation failures are historical evidence, preserved with their original source hashes. They are not fresh independent review or an audit verdict.
++
++
++## Mathematical dependencies and current evidence
++
++Actual load-bearing proofs: [compact-field concentration theorem](ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md), [ground-energy and oscillator-defect theorem](ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md), [gauge characteristic theorem](ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
++Reproduction programs: [rotor_joint_weyl_car_state_check_2026_09_16.py](../scripts/rotor_joint_weyl_car_state_check_2026_09_16.py). Each declares 120 seconds; all calculations and tolerances retain the original finite scope.
++
++Current canonical caches: [rotor_joint_weyl_car_state_check_2026_09_16](../logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.txt). These links describe the required current evidence; historical outputs do not certify the new source bytes.
++
++[Original recovery](work_history/review_loop/pr8160/README.md) and [exact manifest](work_history/review_loop/pr8160/original-manifest.json) preserve all 86 original files, including full proof development, original outputs, failed propagation runs and mutations.
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/notes/BLOCK05_JOINT_REAL_TIME_GAUGE_TWO_POINT.md
++++ docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,15 +1,35 @@
++---
++claim_id: rotor_joint_real_time_gauge_two_point_limit_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/rotor_joint_gauge_propagation_check_2026_09_16.py
++upstream_dependencies: ["rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16", "rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16", "rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16"]
++claim_scope: "Same supplied model: local electric/magnetic two-point propagation along arbitrary joint weak-coupling/large-volume sequences, uniformly on fixed compact time intervals; no full nonlinear gauge dynamics assertion."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
+ # Joint-limit real-time gauge two-point functions
+ 
+-Personal derivation, 2026-09-16. **Provisional author theorem proposal.**
+-Depends on the supplied model and provisional estimates of Blocks01--02.
+-It uses an additional argument for second moments, not merely Block03's
+-characteristic convergence. No independent review or audit has occurred.
+-
+-Load-bearing proofs in this proposal: [compact-field concentration](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md) and [uniform energy/oscillator-defect control](BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md).
++Same supplied model: local electric/magnetic two-point propagation along arbitrary joint weak-coupling/large-volume sequences, uniformly on fixed compact time intervals; no full nonlinear gauge dynamics assertion.
++
++The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++
++**Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+ ## 1. Domain and result
+ 
+-Use Block02's paired quadratic Wilson/compact-rotor Hamiltonian, fixed
++Use ground-energy and oscillator-defect theorem's paired quadratic Wilson/compact-rotor Hamiltonian, fixed
+ positive homogeneous weights, exact integer Gauss law, N_+=N_-=L^3, and
+ the normalized full ground-space trace rho_(g,L). Set
+ 
+@@ -72,11 +92,11 @@
+ ## 3. Second moments from the annihilation estimate
+ 
+ For a real finite-volume link array f, write Q_f=Q(f) and
+-eta_f=||Q_f||_rho. Translation covariance positivity from Block03 gives
++eta_f=||Q_f||_rho. Translation covariance positivity from gauge characteristic theorem gives
+ 
+     eta_f^2<=delta sup_k ||f_hat(k)||^2.                  (6)
+ 
+-The exact commutator and the Block01 mean-defect bound imply
++The exact commutator and the compact-field concentration theorem mean-defect bound imply
+ 
+     c_f:=rho[Q_f,Q_f^*]
+        =2 sum_p (Sf)_p(M^*f)_p rho(cos theta_p)
+@@ -283,3 +303,34 @@
+ For the magnetic equation, products of electric fields with compact
+ cosine defects introduce higher-moment obligations that were bypassed here,
+ not discharged. The fixed-positive-g infrared phase is still open.
++
++## No-Go Discipline Gate
++
++N1: this is a positive supplied-model theorem. Fixed-positive-coupling infrared behavior, nonlinear gauge dynamics, growing-support limits, finite-clock realization and native law selection are open directions, not five completed exclusion attempts. No broad negative certificate is claimed.
++
++N2: the model assumptions are stated hypotheses, not independent physical walls. The finite counterexamples refute only the particular inference specified beside them.
++
++N3: the proof retains the normalized full ground trace, possible ground degeneracy, exact Gauss constraint, fixed coefficients, observable domain and order-of-limits quantifiers. Notes requiring free matter exclude an extra unscaled onsite charge interaction.
++
++N4: the supplied continuous rotor/CAR carrier, Hamiltonian, homogeneous weights, Wilson parameters, time and ground ensemble are conditional inputs. Linked proofs below are the actual mathematical dependencies; historical campaign pins confer no authority or additional premise.
++
++N5: the paired programs report finite element/site/mode/block coverage and unchanged tolerances. Uniform-volume estimates, arbitrary joint-sequence convergence and bounded-time analytical arguments are written proofs, not executed infinite-lattice simulations.
++
++N6: conditional mathematical progress does not select the supplied model from the framework axioms or require a new axiom.
++
++N7: alternative interacting fixed-coupling constructions and different physical carriers remain open. Neither finite check success nor the explicit toy counterexamples excludes them.
++
++N8: original personal reviews, failed runs and 28 mutation failures are historical evidence, preserved with their original source hashes. They are not fresh independent review or an audit verdict.
++
++
++## Mathematical dependencies and current evidence
++
++Actual load-bearing proofs: [compact-field concentration theorem](ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md), [ground-energy and oscillator-defect theorem](ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md), [gauge characteristic theorem](ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
++The Fourier covariance bound used in section 3 is proved in section 2 of the linked gauge characteristic theorem. Its characteristic-function conclusion is not substituted for the separate second-moment argument.
++
++Reproduction programs: [rotor_joint_gauge_propagation_check_2026_09_16.py](../scripts/rotor_joint_gauge_propagation_check_2026_09_16.py). Each declares 120 seconds; all calculations and tolerances retain the original finite scope.
++
++Current canonical caches: [rotor_joint_gauge_propagation_check_2026_09_16](../logs/runner-cache/rotor_joint_gauge_propagation_check_2026_09_16.txt). These links describe the required current evidence; historical outputs do not certify the new source bytes.
++
++[Original recovery](work_history/review_loop/pr8160/README.md) and [exact manifest](work_history/review_loop/pr8160/original-manifest.json) preserve all 86 original files, including full proof development, original outputs, failed propagation runs and mutations.
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/notes/BLOCK06_JOINT_BOUNDED_MATTER_DYNAMICS.md
++++ docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,19 +1,38 @@
++---
++claim_id: rotor_joint_bounded_neutral_matter_dynamics_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py
++upstream_dependencies: ["rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16", "rotor_joint_equal_time_weyl_car_state_bounded_theorem_note_2026-09-16"]
++claim_scope: "Same supplied model on full Gauss Hilbert space: bounded local neutral matter multi-time words converge to free Slater dynamics along arbitrary joint weak-coupling/large-volume sequences, uniformly on fixed compact time intervals."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
+ # Bounded matter dynamics in the joint weak-coupling and volume limit
+ 
+-Personal derivation, 2026-09-16. **Provisional author theorem proposal.**
+-Dependencies: Block01 uniform ground field bounds and Block04 limiting
+-Slater matter state, hence also Block04's explicit provisional dependencies.
+-No independent review or audit. The matter law is the specified quadratic
+-paired Wilson Hamiltonian, without an additional fixed charge interaction.
+-
+-Load-bearing proofs in this proposal: [uniform local ground-field bounds](BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md) and the [limiting Slater matter state](BLOCK04_JOINT_GAUGE_AND_MATTER_STATE.md), with the latter's explicitly linked dependencies.
++Same supplied model on full Gauss Hilbert space: bounded local neutral matter multi-time words converge to free Slater dynamics along arbitrary joint weak-coupling/large-volume sequences, uniformly on fixed compact time intervals.
++
++The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++
++**Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+ ## 1. Result and meaning of the dynamics
+ 
+ Use the same exact Gauss-law rotor model, fixed positive weights, and ground
+ trace rho_(g,L) in N_+=N_-=L^3 as in the preceding notes. Let B_1,...,B_n be
+ fixed finite CAR polynomials, each of total gauge charge zero, and let j_L
+-be a fixed finite-path root dressing as in Block04. Then
++be a fixed finite-path root dressing as in joint Weyl/CAR state theorem. Then
+ 
+     rho_(g,L)[alpha_(t1)^(g,L)(j_L(B_1)) ...
+                           alpha_(tn)^(g,L)(j_L(B_n))]
+@@ -23,7 +42,7 @@
+ many times range over compact intervals. Here alpha^(g,L) is the supplied
+ Hamiltonian Heisenberg evolution and alpha^0 is the free paired Wilson CAR
+ evolution. Time is dimensionless for calH=aH; physical time is divided by a.
+-The limiting state omega_F is Block04's filled-band Slater state.
++The limiting state omega_F is joint Weyl/CAR state theorem's filled-band Slater state.
+ 
+ The Hamiltonian formula is used on the full Gauss Hilbert space, even though
+ the initial state lies in the specified number sector. A neutral observable
+@@ -34,7 +53,7 @@
+ algebraic factors; they are not asserted to be physical observables.
+ 
+ Statement (1) concerns bounded local neutral matter observables. Combined
+-with Block05 it supplies free matter dynamics and gauge two-point
++with gauge two-point propagation theorem it supplies free matter dynamics and gauge two-point
+ propagation in the same joint limit. It does not add a theorem for arbitrary
+ mixed unbounded field/matter time words or full nonlinear gauge dynamics.
+ 
+@@ -47,7 +66,7 @@
+     a_x=U(p_x)^q c_x.                                   (2)
+ 
+ Orbital indices are implicit. The onsite matrices and hopping matrices mix
+-only orbitals of the same charge. As in Block04, a_x has its entire Gauss
++only orbitals of the same charge. As in joint Weyl/CAR state theorem, a_x has its entire Gauss
+ charge at the root, and the a's satisfy exact CAR.
+ 
+ From E_l U(p)^q=U(p)^q(E_l+q p_l),
+@@ -71,7 +90,7 @@
+ x-link has xy and xz strips, a y-link has a yz strip, and a z-link is in
+ the tree. Signed coordinates reverse orientations but not the count.
+ 
+-Block01 gives both
++compact-field concentration theorem gives both
+ 
+     ||P_l||_rho<=C,
+     ||U_p-1||_rho<=Cg.                                 (5)
+@@ -188,7 +207,7 @@
+ G is nonnegative in every number sector reached by an auxiliary factor.
+ Nor is a gap or an inverse level spacing used anywhere in (13).
+ 
+-To combine this with the static state theorem, do not apply Block04
++To combine this with the static state theorem, do not apply joint Weyl/CAR state theorem
+ directly to the growing-support B_t^R. Fix a radius r first. For L large
+ enough that R(L)>r, the exact finite CAR homomorphism gives
+ 
+@@ -203,7 +222,7 @@
+ ## 6. Finite multi-time words
+ 
+ Define the ground-created vectors T_(g,L)(B)=j_L(B)rho^(1/2) for local
+-neutral polynomials. Block04 says their pairwise inner products converge
++neutral polynomials. joint Weyl/CAR state theorem says their pairwise inner products converge
+ to omega_F(B^*C). Multiplication is exact:
+ 
+     j_L(A) T_(g,L)(B)=T_(g,L)(AB),
+@@ -219,7 +238,7 @@
+ resulting free-evolved polynomial by a fixed-radius polynomial, multiply
+ by the next bounded factor using (15), and repeat. The number of steps is
+ fixed and the errors are multiplied only by the fixed operator norms of
+-the remaining B_j's. The final inner products are covered by Block04.
++the remaining B_j's. The final inner products are covered by joint Weyl/CAR state theorem.
+ 
+ This proves (1). All estimates are uniform for the original times in a
+ compact set, since the finitely many intervening time differences then
+@@ -228,7 +247,7 @@
+ paths at all other sites; the finitely many exceptions only change the
+ constants in the weighted residual estimate. For a changed root use
+ coordinate paths from that fixed root, with an equivalent spatial weight.
+-The same vector comparison and Block04's static path independence then
++The same vector comparison and joint Weyl/CAR state theorem's static path independence then
+ apply. No growth assumption is made about an arbitrary infinite path system.
+ 
+ ## 7. Scope
+@@ -241,6 +260,35 @@
+ The limit still sends the microscopic gauge coupling to zero. It provides
+ no theorem that size alone weakens a fixed nonzero coupling, no full
+ interacting infrared construction, and no axiom-level selection of the
+-Hamiltonian or state. Gauge two-point propagation belongs to Block05;
++Hamiltonian or state. Gauge two-point propagation belongs to gauge two-point propagation theorem;
+ higher unbounded gauge products and general mixed multi-time field/matter
+ products remain separate obligations.
++
++## No-Go Discipline Gate
++
++N1: this is a positive supplied-model theorem. Fixed-positive-coupling infrared behavior, nonlinear gauge dynamics, growing-support limits, finite-clock realization and native law selection are open directions, not five completed exclusion attempts. No broad negative certificate is claimed.
++
++N2: the model assumptions are stated hypotheses, not independent physical walls. The finite counterexamples refute only the particular inference specified beside them.
++
++N3: the proof retains the normalized full ground trace, possible ground degeneracy, exact Gauss constraint, fixed coefficients, observable domain and order-of-limits quantifiers. Notes requiring free matter exclude an extra unscaled onsite charge interaction.
++
++N4: the supplied continuous rotor/CAR carrier, Hamiltonian, homogeneous weights, Wilson parameters, time and ground ensemble are conditional inputs. Linked proofs below are the actual mathematical dependencies; historical campaign pins confer no authority or additional premise.
++
++N5: the paired programs report finite element/site/mode/block coverage and unchanged tolerances. Uniform-volume estimates, arbitrary joint-sequence convergence and bounded-time analytical arguments are written proofs, not executed infinite-lattice simulations.
++
++N6: conditional mathematical progress does not select the supplied model from the framework axioms or require a new axiom.
++
++N7: alternative interacting fixed-coupling constructions and different physical carriers remain open. Neither finite check success nor the explicit toy counterexamples excludes them.
++
++N8: original personal reviews, failed runs and 28 mutation failures are historical evidence, preserved with their original source hashes. They are not fresh independent review or an audit verdict.
++
++
++## Mathematical dependencies and current evidence
++
++Actual load-bearing proofs: [compact-field concentration theorem](ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md), [joint Weyl/CAR state theorem](ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
++Reproduction programs: [rotor_joint_rooted_matter_dynamics_check_2026_09_16.py](../scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py). Each declares 120 seconds; all calculations and tolerances retain the original finite scope.
++
++Current canonical caches: [rotor_joint_rooted_matter_dynamics_check_2026_09_16](../logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.txt). These links describe the required current evidence; historical outputs do not certify the new source bytes.
++
++[Original recovery](work_history/review_loop/pr8160/README.md) and [exact manifest](work_history/review_loop/pr8160/original-manifest.json) preserve all 86 original files, including full proof development, original outputs, failed propagation runs and mutations.
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block01_uniform_response_check.py
++++ scripts/rotor_uniform_compact_response_check_2026_09_16.py
+@@ -9,8 +9,14 @@
+ from scipy import sparse
+ 
+ AUDIT_TIMEOUT_SEC = 120
+-AUDIT_INPUT_PATHS = []
+-# No external scientific data are read. The source self-hash is an integrity read.
++AUDIT_INPUT_PATHS = ('docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md',)
++# Literal proof inputs are read below; the source self-hash is an integrity read.
++
++_REPO = Path(__file__).resolve().parents[1]
++for _input_path in AUDIT_INPUT_PATHS:
++    _input_bytes = (_REPO / _input_path).read_bytes()
++    if _input_path.endswith('.md'):
++        assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
+ 
+ TOL = 2e-10
+ results = {}
+@@ -272,6 +278,11 @@
+     output = Path(__file__).with_suffix(".json")
+     output.write_text(json.dumps(results, indent=2)+"\n")
+     print("Discrete Gaussian, Wilson hopping, wavepacket, compact mode, and spectral challenges completed.")
++    print('per_element: executed — direct/dual Gaussian sums and literal CAR matrices at unchanged tolerances')
++    print('per_site: executed — finite cubic wave packets R=3,4,7,12 and translated ensembles L=3,4,5,6')
++    print('per_mode: executed — selected transverse sine/cosine modes and finite spectral measures')
++    print('per_block: executed — rank-two cycles, 16-dimensional CAR and degenerate-ground fixtures')
++    print('lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice')
+     print(f"TOTAL: PASS={checks} FAIL=0")
+ 
+ 
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block02_integer_gaussian_square_check.py
++++ scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py
+@@ -11,8 +11,14 @@
+ from sympy.matrices.normalforms import smith_normal_form
+ 
+ AUDIT_TIMEOUT_SEC = 120
+-AUDIT_INPUT_PATHS = []
+-# No external scientific data are read. The source self-hash is an integrity read.
++AUDIT_INPUT_PATHS = ('docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md')
++# Literal proof inputs are read below; the source self-hash is an integrity read.
++
++_REPO = Path(__file__).resolve().parents[1]
++for _input_path in AUDIT_INPUT_PATHS:
++    _input_bytes = (_REPO / _input_path).read_bytes()
++    if _input_path.endswith('.md'):
++        assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
+ 
+ TOL = 3e-9
+ out = {}
+@@ -232,6 +238,11 @@
+     print("Integer boundary lattice, weighted Gaussian, and positive-square challenges completed.")
+     print(f"Full hard-cutoff discrepancy (expected): {out['positive_square']['full_cutoff_discrepancy']:.6g}")
+     print(f"Wrong divergence sign discrepancy: {out['positive_square']['wrong_sign_core_error']:.6g}")
++    print('per_element: executed — integer Smith invariants, weighted metrics and parity sums')
++    print('per_site: executed — literal periodic 3-cube incidence and plaquette boundaries')
++    print('per_mode: executed — positive-range matrix calculus and finite Fourier cutoff7')
++    print('per_block: executed — padded-core square identity with full-cutoff discrepancy retained')
++    print('lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice')
+     print(f"TOTAL: PASS={checks} FAIL=0")
+ 
+ 
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block02_tree_slater_check.py
++++ scripts/rotor_tree_slater_dressing_check_2026_09_16.py
+@@ -8,8 +8,14 @@
+ import numpy as np
+ 
+ AUDIT_TIMEOUT_SEC = 120
+-AUDIT_INPUT_PATHS = []
+-# No external scientific data are read. The source self-hash is an integrity read.
++AUDIT_INPUT_PATHS = ('docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md')
++# Literal proof inputs are read below; the source self-hash is an integrity read.
++
++_REPO = Path(__file__).resolve().parents[1]
++for _input_path in AUDIT_INPUT_PATHS:
++    _input_bytes = (_REPO / _input_path).read_bytes()
++    if _input_path.endswith('.md'):
++        assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
+ 
+ TOL = 2e-9
+ report = {}
+@@ -198,6 +204,11 @@
+     print(f"Wrong dressing sign discrepancy: {report['literal_charged_dressing']['wrong_sign_discrepancy']:.6g}")
+     for row in report["half_filled_wilson_blocks"]:
+         print(f"R={row['R']}: summed charge variance={row['sum_charge_variance']:.6g}, analytic upper={row['analytic_upper']}")
++    print('per_element: executed — integer paths, signed loop fillings and Slater determinant curvature')
++    print('per_site: executed — open cubic blocks R=2,3,4 with explicit subtree charges')
++    print('per_mode: executed — occupied open-Wilson eigenvectors and particle-hole symmetry')
++    print('per_block: executed — 64-state charged dressing and paired Slater variances')
++    print('lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice')
+     print(f"TOTAL: PASS={checks} FAIL=0")
+ 
+ 
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block03_characteristic_check.py
++++ scripts/rotor_joint_characteristic_check_2026_09_16.py
+@@ -11,14 +11,18 @@
+ import numpy as np
+ from scipy.linalg import eigh_tridiagonal, expm
+ 
+-from block02_integer_gaussian_square_check import periodic_complex, psd_functions
++from rotor_integer_gaussian_positive_square_check_2026_09_16 import periodic_complex, psd_functions
+ 
+ AUDIT_TIMEOUT_SEC = 120
+-AUDIT_INPUT_PATHS = [
+-    ".claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block02_integer_gaussian_square_check.py",
+-]
++AUDIT_INPUT_PATHS = ('docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py')
+ # Scientific helper: the declared package-local geometry and matrix functions.
+ # Integrity reads: this source and the helper source for hashes. No external data.
++
++_REPO = Path(__file__).resolve().parents[1]
++for _input_path in AUDIT_INPUT_PATHS:
++    _input_bytes = (_REPO / _input_path).read_bytes()
++    if _input_path.endswith('.md'):
++        assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
+ 
+ TOL = 2e-8
+ data = {}
+@@ -189,13 +193,18 @@
+     data["scope"] = "Author finite algebra and one-rotor challenges, not a charged-volume simulation or independent review."
+     data["tolerance"] = TOL
+     data["runner_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+-    dependency = Path(__file__).with_name("block02_integer_gaussian_square_check.py")
++    dependency = Path(__file__).with_name("rotor_integer_gaussian_positive_square_check_2026_09_16.py")
+     data["geometry_helper_sha256"] = hashlib.sha256(dependency.read_bytes()).hexdigest()
+     data["checks"] = checks
+     Path(__file__).with_suffix(".json").write_text(json.dumps(data, indent=2)+"\n")
+     print("Weighted cubic commutator, Fourier normalization, and single-rotor characteristic challenge completed.")
+     for row in data["single_rotor_ground_challenge"]:
+         print(f"g={row['g']:.2f}: characteristic error={row['characteristic_error']:.6g}, ODE residual={row['ode_residual']:.6g}")
++    print('per_element: executed — differentiated commutators, Fourier normalization and Duhamel quadrature')
++    print('per_site: executed — 3-cube geometry and seven-site two-component covariance fixture')
++    print('per_mode: executed — four single-rotor cutoffs at g=0.6,0.4,0.25,0.16')
++    print('per_block: executed — finite weighted matrices, translated defects and rotor exponentials')
++    print('lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice')
+     print(f"TOTAL: PASS={checks} FAIL=0")
+ 
+ 
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block04_weyl_zero_mode_check.py
++++ scripts/rotor_joint_weyl_car_state_check_2026_09_16.py
+@@ -12,8 +12,14 @@
+ from scipy.linalg import eigh_tridiagonal, expm
+ 
+ AUDIT_TIMEOUT_SEC = 120
+-AUDIT_INPUT_PATHS = []
+-# No external scientific data are read. The source self-hash is an integrity read.
++AUDIT_INPUT_PATHS = ('docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md')
++# Literal proof inputs are read below; the source self-hash is an integrity read.
++
++_REPO = Path(__file__).resolve().parents[1]
++for _input_path in AUDIT_INPUT_PATHS:
++    _input_bytes = (_REPO / _input_path).read_bytes()
++    if _input_path.endswith('.md'):
++        assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
+ 
+ TOL = 2e-8
+ checks = 0
+@@ -132,6 +138,11 @@
+         print(f"g={row['g']:.2f}: Weyl error={row['root_error']:.6g}, wrong-sign error={row['wrong_sign_error']:.6g}")
+     for row in report["finite_zero_mode_ambiguity"]:
+         print(f"L={row['L']}: local zero-mode ambiguity={row['local_covariance_difference']:.6g}, global norm={row['full_covariance_operator_difference']:.6g}")
++    print('per_element: executed — Weyl signs and nonprojection covariance discriminator')
++    print('per_site: executed — local versus global covariance on finite rings L=8,16,32,64')
++    print('per_mode: executed — single-rotor Fourier cutoffs and exact auxiliary zero momenta')
++    print('per_block: executed — ground and excited rotor vectors, two-band and four-state fixtures')
++    print('lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice')
+     print(f"TOTAL: PASS={checks} FAIL=0")
+ 
+ 
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block05_generator_propagation_check.py
++++ scripts/rotor_joint_gauge_propagation_check_2026_09_16.py
+@@ -1,8 +1,9 @@
+ #!/usr/bin/env python3
+ """Charged-generator, square-root symbol, and missing-moment challenges.
+ 
+-The charged ring basis adapts the explicit Gauss construction in the previous
+-campaign's block24 runner at ccca36e505a4cc5d0cd4735b377c15d69042fc41.
++Historical provenance: the charged ring basis was adapted from a prior
++Gauss construction. Exact original source and provenance are archived under
++docs/work_history/review_loop/pr8160; no prior executable is loaded.
+ New current matrices are differentiated from their literal flux increments.
+ """
+ import hashlib
+@@ -16,8 +17,14 @@
+ from scipy.sparse.linalg import eigsh, expm_multiply
+ 
+ AUDIT_TIMEOUT_SEC = 120
+-AUDIT_INPUT_PATHS = []
+-# No external scientific data are read. The source self-hash is an integrity read.
++AUDIT_INPUT_PATHS = ('docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md')
++# Literal proof inputs are read below; the source self-hash is an integrity read.
++
++_REPO = Path(__file__).resolve().parents[1]
++for _input_path in AUDIT_INPUT_PATHS:
++    _input_bytes = (_REPO / _input_path).read_bytes()
++    if _input_path.endswith('.md'):
++        assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
+ 
+ TOL = 3e-8
+ checks = 0
+@@ -229,6 +236,11 @@
+     report["runner_sha256"]=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+     report["checks"]=checks
+     Path(__file__).with_suffix(".json").write_text(json.dumps(report,indent=2)+"\n")
++    print('per_element: executed — charged flux increments, current signs and residual identities')
++    print('per_site: executed — four-site charged ring at g=0.6,0.4,0.25')
++    print('per_mode: executed — weighted symbols on grids L=5,8,12 and three small radii; finite norms are diagnostic')
++    print('per_block: executed — sparse charged Duhamel comparisons and hidden-oscillator witness')
++    print('lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice')
+     print(f"TOTAL: PASS={checks} FAIL=0")
+ 
+ 
+--- .claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block06_rooted_matter_check.py
++++ scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python3
+ """Literal charged-ring challenge of rooted bounded matter dynamics.
+ 
+-Uses the same Gauss basis as the preceding campaign and Block05, while
++Uses the explicit Gauss basis of the gauge propagation program, while
+ building the rooted CAR map and closing-loop difference separately.
+ """
+ import hashlib
+@@ -14,14 +14,18 @@
+ from scipy.linalg import expm
+ from scipy.sparse.linalg import eigsh, expm_multiply
+ 
+-from block05_generator_propagation_check import car_hop
++from rotor_joint_gauge_propagation_check_2026_09_16 import car_hop
+ 
+ AUDIT_TIMEOUT_SEC = 120
+-AUDIT_INPUT_PATHS = [
+-    ".claude/science/physics-loops/toe-interacting-scale-20260916/evidence/block05_generator_propagation_check.py",
+-]
++AUDIT_INPUT_PATHS = ('docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'scripts/rotor_joint_gauge_propagation_check_2026_09_16.py')
+ # Scientific helper: the declared package-local CAR sign function.
+ # Integrity reads: this source and helper source for hashes. No external data.
++
++_REPO = Path(__file__).resolve().parents[1]
++for _input_path in AUDIT_INPUT_PATHS:
++    _input_bytes = (_REPO / _input_path).read_bytes()
++    if _input_path.endswith('.md'):
++        assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
+ 
+ TOL=3e-8
+ checks=0
+@@ -148,12 +152,17 @@
+     report["scope"]="Finite author challenge of rooted CAR residual and free time sign; not a thermodynamic phase calculation."
+     report["tolerance"]=TOL
+     report["runner_sha256"]=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+-    helper=Path(__file__).with_name('block05_generator_propagation_check.py')
++    helper=Path(__file__).with_name('rotor_joint_gauge_propagation_check_2026_09_16.py')
+     report["car_helper_sha256"]=hashlib.sha256(helper.read_bytes()).hexdigest()
+     report["checks"]=checks
+     Path(__file__).with_suffix('.json').write_text(json.dumps(report,indent=2)+'\n')
+     for row in report["charged_rooted_matter"]:
+         print(f"g={row['g']:.2f}: rooted residual={row['total_residual_norm']:.6g}, t=1.4 error={row['dynamics'][-1]['error']:.6g}")
++    print('per_element: executed — CAR signs, quadratic path term and residual decomposition')
++    print('per_site: executed — four-site charged ring in a 36-configuration fixed-number sector')
++    print('per_mode: executed — three finite flux cutoffs with original 1e-16 tail threshold')
++    print('per_block: executed — bounded matter propagation at times0.7 and1.4 with sign discriminator')
++    print('lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice')
+     print(f"TOTAL: PASS={checks} FAIL=0")
+ 
+ 

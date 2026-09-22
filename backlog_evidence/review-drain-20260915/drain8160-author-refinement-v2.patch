@@ -1,0 +1,143 @@
+--- docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -23,7 +23,7 @@
+ 
+ Exact integer Gauss-neutral Gaussian trial, uniform compact-field and spectral-response bounds in the supplied homogeneous rotor/CAR model; finite-volume soft weight, not a fixed-coupling phase.
+ 
+-The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++The model and state are supplied conditions. The proof uses no physical identification from another source package. Historical author checks are distinguished from current source-bound execution below.
+ 
+ ## 1. Exact supplied model and state
+ 
+--- docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -23,7 +23,7 @@
+ 
+ Supplied quadratic paired Wilson/rotor model without additional onsite charge interaction: uniform ground-energy and positive-square defect densities tending to zero along every joint g to zero and L to infinity sequence.
+ 
+-The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++The model and state are supplied conditions. The proof uses no physical identification from another source package. Historical author checks are distinguished from current source-bound execution below.
+ 
+ **Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+--- docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -23,7 +23,7 @@
+ 
+ Same supplied model and normalized full ground trace: local equal-time single-exponential gauge characteristic convergence along every joint weak-coupling/large-volume sequence, with fixed support.
+ 
+-The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++The model and state are supplied conditions. The proof uses no physical identification from another source package. Historical author checks are distinguished from current source-bound execution below.
+ 
+ **Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+--- docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -23,7 +23,7 @@
+ 
+ Same supplied model: fixed local Weyl words and finite-path neutral CAR polynomials converge jointly to the Gaussian gauge state times the pure filled-band Slater state; equal-time and fixed support.
+ 
+-The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++The model and state are supplied conditions. The proof uses no physical identification from another source package. Historical author checks are distinguished from current source-bound execution below.
+ 
+ **Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+--- docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -23,7 +23,7 @@
+ 
+ Same supplied model: local electric/magnetic two-point propagation along arbitrary joint weak-coupling/large-volume sequences, uniformly on fixed compact time intervals; no full nonlinear gauge dynamics assertion.
+ 
+-The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++The model and state are supplied conditions. The proof uses no physical identification from another source package. Historical author checks are distinguished from current source-bound execution below.
+ 
+ **Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+--- docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -23,7 +23,7 @@
+ 
+ Same supplied model on full Gauss Hilbert space: bounded local neutral matter multi-time words converge to free Slater dynamics along arbitrary joint weak-coupling/large-volume sequences, uniformly on fixed compact time intervals.
+ 
+-The model and state are supplied conditions. The proof uses no physical identification from another PR. Historical author checks are distinguished from current source-bound execution below.
++The model and state are supplied conditions. The proof uses no physical identification from another source package. Historical author checks are distinguished from current source-bound execution below.
+ 
+ **Matter restriction:** no additional unscaled onsite charge interaction is included. Use the normalized trace over the entire finite-volume ground space. Local probes and paths are fixed; time claims are uniform only on fixed compact intervals.
+ 
+--- scripts/rotor_uniform_compact_response_check_2026_09_16.py
++++ scripts/rotor_uniform_compact_response_check_2026_09_16.py
+@@ -17,6 +17,8 @@
+     _input_bytes = (_REPO / _input_path).read_bytes()
+     if _input_path.endswith('.md'):
+         assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
++
++assert 'mu_F((0,60g/a])+mu_B((0,60g/a]) >= g.' in (_REPO / AUDIT_INPUT_PATHS[0]).read_text()
+ 
+ TOL = 2e-10
+ results = {}
+--- scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py
++++ scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py
+@@ -19,6 +19,8 @@
+     _input_bytes = (_REPO / _input_path).read_bytes()
+     if _input_path.endswith('.md'):
+         assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
++
++assert 'A W_E A=C^* W_B C,' in (_REPO / AUDIT_INPUT_PATHS[0]).read_text()
+ 
+ TOL = 3e-9
+ out = {}
+--- scripts/rotor_tree_slater_dressing_check_2026_09_16.py
++++ scripts/rotor_tree_slater_dressing_check_2026_09_16.py
+@@ -16,6 +16,8 @@
+     _input_bytes = (_REPO / _input_path).read_bytes()
+     if _input_path.endswith('.md'):
+         assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
++
++assert 'A W_E A=C^* W_B C,' in (_REPO / AUDIT_INPUT_PATHS[0]).read_text()
+ 
+ TOL = 2e-9
+ report = {}
+--- scripts/rotor_joint_characteristic_check_2026_09_16.py
++++ scripts/rotor_joint_characteristic_check_2026_09_16.py
+@@ -23,6 +23,8 @@
+     _input_bytes = (_REPO / _input_path).read_bytes()
+     if _input_path.endswith('.md'):
+         assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
++
++assert "chi'(t)=-(kappa_L/2)t chi(t)+epsilon(t)," in (_REPO / AUDIT_INPUT_PATHS[0]).read_text()
+ 
+ TOL = 2e-8
+ data = {}
+--- scripts/rotor_joint_weyl_car_state_check_2026_09_16.py
++++ scripts/rotor_joint_weyl_car_state_check_2026_09_16.py
+@@ -20,6 +20,8 @@
+     _input_bytes = (_REPO / _input_path).read_bytes()
+     if _input_path.endswith('.md'):
+         assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
++
++assert 'sigma(G B)=sigma(G) omega_F(B).' in (_REPO / AUDIT_INPUT_PATHS[0]).read_text()
+ 
+ TOL = 2e-8
+ checks = 0
+--- scripts/rotor_joint_gauge_propagation_check_2026_09_16.py
++++ scripts/rotor_joint_gauge_propagation_check_2026_09_16.py
+@@ -25,6 +25,8 @@
+     _input_bytes = (_REPO / _input_path).read_bytes()
+     if _input_path.endswith('.md'):
+         assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
++
++assert '[calH,P(u)]=i Z(Su)-i g J(W_E^(1/2)u).' in (_REPO / AUDIT_INPUT_PATHS[0]).read_text()
+ 
+ TOL = 3e-8
+ checks = 0
+--- scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py
++++ scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py
+@@ -26,6 +26,8 @@
+     _input_bytes = (_REPO / _input_path).read_bytes()
+     if _input_path.endswith('.md'):
+         assert ('claim_id: ' + Path(_input_path).stem.lower()).encode() in _input_bytes
++
++assert '(g^2 q^2/2)||W_E^(1/2)p_x||_2^2 a_x.' in (_REPO / AUDIT_INPUT_PATHS[0]).read_text()
+ 
+ TOL=3e-8
+ checks=0

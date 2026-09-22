@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "author_imports": false,
+  "primary_execution": false,
+  "exact_quadratic_coframe_M": [
+    [
+      "1",
+      "0",
+      "1"
+    ],
+    [
+      "1",
+      "-5/3",
+      "-1"
+    ],
+    [
+      "1",
+      "5/3",
+      "-1"
+    ],
+    [
+      "1",
+      "0",
+      "1"
+    ]
+  ],
+  "temporal_subtracted_velocity": [
+    "0",
+    "-8/3",
+    "-2"
+  ],
+  "weighted_star_eigenvalues": [
+    0,
+    2,
+    2,
+    2,
+    4
+  ],
+  "N2_relative_log_source": "-1/4",
+  "N2_common_drift": "-5/16",
+  "boundary_naive_generic_coefficient_rejected_difference_in_units_1_over_pi": "1/4",
+  "limits": "Independent finite algebra controls only; not phase existence, a full pipeline, or new primary evidence."
+}

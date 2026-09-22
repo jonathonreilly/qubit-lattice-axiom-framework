@@ -1,0 +1,14 @@
+PR #8581: ail59: bond rates and lengths — a body at rest sources no length, and the bending of rays carries one more free number (source-link direction, block 7)
+branch physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_bond_rates_and_lengths_a_body_at_rest_sources_no_length_and_the_bending_of_rays_carries_one_more_free_number_2026_09_21.py: rc=0 PASS=15 FAIL=0
+   mutation body_at_rest_has_hop_energy: expected B observed B ok
+   mutation parts_do_not_add_to_the_whole: expected B observed B ok
+   mutation bond_law_is_unique: expected C observed C ok
+   mutation anisotropic_modes_are_massless: expected C observed C ok
+   mutation locked_lengths_double_the_bending: expected D observed D ok
+   mutation bending_ignores_the_bond_rates: expected D observed D ok
+   mutation a_local_clause_sees_the_depth: expected E observed E ok
+   mutation cross_term_leaves_lengths_alone: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

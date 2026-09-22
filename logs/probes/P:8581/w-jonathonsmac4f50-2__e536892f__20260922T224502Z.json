@@ -1,0 +1,37 @@
+{
+ "task": "P:8581",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block59-bond-r",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8581",
+ "pr": 8581,
+ "branch": "physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921",
+ "git_sha": "e536892f",
+ "started_utc": "20260922T224502Z",
+ "elapsed_s": 6.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_bond_rates_and_lengths_a_body_at_rest_sources_no_length_and_the_bending_of_rays_carries_one_more_free_number_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=15 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "c489379ad4b6061ffe636d0713ad3c35729c7d91fe0edfff16ff8a0718357e87",
+ "stdout_tail": "PR #8581: ail59: bond rates and lengths \u2014 a body at rest sources no length, and the bending of rays carries one more free number (source-link direction, block 7)\nbranch physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_bond_rates_and_lengths_a_body_at_rest_sources_no_length_and_the_bending_of_rays_carries_one_more_free_number_2026_09_21.py: rc=0 PASS=15 FAIL=0\n   mutation body_at_rest_has_hop_energy: expected B observed B ok\n   mutation parts_do_not_add_to_the_whole: expected B observed B ok\n   mutation bond_law_is_unique: expected C observed C ok\n   mutation anisotropic_modes_are_massless: expected C observed C ok\n   mutation locked_lengths_double_the_bending: expected D observed D ok\n   mutation bending_ignores_the_bond_rates: expected D observed D ok\n   mutation a_local_clause_sees_the_depth: expected E observed E ok\n   mutation cross_term_leaves_lengths_alone: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T224509Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

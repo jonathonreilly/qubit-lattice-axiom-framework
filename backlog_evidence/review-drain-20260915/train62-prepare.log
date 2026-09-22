@@ -1,0 +1,149 @@
+[detached HEAD 6fc079c969] Preserve independently reviewed source unit PR8146
+ Date: Tue Sep 22 16:56:00 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 133 files changed, 6312 insertions(+)
+ create mode 100644 docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_CHECKER_block08_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_CLAIM_STATUS_CERTIFICATE_block08.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_GOAL_block08.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_RESULTS_block08.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_z3.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_z3.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_z3_b.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_z3_b.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_CHECKER_block09_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_CLAIM_STATUS_CERTIFICATE_block09.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_GOAL_block09.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_RESULTS_block09.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_supervisor_control_block09_markov_corner_arrow.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_supervisor_control_block09_markov_corner_arrow.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_supervisor_control_block09_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8139/8139_supervisor_control_block09_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_CHECKER_block10_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_CLAIM_STATUS_CERTIFICATE_block10.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_GOAL_block10.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_RESULTS_block10.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_supervisor_control_block10_recorded_set.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_supervisor_control_block10_recorded_set.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_supervisor_control_block10_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8141/8141_supervisor_control_block10_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_CHECKER_block11_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_CLAIM_STATUS_CERTIFICATE_block11.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_GOAL_block11.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_HANDOFF_campaign_20260915_next_work.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_RESULTS_block11.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_c.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_c.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_d.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_d.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_e.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_e.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_f.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_f.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_CHECKER_block12_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_CLAIM_STATUS_CERTIFICATE_block12.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_GOAL_block12.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_RESULTS_block12.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_strong_coupling.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_strong_coupling.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8146/README.md
+ create mode 100644 docs/work_history/review_loop/pr8146/original-manifest.json
+ create mode 100644 logs/runner-cache/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.txt
+ create mode 100644 scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
+FROZEN 6fc079c969bad60ca855656e509561881dd53aa8 sources 133 inputs 163 notes 5

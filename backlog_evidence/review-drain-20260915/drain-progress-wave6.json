@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-22T21:00:32.567730+00:00",
+  "scope": "All open PRs, including draft ready-or-close triage and refreshed arrivals; continue until drained.",
+  "last_inventory": "drain-all-backlog-wave6.json",
+  "inventory_sha256": "73ca7247c91e2dd3771d072aa0fea75243a9ddcaa925c3c82b41cc0bcaa1d6d9",
+  "completed_since_scope_expansion": [
+    8079,
+    8081,
+    8137,
+    8140,
+    8144,
+    8145,
+    8143,
+    8147,
+    8179,
+    8555,
+    8572
+  ],
+  "current_main": "9ca43f83245a29864d7fbae1b6af2a6601a6e7d7",
+  "active": {
+    "train62": [
+      8138,
+      8139,
+      8141,
+      8142,
+      8146
+    ],
+    "review_and_author_corrections": [
+      8148,
+      8149,
+      8150
+    ],
+    "draft_review": [
+      8023
+    ]
+  },
+  "boundaries": "No audit verdicts or premise adoption. Partial/rejected original branches preserved. User workspace untouched. Ready reviewed units depart when integration is free."
+}

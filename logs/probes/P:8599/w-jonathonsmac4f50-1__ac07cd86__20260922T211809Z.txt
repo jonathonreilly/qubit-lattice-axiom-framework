@@ -1,0 +1,13 @@
+PR #8599: ail68: eight species of the walk — the frame shows them the same lengths; the relabelling's coupling shows them different lengths (source-link direction, block 16)
+branch physics-loop/admissibility-induced-law-block68-eight-species-of-the-walk-one-set-of-lengths-or-eight-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_2026_09_21.py: rc=0 PASS=14 FAIL=0
+   mutation walk_has_one_species: expected B observed B ok
+   mutation species_fall_differently_in_a_rate_field: expected B observed B ok
+   mutation frame_shows_species_different_lengths: expected C observed C ok
+   mutation frame_shows_species_the_same_angles: expected C observed C ok
+   mutation strain_shows_species_the_same_lengths: expected D observed D ok
+   mutation strain_square_is_not_a_sum_of_squares: expected D observed D ok
+   mutation every_species_bends_alike_under_the_strain: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

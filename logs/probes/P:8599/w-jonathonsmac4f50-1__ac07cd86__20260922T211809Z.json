@@ -1,0 +1,37 @@
+{
+ "task": "P:8599",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block68-eight-",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8599",
+ "pr": 8599,
+ "branch": "physics-loop/admissibility-induced-law-block68-eight-species-of-the-walk-one-set-of-lengths-or-eight-20260921",
+ "git_sha": "ac07cd86",
+ "started_utc": "20260922T211809Z",
+ "elapsed_s": 74.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "bd50b7c342a782088760e1a5a84a1ccfaac8c0af93a09df7a44b4f9c96004c14",
+ "stdout_tail": "PR #8599: ail68: eight species of the walk \u2014 the frame shows them the same lengths; the relabelling's coupling shows them different lengths (source-link direction, block 16)\nbranch physics-loop/admissibility-induced-law-block68-eight-species-of-the-walk-one-set-of-lengths-or-eight-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_2026_09_21.py: rc=0 PASS=14 FAIL=0\n   mutation walk_has_one_species: expected B observed B ok\n   mutation species_fall_differently_in_a_rate_field: expected B observed B ok\n   mutation frame_shows_species_different_lengths: expected C observed C ok\n   mutation frame_shows_species_the_same_angles: expected C observed C ok\n   mutation strain_shows_species_the_same_lengths: expected D observed D ok\n   mutation strain_square_is_not_a_sum_of_squares: expected D observed D ok\n   mutation every_species_bends_alike_under_the_strain: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T211923Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

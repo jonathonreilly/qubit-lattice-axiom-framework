@@ -1,0 +1,11 @@
+PR #8554: ail46: the potential of the wind solves the lattice field equation with the capture rates as sources; the inertial gas has radiation's equation of state (a correspondence of form with the weak-field packet, no gravitational claim)
+branch physics-loop/admissibility-induced-law-block46-the-potential-of-the-wind-and-the-conserved-tensor-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_potential_of_the_wind_lattice_poisson_equation_capture_rates_as_sources_conserved_tensor_of_radiation_2026_09_21.py: rc=0 PASS=11 FAIL=0
+   mutation plaquette_constraints_dropped: expected B observed B ok
+   mutation green_function_without_zero_mode_removal: expected B observed B ok
+   mutation gradient_with_circulation_injected: expected C observed C ok
+   mutation pressure_not_one_third: expected D observed D ok
+   mutation tensor_symmetric_at_every_density_injected: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

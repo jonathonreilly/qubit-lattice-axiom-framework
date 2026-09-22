@@ -1,0 +1,51 @@
+{
+ "task": "P:8567",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-local-gibbs-transport-2026",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8567",
+ "pr": 8567,
+ "branch": "codex/mobile-record-local-gibbs-transport-20260921",
+ "git_sha": "4e0f6149",
+ "started_utc": "20260922T212152Z",
+ "elapsed_s": 12.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=18 FAIL=0",
+    "census_mismatches": [
+     "break_cycle_amplitude_invariance",
+     "drop_Perron_normalization",
+     "halve_KLS_environment_rate",
+     "reverse_Gibbs_energy_sign",
+     "reverse_incoming_Gibbs_ratio",
+     "reverse_positive_birth_drift"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "c87373ac92322f6d22d969bccb07e25759513e307cef21b1c5dc9ca4b6f9d63c",
+ "stdout_tail": "PR #8567: Local Gibbs record circulations and winding transport\nbranch codex/mobile-record-local-gibbs-transport-20260921 (base main)\nrunners in the PR: 1\n== scripts/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.py: rc=0 PASS=18 FAIL=0\n   mutation break_cycle_amplitude_invariance: expected ? observed ? MISMATCH\n   mutation drop_Perron_normalization: expected ? observed ? MISMATCH\n   mutation halve_KLS_environment_rate: expected ? observed ? MISMATCH\n   mutation reverse_Gibbs_energy_sign: expected ? observed ? MISMATCH\n   mutation reverse_incoming_Gibbs_ratio: expected ? observed ? MISMATCH\n   mutation reverse_positive_birth_drift: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.py: mutation census mismatch: break_cycle_amplitude_invariance drop_Perron_normalization halve_KLS_environment_rate reverse_Gibbs_energy_sign reverse_incoming_Gibbs_ratio reverse_positive_birth_drift",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T212420Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 4e0f6149 differs from the current HEAD 19f8acf2 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Mobile-record census template: the runner's MUTATIONS table is {name: (check_file, old, new)} and prints no mutation_family lines, so run_pr_branch.py reads 'expected ? observed ?' for every mutation. Independent census on the PR branch (runpy-loaded table, each --mutation run): 6 of 6 exit 1 with a FAIL line naming the declared target file (break_cycle_amplitude_invariance and reverse_Gibbs_energy_sign: whole_generator_Gibbs_stationarity residuals 2.1e-4 and 4.9e-3; reverse_positive_birth_drift: birth_only_vacancy_Lyapunov_identity; drop_Perron_normalization, halve_KLS_environment_rate, reverse_incoming_Gibbs_ratio: gibbs_transport_1d_check.py assertions). Same class as P:8604/P:8560/P:8569, reported on #8294.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T212420Z"
+ }
+}

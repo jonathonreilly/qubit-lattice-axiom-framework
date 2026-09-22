@@ -1,0 +1,11 @@
+PR #8612: physics-loop: admissibility induced-law block 77 - the axioms' own generator: the scalar hop splits the species into four levels of one sense; a staggered term gives them mass
+branch physics-loop/admissibility-induced-law-block77-the-axioms-own-generator-and-a-staggered-rest-term-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_axioms_own_generator_scalar_hop_splits_species_staggered_term_gives_mass_2026_09_22.py: rc=0 PASS=11 FAIL=0
+   mutation a_term_gaps_the_zeros: expected B observed B ok
+   mutation levels_mix_the_senses: expected B observed B ok
+   mutation species_maps_survive_the_a_term: expected C observed C ok
+   mutation staggered_term_commutes_with_one_step_hops: expected D observed D ok
+   mutation staggered_masses_are_equal_for_a_nonzero: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

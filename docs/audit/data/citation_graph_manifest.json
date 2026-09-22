@@ -1,6 +1,6 @@
 {
- "edge_count": 13747,
- "node_count": 6268,
+ "edge_count": 13750,
+ "node_count": 6270,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6576,6 +6576,10 @@
   },
   "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07": {
    "deps_hash": "3082e5eb18d6",
+   "out_degree": 3
+  },
+  "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "205cf1d98d21",
    "out_degree": 3
   },
   "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07": {
@@ -24391,6 +24395,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8025.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8026.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

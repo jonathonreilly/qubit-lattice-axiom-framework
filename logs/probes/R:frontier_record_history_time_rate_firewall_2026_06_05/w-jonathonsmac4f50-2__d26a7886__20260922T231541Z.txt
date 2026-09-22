@@ -1,0 +1,91 @@
+==============================================================================
+ABSTRACT RECORD-WORD ORDER / TIME-RATE FIREWALL
+no-go / negative-route-pruning runner
+==============================================================================
+
+------------------------------------------------------------------------------
+1. Record words supply order/counts, not a metric
+------------------------------------------------------------------------------
+  [PASS] history is a finite word ([0, 1, 0, 0, 1])
+  [PASS] counts sum to word length ([3, 2])
+  [PASS] append increases length by one
+  [PASS] append updates the realized symbol count
+  [PASS] prefix lengths are monotone
+  [PASS] arbitrary finite extension exists
+  [PASS] no fixed finite cap appears in the word grammar
+
+------------------------------------------------------------------------------
+2. Same word, different time grids, different rates
+------------------------------------------------------------------------------
+  [PASS] unit and double grids preserve abstract index order
+  [PASS] irregular grid preserves abstract index order
+  [PASS] record counts are invariant under time-grid choice
+  [PASS] unit and double grids give different rates (1.0 vs 0.5)
+  [PASS] irregular grid gives another rate (0.5555555555555556 vs 1.0)
+  [PASS] rate rescales inversely with uniform time scale
+
+------------------------------------------------------------------------------
+3. Step kernels do not fix step duration
+------------------------------------------------------------------------------
+  [PASS] step kernel is stochastic
+  [PASS] initial distribution is normalized
+  [PASS] one-step distribution is normalized ([0.6, 0.39999999999999997])
+  [PASS] two-step distribution is normalized ([0.6, 0.39999999999999997])
+  [PASS] same step distributions are compatible with either dt
+  [PASS] Euler-style generator estimate scales with dt
+  [PASS] off-diagonal rates change when dt changes (0.2 vs 0.4)
+  [PASS] kernel alone does not encode the chosen dt
+
+------------------------------------------------------------------------------
+4. One-step event probability does not fix lambda
+------------------------------------------------------------------------------
+  [PASS] first lambda/dt pair gives q
+  [PASS] second lambda/dt pair gives same q
+  [PASS] the two lambdas differ (0.223144 vs 0.111572)
+  [PASS] same one-step probability is not a unique rate
+
+------------------------------------------------------------------------------
+5. Typed residual ledger
+------------------------------------------------------------------------------
+  [PASS] record outputs do not include time outputs
+  [PASS] kernel outputs do not include time outputs
+  [PASS] abstract word outputs do not include causal-event outputs
+  [PASS] time/rate bridge is a separate output class
+
+------------------------------------------------------------------------------
+6. Source note sanity
+------------------------------------------------------------------------------
+  [PASS] source note exists (docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md)
+  [PASS] note contains marker: claim_type_author_hint: no_go
+  [PASS] note contains marker: **Claim type:** no_go
+  [PASS] note contains marker: narrow negative route-pruning certificate
+  [PASS] note contains marker: Trace class: negative route pruning
+  [PASS] note contains marker: Does not derive physical time
+  [PASS] note contains marker: Does not select a generation/Koide dial setting.
+  [PASS] note contains marker: This row is not a positive time/rate theorem.
+  [PASS] note contains marker: is not a production theorem
+  [PASS] note contains marker: makes no retained-status proposal
+  [PASS] note contains marker: does not use bare retained language
+  [PASS] note contains marker: MINIMAL_AXIOMS_2026-06-29.md
+  [PASS] note contains marker: does not construct a map from a site-tagged record atom to a formation event
+  [PASS] note contains marker: must not be consumed as a positive causal-order input
+  [PASS] note contains marker: Does not derive record atoms as formation events
+  [PASS] forbidden wording absent: time closure
+  [PASS] forbidden wording absent: rate closure
+  [PASS] forbidden wording absent: generator closure
+  [PASS] forbidden wording absent: dial closure
+  [PASS] forbidden wording absent: audit verdict
+
+------------------------------------------------------------------------------
+N5 EXECUTION CERTIFICATE (print-only; registers no check)
+------------------------------------------------------------------------------
+  per_element: exercised, but only over 2-by-2 objects -- the step kernel is validated entry by entry, every entry tested against -TOL for nonnegativity and each row summed separately to one at atol = 1e-10, and the two Euler generator estimates are compared entrywise with worst deviation 0.000e+00 before a single named off-diagonal entry is read out to exhibit the rate ambiguity. That is the whole of the element-level work in this file.
+  per_site: checked and not executed -- the record word carries no site tags at all. Symbols are drawn from a two-letter alphabet and indexed only by their position in the word, so there is nothing to attach to a location. This is the note's own declared boundary rather than an omission: the paired source states that it does not construct a map from a site-tagged record atom to a formation event.
+  per_mode: checked and not executed -- the two-state kernel is never diagonalized and no spectral quantity is taken anywhere. It is only applied to a normalized distribution and differenced against the identity to form Euler generator estimates, so no eigenvector, relaxation mode or spectral gap is computed, and none is needed for the rate ambiguity this firewall exhibits.
+  per_block: checked and not executed -- no state space is decomposed. The only partition in the file is the typed residual ledger of section 5, which sorts output names into 4 record, 2 kernel, 4 time and 5 causal labels and certifies those sets pairwise disjoint. That is provenance bookkeeping over strings, not a block decomposition of anything physical.
+  lattice_wide: checked and not executed -- nothing with spatial extent is constructed, so there is no whole-system quantity and no finite-N or limiting content. The only size dial turned is word length, 5 against 1000, and that is history length rather than volume; the firewall's point is that neither length fixes a duration, and it would read identically at any lattice size.
+
+------------------------------------------------------------------------------
+SCORECARD
+------------------------------------------------------------------------------
+SCORECARD PASS=49 FAIL=0

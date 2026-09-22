@@ -1,0 +1,42 @@
+{
+ "task": "R:frontier_record_history_count_audit_unlock_scan_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_history_count_audit_unlock_scan_2026_06_05.py",
+ "seed": 18940,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d26a7886",
+ "started_utc": "20260922T231540Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=66 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "adc22efb10e583b454850f2f8f4c2b0a6c64d2100b063daf7b8515ddddd1567e",
+ "stdout_tail": "NT\n       quantum_Darwinism_record_reading,finite_model_bridge\n[PASS] D3 verdict edits forbidden: RECORD_FORMATION_DYNAMICS_CONSTRAINT\n       support map only\n[PASS] D3 support ids known: DYNAMICS_FORM_FROM_RECORD_PRESERVATION\n       finite_alphabet_dynamics\n[PASS] D3 remaining gates named: DYNAMICS_FORM_FROM_RECORD_PRESERVATION\n       two_endpoint_Gauss_bridge,record_formation_bridge,couplings_and_truncation\n[PASS] D3 verdict edits forbidden: DYNAMICS_FORM_FROM_RECORD_PRESERVATION\n       support map only\n[PASS] B4 bucket count cite_ready_support\n       observed=4 expected=4\n[PASS] B4 bucket count firewall_strengthened\n       observed=2 expected=2\n[PASS] B4 bucket count probability_or_instrument_blocked\n       observed=4 expected=4\n[PASS] B4 bucket count record_invariant_unchanged\n       observed=2 expected=2\n[PASS] B4 bucket count formation_or_carrier_dynamics\n       observed=2 expected=2\n[PASS] B4 total candidates\n       total=14\n[PASS] F5 old P1 dependents are not auto-migrated\n[PASS] F5 no row claims audit verdict authority\n[PASS] F5 companion-only rows do not need new history/count support\n\n=== Record history/count audit-unlock interpretation ===\nThe new history/count dynamics stack creates citation-ready support for finite append/count/coarse-graining rows.\nRows needing probability, production, source/action, Kraus instruments, or carrier dynamics remain blocked at named gates.\nNo audit verdicts or status fields are changed by this support map.\nSCORECARD PASS=66 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T231932Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SCORECARD PASS=66 FAIL=1' vs cache 'SCORECARD PASS=67 FAIL=0'"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Single failure '[FAIL] C2 local candidate exists: SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE' is the runner's existence gate on docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md, which is on main at archive/notes/docs/ (archived out of docs/); the other 66 gates pass (SCORECARD PASS=66 FAIL=1 vs cache 67/0); documentation state, not a physics result.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T231932Z"
+ }
+}

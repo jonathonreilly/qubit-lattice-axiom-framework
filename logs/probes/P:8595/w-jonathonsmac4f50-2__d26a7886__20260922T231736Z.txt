@@ -1,0 +1,3 @@
+PR #8595: ail64: bond strains and plaquette curls — blindness to the coin's axes forces the curvature member (β = 1), and needs a blind content (source-link direction, block 12)
+branch physics-loop/admissibility-induced-law-block64-bond-strains-and-plaquette-curls-blindness-to-the-coins-axes-forces-the-curvature-member-20260921 (base main)
+runners in the PR: 0

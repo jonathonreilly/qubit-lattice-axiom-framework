@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_instrument_composite_link_erasure_slaving_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_instrument_composite_link_erasure_slaving_2026_06_09.py",
+ "seed": 18942,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d26a7886",
+ "started_utc": "20260922T231542Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=40 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a88eb8b35c61fbcfa8fcc25f35709db7d47490fee883e56dac182bde3e647c0c",
+ "stdout_tail": "cords absent, no slaving)  (max dev = 3.153)\n[PASS] D6: joint local covariance of the INSTRUMENTED link trajectory is exact under I-B (color-blind instrument)  (max dev = 1.97e-15)\n[PASS] D7: joint local covariance FAILS under I-A (the named frame breaks it -- admission footprint)  (max violation = 1.320)\n\n== Part E: the hidden-Q non-autonomy channel under records ==\n[PASS] E1: exhibit pair valid: same U_eff(0), same local densities, different positive parts, both physical  (|Q_A - Q_B|_F = 0.0191)\n[INFO] E exhibit separation lam=0.0: max_t |U_A - U_B|_F = 0.3420, final = 0.1114\n[INFO] E exhibit separation lam=0.3: max_t |U_A - U_B|_F = 0.1048, final = 0.0082\n[INFO] E exhibit separation lam=0.7: max_t |U_A - U_B|_F = 0.0583, final = 0.0050\n[INFO] E exhibit separation lam=0.95: max_t |U_A - U_B|_F = 0.0168, final = 0.0046\n[PASS] E2: lam=0 reproduces the block-01 non-autonomy (trajectories with identical U_eff(0)/local densities separate; >10x the record-dominated case)  (max sep = 0.342 vs lam=0.95 max 0.017)\n[PASS] E3: separation suppressed MONOTONICALLY with record strength  (0.342 > 0.105 > 0.058 > 0.017)\n[PASS] E4: record-dominated regime: the two trajectories CONVERGE (hidden-Q channel damped; final sep < 5% of lam=0 max)  (final sep at lam=0.95 = 0.0046)\n[PASS] E5: instrument footprint: the slaved links of I-A and I-B from the SAME initial state differ at order 1 (the admission is visible in the result)  (|U_slaved(I-A) - U_slaved(I-B)|_F = 2.102)\n\nTOTAL: PASS=40 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T231542Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_record_instrument_composite_link_erasure_slaving_2026_06_09.txt against the .txt beside this log"
+  ]
+ }
+}

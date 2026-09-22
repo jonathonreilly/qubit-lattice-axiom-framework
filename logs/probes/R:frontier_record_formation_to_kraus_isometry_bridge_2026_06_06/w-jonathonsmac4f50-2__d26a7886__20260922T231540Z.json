@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_formation_to_kraus_isometry_bridge_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py",
+ "seed": 18940,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d26a7886",
+ "started_utc": "20260922T231540Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=75 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bc632fd4f193935e57a91b703e81865b4279b233a531e054007edbb4b92adb8b",
+ "stdout_tail": "ive when nonzero\nPASS branch probabilities sum to one :: sum=1.000000000000\nPASS branch probabilities match pointer populations\nPASS branch 0 repeat-read has probability one\nPASS branch 0 repeat-read leaves state fixed\nPASS branch 0 cross-read excluded\nPASS branch 1 repeat-read has probability one\nPASS branch 1 repeat-read leaves state fixed\nPASS branch 1 cross-read excluded\nPASS record labels are orthogonal one-hot atoms\nPASS W preserves norm for coherent pre-record ket\nPASS W writes pointer label without rotating pointer sector\n\n------------------------------------------------------------------------------\nBoundary controls\n------------------------------------------------------------------------------\nPASS single-label write can be an isometry\nPASS single-label write is not a two-outcome record split\nPASS duplicating the whole state into two outcomes is not normalized\nPASS projector block split is the normalized two-record write\nPASS controlled-copy to W derived for explicit finite model flag is true\nPASS general persistent dynamics to W derived flag is false\nPASS physical Hamiltonian/coupling selected flag is false\nPASS probability law from post-record counts flag is false\nPASS generation/Koide dial selected flag is false\nPASS audit verdict applied flag is false\n\nSUMMARY: PASS=75 FAIL=0\nRECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE=EXACT_SUPPORT_UNDER_FINITE_POINTER_MODEL\nGENERAL_PERSISTENT_RECORD_DYNAMICS_TO_W_DERIVED=FALSE\nPOST_RECORD_COUNTS_SELECT_PROBABILITY_OR_DIAL=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T231540Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

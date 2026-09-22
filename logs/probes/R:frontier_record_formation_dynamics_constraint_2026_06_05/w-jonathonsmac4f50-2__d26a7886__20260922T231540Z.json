@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_formation_dynamics_constraint_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
+ "seed": 18940,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d26a7886",
+ "started_utc": "20260922T231540Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=56 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4e3ad37b10d3301c396deda156ad738d9fe731b4c88ae82fbdfe90cd8cb74b68",
+ "stdout_tail": "ssibly trivial or non-unique commutant.\n  - It does NOT derive the action, the coupling g (Part 9: any g works), the\n    transfer-matrix magnitude, or beta=6. It proves all-state conservation\n    criteria and tests one explicit local controlled-copy channel as a\n    sufficient record-writing construction.\n  - It does NOT prove that a physical framework OS transfer writes records or\n    preserves normalized charge-sector populations. Part 8 checks block\n    diagonality and exhibits the nonunitary population-change boundary.\n  - Pointer non-demolition is necessary and sufficient for all-state pointer\n    persistence -- at the FLOW level for the generator ([H,Pi_S]=0, Part 6b)\n    and at the STEP level for the unitary ([U,Pi_S]=0, Part 6d). The\n    generator-level condition is not forced by a single record-forming step,\n    and the global step condition is not forced by formation on the supplied\n    fresh-fragment subspace. Neither condition is by itself sufficient for\n    record formation. The lattice/continuum and interacting generalization is\n    not established here.\n  - We do NOT claim 'derived the action' or 'derived the dynamics'. We claim a\n    pair of all-state pointer-conservation criteria and a controlled-copy\n    sufficient construction on the explicit system, given the bounded bridges.\n\n==============================================================================\nSUMMARY: PASS=56 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T231540Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

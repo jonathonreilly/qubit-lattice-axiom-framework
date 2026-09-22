@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_prerecord_instrument_kernel_gate_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py",
+ "seed": 18943,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d26a7886",
+ "started_utc": "20260922T231543Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3f7186eadbb91c4ba7b586e2ba5d56b0bdd1400691fea4a090d24fb807cda037",
+ "stdout_tail": "tor\n[PASS] outcome 0 writes one-hot record atom e0 -- e0=[1, 0]\n[PASS] outcome 1 writes one-hot record atom e1 -- e1=[0, 1]\n[PASS] realized count update for outcome 0 is integral -- count0=[5, 2]\n[PASS] realized count update for outcome 1 is integral -- count1=[4, 3]\n[PASS] ensemble expected count is fractional and typed separately -- E[count']=[14/3, 7/3]\n[PASS] expected count is not either realized update\n\nE. selective and nonselective quantum states remain pre-record/ensemble objects\n[PASS] selective state for outcome 0 is normalized projector P0\n[PASS] selective state for outcome 1 is normalized projector P1\n[PASS] nonselective ensemble has trace one -- rho_ns=Matrix([[2/3, 0], [0, 1/3]])\n[PASS] nonselective ensemble is not a realized record atom\n\nF. boundary firewalls\n[PASS] Record alone does not derive the supplied readout context\n[PASS] Record/Quantum alone do not derive arbitrary physical measurement dynamics\n[PASS] one-shot probabilities do not supply IID frequencies\n[PASS] instrument probabilities do not supply a physical Markov generator\n[PASS] no clock/rate unit is selected\n[PASS] no generation or Koide dial value is selected\n\nSCORECARD: PASS=38 FAIL=0\nVERDICT: bounded support for the pre-record instrument kernel gate. With cited retained-bounded projective instrument/trace authority and a supplied readout context, a qubit state gives probabilities over possible future record atoms; the written post-record atom is realized information, not the probability vector.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T231544Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_history_monoid_unbounded_retention_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_history_monoid_unbounded_retention_2026_06_05.py",
+ "seed": 18941,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d26a7886",
+ "started_utc": "20260922T231541Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f7009044044b9f249d9d903037f14bd176eae5dd7b9e0944e6c507f849573381",
+ "stdout_tail": "cord pairs under append\n[PASS] Z5.1 explicit line embedding gives N distinct Z^3 sites for N=0..20\n[PASS] Z5.2 no tested finite cap: 101 distinct sites exist on a lattice line\n[PASS] Z5.3 symbolic bound escape is B -> B+1 finite sites\n[PASS] T6.1 nonempty count total is history length, not probability normalization\n[PASS] T6.2 count entries are integers and can exceed one\n[PASS] T6.3 count normalization differs from probability normalization\n[PASS] B7.1 constructed histories are finite at each finite N\n[PASS] B7.2 lengths are unbounded over finite N samples\n[PASS] B7.3 no single constructed history has infinite length\n[PASS] G8.1 source note declares bounded theorem, not positive closure\n[PASS] G8.2 source note records exact post-record support boundary\n[PASS] G8.3 source note says production is not derived\n[PASS] G8.4 source note says readout context/alphabet are supplied\n[PASS] G8.5 source note keeps probability and IID outside the result\n[PASS] G8.6 source note blocks retained-status proposal language\n[PASS] G8.7 source note names downstream additivity row without promoting it\n\n=== Record history interpretation ===\nFinite record histories form an append-only free monoid; counts form N^O.\nZ^3 gives arbitrarily many distinct sites for any finite N, so no fixed finite cap is imposed by the framework carrier.\nThis is bounded post-record support for unbounded finite retention, not production closure, completed infinity, or coherent qubit-state storage.\nSCORECARD PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T231541Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

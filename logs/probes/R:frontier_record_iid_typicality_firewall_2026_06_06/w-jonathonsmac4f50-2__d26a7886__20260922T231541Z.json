@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_record_iid_typicality_firewall_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_iid_typicality_firewall_2026_06_06.py",
+ "seed": 18941,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d26a7886",
+ "started_utc": "20260922T231541Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bc6b98ba4379adc84989c1fb8ae88b8c99fa3c867d35660064086b8ac572c3aa",
+ "stdout_tail": "s them to a location; the alphabet is two abstract letters. A site-resolved reading of this firewall would attribute structure the runner never builds.\nper_mode: checked and not executed -- no state space, operator or basis appears at all, so nothing can be decomposed into modes. The vectors here are classical probability distributions over a two-letter alphabet; no spectrum is taken, and the one-step vector is explicitly checked to be a distribution rather than a realized atom, which is a typing statement and not a modal one.\nper_block: exercised -- the 4 two-record words are partitioned into 3 count blocks by how many zeros they contain, and the entire result is visible at that granularity: the two laws agree on both marginals and even on the expected count, yet their count-block distributions differ and so do their variances. The obstruction is a block-level difference invisible to the one-step law.\nlattice_wide: checked and not executed -- nothing of any extent exists here and no size is varied; the run stops deliberately at two records. That absence is the substance of the no-go rather than a gap in it: a typicality or large-sample statement is exactly what a one-shot production probability fails to supply, so there is no finite-N ladder to report and no limit is approached.\n\nSCORECARD: PASS=22 FAIL=0\nVERDICT: exact no-go for deriving IID/typicality from a one-shot record-production probability vector. Same one-step marginals can have different joint and frequency laws.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T231542Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

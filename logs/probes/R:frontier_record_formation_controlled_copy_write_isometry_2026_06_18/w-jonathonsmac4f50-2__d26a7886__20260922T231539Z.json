@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_formation_controlled_copy_write_isometry_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
+ "seed": 18939,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d26a7886",
+ "started_utc": "20260922T231539Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b9f480893767a3fe2906156529d623c866686c660a20ca6c0881afe7a536671d",
+ "stdout_tail": " = I\nPASS extracted K_0 equals P_0\nPASS extracted K_1 equals P_1\nPASS Kraus resolution closes\nPASS generic coherent input maps to orthogonal pointer-label superposition\n\n------------------------------------------------------------------------------\nFresh-fragment chain and idle completed labels\n------------------------------------------------------------------------------\nPASS two fresh fragments carry matching pointer labels :: [4.47213595e-01+0.00000000e+00j 7.02166694e-17+0.00000000e+00j\n 9.93013661e-17+0.00000000e+00j 5.51233315e-33+0.00000000e+00j\n 0.00000000e+00-1.10246663e-32j 0.00000000e+00-1.98602732e-16j\n 0.00000000e+00-1.40433339e-16j 0.00000000e+00-8.94427191e-01j]\nPASS later fresh-fragment kick commutes with completed E1 eta_0 label\nPASS later fresh-fragment kick commutes with completed E1 eta_1 label\n\n------------------------------------------------------------------------------\nBoundary controls\n------------------------------------------------------------------------------\nPASS controlled-copy to projective W is derived for explicit model\nPASS arbitrary persistent dynamics to W remains false\nPASS quantum-Darwinism record reading remains a bounded model bridge\nPASS physical Hamiltonian/coupling selection remains false\nPASS Born rule from post-record counts remains false\nPASS generation/Koide dial selection remains false\nPASS audit verdict applied remains false\n\nwrote outputs/record_formation_controlled_copy_write_isometry_2026_06_18.json\nSUMMARY: PASS=37 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T231540Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

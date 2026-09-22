@@ -1,0 +1,1 @@
+seed 164: 3072 trees; nodes with >= 2 processed children by kind: {'seed': 2, 'amp': 0, 'proc': 1}; with 3: 0

@@ -1,0 +1,32 @@
+{
+ "task": "S:construction-children",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-4",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 construction_children.py 10 4000",
+ "seed": 10,
+ "minutes": 30.0,
+ "box": null,
+ "git_sha": "796b059b",
+ "started_utc": "20260922T133607Z",
+ "elapsed_s": 3.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "line": "seed 10: 3073 trees; nodes with >= 2 processed children by kind: {'seed': 3, 'amp': 2, 'proc': 2}; with 3: 0"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "block 30's construction on random cones: nodes receiving arrows from two or three processed poles, by kind (block 33 addendum: two happens about once per thousand trees, three never). A HIT is a node with three processed children (it would matter for the count). Vary the seed; 4000 cones per run.",
+ "stdout_sha256": "b2e6b85c0b7006aae652ac9865e29c6ee559de56db568bdb8a94d09eca091912",
+ "stdout_tail": "seed 10: 3073 trees; nodes with >= 2 processed children by kind: {'seed': 3, 'amp': 2, 'proc': 2}; with 3: 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-4",
+  "at_utc": "20260922T133611Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

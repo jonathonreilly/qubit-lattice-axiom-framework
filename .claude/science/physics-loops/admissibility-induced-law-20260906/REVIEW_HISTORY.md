@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 78 — author checks (not a review PASS)
+Written lens pass by the supervisor. A wrong additivity test (on `H²`, a two-body operator on the pair) caught and rebuilt before the gates; T2 sharpened after the control's full spectra (sixth traces added); closed forms stated as read off, not proved; a name in the status block reworded. Census 6/6 in family.

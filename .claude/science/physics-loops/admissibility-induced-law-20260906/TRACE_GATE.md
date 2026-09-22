@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 78 (2026-09-22)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "fork probe section 4 item 1: the exchange sign is not in the axioms; block 76's free-sea reading"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "one record per site is an interaction, not a free pair of either sign; additivity fails under exclusion; next: SU(2) links; the two-record ledger under exclusion; the hard-core sea's energy"
+```

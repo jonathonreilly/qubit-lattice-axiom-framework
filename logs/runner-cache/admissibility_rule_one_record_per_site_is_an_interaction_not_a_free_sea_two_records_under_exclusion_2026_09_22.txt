@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_one_record_per_site_is_an_interaction_not_a_free_sea_two_records_under_exclusion_2026_09_22.py
+runner_sha256: c4adc781e695e03bccb5102c452d5582c1a0b9401a9134945c320f898805e4c7
+input_fingerprint_sha256: 7083ecdaf2a377fb623aea6dbb870881c46524911d7454451d2d309743b0faaa
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 32.64
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_IS_AN_INTERACTION_NOT_A_FREE_SEA_TWO_RECORDS_UNDER_EXCLUSION_AGAINST_FREE_ANTISYMMETRIC_AND_SYMMETRIC_PAIRS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on rings of 4, 5, 6, 7 sites the two-record generator restricted to configurations with the records on different sites has tr H^2/dim different from the free antisymmetric pair's and from the free symmetric pair's (N = 4: hard-core 2/3 against free antisymmetric 6/7 and free symmetric 10/9; N = 5: hard-core 3/4 against free antisymmetric 8/9 and free symmetric 12/11; N = 6: hard-core 4/5 against free antisymmetric 10/11 and free symmetric 14/13; N = 7: hard-core 5/6 against free antisymmetric 12/13 and free symmetric 16/15); the hard-core antisymmetric sector has N fewer states than the free one (the same-site pairs of opposite coin): 'one record per site at a time' is an interaction, not a free pair of either sign
+PASS: C1 T2: under exclusion the antisymmetric, symmetric and sign-free two-record generators have the same tr H^2/dim on every ring tried; the same tr H^4/dim on the rings of 5, 6 and 7 and the same tr H^6/dim on 5 and 7; on the even rings the sign shows - at fourth order on the ring of 4 (5/6 against 7/6), at sixth order on the ring of 6: the exchange sign is invisible at second order, and where it shows it is a parity effect of the ring; the exclusion, not the sign, shapes the two-record spectrum at low order
+PASS: D1 T3: on a ring of 6 with a varying rational rate field, for the antisymmetric pair of two exactly orthogonal complex one-record states, the pair's energy under the FREE two-record generator is the sum of the one-record energies (16169964/134909593 = -1368/44639 + 18497292780/122902639223; block 76 T3), and under the hard-core generator (the pair projected to different-site configurations, the generator compressed) it is 12349656/122046701, not the sum: with one record per site at a time the ledger's source of two records is not the sum of the one-record sources
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the two-body matrix elements of the compressed generators on rings of 4 to 7 sites
+per_site: executed - the hard-core sectors defined site by site (records on different sites) and their dimensions against the free sectors
+per_mode: executed - tr H^2/dim and tr H^4/dim of five two-record generators on four rings, exact rationals
+per_block: executed - the pair's expectation under the free and under the hard-core generator against the sum of the one-record values, on a ring of 6 with varying rates
+lattice_wide: T1-T3 are exact on the rings tried (4 to 7 sites; the reduced walk); the statements about Z^3 and about more than two records are not made; the exchange sign and the filling are not decided
+PASS: G1 the five N5 resolution lines are printed
+scope: one record per site is an interaction, not a free sea - two records under exclusion have a spectrum (tr H^2/dim, tr H^4/dim, exact) different from the free antisymmetric and from the free symmetric pair on every ring tried; the exchange sign is invisible at second order under exclusion; the pair's energy is additive under the free generator and not under exclusion: a filled sea of the axioms' records would be an interacting many-record problem, not block 76's free sea
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block78: "opened for review 2026-09-22; twenty-sixth block of the source-link direction, third after the fork probe: two records under the Record axiom's one-per-site exclusion (hard-core; either exchange sign or none) have a generator with tr H^2/dim = 2/3, 3/4, 4/5, 5/6 on rings 4-7, different from the free antisymmetric (6/7, ...) and free symmetric (10/9, ...) pairs; the sign is invisible at second order and shows only through ring parity; the free pair's energy is additive, the hard-core pair's is not: block 76's free sea is a comparator, the framework's records form an interacting many-record problem; nothing adopted"

@@ -1,0 +1,16 @@
+[W1] rings: spectra of the two-record generators
+     N = 4: dims free anti/sym 28/36, hard anti/sym/none 24/24/48; largest |E|: free anti 2.0000, hard anti 1.4142; distinct eigenvalues hard anti 5 vs hard sym 5; spectral distance hard anti-sym 4.42e-01; mean E^2: free anti 0.8571, free sym 1.1111, hard 0.6667
+     N = 5: dims free anti/sym 45/55, hard anti/sym/none 40/40/80; largest |E|: free anti 1.9021, hard anti 1.6180; distinct eigenvalues hard anti 19 vs hard sym 19; spectral distance hard anti-sym 7.54e-16; mean E^2: free anti 0.8889, free sym 1.0909, hard 0.7500
+     N = 6: dims free anti/sym 66/78, hard anti/sym/none 60/60/120; largest |E|: free anti 1.7321, hard anti 1.7321; distinct eigenvalues hard anti 11 vs hard sym 11; spectral distance hard anti-sym 2.12e-01; mean E^2: free anti 0.9091, free sym 1.0769, hard 0.8000
+     N = 7: dims free anti/sym 91/105, hard anti/sym/none 84/84/168; largest |E|: free anti 1.9499, hard anti 1.8019; distinct eigenvalues hard anti 37 vs hard sym 37; spectral distance hard anti-sym 1.01e-15; mean E^2: free anti 0.9231, free sym 1.0667, hard 0.8333
+     N = 8: dims free anti/sym 120/136, hard anti/sym/none 112/112/224; largest |E|: free anti 2.0000, hard anti 1.8478; distinct eigenvalues hard anti 19 vs hard sym 19; spectral distance hard anti-sym 1.44e-01; mean E^2: free anti 0.9333, free sym 1.0588, hard 0.8571
+
+[W2] 4x4 torus with the two-dimensional walk
+     free_anti : dim 496, mean E^2 1.93548, mean E^4 8.51613, largest |E| 2.8284
+     free_sym  : dim 528, mean E^2 2.06061, mean E^4 9.45455, largest |E| 2.8284
+     hard_anti : dim 480, mean E^2 1.86667, mean E^4 7.93333, largest |E| 2.8284
+     hard_sym  : dim 480, mean E^2 1.86667, mean E^4 7.80000, largest |E| 2.8284
+     spectral distance hard anti - hard sym: 1.29e-01
+
+[W3] three records on a ring of 6 under exclusion (antisymmetric): dimension and mean E^2 against the free antisymmetric triple
+     free antisymmetric triple: dim 220, mean E^2 1.2273; hard-core: dim 160, mean E^2 0.9000

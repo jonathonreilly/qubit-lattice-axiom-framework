@@ -1,0 +1,21 @@
+{
+  "pr": 8147,
+  "original_head": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb",
+  "branch": "physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915",
+  "landing": "9ca43f83245a29864d7fbae1b6af2a6601a6e7d7",
+  "source_verified_at": "9ca43f83245a29864d7fbae1b6af2a6601a6e7d7",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8147-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T20:55:04Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915",
+    "headRefOid": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8147,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8147"
+  }
+}

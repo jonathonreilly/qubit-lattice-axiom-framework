@@ -1,0 +1,13 @@
+{
+  "head": "e5f667b76b594a656abf3b8082ed1bb3c13770ce",
+  "archive": "drain8147-author-pyc-recovery.tar.gz",
+  "sha256": "a411210d33632b15219d6547291b0e285d0f2ae10aec7d4590143e57c1e048ed",
+  "paths": {
+    "docs/ai_methodology/skills/review-loop/scripts/__pycache__/review_receipt.cpython-312.pyc": "0ce90c85e3d5d53d98cdafaa49991eeacb3b7aa980ed5b73db285d12152d42c3",
+    "docs/audit/scripts/__pycache__/build_citation_graph.cpython-312.pyc": "a5ab5569f84e191d34857192b64746fe38dcb62f0d746ed7a82383fb1c0b42ae",
+    "docs/audit/scripts/__pycache__/ledger_io.cpython-312.pyc": "b16ce840d2d011c1f1f81e3a2a25d95079a98a4c486b13c196edbeb9fc55d4a5",
+    "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-312.pyc": "dc0d18702a1511f468fdd1994ccabddbecb4b740501114d2001f7314ece8ac54",
+    "scripts/__pycache__/audit_packet_script_deps.cpython-312.pyc": "4637dbe8691ff84869c5355a753c17cbe6544d5969a613225bd753871ec74da6",
+    "scripts/__pycache__/runner_cache.cpython-312.pyc": "200d007376c8b68143ae93a14bc417d618861cc052e9e64537e9403911984579"
+  }
+}

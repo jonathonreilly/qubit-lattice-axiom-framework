@@ -1,0 +1,43 @@
+[detached HEAD 510a2a131d] Preserve independently reviewed source unit PR8147
+ Date: Tue Sep 22 16:45:47 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 27 files changed, 1159 insertions(+)
+ create mode 100644 docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_CHECKER_block13_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_CLAIM_STATUS_CERTIFICATE_block13.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_GOAL_block13.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_RESULTS_block13.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_causal_gaussian.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_causal_gaussian.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8147/README.md
+ create mode 100644 docs/work_history/review_loop/pr8147/original-manifest.json
+ create mode 100644 logs/runner-cache/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.txt
+ create mode 100644 scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py
+FROZEN 510a2a131d26cf651545c81adad7a1d63adbf809 sources 27 inputs 40 notes 1

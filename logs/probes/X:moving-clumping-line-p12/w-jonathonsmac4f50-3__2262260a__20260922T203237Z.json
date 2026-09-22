@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-clumping-line-p12",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 7 1 2 2 0.3 24 3000 1",
+ "seed": 9157,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2262260a",
+ "started_utc": "20260922T203237Z",
+ "elapsed_s": 183.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=7.0 q=1.0 r=2.0 c=2.0000 rho=0.3 L=24 nbrs=4.939 nbrs_over_random=2.744 aligned=0.619 S=7.17 accept=0.101 records=4173 seconds=184"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: records that move. Where do records clump on the line (p,1,2)? First look (density 0.3): onset near p = 10 at the neutral scale, between 5 and 6 at scale 1. The table over p, scale and density is the map. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 132 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "8b21e7b72697befca47c9d9ef1e8c5934c77bcb9abacb33a095474379d44683e",
+ "stdout_tail": "weights (7.0,1.0,2.0) scale c=2.0000 (2) rho=0.3 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=1.800 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 2.652 0.256 0.319 0.39\n     2 2.823 0.283 0.226 0.36\n     4 3.011 0.305 0.195 0.44\n     9 3.225 0.330 0.167 0.52\n    18 3.426 0.350 0.160 0.52\n    38 3.640 0.377 0.139 0.62\n    79 3.970 0.395 0.121 0.63\n   163 4.167 0.436 0.116 0.87\n   338 4.429 0.470 0.116 1.81\n   700 4.632 0.518 0.122 3.17\n  1449 4.822 0.587 0.105 3.93\n  3000 4.962 0.636 0.097 8.78\nSUMMARY: p=7.0 q=1.0 r=2.0 c=2.0000 rho=0.3 L=24 nbrs=4.939 nbrs_over_random=2.744 aligned=0.619 S=7.17 accept=0.101 records=4173 seconds=184\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T203541Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+PR #8596: ail65: the blind walk — a scalar hop weighted by the twist of the coin makes a varying rotation of the coin axes a symmetry (source-link direction, block 13)
+branch physics-loop/admissibility-induced-law-block65-the-blind-walk-a-scalar-hop-weighted-by-the-twist-of-the-coin-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_blind_walk_a_scalar_hop_weighted_by_the_twist_of_the_coin_along_the_bond_2026_09_21.py: rc=0 PASS=13 FAIL=0
+   mutation rotation_needs_no_scalar_hop: expected B observed B ok
+   mutation scalar_hop_sits_on_the_sites: expected B observed B ok
+   mutation walk_without_the_hop_is_blind: expected C observed C ok
+   mutation blind_walk_is_not_hermitian: expected C observed C ok
+   mutation torque_survives_the_hop: expected D observed D ok
+   mutation bare_walk_has_no_torque: expected D observed D ok
+   mutation odd_scalar_sees_a_symmetric_strain: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

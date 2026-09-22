@@ -1,0 +1,10 @@
+PR #8610: Nonlinear permanent-record waves with moving geometry
+branch codex/mobile-record-smooth-nonlinear-euler-20260921 (base codex/mobile-record-empty-start-quantitative-waves-20260921)
+runners in the PR: 1
+== scripts/mobile_records_smooth_nonlinear_euler_2026_09_21.py: rc=0 PASS=11 FAIL=0
+   mutation double_block_exponential_coefficient: expected ? observed ? MISMATCH
+   mutation omit_entropy_flux_half_M: expected ? observed ? MISMATCH
+   mutation omit_geometry_marginal_entropy_derivative: expected ? observed ? MISMATCH
+   mutation omit_nonlinear_population_flux: expected ? observed ? MISMATCH
+   mutation omit_owner_boundary_coverage: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_smooth_nonlinear_euler_2026_09_21.py: mutation census mismatch: double_block_exponential_coefficient omit_entropy_flux_half_M omit_geometry_marginal_entropy_derivative omit_nonlinear_population_flux omit_owner_boundary_coverage

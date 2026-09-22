@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-clumping-line-p12",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 16 1 2 0.5 0.1 24 3000 1",
+ "seed": 38164,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f3a77452",
+ "started_utc": "20260922T004924Z",
+ "elapsed_s": 109.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=16.0 q=1.0 r=2.0 c=0.5000 rho=0.1 L=24 nbrs=3.177 nbrs_over_random=5.295 aligned=0.969 S=5.19 accept=0.294 records=1396 seconds=110"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: records that move. Where do records clump on the line (p,1,2)? First look (density 0.3): onset near p = 10 at the neutral scale, between 5 and 6 at scale 1. The table over p, scale and density is the map. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 132 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "e9061b59e11144866295ab4e0d671277c4b0d446749ab11a9dedaddafab7dab2",
+ "stdout_tail": "weights (16.0,1.0,2.0) scale c=0.5000 (0.5) rho=0.1 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=0.600 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 0.784 0.433 0.440 0.14\n     2 0.850 0.511 0.390 0.17\n     4 0.990 0.564 0.373 0.15\n     9 1.060 0.632 0.353 0.18\n    18 1.043 0.683 0.343 0.24\n    38 1.070 0.672 0.356 0.29\n    79 1.251 0.715 0.324 0.29\n   163 1.287 0.725 0.327 0.16\n   338 1.441 0.768 0.333 0.75\n   700 1.822 0.854 0.333 0.74\n  1449 2.560 0.926 0.315 3.08\n  3000 3.304 0.970 0.297 6.25\nSUMMARY: p=16.0 q=1.0 r=2.0 c=0.5000 rho=0.1 L=24 nbrs=3.177 nbrs_over_random=5.295 aligned=0.969 S=5.19 accept=0.294 records=1396 seconds=110\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T005114Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

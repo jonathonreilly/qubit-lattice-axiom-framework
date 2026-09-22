@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-seeds-and-long-runs",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 12 1 2 neutral 0.3 24 3000 2",
+ "seed": 38305,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f3a77452",
+ "started_utc": "20260922T005145Z",
+ "elapsed_s": 118.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=12.0 q=1.0 r=2.0 c=0.2857 rho=0.3 L=24 nbrs=2.663 nbrs_over_random=1.480 aligned=0.858 S=8.01 accept=0.311 records=4188 seconds=118"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Error bars and drift at the key points. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 20 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "725a5067b837b1452aa9e7dda7d07c00e2f3a1c3571fde20c94ba42667e138f2",
+ "stdout_tail": "weights (12.0,1.0,2.0) scale c=0.2857 (neutral) rho=0.3 L=24 sweeps=3000 seed=2 mode=parallel; random baseline: nbrs=1.800 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 1.663 0.429 0.390 0.04\n     2 1.672 0.482 0.335 0.04\n     4 1.722 0.519 0.322 0.12\n     9 1.813 0.556 0.319 0.11\n    18 1.877 0.599 0.308 0.11\n    38 1.940 0.646 0.299 0.16\n    79 2.002 0.668 0.303 0.16\n   163 2.061 0.690 0.302 0.55\n   338 2.129 0.729 0.302 0.49\n   700 2.231 0.759 0.310 0.59\n  1449 2.490 0.829 0.303 2.88\n  3000 2.666 0.856 0.312 10.47\nSUMMARY: p=12.0 q=1.0 r=2.0 c=0.2857 rho=0.3 L=24 nbrs=2.663 nbrs_over_random=1.480 aligned=0.858 S=8.01 accept=0.311 records=4188 seconds=118\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T005343Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

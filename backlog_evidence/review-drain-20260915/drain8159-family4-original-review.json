@@ -1,0 +1,473 @@
+{
+  "schema": "scoped-original-scientific-review-v1",
+  "pr": 8159,
+  "family": 4,
+  "head": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+  "delta_base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "current_main": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+  "scientific_verdict": "CONDITIONAL_POSITIVE_CANDIDATES_NO_CONSEQUENTIAL_MATH_DEFECT_FOUND",
+  "landing_verdict": "PENDING_CANONICAL_PACKAGING_AND_SAME_SESSION_FINAL_REVIEW",
+  "scope_excludes": [
+    "other families acceptance",
+    "whole 366-path acceptance",
+    "primary execution or recapture",
+    "pipeline or audit application",
+    "source edits or GitHub mutation"
+  ],
+  "path_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "cf0d20746e20a708c784dbdbd52cc773fbf912d1",
+      "sha256": "ce7b447f11a69fac6b5d7372ed3daeac447391a8ba0b3bfbe0e9ee806cae5d6c",
+      "bytes": 9142,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.json",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "dd7f59e924757786ba55ea2cd9e89aebf950652c",
+      "sha256": "06dea89cfb0b73182c7bfa72a9f35f3518b93d93cc9c935660c61e1447781fb6",
+      "bytes": 12205,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.py",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "cf0d20746e20a708c784dbdbd52cc773fbf912d1",
+      "sha256": "ce7b447f11a69fac6b5d7372ed3daeac447391a8ba0b3bfbe0e9ee806cae5d6c",
+      "bytes": 9142,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.txt",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "33880e07668f51707161995b718f3ffd4c26af93",
+      "sha256": "f3507f77889f2a8daf97ef98fe0e06e2ad941cb9b5b1343728433f53714d3905",
+      "bytes": 3343,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.json",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "6ac6f384fe43498e0d68a2d1a95a7a1b9f760196",
+      "sha256": "cebba632c3975013b31ddd090c409557b0fd6f08cf63038344bb3e21d24aed9e",
+      "bytes": 4508,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.py",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.stderr",
+      "change": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.stderr",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "33880e07668f51707161995b718f3ffd4c26af93",
+      "sha256": "f3507f77889f2a8daf97ef98fe0e06e2ad941cb9b5b1343728433f53714d3905",
+      "bytes": 3343,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.txt",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d9c9784227c80b51d66a54d66e145ad2c93d8054",
+      "sha256": "9818a6dcf4b5e15aa1058a2a2fb202e1b3f6fd8aa0447d6c515976d6cad93864",
+      "bytes": 4446,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.json",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "91c50ab8d2f28330caa0587899c610f5b6136266",
+      "sha256": "5f134dcf2ab4e5a262c461e1a1c16a7d14abfd0f2a6dc32d087219c0ec017407",
+      "bytes": 16848,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.py",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d9c9784227c80b51d66a54d66e145ad2c93d8054",
+      "sha256": "9818a6dcf4b5e15aa1058a2a2fb202e1b3f6fd8aa0447d6c515976d6cad93864",
+      "bytes": 4446,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.txt",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "ba34463fb96696409075df9f1038f844f50e47a7",
+      "sha256": "52d60ac14a5d7ebf0fa3747aa7b819ddd23eee8a28f2d53184857f4a5f7735d6",
+      "bytes": 76762,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.json",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "497ce700e457c14167f415b0f3677e281a04fd97",
+      "sha256": "3fc01b8d9be0ff71f868e8c571e8d9ee69407eedea7e5e7e0f1238c86a604f27",
+      "bytes": 12129,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.py",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "ba34463fb96696409075df9f1038f844f50e47a7",
+      "sha256": "52d60ac14a5d7ebf0fa3747aa7b819ddd23eee8a28f2d53184857f4a5f7735d6",
+      "bytes": 76762,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.txt",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "8a057065f0575383ec6a5521d6028c4c9dd938b1",
+      "sha256": "94a0bed419fcc12bd2412b401770e7fbee2d02e0bb6dbe1be914a15b6feaa024",
+      "bytes": 13555,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.json",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "014d3c5f6564cdd2e6e5e6227fad9cf867faf60a",
+      "sha256": "54909232c5038ec45348ea64b098754901c4bba898193c2da45206fb40b2ca4c",
+      "bytes": 14809,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.py",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "8a057065f0575383ec6a5521d6028c4c9dd938b1",
+      "sha256": "94a0bed419fcc12bd2412b401770e7fbee2d02e0bb6dbe1be914a15b6feaa024",
+      "bytes": 13555,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.txt",
+      "read_scope": "complete source/evidence; full saved winding bits independently reconstructed",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "e186f9cea87910b5234a785728de2b8ee7940a25",
+      "sha256": "19424f17dc8f76c223b53ddf729cb6fca83412f8dfb87fd5afc451a7da10d317",
+      "bytes": 11563,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "04f1bce4964983ff0dc97f0c2258e8412d4f5451",
+      "sha256": "0b86faaa03e20f63c150c07c81457788d73ff4f1be79d8098fa64b1520bcba65",
+      "bytes": 5366,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "30c08d03fde864e52685dd0d0c55ef70bc97762b",
+      "sha256": "14f09388247ac3b8c4548bfc36e9dfcd6952b8c53e96f31e293507412da88500",
+      "bytes": 3164,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "af2df69d7e86ba59a4f6445beb7d5a4922108c39",
+      "sha256": "c7f61997953db00a0e2aabc8f6e9936234443d95cbc86a57d9ef2ebf7e0fc7ba",
+      "bytes": 7469,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "6c2bd30385e6224f1da0dee4fe0455c50f296d5d",
+      "sha256": "3ad0d8e593d6c471e315afa9de17e2dad1388a52a1d29800dc9e7c5c140942f6",
+      "bytes": 13156,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "ba9c90e18001f7a47453a537d23311092466fd71",
+      "sha256": "858fabc0f01a50499f7a661236145696e57a0cc61b0ecd2fec5fc84c46ab4d03",
+      "bytes": 11185,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "74b0dd4a15d33de961c9b1fb7199525aa7f36fb4",
+      "sha256": "32ac1e5a4a88fe46daa5544259091aa0b80b9413fb951930415197e10e4b5417",
+      "bytes": 5505,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5e82eac507036068efda9c7759f3e7cb70dd74b6",
+      "sha256": "feebc8e55721f08825e05cad1e6e243e81fdb9f049c1d18e7422707773b091c5",
+      "bytes": 13556,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a012495efe24944c6a6c655330320f0f6284418e",
+      "sha256": "4589fa8ef04027a819dd1322258a85e1065ca352bc34e0cc8f812892e7e8b57d",
+      "bytes": 5688,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged; conditional positive candidate pending canonical packaging"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK10_PERSONAL_REVIEW.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "071c0b6ea10deaad8f501cbd2ccf3d24bb30b084",
+      "sha256": "623d9fa074e485aad03d319c64e80fcf9fa62eb4ef2d184bd180d02777df05f3",
+      "bytes": 1657,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK10_PERSONAL_REVIEW.json",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_PERSONAL_REVIEW.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "eef682713aee271572ee6bfbf54a6333a90a0616",
+      "sha256": "851e0918019fd77dac4681afca414d733d42a142d828b9a0f4de140aae178140",
+      "bytes": 1527,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_PERSONAL_REVIEW.json",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_PREFLIGHT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "f290b1156215b8c50aa173c758f7eff2090bdb92",
+      "sha256": "43b9e6cd864bd029e43a6fbae4bc29a1dec798bfc6ffb1bd81dfca793ff0a358",
+      "bytes": 707,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_PREFLIGHT.json",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_VOCAB.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK25_VOCAB.json",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK7_PERSONAL_REVIEW.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "3b326460c4f7f5d3cd808a1d17fa4b7af4d0bc61",
+      "sha256": "fc974e0155fb86cb74762289983f27308012cfce91986265c92c5295c01b4db1",
+      "bytes": 2303,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK7_PERSONAL_REVIEW.json",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK8_PERSONAL_REVIEW.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "dfa9715c7974685f9b48a822d74a37f5ffe4f004",
+      "sha256": "787efa8fcfefd364b0e609700164b0787b68229a160917ee363c8f624635387d",
+      "bytes": 1553,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK8_PERSONAL_REVIEW.json",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK9_PERSONAL_REVIEW.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "658461e7e027c019cb3efc33712d18511942ae0f",
+      "sha256": "dc671a15ceea7bcb831561cc180af806fa2371fad12cc35c7f3405b20ea1fab1",
+      "bytes": 1954,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/BLOCK9_PERSONAL_REVIEW.json",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/block9_initial.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "47cb9735b704a83ac71e35315e551d2eed591667",
+      "sha256": "625dbf95e5671328bf6a0f242134af361334fb43c32b738940b7a8b12b5a6c97",
+      "bytes": 14031,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/block9_initial.py",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/block9_initial.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5152a90c394766dbf333eb57df6da0d7cc01a839",
+      "sha256": "b2cd32bf8f13a7e9c4473c87203614d8c52b6595f8c6226ab45f8cdc20ea3c7d",
+      "bytes": 840,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/block9_initial.txt",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/diagnosis.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "785915d2773ace5ec287ceac44e59be281160df6",
+      "sha256": "48e03d0e541ce7e88e0393c72ee8b1e3f6eb285653ebd9608b31905ef2223bff",
+      "bytes": 683,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/diagnosis.json",
+      "read_scope": "complete",
+      "disposition": "preserve_original_unchanged_historical_evidence_not_new_execution"
+    }
+  ],
+  "scientific_assessment": {
+    "block7": "Positive-hop column orthogonality survives coherent backgrounds; 192 Jmax commutator follows native ambient cycle commutation and actual incident edge count. Unitary Duhamel gives uniform short-time escape. Symmetry averaging does not require connectivity. Spectral mean lower bound is not a band-bottom bound; weight and propagation upper bounds do not prove ballistic transport or a mass.",
+    "block8": "Actual finite electric polarization removes difference twists. Closed 2L-hop configuration cycle detects sum twist. Strict finite response requires supplied full D2 connectivity and Perron frame; curvature has factor two and actual unknown ground weights. The Markov process is auxiliary and fixed-volume long-time variance does not imply a uniform thermodynamic stiffness.",
+    "block9": "Complete finite nonnegative flow classification on height-acyclic Z3 gives the polarized word carrier. Native phase embeds finite loops into large even tori. Pure raising isometries prove floor lower bound and no threshold eigenvector; horizontal complex textures establish the same essential floor in every momentum at fixed uniform J. J0 marker reduction is not used as a positive-J reducing space. Periodic lower pair energy prevents identification with periodic or selected physical vacuum.",
+    "block10": "Closed parity phase correctly matches local three-edge source and translation/complement/Z symmetry. Conserved rotated color count holds only on diagonal momentum. Injective u-marker insertion recovery gives finite-M telescope with denominator 2/a+M/J; positive J and nonzero theta matter. Each bounded-word source has its own dark interval, not a common source-independent gap. Exact radial measure is semicircle except the theta=pi atom at 2U. J0 orthogonal channel convolution coefficient and near-line Sylvester upper bound have distinct scopes.",
+    "block25": "Same local source, real nonnegative overlap c<1 and J>0 yield a connected binary reducing carrier, including c=0. Positive texture remains in that carrier. Bounded endpoint perturbation of positive unbounded swap semigroup gives strict positivity. Finite-vector domination followed by large time and Jensen transfers spectral floor to the source without cyclicity, uniform weights, exponent or atom claim."
+  },
+  "findings": [
+    {
+      "id": "F4-P1",
+      "kind": "canonical packaging",
+      "finding": "Canonical note/runner/sidecar/dependency links and Block10 actual Block9 helper closure must resolve, preserving all original sources and outputs. No unseen canonical edits accepted."
+    },
+    {
+      "id": "F4-P2",
+      "kind": "scope packaging",
+      "finding": "Block8 already records all five N5 scope categories. Blocks7,9,10,25 have limits or prose but lack that explicit five-category primary-output structure. Preserve original outputs honestly and provide actual canonical scope, without fictional execution or fictional independent routes."
+    },
+    {
+      "id": "F4-E1",
+      "kind": "execution precondition, not mathematical blocker",
+      "finding": "Block25 uses Python assert predicates. Its declared ordinary Python execution must retain assertions (for example record/force PYTHONOPTIMIZE=0). No requirement to support optimized execution was established; no blanket guard rewrite is required."
+    }
+  ],
+  "read_scope": {
+    "full": [
+      "five BLOCK7/8/9/10/25 scientific notes",
+      "four supplied route reviews (no separate Block7 route note exists)",
+      "all five complete runners; Block10 AST-imported definitions read in complete Block9 runner",
+      "all personal/preflight/vocabulary records",
+      "complete Block9 failure source via full diff against fully read final version, failure output and diagnosis",
+      "all saved final JSON data with JSON/TXT equality; winding bitstrings independently reconstructed",
+      "three newly needed native parents; same-session full native dictionary read reused with identical current hash"
+    ],
+    "partial": [
+      "README six-family map, previously read complete",
+      "shared HANDOFF/APPROACH/NO_GO/READING sections for this family",
+      "Wan-Tchernyshyov 2012 retrieved main-text string/source sections through line85; not full paper",
+      "Wan-Carrasquilla-Melko 2016 retrieved model/approximate ground-state discussion through line76; not full paper"
+    ],
+    "not_premise": [
+      "BLOCK12 ground cutoff compactness: no import/reference in these five arguments or runners; not accepted or required by this family"
+    ]
+  },
+  "input_identities_artifact": "/private/tmp/review-drain-20260915/drain8159-family4-parent-identities.json",
+  "authority_identities_artifact": "/private/tmp/review-drain-20260915/drain8159-family4-authority-identities.json",
+  "current_main_loss_check": "All four native source parents byte-identical to original Block7 frozen pins. Six mandatory authority sources byte-identical to prior same-session full reads. No canonical integration diff assessed. Preserve all originals and failed routes.",
+  "independent_control": {
+    "source": "/private/tmp/review-drain-20260915/drain8159-family4-independent-control.py",
+    "output": "/private/tmp/review-drain-20260915/drain8159-family4-independent-control.json",
+    "sha256": "2360dcb72224eb78ce170f44a958d94713cbcfc733235c76e3a28727473e68aa",
+    "scope": "108 winding hops full-bit native reconstruction; exact marker swap edge uniqueness M1/2/3 through length6; unequal-cycle curvature factor two; half-line return moments through8. No author imports, primary or full pipeline."
+  },
+  "history_preservation": [
+    "Block9 original BLAS radial failure 1.9539925233402755e-13 and fsum result 7.993605777301127e-15 at unchanged 1e-13 tolerance preserved. No numeric failure promoted to physical no-go.",
+    "Shared Block10 history mentions finite-mean color and word-cutoff corollaries absent as a separate theorem section in final note. They follow from the written sector inequality: excess >= C/(2/a+<M>/J) by Jensen when mean finite, and weight in lengths <=N <= excess/delta_N. Preserve historical statements without fabricating a separate executed checker."
+  ],
+  "rejected_claims": [
+    "physical mass or clock identification",
+    "long-time ballistic charge transport",
+    "volume-uniform stiffness lower bound",
+    "selected physical vacuum or periodic-ground identification",
+    "all-source uniform dark interval",
+    "dark interval at generic momenta or J0",
+    "positive-J real-overlap density exponent or uniform lower spectral weight",
+    "threshold atom in Block25",
+    "all-particle/all-vacuum or axiom no-go"
+  ],
+  "original_inventory_sha256": "7224412c3bf7dfd424b13a256b21752fdd261218bbb877202eaad841d14cb18a"
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "bounded independent exact controls, no author code imports or primary execution",
+  "native_tape_hops_reconstructed": 108,
+  "marker_edge_injectivity": [
+    {
+      "M": 1,
+      "edges": 30,
+      "multiplicity": 1
+    },
+    {
+      "M": 2,
+      "edges": 160,
+      "multiplicity": 1
+    },
+    {
+      "M": 3,
+      "edges": 360,
+      "multiplicity": 1
+    }
+  ],
+  "cycle_curvature": "60/61",
+  "wrong_missing_factor_two": "30/61",
+  "half_line_return_moments_0_to_8": [
+    1,
+    1,
+    2,
+    5,
+    14
+  ],
+  "source_sha256": "551cfb0e739d067342c85288b63363b680c4da25c1d257ccb95d7ef5f21a0646",
+  "negative_controls": [
+    "native omitted phase is not a real unsigned hopping substitution",
+    "double-counting u-marker swaps changes the lower-bound constant",
+    "missing curvature factor two disagrees with the edge-form expansion",
+    "full-fiber floor does not determine every source measure"
+  ]
+}

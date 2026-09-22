@@ -1,0 +1,13 @@
+{
+  "status": "HOLD; not landed",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 finish_candidate_proofs_v2.py train73 --notes 4 --push",
+  "exit_code": 1,
+  "failure": "assert expected checked=4 but successful changed-evidence report checked=5",
+  "root_cause": "Owned supporting proof seeded as autonomous positive_theorem by graph defaults, creating reciprocal owner/proof dependency; source packaging correction and original reviewer confirmation required. No finalizer mutations reached.",
+  "evidence": {
+    "train73-pipeline.log": "7ede2403479c750cdf196a3b4333b0029d2692ba2c5fc639c95ed17dc1b3e64f",
+    "train73-strict.log": "2d7e098713dae1de5a108543e303a6c497288a20663352b1adf478977221f019",
+    "train73-evidence.txt": "08083ec03a6d34825eb077c5bb107d83b8da08341542f62107e544e885cb2b9e",
+    "finish_candidate_proofs_v2.py": "731da57e8c5d7c7b4805167af92fc20b1710ef9b86b5629b2405abc4cf705814"
+  }
+}

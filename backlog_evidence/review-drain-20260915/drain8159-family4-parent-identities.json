@@ -1,0 +1,34 @@
+[
+  {
+    "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+    "original_pin": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9",
+    "original_commit": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+    "original_commit_sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9",
+    "current_main_sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9",
+    "unchanged": true
+  },
+  {
+    "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+    "original_pin": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5",
+    "original_commit": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+    "original_commit_sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5",
+    "current_main_sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5",
+    "unchanged": true
+  },
+  {
+    "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+    "original_pin": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583",
+    "original_commit": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+    "original_commit_sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583",
+    "current_main_sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583",
+    "unchanged": true
+  },
+  {
+    "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "original_pin": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "original_commit": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+    "original_commit_sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "current_main_sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "unchanged": true
+  }
+]

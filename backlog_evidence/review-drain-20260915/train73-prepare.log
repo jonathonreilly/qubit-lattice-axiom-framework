@@ -1,0 +1,80 @@
+[detached HEAD ff3ef9f5ef] Preserve independently reviewed source unit PR8161
+ Date: Tue Sep 22 19:24:10 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 66 files changed, 2546 insertions(+)
+ create mode 100644 docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md
+ create mode 100644 docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_000_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_001_CLAIM_STATUS_CERTIFICATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_002_GOAL.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_003_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_004_MANIFEST.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_005_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_006_READING_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_007_README.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_008_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_009_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_010_BLOCK01_AFFINE_THETA.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_011_BLOCK01_AFFINE_THETA.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_012_BLOCK01_CHARGED_RING.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_013_BLOCK01_CHARGED_RING.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_014_BLOCK02_ONE_PHOTON.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_015_BLOCK02_ONE_PHOTON.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_016_BLOCK03_INFRARED_VERTEX.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_017_BLOCK03_INFRARED_VERTEX.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_018_BLOCK04_COUPLED_VACUUM.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_019_BLOCK04_COUPLED_VACUUM.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_020_block01_affine_theta_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_021_block01_charged_ring_compression.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_022_block02_one_photon_vertex_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_023_block03_infrared_vertex_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_024_block04_coupled_vacuum_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_025_BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_026_BLOCK01_VOLUME_VERSUS_SCALE_DIAGNOSTIC.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_027_BLOCK01_WORKING_AFFINE_GAUSSIAN_DRESSING.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_028_BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_029_BLOCK02_WORKING_ONE_PHOTON_VERTEX.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_030_BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_031_BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_032_BLOCK04_WORKING_COUPLED_FERMION_DENOMINATOR.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_033_BLOCK01_04_PERSONAL_PROOF_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_034_BLOCK01_MUTATIONS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_035_BLOCK01_MUTATIONS.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_036_BLOCK01_MUTATIONS.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_037_BLOCK01_PERSONAL_CHECKPOINT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_038_BLOCK02_04_MUTATIONS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_039_BLOCK02_04_MUTATIONS.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_040_BLOCK02_04_MUTATIONS.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_041_BOUNDARY_STRESS_TEST.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_042_FOCUSED_VERIFICATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_043_FOCUSED_VOCAB.stderr.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_044_FOCUSED_VOCAB.stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_045_block01_mutation_checks.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/8161_046_block02_04_mutation_checks.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8161/README.md
+ create mode 100644 docs/work_history/review_loop/pr8161/original-manifest.json
+ create mode 100644 logs/runner-cache/rotor_coupled_vacuum_resolvent_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_gauss_affine_theta_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_gauss_charged_ring_compression_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_reference_infrared_norm_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/rotor_transverse_reference_vertex_check_2026_09_16.txt
+ create mode 100644 scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py
+ create mode 100644 scripts/rotor_gauss_affine_theta_check_2026_09_16.py
+ create mode 100644 scripts/rotor_gauss_charged_ring_compression_2026_09_16.py
+ create mode 100644 scripts/rotor_reference_infrared_norm_check_2026_09_16.py
+ create mode 100644 scripts/rotor_transverse_reference_vertex_check_2026_09_16.py
+FROZEN ff3ef9f5ef0cc4fb027351366e16e1c347cda143 sources 66 inputs 76 notes 4

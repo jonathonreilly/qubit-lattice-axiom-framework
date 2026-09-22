@@ -1,0 +1,15 @@
+[W1] rings (reduced walk), hard-core antisymmetric against free, mode cos(2 pi x/N), the free negative branch's filling:
+     ring N = 6, 4 records: free: E0/site -0.5774, Pi -0.14434, local -0.14434, gradient/q2 -0.00000; hard-core: E0/site -0.2887, Pi -0.07217, local -0.07217, gradient/q2 -0.00000
+     ring N = 8, 6 records: free: E0/site -0.6036, Pi -0.15089, local -0.15089, gradient/q2 +0.00000; hard-core: E0/site -0.2310, Pi -0.09857, local -0.05774, gradient/q2 -0.06970
+     ring N = 10, 8 records: free: E0/site -0.6155, Pi -0.15388, local -0.15388, gradient/q2 -0.00000; hard-core: E0/site -0.1902, Pi -0.12450, local -0.04755, gradient/q2 -0.20144
+
+[W2] 2D tori with the two-dimensional walk, mode cos(2 pi x/Lx):
+     3x3, the free branch's filling (a jam): 8 records of 9 sites (hard-core dim 2304): free: E0/site -0.9292, Pi -0.15772, local -0.23231, gradient/q2 +0.02486; hard-core: E0/site -0.1911, Pi -0.12790, local -0.04779, gradient/q2 -0.02670 (1 s)
+     3x3, half filling: 4 records of 9 sites (hard-core dim 2016): hard-core: E0/site -0.4541, Pi -0.11714, local -0.11352, gradient/q2 -0.00121 (1 s)
+     4x3, the free branch's filling (a jam): 10 records of 12 sites (hard-core dim 67584): free: E0/site -0.8963, Pi -0.19395, local -0.22408, gradient/q2 +0.01506; hard-core: E0/site -0.2645, Pi -0.15212, local -0.06612, gradient/q2 -0.04300 (36 s)
+     4x3, half filling: 6 records of 12 sites (hard-core dim 59136): hard-core: E0/site -0.4674, Pi -0.08870, local -0.11686, gradient/q2 +0.01408 (59 s)
+
+[W3] 4x3 torus: strains through the reach-three coupling against the rates (gradient parts per |q|^2):
+     free sea (- records): rates u: gradient/q2 +0.01506 (total -0.19395, local -0.22408); isotropic stretch: gradient/q2 +0.00023 (total -0.00123, local -0.00169); traceless xx - yy: gradient/q2 +0.00023 (total -0.00123, local -0.00169) (0 s)
+     hard-core half filling (6 records): rates u: gradient/q2 +0.01408 (total -0.08870, local -0.11686); isotropic stretch: gradient/q2 +0.00035 (total -0.00120, local -0.00190); traceless xx - yy: gradient/q2 +0.00035 (total -0.00120, local -0.00190) (68 s)
+     hard-core jammed (10 records): rates u: gradient/q2 -0.04300 (total -0.15212, local -0.06612); isotropic stretch: gradient/q2 -0.00165 (total -0.00363, local -0.00033); traceless xx - yy: gradient/q2 -0.00165 (total -0.00363, local -0.00033) (113 s)

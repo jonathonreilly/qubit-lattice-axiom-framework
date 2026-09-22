@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_many_records_under_exclusion_source_projected_density_interacting_sea_2026_09_22.py
+runner_sha256: 34869c302bbdac931e426b6b6ec3a6e6ac596bf05c06c1d4be0ce46997d93a19
+input_fingerprint_sha256: 0f18e9ca90a74e71cb109f3604f4c2f82f43e89b6d4f766d4c1bf1f4b191b62f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_MANY_RECORDS_UNDER_EXCLUSION_SOURCE_IS_THE_PROJECTED_DENSITY_CHESSBOARD_INVISIBLE_INTERACTING_SEA_STIFFENS_CLOCKS_OPPOSITELY_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a ring of 6 with a varying rational rate field, for the antisymmetric pair of two orthogonal complex one-record states PROJECTED to different-site configurations, the exact derivative of <Psi_P|H2|Psi_P> with respect to each site's u_x (the t-linear coefficient of a quadratic form) equals the projected pair's own energy density e_x^(2) at that site, and differs from the unprojected pair's density; the densities sum to the pair's energy (weight one): block 55's source law holds for records under exclusion, with the projected state
+PASS: C1 T2: the exclusion projector commutes with a chessboard of clocks (the compressed generator with rates (3/2, 2/3, ...) equals the compressed free generator on the projected pair) and with the simultaneous translation of both records (crystal momentum is conserved under exclusion), but not with the one-step momentum S (x) 1 + 1 (x) S: applied to two records on neighbouring sites it carries one onto the other's site, which the projector removes - block 63's conserved momentum is not conserved for records under exclusion
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the t-linear coefficient of the quadratic form for each of the six sites; the two-body matrix elements moved by one step
+per_site: executed - the derivative against the projected density at every site of the ring; the chessboard of rates against the free generator on the projected pair at every configuration
+per_mode: executed - control: ground-state energies and second-order responses of the interacting sea on tori 3x3, 4x3, 5x3 and rings 6, 8, 10
+per_block: executed - weight one (the densities sum to the pair's energy); the simultaneous translation against the projector on the whole pair
+lattice_wide: T1 and T2 are exact for the states and rings tried and hold by their proofs for every pair state and every ring; the interacting sea's numbers are executed only; the exchange sign and the filling are not decided
+PASS: G1 the five N5 resolution lines are printed
+scope: many records under exclusion - block 55's source law holds with the projected state's density (weight one); a chessboard of clocks stays invisible; crystal momentum is conserved but the one-step momentum is not; executed: the interacting sea at the filling of the free negative branch has a volume term four times smaller and a clock stiffness of the OPPOSITE sign to the free sea's on 2D tori
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

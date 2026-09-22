@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 80 — author checks (not a review PASS)
+Written lens pass by the supervisor. Site-resolved real part corrected after the runner failed site by site; the `u`-derivative factor caught by weight one; the 1D comparison discarded for a reason; the jammed filling named; T3 split out so the injection mutation bites. Census 7/7 in family.

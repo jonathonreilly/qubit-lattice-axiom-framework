@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_alternating_lengths_are_a_relabelling_invisible_and_free_rest_energy_needs_the_bonds_own_amplitude_2026_09_22.py
 runner_sha256: d88ae37c53959828e918acd8c0628d56f7fcf7c67ab62edbea0eefe6be2a0346
-input_fingerprint_sha256: f93e4641dadf14432679308ee2842090a43ddaf94042289bafeff9fd80185803
+input_fingerprint_sha256: 8252c52c56010d27ae2d1358a71f0930d3a2cea8a62e321bef364eee33fa35cf
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.71
+elapsed_sec: 1.74
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

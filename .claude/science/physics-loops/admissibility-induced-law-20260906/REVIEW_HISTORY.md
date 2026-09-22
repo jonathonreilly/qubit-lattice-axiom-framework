@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-22 block 83 — author checks (not a review PASS)
 Written lens pass by the supervisor. Each vanishing derived by hand (one anticommutation) then checked as an exact operator identity; the corner lemma checked against generic rational functions; the sea statement made a theorem (concavity + evenness) with an exact instance. Census 8/8 in family.
+
+## 2026-09-22 block 83 — corrigendum before review (supervisor)
+"Not in the lane" withdrawn: block 59's bond crossing rates are the bond-amplitude coupling. Text-only; runner and numbers unchanged.

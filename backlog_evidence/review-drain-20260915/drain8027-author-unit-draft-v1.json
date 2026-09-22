@@ -1,0 +1,480 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8027",
+  "constituents": [
+    {
+      "id": "PR8027",
+      "head": "ca0eebe4dffad7a53a201ad7773e804b8c89edef",
+      "delta_base": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8027-author-source-handoff-v1.json",
+        "sha256": "c1f67722bde817e6cfbfb398e01983a85d159323a06c86f69c05f3853a0e82cc",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "49777d85533d8403cd3e30471e1123bc2c05fd56",
+    "commit": "49777d85533d8403cd3e30471e1123bc2c05fd56",
+    "tree": "cd6e8073af4cf1ae43e6fbbd37beb05214d03f52",
+    "paths": [
+      {
+        "path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "98f364441abc618cf7132a9bebfcb07f01b903ea081cf6acf7a37ae3c2a7431b"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "cb67ae77eb07f110d107b0b4d1900f023df63b2f96978bcac822d9fa8fad8aaa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_000_ARTIFACT_PLAN.md.gz",
+        "sha256": "ca84e88bf128bfddaabaafb2f0c1f38671a3d9e03263000bb437d8b1850b68be"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_001_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "df51f645e5e80d64daabd4edbda44ed4f7d34d38f05faf3bc53d2f15b413f9b9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_002_CLAIM_STATUS_CERTIFICATE.md.gz",
+        "sha256": "9c8f012c92da58ee8a3f57993e3ebbe5bb398ea3b1fbabd427c49de2093c723f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz",
+        "sha256": "a269dd1cb64d5572b9a8d958e28d7daa641b53f2e6b21d71222478fd47831181"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_004_FINAL_MAIN66_LOCK_RELEASE.json.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_005_FINAL_MAIN66_READINESS.json.gz",
+        "sha256": "66918722f8f1b07aff05d4c898a45893eaa64e660e5f4d1a4f41750c2d44df17"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_006_FINAL_MAIN66_STRICT.log.gz",
+        "sha256": "a15ec9227423ffcd07624d782efdb8ab282f47e94a1000b9a9da21ed057fef3d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz",
+        "sha256": "a03dd38d065ee4820fff21c20e6b976f9ac971e57c8aeff6352d847047fb201b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_008_FINAL_MAIN66_VALIDATION.md.gz",
+        "sha256": "8ed518efbebbf6003b616b08930b9916faf605b4e5f7f4e2b30f831aecb39e6c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_009_FINAL_VALIDATION.md.gz",
+        "sha256": "f18926a148d351e37f2864d8c2bd7028183597bea0fcc6cf6378a4eae43df40a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_010_FINAL_VOCAB_LINT.txt.gz",
+        "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_011_FROZEN_PORT_RECEIPT.json.gz",
+        "sha256": "7200180b4506bc3a5b215038687f7e43973c454c71200b31469fe6e44041539f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_012_FULL_PIPELINE.log.gz",
+        "sha256": "0a14b5440a664777c48a2dc1c9cb7b4f845e774b8daac12cbbe9839ae049c0e1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_013_GOAL.md.gz",
+        "sha256": "eb35e37d3472cbc1480f7c8e942343d7cb3da1120ea98ca094ae6da56d152ae2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_014_HANDOFF.md.gz",
+        "sha256": "3680a16bbd139bec665be731c705c2910b834ecb04b805e5d8ee3c70ea487ad5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_015_HASHES.json.gz",
+        "sha256": "d3fa34e1bbac044e4cbe0d3c7d2f3a2a99d648cce74fceedf5ba669f872ca5a5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_016_INDEPENDENT_RAW.json.gz",
+        "sha256": "07314b8a52d6678d9793eab30d4257b72a2ca9baaa2336be7c7cbe91ce5985f9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_017_INDEPENDENT_STDOUT.txt.gz",
+        "sha256": "25fe4f9b4a9b8028ebfde5f6c9c285ee7362c3d81c61fe5529b2740c99f4f41e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_018_LITERATURE_BRIDGES.md.gz",
+        "sha256": "38505fae4eccb930b8562196143d725c8c7366bf06909bd6d3ce31f33d8a1462"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_019_LOCK_RELEASE.json.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_020_N1_N8.md.gz",
+        "sha256": "f4b4306b1113e085f4af257564ffe98eaa067770c462c9621994fb8a7759eac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_021_NO_GO_LEDGER.md.gz",
+        "sha256": "b3ff30fb80ccdfde55b87b70f05a02e0bfda8c4e64b3a101076c3eb912c71062"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_022_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "a567014bd260872b3b4a65a343d4997d3bf38ad86fdcc101957ba87f5867ee27"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_023_PACK_INDEX.md.gz",
+        "sha256": "4be568909e6555cd805e275968f49d49dc7116a9f896edf7dc0f46edd4296bcf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_024_PARENT_VALIDATION_METADATA_CATCHUP.md.gz",
+        "sha256": "b309c70ef7b56f4d6513e0e02d92d2d764acaca2ba42731fe242342bde8c29dc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_025_PORT_EXECUTION_RECEIPT.json.gz",
+        "sha256": "e09ddcd186b3b8bf272fd86287e1b5a2e30ba243a6d3c7783811dabe7bd0727a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_026_PORT_INTERFACE_CHECK.md.gz",
+        "sha256": "91e079dd2d43a7836f790fdb728321df4b6490248501a9d938f4734357c0aa60"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_027_PRIMARY_RAW.json.gz",
+        "sha256": "4f3ecb7008a17c3d470351e18b98befa595faff77f9cf86db80b66f43875cb9d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_028_PRIMARY_STDOUT.txt.gz",
+        "sha256": "6b75357f8d78bc59c201bd02838c31b835ce424ed05e3ffd131d628789af0ed0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_029_PR_BACKLOG.md.gz",
+        "sha256": "1ad30a3c213925536268436ed1972855c1ea0c5f051a20eeedaac101f0a40dd6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_030_PR_BODY.md.gz",
+        "sha256": "a282f7ccb4d0d8d26855e89c1385473d68749f084d4ed0bfcf9c634336659193"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_031_PUBLICATION_RECEIPT.json.gz",
+        "sha256": "44790b8b708a2cd773953d028aa305d24a94bd6a306561579ab9166cf0e883ad"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_032_QUEUE.md.gz",
+        "sha256": "f112183e588a38680028c1309736faff2a6ed43f2748962ef2b41f5320ce6823"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_033_REVIEW.md.gz",
+        "sha256": "bfae4cf7eb69860ca0a257ab626dac4fde6f0d8711c97b22f5fc4d6f2bf20374"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_034_REVIEWED_UPSTREAM_SYNC_20260907.json.gz",
+        "sha256": "3f18b815be344f319ea6d34223c80d96eda45296f705dea71e55d9266f8b766c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_035_REVIEW_HISTORY.md.gz",
+        "sha256": "249e9980b603959629c62623ec3a3e0c721e535ea572b78000c89cb27c9f4f3a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_036_ROOT_CANONICAL_PORT_REVIEW.md.gz",
+        "sha256": "1fe45de3aad940c23702c93364d756826e9ee6b44f5f4e9807214d46100a383d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_037_ROOT_SINE_DELTA_REVIEW.md.gz",
+        "sha256": "9bb59c1f89050f095126059bbfaf6073d1ae762219172c24190d090968bcb4a5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_038_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "a9adf22ff70d94c1dd75e53b11d990da7d6e73829613762a2165521347da8b08"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_039_STATE.yaml.gz",
+        "sha256": "08898fb73744e611ed007c54d307316cafba10a37095c05eb7bd10ba1c24b86e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_040_STATUS.md.gz",
+        "sha256": "5476c45a427cdc770c1de54073909d13be27b4ee52d43ec3d393c8d9907bd4b3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_041_STRICT_LINT.log.gz",
+        "sha256": "ed8c383ba8a14943ce57f8dd6f5c3bf4127e27f9d3efc9cdaa5b80e5af4f451d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_042_TRACE_GATE.md.gz",
+        "sha256": "be9d147947dd804646ecb76663c015fc9dba030c9bd46f40195fd21f91c26704"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_043_UPSTREAM_SYNC_PIPELINE.log.gz",
+        "sha256": "2c825bd889b668b9cfae430e34141cc03d177140e8f492e1e66c30638ac7a67b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_044_UPSTREAM_SYNC_READINESS.json.gz",
+        "sha256": "334947104047801e3331c402d8c405ed549fe5bcf4b1bf44d59a494d97395a5c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_045_UPSTREAM_SYNC_STRICT.log.gz",
+        "sha256": "2bc2a0e38f76b6638859389e78d38ed4c16dd9092b4eb13e01c640c64fdd898c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_046_UPSTREAM_SYNC_VALIDATION.md.gz",
+        "sha256": "b31a9c3714f9ff8f9037a4ddc90f0e060ef961a11e86ceeab1237b8a0237a7e9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_047_COEFFICIENT_SUPPLEMENT_PREREGISTRATION.md.gz",
+        "sha256": "baa095466e0f7e7789c1404e2f969939ce5b87e9c6d1259e84457a46cac47f1b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_048_DERIVATION.md.gz",
+        "sha256": "d8b97284177ed156fbf0223881d49875e3659293c5cf6d4330a1b461ea869271"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_049_HASHES.json.gz",
+        "sha256": "d37a197f77151e3107471a049456ed96422284e479015ce7379a7bae79f59021"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_050_PREREGISTRATION.md.gz",
+        "sha256": "79fe401e222f67736ffe53d9cb1a0ebaaeeb8b368d7f8b0c3bb0810f05a40e18"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_051_ROOT_REVIEW.md.gz",
+        "sha256": "f9fe6152d50d7189bbcc4dbb4e224f55729c711bb24554e770548c3558ea1b92"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_052_check.py.gz",
+        "sha256": "1fc2edf1680ed4e8cafff55ae20c64029b9e9a9112571d3f410883512ba93245"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_053_result.json.gz",
+        "sha256": "d0e06a5edbdbd65ffbf468d33fa35b35d3e63be5701089b71b229a790b8e5ade"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_054_FINITE_CONTROLS_PREREGISTRATION.md.gz",
+        "sha256": "1705aa7afb784072c3976c8d7ba949b7ba5c27b8766ceba9c05a71e4001bf042"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_055_PREREGISTRATION.md.gz",
+        "sha256": "da1aa3edcdc409ed8f76d30e009da981799a18ca515fea1509d5aed1b14770a9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_056_ROOT_DERIVATION.md.gz",
+        "sha256": "50cedc0f216ad956dd0d2069e35a375bbe1c7c7567c8778b34aab7e53c7f5396"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_057_ROOT_DERIVATION_BEFORE_SINE_NORMALIZATION_72f606.md.gz",
+        "sha256": "4645fad51122a9b6dfe002af38dbe95f41eea958346eb31d72fdb7ee35cd0a96"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_058_ROOT_PRIMARY_REVIEW.md.gz",
+        "sha256": "d7c20846e32c727a270f0e961e24a3a8b665052be3e1b5b2672a1dd5694f5764"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_059_check.py.gz",
+        "sha256": "26ffefc5947776aaba761a8ded49b78e131adbcec47e702b845368fce8bbde46"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_060_result.json.gz",
+        "sha256": "698d6e2fb21ace03f865b4f86ee3f3600708150bdec7f1157dd2f893d72abd9d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_061_package.py.gz",
+        "sha256": "3bfc555a646296f149a8de61b467cb02a72c912223c02dcc0a1c2d3c3c6a6503"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_062_port.py.gz",
+        "sha256": "d91627bc20fd8b68a83ea37b791a7e8a85a0e4f088df6d46a5baf97e7b2e865e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_063_validated_claims_before_generated_cleanup.json.gz",
+        "sha256": "f4c3bb1fff6253c5d8855884ce76e74bb21bd71d1d1c5b0288273b4cc36e8673"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_064_validated_readiness_before_generated_cleanup.json.gz",
+        "sha256": "a3919783170caae6c358166deae83712296d809b013aa6835e48c2b090a54c96"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_065_GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz",
+        "sha256": "02ad7a2c5b4e09cf7eb5ed3367d327cd7f1b724d059357dc56584cd5a3848623"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_066_citation_graph_manifest.json.gz",
+        "sha256": "d427fa0b4a6335d5d36d635ee003e610b9353a720d9f89a864765c0d235e7e66"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_067_build_citation_graph.py.gz",
+        "sha256": "d159ce7b0ece9ff06b63b59636405ea697a9b6a64d1ea5d26b17727ae424708b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_068_gauge_wilson_static_source_geodesic_2026_09_07.txt.gz",
+        "sha256": "8e083c5c3eddbac25d6ffafb171d2f0e9320511ec863c492cf34a78bfebd3e73"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_069_gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt.gz",
+        "sha256": "0a90bc889201ef1c1c7efdfd741f5640381a6fa8f3daf0266b64d4c330219cf3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_070_audit_packet_script_deps.py.gz",
+        "sha256": "1a94b84b8a287f8fa371cd4a602a0680710b62e15a154fcad19d1117a9c16871"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_071_gauge_wilson_static_source_geodesic_2026_09_07.py.gz",
+        "sha256": "4b9bd265bb09150535d70cdbf44f957690c2a993a9e70bc7f34fb97dc130154d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_072_gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py.gz",
+        "sha256": "4d55b7f237c76c77b3e7bbc2e345d12310aabb5c97054e7273e127be12815b62"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/README.md",
+        "sha256": "f486e70ba84d9fb5bd39167880561487d25830d8bf6b3e3c61a636fea7793780"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/original-manifest.json",
+        "sha256": "ad805623bbc97f3d8b03d8e83b6ab4c95f5453851eb9258a8b3a8eef625e6f66"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "02140057ff32e8960477a31a7995d843d98dea3d2f4b8ba20e341a379d4470d1"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+        "sha256": "9b1019979f215ee42afa5b504a0f8b390fb7b7aa3aaeab2bb091da6857eb6151"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+        "sha256": "3b273aea658f7ca15b42285116da8a3db0e9f19a4f6604f01aa38becc9f3330a"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+        "sha256": "9b1019979f215ee42afa5b504a0f8b390fb7b7aa3aaeab2bb091da6857eb6151"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+        "sha256": "3b273aea658f7ca15b42285116da8a3db0e9f19a4f6604f01aa38becc9f3330a"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+        "sha256": "3b273aea658f7ca15b42285116da8a3db0e9f19a4f6604f01aa38becc9f3330a"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "98f364441abc618cf7132a9bebfcb07f01b903ea081cf6acf7a37ae3c2a7431b"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/README.md",
+        "sha256": "f486e70ba84d9fb5bd39167880561487d25830d8bf6b3e3c61a636fea7793780"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "cb67ae77eb07f110d107b0b4d1900f023df63b2f96978bcac822d9fa8fad8aaa"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "02140057ff32e8960477a31a7995d843d98dea3d2f4b8ba20e341a379d4470d1"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8012 original session; affected-source confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8027-original-review.json",
+      "sha256": "f3a603c9667684bb9c4f4e218573234a2110bbbe476c903a4784ed7714be55c0"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8027-author-source-handoff-v1.json",
+        "sha256": "c1f67722bde817e6cfbfb398e01983a85d159323a06c86f69c05f3853a0e82cc"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8027-author-cache-api-v1.json",
+        "sha256": "c5aa091276ea4a6e0c242ae29efcae459710d330c0625473b44ef66759daf593"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07",
+      "declared_claim_id": "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+      "helpers": [
+        "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py"
+      ],
+      "citations": [
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8027/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ],
+      "dependency_rationale": "Supplied compact SU(3) Hamiltonian normalization and explicit static source carrier; complete finite-box geodesic equality space, exact first-order matrix and planar spectrum with next-branch splitting. Analytical classification and fixed-box remainder are distinct from finite controls. No uniform confinement or axiom selection. Original independent confirmation required."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8027/README.md",
+      "rationale": "Historical recovery instructions; no current science authority or active proof input.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8027-original-review.json",
+        "sha256": "f3a603c9667684bb9c4f4e218573234a2110bbbe476c903a4784ed7714be55c0"
+      }
+    }
+  ]
+}

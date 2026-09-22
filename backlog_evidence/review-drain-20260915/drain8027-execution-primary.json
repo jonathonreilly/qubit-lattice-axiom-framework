@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "TOTAL: PASS=34 FAIL=0\nper_element: PASS 5 source/Haar normalization and adverse-factor checks\nper_site: PASS 10 actual planar path-count and edge-charge matrix checks\nper_mode: PASS 8 all-label increment and complete planar spectrum checks\nper_block: PASS 10 adjacency symmetry and fixed-number fermion matrix checks\nlattice_wide: checked and not executed \u2014 all-representation and fixed-box perturbation proof is analytical; resource guard does not establish a uniform interacting remainder\nDATA: {\"TOTAL\": 34, \"plaquette_flip_coefficient\": \"1/18\", \"rows\": [{\"R\": 1, \"S\": 1, \"adjacency\": [[0, 1], [1, 0]], \"characteristic_polynomial\": \"z**2 - 1\", \"fermion_eigenvalues\": [\"1\", \"-1\"], \"length\": 2, \"paths\": [[1, 0], [0, 1]]}, {\"R\": 1, \"S\": 2, \"adjacency\": [[0, 1, 0], [1, 0, 1], [0, 1, 0]], \"characteristic_polynomial\": \"z**3 - 2*z\", \"fermion_eigenvalues\": [\"sqrt(2)\", \"0\", \"-sqrt(2)\"], \"length\": 3, \"paths\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]]}, {\"R\": 2, \"S\": 2, \"adjacency\": [[0, 1, 0, 0, 0, 0], [1, 0, 1, 1, 0, 0], [0, 1, 0, 0, 1, 0], [0, 1, 0, 0, 1, 0], [0, 0, 1, 1, 0, 1], [0, 0, 0, 0, 1, 0]], \"characteristic_polynomial\": \"z**6 - 6*z**4 + 5*z**2\", \"fermion_eigenvalues\": [\"sqrt(5)\", \"1\", \"0\", \"0\", \"-1\", \"-sqrt(5)\"], \"length\": 4, \"paths\": [[1, 1, 0, 0], [1, 0, 1, 0], [1, 0, 0, 1], [0, 1, 1, 0], [0, 1, 0, 1], [0, 0, 1, 1]]}, {\"R\": 1, \"S\": 3, \"adjacency\": [[0, 1, 0, 0], [1, 0, 1, 0], [0, 1, 0, 1], [0, 0, 1, 0]], \"characteristic_polynomial\": \"z**4 - 3*z**2 + 1\", \"fermion_eigenvalues\": [\"1/2 + sqrt(5)/2\", \"-1/2 + sqrt(5)/2\", \"1/2 - sqrt(5)/2\", \"-sqrt(5)/2 - 1/2\"], \"length\": 4, \"paths\": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]}, {\"R\": 2, \"S\": 3, \"adjacency\": [[0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 1, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 1, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, 1, 1, 0, 0], [0, 0, 0, 1, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1, 1, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]], \"characteristic_polynomial\": \"z**10 - 12*z**8 + 39*z**6 - 40*z**4 + 12*z**2\", \"fermion_eigenvalues\": [\"1 + sqrt(3)\", \"sqrt(3)\", \"-1 + sqrt(3)\", \"0\", \"1\", \"0\", \"1 - sqrt(3)\", \"-1\", \"-sqrt(3)\", \"-sqrt(3) - 1\"], \"length\": 5, \"paths\": [[1, 1, 0, 0, 0], [1, 0, 1, 0, 0], [1, 0, 0, 1, 0], [1, 0, 0, 0, 1], [0, 1, 1, 0, 0], [0, 1, 0, 1, 0], [0, 1, 0, 0, 1], [0, 0, 1, 1, 0], [0, 0, 1, 0, 1], [0, 0, 0, 1, 1]]}]}\nRESOURCE: seconds=0.26153050002176315 rss_MiB=65.828125 limits=180sec/180MiB\nSOURCE_SHA256: 9b1019979f215ee42afa5b504a0f8b390fb7b7aa3aaeab2bb091da6857eb6151\n",
+  "stderr": "",
+  "elapsed_sec": 0.4250969886779785,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_static_source_geodesic_2026_09_07.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 95443,
+    "samples": 9,
+    "peak_tree_rss_bytes": 101072896,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8027-capture.py",
+  "capture_script_sha256": "04506708d080d15c99593bd3bc9889f1169990a3be4438b29e5a2af28c8795d6"
+}

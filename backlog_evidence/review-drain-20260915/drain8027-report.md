@@ -1,0 +1,9 @@
+# PR8027 reviewed scope
+
+Accepted complete conditional finite-box static-source mathematics: the all-representation free equality-space classification, exact geodesic first-order matrix, planar subset spectrum, fixed-box analytic perturbation, and explicit next-branch splitting. Static endpoint representation spaces and zero source rest/kinetic energy are supplied probes. The compact Hamiltonian parent supplies normalization. No uniform interacting confinement, physical matter mass or axiom-derived source is claimed.
+
+Repairs bind both runners to current note and actual parent, preserve the historical provenance of original independent derivations, add honest analytical/finite-check boundaries, expose separate canonical caches and retain the unique next-branch corollary from historical primary section4. Both helper registries preserve PR8025/8026 entries. All73 original incremental path/mode/blob versions are byte-exact under docs/work_history/review_loop/pr8027. No unique scientific content is deferred.
+
+The original independent reviewer read complete arguments, historical alternatives and actual parents, ran14 independent exact controls and confirmed the corrected source and final evidence in the same session. Sole sequential primary/helper captures returned34/0 and37/0, each including one resource check, in0.425096989 and0.403733969seconds. Sampled process-tree peaks101072896 and101957632bytes were within actual180seconds/180MiB per-run limits. No primary rerun or audit verdict.
+
+Final review: drain8027-final-review.json; canonical receipt: drain8027-unit-final.json. Close only after combined integration validation and landing, fresh original-head verification, and safe child-base maintenance. Exact-lease branch deletion is then permitted because all substantive source is durable.

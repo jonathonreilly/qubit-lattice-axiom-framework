@@ -1,0 +1,16 @@
+[
+  {
+    "primary": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py",
+    "primary_sha256": "241f5bb2454f1388249bffa03e07cb5c1d6987f7e3a2bc924baa7aabe161f674",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_FINITE_UNRECORDED_COMPONENT_FACTORIZATION_AND_ATTACHMENT_FACTORS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+    ],
+    "declared_input_fingerprint": "63f5185772484f2f8188f747be992945ef70c86e7871a33222d0a3675b92e18b",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

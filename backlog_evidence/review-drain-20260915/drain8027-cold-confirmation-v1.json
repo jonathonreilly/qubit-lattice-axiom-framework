@@ -1,0 +1,1071 @@
+{
+  "status": "COLD SOURCE CONFIRMED WITH BOUNDED CLAIMS; CAPTURE PENDING",
+  "reviewer": "/root/review_8012",
+  "source": {
+    "base": "49777d85533d8403cd3e30471e1123bc2c05fd56",
+    "commit": "49777d85533d8403cd3e30471e1123bc2c05fd56",
+    "tree": "cd6e8073af4cf1ae43e6fbbd37beb05214d03f52",
+    "paths": [
+      {
+        "path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "98f364441abc618cf7132a9bebfcb07f01b903ea081cf6acf7a37ae3c2a7431b"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "cb67ae77eb07f110d107b0b4d1900f023df63b2f96978bcac822d9fa8fad8aaa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_000_ARTIFACT_PLAN.md.gz",
+        "sha256": "ca84e88bf128bfddaabaafb2f0c1f38671a3d9e03263000bb437d8b1850b68be"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_001_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "df51f645e5e80d64daabd4edbda44ed4f7d34d38f05faf3bc53d2f15b413f9b9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_002_CLAIM_STATUS_CERTIFICATE.md.gz",
+        "sha256": "9c8f012c92da58ee8a3f57993e3ebbe5bb398ea3b1fbabd427c49de2093c723f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz",
+        "sha256": "a269dd1cb64d5572b9a8d958e28d7daa641b53f2e6b21d71222478fd47831181"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_004_FINAL_MAIN66_LOCK_RELEASE.json.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_005_FINAL_MAIN66_READINESS.json.gz",
+        "sha256": "66918722f8f1b07aff05d4c898a45893eaa64e660e5f4d1a4f41750c2d44df17"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_006_FINAL_MAIN66_STRICT.log.gz",
+        "sha256": "a15ec9227423ffcd07624d782efdb8ab282f47e94a1000b9a9da21ed057fef3d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz",
+        "sha256": "a03dd38d065ee4820fff21c20e6b976f9ac971e57c8aeff6352d847047fb201b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_008_FINAL_MAIN66_VALIDATION.md.gz",
+        "sha256": "8ed518efbebbf6003b616b08930b9916faf605b4e5f7f4e2b30f831aecb39e6c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_009_FINAL_VALIDATION.md.gz",
+        "sha256": "f18926a148d351e37f2864d8c2bd7028183597bea0fcc6cf6378a4eae43df40a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_010_FINAL_VOCAB_LINT.txt.gz",
+        "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_011_FROZEN_PORT_RECEIPT.json.gz",
+        "sha256": "7200180b4506bc3a5b215038687f7e43973c454c71200b31469fe6e44041539f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_012_FULL_PIPELINE.log.gz",
+        "sha256": "0a14b5440a664777c48a2dc1c9cb7b4f845e774b8daac12cbbe9839ae049c0e1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_013_GOAL.md.gz",
+        "sha256": "eb35e37d3472cbc1480f7c8e942343d7cb3da1120ea98ca094ae6da56d152ae2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_014_HANDOFF.md.gz",
+        "sha256": "3680a16bbd139bec665be731c705c2910b834ecb04b805e5d8ee3c70ea487ad5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_015_HASHES.json.gz",
+        "sha256": "d3fa34e1bbac044e4cbe0d3c7d2f3a2a99d648cce74fceedf5ba669f872ca5a5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_016_INDEPENDENT_RAW.json.gz",
+        "sha256": "07314b8a52d6678d9793eab30d4257b72a2ca9baaa2336be7c7cbe91ce5985f9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_017_INDEPENDENT_STDOUT.txt.gz",
+        "sha256": "25fe4f9b4a9b8028ebfde5f6c9c285ee7362c3d81c61fe5529b2740c99f4f41e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_018_LITERATURE_BRIDGES.md.gz",
+        "sha256": "38505fae4eccb930b8562196143d725c8c7366bf06909bd6d3ce31f33d8a1462"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_019_LOCK_RELEASE.json.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_020_N1_N8.md.gz",
+        "sha256": "f4b4306b1113e085f4af257564ffe98eaa067770c462c9621994fb8a7759eac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_021_NO_GO_LEDGER.md.gz",
+        "sha256": "b3ff30fb80ccdfde55b87b70f05a02e0bfda8c4e64b3a101076c3eb912c71062"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_022_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "a567014bd260872b3b4a65a343d4997d3bf38ad86fdcc101957ba87f5867ee27"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_023_PACK_INDEX.md.gz",
+        "sha256": "4be568909e6555cd805e275968f49d49dc7116a9f896edf7dc0f46edd4296bcf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_024_PARENT_VALIDATION_METADATA_CATCHUP.md.gz",
+        "sha256": "b309c70ef7b56f4d6513e0e02d92d2d764acaca2ba42731fe242342bde8c29dc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_025_PORT_EXECUTION_RECEIPT.json.gz",
+        "sha256": "e09ddcd186b3b8bf272fd86287e1b5a2e30ba243a6d3c7783811dabe7bd0727a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_026_PORT_INTERFACE_CHECK.md.gz",
+        "sha256": "91e079dd2d43a7836f790fdb728321df4b6490248501a9d938f4734357c0aa60"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_027_PRIMARY_RAW.json.gz",
+        "sha256": "4f3ecb7008a17c3d470351e18b98befa595faff77f9cf86db80b66f43875cb9d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_028_PRIMARY_STDOUT.txt.gz",
+        "sha256": "6b75357f8d78bc59c201bd02838c31b835ce424ed05e3ffd131d628789af0ed0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_029_PR_BACKLOG.md.gz",
+        "sha256": "1ad30a3c213925536268436ed1972855c1ea0c5f051a20eeedaac101f0a40dd6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_030_PR_BODY.md.gz",
+        "sha256": "a282f7ccb4d0d8d26855e89c1385473d68749f084d4ed0bfcf9c634336659193"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_031_PUBLICATION_RECEIPT.json.gz",
+        "sha256": "44790b8b708a2cd773953d028aa305d24a94bd6a306561579ab9166cf0e883ad"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_032_QUEUE.md.gz",
+        "sha256": "f112183e588a38680028c1309736faff2a6ed43f2748962ef2b41f5320ce6823"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_033_REVIEW.md.gz",
+        "sha256": "bfae4cf7eb69860ca0a257ab626dac4fde6f0d8711c97b22f5fc4d6f2bf20374"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_034_REVIEWED_UPSTREAM_SYNC_20260907.json.gz",
+        "sha256": "3f18b815be344f319ea6d34223c80d96eda45296f705dea71e55d9266f8b766c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_035_REVIEW_HISTORY.md.gz",
+        "sha256": "249e9980b603959629c62623ec3a3e0c721e535ea572b78000c89cb27c9f4f3a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_036_ROOT_CANONICAL_PORT_REVIEW.md.gz",
+        "sha256": "1fe45de3aad940c23702c93364d756826e9ee6b44f5f4e9807214d46100a383d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_037_ROOT_SINE_DELTA_REVIEW.md.gz",
+        "sha256": "9bb59c1f89050f095126059bbfaf6073d1ae762219172c24190d090968bcb4a5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_038_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "a9adf22ff70d94c1dd75e53b11d990da7d6e73829613762a2165521347da8b08"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_039_STATE.yaml.gz",
+        "sha256": "08898fb73744e611ed007c54d307316cafba10a37095c05eb7bd10ba1c24b86e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_040_STATUS.md.gz",
+        "sha256": "5476c45a427cdc770c1de54073909d13be27b4ee52d43ec3d393c8d9907bd4b3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_041_STRICT_LINT.log.gz",
+        "sha256": "ed8c383ba8a14943ce57f8dd6f5c3bf4127e27f9d3efc9cdaa5b80e5af4f451d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_042_TRACE_GATE.md.gz",
+        "sha256": "be9d147947dd804646ecb76663c015fc9dba030c9bd46f40195fd21f91c26704"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_043_UPSTREAM_SYNC_PIPELINE.log.gz",
+        "sha256": "2c825bd889b668b9cfae430e34141cc03d177140e8f492e1e66c30638ac7a67b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_044_UPSTREAM_SYNC_READINESS.json.gz",
+        "sha256": "334947104047801e3331c402d8c405ed549fe5bcf4b1bf44d59a494d97395a5c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_045_UPSTREAM_SYNC_STRICT.log.gz",
+        "sha256": "2bc2a0e38f76b6638859389e78d38ed4c16dd9092b4eb13e01c640c64fdd898c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_046_UPSTREAM_SYNC_VALIDATION.md.gz",
+        "sha256": "b31a9c3714f9ff8f9037a4ddc90f0e060ef961a11e86ceeab1237b8a0237a7e9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_047_COEFFICIENT_SUPPLEMENT_PREREGISTRATION.md.gz",
+        "sha256": "baa095466e0f7e7789c1404e2f969939ce5b87e9c6d1259e84457a46cac47f1b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_048_DERIVATION.md.gz",
+        "sha256": "d8b97284177ed156fbf0223881d49875e3659293c5cf6d4330a1b461ea869271"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_049_HASHES.json.gz",
+        "sha256": "d37a197f77151e3107471a049456ed96422284e479015ce7379a7bae79f59021"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_050_PREREGISTRATION.md.gz",
+        "sha256": "79fe401e222f67736ffe53d9cb1a0ebaaeeb8b368d7f8b0c3bb0810f05a40e18"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_051_ROOT_REVIEW.md.gz",
+        "sha256": "f9fe6152d50d7189bbcc4dbb4e224f55729c711bb24554e770548c3558ea1b92"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_052_check.py.gz",
+        "sha256": "1fc2edf1680ed4e8cafff55ae20c64029b9e9a9112571d3f410883512ba93245"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_053_result.json.gz",
+        "sha256": "d0e06a5edbdbd65ffbf468d33fa35b35d3e63be5701089b71b229a790b8e5ade"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_054_FINITE_CONTROLS_PREREGISTRATION.md.gz",
+        "sha256": "1705aa7afb784072c3976c8d7ba949b7ba5c27b8766ceba9c05a71e4001bf042"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_055_PREREGISTRATION.md.gz",
+        "sha256": "da1aa3edcdc409ed8f76d30e009da981799a18ca515fea1509d5aed1b14770a9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_056_ROOT_DERIVATION.md.gz",
+        "sha256": "50cedc0f216ad956dd0d2069e35a375bbe1c7c7567c8778b34aab7e53c7f5396"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_057_ROOT_DERIVATION_BEFORE_SINE_NORMALIZATION_72f606.md.gz",
+        "sha256": "4645fad51122a9b6dfe002af38dbe95f41eea958346eb31d72fdb7ee35cd0a96"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_058_ROOT_PRIMARY_REVIEW.md.gz",
+        "sha256": "d7c20846e32c727a270f0e961e24a3a8b665052be3e1b5b2672a1dd5694f5764"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_059_check.py.gz",
+        "sha256": "26ffefc5947776aaba761a8ded49b78e131adbcec47e702b845368fce8bbde46"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_060_result.json.gz",
+        "sha256": "698d6e2fb21ace03f865b4f86ee3f3600708150bdec7f1157dd2f893d72abd9d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_061_package.py.gz",
+        "sha256": "3bfc555a646296f149a8de61b467cb02a72c912223c02dcc0a1c2d3c3c6a6503"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_062_port.py.gz",
+        "sha256": "d91627bc20fd8b68a83ea37b791a7e8a85a0e4f088df6d46a5baf97e7b2e865e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_063_validated_claims_before_generated_cleanup.json.gz",
+        "sha256": "f4c3bb1fff6253c5d8855884ce76e74bb21bd71d1d1c5b0288273b4cc36e8673"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_064_validated_readiness_before_generated_cleanup.json.gz",
+        "sha256": "a3919783170caae6c358166deae83712296d809b013aa6835e48c2b090a54c96"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_065_GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz",
+        "sha256": "02ad7a2c5b4e09cf7eb5ed3367d327cd7f1b724d059357dc56584cd5a3848623"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_066_citation_graph_manifest.json.gz",
+        "sha256": "d427fa0b4a6335d5d36d635ee003e610b9353a720d9f89a864765c0d235e7e66"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_067_build_citation_graph.py.gz",
+        "sha256": "d159ce7b0ece9ff06b63b59636405ea697a9b6a64d1ea5d26b17727ae424708b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_068_gauge_wilson_static_source_geodesic_2026_09_07.txt.gz",
+        "sha256": "8e083c5c3eddbac25d6ffafb171d2f0e9320511ec863c492cf34a78bfebd3e73"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_069_gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt.gz",
+        "sha256": "0a90bc889201ef1c1c7efdfd741f5640381a6fa8f3daf0266b64d4c330219cf3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_070_audit_packet_script_deps.py.gz",
+        "sha256": "1a94b84b8a287f8fa371cd4a602a0680710b62e15a154fcad19d1117a9c16871"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_071_gauge_wilson_static_source_geodesic_2026_09_07.py.gz",
+        "sha256": "4b9bd265bb09150535d70cdbf44f957690c2a993a9e70bc7f34fb97dc130154d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/8027_072_gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py.gz",
+        "sha256": "4d55b7f237c76c77b3e7bbc2e345d12310aabb5c97054e7273e127be12815b62"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/README.md",
+        "sha256": "f486e70ba84d9fb5bd39167880561487d25830d8bf6b3e3c61a636fea7793780"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/original-manifest.json",
+        "sha256": "ad805623bbc97f3d8b03d8e83b6ab4c95f5453851eb9258a8b3a8eef625e6f66"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "02140057ff32e8960477a31a7995d843d98dea3d2f4b8ba20e341a379d4470d1"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+        "sha256": "9b1019979f215ee42afa5b504a0f8b390fb7b7aa3aaeab2bb091da6857eb6151"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+        "sha256": "3b273aea658f7ca15b42285116da8a3db0e9f19a4f6604f01aa38becc9f3330a"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+        "sha256": "9b1019979f215ee42afa5b504a0f8b390fb7b7aa3aaeab2bb091da6857eb6151"
+      },
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+        "sha256": "3b273aea658f7ca15b42285116da8a3db0e9f19a4f6604f01aa38becc9f3330a"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+        "sha256": "3b273aea658f7ca15b42285116da8a3db0e9f19a4f6604f01aa38becc9f3330a"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "98f364441abc618cf7132a9bebfcb07f01b903ea081cf6acf7a37ae3c2a7431b"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8027/README.md",
+        "sha256": "f486e70ba84d9fb5bd39167880561487d25830d8bf6b3e3c61a636fea7793780"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "cb67ae77eb07f110d107b0b4d1900f023df63b2f96978bcac822d9fa8fad8aaa"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "02140057ff32e8960477a31a7995d843d98dea3d2f4b8ba20e341a379d4470d1"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "record_sha256": "88150cb69940a7afcf6239e7e832266b13733d709ce85c9c15a4ceabfb399dae",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/ARTIFACT_PLAN.md",
+      "original_sha256": "020692101a628c7ce3d9e7b53bd59176b916245b4fbc10aa86e9c5c7dbfe20d7",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_000_ARTIFACT_PLAN.md.gz",
+      "final_sha256": "ca84e88bf128bfddaabaafb2f0c1f38671a3d9e03263000bb437d8b1850b68be",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "fc49720ee95f5805f1bec61746ea0d07d7cdef6fe97023817b49de671e45a8d5",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_001_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "final_sha256": "df51f645e5e80d64daabd4edbda44ed4f7d34d38f05faf3bc53d2f15b413f9b9",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "b40be84e72fd21a68c7a65b6929a887ba6fa0471360530ab1d2f20c538d7ebe8",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_002_CLAIM_STATUS_CERTIFICATE.md.gz",
+      "final_sha256": "9c8f012c92da58ee8a3f57993e3ebbe5bb398ea3b1fbabd427c49de2093c723f",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "original_sha256": "42697fe59d86f273483d7827acad0ce836ff96e6fb178ad8b1ebe30c2893f149",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz",
+      "final_sha256": "a269dd1cb64d5572b9a8d958e28d7daa641b53f2e6b21d71222478fd47831181",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_004_FINAL_MAIN66_LOCK_RELEASE.json.gz",
+      "final_sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_READINESS.json",
+      "original_sha256": "8857ec84efdde8be4cc0d07c80db0a9258bed13440a3d0ec9df6420c9e3578a3",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_005_FINAL_MAIN66_READINESS.json.gz",
+      "final_sha256": "66918722f8f1b07aff05d4c898a45893eaa64e660e5f4d1a4f41750c2d44df17",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_READINESS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_STRICT.log",
+      "original_sha256": "00e2993df87be68bac4676e90f9dc16dece4fa8d63f0dd4002533b28c510b4f9",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_006_FINAL_MAIN66_STRICT.log.gz",
+      "final_sha256": "a15ec9227423ffcd07624d782efdb8ab282f47e94a1000b9a9da21ed057fef3d",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_STRICT.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "original_sha256": "3bbf0077a6b301b6264a8a917768cee5c92a37765a91991ef4a97d02fa108e24",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz",
+      "final_sha256": "a03dd38d065ee4820fff21c20e6b976f9ac971e57c8aeff6352d847047fb201b",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_VALIDATION.md",
+      "original_sha256": "629029505dc23d0a1345bc5494623acc05e9f2a81b407f77eb7d109edc0066cd",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_008_FINAL_MAIN66_VALIDATION.md.gz",
+      "final_sha256": "8ed518efbebbf6003b616b08930b9916faf605b4e5f7f4e2b30f831aecb39e6c",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_VALIDATION.md",
+      "original_sha256": "ccb00e9e8968dd71558dd975e82e813d010bc7213d920723a2d18e061a69d9a0",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_009_FINAL_VALIDATION.md.gz",
+      "final_sha256": "f18926a148d351e37f2864d8c2bd7028183597bea0fcc6cf6378a4eae43df40a",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_VOCAB_LINT.txt",
+      "original_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_010_FINAL_VOCAB_LINT.txt.gz",
+      "final_sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_VOCAB_LINT.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FROZEN_PORT_RECEIPT.json",
+      "original_sha256": "250129bc58b7a77ed90a4c6411caabbc4d082d945c7d4cc090e52da48f063b12",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_011_FROZEN_PORT_RECEIPT.json.gz",
+      "final_sha256": "7200180b4506bc3a5b215038687f7e43973c454c71200b31469fe6e44041539f",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FROZEN_PORT_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/FULL_PIPELINE.log",
+      "original_sha256": "177f07861e3dc2b3bfa8975224b6c7fefdee2b094d4168379c35c3e7ba2ea723",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_012_FULL_PIPELINE.log.gz",
+      "final_sha256": "0a14b5440a664777c48a2dc1c9cb7b4f845e774b8daac12cbbe9839ae049c0e1",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/GOAL.md",
+      "original_sha256": "ce1eb9288f2cd965b8d1a12ebdcdd4cb4a2f718c70425a4e485be02bd9f3e740",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_013_GOAL.md.gz",
+      "final_sha256": "eb35e37d3472cbc1480f7c8e942343d7cb3da1120ea98ca094ae6da56d152ae2",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/GOAL.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/HANDOFF.md",
+      "original_sha256": "7b8d5cf8911e1aa3fcec41744e85905b87f6374d730289a676219ce4273b9e3c",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_014_HANDOFF.md.gz",
+      "final_sha256": "3680a16bbd139bec665be731c705c2910b834ecb04b805e5d8ee3c70ea487ad5",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/HANDOFF.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/HASHES.json",
+      "original_sha256": "99f3ceaefaca0a0196205d3bdf097a33f4348bb0c8bd98e66fa5dd1eb35206a1",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_015_HASHES.json.gz",
+      "final_sha256": "d3fa34e1bbac044e4cbe0d3c7d2f3a2a99d648cce74fceedf5ba669f872ca5a5",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/INDEPENDENT_RAW.json",
+      "original_sha256": "e3b72d5747f4d64909a96da3117e5f4257410ce0619d3308fc8c7ff3d1a0a905",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_016_INDEPENDENT_RAW.json.gz",
+      "final_sha256": "07314b8a52d6678d9793eab30d4257b72a2ca9baaa2336be7c7cbe91ce5985f9",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/INDEPENDENT_RAW.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/INDEPENDENT_STDOUT.txt",
+      "original_sha256": "fbbeb4c15e07fdd695ea81dc49508eb63e756986f57dc056538bd257f35e0d0e",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_017_INDEPENDENT_STDOUT.txt.gz",
+      "final_sha256": "25fe4f9b4a9b8028ebfde5f6c9c285ee7362c3d81c61fe5529b2740c99f4f41e",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/INDEPENDENT_STDOUT.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/LITERATURE_BRIDGES.md",
+      "original_sha256": "76bb5868e409a6b08f2e609cd03275f50abd09f897c20698946a822e48967f96",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_018_LITERATURE_BRIDGES.md.gz",
+      "final_sha256": "38505fae4eccb930b8562196143d725c8c7366bf06909bd6d3ce31f33d8a1462",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/LITERATURE_BRIDGES.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/LOCK_RELEASE.json",
+      "original_sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_019_LOCK_RELEASE.json.gz",
+      "final_sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/LOCK_RELEASE.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/N1_N8.md",
+      "original_sha256": "fa8c0ee57a08907e51b2e28243dfbc20c095f3a1046b821aa29d68be4cc328bc",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_020_N1_N8.md.gz",
+      "final_sha256": "f4b4306b1113e085f4af257564ffe98eaa067770c462c9621994fb8a7759eac4",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/N1_N8.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/NO_GO_LEDGER.md",
+      "original_sha256": "76b90c81ae67cf66930c208092a808f3c276fdfb333acb9481fc3036b88c2715",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_021_NO_GO_LEDGER.md.gz",
+      "final_sha256": "b3ff30fb80ccdfde55b87b70f05a02e0bfda8c4e64b3a101076c3eb912c71062",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/NO_GO_LEDGER.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "70c7a1623fa5f70ae4e649c5c7f424ee1c48570c675cc826e45242f185239026",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_022_OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "a567014bd260872b3b4a65a343d4997d3bf38ad86fdcc101957ba87f5867ee27",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PACK_INDEX.md",
+      "original_sha256": "0e6a3aafdb2a7e6ec017dc01abba8bb1e7deb47b3029e3f1a378c006d164827b",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_023_PACK_INDEX.md.gz",
+      "final_sha256": "4be568909e6555cd805e275968f49d49dc7116a9f896edf7dc0f46edd4296bcf",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PACK_INDEX.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "original_sha256": "2758b845a73cac99e5973f2c8ba6ae2cee0ca3c296d37d442069f271c8b52585",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_024_PARENT_VALIDATION_METADATA_CATCHUP.md.gz",
+      "final_sha256": "b309c70ef7b56f4d6513e0e02d92d2d764acaca2ba42731fe242342bde8c29dc",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PORT_EXECUTION_RECEIPT.json",
+      "original_sha256": "b9c49de8f089e304efee478c427afacea63596335fff0f46860056ee30095eb2",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_025_PORT_EXECUTION_RECEIPT.json.gz",
+      "final_sha256": "e09ddcd186b3b8bf272fd86287e1b5a2e30ba243a6d3c7783811dabe7bd0727a",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PORT_EXECUTION_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PORT_INTERFACE_CHECK.md",
+      "original_sha256": "a7cbca586db6e954e58b5e52685dc113f41561e0e2552caf54f4ee3a46a71837",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_026_PORT_INTERFACE_CHECK.md.gz",
+      "final_sha256": "91e079dd2d43a7836f790fdb728321df4b6490248501a9d938f4734357c0aa60",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PORT_INTERFACE_CHECK.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PRIMARY_RAW.json",
+      "original_sha256": "164a3159dddb0d639f926e2be05cb5a26d2930a620081b35431064d99fe8cf73",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_027_PRIMARY_RAW.json.gz",
+      "final_sha256": "4f3ecb7008a17c3d470351e18b98befa595faff77f9cf86db80b66f43875cb9d",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PRIMARY_RAW.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PRIMARY_STDOUT.txt",
+      "original_sha256": "510a26dbe0e5cde89f4f2e64af395b2b1e40f3cc6075cc49213a71b9923c37ac",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_028_PRIMARY_STDOUT.txt.gz",
+      "final_sha256": "6b75357f8d78bc59c201bd02838c31b835ce424ed05e3ffd131d628789af0ed0",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PRIMARY_STDOUT.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PR_BACKLOG.md",
+      "original_sha256": "7748a381975c26903027007dca3504918ee39d2b90f1a125a2ae25d30a226893",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_029_PR_BACKLOG.md.gz",
+      "final_sha256": "1ad30a3c213925536268436ed1972855c1ea0c5f051a20eeedaac101f0a40dd6",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PR_BACKLOG.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PR_BODY.md",
+      "original_sha256": "a906336778138050948732da53efe59224fd5ce968d721ef0401e8eec9fab578",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_030_PR_BODY.md.gz",
+      "final_sha256": "a282f7ccb4d0d8d26855e89c1385473d68749f084d4ed0bfcf9c634336659193",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PR_BODY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/PUBLICATION_RECEIPT.json",
+      "original_sha256": "de2d20a554f82c43b7994c2ef252f6fc3df3c3d2842ca7c8cacf61d23cb93ae4",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_031_PUBLICATION_RECEIPT.json.gz",
+      "final_sha256": "44790b8b708a2cd773953d028aa305d24a94bd6a306561579ab9166cf0e883ad",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/PUBLICATION_RECEIPT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/QUEUE.md",
+      "original_sha256": "d7a948cacb157a3edbc5b585b59a365acf568d95c1e137a7f78d9c5a32fb8915",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_032_QUEUE.md.gz",
+      "final_sha256": "f112183e588a38680028c1309736faff2a6ed43f2748962ef2b41f5320ce6823",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/QUEUE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/REVIEW.md",
+      "original_sha256": "416930613d1d18e42653c946946a7307a37fbfbd80f3be640e71991d74e44863",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_033_REVIEW.md.gz",
+      "final_sha256": "bfae4cf7eb69860ca0a257ab626dac4fde6f0d8711c97b22f5fc4d6f2bf20374",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "original_sha256": "0cc462fc4f8eb6913865a0fe1d2c513874a4499f7a055ed7393d7e479ca93c81",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_034_REVIEWED_UPSTREAM_SYNC_20260907.json.gz",
+      "final_sha256": "3f18b815be344f319ea6d34223c80d96eda45296f705dea71e55d9266f8b766c",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/REVIEW_HISTORY.md",
+      "original_sha256": "1da90ed2f7dd2061b565845b626f305e62643f1866f88f3b508a556d55483153",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_035_REVIEW_HISTORY.md.gz",
+      "final_sha256": "249e9980b603959629c62623ec3a3e0c721e535ea572b78000c89cb27c9f4f3a",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/REVIEW_HISTORY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "original_sha256": "b29f969fc787361f0b7606c499473d0a473c88cd216341d8cb4dc94ff7abe711",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_036_ROOT_CANONICAL_PORT_REVIEW.md.gz",
+      "final_sha256": "1fe45de3aad940c23702c93364d756826e9ee6b44f5f4e9807214d46100a383d",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/ROOT_CANONICAL_PORT_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/ROOT_SINE_DELTA_REVIEW.md",
+      "original_sha256": "4a6cbdc064ceca6b2f0f71a68229abc2af6378db3309e70b6476792d2b6f4a78",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_037_ROOT_SINE_DELTA_REVIEW.md.gz",
+      "final_sha256": "9bb59c1f89050f095126059bbfaf6073d1ae762219172c24190d090968bcb4a5",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/ROOT_SINE_DELTA_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/ROUTE_PORTFOLIO.md",
+      "original_sha256": "43f7d6a1ff22a7be609e3b521dd8792afd7f0e1543c2e8427d189dff3b908467",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_038_ROUTE_PORTFOLIO.md.gz",
+      "final_sha256": "a9adf22ff70d94c1dd75e53b11d990da7d6e73829613762a2165521347da8b08",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/STATE.yaml",
+      "original_sha256": "dcc3a274505c015af77975e1abba1d984b112f92d1d4c51388f6b72c97e59ce9",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_039_STATE.yaml.gz",
+      "final_sha256": "08898fb73744e611ed007c54d307316cafba10a37095c05eb7bd10ba1c24b86e",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/STATE.yaml"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/STATUS.md",
+      "original_sha256": "e163fc9e8a8d7c2f8dfc576d142dfed51e35532f978bce2452702b4ac84ecf4b",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_040_STATUS.md.gz",
+      "final_sha256": "5476c45a427cdc770c1de54073909d13be27b4ee52d43ec3d393c8d9907bd4b3",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/STATUS.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/STRICT_LINT.log",
+      "original_sha256": "7e5013019a332ed1702ed0718c2f735c0e2f5340014211d92a6ca45c2e56fa0f",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_041_STRICT_LINT.log.gz",
+      "final_sha256": "ed8c383ba8a14943ce57f8dd6f5c3bf4127e27f9d3efc9cdaa5b80e5af4f451d",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/STRICT_LINT.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/TRACE_GATE.md",
+      "original_sha256": "72af22d4f69d44906017b0cb5e1ac72240ca750a979a5d31352ca58974c43ef0",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_042_TRACE_GATE.md.gz",
+      "final_sha256": "be9d147947dd804646ecb76663c015fc9dba030c9bd46f40195fd21f91c26704",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/TRACE_GATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "original_sha256": "9ec5d5ccd20c3d22497511cab51eb3e834193d633517151bfc0c8d45798e61c1",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_043_UPSTREAM_SYNC_PIPELINE.log.gz",
+      "final_sha256": "2c825bd889b668b9cfae430e34141cc03d177140e8f492e1e66c30638ac7a67b",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_PIPELINE.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_READINESS.json",
+      "original_sha256": "8b11bbc136533f8936d65045b99de0ff153d62cfba3ec138c524cf11378740df",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_044_UPSTREAM_SYNC_READINESS.json.gz",
+      "final_sha256": "334947104047801e3331c402d8c405ed549fe5bcf4b1bf44d59a494d97395a5c",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_READINESS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_STRICT.log",
+      "original_sha256": "6bdcf583e74ed94de93b830adc6c286cac70de7448835f117064c676d276946a",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_045_UPSTREAM_SYNC_STRICT.log.gz",
+      "final_sha256": "2bc2a0e38f76b6638859389e78d38ed4c16dd9092b4eb13e01c640c64fdd898c",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_STRICT.log"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "original_sha256": "c2a004ff3454185bb87ecb63ce3bb909442df853810f4d89423717b5daf1c89f",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_046_UPSTREAM_SYNC_VALIDATION.md.gz",
+      "final_sha256": "b31a9c3714f9ff8f9037a4ddc90f0e060ef961a11e86ceeab1237b8a0237a7e9",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_VALIDATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/COEFFICIENT_SUPPLEMENT_PREREGISTRATION.md",
+      "original_sha256": "e4db4e5c46a102bb0e143746c241fff8d0f51dd2630baeae84d80d7d4981dfe2",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_047_COEFFICIENT_SUPPLEMENT_PREREGISTRATION.md.gz",
+      "final_sha256": "baa095466e0f7e7789c1404e2f969939ce5b87e9c6d1259e84457a46cac47f1b",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/COEFFICIENT_SUPPLEMENT_PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/DERIVATION.md",
+      "original_sha256": "c83f1583c38e4baa67e8cd37d042249bb8a8cc402aad6674ef6dd71a79614482",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_048_DERIVATION.md.gz",
+      "final_sha256": "d8b97284177ed156fbf0223881d49875e3659293c5cf6d4330a1b461ea869271",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/HASHES.json",
+      "original_sha256": "6c3d0ffc0bd2d7df974349a92678ebfe6f04c182d86dc74a72658694f11e870c",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_049_HASHES.json.gz",
+      "final_sha256": "d37a197f77151e3107471a049456ed96422284e479015ce7379a7bae79f59021",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/HASHES.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/PREREGISTRATION.md",
+      "original_sha256": "fbbafa4429d94eec6ecfab8b0503b788bc91d2de862338e38a80b12842fd9e9f",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_050_PREREGISTRATION.md.gz",
+      "final_sha256": "79fe401e222f67736ffe53d9cb1a0ebaaeeb8b368d7f8b0c3bb0810f05a40e18",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/ROOT_REVIEW.md",
+      "original_sha256": "b0e7fe209a98198ee4e4a6fa305c14d93bd80ddf4bdacc58594b45498e5ba7e7",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_051_ROOT_REVIEW.md.gz",
+      "final_sha256": "f9fe6152d50d7189bbcc4dbb4e224f55729c711bb24554e770548c3558ea1b92",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/ROOT_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/check.py",
+      "original_sha256": "5bc9105a0600ceae51e0089a6187a33c9c6012f9b9c101872139a5eefce197cb",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_052_check.py.gz",
+      "final_sha256": "1fc2edf1680ed4e8cafff55ae20c64029b9e9a9112571d3f410883512ba93245",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/result.json",
+      "original_sha256": "60d394d9533004e720b5fea286d6e80142522e15c4945d302116d5f47b90ce36",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_053_result.json.gz",
+      "final_sha256": "d0e06a5edbdbd65ffbf468d33fa35b35d3e63be5701089b71b229a790b8e5ade",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/FINITE_CONTROLS_PREREGISTRATION.md",
+      "original_sha256": "e875c6e9f97f277ad2f9a3a9d1d9c51d268c0bc3dbf10b522c9aa35db111f69f",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_054_FINITE_CONTROLS_PREREGISTRATION.md.gz",
+      "final_sha256": "1705aa7afb784072c3976c8d7ba949b7ba5c27b8766ceba9c05a71e4001bf042",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/FINITE_CONTROLS_PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/PREREGISTRATION.md",
+      "original_sha256": "f546d4fc8f79c3fc90fe65453df2cf0bcb43361e051b140eb7dffdf1c9c96a42",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_055_PREREGISTRATION.md.gz",
+      "final_sha256": "da1aa3edcdc409ed8f76d30e009da981799a18ca515fea1509d5aed1b14770a9",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/PREREGISTRATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_DERIVATION.md",
+      "original_sha256": "012270fe84ab070421df5308d9c81caa44b579054c89bccca6969a7b3d361cbf",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_056_ROOT_DERIVATION.md.gz",
+      "final_sha256": "50cedc0f216ad956dd0d2069e35a375bbe1c7c7567c8778b34aab7e53c7f5396",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_DERIVATION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_DERIVATION_BEFORE_SINE_NORMALIZATION_72f606.md",
+      "original_sha256": "72f6063439086729c18af629aea3001d5b61a9fde011e818b2602f3bb02946b4",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_057_ROOT_DERIVATION_BEFORE_SINE_NORMALIZATION_72f606.md.gz",
+      "final_sha256": "4645fad51122a9b6dfe002af38dbe95f41eea958346eb31d72fdb7ee35cd0a96",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_DERIVATION_BEFORE_SINE_NORMALIZATION_72f606.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_PRIMARY_REVIEW.md",
+      "original_sha256": "d7db869f503a367d3cf85859d338538bdfe8ca0a2d71b4aa2836d0d859970045",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_058_ROOT_PRIMARY_REVIEW.md.gz",
+      "final_sha256": "d7c20846e32c727a270f0e961e24a3a8b665052be3e1b5b2672a1dd5694f5764",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_PRIMARY_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/check.py",
+      "original_sha256": "e1a9c5569d6e6cd0072f39f6291e36b6406d417c19e43889c340f858edf51a9f",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_059_check.py.gz",
+      "final_sha256": "26ffefc5947776aaba761a8ded49b78e131adbcec47e702b845368fce8bbde46",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/result.json",
+      "original_sha256": "923310dadff1db84d2756c9cba198d8c5dc1e5aaf485627e973c870cf88b96dd",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_060_result.json.gz",
+      "final_sha256": "698d6e2fb21ace03f865b4f86ee3f3600708150bdec7f1157dd2f893d72abd9d",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/result.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/package.py",
+      "original_sha256": "3e71dc12a4a3bfe02d25bd05495a5f086884e004eb129e2864f4a6d6e2050f2f",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_061_package.py.gz",
+      "final_sha256": "3bfc555a646296f149a8de61b467cb02a72c912223c02dcc0a1c2d3c3c6a6503",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/package.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/port.py",
+      "original_sha256": "a79164c3a4457b9507b5770aac29ea39db9f2eaaa5a75f7b5698cfb77a5f5b11",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_062_port.py.gz",
+      "final_sha256": "d91627bc20fd8b68a83ea37b791a7e8a85a0e4f088df6d46a5baf97e7b2e865e",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/port.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/validated_claims_before_generated_cleanup.json",
+      "original_sha256": "d7e5ef5bcedf2ccf402e882a54f67768f86f81c22c5bd3376faba3491ddb3682",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_063_validated_claims_before_generated_cleanup.json.gz",
+      "final_sha256": "f4c3bb1fff6253c5d8855884ce76e74bb21bd71d1d1c5b0288273b4cc36e8673",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/validated_claims_before_generated_cleanup.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/static-source-geodesic-20260907/validated_readiness_before_generated_cleanup.json",
+      "original_sha256": "c1f021e0d3cbc0d6a7a9a0b6f493618043062cfb0a4a72a69c2ef9e499982c50",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_064_validated_readiness_before_generated_cleanup.json.gz",
+      "final_sha256": "a3919783170caae6c358166deae83712296d809b013aa6835e48c2b090a54c96",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:.claude/science/physics-loops/static-source-geodesic-20260907/validated_readiness_before_generated_cleanup.json"
+    },
+    {
+      "original_path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "original_sha256": "d8258e8289828fe8a3dc70228e7f533da952044c6d769f5c90f7d62f10a4e867",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_065_GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz",
+      "final_sha256": "02ad7a2c5b4e09cf7eb5ed3367d327cd7f1b724d059357dc56584cd5a3848623",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "e6009a127dc19f91c82b9760b54914d6813578b3efc42ba937a99fc518ad90f4",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_066_citation_graph_manifest.json.gz",
+      "final_sha256": "d427fa0b4a6335d5d36d635ee003e610b9353a720d9f89a864765c0d235e7e66",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "docs/audit/scripts/build_citation_graph.py",
+      "original_sha256": "2b18fb6ccdd1a34d61e84be3f57e5da9415dc8066bc5060f1dbd7622e81f7ba1",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_067_build_citation_graph.py.gz",
+      "final_sha256": "d159ce7b0ece9ff06b63b59636405ea697a9b6a64d1ea5d26b17727ae424708b",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:docs/audit/scripts/build_citation_graph.py"
+    },
+    {
+      "original_path": "logs/runner-cache/gauge_wilson_static_source_geodesic_2026_09_07.txt",
+      "original_sha256": "005ad58302c5d0b532b377a9b9cf4e8cdc2eab097bc7dd9e20a5d32fa8f14449",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_068_gauge_wilson_static_source_geodesic_2026_09_07.txt.gz",
+      "final_sha256": "8e083c5c3eddbac25d6ffafb171d2f0e9320511ec863c492cf34a78bfebd3e73",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:logs/runner-cache/gauge_wilson_static_source_geodesic_2026_09_07.txt"
+    },
+    {
+      "original_path": "logs/runner-cache/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt",
+      "original_sha256": "ae4fc96666905b3dbcf31fafb8e034d566624f6aa468e60d917b8f593fb3ee3d",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_069_gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt.gz",
+      "final_sha256": "0a90bc889201ef1c1c7efdfd741f5640381a6fa8f3daf0266b64d4c330219cf3",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:logs/runner-cache/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt"
+    },
+    {
+      "original_path": "scripts/audit_packet_script_deps.py",
+      "original_sha256": "5eae78a038f50428fe25ffcb17f489ab94a09722dcb26d5ecc7389990283e4aa",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_070_audit_packet_script_deps.py.gz",
+      "final_sha256": "1a94b84b8a287f8fa371cd4a602a0680710b62e15a154fcad19d1117a9c16871",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:scripts/audit_packet_script_deps.py"
+    },
+    {
+      "original_path": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+      "original_sha256": "3e66256f8b201a3ac8b2391060d50f38158e09640b3d3d6623ede5ed6081b564",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_071_gauge_wilson_static_source_geodesic_2026_09_07.py.gz",
+      "final_sha256": "4b9bd265bb09150535d70cdbf44f957690c2a993a9e70bc7f34fb97dc130154d",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:scripts/gauge_wilson_static_source_geodesic_2026_09_07.py"
+    },
+    {
+      "original_path": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+      "original_sha256": "9c1e841acaa716a88efc0de18221fc06d9b5c8a279aa0151d859f486a92d3b83",
+      "final_path": "docs/work_history/review_loop/pr8027/8027_072_gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py.gz",
+      "final_sha256": "4d55b7f237c76c77b3e7bbc2e345d12310aabb5c97054e7273e127be12815b62",
+      "disposition": "Exact original historical recovery; one new canonical note and two runners separately retained with packaging corrections. Prior main repairs preserved instead of stale branch versions. Independent scientific dispositions remain in original reviewer report.",
+      "recovery": "ca0eebe4dffad7a53a201ad7773e804b8c89edef:scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py"
+    }
+  ],
+  "verification": {
+    "source_and_inputs_all_exact": true,
+    "all73_original_raw_stored_hashes_and_git_blobs_exact": true,
+    "actual_claim_helper_APIs": {
+      "graph": [
+        "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py"
+      ],
+      "packet": [
+        "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py"
+      ]
+    },
+    "existing_main_modified_paths": [
+      "docs/audit/scripts/build_citation_graph.py",
+      "scripts/audit_packet_script_deps.py"
+    ],
+    "changes": "One additive mapping each;8025/8026 and all current entries preserved.",
+    "new_runtime_assertions": "Actual ownnote projection identity and parent operator needles verified without executing runners."
+  },
+  "affected_science_confirmation": {
+    "findings": "F1\u2013F5 resolved: explicit pins/read assertions, canonical totals/cache links, historical framing, honest N1\u2013N8/analytical boundary, unique splitting corollary now visible.",
+    "corollary": "R,S>0 fixedbox,next subset replacesR byR+1; positive(v/9)cosine difference with graph-dependentO(av\u00b2). Axis-aligned cases excluded; no uniformlimit. Previously independently checked, no new computation required.",
+    "computation": "Original34/37 counted computations unchanged; added four source-identity assertions perrunner uncounted and explicit; no full interacting spectrum claim.",
+    "premise": "Same suppliedcompactHamiltonian parent. Source representations/zero sourceenergy remain additional supplied probes. No8025/8026scientificdependency."
+  },
+  "capture_plan": {
+    "owner": "root",
+    "condition": "Actual matching v1 cheap preflight PASS before capture",
+    "sequential": true,
+    "expected_counts": [
+      34,
+      37
+    ],
+    "each_timeout_seconds": 180,
+    "each_tree_rss_bytes": 188743680,
+    "each_total_includes_one_resource_check": true,
+    "no_reviewer_primary_helper_or_preflight_execution": true
+  },
+  "closure": "All unique mathematics retained/acceptable within scope; no substantive deferredscience identified. Finalsource/evidence confirmation pending. No audit verdict.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8027-original-review.json",
+      "sha256": "f3a603c9667684bb9c4f4e218573234a2110bbbe476c903a4784ed7714be55c0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8027-author-unit-draft-v1.json",
+      "sha256": "88150cb69940a7afcf6239e7e832266b13733d709ce85c9c15a4ceabfb399dae"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8027-author-source-handoff-v1.json",
+      "sha256": "c1f67722bde817e6cfbfb398e01983a85d159323a06c86f69c05f3853a0e82cc"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8027-author-cache-api-v1.json",
+      "sha256": "c5aa091276ea4a6e0c242ae29efcae459710d330c0625473b44ef66759daf593"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8027/control.py",
+      "sha256": "51dc60cd20953f37eb4d43518a625b37adc1c24935f4e15ef52bfc0002d54868"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8027/control.json",
+      "sha256": "c5fc438c2c06f2697a27027022a14f506962ee90dc9e335dcb36973831d654f0"
+    }
+  ]
+}

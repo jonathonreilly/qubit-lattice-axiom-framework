@@ -1,0 +1,1206 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..2b81f9187b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,12 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 24 — unrecorded sites: the free-window versus integrated-exterior fork (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F24.1 factorization | `μ^{R2} ∝ Π_W φ · Π_C F_C`; R2 = the R3-average | the product form | none | exact | candidate-complete | Q1 (D4) | — |
++| F24.2 one attachment | `F_C` constant | value covariance; transitivity | none | exact | candidate-complete | Q2 (B4, D3) | — |
++| F24.3 two attachments | `φ²`, `φ^{k+2}`, the isotypic criterion; the sphere's `sinh z/z` | the spectral decomposition | the `|∂C| ≥ 3` criterion in closed form | exact | candidate-complete | Q3 (B1–B3, C1–C2, E1) | a closed criterion for three attachments |
++| F24.4 witnesses and the clause | the plaquette, the cube, the forest; the clause pair | enumeration | the owner's decision | exact | candidate-complete | Q4–Q5 (D1–D3) | — |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244..3e36d47c89 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -23,3 +23,11 @@
+ - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 24 (2026-09-15) — unrecorded sites
++- Dependencies: `minimal_axioms` (seven sentences, including "A site with no record cannot be read." and "A state is a configuration of records."); block 01 (on `main`; the static reading); the possibility-covariance note (on `main`; the sphere). The campaign meta note (on `main`) for the seam and the format. PRs #8149–#8151, #8153–#8157 referenced in Q5(b) only.
++- Named premises: the two readings R1 and R2 as declared (and R3 as the object of blocks 17 and 23); value-only covariance of the rule; a finite unrecorded exterior.
++- Scaffolding: pendant paths of two and three sites; the plaquette with one unrecorded site, with two pendant components, and the cube with its top face unrecorded; the triples `(3,1,2)`, `(5,2,4)`, `(2,1,2)`; random components in the refuting pass.
++- Standard mathematical imports at definition level: the commutant of a representation with pairwise inequivalent irreducible constituents; the polar-coordinate sphere integral.
++- References named, not used: the Markov property of Gibbs fields.
++- Counterfactual pass: the constant rule `p = q = r` (every factor constant; R1 = R2 always); a rule without value-only covariance (a soldered rule coupling the bond direction to the values — the one-attachment argument needs value invariance alone and would have to be re-examined); the formation reading (the recorded set grows; block 15's environments).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block24_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block24_findings.md
+new file mode 100644
+index 0000000000..2b69853a45
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block24_findings.md
+@@ -0,0 +1,15 @@
++# Refuting pass — block 24 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block24_unrecorded_sites.py`, refuting pass `specs/supervisor_control_block24_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the plaquette and cube witnesses (Q4) | exact enumeration with integer weights and rational normalization | floating-point tensor contraction (`einsum`) of the same laws | agree to `10^{−9}` at all three triples and on the cube |
++| one-attachment constancy (Q2) | pendant paths of two and three sites, symbolically in `(p, q, r)` | six random connected pendant components of two to four sites on `Z³`, attached to the origin through all their bonds to it, at random positive weights | constant to relative `6·10^{−15}` |
++| two-attachment nonconstancy (Q3) | `φ²`, `φ^{k+2}` and the two-corner square, symbolically | six random bridging components between the origin and `(2,0,0)` at random positive weights, through the isotypic eigenvalues `λ_odd`, `λ_even` of the `6×6` factor; the degenerate rule `p = q = r` | a nonzero sector eigenvalue in every random case; both vanish at `p = q = r` |
++| the sphere factor (Q3 e) | the closed form symbolically; the series positivity | Gauss quadrature at `v_x·v_y ∈ {−1, 0, 1/2, 1}` at `β = 13/10` | agrees to nine digits (`4π` at `v_x·v_y = −1`) |
++| the average identity (Q1) | exact on the plaquette-plus-site | floats on the same window | residual `9·10^{−19}` |
++
++Findings: none in the primary. The control's first draft used a `3×3` window with three pendant sites for the forest witness, which is `6^{12}` configurations and infeasible; it was replaced by the plaquette with a pendant path and a pendant site before the contract. The note's first wording called the two unrecorded corners of a plaquette "a two-site component"; they are two single-site components attached to the same pair of recorded sites, and the wording was corrected before the census.
++
++Attempts to refute (nothing refuted): the one-attachment argument when the component is attached through several bonds to the same recorded site (the substitution `u → gu` acts on all of them at once); the same argument for a component that is a cycle rather than a tree (nothing in the argument uses acyclicity); the covariance of the two-attachment factor when the attachments are at the same exterior site (`φ²`) or at distinct sites (`φTφ`); the case `p + q = 2r` at `(3,1,2)`, where the even sector of `φ` vanishes but the odd one does not; the R3-average identity as a definition rather than a theorem (it is the definition of the conditional law, stated for the record). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block24.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block24.md
+new file mode 100644
+index 0000000000..befd5da700
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block24.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 24 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "Q1-Q3 proved for the six-axis product rule with positive weights and the sphere rule on every finite recorded set with a finite unrecorded exterior (R1 = R2 iff every unrecorded component touches one recorded site; the two-attachment factors phi^2, phi^{k+2}, the isotypic criterion, the sphere's closed form); Q4 exact witnesses (plaquette-plus-site at three triples, the cube, the pendant forest); Q5 the clause pair recorded, not adopted, and the lane's convention audited; the skeleton executed exactly; conditional on block 01's static reading and the two readings as declared; two standard mathematical imports named at definition level (the commutant of pairwise inequivalent irreducibles; the polar sphere integral)"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a factorization of a product law; an invariance-plus-transitivity argument; a spectral decomposition on a six-element menu; exact rational enumerations; a one-dimensional sphere integral"
++dependency_classes: "one premise node (minimal_axioms); block 01 and the possibility-covariance note (on main; proposed, unaudited); the campaign meta note (on main; framing); blocks 15-17, 19-23 (open PRs) as evidence addresses for Q5(b) only"
++open_imports: "the static reading; the two readings as declared; the sphere as a possibility domain; the two standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control (eigenvalues, factors, three plaquette witnesses, the cube, the sphere, the forest), contract with a lens pass, primary, refuting pass by tensor contraction, random pendant and bridging components, quadrature and floats, fold (a wording correction)"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block24.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block24.md
+new file mode 100644
+index 0000000000..f137b09788
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block24.md
+@@ -0,0 +1,24 @@
++# GOAL — block 24: unrecorded sites — the free-window reading and the integrated-exterior reading of the static law differ exactly when an unrecorded component touches two recorded sites (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; assess the next lane at each conclusion; no subagents; derivations over computation.
++
++**Why this block.** The lane's queue is down to hard or incremental items; the campaign meta note names one seam no block has taken that sits inside this lane: "the claim that unrecorded sites carry no law-level state is a hypothesis for investigation, not an adopted reading". The two readings are exact objects: R1 (free window: the static law of a set of records is normalized over the recorded sites only) and R2 (every site's possibilities enter; records lock, unrecorded sites are summed out). They agree or differ by an exact criterion, with exact witnesses, in the campaign's own currency: a model pair differing on a named target, and the separating clause recorded for the owner.
++
++**Object.** A finite set `W` of recorded sites, a finite set `E` of unrecorded sites adjacent to `W` (the nearest-neighbour graph on `W ∪ E`), the six-axis product rule `φ ∈ {p, q, r}` (same, antipodal, orthogonal; positive) and the sphere rule `e^{βs·s'}`. `μ_W^{R1} ∝ Π_{W-bonds} φ`; `μ_W^{R2}` = the marginal on `W` of `μ_{W∪E} ∝ Π_{all bonds} φ`; `μ_W^{R3}(·|ω)` = the window law with exterior records `ω` (blocks 17, 23).
++
++**Contract.**
++- Q1 (factorization): `μ_W^{R2} ∝ Π_{W-bonds} φ · Π_C F_C(v_{∂C})` over the connected components `C` of `E`, `F_C(v_{∂C}) = Σ_{u ∈ M^C} Π_{C-bonds} φ Π_{W–C bonds} φ`, `∂C` the recorded sites adjacent to `C`; and `μ_W^{R2} = Σ_ω μ_{W∪E}(ω) μ_W^{R3}(·|ω)` (R2 is the R3-average).
++- Q2 (one attachment): `|∂C| = 1 ⇒ F_C` constant, by value-covariance and transitivity of the covariance group on the menu (both menus); hence R1 = R2 whenever every component of `E` touches one recorded site.
++- Q3 (two attachments): for `C = {a}` with `∂C = {x, y}`, `F_C = φ²(v_x, v_y)`, with `φ² = Z₁²P₀ + (p−q)²P_odd + (p+q−2r)²P_even`, constant iff `p = q = r`; for `C` a path of `k` internal bonds between the attachments, `F_C = φ^{k+2}`, constant iff `p = q = r`; in general `F_C` is constant iff both nontrivial isotypic eigenvalues vanish (an exact criterion). Sphere: `F = 4π sinh(β|v_x+v_y|)/(β|v_x+v_y|)`, strictly increasing in `v_x·v_y`.
++- Q4 (witnesses, exact): plaquette plus one exterior site on two adjacent corners: `TV(R1, R2) = 78621/4563820` at `(3,1,2)` (and at `(5,2,4)`, `(2,1,2)`); the cube with the top face unrecorded: `9778807/1312253264` at `(3,1,2)`; two pendant components: `0`.
++- Q5 (the separating clause and the lane): the clause pair recorded, not adopted; every result of the lane on tori is reading-independent; every window result stated uniformly in exterior records (R3) holds under R2 by averaging; R1 results are exactly those stated for free windows.
++- N-gate: the negative "R1 ≠ R2 on the plaquette-plus-site" is exact; escapes: the constant rule; pendant exteriors.
++
++**Lens pass (self-run panel).**
++- *"This is elementary."* Yes; its content is the exact criterion and the campaign-format witness pair on a seam the meta note flags as open.
++- *"Which reading do the axioms take?"* Neither is derived: "Each site has a domain of local possibilities" applies to every site (R2's reading), "Only records are readable" and "A state is a configuration of records" (R1's reading); the block records the clause, adopts nothing.
++- *"Does the lane's earlier work depend on the fork?"* Q5 answers: tori are reading-free; R3-uniform statements cover R2; free-window statements are R1 by declaration.
++
++**Forbidden phrases (beyond the lane's standing list):** "selects the", "the axioms select", "adopt the", "the correct reading", "converge", "certified", "emergent".
++
++**Prior-art search at `origin/main`.** The campaign meta note (the seam); block 01 (the static reading of finite windows); blocks 15–16 (recorded environments); nothing on the fork itself.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..31e4296b5d 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,9 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 24 opened for review as PR #8158 (supervisor)
++Independent PR against `main` (`df5316ee81`); parents on `main`: the possibility-covariance note and block 01. The lane assessment after block 23: the queue is hard or incremental; the light/clock/gauge lanes are the owner's live integration (train commits landing today) and record-matter is another worker's; the campaign meta note's untouched seam on unrecorded sites sits inside this lane. Block 24 = the fork between the free-window reading R1 and the integrated-exterior reading R2: `μ^{R2} ∝ Π_W φ · Π_C F_C` and R2 is the R3-average (Q1); a pendant component's factor is constant by value covariance and transitivity, so R1 = R2 for pendant exteriors (Q2); a bridging site gives `φ² = Z_1²P_0 + (p−q)²P_odd + (p+q−2r)²P_even`, constant iff `p = q = r`, a bridging path `φ^{k+2}`, a general two-attachment factor constant iff both sector eigenvalues vanish, the sphere `4π sinh(β|v_x+v_y|)/(β|v_x+v_y|)` (Q3); exact witnesses `78621/4563820` (plaquette-plus-site, `(3,1,2)`), `9778807/1312253264` (cube), `0` (pendant forest) (Q4); the clause pair recorded, not adopted; the lane's tori reading-free, its exterior-records results cover R2 (Q5). Runner 20 checks, 13 mutations in-family, exact. Refuting pass: tensor contractions, random components, quadrature — no findings. Gates: pipeline ×2, changed-evidence, `audit_lint --strict`, `git diff --check`, vocabulary lint clean on the block's files. Next: the queue refresh at block 24 opening (the weak side's coefficient; the three-attachment criterion; the normalization; X4/S6) — or a stop, since the lane's remaining items are hard or incremental and the other lanes are owned.
++
++## 2026-09-15 lane assessment after block 24 (supervisor)
++Blocks 12–24 are open as PRs #8146–#8158 (all independent against `main` from block 13 on; none merged; no comments or reviews as of this writing). The unsoldered sphere static law is characterized at the theorem level: on `Z³` one law with exponential decay below `√3/6` (block 21) and long-range order with the Green-function channel above `76/100` (blocks 19, 22); on planes and lines no order at any coupling (block 20) with a power-law bound `(1+d)^{−5/(512β)}` (block 23); the unrecorded-sites fork is exact (block 24). Remaining items are hard — the kernel's normalization, the formation law's stability theorem (S6), value-dependent order laws (X4) — or incremental (the weak side's coefficient, which needs a two-parameter supremum of a mean absolute deviation; the three-attachment criterion). The other lanes are the owner's live integration (light/clock/gauge; corrections of 2026-09-07; train commits on 2026-09-15) or another worker's (record-matter). Resume rule: read the corrigenda on `main` first; the next block is the owner's choice among a stretch attempt on S6, the normalization, or entry into an owner-held lane on its corrected base; the lock is held pending that choice.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb..488b0d3e63 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -13,3 +13,7 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 24 (2026-09-15) — references named; two standard facts imported at definition level
++- The Markov property of Gibbs fields (pendant subtrees marginalize; bridges induce effective interactions) — named only; the one-attachment constancy is re-proved from value covariance and transitivity.
++- Schur's characterization of the commutant; the polar sphere integral — imported at definition level.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..a8966b7bf9 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -8,3 +8,6 @@ Routes read at their proofs, not their headlines.
+ | The consistency-first kernel K* and the frontier-process gate (bridge exercise 2026-08-26) | `archive/campaigns/exercise-bridge-adoption-20260826/SYNTHESIS.md` | On the gravity lane's Gaussian fixture, the sliding-frontier process marginals differ from the static Gram weights by an extent-stable gap. | Fixture-level, floats; this block states the axiom-level finite distinction; it does not explain the gate. |
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 24 (2026-09-15) — the two readings of unrecorded sites are not the same law when an unrecorded component bridges two recorded sites
++- The negative sentence (Q3–Q4): for every non-constant rule of the two families, the free-window and integrated-exterior readings differ on every window whose unrecorded surroundings contain a component touching two recorded sites; exact witnesses `78621/4563820` (plaquette-plus-site, `(3,1,2)`) and `9778807/1312253264` (the cube). Escapes named for the N-gate: the constant rule; pendant exteriors (Q2: equality); the formation reading (not treated). The clause pair is recorded for the owner, not adopted.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..73909cadad 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 24 opening (2026-09-15)
++
++Block 24 opened for review (independent PR against main): the unrecorded-sites fork is exact (R1 = R2 iff every unrecorded component is pendant), with witnesses and the clause pair recorded. The lane assessment stands: the remaining items are hard (the kernel's normalization; S6; X4) or incremental (the weak side's coefficient; sharper constants); the other lanes are the owner's live integration (light/clock/gauge) or other workers' (record-matter). Ranked next, if the lane continues:
++
++1. **The weak side's sharper coefficient** (`β < 1/3` via the zero-field maximum of the mean absolute deviation) — medium.
++2. **The three-attachment criterion in closed form** (block 24's `|∂C| ≥ 3` case) — small.
++3. **The kernel's normalization on `Z³`** — hard.
++4. **Value-dependent order laws (block 16, X4); the stability theorem (block 12, S6)** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block24.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block24.md
+new file mode 100644
+index 0000000000..c3b0ee109d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block24.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 24: unrecorded sites — the free-window and integrated-exterior readings differ exactly when an unrecorded component touches two recorded sites (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915`, independent PR against `main` at `df5316ee81`; parents on `main`: the possibility-covariance note of 2026-09-14 and block 01):** the note `docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py` (20 checks, 13 mutations, exact); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block24_unrecorded_sites.py`, `specs/supervisor_control_block24_refuter.py`); `GOAL_block24.md`; `CHECKER_block24_findings.md`; this record. Blocks 06–23 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8157.
++
++**Why this block.** The lane's queue was down to hard or incremental items and the other lanes are owned by the owner's live integration or by other workers; the campaign meta note names, as a hypothesis for investigation, the claim that unrecorded sites carry no law-level state. That hypothesis is an exact fork between two readings of the static law, decidable with the lane's tools.
++
++## Result, in one paragraph
++For the six-axis product rule `φ ∈ {p, q, r}` and the sphere rule `e^{βs·s'}` on a finite set `W` of recorded sites with a finite unrecorded exterior `E`: the integrated-exterior law `μ_W^{R2}` is the free-window law times one factor `F_C(v_{∂C})` per connected component `C` of `E`, and equals the average of the exterior-records laws `μ_W^{R3}(·|ω)` over the exterior's law (Q1). A component touching exactly one recorded site contributes a constant, because the rule is invariant under value rotations and the covariance group is transitive on the menu; so R1 = R2 whenever every component is pendant (Q2). A single unrecorded site touching two recorded sites contributes `φ² = Z_1²P_0 + (p−q)²P_odd + (p+q−2r)²P_even`, constant iff `p = q = r`; a bridging path of `k` internal bonds contributes `φ^{k+2}`; a general two-attachment factor is constant iff both its nontrivial isotypic eigenvalues vanish; the sphere's single-site factor is `4π sinh(β|v_x+v_y|)/(β|v_x+v_y|)`, strictly increasing in `v_x·v_y` (Q3). Exact witnesses: the plaquette with one unrecorded site on two adjacent corners has `TV(R1, R2) = 78621/4563820` at `(3,1,2)` (and `675203620/64463986907`, `221667/30063356` at `(5,2,4)`, `(2,1,2)`); the cube with its top face unrecorded, `9778807/1312253264`; two pendant components, `0` (Q4). The separating clause pair is recorded for the owner and not adopted; the lane's torus results are reading-independent, its exterior-records results cover R2 by averaging, and its free-window statements are R1 by declaration (Q5).
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 13 mutations each in its family; no floating-point literal or conversion; authors' names only in the allowed sections.
++- Refuting pass (`CHECKER_block24_findings.md`): the plaquette and cube witnesses by floating-point tensor contraction; one-attachment constancy on six random pendant components (relative spread `6·10^{−15}`); two-attachment nonconstancy on six random bridging components through the isotypic eigenvalues, with both vanishing at `p = q = r`; the sphere factor by quadrature at four values of `v_x·v_y`; the average identity in floats. No findings.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++Which reading the axioms intend; infinite unrecorded exteriors; the formation reading; any reading, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..8f89c64f62 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 24 — V1-V5 (supervisor, 2026-09-15)
++- V1: the campaign meta note's seam "record-process dynamics and unrecorded sites" ("the claim that unrecorded sites carry no law-level state is a hypothesis for investigation"); the window convention of blocks 12, 17, 20, 23.
++- V2: the lens pass in `GOAL_block24.md` ("elementary" — the content is the exact criterion and the campaign-format witness pair; "which reading do the axioms take" — neither is derived, the clause is recorded; "does the lane depend on the fork" — Q5 answers).
++- V3: Q1–Q5 proved; the skeleton executed exactly (20 checks, 13 mutations); the refuting pass agreed on five routes with no findings; a wording correction before the census.
++- V4: no reading, rule or coupling selected; the readings' intent not claimed; the formation reading not treated.
++- V5: consumers named — the campaign's decision record (the clause pair); #8093's assembly (readings of Record).
++
++## block 24 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block24.md`): as V2. Control: the eigenvalues, the `φ²` differences, the pendant and bridging factors, the three plaquette witnesses, the cube, the sphere factors, the forest (a `6^{12}` draft replaced by the plaquette). Primary: the note and the runner (20 checks, 13 mutations). Refuting pass (`CHECKER_block24_findings.md`): tensor contractions, random pendant and bridging components through the isotypic eigenvalues, quadrature, floats — no findings. Author checks only; independent review pending.
++
++## block 24 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, block 01's note, all on `main` at `df5316ee81`; nothing pinned from a branch or PR (open PRs are evidence addresses in Q5(b) only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings declared, neither adopted; the exact witnesses; the lane's convention audited; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f..06a6b19ce0 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -84,3 +84,8 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 24 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–23 are open PRs #8034, #8035, #8138–#8142, #8146–#8157)
++Searched commit: `origin/main` = `df5316ee81`.
++- `git grep -l -iE "unrecorded site|free window|integrated exterior|marginal on the window" origin/main -- 'docs/*.md'` → the campaign meta note (the seam); block 01 (the free-window static law); blocks 15–16 (recorded environments); nothing on the fork itself.
++Classification: **open after the matched-hit review.** Routes: U-A the factorization with value-covariance constancy (Q1–Q2) — chosen; U-B the spectral decomposition for two-attachment factors and the isotypic criterion (Q3) — chosen; U-C exact enumeration witnesses on the plaquette and the cube (Q4) — chosen; U-D a `3×3` window with pendants — infeasible at `6^{12}`, replaced; U-E infinite unrecorded exteriors (a second infinite-volume notion) — not attempted; U-F the formation reading's version of the fork — not attempted.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..41b20051b2 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,18 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 24 close (2026-09-15)
++# block: 24
++# branch: physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915 (independent; base origin/main df5316ee81; blocks 06-23 are open PRs #8034, #8035, #8138-#8142, #8146-#8157)
++# pr_status: opened for review — PR #8158 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8158); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes, no findings; gates: see HANDOFF.md"
++# seats: "supervisor-run: control (eigenvalues; factors; three plaquette witnesses; the cube; the sphere; the forest) -> contract with a lens pass -> primary (Q1-Q5, runner) -> refuting pass (tensor contractions; random pendant and bridging components; quadrature; floats) -> fold (a wording correction)"
++# review_findings: "unrecorded sites: R1 (free window) = R2 (integrated exterior) iff every unrecorded component touches one recorded site (value covariance + transitivity); bridges: phi^2 with sectors Z1^2, (p-q)^2, (p+q-2r)^2 (constant iff p = q = r), phi^{k+2} for paths, the isotypic criterion in general, the sphere's sinh z/z; exact TV witnesses on the plaquette-plus-site and the cube; the clause pair recorded, not adopted; the lane's torus results reading-free"
++# strongest_unresolved_proof_obligation: "which reading of Record the axioms intend (an owner decision, not a theorem); the lane's hard items (normalization; S6; X4)"
++# next_exact_action: "queue refresh 2026-09-15 (block 24 opening): the weak side's coefficient; the three-attachment criterion; normalization; X4/S6 — or a documented stop"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
++
++# ---------------------------------------------------------------- lane assessment after block 24 (2026-09-15)
++# assessment: "the lane's derivation frontier for the unsoldered sphere static law is complete at the theorem level (Z^3: unique < sqrt(3)/6, ordered with the Green-function channel > 76/100; planes and lines: never ordered, power-law bounded); the remaining items are hard (the kernel's normalization; S6; X4) or incremental (the weak side's coefficient needs a two-parameter supremum; the three-attachment criterion); the light/clock/gauge lanes are the owner's live integration and record-matter is another worker's; no further block launched without the owner's choice among: a stretch attempt on S6 (the formation law's ordered phase, Toom-type), the kernel's normalization, or entry into an owner-held lane on its corrected base"
++# lock: held until the owner's direction; refreshed 2026-09-15
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..0ff62c310b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 24, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the campaign meta note's seam on unrecorded sites: 'the claim that unrecorded sites carry no law-level state is a hypothesis for investigation'; the window convention of blocks 12, 17, 20 and 23"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the hypothesis is an exact fork: R1 = R2 iff every unrecorded component touches one recorded site; phi^2 and phi^{k+2} for bridges; exact witnesses on the plaquette (78621/4563820 at (3,1,2)) and the cube; the clause pair recorded for the owner; the lane's torus results reading-free and its exterior-records results covering R2. Consumers: the campaign's decision record; #8093's assembly"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.out.txt
+new file mode 100644
+index 0000000000..7985dab4a9
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.out.txt
+@@ -0,0 +1,11 @@
++R1 plaquette+site at (3, 1, 2): TV float = 0.017227016 vs exact 0.017227016: True
++R1 plaquette+site at (5, 2, 4): TV float = 0.010474121 vs exact 0.010474121: True
++R1 plaquette+site at (2, 1, 2): TV float = 0.007373329 vs exact 0.007373329: True
++R1 cube at (3,1,2): TV float = 0.007451921 vs exact 0.007451921
++R2 one-attachment factors on 6 random pendant components (2-4 sites, all bonds to the origin): constant to relative 6.1e-15: True
++R3 two-attachment factors on 6 random bridging components have a nonzero isotypic eigenvalue: True; at p = q = r both vanish: True
++R4 sphere two-attachment factor at v_x.v_y = -1.0: quadrature 12.566370614 closed form 12.566370614
++R4 sphere two-attachment factor at v_x.v_y = 0.0: quadrature 20.942726635 closed form 20.942726635
++R4 sphere two-attachment factor at v_x.v_y = 0.5: quadrature 26.225675565 closed form 26.225675565
++R4 sphere two-attachment factor at v_x.v_y = 1.0: quadrature 32.357110133 closed form 32.357110133
++R5 average identity on the plaquette+site: max |R2 - sum_omega mu(omega) R3(.|omega)| = 8.7e-19
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.py
+new file mode 100644
+index 0000000000..09caf12beb
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.py
+@@ -0,0 +1,111 @@
++"""Refuting pass, block 24 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) the plaquette-plus-site and cube witnesses by floating-point tensor contraction (numpy einsum) against the exact rationals;
++(R2) one-attachment constancy on random pendant components (random connected subsets of Z^3 of 2-4 sites attached to one recorded site
++     through all their bonds to it) at random positive weights: the factor's spread over the six values (should be ~1e-12 relative);
++(R3) two-attachment nonconstancy on random bridging components (attached to two recorded sites) at random positive weights, through the
++     isotypic eigenvalues lambda_odd, lambda_even of the factor as a 6x6 matrix; also the degenerate rule p = q = r (both vanish);
++(R4) the sphere factor 4 pi sinh(beta|w|)/(beta|w|) by quadrature at v_x.v_y in {-1, 0, 1/2, 1} (at -1 the factor is 4 pi);
++(R5) the average identity mu_W^R2 = sum_omega mu(omega) mu_W^R3(.|omega) on the plaquette-plus-site in floats."""
++import math
++import random
++from fractions import Fraction as F
++from itertools import product
++
++import numpy as np
++
++random.seed(24); np.random.seed(24)
++M = [(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]
++def rel(v, w):
++    if v == w: return 0
++    if tuple(-c for c in v) == w: return 1
++    return 2
++def phi_mat(p, q, r):
++    return np.array([[ [p, q, r][rel(v, w)] for w in M] for v in M], dtype=float)
++# R1 plaquette + site: sites c0..c3 ring, x adjacent to c0, c1
++def tv(a, b): return 0.5 * np.abs(a - b).sum()
++for pqr, exact in (((3,1,2), F(78621, 4563820)), ((5,2,4), F(675203620, 64463986907)), ((2,1,2), F(221667, 30063356))):
++    A = phi_mat(*pqr)
++    ring = np.einsum("ab,bc,cd,da->abcd", A, A, A, A)
++    R1 = ring / ring.sum()
++    withx = np.einsum("abcd,ax,bx->abcd", ring, A, A)
++    R2 = withx / withx.sum()
++    print(f"R1 plaquette+site at {pqr}: TV float = {tv(R1, R2):.9f} vs exact {float(exact):.9f}: {abs(tv(R1,R2) - float(exact)) < 1e-9}")
++A = phi_mat(3, 1, 2)
++bottom = np.einsum("ab,bc,cd,da->abcd", A, A, A, A)
++top = np.einsum("ab,bc,cd,da->abcd", A, A, A, A)
++full = np.einsum("abcd,efgh,ae,bf,cg,dh->abcd", bottom, top, A, A, A, A)
++print(f"R1 cube at (3,1,2): TV float = {tv(bottom/bottom.sum(), full/full.sum()):.9f} vs exact {float(F(9778807, 1312253264)):.9f}")
++# R2 / R3 random components
++def neighbors(s):
++    for d in range(3):
++        for e in (1, -1):
++            y = list(s); y[d] += e; yield tuple(y)
++def random_component(n):
++    comp = {(1, 0, 0)}
++    while len(comp) < n:
++        s = random.choice(sorted(comp)); y = random.choice(list(neighbors(s)))
++        if y != (0, 0, 0) and y not in comp: comp.add(y)
++    return sorted(comp)
++def factor(comp, attach, A):
++    # attach: dict recorded-site -> list of comp sites adjacent; returns array over recorded values (6^len(attach))
++    sites = comp; idx = {s: i for i, s in enumerate(sites)}
++    bonds = [(idx[s], idx[y]) for s in sites for y in neighbors(s) if y in idx and idx[s] < idx[y]]
++    rec = sorted(attach)
++    out = np.zeros([6] * len(rec))
++    for vals in product(range(6), repeat=len(rec)):
++        tot = 0.0
++        for u in product(range(6), repeat=len(sites)):
++            w = 1.0
++            for a, b in bonds: w *= A[u[a], u[b]]
++            for k, x in enumerate(rec):
++                for a in attach[x]: w *= A[vals[k], u[idx[a]]]
++            tot += w
++        out[vals] = tot
++    return out
++ok2 = True; worst = 0.0
++for trial in range(6):
++    n = random.randint(2, 4); comp = random_component(n)
++    pqr = tuple(random.uniform(0.5, 3) for _ in range(3)); A = phi_mat(*pqr)
++    att = {(0, 0, 0): [s for s in comp if (0, 0, 0) in neighbors(s)]}
++    f = factor(comp, att, A)
++    spread = (f.max() - f.min()) / f.mean(); worst = max(worst, spread); ok2 = ok2 and spread < 1e-10
++print(f"R2 one-attachment factors on 6 random pendant components (2-4 sites, all bonds to the origin): constant to relative {worst:.1e}: {ok2}")
++def isotypic(Fm):
++    ones = np.ones(6) / math.sqrt(6)
++    P0 = np.outer(ones, ones)
++    odd = np.zeros((6, 6)); 
++    for i in range(3): odd[2*i, 2*i] = odd[2*i+1, 2*i+1] = 0.5; odd[2*i, 2*i+1] = odd[2*i+1, 2*i] = -0.5
++    Peven = np.eye(6) - P0 - odd
++    lo = np.trace(Fm @ odd) / 3; le = np.trace(Fm @ Peven) / 2
++    return lo, le
++ok3 = True
++for trial in range(6):
++    # bridging component between x = origin and y = (2,0,0) (distance 2): a path through (1,0,0) plus random extra sites
++    comp = {(1, 0, 0)}
++    while len(comp) < random.randint(1, 3):
++        s = random.choice(sorted(comp)); yv = random.choice(list(neighbors(s)))
++        if yv not in ((0, 0, 0), (2, 0, 0)) and yv not in comp: comp.add(yv)
++    comp = sorted(comp)
++    pqr = tuple(random.uniform(0.5, 3) for _ in range(3)); A = phi_mat(*pqr)
++    att = {(0, 0, 0): [s for s in comp if (0, 0, 0) in neighbors(s)], (2, 0, 0): [s for s in comp if (2, 0, 0) in neighbors(s)]}
++    f = factor(comp, att, A)
++    lo, le = isotypic(f)
++    ok3 = ok3 and (abs(lo) + abs(le)) > 1e-8 * f.mean()
++A = phi_mat(1.7, 1.7, 1.7); f = factor([(1, 0, 0)], {(0, 0, 0): [(1, 0, 0)], (2, 0, 0): [(1, 0, 0)]}, A); lo, le = isotypic(f)
++print(f"R3 two-attachment factors on 6 random bridging components have a nonzero isotypic eigenvalue: {ok3}; at p = q = r both vanish: {abs(lo) < 1e-12 and abs(le) < 1e-12}")
++nodes, weights = np.polynomial.legendre.leggauss(200)
++beta = 1.3
++for t in (-1.0, 0.0, 0.5, 1.0):
++    w = math.sqrt(max(0.0, 2 + 2 * t))
++    quad = 2 * math.pi * sum(wt * math.exp(beta * w * s) for s, wt in zip(nodes, weights))
++    closed = 4 * math.pi * (math.sinh(beta * w) / (beta * w) if w > 0 else 1.0)
++    print(f"R4 sphere two-attachment factor at v_x.v_y = {t}: quadrature {quad:.9f} closed form {closed:.9f}")
++A = phi_mat(3, 1, 2)
++ring = np.einsum("ab,bc,cd,da->abcd", A, A, A, A)
++joint = np.einsum("abcd,ax,bx->abcdx", ring, A, A); joint /= joint.sum()
++R2 = joint.sum(axis=4)
++mix = np.zeros_like(R2)
++for x in range(6):
++    cond = joint[..., x] / joint[..., x].sum()
++    mix += joint[..., x].sum() * cond
++print(f"R5 average identity on the plaquette+site: max |R2 - sum_omega mu(omega) R3(.|omega)| = {np.abs(R2 - mix).max():.1e}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.out.txt
+new file mode 100644
+index 0000000000..ed78f8df19
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.out.txt
+@@ -0,0 +1,11 @@
++(a) eigenvalues of phi: {p + q + 4*r: 1, p + q - 2*r: 2, p - q: 3}
++(a) phi^2 same-entry minus orth-entry = p**2 - 2*p*r + q**2 - 2*q*r + 2*r**2 ; anti minus orth = 2*(p - r)*(q - r)
++(a) constant iff p = q = r: [{p: r, q: r}]
++(b) one-attachment factor over v_b: {144} (constant: True )
++(b) two-attachment factor values by relation: {'same': 292, 'anti': 284, 'orth': 288} (constant: False )
++(c) plaquette + one exterior site on corners c0,c1 at (3, 1, 2): TV(R1,R2) = 78621/4563820 = 0.01723
++(c) plaquette + one exterior site on corners c0,c1 at (5, 2, 4): TV(R1,R2) = 675203620/64463986907 = 0.01047
++(c) plaquette + one exterior site on corners c0,c1 at (2, 1, 2): TV(R1,R2) = 221667/30063356 = 0.00737
++(d) cube, face vs opposite face integrated out at (3,1,2): TV = 9778807/1312253264 = 0.00745
++(e) sphere one-attachment factor: 4*pi*sinh(beta)/beta (no v-dependence); two-attachment factor derivative in t at t = 0: pi*(2*beta*cosh(sqrt(2)*beta) - sqrt(2)*sinh(sqrt(2)*beta))/beta
++(f) plaquette with two pendant exterior components at (2,1,2): TV(R1,R2) = 0
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.py
+new file mode 100644
+index 0000000000..08a99142e0
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.py
+@@ -0,0 +1,85 @@
++"""Control, block 24 (supervisor): unrecorded sites — the free-window reading (R1) versus the integrated-exterior reading (R2).
++Six-axis menu M = {+-e_i}, product rule phi(v,v') = p (same), q (antipodal), r (orthogonal).
++(a) one exterior site adjacent to two recorded sites: the effective factor is phi^2(v1, v2); its nontrivial eigenvalues (p-q)^2, (p+q-2r)^2;
++    constant iff p = q = r (symbolic);
++(b) one attachment: an exterior path of two sites hanging off one recorded site b: the factor is constant in v_b (exact, any (p,q,r) sample);
++    two attachments: an exterior path of two sites bridging b1, b2: nonconstant (exact);
++(c) the plaquette W (4 sites) plus one exterior site adjacent to two adjacent corners: exact TV distance between R1 and R2 at (3,1,2), (5,2,4), (2,1,2);
++(d) the 2x2x2 cube: W = a face, E = the opposite face (connected, attached to all four W-sites): TV(R1, R2) at (3,1,2);
++(e) the sphere rule e^{beta s.s'}: one attachment factor 4 pi sinh(beta)/beta (constant); two attachments through one site: 4 pi sinh(beta|v1+v2|)/(beta|v1+v2|)
++    with |v1+v2|^2 = 2 + 2 v1.v2 — nonconstant (symbolic derivative in t = v1.v2 nonzero);
++(f) a forest of one-attachment components on a 3x3 window: R1 = R2 exactly."""
++from fractions import Fraction as F
++from itertools import product
++import sympy as sp
++M = [(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]
++def rel(v, w):
++    if v == w: return "same"
++    if tuple(-c for c in v) == w: return "anti"
++    return "orth"
++def phi(v, w, p, q, r):
++    return {"same": p, "anti": q, "orth": r}[rel(v, w)]
++p, q, r = sp.symbols("p q r", positive=True)
++Phi = sp.Matrix(6, 6, lambda i, j: phi(M[i], M[j], p, q, r))
++ev = Phi.eigenvals()
++print("(a) eigenvalues of phi:", {sp.simplify(k): v for k, v in ev.items()})
++Phi2 = Phi * Phi
++diff = sp.simplify(Phi2[0, 0] - Phi2[0, 2])  # same vs orthogonal entry of phi^2
++print("(a) phi^2 same-entry minus orth-entry =", sp.factor(diff), "; anti minus orth =", sp.factor(sp.simplify(Phi2[0, 1] - Phi2[0, 2])))
++print("(a) constant iff p = q = r:", sp.solve([sp.simplify(Phi2[0,0]-Phi2[0,2]), sp.simplify(Phi2[0,1]-Phi2[0,2])], [p, q], dict=True))
++def weight_sum(bonds, fixed, free_sites, pv):
++    # sum over records on free_sites of the product of phi over bonds (integer weights)
++    tot = 0
++    for u in product(range(6), repeat=len(free_sites)):
++        rec = dict(fixed); rec.update({s: M[k] for s, k in zip(free_sites, u)})
++        w = 1
++        for a, b in bonds:
++            w *= phi(rec[a], rec[b], *pv)
++        tot += w
++    return tot
++pv = (3, 1, 2)
++# (b) one attachment: b - u1 - u2 ; two attachments: b1 - u1 - u2 - b2
++one = {v: weight_sum([("b","u1"),("u1","u2")], {"b": v}, ["u1","u2"], pv) for v in M}
++print("(b) one-attachment factor over v_b:", set(one.values()), "(constant:", len(set(one.values())) == 1, ")")
++two = {(v1, v2): weight_sum([("b1","u1"),("u1","u2"),("u2","b2")], {"b1": v1, "b2": v2}, ["u1","u2"], pv) for v1 in M for v2 in M}
++print("(b) two-attachment factor values by relation:", {k: two[(M[0], M[j])] for k, j in (("same",0),("anti",1),("orth",2))}, "(constant:", len(set(two.values())) == 1, ")")
++# (c) plaquette + one exterior site adjacent to corners c0, c1
++def law(bonds, sites, pv):
++    Z = 0; wts = {}
++    for u in product(range(6), repeat=len(sites)):
++        rec = {s: M[k] for s, k in zip(sites, u)}
++        w = 1
++        for a, b in bonds: w *= phi(rec[a], rec[b], *pv)
++        wts[u] = w; Z += w
++    return {k: F(v, Z) for k, v in wts.items()}
++def marginal(lawd, sites, keep):
++    idx = [sites.index(s) for s in keep]
++    out = {}
++    for u, w in lawd.items():
++        key = tuple(u[i] for i in idx); out[key] = out.get(key, F(0)) + w
++    return out
++def tv(a, b):
++    keys = set(a) | set(b); return sum(abs(a.get(k, F(0)) - b.get(k, F(0))) for k in keys) / 2
++W = ["c0","c1","c2","c3"]; Wb = [("c0","c1"),("c1","c2"),("c2","c3"),("c3","c0")]
++for pvv in ((3,1,2), (5,2,4), (2,1,2)):
++    R1 = law(Wb, W, pvv)
++    R2 = marginal(law(Wb + [("c0","x"),("c1","x")], W + ["x"], pvv), W + ["x"], W)
++    d = tv(R1, R2)
++    print(f"(c) plaquette + one exterior site on corners c0,c1 at {pvv}: TV(R1,R2) = {d} = {float(d):.5f}")
++# (d) cube: W = bottom face f0..f3, E = top face t0..t3
++Wc = ["f0","f1","f2","f3"]; Ec = ["t0","t1","t2","t3"]
++Wcb = [("f0","f1"),("f1","f2"),("f2","f3"),("f3","f0")]
++Eb = [("t0","t1"),("t1","t2"),("t2","t3"),("t3","t0")] + [(f"f{i}", f"t{i}") for i in range(4)]
++R1 = law(Wcb, Wc, pv); R2 = marginal(law(Wcb + Eb, Wc + Ec, pv), Wc + Ec, Wc)
++print(f"(d) cube, face vs opposite face integrated out at (3,1,2): TV = {tv(R1,R2)} = {float(tv(R1,R2)):.5f}")
++# (e) sphere
++beta, t = sp.symbols("beta t", positive=True)
++one_s = 4 * sp.pi * sp.sinh(beta) / beta
++two_s = 4 * sp.pi * sp.sinh(beta * sp.sqrt(2 + 2 * t)) / (beta * sp.sqrt(2 + 2 * t))
++print("(e) sphere one-attachment factor:", one_s, "(no v-dependence); two-attachment factor derivative in t at t = 0:", sp.simplify(sp.diff(two_s, t).subs(t, 0)))
++# (f) forest of one-attachment components on the plaquette: a pendant path p1-p2 off c0 and a pendant site p3 off c2
++pend = [("c0","p1"),("p1","p2"),("c2","p3")]
++sites = W + ["p1", "p2", "p3"]
++R1 = law(Wb, W, (2, 1, 2))
++R2 = marginal(law(Wb + pend, sites, (2, 1, 2)), sites, W)
++print(f"(f) plaquette with two pendant exterior components at (2,1,2): TV(R1,R2) = {tv(R1,R2)}")
+diff --git a/docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000..6114b13d50
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,203 @@
++---
++claim_id: admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_differ_iff_an_unrecorded_component_touches_two_recorded_sites_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "For the static law of a covariant nearest-neighbour rule with value-only covariance — the six-axis product rule phi in {p, q, r} (same, antipodal, orthogonal; positive) and the sphere rule exp(beta s.s') — on a finite set W of recorded sites with a finite set E of unrecorded sites adjacent to it, comparing the free-window reading R1 (the law is normalized over the recorded sites only) with the integrated-exterior reading R2 (every site's possibilities enter; records lock, unrecorded sites are summed) and the exterior-records reading R3 (the exterior records held): (Q1) mu_W^R2 is proportional to the W-bond product times a factor F_C(v_{partial C}) for each connected component C of E, and mu_W^R2 is the average of mu_W^R3(.|omega) over the exterior's law (proved; executed); (Q2) a component touching exactly one recorded site contributes a constant factor, by value covariance and the transitivity of the covariance group on the menu, so R1 = R2 whenever every component of E touches one recorded site (proved; executed symbolically for pendant paths and exactly on a plaquette with two pendant components); (Q3) a single unrecorded site touching two recorded sites contributes phi^2(v_x, v_y) = Z_1^2 P_0 + (p-q)^2 P_odd + (p+q-2r)^2 P_even, constant iff p = q = r; a path of k internal bonds contributes phi^{k+2}; in general a two-attachment factor is constant iff both of its nontrivial isotypic eigenvalues vanish; for the sphere rule the single-site factor is 4 pi sinh(beta|v_x+v_y|)/(beta|v_x+v_y|), strictly increasing in v_x . v_y (proved; executed); (Q4) exact witnesses: on the plaquette with one unrecorded site adjacent to two adjacent corners TV(R1, R2) = 78621/4563820 at (3,1,2), 675203620/64463986907 at (5,2,4), 221667/30063356 at (2,1,2); on the cube with its top face unrecorded TV = 9778807/1312253264 at (3,1,2); with two pendant components TV = 0 (executed); (Q5) the separating clause pair is recorded for the owner and not adopted; every result of this lane on tori is reading-independent, every window result stated uniformly in exterior records holds under R2 by averaging, and free-window statements are R1 by declaration (proved). No reading, rule or coupling is selected; exact arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14
++  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
++runner: scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py
++---
++
++# Unrecorded sites: the free-window and integrated-exterior readings of the static law differ exactly when an unrecorded component touches two recorded sites — an exact criterion, exact witnesses on the plaquette and the cube, and the separating clause recorded
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++
++## Result up front
++
++The campaign's meta note lists, as a hypothesis for investigation rather than
++a reading, the claim that unrecorded sites carry no law-level state. Two
++readings of the static law of a set of records are then on the table. Under
++the free-window reading (R1), the law is the product of the rule's bond
++weights over the recorded sites alone. Under the integrated-exterior reading
++(R2), every site has its domain of possibilities, a record locks one of them,
++and the possibilities of unrecorded sites are summed out. This note settles
++when the two agree, exactly, for the lane's rules.
++
++They agree unless some connected set of unrecorded sites touches two
++recorded sites. An unrecorded component attached to a single recorded site
++contributes a factor that is constant, because the rule is invariant under
++rotations of the values and the covariance group moves any value to any other;
++a constant factor disappears in the normalization. An unrecorded site
++attached to two recorded sites contributes the matrix square of the rule,
++`φ²`, which is a constant matrix only when the rule is constant; a path of
++unrecorded sites contributes a higher power, with the same conclusion; and the
++general two-attachment factor is constant exactly when its two nontrivial
++isotypic eigenvalues vanish. The differences are exact rationals on small
++windows: on the plaquette with one unrecorded site adjacent to two adjacent
++corners the two laws differ by `78621/4563820` in total variation at
++`(3, 1, 2)`; on the cube with its top face unrecorded, by
++`9778807/1312253264`; with pendant components only, by `0`.
++
++Two models satisfying every axiom sentence used, differing on a named target:
++the campaign's witness format. The separating clause pair — "a site without a
++record contributes no factor to the law" against "every site's admissible
++possibilities enter the law" — is recorded for the owner and not adopted.
++For this lane the fork is harmless: results on tori have no exterior, and the
++window results were stated uniformly in the exterior records, which covers
++the integrated reading by averaging.
++
++Exactly: Q1 (factorization and the average identity); Q2 (one attachment:
++constant); Q3 (two attachments: `φ²`, `φ^{k+2}`, the eigenvalue criterion;
++the sphere factor); Q4 (the witnesses); Q5 (the clause and the lane).
++Executed with exact arithmetic: 20 checks, 13 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the derivation campaign's seam 'record-process dynamics and unrecorded sites' (the meta note of 2026-09-13): 'the claim that unrecorded sites carry no law-level state is a hypothesis for investigation, not an adopted reading or a theorem'; the window convention of blocks 12, 17, 20 and 23"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the hypothesis is now an exact fork: the free-window and integrated-exterior readings coincide iff every unrecorded component touches one recorded site; exact witnesses on the plaquette and the cube; the clause pair recorded for the owner. The lane's torus results are reading-independent and its window results cover the integrated reading by averaging. Consumers: the campaign's decision record; #8093's assembly (readings of Record)"
++conditional_surface_status: "Q1-Q5 proved for the six-axis product rule with positive weights and for the sphere rule, on finite sets of recorded sites with finite unrecorded exteriors; the skeleton executed exactly (the spectral decomposition, the constancy criterion, pendant paths symbolically, three plaquette witnesses, the cube witness, the forest, the average identity, the sphere factors); conditional on the static reading of block 01 and on the two readings as declared; no reading adopted"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++```
++
++## Premises and declared objects
++
++The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "Each site has a domain of local possibilities.", "No possibility is privileged.", "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", "A site with no record cannot be read.", and "A state is a configuration of records.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the static reading of a finite set of records: the normalized product of the rule's bond weights (its free-window form is R1 below). The landed possibility-covariance note (`docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md`, section "Empty-neighbourhood sphere laws") supplies the sphere as a possibility domain and the unsoldered reading. The campaign meta note (`docs/TOE_DERIVATION_CAMPAIGN_AXIOM_SUFFICIENCY_BY_UNDERDETERMINATION_WITNESSES_NOTE_2026-09-13.md`, on `main`) names the seam and the witness format. All proposed and unaudited.
++
++Declared objects.
++- **Menus and rules.** The six-axis menu `M = {±e_1, ±e_2, ±e_3}` with the product rule `φ(v, v') = p` if `v = v'`, `q` if `v = −v'`, `r` otherwise (`p, q, r > 0`); the sphere `S²` with `φ(s, s') = e^{β s·s'}`, `β > 0`, and the uniform measure `dσ`. Both rules have **value-only covariance**: `φ(gv, gv') = φ(v, v')` for every `g` in the covariance group `G` (`O`, the 24 proper cube rotations, on `M`; `SO(3)` on `S²`), which acts transitively on the menu.
++- **Sites.** A finite set `W` of recorded sites and a finite set `E` of unrecorded sites, with the nearest-neighbour graph of `Z³` restricted to `W ∪ E`; the connected components `C` of the graph induced on `E`; `∂C = {x ∈ W : x ~ a for some a ∈ C}` (the recorded sites `C` touches).
++- **The three readings.** `μ_W^{(1)}(v) = Z_1^{−1} Π_{⟨xy⟩ ⊂ W} φ(v_x, v_y)` (R1, free window); `μ_{W∪E}(v, u) = Z^{−1} Π_{⟨ab⟩ ⊂ W∪E} φ` and `μ_W^{(2)}` its marginal on `W` (R2, integrated exterior); `μ_W^{(3)}(v | ω) = Z(ω)^{−1} Π_{⟨xy⟩⊂W} φ(v_x, v_y) Π_{x ∈ W, a ∈ E, x ~ a} φ(v_x, ω_a)` (R3, exterior records `ω` held; the object of blocks 17 and 23).
++- **The effective factor.** `F_C(v_{∂C}) = Σ_{u ∈ M^C} Π_{⟨ab⟩ ⊂ C} φ(u_a, u_b) Π_{x ∈ ∂C, a ∈ C, x ~ a} φ(v_x, u_a)` (an integral against `dσ^C` on the sphere).
++- **The spectral sectors of `φ` on `M`.** `P_0` the projector onto constants; `P_odd` onto odd functions (`f(−v) = −f(v)`, dimension `3`); `P_even` onto even functions with zero sum (dimension `2`); `Z_1 = p + q + 4r`.
++- **Total variation.** `TV(μ, ν) = (1/2)Σ_v |μ(v) − ν(v)|`.
++
++## Prior art and what is new
++
++That integrating out a pendant subtree of a Markov random field leaves the marginal unchanged, and that a bridging subgraph induces an effective interaction, is classical (the marginalization of Gibbs fields; the Markov property). Blocks 15 and 16 treated *recorded* environments; block 01 declared the free-window static law; blocks 17 and 23 worked with exterior records held. What is new here: (i) the campaign's hypothesis about unrecorded sites turned into an exact fork with a graph criterion, for the lane's two rules, with the constancy of one-attachment factors proved from value covariance and transitivity rather than from a Markov property; (ii) the exact algebra of two-attachment factors on the six-axis menu (`φ²`, `φ^{k+2}`, the isotypic criterion) and the sphere's closed form; (iii) exact witnesses in the campaign's format, with the clause pair recorded; (iv) the audit of the lane's own window convention against the fork.
++
++## Exact target and obligation graph
++
++| Obligation | Statement | Route | Runner family |
++|---|---|---|---|
++| Q1 | factorization over components; R2 is the R3-average | the product form | D |
++| Q2 | one attachment ⇒ constant factor; R1 = R2 for pendant exteriors | value covariance; transitivity | B, D |
++| Q3 | two attachments: `φ²`, `φ^{k+2}`, the isotypic criterion; the sphere factor | the spectral decomposition; the sphere integral | B, C, E |
++| Q4 | exact witnesses on the plaquette, the cube, the forest | enumeration | D |
++| Q5 | the clause pair; the lane's convention | Q1–Q4 | — |
++
++## Theorem Q1 — factorization and the average identity
++
++**Statement.** `μ_W^{(2)}(v) = Z^{−1} Π_{⟨xy⟩ ⊂ W} φ(v_x, v_y) Π_C F_C(v_{∂C})`, the product over the connected components `C` of `E`; and `μ_W^{(2)} = Σ_ω μ_{W∪E}(u = ω) μ_W^{(3)}(· | ω)`, the sum over the exterior configurations weighted by their marginal law.
++
++**Proof.** A bond of `W ∪ E` lies within `W`, within a single component of `E` (two adjacent unrecorded sites are in the same component), or between `W` and a component. Summing `Π φ` over `u ∈ M^E = Π_C M^C` therefore factorizes into the `W`-bond product times `Π_C F_C`, and `F_C` depends on `v` only through `v_{∂C}`. The average identity is the definition of the conditional law: `μ_{W∪E}(v, ω) = μ_{W∪E}(ω) μ_W^{(3)}(v | ω)`, since the conditional density of `v` given `u = ω` is the `W`-bond product times the `W–E` factors with `u = ω`, normalized. ∎ (Executed on the plaquette with one unrecorded site: D4.)
++
++## Theorem Q2 — one attachment gives a constant factor
++
++**Statement.** If `∂C = {b}` (the component touches exactly one recorded site, through any number of bonds), then `F_C(v_b)` does not depend on `v_b`. Consequently `μ_W^{(2)} = μ_W^{(1)}` whenever every component of `E` touches exactly one recorded site.
++
++**Proof.** For `g ∈ G`, `F_C(g v_b) = Σ_u Π_{⟨ab⟩⊂C} φ(u_a, u_b) Π_{a ~ b} φ(g v_b, u_a)`. Substitute `u_a = g u'_a` for every `a ∈ C` (a bijection of `M^C`; on the sphere the invariant measure `dσ^C` is preserved): by value-only covariance every factor returns to `φ(u'_a, u'_{a'})` or `φ(v_b, u'_a)`, so `F_C(g v_b) = F_C(v_b)`. `G` is transitive on the menu, so `F_C` is constant. A constant factor cancels between numerator and normalization in Q1. ∎ (Executed: the factor of a pendant path of two and of three unrecorded sites, symbolically in `p, q, r`, is the same polynomial for all six values of `v_b`; the plaquette with two pendant components has `TV(R1, R2) = 0` exactly at `(2, 1, 2)`: B4, D3.)
++
++*Remark.* The soldered reading acts on sites and values jointly; the argument uses only invariance of `φ` under value rotations, which the lane's rules have (the pair relation same/antipodal/orthogonal, and `s·s'`, are invariant).
++
++## Theorem Q3 — two attachments
++
++**Statement.** (a) *Spectral decomposition.* On functions on `M`, `φ = Z_1 P_0 + (p − q) P_odd + (p + q − 2r) P_even`. (b) *One unrecorded site.* If `C = {a}` and `∂C = {x, y}`, then `F_C(v_x, v_y) = (φ²)(v_x, v_y) = Z_1² P_0 + (p−q)² P_odd + (p+q−2r)² P_even`, which is a constant matrix if and only if `p = q = r`; explicitly `φ²_{same} − φ²_{orth} = (p−r)² + (q−r)²` and `φ²_{anti} − φ²_{orth} = 2(p−r)(q−r)`. (c) *A path.* If `C` is a path of `k` internal bonds whose end sites attach to `x` and `y` respectively, `F_C = φ^{k+2}`, constant iff `p = q = r`. (d) *In general.* For `∂C = {x, y}`, `F_C` is `G`-covariant, hence `F_C = λ_0 P_0 + λ_odd P_odd + λ_even P_even` as a matrix in `(v_x, v_y)`, and it is constant iff `λ_odd = λ_even = 0`; when `x` and `y` attach to distinct sites `a ≠ b` of `C` through single bonds, `F_C = φ T φ` with `T(u_a, u_b)` the weight of `C` with `u_a, u_b` held, itself `G`-covariant with sectors `τ_0, τ_odd, τ_even`, so `λ_odd = (p−q)² τ_odd` and `λ_even = (p+q−2r)² τ_even`. (e) *The sphere.* For `C = {a}`, `∂C = {x, y}`: `F_C = 4π sinh(β|v_x + v_y|)/(β|v_x + v_y|)` with `|v_x + v_y|² = 2 + 2 v_x·v_y`, strictly increasing in `v_x·v_y`; for `∂C = {b}` it is `4π sinh β/β`.
++
++**Proof.** (a) For `f` on `M`, `(φf)(v) = p f(v) + q f(−v) + r Σ_{v' ⊥ v} f(v')`. If `f` is odd, `Σ_{v'⊥v} f(v') = 0` (the four orthogonal values come in antipodal pairs), so `φf = (p − q)f`. If `f` is even with zero sum, `Σ_{v'⊥v} f(v') = Σ_{all} f − f(v) − f(−v) = −2f(v)`, so `φf = (p + q − 2r)f`. Constants are eigenvectors with `Z_1`. The three sectors span all functions (dimensions `1 + 3 + 2`). (b) `F_C(v_x, v_y) = Σ_u φ(v_x, u)φ(u, v_y) = (φ²)(v_x, v_y)` since `φ` is symmetric; squaring the decomposition gives the sectors; a matrix `λ_0 P_0 + λ_odd P_odd + λ_even P_even` is constant (a multiple of `P_0`) iff `λ_odd = λ_even = 0`, i.e. `(p−q)² = 0 = (p+q−2r)²`, i.e. `p = q = r`; the entry differences follow by expanding `φ²` (executed). (c) The factor is the matrix product of `k + 2` copies of `φ`, with eigenvalues the `(k+2)`-th powers. (d) `F_C(gv_x, gv_y) = F_C(v_x, v_y)` by the substitution of Q2, so `F_C` commutes with the action of `G`; the commutant of a representation decomposing into three inequivalent irreducibles (the trivial, the odd three-dimensional and the even two-dimensional sectors, inequivalent by their dimensions and the trivial one's character) is spanned by the three projectors; the rest is (b)'s argument with `T` in place of the middle factor. (e) `∫ e^{β u·w} dσ(u) = 4π sinh(β|w|)/(β|w|)` for `w ≠ 0` (polar coordinates about `w`; `2π∫_{−1}^{1} e^{β|w|t} dt`), applied to `w = v_x + v_y` and to `w = v_b`; `sinh z/z` is strictly increasing on `z > 0` because `(sinh z/z)' = (z cosh z − sinh z)/z²` and `z cosh z − sinh z = Σ_{n≥1} 2n z^{2n+1}/(2n+1)! > 0`. ∎
++
++Executed: the three eigenvalues with explicit eigenvectors, the entry differences and the constancy criterion (B1–B2); the path powers for `k ≤ 3` (B3); the sphere factors and the series positivity (C1–C2); two single-site components attached to the same pair of recorded sites (the two unrecorded corners of a plaquette), whose combined factor is the entrywise square of `φ²` and is nonconstant unless `p = q = r` (E1).
++
++## Theorem Q4 — the witnesses
++
++**Statement.** Exact values of `TV(μ_W^{(1)}, μ_W^{(2)})`: (a) `W` a plaquette, `E` one site adjacent to two adjacent corners: `78621/4563820` at `(3, 1, 2)`, `675203620/64463986907` at `(5, 2, 4)`, `221667/30063356` at `(2, 1, 2)`; (b) `W` the bottom face of the unit cube, `E` its top face (a four-cycle touching all four recorded sites): `9778807/1312253264` at `(3, 1, 2)`; (c) `W` a plaquette, `E` a pendant path of two sites off one corner and a pendant site off the opposite corner: `0` at `(2, 1, 2)`.
++
++**Proof.** Enumeration of `M^{W∪E}` with integer weights and exact rational normalization; (c) is Q2. ∎ (D1–D3.)
++
++## Corollary Q5 — the clause pair and the lane's convention
++
++**Statement.** (a) The two readings are two models satisfying every axiom sentence quoted under Premises and differing on the named target (the law on `W`) by the exact amounts of Q4; their separating clause pair, recorded for the owner and not adopted, is: (R1) "The static law of a configuration of records is normalized over the recorded sites alone; a site without a record contributes no factor." against (R2) "Every site's admissible possibilities enter the static law; a record locks one of them, and the possibilities of a site without a record are summed." Neither is derived from the quoted sentences: "Each site has a domain of local possibilities" applies to every site, "A state is a configuration of records" names the records alone, and "A site with no record cannot be read" concerns readout, not the law. (b) For this lane: results proved on tori (blocks 19–23) involve no exterior and are reading-independent; results proved uniformly in the exterior records (blocks 17 and 23) hold under R2 by Q1's average identity; results declared on free windows (blocks 01, 05, 12) are R1 statements; and R1 = R2 for every window whose unrecorded surroundings are pendant components (Q2).
++
++**Proof.** (a) is Q1–Q4 with the sentences quoted; (b) is Q1(second part) and Q2 applied to the cited blocks' objects. ∎
++
++*Not claimed.* Which reading the axioms intend; any global (infinite-exterior) form of R2 beyond the finite `E` declared; anything about the formation reading, where the recorded set grows and the fork takes a different form (block 15's environments are R3 objects).
++
++## No-Go Discipline Gate
++
++The negative sentence is Q4 with Q3: the two readings are not the same law on any window whose unrecorded surroundings contain a component touching two recorded sites, for every non-constant rule. Escapes named: the constant rule `p = q = r` (where every factor is constant); pendant exteriors (Q2); the formation reading (not treated).
++
++### N1 — Routes by which the negative could fail
++1. *The one-attachment argument also kills two-attachment factors* — closed: it uses transitivity on a single value; with two values the orbit of the pair is not a single point, and `φ²` is nonconstant (B2).
++2. *A cancellation between components* — closed: the factors multiply and each is a function of its own `∂C` (Q1).
++3. *The plaquette witness is a degenerate triple* — closed: three triples executed, including `(3,1,2)` where `p + q = 2r` kills the even sector but not the odd one (D1).
++4. *The cube's four-cycle exterior might contribute a constant* — closed: `TV > 0` exactly (D2).
++5. *The constant rule; pendant exteriors; the formation reading* — escapes, named above.
++
++### N2 — Wall-independence audit
++No no-go wall of the repository is used.
++
++### N3 — Hidden-wall scan
++No hidden dependence: the inputs are the axioms' sentences, block 01's static reading, the parent note's sphere law, and the meta note's seam.
++
++### N4 — Per-citation table
++| Citation | Role | Load-bearing? |
++|---|---|---|
++| `minimal_axioms` | the seven sentences under Premises | yes (premise) |
++| block 01 (`main`) | the static reading; R1 | yes (premise, proposed) |
++| the possibility-covariance note (`main`) | the sphere domain and reading | yes for Q3(e) (premise, proposed) |
++| the campaign meta note (`main`) | the seam and the witness format | framing only |
++| blocks 15–17, 19–23 (open PRs) | the lane's window convention audited in Q5(b) | Q5(b) only (evidence addresses) |
++
++### N5 — Resolution audit
++| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
++|---|---|---|---|---|---|
++| "R1 ≠ R2 iff an unrecorded component touches two recorded sites" | executed: the spectral decomposition with eigenvectors; `φ²`'s entry differences; the path powers; the sphere integrals and the series | executed: pendant paths of two and three sites symbolically for all six values | executed: the two unrecorded corners' entrywise square of `φ²` | executed: the plaquette at three triples, the cube, the forest, the average identity | proved for every finite `W`, `E` and every non-constant rule of the two families (Q1–Q3); the readings' intent not claimed |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no reading of Record; none is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "This is the Markov property of Gibbs fields; pendant subtrees marginalize trivially and bridges do not." Reply: the campaign asked whether the hypothesis 'unrecorded sites carry no law-level state' has content, and the answer is an exact graph criterion with witnesses in the campaign's format plus the audit of the lane's own convention; the one-attachment constancy here comes from value covariance and transitivity, which also covers exteriors that are cycles attached at one site. Conceded: nothing here says which reading the axioms mean.
++
++### N8 — Cross-cycle echo
++Block 15's criterion (sequential equals joint iff no site records an inside neighbour with a second) and block 16's flip lemma are the recorded-environment relatives of this fork; block 17's boundary conditions and block 23's exterior records are R3 objects; the tori of blocks 19–22 are reading-free.
++
++## Falsifiers
++- An eigenvector of `φ` outside the three sectors, or an eigenvalue other than `Z_1`, `p − q`, `p + q − 2r` (B1); an entry difference of `φ²` other than `(p−r)² + (q−r)²` or `2(p−r)(q−r)`, or a constant `φ²` at some `(p, q, r)` with `p, q, r` not all equal (B2); a path power with a nontrivial eigenvalue other than `(p−q)^{k+2}`, `(p+q−2r)^{k+2}` (B3); a pendant path whose factor depends on `v_b` (B4).
++- A sphere factor other than `4π sinh β/β` (one attachment) or `4π sinh(β|w|)/(β|w|)` (two), or a nonpositive coefficient in `z cosh z − sinh z` (C1–C2).
++- A plaquette, cube or forest value other than those of Q4, or a failure of the average identity (D1–D4); the two unrecorded corners' combined factor constant at a non-constant rule (E1).
++
++## Boundaries and non-claims
++This note proves, for the six-axis product rule and the sphere rule, that the free-window and integrated-exterior readings of the static law on a finite set of records coincide if and only if every unrecorded component touches one recorded site, with exact witnesses and the separating clause pair recorded; it does not say which reading the axioms intend, does not treat infinite unrecorded exteriors beyond finite sets, does not treat the formation reading, does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- Block 01 and the possibility-covariance note (both on `main`): the static reading and the sphere law; proposed, unaudited. The campaign meta note (on `main`): the seam and the format. PRs #8149–#8151, #8153–#8157 (open) referenced in Q5(b) as evidence addresses only.
++- Re-proved at scope: Q1 (the product form), Q2 (value covariance and transitivity), Q3 (the spectral decomposition; the commutant of three inequivalent irreducibles; the sphere integral; the series), Q4 (enumeration).
++- Named standard imports at definition level (never as authority for physics): that the commutant of a representation decomposing into pairwise inequivalent irreducible representations is spanned by the isotypic projectors (Schur); the polar-coordinate evaluation of the sphere integral.
++- Reference only (named, not used): the Markov property of Gibbs fields.
++
++## Review record
++Supervisor-run block (owner directive: don't stop; assess the next lane at each conclusion; no subagents). The lane assessment before this block found the queue down to hard or incremental items and the other lanes owned by the owner's live integration or by other workers; the campaign meta note's untouched seam on unrecorded sites was taken. The control (`specs/supervisor_control_block24_unrecorded_sites.py`) computed the eigenvalues, the `φ²` differences, the pendant and bridging path factors, the three plaquette witnesses, the cube witness, the sphere factors and the forest before the contract (a first draft with a `3×3` window plus pendants was infeasible at `6^{12}` configurations and was replaced by the plaquette); the lens pass is in `GOAL_block24.md`; the primary seat wrote Q1–Q5 and the runner; the refuting pass (`CHECKER_block24_findings.md`) recomputed the plaquette and cube witnesses by floating-point tensor contraction, tested one-attachment constancy on random pendant components and two-attachment nonconstancy on random bridging components at random positive weights through the isotypic eigenvalues, and checked the sphere factor by quadrature.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py
++python3 scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py --mutation claim_reading_selected_injected
++```
++
++Families: A authority and inputs; B the spectral decomposition, the constancy criterion, the path powers, the pendant paths; C the sphere factors; D the witnesses and the average identity; E the two-corner component; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index bc6581040c..59aa39de5d 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+  "edge_count": 13455,
+- "node_count": 5907,
++ "node_count": 5908,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -754,6 +754,10 @@
+    "deps_hash": "8ae058a5c524",
+    "out_degree": 2
+   },
++  "admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_differ_iff_an_unrecorded_component_touches_two_recorded_sites_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
+    "deps_hash": "f21f2489334d",
+    "out_degree": 4
+diff --git a/logs/runner-cache/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.txt b/logs/runner-cache/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.txt
+new file mode 100644
+index 0000000000..62ecdf8270
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.txt
+@@ -0,0 +1,46 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py
++runner_sha256: 1a8a46077ab9fe971200c6935c9747c7d580fad4ba6b4f51ff594165dc2d9170
++input_fingerprint_sha256: a9152e9ed90bfa04108b385093b80c6ad8776f6ca85308920da3055df0b32dea
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 4.25
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md
++  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
++AUDIT_TIMEOUT_SEC: 900
++scope: unrecorded sites — the free-window versus integrated-exterior readings of the static law; the spectral algebra of the six-axis rule, the pendant and bridging factors, the sphere factors, exact plaquette and cube witnesses; exact
++mutation: none
++PASS: A1 the four declared inputs exist (this note, the axiom memo, the possibility-covariance note, block 01's note on main)
++PASS: A2 the seven axiom sentences used are present verbatim in the axiom memo
++PASS: A3 the parents' claim ids and their sections (the sphere laws; the static law of a product rule) are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: B1 Q3(a): phi has eigenvalue Z1 = p + q + 4r on constants, p - q on the three odd vectors delta_{e_i} - delta_{-e_i}, and p + q - 2r on the two even zero-sum vectors
++PASS: B2 Q3(b): phi^2_same - phi^2_orth = (p - r)^2 + (q - r)^2 and phi^2_anti - phi^2_orth = 2 (p - r)(q - r); both vanish iff p = q = r
++PASS: B3 Q3(c): a bridging path of k internal bonds contributes phi^{k+2}, with nontrivial eigenvalues (p - q)^{k+2} and (p + q - 2r)^{k+2}, k <= 3
++PASS: B4 Q2: the factor of a pendant path of two and of three unrecorded sites is the same polynomial in (p, q, r) for all six values of the attachment record
++PASS: C1 Q3(e): the one-attachment sphere factor 2 pi int_{-1}^{1} e^{beta t} dt = 4 pi sinh(beta)/beta
++PASS: C2 Q3(e): the two-attachment factor 4 pi sinh(beta w)/(beta w) with w = |v_x + v_y|; z cosh z - sinh z = sum_{n>=1} 2n z^{2n+1}/(2n+1)! has positive coefficients (n <= 10), so sinh z/z increases
++PASS: D1 Q4(a): the plaquette with one unrecorded site on two adjacent corners: TV(R1, R2) = 78621/4563820, 675203620/64463986907, 221667/30063356 at (3,1,2), (5,2,4), (2,1,2), exactly
++PASS: D2 Q4(b): the cube with its top face unrecorded (a four-cycle touching all four recorded sites): TV(R1, R2) = 9778807/1312253264 at (3,1,2), exactly
++PASS: D3 Q4(c)/Q2: the plaquette with a pendant path of two sites off one corner and a pendant site off the opposite corner: TV(R1, R2) = 0 exactly at (2,1,2)
++PASS: D4 Q1: on the plaquette with one unrecorded site, mu_W^R2 equals the average of the exterior-records laws mu_W^R3(.|omega) weighted by the exterior's marginal law, exactly
++PASS: E1 Q3(d): the two unrecorded corners of a plaquette contribute the entrywise square of phi^2, a covariant matrix with sector eigenvalues that vanish at p = q = r and not at (3,1,2)
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the authors' names appear only under Prior art, Imports and the Premises; Markov, Gibbs and Hadamard name standard objects (0 offenders)
++per_element: executed — the spectral decomposition of phi with explicit eigenvectors; the entry differences of phi^2; the path powers k <= 3; the sphere integrals and the series
++per_site: executed — the pendant paths of two and three unrecorded sites, symbolically for all six attachment records
++per_mode: executed — the two unrecorded corners' entrywise square of phi^2 and its sector eigenvalues
++per_block: executed — the plaquette-plus-site witnesses at three triples; the cube with its top face unrecorded; the pendant forest; the average identity
++lattice_wide: Q1-Q3 proved for every finite recorded set with a finite unrecorded exterior and every non-constant rule of the two families; the readings' intent not claimed
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=20 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py b/scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py
+new file mode 100755
+index 0000000000..9345102c8c
+--- /dev/null
++++ b/scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py
+@@ -0,0 +1,417 @@
++#!/usr/bin/env python3
++"""Exact checks: unrecorded sites — the free-window reading (R1) and the integrated-exterior reading (R2) of the static law differ
++exactly when an unrecorded component touches two recorded sites.
++
++Scope.  Q3(a)-(c): the spectral decomposition of the six-axis product rule phi with explicit eigenvectors; the entry differences of
++phi^2 and the constancy criterion p = q = r; the path powers phi^{k+2}, k <= 3.  Q2: the factor of a pendant path of two and of
++three unrecorded sites, symbolically in (p, q, r), for all six values of the attachment record.  Q3(e): the sphere factors and the
++series positivity of z cosh z - sinh z.  Q4: the plaquette-plus-site witnesses at three triples, the cube witness, the pendant forest,
++and Q1's average identity, all as exact rationals.  E: the two unrecorded corners of a plaquette (entrywise square of phi^2).
++Exact arithmetic only (integers, Fractions and sympy); the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import re
++import sys
++from fractions import Fraction
++from itertools import product
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
++    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_differ_iff_an_unrecorded_component_touches_two_recorded_sites_bounded_theorem_note_2026-09-15"
++PARENT_CLAIM_ID = "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
++PARENT_FRAGMENT = "Empty-neighbourhood sphere laws"
++BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
++BLOCK01_FRAGMENT = "the static law of a product rule"
++AXIOM_NEEDLES = (
++    "Each site has a domain of local possibilities.",
++    "No possibility is privileged.",
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "A site with no record cannot be read.",
++    "A state is a configuration of records.",
++)
++
++MUTATION_GATE = {
++    "spectral_decomposition_wrong": "B",
++    "constancy_criterion_wrong": "B",
++    "path_eigenvalue_wrong": "B",
++    "one_attachment_nonconstant_claimed": "B",
++    "sphere_one_attachment_wrong": "C",
++    "sphere_series_sign_wrong": "C",
++    "plaquette_tv_wrong": "D",
++    "cube_tv_wrong": "D",
++    "forest_tv_nonzero_claimed": "D",
++    "average_identity_wrong": "D",
++    "hadamard_component_constant_claimed": "E",
++    "claim_reading_selected_injected": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++MENU = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]
++
++
++def relation(v, w) -> str:
++    if v == w:
++        return "same"
++    if tuple(-c for c in v) == w:
++        return "anti"
++    return "orth"
++
++
++def phi_of(v, w, p, q, r):
++    return {"same": p, "anti": q, "orth": r}[relation(v, w)]
++
++
++def phi_matrix(p, q, r):
++    return sp.Matrix(6, 6, lambda i, j: phi_of(MENU[i], MENU[j], p, q, r))
++
++
++def sector_basis():
++    odd = [sp.Matrix([1 if k == 2 * i else (-1 if k == 2 * i + 1 else 0) for k in range(6)]) for i in range(3)]
++    even = [sp.Matrix([1, 1, -1, -1, 0, 0]), sp.Matrix([0, 0, 1, 1, -1, -1])]
++    const = sp.Matrix([1] * 6)
++    return const, odd, even
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, parent, block01 = texts
++    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 4,
++                 "the four declared inputs exist (this note, the axiom memo, the possibility-covariance note, block 01's note on main)")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the seven axiom sentences used are present verbatim in the axiom memo")
++    fp, f1 = normalize_text(parent), normalize_text(block01)
++    checks.check("A3", PARENT_CLAIM_ID in fp and PARENT_FRAGMENT in fp and BLOCK01_CLAIM_ID in f1 and BLOCK01_FRAGMENT in f1,
++                 "the parents' claim ids and their sections (the sphere laws; the static law of a product rule) are present")
++    flat = normalize_text(note)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++
++
++# ============================================================================================ family B
++def family_b(checks: Checks) -> None:
++    p, q, r = sp.symbols("p q r", positive=True)
++    Phi = phi_matrix(p, q, r)
++    const, odd, even = sector_basis()
++    lam_odd = p - q
++    if mut("spectral_decomposition_wrong"):
++        lam_odd = p + q
++    ok1 = sp.simplify(Phi * const - (p + q + 4 * r) * const) == sp.zeros(6, 1)
++    ok1 = ok1 and all(sp.simplify(Phi * f - lam_odd * f) == sp.zeros(6, 1) for f in odd)
++    ok1 = ok1 and all(sp.simplify(Phi * g - (p + q - 2 * r) * g) == sp.zeros(6, 1) for g in even)
++    checks.check("B1", ok1, "Q3(a): phi has eigenvalue Z1 = p + q + 4r on constants, p - q on the three odd vectors delta_{e_i} - delta_{-e_i}, and p + q - 2r on the two even zero-sum vectors")
++    Phi2 = Phi * Phi
++    d_same = sp.factor(sp.expand(Phi2[0, 0] - Phi2[0, 2]))
++    d_anti = sp.factor(sp.expand(Phi2[0, 1] - Phi2[0, 2]))
++    target_same = (p - r) ** 2 + (q - r) ** 2
++    if mut("constancy_criterion_wrong"):
++        target_same = (p - r) ** 2 - (q - r) ** 2
++    ok2 = sp.simplify(d_same - target_same) == 0 and sp.simplify(d_anti - 2 * (p - r) * (q - r)) == 0
++    sol = sp.solve([sp.expand(Phi2[0, 0] - Phi2[0, 2]), sp.expand(Phi2[0, 1] - Phi2[0, 2])], [p, q], dict=True)
++    ok2 = ok2 and sol == [{p: r, q: r}]
++    checks.check("B2", ok2, "Q3(b): phi^2_same - phi^2_orth = (p - r)^2 + (q - r)^2 and phi^2_anti - phi^2_orth = 2 (p - r)(q - r); both vanish iff p = q = r")
++    ok3 = True
++    for k in range(1, 4):
++        Pk = Phi ** (k + 2)
++        exp_odd = (p - q) ** (k + 2)
++        if mut("path_eigenvalue_wrong"):
++            exp_odd = (p - q) ** (k + 1)
++        ok3 = ok3 and all(sp.simplify(Pk * f - exp_odd * f) == sp.zeros(6, 1) for f in odd)
++        ok3 = ok3 and all(sp.simplify(Pk * g - (p + q - 2 * r) ** (k + 2) * g) == sp.zeros(6, 1) for g in even)
++    checks.check("B3", ok3, "Q3(c): a bridging path of k internal bonds contributes phi^{k+2}, with nontrivial eigenvalues (p - q)^{k+2} and (p + q - 2r)^{k+2}, k <= 3")
++
++    def pendant_factor(length: int, vb):
++        total = 0
++        for u in product(range(6), repeat=length):
++            w = phi_of(vb, MENU[u[0]], p, q, r)
++            for i in range(length - 1):
++                w = w * phi_of(MENU[u[i]], MENU[u[i + 1]], p, q, r)
++            total = total + w
++        return sp.expand(total)
++
++    ok4 = True
++    for length in (2, 3):
++        vals = [pendant_factor(length, vb) for vb in MENU]
++        same = all(sp.simplify(vals[0] - v) == 0 for v in vals[1:])
++        if mut("one_attachment_nonconstant_claimed"):
++            same = not same
++        ok4 = ok4 and same
++    checks.check("B4", ok4, "Q2: the factor of a pendant path of two and of three unrecorded sites is the same polynomial in (p, q, r) for all six values of the attachment record")
++
++
++# ============================================================================================ family C
++def family_c(checks: Checks) -> None:
++    b, t, w, z = sp.symbols("beta t w z", positive=True)
++    one = 2 * sp.pi * sp.integrate(sp.exp(b * t), (t, -1, 1))
++    target = 4 * sp.pi * sp.sinh(b) / b
++    if mut("sphere_one_attachment_wrong"):
++        target = 4 * sp.pi * sp.cosh(b) / b
++    checks.check("C1", sp.simplify(sp.expand((one - target).rewrite(sp.exp))) == 0, "Q3(e): the one-attachment sphere factor 2 pi int_{-1}^{1} e^{beta t} dt = 4 pi sinh(beta)/beta")
++    two = 2 * sp.pi * sp.integrate(sp.exp(b * w * t), (t, -1, 1))
++    two_ok = sp.simplify(sp.expand((two - 4 * sp.pi * sp.sinh(b * w) / (b * w)).rewrite(sp.exp))) == 0
++    n = sp.symbols("n", positive=True, integer=True)
++    coeff = 1 / sp.factorial(2 * n) - 1 / sp.factorial(2 * n + 1)
++    closed = sp.simplify(coeff - 2 * n / sp.factorial(2 * n + 1)) == 0
++    series = sp.series(z * sp.cosh(z) - sp.sinh(z), z, 0, 24).removeO()
++    sign = 1
++    if mut("sphere_series_sign_wrong"):
++        sign = -1
++    pos = all(sign * series.coeff(z, 2 * m + 1) > 0 for m in range(1, 11)) and series.coeff(z, 1) == 0
++    checks.check("C2", two_ok and closed and pos, "Q3(e): the two-attachment factor 4 pi sinh(beta w)/(beta w) with w = |v_x + v_y|; z cosh z - sinh z = sum_{n>=1} 2n z^{2n+1}/(2n+1)! has positive coefficients (n <= 10), so sinh z/z increases")
++
++
++# ============================================================================================ family D
++def law(bonds, sites, pqr):
++    Z = 0
++    wts = {}
++    for u in product(range(6), repeat=len(sites)):
++        rec = {s: MENU[k] for s, k in zip(sites, u)}
++        w = 1
++        for a, c in bonds:
++            w *= phi_of(rec[a], rec[c], *pqr)
++        wts[u] = w
++        Z += w
++    return {k: Fraction(v, Z) for k, v in wts.items()}
++
++
++def marginal(lawd, sites, keep):
++    idx = [sites.index(s) for s in keep]
++    out: dict = {}
++    for u, w in lawd.items():
++        key = tuple(u[i] for i in idx)
++        out[key] = out.get(key, Fraction(0)) + w
++    return out
++
++
++def tv(a, b) -> Fraction:
++    keys = set(a) | set(b)
++    return sum((abs(a.get(k, Fraction(0)) - b.get(k, Fraction(0))) for k in keys), Fraction(0)) / 2
++
++
++W4 = ["c0", "c1", "c2", "c3"]
++W4B = [("c0", "c1"), ("c1", "c2"), ("c2", "c3"), ("c3", "c0")]
++
++
++def family_d(checks: Checks) -> None:
++    expected = {(3, 1, 2): Fraction(78621, 4563820), (5, 2, 4): Fraction(675203620, 64463986907), (2, 1, 2): Fraction(221667, 30063356)}
++    if mut("plaquette_tv_wrong"):
++        expected[(3, 1, 2)] = Fraction(78621, 4563821)
++    ok1 = True
++    for pqr, ex in expected.items():
++        R1 = law(W4B, W4, pqr)
++        R2 = marginal(law(W4B + [("c0", "x"), ("c1", "x")], W4 + ["x"], pqr), W4 + ["x"], W4)
++        d = tv(R1, R2)
++        ok1 = ok1 and d == ex and d > 0
++    checks.check("D1", ok1, "Q4(a): the plaquette with one unrecorded site on two adjacent corners: TV(R1, R2) = 78621/4563820, 675203620/64463986907, 221667/30063356 at (3,1,2), (5,2,4), (2,1,2), exactly")
++    pqr = (3, 1, 2)
++    R1 = law(W4B, W4, pqr)
++    # cube: bottom face c0..c3 recorded, top face t0..t3 unrecorded, with the vertical bonds; the top-face factor summed per bottom configuration
++    top_configs = list(product(range(6), repeat=4))
++    top_weight = {}
++    for tcfg in top_configs:
++        w = 1
++        for i in range(4):
++            w *= phi_of(MENU[tcfg[i]], MENU[tcfg[(i + 1) % 4]], *pqr)
++        top_weight[tcfg] = w
++    num = {}
++    Z = 0
++    for bcfg in top_configs:
++        wb = 1
++        for i in range(4):
++            wb *= phi_of(MENU[bcfg[i]], MENU[bcfg[(i + 1) % 4]], *pqr)
++        f = 0
++        for tcfg, wt in top_weight.items():
++            wv = wt
++            for i in range(4):
++                wv *= phi_of(MENU[bcfg[i]], MENU[tcfg[i]], *pqr)
++            f += wv
++        num[bcfg] = wb * f
++        Z += wb * f
++    R2c = {k: Fraction(v, Z) for k, v in num.items()}
++    ex_cube = Fraction(9778807, 1312253264)
++    if mut("cube_tv_wrong"):
++        ex_cube = Fraction(9778807, 1312253265)
++    checks.check("D2", tv(R1, R2c) == ex_cube, "Q4(b): the cube with its top face unrecorded (a four-cycle touching all four recorded sites): TV(R1, R2) = 9778807/1312253264 at (3,1,2), exactly")
++    pend = [("c0", "p1"), ("p1", "p2"), ("c2", "p3")]
++    sites = W4 + ["p1", "p2", "p3"]
++    R1f = law(W4B, W4, (2, 1, 2))
++    R2f = marginal(law(W4B + pend, sites, (2, 1, 2)), sites, W4)
++    d = tv(R1f, R2f)
++    cond = d == 0
++    if mut("forest_tv_nonzero_claimed"):
++        cond = d > 0
++    checks.check("D3", cond, "Q4(c)/Q2: the plaquette with a pendant path of two sites off one corner and a pendant site off the opposite corner: TV(R1, R2) = 0 exactly at (2,1,2)")
++    joint = law(W4B + [("c0", "x"), ("c1", "x")], W4 + ["x"], (3, 1, 2))
++    R2 = marginal(joint, W4 + ["x"], W4)
++    mix: dict = {}
++    for xval in range(6):
++        block = {k[:4]: v for k, v in joint.items() if k[4] == xval}
++        mass = sum(block.values(), Fraction(0))
++        weight = mass
++        if mut("average_identity_wrong"):
++            weight = Fraction(xval + 1, 21)  # a non-uniform reweighting of the exterior records (the true marginal is uniform by Q2's symmetry)
++        for k, v in block.items():
++            mix[k] = mix.get(k, Fraction(0)) + weight * (v / mass)
++    checks.check("D4", all(mix.get(k, Fraction(0)) == R2[k] for k in R2), "Q1: on the plaquette with one unrecorded site, mu_W^R2 equals the average of the exterior-records laws mu_W^R3(.|omega) weighted by the exterior's marginal law, exactly")
++
++
++# ============================================================================================ family E
++def family_e(checks: Checks) -> None:
++    p, q, r = sp.symbols("p q r", positive=True)
++    Phi = phi_matrix(p, q, r)
++    Phi2 = Phi * Phi
++    H = sp.Matrix(6, 6, lambda i, j: Phi2[i, j] ** 2)  # two single-site components on the same pair: the entrywise square
++    const, odd, even = sector_basis()
++    lam_odd = sp.simplify((odd[0].T * H * odd[0])[0, 0] / (odd[0].T * odd[0])[0, 0])
++    lam_even = sp.simplify((even[0].T * H * even[0])[0, 0] / (even[0].T * even[0])[0, 0])
++    both_zero_generic = sp.simplify(lam_odd.subs({p: 3, q: 1, r: 2})) == 0 and sp.simplify(lam_even.subs({p: 3, q: 1, r: 2})) == 0
++    at_constant = sp.simplify(lam_odd.subs({p: 1, q: 1, r: 1})) == 0 and sp.simplify(lam_even.subs({p: 1, q: 1, r: 1})) == 0
++    covariant = all(sp.simplify(H * f - lam_odd * f) == sp.zeros(6, 1) for f in odd) and all(sp.simplify(H * g - lam_even * g) == sp.zeros(6, 1) for g in even)
++    cond = covariant and at_constant and not both_zero_generic
++    if mut("hadamard_component_constant_claimed"):
++        cond = covariant and both_zero_generic
++    checks.check("E1", cond, "Q3(d): the two unrecorded corners of a plaquette contribute the entrywise square of phi^2, a covariant matrix with sector eigenvalues that vanish at p = q = r and not at (3,1,2)")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves, for the six-axis product rule and the sphere rule, that the free-window and integrated-exterior readings of the static law on a finite set of records coincide if and only if every unrecorded component touches one recorded site, with exact witnesses and the separating clause pair recorded; it does not say which reading the axioms intend, does not treat infinite unrecorded exteriors beyond finite sets, does not treat the formation reading, does not select a reading, rule or coupling as physical, and adopts no clause.",
++    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
++    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
++    "sharp threshold", "the axioms select", "adopt the", "the correct reading",
++)
++CLAIM_INJECTIONS = {"claim_reading_selected_injected": "Hence the axioms select the free-window reading."}
++CLASSICAL_NAMES = ("Schur", "Dobrushin", "Peierls", "Toom", "Mermin", "Wagner", "Fröhlich", "Spencer", "Kolmogorov")  # authors; Markov, Gibbs, Hadamard name standard objects
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln]
++    checks.check("F3", not bad and len(scan) > 150, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for i, sec in enumerate(sections):
++        title = sec.splitlines()[0].strip() if i > 0 else "(front matter)"
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem Q3"):
++            body = body + " (Schur's lemma)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports and the Premises; Markov, Gibbs and Hadamard name standard objects ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the spectral decomposition of phi with explicit eigenvectors; the entry differences of phi^2; the path powers k <= 3; the sphere integrals and the series",
++    "per_site: executed — the pendant paths of two and three unrecorded sites, symbolically for all six attachment records",
++    "per_mode: executed — the two unrecorded corners' entrywise square of phi^2 and its sector eigenvalues",
++    "per_block: executed — the plaquette-plus-site witnesses at three triples; the cube with its top face unrecorded; the pendant forest; the average identity",
++    "lattice_wide: Q1-Q3 proved for every finite recorded set with a finite unrecorded exterior and every non-constant rule of the two families; the readings' intent not claimed",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    checks = Checks()
++    texts = [(ROOT / pth).read_text(encoding="utf-8") if (ROOT / pth).is_file() else "" for pth in AUDIT_INPUT_PATHS]
++    print("AUDIT_INPUT_PATHS:")
++    for pth in AUDIT_INPUT_PATHS:
++        print(f"  {pth}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: unrecorded sites — the free-window versus integrated-exterior readings of the static law; the spectral algebra of the six-axis rule, the pendant and bridging factors, the sphere factors, exact plaquette and cube witnesses; exact")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    family_a(checks, texts)
++    family_b(checks)
++    family_c(checks)
++    family_d(checks)
++    family_e(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

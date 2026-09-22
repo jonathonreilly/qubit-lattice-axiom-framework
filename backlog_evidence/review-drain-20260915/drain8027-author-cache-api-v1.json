@@ -1,0 +1,26 @@
+[
+  {
+    "primary": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+    "primary_sha256": "3b273aea658f7ca15b42285116da8a3db0e9f19a4f6604f01aa38becc9f3330a",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "57714b7903f4e4f2be128238b6121ddc9289ba6b3cc78641160d2eb5aae61394",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+    "primary_sha256": "9b1019979f215ee42afa5b504a0f8b390fb7b7aa3aaeab2bb091da6857eb6151",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "57714b7903f4e4f2be128238b6121ddc9289ba6b3cc78641160d2eb5aae61394",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

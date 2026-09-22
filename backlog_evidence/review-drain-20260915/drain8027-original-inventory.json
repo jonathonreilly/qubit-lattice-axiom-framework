@@ -1,0 +1,590 @@
+{
+  "head": "ca0eebe4dffad7a53a201ad7773e804b8c89edef",
+  "delta_base": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+  "original_paths": [
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/ARTIFACT_PLAN.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "84ee804df671466e9880aedf5d8d6734aa139310",
+      "sha256": "020692101a628c7ce3d9e7b53bd59176b916245b4fbc10aa86e9c5c7dbfe20d7",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b918b52764de91796b6322f6ac3952b3a0d594c2",
+      "sha256": "fc49720ee95f5805f1bec61746ea0d07d7cdef6fe97023817b49de671e45a8d5",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "962b2d7fd8e2e99100846eb5ea216354f6577faa",
+      "sha256": "b40be84e72fd21a68c7a65b6929a887ba6fa0471360530ab1d2f20c538d7ebe8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "462caf350f572b32c307e3f04efccae593b703a9",
+      "sha256": "42697fe59d86f273483d7827acad0ce836ff96e6fb178ad8b1ebe30c2893f149",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_READINESS.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0c95617bdfc2e6a618b89a2c6c5053f08c7a0279",
+      "sha256": "8857ec84efdde8be4cc0d07c80db0a9258bed13440a3d0ec9df6420c9e3578a3",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_READINESS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_STRICT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "1ddf08cec098eaa2b840f26e033dc651d8654383",
+      "sha256": "00e2993df87be68bac4676e90f9dc16dece4fa8d63f0dd4002533b28c510b4f9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_STRICT.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "33d1619fc9e02a64d926d6fbfc86d3da57a32211",
+      "sha256": "3bbf0077a6b301b6264a8a917768cee5c92a37765a91991ef4a97d02fa108e24",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b47f7f54d96f433f44c65623b6511d05b7c6ce96",
+      "sha256": "629029505dc23d0a1345bc5494623acc05e9f2a81b407f77eb7d109edc0066cd",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_MAIN66_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "603092141413e5b41f01d8bd0016b8fca891679b",
+      "sha256": "ccb00e9e8968dd71558dd975e82e813d010bc7213d920723a2d18e061a69d9a0",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FINAL_VOCAB_LINT.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FINAL_VOCAB_LINT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FROZEN_PORT_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "463ba36f50d553c37ad84d26d4f5fb4c1812e7c9",
+      "sha256": "250129bc58b7a77ed90a4c6411caabbc4d082d945c7d4cc090e52da48f063b12",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FROZEN_PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/FULL_PIPELINE.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "fd428b3c8accc7b5b37c25c620103df743397694",
+      "sha256": "177f07861e3dc2b3bfa8975224b6c7fefdee2b094d4168379c35c3e7ba2ea723",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/GOAL.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7bdca5982e27b0681835888fd668958eacf31038",
+      "sha256": "ce1eb9288f2cd965b8d1a12ebdcdd4cb4a2f718c70425a4e485be02bd9f3e740",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/GOAL.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/HANDOFF.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "77a1e04c1471f35da1e4a30fae6cf165f9dc9003",
+      "sha256": "7b8d5cf8911e1aa3fcec41744e85905b87f6374d730289a676219ce4273b9e3c",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/HASHES.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "1642dfc1c2a4de955f099157d7cae65be0c18d8a",
+      "sha256": "99f3ceaefaca0a0196205d3bdf097a33f4348bb0c8bd98e66fa5dd1eb35206a1",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/INDEPENDENT_RAW.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "bdcc2c9457c2eae2872356b962c2d0f29a9b8999",
+      "sha256": "e3b72d5747f4d64909a96da3117e5f4257410ce0619d3308fc8c7ff3d1a0a905",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/INDEPENDENT_RAW.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/INDEPENDENT_STDOUT.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d8df912061c75e23337d4f1e4c51c5c6234287b2",
+      "sha256": "fbbeb4c15e07fdd695ea81dc49508eb63e756986f57dc056538bd257f35e0d0e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/INDEPENDENT_STDOUT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/LITERATURE_BRIDGES.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "16c6daa327ae912595c98a2f562a344307f907bb",
+      "sha256": "76bb5868e409a6b08f2e609cd03275f50abd09f897c20698946a822e48967f96",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/LOCK_RELEASE.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/LOCK_RELEASE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/N1_N8.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7db128ffcf8e4c2e6228ea0442806f325b980c52",
+      "sha256": "fa8c0ee57a08907e51b2e28243dfbc20c095f3a1046b821aa29d68be4cc328bc",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/N1_N8.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/NO_GO_LEDGER.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d05a13c50502c4980059c151e750e710606ac74a",
+      "sha256": "76b90c81ae67cf66930c208092a808f3c276fdfb333acb9481fc3036b88c2715",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/OPPORTUNITY_QUEUE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "4686ed0a8be90ad933d3b77616bcf7f0d5553574",
+      "sha256": "70c7a1623fa5f70ae4e649c5c7f424ee1c48570c675cc826e45242f185239026",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PACK_INDEX.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7e71f5345b5c88866b5978db3f1880e1ae3e8b56",
+      "sha256": "0e6a3aafdb2a7e6ec017dc01abba8bb1e7deb47b3029e3f1a378c006d164827b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PACK_INDEX.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "9a57173ce99b268b771e0447fcdf28c18116b725",
+      "sha256": "2758b845a73cac99e5973f2c8ba6ae2cee0ca3c296d37d442069f271c8b52585",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PORT_EXECUTION_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "856c7d040a77dfe0d28d42f3190e97873b866cae",
+      "sha256": "b9c49de8f089e304efee478c427afacea63596335fff0f46860056ee30095eb2",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PORT_EXECUTION_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PORT_INTERFACE_CHECK.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b6fec46d24e43baea468b06a035d721c3a88677c",
+      "sha256": "a7cbca586db6e954e58b5e52685dc113f41561e0e2552caf54f4ee3a46a71837",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PORT_INTERFACE_CHECK.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PRIMARY_RAW.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "25e39d0a9ecda3dd913a9e399cabe75bde800072",
+      "sha256": "164a3159dddb0d639f926e2be05cb5a26d2930a620081b35431064d99fe8cf73",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PRIMARY_RAW.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PRIMARY_STDOUT.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "19f4da41051c4930c992d8ce89641565cf6d80b4",
+      "sha256": "510a26dbe0e5cde89f4f2e64af395b2b1e40f3cc6075cc49213a71b9923c37ac",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PRIMARY_STDOUT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PR_BACKLOG.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "e8df09f4f8fb4d639056f6c6f6f481be63ded998",
+      "sha256": "7748a381975c26903027007dca3504918ee39d2b90f1a125a2ae25d30a226893",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PR_BACKLOG.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PR_BODY.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b74cadf3b4356cc12e9cbdd0d90b486526a53dd2",
+      "sha256": "a906336778138050948732da53efe59224fd5ce968d721ef0401e8eec9fab578",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PR_BODY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/PUBLICATION_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "16fcafc1a5f01e5b29b3755395cd6b8c6f44cefb",
+      "sha256": "de2d20a554f82c43b7994c2ef252f6fc3df3c3d2842ca7c8cacf61d23cb93ae4",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/PUBLICATION_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/QUEUE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2e198e778f38ef84add9b90e0cd96985049ec7b6",
+      "sha256": "d7a948cacb157a3edbc5b585b59a365acf568d95c1e137a7f78d9c5a32fb8915",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "661dfbc27d2192bb3c5c6bbfa61ec7d69c302ef6",
+      "sha256": "416930613d1d18e42653c946946a7307a37fbfbd80f3be640e71991d74e44863",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "10c2ded21c859750bcf5a81815f55ccfb68eeb34",
+      "sha256": "0cc462fc4f8eb6913865a0fe1d2c513874a4499f7a055ed7393d7e479ca93c81",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/REVIEW_HISTORY.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0f22239f63e60ab0d15a733e298e6d956434e4ea",
+      "sha256": "1da90ed2f7dd2061b565845b626f305e62643f1866f88f3b508a556d55483153",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "e358d6dd937be72124004ae0690dfd759dbf1320",
+      "sha256": "b29f969fc787361f0b7606c499473d0a473c88cd216341d8cb4dc94ff7abe711",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/ROOT_CANONICAL_PORT_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/ROOT_SINE_DELTA_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "72b55c27758d5fb2c224bfdbef9131990f3b69a2",
+      "sha256": "4a6cbdc064ceca6b2f0f71a68229abc2af6378db3309e70b6476792d2b6f4a78",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/ROOT_SINE_DELTA_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/ROUTE_PORTFOLIO.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "67dbd31dabb7ead66fdab69159cfa58f2e00881e",
+      "sha256": "43f7d6a1ff22a7be609e3b521dd8792afd7f0e1543c2e8427d189dff3b908467",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/STATE.yaml",
+      "change": "A",
+      "mode": "100644",
+      "blob": "33e3c31ce6dea718af439658cf60316308a5d824",
+      "sha256": "dcc3a274505c015af77975e1abba1d984b112f92d1d4c51388f6b72c97e59ce9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/STATUS.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d0ca3bbb6fd7c6d4bc10087a3acb2375c514feff",
+      "sha256": "e163fc9e8a8d7c2f8dfc576d142dfed51e35532f978bce2452702b4ac84ecf4b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/STATUS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/STRICT_LINT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "1a0157a42b65770c36e65fb93a102d5fa6a6467a",
+      "sha256": "7e5013019a332ed1702ed0718c2f735c0e2f5340014211d92a6ca45c2e56fa0f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/STRICT_LINT.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/TRACE_GATE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "fd486a8449be54245957c530710041122c2e75f7",
+      "sha256": "72af22d4f69d44906017b0cb5e1ac72240ca750a979a5d31352ca58974c43ef0",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0a18619393c5be33e7445faf4a34bc37dc00650a",
+      "sha256": "9ec5d5ccd20c3d22497511cab51eb3e834193d633517151bfc0c8d45798e61c1",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_PIPELINE.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_READINESS.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "99a4b583e0ffe7c5b52471f1aa1894d50d0e96c5",
+      "sha256": "8b11bbc136533f8936d65045b99de0ff153d62cfba3ec138c524cf11378740df",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_READINESS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_STRICT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a5ebaa470cbaf7b433c397c8f65edf22448791fd",
+      "sha256": "6bdcf583e74ed94de93b830adc6c286cac70de7448835f117064c676d276946a",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_STRICT.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "36ebd158670b2113233a1888f8afec1d68eba0a5",
+      "sha256": "c2a004ff3454185bb87ecb63ce3bb909442df853810f4d89423717b5daf1c89f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/UPSTREAM_SYNC_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/COEFFICIENT_SUPPLEMENT_PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "aec6e1109d2277915fe129ec5b1f97aac0e9a34f",
+      "sha256": "e4db4e5c46a102bb0e143746c241fff8d0f51dd2630baeae84d80d7d4981dfe2",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/COEFFICIENT_SUPPLEMENT_PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "30a886973a14fbd3e7a74e4ea73c930f6e44bab8",
+      "sha256": "c83f1583c38e4baa67e8cd37d042249bb8a8cc402aad6674ef6dd71a79614482",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/HASHES.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "62b2655e48d4e35b279668233522da070b03fba8",
+      "sha256": "6c3d0ffc0bd2d7df974349a92678ebfe6f04c182d86dc74a72658694f11e870c",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/HASHES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "f077264417ff47416cd58a93ba4a47ea9452d413",
+      "sha256": "fbbafa4429d94eec6ecfab8b0503b788bc91d2de862338e38a80b12842fd9e9f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/ROOT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "21fdf19dd7a51a0b15c179826b66bb0c5e11dbff",
+      "sha256": "b0e7fe209a98198ee4e4a6fa305c14d93bd80ddf4bdacc58594b45498e5ba7e7",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/ROOT_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7a63d14dc944569c0812c514fdc00ddcc4016d83",
+      "sha256": "5bc9105a0600ceae51e0089a6187a33c9c6012f9b9c101872139a5eefce197cb",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "3e4253934cf35a8398f7a9c511cf896f63515a3e",
+      "sha256": "60d394d9533004e720b5fea286d6e80142522e15c4945d302116d5f47b90ce36",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/primary/result.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/FINITE_CONTROLS_PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "25d83ee8a47f7bae6ac6145506402c9959ad032d",
+      "sha256": "e875c6e9f97f277ad2f9a3a9d1d9c51d268c0bc3dbf10b522c9aa35db111f69f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/FINITE_CONTROLS_PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "f9716aaf8b9f1e203f83875563a964947d6f9743",
+      "sha256": "f546d4fc8f79c3fc90fe65453df2cf0bcb43361e051b140eb7dffdf1c9c96a42",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "6a03a0070f7f6bde49da3eeff903c1e5cf19b5c2",
+      "sha256": "012270fe84ab070421df5308d9c81caa44b579054c89bccca6969a7b3d361cbf",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_DERIVATION_BEFORE_SINE_NORMALIZATION_72f606.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2c85b24711ffd51260174a7a1513286ebeb6e575",
+      "sha256": "72f6063439086729c18af629aea3001d5b61a9fde011e818b2602f3bb02946b4",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_DERIVATION_BEFORE_SINE_NORMALIZATION_72f606.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_PRIMARY_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "85479edd3755d7d3bf536568a42297a880211ee9",
+      "sha256": "d7db869f503a367d3cf85859d338538bdfe8ca0a2d71b4aa2836d0d859970045",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/ROOT_PRIMARY_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "16ceb67eab8f302ea8cf880f323e8187ed7e185a",
+      "sha256": "e1a9c5569d6e6cd0072f39f6291e36b6406d417c19e43889c340f858edf51a9f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "f6b3a8c3dafcc64596ac307e3b3dccb8b8d4498c",
+      "sha256": "923310dadff1db84d2756c9cba198d8c5dc1e5aaf485627e973c870cf88b96dd",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/evidence/root/result.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/package.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "669023fcc2ca2018e94eb6f20e8583487bb0521f",
+      "sha256": "3e71dc12a4a3bfe02d25bd05495a5f086884e004eb129e2864f4a6d6e2050f2f",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/package.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/port.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0717de8dbf80629cba6f3de2d4aa94cc5c5ede6e",
+      "sha256": "a79164c3a4457b9507b5770aac29ea39db9f2eaaa5a75f7b5698cfb77a5f5b11",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/port.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/validated_claims_before_generated_cleanup.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c6579d6584e2062fac92a9bcf5efbd0617c20575",
+      "sha256": "d7e5ef5bcedf2ccf402e882a54f67768f86f81c22c5bd3376faba3491ddb3682",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/validated_claims_before_generated_cleanup.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/static-source-geodesic-20260907/validated_readiness_before_generated_cleanup.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "f7dc109b753abf236b8899893f23d57496632d4d",
+      "sha256": "c1f021e0d3cbc0d6a7a9a0b6f493618043062cfb0a4a72a69c2ef9e499982c50",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/.claude/science/physics-loops/static-source-geodesic-20260907/validated_readiness_before_generated_cleanup.json"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "92c17b6455a2131c18f09671b3d5c75f699f6ceb",
+      "sha256": "d8258e8289828fe8a3dc70228e7f533da952044c6d769f5c90f7d62f10a4e867",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "change": "M",
+      "mode": "100644",
+      "blob": "14d7de2ba21bd2426c411393adc9f61f0374774b",
+      "sha256": "e6009a127dc19f91c82b9760b54914d6813578b3efc42ba937a99fc518ad90f4",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "change": "M",
+      "mode": "100755",
+      "blob": "d90c2f8543cc6f230f2ed19e07079217941ea018",
+      "sha256": "2b18fb6ccdd1a34d61e84be3f57e5da9415dc8066bc5060f1dbd7622e81f7ba1",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/docs/audit/scripts/build_citation_graph.py"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_static_source_geodesic_2026_09_07.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "040ddfb5800080f315488e2762a5f189c294c2cf",
+      "sha256": "005ad58302c5d0b532b377a9b9cf4e8cdc2eab097bc7dd9e20a5d32fa8f14449",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/logs/runner-cache/gauge_wilson_static_source_geodesic_2026_09_07.txt"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "f7088f7c932f4515c1267fbbbfe6e302c5fbda7a",
+      "sha256": "ae4fc96666905b3dbcf31fafb8e034d566624f6aa468e60d917b8f593fb3ee3d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/logs/runner-cache/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "change": "M",
+      "mode": "100644",
+      "blob": "fb3b6dab546cb8db66dcb0907bae62add7d7bff5",
+      "sha256": "5eae78a038f50428fe25ffcb17f489ab94a09722dcb26d5ecc7389990283e4aa",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/scripts/audit_packet_script_deps.py"
+    },
+    {
+      "path": "scripts/gauge_wilson_static_source_geodesic_2026_09_07.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "71e53ca283fd45041e12acbd321ca13ed39e459f",
+      "sha256": "3e66256f8b201a3ac8b2391060d50f38158e09640b3d3d6623ede5ed6081b564",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/scripts/gauge_wilson_static_source_geodesic_2026_09_07.py"
+    },
+    {
+      "path": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "4db37311d6feb45ab873d479e6f7b4e2f362c25a",
+      "sha256": "9c1e841acaa716a88efc0de18221fc06d9b5c8a279aa0151d859f486a92d3b83",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8027-originals/scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py"
+    }
+  ]
+}

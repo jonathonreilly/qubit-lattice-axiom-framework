@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+  "fetched_ref": "refs/review-loop/fetched/8158-7e92105586614f72a82ef9000b046cec",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915",
+    "headRefOid": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+    "isDraft": false,
+    "number": 8158,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "ca0eebe4dffad7a53a201ad7773e804b8c89edef",
+  "fetched_ref": "refs/review-loop/fetched/8027-870433e3c855446294cee4759499f72a",
+  "metadata": {
+    "baseRefName": "codex/spatial-area-block36-20260907",
+    "headRefName": "codex/static-geodesic-block37-20260907",
+    "headRefOid": "ca0eebe4dffad7a53a201ad7773e804b8c89edef",
+    "isDraft": true,
+    "number": 8027,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

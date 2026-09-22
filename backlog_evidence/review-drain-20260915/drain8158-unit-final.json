@@ -1,0 +1,288 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8158",
+  "constituents": [
+    {
+      "id": "PR8158",
+      "head": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+      "delta_base": "df5316ee81d59d573b3837afb80d371d12d890d6",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8158-final-review.json",
+        "sha256": "a6462c7909b2942e65440d6fb8eb7a96c48070cda4b8a6f8f96ddfff36b1d0b7",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "49777d85533d8403cd3e30471e1123bc2c05fd56",
+    "commit": "49777d85533d8403cd3e30471e1123bc2c05fd56",
+    "tree": "80c898666db9b1978e52ee6aa1d87adbbd65eeb6",
+    "paths": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FINITE_UNRECORDED_COMPONENT_FACTORIZATION_AND_ATTACHMENT_FACTORS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "624aadd58f8c45b02a1dccd7f5e5cb4823bf33d447f3a8c15e47f09796eef0ca"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/README.md",
+        "sha256": "841fa95c62f7e69e442166b86a71472d2213c834d9fa3eca3ce5dfbf68f9090d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/108c9cf3f923b595a365d0571d17cc7201d473071bf21658ab099ba828ad3aee.gz",
+        "sha256": "0c95180873dcdb26ace3f4b04b445334ec6a25c6c3b78ae2ec1c3a03dfbc8e06"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/13caa79513863433a3c602ab12903cf4cfeadc8accf44712b89425fcf34bbfe2.gz",
+        "sha256": "fecfe1c4822d46eeca35524e714f8d68a2430b29a25edb7f2d3a31208d478183"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/15f0d271f29b27b1e49907c2afac569b97af71c36a23e8dcff43962b3d9d15c6.gz",
+        "sha256": "7520aad7ca747cfec8f0eb4175a925c7789a51761db683868992a14b12d31272"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/1a8a46077ab9fe971200c6935c9747c7d580fad4ba6b4f51ff594165dc2d9170.gz",
+        "sha256": "44ad4f9453949cd105eed3e23bc772e49dbcf10a09022be3fd11533543dc8c48"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/1cea68cffd3315009b8a6e8dfc74d3acdf3679dd9855af4b0cb6a52ef730ea05.gz",
+        "sha256": "54ae6f6909c2ae99a4c9cdc87be012a85dc487b7357b36269013abab85c55dad"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/2954707fdb5ba3a29748ef8b64544274036d49ecda5e0e495a0f83d6d466ee22.gz",
+        "sha256": "bae21414474d813864d5db1e161a315e0dd6ce88c1caa9cbe00ab9d49cd329e8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/434a81baa578e234ad7e52bd9d9de74f824c23d5608a2a13f4703e66bb14af36.gz",
+        "sha256": "f52afdc7067822d4f05161e42ca11c274b629a7d36e337add755aa9526ff26ee"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/4e83f5e65bb514598806960494ba46eaa171606fff74806f971cdfbfd4d77fc1.gz",
+        "sha256": "d7025de432ad4b121daa4009e3e6bbedfbf4b740cf4b2a46160de9ca22be46b7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/59d8c8889583ff028c917f41189aeea226a24b627c9c3a76a67c41381354e5f4.gz",
+        "sha256": "45b717cbf12b51e9c1ec84b755b959789ae362bdbb381d551ef115819bb77546"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/73393cb2db4542537882a99c10aecaec9903495ec3e0a677562dd453bb145579.gz",
+        "sha256": "e186f7ae97a9386df546fbbf2b75b774115eabff4fc6635467df5d9c9c507e62"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/79c75253ed815ebbe92708d64b66616426497363ea600a346d112b7cb873ec35.gz",
+        "sha256": "d3acebfc414e6989474b1cb2632da77b84c33390b508f017cf2705962136cf7d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/7d88ce49adab38507f75ca20043919722ee8f0914febdb5dcc3e342ab8f27ad8.gz",
+        "sha256": "a0e394120b9a6fe9ef20326cfea0fcae39b048b5adfa8aeb94cb667b77ef5921"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/8350432a6c914c38286b630c35ab28e394c767ec403688543d978c22bfd0b17b.gz",
+        "sha256": "fa10aea36c2d2a14968dad0b6838a1f80e901946f99a6ca41144788af8c646bd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/9767fa7d6b9f0b2e8dd2e5e2baf6578acae4a9d028649ae2679adbcfefbfaa1f.gz",
+        "sha256": "38c07e4c63926169ea618d4368c1bc6e3d13e44c75a190b9336e3b3f905d8112"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/a907ead9af5246a4910f8d67de17570787c8d6fefc004d0420f9fee6c3ed67e1.gz",
+        "sha256": "9f4f16208022bfbfc746625ecc6964472622463b6237d623727d26fc9f4962ea"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/ab1bd0fb87f2c08fa67bc506e0e73aaace6e2902a1594e2165f925a95cc22b04.gz",
+        "sha256": "c44b3d58b95e476a3cfc94f25d4220be7db956c26ed7fcd3fdad0af8b80bbdd6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/ae6fe4600998c528b415fe8b1ba699b036ca11138ec1de18d5cf42ecb75dbace.gz",
+        "sha256": "5685f811a84b28b1937ede5e4a5bfb6de19536d30df4b667b31c06f3d8aac33b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/c7d1e7aed09daf6d949c8c5c66806eb56175ee3a8c0d215efa61611c04b3c3d5.gz",
+        "sha256": "90d669c7902dc624ebd00a945175d602cd1e2e635b496b0b3f20a36733c0913b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/cebfb114acd8c4f043509fe062e5f349e33522cff18c8a52c1014e41b34afe4a.gz",
+        "sha256": "8b4e7b9b741835df3e34431590d5c9f412484d245ca7e79c4971fb040bbb0fbb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/d4449cea1eca7383f095540211086ff4d746ef848ecc72a09af94df48c7f5bf8.gz",
+        "sha256": "f79c5ab60abaf5b1a22be6114d98b7f20f84c6cbec7802525489e1d25ca14b5f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/fabcfa802e1a950ccc11563c3a098164a867d13fc9f460b0770acc662969bcec.gz",
+        "sha256": "599fc5b1cb29fd25e6090c819eec0e06cfa783e6027cfaeda1e0c5a372610d5b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/objects/fbc17666daf67ba4a6d9790dc3b597ae77738bee33204ce1d64e12bb9fe854a6.gz",
+        "sha256": "88b1146acc722c89648363061baa9cf5b36e57e074d7202d5b8472ede22e7e4d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/original-manifest.json",
+        "sha256": "2393a8fcf4be8a25ab6ba688ffd526f5d84871690dd28bc452e30cce7974c85f"
+      },
+      {
+        "path": "logs/runner-cache/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.txt",
+        "sha256": "b21ad7dad448801a3029bf36d81ee47b4b37b5e111c929f26d810f845a1bd10f"
+      },
+      {
+        "path": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py",
+        "sha256": "241f5bb2454f1388249bffa03e07cb5c1d6987f7e3a2bc924baa7aabe161f674"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py",
+        "sha256": "241f5bb2454f1388249bffa03e07cb5c1d6987f7e3a2bc924baa7aabe161f674"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FINITE_UNRECORDED_COMPONENT_FACTORIZATION_AND_ATTACHMENT_FACTORS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "624aadd58f8c45b02a1dccd7f5e5cb4823bf33d447f3a8c15e47f09796eef0ca"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8158/README.md",
+        "sha256": "841fa95c62f7e69e442166b86a71472d2213c834d9fa3eca3ce5dfbf68f9090d"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "8c99befa0689d74b01c7ed831e554ff64cae94dd397f7f3d1bf9566d79c6818a"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "a8e1d45bc3d24b9a756228975a260e1e46815de771aa860aec1d55a6ce0f1022"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8011",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8158-final-review.json",
+      "sha256": "a6462c7909b2942e65440d6fb8eb7a96c48070cda4b8a6f8f96ddfff36b1d0b7"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8158-original-review.json",
+        "sha256": "85470c99cba0d21a4a29572ed307f39e88a4c6c0d745bd8afca9b9e78f0a27ad"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8158-author-source-handoff-v1.json",
+        "sha256": "f05e44f6b168012e46fb46a912b9a7ab911b94813f2e1f1814ad2f6316247c80"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8158-author-cache-api-v1.json",
+        "sha256": "235041b5a65c521894d1e2dd4f5c2b9a83b5928e5796573fcffc1f291246610a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8158-author-unit-draft-v1.json",
+        "sha256": "4b7dd25603c2fda0489da3c66425055b278163f4ba2b8a7b83702db5b4a5508c"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8158-author-final-freeze.json",
+        "sha256": "db7b933ff01d3a3702e2f942c2dc062a48fbad124936125954ea6526d1d01551"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8158-capture.py",
+        "sha256": "d894b4bd9684cefca132a315f0ad3f37c1d1a6486fd2d2ded1d225b89018e5b4"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8158-execution-8158.json",
+        "sha256": "00c11d1f2ca402dbfb122494ed95eefb9db00dde64c3e25e33de8f88d9f493ef"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FINITE_UNRECORDED_COMPONENT_FACTORIZATION_AND_ATTACHMENT_FACTORS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_finite_unrecorded_component_factorization_and_attachment_factors_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "admissibility_rule_finite_unrecorded_component_factorization_and_attachment_factors_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8158/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "dependency_rationale": "Supplied finite positive static product laws; two conditional model parents, with axiom memo as framework context. Exact component factors and scoped graph examples; universal graph converse and all-axiom model-pair claims deferred. Original independent confirmation required."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8158/README.md",
+      "rationale": "Historical recovery instructions; no current science authority or active proof input.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8158-final-review.json",
+        "sha256": "a6462c7909b2942e65440d6fb8eb7a96c48070cda4b8a6f8f96ddfff36b1d0b7"
+      }
+    }
+  ]
+}

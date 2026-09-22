@@ -1,0 +1,168 @@
+[
+  {
+    "baseRefName": "main",
+    "baseRefOid": "e7b7e6cca9c48957191234a24a8f52f8f2d459b0",
+    "headRefName": "physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915",
+    "headRefOid": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+    "number": 8158,
+    "title": "[physics-loop] admissibility-induced-law block24 \u2014 bounded_theorem \u2014 bounded-support: unrecorded sites \u2014 the free-window and integrated-exterior readings differ iff an unrecorded component touches two recorded sites; exact witnesses; the clause pair recorded",
+    "delta_base": "df5316ee81d59d573b3837afb80d371d12d890d6",
+    "patch_sha256": "59245b9496ba4c6ee4cfdcd17563cfb52e6433e72f52b55013fb6574e2148706",
+    "original_paths": [
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "mode": "100644",
+        "blob": "2b81f9187ba71e908e90c0ac34a77c1f97064d9b",
+        "sha256": "2954707fdb5ba3a29748ef8b64544274036d49ecda5e0e495a0f83d6d466ee22",
+        "size": 1891
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+        "mode": "100644",
+        "blob": "3e36d47c89d9ac9c0ccc147d74b0bf7e96a3a32d",
+        "sha256": "fabcfa802e1a950ccc11563c3a098164a867d13fc9f460b0770acc662969bcec",
+        "size": 4687
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block24_findings.md",
+        "mode": "100644",
+        "blob": "2b69853a455c83c0ecfa7302e5470371fba2693f",
+        "sha256": "7d88ce49adab38507f75ca20043919722ee8f0914febdb5dcc3e342ab8f27ad8",
+        "size": 2846
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block24.md",
+        "mode": "100644",
+        "blob": "befd5da70064fe1f6ca1df8104c4f930ad60edbe",
+        "sha256": "c7d1e7aed09daf6d949c8c5c66806eb56175ee3a8c0d215efa61611c04b3c3d5",
+        "size": 2082
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block24.md",
+        "mode": "100644",
+        "blob": "f137b09788ef8c55dfd2569d7ca71222f8c292c2",
+        "sha256": "13caa79513863433a3c602ab12903cf4cfeadc8accf44712b89425fcf34bbfe2",
+        "size": 4128
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "mode": "100644",
+        "blob": "31e4296b5da29c39f52040363175ce168dd15f00",
+        "sha256": "79c75253ed815ebbe92708d64b66616426497363ea600a346d112b7cb873ec35",
+        "size": 11142
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+        "mode": "100644",
+        "blob": "488b0d3e63cc8d6c41e638bca852dab67bcd32cd",
+        "sha256": "d4449cea1eca7383f095540211086ff4d746ef848ecc72a09af94df48c7f5bf8",
+        "size": 2474
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "mode": "100644",
+        "blob": "a8966b7bf9bb980f15c0e4f0d05868e34b1761cc",
+        "sha256": "1cea68cffd3315009b8a6e8dfc74d3acdf3679dd9855af4b0cb6a52ef730ea05",
+        "size": 2309
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "mode": "100644",
+        "blob": "73909cadade27dfe1b7f94944cc98840ac473200",
+        "sha256": "ab1bd0fb87f2c08fa67bc506e0e73aaace6e2902a1594e2165f925a95cc22b04",
+        "size": 11799
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block24.md",
+        "mode": "100644",
+        "blob": "c3b0ee109d64604f25fe234bc8a1908311cbb541",
+        "sha256": "73393cb2db4542537882a99c10aecaec9903495ec3e0a677562dd453bb145579",
+        "size": 3966
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "mode": "100644",
+        "blob": "8f89c64f620cee5e3bbe051bc588f96d7160a9ce",
+        "sha256": "4e83f5e65bb514598806960494ba46eaa171606fff74806f971cdfbfd4d77fc1",
+        "size": 56610
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+        "mode": "100644",
+        "blob": "06a6b19ce05ffa73f5cff1b079e7afad66d1347e",
+        "sha256": "15f0d271f29b27b1e49907c2afac569b97af71c36a23e8dcff43962b3d9d15c6",
+        "size": 11450
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "mode": "100644",
+        "blob": "41b20051b2daa632206eacad5f9351a5c7151cec",
+        "sha256": "8350432a6c914c38286b630c35ab28e394c767ec403688543d978c22bfd0b17b",
+        "size": 17395
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "mode": "100644",
+        "blob": "0ff62c310bd5a7db3898f8d1de8dea80391ad160",
+        "sha256": "cebfb114acd8c4f043509fe062e5f349e33522cff18c8a52c1014e41b34afe4a",
+        "size": 5239
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.out.txt",
+        "mode": "100644",
+        "blob": "7985dab4a907ae424800c17019286519bdec09e5",
+        "sha256": "108c9cf3f923b595a365d0571d17cc7201d473071bf21658ab099ba828ad3aee",
+        "size": 1064
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_refuter.py",
+        "mode": "100644",
+        "blob": "09caf12beb842b48fc7ec00926ef20df32b457d7",
+        "sha256": "ae6fe4600998c528b415fe8b1ba699b036ca11138ec1de18d5cf42ecb75dbace",
+        "size": 6103
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.out.txt",
+        "mode": "100644",
+        "blob": "ed78f8df19ff0ff836fe58deb477df9a570de572",
+        "sha256": "a907ead9af5246a4910f8d67de17570787c8d6fefc004d0420f9fee6c3ed67e1",
+        "size": 1060
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block24_unrecorded_sites.py",
+        "mode": "100644",
+        "blob": "08a99142e08e454279f41879c8c79038f5c6c5d6",
+        "sha256": "fbc17666daf67ba4a6d9790dc3b597ae77738bee33204ce1d64e12bb9fe854a6",
+        "size": 5338
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_UNRECORDED_SITES_FREE_WINDOW_VERSUS_INTEGRATED_EXTERIOR_READINGS_DIFFER_IFF_AN_UNRECORDED_COMPONENT_TOUCHES_TWO_RECORDED_SITES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "mode": "100644",
+        "blob": "6114b13d508c41659865b44b349f1feacafd1be6",
+        "sha256": "59d8c8889583ff028c917f41189aeea226a24b627c9c3a76a67c41381354e5f4",
+        "size": 28246
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "mode": "100644",
+        "blob": "59aa39de5dd7e8d8a69340a6aa7c4b7509cea453",
+        "sha256": "434a81baa578e234ad7e52bd9d9de74f824c23d5608a2a13f4703e66bb14af36",
+        "size": 818631
+      },
+      {
+        "path": "logs/runner-cache/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.txt",
+        "mode": "100644",
+        "blob": "62ecdf827091ce3a8530e046806644593d75fb28",
+        "sha256": "9767fa7d6b9f0b2e8dd2e5e2baf6578acae4a9d028649ae2679adbcfefbfaa1f",
+        "size": 4495
+      },
+      {
+        "path": "scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py",
+        "mode": "100755",
+        "blob": "9345102c8c4512e18ba9ad4cf16c3e6f505d1f5a",
+        "sha256": "1a8a46077ab9fe971200c6935c9747c7d580fad4ba6b4f51ff594165dc2d9170",
+        "size": 21958
+      }
+    ]
+  }
+]

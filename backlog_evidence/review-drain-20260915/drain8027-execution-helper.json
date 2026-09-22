@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "TOTAL: PASS=37 FAIL=0\nper_element: PASS 7 path-count and actual4096-support census checks\nper_site: PASS 12 actual three-dimensional edge-charge/face-flip geometry checks\nper_mode: PASS 12 planar exterior-spectrum, finite-label and straight-path controls\nper_block: PASS 5 source/Haar normalization and adverse-factor checks\nlattice_wide: checked and not executed \u2014 all-representation proof remains analytical; resource guard is a separate finite resource check\nDATA: [{\"dimensions\": [1, 1, 0], \"faces\": 1, \"flip_edges\": 1, \"geodesics\": 2, \"links\": 4, \"vertices\": 4}, {\"dimensions\": [2, 1, 0], \"faces\": 2, \"flip_edges\": 2, \"geodesics\": 3, \"links\": 7, \"vertices\": 6}, {\"dimensions\": [2, 2, 0], \"faces\": 4, \"flip_edges\": 6, \"geodesics\": 6, \"links\": 12, \"vertices\": 9}, {\"dimensions\": [2, 1, 1], \"faces\": 11, \"flip_edges\": 15, \"geodesics\": 12, \"links\": 20, \"vertices\": 12}]\nRESOURCE: seconds=0.2974503749865107 rss_MiB=64.640625 limits=180sec/180MiB\nSOURCE_SHA256: 3b273aea658f7ca15b42285116da8a3db0e9f19a4f6604f01aa38becc9f3330a\n",
+  "stderr": "",
+  "elapsed_sec": 0.4037339687347412,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 95443,
+    "samples": 9,
+    "peak_tree_rss_bytes": 101957632,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8027-capture.py",
+  "capture_script_sha256": "04506708d080d15c99593bd3bc9889f1169990a3be4438b29e5a2af28c8795d6"
+}

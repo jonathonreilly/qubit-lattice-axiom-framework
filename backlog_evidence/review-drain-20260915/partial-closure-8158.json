@@ -1,0 +1,21 @@
+{
+  "pr": 8158,
+  "original_head": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+  "branch": "physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915",
+  "landing": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+  "source_verified_at": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8158-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T23:02:17Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915",
+    "headRefOid": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8158,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8158"
+  }
+}

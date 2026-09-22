@@ -1,0 +1,39 @@
+{
+  "kind": "early_untracked_affected_source_read_not_formal_cold",
+  "original_report": "drain8161-original-review.json",
+  "author_manifest": "drain8161-author-prepared-v1.json",
+  "read": "Original-to-canonical complete proof diffs, all5runner diffs, full supporting diagnostic and recovery mapping; retained proof bodies compared to originals read in full previously. No primary execution.",
+  "math": "Four complete core proofs and original calculation domains/formulas/tolerances retained. Working affine, centered-sector and coupled-denominator lemmas remain in full final proofs. Unique characteristic-function proof retained canonically.",
+  "archive_check": "47 decompressed payloads byte-identical to original Git objects; original modes and blobs in manifest",
+  "findings": [
+    "Affinedriver undefined AUDIT_INPUT_PATHS because original spaced AUDIT_INPUT_FILES=[] replacement missed; blocks importing vertex runner too; author notified before execution.",
+    "Coupled-vacuum original says other reference notes motivate but are not required to define calculation; supplied current/Fock proof is independent. Distinguish contextual links from declared load-bearing dependencies.",
+    "Infrared N5 per_site generic execution claim must narrow to momentum/quadrature only or not-executed.",
+    "Gauss stale ../evidence and draft PR context prose needs canonical correction.",
+    "Five OPEN physical routes remain honest but do not themselves satisfy five-closed-route packet certification. No broad physical no-go is claimed."
+  ],
+  "scope": "No absence of critical math detected. Preservation finding substantively addressed; final source/helper-map/evidence gates pending.",
+  "resource_scope": "Original caps180/180/180/120/180s retained, proposed512MiB sequential process-tree cap plausible from chunked rank5 sums, dense cube<=L4, sliced N<=256 grids, sparse ring and finite coupled grid<=L12. No measured resource assertion.",
+  "notes_snapshot": [
+    {
+      "path": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "f974f3eb8f0ba3bb49230a052732adf460ff2d6d7c2d6ce07a4d1ba94385a521"
+    },
+    {
+      "path": "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "c3919641ace849d9864c31110a675218a77df814f9438df70028466b0f176e89"
+    },
+    {
+      "path": "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "f0201362f1e057b233e291d40f95c7fd3a98ea6845e5cbb04600bed79a5e0e72"
+    },
+    {
+      "path": "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "5a59cc3ace82d5cf35d432fd6cfa8aecf67d669ccdd684eb85b66c68765e8f97"
+    },
+    {
+      "path": "docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md",
+      "sha256": "738c65680f822f85a7616ba1c38fb8eb34669c6f4703bd08eaa0a0063dc6c574"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+--- v1/docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ v2/docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -238,11 +238,11 @@
+ 
+ ## Historical finite challenges
+ 
+-The separate programs in ../evidence use actual integer cochains and an actual charged ring Hamiltonian. They test the fractional kernel, Poisson normalization, translated moments and normalized hopping overlaps by distinct sums; compare independent free-cube spectra; construct the physical Gauss basis; and compare direct Hamiltonian compression with the exact theta formulas. The ring additionally measures off-space action and the variational energy excess over its actual finite ground energy. It demonstrates why tiny compact compression error does not certify a dynamical elimination.
++The linked canonical affine-theta and charged-ring programs use actual integer cochains and an actual charged ring Hamiltonian. They test the fractional kernel, Poisson normalization, translated moments and normalized hopping overlaps by distinct sums; compare independent free-cube spectra; construct the physical Gauss basis; and compare direct Hamiltonian compression with the exact theta formulas. The ring additionally measures off-space action and the variational energy excess over its actual finite ground energy. It demonstrates why tiny compact compression error does not certify a dynamical elimination.
+ 
+ The analytic theorem uses g<=0.1 and arbitrary free cubes. The finite identity challenges deliberately include larger g, where dropping the affine normalization gives visible errors; they do not certify the theorem by sampling its asymptotic regime. Floating cutoff comparisons are not rigorous tail intervals, and no three-dimensional phase is simulated. The numerical results described here are historical author evidence and grant no current independent review status.
+ 
+-Proof-method provenance: the current-main carrier and free-cube filling proposals at e0ef7cf4633034a8c1e6d57f5812cc4275bf1349 suggested the cluster argument. The needed d=3, p=2 filling, square-root covariance, affine-source estimate and compression are stated and derived here. The prior charged-rotor draft PR8160 is context, not a theorem input to this construction.
++Proof-method provenance: the current-main carrier and free-cube filling proposals at e0ef7cf4633034a8c1e6d57f5812cc4275bf1349 suggested the cluster argument. The needed d=3, p=2 filling, square-root covariance, affine-source estimate and compression are stated and derived here. Earlier charged-rotor exploration is historical context, not a theorem input to this construction.
+ 
+ ## Dependency and proposal record
+ 
+--- v1/docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ v2/docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -3,7 +3,7 @@
+ claim_type: bounded_theorem
+ claim_scope: "Specified paired Maxwell/Wilson filled-sea reference: exact current/Fock normalization, uniform first vacuum-resolvent densities and cutoff limits retaining finite-grid node atoms; no all-order or fixed-coupling phase conclusion."
+ runner: scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py
+-upstream_dependencies: ["rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16", "rotor_reference_vertex_infrared_weighted_norms_bounded_theorem_note_2026-09-16"]
++upstream_dependencies: []
+ ---
+ 
+ **Type:** bounded_theorem
+@@ -214,6 +214,6 @@
+ 
+ [Original recovery](work_history/review_loop/pr8161/README.md) and [exact manifest](work_history/review_loop/pr8161/original-manifest.json) preserve all original proofs, working notes, programs and outputs.
+ 
+-Actual linked mathematical context: [ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16](ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md), [ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16](ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++Non-load-bearing comparison context (the reference and proof are independently specified above): [ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16](ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md), [ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16](ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md).
+ 
+ Canonical caches: [rotor_coupled_vacuum_resolvent_check_2026_09_16](../logs/runner-cache/rotor_coupled_vacuum_resolvent_check_2026_09_16.txt). These must match the current source/input bytes.
+--- v1/scripts/rotor_gauss_affine_theta_check_2026_09_16.py
++++ v2/scripts/rotor_gauss_affine_theta_check_2026_09_16.py
+@@ -3,7 +3,7 @@
+ Finite sums and cutoff comparisons are numerical evidence, not uniform proofs.
+ """
+ AUDIT_TIMEOUT_SEC = 180
+-AUDIT_INPUT_FILES = []
++AUDIT_INPUT_PATHS = ('docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md')
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ 
+--- v1/scripts/rotor_reference_infrared_norm_check_2026_09_16.py
++++ v2/scripts/rotor_reference_infrared_norm_check_2026_09_16.py
+@@ -60,7 +60,7 @@
+     print('PASS: four spherical quadrature refinements at original tolerances')
+     print('PASS: quartic-coefficient comparison')
+     print('per_element: executed — five periodic Cartesian lattice grids')
+-    print('per_site: executed — finite supplied-reference configurations at declared cutoffs')
++    print('per_site: not executed — this program evaluates momentum grids and spherical quadrature, not site-resolved configurations')
+     print('per_mode: executed — finite matrices or Fourier grids described in the JSON evidence')
+     print('per_block: executed — quartic-coefficient comparison')
+     print('lattice_wide: checked and not executed — written uniform bounds and limit proofs; no actual interacting infinite-volume state executed')
+--- v1/scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py
++++ v2/scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python3
+ """Free coupled vacuum coefficient: Pauli formula vs real-space CAR action."""
+ AUDIT_TIMEOUT_SEC=180
+-AUDIT_INPUT_PATHS = ('docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md')
++AUDIT_INPUT_PATHS = ('docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md',)
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ 

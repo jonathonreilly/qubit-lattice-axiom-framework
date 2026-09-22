@@ -1,0 +1,6 @@
+{
+  "clarifies": "drain8161-authority-read-appendix.json",
+  "remote_main_at_appendix": "49777d85533d8403cd3e30471e1123bc2c05fd56",
+  "fb490a1997fedac4a951220ccf08d95197a9e0a7_role": "local integration candidate, not remote main at appendix time",
+  "effect": "Authority byte equality holds; wording current_main_comparison_commit in appendix denotes local candidate only."
+}

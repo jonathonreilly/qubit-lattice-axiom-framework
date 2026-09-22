@@ -1,0 +1,12 @@
+PR #8597: ail66: the fall is owed by the ledger — a field energy per local tick requires the content's stress gradient to equal its weight (source-link direction, block 14)
+branch physics-loop/admissibility-induced-law-block66-the-fall-is-owed-by-the-ledger-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_fall_is_owed_by_the_ledger_a_field_energy_per_local_tick_requires_the_contents_stress_gradient_to_equal_its_weight_2026_09_21.py: rc=0 PASS=12 FAIL=0
+   mutation rate_commutes_with_the_momentum: expected B observed B ok
+   mutation clocked_walk_conserves_momentum: expected B observed B ok
+   mutation force_density_ignores_the_gradient: expected B observed B ok
+   mutation ledger_identity_without_the_rates: expected C observed C ok
+   mutation ledger_identity_needs_the_curvature_member: expected C observed C ok
+   mutation weight_is_half_the_energy_times_gradient: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

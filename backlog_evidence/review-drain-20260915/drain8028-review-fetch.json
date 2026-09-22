@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "36843ba7b46901269911496f8dfdef6fd5f63cae",
+  "fetched_ref": "refs/review-loop/fetched/8028-aca788a3c12943f2b91f8ee83c6cf051",
+  "metadata": {
+    "baseRefName": "codex/static-geodesic-block37-20260907",
+    "headRefName": "codex/static-uniform-block38-20260907",
+    "headRefOid": "36843ba7b46901269911496f8dfdef6fd5f63cae",
+    "isDraft": true,
+    "number": 8028,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

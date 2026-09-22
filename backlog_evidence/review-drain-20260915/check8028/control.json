@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "nilpotent_creation",
+    "bounded_polynomial_inverse",
+    "ghost_projection_intertwines",
+    "neutral_creation_equivariant",
+    "resolvent_sup_L1_z-2",
+    "resolvent_sup_L1_z0",
+    "resolvent_sup_L1_z3/4",
+    "resolvent_sup_L2_z-2",
+    "resolvent_sup_L2_z0",
+    "resolvent_sup_L2_z3/2",
+    "resolvent_sup_L7_z-2",
+    "resolvent_sup_L7_z0",
+    "resolvent_sup_L7_z21/4",
+    "nine_component_amplification_sharp",
+    "SU3_completeness_Casimir",
+    "framework_energy_per_link"
+  ],
+  "passed": 16,
+  "elapsed_seconds": 0.0011396670015528798,
+  "source_sha256": "635dade5838811bd70f694ed14165c612b6c0d07197ae040fabac90ae2bcb30e",
+  "scope": "Finite exact algebra only; imported coordinate theorem and domain/sector proof separately read analytically."
+}

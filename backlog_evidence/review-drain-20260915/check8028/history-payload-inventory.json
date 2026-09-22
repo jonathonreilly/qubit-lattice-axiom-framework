@@ -1,0 +1,395 @@
+[
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+    "bytes": 821,
+    "kind": "dict",
+    "keys": [
+      "explicit_ephemeral_rehydration",
+      "sources",
+      "row_assignments",
+      "scope"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+    "bytes": 43,
+    "kind": "dict",
+    "keys": [
+      "lock",
+      "status"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/FINAL_MAIN66_READINESS.json",
+    "bytes": 8826,
+    "kind": "dict",
+    "keys": [
+      "base",
+      "changed_path_count",
+      "checked",
+      "control_failures",
+      "diff_scope",
+      "failures",
+      "schema"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/FINAL_MAIN66_STRICT.log",
+    "bytes": 14003,
+    "head": "audit_lint: 4491 rows checked\n  9 warnings:\n    claim_type_defaulted: 9\n      WARN: ckm_atlas_axiom_closure_note: claim_type silently defaulted to positive_theorem; add an explicit",
+    "tail": "/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.\n      ... and 3 more\n  OK: no errors\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+    "bytes": 1850,
+    "kind": "dict",
+    "keys": [
+      "child_science_sha256",
+      "consumer_sha256",
+      "main_pin",
+      "new_parent_science_head",
+      "old_head",
+      "protected_file_count",
+      "protected_manifest_sha256",
+      "scope"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/FINAL_VOCAB_LINT.txt",
+    "bytes": 81,
+    "head": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+    "tail": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/FROZEN_PORT_RECEIPT.json",
+    "bytes": 444,
+    "kind": "dict",
+    "keys": [
+      "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py",
+      "scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/FULL_PIPELINE.log",
+    "bytes": 21309,
+    "head": "began full build d7037dc0f9a6\n==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)\ncache rematerialized\n==> 0/18 check_axiom_premise_clean.py (guard: ",
+    "tail": "ERGENCE.md for the\n    audit-vs-publication-tables gap report.\n  Read docs/publication/ci3_z3/<NAME>_EFFECTIVE_STATUS.md for the audit-\n    derived view of each publication table.\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/LOCK_RELEASE.json",
+    "bytes": 43,
+    "kind": "dict",
+    "keys": [
+      "lock",
+      "status"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/PACK_INDEX.json",
+    "bytes": 7579,
+    "kind": "dict",
+    "keys": [
+      ".claude/science/physics-loops/static-charge-uniform-20260907/ARTIFACT_PLAN.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/GOAL.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/HANDOFF.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/LITERATURE_BRIDGES.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/PORT_RECEIPT.json",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/PROOF_REVIEW.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/PR_BACKLOG.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/ROUTE_PORTFOLIO.md",
+      ".claude/science/physics-loops/static-charge-uniform-20260907/SCOPED_VALIDATION.md"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/PORT_RECEIPT.json",
+    "bytes": 1260,
+    "kind": "list",
+    "keys": 2
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/PUBLICATION_RECEIPT.json",
+    "bytes": 676,
+    "kind": "dict",
+    "keys": [
+      "baseRefName",
+      "headRefName",
+      "headRefOid",
+      "isDraft",
+      "mergeStateStatus",
+      "mergeable",
+      "state",
+      "statusCheckRollup",
+      "url"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+    "bytes": 740,
+    "kind": "dict",
+    "keys": [
+      "explicit_reviewed_overlap_hashes",
+      "historical_validation",
+      "old_head",
+      "unchanged_child_hashes",
+      "upstream"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/STAGING_VALIDATION.json",
+    "bytes": 1619,
+    "kind": "dict",
+    "keys": [
+      "proof_reviews",
+      "canonical_port_review",
+      "source_body",
+      "helpers",
+      "repo_writes",
+      "full_pipeline_run"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/STATE.yaml",
+    "bytes": 925,
+    "head": "loop: static-charge-uniform-20260907\nphase: published_draft_review\nactual_current_surface_status: conditional-support\nconditional_surface_status: conditional-support\nhypothetical_a",
+    "tail": "eady_claims: 16\nvalidated_main_snapshot: b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92\npr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8028\nlock_released: true\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/STRICT_LINT.log",
+    "bytes": 13464,
+    "head": "audit_lint: 4527 rows checked\n  9 warnings:\n    claim_type_defaulted: 9\n      WARN: ckm_atlas_axiom_closure_note: claim_type silently defaulted to positive_theorem; add an explicit",
+    "tail": "/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.\n      ... and 3 more\n  OK: no errors\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/UPSTREAM_SYNC_PIPELINE.log",
+    "bytes": 21456,
+    "head": "began full build caaa0ffb3fc1\n==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)\ncache rematerialized\n==> 0/18 check_axiom_premise_clean.py (guard: ",
+    "tail": "ERGENCE.md for the\n    audit-vs-publication-tables gap report.\n  Read docs/publication/ci3_z3/<NAME>_EFFECTIVE_STATUS.md for the audit-\n    derived view of each publication table.\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/UPSTREAM_SYNC_READINESS.json",
+    "bytes": 8797,
+    "kind": "dict",
+    "keys": [
+      "base",
+      "changed_path_count",
+      "checked",
+      "control_failures",
+      "diff_scope",
+      "failures",
+      "schema"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/UPSTREAM_SYNC_STRICT.log",
+    "bytes": 13466,
+    "head": "audit_lint: 4535 rows checked\n  12 warnings:\n    claim_type_defaulted: 12\n      WARN: ckm_atlas_axiom_closure_note: claim_type silently defaulted to positive_theorem; add an explic",
+    "tail": "/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.\n      ... and 3 more\n  OK: no errors\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/evidence/native/PORT_RECEIPT.json",
+    "bytes": 1260,
+    "kind": "list",
+    "keys": 2
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/evidence/native/native_canonical_result.json",
+    "bytes": 134521,
+    "kind": "dict",
+    "keys": [
+      "N5_scopes",
+      "TOTAL",
+      "U_graph_flows",
+      "checks",
+      "cube_cases",
+      "cube_edges",
+      "cube_vertices",
+      "fixed_ghost_flows",
+      "ghost_flows",
+      "line_dropped_gauss_flows",
+      "line_full_flows",
+      "nine_source_norm_cases",
+      "resource_limits",
+      "rss_MiB",
+      "scope"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/evidence/native/native_canonical_stdout.txt",
+    "bytes": 542,
+    "head": "PASS gauge_wilson_static_source_sector_controls_2026_09_07.py\nper_element: 1 checks; actual unit cube geometry\nper_site: 6 checks; boundary Gauss and ghost-shortcut controls\nper_mo",
+    "tail": "and resources; no imported-theorem proof\nTOTAL: 32\nseconds: 0.010738167009549215; rss_MiB: 18.59375\nsource_sha256: 6d3b86ef257f06301d3c37d56ca2b0fef3f26627c8518390c866a6ef5f896c37\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/evidence/native/result.json",
+    "bytes": 133887,
+    "kind": "dict",
+    "keys": [
+      "TOTAL",
+      "checks",
+      "cube_vertices",
+      "cube_edges",
+      "cube_cases",
+      "line_full_flows",
+      "line_dropped_gauss_flows",
+      "U_graph_flows",
+      "ghost_flows",
+      "fixed_ghost_flows",
+      "nine_source_norm_cases",
+      "toy",
+      "seconds",
+      "rss_MiB",
+      "source_sha256"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/evidence/native/root_canonical_result.json",
+    "bytes": 3099,
+    "kind": "dict",
+    "keys": [
+      "N5_scopes",
+      "TOTAL",
+      "check_count",
+      "checks",
+      "elapsed_sec",
+      "gauge_toy_dimension",
+      "ghost_toy_dimension",
+      "orientations",
+      "peak_rss_mib",
+      "resource_limits",
+      "rss_MiB",
+      "scope",
+      "seconds",
+      "source_dimension",
+      "source_sha256"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/evidence/native/root_canonical_stdout.txt",
+    "bytes": 568,
+    "head": "PASS gauge_wilson_static_source_dirichlet_controls_2026_09_07.py\nper_element: 10 checks; eight SU3 generators,64 trace pairings and Casimir\nper_site: 3 checks; three exact SU3 path",
+    "tail": "imported-theorem or infinite-volume proof\nTOTAL: 42\nseconds: 0.14027674999670126; rss_MiB: 59.53125\nsource_sha256: 85d0f36d4661a23535a5b8d6b0f04d7d5bedc37be569b1a922bc210c6101d63b\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/evidence/root/SYNTAX_FAILURE.txt",
+    "bytes": 229,
+    "head": "Initial run failed before execution: SyntaxError at line49, missing space in conditional expression else1024. Original source retained. No numerical result or scientific assertion ",
+    "tail": "at line49, missing space in conditional expression else1024. Original source retained. No numerical result or scientific assertion was produced before this syntax-only correction.\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/evidence/root/result.json",
+    "bytes": 2278,
+    "kind": "dict",
+    "keys": [
+      "status",
+      "checks",
+      "check_count",
+      "su3_generators",
+      "orientations",
+      "source_dimension",
+      "ghost_toy_dimension",
+      "gauge_toy_dimension",
+      "elapsed_sec",
+      "peak_rss_mib",
+      "scope"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/native_canonical_result.json",
+    "bytes": 134521,
+    "kind": "dict",
+    "keys": [
+      "N5_scopes",
+      "TOTAL",
+      "U_graph_flows",
+      "checks",
+      "cube_cases",
+      "cube_edges",
+      "cube_vertices",
+      "fixed_ghost_flows",
+      "ghost_flows",
+      "line_dropped_gauss_flows",
+      "line_full_flows",
+      "nine_source_norm_cases",
+      "resource_limits",
+      "rss_MiB",
+      "scope"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/native_canonical_stdout.txt",
+    "bytes": 542,
+    "head": "PASS gauge_wilson_static_source_sector_controls_2026_09_07.py\nper_element: 1 checks; actual unit cube geometry\nper_site: 6 checks; boundary Gauss and ghost-shortcut controls\nper_mo",
+    "tail": "and resources; no imported-theorem proof\nTOTAL: 32\nseconds: 0.010738167009549215; rss_MiB: 18.59375\nsource_sha256: 6d3b86ef257f06301d3c37d56ca2b0fef3f26627c8518390c866a6ef5f896c37\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/root_canonical_result.json",
+    "bytes": 3099,
+    "kind": "dict",
+    "keys": [
+      "N5_scopes",
+      "TOTAL",
+      "check_count",
+      "checks",
+      "elapsed_sec",
+      "gauge_toy_dimension",
+      "ghost_toy_dimension",
+      "orientations",
+      "peak_rss_mib",
+      "resource_limits",
+      "rss_MiB",
+      "scope",
+      "seconds",
+      "source_dimension",
+      "source_sha256"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/root_canonical_stdout.txt",
+    "bytes": 568,
+    "head": "PASS gauge_wilson_static_source_dirichlet_controls_2026_09_07.py\nper_element: 10 checks; eight SU3 generators,64 trace pairings and Casimir\nper_site: 3 checks; three exact SU3 path",
+    "tail": "imported-theorem or infinite-volume proof\nTOTAL: 42\nseconds: 0.14027674999670126; rss_MiB: 59.53125\nsource_sha256: 85d0f36d4661a23535a5b8d6b0f04d7d5bedc37be569b1a922bc210c6101d63b\n"
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/validated_claims_before_generated_cleanup.json",
+    "bytes": 36998,
+    "kind": "dict",
+    "keys": [
+      "gauge_wilson_compact_cube_all_coupling_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_finite_qubit_cutoff_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_galerkin_spectral_enclosures_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_character_mixing_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_nonlinear_saddle_dilated_kernel_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_weak_coupling_window_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_compact_interacting_hamiltonian_limit_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_physical_transfer_geometry_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_simultaneous_transfer_limit_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/static-charge-uniform-20260907/validated_readiness_before_generated_cleanup.json",
+    "bytes": 9671,
+    "kind": "dict",
+    "keys": [
+      "base",
+      "changed_path_count",
+      "checked",
+      "control_failures",
+      "diff_scope",
+      "failures",
+      "schema"
+    ]
+  }
+]

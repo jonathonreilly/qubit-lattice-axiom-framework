@@ -1,0 +1,305 @@
+{
+  "status": "UNTRACKED AUTHOR PREPARATION; NO SCIENTIFIC PASS",
+  "base": "49777d85533d8403cd3e30471e1123bc2c05fd56",
+  "notes": [
+    "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+  ],
+  "supporting_proof": "docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md",
+  "runners": [
+    "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+    "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+    "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+    "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+    "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py"
+  ],
+  "inputs": {
+    "scripts/rotor_gauss_affine_theta_check_2026_09_16.py": [
+      "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md"
+    ],
+    "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py": [
+      "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py": [
+      "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "scripts/rotor_gauss_affine_theta_check_2026_09_16.py"
+    ],
+    "scripts/rotor_reference_infrared_norm_check_2026_09_16.py": [
+      "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py": [
+      "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ]
+  },
+  "helper_map_plan": {
+    "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16": [
+      "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py"
+    ],
+    "rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16": [
+      "scripts/rotor_gauss_affine_theta_check_2026_09_16.py"
+    ]
+  },
+  "original_count": 47,
+  "completed_family_counts": {
+    "scripts/rotor_gauss_affine_theta_check_2026_09_16.py": 4,
+    "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py": 3,
+    "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py": 2,
+    "scripts/rotor_reference_infrared_norm_check_2026_09_16.py": 3,
+    "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py": 3
+  },
+  "timeouts_seconds": {
+    "scripts/rotor_gauss_affine_theta_check_2026_09_16.py": 180,
+    "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py": 180,
+    "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py": 180,
+    "scripts/rotor_reference_infrared_norm_check_2026_09_16.py": 120,
+    "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py": 180
+  },
+  "proposed_external_memory_cap_bytes": 536870912,
+  "resource_assessment": "Original time caps retained. Affine rank-five sums chunk first coordinate; largest direct tail19^4 by12, cube L<=4 dense matrices. Infrared grids slice by one coordinate at N<=256. Ring sparse finite cutoff; coupled grids L<=12. Proposed512MiB sequential external tree cap, subject cold confirmation; no measured new runtime or peak claim.",
+  "files": [
+    {
+      "path": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "f974f3eb8f0ba3bb49230a052732adf460ff2d6d7c2d6ce07a4d1ba94385a521"
+    },
+    {
+      "path": "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "c3919641ace849d9864c31110a675218a77df814f9438df70028466b0f176e89"
+    },
+    {
+      "path": "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "f0201362f1e057b233e291d40f95c7fd3a98ea6845e5cbb04600bed79a5e0e72"
+    },
+    {
+      "path": "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "5a59cc3ace82d5cf35d432fd6cfa8aecf67d669ccdd684eb85b66c68765e8f97"
+    },
+    {
+      "path": "docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md",
+      "sha256": "738c65680f822f85a7616ba1c38fb8eb34669c6f4703bd08eaa0a0063dc6c574"
+    },
+    {
+      "path": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+      "sha256": "1e064111adec555dd5b15883fecb70c01ebce4d192ced7eac71fbf2ae5ee6a14"
+    },
+    {
+      "path": "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+      "sha256": "d6aa3c56de18e45c4d9cf57e4ae1512006fd054387cd1ed50783aaa4c1207c5f"
+    },
+    {
+      "path": "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+      "sha256": "db2906f13d4415e62ebbfb68e5cd79116efd78809a1d0324c38d147eee8f30b7"
+    },
+    {
+      "path": "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+      "sha256": "79be6cfba9acc8b25804cf1ae58c6aaf04466b6b27612865c23ad03d5d6d370c"
+    },
+    {
+      "path": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+      "sha256": "f7eacb8e1c49a4cefdadf689123fd9168422e7750ea8ee75379855b429ea3052"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_000_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "sha256": "48fea6b7ee0ddff9a4ba5496d603885599ce08089c4fa54322cfb7634ee28b7f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_001_CLAIM_STATUS_CERTIFICATE.md.gz",
+      "sha256": "4b037613871233e6160cfafde0f5dc4d7be92e45dec11e3b0e1e07aa5e859f8a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_002_GOAL.md.gz",
+      "sha256": "8fa9105ec4014de23a2a9ece051d158f9c83fbbf9aac7f31aff3b10762390c1d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_003_HANDOFF.md.gz",
+      "sha256": "1185fda1ccc84666bad8ccebb0e4cffa19759ffd13113b2c57565e0785fe9c87"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_004_MANIFEST.json.gz",
+      "sha256": "e85eb1aba3b3fc11853d11703221be32890ebe62325a977c96f3cef14d2c89f4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_005_OPPORTUNITY_QUEUE.md.gz",
+      "sha256": "510df0f723c84555ea587d81aeb973c403a11d488b6b0075ebc101037e4d6da8"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_006_READING_LEDGER.md.gz",
+      "sha256": "001715fa8c3965fbde0be5ccefff63277262abbfda08d4ddc51bf2013134131c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_007_README.md.gz",
+      "sha256": "fc2f416c34453961362d0a3cf6198aa2c8e6c37bb48b781fd9e9c193d92e5845"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_008_STATE.yaml.gz",
+      "sha256": "17249c4049883fa258d09cc9061e80a6b343663db83219bfce24f136344af65f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_009_TRACE_GATE.md.gz",
+      "sha256": "ac3c6061736ad03aeed0e8b2aebba45b81bf1f25dc9f87633de3ba0869a76478"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_010_BLOCK01_AFFINE_THETA.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_011_BLOCK01_AFFINE_THETA.stdout.txt.gz",
+      "sha256": "a9993a9374f32d67c4a8650ca9b74fc331abd349c6bc22ca5dd7a15308fee171"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_012_BLOCK01_CHARGED_RING.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_013_BLOCK01_CHARGED_RING.stdout.txt.gz",
+      "sha256": "b8eaa32e26f9731d2c3773bab411b779127354efc589fca3541ecff60554c2b6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_014_BLOCK02_ONE_PHOTON.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_015_BLOCK02_ONE_PHOTON.stdout.txt.gz",
+      "sha256": "dd143ee5d5c16ab8c8fbcae92b6f15719a36953b6bef5b09fdb3a1d5f858a6d4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_016_BLOCK03_INFRARED_VERTEX.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_017_BLOCK03_INFRARED_VERTEX.stdout.txt.gz",
+      "sha256": "368cebad98785a6799c0d8bb6e4e792b88b8e7545403e295a931ac63e98552d7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_018_BLOCK04_COUPLED_VACUUM.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_019_BLOCK04_COUPLED_VACUUM.stdout.txt.gz",
+      "sha256": "9fbe05c4688abcd8e6eae8e4f997aeb9b289f98bdd72b2e5c534aff6e325b40b"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_020_block01_affine_theta_check.py.gz",
+      "sha256": "6e01a20ac321cdbcdbbb387776e07dda43497e5b48803d897389b9fb87a2a7d7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_021_block01_charged_ring_compression.py.gz",
+      "sha256": "a4a14a04cf58deff2d679a8e794ccf8461bd92e5460d6c55050c75e8cda183e8"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_022_block02_one_photon_vertex_check.py.gz",
+      "sha256": "545e5a30e80328e1d07eecec025ecaee8a765217ddef48c4de313e21fecd2c43"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_023_block03_infrared_vertex_check.py.gz",
+      "sha256": "aea4747d1d48393b1f7a8962fa74aaf74c35029094833b58ce96bbe26d0f9624"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_024_block04_coupled_vacuum_check.py.gz",
+      "sha256": "cf5a046bef69a794c74018f861acd5432647e000903e97418405225d8efb1b47"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_025_BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md.gz",
+      "sha256": "c7751e6840d908fe78413d6b526e0b829fc5b2f34213f09fb22a71655989d2e9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_026_BLOCK01_VOLUME_VERSUS_SCALE_DIAGNOSTIC.md.gz",
+      "sha256": "2b109c58ee26614eaca343cf154881144a221215a356ae95f54f4231bab269f3"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_027_BLOCK01_WORKING_AFFINE_GAUSSIAN_DRESSING.md.gz",
+      "sha256": "6cd85a484fbca2650508baf7cf7a730d4a9eb631c63c78af06332777ff110763"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_028_BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md.gz",
+      "sha256": "0a25690f2645ce7d0e3e2b2611cf249fcab1ce5a4c34eefb195ee7a97d04d28f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_029_BLOCK02_WORKING_ONE_PHOTON_VERTEX.md.gz",
+      "sha256": "1d9414e799f5a781c65b6619347ce3e6d47fd5a4f6b8354edc6199248ae17b89"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_030_BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md.gz",
+      "sha256": "1f59995ebcdf4f3aa28d0d4806abc21cb030f56e2963424be3161d596a6efa1c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_031_BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md.gz",
+      "sha256": "a23468adad3a695b79f094d9bbcc252253673ae3b4646c39eb27ec8124a76074"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_032_BLOCK04_WORKING_COUPLED_FERMION_DENOMINATOR.md.gz",
+      "sha256": "7ee5bb9f52d82def00063f9df2bafcb0480aaef644e35d754996b2ded4ebfb42"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_033_BLOCK01_04_PERSONAL_PROOF_REVIEW.md.gz",
+      "sha256": "407de177d404ac8d463c801356f2ee447e871c274bb14f34e2a10abe823aaf3e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_034_BLOCK01_MUTATIONS.json.gz",
+      "sha256": "65f6b6ddbeea096a537c5934d9d2334acbaf04c096c380f737108010dd77a530"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_035_BLOCK01_MUTATIONS.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_036_BLOCK01_MUTATIONS.stdout.txt.gz",
+      "sha256": "b72f0097e8d8a8419aeaae82bf91313c2480c26b19535483409714514311c841"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_037_BLOCK01_PERSONAL_CHECKPOINT.json.gz",
+      "sha256": "9479b0266b9215549320c1d84a0d4461d5663e93df57d9699abd418ed1272738"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_038_BLOCK02_04_MUTATIONS.json.gz",
+      "sha256": "4a2b4f5d70064521a29bf9198d5fecfab04f316548cc7f731a0962af6ade34dd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_039_BLOCK02_04_MUTATIONS.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_040_BLOCK02_04_MUTATIONS.stdout.txt.gz",
+      "sha256": "378a6d435a5b52a829032bdbf5abdc6f093924d54579fc973f36f01dc4960ea5"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_041_BOUNDARY_STRESS_TEST.md.gz",
+      "sha256": "aed688f91be61d64d42cf2501a2b92c7f37d527a83ec297abf75262798c892f9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_042_FOCUSED_VERIFICATION.json.gz",
+      "sha256": "8b3904f3304cd3a6bd733a2cab0d10df471fe5806d64a44b42350fd589398c59"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_043_FOCUSED_VOCAB.stderr.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_044_FOCUSED_VOCAB.stdout.txt.gz",
+      "sha256": "f97925700ac823613caa1d4adade7e633dd4f657f28f23eb6e341080849ba0f0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_045_block01_mutation_checks.py.gz",
+      "sha256": "0a50de6ea250dbb9639df21c8565b81849327737b640703b834047bf4097dc49"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/8161_046_block02_04_mutation_checks.py.gz",
+      "sha256": "e1fd278b3f10d2b283a629bfea129a142b3cfc174ae849c2eaec302fc529e49c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/README.md",
+      "sha256": "48139494cbfa97de0f145b6e4e5f50aec75773b0d558dca362e7c7101b9e3289"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8161/original-manifest.json",
+      "sha256": "1923a535198c27caa6a65770a0f565ab4b42ede5aa8bd5566ecfe9c51a1a9079"
+    }
+  ]
+}

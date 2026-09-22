@@ -1,6 +1,6 @@
 {
- "edge_count": 13684,
- "node_count": 6234,
+ "edge_count": 13686,
+ "node_count": 6238,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5632,6 +5632,10 @@
   },
   "full128_two_rail_fixed_law_compositional_induction_bounded_theorem_note_2026-07-24": {
    "deps_hash": "39bd4d637769",
+   "out_degree": 2
+  },
+  "full_domain_matrix_kernel_and_autonomous_projective_record_corridor_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "f18f4cefcd73",
    "out_degree": 2
   },
   "full_fock_unit_weight_source_support_note_2026-07-28": {
@@ -24335,6 +24339,18 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8137.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8143.pr8143_conformance": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8143.pr8143_handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8143.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

@@ -1,0 +1,43 @@
+[detached HEAD fb490a1997] Preserve independently reviewed source unit PR8158
+ Date: Tue Sep 22 18:53:05 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 27 files changed, 769 insertions(+)
+ create mode 100644 docs/ADMISSIBILITY_RULE_FINITE_UNRECORDED_COMPONENT_FACTORIZATION_AND_ATTACHMENT_FACTORS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/review_loop/pr8158/README.md
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/108c9cf3f923b595a365d0571d17cc7201d473071bf21658ab099ba828ad3aee.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/13caa79513863433a3c602ab12903cf4cfeadc8accf44712b89425fcf34bbfe2.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/15f0d271f29b27b1e49907c2afac569b97af71c36a23e8dcff43962b3d9d15c6.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/1a8a46077ab9fe971200c6935c9747c7d580fad4ba6b4f51ff594165dc2d9170.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/1cea68cffd3315009b8a6e8dfc74d3acdf3679dd9855af4b0cb6a52ef730ea05.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/2954707fdb5ba3a29748ef8b64544274036d49ecda5e0e495a0f83d6d466ee22.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/434a81baa578e234ad7e52bd9d9de74f824c23d5608a2a13f4703e66bb14af36.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/4e83f5e65bb514598806960494ba46eaa171606fff74806f971cdfbfd4d77fc1.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/59d8c8889583ff028c917f41189aeea226a24b627c9c3a76a67c41381354e5f4.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/73393cb2db4542537882a99c10aecaec9903495ec3e0a677562dd453bb145579.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/79c75253ed815ebbe92708d64b66616426497363ea600a346d112b7cb873ec35.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/7d88ce49adab38507f75ca20043919722ee8f0914febdb5dcc3e342ab8f27ad8.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/8350432a6c914c38286b630c35ab28e394c767ec403688543d978c22bfd0b17b.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/9767fa7d6b9f0b2e8dd2e5e2baf6578acae4a9d028649ae2679adbcfefbfaa1f.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/a907ead9af5246a4910f8d67de17570787c8d6fefc004d0420f9fee6c3ed67e1.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/ab1bd0fb87f2c08fa67bc506e0e73aaace6e2902a1594e2165f925a95cc22b04.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/ae6fe4600998c528b415fe8b1ba699b036ca11138ec1de18d5cf42ecb75dbace.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/c7d1e7aed09daf6d949c8c5c66806eb56175ee3a8c0d215efa61611c04b3c3d5.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/cebfb114acd8c4f043509fe062e5f349e33522cff18c8a52c1014e41b34afe4a.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/d4449cea1eca7383f095540211086ff4d746ef848ecc72a09af94df48c7f5bf8.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/fabcfa802e1a950ccc11563c3a098164a867d13fc9f460b0770acc662969bcec.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/objects/fbc17666daf67ba4a6d9790dc3b597ae77738bee33204ce1d64e12bb9fe854a6.gz
+ create mode 100644 docs/work_history/review_loop/pr8158/original-manifest.json
+ create mode 100644 logs/runner-cache/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.txt
+ create mode 100755 scripts/admissibility_rule_unrecorded_sites_free_window_versus_integrated_exterior_readings_2026_09_15.py
+FROZEN fb490a1997fedac4a951220ccf08d95197a9e0a7 sources 27 inputs 41 notes 1

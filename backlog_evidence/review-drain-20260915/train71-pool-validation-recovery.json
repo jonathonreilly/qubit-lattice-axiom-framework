@@ -1,0 +1,19 @@
+{
+  "head": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+  "owner": "train71",
+  "archive": "train71-pool-validation-recovery.tar.gz",
+  "archive_sha256": "f240c7184fcbd1d1288f6fb77b3c85e3b8cda034ebc3a92581d445d14c64ca94",
+  "paths": {
+    "docs/audit/AUDIT_LEDGER.md": "a2fef1bbd9920cd3b8c1f0de0fbd8bf642187b007d0551b9aecb72c29761e133",
+    "docs/audit/data/audit_ledger.json": "5cfc1a1bb41b9c064b8fd4ec7d95c0067b34d7efbe582baccfee7547dc46161b",
+    "docs/audit/data/audit_publication_lane.json": "0ed52541d717dd968137219093414817727b087ec596711dd46e49bd7d9b77fa",
+    "docs/audit/data/audit_queue.json": "14df4e7445af0bcbc95561703e8e8cd10d28f9c668ab6f310eccbbcd67b79636",
+    "docs/audit/data/citation_graph.json": "c76f07314c21b7fed237423e81c0613606da2feb4137041bea38b07b175bbb3d",
+    "docs/audit/data/ledger_cache_manifest.json": "07999885341ca58b5956c9c6ea3d981c35b078c3ac058f18992f1bf98cf06fb5",
+    "docs/audit/data/publication_gap.json": "2315103e5bfa6ea47a66bae3cb74099678becd6575d78be073a3f89ea08958a6",
+    "docs/audit/data/runner_classification.json": "5a05f1d4509485a5388f92815a91e22c1a938d51e760c7e8a7f870cbd18fafee",
+    "docs/audit/data/static_pipeline_checkpoint.json": "692eae1a6b85e7a7e3049e1764ff104b1ce7c37b6be889664d8b154de2654c70",
+    "docs/audit/data/static_pipeline_checkpoint.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "boundary": "Generated validation only; preserved decoded identities before releasing an exclusively owned landed checkout"
+}

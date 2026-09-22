@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8137-positive-preexecution",
+  "tree": "131fa5290ddc370f1ca287b204e4762ce718eff4",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/SEQUENTIAL_FORMATION_PATH_AND_STAR_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "sequential_formation_path_and_star_identities_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8761,
+      "misses": 4438
+    },
+    "packet_imports": {
+      "hits": 8751,
+      "misses": 4436
+    },
+    "declared_inputs": {
+      "hits": 8786,
+      "misses": 4569
+    }
+  },
+  "record_sha256": "e7658473b903be6ed0e81431c2b266b3dbe8aebcddfe9660276422635bf21755",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

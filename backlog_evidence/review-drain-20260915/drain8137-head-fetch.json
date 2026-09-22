@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "d15d5d9074e343563700691afcfddb5afc761a21",
+  "fetched_ref": "refs/review-loop/fetched/8137-149403440bd046ea80ad9b124cfeca45",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/possibility-symmetric-order-dependence-20260915",
+    "headRefOid": "d15d5d9074e343563700691afcfddb5afc761a21",
+    "isDraft": false,
+    "number": 8137,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

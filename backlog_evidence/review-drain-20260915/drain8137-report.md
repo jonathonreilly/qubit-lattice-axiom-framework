@@ -1,0 +1,7 @@
+# PR8137 review disposition: positive identities and deferred general exclusion
+
+The source review retains conditional path/star joint-law identities, cubic residual formulas, exact sphere moments and explicit scope counterexamples. It fixes the all-window, pointwise-continuous, mixed-radius, premise and tautological-test defects. The full original14-path disposition is in `drain8137-final-review.json`; original science proofs remain recoverable at frozen head `d15d5d9074e343563700691afcfddb5afc761a21`. The original branch must remain because the general negative-certification submission did not land.
+
+Original independent reviewer `/root/review_8011` read the complete source and confirmed all corrections in the same session. Eleven independent controls passed. The sole final primary capture passed33 checks and zero failures in0.079963 seconds, with a120-second limit and sampled peak50,642,944 bytes under a384MiB watchdog. Exact current cache/source/input identities and source dispositions are bound in `drain8137-unit-final.json` and `drain8137-final-review.json`.
+
+The remaining general negative certification is rejected for incomplete exact-target N1 evidence; the submission's broad statements were also narrowed by explicit counterexamples. This does not certify a general mathematical impossibility or apply an audit verdict. See the train58 landing receipt for the final main SHA and combined validation. This report is a prepared closure explanation; landing is established only when that receipt records LANDED.

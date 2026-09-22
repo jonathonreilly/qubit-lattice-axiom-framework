@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checks": [
+    "radial_nilpotent_strictly_positive_markov",
+    "radial_nonconstant_Haar_square",
+    "radial_not_reversible",
+    "delayed_variation_all_path3_orders_iid",
+    "delayed_variation_star4_distinguishes",
+    "star4_probability_normalization",
+    "zonal_normalization",
+    "zonal_dipole_by_antiderivative",
+    "zonal_quadrupole_by_antiderivative",
+    "equator_four_angles_second_moment",
+    "haar_second_moment_by_integral"
+  ],
+  "count": 11,
+  "elapsed_seconds": 0.0005667500081472099,
+  "radial_counterexample": [
+    [
+      "5/12",
+      "5/12",
+      "1/6"
+    ],
+    [
+      "1/4",
+      "1/4",
+      "1/2"
+    ],
+    [
+      "1/3",
+      "1/3",
+      "1/3"
+    ]
+  ],
+  "scope": "Independent exact counterexamples and moment integrations; no primary runner import or execution",
+  "continuous_null_variation": "On S2 set K0=K1=Haar; Km=Haar except when at least two recorded directions coincide, then delta at their common direction (for m=2). SO3-covariant and nonconstant pointwise; coincidence is Haar^2-null. By induction every finite sequential product remains iid Haar. Thus pointwise variation is insufficient."
+}

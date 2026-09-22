@@ -1,0 +1,119 @@
+{
+  "head": "d15d5d9074e343563700691afcfddb5afc761a21",
+  "delta_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+  "current_base": "59024639572d6d3a1091c727297b18c350d3f484",
+  "rows": [
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/APPROACH_REGISTRY.md",
+      "sha256": "9d3e12439a91b3b4c95e25758c8cfe3efdd73b2dd30910f607e8af99395d514f",
+      "mode": "100644",
+      "blob": "8af51bd5c53bacb8f2195bff3e9b070df4e90df4",
+      "bytes": 427
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "8834b8511e15832e5ab64412ae0b9db322cc81c4fbff6b0970b47c143b595858",
+      "mode": "100644",
+      "blob": "c368baeb3926aa7dc0c73fa9c289e5786e21a5dd",
+      "bytes": 549
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "44a1fd617c3e892e0f3c0289b4be1845841c966c87946756e9400c8ab9b5bb80",
+      "mode": "100644",
+      "blob": "43002af05330e46f0335fa012b3413f92383cda0",
+      "bytes": 498
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/GOAL.md",
+      "sha256": "748e84b8dfdaf43d61bcf719faa0a081eb5efda51d11ab84e0f7743319091b30",
+      "mode": "100644",
+      "blob": "c79dce4051c7e55df34d3464e8744d1268b27210",
+      "bytes": 461
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/HANDOFF.md",
+      "sha256": "54c6d596f0caab0e4ed4605eac346f56f81987d53b16ca8eeb222043f8108bae",
+      "mode": "100644",
+      "blob": "350f7e694a4418b279f2c6a2c22ceff3c1d07f0c",
+      "bytes": 695
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/OPPORTUNITY_QUEUE.md",
+      "sha256": "550994b9ce9d8f17da4123afc8ad79dd765729da038ffc179bd3dd1751cf3834",
+      "mode": "100644",
+      "blob": "719318afa792133ec0601596efd5f8153c56d901",
+      "bytes": 1206
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/REVIEW_HISTORY.md",
+      "sha256": "58cf68596310d221ce9e32c55bd3a35d69047d869da8c1ab356cb6e768a9825b",
+      "mode": "100644",
+      "blob": "3f5222f47df0d33b626a40dcb9d392090ed18c09",
+      "bytes": 1105
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/ROUTE_PORTFOLIO.md",
+      "sha256": "57fa47686d664f3da4cbf8a578f5634ec4de223124325fd9ed80ba1a40254823",
+      "mode": "100644",
+      "blob": "d914ffb3389e9f84f566354733c06407aa183022",
+      "bytes": 681
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/STATE.yaml",
+      "sha256": "c7b0ce169245dbd4504920030670ea96468d48456cec8effecb7c4abbc673715",
+      "mode": "100644",
+      "blob": "d1533104a351519b8e5c4df1428ef03ccaee7d57",
+      "bytes": 742
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/TRACE_GATE.md",
+      "sha256": "f560f87e2759cb22ab7a1a37a47e61b513d5d0cf447fd7055d9cdf3cd50169db",
+      "mode": "100644",
+      "blob": "c207087095c3d680088e91bd36001e41e0cf6d3b",
+      "bytes": 387
+    },
+    {
+      "status": "A",
+      "path": "docs/POSSIBILITY_SYMMETRIC_SEQUENTIAL_FORMATION_THAT_VARIES_HAS_ORDER_DEPENDENT_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "da15354683f9768480dba4b1d9178ff70ed1800f16d880d764ca09f8c1743f8e",
+      "mode": "100644",
+      "blob": "bc51e607959e27b6c4c3dfb6fc885785248c1a1b",
+      "bytes": 19335
+    },
+    {
+      "status": "M",
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "bb70a8355c8f515385b7da9b0ef29aaf2d262bbb743386bb07c18b31656b8a1e",
+      "mode": "100644",
+      "blob": "b6498ff8e80786abf33872cf4921673627ec4b5d",
+      "bytes": 669988
+    },
+    {
+      "status": "A",
+      "path": "logs/runner-cache/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.txt",
+      "sha256": "2a5643add979adf7e6f05f050d9c4e61c00c9ef5370fbf2204df99c38b30efa6",
+      "mode": "100644",
+      "blob": "c6e62b27f1074051e9a98d384f6081c6b312c091",
+      "bytes": 4149
+    },
+    {
+      "status": "A",
+      "path": "scripts/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.py",
+      "sha256": "7175dc3137d0ce9081f8ab32ee8c64b4a444c047c7ec3aec6eb9559bfdd3bfc4",
+      "mode": "100644",
+      "blob": "6397356e8eb16dfd0684942d4b8d4a8bcadf6ec9",
+      "bytes": 19099
+    }
+  ]
+}

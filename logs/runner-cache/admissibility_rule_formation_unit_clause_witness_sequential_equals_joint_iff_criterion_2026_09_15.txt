@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py
+runner_sha256: 5795b0097fc16fc4eaf492905f3a510fb5116f1d9e3d70d94e5560992406d45e
+input_fingerprint_sha256: e355a81d51daa859400a6bd735f292af680cd994f16eb55cc3306c0b0b93f284
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 103.38
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CONDITIONAL_IDENTITIES_AND_FINITE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md
+AUDIT_TIMEOUT_SEC: 300
+scope: unit identities and declared finite witnesses; broad negative certification deferred; no clause adopted
+mutation: none
+PASS: A1 the four declared inputs exist (this note, the axiom memo, block 01 and the census note, both on main)
+PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
+PASS: A3 the parents' claim ids, block 01's Theorem B and the census note's mention of joint formation are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 U1: a pseudo-random positive law on three sites (216 patterns) is reconstructed exactly from its one-site conditionals by the telescoping ratio argument
+PASS: B2 U2 lemma: K_k(b..b) - K_k(-b,b..b) = ((p-q)/Z_1)[(p/Z_1)^(k-1) - (q/Z_1)^(k-1)] and the orthogonal form, symbolically for k = 2..6; positive at (3,1,2)
+PASS: C1 finite isolated comparisons: exact equality with the joint law holds iff the criterion holds, on every order of the domino (2), the path (6), the plaquette (24) and the star's classes k = 0, 1, 2, 3, 6
+PASS: C2 finite fixed-environment comparisons: on the domino, the path and a single site with pseudo-random outside records, equality holds iff the criterion holds, on every order
+PASS: C3 finite fixed-environment comparisons: the star's center-first and leaves-first orders in all-+x, and center-first, one-leaf-first and leaves-first in the mixed environment all violate the criterion and all differ from the joint law: all+x/k=0: 0.40289, all+x/k=6: 0.10367, mixed/k=0: 0.14626, mixed/k=1: 0.10719, mixed/k=6: 0.07538
+PASS: D1 U3: isolated star — sequential equals joint for k = 0, 1 leaves before the center and differs for k = 2, 3, 6 with TV 1/72, 5/144, 103375/1492992
+PASS: D2 U3: isolated plaquette — every order differs from the joint law (16 at 455/31176, 8 at 37/1299) and the two class ratios to prod K are strictly increasing in the diagonal normalizer d_same < d_orth < d_anti
+PASS: E1 U4: in a full environment the domino and the path (every order) and the star (two all-+x orders and three mixed-environment orders) all differ from their joint law
+PASS: E2 U4: a single site in a full environment agrees with its joint law (its only formation records outside neighbours only)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
+per_element: executed — the normalizer lemma for k = 2..6 symbolically; the three-site reconstruction on 216 patterns
+per_site: executed — every pattern of each unit (6^7 for the star, 6^4 for the plaquette, 6^3, 6^2, 6)
+per_mode: executed — every order of the domino, the path and the plaquette; the star's classes k = 0, 1, 2, 3, 6; two star orders in all-+x and three in the mixed environment
+per_block: executed — five units, isolated and in pseudo-random or all-+x environments
+lattice_wide: checked and not executed — written conditional identities and sufficient constructions; no infinite-lattice execution; broad negative certification deferred
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

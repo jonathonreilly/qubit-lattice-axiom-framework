@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py
+runner_sha256: 67c6265fecbbf764b92c69495cbcb6b3a5788a31db7c423cc297f87fde5f33be
+input_fingerprint_sha256: 12555a6194a695167da75638c89b711373fb96a51db5a0c89975b502cff12ea9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 30.53
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_FLIP_IDENTITIES_AND_FINITE_MIXTURE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md
+AUDIT_TIMEOUT_SEC: 300
+scope: flip identities and declared finite witnesses; broad negative certification deferred; no clause adopted
+mutation: none
+PASS: A1 the four declared inputs exist (this note, the axiom memo, block 01 and the census note, both on main)
+PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
+PASS: A3 the parents' claim ids, block 01's Theorem B and the census note's Theorem 3 rational are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 X1: the flip raises every order's weight ratio, strictly iff the site lies in a recorded set of size >= 2: plaquette: 96 pairs (4 classes), 48 strict; 2x3: 4320 pairs (28 classes), 2592 strict; cube: 4336 pairs (542 classes), 3184 strict
+PASS: B2 the normalizer lemma: K_k(b..b) - K_k(-b,b..b) = ((p-q)/Z_1)[(p/Z_1)^(k-1) - (q/Z_1)^(k-1)] and the orthogonal form, symbolically for k = 2..6
+PASS: C1 X2 (if): on the path and the four-leaf star, the uniform and a pseudo-random mixture over qualifying orders equal the static law exactly: path3: 4/6 qualifying; star4: 48/120 qualifying
+PASS: C2 X2 finite samples: three pseudo-random mixtures charging non-qualifying orders differ from the static law on the path and the star
+PASS: C3 X2: on 2x3 the uniform mixture over 720 orders (28 classes) is at the census note's distance 372254646387017/12790481418000000 from the static law; two pseudo-random class mixtures and a plaquette mixture differ (TV 0.028208, 0.028038, 0.018328)
+PASS: C4 X2 (cycle lemma): every multiset class of the plaquette, 2x3 and the cube contains a recorded set of size >= 2, so no order qualifies
+PASS: D1 X3: the domino and the path in the all-+x environment — every order violates the criterion, every order and a pseudo-random mixture differ from the joint law
+PASS: D2 X3 (isolated): the uniform mixture over the qualifying orders of the domino and the path equals the joint law
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
+per_element: executed — the normalizer lemma for k = 2..6 symbolically; the flip on every order-site pair of the plaquette (96) and 2x3 (4320) and every class-site pair of the cube (4336)
+per_site: executed — every pattern of the path, the star, the plaquette and 2x3 in the mixture checks; every pattern of the domino and the path in the environment checks
+per_mode: executed — every order class of the plaquette (4), 2x3 (28) and the cube (542); every order of the path, the star, the domino
+per_block: executed — six windows, two environments
+lattice_wide: checked and not executed — written conditional identities and sufficient constructions; no infinite-lattice execution; broad negative certification deferred
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

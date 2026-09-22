@@ -1,0 +1,28 @@
+[
+  {
+    "primary": "scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py",
+    "primary_sha256": "b051128637dbc3a96de45a3372f4409fb8957eea85bfd0a07557343cd9c39cd2",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "385946572dc3292e7c40b911d898cbd9e72e2c33176c0b2118481c0845e6ae4c",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/gauge_wilson_local_observable_finite_region_pw_2026_09_07.py",
+    "primary_sha256": "aa5ccaf5589029cc47fa2b52ab5b53a023c50874cf450edb0daf6ea099a53043",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "385946572dc3292e7c40b911d898cbd9e72e2c33176c0b2118481c0845e6ae4c",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

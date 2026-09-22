@@ -1,0 +1,23 @@
+{
+  "passed": 16,
+  "checks": [
+    "Schur_contracted_trace",
+    "Schur_contracted_purity",
+    "Schur_contracted_equal_diagonal",
+    "endpoint_Casimir_completeness",
+    "two_endpoints_positive_Casimir",
+    "integrated_coefficient_0",
+    "integrated_coefficient_1",
+    "integrated_coefficient_2",
+    "integrated_coefficient_3",
+    "integrated_coefficient_8",
+    "integrated_coefficient_19",
+    "boundary_constant",
+    "mixed_normalization_1/16",
+    "mixed_normalization_1/4",
+    "mixed_normalization_9/16",
+    "mixed_normalization_1"
+  ],
+  "seconds": 0.00032454199390485883,
+  "scope": "Independent Schur-index contraction, SU3 completeness contraction, tail coefficient and mixed-density normalization arithmetic. All-order locality/form-domain proof checked analytically; no primary/helper execution."
+}

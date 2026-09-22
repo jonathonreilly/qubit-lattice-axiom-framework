@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "cf104c1e69c971f37bdca51f775a6165f9f57133",
+  "fetched_ref": "refs/review-loop/fetched/8025-2a518f342a184724aca533804a27cc9d",
+  "metadata": {
+    "baseRefName": "codex/volume-uniform-gap-block34-20260907",
+    "headRefName": "codex/local-observable-block35-20260907",
+    "headRefOid": "cf104c1e69c971f37bdca51f775a6165f9f57133",
+    "isDraft": true,
+    "number": 8025,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

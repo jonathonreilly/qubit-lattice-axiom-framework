@@ -1,0 +1,7 @@
+{
+  "reason": "Original reviewer uses source_paths field for complete final source map; v2 adapter only understood source_hashes or source.paths. v3 recognizes the exact source_paths map without source/evidence changes. Original failed adapter and missing-record preflight preserved.",
+  "review_report_sha256": "7fec4c7c2051171103e6fc97449d4edeffaa9dc633b04f7c074f9aae88bff4d5",
+  "exact_map_equals_author_freeze": true,
+  "paths": 85,
+  "adapter_sha256": "1710c0cb838bfd43ed177cffa8d854c244269078ab7fc186a7ddd74402ec5734"
+}

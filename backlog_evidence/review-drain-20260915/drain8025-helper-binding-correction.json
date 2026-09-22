@@ -1,0 +1,12 @@
+{
+  "reason": "v1 already bound helper under runtime and note helpers but omitted required helpers category. v2 adds same existing hash/category; no source/input/tree change, no primary executed.",
+  "old_record_sha256": "801f9331d7151e14f46bc6feb519909846abdec7b373e7db9ec890c89577cde2",
+  "new_record_sha256": "926f3fe4239def1ce73a1c58490a7a21fc3b5657e69e0151f13073874018fcda",
+  "source_tree": "1c60a2461209ede19266e16fe9716c255f44483b",
+  "helpers": [
+    {
+      "path": "scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py",
+      "sha256": "b051128637dbc3a96de45a3372f4409fb8957eea85bfd0a07557343cd9c39cd2"
+    }
+  ]
+}

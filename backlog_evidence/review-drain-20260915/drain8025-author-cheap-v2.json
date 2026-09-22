@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8025",
+  "tree": "1c60a2461209ede19266e16fe9716c255f44483b",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_local_observable_finite_region_pw_2026_09_07.py",
+      "helpers": [
+        "scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8025/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8762,
+      "misses": 4456
+    },
+    "packet_imports": {
+      "hits": 8752,
+      "misses": 4454
+    },
+    "declared_inputs": {
+      "hits": 8788,
+      "misses": 4588
+    }
+  },
+  "record_sha256": "926f3fe4239def1ce73a1c58490a7a21fc3b5657e69e0151f13073874018fcda",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

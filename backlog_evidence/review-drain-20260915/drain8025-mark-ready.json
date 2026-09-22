@@ -1,0 +1,17 @@
+{
+  "before": {
+    "baseRefName": "main",
+    "headRefOid": "cf104c1e69c971f37bdca51f775a6165f9f57133",
+    "isDraft": true,
+    "number": 8025,
+    "state": "OPEN"
+  },
+  "after": {
+    "baseRefName": "main",
+    "headRefOid": "cf104c1e69c971f37bdca51f775a6165f9f57133",
+    "isDraft": false,
+    "number": 8025,
+    "state": "OPEN"
+  },
+  "reason": "Complete source independently reviewed and sole final cachecheck passed; authorized all-open drain."
+}

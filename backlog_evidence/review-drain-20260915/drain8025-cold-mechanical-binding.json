@@ -1,0 +1,20 @@
+{
+  "tree": "1c60a2461209ede19266e16fe9716c255f44483b",
+  "record_sha256": "926f3fe4239def1ce73a1c58490a7a21fc3b5657e69e0151f13073874018fcda",
+  "source_paths": 83,
+  "archive_rows": 77,
+  "helper_discovery": {
+    "graph": [
+      "scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py"
+    ],
+    "packet": [
+      "scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py"
+    ]
+  },
+  "modified_main_paths": [
+    "docs/audit/scripts/build_citation_graph.py",
+    "scripts/audit_packet_script_deps.py"
+  ],
+  "all_source_input_hashes_match": true,
+  "all_original_blob_raw_stored_hashes_match": true
+}

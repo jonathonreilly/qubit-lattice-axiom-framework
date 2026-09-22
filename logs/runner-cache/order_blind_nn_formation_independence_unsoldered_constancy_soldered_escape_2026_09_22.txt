@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.py
+runner_sha256: 13481d9abad043d6c052deb1c0d7884214283449da5dbdfa83fcde7d76060395
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 15.98
+status: ok
+----- stdout -----
+== 1. Order-blind nearest-neighbour laws are independent beyond neighbours ==
+[PASS] 48-point alphabet: two proper-rotation orbits of 24 (the chiral pair); every point has one coordinate +-3
+[PASS] soldered 48-point rule on the 3-site path: all 6 formation orders give one exact finished law :: 110592 atoms; order-blind by direct computation, not by assumption
+[PASS] non-adjacent sites x, z are exactly independent with the one-site law: all 2304 pair masses = 1/48^2
+[PASS] adjacent sites stay correlated: E[X_z(a_x) X_-z(a_y)] = kappa/36 = 1/72 on both bonds
+[PASS] comparison: the pair-measure chain rule is order-blind on the path, yet x and z correlate at 1/9 :: consistent with independence beyond neighbours only because the chain rule is not nearest-neighbour
+[PASS] the chain rule's conditional for z given x alone (y unformed) is 5/9 against 4/9: it reads a non-neighbour
+[PASS] comparison: the local rule 2^(agreeing neighbours) gives c(x,z) = 1/9 chain-first but 0 ends-first :: nearest-neighbour but order-sensitive: exactly the case the independence theorem leaves open
+
+== 2. The exact form of order-blind nearest-neighbour rules (48-point soldered rule) ==
+[PASS] bond symmetry phi_d(a, b) = phi_-d(b, a) on all 6 directions and 48 x 48 value pairs
+[PASS] disjoint supports: every value lies in the support of exactly one direction's function X_d :: each X_d has mean 0 under the uniform one-site law
+[PASS] normalisation for every neighbour condition: all 4^6 = 4096 value classes of partial maps sum to 1 :: the rule depends on a neighbour value b only through X_-d(b) in {-1, 0, 1}
+[PASS] soldered covariance: X_gd(g a) = X_d(a) for all 24 rotations, 6 directions, 48 values
+[PASS] the rule varies with the nearest-neighbour conditions, as Admissibility requires
+
+== 3. Unsoldered reading: direction-blind bond factors force a constant rule ==
+[PASS] direction-blind copy of the 48-point factor: two neighbours with one value give total mass 25/24 :: E[phi^2] = 1 + Var(phi): normalisation for two equal neighbours forces Var(phi) = 0
+[PASS] unsoldered Potts rules on the six-axis alphabet fail exchange on the 7-site cross for every kappa != 0 :: kappa = 1: 4/49 against 2/27; only kappa = 0 (constant, no variation) is order-blind
+
+== 4. Soldered continuum: an order-blind rule that varies, via disjoint polar caps ==
+[PASS] cap profile X(t) = (t - 7/8) 1[t > 3/4]: Haar mean exactly 0, second moment exactly 1/1536 :: Haar push-forward of t = a.d is uniform on [-1, 1]: integrals are exact polynomial integrals
+[PASS] the six caps {a.d > 3/4} are pairwise disjoint: opposite caps trivially, perpendicular since 2(3/4)^2 > 1 :: so a product of bond factors at distinct directions is 1 + a sum of single terms
+[PASS] with kappa = 32 every bond factor 1 + kappa X(a.d) X(-b.d) lies in [1/2, 3/2]: strictly positive
+[PASS] nearest-neighbour record correlation E[X_d(a_x) X_-d(a_y)] = kappa/1536^2 = 1/73728, nothing beyond
+[PASS] soldered, not unsoldered: rotations preserve every a.d, but the factor depends on the bond direction :: at a = e_z, b = -e_z: factor 3/2 across a z-bond, 1 across an x-bond; bond-symmetric
+
+== 5. Soldered cube orbits: which alphabets admit an order-blind rule that varies ==
+[PASS] 6-, 8-, 12-point orbits: six orthogonal bond spaces in n-1 = 5, 7, 11 dims have dim <= 0, 1, 1 :: a nonzero bond space is a real eigenline of the quarter-turn about its own axis
+[PASS] on those three orbits no real eigenline meets the two pair conditions: the rule is constant :: eigenline dims (+1, -1): 6-point [2, 1]; 8-point [1, 2]; 12-point [2, 3]
+[PASS] controls: the decision procedure rejects forms (c0+c1)^2, c0^2-c1^2, which share the real zero c0 = -c1
+[PASS] single 24-point orbit: transverse-sign functions have disjoint supports and mean 0 per direction :: each is a quarter-turn eigenfunction of eigenvalue -1 on its cap
+[PASS] controls: the 24-point transverse sign meets both pair conditions in the same machinery (0 and 0)
+[PASS] its bond factors are soldered-covariant and bond-symmetric (all 24 x 6 x 24 x 24 cases)
+[PASS] 24-point rule: normalised for all 4096 value classes of neighbour conditions, and it varies
+[PASS] 24-point rule on the path: 6 orders, one law; ends independent; adjacent correlation kappa/36
+
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-09-22T22:15:22.206840+00:00",
+  "scope": "All open PRs including drafts; continue until reviewed and landed or rejected/closed.",
+  "main": "13adabf0ae4c15dbbe312ad51f99287dae09f9a5",
+  "closed_since_expanded_scope": [
+    8079,
+    8081,
+    8137,
+    8140,
+    8144,
+    8145,
+    8143,
+    8147,
+    8179,
+    8555,
+    8572,
+    8138,
+    8139,
+    8141,
+    8142,
+    8146,
+    8023,
+    8148,
+    8149,
+    8150,
+    8151,
+    8152,
+    8024,
+    8153
+  ],
+  "open_count": 101,
+  "draft_count_at_inventory": 25,
+  "inventory": "drain-all-backlog-wave10.json",
+  "inventory_sha256": "84c3137f183b7cbcdce8ebd7971c4899e73e90ac2ebcfc87778ef0f0b7ba8d4f",
+  "active": {
+    "integration": "train68 PR8025 combined gate",
+    "author": "PR8026 packaging; source additions preserved pending main advance",
+    "review": "PR8154/8155/8156/8157 original-session cold confirmation"
+  },
+  "review_skill": "All15 tracked skill files local=current remote main, confirmed wave9; subsequent trains66/67 changed no skill files."
+}

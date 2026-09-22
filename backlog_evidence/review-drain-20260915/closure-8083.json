@@ -1,0 +1,19 @@
+{
+  "pr": 8083,
+  "original_head": "a2aca4bcf2d6c0c3868b852017de327f888f270a",
+  "branch": "codex/native-quartic-ward-20260910",
+  "landing": "59024639572d6d3a1091c727297b18c350d3f484",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T18:42:36Z",
+    "headRefName": "codex/native-quartic-ward-20260910",
+    "headRefOid": "a2aca4bcf2d6c0c3868b852017de327f888f270a",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8083,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8083"
+  }
+}

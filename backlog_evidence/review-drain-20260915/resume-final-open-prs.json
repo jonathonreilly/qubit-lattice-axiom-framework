@@ -1,0 +1,1192 @@
+[
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block79-a-chessboard-record-background-and-its-walls-20260922",
+    "headRefOid": "9f9968f0c49aea000aa4296a2581b66cfdd285c8",
+    "isDraft": false,
+    "number": 8614,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 79 - a chessboard record background is felt only as a rest mass; walls between out-of-step domains bind exact zero modes when odd",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8614"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block78-one-record-per-site-is-an-interaction-not-a-free-sea-20260922",
+    "headRefOid": "88a8e6752e01205879181758e70b2a47f2bad275",
+    "isDraft": false,
+    "number": 8613,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 78 - one record per site is an interaction, not a free sea",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8613"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block77-the-axioms-own-generator-and-a-staggered-rest-term-20260922",
+    "headRefOid": "a2c138c297024d90879cca1eb58336216ff8cfd0",
+    "isDraft": false,
+    "number": 8612,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 77 - the axioms' own generator: the scalar hop splits the species into four levels of one sense; a staggered term gives them mass",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8612"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block76-the-filled-seas-energy-as-the-ledgers-field-term-20260922",
+    "headRefOid": "2fc37b9f66dd04517137a7addadfeeb7f416d114",
+    "isDraft": false,
+    "number": 8611,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 76 - the filled sea's energy as the ledger's field term: chessboard of clocks invisible; the sea induces a clock stiffness, not the curvature member",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8611"
+  },
+  {
+    "baseRefName": "codex/mobile-record-empty-start-quantitative-waves-20260921",
+    "headRefName": "codex/mobile-record-smooth-nonlinear-euler-20260921",
+    "headRefOid": "05ce3bed24d4b13226cfe0bef84ea344fd54b59c",
+    "isDraft": true,
+    "number": 8610,
+    "state": "OPEN",
+    "title": "Nonlinear permanent-record waves with moving geometry",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8610"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/mobile-record-positive-quantum-curl-20260921",
+    "headRefOid": "b5fcda79703d6b0c459065f83329a54238bb50ff",
+    "isDraft": true,
+    "number": 8609,
+    "state": "OPEN",
+    "title": "Physics: controlled positive quantum curl limits from finite qubits",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8609"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block75-a-closed-lattice-at-rest-20260921",
+    "headRefOid": "7fcef163e2cc2499ebe16a9aa2da54c42371aa0e",
+    "isDraft": false,
+    "number": 8608,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 75 - a closed lattice at rest: never in the curvature member, only with both signs in the simplest member",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8608"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block74-three-responses-eight-species-20260921",
+    "headRefOid": "c331c7f282e422c209816553d8d703b6a03ef78b",
+    "isDraft": false,
+    "number": 8607,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 74 - three responses, eight species: the frame serves two, reach two one, reach three all eight",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8607"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block73-the-two-step-momentum-is-the-only-one-20260921",
+    "headRefOid": "69f3c13dd5891a18016bb99941fe0eaeadcb2b9f",
+    "isDraft": false,
+    "number": 8606,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 73 - the two-step momentum is the only one",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8606"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block72-which-species-fall-the-ledger-owes-20260921",
+    "headRefOid": "a57dbbaba2aca4607a5ece3a4247f4cc546d82af",
+    "isDraft": false,
+    "number": 8605,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 72 - which species' fall the ledger owes: reach two fails for reflected species, reach three holds for all eight",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8605"
+  },
+  {
+    "baseRefName": "codex/mobile-record-moving-geometry-waves-20260921",
+    "headRefName": "codex/mobile-record-empty-start-quantitative-waves-20260921",
+    "headRefOid": "af45e32418ba6af18af646164c8d90abc3d933ba",
+    "isDraft": true,
+    "number": 8604,
+    "state": "OPEN",
+    "title": "Bound empty-start formation and quantitative mobile-record waves",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8604"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block71-amplitudes-of-negative-energy-as-sources-20260921",
+    "headRefOid": "e7ef26762e497345834dacc1c70f978fbd7242fc",
+    "isDraft": false,
+    "number": 8603,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 71 - amplitudes of negative energy: exact twins as test bodies, exact opposites as sources",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8603"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block70-species-exchange-maps-what-each-varying-field-becomes-20260921",
+    "headRefOid": "8b4eccab5cb0cda8a42b254cd9af8261e2cde203",
+    "isDraft": false,
+    "number": 8602,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 70 - the species-exchange maps: what each varying field becomes",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8602"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block69-reach-three-exact-books-and-one-geometry-for-all-eight-species-20260921",
+    "headRefOid": "40fa4423f2a36eb874c895e430da7139a95ca484",
+    "isDraft": false,
+    "number": 8601,
+    "state": "OPEN",
+    "title": "physics-loop: admissibility induced-law block 69 - reach three: exact books and one geometry for all eight species",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8601"
+  },
+  {
+    "baseRefName": "codex/mobile-record-all-stage-formation-20260921",
+    "headRefName": "codex/mobile-record-moving-geometry-waves-20260921",
+    "headRefOid": "3c6fea4be33116952cc81f004b3550baec4087a9",
+    "isDraft": true,
+    "number": 8600,
+    "state": "OPEN",
+    "title": "Record-color waves through moving geometry with finite preparation",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8600"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block68-eight-species-of-the-walk-one-set-of-lengths-or-eight-20260921",
+    "headRefOid": "d297893d4a6d492761723181f00117eb7530eb8d",
+    "isDraft": false,
+    "number": 8599,
+    "state": "OPEN",
+    "title": "ail68: eight species of the walk \u2014 the frame shows them the same lengths; the relabelling's coupling shows them different lengths (source-link direction, block 16)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8599"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block67-a-formation-event-in-the-curvature-member-20260921",
+    "headRefOid": "3bea45f6d8dddddd0ce44e94e083bb597b86967a",
+    "isDraft": false,
+    "number": 8598,
+    "state": "OPEN",
+    "title": "ail67: a formation event in the curvature member \u2014 the ledger can always be kept; the clocks' far field then jumps at second order (source-link direction, block 15)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8598"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block66-the-fall-is-owed-by-the-ledger-20260921",
+    "headRefOid": "4331053ded3b7429a28aca5b5fd26dbf3e093ad1",
+    "isDraft": false,
+    "number": 8597,
+    "state": "OPEN",
+    "title": "ail66: the fall is owed by the ledger \u2014 a field energy per local tick requires the content's stress gradient to equal its weight (source-link direction, block 14)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8597"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block65-the-blind-walk-a-scalar-hop-weighted-by-the-twist-of-the-coin-20260921",
+    "headRefOid": "f7db4f7e73075e8cc5efdb03322c6a80e8f0d16d",
+    "isDraft": false,
+    "number": 8596,
+    "state": "OPEN",
+    "title": "ail65: the blind walk \u2014 a scalar hop weighted by the twist of the coin makes a varying rotation of the coin axes a symmetry (source-link direction, block 13)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8596"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block64-bond-strains-and-plaquette-curls-blindness-to-the-coins-axes-forces-the-curvature-member-20260921",
+    "headRefOid": "e5688665736b60adf84e9eb84276e8c4169c2a17",
+    "isDraft": false,
+    "number": 8595,
+    "state": "OPEN",
+    "title": "ail64: bond strains and plaquette curls \u2014 blindness to the coin's axes forces the curvature member (\u03b2 = 1), and needs a blind content (source-link direction, block 12)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8595"
+  },
+  {
+    "baseRefName": "codex/mobile-record-geometric-formation-selection-20260921",
+    "headRefName": "codex/mobile-record-all-stage-formation-20260921",
+    "headRefOid": "d0dec3ccac49f285194d6aad20a299765269910c",
+    "isDraft": true,
+    "number": 8594,
+    "state": "OPEN",
+    "title": "Derive the complete slow-formation clock for mobile records",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8594"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block63-what-the-walk-conserves-momentum-flows-on-bonds-20260921",
+    "headRefOid": "3b0ed2b08180bda9b2174f61edf57b8ac2e8a71d",
+    "isDraft": false,
+    "number": 8593,
+    "state": "OPEN",
+    "title": "ail63: what the walk conserves \u2014 momentum flows on bonds; relabellings reach second neighbours; the nearest-neighbour frame misses by cos k\u0304 (source-link direction, block 11)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8593"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block62-angles-are-the-tilt-of-the-coins-frame-two-disturbances-one-direction-free-speed-20260921",
+    "headRefOid": "aada579459b89a9c7179442140a90a809e2d696c",
+    "isDraft": false,
+    "number": 8592,
+    "state": "OPEN",
+    "title": "ail62: angles are the tilt of the coin's frame \u2014 two disturbances at one direction-free speed; the price is a conserved stress (source-link direction, block 10)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8592"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921",
+    "headRefOid": "084fd809f9457d942576714dd8b9f98d91844d9d",
+    "isDraft": false,
+    "number": 8591,
+    "state": "OPEN",
+    "title": "ail61: three lengths per site \u2014 alike at rest, column-long responses to hop energy, and a delay whose speed depends on direction (source-link direction, block 9)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8591"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921",
+    "headRefOid": "ec3a6abdf004d9fa5accbbcf4464b23812cc2aac",
+    "isDraft": false,
+    "number": 8590,
+    "state": "OPEN",
+    "title": "ail60: a ledger linear in the rates \u2014 every clock a multiplier, the ledger a wall term, and the curvature member doubles the bending (source-link direction, block 8)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8590"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/mobile-record-geometric-formation-selection-20260921",
+    "headRefOid": "97c1522d462e574663d8dd50fa424f9147587792",
+    "isDraft": true,
+    "number": 8589,
+    "state": "OPEN",
+    "title": "Geometric record formation with uniform slow-birth selection and a controlled clock",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8589"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block59-bond-rates-and-lengths-a-body-at-rest-stretches-no-lengths-20260921",
+    "headRefOid": "7ff9b1540a3f53ff0072f6102d01968c127d151d",
+    "isDraft": false,
+    "number": 8581,
+    "state": "OPEN",
+    "title": "ail59: bond rates and lengths \u2014 a body at rest sources no length, and the bending of rays carries one more free number (source-link direction, block 7)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8581"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921",
+    "headRefOid": "e526d22c1841c4d53170ad945fdb46b968832bff",
+    "isDraft": false,
+    "number": 8579,
+    "state": "OPEN",
+    "title": "ail58: what a formation event does to the ledger and to the far field \u2014 the monopole never jumps, the dipole does (source-link direction, block 6)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8579"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921",
+    "headRefOid": "621c0c56378574c17622f21ebd69e9294639909b",
+    "isDraft": false,
+    "number": 8578,
+    "state": "OPEN",
+    "title": "ail57: a delay for the rate field \u2014 referred to its neighbours its motion does not propagate; referred to the distant clocks it does, at a speed set by the local rate (source-link direction, block 5)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8578"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block56-the-strong-field-exactly-linear-in-root-rate-ledger-and-capacity-20260921",
+    "headRefOid": "d6c6e2572de656c33fdb78a0c3b14b28d18d9c5c",
+    "isDraft": false,
+    "number": 8573,
+    "state": "OPEN",
+    "title": "ail56: the strong field, exactly \u2014 bodies at rest make the clock law linear in \u221a(rate); the ledger is a surface term, bounded by a capacity (source-link direction, block 4)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8573"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-source-link-amplitude-layer-20260921",
+    "headRefOid": "7adeccb570abc41e0cc2ce88ec5d01f8e5bdd2ce",
+    "isDraft": false,
+    "number": 8572,
+    "state": "OPEN",
+    "title": "ail decision record: the source link in the amplitude layer \u2014 state of knowledge after blocks 53\u201356 (pack-only)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8572"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block55-action-and-reaction-the-rate-fields-source-is-the-amplitudes-energy-density-20260921",
+    "headRefOid": "525c6500c56b178a241a2e17cbf18a46485e57f2",
+    "isDraft": false,
+    "number": 8571,
+    "state": "OPEN",
+    "title": "ail55: action and reaction \u2014 the rate field's source is the amplitudes' energy density; matched pulls and a kept ledger fix the clock law's second order (source-link direction, block 3)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8571"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block54-phase-timed-by-the-local-clock-every-packet-falls-towards-slow-clocks-20260921",
+    "headRefOid": "664e733aa21f0288cdb49d1d474d56bdafdda362",
+    "isDraft": false,
+    "number": 8570,
+    "state": "OPEN",
+    "title": "ail54: a phase timed by the local clock \u2014 every packet falls towards slow clocks; force = energy \u00d7 gradient exactly; the walk with the qubit as coin ties weight to inertia (source-link direction, block 2)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8570"
+  },
+  {
+    "baseRefName": "codex/mobile-record-transverse-waves-20260921",
+    "headRefName": "codex/mobile-record-cubic-selection-20260921",
+    "headRefOid": "508722df2eafb18464e8c5f84ed89fca6383f67c",
+    "isDraft": true,
+    "number": 8569,
+    "state": "OPEN",
+    "title": "Classify cubic record dynamics and conditional Gauss selection",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8569"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block53-no-master-clock-forces-the-lattice-laplace-equation-20260921",
+    "headRefOid": "fb5252af7da4c9deb561c18af0495b27c7e6f7a3",
+    "isDraft": false,
+    "number": 8568,
+    "state": "OPEN",
+    "title": "ail53: no master clock \u2014 a neighbour-determined, scale-covariant tick rate obeys the lattice averaging equation; records enter as additive sources (first block of the source-link direction)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8568"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/mobile-record-local-gibbs-transport-20260921",
+    "headRefOid": "801affee6e5fb11519c5b31ec2532cf320b8ba22",
+    "isDraft": true,
+    "number": 8567,
+    "state": "OPEN",
+    "title": "Local Gibbs record circulations and winding transport",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8567"
+  },
+  {
+    "baseRefName": "codex/mobile-record-transverse-waves-20260921",
+    "headRefName": "codex/mobile-record-local-curl-quantum-20260921",
+    "headRefOid": "ead70def0390d2d93e82fc87bf006904df9cc914",
+    "isDraft": true,
+    "number": 8566,
+    "state": "OPEN",
+    "title": "Local curl fields and quantum-compatible record formation interfaces",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8566"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/mobile-record-gauss-loops-phase-20260921",
+    "headRefOid": "dceb153003b35f7a84f68f5bddeb5c22befaaa30",
+    "isDraft": true,
+    "number": 8565,
+    "state": "OPEN",
+    "title": "Explore mobile Gauss-preserving record loops, dilute equilibrium and birth locality",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8565"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block52-isotropic-streaming-clause-content-as-a-bias-20260921",
+    "headRefOid": "b1111c0288030c50f3bf5b608e7de1c8ea1a6d9f",
+    "isDraft": false,
+    "number": 8564,
+    "state": "OPEN",
+    "title": "ail52: a streaming clause with an isotropic second-order term \u2014 content as a bias on a symmetric walk, unbiased capture, and its price",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8564"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block51-the-wind-is-not-isotropic-cubic-lattice-viscosity-20260921",
+    "headRefOid": "031d6e9da47044d650d054568d303f410760fb96",
+    "isDraft": false,
+    "number": 8563,
+    "state": "OPEN",
+    "title": "ail51: the wind of a capturing body is not isotropic \u2014 the lattice's streaming gives a viscous term of cubic symmetry (corrects an assumption of blocks 45\u201348)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8563"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block50-inertia-joined-with-the-rules-weights-by-a-clock-20260921",
+    "headRefOid": "e21017edf0e5a6738584c29532e6d383e87887a8",
+    "isDraft": false,
+    "number": 8562,
+    "state": "OPEN",
+    "title": "ail50: inertia joined with the rule's pair weights by a clock \u2014 a global clock is exact, a local clock is exact for pairs and fails at three records",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8562"
+  },
+  {
+    "baseRefName": "codex/mobile-record-immutable-waves-20260921",
+    "headRefName": "codex/mobile-record-native-formation-20260921",
+    "headRefOid": "4ae52ade2299b4dfaff388971f423aa8f6ddf64a",
+    "isDraft": true,
+    "number": 8561,
+    "state": "OPEN",
+    "title": "Native record formation: conditional Euler limit and cubic centering response",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8561"
+  },
+  {
+    "baseRefName": "codex/mobile-record-immutable-waves-20260921",
+    "headRefName": "codex/mobile-record-transverse-waves-20260921",
+    "headRefOid": "c26b0171974c456f68dd92a4c8661ade1cc5ddbd",
+    "isDraft": true,
+    "number": 8560,
+    "state": "OPEN",
+    "title": "Immutable records: transverse curl waves and formation noise",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8560"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block49-the-attraction-is-tied-to-growth-20260921",
+    "headRefOid": "589280e3798ef2e39433fad5248c37cc89aed712",
+    "isDraft": false,
+    "number": 8559,
+    "state": "OPEN",
+    "title": "ail49: the attraction is tied to growth \u2014 a body in balance draws no wind; pull follows net uptake; growth rate fixed by the force coefficient",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8559"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block48-free-capturing-bodies-law-of-motion-20260921",
+    "headRefOid": "f23fd989d6ef2290319167208ab7098cd7975f62",
+    "isDraft": false,
+    "number": 8558,
+    "state": "OPEN",
+    "title": "ail48: free capturing bodies are carried by the wind \u2014 capture law, anisotropic collisionless shadow, dilution law of motion and its window",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8558"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/mobile-record-immutable-waves-20260921",
+    "headRefOid": "6aaa725a086377dfbca541fec3f453024d67b774",
+    "isDraft": true,
+    "number": 8557,
+    "state": "OPEN",
+    "title": "Immutable records support acoustic Euler and fluctuation limits",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8557"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block47-transparent-bodies-force-is-the-product-of-record-counts-20260921",
+    "headRefOid": "d03857c2ae4ee23e6fc54d51e65df370698b6d6d",
+    "isDraft": false,
+    "number": 8556,
+    "state": "OPEN",
+    "title": "ail47: transparent bodies \u2014 capture rate is the record count; force is the product of the record counts over distance squared",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8556"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921",
+    "headRefOid": "b9279835bdbacd6a6028fc1c095a16145352f312",
+    "isDraft": false,
+    "number": 8555,
+    "state": "OPEN",
+    "title": "pack: decision record for the moving-records lane (blocks 39-52): what is established, the forks, the cost of the capture picture, a correction (the wind is not isotropic), and the revised recommendation (source yes, carrier no)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8555"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block46-the-potential-of-the-wind-and-the-conserved-tensor-20260921",
+    "headRefOid": "b9398e0fec91a0e238f4770aba99daf988746928",
+    "isDraft": false,
+    "number": 8554,
+    "state": "OPEN",
+    "title": "ail46: the potential of the wind solves the lattice field equation with the capture rates as sources; the inertial gas has radiation's equation of state (a correspondence of form with the weak-field packet, no gravitational claim)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8554"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block45-the-wind-law-of-capturing-bodies-20260920",
+    "headRefOid": "e07ae767d484763bd9446eb2d5c4c9b05643dd1c",
+    "isDraft": false,
+    "number": 8553,
+    "state": "OPEN",
+    "title": "ail45: the wind law (records are conserved, so a capturing body's inflow is inverse-square; wind confirmed parameter-free; F = K Q1 Q2/r^2 symmetric; the inviscid sign-change prediction refuted and re-scoped)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8553"
+  },
+  {
+    "baseRefName": "codex/mobile-record-formation-20260920",
+    "headRefName": "codex/mobile-record-lifetime-correlation-20260921",
+    "headRefOid": "197c05b563aac6f271b3b2c4875b4bd4e594b72d",
+    "isDraft": true,
+    "number": 8552,
+    "state": "OPEN",
+    "title": "Bound mobile-record lifetime activity and terminal correlations",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8552"
+  },
+  {
+    "baseRefName": "codex/mobile-record-formation-20260920",
+    "headRefName": "codex/mobile-record-empty-start-response-20260921",
+    "headRefOid": "4de7aa06bbdb48db8d31ba29dbd90b2d8433eaf8",
+    "isDraft": true,
+    "number": 8551,
+    "state": "OPEN",
+    "title": "Derive the first effect of motion on formation from an empty lattice",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8551"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block44-records-with-inertia-sound-and-forces-between-bodies-20260920",
+    "headRefOid": "502a7a2149a88543c2507b42ce7eec265e6b840e",
+    "isDraft": false,
+    "number": 8550,
+    "state": "OPEN",
+    "title": "ail44: records with inertia (content = direction of travel: number and momentum conserved, structureless equilibrium, sound at sqrt((1-rho)/3), forces only with capture or emission; capturing bodies attract inverse-square, executed)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8550"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block43-record-layer-fields-arrive-by-diffusion-20260920",
+    "headRefOid": "a6af3f2d571cc23aed9674ab44f999fc55de94a5",
+    "isDraft": false,
+    "number": 8549,
+    "state": "OPEN",
+    "title": "ail43: the fields of the record layer arrive by diffusion (settling over a distance costs the square of that distance in ticks; a carrier of a long-range field needs a speed)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8549"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block42-interaction-through-the-odds-of-unformed-sites-20260920",
+    "headRefOid": "cf6aae77d7ffdda9463f71469ede2744c2e6b7b2",
+    "isDraft": false,
+    "number": 8548,
+    "state": "OPEN",
+    "title": "ail42: records interacting through the odds of unformed sites (contents interact, masses do not; field equation massless on 5p = 7q + 4r; records are boundary values, not additive sources)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8548"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block41-what-a-source-is-when-records-move-20260920",
+    "headRefOid": "93efe618fa94d4607f762a698b7cfa2c8f00a000",
+    "isDraft": false,
+    "number": 8547,
+    "state": "OPEN",
+    "title": "ail41: what a source is when records move (mass = record count; no action across empty sites; the tilt channel's charge is signed; the transit Laplacian is sourced by production)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8547"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block40-binding-scale-pinned-likelihood-ratio-no-glue-loops-20260920",
+    "headRefOid": "361166e7eaccd7d80cd1e3d4cb94b4ad7fcdbc21",
+    "isDraft": false,
+    "number": 8546,
+    "state": "OPEN",
+    "title": "ail40: the binding scale pinned at the neutral value \u2014 the pair weight is the rule's likelihood ratio, records do not bind without a cycle, and all binding is agreement around loops",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8546"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/mobile-record-formation-20260920",
+    "headRefOid": "689941783bea870e08458e079ddb208257d0083d",
+    "isDraft": true,
+    "number": 8545,
+    "state": "OPEN",
+    "title": "Control mobile-record formation and derive its dilute spatial response",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8545"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block39-records-that-move-pair-weight-transit-binding-scale-clumping-20260920",
+    "headRefOid": "1c1a56df6c979401f94ff7191a5b18a1236f1b74",
+    "isDraft": false,
+    "number": 8530,
+    "state": "OPEN",
+    "title": "ail39: records that move \u2014 pair-weight transit has the static law as equilibrium, the binding scale is a constant the rule cannot see, reflection positivity bounds it from below, and where records clump and jam",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8530"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block38-static-law-outside-adapted-hull-and-causal-structure-clause-independence-20260920",
+    "headRefOid": "94a63b77f61a88f787f3a03b939bc79986231d15",
+    "isDraft": false,
+    "number": 8512,
+    "state": "OPEN",
+    "title": "ail38: how records form \u2014 the static law is outside the hull of every adapted formation law on a window with a cycle, and under a fixed predecessor structure every rate, order and unit clause gives one law",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8512"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block37-unit-budget-false-one-seed-witness-family-constant-ten-ninths-20260920",
+    "headRefOid": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+    "isDraft": false,
+    "number": 8510,
+    "state": "OPEN",
+    "title": "ail37: the unit budget of the explanation-tree route is false \u2014 a one-seed witness with family constant 10/9; the tight-sibling lemma refuted",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8510"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block36-re-recording-stationary-law-bilayer-long-range-order-green-function-response-20260920",
+    "headRefOid": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+    "isDraft": false,
+    "number": 8507,
+    "state": "OPEN",
+    "title": "ail36: if records re-form at every tick \u2014 the static law is the stationary law, the light-cone variant is a bilayer ferromagnet with long-range order, and a persistent source sits in the lattice Green function (conditional on a clause the axioms exclude)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8507"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block35-gravity-kernel-under-the-formation-reading-heat-kernel-times-plane-green-function-20260918",
+    "headRefOid": "7c844adf7555a3558729be69179646f6a83a1539",
+    "isDraft": false,
+    "number": 8180,
+    "state": "OPEN",
+    "title": "ail35: the gravity node's kernel under the axiom's reading \u2014 a heat kernel in level time times a plane Green function, diffusive and three-fold symmetric; not the comparator's three-dimensional Green function",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8180"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-blocks-01-34-20260918",
+    "headRefOid": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+    "isDraft": false,
+    "number": 8179,
+    "state": "OPEN",
+    "title": "ail: decision record for blocks 01\u201334 \u2014 the state of knowledge for the axiom decision, the proved-vs-located map, the integration order (proposals; nothing adopted)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8179"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+    "headRefOid": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+    "isDraft": false,
+    "number": 8178,
+    "state": "OPEN",
+    "title": "ail34: the torus memory time of the sphere formation law \u2014 the linearized zero mode gives tau_L = 3 beta L^2 / A(3 beta) exactly, the other modes are stationary and bracketed, and the nonlinear direction diffuses 1/|m|^2 faster (executed)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8178"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block33-rooted-inequality-tight-sibling-lemma-one-processed-child-count-20260917",
+    "headRefOid": "9e98fd751435c1b65898f8e3058250a2e56d9703",
+    "isDraft": false,
+    "number": 8177,
+    "state": "OPEN",
+    "title": "ail33: the rooted inequality reduces the unit budget to the tight-sibling lemma; the one-processed-child count with exact certificates at p \u2265 2921 (c = 2) and p \u2265 405 (c = 1), neither claimed",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8177"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block32-minimal-marked-tree-family-constant-at-least-one-tree-route-floor-20260917",
+    "headRefOid": "ee73bef6a1f37590abacdd2cf4a13900019a1e64",
+    "isDraft": false,
+    "number": 8176,
+    "state": "OPEN",
+    "title": "ail32: the minimal marked tree \u2014 the counted family's constant is at least one (exact certificates), block 31's witnesses have cheap trees, the tree route's floor at p = 368 on (p,1,2)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8176"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block31-sharper-bad-pair-budget-false-witnesses-two-level-period-20260916",
+    "headRefOid": "798f661da7140ff6f73c5e4f4984d80b67b3447a",
+    "isDraft": false,
+    "number": 8175,
+    "state": "OPEN",
+    "title": "ail31: the sharper bad-pair budget is false for the extended explanation tree \u2014 witnesses at 8/5 and 5/3, the two-level period of ratio 2, the stake recorded",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8175"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916",
+    "headRefOid": "cc7662e14ebf17010a0c60fdb8e7e634b176ce99",
+    "isDraft": false,
+    "number": 8174,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block30 \u2014 bounded_theorem \u2014 bounded-support: the six-axis formation threshold lifted by a two-level domination \u2014 seeds and amplified nodes in the explanation tree; p \u2265 4165 at (p,1,2) from 285718; the route's ceiling",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8174"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916",
+    "headRefOid": "e5b3aa31686d88d8a2fe0aad5e938acac0e39404",
+    "isDraft": false,
+    "number": 8173,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block29 \u2014 bounded_theorem \u2014 bounded-support: the transverse kernel's normalization in the ordered sphere static law \u2014 measured between the bounds, with the transverse sum rule and the spin-wave reference",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8173"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916",
+    "headRefOid": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+    "isDraft": false,
+    "number": 8172,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block28 \u2014 bounded_theorem \u2014 bounded-support: the map of memory \u2014 where each of the four laws keeps its plane, located against the proved regions, with the healing and influence bounds",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8172"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916",
+    "headRefOid": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+    "isDraft": false,
+    "number": 8171,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block27 \u2014 bounded_theorem \u2014 bounded-support: the unsoldered formation law at weak coupling \u2014 the causal coupling contracts, one invariant law, and exponential loss of memory below 1/\u221a3 (the four-way uniqueness table complete)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8171"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916",
+    "headRefOid": "f9e1177003afa991ec87831d2be70611068a09ab",
+    "isDraft": false,
+    "number": 8170,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block26 \u2014 bounded_theorem \u2014 bounded-support: the unsoldered formation law in level time \u2014 gain-one spin waves with the local-limit constant, finite planes forget, and the simulated algebraic decay of the initial plane's memory (the reading decides memory for the sphere menu)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8170"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916",
+    "headRefOid": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+    "isDraft": false,
+    "number": 8169,
+    "state": "OPEN",
+    "title": "[physics-loop] frame-attached four-point weights: Born is not a four-point law; sequential supports 2 vs 4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8169"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916",
+    "headRefOid": "c3bbf3758eb59b1d6c997389ae35738ce986dcbc",
+    "isDraft": false,
+    "number": 8168,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block25 \u2014 bounded_theorem \u2014 bounded-support: the three-dimensional formation law has an ordered phase \u2014 stability of the noisy level automaton with an explicit threshold; six invariant laws; block 12's S6 closed",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8168"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-compact-winding-20260916",
+    "headRefOid": "5265ddd85815fe92e55342f4352f5e675b84703c",
+    "isDraft": false,
+    "number": 8167,
+    "state": "OPEN",
+    "title": "[physics-loop] compact-source-weights bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8167"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-compact-response-20260916",
+    "headRefOid": "02bfa4eb99fce8329619a476775299567f735d4b",
+    "isDraft": false,
+    "number": 8166,
+    "state": "OPEN",
+    "title": "[physics-loop] compact-response bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8166"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-compact-ground-path-20260916",
+    "headRefOid": "c228dbcfc0a6b71639316915f460c32dbf479723",
+    "isDraft": false,
+    "number": 8165,
+    "state": "OPEN",
+    "title": "[physics-loop] compact-ground-path bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8165"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-anisotropic-phase-bridge-20260916",
+    "headRefOid": "c4a31d8d1bc43096080bd5f88b16ffcf24344146",
+    "isDraft": false,
+    "number": 8164,
+    "state": "OPEN",
+    "title": "[physics-loop] compact-hamiltonian-phase-tools bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8164"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-temporal-fermion-resummation-20260916",
+    "headRefOid": "f950bab266a2c2c82321b49d94e21f0f8d2bcf61",
+    "isDraft": false,
+    "number": 8163,
+    "state": "OPEN",
+    "title": "Heavy Wilson fermions: uniform temporal curl bounds and exact gauge transfer",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8163"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-continuous-time-bridge-20260916",
+    "headRefOid": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
+    "isDraft": false,
+    "number": 8162,
+    "state": "OPEN",
+    "title": "Calibrated clock transfer and joint finite-volume physical state limits",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8162"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-infrared-leverage-20260916",
+    "headRefOid": "392e70e8a1c68385533705e01692e954d70ca7bd",
+    "isDraft": false,
+    "number": 8161,
+    "state": "OPEN",
+    "title": "Global Gauss dressing and finite coupled vacuum corrections",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8161"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-interacting-scale-20260916",
+    "headRefOid": "3210315c2cddeb5b0a9e32c9b35e30c196eaa65a",
+    "isDraft": false,
+    "number": 8160,
+    "state": "OPEN",
+    "title": "Joint weak-coupling and volume limit for charged rotor fields and matter",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8160"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-fixed-clock-field-20260915",
+    "headRefOid": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+    "isDraft": false,
+    "number": 8159,
+    "state": "OPEN",
+    "title": "Personal TOE derivation milestone: rotor limits, native response, and open bridges",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8159"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block24-unrecorded-sites-free-window-versus-integrated-exterior-fork-20260915",
+    "headRefOid": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+    "isDraft": false,
+    "number": 8158,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block24 \u2014 bounded_theorem \u2014 bounded-support: unrecorded sites \u2014 the free-window and integrated-exterior readings differ iff an unrecorded component touches two recorded sites; exact witnesses; the clause pair recorded",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8158"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915",
+    "headRefOid": "debbd76649e8a08469114e2dbfa52d1d1fd3e022",
+    "isDraft": false,
+    "number": 8157,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block23 \u2014 bounded_theorem \u2014 bounded-support: on a plane the unsoldered sphere static law's correlations decay at least algebraically at every coupling \u2014 complex rotations with explicit exponent",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8157"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915",
+    "headRefOid": "5296e20cab34eb684c1f00f21b9c60bf1db7b153",
+    "isDraft": false,
+    "number": 8156,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block22 \u2014 bounded_theorem \u2014 bounded-support: block 19's ordering threshold sharpened to beta > 76/100 \u2014 3G(0) pinned between 75/100 and 76/100 by exact return counts of the cubic walk",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8156"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915",
+    "headRefOid": "c286f2fc6ad4dc94562c1e1e1aa3f85f850f8a9a",
+    "isDraft": false,
+    "number": 8155,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block21 \u2014 bounded_theorem \u2014 bounded-support: the unsoldered sphere static law at weak coupling on Z^3 \u2014 one law, exponential decay, no massless channel below beta = sqrt(3)/6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8155"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915",
+    "headRefOid": "e1281625579c98150e818d56e4d29e260c9ded89",
+    "isDraft": false,
+    "number": 8154,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block20 \u2014 bounded_theorem \u2014 bounded-support: the unsoldered sphere static law has no long-range order on any coordinate plane or line; the Green-function channel needs the third dimension",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8154"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915",
+    "headRefOid": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+    "isDraft": false,
+    "number": 8153,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block19 \u2014 bounded_theorem \u2014 bounded-support: the unsoldered static law's ordered phase carries the lattice Green function in its transverse channel \u2014 infrared bound above, zero-field Bogoliubov bound below, long-range order for \u03b2 > 3\u221a3\u03c0/8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8153"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915",
+    "headRefOid": "70f28178c47a6f5bc3666c3e2878950dc212d3f6",
+    "isDraft": false,
+    "number": 8152,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block18 \u2014 bounded_theorem \u2014 bounded-support: menus \u2014 unsoldered finite supports are neighbour-generated (antipodal for one neighbour; no site-independent finite menu), soldered menus are unions of the cube's orbits 6/8/12/24 with the six axes minimal; Born deterministic on the antipodal pair",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8152"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915",
+    "headRefOid": "2772cca288cccf1089db76a979b5c67208d31cf8",
+    "isDraft": false,
+    "number": 8151,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block17 \u2014 bounded_theorem \u2014 bounded-support: the static six-axis law at strong coupling has long-range order and several Gibbs states on Z\u00b2 and Z\u00b3 for p \u2265 216 max(q,r) \u2014 reflection positivity through site planes, chessboard, contour counting (3D by the in-plane count)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8151"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915",
+    "headRefOid": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9",
+    "isDraft": false,
+    "number": 8150,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block16 \u2014 bounded_theorem \u2014 bounded-support: the static law is not a mixture of formation laws on any window with a cycle \u2014 a one-record flip raises every order's weight; the exact criterion on cycle-free windows",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8150"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915",
+    "headRefOid": "cac35566ade2d3ceddb4371c2232c5f8d9611246",
+    "isDraft": false,
+    "number": 8149,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block15 \u2014 bounded_theorem \u2014 bounded-support: the formation-unit clause witness \u2014 sequential formation of a unit reproduces its joint law iff no site records an inside neighbour with a second; the isolated star does not separate the readings, an environment always does",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8149"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915",
+    "headRefOid": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085",
+    "isDraft": false,
+    "number": 8148,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block14 \u2014 bounded_theorem \u2014 bounded-support: the formation-rate clause witness \u2014 every covariant clock law gives a mixture over orders that is the static law on trees and never on a plaquette",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8148"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915",
+    "headRefOid": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb",
+    "isDraft": false,
+    "number": 8147,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block13 \u2014 bounded_theorem \u2014 bounded-support: the record two-point function of a causal Gaussian formation law is a heat kernel in level time, never the lattice Green function; massless iff value-covariant, then no stationary law",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8147"
+  },
+  {
+    "baseRefName": "physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915",
+    "headRefName": "physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915",
+    "headRefOid": "3acd27d2fca87311b1cb138dc7514c95d5be6343",
+    "isDraft": false,
+    "number": 8146,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block12 \u2014 bounded_theorem \u2014 bounded-support: the strong-coupling side of the 3D formation law \u2014 a noisy majority eroder in level time; finite-W metastability; the ordered phase as one exact obligation",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8146"
+  },
+  {
+    "baseRefName": "physics-loop/static-charge-transfer-sector-20260915",
+    "headRefName": "physics-loop/clock-history-field-20260915",
+    "headRefOid": "c5580db2ebe78e4dca71f210539cea1471148483",
+    "isDraft": false,
+    "number": 8145,
+    "state": "OPEN",
+    "title": "[physics-loop] clock-history-field: bounded_theorem, bounded-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8145"
+  },
+  {
+    "baseRefName": "physics-loop/clock-static-charge-20260915",
+    "headRefName": "physics-loop/static-charge-transfer-sector-20260915",
+    "headRefOid": "691f96525772ec0e7d06a528d14ad17324400f22",
+    "isDraft": false,
+    "number": 8144,
+    "state": "OPEN",
+    "title": "[physics-loop] static-charge-transfer-sector: bounded_theorem, bounded-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8144"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/full-domain-projective-corridor-20260915",
+    "headRefOid": "6327004eaaecd83fffca5e2362db6a042a0707a5",
+    "isDraft": false,
+    "number": 8143,
+    "state": "OPEN",
+    "title": "[physics-loop] full-domain-projective-corridor: bounded_theorem, conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8143"
+  },
+  {
+    "baseRefName": "physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915",
+    "headRefName": "physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915",
+    "headRefOid": "e5b9ca893f95c1bd37e0a920928ed1567420e0ef",
+    "isDraft": false,
+    "number": 8142,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block11 \u2014 bounded_theorem \u2014 bounded-support: the three-body term vanishes at exactly five nonconstant weight ratios \u2014 the exact exceptional locus",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8142"
+  },
+  {
+    "baseRefName": "physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915",
+    "headRefName": "physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915",
+    "headRefOid": "a76f95da766eea86e1ff357130b725563311285c",
+    "isDraft": false,
+    "number": 8141,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block10 \u2014 bounded_theorem \u2014 bounded-support: the recorded-set Gibbs theorem \u2014 every formation law's Markov graph is the recorded-set graph; nearest-neighbor Markov iff no site records two neighbors",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8141"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/clock-static-charge-20260915",
+    "headRefOid": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+    "isDraft": false,
+    "number": 8140,
+    "state": "OPEN",
+    "title": "[physics-loop] clock-static-charge: bounded_theorem, bounded-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8140"
+  },
+  {
+    "baseRefName": "physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915",
+    "headRefName": "physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915",
+    "headRefOid": "8345c241c10560da9086afbd400b765417fd1c11",
+    "isDraft": false,
+    "number": 8139,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block09 \u2014 bounded_theorem \u2014 bounded-support: the 3D formation law is a Markov field for the face-diagonal graph, not the nearest-neighbor one \u2014 eight corner laws and the sweep's imprint",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8139"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915",
+    "headRefOid": "77c1fd5000061b7e5bef0479229f33f1a9037f47",
+    "isDraft": false,
+    "number": 8138,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block08 \u2014 bounded_theorem \u2014 bounded-support: the three-dimensional monotone formation law \u2014 plane chain, three-body term, and the coupling region containing the silent triples",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8138"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/possibility-symmetric-order-dependence-20260915",
+    "headRefOid": "d15d5d9074e343563700691afcfddb5afc761a21",
+    "isDraft": false,
+    "number": 8137,
+    "state": "OPEN",
+    "title": "[physics-loop] possibility-symmetric-order-dependence bounded_theorem bounded-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8137"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/native-correlated-ward-20260910",
+    "headRefOid": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+    "isDraft": false,
+    "number": 8081,
+    "state": "OPEN",
+    "title": "[physics-loop] Correlated native Ward bounds (conditional-support)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8081"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/native-finite-moment-ward-20260910",
+    "headRefOid": "181e182a14d358c8bca434a1eac398b27237ec8f",
+    "isDraft": false,
+    "number": 8079,
+    "state": "OPEN",
+    "title": "[physics-loop] Finite-moment Ward certificate and fixed-p boundary (conditional-support)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8079"
+  },
+  {
+    "baseRefName": "codex/finite-pw-energy-block42-20260907",
+    "headRefName": "codex/finite-pw-confinement-block43-20260907",
+    "headRefOid": "d041b83a507226feae9713662767dd34d2ffb4a8",
+    "isDraft": true,
+    "number": 8033,
+    "state": "OPEN",
+    "title": "[physics-loop] finite-pw-confinement block43 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8033"
+  },
+  {
+    "baseRefName": "codex/finite-transporter-block41-20260907",
+    "headRefName": "codex/finite-pw-energy-block42-20260907",
+    "headRefOid": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+    "isDraft": true,
+    "number": 8032,
+    "state": "OPEN",
+    "title": "[physics-loop] finite-pw-energy block42 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8032"
+  },
+  {
+    "baseRefName": "codex/continuum-boundary-block40-20260907",
+    "headRefName": "codex/finite-transporter-block41-20260907",
+    "headRefOid": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+    "isDraft": true,
+    "number": 8031,
+    "state": "OPEN",
+    "title": "[physics-loop] finite-transporter block41 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8031"
+  },
+  {
+    "baseRefName": "codex/infinite-static-block39-20260907",
+    "headRefName": "codex/continuum-boundary-block40-20260907",
+    "headRefOid": "3dee7c038c60dd9aaddbcc186207f165367cc274",
+    "isDraft": true,
+    "number": 8030,
+    "state": "OPEN",
+    "title": "[physics-loop] continuum-boundary block40 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8030"
+  },
+  {
+    "baseRefName": "codex/static-uniform-block38-20260907",
+    "headRefName": "codex/infinite-static-block39-20260907",
+    "headRefOid": "c5f58f84246c7ee938152dcc317264f8b1384a3f",
+    "isDraft": true,
+    "number": 8029,
+    "state": "OPEN",
+    "title": "[physics-loop] infinite-static block39 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8029"
+  },
+  {
+    "baseRefName": "codex/static-geodesic-block37-20260907",
+    "headRefName": "codex/static-uniform-block38-20260907",
+    "headRefOid": "36843ba7b46901269911496f8dfdef6fd5f63cae",
+    "isDraft": true,
+    "number": 8028,
+    "state": "OPEN",
+    "title": "[physics-loop] static-uniform block38 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8028"
+  },
+  {
+    "baseRefName": "codex/spatial-area-block36-20260907",
+    "headRefName": "codex/static-geodesic-block37-20260907",
+    "headRefOid": "ca0eebe4dffad7a53a201ad7773e804b8c89edef",
+    "isDraft": true,
+    "number": 8027,
+    "state": "OPEN",
+    "title": "[physics-loop] static-geodesic block37 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8027"
+  },
+  {
+    "baseRefName": "codex/local-observable-block35-20260907",
+    "headRefName": "codex/spatial-area-block36-20260907",
+    "headRefOid": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "isDraft": true,
+    "number": 8026,
+    "state": "OPEN",
+    "title": "[physics-loop] spatial-area block36 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8026"
+  },
+  {
+    "baseRefName": "codex/volume-uniform-gap-block34-20260907",
+    "headRefName": "codex/local-observable-block35-20260907",
+    "headRefOid": "cf104c1e69c971f37bdca51f775a6165f9f57133",
+    "isDraft": true,
+    "number": 8025,
+    "state": "OPEN",
+    "title": "[physics-loop] local-observable block35 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8025"
+  },
+  {
+    "baseRefName": "codex/compact-cutoff-block32-20260907",
+    "headRefName": "codex/volume-uniform-gap-block34-20260907",
+    "headRefOid": "1c814b95243c5f788f57bab57c67fdc542f1aab4",
+    "isDraft": true,
+    "number": 8024,
+    "state": "OPEN",
+    "title": "[physics-loop] volume-uniform-gap block34 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8024"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/compact-cutoff-block32-20260907",
+    "headRefOid": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+    "isDraft": true,
+    "number": 8023,
+    "state": "OPEN",
+    "title": "[physics-loop] compact-cutoff block32 conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8023"
+  }
+]

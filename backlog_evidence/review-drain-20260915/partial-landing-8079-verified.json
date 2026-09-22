@@ -1,0 +1,15 @@
+{
+  "pr": {
+    "baseRefName": "main",
+    "headRefName": "codex/native-finite-moment-ward-20260910",
+    "headRefOid": "181e182a14d358c8bca434a1eac398b27237ec8f",
+    "isDraft": false,
+    "number": 8079,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8079"
+  },
+  "landed_positive_source": "59024639572d6d3a1091c727297b18c350d3f484",
+  "original_branch_preserved": true,
+  "comment_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8079#issuecomment-5782004856",
+  "negative_certification": "DEFERRED; exact-target N1 quota unmet"
+}

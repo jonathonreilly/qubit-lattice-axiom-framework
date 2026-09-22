@@ -1,0 +1,15 @@
+{
+  "pr": {
+    "baseRefName": "main",
+    "headRefName": "codex/native-correlated-ward-20260910",
+    "headRefOid": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+    "isDraft": false,
+    "number": 8081,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8081"
+  },
+  "landed_positive_source": "59024639572d6d3a1091c727297b18c350d3f484",
+  "original_branch_preserved": true,
+  "comment_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8081#issuecomment-5782005375",
+  "negative_certification": "DEFERRED; exact-target N1 quota unmet"
+}

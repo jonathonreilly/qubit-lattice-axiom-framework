@@ -1,0 +1,42 @@
+{
+ "task": "R:frontier_acphilambda_r_eta_value_face_registered_angle_2026_07_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_acphilambda_r_eta_value_face_registered_angle_2026_07_05.py",
+ "seed": 8878,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f5478226",
+ "started_utc": "20260922T202758Z",
+ "elapsed_s": 0.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=26 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c21e877a645d4a16911c202aa6bd2cc0b4cf49413de5530241e7f9e03d24eab4",
+ "stdout_tail": "a uniform spectrum and the Phi functional is rejected as undefined\n[PASS] S1.10: cos(3 delta)=+1 gives a degenerate pair and Phi=0\n[PASS] S1.11: cos(3 delta)=-1 gives a degenerate pair and Phi=pi/3\n[PASS] S1.14: same a,B keep e1,e2 and r fixed while changing Phi through e3\nSTATE S2.1 target_Phi=0.050000000000000 recovered_Phi=0.049999999999991 B=0.700000 hermitian=True\nSTATE S2.1 target_Phi=0.222222222222222 recovered_Phi=0.222222222222221 B=0.700000 hermitian=True\nSTATE S2.1 target_Phi=0.500000000000000 recovered_Phi=0.499999999999998 B=0.700000 hermitian=True\nSTATE S2.1 target_Phi=0.997197551196598 recovered_Phi=0.997197551196584 B=0.700000 hermitian=True\n[PASS] S2.1: four explicitly constructed law-admissible B>0 states recover the requested Phi values\n[PASS] S2.2: admissible checks span multiple Phi values; no unique interior Phi is output\nCOMPARATOR S2.PDG positive_roots=[0.714841905598713, 10.279025999577977, 42.15281722494951] Phi_PDG=0.222229631489716 abs(Phi_PDG-2/9)=7.409267493568850e-06\n[PASS] S2.3: PDG labeled comparator runs and lands in the fold domain without a closeness assertion\n[PASS] S5.1: delta-side exactness residual is computed as a comparator gap, not thresholded as a theorem\n[PASS] S2.0: realized-state primitive sentences quoted in the note are present verbatim in REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md\n[FAIL] S7.0: 2026-06-29 memo Qualification sentences quoted in the note are present verbatim in MINIMAL_AXIOMS_2026-06-29.md\nTOTAL: PASS=26 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T202944Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=26 FAIL=1' vs cache 'TOTAL: PASS=27 FAIL=0'"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Reproduces w-macbookpro90c72-1's science triage of 2026-09-18 (issue 8258): the only failure is S7.0, the memo Qualification sentences quoted in the note are no longer verbatim in docs/MINIMAL_AXIOMS_2026-06-29.md; PASS=26 FAIL=1, no computed check fails.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T202944Z"
+ }
+}

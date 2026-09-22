@@ -1,0 +1,16 @@
+PR #8591: ail61: three lengths per site — alike at rest, column-long responses to hop energy, and a delay whose speed depends on direction (source-link direction, block 9)
+branch physics-loop/admissibility-induced-law-block61-three-lengths-per-site-the-delay-has-a-direction-dependent-speed-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_three_lengths_per_site_a_body_at_rest_stretches_them_alike_hop_energy_drives_whole_columns_2026_09_21.py: rc=0 PASS=18 FAIL=0
+   mutation second_order_form_has_a_self_term: expected B observed B ok
+   mutation kinetic_density_sign: expected B observed B ok
+   mutation body_at_rest_stretches_unequally: expected C observed C ok
+   mutation static_equations_leave_a_freedom: expected C observed C ok
+   mutation hop_energy_response_is_local: expected D observed D ok
+   mutation tent_height_ignores_the_box: expected D observed D ok
+   mutation equal_lengths_law_survives_hop_energy: expected D observed D ok
+   mutation body_diagonal_speed_is_one: expected E observed E ok
+   mutation speeds_are_direction_free: expected E observed E ok
+   mutation some_kinetic_term_is_isotropic: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

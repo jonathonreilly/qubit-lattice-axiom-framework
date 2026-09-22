@@ -1,0 +1,33 @@
+{
+ "task": "X:source-screening-map",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 screening_gas.py 10 1 2 1 0.1 24 3000 1",
+ "seed": 14935,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "38287ce6",
+ "started_utc": "20260922T220855Z",
+ "elapsed_s": 168.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=10.0 q=1.0 r=2.0 c=1.0000 rho=0.1 L=24 nbrs=3.647 nbrs_over_random=6.078 aligned=0.925 S=7.82 accept=0.239 records=1396 seconds=168",
+  "screening": "S(0) = -0.763  xi^2 = nan  xi = nan lattice steps (fit of 1/S against E(k) on 538 modes)"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: the range of the field of a held record (block 41, T3). screening_gas.py is the moving-records simulator with the occupancy structure factor accumulated; its SCREENING line gives S(0) and the range xi from 1/S(k) = (1/S0)(1 + xi^2 E(k)). First look (side 16, one seed): xi between 0 and 1.1 lattice steps away from the clumping onset; the fit fails next to the onset, where the small-k structure factor grows. The map over p, density and scale says where the density field is of short range and where it is not.",
+ "stdout_sha256": "effa76490f956c42bcafc33d749651a3c0bc10824b5ebd55fb46304db6fc90ad",
+ "stdout_tail": "weights (10.0,1.0,2.0) scale c=1.0000 (1) rho=0.1 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=0.600 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 1.020 0.305 0.421 0.13\n     2 1.142 0.369 0.376 0.14\n     4 1.268 0.434 0.344 0.14\n     9 1.338 0.464 0.329 0.19\n    18 1.454 0.524 0.317 0.19\n    38 1.430 0.543 0.321 0.30\n    79 1.623 0.584 0.284 0.20\n   163 1.709 0.598 0.317 0.10\n   338 2.074 0.669 0.273 0.45\n   700 2.413 0.784 0.282 1.10\n  1449 3.371 0.916 0.251 3.47\n  3000 3.606 0.934 0.256 9.93\noccupancy structure factor by E(k) shell: E<0.2: 5.229, E<0.6: 3.859, E<1.6: 0.662, E<4: 0.084, E<12: 0.033\nSCREENING: S(0) = -0.763  xi^2 = nan  xi = nan lattice steps (fit of 1/S against E(k) on 538 modes)\nSUMMARY: p=10.0 q=1.0 r=2.0 c=1.0000 rho=0.1 L=24 nbrs=3.647 nbrs_over_random=6.078 aligned=0.925 S=7.82 accept=0.239 records=1396 seconds=168\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T221144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

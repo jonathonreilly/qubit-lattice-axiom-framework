@@ -1,0 +1,7 @@
+PR #8594: Derive the complete slow-formation clock for mobile records
+branch codex/mobile-record-all-stage-formation-20260921 (base codex/mobile-record-geometric-formation-selection-20260921)
+runners in the PR: 1
+== scripts/mobile_records_all_stage_formation_clock_2026_09_21.py: rc=0 PASS=5 FAIL=0
+   mutation double_killed_birth_hazard: expected ? observed ? MISMATCH
+   mutation omit_augmenting_path_flip: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_all_stage_formation_clock_2026_09_21.py: mutation census mismatch: double_killed_birth_hazard omit_augmenting_path_flip

@@ -1,0 +1,12 @@
+PR #8598: ail67: a formation event in the curvature member — the ledger can always be kept; the clocks' far field then jumps at second order (source-link direction, block 15)
+branch physics-loop/admissibility-induced-law-block67-a-formation-event-in-the-curvature-member-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_formation_event_in_the_curvature_member_the_ledger_can_always_be_kept_and_then_the_clocks_far_field_jumps_2026_09_21.py: rc=0 PASS=13 FAIL=0
+   mutation record_keeps_the_bare_energy_and_the_ledger: expected B observed B ok
+   mutation ledger_has_a_threshold: expected B observed B ok
+   mutation outside_sees_the_formation_in_the_monopole: expected C observed C ok
+   mutation probability_odds_hold_the_centre: expected C observed C ok
+   mutation clocks_far_field_is_kept: expected D observed D ok
+   mutation jump_is_of_first_order: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

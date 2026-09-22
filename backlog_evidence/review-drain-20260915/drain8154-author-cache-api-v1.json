@@ -1,0 +1,56 @@
+[
+  {
+    "pr": "8154",
+    "primary": "scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    ],
+    "declared_input_fingerprint": "180bdc3fb4afeba3af66594f13c97afd7af6ec9455956ec3b4c198d3d0738764",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "pr": "8155",
+    "primary": "scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+    ],
+    "declared_input_fingerprint": "6555d53b77a69418b8755460335c571d5d299e3dd89ebca10440b58907129e1c",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "pr": "8156",
+    "primary": "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "declared_input_fingerprint": "72a9ed87ac851a8536836b0a0636ff6913c06951bec05a9ac6f9ea125431b043",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "pr": "8157",
+    "primary": "scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+    ],
+    "declared_input_fingerprint": "fdc2e2ade5d92900e2ff47f0df0bec1732446f918120c0e46dad70249b18dbbe",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

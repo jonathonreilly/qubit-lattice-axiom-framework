@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+  "fetched_ref": "refs/review-loop/fetched/8026-3b0c6177925c49308c5834fc3e88fd6e",
+  "metadata": {
+    "baseRefName": "codex/local-observable-block35-20260907",
+    "headRefName": "codex/spatial-area-block36-20260907",
+    "headRefOid": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "isDraft": true,
+    "number": 8026,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

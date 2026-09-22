@@ -1,0 +1,58 @@
+{
+  "8154": [
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "new_path": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "6d4d5c0fb1b27a392567602fac4661143baf921c27d679ad7e095e2b1297ba7e",
+      "new_sha256": "1ead528308a21cded343d0790dd9de2715eeacdc47d6d1b4922a3358dbcbe179"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py",
+      "new_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py",
+      "original_sha256": "da12b31506eb1b85187d28fd4d7053b5e6f31bb9da0c7bc3126d0012ee3bc9b4",
+      "new_sha256": "ef7982e99aa68da61f3b9bfc85b6840455655ab50bddd375f9bc9a5a1bffe097"
+    }
+  ],
+  "8155": [
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "new_path": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "181b098dfca8e5822f23efa14ecbbe35cff9411954fd8f86c099bd142d21d33f",
+      "new_sha256": "2c2429e3f9d382dd54f5fcea7386b498033c4d1b4cc0e071927e6b5e764a36af"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py",
+      "new_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py",
+      "original_sha256": "e7089c4afcfacf4fd63d22b460178eada0a14976e20d866620c4375574723342",
+      "new_sha256": "8bb578762cfcf2c2312fe2db593294867727f9313c189b390bbe86243239c925"
+    }
+  ],
+  "8157": [
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "new_path": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "9c297d9817a035eeb508f1d80c8416fcfd4cd3bd64ca89dc73fcd78cd1cc069b",
+      "new_sha256": "3c24fb46bf2398b5048e7557dd7a275d626c2997eae940436eccd3f4ed85ce5a"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py",
+      "new_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py",
+      "original_sha256": "871af4b6bea3be5e201605dc57df8e659db8c63b8a3ef205c4e4442a30cd7929",
+      "new_sha256": "c98d038d403b3921701cb64f2b24ae5b69985f9a630ef5df979d57c9416c6684"
+    }
+  ],
+  "8156": [
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "new_path": "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "2815d9273d60a7320812c037908672c4bd38750d0fcdc1f7a7abc0f3b576d916",
+      "new_sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py",
+      "new_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py",
+      "original_sha256": "442bf985691176aa63074c2302f9e89cc21e24233697e3e45c42b8d74af2cfa6",
+      "new_sha256": "f9573592903f4ad220aecef1a0c739dbd455679ea7352d3e497938346d4ee4cd"
+    }
+  ]
+}

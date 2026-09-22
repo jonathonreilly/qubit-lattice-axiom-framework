@@ -1,0 +1,26 @@
+{
+  "8154": {
+    "note": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py",
+    "original_note": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "scope": "For a supplied uniform-sphere exponential nearest-neighbour static model in independent dimensions d=1,2,3, on even tori with L>=2: H1 is a finite-volume Fourier lower bound in terms of M_N; H2 supplies explicit lattice sums; H3 gives M_N^4 <= (3 pi^2 beta+1)/H_(L-1) in dimension two and M_N^4 <= (6 pi^2 beta+4)/sqrt(L) in dimension one. These bounds imply vanishing of this torus magnetization-square sequence. No universal state, kernel, gravity or dimension-selection conclusion is retained."
+  },
+  "8155": {
+    "note": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py",
+    "original_note": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "scope": "For a supplied uniform-sphere exponential nearest-neighbour static specification on Z^3: W1 bounds the one-site total-variation response, W2 gives alpha=2sqrt(3)beta, W3 proves finite-window comparison, W4 constructs the unique rotation-invariant DLR law when alpha<1, and W5 bounds correlations, torus magnetization and structure factors. Torus results require L>=2. No strong-coupling comparison or physical kernel classification is retained."
+  },
+  "8157": {
+    "note": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py",
+    "original_note": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "scope": "For the supplied uniform-sphere exponential nearest-neighbour static model on independent Z^2: P1 proves the complex-shift inequality; P2 bounds the logarithmic shift energy by charging each active bond to a nearer endpoint; P3 gives an explicit correlation upper bound with exponent kappa(beta)>0; P4 gives the torus magnetization bound and the same correlation bound conditional on a DLR law. Windows must contain 0,x and every site with distance less than R=distance(x); tori have L>=2. No exact decay exponent, faster-power exclusion, gravity or dimension-selection claim is retained."
+  },
+  "8156": {
+    "note": "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py",
+    "original_note": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "scope": "V1\u2013V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M\u00b2>=1\u22123G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes."
+  }
+}

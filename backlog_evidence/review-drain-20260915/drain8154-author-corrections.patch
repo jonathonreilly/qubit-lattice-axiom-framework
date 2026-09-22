@@ -1,0 +1,1055 @@
+--- original/PR8154/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ author/PR8154/docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,103 +1,42 @@
+ ---
+-claim_id: admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_third_dimension_load_bearing_for_the_green_function_channel_bounded_theorem_note_2026-09-15
++claim_id: admissibility_rule_sphere_static_law_finite_torus_magnetization_bounds_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "For the static law of the exponential zonal rule on the pure-state sphere under the unsoldered reading, restricted to a coordinate plane or a coordinate line of the lattice — the torus law proportional to prod_{<xy>} exp(beta s_x . s_y) on (Z/2LZ)^d with the uniform surface measure — with the transform s^(k) = N^{-1/2} sum_x e^{ikx} s_x, the Laplacian symbol E(k) = sum_i 2(1 - cos k_i) and the long-range-order parameter M_N^2 = N^{-2} <|sum_x s_x|^2>: (H1) the zero-field lower bound <|s^1(k)|^2> >= (2 M_N^2/3)^2/[(beta E)^{1/2} + (beta E + 4 M_N^2/(3N))^{1/2}]^2 >= (M_N^2/3)^2/(beta E(k) + 4/(3N)) holds for every k != 0 in every dimension d <= 3, the dimension entering only through the bond count (proved; the generator, integration-by-parts, second-derivative, simplification and bond identities executed symbolically); (H2) on the plane sum_{k != 0} |k|^{-2} >= (N/pi^2) H_{L-1}, E(k) <= |k|^2 and 4/(3N) <= |k|^2/(3 pi^2), and on the line (L >= 2) the 2 floor(sqrt L) smallest wavevectors have beta E(k) + 4/(3N) <= (beta pi^2 + 2/3)/L (proved; the shell counts, the dyadic bound H_{2^m} >= 1 + m/2 and the identities executed exactly); (H3) hence, by the sum rule sum_k <|s^1(k)|^2> = N/3, the long-range-order parameter obeys M_N^4 <= (3 pi^2 beta + 1)/H_{L-1} on the plane (L >= 2) and M_N^4 <= (6 pi^2 beta + 4)/sqrt(L) on the line (L >= 2), so it tends to zero as L grows for every beta > 0: the unsoldered static law has no long-range order on any coordinate plane or line (proved; executed); (H4) consequently the transverse Green-function channel of the ordered law (block 19's sandwich, PR #8153, referenced as an evidence address for the three-dimensional half) exists on Z^3 above its threshold and on no plane or line, while the soldered six-axis static law orders on the plane (block 17, PR #8151): the third dimension of the Lattice axiom is load-bearing for the gravity node's kernel under the unsoldered static reading, and the continuous menu is what forbids order on planes (a placement corollary conditional on the referenced open blocks for their halves). Three standard mathematical imports named at definition level; no coupling, reading, rule or dimension is selected as physical; exact arithmetic throughout."
++claim_scope: "For a supplied uniform-sphere exponential nearest-neighbour static model in independent dimensions d=1,2,3, on even tori with L>=2: H1 is a finite-volume Fourier lower bound in terms of M_N; H2 supplies explicit lattice sums; H3 gives M_N^4 <= (3 pi^2 beta+1)/H_(L-1) in dimension two and M_N^4 <= (6 pi^2 beta+4)/sqrt(L) in dimension one. These bounds imply vanishing of this torus magnetization-square sequence. No universal state, kernel, gravity or dimension-selection conclusion is retained."
+ upstream_dependencies:
+-  - minimal_axioms
++  - minimal_axioms_2026-06-29
+   - possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14
+ runner: scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py
+ ---
+ 
+-# The unsoldered sphere static law has no long-range order on any coordinate plane or line: the zero-field lower bound is dimension-free, the plane's lattice sum grows without bound, and the Green-function channel needs the third dimension
++# Sphere Static Law Finite Torus Magnetization Bounds
+ 
+-**Date:** 2026-09-15
+-**Type:** bounded_theorem
+-**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++**Status:** bounded-support; conditional supplied model; unaudited.
+ 
+ ## Result up front
+ 
+-Block 19 (PR #8153) found where the gravity lane's kernel can live inside the
+-axioms' readings: in the transverse channel of the ordered unsoldered static
+-law on `Z³`, where the record field picks a direction and its components
+-across that direction fluctuate like the inverse lattice Laplacian. The
+-Lattice axiom names `Z³`. Is the third dimension doing work there, or would a
+-plane do? This note answers: a plane never orders under that reading, at any
+-coupling strength, and neither does a line; so the channel of block 19 does
+-not exist on any plane or line, and the third dimension is load-bearing for
+-the kernel.
+-
+-The proof is short because block 19's lower bound is already dimension-free.
+-That bound, a classical Bogoliubov inequality run at zero field against the
+-long-range-order parameter itself, reads `⟨|ŝ¹(k)|²⟩ ≥ (M_N²/3)²/(βE(k) +
+-4/(3N))` for every nonzero wavevector; nothing in its derivation knows the
+-dimension except the count of bonds per direction, which is `N` in every
+-dimension (H1). Summing it over wavevectors and comparing with the sum rule
+-`Σ_k ⟨|ŝ¹(k)|²⟩ = N/3` gives `(M_N²/3)² · N^{−1}Σ_{k≠0} 1/(βE(k) + 4/(3N)) ≤
+-1/3`. On the plane the lattice sum grows like the harmonic sum `H_{L−1}` of
+-the side (H2), so `M_N⁴ ≤ (3π²β + 1)/H_{L−1}` (H3): the long-range-order
+-parameter tends to zero as the plane grows, whatever `β`. On the line the
+-sum grows like `√L` and the same happens faster. In three dimensions the
+-sum stays bounded and the inequality says nothing, which is consistent with
+-block 19's order for `β > 3√3π/8`.
+-
+-The contrast with block 17 is the point: the soldered six-axis static law,
+-with its discrete menu, *does* order on the plane (PR #8151). Whether a plane
+-can order is decided by the menu: a continuous possibility symmetry (block
+-18's unsoldered reading) forbids it, a discrete one does not. And the
+-channel that carries the Green function is exactly the one a continuous
+-symmetry supplies. So under the reading that produces the gravity node's
+-kernel, the kernel needs `Z³` (H4).
+-
+-Exactly: H1 in `d ≤ 3`; `Σ_{k≠0}|k|^{−2} ≥ (N/π²)H_{L−1}` on the plane (H2);
+-`M_N⁴ ≤ (3π²β + 1)/H_{L−1}` on the plane and `M_N⁴ ≤ (6π²β + 4)/√L` on the
+-line (H3); the placement (H4). Executed with exact arithmetic: 20 checks,
+-13 mutations.
+-
+-## Machine status and trace
+-
+-```yaml
+-actual_current_surface_status: bounded-support
+-target_claim_type: bounded_theorem
+-trace_class: upstream_support
+-target_claim_id: null
+-target_blocker_text: "the derivation campaign's gravity node (#8093): 'the covariant scalar record statistic whose two-point function on the formation law is the lattice Green function'; block 19 (PR #8153) locates it in the transverse channel of the ordered unsoldered static law on Z^3; the Lattice axiom's third dimension"
+-source_of_blocker_text: handoff
+-reachability_to_target: supports
+-artifact_role: theorem
+-next_trace_action: "the dimension placement is settled for the unsoldered static reading: no long-range order on any coordinate plane or line at any beta > 0, so block 19's channel needs Z^3; the discrete six-axis law orders on the plane (block 17), so the menu decides. Open: the decay of the plane's correlations (not claimed); the kernel's normalization; the Born overlap. Consumers: #8093's assembly (the gravity node's dimension dependence); the campaign's queue"
+-conditional_surface_status: "H1 proved for d <= 3 and every beta > 0 on tori of even side; H2-H3 proved on every plane and line torus with explicit bounds; H4 a placement corollary conditional on blocks 19 and 17 (open PRs) for their halves; the algebraic skeleton executed exactly (shell counts to L = 12, the dyadic bound to m = 12, the identities symbolically, Parseval on the 4x4 torus); conditional on the sphere as the possibility domain, the unsoldered reading and the exponential overlap as supplied conditions; three standard mathematical imports named at definition level"
+-hypothetical_axiom_status: null
+-admitted_observation_status: null
+-audit_required_before_effective_retained: true
+-```
++For a supplied uniform-sphere exponential nearest-neighbour static model in independent dimensions d=1,2,3, on even tori with L>=2: H1 is a finite-volume Fourier lower bound in terms of M_N; H2 supplies explicit lattice sums; H3 gives M_N^4 <= (3 pi^2 beta+1)/H_(L-1) in dimension two and M_N^4 <= (6 pi^2 beta+4)/sqrt(L) in dimension one. These bounds imply vanishing of this torus magnetization-square sequence. No universal state, kernel, gravity or dimension-selection conclusion is retained.
+ 
+ ## Premises and declared objects
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "Each site has a domain of local possibilities.", "No possibility is privileged.", "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", and "Records form.". The landed possibility-covariance note (`docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md`, section "Empty-neighbourhood sphere laws") supplies the pure-state sphere `S²` as the possibility domain and the unsoldered reading (internal rotations act on values independently of the cube group on sites). Block 01 (on `main`) supplies the static reading: on a finite window the law is the normalized product of the rule's bond weights over the window's bonds. Both are proposed and unaudited; blocks 17 and 19 (PRs #8151, #8153, open) are referenced under Prior art as evidence addresses for the halves of H4 that are not re-proved here.
++The linked repository context is [MINIMAL_AXIOMS_2026-06-29](MINIMAL_AXIOMS_2026-06-29.md); [POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14](POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md). The possibility parent supplies conditional representation vocabulary; it does not select this probability law. We explicitly supply the uniform surface measure on S², beta>0, the exponential pair weight and the static specification. These are mathematical model premises, not consequences selecting physics from the axioms. The independent d-dimensional nearest-neighbour model omits all couplings outside that dimension; a two-dimensional model is not the marginal of a plane in an interacting three-dimensional model. All torus claims below use L>=2 (side at least four), so neighbours are distinct.
+ 
+ Declared objects.
+-- **Dimension and torus.** `d ∈ {1, 2, 3}`; the torus `T_L^{(d)} = (Z/2LZ)^d` with `N = (2L)^d` sites and `dN` nearest-neighbour bonds (`N` per direction). The plane and the line are the coordinate sublattices `Z²` and `Z¹` of the Lattice axiom's `Z³`; their static laws are the laws of the same rule on windows contained in the plane or the line, with no records outside the window (the convention of blocks 12 and 17).
++- **Dimension and torus.** `d ∈ {1, 2, 3}`; the torus `T_L^{(d)} = (Z/2LZ)^d` with `N = (2L)^d` sites and `dN` nearest-neighbour bonds (`N` per direction). Here dimensions one and two mean independent nearest-neighbour models, with no out-of-dimension couplings; all tori have L ≥ 2.
+ - **The law.** Records `s_x ∈ S²`; the overlap `e^{β s·s'}` with `β > 0` supplied; the torus law `μ_L ∝ Π_{⟨xy⟩} e^{β s_x·s_y} Π_x dσ(s_x)` with `dσ` the uniform surface measure. `μ_L` is invariant under every simultaneous rotation of all records (the overlap and `dσ` are).
+ - **Transforms.** `ŝ(k) = N^{−1/2} Σ_x e^{ik·x} s_x` for `k = (π/L)n`, `n ∈ {−L+1, …, L}^d`; `E(k) = Σ_{i=1}^d 2(1 − cos k_i)`; `m̂ = N^{−1}Σ_x s_x³`; `M_N² = N^{−2}⟨|Σ_x s_x|²⟩`; `u(k) = ⟨|ŝ¹(k)|²⟩`. By the rotation invariance, `⟨m̂²⟩ = M_N²/3` and `⟨(s_x¹)²⟩ = 1/3`.
+ - **The generator.** `L_x = (e₂ × s_x)·∇_x`, the rotation about `e₂` acting on site `x`: `L_x s_x³ = −s_x¹`, `L_x s_x¹ = s_x³`, `L_x s_x² = 0`; `L = Σ_z c_z L_z` with `c_z = e^{−ik·z}` and `L̄ = Σ_z c̄_z L_z`.
+ - **Harmonic sums.** `H_n = Σ_{j=1}^n 1/j`; `H_0 = 0`.
+ 
++
++
+ ## Prior art and what is new
+ 
+-The classical no-order theorem for continuous symmetries in two dimensions is due to Mermin and Wagner (1966) for quantum spins and Mermin (1967) for classical ones, with Hohenberg (1967) for superfluids; algebraic decay in two dimensions is McBryan–Spencer (1977); Fröhlich–Pfister (1981) and Dobrushin–Shlosman (1975) give the infinite-volume forms. None is used; H1–H3 are re-proved at scope for the record law. On `main`, three notes treat the theorem for *quantum Hamiltonians* on `Z¹`/`Z²` sublattices: the axiom-first Coleman–Mermin–Wagner packet (2026-04-29, the lattice sum's growth), the 2D-sublattice no-SSB note (2026-05-02, with the Ward-normalized order/charge pair as a hypothesis) and the textbook-import note (2026-05-18), which states that its order-parameter lower bound needs an unsupplied Ward-normalization lemma and that it does not treat the classical theorem. What is new here: (i) for the record law the order-parameter lower bound is the exact generator identity `L ŝ¹(k) = N^{1/2} m̂` (no Ward lemma is needed), so the no-order statement closes on planes and lines with explicit finite-volume bounds; (ii) H1 is block 19's inequality with the dimension made explicit, re-proved here so the note stands alone; (iii) the placement: block 19's Green-function channel needs the third dimension, and the discrete law of block 17 shows the menu, not the lattice, decides whether a plane orders.
+ 
+-## Exact target and obligation graph
+-
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| H1 | the zero-field lower bound for `k ≠ 0` in `d ≤ 3`, the dimension only in the bond count | generator, integration by parts, the second derivative, the quadratic | D |
+-| H2 | the plane's lattice sum `≥ (N/π²)H_{L−1}`; `H_{L−1} ≥ 1 + m/2` for `L ≥ 2^m + 1`; `E(k) ≤ |k|²`; the small-wavevector term; the line's block | shells in the sup norm; dyadic blocks; the half-angle identity | B, C |
+-| H3 | `M_N⁴ ≤ (3π²β + 1)/H_{L−1}` on the plane; `M_N⁴ ≤ (6π²β + 4)/√L` on the line | the sum rule with H1 and H2 | C, D |
+-| H4 | the placement: the channel needs `Z³`; the menu decides whether a plane orders | H3 with blocks 19 and 17 | — |
++The classical no-order theorem for continuous symmetries in two dimensions is due to Mermin and Wagner (1966) for quantum spins and Mermin (1967) for classical ones, with Hohenberg (1967) for superfluids; algebraic decay in two dimensions is McBryan–Spencer (1977); Fröhlich–Pfister (1981) and Dobrushin–Shlosman (1975) give the infinite-volume forms. None is used; H1–H3 are re-proved at scope for the record law.  The contribution retained here is the explicit mathematical bounds for the supplied model. No comparison with physical channels is used.
+ 
+ ## Theorem H1 — the zero-field lower bound in every dimension
+ 
+-**Statement.** For `d ∈ {1, 2, 3}`, `β > 0`, `L ≥ 1` and every `k ≠ 0`,
++**Statement.** For `d ∈ {1, 2, 3}`, `β > 0`, `L ≥ 2` and every `k ≠ 0`,
+ ```
+ u(k) ≥ (2M_N²/3)² / [(βE(k))^{1/2} + (βE(k) + 4M_N²/(3N))^{1/2}]² ≥ (M_N²/3)² / (βE(k) + 4/(3N)).
+ ```
+@@ -108,7 +47,7 @@
+ ```
+ so `−L L̄ log w = β Σ_{⟨xy⟩} |c_x − c_y|² (s_x¹s_y¹ + s_x³s_y³)`. For a bond in direction `i`, `|c_x − c_y|² = |1 − e^{−ik_i}|² = 2(1 − cos k_i)`, and `|s_x¹s_y¹ + s_x³s_y³| ≤ 1`. There are `N` bonds in each of the `d` directions, so `⟨|L log w|²⟩ ≤ βN Σ_{i=1}^d 2(1 − cos k_i) = βN E(k)`. This is the only place the dimension enters. (iv) *The left factor.* `L ŝ¹(k) = N^{−1/2} Σ_x e^{ik·x} c_x s_x³ = N^{1/2} m̂` and `L m̂ = −N^{−1} Σ_y c_y s_y¹ = −N^{−1/2} \overline{ŝ¹(k)}`, so `LF = N^{1/2} m̂² − N^{−1/2} |ŝ¹(k)|²` and `⟨LF⟩ = N^{1/2} M_N²/3 − N^{−1/2} u(k)`. (v) *The quadratic.* If `⟨LF⟩ < 0` then `u > N M_N²/3`, which exceeds the claimed bound. Otherwise (ii)–(iv) give `M_N²/3 − u/N ≤ (βE u)^{1/2}`; with `v = u^{1/2}` this is `v²/N + (βE)^{1/2} v − M_N²/3 ≥ 0`, so `v` is at least the positive root, `v ≥ (2M_N²/3)/[(βE)^{1/2} + (βE + 4M_N²/(3N))^{1/2}]`, which is the first inequality. (vi) *Simplification.* With `a = βE` and `b = (a + 4M_N²/(3N))^{1/2} ≥ a^{1/2}`: `4b² − (a^{1/2} + b)² = (b − a^{1/2})(3b + a^{1/2}) ≥ 0`, so the first bound is at least `(M_N²/3)²/(a + 4M_N²/(3N))`, and `M_N² ≤ 1` gives the second inequality. ∎
+ 
+-*Remarks.* The infrared upper bound `u(k) ≤ 1/(βE(k))` of block 19 (reflection positivity through bond planes and Gaussian domination) is dimension-free in the same way; it is not needed below. The identities of (iii), (iv) and (vi) are executed symbolically (D1–D4).
++*Finite verification.* The identities of (iii), (iv) and (vi) are executed symbolically (D1–D4).
+ 
+ ## Theorem H2 — the lattice sums
+ 
+@@ -118,67 +57,21 @@
+ 
+ The shell counts `8j` and `4L − 1`, the norm bound and the resulting inequality are executed exactly for `L = 2, …, 12` (B1); the dyadic bound for `m ≤ 12` (B2); `4⌊√L⌋² ≥ L` and the count `2⌊√L⌋` of wavevectors in the block for `2 ≤ L ≤ 400`, and the line's per-term inequality symbolically (B3); the half-angle identity and the small-term identities symbolically (C1–C2).
+ 
+-## Theorem H3 — no long-range order on planes and lines
++## Theorem H3 — bounds on the torus magnetization-square sequence
+ 
+ **Statement.** For every `β > 0`: on the plane torus `(Z/2LZ)²` with `L ≥ 2`,
+ ```
+ M_N⁴ ≤ (3π²β + 1)/H_{L−1}, hence M_N⁴ ≤ (3π²β + 1)/(1 + m/2) for L ≥ 2^m + 1;
+ ```
+-on the line torus `Z/2LZ` with `L ≥ 2`, `M_N⁴ ≤ (6π²β + 4)/√L` (at `L = 1` the right side exceeds `1 ≥ M_N⁴`). In both cases `M_N² → 0` as `L → ∞`: the unsoldered static law with the exponential overlap has no long-range order on any coordinate plane or line.
++on the line torus `Z/2LZ` with `L ≥ 2`, `M_N⁴ ≤ (6π²β + 4)/√L` (at `L = 1` the right side exceeds `1 ≥ M_N⁴`). In both cases `M_N² → 0` as `L → ∞`: this particular one- or two-dimensional torus magnetization-square sequence tends to zero.
+ 
+ **Proof.** *The sum rule.* The transform is unitary, `Σ_k |ŝ¹(k)|² = Σ_x (s_x¹)²`, so `Σ_k u(k) = N⟨(s_0¹)²⟩ = N/3` by rotation invariance; dropping the term `k = 0` (which is `N M_N²/3 ≥ 0`), `Σ_{k≠0} u(k) ≤ N/3`. *Plane.* By H1 and H2(c)–(d), for `k ≠ 0`: `u(k) ≥ (M_N²/3)²/((β + 1/(3π²))|k|²)`. Summing and using H2(a): `(M_N²/3)² (β + 1/(3π²))^{−1} (N/π²) H_{L−1} ≤ N/3`, i.e. `(M_N²/3)² ≤ π²(β + 1/(3π²))/(3H_{L−1})`, and multiplying by `9`: `M_N⁴ ≤ (3π²β + 1)/H_{L−1}`. The dyadic form is H2(b). *Line.* By H1 and H2(e), each of the `2m` wavevectors with `1 ≤ |n| ≤ m` has `u(k) ≥ (M_N²/3)² L/(βπ² + 2/3)`, so `(M_N²/3)² · 2m L/(βπ² + 2/3) ≤ N/3 = 2L/3`, i.e. `M_N⁴ ≤ 3(βπ² + 2/3)/m ≤ 6(βπ² + 2/3)/√L = (6π²β + 4)/√L`. ∎
+ 
+ Parseval with symbolic site values on the `4×4` torus and the sphere average `1/3` are executed (D5); the final algebra of both cases symbolically (C3).
+ 
+-## Corollary H4 — the placement: the Green-function channel needs the third dimension
+-
+-**Statement (conditional on blocks 19 and 17 for their halves).** Under the unsoldered static reading with the exponential overlap, block 19's transverse channel — `(M²/3)²/(βE(k)) ≤ lim inf u(k) ≤ 1/(βE(k))` with `M² > 0` — exists on `Z³` for `β > 3√3π/8` (block 19, G3–G5) and on no coordinate plane or line at any `β > 0` (H3: the lower constant `M²` is zero in the limit, so the sandwich degenerates and no long-range order carries it). The soldered six-axis static law orders on the plane for `p ≥ 216·max(q, r)` (block 17, T5–T6). Hence: (i) the third dimension of the Lattice axiom is load-bearing for the gravity node's kernel under the reading that supplies it; (ii) whether a plane orders is decided by the menu (continuous forbids, discrete allows), not by the lattice.
+-
+-**Proof.** (i) is H3 with block 19's G5; (ii) is H3 with block 17's T5–T6 and block 18's classification of the menus (continuous under the unsoldered reading, cube orbits under the soldered one). Nothing beyond H3 is proved here; the referenced halves are open PRs and are cited as evidence addresses, not as authority. ∎
+-
+-*Not claimed.* How the plane's correlations decay (the infrared upper bound `u(k) ≤ 1/(βE(k))` still holds there and the sum rule then says nothing further); any statement for the Born overlap; the kernel's normalization on `Z³`.
+-
+ ## No-Go Discipline Gate
+ 
+-The negative sentence is H3: no long-range order for the unsoldered static law on any coordinate plane or line, at any `β > 0`. Its escapes are named, not closed: a discrete menu (block 17 orders on the plane), the formation reading (block 12 treats it separately), and `d = 3` (block 19 orders).
+-
+-### N1 — Routes by which H3 could fail
+-1. *The lower bound H1 fails in `d < 3`* — closed: the derivation uses only the bond count per direction (D1–D4 executed; the counts on the `4×4` and `8` tori executed).
+-2. *The sum rule's constant* — closed: Parseval and the sphere average executed (D5); dropping `k = 0` only weakens the inequality in the safe direction.
+-3. *The lattice sum on the plane stays bounded* — closed: the shell bound gives `H_{L−1}`, which grows without bound (B1–B2).
+-4. *The small term `4/(3N)` dominates* — closed on the plane by H2(d) (it is `|k_min|²/(3π²)`) and on the line by the block of the `2⌊√L⌋` smallest wavevectors (B3).
+-5. *A discrete menu, the formation reading, or the third dimension* — escapes, named above; none contradicts H3, which is stated for the continuous menu on planes and lines.
+-
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used; the argument is self-contained given the premises.
+-
+-### N3 — Hidden-wall scan
+-No hidden dependence: the only inputs are the axioms' sentences, the parent note's sphere law and reading, block 01's static reading, and the supplied overlap.
+-
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
+-|---|---|---|
+-| `minimal_axioms` | the five sentences under Premises | yes (premise) |
+-| the possibility-covariance note (`main`) | the sphere domain and the unsoldered reading | yes (premise, proposed) |
+-| block 01 (`main`) | the static reading | yes (premise, proposed) |
+-| block 19 (PR #8153) | the three-dimensional half of H4; H1 re-proved here | H4 only (evidence address) |
+-| block 17 (PR #8151) | the discrete law's order on the plane, for H4(ii) | H4 only (evidence address) |
+-| block 18 (PR #8152) | the classification of the menus, for H4(ii) | H4 only (evidence address) |
+-| main's three quantum no-order notes | context only | no |
+-
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "no long-range order on any coordinate plane or line" | executed: the generator identities; the single-bond second derivative; the root and its simplification; the bond identity | executed: Parseval with symbolic site values on the `4×4` torus; the sphere average of a component's square | executed: the shell counts `8j`, `4L−1` and the norm bound on every shell for `L ≤ 12`; the line's small-wavevector block | executed: the dyadic blocks of the harmonic sum to `m = 12`; the bond counts on the `4×4` and `8` tori | proved for every `β > 0` on every plane and line torus (H3); H1 for `d ≤ 3`; the decay rate not claimed |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling, overlap or dimension; none is a wall.
+-
+-### N7 — Steelman
+-Hostile reviewer: "This is the 1966 theorem for the classical three-component model; the framework adds nothing, and the bound `M_N² ≲ (log L)^{−1/2}` is far from the truth." Reply: the framework question is whether the reading that supplies the gravity node's kernel needs the third dimension of the Lattice axiom, and the answer required the classical no-order statement for *this* record law with no open lemma; main's quantum versions leave the order-parameter lower bound to an unsupplied normalization lemma, which the classical generator identity replaces. Conceded: the rate is not sharp and is not claimed; the decay of the plane's correlations is not treated.
+-
+-### N8 — Cross-cycle echo
+-Main's axiom-first no-order packets (2026-04-29, 2026-05-02, 2026-05-18) are the quantum-Hamiltonian counterparts, conditional on a Ward lemma; block 12's eroder statement that the formation law never orders on the plane is the same dimension dependence in the other reading, for a different reason (majority erosion); block 17's discrete order on the plane is the counterexample that fixes the cause here as the continuous menu.
++Broad negative certification is withheld. The original five-route tables listed proof obligations and changes of scope rather than five independent attacks on the exact exclusion. They do not establish a negative certificate. Full original arguments remain available in the archive and original branches are retained. H4 is withdrawn: vanishing M_N² degenerates this particular lower bound; it does not exclude every possible kernel or establish a statement about every infinite-volume state.
+ 
+ ## Falsifiers
+ - A side `L ≤ 12` at which a sup-norm shell of `{−L+1, …, L}²` has a count other than `8j` (`j < L`) or `4L − 1` (`j = L`), a point with `|n|² > 2j²`, or `Σ_{n≠0}|n|^{−2} < 4H_{L−1}` (B1); an `m ≤ 12` with `H_{2^m} < 1 + m/2` (B2); an `L ≤ 400` with `4⌊√L⌋² < L`, a count of wavevectors in the line's block other than `2⌊√L⌋` for some `2 ≤ L ≤ 400`, or a failure of the line's per-term inequality (B3).
+@@ -186,17 +79,22 @@
+ - A generator identity, the single-bond second-derivative identity, the integration-by-parts identity for a polynomial, the root identity or the simplification identity that fails (D1–D3); the bond identity `|1 − e^{−iθ}|² = 2(1 − cos θ)` or a bond count other than `N` per direction on the `4×4` or `8` torus (D4); a Parseval residue or a sphere average other than `1/3` (D5).
+ 
+ ## Boundaries and non-claims
+-This note proves, for the unsoldered static law with the exponential overlap on a coordinate plane or line of the lattice, that the long-range-order parameter tends to zero as the torus grows at every `β > 0`, with explicit bounds; it does not state the rate at which correlations decay on the plane, does not treat the Born overlap, does not re-prove the three-dimensional half of the placement (block 19's open PR), does not select a reading, rule, coupling or dimension as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++For a supplied uniform-sphere exponential nearest-neighbour static model in independent dimensions d=1,2,3, on even tori with L>=2: H1 is a finite-volume Fourier lower bound in terms of M_N; H2 supplies explicit lattice sums; H3 gives M_N^4 <= (3 pi^2 beta+1)/H_(L-1) in dimension two and M_N^4 <= (6 pi^2 beta+4)/sqrt(L) in dimension one. These bounds imply vanishing of this torus magnetization-square sequence. No universal state, kernel, gravity or dimension-selection conclusion is retained. This note does not select a physical reading, coupling, rule or dimension and adopts no clause.
++
++No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
++
++The standard mathematical imports are stated explicitly; they supply mathematical tools, not physical selection.
+ 
+ ## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- The possibility-covariance note and block 01 (both on `main`): the readings and the object; proposed, unaudited. PRs #8151, #8152 and #8153 (open) referenced as evidence addresses for H4 only.
+ - Re-proved at scope: H1 (integration by parts, the quadratic-form inequality, the second derivative, the quadratic and its simplification), H2 (shells, dyadic blocks, the half-angle identity, the small terms), H3 (the sum rule and the assembly).
+ - Named standard imports at definition level (never as authority for physics): the unitarity of the discrete torus transform; the integration-by-parts identity for the divergence-free rotation field on the sphere; the inequality `|sin t| ≤ |t|`.
+ - Reference only (named, not used): Mermin–Wagner (1966); Mermin (1967); Hohenberg (1967); McBryan–Spencer (1977); Fröhlich–Pfister (1981); Dobrushin–Shlosman (1975); main's three quantum no-order notes of 2026-04-29, 2026-05-02 and 2026-05-18.
+ 
++
+ ## Review record
+-Supervisor-run block (owner directive: don't stop; assess the next lane at each conclusion; no subagents). The control (`specs/supervisor_control_block20_planes_lines.py`) checked the shell counts, the dyadic bound, the identities, the simplification chain, the sphere average, Parseval and the line's block before the contract, and corrected the contract's first draft, which had counted the last shell as if the wavevector range were `{−L, …, L}²` (the range is `{−L+1, …, L}²`; the last shell is truncated to `4L − 1` points and is dropped, so the bound is `4H_{L−1}`, not `4H_L`) and had applied the plane's small-term comparison to the line (where `4/(3N) = 2/(3L)` is not below `|k|²/(3π²)`; the line uses the block of the `2⌊√L⌋` smallest wavevectors instead); the lens pass is in `GOAL_block20.md`; the primary seat wrote H1–H4 and the runner; the refuting pass (`CHECKER_block20_findings.md`) checked H1 on the exactly solvable two-site instance, the plane's and the line's sums by direct floating-point evaluation of `N^{−1}Σ_{k≠0} 1/(βE(k) + 4/(3N))` against the proved lower bounds up to `L = 64`, the sphere average in a second parametrization and Parseval on a random real field; it caught that the line's count `2⌊√L⌋` fails at `L = 1` (where `−n` is outside the range `{−L+1, …, L}`), so H2(e) and the line half of H3 are stated for `L ≥ 2`, with the `L = 1` bound trivial. Facts settled while executing: the sum rule's constant is `N/3`, not `N` (rotation invariance), which improves the constant by `3`; the plane's bound only bites for `H_{L−1} > 3π²β + 1`, i.e. astronomically large sides at moderate `β`, which is the known weakness of this route and is stated as such.
++
++The original branch, full note, runner, cache, historical programs and outputs are preserved byte-exact in the recovery archive. Historical controls are evidence of their recorded finite domains, not a new execution or a proof of an infinite-lattice statement. The canonical primary retains its original twenty finite checks and thirteen mutation definitions; the historical mutation census is not a new review.
+ 
+ ## Verification
+ 
+@@ -206,4 +104,4 @@
+ python3 scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py --mutation claim_order_on_planes_injected
+ ```
+ 
+-Families: A authority and inputs; B the plane's shells, the dyadic bound and the line's block; C the half-angle identity, the small terms and the final algebra; D the generator identities, integration by parts, the second derivative, the root and its simplification, the bond identity and counts, Parseval and the sphere average; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
++Families: A authority and inputs; B the plane's shells, the dyadic bound and the line's block; C the half-angle identity, the small terms and the final algebra; D the generator identities, integration by parts, the second derivative, the root and its simplification, the bond identity and counts, Parseval and the sphere average; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. The historical mutation census assigned each of the 13 declared mutations to one family; no new mutation census is claimed. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+--- original/PR8154/scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py
++++ author/PR8154/scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Exact checks: the unsoldered sphere static law with overlap e^{beta t} has no long-range order on any coordinate plane or line —
++"""Exact checks: the unsoldered sphere static law with overlap e^{beta t} has finite torus magnetization bounds in dimensions one and two —
+ the algebraic skeleton of the zero-field lower bound in every dimension, the lattice sums, and the assembly.
+ 
+ Scope.  H1: the generator identities, integration by parts on the sphere for polynomials, the single-bond second-derivative
+@@ -22,14 +22,14 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 180
+ AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+ )
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_third_dimension_load_bearing_for_the_green_function_channel_bounded_theorem_note_2026-09-15"
++CLAIM_ID = 'admissibility_rule_sphere_static_law_finite_torus_magnetization_bounds_bounded_theorem_note_2026-09-15'
+ PARENT_CLAIM_ID = "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+ PARENT_FRAGMENT = "Empty-neighbourhood sphere laws"
+ AXIOM_NEEDLES = (
+@@ -232,11 +232,7 @@
+ 
+ 
+ # ============================================================================================ family F
+-FENCES = (
+-    "This note proves, for the unsoldered static law with the exponential overlap on a coordinate plane or line of the lattice, that the long-range-order parameter tends to zero as the torus grows at every `β > 0`, with explicit bounds; it does not state the rate at which correlations decay on the plane, does not treat the Born overlap, does not re-prove the three-dimensional half of the placement (block 19's open PR), does not select a reading, rule, coupling or dimension as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+-)
++FENCES = ('For a supplied uniform-sphere exponential nearest-neighbour static model in independent dimensions d=1,2,3, on even tori with L>=2: H1 is a finite-volume Fourier lower bound in terms of M_N; H2 supplies explicit lattice sums; H3 gives M_N^4 <= (3 pi^2 beta+1)/H_(L-1) in dimension two and M_N^4 <= (6 pi^2 beta+4)/sqrt(L) in dimension one. These bounds imply vanishing of this torus magnetization-square sequence. No universal state, kernel, gravity or dimension-selection conclusion is retained. This note does not select a physical reading, coupling, rule or dimension and adopts no clause.', 'No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.', 'The standard mathematical imports are stated explicitly; they supply mathematical tools, not physical selection.')
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
+     "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "washes out", "toward the plane", "the trend",
+@@ -286,7 +282,7 @@
+     "per_site: executed — Parseval with symbolic site values on the 4x4 torus; the sphere average of a component's square",
+     "per_mode: executed — the shell counts 8j and 4L-1 and the norm bound on every wavevector shell for L <= 12; the line's block of the 2 floor(sqrt L) smallest wavevectors",
+     "per_block: executed — the dyadic blocks of the harmonic sum to m = 12; the bond counts on the 4x4 and 8 tori",
+-    "lattice_wide: H1 proved for d <= 3 and every beta > 0; H2-H3 proved on every plane and line torus with the explicit bounds; H4 a placement corollary conditional on the referenced open blocks; the decay rate not claimed",
++    "lattice_wide: checked and not executed — written conditional model proofs and bounds only; the finite runner does not execute an infinite lattice or physical classification",
+ )
+ 
+ 
+--- original/PR8155/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ author/PR8155/docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,97 +1,39 @@
+ ---
+-claim_id: admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_below_root_three_over_six_bounded_theorem_note_2026-09-15
++claim_id: admissibility_rule_sphere_static_law_weak_coupling_comparison_and_correlation_bounds_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "For the static law of the exponential zonal rule on the pure-state sphere under the unsoldered reading on Z^3 — one-site conditional P_h(ds) proportional to exp(beta s.h) dsigma(s) with h the sum of the six neighbouring records, finite windows with exterior records, and the torus law of block 19 — with L(x) = coth x - 1/x and alpha = 2 sqrt(3) beta: (W1) TV(P_h, P_h') <= (beta/(2 sqrt 3)) |h - h'| for all h, h', because d/dt P_{h_t}(A) = beta Cov(s.Delta, 1_A), |Cov(X, 1_A)| <= sigma_X/2, and the covariance of s under P_h has eigenvalues L'(x) and L(x)/x (x = beta|h|), both at most 1/3 by series with nonnegative coefficients (proved; the identities and the coefficient ratios 6/(n(2n-1)) and 3/(2n+1) executed symbolically); (W2) hence each neighbour's coefficient is at most beta/sqrt 3 and every row sum at most alpha, with alpha < 1 iff beta < sqrt(3)/6 (proved; executed); (W3) the finite-window comparison bound by the coupled random-scan chain, |mu_Lambda^omega(f) - mu_Lambda^omega'(f)| <= sum_x delta_x(f) (D_Lambda b)_x with D_Lambda = sum_k C_Lambda^k, re-proved for the sphere with the maximal coupling of densities and a time-t bound (proved; the maximal coupling, the fixed point and the walk bounds executed exactly); (W4) for beta < sqrt(3)/6 the finite-window laws with any exterior records have a common limit on cylinder functions, the specification has exactly one infinite-volume static law, and it is rotation-invariant (proved); (W5) in that law and on every torus |<s_0 . s_x>| <= alpha^{|x|_1}/(1 - alpha) (torus distance on the torus), so M_N^2 <= ((1+alpha)/(1-alpha))^3/((1-alpha) N) and sup_k <|s^(k)|^2> <= ((1+alpha)/(1-alpha))^3/(1-alpha) uniformly in the side: no massless channel (proved; the geometric sums executed); (W6) with block 19 (PR #8153, an evidence address) the gravity node's kernel exists in this reading for beta > 3 sqrt(3) pi/8 and cannot for beta < sqrt(3)/6; the band between is open (a placement corollary). Three standard mathematical imports named at definition level; no coupling, reading or rule is selected as physical; exact arithmetic throughout."
++claim_scope: "For a supplied uniform-sphere exponential nearest-neighbour static specification on Z^3: W1 bounds the one-site total-variation response, W2 gives alpha=2sqrt(3)beta, W3 proves finite-window comparison, W4 constructs the unique rotation-invariant DLR law when alpha<1, and W5 bounds correlations, torus magnetization and structure factors. Torus results require L>=2. No strong-coupling comparison or physical kernel classification is retained."
+ upstream_dependencies:
+-  - minimal_axioms
++  - minimal_axioms_2026-06-29
+   - possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14
+   - admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06
+ runner: scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
+ ---
+ 
+-# The unsoldered sphere static law at weak coupling: one law, exponential decay, and no massless channel below `β = √3/6` — the Green-function channel is a strong-coupling feature with an explicit window
++# Sphere Static Law Weak Coupling Comparison And Correlation Bounds
+ 
+-**Date:** 2026-09-15
+-**Type:** bounded_theorem
+-**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++**Status:** bounded-support; conditional supplied model; unaudited.
+ 
+ ## Result up front
+ 
+-Blocks 19 and 20 (PRs #8153, #8154) place the gravity node's kernel in the
+-transverse channel of the ordered unsoldered static law on `Z³`, and nowhere
+-on a plane or a line. This note settles the other side of the coupling axis
+-on `Z³`. Below `β = √3/6` the law is unique, its correlations decay
+-exponentially, its structure factor is bounded uniformly in the wavevector,
+-and the long-range-order parameter vanishes. So the kernel is a strong-coupling
+-feature of this reading: present for `β > 3√3π/8`, absent for `β < √3/6`, and
+-the band between the two constants is left open.
+-
+-The mechanism is a one-site contraction, the same route block 03 ran for the
+-six-axis rule, now for a continuous menu. The rule's one-site conditional is
+-`P_h ∝ e^{β s·h}` with `h` the sum of the six neighbouring records. Moving one
+-neighbour moves `h` by at most `2`, and the conditional's total-variation
+-response to a change of `h` is at most `β|Δh|/(2√3)`: the derivative of
+-`P_h(A)` along a segment is `β` times a covariance of `s·Δh` with an
+-indicator, the indicator's standard deviation is at most `1/2`, and the
+-variance of any component of `s` under any `P_h` is at most `1/3`. That last
+-fact is the only analysis in the note: the covariance of `s` under `P_h` has
+-the longitudinal eigenvalue `L'(x)` and the transverse eigenvalue `L(x)/x`,
+-with `L(x) = coth x − 1/x` and `x = β|h|`, and both are at most `1/3` because
+-the relevant differences are power series with nonnegative coefficients. So
+-each of the six neighbours has coefficient at most `β/√3`, the row sum is
+-`α = 2√3β`, and `α < 1` is `β < √3/6`. The coupled random-scan chain of block
+-03 then gives the finite-window comparison bound, from which uniqueness,
+-exponential decay and the bounds on the torus follow.
+-
+-Exactly: `TV(P_h, P_{h'}) ≤ (β/(2√3))|h − h'|` (W1); `α = 2√3β` (W2);
+-the comparison bound (W3); one rotation-invariant law for `β < √3/6` (W4);
+-`|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1 − α)`, `M_N² ≤ ((1+α)/(1−α))³/((1−α)N)`,
+-`sup_k ⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1−α)` (W5); the window
+-`[√3/6, 3√3π/8]` (W6). Executed with exact arithmetic: 20 checks, 13 mutations.
+-
+-## Machine status and trace
+-
+-```yaml
+-actual_current_surface_status: bounded-support
+-target_claim_type: bounded_theorem
+-trace_class: upstream_support
+-target_claim_id: null
+-target_blocker_text: "the derivation campaign's gravity node (#8093): 'the covariant scalar record statistic whose two-point function on the formation law is the lattice Green function'; blocks 19 and 20 (PRs #8153, #8154) locate it in the transverse channel of the ordered unsoldered static law on Z^3 and show it needs the third dimension; its coupling window on Z^3"
+-source_of_blocker_text: handoff
+-reachability_to_target: supports
+-artifact_role: theorem
+-next_trace_action: "the weak-coupling side is settled: for beta < sqrt(3)/6 the unsoldered static law on Z^3 is unique with exponential decay and a bounded structure factor, so the kernel cannot exist there; the kernel is a strong-coupling feature with the open band [sqrt(3)/6, 3 sqrt(3) pi/8]. Open: the band; the normalization; the Born overlap. Consumers: #8093's assembly (the gravity node's coupling dependence); the campaign's queue"
+-conditional_surface_status: "W1-W5 proved for every beta < sqrt(3)/6 on finite windows, on tori of even side and in the infinite-volume limit; W6 a placement corollary conditional on block 19 (open PR) for the strong-coupling half; the algebraic skeleton executed exactly (the covariance identities, the coefficient ratios, the derivative identity, the maximal coupling, the fixed point on the cube window, the walk bounds on the 7^3 box, the geometric sums); conditional on the sphere as the possibility domain, the unsoldered and static readings and the exponential overlap as supplied conditions; three standard mathematical imports named at definition level"
+-hypothetical_axiom_status: null
+-admitted_observation_status: null
+-audit_required_before_effective_retained: true
+-```
++For a supplied uniform-sphere exponential nearest-neighbour static specification on Z^3: W1 bounds the one-site total-variation response, W2 gives alpha=2sqrt(3)beta, W3 proves finite-window comparison, W4 constructs the unique rotation-invariant DLR law when alpha<1, and W5 bounds correlations, torus magnetization and structure factors. Torus results require L>=2. No strong-coupling comparison or physical kernel classification is retained.
+ 
+ ## Premises and declared objects
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "Each site has a domain of local possibilities.", "No possibility is privileged.", "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", and "Records form.". The landed possibility-covariance note (`docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md`, section "Empty-neighbourhood sphere laws") supplies the pure-state sphere `S²` as the possibility domain and the unsoldered reading. Block 03 (`docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the static reading of finite windows with exterior records, the notion of an infinite-volume static law (the specification), and the coupling route re-proved here for the sphere. All proposed and unaudited; block 19 (PR #8153, open) is referenced under Prior art as the evidence address for the strong-coupling half of W6.
++The linked repository context is [MINIMAL_AXIOMS_2026-06-29](MINIMAL_AXIOMS_2026-06-29.md); [POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14](POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md); [ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06](ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md). The possibility parent supplies conditional representation vocabulary; it does not select this probability law. We explicitly supply the uniform surface measure on S², beta>0, the exponential pair weight and the static specification. These are mathematical model premises, not consequences selecting physics from the axioms. The independent d-dimensional nearest-neighbour model omits all couplings outside that dimension; a two-dimensional model is not the marginal of a plane in an interacting three-dimensional model. All torus claims below use L>=2 (side at least four), so neighbours are distinct.
+ 
+ Declared objects.
+-- **The rule and its windows.** Records `s_x ∈ S²`; `β > 0` supplied; the one-site conditional given the neighbouring records, `P_h(ds) = e^{β s·h} dσ(s)/Z(h)`, `h = Σ_{y ~ x} s_y`, `Z(h) = ∫ e^{β s·h} dσ = 4π sinh(β|h|)/(β|h|)`, `dσ` the uniform surface measure. For a finite window `Λ` with exterior records `ω` on the sites adjacent to `Λ`: `μ_Λ^ω(ds_Λ) ∝ Π_{⟨xy⟩ ⊂ Λ} e^{β s_x·s_y} Π_{x ∈ Λ, y ∉ Λ, y ~ x} e^{β s_x·ω_y} Π_{x ∈ Λ} dσ(s_x)`; its conditional at `x` given the other records is `P_{h_x}` with `h_x` the sum over the six neighbours (interior records or exterior ones). The torus law `μ_L` of block 19 on `(Z/2LZ)³`, `N = (2L)³`, has the same conditionals. An **infinite-volume static law** is a probability measure on `(S²)^{Z³}` whose conditional law on every finite window given the exterior records is `μ_Λ^ω` (block 03's specification reading).
++- **The rule and its windows.** Records `s_x ∈ S²`; `β > 0` supplied; the one-site conditional given the neighbouring records, `P_h(ds) = e^{β s·h} dσ(s)/Z(h)`, `h = Σ_{y ~ x} s_y`, `Z(h) = ∫ e^{β s·h} dσ = 4π sinh(β|h|)/(β|h|)`, `dσ` the uniform surface measure. For a finite window `Λ` with exterior records `ω` on the sites adjacent to `Λ`: `μ_Λ^ω(ds_Λ) ∝ Π_{⟨xy⟩ ⊂ Λ} e^{β s_x·s_y} Π_{x ∈ Λ, y ∉ Λ, y ~ x} e^{β s_x·ω_y} Π_{x ∈ Λ} dσ(s_x)`; its conditional at `x` given the other records is `P_{h_x}` with `h_x` the sum over the six neighbours (interior records or exterior ones). The torus law `μ_L` on `(Z/2LZ)³`, `N = (2L)³`, has the same conditionals. An **infinite-volume static law** is a probability measure on `(S²)^{Z³}` whose conditional law on every finite window given the exterior records is `μ_Λ^ω`.
+ - **The function `L`.** `L(x) = coth x − 1/x` for `x > 0`, `L(0) = 0`; `L'(x) = 1/x² − 1/sinh² x`.
+ - **Coefficients.** `c := β/√3`; `α := 6c = 2√3 β`. For a window `Λ`: `C_Λ` the matrix with `(C_Λ)_{xy} = c` when `x, y ∈ Λ` are neighbours and `0` otherwise; `D_Λ = Σ_{k ≥ 0} C_Λ^k`; for exterior records `ω, ω'`, `b_x = c · #{y ∉ Λ : y ~ x, ω_y ≠ ω'_y}`.
+ - **Oscillations.** For `f` on `(S²)^Λ`, `δ_x(f) = sup{|f(ζ) − f(ζ')| : ζ, ζ' differ only at x}`; `‖f‖_δ = Σ_x δ_x(f)`. A local function depends on the records in a box `Δ_ℓ = {|x|₁ ≤ ℓ}`.
+ - **Transforms and order parameter** on the torus: `ŝ(k) = N^{−1/2} Σ_x e^{ik·x} s_x`; `M_N² = N^{−2}⟨|Σ_x s_x|²⟩`; `d_T(0, x)` the torus `ℓ¹` distance.
+ 
++
++
+ ## Prior art and what is new
+ 
+-The one-site contraction criterion for uniqueness is Dobrushin's (1968), with exponential decay of correlations under it (Dobrushin–Shlosman; Föllmer; Künsch); for the classical three-component model it is textbook. None is used as authority; W1–W5 are re-proved at scope. On `main`, block 03 re-proves the criterion by the coupled random-scan chain for the six-axis rule (finite menu) and states the region in the rule's weights; block 02 gives existence by compactness for the finite menu. What is new here: (i) the explicit constant `√3/6` for the sphere rule from an exact bound on the covariance of a record under any field (`L'(x) ≤ 1/3`, `L(x)/x ≤ 1/3`, proved by series); (ii) block 03's coupling route re-proved for a continuous menu, with the maximal coupling of densities and a time-`t` bound in place of the limit coupling, and existence obtained from the comparison bound and the consistency of the finite-window laws rather than imported; (iii) the decay and structure-factor bounds on the torus by freezing one site; (iv) the placement: the Green-function channel of block 19 is a strong-coupling feature with an explicit open band.
+ 
+-## Exact target and obligation graph
+-
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| W1 | `TV(P_h, P_{h'}) ≤ (β/(2√3))|h − h'|` | the derivative identity; the indicator's variance; the covariance eigenvalues `L'`, `L/x ≤ 1/3` | B, C |
+-| W2 | `c_{xy} ≤ β/√3`; `α = 2√3β`; `α < 1 ⇔ β < √3/6` | `|Δh| ≤ 2` | C |
+-| W3 | the finite-window comparison bound | the coupled random-scan chain; the maximal coupling of densities; the fixed point `D_Λ b` | D |
+-| W4 | one rotation-invariant infinite-volume static law for `β < √3/6` | W3 with the walk bound and the consistency of the finite-window laws | D |
+-| W5 | `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1−α)`; the torus bounds | W3 with one site frozen; the geometric sums | D |
+-| W6 | the window `[√3/6, 3√3π/8]` | W5 with block 19 | — |
++The one-site contraction criterion for uniqueness is Dobrushin's (1968), with exponential decay of correlations under it (Dobrushin–Shlosman; Föllmer; Künsch); for the classical three-component model it is textbook. None is used as authority; W1–W5 are re-proved at scope.  The contribution retained here is the explicit mathematical bounds for the supplied model. No comparison with physical channels is used.
+ 
+ ## Theorem W1 — the total-variation response of the one-site conditional
+ 
+@@ -117,64 +59,21 @@
+ 
+ ## Theorem W4 — one law for `β < √3/6`
+ 
+-**Statement.** For `β < √3/6`: (a) for every local `f` (depending on `Δ_ℓ`) and any exterior records `b, b'`, `|μ_{Λ_L}^b(f) − μ_{Λ_L}^{b'}(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α)`, `Λ_L = {|x|_∞ ≤ L}`; (b) `μ(f) := lim_{L→∞} μ_{Λ_L}^{b_L}(f)` exists for every local `f` and every choice of exterior records `b_L`, and does not depend on the choice; (c) `μ` extends to a probability measure on `(S²)^{Z³}` that is an infinite-volume static law; (d) it is the only one; (e) it is invariant under every simultaneous rotation of all records, so `⟨s_0⟩_μ = 0`.
++**Statement.** For `β < √3/6`: (a) for every continuous local `f` (depending on `Δ_ℓ`) and any exterior records `b, b'`, `|μ_{Λ_L}^b(f) − μ_{Λ_L}^{b'}(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α)`, `Λ_L = {|x|_∞ ≤ L}`; (b) `μ(f) := lim_{L→∞} μ_{Λ_L}^{b_L}(f)` exists for every continuous local `f` and every choice of exterior records `b_L`, and does not depend on the choice; (c) `μ` extends to a probability measure on `(S²)^{Z³}` that is an infinite-volume static law; (d) it is the only one; (e) it is invariant under every simultaneous rotation of all records, so `⟨s_0⟩_μ = 0`.
+ 
+-**Proof.** (a) On `Λ_L` every row sum of `C_Λ` is at most `α < 1`, and `b_y ≤ 6c 1[y ∈ ∂_in Λ_L] = α 1[y ∈ ∂_in Λ_L]`; by W3 and the walk bound, `|μ_{Λ_L}^b(f) − μ_{Λ_L}^{b'}(f)| ≤ Σ_{x ∈ Δ_ℓ} δ_x(f) Σ_k Σ_{y ∈ ∂_in Λ_L} (C_Λ^k)_{xy} α ≤ ‖f‖_δ α Σ_{k ≥ L−ℓ} α^k`, since a walk from `Δ_ℓ` to `∂_in Λ_L` has length at least `L − ℓ`. (b) For `L' > L`, conditioning `μ_{Λ_{L'}}^{b'}` on the records outside `Λ_L` gives `μ_{Λ_L}^{ζ}` with `ζ` those records (read off the density), so `μ_{Λ_{L'}}^{b'}(f) = ∫ μ_{Λ_L}^{ζ}(f) μ_{Λ_{L'}}^{b'}(dζ)` and, by (a), `|μ_{Λ_{L'}}^{b'}(f) − μ_{Λ_L}^{b}(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α)`. The differences tend to zero uniformly in the later index and in the exterior records, so the limit exists and is the same for every choice. (c) The limits define, for each box `Δ_ℓ`, a probability law on `(S²)^{Δ_ℓ}` (limits of laws applied to continuous functions of the box's records; the consistency between boxes holds in the limit); the extension theorem for consistent finite-dimensional laws (named under Imports) gives `μ`. `μ` is an infinite-volume static law: for a finite window `Λ` and local `f`, `μ(f) = lim μ_{Λ_{L'}}^b(f) = lim ∫ μ_Λ^{ζ}(f) μ_{Λ_{L'}}^b(dζ) = ∫ μ_Λ^{ζ}(f) μ(dζ)`, because `ζ ↦ μ_Λ^ζ(f)` is a continuous local function. (d) If `ν` is an infinite-volume static law, then `ν(f) = ∫ μ_{Λ_L}^{ζ}(f) ν(dζ)` and by (a) `|ν(f) − μ_{Λ_L}^b(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α) → 0`, so `ν = μ` on local functions, hence on the cylinder algebra, hence everywhere (two probability measures agreeing on a generating π-system coincide). (e) A simultaneous rotation `R` of all records maps `μ_Λ^ω` to `μ_Λ^{Rω}` (the overlap and `dσ` are invariant), so the image of `μ` under `R` is again an infinite-volume static law and equals `μ` by (d); hence `⟨s_0⟩_μ = R⟨s_0⟩_μ` for all `R`, i.e. `⟨s_0⟩_μ = 0`. ∎
++**Proof.** (a) On `Λ_L` every row sum of `C_Λ` is at most `α < 1`, and `b_y ≤ 6c 1[y ∈ ∂_in Λ_L] = α 1[y ∈ ∂_in Λ_L]`; by W3 and the walk bound, `|μ_{Λ_L}^b(f) − μ_{Λ_L}^{b'}(f)| ≤ Σ_{x ∈ Δ_ℓ} δ_x(f) Σ_k Σ_{y ∈ ∂_in Λ_L} (C_Λ^k)_{xy} α ≤ ‖f‖_δ α Σ_{k ≥ L−ℓ} α^k`, since a walk from `Δ_ℓ` to `∂_in Λ_L` has length at least `L − ℓ`. (b) For `L' > L`, conditioning `μ_{Λ_{L'}}^{b'}` on the records outside `Λ_L` gives `μ_{Λ_L}^{ζ}` with `ζ` those records (read off the density), so `μ_{Λ_{L'}}^{b'}(f) = ∫ μ_{Λ_L}^{ζ}(f) μ_{Λ_{L'}}^{b'}(dζ)` and, by (a), `|μ_{Λ_{L'}}^{b'}(f) − μ_{Λ_L}^{b}(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α)`. The differences tend to zero uniformly in the later index and in the exterior records, so the limit exists and is the same for every choice. (c) The limits form a positive normalized linear functional on continuous functions of each compact box product; the representation theorem for such functionals gives a Borel probability law. Thus the limits define, for each box `Δ_ℓ`, a probability law on `(S²)^{Δ_ℓ}` (limits of laws applied to continuous functions of the box's records; the consistency between boxes holds in the limit); the extension theorem for consistent finite-dimensional laws (named under Imports) gives `μ`. `μ` is an infinite-volume static law: for a finite window `Λ` and continuous local `f`, `μ(f) = lim μ_{Λ_{L'}}^b(f) = lim ∫ μ_Λ^{ζ}(f) μ_{Λ_{L'}}^b(dζ) = ∫ μ_Λ^{ζ}(f) μ(dζ)`, because `ζ ↦ μ_Λ^ζ(f)` is a continuous local function. The preceding DLR identity is first obtained on continuous local test functions. Both sides define probability measures; equality on continuous functions on each compact finite product implies equality of their Borel laws, and a monotone-class extension gives the DLR identity for bounded measurable functions. (d) If `ν` is an infinite-volume static law, then `ν(f) = ∫ μ_{Λ_L}^{ζ}(f) ν(dζ)` and by (a) `|ν(f) − μ_{Λ_L}^b(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α) → 0`, so `ν = μ` on continuous local functions; these determine each finite-dimensional Borel law on the compact sphere product, hence the cylinder probabilities, hence the whole measure. (e) A simultaneous rotation `R` of all records maps `μ_Λ^ω` to `μ_Λ^{Rω}` (the overlap and `dσ` are invariant), so the image of `μ` under `R` is again an infinite-volume static law and equals `μ` by (d); hence `⟨s_0⟩_μ = R⟨s_0⟩_μ` for all `R`, i.e. `⟨s_0⟩_μ = 0`. ∎
+ 
+-## Theorem W5 — exponential decay; no massless channel
++## Theorem W5 — exponential decay
+ 
+-**Statement.** For `β < √3/6` and `x ≠ 0`: (a) in the law `μ` of W4, `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1 − α)`; (b) on the torus `(Z/2LZ)³` for every `L ≥ 1`, `|⟨s_0·s_x⟩_L| ≤ α^{d_T(0,x)}/(1 − α)`; hence (c) `M_N² ≤ ((1+α)/(1−α))³/((1−α)N)` and (d) `⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1 − α)` for every `k`, uniformly in `L`.
++**Statement.** For `β < √3/6` and `x ≠ 0`: (a) in the law `μ` of W4, `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1 − α)`; (b) on the torus `(Z/2LZ)³` for every `L ≥ 2`, `|⟨s_0·s_x⟩_L| ≤ α^{d_T(0,x)}/(1 − α)`; hence (c) `M_N² ≤ ((1+α)/(1−α))³/((1−α)N)` and (d) `⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1 − α)` for every `k`, uniformly in `L`.
+ 
+ **Proof.** (a) Take `Λ = Λ_L ∋ 0, x` with exterior `b`, and bounded `f = f(s_0)`, `g = g(s_x)`. Conditioning `μ_Λ^b` on `s_x = a` gives the law on `Λ ∖ {x}` with exterior records `(b, a)` (read off the density), so `μ_Λ^b(f g) = ∫ μ_Λ^b(da) g(a) μ_Λ^b(f | a)`. W3 on the window `Λ ∖ {x}` with the exteriors `(b, a)` and `(b, a')`, which differ only at `x`, has `b^{diff}_z = c 1[z ~ x]`, so `|μ_Λ^b(f | a) − μ_Λ^b(f | a')| ≤ δ_0(f) c Σ_{z ~ x} Σ_k (C^k)_{0z} ≤ δ_0(f) c Σ_{k ≥ |x|₁ − 1} α^k = δ_0(f) α^{|x|₁}/(6(1 − α))`, since a walk from `0` to a neighbour of `x` has length at least `|x|₁ − 1` and `c = α/6`. Then `Cov_Λ(f, g) = ∫ μ_Λ^b(da) g(a) [μ_Λ^b(f | a) − μ_Λ^b(f)]` and `|μ_Λ^b(f | a) − μ_Λ^b(f)| ≤ sup_{a'} |μ_Λ^b(f | a) − μ_Λ^b(f | a')|`, so `|Cov_Λ(f, g)| ≤ ‖g‖_∞ δ_0(f) α^{|x|₁}/(6(1 − α))`. With `f = s_0·e_i` (`δ_0 = 2`) and `g = s_x·e_i` (`‖g‖_∞ ≤ 1`), summing over `i = 1, 2, 3`: `|Σ_i Cov_Λ(s_0·e_i, s_x·e_i)| ≤ α^{|x|₁}/(1 − α)`. Let `L → ∞`: each expectation is of a local function, so the covariances tend to those of `μ`, and by W4(e) `⟨s_0·s_x⟩_μ = Σ_i Cov_μ(s_0·e_i, s_x·e_i)`. (b) On the torus, conditioning on `s_x = a` gives the law on the window `T ∖ {x}` with exterior `a`; the torus graph minus a site has row sums at most `α`, and a walk from `0` to a neighbour of `x` has length at least `d_T(0, x) − 1`; the same computation gives the bound, and the torus law is rotation-invariant (its density and `dσ` are), so `⟨s_0⟩_L = 0`. (c) By translation invariance `M_N² = N^{−1} Σ_x ⟨s_0·s_x⟩_L ≤ N^{−1} (1 − α)^{−1} Σ_x α^{d_T(0,x)}`, and `Σ_{x ∈ T} α^{d_T(0,x)} = Π_{i=1}^3 (1 + 2Σ_{j=1}^{L−1} α^j + α^L) ≤ ((1 + α)/(1 − α))³`. (d) `⟨|ŝ(k)|²⟩ = Σ_x e^{ik·x} ⟨s_0·s_x⟩_L`, so `|⟨|ŝ(k)|²⟩| ≤ Σ_x |⟨s_0·s_x⟩_L| ≤ (1 − α)^{−1} ((1 + α)/(1 − α))³`. ∎
+ 
+ The geometric identities and the torus sum are executed (D4); the frozen-site conditional on a small window (D5).
+ 
+-## Corollary W6 — the coupling window of the Green-function channel
+-
+-**Statement (conditional on block 19 for the strong-coupling half).** Under the unsoldered static reading with the exponential overlap on `Z³`: for `β > 3√3π/8` the transverse structure factor is sandwiched between multiples of `1/(βE(k))` with a positive lower constant (block 19's G5), and for `β < √3/6` the structure factor is bounded uniformly in `k` and `L` while `M_N² → 0` (W5). So the gravity node's kernel is a strong-coupling feature of this reading, and nothing is claimed for `√3/6 ≤ β ≤ 3√3π/8`.
+-
+-**Proof.** The two halves are W5(c)–(d) and block 19's G3–G5; the latter is an open PR cited as an evidence address, not as authority. ∎
+-
+ ## No-Go Discipline Gate
+ 
+-The negative sentence is W5(d) with W6: no massless channel for `β < √3/6`. Escapes named, not closed: the band `[√3/6, 3√3π/8]`; other overlaps (the Born overlap is not treated); the formation reading (block 13).
+-
+-### N1 — Routes by which the negative could fail
+-1. *The covariance bound `1/3` fails at some field* — closed: the eigenvalues are `L'(x)` and `L(x)/x`, both at most `1/3` by series with nonnegative coefficients (B2–B3 executed to `n = 12` and in closed form).
+-2. *The derivative identity or the indicator bound* — closed: executed on a finite weighted space (C1); `p(1 − p) ≤ 1/4`.
+-3. *The coupling argument needs a finite menu* — closed: the maximal coupling of densities and the time-`t` bound replace the finite-menu steps of block 03 (D1–D2).
+-4. *The walk bound or the geometric sums* — closed: executed exactly on the `7³` box and symbolically (D3–D4).
+-5. *The torus has no exterior* — closed: one site is frozen and becomes the exterior (D5).
+-6. *The band, other overlaps, the formation reading* — escapes, named above.
+-
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used.
+-
+-### N3 — Hidden-wall scan
+-No hidden dependence: the inputs are the axioms' sentences, the parent note's sphere law and reading, block 03's static reading and specification, and the supplied overlap.
+-
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
+-|---|---|---|
+-| `minimal_axioms` | the five sentences under Premises | yes (premise) |
+-| the possibility-covariance note (`main`) | the sphere domain and the unsoldered reading | yes (premise, proposed) |
+-| block 03 (`main`) | the static reading, the specification, the coupling route (re-proved here) | yes (premise, proposed) |
+-| block 19 (PR #8153) | the strong-coupling half of W6 | W6 only (evidence address) |
+-| block 20 (PR #8154) | context (the dimension placement) | no |
+-
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "no massless channel below `√3/6`" | executed: the covariance identities and the coefficient ratios; the derivative identity; the antipodal value; the threshold arithmetic | executed: the maximal coupling on a finite weighted space; the frozen-site conditional on a small window | executed: the walk bounds `(C^k)_{0x} = 0` for `k < |x|₁` and `Σ_y (C^k)_{0y} ≤ α^k` on the `7³` box | executed: the fixed point `u* = D b` on the cube window; the geometric sums and the torus sum | proved for every `β < √3/6` on finite windows, tori and the infinite-volume law (W1–W5); the band not claimed |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling or overlap; none is a wall.
+-
+-### N7 — Steelman
+-Hostile reviewer: "The one-site contraction criterion for the classical three-component model is in every textbook, and `√3/6` is far below the true threshold." Reply: the framework question is the coupling window of the gravity node's kernel under the reading that supplies it, which needed an explicit constant proved at scope from the rule's own one-site conditional; the constant is not sharp and is not claimed to be — the zero-field antipodal value shows the coefficient's slack there is a factor `2/√3`, and the band is stated as open. Conceded: the band is wide; the sharper coefficient (the supremum over fields of a mean absolute deviation) is not proved.
+-
+-### N8 — Cross-cycle echo
+-Block 03's contraction region for the six-axis rule is the same criterion with a finite menu; block 08's causal coupling region is its formation-law counterpart; block 19's ordered phase is the other end of this note's axis; block 20's dimension placement is the other axis of the same kernel.
++Broad negative certification is withheld. The original five-route tables listed proof obligations and changes of scope rather than five independent attacks on the exact exclusion. They do not establish a negative certificate. Full original arguments remain available in the archive and original branches are retained. W6 and the comparison with a strong-coupling gravity channel are withdrawn. W1–W5 remain mathematical comparison, construction and quantitative bounds for the supplied specification.
+ 
+ ## Falsifiers
+ - A covariance identity of W1(i) that fails, or a coefficient ratio other than `6/(n(2n−1))` or `3/(2n+1)` for some `n ≤ 12`, or a closed-form coefficient that differs from the series (B1–B3).
+@@ -182,17 +81,23 @@
+ - A maximal coupling with disagreement probability other than `TV` (D1); a fixed point other than `D_Λ b`, or `D_Λ` with a negative entry, on the cube window (D2); a walk bound violated on the `7³` box (D3); a geometric identity or the torus sum bound that fails (D4); a frozen-site conditional that is not the window law with that exterior (D5).
+ 
+ ## Boundaries and non-claims
+-This note proves, for the unsoldered static law with the exponential overlap on `Z³`, that below `β = √3/6` there is exactly one infinite-volume static law, with exponential decay of the record correlations and a structure factor bounded uniformly in the wavevector and the side; it does not locate the true threshold, does not treat the band `[√3/6, 3√3π/8]`, does not treat the Born overlap, does not re-prove the strong-coupling half of the placement (block 19's open PR), does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++For a supplied uniform-sphere exponential nearest-neighbour static specification on Z^3: W1 bounds the one-site total-variation response, W2 gives alpha=2sqrt(3)beta, W3 proves finite-window comparison, W4 constructs the unique rotation-invariant DLR law when alpha<1, and W5 bounds correlations, torus magnetization and structure factors. Torus results require L>=2. No strong-coupling comparison or physical kernel classification is retained. This note does not select a physical reading, coupling, rule or dimension and adopts no clause.
++
++No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
++
++The standard mathematical imports are stated explicitly; they supply mathematical tools, not physical selection.
+ 
+ ## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- The possibility-covariance note and block 03 (both on `main`): the readings, the specification and the coupling route; proposed, unaudited. PR #8153 (open) referenced as the evidence address for W6's strong-coupling half; PR #8154 for context.
+ - Re-proved at scope: W1 (the covariance eigenvalues and the series inequalities; the derivative identity; the quadratic-form inequality), W2, W3 (the maximal coupling of densities; the coupled chain; the fixed point; the time-`t` bound), W4 (the walk bound; the consistency of finite-window laws), W5.
++- Additional explicit measure-theoretic imports: representation of a positive normalized linear functional on continuous functions of a compact metric space by a Borel probability measure; determination of that measure by continuous functions; monotone-class extension from cylinder tests.
+ - Named standard imports at definition level (never as authority for physics): the extension theorem for consistent finite-dimensional laws on a countable product of compact spaces (Kolmogorov); the uniqueness of a probability measure given on a generating π-system; the exponential series of `sinh` and `cosh`.
+ - Reference only (named, not used): Dobrushin (1968); Dobrushin–Shlosman (1985); Föllmer (1982); Künsch (1982).
+ 
++
+ ## Review record
+-Supervisor-run block (owner directive: don't stop; assess the next lane at each conclusion; no subagents). The controls (`specs/supervisor_control_block21_weak_coupling.py`) first checked a cruder route — `TV ≤ tanh(osc/4)` on random finite instances, giving the threshold `artanh(1/6) = (1/2) log(7/5)` — then found by a numerical sweep over fields that the one-site conditional's response is about half that bound, computed the exact antipodal value `tanh(β/2)`, verified the covariance eigenvalue formulas and the series ratios, and swept the mean absolute deviation (maximal at zero field, `1/2`, unproved); the contract was then written on the variance route, which is exact and uniform and gives `√3/6`; the lens pass is in `GOAL_block21.md`; the primary seat wrote W1–W6 and the runner; the refuting pass (`CHECKER_block21_findings.md`) checked W1 against direct quadrature at random fields including large ones, the eigenvalue bounds on a grid, the decay bound's direction on the exactly solvable open chain (`⟨s_0·s_r⟩ = L(β)^r`, three sites by quadrature), the fixed point on a `3×3×3` box by floating-point linear algebra, and the torus sum. Facts settled while executing: sympy needs the exponential rewrite to verify the hyperbolic identities; the coefficient ratios have closed forms `6/(n(2n−1))` and `3/(2n+1)`.
++
++The original branch, full note, runner, cache, historical programs and outputs are preserved byte-exact in the recovery archive. Historical controls are evidence of their recorded finite domains, not a new execution or a proof of an infinite-lattice statement. The canonical primary retains its original twenty finite checks and thirteen mutation definitions; the historical mutation census is not a new review.
+ 
+ ## Verification
+ 
+@@ -202,4 +107,4 @@
+ python3 scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py --mutation claim_channel_below_threshold_injected
+ ```
+ 
+-Families: A authority and inputs; B the covariance identities and the series inequalities; C the derivative identity, the constants, the antipodal value; D the maximal coupling, the fixed point, the walk bounds, the geometric sums, the frozen-site conditional; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
++Families: A authority and inputs; B the covariance identities and the series inequalities; C the derivative identity, the constants, the antipodal value; D the maximal coupling, the fixed point, the walk bounds, the geometric sums, the frozen-site conditional; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. The historical mutation census assigned each of the 13 declared mutations to one family; no new mutation census is claimed. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+--- original/PR8155/scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
++++ author/PR8155/scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env python3
+ """Exact checks: the unsoldered sphere static law with overlap e^{beta t} at weak coupling on Z^3 — the algebraic skeleton of the
+-one-site contraction (uniqueness, exponential decay, no massless channel below beta = sqrt(3)/6).
++one-site contraction (uniqueness, exponential decay, bounded structure factors when beta < sqrt(3)/6).
+ 
+ Scope.  W1: the covariance identities of a record under a field (longitudinal L'(x) = 1/x^2 - 1/sinh^2 x, transverse L(x)/x), the
+ series coefficient ratios 6/(n(2n-1)) and 3/(2n+1) (closed form and to n = 12), the derivative identity d/dt P_t(A) = beta Cov(s.Delta, 1_A)
+@@ -20,15 +20,15 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 300
+ AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+     "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+ )
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_below_root_three_over_six_bounded_theorem_note_2026-09-15"
++CLAIM_ID = 'admissibility_rule_sphere_static_law_weak_coupling_comparison_and_correlation_bounds_bounded_theorem_note_2026-09-15'
+ PARENT_CLAIM_ID = "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+ PARENT_FRAGMENT = "Empty-neighbourhood sphere laws"
+ BLOCK03_CLAIM_ID = "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06"
+@@ -280,11 +280,7 @@
+ 
+ 
+ # ============================================================================================ family F
+-FENCES = (
+-    "This note proves, for the unsoldered static law with the exponential overlap on `Z³`, that below `β = √3/6` there is exactly one infinite-volume static law, with exponential decay of the record correlations and a structure factor bounded uniformly in the wavevector and the side; it does not locate the true threshold, does not treat the band `[√3/6, 3√3π/8]`, does not treat the Born overlap, does not re-prove the strong-coupling half of the placement (block 19's open PR), does not select a reading, rule or coupling as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+-)
++FENCES = ('For a supplied uniform-sphere exponential nearest-neighbour static specification on Z^3: W1 bounds the one-site total-variation response, W2 gives alpha=2sqrt(3)beta, W3 proves finite-window comparison, W4 constructs the unique rotation-invariant DLR law when alpha<1, and W5 bounds correlations, torus magnetization and structure factors. Torus results require L>=2. No strong-coupling comparison or physical kernel classification is retained. This note does not select a physical reading, coupling, rule or dimension and adopts no clause.', 'No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.', 'The standard mathematical imports are stated explicitly; they supply mathematical tools, not physical selection.')
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
+     "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+@@ -334,7 +330,7 @@
+     "per_site: executed — the maximal coupling on a finite weighted space; the frozen-site conditional on a three-site path",
+     "per_mode: executed — the walk bounds (C^k)_{0x} = 0 for k < |x|_1 and sum_y (C^k)_{0y} <= alpha^k on the 7^3 box",
+     "per_block: executed — the fixed point u* = D b on the cube window; the geometric sums and the 6^3 torus sum",
+-    "lattice_wide: W1-W5 proved for every beta < sqrt(3)/6 on finite windows, tori and the infinite-volume law; W6 a placement corollary conditional on block 19; the band not claimed",
++    "lattice_wide: checked and not executed — written conditional model proofs and bounds only; the finite runner does not execute an infinite lattice or physical classification",
+ )
+ 
+ 
+--- original/PR8157/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ author/PR8157/docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,95 +1,38 @@
+ ---
+-claim_id: admissibility_rule_unsoldered_sphere_static_law_plane_correlations_decay_algebraically_at_every_coupling_complex_rotations_explicit_exponent_bounded_theorem_note_2026-09-15
++claim_id: admissibility_rule_sphere_static_law_planar_complex_rotation_correlation_upper_bounds_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "For the static law of the exponential zonal rule on the pure-state sphere under the unsoldered reading on a coordinate plane of the lattice — finite windows Lambda of Z^2 with any exterior records, and the torus (Z/2LZ)^2 — with d(y) the Euclidean or torus distance to the origin, H_R = sum_{j<=R} 1/j, and kappa(beta) = 5/(512 beta) for beta >= 5/256, kappa(beta) = 1 - 128 beta/5 for beta <= 5/256: (P1) for every real function a on the sites (zero at exterior sites), |<s_0^1 s_x^1 + s_0^2 s_x^2>| <= exp(a_x - a_0 + beta sum_b (cosh(a_y - a_z) - 1)), likewise for the other two component pairs, hence |<s_0 . s_x>| <= (3/2) times the same (proved; the complex-cosine identity, the modulus identity, the cosine-cosh inequality and the shift lemma on a trigonometric polynomial executed symbolically); (P2) the shift function a_y = gamma max(0, log((1+R)/(1+d(y)))) with R = d(x) has |a_y - a_z| <= gamma/(1 + min(d(y), d(z))) on every bond and sum_b (cosh(a_y - a_z) - 1) <= 2 gamma^2 cosh(gamma) (1 + 8 H_R) on every window containing {d < R} and on the torus (proved; the shell counts, the harmonic bound and the series inequality executed exactly); (P3) hence |<s_0 . s_x>| <= (3/2) e^{18 beta gamma^2 cosh gamma} (1 + R)^{-(gamma - 16 beta gamma^2 cosh gamma)}, and with gamma = min(1, 5/(256 beta)) and cosh 1 <= 8/5: |<s_0 . s_x>| <= (3/2) e^{9/16} (1 + d(x))^{-kappa(beta)}, uniformly in the window, the exterior records and the side (proved; the constants executed exactly); (P4) on the torus M_N^2 <= 6 e^{9/16} (1 + L)^{-min(kappa, 1)} + 1/(4 L^2), every infinite-volume static law on the plane, should one exist, has |<s_0 . s_x>| <= (3/2) e^{9/16} (1 + |x|)^{-kappa(beta)}, and no kernel with a coupling-independent power law — in particular no Green-function-type kernel — exists on planes at any coupling (proved; the torus sum executed). Two standard mathematical imports named at definition level; no coupling, reading or rule is selected as physical; exact arithmetic throughout."
++claim_scope: "For the supplied uniform-sphere exponential nearest-neighbour static model on independent Z^2: P1 proves the complex-shift inequality; P2 bounds the logarithmic shift energy by charging each active bond to a nearer endpoint; P3 gives an explicit correlation upper bound with exponent kappa(beta)>0; P4 gives the torus magnetization bound and the same correlation bound conditional on a DLR law. Windows must contain 0,x and every site with distance less than R=distance(x); tori have L>=2. No exact decay exponent, faster-power exclusion, gravity or dimension-selection claim is retained."
+ upstream_dependencies:
+-  - minimal_axioms
++  - minimal_axioms_2026-06-29
+   - possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14
+ runner: scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py
+ ---
+ 
+-# On a plane the unsoldered sphere static law's correlations decay at least as a power with a coupling-dependent exponent, at every coupling: complex rotations with explicit constants, the order parameter's rate upgraded to a power of the side, and no Green-function-type kernel on planes
++# Sphere Static Law Planar Complex Rotation Correlation Upper Bounds
+ 
+-**Date:** 2026-09-15
+-**Type:** bounded_theorem
+-**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++**Status:** bounded-support; conditional supplied model; unaudited.
+ 
+ ## Result up front
+ 
+-Block 20 (PR #8154) shows the unsoldered sphere static law never orders on
+-a plane, but says nothing about how its correlations fall off, and its rate
+-for the order parameter is a bare inverse logarithm of the side. This note
+-supplies the rate. On any plane window, with any exterior records, and on the
+-plane torus:
+-```
+-|⟨s_0·s_x⟩| ≤ (3/2) e^{9/16} (1 + d(x))^{−κ(β)},   κ(β) = 5/(512β) for β ≥ 5/256,  κ(β) = 1 − 128β/5 ≥ 1/2 for β ≤ 5/256.
+-```
+-A power law, with an exponent that shrinks as the coupling grows but never
+-vanishes, uniform in the window and the side. On the torus this gives
+-`M_N² ≤ 6e^{9/16}(1 + L)^{−min(κ,1)} + 1/(4L²)`, a power of the side where
+-block 20 had `(log L)^{−1/2}`; every infinite-volume static law on the plane,
+-should one exist, decays the same way; and since the exponent depends on `β`
+-while a Green-function kernel's would be fixed by the dimension, no such
+-kernel exists on planes at any coupling — the counterpart of block 19's
+-channel on `Z³`.
+-
+-The mechanism is the complex rotation. Write each record as
+-`(ρ cos φ, ρ sin φ, ζ)`; the correlation of the first two components is the
+-real part of `⟨ρ_0ρ_x e^{i(φ_0 − φ_x)}⟩`; shift every angle `φ_y` by `i a_y`
+-with a real `a_y`, which leaves each period integral unchanged; the
+-observable picks up `e^{a_x − a_0}` and each bond weight's modulus grows by
+-at most `e^{β(cosh(a_y − a_z) − 1)}`. With `a_y = γ log((1+R)/(1+d(y)))`
+-inside the disc of radius `R = d(x)` and zero outside, the observable gives
+-`(1+R)^{−γ}`, and the bond sum is a discrete Dirichlet energy of a logarithm,
+-of order `γ² log R`. Optimizing `γ` gives the power law. The constants are
+-the crude ones of this route; the true decay is faster and is not claimed.
+-
+-Exactly: P1 (the shift bound); P2 (the shift function: `|a_y − a_z| ≤
+-γ/(1 + min(d(y), d(z)))`, `Σ_b(cosh(a_y − a_z) − 1) ≤ 2γ²cosh γ(1 + 8H_R)`);
+-P3 (the rate with `γ = min(1, 5/(256β))`); P4 (the torus, the infinite-volume
+-laws, the placement). Executed with exact arithmetic: 20 checks, 13 mutations.
+-
+-## Machine status and trace
+-
+-```yaml
+-actual_current_surface_status: bounded-support
+-target_claim_type: bounded_theorem
+-trace_class: upstream_support
+-target_claim_id: null
+-target_blocker_text: "the derivation campaign's gravity node (#8093): blocks 19-22 (PRs #8153-#8156) locate its kernel in the ordered unsoldered static law on Z^3 with the coupling window [sqrt(3)/6, 76/100] and show it needs the third dimension; what replaces it on a plane"
+-source_of_blocker_text: handoff
+-reachability_to_target: supports
+-artifact_role: theorem
+-next_trace_action: "on planes the record correlations decay at least as (1 + d)^{-kappa(beta)} with kappa(beta) = 5/(512 beta) above beta = 5/256, uniformly in the window and the side: a coupling-dependent power law, so no Green-function-type kernel on planes at any coupling; block 20's order-parameter rate upgraded to a power of the side. Open: the true decay (faster; not claimed); the normalization on Z^3; the band. Consumers: #8093's assembly (the dimension placement with a rate); the campaign's queue"
+-conditional_surface_status: "P1-P4 proved for every beta > 0 on every finite plane window containing the disc {d < R} with any exterior records, on tori of even side, and for every infinite-volume static law on the plane should one exist; the algebraic skeleton executed exactly (the identities, the shell counts, the series inequality, the constants, the torus sum); conditional on the sphere as the possibility domain, the unsoldered and static readings and the exponential overlap as supplied conditions; two standard mathematical imports named at definition level"
+-hypothetical_axiom_status: null
+-admitted_observation_status: null
+-audit_required_before_effective_retained: true
+-```
++For the supplied uniform-sphere exponential nearest-neighbour static model on independent Z^2: P1 proves the complex-shift inequality; P2 bounds the logarithmic shift energy by charging each active bond to a nearer endpoint; P3 gives an explicit correlation upper bound with exponent kappa(beta)>0; P4 gives the torus magnetization bound and the same correlation bound conditional on a DLR law. Windows must contain 0,x and every site with distance less than R=distance(x); tori have L>=2. No exact decay exponent, faster-power exclusion, gravity or dimension-selection claim is retained.
+ 
+ ## Premises and declared objects
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "Each site has a domain of local possibilities.", "No possibility is privileged.", "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", and "Records form.". The landed possibility-covariance note (`docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md`, section "Empty-neighbourhood sphere laws") supplies the pure-state sphere `S²` as the possibility domain and the unsoldered reading. Block 01 (on `main`) supplies the static reading of finite windows with exterior records; the plane is the coordinate sublattice `Z²` of the Lattice axiom's `Z³`, with the window convention of blocks 12, 17 and 20 (no records outside the window). All proposed and unaudited; blocks 19 and 20 (PRs #8153, #8154, open) are referenced under Prior art as evidence addresses for the placement.
++The linked repository context is [MINIMAL_AXIOMS_2026-06-29](MINIMAL_AXIOMS_2026-06-29.md); [POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14](POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md). The possibility parent supplies conditional representation vocabulary; it does not select this probability law. We explicitly supply the uniform surface measure on S², beta>0, the exponential pair weight and the static specification. These are mathematical model premises, not consequences selecting physics from the axioms. The independent d-dimensional nearest-neighbour model omits all couplings outside that dimension; a two-dimensional model is not the marginal of a plane in an interacting three-dimensional model. All torus claims below use L>=2 (side at least four), so neighbours are distinct.
+ 
+ Declared objects.
+ - **Coordinates on the sphere.** `s = (ρ cos φ, ρ sin φ, ζ)` with `ζ ∈ [−1, 1]`, `ρ = (1 − ζ²)^{1/2}`, `φ ∈ [0, 2π)`; the uniform surface measure is `dσ = dζ dφ` (the area-preserving cylindrical projection, named under Imports). For records `s, s'`: `s·s' = ρρ' cos(φ − φ') + ζζ'`.
+-- **Windows and the torus.** A finite `Λ ⊂ Z²` with exterior records `ω` on the sites adjacent to `Λ`; the bonds `b = ⟨yz⟩` are the nearest-neighbour pairs with at least one endpoint in `Λ`; `μ_Λ^ω(ds_Λ) ∝ Π_b e^{β s_y·s_z} Π_{y∈Λ} dσ(s_y)` with `s_z = ω_z` at exterior endpoints. The torus law on `(Z/2LZ)²`, `N = 4L²`, as in block 20. `⟨·⟩` denotes either expectation.
++- **Windows and the torus.** A finite `Λ ⊂ Z²` with exterior records `ω` on the sites adjacent to `Λ`; the bonds `b = ⟨yz⟩` are the nearest-neighbour pairs with at least one endpoint in `Λ`; `μ_Λ^ω(ds_Λ) ∝ Π_b e^{β s_y·s_z} Π_{y∈Λ} dσ(s_y)` with `s_z = ω_z` at exterior endpoints. The torus law on `(Z/2LZ)²`, `N = 4L²`, with each positive-coordinate bond counted once and L ≥ 2. `⟨·⟩` denotes either expectation.
+ - **Distances.** `d(y) = |y|` (Euclidean) on `Z²`; `d(y) = d_T(0, y)` (the torus Euclidean distance, `(d_1² + d_2²)^{1/2}` with `d_i = min(|y_i|, 2L − |y_i|)`) on the torus. Both are `1`-Lipschitz along bonds and dominate the sup-norm distance `d_∞`.
+-- **Shells.** `{y : d_∞(y) = j}` has `8j` sites on `Z²` for `j ≥ 1`, and on the torus `8j` sites for `j < L` and `4L − 1 ≤ 8L` for `j = L` (block 20's count).
+-- **Constants.** `H_R = Σ_{j=1}^R 1/j`; `κ(β)` as in the claim scope; `C_1 = (3/2)e^{9/16}`; `M_N² = N^{−2}⟨|Σ_x s_x|²⟩` on the torus.
++- **Shells.** `{y : d_∞(y) = j}` has `8j` sites on `Z²` for `j ≥ 1`, and on the torus `8j` sites for `j < L` and `4L − 1 ≤ 8L` for `j = L`.
++- **Constants.** `H_R = Σ_{j=1}^{floor(R)} 1/j`; `κ(β)` as in the claim scope; `C_1 = (3/2)e^{9/16}`; `M_N² = N^{−2}⟨|Σ_x s_x|²⟩` on the torus.
++
++
+ 
+ ## Prior art and what is new
+ 
+-The complex-rotation bound is McBryan and Spencer's (1977) for the `O(N)` models on `Z²`, giving power-law decay at every temperature; Fröhlich and Spencer, and Fröhlich and Pfister, refined it; the sharp low-temperature behaviour of the two-component model is the Kosterlitz–Thouless picture (not used). On `main`, block 20 proves the absence of long-range order on planes by the zero-field inequality with the rate `(log L)^{−1/2}`; the quantum no-order notes give no rate. What is new here: (i) the route re-proved at scope for this record law, on finite windows with exterior records and on the torus, with every constant explicit (`κ(β) = 5/(512β)`, prefactor `(3/2)e^{9/16}`); (ii) the torus consequence upgrading block 20's rate for `M_N²` to a power of the side; (iii) the decay for every infinite-volume static law on the plane; (iv) the placement: the exponent depends on `β`, so no Green-function-type kernel on planes, the rate-level counterpart of block 20's dimension placement.
+ 
+-## Exact target and obligation graph
+-
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| P1 | the complex-shift bound for any real `a` | the complex cosine; the modulus; `cos φ cosh a ≤ cos φ + (cosh a − 1)`; the shift lemma | B |
+-| P2 | the shift function's Lipschitz bound and the bond sum `≤ 2γ²cosh γ(1 + 8H_R)` | the mean value bound for `log(1+t)`; sup-norm shells; `cosh t − 1 ≤ (t²/2)cosh t` | B, C |
+-| P3 | the rate with explicit `κ(β)` and prefactor | `H_R ≤ 1 + log R`; `cosh 1 ≤ 8/5`; the optimization of `γ` | C, D |
+-| P4 | the torus bound; infinite-volume laws; the placement | shells again; the DLR property | D, E |
++The complex-rotation bound is McBryan and Spencer's (1977) for the `O(N)` models on `Z²`, giving power-law decay at every temperature; Fröhlich and Spencer, and Fröhlich and Pfister, refined it; the sharp low-temperature behaviour of the two-component model is the Kosterlitz–Thouless picture (not used).  The contribution retained here is the explicit mathematical bounds for the supplied model. No comparison with physical channels is used.
+ 
+ ## Theorem P1 — the complex-shift bound
+ 
+@@ -105,9 +48,9 @@
+ 
+ ## Theorem P2 — the shift function and the bond sum
+ 
+-**Statement.** Let `R = d(x) ≥ 1`, `γ > 0`, and `a_y = γ max(0, log((1+R)/(1+d(y))))` for every site `y` (exterior sites included), on a window `Λ ⊇ {y : d(y) < R}` or on the torus. Then (a) `a_0 = γ log(1+R)`, `a_x = 0`, and `a_z = 0` at every exterior site; (b) on every bond, `|a_y − a_z| ≤ γ/(1 + min(d(y), d(z))) ≤ γ`, and `a_y = a_z = 0` unless `min(d(y), d(z)) < R`; (c) `Σ_b (cosh(a_y − a_z) − 1) ≤ 2γ² cosh γ (1 + 8H_R)`.
++**Statement.** Let `R = d(x) ≥ 1`, `γ > 0`, and `a_y = γ max(0, log((1+R)/(1+d(y))))` for every site `y` (exterior sites included), on a window with `0,x ∈ Λ` and `Λ ⊇ {y : d(y) < R}` or on the torus. Then (a) `a_0 = γ log(1+R)`, `a_x = 0`, and `a_z = 0` at every exterior site; (b) on every bond, `|a_y − a_z| ≤ γ/(1 + min(d(y), d(z))) ≤ γ`, and `a_y = a_z = 0` unless `min(d(y), d(z)) < R`; (c) `Σ_b (cosh(a_y − a_z) − 1) ≤ 2γ² cosh γ (1 + 8H_R)`.
+ 
+-**Proof.** (a) `d(0) = 0`, `d(x) = R`; exterior sites of a window containing `{d < R}` have `d ≥ R`, where the formula gives `0`. (b) `t ↦ γ max(0, log((1+R)/(1+t)))` is nonincreasing, and for `p, q ≥ 0`, `|log(1+p) − log(1+q)| ≤ |p − q|/(1 + min(p, q))` (the derivative of `log(1+t)` is `1/(1+t)`, at most `1/(1 + min(p,q))` on the segment); `max(0, ·)` is `1`-Lipschitz; and `|d(y) − d(z)| ≤ 1` on a bond. If both `d(y), d(z) ≥ R` both values are `0`. (c) For `|t| ≤ γ`, `cosh t − 1 ≤ (t²/2) cosh t ≤ (t²/2) cosh γ`: the coefficient of `t^{2k}` in `cosh t − 1` is `1/(2k)!` and in `(t²/2)cosh t` is `1/(2(2k−2)!)`, with ratio `2/((2k)(2k−1)) ≤ 1` for `k ≥ 1`. Hence `Σ_b (cosh(a_y − a_z) − 1) ≤ (γ² cosh γ/2) Σ_{b : m_b < R} 1/(1 + m_b)²`, `m_b = min(d(y), d(z))`. Since `1/(1+m_b)² ≤ 1/(1+d(y))² + 1/(1+d(z))²`, and a bond with `m_b < R` has both endpoints at `d < R + 1`, and each site lies on at most four bonds, `Σ_{b : m_b < R} 1/(1+m_b)² ≤ 4 Σ_{y : d(y) < R+1} 1/(1 + d(y))²`. Group the sites by `j = d_∞(y)`: the origin contributes `1`; the shell `j ≥ 1` has at most `8j` sites (on the torus too), each with `d(y) ≥ j`, and only shells with `j < R + 1`, i.e. `j ≤ R`, contain sites with `d < R + 1`; so the sum is at most `1 + Σ_{j=1}^R 8j/(1+j)² ≤ 1 + 8H_R`. Multiply: `(γ²cosh γ/2) · 4(1 + 8H_R) = 2γ²cosh γ(1 + 8H_R)`. ∎
++**Proof.** (a) `d(0) = 0`, `d(x) = R`; exterior sites of a window containing `{d < R}` have `d ≥ R`, where the formula gives `0`. (b) `t ↦ γ max(0, log((1+R)/(1+t)))` is nonincreasing, and for `p, q ≥ 0`, `|log(1+p) − log(1+q)| ≤ |p − q|/(1 + min(p, q))` (the derivative of `log(1+t)` is `1/(1+t)`, at most `1/(1 + min(p,q))` on the segment); `max(0, ·)` is `1`-Lipschitz; and `|d(y) − d(z)| ≤ 1` on a bond. If both `d(y), d(z) ≥ R` both values are `0`. (c) For `|t| ≤ γ`, `cosh t − 1 ≤ (t²/2) cosh t ≤ (t²/2) cosh γ`: the coefficient of `t^{2k}` in `cosh t − 1` is `1/(2k)!` and in `(t²/2)cosh t` is `1/(2(2k−2)!)`, with ratio `2/((2k)(2k−1)) ≤ 1` for `k ≥ 1`. Hence `Σ_b (cosh(a_y − a_z) − 1) ≤ (γ² cosh γ/2) Σ_{b : m_b < R} 1/(1 + m_b)²`, `m_b = min(d(y), d(z))`. Charge each active bond to one endpoint attaining the smaller distance `m_b<R` (choose either endpoint for a tie). Each site receives at most four bonds. Thus `Σ_{b:m_b<R}(1+m_b)^{-2} ≤ 4Σ_{y:d(y)<R}(1+d(y))^{-2}`. The origin contributes one; the sup-norm shell `j≥1` has at most `8j` sites and `d(y)≥j`. Every charged site has `j<R`, so including all `1≤j≤floor(R)` only increases the sum. Consequently it is at most `1+Σ_{j=1}^{floor(R)}8j/(1+j)² ≤ 1+8H_R`. This charging applies to noninteger R as well as integer R. Multiply: `(γ²cosh γ/2) · 4(1 + 8H_R) = 2γ²cosh γ(1 + 8H_R)`. ∎
+ 
+ Executed: the series ratios (B3); the mean value bound (C1); the shell counts on `Z²` and on the torus and `Σ_{j≤R} 8j/(1+j)² ≤ 8H_R` for `R ≤ 60` (C1).
+ 
+@@ -123,54 +66,17 @@
+ 
+ Executed: the harmonic bound's ingredient (C2); the `e` bounds and `cosh 1 ≤ 8/5` (D1); the optimization and the two branches (D2, D4).
+ 
+-## Theorem P4 — the torus, the infinite-volume laws, and the placement
++## Theorem P4 — the torus, the infinite-volume laws
+ 
+-**Statement.** (a) On the torus `(Z/2LZ)²`, for every `β > 0` and `L ≥ 1`, with `κ' = min(κ(β), 1)`: `M_N² ≤ 6e^{9/16}(1 + L)^{−κ'} + 1/(4L²)`. (b) Every infinite-volume static law `ν` on `Z²` (a probability measure whose conditional law on every finite window given the exterior records is `μ_Λ^ω`), should one exist, satisfies `|⟨s_0·s_x⟩_ν| ≤ (3/2)e^{9/16}(1 + |x|)^{−κ(β)}` for every `x ≠ 0`; in particular `⟨s_0·s_x⟩_ν → 0` as `|x| → ∞`. (c) On planes the record correlations decay, at every `β > 0`, at least as a power whose exponent depends on `β`; a kernel of Green-function type has a power fixed by the dimension (or, in two dimensions, grows logarithmically); hence no Green-function-type kernel exists in the plane's record correlations at any coupling, in contrast with block 19's channel on `Z³`.
++**Statement.** (a) On the torus `(Z/2LZ)²`, for every `β > 0` and `L ≥ 2`, with `κ' = min(κ(β), 1)`: `M_N² ≤ 6e^{9/16}(1 + L)^{−κ'} + 1/(4L²)`. (b) Every infinite-volume static law `ν` on `Z²` (a probability measure whose conditional law on every finite window given the exterior records is `μ_Λ^ω`), should one exist, satisfies `|⟨s_0·s_x⟩_ν| ≤ (3/2)e^{9/16}(1 + |x|)^{−κ(β)}` for every `x ≠ 0`; in particular `⟨s_0·s_x⟩_ν → 0` as `|x| → ∞`.
+ 
+-**Proof.** (a) By translation invariance `M_N² = N^{−1}Σ_x ⟨s_0·s_x⟩`; the term `x = 0` is `1`; for `x ≠ 0`, P3 with `R = d_T(0, x) ≥ d_∞(x) = j` gives `⟨s_0·s_x⟩ ≤ C_1(1+j)^{−κ'}` (a smaller exponent only weakens the bound). Grouping by shells, `Σ_{x≠0} ⟨s_0·s_x⟩ ≤ C_1 Σ_{j=1}^{L} 8j(1+j)^{−κ'} ≤ 8C_1 L(1+L)^{1−κ'}`, since for `κ' ≤ 1` and `j ≤ L`, `j(1+j)^{−κ'} ≤ (1+j)^{1−κ'} ≤ (1+L)^{1−κ'}`. With `N = 4L²`: `M_N² ≤ 1/(4L²) + 2C_1(1+L)^{1−κ'}/L ≤ 1/(4L²) + 4C_1(1+L)^{−κ'}`, using `(1+L)/L ≤ 2`; and `4C_1 = 6e^{9/16}`. (b) Take `Λ ⊇ {y : |y| < |x| + 1}` finite; by the defining property, `⟨s_0·s_x⟩_ν = ∫ ν(dω) ⟨s_0·s_x⟩_Λ^ω`, and P3 bounds the integrand uniformly in `ω`. (c) is the reading of P3 and (b) against block 19's G5 (a lower bound `(M²/3)²/(βE(k))` on `Z³`, whose real-space form is a fixed power), cited as an evidence address. ∎
++**Proof.** (a) By translation invariance `M_N² = N^{−1}Σ_x ⟨s_0·s_x⟩`; the term `x = 0` is `1`; for `x ≠ 0`, P3 with `R = d_T(0, x) ≥ d_∞(x) = j` gives `⟨s_0·s_x⟩ ≤ C_1(1+j)^{−κ'}` (a smaller exponent only weakens the bound). Grouping by shells, `Σ_{x≠0} ⟨s_0·s_x⟩ ≤ C_1 Σ_{j=1}^{L} 8j(1+j)^{−κ'} ≤ 8C_1 L(1+L)^{1−κ'}`, since for `κ' ≤ 1` and `j ≤ L`, `j(1+j)^{−κ'} ≤ (1+j)^{1−κ'} ≤ (1+L)^{1−κ'}`. With `N = 4L²`: `M_N² ≤ 1/(4L²) + 2C_1(1+L)^{1−κ'}/L ≤ 1/(4L²) + 4C_1(1+L)^{−κ'}`, using `(1+L)/L ≤ 2`; and `4C_1 = 6e^{9/16}`. (b) Take `Λ ⊇ {y : |y| < |x| + 1}` finite; by the defining property, `⟨s_0·s_x⟩_ν = ∫ ν(dω) ⟨s_0·s_x⟩_Λ^ω`, and P3 bounds the integrand uniformly in `ω`. ∎
+ 
+ Executed: the shell sum inequality at `κ' = 1/2` and `κ' = 1` for `L ≤ 40` (D3); the chain identity of the solvable two-site instance and P1's bound there (E1).
+ 
+ ## No-Go Discipline Gate
+ 
+-The negative sentence is P4(c): no Green-function-type kernel on planes at any coupling. Its escapes are named, not closed: the constants are not sharp and the true decay is faster (nothing about the true rate is claimed); the third dimension (block 19); other overlaps (the Born overlap is not treated).
+-
+-### N1 — Routes by which P4(c) could fail
+-1. *The shift lemma fails for the weight* — closed: the integrand is entire and periodic in each angle; executed on a trigonometric polynomial with a nonzero integral (B4), the general case by the named lemma.
+-2. *The modulus step for bonds to exterior records* — closed: `a_z = 0` there and the identity holds with `τ = a_y` (P1 iii).
+-3. *The Lipschitz bound of the shift function on the torus* — closed: `d_T` is `1`-Lipschitz along bonds; the shells have at most `8j` sites (C1).
+-4. *The bond sum's constant* — closed: the series inequality and the shell sum executed (B3, C1).
+-5. *The optimization or the `e` bounds* — closed: executed exactly (D1–D2, D4).
+-6. *A faster true decay, `d = 3`, other overlaps* — escapes, named above.
+-
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used.
+-
+-### N3 — Hidden-wall scan
+-No hidden dependence: the inputs are the axioms' sentences, the parent note's sphere law and reading, block 01's static reading, and the supplied overlap.
+-
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
+-|---|---|---|
+-| `minimal_axioms` | the five sentences under Premises | yes (premise) |
+-| the possibility-covariance note (`main`) | the sphere domain and the unsoldered reading | yes (premise, proposed) |
+-| block 01 (`main`) | the static reading | yes (premise, proposed) |
+-| block 20 (PR #8154) | the rate it is compared with; the torus shell count | comparison only (evidence address) |
+-| block 19 (PR #8153) | the channel on `Z³`, for P4(c) | P4(c) only (evidence address) |
+-
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "no Green-function-type kernel on planes" | executed: the complex-cosine identity; the modulus; the cosine-cosh inequality; the series ratios | executed: the shift lemma on a trigonometric polynomial; the mean value bound | executed: the shell counts on `Z²` and the torus; `Σ 8j/(1+j)² ≤ 8H_R` to `R = 60` | executed: the `e` bounds; the optimization; the two branches; the torus sum at two exponents | proved for every `β > 0` on every window containing the disc, on tori and for infinite-volume laws (P1–P4); the true rate not claimed |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling or overlap; none is a wall.
+-
+-### N7 — Steelman
+-Hostile reviewer: "This is the 1977 theorem with worse constants; the exponent `5/(512β)` is absurdly small, and the three-component model actually decays exponentially on the plane." Reply: the framework question is the rate-level counterpart of block 20's dimension placement — what the plane's record correlations do where `Z³` carries the kernel — and the answer needed a volume-uniform bound with explicit constants at scope; the exponent's dependence on `β`, not its size, is what excludes a Green-function-type kernel. Conceded: the constants are crude and the true decay is faster; neither is claimed.
+-
+-### N8 — Cross-cycle echo
+-Block 20's zero-field route gave the absence of order with a logarithmic rate; this route gives a power law by a different mechanism (complex rotations rather than the sum rule); block 17's discrete law orders on the plane, so the continuous menu is again the cause; block 19's channel on `Z³` is the object whose absence on planes is now quantified.
++Broad negative certification is withheld. The original five-route tables listed proof obligations and changes of scope rather than five independent attacks on the exact exclusion. They do not establish a negative certificate. Full original arguments remain available in the archive and original branches are retained. P4(c) is withdrawn: a coupling-dependent upper exponent does not exclude a faster fixed power. For example, (1+R)^(-2) satisfies every upper bound (1+R)^(-kappa) with 0<kappa<=1. The upper bound does not identify the true rate.
+ 
+ ## Falsifiers
+ - A failure of `cos(φ + ia) = cos φ cosh a − i sin φ sinh a`, of the modulus identity, of `cos φ + cosh a − 1 − cos φ cosh a = (1 − cos φ)(cosh a − 1)`, or of the shift lemma on the trigonometric polynomial (B1–B2, B4); a coefficient ratio other than `2/((2k)(2k−1))` (B3).
+@@ -179,17 +85,22 @@
+ - The two-site instance's `⟨s_0·s_1⟩ ≠ coth β − 1/β`, or P1's bound violated there for some shift (E1).
+ 
+ ## Boundaries and non-claims
+-This note proves, for the unsoldered static law with the exponential overlap on a coordinate plane of the lattice, a volume-uniform power-law bound on the record correlations with an explicit coupling-dependent exponent, at every `β > 0`, on finite windows with exterior records, on tori and for infinite-volume static laws; it does not state the true rate of decay, does not claim the exponent is sharp, does not treat the Born overlap, does not re-prove blocks 19 or 20, does not select a reading, rule, coupling or dimension as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++For the supplied uniform-sphere exponential nearest-neighbour static model on independent Z^2: P1 proves the complex-shift inequality; P2 bounds the logarithmic shift energy by charging each active bond to a nearer endpoint; P3 gives an explicit correlation upper bound with exponent kappa(beta)>0; P4 gives the torus magnetization bound and the same correlation bound conditional on a DLR law. Windows must contain 0,x and every site with distance less than R=distance(x); tori have L>=2. No exact decay exponent, faster-power exclusion, gravity or dimension-selection claim is retained. This note does not select a physical reading, coupling, rule or dimension and adopts no clause.
++
++No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
++
++The standard mathematical imports are stated explicitly; they supply mathematical tools, not physical selection.
+ 
+ ## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- The possibility-covariance note and block 01 (both on `main`): the readings and the object; proposed, unaudited. PRs #8153 and #8154 (open) referenced as evidence addresses for the placement only.
+ - Re-proved at scope: P1 (the complex cosine, the modulus, the cosine-cosh inequality, the assembly), P2 (the mean value bound, the shell sums, the series inequality), P3 (the harmonic bound, the `e` bounds, the optimization), P4 (the shell sum, the DLR step).
+ - Named standard imports at definition level (never as authority for physics): the shift lemma for the period integral of an entire `2π`-periodic function (Cauchy's theorem on a rectangle); the area-preserving cylindrical projection of the sphere (Archimedes), giving `dσ = dζ dφ`.
+ - Reference only (named, not used): McBryan–Spencer (1977); Fröhlich–Spencer (1981); Fröhlich–Pfister (1981); Kosterlitz–Thouless (1973).
+ 
++
+ ## Review record
+-Supervisor-run block (owner directive: don't stop; assess the next lane at each conclusion; no subagents). The control (`specs/supervisor_control_block23_complex_rotations.py`) checked the identities, the Lipschitz bound of the shift function on a `81×81` patch (worst ratio `0.976` of the bound), the shell sums on `Z²` and on tori, the harmonic bound to `10⁵`, the `e` bounds, the optimization, and P1's inequality on the exactly solvable two- and three-site chains for `41` shift values at three couplings (tightest ratio `1.77`), before the contract; the lens pass is in `GOAL_block23.md`; the primary seat wrote P1–P4 and the runner; the refuting pass (`CHECKER_block23_findings.md`) checked the full shift bound numerically on a `4×4` window by direct quadrature of the angle integrals against the truth at two couplings, the shift function's bound on the torus with the torus distance, the harmonic-sum route through the integral test, and the optimization by a grid. Facts settled while executing: on the torus the shift function may be centred at `0` with `R = d_T(0, x)` up to `√2 L` because the sup-norm shells never exceed `8j` sites; exterior records need `Λ ⊇ {d < R}` so that the formula vanishes at exterior sites.
++
++The original branch, full note, runner, cache, historical programs and outputs are preserved byte-exact in the recovery archive. Historical controls are evidence of their recorded finite domains, not a new execution or a proof of an infinite-lattice statement. The canonical primary retains its original twenty finite checks and thirteen mutation definitions; the historical mutation census is not a new review. The historical 4×4 refuter used heat-bath Monte Carlo with 6000 sweeps, 500 burn-in sweeps, free boundary and 24 bonds. It was not direct quadrature or a truth calculation, supplied no error analysis, and did not test arbitrary fixed exterior records.
+ 
+ ## Verification
+ 
+@@ -199,4 +110,4 @@
+ python3 scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py --mutation claim_plane_kernel_injected
+ ```
+ 
+-Families: A authority and inputs; B the complex-shift identities, the series inequality and the shift lemma; C the shell counts and the harmonic bound; D the `e` bounds, the optimization, the torus sum and the small-coupling branch; E the solvable two-site instance; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
++Families: A authority and inputs; B the complex-shift identities, the series inequality and the shift lemma; C the shell counts and the harmonic bound; D the `e` bounds, the optimization, the torus sum and the small-coupling branch; E the solvable two-site instance; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. The historical mutation census assigned each of the 13 declared mutations to one family; no new mutation census is claimed. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+--- original/PR8157/scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py
++++ author/PR8157/scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py
+@@ -19,14 +19,14 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 180
+ AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+ )
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_unsoldered_sphere_static_law_plane_correlations_decay_algebraically_at_every_coupling_complex_rotations_explicit_exponent_bounded_theorem_note_2026-09-15"
++CLAIM_ID = 'admissibility_rule_sphere_static_law_planar_complex_rotation_correlation_upper_bounds_bounded_theorem_note_2026-09-15'
+ PARENT_CLAIM_ID = "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+ PARENT_FRAGMENT = "Empty-neighbourhood sphere laws"
+ AXIOM_NEEDLES = (
+@@ -217,11 +217,7 @@
+ 
+ 
+ # ============================================================================================ family F
+-FENCES = (
+-    "This note proves, for the unsoldered static law with the exponential overlap on a coordinate plane of the lattice, a volume-uniform power-law bound on the record correlations with an explicit coupling-dependent exponent, at every `β > 0`, on finite windows with exterior records, on tori and for infinite-volume static laws; it does not state the true rate of decay, does not claim the exponent is sharp, does not treat the Born overlap, does not re-prove blocks 19 or 20, does not select a reading, rule, coupling or dimension as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+-)
++FENCES = ('For the supplied uniform-sphere exponential nearest-neighbour static model on independent Z^2: P1 proves the complex-shift inequality; P2 bounds the logarithmic shift energy by charging each active bond to a nearer endpoint; P3 gives an explicit correlation upper bound with exponent kappa(beta)>0; P4 gives the torus magnetization bound and the same correlation bound conditional on a DLR law. Windows must contain 0,x and every site with distance less than R=distance(x); tori have L>=2. No exact decay exponent, faster-power exclusion, gravity or dimension-selection claim is retained. This note does not select a physical reading, coupling, rule or dimension and adopts no clause.', 'No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.', 'The standard mathematical imports are stated explicitly; they supply mathematical tools, not physical selection.')
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
+     "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+@@ -271,7 +267,7 @@
+     "per_site: executed — the shift lemma on a trigonometric polynomial with a nonzero period integral; the mean value bound for log(1+t); the two-site instance",
+     "per_mode: executed — the sup-norm shell counts on Z^2 (j < 30) and on tori (L <= 12); sum_{j<=R} 8j/(1+j)^2 <= 8 H_R to R = 60",
+     "per_block: executed — the e bounds and cosh 1 <= 8/5; the maximization gamma* = 5/(256 beta), kappa = 5/(512 beta); the two branches at 5/256; the torus shell sum at two exponents",
+-    "lattice_wide: P1-P4 proved for every beta > 0 on every window containing the disc, on tori and for infinite-volume laws on the plane; the true rate not claimed",
++    "lattice_wide: checked and not executed — written conditional model proofs and bounds only; the finite runner does not execute an infinite lattice or physical classification",
+ )
+ 
+ 
+--- original/PR8156/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ author/PR8156/docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,85 +1,35 @@
+ ---
+-claim_id: admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_of_the_cubic_walk_three_g_zero_below_seventy_six_hundredths_bounded_theorem_note_2026-09-15
++claim_id: admissibility_rule_cubic_walk_return_sum_and_sphere_static_magnetization_sufficient_bound_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "For the constant 3 G(0) = 3 (2 pi)^{-3} int_{[-pi,pi]^3} dk/E(k), E(k) = sum_i 2(1 - cos k_i), which is the ordering threshold of the unsoldered sphere static law's infrared route (block 19, PR #8153: long-range order and the Green-function channel for beta > 3 G(0)): (V1) 3 G(0) = (1/2) sum_{n >= 0} P_{2n}(0,0), with P_{2n}(0,0) = 6^{-2n} C(2n, n) sum_a C(n, a)^2 C(2(n-a), n-a) the return probability of the simple random walk on Z^3 (proved; the closed-walk count executed by enumeration for n <= 3 and the Vandermonde form to n = 12); (V2) for every n >= 1, P_{2n}(0,0) <= (36/11)^{3/2}/(4 pi^{3/2} n^{3/2}) + 2 e^{-4n/(3 pi^2)}, from 1 - cos u >= 11 u^2/24 on |u| <= 1, 1 - cos u >= 2 u^2/pi^2 on [-pi, pi], |phi|^{2n} <= e^{-2n(1 - |phi|)} and the two-region split (proved; the inequalities and the Gaussian integral executed symbolically); (V3) with N = 1000, the exact partial sum S_N = sum_{n <= N} P_{2n} and the tail bound give 3 G(0) < 76/100 as an exact rational comparison (pi >= 3, e^{-2/15} <= 197/225), and S_N/2 > 75/100 gives 3 G(0) > 75/100 (proved; executed exactly); (V4) hence block 19's ordering threshold is beta > 76/100 in place of 3 sqrt(3) pi/8 (about 2.04), the route's constant lies in (75/100, 76/100), and with block 21 (PR #8155) the kernel's coupling window on Z^3 is [sqrt(3)/6, 76/100] (a placement corollary conditional on the referenced open blocks). Two standard mathematical imports named at definition level; no coupling, reading or rule is selected as physical; exact arithmetic throughout."
++claim_scope: "V1\u2013V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M\u00b2>=1\u22123G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes."
+ upstream_dependencies:
+-  - minimal_axioms
+-  - possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14
++  - admissibility_rule_sphere_static_law_zero_field_component_fourier_bounds_bounded_theorem_note_2026-09-15
+ runner: scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py
+ ---
+ 
+-# Block 19's ordering threshold sharpened to `β > 76/100`: the lattice Green function at the origin is half the return sum of the cubic walk, its partial sums are exact, and an elementary tail bound pins `3G(0)` between `75/100` and `76/100`
++# Cubic-walk return sum and a sufficient sphere-static magnetization bound
+ 
+-**Date:** 2026-09-15
+-**Type:** bounded_theorem
+-**Status:** bounded-support (exact; conditional on the named supplied readings for the placement; unaudited)
++**Status:** bounded-support; conditional model; unaudited.
+ 
+ ## Result up front
+ 
+-Block 19 (PR #8153) proves that the unsoldered sphere static law orders, and
+-carries the Green-function channel, once `β` exceeds `3G(0)`, where `G(0)`
+-is the lattice Green function at the origin; it bounded `G(0)` by an
+-elementary inequality and got `β > 3√3π/8 ≈ 2.04`. Block 21 (PR #8155)
+-proves there is no channel below `√3/6 ≈ 0.289`. That leaves a band a
+-factor seven wide. This note shrinks it from the top: `3G(0) < 76/100`.
+-
+-The mechanism is elementary. `1/E(k)` is `(1/6)/(1 − φ(k))` with `φ` the
+-characteristic function of the simple random walk on `Z³`, so `G(0)` is the
+-sum of the walk's return probabilities divided by six, and `3G(0)` is half
+-that sum. Each return probability is an exact rational — a count of closed
+-walks over `6^{2n}` — and the count has a closed form through a Vandermonde
+-identity. Summing the first thousand terms exactly gives `S_{1000}`, a single
+-rational with a `1553`-digit denominator; an explicit tail bound, from the
+-quartic Taylor bound on `1 − cos u` near zero and a Gaussian integral,
+-adds less than `0.019`; and the comparison `(S_N + tail)/2 < 76/100` is a
+-rational inequality checked exactly. The partial sum alone gives the other
+-side, `3G(0) > 75/100`. So the route's constant is pinned within about a
+-percent, and nothing short of a different route to order can push the
+-threshold below `75/100`.
+-
+-Exactly: `3G(0) = (1/2)Σ P_{2n}(0,0)` (V1); the tail bound (V2);
+-`75/100 < 3G(0) < 76/100` (V3); the window `[√3/6, 76/100]` (V4).
+-Executed with exact arithmetic: 20 checks, 13 mutations.
+-
+-## Machine status and trace
+-
+-```yaml
+-actual_current_surface_status: bounded-support
+-target_claim_type: bounded_theorem
+-trace_class: upstream_support
+-target_claim_id: null
+-target_blocker_text: "the derivation campaign's gravity node (#8093): blocks 19-21 (PRs #8153-#8155) locate its kernel in the ordered unsoldered static law on Z^3 with a coupling window [sqrt(3)/6, 3 sqrt(3) pi/8]; the width of that window"
+-source_of_blocker_text: handoff
+-reachability_to_target: supports
+-artifact_role: theorem
+-next_trace_action: "the strong-coupling constant of block 19's route is pinned: 75/100 < 3G(0) < 76/100 by exact return counts and an elementary tail bound; the ordering threshold is beta > 76/100; the kernel's window is [sqrt(3)/6, 76/100]. Open: the band itself (a different route to order below 3G(0); the sharper weak-coupling coefficient); the normalization. Consumers: #8093's assembly (the gravity node's coupling window); the campaign's queue"
+-conditional_surface_status: "V1-V3 proved and executed exactly (the return-sum identity; the tail bound; the certificate at N = 1000); V4 a placement corollary conditional on blocks 19 and 21 (open PRs) for their halves; conditional on the sphere as the possibility domain, the unsoldered and static readings and the exponential overlap only through the placement; two standard mathematical imports named at definition level"
+-hypothetical_axiom_status: null
+-admitted_observation_status: null
+-audit_required_before_effective_retained: true
+-```
++V1–V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M²>=1−3G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes.
+ 
+ ## Premises and declared objects
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "Each site has a domain of local possibilities.", "No possibility is privileged.", "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", and "Records form.". The landed possibility-covariance note (`docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md`, section "Empty-neighbourhood sphere laws") supplies the pure-state sphere and the unsoldered reading, which enter only through the placement V4. Blocks 19 and 21 (PRs #8153, #8155, open) are referenced under Prior art as evidence addresses for V4; V1–V3 are statements about a number and depend on nothing proposed.
++V1–V3 concern the defined number, without a physical model premise. V4 uses the [corrected zero-field component Fourier note](ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md), G2–G5, with its uniform S² measure, exponential interaction, even three-dimensional torus and Gaussian-domination import (Theorem 4.6 with parameter 3beta/2). The [axioms memo](MINIMAL_AXIOMS_2026-06-29.md) and [possibility representation context](POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md) select neither that measure nor the interaction.
+ 
+-Declared objects.
++
+ - **The symbol and the constant.** `φ(k) = (1/3)Σ_{i=1}^3 cos k_i` on the cube `Q = [−π, π]³`; `E(k) = Σ_i 2(1 − cos k_i) = 6(1 − φ(k))`; `G(0) = (2π)^{−3}∫_Q dk/E(k)` (block 19's constant: the limit of `N^{−1}Σ_{k≠0} 1/E(k)` on tori).
+ - **Return probabilities.** `P_{2n}(0,0) = (2π)^{−3}∫_Q φ(k)^{2n} dk` for `n ≥ 0`; `S_N = Σ_{n=0}^N P_{2n}(0,0)`.
+ - **Constants of the tail.** `T_1(N) = (36/11)^{3/2}/(2π^{3/2}√N)`; `T_2(N) = 2e^{−4(N+1)/(3π²)}/(1 − e^{−4/(3π²)})`; their rational majorants `T_1(N)² ≤ (36/11)³/(108N)` (from `π ≥ 3`) and `T_2(N) ≤ (225/14)(197/225)^{N+1}` (from `π² ≤ 10` and `e^{−2/15} ≤ 197/225`).
+ 
++
++
+ ## Prior art and what is new
+ 
+-The integral `(2π)^{−3}∫ dk/(1 − φ(k))` is Watson's (1939) for the simple cubic lattice, with a closed form in Gamma values found by Glasser and Zucker (1977); its value `1.5163860…` is standard. None of this is used: the value is neither cited nor needed. Block 19 bounded `G(0)` by `√3π/8` from `1 − cos u ≥ 2u²/π²` alone; block 13 used the return probabilities of the same walk for a different purpose (the heat kernel's coincidence probabilities). What is new here: (i) the threshold constant of block 19's route rewritten as half the return sum and computed exactly to a thousand terms; (ii) an elementary tail bound with the quartic Taylor inequality near zero, which is what makes a thousand terms enough; (iii) the exact two-sided pinning `75/100 < 3G(0) < 76/100`, so the route's threshold is `β > 76/100` and cannot be below `75/100`; (iv) the placement: the kernel's window on `Z³` is `[√3/6, 76/100]`.
+ 
+-## Exact target and obligation graph
+-
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| V1 | `3G(0) = (1/2)Σ P_{2n}`; the closed form of `P_{2n}` | the paired geometric series; closed-walk counting; Vandermonde | B |
+-| V2 | `P_{2n} ≤ (36/11)^{3/2}/(4π^{3/2}n^{3/2}) + 2e^{−4n/(3π²)}` | the two cosine inequalities; the two-region split; a Gaussian integral | C |
+-| V3 | `75/100 < 3G(0) < 76/100` | `S_{1000}` exactly; the tail majorants; rational comparison | D |
+-| V4 | the threshold `β > 76/100`; the window | V3 with blocks 19 and 21 | — |
++The integral `(2π)^{−3}∫ dk/(1 − φ(k))` is Watson's (1939) for the simple cubic lattice, with a closed form in Gamma values found by Glasser and Zucker (1977); its value `1.5163860…` is standard. None of this is used: the value is neither cited nor needed. The retained contribution is the exact rational interval with its full tail proof.
+ 
+ ## Theorem V1 — the constant is half the return sum
+ 
+@@ -108,53 +58,15 @@
+ 
+ Executed: `S_{1000}` as one rational (a `1553`-digit denominator), the integer decimal `⌊10^6 S_N⌋ = 1501637`, the majorant `T_1 < 181/10⁴`, and both comparisons exactly (D1–D4).
+ 
+-## Corollary V4 — the sharpened threshold and the window
++## Corollary V4 — a sufficient zero-field magnetization condition
+ 
+-**Statement (conditional on blocks 19 and 21 for their halves).** In block 19's G3–G5, the condition `β > 3G(0)` may be replaced by `β > 76/100`: the unsoldered sphere static law with the exponential overlap on `Z³` has long-range order and the Green-function channel for every `β > 76/100`. Together with block 21's `β < √3/6`, the kernel's coupling window on `Z³` is `[√3/6, 76/100]`, of width below `1/2`. The route's constant is not below `75/100`, so no sharper bound on `G(0)` can improve the threshold of that route by more than `1/100`.
++Under the corrected parent's supplied model and imports, let beta>76/100. V3 and parent G3 give `M²=liminf_L M_N² ≥ 1−3G(0)/beta > 0`. Parent G2 and G4 then give, for every component and every sequence of nonzero torus momenta tending to a fixed nonzero k, `(M²/3)²/(beta E(k)) ≤ liminf <|ŝ^e(k_L)|²> ≤ limsup <|ŝ^e(k_L)|²> ≤ 1/(beta E(k))`.
+ 
+-**Proof.** V3 with block 19's G3 (`M² ≥ 1 − 3G(0)/β`) and block 21's W5–W6; the referenced halves are open PRs cited as evidence addresses, not as authority. ∎
+-
+-*Not claimed.* The location of the true ordering threshold (a different route might order below `3G(0)`); the band `[√3/6, 76/100]` itself; the Born overlap; the normalization.
++Proof: substitute V3 in the parent G3 inequality. The proof of parent G5 uses only positivity of M², the finite-volume bounds G2/G4 and continuity of E at nonzero k; its stated coarse sufficient condition can therefore be replaced here by beta>76/100. In detail, for any 0<eta<M², all sufficiently large volumes obey M_N²≥M²−eta. Insert this in G4, use M_N²≤1 in its denominator, take the liminf and then eta down to zero; G2 gives the upper bound. Component symmetry supplies each component. No selected transverse state or pointwise real-space law is asserted.
+ 
+ ## No-Go Discipline Gate
+ 
+-The negative sentence is the lower half of V3: block 19's route cannot certify order below `β = 75/100`. Its escapes are named, not closed: a different route to order (not attempted); the band.
+-
+-### N1 — Routes by which V3 could fail
+-1. *A closed-walk count or the Vandermonde form is wrong* — closed: enumeration for `n ≤ 3` and the multinomial sum to `n = 12` (B1).
+-2. *The return-sum identity misses the odd terms or the sign of `φ`* — closed: the paired series `(1 + φ)Σφ^{2m}` has nonnegative terms and the odd integrals vanish (B2).
+-3. *The tail bound's inequalities* — closed: derivative arguments executed symbolically, the Gaussian integral and the two-region step (C1–C3).
+-4. *The rational majorants of the tail* — closed: `π ≥ 3`, `π² ≤ 10`, `e^{−2/15} ≤ 197/225` from `e^{−x} ≤ 1 − x + x²/2` (C3, D2).
+-5. *A different route to order* — an escape, named.
+-
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used.
+-
+-### N3 — Hidden-wall scan
+-No hidden dependence: V1–V3 are statements about one number; V4 depends on blocks 19 and 21 as evidence addresses.
+-
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
+-|---|---|---|
+-| `minimal_axioms` | the five sentences under Premises | yes (premise, through the placement) |
+-| the possibility-covariance note (`main`) | the sphere domain and the unsoldered reading, through the placement | V4 only (proposed) |
+-| block 19 (PR #8153) | the route whose constant is pinned | V4 only (evidence address) |
+-| block 21 (PR #8155) | the weak-coupling half of the window | V4 only (evidence address) |
+-| block 13 (PR #8147) | context (the same walk's return probabilities) | no |
+-
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "`75/100 < 3G(0) < 76/100`" | executed: the closed-walk counts `1, 6, 90, 1860`; the Vandermonde form to `n = 12`; the cosine derivative identities | executed: the two-region step on the symbol at sample wavevectors | executed: the Gaussian integral; the constant's identity; the integral comparison for `Σ n^{−3/2}` | executed: `S_{1000}` exactly; the two rational comparisons; the majorants | proved: V1–V3 exact; V4 conditional on the referenced open blocks |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling or overlap; none is a wall.
+-
+-### N7 — Steelman
+-Hostile reviewer: "The value of the return sum is a classical constant known to many digits; computing a thousand terms is busywork." Reply: the value is not cited, because the lane's rule is to re-prove what is load-bearing; what the note supplies is an exact, machine-checked pinning of the route's threshold with an elementary tail bound, and the consequence that the kernel's window has width below one half. Conceded: the true threshold of the law is not located; only the route's constant is.
+-
+-### N8 — Cross-cycle echo
+-Block 13's heat-kernel coincidence probabilities are the same walk's return probabilities in another role; block 19's crude bound is the `n → ∞` part of this note done with a single inequality; block 21's constant is the other end of the window.
++Broad negative certification is withheld. The scalar lower bound remains valid, but it excludes neither alternative proofs nor physical models. Original N1 proof checks and an unattempted alternative route do not constitute five independent exact-target attacks. Original full arguments and branches remain in recovery. The prior physical kernel-window comparison is withdrawn.
+ 
+ ## Falsifiers
+ - A count of closed walks for some `n ≤ 3` other than `1, 6, 90, 1860`, or a Vandermonde form differing from the multinomial sum for some `n ≤ 12` (B1); a paired-series identity that fails, or an odd integral that does not vanish at sample wavevectors (B2).
+@@ -162,17 +74,24 @@
+ - `⌊10^6 S_{1000}⌋ ≠ 1501637`, a failed rational comparison, `S_{1000} ≤ 150/100`, or a majorant identity that fails (D1–D3).
+ 
+ ## Boundaries and non-claims
+-This note proves, for the constant `3G(0)` of block 19's infrared route, the exact two-sided bound `75/100 < 3G(0) < 76/100`, so the route's ordering threshold for the unsoldered sphere static law is `β > 76/100`; it does not locate the true ordering threshold, does not treat the band `[√3/6, 76/100]`, does not treat the Born overlap, does not re-prove blocks 19 or 21, does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++V1–V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M²>=1−3G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes. No physical rule is selected and no clause is adopted.
++
++No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
++
++All mathematical imports are explicit; no physical selection follows from the scalar interval.
+ 
+ ## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- The possibility-covariance note (on `main`): the sphere domain and the unsoldered reading, through the placement only; proposed, unaudited. PRs #8153 and #8155 (open) referenced as evidence addresses for V4 only; PR #8147 for context.
+ - Re-proved at scope: V1 (termwise integration of the paired series; closed-walk counting; Vandermonde), V2 (the two cosine inequalities; the two-region split; the Gaussian integral), V3 (the integral comparison; the rational majorants).
+ - Named standard imports at definition level (never as authority for physics): the monotone limit theorem for integrals of series of nonnegative functions; the elementary bounds `3 < π < 22/7` (hence `π² < 10`).
+ - Reference only (named, not used): Watson (1939); Glasser–Zucker (1977).
+ 
++
++The corrected parent supplies V4 and its declared Gaussian-domination import; its model hypotheses remain explicit.
++
+ ## Review record
+-Supervisor-run block (owner directive: don't stop; assess the next lane at each conclusion; no subagents). The control (`specs/supervisor_control_block22_return_sum.py`) computed the exact partial sums to `N = 2000` (timing: about ten seconds at `N = 1000`, two and a half minutes at `N = 2000`, so the runner uses `N = 1000`), compared the crude tail constant of block 19's inequality (`1.81/√N`) with the quartic one (`0.53/√N`), checked the tail bound against the exact `P_{2n}` for `n ≤ 60`, and ran the rational comparison at `N = 2000` against `77/100` before the contract fixed `N = 1000` and `76/100`; the lens pass is in `GOAL_block22.md`; the primary seat wrote V1–V4 and the runner; the refuting pass (`CHECKER_block22_findings.md`) recomputed the multinomial sums by direct enumeration of `(a, b, c)` for `n ≤ 300`, estimated the true tail by fitting `P_{2n} ≈ c n^{−3/2}` (the sum then lands within `10^{−4}` of the classical value, which is used there as a reference only), checked the tail bound against the exact `P_{2n}` for `n ≤ 1000`, the symbol's lower bound on a grid of the cube, and the exponential majorant. Facts settled while executing: the crude bound of block 19 is the `n → ∞` end of this argument done with one inequality; the quartic bound near zero is what makes a thousand terms sufficient.
++
++Original programs, outputs, complete proofs and mutation census remain byte-exact in the archive. They are historical finite evidence, not a new execution or a negative certificate.
+ 
+ ## Verification
+ 
+@@ -182,4 +101,4 @@
+ python3 scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py --mutation certificate_target_wrong
+ ```
+ 
+-Families: A authority and inputs; B the closed-walk counts, the Vandermonde form and the paired series; C the cosine inequalities, the Gaussian integral and the two-region step; D the exact partial sum, the majorants and the certificate; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
++Families: A authority and inputs; B the closed-walk counts, the Vandermonde form and the paired series; C the cosine inequalities, the Gaussian integral and the two-region step; D the exact partial sum, the majorants and the certificate; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. The historical mutation census assigned each of the 13 declared mutations to one family; no new mutation census is claimed. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+--- original/PR8156/scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py
++++ author/PR8156/scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py
+@@ -21,14 +21,15 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 300
+ AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
++    'docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md',
+ )
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_of_the_cubic_walk_three_g_zero_below_seventy_six_hundredths_bounded_theorem_note_2026-09-15"
++CLAIM_ID = 'admissibility_rule_cubic_walk_return_sum_and_sphere_static_magnetization_sufficient_bound_bounded_theorem_note_2026-09-15'
+ PARENT_CLAIM_ID = "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+ PARENT_FRAGMENT = "Empty-neighbourhood sphere laws"
+ AXIOM_NEEDLES = (
+@@ -108,12 +109,12 @@
+ 
+ # ============================================================================================ family A
+ def family_a(checks: Checks, texts) -> None:
+-    note, axioms, parent = texts
+-    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 3,
+-                 "the three declared inputs exist (this note, the axiom memo, the possibility-covariance note on main)")
++    note, axioms, parent, infrared_parent = texts
++    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 4,
++                 "the four declared inputs exist, including the corrected component Fourier parent")
+     checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the five axiom sentences used are present verbatim in the axiom memo")
+     fp = normalize_text(parent)
+-    checks.check("A3", PARENT_CLAIM_ID in fp and PARENT_FRAGMENT in fp, "the parent's claim id and its empty-neighbourhood sphere-law section are present")
++    checks.check("A3", PARENT_CLAIM_ID in fp and PARENT_FRAGMENT in fp and 'admissibility_rule_sphere_static_law_zero_field_component_fourier_bounds_bounded_theorem_note_2026-09-15' in infrared_parent and "Theorem G5 — component bounds along momentum sequences" in infrared_parent, "the parent's claim id and its empty-neighbourhood sphere-law section are present")
+     flat = normalize_text(note)
+     checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
+ 
+@@ -252,11 +253,7 @@
+ 
+ 
+ # ============================================================================================ family F
+-FENCES = (
+-    "This note proves, for the constant `3G(0)` of block 19's infrared route, the exact two-sided bound `75/100 < 3G(0) < 76/100`, so the route's ordering threshold for the unsoldered sphere static law is `β > 76/100`; it does not locate the true ordering threshold, does not treat the band `[√3/6, 76/100]`, does not treat the Born overlap, does not re-prove blocks 19 or 21, does not select a reading, rule or coupling as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+-)
++FENCES = ('V1–V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M²>=1−3G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes. No physical rule is selected and no clause is adopted.', 'No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.', 'All mathematical imports are explicit; no physical selection follows from the scalar interval.')
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
+     "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+@@ -306,7 +303,7 @@
+     "per_site: executed — the two-region step on the symbol at nine wavevectors; the shift identity phi(k - pi) = -phi(k)",
+     "per_mode: executed — the exact cosine moments and the cube integrals of phi^{2n} for n <= 6; the Gaussian integral and the tail constant; the integral comparison for sum n^{-3/2}",
+     "per_block: executed — S_1000 as one rational; the majorants T_1^2 = (36/11)^3/(108 N) and T_2 = (225/14)(197/225)^(N+1); the two rational comparisons",
+-    "lattice_wide: V1-V3 proved and executed exactly (75/100 < 3 G(0) < 76/100); V4 a placement corollary conditional on blocks 19 and 21; the true threshold and the band not claimed",
++    "lattice_wide: checked and not executed — V1-V3 infinite-series proof and V4 conditional parent implication; finite checks do not execute an infinite lattice or physical classification",
+ )
+ 
+ 

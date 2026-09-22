@@ -1,0 +1,42 @@
+{
+  "checks_pass": 143,
+  "checks_fail": 0,
+  "elapsed_seconds": 0.007546207983978093,
+  "scope": "Independent direct spectral-sum sanity, exact formal coefficient convolution, graph multiplicities/nearer-endpoint charge and Laurent coefficient shift; not primary execution or negative certificate. Reuses prior8153 exact rotation-generator/root controls unchanged.",
+  "observations": {
+    "side2_frozen_site_step": {
+      "distinct_neighbours": 3,
+      "multiplicity": 2,
+      "k0_boundary_coefficient_over_c": 2,
+      "claimed_over_c": 1
+    }
+  },
+  "nearer_endpoint_charge_cases": [
+    {
+      "radius_squared": 2,
+      "active_bonds": 16,
+      "maximum_charge": 4
+    },
+    {
+      "radius_squared": 5,
+      "active_bonds": 36,
+      "maximum_charge": 4
+    },
+    {
+      "radius_squared": 10,
+      "active_bonds": 72,
+      "maximum_charge": 4
+    },
+    {
+      "radius_squared": 25,
+      "active_bonds": 156,
+      "maximum_charge": 4
+    },
+    {
+      "radius_squared": 41,
+      "active_bonds": 284,
+      "maximum_charge": 4
+    }
+  ],
+  "bound_inference_counterexample": "(1+R)^-2 is a fixed faster power compatible with every original0<kappa(beta)<=1 upper bound; varying upper exponent does not exclude fixed powers."
+}

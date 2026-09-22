@@ -1,0 +1,168 @@
+[
+  {
+    "baseRefName": "main",
+    "baseRefOid": "1de0b3bcfbc785b12d4587aba3910b69e8af09cc",
+    "headRefName": "physics-loop/admissibility-induced-law-block22-sphere-static-law-strong-coupling-threshold-sharpened-return-sum-20260915",
+    "headRefOid": "5296e20cab34eb684c1f00f21b9c60bf1db7b153",
+    "number": 8156,
+    "title": "[physics-loop] admissibility-induced-law block22 \u2014 bounded_theorem \u2014 bounded-support: block 19's ordering threshold sharpened to beta > 76/100 \u2014 3G(0) pinned between 75/100 and 76/100 by exact return counts of the cubic walk",
+    "delta_base": "be5e5e07f67bbe71b4464bf512ab8bda6420776c",
+    "patch_sha256": "918545815667ff1380dc6a0d4d6ed4470700d770f06d5dcfc5dd4ae66da9724f",
+    "original_paths": [
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "mode": "100644",
+        "blob": "ecabfb5a8b896ea8cb4b6f7a726e409f54d68e07",
+        "sha256": "c711b5d2859de6b2022fb3b39c13bcef38d8d74da50671abf890607b7af6893d",
+        "size": 1950
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+        "mode": "100644",
+        "blob": "ce93b8c396e7215a77fedae13b143b52e74a3c21",
+        "sha256": "82bd93efb8180349b1d3e5edb82cf1259e981f4f4ba11c06ccd15777cd64b820",
+        "size": 4377
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block22_findings.md",
+        "mode": "100644",
+        "blob": "06c39b63e18ed23032669651fd60e373226f1a99",
+        "sha256": "62e967e6b166b52ce6a3ecd5dbe5a5892cf8dc5c26760014f98bdc9acda68c2d",
+        "size": 2858
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block22.md",
+        "mode": "100644",
+        "blob": "703accb1d3da752dd964265ef1b39b03b7f38b0d",
+        "sha256": "2ac8b1aea9dea961084572ca2cfc8d1b3d4b032238ff23417c065e9fc8784f24",
+        "size": 2110
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block22.md",
+        "mode": "100644",
+        "blob": "20a300d1fce9caca5c8243880329b7b07d1469e0",
+        "sha256": "23d298cd68c1717624e8a07f137041c0efd3dd747697684958ba948380cf74b6",
+        "size": 3659
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "mode": "100644",
+        "blob": "aae9fc8247a5b57055825c4531aa2a8fe3292f39",
+        "sha256": "0584643757e02024ba66b0d51038524a6deedcc1447032037ff7091eef9a48f1",
+        "size": 9449
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+        "mode": "100644",
+        "blob": "4420ea14b0e71f01d6cb044febc4c9e98ac8ef8b",
+        "sha256": "ed7e006f96af111a4f054902bf0dd16bedbf1ce2dac30acabed0c0f5969199d7",
+        "size": 2476
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+        "mode": "100644",
+        "blob": "2a1723d952fd03e658b9c0fdbc11a1211b5066f3",
+        "sha256": "9cdc484724e50c45ccb2721ba1395cbe21439460ca1008c3d7bf4683bbbb9e09",
+        "size": 2054
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "mode": "100644",
+        "blob": "c1806f6b5882a3f24ec057303c8a92b25344912b",
+        "sha256": "9d020fc0636c31484db7fcc27ed62a9e384159fe7cbea137579ac4a2bb0ae29f",
+        "size": 11553
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block22.md",
+        "mode": "100644",
+        "blob": "0216b4e45d56c4ff66ac90e40a0cffe276847242",
+        "sha256": "e4de7d188723cd8a63430c0e841b8cc523db8270f75feaf6f4ab56ae0ef4a7b5",
+        "size": 3637
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "mode": "100644",
+        "blob": "20646051e390aff85dd8cac7b94b5cb4169ab28a",
+        "sha256": "c50151a7ba1fed3400f3d7e0059051f7eb9cd91885663c67bf3928f61a7fa3c0",
+        "size": 56749
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+        "mode": "100644",
+        "blob": "4e2239f73670ee9948aca49324aee1e78ef05196",
+        "sha256": "caf7dc9874c402a8d1d2ed17a48d759ab908945b402e96268a220a373a5386e9",
+        "size": 11375
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "mode": "100644",
+        "blob": "16b76c89cc9d774a387374797120a87d6d63f013",
+        "sha256": "624b2350792970e099975956932719a72c9287ed2417b566ceb064fc0e627b3c",
+        "size": 16270
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "mode": "100644",
+        "blob": "08e939b3f0043d4dfcb811249cc39661f3622749",
+        "sha256": "12e02500a159585cc098615a3982b5881762829f6c7c2f78ce48e3d594a519ec",
+        "size": 5159
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block22_refuter.out.txt",
+        "mode": "100644",
+        "blob": "905cbd8efcc81fa71de8cea70ab70fa7c66a63a0",
+        "sha256": "a38adb66500f6375f8b7877faad07e2a77b8273ecd7bb96fe3550f38cf31ff6d",
+        "size": 568
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block22_refuter.py",
+        "mode": "100644",
+        "blob": "5cbf42cb4e3ba9b70f607a55e931ba1d04b35c7f",
+        "sha256": "54837382141fd7fc64b75b6eb570355d95b46fd7bf17821ff5b830b35168dafc",
+        "size": 3067
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block22_return_sum.out.txt",
+        "mode": "100644",
+        "blob": "2c1de2708d13b3af11bdbc5b9fe76f6e24de6fc5",
+        "sha256": "7266f1fba383ed9cd8bb3c0f2eb48f88c1f8f7f3267dfdffc039af0a76839b7e",
+        "size": 1119
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block22_return_sum.py",
+        "mode": "100644",
+        "blob": "26e5ea9ea5afbc9a9088b8d31f0e68442912db25",
+        "sha256": "dae8bcbb1fcdd2a45a81b8a0b0be46c02eda3ad719a28be45e95d78e6851aeef",
+        "size": 4057
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "mode": "100644",
+        "blob": "5912151a63e74573dcab0f52759c74618e17549a",
+        "sha256": "2815d9273d60a7320812c037908672c4bd38750d0fcdc1f7a7abc0f3b576d916",
+        "size": 22762
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "mode": "100644",
+        "blob": "e92e5af71dace0848e316dff46f7de984dc9e6cf",
+        "sha256": "2491f4bb5555d4de0fa370d17ada0cdc4a0126d538f7d287b1dc5dc2d9de6a5a",
+        "size": 810965
+      },
+      {
+        "path": "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.txt",
+        "mode": "100644",
+        "blob": "cb8b875f1ba8d36303129603ffef08a2ad6a6165",
+        "sha256": "af98245d4636a9e6f7eb11a85afa220238f27db2ee910aa9735b531d4a2f5eaf",
+        "size": 4490
+      },
+      {
+        "path": "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py",
+        "mode": "100755",
+        "blob": "e298edf676141b07f9d285e1adfcc289f8a06684",
+        "sha256": "442bf985691176aa63074c2302f9e89cc21e24233697e3e45c42b8d74af2cfa6",
+        "size": 20625
+      }
+    ]
+  }
+]

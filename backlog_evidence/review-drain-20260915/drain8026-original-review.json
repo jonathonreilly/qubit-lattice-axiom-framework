@@ -1,0 +1,935 @@
+{
+  "status": "ORIGINAL SCIENCE REVIEW COMPLETE; PACKAGING REPAIR AND COLD CONFIRMATION PENDING",
+  "reviewer_session": "/root/review_8012",
+  "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+  "delta_base": "cf104c1e69c971f37bdca51f775a6165f9f57133",
+  "declared_base": "codex/local-observable-block35-20260907",
+  "review_base": "02a1a31a4fdb3249466a58885fba0f3b4cea7c28",
+  "original_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/ARTIFACT_PLAN.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c89e4ba6d22368cfd1ed89cccdf8d232a2f38c58",
+      "sha256": "e1c45504879c22422e9edc38caeb1d9dd788060af80bbab3195f6b8def173e36",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/ARTIFACT_PLAN.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "fa616e21e58f85f3b0e3c9c9f88616ce343b325a",
+      "sha256": "430cb97ded8e87448ac8d756ef563aae7f7588ee7d05fbdb1342d5757a2ff281",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "e3b442e3f3f0c44862e8b384e02e044e9eaf2392",
+      "sha256": "7e049c36268b21b9748dc6db055b46635c427bed754435fa7e41a64e50788f0d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "d0cbb7eb413d0145cd8c70fafa6589fbc9fdd230",
+      "sha256": "ee804aab334fbf2c8ab4ba757480cb0f1ef550ad51ca3d4f5dc103b2971fa1a2",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_READINESS.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7762de0a3186744479e30ebf47a115116cf1e495",
+      "sha256": "6a83feff4913c17a0c075571d718e2334e729577f4e257ad322bce315d7d3d03",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_READINESS.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_STRICT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0e21f955dde35e543ae86db76866c27bbf4d2883",
+      "sha256": "734bb719c7666447341f906022fb4270c897e386df79a3d8472f97d047763e01",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_STRICT.log",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5f7bfc48374da8f797e4790007caaff60a53a426",
+      "sha256": "0d966cc8e9751d48e86b90135ffed5f9c65221b07583f3c8770125501ea03b69",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "342854c6db6b89b28ce3601a3c82c210d6453051",
+      "sha256": "309c13c4606e2d49b9d6237589d75ef362272addd0359c21b5fa80952f7a63f9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_VALIDATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "8f41d677e83f6807edc0b080ecd77abeb018814c",
+      "sha256": "c347596bba0b3a6e99bb6c09e59a7124176026164b941a44e8c73334a038ffc3",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FINAL_VALIDATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_VOCAB_LINT.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FINAL_VOCAB_LINT.txt",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FROZEN_PORT_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "9dd4e0ccbf08eddde72b4487aa4b564a97230058",
+      "sha256": "e1294c7f46e861dd5b96aa6d5ffa9e2912d45d624e0645b0d46be602e98feba2",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FROZEN_PORT_RECEIPT.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FULL_PIPELINE.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "de169c0330d395618651a76b1737a100ddf3396c",
+      "sha256": "2a9a7cc7c7c84586a8566bc2d6fc0d8128c083fec9a845496f4d0e4f65b55f71",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/FULL_PIPELINE.log",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/GOAL.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "33691965a085b44f471c04a243c447e030788c37",
+      "sha256": "2a0ad0e50643f2bd14f85302ed259547ceb966a6a1755bccbe8ba20e5c0a70e9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/GOAL.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/HANDOFF.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "92e3622a4932b6b735226d013cade97d17286d1a",
+      "sha256": "3a3a693cfd4dd2f8f145e0cc8db5ff613f8ec7f14ad368448b87e3bf582582ec",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/HANDOFF.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/LITERATURE_BRIDGES.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "ae67391c16f11b404eff830976232bb63c870d8f",
+      "sha256": "a602d6acc0553d384bdf1569ae8aa2695524238e1325eea70ffd467f2b909bba",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/LITERATURE_BRIDGES.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/LOCK_RELEASE.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/LOCK_RELEASE.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "470938b9b5b8c3412c2432865348761cd6e7baed",
+      "sha256": "afa4332e42b092c6b275f5ccb2c30e67aa64b3b372e79e5e787d064a0c913af9",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/NO_GO_LEDGER.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c03f3b5333586d5e7dd5d3d8221a9b6329153209",
+      "sha256": "a7c6e574502271eddd950e30830fa503025c78629cd1d69d963b05e8b2224aac",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/NO_GO_LEDGER.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/OPPORTUNITY_QUEUE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "29954413498a2d0610b17a3b164fb55beeb87e3f",
+      "sha256": "f129ced47bba719d8fc42a3fc2334ed48464abeb767d20d67c6ad8a92a883c3e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/OPPORTUNITY_QUEUE.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PACK_INDEX.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "72baa3aa51332d8dfde349157ddb98b462cbb54e",
+      "sha256": "022047c3b7758ff9ac43db30f9de304850347838015da6ed07908213fefe223e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/PACK_INDEX.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "1d4a1483da79b73a44007c81dd500770e50312ee",
+      "sha256": "8d626e3c776c76f22444cae61fda2de539831e52344a8dbca48631f72145aea4",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PORT_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "26f7d5813de3ce4f98e430c7753f7614462dfaec",
+      "sha256": "d0b57620c57ed913e231e9e38f2019501d0a7a437009e65228ba3f8f6175181d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/PORT_RECEIPT.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PROOF_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "54a29d041b71ed41410ae5bbc5e1a1534d5d940b",
+      "sha256": "f4174fcfc95abc45eea7d53e6b553c2d051ca2e1bec96700625b03491c3cfa84",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/PROOF_REVIEW.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PR_BACKLOG.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "72003f92f95a9623b26f95277b044e0bd5fcb275",
+      "sha256": "e2f8dc1c55366600ecc1fac15375aa1206ced9ef1341a123e4b5d9a0f8e6a007",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/PR_BACKLOG.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PR_BODY.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "002ca414427092bb91093a67040732d4d90f2b03",
+      "sha256": "c82fe034e1e888402d9d129d67ffd8bd792a702155e0a056b08a95105e0632d8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/PR_BODY.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PUBLICATION_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "eb73e81a9eb60b004c444c170be9a18985063c17",
+      "sha256": "ad44a7f9c09acbfa67389d9966e10ada2d04544dac5d7c2cafae1416d6a6195b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/PUBLICATION_RECEIPT.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7d6e2bfb030325d59d5c40aec06168e67ef9bcb0",
+      "sha256": "c91244209d93fcd90dabd030b1a13160147023ac7d85abb23732eb6fb3dc698e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/REVIEW_HISTORY.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b46d5287362b9ec23d0a48027651179daa96cad7",
+      "sha256": "8192e1093cca8ada6dab7ad0b0965ddd8893773dd9a78143ef130756303653cf",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/REVIEW_HISTORY.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "26901ed338135ebc63f8a5460b359f6806ab6d2c",
+      "sha256": "c767db6fb56d572eea8d228242cce084535b6df956dac254e4305928f5cae753",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/ROUTE_PORTFOLIO.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "1628be0a7356bb020629692ef5fa58ec60b8ddc5",
+      "sha256": "f499d63dbbc83bc45711b29d6cde40e649473c07094238d621410b941ad451a2",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/ROUTE_PORTFOLIO.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/SCOPED_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "810842dde96eb2b3c8a5cad4870bf8799ea71a46",
+      "sha256": "c77bf86c1a91eecdf9c0273ad1be822833ee4e5b30b36ea268e97813128ef8af",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/SCOPED_VALIDATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/STAGING_VALIDATION.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "4aa52932c998df5b144d8b5ffedb9a90e6630fe2",
+      "sha256": "66199a6f29a96b66bc0596b33c7caca643b6545001c9008e3a039837284377d7",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/STAGING_VALIDATION.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/STATE.yaml",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2b6e96395ccbbaee40cd32a5715600ca88c5c1fe",
+      "sha256": "e871d376ad1c243699652b85db0a0953b97f9f4efcacc86447dc0f5e8545d8b0",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/STATE.yaml",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/STRICT_LINT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "5a6c52b2d1e84940a9d4f043f09663a0781cf435",
+      "sha256": "935e02d95fb1fcbee0912b2e321b8d9b0a7d0843605c79810adb84f44b2da7d5",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/STRICT_LINT.log",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/TRACE_GATE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "ccd31b719d8f2f5bb2c774be8bc1d42e8920145f",
+      "sha256": "b964d1e782f43b0a77c3c17c0decda06784bfb1b7858ed6318fc80da14dd7fb5",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/TRACE_GATE.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "7316aef5f35b490e597b043a6d9d8b3ba47113ca",
+      "sha256": "6074b45e3893e7812f81553dab24a16d726df91f90fdb2f423b2133a1bfd4da2",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_READINESS.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "1ef7720210e483b4422e57b3679fdb83353ce625",
+      "sha256": "d9ac5cb05210923ffc514b35da8bdff64c80e28e0b7082520b208c0094715679",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_READINESS.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_STRICT.log",
+      "change": "A",
+      "mode": "100644",
+      "blob": "ba57e383d75a311708b9db11ead2f961997c8f59",
+      "sha256": "daa0b99a23fc881c6db470bbceaf2fe6870cf77a3bdf8c72bbf576f4b4f33a58",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_STRICT.log",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "fe1e301a94b5e9aa374b1d0a92b2a0621e34e513",
+      "sha256": "1c2466e03238ba3bc7569038da56e5535b9290da51a533551450ad7bea080832",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/DIFF_ENCODING_RECEIPT.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "645393d311b9002de15489c45d4ad47698081f7e",
+      "sha256": "f61c5fd0e2da4f7a6aae1ba3bdb07716bce449abcc5b95e3b7f86a26ec27d9ff",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/DIFF_ENCODING_RECEIPT.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "bb95ada1b59b4aa4ba3518e193e87a03c880b683",
+      "sha256": "6e08e878a51b908e35eb8f13bc6b25579e6486a8969414d83aff0764b391a106",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF.txt",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF_ORIGINAL.base64",
+      "change": "A",
+      "mode": "100644",
+      "blob": "36c8afd66747a5d8bb6fe86037ec662f3ad9da10",
+      "sha256": "8033e321b8c0b1b971ccccfe8e596d8ea9e577a48ce42a14db7a113dbdc335f1",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF_ORIGINAL.base64",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "3e869ab7c6c37afc9f5c234ac536b5f2621a17ab",
+      "sha256": "00fba6cd601807f7aaaea25119b80561bc760945700c3db4ef182ff8eab58da0",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF_REVIEW.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "ed836900280d444168944fb2fe5dfe2e1bbd7bd7",
+      "sha256": "721889e76b351390a016374434ae3708c9d16e3d9bfe097333381bd1c08c070e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/DERIVATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/FINITE_CONTROLS_PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "9ebf12935573ca96fc141e986e6871883c8b2b24",
+      "sha256": "088f30d77e0a9adbbfd01a746811a3f74ccbb79e044d29f841912f8a8fd5c943",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/FINITE_CONTROLS_PREREGISTRATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PORT_RECEIPT.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "26f7d5813de3ce4f98e430c7753f7614462dfaec",
+      "sha256": "d0b57620c57ed913e231e9e38f2019501d0a7a437009e65228ba3f8f6175181d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PORT_RECEIPT.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "25268c4c02325e1b55b24e6553a89c6a3549e066",
+      "sha256": "6f93abe0f8f40de6470c7a988173957191b5feeac527fb2a906bf3408422b955",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PREREGISTRATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PRIMARY_SELECTION_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "dc0be1e0a56e3ae1957c235cb03fe210935d8c3c",
+      "sha256": "57ff99a439e71bc59db8bdf0dff60ee941cc077a60d6fd3a9271ea6130815dbb",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PRIMARY_SELECTION_REVIEW.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/ROOT_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "aeb9680b0a65e2e147e8a42a0fa6425c7204f771",
+      "sha256": "d6efd4247157eb9375fb66217e975365054becab9c85951eda900d3d4e873928",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/ROOT_REVIEW.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "421be811f646029f7ce8955d8d1cdca0e5962e78",
+      "sha256": "9f27c074f9ad40807bea6e9dbec2f5cbb6c69acbec0462819bcc1d4b4702332d",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/check.py",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/native_canonical_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "fbf67268b2673fa61f7fcd7f6d8d7b419effbf81",
+      "sha256": "1dc2f0b32f76bda38f05b98232e70c030619487b30f0ca785b3913e3d411efc6",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/native_canonical_result.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/native_canonical_stdout.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c99f44459b5cf32a3bb30038c5ba9d036adf528b",
+      "sha256": "a795676a78838e79b857c47e42f661c0df0667077a873bc61a3beb14f9958e06",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/native_canonical_stdout.txt",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/primary_canonical_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "74e545f954fbd90f5150e91fc2a46fc6c96fca23",
+      "sha256": "ff5ce33b16fe7b190dfbbdc2a27e157abf052380a02cdb3102bbdd6a9adae378",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/primary_canonical_result.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/primary_canonical_stdout.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "faa97d6c40d73e3129f2ec41efc1418b56863458",
+      "sha256": "b33010ac6dcbff627ec4dfe53fd806d0e8e61aeb91951b76a0d00889f91ce1c5",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/primary_canonical_stdout.txt",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "78aacce84bd65c9fe4aac48e52f9fbaba62bb515",
+      "sha256": "3dae56cd0a5892bc11e99dc2b690bdc7bf3a18181c3bae2ba3a4328e3e7c290e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/result.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/BEFORE_HAAR_INDEX_FIX_check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "3792d703c6b9a6caf03cc1ce443c8bad0af3eea1",
+      "sha256": "879d3a03886989e8251caef0379ca6ce6617c9769af998cd5892de708a354e7b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/BEFORE_HAAR_INDEX_FIX_check.py",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/BEFORE_HAAR_INDEX_FIX_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "aceb6d129d36ec901b9f028e7d1731c2b55b7c44",
+      "sha256": "f5995b94940f115c7c9559aebd76987aaf902fff3eade4c51fca20e8002422c3",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/BEFORE_HAAR_INDEX_FIX_result.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "981b288642ce015c68202dc9ca5c28c9362e6470",
+      "sha256": "d632c8e8d95d41cb9fb6e0cb0a14dd9272cd3c27cd6ecb1718c092be832fd5e4",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/DERIVATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/FAILURES.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "fc30b27dd7410966434dc917793e4dca5ec1c430",
+      "sha256": "b1585c36d8837253e480771212e90b3c8b0b8a8eb283dc1ae22db9005f72a3b8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/FAILURES.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/HASHES.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "cf45f7fb6c4703f8c4446645e4e316640e1ce6a6",
+      "sha256": "0a815207ab4723094ab100bd122f6da4ae44ccb8fadaff5c5908f79607396913",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/HASHES.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/PERIODIC_SUPPLEMENT_PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "1f418340bb86f8f24f4e9ebe8ffd0844f1a148c0",
+      "sha256": "7a38b16fb0f21fe5c4d1c0fb6df848c9e5ed9aab390914ed4461e87efb39dbe8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/PERIODIC_SUPPLEMENT_PREREGISTRATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "50aa22afc85088b981a1cf7b5a56a5bb79fd7c63",
+      "sha256": "0371809ed3eea8705fa8cab0eb02c9def581b670f21de7bda47121638ce84516",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/PREREGISTRATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/TWO_FACE_SUPPLEMENT_PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "6066d5f366ae1dced36c0a9b7516e4bf49756e95",
+      "sha256": "1d4bc4a528a22f851b31b62ec833db19e9a6fccfce21e6ee45d937e0b751f28b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/TWO_FACE_SUPPLEMENT_PREREGISTRATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/check.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0ccc85252eb5dac0407e675fa4ce8b2a15f73787",
+      "sha256": "a8c295f03643c313e18f08ac9cff57b90e9a234484747dafcd60d069df490437",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/check.py",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "cb72e509bcb9dc805f148a0dd7ff277b956e8117",
+      "sha256": "a61b3d9f026f1d5e0ad17d4f61d7a06f58673851dbd8d6099e3e809812bb59d2",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/result.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary_marked_review.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "06517e7f745891c7cde65794b76c0d4e10b3184b",
+      "sha256": "07acf6f2d7c34c445f7c99dfa3caf97c888f61d3e247440437b93d2921d56ae6",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary_marked_review.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary_root_wording_diff_review.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "0a019c1db7736f611e0baf15bd52b7c84be7e501",
+      "sha256": "19d6f5d368652a98baed236208c1f1af1fbf7580c43438129cff5e7ccb4f4de6",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary_root_wording_diff_review.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/PREREGISTRATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "adadc7d9df194f46aee92fcd025d3a7651332184",
+      "sha256": "b1b93813efba09ddf20c58cac4104630696f509d09757f6c42566b560b60f6e1",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/PREREGISTRATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_DERIVATION.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "44635f0bda06789620dec0784e3746171bd4c75f",
+      "sha256": "c4194f075371af17bf32c9ebdc7195eb9605776973add31b1ebe4890fc6eb1a8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_DERIVATION.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_DERIVATION_BEFORE_WORDING_CLARIFICATIONS_3d2d8694.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2f99d00d18ced6c359c44de8dac151ef986f9cd5",
+      "sha256": "3d2d869494e39a844d904e664aaf20605c2420bab3d562d3b7f57a8ded7ee031",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_DERIVATION_BEFORE_WORDING_CLARIFICATIONS_3d2d8694.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_NATIVE_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "56722dcd7d2cf7ecc00cdaa30841eb695be4da61",
+      "sha256": "4adc34aa1c1aa12c809f9343f27c67d5427e1b8faf88fcdcdcd075d696b7de8e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_NATIVE_REVIEW.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_PRIMARY_SELECTION_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "9f529cfe123a614b48ebec492a0eeb8660aa5762",
+      "sha256": "c98d415888b7747310f60ad07ae80b741b4ccc04c76bf5b0a4941706bce03d6c",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_PRIMARY_SELECTION_REVIEW.md",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/native_canonical_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "fbf67268b2673fa61f7fcd7f6d8d7b419effbf81",
+      "sha256": "1dc2f0b32f76bda38f05b98232e70c030619487b30f0ca785b3913e3d411efc6",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/native_canonical_result.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/native_canonical_stdout.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c99f44459b5cf32a3bb30038c5ba9d036adf528b",
+      "sha256": "a795676a78838e79b857c47e42f661c0df0667077a873bc61a3beb14f9958e06",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/native_canonical_stdout.txt",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/primary_canonical_result.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "74e545f954fbd90f5150e91fc2a46fc6c96fca23",
+      "sha256": "ff5ce33b16fe7b190dfbbdc2a27e157abf052380a02cdb3102bbdd6a9adae378",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/primary_canonical_result.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/primary_canonical_stdout.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "faa97d6c40d73e3129f2ec41efc1418b56863458",
+      "sha256": "b33010ac6dcbff627ec4dfe53fd806d0e8e61aeb91951b76a0d00889f91ce1c5",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/primary_canonical_stdout.txt",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/validated_claims_before_generated_cleanup.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "09d75a8fc1945f0743e0c544313873080baa683c",
+      "sha256": "eb287af0d52c8b41e4467464c400d452dc46a882e80f64f2e12e7d85a3115970",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/validated_claims_before_generated_cleanup.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-loop-area-20260907/validated_readiness_before_generated_cleanup.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "55b2382b5ee3acf52edd40a3a6830205916aec56",
+      "sha256": "aad5ff291d04ccad1f554026a0c5d37bf481111bf443705fba5c31f8d676de65",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/.claude/science/physics-loops/spatial-loop-area-20260907/validated_readiness_before_generated_cleanup.json",
+      "disposition": "Preserve exact historical proof/control/provenance. Current complete canonical proof consumed; alternate root marked proof also read and valid, stronger reserve C0=2ce\u00b2. Historical audit/review labels not authority."
+    },
+    {
+      "path": "docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "12fa0622d93182fec15f9e13fd43fda02899e9a1",
+      "sha256": "315ec680293c1d646860044d3ce1ff51ef8efe0a5975430d110a167e96f28b72",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "disposition": "Retain complete reviewed mathematical source; findings-scoped packaging repairs pending."
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "change": "M",
+      "mode": "100644",
+      "blob": "37b8b88638995a39a647530691dd752b3116522d",
+      "sha256": "d809649456c6573e71d6defda6450d68097189140ba7214556e9937d837b6701",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/docs/audit/data/citation_graph_manifest.json",
+      "disposition": "Generated citation authority excluded; preserve exact original historical recovery."
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "change": "M",
+      "mode": "100755",
+      "blob": "23210dd52b3c59015854e98041e4bf8355c8e297",
+      "sha256": "fdd67c9853781f668b10ae72608b55d824f03682b00cffaf64430bd1c969517e",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/docs/audit/scripts/build_citation_graph.py",
+      "disposition": "Port only new claim-local helper mapping onto current main; preserve all current mappings including pending8025."
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c55547304a63db09e71f2aece5bf7efe02fc8980",
+      "sha256": "b543c14f6fe4bdd8e089f3c737b6e928739a0b202b4ff0cca49bc8fdecf65bee",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/logs/runner-cache/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.txt",
+      "disposition": "Preserve historical actual run; replace canonical cache only with authorized fresh corrected-source capture."
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.txt",
+      "change": "A",
+      "mode": "100644",
+      "blob": "631b7e2096d0b27bb1ee51ff23e409e95e5fad82",
+      "sha256": "c560e0ccb8dea5228f843d990019c9d4a27328bfbdfa5dec588f94c8bfff0c73",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/logs/runner-cache/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.txt",
+      "disposition": "Preserve historical actual run; replace canonical cache only with authorized fresh corrected-source capture."
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "change": "M",
+      "mode": "100644",
+      "blob": "a4a8a249dd43dd237be57b44984ab9fd620e3f98",
+      "sha256": "bcff3948629cc65e3bef5d35c5f6dcfc6d6848324833712146de9953ca814066",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/scripts/audit_packet_script_deps.py",
+      "disposition": "Port only new claim-local helper mapping onto current main; preserve all current mappings including pending8025."
+    },
+    {
+      "path": "scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "eeef252518d9b45439e96121e8978a27c3a37978",
+      "sha256": "f171aa356f6e7d07992dc28c48f2ee96c65873c709d1d22c0f3dbc1506070d69",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py",
+      "disposition": "Retain complete reviewed mathematical source; findings-scoped packaging repairs pending."
+    },
+    {
+      "path": "scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py",
+      "change": "A",
+      "mode": "100644",
+      "blob": "19e47cd56300e47f323f63f8e3180a01aa947dbb",
+      "sha256": "d80f58cfe852b06ab3c298fe29d3784f6371576710806a5488363c642a1645cf",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8026-originals/scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py",
+      "disposition": "Retain complete reviewed mathematical source; findings-scoped packaging repairs pending."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "repair": "Both runners need literal own-note plus two actual parent proof-identity AUDIT_INPUT_PATHS; no runtime prose read invented."
+    },
+    {
+      "id": "F2",
+      "repair": "Canonical TOTAL PASS=19/33 FAIL=0 and separate cache links; each total includes one resource check. Neither runner executes sibling."
+    },
+    {
+      "id": "F3",
+      "repair": "Replace .claude live link by durable original recovery; label original lane timing/preregistration/review outcomes explicitly historical, not current evidence."
+    },
+    {
+      "id": "F4",
+      "repair": "Port honest N1\u2013N8 applicability; preserve analytical all-order selection and specific periodic/adverse counterexamples without asserting blanket negative certification; N5 finite controls are not cluster proof."
+    }
+  ],
+  "proof_review": {
+    "complete": "Canonical both parts, both runners, native/primary/root proof variants and unique historical reviews/preregistrations/failed checker consumed. Mathematical result sound within explicit imports and geometry.",
+    "mapping": "Whole four-cell block unique vacuum and gap1, periodic multiplicity4 yields aK; perturbation norm3|u|. Full local Hilbert dimensions controlled by norms.",
+    "complex": "Yarotsky Lemmas1\u20134 and marked p11 support complex bounded perturbation estimates; connected padded perimeter permits exponential decorated animal count; weighted KP pinned bound with q<=1/4 gives C0=2ce and normal time/volume limit. Same-z sandwich and zero-free partition log avoid conjugation and spectral-isolation overclaim.",
+    "selection": "Independent link Z3 charges in Dyson/Riesz coefficients, projected chain map, finite plane uniqueness and torus constant sheets yield order>=A under half-area/nonwrapping. Repeated insertions and nonplanar faces covered.",
+    "coefficients": "Exact free energies16/24, Haar sharedlink1/3, I=2/9, oneface1/144 and twoface7/124416. Open geometry explicit. Checker tautological tensor comparison disclosed and not treated as independent Haar proof; new reviewer exact first-moment ensemble control independently confirms contraction.",
+    "no_go": "Quantitative small-coupling bound plus exact perturbative selection theorem and explicit counterexamples; no universal failure/physical confinement theorem. Honest applicability does not certify a general negative packet.",
+    "limitations": "Existential u0/C0 only; supplied Hamiltonian, selected periodic thermodynamic limit; no temporal potential, lower bound, arbitrary-coupling, continuum or axiom selection."
+  },
+  "source_input_context_hashes": {
+    "parents": {
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52"
+    },
+    "authority": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "docs/repo/DEFERRED_DECISIONS.md": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "docs/repo/ACTIVE_REVIEW_QUEUE.md": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "docs/audit/data/premise_decision_history.json": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "docs/ai_methodology/skills/review-loop/SKILL.md": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "docs/ai_methodology/skills/review-loop/references/LANDING.md": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7",
+      "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095",
+      "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md": "6dd105641721dc9b5ca47ed69961e912eec3dc2dae3386cb4a72f4e2ee7ba7e0",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "docs/repo/CONTROLLED_VOCABULARY.md": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "docs/CANONICAL_HARNESS_INDEX.md": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "docs/audit/README.md": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "docs/ai_methodology/skills/no-go-discipline/SKILL.md": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_ALL_COUPLING_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": "e42e8bd38e71c86ae485dbe50585b8c6a2940e349c848a4ed30bcfd47a114c70",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md": "c92586ae507a05f6cf0a38a304951f56c0f9af796ee5b3f64d18e6dd914c11cb",
+      "docs/GAUGE_WILSON_CUBE_SLAB_NONLINEAR_SADDLE_DILATED_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md": "21eafab0abb8168e245869b8ffcb0f41823039e67a8843a60877d77f9ce98f32",
+      "docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md": "6323745b5142cae7d054dc5be6eed6a8706abedfcaf616d9a108b3888121ccaf",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "docs/GAUGE_WILSON_FULL_CUBE_PHYSICAL_TRANSFER_GEOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md": "4f8972c99f4b3b86cf47a430abc242de1219297f9abf49932338560dc0a37bbf",
+      "docs/GAUGE_WILSON_FULL_CUBE_SIMULTANEOUS_TRANSFER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md": "41f0183d5bcab6704c5addbbde117e91ab036511ba05d436b4378cb146470db4",
+      "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py": "9fd599c5040f137ede2ffcf5d219534b8673c9deda086d784b90753b587178ca",
+      "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py": "0cd413d2737d0cc9ee7f4000d682588138b5ff3d2c1de693c854455b8e6129eb",
+      "scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py": "ce62b18819830a5aeb33d4e394006e5b4d9d7159001ebb71b0a440c436748ae5",
+      "scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py": "6c67ca2933d92a18be58872ebb2d47ed55e8eb83f1d2de335cd1510b9f7fb9f4",
+      "scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py": "d0a56e3d6e2dc16a7ee0914588e8f3fc934dc2023433bd3e7f334cf5f90eb19a",
+      "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py": "f58b22c7315cb36eca14cd352e10150b41dc930765c0c2570d61d4c061e0f836",
+      "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py": "3df2d3e77afe46c188700d41cf6bf515f38b828ffa19564bd2c8843e073398b5",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+      "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+      "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+      "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    }
+  },
+  "authority_reuse": {
+    "path": "/private/tmp/review-drain-20260915/drain8026-authority-reuse.json",
+    "sha256": "0438223842b03e724c6f3601337e3f044aaefdff8a23f4e2ad9f868cdf503c67",
+    "changed": {}
+  },
+  "independent_controls": {
+    "program": "/private/tmp/review-drain-20260915/check8026/control.py",
+    "program_sha256": "baa8a871ed4c18769dd97bf12f51de5f5f62b83de7cc52995338d3ad6864c39c",
+    "receipt": "/private/tmp/review-drain-20260915/check8026/control.json",
+    "receipt_sha256": "41d9b43f771e07d92b0e3585a07c3456863952c08af00543dec56fbec59ae154",
+    "PASS": 103,
+    "FAIL": 0,
+    "scope": "Exhaustive3x3 F3 fillings, independently averaged first Haar moment, rational coefficients and KP reserve. No primary/helper imports or runs."
+  },
+  "external_mathematics": [
+    {
+      "paper": "yarotsky",
+      "pdf_path": "/private/tmp/review-drain-20260915/check8026/yarotsky.pdf",
+      "pdf_sha256": "f0423f368b45e5583911b860c932ba2c2e5564c777b6d5cf6dcf12ac1edcbe39",
+      "text_sha256": "4ef56f3a97f95c40a157149ef002642ef8959f8f03ca4f7f1159d030d58238ef"
+    },
+    {
+      "paper": "fernandez-procacci",
+      "pdf_path": "/private/tmp/review-drain-20260915/check8026/fernandez-procacci.pdf",
+      "pdf_sha256": "12cccb408b6810f1808f8ccde3f418f37020a2edd4b4bc5b86217d5ceccb0b3a",
+      "text_sha256": "aefe9cf139e60ba4a9ee4ce54982b6e87e9675322ec9b325ef42dbaa42319bb7"
+    }
+  ],
+  "resource_plan": {
+    "two_sequential_captures": true,
+    "timeout_each_seconds": 180,
+    "rss_each_bytes": 188743680,
+    "expected_totals": [
+      19,
+      33
+    ],
+    "cost": "32x16 F3 elimination/192faces and finite20edge11face degree0..2 census; no heavy simulation or external cluster execution.",
+    "capture_pending_cold_confirmation": true
+  },
+  "current_main_preservation": "No reviewer source edits. New canonical paths absent on main; two existing mappings require additive merges, generatedmanifest excluded. Originalparent8025 is stack ancestry, not mathematical premise.",
+  "closure": "No unique substantive mathematical claim identified for deferral; all87 original versions must be retained. This is not final source acceptance before repairs/captures.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8026-original-inventory.json",
+      "sha256": "d5cbb39923b062929002b5801bf851e89b928b5be8e5ee9d5aab0eedbaee388f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8026-review-fetch.json",
+      "sha256": "0d90ae3e0781fe9f0c6d4f6c045db88e2d853189809035079ac82190c42de4a5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8026-review-acquire.json",
+      "sha256": "8e1c5b12bcf84f7c0d2fa83da69eb166a2fd48ef323bcebfe6236b8bf90bf1ce"
+    }
+  ],
+  "no_source_edits": true
+}

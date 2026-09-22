@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-clumping-line-p12",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 10 1 2 2 0.1 24 3000 1",
+ "seed": 56962,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6af1b8bf",
+ "started_utc": "20260922T060242Z",
+ "elapsed_s": 110.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=10.0 q=1.0 r=2.0 c=2.0000 rho=0.1 L=24 nbrs=4.254 nbrs_over_random=7.090 aligned=0.730 S=2.66 accept=0.111 records=1396 seconds=110"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: records that move. Where do records clump on the line (p,1,2)? First look (density 0.3): onset near p = 10 at the neutral scale, between 5 and 6 at scale 1. The table over p, scale and density is the map. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 132 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "d3288fb0d96f68285e6b64686d8e4eb560331866762671020872107a96050b9d",
+ "stdout_tail": "weights (10.0,1.0,2.0) scale c=2.0000 (2) rho=0.1 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=0.600 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 1.331 0.260 0.366 0.12\n     2 1.448 0.291 0.283 0.15\n     4 1.595 0.367 0.246 0.16\n     9 1.860 0.390 0.222 0.18\n    18 2.052 0.425 0.195 0.14\n    38 2.249 0.462 0.198 0.21\n    79 2.613 0.504 0.187 0.42\n   163 2.928 0.523 0.182 0.70\n   338 3.352 0.583 0.144 0.76\n   700 3.768 0.634 0.121 1.14\n  1449 4.086 0.711 0.105 2.15\n  3000 4.232 0.751 0.123 2.69\nSUMMARY: p=10.0 q=1.0 r=2.0 c=2.0000 rho=0.1 L=24 nbrs=4.254 nbrs_over_random=7.090 aligned=0.730 S=2.66 accept=0.111 records=1396 seconds=110\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T060432Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "task": "P:8611",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block76-the-fi",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8611",
+ "pr": 8611,
+ "branch": "physics-loop/admissibility-induced-law-block76-the-filled-seas-energy-as-the-ledgers-field-term-20260922",
+ "git_sha": "b48514e6",
+ "started_utc": "20260922T182933Z",
+ "elapsed_s": 403.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_filled_seas_energy_as_the_ledgers_field_term_chessboard_clocks_invisible_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=13 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "69076b17d2490462d53977a799ef789cd3d44077019f919653af3179198955b5",
+ "stdout_tail": "PR #8611: physics-loop: admissibility induced-law block 76 - the filled sea's energy as the ledger's field term: chessboard of clocks invisible; the sea induces a clock stiffness, not the curvature member\nbranch physics-loop/admissibility-induced-law-block76-the-filled-seas-energy-as-the-ledgers-field-term-20260922 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_filled_seas_energy_as_the_ledgers_field_term_chessboard_clocks_invisible_2026_09_22.py: rc=0 PASS=13 FAIL=0\n   mutation chessboard_clocks_are_visible: expected B observed B ok\n   mutation reach_two_sea_is_odd_in_the_strain: expected B observed B ok\n   mutation two_record_energy_is_not_additive: expected C observed C ok\n   mutation hole_sources_with_the_seas_sign: expected C observed C ok\n   mutation volume_term_makes_clocks_slow: expected D observed D ok\n   mutation chessboard_mode_is_fixed_by_the_sea: expected D observed D ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T183617Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

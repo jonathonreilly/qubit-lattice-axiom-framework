@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_dm_pmns_native_current_last_mile_reduction_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_pmns_native_current_last_mile_reduction_2026_04_21.py",
+ "seed": 1749,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b48514e6",
+ "started_utc": "20260922T182909Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=17 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8ef2dc154e89cd1d00ebf0ef8b1cb070583b19cc0384767c1f1e9c062e257f72",
+ "stdout_tail": "he nontrivial 2-real reduced-carrier datum)\n  [PASS] The later affine current-coordinate theorem isolates one additional real physical scalar beyond current activation  (the physical affine chart still needed one extra sole-axiom scalar law at that stage)\n  [PASS] The later graded-current closure theorem closes that remaining affine scalar exactly  (the ordered-chain companion current completes the physical affine/source pair)\n  [PASS] So this script is a real reduced-carrier reduction but not full strict/native DM closure  (current activation is a subtarget, not the whole physical last mile)\n\n========================================================================================\nRESULT\n========================================================================================\n  Exact reduced-carrier DM last-mile reduction:\n    - no separate target-surface A-BCC branch-choice residue remains\n    - the remaining reduced-carrier PMNS source datum is exactly 2-real\n    - in native current language that reduced datum is one complex current J_chi\n    - the current retained sole-axiom bank still sets J_chi = 0\n\n  So the reduced current-activation subtarget was exactly:\n  derive a sole-axiom law producing nonzero J_chi on the retained hw=1\n  response family.\n\n  The later affine sharpening theorem isolated one additional real\n  delta / Im(K12) law on the physical affine chart, and the later\n  ordered-chain graded-current closure theorem then closed it exactly.\n\nSUMMARY: PASS=17 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T182910Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=17 FAIL=1' vs cache 'SUMMARY: PASS=18 FAIL=0'"
+  ]
+ }
+}

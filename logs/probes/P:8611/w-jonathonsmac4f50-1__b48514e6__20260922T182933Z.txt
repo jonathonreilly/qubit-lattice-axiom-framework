@@ -1,0 +1,12 @@
+PR #8611: physics-loop: admissibility induced-law block 76 - the filled sea's energy as the ledger's field term: chessboard of clocks invisible; the sea induces a clock stiffness, not the curvature member
+branch physics-loop/admissibility-induced-law-block76-the-filled-seas-energy-as-the-ledgers-field-term-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_filled_seas_energy_as_the_ledgers_field_term_chessboard_clocks_invisible_2026_09_22.py: rc=0 PASS=13 FAIL=0
+   mutation chessboard_clocks_are_visible: expected B observed B ok
+   mutation reach_two_sea_is_odd_in_the_strain: expected B observed B ok
+   mutation two_record_energy_is_not_additive: expected C observed C ok
+   mutation hole_sources_with_the_seas_sign: expected C observed C ok
+   mutation volume_term_makes_clocks_slow: expected D observed D ok
+   mutation chessboard_mode_is_fixed_by_the_sea: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

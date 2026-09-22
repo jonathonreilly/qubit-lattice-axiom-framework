@@ -1,0 +1,19 @@
+{
+  "head": "ecf9c0986cf4fa73017856aa6582c22bc1dc7310",
+  "owner": "train59",
+  "archive": "train59-pool-validation-recovery.tar.gz",
+  "archive_sha256": "a0d2b54fda2dfdb43e7b1c1226512c40fc79b85366c371a846eb9c8ee124e5e6",
+  "paths": {
+    "docs/audit/AUDIT_LEDGER.md": "1c32b22492a0a0b82ac527c21ed19fbeb47fe54451605e2a6b88b92cc6d25de8",
+    "docs/audit/data/audit_ledger.json": "b3987b8681723e52b607011ba44fb07f3b4619784962a858c2779dbce1b7af21",
+    "docs/audit/data/audit_publication_lane.json": "0ed52541d717dd968137219093414817727b087ec596711dd46e49bd7d9b77fa",
+    "docs/audit/data/audit_queue.json": "9dd289065aab671966f271c4384dbc708bfd5539c62434ce206ae586a48abcca",
+    "docs/audit/data/citation_graph.json": "1d1fd2722b49889d80377035cd71b0fcd4712c57bf5115fc9cc43dfa0030caa7",
+    "docs/audit/data/ledger_cache_manifest.json": "f34beab0b14736ef9c22247f4183cdcaaa098772317ee8138486c5abfa131df0",
+    "docs/audit/data/publication_gap.json": "2315103e5bfa6ea47a66bae3cb74099678becd6575d78be073a3f89ea08958a6",
+    "docs/audit/data/runner_classification.json": "8ca6dc6413b9bde8df34a8d49c8ea52349ac5d58df6a4ef79d45d039ff30812c",
+    "docs/audit/data/static_pipeline_checkpoint.json": "f1760a4ff96fce8c71057bf74cbe7c6015d7f04a3b5ab053c8966fc56843c686",
+    "docs/audit/data/static_pipeline_checkpoint.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "boundary": "Generated validation only; preserved decoded identities before releasing an exclusively owned landed checkout"
+}

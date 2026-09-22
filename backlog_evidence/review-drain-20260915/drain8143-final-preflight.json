@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8143-final",
+  "tree": "2fbd11876a72965458472a994181217af3165c08",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "full_domain_matrix_kernel_and_autonomous_projective_record_corridor_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8761,
+      "misses": 4438
+    },
+    "packet_imports": {
+      "hits": 8751,
+      "misses": 4436
+    },
+    "declared_inputs": {
+      "hits": 8787,
+      "misses": 4569
+    }
+  },
+  "record_sha256": "4df0bbb17bae0b71e830de88f307d5585be6f415a6aa6b07f1c3c0d62e2e9624",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

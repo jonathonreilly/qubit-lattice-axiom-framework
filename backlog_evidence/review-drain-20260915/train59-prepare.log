@@ -1,0 +1,47 @@
+[detached HEAD 0284f414b0] Preserve independently reviewed source unit PR8145
+ Date: Tue Sep 22 16:16:23 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 33 files changed, 4088 insertions(+), 5 deletions(-)
+ create mode 100644 docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-CONFORMANCE.md
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-HANDOFF.md
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-MUTATION_CHECKS.json
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-TRACE_GATE.md
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-VALIDATION.json
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-runner-cache-carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-runner-cache-finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-runner-cache-finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-runner-cache-free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8145/8140-runner-cache-quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8145/8144-runner-cache-finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-CONFORMANCE.md
+ create mode 100644 docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-HANDOFF.md
+ create mode 100644 docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-MUTATION_CHECKS.json
+ create mode 100644 docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-VALIDATION.json
+ create mode 100644 docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-CONFORMANCE.md
+ create mode 100644 docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-HANDOFF.md
+ create mode 100644 docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-MUTATION_CHECKS.json
+ create mode 100644 docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-VALIDATION.json
+ create mode 100644 docs/work_history/review_loop/pr8145/8145-runner-cache-finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8145/README.md
+ create mode 100644 docs/work_history/review_loop/pr8145/original-path-map.json
+ create mode 100644 logs/runner-cache/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.txt
+ create mode 100644 logs/runner-cache/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.txt
+ create mode 100644 logs/runner-cache/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt
+ create mode 100644 scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py
+ create mode 100644 scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py
+ create mode 100644 scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py
+FROZEN 0284f414b0f753a284904cf982f93972150a7d6a sources 33 inputs 50 notes 5

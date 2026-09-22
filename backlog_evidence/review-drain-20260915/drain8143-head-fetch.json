@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "6327004eaaecd83fffca5e2362db6a042a0707a5",
+  "fetched_ref": "refs/review-loop/fetched/8143-6244181816424cc38bf3594c614e1be2",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/full-domain-projective-corridor-20260915",
+    "headRefOid": "6327004eaaecd83fffca5e2362db6a042a0707a5",
+    "isDraft": false,
+    "number": 8143,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

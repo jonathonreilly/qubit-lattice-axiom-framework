@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 425,
+  "elapsed_sec": 0.14603987499140203,
+  "scope": [
+    "whole finite frontier typed-geometry independent implementation L1..8",
+    "eight rational rank-one histories via amplitudes versus sandwiches",
+    "denominator and bounded activation identities"
+  ],
+  "primary_imported_or_executed": false
+}

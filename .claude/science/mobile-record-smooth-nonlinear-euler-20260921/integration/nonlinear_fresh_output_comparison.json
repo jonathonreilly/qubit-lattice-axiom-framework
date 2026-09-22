@@ -1,0 +1,37 @@
+{
+  "author_result_sha256": "559fad6d0452555845e598d0c6726a08995c0a5c8fcc921bde617e4b9ddf4e3f",
+  "rows": [
+    {
+      "suite": "dimer_nonlinear_flux_check.py",
+      "groups": [
+        "moment_fluxes",
+        "entropy_symmetrizer",
+        "optical_diagnostic",
+        "actual_initial_drift"
+      ],
+      "numeric_quantities": 142,
+      "complete_group_values_exact": true
+    },
+    {
+      "suite": "dimer_smooth_nonlinear_check.py",
+      "groups": [
+        "blocks",
+        "fixed_sector",
+        "entropy_algebra"
+      ],
+      "numeric_quantities": 208,
+      "complete_group_values_exact": true
+    },
+    {
+      "suite": "dimer_moving_nonlinear_check.py",
+      "groups": [
+        "geometry_entropy",
+        "owner_blocks",
+        "exponential_constants"
+      ],
+      "numeric_quantities": 306,
+      "complete_group_values_exact": true
+    }
+  ],
+  "total_numeric_quantities": 656
+}

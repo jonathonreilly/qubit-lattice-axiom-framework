@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-09-21T23:17:37.954395+00:00",
+  "rows": [
+    {
+      "check": "vocab",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "scripts/vocab_lint.py",
+        "--report-only",
+        "--report-path",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/nonlinear_vocab.json",
+        "docs/MOBILE_RECORDS_SMOOTH_NONLINEAR_EULER_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "pipeline",
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh",
+        "--stage-citation-manifest"
+      ],
+      "exit_code": 1
+    }
+  ]
+}

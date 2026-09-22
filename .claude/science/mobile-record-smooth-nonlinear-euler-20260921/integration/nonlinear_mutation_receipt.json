@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-09-21T23:58:42.963434+00:00",
+  "rows": [
+    {
+      "name": "omit_nonlinear_population_flux",
+      "exit_code": 1
+    },
+    {
+      "name": "omit_entropy_flux_half_M",
+      "exit_code": 1
+    },
+    {
+      "name": "double_block_exponential_coefficient",
+      "exit_code": 1
+    },
+    {
+      "name": "omit_geometry_marginal_entropy_derivative",
+      "exit_code": 1
+    },
+    {
+      "name": "omit_owner_boundary_coverage",
+      "exit_code": 1
+    }
+  ]
+}

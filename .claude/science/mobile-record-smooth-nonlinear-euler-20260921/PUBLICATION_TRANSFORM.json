@@ -1,0 +1,31 @@
+{
+  "note": "docs/MOBILE_RECORDS_SMOOTH_NONLINEAR_EULER_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+  "parts": [
+    {
+      "primary": "DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md",
+      "source_sha256": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69",
+      "published_body_sha256": "a8846732e0c3c5488435091414d4e50d27519bb59690bc5f43239b1dab99b34a"
+    },
+    {
+      "primary": "DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "source_sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78",
+      "published_body_sha256": "fe5d4c1630c294fba42c682c201bd02c6a220b0d2b352dac9153ced191ef72ba"
+    },
+    {
+      "primary": "DIMER_SMOOTH_NONLINEAR_EULER_LIMIT.md",
+      "source_sha256": "dbd07eca8db76c58f672791aa0f20b8483886352d79638931702306518b829b4",
+      "published_body_sha256": "14f2b283a869ac9db2974a69bc9fcdca7121c5173508204742bb7073f9e35ebd"
+    },
+    {
+      "primary": "DIMER_MOVING_GEOMETRY_SMOOTH_NONLINEAR_EULER.md",
+      "source_sha256": "939c87d2d4688e3f4e66550d3a54e024966866b8744db80d4befd3f1d68317d1",
+      "published_body_sha256": "8509b3ceb4971643cd46bce85e209225247c7380576aacd758920df1905bebe3"
+    },
+    {
+      "primary": "DIMER_MOVING_NONLINEAR_QUANTITATIVE_ADDENDUM.md",
+      "source_sha256": "0671866c54f6f1865e3c63b8b4377800c85bf27303b7f28eca8a7d425b76c1ed",
+      "published_body_sha256": "b57ce825342bebdf92ccf48bb9af73d45576d5b9763e893d3e054a39163a1510"
+    }
+  ],
+  "change": "Complete arguments preserved; only titles and heading levels transformed."
+}

@@ -1,0 +1,5 @@
+PASS: declared_sources_and_conditional_scope
+PASS: dimer_nonlinear_flux_check.py: 4 complete control groups
+PASS: dimer_smooth_nonlinear_check.py: 3 complete control groups
+PASS: dimer_moving_nonlinear_check.py: 3 complete control groups
+TOTAL: PASS=11 FAIL=0

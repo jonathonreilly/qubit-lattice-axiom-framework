@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T23:30:01.433104+00:00",
+  "status": "Preserved three-proof fixed-winding publication candidate; not committed or published.",
+  "reason": "A newly authored moving-geometry extension and quantitative corollary can make this one coherent final nonlinear milestone, pending independent review.",
+  "metadata_finding": "Current graph contains one added edge (minimal_axioms), despite upstream frontmatter naming the earlier wave note. The assembler incorrectly anticipated two. Add explicit dependency links and derive final graph delta from actual graph before publication. No proof or author control failed."
+}

@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/mobile_records_smooth_nonlinear_euler_2026_09_21.py
+runner_sha256: 5a4960136b67ce43ef27ee794da243e806f0e065e19c8b002778e2ccc4a87be7
+input_fingerprint_sha256: 059e766a2c71e9ef6424a2c855b9703fd1da73c63bed8d751807e7de3b6f88d6
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 4.90
+status: ok
+----- stdout -----
+PASS: declared_sources_and_conditional_scope
+PASS: dimer_nonlinear_flux_check.py: 4 complete control groups
+PASS: dimer_smooth_nonlinear_check.py: 3 complete control groups
+PASS: dimer_moving_nonlinear_check.py: 3 complete control groups
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

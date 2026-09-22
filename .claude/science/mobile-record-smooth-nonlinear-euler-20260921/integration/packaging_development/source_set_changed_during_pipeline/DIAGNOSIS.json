@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T23:20:49.987034+00:00",
+  "failure": "Pipeline exited1: full-build source inputs changed during graph generation.",
+  "cause": "Independent review capsule/report and verifier packaging overlapped the source-inventory phase. Mathematical primaries and runner inputs remained unchanged.",
+  "repair": "Freeze publication sources; reuse fresh author cache and rerun pipeline plus strict lint sequentially. No scientific assertion weakened."
+}

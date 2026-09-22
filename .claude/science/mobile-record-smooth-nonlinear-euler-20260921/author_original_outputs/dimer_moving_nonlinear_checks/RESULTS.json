@@ -1,0 +1,569 @@
+{
+  "created_utc": "2026-09-21T23:24:39.791452+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_MOVING_GEOMETRY_SMOOTH_NONLINEAR_EULER.md",
+      "bytes": 14160,
+      "sha256": "939c87d2d4688e3f4e66550d3a54e024966866b8744db80d4befd3f1d68317d1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_SMOOTH_NONLINEAR_EULER_LIMIT.md",
+      "bytes": 13723,
+      "sha256": "dbd07eca8db76c58f672791aa0f20b8483886352d79638931702306518b829b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md",
+      "bytes": 7787,
+      "sha256": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md",
+      "bytes": 13647,
+      "sha256": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_check.py",
+      "bytes": 8156,
+      "sha256": "2000fcf382ab9eeb833d8d67d608776017a37c9848c29263dee32c06f5038052"
+    }
+  ],
+  "geometry_entropy": {
+    "states": 392,
+    "geometry_marginal": [
+      0.9,
+      0.1
+    ],
+    "rate": 0.3333333333333333,
+    "conditional_entropy_derivative": -0.27684334666000965,
+    "joint_uniform_entropy_derivative": -1.44869645457266,
+    "geometry_uniform_entropy_derivative": -1.1718531079126504,
+    "before": 0.18509111387814367,
+    "after_Euler_channel": 0.1848160472126814,
+    "reference_evolution_error": 4.336808689942018e-19,
+    "color_dependent_countercontrol": {
+      "reference_derivative_residual": 0.005053449951409135,
+      "conditional_entropy_after": 2.0821624050196063e-07
+    },
+    "canonical": [
+      {
+        "colors": [
+          0,
+          0
+        ],
+        "arrangements": 1,
+        "exact_difference_sum": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "colors": [
+          0,
+          7
+        ],
+        "arrangements": 2,
+        "exact_difference_sum": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "colors": [
+          3,
+          12
+        ],
+        "arrangements": 2,
+        "exact_difference_sum": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "owner_blocks": [
+    {
+      "N": 12,
+      "L": 4,
+      "accepted_geometry_flips": 0,
+      "all_origins": 1728,
+      "minimum_block_count": 40,
+      "maximum_block_count": 40,
+      "exact_anchor_coverage": 80,
+      "exact_physical_edge_coverage": 48,
+      "selected": [
+        {
+          "origin": 0,
+          "block_count": 40,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "six_image_boundary_counts": [
+            0,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        },
+        {
+          "origin": 246,
+          "block_count": 40,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "six_image_boundary_counts": [
+            0,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        },
+        {
+          "origin": 576,
+          "block_count": 40,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "six_image_boundary_counts": [
+            0,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        },
+        {
+          "origin": 1727,
+          "block_count": 40,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "six_image_boundary_counts": [
+            0,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "N": 12,
+      "L": 4,
+      "accepted_geometry_flips": 1737,
+      "all_origins": 1728,
+      "minimum_block_count": 33,
+      "maximum_block_count": 47,
+      "exact_anchor_coverage": 80,
+      "exact_physical_edge_coverage": 48,
+      "selected": [
+        {
+          "origin": 0,
+          "block_count": 43,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              -2,
+              -6,
+              2
+            ],
+            [
+              7,
+              -1,
+              2
+            ],
+            [
+              -1,
+              1,
+              2
+            ]
+          ],
+          "six_image_boundary_counts": [
+            24,
+            28,
+            28,
+            28,
+            24,
+            28
+          ]
+        },
+        {
+          "origin": 246,
+          "block_count": 41,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              0,
+              -2,
+              -1
+            ],
+            [
+              1,
+              2,
+              2
+            ]
+          ],
+          "six_image_boundary_counts": [
+            24,
+            24,
+            24,
+            24,
+            28,
+            22
+          ]
+        },
+        {
+          "origin": 576,
+          "block_count": 40,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              0,
+              -9,
+              1
+            ],
+            [
+              9,
+              -2,
+              1
+            ],
+            [
+              -3,
+              -3,
+              2
+            ]
+          ],
+          "six_image_boundary_counts": [
+            26,
+            26,
+            26,
+            18,
+            24,
+            22
+          ]
+        },
+        {
+          "origin": 1727,
+          "block_count": 45,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              -4,
+              -3,
+              7
+            ],
+            [
+              2,
+              -2,
+              3
+            ],
+            [
+              -2,
+              -5,
+              6
+            ]
+          ],
+          "six_image_boundary_counts": [
+            28,
+            24,
+            26,
+            32,
+            34,
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "N": 16,
+      "L": 6,
+      "accepted_geometry_flips": 4115,
+      "all_origins": 4096,
+      "minimum_block_count": 113,
+      "maximum_block_count": 140,
+      "exact_anchor_coverage": 252,
+      "exact_physical_edge_coverage": 180,
+      "selected": [
+        {
+          "origin": 0,
+          "block_count": 127,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              7,
+              4,
+              0
+            ],
+            [
+              10,
+              -1,
+              0
+            ],
+            [
+              -9,
+              5,
+              -2
+            ]
+          ],
+          "six_image_boundary_counts": [
+            66,
+            58,
+            56,
+            54,
+            48,
+            52
+          ]
+        },
+        {
+          "origin": 585,
+          "block_count": 124,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              7,
+              2,
+              0
+            ],
+            [
+              8,
+              1,
+              0
+            ],
+            [
+              -3,
+              1,
+              -6
+            ]
+          ],
+          "six_image_boundary_counts": [
+            60,
+            56,
+            52,
+            50,
+            48,
+            44
+          ]
+        },
+        {
+          "origin": 1365,
+          "block_count": 126,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              -4,
+              0,
+              -3
+            ],
+            [
+              3,
+              1,
+              2
+            ],
+            [
+              -1,
+              -1,
+              -5
+            ]
+          ],
+          "six_image_boundary_counts": [
+            56,
+            54,
+            54,
+            64,
+            46,
+            52
+          ]
+        },
+        {
+          "origin": 4095,
+          "block_count": 133,
+          "connected": true,
+          "twice_tensor_residual": [
+            [
+              -4,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              -6
+            ],
+            [
+              -6,
+              6,
+              -1
+            ]
+          ],
+          "six_image_boundary_counts": [
+            52,
+            54,
+            70,
+            58,
+            54,
+            66
+          ]
+        }
+      ]
+    }
+  ],
+  "exponential_constants": {
+    "alpha": "1/1792",
+    "rows": [
+      {
+        "L": 16,
+        "overlap_colors": 131072,
+        "overlap_degree_plus_one_bound": 42875,
+        "minimum_count": "2048",
+        "twice_alpha_chi": "1024/7",
+        "maximum_omega": "16/17"
+      },
+      {
+        "L": 18,
+        "overlap_colors": 186624,
+        "overlap_degree_plus_one_bound": 59319,
+        "minimum_count": "2916",
+        "twice_alpha_chi": "1458/7",
+        "maximum_omega": "18/19"
+      },
+      {
+        "L": 32,
+        "overlap_colors": 1048576,
+        "overlap_degree_plus_one_bound": 300763,
+        "minimum_count": "16384",
+        "twice_alpha_chi": "8192/7",
+        "maximum_omega": "32/33"
+      },
+      {
+        "L": 64,
+        "overlap_colors": 8388608,
+        "overlap_degree_plus_one_bound": 2248091,
+        "minimum_count": "131072",
+        "twice_alpha_chi": "65536/7",
+        "maximum_omega": "64/65"
+      },
+      {
+        "L": 128,
+        "overlap_colors": 67108864,
+        "overlap_degree_plus_one_bound": 17373979,
+        "minimum_count": "1048576",
+        "twice_alpha_chi": "524288/7",
+        "maximum_omega": "128/129"
+      }
+    ],
+    "scope": "Constants apply in the theorem range L>=16. Small torus geometry controls test the local identities under N>2L+3, not the full theorem hypothesis N>10L."
+  },
+  "scope": "New finite checks of conditional entropy, actual matching ownership, contracted connectivity, coverage and boundary tensor, and weighted exponential normalization. No trajectory hydrodynamic simulation or all-volume proof by enumeration."
+}

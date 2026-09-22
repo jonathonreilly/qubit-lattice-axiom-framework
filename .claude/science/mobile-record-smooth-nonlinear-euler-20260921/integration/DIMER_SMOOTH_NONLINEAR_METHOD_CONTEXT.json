@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-21T22:57:46.080362+00:00",
+  "primary_url": "https://arxiv.org/abs/math/0210426",
+  "authors": [
+    "Balint Toth",
+    "Benedek Valko"
+  ],
+  "title": "Onsager relations and Eulerian hydrodynamics for systems with several conservation laws",
+  "read_coverage": "ArXiv abstract and bibliographic metadata only. No paper theorem or hypotheses imported.",
+  "relevance": "The relative-entropy method and compatibility between product stationary measures and convex hydrodynamic entropy are established machinery. This primary abstract treats one-dimensional systems. The campaign separately proves the declared three-dimensional routed model; no one-dimensional theorem is silently applied in three dimensions.",
+  "new_note_sha256": "dbd07eca8db76c58f672791aa0f20b8483886352d79638931702306518b829b4",
+  "external_theorem_import": false
+}

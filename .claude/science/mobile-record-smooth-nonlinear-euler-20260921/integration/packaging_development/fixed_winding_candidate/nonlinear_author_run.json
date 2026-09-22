@@ -1,0 +1,789 @@
+{
+  "claim_id": "mobile_records_smooth_nonlinear_euler_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_SMOOTH_NONLINEAR_EULER_BOUNDED_THEOREM_NOTE_2026-09-21.md": "4f611d1cf5be338e45963745e5b407baa75b145d5681901873c47887ce163a81",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_MOVING_GEOMETRY_COLOR_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "03b4434a59cccc3d01122d8d84a9fb4812815445ae972bc5fe6c98f481f5e747",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_NONLINEAR_INITIAL_DRIFT.md": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_SMOOTH_NONLINEAR_EULER_LIMIT.md": "dbd07eca8db76c58f672791aa0f20b8483886352d79638931702306518b829b4",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/author_checks/dimer_nonlinear_flux_check.py": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/author_checks/dimer_smooth_nonlinear_check.py": "d97be26aa22fad562ac9419566bcb09c4c97db01dcbd598bca0d601f968f7eb8",
+    "scripts/mobile_records_smooth_nonlinear_euler_2026_09_21.py": "63fd4373da0a25de13ae9a196b77113f9bc2e1358b75b42b78f2df4a99bdbd20"
+  },
+  "mutation": null,
+  "passed": true,
+  "control_count": 8,
+  "suites": [
+    {
+      "suite": "dimer_nonlinear_flux_check.py",
+      "source_sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4",
+      "executed_source_sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4",
+      "returncode": 0,
+      "stdout": "moment_fluxes complete\nentropy_symmetrizer complete\noptical_diagnostic complete\nactual_initial_drift complete\nall_four_control_groups_complete\n",
+      "stderr": "",
+      "results": {
+        "sources": [
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md",
+            "bytes": 7787,
+            "sha256": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69"
+          },
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+            "bytes": 3862,
+            "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+          },
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/dimer_nonlinear_flux_check.py",
+            "bytes": 8306,
+            "sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4"
+          },
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/DIMER_ROUTED_RECORD_TRANSPORT.md",
+            "bytes": 19650,
+            "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+          }
+        ],
+        "moment_fluxes": [
+          {
+            "seed": 0,
+            "exact_probability_reconstruction": true,
+            "all_thirteen_vector_fluxes_exact": true
+          },
+          {
+            "seed": 1,
+            "exact_probability_reconstruction": true,
+            "all_thirteen_vector_fluxes_exact": true
+          },
+          {
+            "seed": 2,
+            "exact_probability_reconstruction": true,
+            "all_thirteen_vector_fluxes_exact": true
+          },
+          {
+            "seed": 3,
+            "exact_probability_reconstruction": true,
+            "all_thirteen_vector_fluxes_exact": true
+          },
+          {
+            "seed": 4,
+            "exact_probability_reconstruction": true,
+            "all_thirteen_vector_fluxes_exact": true
+          }
+        ],
+        "entropy_symmetrizer": [
+          {
+            "seed": 0,
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 6.938893903907228e-17,
+            "omitted_half_M_countercontrol": 0.21323529411764702
+          },
+          {
+            "seed": 0,
+            "direction": [
+              1,
+              2,
+              -3
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 4.85722573273506e-16,
+            "omitted_half_M_countercontrol": 0.5220588235294117
+          },
+          {
+            "seed": 0,
+            "direction": [
+              0,
+              -1,
+              2
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 6.661338147750939e-16,
+            "omitted_half_M_countercontrol": 0.30147058823529416
+          },
+          {
+            "seed": 1,
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 1.8174256136476302e-17,
+            "entropy_flux_directional_error": 1.6653345369377348e-16,
+            "omitted_half_M_countercontrol": 0.1239669421487605
+          },
+          {
+            "seed": 1,
+            "direction": [
+              1,
+              2,
+              -3
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 1.8318679906315083e-15,
+            "omitted_half_M_countercontrol": 0.9421487603305805
+          },
+          {
+            "seed": 1,
+            "direction": [
+              0,
+              -1,
+              2
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 5.551115123125783e-16,
+            "omitted_half_M_countercontrol": 0.6115702479338844
+          },
+          {
+            "seed": 2,
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 2.220446049250313e-16,
+            "omitted_half_M_countercontrol": 0.2385321100917429
+          },
+          {
+            "seed": 2,
+            "direction": [
+              1,
+              2,
+              -3
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 1.6653345369377348e-15,
+            "omitted_half_M_countercontrol": 1.6880733944954147
+          },
+          {
+            "seed": 2,
+            "direction": [
+              0,
+              -1,
+              2
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 8.326672684688674e-16,
+            "omitted_half_M_countercontrol": 0.9908256880733946
+          },
+          {
+            "seed": 3,
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 1.7694179454963432e-16,
+            "omitted_half_M_countercontrol": 0.17094017094017094
+          },
+          {
+            "seed": 3,
+            "direction": [
+              1,
+              2,
+              -3
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 4.996003610813204e-16,
+            "omitted_half_M_countercontrol": 0.752136752136752
+          },
+          {
+            "seed": 3,
+            "direction": [
+              0,
+              -1,
+              2
+            ],
+            "exact_entropy_symmetry": true,
+            "max_characteristic_imaginary": 0.0,
+            "entropy_flux_directional_error": 2.498001805406602e-16,
+            "omitted_half_M_countercontrol": 0.4786324786324787
+          }
+        ],
+        "optical_diagnostic": [
+          {
+            "profile": "isotropic",
+            "axis": 0,
+            "exact_squared_speeds": [
+              "4/49",
+              "4/49"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          },
+          {
+            "profile": "isotropic",
+            "axis": 1,
+            "exact_squared_speeds": [
+              "4/49",
+              "4/49"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          },
+          {
+            "profile": "isotropic",
+            "axis": 2,
+            "exact_squared_speeds": [
+              "4/49",
+              "4/49"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          },
+          {
+            "profile": "Z23",
+            "axis": 0,
+            "exact_squared_speeds": [
+              "1/14",
+              "9/98"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          },
+          {
+            "profile": "Z23",
+            "axis": 1,
+            "exact_squared_speeds": [
+              "4/49",
+              "4/49"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          },
+          {
+            "profile": "Z23",
+            "axis": 2,
+            "exact_squared_speeds": [
+              "4/49",
+              "4/49"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          },
+          {
+            "profile": "hidden_w",
+            "axis": 0,
+            "exact_squared_speeds": [
+              "4/49",
+              "4/49"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          },
+          {
+            "profile": "hidden_w",
+            "axis": 1,
+            "exact_squared_speeds": [
+              "4/49",
+              "4/49"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          },
+          {
+            "profile": "hidden_w",
+            "axis": 2,
+            "exact_squared_speeds": [
+              "4/49",
+              "4/49"
+            ],
+            "full_color_rank": 4,
+            "six_vector_moment_intertwiner_exact": true
+          }
+        ],
+        "actual_initial_drift": {
+          "profile_amplitude": 0.08,
+          "minimum_color_probability": 0.031428571428571424,
+          "rows": [
+            {
+              "N": 8,
+              "max_color_initial_Euler_drift_error": 0.7643936520893413,
+              "N_times_error": 6.11514921671473
+            },
+            {
+              "N": 16,
+              "max_color_initial_Euler_drift_error": 0.4205520624928879,
+              "N_times_error": 6.728832999886206
+            },
+            {
+              "N": 32,
+              "max_color_initial_Euler_drift_error": 0.21539491899311577,
+              "N_times_error": 6.892637407779705
+            },
+            {
+              "N": 64,
+              "max_color_initial_Euler_drift_error": 0.10834788914887793,
+              "N_times_error": 6.934264905528187
+            },
+            {
+              "N": 128,
+              "max_color_initial_Euler_drift_error": 0.05425558199206609,
+              "N_times_error": 6.94471449498446
+            },
+            {
+              "N": 256,
+              "max_color_initial_Euler_drift_error": 0.02713800612877404,
+              "N_times_error": 6.947329568966154
+            },
+            {
+              "N": 512,
+              "max_color_initial_Euler_drift_error": 0.013570280282956025,
+              "N_times_error": 6.947983504873485
+            },
+            {
+              "N": 1024,
+              "max_color_initial_Euler_drift_error": 0.006785299804060153,
+              "N_times_error": 6.948146999357597
+            },
+            {
+              "N": 2048,
+              "max_color_initial_Euler_drift_error": 0.0033926698602787294,
+              "N_times_error": 6.948187873850838
+            },
+            {
+              "N": 4096,
+              "max_color_initial_Euler_drift_error": 0.0016963374251105275,
+              "N_times_error": 6.948198093252721
+            },
+            {
+              "N": 8192,
+              "max_color_initial_Euler_drift_error": 0.0008481690248899553,
+              "N_times_error": 6.948200651898514
+            }
+          ],
+          "finite_amplitude_rhoA_flux": "2*cos(x)**2/875",
+          "finite_amplitude_Z23_flux": "-8*cos(x)**2/625",
+          "scope": "Exact initial product-law expected generator current, not simulated trajectories or a finite-time hydrodynamic limit. O(1/N) is a Taylor bound; no exponent is fitted."
+        }
+      }
+    },
+    {
+      "suite": "dimer_smooth_nonlinear_check.py",
+      "source_sha256": "d97be26aa22fad562ac9419566bcb09c4c97db01dcbd598bca0d601f968f7eb8",
+      "executed_source_sha256": "d97be26aa22fad562ac9419566bcb09c4c97db01dcbd598bca0d601f968f7eb8",
+      "returncode": 0,
+      "stdout": "three_control_groups_complete\n",
+      "stderr": "",
+      "results": {
+        "sources": [
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/DIMER_SMOOTH_NONLINEAR_EULER_LIMIT.md",
+            "bytes": 13723,
+            "sha256": "dbd07eca8db76c58f672791aa0f20b8483886352d79638931702306518b829b4"
+          },
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md",
+            "bytes": 7787,
+            "sha256": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69"
+          },
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+            "bytes": 3862,
+            "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+          },
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/dimer_nonlinear_flux_check.py",
+            "bytes": 8306,
+            "sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4"
+          },
+          {
+            "path": "/private/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-tyrq6rcd/dimer_smooth_nonlinear_check.py",
+            "bytes": 5708,
+            "sha256": "d97be26aa22fad562ac9419566bcb09c4c97db01dcbd598bca0d601f968f7eb8"
+          }
+        ],
+        "blocks": [
+          {
+            "ell": 2,
+            "N": 18,
+            "block_sites": 8,
+            "overlap_colors_bound": 64,
+            "actual_difference_count": 27,
+            "bare_internal_edges": 12,
+            "five_internal_stencil_counts": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "ell": 3,
+            "N": 26,
+            "block_sites": 27,
+            "overlap_colors_bound": 216,
+            "actual_difference_count": 125,
+            "bare_internal_edges": 54,
+            "five_internal_stencil_counts": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "ell": 4,
+            "N": 34,
+            "block_sites": 64,
+            "overlap_colors_bound": 512,
+            "actual_difference_count": 343,
+            "bare_internal_edges": 144,
+            "five_internal_stencil_counts": [
+              16,
+              16,
+              16,
+              4,
+              4
+            ]
+          },
+          {
+            "ell": 5,
+            "N": 42,
+            "block_sites": 125,
+            "overlap_colors_bound": 1000,
+            "actual_difference_count": 729,
+            "bare_internal_edges": 300,
+            "five_internal_stencil_counts": [
+              50,
+              50,
+              50,
+              20,
+              20
+            ]
+          },
+          {
+            "ell": 6,
+            "N": 50,
+            "block_sites": 216,
+            "overlap_colors_bound": 1728,
+            "actual_difference_count": 1331,
+            "bare_internal_edges": 540,
+            "five_internal_stencil_counts": [
+              108,
+              108,
+              108,
+              54,
+              54
+            ]
+          }
+        ],
+        "fixed_sector": [
+          {
+            "particle_count": 1,
+            "sector_dimension": 8,
+            "exact_connected_rank": 7,
+            "numerical_gap": 1.9999999999999987,
+            "exact_variance": "287/1128",
+            "exact_Dirichlet": "133/141",
+            "centered_pairing": "0",
+            "entropy_derivative": -4.480346849280433
+          },
+          {
+            "particle_count": 2,
+            "sector_dimension": 28,
+            "exact_connected_rank": 27,
+            "numerical_gap": 1.9999999999999993,
+            "exact_variance": "1/5",
+            "exact_Dirichlet": "123/140",
+            "centered_pairing": "-11/560",
+            "entropy_derivative": -3.9662275763994583
+          },
+          {
+            "particle_count": 3,
+            "sector_dimension": 56,
+            "exact_connected_rank": 55,
+            "numerical_gap": 1.999999999999999,
+            "exact_variance": "1/5",
+            "exact_Dirichlet": "143/112",
+            "centered_pairing": "11/280",
+            "entropy_derivative": -5.95403379906312
+          },
+          {
+            "particle_count": 4,
+            "sector_dimension": 70,
+            "exact_connected_rank": 69,
+            "numerical_gap": 1.9999999999999971,
+            "exact_variance": "1/5",
+            "exact_Dirichlet": "247/175",
+            "centered_pairing": "-31/1400",
+            "entropy_derivative": -6.547105505582527
+          }
+        ],
+        "entropy_algebra": {
+          "tangent_cancellations": [
+            {
+              "seed": 0,
+              "exact_tangent_entropy_cancellation": true,
+              "ambient_constant": "264/5353"
+            },
+            {
+              "seed": 1,
+              "exact_tangent_entropy_cancellation": true,
+              "ambient_constant": "-72/11615"
+            },
+            {
+              "seed": 2,
+              "exact_tangent_entropy_cancellation": true,
+              "ambient_constant": "49/5858"
+            },
+            {
+              "seed": 3,
+              "exact_tangent_entropy_cancellation": true,
+              "ambient_constant": "-182/11009"
+            }
+          ],
+          "without_replacement_coupling": [
+            {
+              "m": 4,
+              "exact_index_coupling_failure": "29/32",
+              "four_draw_bound": "3/2"
+            },
+            {
+              "m": 5,
+              "exact_index_coupling_failure": "101/125",
+              "four_draw_bound": "6/5"
+            },
+            {
+              "m": 8,
+              "exact_index_coupling_failure": "151/256",
+              "four_draw_bound": "3/4"
+            },
+            {
+              "m": 14,
+              "exact_index_coupling_failure": "257/686",
+              "four_draw_bound": "3/7"
+            },
+            {
+              "m": 17,
+              "exact_index_coupling_failure": "1553/4913",
+              "four_draw_bound": "6/17"
+            },
+            {
+              "m": 64,
+              "exact_index_coupling_failure": "11939/131072",
+              "four_draw_bound": "3/32"
+            },
+            {
+              "m": 125,
+              "exact_index_coupling_failure": "92381/1953125",
+              "four_draw_bound": "6/125"
+            },
+            {
+              "m": 1000,
+              "exact_index_coupling_failure": "2994503/500000000",
+              "four_draw_bound": "3/500"
+            }
+          ],
+          "holder_alpha": "1/224",
+          "integrated_Hoeffding_exponential_bound": 29,
+          "Bernoulli_checks": [
+            {
+              "p": 0.001,
+              "t": -10,
+              "log_centered_MGF": 0.008999545111790571,
+              "bound": 12.5
+            },
+            {
+              "p": 0.001,
+              "t": -2,
+              "log_centered_MGF": 0.0011349612450731268,
+              "bound": 0.5
+            },
+            {
+              "p": 0.001,
+              "t": -0.1,
+              "log_centered_MGF": 4.832889790174562e-06,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.001,
+              "t": 0.1,
+              "log_centered_MGF": 5.165388002375138e-06,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.001,
+              "t": 2,
+              "log_centered_MGF": 0.004368732599399281,
+              "bound": 0.5
+            },
+            {
+              "p": 0.001,
+              "t": 10,
+              "log_centered_MGF": 3.12660081189578,
+              "bound": 12.5
+            },
+            {
+              "p": 0.1,
+              "t": -10,
+              "log_centered_MGF": 0.8946445287660908,
+              "bound": 12.5
+            },
+            {
+              "p": 0.1,
+              "t": -2,
+              "log_centered_MGF": 0.1095647993081508,
+              "bound": 0.5
+            },
+            {
+              "p": 0.1,
+              "t": -0.1,
+              "log_centered_MGF": 0.00043817289111008906,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.1,
+              "t": 0.1,
+              "log_centered_MGF": 0.00046217192687181274,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.1,
+              "t": 2,
+              "log_centered_MGF": 0.2940287080441789,
+              "bound": 0.5
+            },
+            {
+              "p": 0.1,
+              "t": 10,
+              "log_centered_MGF": 6.697823422919828,
+              "bound": 12.5
+            },
+            {
+              "p": 0.5,
+              "t": -10,
+              "log_centered_MGF": 4.3068982183392714,
+              "bound": 12.5
+            },
+            {
+              "p": 0.5,
+              "t": -2,
+              "log_centered_MGF": 0.4337808304830272,
+              "bound": 0.5
+            },
+            {
+              "p": 0.5,
+              "t": -0.1,
+              "log_centered_MGF": 0.0012494795136256398,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.5,
+              "t": 0.1,
+              "log_centered_MGF": 0.0012494795136256398,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.5,
+              "t": 2,
+              "log_centered_MGF": 0.4337808304830272,
+              "bound": 0.5
+            },
+            {
+              "p": 0.5,
+              "t": 10,
+              "log_centered_MGF": 4.3068982183392714,
+              "bound": 12.5
+            },
+            {
+              "p": 0.9,
+              "t": -10,
+              "log_centered_MGF": 6.697823422919827,
+              "bound": 12.5
+            },
+            {
+              "p": 0.9,
+              "t": -2,
+              "log_centered_MGF": 0.29402870804417874,
+              "bound": 0.5
+            },
+            {
+              "p": 0.9,
+              "t": -0.1,
+              "log_centered_MGF": 0.00046217192687181274,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.9,
+              "t": 0.1,
+              "log_centered_MGF": 0.0004381728911100752,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.9,
+              "t": 2,
+              "log_centered_MGF": 0.10956479930815077,
+              "bound": 0.5
+            },
+            {
+              "p": 0.9,
+              "t": 10,
+              "log_centered_MGF": 0.8946445287660906,
+              "bound": 12.5
+            },
+            {
+              "p": 0.999,
+              "t": -10,
+              "log_centered_MGF": 3.126600811895781,
+              "bound": 12.5
+            },
+            {
+              "p": 0.999,
+              "t": -2,
+              "log_centered_MGF": 0.004368732599399285,
+              "bound": 0.5
+            },
+            {
+              "p": 0.999,
+              "t": -0.1,
+              "log_centered_MGF": 5.165388002375138e-06,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.999,
+              "t": 0.1,
+              "log_centered_MGF": 4.832889790174454e-06,
+              "bound": 0.0012500000000000002
+            },
+            {
+              "p": 0.999,
+              "t": 2,
+              "log_centered_MGF": 0.0011349612450731277,
+              "bound": 0.5
+            },
+            {
+              "p": 0.999,
+              "t": 10,
+              "log_centered_MGF": 0.00899954511179058,
+              "bound": 12.5
+            }
+          ]
+        },
+        "scope": "Exact finite block geometry, exact connectivity ranks and conditional Cauchy calculations, finite numerical gap/entropy controls, exact tangent cancellation and coupling arithmetic. The full all-volume theorem is a proof, not inferred from these checks."
+      }
+    }
+  ],
+  "scope": "Author symbolic and finite numerical controls; not an independent audit or a replacement for the conditional proofs."
+}

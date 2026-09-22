@@ -1,0 +1,499 @@
+{
+  "created_utc": "2026-09-22T00:06:31.923977+00:00",
+  "base_commit": "af45e32418ba6af18af646164c8d90abc3d933ba",
+  "note_sha256": "b0b1a4d5eb7803db6c160f2ac590fed447dc803ff8deb83d7591e7a32a48aceb",
+  "runner_sha256": "5a4960136b67ce43ef27ee794da243e806f0e065e19c8b002778e2ccc4a87be7",
+  "primary_bodies_exact": 5,
+  "author_math_groups": 10,
+  "bookkeeping_groups": 1,
+  "cache_fresh": true,
+  "mutations": [
+    {
+      "name": "double_block_exponential_coefficient",
+      "source_sha256": "d97be26aa22fad562ac9419566bcb09c4c97db01dcbd598bca0d601f968f7eb8",
+      "mutant_sha256": "aa2ad9595a4e9e3be544b2e33232b9aa7f7afc77ea616764e43aaf6a02116f0c",
+      "returncode": 1
+    },
+    {
+      "name": "omit_entropy_flux_half_M",
+      "source_sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4",
+      "mutant_sha256": "e517832fa07998195e475007291aa068f022abbe5f0544361cbaaee0b4ee57a8",
+      "returncode": 1
+    },
+    {
+      "name": "omit_geometry_marginal_entropy_derivative",
+      "source_sha256": "2000fcf382ab9eeb833d8d67d608776017a37c9848c29263dee32c06f5038052",
+      "mutant_sha256": "be72fe9b64a41755e4f1d6cf2ca9445314c79e84d9ce25dae51a570676f76482",
+      "returncode": 1
+    },
+    {
+      "name": "omit_nonlinear_population_flux",
+      "source_sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4",
+      "mutant_sha256": "5d4a44df3a41fb967ce8b262e198a51fe57157be09f7ef189796491ec05768a7",
+      "returncode": 1
+    },
+    {
+      "name": "omit_owner_boundary_coverage",
+      "source_sha256": "2000fcf382ab9eeb833d8d67d608776017a37c9848c29263dee32c06f5038052",
+      "mutant_sha256": "4b0751973c2145ebe84e14564409b4c951469aa78628028298c2a1bbce1c4720",
+      "returncode": 1
+    }
+  ],
+  "capsules": {
+    "capsules": 3,
+    "bundled_members": 860,
+    "bundled_source_bindings": 836,
+    "seal_rows": 1972,
+    "external_reference_exclusions": [
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+        "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517",
+        "bytes": 836060,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://arxiv.org/pdf/1909.06558v3",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Jerrum_Sinclair_1989_ApproximatingPermanent.pdf",
+        "sha256": "607ee31f4dbea8dd7cc3f59ca27915252334671268c6b4251069a23cd8ada3e9",
+        "bytes": 11144147,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.pdf",
+        "sha256": "152098553d74bd7d22da0573f4836a5a884f190d5144855f722c9c7f6c8c8226",
+        "bytes": 379563,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.png",
+        "sha256": "742e9091e0ed53c362fb9a41ec015fabfa9c96f3ee3f7313284ada47e2cc5fe2",
+        "bytes": 167660,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.txt",
+        "sha256": "488e623f5198132dd753a06ae27e47313539be3efd163efa94cca343c94faaa3",
+        "bytes": 3879,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.pdf",
+        "sha256": "8bf3ff7e89f1d539ee1b6b6d17abb13d18013f96f953b368a812332ca2035258",
+        "bytes": 389620,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.txt",
+        "sha256": "7eb1bbb1630d42667aa9e0d5958a594c299506e3f39a3290a40c65937a970303",
+        "bytes": 4298,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.pdf",
+        "sha256": "2469032b78ef405bb96770350cf6e0e49849c1b46278a0af05cd8c22b5389460",
+        "bytes": 398316,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.png",
+        "sha256": "8facf3020077227a07b2aedec1e3ff928abedcfdd30e28f9a3491bf7d6e0bb45",
+        "bytes": 177903,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.txt",
+        "sha256": "c41af426826129f1ea3587bb95239385835cb79efbdcd88b6c8440dd8f3cc9b1",
+        "bytes": 4415,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.pdf",
+        "sha256": "c443051492df7541c0ed9c004749f591b0835adb7a2215411c8a3d6e1d92a160",
+        "bytes": 439667,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.txt",
+        "sha256": "bfa421811f475167bb042d93684455ffec36b52e2d94c714c7ffc2cd9313664a",
+        "bytes": 4643,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.pdf",
+        "sha256": "7cc07c89a984ee0003980c6dee4c3d803ba250d2cf5c090d2569f475d6cb4e41",
+        "bytes": 383406,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.txt",
+        "sha256": "ccb52c1074f74e4968391b8a11da9df6896d2c9fda83211a975c6725f8318616",
+        "bytes": 4134,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_nonlinear_flux_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/Taggi_v3_statement_extract.txt",
+        "sha256": "cc87c265f1fdb8cf38ea51cbc5c27b904f5d46a4e4e01e709ed2d2b9743b0f65",
+        "bytes": 17805,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://arxiv.org/pdf/1909.06558v3",
+        "reason": "Locally extracted third-party statement pages, excluded along with the source PDF."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+        "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517",
+        "bytes": 836060,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://arxiv.org/pdf/1909.06558v3",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Jerrum_Sinclair_1989_ApproximatingPermanent.pdf",
+        "sha256": "607ee31f4dbea8dd7cc3f59ca27915252334671268c6b4251069a23cd8ada3e9",
+        "bytes": 11144147,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.pdf",
+        "sha256": "152098553d74bd7d22da0573f4836a5a884f190d5144855f722c9c7f6c8c8226",
+        "bytes": 379563,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.png",
+        "sha256": "742e9091e0ed53c362fb9a41ec015fabfa9c96f3ee3f7313284ada47e2cc5fe2",
+        "bytes": 167660,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.txt",
+        "sha256": "488e623f5198132dd753a06ae27e47313539be3efd163efa94cca343c94faaa3",
+        "bytes": 3879,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.pdf",
+        "sha256": "8bf3ff7e89f1d539ee1b6b6d17abb13d18013f96f953b368a812332ca2035258",
+        "bytes": 389620,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.txt",
+        "sha256": "7eb1bbb1630d42667aa9e0d5958a594c299506e3f39a3290a40c65937a970303",
+        "bytes": 4298,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.pdf",
+        "sha256": "2469032b78ef405bb96770350cf6e0e49849c1b46278a0af05cd8c22b5389460",
+        "bytes": 398316,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.png",
+        "sha256": "8facf3020077227a07b2aedec1e3ff928abedcfdd30e28f9a3491bf7d6e0bb45",
+        "bytes": 177903,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.txt",
+        "sha256": "c41af426826129f1ea3587bb95239385835cb79efbdcd88b6c8440dd8f3cc9b1",
+        "bytes": 4415,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.pdf",
+        "sha256": "c443051492df7541c0ed9c004749f591b0835adb7a2215411c8a3d6e1d92a160",
+        "bytes": 439667,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.txt",
+        "sha256": "bfa421811f475167bb042d93684455ffec36b52e2d94c714c7ffc2cd9313664a",
+        "bytes": 4643,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.pdf",
+        "sha256": "7cc07c89a984ee0003980c6dee4c3d803ba250d2cf5c090d2569f475d6cb4e41",
+        "bytes": 383406,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.txt",
+        "sha256": "ccb52c1074f74e4968391b8a11da9df6896d2c9fda83211a975c6725f8318616",
+        "bytes": 4134,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_smooth_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/Taggi_v3_statement_extract.txt",
+        "sha256": "cc87c265f1fdb8cf38ea51cbc5c27b904f5d46a4e4e01e709ed2d2b9743b0f65",
+        "bytes": 17805,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://arxiv.org/pdf/1909.06558v3",
+        "reason": "Locally extracted third-party statement pages, excluded along with the source PDF."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+        "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517",
+        "bytes": 836060,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://arxiv.org/pdf/1909.06558v3",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Jerrum_Sinclair_1989_ApproximatingPermanent.pdf",
+        "sha256": "607ee31f4dbea8dd7cc3f59ca27915252334671268c6b4251069a23cd8ada3e9",
+        "bytes": 11144147,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.pdf",
+        "sha256": "152098553d74bd7d22da0573f4836a5a884f190d5144855f722c9c7f6c8c8226",
+        "bytes": 379563,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.png",
+        "sha256": "742e9091e0ed53c362fb9a41ec015fabfa9c96f3ee3f7313284ada47e2cc5fe2",
+        "bytes": 167660,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.txt",
+        "sha256": "488e623f5198132dd753a06ae27e47313539be3efd163efa94cca343c94faaa3",
+        "bytes": 3879,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.pdf",
+        "sha256": "8bf3ff7e89f1d539ee1b6b6d17abb13d18013f96f953b368a812332ca2035258",
+        "bytes": 389620,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.txt",
+        "sha256": "7eb1bbb1630d42667aa9e0d5958a594c299506e3f39a3290a40c65937a970303",
+        "bytes": 4298,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.pdf",
+        "sha256": "2469032b78ef405bb96770350cf6e0e49849c1b46278a0af05cd8c22b5389460",
+        "bytes": 398316,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.png",
+        "sha256": "8facf3020077227a07b2aedec1e3ff928abedcfdd30e28f9a3491bf7d6e0bb45",
+        "bytes": 177903,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.txt",
+        "sha256": "c41af426826129f1ea3587bb95239385835cb79efbdcd88b6c8440dd8f3cc9b1",
+        "bytes": 4415,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.pdf",
+        "sha256": "c443051492df7541c0ed9c004749f591b0835adb7a2215411c8a3d6e1d92a160",
+        "bytes": 439667,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.txt",
+        "sha256": "bfa421811f475167bb042d93684455ffec36b52e2d94c714c7ffc2cd9313664a",
+        "bytes": 4643,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.pdf",
+        "sha256": "7cc07c89a984ee0003980c6dee4c3d803ba250d2cf5c090d2569f475d6cb4e41",
+        "bytes": 383406,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.txt",
+        "sha256": "ccb52c1074f74e4968391b8a11da9df6896d2c9fda83211a975c6725f8318616",
+        "bytes": 4134,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+        "reason": "Third-party reference PDF or extracted primary-source page, inspected locally but not redistributed."
+      },
+      {
+        "capsule": "dimer_moving_nonlinear_independent",
+        "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/Taggi_v3_statement_extract.txt",
+        "sha256": "cc87c265f1fdb8cf38ea51cbc5c27b904f5d46a4e4e01e709ed2d2b9743b0f65",
+        "bytes": 17805,
+        "disposition": "external_reference_not_bundled",
+        "url": "https://arxiv.org/pdf/1909.06558v3",
+        "reason": "Locally extracted third-party statement pages, excluded along with the source PDF."
+      }
+    ],
+    "scope": "Bundled bytes authenticated. External PDFs and extracted statement pages not fetched or verified by this portable check; its original local verification is recorded. No scientific correctness or audit status inferred."
+  },
+  "integration_commands": {
+    "created_utc": "2026-09-22T00:06:12.433880+00:00",
+    "rows": [
+      {
+        "check": "vocab",
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "scripts/vocab_lint.py",
+          "--report-only",
+          "--report-path",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/nonlinear_vocab.json",
+          "docs/MOBILE_RECORDS_SMOOTH_NONLINEAR_EULER_BOUNDED_THEOREM_NOTE_2026-09-21.md"
+        ],
+        "exit_code": 0
+      },
+      {
+        "check": "pipeline",
+        "command": [
+          "bash",
+          "docs/audit/scripts/run_pipeline.sh",
+          "--stage-citation-manifest"
+        ],
+        "exit_code": 0
+      },
+      {
+        "check": "strict_lint",
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "docs/audit/scripts/audit_lint.py",
+          "--strict"
+        ],
+        "exit_code": 0
+      }
+    ]
+  },
+  "graph_delta": {
+    "nodes_added": 1,
+    "edges_added": 3
+  },
+  "audit_status": "unaudited",
+  "prompt_files_changed": [],
+  "changed_evidence_gate": "pending exact staged candidate",
+  "scope": "Root source/proof reading and author integration. Selective independent reconstruction has separate sealed packets; no formal audit verdict or merge."
+}

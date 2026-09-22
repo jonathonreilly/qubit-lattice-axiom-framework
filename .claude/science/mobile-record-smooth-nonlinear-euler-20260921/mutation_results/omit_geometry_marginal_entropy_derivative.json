@@ -1,0 +1,34 @@
+{
+  "claim_id": "mobile_records_smooth_nonlinear_euler_bounded_theorem_note_2026-09-21",
+  "identities": {
+    "docs/MOBILE_RECORDS_SMOOTH_NONLINEAR_EULER_BOUNDED_THEOREM_NOTE_2026-09-21.md": "b0b1a4d5eb7803db6c160f2ac590fed447dc803ff8deb83d7591e7a32a48aceb",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/MOBILE_RECORDS_MOVING_GEOMETRY_COLOR_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "03b4434a59cccc3d01122d8d84a9fb4812815445ae972bc5fe6c98f481f5e747",
+    "docs/MOBILE_RECORDS_EMPTY_START_QUANTITATIVE_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "39a135715624f58cf342efcf12cae0d4f6b26b14b2f5a46ae1d3c7ab30ea0b4e",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_NONLINEAR_INITIAL_DRIFT.md": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_SMOOTH_NONLINEAR_EULER_LIMIT.md": "dbd07eca8db76c58f672791aa0f20b8483886352d79638931702306518b829b4",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_MOVING_GEOMETRY_SMOOTH_NONLINEAR_EULER.md": "939c87d2d4688e3f4e66550d3a54e024966866b8744db80d4befd3f1d68317d1",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_MOVING_NONLINEAR_QUANTITATIVE_ADDENDUM.md": "0671866c54f6f1865e3c63b8b4377800c85bf27303b7f28eca8a7d425b76c1ed",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_ROUTED_QUANTITATIVE_EULER_BOUND.md": "f3883ac1951ede774121807ab83678fd3622c93ee79f4c0d4aa7e50862564bf1",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/primary_sources/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/author_checks/dimer_nonlinear_flux_check.py": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/author_checks/dimer_smooth_nonlinear_check.py": "d97be26aa22fad562ac9419566bcb09c4c97db01dcbd598bca0d601f968f7eb8",
+    ".claude/science/mobile-record-smooth-nonlinear-euler-20260921/author_checks/dimer_moving_nonlinear_check.py": "2000fcf382ab9eeb833d8d67d608776017a37c9848c29263dee32c06f5038052",
+    "scripts/mobile_records_smooth_nonlinear_euler_2026_09_21.py": "5a4960136b67ce43ef27ee794da243e806f0e065e19c8b002778e2ccc4a87be7"
+  },
+  "mutation": "omit_geometry_marginal_entropy_derivative",
+  "passed": false,
+  "suites": [
+    {
+      "suite": "dimer_moving_nonlinear_check.py",
+      "source_sha256": "2000fcf382ab9eeb833d8d67d608776017a37c9848c29263dee32c06f5038052",
+      "executed_source_sha256": "be72fe9b64a41755e4f1d6cf2ca9445314c79e84d9ce25dae51a570676f76482",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-93ifyph7/dimer_moving_nonlinear_check.py\", line 129, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-93ifyph7/dimer_moving_nonlinear_check.py\", line 124, in main\n    result=dict(created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),sources=[],geometry_entropy=geometry_entropy(),owner_blocks=owner_blocks(),exponential_constants=constants(),\n                                                                                                                 ~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/smooth-nonlinear-controls-93ifyph7/dimer_moving_nonlinear_check.py\", line 23, in geometry_entropy\n    assert abs(direct-(joint-marginal))<2e-15 and abs(marginal)>1e-3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ]
+}

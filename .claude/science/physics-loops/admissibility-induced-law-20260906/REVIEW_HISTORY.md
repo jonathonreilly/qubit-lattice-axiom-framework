@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 81 — author checks (not a review PASS)
+Written lens pass by the supervisor. The orbit-reduced mean was first wrong (representative's count used for the whole orbit) and corrected by the translation argument; the occupancy-chessboard test first looked for the wrong thing (a nonzero determinant at the species point) and became the exact square identity; the control's neighbour indexing bug was caught by its Hermiticity assertion. Refuting pass at adversarial triples without a counterexample; the general inequality flagged open. Census 10/10 in family.

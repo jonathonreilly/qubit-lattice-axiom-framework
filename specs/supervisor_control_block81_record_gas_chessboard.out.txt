@@ -1,0 +1,20 @@
+W1: half-filled record gas on periodic lattices; staggered structure factor and recorded neighbours per record (random placement in brackets)
+  L=6 (3,1,2) g=1: <stag^2>/N = 0.250 [0.251]; neighbours per record 2.985 [2.986]
+  L=6 (3,1,2) g=2: <stag^2>/N = 0.112 [0.251]; neighbours per record 3.545 [2.986]
+  L=6 (3,1,2) g=4: <stag^2>/N = 0.052 [0.251]; neighbours per record 4.503 [2.986]
+  L=6 (3,1,2) g=0.5: <stag^2>/N = 1.791 [0.251]; neighbours per record 2.382 [2.986]
+  L=6 (3,1,2) g=0.25: <stag^2>/N = 50.013 [0.251]; neighbours per record 0.207 [2.986]
+  L=6 (3,1,2) g=0.125: <stag^2>/N = 49.673 [0.251]; neighbours per record 0.245 [2.986]
+  L=6 (12,1,2) g=1: <stag^2>/N = 0.085 [0.251]; neighbours per record 4.047 [2.986]
+  L=6 (12,1,2) g=2: <stag^2>/N = 0.033 [0.251]; neighbours per record 4.859 [2.986]
+  L=6 (12,1,2) g=4: <stag^2>/N = 0.021 [0.251]; neighbours per record 4.822 [2.986]
+  L=6 (12,1,2) g=0.5: <stag^2>/N = 0.400 [0.251]; neighbours per record 3.105 [2.986]
+  L=6 (12,1,2) g=0.25: <stag^2>/N = 49.390 [0.251]; neighbours per record 0.241 [2.986]
+  L=6 (12,1,2) g=0.125: <stag^2>/N = 53.006 [0.251]; neighbours per record 0.056 [2.986]
+  L=8 (3,1,2) g=1: <stag^2>/N = 0.284 [0.250]; neighbours per record 2.998 [2.994]
+  L=8 (3,1,2) g=4: <stag^2>/N = 0.047 [0.250]; neighbours per record 4.613 [2.994]
+  L=8 (3,1,2) g=0.25: <stag^2>/N = 117.076 [0.250]; neighbours per record 0.241 [2.994]
+W2: the walk on the 6^3 torus with the coin-scalar record potential c n_x, c = 3/5; eigenvalues strictly inside (0, c)
+  chessboard: eigenvalues in (0, c): 0 of 432; nearest to c/2 = 0.3: 0.3000; lowest -1.2297, highest 1.8297
+  sampled equilibrium arrangement at g = 1: eigenvalues in (0, c): 16 of 432; nearest to c/2 = 0.3: 0.0080; lowest -1.4396, highest 2.0535
+  records on every site: eigenvalues in (0, c): 0 of 432; nearest to c/2 = 0.3: 0.3000; lowest -0.9000, highest 2.1000

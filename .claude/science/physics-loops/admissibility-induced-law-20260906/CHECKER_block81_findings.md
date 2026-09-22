@@ -1,0 +1,9 @@
+# Block 81 — control and findings (2026-09-22)
+
+1. Disjoint machinery (`specs/supervisor_control_block81_record_gas_chessboard.py`): floating-point sampling of the three-dimensional gas (transit + content re-draws) and dense diagonalisation of the walk; the exact runner enumerates arrangements by frontier contraction and proves spectra symbolically.
+2. **A wrong mean caught by symmetry (supervisor).** The first orbit-reduced torus computation used the orbit representative's staggered count for the whole orbit and reported a nonzero mean; translation by one step reverses the count, so the mean is exactly zero (T3(a)); the runner now sums the count over every orbit's elements (D1).
+3. **A wrong test corrected (supervisor).** The occupancy chessboard was first tested for a nonzero determinant at the species point; the determinant is zero because the lower band's top is `E = 0` — the gap is the interval `(0, c)`. The check became the exact square identity `(H − c/2)² = |s|² + c²/4` and the eigenvalues `{0, c}` at the species point (E3).
+4. **Control bug caught by its own assertion (supervisor).** The walk's neighbour indexing (`nb[i, 2a]` for `nb[i, a]`) produced a non-Hermitian matrix; fixed and re-run.
+5. **Coarse torus noted.** On the `6³` torus `sin k ∈ {0, ±√3/2}`, so the uniform background's count inside `(0, c)` is `0` by coarseness; the note says so and does not read it as a gap.
+6. Refuting pass: the inequality `Z₀ ≥ 6^{|η|}` attacked at `(2,2,5)`, `(1,3,2)`, `(1,1,100)`, `(100,1,1)` on the cube without a counterexample; left open beyond the windows (T1 reduces it to the sign of `3t₁λ₁ + 2t₂λ₂`).
+7. Block 42's odds reading (every arrangement of `k` records weighs the same once contents are summed; zero density channel at the neutral scale) supplies no chessboard either — named under N1, not re-proved here.

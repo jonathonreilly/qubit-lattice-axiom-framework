@@ -1,0 +1,49 @@
+{
+  "status": "author proposal awaiting independent final confirmation",
+  "scope": "Positive-only salvage; original source and negative proofs preserved byte-exact; no audit verdict or PR closure authorization.",
+  "claims": {
+    "8079": {
+      "proposed_current": [
+        "finite-moment error hierarchy",
+        "fifth half-moment supplier",
+        "descriptive fixed certificate outcomes"
+      ],
+      "deferred": [
+        "constant-trial exclusion certification",
+        "fixed-p all-q exclusion certification"
+      ]
+    },
+    "8080": {
+      "proposed_current": [
+        "posterior error bounds",
+        "spectral-residual construction",
+        "finite indeterminate certificate outcomes"
+      ],
+      "deferred": []
+    },
+    "8081": {
+      "proposed_current": [
+        "valid quadratic remainder lower bound",
+        "signed-dual identity and finite correlated intervals"
+      ],
+      "deferred": [
+        "norm-only optimality certification",
+        "zero-dual exclusion certification"
+      ]
+    },
+    "8082": {
+      "proposed_current": [
+        "conditional determinant germ and infinite-volume bridge",
+        "degree-filtered moment supplier"
+      ],
+      "deferred": []
+    },
+    "8083": {
+      "proposed_current": [
+        "quartic envelope bounds",
+        "same-trial finite interval intersections"
+      ],
+      "deferred": []
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "session": "/root/resume_8079_8083",
+  "purpose": "Append-only evidence identity supplement; no new controls, source changes or review verdict.",
+  "attestation": "The v2 rational-control script and Gaussian-control script listed below are the sources actually executed in this review session for655 and32 checks respectively. I made no edits to either source after its recorded execution. The initial source and prelaunch-failure record were preserved; the failed launch evaluated no checks.",
+  "identity_limit": "These hashes bind the preserved present bytes. The original result JSONs did not embed source hashes, so unchanged-since-execution is this reviewer-session attestation, not a retroactively created execution-time cryptographic binding.",
+  "initial_failure": "macOS RLIMIT_AS setup failed before controls. Corrected v2 used30-second alarm and384MiB measured-RSS postcondition, not OS-enforced address-space limit.",
+  "files": [
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-independent-controls-v2.py",
+      "sha256": "fb28d2eac6f0bea3b5ea8b19b5951198da7b26a071a663b62713b566cec4ced0",
+      "bytes": 2469
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-independent-controls-v2.json",
+      "sha256": "b2357cb06fdf2f4eeb14c49a802700bf0ea739c8946c28dc3b8d397dfa1e7b99",
+      "bytes": 186
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-gaussian-independent.py",
+      "sha256": "9027cf0cb2d8a4d71c13176b42633090f3bb952ca6bc630b57f82268ea247e30",
+      "bytes": 3285
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-gaussian-independent.json",
+      "sha256": "44b587fdb218a956ed506a9170c98e4758c422e36ea6b8bea2a620132e6de8ac",
+      "bytes": 206
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-independent-controls.py",
+      "sha256": "a3fcfddd09bb4ddebac50d47ca92dc8486c4f6cabc443e145fdc1c3571a6bfcb",
+      "bytes": 2462
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-independent-controls.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-independent-controls-prelaunch-failure.txt",
+      "sha256": "25992cfea3b30faa341e80a6f2d4d111ab9cfc4883c27a91e42c407ce1cc194b",
+      "bytes": 302
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-original-deltas.json",
+      "sha256": "d33d30c3356935213294d0900ed9ed81c53aa5a7dc6ed1ba794ea35e84b65ba9",
+      "bytes": 145611
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8083-pinned-source-read-map.json",
+      "sha256": "436f4f95c49c3ab87d9a552b8365ae3d80a6389c463572f1ec9b78fc17be28ad",
+      "bytes": 19116
+    }
+  ],
+  "boundary": "Existing final report, unit record, sources and receipts untouched. No checks rerun."
+}

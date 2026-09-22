@@ -1,0 +1,9 @@
+{
+  "session": "/root/resume_8079_8083",
+  "tree": "077802ff0d6d52f1c71f9bc76930324ebcd61c5c",
+  "verdict": "CONFIRMED_POSITIVE_SCOPE_SOURCE_ONLY",
+  "affected_confirmation": "Only five UNEXECUTED output placeholders and capture artifact names changed. All5007 nonoutput science/source hashes and400 input hashes unchanged from prior confirmed source.",
+  "failure": "8079 attempt1 failed closed on outputs ancestor directory stat change; runner/input content identities unchanged. Original output/log/exception/watchdog/script/freeze preserved, no successful cache asserted.",
+  "retry_scope": "Root authorized8079 one bounded retry and four first captures after newpreflight;30s384MiB each; no historical native/oracle replay.",
+  "negative_scope": "Original8079 fixed-family negative certification and8081 zero-dual/optimality certification remain deferred; no No-Go Gate PASS."
+}

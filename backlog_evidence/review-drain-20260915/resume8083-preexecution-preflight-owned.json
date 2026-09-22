@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "pr8079-8083-positive-scope-preexecution",
+  "tree": "263dee7841e489ca5006cc868daa3ca4e7cf9e84",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md",
+      "claim_id": "native_finite_moment_ward_note_2026-09-10",
+      "primary_runner": "scripts/native_finite_moment_ward_2026_09_10.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/NATIVE_WARD_DIRECT_OVERLAP_NOTE_2026-09-10.md",
+        "docs/work_history/repo/review_feedback/pr8079-evidence/kept/pr8079-DEGREE10-bf797a38935a935a.md",
+        "docs/work_history/repo/review_feedback/pr8079-evidence/kept/pr8079-HIERARCHY-3d2cbcb326f3df28.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md",
+      "claim_id": "native_stronger_ward_estimators_note_2026-09-10",
+      "primary_runner": "scripts/native_stronger_ward_estimators_2026_09_10.py",
+      "helpers": [
+        "scripts/native_stronger_ward_estimators_2026_09_10_controls.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_stronger_ward_estimators_2026_09_10_controls.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_stronger_ward_estimators_2026_09_10_controls.py"
+      ],
+      "citations": [
+        "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md",
+      "claim_id": "native_correlated_ward_certificates_note_2026-09-10",
+      "primary_runner": "scripts/native_correlated_ward_certificates_2026_09_10.py",
+      "helpers": [
+        "scripts/native_correlated_ward_certificates_2026_09_10_controls.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_correlated_ward_certificates_2026_09_10_controls.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_correlated_ward_certificates_2026_09_10_controls.py"
+      ],
+      "citations": [
+        "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md",
+        "docs/NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md",
+      "claim_id": "native_gaussian_moment_jet_note_2026-09-10",
+      "primary_runner": "scripts/native_gaussian_moment_jet_2026_09_10.py",
+      "helpers": [
+        "scripts/native_gaussian_moment_jet_2026_09_10_controls.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_gaussian_moment_jet_2026_09_10_controls.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_gaussian_moment_jet_2026_09_10_controls.py"
+      ],
+      "citations": [
+        "docs/NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md",
+        "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md"
+      ]
+    },
+    {
+      "path": "docs/NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md",
+      "claim_id": "native_quartic_ward_note_2026-09-10",
+      "primary_runner": "scripts/native_quartic_ward_2026_09_10.py",
+      "helpers": [
+        "scripts/native_quartic_ward_2026_09_10_controls.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_quartic_ward_2026_09_10_controls.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_quartic_ward_2026_09_10_controls.py"
+      ],
+      "citations": [
+        "docs/NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md",
+        "docs/NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8079-evidence/kept/pr8079-HIERARCHY-3d2cbcb326f3df28.md",
+      "canonical_note": "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md",
+      "citations": [],
+      "rationale": "Current positive identities/domain/residual bounds only; negative certification deferred, original mixed document bytes unchanged. Full positive argument previously reviewed; no negative certification conferred by this ownership.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/resume8083-cold-confirmation-v3.json",
+        "sha256": "b4c79c113c74f1932bd9ab40f665e1b7e6af1e58f1f94536c41997cb2981e212"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8079-evidence/kept/pr8079-DEGREE10-bf797a38935a935a.md",
+      "canonical_note": "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md",
+      "citations": [],
+      "rationale": "Current positive identities/domain/residual bounds only; negative certification deferred, original mixed document bytes unchanged. Full positive argument previously reviewed; no negative certification conferred by this ownership.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/resume8083-cold-confirmation-v3.json",
+        "sha256": "b4c79c113c74f1932bd9ab40f665e1b7e6af1e58f1f94536c41997cb2981e212"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8769,
+      "misses": 4436
+    },
+    "packet_imports": {
+      "hits": 8751,
+      "misses": 4434
+    },
+    "declared_inputs": {
+      "hits": 8796,
+      "misses": 4567
+    }
+  },
+  "record_sha256": "f931d841a12fb92d7d1f064ff9c7b3bbb2e97d9b8bf732c9b2aa2ff963b28997",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

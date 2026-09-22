@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/native_finite_moment_ward_2026_09_10.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "TOTAL: PASS=77 FAIL=0\nSUPPORT_ONLY: no native or saved-node arithmetic replay; full integration and audit NOT RUN\nper_element: exact finite synthetic identities and saved certificate semantics; original numerical arithmetic not replayed\nper_site: supplied local defect families and original Gaussian reference; no new physical lattice or state evaluation\nper_mode: preserved residual and variational modes, with both sign intervals still inconclusive\nper_block: immutable source/result bindings and semantic rejection controls; historical production budgets remain distinct\nlattice_wide: conditional analytical Ward and moment statements use linked proofs; no full alpha sign or model-selection calculation\n",
+  "stderr": "",
+  "elapsed_sec": 0.13172197341918945,
+  "timeout_sec": 30,
+  "live_log": "/private/tmp/review-drain-20260915/resume-author8083/logs/runner-cache/.in-progress/native_finite_moment_ward_2026_09_10.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 75902,
+    "samples": 5,
+    "peak_tree_rss_bytes": 83902464,
+    "violations": [],
+    "boundary": "Externally sampled sum of supervisor and descendants, including short-lived ps sampler; original internal behavior retained; external caps enforce this capture."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/resume8083-author-outputfix-capture.py",
+  "capture_script_sha256": "1c52b1cd21562cf797cb997a06ba1dc6e8d28cb2282a38a6064d585d427f42ea"
+}

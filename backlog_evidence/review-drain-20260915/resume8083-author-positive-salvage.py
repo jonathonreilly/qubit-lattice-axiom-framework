@@ -1,0 +1,18 @@
+from pathlib import Path
+r=Path('/private/tmp/review-drain-20260915/resume-author8083/docs')
+names=['NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md','NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md','NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md','NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md','NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md']
+for n in names:
+ p=r/n;s=p.read_text();marker='## No-Go Discipline record and limitation'
+ s=s.replace(marker,'## Current claim disposition\n\nCurrent claims are the constructive identities, valid conditional enclosure bounds, moment-supplier constructions and explicitly finite certificate outcomes described above. Certification of the historical constant-trial/all-q exclusions, zero-dual exclusion and norm-only optimality claim is deferred: the exact-target No-Go Discipline route requirement is unmet. Their original proofs and results remain byte-exact in the input packets as historical conditional evidence. They are not current closed negative claims or premises needed to establish the constructive bounds.\n\n'+marker)
+ s=s.replace('**N4 — Residual-to-claim record.** The paths below identify retained proof/data roles, not new executions.','**N4 — Residual-to-claim record.** The paths below identify retained historical negative evidence and finite descriptive outcomes, not current negative certification or new executions.')
+ if n.startswith('NATIVE_FINITE'):
+  s=s.replace('A separate saved-data certificate proves that increasing the second polynomial alone cannot make either fixed first-polynomial certificate pass its unchanged error test.','A separate historical saved-data screen addresses that fixed-family question; its negative certification is deferred under the current claim disposition below.')
+  s=s.replace('## Why a higher second degree does not repair the two completed tests','## Historical fixed-family exclusion evidence — current certification deferred\n\nThe following argument records the original narrow conditional evidence. It is not a currently closed negative claim; the constructive hierarchy and moment supplier do not require this exclusion.')
+  s=s.replace('rerunning the excluded fixed-p family is not justified by a higher second degree alone.','the historical fixed-p screen does not certify the outcome of a different estimator.')
+ if n.startswith('NATIVE_CORRELATED'):
+  s=s.replace('sharp norm-only quadratic remainder, a fixed zero-dual certificate exclusion, and reduced signed-dual intervals that remain inconclusive.','a valid norm-only quadratic remainder bound and reduced signed-dual intervals that remain inconclusive; historical optimality and zero-dual exclusion certification deferred.')
+  s=s.replace('The earlier zero-dual screen excludes only that particular positive certificate.','The earlier zero-dual screen is retained as historical conditional evidence; its negative certification is deferred.')
+  s=s.replace('## Sharp quadratic remainder and the zero-dual boundary','## Quadratic remainder bound and historical negative evidence')
+  s=s.replace('Equality can be attained by vectors in the6 and-3 eigenspaces with appropriately aligned gf, so this is sharp given only these norm premises. It is not a statement that native errors attain the worst case.','The constructive lower bound is the current claim. The original proof additionally supplies abstract extremizers in the 6 and -3 eigenspaces with appropriately aligned gf; certification of its norm-only optimality claim is deferred, and that optimality is not needed for validity of the lower bound.')
+  s=s.replace('With zero duals, the lower bound is','Historical zero-dual evidence (negative certification deferred): with zero duals, the lower bound is')
+ p.write_text(s)

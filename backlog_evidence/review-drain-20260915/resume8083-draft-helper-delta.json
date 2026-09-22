@@ -1,0 +1,18 @@
+[
+  {
+    "helper": "scripts/native_stronger_ward_estimators_2026_09_10_controls.py",
+    "logic_AST_identical_except_portable_root_and_declarations": true
+  },
+  {
+    "helper": "scripts/native_correlated_ward_certificates_2026_09_10_controls.py",
+    "logic_AST_identical_except_portable_root_and_declarations": true
+  },
+  {
+    "helper": "scripts/native_gaussian_moment_jet_2026_09_10_controls.py",
+    "logic_AST_identical_except_portable_root_and_declarations": true
+  },
+  {
+    "helper": "scripts/native_quartic_ward_2026_09_10_controls.py",
+    "logic_AST_identical_except_portable_root_and_declarations": true
+  }
+]

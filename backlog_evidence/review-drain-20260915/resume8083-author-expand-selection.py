@@ -1,0 +1,9 @@
+import json
+from pathlib import Path
+R=Path('/private/tmp/review-drain-20260915');a=json.loads((R/'resume8083-draft-transitive-availability.json').read_text())['rows'];old=json.loads((R/'resume8083-relevant-numerical-outputs.json').read_text())['rows']
+families={'native-highprecision-b-catalog-run-c6430','native-highprecision-b-catalog-design','native-highprecision-b-catalog-root-review','native-highprecision-b-catalog-post-review','native-rho5-moment-runtime-design','native-rho5-moment-root-review','native-omega5-catalog-supplier-runtime-design','native-omega5-root-review','native-omega79-catalog-supplier-design','native-omega79-root-review','native-degree10-ward-root-review','native-degree10-ward-run-prospective','native-degree20-ward-gate-design','native-degree20-ward-root-review','native-degree20-ward-run-prospective','native-degree10-posterior-certificate-design','native-degree20-posterior-certificate-design','native-degree20-posterior-root-review','native-degree20-posterior-run-prospective','native-degree10-spectral-residual-design','native-spectral-residual-root-review','native-spectral-residual-run-prospective','native-spectral-three-gram-saved-design','native-degree10-reduced-dual-design','native-gaussian-high-moment-runtime-design','native-gaussian-high-moment-run-prospective','native-gaussian-jet-root-review','native-quartic-spectral-estimator-design'}
+rows={(x['original'],x['sha256']):x for x in old}
+for x in a:
+ family=x['original'].split('/toe-24h-probes-20260908/')[-1].split('/')[0]
+ if family in families: rows[(x['original'],x['sha256'])]=dict(x,role='actual accepted catalog, producer, import or independent arithmetic-root dependency: '+family)
+(R/'resume8083-author-relevant-closure-selection.json').write_text(json.dumps({'families':sorted(families),'rows':list(rows.values())},indent=2)+'\n');print(len(rows))

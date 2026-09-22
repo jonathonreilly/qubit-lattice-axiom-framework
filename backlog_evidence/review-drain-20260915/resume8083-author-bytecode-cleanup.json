@@ -1,0 +1,37 @@
+{
+  "boundary": "Generated ignored bytecode removed only after successful sole final cache check; no source/input/evidence byte change and no repeated cache check.",
+  "files": [
+    {
+      "path": "scripts/__pycache__/runner_cache.cpython-312.pyc",
+      "sha256": "9cecdd133a0164df76c336204d3bd9712bca9dab586dc80c6b397d9e68a5493b",
+      "preserved": "/private/tmp/review-drain-20260915/resume8083-generated-bytecode/scripts/__pycache__/runner_cache.cpython-312.pyc"
+    },
+    {
+      "path": "scripts/__pycache__/audit_packet_script_deps.cpython-312.pyc",
+      "sha256": "9918c21d5e72e263750e6c744cc12b4927b4dce3384fc1554e31d4ec03eff08f",
+      "preserved": "/private/tmp/review-drain-20260915/resume8083-generated-bytecode/scripts/__pycache__/audit_packet_script_deps.cpython-312.pyc"
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/build_citation_graph.cpython-312.pyc",
+      "sha256": "2503b61ec1c056b9d623461d9c9b835cbc706ef8aa3090e350ad3f61d0bd5f26",
+      "preserved": "/private/tmp/review-drain-20260915/resume8083-generated-bytecode/docs/audit/scripts/__pycache__/build_citation_graph.cpython-312.pyc"
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-312.pyc",
+      "sha256": "e4d58d581fb0ebc63d85ac5bb4049fb74d465a875f96e44c9199bcd729e2c8f2",
+      "preserved": "/private/tmp/review-drain-20260915/resume8083-generated-bytecode/docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-312.pyc"
+    },
+    {
+      "path": "docs/audit/scripts/__pycache__/ledger_io.cpython-312.pyc",
+      "sha256": "ecee0533ae381a44286635696f76d56a7a31a76d9f928bdb10e2e0e8808d0377",
+      "preserved": "/private/tmp/review-drain-20260915/resume8083-generated-bytecode/docs/audit/scripts/__pycache__/ledger_io.cpython-312.pyc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/__pycache__/review_receipt.cpython-312.pyc",
+      "sha256": "8c66089ffba95831a3616ec220e8f4808a6fc99a45758213ef1e18c8c06a972d",
+      "preserved": "/private/tmp/review-drain-20260915/resume8083-generated-bytecode/docs/ai_methodology/skills/review-loop/scripts/__pycache__/review_receipt.cpython-312.pyc"
+    }
+  ],
+  "all_bound_bytes_unchanged": true,
+  "tree": "c7790688d5feebb253af708ff1f3b84b0742d0a4"
+}

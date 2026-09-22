@@ -1,0 +1,8 @@
+{
+  "checked_objects": 3488,
+  "result_rows": 3484,
+  "geometry_nodes": 1742,
+  "geometry_endpoints": 3484,
+  "hash_or_binding_failures": [],
+  "boundary": "Read-only CAS decompression/hash and accepted RESULT endpoint mapping; no endpoint arithmetic or primary computation."
+}

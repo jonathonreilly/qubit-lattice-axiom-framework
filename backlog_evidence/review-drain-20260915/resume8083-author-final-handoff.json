@@ -1,0 +1,17 @@
+{
+  "role": "author handoff; independent final review required",
+  "tree": "c7790688d5feebb253af708ff1f3b84b0742d0a4",
+  "files": {
+    "/private/tmp/review-drain-20260915/resume8083-author-outputfix-final-freeze.json": "55eb5cfbd2dc128050061254b93f245839518bb97649b691157cf2bf60b7009c",
+    "/private/tmp/review-drain-20260915/resume8083-author-outputfix-preexecution.json": "c577936b14f083cc22d1faf8183b78496634d1e28deaed7da4d55fedda50707d",
+    "/private/tmp/review-drain-20260915/resume8083-author-outputfix-capture.py": "1c52b1cd21562cf797cb997a06ba1dc6e8d28cb2282a38a6064d585d427f42ea",
+    "/private/tmp/review-drain-20260915/resume8083-author-outputfix-capture.log": "5e6c9043ecdf7e9f5690b127a4434aea3e062f7322e7a47e615d0a3a9a25f4cb",
+    "/private/tmp/review-drain-20260915/resume8083-author-report.md": "f6839f3db406e2e8bc00d6a842d694ba3fff282dbb704c007facb41abc445bee",
+    "/private/tmp/review-drain-20260915/resume8079-author-outputfix-execution.json": "662dd9a232b5a92a8992ccd3253dd34ce1c827c1921ae73648c593308d4eb95e",
+    "/private/tmp/review-drain-20260915/resume8080-author-outputfix-execution.json": "3d09e38723dcb89dd33c2c321e3f5342704c151179bf84180ff3c17e20a53683",
+    "/private/tmp/review-drain-20260915/resume8081-author-outputfix-execution.json": "cfd7b43ace7fdc3b6e5c3460c47959770090690300c3acbc40d221e7a6b9de13",
+    "/private/tmp/review-drain-20260915/resume8082-author-outputfix-execution.json": "e3c31822f6867bcd1f4365c26cf7ff43a1d832c49b114f859897b36fb779bd5b",
+    "/private/tmp/review-drain-20260915/resume8083-author-outputfix-execution.json": "d26c6b998fc11ba3651ed663d48375ca634fb8d3ae908138194545a46017f061"
+  },
+  "final_cache_owner": "/root/resume_8079_8083"
+}

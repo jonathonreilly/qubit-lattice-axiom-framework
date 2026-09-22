@@ -1,0 +1,32 @@
+[
+  {
+    "note": "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md",
+    "label": "hierarchy proof",
+    "old_target": "../outputs/native_finite_moment_ward_2026_09_10_inputs/imports/HIERARCHY.md"
+  },
+  {
+    "note": "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md",
+    "label": "degree-one proof",
+    "old_target": "../outputs/native_finite_moment_ward_2026_09_10_inputs/imports/DEGREE10.md"
+  },
+  {
+    "note": "docs/NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md",
+    "label": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft",
+    "old_target": "../outputs/native_stronger_ward_estimators_2026_09_10_inputs/source_draft/"
+  },
+  {
+    "note": "docs/NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md",
+    "label": "packet",
+    "old_target": "../outputs/native_correlated_ward_certificates_2026_09_10_inputs/HANDOFF.md"
+  },
+  {
+    "note": "docs/NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md",
+    "label": "packet",
+    "old_target": "../outputs/native_gaussian_moment_jet_2026_09_10_inputs/HANDOFF.md"
+  },
+  {
+    "note": "docs/NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md",
+    "label": "packet",
+    "old_target": "../outputs/native_quartic_ward_2026_09_10_inputs/HANDOFF.md"
+  }
+]

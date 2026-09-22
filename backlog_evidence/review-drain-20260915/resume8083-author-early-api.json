@@ -1,0 +1,73 @@
+[
+  {
+    "note": "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md",
+    "type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "primary": "scripts/native_finite_moment_ward_2026_09_10.py",
+    "timeout": 30,
+    "helpers": [],
+    "helper_timeouts": {}
+  },
+  {
+    "note": "docs/NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md",
+    "type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "primary": "scripts/native_stronger_ward_estimators_2026_09_10.py",
+    "timeout": 30,
+    "helpers": [
+      "native_stronger_ward_estimators_2026_09_10_controls"
+    ],
+    "helper_timeouts": {
+      "native_stronger_ward_estimators_2026_09_10_controls": 30
+    }
+  },
+  {
+    "note": "docs/NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md",
+    "type": [
+      "bounded_theorem.",
+      "bounded_theorem"
+    ],
+    "primary": "scripts/native_correlated_ward_certificates_2026_09_10.py",
+    "timeout": 30,
+    "helpers": [
+      "native_correlated_ward_certificates_2026_09_10_controls"
+    ],
+    "helper_timeouts": {
+      "native_correlated_ward_certificates_2026_09_10_controls": 30
+    }
+  },
+  {
+    "note": "docs/NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md",
+    "type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "primary": "scripts/native_gaussian_moment_jet_2026_09_10.py",
+    "timeout": 30,
+    "helpers": [
+      "native_gaussian_moment_jet_2026_09_10_controls"
+    ],
+    "helper_timeouts": {
+      "native_gaussian_moment_jet_2026_09_10_controls": 30
+    }
+  },
+  {
+    "note": "docs/NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md",
+    "type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "primary": "scripts/native_quartic_ward_2026_09_10.py",
+    "timeout": 30,
+    "helpers": [
+      "native_quartic_ward_2026_09_10_controls"
+    ],
+    "helper_timeouts": {
+      "native_quartic_ward_2026_09_10_controls": 30
+    }
+  }
+]

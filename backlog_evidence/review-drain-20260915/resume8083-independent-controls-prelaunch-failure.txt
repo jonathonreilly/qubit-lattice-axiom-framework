@@ -1,0 +1,1 @@
+First launch failed before controls: resource.setrlimit(RLIMIT_AS, 384 MiB) raised ValueError: current limit exceeds maximum limit on macOS. No checks evaluated. Corrected control uses alarm 30 seconds and measured RSS postcondition; tiny exact fractions/15x15 integer arrays bound working allocation.

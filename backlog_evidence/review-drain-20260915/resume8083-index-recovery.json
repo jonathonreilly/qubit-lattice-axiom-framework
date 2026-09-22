@@ -1,0 +1,8 @@
+{
+  "base": "985d309e763c691b4ea4774ab518c60f819b7aa3",
+  "tree": "3977cabdd3dfbc65e66e3f2dfe9baa9a32c71e88",
+  "recovery_commit": "40baeb955183e6c2df01cea4fac2dcfe0689091d",
+  "patch_sha256": "e137c78514dab5c69b6c3d360c10945706a80002e47a66b41bc897737ae3c2d7",
+  "patch_bytes": 78351976,
+  "status": "Interrupted unreviewed staged content only; unstaged files and unpushed external reports not presumed recovered."
+}

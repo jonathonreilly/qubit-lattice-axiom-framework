@@ -1,0 +1,3298 @@
+[
+  {
+    "pr": 8079,
+    "base": "4600d22d47052040aabe090148ec82cb9a1828f5",
+    "head": "181e182a14d358c8bca434a1eac398b27237ec8f",
+    "merge_base": "4600d22d47052040aabe090148ec82cb9a1828f5",
+    "rows": [
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f92f7ecacb6f44faca43c150dae443e371df0b67",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/CLAIM_STATUS_CERTIFICATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cc28d1982aa451ccc1f03ee347d1cb0bd3d4c6b5",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/HANDOFF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "805faeec59f134067e08a2fa21bc71842bc04cdf",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/IMPORT_PROVENANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "760d152316322161944ff62db514bb5e2ba9d192",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/NO_GO_LEDGER.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f3667ae60a29af55e4e31c80c6c947eed2b41a1e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/RECOVERY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "61ef760d717e488bd39ac24b661729a0ff83ddfd",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/RECOVERY_MAP.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "bd751a13f1aba165f29200100d0ce0ec03fbe5b2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/REVIEW_HISTORY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "368cebaac4ae954a743f66a2d376752d471153c2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/STATE.yaml",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "fe7bc967dd830739988e4be33ed9eccc7b5f8611",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/TRACE_GATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "57996fced0e315506c84f3de46574c81a25a5cd9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7d170a11298ae89e676848bd4f89b337fddc0a48",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_PROTOCOL.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "235faf5e2d3226332c9cbf37b865b8d2b2dce88d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "14d75e44d123bc544ccc1e5ac78801ae3e8f532b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "315954b750a24ded68d0815e631b918607485612",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ca1f6bbd54218f01d694e7b6206d64dd29c86cc5",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "27fc654e07bb54b53a34816f289e7e59c84d4055",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a392ba0b1f33885bc2c7f07b3ae4262b2ee501cf",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "fb999c699896db8defd37748ed077e31c687d8b9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4961efa12a80be9a6024837dadb4fe53d1dbd19e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_compute.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "10560a1473665e4eb255f7433a7fdf1dd2e5cc07",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_worker.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0c77b31609291398ff7c4a054f355d8504da2b41",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALL_Q.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "174f8c1f73d92907abcbc281c213e18105be9622",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "15f0122cdc07fdf8ec69f600e448f9262be2e052",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1a7351f8ee18af30deed6afb3f2e8aee91226665",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_PROTOCOL.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3c4ffaac8213497dba18993ac9bf36adb1e52fc0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ce94ce34a00608b91c75fd424a59e2b7bc537b07",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "755b2cc4c5b42d3adefdb11801bc8a8189b60dac",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "98bf8a235ac3de4bf77be0934b52181dd50e7d86",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9e2693fea32eb5b58f8c71c14008baddf0d031b4",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "227817c29b645eef370bdc6acac5ab81d5754b53",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cf1eeb6ab8f53c678dd45a169733c144b2a409ee",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "952146469b1c9f4504364ca10bdae2e61d9c7621",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_compute.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9aea8001e631bdb9177fe5ce9fa476700ca3e065",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_worker.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3526cc80090b7d3f65ec95b28d3f40bc833c8c05",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE11.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "333608824e92a82cfa1f68fd942503d1589000f0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE20.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0a23d43891940da35d8956470dffef93465ef756",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/HIERARCHY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1d7e0a8038fdbc06f2e68c30633e532ad39b97cc",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c78128d05bf92207003ecde2c074b09cdc547dcf",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7a29994559c4a58a284789beb4ab9f34190c5485",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_PROTOCOL.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0399c1c4a1737ec528de6b87df5767c661604309",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ad00f7ce03837d2a5684025f8f720e4157c7a20d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2a42a538ee33325e917d9d737523dab8fbb93532",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "573381d4790b3f070d16de232087a3c5de9158d1",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "531a9e27cb0c594dd5238232e5531c530b9c3a51",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2e974ebd01d6ea60113c946c54dea79c6eddb63d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6a87759ccfcff90d6d18982741c01c95d603ba44",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "002b2b9958de7828dd18e99d5e927171e6158ca0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_compute.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2cf87bca6b4039a701f2479986fd9ad9e33c6345",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_worker.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6956041e18462a6df4c2a3d7e6a29eb5f1b22a50",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/AFFECTED_RUNNER_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "00c3fdcfa14b943bd95337a9417be281623340b4",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-allq-saved-screen-cold-review_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "53b863f218066e95f7c2c319e9d501bc7b5c2c4d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree10-ward-cold-review_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "fa5980d47ac5c599a21581731353745ea3bcc772",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree10-ward-runtime-cold-review_GUARD_DELTA.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c6201029f95e6d0f1249d872318d30a8e111a77f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree10-ward-runtime-cold-review_INITIAL_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "95fb14c57d20763bd32f98b178597aab5d7a7d80",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree11-independent-review_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "df6ea02b458ec669cfbdb42e766287f23fefecf4",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree20-independent-review_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "43ea6a137e895bb76480deb1df9f388c2395d09d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-finite-moment-ward-cold-review_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b9d4172a9b2e273f7c299a8094a711b64f18363c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-independent-review_AFFECTED_CONFIRMATION.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5abcfcc2c1a88284701a251d15c2d0c25bce8f24",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-independent-review_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "18cdc0b4256b2b3f2ab11fa41559ce36382e4d11",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-math-cold-review_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c6660addd27d484ece1561323859ca537e8edd05",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-root-independent-review_AFFECTED_PASS.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1a1c7c36dae165a04bc6919355a869e6be127cab",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-root-independent-review_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1b34d9116da01bfab12b0307e9fa122609393a45",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/CHECKPOINT83_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9790350466cb7fbd17ffb4f92f60caeadd1ba162",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/DELIVERY_CHECKS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c778ee3eeeb674f2dbac27b2c0b3e0e42dc365ce",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/DELIVERY_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "aa1e3e98bb5063b75b8bceeb7f94ab0c0ce3b336",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/FINAL_PARENT_DELIVERY_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "53d9afc0a268773b05854d6a7b90c0a21b796973",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/GRAPH_RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ac16ea0f95b7cba46098a88ca52f6d44db0715e9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5435ed3ad2502005199985a41adfab6cdd3ccb9f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/SUPPORT_OUTPUT.txt",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "25a125b6923d1d46d6982eea222aec4576cec69c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/VOCAB.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ffe91ad1a7cc2a47cf1780e24bb039bf93d30880",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "status": "M",
+        "before_blob": "d4df9f91b2707b949aa792ba89030eb735e9980a",
+        "after_blob": "db5bf76b4dcb1b39a39cb6d5384885e76843c13a",
+        "before_mode": "100644",
+        "after_mode": "100644"
+      },
+      {
+        "path": "scripts/native_finite_moment_ward_2026_09_10.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "39d1c2b76be106c40391b97c8a34313f1a9dcc8b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      }
+    ]
+  },
+  {
+    "pr": 8080,
+    "base": "181e182a14d358c8bca434a1eac398b27237ec8f",
+    "head": "ac7bc8d614a67cec5a86d59253be17bf04b98f34",
+    "merge_base": "181e182a14d358c8bca434a1eac398b27237ec8f",
+    "rows": [
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5483b6fb100f2205218077fa8df079d332d9600c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/CLAIM_STATUS_CERTIFICATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "8a3d2939991fd660ac00dd0c193d64eb95dd96ed",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/HANDOFF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "049bf4dab54ccbde41472ba8c16855cca2204f5a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/IMPORT_PROVENANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a53c646ef8487fadce36fa97a6d52be59d635ca9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/NO_GO_LEDGER.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f4b99a52e2105deae131e2ee3c2f0b006dab7278",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/RECOVERY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5b5e6415411ba4fc853544c096d46a1eea054534",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/RECOVERY_MAP.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "45556caa3200efc12e879de9bb5812ce39649d59",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/REVIEW_HISTORY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ee115f1614a88a91c49a85b1aa5091813fa3f419",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/STATE.yaml",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2eca0ea273d6759fcf1e87feb367daa95790c1e7",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/TRACE_GATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2151e89446b5112c0eece3cb43ba28e13778c8fb",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/CHECKER_SCOPE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "431943059e688f19e6e932e7abfafff9a76edd84",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/COMPACT_OUTPUT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5a6bed2f6a5391ac78b66389d97e882b13342ab8",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/FINAL_SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a7499607f1db6f60a1e179c47d0e39981f5542b7",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/HANDOFF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cc60deadd160246deef936f3b6782095d7490884",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/INVENTORY.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "65da1fc8c7e378b68cc52b32f79dee03aa074a69",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/NOTE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7fe4052d1c5c4484d50580d88e352bb9985cb92d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/PACKET_INPUTS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "85834df59d2ccd1782682a91070fa57a4f51f2bb",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7e8e69eefe54cb3b67d3c82b694e5adac3b15981",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/check.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4af8a5beb8fe3c39a4d911687cf5e2c3dc6c4817",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree10-posterior/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "896d5c67ce4d7adc0178a6af8c69d75dc00488c0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree10-posterior/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1f42d6766c5c00f7d7f7521341ec251b88ab30fa",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree10-posterior/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7014aac5a35af6973f6b80c852d01205f101ff72",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree10-posterior/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "153ab12eb7f17dfeadf605802d6389b30dd9fe4e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree10-posterior/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c3c803cca54521680e77a9c7dbd947ddc994453d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree10-posterior/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1cca1d45d2c8726e73ec99a09e299e1da99258fc",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree10-posterior/SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "caf248df8d9ef7bb53186a1f4f3cc496c80784d2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree10-posterior/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "495efeb71bf9f0d0da5c6b6fe8d35c084fe8ae29",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-posterior/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a0d032f8510e1db54e3e1bd59cba9d53dfa6dcd2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-posterior/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "91c8761de8addcc96d7555f4a54d72f2b5f45ca0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-posterior/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6355732e5bd435b9f8f517a0af35700eff494c89",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-posterior/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9d7a4f0a38503852376246eccf1ccc4e24f6db19",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-posterior/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0213026ea115dcb2388f21eb8067fa76863ebb98",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-posterior/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4830a80ad4a731ccda6b7a417ae04b16e904a537",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-posterior/SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "97fd50d1f035fdb72ef2a07ba627d8e96a880a2d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-posterior/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0ef9472497257b01f4f68027fc226e1cebb09a95",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-ward/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "10a48f6b503e1e8348a1a0158624107ecc1e3a3e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-ward/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e58a164db771d7de4099a98346ba28ca3c7233a3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-ward/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2789a2f1147f5d1adebd03fb58baa35540f8b083",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-ward/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2fdb8408100b34c0e08b5f5202b3b9eec2404988",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-ward/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2259b49161963dc47666cb196485812010858e3d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-ward/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d1b3b3b7ccb56d6403503ba510ea623b8ec50448",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-ward/SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0fd333de401a804fe35afe8a0685c5a24aba7f85",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/degree20-ward/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d34ff9c6448aa51874b37e87a9f6283309a8c72a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/spectral-residual/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f7c9be85ff5f7430021dc94d528e87cee2565af9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/spectral-residual/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "17f430593f52b0d1782268e0114044a08765e4f4",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/spectral-residual/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5b401c01724c032410b3a4d7ae227efcc4d2036b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/spectral-residual/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1b0c6d84c4e3f99139eee67a38982d06324966f8",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/spectral-residual/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2ec1eda0609f2a64cb177abf1cd32378c07e136f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/spectral-residual/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3ef82a09c03b666ad12218adb3357169b81307b3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/spectral-residual/SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7dec8013852ee1f53ed8a3c18878b66e32ecd8cc",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/evidence/spectral-residual/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "fd6dd82b43ba5706bb8903cccd27a5f0fed756d6",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/history-before-portable-checker/SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7e8e69eefe54cb3b67d3c82b694e5adac3b15981",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/ADAPTIVE_ROOT_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "704a373db7ffa438951ae444f16328bfc2fef800",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/DEGREE20_PROOF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0a23d43891940da35d8956470dffef93465ef756",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/OPTIMAL_TAU_PROOF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "84e93d9f77fd68f32baf71d69712a6114b20a5dd",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/POSTERIOR_PROOF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "37104784bba24761d99e10e7113ac950dca3ff56",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/POSTERIOR_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c397e902cc5d650feebf47157297da5d960575fe",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/SPECTRAL_PROOF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cd14ee05286c02de54542a72b2e9e46e6175ac68",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/SPECTRAL_PROOF_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "66af3a4f9b3011ff0c56b624f1917f50ede85c3f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/SPECTRAL_ROOT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2ec1eda0609f2a64cb177abf1cd32378c07e136f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/SPECTRAL_RUNTIME.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3ef82a09c03b666ad12218adb3357169b81307b3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/degree10-posterior_RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7014aac5a35af6973f6b80c852d01205f101ff72",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/degree10-posterior_ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "153ab12eb7f17dfeadf605802d6389b30dd9fe4e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/degree20-posterior_RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6355732e5bd435b9f8f517a0af35700eff494c89",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/degree20-posterior_ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9d7a4f0a38503852376246eccf1ccc4e24f6db19",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/degree20-ward_RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2789a2f1147f5d1adebd03fb58baa35540f8b083",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/source_draft/imports/degree20-ward_ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2fdb8408100b34c0e08b5f5202b3b9eec2404988",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/CHECKPOINT87_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "164eb296a50ba2712354428af94262b153fd7e4b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/CURRENT_MAIN_FRESHNESS_FINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6ba42e9717e697f4c594353612454b3d239bb4d8",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/CURRENT_MAIN_SOURCE_IDENTITY.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3bcc437bc66f5ba82c9012398b83963b8f152065",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/DELIVERY_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6ae6940f969d3e198bc531b056c29a87fd511da8",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/FINAL_PARENT_DELIVERY_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cd5a2335b2ccf23c1888825f99f1bed6aa84a15c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/INDEPENDENT_METADATA_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "720229c2534d35dca8b58f2e8e9d3b0fdb58ae16",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/INDEPENDENT_SOURCE_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1be15ef5be8ea620f6bedfb88b7bf142db782dd7",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/REVIEWED_SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c2bb82cd0a0ff90cf8d2c63f0fe3fb51cb5e77a4",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-stronger-ward-20260910/verification/VERIFICATION.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3bd33e070f901889714c96ef4071e52cb629d2e4",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/NATIVE_STRONGER_WARD_ESTIMATORS_NOTE_2026-09-10.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "8db51b6c5e95ff37a7215699846b7c2ebb683fa3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "status": "M",
+        "before_blob": "db5bf76b4dcb1b39a39cb6d5384885e76843c13a",
+        "after_blob": "ceda1ae526cc286aa0748e388b5de9733416b239",
+        "before_mode": "100644",
+        "after_mode": "100644"
+      },
+      {
+        "path": "scripts/native_stronger_ward_estimators_2026_09_10.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9ab9ce89211c9aef4816be537f57e633901d1064",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      }
+    ]
+  },
+  {
+    "pr": 8081,
+    "base": "ac7bc8d614a67cec5a86d59253be17bf04b98f34",
+    "head": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+    "merge_base": "ac7bc8d614a67cec5a86d59253be17bf04b98f34",
+    "rows": [
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/ARTIFACT_PLAN.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7282903417409ce0d5c46c6418e3b3881c0e7e71",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0a49e5209c1b00c08d042cea24ce3d688c597317",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/CLAIM_STATUS_CERTIFICATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0840926afcbb11def15e360cfba28fad1f5e5eda",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/GOAL.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c8195446b3edc514f5a9aaa15e04f1621454f499",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/HANDOFF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cbf8cc893ff8ab9cd26325ef2212e79ff4ff59ed",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/IMPORT_PROVENANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3af9e74db5a5031e4c9b3372a3dcc753890cadab",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/LITERATURE_BRIDGES.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "eef2449bc58789a246688bbb0c12442f26ec9173",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/NO_GO_LEDGER.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0289d3463d0d9c73ed6e49d6a5cf34e1eae3c6ef",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/OPPORTUNITY_QUEUE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "21b9aaa63704836ca0a5b524b15c36085f78e398",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/PR_BACKLOG.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1d35d59da8291855c18206b44f3f9f55529be8aa",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/RECOVERY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "bfe5c79994de11534e82d7b00b85f972b8e39d98",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/RECOVERY_MAP.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "05c71292d7ea840799d4df971813b3467e07ab74",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/REVIEW_HISTORY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "df58d24d3c07f5920bd7c786b6214141aa7a232b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/ROUTE_PORTFOLIO.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d729daf49ac55110439a410d35a74a113604b3d8",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/STATE.yaml",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b72f03e75851bf5604393d8cffe7093e12c37b7e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/TRACE_GATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e83a1cebb1072b403cbba788ac47171d2c0424b1",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/COMPACT_OUTPUT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "515c6d4d5e9dc431daa760fbf9f2f2a662cb638f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/HANDOFF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "514a0a3000e10bc7414e24e51603a3571a5a4e0a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/INVENTORY.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f4635268ebb56f0a4ec1f6013bfece16a562381a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/NOTE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "649d7c20e17e9bed39e16a73e53ec9aa41d088d5",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d829bc68100b3867a0c13321539089872e26d4d6",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/check.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "752005642681eb560451b6d87e1816a38e46086c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/controls/dual.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b1758a542e10bbbae0e58d1d2e8af82a34c67d21",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/controls/scale.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "15fea1b916da6fe21db757c28e47895012c38cfd",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "bdf7188e0571d4036cbd5827ddc6298e314bf750",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/EVENTS.ndjson.gz",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "11947d44301c80943ee66c3843761e9094019607",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/PARTIAL.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "fbc1631fa1905e751ab5a96f7656d12494a09398",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f0466fdab0f679ceb2008a67df7ac11a2ddc7140",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "526e2ec08c7c78faf57b207012f628346fb35eb5",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e3003165361cb20531d50e691895fe42be7d190c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2093be02d2e44c0dec05bad2209158a9ce8aa792",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1f1f9c0f653e331d356756ede259336191799104",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7b4134b5c18d29fba3afcbb117a66e3a0e867f3d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/STARTED.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2c8781cc91f79053495d82e102764bc580d21217",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ec06ee701754010dfa34c9634776d6d362748a16",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/residual.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "10796ee43e4926806cf2976b4a3565a8d2383c96",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/residual_INPUT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "afbb13065fa47f1ba6d398d62246a5757e6ae0f2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/variational.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "bfce1e938cb01f2e01ab3da326fc9b8df01db17c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/dual/variational_INPUT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "92698d7c8337aaec223697becd6ecef5ed7ac99c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d59c9ccf83ba8e71cef479ae000c3f3e8466ac67",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/EVENTS.ndjson.gz",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e266b2f7bf46442dc02d7d9a094c14448d17f607",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/PARTIAL.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "79ab0deb968047b3ba121d6815efd1e8de505c8d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "397799c6b7a7b691c159d8ea23f3ae0ee93c4d71",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "29542fddd4caccb4375f31144341d1a362f744c3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ad6d981cad7331c6cb84749105df43927b3417ae",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c8ca2a8767c0ed4aba421ec8e66b69b4a8a54428",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0ced4c0096e65b71f2da9bbc63d3d748536f9535",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/SCHEMA_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e1c81943a25c1f225e974d84066f1ed79deb0599",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/STARTED.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ed4279399068a05197ab4868fc170ed52e81a927",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4411bf39ac6d4bc1b76be013a2d2b7f0e1e86852",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/residual.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f39f7fe30a72c5c640daefb6810c729cf3a4ca9b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/residual_INPUT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9051b16e7837234eaa0ee4ef7f813907c7bc2032",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/variational.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cb7f3e0892413d54e021e8969bca9ba122de88ee",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/evidence/zero/variational_INPUT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c1a89ac8c92f53c23f64c2bd36082f8483caa04d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/history/check-before-status.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "534c8dc01c8c9616771b91d53d2031da3a1ea7d8",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/history/check-before-syntax.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cbc6af84c1506c70069d3cc94f0d7462bd4e7250",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/proofs/reduced.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a15a21f8a8fe5a245fd49a25aacee72f7d46a36f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/proofs/scale.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "97f158468d73a81458b6d0ccdb161d6bccb95d08",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/proofs/sharp.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0fa48c14de0fccc93c7396396c9d36b2a0a933d0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/reviews/reduced.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d0c2fecb60104ab32ec16257af032cd0307cf60f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/reviews/root.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2b7b974b3eba51186331af94fb93c31d2f88e060",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/reviews/runtime.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "700c92ce48f41d6e8d258ea4e1ce9fff66cb5cbb",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/reviews/sharp.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ebc83e5e344e3f7afd87a1547cf9ce11bb827a4b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/source_draft/reviews/zero.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e430c81d7582a79a6325bc281580dfffc3b40450",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/CANONICAL_SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "444833700366a0d90ecf8d83e4b50d586838b39e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/CHECKPOINT89_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "31875726be55e00d80f4c38ef64144af52dd6c9f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/CHECKPOINT90_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "fccfce82fe0d57987a55fa3c2d3bef793db09e36",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/DELIVERY_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ec98c03b01869b8f9d8e7ef9601c1667b16a7a3d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/FINAL_METADATA_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "492b404d5e3c4ae37f6df9e14c3ab25d97d279d9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/GRAPH_BUILD.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e4a6e6aa4c49afe1bb4153dd7dd10827f6b14fda",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/GRAPH_MANIFEST.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c6e8fbd97fe29ba61f861667b41bdb6e04b676b8",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/PREMISE_FRESHNESS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b4b180f86eb229fceca73432b321b66730b4e8f3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/README.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d63a90590927eec75b17ba32dfd8f2dabf568b36",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7084322df787b89982f732a21ebe5cdaab3ec5ad",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-correlated-ward-20260910/verification/VOCAB.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/NATIVE_CORRELATED_WARD_CERTIFICATES_NOTE_2026-09-10.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b0473d5ed82005c4f18d828c43cb02a2cf639156",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "status": "M",
+        "before_blob": "ceda1ae526cc286aa0748e388b5de9733416b239",
+        "after_blob": "54c52800362e908a036b2de9c1adcb2ea99cb9c2",
+        "before_mode": "100644",
+        "after_mode": "100644"
+      },
+      {
+        "path": "scripts/native_correlated_ward_certificates_2026_09_10.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7b19f4ac1b7510752435c9d9439b186333f26a57",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      }
+    ]
+  },
+  {
+    "pr": 8082,
+    "base": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+    "head": "dee7f1f07698bc36cfffc4e6495168a9107ff956",
+    "merge_base": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+    "rows": [
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/ARTIFACT_PLAN.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a8c7e192c4bbb859aaca0be09dbfe921daf194e3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "eee1c700c52ac1048f6e68c9f6df4c1440bd8255",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/CANONICAL_SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4a1d9e9866c4c7ea26f74f2d550de6d2e0ddd9d7",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/CLAIM_STATUS_CERTIFICATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0330cc6fbaeadf40bfcb23898b70836bdd790e6f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/DELIVERY_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a2bb021487aee4434a6e71d9826eca9a6f2f1220",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/GOAL.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e608b876202e0eeffe277f4a1c67cd9e479f2115",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/HANDOFF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "32373c19e700b3df680e5c9dd118550884b64e3b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/IMPORT_PROVENANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "13c4dfa8b140870456668fa19e67f4fc2f0126f3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/LITERATURE_BRIDGES.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "72fc94020cd3e11a0e1e32b674b964eeff48cf25",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/NO_GO_LEDGER.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2fe9549de7f8d18d0d41d49a5ed38ae1c110fa8d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/OPPORTUNITY_QUEUE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "627d2f110a81d356baf127ea42cfa4512ef7ad97",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/PR_BACKLOG.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "30c03b1afa73efa939108bc77280fa0d0e8b2803",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/RECOVERY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d017007fc815b2dfa3ce482e7d3b92629928b8fd",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/RECOVERY_MAP.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c31f2cd5abec7dc26018eda747d63d64db809018",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/REVIEW_HISTORY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "55495f5811f99f718f38b7f325461eb7679fbd31",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/ROUTE_PORTFOLIO.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "eddfec7f01136147b099c0e0a36a54176f4fcd65",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/STATE.yaml",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1f7084b9694575485cf6b61cf160f0cdc3d457a2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/TRACE_GATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "873615b832e6f77082cfb622ede5a0d33a3071e9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/CHECK_RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "daaaf0108b6479125cd44e3e88d017f93d56b253",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/IMPORTS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a48f79ff174d8d0a696198a6e4c151d1cf4324f1",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/NOTE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1870c5da7cc0e9ad9e05a2f2a7b86336084d8762",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "c39f07181558803a67b6f0ee5e381f9c96c886d2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/STATUS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d86057cee4fe3f50ed9abd8b65c0e420bc41fa2f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/check.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "8cc543e0f3241f7ef5e32f99e36f4c09961d23c0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ba75b336c44b20f9851382a2a18782a4780a08bc",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/EVENTS.ndjson",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "180acbc767f8d61fddf97b8055d76cad9e62b160",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/PARTIAL.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b3e4c78388cc54491af515e94596cccf1dc48647",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "795e8ce1ddf2962cf31ea9cf2bb2ad4113b9ee93",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "505c35d10335ae555e123ec2b3bcaa0732b9e968",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "022667a96e98129cea02a8e5ba8cf4f61503589f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "8991c82bc10cf2cf440c573717336adf4b878c59",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "93f52153b4061f5a3929aea34919a6e49c12104a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/STARTED.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b669c8bbfb76e8786ebb6dfe7b24e9d775194f48",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/TABLES.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3a8974db16d2d76d1a3887fb3e300a1a45ea388a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7cfe3eda2552a733e1f4cadd5f608b1bd1073ca9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "92878482b2fde4e2e4a34f3c30f17056fcf3a50a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/PARTIAL.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a26aeffec284fc6b19fb4128c639b4e197952404",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3838754dc9dbc0ef9e81338f7f746ef51050e156",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "eb45e0447149778472ee2110792fd36f97e53842",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2c58fcf0207833bfd347a2759d23312fe6abed23",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "338ef3b8cb0697642da28a722c91d52348d51a35",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "05814e9c9be481c875698e1bbb77ca01bdbdf07e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/STARTED.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7b39ad33215f46a4ae7d2b8ddaa7fc46870f5628",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "97a3b630bfe74147d8a82a2c47a11c0b9fea06e2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-high-moment-parent-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "899fe8b42032425f4e3c69ee998ac9131e7506c3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-jet-degree-cold-review-DERIVATION.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a9f5963e928556fc2ef309b333dadb33e1fe88b2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-jet-root-cold-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "318405c940fabeba62f37750b65f1213b3331793",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-moment-jet-cold-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f24c431e0c143f98fbc3e59d4970ee3cad548565",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-moment-jet-parent-synthesis-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0fdf96b275db2beebfdcde031a0e7f9acd72813f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-moment-jet-stretch-DERIVATION.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9476bca849bb8068d019c493c4c5ecedd0e90698",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-omega79-root-cold-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "724909d309a3d9ac1e46efda9af60db495980912",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ba75b336c44b20f9851382a2a18782a4780a08bc",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-PROTOCOL.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ece38c508b59c2bc44d94c0033d16700555eb3f9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-adapter.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "005c0ec9b9f3da6f99ce1e5bab90339b82733153",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-core.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "35ea16755dd19d5a8e9ecf98632d08b020781cb0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-engine.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a67da7cd43e3ff0c26c0e4e6825e099112ceca69",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-loader.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2f4897f80b387aadbe1d74094f79362321769b96",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-worker.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "85ec0c2d0941bcc36cf9246df3737ad99b851150",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-jet-root-review-independent.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4a1b6c07b825bc95896be16647ca8656d4b9ebf2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-jet-root-review-run_once.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d08e5f8453ff9c8af75539a0d6c7a359fb48d81f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-jet-root-review-schema.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e1813d1150aad4c9c60916012fc19ce6a81357a5",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-omega79-catalog-supplier-design-DERIVATION.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cd686dda655ffdf085e8c2ddef4d93180424739f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-omega79-catalog-supplier-design-compute.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "bd115ca677a158f29fef4108ffd4da4f8d0f5049",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/CHECKPOINT92_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5fd7fea6858a8f770e2724dbcfea4e5660d403df",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/CHECKPOINT93_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7ec09bd3d6b0bc1b83255157d3170a11f4eaec62",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/CHECKPOINT94_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "57108fad5dc6583e46b459df24386f36efb553c9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/COMPACT_CHECK.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "93801d76f023a644886f5c19c68dba678de011f9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/CURRENT_MAIN_PREMISE_CHECK.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d001dc6fe3f71f91c77f3770a763201d77eb7ff0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/FINAL_METADATA_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f57b27bbfe6bde5de5861e387e28c8b051b5ff3c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/INITIAL_WRAPPER_INTERFACE_FAILURE.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "95750db4d69152baae9026e477ba5d0d0c34b4f5",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/canonical-review-FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a7904c6e2ed2d8d89c081dc114841ae26fe22e16",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/canonical-review-HASH_CHECK.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "fe0834fe41130ca3840f5dea0df653c30cbbf85e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/canonical-review-README.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "cbc11a3a3c711035b9e911e955cf6e2ee5ced58c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/canonical-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a8abf7bcd38067d0d0de16928ec2d396a7a4147e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/draft-review-FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "dbb5d235abd3d58e69f1d2c2b3dd06540468adde",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/draft-review-HASH_CHECK.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "711a0403a518387e9c664da644582197ee253766",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/draft-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "81c86dfaa243986d228e9c66ed916cd90301d656",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/graph-manifest.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "8dd3abf55ee5580221c93d13762273284d077753",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/graph.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6d98ee8eee3c37fb14ee7c22842fd6792c3beb80",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/vocab.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5a3f3bd5703683451193965ff61a1d7851d4d4e3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/NATIVE_GAUSSIAN_MOMENT_JET_NOTE_2026-09-10.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b07d2efd0f173b78c075f2bc987eef4b9903106b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "status": "M",
+        "before_blob": "54c52800362e908a036b2de9c1adcb2ea99cb9c2",
+        "after_blob": "04ef8ade0450edfd6f806743808c54f5dc2a5fed",
+        "before_mode": "100644",
+        "after_mode": "100644"
+      },
+      {
+        "path": "scripts/native_gaussian_moment_jet_2026_09_10.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1ae652a90f520ad1c7e6f4e21e05d5e1bc036518",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      }
+    ]
+  },
+  {
+    "pr": 8083,
+    "base": "dee7f1f07698bc36cfffc4e6495168a9107ff956",
+    "head": "a2aca4bcf2d6c0c3868b852017de327f888f270a",
+    "merge_base": "dee7f1f07698bc36cfffc4e6495168a9107ff956",
+    "rows": [
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/ARTIFACT_PLAN.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2924e7c7b2f853ea59499ed3fecdc435349d3f22",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5a15ee8b00c07aca968cdc8863437a309ab78b12",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/CANONICAL_SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3d3c734a0fefc999ffc905ca53f582e8971ce471",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/CLAIM_STATUS_CERTIFICATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ffaf52ad7edf6369991002c88615ab39b9300116",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/DELIVERY_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "473b9342749d6ef2a3fb29e354d5e23c03cc16f9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/GOAL.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ca294b2829f5aa775d090e9b23615d49b681b0b6",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/HANDOFF.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "adf507a41ad5abc23612b968f7721345094bbde5",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/IMPORT_PROVENANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "067a68b42eecaf02a987e23a78bd9ab0978dd385",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/LITERATURE_BRIDGES.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "25f6d3185b1067d5b7eff2a71fdb7361b8379d8f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/NO_GO_LEDGER.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "27da81b292ed53905106b3c6db43e32d3c2b76d7",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/OPPORTUNITY_QUEUE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "8b912a6eb10301331bb5179af43b412ad0b584ae",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/PR_BACKLOG.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "55237f22a5dc5918badecfc1fca35fe7033aaf60",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/RECOVERY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5904be39664b992e04b23ceef1555b4e0f8bad5b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/RECOVERY_MAP.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "15dd935cbd13ac4e29bf5b016e5867a5ed647a2d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/REVIEW_HISTORY.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e695d449ba52603dbe7626442588cd511d33812c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/ROUTE_PORTFOLIO.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "77024f4a20c3f9844fa191a80bd477eea983cc1b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/STATE.yaml",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "831e154cb5ea24f5bdddacf6caac8e11b7aef623",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/TRACE_GATE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "75619b125faa555db8ade1d6eca3bf473822b101",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/CHECK_RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7e143489c9c78694b68cd7870ae97d7fad4e1644",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/IMPORTS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5454e5ab917dfc05484f64b949da29381df264ac",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/NOTE.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4eb0105bbbd808a1df0d576cc93c024d3b08b52f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/SOURCE_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d9d3ee67b1004716a3daec620e12309df6895b92",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/STATUS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "db346ba6e37ef3284c489e32db3f1718e3279ddb",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/check.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "decdd779d62bc42bc52bf80de6ccc5d138a255ed",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/BINDING.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6ffd8ca08a31e0a19408e32a2b1a78b6c84d9807",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/EVENTS.ndjson",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3ae27f21e1b05e21cbeec930571ab74fe7cbfd9e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/INPUTS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f8b1b6cafe96e82fe1ed23780ace0871da35fed1",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/PARTIAL.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f44c2b71372b663df7b24f56dabb2238cff08a5f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/RECEIPT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5b6bd10b1c99d650c192a5e39b67ee45ca3330f8",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/RESULT.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4c58e22545fe2c41643fe89157d7435d18d3d068",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/ROOT_ACCEPTANCE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e2310200d405af5fd21278d129cc0e1b78d0b55b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/ROOT_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "51e4f8c0cb1ce20f792f2ea07d55b52108262e0d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/RUNTIME_FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3d5a933dd95653c6d6d34a6edfd29905b629b7a9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/STARTED.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e21aad29395784fa53c5d7c555740c9d0bb26163",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/WORKER_COMPLETE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "631f98e706017f812d09e669e2e781c1bbc2cdda",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/residual.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "23221660dd9f6e2b494522a6e845b1d37e1cac92",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/packet/variational.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0783edbc7a86f3d440132ac84f1c5ea48d7bba42",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-posterior-ward-error-stretch-DERIVATION.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "37104784bba24761d99e10e7113ac950dca3ff56",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-posterior-ward-independent-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ac7923727414093097712bcea61209faec404888",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-activation-cold-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "95874d8d2e353a68cc5a2ebafc649898f8b142f1",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-core-cold-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5a2b93c6c6acf9467c7f437503927745e8d3630e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-estimator-root-cold-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6564226d579d8ee362434bf8f5ee136d130045df",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-estimator-root-review-independent.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b96b1cd94b53c0900a0637c3c367dd213b2295a3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-estimator-root-review-run_once.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d08d4ff73e8f66ed4a104b7b4f8103cd034dafd3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-estimator-root-review-schema.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "68f36187a47c0260eea458881163fcdb9dd315d1",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-inverse-majorant-parent-stretch-DERIVATION.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b3949553dbc048d9d0a9667b909b3d80e2f83514",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-inverse-majorant-stretch-DERIVATION.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f79d322e51a1c8a99009e8c202d3e51a63a53101",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-spectral-estimator-design-PROTOCOL.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "8e3fc16c26335b5684c1b495edb4e6c7a76030c6",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-spectral-estimator-design-SOURCE_PINS.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ae75ceb435959666f2349504dedb19440cbca61a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-spectral-estimator-design-core.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2975cf4b0e254d275128dba10bd550878a2d7bed",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-spectral-estimator-design-history.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "47cace3a0a50082220432e3f2c4cdbc2148d276b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-spectral-estimator-design-interval.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "548c051e10390efd29f95dae6e6bab646efb8062",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-spectral-estimator-design-loader.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ab0f610e81a24662c0331028adbb0e2fa8bfa01a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/proofs/native-quartic-worker-parent-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "de2bbbb00af70751e83e982cba96b062523d3d0f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/degree20/acceptance.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2fdb8408100b34c0e08b5f5202b3b9eec2404988",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/degree20/receipt.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "e58a164db771d7de4099a98346ba28ca3c7233a3",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/degree20/result.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2789a2f1147f5d1adebd03fb58baa35540f8b083",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/degree20/root_freeze.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "2259b49161963dc47666cb196485812010858e3d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/degree20/worker.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d34ff9c6448aa51874b37e87a9f6283309a8c72a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/high/acceptance.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "022667a96e98129cea02a8e5ba8cf4f61503589f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/high/binding.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "ba75b336c44b20f9851382a2a18782a4780a08bc",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/high/receipt.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "795e8ce1ddf2962cf31ea9cf2bb2ad4113b9ee93",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/high/result.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "505c35d10335ae555e123ec2b3bcaa0732b9e968",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/high/root_freeze.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "8991c82bc10cf2cf440c573717336adf4b878c59",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/high/tables.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "3a8974db16d2d76d1a3887fb3e300a1a45ea388a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/high/worker.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7cfe3eda2552a733e1f4cadd5f608b1bd1073ca9",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/posterior20/acceptance.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "9d7a4f0a38503852376246eccf1ccc4e24f6db19",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/posterior20/binding.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "a0d032f8510e1db54e3e1bd59cba9d53dfa6dcd2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/posterior20/receipt.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "91c8761de8addcc96d7555f4a54d72f2b5f45ca0",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/posterior20/residual.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "10cba1a8504936ffb0c692f62924f844a71ed678",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/posterior20/result.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6355732e5bd435b9f8f517a0af35700eff494c89",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/posterior20/root_freeze.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0213026ea115dcb2388f21eb8067fa76863ebb98",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/posterior20/variational.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b9c1c4f28fde60b73fa4eabf36de83d87b07e8ac",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/source_draft/upstream/posterior20/worker.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0ef9472497257b01f4f68027fc226e1cebb09a95",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/CHECKPOINT95_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7065aac99e300d2281845351dc9bda60118f4ff1",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/CHECKPOINT96_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5512d1f7e33b6cdb902393fd1ade6785f1fbdba2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/CHECKPOINT97_REMOTE_VERIFICATION.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "4374a087323d73421680695f9ebac9d9ac293e1d",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/COMPACT_CHECK.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "d07fd67b01eb2455a2dded0181a1809f5be6214f",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/CURRENT_MAIN_PREMISE_CHECK.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "83b63b3eb9abdb7952a71ba14ad721e5e49da8a2",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/FINAL_METADATA_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "b34bd4af45cebc840b6e29c9bc501a1487303523",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/canonical-review-FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "af8b54c69033213e5637d89e9c313f029d126d35",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/canonical-review-HASH_CHECK.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "0b695ca08c02781789823ea1196a9e6fdf5fe533",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/canonical-review-README.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "70bc01c29813a8c90defdca682ae17a5facf5e8b",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/canonical-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "5d4a6f92b2d4f377f5110289d382b351897cea11",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/draft-review-FORMAT_AFFECTED_REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "bdd60c11c51ce85eb9ac7557fdecd4943774d0eb",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/draft-review-FREEZE.json",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "f4e667b7532e997265784653668ae959f0cd285e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/draft-review-README.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "7d1ea031ca677af58f371e3a90c76c00b0e14d13",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/draft-review-REVIEW.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "fad33b780913b704ea2c892553d6f657d2812a4a",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/graph-manifest.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "21b130298d810cd3f21899ba007194de16e95f02",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/graph.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "40963f64856ee89689b4307a494e6ef8b917c13c",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-quartic-ward-20260910/verification/vocab.log",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "884091bf781b2cfc0de535ef862270394b65b4e1",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/NATIVE_QUARTIC_WARD_NOTE_2026-09-10.md",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "6ba1bf17cd43314606fc3675f73cfc2580fa3f5e",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "status": "M",
+        "before_blob": "04ef8ade0450edfd6f806743808c54f5dc2a5fed",
+        "after_blob": "3dd88e7ff68b689cb50a7286efb524752d8e8c07",
+        "before_mode": "100644",
+        "after_mode": "100644"
+      },
+      {
+        "path": "scripts/native_quartic_ward_2026_09_10.py",
+        "status": "A",
+        "before_blob": "0000000000000000000000000000000000000000",
+        "after_blob": "1e301ee4d20cd3ae2c1b66d38833c35a9f78c211",
+        "before_mode": "000000",
+        "after_mode": "100644"
+      }
+    ]
+  }
+]

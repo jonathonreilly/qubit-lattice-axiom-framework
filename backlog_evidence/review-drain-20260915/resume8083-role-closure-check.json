@@ -1,0 +1,8 @@
+{
+  "manifest_rows": 7816,
+  "unique_storage_verified": 7784,
+  "hash_failures": [],
+  "explicit_binding_role_occurrences": 108,
+  "missing_binding_roles": [],
+  "boundary": "Read-only exact hashes and direct BINDING roles, excluding inherited umbrella input maps; no scientific recomputation."
+}

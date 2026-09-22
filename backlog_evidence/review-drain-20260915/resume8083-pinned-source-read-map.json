@@ -1,0 +1,233 @@
+[
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-reduced-dual-design/algebra.py",
+    "sha256": "bba8300dd66c345f5685ecd702b63ac185a6a1f129e164c7f756121b9659fdad",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/zero-dual-screen-reduced-dual-preregistration/native-degree10-reduced-dual-design/algebra.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-reduced-dual-design/algebra.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-reduced-dual-design/degree10.py",
+    "sha256": "85515031bbe6fba73dc098b7ea5f3dee16b08f12e6aa454269ebc479ada7e541",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/zero-dual-screen-reduced-dual-preregistration/native-degree10-reduced-dual-design/degree10.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-reduced-dual-design/degree10.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-reduced-dual-design/dual.py",
+    "sha256": "395c0194460ce8f9bde444865b4535990e12aba70bbf364d3699487f20665de4",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/zero-dual-screen-reduced-dual-preregistration/native-degree10-reduced-dual-design/dual.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-reduced-dual-design/dual.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-reduced-dual-design/interval.py",
+    "sha256": "ea9ae2142f7e26094c2628806571e719bbce19b88cfa12e17503478f8524aecc",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/zero-dual-screen-reduced-dual-preregistration/native-degree10-reduced-dual-design/interval.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-reduced-dual-design/interval.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-reduced-dual-design/run.py",
+    "sha256": "016aa98da4ecc0744bbd7f463e292d7a9bcda55ee70c688186517c3455496af9",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/zero-dual-screen-reduced-dual-preregistration/native-degree10-reduced-dual-design/run.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-reduced-dual-design/run.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-reduced-dual-design/source.py",
+    "sha256": "ba9130a8573348b93293af89f01a599b3bc610afc025860209cc0cafdcecc77b",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/zero-dual-screen-reduced-dual-preregistration/native-degree10-reduced-dual-design/source.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-reduced-dual-design/source.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-reduced-dual-design/wick.py",
+    "sha256": "162598f2e3635c59d76ce569a5dbb525e85bb2ae5a7a78bd86c1b06c4be5f181",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/zero-dual-screen-reduced-dual-preregistration/native-degree10-reduced-dual-design/wick.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-reduced-dual-design/wick.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-reduced-dual-design/worker.py",
+    "sha256": "8fbd03e5ef99693965e723686643364ce46c3e6ab1841c86d3f0183f40fc9072",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/zero-dual-screen-reduced-dual-preregistration/native-degree10-reduced-dual-design/worker.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-reduced-dual-design/worker.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/CONTROLS.py",
+    "sha256": "c784d734a26c974e22ecba405907061bf58688378a1918d93aacbd34cef565f8",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/CONTROLS.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/CONTROLS.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/algebra.py",
+    "sha256": "7777b5e11943b3b98929e9784db15e370569dcaa0242c99fc0de973713647ac4",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/algebra.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/algebra.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/degree10.py",
+    "sha256": "85515031bbe6fba73dc098b7ea5f3dee16b08f12e6aa454269ebc479ada7e541",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/degree10.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/degree10.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/interval.py",
+    "sha256": "ea9ae2142f7e26094c2628806571e719bbce19b88cfa12e17503478f8524aecc",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/interval.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/interval.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/posterior.py",
+    "sha256": "976af61a6fcfa6587980a73b436dc373e88970bf7ce0828f2ff5014930f96ac1",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/posterior.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/posterior.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/proposal.py",
+    "sha256": "f4da109bd023ccbd8f2a7009ef70b48e781bed8e1a9aeebb215faaa971cca574",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/proposal.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/proposal.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/run.py",
+    "sha256": "cde0762e7bc4313a935509db0b40e43db056eb8f83ca14fd376c6d72ba889ddf",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/run.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/run.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/spectral.py",
+    "sha256": "269885241b80bdf40347a741a0a614728b2a24d28db8d8a971c9a2d9d6b1d191",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/spectral.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/spectral.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/wick.py",
+    "sha256": "162598f2e3635c59d76ce569a5dbb525e85bb2ae5a7a78bd86c1b06c4be5f181",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/wick.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/wick.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree10-spectral-residual-design/worker.py",
+    "sha256": "2a5a8392f901dabbf8812007f8df0c9d0a232024c886d5349bcfbe5eed5e3042",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/coarse-continuation-result-spectral-preregistration/native-degree10-spectral-residual-design/worker.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree10-spectral-residual-design/worker.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-gate-design/CONTROLS.py",
+    "sha256": "b819ae5bbcaf8cdd8d24fad8129e8c1b690fb9dc33989e32c031b75c27774ce3",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-degree20-ward-gate-design/CONTROLS.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree20-ward-gate-design/CONTROLS.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-gate-design/algebra.py",
+    "sha256": "7777b5e11943b3b98929e9784db15e370569dcaa0242c99fc0de973713647ac4",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-degree20-ward-gate-design/algebra.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree20-ward-gate-design/algebra.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-gate-design/compute.py",
+    "sha256": "e24fc3603b20022c9327a4b5d1e29f868c0840756924f7f4cd675c4e03d654f7",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-degree20-ward-gate-design/compute.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree20-ward-gate-design/compute.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-gate-design/degree10.py",
+    "sha256": "85515031bbe6fba73dc098b7ea5f3dee16b08f12e6aa454269ebc479ada7e541",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-degree20-ward-gate-design/degree10.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree20-ward-gate-design/degree10.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-gate-design/interval.py",
+    "sha256": "ea9ae2142f7e26094c2628806571e719bbce19b88cfa12e17503478f8524aecc",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-degree20-ward-gate-design/interval.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree20-ward-gate-design/interval.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-gate-design/run.py",
+    "sha256": "4972ec989c335c8620130ac42b805c75efaeb3d066a17794c929285f54a107d1",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-degree20-ward-gate-design/run.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree20-ward-gate-design/run.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-gate-design/wick.py",
+    "sha256": "162598f2e3635c59d76ce569a5dbb525e85bb2ae5a7a78bd86c1b06c4be5f181",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-degree20-ward-gate-design/wick.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree20-ward-gate-design/wick.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-gate-design/worker.py",
+    "sha256": "a8478d740a53857aa304233e1827013264147f903236ee464059252a5c749295",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-degree20-ward-gate-design/worker.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-degree20-ward-gate-design/worker.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-omega5-catalog-supplier-runtime-design/compute.py",
+    "sha256": "4b1fb102355f4d8bad10f555cbfc610b76f6d2ffb264088922b5e1aff885ec92",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-omega5-catalog-supplier-runtime-design/compute.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-omega5-catalog-supplier-runtime-design/compute.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-omega5-catalog-supplier-runtime-design/controls.py",
+    "sha256": "fe036ef606a67f3e5ac51471154bdf02644441d660ea34032b29ec4bc7de45ff",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-omega5-catalog-supplier-runtime-design/controls.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-omega5-catalog-supplier-runtime-design/controls.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-omega5-catalog-supplier-runtime-design/interval.py",
+    "sha256": "0bcca6524582fc47271168cfb013e77e4630a0fc87a0454fddbf38f8a037abf8",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-omega5-catalog-supplier-runtime-design/interval.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-omega5-catalog-supplier-runtime-design/interval.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-omega5-catalog-supplier-runtime-design/loader.py",
+    "sha256": "adce6a56201117dec90b60c82eb20ef1f987f40c260a81d41982931172e14841",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-omega5-catalog-supplier-runtime-design/loader.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-omega5-catalog-supplier-runtime-design/loader.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-omega5-catalog-supplier-runtime-design/pi.py",
+    "sha256": "fa7d3d66ba0c41dd4e83fe576e24a25d09d7205c8622887a2ca9781128230b65",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-omega5-catalog-supplier-runtime-design/pi.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-omega5-catalog-supplier-runtime-design/pi.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-omega5-catalog-supplier-runtime-design/run.py",
+    "sha256": "2354caf6ce8eee04cd2c7dad2f24b5d0826d78dcaec564fe24f50b0f2e02ab6f",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-omega5-catalog-supplier-runtime-design/run.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-omega5-catalog-supplier-runtime-design/run.py"
+  },
+  {
+    "original": "/private/tmp/toe-24h-probes-20260908/native-omega5-catalog-supplier-runtime-design/worker.py",
+    "sha256": "2ad0df9a535b3a49d88ee4722f5db17cb380e774dbc6bd9e3b5bfbb362435e98",
+    "commit": "6452b8ebd80680b6f211c6cc1eec2f1435ec05cf",
+    "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-b378-omega5-allq-degree20-witness-preregistration/native-omega5-catalog-supplier-runtime-design/worker.py",
+    "local": "/private/tmp/review-drain-20260915/resume-check8083/pinned-source/native-omega5-catalog-supplier-runtime-design/worker.py"
+  }
+]

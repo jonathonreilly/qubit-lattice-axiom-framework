@@ -1,0 +1,16 @@
+{
+  "session": "/root/resume_8079_8083",
+  "tree": "c7790688d5feebb253af708ff1f3b84b0742d0a4",
+  "positive_source_verdict": "PASS_SCOPED_POSITIVE_SOURCE",
+  "mechanical_final_cache_check": "ok",
+  "negative_certification": "8079 fixed-family and8081 zero-dual/optimality deferred; preserve original heads/branches",
+  "artifacts": {
+    "resume8083-final-source-review.json": "3ab15a97a788de259bf552c4e79480b49159b229c01561f7c49a00b8b094f749",
+    "resume8083-unit-v2-final.json": "ebe80421190c5df78bffa10a9ab89d0964bf11f8bf718a4af4de9c84731842f4",
+    "resume8083-final-preflight.json": "d98fc010248d1523295d9d9267892e1bc338e838b9ac9f9c6b9e842fbe5c83b0",
+    "resume8083-cold-dispositions-v3.json": "3c85a168bf1bf98aa2c50e8e2a7bd37426780d3c8a700ac9aa126f087fe7767b"
+  },
+  "primary_executions_by_reviewer": 0,
+  "final_review_receipt_cache_invocations": 1,
+  "root_remaining": "Combined integration pipeline/strict/changed-evidence checks, publication, landing and per-PR closure decisions."
+}

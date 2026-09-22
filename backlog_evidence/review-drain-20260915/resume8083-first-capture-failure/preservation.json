@@ -1,0 +1,14 @@
+{
+  "files": {
+    "native_finite_moment_ward_2026_09_10.json": "e57629a60cfa422fb794321bda94dd2c5c3715dd6b2d62175cca34bc98cc8dbd",
+    "resume8079-author-final-execution.json": "69d5ae3af339d17db006e13ad32bda31c30bbb9530919ff3150988e7f15e8145",
+    "resume8083-author-capture.log": "a5b45ea000f325ac665f20539f051a480be1f12447fbdf850b652ea57ea3a148",
+    "resume8083-author-capture.py": "7d248ccb38dc094fcba62398f67712a83ccf3cc57e84067f6b7a84af3ae08a74",
+    "resume8083-author-preexecution.json": "8efee0a114d0985e01e7bc78e4cd93db74e2ef149e5391a456d51fa8d7ec3607"
+  },
+  "all_frozen_contents_unchanged": true,
+  "primary_attempts": [
+    8079
+  ],
+  "no_accepted_cache": "runner API refused postrun directory identity change"
+}

@@ -1,0 +1,20 @@
+# Relevant closure handoff — source review, no new numerical execution
+
+The historical freeze union (9250 path/hash pairs) is not a relevance specification. Preserve exact BINDING documents and freezes as provenance, but do not claim that unrelated historical environment members must be materialized. Existing canonical packets and the407 original dispositions remain necessary independently.
+
+## Actual load-bearing chain
+
+1. Finite/degree10 and degree20 constructions inherit rho5 scalar outputs, the accepted fixed catalog, degree10/20 computation sources, actual word/contraction tables and original event evidence. Degree20's255 events contain the low P/O moments and scalar source record consumed by the Gaussian high loader. Keep those exact events, not only terminal interval summaries.
+2. Omega5 loader reads catalog geometry, accepted catalog RESULT/WORKER_COMPLETE/root/receipt/acceptance and every one of3484 ORACLES endpoint files. It reconstructs1742 mapped nodes. Existing PR8075 CAS may provide exact matching SHA objects for these, without duplication. Retain producer/root numerical source and geometry, plus omega5 actual1742NODES,67PANELS and6 terminal files as arithmetic evidence. The omega5 tail's integer moment bank supplies later computations.
+3. Omega79 uses the accepted catalog and omega5 tail moments; its actual1742NODES,67PANELS and12 terminal files include FINAL7/FINAL9, M44/M45, REUSED_MOMENTS, TAIL7/TAIL9 and result/receipt trail. Preserve accepted source/root arithmetic and all actual output files so independent reconstruction remains possible without primary rerun.
+4. Gaussian high loader reads both degree20 and omega79 accepted receipt families, degree20 exact255-event chronology, omega79 two certified RESULT rows and REUSED_MOMENTS. It requires44 keys, with values at3/4/5 becoming even absolute moments6/8/10. Odd scalars come from original degree20 scalar record and omega79 result. Preserve the full infinite-volume REVIEW argument and synthesis proof: these filenames contain load-bearing mathematics, not merely review administration.
+5. Posterior/spectral/correlated/quartic reuse the exact trial/nominal/gate identities and complete relevant Gram/moment records. The quartic numerical result needs high moments through10, with signed coefficient interval endpoints. Keep exact BINDING role objects, receipt families, original event files and corresponding producer/root arithmetic sources.
+
+## Recovery artifacts
+
+- `resume8083-relevant-numerical-outputs.json`:4059 distinct path/hash records for the three actual accepted rho5/omega5/omega79 output families;4053 not locally matched in initial draft snapshot. Not a claim about author's later recovery.
+- `resume8083-pinned-source-read-map.json`:33 actually reviewed exact source helpers and archive provenance, recoverable from archive90 commit6452b8ebd80680b6f211c6cc1eec2f1435ec05cf. Source selection should follow actual imports from these and original supplied runtime designs; do not indiscriminately copy old cold-review/proposal/stress-run material merely because it was in an umbrella freeze.
+- `resume8083-draft-transitive-availability.json`: complete initial availability map, usable as SHA lookup only.
+- Current-main CAS manifests: `docs/work_history/repo/review_feedback/pr8075-evidence/scientific-recovery/manifest.json` (`rows`:original/sha256/object); `docs/work_history/repo/review_feedback/pr8074-8076-forensic-evidence/recovery-manifest.json` (`entries`:original/raw_sha256 and storage). Reuse only exact SHA matches, preserve original path mapping.
+
+Terminal/runtime source identity and accepted receipt evidence are mandatory for the claimed historical numerical certificates. Materializing dormant cold-review programs, earlier prospective alternatives, shell environment history and broad inherited freezes is not itself a scientific closure requirement. Historical failure records already belonging to originals must nevertheless remain unchanged under407 dispositions.

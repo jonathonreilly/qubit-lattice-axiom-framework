@@ -1,0 +1,8 @@
+PR #8604: Bound empty-start formation and quantitative mobile-record waves
+branch codex/mobile-record-empty-start-quantitative-waves-20260921 (base codex/mobile-record-moving-geometry-waves-20260921)
+runners in the PR: 1
+== scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py: rc=0 PASS=7 FAIL=0
+   mutation omit_birth_killing_scale: expected ? observed ? MISMATCH
+   mutation omit_route_orientation_factor: expected ? observed ? MISMATCH
+   mutation wrong_original_hole_fiber: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py: mutation census mismatch: omit_birth_killing_scale omit_route_orientation_factor wrong_original_hole_fiber

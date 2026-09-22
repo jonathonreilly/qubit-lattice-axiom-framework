@@ -1,0 +1,57 @@
+{
+ "task": "P:8560",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-transverse-waves-20260921",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8560",
+ "pr": 8560,
+ "branch": "codex/mobile-record-transverse-waves-20260921",
+ "git_sha": "155c163e",
+ "started_utc": "20260922T174500Z",
+ "elapsed_s": 18.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=91 FAIL=0",
+    "census_mismatches": [
+     "drop_context_term",
+     "omit_current_mean_subtraction",
+     "wrong_cube_normalization",
+     "reverse_curl_sign",
+     "discard_static_modes",
+     "polar_instead_of_axial",
+     "omit_odd_triple_parity",
+     "wrong_energy_coefficient",
+     "drop_stress_divergence_defect",
+     "omit_formation_noise",
+     "wrong_full_occupancy_mode_count",
+     "reverse_cross_covariance_sign",
+     "restore_conditioned_longitudinal_variance"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "d5861a89ec5ff76d98cd4b012ef893036eb96c15cd221b32d34830eae18e8dcf",
+ "stdout_tail": "le-record-immutable-waves-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py: rc=0 PASS=91 FAIL=0\n   mutation drop_context_term: expected ? observed ? MISMATCH\n   mutation omit_current_mean_subtraction: expected ? observed ? MISMATCH\n   mutation wrong_cube_normalization: expected ? observed ? MISMATCH\n   mutation reverse_curl_sign: expected ? observed ? MISMATCH\n   mutation discard_static_modes: expected ? observed ? MISMATCH\n   mutation polar_instead_of_axial: expected ? observed ? MISMATCH\n   mutation omit_odd_triple_parity: expected ? observed ? MISMATCH\n   mutation wrong_energy_coefficient: expected ? observed ? MISMATCH\n   mutation drop_stress_divergence_defect: expected ? observed ? MISMATCH\n   mutation omit_formation_noise: expected ? observed ? MISMATCH\n   mutation wrong_full_occupancy_mode_count: expected ? observed ? MISMATCH\n   mutation reverse_cross_covariance_sign: expected ? observed ? MISMATCH\n   mutation restore_conditioned_longitudinal_variance: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py: mutation census mismatch: drop_context_term omit_current_mean_subtraction wrong_cube_normalization reverse_curl_sign discard_static_modes polar_instead_of_axial omit_odd_triple_parity wrong_energy_coefficient drop_stress_divergence_defect omit_formation_noise wrong_full_occupancy_mode_count reverse_cross_covariance_sign restore_conditioned_longitudinal_variance",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T181214Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The census regex (mutation_family_expected/observed) matches nothing because this runner reports a killed mutation as 'FAIL: <target check> AssertionError: (<identity>, ...)' with rc=1 and prints no family lines; at PR head c26b017197 (the head since 2026-09-21T07:48Z) all 13 mutations fail their declared target check from the runner's MUTATIONS table with rc=1 (five in immutable_transverse_maxwell_check.py, two in maxwell_polar_axial_symmetry_check.py, two in maxwell_entropy_energy_check.py, three in maxwell_formation_full_occupancy_check.py, one in gauss_preparation_check.py).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T181214Z"
+ }
+}

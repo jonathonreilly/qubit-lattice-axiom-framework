@@ -1,0 +1,18 @@
+PR #8560: Immutable records: transverse curl waves and formation noise
+branch codex/mobile-record-transverse-waves-20260921 (base codex/mobile-record-immutable-waves-20260921)
+runners in the PR: 1
+== scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py: rc=0 PASS=91 FAIL=0
+   mutation drop_context_term: expected ? observed ? MISMATCH
+   mutation omit_current_mean_subtraction: expected ? observed ? MISMATCH
+   mutation wrong_cube_normalization: expected ? observed ? MISMATCH
+   mutation reverse_curl_sign: expected ? observed ? MISMATCH
+   mutation discard_static_modes: expected ? observed ? MISMATCH
+   mutation polar_instead_of_axial: expected ? observed ? MISMATCH
+   mutation omit_odd_triple_parity: expected ? observed ? MISMATCH
+   mutation wrong_energy_coefficient: expected ? observed ? MISMATCH
+   mutation drop_stress_divergence_defect: expected ? observed ? MISMATCH
+   mutation omit_formation_noise: expected ? observed ? MISMATCH
+   mutation wrong_full_occupancy_mode_count: expected ? observed ? MISMATCH
+   mutation reverse_cross_covariance_sign: expected ? observed ? MISMATCH
+   mutation restore_conditioned_longitudinal_variance: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_immutable_transverse_curl_limits_2026_09_21.py: mutation census mismatch: drop_context_term omit_current_mean_subtraction wrong_cube_normalization reverse_curl_sign discard_static_modes polar_instead_of_axial omit_odd_triple_parity wrong_energy_coefficient drop_stress_divergence_defect omit_formation_noise wrong_full_occupancy_mode_count reverse_cross_covariance_sign restore_conditioned_longitudinal_variance

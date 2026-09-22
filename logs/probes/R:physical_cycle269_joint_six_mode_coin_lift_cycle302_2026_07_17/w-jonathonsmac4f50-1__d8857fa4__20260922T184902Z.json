@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_joint_six_mode_coin_lift_cycle302_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_joint_six_mode_coin_lift_cycle302_2026_07_17.py",
+ "seed": 2942,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T184902Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0ac896fcce556ad296b6dcde79f10dc48968d00953c31b16c385761124653d4f",
+ "stdout_tail": "SS the joint face/tag shell is covariant under all 27 L=3 translations :: {'joint_ray_tests': 810, 'failures': 0}\nPASS deleting the supplied logical coin deletes the physical block exactly :: 0.0\nPASS the beta=0 physical block lifts the exact Cycle-219 field endpoint :: \nPASS deleting the auxiliary tags is rejected by the local constraints :: {'rejected_rays': 30, 'tested': 30}\nPASS deleting one nonzero physical matrix-unit term breaks both intertwining and unitarity :: {'deleted_matrix_unit': (0, 1), 'deleted_coefficient': np.complex128(-0.13405935130187677-0.01985024012141345j), 'intertwining_residual': 0.06060683411028461, 'unitarity_residual': 0.19077362394740982}\nPASS lawful-domain controls reject antipodal, non-port, and aliased-L inputs :: 3\nPASS all construction inputs and exclusions are inventoried :: {'supplied_fixed_sector': '+++ Wilson and all-B=+1 reference vacuum', 'supplied_geometry': 'Cycle-269 pyramid cellulation and local framing repair', 'supplied_auxiliary': 'six collision-safe port M2 per cell and B_v Z_port(v)', 'supplied_encoding': 'five non-antipodal reference-ray shell ansatz and one global phase-origin convention', 'supplied_update': 'Cycle-219 six-mode coin coefficient matrix', 'derived_here': 'GF(2) dressing solution, local matrix-unit completion, isometry, intertwining, inverse, constraint preservation, covariance, support', 'not_supplied': 'global ordering, parity service, copied tag, host-side direction control'}\nSUMMARY {'pass': 47, 'fail': 0}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T184908Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

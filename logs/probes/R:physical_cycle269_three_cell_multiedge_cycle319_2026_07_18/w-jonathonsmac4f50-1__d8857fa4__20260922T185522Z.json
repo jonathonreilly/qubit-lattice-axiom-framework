@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_cycle269_three_cell_multiedge_cycle319_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_three_cell_multiedge_cycle319_2026_07_18.py",
+ "seed": 3322,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T185522Z",
+ "elapsed_s": 85.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "02012e748e31b4757e95328c7c6a9d4e5619564015bc6f904054d8cdd73dcb8a",
+ "stdout_tail": "172376096e-16}, {'order': 'CAB', 'physical_rays': 261328, 'matrix_nonzeros': 261728, 'Gram_residual': 0.0, 'Gram_raw_maximum': 7.771561172376096e-16}, {'order': 'CBA', 'physical_rays': 261328, 'matrix_nonzeros': 261728, 'Gram_residual': 0.0, 'Gram_raw_maximum': 7.771561172376096e-16}], 'maximum_order_Gram_residual': 0.0, 'maximum_order_Gram_raw_maximum': 7.771561172376096e-16, 'joint_S3_Gram_residual': 0.0, 'joint_S3_Gram_raw_maximum': 7.771561172376096e-16, 'joint_S3_smallest_Gram_eigenvalue': 0.999999999999999, 'ABC_to_BAC_physical_order_residual': 1.414213562373093, 'ABC_to_ACB_physical_order_residual': 1.414213562373084, 'face_port_cell_role_union_M2': 118, 'maximum_joint_branch_before_multiedge_role_M2': 48, 'local_physical_union_M2': 118, 'maximum_local_branch_M2': 36, 'port_constraint_commutator_failures': 0, 'fixed_sector_commutator_failures': 0, 'joint_S3_role_register_M2': 3, 'total_patch_union_with_joint_S3_role_M2': 121, 'maximum_joint_branch_with_joint_S3_role_M2': 51}}\nPASS joint-role, update, coin, contact, schedule, and lawful-domain deletions are detected :: {'deleted_joint_order_amplitude_Gram_residual': 0.16666666666666666, 'deleted_update_column_unitarity_residual': 1.0, 'deleted_coin_coefficient': np.complex128(-0.6592368421510875+0.04906436503248315j), 'deleted_coin_unitarity_residual': 0.760508963277127, 'deleted_contact_residual': 1.0538866004066025, 'deleted_schedule_toggle_unitarity_residual': 1.0, 'lawful_domain_rejections': 3}\nTOTAL PASS=20 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T185647Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

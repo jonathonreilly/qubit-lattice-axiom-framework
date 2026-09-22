@@ -1,0 +1,14 @@
+CYCLE 306 SYNTHESIS: RELATIONAL ROLE-MARKER RELEASE
+authority=none; audit=unset
+PASS the synthesis note pins the release corrections :: ()
+PASS the physical certificate cold-runs at 17/0 with every release-critical control :: {'returncode': 0, 'summary': {'pass': 17, 'fail': 0}, 'missing_output_contract': (), 'stderr': ''}
+PASS the literal hidden-premise scan has zero hits across exactly four release paths :: {'paths': ('physical_cycle269_relational_role_marker_gauge_cycle306_2026_07_17.py', 'PHYSICAL_CYCLE269_RELATIONAL_ROLE_MARKER_GAUGE_CYCLE306_NOTE_2026-07-17.md', 'physical_cycle269_relational_role_marker_gauge_synthesis_cycle306_2026_07_17.py', 'PHYSICAL_CYCLE269_RELATIONAL_ROLE_MARKER_GAUGE_SYNTHESIS_CYCLE306_NOTE_2026-07-17.md'), 'hits': []}
+PASS N1 uses only the three exact bold status markers and keeps open alternatives visible :: ['ATTEMPTED', 'ATTEMPTED', 'ATTEMPTED', 'RULED OUT BY PRIOR RESULT', 'OPEN / UNTESTED', 'OPEN / UNTESTED', 'OPEN / UNTESTED']
+PASS N2 contains the complete twelve-row directional implication table :: {'rows': 12, 'missing': []}
+PASS N3-N5 expose a zero-hit scan, exact file-line witnesses, and a multi-resolution table :: 
+PASS N6-N8 retain the constructive closure, hostile counterargument, and actual cross-cycle echo :: 
+FAIL all six N4 witness locations resolve to nonempty source lines :: {'citations': [('PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', '112'), ('PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', '115'), ('COHERENT_GAMMA_PARITY_SECTOR_DOUBLING_CYCLE264_NOTE_2026-07-17.md', '27'), ('DRESSED_SPOKE_PARITY_GAUGE_CYCLE273_NOTE_2026-07-17.md', '39'), ('PHYSICAL_CYCLE269_JOINT_SIX_MODE_COIN_LIFT_CYCLE302_NOTE_2026-07-17.md', '46'), ('PHYSICAL_CYCLE269_COIN_STREAM_CONTACT_COMMON_REFINEMENT_CYCLE304_NOTE_2026-07-17.md', '89')], 'failures': [('PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', 112, 'missing file'), ('PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', 115, 'missing file'), ('COHERENT_GAMMA_PARITY_SECTOR_DOUBLING_CYCLE264_NOTE_2026-07-17.md', 27, 'missing file'), ('DRESSED_SPOKE_PARITY_GAUGE_CYCLE273_NOTE_2026-07-17.md', 39, 'missing file')]}
+PASS the ledger assigns role enforcement to C_local while C_ref and C_wrap remain unchanged :: 
+PASS the planning scores rise only in operational and matter lanes :: ()
+PASS the supplied-structure inventory names every release-critical imported object :: ()
+SUMMARY {'pass': 10, 'fail': 1}

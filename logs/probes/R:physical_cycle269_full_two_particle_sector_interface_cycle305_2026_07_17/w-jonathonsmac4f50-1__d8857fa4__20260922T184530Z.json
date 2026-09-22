@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+ "seed": 2730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T184530Z",
+ "elapsed_s": 20.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "663fe3f8cb8bd798e4b43229c2b33a56bd8528e2a220dca254a6980d597e41bf",
+ "stdout_tail": " proper-cubic representation and exact group law', '42--54-M2 bounded interface support'), 'supplied': ('global fixed +++ Wilson, all-B=+1 reference vacuum', 'one body-cell address and six direction labels', 'Cycle-269 A/B/FSWAP dictionary and local framing repair', 'six zero-initialized collision-safe auxiliary port M2 per cell', 'Cycle-219 six-mode coin C', 'Cycle-230 real contact coupling g=0.37', 'Cycle-230 one-step fixed-seam coin-then-stream-then-contact comparator order', 'one chosen antipodal path representative gauge; physical ray is path independent'), 'open': ('bounded preparation of the fixed-Wilson vacuum and arbitrary E_x amplitudes', 'coherent position across a volume-growing set of body cells', 'primitive-gate synthesis of the dense local matrix-unit polynomial', 'the actual recurrent onsite volume coin after the particles separate', 'overlapping simultaneous two-particle shells and larger even sectors', 'odd parity and a full-Fock compiler'), 'not_claimed': ('physical energy from a wrapped phase', 'a rate or physical time from compiler substeps', 'gravity or source semantics', 'Record or Born/probability semantics', 'a new mass derivation from the two-particle wedge sector'), 'overhead': '15 face + 6 port = 21 M2/cell; bounded shell support at most 54 M2', 'global_Jordan_Wigner_order': False, 'global_parity_service': False, 'host_side_control': False, 'authority': 'none', 'audit': 'unset', 'no_go': False, 'axiom_pressure': False}\nSUMMARY: 12 passed, 0 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T184550Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

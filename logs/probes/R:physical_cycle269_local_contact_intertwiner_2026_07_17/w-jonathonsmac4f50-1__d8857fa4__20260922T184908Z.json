@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_local_contact_intertwiner_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_local_contact_intertwiner_2026_07_17.py",
+ "seed": 2948,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T184908Z",
+ "elapsed_s": 61.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7a170255d8792194f38363ae0f12dc32aad3bb3494308a34944be2e029890523",
+ "stdout_tail": "'out-of-range port']}\n\nSUPPLIED-STRUCTURE INVENTORY / SCOPE\nPASS the result is one exact encoded local contact block on the reference-relative identical-pair lift, not an independent-species or full-Fock compiler :: {'derived': ('15 commuting n_u n_v pair projectors per cell', '9/10-face pair support and 18-face full-cell support', 'exact restricted diag(exp(i g),1) action on the declared code columns', 'unitarity, inverse, g=0, deletion, leakage, covariance, and held-size controls'), 'supplied': ('Cycle-230 coupling g=0.37 and binomial occupation contact', 'Cycle-269 fixed +++ Wilson reference vacuum', 'reference-relative localized two-column pair lift', 'n_v=(I-B_v)/2 occupation dictionary', 'six auxiliary port M2 per cell and local port constraints', 'training L=3,4,5 and held L=6'), 'open': ('absolute bounded vacuum preparation', 'coherent position and independent source/species encoding', 'six-mode coin with coherent port routing', 'assembled stream/contact schedule on a larger code', 'full-Fock and rank-73 sea compiler', 'a full-Hilbert-space physical contact matrix'), 'not_claimed': ('physical energy', 'rate or physical time', 'gravity or source law', 'Record or probability semantics'), 'overhead': '21 M2/cell inherited; contact support <=18 face M2', 'physical_vs_decoded': 'literal B-projector eigenvalues determine scalar physical action; occupations are the decoded summary', 'authority': 'none', 'audit': 'unset', 'axiom_pressure': False}\n\nSUMMARY: 9 passed, 0 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T185009Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

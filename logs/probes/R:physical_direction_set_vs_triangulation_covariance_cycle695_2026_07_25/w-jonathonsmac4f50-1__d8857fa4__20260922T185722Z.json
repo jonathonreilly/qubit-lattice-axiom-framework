@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_direction_set_vs_triangulation_covariance_cycle695_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_direction_set_vs_triangulation_covariance_cycle695_2026_07_25.py",
+ "seed": 3442,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T185722Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "433a332e4100544e5f053560abba298cfe096e20649ac1b8e5054f52d18ed5e6",
+ "stdout_tail": "ope': 24, 'cycle690_triangulation_ceiling': 12}\nPASS preregistered falsifier does not fire: had the two invariants agreed on every declared complex, the distinction asserted here would be empty -- they disagree on the five-tetrahedron complex :: {'agree_on_kuhn': True, 'agree_on_five_tet': False}\nSUMMARY_JSON {\"audit\": \"unset\", \"authority\": \"none\", \"consequence\": \"Cycle 690's ceiling of 12 bounds TRIANGULATION invariance. It does not bound a construction whose covariance is mediated by the edge direction set. Reading the 12 as a universal ceiling for real-space Regge covariance is a misreading, and citing that triangulation ceiling as the reason for a direction-set scope of 6 is a category error. Cycle 690's separate Kuhn direction-set row does compute 6; the ceiling theorem does not entail it.\", \"cycle\": 695, \"cycle_claim\": null, \"fail_count\": 0, \"firewalls\": {\"any_physics_claim\": false, \"asserts_some_construction_achieves_24\": false, \"new_axiom_or_primitive_proposed\": false}, \"invariants\": {\"five_tet_complex_cube_centred_stabilizer\": 12, \"five_tet_direction_set_signed_scope\": 24, \"kuhn_complex_cube_centred_stabilizer\": 6, \"kuhn_direction_set_oriented_stabilizer\": 3, \"kuhn_direction_set_signed_scope\": 6}, \"pass\": true, \"pass_count\": 6, \"resources\": {\"elapsed_seconds\": 0.0074936249875463545}, \"runner_sha256\": \"e20f31b12cf37e2f17b63f411dfe27854a6a83ef96240d1c0687d4b0cc4a36a6\"}\nRESULT 6 0 elapsed 0.01 s\nRESULT DIRECTION_SET_AND_TRIANGULATION_COVARIANCE_ARE_DIFFERENT_INVARIANTS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T185722Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

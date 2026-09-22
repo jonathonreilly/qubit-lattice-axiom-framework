@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_staggered_reservoir_catchup_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+ "seed": 3315,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T185515Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d6bcbbc493ed4a6d845edefcf3c534ebb6069fe6e4c6b2448c11a307412ce5cb",
+ "stdout_tail": "le collision :: {'rejected_fixtures': 4, 'overlapping_edge_order_outputs': ((1, 0, 0), (0, 1, 0)), 'overlapping_swap_commutator_operator_norm': 1.7320508075688772, 'meaning': 'unfinished multiparticle schedule, not a shared obstruction'}\n\nSCOPE / SUPPLIED STRUCTURE\nPASS the result is a bounded physical catch-up gate plus decoded operator-action controls, not a state or full-Fock compiler :: {'executed': ('the n_v=(I-B_v)/2 controlled auxiliary transposition as a seven-M2 matrix', 'outer-FSWAP then catch-up equality on the complete decoded port/tag permutation', 'local-check/Wilson preservation plus descriptor-level covariance, inverse, held-size, and lawful-domain controls'), 'not_executed': ('a bounded Cycle-269 state encoder E', 'E G_coarse = G_physical E on a full physical state code', 'an assembled full stream/catch-up macrostep matrix on encoded states', 'multiparticle collision scheduling', 'contact, stationary dressing, energy, gravity, clock, Record, or Born semantics'), 'authority': 'none', 'audit': 'unset', 'axiom_pressure': False}\nDIAGNOSTIC {'physical_code': 'Cycle-269 local-check-only square-pyramid face code', 'mapped_control': 'n_v=(I-B_v)/2', 'auxiliary_overhead': 'one reservoir M2 per coarse cell', 'catchup_support_M2': 7, 'outer_FSWAP_plus_catchup_union_M2': 11, 'held_out': 6, 'lawful_matter_domain': 'one-cell six-direction active block plus one fixed disjoint spectator (total even)', 'decoded_action_only': True, 'state_compiler': False}\nTOTAL PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T185522Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

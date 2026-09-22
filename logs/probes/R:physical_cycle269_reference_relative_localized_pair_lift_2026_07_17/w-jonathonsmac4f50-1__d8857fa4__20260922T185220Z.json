@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_reference_relative_localized_pair_lift_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+ "seed": 3140,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T185220Z",
+ "elapsed_s": 42.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "657e21f4728140ec451d1cb1cf0470719ec8fa221c202007317d4fba50c6637a",
+ "stdout_tail": "ED INVENTORY\nPASS the result is an encoded stabilizer-state lift for one localized pair orbit relative to a supplied vacuum, not a global mobile/source or full-Fock encoder :: {'encoded': ('unique fixed-Wilson face-code vacuum tableau', 'two physical stabilizer-state columns per localized adjacent pair', 'exact 2x2 Gram identity', 'exact action of the restricted two-edge physical FSWAP/catch-up word on both columns and its inverse', 'bounded Pauli/tag representatives of support at most 19 M2'), 'decoded_only': ('occupation and auxiliary tag masks used to enumerate fixtures', 'source versus carrier role names on one identical-species pair ray'), 'supplied': ('+++ Wilson character and unique vacuum ray', 'six auxiliary port M2 per cell', 'one ordered adjacent source/carrier patch label', 'Cycle-269 A/B/FSWAP dictionary', 'stream-then-catch-up convention'), 'open': ('bounded preparation of the global fixed-Wilson vacuum', 'one coherent encoder across different positions or Wilson sectors', 'independent source and carrier species or role qubit', 'actual six-mode coin and local port routing', 'contact and full-Fock macrostep'), 'overhead': '15 face + 6 port = 21 M2/cell; column representative support <=19 M2', 'assembled_full_Hilbert_space_G_matrix': False, 'G_physical_scope': 'restricted action of the supplied physical operator word on the declared two-column code space', 'authority': 'none', 'audit': 'unset', 'no_go': False, 'axiom_pressure': False}\n\nSUMMARY: 7 passed, 0 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T185303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

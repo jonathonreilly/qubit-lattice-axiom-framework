@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_defect_weight_law_and_complete_census_cycle713_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02.py",
+ "seed": 3407,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T185647Z",
+ "elapsed_s": 13.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "072cf490e54e89ed710ecb8c912f2ec2019a3db686729969da18c9776410beb8",
+ "stdout_tail": "6) predicts resolved entries per frame at L=(7, 8, 9): [22512, 35336, 52288]\nPASS g18_census_anchor full per sign [424, 10680] at L=[3, 7] (cycle-711 census totals)\nPASS g19_mag_four per sign L=(3, 4, 5, 6, 7, 8, 9): [64, 216, 512, 1000, 1728, 2744, 4096] = 8(L-1)^3\nPASS g19_mag_two_rt3 per sign L=(3, 4, 5, 6, 7, 8, 9): [64, 216, 512, 1000, 1728, 2744, 4096] = 8(L-1)^3\nPASS g19_mag_two_rt2 per sign L=(3, 4, 5, 6, 7, 8, 9): [160, 468, 1024, 1900, 3168, 4900, 7168] = 12(L-1)^3+16(L-1)^2\nPASS g19_mag_two per sign L=(3, 4, 5, 6, 7, 8, 9): [136, 480, 1168, 2320, 4056, 6496, 9760] = 20(L-1)^3-8(L-1)^2+4(L-1)\nPASS g20_magnitudes_sum the four full magnitudes partition the full-weight population\nPASS g21_carrier_size 30 ordered class pairs carry the full-weight entries, at every size and frame\nPASS g22_carrier_signature carrier support signatures {'(1, 1)': 8, '(1, 2)': 7, '(1, 3)': 2, '(2, 1)': 7, '(2, 2)': 4, '(3, 1)': 2}, with 3 frame-dependent identity sets\nPASS g23_support_shuffle_rejector swapping the axis and body-diagonal supports leaves 1656 entries outside the weight law\nPASS g24_uniform_shift_invariance a uniform 1.7 diagonal shift leaves the defect unchanged, because the frame relabelling is a permutation\nPASS g25_ramp_rejector a site-graded diagonal ramp of height 1.7, noncommuting with the relabeling, leaves 272 entries outside the weight law\nreceipt: outputs/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02_receipt_2026-08-02.json\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T185700Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

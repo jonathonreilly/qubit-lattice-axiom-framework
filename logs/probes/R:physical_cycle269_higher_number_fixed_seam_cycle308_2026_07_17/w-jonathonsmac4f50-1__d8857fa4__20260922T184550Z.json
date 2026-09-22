@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+ "seed": 2750,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T184550Z",
+ "elapsed_s": 191.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "37abe32565558c1fc37e130fa5fd71d7c9ea201a89600c292508910961b67287",
+ "stdout_tail": " held L=6', 'bounded matrix-unit completions and destructive controls'), 'supplied': ('fixed +++ Wilson and all-B=+1 reference vacuum', 'one body-cell address, six directions, and the Cycle-269 framing repair', 'six collision-safe zero-initialized port M2 per cell', 'Cycle-219 six-mode coin coefficient matrix', 'Cycle-230 coupling g=0.37 and coin-stream-contact order', 'the fixed-seam code domain and locally supplied dense matrix-unit coefficients', 'preparation of the conditional n=3 carrier superposition'), 'open': ('actual separated-cell recurrent onsite coins', 'simultaneous overlapping shells and collision arrival sectors', 'absolute reference, carrier, and arbitrary coherent-position preparation', 'n=0,1,2,5,6 common-sector integration and a full-Fock compiler', 'primitive synthesis of dense local comparator polynomials'), 'not_claimed': ('physical time, rate, or energy from comparator phases or substeps', 'mass, source, gravity, Record, occurrence, or Born probability', 'a direct three-physical-particle state in the total-even face code', 'a recurrent law from the separated-slice identity completion'), 'bounded_support_maxima_M2': {3: 54, 4: 54}, 'installed_overhead': '15 face + 6 port = 21 M2 per cell; no new M2 species', 'global_Jordan_Wigner_order': False, 'global_parity_service': False, 'preferred_carrier_direction': False, 'host_side_control': False, 'authority': 'none', 'audit': 'unset', 'broad_no_go': False, 'axiom_pressure': False}\nSUMMARY: 11 passed, 0 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T184902Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

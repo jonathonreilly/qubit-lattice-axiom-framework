@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_paired_direct_orbit_factorization_cycle310_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_paired_direct_orbit_factorization_cycle310_2026_07_17.py",
+ "seed": 3084,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T185124Z",
+ "elapsed_s": 3.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e0bf4a69266be17d9afbc65d68b608f55f06c22290dfb294cf60f5cf933488ce",
+ "stdout_tail": "nergy/rate, Record, and source/gravity semantics'}\nPASS the N1 table has exactly eight declared route statuses :: ('ATTEMPTED', 'ATTEMPTED', 'ATTEMPTED', 'ATTEMPTED', 'ATTEMPTED', 'OPEN / UNTESTED', 'OPEN / UNTESTED', 'OPEN / UNTESTED')\nPASS the N2 table contains all twelve and only the directed wall separators :: (('W_gate', 'W_apply'), ('W_apply', 'W_gate'), ('W_gate', 'W_rec'), ('W_rec', 'W_gate'), ('W_gate', 'W_prep'), ('W_prep', 'W_gate'), ('W_apply', 'W_rec'), ('W_rec', 'W_apply'), ('W_apply', 'W_prep'), ('W_prep', 'W_apply'), ('W_rec', 'W_prep'), ('W_prep', 'W_rec'))\nPASS all six N4 residual witnesses resolve to nonempty source lines :: [('PHYSICAL_CYCLE269_COIN_STREAM_CONTACT_COMMON_REFINEMENT_CYCLE304_NOTE_2026-07-17.md', 58, True), ('PHYSICAL_CYCLE269_COIN_STREAM_CONTACT_COMMON_REFINEMENT_CYCLE304_NOTE_2026-07-17.md', 84, True), ('PHYSICAL_CYCLE269_RELATIONAL_ROLE_MARKER_GAUGE_CYCLE306_NOTE_2026-07-17.md', 109, True), ('PHYSICAL_CYCLE269_RELATIONAL_ROLE_MARKER_GAUGE_CYCLE306_NOTE_2026-07-17.md', 131, True), ('PHYSICAL_CYCLE269_PRIMITIVE_MATRIX_UNIT_SYNTHESIS_CYCLE309_NOTE_2026-07-17.md', 68, True), ('PHYSICAL_CYCLE269_PRIMITIVE_MATRIX_UNIT_SYNTHESIS_CYCLE309_NOTE_2026-07-17.md', 74, True)]\nPASS the N5-N8 and broad-negative release markers are exact :: {'sections': True, 'broad_markers': (True, True)}\nPASS the Cycle-310 release paths contain no trailing whitespace :: []\nPASS the two-path hidden-premise scan has zero literal hits :: []\nSUMMARY {'pass': 14, 'fail': 0}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T185128Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

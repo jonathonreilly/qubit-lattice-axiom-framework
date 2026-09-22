@@ -1,0 +1,49 @@
+CYCLE 302: JOINT SIX-MODE PHYSICAL COIN LIFT
+PASS the note pins the theorem and residual boundary :: ()
+PASS training L=3: thirty pair rays have the declared two occupations :: 
+PASS training L=3: port tags exactly match face-code occupation syndromes :: 
+PASS training L=3: tag sectors make all thirty physical rays orthogonal :: 30
+PASS training L=3: every logical direction uses exactly its five non-antipodal reference rays :: {0: {0, 2, 3, 4, 5}, 1: {1, 2, 3, 4, 5}, 2: {0, 1, 2, 4, 5}, 3: {0, 1, 3, 4, 5}, 4: {0, 1, 2, 3, 4}, 5: {0, 1, 2, 3, 5}}
+PASS training L=3: the shell uses six body and six neighboring port constraints :: (((0, 0, 0), 0), ((0, 0, 0), 1), ((0, 0, 0), 2), ((0, 0, 0), 3), ((0, 0, 0), 4), ((0, 0, 0), 5), ((0, 0, 1), 5), ((0, 0, 2), 4), ((0, 1, 0), 3), ((0, 2, 0), 2), ((1, 0, 0), 1), ((2, 0, 0), 0))
+PASS training L=3: every translated local coin block has bounded at-most-fifty-four-M2 support :: {'bodies_tested': 27, 'face_M2': [30, 34, 38, 42], 'port_M2': [12], 'total_support_M2': [42, 46, 50, 54], 'max_representative_word_M2': [14, 15], 'fixed_overhead_M2_per_cell': 21}
+PASS training L=3: every local matrix-unit transition preserves B_v Z_port(v) :: 0
+PASS training L=3: every transition stays in the fixed Wilson and local-check sector :: 0
+PASS held L=6: thirty pair rays have the declared two occupations :: 
+PASS held L=6: port tags exactly match face-code occupation syndromes :: 
+PASS held L=6: tag sectors make all thirty physical rays orthogonal :: 30
+PASS held L=6: every logical direction uses exactly its five non-antipodal reference rays :: {0: {0, 2, 3, 4, 5}, 1: {1, 2, 3, 4, 5}, 2: {0, 1, 2, 4, 5}, 3: {0, 1, 3, 4, 5}, 4: {0, 1, 2, 3, 4}, 5: {0, 1, 2, 3, 5}}
+PASS held L=6: the shell uses six body and six neighboring port constraints :: (((0, 0, 0), 0), ((0, 0, 0), 1), ((0, 0, 0), 2), ((0, 0, 0), 3), ((0, 0, 0), 4), ((0, 0, 0), 5), ((0, 0, 1), 5), ((0, 0, 5), 4), ((0, 1, 0), 3), ((0, 5, 0), 2), ((1, 0, 0), 1), ((5, 0, 0), 0))
+PASS held L=6: every translated local coin block has bounded at-most-fifty-four-M2 support :: {'bodies_tested': 216, 'face_M2': [30, 34, 38, 42], 'port_M2': [12], 'total_support_M2': [42, 46, 50, 54], 'max_representative_word_M2': [14, 15], 'fixed_overhead_M2_per_cell': 21}
+PASS held L=6: every local matrix-unit transition preserves B_v Z_port(v) :: 0
+PASS held L=6: every transition stays in the fixed Wilson and local-check sector :: 0
+PASS the supplied Pauli transitions and local tag projectors form exact matrix units :: {'product_failures': 0, 'dagger_failures': 0, 'representative_action_failures': 0, 'tag_flip_failures': 0, 'projector_transport_failures': 0, 'nonmatching_projector_failures': 0}
+PASS matrix-unit projectors transport exactly and commute with every constraint and fixed-sector generator :: {'local_projectors': 30, 'tag_checks_each': 12, 'constraint_commutators': 0, 'sector_commutators': 0, 'host_labels_copied': False}
+PASS the explicit matrix-unit polynomial realizes the dense block on all thirty sectors and identity on every other local tag pattern :: {'physical_sector_action_failures': 0, 'coefficient_residual': 0.0, 'active_tag_patterns': 30, 'inactive_identity_patterns': 4066, 'primitive_gate_synthesis_supplied': False}
+PASS beta=-0.2: E is isometric and U_physical E = E C exactly to tolerance :: {'isometry': np.float64(2.7194799110210365e-16), 'intertwining': np.float64(2.96652930874354e-16), 'leakage': np.float64(3.318465995217504e-16)}
+PASS beta=-0.2: the local physical block is unitary with adjoint inverse :: {'unitarity': np.float64(4.0575549591724925e-15), 'inverse': np.float64(4.0575549591724925e-15)}
+PASS beta=-0.2: a held coherent superposition of all six local directions is preserved :: 1.92147544577106e-16
+PASS beta=-0.2: the Cycle-219 scalar rest-mass fixture survives the lift :: {'physical_rest_mass': 0.30100401625635154, 'Cycle219_rest_mass': 0.30100401625635154, 'analytic_mass': 0.3010040162563516}
+PASS beta=-0.3: E is isometric and U_physical E = E C exactly to tolerance :: {'isometry': np.float64(2.7194799110210365e-16), 'intertwining': np.float64(4.2107710161578475e-16), 'leakage': np.float64(2.616964312043313e-16)}
+PASS beta=-0.3: the local physical block is unitary with adjoint inverse :: {'unitarity': np.float64(3.1610878658042897e-15), 'inverse': np.float64(3.1610878658042897e-15)}
+PASS beta=-0.3: a held coherent superposition of all six local directions is preserved :: 3.275872683032178e-16
+PASS beta=-0.3: the Cycle-219 scalar rest-mass fixture survives the lift :: {'physical_rest_mass': 0.4534056541748851, 'Cycle219_rest_mass': 0.4534056541748851, 'analytic_mass': 0.4534056541748852}
+PASS beta=-0.4: E is isometric and U_physical E = E C exactly to tolerance :: {'isometry': np.float64(2.7194799110210365e-16), 'intertwining': np.float64(4.0594011980418103e-16), 'leakage': np.float64(3.4131244201846734e-16)}
+PASS beta=-0.4: the local physical block is unitary with adjoint inverse :: {'unitarity': np.float64(3.049875031410359e-15), 'inverse': np.float64(3.049875031410359e-15)}
+PASS beta=-0.4: a held coherent superposition of all six local directions is preserved :: 3.298530048305251e-16
+PASS beta=-0.4: the Cycle-219 scalar rest-mass fixture survives the lift :: {'physical_rest_mass': 0.6081301065260172, 'Cycle219_rest_mass': 0.6081301065260172, 'analytic_mass': 0.6081301065260174}
+PASS held beta=-0.35: E is isometric and U_physical E = E C exactly to tolerance :: {'isometry': np.float64(2.7194799110210365e-16), 'intertwining': np.float64(5.497732538485952e-16), 'leakage': np.float64(2.7831948814899123e-16)}
+PASS held beta=-0.35: the local physical block is unitary with adjoint inverse :: {'unitarity': np.float64(3.0421743150977875e-15), 'inverse': np.float64(3.0421743150977875e-15)}
+PASS held beta=-0.35: a held coherent superposition of all six local directions is preserved :: 2.5753487620094377e-16
+PASS held beta=-0.35: the Cycle-219 scalar rest-mass fixture survives the lift :: {'physical_rest_mass': 0.5304258513857453, 'Cycle219_rest_mass': 0.5304258513857456, 'analytic_mass': 0.5304258513857456}
+PASS the dressed joint face/tag shell is covariant at every L=3 body under all 24 frames :: {'joint_state_ray_tests': 19440, 'face_phase_failures': 0, 'tag_permutation_failures': 0}
+PASS the six-mode encoding and lifted Cycle-219 coin are exactly proper-cubic covariant :: {'encoding_max': np.float64(0.0), 'physical_coin_max': np.float64(0.0), 'pair_representation_group_tests': 576, 'group_law_failures': 0, 'group_law_maximum': 0.0}
+PASS deleting the local phase dressing is caught by the frame control :: {'failed_frame_columns': 108, 'tested': 144}
+PASS the raw binary phase data have an exact rank-five GF(2) cocycle repair, unique up to one global ray sign :: {'equations': 720, 'raw_zero_phases': 360, 'raw_minus_phases': 360, 'coefficient_rank': 5, 'augmented_rank': 5, 'solutions': ('010101', '101010'), 'supplied_positive_ray_solution_residual': 0}
+PASS the joint face/tag shell is covariant under all 27 L=3 translations :: {'joint_ray_tests': 810, 'failures': 0}
+PASS deleting the supplied logical coin deletes the physical block exactly :: 0.0
+PASS the beta=0 physical block lifts the exact Cycle-219 field endpoint :: 
+PASS deleting the auxiliary tags is rejected by the local constraints :: {'rejected_rays': 30, 'tested': 30}
+PASS deleting one nonzero physical matrix-unit term breaks both intertwining and unitarity :: {'deleted_matrix_unit': (0, 1), 'deleted_coefficient': np.complex128(-0.13405935130187677-0.01985024012141345j), 'intertwining_residual': 0.06060683411028461, 'unitarity_residual': 0.19077362394740982}
+PASS lawful-domain controls reject antipodal, non-port, and aliased-L inputs :: 3
+PASS all construction inputs and exclusions are inventoried :: {'supplied_fixed_sector': '+++ Wilson and all-B=+1 reference vacuum', 'supplied_geometry': 'Cycle-269 pyramid cellulation and local framing repair', 'supplied_auxiliary': 'six collision-safe port M2 per cell and B_v Z_port(v)', 'supplied_encoding': 'five non-antipodal reference-ray shell ansatz and one global phase-origin convention', 'supplied_update': 'Cycle-219 six-mode coin coefficient matrix', 'derived_here': 'GF(2) dressing solution, local matrix-unit completion, isometry, intertwining, inverse, constraint preservation, covariance, support', 'not_supplied': 'global ordering, parity service, copied tag, host-side direction control'}
+SUMMARY {'pass': 47, 'fail': 0}

@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_relational_role_marker_gauge_cycle306_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_relational_role_marker_gauge_cycle306_2026_07_17.py",
+ "seed": 3183,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d8857fa4",
+ "started_utc": "20260922T185303Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "06914313e7b6d2eaf6905ebc8772fe6bf7fe7cd8867236489739c65fdaf4357f",
+ "stdout_tail": "n_if_C_role_deleted': 84, 'lawful_constrained_dimension': 42, 'leakage_if_r_partner_deleted': 1.0, 'leakage_if_K_exchange_deleted_from_constraint': 1.0, 'coin_leakage_if_r_branch_conjugation_deleted': 0.9999993556400494, 'contact_leakage_if_r_branch_conjugation_deleted': 0.1839465335280412, 'stream_intertwining_if_K_exchange_deleted': 2.0, 'good_stream_constraint_commutator': 0.0}\nPASS lawful-domain controls reject repeated-mode, non-port, and aliased-size inputs :: 4\nPASS all added and inherited structure is explicit :: {'inherited sector': 'fixed +++ Wilson reference and all Cycle-269 local checks', 'inherited comparator': 'Cycle-304 42-column n=1+n=2 fixed-seam E and signful stream/catch-up', 'inherited laws': 'Cycle-219 C, declared wedge^2 C, Cycle-230 g=0.37 contact, coin-stream-contact schedule', 'supplied new physical resource': 'one homogeneous ordinary gauge-companion M2 r per cell', 'supplied new local law': 'C_role=K_exchange X_r=+1, a 90-term bounded matrix-unit candidate', 'supplied new completion': 'physical-r-controlled A|0><0| + KAK|1><1| coefficients for each bounded comparator block', 'derived': '42-column relational E, gauge-invariant marker, exact constraint preservation and covariance', 'still supplied': 'dense matrix-unit primitive synthesis, common-shell projector, initial lawful code state, macrocell framing', 'excluded': 'global ordering, parity service, host branch, recurrent volume, higher Fock sectors, rank-73 sea'}\nSUMMARY {'pass': 17, 'fail': 0}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T185304Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

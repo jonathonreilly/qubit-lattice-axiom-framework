@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-long",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 2 48 20000 10000 1",
+ "seed": 47831,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c58a5856",
+ "started_utc": "20260922T033031Z",
+ "elapsed_s": 283.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=2.0 L=48 T=20000 plateau_|m|=0.7350 lowk_ratio=1.0003 seconds=283"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Drift check in 3+1: twenty thousand levels at the smallest coupling that showed memory. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; dim 3s = symmetric light-cone neighbourhood). GRID UNITS: the 6 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "ff595403c4f166b3dfc0e8207835ec4881af5ef47a804bd7de82650829de10da",
+ "stdout_tail": "      18  0.7567  +0.7567\n        27  0.7535  +0.7535\n        41  0.7465  +0.7465\n        62  0.7438  +0.7438\n        94  0.7416  +0.7416\n       141  0.7407  +0.7404\n       214  0.7397  +0.7395\n       323  0.7376  +0.7373\n       488  0.7357  +0.7350\n       737  0.7380  +0.7366\n      1113  0.7333  +0.7321\n      1682  0.7371  +0.7331\n      2541  0.7356  +0.7293\n      3839  0.7339  +0.7198\n      5800  0.7352  +0.7272\n      8762  0.7331  +0.7273\n     13238  0.7344  +0.7009\n     20000  0.7378  +0.6975\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.0003 (n=56)\n   |k| in [0.3,0.6): 0.9794 (n=380)\n   |k| in [0.6,1.0): 0.9846 (n=1426)\n   |k| in [1.0,1.5): 0.9921 (n=4492)\n   |k| in [1.5,2.2): 1.0018 (n=13578)\n   |k| in [2.2,3.2): 1.0105 (n=41209)\n   |k| in [3.2,6.0): 1.0146 (n=49450)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.046433  +0.046939  0.989  +0.04694\n     2  +0.021520  +0.021601  0.996  +0.04320\n     3  +0.013267  +0.013161  1.008  +0.03948\n     4  +0.009230  +0.009024  1.023  +0.03610\n     6  +0.005256  +0.004932  1.066  +0.02959\n     8  +0.003272  +0.002915  1.122  +0.02332\n    12  +0.001265  +0.000970  1.304  +0.01164\n    16  +0.000167  +0.000099  1.686  +0.00159\n    24  -0.000619  -0.000423  1.465  -0.01015\nSUMMARY: dim=3 menu=sphere beta=2.0 L=48 T=20000 plateau_|m|=0.7350 lowk_ratio=1.0003 seconds=283\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T033515Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

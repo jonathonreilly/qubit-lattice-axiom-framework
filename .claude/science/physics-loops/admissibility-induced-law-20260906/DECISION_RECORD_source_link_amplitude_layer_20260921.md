@@ -152,3 +152,20 @@ There is no master clock; each place keeps its own time and only comparisons cou
 
 ## Integration order
 #8568 → #8570 → #8571 → #8573, each independent against `main` (each appends to the shared pack records; rebuild in that order). Follow-ups are on `ai/probes` (the ray limit as a theorem with its sideways correction; composite bodies; a clause for lengths; `κ`; discrete-step walks; a sideways-drift grid).
+
+## Sixth addendum (2026-09-22): rest energy after blocks 79–82 and the rest-energy panel
+
+Panel of four lenses (lattice field theory; statistical mechanics; foundations; mathematical-physics rigour) on the supervisor's dossier `panel_dossier_rest_energy.md` (scratch, 2026-09-22); synthesis by the supervisor. Blocks: 79 (PR #8614, corrigendum d5d68066d3), 80 (#8615), 81 (#8626), 82 (PR #8628).
+
+| # | Fork / route | State after the panel and blocks 81–82 | Deciding computation | Status |
+|---|---|---|---|---|
+| 41 | Fork 5 (rest energy): what a rest energy can be inside `M₂(ℂ)` | Complete map (block 82): no covariant translation-invariant term of any reach separates the branches at a species point (Schur at each corner's stabiliser); on sites exactly the chessboard scalar `c₀ε` and the axis stripes `c_j(−1)^{x_j}σ_j`; on bonds alternating lengths (`√3β|δ|` for all eight species) and the staggered-phase scalar hop | block 82 T1–T3 (exact) | decided: a rest energy is a broken one-step translation |
+| 42 | R1 — repulsive records below the neutral scale | The gas makes the chessboard only for `g < 1` (block 81; comparator threshold near `g ≈ 0.41` on Z³); it is a transient under permanence (block 39 T4) and, under exclusion, a cage (block 82 T4) | block 81 T2–T3, control; block 82 T4 | closed as a source of rest energy unless records are penetrable at finite cost (block 79's clause) |
+| 43 | R2 — a density wave of the hard-core crowd | Comparator-negative (hard-core hopping alone makes no density wave); undecided in-framework | two-record exclusion problem on `4³`: bound state below the continuum or anti-binding; `S(π,π,π)` of the crowd on `2×2×2`, `2×2×4` | open; queued |
+| 44 | R3 — formation out of equilibrium | Rates `13/12 : 1 : 11/12` accretive; the lattice fills; no staggered pattern is laid down | block 39 T4; exact formation chain on `2×2×2` if needed | closed (negative) |
+| 45 | R4 — the larger site algebra | Parked; would give a uniform mass to all eight species with the scalar hop as a Wilson-type ladder | none (parked) | parked |
+| 46 | R5 — a sublattice-odd covariant object | Closed by block 82 T1 | — | closed |
+| 47 | Content order as a rest energy | Uniform and chessboard contents: no gap (block 81 T4); the axis stripe: a gap for all eight species (block 82 T2), but never the static law's heaviest pattern (`qp²` vs `p³`, `q³`) and needs a content-reading coupling clause | block 82 T2 + remark | closed for the lane's content laws; the stripe stays a supplied option |
+| 48 | Alternating lengths — the lane's own field as the rest energy | `H² = β²Σ(sin² + δ²cos²)`; one rest energy for all eight species; NOT protected by the scalar hop (gap closes once `a ≳ δ`, control); the sea lowers its energy under the alternation (second-order coefficient `≈ 1.5` on `16³`); nothing fixes `δ` | self-alternation: the sea's response against the lengths' field energy of blocks 60/64 (a condition on the constant); the exact reason the scalar hop closes this gap and not the chessboard's | open; the leading candidate for a derived rest energy |
+| 49 | The scalar hop and rest energy | `(A + H + mε)² = (A + H)² + m²`: the rest energy is `m` on a shell; block 77's corner values are corner values | block 82 T3(c) | decided (re-reading of block 77's table) |
+| 50 | Penetrable vs excluded records (block 79's clause vs the Record axiom) | Block 79's `m = c/2` needs a moving record that enters a recorded site at finite cost; under exclusion the chessboard blocks every hop | block 82 T4 | owner's fork: which reading the axioms mean |

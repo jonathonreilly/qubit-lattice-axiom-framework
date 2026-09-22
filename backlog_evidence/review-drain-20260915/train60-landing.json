@@ -1,0 +1,118 @@
+{
+  "base": "ecf9c0986cf4fa73017856aa6582c22bc1dc7310",
+  "source_head": "f43118e65647d6676ece7ec8201b72c331f6fa93",
+  "source_tree": "4dff96d4d6bf3dfbde1bf6af43e00022e0302c87",
+  "heads": {
+    "8143": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  },
+  "source_owners": {
+    "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8143",
+    "docs/work_history/review_loop/pr8143/PR8143_CONFORMANCE.md": "review-8143",
+    "docs/work_history/review_loop/pr8143/PR8143_HANDOFF.md": "review-8143",
+    "docs/work_history/review_loop/pr8143/PR8143_MUTATION_CHECKS.json": "review-8143",
+    "docs/work_history/review_loop/pr8143/PR8143_VALIDATION.json": "review-8143",
+    "docs/work_history/review_loop/pr8143/README.md": "review-8143",
+    "docs/work_history/review_loop/pr8143/original-path-map.json": "review-8143",
+    "logs/runner-cache/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.txt": "review-8143",
+    "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py": "review-8143"
+  },
+  "inputs": {
+    "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md": "115b92ad094f26c1cdb3fa51978b66831091729f0a5ac49d88ebbf51093a4afe",
+    "docs/work_history/review_loop/pr8143/PR8143_CONFORMANCE.md": "bc3a883bddc938bf8461eb392184bf7b7ed706198ecfe6f01be40fa702558b12",
+    "docs/work_history/review_loop/pr8143/PR8143_HANDOFF.md": "ce6f843aba6aa9b164e468231372a4692be8847c3e86fd113a6a2f22522a10a3",
+    "docs/work_history/review_loop/pr8143/PR8143_MUTATION_CHECKS.json": "e1d55bc72b5fe551b66bac48d4938655c1c9da4f2cfccca9d06c95485f4ff17d",
+    "docs/work_history/review_loop/pr8143/PR8143_VALIDATION.json": "06ba9e10faae08a8105e86d8aaf5eb4fa6c5648942e88f13af715c55f12627ff",
+    "docs/work_history/review_loop/pr8143/README.md": "b28fbb23bb27f0fa46bd3ce5aad4cda7d4880c49fdfc9a4eb810b2ff48c3466a",
+    "docs/work_history/review_loop/pr8143/original-path-map.json": "b1836bb8a26de0994c51e4f32c88d0d2b9b810646008ae9da863a137b65cae1d",
+    "logs/runner-cache/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.txt": "442134138a4739d18763527e48f0fdec384d634aae4495215a2c379a586a9377",
+    "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py": "1d3f2984d6fda561bf02c575c1aa0233d4155213709012341d1a5e7d9d4e6233",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md": "3a86afdafa20f79080a3b0b225cf52eb23cc628ec2810683ea7cba5c468a74c8",
+    "docs/ADMISSIBILITY_BLOCK36_SPECIFIC_NN_ACTIVE_CUT_RECORD_FRONT_BOUNDED_THEOREM_NOTE_2026-09-01.md": "22859693cb1a6e192a3cb50d3d0965c7ee8672520be6f59ec491857df153427f",
+    "docs/ADMISSIBILITY_RANDOM_AXIS_M2_MATTER_REPEAT_SELECTOR_LOCAL_COMPILER_BOUNDED_THEOREM_NOTE_2026-09-01.md": "c2ff01d9799b707ffd2209b10e5475087ce7996393583d36b313229d8fcf1f6c",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/audit_packet_script_deps.py": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "review_evidence_hashes": {
+    "drain8143-final-review.json": "4de2b01b72cc6599820635837f2e20cd5a3f495047356baa15a595092cf36c86",
+    "drain8143-original-review.json": "05af74a78a3ea66744e70b8bcd64c8cdfec388c68ca12dc527167d192b57545d",
+    "drain8143-inventory.json": "fc61561f5782c08789165bd7a08695bf2e42590bf570bb2a51d927babb903a18",
+    "drain8143-head-fetch.json": "833f89dcdca9f8d7f9ab4d0a5892c800892106cfe20fcb79051f3df1a4f091bb",
+    "drain8143-independent-controls.py": "5a52e992c26c6d71c3599ff14fe079f1d746189fc26823d602fb8781954f8116",
+    "drain8143-independent-controls.json": "53fe5297724afa54813ac8e94dfaebff74edbc48a7de875f0dc9afc3a47baf89",
+    "drain8143-unit-final.json": "4df0bbb17bae0b71e830de88f307d5585be6f415a6aa6b07f1c3c0d62e2e9624",
+    "drain8143-final-preflight.json": "4248d466b880679ac2c09a3a285dd81b620329150d406f1193a586420b022166",
+    "drain8143-report.md": "07eb417a5b315cd3ca82f27dfa310f262bb31900f8857fb9ec85722338ecadb5"
+  },
+  "dependency_expectations": {
+    "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "minimal_axioms",
+        "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "minimal_axioms",
+          "graph_id": "minimal_axioms",
+          "source_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "declared_id": "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21",
+          "graph_id": "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21",
+          "source_path": "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+          "sha256": "3a86afdafa20f79080a3b0b225cf52eb23cc628ec2810683ea7cba5c468a74c8"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "drain8143-final-review.json",
+      "reason": "Current axiom authority delimits baseline. The linked local-append projective-history construction is an explicitly supplied benchmark, not a framework-derived generator. Its exact scoped grants were independently reviewed; no new physical process is adopted."
+    }
+  },
+  "cheap_preflight": {
+    "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/RECORD_PROJECTIVE_HISTORY_LOCAL_APPEND_DOWNSTREAM_LAW_CANDIDATE_BOUNDED_THEOREM_NOTE_2026-08-21.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "required_claim_ids": [
+        "minimal_axioms",
+        "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21"
+      ]
+    }
+  },
+  "units": [
+    "8143"
+  ],
+  "departure": "Complete independent unit queued while train59 owns integration; depart when slot is free without waiting for unfinished formation-law corrections.",
+  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match.",
+  "owned_supporting_proof_bindings": [],
+  "candidate_commit": "7475249f415a87db92a611e6157fae600d66f3f4",
+  "candidate_tree": "79d2bef5cedc84a3cbd527a782557df4993d3674",
+  "combined_gate": "PASS",
+  "full_pipeline_count": 1,
+  "changed_evidence_rows": 1,
+  "validation_logs": {
+    "train60-pipeline.log": "69de1bca9f6e5f86528d7f4f5b62746ee8b8431f3a08e5dab1e8ac196ed59efc",
+    "train60-strict.log": "af1714d11ba5920554f23f68a4e50b3c6c3083f11a9a6a621d2b102a21708aa7",
+    "train60-evidence.txt": "c6517ef556b1b66c7dd75b216de8e887113aa9802dea48c7f86f44136862bc00",
+    "train60-validated-rows.json": "e9ddb787803e485c25777b8f44bdfb990c9986855be19ed04d4ac36ec1d9451d"
+  },
+  "audit_boundary": "No verdict applied; source rows unaudited in validation. Existing main authority preserved; regenerated audit outputs stripped.",
+  "landing_state": "LANDED"
+}

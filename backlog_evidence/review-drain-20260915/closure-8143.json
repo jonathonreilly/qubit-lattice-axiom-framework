@@ -1,0 +1,19 @@
+{
+  "pr": 8143,
+  "original_head": "6327004eaaecd83fffca5e2362db6a042a0707a5",
+  "branch": "physics-loop/full-domain-projective-corridor-20260915",
+  "landing": "7475249f415a87db92a611e6157fae600d66f3f4",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/full-domain-projective-corridor-20260915",
+    "headRefOid": "6327004eaaecd83fffca5e2362db6a042a0707a5",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8143,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8143"
+  }
+}

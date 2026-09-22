@@ -1,0 +1,25 @@
+[detached HEAD f43118e656] Preserve independently reviewed source unit PR8143
+ Date: Tue Sep 22 16:25:10 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 9 files changed, 966 insertions(+)
+ create mode 100644 docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/review_loop/pr8143/PR8143_CONFORMANCE.md
+ create mode 100644 docs/work_history/review_loop/pr8143/PR8143_HANDOFF.md
+ create mode 100644 docs/work_history/review_loop/pr8143/PR8143_MUTATION_CHECKS.json
+ create mode 100644 docs/work_history/review_loop/pr8143/PR8143_VALIDATION.json
+ create mode 100644 docs/work_history/review_loop/pr8143/README.md
+ create mode 100644 docs/work_history/review_loop/pr8143/original-path-map.json
+ create mode 100644 logs/runner-cache/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.txt
+ create mode 100644 scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py
+FROZEN f43118e65647d6676ece7ec8201b72c331f6fa93 sources 9 inputs 24 notes 1

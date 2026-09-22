@@ -1,6 +1,6 @@
 {
- "edge_count": 13667,
- "node_count": 6212,
+ "edge_count": 13669,
+ "node_count": 6223,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16746,6 +16746,10 @@
    "deps_hash": "e703930afc75",
    "out_degree": 6
   },
+  "sequential_formation_path_and_star_identities_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "7b707271a9a8",
+   "out_degree": 2
+  },
   "session_synthesis_2026-04-10_final": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -24279,6 +24283,46 @@
    "out_degree": 0
   },
   "work_history.repo.review_feedback.wilson_subsystem_sector_free_compiler_cycle269_note_2026-07-17": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_approach_registry": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_assumptions_and_imports": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_claim_status_certificate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_goal": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_opportunity_queue": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_review_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_route_portfolio": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.pr8137_trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8137.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

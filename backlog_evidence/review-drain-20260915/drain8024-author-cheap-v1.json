@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8024",
+  "tree": "165ca2b27f77682c4df4153366cb3293947f6de8",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8024/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8762,
+      "misses": 4454
+    },
+    "packet_imports": {
+      "hits": 8752,
+      "misses": 4452
+    },
+    "declared_inputs": {
+      "hits": 8787,
+      "misses": 4585
+    }
+  },
+  "record_sha256": "bd7757582bbec12d41f148414487b9fa8315022f4fc8ce527cdd4461ac5208d7",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

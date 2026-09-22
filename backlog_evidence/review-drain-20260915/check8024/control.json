@@ -1,0 +1,38 @@
+{
+  "checks": [
+    "faces_1",
+    "edges_1",
+    "three_tail_support_1",
+    "faces_2",
+    "edges_2",
+    "three_tail_support_2",
+    "faces_3",
+    "edges_3",
+    "three_tail_support_3",
+    "shell_dimension_1",
+    "shell_dimension_2",
+    "shell_dimension_3",
+    "inert_R1_multiplicity",
+    "penalty_R1_gap",
+    "growth_identity_coefficients",
+    "rescaling",
+    "local_energy_two_sided"
+  ],
+  "passed": 17,
+  "geometry": {
+    "1": {
+      "faces": 6,
+      "edges": 12
+    },
+    "2": {
+      "faces": 36,
+      "edges": 54
+    },
+    "3": {
+      "faces": 108,
+      "edges": 144
+    }
+  },
+  "seconds": 0.002987832995131612,
+  "scope": "Independent finite adjacency/shell controls only. General Casimir monotonicity, local norm, GNS reduction and code-ground continuation also checked analytically; external stability theorem imported, not reproduced."
+}

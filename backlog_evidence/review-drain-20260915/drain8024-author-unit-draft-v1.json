@@ -1,0 +1,477 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8024",
+  "constituents": [
+    {
+      "id": "PR8024",
+      "head": "1c814b95243c5f788f57bab57c67fdc542f1aab4",
+      "delta_base": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8024-author-source-handoff-v1.json",
+        "sha256": "56da4d65f4fdb2089714a7b7c799004420ff91ab154f18add260c4fac99a8e79",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "bd696ae6921c9b1244d29771e0ef2c6d13a0574d",
+    "commit": "bd696ae6921c9b1244d29771e0ef2c6d13a0574d",
+    "tree": "165ca2b27f77682c4df4153366cb3293947f6de8",
+    "paths": [
+      {
+        "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/README.md",
+        "sha256": "d7291ebe715caacee1f61497bf2c7e7287b02f674ac0384badc7020e7651d5cb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/08a2cfb6fd326adc64f87a307d23a182b6f7429bc110cddda271944f23e5c083.gz",
+        "sha256": "6ede4409e16fcbec608c36dcd6923e07c0fcc8991be090fc14e781c5318bf787"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/08ff454fafda5548adfaacdf6d2a712abe9c8949595ada563e2632d0ab1e3458.gz",
+        "sha256": "9a873e5f0cec07aa8ddb3fd1698f3ebf92e97d94017a7b3d55ffd1407715c73a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/0b3a8871d0aa09b92bc288c041ee60ff190f89508a62936101acc60df3f840f0.gz",
+        "sha256": "ac0fb1e5861fcfdb33e58aacd68f646101a0c5f50c438886f06bedee1cd5be07"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/0ca156f369be3b98468e0896e71f75f07840c1a47971b6d2ad51e0f1ac9763fe.gz",
+        "sha256": "14603a96e1c4e8d5d92bee361543e63c17604e76f622ec8918b3b4d61c413097"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/0e7bea9747b00e796697eea970e279dca784ebb4ce8d339baf8a3e64114acf8e.gz",
+        "sha256": "acd6ac3f6c565fe030f7112fa768295dfdf24495fa8c6a913915a84af9fa00ae"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/1146468b69f5f37b1fa4611992b04044b81a89381153343ee58e9ab8bfed808e.gz",
+        "sha256": "370ab1b4c1b77d79833003da5c439a1ea4b20369139c231964999d6b342ed167"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/171bba5a78bc4124744245e36f69a09dc3c52a9cdf8a2e7c0a72dd09680b53a0.gz",
+        "sha256": "09653b79b1ffb49f216014056791949ec494209969ae25edb1bda90621fbfd61"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/1b4d622d24db2f85db8208ce9948040d63f7430dc1247be66308189bc43d0c9c.gz",
+        "sha256": "ce3d58170c5a571b35206daabf44e94f4a5e1c74fdf81ebb7fd8a47c810efb46"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/1f3b0584a404b93463f41e133fbe00e41efecf600a6bf0f9107ba0b15d4327bb.gz",
+        "sha256": "3c1d183d7219dfd553e34d3b5807140bf29e5c95dcb1c9c93924804e5f2b7288"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/203f00fa2a7a5083f793ebafe720a2e27ee1ce79d6dff515e113b5be489f8ac2.gz",
+        "sha256": "4435808d2aef79e9b5458d9a958afea1746acb269a6d59b1139ad3e9e6f5b341"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/21bd9529b241a2dfc850a19ade9ed62b5f0a3e49b11bc34d9fb172e1599aa309.gz",
+        "sha256": "d12a8a6938f51cf8a42acd07e07e8d166beb0cf4d88d6b190339d107334646b3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/21d864493f666303743a56d8a5be17b1e35ffb696c270994fa5cfcb6d09d0e87.gz",
+        "sha256": "1fad513054cb9b938cf90b0b3f573a53bf1b6ad38f1f14d32e6a7621bce4ee2a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/22018bd90d67a517cd0d0fcbcbdc6de77180f04b7fecad1fa50f344df024f4e0.gz",
+        "sha256": "b1bbc35101a50424a78c8ff7c4685ea91d0894f80170417906d08b2c190b6c9a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/23de61b434e797d65a11c1404105bae7908fd791d80f476b30bdedcd8213f991.gz",
+        "sha256": "d5b8d8f7346194de6b694305ba54213af11b9a2f2de6fe2850d03718ecbb91fd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/25bb978a8cc079ce2bcb425b0e463b35f27a504b40c165d41868fd3631e5fd36.gz",
+        "sha256": "ee33631927147b127f0a558d604ba624b0b14f81d11c04afd595dafee5e7ee41"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/32e6c625db2c78be61284dc8cc952e8c73b20d2e0cebe07b551fa7bda554fd21.gz",
+        "sha256": "28e112f2caf967bbcc7e914c83e0ced383def9600551bc17e82352c1177a6673"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/342870915b94fc010a8c6c76e46f3ae74a3f5a427ab6ef8d3842c655f9cd0570.gz",
+        "sha256": "b4e241f03eee5a3272a5dba86ce9c17ffd93d2be53853726c75f234ce6d67af4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/3512aa0ce5d78c948c31b155447fade3a8701b29d34bbcfc1ebe0235ea5fd7a6.gz",
+        "sha256": "ca6fed753305dc8528074a5317d1003e8b9ef621d908a472ead0c3b073bb3878"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/35bfa980a4cc637c36a2b92a534cccb5b9959af6593ca122db6d90697c21cd22.gz",
+        "sha256": "4e52b4c2ca201f5b9bab55a3f758c343d78f69eab6857f806d8530e34c887192"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/363cb6205f38e6bf2a1d3e15abc8a8d629a762d4e5bff9d364111a892dcd3363.gz",
+        "sha256": "c5e2c53792d6d1bd8937b58d2dcbbc2c7a1bec21221b89b021721040590e376a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/3ed9ba1ea12ab96602153f151d64f205e94f6faff619c09d36367cdd6d030f65.gz",
+        "sha256": "730bec9e21e8d1314bfceb6d838fa03e0665c14ff67e08ebce0614339b86d2ff"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/3f6bb29c1d13200dc81f8c3c13a7c35fb124f4af8cf22401c7282c4e1730039c.gz",
+        "sha256": "3faedd6c0fa49fece1763f5470d133a13375bd79f178d3412c7233ed36a95d79"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/41a5f2bb539bf4395c25c4265ef9e612ad601dce9252a622c443007db48001a3.gz",
+        "sha256": "b171baee30fc3f54bea60742182ee476abf187c8590e021b435a9a9dbd78e566"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/436cfeb6e1db2bcfe6b1674cd0255753da3f58d2dcadef85556845ebab7bc5b8.gz",
+        "sha256": "7a1c7cfd483a1b576f36d3fe0e8e2e6277a4aa15d471df82d9aa06eafa822023"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/49d3f5aceadca1c96c33c19eb50506748e1e421a89748728a4b15808723d0f9f.gz",
+        "sha256": "bd04ffa68ae4babc00553297823de603bcd1cb8999ee98f63e7ab019adc4c7e4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/4b9fd5926de6884b3818bc8b3555d433d530dd644af3c370bff3c5a0a96ccd14.gz",
+        "sha256": "8b9448350c160ebfded3fb4af6f73e06558dffa7fd4c8bf56efa85c2d6c89492"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/4d305ca4258c2db2081772bed60c4e3187923a035b0543e645e9f4a9dc1b816c.gz",
+        "sha256": "8153850d17b055cf5f21028e392ced81be9aa4a90ac94f7ebab9d4c2cc5bd312"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/4ebb1d9b798b1214e9ae607d137b5437ffe227bb240883b8cbf131e69fe2deb2.gz",
+        "sha256": "98b68fd95872d7e69edbd3c0512d4bd5d2056b3ae60e636a5b39a6044e28fc3a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/53885be88a49fdf85be56dfcc9e2a65574c2a0d7ef7e2af42e687817e2828f28.gz",
+        "sha256": "aaa3603533b743e955e8c12abec4c390c68bc8805a608e9a36c65cb61f488cac"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/54e58beed9277e6026a3c670ea712e09cd6f0fe3f59ddc2a74e6e0197400a8e2.gz",
+        "sha256": "4ea078063eeae9574d41ddabd1f9cb7d0e7cb5523df0b651469b1f45def39ff0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/5640361dbd1f20060b4e5efe2420039c59741e5ef4ddbd1930f733e8ea7674e5.gz",
+        "sha256": "f53d49523081c1d5240820d01e590695a71ac6c673920bb866a83fbd98748423"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/5d692954fad1d08392c17b643b5cb41216b5432e3b6739b9fca128c413998d45.gz",
+        "sha256": "50a69a0370a4979c6e82a32f86ccbef9410cde0650b1ae51b54cbef2069f5bfb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/5d896bf767fbc700784048a09c0f4dabacc523e902960b3ce74acc8d3c6ae861.gz",
+        "sha256": "055f7af024db9565762c2111a2220bc05916abefd897bb80fefc14d3be32b418"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/60cf06546ee1f21ecd51e83425d6ce7cc12cf900afd9261d67710394c5a3a66f.gz",
+        "sha256": "d14a6726fab60db8d592fe3f0f6bfa4a52c145c60951a2941586bca47c365995"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/6ee99e10af897f5daf6beca122989164543cf7da92aa237e49c315d2ffb780e0.gz",
+        "sha256": "347cf50f8db948e15d83941546e05ef4997807814d8d280fa6b760bf26cb356f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz",
+        "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/7fa962900d41be669117feac0750d77bec2200c097ea74d20ee82f9c049438cd.gz",
+        "sha256": "ebc89074e123029107066ce6508bc6cf29a8287ce92e881a23d45da1c3f3e6d6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/829b8b865a33b398f41490c1ace32d68b12cb8bd06e44ef98661e13a3ad40fbe.gz",
+        "sha256": "f33679089053503e242e2aa4a6bfb6dda603866464aa4ab53ab3c01ae2c93412"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/8345ca732b5ce0c1edd1de10d2b859df4c6796c8ec56ebb19eb992f19bb7f464.gz",
+        "sha256": "6b172d0d09d9fa1cd4875a937f321e4184e5258723a7357954d18b1abd921c21"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/8637324dd2086f6426180fc28e319f78e1de151d211bf61f4eaf5505bbf9cb72.gz",
+        "sha256": "1a32b23820eb7bd4eac805ae698768c621eba147968ecff00b082c174c9e55d0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/8c9db26fcb2d18cb3cdc957eabd549aa5e70f88e56de449af082849f0982d8eb.gz",
+        "sha256": "5ba86d49bdce02a07baa8797c0457d7a929f679530afbbb34d58a24752ea214b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/912f848d1808d39c0c4fe90275481ab6a6446d8a476c8860910da2bf002d93ac.gz",
+        "sha256": "42bf376712361ae37999f51c73d9e31abc987a8a3aa684f0c3a243a274dd5597"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/937e52de4d643c015b067d131d3eef8b35aefd610d5cd85548f7ea18e61f62cf.gz",
+        "sha256": "83f7a2071ad7f08f874607e117cdd081163ab9506c505dd0518ae5f381c36a03"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/939af34295844abf1e21194cf9ca11efdc21ad169f8db8af6689db5fd06dd101.gz",
+        "sha256": "aabed8bcf838e1c4087fbc881b677448058f1a9f955aa4084906ce9e14d0656e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/957c2ad42012c3ca3773ba22bfb41a0551fbe2cc10307c5e364506eda85e0ef5.gz",
+        "sha256": "3f545a4795959d5a9afd8c3db496056b737002d42c2c3140fe6f534e5fa12bfb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/9dfd600cc3fd2ffc90fb2ea341d8d5d761ae894932c0f83b4f60c8c6e45d1ded.gz",
+        "sha256": "c9a4eb7be59cad64462e82c1612c2b59e76d1dcec859555d71973d3f874acc25"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/9f148dd4f8ed52241e272aaf928ba96b74b9002373def9a86f2f050f19a3d0de.gz",
+        "sha256": "99b89077d7026ef5b2ed320bf868a3796a3873bd11dd28c46ee64d444f875521"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/a347b9708c039b3482c06c2658c039e6a63081d640b1434ebedd1fc31b4d8eed.gz",
+        "sha256": "e1289913202cd29ace2106120bedd8a2e7e4ed9ae7e100adce6dbbd9f12d6962"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/a5c0150e94fff0113f165dfea9f07106b8bfd349b6801895f8921e4228a09431.gz",
+        "sha256": "b09c88307977e14ca982bca482a52deadb52fa9ad435058754bb1430a5177f7b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/a8921b35aea77df99e307ab41789b42e1ed128e02dbb817ba438045e1bd12f64.gz",
+        "sha256": "2daa0b12dc9df8601e70aea144d21bf2958ec1b357e15bf4eb8aeef76374058d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/b35c6bf7eabb7cba7ff3499bc7b72e1bcf49dc9b079d7df73412549a072e5d09.gz",
+        "sha256": "0bfd7a2def0c71a76fe367ce8f6645c9d09bf06dae346de33e5d13b0bd4e8b09"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/b488f0bdf805b6dcaa4c14651fd05943581f5dd1a084d14c73fd4d9258981167.gz",
+        "sha256": "d857cb8b446181c73daa99648e4bd082e394a0fe40ecd7c1db32fff8bae801c3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/b7c3aca4a36d93fab5e2954ce58507c0601dd8e6f48f3a9ae9d04e4ef87ab415.gz",
+        "sha256": "d2714079d9fe8b107f9cd3b733c632271bdd1ca53d617b56256fcb41c9398721"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/bb59de0b4092201b59f47e79eaecb3deeb13eae9c4530d75cf882f317649d3fe.gz",
+        "sha256": "4c08f3305c4e0fe8a20c5336fb337d3b7cbbf84485e0c97b668a51962a745957"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/be8ec3950f2c077f13903d861918b0ea7a06750bbbe25359e02557c59d2681c9.gz",
+        "sha256": "c7b9be2cc7171b17e3b0eff6315b6f0ef6ed6c202ab92ecf9af7167a8e178482"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/c1f44da8c4c587ef2b445ac75ca86b2eb75c35ceb9b31a21897519fc5a47e081.gz",
+        "sha256": "f68e7a7dac0dd640ab12257a3f35567ed997f0f8bb09a201021f62c855765bd9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/c5230f1df34057ac322c54994298e10d44444707216b3508f26533b15725ff9f.gz",
+        "sha256": "e010c377e38b541c525eaac5229e3c97cad3e23b97b0e80b69881f5cdb5c19cf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/c5953f7eb7d01f8afe7d27a23b0f69aced95558eab00987f8923bc91ebeaf615.gz",
+        "sha256": "4ce431a544ac0e1c0ba117622fc0ff929eef6df093842c0ea3a0e5af911caa9d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/c862c10fe663c5a02dd2fdde813d4eab24ccc33a0bf7423bdef1529b4490349d.gz",
+        "sha256": "1ba9eafcc6f6c22f48d7e3ea695a502ff67594a4b161cdd7933bcd251154594a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/cbae27ef6c5082eb6df867c529682ba3cd930740e263a829682e9a70d30caef7.gz",
+        "sha256": "78165746907e0b6d917fa40fa356843c4d78ece2d4dae29db9cee1fcf9f6318e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/ce0e1fb0195cce92a351bbc9b254605e1cfd857e98c77aee8ae04d448c838703.gz",
+        "sha256": "5e60d3fa100a6a972292c4579e6559091c560bb1888ada5ff7664a49bf841087"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/dcf9550f918c4da399c99e4dae9a6bf61f91ab2f62a24f6b7b08fc94bb97faff.gz",
+        "sha256": "3f4db42925c50e9da1050436672b35725613758e9000f98d96aa5f591e0fdf8c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/dd8a59197f60384b458562fd8d5086de6e0bfb4d7a8601de33d36dfbfba909ea.gz",
+        "sha256": "601db90d13021b54a8f8392cf7032ea7734c5cfa98287f88ccd3d29cddcf8aaf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/de4e95f0fdf520706dc24addcfead854a3693f293ab497016d65f2538ac99228.gz",
+        "sha256": "15decb9fc5e27efe9284242b91e81a1aefe115a96091b43722de18c247f66c25"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/e71b20d1b970dba29dc69ed1ca5b7dfd699f11e8331661e2bea7678a2b8a7323.gz",
+        "sha256": "99f67699bdbf4425188ad943913827a0843f338edf6e4ab033e9660fba1599e5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/eb1e8a3210713bee5c22ecfa78f75e9665a581a33920d4c8ce1314d05bd29fb3.gz",
+        "sha256": "afd3859fdc7f434cbf876d954d5cc3b12a2c6c7944e9d11baa9328e0dc535e30"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/ec5a6f46f0a0d6c8de27449ca08e63fc42b6a9130b2c16772ed163f413bb891d.gz",
+        "sha256": "762b4505f24b27c9784567f8e76c2c05246447c83c1f986225bf77ed2715803b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/f34d4889bdd3713a83eda45942cca808755e224d74240b6944b1a27663c7f0d7.gz",
+        "sha256": "dc34adc7769b92c5683948d71609c61c43ca785739802860d904de8efb2ebea3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/f4ad8105d202cc11c070dbc6791f79631c221ca9176f36c308a73d4c4c129876.gz",
+        "sha256": "68395150bed339e523bc95cbdeca23158d8c51c18a24c1634526ac41534a3c00"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/f97ed3133107764e3d765803e2d8f907f7cbd065c2336d93a98aa00f002b0e96.gz",
+        "sha256": "eedbdee87f8972898844ddaeb9659856c91cdbf47cdb467857dc2e2c1dd2fc29"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/fbdd0150884bd4e27e731c6cbd5931f3dc4ccff8e56a8a3af7ff4422b3cbfb4b.gz",
+        "sha256": "2dd2987aa2c27560e7f3c923ea189844f4836d180b097af3892c794fdf9ae994"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/objects/feb07a7c5b3375fde15a4e318af278da11c4a8168a78b6a7d9a9b567aaa12443.gz",
+        "sha256": "4b39ee333d15f0bd03fa5dbd2e2585e7ad2d6bb7fec80d27d892f3edfb18162c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/original-manifest.json",
+        "sha256": "38dcb95868376fb53852215e3faceba2a5502c698b1f08ddda5e48c635844f15"
+      },
+      {
+        "path": "scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py",
+        "sha256": "b4a480cd51f818e93f161bbe6c8bc13c5b96b05f56c82ba2150808d9a7f72a12"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py",
+        "sha256": "b4a480cd51f818e93f161bbe6c8bc13c5b96b05f56c82ba2150808d9a7f72a12"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8024/README.md",
+        "sha256": "d7291ebe715caacee1f61497bf2c7e7287b02f674ac0384badc7020e7651d5cb"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8012 original session; affected-source confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8024-original-review.json",
+      "sha256": "e5d1534d66f3d9e52725ac12a4750624e3838cb408ecf9619999d74794ec04fa"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8024-author-source-handoff-v1.json",
+        "sha256": "56da4d65f4fdb2089714a7b7c799004420ff91ab154f18add260c4fac99a8e79"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8024-author-cache-api-v1.json",
+        "sha256": "320773b73db8d1d8e1f8fb1c44f40338a758f1fe14792d7fdb52f8720679fffa"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07",
+      "declared_claim_id": "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py",
+      "helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8024/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ],
+      "dependency_rationale": "Supplied compact SU(3) Hamiltonian, all-label Casimir bound and full-irrep cutoff carrier; explicit Yarotsky stability import supplies volume-uniform theorem. No physical action or clock selection. Original independent confirmation required."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8024/README.md",
+      "rationale": "Historical recovery instructions; no current science authority or active proof input.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8024-original-review.json",
+        "sha256": "e5d1534d66f3d9e52725ac12a4750624e3838cb408ecf9619999d74794ec04fa"
+      }
+    }
+  ]
+}

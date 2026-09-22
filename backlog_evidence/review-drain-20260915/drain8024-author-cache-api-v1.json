@@ -1,0 +1,16 @@
+[
+  {
+    "primary": "scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py",
+    "primary_sha256": "b4a480cd51f818e93f161bbe6c8bc13c5b96b05f56c82ba2150808d9a7f72a12",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "e14f1f8bb1078fa8ae8542fdee0f7821586e4b009a00facd6ccfb24352f8b050",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

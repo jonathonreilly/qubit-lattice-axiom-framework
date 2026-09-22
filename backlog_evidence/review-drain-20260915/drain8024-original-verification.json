@@ -1,0 +1,440 @@
+{
+  "head": "1c814b95243c5f788f57bab57c67fdc542f1aab4",
+  "delta_base": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+  "paths": 75,
+  "all_blobs_and_extracted_payloads_match": true,
+  "changes": {
+    "A": 74,
+    "M": 1,
+    "D": 0
+  },
+  "historical_inventory": [
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/ARTIFACT_PLAN.md",
+      "lines": 2,
+      "bytes": 360,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "lines": 2,
+      "bytes": 629,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/CANONICAL_RESULT.json",
+      "lines": 287,
+      "bytes": 5526,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/CANONICAL_STDOUT.txt",
+      "lines": 10,
+      "bytes": 828,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "lines": 2,
+      "bytes": 365,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/CLI_ADVERSE_RESULT.json",
+      "lines": 9,
+      "bytes": 208,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "lines": 15,
+      "bytes": 814,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "lines": 4,
+      "bytes": 43,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_MAIN66_READINESS.json",
+      "lines": 131,
+      "bytes": 6108,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_MAIN66_STRICT.log",
+      "lines": 72,
+      "bytes": 14003,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "lines": 17,
+      "bytes": 1354,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_MAIN66_VALIDATION.md",
+      "lines": 3,
+      "bytes": 753,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_VALIDATION.md",
+      "lines": 14,
+      "bytes": 1171,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_VOCAB_LINT.txt",
+      "lines": 1,
+      "bytes": 81,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FROZEN_PORT_RECEIPT.json",
+      "lines": 4,
+      "bytes": 319,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/FULL_PIPELINE.log",
+      "lines": 215,
+      "bytes": 21309,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/GOAL.md",
+      "lines": 2,
+      "bytes": 375,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/HANDOFF.md",
+      "lines": 12,
+      "bytes": 1789,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/LITERATURE_BRIDGES.md",
+      "lines": 2,
+      "bytes": 422,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/LOCK_RELEASE.json",
+      "lines": 4,
+      "bytes": 43,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "lines": 9,
+      "bytes": 964,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/NO_GO_LEDGER.md",
+      "lines": 2,
+      "bytes": 376,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/OPPORTUNITY_QUEUE.md",
+      "lines": 2,
+      "bytes": 313,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "lines": 3,
+      "bytes": 524,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/PORT_RECEIPT.json",
+      "lines": 21,
+      "bytes": 740,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/PRIMARY_BASE_REVIEW.md",
+      "lines": 37,
+      "bytes": 6832,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/PRIMARY_EXTENSIONS_REVIEW.md",
+      "lines": 15,
+      "bytes": 3856,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/PROOF_REVIEW.md",
+      "lines": 2,
+      "bytes": 552,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/PR_BACKLOG.md",
+      "lines": 3,
+      "bytes": 128,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/PR_BODY.md",
+      "lines": 9,
+      "bytes": 1936,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/PUBLICATION_RECEIPT.json",
+      "lines": 1,
+      "bytes": 333,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "lines": 10,
+      "bytes": 613,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/REVIEW_HISTORY.md",
+      "lines": 4,
+      "bytes": 841,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "lines": 5,
+      "bytes": 1285,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/ROOT_FINAL_MATHEMATICAL_REVIEW.md",
+      "lines": 13,
+      "bytes": 3216,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/ROUTE_PORTFOLIO.md",
+      "lines": 7,
+      "bytes": 687,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/SCOPED_VALIDATION.md",
+      "lines": 2,
+      "bytes": 614,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/SCRATCH_HASHES.json",
+      "lines": 47,
+      "bytes": 6900,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/SCRATCH_PACK_INDEX.md",
+      "lines": 3,
+      "bytes": 509,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/STAGING_VALIDATION.json",
+      "lines": 9,
+      "bytes": 202,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/STATE.yaml",
+      "lines": 24,
+      "bytes": 947,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/STRICT_LINT.log",
+      "lines": 69,
+      "bytes": 13464,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/TRACE_GATE.md",
+      "lines": 2,
+      "bytes": 423,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "lines": 216,
+      "bytes": 21456,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/UPSTREAM_SYNC_READINESS.json",
+      "lines": 131,
+      "bytes": 6079,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/UPSTREAM_SYNC_STRICT.log",
+      "lines": 69,
+      "bytes": 13466,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "lines": 5,
+      "bytes": 770,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/ADVERSE_CONTROLS.md",
+      "lines": 5,
+      "bytes": 662,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/ALL_LABEL_CLARIFICATION.diff",
+      "lines": 21,
+      "bytes": 2947,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/ALL_LABEL_CLARIFICATION.md",
+      "lines": 1,
+      "bytes": 542,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/ALL_LABEL_CLARIFICATION_ORIGINAL.diff.base64",
+      "lines": 1,
+      "bytes": 3945,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/BOUNDARY_SUPPLEMENT_PREREGISTRATION.md",
+      "lines": 3,
+      "bytes": 880,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/DERIVATION.md",
+      "lines": 95,
+      "bytes": 12374,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/DERIVATION_BEFORE_ALL_LABEL_CLARIFICATION_a8921b35.md",
+      "lines": 95,
+      "bytes": 11867,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/DIFF_ENCODING_RECEIPT.md",
+      "lines": 3,
+      "bytes": 437,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/HASHES.json",
+      "lines": 10,
+      "bytes": 748,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/IMPORT_REVIEW.md",
+      "lines": 5,
+      "bytes": 943,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/PENALTY_SUPPLEMENT.md",
+      "lines": 21,
+      "bytes": 3737,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/PENALTY_SUPPLEMENT_PREREGISTRATION.md",
+      "lines": 5,
+      "bytes": 973,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/PREREGISTRATION.md",
+      "lines": 9,
+      "bytes": 1712,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/PRIMARY_CLARIFIED_PROOF_REVIEW.md",
+      "lines": 37,
+      "bytes": 6832,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/PW_SUPPLEMENT.md",
+      "lines": 17,
+      "bytes": 3926,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/PW_SUPPLEMENT_PREREGISTRATION.md",
+      "lines": 5,
+      "bytes": 1090,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/ROOT_PREREGISTRATION.md",
+      "lines": 7,
+      "bytes": 1572,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/ROOT_ROOT_DERIVATION.md",
+      "lines": 41,
+      "bytes": 7476,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/canonical_28_before_supplements.py",
+      "lines": 86,
+      "bytes": 5373,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/canonical_28_result.json",
+      "lines": 253,
+      "bytes": 4678,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/check.py",
+      "lines": 45,
+      "bytes": 3088,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/evidence/result.json",
+      "lines": 211,
+      "bytes": 3703,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/validated_claims_before_generated_cleanup.json",
+      "lines": 702,
+      "bytes": 27590,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    },
+    {
+      "path": ".claude/science/physics-loops/volume-uniform-gap-20260907/validated_readiness_before_generated_cleanup.json",
+      "lines": 147,
+      "bytes": 6953,
+      "role": "historical recovery; unique proof and scientific checker variants separately reviewed"
+    }
+  ],
+  "external_pdf_sha256": "b0f7c876b690f0fdc7730a88100c5b841352ed339369fe57fa9497c53d6019f3"
+}

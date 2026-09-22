@@ -1,0 +1,17 @@
+{
+  "before": {
+    "baseRefName": "main",
+    "headRefOid": "1c814b95243c5f788f57bab57c67fdc542f1aab4",
+    "isDraft": true,
+    "number": 8024,
+    "state": "OPEN"
+  },
+  "after": {
+    "baseRefName": "main",
+    "headRefOid": "1c814b95243c5f788f57bab57c67fdc542f1aab4",
+    "isDraft": false,
+    "number": 8024,
+    "state": "OPEN"
+  },
+  "reason": "Full unique source independently reviewed and fresh final evidence checked; authorized all-open drain."
+}

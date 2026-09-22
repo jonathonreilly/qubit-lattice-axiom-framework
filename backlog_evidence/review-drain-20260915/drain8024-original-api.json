@@ -1,0 +1,9 @@
+{
+  "type": [
+    "bounded_theorem",
+    "bounded_theorem"
+  ],
+  "timeout": 180,
+  "declared_inputs": null,
+  "primary_imported_or_executed": false
+}

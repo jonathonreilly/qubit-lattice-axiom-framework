@@ -1,0 +1,59 @@
+[
+  {
+    "primary": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md"
+    ],
+    "declared_input_fingerprint": "b79302579bc19c521e16b4fbf16aadd0e8a4e98294396c68ac04d78d823b2983",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "primary": "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "declared_input_fingerprint": "f68369e173eeeb93e39d56cf83bd5adc358779fa84a5ae73215096e9bc767b5b",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "primary": "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "scripts/rotor_gauss_affine_theta_check_2026_09_16.py"
+    ],
+    "declared_input_fingerprint": "f71cd1b52ea27a73c833b670db0f329e9c4d0e706d171540501544c1be627939",
+    "cache_status": "missing",
+    "packet_transitive_helpers": [
+      "rotor_gauss_affine_theta_check_2026_09_16"
+    ]
+  },
+  {
+    "primary": "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+    "timeout": 120,
+    "declared_inputs": [
+      "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "declared_input_fingerprint": "a72f4aa560fd0c3ad71a2b01ac831fc005b4b36b45803b55da00895378a9f6b2",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "primary": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "declared_input_fingerprint": "eba243d6365438c16b9e5567d555ad0da4882b9ddbec088053240932625fa234",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  }
+]

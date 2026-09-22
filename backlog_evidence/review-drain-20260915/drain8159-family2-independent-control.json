@@ -1,0 +1,23 @@
+{
+  "control": "Independent exact two-mode Pauli/Kronecker CAR elimination, alpha=1 omega=2",
+  "actual_projected_matrix": [
+    [
+      "0j",
+      "0j"
+    ],
+    [
+      "0j",
+      "(-2+0j)"
+    ]
+  ],
+  "result": "PASS",
+  "sign_mutant": "rejected",
+  "half_ordered_center_mutant": "rejected",
+  "history_combinatorics": {
+    "partitions": 15,
+    "all": 162000,
+    "singleton": 16200,
+    "mixed": 145800
+  },
+  "not_executed": "original primary, native spectral solve, full pipeline, audit"
+}

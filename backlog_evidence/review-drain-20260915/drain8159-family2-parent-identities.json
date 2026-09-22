@@ -1,0 +1,65 @@
+[
+  {
+    "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "original_pin": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+    "same_bytes": true
+  },
+  {
+    "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+    "original_pin": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+    "same_bytes": true
+  },
+  {
+    "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+    "original_pin": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+    "same_bytes": true
+  },
+  {
+    "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+    "original_pin": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+    "same_bytes": true
+  },
+  {
+    "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+    "original_pin": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+    "same_bytes": true
+  },
+  {
+    "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f",
+    "original_pin": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f",
+    "same_bytes": true
+  },
+  {
+    "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c",
+    "original_pin": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c",
+    "same_bytes": true
+  },
+  {
+    "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270",
+    "original_pin": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270",
+    "same_bytes": true
+  },
+  {
+    "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+    "revision": "3a0e56c495f8dcb9243459c7be8721de1e8d7ffd",
+    "sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1",
+    "original_pin": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1",
+    "same_bytes": true
+  }
+]

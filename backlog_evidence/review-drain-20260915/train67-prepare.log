@@ -1,0 +1,43 @@
+[detached HEAD 8dd4cbc113] Preserve independently reviewed source unit PR8153
+ Date: Tue Sep 22 17:54:33 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 27 files changed, 903 insertions(+)
+ create mode 100644 docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_CHECKER_block19_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_CLAIM_STATUS_CERTIFICATE_block19.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_GOAL_block19.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_RESULTS_block19.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_supervisor_control_block19_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_supervisor_control_block19_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_supervisor_control_block19_sphere_static.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/8153_supervisor_control_block19_sphere_static.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8153/README.md
+ create mode 100644 docs/work_history/review_loop/pr8153/original-manifest.json
+ create mode 100644 logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt
+ create mode 100644 scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py
+FROZEN 8dd4cbc113f3232665d92b071e675ed69d70ba94 sources 27 inputs 38 notes 1

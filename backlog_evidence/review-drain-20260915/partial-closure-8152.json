@@ -1,0 +1,21 @@
+{
+  "pr": 8152,
+  "original_head": "70f28178c47a6f5bc3666c3e2878950dc212d3f6",
+  "branch": "physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915",
+  "landing": "19b73e32772a990f4d9d0792013347943bc80818",
+  "source_verified_at": "19b73e32772a990f4d9d0792013347943bc80818",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8152-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T21:45:59Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915",
+    "headRefOid": "70f28178c47a6f5bc3666c3e2878950dc212d3f6",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8152,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8152"
+  }
+}

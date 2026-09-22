@@ -1,0 +1,21 @@
+{
+  "pr": 8151,
+  "original_head": "2772cca288cccf1089db76a979b5c67208d31cf8",
+  "branch": "physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915",
+  "landing": "19b73e32772a990f4d9d0792013347943bc80818",
+  "source_verified_at": "19b73e32772a990f4d9d0792013347943bc80818",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8151-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T21:45:52Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915",
+    "headRefOid": "2772cca288cccf1089db76a979b5c67208d31cf8",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8151,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8151"
+  }
+}
